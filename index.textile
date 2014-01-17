@@ -1,0 +1,63 @@
+h1. Index
+
+h2. Installation
+
+Textpattern installation in a hand basket...
+
+# FTP installation - The basic (and detailed) .zip file approach.
+# Command-line installation - For the jockeys, to write.
+# Upgrading, downgrading, nightlies, and bleeding edge.
+# Multi-site installation - One install to rule them all.
+
+h2. Administration
+
+Site administration is power to unveil...
+
+# Administration workflow - Journey through a contextual workflow as if setting up an actual site. Not every feature, just orientation and links to deeper learning.
+# Admin-side - Organisation of the administration side of Textpattern CMS, with complete details of every feature in each panel.
+
+h2. Tag reference
+
+If you can use HTML(HyperText Markup Language), you can use Textpattern Tags...
+
+# Tag basics - A good place to start.
+# Comprehensive library of Textpattern Tags - Create any web publishing architecture imaginable.
+
+h2. Top 10 tutorials
+
+Something for every skill level...
+
+# Top 10 tutorials: The most common post-installation developments to help you establish your baseline site.
+# TXP tips - Community tips and tricks for when you're ready to learn more. Lots of advanced Textpattern Tag techniques.
+
+h2. Create themes
+
+Textpattern is a canvas, you're the artist...
+
+# Creating Textpattern themes.
+# Creating and using admin-side themes.
+# Textpattern themes - When you need something ready-made.
+# Textpattern themes on GitHub.
+
+h2. Plugins
+
+Develop the next must-have plugins...
+
+# Plugin development 1-2-3.
+# The most recent tips, hacks, and facts for your favorite plugins.
+# Plugin fact sheets.
+
+h2. FAQs
+
+'Frequently asked questions' does not mean 'everything you can possibly imagine', that's what the rest of this user manual is for. These are only the top FAQs. Please keep these short, sweet (and thus helpful).
+
+# Textpattern FAQs
+
+h2. Community
+
+We sometimes use the Wiki for brainstorming and sharing - bring your brain and your contributions...
+
+# Macros for Textpattern.
+# Feature requests.
+# Community projects.
+# Community sites listing.

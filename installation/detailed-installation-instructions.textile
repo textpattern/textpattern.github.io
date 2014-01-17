@@ -1,0 +1,135 @@
+h1. Detailed Installation Instructions
+
+This article is intended to help users with the installation process if the short instructions on the [http://textpattern.com/download/ Textpattern download] page don't work out for you.
+
+h2. Acquisition and unpacking
+
+# [http://textpattern.com/download/ Download] the latest release package from the Textpattern [http://textpattern.com/download/ download] page. Select either ''.gzip'' or ''.zip'' as you prefer.
+# Create a logically named folder (e.g., ''txp-unzipped'') on your local drive, and unzip (unpack) the Textpattern package into the folder you create. You can now get familiar with the Textpattern folder/file structure before running through the setup processs.
+
+h2. Getting familiar with the folders and files
+
+All folders and files in the unzipped package are organized under a directory named after the current release. You will install the files and folders contained within this directory ([[{{Txp current version}} File Tree|full file tree]]); do not install the container directory itself!
+
+Textpattern is designed to work exactly as the folders and files are organized in the unzipped package, '''it is critical that you do not move, nor rename, any of the folders or files'''; doing so will cause Textpattern to not function.
+
+*The folders/files in the package are:*
+
+; ''textpattern'' (folder)
+: All the core scripting and functionality is kept in this folder.
+; ''images'' (folder)
+: Empty by default, but will be utilized later in the course of building your site, particularly if/when you use the upload features in the admin-side's [[Images (panel)|Images]] panel.
+; ''files'' (folder)
+: Empty by default, but will be utilized later in the course of building your site, particularly if/when you use the upload features in the admin-side's [[Files]] panel.
+; ''rpc'' (folder)
+: XML-RPC functionality is kept in this folder.
+; ''sites'' (folder)
+: Contains site template, and provides support for [[Multiple Sites with a Single Install]].
+; ''index.php''
+: The default location of your site where web users will arrive, and where content publishing takes place dynamically.
+; ''.htaccess''
+: Important for many reasons that are out of scope here, but not the least of which is handling URL formatting.
+; ''css.php''
+: Handles the site's styles.
+; ''README.txt''
+:  Provides brief instruction on installing and upgrading.
+; ''HISTORY.txt''
+:  Changelog.
+
+h2. Where to install on your server?
+
+For most people, Textpattern will be used to manage the entire website, whether it's a blog, business site, or photo gallery, etc. In this case Textpattern will be installed in the root level of your website; e.g., @www.yoursite.com@. In case you're new to owning a Web site, this means in the @public_html@ directory with most Web hosts.
+
+Others may wish to use Textpattern to manage a sub-section of an existing website, adding a blog, perhaps. In this case Textpattern would be installed to a subdirectory of that domain (e.g., @www.yoursite.com/myblog@).
+
+h2. Add files to your server
+
+To get files to your server, you will need to use some form of FTP/SFTP.
+
+p(alert-block information). If your site is hosted at Joyent, a Secure-FTP (SFTP) client - e.g., WinSCP3 for Windows or Transmit3 for Mac - is required.
+
+Now you should have an FTP client picked-out, installed, and linked properly with your Web host's servers. Proceed as follows:
+
+* Using your FTP or SFTP client, make a connection to your Web server, and navigate to the directory where you intend to install Textpattern. Then make a second FTP/SFTP connection to your local drive and navigate to the unzipped Textpattern package.
+* Select all the [[#Getting_Familiar_with_the_Folders_and_Files|files and folders]] within the install package (except README.txt and HISTORY.txt) and upload these to your server.
+
+h2. Setup and configuration
+
+h3. Step 1. Choose your language
+
+* Open a Web browser and open the @/textpattern/setup/@ directory (e.g., @www.yoursite.com/textpattern/setup/@).
+
+Your browser should now be showing 'Welcome to Textpattern' and a dropdown list for choosing a language (if not, double check the path you used above). This language will be used for the installation screens and as the initial default for your Textpattern user interface (you can change languages later at any time). Choose a language and press 'Submit'.
+
+h3. Step 2. Database setup screen
+
+You should now see the first screen of the installation setup (Figure 1), where you will add information about your MySQL database, and verify the site paths that it indicates.
+
+[[Image:Install_fig2_setup.png|frame|Fig 1: Screenshot of setup information you need to add]]
+
+h4. MySQL database
+
+Before you can fill in the MySQL information, you will need to have established a few things on your host server. First, you will need to have given your database a name if it doesn't already have one. Next, you'll need to create a database login ID and password, and you'll need to have set the database login account with &quot;write&quot; privileges. Note also that when you fill in the Textpattern setup screen, you'll likely need to use your Web host user account ID as a prefix for the fields *MySQL login* and *MySQL database*. Here is a guide for how it should look:
+
+MySQL login:  '''''yourhostID_databaseUserID'''''&lt;br /&gt;
+MySQL password:  '''''databasePassword'''''&lt;br /&gt;
+MySQL server: '''''localhost''''' (If &quot;localhost&quot; does not work, check with your host provider about what to use.)&lt;br /&gt;
+MySQL database:  '''''yourhostID_datbaseName'''''&lt;br /&gt;
+Table prefix:  '''''prefix_'''''  (e.g., ''txp_'', ''txp2_'', ''cats_'', ''whatever_'')
+
+The Textpattern setup screen will indicate that you don't need to provide a table prefix if this will be your only installation of Textpattern. It is advised that you create a prefix anyway. You might not need a second installation of Textpattern right now, but you might want to have one at a later point in time, and providing a prefix for this installation enables you to do that later.
+
+p(alert-block information). Make sure you use [http://dev.mysql.com/doc/mysql/en/legal-names.html valid characters for MySQL] for the prefix, only underscore (_), dollar ($), letters and numbers are allowed.
+
+h4. Site paths
+
+The site paths should already be filled in on your setup screen. You only need to verify that they are correct; but don't think too much about this, because if you added your Textpattern files as described previously, then these paths will be correct and you don't have to do anything.
+
+h3. Step 3. Config file setup screen
+
+The next stage of installation is to add your database and login details to the ''textpattern/config.php'' file as shown in Figure 2 below. Textpattern makes this easy by taking the information you added in step 1 above, generates a snippet of code, and asks you to copy/paste the snippet into the ''textpattern/config.php'' file, replacing the contents of the file.
+
+* Copy the code that Textpattern generated as indicated on the screen.
+* Using your FTP client, navigate to ''textpattern/config-dist.php'' in the unzipped files on your local drive and remove '''''-dist''''' from the file name (so it reads config.php). Open the file, paste the snippet of code into the file (replacing contents), save the file, and transfer/drag the file into the ''textpattern'' directory on your server. (If you want, you can delete the extra ''config-dist.php'' file from your server, or move it to the unpacked folder on your local drive.)
+* Go back to your browser window with the config setup screen, and click the &quot;'''I did it'''&quot; button for the config setup.
+
+[[Image:Install_fig3_config.png|frame|Fig 2: Screenshot of MySQL database details and site paths.]]
+
+h3. Step 4. Creating login account
+
+At this point, Textpattern is ready for you to add your account login information, as indicated in _Figure 3_ below, and will then create the necessary tables in the MySQL database.
+
+* Create a new user ID and password to administer your Textpattern site (*note:* this is *not* the same ID and password used for your database, as discussed in *Step 1*).
+* Click the 'Next' button.
+
+[[Image:Install_fig4_tables.png|frame|center|Figure 3: Screenshot of account details and tables generation screen.]]
+
+h3. Step 5. Confirmation and security screen
+
+If all has gone well then you should see the screen as shown in _Figure 4_. Now Textpattern has you delete the @setup@ directory for security reasons. Do it now.
+
+* Use your FTP client, go to the @/textpattern/@ directory and delete @/setup/@ from your server.
+* Come back to the browser and click the 'main interface' link at the top of the screen.
+* This will take you to the administration login screen for your new Textpattern site.
+
+[[Image:Install_fig5_welldone.png|frame|center|Figure 4: Screenshot of setup confirmation and ''setup'' directory deletion screen.]]
+
+h3. Step 6. First login screen
+
+You should now have reached the administration login screen for your Textpattern installation. You should immediately make a bookmark for it in your browser for easy reference later.
+
+To login to your admin interface, use the login information you created in *Step 3* above. If you want to avoid logging in each time you go to your admin pages, make sure the check box is selected (*not advised* if you share your computer with anyone).
+
+h2. Finishing the installation process
+
+h3. Site preferences
+
+When you first login, you will be taken to the [[Language Preferences]] tab in the administration area. There you will need to set your site preferences and default settings for such things as how Textpattern should manage [[Glossary#Comments|Comments]] by default. You usually set your site preferences right away.
+
+h3. Diagnostics
+
+You should also visit the [[Diagnostics]] where you will be presented with some helpful diagnostics information to help troubleshoot any installation/setup problems. Clean URLs can cause a problem on some people's servers. Details about various diagnostic notices are provided in the [[Diagnostics]] documentation.
+
+h3. Removing unnecessary files
+
+There are certain files you should remove from your installation once you have successfully installed (or upgraded, or updated) Textpattern on your server. Discussion of these files is provided in [[Post Installation, Upgrading, Updating Suggestions]].
