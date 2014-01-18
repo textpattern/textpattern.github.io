@@ -70,7 +70,7 @@ h2. Gamma (23 Feb 2004 - 07 Jun 2004)
 | "g119":http://textpattern.com/file_download/95/textpattern-g119.zip | 07 Jun 2004 |
 | "g118a":http://textpattern.com/file_download/94/textpattern-g118a.zip | 11 Apr 2004 |
 | g118 | 11 Apr 2004 |
-| "g117b"::http://textpattern.com/file_download/93/textpattern-g117b.zip | 25 Mar 2004 |
+| "g117b":http://textpattern.com/file_download/93/textpattern-g117b.zip | 25 Mar 2004 |
 | g117a | 25 Mar 2004 |
 | g117 | 24 Mar 2004 |
 | g116 | 11 Mar 2004 |
