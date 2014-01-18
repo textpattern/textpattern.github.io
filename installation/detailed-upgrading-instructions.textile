@@ -6,7 +6,7 @@ If you're looking to change an install version to something other than the newes
 
 h2. Step 1: Get the new package
 
-Go to "textpattern.com/download":http://textpattern.com/download/ and download the zip package of the latest version (currently {{Txp current version}}) to your local machine. Unzip the package into a folder on your local drive. Give the folder a meaningful name like ''textpattern-{{Txp current version}}'', for example.
+Go to "textpattern.com/download":http://textpattern.com/download and download the zip package of the latest version (currently {{Txp current version}}) to your local machine. Unzip the package into a folder on your local drive. Give the folder a meaningful name like @textpattern-{{Txp current version}}@, for example.
 
 h2. Step 2: Backup
 
@@ -16,28 +16,28 @@ h3. Duplicate the existing Textpattern file tree
 
 p(alert-box warning). You must make a copy of your @config.php@ file as a minimum.
 
-Make a copy of the current system [[{{Txp current version}}_File_Tree|file tree]] (folders and files of the Textpattern installation). The easiest way to do this is to log onto the server using FTP or SFTP, create a new folder called @txp-current@, for example, and copy the existing system file tree into this new folder (leave the file tree structure the same). Alternatively  simply duplicate your existing Textpattern dir and name it @Textpattern_OLD@. Upload the new Textpattern dir and then copy your @config.php@ file from the Textpattern_OLD *prior* to running the Update.
+Make a copy of the current system [[{{Txp current version}}_File_Tree|file tree]] (folders and files of the Textpattern installation). The easiest way to do this is to log onto the server using FTP or SFTP, create a new folder called @txp-current@, for example, and copy the existing system file tree into this new folder (leave the file tree structure the same). Alternatively, simply duplicate your existing Textpattern dir and name it @Textpattern_OLD@. Upload the new Textpattern dir and then copy your @config.php@ file from the @Textpattern_OLD@ *prior* to running the update.
 
 h3. Create a database dump file (an .sql export)
 
 Log in to the *phpMyAdmin* database administration panel for your site (different web hosts have different access routes), and then follow these steps:
 
 # Select the database running the current Textpattern site.
-# In the resulting main content area, click *Export* at the top of the screen.
-# You should be able to use the defaults as they already are, just make sure you tick the *Save as file* box at the bottom of the screen.
-# Click *Go* button.
+# In the resulting main content area, click *'Export'* at the top of the screen.
+# You should be able to use the defaults as they already are, just make sure you tick the *'Save as file'* box at the bottom of the screen.
+# Click *'Go'* button.
 
 The .sql dump file will mostly likely be saved to your desktop. Using FTP/SFTP again, you could optionally copy the file into the backup folder you just created to keep everything together.
 
-You now have a full backup of your files and database. If things don't work out in the upgrade process, you can simply replace the server files and, if necessary, re-import the old database dump file in phpMyAdmin again (using '''''Import''''' instead of ''Export''). If you do have problems, you might consider running a development (sister) site of your main site and try upgrading there first.
+You now have a full backup of your files and database. If things don't work out in the upgrade process, you can simply replace the server files and, if necessary, re-import the old database dump file in phpMyAdmin again (using 'Import' instead of 'Export'). If you do have problems, you might consider running a development (sister) site of your main site and try upgrading there first.
 
 h2. Step 3: Install the new Textpattern files
 
 p(alert-box warning). It is strongly advised to log out of the Textpattern admin interface before upgrading.
 
-Using FTP/SFTP again, navigate to the folder you created in step 1 and copy the following files from there to your server, overwriting any previous files:
+Using FTP/SFTP again, navigate to the folder you created in *Step 1* and copy the following files from there to your server, overwriting any previous files:
 
-# Copy the files @.htaccess@, @css.php@, and @index.php@. The @README.txt@ and @HISTORY.txt@ are optional.
+# Copy the files @.htaccess@, @css.php@, and @index.php@ (the @README.txt@ and @HISTORY.txt@ are optional).
 # Copy any folders you are using, for example @rpc@ and @sites@. You do not usually need to copy @files@ and @images@ unless otherwise directed because you will already have done so when installing a prior release.
 # Copy the contents of the @textpattern@ folder to the server's @textpattern@ folder. You may exclude the @setup@ directory, since it is only used for first-time installations.
 
@@ -47,28 +47,28 @@ Ensure your existing @config.php@ file is still inside your @textpattern@ folder
 
 If you are running an Apache web server and wish to prohibit direct access to your downloadable files (i.e. by someone manually entering @http://site.com/files/name_of_file@) you may rename the @/files/.htaccess-dist@ file to @/files/.htaccess@.
 
-For better security, however, we recommend moving the entire folder and its contents *outside* your web-accessible root folder. Once you have relocated it, you can inform Textpattern of its location via the '''File directory path''' Advanced Preference when you log back into the admin side.
+For better security, however, we recommend moving the entire folder and its contents *outside* your web-accessible root folder. Once you have relocated it, you can inform Textpattern of its location via the 'File directory path' Advanced Preference when you log back into the admin side.
 
 h2. Step 4: Update
 
-Open a web browser and go to the [[Admin-side]] location. Log in. That's it. Easy, huh? There are no update scripts to run or anything else; by simply going to the normal admin-side location, Textpattern will recognize the need to update and do so automatically.
+Open a web browser and go to the [[Admin-side]] location. Log in. That's it! Easy, huh? There are no update scripts to run or anything else; by simply going to the normal admin-side location, Textpattern will recognise the need to update and do so automatically.
 
 h2. Step 5: Fine-tune
 
 When Textpattern updates, you will be taken by default to [[Language Preferences]]. Once there, update your chosen language files as necessary (highlighted). Then go to the [[Diagnostics]] tab and troubleshoot any noted issues.
 
-p(alert-box information). Some notices are not always problems, _per se_, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check [[Diagnostics]] to see if it's documented, if that doesn't help, ask in the [http://forum.textpattern.com How do I... forum].
+p(alert-box information). Some notices are not always problems, _per se_, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check [[Diagnostics]] to see if it's documented, if that doesn't help, ask in the "'How do I…? and other questions' forum":http://forum.textpattern.com.
 
 h2. Step 6: Remove unnecessary files
 
-After installing or upgrading Textpattern, you only need to delete the @setup@ folder (@/textpattern/setup@). This folder and its contained files are not used once Textpattern is installed (if you do not do this before checking your [[Diagnostics]] in step 5, you'll see a diagnostic warning reminding you to do it. The error will disappear when the folder is removed).
+After installing or upgrading Textpattern, you only need to delete the @setup@ folder (@/textpattern/setup@). This folder and its contained files are not used once Textpattern is installed. If you do not do this before checking your [[Diagnostics]] in *Step 5*, you'll see a diagnostic warning reminding you to do it (the error will disappear when the folder is removed).
 
-p(alert-box information). The @setup@ folder is only used for *new* installations, not upgrades, thus it's technically not necessary to add this folder from the latest, stable package. However, don't go out of your way to be clinical, simply upgrade using the full package and then delete the folder afterwards. It's easier all-around.
+p(alert-box information). The @setup@ folder is only used for *new* installations, not upgrades, thus it's technically not necessary to add this folder from the latest, stable package. However, don't go out of your way to be clinical, simply upgrade using the full package and then delete the folder afterwards - it's easier all-around.
 
 h2. Step 7: Debugging check
 
-This step is highly recommended, but optional. It is best to do this on a development server to avoid showing your users error messages. Alternatively, put your site into maintenance mode, using the [http://forum.textpattern.com/viewtopic.php?id=24708 rvm_maintenance plugin].
+This step is highly recommended, but optional. It is best to do this on a development server to avoid showing your users error messages.
 
 Change your site's [[Basic_Preferences#Production_Status|Production Status]] to 'debugging'. Go through the live site (every page, if possible), looking for error messages. Any such messages will be clearly visible at the top of the page. The upgrade may result in notices or errors relating to deprecated tags or attributes (these should be easy to correct).
 
-If you do need to update tag or attribute names, the [http://forum.textpattern.com/viewtopic.php?id=27493 smd_where_used plugin] is a great help for quickly finding all instances of a given tag or attribute.
+If you do need to update tag or attribute names, the "smd_where_used plugin":http://forum.textpattern.com/viewtopic.php?id=27493 is a great help for quickly finding all instances of a given tag or attribute.
