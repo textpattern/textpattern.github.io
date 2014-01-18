@@ -16,7 +16,7 @@ h2. Apply the latest nightly build
 
 "Download the latest nightly":http://textpattern.com/download#nightly from Textpattern's download page.
 
-Upgrading to a nightly build is done just like a regular upgrade. See the upgrade instructions above.
+Upgrading to a nightly build is done just like a regular upgrade. See the "Detailed upgrade instructions":detailed-upgrading-instructions.textile for more information.
 
 h2. Explore the bleeding edge development
 
