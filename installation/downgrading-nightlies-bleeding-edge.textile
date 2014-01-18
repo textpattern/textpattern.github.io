@@ -1,0 +1,45 @@
+h1. Upgrading, downgrading, nightlies, and bleeding edge
+
+You have Textpattern CMS installed somewhere already and now you want to either...
+
+h2. Upgrade to the newest stable release
+
+In the root folder of your installation is a @README.txt@ file that provides '''simple upgrading instructions'''. The same instructions are repeated below for convenience. See [[Detailed upgrading instructions]] if you need more stepwise explanation.
+
+# Log out of the admin-side.
+# Verify the existence of a working database and file backup.
+# Copy the files @.htaccess@, @css.php@, and @index.php@ (the @README.txt@ and @HISTORY.txt@ are optional).
+# Copy any folders you are using, for example @rpc@ and @sites@. You do not usually need to copy @files@ and @images@ unless otherwise directed because you will already have done so when installing a prior release.
+# Copy the contents of the @textpattern@ folder to the server's @textpattern@ folder. You may exclude the @setup@ directory, since it is only used for first-time installations.
+# When you login to the admin-side, the relevant upgrade script is run automatically. Please take a look into diagnostics to find out whether there are any errors and whether the correct version number is displayed.
+# Verify all preference settings.
+
+Upgrades from versions below 4.2.0 will present this warning upon your very first login to the admin-side:
+
+bc. Warning: Unknown column 'user_name' in 'where clause' select name, val from txp_prefs where prefs_id=1 AND user_name='' in /path/to/your/site/textpattern/lib/txplib_db.php on line xx
+
+This is expected behaviour for the very first login after the upgrade. Every further move in the admin side should not throw any error messages.
+
+h2. Downgrade to a previous stable release
+
+'Downgrading' your installation to a previous release is *not advised for security reasons*. The only time you might want to do this is if you've upgraded to the newest stable release and found that one or more of your plugin functionalities are not working because they have not yet been updated by their developers to match the latest Textpattern code.
+
+Downgrading is done exactly as upgrading. Follow the instructions for upgrading above but using the earlier Textpattern CMS version you need. 
+
+*TODO:* Link to list of old Textpattern CMS versions needed here!
+
+h2. Apply the latest nightly build
+
+'Nightly builds' or 'Nightlies' are discrete versions of Textpattern CMS code beyond the current stable release, but functional enough for testing purposes. *They are not intended for production sites!* People who upgrade to nightlies are generally developers and designers who will report bugs and give other feedback to core developers.
+
+"Download the latest nightly":http://textpattern.com/download#nightly from Textpattern's download page.
+
+Upgrading to a nightly build is done just like a regular upgrade. See the upgrade instructions above.
+
+h2. Explore the bleeding edge development
+
+p(alert-block warning). For advanced users only!
+
+The latest, @unstable@, bleeding-edge code is available at "the GitHub repository":https://github.com/textpattern/textpattern or via "the subversion repo on Google Code":http://textpattern.googlecode.com/svn/development/4.x.
+
+If you're thinking about testing this code, then we shouldn't have to tell you what git/subversion is or how to use it. If you don't know, then you don't really want to be messing about here!

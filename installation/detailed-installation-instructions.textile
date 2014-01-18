@@ -5,11 +5,11 @@ This article is intended to help users with the installation process if the shor
 h2. Acquisition and unpacking
 
 # "Download":http://textpattern.com/download the latest release package from the Textpattern download page. Select either @.gzip@ or @.zip@, as you prefer.
-# Create a logically named folder (e.g., ''txp-unzipped'') on your local drive, and unzip (unpack) the Textpattern package into the folder you create. You can now get familiar with the Textpattern folder/file structure before running through the setup processs.
+# Create a logically named folder (e.g., @txp-unzipped@) on your local drive, and unzip (unpack) the Textpattern package into the folder you create. You can now get familiar with "the Textpattern folder/file structure"":https://github.com/textpattern/textpattern before running through the setup processs.
 
 h2. Getting familiar with the folders and files
 
-All folders and files in the unzipped package are organised under a directory named after the current release. You will install the files and folders contained within this directory ([[{{Txp current version}} File Tree|full file tree]]); do not install the container directory itself!
+All folders and files in the unzipped package are organised under a directory named after the current release. You will install the files and folders contained within this directory; do not install the container directory itself!
 
 p(alert-block warning). Textpattern is designed to work exactly as the folders and files are organised in the unzipped package, it is critical that you do not move, nor rename, any of the folders or files; doing so will cause Textpattern to not function.
 
