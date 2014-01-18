@@ -7,7 +7,7 @@ Textpattern CMS installation in a hand basket...
 # "Quick installation guide":installation/simple-installation-instructions.textile - The basic Textpattern CMS installation approach.
 # "Detailed installation instructions":installation/detailed-installation-instructions.textile - In-depth information regarding Textpattern CMS installation.
 # "Detailed upgrading instructions":detailed-upgrading-instructions.textile - In-depth information regarding upgrading to a newer Textpattern CMS version.
-# "Downgrading, nightlies and bleeding edge":installation/upgrading-downgrading-nightlies-bleeding-edge.textile - Installation of non-current/development Textpattern CMS releases.
+# "Downgrading, nightlies and bleeding edge":installation/downgrading-nightlies-bleeding-edge.textile - Installation of non-current/development Textpattern CMS releases.
 # Multi-site installation - One Textpattern CMS install to rule them all.
 
 h2. Administration
