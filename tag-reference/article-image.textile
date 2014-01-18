@@ -71,7 +71,7 @@ h3. Version 4.2.0
 
 h3. Version 4.0.7
 
-Default value for attribute@escape@ changed from unset to @html@.
+Default value for attribute @escape@ changed from unset to @html@.
 
 h3. Version 4.0.4
 
