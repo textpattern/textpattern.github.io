@@ -1,0 +1,73 @@
+h1. Moving installation from one host to another
+
+Sometimes it is necessary (whether for better service, a cheaper deal, etc.) to move your website from one web hosting service to another. This is a relatively easy matter that mainly just involves backing up your current Textpattern installation and database, reinstalling them on the new server location, and adjusting the files to make sure everything is all working properly.
+
+To save you some potential headaches, you are encouraged to *not* make any version upgrades or downgrades with respect to either Textpattern or your MySQL if you can help it; it's better to switch first using the same versions of the technology, and then do whatever upgrades you need to do once everthing is working properly.
+
+h2. The process
+
+h3. Step 1: Backing-up Your existing Textpattern resources
+
+What we're talking about here is two things: exporting a copy of your existing datbase files, and moving a copy of your Textpattern folder and file tree on the current server to your local machine.
+
+h4. Exporting the existing database tables
+
+# Log into phpMyAdmin.
+# Click on *'Export'* in the option menu.
+# At this point you will have a lot of choices for the export schema. One note, if you need a smaller file size you can exlude your logs files. You can choose to export a plain .sql file (.txt) or a variety of zipped files. There may be more specific export needs for you host - if these settings do not work you may need to contact you host for specific needs for your server.
+
+h4. Move Textpattern folder/file tree to local machine ====
+
+Use FTP or SFTP (whichever is appropriate) to move the Textpattern tree from the root folder of your site to your local machine. You will use this copy to upload the tree later to the new web server location.
+
+p(alert-block warning). As a matter of practicality, it is highly recomend setting up your new account and fully testing your migration before closing down the old hosting account (for that matter, you might not tell your old host your leaving until you have everything working at the new location). If something goes wrong somewhere along the way you have a working copy to refer back to, to make any adjustments or re-export if necessary.
+
+h3. Step 2: Installing your resources on the new web host servers
+
+h4. Setting up database
+
+# At your new host, use phpMyAdmin (or a similar tool) to create a 'database name' and 'database user' (your new database name can be different than the name previously used by Textpattern).
+# Select the database you just created, if it's not already selected by default.
+# Click the 'Import' tab.
+# Browse for the text file backup of your database you made at *Step 1*.
+# Upload it!
+
+h4. Configuring Textpattern to interface with the new database
+
+# Upload your entire Textpattern tree (@example.com/textpattern@) and the default @index.php@ and @.htaccess@ files to your new server via FTP.
+# Open @textpattern/config.php@ in a text editor.
+# You will need to update all of the values that have changes with your server move (database name, mySQL username, mySQL password, host and table prefix (if used).
+
+The following two values may require you to contact Support to find them out:
+
+bc. $txpcfg['txpath'] = '/home/.some_name/site_username/example.com/textpattern';
+
+bc. $txpcfg['doc_root'] = '/home/.some_name/site_username/example.com/';
+
+h4. Handling the password
+
+Changing your password after migrating your installation or upgrading MySQL.
+
+# When in phpMyAdmin, from the drop down menu on the left select your @txp_@ database. A list of tables in that database will appear directly below the drop down menu. Near the bottom of that list you should see your @txp_user@ table. Click on that table. All the information for that table will now occupy the main content area of your screen.
+# There are a row of tabs at the top. Click on the *'Structure'* tab.
+# In the main content area look for the row caleed @pass@, and click on the little pencil to the far right.
+# At the top of the main content area you will see 'Field', 'Type', 'Length/Values', 'Collation', etc. Retype the 128 in the 'Length/Values' box with 128 then click on *'Save'*.
+# Click on the *'Browse'* tab
+# In the middle of the content area you should see a little pencil. Click on it.
+# The main content area will now have a five columns labeled 'Field', 'Type', 'Function', 'Null', 'Value'. The third row from the top should be called @pass@. At the far right is the encrypted value of your current password. Delete the contents of that box and type in your new password. You can also just retype in your old password. *Important:* Do not use uppercase letters in your password at this point (Textpattern converts your password to lowercase before hashing it, hence it won't ever match if you hash any password with uppercase letters).
+# In the drop down menu for the row @pass@ select 'Password'.
+# Click *'Go'*.
+
+You're now ready to log back in to your Textpattern interface.
+
+h3. Step 3: Troubleshooting problems after moving
+
+Probably the number one thing that gets people hung-up when physically moving an installation from one server to another is the odd inclusion of white space in the @config.php@ file during the move (most likely during the reinstallation of the file). When this happens three problems are usually to be the result...
+
+# Your home page will likely appear to be missing any CSS styling.
+# When you log in to the Textpattern admin panel, you will not be able to access some of your tabs (except perhaps the 'Content' page).
+# The following error message, or something similar to it, will appear at the top of the page:
+
+"Warning: Cannot modify header information - headers already sent by (output started at '/home/user/public_html/textpattern/config.php:13)' in '/home/user/public_html/textpattern/publish.php' on line 170."
+
+To collectively fix these problems, open up your @config.php@ file and remove any trailing white space that has been automatically added to the end of the file.
