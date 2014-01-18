@@ -1,0 +1,21 @@
+h1. Comment email
+
+h2. Syntax
+
+bc. <txp:comment_email />
+
+The *comment_email* tag is a _single_ tag which is used to display the commenter's email address, if entered at the time of posting. Used in a comments display form.
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+h3. Example 1: Comments display form with linked email and comment id
+
+bc. <txp:comment_message />
+<p><a href="mailto:<txp:comment_email />">Email</a> |
+    <txp:comment_permlink><txp:comment_id /></txp:comment_permlink></p>
+
+Other tags used: "comment_id":comment-id.textile, "comment_message":comment-message.textile, "comment_permlink":comment-permlink.textile.

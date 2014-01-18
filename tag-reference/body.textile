@@ -1,0 +1,23 @@
+h1. Body
+
+h2. Syntax
+
+bc. <txp:body />
+
+The *body* tag is a _single_ tag which is used to return the text, or content, of the article being displayed (the article itself). The tag can be used in an article [[Forms Explained|Form]], or within [[Pages]] (templates), either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list).
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+h3. Example 1: Display the article text
+
+bc. <h1><txp:title /></h1>
+<p><txp:author /> at <txp:posted /></p>
+<txp:body />
+
+When used as part of your article form, this displays the article title, author and posted date, then the body text beneath that.
+
+Other tags used: "author":author.textile, "posted":posted.textile, "title":title.textile.

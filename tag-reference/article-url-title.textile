@@ -1,0 +1,17 @@
+h1. Article url title
+
+h2. Syntax
+
+bc. <txp:article_url_title />
+
+The *article_url_title* tag is a _single_ tag which returns the dumbed-down 'URL title' of the article being displayed. This URL title may also be part of the page's address depending on the 'Permanent link mode' chosen in the [[Preferences]] page.
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Genealogy
+
+h3. Version 4.0.5
+
+Tag support added.

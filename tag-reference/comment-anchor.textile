@@ -1,0 +1,19 @@
+h1. Comment anchor
+
+h2. Syntax
+
+bc. <txp:comment_anchor />
+
+The *comment_anchor* tag is a _single_ tag which is used to produce an empty anchor tag with an id attribute reflecting the comment ID. Used in the form that renders your comments (the default form is named 'comments').
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+h3. Example 1: Generate current comment anchor
+
+When the comment number is @000005@ you will see:
+
+bc. <a id="c000005"></a>
