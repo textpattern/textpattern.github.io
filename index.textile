@@ -2,12 +2,13 @@ h1. Index
 
 h2. Installation
 
-Textpattern installation in a hand basket...
+Textpattern CMS installation in a hand basket...
 
-# FTP installation - The basic (and detailed) .zip file approach.
-# Command-line installation - For the jockeys, to write.
-# Upgrading, downgrading, nightlies, and bleeding edge.
-# Multi-site installation - One install to rule them all.
+# "Quick installation guide":installation/simple-installation-instructions.textile - The basic Textpattern CMS installation approach.
+# "Detailed installation instructions":installation/detailed-installation-instructions.textile - In-depth information regarding Textpattern CMS installation.
+# "Detailed upgrading instructions":detailed-upgrading-instructions.textile - In-depth information regarding upgrading to a newer Textpattern CMS version.
+# "Downgrading, nightlies and bleeding edge":installation/upgrading-downgrading-nightlies-bleeding-edge.textile - Installation of non-current/development Textpattern CMS releases.
+# Multi-site installation - One Textpattern CMS install to rule them all.
 
 h2. Administration
 
@@ -57,7 +58,7 @@ h2. Community
 
 We sometimes use the Wiki for brainstorming and sharing - bring your brain and your contributions...
 
-# Macros for Textpattern.
+# Macros for Textpattern CMS.
 # Feature requests.
 # Community projects.
 # Community sites listing.
