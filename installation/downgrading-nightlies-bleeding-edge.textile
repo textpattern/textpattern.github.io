@@ -1,24 +1,6 @@
-h1. Upgrading, downgrading, nightlies, and bleeding edge
+h1. Downgrading, nightlies, and bleeding edge
 
-You have Textpattern CMS installed somewhere already and now you want to either...
-
-h2. Upgrade to the newest stable release
-
-In the root folder of your installation is a @README.txt@ file that provides '''simple upgrading instructions'''. The same instructions are repeated below for convenience. See [[Detailed upgrading instructions]] if you need more stepwise explanation.
-
-# Log out of the admin-side.
-# Verify the existence of a working database and file backup.
-# Copy the files @.htaccess@, @css.php@, and @index.php@ (the @README.txt@ and @HISTORY.txt@ are optional).
-# Copy any folders you are using, for example @rpc@ and @sites@. You do not usually need to copy @files@ and @images@ unless otherwise directed because you will already have done so when installing a prior release.
-# Copy the contents of the @textpattern@ folder to the server's @textpattern@ folder. You may exclude the @setup@ directory, since it is only used for first-time installations.
-# When you login to the admin-side, the relevant upgrade script is run automatically. Please take a look into diagnostics to find out whether there are any errors and whether the correct version number is displayed.
-# Verify all preference settings.
-
-Upgrades from versions below 4.2.0 will present this warning upon your very first login to the admin-side:
-
-bc. Warning: Unknown column 'user_name' in 'where clause' select name, val from txp_prefs where prefs_id=1 AND user_name='' in /path/to/your/site/textpattern/lib/txplib_db.php on line xx
-
-This is expected behaviour for the very first login after the upgrade. Every further move in the admin side should not throw any error messages.
+You have Textpattern CMS installed somewhere already and now you want to either downgrade, use a nightly build or use a development (bleeding edge) release.
 
 h2. Downgrade to a previous stable release
 
