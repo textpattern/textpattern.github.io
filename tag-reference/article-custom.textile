@@ -162,6 +162,8 @@ bc. <txp:article_custom author="Parkling">
 
 This is exactly equivalent to *Example 3a*, just using a container tag instead of a single tag with referenced form.
 
+Other tags used: "permlink":permlink.textile, "title":title.textile.
+
 h3. Example 4: Combined with custom fields
 
 bc. <txp:article_custom colour="red" />
