@@ -195,9 +195,9 @@ Can be used as a container.
 
 h3. Version 4.0.4
 
-@sort@ added (replaces @sortby@ and @sortdir@) attributes.
+@sort@ attribute added (replaces @sortby@ and @sortdir@) attributes.
 @sortby@ and @sortdir@ attributes deprecated.
 
 h3. Version 4.0.2
 
-@pageby@ added.
+@pageby@ attribute added.

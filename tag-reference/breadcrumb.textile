@@ -55,7 +55,7 @@ h2. Genealogy
 
 h3. Version 4.5.0
 
-Default class name @noline@ for @linkclass@ removed (now unset).
+Default @class="noline"@ for @linkclass@ attribute removed (now unset).
 
 h3. Version 4.3.0
 

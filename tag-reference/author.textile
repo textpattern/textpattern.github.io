@@ -56,8 +56,8 @@ Permitted the tag to be used on author list landing pages.
 
 h3. Version 4.3.0
 
-Added the @title@ attribute.
+@title@ attribute added.
 
 h3. Version 4.0.4
 
-@section@ and @this_section@ added.
+@section@ and @this_section@ attributes added.

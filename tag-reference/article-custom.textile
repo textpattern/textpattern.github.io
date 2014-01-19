@@ -192,7 +192,7 @@ h2. Genealogy
 
 h3. Version 4.5.0
 
-Added @expired@ attribute.
+@expired@ attribute added.
 
 h3. Version 4.0.7
 
@@ -202,7 +202,7 @@ Can be used as a container tag.
 
 h3. Version 4.0.6
 
-Support added for comma separated lists for section, category and author attributes.
+Support added for comma separated lists for @section@, @category@ and @author@ attributes.
 
 h3. Version 4.0.4
 
