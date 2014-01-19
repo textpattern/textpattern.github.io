@@ -1,0 +1,62 @@
+h1. Breadcrumb
+
+h2. Syntax
+
+bc. <txp:breadcrumb />
+
+The *breadcrumb* tag is a _single_ tag which is used to create "breadcrumb navigation":http://en.wikipedia.org/wiki/Breadcrumb_trail. It provides either hyperlinked navigation, or plain text positional display, any time you are *not* on the Home page.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[link]]=&quot;value&quot;
+: Whether to hyperlink breadcrumbs.
+: Values: @0@ (no) or @1@ (yes).
+: Default: @1@.
+; [[linkclass]]=&quot;class name&quot;
+: HTML class attribute applied to the breadcrumb links.
+: Default: unset.
+; [[separator]]=&quot;value&quot;
+: Character to be used as the breadcrumb separator.
+: Default: @ » @.
+; [[title]]=&quot;boolean&quot;
+: Whether to display the title or not.
+: Values: @0@ (no, display name) or @1@ (yes).
+: Default: @0@.
+
+h3. Common presentational attributes
+
+These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
+
+; [[label]]=&quot;text&quot;
+: Label prepended to item.
+: Default: unset (but see [[label cross-reference]] for exceptions).
+; [[class]]=&quot;name&quot;
+: HTML @class@ to apply to the @wraptag@ attribute value.
+
+h2. Examples
+
+h3. Example 1: Display a hyperlinked breadcrumb trail
+
+bc. <txp:breadcrumb label="Navigation" separator="::" link="1" wraptag="p" />
+
+Provides hyperlinks to sections or categories in a breadcrumb style, linking back to your home page.
+
+p(alert-block information). Breadcrumbs are not displayed on the 'Default' section of your site.
+
+h2. Example 2: Display a text only breadcrumb trail
+
+bc. <txp:breadcrumb label="Navigation" separator="/" link="0" wraptag="p" />
+
+Provides a breadcrumb guide that reflects where a user is within the site's navigation.
+
+h2. Genealogy
+
+h3. Version 4.5.0
+
+Default class name @noline@ for @linkclass@ removed (now unset).
+
+h3. Version 4.3.0
+
+@sep@ attribute deprecated and renamed @separator@.
