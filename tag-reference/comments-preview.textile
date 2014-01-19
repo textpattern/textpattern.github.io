@@ -1,0 +1,30 @@
+h1. Comments preview
+
+h2. Syntax
+
+bc. <txp:comments_preview />
+
+The *comments_preview* tag is a _single_ tag which is used to display a preview of a visitor's comment.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[class]]=&quot;class name&quot;
+: CSS @class@ name to be applied to @wraptag@.
+: Default: @comments_preview@.
+; [[form]]=&quot;value&quot;
+: Default: @comments@.
+; [[wraptag]]=&quot;tag&quot;
+: HTML tag (without brackets) to wrap around the list.
+: Default: depends upon 'Present Comments as a Numbered List?' preference setting - either @ol@ or 'unset'.
+
+h2. Genealogy
+
+h3. Version 4.0.4
+
+Use is necessary in comments display form (@<comments_display />@, by default).
+
+h3. Version 4.0.3
+
+Support added.

@@ -1,0 +1,73 @@
+h1. Css
+
+h2. Syntax
+
+bc. <txp:css />
+
+The basic *css* tag is a _single_ tag used to output the URL of the stylesheet assigned in the Textpattern [[Sections]] page.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[format]]=&quot;value&quot;
+: How to format output: either return complete "HTML link tag":https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link with necessary HTML attributes, or only the stylesheet's URL.
+: Value: @link@ or @url@.
+: Default: @url@.
+; [[media]]=&quot;value&quot;
+: "HTML media attribute":https://developer.mozilla.org/en-US/docs/CSS/Media_queries to be applied to link tag (when invoked with @format="link"@).
+: Default: @screen@.
+; [[name]]=&quot;style name&quot;
+: Link to specified style.
+; [[rel]]=&quot;value&quot;
+: "HTML rel attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types to be applied to link tag (when invoked with @format="link"@).
+: Default: @stylesheet@.
+; [[title]]=&quot;value&quot;
+: "HTML title attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title to be applied to link tag (when invoked with @format="link"@).
+: Default: unset.
+
+h2. Examples
+
+h3. Example 1: Output just the stylesheet's URL
+
+bc. <head>
+    <!-- ...tags... -->
+    <link rel="stylesheet" href="<txp:css />" media="screen, projector">
+    <!-- ...more tags... -->
+</head>
+
+h3. Example 2: Output the link to the section's default stylesheet
+
+bc. <head>
+    <!-- ...tags... -->
+    <txp:css format="link" />
+    <!-- ...more tags... -->
+</head>
+
+h2. Example 3: Output the link to a named stylesheet
+
+bc. <head>
+    <!-- ...tags... -->
+    <txp:css format="link" name="style_name" />
+    <!-- ...more tags... -->
+</head>
+
+h3. Example 4: Output print and alternate stylesheets
+
+bc. <head>
+    <!-- ...tags... -->
+    <txp:css format="link" name="plain" rel="alternate" title="Plain and simple style" />
+    <txp:css format="link" name="glossy" rel="alternate" title="Glossy style" />
+    <txp:css format="link" name="print" media="print" />
+    <!-- ...more tags... -->
+</head>
+
+h2. Genealogy
+
+h3. Version 4.3.0
+
+@n@ attribute deprecated and renamed to @name@.
+
+h3. Version 4.0.4
+
+@format@, @media@, @rel@ and @title@ attributes added.

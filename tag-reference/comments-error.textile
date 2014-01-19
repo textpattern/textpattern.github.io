@@ -1,0 +1,31 @@
+h1. Comments error
+
+h2. Syntax
+
+bc. <txp:comments_error />
+
+The *comments_error* tag is a _single_ tag which is used to produce the current comments error.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[break]]=&quot;value&quot;
+: HTML tag (without brackets) or string used to separate list items.
+: Default: @br@.
+; [[class]]=&quot;class name&quot;
+: CSS @class@ to be applied to @wraptag@.
+: Default: @comments_error@.
+; [[wraptag]]=&quot;tag text&quot;
+: HTML tag (without brackets) to wrap around the list.
+: Default: unset.
+
+h2. Examples
+
+h3. Example 1: Display comments error when an error exists
+
+bc. <txp:if_comments_error>
+    <txp:comments_error break="li" wraptag="ul" />
+</txp:if_comments_error>
+
+Other tags used: "if_comments_error":if-comments-error.textile.

@@ -1,0 +1,42 @@
+h1. Comments invite
+
+h2. Syntax
+
+bc. <txp:comments_invite />
+
+The *comments_invite* tag is a _single_ tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern 'Write' screen.
+
+This tag can be used in both [[Page]] templates and [[Forms]].
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[class]]=&quot;class name&quot;
+: CSS @class@ name to be applied to @wraptag@.
+: Default: @comments_invite@.
+; [[showalways]]=&quot;boolean&quot;
+: Whether to display invite on individual article page.
+: Values: @0@ (no) or @1@ (yes).
+: Default: @0@.
+; [[showcount]]=&quot;boolean&quot;
+: Whether to display comment count.
+: Values: @0@ (no) or @1@ (yes).
+: Default: @1@.
+; [[textonly]]=&quot;boolean&quot;
+: Whether to display invite as text, rather than a hyperlink.
+: Values: @0@ (no) or @1@ (yes).
+: Default: @0@.
+; [[wraptag]]=&quot;tag&quot;
+: HTML tag (without brackets) to wrap around invite text.
+: Default: unset.
+
+h2. Examples
+
+h3. Example 1: Display comments invitation and comment count
+
+bc. <txp:if_comments><txp:comments_invite wraptag="p" /></txp:if_comments>
+
+This will display the comments invitation and a comment count (but only if there are any comments associated with the current article).
+
+Other tags used: "if_comments":if-comments.textile.

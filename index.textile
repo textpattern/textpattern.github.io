@@ -26,7 +26,7 @@ h2. Tag reference
 If you can use HTML, you can use Textpattern Tags...
 
 # Tag basics - A good place to start.
-# Comprehensive library of Textpattern Tags - Create any web publishing architecture imaginable.
+# "Complete list of Textpattern Tags":tag-reference/index.textile - Create any web publishing architecture imaginable using the magic of Textpattern Tags.
 
 See all tag reference documentation...
 
