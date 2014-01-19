@@ -1,0 +1,36 @@
+h1. Author email
+
+h2. Syntax
+
+bc. <txp:author_email />
+
+The *author_email* tag is a _single_ tag that is used to return the email address of the author of the currently displayed article.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[escape]]=&quot;html&quot;
+: Escape HTML entities such as @<@, @>@ and @&@.
+: Value: @html@ or unset.
+: Default: @html@.
+; [[link]]=&quot;boolean&quot;
+: Make text a @mailto:@ link.
+: Values: @0@ (no) or @1@ (yes).
+: Default: @0@.
+
+h2. Examples
+
+h3. Example 1: Display email address (but don't link)
+
+bc. <p><txp:author_email /></p>
+
+h3. Example 2: Create a mailto: link
+
+bc. <txp:author_email link="1" />
+
+h2. Genealogy
+
+h3. Version 4.5.0
+
+Tag support added.

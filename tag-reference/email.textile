@@ -1,0 +1,76 @@
+h1. Email
+
+h2. Syntax
+
+bc. <txp:email />
+
+The *email* tag is both a _single_ tag and a _container_ tag. Textpattern will replace it with a @mailto:@ email link, according to the attributes set.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[email]]=&quot;value&quot;
+: The email address from which to make the link.
+: Value: Any valid email address.
+: Default: unset.
+; [[linktext]]=&quot;value&quot;
+: The displayed link text.
+: Value: Any text.
+: Default: @Contact@.
+; [[title]]=&quot;value&quot;
+: The @title@ attribute to assign to the link.
+: Value: Any valid HTML title.
+: Default: unset.
+
+h2. Examples
+
+h3. Example 1: Simple email link
+
+bc. <txp:email email="donald.swain@example.com" linktext="Contact me" title="Send me an email" />
+
+h3. Example 2: Pre-populate message subject and body
+
+bc. <txp:email email="donald.swain@example.com?subject=Lorem ipsum&body=Sit amet..." />
+
+h3. Example 3: Container example
+
+bc. <txp:email email="donald.swain@example.com" title="Email me!">
+    <img src="/images/email.png" alt="Email">
+</txp:email>
+
+h3. Example 4: With Symbolset's 'email' glyph
+
+If you happen to use the 'email' glyph in the social media set of "Symbolset":http://symbolset.com, you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first three list items show below. For the email glyph you need to put the selectors in the @<li>@ since you can't put them in the @<a>@, as the last list item shows:
+
+bc. <ul class="socbar">
+    <li><a href"https://twitter.com/xxx" class="ss-icon twit">twitter</a></li>
+    <li><a href="https://plus.google.com/xxx" class="ss-icon gplus">googleplus</a></li>
+    <li><a href="http://www.linkedin.com/xxx" class="ss-icon in">linkedin</a></li>
+    <li class="ss-icon email"><txp:email email="donald.swain@example.com" linktext="email" /></li>
+</ul>
+
+If you're using Symbolset, then you'll know that the @linktext=""@ attribute in the last list item above *has* to be @"email"@ for the glyph to work. Then the CSS must be like this to target both instances of selector use:
+
+bc.. /* Common rules */
+a.ss-icon,
+li.ss-icon a {
+    /* design as you want */
+}
+
+/* Target each one if specific hover effect is wanted */
+.twit:hover {
+    /* design as you want */
+}
+... etc ...
+li.email a:hover {
+    /* design as you want */
+}
+
+p. See the "feed_link":feed-link.textile tag for a similar solution for Symbolset's 'rss' glyph.
+
+h2. Genealogy
+
+h3. Version 4.0.5
+
+Can be used as a container.
