@@ -192,7 +192,7 @@ h2. Genealogy
 h3. Version 4.0.7
 
 Can be used as a container.
-@wraptag@ and @brea@ attributes added.
+@wraptag@ and @break@ attributes added.
 
 h3. Version 4.0.4
 
