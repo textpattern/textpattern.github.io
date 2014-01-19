@@ -1,0 +1,75 @@
+h1. Category
+
+h2. Syntax
+
+bc. <txp:category />
+
+The *category* tag can be used as either a _single_ or _containing_ tag. It will display information of the category as defined by the @name@ attribute, or the one currently being viewed. When used as a containing tag, it will turn the contents into a link to the category. Otherwise, it will return plain text.
+
+May be used in any context.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[class]]=&quot;class name&quot;
+: HTML @class@ attribute, applied to @wraptag@. If no @wraptag@ is supplied (and @link"1"@), the @class@ is applied to the @<a>@ tag instead.
+: Default: unset.
+; [[link]]=&quot;boolean&quot;
+: Whether to display as link. Works only in the _single_ tag, *not* in the _containing_ tag variant.
+: Values: @0@ (no) or @1@ (yes).
+: Default: @0@.
+; [[name]]=&quot;category name&quot;
+: Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [[Category]] page. Also note that if you had called your category @My Category Name@ it becomes @my-category-name@ when used in tags.
+: Default: unset (use current category).
+; [[section]]=&quot;section name&quot;
+: Restricts category search to named section.
+: Default: current section (for backwards compatibility).
+; [[this_section]]=&quot;boolean&quot;
+: If set to @1@, the linked category name will direct users to an category list in the current section, otherwise category list from all sections is displayed.
+: Only link to articles from the current section. The @section@ attribute overrides this setting.
+: Values: @0@ (no, all sections) or @1@ (yes, this section only).
+: Default: @0@.
+; [[title]]=&quot;boolean&quot;
+: Whether to display category's title instead of its name.
+: Values: @0@ (no, display name) or @1@ (yes, display title).
+: Default: @0@.
+; [[type]]=&quot;category type&quot;
+: Values: @article@, @image@, @link@ or @file@.
+: Default: @article@.
+; [[url]]=&quot;boolean&quot;
+: Display plain URL or full link.
+: Values: @0@ (no) or @1@ (yes).
+: Default: @0@ (display title or full link, depending on @link@).
+; [[wraptag]]=&quot;tag&quot;
+: HTML tag, specified without brackets, to wrap around output.
+: Default: unset.
+
+h2. Examples
+
+h3. Example 1: Display the current category name
+
+bc. <txp:category />
+
+h3. Example 2: Display hyperlinked category title
+
+bc. <txp:category title="1" link="1" />
+
+h3. Example 3: Display a specific category's title, hyperlinked
+
+bc. <txp:category name="article" title="1" link="1" wraptag="p" />
+
+h3. Example 4: Container example
+
+bc. <txp:category name="book">My books</txp:category>
+
+h2. Genealogy
+
+h3. Version 4.0.7
+
+Applies @class@; attribute to the @<a>@ tag when the @wraptag@ attribute is empty.
+@url@ attribute added.
+
+h3. Version 4.0.4
+
+@this_section@ attribute added.

@@ -1,0 +1,33 @@
+h1. Else
+
+h2. Syntax
+
+bc. <txp:else />
+
+The *else* tag is a _single_ tag that is used within a containing conditional tag to provide the means to assign default, or alternative, behavior when the condition in the surrounding tag is *not* met.
+
+Visually, this is the general structure in which it is used:
+
+bc. <txp:if_conditional_tag>
+    ...Content if true...
+<txp:else />
+    ...Content if not true...
+</txp:if_conditional_tag>
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+h3. Example 1: Display excerpt when available
+
+bc. <txp:if_excerpt>
+    <txp:excerpt />
+<txp:else />
+    <txp:section link="1" />
+</txp:if_excerpt>
+
+When the excerpt is available it is displayed, but when it is missing a hyperlinked section name is displayed instead.
+
+Other tags used: "excerpt":excerpt.textile, "if_excerpt":if-excerpt.textile, "section":section.textile.
