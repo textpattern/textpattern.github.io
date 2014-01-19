@@ -43,6 +43,7 @@ h3. Content/behaviour attributes
 : Default: @10@.
 ; [[listform]]=&quot;form name&quot;
 : Use specified form when page is displaying an article list.
+: Default: @article_listing@.
 ; [[offset]]=&quot;integer&quot;
 : The number of articles to skip.
 : Default: @0@.
@@ -116,7 +117,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : Where value is an HTML element (e.g., @break="li"@) or some string to separate list items.
 : Default: @br@ (but see [[break cross-reference]] for exceptions).
 
-== Note on Article List vs. Individual Article context ==
+h2. Note on 'article list' vs. 'individual article' context
 
 The *article* tag is context-sensitive. It will produce different results depending on whether the page being viewed is an article list or an individual article. Article-list context includes the default (home) page, section front pages, and category pages. Individual-article context applies on an article page (i.e., a page with a URL like @http://example.com/archives/24/my-article@).
 

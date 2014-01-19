@@ -18,11 +18,12 @@ Tag will accept the following attributes (*case-sensitive*):
 : Only link to articles from the named section.
 : Default: unset.
 ; [[this_section]]=&quot;boolean&quot;
-: Only link to other articles from the same section as the current article.
-: Values: @0@ (no) or @1@ (yes).
+: If set to @1@, the linked author name will direct users to an author list in the current section, otherwise author list from all sections is displayed.
+: Values: @0@ (no, all sections) or @1@ (yes, this section only).
 : Default: @0@.
 ; [[title]]=&quot;boolean&quot;
-: Whether to display the author's real name @1@ or login name @0@.
+: Whether to display the author's real name or login name.
+: Values: @0@ (login name) or @1@ (real name).
 : Default: @1@.
 
 h2. Examples

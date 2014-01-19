@@ -29,7 +29,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Values: @0@ (login name) or @1@ (real name).
 : Default: @1@.
 ; [[wraptag]]=&quot;tag&quot;
-: HTML tag (without brackets) to wrap around the author name.
+: HTML tag (specified without brackets) to wrap around the author name.
 : Default: unset.
 
 h2. Genealogy

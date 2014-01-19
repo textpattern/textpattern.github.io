@@ -28,7 +28,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Values: @0@ (no) or @1@ (yes).
 : Default: @0@.
 ; [[wraptag]]=&quot;tag&quot;
-: HTML tag (without brackets) to wrap around invite text.
+: HTML tag (specified without brackets) to wrap around invite text.
 : Default: unset.
 
 h2. Examples

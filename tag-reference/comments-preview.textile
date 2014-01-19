@@ -16,7 +16,7 @@ Tag will accept the following attributes (*case-sensitive*):
 ; [[form]]=&quot;value&quot;
 : Default: @comments@.
 ; [[wraptag]]=&quot;tag&quot;
-: HTML tag (without brackets) to wrap around the list.
+: HTML tag (specified without brackets) to wrap around the list.
 : Default: depends upon 'Present Comments as a Numbered List?' preference setting - either @ol@ or 'unset'.
 
 h2. Genealogy

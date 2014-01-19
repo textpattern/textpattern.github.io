@@ -34,6 +34,9 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : Default: unset (but see [[label cross-reference]] for exceptions).
 ; [[class]]=&quot;name&quot;
 : HTML @class@ to apply to the @wraptag@ attribute value.
+; [[wraptag]]=&quot;element&quot;
+: HTML element to wrap breadcrumb block (e.g., @wraptag="p"@).
+: Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples
 

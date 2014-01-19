@@ -13,7 +13,7 @@ h2. Attributes
 Tag will accept the following attributes (*case-sensitive*):
 
 ; [[class]]=&quot;class name&quot;
-: CSS @class@ attribute to apply to the image (or to the wraptag, if set).
+: CSS @class@ attribute to apply to the image (or to the @wraptag@, if set).
 : Default: unset.
 ; [[escape]]=&quot;html&quot;
 : Escape HTML entities such as @<@, @>@ and @&@ for the image's @alt@ and @title@ attributes.
@@ -23,7 +23,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Specify an image @height@ which overrides the value stored in the database. Use @height="0"@ to turn off the output of a width attribute in the @<img>@ tag (thus the browser will scale the height if a width is used).
 : Default: height of image stored in the database.
 ; [[html_id]]=&quot;id&quot;
-: The HTML @id@ attribute assigned to the image (or to the wraptag, if set).
+: The HTML @id@ attribute assigned to the image (or to the @wraptag@, if set).
 : Default: unset.
 ; [[style]]=&quot;style rule&quot;
 : Inline CSS @style@ rule.

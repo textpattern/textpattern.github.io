@@ -17,7 +17,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : CSS @class@ to be applied to @wraptag@.
 : Default: @comments_error@.
 ; [[wraptag]]=&quot;tag text&quot;
-: HTML tag (without brackets) to wrap around the list.
+: HTML tag (specified without brackets) to wrap around the list.
 : Default: unset.
 
 h2. Examples
