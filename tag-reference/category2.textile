@@ -42,7 +42,7 @@ bc. <p><txp:category2 /></p>
 
 h3. Example 2: Hyperlinked category title
 
-bc. <p><txp:category2 link="1" title="1&" /></p>
+bc. <p><txp:category2 link="1" title="1" /></p>
 
 If *category2* is 'Specific stuff', this tag will display the words 'Specific stuff' as a hyperlink to a list of articles in the same category.
 
