@@ -38,7 +38,7 @@ h2. Examples
 
 h3. Example 1: Category name in plain text
 
-bxc. <p><txp:category1 /></p>
+bc. <p><txp:category1 /></p>
 
 h3. Example 2: Hyperlinked category title
 
