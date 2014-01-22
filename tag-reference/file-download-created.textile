@@ -1,0 +1,23 @@
+h1. File download created
+
+h2. Syntax
+
+bc. <txp:file_download_created />
+
+The *file_download_created* tag is  a _single_ tag that Textpattern will replace with the upload date of the file to download. Should be used in a doenload [[form]].
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[format]]=&quot;format string&quot; 
+: Override the default 'Archive date format' set in [[Preferences]] page.
+: Values: any valid "strftime":http://php.net/strftime string values.
+
+h2. Examples
+
+h3. Example 1: Display formated file upload date
+
+bc. <txp:file_download_created format="%D" />
+
+Returns the file creation date in the format @mm/dd/yy@.

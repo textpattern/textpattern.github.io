@@ -1,0 +1,29 @@
+h1. File download
+
+h2. Syntax
+
+bc. <txp:file_download />
+
+The *file_download* tag is  a _single_ tag which Textpattern will replace with a file download [[form]]. Inside that form go the other [[File Tags]].
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[filename]]=&quot;name&quot; 
+: Filename of the file to link to.
+: Default: unset (nothing is returned).
+; [[form]]=&quot;name&quot; 
+: Use the specified form.
+: Default: @files@.
+; [[id]]=&quot;integer&quot; 
+: File @id@ of the file to link to.
+: Default: unset (nothing is returned).
+
+h2. Examples
+
+h3. Example 1: Display a download form
+
+bc. <txp:file_download form="new-files" id="1" />
+
+Gets file with @id@ of @1@ and displays results using @new-files@ form.
