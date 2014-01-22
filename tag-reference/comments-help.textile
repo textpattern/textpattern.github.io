@@ -30,7 +30,7 @@ bc. <p>
     <txp:comment_remember />
 </p>
 <p>
-    Message<br>
+    Message (required)<br>
     <txp:comment_message_input /><br>
     <txp:comments_help />
 </p>
