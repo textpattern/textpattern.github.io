@@ -10,9 +10,6 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[class]]=&quot;class name&quot;
-: CSS @class@ attribute to apply to the image (or to the wraptag, if set).
-: Default: unset.
 ; [[escape]]=&quot;html&quot;
 : Escape HTML entities such as @<@, @>@ and @&@ for the image's @alt@ and @title@ attributes.
 : Values: @html@ or unset.
@@ -42,9 +39,17 @@ Tag will accept the following attributes (*case-sensitive*):
 : Default: unset.
 ; [[width]]=&quot;integer&quot;
 : Specify an image @width@ which overrides the value stored in the database. Use @width="0"@ to turn off the output of a width attribute in the @<img>@ tag (thus the browser will scale the width if a height is used).
+
+h3. Common presentational attributes
+
+These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
+
+; [[class]]=&quot;class name&quot;
+: CSS @class@ attribute to apply to the image (or to the wraptag, if set).
+: Default: unset (see [[class cross-reference]]).
 ; [[wraptag]]=&quot;tag text&quot;
-: HTML tag to be used to wrap the @<img>@ tag, specified without brackets.
-: Default: unset.
+: HTML tag to be used to wrap the @<img>@ tag, specified without brackets (e.g., @wraptag="p"@).
+: Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples
 

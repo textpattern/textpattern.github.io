@@ -30,7 +30,7 @@ h3. Content/behaviour attributes
 : Whether to use override forms for the generated article list.
 : Values: @0@ (no) or @1@ (yes).
 : Default: @1@.
-; _[[customfieldname]]_=&quot;value&quot;
+; [[customfieldname]]=&quot;value&quot;
 : Restrict to articles with specified value for specified custom field name. Replace _customfieldname_ with the actual name of the custom field.
 : *Important:* Using dashes @-@ or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
 ; [[form]]=&quot;form name&quot;
@@ -54,7 +54,7 @@ h3. Content/behaviour attributes
 : Do the article count, but do not display anything. Used when you want to show a search result count, or article navigation tags *before* the list of articles. Just make sure that, other than @pgonly@, both article tags are identical (form-related attributes are the exception, they do not need to be assigned).
 : Values: @0@ (no) or @1@ (yes).
 : Default: @0@.
-; [[searchall|searchall]]=&quot;boolean&quot;
+; [[searchall]]=&quot;boolean&quot;
 : When outputting search results, include only those articles with 'Include in site search' set on the [[Sections]] page. If set to @0@, only articles in the current section are displayed. See [[Fixing search results]] for more.
 : Values: @0@ (no) or @1@ (yes).
 : Default: @1@.
@@ -68,23 +68,23 @@ h3. Content/behaviour attributes
 ; [[sort]]=&quot;sort value(s)&quot;
 : How to sort resulting list.
 : Values:
-:: @ID@ (article id#).
 :: @AuthorID@ (author name).
-:: @LastMod@ (date last modified).
-:: @LastModID@ (author name of last modification).
-:: @Posted@ (date posted).
-:: @Expires@ (expiry date).
-:: @Title@.
 :: @Category1@.
 :: @Category2@.
 :: @comments_count@.
-:: @Status@.
-:: @Section@.
-:: @Keywords@.
-:: @Image@ (article image id#).
-:: @url_title@.
 :: @custom_1&@ through @custom_10@ (from Textpattern 4.2.0 onwards: @custom_n@ where 'n' is the number of your custom field - for numeric values use @(custom_n+0)@).
+:: @Expires@ (expiry date).
+:: @ID@ (article id#).
+:: @Image@ (article image id#).
+:: @Keywords@.
+:: @LastMod@ (date last modified).
+:: @LastModID@ (author name of last modification).
+:: @Posted@ (date posted).
 :: @rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
+:: @Section@.
+:: @Status@.
+:: @Title@.
+:: @url_title@.
 :: Each field in the @textpattern@ database table can be used as a sort key.
 :: When viewing a search results list, @score@ (how well the search terms match the article) is available as an additional value.
 : Default: @Posted desc@ (@score desc@ for search results).
@@ -101,6 +101,12 @@ h3. Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
+; [[break]]=&quot;value&quot;
+: Where value is an HTML element (e.g., @break="li"@) or some string to separate list items.
+: Default: @br@ (but see [[break cross-reference]] for exceptions).
+; [[class]]=&quot;name&quot;
+: HTML @class@ to apply to the @wraptag@ attribute value.
+: Default: tag name or unset (see [[class cross-reference]]).
 ; [[label]]=&quot;text&quot;
 : Label prepended to item.
 : Default: unset (but see [[label cross-reference]] for exceptions).
@@ -110,12 +116,6 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 ; [[wraptag]]=&quot;element&quot;
 : HTML element to wrap (markup) list block (e.g., @wraptag="ul"@).
 : Default: unset (but see [[wraptag cross-reference]] for exceptions).
-; [[class]]=&quot;name&quot;
-: HTML @class@ to apply to the @wraptag@ attribute value.
-: Default: tag name or unset (see [[class cross-reference]]).
-; [[break]]=&quot;value&quot;
-: Where value is an HTML element (e.g., @break="li"@) or some string to separate list items.
-: Default: @br@ (but see [[break cross-reference]] for exceptions).
 
 h2. Note on 'article list' vs. 'individual article' context
 

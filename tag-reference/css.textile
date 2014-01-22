@@ -12,7 +12,7 @@ Tag will accept the following attributes (*case-sensitive*):
 
 ; [[format]]=&quot;value&quot;
 : How to format output: either return complete "HTML link tag":https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link with necessary HTML attributes, or only the stylesheet's URL.
-: Value: @link@ or @url@.
+: Values: @link@ or @url@.
 : Default: @url@.
 ; [[media]]=&quot;value&quot;
 : "HTML media attribute":https://developer.mozilla.org/en-US/docs/CSS/Media_queries to be applied to link tag (when invoked with @format="link"@).

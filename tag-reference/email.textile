@@ -12,15 +12,15 @@ Tag will accept the following attributes (*case-sensitive*):
 
 ; [[email]]=&quot;value&quot;
 : The email address from which to make the link.
-: Value: Any valid email address.
+: Values: Any valid email address.
 : Default: unset.
 ; [[linktext]]=&quot;value&quot;
 : The displayed link text.
-: Value: Any text.
+: Values: Any text.
 : Default: @Contact@.
 ; [[title]]=&quot;value&quot;
 : The @title@ attribute to assign to the link.
-: Value: Any valid HTML title.
+: Values: Any valid HTML title.
 : Default: unset.
 
 h2. Examples

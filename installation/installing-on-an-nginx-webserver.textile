@@ -80,7 +80,7 @@ http {
         server_name  _;
 
         location / {
-	    root /usr/share/nginx/html;
+        root /usr/share/nginx/html;
             index  index.html index.php index.htm;
         }
       location ~ \.php$ {

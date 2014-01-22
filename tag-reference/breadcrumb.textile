@@ -29,11 +29,12 @@ h3. Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
+; [[class]]=&quot;name&quot;
+: HTML @class@ to apply to the @wraptag@ attribute value.
+: Default: unset (see [[class cross-reference]]).
 ; [[label]]=&quot;text&quot;
 : Label prepended to item.
 : Default: unset (but see [[label cross-reference]] for exceptions).
-; [[class]]=&quot;name&quot;
-: HTML @class@ to apply to the @wraptag@ attribute value.
 ; [[wraptag]]=&quot;element&quot;
 : HTML element to wrap breadcrumb block (e.g., @wraptag="p"@).
 : Default: unset (but see [[wraptag cross-reference]] for exceptions).
