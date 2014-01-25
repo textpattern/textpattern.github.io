@@ -42,7 +42,7 @@ h3. Common presentational attributes
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
 ; [[class]]=&quot;CSS class name&quot;
-: CSS @class@ attribute to be applied to @wraptag@.
+: HTML @class@ to apply to the @wraptag@ attribute value.
 : Default: @comments_form@ (see [[class cross-reference]]).
 ; [[wraptag]]=&quot;tag&quot;
 : HTML tag (specified without brackets) to wrap around output (e.g., @wraptag="p"@).

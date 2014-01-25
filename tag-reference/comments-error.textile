@@ -18,7 +18,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : Where value is an HTML element (e.g., @break="li"@) or some string to separate list items.
 : Default: @br@ (but see [[break cross-reference]] for exceptions).
 ; [[class]]=&quot;class name&quot;
-: CSS @class@ to be applied to @wraptag@.
+: HTML @class@ to apply to the @wraptag@ attribute value.
 : Default: @comments_error@ (see [[class cross-reference]]).
 ; [[wraptag]]=&quot;tag text&quot;
 : HTML tag (specified without brackets) to wrap around the list (e.g., @wraptag="ul"@).

@@ -133,7 +133,7 @@ Calls the @default@ article form, which may contain any variation of article out
 
 Uses the @limit@ attribute to specify the maximum number of articles displayed in article list context (if not specified, this defaults to @10@).
 
-h3. Example 2: Specifying a form 
+h3. Example 2: Specifying a form
 
 Expanding on *Example 1*, here is the @article@ tag responsible for showing lists of articles by category in the default page of a new Textpattern installation:
 

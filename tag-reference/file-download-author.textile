@@ -31,7 +31,7 @@ h3. Common presentational attributes
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
 ; [[class]]=&quot;class name&quot;
-: CSS @class@ attribute to be applied to the @wraptag@.
+: HTML @class@ to apply to the @wraptag@ attribute value.
 : Default: unset (see [[class cross-reference]]).
 ; [[Attributes Cross-reference#wraptag|wraptag]]=&quot;tag&quot;
 : HTML tag (specified without brackets) to wrap around the author name (e.g., @wraptag="p"@).

@@ -6,7 +6,7 @@ h2. Downgrade to a previous stable release
 
 'Downgrading' your installation to a previous release is *not advised for security reasons*. The only time you might want to do this is if you've upgraded to the newest stable release and found that one or more of your plugin functionalities are not working because they have not yet been updated by their developers to match the latest Textpattern code.
 
-Downgrading is done exactly as upgrading. Follow the instructions for upgrading above but using the earlier Textpattern CMS version you need. 
+Downgrading is done exactly as upgrading. Follow the instructions for upgrading above but using the earlier Textpattern CMS version you need.
 
 "List of archived Textpattern CMS releases":textpattern-release-history.textile.
 

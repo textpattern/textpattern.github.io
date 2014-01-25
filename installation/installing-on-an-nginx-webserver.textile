@@ -116,7 +116,7 @@ Since nginx does not make use of @.htaccess@ files or offer @mod_rewrite@, you w
 
 bc.. server {
     listen 80;  #could also be 1.2.3.4:80
- 
+
     # adjust this as required
     server_name example.com;
 

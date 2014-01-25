@@ -45,7 +45,7 @@ h3. Common presentational attributes
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
 ; [[class]]=&quot;class name&quot;
-: CSS @class@ attribute to apply to the image (or to the wraptag, if set).
+: HTML @class@ to apply to the @wraptag@ attribute value, if set, otherwise to the @<img>@ tag.
 : Default: unset (see [[class cross-reference]]).
 ; [[wraptag]]=&quot;tag text&quot;
 : HTML tag to be used to wrap the @<img>@ tag, specified without brackets (e.g., @wraptag="p"@).
