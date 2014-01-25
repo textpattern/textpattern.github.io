@@ -1,0 +1,41 @@
+h1. File download description
+
+h2. Syntax
+
+bc. <txp:file_download_description />
+
+The *file_download_description* tag is  a _single_ tag which Textpattern will replace with the description of the file to download, as defined when the file was uploaded. Should be used in a file download [[form]].
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[escape]]=&quot;html&quot;
+: Escape HTML entities such as @<@, @>@ and @&@ for the file's @description@ attributes.
+: Values: @html@ or unset.
+: Default: @html@.
+
+h3. Common presentational attributes
+
+These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
+
+; [[class]]=&quot;class name&quot;
+: HTML @class@ to apply to the @wraptag@ attribute value.
+: Default: unset (see [[class cross-reference]]).
+; [[wraptag]]=&quot;tag text&quot;
+: HTML tag to be used to wrap the description text with, specified without brackets.
+: Default: unset.
+
+h2. Examples
+
+h3. Example 1: Display a file's description
+
+bc. <p>File description: <txp:file_download_description /></p>
+
+Other tags used: [[text]]
+
+h2. Genealogy
+
+h3. Version 4.0.7
+
+Default value for @escape@ attribute changed from 'unset' to @html@.
