@@ -6,13 +6,11 @@ bc. <txp:excerpt />
 
 The *excerpt* tag is a _single_ tag which is used to return the excerpt text, if any, associated with the article being displayed.
 
+The conditional tag "if_excerpt":if-excerpt.textile can be used to check if there is an excerpt.
+
 h2. Attributes
 
 This tag has no attributes.
-
-h2. Related tags
-
-The conditional tag "if_excerpt":if-excerpt.textile can be used to check if there is an excerpt.
 
 h2. Examples
 
