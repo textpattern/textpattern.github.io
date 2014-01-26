@@ -21,11 +21,11 @@ This example explains how you could display the excerpt in an article list, and 
 bc. <txp:if_article_list>
     <txp:if_excerpt>
         <txp:excerpt />
-            <p class="read-more">
-                <a href="<txp:permlink />#body" title="<txp:title />">Full article</a>
-            </p>
-        <txp:else />
-            <txp:body />
+        <p class="read-more">
+            <a href="<txp:permlink />#body" title="<txp:title />">Full article</a>
+        </p>
+    <txp:else />
+        <txp:body />
     </txp:if_excerpt>
 <txp:else />
     <txp:if_excerpt>
