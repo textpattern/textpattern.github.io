@@ -20,7 +20,8 @@ Tag will accept the following attributes (*case-sensitive*):
 : Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [[Category]] page. Also note that if you had called your category @My Category Name@ it becomes @my-category-name@ when used in tags.
 : Default: unset (use current category).
 ; [[section]]=&quot;section name&quot;
-: Restricts category search to named section.
+: Restrict to articles from specified section(s).
+: Values: (comma separated list of) section name(s).
 : Default: current section (for backwards compatibility).
 ; [[this_section]]=&quot;boolean&quot;
 : If set to @1@, the linked category name will direct users to an category list in the current section, otherwise category list from all sections is displayed.

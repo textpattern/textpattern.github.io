@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:file_download_created />
 
-The *file_download_created* tag is  a _single_ tag that Textpattern will replace with the upload date of the file to download. Should be used in a file download [[form]].
+The *file_download_created* tag is a _single_ tag that Textpattern will replace with the upload date of the file to download. Should be used in a file download [[form]].
 
 h2. Attributes
 

@@ -15,8 +15,9 @@ Tag will accept the following attributes (*case-sensitive*):
 : Values: @0@ (no) or @1@ (yes).
 : Default: @0@.
 ; [[section]]=&quot;section name&quot;
-: Only link to articles from the named section.
-: Default: unset.
+: Restrict to articles from specified section(s).
+: Values: (comma separated list of) section name(s).
+: Default: unset, retrieves from all sections.
 ; [[this_section]]=&quot;boolean&quot;
 : If set to @1@, the linked author name will direct users to an author list in the current section, otherwise author list from all sections is displayed.
 : Values: @0@ (no, all sections) or @1@ (yes, this section only).

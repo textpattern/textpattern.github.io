@@ -17,8 +17,9 @@ Tag will accept the following attributes (*case-sensitive*):
 : Values: @0@ (no) or @1@ (yes).
 : Default: @0@.
 ; [[section]]=&quot;section name&quot;
-: Only link to articles from the specified section.
-: Default: unset.
+: Restrict to articles from specified section(s).
+: Values: (comma separated list of) section name(s).
+: Default: unset, retrieves from all sections.
 ; [[title]]=&quot;boolean&quot;
 : Whether to output category title, rather than name.
 : Values: @0@ (no, use name) or @1@ (yes, use title).
