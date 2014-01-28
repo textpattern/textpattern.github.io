@@ -2,7 +2,7 @@ h1. If author
 
 h2. Syntax
 
-bc. <txp:if_author />
+bc. <txp:if_author>
 
 The *if_author* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
 
