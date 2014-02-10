@@ -132,19 +132,37 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 h2. Examples
 
-h3. Example 1: List articles published in specified month
+h3. Example 1: Display 5 articles from a specific section on the homepage
+
+To show 5 articles from a 'news' section within the homepage @default@ page template (or the template you use for displaying your homepage), add:
+
+bc. <txp:article_custom section="news" limit="5" form="homepage_articles" />
+
+Then create an 'article' type form template called @homepage_articles@, containing:
+
+bc. <article>
+    <h1><txp:title /></h1>
+    <txp:if_article_image>
+        <p><txp:article_image /></p>
+    </txp:if_article_image>
+    <txp:body />
+</article>
+
+Other tags used: "article_image":article-image.textile, "body":body.textile, "title":title.textile.
+
+h3. Example 2: List articles published in specified month
 
 bc. <txp:article_custom form="month_list" sort="Section asc" month="2004-14" />
 
 This code will display a monthly list articles by section and in ascending order, between the years of 2004 and 2014. See *Example 5* below for more information on article sorting.
 
-h3. Example 2: Select by keyword
+h3. Example 3: Select by keyword
 
 bc. <txp:article_custom sort="Posted desc" keywords="One" />
 
 This code will display articles that have a keyword with a value @One@.
 
-h3. Example 3a: Select by author (using single tag)
+h3. Example 4a: Select by author (using single tag)
 
 bc. <txp:article_custom form="author_list" author="Parkling" />
 
@@ -154,7 +172,7 @@ bc. <p><txp:permlink><txp:title /></txp:permlink></p>
 
 Other tags used: "permlink":permlink.textile, "title":title.textile.
 
-h3. Example 3b: Select by author (using container tag)
+h3. Example 4b: Select by author (using container tag)
 
 bc. <txp:article_custom author="Parkling">
     <p><txp:permlink><txp:title /></txp:permlink></p>
@@ -164,13 +182,13 @@ This is exactly equivalent to *Example 3a*, just using a container tag instead o
 
 Other tags used: "permlink":permlink.textile, "title":title.textile.
 
-h3. Example 4: Combined with custom fields
+h3. Example 5: Combined with custom fields
 
 bc. <txp:article_custom colour="red" />
 
 This code will display articles that have a custom field named @colour@ with a value @red@.
 
-h3. Example 5: Article sorting
+h3. Example 6: Article sorting
 
 bc. <txp:article_custom sort="AuthorID asc, Posted asc" />
 
@@ -178,7 +196,7 @@ Uses the @sort@ attribute to define values by which to order article output. In 
 
 Why might you do it? Sorting is a powerful way to group articles (e.g., by author), and/or give priority to articles most recently published (typically better for your website visitors).
 
-h3. Example 6: Select by article ID(s)
+h3. Example 7: Select by article ID(s)
 
 bc. <txp:article_custom id="81,73" />
 
