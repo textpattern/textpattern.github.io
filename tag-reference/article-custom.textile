@@ -148,7 +148,7 @@ bc. <article>
     <txp:body />
 </article>
 
-Other tags used: "article_image":article-image.textile, "body":body.textile, "title":title.textile.
+Other tags used: "article_image":article-image.textile, "body":body.textile, "if_article_image":if-article-image.textile, "title":title.textile.
 
 h3. Example 2: List articles published in specified month
 
