@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:file_download_category />
 
-The *file_download_category* tag is a _single_ tag that Textpattern will replace with the category of the file to download. Should be used in a file download [[form]].
+The *file_download_category* tag is a _single_ tag that Textpattern will replace with the category of the file to download. Should be used in a Textpattern 'file' type [[form]] template.
 
 h2. Attributes
 
