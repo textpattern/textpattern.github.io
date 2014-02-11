@@ -40,7 +40,7 @@ bc. <txp:if_article_image>
     </p>
 </txp:if_article_image>
 
-Checks an article image exists, then uses @<txp:images>@ with @limit="1"@ to display that image (because the @<txp:images>@ tag takes the article image as a first priority). Uses the TimThumb script to proportionately resize a thumbnail version (640px wide) of the image automatically, and keep a cached version of the resized image for future visitors. Links the thumbnail to the original image, and lists the image author name below each thumbnail.
+Checks an article image exists, then uses @<txp:images>@ with @limit="1"@ to display that image (because the @<txp:images>@ tag takes the article image as a first priority). Uses the TimThumb script to proportionately resize a 640px wide version of the image automatically, and keep a cached version of the resized image for future visitors.
 
 Other tags used: "images":images.textile, "image_info":image-info.textile, "image_url":image-url.textile, "site_url":site-url.textile.
 
