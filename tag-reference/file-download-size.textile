@@ -1,0 +1,34 @@
+h1. File download size
+
+h2. Syntax
+
+bc. <txp:file_download_size />
+
+The *file_download_size* tag is a _single_ tag which Textpattern will replace with the formatted file size of the file to be downloaded. Should be used in a Textpattern 'file' type [[form]] template.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[decimals]]=&quot;places&quot; 
+: Number of decimal places to format the value to.
+: Default: @2@.
+; [[format]]=&quot;numbering style&quot;
+: The way to represent the number, based on the file's expected size.
+: Values:
+:: b (bytes)
+:: k (kilobytes)
+:: m (megabytes)
+:: g (gigabytes)
+:: t (terabytes)
+:: p (petabytes)
+:: e (exabytes)
+:: z (zettabytes)
+:: y (yottabytes)
+: Default: unset (i.e. the most appropriate units based on the file size).
+
+h2. Examples
+
+h3. Example 1: Display formatted file size in kilobytes
+
+bc. <txp:file_download_size format="k" />

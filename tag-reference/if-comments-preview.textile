@@ -1,0 +1,25 @@
+h1. If comments preview
+
+h2. Syntax
+
+bc. <txp:if_comments_preview>
+
+The *if_comments_preview* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc. <txp:if_comments_preview>
+    ...conditional statement...
+</txp:if_comments_preview>
+
+The tag will execute the contained statements if a comment is being previewed.
+
+h2. Attributes
+
+This tag takes no attributes:
+
+h2. Examples
+
+h3. Example 1: Display text prompt when comment is previewed
+
+bc. <txp:if_comments_preview>
+    <p><strong>Please review your comment before submitting.</strong></p>
+</txp:if_comments_preview>

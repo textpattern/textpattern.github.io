@@ -1,0 +1,27 @@
+h1. If comments error
+
+h2. Syntax
+
+bc. <txp:if_comments_error>
+
+The *if_comments_error* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc. <txp:if_comments_error>
+    ...conditional statement...
+</txp:if_comments_error>
+
+The tag will execute the contained statements when an error exists with the comments.
+
+h2. Attributes
+
+This tag has no attributes:
+
+h2. Examples
+
+h3. Example 1: Display comments error when an error occurs
+
+bc. <txp:if_comments_error>
+    <txp:comments_error />
+</txp:if_comments_error>
+
+Other tags used: "comments_error":comments-error.textile.
