@@ -44,7 +44,7 @@ bc. <head>
     <!-- ...more tags... -->
 </head>
 
-h2. Example 3: Output the link to a named stylesheet
+h3. Example 3: Output the link to a named stylesheet
 
 bc. <head>
     <!-- ...tags... -->

@@ -51,7 +51,7 @@ bc. <p>
     Published by HarperCollins in 2004.
 </p>
 
-h2. Example 2: Power A linklog
+h3. Example 2: Power A linklog
 
 With an article title of @Textpattern@, an excerpt of @Textpattern is awesome!@, a custom field named @Link@ containing @http://textpattern.com/@, and an 'article' type form like the following:
 
