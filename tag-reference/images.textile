@@ -113,8 +113,6 @@ h3. Example 1: Varying attributes
 
 This example shows the outcome of various attribute configurations to give you an idea of what to expect from the tag. More concrete examples follow.
 
-h3. NB: THESE MAY NOT BE CORRECT ANY MORE DUE TO TAG CHANGES SINCE THE EXAMPLES WERE WRITTEN. NEED VERIFICATION.
-
 bc. <txp:images auto_detect="" />
 
 Displays all images in the database.
@@ -132,7 +130,7 @@ Context-sensitivity mode. Returns an image list based on the first of:
 # Images matching author, of on an author list page;
 # All images in the database.
 
-bc <txp:images id="" />
+bc. <txp:images id="" />
 <txp:images name="" />
 <txp:images category="" />
 
@@ -164,7 +162,7 @@ Just uncategorized images are displayed (note that @category=","@ also works, bu
 
 bc. <txp:images author="attenborough, morris" />
 
-All images by author (ID) *attenborough* and *morris* are displayed.
+All images by author (ID) 'attenborough' and 'morris' are displayed.
 
 bc. <txp:images realname="David+Attenborough" />
 
@@ -215,7 +213,7 @@ Other tags used: "if_different":if-different.textile, "image_info":image-info.te
 
 h3. Example 3: Integration with third-party PHP resizing script (TimThumb)
 
-"TimThumb":http://www.binarymoon.co.uk/projects/timthumb/" is a simple, flexible, PHP script that resizes images directly on your web server. "Read the TimThumb documentation":http://www.binarymoon.co.uk/2010/08/timthumb/ for basic installation instructions (also requires the GD image library). Then, for example, you can use the following:
+"TimThumb":http://www.binarymoon.co.uk/projects/timthumb/ is a simple, flexible, PHP script that resizes images directly on your web server. "Read the TimThumb documentation":http://www.binarymoon.co.uk/2010/08/timthumb/ for basic installation instructions (also requires the GD image library). Then, for example, you can use the following:
 
 bc. <txp:images limit="6" category="gallery">
     <p>
