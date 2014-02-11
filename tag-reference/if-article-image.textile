@@ -28,6 +28,22 @@ bc. <txp:if_article_image>
 
 Other tags used: "article_image":article-image.textile, "else":else.textile, "image":image.textile.
 
+h3. Example 2: Integration with third-party PHP resizing script (TimThumb)
+
+"TimThumb":http://www.binarymoon.co.uk/projects/timthumb/" is a simple, flexible, PHP script that resizes images directly on your web server. "Read the TimThumb documentation":http://www.binarymoon.co.uk/2010/08/timthumb/ for basic installation instructions (also requires the GD image library). Then, for example, you can use the following:
+
+bc. <txp:if_article_image>
+    <p>
+        <txp:images limit="1">
+            <img src="<txp:site_url />timthumb.php?src=<txp:image_url />&amp;w=640" alt="<txp:image_info type='alt' />">
+        </txp:images>
+    </p>
+</txp:if_article_image>
+
+Checks an article image exists, then uses @<txp:images>@ with @limit="1"@ to display that image (because the @<txp:images>@ tag takes the article image as a first priority). Uses the TimThumb script to proportionately resize a thumbnail version (640px wide) of the image automatically, and keep a cached version of the resized image for future visitors. Links the thumbnail to the original image, and lists the image author name below each thumbnail.
+
+Other tags used: "images":images.textile, "image_info":image-info.textile, "image_url":image-url.textile, "site_url":site-url.textile.
+
 h2. Genealogy
 
 h2. Version 4.2.0
