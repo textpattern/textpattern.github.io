@@ -30,9 +30,12 @@ h2. Examples
 
 h3. Example 1: Display a file's description
 
-bc. <p>File description: <txp:file_download_description /></p>
+bc. <p>
+    File description:
+    <txp:file_download_description />
+</p>
 
-Other tags used: [[text]]
+Other tags used: "text":text.textile.
 
 h2. Genealogy
 

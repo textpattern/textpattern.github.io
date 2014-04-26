@@ -141,9 +141,13 @@ bc. <txp:article_custom section="news" limit="5" form="homepage_articles" />
 Then create an 'article' type form template called @homepage_articles@, containing:
 
 bc. <article>
-    <h1><txp:title /></h1>
+    <h1>
+        <txp:title />
+    </h1>
     <txp:if_article_image>
-        <p><txp:article_image /></p>
+        <p>
+            <txp:article_image />
+        </p>
     </txp:if_article_image>
     <txp:body />
 </article>
@@ -168,14 +172,22 @@ bc. <txp:article_custom form="author_list" author="Parkling" />
 
 This code will display articles that have a authored by author with login name of @Parkling@. The referenced @author_list@ article form might go thus:
 
-bc. <p><txp:permlink><txp:title /></txp:permlink></p>
+bc. <p>
+    <txp:permlink>
+        <txp:title />
+    </txp:permlink>
+</p>
 
 Other tags used: "permlink":permlink.textile, "title":title.textile.
 
 h3. Example 4b: Select by author (using container tag)
 
 bc. <txp:article_custom author="Parkling">
-    <p><txp:permlink><txp:title /></txp:permlink></p>
+    <p>
+        <txp:permlink>
+            <txp:title />
+        </txp:permlink>
+    </p>
 </txp:article_custom>
 
 This is exactly equivalent to *Example 3a*, just using a container tag instead of a single tag with referenced form.

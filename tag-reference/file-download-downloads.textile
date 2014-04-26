@@ -14,4 +14,7 @@ h2. Examples
 
 h3. Example 1: Display the number of downloads
 
-bc. <p>Downloads: <txp:file_download_downloads /></p>
+bc. <p>
+    Downloads:
+    <txp:file_download_downloads />
+</p>

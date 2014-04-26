@@ -14,8 +14,12 @@ h2. Examples
 
 h3. Example 1: Display error information
 
-bc. <h1><txp:error_status /></h1>
-<p><txp:error_message /></p>
+bc. <h1>
+    <txp:error_status />
+</h1>
+<p>
+    <txp:error_message />
+</p>
 
 With the tags arranged like this (as they are in the @error_default@ page template), they display the error status code as a heading and the relevant server message beneath it, usually to indicate to the visitor that something went wrong.
 

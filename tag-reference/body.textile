@@ -14,8 +14,12 @@ h2. Examples
 
 h3. Example 1: Display the article text
 
-bc. <h1><txp:title /></h1>
-<p><txp:author /> at <txp:posted /></p>
+bc. <h1>
+    <txp:title />
+</h1>
+<p>
+    <txp:author /> at <txp:posted />
+</p>
 <txp:body />
 
 When used as part of your article form, this displays the article title, author and posted date, then the body text beneath that.

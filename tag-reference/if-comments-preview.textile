@@ -21,5 +21,7 @@ h2. Examples
 h3. Example 1: Display text prompt when comment is previewed
 
 bc. <txp:if_comments_preview>
-    <p><strong>Please review your comment before submitting.</strong></p>
+    <p>
+        <strong>Please review your comment before submitting.</strong>
+    </p>
 </txp:if_comments_preview>

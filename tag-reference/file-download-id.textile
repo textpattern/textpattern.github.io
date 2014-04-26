@@ -14,4 +14,7 @@ h2. Examples
 
 h3. Example 1: Display a file id
 
-bc. <p>File ID number: <txp:file_download_id /></p>
+bc. <p>
+    File ID number:
+    <txp:file_download_id />
+</p>

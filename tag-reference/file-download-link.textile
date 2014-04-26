@@ -28,7 +28,8 @@ h2. Examples
 h3. Example 1: Provide a link to download file #4
 
 bc. <txp:file_download_link id="4">
-    <txp:file_download_name /> [<txp:file_download_size format="mb" decimals="2" />]
+    <txp:file_download_name />
+    [<txp:file_download_size format="mb" decimals="2" />]
 </txp:file_download_link>
 
 Makes a link to the given file (#4) comprising its file name and size.

@@ -40,7 +40,9 @@ h2. Examples
 
 h3. Example 1: Display comments invitation and comment count
 
-bc. <txp:if_comments><txp:comments_invite wraptag="p" /></txp:if_comments>
+bc. <txp:if_comments>
+    <txp:comments_invite wraptag="p" />
+</txp:if_comments>
 
 This will display the comments invitation and a comment count (but only if there are any comments associated with the current article).
 

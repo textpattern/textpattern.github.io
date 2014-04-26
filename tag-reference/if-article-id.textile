@@ -25,7 +25,9 @@ h2. Examples
 h3. Example 1: Display info if the article id matches
 
 bc. <txp:if_article_id id="33">
-    <p><txp:title /></p>
+    <p>
+        <txp:title />
+    </p>
 </txp:if_article_id>
 
 Displays the article title if the id of the current article is 33.
@@ -37,7 +39,11 @@ h3. Example 2: Display a list of articles omitting current article
 bc. <txp:article_custom label="related" labeltag="h4" section="<txp:section />" wraptag="ul">
     <txp:if_article_id>
     <txp:else />
-        <li><txp:permlink><txp:title /></txp:permlink></li>
+        <li>
+            <txp:permlink>
+                <txp:title />
+            </txp:permlink>
+        </li>
     </txp:if_article_id>
 </txp:article_custom>
 

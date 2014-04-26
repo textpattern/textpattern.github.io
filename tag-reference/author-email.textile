@@ -23,7 +23,9 @@ h2. Examples
 
 h3. Example 1: Display email address (but don't link)
 
-bc. <p><txp:author_email /></p>
+bc. <p>
+    <txp:author_email />
+</p>
 
 h3. Example 2: Create a mailto: link
 

@@ -45,7 +45,10 @@ Use the following within an article form:
 bc. <txp:if_excerpt>
     <txp:excerpt />
 <txp:else />
-    <p>Section: <txp:section title="1" link="1" /></p>
+    <p>
+        Section:
+        <txp:section title="1" link="1" />
+    </p>
 </txp:if_excerpt>
 
 Other tags used: "else":else.textile, "if_excerpt":if-excerpt.textile, "section":section.textile.

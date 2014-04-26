@@ -25,7 +25,9 @@ bc. <div class="entry-content">
 </div>
 <txp:hide>
     <address class="vcard author">
-        <span class="fn"><txp:author /></span>
+        <span class="fn">
+            <txp:author />
+        </span>
     </address>
     <txp:comments_invite wraptag="p" />
 </txp:hide>

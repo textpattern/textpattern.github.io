@@ -18,6 +18,9 @@ h2. Examples
 
 h3. Example 1: Display formated file upload date
 
-bc. <p>File created: <txp:file_download_created format="%D" /></p>
+bc. <p>
+    File created:
+    <txp:file_download_created format="%D" />
+</p>
 
 Returns the file creation date in the format @mm/dd/yy@.

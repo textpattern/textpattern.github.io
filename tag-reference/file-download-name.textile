@@ -20,7 +20,8 @@ h2. Examples
 h3. Example 1: Display the name of a file, linked to download
 
 bc. <txp:file_download_link filename="my-presentation.pdf">
-    <txp:file_download_name /> [<txp:file_download_size format="mb" decimals="2" />]
+    <txp:file_download_name />
+    [<txp:file_download_size format="mb" decimals="2" />]
 </txp:file_download_link>
 
 Other tags used: "file_download_link":file-download-link.textile, "file_download_size":file_download_size.textile.

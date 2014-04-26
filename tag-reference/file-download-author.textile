@@ -41,7 +41,10 @@ h2. Examples
 
 h3. Example 1: Display and link the file author
 
-bc. <p>File author: <txp:file_download_author link="1" /></p>
+bc. <p>
+    File author:
+    <txp:file_download_author link="1" />
+</p>
 
 h2. Genealogy
 

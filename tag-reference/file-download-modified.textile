@@ -18,6 +18,9 @@ h2. Examples ==
 
 h3. Example 1: Display formated file modified date
 
-bc. <p>File last modified: <txp:file_download_modified format="%D" /></p>
+bc. <p>
+    File last modified:
+    <txp:file_download_modified format="%D" />
+</p>
 
 Returns the file creation date in the format @mm/dd/yy@.

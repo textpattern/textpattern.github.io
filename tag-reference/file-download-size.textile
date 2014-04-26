@@ -10,7 +10,7 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[decimals]]=&quot;places&quot; 
+; [[decimals]]=&quot;places&quot;
 : Number of decimal places to format the value to.
 : Default: @2@.
 ; [[format]]=&quot;numbering style&quot;

@@ -21,7 +21,10 @@ h2. Examples
 h3. Example 1: Number of comments associated with an article
 
 bc. <txp:if_comments>
-    <p>Comments: <txp:comments_count />.<p>
+    <p>
+        Comments:
+        <txp:comments_count />
+    <p>
 <txp:else />
     <p>No comments.</p>
 </txp:if_comments>

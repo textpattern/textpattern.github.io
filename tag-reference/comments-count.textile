@@ -21,7 +21,10 @@ h3. Example 1: Display comment invitation and count
 But only if any comments are associated with the current article.
 
 bc. <txp:if_comments>
-    <p><txp:comments_invite showcount="0" /> | <txp:comments_count /> respones received.</p>
+    <p>
+        <txp:comments_invite showcount="0" /> |
+        <txp:comments_count /> respones received.
+    </p>
 </txp:if_comments>
 
 Other tags used: "comments_invite":comments-invite.textile, "if_comments":if-comments.textile.

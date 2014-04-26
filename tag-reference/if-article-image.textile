@@ -21,9 +21,13 @@ h2. Examples
 h3. Example 1: Display default image if no article image exists
 
 bc. <txp:if_article_image>
-    <p><txp:article_image /></p>
+    <p>
+        <txp:article_image />
+    </p>
 <txp:else />
-    <p><txp:image id="5" /></p>
+    <p>
+        <txp:image id="5" />
+    </p>
 </txp:if_article_image>
 
 Other tags used: "article_image":article-image.textile, "else":else.textile, "image":image.textile.

@@ -52,7 +52,9 @@ bc. <txp:article_image wraptag="p" class="article-image" />
 
 This will wrap the image in paragraph tags, applying the @class@ to the paragraph:
 
-bc. <p class="article-image"><img src="..."></p>
+bc. <p class="article-image">
+    <img src="...">
+</p>
 
 It gives you full control over the image appearance using CSS. Note: Without the wraptag, the class is applied directly to the @<img>@ tag.
 

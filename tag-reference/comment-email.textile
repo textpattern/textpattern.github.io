@@ -15,7 +15,11 @@ h2. Examples
 h3. Example 1: Comments display form with linked email and comment id
 
 bc. <txp:comment_message />
-<p><a href="mailto:<txp:comment_email />">Email</a> |
-    <txp:comment_permlink><txp:comment_id /></txp:comment_permlink></p>
+<p>
+    <a href="mailto:<txp:comment_email />">Email</a> |
+    <txp:comment_permlink>
+        <txp:comment_id />
+    </txp:comment_permlink>
+</p>
 
 Other tags used: "comment_id":comment-id.textile, "comment_message":comment-message.textile, "comment_permlink":comment-permlink.textile.

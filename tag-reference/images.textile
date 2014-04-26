@@ -200,7 +200,9 @@ h3. Example 2: Multiple pieces of information at once, using images tag as wrapp
 
 bc. <txp:images category="birds, mammals" thumbnail="1" sort="category asc">
     <txp:if_different>
-        <h4><txp:image_info type="category_title" /></h4>
+        <h4>
+            <txp:image_info type="category_title" />
+        </h4>
     </txp:if_different>
     <txp:thumbnail wraptag="div" />
     <txp:image_info type="w, h" wraptag="div" class="img_dims" break=" × " />
@@ -221,7 +223,9 @@ bc. <txp:images limit="6" category="gallery">
             <img src="<txp:site_url />timthumb.php?src=<txp:image_url />&amp;w=160" alt="<txp:image_info type='alt' />">
         </a>
     </p>
-    <p>Author: <txp:image_author /></p>
+    <p>
+        Author: <txp:image_author />
+    </p>
 </txp:images>
 
 Creates a small gallery of 6 images from the category 'gallery'. Uses the TimThumb script to proportionately resize a thumbnail version (160px wide) of the image automatically, and keep a cached version of the thumbnail for future visitors. Links the thumbnail to the original image, and lists the image author name below each thumbnail.
