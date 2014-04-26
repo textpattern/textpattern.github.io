@@ -1,0 +1,28 @@
+h1. Search result date
+
+h2. Syntax
+
+bc. <txp:search_result_date />
+
+The *search_result_date* tag is a _single_ tag. This tag will provide the article posted date as returned by the search function.
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+h3. Example 1: Displays the posting date of an article
+
+bc. <h3>
+    <txp:permlink>
+        <txp:title />
+    </txp:permlink>
+</h3>
+<p>
+    <txp:search_result_date /> | <txp:posted />
+</p>
+
+Used in a search results form, this offers a search result entry comprising a hyperlinked article title, and the date that article was posted.
+
+Other tags used: "title":title.textile, "permlink":permlink.textile, "posted":posted.textile.

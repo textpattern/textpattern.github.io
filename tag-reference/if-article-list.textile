@@ -1,0 +1,61 @@
+h1. If article list
+
+h2. Syntax
+
+bc. <txp:if_article_list>
+
+The *if_article_list* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc. <txp:if_article_list>
+    ...conditional statement...
+</txp:if_article_list>
+
+The tag will execute the contained statement if an article list is being displayed (i.e. not showing an individual article).
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+h3. Example 1: Article/article list navigation
+
+bc.. <txp:article />
+
+<txp:if_individual_article>
+    <p>
+        <txp:link_to_prev>
+            <txp:prev_title />
+        </txp:link_to_prev>
+        <txp:link_to_next>
+            <txp:next_title />
+        </txp:link_to_next>
+    </p>
+</txp:if_individual_article>
+
+&lt;txp:if_article_list&gt;
+    <p>
+        <txp:older>Previous</txp:older>
+        <txp:newer>Next</txp:newer>
+    </p>
+</txp:if_article_list>
+
+p. This example shows how to setup article navigation so that "link_to_prev":link-to-prev.textile and "link_to_next":link-to-next.textile are used at the individual article level _or_ "older":older.textile and "newer":newer.textile with article lists.
+
+Other tags used: "link_to_prev":link-to-prev.textile, "link_to_next":link-to-next.textile, "prev_title":prev-title.textile, "next_title":next-title.textile, "if_individual_article":if-individual-article.textile, "older":older.texrtile, "newer":newer.texrtile.
+
+h3. Example 2: In combination with the 'else' tag
+
+bc. <txp:if_article_list>
+    <p>
+        <txp:site_name />
+    </p>
+<txp:else />
+    <p>
+        <img src="http://example.com/logo.png" alt="Logo">
+    </p>
+</txp:if_article_list>
+
+This example shows the if_article_list in combination with "else":else.textile to display a site's "site_name":site-name.textile or logo when an article list is displayed or not, respectively.
+
+Other tags used: "else":else.textile, "site_name":site-name.textile.
