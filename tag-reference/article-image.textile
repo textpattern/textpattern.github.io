@@ -62,7 +62,9 @@ h3. Example 2: Link thumbnail to the article
 
 Used in an article list form, this will display an article list consisting of hyperlinked article images' thumbnails:
 
-bc. <txp:permlink><txp:article_image thumbnail="1" /></txp:permlink>
+bc. <txp:permlink>
+    <txp:article_image thumbnail="1" />
+</txp:permlink>
 
 Other tags used: "permlink":permlink.textile.
 
