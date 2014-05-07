@@ -33,7 +33,7 @@ Other tags used: "author":author.texttile.
 
 h3. Example 2: Using the tag with else
 
-<txp:if_article_section name"poetry">
+bc. <txp:if_article_section name"poetry">
     <p>Fun With poetry</p>
 <txp:else />
     <p><a href="index.php">Home</a></p>
