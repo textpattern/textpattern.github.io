@@ -63,7 +63,7 @@ bc. <;txp:if_category>
 
 Displays an appropriate heading for both category and non-category pages.
 
-Other tags used: [[category]], [[else]]
+Other tags used: "category":category.textile, "else":else.textile.
 
 h3. Example 4: Display a category/article list
 
