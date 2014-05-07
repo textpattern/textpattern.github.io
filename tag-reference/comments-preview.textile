@@ -33,4 +33,4 @@ Use is necessary in comments display form (@<comments_display />@, by default).
 
 h3. Version 4.0.3
 
-Support added.
+Tag support added.

@@ -240,4 +240,4 @@ Sort order of @id@ attribute maintained, unless overridden with @sort@ attribute
 
 h3. Version 4.3.0
 
-Tag introduced.
+Tag support added.

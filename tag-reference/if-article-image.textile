@@ -52,4 +52,4 @@ h2. Genealogy
 
 h2. Version 4.2.0
 
-Added as a new tag.
+Tag support added.
