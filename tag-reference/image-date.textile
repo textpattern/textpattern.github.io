@@ -1,0 +1,44 @@
+h1. Image date
+
+h2. Syntax
+
+bc. <txp:image_date />
+
+The *image_date* tag is a _single_ tag that Textpattern will replace with the uploaded date of the current (or given) image. Should usually be used in an [[image form]], although it may be used on its own providing you specify an @id@ or @name@.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[id]]=&quot;integer&quot;
+: An @id@ assigned at upload of an image to display. The IDs can be found on the [[Images page]].
+: Default: unset.
+; [[format]]=&quot;format string&quot;
+: Adjust the display of the date to taste.
+: Values: any valid "strftime":http://php.net/strftime string values.
+: Default: the Archive date format set in preferences.
+; [[name]]=&quot;image name&quot;
+: An image to display, given by its image name as shown on the [[Images page]]. If both @name@ and @id@ are specified, the @id@ takes precedence.
+: Default: unset.
+
+h2. Examples
+
+h3. Example 1: Display additional image information
+
+bc. <txp:images category="mammals">
+    <a href="<txp:image_url />">
+        <txp:thumbnail />
+    </a>
+    <div class="img-info">
+        <txp:image_info type="caption, author" break=" by " />
+        <txp:image_date format="%e %b %Y" />
+    </div>
+</txp:images>
+
+Other tags used: "images":images.textile, "image_url":image-url.textile, "image_info":image-info.textile, "thumbnail":thumbnail.textile.
+
+h2. Genealogy
+
+h3. Version 4.3.0
+
+Tag support added.
