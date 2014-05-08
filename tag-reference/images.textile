@@ -205,7 +205,7 @@ bc. <txp:images category="birds, mammals" thumbnail="1" sort="category asc">
         </h4>
     </txp:if_different>
     <txp:thumbnail wraptag="div" />
-    <txp:image_info type="w, h" wraptag="div" class="img_dims" break=" × " />
+    <txp:image_info type="w, h" wraptag="div" break=" × " />
     by <txp:image_info type="author" />
 </txp:images>
 
