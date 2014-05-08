@@ -1,0 +1,74 @@
+h1. Image author
+
+h2. Syntax
+
+bc. <txp:image_author />
+
+The *image_author* tag is a _single_ tag that Textpattern will replace with the author's name associated with the current image in an "images":images.textile list. It can *only* be used inside @<txp:images />@.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[link]]=&quot;link type (boolean)&quot;
+: Whether to hyperlink the author or not.
+: Values: @0@ (no) or @1@ (yes).
+: Default: @0@.
+; [[section]]=&quot;section name&quot;
+: Direct any linked author name to the nominated section instead of to the default (front) page.
+: Default: unset.
+; [[this_section]]=&quot;boolean&quot;
+: If set to 1, the linked author name will direct users to an author list in the current section.
+: Values: @0@ (all sections) or @1@ (this section only).
+: Default: @0@.
+; [[title]]=&quot;boolean&quot;
+: Whether to display the author's real name or login name.
+: Values: @0@ (login name) or @1@ (real name).
+: Default: @1@.
+
+h3. Common presentational attributes
+
+These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
+
+; [[class]]=&quot;name&quot;
+: HTML @class@ to apply to the @wraptag@ attribute value.
+: Default: unset (see [[class cross-reference]]).
+; [[wraptag]]=&quot;element&quot;
+: HTML element to wrap (markup) around the author name.
+: Default: unset (but see [[wraptag cross-reference]] for exceptions).
+
+h2. Examples
+
+h3. Example 1: Add image author to gallery
+
+bc. txp:images category="mammals">
+    <a href="<txp:image_url />">
+        <txp:thumbnail />
+    </a>
+    <div class="img-info">
+        by <txp:image_author />
+    </div>
+</txp:images>
+
+Other tags used: "images":images.textile, "thumbnail":thumbnail.textile.
+
+h3. Example 2: Link to author list
+
+bc. <txp:images category"fish">
+    <a href="<txp:image_url />">
+        <txp:thumbnail />
+    </a>
+    <div class="img-info">
+        by <txp:image_author link="1" />
+    </div>
+</txp:images>
+
+Displays thumbnails and author info for each image in the @fish@ category. The authors' names are hyperlinked to @example.com/author/image/User+Name@.
+
+Other tags used: "images":images.textile, "thumbnail":thumbnail.textile.
+
+h2. Genealogy
+
+h3. Version 4.3.0
+
+Tag support added.
