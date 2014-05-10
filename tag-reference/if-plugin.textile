@@ -17,7 +17,7 @@ h2. Attributes
 Tag will accept the following attributes (*case-sensitive*):
 
 ; [[name]]=&quot;text&quot;
-: Plugin name as defined on [[Plugins]] page.
+: Plugin name as defined on [[Plugins page]].
 ; [[version]]=&quot;number&quot;
 : Minimum plugin version number.
 : Default: unset.

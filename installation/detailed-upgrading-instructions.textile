@@ -1,6 +1,6 @@
 h1. Detailed upgrading instructions
 
-This tutorial describes how to _manually_ upgrade your existing Textpattern CMS installation to the latest stable release (currently {{Txp current version}}). In brief, you'll backup your current installation, overwrite your existing installation with new package files, update your [[Language Preferences]], and address any problems indicated in [[Diagnostics]].
+This tutorial describes how to _manually_ upgrade your existing Textpattern CMS installation to the latest stable release (currently {{Txp current version}}). In brief, you'll backup your current installation, overwrite your existing installation with new package files, update your preference in the [[Languages page]], and address any problems indicated in the [[Diagnostics page]].
 
 If you're looking to change an install version to something other than the newest stable release, see [[Upgrading, downgrading, nightlies, and bleeding edge]].
 
@@ -55,13 +55,13 @@ Open a web browser and go to the [[Admin-side]] location. Log in. That's it! Eas
 
 h2. Step 5: Fine-tune
 
-When Textpattern updates, you will be taken by default to [[Language Preferences]]. Once there, update your chosen language files as necessary (highlighted). Then go to the [[Diagnostics]] tab and troubleshoot any noted issues.
+When Textpattern updates, you will be taken by default to the [[Languages page]]. Once there, update your chosen language files as necessary (highlighted). Then go to the [[Diagnostics page]] and troubleshoot any noted issues.
 
-p(alert-box information). Some notices are not always problems, _per se_, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check [[Diagnostics]] to see if it's documented, if that doesn't help, ask in the "'How do I…? and other questions' forum":http://forum.textpattern.com.
+p(alert-box information). Some notices are not always problems, _per se_, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check the [[Diagnostics page]] to see if it's documented, if that doesn't help, ask in the "'How do I…? and other questions' forum":http://forum.textpattern.com.
 
 h2. Step 6: Remove unnecessary files
 
-After installing or upgrading Textpattern, you only need to delete the @setup@ folder (@/textpattern/setup@). This folder and its contained files are not used once Textpattern is installed. If you do not do this before checking your [[Diagnostics]] in *Step 5*, you'll see a diagnostic warning reminding you to do it (the error will disappear when the folder is removed).
+After installing or upgrading Textpattern, you only need to delete the @setup@ folder (@/textpattern/setup@). This folder and its contained files are not used once Textpattern is installed. If you do not do this before checking the [[Diagnostics page]] in *Step 5*, you'll see a diagnostic warning reminding you to do it (the error will disappear when the folder is removed).
 
 p(alert-box information). The @setup@ folder is only used for *new* installations, not upgrades, thus it's technically not necessary to add this folder from the latest, stable package. However, don't go out of your way to be clinical, simply upgrade using the full package and then delete the folder afterwards - it's easier all-around.
 
@@ -69,6 +69,6 @@ h2. Step 7: Debugging check
 
 This step is highly recommended, but optional. It is best to do this on a development server to avoid showing your users error messages.
 
-Change your site's [[Basic_Preferences#Production_Status|Production Status]] to 'debugging'. Go through the live site (every page, if possible), looking for error messages. Any such messages will be clearly visible at the top of the page. The upgrade may result in notices or errors relating to deprecated tags or attributes (these should be easy to correct).
+Change your site's 'Production status' in the [[Preferences page]] to 'debugging'. Go through the live site (every page, if possible), looking for error messages. Any such messages will be clearly visible at the top of the page. The upgrade may result in notices or errors relating to deprecated tags or attributes (these should be easy to correct).
 
 If you do need to update tag or attribute names, the "smd_where_used plugin":http://forum.textpattern.com/viewtopic.php?id=27493 is a great help for quickly finding all instances of a given tag or attribute.

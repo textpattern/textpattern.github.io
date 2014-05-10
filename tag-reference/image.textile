@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:image />
 
-The *image* tag is a _single_ tag that Textpattern will replace with the @<img src="...">@ HTML tag matching the image of the numeric @id@ assigned by Textpattern when the image was uploaded via the Textpattern [[Images]] page.
+The *image* tag is a _single_ tag that Textpattern will replace with the @<img src="...">@ HTML tag matching the image of the numeric @id@ assigned by Textpattern when the image was uploaded via the Textpattern [[Images page]].
 
 h2. Attributes
 
@@ -21,9 +21,9 @@ Tag will accept the following attributes (*case-sensitive*):
 : The HTML @id@ attribute applied to the @wraptag@, if set, otherwise to the @<img>@ tag.
 : Default: unset.
 ; [[id]]=&quot;integer&quot;
-: Specifies the @id@, assigned at upload of the image, to display. Can be found on the [[Images]] page. If both @name@ and @id@ are specified, @name@ is used while @id@ is ignored.
+: Specifies the @id@, assigned at upload of the image, to display. Can be found on the [[Images page]]. If both @name@ and @id@ are specified, @name@ is used while @id@ is ignored.
 ; [[name]]=&quot;image name&quot;
-: Specifies which image to display by its image @name@ as shown on the [[Images]] page.
+: Specifies which image to display by its image @name@ as shown on the [[Images page]] page.
 ; [[style]]=&quot;style rule&quot;
 : Inline CSS @style@ rule.
 : Default: unset..

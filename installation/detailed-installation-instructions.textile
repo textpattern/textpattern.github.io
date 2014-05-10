@@ -20,11 +20,11 @@ p(alert-block warning). Textpattern is designed to work exactly as the folders a
 ; @css.php@
 : Handles the site's styles.
 ; @files@ (directory)
-: Empty by default, but will be utilized later in the course of building your site, particularly if/when you use the upload features in the admin-side's [[Files]] panel.
+: Empty by default, but will be utilized later in the course of building your site, particularly if/when you use the upload features in the admin-side's [[Files page]].
 ; @HISTORY.txt@
 : Changelog.
 ; @images@ (directory)
-: Empty by default, but will be utilized later in the course of building your site, particularly if/when you use the upload features in the admin-side's [[Images (panel)|Images]] panel.
+: Empty by default, but will be utilized later in the course of building your site, particularly if/when you use the upload features in the admin-side's [[Images page]].
 ; @index.php@
 : The default location of your site where web users will arrive, and where content publishing takes place dynamically.
 ; @js@ (directory)
@@ -138,11 +138,11 @@ h2. Finishing the installation process
 
 h3. Site preferences
 
-When you first login, you will be taken to the [[Language Preferences]] page in the administration area. There you will need to set your site preferences and default settings for such things as how Textpattern should manage [[Glossary#Comments|Comments]] by default. You usually set your site preferences right away.
+When you first login, you will be taken to the [[Languages page]] in the administration area. There you will need to set your site preferences and default settings for such things as how Textpattern should manage [[Glossary#Comments|Comments]] by default. You usually set your site preferences right away.
 
 h3. Diagnostics
 
-You should also visit the [[Diagnostics]] page where you will be presented with some helpful information to help troubleshoot any installation/setup problems. Clean URLs can cause a problem on some people's servers. Details about various diagnostic notices are provided in the [[Diagnostics]] documentation.
+You should also visit the [[Diagnostics]] page where you will be presented with some helpful information to help troubleshoot any installation/setup problems. Clean URLs can cause a problem on some people's servers. Details about various diagnostic notices are provided in the [[Diagnostics page]] documentation.
 
 h3. Removing unnecessary files
 

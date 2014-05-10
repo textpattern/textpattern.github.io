@@ -21,7 +21,7 @@ Tag will accept the following attributes (*case-sensitive*):
 :: @exact@: value text must exactly match the custom field.
 :: @any@: checks if any of the given comma-separated list of @value@s occur anywhere in the custom field.
 :: @all@: checks if all of the given comma-separated list of @value@s occur anywhere in the custom field.
-:: @pattern@: allows you to specify a regular expression in your '''value''' attribute to match against the custom field.
+:: @pattern@: allows you to specify a regular expression in your @value@ attribute to match against the custom field.
 : Default: @exact@.
 ; [[name]]=&quot;field name&quot;
 : The custom field name you wish to check.

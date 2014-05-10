@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:file_download />
 
-The *file_download* tag is a _single_ tag which Textpattern will replace with a file [[form]]. Inside that form go the other [[file tags]].
+The *file_download* tag is a _single_ tag which Textpattern will replace with a Textpattern 'file' type [[Form template]]. Inside that form go the other [[file tags]].
 
 h2. Attributes
 

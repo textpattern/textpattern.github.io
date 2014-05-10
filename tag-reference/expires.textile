@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:expires />
 
-The *expires* tag is a _single_ tag used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive (e.g., events like conferences, meetings and so forth). The tag is defined by expiration date values that are set under the ''Date and time' section of the [[Write]] admin-side page.
+The *expires* tag is a _single_ tag used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive (e.g., events like conferences, meetings and so forth). The tag is defined by expiration date values that are set under the ''Date and time' section of the [[Write page]].
 
 h2. Attributes
 

@@ -41,7 +41,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Values: (comma separated list of) author login name(s).
 : Default: unset, retrieves from all authors.
 ; [[category]]=&quot;category name&quot;
-: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories]] page to ensure you are using the correct names.
+: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories page]] to ensure you are using the correct names.
 : Values: (comma separated list of) category name(s).
 : Default: unset, retrieves from all categories.
 ; [[customfieldname]]=&quot;value&quot;

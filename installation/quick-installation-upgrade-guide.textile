@@ -13,7 +13,7 @@ If you require more information, please refer to the "Detailed installation inst
 
 h2. Upgrade to the newest stable release
 
-In the root folder of your installation is a @README.txt@ file that provides '''simple upgrading instructions'''. The same instructions are repeated below for convenience. See [[Detailed upgrading instructions]] if you need more stepwise explanation.
+In the root folder of your installation is a @README.txt@ file that provides simple upgrading instructions. The same instructions are repeated below for convenience. See [[Detailed upgrading instructions]] if you need more stepwise explanation.
 
 # Log out of the admin-side.
 # Verify the existence of a working database and file backup.

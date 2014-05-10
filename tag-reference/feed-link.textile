@@ -4,14 +4,14 @@ h2. Syntax
 
 bc. <txp:feed_link>
 
-The *feed_link* tag can be used as either a _single_ or _container_ tag and is used to output a link to the site's 'articles' RSS feed. When used as a container tag, it will turn the contents into a link to the feed, otherwise the value of @label@ attribute will be used as link text. Should be used in a Textpattern [[page]] template.
+The *feed_link* tag can be used as either a _single_ or _container_ tag and is used to output a link to the site's 'articles' RSS feed. When used as a container tag, it will turn the contents into a link to the feed, otherwise the value of @label@ attribute will be used as link text. Should be used in a Textpattern [[Page template]].
 
 h2. Attributes
 
-Tag will accept the following attributes ('''case-sensitive'''):
+Tag will accept the following attributes (*case-sensitive*):
 
 ; [[category]]=&quot;category name&quot;
-: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories]] page to ensure you are using the correct names.
+: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories page]] to ensure you are using the correct names.
 : Values: (comma separated list of) category name(s).
 : Default: current category.
 ; [[flavor]]=&quot;value&quot;
@@ -24,7 +24,7 @@ Tag will accept the following attributes ('''case-sensitive'''):
 : Default: @a@.
 ; [[limit]]=&quot;integer&quot;
 : Number of articles to display in the feed.
-: Default: depends upon [[Preferences]] setting.
+: Default: depends upon [[Preferences page]] setting.
 ; [[section]]=&quot;section name&quot;
 : Restrict to articles from specified section(s).
 : Values: (comma separated list of) section name(s).

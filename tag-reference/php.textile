@@ -10,7 +10,7 @@ bc. <txp:php>
     // Code goes here...
 </txp:php>
 
-Control over where this tag is allowed to appear (i.e., the privileges required to allow it to appear in pages and forms) are governed by settings in the Preferences page.
+Control over where this tag is allowed to appear (i.e., the privileges required to allow it to appear in pages and forms) are governed by settings in the [[Preferences page]].
 
 h2. Attributes
 

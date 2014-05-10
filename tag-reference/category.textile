@@ -17,7 +17,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Values: @0@ (no) or @1@ (yes).
 : Default: @0@.
 ; [[name]]=&quot;category name&quot;
-: Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [[Category]] page. Also note that if you had called your category @My Category Name@ it becomes @my-category-name@ when used in tags.
+: Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [[Categories page]]. Also note that if you had called your category @My Category Name@ it becomes @my-category-name@ when used in tags.
 : Default: unset (use current category).
 ; [[section]]=&quot;section name&quot;
 : Restrict to articles from specified section(s).

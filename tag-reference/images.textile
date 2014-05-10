@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:images />
 
-The *images* tag is a _single_ or _container_ tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern [[Images]] page. Utilising the other image tags in the suite "image_info":image-info.textile, "image_url":image-url.textile, "image_date":image-date.textile and "if_thumbnail":if-thumbnail.textile) you can display simple image galleries from this list.
+The *images* tag is a _single_ or _container_ tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern [[Images page]]. Utilising the other image tags in the suite "image_info":image-info.textile, "image_url":image-url.textile, "image_date":image-date.textile and "if_thumbnail":if-thumbnail.textile) you can display simple image galleries from this list.
 
 If used as a _container_ tag, it must be specified as an opening and closing pair of tags, like this:
 
@@ -35,25 +35,25 @@ Tag will accept the following attributes (*case-sensitive*):
 :: @author@ to look in the URL for an author list.
 : Default: @article, category, author@.
 ; [[category]]=&quot;image category&quot;
-: Filter the images by this list of category names as defined in the [[Categories]] tab.
+: Filter the images by this list of category names as defined in the [[Categories page]].
 ; [[extension]]=".extension"
 : Filter the images by this list of image extensions, including the leading dot. Example: @extension=".jpg, .png"@.
 : Default: unset.
 ; [[form]]=&quot;form name&quot;
-: Use specified form for each image. If not used, and the container is empty, the tag will output a list of images that are compatible with [[image_display]].
+: Use specified form for each image. If not used, and the container is empty, the tag will output a list of images that are compatible with "image_display":image-display.textile.
 : Default: unset.
 ; [[html_id]]=&quot;id number&quot;
 : The HTML @id@ attribute applied to the @wraptag@, if set, otherwise to the @img@ tag.
 : Default: unset.
 ; [[id]]=&quot;integer&quot;
-: Filter the images by this list of @id@s assigned at upload. The IDs can be found on the [[Images (panel)]].
+: Filter the images by this list of @id@s assigned at upload. The IDs can be found on the [[Images page]].
 : The order of the ids overrides the default @sort@ attribute.
 : Default: unset.
 ; [[limit]]=&quot;integer&quot;
 : The number of images to display per page.
 : Default: @0@ (unlimited).
 ; [[name]]=&quot;image name&quot;
-: Filter the images by this list of image names as shown on the [[Images (panel)]].
+: Filter the images by this list of image names as shown on the [[Images page]].
 : Default: unset.
 ; [[offset]]=&quot;integer&quot;
 : The number of images to skip.

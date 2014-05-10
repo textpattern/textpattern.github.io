@@ -17,9 +17,9 @@ h2. Attributes
 Tag will accept the following attributes (*case-sensitive*):
 
 ; [[filename]]=&quot;text&quot;
-: Specifies which file to display by its @filename@ as shown on the [[Files]] page.
+: Specifies which file to display by its @filename@ as shown on the [[Files page]].
 ; [[id]]=&quot;integer&quot;
-: Specifies the @id@, assigned at upload of the file, to display. Can be found on the [[Files]] page.
+: Specifies the @id@, assigned at upload of the file, to display. Can be found on the [[Files page]].
 
 p(alert-block information). Note: @id@ takes precedence over @filename@. If neither is defined and the tag is not used within the context of a file, nothing is returned.
 
