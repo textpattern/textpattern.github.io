@@ -48,7 +48,7 @@ bc. <h4>
     <txp:custom_field name="author" />:
     <txp:custom_field name="title" />
 </h4>
-<txp:if_custom_field name="subtitle"> 
+<txp:if_custom_field name="subtitle">
     <p>
         <txp:custom_field name="subtitle" />
     </p>
