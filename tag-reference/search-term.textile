@@ -1,0 +1,34 @@
+h1. Search term
+
+h2. Syntax
+
+bc. <txp:search_term />
+
+The *search_term* tag is a _single_ tag which returns the expression the user searched for through the full text search form.
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+h3. Example 1: Display the search term on the search results page
+
+bc. <txp:if_search>
+    <h1>Search results</h1>
+    <h3>
+        You searched for:
+        <txp:search_term />
+    </h3>
+    <txp:article />
+</txp:if_search>
+
+h2. Genealogy
+
+h3. Version 4.5.0
+
+@escape@ attribute deprecated.
+
+h3. Version 4.0.6
+
+Tag support added.
