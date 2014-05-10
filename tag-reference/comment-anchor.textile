@@ -14,6 +14,9 @@ h2. Examples
 
 h3. Example 1: Generate current comment anchor
 
+bc. <txp:comment_anchor />
+<txp:comment_message />
+
 When the comment number is @000005@ you will see:
 
 bc. <a id="c000005"></a>
