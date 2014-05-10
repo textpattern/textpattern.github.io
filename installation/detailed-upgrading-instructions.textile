@@ -1,12 +1,12 @@
 h1. Detailed upgrading instructions
 
-This tutorial describes how to _manually_ upgrade your existing Textpattern CMS installation to the latest stable release (currently {{Txp current version}}). In brief, you'll backup your current installation, overwrite your existing installation with new package files, update your preference in the [[Languages page]], and address any problems indicated in the [[Diagnostics page]].
+This tutorial describes how to _manually_ upgrade your existing Textpattern CMS installation to the latest stable release. In brief, you'll backup your current installation, overwrite your existing installation with new package files, update your preference in the [[Languages page]], and address any problems indicated in the [[Diagnostics page]].
 
 If you're looking to change an install version to something other than the newest stable release, see [[Upgrading, downgrading, nightlies, and bleeding edge]].
 
 h2. Step 1: Get the new package
 
-Go to "textpattern.com/download":http://textpattern.com/download and download the zip package of the latest version (currently {{Txp current version}}) to your local machine. Unzip the package into a folder on your local drive. Give the folder a meaningful name like @textpattern-{{Txp current version}}@, for example.
+Go to "textpattern.com/download":http://textpattern.com/download and download the zip package of the latest version to your local machine. Unzip the package into a folder on your local drive. Give the folder a meaningful name like @textpattern-4.6.0@, for example.
 
 h2. Step 2: Backup
 
@@ -16,7 +16,7 @@ h3. Duplicate the existing Textpattern file tree
 
 p(alert-box warning). You must make a copy of your @config.php@ file as a minimum.
 
-Make a copy of the current system [[{{Txp current version}}_File_Tree|file tree]] (folders and files of the Textpattern installation). The easiest way to do this is to log onto the server using FTP or SFTP, create a new folder called @txp-current@, for example, and copy the existing system file tree into this new folder (leave the file tree structure the same). Alternatively, simply duplicate your existing Textpattern dir and name it @Textpattern_OLD@. Upload the new Textpattern dir and then copy your @config.php@ file from the @Textpattern_OLD@ *prior* to running the update.
+Make a copy of the current system (folders and files of the Textpattern installation). The easiest way to do this is to log onto the server using FTP or SFTP, create a new folder called @txp-current@, for example, and copy the existing system file tree into this new folder (leave the file tree structure the same). Alternatively, simply duplicate your existing Textpattern dir and name it @Textpattern_OLD@. Upload the new Textpattern dir and then copy your @config.php@ file from the @Textpattern_OLD@ *prior* to running the update.
 
 h3. Create a database dump file (an .sql export)
 

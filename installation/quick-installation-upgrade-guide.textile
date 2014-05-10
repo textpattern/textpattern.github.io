@@ -2,7 +2,7 @@ h1. Quick installation/upgrade guide
 
 h2. Install the software for the first time
 
-# "Download":http://textpattern.com/download the latest @.zip@ or @.gzip@ package (currently version {{Txp current version}}).
+# "Download":http://textpattern.com/download the latest @.zip@ or @.gzip@ package.
 # Create a new folder (e.g., @txp-unzipped@) on your local drive, move the zip file into it, and unpack "the file tree contents":https://github.com/textpattern/textpattern.
 # Create an FTP connection to your server (sometimes SFTP is necessary, depending on your host requirements), and move the unpacked file tree to your web domain root (or subdirectory, if you plan to run it that way).
 # Create a MySQL database and the associated user and password for it.
