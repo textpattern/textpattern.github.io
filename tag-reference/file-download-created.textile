@@ -11,8 +11,9 @@ h2. Attributes
 Tag will accept the following attributes (*case-sensitive*):
 
 ; [[format]]=&quot;format string&quot;
-: Override the default 'Archive date format' set in [[Preferences]] page.
+: Override the default date format set in the [[Preferences page]].
 : Values: any valid "strftime":http://php.net/strftime string values.
+: Default: the 'Archive date format' set in preferences.
 
 h2. Examples
 

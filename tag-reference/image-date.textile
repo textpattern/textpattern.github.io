@@ -14,9 +14,9 @@ Tag will accept the following attributes (*case-sensitive*):
 : An @id@ assigned at upload of an image to display. The IDs can be found on the [[Images page]].
 : Default: unset.
 ; [[format]]=&quot;format string&quot;
-: Adjust the display of the date to taste.
+: Override the default date format set in the [[Preferences page]].
 : Values: any valid "strftime":http://php.net/strftime string values.
-: Default: the Archive date format set in preferences.
+: Default: the 'Archive date format' set in preferences.
 ; [[name]]=&quot;image name&quot;
 : An image to display, given by its image name as shown on the [[Images page]]. If both @name@ and @id@ are specified, the @id@ takes precedence.
 : Default: unset.
