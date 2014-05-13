@@ -50,4 +50,4 @@ bc. <li<txp:if_first_article> class="first"</txp:if_first_article>>
 
 Adds a CSS class to the first article in an article list.
 
-Other tags used: "permlink""permlink.textile, "title":title.textile.
+Other tags used: "permlink":permlink.textile, "title":title.textile.

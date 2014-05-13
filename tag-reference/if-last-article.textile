@@ -6,7 +6,7 @@ bc. <txp:if_last_article>
 
 The *if_last_article* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
 
-<txp:if_last_article>
+bc. <txp:if_last_article>
     ...conditional statement...
 </txp:if_last_article>
 
