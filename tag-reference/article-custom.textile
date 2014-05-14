@@ -18,7 +18,7 @@ Unlike the "article":article.textile tag, @<txp:article_custom>@ will always ret
 
 @<txp:article_custom />@ offers many additional attributes that @<txp:article />@ does not.. but only @<txp:article />@ will produce the full single article page. If you have only @<txp:article_custom />@ on a page, rather than @<txp:article />@, then you will never reach the permalinked article page - you'll always get an article list page.
 
-However, you can have the added features and functionality of @<txp:article_custom />@, while keeping the necessary @<txp:article />@ in full force by using conditionals: @<txp:if_individual_article>@ and @<txp:if_article_list>, e.g.:
+However, you can have the added features and functionality of @<txp:article_custom />@, while keeping the necessary @<txp:article />@ in full force by using conditionals: @<txp:if_individual_article>@ and @<txp:if_article_list>@, e.g.:
 
 bc.. <txp:if_article_list>
     <txp:article_custom form="myform" limit="10" category="ideas" section="article" sortby="Posted" sortdir="desc" />
