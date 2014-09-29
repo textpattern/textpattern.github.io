@@ -46,7 +46,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Values: @0@ (no) or @1@ (yes).
 : Default: @0@.
 ; [[type]]=&quot;category type&quot;
-: Available values: @article@, @image@, @link@, @file@.
+: Values: @article@, @image@, @link@, @file@.
 : Default: @article@.
 
 h3. Common presentational attributes
