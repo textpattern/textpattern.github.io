@@ -1,0 +1,52 @@
+h1. Popup
+
+h2. Syntax
+
+bc. <txp:popup />
+
+The *popup* tag is a _single_ tag. Textpattern will replace this tag with a popup selector for browsing by section or category.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[section]]=&quot;section_name&quot;
+: Jump to the selected category for the named section.
+: Default: unset.
+; [[this_section|this_section]]=&quot;boolean&quot;
+: Jump to the selected category for the currently active section.
+: Values: @0@ (no) or @1@ (yes).
+: Default: @0@.
+; [[type]]=&quot;type&quot;
+: Values: @s@ (section), @c@ (category).
+: Default: @c@.
+
+h3. Common presentational attributes
+
+These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
+
+; [[class]]=&quot;name&quot;
+: HTML @class@ to apply to the @wraptag@ attribute value.
+: Default: tag name or unset (see [[class cross-reference]]).
+; [[label]]=&quot;text&quot;
+: Label prepended to item.
+: Default: unset (but see [[label cross-reference]] for exceptions).
+; [[wraptag]]=&quot;element&quot;
+: HTML element to wrap (markup) list block (e.g., @wraptag="ul"@).
+: Default: unset (but see [[wraptag cross-reference]] for exceptions).
+
+h2. Examples
+
+h3. Example 1: Browse by category popup selector
+
+bc. <txp:popup type="c" wraptag="p" />
+
+h3. Example 2: Popup selector with custom label
+
+bc. <txp:popup label="Browse this site" type="c" wraptag="p" />
+
+h2. Genealogy
+
+h3. Version 4.3.0
+
+@class@ attribute added.
