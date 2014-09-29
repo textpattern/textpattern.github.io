@@ -48,13 +48,14 @@ Tag will accept the following attributes (*case-sensitive*):
 ; [[sort]]=&quot;by what and order&quot;
 : How to sort the resulting list.
 : Values:
-:: @id&lt;/code&gt;
-:: @filename&lt;/code&gt;
-:: @category&lt;/code&gt;
-:: @description&lt;/code&gt;
-:: @downloads&lt;/code&gt;
-:: @created&lt;/code&gt;
-:: @modified&lt;/code&gt;
+:: @id@
+:: @filename@
+:: @title@
+:: @category@
+:: @description@
+:: @downloads@
+:: @created@
+:: @modifie@
 :: @rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
 :: Adding a space and then one of either @asc@ or @desc@ orders by ascending or descending value, respectively.
 : Default: @filename asc@.
