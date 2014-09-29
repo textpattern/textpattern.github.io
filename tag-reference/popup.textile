@@ -13,7 +13,7 @@ Tag will accept the following attributes (*case-sensitive*):
 ; [[section]]=&quot;section_name&quot;
 : Jump to the selected category for the named section.
 : Default: unset.
-; [[this_section|this_section]]=&quot;boolean&quot;
+; [[this_section]]=&quot;boolean&quot;
 : Jump to the selected category for the currently active section.
 : Values: @0@ (no) or @1@ (yes).
 : Default: @0@.
