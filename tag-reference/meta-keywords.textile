@@ -4,15 +4,15 @@ h2. Syntax
 
 bc. <txp:meta_keywords />
 
-Used in the head of an individual article page template, the *meta_keywords* tag is a _single_ tag. The tag can be used in a Textpattern 'article' type [[Form template]], or within a [[Page template]], either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). Textpattern will replace this tag with an HTML meta tag as follows:
+Used in the head of an individual article page template, the *meta_keywords* tag is a _single_ tag. The tag can be used in a Textpattern 'article' type [[Form template]], or within a [[Page template]], either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). Textpattern will replace this tag with an HTML @meta@ tag as follows:
 
 bc. <meta name="keywords" content="keywords as set in article's keywords field" />
+
+p(alert-block information). Character limits: The keywords field has a 255 character limit by default, which includes spaces and commas. This is simply the MySQL database default - you can edit this using, for example, "phpMyAdmin":http://www.phpmyadmin.net.
 
 h2. Attributes
 
 This tag has no attributes.
-
-p(alert-block information). Character limits: The keywords field has a 255 character limit by default, which includes spaces and commas. This is simply the MySQL database default - you can edit this using, for example, "phpMyAdmin":http://www.phpmyadmin.net.
 
 h2. Examples
 
@@ -22,6 +22,6 @@ bc. <txp:meta_keywords />
 
 The *meta_keywords* tag returns an HTML @meta@ tag, populated with an article's keywords. The tag should always be placed in your template's 'head' section, between the opening and closing HTML @<head>@ tags.
 
-The above will output keywords metadata with @content=""@ populated with the list of keywords set in the article's 'Keywords' field (the tag returns nothing if no keywords are set for an article). For example, if your article's 'Keywords' field contains @sauce, caramel, sugar@, the tag will output following:
+The above will output keywords metadata with @content=""@ populated with the list of keywords set in the article's 'Keywords' field (the tag returns nothing if no keywords are set for an article). For example, if your article's 'Keywords' field contains @sauce, caramel, sugar@, the tag will output the following:
 
 bc. <meta name="keywords" content="sauce, caramel, sugar" />
