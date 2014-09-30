@@ -34,7 +34,7 @@ In this example, keywords are used in a Textpattern 'article' type [[Form templa
 
 Other tags used: "permlink":permlink.textile, "title":title.textile, "posted":posted.textile, "excerpt":excerpt.textile, "body":body.textile.
 
-Example 2: Use keywords to fill meta element values
+h3. Example 2: Use keywords to fill meta element values
 
 bc. <meta name="keywords" content="<txp:keywords />">
 
