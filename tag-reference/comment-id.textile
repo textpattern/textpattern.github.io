@@ -1,0 +1,27 @@
+h1. Comment id
+
+h2. Syntax
+
+bc. <txp:comment_id />
+
+The *comment_id* tag is a _single_ tag which is used to display the comment's internal id as assigned by Textpattern at the time of posting. Used in a comments display form.
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+h3. Example 1: Comments display form with linked comment id
+
+bc. <txp:comment_message />
+<p>
+    By <txp:comment_name /> at <txp:comment_time />
+    <txp:comment_permlink>
+        <txp:comment_id />
+    </txp:comment_permlink>
+</p>
+
+<txp:comment_message />
+
+Other tags used: "comment_message":comment-message.textile, "comment_name":comment-name.textile, "comment_permlink":comment-permlink.textile, "comment_time":comment-time.textile.

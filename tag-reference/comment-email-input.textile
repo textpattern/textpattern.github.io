@@ -1,0 +1,42 @@
+h1. Comment email input
+
+h2. Syntax
+
+bc. <txp:comment_email_input />
+
+The *comment_email_input* tag is a _single_ tag which is used to display a text entry field to accept the commenter's email address. Used in the comment input form.
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+h3. Example 1: Comment form
+
+bc. <p>
+    Name (required)<br>
+    <txp:comment_name_input />
+</p>
+<p>
+    Email (required)<br>
+    <txp:comment_email_input />
+</p>
+<p>
+    Website<br>
+    <txp:comment_web_input />
+</p>
+<p>
+    <txp:comment_remember />
+</p>
+<p>
+    Message (required)<br>
+    <txp:comment_message_input /><br>
+    <txp:comments_help />
+</p>
+<p>
+    <txp:comment_preview />
+    <txp:comment_submit />
+</p>
+
+Other tags used: "comment_message_input":comment-message-input.textile, "comment_name_input":comment-name-input.textile, "comment_web_input":comment-web-input.textile, "comment_preview":comment-preview.textile, "comment_remember":comment-remember.textile, "comment_submit":comment-submit.textile, "comments_help":comments-help.textile.
