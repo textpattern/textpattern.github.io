@@ -15,7 +15,7 @@ h2. Attributes
 Tag will accept the following attributes (*case-sensitive*):
 
 ; [[active_class]]=&quot;class name&quot; (only works in the _single_ tag without the @form@ attribute)
-: [http://www.w3.org/TR/html4/struct/global.html#adef-class CSS class name] to be applied to the 'active' or current link in a list.
+: HTML @class@ to apply to the 'active' or current link in a list.
 : Default: unset
 ; [[default_title]]=&quot;text&quot;
 : Text used as a title for the 'default' section when @include_default@ is set to @1@.
