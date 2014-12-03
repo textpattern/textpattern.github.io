@@ -37,6 +37,8 @@ bc. <h3>
     | <txp:posted />
 </p>
 
+Other tags used: "permlink":permlink.textile, "posted":posted.textile, "title":title.textile.
+
 h2. Genealogy
 
 h3. Version 4.0.6
