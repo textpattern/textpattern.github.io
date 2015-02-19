@@ -16,7 +16,7 @@ h4. Exporting the existing database tables
 # Click on *'Export'* in the option menu.
 # At this point you will have a lot of choices for the export schema. One note, if you need a smaller file size you can exlude your logs files. You can choose to export a plain .sql file (.txt) or a variety of zipped files. There may be more specific export needs for you host - if these settings do not work you may need to contact you host for specific needs for your server.
 
-h4. Move Textpattern folder/file tree to local machine ====
+h4. Move Textpattern folder/file tree to local machine
 
 Use FTP or SFTP (whichever is appropriate) to move the Textpattern tree from the root folder of your site to your local machine. You will use this copy to upload the tree later to the new web server location.
 
