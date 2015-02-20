@@ -69,7 +69,7 @@ bc. <p>
 
 This would result in the following HTML output:
 
-<p>
+bc. <p>
     Posted:
     <time datetime="2014-02-03T10:43:39Z">
         <span class="time-day">03</span>
