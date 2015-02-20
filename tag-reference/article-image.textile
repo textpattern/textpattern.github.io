@@ -41,7 +41,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : CSS @class@ attribute to apply to the image (or to the @wraptag@, if set).
 : Default: unset (see [[class cross-reference]]).
 ; [[wraptag]]=&quot;tag&quot;
-: HTML tag to be used to wrap the @<img>@ tag, specified without brackets.
+: HTML tag to be used to wrap the @<img>@ tag, specified without brackets (e.g., @wraptag="p"@).
 : Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples

@@ -48,7 +48,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : HTML @class@ attribute, applied to @wraptag@. If no @wraptag@ is supplied (and @link="1"@), the @class@ is applied to the @<a>@ tag instead.
 : Default: unset (see [[class cross-reference]]).
 ; [[wraptag]]=&quot;tag&quot;
-: HTML tag, specified without brackets, to wrap around output (e.g., @wraptag="p"@).
+: HTML tag to wrap around output, specified without brackets (e.g., @wraptag="p"@).
 : Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples

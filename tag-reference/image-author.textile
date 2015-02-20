@@ -34,7 +34,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : HTML @class@ to apply to the @wraptag@ attribute value.
 : Default: unset (see [[class cross-reference]]).
 ; [[wraptag]]=&quot;element&quot;
-: HTML element to wrap (markup) around the author name.
+: HTML element to wrap around the author name, specified without brackets (e.g., @wraptag="p"@).
 : Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples

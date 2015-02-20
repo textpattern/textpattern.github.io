@@ -44,7 +44,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : Label prepended to item.
 : Default: unset (but see [[label cross-reference]] for exceptions).
 ; [[wraptag]]=&quot;element&quot;
-: HTML element to wrap feed link (e.g., @wraptag="p"@).
+: HTML element to wrap feed link, specified without brackets (e.g., @wraptag="p"@).
 : Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 p(alert-block information). Note: @wraptag@ is applicable only when using @format@ of @a@.

@@ -36,7 +36,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : Label prepended to item.
 : Default: unset (but see [[label cross-reference]] for exceptions).
 ; [[wraptag]]=&quot;element&quot;
-: HTML element to wrap breadcrumb block (e.g., @wraptag="p"@).
+: HTML element to wrap breadcrumb block, specified without brackets (e.g., @wraptag="p"@).
 : Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples

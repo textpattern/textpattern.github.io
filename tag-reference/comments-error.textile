@@ -20,8 +20,8 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 ; [[class]]=&quot;class name&quot;
 : HTML @class@ to apply to the @wraptag@ attribute value.
 : Default: @comments_error@ (see [[class cross-reference]]).
-; [[wraptag]]=&quot;tag text&quot;
-: HTML tag (specified without brackets) to wrap around the list (e.g., @wraptag="ul"@).
+; [[wraptag]]=&quot;element&quot;
+: HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
 : Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples

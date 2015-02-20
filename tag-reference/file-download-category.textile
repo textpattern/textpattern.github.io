@@ -22,8 +22,8 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 ; [[class]]=&quot;class name&quot;
 : HTML @class@ to apply to the @wraptag@ attribute value.
 : Default: unset (see [[class cross-reference]]).
-; [[wraptag]]=&quot;tag text&quot;
-: HTML tag to be used to wrap the category with, specified without brackets.
+; [[wraptag]]=&quot;element&quot;
+: HTML tag to wrap around category text, specified without brackets (e.g., @wraptag="p"@).
 : Default: unset.
 
 h2. Examples

@@ -66,7 +66,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : HTML element to wrap (markup) label (e.g., @labeltag="h3"@).
 : Default: unset.
 ; [[wraptag]]=&quot;element&quot;
-: HTML element to wrap (markup) list block (e.g., @wraptag="ul"@).
+: HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
 : Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples
