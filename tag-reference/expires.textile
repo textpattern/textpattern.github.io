@@ -21,7 +21,7 @@ Tag will accept the following attributes (*case-sensitive*):
 ; [[lang]]=&quot;ISO language code&quot;
 : Format time string suitable for the specified language (locale).
 : Values: locales adhere to "ISO-639":http://en.wikipedia.org/wiki/ISO_639-2.
-: Default: unset (time format set via preferences).
+: Default: unset (time format set in the [[Preferences page]].
 
 h3. Common presentational attributes
 
@@ -43,9 +43,33 @@ bc. <p>
     <txp:expires format="%b %d, %Y" />
 </p>
 
-Would result in:
+This would result in the following HTML output:
 
-bc. <p<Expires: May 10, 2014</p>
+bc. <p<Expires: Feb 03, 2014</p>
+
+h3. Example 2: Extended custom format date setting
+
+bc. <p>
+    Expires:
+    <time datetime="<txp:posted format="iso8601" />">
+        <txp:posted class="time-day" wraptag="span" format="%d" />
+        <txp:posted class="time-month" wraptag="span" format="%b" />
+        <txp:posted class="time-year" wraptag="span" format="%Y" />
+    </time>
+</p>
+
+This would result in the following HTML output:
+
+<p>
+    Expires:
+    <time datetime="2014-02-03T10:43:39Z">
+        <span class="time-day">03</span>
+        <span class="time-month">Feb</span>
+        <span class="time-year">2014</span>
+    </time>
+</p>
+
+This provides styling hooks for each date part.
 
 h2. Genealogy
 
