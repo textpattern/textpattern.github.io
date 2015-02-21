@@ -88,10 +88,10 @@ Produces a list of the 5 most recent articles _apart_ from the most recent one, 
 
 h2. Genealogy
 
+h3. Version 4.6.0
+
+@offset@ attribute added.
+
 h3. Version 4.0.6
 
 Added support for comma separated lists for @section@ and @category@ attributes.
-
-h3. Version 4.6.0
-
-Added @offset@ attribute.
