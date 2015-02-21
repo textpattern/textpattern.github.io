@@ -22,9 +22,6 @@ Tag will accept the following attributes (*case-sensitive*):
 ; [[html_id]]=&quot;id&quot;
 : The HTML @id@ attribute assigned to the image (or to the @wraptag@, if set).
 : Default: unset.
-; [[style]]=&quot;style rule&quot;
-: Inline CSS @style@ rule.
-: Default: unset.
 ; [[thumbnail]]=&quot;boolean&quot;
 : Use the thumbnail rather than full-size image.
 : Values: @0@ (no) or @1@ (yes).
@@ -40,6 +37,9 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 ; [[class]]=&quot;class name&quot;
 : CSS @class@ attribute to apply to the image (or to the @wraptag@, if set).
 : Default: unset (see [[class cross-reference]]).
+; [[style]]=&quot;style rule&quot;
+: Inline CSS @style@ rule. It's recommended that you assign CSS rules via @class@ attribute instead.
+: Default: unset.
 ; [[wraptag]]=&quot;tag&quot;
 : HTML tag to be used to wrap the @<img>@ tag, specified without brackets (e.g., @wraptag="p"@).
 : Default: unset (but see [[wraptag cross-reference]] for exceptions).

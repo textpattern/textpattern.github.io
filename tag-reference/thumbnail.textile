@@ -34,9 +34,6 @@ Tag will accept the following attributes (*case-sensitive*):
 : If set, the image will be rendered in a popup window.
 : Values: @0@ (no) or @1@ (yes).
 : Default: @0@.
-; [[style]]=&quot;style rule&quot;
-: Inline CSS @style@ rule.
-: Default: unset.
 ; [[width]]=&quot;integer&quot;
 : Specify an image @width@ which overrides the value stored in the database. Use @width="0"@ to turn off the output of a width attribute in the @<img>@ tag (thus the browser will scale the width if a height is used).
 
@@ -47,6 +44,9 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 ; [[class]]=&quot;class name&quot;
 : HTML @class@ to apply to the @wraptag@ attribute value, if set, otherwise to the @<img>@ tag.
 : Default: unset (see [[class cross-reference]]).
+; [[style]]=&quot;style rule&quot;
+: Inline CSS @style@ rule. It's recommended that you assign CSS rules via @class@ attribute instead.
+: Default: unset.
 ; [[wraptag]]=&quot;element&quot;
 : HTML tag to be used to wrap the @<img>@ tag, specified without brackets (e.g., @wraptag="p"@).
 : Default: unset (but see [[wraptag cross-reference]] for exceptions).
