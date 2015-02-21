@@ -1,3 +1,3 @@
-h1. Textpattern documentation
+h1. Textpattern CMS documentation
 
-Textpattern documentation without the Wiki (a work in progress). See "index":index.textile.
+Textpattern documentation without the wiki (a work in progress). See "index":index.textile.
