@@ -72,7 +72,7 @@ h3. Content/behaviour attributes
 :: @Category1@.
 :: @Category2@.
 :: @comments_count@.
-:: @custom_1&@ through @custom_10@ (from Textpattern 4.2.0 onwards: @custom_n@ where 'n' is the number of your custom field - for numeric values use @(custom_n+0)@).
+:: @custom_1@ through @custom_10@ (from Textpattern 4.2.0 onwards: @custom_n@ where 'n' is the number of your custom field - for numeric values use @(custom_n+0)@).
 :: @Expires@ (expiry date).
 :: @ID@ (article id#).
 :: @Image@ (article image id#).
