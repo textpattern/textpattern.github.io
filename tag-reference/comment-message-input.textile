@@ -16,9 +16,9 @@ h2. Examples
 h3. Example 1: Comments Display Form
 
 bc.	<txp:comment_message />
-    <p>
-    	<small>&#8212; <txp:comment_name /> <txp:comment_time /> 
-		<txp:comment_permlink>#</txp:comment_permlink></small>
-	</p>
+<p>
+	<small>&#8212; <txp:comment_name /> <txp:comment_time /> 
+	<txp:comment_permlink>#</txp:comment_permlink></small>
+</p>
 
 Other tags used: "comment_name":comment-name.textile, "comment_permlink":comment-permlink.textile, "comment_time":comment_time.textile
