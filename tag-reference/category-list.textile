@@ -57,7 +57,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 ; [[break]]=&quot;value&quot;
 : Where value is an HTML element, specified without brackets (e.g., @break="li"@) or some string to separate list items.
 : Default: @br@ (but see [[break cross-reference]] for exceptions).
-; [[class]]=&quot;name&quot;
+; [[class]]=&quot;class name&quot;
 : HTML @class@ to apply to the @wraptag@ attribute value.
 : Default: tag name or unset (see [[class cross-reference]]).
 ; [[label]]=&quot;text&quot;

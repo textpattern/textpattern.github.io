@@ -25,7 +25,7 @@ Tag will accept the following attributes (*case-sensitive*):
 
 h3. Common presentational attributes
 
-; [[class]]=&quot;name&quot;
+; [[class]]=&quot;class name&quot;
 : HTML @class@ to apply to the @wraptag@ attribute value.
 : Default: unset (see [[class cross-reference]]).
 ; [[wraptag]]=&quot;element&quot;
