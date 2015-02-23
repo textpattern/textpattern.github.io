@@ -7,6 +7,7 @@ h2. 4.5.x (27 Aug 2012 - present)
 |^.
 |_(t50). Release |_. Date |
 |-.
+| "4.5.7":http://textpattern.com/file_download/99/textpattern-4.5.7.zip (Changelog) | 20 Sep 2014 |
 | "4.5.5":http://textpattern.com/file_download/92/textpattern-4.5.5.zip (Changelog) | 04 Oct 2013 |
 | "4.5.4":http://textpattern.com/file_download/90/textpattern-4.5.4.zip (Changelog) | 05 Dec 2012 |
 | 4.5.3 (Changelog) | 04 Dec 2012 |

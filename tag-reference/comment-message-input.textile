@@ -1,0 +1,24 @@
+h1. Comment message
+
+h2. Syntax
+
+bc. <txp:comment_message />
+
+The *comment_message* tag is a _single_ tag which is used to display the message text, or comment.
+Used in a comments display form.
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+h3. Example 1: Comments Display Form
+
+bc.	<txp:comment_message />
+<p>
+	<small>&#8212; <txp:comment_name /> <txp:comment_time /> 
+	<txp:comment_permlink>#</txp:comment_permlink></small>
+</p>
+
+Other tags used: "comment_name":comment-name.textile, "comment_permlink":comment-permlink.textile, "comment_time":comment_time.textile

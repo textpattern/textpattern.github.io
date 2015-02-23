@@ -1,0 +1,90 @@
+h1. Comments
+
+h2. Syntax
+
+bc. <txp:comments />
+
+The @comments@ tag is a _single_ tag which is used to display the comments associated with a particular article. Comments will be displayed for the present individual article as a default, or to the article set by the @id@ attribute.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[Attributes Cross-reference#break|break]]="text"
+: HTML tag (without brackets) or string used to separate comments.
+: Default depends upon [[Basic Preferences#Present Comments as a Numbered List? (3)|preference setting]], either @li@ or @div@.
+; [[Attributes Cross-reference#breakclass|breakclass]]="class name" (*deprecated from 4.6.0*)
+: CSS class attribute to be applied to @break@ (when value supplied is a tag).
+: Default: unset.
+; [[Attributes Cross-reference#class|class]]="class name"
+: CSS class attribute to be applied to @wraptag@.
+: Default: @comments@.
+; [[Attributes Cross-reference#form|form]]="form name"
+: Default is @comments@.
+; [[Attributes Cross-reference#limit|limit]]="integer"
+: The number of comments to display. 
+: Default: @0@ (no limit).
+; [[Attributes Cross-reference#offset|offset]]="integer"
+: The number of comments to skip. 
+: Default: @0@.
+; [[Attributes Cross-reference#sort|sort]]="sort value(s)"
+: How to sort the resulting list.
+: Values: 
+:: @discussid@ (comment ID)
+:: @parentid@ (article ID)
+:: @name@
+:: @email@
+:: @web@
+:: @ip@ ("IP address":http://en.wikipedia.org/wiki/IP_address)
+:: @posted@
+:: @message@
+:: @rand()@ ([http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand random])
+: Default: @posted asc@.
+; [[Attributes Cross-reference#wraptag|wraptag]]="tag text"
+: HTML tag (without brackets) to wrap around list.
+: Default depends upon [[Basic Preferences#Present Comments as a Numbered List? (3)|preference setting]], either @ol@ or unset.
+
+h3. Example 1: Display comments, and give an indication of *Comments* status
+
+Comments for articles can be turned off or on at the author's discretion for any article that is published; by using the following scheme in an article form, you can still have the on/off control over comments while still giving users indication of comment status.
+
+bc. <txp:comments />
+<txp:if_comments_allowed>
+	<txp:comments_form />
+<txp:else />
+	<p>Comments are turned off for this article.</p>
+</txp:if_comments_allowed>
+
+Other tags used: "comments_form":comments-form.textile, "if_comments_allowed":if-comments-allowed.textile, "else":else.textile
+
+h3. Example 2: Conditional comments
+
+*Tags*
+
+bc. <txp:if_comments_allowed>
+	<txp:comments form="lineitem" break="li" wraptag="ul" />
+	<txp:comments_form />
+</txp:if_comments_allowed>
+
+*Form (lineitem) (type: comment)*
+
+bc. <small><txp:comment_id /></small>
+
+*Styles could go this way*
+
+bc. .special {
+	display:list-item;
+	list-style-type:none;
+	}
+
+h4. What it does...
+
+For the article, list id numbers and a comment input form; but only if comments are currently allowed.
+
+Other tags used: "comment_id":comment-id.textile, "comments_form":comments-form.textile, "if_comments_allowed":if-comments-allowed.textile
+
+h2. Genealogy
+
+h3. Version 4.6.0
+
+* @breakclass@ attribute deprecated.
