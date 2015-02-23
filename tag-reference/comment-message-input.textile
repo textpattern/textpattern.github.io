@@ -1,11 +1,10 @@
-h1. Comment message
+h1. Comment message input
 
 h2. Syntax
 
-bc. <txp:comment_message />
+bc. <txp:comment_message_input />
 
-The *comment_message* tag is a _single_ tag which is used to display the message text, or comment.
-Used in a comments display form.
+The *comment_message_input tag is a _single_ tag which is used to display a text entry field to accept the commenter's message text. Used in the comment input form template.
 
 h2. Attributes
 
@@ -13,12 +12,31 @@ This tag has no attributes.
 
 h2. Examples
 
-h3. Example 1: Comments Display Form
+h3. Example 1: Comment form
 
-bc.	<txp:comment_message />
+bc. <p>
+    Name (required)<br>
+    <txp:comment_name_input />
+</p>
 <p>
-	<small>&#8212; <txp:comment_name /> <txp:comment_time /> 
-	<txp:comment_permlink>#</txp:comment_permlink></small>
+    Email (required)<br>
+    <txp:comment_email_input />
+</p>
+<p>
+    Website<br>
+    <txp:comment_web_input />
+</p>
+<p>
+    <txp:comment_remember />
+</p>
+<p>
+    Message (required)<br>
+    <txp:comment_message_input /><br>
+    <txp:comments_help />
+</p>
+<p>
+    <txp:comment_preview />
+    <txp:comment_submit />
 </p>
 
-Other tags used: "comment_name":comment-name.textile, "comment_permlink":comment-permlink.textile, "comment_time":comment_time.textile
+Other tags used: "comment_email_input":comment-email-input.textile, "comments_help":comments-help.textile, "comment_message_input":comment-message-input.textile, "comment_name_input":comment-name-input.textile, "comment_preview":comment-preview.textile, "comment_remember":comment-remember.textile, "comment_submit":comment-submit.textile, "comment_web_input":comment-web-input.textile.
