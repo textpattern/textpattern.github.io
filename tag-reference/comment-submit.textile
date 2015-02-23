@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:comment_submit />
 
-The @comment_submit@ tag is a _single_ tag which is used to display a Submit button. Clicking the Submit button writes the comment information to the database. Used in the comment input form.
+The *comment_submit* tag is a _single_ tag which is used to display a 'Submit' button. Clicking the submit button writes the comment information to the database. Used in the comment input form template.
 
 h2. Attributes
 
@@ -12,56 +12,31 @@ This tag has no attributes.
 
 h2. Examples
 
-h3. Example 1: Comment Form
+h3. Example 1: Comment form
 
-bc. <table cellpadding="4" cellspacing="0" border="0">
-	<tr>
-		<td align="right" valign="top">
-			<txp:text item="name" />
-		</td>
-		<td valign="top">
-			<txp:comment_name_input />
-		</td>
-		<td valign="top" align="left">
-			<txp:comment_remember />
-		</td> 
-	</tr>
-	<tr>
-		<td align="right" valign="top">
-			<txp:text item="email" />
-		</td>
-		<td valign="top" colspan="2">
-			<txp:comment_email_input />
-		</td>
-	</tr>
-	<tr> 
-		<td align="right" valign="top">
-			http://
-		</td>
-		<td valign="top" colspan="2">
-			<txp:comment_web_input />
-		</td>
-	</tr>
-	<tr>
-		<td valign="top" align="right">
-			<txp:text item="message" />
-		</td>
-		<td valign="top" colspan="2">
-			<txp:comment_message_input />
-		</td>
-	</tr>
-	<tr>
-		<td align="right" valign="top">
-			&nbsp;
-		</td>
-		<td valign="top" align="left">
-			<txp:comments_help />
-		</td>
-		<td align="right" valign="top">
-			<txp:comment_preview />
-			<txp:comment_submit />
-		</td>
-	</tr>
-</table>
+bc. <p>
+    Name (required)<br>
+    <txp:comment_name_input />
+</p>
+<p>
+    Email (required)<br>
+    <txp:comment_email_input />
+</p>
+<p>
+    Website<br>
+    <txp:comment_web_input />
+</p>
+<p>
+    <txp:comment_remember />
+</p>
+<p>
+    Message (required)<br>
+    <txp:comment_message_input /><br>
+    <txp:comments_help />
+</p>
+<p>
+    <txp:comment_preview />
+    <txp:comment_submit />
+</p>
 
-Other tags used: "comment_email_input":comment-email-input.textile, "comment_name_input":comment-name-input.textile, "comment_web_input":comment_web_input.textile, "comment_preview":comment-preview.textile, "comment_remember":comment-remember.textile, "comments_help":comments-help.textile, "text":text.textile
+Other tags used: "comment_email_input":comment-email-input.textile, "comments_help":comments-help.textile, "comment_message_input":comment-message-input.textile, "comment_name_input":comment-name-input.textile, "comment_preview":comment-preview.textile, "comment_remember":comment-remember.textile, "comment_submit":comment-submit.textile, "comment_web_input":comment-web-input.textile.
