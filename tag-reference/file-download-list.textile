@@ -27,7 +27,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Restrict to files from the specified category. Allows a comma separated list of category names. Note: category names may be different to the Title you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories page]] to ensure you are using the correct names.
 : Default: unset.
 ; [[form]]=&quot;form name&quot;
-: Use the specified form to process the files.
+: Use the specified form template to process the files.
 : Default: @files@.
 ; [[id]]=&quot;file ID&quot;
 : Display the specific file or list of files.

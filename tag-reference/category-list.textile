@@ -24,7 +24,8 @@ Tag will accept the following attributes (*case-sensitive*):
 : List of category names which will be excluded from the list. @categories@ takes precendence over @exclude@.
 : Default: unset.
 ; [[form]]=&quot;form name&quot;
-: Use the specified form to process each included category.
+: Use specified form to process each included category.
+: Default: unset.
 ; [[parent]]=&quot;category name&quot;
 : Return only specified category and its children categories.
 ; [[section]]=&quot;section name&quot;
@@ -34,7 +35,7 @@ Tag will accept the following attributes (*case-sensitive*):
 ; [[sort]]=&quot;sort value(s)&quot;
 : How to sort the resulting list.
 : Values:
-:: @ID@.
+:: @id@.
 :: @name@.
 :: @parent@.
 :: @rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).

@@ -14,8 +14,8 @@ h2. Examples
 
 h3. Example 1: Comments display form
 
-<txp:comment_message />
-<p>
+bc. <txp:comment_message />
+<p class="footnote">
     <a href="mailto:<txp:comment_email />">Email</a> |
     <txp:comment_permlink>
         <txp:comment_id />

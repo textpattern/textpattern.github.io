@@ -24,7 +24,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Comma-separated list of section names to exclude from the list. @sections@ takes precedence over @exclude@.
 : Default: unset (none).
 ; [[form]]=&quot;form name&quot;
-: Use the specified form to process each included section.
+: Use specified form template to process each included section.
 : Default: unset.
 ; [[include_default]]=&quot;boolean&quot;
 : Whether to include 'default' section in section list.

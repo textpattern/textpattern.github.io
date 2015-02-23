@@ -14,7 +14,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Label that appears next to the 'Forget' @checkbox@.
 : Default: @Forget@ (localised).
 ; [[form]]=&quot;form name&quot;
-: Use specified form.
+: Use specified form template.
 : Default: @comment_form@.
 ; [[isize]]=&quot;integer&quot;
 : HTML @size@ attribute to be applied to the HTML form text @input@ fields.

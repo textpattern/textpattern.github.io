@@ -57,7 +57,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Values: @0@ (no, don't include expired articles) or @1@ (yes, include expired articles).
 : Default: Setting of preference 'Publish expired articles'.
 ; [[form]]=&quot;form name&quot;
-: Use specified form.
+: Use specified form template to process each article.
 : Default: @default@.
 ; [[id]]=&quot;article ID&quot;
 : Display the specific article or list of articles (each ID separated by a comma).
@@ -82,25 +82,25 @@ Tag will accept the following attributes (*case-sensitive*):
 ; [[sort]]=&quot;sort value(s)&quot;
 : How to sort resulting list.
 : Values:
-:: @AuthorID@ (author name).
-:: @Category1@.
-:: @Category2@.
+:: @authorid@ (author name).
+:: @category1@.
+:: @category2@.
 :: @comments_count@.
 :: @custom_1@ through @custom_10@ (from Textpattern 4.2.0 onwards: @custom_n@ where 'n' is the number of your custom field - for numeric values use @(custom_n+0)@).
-:: @Expires@ (expiry date).
-:: @ID@ (article id#).
-:: @Image@ (article image id#).
-:: @Keywords@.
-:: @LastMod@ (date last modified).
-:: @LastModID@ (author name of last modification).
-:: @Posted@ (date posted).
+:: @expires@ (expiry date).
+:: @id@ (article id#).
+:: @image@ (article image id#).
+:: @keywords@.
+:: @lastmod@ (date last modified).
+:: @lastmodid@ (author name of last modification).
+:: @posted@ (date posted).
 :: @rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
-:: @Section@.
-:: @Status@.
-:: @Title@.
+:: @section@.
+:: @status@.
+:: @title@.
 :: @url_title@.
 :: Each field in the @textpattern@ database table can be used as a sort key.
-: Default: @Posted desc@.
+: Default: @posted desc@.
 ; [[status]]=&quot;status&quot;
 : Restrict to articles with the specified @status@.
 : Values: @live@ or @sticky@.

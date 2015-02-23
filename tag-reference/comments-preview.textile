@@ -10,8 +10,8 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[form]]=&quot;value&quot;
-: Use specified form.
+; [[form]]=&quot;form name&quot;
+: Use specified form template to process each comment.
 : Default: @comments@.
 
 h3. Common presentational attributes

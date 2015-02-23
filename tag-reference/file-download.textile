@@ -13,8 +13,8 @@ Tag will accept the following attributes (*case-sensitive*):
 ; [[filename]]=&quot;name&quot;
 : Filename of the file to link to.
 : Default: unset (nothing is returned).
-; [[form]]=&quot;name&quot;
-: Use the specified form.
+; [[form]]=&quot;form name&quot;
+: Use specified form template to process the files.
 : Default: @files@.
 ; [[id]]=&quot;integer&quot;
 : File @id@ of the file to link to.

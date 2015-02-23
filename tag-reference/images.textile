@@ -40,7 +40,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Filter the images by this list of image extensions, including the leading dot. Example: @extension=".jpg, .png"@.
 : Default: unset.
 ; [[form]]=&quot;form name&quot;
-: Use specified form for each image. If not used, and the container is empty, the tag will output a list of images that are compatible with "image_display":image-display.textile.
+: Use specified form template to process each image. If not used, and the container is empty, the tag will output a list of images that are compatible with "image_display":image-display.textile.
 : Default: unset.
 ; [[html_id]]=&quot;id number&quot;
 : The HTML @id@ attribute applied to the @wraptag@, if set, otherwise to the @img@ tag.
