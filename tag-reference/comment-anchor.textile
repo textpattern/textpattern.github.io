@@ -20,3 +20,5 @@ bc. <txp:comment_anchor />
 When the comment number is @000005@ you will see:
 
 bc. <a id="c000005"></a>
+
+Other tags used: "comment_message":comment-message.textile.
