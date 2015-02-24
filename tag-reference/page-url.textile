@@ -1,0 +1,49 @@
+h1. Page url
+
+h2. Syntax
+
+bc. <txp:page_url />
+
+The *page_url* tag is a _single_ tag. It is used to return a particular component of the URL from the current page being displayed.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[type]]=&quot;type&quot;
+: Specifies which component of the current page's URL will be returned.
+: Values:
+:: @request_uri@: current article's URL-title including any query string.
+:: @id@: current article's id on a single article page.
+:: @s@: current page's section.
+:: @c@: current page's category.
+:: @q@: search query string.
+:: @pg@: current page number in article list mode.
+:: @month@: current page's month on time based article lists.
+:: @author@: current page's author on article lists filtered by author.
+:: @status@: HTTP error response (200, 404).
+:: @css@: current style sheet name.
+:: @page@: current page template name.
+: Default: @request_uri@.
+
+h2. Examples
+
+h3. Example 1: Show the current article's ID, HTTP status and section
+
+bc. <p>
+    Article ID:
+    <txp:page_url type="id" />,
+    From section:
+    <txp:page_url type="s" />
+    (Result: <txp:page_url type="status" />)
+</p>
+
+This would result in the following, for example:
+
+bc. <p>
+    Article ID:
+    88,
+    From section:
+    Tasty pea recipes
+    (Result: 200)
+</p>
