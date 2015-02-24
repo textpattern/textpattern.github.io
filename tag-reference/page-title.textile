@@ -12,7 +12,7 @@ Results appear as follows:
 # Articles by category: @Your site name : Category title@.
 # Search results page: @Your site name : Search results: Search term@.
 # Single article page: @Your site name : Article name@.
-# Comments display: Comments on: Article name@.
+# Comments display: @Comments on: Article name@.
 
 h2. Attributes
 
