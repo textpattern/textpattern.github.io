@@ -1,0 +1,36 @@
+h1. Meta author
+
+h2. Syntax
+
+bc. <txp:meta_author />
+
+The *meta_author* tag is a _single_ tag, used in the head of an individual article page template. Textpattern will replace this tag with a HTML meta tag as follows:
+
+bc. <meta name="author" content="Article author's name" />
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[title]]=&quot;boolean&quot;
+: Whether to display the author's login name or real name.
+: Values: @0@ (login name) or @1@ (real name).
+: Default: @0@.
+
+h2. Examples
+
+h3. Example 1: Use article author for meta tag content
+
+Tag in the head of an individual article page (article's author name is 'Biff Tannen'):
+
+bc. <txp:meta_author />
+
+This results in the following:
+
+bc. <meta name="author" content="Biff Tannen" />
+
+h2. Genealogy
+
+h3. Version 4.3.0
+
+@title@ attribute added.
