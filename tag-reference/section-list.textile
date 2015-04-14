@@ -26,6 +26,8 @@ Tag will accept the following attributes (*case-sensitive*):
 ; [[form]]=&quot;form name&quot;
 : Use specified form template to process each included section.
 : Default: unset.
+; [[html_id]]=&quot;id&quot;
+: The HTML @id@ attribute applied to the @wraptag@, if set.
 ; [[include_default]]=&quot;boolean&quot;
 : Whether to include 'default' section in section list.
 : Values: @0@ (no) or @1@ (yes).
@@ -95,7 +97,11 @@ Other tags used: "if_section":if-section.textile, "section":section.textile.
 
 h2. Genealogy
 
+h3. Version 4.6.0
+
+@html_id@ attribute added.
+
 h3. Version 4.0.7
 
-* Can be used as a container tag.
-* @form@ attribute added.
+Can be used as a container tag.
+@form@ attribute added.

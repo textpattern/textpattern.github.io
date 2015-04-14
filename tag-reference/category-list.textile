@@ -26,6 +26,9 @@ Tag will accept the following attributes (*case-sensitive*):
 ; [[form]]=&quot;form name&quot;
 : Use specified form to process each included category.
 : Default: unset.
+; [[html_id]]=&quot;id&quot;
+: The HTML @id@ attribute applied to the @wraptag@, if set.
+: Default: unset.
 ; [[parent]]=&quot;category name&quot;
 : Return only specified category and its children categories.
 ; [[section]]=&quot;section name&quot;
@@ -93,6 +96,10 @@ This code will add @class="active"@ to the @<li>@ element around the current vie
 Other tags used: "category":category.textile, "if_category":if-category.textile.
 
 h2. Genealogy
+
+h3. Version 4.6.0
+
+@html_id@ attribute added.
 
 h3. Version 4.0.7
 
