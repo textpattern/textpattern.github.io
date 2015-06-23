@@ -20,7 +20,7 @@ h2. Attributes
 : Escape HTML entities such as @<@, @>@ and @&@.
 : Values: @html@ or unset.
 : Default: @html@;
-; [[format]]=&quot;boolean&quot;
+; [[format]]=&quot;value&quot;
 : Display as @<meta>@ tag or as raw value.
 : Values: @meta@ or unset.
 : Default: @meta@ (display as a @<meta>@ tag).
@@ -38,7 +38,7 @@ The *meta_keywords* tag returns an HTML @meta@ tag, populated with an article's 
 
 The above will output keywords metadata with @content=""@ populated with the list of keywords set in the article's 'Keywords' field (the tag returns nothing if no keywords are set for an article). For example, if your article's 'Keywords' field contains @sauce, caramel, sugar@, the tag will output the following:
 
-bc. <meta name="keywords" content="sauce, caramel, sugar" />
+bc. <meta name="keywords" content="sauce,caramel,sugar" />
 
 h3. Example 2: Display keywords in context of an article form
 
@@ -53,7 +53,7 @@ bc. <h1>
 </p>
 <p>
     Keywords:
-    <txp:meta_keywords format="" />
+    <txp:meta_keywords format="" separator=", " />
 </p>
 <txp:excerpt />
 <txp:body />
