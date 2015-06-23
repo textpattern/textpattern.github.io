@@ -29,11 +29,11 @@ h2. Examples
 
 h3. Example 1: Use article's description for meta tag content
 
-bc. <txp:meta_keywords />
+bc. <txp:meta_description />
 
-The *meta_description* tag returns an HTML @meta@ tag, populated with an article's keywords. The tag should always be placed in your template's 'head' section, between the opening and closing HTML @<head>@ tags.
+The *meta_description* tag returns an HTML @meta@ tag, populated with an article's description. The tag should always be placed in your template's 'head' section, between the opening and closing HTML @<head>@ tags.
 
-The above will output keywords metadata with @content=""@ populated with the text set in the article's 'Description' field (the tag returns nothing if no description is set for an article).
+The above will output description metadata with @content=""@ populated with the text set in the article's 'Description' field (the tag returns nothing if no description is set for an article).
 
 h3. Example 2: Use article's description for Twitter Card description (without meta tag)
 
