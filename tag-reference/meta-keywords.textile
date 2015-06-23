@@ -24,6 +24,9 @@ h2. Attributes
 : Display as @<meta>@ tag or as raw value.
 : Values: @meta@ or unset.
 : Default: @meta@ (display as a @<meta>@ tag).
+; [[separator]]=&quot;value&quot;
+: Character to be used as the keywords separator.
+: Default: Unset.
 
 h2. Examples
 
@@ -37,14 +40,30 @@ The above will output keywords metadata with @content=""@ populated with the lis
 
 bc. <meta name="keywords" content="sauce, caramel, sugar" />
 
-h3. Example 2: Use article's keywords as a raw value (without meta tag)
+h3. Example 2: Display keywords in context of an article form
 
-bc. <p>Keywords: <txp:meta_keywords format="" /></p>
+bc. <h1>
+    <txp:permlink>
+        <txp:title />
+    </txp:permlink>
+</h1>
+<p>
+    Date:
+    <txp:posted />
+</p>
+<p>
+    Keywords:
+    <txp:meta_keywords format="" />
+</p>
+<txp:excerpt />
+<txp:body />
 
-The above will output the keywords as a raw value (not enclosed in a @<meta>@ tag) populated with the list of keywords set in the article's 'Keywords' field.
+In this example, keywords are used in a Textpattern 'article' type [[Form template]] along with other article components. The keywords themselves are used like a list of topical 'tags', e.g., like you would use for more granular searching. The keywords would be presented above the article's excerpt.
+
+Other tags used: "permlink":permlink.textile, "title":title.textile, "posted":posted.textile, "excerpt":excerpt.textile, "body":body.textile.
 
 h2. Genealogy
 
 h3. Version 4.6.0
 
-@escape@ and @format@ attributes added.
+@escape@, @format@ and @separator@ attributes added.
