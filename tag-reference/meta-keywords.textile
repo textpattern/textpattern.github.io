@@ -4,15 +4,17 @@ h2. Syntax
 
 bc. <txp:meta_keywords />
 
-Used in the head of an individual article page template or as a raw value, the *meta_keywords* tag is a _single_ tag. The tag can be used in a Textpattern 'article' type [[Form template]], or within a [[Page template]], either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). Textpattern will replace this tag with an HTML @meta@ tag as follows:
+The *meta_keywords* tag is a _single_ tag used in one of two ways. One is to output keyword data as the content of a standard HTML @<meta>@ tag in the head of a page template:
 
-bc. <meta name="keywords" content="Keywords as set in article's keywords field" />
+bc. <meta name="keywords" content="{your article's Keywords}" />
 
-Or as a raw value as follows:
+The other is to output raw keyword text anywhere else:
 
-bc. <p>Keywords: Keywords as set in article's keywords field</p>
+bc. {your article keywords}
 
-p(alert-block information). Character limits: The keywords field has a 255 character limit by default, which includes spaces and commas. This is simply the MySQL database default - you can edit this using, for example, "phpMyAdmin":http://www.phpmyadmin.net.
+Context of use must be within a single article (as opposed to an article list). The tag can be added directly in a [[Page template]] or as part of an article [[Form template]]. Either way, you may also place it in a given article tag.
+
+p(alert-block information). Note: The corresponding keywords field has a 255 character limit by default, which includes spaces and commas. This is a MySQL database column limit that you may edit using "phpMyAdmin":http://www.phpmyadmin.net, for example.
 
 h2. Attributes
 
