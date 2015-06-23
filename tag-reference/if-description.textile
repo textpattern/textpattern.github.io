@@ -1,0 +1,39 @@
+h1. If description
+
+h2. Syntax
+
+bc. <txp:if_description>
+
+The *if_description* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc. <txp:if_description>
+    ...conditional statement...
+</txp:if_description>
+
+The tag will execute the contained statement if the current article/section/cateogry's 'Description' field has an entry.
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+h3. Example 1: Supply meta tag if description exists
+
+bc. <head>
+    ....
+    <txp:if_description>
+        <txp:meta_description />
+    <txp:else />
+        <meta name="description" content="A generic description fallback, possibly about bacon." />
+    </txp:if_description>
+    ....
+</head>
+
+Other tags used: "meta_description":meta-description.textile.
+
+h2. Genealogy
+
+h3. Version 4.6.0
+
+Tag support added
