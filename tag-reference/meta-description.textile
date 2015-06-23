@@ -4,15 +4,17 @@ h2. Syntax
 
 bc. <txp:meta_description />
 
-Used in the head of an individual article page template or as a raw value, the *meta_description* tag is a _single_ tag. The tag can be used in a Textpattern 'article' type [[Form template]], or within a [[Page template]], either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). Textpattern will replace this tag with an HTML @meta@ tag as follows:
+The *meta_description* tag is a _single_ tag used in one of two ways, or both. One is to output description text as the content of a standard HTML @<meta>@ tag in the @<head>@ of a page template:
 
-bc. <meta name="description" content="Description as set in article's description field" />
+bc. <meta name="description" content="{your description}" />
 
-Or as a raw value as follows:
+The other is to output raw description text anywhere else:
 
-bc. <meta name="twitter:description" content="Description as set in article's description field" />
+bc. {your description}
 
-p(alert-block information). Character limits: The description field has a 255 character limit by default, which includes spaces and commas. This is simply the MySQL database default - you can edit this using, for example, "phpMyAdmin":http://www.phpmyadmin.net.
+The tag is context aware, in that it will use article descriptions (if available) on individual article pages, and use section and category descriptions (again, if available) on listing pages. The tag can be added directly in a [[Page template]] or as part of an article [[Form template]]. Either way, you may also nest it in a given article tag.
+
+p(alert-block information). *Note:* The corresponding description field has a 255 character limit by default, which includes spaces and commas. This is the MySQL database default. You can edit the default using "phpMyAdmin":http://www.phpmyadmin.net, for example.
 
 h2. Attributes
 
@@ -47,7 +49,7 @@ The above will output description metadata with @content=""@ populated with the 
 h3. Example 2: Use article's description for Twitter Card description (without meta tag)
 
 bc. <txp:if_individual_article>
-  <meta name="twitter:description" content="<txp:meta_description format="" />" />
+    <meta name="twitter:description" content="<txp:meta_description format="" />" />
 </txp:if_individual_article>
 
 The above will output the description as a raw value (not enclosed in a @<meta>@ tag) populated with the text set in the article's 'Description' field.
@@ -57,7 +59,9 @@ Other tags used: "if_individual_article":if-individual-article.textile.
 h3. Example 3: Display section meta description as tooltip in section list
 
 bc. <txp:section_list>
-  <a href="/<txp:section />" title="<txp:meta_description format="" />"><txp:section title="1" /></a>
+    <a href="/<txp:section />" title="<txp:meta_description format="" />">
+        <txp:section title="1" />
+    </a>
 </txp:section_list>
 
 Other tags used: "section_list":section-list.textile, "section":section.textile.
@@ -65,13 +69,18 @@ Other tags used: "section_list":section-list.textile, "section":section.textile.
 h3. Example 4: Override automatic type
 
 bc. <head>
-  <txp:meta_description />
+    <txp:meta_description />
 </head>
 ...
-<h1>Section: <txp:section title="1" /></h1>
+<h1>
+    Section:
+    <txp:section title="1" />
+</h1>
 <txp:if_article_list>
-  <h2>Introduction</h2>
-  <p><txp:meta_description type="section" format="" /></p>
+    <h2>Introduction</h2>
+    <p>
+        <txp:meta_description type="section" format="" />
+    </p>
 </txp:if_article_list>
 <txp:article />
 
