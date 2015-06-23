@@ -10,6 +10,14 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
+; [[escape]]=&quot;html&quot;
+: Escape HTML entities such as @<@, @>@ and @&@.
+: Values: @html@ or unset.
+: Default: @html@;
+; [[format]]=&quot;boolean&quot;
+: Display plain URL or full link.
+: Values: @link@, @url@ or unset.
+: Default: unset (display title or full link, depending on @link@).
 ; [[link]]=&quot;boolean&quot;
 : Make text a link to the author's posts.
 : Values: @0@ (no) or @1@ (yes).
@@ -26,10 +34,6 @@ Tag will accept the following attributes (*case-sensitive*):
 : Whether to display the author's real name or login name.
 : Values: @0@ (login name) or @1@ (real name).
 : Default: @1@.
-; [[url]]=&quot;boolean&quot;
-: Display plain URL or full link.
-: Values: @0@ (no) or @1@ (yes).
-: Default: @0@ (display title or full link, depending on @link@).
 
 h2. Examples
 
@@ -64,7 +68,7 @@ h2. Genealogy
 
 h3. Version 4.6.0
 
-@url@ attribute added.
+@escape@ and @format@ attributes added.
 
 h3. Version 4.5.0
 

@@ -12,6 +12,14 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
+; [[escape]]=&quot;html&quot;
+: Escape HTML entities such as @<@, @>@ and @&@.
+: Values: @html@ or unset.
+: Default: @html@;
+; [[format]]=&quot;boolean&quot;
+: Display as @<meta>@ tag or as raw value.
+: Values: @meta@ or unset.
+: Default: @meta@ (display as a @<meta>@ tag).
 ; [[title]]=&quot;boolean&quot;
 : Whether to display the author's login name or real name.
 : Values: @0@ (login name) or @1@ (real name).
@@ -30,6 +38,10 @@ This results in the following:
 bc. <meta name="author" content="Biff Tannen" />
 
 h2. Genealogy
+
+h3. Version 4.6.0
+
+@escape@ and @format@ attributes added.
 
 h3. Version 4.3.0
 

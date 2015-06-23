@@ -4,15 +4,26 @@ h2. Syntax
 
 bc. <txp:meta_keywords />
 
-Used in the head of an individual article page template, the *meta_keywords* tag is a _single_ tag. The tag can be used in a Textpattern 'article' type [[Form template]], or within a [[Page template]], either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). Textpattern will replace this tag with an HTML @meta@ tag as follows:
+Used in the head of an individual article page template or as a raw value, the *meta_keywords* tag is a _single_ tag. The tag can be used in a Textpattern 'article' type [[Form template]], or within a [[Page template]], either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). Textpattern will replace this tag with an HTML @meta@ tag as follows:
 
-bc. <meta name="keywords" content="keywords as set in article's keywords field" />
+bc. <meta name="keywords" content="Keywords as set in article's keywords field" />
+
+Or as a raw value as follows:
+
+bc. <p>Keywords: Keywords as set in article's keywords field</p>
 
 p(alert-block information). Character limits: The keywords field has a 255 character limit by default, which includes spaces and commas. This is simply the MySQL database default - you can edit this using, for example, "phpMyAdmin":http://www.phpmyadmin.net.
 
 h2. Attributes
 
-This tag has no attributes.
+; [[escape]]=&quot;html&quot;
+: Escape HTML entities such as @<@, @>@ and @&@.
+: Values: @html@ or unset.
+: Default: @html@;
+; [[format]]=&quot;boolean&quot;
+: Display as @<meta>@ tag or as raw value.
+: Values: @meta@ or unset.
+: Default: @meta@ (display as a @<meta>@ tag).
 
 h2. Examples
 
@@ -25,3 +36,15 @@ The *meta_keywords* tag returns an HTML @meta@ tag, populated with an article's 
 The above will output keywords metadata with @content=""@ populated with the list of keywords set in the article's 'Keywords' field (the tag returns nothing if no keywords are set for an article). For example, if your article's 'Keywords' field contains @sauce, caramel, sugar@, the tag will output the following:
 
 bc. <meta name="keywords" content="sauce, caramel, sugar" />
+
+h3. Example 2: Use article's keywords as a raw value (without meta tag)
+
+bc. <p>Keywords: <txp:meta_keywords format="" /></p>
+
+The above will output the keywords as a raw value (not enclosed in a @<meta>@ tag) populated with the list of keywords set in the article's 'Keywords' field.
+
+h2. Genealogy
+
+h3. Version 4.6.0
+
+@escape@ and @format@ attributes added.
