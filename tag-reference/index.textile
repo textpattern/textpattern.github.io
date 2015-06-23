@@ -127,10 +127,6 @@ h3. I
 # "image url":image-url.textile
 # "images":images.textile
 
-h3. K
-
-# "keywords":keywords.textile
-
 h3. L
 
 # "lang":lang.textile
@@ -152,6 +148,7 @@ h3. L
 h3. M
 
 # "meta author":meta-author.textile
+# "meta description":meta-description.textile
 # "meta keywords":meta-keywords.textile
 # "modified":modified.textile
 
