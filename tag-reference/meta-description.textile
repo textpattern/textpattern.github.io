@@ -1,0 +1,48 @@
+h1. Meta description
+
+h2. Syntax
+
+bc. <txp:meta_description />
+
+Used in the head of an individual article page template or as a raw value, the *meta_description* tag is a _single_ tag. The tag can be used in a Textpattern 'article' type [[Form template]], or within a [[Page template]], either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). Textpattern will replace this tag with an HTML @meta@ tag as follows:
+
+bc. <meta name="description" content="Description as set in article's description field" />
+
+Or as a raw value as follows:
+
+bc. <meta name="twitter:description" content="Description as set in article's description field" />
+
+p(alert-block information). Character limits: The description field has a 255 character limit by default, which includes spaces and commas. This is simply the MySQL database default - you can edit this using, for example, "phpMyAdmin":http://www.phpmyadmin.net.
+
+h2. Attributes
+
+; [[escape]]=&quot;html&quot;
+: Escape HTML entities such as @<@, @>@ and @&@.
+: Values: @html@ or unset.
+: Default: @html@;
+; [[format]]=&quot;boolean&quot;
+: Display as @<meta>@ tag or as raw value.
+: Values: @meta@ or unset.
+: Default: @meta@ (display as a @<meta>@ tag).
+
+h2. Examples
+
+h3. Example 1: Use article's description for meta tag content
+
+bc. <txp:meta_keywords />
+
+The *meta_description* tag returns an HTML @meta@ tag, populated with an article's keywords. The tag should always be placed in your template's 'head' section, between the opening and closing HTML @<head>@ tags.
+
+The above will output keywords metadata with @content=""@ populated with the text set in the article's 'Description' field (the tag returns nothing if no description is set for an article).
+
+h3. Example 2: Use article's description for Twitter Card description (without meta tag)
+
+bc. <meta name="twitter:description" content="<txp:meta_description format="" />" />
+
+The above will output the description as a raw value (not enclosed in a @<meta>@ tag) populated with the text set in the article's 'Description' field.
+
+h2. Genealogy
+
+h3. Version 4.6.0
+
+Tag support added.
