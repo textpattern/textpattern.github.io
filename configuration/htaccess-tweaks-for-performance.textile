@@ -1,0 +1,65 @@
+h1. Deflating pages for improved performance
+
+This article is intended to help Textpattern administrators implement web server compression techniques to improve page load times.
+
+h2. Background
+
+The Apache httpd web serving software can optionally perform server-side compression of Textpattern's pages and feeds with an module. Compressed pages and feeds will appear visually identically to the uncompressed version, but typically involve fewer bytes being transferred by the browser.
+
+h2. .htaccess background
+
+Apache httpd compression is controlled at a global or per-site basis. Webmasters can use the @.htaccess@ file to control file compression on a per-site basis.
+
+h2. Setup and configuration
+
+Many shared web hosting packages have the ability to serve compressed files, though this is not always enabled by default. File compression adds a computational cost to the Apache server by way of increased workload to dynamically compress the files, but the typical result is a significant saving of bytes transferred to the browser.
+
+The simplest way to confirm if a Textpattern host is serving compressed files is to add a conditional directive to @.htaccess@ and then check for compression in either the browser inspector or via a third-party service.
+
+h3. .htaccess file modifications
+
+Confirm which version of Apache the Textpattern instance is using via Admin -> Diagnostics. Add the appropriate code to the Textpattern @.htaccess@ file:
+
+h4. For Apache 2.x
+
+bc. <IfModule deflate_module>
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE application/xml 
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+h4. For Apache 1.x
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE application/xml 
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+h3. Check files are compressed
+
+Many modern browser inspectors will indicate whether a web page resource is compressed, and third-party services exist to do the same thing. The simplest way to confirm if content of a given type is being served compressed is to test the following URLs at an appropriate checker, such as the "HTTP Compression Test":http://www.whatsmyip.org/http-compression-test/ page at @whatsmyip.org@, where @example.com@ is the address of the Textpattern site:
+
+* @http://example.com/css?n=default@
+* @http://example.com/textpattern/checksums.txt@
+* @http://example.com/index.php@
+* @http://example.com/rss@
+* @http://example.com/textpattern/textpattern.js@
