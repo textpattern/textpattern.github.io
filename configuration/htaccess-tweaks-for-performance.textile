@@ -39,7 +39,7 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 
 h4. For Apache 1.x
 
-<IfModule mod_deflate.c>
+bc. <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/css
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
