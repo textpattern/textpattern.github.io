@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:rsd />
 
-The *rsd* tag is a _single_ tag which is used to insert a Really Simple Discoverability:"https://github.com/danielberlinger/rsd" link element, helping XML-RPC client programs to configure themselves.
+The *rsd* tag is a _single_ tag which is used to insert a "Really Simple Discoverability":https://github.com/danielberlinger/rsd link element, helping XML-RPC client programs to configure themselves.
 
 h2. Attributes
 
