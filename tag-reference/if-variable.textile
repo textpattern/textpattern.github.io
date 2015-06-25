@@ -1,0 +1,34 @@
+h1. If variable
+
+h2. Syntax
+
+bc. <txp:if_variable>
+
+The *if_variable* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc. <txp:if_variable>
+    ...conditional statement...
+</txp:if_variable>
+
+It tests the existence and/or value of a global variable set with the "variable":variable.textile tag.
+
+p(alert-block information). *Note:* In case you are getting unexpected results in an *if_variable* evaluation, check whether you have entered additional white space or invisible characters in your "variable":variable.textile declarations and remove those.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[name]]=&quot;variable name&quot;
+: The name of the variable you wish to check.
+; [[value]]=&quot;value&quot;
+: The (optional) value which the named variable must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns 'true' if the named variable is defined. If this attribute's value is omitted (i.e., @value=""@), the tag returns 'true' if the variable is defined, but has no value.
+
+h2. Examples
+
+See the "variable":textile page for examples.
+
+h2. Genealogy
+
+h3. Version 4.0.7
+
+Tag support added.
