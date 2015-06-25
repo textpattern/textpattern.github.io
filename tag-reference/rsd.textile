@@ -1,0 +1,21 @@
+h1. Rsd
+
+h2. Syntax
+
+bc. <txp:rsd />
+
+The *rsd* tag is a _single_ tag which is used to insert a Really Simple Discoverability:"https://github.com/danielberlinger/rsd" link element, helping XML-RPC client programs to configure themselves.
+
+h2. Attributes
+
+This tag has no attributes.
+
+h2. Examples
+
+Example 1: TODO?
+
+h2. Genealogy
+
+h3. Version 4.0.7
+
+Tag support added.
