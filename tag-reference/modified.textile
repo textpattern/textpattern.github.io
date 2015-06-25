@@ -1,0 +1,69 @@
+h1. Modified
+
+h2. Syntax
+
+bc. <txp:modified />
+
+The *modified* tag is a _single_ tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the [[Preferences page]].
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[format]]=&quot;format string&quot;
+: Override the default date format set in the [[Preferences page]].
+: Values: any valid "strftime":http://php.net/strftime string values.
+: Default: the 'Archive date format' set in preferences.
+; [[gmt]]=&quot;boolean&quot;
+: Return either local time (according to the set time zone preferences) or GMT.
+: Values: @0@ (local time) or @1@ (GMT).
+: Default: @0@.
+; [[lang]]=&quot;ISO language code&quot;
+: Format time string suitable for the specified language (locale).
+: Values: locales adhere to "ISO-639":http://en.wikipedia.org/wiki/ISO_639-2.
+: Default: unset (time format set in the [[Preferences page]].
+
+h3. Common presentational attributes
+
+These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
+
+; [[class]]=&quot;class name&quot;
+: HTML @class@ to apply to the @wraptag@ attribute value.
+: Default: tag name or unset (see [[class cross-reference]]).
+; [[wraptag]]=&quot;element&quot;
+: HTML tag to wrap around output, specified without brackets (e.g., @wraptag="p"@).
+: Default: unset (but see [[wraptag cross-reference]] for exceptions).
+
+h2. Examples
+
+h3. Example 1: Display 'since' format date setting
+
+bc. <p>
+    Modified:
+    <txp:modified format="since" />
+</p>
+
+This would result in the following HTML output:
+
+bc. <p>Modified: 29 days ago</p>
+
+h3. Example 2: Display custom date format
+
+bc. <p>
+    Modified:
+    <txp:modified format="%b %d, %Y" />
+</p>
+
+This would result in the following HTML output:
+
+bc. <p>modified: May 28, 2005</p>
+
+h2. Genealogy
+
+h3. Version 4.5.0
+
+@wraptag@ and @class@ attributes added.
+
+h3. Version 4.0.7
+
+Tag support added.
