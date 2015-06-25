@@ -32,11 +32,11 @@ Tag will accept the following attributes (*case-sensitive*):
 
 h2. Examples
 
-h2. Example 1: Container tag - link with text
+h3. Example 1: Container tag - link with text
 
 bc. <txp:older>Older</txp:older>
 
-h2. Example 2: Single tag - link with image
+h3. Example 2: Single tag - link with image
 
 bc. <a href="<txp:older />">
     <txp:image name="left-arrow.gif" />
@@ -44,7 +44,7 @@ bc. <a href="<txp:older />">
 
 Other tags used: "image":image.textile.
 
-h2. Example 3: Container tag - link with image
+h3. Example 3: Container tag - link with image
 
 bc. <txp:older>
     <txp:image name="left-arrow.gif" />
