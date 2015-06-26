@@ -1,0 +1,28 @@
+h1. Link
+
+h2. Syntax
+
+bc. <txp:link />
+
+The *link* tag is a _single_ tag which is used to return an HTML hyperlink defined in the [[Links page]]. It uses the 'Title' field as the link's text.
+
+This tag is used in 'Links' type forms or inside the "linklist":linklist.textile container tag.
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[rel]]=&quot;relation&quot;
+: "HTML rel attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types to be applied to link.
+: Default: unset.
+
+h2. Examples
+
+h3. Example 1: Display a link and its description
+
+bc. <p>
+    <txp:link />:
+    <txp:link_description />
+</p>
+
+Other tags used: "link_description":link-description.textile.

@@ -1,0 +1,63 @@
+h1. Image url
+
+h2. Syntax
+
+bc. <txp:image_url />
+
+The *image_url* tag is a _single_ or a _container_ tag that Textpattern will replace with the URL of the current image in an "images":images.textile list, or the specific image if given an @id@ or @name@.
+
+If used as a container, it must be specified as an opening and closing pair of tags, like this:
+
+bc. <txp:image_url>
+    ...link contents...
+</txp:image_url>
+
+h2. Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+; [[id]]=&quot;integer&quot;
+: An @id@ assigned at upload of an image to display. The IDs can be found on the [[Images page]].
+: Default: unset.
+; [[link]]=&quot;link type&quot;
+: Whether to hyperlink the URL or not.
+: Values:
+:: @1@: hyperlink the URL (if used as a single tag) or the container content.
+:: @0@: don't hyperlink the URL/container.
+:: @auto@: only apply the hyperlink if the tag is used as a container.
+: Default: @auto@.
+; [[name]]=&quot;image name&quot;
+: An image to display, given by its image name as shown on the [[Images page]]. If both @name@ and @id@ are specified, the @id@ takes precedence.
+: Default: unset.
+; [[thumbnail]]=&quot;boolean&quot;
+: Display the link to the image's thumbnail instead of the full size image.
+: Values: @0@ (display the full size image) or @1@ (display the thumbnail).
+: Default: @0@.
+
+h2. Examples
+
+h3. Example 1: Directly link gallery thumbs to main image
+
+Used as a single tag:
+
+bc. <txp:images category="mammals">
+    <a href="<txp:image_url />">
+        <txp:thumbnail />
+    </a>
+</txp:images>
+
+Used as a container:
+
+bc. <txp:images category="mammals">
+    <txp:image_url>
+        <txp:thumbnail />
+    </txp:image_url>
+</txp:images>
+
+Other tags used: "images"images.textile, "thumbnail":thumbnail.textile.
+
+h2. Genealogy
+
+h3. Version 4.3.0
+
+Tag support added.
