@@ -25,4 +25,4 @@ bc. <!DOCTYPE html>
 
 Why you might do this? When declaring a DTD, namespace and language that a site is served, the @lang@ attribute is useful for ensuring translators, search engines and content parsers handle the document in the correct manner.
 
-Other tags used: "site_name":site-name.textile, "site_slogan":site-slogan.textile, "text":text.textile.
+Other tags used: "page_title":page-title.textile, "text":text.textile.
