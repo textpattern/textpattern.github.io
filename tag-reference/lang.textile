@@ -14,9 +14,7 @@ h2. Examples
 
 h3. Example 1: Define a document's language
 
-bc. <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<!DOCTYPE html>
+bc. <!DOCTYPE html>
 <html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
 <head>
     <meta charset="utf-8">
