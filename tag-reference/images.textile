@@ -232,6 +232,24 @@ Creates a small gallery of 6 images from the category 'gallery'. Uses the TimThu
 
 Other tags used: "image_author":image-author.textile, "image_info":image-info.textile, "image_url":image-url.textile, "site_url":site-url.textile.
 
+h3. Example 4: Using offset and limit for news pages
+
+You can use the @offset@ attribute to slice up your "article_image":article-image.textile list. By specifying a comma-separated list of image IDs in your Article Image field, this tag can iterate over them in groups. So if your Article Image list contained four IDs you could treat your first image as the "Hero" at the top of the article, displayed using:
+
+bc. <txp:images limit="1">
+   <txp:article_image />
+</txp:images>
+
+and then later on you could drop in:
+
+bc. <txp:images offset="1" limit="3" wraptag="div" class="gallery">
+   <txp:thumbnail />
+</txp:images>
+
+to display the three remaining supporting images as thumbnails in a gallery, all taken from the Article Image field.
+
+Other tags used: "article_image":article-image.textile, "thumbnail":thumbnail.textile.
+
 h2. Genealogy
 
 h3. Version 4.5.0
