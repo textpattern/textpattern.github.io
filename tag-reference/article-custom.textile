@@ -69,7 +69,7 @@ Default: unset.
 # @limit="integer"@
 The number of articles to display.
 Default: @10@.
-# @month="yyyy"/"yyyy-mm"/"yyyy-mm-dd&"@
+# @month="yyyy"/"yyyy-mm"/"yyyy-mm-dd"@
 Restrict to articles posted within the specified year/month/day.
 Default: unset.
 # @offset="integer"@
