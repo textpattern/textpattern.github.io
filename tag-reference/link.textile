@@ -6,7 +6,7 @@ bc. <txp:link />
 
 The *link* tag is a _single_ tag which is used to return an HTML hyperlink defined in the [[Links page]]. It uses the 'Title' field as the link's text.
 
-This tag is used in 'Links' type forms or inside the "linklist":linklist.textile container tag.
+This tag is used in 'links' type forms or inside the "linklist":linklist.textile container tag.
 
 h2. Attributes
 

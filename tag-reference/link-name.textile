@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:link_name />
 
-The *link_name* tag is a _single_ tag which returns the name of the link as assigned on the links pane as text. This tag is used in a 'Links' type form or inside the "linklist":linklist.textile container tag to display information about the current link.
+The *link_name* tag is a _single_ tag which returns the name of the link as assigned on the links pane as text. This tag is used in a 'links' type form or inside the "linklist":linklist.textile container tag to display information about the current link.
 
 h2. Attributes
 
