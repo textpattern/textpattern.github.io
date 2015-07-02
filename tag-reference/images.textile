@@ -60,7 +60,7 @@ Tag will accept the following attributes (*case-sensitive*):
 : Default: @0@.
 : (Only effective if @limit@ is set.)
 ; [[pageby]]=&quot;integer&quot; (or &quot;limit&quot;)
-: The number of images to jump forward or back when an [[older]] or [[newer]] link is clicked. Without this attribute, pagination is not available; you will simply see @limit@ images. You may specify @pageby="limit"@ to allow pagination to automatically follow the value of the @limit@ attribute. Note: [[newer]] and [[older]] will paginate all content types at once.
+: The number of images to jump forward or back when an "older":older.textile or "newer":newer.textile link is clicked. Without this attribute, pagination is not available; you will simply see @limit@ images. You may specify @pageby="limit"@ to allow pagination to automatically follow the value of the @limit@ attribute. Note: "newer":newer.textile and "older":textile will paginate all content types at once.
 : Default: unset.
 ; [[realname]]=&quot;author name&quot;
 : Filter the image list so it only includes images uploaded by this list of author real names. The author names may be URL encoded (e.g. @realname="John+Smith"@) and thus could be read from the current @example.com/author/author+name@ URL. Note that this attribute may incur one extra query per name, so if it is possible to use the raw author instead it will be faster.

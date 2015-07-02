@@ -12,7 +12,7 @@ An article list consists of the assigned number of articles set by the article t
 
 Given a @<txp:article limit="5" />@ tag on the page in question @<txp:older />@ will page down five articles at a time from the most recent post back in time to the oldest.
 
-p(alert-block information). *Note:* This tag is context-sensitive, meaning it will only fetch content from the section or category being viewed.
+p(alert-block information). Note: This tag is context-sensitive, meaning it will only fetch content from the section or category being viewed.
 
 h2. Attributes
 
