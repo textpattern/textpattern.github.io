@@ -32,7 +32,7 @@ h3. Content/behaviour attributes
 : Default: @1@.
 ; [[customfieldname]]=&quot;value&quot;
 : Restrict to articles with specified value for specified custom field name. Replace _customfieldname_ with the actual name of the custom field.
-: *Important:* Using dashes @-@ or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
+: Important: Using dashes @-@ or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
 ; [[form]]=&quot;form name&quot;
 : Use specified form template to process each article.
 : Default: @default@.
