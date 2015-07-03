@@ -1,3 +1,14 @@
+---
+layout: page-docs
+category: tag-reference
+published: true
+splash: ""
+title: "Article custom"
+tags:
+  - Tag reference
+  - Article tags
+---
+
 h1. Article custom
 
 h2. Syntax
