@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Rsd"
+tags:
+  - Tag reference
+  - Article tags
+---
+
 h1. Rsd
 
 h2. Syntax

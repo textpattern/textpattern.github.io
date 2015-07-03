@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "If article author"
+tags:
+  - Tag reference
+  - Article tags
+---
+
 h1. If article author
 
 h2. Syntax

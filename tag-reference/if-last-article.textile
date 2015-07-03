@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "If last article"
+tags:
+  - Tag reference
+  - Article tags
+---
+
 h1. If last article
 
 h2. Syntax

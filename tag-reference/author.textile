@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Author"
+tags:
+  - Tag reference
+  - Article tags
+---
+
 h1. Author
 
 h2. Syntax

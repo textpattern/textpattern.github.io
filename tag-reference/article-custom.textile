@@ -1,8 +1,7 @@
 ---
-layout: page-docs
+layout: document
 category: tag-reference
 published: true
-splash: ""
 title: "Article custom"
 tags:
   - Tag reference

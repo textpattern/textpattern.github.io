@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Category2"
+tags:
+  - Tag reference
+  - Article tags
+---
+
 h1. Category2
 
 h2. Syntax
