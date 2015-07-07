@@ -10,18 +10,18 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[email]]=&quot;value&quot;
-: The email address from which to make the link.
-: Values: Any valid email address.
-: Default: unset.
-; [[linktext]]=&quot;value&quot;
-: The displayed link text.
-: Values: Any text.
-: Default: @Contact@.
-; [[title]]=&quot;value&quot;
-: The @title@ attribute to assign to the link.
-: Values: Any valid HTML title.
-: Default: unset.
+* @email="value"@
+The email address from which to make the link.
+Values: Any valid email address.
+Default: unset.
+* @linktext="value"@
+The displayed link text.
+Values: Any text.
+Default: @Contact@.
+* @title="value"@
+The @title@ attribute to assign to the link.
+Values: Any valid HTML title.
+Default: unset.
 
 h2. Examples
 

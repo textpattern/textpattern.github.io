@@ -10,15 +10,15 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[break]]=&quot;tag&quot;
-: Trailing string.
-: Default: @…@ (ellipsis).
-; [[hilight]]=&quot;tag&quot;
-: HTML tag to be used for search term matches in excerpt text, without brackets.
-: Default: @strong@.
-; [[limit]]=&quot;integer&quot;
-: Maximum number of search match excerpts per search result.
-: Default: @5@.
+* @break="tag"@
+Trailing string.
+Default: @…@ (ellipsis).
+* @hilight="tag"@
+HTML tag to be used for search term matches in excerpt text, without brackets.
+Default: @strong@.
+* @limit="integer"@
+Maximum number of search match excerpts per search result.
+Default: @5@.
 
 h2. Examples
 

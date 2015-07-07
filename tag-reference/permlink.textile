@@ -20,24 +20,23 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[id]]=&quot;integer&quot;
-: Specifies the article @id@, assigned at creation of the article, to link. Can be found on the [[Articles page]].
-: Default: unset (current article).
-; [[title]]=&quot;text&quot;
-: HTML @title@ attribute.
-: Default: unset.
+* @id="integer"@
+Specifies the article @id@, assigned at creation of the article, to link. Can be found on the [[Articles page]].
+Default: unset (current article).
+* @title="text"@
+HTML @title@ attribute.
+Default: unset.
 
 h3. Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-; [[class]]=&quot;class name&quot;
-: HTML @class@ to apply to the @a@ tag when used as a container tag.
-: Default: tag name or unset (see [[class cross-reference]]).
-: Default: unset.
-; [[style]]=&quot;style rule&quot;
-: Inline CSS @style@ rule. It's recommended that you assign CSS rules via @class@ attribute instead.
-: Default: unset.
+* @class="class name"@
+HTML @class@ to apply to the @a@ tag when used as a container tag.
+Default: tag name or unset (see [[class cross-reference]]).
+* @style="style rule"@
+Inline CSS @style@ rule. It's recommended that you assign CSS rules via @class@ attribute instead.
+Default: unset.
 
 h2. Examples
 
@@ -69,7 +68,7 @@ bc. <txp:permlink class="awesome-article">
 
 By default @<txp:permlink />@ returns only a very basic link, which doesn't allow for customizing the link title, or adding a CSS class, etc. Using the tag in its single tag capacity opens up a lot more possibilities.
 
-For example, to have the permanent link have an HTML title attribute of the article's title, and also apply a class to it named &quot;orange&quot;:
+For example, to have the permanent link have an HTML title attribute of the article's title, and also apply a class to it named "orange":
 
 bc. <a class="awesome-article" href="<txp:permlink />">
     <txp:title />

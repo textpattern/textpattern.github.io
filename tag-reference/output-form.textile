@@ -12,9 +12,9 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[form]]=&quot;form name&quot;
-: Use specified form.
-: Default: unset (no output).
+* @form="form name"@
+Use specified form.
+Default: unset (no output).
 
 h2. Examples
 

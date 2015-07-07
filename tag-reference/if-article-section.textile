@@ -26,8 +26,8 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[name]]=&quot;section&quot;
-: Comma-separated list of section names.
+* @name="section"@
+Comma-separated list of section names.
 
 h2. Examples
 

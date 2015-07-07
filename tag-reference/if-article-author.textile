@@ -28,9 +28,9 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[name]]=&quot;author&quot;
-: Comma-separated list of author names.
-: Default: unset (i.e. any author at all).
+* @name="author"@
+Comma-separated list of author names.
+Default: unset (i.e. any author at all).
 
 h2. Examples
 

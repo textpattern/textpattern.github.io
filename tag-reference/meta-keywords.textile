@@ -28,17 +28,17 @@ p(alert-block information). Note: The corresponding keywords field has a 255 cha
 
 h2. Attributes
 
-; [[escape]]=&quot;html&quot;
-: Escape HTML entities such as @<@, @>@ and @&@.
-: Values: @html@ or unset.
-: Default: @html@;
-; [[format]]=&quot;value&quot;
-: Display as @<meta>@ tag or as raw value.
-: Values: @meta@ or unset.
-: Default: @meta@ (display as a @<meta>@ tag).
-; [[separator]]=&quot;value&quot;
-: Character to be used as the keywords separator.
-: Default: unset.
+* @escape="html"@
+Escape HTML entities such as @<@, @>@ and @&@.
+Values: @html@ or unset.
+Default: @html@;
+* @format="value"@
+Display as @<meta>@ tag or as raw value.
+Values: @meta@ or unset.
+Default: @meta@ (display as a @<meta>@ tag).
+* @separator="value"@
+Character to be used as the keywords separator.
+Default: unset.
 
 h2. Examples
 

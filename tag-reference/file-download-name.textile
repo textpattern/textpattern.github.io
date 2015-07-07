@@ -10,10 +10,10 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[title]]=&quot;boolean&quot;
-: Whether to display the file download name or its title.
-: Values: @0@ (name), or @1@ (title).
-: Default: @0@.
+* @title="boolean"@
+Whether to display the file download name or its title.
+Values: @0@ (name), or @1@ (title).
+Default: @0@.
 
 h2. Examples
 

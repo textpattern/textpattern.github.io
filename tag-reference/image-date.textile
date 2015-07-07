@@ -10,16 +10,16 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[id]]=&quot;integer&quot;
-: An @id@ assigned at upload of an image to display. The IDs can be found on the [[Images page]].
-: Default: unset.
-; [[format]]=&quot;format string&quot;
-: Override the default date format set in the [[Preferences page]].
-: Values: any valid "strftime":http://php.net/strftime string values, @since@, @iso8601@ ("ISO 8601 reference":http://en.wikipedia.org/wiki/ISO_8601), @w3cdtf@ ("W3CDTF reference":http://www.w3.org/TR/NOTE-datetime), or @rfc822@ ("RFC 822 reference":http://www.w3.org/Protocols/rfc822/#z28).
-: Default: the 'Archive date format' set in preferences.
-; [[name]]=&quot;image name&quot;
-: An image to display, given by its image name as shown on the [[Images page]]. If both @name@ and @id@ are specified, the @id@ takes precedence.
-: Default: unset.
+* @id="integer"@
+An @id@ assigned at upload of an image to display. The IDs can be found on the [[Images page]].
+Default: unset.
+* @format="format string"@
+Override the default date format set in the [[Preferences page]].
+Values: any valid "strftime":http://php.net/strftime string values, @since@, @iso8601@ ("ISO 8601 reference":http://en.wikipedia.org/wiki/ISO_8601), @w3cdtf@ ("W3CDTF reference":http://www.w3.org/TR/NOTE-datetime), or @rfc822@ ("RFC 822 reference":http://www.w3.org/Protocols/rfc822/#z28).
+Default: the 'Archive date format' set in preferences.
+* @name="image name"@
+An image to display, given by its image name as shown on the [[Images page]]. If both @name@ and @id@ are specified, the @id@ takes precedence.
+Default: unset.
 
 h2. Examples
 

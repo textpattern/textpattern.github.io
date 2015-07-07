@@ -12,32 +12,32 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[link]]=&quot;boolean&quot; (works only in the _single_ tag)
-: Display as plain text or a link.
-: Values: @0@ (plain text) or @1@ (link).
-: Default: @0@.
-; [[name]]=&quot;section name&quot;
-: Display the named section.
-: Default: unset (display the current section).
-; [[title]]=&quot;boolean&quot;
-: Display either the section name or its title.
-: Values: @0@ (name) or @1@ (title).
-: Default: @0@.
-; [[url]]=&quot;boolean&quot;
-: Display plain URL or full link.
-: Values: @0@ or @1@.
-: Default: @0@ (display title or full link, depending on @link@).
+* @link="boolean"@ (works only in the _single_ tag)
+Display as plain text or a link.
+Values: @0@ (plain text) or @1@ (link).
+Default: @0@.
+* @name="section name"@
+Display the named section.
+Default: unset (display the current section).
+* @title="boolean"@
+Display either the section name or its title.
+Values: @0@ (name) or @1@ (title).
+Default: @0@.
+* @url="boolean"@
+Display plain URL or full link.
+Values: @0@ or @1@.
+Default: @0@ (display title or full link, depending on @link@).
 
 h3. Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-; [[class]]=&quot;class name&quot;
-: HTML @class@ to apply to the @wraptag@ attribute value. If no wraptag is supplied (and @link="1"@), the class is applied to the anchor instead.
-: Default: unset (see [[class cross-reference]]).
-; [[wraptag]]=&quot;element&quot;
-: HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
-: Default: unset (but see [[wraptag cross-reference]] for exceptions).
+* @class]]="class name"@
+HTML @class@ to apply to the @wraptag@ attribute value. If no wraptag is supplied (and @link="1"@), the class is applied to the anchor instead.
+Default: unset (see [[class cross-reference]]).
+* @wraptag]]="element"@
+HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
+Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples
 

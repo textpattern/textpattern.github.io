@@ -14,53 +14,53 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[category]]=&quot;category name&quot;
-: Category of images to display.
-: Values: (comma separated list of) category name(s).
-: Default: presently viewed category.
-; [[limit]]=&quot;integer&quot;
-: The number of images to display.
-: Default: @0@ (no limit).
-; [[offset]]=&quot;integer&quot;
-: The number of images to skip.
-: Default: @0@.
-; [[sort]]=&quot;sort value(s)&quot;
-: How to sort resulting list.
-: Values:
-:: @alt@ (image alt text)
-:: @author@
-:: @caption@ (image caption text)
-:: @category@ (image category)
-:: @date@ (date posted)
-:: @ext@ (image extension)
-:: @h@ (image height)
-:: @id@ (image id#)
-:: @name@ (image name)
-:: @rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
-:: @thumbnail@
-:: @w@ (image width)
-:: Each field in the @txp_image@ database table can be used as a sort key.
-: Default: @name asc@.
+* @category="category name"@
+Category of images to display.
+Values: (comma separated list of) category name(s).
+Default: presently viewed category.
+* @limit="integer"@
+The number of images to display.
+Default: @0@ (no limit).
+* @offset="integer"@
+The number of images to skip.
+Default: @0@.
+* @sort="sort value(s)"@
+How to sort resulting list.
+Values:
+@alt@ (image alt text)
+@author@
+@caption@ (image caption text)
+@category@ (image category)
+@date@ (date posted)
+@ext@ (image extension)
+@h@ (image height)
+@id@ (image id#)
+@name@ (image name)
+@rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
+@thumbnail@
+@w@ (image width)
+Each field in the @txp_image@ database table can be used as a sort key.
+Default: @name asc@.
 
 h3. Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-; [[break]]=&quot;value&quot;
-: Where value is an HTML element, specified without brackets (e.g., @break="li"@) or some string to separate list items.
-: Default: @br@ (but see [[break cross-reference]] for exceptions).
-; [[class]]=&quot;class name&quot;
-: HTML @class@ to apply to the @wraptag@ attribute value.
-: Default: tag name or unset (see [[class cross-reference]]).
-; [[label]]=&quot;text&quot;
-: Label prepended to item.
-: Default: unset (but see [[label cross-reference]] for exceptions).
-; [[labeltag]]=&quot;element&quot;
-: HTML element to wrap (markup) label, specified without brackets (e.g., labeltag="h3").
-: Default: unset.
-; [[wraptag]]=&quot;element&quot;
-: HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
-: Default: unset (but see [[wraptag cross-reference]] for exceptions).
+* @break="value"@
+Where value is an HTML element, specified without brackets (e.g., @break="li"@) or some string to separate list items.
+Default: @br@ (but see [[break cross-reference]] for exceptions).
+* @class="class name"@
+HTML @class@ to apply to the @wraptag@ attribute value.
+Default: tag name or unset (see [[class cross-reference]]).
+* @label="text"@
+Label prepended to item.
+Default: unset (but see [[label cross-reference]] for exceptions).
+* @labeltag="element"@
+HTML element to wrap (markup) label, specified without brackets (e.g., labeltag="h3").
+Default: unset.
+* @wraptag="element"@
+HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
+Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples
 

@@ -10,10 +10,10 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[escape]]=&quot;html&quot;
-: Escape HTML entities such as @<@, @>@ and @&@.
-: Values: @html@ or unset.
-: Default: @html@;
+* @escape="html"@
+Escape HTML entities such as @<@, @>@ and @&@.
+Values: @html@ or unset.
+Default: @html@;
 
 h2. Examples
 

@@ -12,9 +12,9 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[rel]]=&quot;relation&quot;
-: "HTML rel attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types to be applied to link.
-: Default: unset.
+* @rel="relation"@
+"HTML rel attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types to be applied to link.
+Default: unset.
 
 h2. Examples
 

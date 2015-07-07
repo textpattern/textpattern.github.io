@@ -12,44 +12,44 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[link]]=&quot;boolean&quot;
-: Whether to display as link. Works only in the _single_ tag, *not* in the _containing_ tag variant.
-: Values: @0@ (no) or @1@ (yes).
-: Default: @0@.
-; [[name]]=&quot;category name&quot;
-: Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [[Categories page]]. Also note that if you had called your category @My Category Name@ it becomes @my-category-name@ when used in tags.
-: Default: unset (use current category).
-; [[section]]=&quot;section name&quot;
-: Restrict to articles from specified section(s).
-: Values: (comma separated list of) section name(s).
-: Default: current section (for backwards compatibility).
-; [[this_section]]=&quot;boolean&quot;
-: If set to @1@, the linked category name will direct users to an category list in the current section, otherwise category list from all sections is displayed.
-: Only link to articles from the current section. The @section@ attribute overrides this setting.
-: Values: @0@ (no, all sections) or @1@ (yes, this section only).
-: Default: @0@.
-; [[title]]=&quot;boolean&quot;
-: Whether to display category's title instead of its name.
-: Values: @0@ (no, display name) or @1@ (yes, display title).
-: Default: @0@.
-; [[type]]=&quot;category type&quot;
-: Values: @article@, @image@, @link@ or @file@.
-: Default: @article@.
-; [[url]]=&quot;boolean&quot;
-: Display plain URL or full link.
-: Values: @0@ (no) or @1@ (yes).
-: Default: @0@ (display title or full link, depending on @link@).
+* @link="boolean"@
+Whether to display as link. Works only in the _single_ tag, *not* in the _containing_ tag variant.
+Values: @0@ (no) or @1@ (yes).
+Default: @0@.
+* @name="category name"@
+Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [[Categories page]]. Also note that if you had called your category @My Category Name@ it becomes @my-category-name@ when used in tags.
+Default: unset (use current category).
+* @section="section name"@
+Restrict to articles from specified section(s).
+Values: (comma separated list of) section name(s).
+Default: current section (for backwards compatibility).
+* @this_section="boolean"@
+If set to @1@, the linked category name will direct users to an category list in the current section, otherwise category list from all sections is displayed.
+Only link to articles from the current section. The @section@ attribute overrides this setting.
+Values: @0@ (no, all sections) or @1@ (yes, this section only).
+Default: @0@.
+* @title="boolean"@
+Whether to display category's title instead of its name.
+Values: @0@ (no, display name) or @1@ (yes, display title).
+Default: @0@.
+* @type="category type"@
+Values: @article@, @image@, @link@ or @file@.
+Default: @article@.
+* @url="boolean"@
+Display plain URL or full link.
+Values: @0@ (no) or @1@ (yes).
+Default: @0@ (display title or full link, depending on @link@).
 
 h3. Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-; [[class]]=&quot;class name&quot;
-: HTML @class@ attribute, applied to @wraptag@. If no @wraptag@ is supplied (and @link="1"@), the @class@ is applied to the @<a>@ tag instead.
-: Default: unset (see [[class cross-reference]]).
-; [[wraptag]]=&quot;tag&quot;
-: HTML tag to wrap around output, specified without brackets (e.g., @wraptag="p"@).
-: Default: unset (but see [[wraptag cross-reference]] for exceptions).
+* @class="class name"@
+HTML @class@ attribute, applied to @wraptag@. If no @wraptag@ is supplied (and @link="1"@), the @class@ is applied to the @<a>@ tag instead.
+Default: unset (see [[class cross-reference]]).
+* @wraptag="tag"@
+HTML tag to wrap around output, specified without brackets (e.g., @wraptag="p"@).
+Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples
 

@@ -27,14 +27,14 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[default]]=&quot;value&quot;
-: Default value to use when field is empty.
-; [[escape]]=&quot;html&quot;
-: Escape HTML entities such as @<@, @>@ and @&@ prior to echoing the field contents.
-: Values: @html@ or unset.
-: Default: @html@;
-; [[name]]=&quot;fieldname&quot;
-: Display specified custom field.
+* @default="value"@
+Default value to use when field is empty.
+* @escape="html"@
+Escape HTML entities such as @<@, @>@ and @&@ prior to echoing the field contents.
+Values: @html@ or unset.
+Default: @html@;
+* @name="fieldname"@
+Display specified custom field.
 
 h2. Examples
 

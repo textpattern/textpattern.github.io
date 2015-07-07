@@ -12,9 +12,9 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[text]]=&quot;text&quot;
-: Text to display with the number of matches.
-: Default: @articles found@.
+* @text="text"@
+Text to display with the number of matches.
+Default: @articles found@.
 
 h2. Examples
 

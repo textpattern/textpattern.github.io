@@ -26,13 +26,13 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[name]]=&quot;category&quot;
-: Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the Category tab. Also note that if you had called your category 'My Category Name' it becomes @my-category-name@ when used in tags.
-: Default: unset.
-; [[number]]=&quot;number&quot;
-: match category in Category1 or Category2 (or both).
-: Values: @1@ or @2@.
-: Default: unset, causing both categories to be matched against the specified name.
+* @name="category"@
+Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the Category tab. Also note that if you had called your category 'My Category Name' it becomes @my-category-name@ when used in tags.
+Default: unset.
+* @number="number"@
+Match category in Category1 or Category2 (or both).
+Values: @1@ or @2@.
+Default: unset, causing both categories to be matched against the specified name.
 
 h2. Examples
 

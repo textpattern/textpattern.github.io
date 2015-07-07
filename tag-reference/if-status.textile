@@ -18,9 +18,9 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[status]]=&quot;number&quot;
-: Numerical "HTTP status code":https://en.wikipedia.org/wiki/List_of_HTTP_status_codes.
-: Default: @200@ (OK).
+* @status="number"@
+Numerical "HTTP status code":https://en.wikipedia.org/wiki/List_of_HTTP_status_codes.
+Default: @200@ (OK).
 
 h2. Examples
 

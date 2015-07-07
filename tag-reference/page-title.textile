@@ -18,9 +18,9 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[separator]]=&quot;character(s)&quot;
-: The character sequence you want between each piece of information.
-: Default: @:@ (a colon).
+* @separator="character(s)"@
+The character sequence you want between each piece of information.
+Default: @:@ (a colon).
 
 h2. Examples
 

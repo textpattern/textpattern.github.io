@@ -20,9 +20,9 @@ h3. Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-; [[class]]=&quot;class name&quot;
-: CSS class attribute to apply to the anchor. Will be ignored if used as a single tag.
-: Default: unset.
+* @class="class name"@
+CSS class attribute to apply to the anchor. Will be ignored if used as a single tag.
+Default: unset.
 
 h2. Examples
 

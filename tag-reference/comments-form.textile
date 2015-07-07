@@ -10,43 +10,43 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[forgetlabel]]=&quot;text&quot;
-: Label that appears next to the 'Forget' @checkbox@.
-: Default: @Forget@ (localised).
-; [[form]]=&quot;form name&quot;
-: Use specified form template.
-: Default: @comment_form@.
-; [[isize]]=&quot;integer&quot;
-: HTML @size@ attribute to be applied to the HTML form text @input@ fields.
-: Default: @25&@.
-; [[msgcols]]=&quot;integer&quot;
-: HTML @cols@ attribute to be applied to HTML form @textarea@ field.
-: Default: @25@.
-; [[msgrows]]=&quot;integer&quot;
-: HTML @rows@ attribute to be applied to HTML form @textarea@ field.
-: Default: @5@.
-; [[msgstyle]]=&quot;value&quot;
-: CSS inline @style@ attribute to be applied to HTML form @textarea@ field (recommended that you use CSS via @textarea@'s @class@ or @id@ attribute instead).
-; [[previewlabel]]=&quot;text&quot;
-: Label that appears on the 'Preview' button.
-: Default: @Preview@ (localised).
-; [[rememberlabel]]=&quot;text&quot;
-: Label that appears next to the 'Remember' @checkbox@.
-: Default: @Remember@ (localised).
-; [[submitlabel]]=&quot;text&quot;
-: Label that appears on the 'Submit' button.
-: Default: @Submit@ (localised).
+* @forgetlabel="text"@
+Label that appears next to the 'Forget' @checkbox@.
+Default: @Forget@ (localised).
+* @form="form name"@
+Use specified form template.
+Default: @comment_form@.
+* @isize="integer"@
+HTML @size@ attribute to be applied to the HTML form text @input@ fields.
+Default: @25&@.
+* @msgcols="integer"@
+HTML @cols@ attribute to be applied to HTML form @textarea@ field.
+Default: @25@.
+* @msgrows="integer"@
+HTML @rows@ attribute to be applied to HTML form @textarea@ field.
+Default: @5@.
+* @msgstyle="value"@
+CSS inline @style@ attribute to be applied to HTML form @textarea@ field (recommended that you use CSS via @textarea@'s @class@ or @id@ attribute instead).
+* @previewlabel="text"@
+Label that appears on the 'Preview' button.
+Default: @Preview@ (localised).
+* @rememberlabel="text"@
+Label that appears next to the 'Remember' @checkbox@.
+Default: @Remember@ (localised).
+* @submitlabel="text"@
+Label that appears on the 'Submit' button.
+Default: @Submit@ (localised).
 
 h3. Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-; [[class]]=&quot;CSS class name&quot;
-: HTML @class@ to apply to the @wraptag@ attribute value.
-: Default: @comments_form@ (see [[class cross-reference]]).
-; [[wraptag]]=&quot;tag&quot;
-: HTML tag to wrap around output, specified without brackets (e.g., @wraptag="p"@).
-: Default: unset (but see [[wraptag cross-reference]] for exceptions).
+* @class="CSS class name"@
+HTML @class@ to apply to the @wraptag@ attribute value.
+Default: @comments_form@ (see [[class cross-reference]]).
+* @wraptag="tag"@
+HTML tag to wrap around output, specified without brackets (e.g., @wraptag="p"@).
+Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Examples
 

@@ -16,8 +16,8 @@ h2. Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-; [[name]]=&quot;section&quot;
-: Comma-separated list of section names. For the default section, either use the text @default@ or a single comma @,@ (for example, both @name=", other_section"@ and @name="default, other_section"@ are equivalent).
+* @name="section"@
+Comma-separated list of section names. For the default section, either use the text @default@ or a single comma @,@ (for example, both @name=", other_section"@ and @name="default, other_section"@ are equivalent).
 
 h2. Examples
 
