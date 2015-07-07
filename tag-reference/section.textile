@@ -32,10 +32,10 @@ h3. Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class]]="class name"@
+* @class="class name"@
 HTML @class@ to apply to the @wraptag@ attribute value. If no wraptag is supplied (and @link="1"@), the class is applied to the anchor instead.
 Default: unset (see [[class cross-reference]]).
-* @wraptag]]="element"@
+* @wraptag="element"@
 HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
