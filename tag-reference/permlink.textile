@@ -66,9 +66,9 @@ bc. <txp:permlink class="awesome-article">
     <txp:title />
 </txp:permlink>
 
-By default @<txp:permlink />@ returns only a very basic link, which doesn't allow for customizing the link title, or adding a CSS class, etc. Using the tag in its single tag capacity opens up a lot more possibilities.
+By default @<txp:permlink />@ returns only a very basic link, which doesn't allow for customising the link title, or adding a CSS class, etc. Using the tag in its single tag capacity opens up a lot more possibilities.
 
-For example, to have the permanent link have an HTML title attribute of the article's title, and also apply a class to it named "orange":
+For example, to have the permanent link have an HTML @title@ attribute of the article's title, and also apply a @class@ to it:
 
 bc. <a class="awesome-article" href="<txp:permlink />">
     <txp:title />

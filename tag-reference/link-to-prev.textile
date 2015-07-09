@@ -39,7 +39,7 @@ p(alert-block information). Note: While @showalways@ will enable this tag to dis
 
 h3. Example 3: Customising links
 
-The container tag returns only a very basic link, which doesn't allow for customizing the link title, or adding a CSS class, etc. Using the tag in its single tag capacity opens up a lot more possibilities.
+The container tag returns only a very basic link, which doesn't allow for customising the link title, or adding a CSS class, etc. Using the tag in its single tag capacity opens up a lot more possibilities.
 
 For example, to give the link an HTML @title@ attribute of the previous article's title, and also apply a @class@ to it:
 
