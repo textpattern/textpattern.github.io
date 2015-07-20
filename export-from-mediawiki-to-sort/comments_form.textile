@@ -1,0 +1,191 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:comments_form />
+
+
+The "comments&#95;form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form tag is a _single_ tag which is used to display a comment form. Comments will be attached to present individual article as a default, or to the article set by the “id” attribute.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“CSS class name”*
+ CSS class attribute to be applied to
+
+bc(code). wraptag
+
+
+. Default:
+
+bc(code). comments_form
+
+
+. *"forgetlabel":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#forgetlabel=“text”*
+ Label that appears next to the *_Forget_* checkbox. Default:
+
+bc(code). Forget
+
+
+(localised). *"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“form name”*
+ Use specified form. Default:
+
+bc(code). comment_form
+
+
+. *"isize":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#isize=“integer”*
+ HTML _size_ attribute to be applied to the HTML form input. Default:
+
+bc(code). 25
+
+
+. *"msgcols":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#msgcols=“integer”*
+ HTML cols attribute to be applied to HTML form textarea output. Default:
+
+bc(code). 25
+
+
+. *"msgrows":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#msgrows=“integer”*
+ HTML rows attribute to be applied to HTML form textarea output. Default:
+
+bc(code). 5
+
+
+. *"msgstyle":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#msgstyle=“value”*
+ CSS inline _style_ attribute to be applied to HTML form textarea output. Recommended that you use CSS via textarea's class or id attribute instead. *"previewlabel":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#previewlabel=“text”*
+ Label that appears on the *_Preview_* button. Default:
+
+bc(code). Preview
+
+
+(localised). *"rememberlabel":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#rememberlabel=“text”*
+ Label that appears next to the *_Remember_* checkbox. Default:
+
+bc(code). Remember
+
+
+(localised). *"show&#95;preview":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#show_preview=“boolean”*
+ Whether to display an automatic preview, regardless of whether or not youâ€™ve also used a comments&#95;preview tag. See "reference":http://textpattern.com/releases/215/comment-input-form-changes. Values:
+
+bc(code). 1
+
+
+(yes),
+
+bc(code). 0
+
+
+(no) or
+
+bc(code). unset
+
+
+(depends on the previous comment&#95;preview tag). Default:
+
+bc(code). unset
+
+
+. *"submitlabel":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#submitlabel=“text”*
+ Label that appears on the *_Submit_* button. Default:
+
+bc(code). Submit
+
+
+(localised). *"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag”*
+ HTML tag (without brackets) to wrap around output. Default: unset.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1give_visitors_indication_of_comments_status). Example 1: Give visitors indication of //Comments// status
+
+Comments for articles can be turned off or on at the author's discretion for any article that is published; by using the following scheme in an article form, you can still have the on/off control over comments while still giving users indication of comment status.
+
+bc(code). <txp:if_comments_allowed>
+   <txp:comments_form />
+<txp:else />
+   <p>Comments are turned off for this article.</p>
+</txp:if_comments_allowed>
+
+
+Other tags used: "if&#95;comments&#95;allowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments_allowed, "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else
+
+h4(#example_2text_area_changes_in_preview). Example 2: Text area changes in preview
+
+Using some conditional tags the size of the comment input text area can be changed in the preview.
+
+bc(code). <txp:if_comments_preview>
+    <txp:comments_preview form="comments" />
+    <p style="color:red;">This is just a preview of your comment!</p>
+    <txp:comments_form isize="30" msgcols="55" msgrows="5" />
+<txp:else />
+    <txp:if_comments_allowed>
+        <txp:comments_form isize="30" msgcols="55" msgrows="15" />
+    </txp:else />
+        <p>Comments are turned off for this article.</p>
+    </txp:if_comments_allowed>
+</txp:if_comments_preview>
+
+
+Other tags used: "comments&#95;preview":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_preview, "if&#95;comments&#95;allowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments_allowed, "if&#95;comments&#95;preview":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments_preview, "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else
+
+h4(#example_3display_conditional_comments_and_form). Example 3: Display conditional comments and form
+
+*Tags*
+
+bc(code). <txp:if_comments_allowed>
+    <txp:comments form="lineitem" break="li" wraptag="ul" breakclass="special" />
+    <txp:comments_form />
+</txp:if_comments_allowed>
+
+
+*Form (lineitem) Type(comment)*
+
+bc(code). <small><txp:comment_id /></small>
+
+
+*Styles could go this way*
+
+bc(code). .special
+{
+        display:list-item;
+        list-style-type:none;
+}
+
+
+*What it does...*
+ For the current article, returns a list of id numbers for comments and a comment input form, but only if comments are currently allowed.
+
+Other tags used: "comment&#95;id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_id, "comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments, "if&#95;comments&#95;allowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments_allowed
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_450). Version 4.5.0
+
+<ul>
+<li><p>Added</p>
+bc(code). forgetlabel
+
+
+<p>,</p>
+bc(code). previewlabel
+
+
+<p>,</p>
+bc(code). rememberlabel
+
+
+<p>, and</p>
+bc(code). submitlabel
+
+
+<p>attributes</p></li>
+</ul>
+
+h4(#version_404). Version 4.0.4
+
+<ul>
+<li>bc(code). show_preview
+
+
+<p>added</p></li>
+</ul>
+

@@ -1,0 +1,197 @@
+\nA few basic guidelines, hints and example to help ensure you walk through the plugin development paces with confidence.
+
+h3(sectionedit1#the_rules). The rules
+
+<ol>
+<li>Make sure (within reason) someone else hasn't already made the plugin you want to create. (Point here is you may not want to reinvent the wheel, especially if it's a popular wheel.)</li>
+<li>*All plugins must use a prefix*, so make sure to reserve one in "registered&#95;textpattern&#95;developer&#95;prefixes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=registered_textpattern_developer_prefixes (do *not* use someone elses) and apply it in the following places:
+<ul>
+<li>names of PHP classes, functions and global variables in the plugin's code</li>
+<li>database table and indices names</li>
+<li><p>names of stored preferences in the _txp&#95;prefs_ table and/or the</p>
+bc(code). $prefs array;
+
+</li>
+<li>any global JavaScript variables or function names you use for either modifying the backend or adding features to the frontend.</li>
+<li>IDs and (to some extent) classes of HTML elements you add to the backend interface. The exception to this is if an element of your markup is logically similar to an already existing core element and you wish it to be styled in the same way by themes. Doing this saves theme authors from having to write specific rules to target your plugin's markup</li>
+<li><p>URL parameter names (Replace</p>
+bc(code). ?foo=bar&baz=1
+
+
+<p>with</p>
+bc(code). ?abc_foo=bar&abc_baz=1
+
+
+<p>where</p>
+bc(code). abc
+
+
+<p>would be your own prefix)</p></li>
+</ul>
+</li>
+<li>Many plugins are public-side, creating new tags to be used that will come in contact with the website visitor. These don't have much in the way of requirements, so they are great when getting started with developing for Textpattern</li>
+<li>Get your feet wet with “Textpattern's way”, and use its functions when appropriate, rather than re-invent what already works efficiently. We want to emulate Textpattern as we expand its capabilities, otherwise we run the risk of the plugin feeling foreign or out of place. Additionally, some functions are in place to assist with keeping Textpattern secure, and working regardless of host server settings.</li>
+<li>Try and provide detailed instructions (and possibly examples) for the help section of your plugin. A plugin that nobody knows how to use, isn't very useful. The "creating&#95;plugin&#95;help&#95;guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=creating_plugin_help_guidelines document provides a template to ensure your help section looks consistent and properly formatted.</li>
+<li>Some helper functions can be found in the “lib” folder:
+<ul>
+<li>*txplib&#95;db.php*: for interacting with the Textpattern database</li>
+<li>*txplib&#95;forms.php*: to help build various HTML form elements</li>
+<li>*txplib&#95;html.php*: to help build other various HTML elements</li>
+<li>*txplib&#95;misc.php*: various “miscellaneous” functions</li>
+</ul>
+</li>
+</ol>
+
+h3(sectionedit2#callbacks). Callbacks
+
+Textpattern makes extensive use of callbacks. Hook into these known points to choose where and when your plugins run. For more information, please see:
+
+* "using&#95;callbacks&#95;in&#95;between&#95;plugins&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=using_callbacks_in_between_plugins
+* The "core&#95;callback&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=core_callback_list
+
+h3(sectionedit3#plugin_lifecycle_management_prefs). Plugin lifecycle management &amp; prefs
+
+From Textpattern 4.2.0 onwards, plugins can opt into receiving
+
+bc(code). plugin_prefs.abc_my_plugin_name
+
+
+and
+
+bc(code). plugin_lifecycle.abc_my_plugin_name
+
+
+events. This opt-in is signalled to the core by raising the appropriate bits in
+
+bc(code). $plugin['flags']
+
+
+.
+
+bc(code). PLUGIN_LIFECYCLE_NOTIFY
+
+
+and
+
+bc(code). PLUGIN_HAS_PREFS
+
+
+are human-readable defined bit masks for your coding pleasure. Use them in any appropriate orâ€™ed combination (PLUGIN&#95;LIFECYCLE&#95;NOTIFY &#124; PLUGIN&#95;HAS&#95;PREFS etc).
+
+Once you have flagged your intention to use the events, you use the standard register&#95;callback system to invoke your own code when the event fires:
+
+bc(code). register_callback('my_prefs_page', 'plugin_prefs.abc_my_plugin_name');
+
+
+or
+
+bc(code). register_callback('my_install_routine',
+   'plugin_lifecycle.abc_my_plugin_name', 'installed'); register_callback('my_delete_routine',
+   'plugin_lifecycle.abc_my_plugin_name', 'deleted');
+register_callback('my_enable_routine',
+   'plugin_lifecycle.abc_my_plugin_name', 'enabled');;
+register_callback('my_disable_routine', 
+   'plugin_lifecycle.abc_my_plugin_name', 'disabled');
+
+
+It is worth noting that Textpattern reserves the lower twelve bits of
+
+bc(code). $plugin['flags']
+
+
+for its own use, plugin authors may take advantage of the remaining four (
+
+bc(code). ~PLUGIN_RESERVED_FLAGS
+
+
+). These might come in handy to trigger some one-time actions, as these bits are copied into the txp&#95;plugin table row for any particular plugin whenever it is uploaded.
+
+h3(sectionedit4#altering_admin_side_markuppluggable_ui). Altering admin side markup: pluggable&#95;ui()
+
+Introduced in Textpattern 4.2.0, the
+
+bc(code). pluggable_ui()
+
+
+callback system enables plugin authors greater and more efficient control over the admin side user interface. To add or alter elements in previous versions you had to resort to javascript, messy find and replace techniques, or hacking core files.
+
+h4(#removing_admin_side_elements). Removing admin side elements
+
+If you wanted to remove the _keywords_ field from the Write tab you could hook into the 'keywords' step of the Write tab. Do the following in a plugin:
+
+<pre class="code">
+register_callback('abc_remove_keywords', 'article_ui', 'keywords');
+
+function abc_remove_keywords($event, $step, $data, $rs) {
+   return ' ';
+}
+</pre>
+
+That's it! If your function returns anything at all (note we return a space character here) then the default markup is dropped in favour of your own markup.
+
+In reality, you probably wouldn't want to do something this drastic unless you were sure there were no other plugins that targeted the keywords field  -  these plugins would fail if they couldn't find the element you'd destroyed. A safer alternative would be to hide the element via the CSS
+
+bc(code). display:none
+
+
+. If this is a problem for you and you feel you must delete the element, you could set your plugin to run at a lower priority (above 5) so the other plugin can render its own markup before you zap the keywords field.
+
+h4(#adding_your_own_elements). Adding your own elements
+
+To add something to the interface you can use pluggable&#95;ui() like this:
+
+<pre class="code">
+register_callback('abc_add_text', 'article_ui', 'extend_col_1');
+
+function abc_add_text($event, $step, '', $rs) {
+   return 'Hello world!';
+}
+</pre>
+
+That adds the text to the interface immediately below the Textile Help link: that is where the
+
+bc(code). extend_col_1
+
+
+step puts its markup. Note that there is no 3rd argument this time because there is no default content to alter.
+
+Another way to add elements is to add them to existing markup. For example, to add the url&#95;title below the article's Title:
+
+<pre class="code">
+register_callback('abc_append_item', 'article_ui', 'title');
+
+function abc_append_item($event, $step, $data, $rs) {
+   $urlttl = isset($rs['url_title']) ? '&lt;br/&gt;'.$rs['url_title'] : '';
+
+   return $data.$urlttl;
+}
+</pre>
+
+Notice we return the default markup (
+
+bc(code). $data
+
+
+) and tack on our own markup which we read from the record set that was passed to our function.
+
+h4(#changing_elements). Changing elements
+
+The final mechanism for altering data is good old fashioned search 'n' replace by looking in the default markup for particular items to change. This is the least robust mechanism but it can be very useful at times:
+
+<pre class="code">
+register_callback('abc_altered_status', 'article_ui', 'status');
+
+function abc_altered_status($event, $step, $data, $rs) {
+
+   $stat = isset($rs['Status']) ? $rs['Status'] : '';
+
+   $new_status = n.t.'&lt;li&gt;'.radio('Status', 6, ($stat == 6) ? 1 : 0, 'status-6').'&lt;label for=&quot;status-6&quot;&gt;Velcro&lt;/label&gt;&lt;/li&gt;';
+
+   $data = str_replace('&lt;/ul&gt;', $new_status.'&lt;/ul&gt;', $data);
+
+   return $data;
+}
+</pre>
+
+One new status radio button is added to the existing set.
+

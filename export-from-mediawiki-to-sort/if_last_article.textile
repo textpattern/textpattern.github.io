@@ -1,0 +1,32 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_last_article>
+
+
+The "if&#95;last&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_article tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_last_article>
+...conditional statement...
+</txp:if_last_article>
+
+
+The tag will execute the contained statements if the displayed article is the last in the currently displayed list. It will display in both single article and article list modes. Should be used in an article form.
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1add_an_image_after_the_last_article_in_a_list). Example 1: Add an image after the last article in a list
+
+bc(code). <h3><txp:permlink><txp:title /></txp:permlink> · <txp:posted /> by <txp:author /></h3>
+<txp:body />
+<txp:comments_invite wraptag="p" />
+<txp:if_last_article>
+<img src="/images/footer.jpg" />
+</txp:if_last_article>
+
+
+Other tags used: "permlink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlink, "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title, "posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted, "author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author, "body":/home/www/zendstudio/dokuwiki/bin/doku.php?id=body, "comments&#95;invite":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_invite
+

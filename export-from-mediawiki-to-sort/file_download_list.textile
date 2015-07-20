@@ -1,0 +1,183 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:file_download_list />
+
+
+The "file&#95;download&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list tag is a _single_ or a _container_ tag which is used to produce a list of download links according to the given attributes. Each file in the list is formatted by the file tags used in the given form (default is the
+
+bc(code). files
+
+
+form).
+
+If used as a container, it must be specified as an opening and closing pair of tags, like this:
+
+bc(code). <txp:file_download_list>
+...contained statements...
+</txp:file_download_list>
+
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#author=“author login name”*
+ Restrict to files with the specified author. Default: unset. *"auto&#95;detect":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#auto_detect=“string context”*
+ List of Textpattern contexts to consider when automatically searching for files. If you wish to turn off the automatic check, set this to *auto&#95;detect=““*. You can choose from the following contexts: *category* to look in the URL for a category list *author* to look in the URL for an author list Default: *category, author* *"category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#category=“category name”*
+ Restrict to files from the specified category. Allows a comma separated list of category names. Note: category names may be different to the Title you typed when you created the category, as the names are sanitized for URL use. Check the "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories tab to ensure you are using the correct names Default: unset. *"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“form name”*
+ Use the specified form to process the files. Default:
+
+bc(code). files
+
+
+. *"id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#id=“file ID”*
+ Display the specific file or list of files. Value: (comma separated list of) file ID(s). Default: unset. *"limit":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#limit=“integer”*
+ Number of files to display. Default is
+
+bc(code). 10
+
+
+. *"offset":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#offset=“integer”*
+ Number of files to skip. Default: unset. *"pageby":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#pageby=“integer or &lt;code&gt;limit&lt;/code&gt;”*
+ Number of files to jump each page. Without this attribute, you cannot navigate using the "newer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=newer and [older]] tags. Usually you will want to track the
+
+bc(code). limit
+
+
+attribute. Use
+
+bc(code). pageby="limit"
+
+
+to do this, which means you will not have to amend two values if you subsequently decide to alter the
+
+bc(code). limit
+
+
+Default: unset *"realname":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#realname=“author real name”*
+ Restrict to files with the specified author name. Default: unset. *"sort":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#sort=“by what and order”*
+ How to sort the resulting list. Values:
+
+bc(code). id
+
+
+bc(code). filename
+
+
+bc(code). title
+
+
+bc(code). category
+
+
+bc(code). description
+
+
+bc(code). downloads
+
+
+bc(code). created
+
+
+bc(code). modified
+
+
+bc(code). rand()
+
+
+("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand). Adding a space and then one of either
+
+bc(code). asc
+
+
+or
+
+bc(code). desc
+
+
+orders by ascending or descending value, respectively. Default:
+
+bc(code). filename asc
+
+
+. *"status":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#status=“file status”*
+ Restrict to files with the specified status. Values:
+
+bc(code). hidden
+
+
+,
+
+bc(code). pending
+
+
+,
+
+bc(code). live
+
+
+. Default:
+
+bc(code). live
+
+
+.
+
+"common&#95;presentational&#95;attributes":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_presentational_attributes
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_the_ten_most_popular_downloads). Example 1: Display the ten most popular downloads
+
+bc(code). <txp:file_download_list limit="10" break="li" wraptag="ul" sort="downloads desc" />
+
+
+*Styles could go this way*
+
+bc(code). .file_download_list
+{
+    list-style-type:none;
+}
+
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_430). Version 4.3.0
+
+<ul>
+<li>bc(code). pageby
+
+
+<p>attribute added to enable paging via "newer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=newer and "older":/home/www/zendstudio/dokuwiki/bin/doku.php?id=older</p></li>
+<li>bc(code). author
+
+
+<p>and</p>
+bc(code). realname
+
+
+<p>attributes added</p></li>
+<li>bc(code). auto_detect
+
+
+<p>added to allow automatic (URL-based) contextual listings</p></li>
+</ul>
+
+h4(#version_420). Version 4.2.0
+
+<ul>
+<li><p>New attribute</p>
+bc(code). id
+
+
+<p>.</p></li>
+</ul>
+
+h4(#version_407). Version 4.0.7
+
+* Can be used as a container tag.
+
+h4(#version_406). Version 4.0.6
+
+* support added for comma separated list for category attribute
+

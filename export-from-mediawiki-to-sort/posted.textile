@@ -1,0 +1,115 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:posted />
+
+
+The "posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted tag is a _single_ tag which is used to return the publish date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields on the "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences tab.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“class name”*
+ CSS class name which will be applied to the
+
+bc(code). wraptag
+
+
+element. Default: unset. *"format":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#format=“format string”*
+ Override the default date format set in the preferences. Values: any valid "strftime()":http://php.net/strftime string values,
+
+bc(code). since
+
+
+,
+
+bc(code). [[http://en.wikipedia.org/wiki/ISO_8601|iso8601]]
+
+
+,
+
+bc(code). w3cdtf
+
+
+, or
+
+bc(code). [[http://www.w3.org/Protocols/rfc822/#z28|rfc822]]
+
+
+. Default: unset (date format set via preferences). *"gmt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#gmt=“boolean”*
+ Return either local time  -  according to the set time zone preferences  -  or GMT. Values:
+
+bc(code). 0
+
+
+(local time) or
+
+bc(code). 1
+
+
+(GMT). Default:
+
+bc(code). 0
+
+
+. *"lang":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#lang=“ISO language code”*
+ Format time string suitable for the specified language (locale). Values: locales adhere to "ISO-639":http://www.loc.gov/standards/iso639-2/php/code_list.php. Default: unset (time format set via preferences). *"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag”*
+ HTML tag surrounding the posted date, without brackets. Default: unset.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1since_format_date_setting). Example 1: &quot;since&quot; format date setting
+
+bc(code). <p>Posted: <txp:posted format="since" /></p>
+
+
+would result in:
+
+bc(code). <p>Posted: 29 days ago</p>
+
+
+h4(#example_2custom_format_date_setting). Example 2: Custom format date setting
+
+bc(code). <p>Posted: <txp:posted format="%b %d, %Y" /></p>
+
+
+would result in:
+
+bc(code). <p>Posted: Sep 18, 2008</p>
+
+
+h4(#example_3extended_custom_format_date_setting). Example 3: Extended custom format date setting
+
+bc(code). <p>Posted: 
+<txp:posted format="%Y" wraptag="span" class="year" />
+<txp:posted format="%B" wraptag="span" class="month" />
+<txp:posted format="%e" wraptag="span" class="day" />
+</p>
+
+
+would result in:
+
+bc(code). <p>Posted: 
+<span class="year">2008</span>
+<span class="month">Sep</span>
+<span class="day">18</span>
+</p>
+
+
+This provides styling hooks for each date part.
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_404). Version 4.0.4
+
+<ul>
+<li>bc(code). class
+
+
+<p>and</p>
+bc(code). wraptag
+
+
+<p>added</p></li>
+</ul>
+

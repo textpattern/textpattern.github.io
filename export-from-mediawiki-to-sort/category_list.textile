@@ -1,0 +1,206 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:category_list />
+
+
+The "category&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list tag can be used as either a _single_ tag or _container_ tag which is used to produce a list of linked categories.
+
+h4(#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"active&#95;class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#active_class=“class name” (Only works in the _single_ tag without the &lt;code&gt;form&lt;/code&gt; attribute. For setting an active class in the _container_ tag see example 3.)*
+ "HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to the “active” or current link in a list. Default: unset. *"categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#categories=“category name(s)”*
+ Comma-separated list of categories to include, displayed in the order specified (unless overridden by
+
+bc(code). sort
+
+
+attribute). Use category names not Titles here  -  note that Textpattern automatically converts the names to lower case and converts spaces to hyphens when they are created Default: unset (all categories). *"children":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#children=“boolean”*
+ Can limit the list depth to one level below the parent category. Values:
+
+bc(code). 0
+
+
+(no children, i.e. only show one level below the parent) or
+
+bc(code). 1
+
+
+(all nested categories). Default:
+
+bc(code). 1
+
+
+*"exclude":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#exclude=“category name(s)”*
+ List of category names which will be excluded from the list.
+
+bc(code). categories
+
+
+takes precendence over
+
+bc(code). exclude
+
+
+. Default: unset. *"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“form name”*
+ Use the specified form to process each included category. *"parent":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#parent=“category name”*
+ Return only specified category and its “children” categories. *"section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#section=“section name”*
+ Link to specified section. Default: unset, resulting in links without section restriction. *"sort":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#sort=“sort value(s)”*
+ How to sort the resulting list. Values:
+
+bc(code). id
+
+
+bc(code). name
+
+
+bc(code). type
+
+
+bc(code). parent
+
+
+bc(code). title
+
+
+bc(code). rand()
+
+
+("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand) Default:
+
+bc(code). name asc
+
+
+. *"this&#95;section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#this_section=“boolean”*
+ Link to currently active section (overrides
+
+bc(code). section
+
+
+attribute). Values:
+
+bc(code). 0
+
+
+(no) or
+
+bc(code). 1
+
+
+(yes). Default:
+
+bc(code). 0
+
+
+. *"type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#type=“category type”*
+ Available values:
+
+bc(code). article
+
+
+,
+
+bc(code). image
+
+
+,
+
+bc(code). link
+
+
+,
+
+bc(code). file
+
+
+. Default:
+
+bc(code). article
+
+
+.
+
+"common&#95;presentational&#95;attributes":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_presentational_attributes
+
+h3(sectionedit1#examples). Examples
+
+h4(#example_1labelled_category_list). Example 1: Labelled category list
+
+bc(code). <txp:category_list label="Categories" wraptag="p" break="br" />
+
+
+h4(#example_2as_an_unordered_list). Example 2: As an unordered list
+
+bc(code). <txp:category_list break="li" wraptag="ul" />
+
+
+*Styles could go this way*
+
+bc(code). .category_list {
+     list-style-type:none;
+}
+
+
+h4(#example_3set_active_class_using_the_container_tag). Example 3: Set active class using the container tag
+
+This code will add
+
+bc(code). class="active"
+
+
+to the
+
+bc(code). <nowiki><li></nowiki>
+
+
+element around the “current” category in the list.
+
+bc(code). <txp:category_list wraptag="ul" break="">
+<li<txp:if_category name='<txp:category />'> class="active"</txp:if_category>>
+<txp:category title="1" link="1" />
+</li>
+</txp:category_list>
+
+
+h3(sectionedit2#genealogy). Genealogy
+
+h4(#version_407). Version 4.0.7
+
+<ul>
+<li>Can be used as a container tag.</li>
+<li>bc(code). form
+
+
+<p>and</p>
+bc(code). children
+
+
+<p>attributes added.</p></li>
+</ul>
+
+h4(#version_404). Version 4.0.4
+
+<ul>
+<li>bc(code). active_class
+
+
+<p>,</p>
+bc(code). categories
+
+
+<p>,</p>
+bc(code). exclude
+
+
+<p>,</p>
+bc(code). section
+
+
+<p>,</p>
+bc(code). this_section
+
+
+<p>added.</p></li>
+</ul>
+

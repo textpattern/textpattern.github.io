@@ -1,0 +1,11 @@
+\nThis page will serve as a link index to other pages falling under the Expanded Examples and Case Studies category. Subcategories might include new Tag use, Plugin use, descriptions of cool techniques achieved in sites, whatever. Should be noted that core functionality should always be preferred over plugin use to achieve a given function or ability, whenever possible.
+
+h3(sectionedit1#tag_use_case_studies). Tag Use Case Studies
+
+Ideas could be pulled from "Tag Examples forum":http://forum.textpattern.com/viewforum.php?id=27 , or anything from the FAQ "Common How Do I Questions":http://textpattern.com/faq/147/common-how-do-i-questions section that needs further elaboration (*again, user case studies*).
+
+* "archive&#95;pages&#95;using&#95;core&#95;tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=archive_pages_using_core_tags
+* etc.
+
+h3(sectionedit2#other_subcategory_of_case_study_topics). Other Subcategory of Case Study Topics?
+

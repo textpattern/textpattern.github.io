@@ -1,0 +1,46 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_expired>
+
+
+The "if&#95;expired":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expired tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_expired>
+...conditional statement...
+</txp:if_expired>
+
+
+The tag will execute the contained statements, if a particular article is expired. Should be used in an article form.
+
+For more on this tag see its announcement, "So, youâ€™d like to stick a â€œBest Beforeâ€? label on those articles?":http://textpattern.com/weblog/327/so-youd-like-to-stick-a-best-before-label-on-those-articles
+
+h3(sectionedit1#attributes). Attributes
+
+None.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1show_when_article_has_or_will_expire). Example 1: Show when article has (or will) expire
+
+bc(code). <txp:if_expired>
+This article is already expired. It expired <txp:expires />.
+<txp:else />
+This page isn't expired. It expires <txp:expires />.
+</txp:if_expired>
+
+
+Other tags used: "expires":/home/www/zendstudio/dokuwiki/bin/doku.php?id=expires
+
+h3(sectionedit3#related). Related
+
+Related tags are:
+
+* "expires":/home/www/zendstudio/dokuwiki/bin/doku.php?id=expires
+* "if&#95;expires":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expires
+
+h3(sectionedit4#genealogy). Genealogy
+
+h4(#version_407). Version 4.0.7
+
+* tag added
+

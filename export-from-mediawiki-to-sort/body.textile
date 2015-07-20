@@ -1,0 +1,26 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:body />
+
+
+The "body":/home/www/zendstudio/dokuwiki/bin/doku.php?id=body tag is a _single_ tag which is used to return the text, or content, of the article being displayed (the article itself). The tag can be used in an article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, or within "pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages (templates), either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list).
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_the_article_text). Example 1: Display the article text
+
+bc(code). <h3><txp:title /></h3>
+<div class="post">
+    <p><txp:author /> @ <txp:posted /></p>
+    <txp:body />
+</div>
+
+
+When used as part of your article form, this displays the article title, author and posted date, then the body text beneath that.
+
+Other tags used: "author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author, "posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted, "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title
+

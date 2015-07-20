@@ -1,0 +1,68 @@
+\n"work&#95;in&#95;progress":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=work_in_progress This is a workflow perspective of the "admin-side":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin-side in context of building a small, arbitrary website with five navigational sections (homepage, about, blog, archive, and contact). The aim is to show you where things are done in the admin-side, and in what order, more than to show you how to do them. The _how_ of things is covered elsewhere in the documentation. To that end, each stage of the workflow provides suggested reading (where relevant, and within reason) for more on a given topic, and how to get more power out of admin-side panels via key admin plugins.
+
+Our journey begins with having just finished "installing a new version of Textpattern":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ftp_installation, and we're logging in for the first time.
+
+h3(sectionedit1#language_selection). Language selection
+
+When you first login, Textpattern takes you to the "language&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences screen to set your working language. You install the language you want, and save the change.
+
+The only time you'll ever _need_ to go to the Languages preference screen again is when upgrading your installation. At each upgrade, Textpattern guides you to reset your language file.
+
+*Recommended reading:*
+
+* "sed&#95;cleaner":https://github.com/netcarver/sed_cleaner (Plugin for one-time use immediately after setting language in a new installation. In one pass, it removes obsolete admin-side features and example content, and resets ID numbers for content types, among other nice things.)
+
+h3(sectionedit2#system_security_and_troubleshooting). System security and troubleshooting
+
+The next step is to go the "diagnostics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics panel where you'll see a few items in red that need clearing up following a new install. New install errors are standard procedure to let you know to delete the setup folder (if you haven't already), and to create write permissions on the _tmp_ and _files_ folders in the "file tree":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ftp_installation_and_upgrading#file_tree. The error diagnostics will be explanatory about what you need to do in each case.
+
+h3(sectionedit3#user_accounts). User accounts
+
+Since user accounts are rather important for being able to do anything at all, it makes sense to go have a look at the "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users panel next. Here is where you change your password and email address. And if other users will have access to the admin-side, this is where you'll create and edit their account details too, including "user&#95;roles&#95;and&#95;permissions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions.
+
+*Recommended reading:*
+
+* "smd&#95;faux&#95;role":http://textpattern.org/plugins/1159/smd_faux_role (Plugin for testing which user roles grant or restrict permission to which parts of the Textpattern administration, without needing to create roles and logging out and back in.)
+* "rah&#95;change&#95;passwords":http://rahforum.biz/plugins/rah_change_passwords (Plugin allowing direct password management. Avoids the system generating random passwords and sending them by email.)
+* "smd&#95;bio":http://textpattern.org/plugins/1116/smd_bio (Plugin that extends user account data collected and stored for custom output. _E.g._, team profiles.)
+* "smd&#95;user&#95;manager":http://textpattern.org/plugins/1229/smd_user_manager (Plugin providing user, group, and privilege management capabilities. Integrates with smd&#95;bio.)
+
+h3(sectionedit4#site_identity_and_default_configurations). Site identity and default configurations
+
+With your installation secure, and your password in place, you should set a few defaults that will influence the website's identity and base-line publishing behaviour. You do this in "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences, which is the default screen of the _Preferences_ panel. The other two screens being "advanced&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences and "language&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences, the latter you've already been to.
+
+*Recommended reading:*
+
+* "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences
+* "advanced&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences
+
+h3(sectionedit5#establishing_site_structure_and_design). Establishing site structure and design
+
+You're now ready to start assembling your basic site structure. As mentioned at the start, we'll demonstrate the workflow by setting up the home page, a blog section, and a basic archive for blog articles.
+
+"pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages, "styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles, "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections
+
+h3(sectionedit6#building_publishing_behaviour). Building publishing behaviour
+
+[Categories, Forms, Tag builders] (adding in the publishing architecture to the layout in #3)
+
+h3(sectionedit7#managing_content). Managing content
+
+[Write, Articles, Images, Links, Files, comments] (routine publishing for the Blog in #3; invent a simple scenario)
+
+h3(sectionedit8#extending_with_plugins). Extending with plugins
+
+[Plugins, Extensions, etc] (highlight some popular plugins used in relation to the topics already covered; e.g., discussion of smd&#95;bio/smd&#95;user&#95;manager in relation of user accounts)
+
+h3(sectionedit9#monitoring_referrers). Monitoring referrers
+
+"visitor&#95;logs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs
+
+*Recommended reading:*
+
+* "rah&#95;unlog&#95;me":http://rahforum.biz/plugins/rah_unlog_me (Plugin that removes the administrators IP, and any others defined, so their site visits don't show up in visitor logs. Result is a more representative reflection of actual referrers that count.)
+
+h3(sectionedit10#similar_reading). Similar reading
+
+* "Textpattern quickstart":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_quickstart:hello_world
+

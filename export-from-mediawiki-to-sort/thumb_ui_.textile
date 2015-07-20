@@ -1,0 +1,22 @@
+\n
+
+h3(sectionedit1#name). Name
+
+thumb&#95;ui()
+
+h3(sectionedit2#purpose). Purpose
+
+Renders user interface form elements for the thumbnail generator on the “admin &gt; image” tab when "GD":http://www.boutell.com/gd/ is built into PHP.
+
+h3(sectionedit3#inputs). Inputs
+
+None.
+
+h3(sectionedit4#outputs). Outputs
+
+HTML markup for the thumbnail's dimensions and “Create” button.
+
+h3(sectionedit5#examples). Examples
+
+Not useful as a standalone function.
+

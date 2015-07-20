@@ -1,0 +1,125 @@
+\n"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Function Editing Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_function_editing_reference &#124; "txp&#95;defined&#95;functions&#95;by&#95;file&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions_by_file &#124; "TXP Defined Functions (Alphabetically)":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions
+
+h3(sectionedit1#about_editing_function_pages). About Editing Function Pages
+
+All function pages should have a similar look and feel to them to make them more accessible and to make all the information easily accessible.
+
+This page describes the style that these function pages in the wiki should be made.
+
+h3(sectionedit2#page_editing). Page Editing
+
+h4(#header). Header
+
+Each of the function pages as well as the function index pages has a small link trail header section for easier navigation. This should be the first thing on any of the pages, and should be the following:
+
+bc(code). <div class="linktrail">[[en/Main Page]] | [[TXP Defined Function Editing Reference | Function Editing Instructions ]] | [[TXP Defined Functions (By File)]] | [[TXP Defined Functions | TXP Defined Functions (Alphabetically)]]</div>
+
+
+h4(#sections). Sections
+
+The page is broken down into a few sections for simplicity. These are as follows.
+
+# About This Page
+# General Information
+## Name
+## Purpose
+## Location In Source Code
+## This Page Last Updated
+## Information Retrieved From
+# Parameters
+# Examples
+
+h4(#about_this_page_section). &quot;About This Page&quot; Section
+
+This section is the first one, and it's purpose is to notify readers that the information on any given function may not be completely up to date, so it is the reader's responsibility to check the "development browser":http://dev.textpattern.com/browser/ for the final status on the code. This is stated on function pages as follows:
+
+bc(code). This page is a reference for a function in the core code.<br />
+Please note that it is possible that below information has changed since the last update, and as such, you should be sure to check out the [http://dev.textpattern.com/browser/ development browser] for the final definitive information about this function.
+
+
+h4(#general_information_section). &quot;General Information&quot; Section
+
+This section is to give some general information about the page and the function
+
+h5(#name_section). &quot;Name&quot; Section
+
+This is simply the name of the function. This is as the wiki format does not allow for pages to have a lower case letter as the first letter of a page. For example,
+
+bc(code). FuncName()
+
+
+h5(#purpose_section). &quot;Purpose&quot; Section
+
+This section is to descirbe what purpose this function has in the core code. It should include information as to whether or not it is a function of a class, whether or not is it deprecated, and any relevant information that can be gleaned from the in code comments.
+
+As well, if this function was added to the core after the latest public release (currently 4.0.4), this should be noted, as well as when it was added to the core along with a link to that changeset in the "development browser":http://svn.textpattern.com/browser/. An example of this is as follows:
+
+bc(code). This function was added to the core after the release of 4.0.4, in [http://dev.textpattern.com/changeset/1972 revision 1972].
+
+
+h5(#location_in_source_code_section). &quot;Location In Source Code&quot; Section
+
+This section is simply to give a reference as to where this function exists in the code. This information should be a link the the file page, along with a line number. For example,
+
+bc(code). <nowiki>[[textpattern/lib/classTextile.php File | textpattern/lib/classTextile.php]] :: line ##</nowiki>
+
+
+h5(#this_page_last_updated_section). &quot;This Page Last Updated&quot; Section
+
+This section is to let the reader know how relevant this information actually is. If the page hasn't been updated in a year, the information is not going to be terribly relevant, more likely than not. This should be done with the wiki syntax for adding your signature (that is, &lt;_yamdwe&#95;nowiki&gt;1&lt;/_yamdwe&#95;nowiki&gt;).
+
+h5(#information_retrieved_from_section). &quot;Information Retrieved From&quot; Section
+
+This section is to let the reader know where this information was retreived from. This should normally be one the the "phpxref":http://phpxref.sourceforge.net/ sites that exist for Textpattern. A current version is maintained "here":http://www.ako-k.com/txpref/.
+
+h4(#parameters_section). &quot;Parameters&quot; Section
+
+This section is just a list (unordered) of the parameters that the function takes. Each parameter should be wrapped in
+
+bc(code). <code>
+
+
+tags. &lt;/code&gt;
+
+h4(#examples_section). &quot;Examples&quot; Section
+
+This section is for listing some example usages of the function. If no standalone uses of this function exist, then this should be stated.
+
+h3(sectionedit3#putting_it_all_together). Putting It All Together
+
+The following is a basic page template for any given function. It follows the above formatting for function pages.
+
+<pre class="code">
+&lt;div class=&quot;linktrail&quot;&gt;[[en/Main Page]] | [[TXP Defined Function Editing Reference | Function Editing Instructions ]] | [[TXP Defined Functions (By File)]] | [[TXP Defined Functions | TXP Defined Functions (Alphabetically)]]&lt;/div&gt;
+
+== About This Page ==
+This page is a reference for a function in the core code.&lt;br /&gt;
+Please note that it is possible that below information has changed since the last update, and as such, you should be sure to check out the [http://dev.textpattern.com/browser/ development browser] for the final definitive information about this function.
+
+
+== General Information ==
+
+=== Name ===
+&lt;code&gt;FuncName()&lt;/code&gt;
+
+=== Purpose ===
+''(needed)''&lt;br /&gt;
+(IF NECESSARY) This function was added to the core after the release of 4.0.4, in [http://dev.textpattern.com/changeset/1972 revision 1972].
+
+=== Location in Source Code ===
+[[textpattern/lib/classTextile.php File | textpattern/lib/classTextile.php]] :: line ##
+
+=== This Page Last Updated ===
+~~~~
+
+=== Information Retrieved From ===
+http://www.ako-k.com/txpref/textpattern/lib/classTextile.php.source.html
+
+
+== Parameters ==
+* &lt;code&gt;$param&lt;/code&gt;
+
+== Examples ==
+''(needed)''
+</pre>
+

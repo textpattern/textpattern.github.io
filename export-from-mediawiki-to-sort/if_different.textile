@@ -1,0 +1,79 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_different>
+
+
+The "if&#95;different":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_different tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_different>
+...conditional statement with <txp:other_tag>...
+</txp:if_different>
+
+
+The tag will execute the contained statement when the value of the contained statement differs from the preceding value for that contained statement. Can be used in article, link, comment, and file forms.
+
+*if&#95;different* can contain several HTML tags but only _one_ Textpattern tag.
+
+You can "work around this limitation":http://txptips.com/extend-if_different-using-the-variable-and-if_variable-tags by means of the use of the "variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=variable and "if&#95;variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable tags.
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_posting_time_per_article_once_per_day). Example 1: Display posting time per article once per day
+
+"Weblog":http://textpattern.com/weblog/98/daily-contents-with-txpif_different
+
+bc(code).     <txp:if_different>
+    <!-- heading - only once per day -->
+    <h3><txp:posted format="%d %B %Y" /></h3>
+    </txp:if_different>
+
+
+To be used inside an article form or an article tag container.
+
+Other tags used: "posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted
+
+h4(#example_2build_an_indented_list_of_article_titles_grouped_by_section). Example 2: Build an indented list of article titles grouped by section
+
+Intention:
+
+* Display a list of all articles' titles grouped by sections and ordered by article title
+* Add headings from section titles to designate an article's context
+* Sort alphabetically by section name, then by article title
+
+Desired result:
+
+* about _(section title)_
+** 1st Article from about section
+** 2nd Article from about section
+** â€¦another articles
+* family _(section title)_
+** 1st Article from family section
+** 2nd Article from family section
+** â€¦another articles
+* people _(section title)_
+** 1st Article from people section
+** 2nd Article from people section
+** â€¦another articles
+
+In a page template, add this tag to loop through all articles from all sections:
+
+bc(code). <txp:article_custom sort="section ASC, Title ASC" form="tree" />
+
+
+The contents of the
+
+bc(code). tree
+
+
+form used by the snippet above lists all article titles and renders an intermittent heading element whenever a *different* section is encountered while the articles loop through:
+
+bc(code). <txp:if_different><h2><txp:section title="1" /></h2></txp:if_different>
+<txp:title />
+
+
+Other tags used: "article&#95;custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom, "section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section, "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title
+

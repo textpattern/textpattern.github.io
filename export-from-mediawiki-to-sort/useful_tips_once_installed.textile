@@ -1,0 +1,29 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+h3(sectionedit1#overview). Overview
+
+The tips indicated on this page are now focused to Textpattern rc3/1.0. Hopefully your intallation process went well, and other areas of TextBook will provide you will relevant information to use Textpattern features as they were intended. Experienced users can add to this page as they see fit.
+
+h3(sectionedit2#tip_topics). Tip Topics
+
+h4(#handling_diagnostics). Handling Diagnostics
+
+See the "diagnostics&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics_subtab panel for more info on this.
+
+h4(#handling_urls). Handling URLs
+
+Any tips you can provide here would be very appreciated.
+
+h4(#safeguarding_your_resources). Safeguarding Your Resources
+
+It's never too early to be safe.
+
+h5(#backing-up_your_mysql_database). Backing-up Your MySQL Database
+
+* Cron job backup
+* Copying database via a _.sql_ file download.
+
+h5(#backing-up_your_installation_files). Backing-up Your Installation Files
+
+Pretty straightforward here; keep a copy of your installation files somewhere safe, especially to any files you end up making changes to (e.g., _.htaccess_, _config.php_, _publish.php_, whatever).
+

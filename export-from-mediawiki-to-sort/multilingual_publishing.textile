@@ -1,0 +1,78 @@
+\n
+
+h3(sectionedit1#overview). Overview
+
+Outside of expensive enterprise content management systems, the ability to easily publish content in multiple languages is still a scarce asset, particularly in open-source publishing systems. Considering the importance of companies needing to reach international audiences, and considering the increase in traffic a site realizes in return, it's a great wonder why multilingual publishing is not yet widely available, especially in recent years as unicode has become more standard across technologies. Being able to easily publish in multiple languages of one's choice is so important, arguably, that it should be on the top of Textpattern's list of new features.
+
+It's expected that the concept of multilingual publishing will have different interpretations; hence, there are two main objectives here:
+
+# Clearly define what multilingual publishing means.
+# Establish a clear plan of an ideal workflow in Textpattern, which might include such aids of reference as...
+#* a written walkthrough,
+#* screenshots of the percieved admin interface (where applicable),
+#* and so forth.
+
+h3(sectionedit2#what_do_we_mean_by_multilingual_publishing). What do we mean by Multilingual Publishing?
+
+At the ideal end of things, we are talking about having the ability to have more than one language actively installed in Textpattern with perhaps the following workflow: a site owner goes to the "write":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write panel, selects an active language from a dropdown, drafts an article in that language, and publishes it with a click of the save button. Wouldn't that be nice? You better believe it. However, things don't have to be ideal from the get-go, much might be realized from progressive stages. Consider "this exchange":http://forum.textpattern.com/viewtopic.php?id=14610 as food for thought.
+
+h3(sectionedit3#requirements). Requirements
+
+Some requirements need to be settled. For starters:
+
+* Should different translations of an article be treated as separate articles, or as portions contained within a single article? (If the former, “language” could be a construct similar to “section” or “category”; if the latter, we need to consider how these portions would be handled by versioning, etc)
+
+* How would searching, feeds etc treat multiple languages?
+** Offer a choice of feeds and search options targeted at a specific content language?
+
+* What is the failure mode for articles which are not present in the requested language?
+** Throw an error “404 Not Found”
+** Fall back on an alternate representation in a default languge with a status “302 Moved Temporarily” response
+
+* Is there a need for alternate versions of files and images, too? Consider pdf downloads, watermarks on images and the like...
+
+h3(sectionedit4#scenario). Scenario
+
+h4(#data_model). Data model
+
+Each article is represented by one or more “renditions” in different languages. An article's id ties all those renditions together (1:m).
+
+h4(#user_experience). User experience
+
+For the author (backend experience):
+
+* Article composition starts just like it is with the monolingual version now.
+* After an initial publishing event, any article can be chosen for translation on both the single article edit screen and the article list as well.
+* The article list shows the currently available translations of articles to spot omissions.
+* A side-by-side view of one article in two languages would aid translation.
+* An article can be flagged as “needs translation” as a follow-up to edits.
+* ?? UI localization per user, not as a global preference ??
+
+For the visitor (front end experience):
+
+* Textpattern chooses a reasonable default rendition based on “Accept-Language” preferences when available.
+* “Accept-Language” is parsed for primary language keys, thus for instance reducing “de-at” to “de”.
+* In lack of an “Accept-Language” header a default rendition is delivered (set by administrator preferences?).
+* Persistent cookies store language preferences.
+* Comments are tied to an article, not to renditions, but store information with regard to the language version they were submitted.
+
+For the administrator/publisher:
+
+* A new tag provides for HTML markup which allows visitors to select a desired preferred language across pages.
+* New conditional tags allow for language specific parts in page templates and forms.
+* URLs might carry a language-specific part, URL scheme dependencies arise.
+* Date representations relate to content language. Preferences have to adapt accordingly to allow for per-language settings.
+
+h4(#current_implementations). Current Implementations
+
+h5(#the_mlp_pack). The MLP Pack
+
+* Overview
+* Possibilities in Terms of I18N
+* Source Code and documentation
+* Installation
+* Basic Usage
+* Administration
+* Authoring and Information Architecture
+* Development , Support and Bugreporting
+

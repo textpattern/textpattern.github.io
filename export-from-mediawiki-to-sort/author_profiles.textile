@@ -1,0 +1,44 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+This tutorial will show you how to create author profiles using articles.
+
+h4(#requirements). Requirements
+
+* "jmd&#95;author":http://forum.textpattern.com/viewtopic.php?id=26080 to create the author links
+
+h4(#content). Content
+
+* Bios can be posted to any section, but for this tutorial, “staff” will be used.
+* The only restriction is the title field must be identical to the author's real name (listed in Admin&gt;Users).
+* The body, excerpt, and custom fields are all optional. Some ideas:
+** Body: Bio
+** Article image: Author photo
+** Custom fields: Website, phone number, location, etc.
+
+h4(#template). Template
+
+h5(#link_to_profile). Link to profile
+
+Add the following to your article form:
+
+bc(code). <a href="<txp:jmd_author display="name" lowercase="1" separator="-"/>">
+    <txp:author/>
+</a>
+
+
+h5(#author-index). Author-index
+
+The following can be placed wherever you want an author-index to appear.
+
+bc(code). <h2>Staff</h2>
+<ul>
+    <txp:article_custom section="staff">
+        <li>
+            <txp:permlink>
+                <txp:title/>
+            </txp:permlink>
+        </li>
+    </txp:article_custom>
+</ul>
+
+

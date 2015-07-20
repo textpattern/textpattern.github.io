@@ -1,0 +1,144 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:recent_articles />
+
+
+The "recent&#95;articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_articles tag is a _single_ tag which is used to produce a list of permanent links to recent articles by title.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#category=“category name”*
+ Restrict to articles from specified category/ies. Note: category names may be different to the Title you typed when you created the category. Check the "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories tab to ensure you are using the correct names. Values: (comma separated list of) category name(s). Default: unset. *"limit":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#limit=“integer”*
+ Number of articles to display. Default:
+
+bc(code). 10
+
+
+. *"no&#95;widow":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#no_widow=“boolean”*
+ Whether to inhibit line breaks in titles which would leave just a single word on the last line ("widows":http://en.wikipedia.org/wiki/Widow_%28typesetting%29). Values:
+
+bc(code). 0
+
+
+single words allowed;
+
+bc(code). 1
+
+
+single words not allowed on their own line Default: Whatever is set in "Advanced Preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#prevent_widowed_words_in_article_titles3f *"section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#section=“section&#95;name”*
+ Restrict to articles from specified section(s). Values: (comma separated list of) section name(s). Default: unset. *"sort":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#sort=“sort value(s)”*
+ How to sort resulting list. Values:
+
+bc(code). ID
+
+
+(article id#)
+
+bc(code). AuthorID
+
+
+(author)
+
+bc(code). LastMod
+
+
+(date last modified)
+
+bc(code). LastModID
+
+
+(author of last modification)
+
+bc(code). Posted
+
+
+(date posted)
+
+bc(code). Title
+
+
+bc(code). Category1
+
+
+bc(code). Category2
+
+
+bc(code). comments_count
+
+
+bc(code). Status
+
+
+bc(code). Section
+
+
+bc(code). Keywords
+
+
+bc(code). Image
+
+
+(article image id#)
+
+bc(code). url_title
+
+
+bc(code). custom_1
+
+
+through
+
+bc(code). custom_10
+
+
+(From 4.2.0 on:
+
+bc(code). custom_//n//
+
+
+)
+
+bc(code). rand()
+
+
+("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand). Default:
+
+bc(code). Posted desc
+
+
+.
+
+"common&#95;presentational&#95;attributes":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_presentational_attributes
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1labelled_list_of_recent_articles). Example 1: Labelled list of recent articles
+
+bc(code). <txp:recent_articles label="Latest and Greatest" limit="5" />
+
+
+h4(#example_2list_of_recent_articles_by_category). Example 2: List of recent articles by category
+
+bc(code). <txp:recent_articles label="Latest" break="br" wraptag="p" category="code" sort="Section desc" />
+
+
+h4(#example_3styled_recent_article_list). Example 3: Styled recent article list
+
+bc(code). <txp:recent_articles label="Recently" break="li" wraptag="ul" />
+
+
+*Styles could go this way*
+
+bc(code). .recent_articles {
+     list-style-type:none;
+}
+
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_406). Version 4.0.6
+
+* support added for comma separated lists for section and category attributes
+

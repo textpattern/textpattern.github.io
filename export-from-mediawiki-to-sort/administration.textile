@@ -1,0 +1,18 @@
+\n"mininav&#95;redaktionsseite":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_redaktionsseite
+
+Die Hauptregisterkarte “Administration” der Redaktionsseite enthÃ¤lt mehrere untergeordnete Registerkarten.
+
+Nach der Installation und nach Upgrades Ã¶ffnet sich die Registerkarte "einstellungen":/home/www/zendstudio/dokuwiki/bin/doku.php?id=einstellungen als erstes und lÃ¤sst Sie unter "sprachen&#95;verwalten":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sprachen_verwalten Ihre Spracheinstellungen aktualisieren bzw. Ihre Sprache auswÃ¤hlen.
+
+*Die Registerkarten unter “Administration”:*
+
+* "diagnose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnose
+* "einstellungen":/home/www/zendstudio/dokuwiki/bin/doku.php?id=einstellungen (bestehend aus drei Unterbereichen)
+** "basiseinstellungen":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basiseinstellungen
+** "erweiterte&#95;einstellungen":/home/www/zendstudio/dokuwiki/bin/doku.php?id=erweiterte_einstellungen
+** "sprachen&#95;verwalten":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sprachen_verwalten
+* "benutzer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=benutzer
+* "protokolle":/home/www/zendstudio/dokuwiki/bin/doku.php?id=protokolle
+* "plugins&#95;-&#95;deutsch&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_-_deutsch
+* "import&#95;-&#95;deutsch&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=import_-_deutsch
+

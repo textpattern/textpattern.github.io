@@ -1,0 +1,389 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+It is recommended to use the page "Registered Textpattern developer prefixes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=registered_textpattern_developer_prefixes instead.
+
+A list of plugin author prefixes already in use, and who they belong to (support forum username).
+
+Convention is to *use a* *_single_* *3 letter prefix for* *_all_* *your plugins*, and it is appreciated if everyone follows this simple guideline. Some authors have more than one prefix because they “adopted” plugins no longer maintained by the creator.
+
+h3(sectionedit1#a). A
+
+*aaa*
+ jayrope *aam*
+ Logoleptic *aao*
+ aurelian *aba*
+ aba *abl*
+ developr (_"Andreas Blaser":http://www.blaser-it.ch/_) *act*
+ "Andrew Ilin":http://www.angrycat.info (Forum account unknown) *add*
+ Internally used by Textpattern *adi*
+ "gomedia":http://forum.textpattern.com/profile.php?id=15145 *afa*
+ Anton *ajt*
+ segfault *ajw*
+ Andrew *aka*
+ AkaScooter *akh*
+ tweak *ako*
+ akokskis *akw*
+ thekolonel *alt*
+ GeertAki *an7*
+ iaian7 *anc*
+ usonian *any*
+ anyNeT *arc*
+ monkeyninja *arg*
+ argi *aro*
+ rloaderro *asv*
+ variaas *asy*
+ Sencer *atb*
+ atbradley *ats*
+ schussat *aud*
+ Alex McKee
+
+h3(sectionedit2#b). B
+
+*bab*
+ benbruce *bau*
+ bauhouse *bas*
+ Bastian *beb*
+ 1beb *ben*
+ Baseline&#95;Benny *bep*
+ alice&#95;c *bit*
+ bit *bkp*
+ AkaScooter *bnk*
+ Duncan Clarke (website and forum account unknown) *bos*
+ Zanza *bot*
+ redbot *bsl*
+ polygon&#95;monkey *btx*
+ DougBTX *bud*
+ andyb
+
+h3(sectionedit3#c). C
+
+*cbe*
+ "CeBe":http://forum.textpattern.com/profile.php?id=76735 *cbs*
+ cbeyls *cfm*
+ "aeonflux":http://forum.textpattern.com/profile.php?id=8082 *cgd*
+ Caged *cha*
+ "chalito":http://forum.textpattern.com/profile.php?id=13435 (_AndrÃ©s TarrÃ­o_) *chh*
+ takshaka *chu*
+ charmston *cjm*
+ chrismc *ckr*
+ Cedric *cng*
+ chess *cnj*
+ octover *cnk*
+ chriloi *cnn*
+ cnewkirk *cno*
+ cnolle *csb*
+ csandberg *css*
+ Internally used by Textpattern *cxc*
+ "~cXc~":http://forum.textpattern.com/profile.php?id=106730 (Doc) *cti*
+ Celti *czg*
+ cziggurat
+
+h3(sectionedit4#d). D
+
+*dak*
+ Kaiser *dca*
+ Dean *dds*
+ nemoorange *dfc*
+ domfucssion *djw*
+ wet *dmp*
+ Internally used by Textpattern *dom*
+ Internally used by Textpattern *dow*
+ dow *dru*
+ Drew *dub*
+ jamiew *dzd*
+ Dragondz
+
+h3(sectionedit5#e). E
+
+*e26*
+ edduddiee *ebl*
+ TheEric *eck*
+ ecklesroad *ede*
+ edeverett *egg*
+ yatil.de *end*
+ Internally used by Textpattern *eoi*
+ dubsky *esq*
+ cain-mi *etc*
+ etc *etz*
+ Etz Haim *eye*
+ Destry
+
+h3(sectionedit6#f). F
+
+*fgr*
+ fathersGrave *fha*
+ mamash *fng*
+ fungus&#95;sn *foo*
+ Documentation sample *fox*
+ Gr3yFox *fpx*
+ Flashpix
+
+h3(sectionedit7#g). G
+
+*gbp*
+ graeme *gda*
+ groupdocs *gds*
+ groupdocs *gdt*
+ gdtroiano *gdv*
+ groupdocs *gem*
+ gemal *geo*
+ geoff777 *get*
+ Internally used by Textpattern *gho*
+ graumeister *gkr*
+ kr37 *glb*
+ mattgilbert *glx*
+ graumeister (was osei) *glz*
+ gerhard *gmd*
+ maartenD *goe*
+ goechsler *gps*
+ Internally used by Textpattern *gva*
+ Turbo-G ("Gerrit van Aaken":http://praegnanz.de/)
+
+h3(sectionedit8#h). H
+
+*hak*
+ hakjoon *has*
+ Internally used by Textpattern *hcg*
+ hcgtv *hdd*
+ "Ron Hickson":http://www.hicksondesign.com/ (forum account unknown) *hed*
+ Internally used by Textpattern *hfw*
+ DarkWulf *hhh*
+ hoho *hpw*
+ duffe *htn*
+ grafzahl *hwm*
+ hotwebmatter
+
+h3(sectionedit9#i). I
+
+*ice*
+ artagesw *ied*
+ Inspired *ign*
+ igner *imm*
+ mikhail *it*
+ Sketch
+
+h3(sectionedit10#j). J
+
+*ja*
+ london567 *jab*
+ jbaty *jad*
+ jdueck *jas*
+ larry *jbb*
+ Jeremie *jbe*
+ jot.be *jcb*
+ jimb *jcv*
+ grump.org *jdt*
+ iioshius *jdw*
+ JanDW *jea*
+ Jeadorf *jfp*
+ jordi.f *jgh*
+ Rufnex *jgk*
+ Rufnex *jgp*
+ Rufnex *jjj*
+ jascha *jk*
+ Jeff&#95;K *jmc*
+ jufemaiz *jmd*
+ jm *jmr*
+ jmrhoades *jnm*
+ juanjonavarro *jns*
+ himynameisjonas *joe*
+ joewils *jof*
+ woof *joh*
+ Slaktad *jrh*
+ Jan H *jsh*
+ pericat *jtb*
+ JeffClark *jvg*
+ jeroenvg *jwl*
+ grapeice925
+
+h3(sectionedit11#k). K
+
+*kai*
+ kaioshin *kaf*
+ "Pin007":http://forum.textpattern.com/profile.php?id=4180 *kam*
+ "lithium002":http://forum.textpattern.com/profile.php?id=140651 *kff*
+ "Karl Francisco Fernandes":http://mesonprojekt.com/ (forum account unknown) *kgr*
+ KurtRaschke *kis*
+ alexbighea *klp*
+ kelp *kml*
+ kimili *krl*
+ vitch
+
+h3(sectionedit12#l). L
+
+*lam*
+ iblastoff *leo*
+ LeonNet *lhg*
+ 1ukaz *low*
+ JustinLow *lsx*
+ LeeStewart *lum*
+ Themroc ("Lutz MÃ¶hrmann":http://69b.org/) *lwh*
+ Luke Wesley-Holley (forum account unknown)
+
+h3(sectionedit13#m). M
+
+*mcb*
+ mcbenton *mck*
+ MarcoK *mcw*
+ mikewest *mdn*
+ Remillard *mdp*
+ greenrift *mem*
+ Manfre *mkp*
+ michaelkpate *mic*
+ micampe *mik*
+ mikkeX *mim*
+ kemie *mlk*
+ milkshake *mrd*
+ mrdale *mrh*
+ aesop1 *mrs*
+ marios *mrz*
+ marz *mrw*
+ nesher *msd*
+ MattD *msv*
+ "Martin Svihla":http://www.svihla.net/ (forum account unknown) *mta*
+ morgant *mtp*
+ plummerm
+
+h3(sectionedit14#n). N
+
+*nab*
+ nabrown78 *nav*
+ Internally used by Textpattern *nhn*
+ (was Skubidu?) *nok*
+ anoke
+
+h3(sectionedit15#o). O
+
+*ob1*
+ obeewan *ort*
+ "baby":http://forum.textpattern.com/profile.php?id=7103 and his students from the "Instituto ORT":http://semap.baby.com.ar
+
+h3(sectionedit16#p). P
+
+*pac*
+ gaekwad ("Pete Cooper":http://petecooper.org/) *pap*
+ tranquillo *pat*
+ pat64 ("Patrick Lefevre":http://cara-tm.com/) *pax*
+ "John Stephens":http://designop.us/ *pcs*
+ Internally used by Textpattern *phq*
+ phq *phw*
+ phiw13 *plh*
+ planeth ("Aleth Gueguen":http://pixrobot.net/) *pnh*
+ placenamehere *ppc*
+ kusor *prad*
+ fpradignac *pro*
+ hilaryaq *psa*
+ Internally used by Textpattern *pub*
+ (Means “public”, and intended for plugins resulting from community collaboration.) *ptv*
+ Borisch
+
+h3(sectionedit17#q_-_r). Q - R
+
+*r11*
+ skipper *rah*
+ Gocom *ras*
+ rsilletti *rcb*
+ Russell Brown (forum account unknown) *rdi*
+ ian *rdt*
+ rdtietjen *rei*
+ ReinierBiz *rlt*
+ richtestani *rmc*
+ ruairi *rob*
+ "Rob Bell":http://rob-bell.net/ (forum account unknown) *rom*
+ Romuald *rpc*
+ ARCanine *rpg*
+ leralle *rsd*
+ Internally used by Textpattern *rss*
+ wilshire *rsx*
+ ramanan *rtr*
+ rob&#95;roy, possibly abandoned? *rvm*
+ ruud
+
+h3(sectionedit18#s). S
+
+*sab*
+ supa *sac*
+ saccade *saw*
+ ninj *scs*
+ steph *sdr*
+ sderuiter *sed*
+ net-carver *see*
+ sthmtc *sen*
+ gago *set*
+ Internally used by Textpattern *sgb*
+ sungodbiff *sho*
+ stephan *sir*
+ fabio sirna *ske*
+ skeptisch *skp*
+ piyashrija *smd*
+ Bloke *smf*
+ txfrog1999 *smu*
+ e-sven *soo*
+ jsoo *spc*
+ spchampion *spf*
+ spiffin ("Simon Finch":http://www.spiffin.net/) *spr*
+ springworks *srh*
+ Vitruvius *ste*
+ stefan *stm*
+ monsta *stw*
+ santheo *swf*
+ swf
+
+h3(sectionedit19#t). T
+
+*tab*
+ Internally used by Textpattern *tbs*
+ thebombsite *tch*
+ Sketch *tcm*
+ tmacwrig *tda*
+ Internally used by Textpattern *tfu*
+ carton *the*
+ Internally used by Textpattern *thg*
+ the&#95;ghost *tin*
+ jeroen *tps*
+ Tomsec *tpt*
+ Internally used by Textpattern *tru*
+ truist *tsw*
+ mwaldtha *tuk*
+ paradotsky *txp*
+ Internally used by Textpattern
+
+h3(sectionedit20#u). U
+
+*uli*
+ uli *upm*
+ Mary
+
+h3(sectionedit21#v). V
+
+*vag*
+ vagari *vdh*
+ larf *vg*
+ Vincent Grouls
+
+h3(sectionedit22#w). W
+
+*wan*
+ wanni *waz*
+ wazdog *wcz*
+ whocarez *wet*
+ wet *wlk*
+ Walker *wnp*
+ datafirm *wm*
+ watts *wow*
+ nighthawk
+
+h3(sectionedit23#x_-_y). X - Y
+
+*xkl*
+ nimnix *yab*
+ trenc (_"Tommy Schmucker":http://tommyschmucker.de/_) *yes*
+ Internally used by Textpattern
+
+h3(sectionedit24#z). Z
+
+*zem*
+ zem *zen*
+ zenigy *zmk*
+ maxk
+

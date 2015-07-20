@@ -1,0 +1,12 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+These instructions describe how to move (more accurately, duplicate) a remotely-hosted Web site powered by Textpattern to a local computer with an Apache Web server. One might consider doing this in the situation when a live Web site was created without first establishing a local development site; hence, moving a copy of a live site to a local server will provide a convenient development platform (as well as another source of backup) for a live site.
+
+h3(sectionedit1#the_process). The Process
+
+(For the time being, see link in References below.)
+
+h3(sectionedit2#references). References
+
+"Moving a Live Textpattern Site to a Local Server":http://wion.com/articles/moving-a-live-textpattern-site-to-a-local-server (Wion, 2005)
+

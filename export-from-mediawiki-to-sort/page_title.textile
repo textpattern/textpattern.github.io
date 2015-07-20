@@ -1,0 +1,40 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:page_title />
+
+
+The "page&#95;title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_title tag is a _single_ tag that displays text depending on the context it is used. Its primary purpose is for outputting information suitable for the HTML
+
+bc(code). <title>
+
+
+tag.
+
+Results appear as follows:
+
+*Article List*
+ _Your site name_ *Articles by Category*
+ _Your site name : Category title_ *Search Results page*
+ _Your site name : Search results: Search term_ *Single Article page*
+ _Your site name : Article name_ *Comments display*
+ _Comments on: Article name_
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"separator":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#separator=“character(s)”*
+ The character sequence you want between each piece of information. Default:
+
+bc(code). :
+
+
+(a colon).
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1show_page_titles_with_custom_separator). Example 1: Show page titles with custom separator
+
+bc(code). <title><txp:page_title separator=" &amp;raquo; " /></title>
+
+

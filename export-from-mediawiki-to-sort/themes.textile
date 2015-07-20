@@ -1,0 +1,22 @@
+\nSome requirements:
+
+* Themes should include:
+** Page templates
+** Forms
+** Cascading stylesheets (CSS)
+** Images (where applicable)
+
+* Install and uninstall should be easy and non-destructive
+** No unrecoverable data should be lost or overwritten
+** Should be symmetrical: everything returns to its original state after installing and then uninstalling a theme (assuming no other changes)
+
+* Previewing themes should be easy
+** Should be able to install several themes, apply them one by one, revert to the original appearance, and uninstall those themes
+** Switching from one theme to another should be a one-step operation. I shouldn't have to install a theme and then manually change the page template and CSS settings on 53 different sections. Likewise when reverting back to the original appearance.
+** Ideally there should be a way to preview a theme without affecting a live site. Either by creating a test section, and applying a theme to that section only (i.e. a per-section theme setting), or by allowing logged-in admin users to switch themes on the fly when viewing public pages.
+
+* Names should be relative
+** Say I have two sections, “article” and “gallery”, set to use the “default” and “gallery” page templates respectively. If I switch to a different theme, those sections should automatically use the “default” and “gallery” templates from the new theme, assuming they exist. Same deal when switching back. And likewise for error pages.
+** Things like POST urls for the search form, image URLs in page templates *and* in CSS stylesheets, navigation links etc should all be relative, so they work regardless of whether a site is installed in the root or in a subdirectory; also regardless of whether the theme is applied to the entire site or to a single section (assuming we allow per-section themes). Remember that work has already begun on nested sections.
+** Theme Support should be coupled with a possible "Naming Convention]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:textpattern.net_wiki_index.php&title=Naming_Conventions_for_Template_Authors#Existing_Templating_Tools that conforms to the mechanism's requirements and eases maintenance.
+

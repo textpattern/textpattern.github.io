@@ -1,0 +1,130 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:search_input />
+
+
+The "search&#95;input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input tag is a _single_ tag. This tag will provide a text entry field for search parameters and an optional button to initiate the search.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"button":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#button=“text”*
+ Creates and labels a button to initiate the search. Default: unset (no button is created) *"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“form name”*
+ Use specified form (_i.e._, a Textpattern _Form_ to build a customized HTML form.) Default:
+
+bc(code). search_input
+
+
+. *"html&#95;id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#html_id=“id”*
+ The HTML
+
+bc(code). id
+
+
+attribute assigned to the search form. Default: unset. *"match":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#match=“match type”*
+ Set the search mode. Values:
+
+bc(code). exact
+
+
+: search terms must exactly match the words in the article in the order given. This mode is also automatically selected if the search term is surrounded with double quotes
+
+bc(code). any
+
+
+: any of the search terms in an article will cause it to show up in the results
+
+bc(code). all
+
+
+: all of the search terms in the article must exist (in any order) for the article to be included in the results Default
+
+bc(code). exact
+
+
+*"section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#section=“section name”*
+ Use the specified section as the destination page that will display the search results. Default: unset (use the front page) *"size":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#size=“integer”*
+ Sets the size of the text field. Default:
+
+bc(code). 15
+
+
+.
+
+"common&#95;attributes&#95;header":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_attributes_header
+
+"attribute&#95;label":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=attribute_label "attributes&#95;wraptag&#95;class":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=attributes_wraptag_class
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_a_search_input_form). Example 1: Display a search input form
+
+bc(code). <txp:search_input label="Search" button="Search" size="20" wraptag="div" />
+
+
+h4(#example_2elements_required_for_building_a_customized_html_search_form). Example 2: Elements required for building a customized HTML search form
+
+You can build your own custom search form (as a Textpattern _Form_) by specifying
+
+bc(code). form="form-name"
+
+
+inside the
+
+bc(code). <txp:search_input />
+
+
+_Tag_:
+
+bc(code). <txp:search_input form="form-name" />
+
+
+You would then need to build your Form (_i.e._,
+
+bc(code). form-name
+
+
+), and the absolute minimum _Tags_ and attributes required would be:
+
+bc(code). <form action="<txp:site_url />">
+<input type="text" name="q" />
+</form>
+
+
+When using a customized _Form_, Textpattern doesn't automatically wrap the HTML form output with _Form_ tags, thus you need the opening and closing
+
+bc(code). form
+
+
+tag pair. The
+
+bc(code). name="q"
+
+
+attribute and value is _required_ to initiate a search query.
+
+Other tags used: "site&#95;url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_url
+
+Textpattern, as of this writing, will use a user defined form named _search&#95;results_, or an internally defined default form if no search result form is defined by you.
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_430). Version 4.3.0
+
+<ul>
+<li>bc(code). match
+
+
+<p>attribute added</p></li>
+</ul>
+
+h4(#version_407). Version 4.0.7
+
+<ul>
+<li>bc(code). html_id
+
+
+<p>attribute added.</p></li>
+</ul>
+

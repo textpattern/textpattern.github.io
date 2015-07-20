@@ -1,0 +1,11 @@
+\n"mininav&#95;primary&#95;backoffice&#95;tabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_primary_backoffice_tabs
+
+The Presentation tab is a main-level tab composed of various sub-tabs for each of Textpattern's presentational building-blocks; in other words, the things that control the location, layout and appearance of your content. The sub-tabbed areas are indicated below and described in detail.
+
+* "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections
+* "pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages
+* "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms
+* "styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles
+
+*Note:* It can  -  and has been  -  argued that "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms are more a content item than a presentational item, as they more often than not represent packaged chunks of content, and thus should exist in the "content":/home/www/zendstudio/dokuwiki/bin/doku.php?id=content tab to strengthen semantic understanding. Regardless, the argument is trivial and Forms are powerful regardless of which admin-side vector you access them.
+

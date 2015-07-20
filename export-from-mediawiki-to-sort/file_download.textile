@@ -1,0 +1,41 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:file_download />
+
+
+The "file&#95;download":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download tag is a _single_ tag which Textpattern will replace with a file download "form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained. Inside that form go the other .
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"filename":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#filename=“name”*
+ Filename of the file to link to. Default is unset; nothing is returned. *"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“name”*
+ Use the specified form. Default is
+
+bc(code). files
+
+
+. *"id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#id=“integer”*
+ File id of the file to link to. Default is unset; nothing is returned.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_a_download_form). Example 1: Display a download form
+
+bc(code). <txp:file_download form="files" id="1" />
+
+
+h5(#default_files_form). Default &quot;files&quot; form
+
+bc(code). <txp:text item="file" />: 
+<txp:file_download_link>
+<txp:file_download_name /> [<txp:file_download_size format="b" decimals="2" />]
+</txp:file_download_link>
+<br />
+<txp:text item="category" />: <txp:file_download_category /><br />
+<txp:text item="download" />: <txp:file_download_downloads />
+
+
+Other tags used: "file&#95;download&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_category, "file&#95;download&#95;downloads":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_downloads, "file&#95;download&#95;link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_link, "file&#95;download&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_name, "file&#95;download&#95;size":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_size, "text":/home/www/zendstudio/dokuwiki/bin/doku.php?id=text
+

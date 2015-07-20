@@ -1,0 +1,16 @@
+\n &#42; &#95;update.php now resizes the password field in txp&#95;users to accept longer hashes
+
+* Added a hideable 'Recent Articles' thingy in the write tab
+* Blocked a security hole left open for when previewing comments. Thanks to nixon for spotting this
+* Changed security method for authenticating the current author's cookie from the secret&#95;word option in config.php to an unguessable db-stored nonce system. Many thanks to zem for proposing this.
+* Changed the method for installing plugins: developers can now offer their code as a straight chunk of base64 text, which can simply be pasted in to install a plugin
+* Fixed a confusing hierarchy rearrangement that came about after deleting an article category
+* Forms, articles, comments and links can now have 'power editing' thrust upon them (actually, you can just delete more than one at a time)
+* Lists in the links editor can now be sorted by name, description or category
+* Made some preliminary steps (notable in content → organise) toward replacing table layouts where they're not implicitly useful with webstandardsy layout
+* Moved the article list to its own tab ('articles') separate from 'write'
+* Paging through article lists (in the 'article' tab) now retains the current sort-by column and direction preference
+* Per-version updates to the database should now happen transparently: if the software install doesn't match the version indicated in the database, &#95;update.php is automatically run
+* Running Textile to sanitise link titles and descriptions is now a config option
+* Switched the default pinging service for new post alerts from weblogs.com to pingomatic.com
+

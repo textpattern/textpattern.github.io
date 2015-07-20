@@ -1,0 +1,48 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_plugin>
+
+
+The "if&#95;plugin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_plugin tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_plugin>
+...conditional statement...
+</txp:if_plugin>
+
+
+The tag will execute the contained statements if the name attribute matches a currently installed and enabled plugin, and the current version number is equal to or greater than the ver attribute assigned (if used).
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#name=“text”*
+ Plugin name as defined on "plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins tab. *"version":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#version=“number”*
+ Minimum plugin version number.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1check_plugin_exists_before_using_a_tag). Example 1: Check plugin exists before using a tag
+
+bc(code). <txp:if_plugin name="zem_plugin_lang" version="4">
+<txp:zem_contact to="dest@example.com" />
+</txp:if_plugin>
+
+
+*What this does...*
+ Apply the tag zem&#95;contact if the zem&#95;contact&#95;lang plugin is installed, activated, and the version number is equal to or greater than 4.
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_430). Version 4.3.0
+
+<ul>
+<li>bc(code). ver
+
+
+<p>attribute deprecated and renamed</p>
+bc(code). version
+
+</li>
+</ul>
+

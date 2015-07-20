@@ -1,0 +1,1608 @@
+\n
+
+h3(sectionedit1#default). default
+
+<pre class="code">
+/* ==========================================================================
+   Styling and layout for all media
+   ========================================================================== */
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  vertical-align: baseline;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox &lt; 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/**
+ * 1. Always force scrollbar padding so we don't get 'jumping'.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * 3. As 2 above, for Windows Phone.
+ */
+html {
+  -webkit-tap-highlight-color: rgba(0, 102, 255, 0.5);
+  /* 1 */
+  overflow-y: scroll;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  /* 12px */
+  font-size: 0.8571429em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/**
+ * 1. Remove the gap between images and the bottom of their containers.
+ * 2. Remove border when inside `a` element in IE 8-10.
+ */
+img {
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+  border: 0;
+}
+
+/**
+ * Consistent tables.
+ */
+table {
+  margin-bottom: 1em;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/**
+ * Make table cells align top and left by default.
+ */
+th,
+td {
+  vertical-align: top;
+  text-align: left;
+}
+
+/**
+ * Address paddings set differently.
+ */
+menu,
+ol,
+ul {
+  padding: 0 0 0 2em;
+}
+
+/**
+ * Remove margins from nested lists.
+ */
+li &gt; ul,
+li &gt; ol {
+  margin: 0;
+}
+
+/**
+ * Address margins set differently.
+ */
+dd {
+  margin: 0 0 0 2em;
+}
+
+/**
+ * Italicise definition terms.
+ */
+dt {
+  font-style: italic;
+}
+
+/* Clearfix
+   ========================================================================== */
+
+/**
+ * Clearfix using the 'A new micro cleafix hack' method.
+ *
+ * More info: http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.clearfix:after,
+header:after,
+nav ul:after,
+.container:after,
+footer:after,
+#paginator:after,
+#monthly-list:after {
+  content: &quot;&quot;;
+  display: table;
+  clear: both;
+}
+
+
+/* ==========================================================================
+   Styling and layout for screen media (mobile first)
+   ========================================================================== */
+
+@media screen {
+
+/* Layout
+   ========================================================================== */
+
+/**
+ * 1. Remove default margin.
+ */
+body {
+  /* 1 */
+  margin: 0;
+  background: #f7f7f7;
+}
+
+/**
+ * Outer wrapper for main layouts.
+ *
+ * Example HTML:
+ *
+ * &lt;div class=&quot;wrapper&quot;&gt;
+ *     &lt;div class=&quot;container&quot;&gt;
+ *         Content
+ *     &lt;/div&gt;
+ * &lt;/div&gt;
+ */
+.wrapper {
+  border-bottom: solid 1px #ccc;
+  padding-top: 2em;
+  background: #fff;
+}
+
+/**
+ * Wrapper for layouts, and for header/footer.
+ *
+ * Example HTML:
+ *
+ * &lt;div class=&quot;wrapper&quot;&gt;
+ *     &lt;div class=&quot;container&quot;&gt;
+ *         Content
+ *     &lt;/div&gt;
+ * &lt;/div&gt;
+ */
+header,
+.container,
+footer {
+  margin: 0 auto;
+  /* 960px / 1024px */
+  width: 93.75%;
+  max-width: 86em;
+}
+
+/**
+ * Additional styling for child content within `header`.
+ */
+header {
+  padding: 1em 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h3 {
+  /* 14px margin top */
+  margin: 0.6666667em 0 0;
+}
+
+nav {
+  border-top: solid 1px #e1a61a;
+  border-bottom: solid 1px #e1a61a;
+  background-color: #ffda44;
+  background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
+  background-image: linear-gradient(#ffda44, #fabc2b);
+}
+
+nav h1 {
+  display: none;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 86em;
+  list-style: none;
+  list-style-image: none;
+}
+
+nav li {
+  margin: 0;
+  border-bottom: solid 1px #e1a61a;
+}
+
+nav li:last-child {
+  border-bottom: 0;
+}
+
+nav li:hover,
+nav li.active {
+  background-color: #ffe477;
+  background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
+  background-image: linear-gradient(#ffe477, #fbcc5d);
+}
+
+nav li:active {
+  background-color: #fabc2b;
+  background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
+  background-image: linear-gradient(#fabc2b, #ffda44);
+}
+
+nav a {
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  display: block;
+  padding: 0.5em 3.125%;
+  color: #333;
+}
+
+/**
+ * Styling for articles.
+ *
+ * 1. Prevent really, really long words in article from breaking layout.
+ */
+[role=&quot;article&quot;] {
+  margin-bottom: 2em;
+  /* 1 */
+  word-wrap: break-word;
+}
+
+/**
+ * Styling for sidebar.
+ *
+ * Initially the sidebar appears under main content, it is then repositioned
+ * with media queries at 2nd breakpoint.
+ *
+ * 1. Prevent really, really long words in article from breaking layout.
+ */
+[role=&quot;complementary&quot;] {
+  margin-bottom: 2em;
+  padding-top: 2em;
+  border-top: dashed 2px #ccc;
+  /* 1 */
+  word-wrap: break-word;
+}
+
+[role=&quot;search&quot;] p {
+  margin-top: 0;
+}
+
+/**
+ * Additional styling for child content within `footer`.
+ */
+footer {
+  padding: 0.5em 0;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * 1. Remove default underline style from non-hover state links.
+ * 2. Specify link colour.
+ * 3. Remove the gray background color from active links in IE 10.
+ */
+a {
+  /* 1 */
+  text-decoration: none;
+  /* 2 */
+  color: #114eb1;
+  /* 3 */
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+a:focus {
+  outline: thin dotted #06f;
+}
+
+/**
+ * Additional styling for child links within `header`.
+ */
+header a {
+  color: #333;
+  border-radius: 0.1190476em;
+}
+
+header a:hover, header a:active {
+  background: #e8e8e8;
+}
+
+[role=&quot;main&quot;] a:hover,
+[role=&quot;main&quot;] a:active,
+[role=&quot;complementary&quot;] a:hover,
+[role=&quot;complementary&quot;] a:active,
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+  color: #06f;
+}
+
+[role=&quot;main&quot;] a:visited,
+[role=&quot;complementary&quot;] a:visited,
+footer a:visited {
+  color: #183082;
+}
+
+/**
+ * Additional styling for `h1` heading links.
+ */
+[role=&quot;main&quot;] h1 a {
+  color: #333;
+  border-radius: 0.1190476em;
+}
+
+[role=&quot;main&quot;] h1 a:visited {
+  color: #333;
+}
+
+[role=&quot;main&quot;] h1 a:hover,
+[role=&quot;main&quot;] h1 a:active {
+  text-decoration: none;
+  color: #333;
+  background: #efefef;
+}
+
+/* Typography
+   ========================================================================== */
+
+body {
+  font-family: &quot;PT Serif&quot;, Georgia, serif;
+  /* 14px / 16px */
+  font-size: 0.875em;
+  line-height: 1.5;
+  color: #333;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  /* 28px */
+  font-size: 2em;
+  /* 34px / 28px */
+  line-height: 1.2142857;
+  letter-spacing: -1px;
+  /* 28px margin top/bottom */
+  margin: 0.6666667em 0;
+}
+
+h1:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  /* 21px */
+  font-size: 1.5em;
+  /* 28px / 21px */
+  line-height: 1.3333333;
+  /* 21px margin top/bottom */
+  margin: 0.75em 0;
+}
+
+h3 {
+  /* 18px */
+  font-size: 1.28571428571429em;
+  /* 26px / 18px */
+  line-height: 1.44444444444444;
+  font-weight: normal;
+  font-style: italic;
+  /* 16px margin top/bottom */
+  margin: 0.7619048em 0;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  /* 16px */
+  font-size: 1.1428571em;
+  margin: 0;
+}
+
+/**
+ * Additional styling for blockquotes.
+ */
+blockquote {
+  /* 16px */
+  font-size: 1.1428571em;
+  font-style: italic;
+  margin: 0.875em 0 0.875em 0;
+  padding: 1px 0.875em;
+  border-radius: 0.3571429em;
+  background: #fff6d3;
+}
+
+/**
+ * Add vertical margin to addresses.
+ */
+address {
+  margin: 1em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title],
+dfn[title] {
+  border-bottom: dotted 1px;
+  cursor: help;
+}
+
+dfn,
+mark,
+q,
+var {
+  padding: 0 0.2142857em;
+  border-radius: 0.2142857em;
+  color: #333;
+  background: #fff6d3;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn,
+q {
+  font-style: italic;
+}
+
+var {
+  font-weight: bold;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: Cousine, Consolas, &quot;Lucida Console&quot;, Monaco, monospace;
+}
+
+code,
+kbd,
+samp {
+  /* 13px */
+  font-size: 0.9285714em;
+  border: 1px solid #e3e3e3;
+  padding: 0 0.2307692em;
+  border-radius: 0.2307692em;
+  background: #f7f7f7;
+}
+
+pre {
+  /* 13px */
+  font-size: 0.9285714em;
+  overflow-x: auto;
+  border: 1px solid #e3e3e3;
+  padding: 1em;
+  border-radius: 0.3571429em;
+  background: #f7f7f7;
+  tab-size: 4;
+}
+
+pre code {
+  /* 13px */
+  font-size: 1em;
+  border: 0;
+  background: none;
+}
+
+/**
+ * Harmonise size and style of small text.
+ */
+small,
+figcaption,
+tfoot,
+.footnote {
+  /* 12px */
+  font-size: 0.8571429em;
+}
+
+figcaption,
+tfoot,
+.footnote {
+  color: #888;
+}
+
+figcaption {
+  margin-top: 0.3333333em;
+  font-style: italic;
+}
+
+/* Support for non-latin languages (can be removed if not required)
+   ========================================================================== */
+
+/**
+ * Preferred font for Japanese language.
+ */
+html[lang=&quot;ja-jp&quot;] {
+  font-family: &quot;Hiragino Kaku Gothic Pro&quot;, Meiryo, sans-serif;
+}
+
+/**
+ * Preferred font for Korean language.
+ */
+html[lang=&quot;ko-kr&quot;] {
+  font-family: GulimChe, Gulim, sans-serif;
+}
+
+/**
+ * Preferred font for Chinese (PRC) language.
+ */
+html[lang=&quot;zh-cn&quot;] {
+  font-family: SimHei, sans-serif;
+}
+
+/**
+ * Preferred font for Chinese (Taiwan) language.
+ */
+html[lang=&quot;zh-tw&quot;] {
+  font-family: PMingLiU, sans-serif;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Make embedded elements responsive.
+ */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 0;
+}
+
+/**
+ * Image alignment (compatible with Textile markup syntax).
+ *
+ * Example HTML:
+ *
+ * &lt;img class=&quot;align-left&quot;&gt;
+ * &lt;img class=&quot;align-right&quot;&gt;
+ * &lt;img class=&quot;align-center&quot;&gt;
+ */
+img.align-left {
+  float: left;
+  margin: 1em 1em 1em 0;
+}
+img.align-right {
+  float: right;
+  margin: 1em 0 1em 1em;
+}
+img.align-center {
+  display: block;
+  margin: 1em auto;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Styling of table captions.
+ */
+caption {
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+th,
+td {
+  border-bottom: solid 1px #ccc;
+  padding: 0.2857143em 0.5em 0.2857143em 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+thead th,
+thead td {
+  border-bottom: solid 2px #ccc;
+}
+
+tfoot th,
+tfoot td {
+  border-bottom: 0;
+  padding: 0.3333333em 0.5833333em 0.3333333em 0;
+}
+
+tfoot:last-child {
+  padding-right: 0;
+}
+
+/* Lists
+   ========================================================================== */
+
+/**
+ * Italicise definition terms.
+ */
+dt {
+  font-style: italic;
+}
+
+/**
+ * Additional styling for article lists.
+ *
+ * Example HTML:
+ *
+ * &lt;ul class=&quot;article-list&quot;&gt;
+ */
+[role=&quot;main&quot;] #article-list {
+  list-style: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+  border-top: solid 1px #ccc;
+}
+
+#article-list li {
+  border-bottom: solid 1px #ccc;
+  padding-top: 1em;
+  margin-bottom: 0;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Define consistent fieldset border, margin, and padding.
+ * 2. Address width being affected by wide descendants in Chrome, Firefox.
+ */
+fieldset {
+  /* 1 */
+  margin: 1em 0;
+  border: 1px solid #cccccc;
+  padding: 1px 1em;
+  /* 2 */
+  min-width: 0;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  /* 1 */
+  border: 0;
+  /* 2 */
+  padding: 0;
+}
+
+/**
+ * 1. Correct font properties not being inherited.
+ * 2. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 3. Prevent elements from spilling out of their parent.
+ */
+button,
+input,
+select,
+textarea {
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  max-width: 100%;
+  vertical-align: baseline;
+}
+
+/**
+ * Colour for placeholder text.
+ */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #888888;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #888888;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #888888;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type=&quot;search&quot;]::-webkit-search-cancel-button,
+input[type=&quot;search&quot;]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button:focus,
+a.button:focus,
+input:focus,
+input[type=&quot;button&quot;]:focus,
+input[type=&quot;reset&quot;]:focus,
+input[type=&quot;submit&quot;]:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 7px #0066ff;
+  box-shadow: 0 0 7px #0066ff;
+  /* Opera */
+  z-index: 1;
+}
+
+input[type=&quot;file&quot;]:focus,
+input[type=&quot;file&quot;]:active,
+input[type=&quot;radio&quot;]:focus,
+input[type=&quot;radio&quot;]:active,
+input[type=&quot;checkbox&quot;]:focus,
+input[type=&quot;checkbox&quot;]:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/**
+ * Styling of form input fields.
+ *
+ * 1. Remove iOS Safari default styling.
+ */
+textarea,
+input[type=&quot;color&quot;],
+input[type=&quot;date&quot;],
+input[type=&quot;datetime&quot;],
+input[type=&quot;datetime-local&quot;],
+input[type=&quot;email&quot;],
+input[type=&quot;month&quot;],
+input[type=&quot;number&quot;],
+input[type=&quot;password&quot;],
+input[type=&quot;search&quot;],
+input[type=&quot;tel&quot;],
+input[type=&quot;text&quot;],
+input[type=&quot;time&quot;],
+input[type=&quot;url&quot;],
+input[type=&quot;week&quot;] {
+  /* 1 */
+  -webkit-appearance: none;
+  font-family: Arial, Helvetica, sans-serif;
+  /* 12px */
+  font-size: 0.8571429em;
+  text-align: left;
+  border: solid 1px #ccc;
+  padding: 0.5em;
+  background: #fff;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+/**
+ * Remove padding from `color` fields.
+ */
+input[type=&quot;color&quot;] {
+  padding: 0;
+  height: 2.33333333333333em;
+}
+
+/**
+ * Inline search field on sidebar.
+ */
+[role=&quot;complementary&quot;] input[type=&quot;search&quot;] {
+  margin-right: 2px;
+  width: 66.666666666667%;
+  display: inline-block;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9/10/11.
+ * 2. Restrict to vertical resizing to prevent layout breakage.
+ */
+textarea {
+  min-height: 3em;
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+  /* 1 */
+  overflow: auto;
+  /* 2 */
+  resize: vertical;
+}
+
+/**
+ * 1. Correct `select` style inheritance in Firefox.
+ */
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  /* 12px */
+  font-size: 0.8571429em;
+  text-align: left;
+  border: solid 1px #ccc;
+  padding: 0.5em;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Override height set in a previous rule and allow auto heght.
+ */
+select[size],
+select[multiple] {
+  height: auto;
+}
+
+/**
+ * Normalise styling of `optgroup`.
+ */
+optgroup {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #333;
+}
+
+/**
+ * Remove excess padding in IE 8/9/10.
+ */
+input[type=&quot;checkbox&quot;],
+input[type=&quot;radio&quot;] {
+  padding: 0;
+}
+
+/**
+ * Make sure disabled elements really are disabled and styled appropriately.
+ *
+ * 1. Override default iOS opacity setting.
+ * 2. Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled],
+input[type=&quot;button&quot;][disabled],
+input[type=&quot;reset&quot;][disabled],
+input[type=&quot;submit&quot;][disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled],
+span.disabled {
+  /* 1 */
+  opacity: 1;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  user-select: none;
+  border: solid 1px #d2d2d2 !important;
+  text-shadow: none !important;
+  color: #888888 !important;
+  background: #eee !important;
+  top: 0 !important;
+  /* 2 */
+  cursor: default !important;
+}
+
+/**
+ * Width display options for `input` fields. Height display options
+ * for textareas.
+ *
+ * Example HTML:
+ *
+ * &lt;input class=&quot;small&quot;&gt;
+ * &lt;input class=&quot;large&quot;&gt;
+ */
+.small input {
+  width: 25%;
+  min-width: 151px;
+}
+.small textarea {
+  height: 5.5em;
+}
+.large input {
+  width: 50%;
+  min-width: 302px;
+}
+.large textarea {
+  height: 156px;
+}
+
+/* Buttons
+   ========================================================================== */
+
+/**
+ * 1. Address `overflow` set to `hidden` in IE 8/9/10/11.
+ * 2. Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ */
+button {
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  text-transform: none;
+}
+
+/**
+ * 1. Remove iOS Safari default styling.
+ * 2. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+[role] a.button,
+span.disabled,
+input[type=&quot;button&quot;],
+input[type=&quot;reset&quot;],
+input[type=&quot;submit&quot;] {
+  /* 1 */
+  -webkit-appearance: none;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  /* 12px */
+  font-size: 0.8571429em;
+  font-weight: normal;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  border: solid 1px #e1a61a;
+  border-radius: 0.3571429em;
+  padding: 0.5em 1em;
+  display: inline-block;
+  color: #333;
+  outline: 0;
+  background-color: #ffda44;
+  background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
+  background-image: linear-gradient(#ffda44, #fabc2b);
+  /* 2 */
+  cursor: pointer;
+}
+
+button:hover,
+[role] a.button:hover,
+input[type=&quot;button&quot;]:hover,
+input[type=&quot;reset&quot;]:hover,
+input[type=&quot;submit&quot;]:hover {
+  background-color: #ffe477;
+  background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
+  background-image: linear-gradient(#ffe477, #fbcc5d);
+}
+
+button:active,
+[role] a.button:active,
+input[type=&quot;button&quot;]:active,
+input[type=&quot;reset&quot;]:active,
+input[type=&quot;submit&quot;]:active {
+  position: relative;
+  top: 1px;
+  color: #1a1a1a;
+  background-color: #fabc2b;
+  background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
+  background-image: linear-gradient(#fabc2b, #ffda44);
+}
+
+#paginator {
+  margin-bottom: 2em;
+}
+
+#paginator .button {
+  padding: 0.25em 1em;
+}
+
+#paginator a.button {
+  text-decoration: none;
+  color: #333;
+}
+
+#paginator-l {
+  float: left;
+}
+
+#paginator-r {
+  float: right;
+}
+
+/* Comments
+   ========================================================================== */
+
+.comments {
+  margin-bottom: 1em;
+  border-radius: 0.3571429em;
+  padding: 1em 1em 1px;
+  background: #f7f7f7;
+  word-wrap: break-word;
+}
+
+.comments h4 .is-author {
+  font-weight: normal;
+}
+
+.comments h4 .comment-anchor {
+  float: right;
+  font-weight: normal;
+ }
+
+/**
+ * Additional styling for article author's comments.
+ */
+.comments-author {
+  background: #efefef;
+}
+
+/**
+ * Styling for user comments preview.
+ */
+#cpreview {
+  margin-bottom: 2px;
+  border-radius: 0.3571429em;
+  padding: 1em;
+  background: #fff3d6;
+}
+
+/**
+ * Highlight background colour for comment errors.
+ */
+.comments_error {
+  background: #fff4f4 !important;
+}
+
+/**
+ * Highlight text colour for comment errors.
+ */
+.error_message li {
+  color: #c00;
+}
+
+/**
+ * Styling for 'required' indicators.
+ */
+.required {
+  color: #c00;
+  cursor: help;
+}
+
+/* Popup comments (can be removed if you don't use popups)
+   ========================================================================== */
+
+#popup-page .wrapper {
+  padding-top: 0;
+}
+
+/**
+ * Restrict maximum width of popup container.
+ */
+#popup-page .container {
+  max-width: 52em;
+}
+
+}
+
+/**
+ * Addresses select alignment in Safari/Chrome.
+ */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+select,
+select[size=&quot;0&quot;],
+select[size=&quot;1&quot;] {
+  height: 2.2em;
+}
+
+select:not([size]),
+select:not([multiple]) {
+  position: relative;
+  top: -1px;
+}
+
+}
+
+
+/* ==========================================================================
+   Additional layout for screen media 490px and up
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+nav ul {
+  width: 93.75%;
+}
+
+nav li {
+  float: left;
+  border-right: solid 1px #e1a61a;
+  border-bottom: 0;
+}
+
+nav li:first-child {
+  border-left: solid 1px #e1a61a;
+}
+
+nav a {
+  padding: 0.5em 1em;
+}
+
+}
+
+
+/* ==========================================================================
+   Additional layout for screen media 672px and up
+   ========================================================================== */
+
+@media only screen and (min-width: 48em) {
+
+[role=&quot;main&quot;] {
+  float: left;
+  /* 592px / 960px */
+  width: 61.666666666667%;
+}
+
+[role=&quot;complementary&quot;] {
+  float: right;
+  border: 1px solid #e3e3e3;
+  border-radius: 0.3571429em;
+  padding: 1em 1em 0;
+  /* 290px / 960px */
+  width: 30.208333333333%;
+  background: #f7f7f7;
+}
+
+h1 {
+  /* 42px */
+  font-size: 3em;
+}
+
+h2 {
+  /* 28px */
+  font-size: 2em;
+}
+
+h3 {
+  /* 21px */
+  font-size: 1.5em;
+}
+
+blockquote {
+  float: right;
+  margin: 0 0 0.875em 0.875em;
+  /* 254px / 592px */
+  width: 42.905405405405%;
+}
+
+}
+
+
+/* ==========================================================================
+   Additional layout for screen media 1280px and up
+   ========================================================================== */
+
+@media only screen and (min-width: 80em) {
+
+body {
+  /* 16px */
+  font-size: 100%;
+}
+
+header,
+nav ul,
+.container,
+footer {
+  /* 1152px / 1280px */
+  width: 90%;
+}
+
+}
+
+
+/* ==========================================================================
+   Additional layout for screen media 1800px and up
+   ========================================================================== */
+
+@media only screen and (min-width: 112.5em) {
+
+body {
+  /* 18px */
+  font-size: 112.5%;
+}
+
+}
+
+
+/* ==========================================================================
+   Fix for reponsive embedded content in IE8
+   ========================================================================== */
+
+@media \0screen {
+
+img,
+video {
+  width: auto;
+}
+
+}
+
+
+/* ==========================================================================
+   Styling and layout for print media
+   ========================================================================== */
+
+@media print {
+
+/**
+ * Remove unnecessary global styling from printed media.
+ *
+ * 1. Black prints faster.
+ */
+* {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  /* 1 */
+  color: black !important;
+  text-shadow: none !important;
+  background: transparent !important;
+}
+
+/**
+ * Use a print-friendly font and size.
+ */
+body {
+  font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  line-height: 1.5;
+  margin: 0.5cm;
+  padding: 2em 5em;
+}
+
+/**
+ * Visually separate header from body.
+ */
+header {
+  border-bottom: solid 1pt black;
+}
+
+/**
+ * Visually separate footer from body.
+ */
+footer {
+  margin-top: 12pt;
+  border-top: solid 1pt black;
+}
+
+/**
+ * Hide unnecessary content from print.
+ */
+nav,
+audio,
+video,
+form,
+[role=&quot;complementary&quot;],
+#paginator,
+#comments-form,
+.comments h4 a:last-child {
+  display: none;
+}
+
+/**
+ * Make sure links are not underlined.
+ */
+a {
+  text-decoration: none;
+}
+
+/**
+ *  Show long-form for abbreviations in print.
+ */
+abbr[title]:after {
+  content: &quot; (&quot; attr(title) &quot;)&quot;;
+}
+
+h1 {
+  font-size: 32pt;
+  line-height: 36pt;
+  font-weight: normal;
+  margin: 0.5em 0;
+}
+
+h2 {
+  font-size: 18pt;
+  line-height: 23pt;
+  page-break-after: avoid;
+  orphans: 3;
+  widows: 3;
+  margin: 0.6666667em 0;
+}
+
+h3 {
+  font-size: 12pt;
+  line-height: 17pt;
+  page-break-after: avoid;
+  orphans: 3;
+  widows: 3;
+  margin: 0.6666667em 0;
+}
+
+/**
+ * Prevent widows (single final paragraph line on next page) and orphans (single
+ * first paragraph line on previous page).
+ */
+p {
+  orphans: 3;
+  widows: 3;
+}
+
+/**
+ * Harmonise size and style of small text.
+ */
+footer,
+figcaption,
+tfoot,
+small,
+.footnote {
+  font-size: 6pt;
+}
+
+/**
+ * Simple blockquote styling.
+ *
+ * 1. Avoid blockquotes breaking across mutiple pages.
+ */
+blockquote {
+  font-size: 16pt;
+  border-left: 3pt solid black;
+  padding: 0 0 0 8pt;
+  /* 1 */
+  page-break-inside: avoid;
+}
+
+/**
+ * Simple preformatted text styling.
+ */
+pre {
+  margin-bottom: 8pt;
+  border: solid 1pt black;
+  padding: 8pt;
+}
+
+/**
+ * Avoid user comments breaking across mutiple pages.
+ */
+.comments {
+  page-break-inside: avoid;
+}
+
+/**
+ * Use a print-friendly monospaced font and size.
+ */
+pre,
+code,
+kbd,
+samp,
+var {
+  font-family: &quot;Courier New&quot;, Courier, monospace;
+}
+
+/**
+ * Italic definitons, quotes and definition terms.
+ */
+dfn,
+q,
+dt {
+  font-style: italic;
+}
+
+/**
+ * 1. Ensure images are maximum possible width.
+ * 2. Avoid images breaking across mutiple pages.
+ */
+img {
+  /* 1 */
+  max-width: 100% !important;
+  /* 2 */
+  page-break-inside: avoid;
+}
+
+/**
+ * Image alignment (compatible with Textile markup syntax).
+ *
+ * Example HTML:
+ *
+ * &lt;img class=&quot;align-left&quot;&gt;
+ * &lt;img class=&quot;align-right&quot;&gt;
+ * &lt;img class=&quot;align-center&quot;&gt;
+ */
+img.align-left {
+  float: left;
+  margin: 1em 1em 1em 0;
+}
+img.align-right {
+  float: right;
+  margin: 1em 0 1em 1em;
+}
+img.align-center {
+  display: block;
+  margin: 1em auto;
+}
+
+/**
+ * Ensure margin below `figure`.
+ */
+figure {
+  margin-bottom: 8pt;
+}
+
+/**
+ * Ensure margin above `figcaption`.
+ */
+figcaption {
+  margin-top: 4pt;
+}
+
+/**
+ * Simple bullet styling for `ul` unordered lists.
+ */
+ul {
+  list-style: square;
+  padding: 0 0 8pt 1.8em;
+}
+
+/**
+ * Simple numerical styling for `ol` ordered lists.
+ */
+ol {
+  list-style: decimal;
+  padding: 0 0 8pt 1.8em;
+}
+
+/**
+ * Normalise margins on `dl` definition lists.
+ */
+dl {
+  padding: 0 0 8pt 1.8em;
+}
+
+/**
+ * 1. Ensure margin below `table`.
+ * 2. Make `table` span entire page width.
+ */
+table {
+  /* 1 */
+  margin-bottom: 8pt;
+  /* 2 */
+  width: 100%;
+}
+
+/**
+ * Harmonise styling for `caption`.
+ */
+caption {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 4pt;
+}
+
+/**
+ * Display table head across multi-page tables.
+ */
+thead {
+  display: table-header-group;
+}
+thead th {
+  border-top: 1pt solid black;
+}
+
+/**
+ * Avoid table rows breaking across mutiple pages.
+ */
+tr {
+  page-break-inside: avoid;
+}
+
+/**
+ * Simple styling for table cells.
+ */
+th,
+td {
+  border-bottom: solid 1pt black;
+  padding: 4pt 8pt;
+}
+
+}
+</pre>
+

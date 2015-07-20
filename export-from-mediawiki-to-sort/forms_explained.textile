@@ -1,0 +1,36 @@
+\nTextpattern "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms are predefined portions of text, Textpattern Tags, and/or HTML, which collectively define how content should be formatted and displayed. Textpattern forms are easily created in the "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms panel. Forms are used by the Tags that call them, via the
+
+bc(code). form=""
+
+
+attribute. Once you have a good grasp of Tags, Forms, and the relationship between, you'll begin to realize the seeming endless possibilities of how to customize your website's architecture and content.
+
+h3(sectionedit1#an_example). An Example
+
+bc(code). <txp:article form="single" listform="default" />
+
+
+This snippet dictates that the article should be displayed with the “default” form when the section is displaying a list of articles, but will use the “Single” form when displaying the individual article. You may modify this Form to your own liking, or keep this one and simply create a new one of your own.
+
+The default contents of “single”:
+
+<pre class="code">
+&lt;h3 class=&quot;entry-title&quot;&gt;&lt;txp:permlink&gt;&lt;txp:title /&gt;&lt;/txp:permlink&gt;&lt;/h3&gt;
+    &lt;p class=&quot;published&quot;&gt;&lt;txp:posted /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;entry-content&quot;&gt;
+&lt;txp:body /&gt;
+&lt;/div&gt;
+</pre>
+
+As you can see, this _Article_ form is composed of four different tags: "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title, "permlink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlink, "posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted and "body":/home/www/zendstudio/dokuwiki/bin/doku.php?id=body. If this form was used to output an article, it would result in something like the following (X)HTML:
+
+<pre class="code">
+&lt;h3 class=&quot;entry-title&quot;&gt;&lt;a href=&quot;http://your-website.com/article/my-article-title&quot; title=&quot;Permanent link to this article&quot;&gt;My Article Title&lt;/a&gt;&lt;/h3&gt;
+    &lt;p class=&quot;published&quot;&gt;3 May 2005&lt;/p&gt;
+
+&lt;div class=&quot;entry-content&quot;&gt;
+&lt;p&gt;The full body of the article text.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+

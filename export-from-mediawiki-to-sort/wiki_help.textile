@@ -1,0 +1,8 @@
+\n
+
+h3(sectionedit1#things_to_remember). Things to remember
+
+# Lines that begin with a space wil be treated as “wide”. This should be used sparingly, as it will make the whole page wide. It will also surround the text with the grey block. There's another case for it where it will be wide and monospaced (for code contributions.) Don't start a line with a space unless you realllly mean it.
+# Pasted from the community page because I couldn't find it initially. I think this is the right place for it.) "This link,":http://meta.wikimedia.org/wiki/Help:Editing#The_wiki_markup provides a table that summarizes the markup structure.
+# It doesn't seem like you can put formatting inside a wiki link (i.e. inside the double brackets)
+

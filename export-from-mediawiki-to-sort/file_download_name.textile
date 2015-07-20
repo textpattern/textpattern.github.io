@@ -1,0 +1,51 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:file_download_name />
+
+
+The "file&#95;download&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_name&gt; tag is a _single_ tag that Textpattern will replace with the name of the file to download. Should be used in a "download form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained or within a "file&#95;download&#95;link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_link tag.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#title=“boolean”*
+ Whether to display the file download name or its title Values:
+
+bc(code). 0
+
+
+(name), or
+
+bc(code). 1
+
+
+(title). Default:
+
+bc(code). 0
+
+
+.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_the_name_of_a_file_linked_to_download). Example 1: Display the name of a file, linked to download
+
+bc(code). <txp:file_download_link filename="my_presentation.pdf">
+<txp:file_download_name /> [<txp:file_download_size format="mb" decimals="2" />]
+</txp:file_download_link>
+
+
+Other tags used: "file&#95;download&#95;link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_link, "file&#95;download&#95;size":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_size
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_430). Version 4.3.0
+
+<ul>
+<li>bc(code). title
+
+
+<p>attribute added</p></li>
+</ul>
+

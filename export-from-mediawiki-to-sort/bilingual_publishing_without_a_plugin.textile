@@ -1,0 +1,150 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+Note: the following examples can, in theory, be applied for *tri*lingualism and, indeed, *multi*lingualism. Actually, they would involve geometrically growing levels of operational complication. Rather, the proper way to tackle the task of building a site with more than two languages points to "this feature request":/home/www/zendstudio/dokuwiki/bin/doku.php?id=multilingual_publishing, with the "Multilingual Publishing Pack":http://txpforge.org/projects/show/mlp as an elaborated and usable - although not flawless and 4.0.5 updated - answer. Stay tuned "here":http://forum.textpattern.com/viewtopic.php?id=20692 for the latest discussions on it.
+
+The following examples both point to what is called _mirroring_ i.e. using pairs of articles pointing to each other. Please note that this solves only the core of the bilingual problem as there are many other important details (related to category and section titles, date and time formats and so on) not yet discussed here.
+
+Both examples listed below are variations of one solution, involving the use of custom fields and conditional tags.
+
+h3(sectionedit1#solution_no_1). Solution no. 1
+
+Minutely explained "here":http://wion.com/articles/core-txp-technique-for-i18n-interests, is about using the urls of the mirrored articles, a number of custom fields equal to the languages used (two in this case) and two txp tags to obtain the link for mirroring.
+
+h3(sectionedit2#solution_no_2). Solution no. 2
+
+It is explained "here":http://forum.textpattern.com/viewtopic.php?pid=152240#p152240 and more explicitly below:
+
+It uses one custom field and two forms. Basically one has two articles: first has the id=1 and is written in English and the other has the id=2 and is written in Romanian. The purpose is to post on the website a link to the other article.
+
+(For more discipline, the English and Romanian content can be separated in different sections. Let's say we have the “home” section paired with the “english” section (and it could go on like this with other pairs.) Article id=1 is assigned to section “home” and article id=2 is assigned to section “english.”
+
+One way of creating a link in textpattern is to use the
+
+bc(code). <txp:article_custom />
+
+
+tag together with a form (named for example “link”) containing
+
+bc(code). <txp:permlink>link text</txp:permlink>
+
+
+.
+
+Thus to link to the article with the id=1 we use
+
+bc(code). <txp:article_custom id="1" form="link" />
+
+
+In our case to link from article 1 to article 2 we would have to use
+
+bc(code). <txp:article_custom id="2" form="link"/>
+
+
+and the reciprocal to link back. Also, the “link” form would have to be:
+
+bc(code). <txp:if_section name="english">
+<txp:permlink>Read in Romanian</txp:permlink>
+<txp:else />
+<txp:permlink>Read in English</txp:permlink>
+</txp:if_section>
+
+
+Now, to generalize, we use a custom field, naming it “ro-en”, and fill it with the id of the mirrored article. Thus _article 1_ has “2” in its “ro-en” custom field, and _article 2_ has “1” in its “ro-en” custom field.
+
+To get the mirroring link, we put the following tags wherever we want to show the reader to the other language version of an article:
+
+bc(code). <txp:if_custom_field name="ro-en">
+<txp:article_custom id='<txp:custom_field name="ro-en" />' form="link" />
+</txp:if_custom_field>
+
+
+As of version 4.0.7 Textpattern supports tags as attribute values. The instructions below are therefore no longer relevant.
+
+_(begin outdated instructions)_
+
+The ideal tag would look like this:
+
+bc(code). <txp:article_custom id="<txp:custom_field name="ro-en">" form="link" />
+
+
+But textpattern does not support tags in tags. To overcome this we adapt "this slick php trick":http://awasteofwords.com/article/textpattern-tags-in-tags-the-gordian-knot to look like this:
+
+bc(code). <txp:php>
+$a = custom_field (array ('name' => 'ro-en'));
+echo article_custom (array(
+    'id' => $a,
+    'form' => 'link'
+));
+</txp:php>
+
+
+and we put it in a form, not before containing it in a conditional that will let the link show only if the “ro-en” has any content. We name the form “lang”:
+
+bc(code). <txp:if_custom_field name="ro-en">
+<txp:php>
+$a = custom_field (array ('name' => 'ro-en'));
+echo article_custom (array(
+    'id' => $a,
+    'form' => 'link'
+));
+</txp:php>
+</txp:if_custom_field>
+
+
+That's it. Now, to get the mirroring link, we put the following tag wherever we want to show the reader to the other language version of an article:
+
+&lt;txp:output&#95;form form=“lang” /&gt;
+
+_(end outdated instructions)_
+
+You can see this last solution at work "here":http://misesromania.org/english/
+
+h3(sectionedit3#solution_no_3). Solution no. 3
+
+Textpattern developer Robert Wetzlmayr came up with this "following solution on his blog":http://awasteofwords.com/article/multi-lingual-articles-in-textpattern-a-poor-man-s-solution, which makes use of
+
+bc(code). <txp:variable />
+
+
+and therefore requires textpattern 4.0.7 and upwards.
+
+The idea is to put all localized renditions of a text into just one article and let Textpattern conditionally render either one or the other part of it, depending on the user-agentâ€™s Accept-Language preference.
+
+A form wisely named accept-language establishes a default language preference, tries to sniff out the visitorâ€™s language preferences subsequently, and finally stores the resulting language code into a Textpattern variable:
+
+bc(code). <txp:php>
+variable(array('name' =>'accept-language', 'value' => 'de'));
+$al = @$_SERVER['HTTP_ACCEPT_LANGUAGE'];
+if (preg_match('/(.*?)[,;-]/', $al, $a)) {
+    variable (
+        array (
+              'name' =>'accept-language', 
+              'value' => $a[1]
+        )
+    );
+}
+</txp:php>
+
+
+This form is placed somewhere above the content in question, either in the pageâ€™s template or at the very beginning of the article. Inside the articleâ€™s body, each localized fraction is surrounded by
+
+bc(code). <txp:if_variable name="accept-language" value="LANGCODE">
+
+
+tags. LANGCODE is one of the ISO languages codes like de, en, fr.
+
+<pre class="code">
+&lt;txp:output_form form=&quot;accept-language&quot; /&gt;
+&lt;txp:if_variable name=&quot;accept-language&quot; value=&quot;de&quot;&gt;
+
+German content goes here...
+
+&lt;txp:else /&gt;
+
+Non-german content goes here...
+
+&lt;/txp:if_variable&gt;
+</pre>
+
+Thatâ€™s all. For a live example, try visiting "this article":http://talkpress.de/blip/wet-maintenance-wordpress-plugin with different language preferences. All settings but de-&#42; would render an English version.
+

@@ -1,0 +1,46 @@
+\n"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Function Editing Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_function_editing_reference &#124; "txp&#95;defined&#95;functions&#95;by&#95;file&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions_by_file &#124; "TXP Defined Functions (Alphabetically)":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions
+
+h3(sectionedit1#about_this_page). About This Page
+
+This page is a reference for a function in the core code. Please note that it is possible that below information has changed since the last update, and as such, you should be sure to check out the "development browser":http://dev.textpattern.com/browser/ for the final definitive information about this function.
+
+h3(sectionedit2#general_information). General Information
+
+h4(#name). Name
+
+bc(code). r_encode_html()
+
+
+h4(#purpose). Purpose
+
+This function is part of the "textile":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textile class. It will escape all the html characters if "textile":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textile is not being run in restricted mode. If "textile":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textile is being run in restricted mode, the text will have already been escaped, so no changes will be made to the text.
+
+This function was added to the core after the release of 4.0.4, in "revision 1972":http://dev.textpattern.com/changeset/1972.
+
+h4(#location_in_source_code). Location in Source Code
+
+"textpattern/lib/classTextile.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:class_textile.php_file :: line 1084
+
+h4(#this_page_last_updated). This Page Last Updated
+
+ako 23:22, 21 October 2006 (UTC)
+
+h4(#information_retrieved_from). Information Retrieved From
+
+"$":http://www.ako-k.com/txpref/textpattern/lib/classTextile.php.source.html
+
+h3(sectionedit3#parameters). Parameters
+
+<ul>
+<li>bc(code). $str
+
+</li>
+<li>bc(code). $quotes=1
+
+</li>
+</ul>
+
+h3(sectionedit4#examples). Examples
+
+_(needed)_
+

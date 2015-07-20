@@ -1,0 +1,6 @@
+\n"mininav&#95;admin&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:lang-prefs-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:lang-prefs-tab.png
+
+This *_Languages_* view of the _Preferences_ panel is simply where you update your chosen languages file from upgrade to upgrade. The one that you activated during your initial installation of Textpattern will appear with a yellow background. You can also come here anytime to install a new language file as well, such as for multi-lingual publishing efforts.
+

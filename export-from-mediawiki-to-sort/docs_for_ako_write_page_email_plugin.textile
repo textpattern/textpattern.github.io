@@ -1,0 +1,20 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Plugin Archive Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive &#124; "plugins&#95;alphabetical&#95;by&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name &#124; "plugins&#95;grouped&#95;by&#95;purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose
+
+h3(sectionedit1#overview_of_plugin). Overview of Plugin
+
+Add a little link to the email tagbuilder on the write page of the TXP interface.
+
+h3(sectionedit2#general_instructions). General Instructions
+
+All you need to do is install and activate the plugin. Once it's been activated, the rest is automatic.
+
+h3(sectionedit3#examples_of_use). Examples of Use
+
+To use this plugin, all that needs to be done is follow the above instructions and activate the plugin. After activation, the rest is automatic.
+
+h3(sectionedit4#previous_versions). Previous Versions
+
+* "ako&#95;write&#95;page&#95;email-0&#95;1.txt0.1":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_write_page_email-0_1.txt0.1 (09/26/06)
+

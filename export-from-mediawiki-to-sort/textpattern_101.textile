@@ -1,0 +1,181 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+h4(#foreword). Foreword
+
+July 22, 2006
+
+This article was originally authored by Mark Norton (a.k.a. Remillard) on May 20, 2004, and hosted at "Musings of an Engineer":http://moae.org. It has been archived here and changes have been made for Wiki formatting and to adjust for newer versions of Textpattern. It is the author's hope that the tutorial aids newcomers to Textpattern in understanding the framework and methodology of the Textpattern CMS. If anyone has comments on the article, please check the “Discussion” tab at the top of the page. *(Edit: Some links are pretty out of date!)*
+
+h4(#a_brief_introduction). A Brief Introduction
+
+I created this essay as a means to get folks started with TXP after reading a lot of the questions on the support forums. It is not intended to be a particularly technical explanation about how to do very specific things. For that the forums are the best spot. This is intended to answer the sorts of questions that usually start out “It looks nice, what am I supposed to do now?”
+
+h4(#phase_1installation_or_the_honeymoon). Phase 1: Installation (or The Honeymoon)
+
+Alright. You're irritated with "Six Apart":http://www.sixapart.com/ and the fact that they are beginning to limit the free usage of their "Movable Type":http://www.movabletype.org/ product. You start looking around for alternatives and come across "WordPress":http://wordpress.org and it looks pretty okay, very similar to what you're used to.
+
+Or perhaps you are brand new to this world of electronic publishing. You only use a computer because otherwise you have wasted your parent's money on those typing lessons when you were a teenager. But, some part of you is unsatisfied until you are able to show the world how creative you really are, and so you venture out into the web log world looking for solutions.
+
+Somewhere, perhaps "Slashdot":http://slashdot.org or one of your other weblog friends tells you, “Hey, check out "Textpattern":http://www.textpattern.com, it's revolutionary, not evolutionary. It's got Textile, which surprisingly enough is not a home remodeling flooring product. It'll relieve all your publishing headaches. It'll grow hair on your chest. It'll wash your dishes and walk the dog. Plus it looks _so_ ... _damn_ ... *SEXY*.” And thus inspired, you grab a copy and unpack it and perhaps (if you are so bold) wipe out your entire previous log setup (and if you are even bolder, perhaps _mad_, doing this without making a *BACKUP*), and get "Textpattern":http://www.textpattern.com (hereinafter referred to as TXP because I'm bloody tired of making it a hyperlink) extracted, uploaded, or however you want to cram the thing onto your webspace.
+
+There are some *"basic":http://textpattern.com/download setup "instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_installation_instructions*, but compared to MT, it's a breeze, right? None of those Perl modules you pray your web admin installed. For the newcomer, perhaps grab your local geek and have him point a few things out. It's really very easy with the instructions, but if you are timid, there's usually a kid down at the local gaming store who will, for a few packs of _Magic: The Gathering_ cards, come help you.
+
+You load your site/textpattern/index.php, log in, and stare at the beauty of the interface. A title box. A entry box. An excerpt box. Exactly what you're used to. You write a little something and post it. You look at the default site, and...
+
+...it is frankly, less than completely aesthetically pleasing. Back to the TXP interface and we reach the next phase.
+
+h4(#phase_2the_interface_or_um_what_am_i_supposed_to_be_clicking_on). Phase 2: The Interface (or Um, What Am I Supposed To Be Clicking On?)
+
+The intrepid web logger will be looking for help text. After all, once you got past MT's basic layout, you had to figure out all those tags, and change the page template, the stylesheet, etc. You (if you weren't *mad* above) probably even have a backup copy of these things. Relax, it's pretty much works the same way... only a little different.
+
+The newcomer will also be looking for help text. Later versions of TXP have little ? boxes in various spots that will open contextual help. For the broad picture, this document is hopefully going to address that.
+
+On the TXP interface, there are a top row of tabs, and a second row of tabs. The top row are your basic task categories.
+
+*Content* is where you are going to write your stuff, expose your heart to the world, convert millions of political refugees to your point of view. If you click on Content, the next tab row will change to: Categories, Write, Articles, Images, Files, Links, and Comments.
+
+*Content:Categories* is where you are going to set up your categories. This is pretty much the categories you remember from other systems. If you are brand new to using publishing software, think of this as file folders for school. You'll have your English, Math, Science, and History binders. Whenever you write, create a link, or upload an image you can pick a category. Later, you can make TXP display these things separately if you want.
+
+*Content:Write* is where you are going to write your stuff. The basic options are pretty self explanatory. The Section drop down on the left will require a little further explanation but we'll get to that in a bit, don't worry. “Textile Help” is a little markup cheat-sheet. “Advanced Options” will require a little more later to explain fully.
+
+*Content:Images* is where you can upload images you want to use. You can do the basic sorts of images, and if you've created a thumbnail, you can upload that and have it stored in conjunction with the original.
+
+*Content:Links* is, which by now hopefully you're getting a feel for, where you are going to store links that you want to put on the site. Once again you can categorize these babies.
+
+*Content:Comments* is where you are going to manage comments, if you are so lucky as to have literate vistors coming to your site. Here the interface is pretty basic so I doubt we'll be coming back soon.
+
+Okay, pretty easy, huh? There's a reason for that. We as writers, commentators, photographers, and such are pretty familiar with these areas. This is _content_, this is the result of the creative process. It's going to feel very natural. The next tab, unless you are a creative content creator AND a geek, may be a little more daunting.
+
+*Presentation* is where you are going to create the look of your site. This is a little bit analagous to the opening screen in MT where you pick which log you want to work on, combined with the Templates page, with a little bit of TXP spice to make it just enough different to make you feel like you're in a different country. Once again, relax. You *are* in a different country, but it's a friendly one, and mostly we are all pretty nice and don't bite.
+
+*Presentation:Sections* is going to be a little confusing perhaps. There is a pretty detailed explanation of it in "Joel Dueck's article on TXP semantics":http://www.jdueck.net/articles/textpattern.html. I myself found it at once revelatory and thoroughly confusing depending on which portion of the learning process I was in. Basically though, sections (as it says in the help box) are like newspaper sections. And here, for those of you with a strange bent mind like myself, it is NOT talking about the little Weather section along the sidebar with the 5-day forecast. No, here we are talking about National, Local, Sports, and Comics. Each section is big and thick and (possibly) completely different from the each other. In MT terms, think of these sections, combined with content categories, as different logs, like you get on that front page. It's a lot more powerful than that, but it gets you into the ballpark.
+
+When you create a section, there are several options to play with, but possibly the most critical are “Page” and “Stylesheet”. These controls are what you are going to use to create that unique look to each portion of your site. For example, this tutorial is set up in its own section. If you find your way over to the navigation bar on the left and select “Musings of an Engineer”, this will take you to the main page of the site. You'll hopefully notice that the page layout and style changed dramatically between this essay and that page.
+
+Sections are a powerful way to categorize articles. Think of it as a meta-category. While you may have categories about your articles, this meta-category determines &#95;where&#95; your articles are going to show up. Each section will have its own page located at _"$":http://your.site.org/sectionname''. Additionally, if the section is marked as “Shows on Front Page” then as well as showing up on it's own section page, the articles will display on the front page as well._
+
+Once you get sections figured out, it'll be a snap (fingers or spine, depends on your outlook) to get something like a photo page set up, or completely different logs for different people.
+
+*Presentation:Pages* is where different page layouts are created. Back on the Sections tab if you'll remember, you got to pick what page you wanted to use. This is where you will edit the &#95;template&#95; for each page. If you are coming from the MT world, you'll hopefully be familiar with the idea of tags. For the newcomers, HTML tags control how the page will look. TXP tags control what &#95;content&#95; the page will have.
+
+HTML tags you can buy a ready reference for at your local bookseller. TXP tags... you *also* have a ready reference for. Dean Allen, the TXP author, has helpfully provided us with a basic cheatsheat of tags on the left hand side. For most options, when you need to insert _content_, you can click on one of these items. A web window will pop up and ask you some questions on what you want, and then it will translate that into the tag you need. A little cut-and-paste and you're home free. For more advanced uses, the "Textpattern Tags: A Manual for Impatient Users":http://kusor.com/en/txptagmanual/ is available and will go into a lot more detail about what each of these gizmos do. (Edit: more up to date is "alphabetical&#95;tag&#95;listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing)
+
+*Presentation:Forms* is a complex one and here is possibly one of the hardest tabs to explain. I'm afraid I may lose newcomer and old-hands alike, but hang on.
+
+Think of each individual chunks of content you create. It's possibly a link, or an article. This is the smallest portion of content that you will want to format. It's conceivable you will want to want this atomic chunk of content to have different ways of being displayed. Perhaps you sometimes want an article to display without its title? Perhaps you want a link to display not only the link but also the short paragraph of why it's so cool? Each “form” is a snippet of HTML and TXP code that controls how an atomic chunk of code will be displayed. Back on the “Presentation:Pages” tab, one of the the options you can add to many of the TXP tags, is the form you want to use for it.
+
+*Presentation:Style* is the place to control the stylesheet for the page and section. Back on “Presentation:Sections” along with what page template you want to use, you could also select which stylesheet you wanted to use. A discussion of stylesheets is WAY out of scope for this discussion, but once again, you can probably find a book about it at your local bookseller.
+
+This tab has a couple of different ways to edit the stylesheet. There's your basic edit box where you can handcraft your formatting. Additionally, there's a CSS editor that will break each element into its component attributes and let you edit it this way.
+
+Now that I've gotten you all very excited about the possibilities and craft of TXP, I need to calm you down with the slightly less exotic features of “Admin”.
+
+*Admin* is essentially all the backend sorts of things you might want to do.
+
+*Admin:Preferences* lets you specify the site name, domain, language, timezone, and various other options that are listed. The ? box help is very good here. One item in particular to pay attention to is the “URL Mode”. When you write an article, sometimes it's nice to be able to refer to it specifically. In messy mode, it will always work, however your URL to a specific article will not be very pretty. In clean mode, the URL will just be a basic section and the name of the article and very easy to read and use. However, in clean mode, it does levy a few more requirements on your web server admin, or it requires you to look in the forums for other ways of handling the issue. While you are getting the kinks worked out, messy is probably best. When you feel like you are more stable, I'd recommend clean.
+
+*Admin:Users* is where you will keep track of all the people that use your site for publishing. It's pretty self explanatory, so let's move on.
+
+*Admin:Logs* is where you can see all those porn sites pinging you to see if there are places they can add their advertisements to your comment lists. With any luck, you'll also see lots of regular visitors coming to view your hard creative work.
+
+*Admin:Plugins* is the spot where you can add some of the external TXP plugins that enthusiasts write to cover various areas they feel are deficient in the basic package. You can find out more about these in the Plugins forum at the "Textpattern Support Forums":http://forum.textpattern.com/.
+
+And lastly, *View Site* will pop open another window, and display your site whenever you like.
+
+*Brief Technical Note*: For the site admin, there is also _another_ place to configure TXP. In the lib/ directory of your TXP installation there is a file called admin&#95;config.php. In there are a few other configuration capabilities that are well explained in that file. These are very fundamental options and will probably only be set up when TXP is installed.
+
+h4(#phase_3how_txp_works_or_what_exactly_is_going_on). Phase 3: How TXP Works (or What Exactly Is Going On?)
+
+Some of this discussion is a little technical, so if you are simply a user of a TXP system that has already been set up and you don't care what is going on, feel free to skip ahead to Phase 4. I've added this section because there have been a few folks confused by what is going on in the background.
+
+Basically there are three core elements to TXP: PHP, MySQL, and Textile. Each of these deserves a little discussion.
+
+PHP is a powerful scripting language for web development. If you are more of a child of 1994 HTML (like I am), you will remember hand editing HTML files and those are what are served to the viewer by the web server. In TXP's case, this is a little different. Each file in TXP is a PHP script. When the user requests a file, the web server starts to run the script. The script creates the HTML file on-the-fly and sends it to the user. The page is 100% dynamic. It may seem as if this is not very efficient, but on most systems, this happens very quickly. The efficiency comes into play when you remember how much time it took to hand-edit each HTML file. In TXP, writing an article is all you need to do. The whole page and site layout happens automatically.
+
+And while we are talking about layout, this brings us to the Textile facet of TXP. Along with not having to hand edit HTML files, for the most part, you do not need to use HTML for your content format. Textile is a sort of meta-markup, a shorthand for simple formatting. There is a dropdown cheat sheet for Textile markers on the side in the Content:Write page for the simple stuff. Now occasionally to get what you are looking for, HTML will still be required. This is due to the fact that Textile is not completely perfect just yet. In my estimation however, it covers about 90% of commonly used HTML formatting. This saves time.
+
+The last main component is MySQL, an open-source database. This is where TXP stores everything about the site. And I mean &#42;everything&#42;. The articles are stored in the database. The comments are stored in the database. So are all the links, categories, preferences, and even the page templates and style templates. Everything is in the database. If you start poking around in the TXP installation directories, you'll realize there is not a scrap of static content (aside from config.php and lib/admin&#95;config.php) anywhere. If you wish to backup your site, you need to backup the database, not the installation. (With the exception of images, which are stored in the images/ directory.)
+
+This is somewhat different from "MT":http://movabletype.org. MT also uses MySQL as a backend. It uses Perl as the scripting for the engine. However, MT requires that the content be physically published. When you click the publish link, MT retrieves everything it needs from the database, combines it with some static content (template pages can be stored statically) and physically writes out each static page. When a viewer tries to retrieve a page, the webserver will find an HTML file and serve that.
+
+Which is better? It's hard to say and primarily up to personal preference. The 100% dynamic method can be a little slower when the web server machine and the database machine are not one in the same. For most folk though, the difference is negligible (we're talking 1-5 seconds). However, text that is marked Live will be completely accessible immediately and does not require that your site authors be responsible for the generation of the site. Content creation, and web site administration are separated. For a single user site, the person who is the admin and content creator, this may not be a big deal. For a site where there are multiple creators this is a *HUGE* deal.
+
+h4(#phase_4using_txp_or_it_s_very_pretty_but_what_should_i_do_now). Phase 4: Using TXP (or It's Very Pretty, But What Should I Do Now?)
+
+Alright, this is where it gets more complex, but at the same time, this is where the creativity kicks in and it gets really &#95;fun&#95;. However, to give those who are still a little blank a push, I can think of some ways to come at this problem (or should I say &#42;opportunity&#42;?) for both the newcomer and the old-hands alike.
+
+*_1. What do you want to do on this site?_*
+
+It's a mistake, really, to call TXP a web log engine. I've seen some really amazingly creative things done with this software. The “Let's See Yours Then” category at the "Textpattern Support Forums":http://forum.textpattern.com is basically a place to brag about your work, receive critiques, swap ideas and basically contribute to the overall fertile creative compost heap inside all of us. It would be an understatement to say that there is a gap between envisioning what you want, and actually producing it, but without some idea of where you want to go, you can wander in the wilderness for years.
+
+For basic blogging (there, I said it, I used the b-verb), you can probably start with the default page template, and default stylesheet and just evolve it into what you desire.
+
+For photo display, you may need to research some of the image tags and talk with others who have done this on the forums.
+
+For other things, just try to sketch it out on paper, and then start asking some questions.
+
+_Tools_
+
+* Brain : For CREATION.
+
+*_2. Decide on your sections and categories._*
+
+In your idea of what you want it to look like, think about how that information can be organized. Remember the discussion before about sections and categories.
+
+* Sections are going to control where your articles are displayed. This will likely be your primary way of categorizing content.
+* Categories don't control anything, but can be used to select specific content for customization.
+
+I personally only made a few sections and categories, and then have created more and more as I found more uses for them.
+
+For an example of section usage, you have to look no further than this page itself. It is a section of the MOAE website. The content here does not show up on the default/home page, and the content there does not show up here. I could make it so if I wished, but right now I want to keep them separate.
+
+For an example of category usage, perhaps you have a list of links outside the site. Call it “External Links”. You can list it on the page, but you realize that you really have more categories under External Links. So break out your links into “Linux”, “Go”, and “SCA” links. This is more fine tuned now, and you can control it on the page when you're ready to.
+
+Just have a blog category called “General” that everything goes into? Consider your audience. Do they all want to read about your cat and new baby, or your political views? Do they really want to read about how the work on the site is going? Maybe, but maybe not. You can create other categories for these things.
+
+_Tools_
+
+* Content:Categories : For setting all of these things up for posts and links and images and so forth.
+
+*_3. Decide how you want your site sections to look._*
+
+Maybe you want everything to be on the same page layout, but have a slightly different URL. You can create sections and just keep the page set to default. Or, perhaps you want your Cat and Baby stories to have a warm and soothing layout and color scheme (or dark and brooding, depending on your views of cats and babies), but you want your political ideas to be set in a layout with your national colors providing the context. Create sections and then create new pages for these things.
+
+The combination of categories and sections can be pretty powerful all over the map. And, we're not done yet.
+
+_Tools_
+
+* Presentation:Sections : for section creation
+* Presentation:Pages and Styles : for creating this structure and view
+* Your HTML reference book: for the basics
+* Your CSS reference book : for the not-so-basics
+* "alphabetical&#95;tag&#95;listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing: for some TXP specifics
+
+*_4. Decide on your navigation._*
+
+How do you want to move around? Do you want links along the top to switch between all of these? Maybe you don't WANT Aunt Velma reading about your involvement with the People's Front of Judea, but you know she'd really like to just hear about the baby, and maybe the cat. You might NOT want links switching between them all. The default page has a dropdown box where you can pick the category that gets displayed, which is another idea to consider.
+
+_Tools_
+
+* Content:Categories : This might be another category of link!
+* Content:Links : And this is where you might want to specify them
+* Presentation:Sections : TXP needs to know where they go.
+* Presentation:Pages : And the browser needs to see them too.
+
+*_5. Decide how you want your content viewed._*
+
+Here I'm not just talking about the grand scheme of the site, but we're back to that atomic content. For your posts, do you want it with a big title, and little date. Do you want to use excerpts? Do you want to allow comments? Just how do you want it formatted? If they are images, how should they be viewed? The territory is truly boundless.
+
+_Tools_
+
+* Presentation:Forms : This is where you tell how your atomic content is to be created.
+* Content:Write : There are options here under “Advanced Options” on controlling the form you want a particular post to use.
+* Presentation:Pages : And you can also usually specify form in the TXP tag.
+* "alphabetical&#95;tag&#95;listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing : Because it's so damn useful for these places in forms and pages where you want to control things.
+
+h4(#phase_5creating_content_and_overall_satisfaction_or_hooray_i_did_it_except_oh_there_s_a_tiny_thing_i_want_to_tweak). Phase 5: Creating Content and Overall Satisfaction (or Hooray! I did it... Except Oh There's A Tiny Thing I Want To Tweak)
+
+Well this is basically the end of the Textpattern 101 class. This should give a general overview of what to do, and how to go about it. There is a ton of material that this sits on, not the least of which is the HTML standards, and the CSS standards. However, Textpattern lets you get into the publishing part, and you can take your time with some of the nitty-gritty. It WILL be a learning process, but hopefully there will be more “Eureka!” moments than “Oh Crap!” moments.
+
+In parting, when you need more information there are several resources available. I've mentioned most of them, but I'll group them together here and perhaps add a few more.
+

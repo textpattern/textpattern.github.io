@@ -1,0 +1,47 @@
+\n
+
+h4(#synopsis). Synopsis
+
+Expand Textile syntax to accept a shorthand notation for referencing site-local content.
+
+h4(#feature). Feature
+
+Textile should contain a method of creating links to articles and files, as well as for calling images and thumbnails out of the textpattern repository, thus reducing the need for plugins like zem&#95;link or upm&#95;image.
+
+One possible solution: Any numerical reference following Textile's standard notation of links and images will be interpreted as an article's or image's id.
+
+h4(#syntax). Syntax
+
+<ul>
+<li>bc(code). !23!
+
+
+<p>would insert the image with id #23, accompanied with title, alt, width, height and other HTML attributes</p></li>
+<li>bc(code). "an article":23
+
+
+<p>would link to article #23</p></li>
+<li>bc(code). "&":23
+
+
+<p>would link to article #23, replacing the ampersand (or any other suitable special char) with the article's title</p></li>
+<li>additional syntax would be required to cover thumbnails and files.</li>
+<li>bc(code). (class), (#id), (class#id), {style}, [language]
+
+
+<p>modifiers would apply.</p></li>
+</ul>
+
+h4(#benefits). Benefits
+
+* Content authors could resort to textile and are not exposed to tags.
+* Reduce errors stemming from incorrectly nested &lt;txp&gt;-tags.
+
+h4(#caveat). Caveat
+
+Due to the dynamic nature of the referenced items, most of the referenced details will not be available at article edit time but have to be determined at page rendering time (for instance, a referenced item's title) just like the plugins have to do now.
+
+h4(#references). References
+
+"Textpattern Forum thread":http://forum.textpattern.com/viewtopic.php?id=11268
+

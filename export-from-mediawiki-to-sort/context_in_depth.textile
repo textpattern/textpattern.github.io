@@ -1,0 +1,144 @@
+\n_Excerpted from "this article":http://ipsedixit.net/txp/146/textpattern-context-in-depth by "Jeff Soo":http://ipsedixit.net/txp/. The full article includes demonstration and reference sections that are not reproduced here._
+
+h3(sectionedit1#overview). Overview
+
+h4(#terms_introduced_in_this_article). Terms introduced in this article
+
+** Context **
+ Conditions (i.e., state) affecting the output of Textpattern templates and tags. ** Global context *_or_* \\ ** Page context **
+ Context provided by the URL. ** Local context *_or_* \\ ** Tag context **
+ Context provided by Textpattern tags. ** Context-setting tag **
+ Tag that establishes a local context ** Context-sensitive **
+ Responsive to global or local context ** Static tag **
+ A Textpattern tag that is not context-sensitive ** Context elements **
+ Individual aspects of the total context. ** Implied context **
+ Aspects of global context that are inferred rather than given explicitly. ** Article context **
+ Context for a particular article. ** Section context **
+ Always required in global context. Determines the page template. Defaults to the “default” section. ** Image context **
+ Context for a particular image. ** Category context **
+ Context for a particular category. ** Image-category context **
+ Context for a particular image category
+
+*Context* is a term that crops up often in "Textpattern":http://textpattern.com/-related discussion and articles. “Context” has a special meaning in Textpattern (hereafter abbreviated “Txp”). It is, arguably, the key to understanding how Txp works. By extension, it is the key to understanding how to work _with_ Txp and to get the most out of it.
+
+This article aims to help all Txp users gain a better understanding of context. The focus is on how context influences content selection and information architecture, both globally and at the level of individual Txp tags. Txp beginners may find it heavy going, and may want to skim this part and skip ahead to the "demo":http://ipsedixit.net/context_demo/ to get a feel for how context works in practice, then return here for a more thorough reading.
+
+There's plenty for Txp experts to chew on as well. When I set out to write this article, I thought I already understood context rather well. I was wrong, and learned a huge amount in the process of trying to understand it well enough to explain it. The opening sections may seem obvious to experienced Txp users, but I encourage you to read through them, if for nothing other than my definitions of key terms.
+
+The article assumes basic familiarity with Txp, and of course with HTML, CSS, and how websites work, all prerequisites to building sites with Txp.
+
+h3(sectionedit2#behind_the_curtain). Behind the curtain
+
+_Or, a not-too-technical glimpse at Txp's inner workings_
+
+A traditional, “static”, website consists mainly of HTML files on a web server, each file matching a URL. If a web browser requests
+
+bc(code). example.com/about/staff.html
+
+
+, the
+
+bc(code). example.com
+
+
+server looks for a file named “staff.html” inside a top-level directory named “about”. If that file exists, the server simply sends its contents back to the web browser. If not, it sends the familiar “File Not Found” error message.
+
+A server hosting a Txp site works the same way, with one essential difference: if the browser requests a missing file, the server doesn't return an error message. Instead, it passes the request along to Txp, leaving Txp to decide what to send back to the browser.
+
+Txp is a script (i.e. program, or application) for manufacturing web pages. Send Txp a URL and it replies with a stream of HTML. To the browser, this looks exactly like the server output from a real HTML file. But there's no such file: Txp generates the HTML stream on the fly, every time it receives a URL. (If you're wondering why one would bother using a script to generate HTML, instead of simply putting the HTML files on the server, see "What is Textpattern CMS, and why should I use it?":http://ipsedixit.net/txp/112/what-is-textpattern-cms-and-why-should-i-use-it.)
+
+Txp is a typical CMS _(Content Management System)_ in that it stores its content, templates, and other design elements in a database. A Txp template is a mix of standard HTML and "Txp tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_basics, special placeholders for performing Txp functions (most of which involve pulling content from the database). When Txp receives a URL, it selects a template from the database and streams it back to browser, after replacing any Txp tags with their corresponding function output. The end result, from the browser point of view, is a normal HTML page.
+
+To Txp, a URL represents not a file request, but a set of conditions. Txp makes many decisions while generating an HTML page, and throughout the process Txp repeatedly refers back to those base conditions. That is, the URL provides the _context_ in which Txp works.
+
+*Developer note:* the term “global” is used throughout this article; unless otherwise noted it is used in its general sense, *not* the PHP sense. I.e., it refers to the state provided by the URL, *not* the state of any particular Txp global variable at a given point.
+
+The URL-provided context is a general state that applies throughout the page. In addition to this _global context_ (or _page context_), some Txp tags create their own _local context_ (or _tag context_), potentially overriding some aspects of global context  -  I will call such tags _context setting_. Some Txp tags base their output on the context, whether global or local; this class of tags is called _context sensitive_. For non-context-sensitive tags I will use the term _static tags_. Nearly all Txp tags are either context-setting or context-sensitive; some are both. Finally, there are a few Txp tags that neither affect context nor respond to it.
+
+We can think of a Txp site not as a collection of pages, but as a set of global contexts. The job of the Txp architect is to decide which contexts to offer the user, to create navigation elements that allow the user to choose among those contexts, and to construct templates and forms that deliver content suitable to each available context. The last step entails selecting, arranging, and configuring Txp tags to respond appropriately to global context while interacting through local contexts. This system of layered contexts is Txp's killer feature, the reason it is such a powerful and flexible system.
+
+h3(sectionedit3#context_elements). Context elements
+
+Txp offers several URL schemes (i.e., "Permanent Link Modes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences#permanent_link_mode). The basic function of all these schemes is to convert URLs to global contexts. URLs must be unambiguous, i.e., there must be only one global context for a given URL.
+
+The reverse need not be true: on most Txp sites there are two URLs for any given global context. That's because most sites aren't set to “messy” mode, but messy URLs work no matter the site's Permanent Link Mode preference. For example, on the author's website, these two URLs lead to the same page, i.e., give the same global context:
+
+* "$":http://ipsedixit.net/txp/131/parsing-global-context
+* "$":http://ipsedixit.net/?id=131
+
+h4(#implied_context). Implied context
+
+Messy mode isn't a popular URL scheme, partly because it isn't very user-friendly. Note the example above:
+
+bc(code). ?id=131
+
+
+tells almost nothing to a user, even a user familiar with "URL query strings":http://en.wikipedia.org/wiki/Query_string. But it's enough to give Txp the full global context. This isn't because
+
+bc(code). ?id=131
+
+
+is some kind of secret code (it means just what it seems  -  the page has the ID value 131), it's because some aspects of global context are inferred. I'll call such elements the _implied context_.
+
+To Txp, ID means article ID. So
+
+bc(code). ?id=131
+
+
+means that article #131 is part of the page's context. We can say the page has _article context_. It also has _section context_. Every Txp page must have section context; among other things, this determines which template is used. The messy URL doesn't state the section, so Txp infers the section context from the article ID  -  every Txp article is assigned to a section. (In this case it is the “txp” section, as you can also see by looking at the page's normal URL.)
+
+h4(#minimum_global_context). Minimum global context
+
+Now compare these URLs:
+
+* "$":http://ipsedixit.net/?s=txp
+* "$":http://ipsedixit.net/txp/
+
+As in the earlier example, both URLs point to the same page, or global context. Again, the messy URL makes the context clear: the “s” in the query string stands for “section”. No other context can be inferred from this information alone, so with these URLs the global context is simply the “txp” section.
+
+Section is the only required element of global context, so this example represents the minimum global context.
+
+h4(#category_context). Category context
+
+Txp version 4.3.0 introduced new context-related behavior, as my "Txp gallery demo":http://ipsedixit.net/txp_gallery/ shows. The context at these two URLs, the canonical version and its messy equivalent, gives an example:
+
+* "$":http://ipsedixit.net/txp_gallery/category/image/sleep/
+* "$":http://ipsedixit.net/txp_gallery/?c=sleep&context=image
+
+Note: the home page for site above is "$":http://ipsedixit.net/txp_gallery/. I.e., “txp&#95;gallery” is not part of the context.
+
+bc(code). context=image
+
+
+is misleading. The example page does not have _image context_, i.e., the context of a particular image. It has _category context_ (from the
+
+bc(code). c
+
+
+in the query string), the context of a particular category (“sleep”, in this case).
+
+bc(code). context=image
+
+
+refers to the category _type_, which would have been a better name for this parameter. (Indeed,
+
+bc(code). type
+
+
+is the attribute name that sets this in
+
+bc(code). category_list
+
+
+.) We could say the page has _image-category context_.
+
+h4(#default_section_context). Default section context
+
+Every Txp site has a special section called the “default section”. You can think of it as a sort of super-section, encompassing all other site sections.
+
+What about section context? Lacking either an implied section (as in the first example), or an explicitly stated one (as in the second), section context defaults to the “default” section. Hence the example page's global context is the “sleep” image category and the “default” section.
+
+h3(sectionedit4#context_in_action). Context in action
+
+Visit this article's associated "context demo":http://ipsedixit.net/context_demo/ to see the concepts above put into action.
+

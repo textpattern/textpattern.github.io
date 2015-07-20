@@ -1,0 +1,36 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+h3(sectionedit1#overview). Overview
+
+This chapter aims to provide site administrators with some useful knowledge once a Textpattern site is up and running.
+
+h3(sectionedit2#chapter_6_index). Chapter 6 Index
+
+* *6.1)* "Unicode Support (UTF-8)":/home/www/zendstudio/dokuwiki/bin/doku.php?id=unicode_support
+
+4.0.1 OK
+
+* *6.2)* "renaming&#95;the&#95;textpattern&#95;admin&#95;directory&#95;for&#95;added&#95;security":/home/www/zendstudio/dokuwiki/bin/doku.php?id=renaming_the_textpattern_admin_directory_for_added_security
+* *6.3)* User Accounts
+** &#42; *6.3.1)* "modifying&#95;user&#95;account&#95;roles&#95;and&#95;privileges":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modifying_user_account_roles_and_privileges
+*** *6.3.2)* "Resetting a Textpattern Admin Password in the MySQL Database":/home/www/zendstudio/dokuwiki/bin/doku.php?id=resetting_admin_password
+* *6.4)* Moving Textpattern Installations
+** *6.4.1)* "moving&#95;installation&#95;from&#95;subdirectory&#95;to&#95;domain&#95;root&#95;on&#95;the&#95;same&#95;server":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_subdirectory_to_domain_root_on_the_same_server
+
+4.0 OK
+
+* *6.4.2)* "moving&#95;installation&#95;from&#95;remote&#95;live&#95;server&#95;to&#95;localhost":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_remote_live_server_to_localhost
+
+4.0.1 OK
+
+* *6.4.3)* "moving&#95;installation&#95;from&#95;one&#95;host&#95;to&#95;another":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_one_host_to_another
+
+In progress
+
+* *6.5)* Multiple Installation Handling
+** *6.5.1)* "importing&#95;article&#95;content&#95;from&#95;one&#95;textpattern&#95;install&#95;to&#95;another":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_article_content_from_one_textpattern_install_to_another
+
+In progress
+
+* *6.5.2)* "creating&#95;multiple&#95;subdomain&#95;weblogs&#95;with&#95;one&#95;textpattern&#95;install":/home/www/zendstudio/dokuwiki/bin/doku.php?id=creating_multiple_subdomain_weblogs_with_one_textpattern_install
+

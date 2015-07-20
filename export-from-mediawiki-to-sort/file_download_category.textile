@@ -1,0 +1,50 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:file_download_category />
+
+
+The "file&#95;download&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_category tag is a _single_ tag that Textpattern will replace with the category of the file to download. Should be used in a "download form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#title=“boolean”*
+ Whether to display the category name or its title Values:
+
+bc(code). 0
+
+
+(name), or
+
+bc(code). 1
+
+
+(title). Default:
+
+bc(code). 0
+
+
+. *"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag text”*
+ HTML tag to be used to wrap the category with, specified without brackets. Default: unset. *"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“class name”*
+ CSS
+
+bc(code). class
+
+
+attribute to apply to the category
+
+bc(code). wraptag
+
+
+.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_a_category_name_following_category). Example 1: Display a category name following &quot;category:&quot;
+
+bc(code). <txp:text item="category" />: <txp:file_download_category />
+
+
+Other tags used: "text":/home/www/zendstudio/dokuwiki/bin/doku.php?id=text
+

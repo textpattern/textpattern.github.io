@@ -1,0 +1,261 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+h3(sectionedit1#a_-_d). A - D
+
+h4(#atom). atom
+
+A particular format for a news feed. See also _news feed_.
+
+h4(#api_application_programming_interface). API (Application Programming Interface)
+
+Textpattern does not yet have a formal API documented, however there are several functions internally that are available to plugins. Eventually Textpattern may have a fully documented API.
+
+h4(#article). Article
+
+See "articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles panel docs.
+
+h4(#boolean). Boolean
+
+A boolean value is one that is either true or false, on or off, yes or no, 1 or 0. Several Textpattern tag attributes accept boolean values, in the form of *0* or *1*.
+
+h4(#category). Category
+
+The category is a secondary method of classifying articles, and the main method for classifying images and links. Categories do not control where content appears, but many Textpattern tags, and plugin tags make use of categories for filtering content.
+
+h4(#chmod). chmod
+
+chmod stands for *ch*ange *mod*e; it is a process for changing the file permissions on a folder or file in a server hierarchy. Change mode permissions are set by giving the folder/file a 3-digit number (e.g., 764) using an SFTP client, Webmin, or some other utility that provides such capability. Permissions are of course set to control how a folder/file is used, and by whom. Each digit is a representation of *rwx*, which stands for *read*-*write*-*execute*, and each value of *rwx* has it's own numeric (and binary) value.
+
+There are three user categories who can have permissions on a folder/file, which correspond with each of the three digits. The three categories are:
+
+* *Owner*  -  who is the owner of the folder/file (gets the first digit).
+* *Group*  -  everyone who belongs to the same group as the owner (gets the second digit).
+* *World*  -  everyone else who might visit the folder/file (gets the third digit).
+
+It should be pretty clear that “owner” is you if you are the one who creates the folder/file (e.g., on your Web server, or hosts Web server), and it should be equally clear that “world” is anyone who visits your Web site to access a file for viewing, downloading, etc.; however, “group” might need a little more explanation. Let's say you are _owner_ Bob and you belong to _group_ Marketing: This model lets you do things like say Bob can *rwx* (read-write-execute) the file, Bob's _group_ (Marketing) can *rw* (read-write) the file, and everyone else in the _world_ can only *r* (read) the file. Such a setting would translate to a 3-digit number of 764.
+
+How do we know this value of 764? Because each number is itself a sum of values, each representing *r*, *w*, and *x* for that user category, as shown below:
+
+* Read ® = 4 (the ability to “read” a file is granted by the number 4 or the letter “r”)
+* Write (w) = 2 (the ability to “write” to a file is granted by the number 2 or the letter “w”)
+* Execute (x) = 1 (the ability to “execute” a file is set by the number 1 or the letter “x”)
+* None (-) = 0 (the setting to disallow all of the above is either zero (0) or a dash (-) )
+
+So looking again at our example above, we can do the math for each digit in the change mode setting of 764:
+
+* Owner (Bob) = rwx = r+w+x = 4+2+1 = 7
+* Group (Marketing) = rw = r+w = 4+2+0 = 6
+* World = r = 4+0+0 = 4
+
+It should be obvious by now that certain permissions are more secure than others, and the example above does not suggest that you should set all your folders/files to 764. This description is provided to explain what change mode is and why you might be needing to change one if asked by a Web host provider, or as explained in a Textpattern tutorial.
+
+h4(#clean_urls). Clean URLs
+
+(moved to )
+
+h4(#comments). Comments
+
+The term _comments_ refers to the response a visitor might choose to add to an article you post on your site (assuming you provide the ability for the visitor to do so). In essence, the visitor is _commenting_ on what it is you were writing about. Comments have proven to be a very significant aspect of any given Web site that provides such capability, and there are certainly pros and cons to implementing them. Comments can help generate a loyal base of visitors to your site, and they can often be rich with additional information supporting what you were originally writing about (especially if your site becomes quite popular). On the darker side of things, comments have been increasingly utilized by spammers, which is problematic in many respects, not the least of which is the necessity on your part to constantly monitor the commenting activity on your site.
+
+h4(#conditional_tag). Conditional Tag
+
+See
+
+h4(#container_tag). Container Tag
+
+See
+
+h4(#custom_fields). Custom Fields
+
+Custom fields are ancillary database fields linked to an article that have no specific pre-defined purpose. Textpattern currently permits 10 custom fields to be defined, and there are many plugins that permit article manipulation based on the content of custom fields.
+
+h4(#domain_nameservers). Domain Nameservers
+
+(Definition needed.)
+
+h3(sectionedit2#e_-_h). E - H
+
+h4(#excerpt). Excerpt
+
+See "write":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write panel docs.
+
+h4(#file_transfer_protocol). File Transfer Protocol
+
+_File Transfer Protocol_ (FTP) is most commonly understood as a means of electronically moving data files from one location to another, usually between remote locations connected via the Internet.
+
+There are a couple of protocols that are usually relevent: one is FTP itself, which is very common but can also be unsecure, and the other is _Secure File Transfer Protocol_ (SFTP), which is much more secure but requires special server arrangements and an SFTP client that is compatible. The thing to be aware of is that not all Web hosts support SFTP protocols, in which case you do not have much choice but to use a regular FTP client. For Web hosts that do support SFTP, you need to use an SFTP client, a regular FTP client will not work. Some clients may provide both FTP and SFTP cabilities, but you'll have to investigate that on your own. Also, there is kind of server arrangement where regular FTP is used over Secure Socket Layer (SSL), which provides more security than regular FTP, but less than a full SFTP arrangement. (Note: "TextDrive":http://www.textdrive.com/ Web hosting supports SFTP.) The bottom line is always try and go with SFTP if you can, but if your Web host doesn't allow it, then you'll need to use regular FTP. Following are a few clients, free or otherwise (please add your favorite to the list):
+
+* *WINDOWS*
+** *FTP Clients*
+*** "SmartFTP":http://www.smartftp.com/ (About $30 U.S., but is very intuitive, attractive, and the latest version provides FTP over SSL security mentioned above. Latest release seems to work with TextDrive as well.)
+** *SFTP clients*
+*** "WinSCP3":http://winscp.sourceforge.net/eng/index.php (Free, but is strictly secure-connection oriented; will not work with Web hosts that do not support SFTP server arrangements.)
+*** "FileZilla":http://filezilla.sourceforge.net/ (details?)
+*** "CoreFTP-LE":http://www.coreftp.com/ (Free and robust, serving all forms of FTP; nice looking interface too.)
+*** ???
+
+* *MACINTOSH*
+** "Transmit":http://www.panic.com/transmit/ FTP and SFTP (Feature packed: Batch downloads, Synchronization, Remote text and image Editing - $30)
+** "Fetch":http://www.fetchsoftworks.com/ FTP and SFTP (Stable, basic, easy to use, very good - $25)
+** "CyberDuck":http://cyberduck.ch/ FTP and SFTP (Open source. Interface is uncluttered and intuitive.)
+** "YummyFTP":http://www.yummyftp.com/ FTP and SFTP (Relative newcomer, but still good - $25)
+** "Fugu":http://rsug.itd.umich.edu/software/fugu/ SFTP only (Only for Secure FTP, it's a basic GUI that works well)
+** "FTPeel":http://freshsqueeze.com/products/ftpeel/ FTP and SFTP and FTP-SSL (Really cool FTP, Magic Mirror feature is killer - $20)
+
+h4(#form). Form
+
+See "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms panel docs.
+
+h4(#forum). Forum
+
+Usually refers to the "Textpattern Support forum":http://forum.textpattern.com/.
+
+h4(#ftp). FTP
+
+See "File Transfer Protocol":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#file_transfer_protocol.
+
+h4(#hack). Hack
+
+A hack is a 3rd party modification to the basic Textpattern code to accomplish something that is not yet currently designed into Textpattern. Some common hacks include changing the Textpattern administration page layout, and including the capability to upload generic files into the Textpattern system (as opposed to only uploading images).
+
+h3(sectionedit3#m_-_p). M - P
+
+h4(#messy_urls). Messy URLs
+
+(moved to )
+
+h4(#news_feed). News Feed
+
+A news feed (or just “feed”) is a means to distribute up-to-date information about a web site without a reader actually visiting it. Many programs (called _aggregators_, but often referred to as _news readers_) permit aggregation of news feeds from many sources (i.e., articles are essentially _pushed_ to the news reader), and the reader can browse through the list and select the content that is most interesting. Really Simple Syndication (RSS) and Atom are two formats for news feeds that Textpattern supports. To implement a feed in your own Textpattern site, you need to use the Textpattern
+
+bc(code). <[[txp:feed_link_:]]>
+
+
+tag.
+
+h4(#override_forms). Override Forms
+
+This feature (accessible in the write tab) will *override any forms that are assigned to an article-related tag* in the page template of a section.
+
+Textpattern uses *forms to control the display of an article*. You define forms to control where the header should appear, if there should be an excerpt or an article body etc.
+
+If you use the blank
+
+bc(code). <txp:article />
+
+
+tag, TXP will use the form named “default” to control the display of the article. You can also choose a form inside the tag, like this:
+
+bc(code). <txp:article form="form_name" />
+
+
+which will then be used for all articles in that section.
+
+If, however, you want to use a *special form only for one or for a small set of articles* you can use the *override form* feature to assign that form to the article while you write it. This will override any forms that you assigned to the article tag in the page template.
+
+h4(#page). Page
+
+The template by which a section's content may be formatted. The page template is the closest analogue to a regular XHTML file inside of Textpattern.
+
+h4(#permlink). Permlink
+
+Short for “permanent link”. Each article that is pusblished with Textpattern is given a unique location on your site defined by its _Uniform Resource Location_ (URL) (i.e. its web address). This location is referred to by a permnent link. So if you publish an article it will always be reachable by the URL given to it according to the permlink scheme that you chose in the preferences section.
+
+Based on that choice, a permlink might contain the name of the section your article was published in if you chose
+
+bc(code). /section/id/title
+
+
+or it could be a date-based permlink if you chose
+
+bc(code). /year/month/day/title
+
+
+. Other options are available.
+
+h4(#ping). Ping
+
+Ping refers to the automatic update of various weblog related sites that keep track of recently updated content. Textpattern currently pings "ping-o-matic":http://www.pingomatic.com whenever an article is posted live.
+
+h4(#plugin). Plugin
+
+See "what&#95;is&#95;a&#95;plugin&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=what_is_a_plugin
+
+h3(sectionedit4#q_-_t). Q - T
+
+h4(#rss). RSS
+
+_RSS_ stands for _Really Simple Syndication_, and represents a particularly formatted _eXtensible Markup Language_ (XML) file. These files are often referred to as _news feeds_ (or simply “feed”). When RSS files are implemented in a Web site (particularly in Web sites where articles are often published), it makes the published articles available to anyone with a an application called an aggregator (or more understandably: a _feed reader_ or _news reader_). A _news reader_ can pick up the feed on a given Web site making it easier for users to find and read the sit's articles; the _news readers_ can be customized to select only the feeds a user in interested in. See also "News Feed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#news_feed.
+
+h4(#section). Section
+
+Definition merged into "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections page.
+
+h4(#secure_shell). Secure Shell
+
+Secure Shell (SSH) is an Internet information transfer protocol in the form of a client program that allows you to log into another computer over a network, to execute commands in a remote machine, and to move files from one machine to another. It provides strong authentication and secure communications over unsecure channels. It is intended as a replacement for rlogin, TelNet, RSH, and RCP, and can also be used instead of SFTP. Additionally, SSH provides secure X connections and secure forwarding of arbitrary TCP connections. Two reasonably popular SSH clients are "OpenSSH":http://www.openssh.com/ and "PuTTY":http://www.chiark.greenend.org.uk/~sgtatham/putty/.
+
+h4(#sftp). SFTP
+
+_Secure File Transfer Protocol_ (SFTP) is a more secure form of _File Transfer Protocol_ (FTP). See "File Transfer Protocol":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#file_transfer_protocol for more information.
+
+h4(#single_tag). Single Tag
+
+See
+
+h4(#style). Style
+
+This is the term Textpattern uses to refer to a _Cascading Style Sheet_ (CSS) file, or _stylesheet_. A CSS file is a text-format file written as a set of rules that define the presentational aspects of each object or element on your Web site (e.g., divisions, headers, fonts, tables, forms, etc.). In Textpattern, the style is kept in the MySQL database and managed in the *_presentation &gt; style_* area of the Textpattern administration. Styles (along with a few nice images) are what make your Web site nice to look at.
+
+h4(#subversion). Subversion
+
+"Subversion":http://en.wikipedia.org/wiki/Subversion_(software) (SVN) is a version control system designed specifically to replace "$":http://en.wikipedia.org/wiki/Concurrent_Versions_System CVS, which is considered to have many deficiencies.
+
+You might be interested in the following references:
+
+*Official:*
+
+* "The Subversion Project":http://subversion.tigris.org/
+* "Subversion Handbook":http://svnbook.red-bean.com/
+* "Subversoin FAQ":http://subversion.tigris.org/faq.html
+* on IRC at "$":irc://irc.freenode.net/svn
+
+*Homegrown:*
+
+* "TextBook Subversion Docs":http://textpattern.net/wiki/index.php?title=Designer_and_Developer_Interests#Using_Subversion_.28SVN.29
+* Textpattern Subversion "current/stable working copy":http://dev.textpattern.com/trac.cgi/wiki/TxpDevSubversion
+* Jason Hoffman's "&quot;How I upgraded my Textpattern at TextDrive&quot;":http://forum.textdrive.com/viewtopic.php?id=875
+
+*Utilities:*
+
+* Win diff utilities ("BeyondCompare":http://www.scootersoftware.com and "WinMerge":http://winmerge.sourceforge.net
+* "TortoiseSVN":http://tortoisesvn.tigris.org (a Windows SVN Graphical User Interface (GUI) application)
+* "OS X SVN utilities":http://subversion.tigris.org
+* "Fink":http://fink.sourceforge.net
+* "svnX":http://www.lachoseinteractive.net/en/community/subversion/svnx/features)
+
+h4(#tag). Tag
+
+See:
+
+* "alphabetical&#95;tag&#95;listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing (soon to be replaced)
+* (the new reference coming in TxB)
+
+h4(#textile). Textile
+
+Textile is a form of editorial markup that makes writing eXtensible Hypertext Markup Language (XHTML) a lot easier, particularly for users who don't know XHTML. Textile is used (when chosen to be used, but is on by default) in "write&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write_subtab) panel of the administration area when drafting or editing an article. Complete details about Textile can be found on the "Textile":http://textile.thresholdstate.com/ page of Threshold State.
+
+h4(#textpattern). Textpattern
+
+A powerful, lightweight, content management system, and the _prodigal child_ of Dean Allen. Get it at "Textpattern":http://textpattern.com/.
+
+h4(#txp). TxP
+
+A commonly used - but inaccurate - acronym for Textpattern. It assumes _Textpattern_ is spelled as TextPattern, which is also incorrect. The “p” is not capitalized. Other witnessed acronyms are TXP (also incorrect) and increasingly *Txp*, which is the correct version.
+
+The confusion about this acronym - and the letter case of the word Textpattern - likely started because of Textpattern's logo, which is in all-caps, but even there you'll see that the first letter, “T”, is taller than the rest of the letters (including the “p”).
+
+Another possible reason there is confusion about how _Textpattern_ is actually spelled is _perpetuation_. Where the word Textpattern is used in untold numbers of Web sites, the spelling is often as TextPattern, which likely starts a chain reaction to spell it that way when people come across the word for the first time.
+
+A likely third reason for the mispelling may be due to the many other Textpattern spin-off projects, such as "TextBook":http://textbook.textpattern.net, "TextGarden":http://textgarden.org/, "TXP Mag":http://txpmag.com/, "TxPun":http://txpun.com/, and so forth, which have intentionally adopted alternate spellings. People may see these other project labels and just assume Textpattern follows the same model, but it does not.
+

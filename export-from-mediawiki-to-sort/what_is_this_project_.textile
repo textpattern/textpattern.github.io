@@ -1,0 +1,136 @@
+\n
+
+h3(sectionedit1#what_is_this_project). What is this Project?
+
+"Project started here with Anark's First Post]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:forum.textpattern.com_viewtopic.php&pid=101399#p101399
+
+"Official Project Forum Post]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:forum.textpattern.com_viewtopic.php&pid=102370#p102370
+
+*Concept: A directory or table of contents of TeXtPattern-related entities as they currently exist on the web.*
+
+It's a map. Or an index. Or both. It could be “just” an index, a table of contents and/or it could “manifest” into a graphic representation of Textland/TextPlanet/TextUniverse/TextGalaxy/TextWorld. I any case it's a top-level index/Table of Contents of *ALL THINGS TEXTPATTERN*.
+
+It could be “a kind of pretty index, I guess, and Ã¢â‚¬Å“booksÃ¢â‚¬? and Ã¢â‚¬Å“indexesÃ¢â‚¬? go hand in hand.” (Destry)
+
+Ultimately it could include Textpattern related sites and projects, information about their leaders and contributors, bios, skills, project and/or site purposes, technologies employed, etc.
+
+h4(#criteria). Criteria
+
+The Index/Map should be:
+
+* comprehensive
+* easily updatable (a database)
+* easily (re) skinnable
+* located at root of an official Textpattern site
+* usable
+* accessible
+* interoperatable
+
+h4(#considerations). Considerations
+
+The index could represent a community consensus of *who's who* and *what's what* in the Textpattern Community. A certain aesthetic/professional rating critera could be applied to the final decisions on what is included. (ie we might need to stop short of including every Textpattern install on the net). It's possible that we could instigate a competetive critera to the top {insert # here} Designers/Most Popular/Most Stable/Creative/Prolific/Best Sites/Hot Plugins/etc.
+
+Whether represented graphically or as plain text the main content categories are (most likely to be) as follows:
+
+* Documentation
+* Development
+* Design (e.g., TextGarden)
+* Community (e.g. TxPMag)
+
+h3(sectionedit2#one_possible_configuration_a_place_to_start). One Possible Configuration/A Place to Start
+
+h4(#tier_one). Tier One
+
+Different Efforts:
+
+* sites
+* projects
+* groups
+
+h4(#tier_two). Tier Two
+
+A more detailed presentation:
+
+* past achievements
+* future aims
+* present state of play
+* the toys being played with
+* tools being tooled with
+* whoÃ¢â‚¬â„¢s involved in what capacity
+* whoÃ¢â‚¬â„¢s in charge of the Effort
+
+h4(#tier_three). Tier Three:
+
+Bio pages:
+
+* who these people
+* what theyÃ¢â‚¬â„¢re doing
+* which Efforts theyÃ¢â‚¬â„¢ve been contributing to
+* how they can be contacted
+
+h3(sectionedit3#possible_timeline). Possible Timeline:
+
+PHASE ONE: (Target Completion: May 31st, 2006)
+
+(1) Define Project Scope (2) Create Collection Methodologies (3) Collect Data
+
+PHASE TWO (Target Completion Date: July 15th, 2006)
+
+(1) Skin Data
+
+PHASE THREE
+
+(1) Launch (Target Date: August 1st, 2006)
+
+h3(sectionedit4#visuals). Visuals:
+
+= Tubepatterns: =
+
+"$":http://samisdat.org/subway-css.html
+
+= Various Subway Map images: =
+
+"$":http://www.tfl.gov.uk/tfl/pdfdocs/colourmap.gif/ "$":http://www.geofftech.co.uk/tube/sillymaps/ "$":http://www.geofftech.co.uk/tube/index.htm
+
+= Bastian's Experiments and Demos: =
+
+Google Map: "$":http://samisdat.org/subway.html "$":http://samisdat.org/subway-css.html
+
+= PHP/SWF: =
+
+"$":http://www.maani.us/charts/index.php?menu=Gallery
+
+= C.L.'s Subway Map: =
+
+"$":http://ieverett.com/textland/txpMap1.3-6.png/
+
+= C.L.'s TOCs =
+
+* TOC1:
+
+"$":http://ieverett.com/article/master-txp-toc
+
+* TOC2:
+
+"$":http://ieverett.com/article/toc-draft-2
+
+* TOC3:
+
+"$":http://ieverett.com/mindmaps/freemindbrowser.html
+
+= Google Maps: =
+
+"$":http://ieverett.com/textland/GoogleMapDemos4TxpToc.zip "$":http://maps.google.com/
+
+= Google Map Technology: =
+
+"$":http://bluweb.com/us/chouser/gmapez/
+
+= SimCity Approach: =
+
+"$":http://www.visitorville.com/ss.html
+
+= JpGraph is a Object-Oriented Graph creating library for PHP: =
+
+"$":http://www.maani.us/charts/index.php?menu=Gallery
+

@@ -1,0 +1,43 @@
+\n &#42;
+
+bc(code). <txp:search_input />
+
+
+now accepts a
+
+bc(code). form=""
+
+
+parameter to use a named form for output
+
+<ul>
+<li><p>Added</p>
+bc(code). <txp:site_slogan />
+
+
+<p>as a Useful tag</p></li>
+<li>Added an option in CSS to 'copy as...' the current style sheet</li>
+<li>Added an option to 'save as...' while editing raw CSS data</li>
+<li>Added an option to limit recent&#95;articles output by category (thanks michaeln3)</li>
+<li>Added missing whitespace between 'a' and 'href' in messy tag output for recent&#95;articles</li>
+<li>Added new form category 'misc' for search inputs, etc</li>
+<li>Fixed a 'txpath' variable collision error when previewing article forms</li>
+<li>Fixed a failure when saving new css files</li>
+<li>Fixed a problem in the 'write' window where page top and css would disappear when paging through articles or changing sort order</li>
+<li>Fixed a problem where changed section names weren't being saved</li>
+<li>Fixed a problem where properties were disappearing from the CSS editor when they carried a value of '0'</li>
+<li>Fixed an 'undefined Title' error when posting a new article</li>
+<li>Fixed how Textile handles article titles</li>
+<li>Fixed incorrect time offset display in Txp comments editor</li>
+<li>Improved the behaviour of article searches in write tab</li>
+<li>Installer now does a better job defining doc&#95;root (though it should still be confirmed)</li>
+<li>Keyed (almost) all remaining hard-coded text in the Txp interface to the lang file (thanks to mamash for the help)</li>
+<li>Removed some extremely supercilious log entries from the sql installer</li>
+<li><p>The tags category&#95;list, recent&#95;articles and related&#95;articles should now be able to accept the parameters</p>
+bc(code). wraptag="ul" break="li"
+
+
+<p>and produce a well-formed list</p></li>
+<li>Values in the popup selectors presented when building tags are now in alphabetical order</li>
+</ul>
+

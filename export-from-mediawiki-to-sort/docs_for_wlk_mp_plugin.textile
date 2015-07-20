@@ -1,0 +1,65 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Plugin Archive Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive &#124; "plugins&#95;alphabetical&#95;by&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name &#124; "plugins&#95;grouped&#95;by&#95;purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose
+
+h3(sectionedit1#overview_of_plugin). Overview of Plugin
+
+This plugin helps the designer of a textpattern-based site make useful image blocks from multiple images or categories. The idea and some of the code came from Harvery Kane's A List Apart article. Walker Hamilton ported the first version into a textpattern plugin.
+
+This was seen as a plugin for a magazine style site.
+
+h3(sectionedit2#archived_zip_instructions). Archived Zip Instructions
+
+# Download and unzip the archived zip package.
+# Upload the .txt file to your Txp plugins panel.
+# Upload the .php file in your Txp files panel.
+
+h3(sectionedit3#general_plugin_instructions). General Plugin Instructions
+
+Place the &lt;txp:wlk&#95;mp /&gt; tag in an article, form or page. Attributes
+
+width - specify entire width of magazine box.
+
+padding - specify padding between images
+
+alt - specify yer alt tag (I'm just putting this in there)
+
+number - use only if specifying category, is the number of images you want returned. ( Defaults to 3 )
+
+sort - use only if specifying category, can be 'ASC', 'DESC', or 'RAND()'. ( Defaults to 'RAND()' )
+
+images - specify your images by id from the images list. should be a list of numbers, pipe-delimited (Ex. images = “1&#124;5&#124;8&#124;12&#124;16” )
+
+or.....
+
+category - specify a category from which to draw images (draws randomly is sort is not specified).
+
+The selection tiers itself like so:
+
+bc(code).    1. Checks to see if a category is specified in the tag itself, if not goes on to...
+   2. Checks to see if a category was specified in a custom_field called 'magcategory', if not goes on to....
+   3. Checks to see if tag had an attribute called images and had image ids or uris specified, if not goes on to....
+   4. Checks to see if the custom_field, magimages had content and if those were image uris or numbers.
+   5. Then, if the category was set checks to see if a number of images is set in a custom_field called 'magnum'...if that's not found....
+   6. Then, checks to see if a number of images is set in a property called 'number' in the tag itself.....if that's not found....
+   7. defaults to 3 images from that category.
+
+
+h3(sectionedit4#author_notes_about_use). Author notes about use
+
+* "Version 0.5 changes":http://forum.textpattern.com/viewtopic.php?pid=120549#p120549
+
+h3(sectionedit5#examples_of_use). Examples of Use
+
+&lt;txp:wlk&#95;mp width=“600” padding=“3” alt=“magazine images” images=“1&#124;5&#124;6&#124;7” /&gt;
+
+Putting the tag in a form means that every article tries to load this up. How do you specify images, then?
+
+Easy enough. Go to â€œAdminâ€? → â€œAdvanced Preferencesâ€? and create a custom field called â€œmagimagesâ€?. Then whenever you want to specify images for your article, click the â€œAdvanced Optionsâ€? on the left hand side of your article creation page and enter the image numbers with the pipe character between them. (Ex. images = â€œ1&#124;5&#124;8&#124;12&#124;16â€? )
+
+And donâ€™t worry about using up too many resources, if no images are specified, this plugin doesnâ€™t try and output anything! So you can have some articles with images and some without.
+
+h3(sectionedit6#version_history). Version History
+
+* "wlk&#95;mp-0&#95;5.zip0.3":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wlk_mp-0_5.zip0.3
+

@@ -1,0 +1,194 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:variable />
+
+
+The "variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=variable tag is both a _single_ and a _container_ tag which sets or returns a user-defined global variable.
+
+If used as a container, the result of the contained statements are assigned to the given variable
+
+bc(code). name
+
+
+.
+
+bc(code). <txp:variable>
+...contained statements...
+</txp:variable>
+
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#name=“text”*
+ The variable name for which you wish to assign a value. Valid variable names must not contain any single or double quotes.
+
+*"value":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#value=“value”*
+ (optionally) define the value to which you wish to set the variable. Without this attribute, the tag returns the current value assigned to the named variable.
+
+h3(sectionedit2#note). Note
+
+For Textpattern version 4.3.0 and older, using the tag as a container does not assign a value if the container is empty. This can lead to unexpected results. These tags are equivalent:
+
+bc(code). <txp:variable name="test" />
+<txp:variable name="test"></txp:variable>
+
+
+These tags are *not* equivalent:
+
+bc(code). <txp:variable name="test" value="" />
+<txp:variable name="test"></txp:variable>
+
+
+In Textpattern versions 4.3.0 and older you should not use container-tag mode unless you know the tag contents will never be empty. This issue has been fixed in "r3471":http://code.google.com/p/textpattern/source/detail?r=3471 (v4.4.0+).
+
+*Note:* Avoid entering white space characters for better code readability between the opening and closing _variable_ tags, they will lead to falsified results in the _if&#95;variable_ evaluation.
+
+h3(sectionedit3#examples). Examples
+
+h4(#example_1store_sitewide_constants). Example 1: Store sitewide constants
+
+bc(code). <txp:variable />
+
+
+allows you to define constants at a single location (e.g., a _Form_, or even at the top of a _Page_ template) and use them elsewhere later on, for instance as the email address for zem&#95;contact&#95;reborn's
+
+bc(code). to
+
+
+attribute or as the AdSense Publisher id for all three AdSense forms which are scattered throughout your template.
+
+Somewhere at the very beginning of a template you would define names and values, just like you do on your desktop calculatorâ€™s “memory” keys:
+
+bc(code). <txp:variable name="site-owner" value="john.doe@example.com" />
+<txp:variable name="adsense-pub" value="pub-9999999" />
+<txp:variable name="include_webfonts" value="yes" />
+
+
+Later down the _Page_ template or in a separate _Form_ you can read the attribute values previously set:
+
+bc(code). <txp:zem_contact to='<txp:variable name="site-owner"  />' />
+
+
+Conditionals come in handy at times:
+
+bc(code). <txp:if_variable name="include_webfonts" value="yes">
+    <txp:css name="webfonts" format="link" />
+</txp:if_variable>
+
+
+Elsewhere :
+
+bc(code). <script type="text/javascript"><!--
+google_ad_client = '<txp:variable name="adsense-pub" />';
+google_ad_width = 120;
+google_ad_height = 240;
+//-->
+</script>
+
+
+Other tags used: "if&#95;variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable, "css":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css
+
+h4(#example_2use_any_tag_s_value_as_a_conditional_expression). Example 2: Use any tag's value as a conditional expression
+
+There are two parts to making this work.
+
+First a variable is created that stores the output of any Tag as the *value* (the *name* is arbitrary)...
+
+bc(code). <txp:variable name="foo" value='<txp:permlink />' />
+
+
+*Note:* a Textpattern _Tag_, used as an attribute (a parsed attribute), must be surrounded with single quotes.
+
+The variable “foo” can then be used as a conditional later in the code.
+
+bc(code). <txp:if_variable name="foo" value="example.com/bar/baz">
+  ...do this...
+</txp:if_variable>
+
+
+The conditional is saying if there is a variable named “foo” having a specific value of “example.com/bar/baz”, then output what is defined, i.e., “do this”.
+
+Other tags used: "if&#95;variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable
+
+h4(#example_3build_a_table_of_article_titles). Example 3: Build a table of article titles
+
+Textpattern will build a three-column table where each row has the title of the article. If a number of articles is not divisible by 3 then empty cells will be inserted.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:textbook_table.jpg(textbook_table.jpg)!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:textbook_table.jpg
+
+First, use an "article&#95;custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom or "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tag somewhere:
+
+bc(code). <txp:article_custom limit="100" section="article" form="tables" />
+
+
+Form *tables*:
+
+<pre class="code">
+&lt;txp:if_first_article&gt;
+&lt;table&gt;
+&lt;/txp:if_first_article&gt;
+
+&lt;!-- Switch trigger's value --&gt;
+&lt;txp:if_variable name=&quot;trigger&quot;&gt;
+
+   &lt;txp:if_variable name=&quot;trigger&quot; value=&quot;2&quot;&gt;
+      &lt;txp:variable name=&quot;trigger&quot; value=&quot;3&quot; /&gt;
+   &lt;/txp:if_variable&gt;
+
+   &lt;txp:if_variable name=&quot;trigger&quot; value=&quot;1&quot;&gt;
+      &lt;txp:variable name=&quot;trigger&quot; value=&quot;2&quot; /&gt;
+   &lt;/txp:if_variable&gt;
+
+&lt;txp:else /&gt;
+
+   &lt;txp:variable name=&quot;trigger&quot; value=&quot;1&quot; /&gt;
+
+&lt;/txp:if_variable&gt;
+
+&lt;!-- Building third cell --&gt;
+&lt;txp:if_variable name=&quot;trigger&quot; value=&quot;3&quot;&gt;
+   &lt;td&gt;&lt;txp:title /&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;txp:variable name=&quot;trigger&quot; value=&quot;1&quot; /&gt;
+&lt;/txp:if_variable&gt;
+
+&lt;!-- Building second cell --&gt;
+&lt;txp:if_variable name=&quot;trigger&quot; value=&quot;2&quot;&gt;
+   &lt;td&gt;&lt;txp:title /&gt;&lt;/td&gt;
+
+   &lt;!-- Add 1 empty cell --&gt;
+   &lt;txp:if_last_article&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/txp:if_last_article&gt;
+&lt;/txp:if_variable&gt;
+
+&lt;!-- Building first cell --&gt;
+&lt;txp:if_variable name=&quot;trigger&quot; value=&quot;1&quot;&gt;
+   &lt;tr&gt;
+   &lt;td&gt;&lt;txp:title /&gt;&lt;/td&gt;
+
+   &lt;!-- Add 2 empty cells --&gt;
+   &lt;txp:if_last_article&gt;
+      &lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/txp:if_last_article&gt;
+&lt;/txp:if_variable&gt;
+
+&lt;txp:if_last_article&gt;
+&lt;/table&gt;
+&lt;/txp:if_last_article&gt;
+</pre>
+
+In this case an article "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title was used but any article information could be inserted in the cells.
+
+Other tags used: "if&#95;variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable, "if&#95;first&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_article, "if&#95;last&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_article, "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title, "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else
+
+h3(sectionedit4#genealogy). Genealogy
+
+h4(#version_407). Version 4.0.7
+
+* Added as a new tag.
+

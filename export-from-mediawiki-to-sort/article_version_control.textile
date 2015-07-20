@@ -1,0 +1,17 @@
+\n
+
+h3(sectionedit1#overview). Overview
+
+What we are talking about here is the ability to go back a version or two to capture a previous version of a given article you write in the event your current one becomes less than desireable for some reason. See "this thread":http://forum.textpattern.com/viewtopic.php?id=14044 as just one example of where such a feature would have been helpful.
+
+"As zem points out":http://forum.textpattern.com/viewtopic.php?pid=83937#p83937, the programming is not that hard to do (when you have the time), it's reflecting the changes in the admin interface that can be the bear to wrestle. Hence, most planning at this point should be around the expected workflows and the interface appearance. Getting this down helps the devs do their stuff easier.
+
+h3(sectionedit2#workflows_and_mockups). Workflows and Mockups
+
+Add em' here!
+
+h3(sectionedit3#related_reading_and_forum_threads). Related Reading and Forum Threads
+
+* "Article jump-back abilities for ease and piece of mind":http://forum.textpattern.com/viewtopic.php?id=14044
+* "saving, autosaving, versioning?":http://forum.textpattern.com/viewtopic.php?id=12354
+

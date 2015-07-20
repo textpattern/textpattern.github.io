@@ -1,0 +1,4 @@
+\n &#42; "A Core Textpattern Technique Addressing Internationalization Interests":http://wion.com/journal/core-txp-technique-for-i18n-interests original article by Destry Wion (offered 14 Nov 2006)
+
+* "managing&#95;bilingualism&#95;without&#95;a&#95;plug-in&#95;a&#95;partial&#95;answer&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_bilingualism_without_a_plug-in_a_partial_answer
+

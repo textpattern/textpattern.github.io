@@ -1,0 +1,32 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_status>
+
+
+The "if&#95;status":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_status tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_status>
+...conditional statement...
+</txp:if_status>
+
+
+The tag will execute the contained statements depending on the requested page's HTTP status condition. Normal pages result in a status code of “200”, while missing pages set Textpattern's status to “404”.
+
+This tag provides a method of sharing one page template between common pages and error pages, but including different output depending on the page's HTTP status.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"status":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#status=“number”*
+ Numerical HTTP status code. Default: 200 (OK)
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1conditionally_display_text_on_missing_pages). Example 1: Conditionally display text on missing pages
+
+bc(code). <txp:if_status status="404">
+  <p>The page you requested could not be found.</p>
+</txp:if_status>
+
+

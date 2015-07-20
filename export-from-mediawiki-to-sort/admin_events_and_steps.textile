@@ -1,0 +1,149 @@
+\nThese are the main events and steps that Textpattern uses as you interact with the interface, correct as of Textpattern "txp&#95;current&#95;version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version. Although they are not direct callbacks (see the "core&#95;callback&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=core_callback_list for those) you may hook into these events and steps from a plugin to perform an action.
+
+Raise interest using the same
+
+bc(code). register_callback
+
+
+function as regular callbacks, and choose at what stage to hook; event and optional step level, plus whether to run before (pre) Textpattern executes the process, or after it has completed. If
+
+bc(code). pre
+
+
+is unset, it is assumed 0, i.e. run afterwards:
+
+bc(code). register_callback('event', 'step', pre='boolean')
+
+
+* *admin*
+** admin&#95;change&#95;pageby
+** admin&#95;multi&#95;edit
+** author&#95;edit
+** author&#95;list
+** author&#95;save
+** author&#95;save&#95;new
+** change&#95;email
+** change&#95;email&#95;form
+** change&#95;pass
+** new&#95;pass&#95;form
+* *article*
+** create
+** edit
+** publish
+** save
+** save&#95;pane&#95;state
+* *category*
+** cat&#95;article&#95;create
+** cat&#95;article&#95;edit
+** cat&#95;article&#95;save
+** cat&#95;category&#95;list
+** cat&#95;category&#95;multiedit
+** cat&#95;file&#95;create
+** cat&#95;file&#95;edit
+** cat&#95;file&#95;save
+** cat&#95;image&#95;create
+** cat&#95;image&#95;edit
+** cat&#95;image&#95;save
+** cat&#95;link&#95;create
+** cat&#95;link&#95;edit
+** cat&#95;link&#95;save
+* *css*
+** css&#95;copy
+** css&#95;edit
+** css&#95;edit&#95;raw
+** css&#95;delete
+** css&#95;save
+** pour
+* *discuss*
+** discuss&#95;change&#95;pageby
+** discuss&#95;delete
+** discuss&#95;edit
+** discuss&#95;list
+** discuss&#95;multi&#95;edit
+** discuss&#95;save
+** ipban&#95;add
+** ipban&#95;list
+** ipban&#95;unban
+* *file*
+** file&#95;change&#95;pageby
+** file&#95;create
+** file&#95;edit
+** file&#95;insert
+** file&#95;list
+** file&#95;multi&#95;edit
+** file&#95;replace
+** file&#95;save
+* *form*
+** form&#95;create
+** form&#95;edit
+** form&#95;delete
+** form&#95;list
+** form&#95;multi&#95;edit
+** form&#95;save
+** save&#95;pane&#95;state
+* *image*
+** image&#95;edit
+** image&#95;change&#95;pageby
+** image&#95;insert
+** image&#95;list
+** image&#95;multi&#95;edit
+** image&#95;replace
+** image&#95;save
+** thumbnail&#95;create
+** thumbnail&#95;delete
+** thumbnail&#95;insert
+* *import*
+** start&#95;import
+** switch&#95;tool
+* *link*
+** link&#95;change&#95;pageby
+** link&#95;edit
+** link&#95;list
+** link&#95;multi&#95;edit
+** link&#95;save
+* *list*
+** list&#95;change&#95;pageby
+** list&#95;list
+** list&#95;multi&#95;edit
+* *log*
+** log&#95;change&#95;pageby
+** log&#95;list
+** log&#95;multi&#95;edit
+* *page*
+** page&#95;edit
+** page&#95;delete
+** page&#95;new
+** page&#95;save
+** page&#95;list
+* *plugin* (&#42;)
+** plugin&#95;edit
+** plugin&#95;help
+** plugin&#95;install
+** plugin&#95;list
+** plugin&#95;multi&#95;edit
+** plugin&#95;save
+** plugin&#95;verify
+** switch&#95;status
+* *prefs*
+** advanced&#95;prefs
+** advanced&#95;prefs&#95;save
+** get&#95;language
+** get&#95;textpack
+** list&#95;languages
+** prefs&#95;list
+** prefs&#95;save
+** remove&#95;language
+* *section*
+** section&#95;change&#95;pageby
+** sec&#95;section&#95;list
+** section&#95;delete
+** section&#95;edit
+** section&#95;multi&#95;edit
+** section&#95;save
+** section&#95;set&#95;default
+** section&#95;toggle&#95;option
+* *tag*
+** build
+
+(&#42;) For information purposes only: third party plugins do not run on this panel.
+

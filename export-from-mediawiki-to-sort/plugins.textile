@@ -1,0 +1,115 @@
+\n"mininav&#95;admin&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-plugins-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-plugins-tab.png
+
+This tab in Textpattern allows for the management and installation of plugins. Plugins are a way to easily extend Textpattern's base functionality by adding tags that are then useable in website templates, much like Textpattern's base tags.
+
+h3(sectionedit1#finding_new_plugins). Finding new plugins
+
+The "plugin repository":http://textpattern.org/plugins is an index of all plugins. (It's slowly being rebuilt and the new site will have quite a few new amazing features.)
+
+Use the search or category filtering to find the functionality or focus you are after and download it. (As an alternative to the search, you can scan through the "entire list of plugins":http://textpattern.org/archives?section=plugins.)
+
+h3(sectionedit2#downloading_plugin_files). Downloading plugin files
+
+The plugin itself is a text file. It usually has a header stating the name of the plugin and other details, then the code itself in "Base-64":http://en.wikipedia.org/wiki/Base64 format:
+
+<pre class="code">
+# Name: abc_myplugin v0.1
+# Type: Client side plugin
+# Brief description of the plugin
+# Author: A.N. Other
+# URL: http://example.com/
+# Recommended load order: 5
+
+# .....................................................................
+# This is a plugin for Textpattern - http://textpattern.com/
+# To install: textpattern &gt; admin &gt; plugins
+# Paste the following text into the 'Install plugin' box:
+# .....................................................................
+
+YTo5OntzOjQ6Im5hbWUiO3M6Njoic21kX2lmIjtzOjY6ImF1dGhvciI7czoxMToiU3RlZiBE
+YXdzb24iO3M6MTA6ImF1dGhvcl91cmkiO3M6MjI6Imh0dHA6Ly9zdGVmZGF3c29uLmNvbS8i
+O3M6NzoidmVyc2lvbiI7czo0OiIw...
+</pre>
+
+h3(sectionedit3#installing_plugins). Installing plugins
+
+Plugin installation is a simple three-step process:
+
+<ol>
+<li>Copy the entire file contents, paste it into the box at the top of the Plugins panel, and click “Upload”.</li>
+<li>You will be shown a preview of the plugin and its documentation. If it looks ok, click “Install” at the bottom of the screen.</li>
+<li><p>You will be returned to the plugin list when the plugin has been installed. Now activate the plugin by clicking its</p>
+bc(code). No
+
+
+<p>link, which toggles the status to</p>
+bc(code). Yes
+
+
+<p>, and it's not active.</p></li>
+</ol>
+
+Check the plugin help file (click _Help_ on the same row as the plugin name) after installation because some of them have post-install instructions or other information. If you have read the docs, check the "Plugin Author Support forum":http://forum.textpattern.com/viewforum.php?id=79 for the plugin. Known issues are often highlighted in the threads there (tip: use Google to search long threads!) or, if not, you can post your questions.
+
+h4(#upgrading_plugins). Upgrading plugins
+
+Upgrading plugins is the same process. Install the new text file code as you would normally. In this case, the existing plugin is updated with the code revisions.
+
+In case you've edited plugins, there's another plugin that helps you track down the lines that you've altered, "rvm&#95;plugin&#95;diff":http://forum.textpattern.com/viewtopic.php?id=19909. Use it before upgrading plugins.
+
+h4(#installation_problems). Installation problems
+
+Sometimes large plugins can cause problems and you get a
+
+bc(code). Badly formed or empty plugin code
+
+
+error. This can usually be solved by obtaining a compressed plugin. These are functionally equivalent to standard plugins but begin with a sequence that looks like this:
+
+bc(code). H4sIAAAAAAAAA919a3PbRrbg56Rq/kOH8UTkDiWKkh+xJCtXsWWPZxXHa8meeyvjUoFEk8QY
+BGgAlKz1+L/vefULACk6dvZO3amJRTYa53SfPn3e3YwOHh58LA/uHnSyaK47h+XB/YNOOY8v
+k4l8iZbVLC/wy3B40Dmv9EQ9...
+
+
+You require gzip on your server to be able to install such plugins (most do).
+
+h4(#plugin_cache_directory). Plugin cache directory
+
+Plugins that you install via the Admin → Plugins tab are inserted into the database. There is another method of installing a plugin that involves obtaining the plugin as a file in the "standard template format":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_template.
+
+Visit the "advanced&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences tab and enter a folder path/name to use as your plugin cache directory. Make sure it exists on your server!
+
+When you have saved the changes, you may upload (via FTP) plugins in the standard template format (_not_ the Base-64 method outlined above)into this nominated directory. Once uploaded, they will be available automatically and are “always on”, but otherwise behave in the same manner as regular plugins.
+
+h3(sectionedit4#panel_layout_controls). Panel layout &amp; controls
+
+Each installed plugin occupies one row in the table. The columns are:
+
+*Plugin*
+ The plugin name *Author*
+ The author and current maintainer of the code, with a link to their home page *Version*
+ The current plugin version *Modified*
+ Whether the plugin has been changed by you since it was installed *Description*
+ A brief piece of information about the plugin's reason for existence *Active*
+ Whether the plugin is on (yes) or off (no). Click to toggle the status *Order*
+ The plugin load order. Plugins with low numbers are loaded before plugins with higher numbers. Plugin authors can set recommendations because some types of plugin (e.g. anti-spam) might need to run before others in order to work effectively *Manage*
+ Click 'Help' to see the associated plugin documentation Click 'Edit' to alter the plugin code Click 'Options' to alter plugin options (if any)
+
+Use the check boxes and the _with selected_ tool (at the bottom of the list) to mark plugins for deletion or change the status/load order of more than one plugin at once.
+
+h3(sectionedit5#editing_and_publishing_plugins). Editing and publishing plugins
+
+You can either edit plugin source code directly from the Plugins tab or use a third party tool such as the "plugin&#95;template":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_template or the "ied&#95;plugin&#95;composer plugin":http://forum.textpattern.com/viewtopic.php?pid=201350#p201350.
+
+The plugin composer allows you to create, code and document plugins, then publish them in either conventional text format, compressed text format, or exported in the standard template format for sharing with developers or using in the "plugin cache directory":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences. Plugins in the cache can also be edited directly by the Composer.
+
+Before embarking on your own plugin, it is worth following these steps:
+
+# read the "plugin&#95;vs&#95;core":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_vs_core topic to understand the stance the Textpattern developers take on what should (and should not) be a core feature and what might work best as a plugin
+# check a core tag does not do what you want already
+# check a "plugin does not already exist":http://textpattern.org/archives?section=plugins that performs your intended feature
+# assuming you still wish to go ahead with the plugin (and you don't already have a plugin prefix), "register one":/home/www/zendstudio/dokuwiki/bin/doku.php?id=registered_textpattern_developer_prefixes for your own use
+# read the "Plugin Development Guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_development_guidelines for more on how to write plugins
+

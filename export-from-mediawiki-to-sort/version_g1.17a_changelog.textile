@@ -1,0 +1,17 @@
+\n &#42; Added automatic cleanup of the txp&#95;category db table whenever the category tree is rebuilt
+
+<ul>
+<li>Added missing privileges check in presentation → forms tab</li>
+<li>Changed incorrect page titling for new Sections tab</li>
+<li><p>Fixed</p>
+bc(code). txp:article_custom />
+
+
+<p>outputting draft and future-dated articles</p></li>
+<li>Fixed a mixup which was preventing excerpts from replacing full articles in XML feeds</li>
+<li>Fixed a problem where article timestamps and sections were being lost when toggling between text, html and preview for previously published articles</li>
+<li>Fixed a search engine error caused when no matches were found</li>
+<li>Fixed incorrect section editor href in write tab</li>
+<li>Stopped the invisible 'root' category from showing up in a number of places</li>
+</ul>
+

@@ -1,0 +1,210 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:thumbnail />
+
+
+The "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail tag is a _single_ tag that Textpattern will replace with the
+
+bc(code). <img src="..." />
+
+
+HTML tag matching the thumbnail image of the numeric
+
+bc(code). id
+
+
+assigned by Textpattern when the parent image was uploaded via the Textpattern "Images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel panel.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“class name”*
+ CSS
+
+bc(code). class
+
+
+attribute to apply to the image (or to the wraptag, if set). Default is unset. *"escape":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#escape=“html”*
+ Escape HTML entities such as
+
+bc(code). <
+
+
+,
+
+bc(code). >
+
+
+and
+
+bc(code). &
+
+
+for the image's
+
+bc(code). alt
+
+
+and
+
+bc(code). title
+
+
+attributes. Values:
+
+bc(code). html
+
+
+or unset. Default:
+
+bc(code). html
+
+
+. *"height":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#height=“integer”*
+ Specify an image height which overrides the value stored in the database. Use
+
+bc(code). height="0"
+
+
+to turn off the output of a height attribute in the
+
+bc(code). <img>
+
+
+tag (thus the browser will scale the height if a width is used) *"html&#95;id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#html_id=“id”*
+ The HTML
+
+bc(code). id
+
+
+attribute assigned to the image (or to the wraptag, if set). Default: unset. *"id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#id=“integer”*
+ Specifies the
+
+bc(code). id
+
+
+assigned at upload of the image to display. Can be found on the "images&#95;panel&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel. If both
+
+bc(code). name
+
+
+and
+
+bc(code). id
+
+
+are specified,
+
+bc(code). name
+
+
+is used while
+
+bc(code). id
+
+
+is ignored. *"link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#link=“boolean”*
+ If set, the thumbnail will be rendered as a (non-Javascript) URL link to the full-size image. Default:
+
+bc(code). 0
+
+
+. *"link&#95;rel":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#link_rel=“relation”*
+ Value for the HTML
+
+bc(code). rel
+
+
+attribute. Default: unset. *"name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#name=“image name”*
+ Specifies which image thumbnail to display by its image name as shown on the "images&#95;panel&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel. *"poplink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#poplink=“boolean”*
+ If set, the image will be rendered in a popup window. Default is
+
+bc(code). 0
+
+
+. *"style":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#style=“style rule”*
+ Inline CSS style rule. Default: unset. *"width":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#width=“integer”*
+ Specify an image width which overrides the value stored in the database. Use
+
+bc(code). width="0"
+
+
+to turn off the output of a width attribute in the
+
+bc(code). <img>
+
+
+tag (thus the browser will scale the width if a height is used) *"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag text”*
+ HTML tag to be used to wrap the
+
+bc(code). img
+
+
+tag, specified without brackets. Default: unset.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_the_given_thumbnail). Example 1: Display the given thumbnail
+
+bc(code). <txp:thumbnail id="23" />
+
+
+*What this does...*
+ Displays the image thumbnail for the image uploaded as ID #23.
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_420). Version 4.2.0
+
+<ul>
+<li><p>attribute</p>
+bc(code). align
+
+
+<p>deprecated</p></li>
+</ul>
+
+h4(#version_407). Version 4.0.7
+
+<ul>
+<li><p>default value for attribute</p>
+bc(code). escape
+
+
+<p>changed from unset to</p>
+bc(code). html
+
+</li>
+</ul>
+
+h4(#version_406). Version 4.0.6
+
+<ul>
+<li>bc(code). link
+
+
+<p>and</p>
+bc(code). link_rel
+
+
+<p>added</p></li>
+</ul>
+
+h4(#version_404). Version 4.0.4
+
+<ul>
+<li>bc(code). html_id
+
+
+<p>,</p>
+bc(code). escape
+
+
+<p>and</p>
+bc(code). wraptag
+
+
+<p>added</p></li>
+</ul>
+

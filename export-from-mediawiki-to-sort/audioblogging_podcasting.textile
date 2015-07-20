@@ -1,0 +1,41 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop I set this page up, to get some input, order ideas and then start coding  - Bastian 16:02, 25 February 2006 (GMT)
+
+h3(sectionedit1#what_should_this_plugin_do). What should this plugin do
+
+* On frontend the mp3 are played with an Flashplayer.
+* In the feeds there are included as enclosure
+* On write-tab MP3 can bee selected out of a drop-down-list
+* Even large MP3 can bee uploaded within txp-backend
+
+h3(sectionedit2#frontend). Frontend
+
+* Flashplayer is displayed insite a form
+* Archive Playlists by date, section or cats
+
+h4(#flashplayer). Flashplayer
+
+This "Flash&#95;MP3&#95;Player":http://www.jeroenwijering.com/?item=Flash_MP3_Player by Jeroen Wijering seems to bee a good one. But its not free for commerical uses.
+
+h3(sectionedit3#feeds). Feeds
+
+At the moment there is no direct way, to include enclosure into the feeds. But "zem":http://forum.textpattern.com/viewtopic.php?pid=78251#p78251 is working on using templates for feeds in 4.1 Templated feeds should be used for podcasting.
+
+An alternative could be deliver the complete feed form the plugin
+
+h3(sectionedit4#backend). Backend
+
+Some requirements
+
+There will be relation between podcast files and their post by use of the custom fields. The plugin will also use the "getID3()":http://getid3.sourceforge.net class to obtain/update ID3 information.
+
+h4(#mp3_tab). MP3 Tab
+
+* Handle uploading even large MP3's
+* Editing ID3-Tags
+* Categorise and/or tag MP3's
+
+h4(#write_tab). Write Tab
+
+* Select MP3 from a drop-down list
+* Use customfield
+

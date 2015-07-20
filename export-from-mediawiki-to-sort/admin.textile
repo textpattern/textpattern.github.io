@@ -1,0 +1,16 @@
+\n"mininav&#95;primary&#95;backoffice&#95;tabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_primary_backoffice_tabs
+
+The Admin tab is a main back-office tab composed of several sub-tabbed panels. The Admin tab is open by default for all first-time logins after installation and upgrades, and specifically at the "language&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences panel. This is so because you need to ensure your new Textpattern site is properly configured, thus it puts you right where you need to be to get on with setting things right.
+
+*The Admin panels:*
+
+* "diagnostics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics
+* Preferences (composed of three views)
+** "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences
+** "advanced&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences
+** "language&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences
+* "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users
+* "visitor&#95;logs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs
+* "plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins
+* "import":/home/www/zendstudio/dokuwiki/bin/doku.php?id=import
+

@@ -1,0 +1,13 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+After installing and activating this plugin, you can create a new style with the name of “admin” in presentation &gt; styles and add all the css that should be the used in the backend.
+
+The plugin rewrites all pages in the backend and inserts a
+
+bc(code). @import url("css.php?n=admin")
+
+
+to call the stylesheet. It additionally adds an id to the body-element, which is identical to the event (see url). Textpattern 4.0.4 has cleaned up markup and plenty of ids/classes which should allow for pretty far-reaching and specific customization.
+
+Given that the plugin does not modify any files, it does not require any special care during updates of textpattern in the 4.0.x release line. Customization can be tunred on and off, by activating/deactivating the plugin.
+

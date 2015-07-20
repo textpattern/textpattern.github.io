@@ -1,0 +1,39 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_variable>
+
+
+The "if&#95;variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_variable>
+...conditional statements...
+</txp:if_variable>
+
+
+It tests the existence and/or value of a global variable set with the "variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=variable tag.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#name=“variable name”*
+ The name of the variable you wish to check. *"value":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#value=“value”*
+ (optionally) The value which the named variable must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns _true_ if the named variable is defined. If this attribute's _value_ is omitted (
+
+bc(code). value=""
+
+
+), the tag returns _true_ if the variable is defined, but has no value.
+
+*Note:* In case you are getting unexpected results in an _if&#95;variable_ evaluation, check whether you have entered additional white space or invisible characters in your _"variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=variable_ declarations and remove those.
+
+h3(sectionedit2#examples). Examples
+
+See the "variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=variable page for examples.
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_407). Version 4.0.7
+
+* Added as a new tag.
+

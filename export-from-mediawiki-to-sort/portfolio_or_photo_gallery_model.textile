@@ -1,0 +1,16 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+h3(sectionedit1#overview). Overview
+
+This write-up will cover the default capabilities of v 1.0 to handle images, with a particular focus on galleries and portfolios. Folowing the default abilities will be sections discussin several of the good methods, via plugins or other extensions, currently available to create a photo gallery in Textpattern. To do this the write-up will begin by taking a stripped-back version of the intermediate Weblog, and creating serveral sections (one for each portfolio presentation and discussion). Some of the options that are likely candidates are Albumpattern, Photostack...other? (Please suggest something that is still supported and will likely work with v 1.0)
+
+h3(sectionedit2#default_textpattern_photo_image_management_abilities). Default Textpattern Photo/Image Management Abilities
+
+What are the current abilities and limitations? (Links to "write&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write_subtab and "images&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_subtab, where used in context.)
+
+If someone has done a photo album with just default abilities, it would be good to get that tutorial written into here.
+
+h3(sectionedit3#integrating_albumpattern). Integrating Albumpattern
+
+h3(sectionedit4#integrating_photostack). Integrating Photostack
+

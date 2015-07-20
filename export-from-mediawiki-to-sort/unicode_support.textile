@@ -1,0 +1,99 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+"warning":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=warning
+
+This article will explain the details of how Textpattern supports Unicode (UTF-8), which problems you may run into and how to solve them.
+
+h3(sectionedit1#the_quick_guide_for_the_end-user). The Quick Guide for the End-User
+
+If you are only a user and are not interested in the technical background, here is what you need to know: Textpattern supports Unicode (UTF-8), and _no matter your configuration or your server setup you will always be able to write articles in any language and with any set of characters you wish_ (as long as they are included in the Unicode Standard) and have them display correctly (as long as the Browser supports those characters).
+
+h3(sectionedit2#the_elaborate_guide_for_textpattern_administrators). The Elaborate Guide for Textpattern Administrators
+
+h4(#introduction_to_unicode_and_utf-8_on_the_web). Introduction to Unicode and UTF-8 on the Web
+
+Unicode is way of unambiguously identifying characters from all kinds of different languages and matching them to code points. Currently there are around 100,000 different characters defined in the Unicode Standard. It's a must when dealing with multilingual text or software. UTF-8 is one several ways of encoding those values. UTF-8 is also the most popular way of doing it on the web and has the best tool-support. UTF-8 also has the nice trait of being backwards-compatible to ASCII. This is achieved by using a variable byte-length for encoding characters. The characters used in the English language are usually encoded with one byte, while other characters usually utilize two to four bytes.
+
+If you would like to learn more about Unicode or UTF-8, you will find the following articles to be excellent and easy to read introductions to Unicode:
+
+* "$":http://intertwingly.net/stories/2004/04/14/i18n.html
+* "$":http://www.joelonsoftware.com/articles/Unicode.html
+* "$":http://www.unicode.org/standard/principles.html
+
+h4(#utf-8_support_in_mysql). UTF-8 Support in MySQL
+
+MySQL 3.x or MySQL 4.0.x do not have Unicode-Support. The default character encoding is called latin1 and is single-byte, but this is less of a problem than it may seem. While the database itself is not aware of the actual encoding it still manages to output the articles and every other string in much the same way that they were previously put in the database. You may see “funny characters” when directly accessing the database through other tools. And searching or ordering will sometimes not work correctly. This is due to the fact that even though two, three or four bytes should actually represent one character, but MySQL interpretes them as one character per byte.
+
+MySQL 4.1 and newer versions (MySQL 5.x etc.) have built-in support for UTF-8. This has the additional benefit, that string are really recognized by MySQL, which means ordering, searching, indexing and similar string-related functions in MySQL work correctly.
+
+h4(#utf-8_support_in_php). UTF-8 Support in PHP
+
+PHP internally uses ISO-8859-1 as encoding for all strings. Even the upcoming 5.1.0 release does it this way. Again, as for MySQL, as long as we are only reading in and outputting strings this is not much of a problem, but as soon as we try to use any string-related functions we may run into problems with everything that is not in the ASCII-range. So all the powerful string-manipulation functions in PHP will likely “mangle” multibyte-strings, because each byte is treated as a character, even when multiple bytes may be describing only a single character. There is a multibyte-extension (mb) available for php, which has multibyte-safe versions of most string-functions which - despite being rather unstable in early versions - is today very usable. Unfortunately it is optional and thus can't be relied upon to be always available. Only the Regular Expressions support in PHP interestingly knows a “/u” modifier that treats string as UTF-8.
+
+There is an excellent and more in-depth overview you can find here: "$":http://www.phpwact.org/php/i18n/charsets?s=utf8
+
+h4(#utf-8_support_in_textpattern). UTF-8 support in Textpattern
+
+Textpattern supports UTF-8 as best as is possible under the circumstances (also see the explanation under the _The Quick Guide for the End-User_ section above). What this currently means is when you install Textpattern it will (if you are using MySQL4.1 and above) create the tables in the database as UTF-8 (with the default UTF-8 collation of utf8&#95;general&#95;ci). Textpattern uses MySQL's fulltext indexing to provide its search-functionality, this means if you are using characters outside of the ASCII range your search will likely only function properly with MySQL4.1 and above (but Textpattern will still work with MySQL versions 4.0.x and 3.x in general).
+
+Currently Textpattern tries to be as conservative as possible in the use of PHP's string-functions. So articles are only processed by Textile which only replaces distinct syntax that it recognizes and otherwise leaves the text alone. The i18n-strings that Textpattern uses for the admin-side (and some parts of the public-side) are also in UTF-8 and stay mostly untouched.
+
+*Note:* Textpattern does not rely on the mb&#95;strings extension for PHP. Future versions may well take advantage of it where available, but it won't be a requirement.
+
+h3(sectionedit3#troubleshooting_unicode_problems_in_textpattern). Troubleshooting unicode problems in Textpattern
+
+h4(#diagnostics). Diagnostics
+
+The first thing to do is look at your "diagnostics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics panel in the admin interface. Here we can find important information as to what the current server is capable of and what the configuration is.
+
+First the MySQL version. This can be found in the low-level diagnostics in the upper half. As explained above MySQL versions 4.0.x and below do not support unicode and this might explain why for example search might not function well for multibyte characters.
+
+In high-level diagnostics we can find more detailed information about the configuration. The line starting with
+
+bc(code). Charset (default/config)
+
+
+gives us two pieces of information - the first one *(default)* tells us which character-encoding the mysql-connection *would* use as a default. For some mysql-versions this will report the collation that is used for the connection, so if you see something like 'latin1&#95;swedish&#95;ci' don't be confused (swedish is the default collation of MySQL for latin1 character sets).
+
+The second one *config* reflects the configured charset in _config.php_. It is important to understand that this _config_ value will only set the encoding of the *connection* (using the mysql-command SET NAMES ...), therefore it must reflect the encoding of the tables in the database. You should *never* have to set or change this value manually (unless you are downgrading from post MySQL 4.1.x to MySQL 4.0 or older, which is described in its own section below) - this value is set automatically by Textpattern during initial installation according to the tables that are created. If the _config_ value is empty this likely means your initial installation of Textpattern was pre-1.0rc4, and you are using an upgraded version. In this case Textpattern falls back to using whichever defaults your system is set up to - For table creation as well as for the connection.
+
+If you are using MySQL 4.0.x or 3.x, the lines will look like the following...
+
+bc(code). character_set: latin1
+character_sets: latin1 big5 [...] win1251ukr win1251
+
+
+Not much to see here. As explained Textpattern should be using _latin1_ for the database. Unicode is not available.
+
+For MySQL 4.1.x and above you should see something like...
+
+bc(code). character_set_client: utf8
+character_set_connection: utf8
+character_set_database: latin1
+character_set_results: utf8
+character_set_server: latin1
+character_set_system: latin1
+
+
+The exact values will differ of course from system to system. These are system variables from MySQL and are described in more detail in the MySQL manual on system variables: "$":http://dev.mysql.com/doc/mysql/en/server-system-variables.html . The ones that are relevant for us are client, connection and results. They should match what is defined in _config_ above and they should also of course match the tables that we have - which can be seen in the next Line that reads:
+
+bc(code). 18 Tables: OK
+
+
+If you are using an upgrade or plugins that create additional tables your exact number may differ. The *OK* means two things:
+
+# Check tables didn't find an error in the tables,
+# and more importantly, that the character set of the table matches the one we have set in *config* above.
+
+If the charset for the tables are different from _config_, you will see something like: _txp&#95;permissions is latin1_. Which means that config is probably set to utf8, but this specific table is set to latin1. (Note: This is not a problem for the permissions table, since only numbers are stored anyway. But for tables that store text, this is a likely source of mangled characters)
+
+h4(#converting_tables). Converting Tables
+
+Moving from 3.x or 4.0 to 4.1 you may want to read and follow this: "$":http://dev.mysql.com/doc/mysql/en/charset-upgrading.html (or you can continue using _latin1_ tables if you prefer).
+
+If you have to downgrade from 4.1 or newer to 4.0 or older you must follow these instructions if you are using utf8-tables: "$":http://dev.mysql.com/doc/mysql/en/downgrading-to-4-0.html . You will also have to change the value in _config.php_ accordingly of course.
+
+h4(#common_problem_faq). Common Problem/FAQ
+
+(article in progress)
+

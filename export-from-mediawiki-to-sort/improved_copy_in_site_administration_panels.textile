@@ -1,0 +1,92 @@
+\n"feature&#95;requests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feature_requests &#124; "improved&#95;copy&#95;in&#95;site&#95;administration&#95;panels":/home/www/zendstudio/dokuwiki/bin/doku.php?id=improved_copy_in_site_administration_panels
+
+h3(sectionedit1#overview). Overview
+
+A step to making things a bit more sharp in the admin panels, a bit more finished. In addition to consistency improvements, and in some cases usability, these changes would also make it easier for documentation efforts when reference to a given panel or widget is being made. The referral can then be made with assurance that the syntax is exactly as it actually reflects in the site admin; something that canâ€™t otherwise be achieved without having to go and look first for confirmation (due to the inconsistencies as they are).
+
+Unfortunately, making these changes will largely be the responsibility of Txp developers, but if we can pinpoint needed changes, it will help make it easier for them to follow up with.
+
+Add your suggestions to the list below. Strike an item from a list if it's been addressed (find out by using SVN to check a revision).
+
+When you add an item to the panel lists below, please be very specific as to where the edit in the admin panel needs made. Begin by adding the item to the proper panel section, then indicate name of panel view (if relevant), then name of panel view section (if relevant), then name of widget that needs edited.
+
+When most of the changes for a given panel (or panel view) has been updated to a large extent, see if any images in the corresponding "site&#95;administration":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_administration documentation needs updated to reflect the improvements. If so, make a note about it in the *discussion* page for that doc, or post in the "Documentation forum":http://forum.textpattern.com/viewforum.php?id=28 about it.
+
+h3(sectionedit2#panel_edits_needed_in_general). Panel Edits Needed in General
+
+A few generall edits needing checked across the board:
+
+# Tabs could be capitalized. Done!
+# Title-style capitalizations need to be made to all headers and widget labels consistantly. Right now it's all over the place.
+# Any widget label that requires a Yes/No responsde (e.g., with radio buttons) needs to have a question mark added to the end of the question. Right now most do many there's still many that do not.
+
+h3(sectionedit3#preferences_panel). Preferences Panel
+
+This panel has three views. The views are accessed by buttons at the top of each view.
+
+# The button for _Manage languages_ needs changed to *Manage Languages*.
+
+h4(#site_preferences). Site Preferences
+
+h5(#publish_section). //Publish// section
+
+# Site name to *Site Name*
+# Site tagline to *Site Slogan*
+# Date format to *Date Format*
+# Archive date format to *Archive Date Format*
+# Permanent link mode to *Permanent Link Mode*
+# Use Textile to *Textile Use* (The former implies a Yes/No response. The change implies a better sense of a broader situation - _how to do it?“ - even though it's not a question)_
+# Accept comments to *Accept comments?*
+
+h5(#comments_section). //Comments// section
+
+# Moderate comments to *Moderate comments?*
+# Mail comments to author to *Notify author of new comments?*
+# Disallow user images to *Allow user images?* (Questions should _never_ be phrased in the negative; a basic usability tenet.)
+# Default invite to *Default Invite*
+# Comments date format to *Comments Date Format*
+# Comments mode to *Comments Mode*
+# Disabled after to *Disabled After...* (Elypsis is appropriate here because the label is left hanging open.)
+
+h4(#advanced_preferences). Advanced Preferences
+
+h5(#admin_section). Admin// section: //
+
+# Temp folder to *Temp Folder*
+# Send Last-Modified header to *Send Last-Modified header?*
+# Image directory to *Image Directory*
+# Plugin cache path to *Plugin Cache Path*
+
+h5(#link_section). Link// section: //
+
+The header of this section needs capitalized, from link to *Link*.
+
+h5(#publish_section1). Publish// section: //
+
+# allow&#95;raw&#95;php&#95;scripting probably to *Allow raw PHP scripting?* (with a Yes/No radion button pair).
+# Spam blacklists (comma separated) to *Spam Blacklists (Comma Separated)*
+# Max URL length to *Max URL Length*
+# Use mail on feeds id? to *Use email on feeds id?*
+# Never display email? to *Always display email?* (Should not be phrased in the negative, it's confusing. Change radio functionality too of needed.)
+## *Update:* Mary says this will likely not change for 4.0.4, but is a good candidate for crockery.
+# Permalink title format to *Permalink title format?* Also, the internal help for this one uses the word â€œhypenâ€? twice. I think it means hyphen?
+# Expire logs after to *Expire logs after...* (needs elypsis)
+# Update Ping-o-matic to *Update Ping-o-Matic?*
+
+*Some other things to consider:*
+
+# Ping textpattern.com?  -  The internal help for this only indicates that choosing _yes_ lets you do it, it doesnâ€™t explain at all why you would want to do it, or even what it does if you did. Not very helpful for people who don't know about pinging. If you offer the capability, explain the purposes/value.
+# How is #1 in the Publish section above different than the _allow PHP on pages/articles_ widgets? Redundancy?
+# A couple more down from that there is the Include email in atom feeds? widget. If a person says yes to this, is the email address open to the world/harvestable? Oh, and going back up a bit thereâ€™s another one that reads Use mail on feeds id?. Should that read as e-mail?. Also see #7 below.
+# This whole section of widgets needs rearranged a bit better so that like topic widgets are next to eachother. For example the admin-side plugin widget question is clear up near the top while this one is at the bottom (thereâ€™s 22 widgets in that section). Same goes for the &#95;ping-related widgets, and so forth. Itâ€™s just easier on the brain to compare and understand like questions when the questions are directly next to eachother.
+## *Update:* Mary says itâ€™s because of when and how controls are entered. Each pref has a sort order column, where a number is entered where it should appear in the list. Entering in one later, youâ€™d have to update all the othersâ€™ sort ids. Itâ€™s not difficult to fix per se, itâ€™s just a bit of a nuisance. Probably means this will be crockery.
+
+h3(sectionedit4#internal_txp_help_edits_needed_in_general). Internal Txp &quot;Help&quot; Edits Needed in General
+
+Referring to the internal help copy that appears when a user clicks the help buttons next to a widget. In many instances there are apparent problems:
+
+# Misspelled words.
+# Improper use of punctuation.
+# Copy is awkwardly written or vague in meaning.
+# Copy only reiterates what is already apparent from the widget label text; does not actually _explain_ anything new. (Copy should not be written with the expectation that only developers will be reading it; on the contrary, developer-types probably won't be reading these help items but rather newbies to a CMS. Hence, this help needs to be very basic, very clear, and not take anything for granted.)
+

@@ -1,0 +1,31 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+Just thought Iâ€™d pass this on for information. I came up with this solution. I wanted Header tags for the year and month with the individual days as list items in a properly marked-up list. Here is what I did:
+
+h3(sectionedit1#the_process). The Process
+
+Insert the following markup in your archive page template. This creates a dummy unordered list at the beginning of the list, but it wonâ€™t break your validation, if you care about that. Otherwise, you could just omit the dummy list that I have shown here.
+
+bc(code). <ul style="display: none;">
+<li style="display: none;"></li>
+<txp:article_custom limit=99999 form="monthly_article" section="article" /> </ul>
+
+
+Create an article form named:
+
+bc(code). monthly article
+
+
+with the following markup:
+
+bc(code). <txp:if_different>
+</ul>
+<h2><txp:posted format="%Y" /></h2>
+</txp:if_different>
+<txp:if_different>
+<h3><txp:posted format="%B" /></h3>
+<ul class="archive_list">
+</txp:if_different>
+<li><txp:posted format="%d" /> - <a href="<txp:permlink />" title="Permanent link to ' <txp:title /> '"><txp:title /></a></li>
+
+

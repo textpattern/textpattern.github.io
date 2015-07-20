@@ -1,0 +1,46 @@
+\n
+
+h4(#compatible_web_hosts). Compatible Web Hosts
+
+The requirements for a compatible host are: clean URLs work with no tweaks and Textpattern “just works” with no user-intervention.
+
+* "All Inkl (DE)":http://www.all-inkl.de/
+* "A Small Orange":http://asmallorange.com
+* "Belahost":http://www.belahost.com/
+* "BlueHost":http://bluehost.com
+* "BugField":http://bugfield.com
+* "Dreamhost":http://dreamhost.com
+* "Hosteurope":http://hosteurope.de/
+* "Hostfor99p.co.uk":http://hostfor99p.co.uk/
+* "HostGator":http://www.hostgator.com/ (April 2008)
+* "Linulex (DE)":http://linulex.nl/
+* "Lunarpages":http://www.lunarpages.com/
+* "MediaTemple":http://mediatemple.com
+* "NutHost":http://nuthost.com
+* "Powweb":http://www.powweb.com/
+* "TextDrive":http://textdrive.com
+* "Serverplan (IT)":http://serverplan.com/
+* "Site5":http://site5.com
+* "WebHostOne (DE)":http://webhostone.de/
+
+h5(#notes). Notes
+
+# With almost no hosts will clean URLs work without tweaks if the URL to access your Textpattern contains a subdirectory. See "managing&#95;clean&#95;urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls to see how to configure .htaccess for this situation.
+# Many hosting companies are switching or have switched to "phpsuexec":http://corz.org/devblog/2006-Q1/phpsuexec. phpsuexec cares about the file permissions on .php files - they must not be world- or group-writable. This is only likely to be a problem if you are upgrading an existing installation where the permissions are already wrong, or if the program that you used to upload the files sets more liberal permissions than is required.
+
+h4(#hosts_to_avoid). Hosts to Avoid
+
+Installing TXP on one of these hosts is more involved and generally painful. Hosts that make this list meet one of the following requirements:
+
+* Clean URLs don't work
+* Textpattern doesn't work
+* Terrible support
+
+* "AMHosting":http://www.amhosting.com/ - Truncated URLs
+* "Aplus.net":http://aplus.net - IIS server, broken commenting and clean URLs
+* "EasyCGI":http://www.easycgi.com/ - No clean URLs
+* "IX Webhosting":http://ixwebhosting.com - Database is hosted elsewhere; unsupportive support
+* "Netfirms":http://netfirms.com - No chance at clean URLs
+* "Radical Vision":http://www.radicalv.com/ - Poor uptime; slow support
+* "Strato":http://strato.eu/ - No clean URLs
+

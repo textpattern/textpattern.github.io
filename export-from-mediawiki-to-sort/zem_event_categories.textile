@@ -1,0 +1,74 @@
+\n
+
+h4(#classification). Classification
+
+The
+
+bc(code). zem_event_categories
+
+
+tag is used as a "Single&#95;Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag. Used in a zem&#95;event&#95;list form or wraptags, it returns the event categories associated with a specific event.
+
+h4(#syntax). Syntax
+
+The _zem&#95;event&#95;categories_ tag has the following syntactic structure...
+
+bc(code). <txp:zem_event_categories />
+
+
+h4(#attributes). Attributes
+
+Tag will accept the following attributes (note: attributes are *case sensitive*):
+
+*&lt;code&gt;*type=“*_type text_*“*&lt;/code&gt;*
+ event type. Default is
+
+bc(code). email
+
+
+. *&lt;code&gt;*field=“*_field text_*“*&lt;/code&gt;*
+ Default is
+
+bc(code). categories
+
+
+. *&lt;code&gt;*break=“*_tag text_*“*&lt;/code&gt;*
+ HTML tag to be used for line breaks, without brackets. Default is empty. *&lt;code&gt;*breakclass=“*_class text_*“*&lt;/code&gt;*
+ HTML class to be used for line breaks, without brackets. Default is empty. *&lt;code&gt;*wraptag=“*_wraptag text_*“*&lt;/code&gt;*
+ HTML tag to be used as the wraptag, without brackets. Default is empty. *&lt;code&gt;*class=“*_class name_*“*&lt;/code&gt;*
+ CSS class attribute, default is
+
+bc(code). **zem_event_categories**
+
+
+. *&lt;code&gt;*link”=*_0 or 1_”&lt;/code&gt;*
+ Default is
+
+bc(code). **1**
+
+
+. *&lt;code&gt;*section”=*_section text_”&lt;/code&gt;*
+ Default is
+
+bc(code). **current section**
+
+
+.
+
+h4(#examples). Examples
+
+h5(#example_1basic_container_tag_usage). Example 1: Basic container tag usage
+
+Generates a list of events by name and an ordered list of associated categories.
+
+bc(code). <txp:zem_event_list>
+<fieldset>
+   <p class="zem_event_name">
+   <txp:zem_event_name label="Event!" /><br /> 
+   <b> Current categories:</b>
+   </p> 
+  <ol><txp:zem_event_categories break="li" /></ol>
+</fieldset>
+</txp:zem_event_list>
+
+

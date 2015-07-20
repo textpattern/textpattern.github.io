@@ -1,0 +1,61 @@
+\n
+
+h4(#classification). Classification
+
+The
+
+bc(code). zem_event_permlink
+
+
+tag can be used as a "Single&#95;Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag or a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag. When used as a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag the contained text is used as the linktext. A linktext attribute can be used when the tags usage is "Single&#95;Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag. Returns the article's permanent url.
+
+h4(#syntax). Syntax
+
+The _zem&#95;event&#95;permlink_ tag has the following syntactic structure...
+
+bc(code). <txp:zem_event_permlink /> or 
+<txp:zem_event_permlink>... contained text ...</txp:zem_event_permlink>
+
+
+h4(#attributes). Attributes
+
+Tag will accept the following attributes (note: attributes are *case sensitive*):
+
+*&lt;code&gt;*type=“*_type text_*“*&lt;/code&gt;*
+ event type. Default is
+
+bc(code). permlink
+
+
+. *&lt;code&gt;*field=“*_field name(internal use)_*“*&lt;/code&gt;*
+ Default is
+
+bc(code). article_id
+
+
+. *&lt;code&gt;*wraptag=“*_wraptag text_*“*&lt;/code&gt;*
+ HTML tag to be used as the wraptag, without brackets. Default is empty. *&lt;code&gt;*class=“*_class name_*“*&lt;/code&gt;*
+ CSS class attribute, default is
+
+bc(code). **zem_event_permlink**
+
+
+. *&lt;code&gt;*linktext=“*_text for link_*“*&lt;/code&gt;*
+ Link text for single tag usage, default is
+
+bc(code). **NULL**
+
+
+.
+
+h4(#examples). Examples
+
+h5(#example_1zem_event_display_form_default). Example 1: zem&#95;event&#95;display form (default)
+
+bc(code). <txp:zem_event_permlink wraptag="" >
+  <txp:zem_event_name label="Event" wraptag="" />
+</txp:zem_event_permlink>
+<txp:zem_event_date label="Date" wraptag="" />
+<txp:zem_event_time label="Time" wraptag="" />
+
+

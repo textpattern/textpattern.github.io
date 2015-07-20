@@ -1,0 +1,132 @@
+\n
+
+(La traduzione Ã¨ appena cominciata!)
+
+h3(sectionedit1#sommario). Sommario
+
+Questa Ã¨ la traduzione delle "FAQ":http://textpattern.com/faq/ (una raccolta delle domande piÃ¹ frequenti) ufficiali di Textpattern. Come prima cosa traduciamo questo indice e poi via via saranno tradotte le singole voci. Mooolto con calma. Se vuoi aiutare in quest'opera contattami ().
+
+h4(#acquisizione_e_installazione_6). Acquisizione e Installazione (6)
+
+* "requisiti&#95;di&#95;sistema":/home/www/zendstudio/dokuwiki/bin/doku.php?id=requisiti_di_sistema
+* "da&#95;dove&#95;recupero&#95;la&#95;versione&#95;attuale&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=da_dove_recupero_la_versione_attuale
+* "dove&#95;trovo&#95;le&#95;istruzioni&#95;per&#95;l&#95;installazione&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=dove_trovo_le_istruzioni_per_l_installazione
+* "ho&#95;installato&#95;textpattern.&#95;e&#95;adesso":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ho_installato_textpattern._e_adesso
+* "come&#95;si&#95;effettua&#95;il&#95;login&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=come_si_effettua_il_login
+* "dove&#95;lo&#95;trovo&#95;il&#95;file&#95;.htaccess":/home/www/zendstudio/dokuwiki/bin/doku.php?id=dove_lo_trovo_il_file_.htaccess
+
+h4(#errori_avvertimenti_e_note_25). Errori, avvertimenti e note (25)
+
+_(nota di farnis: da tradurre i titoli ed inserire gli articoli. Ho aggiunto i link per comodita')_
+
+* "problemi&#95;con&#95;codice&#95;nel&#95;corpo&#95;degli&#95;articoli":/home/www/zendstudio/dokuwiki/bin/doku.php?id=problemi_con_codice_nel_corpo_degli_articoli
+* "errori&#95;occasionali&#95;di&#95;database&#95;unavailable&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=errori_occasionali_di_database_unavailable
+* "gli&#95;articoli&#95;individuali&#95;non&#95;si&#95;caricano":/home/www/zendstudio/dokuwiki/bin/doku.php?id=gli_articoli_individuali_non_si_caricano
+* "risolvere&#95;problemi&#95;relativi&#95;alla&#95;ricerca":/home/www/zendstudio/dokuwiki/bin/doku.php?id=risolvere_problemi_relativi_alla_ricerca
+* "&#95;publish.php&#95;cannot&#95;be&#95;called&#95;directly":/home/www/zendstudio/dokuwiki/bin/doku.php?id=error:publish.php_cannot_be_called_directly
+* "&#95;allowed&#95;memory&#95;size&#95;.":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fatal_error:allowed_memory_size
+* "password":/home/www/zendstudio/dokuwiki/bin/doku.php?id=non_ricevo_le_mail_di_commento:password
+* "the&#95;install&#95;page&#95;shows&#95;a&#95;jumble&#95;of&#95;php&#95;code":/home/www/zendstudio/dokuwiki/bin/doku.php?id=the_install_page_shows_a_jumble_of_php_code
+* "article&#95;images&#95;aren&#95;t&#95;working":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_images_aren_t_working
+* "tabs&#95;show&#95;up&#95;as&#95;tab&#95;content&#95;tab&#95;presentation&#95;.":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tabs_show_up_as_tab_content_tab_presentation
+* "404&#95;error&#95;unless&#95;i&#95;use&#95;index.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=404_error_unless_i_use_index.php
+* "client&#95;does&#95;not&#95;support&#95;authentication&#95;protocol&#95;requested&#95;by&#95;server":/home/www/zendstudio/dokuwiki/bin/doku.php?id=client_does_not_support_authentication_protocol_requested_by_server
+* "412&#95;precondition&#95;failed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=412_precondition_failed
+* "images&#95;are&#95;broken&#95;on&#95;certain&#95;pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_are_broken_on_certain_pages
+* "blank&#95;page&#95;after&#95;editing&#95;a&#95;page&#95;template":/home/www/zendstudio/dokuwiki/bin/doku.php?id=blank_page_after_editing_a_page_template
+* "&#95;unexpected&#95;.":/home/www/zendstudio/dokuwiki/bin/doku.php?id=parse_error:unexpected
+* "&#95;missing&#95;argument&#95;2&#95;for&#95;.":/home/www/zendstudio/dokuwiki/bin/doku.php?id=warning:missing_argument_2_for
+* "textpattern&#95;crashes&#95;apache&#95;under&#95;wamp":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_crashes_apache_under_wamp
+* "404&#95;error&#95;when&#95;linking&#95;to&#95;article&#95;pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=404_error_when_linking_to_article_pages
+* "500&#95;internal&#95;server&#95;error":/home/www/zendstudio/dokuwiki/bin/doku.php?id=500_internal_server_error
+* "&#95;undefined&#95;variable&#95;.":/home/www/zendstudio/dokuwiki/bin/doku.php?id=notice:undefined_variable
+* "&#95;xml&#95;parser&#95;create":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fatal_error:xml_parser_create
+* "&#95;constant&#95;txpinterface&#95;already&#95;defined&#95;.":/home/www/zendstudio/dokuwiki/bin/doku.php?id=notice:constant_txpinterface_already_defined
+* "&#95;call&#95;to&#95;undefined&#95;function&#95;.":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fatal_error:call_to_undefined_function
+* "&#95;failed&#95;to&#95;open&#95;stream&#95;.":/home/www/zendstudio/dokuwiki/bin/doku.php?id=warning:failed_to_open_stream
+* "&#95;unable&#95;to&#95;save&#95;result&#95;set&#95;.":/home/www/zendstudio/dokuwiki/bin/doku.php?id=warning:unable_to_save_result_set
+
+h4(#caratteristiche_e_limiti_17). Caratteristiche e limiti (17)
+
+* "posso&#95;usare&#95;textpattern&#95;per&#95;.&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posso_usare_textpattern_per
+* Does Textpattern support Trackback?
+* What languages does Textpattern support?
+* Can I make an image gallery?
+* Can I mix blog, static, and gallery pages?
+* Can Textpattern share a database?
+* Is there an article size limit?
+* Does Textpattern support multiple weblogs?
+* Is Textpattern search engine friendly?
+* Can Textpattern import entries from..
+* How are sections and categories different?
+* How do I use custom fields?
+* Can I use Textpattern for a photoblog?
+* How do I back up Textpattern?
+* Stop feeds updating on comments?
+* When will the next version be released?
+* How fast is Textpattern?
+* How many articles can Textpattern handle?
+
+h4(#licenze_1). Licenze (1)
+
+* What license does Textpattern use?
+
+h4(#localizzazione_2). Localizzazione (2)
+
+* Non-ASCII characters are missing or incorrect
+* How do I display time and date formats in my local language?
+
+h4(#varie_7). Varie (7)
+
+* Common “How Do I?” questions
+* Diagnosing performance problems
+* Help, I forgot my password!
+* How should I ask for help on the forum?
+* Can I use Textpattern to do this?
+* Why RSS 0.92?
+* How do I post tags and code on the forum?
+
+h4(#aspetto_e_template_20). Aspetto e template (20)
+
+* How do I show a list of related articles?
+* How do I make an archive page?
+* Page output is unstyled
+* How do I search in the current section only
+* Where can I get the default templates?
+* Comment display confusion
+* What does article&#95;custom do?
+* How do I keep a post at the top of the page?
+* How do I change the article markup?
+* How do I skip the comment preview?
+* How do I change the number of articles displayed?
+* How do I embed Textpattern in another page?
+* Which articles go on the front page?
+* How do I reuse chunks of HTML?
+* How do I manage static pages?
+* How do I show only an excerpt in article lists?
+* How do I use a different page layout for individual articles and article lists?
+* How do I use a different page layout for each section?
+* How do I select which form is used to display articles?
+* How do I change the grey line separating articles?
+
+h4(#versioni402_3). Versioni: 4.0.2 (3)
+
+* How can I tell if I've upgraded correctly?
+* How do I turn off register&#95;globals?
+* if&#95;comments, comments&#95;invite changes
+
+h4(#tag_dei_template_12). Tag dei template (12)
+
+* if&#95;category vs. if&#95;article&#95;category
+* Is there a tag or attribute for..
+* How do I change the appearance of..
+* How do I create navigation links?
+* Problems with nested txp:if&#95;.. tags
+* Can I use PHP code in article bodies?
+* How do I use PHP code?
+* Can I use txp tags in articles?
+* How do I use a custom date format?
+* My dates look like 'Y m d'!
+* Why aren't the right articles showing up on my page?
+* How do I change the output of txp:recent&#95;articles?
+

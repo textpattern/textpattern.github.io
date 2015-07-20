@@ -1,0 +1,8 @@
+\nGet admin working well first, then use AJAX to soup it up.
+
+Should be accessible without AJAX
+
+* Reduce page reloads
+* Drag &amp; drop
+* Visual feedback
+

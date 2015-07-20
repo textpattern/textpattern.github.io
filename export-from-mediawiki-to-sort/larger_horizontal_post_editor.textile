@@ -1,0 +1,25 @@
+\n
+
+h3(sectionedit1#problem_definition). Problem definition
+
+The input text areas are too narrow on all pages, particularly for coding (pages/forms)
+
+<hr />
+
+h3(sectionedit2#solution_ideas). Solution ideas
+
+h5(#make_them_liquid_expand_to_fill_layout). Make them liquid (expand to fill layout)
+
+Not sure how to do this, but I know it's possible. See "Radiant":http://www.radiantcms.com.
+
+h5(#allow_editing_and_saving_in_external_editor). Allow editing (and saving) in external editor
+
+No idea on this, XML-RPC? Transmit-Textmate have this cosy relationship working nicely.
+
+<hr />
+
+h3(sectionedit3#votes). Votes
+
+* Ace of Dubs
+* hazel
+

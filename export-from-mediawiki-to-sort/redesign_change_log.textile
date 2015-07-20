@@ -1,0 +1,116 @@
+\n*Only pages that have been re-titled and thus risk breaking external links to the wiki are recorded here!* If a page was obfuscated by another more current, the old, obsolete page was deleted. Any pages considered deprecated but have info needing salvaged or merged somewhere are relegated to .
+
+h3(sectionedit1#help_content). Help Content
+
+All help content needs restructured under , which means retitling help information under the
+
+bc(code). help:
+
+
+namespace.
+
+Page Title Was...
+
+Is Now...
+
+New Accounts
+
+TextBook Language Support
+
+Language Options
+
+MediaWiki compared to Textpattern
+
+Admin:Planning
+
+broken into various wiki admin topics under help:Contents
+
+h3(sectionedit3#custom_namespaces_and_translations). Custom Namespaces and Translations
+
+<table>
+<col width="50%" />
+<col width="50%" />
+<thead>
+<tr class="header">
+<th align="left">Page Title Was...
+Is Now...</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Any translated pages beginning with two-character country codes (e.g., Es/, It/, El/, etc.)
+Recreated without the country codes.</td>
+<td align="left">Any translated FAQ
+Recreated to drop country code and add custom namespace *faq:*</td>
+</tr>
+</tbody>
+</table>
+
+h3(sectionedit5#project_pages). Project Pages
+
+Page Title Was...
+
+Is Now...
+
+Feature ideas/wishlest
+
+h3(sectionedit7#general_pages). General Pages
+
+Page Title Was...
+
+Is Now...
+
+Site Administration
+
+"admin-side":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin-side
+
+all admin-side tab pages having convention “tablabel Subtab” (e.g., Admin Subtab)
+
+now simply title “tablabel” (e.g., Admin)
+
+Managing bilingualism without a plug-in (a partial answer)
+
+"bilingual&#95;publishing&#95;without&#95;a&#95;plugin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=bilingual_publishing_without_a_plugin
+
+Tutorials
+
+Subversion Installation for Windows via TortoiseSVN
+
+"svn&#95;install&#95;with&#95;tortoise&#95;svn":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_install_with_tortoise_svn
+
+Subversion Installation for Windows via wget
+
+"svn&#95;install&#95;with&#95;wget":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_install_with_wget
+
+Subversion Installation for Macintosh
+
+"svn&#95;install&#95;for&#95;mac":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_install_for_mac
+
+Subversion Installation for Linux
+
+"svn&#95;install&#95;for&#95;linux":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_install_for_linux
+
+Deprecated! &#42; "subversion&#95;installation&#95;at&#95;text&#95;drive&#95;via&#95;webmin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_at_text_drive_via_webmin &#42; "subversion&#95;installation&#95;at&#95;text&#95;drive&#95;via&#95;secure&#95;shell":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_at_text_drive_via_secure_shell
+
+Need rewritten in... &#42; "svn&#95;install&#95;on&#95;joyent&#95;servers":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_install_on_joyent_servers
+
+Plugin Dev Guidelines, Tips and Resources
+
+"extending&#95;textpattern":/home/www/zendstudio/dokuwiki/bin/doku.php?id=extending_textpattern
+
+Plugin Development Topics
+
+Topics were broken-out into their own pages for improved visibility: &#42; "what&#95;is&#95;a&#95;plugin&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=what_is_a_plugin &#42; "how&#95;plugins&#95;are&#95;loaded":/home/www/zendstudio/dokuwiki/bin/doku.php?id=how_plugins_are_loaded &#42; "using&#95;callbacks&#95;in&#95;between&#95;plugins&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=using_callbacks_in_between_plugins
+
+Post Installation, Upgrading, Updating Suggestions
+
+Relevant content moved to step 6 in "upgrading&#95;to&#95;a&#95;new&#95;version":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_to_a_new_version
+
+All old tag pages having titles beginning with “txp:“
+
+recreated in
+
+Custom MAMP
+
+"roll&#95;your&#95;own&#95;amp&#95;stack&#95;on&#95;mac":/home/www/zendstudio/dokuwiki/bin/doku.php?id=roll_your_own_amp_stack_on_mac
+

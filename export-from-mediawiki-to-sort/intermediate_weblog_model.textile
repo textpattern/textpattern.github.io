@@ -1,0 +1,48 @@
+\n
+
+h3(sectionedit1#overview). Overview
+
+Needs written...
+
+h3(sectionedit2#working_with_cascading_style_sheets_css_in_textpattern). Working with Cascading Style Sheets (CSS) in Textpattern
+
+h3(sectionedit3#adding_plugins_to_your_textpattern_installation). Adding Plugins to Your Textpattern Installation
+
+Plugins are a way to easily extend Textpattern's base functionality by adding tags that are then useable in website templates, much like Textpattern's base tags. New in 1.0 is also the ability to use plugins that modify the admin area. The first step in installation is to locate a plugin that you wish to use. Many can be found through the "Textpattern forums":http://forum.textpattern.com/viewtopic.php?id=2193 and "Textpattern.org":http://textpattern.org/plugins, among other sources.
+
+h4(#installation). Installation
+
+Once obtained, log in to your admin area and click on _admin &gt; plugins_. From here there is two ways of installing a plugin.
+
+The recommended way is to first open up your saved plugin in a text editor such as notepad. Inside you will find a bunch of gibberish, it's okay! Copy all of the text (Ctrl+A, Ctrl+C in notepad for Windows) and then return to Textpattern's admin interface. In the larger box that has “install plugin” beside it paste the copied text (Ctrl+V on Windows). Then press Upload.
+
+_Alternative_
+
+The old way is to save the plugin as a text file, then click on browse beside the Old-style plugin installer. Locate the file on your computer through browse and then click upload.
+
+Once upload is clicked a preview of the plugins code will be displayed, if everything looks fine then click install.
+
+h4(#using_the_plugin). Using the plugin:
+
+You will then be returned to the plugin admin page, where your plugin should now be displayed. Under the active heading the plugin should say “no” click on no to activate the plugin to “yes”.
+
+Clicking edit from here will allow you to edit the code of the plugin, if you are experienced enough to do so. Generally, if a plugin needs editing you can find discussion about what exactly needs edited - and how - in the "Plugins":http://forum.textpattern.com/viewforum.php?id=13 category of the Textpattern Forum. If you are having problems and can't find existing discussion in the Forum, you can always post a question yourself.
+
+Also, clicking on the “help” link that appears beside the plugin in your Textpattern plugin list is highly recommended because usually documentation is provided on how to use that particular plugin. This is important because each plugin is different in its individual usage.
+
+Now that you know how to install plugins, let's have a look at a few that we will use for discussing the _Intermediate Weblog Model_.
+
+h5(#placeholder_for_plugin_a). Placeholder for Plugin A
+
+h5(#placeholder_for_plugin_b). Placeholder for Plugin B
+
+h5(#placeholder_for_plugin_c). Placeholder for Plugin C
+
+h5(#placeholder_for_plugin_d). Placeholder for Plugin D
+
+Add more plugin sections if needed.
+
+h3(sectionedit4#adding_substructure_to_your_site). Adding Substructure to Your Site
+
+(Idea based on the discussion in thread "7472":http://forum.textpattern.com/viewtopic.php?id=7472, which seems quite useful and potentially requires the use of at least two plugins, as indicated in that thread.)
+

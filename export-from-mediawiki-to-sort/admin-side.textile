@@ -1,0 +1,30 @@
+\n"mininav&#95;primary&#95;backoffice&#95;tabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_primary_backoffice_tabs
+
+See also the Administration tutorials page.
+
+The "admin-side":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin-side is where you manage your Textpattern site. If the site is owned and managed by you only, then you'll do it all here. If the site is maintained by different people (e.g., administrator, authors, presentation designer, etc.) then they may only have access to the areas relevant to their roles as initially setup in the "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users panel.
+
+The admin-side login screen and two default landing points are indicated below.
+
+h3(sectionedit1#admin-side_login). Admin-side Login
+
+Unless you make modifications to your file tree (not recommended if you are just getting started), admin-side login will always be at _example.com/textpattern_ (Figure 1).
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:back-office-login.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:back-office-login.png
+
+h3(sectionedit2#first-time_login_landing_point). First-Time Login Landing Point
+
+When you install Textpattern and login for the first time (or when you first login after upgrading an installation), the default view will be in the "admin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin area, specifically at the "language&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences view where you need to install/update the languages you choose to use (Figure 2).
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:languages-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:languages-tab.png
+
+From there you should configure your "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences, check/troubleshoot "diagnostics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics as needed, and then tackle setting up site architecture and presentation with a little trial and error. The latter is a big chunk of learning and doing and there's no direct 1-2-3 method for it, but this wiki is here, the learning is fun, and once you understand how it all fits together you'll thank yourself for choosing such an elegant system.
+
+h3(sectionedit3#routine_login_landing_point). Routine Login Landing Point
+
+After your initial login, all other admin-side visits will default you directly in the "content":/home/www/zendstudio/dokuwiki/bin/doku.php?id=content tab's "write":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write panel, which will be convenient later when all you need to do is write articles (Figure 3).
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-tab.png
+
+You can optionally change the location of your login landing point from the "advanced&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences tab in the "admin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin area: set the _Default admin tab_ dropdown to your preferred page.
+

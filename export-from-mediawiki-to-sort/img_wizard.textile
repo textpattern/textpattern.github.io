@@ -1,0 +1,50 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop I opened this Page, to "not break the party":http://forum.textpattern.com/viewtopic.php?pid=104172#p104172 :) - Bastian 16:31, 17 March 2006 (GMT)
+
+While the main functions of this plugin are delivered by AJAX, it should be not a big deal, to included later to txp core.
+
+Image Wizard is the my first idea of a name, please tell me, if you have a better one.
+
+Thanks, Bastian, for creating this page!
+
+ - Skubidu 16:55, 17 March 2006 (GMT)
+
+h3(sectionedit1#goal). Goal
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:img-wizard.jpg(img-wizard.jpg)!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:img-wizard.jpg
+
+* User can add images to post at the write-screen without popup
+* Mulitple image support
+* User can choose a form which parses the images
+* Upload from desktop and copy from web
+* Crop and resize images
+
+h3(sectionedit2#maintainer). Maintainer
+
+Sign in, if you want to help developing or testing
+
+*Coder*
+
+ - Bastian 16:33, 17 March 2006 (GMT)
+
+*Tester*
+
+(none)
+
+*Translators*
+
+I can use $textarray to make locations possible, but who translates?  - Bastian 20:51, 20 March 2006 (GMT)
+
+h3(sectionedit3#demo). Demo
+
+I will setup a demo and testing install. Maybe March, 19  - Bastian 07:25, 18 March 2006 (GMT)
+
+h3(sectionedit4#status). Status
+
+*17.03.2006*: Start of Image Wizard For the moment there is only a very "basic plugin":http://samisdat.org/files/bas_img_ajax.txt which handels the AJAX
+
+h3(sectionedit5#wishlist). Wishlist
+
+"Skubidu":http://forum.textpattern.com/viewtopic.php?pid=104166#p104166 wants the "Lightbox Way":http://www.huddletogether.com/projects/lightbox/ for plugin's appearance. Thats a good idea, i think. I will add that to the AJAX  - Bastian 16:39, 17 March 2006 (GMT)
+
+Bastian, please take a look at "Sencers posting in the forum":http://forum.textpattern.com/viewtopic.php?pid=104181#p104181 concerning localisations. (Ich denke fÃƒÂ¼r ein Plugin in wie dieses wÃƒÂ¤re es von groÃƒÅ¸er Hilfe, wenn es einfach zu ÃƒÂ¼bersetzen wÃƒÂ¤re, da ich denke, dass es fÃƒÂ¼r viele Nutzer in verschiedenen Sprachen hilfreich sein wird. DafÃƒÂ¼r die Variable $textarray zu benutzen, halte ich fÃƒÂ¼r sehr brauchbar, vor allem, wenn man die Sprachfunktion in ein extra Plugin auslagert)  - Skubidu 15:02, 19 March 2006 (GMT)
+

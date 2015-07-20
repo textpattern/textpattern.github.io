@@ -1,0 +1,12 @@
+\nChanges in 4.5.1
+
+* Maintenance release with bug fixes, no security implications
+* Default front-side template: Remove duplicate search input field
+* Textile: Use 'named groups' syntax '?P&lt;group&gt;' for b/c with older PCRE libary versions
+* Hive admin-side theme: Modernizr v2.6.2
+* Prevent fatal aborts from error-handling during version upgrades
+* Unregister all globals in multi-site setups
+* Prevent deletion of used stylesheets from UI
+* Offer all supported units in the tag builder for &lt;txp:file&#95;download&#95;size /&gt;
+* Developer: New events 'authors&#95;deleted', 'categories&#95;deleted', 'css&#95;deleted', 'discuss&#95;deleted', 'file&#95;deleted', 'forms&#95;deleted', 'thumbnail&#95;deleted', 'links&#95;deleted', 'articles&#95;deleted', 'page&#95;deleted', 'sections&#95;deleted'
+

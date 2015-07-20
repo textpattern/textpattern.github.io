@@ -1,0 +1,38 @@
+\nFirst thing is you need to have something to write about, right? If you already have something to write about, great, skip the next section and review the other tips. If you don't know what to write about, consider this simple yet powerful approach for identifying a topic.
+
+h3(sectionedit1#choosing_a_topic). Choosing a Topic
+
+If you have spent any time in the Forum at all, then you've surely seen when when a great solution was presented to a seemingly common problem. Maybe you even thought to capture the idea and write it up proper before it sinks out of sight to the bottom of a forum, eventually lost and forgotten. In fact, these knowledge bits are too frequently forgotten. As a result, the same questions get asked over and over, and the forum gets more and more redundant. Let's face it, the forum is a great place for chit-chat, but it sucks for easily finding good documentation. The crappy search engine doesn't help.
+
+So there it is...lock-on to one of those great problem/solution knowledge pieces you've stumbled across in the forum, write it up nice and neat, and add it here for ease of use. You won't believe the shear satisfaction this will give you, and you'll never again have to feel guilty about not contributing to the wiki docs.
+
+h3(sectionedit2#writing_style). Writing Style
+
+It's a no-brainer, people just want to learn and do quickly and easily. Your writing should not get in the way of that. Be direct, concise and try to keep personality out of it (save that for your blog). Do that and everone wins.
+
+h3(sectionedit3#using_imagery). Using Imagery
+
+Use images sparingly (only where they lend to understanding) and keep image dimensions to a minimum. NO SCREENSHOTS!
+
+Make reference to your images in context, and mark them up as Figures having brief descriptive text ("for example":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin-side).
+
+h3(sectionedit4#structuring_the_page). Structuring the Page
+
+Keep it basic...
+
+Start with a brief paragraph that summarizes what the tute is about. Do not add a header to it. This keeps it above the page table of contents which makes for a better presentation of content.
+
+If your tutorial requires some minimum requirements or prerequisite applications or knowledge, make that clear next under an h2 heading
+
+bc(code). == Requirements ==
+
+
+Finally would be your process section that actually walks readers through the steps of the tutorial.
+
+bc(code). == The Process ==
+
+
+Don't forget the other great authoring help in to make it all pretty.
+
+That's it. Hop tute!
+

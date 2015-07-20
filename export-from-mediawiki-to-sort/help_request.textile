@@ -1,0 +1,8 @@
+\n
+
+h4(#topicbanning_users_-_how_to_do_it). Topic: Banning Users - How to do it?
+
+ - Destry 11:51, 17 Feb 2005 (GMT): This is mainly at Remillard, as he's the other admin. In light of the need to create user accounts by request, and with respect that users should have a forum account first, I flagged two acount names in the wiki "user list":http://textpattern.net/wiki/index.php?title=Special:Listusers, as they seemed oddly _spamish_ tasting: *gogleboys* and *googleboy*. I looked in the forum user listing, and there isn't an account for either one. That doesn't necessarily mean they are bogus, but nevertheless they are in violation of the new policy of having a forum account first. I would have already banned these user accounts except I can't seem to do it. (I should be able to do it by just using the username and not the IP too, but the wiki insists having the IP too, I don't know what gives.)
+
+In case _gogleboys_ or _googleboy_ is reading this (doubtful) it doesn't make any sense why you would have an account in here and not in the Textpattern forum. Possible someone would want it? Yes. Odd? Yes, without a doubt; having a forum account first is just the logical way of it. If we can figure out how to ban your usernames, we probably will. If you want to create a forum account and show us the user account links, we'll certainly unban in here.
+

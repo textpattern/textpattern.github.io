@@ -1,0 +1,91 @@
+\n &#42; A new .htaccess file is intended to do away with the pre-release section placeholder files. In theory, you should be able now to channel everything directly to index.php. (zem)
+
+<ul>
+<li>Added 'select all', 'select none' and 'select range' widgetty buttons in list view for articles, links and comments</li>
+<li><p>Added</p>
+bc(code). <txp:breadcrumb />
+
+
+<p>tag. Will output CategoryOne &gt; CategoryTwo &gt; CategoryThree for nested categories, or Home &gt; section &gt; title breadcrumbs</p></li>
+<li><p>Added</p>
+bc(code). <txp:lang />
+
+
+<p>tag. Intended to be used on DOCTYPE declarations. (kusor)</p></li>
+<li>Added a function which will translate i18n characters to their ascii equivalents (Ã© → e, Ã¤ → a) for url titles; previously these were simply stripped or displayed as clipped unicode entities</li>
+<li><p>Added double conditional tag</p>
+bc(code). <txp:if_search>
+
+
+<p>...</p>
+bc(code). <txp:else />
+
+
+<p>...</p>
+bc(code). </txp:if_search>
+
+
+<p>to allow you to customise search results template and main page, even if both share the same template (kusor)</p></li>
+<li><p>Added double conditional tags</p>
+bc(code). <txp:if_excerpt>
+
+
+<p>...</p>
+bc(code). <txp:else />
+
+
+<p>...</p>
+bc(code). </txp:if_excerpt>
+
+
+<p>More like this to come... (kusor)</p></li>
+<li>Added Import tab to Admin. You can import data from Movable Type - both MySQL DB and import file - blogger, WordPress and B2. The import tool is still being developed, but is mature enough to import 2.5mb of data in 30 seconds. (kusor, zem)</li>
+<li>Added new admin → diagnostics tab, which should simplify a large percentage of installation problems (zem)</li>
+<li><p>Added proper</p>
+bc(code). <label>
+
+
+<p>tags to checkbox and radio form elements in various tabs to aid clickability and pleasantness</p></li>
+<li>Added rel=“nofollow” support for displaying urls submitted by commenters</li>
+<li>Added some dapper new url-parsing options: you can now call up site.com/category/{categoryname}, site.com/author/{authorname}, site.com/atom/, and site.com/rss. These are hooked into the language files, so site.fr/auteur/baudelaire and site.es/categoria/escandalo should work fine. More are on the way.</li>
+<li>After a fresh install, the main Textpattern index.php redirects to setup.php if no install detected</li>
+<li>Passwords for any site author can now be reset by site publishers in the admin tab</li>
+<li>Built in are a number of new permalink url schemas, which are easily switched via admin → prefs. These include the familiar /section/id/title, /id/title, /year/month/day/title, and, for the very brave, /title (note that 'title' in all instances refers to the 'url title', which is now stored in the database rather than calculated at runtime)</li>
+<li>Closed a potential JS injection vulnerability in referrer recording (sencer, zem)</li>
+<li>Closed a potential mail-relay hole in email-comments function (zem)</li>
+<li>Closed off code injection vulnerabilities in comments</li>
+<li>Commenter and referrer IP addresses are now checked against the following spam blacklists: bl.spamcop.net, list.dsbl.org and sbl.spamhaus.org</li>
+<li>Completely removed reliance on the flaky prefs variables $doc&#95;root and $path&#95;from&#95;root. This means Textpattern should now run as intended on subdomains and tilde sites. There are three master variables that now define everything: $siteurl (the http-reachable address of the site, including subdirectory if any), $path&#95;to&#95;site (the full server path to the site, mainly useful for handling file uploads), and the familiar $txpath (which is set at install).</li>
+<li>Dealt with the annoying regex error that would occur when site.com/subdirectory/ urls were recorded in the Web Domain field in prefs</li>
+<li>Fixed a bug in XML feeds: characters already converted to entities by Textile were being re-encoded by htmlspecialchars (zem)</li>
+<li>Fixed a problem where txp:keywords was outputting the current section name instead of, you know, keywords</li>
+<li>Fixed error thrown when a label was used inside txp:linklist tags (remillard)</li>
+<li>Fixed some forehead-smackingly stupid flaws in the way $&#95;POST variables were handled when saving comments</li>
+<li>Fixed two bugs in the IP bannning code: one that prevented banned IPs from being blocked, and one that stopped unban from working (zem)</li>
+<li>Fixed two problems in discuss&#95;edit: first, when comments containing i18n characters were double-escaped in the admin textarea for editing a comment. Second, when an edited comment is saved, characters weren't re-encoded as HTML entities. (zem)</li>
+<li>Fixed txp:recent&#95;comments output, which was failing to display commentator names as before</li>
+<li><p>Having comments presented as a numbered list (using</p>
+bc(code). 
+
+</li>
+</ul>
+
+and
+
+bc(code).       *  tags), the previous hard-coded default, can now be switched off via prefs. Note that switching this off will require you to edit the 'comments' form, wrapping the entire form in a block-level tag like <code>
+        *  It's now easy, via the tag generator, to make displayed article categories, sections, and authors into links to a list of other articles with the same category, section or author
+        *  Killed, after much long analysis, the the vapourware concept 'mentions'. Sorry, it was a gaping spam vulnerability waiting to happen. A 'trackback' plugin by kusor is in the works, for those that see a need.
+        *  Lots of efficient code refactoring and simplification in txp_category.php, publish.php and many txp_event files (kusor)
+        *  New author login and password change emails are now hooked in to localised languages
+        *  plugins: help and edit are more clearly presented, on separate pages
+        *  recent_comments now no longer lists comments flagged as not visible (zem)
+        *  Removed deprecated txp:paging_link tag
+        *  Removed the prefs options for 'use sections' and 'use categories', as this was designed to make things easy for simple sites but in fact ended up causing confusion
+        *  Tab index order for form items in article edit window should now behave as expected
+        *  The 'time since' date format is now hooked into the localised language file, so outputting it in most non-english languages should be doable
+        *  The criteria for saving an article for the first time is now more liberal: articles can be saved with only a title, body or excerpt (zem)
+        *  The first time you log into the system after a fresh install or an update, you're redirected to the prefs section
+
+
+&lt;/code&gt;
+

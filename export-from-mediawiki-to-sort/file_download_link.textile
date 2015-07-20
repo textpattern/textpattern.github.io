@@ -1,0 +1,64 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:file_download_link />
+
+
+The "file&#95;download&#95;link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_link tag is both a _single_ tag and a _container_ tag. Thus it may be used as an opening and closing pair:
+
+bc(code). <txp:file_download_link>
+...containing statements...
+</txp:file_download_link>
+
+
+When used as a single tag, Textpattern will replace the tag with a download link to the file being downloaded. As a container, it will assign the link to the given text or tag, while the single tag outputs the file's plain URL.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"filename":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#filename=“text”*
+ Name of the file to download. *"id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#id=“integer”*
+ Numeric id of the file to download.
+
+Note:“id” takes precedence over “filename”. If neither is defined and the tag is not used within the context of a file, nothing is returned.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1provide_a_link_to_download_file_4). Example 1: Provide a link to download file #4
+
+bc(code). <txp:file_download_link id="4">
+<txp:file_download_name /> [<txp:file_download_size format="mb" decimals="2" />]
+</txp:file_download_link>
+
+
+*What this does...*
+ Makes a link to the given file (#4) comprising its file name and size
+
+Other tags used:
+
+* "file&#95;download&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_name
+* "file&#95;download&#95;size":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_size
+
+h4(#example_2provide_a_download_link_under_a_condition). Example 2: Provide a download link under a condition
+
+This example is based on a real situation where a PDF file was made available as a language translation of the main article. This was a viableâ€”and low-techâ€”solution to a problem where full integration of the MLP pack was not feasible for the website owner's needs and abilities.
+
+bc(code). <txp:if_custom_field name="PDF translation">
+  <txp:file_download_link id='<txp:custom_field name="PDF translation" />'>
+    <txp:file_download_name title="1" /> [PDF, <txp:file_download_size format="b" decimals="1" />]
+  </txp:file_download_link>
+</txp:if_custom_field>
+
+
+*What this does...*
+ Provides a file download link if an associated custom field has a value. *What this requires...*
+ You must have a custom field available. The custom field in this example is named _PDF translation_, but you could use whatever you needed. The _Title_ field of the uploaded PDF file must have a translated version of the title entered, as this will be the link text of the file download. *Where used...*
+ Code snippet was used in article form directly under main article title (and above date) to be in direct context with the main language title.
+
+Other tags used:
+
+* "file&#95;download&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_name
+* "file&#95;download&#95;size":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_size
+* "if&#95;custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_custom_field
+* "custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field
+

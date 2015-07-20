@@ -1,0 +1,32 @@
+\nIf you are using Linux, you are probably a wiz-bang, IT dude/dudette who doesn't need more than these very short instructions.
+
+h3(sectionedit1#the_process). The Process
+
+Use _svn_, the Subversion command line client:
+
+bc(code). svn checkout <__yamdwe_nowiki>0</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source /your/path/to/textpattern/install
+
+
+Replace
+
+bc(code). /your/path/to/textpattern/install
+
+
+with the actual path to the directory into which you wish to install Textpattern. Or use a
+
+bc(code). .
+
+
+(period) if you're already in that directory.
+
+h3(sectionedit2#wget_alternative). wget alternative
+
+If your hosting server doesn't have Subversion, you might want to use the repository directly to get the latest files. It's not as efficient and powerful as subversion itself, but it might help.
+
+The Textpattern development team encourages the use of Subversion over wget whenever possible. See the FAQ entry "How do I fetch the current development version?":http://textpattern.com/faq/103/how-do-i-fetch-the-current-development-version for more information.
+
+Use the wget tool to do it, as follow:
+
+bc(code). wget -r -np -nH --cut-dirs=1 svn checkout <__yamdwe_nowiki>1</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source
+
+

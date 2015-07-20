@@ -1,0 +1,63 @@
+\n
+
+h3(sectionedit1#overview). Overview
+
+Making the Blogger posts available to Textpattern can be a little tricky, especially if you're a BlogSpot user. The first step is to back up your template. It would be a shame to lose all of the work that you put into it.
+
+h3(sectionedit2#process). Process
+
+Log onto the Blogger system and pick the blog that you want to export from the list that's provided on the dashboard. Select the “Template” tab and back up your old template. Then replace it with the contents of the file “textpattern\include\import\BloggerImportTemplate.txt” that is part of the Textpattern installation:
+
+bc(code). <Blogger>
+TITLE: <PostSubject><$BlogItemSubject$></PostSubject>
+AUTHOR: <$BlogItemAuthor$>
+DATE: <$BlogItemDateTime$>
+-----
+BODY:
+<$BlogItemBody$>
+-----
+<BlogItemCommentsEnabled>
+<BlogItemComments>
+COMMENT:
+AUTHOR: <$BlogCommentAuthor$>
+EMAIL:
+URL:
+DATE: <$BlogCommentDateTime$>
+<$BlogCommentBody$>
+-----
+</BlogItemComments>
+</BlogItemCommentsEnabled>
+--------
+</Blogger>
+
+
+Click “Save Template Changes” to save the data. Basically, this template will dump the contents of every post and every comment that's on your site into a big text file.
+
+To make sure you get _all_ of your posts, click on the “Settings” tab and skip over to the “Formatting” sub-tab. Tell Blogger that you want to show “999 posts”, then also change the Timestamp Format to 'MM/DD/YYYY HH:MM:SS am/pm' and set Convert line breaks to “No”, and Enable float alignment to “No”.
+
+Next you'll need to configure the Comments tabs 8. Change the date format in the “Comments” tab and don't show the comments in a popup window
+
+Last, you'll need to tell Blogger where to store the new file. Textpattern is going to look in the import directory for the data, so on the Publishing tab you'll need to input the details for your Textpattern site. Set the FTP Server to the value that you use when uploading Textpattern, also use the same FTP Username and FTP Password.
+
+Since Textpattern is looking for a specific file in a specific place, you'll need to tell Blogger to store in the FTP Path “/textpattern/include/import” and use the Blog Filename “import.txt”.
+
+Click the “Republish” button and let Blogger convert the posts and upload them to your Textpattern server.
+
+Using the Textpattern Admin &gt; Import page, select Import from “Blogger” and fill in the Section with the one you're using for your blog. You probably want to set the Default article status to “Live”, unless you want to manually make the posts available on Textpattern. The Default comments invite field is used as a prompt at the end of each post, asking the reader to comment.
+
+Click Continue and you should see the title of every post displayed as it gets read by Textpattern. You can click the Content &gt; Articles tab to see the last few posts you wrote on Blogger. Clicking on one should show the Title and Body, along with the other information for the post.
+
+(Describe setting the old site to forward?  - [Lee] 21:29, 4 Aug 2005 (GMT))
+
+(What if the user has BlogSpot, can they change the options and publish there again?  - [Lee] 21:29, 4 Aug 2005 (GMT))
+
+(They can, but only if they do not change the ftp/site settings. Once you change them it won't let you set them back to blogspot.  - Mary 05:04, 15 Sep 2005 (GMT))
+
+(What to do for a Group Blog?  - [Lee] 21:29, 4 Aug 2005 (GMT))
+
+(What about links to their own Blogger posts and Textpattern clean URLs?  - [Lee] 21:29, 4 Aug 2005 (GMT))
+
+(Have to be changed manually.  - Mary 05:04, 15 Sep 2005 (GMT))
+
+(Doesn't work with the new BlogSpot templates. For a workaround read "$":http://forum.textpattern.com/viewtopic.php?pid=198848#p198848  -   - JanDW 22:44, 25 January 2009 (UTC)
+

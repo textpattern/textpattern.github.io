@@ -1,0 +1,356 @@
+\nThis tutorial assumes a working knowledge of "PHP":http://php.net.
+
+h3(sectionedit1#client-side_plugins). Client-side plugins
+
+Let's get stuck in and write a simple client-side plugin. This plugin will:
+
+# Create a Textpattern tag
+# Read some optional attributes
+# Output some text when that tag is called
+# Use TXP's "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else tag
+
+Since all plugins must use a three-letter prefix (see the "plugin&#95;development&#95;guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_development_guidelines for more on this) we're going to use *abc&#95;* in this example.
+
+Let's build the code piece by piece using the "ied&#95;plugin&#95;composer":http://stefdawson.com/ied_plugin_composer plugin. Create a new plugin called *abc&#95;hello&#95;world* and put this code in:
+
+bc(code). function abc_hello_world($atts, $thing=NULL) {
+   return 'Hello Textpattern world!';
+}
+
+
+Once you save the code and enable the plugin, it is available for use. You've just created a new Textpattern tag: go and try it out! In your Page or Form template  -  or even in an article  -  put:
+
+bc(code). <nowiki><txp:abc_hello_world /></nowiki>
+
+
+There you go; your first plugin. Admittedly, not very useful yet.
+
+h4(#attributes). Attributes
+
+In the function signature  -  the first line of the above code  -  you'll see reference to two variables
+
+bc(code). $atts
+
+
+and
+
+bc(code). $thing
+
+
+. These are Textpattern conventions:
+
+<ul>
+<li>bc(code). $atts
+
+
+<p>will hold any attributes that have been used inside your tag</p></li>
+<li>bc(code). $thing
+
+
+<p>holds the contents of any container if your tag can be used that way</p></li>
+</ul>
+
+Notice that
+
+bc(code). $thing
+
+
+is set to
+
+bc(code). NULL
+
+
+by default. This is good practice.
+
+As it stands our plugin does not have any attributes. Let's change that:
+
+<pre class="code">
+function abc_hello_world($atts, $thing=NULL) {
+
+   extract(lAtts(array(
+      'name' =&gt; '',
+      'text' =&gt; 'Pleased to meet you.',
+   ), $atts));
+
+   return 'Hello ' . $name . '! ' . $text;
+}
+</pre>
+
+the
+
+bc(code). lAtts()
+
+
+function is a TXP function that helps you deal with tag attributes easily. It takes care of all the drudgery of making sure that users are not trying to use badly named or incorrect attribute names. It takes an array as its only argument, containing a list of all your attributes and any default values. In this example, we have defined two:
+
+bc(code). name
+
+
+(which has no default value) and
+
+bc(code). text
+
+
+whch has some default content.
+
+If you refresh your site's page you'll now see
+
+bc(code). Hello ! Pleased to meet you.
+
+
+Change your tag to read:
+
+bc(code). <nowiki><txp:abc_hello_world name="Fred" /></nowiki>
+
+
+and notice the difference. Textpattern has read your attribute and used it; the
+
+bc(code). extract()
+
+
+function takes care of making the variable available in your code simply as
+
+bc(code). $name
+
+
+.
+
+You can of course also use the
+
+bc(code). text
+
+
+attribute; notice that if you do, the default value you set up is replaced with whatever is used in the plugin's tag.
+
+h4(#conditional_output). Conditional output
+
+To finish off this little example, we'll alter the plugin to work as a conditional tag and take action based on the name given.
+
+<pre class="code">
+function abc_hello_world($atts, $thing=NULL) {
+
+   extract(lAtts(array(
+      'name' =&gt; '',
+   ), $atts));
+
+   $result = ($name == 'Admin') ? 1 : 0;
+
+   return parse(EvalElse($thing, $result));
+}
+</pre>
+
+It's a stupid example, but change your txp tag to the following:
+
+bc(code). <txp:abc_hello_world name="Fred">
+   <p>Welcome admin</p>
+<txp:else />
+   <p>Welcome normal user person</p>
+</txp:abc_hello_world>
+
+
+What we're doing here is checking if the tag's
+
+bc(code). name
+
+
+attribute is equal to *Admin*. If it is, the conditional branch will execute and if not, the "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else branch will run. The TXP function
+
+bc(code). EvalElse()
+
+
+does the magic for us by fetching and parsing the relevant part of
+
+bc(code). $thing
+
+
+(the container) depending on whether the value of
+
+bc(code). $result
+
+
+is true or false.
+
+h3(sectionedit2#admin-side_plugins). Admin-side plugins
+
+We're going to write a plugin that works on the admin side now. This plugin will:
+
+# Register its own tab (for "Publishers only":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions)
+# Output some text on that tab
+# Respond to a plugin step
+
+To begin with, we need to target the admin side. To do that we have to check whether the current user is on the Admin side or not. We do this as follows:
+
+bc(code). if (@txpinterface == 'admin') {
+}
+
+
+So go ahead, create a new plugin in ied&#95;plugin&#95;composer called *abc&#95;admin&#95;hello&#95;world* and put the above code in it. Make sure the plugin is set to type _Admin_.
+
+Nothing will happen yet of course, so let's create our tab on the Extensions panel:
+
+bc(code). if (@txpinterface == 'admin') {
+   add_privs('abc_admin_hello_world', '1'); // Publishers only
+   register_tab('extensions', 'abc_admin_hello_world', 'My Plugin');
+}
+
+
+The
+
+bc(code). add_privs()
+
+
+function is a necessary step to tell TXP who can see the new tab.
+
+If you visit the Extensions tab, you'll see *My Plugin* but if you click it nothing much will happen  -  you'll probably get some horrible unstyled default content on the screen. Time to give our new tab some content.
+
+h4(#events_and_steps). Events and steps
+
+We've created a new tab: we need to actually give the plugin a function to execute when that tab is clicked. To understand what goes on here let's take some time out to reveal Textpattern *events* and *steps*.
+
+For our purposes here, think of an event as a tab in the TXP interface. That tab has a name that Tetxpattern knows. It has built-in events such as 'file', 'image', 'admin' and so on. In our case, we've told the system that our tab  -  our event  -  is to be known as *abc&#95;admin&#95;hello&#95;world*. When we target a particular event inside some PHP in plugin, we simply tell TXP to execute code when someone visits that tab.
+
+A step is some action that a user takes when within one of the tabs  -  i.e. some action that takes place inside the event that we are interested in. More on steps later. For now we need to tell Textpattern what to do when our tab is clicked. For this we use
+
+bc(code). register_callback()
+
+
+:
+
+<pre class="code">
+if (@txpinterface == 'admin') {
+   add_privs('abc_admin_hello_world', '1'); // Publishers only
+   register_tab('extensions', 'abc_admin_hello_world', 'My Plugin');
+   register_callback('abc_admin_hw_gui', 'abc_admin_hello_world');
+}
+
+function abc_admin_hw_gui($event, $step) {
+   pagetop('My plugin tab');
+   echo 'Hello Textpattern world!';
+}
+</pre>
+
+Now we're getting somewhere! When someone visits the abc&#95;admin&#95;hello&#95;world tab we have told TXP to call the function abc&#95;admin&#95;hw&#95;gui(). The
+
+bc(code). pagetop()
+
+
+function is another TXP function that renders the tabs along the top of the interface; its mandatory first argument is the name to display in the browser's
+
+bc(code). <title>
+
+
+tag.
+
+From here you can display anything you like; draw buttons, widgets, text, whatever. The trick then is to make it do something.
+
+h4(#respond_to_a_plugin_step). Respond to a plugin step
+
+In the code so far we have done one thing when the tab  -  our event  -  is executed. In reality we should take any numbe of actions as people interact with our tab; perhaps we want to allow users to save some settings  -  the *save* step  -  or *edit* something or simply *list* some stuff.
+
+Let's prepare our plugin to work with these three steps; *list* is going to be our default step. To do this we're going to rename our existing
+
+bc(code). abc_admin_hw_gui()
+
+
+function to reflect its actual implementation; it's now going to be called
+
+bc(code). abc_admin_hw_list()
+
+
+.
+
+The original
+
+bc(code). abc_admin_hw_gui()
+
+
+is going to become a sort of *_dispatcher_* for steps. Here's the new function:
+
+bc(code). function abc_admin_hw_gui($event, $step) {
+   if(!$step or !in_array($step, array(
+      'abc_admin_hw_save',
+      'abc_admin_hw_edit',
+   ))) {
+      abc_admin_hw_list();
+   } else $step();
+}
+
+
+Essentially it checks to see if there is a $step or if the name of the step is abc&#95;admin&#95;hw&#95;save or abc&#95;admin&#95;hw&#95;edit. If it is, it simply calls the function with the same name as the step. If there's no step or the step is somehow mistyped or mangled, the default step abc&#95;admin&#95;hw&#95;list is run instead.
+
+Before we forget let's write our functions for the remaining steps:
+
+<pre class="code">
+function abc_admin_hw_save() {
+   echo 'Save step triggered';
+   abc_admin_hw_list();
+}
+
+function abc_admin_hw_edit() {
+   echo 'Edit step triggered';
+   abc_admin_hw_list();
+}
+</pre>
+
+To finish it off we're going to add a couple of hyperlinks to our
+
+bc(code). abc_admin_hw_list()
+
+
+function that allows us to simulate the user clicking on stuff in your interface:
+
+bc(code). function abc_admin_hw_list() {
+   pagetop('My plugin tab');
+   echo '<ul>';
+   echo '<li><a href="?event=abc_admin_hello_world&step=abc_admin_hw_save">Click to Save</a></li>';
+   echo '<li><a href="?event=abc_admin_hello_world&step=abc_admin_hw_edit">Click to Edit</a></li>';
+   echo '</ul>';
+}
+
+
+When you click on a link you'll see (above pagetop) that the relevant function is being called. That's how you differentiate between steps and do things. In this example we might do something (for example update a database table) and then show the list again. You could use the different steps to display completely different interface elements on your new tab. The limit is your imagination.
+
+So here's the final code for the admin side example:
+
+<pre class="code">
+// Setup the tabs and callback
+if (@txpinterface == 'admin') {
+   add_privs('abc_admin_hello_world', '1'); // Publishers only
+   register_tab('extensions', 'abc_admin_hello_world', 'My Plugin');
+   register_callback('abc_admin_hw_gui', 'abc_admin_hello_world');
+}
+
+// Step Dispatcher
+function abc_admin_hw_gui($event, $step) {
+   if(!$step or !in_array($step, array(
+      'abc_admin_hw_save',
+      'abc_admin_hw_edit',
+   ))) {
+      abc_admin_hw_list();
+   } else $step();
+}
+
+// **************
+// Step functions
+// **************
+function abc_admin_hw_list() {
+   pagetop('My plugin tab');
+   echo '&lt;ul&gt;';
+   echo '&lt;li&gt;&lt;a href=&quot;?event=abc_admin_hello_world&amp;step=abc_admin_hw_save&quot;&gt;Click to Save&lt;/a&gt;&lt;/li&gt;';
+   echo '&lt;li&gt;&lt;a href=&quot;?event=abc_admin_hello_world&amp;step=abc_admin_hw_edit&quot;&gt;Click to Edit&lt;/a&gt;&lt;/li&gt;';
+   echo '&lt;/ul&gt;';
+}
+
+function abc_admin_hw_save() {
+   echo 'Save step triggered';
+   abc_admin_hw_list();
+}
+
+function abc_admin_hw_edit() {
+   echo 'Edit step triggered';
+   abc_admin_hw_list();
+}
+</pre>
+
+Now go and create something cool for Textpattern !/home/www/zendstudio/dokuwiki/bin/lib/images/smileys/icon_smile.gif(:-))!
+

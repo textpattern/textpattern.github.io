@@ -1,0 +1,43 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_first_category>
+
+
+The "if&#95;first&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_category tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_first_category>
+...conditional statements...
+</txp:if_first_category>
+
+
+The tag will execute the contained statements if the current category (usually one inside the container or form of a "category&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list) is the first in the currently displayed list.
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1identify_1st_cat_in_category_list). Example 1: Identify 1st cat in category&#95;list
+
+bc(code). <txp:category_list parent="group-1" children="0">
+  <txp:if_first_category>
+    <h3><txp:category /></h3>
+  <txp:else />
+    <txp:category link="1" />
+  </txp:if_first_category>
+</txp:category_list>
+
+
+Other tags used: "category&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list, "category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category, "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else
+
+*What this does...*
+ Prevents the first category in the list from being hyperlinked to a category page *Why you might do it...*
+ If you nest categories under a 'header' category you might want to show the header of the group but not allow people to link to its category page
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_407). Version 4.0.7
+
+* Added as a new tag.
+

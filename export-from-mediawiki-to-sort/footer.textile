@@ -1,0 +1,4 @@
+\n &#42; Txp version number
+
+* Link to Textpattern.org
+

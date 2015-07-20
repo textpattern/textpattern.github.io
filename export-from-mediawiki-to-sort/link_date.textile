@@ -1,0 +1,47 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:link_date />
+
+
+The "link&#95;date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_date tag is a _single_ tag which returns the date the link was created as text. This tag is used in a “link” form or inside the "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklistcontainer tag to return information about the current link in a "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"format":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#format=“format string”*
+ Override default date format, as set in "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences. Values: any valid "strftime()":http://php.net/strftime string values, or
+
+bc(code). since
+
+
+. *"gmt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#gmt=“boolean”*
+ Return either local time  -  according to the set time zone preferences  -  or GMT. Values:
+
+bc(code). 0
+
+
+(local time) or
+
+bc(code). 1
+
+
+(GMT). Default:
+
+bc(code). 0
+
+
+. *"lang":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#lang=“ISO language code”*
+ Format time string suitable for the specified language (locale). Locales adhere to "ISO-639":http://www.loc.gov/standards/iso639-2/langcodes.html. Default: unset, resulting in a time format set via preferences.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_a_link_with_class_attribute). Example 1: Display a link with class attribute
+
+bc(code). <a class="thislink" href="<txp:link_url />">
+<txp:link_name escape="html" />
+</a> : <txp:link_date />
+
+
+Other tags used: "link&#95;url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_url, "link&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_name
+

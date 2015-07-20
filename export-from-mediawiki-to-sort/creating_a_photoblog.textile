@@ -1,0 +1,155 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+Tutorial by "Jon-Michael Deldin":http://jmdeldin.com/.
+
+This tutorial will show you how to create a "photoblog":http://en.wikipedia.org/wiki/Photoblog with popup comments and a thumbnail page.
+
+h4(#settings). Settings
+
+In the Admin&gt;Preferences tab, modify the following fields:
+
+* Comments mode: popup
+* Automatically append comments to articles: No
+** This allows us to use &lt;txp:article/&gt; in multiple contexts
+
+h4(#sectionphotos). Section: photos
+
+Presentation&gt;Sections: Create a new section
+
+* Section name: photos
+* Section title: Photos
+* Uses page: default
+* Selected by default: yes
+* On front page?: yes
+* Syndicate?: yes
+
+h4(#page_template). Page template
+
+Presentation&gt;Pages: default â€“ the default page is used for the homepage and /photos.
+
+<pre class="code">
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html lang=&quot;en&quot; xml:lang=&quot;en&quot; xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+    &lt;txp:css format=&quot;link&quot;/&gt;
+    &lt;title&gt;
+        &lt;txp:page_title/&gt;
+    &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;
+        &lt;txp:link_to_home&gt;
+            &lt;txp:site_name/&gt;
+        &lt;/txp:link_to_home&gt;
+    &lt;/h1&gt;
+
+    &lt;txp:if_section name=&quot;&quot;&gt;
+        &lt;txp:hide&gt;
+            we're on the homepage, so display one image
+        &lt;/txp:hide&gt;
+        &lt;txp:article form=&quot;image&quot; limit=&quot;1&quot;/&gt;
+    &lt;/txp:if_section&gt;
+
+    &lt;txp:if_section name=&quot;photos&quot;&gt;
+        &lt;txp:if_article_list&gt;
+            &lt;txp:hide&gt;
+                This is the thumbnail listing.
+            &lt;/txp:hide&gt;
+            &lt;ul id=&quot;thumbs&quot;&gt;
+                &lt;txp:article form=&quot;thumb&quot; limit=&quot;9999&quot;/&gt;
+            &lt;/ul&gt;
+
+            &lt;txp:category_list break=&quot;li&quot; this_section=&quot;1&quot; wraptag=&quot;ul&quot;/&gt;
+        &lt;txp:else/&gt;
+            &lt;txp:hide&gt;
+                we're viewing a single image
+            &lt;/txp:hide&gt;
+            &lt;txp:article form=&quot;image&quot;/&gt;
+        &lt;/txp:if_article_list&gt;
+    &lt;/txp:if_section&gt;
+    
+    &lt;p id=&quot;footer&quot;&gt;
+        &amp;#169;2008 &lt;txp:site_name/&gt;
+    &lt;/p&gt;  
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+h4(#forms). Forms
+
+We need to make 2 forms in all: image and thumb.
+
+h5(#formimagetypearticle). Form: image; Type: article
+
+This is our single image form. Weâ€™ll post our images as article images, not in the body of the post.
+
+<pre class="code">
+&lt;ul id=&quot;nav&quot;&gt;
+    &lt;li&gt;
+        &lt;txp:link_to_prev&gt;
+            &amp;#8592; Previous
+        &lt;/txp:link_to_prev&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;txp:section link=&quot;1&quot; name=&quot;photos&quot; title=&quot;1&quot;/&gt;
+    &lt;/li&gt;
+    &lt;txp:if_section name=&quot;photos&quot;&gt;
+        &lt;li&gt;
+            &lt;txp:link_to_next&gt;
+                Next &amp;#8594;
+            &lt;/txp:link_to_next&gt;
+        &lt;/li&gt;
+    &lt;/txp:if_section&gt;
+&lt;/ul&gt;
+
+    &lt;h2&gt;
+        &lt;txp:title/&gt;
+    &lt;/h2&gt;
+        &lt;txp:article_image wraptag=&quot;div&quot;/&gt;
+        &lt;txp:body/&gt;
+        &lt;txp:comments_invite showalways=&quot;1&quot; wraptag=&quot;p&quot;/&gt;
+</pre>
+
+h5(#formthumbtypearticle). Form: thumb; Type: article
+
+This links the article imageâ€™s thumbnail to the article.
+
+bc(code). <li>
+    <txp:permlink>
+        <txp:article_image thumbnail="1"/>
+    </txp:permlink>
+</li>
+
+
+h4(#options). Options
+
+If you want the body of the article (photo) to display in the popup comment, just add
+
+bc(code). <txp:body/>
+
+
+to the popup&#95;comments form.
+
+h4(#posting_an_image). Posting an image
+
+# Organizing (initial steps)
+## Content&gt;Organize.
+## Create a new article category, “Dogs,” for example.
+## Create a new image category, “Dogs,” to make things easier.
+# Uploading the image
+## Content&gt;Images
+## Upload an image
+## Upload a thumbnail or create one. Add in alternate text and select an image category, Dogs
+## Save
+## Get the image ID. Itâ€™s a number, like 3. This appears in the URL of the Edit-Image screen and in the Content&gt;Images table.
+# Posting the Image
+## Content&gt;Write
+## Click Advanced Options to expand the menu
+## Leave everything alone, but insert the article image ID from earlier into the Article Image field. EX: 3
+## Type in your content in the large textarea
+## Categorize it (use Dogs for this example)
+## Make sure the section is set to Photos.
+
+And there you go! You are now a photoblogger!
+

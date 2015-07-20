@@ -1,0 +1,14 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+_This is an excerpt of "this tutorial":http://fuelyourcoding.com/create-a-simple-portfolio-website-and-blog-with-textpattern/ by "Marie Poulin":http://www.mariepoulin.com/. The full article includes downloadable files and step-by-step instructions for creating a fully-functional portfolio and blog site, explaining many basic concepts along the way._
+
+h3(sectionedit1#why_textpattern). Why Textpattern?
+
+Okay, I will be the first to admit that when I first started with Textpattern, I was in way over my head. I had never worked with a CMS before, and I wasn't an expert with CSS. I had stumbled upon a beautiful portfolio website by another web designer, and I noticed in the footer that the website was built using Textpattern. I thought to myself, if this designer can build a dynamic portfolio website using Textpattern, surely I can too, right? So I made it my mission to learn and master Textpattern. I learned the hard way, since I didn't know anyone who was familiar with it (Wordpress always seemed to be the CMS of choice). However, Textpattern has an enormously helpful community and many helpful articles, blogs, and forums where other users were generous enough to share their tips, tricks and plugins. Textpattern has now become my CMS of choice as I have found it to be undeniably powerful and flexible, and it doesn't require any knowledge or experience with PHP (not to mention, it's free and open source). Once you wrap your head around the basics, you can bend Textpattern to your will quite easily. Check out the publishing features on the "textpattern website":http://textpattern.com/.
+
+h3(sectionedit2#getting_started). Getting started
+
+This tutorial assumes that you have a fairly strong understanding of HTML and CSS, however I am using an adapted version of Google Blueprint CSS to keep things extra simple. We will be building a very simple portfolio website with a blog component. I will continue to add articles which will build on textpattern's functionality, but for now I am stripping a lot of Textpattern's defaults, which can be quite confusing if you're not sure about the syntax.
+
+_Read the "full article":http://fuelyourcoding.com/create-a-simple-portfolio-website-and-blog-with-textpattern/ ..._
+

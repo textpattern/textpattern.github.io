@@ -1,0 +1,31 @@
+\n"mininav&#95;presentation&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs
+
+bc(code). //PrÃ©sentation// â†’ **//Modules//**
+
+
+Les "modules":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modules sont un des six “blocs de construction” dÃ©crit dans "textpattern&#95;semantic&#95;model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model. L'onglet *Modules* contient un Ã©diteur identique Ã  celui des "gabarits":/home/www/zendstudio/dokuwiki/bin/doku.php?id=gabarits. Une liste des modules existants est situÃ©e Ã  droite de la fenÃªtre, et sur la gauche, vous trouverez un constructeur de balises (ou constructeur de tags) pour vous aider Ã  mettre en place vos contenus.
+
+h3(sectionedit1#cra_er_un_nouveau_module). CrÃ©er un nouveau module
+
+Pour crÃ©er un module, utilisez le bouton “CrÃ©er un nouveau module” en haut de la liste des modules existants, Ã  droite de l'Ã©cran. Il est bon, avant d'enrichir le contenu du module de lui attribuer un nom unique, un type de module (voir ci-dessous) avant de le sauvegarder en utilisant les fonctionnalitÃ©s de l'Ã©diteur situÃ©es sous le formulaire.
+
+Une fois le module crÃ©Ã©, vous pouvez l'Ã©diter en saisissant directement un contenu ou en copiant et modifiant celui d'autres modules. Veillez Ã  sauvegarder votre travail rÃ©guliÃ¨rement afin d'Ã©viter les mauvaises surprises.
+
+h4(#les_types_de_modules_expliqua_s). Les types de modules expliquÃ©s
+
+Un nom unique doit Ãªtre attribuÃ© Ã  chaque module et un type de module doit impÃ©rativement y Ãªtre associÃ©. Il existe sept types de modules : _article_, _divers_, _commentaire_, _catÃ©gorie_, _fichier_, _liens_ et _section_. Le type de module utilisÃ© n'a pas une grande importance mais permet au constructeur de balises de vous aider Ã  trouver facilement le module que vous souhaiteriez ensuite utiliser. Une fois classÃ©s les modules sont Ã©galement plus accessibles.
+
+Il existe cependant une diffÃ©rence notable pour les modules de type article, puiqu'ils sont les seuls Ã  apparaÃ®tre dans la liste des modules de remplacements proposÃ©s lors de la rÃ©daction d'un article via l'option “Configuration avancÃ©e” de l'onglet "RÃ©diger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write.
+
+Les types “catÃ©gorie” et “section” sont censÃ©s Ãªtre utilisÃ©s en relation avec les tags "category&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list et "section&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list, comme valeur de l'attribut "form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossaire_des_attributs_communs#form (_ex._ :
+
+bc(code). <nowiki><txp:section_list form="foo" /></nowiki>
+
+
+), alors que les types “article” et “commentaire” sont censÃ©s Ãªtre utilisÃ©s en relation avec les tags "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article et "comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments.
+
+Voir aussiÂ :
+
+* "forms&#95;explained":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained
+* "default&#95;forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms
+

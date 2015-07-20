@@ -1,0 +1,91 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:php>
+
+
+Textpattern's "php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=php tag is a _container_ tag that provides the same output abilities as
+
+bc(code). <?php //Code goes here... ?>
+
+
+. Textpattern's tag version is used like this:
+
+bc(code). <txp:php>
+  // Code goes here...
+</txp:php>
+
+
+Control over where this tag is allowed to appear (_i.e._, the privileges required to allow it to appear in pages and forms) are governed by settings in the "advanced&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences tab.
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#notes_on_use). Notes on use
+
+h4(#using_php_inside_of_an_article). Using [[php]] inside of an article
+
+When inserting markup or PHP into the content boxes of a Textpattern article:
+
+<ol>
+<li><p>Donâ€™t include the usual PHP delineations: i.e.,</p>
+bc(code). <?php â€¦ ?>
+
+</li>
+<li>Use PHP as you would use normal PHP, not interspersed with markup. For example, inside the PHP tags, use PHP's echo command to output HTML, rather than writing HTML directly.</li>
+<li><p>Surround the code with both the special</p>
+bc(code). <notextile>
+
+
+<p>tag and Textpattern "php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=php tag to *disable Textile* parsing:</p></li>
+</ol>
+
+bc(code). <notextile> <txp:php>... code goes here ...</txp:php> </notextile>
+
+
+h4(#equivalent_programmatic_names). Equivalent programmatic names
+
+All Textpattern tags have equivalent programmatic names which are _exactly_ the same as the tag names. For example,
+
+bc(code). <txp:recent_articles />
+
+
+is
+
+bc(code). recent_articles()
+
+
+.
+
+h4(#arrays_must_be_passed_to_all_functions). Arrays must be passed to all functions
+
+You must pass an array to all tag functions, even if there are no attributes to set. For tags that require no attributes or those that you do not wish to modify the defaults, pass an empty array, _e.g._,
+
+bc(code). category1(array());
+
+
+h3(sectionedit3#examples). Examples
+
+h4(#example_1display_php_server_library_information). Example 1: Display PHP server library information
+
+bc(code). <txp:php>
+    phpinfo();
+</txp:php>
+
+
+h4(#example_2show_the_current_linked_category_title). Example 2: Show the current linked category title
+
+bc(code). <txp:php>
+  echo "The current TXP category is: "
+    . category(array(
+        'title' => '1',
+        'link' => '1',
+        'wraptag' => 'div'
+      ));
+</txp:php>
+
+
+h3(sectionedit4#other_tags_mentioned_on_this_page). Other tags mentioned on this page
+
+"category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category
+

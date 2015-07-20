@@ -1,0 +1,34 @@
+\n
+
+h3(sectionedit1#the_problem). The Problem
+
+As of version 4.0.3, Textpattern supports Atom 1.0 and RSS 0.92.
+
+The main reason that RSS 2.0 is not supported is that the "specification":http://blogs.law.harvard.edu/tech/rss is ambiguous about certain things, particularly markup and encoding rules for the main text fields (title and description).
+
+For example: it's easy to understand what the RSS 'title' element should look like for an article entitled *My pet cat*:
+
+bc(code). <title>My pet cat</title>
+
+
+It's not clear at all what the 'title' element should look like for an article entitled *About the '&amp;amp;' entity*, or *XHTML tutorial: the &lt;br /&gt; tag*.
+
+In order to document the problems, I have created a _torture test_: a "collection of articles":http://forum.textpattern.com/viewtopic.php?id=12731 demonstrating scenarios that are difficult to encode in RSS 2.0. The articles are available as a "plain text file":http://thresholdstate.com/xmltest/articles.txt, and as a "SQL dump":http://thresholdstate.com/xmltest/articles.sql.txt that you can import into a copy of Textpattern.
+
+What we need is for someone familiar with RSS to examine the "RSS 0.92 feed":http://thresholdstate.com/xmltest/rss_0_92_long.xml produced by those articles, and show us what it should look like if it were a valid and correctly encoded RSS 2.0 feed. Once we know what the correct output is supposed to look like, we will be able to update Textpattern's code accordingly. For reference, the (correctly encoded) Atom feed corresponding with those same articles is "here":http://thresholdstate.com/xmltest/atom_1_0_long.xml.
+
+Some of the problems to be solved include:
+
+* How do we encode XHTML and entities in the title field?
+* How do we encode XHTML and entities in the description? (entity encoding, cdata?)
+* Should we use extensions like content:encoded in addition to, or in place of, the description? How do we encode these?
+* How do we include the article Excerpt and Body in the feed? What do we do when one or both are empty?
+
+Note that the goal is not merely to produce a feed that validates, but one that *represents the article content as accurately as possible*.
+
+h4(#links_that_might_help). Links that might help
+
+* "RSS 2.0 Best Practice Tip: Entity-encoded HTML in Descriptions":http://myst-technology.com/mysmartchannels/public/item/11878?model=user/mtp/web&style=user/mtp/web
+* "Raising the Bar on RSS Feed Quality":http://webservices.xml.com/pub/a/ws/2002/11/19/rssfeedquality.html
+* "Proposed clarification for RSS 2.0 spec":http://nick.typepad.com/blog/2004/06/proposed_clarif.html
+

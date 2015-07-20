@@ -1,0 +1,244 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+h3(sectionedit1#overview). Overview
+
+This document describes how to set up and use a XAMPP package for Textpattern development on a Windows machine (all things working optimally). These instructions describe using the normal ZIP package or 7-zip executable package. Both are the same thing, but the latter is self-extracting and the file size is much smaller so it downloads quicker. We are not focusing on the _installer_ version for two reasons: First, the installer version installs files into the Windows registry, a place people generally don't like to mess around with. Second, the installer version requires a complete uninstall/reinstall of XAMPP if you ever decide to move it to another drive/partition. Contrarily, the zip versions are completely independant of your registry, and can be moved physically moved to another drive, followed by a simple reset of the _xampp/setup&#95;xampp.bat_ file. (Be warned: if you move a xampp install you will potentially need to account for a number of changed paths, such as any VirtualHosts you might have set, your Textpattern config paths, and so forth. Simply rerunning the _setup&#95;xampp.bat_ file does not do this for you.)
+
+h4(#installation_considerations). Installation Considerations
+
+# You can choose to run any of the XAMPP components as a service. This means the components will start/stop in parallel with the startup/shutdown of your machine (works only on 32bit kernel Windows operating systems). This does not have anything to do with your registry; however, we will not be describing the use of running components as services; instead, we tackle things here the tried and trusted way - via the command prompt.
+# XAMPP requires port 80 to work. If you already have a server occupying port 80 (e.g. ColdFusion Server, IIS Server, etc.), you will not be able to launch XAMPP after installing it due to a port-binding conflict. The safest (albeit perhaps not the most convenient) solution is to uninstall whatever system/application that is already binding the port. IIS Server is often a common culprit because it's already a part of your PC; so if you have a port-binding conflict, see if you need to "disable IIS Server":http://www.louisville.edu/it/twotier/securexp/IIS.htm on your system.
+# *Warning:* Using a local install of XAMPP as a production server with access to the Internet is a _very bad_ idea (unless you simply enjoy endless fighting with people trying to hack into your system). *Use XAMPP as a local development server only!* Also keep in mind that a local install of XAMPP does not emulate a live server environement, but rather is simply a good, quick, and easy solution for designers to develop quietly. If your project involves integrating other applications into Textpattern, you may run into problems (out of scope here); however, most third-party Textpattern plugins work fine (none have been discovered - or announced - yet that do not).
+# If you are using Win XP, then after installing the package you may see your _Windows Firewall_ system indicate that some utilities and/or files are blocked (e.g., the Apache server itself). Again, do not use a local install for production purposes (development only), go ahead and unblock the indicated utilities and/or files.
+
+h4(#what_you_will_need). What You Will Need
+
+# full administrative rights on your workstation and access to your Firewall settings,
+# a text editor, preferably with the ability to show line numbers like "Textpad":http://www.textpad.com/ or "Crimson Editor":http://www.crimsoneditor.com/ (which is free),
+# and a copy of the latest full zip or 7-zip package for Windows, which you can download from "Apache Friends XAMPP for Windows":http://www.apachefriends.org/en/xampp-windows.html. We recommend you use the MD5 version to ensure file integrity. This involves extra steps but they're potentially worth it, and we'll cover them in these instructions.
+
+h3(sectionedit2#xampp_acquisition_and_installation). XAMPP Acquisition and Installation
+
+Doing it right to ensure file integrity.
+
+h4(#acquisition_using_md5_checksum). Acquisition Using MD5 Checksum
+
+As hinted to above, we are going to describe XAMPP acquisition using the MD5 method. This is important because XAMPP is made available as a download from a number of different mirror sites around the world. Generally these mirror sites are safe, but you never really know for sure unless you do a MD5 checksum on the dowloaded package to ensure package entegrity. (You should really do this for any package you download from a mirror site, if possible, not just for XAMPP.)
+
+# Go to the Apache Friends download page for "XAMPP for Windows":http://www.apachefriends.org/en/xampp-windows.html#641, and decide whether you're going to use the regular zip package or the 7-zip executable. We'll finish these instructions assuming the 7-zip executable, but you can follow the same methods described for the regular zip package too. Be sure your using the “Basic Package” options (the stable options) and *not* the Developer package.
+# Click the link for the *EXE (7-zip)* package. Select from a mirror site closest to your geography. Download the package from the mirror site. When downloaded, move the package to your _C:\_ drive root. As of this writing, the file is named: *xampp-win32-1.5.3a.exe*.
+# Go back to the XAMPP download page. Click the *MD5* link immediately next to the EXE (7-zip) link in the previous step. Download the file, and move it into the C:\ drive root as before. As of this writing the file is named: *xampp-win32-1.5.3a.exe.md5* (note the _.md5_ extension).
+# Go to "$":http://downloads.activestate.com/contrib/md5sum/Windows/md5sum.exe. Download the *md5sum.exe* file and also put this in your _C:\_ root. (You can also get an MD5 application from "MD5 Summer":http://www.md5summer.org/.)
+# Open a command prompt, change directory to the _C:\_ drive root and run the md5 XAMPP file like so
+
+bc(code). c:\> md5sum -c xampp-win32-1.5.3a.exe.md5
+
+
+.
+
+You'll either see a quick indication of OK!, or you'll see details about a corrupt file (or more). If corrupt, repeat steps 2, 3, and 5 above but be sure to use a different mirror site to get the XAMPP package. If OK, you're good to go. You can delete the _xampp-win32-1.5.3a.exe.md5_ file from your drive, but you might as well keep the _md5sum.exe_ file as you can use this again in the future.
+
+h4(#installation). Installation
+
+Now that you know you have a clean package (no pun intended), simply run the 7-zip file at the xampp prompt:
+
+bc(code). c:\xampp> xampp-win32-1.5.3a.exe
+
+
+Installation complete!
+
+h3(sectionedit3#turning_xampp_components_on_off). Turning XAMPP Components On/Off
+
+Now you need to turn the components on. Since we are not going with services, let's focus on the other two modes of operation: using a command prompt to run the _xampp-start.exe_ and _xampp-stop.exe_ files located in the _xampp_ root folder, or by using the XAMPP Control Panel. There are advantages to each.
+
+h4(#using_the_command_prompt_shell_approach). Using the Command Prompt (Shell) Approach
+
+The shell approach has the advantage of providing useful error messages should there be any problems trying to get XAMPP operational, and being that you are using Winblows, well, enough said. The shell approach is also just more stable (reliable). This is generally the best method.
+
+Here's what you do:
+
+# If you don't already have a shell handy in Windows, go to _Programs / Accessories / Command Prompt_ to open one.
+# Change directory to the xampp folder. Depending on where your shell defaults to, it might be easiest to first change directory to the root
+
+bc(code). ..\>cd\
+
+
+and then change again to the xampp folder
+
+bc(code). C:\>cd xampp
+
+
+so your prompt finally looks like *C:\xampp&gt;*.
+
+# Finally, run the _xampp&#95;start.exe_ file like so:
+
+bc(code). C:\xampp>xampp_start.exe
+
+
+You should see error-free shell output similar to Figure 1, and the Control Panel should launch in your systems tray with Apache and MySQL running (you could open the Control Panel to check this for yourself). You must leave this shell open until you are ready to shut XAMPP down.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:xampp_win_shell.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:xampp_win_shell.png *Figure 1: Command Prompt (shell) running the xampp&#95;start.exe file*
+
+*Note:* As indicated in Figure 1, you should not close the shell while XAMPP is running. Instead, minimize the shell window and let it sit idle in the background until you are ready to shut XAMPP down. When ready, open the shell window again and run the _xampp&#95;stop.exe_ file. Note this also automatically turns off the running Apache and MySQL processes in the Control Panel too. Click the “Exit” button in the Control Panel before logging off.
+
+h4(#using_the_control_panel_approach). Using the Control Panel Approach
+
+The Control Panel approach is simply easier to use, especially if your used to using a Graphical User Interface (GUI). However, as mentioned, you do not get any helpful error messages should there be any problems.
+
+Here's how to use the Control Panel:
+
+# Go into the root xampp folder and make a shortcut copy of the _xampp-control.exe_ file, then drag it to your desktop.
+# Alternatively - or in addition to - you can pin the control panel link to your start menu items by right clicking the file in the *_xampp_* folder (or right click the shortcut icon on the desktop), and click the “pin to start menu” option.
+# Open the XAMPP Control Panel.
+# Before doing anything, ensure that nothing is automatically set to run as a service, you'll need to check in two places. First, make sure the “svc” check boxes are unchecked next to each xampp component item. Second, click the _Settings..._ button in the Control Panel, and make sure that no boxes are check in the Settings area. Click OK to return to the main Control Panel view.
+# To turn Apache and MySQL on/off, simply click the respective start/stop buttons for each component. The buttons will change state depending on the status of the component. Figure 2 shows the Control Panel with both Apache and MySQL running.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:xampp_win_control_panel.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:xampp_win_control_panel.png *Figure 2: XAMPP Control Panel*
+
+Now you know how to stop and start things. It's time to make sure Apache and MySQL are working, because just turning XAMPP on and off doesn't make it so yet.
+
+h3(sectionedit4#testing_xampp_components). Testing XAMPP Components
+
+You now need to make sure you can access XAMPP's start page as well as phpMyAdmin.
+
+h4(#xampp_access). XAMPP Access
+
+# Start XAMPP using one of the two methods described above. If you use the shell approach, you'll be given some warning signs if there are any problems at this point. Hopefully you should see output just like Figure 1.
+# Open your browser and go to "$":http://localhost/. You should see the XAMPP welcome screen in German (Figure 3). If you need English, look for and click the English link in the left column (near the bottom).
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:xampp_win_start_page.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:xampp_win_start_page.png *Figure 3: Default XAMPP Welcome page (in German).*
+
+# Click the “Status” link in the left column. You'll be able to get another look to ensure Apache and MySQL are up and running. You can also click the “phpinfo()” link so you know what you have in that respect too.
+# Click the “Security” link in the left column. As we warned before, you should not use XAMPP for live Web hosting. If you do not, and you do not share your computer with innocent derelicts, then you do not have to worry about setting passwords for your MySQL database (among other worries), nor for the other various security warning signs that XAMPP will give you. However, it doesn't hurt to give a password to your MySQL database anyway, as it will be more intuitive later when you have to account for this in your Textpattern config files. By default, you are given a username of “root” which doesn't change. To change your MySQL password, go to "$":http://localhost/security/xamppsecurity.php. Be sure to record your password somewhere handy if you create something new.
+# Restart MySQL so the password takes affect. Restart by any of the methods described earlier (command prompt or control panel).
+
+h4(#testing_mysql_access_via_phpmyadmin). Testing MySQL Access via phpMyAdmin
+
+Open another tab in your Web browser and go to "$":http://localhost/phpmyadmin/. If you created a password account for MySQL, you'll need to enter it now to reach phpMyAdmin. If you get to phpMyAdmin, congratulations  -  your installation of XAMPP is apparently working as it should.
+
+What you can now do while your sitting in phpMyAdmin (but only if your ready because you can always come back later if you want to) is create the databases your going to need for your anticipated Textpattern sites. You don't need to install Textpattern yet (and you shouldn't) nor import any _.sql_ dump files, but you can at least get your databases created now so they are ready for use later. Explaining how to use phpMyAdmin is out of scope for this document; you're on your own there.
+
+h3(sectionedit5#apache_configuration). Apache Configuration
+
+There's really only one modification you need to make to the configuration file to get XAMPP up and running with Textpattern. Textpattern relies on some rewrite rules externally through a _.htaccess_ file, so we have to make sure the rewrite module is on. (If you want to learn more about mod&#95;rewrite, see Apache's "Rewrite Guide documentation":http://httpd.apache.org/docs/misc/rewriteguide.html.)
+
+<ol>
+<li>Open _httpd.conf_ (_C:\xampp\apache\conf\httpd-conf_) with a good text editor giving line number support (Crimson Editor, TypePad, whatever).</li>
+<li><p>Scroll down to around line 118 (in the _Dynamic shared Objects_ section,) and look for the line</p>
+bc(code). #LoadModule rewrite_module modules/mod_rewrite.so
+
+
+<p>Remove the octothorpe (#) from the beginning of the line. This is referred to as uncommenting the line, and it effectively turns on the rewrite module.</p></li>
+<li>Save the change to the file, and restart XAMPP.</li>
+</ol>
+
+*Important Note:* Every time you make a change to a XAMPP component, particularly the config files, you must restart XAMPP each time or the change will not have affect.
+
+h3(sectionedit6#virtualhost_containers_optional). VirtualHost Containers (Optional)
+
+You only have to make this change if you plan on running your development sites in a directory other than xampps htdocs folder (_C:\xampp\htdocs\_).
+
+h4(#adding_the_virtualhost_blocks). Adding the VirtualHost Blocks
+
+XAMPP has changed they way it handles this a little bit. It used to be that you added the VirtualHost Containers to the bottom of the _httpd-conf_ file itself. Not anymore. XAMPP now reads such VirtualHost declarations from the _httpd-vhosts.conf_ file. You can see where the include is added in the _httpd-conf_ file by scrolling down to about line 497 and look for the lines
+
+bc(code). # Virtual hosts
+Include conf/extra/httpd-vhosts.conf
+
+
+Here's the setup steps:
+
+# In the _httpd-conf_ file (_C:\xampp\apache\conf\httpd-conf_), line 498, if there is an octothorpe (#) at the beginning of the line starting with “Include”, be sure to remove it if you want the VirtualHost Containers include to work. If you don't plan on using VirtualHost Containers, add the octothorpe (#) to the beginning of line 498 to comment it out or you might run into troubles later.
+# Close the _httpd-conf_ file.
+# Open the httpd-vhosts.conf file (C:\xampp\apache\conf\extra\httpd-vhosts.conf), scroll to the bottom of the page and add the following:
+
+<pre class="code">
+NameVirtualHost 127.0.0.1:80
+
+&lt;VirtualHost 127.0.0.1:80&gt;
+DocumentRoot C:/xampp/htdocs/
+ServerName localhost
+ServerAdmin admin@localhost
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost local.domain1.tld:80&gt;
+DocumentRoot C:/path/to/domain1/
+ServerName local.domain1.tld
+ServerAdmin admin@local.domain1.tld
+&lt;Directory &quot;C:/path/to/domain1/&quot;&gt;
+Options Indexes FollowSymLinks
+AllowOverride FileInfo
+Order allow,deny
+Allow from all
+&lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</pre>
+
+You need to edit a couple of things so let's go over the VirtualHost directives as shown...
+
+They begin with a single line which you add exactly as shown above, *NameVirtualHost 127.0.0.1:80*. You only need to declare the NameVirtualHost once, which is your local IP running on Port 80, and you add the line at the top of it all.
+
+Next is the first VirtualHost container, which is actually serving as the default, which means if nothing else if found, documents and/or Web sites will be read from the _C:/xampp/htdocs_/ directory. Again, use the lines exactly as shown. (Theoretically, you could leave this default block out and let the defaults set in the _httpd-conf_ file take affect. Either way, but adding the default block here is easier to see and work with.)
+
+The last VirtualHost block is a representative one for whatever container you might like to make. In reality you might have many more blocks like this (one for each Textpattern site in development), with the various lines edited to respectively reflect each site. You could copy this block and paste it again for each new VirtualHost you needed to create. Here's the thoughts behind editing the block:
+
+* local.*domain1.tld*:80  -  Although you don't have to use “local” here, it's recommended you do as it makes for a very intuitive situation; it's basically saying _this is the local (development) version of the real site that is (or will be) live at domain1.com on the Internet_. Hence, the only thing you need to edit in this line - and in most of the rest of the block - is “domain1.tld” to whatever the actual domain will be (e.g., heavytools.com). If you follow this model, then it's very easy to copy/paste the VirtualHost containers for each new one you need and simply edit the site domains accordingly throughout the rest of the VirtualHost blocks.
+* C:/*pathto/domain1*/  -  This is the only other part you need to edit if you follow the model just described. The “domain1” part is easy, that will be the same domain throughout the block. That just leaves “pathto” which will be the directory in the C:\ drive that holds your Textpattern sites outside of XAMPPs default _htdocs_ working directory (as shown in the default VirtualHost container). Some like to replace _pathto_ with “www”, “sites”, “web”, “dev” and so forth, but what if you want to work with other CMS systems besides Textpattern. Then you might want to create directories for them accordingly to keep your various system projects separate and easy to manage. Hence, you might go with paths like (the underscore is to keep them conveniently positioned together at the top of the C:\ drive directory tree):
+
+* &#42; C:/&#95;txp/domain1/
+** C:/&#95;modx/domain1/
+** C:/&#95;drupal/domain1/
+** etc.
+
+That's one idea for setting up your VirtualHost containers. How you ultimately do it though should be how it works best for you.
+
+*Note:* The four directives in the
+
+bc(code). <Directory> ... </Directory>
+
+
+element (Options, AllowOverride, Order, Allow) are very important for countering the strict default directives set in the _httpd-conf_ file. If you change these, you'll likely get an “Access forbidden ... Error 403” when trying to view your Textpattern site. Use the directives as shown above.
+
+We are not done yet, to make these containers work, you must also make some edits in your Windows _hosts_ file.
+
+h4(#adjusting_the_windows_hosts_file). Adjusting the Windows //Hosts// File
+
+Because working with non registered domains would result in a DNS conflic, you also need to add corresponding lines to your Windows _hosts_ file for each VirtualHost container you defined above.
+
+* For Windows 2000 go to *C:\WINNT\system32\drivers\etc\hosts*
+* For Windows XP go to *C:\WINDOWS\system32\drivers\etc\hosts*
+
+Scroll to the bottom of the file, where you should see notes about what to do, but basically for each site you defined in a VirtualHost container you begin with the local IP, add a space or tab, and then the local domains you defined. For example, if you defined three VirtualHost sites at _local.domain1.tld_, _local.domain2.tld_, and _local.domain3.tld_, then you would add three corresponding lines in the hosts file as:
+
+bc(code). 127.0.0.1  local.domain1.tld
+127.0.0.1  local.domain2.tld
+127.0.0.1  local.domain3.tld
+
+
+Save your changes, reboot your computer, and restart Apache. You should now be able to access your local development sites from your browser. Your development domain is now like a subdomain of your live site; pretty convenient, isn't it?
+
+h3(sectionedit7#preparing_xampp_for_textpattern). Preparing XAMPP for Textpattern
+
+Before you install Textpattern at your local development locations, you need to first create your databases, and if you want to test email features of a Textpattern site, you'll need to have at least Mercury mail working too.
+
+h4(#database_creation_under_phpmyadmin). Database Creation Under phpmyadmin
+
+Start XAMPP (both Apache and MySQL) and go to "$":http://localhost/phpmyadmin/
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:xampp_winphp_my_admin.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:xampp_winphp_my_admin.png *Figure 4: phpMyAdmin Home page*
+
+For each database you need you first type the name in the Create database: field, then from the Collation drop down select *utf-8&#95;unicode&#95;ci*, and then click the Create button. An empty database will be created and ready for use.
+
+h4(#local_smtp_mail_client_configuration). Local SMTP mail client configuration
+
+Setup a local mail client, such as Outlook or Thunderbird, under an account _newuser&#64;localhost_. (Note: This is already configured by default on the mercury mail server that comes with XAMPP, but you can set-up your own users, we just take the default here for the sake of simplicity.)
+
+Start mercury mailserver from the XAMPP control, the settings are documented under the splash screen mercury side link.
+
+h3(sectionedit8#textpattern_retrieval_setup_and_post_configuration). Textpattern Retrieval, Setup, and Post configuration
+
+At this point you have covered the XAMPP process and are ready to switch Textpattern. First you will need to install Textpattern in your new Apache server setup, and there are two ways to do it: manually, and via "Subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#subversion (SVN):
+
+* If manually, see the "detailed&#95;installation&#95;instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_installation_instructions.
+* If via SVN, follow an appropriate method described in "designer&#95;and&#95;developer&#95;interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests.
+

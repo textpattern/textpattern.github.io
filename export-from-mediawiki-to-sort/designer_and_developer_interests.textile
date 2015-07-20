@@ -1,0 +1,37 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+"Getting Started":/home/www/zendstudio/dokuwiki/bin/doku.php?id=getting_started_with_textpattern &#124; "Intermediate/Advanced Topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=intermediate_and_advanced_topics &#124; "Designer/Developer Interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests &#124; "Tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing &#124; "tutorials":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tutorials &#124; "article&#95;contributions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_contributions
+
+h3(sectionedit1#using_subversion_svn). Using Subversion (SVN)
+
+Textpattern is developed under "Subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#subversion (SVN). Subversion is a wonderful versioning system (quickly supplanting CVS) that makes it easy for development, graphics, and writing teams to collaborate while ensuring their work is saved and managable at every step. Aside from the regular Textpattern ZIP download, you can also install Textpattern using one of the following subversion methods, therefore taking advantage of the benefits subversion provides.
+
+h4(#for_all_web_hosts_and_or_local_development). For All Web Hosts and/or Local Development
+
+* "subversion&#95;installation&#95;for&#95;windows&#95;via&#95;tortoise&#95;svn":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_windows_via_tortoise_svn
+* "subversion&#95;installation&#95;for&#95;windows&#95;via&#95;wget":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_windows_via_wget (Not recommended by Textpattern developers! See FAQ _"How do I fetch the current development version?":http://textpattern.com/faq/103/how-do-i-fetch-the-current-development-version_)
+* "subversion&#95;installation&#95;for&#95;macintosh":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_macintosh
+* "subversion&#95;installation&#95;for&#95;linux":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_linux
+
+h4(#for_textdrive_only). For TextDrive Only
+
+* "subversion&#95;installation&#95;at&#95;text&#95;drive&#95;via&#95;webmin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_at_text_drive_via_webmin
+* "subversion&#95;installation&#95;at&#95;text&#95;drive&#95;via&#95;secure&#95;shell":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_at_text_drive_via_secure_shell
+* "svn&#95;installation&#95;at&#95;tx&#95;d&#95;via&#95;ssh&#95;for&#95;dev&#95;testing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_installation_at_tx_d_via_ssh_for_dev_testing
+
+h3(sectionedit2#using_open-source_apache_packages_for_local_development). Using Open-source Apache Packages for Local Development
+
+* "using&#95;xampp&#95;apache-my&#95;sql-php-perl&#95;for&#95;windows":/home/www/zendstudio/dokuwiki/bin/doku.php?id=using_xampp_apache-my_sql-php-perl_for_windows
+* "using&#95;mamp&#95;macintosh-apache-my&#95;sql-php&#95;for&#95;macintosh":/home/www/zendstudio/dokuwiki/bin/doku.php?id=using_mamp_macintosh-apache-my_sql-php_for_macintosh
+* "custom&#95;mamp":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_mamp
+
+h3(sectionedit3#plugin_development). Plugin Development
+
+* "Guidelines, Tips and Resources":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_dev_guidelines_tips_and_resources
+* "Development Topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_development_topics
+* "plugin&#95;template":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_template
+* "registered&#95;textpattern&#95;developer&#95;prefixes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=registered_textpattern_developer_prefixes
+* "admin&#95;events&#95;and&#95;steps":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin_events_and_steps
+* "user&#95;roles&#95;and&#95;permissions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions
+* "database&#95;schema&#95;reference":/home/www/zendstudio/dokuwiki/bin/doku.php?id=database_schema_reference
+

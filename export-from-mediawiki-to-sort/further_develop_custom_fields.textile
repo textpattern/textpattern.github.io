@@ -1,0 +1,28 @@
+\n
+
+h3(sectionedit1#problem_definition). Problem definition
+
+The admin needs to be customised to suit specific types of data.
+
+<hr />
+
+h3(sectionedit2#solution_ideas). Solution ideas
+
+h5(#option_to_create_custom_field_groups). Option to create custom field groups
+
+* To be assigned per section (as 'uses page' and 'uses style' are chosen currently).
+* For each custom field, select the label and input type (text-field, select, checkbox etc.)
+* Select the order they appear
+* Able to include specific parts by calling it's name/label from a tag (e.g. txp:body = txp:custom&#95;field&#95;name)
+
+Examples of this can be found in "Expression Engine":http://www.pmachine.com/ee/features/, "Radiant":http://www.radiantcms.com/, and "Dabble DB":http://www.dabbledb.com/.
+
+Jakob has done some work on this (see "his post on the Flickr group":http://static.flickr.com/110/274603728_31be709007_o.png. Perhaps he can enlighten?
+
+<hr />
+
+h3(sectionedit3#votes). Votes
+
+* hazel
+* Ace (I can only vote once right?) ;)
+

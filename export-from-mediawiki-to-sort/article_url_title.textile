@@ -1,0 +1,17 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:article_url_title />
+
+
+The "article&#95;url&#95;title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_url_title tag is a _single_ tag which returns the dumbed-down “URL title” of the article being displayed. This URL title may also be part of the page's address depending on the _Permanent link mode_ chosen in "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences.
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#genealogy). Genealogy
+
+h5(#version_405). Version 4.0.5
+
+* Tag support added
+

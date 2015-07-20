@@ -1,0 +1,45 @@
+\n &#42; Security: add missing escape in SQL query (admin side)
+
+* Security: safer use of txp&#95;login cookie + nonce (note: users are logged out after upgrading!)
+* Security: fixed XSS vulnerability (thanks DSecRG) and input validation in setup script.
+* Security: fixed local file include vulnerability (publisher only) in textpattern/index.php (thanks DSecRG and Victor)
+* Security: fixed XSS vulnerability and parameter value overflow in comments preview (thanks DSecRG)
+* Security: escape request method as shown on logs tab (thanks Victor)
+* Changed tag: &lt;txp:thumbnail /&gt; allows non-JS links to the full-size image
+* Changed tag: &lt;txp:article&#95;custom /&gt; allows comma-separated lists for category, section and author attributes (thanks Manfre)
+* Changed tag: &lt;txp:linklist /&gt; allows comma-separated list for category attribute
+* Changed tag: &lt;txp:file&#95;download&#95;list /&gt; allows comma-separated list for category attribute
+* Changed tag: &lt;txp:recent&#95;articles /&gt; allows comma-separated lists for category and section attribute
+* Changed tag: &lt;txp:related&#95;articles /&gt; allows comma-separated list for section attribute
+* Changed tag: &lt;txp:search&#95;result&#95;excerpt /&gt; allows a custom “break” attribute defaulting to an ellipsis
+* Deprecated tag: &lt;txp:sitename /&gt; replaced by &lt;txp:site&#95;name /&gt;
+* Deprecated tag: &lt;txp:request&#95;uri /&gt; replaced by &lt;txp:page&#95;url /&gt;
+* Deprecated tag: &lt;txp:s /&gt; replaced by &lt;txp:page&#95;url type=“s” /&gt;
+* Deprecated tag: &lt;txp:c /&gt; replaced by &lt;txp:page&#95;url type=“c” /&gt;
+* Deprecated tag: &lt;txp:q /&gt; replaced by &lt;txp:page&#95;url type=“q” /&gt;
+* Deprecated tag: &lt;txp:id /&gt; replaced by &lt;txp:page&#95;url type=“id” /&gt;
+* Deprecated tag: &lt;txp:pg /&gt; replaced by &lt;txp:page&#95;url type=“pg” /&gt;
+* Deprecated function: escape&#95;output(), use htmlspecialchars() instead
+* Deprecated function: gAtt() (and getAtt()), use lAtts() instead
+* Deprecated variable: $txpcfg['txpath'], use constant 'txpath' instead
+* New tag: &lt;txp:if&#95;search&#95;results&gt; &lt;/txp:if&#95;search&#95;results&gt;
+* New tag: &lt;txp:search&#95;term /&gt;
+* New languages: Croatian, Korean, PortuguÃªs (Brasil), Serbian (Latin + Cyrillic), Turkish and Vietnamese (thanks: Filip Baraka, Alexsander Albert Santana, Vladimir Siljkovic, SÃ¼leyman ÅžentÃ¼rk, Quang Anh Do)
+* Developer: using add&#95;privs() for admin-side plugins is now required (used to be optional for publisher-only plugins)
+* Developer: dmp() prints debug output to a file in the temporary directory according to preferences. Define 'txpdmpfile' for the file name.
+* Developer: Added 'modified' and 'status' to global $thisarticle array
+* Developer: Added 'is&#95;logged&#95;in()' function to check on the public side if the visitor is logged in on the admin side
+* Speed: less SQL queries (-2 for individual article pages, -1 for other pages)
+* Speed: recent&#95;comments tag (thanks Manfre) and admin side comments list only uses 1 query
+* Added 'password reset' functionality (with confirmation email) on the login screen
+* Update to jQuery 1.2.2 as a default JavaScript library
+* Fix textile list incompatibility with PHP 5.2.4 (and higher)
+* Fix http-auth when using lighttpd or (mostly) apache+fcgi
+* Fix HTTPS protocol check for ISAPI with IIS
+* Fix use of article tags on a sticky article page
+* Pages, categories and styles cannot be accidentally deleted if they are used on other tabs.
+* Corrections in the tag builder
+* Refrain from showing sticky articles from non-frontpage sections in search results
+* Enable separate search section for messy URL mode
+* "Many,&#124;many minor improvements":http://code.google.com/p/textpattern/source/browse/development/4.0/?action=stop_on_copy&rev=2802&stop_rev=2471
+

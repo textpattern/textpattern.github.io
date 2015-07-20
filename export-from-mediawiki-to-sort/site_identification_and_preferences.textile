@@ -1,0 +1,48 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+h3(sectionedit1#important_note). Important note
+
+*This page is written with respect to Textpattern release RC1*. This page is only temporary until Textpattern v 1.0 final is released, at which time this page will be deleted and you will be directed to the "preferences&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=preferences_subtab page where the new panel for v 1.0 is discussed accordingly.
+
+h3(sectionedit2#overview). Overview
+
+After you have successfully installed Textpattern rc1 in a desired directory on your Web server, the first thing you need to do is fill in a few details about where your installation is located (absolutely necessary for Textpattern to function correctly) and how you want some of the features to appear or function. Appendex A, "textpattern&#95;administration&#95;interface":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_administration_interface, of _TextBook_ provides a complete description of the entire admin interface pages which you can use at your convenience for easy reference; however, now is the time to address the _Admin &gt; Preferences_ subtab.
+
+h3(sectionedit3#site_preferences). Site Preferences
+
+* In your Web browser, navigate to @yoursite.xxx/textpattern/index.php@ (the default page of your site's admin interface), or click your site admin bookmark (if you have saved one). The _Content &gt; Write_ subtab should be shown by default.
+* Navigate to the _Admin &gt; Preferences_ subtab (see Figure 2.3.1 *...coming*). This subtab has two sections, _Site Preferences_ and _Comments_; each is discussed below.
+
+(Just to point it out, note also that next to each control on the subtab page is a small button with a question mark, “*?*”, on it. This indicates built-in Textpattern help for the corresponding control. These help buttons are available throughout the administration interface tabs, which might help you as you work in the various pages.)
+
+h4(#preferences_options). Preferences Options
+
+* *Site Name:* This should be the title of your Web site. This information is stored in your MySQL database. When certain tags are generated later, such as when customizing your site, the title information is pulled from the database to create the tags. You need to add your title!
+* *Web Domain:* This should be your site's Web domain  -  or your Fully Qualified Domain Name (FQDN). This is necessary for Textpattern to function correctly, as well as for other purposes, such as the creation of links to articles within the site. You need to add your FQDN!
+* *Subdirectory (if any):* If you have installed Textpattern in a subdirectory under your FQDN, then you indicate that directory here as a relative path beginning and ending with forward slashes (e.g. @/subdirectory/@). If you installed Textpattern at the Web root level, then this field only needs a single forward slash (i.e., “/”). You need to add this information one way or the other, accordingly!
+* *Site tagline:* This space is meant for a site subheading, motto or other tagline. It is safe to leave this empty if there is nothing appropriate. An example of a site tagline might be “News for Nerds. Stuff that matters.” for "Slashdot":http://slashdot.org.
+* *Language:* For this control you should select the desired language for your Textpattern site. As TXP development continues it will become more fully international.
+* *Time offset:* This control is where you set Textpattern's displayed time to be the same as your local time. Note, this is often  -  but _not necessarily_  -  the time from "Coordinated Universal Time":http://en.wikipedia.org/wiki/UTC (UTC; no the acronym is not wrong). Textpattern calculates the local time based on the server time. Thus, if the server is not set to UTC, the time offset should be set for the difference in time between local and server.
+* *Date format:* This control is where you indicate how you want your date and time to be formatted on the default display. This information is automatically used when your articles are dated with the @<txp:posted />@ tag.
+* *Archive date format:* Similar to the previous control, this options controls the format that is shown by the @<txp:posted />@ tag on the archive sections.
+* *URL mode:* Uniform Resource Locator (URL) mode controls the format Textpattern uses for creating links to internal pages. The two options are _Clean_ and _Messy_. Messy mode produces links of the form: @http://mysite.com/index.php?s=sectionname&c=categoryname&id=number@. Historically, search engines have had trouble cataloging pages with messy URLs. Clean mode produces links of the form: @http://mysite.com/sectionname/idnumber/title-of-the-article@. See *update me: chapter x section y* on Messy versus Clean mode for more information about details related to URL mode.
+* *Send last modified header:* This option is currently not used. When eventually implemented, Textpattern will send the browser information about the time the site last changed. The browser may then choose to use a locally cached copy of the page for faster loading time.
+* *Ping weblogs.com:* If set to Yes, Textpattern will send a brief message to weblogs.com to let it know that the site has been updated. Users might come to the site from weblogs.com this way.
+* *Logging:* Logging controls the amount of information kept for _Admin &gt; Logs_. Textpattern will record all hits the site receives, no matter what the originating point of the request, unless set to “Referrers Only”. In that case, Textpattern will only record hits for the site that came from another location.
+* *Record mentions:* This feature is not yet implemented. When written, Textpattern may log URLs in articles for other sites that have directly linked to the article.
+* *Textile:* Textile is a meta-formatting language that lets site authors format the work without having to know HTML completely. This option may be set to select usage of Textile in articles, disable Textile but keep smart replacement of line breaks and special characters, or disable article manipulation entirely.
+* *Use categories:* Categories are soft ways of categorizing the content on the site to aid in filtering content in various ways. With this option, the use of categories may be turned off or on.
+* *Use sections:* Sections are the major method by which to classify articles and organize content within a Textpattern run site. The use of sections may be enabled or disabled with this option.
+
+h4(#comments_options). Comments Options
+
+* *Accept comments:* This controls whether viewers of your site are permitted to add comments on individual posts.
+* *Moderate comments:* This will control whether a comment will show up immediately on the article, or requires approval from a site administrator.
+* *On by default:* Permission for commenting is regulated on a per article basis. This option controls the default setting for newly authored articles.
+* *Default invite:* The text in this edit field will be automatically set in the comment invitation field on the _Content &gt; Write_ page for new articles. Of course the comment invitation may also be controlled on a per article basis.
+* *Comments date format:* This control will select the date and time form for the posting time of comments.
+* *Comments mode:* In popup mode, a tiny browser window will pop up for the viewer to enter the comment. In nopopup mode, the main article page will change to show the comment entry form.
+* *Mail comments to author:* If set to yes, whenever a comment is made against an article, the author will be e-mailed notification of the event, and the contents of the comment.
+* *Allow user images:* This control provides the option of precluding the inclusion of links to images inside viewer comments.
+* *Disabled after:* Based on the selection, articles older than this threshhold will automatically be set to disallow comments from being added to the post.
+

@@ -1,0 +1,2 @@
+\n - redirect "svn&#95;installation&#95;at&#95;tx&#95;d&#95;via&#95;ssh&#95;for&#95;dev&#95;testing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_installation_at_tx_d_via_ssh_for_dev_testing
+

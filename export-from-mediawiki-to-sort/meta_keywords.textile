@@ -1,0 +1,54 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:meta_keywords />
+
+
+Used in the head of an individual article page template, the "meta&#95;keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag is a _single_ tag. The tag can be used in an article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, or within "pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages (templates), either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). Textpattern will replace this tag with an HTML meta tag as follows:
+
+bc(code). <meta name="keywords" content="''keywords as set in article's keywords field''" />
+
+
+h3(sectionedit1#attributes). Attributes
+
+This tag takes no attributes.
+
+h3(sectionedit2#character_limits). Character limits
+
+The keywords field has a 255 character limit by default, which includes spaces and commas. This is simply the MySQL database default. You can edit this using, for example, phpMyAdmin.
+
+h3(sectionedit3#examples). Examples
+
+h4(#example_1use_article_s_keywords_for_meta_tag_content). Example 1: Use article's keywords for meta tag content
+
+Meta&#95;keywords tag returns a HTML meta tag, populated with an article's keywords. The tag should always be placed to your _Page_ template's
+
+bc(code). <head>
+
+
+section, between closing and opening HTML
+
+bc(code). head
+
+
+tags.
+
+bc(code). <txp:meta_keywords />
+
+
+Above will output keywords metadata with
+
+bc(code). content=""
+
+
+populated with the list of keywords set in the article's keywords field. The tag returns nothing if no keywords are set for an article.
+
+If article's _keywords_ field contains
+
+bc(code). sauce, caramel, sugar
+
+
+, the tag will output following.
+
+bc(code). <meta name="keywords" content="sauce, caramel, sugar" />
+
+

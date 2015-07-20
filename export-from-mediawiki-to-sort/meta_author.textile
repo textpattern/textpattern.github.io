@@ -1,0 +1,59 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:meta_author />
+
+
+Used in the head of an individual article page template, the "meta&#95;author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_author tag is a _single_ tag. Textpattern will replace this tag with an HTML meta tag as follows:
+
+bc(code). <meta name="author" content="''Article author's name''" />
+
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#title=“boolean”*
+ Whether to display the author's login name or real name Values:
+
+bc(code). 0
+
+
+(login name), or
+
+bc(code). 1
+
+
+(real name). Default:
+
+bc(code). 0
+
+
+.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1use_article_author_for_meta_tag_content). Example 1: Use article author for meta tag content
+
+Article's *author* name: _sysop_
+
+*Tag:* In the head of an individual article page
+
+bc(code). <txp:meta_author />
+
+
+*Output:*
+
+bc(code). <meta name="author" content="sysop" />
+
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_430). Version 4.3.0
+
+<ul>
+<li>bc(code). title
+
+
+<p>attribute added</p></li>
+</ul>
+

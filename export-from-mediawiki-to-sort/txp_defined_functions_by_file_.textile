@@ -1,0 +1,1077 @@
+\n"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Function Editing Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_function_editing_reference &#124; "txp&#95;defined&#95;functions&#95;by&#95;file&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions_by_file &#124; "TXP Defined Functions (Alphabetically)":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions
+
+h2(sectionedit1#txp_defined_functions). TXP Defined Functions
+
+h3(sectionedit2#about). About
+
+Plugin developers have TXP functions available to them to help facilitate in the process of coding a plugin. For access to definitions and references to the functions in the TXP source code, go "here":http://phpxref.com/xref/textpattern/nav.html.gz?_functions/index.html.gz. Below is a list of all the functions available to developers, purpose of each functions, and examples on proper use.
+
+h3(sectionedit3#function_editing_instructions). Function Editing Instructions
+
+If you would like to help in cataloguing all of the TXP functions in the wiki, please follow the "txp&#95;defined&#95;function&#95;editing&#95;reference":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_function_editing_reference.
+
+h3(sectionedit4#functions). Functions
+
+These functions are categorized by File. The file hierarchy is as follows. There also exists a list currently categorized "alphabetically":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions.
+
+h5(#textpatternpublishphp_file_textpattern_publishphp). [[textpattern:publish.php&#95;file&#124;textpattern/publish.php]]
+
+* "pre&#95;text&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pre_text
+* "textpattern&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern
+* "output&#95;css&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=output_css
+* "article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
+* "do&#95;articles&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_articles
+* "filter&#95;front&#95;page&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=filter_front_page
+* "do&#95;article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_article
+* "article&#95;custom&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
+* "parse&#95;articles&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=parse_articles
+* "populate&#95;article&#95;data&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=populate_article_data
+* "get&#95;neighbour&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_neighbour
+* "get&#95;next&#95;prev&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_next_prev
+* "last&#95;mod&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=last_mod
+* "parse&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=parse
+* "process&#95;tags&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=process_tags
+* "bomb&#95;shelter&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=bomb_shelter
+* "eval&#95;string&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=eval_string
+* "get&#95;custom&#95;fields&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_custom_fields
+* "build&#95;custom&#95;sql&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=build_custom_sql
+* "get&#95;status&#95;num&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_status_num
+* "ck&#95;ex&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ck_ex
+* "ck&#95;ex&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ck_ex_id
+* "lookup&#95;by&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=lookup_by_title
+* "lookup&#95;by&#95;title&#95;section&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=lookup_by_title_section
+* "lookup&#95;by&#95;idsection&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=lookup_by_idsection
+* "lookup&#95;by&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=lookup_by_id
+* "lookup&#95;by&#95;date&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=lookup_by_date_title
+* "make&#95;out&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=make_out
+* "chop&#95;url&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=chop_url
+
+h5(#textpatternincludedirectory). [[textpattern:include:&#95;directory]]
+
+= "&#95;directory":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:import:directory =
+
+"textpattern/include/import/import&#95;b2.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:import:import_b2.php_file
+
+* "do&#95;import&#95;b2&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_import_b2
+
+"textpattern/include/import/import&#95;blogger.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:import:import_blogger.php_file
+
+* "do&#95;import&#95;blogger&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_import_blogger
+* "import&#95;blogger&#95;item&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=import_blogger_item
+
+"textpattern/include/import/import&#95;mt.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:import:import_mt.php_file
+
+* "do&#95;import&#95;mt&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_import_mt
+* "import&#95;mt&#95;item&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=import_mt_item
+
+"textpattern/include/import/import&#95;mtdb.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:import:import_mtdb.php_file
+
+* "do&#95;import&#95;mtdb&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_import_mtdb
+
+"textpattern/include/import/import&#95;wp.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:import:import_wp.php_file
+
+* "do&#95;import&#95;wp&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_import_wp
+* "undo&#95;slash&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=undo_slash
+
+= "textpattern/include/txp&#95;admin.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_admin.php_file =
+
+* "admin&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin
+* "change&#95;email&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=change_email
+* "author&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author_save
+* "change&#95;pass&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=change_pass
+* "author&#95;save&#95;new&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author_save_new
+* "privs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=privs
+* "get&#95;priv&#95;level&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_priv_level
+* "send&#95;password&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=send_password
+* "send&#95;new&#95;password&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=send_new_password
+* "generate&#95;password&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=generate_password
+* "new&#95;pass&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=new_pass_form
+* "reset&#95;author&#95;pass&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=reset_author_pass_form
+* "author&#95;change&#95;pass&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author_change_pass
+* "change&#95;email&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=change_email_form
+* "author&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author_list
+* "author&#95;delete&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author_delete
+* "new&#95;author&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=new_author_form
+
+= "textpattern/include/txp&#95;article.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_article.php_file =
+
+* "article&#95;post&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_post
+* "article&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_save
+* "article&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_edit
+* "cust&#95;field&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cust_field
+* "check&#95;if&#95;neighbour&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=check_if_neighbour
+* "tsi&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tsi
+* "side&#95;help&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=side_help
+* "status&#95;radio&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=status_radio
+* "category&#95;popup&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_popup
+* "section&#95;popup&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_popup
+* "tab&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tab
+* "get&#95;default&#95;section&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_default_section
+* "form&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=form_pop
+* "check&#95;url&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=check_url_title
+* "get&#95;status&#95;message&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_status_message
+* "textile&#95;main&#95;fields&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textile_main_fields
+* "do&#95;pings&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_pings
+
+= "textpattern/include/txp&#95;auth.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_auth.php_file =
+
+* "do&#95;auth&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_auth
+* "txp&#95;validate&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_validate
+* "do&#95;login&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_login_form
+* "do&#95;txp&#95;validate&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_txp_validate
+
+= "textpattern/include/txp&#95;category.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_category.php_file =
+
+* "cat&#95;category&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_category_list
+* "cat&#95;article&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_article_list
+* "cat&#95;article&#95;create&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_article_create
+* "cat&#95;article&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_article_edit
+* "cat&#95;article&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_article_save
+* "cat&#95;parent&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_parent_pop
+* "cat&#95;link&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_link_list
+* "cat&#95;link&#95;create&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_link_create
+* "cat&#95;link&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_link_edit
+* "cat&#95;link&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_link_save
+* "cat&#95;image&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_image_list
+* "cat&#95;image&#95;create&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_image_create
+* "cat&#95;image&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_image_edit
+* "cat&#95;image&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_image_save
+* "cat&#95;article&#95;multiedit&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_article_multiedit_form
+* "cat&#95;category&#95;multiedit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_category_multiedit
+* "cat&#95;event&#95;category&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_event_category_list
+* "cat&#95;event&#95;category&#95;create&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_event_category_create
+* "cat&#95;event&#95;category&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_event_category_edit
+* "cat&#95;event&#95;category&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_event_category_save
+* "cat&#95;file&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_file_list
+* "cat&#95;file&#95;create&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_file_create
+* "cat&#95;file&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_file_edit
+* "cat&#95;file&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cat_file_save
+
+= "textpattern/include/txp&#95;css.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_css.php_file =
+
+* "css&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_list
+* "css&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_edit
+* "css&#95;edit&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_edit_form
+* "css&#95;edit&#95;raw&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_edit_raw
+* "parse&#95;css&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=parse_css
+* "parse&#95;posted&#95;css&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=parse_posted_css
+* "css&#95;copy&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_copy
+* "css&#95;save&#95;posted&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_save_posted
+* "css&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_save
+* "css&#95;format&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_format
+* "add&#95;sel&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=add_sel
+* "add&#95;declaration&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=add_declaration
+* "delete&#95;declaration&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=delete_declaration
+* "css&#95;delete&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_delete
+
+= "textpattern/include/txp&#95;diag.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_diag.php_file =
+
+* "apache&#95;module&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=apache_module
+* "test&#95;tempdir&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=test_tempdir
+* "list&#95;txp&#95;tables&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=list_txp_tables
+* "check&#95;tables&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=check_tables
+* "do&#95;diagnostics&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_diagnostics
+
+= "textpattern/include/txp&#95;discuss.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_discuss.php_file =
+
+* "discuss&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=discuss_save
+* "short&#95;preview&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=short_preview
+* "discuss&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=discuss_list
+* "discuss&#95;search&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=discuss_search_form
+* "discuss&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=discuss_edit
+* "ipban&#95;add&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ipban_add
+* "ipban&#95;unban&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ipban_unban
+* "ipban&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ipban_list
+* "discuss&#95;change&#95;pageby&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=discuss_change_pageby
+* "discuss&#95;multiedit&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=discuss_multiedit_form
+* "discuss&#95;multi&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=discuss_multi_edit
+
+= "textpattern/include/txp&#95;file.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_file.php_file =
+
+* "file&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_list
+* "file&#95;search&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_search_form
+* "file&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_edit
+* "file&#95;db&#95;add&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_db_add
+* "file&#95;create&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_create
+* "file&#95;insert&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_insert
+* "file&#95;replace&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_replace
+* "file&#95;reset&#95;count&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_reset_count
+* "file&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_save
+* "file&#95;delete&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_delete
+* "file&#95;get&#95;uploaded&#95;name&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_get_uploaded_name
+* "file&#95;get&#95;uploaded&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_get_uploaded
+* "file&#95;set&#95;perm&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_set_perm
+* "file&#95;upload&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_upload_form
+* "file&#95;change&#95;pageby&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_change_pageby
+* "file&#95;change&#95;max&#95;size&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_change_max_size
+* "make&#95;download&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=make_download_link
+* "get&#95;filenames&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_filenames
+
+= "textpattern/include/txp&#95;form.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_form.php_file =
+
+* "form&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=form_list
+* "form&#95;multi&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=form_multi_edit
+* "form&#95;create&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=form_create
+* "form&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=form_edit
+* "form&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=form_save
+* "form&#95;delete&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=form_delete
+* "form&#95;types&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=form_types
+
+= "textpattern/include/txp&#95;image.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_image.php_file =
+
+* "image&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_list
+* "image&#95;search&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_search_form
+* "image&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_edit
+* "image&#95;insert&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_insert
+* "image&#95;replace&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_replace
+* "thumbnail&#95;insert&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail_insert
+* "image&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_save
+* "image&#95;delete&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_delete
+* "image&#95;change&#95;pageby&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_change_pageby
+* "thumb&#95;ui&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumb_ui
+* "thumbnail&#95;create&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail_create
+* "image&#95;data&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_data
+
+= "textpattern/include/txp&#95;import.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_import.php_file =
+
+* "switch&#95;tool&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=switch_tool
+* "show&#95;hide&#95;fields&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=show_hide_fields
+* "start&#95;import&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=start_import
+* "check&#95;import&#95;file&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=check_import_file
+* "array&#95;slash&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=array_slash
+* "import&#95;section&#95;popup&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=import_section_popup
+
+= "textpattern/include/txp&#95;link.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_link.php_file =
+
+* "link&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_list
+* "link&#95;search&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_search_form
+* "link&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_edit
+* "linkcategory&#95;popup&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linkcategory_popup
+* "link&#95;post&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_post
+* "link&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_save
+* "link&#95;change&#95;pageby&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_change_pageby
+* "link&#95;multiedit&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_multiedit_form
+* "link&#95;multi&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_multi_edit
+
+= "textpattern/include/txp&#95;list.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_list.php_file =
+
+* "list&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=list_list
+* "list&#95;change&#95;pageby&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=list_change_pageby
+* "list&#95;search&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=list_search_form
+* "list&#95;multiedit&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=list_multiedit_form
+* "list&#95;multi&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=list_multi_edit
+
+= "textpattern/include/txp&#95;log.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_log.php_file =
+
+* "log&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=log_list
+* "log&#95;search&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=log_search_form
+* "log&#95;change&#95;pageby&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=log_change_pageby
+* "log&#95;multiedit&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=log_multiedit_form
+* "log&#95;multi&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=log_multi_edit
+
+= "textpattern/include/txp&#95;page.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_page.php_file =
+
+* "page&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_edit
+* "div&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=div_edit
+* "page&#95;edit&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_edit_form
+* "page&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_list
+* "page&#95;delete&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_delete
+* "page&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_save
+* "taglinks&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=taglinks
+* "extract&#95;div&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=extract_div
+* "div&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=div_save
+
+= "textpattern/include/txp&#95;plugin.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_plugin.php_file =
+
+* "plugin&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_list
+* "switch&#95;status&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=switch_status
+* "plugin&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_edit
+* "plugin&#95;help&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_help
+* "plugin&#95;edit&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_edit_form
+* "plugin&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_save
+* "plugin&#95;delete&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_delete
+* "status&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=status_link
+* "plugin&#95;verify&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_verify
+* "plugin&#95;install&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_install
+* "plugin&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_form
+
+= "textpattern/include/txp&#95;prefs.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_prefs.php_file =
+
+* "prefs&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=prefs_save
+* "prefs&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=prefs_list
+* "pref&#95;func&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pref_func
+* "text&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=text_input
+* "gmtoffset&#95;select&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=gmtoffset_select
+* "logging&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=logging
+* "permlinkmodes&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlinkmodes
+* "urlmodes&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=urlmodes
+* "commentmode&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=commentmode
+* "weeks&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=weeks
+* "languages&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=languages
+* "dateformats&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=dateformats
+* "prod&#95;levels&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=prod_levels
+* "advanced&#95;prefs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_prefs
+* "real&#95;max&#95;upload&#95;size&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=real_max_upload_size
+* "advanced&#95;prefs&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_prefs_save
+* "list&#95;languages&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=list_languages
+* "get&#95;language&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_language
+* "install&#95;lang&#95;key&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=install_lang_key
+* "get&#95;lang&#95;files&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_lang_files
+
+= "textpattern/include/txp&#95;preview.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_preview.php_file =
+
+No functions are defined in this file.
+
+= "textpattern/include/txp&#95;section.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_section.php_file =
+
+* "sec&#95;section&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sec_section_list
+* "section&#95;create&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_create
+* "section&#95;save&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_save
+* "section&#95;delete&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_delete
+
+= "textpattern/include/txp&#95;tag.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:include:txp_tag.php_file =
+
+* "tag&#95;row&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_row
+* "tb&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tb
+* "tbd&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tbd
+* "tdb&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tdb
+* "key&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=key_input
+* "input&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=input_id
+* "input&#95;time&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=input_time
+* "time&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=time_pop
+* "input&#95;limit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=input_limit
+* "input&#95;offset&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=input_offset
+* "input&#95;tag&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=input_tag
+* "yesno&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=yesno_pop
+* "yesno2&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=yesno2_pop
+* "status&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=status_pop
+* "section&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_pop
+* "type&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=type_pop
+* "feed&#95;flavor&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feed_flavor_pop
+* "feed&#95;format&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feed_format_pop
+* "article&#95;category&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_category_pop
+* "link&#95;category&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_category_pop
+* "file&#95;category&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_category_pop
+* "match&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=match_pop
+* "author&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author_pop
+* "sort&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sort_pop
+* "discuss&#95;sort&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=discuss_sort_pop
+* "pgonly&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pgonly_pop
+* "form&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=form_pop
+* "css&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_pop
+* "css&#95;format&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_format_pop
+* "escape&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=escape_pop
+* "tag&#95;article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_article
+* "tag&#95;article&#95;custom&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_article_custom
+* "tag&#95;email&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_email
+* "tag&#95;page&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_page_title
+* "tag&#95;linklist&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_linklist
+* "tag&#95;section&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_section_list
+* "tag&#95;category&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_category_list
+* "tag&#95;recent&#95;articles&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_recent_articles
+* "tag&#95;related&#95;articles&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_related_articles
+* "tag&#95;recent&#95;comments&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_recent_comments
+* "tag&#95;output&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_output_form
+* "tag&#95;popup&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_popup
+* "tag&#95;password&#95;protect&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_password_protect
+* "tag&#95;search&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_search_input
+* "tag&#95;category1&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_category1
+* "tag&#95;category2&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_category2
+* "tag&#95;section&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_section
+* "tag&#95;author&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_author
+* "tag&#95;link&#95;to&#95;home&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_link_to_home
+* "tag&#95;link&#95;to&#95;prev&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_link_to_prev
+* "tag&#95;link&#95;to&#95;next&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_link_to_next
+* "tag&#95;feed&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_feed_link
+* "tag&#95;link&#95;feed&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_link_feed_link
+* "tag&#95;permlink&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_permlink
+* "tag&#95;newer&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_newer
+* "tag&#95;older&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_older
+* "tag&#95;next&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_next_title
+* "tag&#95;sitename&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_sitename
+* "tag&#95;site&#95;slogan&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_site_slogan
+* "tag&#95;prev&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_prev_title
+* "tag&#95;article&#95;image&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_article_image
+* "tag&#95;css&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_css
+* "tag&#95;body&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_body
+* "tag&#95;excerpt&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_excerpt
+* "tag&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_title
+* "tag&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_link
+* "tag&#95;linkdesctitle&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_linkdesctitle
+* "tag&#95;link&#95;description&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_link_description
+* "tag&#95;link&#95;name&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_link_name
+* "tag&#95;link&#95;category&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_link_category
+* "tag&#95;link&#95;date&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_link_date
+* "tag&#95;posted&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_posted
+* "tag&#95;comments&#95;invite&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comments_invite
+* "tag&#95;comment&#95;permlink&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_permlink
+* "tag&#95;comment&#95;time&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_time
+* "tag&#95;comment&#95;name&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_name
+* "tag&#95;comment&#95;email&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_email
+* "tag&#95;comment&#95;web&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_web
+* "tag&#95;comment&#95;message&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_message
+* "tag&#95;comment&#95;email&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_email_input
+* "tag&#95;comment&#95;message&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_message_input
+* "tag&#95;comment&#95;name&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_name_input
+* "tag&#95;comment&#95;preview&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_preview
+* "tag&#95;comment&#95;remember&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_remember
+* "tag&#95;comment&#95;submit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_submit
+* "tag&#95;comment&#95;web&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comment_web_input
+* "tag&#95;comments&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comments
+* "tag&#95;comments&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comments_form
+* "tag&#95;comments&#95;preview&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_comments_preview
+* "tag&#95;search&#95;result&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_search_result_title
+* "tag&#95;search&#95;result&#95;excerpt&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_search_result_excerpt
+* "tag&#95;search&#95;result&#95;url&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_search_result_url
+* "tag&#95;search&#95;result&#95;date&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_search_result_date
+* "tag&#95;lang&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_lang
+* "tag&#95;breadcrumb&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_breadcrumb
+* "tag&#95;image&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_image
+* "tag&#95;file&#95;download&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_file_download
+* "tag&#95;file&#95;download&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_file_download_list
+* "tag&#95;file&#95;download&#95;created&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_file_download_created
+* "tag&#95;file&#95;download&#95;modified&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_file_download_modified
+* "tag&#95;file&#95;download&#95;size&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_file_download_size
+* "tag&#95;file&#95;download&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_file_download_link
+* "tag&#95;file&#95;download&#95;name&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_file_download_name
+* "tag&#95;file&#95;download&#95;downloads&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_file_download_downloads
+* "tag&#95;file&#95;download&#95;category&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_file_download_category
+* "tag&#95;file&#95;download&#95;description&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_file_download_description
+
+h5(#textpatternlibdirectory). [[textpattern:lib:&#95;directory]]
+
+= "textpattern/lib/IXRClass.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:ixrclass.php_file =
+
+* "class&#95;ixr&#95;value":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_ixr_value
+** "ixr&#95;value&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ixr_value
+** "calculate&#95;type&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=calculate_type
+** "get&#95;xml&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_xml
+** "is&#95;struct&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=is_struct
+* "class&#95;ixr&#95;message":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_ixr_message
+** "ixr&#95;message&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ixr_message
+** "parse&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=parse
+** "tag&#95;open&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_open
+** "cdata&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cdata
+** "tag&#95;close&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_close
+* "class&#95;ixr&#95;server":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_ixr_server
+** "ixr&#95;server&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ixr_server
+** "serve&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=serve
+** "call&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=call
+** "error&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=error
+** "output&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=output
+** "has&#95;method&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=has_method
+** "set&#95;capabilities&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=set_capabilities
+** "get&#95;capabilities&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_capabilities
+** "set&#95;callbacks&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=set_callbacks
+** "list&#95;methods&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=list_methods
+** "multi&#95;call&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=multi_call
+* "class&#95;ixr&#95;request":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_ixr_request
+** "ixr&#95;request&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ixr_request
+** "get&#95;length&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_length
+** "get&#95;xml&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_xml
+* "class&#95;ixr&#95;client":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_ixr_client
+** "ixr&#95;client&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ixr_client
+** "query&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=query
+** "get&#95;response&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_response
+** "is&#95;error&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=is_error
+** "get&#95;error&#95;code&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_error_code
+** "get&#95;error&#95;message&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_error_message
+* "class&#95;ixr&#95;error":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_ixr_error
+** "ixr&#95;error&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ixr_error
+** "get&#95;xml&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_xml
+* "class&#95;ixr&#95;date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_ixr_date
+** "ixr&#95;date&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ixr_date
+** "parse&#95;timestamp&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=parse_timestamp
+** "parse&#95;iso&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=parse_iso
+** "get&#95;iso&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_iso
+** "get&#95;xml&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_xml
+** "get&#95;timestamp&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_timestamp
+* "class&#95;ixr&#95;base64":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_ixr_base64
+** "ixr&#95;base64&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ixr_base64
+** "get&#95;xml&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_xml
+* "class&#95;ixr&#95;introspection&#95;server":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_ixr_introspection_server
+** "ixr&#95;introspection&#95;server&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ixr_introspection_server
+** "add&#95;callback&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=add_callback
+** "call&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=call
+** "method&#95;signature&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=method_signature
+** "method&#95;help&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=method_help
+* "class&#95;ixr&#95;client&#95;multicall":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_ixr_client_multicall
+** "ixr&#95;client&#95;multicall&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ixr_client_multicall
+** "add&#95;call&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=add_call
+** "query&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=query
+
+= "textpattern/lib/admin&#95;config.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:admin_config.php_file =
+
+No functions are defined in this file.
+
+= "textpattern/lib/class.thumb.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:class_thumb.php_file =
+
+* "class&#95;wet&#95;thumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_wet_thumb
+** "wet&#95;thumb&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=wet_thumb
+** "write&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write
+** "as&#95;tag&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=as_tag
+* "class&#95;txp&#95;thumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_txp_thumb
+** "txp&#95;thumb&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_thumb
+** "write&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write
+* "unsharp&#95;mask&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=unsharp_mask
+
+= "textpattern/lib/classTextile.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:class_textile.php_file =
+
+* "class&#95;textile":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_textile
+** "textile&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textile
+** "textile&#95;this&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textile_this
+** "textile&#95;restricted&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textile_restricted
+** "pba&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pba
+** "table&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=table
+** "has&#95;raw&#95;text&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=has_raw_text
+** "f&#95;table&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_table
+** "lists&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=lists
+** "f&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_list
+** "l&#95;t&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=l_t
+** "do&#95;pbr&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_pbr
+** "do&#95;br&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_br
+** "block&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=block
+** "f&#95;block&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_block
+** "graf&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=graf
+** "span&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=span
+** "f&#95;span&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_span
+** "links&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=links
+** "f&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_link
+** "get&#95;refs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_refs
+** "refs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=refs
+** "check&#95;refs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=check_refs
+** "rel&#95;url&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=rel_url
+** "image&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image
+** "f&#95;image&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_image
+** "code&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=code
+** "f&#95;code&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_code
+** "f&#95;pre&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_pre
+** "shelve&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=shelve
+** "retrieve&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=retrieve
+** "incoming&#95;entities&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=incoming_entities
+** "encode&#95;entities&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=encode_entities
+** "fix&#95;entities&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fix_entities
+** "clean&#95;white&#95;space&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=clean_white_space
+** "do&#95;special&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_special
+** "f&#95;special&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_special
+** "no&#95;textile&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=no_textile
+** "f&#95;textile&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_textile
+** "footnote&#95;ref&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=footnote_ref
+** "footnote&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=footnote_id
+** "glyphs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glyphs
+** "i&#95;align&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=i_align
+** "h&#95;align&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=h_align
+** "v&#95;align&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=v_align
+** "encode&#95;high&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=encode_high
+** "decode&#95;high&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=decode_high
+** "cmap&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cmap
+** "encode&#95;html&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=encode_html
+** "r&#95;encode&#95;html&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=r_encode_html
+** "textile&#95;popup&#95;help&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textile_popup_help
+** "txtgps&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txtgps
+** "dump&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=dump
+** "block&#95;lite&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=block_lite
+
+= "textpattern/lib/txplib&#95;db.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:txplib_db.php_file =
+
+* "safe&#95;pfx&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_pfx
+* "safe&#95;pfx&#95;j&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_pfx_j
+* "safe&#95;query&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_query
+* "safe&#95;delete&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_delete
+* "safe&#95;update&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_update
+* "safe&#95;insert&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_insert
+* "safe&#95;upsert&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_upsert
+* "safe&#95;alter&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_alter
+* "safe&#95;optimize&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_optimize
+* "safe&#95;repair&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_repair
+* "safe&#95;field&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_field
+* "safe&#95;column&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_column
+* "safe&#95;row&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_row
+* "safe&#95;rows&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows
+* "safe&#95;rows&#95;start&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows_start
+* "safe&#95;count&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_count
+* "safe&#95;show&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_show
+* "fetch&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fetch
+* "get&#95;row&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_row
+* "get&#95;rows&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_rows
+* "start&#95;rows&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=start_rows
+* "next&#95;row&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=next_row
+* "num&#95;rows&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=num_rows
+* "get&#95;thing&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_thing
+* "get&#95;things&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_things
+* "get&#95;count&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_count
+* "get&#95;tree&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_tree
+* "get&#95;tree&#95;path&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_tree_path
+* "rebuild&#95;tree&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=rebuild_tree
+* "rebuild&#95;tree&#95;full&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=rebuild_tree_full
+* "get&#95;prefs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_prefs
+* "db&#95;down&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=db_down
+
+* "class&#95;db":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_db
+** "db&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=db
+
+= "textpattern/lib/txplib&#95;forms.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:txplib_forms.php_file =
+
+* "yesno&#95;radio&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=yesno_radio
+* "onoff&#95;radio&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=onoff_radio
+* "select&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=select_input
+* "tree&#95;select&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tree_select_input
+* "f&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_input
+* "cleanf&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cleanf_input
+* "h&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=h_input
+* "s&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=s_input
+* "e&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=e_input
+* "checkbox&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=checkbox
+* "checkbox2&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=checkbox2
+* "radio&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=radio
+* "form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=form
+* "fetch&#95;editable&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fetch_editable
+* "text&#95;area&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=text_area
+* "type&#95;select&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=type_select
+* "type&#95;options&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=type_options
+* "radio&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=radio_list
+
+= "textpattern/lib/txplib&#95;head.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:txplib_head.php_file =
+
+* "pagetop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pagetop
+* "poweredit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=poweredit
+* "areatab&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=areatab
+* "tabber&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tabber
+* "tabsort&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tabsort
+* "areas&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=areas
+* "nav&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=nav_pop
+* "button&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=button
+
+= "textpattern/lib/txplib&#95;html.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:txplib_html.php_file =
+
+* "end&#95;page&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=end_page
+* "column&#95;head&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=column_head
+* "column&#95;multi&#95;head&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=column_multi_head
+* "h&#95;cell&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=h_cell
+* "s&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=s_link
+* "e&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=e_link
+* "w&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=w_link
+* "d&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=d_link
+* "a&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=a_link
+* "prevnext&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=prevnext_link
+* "prev&#95;next&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=prev_next_link
+* "nav&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=nav_form
+* "start&#95;skel&#95;table&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=start_skel_table
+* "start&#95;table&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=start_table
+* "end&#95;table&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=end_table
+* "stack&#95;rows&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=stack_rows
+* "td&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=td
+* "tda&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tda
+* "tdtl&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tdtl
+* "tr&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tr
+* "tdcs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tdcs
+* "tdrs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tdrs
+* "f&#95;label&#95;cell&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_label_cell
+* "f&#95;input&#95;cell&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=f_input_cell
+* "tag&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag
+* "graf&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=graf
+* "hed&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=hed
+* "href&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=href
+* "strong&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=strong
+* "html&#95;pre&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=html_pre
+* "comment&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment
+* "small&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=small
+* "ass&#95;row&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ass_row
+* "ass&#95;head&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ass_head
+* "pop&#95;help&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pop_help
+* "pop&#95;help&#95;subtle&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pop_help_subtle
+* "pop&#95;tag&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pop_tag
+* "pop&#95;tag&#95;links&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pop_tag_links
+* "messenger&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=messenger
+* "pageby&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pageby_form
+* "upload&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upload_form
+* "search&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_form
+* "pref&#95;text&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pref_text
+* "dom&#95;attach&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=dom_attach
+* "script&#95;js&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=script_js
+* "toggle&#95;box&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=toggle_box
+* "fieldset&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fieldset
+
+= "textpattern/lib/txplib&#95;misc.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:txplib_misc.php_file =
+
+* "do&#95;array&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_array
+* "do&#95;strip&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_strip
+* "do&#95;strip&#95;tags&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_strip_tags
+* "do&#95;de&#95;ent&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_de_ent
+* "de&#95;ent&#95;brackets&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=de_ent_brackets
+* "do&#95;slash&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_slash
+* "do&#95;special&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_special
+* "&#95;null&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=null
+* "array&#95;null&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=array_null
+* "escape&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=escape_title
+* "escape&#95;output&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=escape_output
+* "escape&#95;tags&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=escape_tags
+* "escape&#95;cdata&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=escape_cdata
+* "g&#95;txt&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=g_txt
+* "dmp&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=dmp
+* "load&#95;lang&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=load_lang
+* "load&#95;lang&#95;dates&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=load_lang_dates
+* "load&#95;lang&#95;event&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=load_lang_event
+* "check&#95;privs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=check_privs
+* "add&#95;privs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=add_privs
+* "has&#95;privs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=has_privs
+* "require&#95;privs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=require_privs
+* "size&#95;image&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=size_image
+* "gps&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=gps
+* "gpsa&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=gpsa
+* "ps&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ps
+* "psa&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=psa
+* "psas&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=psas
+* "strip&#95;post&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=strip_post
+* "server&#95;set&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=server_set
+* "pcs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pcs
+* "cs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=cs
+* "yes&#95;no&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=yes_no
+* "getmicrotime&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=getmicrotime
+* "load&#95;plugin&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=load_plugin
+* "require&#95;plugin&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=require_plugin
+* "include&#95;plugin&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=include_plugin
+* "plugin&#95;error&#95;handler&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_error_handler
+* "tag&#95;error&#95;handler&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_error_handler
+* "load&#95;plugins&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=load_plugins
+* "register&#95;callback&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=register_callback
+* "register&#95;page&#95;extension&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=register_page_extension
+* "callback&#95;event&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=callback_event
+* "register&#95;tab&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=register_tab
+* "get&#95;att&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_att
+* "g&#95;att&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=g_att
+* "l&#95;atts&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=l_atts
+* "select&#95;buttons&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=select_buttons
+* "strip&#95;space&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=strip_space
+* "sanitize&#95;for&#95;url&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sanitize_for_url
+* "dumb&#95;down&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=dumb_down
+* "clean&#95;url&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=clean_url
+* "no&#95;widow&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=no_widow
+* "is&#95;blacklisted&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=is_blacklisted
+* "update&#95;site&#95;path&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=update_site_path
+* "splat&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=splat
+* "max&#95;mem&#95;usage&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=max_mem_usage
+* "strip&#95;rn&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=strip_rn
+* "is&#95;valid&#95;email&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=is_valid_email
+* "txp&#95;mail&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_mail
+* "encode&#95;mailheader&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=encode_mailheader
+* "strip&#95;php&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=strip_php
+* "event&#95;category&#95;popup&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=event_category_popup
+* "event&#95;change&#95;pageby&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=event_change_pageby
+* "event&#95;multiedit&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=event_multiedit_form
+* "event&#95;multi&#95;edit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=event_multi_edit
+* "since&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=since
+* "tz&#95;offset&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tz_offset
+* "safe&#95;strftime&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_strftime
+* "safe&#95;strtotime&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_strtotime
+* "my&#95;error&#95;handler&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=my_error_handler
+* "find&#95;temp&#95;dir&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=find_temp_dir
+* "get&#95;uploaded&#95;file&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_uploaded_file
+* "set&#95;error&#95;level&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=set_error_level
+* "shift&#95;uploaded&#95;file&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=shift_uploaded_file
+* "upload&#95;get&#95;errormsg&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upload_get_errormsg
+* "is&#95;windows&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=is_windows
+* "is&#95;cgi&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=is_cgi
+* "is&#95;mod&#95;php&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=is_mod_php
+* "build&#95;file&#95;path&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=build_file_path
+* "get&#95;author&#95;name&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_author_name
+* "eval&#95;else&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=eval_else
+* "fetch&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fetch_form
+* "parse&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=parse_form
+* "fetch&#95;category&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fetch_category_title
+* "fetch&#95;section&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fetch_section_title
+* "update&#95;comments&#95;count&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=update_comments_count
+* "clean&#95;comment&#95;counts&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=clean_comment_counts
+* "markup&#95;comment&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=markup_comment
+* "update&#95;lastmod&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=update_lastmod
+* "get&#95;lastmod&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_lastmod
+* "handle&#95;lastmod&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=handle_lastmod
+* "set&#95;pref&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=set_pref
+* "txp&#95;status&#95;header&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_status_header
+* "txp&#95;die&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_die
+* "join&#95;qs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=join_qs
+* "pagelinkurl&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pagelinkurl
+* "in&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=in_list
+* "do&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_list
+* "do&#95;quote&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_quote
+* "quote&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=quote_list
+* "trace&#95;add&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=trace_add
+* "article&#95;push&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_push
+* "article&#95;pop&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_pop
+* "relative&#95;path&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=relative_path
+* "get&#95;caller&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_caller
+* "getlocale&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=getlocale
+* "assert&#95;article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=assert_article
+* "assert&#95;comment&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=assert_comment
+* "assert&#95;int&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=assert_int
+* "replace&#95;relative&#95;urls&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=replace_relative_urls
+* "show&#95;clean&#95;test&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=show_clean_test
+* "pager&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pager
+* "soft&#95;wrap&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=soft_wrap
+* "strip&#95;prefix&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=strip_prefix
+
+= "textpattern/lib/txplib&#95;update.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:txplib_update.php_file =
+
+* "install&#95;language&#95;from&#95;file&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=install_language_from_file
+* "check&#95;updates&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=check_updates
+
+= "textpattern/lib/txplib&#95;wrapper.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:txplib_wrapper.php_file =
+
+* "txp&#95;wrapper&#95;class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_wrapper_class
+** "txp&#95;wrapper&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_wrapper
+** "delete&#95;article&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=delete_article_id
+** "get&#95;article&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_article_list
+** "get&#95;article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_article
+** "get&#95;article&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_article_id
+** "update&#95;article&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=update_article_id
+** "new&#95;article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=new_article
+** "get&#95;sections&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_sections_list
+** "get&#95;section&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_section
+** "get&#95;category&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_category_list
+** "get&#95;category&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_category
+** "get&#95;category&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_category_id
+** "get&#95;user&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_user
+** "get&#95;template&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_template
+** "set&#95;template&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=set_template
+** "update&#95;article&#95;field&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=update_article_field
+** "&#95;set&#95;article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=set_article
+** "&#95;validate&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=validate
+** "&#95;send&#95;pings&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=send_pings
+** "&#95;check&#95;keys&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=check_keys
+** "textile&#95;main&#95;fields&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textile_main_fields
+** "format&#95;field&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=format_field
+
+h5(#textpatternpublishdirectory). [[textpattern:publish:&#95;directory]]
+
+= "textpattern/publish/atom.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:publish:atom.php_file =
+
+* "atom&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=atom
+* "safe&#95;hed&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_hed
+* "fixup&#95;for&#95;feed&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fixup_for_feed
+
+= "textpattern/publish/comment.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:publish:comment.php_file =
+
+* "fetch&#95;comments&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fetch_comments
+* "discuss&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=discuss
+* "get&#95;next&#95;nonce&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_next_nonce
+* "get&#95;next&#95;secret&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_next_secret
+* "comment&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_form
+* "pop&#95;comments&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pop_comments
+* "set&#95;cookies&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=set_cookies
+* "destroy&#95;cookies&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=destroy_cookies
+* "get&#95;comment&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_comment
+* "save&#95;comment&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=save_comment
+* "get&#95;comment&#95;evaluator&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_comment_evaluator
+* "check&#95;nonce&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=check_nonce
+* "check&#95;ban&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=check_ban
+* "check&#95;comments&#95;allowed&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=check_comments_allowed
+* "comments&#95;help&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_help
+* "mail&#95;comment&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=mail_comment
+
+* "class&#95;comment&#95;evaluation":/home/www/zendstudio/dokuwiki/bin/doku.php?id=class_comment_evaluation
+** "comment&#95;evaluation&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_evaluation
+** "add&#95;estimate&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=add_estimate
+** "get&#95;result&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_result
+** "get&#95;result&#95;message&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_result_message
+** "write&#95;trace&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write_trace
+
+= "textpattern/publish/log.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:publish:log.php_file =
+
+* "log&#95;hit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=log_hit
+* "logit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=logit
+* "insert&#95;logit&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=insert_logit
+
+= "textpattern/publish/rss.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:publish:rss.php_file =
+
+* "rss&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=rss
+* "rss&#95;safe&#95;hed&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=rss_safe_hed
+
+= "textpattern/publish/search.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:publish:search.php_file =
+
+* "search&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search
+* "filter&#95;search&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=filter_search
+* "legacy&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=legacy_form
+
+= "textpattern/publish/taghandlers.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:publish:taghandlers.php_file =
+
+* "page&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_title
+* "css&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css
+* "image&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image
+* "thumbnail&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail
+* "output&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=output_form
+* "feed&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feed_link
+* "link&#95;feed&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_feed_link
+* "linklist&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist
+* "tpt&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tpt_link
+* "linkdesctitle&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linkdesctitle
+* "link&#95;name&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_name
+* "link&#95;url&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_url
+* "link&#95;description&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_description
+* "link&#95;date&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_date
+* "link&#95;category&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_category
+* "e&#95;e&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=e_e
+* "email&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=email
+* "password&#95;protect&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=password_protect
+* "recent&#95;articles&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_articles
+* "recent&#95;comments&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_comments
+* "related&#95;articles&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles
+* "popup&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=popup
+* "category&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
+* "section&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
+* "search&#95;input&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input
+* "link&#95;to&#95;next&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_to_next
+* "link&#95;to&#95;prev&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_to_prev
+* "next&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=next_title
+* "prev&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=prev_title
+* "site&#95;slogan&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_slogan
+* "link&#95;to&#95;home&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_to_home
+* "newer&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=newer
+* "older&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=older
+* "text&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=text
+* "article&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_id
+* "article&#95;url&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_url_title
+* "if&#95;article&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_article_id
+* "posted&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted
+* "comments&#95;count&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_count
+* "comments&#95;invite&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_invite
+* "comments&#95;form&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form
+* "comments&#95;error&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_error
+* "if&#95;comments&#95;error&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments_error
+* "comments&#95;annotateinvite&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_annotateinvite
+* "comments&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments
+* "comments&#95;preview&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_preview
+* "if&#95;comments&#95;preview&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments_preview
+* "comment&#95;permlink&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_permlink
+* "comment&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_id
+* "comment&#95;name&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_name
+* "comment&#95;email&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_email
+* "comment&#95;web&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_web
+* "comment&#95;time&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_time
+* "comment&#95;message&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_message
+* "comment&#95;anchor&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_anchor
+* "message&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=message
+* "author&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author
+* "if&#95;author&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_author
+* "if&#95;article&#95;author&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_article_author
+* "body&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=body
+* "title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title
+* "excerpt&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=excerpt
+* "category1&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category1
+* "category2&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category2
+* "category&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category
+* "section&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section
+* "keywords&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=keywords
+* "article&#95;image&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image
+* "search&#95;result&#95;title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_result_title
+* "search&#95;result&#95;excerpt&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_result_excerpt
+* "search&#95;result&#95;url&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_result_url
+* "search&#95;result&#95;date&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_result_date
+* "search&#95;result&#95;count&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_result_count
+* "image&#95;index&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_index
+* "image&#95;display&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_display
+* "if&#95;comments&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments
+* "if&#95;comments&#95;allowed&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments_allowed
+* "if&#95;comments&#95;disallowed&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments_disallowed
+* "if&#95;individual&#95;article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_individual_article
+* "if&#95;article&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_article_list
+* "meta&#95;keywords&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords
+* "meta&#95;author&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_author
+* "do&#95;wrap&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_wrap
+* "do&#95;tag&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_tag
+* "do&#95;label&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_label
+* "permlink&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlink
+* "permlinkurl&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlinkurl_id
+* "permlinkurl&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlinkurl
+* "lang&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=lang
+* "format&#95;perm&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=format_perm_link
+* "format&#95;comments&#95;invite&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=format_comments_invite
+* "do&#95;permlink&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_permlink
+* "do&#95;article&#95;href&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=do_article_href
+* "breadcrumb&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=breadcrumb
+* "if&#95;excerpt&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_excerpt
+* "if&#95;search&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_search
+* "if&#95;category&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_category
+* "if&#95;article&#95;category&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_article_category
+* "if&#95;section&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_section
+* "if&#95;article&#95;section&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_article_section
+* "php&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=php
+* "custom&#95;field&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field
+* "if&#95;custom&#95;field&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_custom_field
+* "site&#95;url&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_url
+* "img&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=img
+* "error&#95;message&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=error_message
+* "error&#95;status&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=error_status
+* "if&#95;status&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_status
+* "page&#95;url&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_url
+* "if&#95;different&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_different
+* "if&#95;first&#95;article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_article
+* "if&#95;last&#95;article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_article
+* "if&#95;plugin&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_plugin
+* "file&#95;download&#95;list&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list
+* "file&#95;download&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download
+* "file&#95;download&#95;link&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_link
+* "file&#95;download&#95;fetch&#95;info&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_fetch_info
+* "file&#95;download&#95;format&#95;info&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_format_info
+* "file&#95;download&#95;size&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_size
+* "file&#95;download&#95;created&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_created
+* "file&#95;download&#95;modified&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_modified
+* "file&#95;download&#95;format&#95;time&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_format_time
+* "file&#95;download&#95;id&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_id
+* "file&#95;download&#95;name&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_name
+* "file&#95;download&#95;category&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_category
+* "file&#95;download&#95;downloads&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_downloads
+* "file&#95;download&#95;description&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_description
+
+h5(#textpatternsetupdirectory). [[textpattern:setup:&#95;directory]]
+
+= "textpattern/setup/en-gb.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:setup:en-gb.php_file =
+
+No functions are defined in this file.
+
+= "textpattern/setup/index.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:setup:index.php_file =
+
+* "choose&#95;lang&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=choose_lang
+* "get&#95;db&#95;info&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_db_info
+* "print&#95;config&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=print_config
+* "get&#95;txp&#95;login&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=get_txp_login
+* "create&#95;txp&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=create_txp
+* "is&#95;post&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=is_post
+* "make&#95;config&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=make_config
+* "fb&#95;create&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fb_create
+* "post&#95;encode&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_encode
+* "post&#95;decode&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_decode
+* "enum&#95;post&#95;items&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=enum_post_items
+* "langs&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=langs
+* "setup&#95;load&#95;lang&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=setup_load_lang
+* "s&#95;do&#95;slash&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=s_do_slash
+
+= "textpattern/setup/setuplangs.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:setup:setuplangs.php_file =
+
+No functions are defined in this file.
+
+= "textpattern/setup/txpsql.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:setup:txpsql.php_file =
+
+No functions are defined in this file.
+
+h5(#textpatternupdatedirectory). [[textpattern:update:&#95;directory]]
+
+= "textpattern/update/&#95;to&#95;1.0.0.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:update:to_1_0_0.php_file =
+
+* "install&#95;lang&#95;key&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=install_lang_key
+
+= "textpattern/update/&#95;to&#95;4.0.2.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:update:to_4_0_2.php_file =
+
+No functions are defined in this file.
+
+= "textpattern/update/&#95;to&#95;4.0.3.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:update:to_4_0_3.php_file =
+
+No functions are defined in this file.
+
+= "textpattern/update/&#95;to&#95;4.0.4.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:update:to_4_0_4.php_file =
+
+No functions are defined in this file.
+
+= "textpattern/update/&#95;update.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:update:update.php_file =
+
+* "newest&#95;file&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=newest_file
+

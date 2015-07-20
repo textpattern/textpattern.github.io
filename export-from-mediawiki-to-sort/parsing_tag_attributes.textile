@@ -1,0 +1,170 @@
+\n"mininav&#95;tag&#95;basics":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tag_basics
+
+h3(sectionedit1#conventions_for_attributes). Conventions for attributes
+
+Most Textpattern tags allow you to specify attributes as key/value pairs to override default behaviour.
+
+Examples:
+
+bc(code). <txp:tag key="value" />
+
+
+bc(code). <txp:category type="image" title="1" />
+
+
+Usage of attributes in Textpattern tags is similar to attributes in HTML.
+
+A few important rules to remember:
+
+* attribute values must always be delimited by double (or single) quotes. Single quotes have special meaning, so use double quotes by default.
+* attribute keys must be lower case.
+* for plugin developers: attribute keys can consist of the letters 'a' through 'z' and underscore (not as the first or last character).
+
+h3(sectionedit2#attribute_value_escaping). Attribute value escaping
+
+Almost any character can be used in an attribute value. Unlike in HTML, there is no need for using escape codes for characters like
+
+bc(code). >
+
+
+,
+
+bc(code). <
+
+
+and
+
+bc(code). &
+
+
+. In fact, attribute values should contain no HTML escape codes at all, because the tag itself should take care of proper escaping.
+
+However, there is one exception: the delimiter character.
+
+The attribute value is delimited by a pair of double (or single) quotes and this poses a restriction on using the delimiter character inside the attribute value.
+
+Suppose you wanted to use this as an attribute value: *reward for “good” behaviour*:
+
+*incorrect*:
+
+bc(code). <txp:tag key="reward for "good" behaviour" />
+
+
+For a human, it's easy to understand how this was intended, but for Textpattern the attribute value ends at the double quote before 'good'. The remainder of the attribute value makes it an incorrectly formatted tag (causing to show up as-is in the resulting HTML code).
+
+If single quotes didn't have special meaning, one would solve this by using single quotes to delimit the attribute value:
+
+bc(code). <txp:tag key='reward for "good" behaviour' />
+
+
+While this works as intended, it doesn't account for attribute values containing both single and double quotes.
+
+Since Textpattern 4.0.7, duplicate delimiter characters used as part of an attribute value are interpreted as a literal character instead of delimiters. A few examples:
+
+bc(code). <txp:tag key="reward for ""good"" behaviour" />
+
+
+bc(code). <nowiki><txp:tag key='reward for ''good'' behaviour' /></nowiki>
+
+
+If you look closely at the second example, you'll see that in the attribute value, there are two single quotes on each side of the word 'good', not a double quote.
+
+One last example that shows what's possible:
+
+bc(code). <txp:tag key="let's use ""double"" quotes & <html> here" />
+
+
+The only character that needs escaping is the chosen attribute delimiter itself where it occurs inside the attribute value (double quote in this instance).
+
+NOTE: In Textpattern 4.0.6 and older, delimiter escaping did not exist and the tag parser also failed to handle attribute values containing a
+
+bc(code). >
+
+
+.
+
+h3(sectionedit3#parsed_attribute_values). Parsed attribute values
+
+In most cases, you want attribute values to be treated as just a string of text, but there are situations where it can be useful to let Textpattern parse the attribute value itself. Given the popularity of the asy&#95;wondertag plugin (up until Textpattern 4.0.6 at least) for enabling tags-in-attributes, attribute parsing is now possible natively for single quoted values.
+
+Double quoted attribute values are not parsed, so if your attribute value contains a value that looks like a tag, but should be treated as literal text, you must always use double quotes. In fact, you should use double quotes to delimit attribute values at all times, unless you want the attribute value parsed. The reason for this is simple: speed. Parsing an attribute value is slower than treating it as plain text.
+
+What does all this mean? Here are some examples, starting with attribute values that are not parsed:
+
+bc(code). <txp:tag key="plain text" />
+
+
+bc(code). <txp:tag key="literal <txp:tag />" />
+
+
+In the above examples, the attribute are treated as plain text; the literal tag is not parsed. If you wanted the tag in the attribute value to be parsed and return the actual result of the tag, you should write it like this:
+
+bc(code). <txp:tag key='parsed <txp:tag />' />
+
+
+h3(sectionedit4#parsing_tags_example). Parsing tags example
+
+Using an article that has a custom field named 'email' containing an email address *me&#64;example.com* and a custom field 'name' containing 'Dean Allen':
+
+bc(code). <txp:email
+  email='<txp:custom_field name="email" />'
+  linktext="Send email"
+  title='Send email to <txp:custom_field name="name" />'
+/>
+
+
+Because the single quoted attribute values are parsed, after parsing the attribute values, it looks like this:
+
+bc(code). <txp:email 
+  email="me@example.com" 
+  linktext="Send email"
+  title="Send email to Dean Allen"
+/>
+
+
+If it were just one article, you wouldn't need attribute parsing, but if you have many articles with different email addresses in such a custom field, this can be very useful.
+
+Attribute value parsing has no real limitations. Within a parsed attribute value, you can:
+
+* have an unlimited number of tags
+* mix plain text with tags
+* use container tags (yes, even &lt;txp:php&gt;), self-closing tags and if/else constructs
+* (only for die-hard users) even parse the attributes of tags inside an attribute to unlimited depth, provided you use proper attribute value quoting and escaping
+
+h3(sectionedit5#nesting_quotes_in_quotes_in). Nesting quotes in quotes in...
+
+Referring to the last point above, things can become a little hairy if you want to insert a tag into an attribute of a tag that's already an attribute! But keep your wits about you and you can do things like this:
+
+<pre class="code">
+&lt;txp:variable name=&quot;file_count&quot; value='&lt;txp:file_download_list form=&quot;file_cat&quot; category=''&lt;txp:l10n_get_lang type=&quot;short&quot; /&gt;'' /&gt;' /&gt;
+
+&lt;txp:if_variable name=&quot;file_count&quot;&gt;
+
+  &lt;h3&gt;Some Header&lt;/h3&gt;
+  &lt;txp:file_download_list category='&lt;txp:l10n_get_lang type=&quot;short&quot; /&gt;' wraptag=&quot;ul&quot; break=&quot;li&quot; /&gt;
+
+&lt;txp:else /&gt;
+
+  &lt;p&gt;no files for this language&lt;/p&gt;
+
+&lt;/txp:if_variable&gt;
+</pre>
+
+In the first statement, notice the pairs of single apostrophes inside the category attribute? They are necessary to "escape":#attribute_value_escaping the single quotes so the parser does not see them as the end of the *value* attribute in the
+
+bc(code). <txp:variable />
+
+
+. At each nested level, the number of single quotes surrounding a tag is usually doubled to maintain the integrity of the statements; this can get mighty interesting unless you keep your wits about you!
+
+That example is on a real-world multi-lingual site that uses the "MLP":http://forum.textpattern.com/viewtopic.php?id=20692 system. It reads the current language code in use by the visitor (
+
+bc(code). <txp:l10n_get_lang type="short" />
+
+
+) and grabs all the files from a category of the same name, assuming there are any at all.
+
+The *file&#95;cat* form returns some markup (in this case, just a series of links to the relevant files) which is all assigned to the *value* of the "variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=variable named *file&#95;count*.
+
+The upshot is that this variable can be tested with "if&#95;variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable to see if it contains anything at all and  -  if it does  -  the file list can be displayed. Conversely, if there are no files for that language then the "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else part of the conditional statement is displayed.
+

@@ -1,0 +1,29 @@
+\nTo perhaps save you some exploration time, here is a brief description of the two system navigation boxes at left of every page.
+
+h4(#navigation_list). &quot;Navigation&quot; List
+
+The six links in the navigation box at left are pre-established with the install of the wiki, and they are a bit hard to modify; hence, we have worked around them rather than try and change them, even though it would be desireable in some cases to modify the list. Here's what they are all about:
+
+* *Main Page*  -  Simply a link to the TextBook Table of Contents.
+* *Community Portal*  -  This is an important link to the pages where we talk about doing something in the wiki before we actually do it, particularly if it is out of character with what is already considered _modus operandi_. An attempt is made to set the pages up in topic category fashion, and new categories can be added if you see a need.
+* *Current Events*  -  This page should be used for exactly what it implies, but right now it is being used for indicating what needs immediately addressed for TextBook.
+* *Recent Changes*  -  A very useful location of the wiki that shows what page was recently modified and who made the change. A quick, easy way to see what someone has been up to.
+* Random Page  -  The stupidest thing I've ever seen. Click this link and you go to a randomly-selected page in the wiki, possibly even one that is an orphan or marked for deletion. Nice use of your time, right? (Doesn't even deserve to be bold.)
+* *Help*  -  Very useful information can be found here. Especially links to other WikiMedia help info about modifying text, links, and everything else. If your new to a wiki system, really make use of the Help. By the way, *Textile does not work in here*!
+
+h4(#toolbox_list). Toolbox List
+
+Similar to the navigation links, the toolbox links are part of the wiki system. The Toolbox list is dynamic; the options change depending on where you are at, what you are doing, and what role you have in the wiki (user, sysop, admin, etc.). All the options might be clarified here over time, but here is some insight for the time being.
+
+h5(#toolbox_options_under_most_situations). Toolbox Options Under Most Situations
+
+The most common options shown are probably what you see there right now:
+
+* *What links here*  -  This will take you to a page that shows what other wiki pages are linked with the current page. The current page will be whatever page you happen to be viewing at the time.
+
+* *Related changes*  -  Not exactly certain what this is, but not very important either for TextBook purposes.
+
+* *Upload file*  -  This is where you go to upload images (if needed) for any instructions you might be adding to the wiki. See detailed instructions on the "Wiki Protocols and Guidelines":http://textpattern.net/wiki/index.php?title=Wiki_Protocols_and_Guidelines page.
+
+* *Special Pages*  -  This is a strange and useful listing of all the various types of pages so far generated in the wiki, whether still used or not. Some day an admin will go in and delete the detritus under certain sections, specifically where pages are dead or no longer used.
+

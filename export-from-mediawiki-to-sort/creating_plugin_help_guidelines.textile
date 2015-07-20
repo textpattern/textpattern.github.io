@@ -1,0 +1,169 @@
+\nBelow is a template that all plugin developers should adhere to as closely as possible. Using a template makes writing the plugin help easier, more consistent and more complete, as well as easier for your users to understand and navigate.
+
+*Do not use inline CSS styling* of your own - please make use of the existing CSS stylesheet that was provided by the admin theme instead.
+
+The following guidelines are taken from "this forum post":http://forum.textpattern.com/viewtopic.php?id=25327
+
+h3(sectionedit1#textile_tags). Textile tags
+
+Use the following Textile tags when formatting help files:
+
+<pre class="code">
+h1. Plugin title
+
+h2. Section name
+
+h3. Subsection name
+
+p. Body text uses regular paragraph formatting
+
+p. An %(highlight)important statement% within a paragraph
+
+# A number list example
+# Item 2
+# Item 3
+
+* A bullet list example
+* Item 2
+* Item 3
+
+An inline @code@ tag
+
+bc. A pre code box with pre formatted
+  code examples
+</pre>
+
+h3(sectionedit2#suggested_sections). Suggested sections
+
+Here are the suggested sections for your help file - use as many as is necessary for your help file:
+
+# Summary and version details
+# Table of contents
+# List of features
+# Plugin requirements
+# Installation (when differs from standard installation procedure)
+# Uninstallation (when differs from standard uninstallation procedure)
+# Tags (along with attribute descriptions and examples)
+# Exposed functions (for class plugins)
+# Global variables
+# Plugin events
+# Examples
+# License
+# Author contact
+
+h3(sectionedit3#template). Template
+
+Here is an example template you can base your help document upon:
+
+<pre class="code">
+h1. prefix_plugin_name
+
+p. A brief summary of what the plugin does.
+
+p. *Version:* current version number goes here.
+
+h2. Table of contents
+
+# &quot;List of features&quot;:#help-section01
+# &quot;Plugin requirements&quot;:#help-section02
+# &quot;Installation&quot;:#help-section03
+# &quot;Uninstallation&quot;:#help-section04
+# &quot;Tags&quot;:#help-section05
+# &quot;Exposed functions&quot;:#help-section06
+# &quot;Global variables&quot;:#help-section07
+# &quot;Plugin events&quot;:#help-section08
+# &quot;Examples&quot;:#help-section09
+# &quot;License&quot;:#help-section10
+# &quot;Author contact&quot;:#help-section11
+
+h2(#help-section01). List of features
+
+* Feature 1
+* Feature 2
+* Feature 3
+
+h2(#help-section02). Plugin requirements
+
+p. my_plugin_nameâ€™s minimum requirements:
+
+* Textpattern 4.x
+* Plugin dependency 1
+* Plugin dependency 2
+
+h2(#help-section03). Installation
+
+p. Any special installation instructions (when differs from standard installation procedure).
+
+h2(#help-section04). Uninstallation
+
+p. Any special uninstallation instructions (when differs from standard uninstallation procedure).
+
+h2(#help-section05). Tags
+
+h3. prefix_tag_name1
+
+p. Description of the plugin tag and how it is intended to be used.
+
+p. %attribute_name% %value_type%
+Description of the attribute usage.
+
+p. %attribute_name% %value_type%
+Description of the attribute usage.
+
+h3. prefix_tag_name2
+
+p. Description of the plugin tag and how it is intended to be used.
+
+p. %attribute_name% %value_type%
+Description of the attribute usage.
+
+p. %attribute_name% %value_type%
+Description of the attribute usage.
+
+h2(#help-section06). Exposed functions
+
+h3(tag). my_plugin_func
+
+p. This function will do foo or bar.
+
+p. %(atts-name)Return Value% %(atts-type)return_value_type%
+Description of the function return value.
+
+p. %arg_name% %arg_value_type%
+Argument description.
+
+h2(#help-section07). Global variables
+
+h3. $my_plugin_global
+
+p. This array is set during _blah_ and is false on failure.
+
+h2(#help-section08). Plugin events
+
+h3. my_plugin.event
+
+p. This event is called when blah happens.
+
+h2(#help-section09). Examples
+
+h3. Example 1
+
+p. A large example that puts it all together or examples to go with each tag (in which case it is probably better to include it with the tag above).
+
+bc. Example code
+
+h3. Example 2
+
+p. A large example that puts it all together or examples to go with each tag (in which case it is probably better to include it with the tag above).
+
+bc. Example code
+
+h2(#help-section10). Licence
+
+p. State any special licence information here.
+
+h2(#help-section11). Author contact
+
+p. Optional direct contact details for the plugin author.
+</pre>
+

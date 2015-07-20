@@ -1,0 +1,28 @@
+\n"mininav&#95;primary&#95;backoffice&#95;tabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_primary_backoffice_tabs
+
+*This is not an out-of-box admin-side tab.* The Extensions tab appears as a main-level admin-side tab when you add certain "plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins that make use of it.
+
+If it exists, it is displayed as a link on all pages _except_ the plugins page itself. This is so runaway plugins can be deactivated safely even if the rest of the site explodes due to a plugin bug.
+
+Following is a list of known plugins that will add the Extensions tab if it does not already exist. (This list is certainly not all-inclusive. Please add to it if you can.) *"adi&#95;notes":http://forum.textpattern.com/viewtopic.php?id=27957*
+ by "Adi":http://www.greatoceanmedia.com.au/ *"asy&#95;jpcache":http://forum.textpattern.com/viewtopic.php?id=8352*
+ by "Sencer":http://www.sencer.de/ *"bas&#95;lightbox":http://lab.samisdat.org/bas-lightbox*
+ by "Bastian Sackermann":http://samisdat.org/ *"glz&#95;custom&#95;fields":http://forum.textpattern.com/viewtopic.php?id=23996*
+ by "Gerhard Lazu":http://gerhardlazu.com/ *"ied&#95;plugin&#95;composer":http://textpattern.org/plugins/588/ied_plugin_composer*
+ by "Yura Linnyk":http://inspired.kiev.ua/ and adopted by "Stef Dawson":http://stefdawson.com/sw *"msd&#95;admin&#95;colorpicker":http://forum.textpattern.com/viewtopic.php?id=26742*
+ by "Matt Davis":http://photographdaddy.com/txp *"msd&#95;google&#95;map":http://forum.textpattern.com/viewtopic.php?id=30493*
+ by "Matt Davis":http://photographdaddy.com/txp *"rah&#95;change&#95;passwords":http://rahforum.biz/plugins/rah_change_passwords*
+ by "Jukka Svahn":http://rahforum.biz/ *"rah&#95;post&#95;versions":http://rahforum.biz/plugins/rah_post_versions*
+ by "Jukka Svahn":http://rahforum.biz/ *"rah&#95;tabtor":http://rahforum.biz/plugins/rah_tabtor*
+ by "Jukka Svahn":http://rahforum.biz/ *"rss&#95;admin&#95;db&#95;manager":http://www.wilshireone.com/textpattern-plugins/rss_admin_db_manager*
+ by "Wilshire One":http://www.wilshireone.com *"rss&#95;article&#95;edit":http://www.wilshireone.com/textpattern-plugins/rss_article_edit*
+ by "Wilshire One":http://www.wilshireone.com *"sed&#95;plugin&#95;help&#95;viewer":http://txp-plugins.netcarving.com/plugins/plugin-help-viewer*
+ by "Steve":http://txp-plugins.netcarving.com/plugins *"smd&#95;admin&#95;themes":http://forum.textpattern.com/viewtopic.php?id=30952*
+ by "Stef Dawson":http://stefdawson.com/sw *"smd&#95;bio":http://forum.textpattern.com/viewtopic.php?id=31496*
+ by "Stef Dawson":http://stefdawson.com/sw *"smd&#95;tags":http://forum.textpattern.com/viewtopic.php?id=28621*
+ by "Stef Dawson":http://stefdawson.com/sw *"smd&#95;where&#95;used":http://textpattern.org/plugins/984/smd_where_used*
+ by "Stef Dawson":http://stefdawson.com/sw *"tru&#95;tags":http://textpattern.org/plugins/584/tru_tags*
+ by "Nathan Arthur":http://www.rainskit.com/tag/textpattern/ *"upm&#95;image":http://textpattern.org/plugins/597/upm_image*
+ by "Mary Fredborg":http://utterplush.com/txp-plugins/ *"upm&#95;img&#95;popper":http://forum.textpattern.com/viewtopic.php?id=21459*
+ by "Mary Fredborg":http://utterplush.com/txp-plugins/
+

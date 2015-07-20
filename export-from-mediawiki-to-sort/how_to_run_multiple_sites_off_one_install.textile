@@ -1,0 +1,62 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+Please note: While the approach documented here does work, bear in mind that as of Textpattern 4.2.0 there is built-in support for running multiple sites from a single installation. Consult the README.txt file in the *sites* directory of your TXP install for more information.
+
+airweek2006 is a separate website for an airshow that my organisation runs annually. I wanted the airweek2006 website to run from the same installation files that my main site runs from (i.e. "www.example.com/textpattern/":http://www.example.com/textpattern/...), but still have its own sections, admin interface, users etc.
+
+The main reason for wanting this is so that I only have to update one set of files each time a new version of Txp comes out. I wanted the airweek site separate from the main one because the airshow site is only active for a part of the year and I prefer keeping its users and content completely separate from the main site.
+
+The following instructions assume youâ€™re familiar with installing Textpattern. Donâ€™t try this on a live site and be sure to read the notes at the bottom:
+
+h3(sectionedit1#the_process). The Process
+
+<ol>
+<li>Set up a full install of Textpattern in the airweek2006 directory. This will allow you to set up the tables required. You wonâ€™t be able to set up tables with the small copy of Txp that Iâ€™ve set up here.</li>
+<li>Once youâ€™ve run a full install then edit airweek2006/textpattern/config.php:</li>
+<li>change the txpath option to point to your main siteâ€™s Textpattern directory (e.g. /usr/www/example.com/textpattern instead of /usr/www/example.com/airweek2006).</li>
+<li>Now go and edit airweek2006/textpattern/index.php:</li>
+<li><p>Thereâ€™s a define() on Â± line 20 that says</p>
+bc(code). define("txpath", dirname(__FILE__));
+
+</li>
+<li><p>Change this to say:</p>
+bc(code). define("txpath", $txpcfg['txpath']);
+
+</li>
+<li>Move this define to Â± line 32 after the code that include()â€˜s config.php</li>
+<li>This will allow the Textpattern admin interface to work from your sub-site (so that it uses the files from the txpath directory configured in config.php).</li>
+<li>Now you can delete everything from airweek2006 except the following:
+<ul>
+<li>airweek2006/index.php</li>
+<li>airweek2006/textpattern/index.php</li>
+<li>airweek2006/textpattern/css.php</li>
+<li>airweek2006/textpattern/config.php</li>
+<li>airweek2006/textpattern/textpattern.css</li>
+<li>airweek2006/textpattern/textpattern,js</li>
+<li>airweek2006/textpattern/txp&#95;img/&#42;.&#42;</li>
+<li>airweek2006/files/&#42;.&#42; (if it exists).</li>
+</ul>
+</li>
+</ol>
+
+h3(sectionedit2#keep_this_in_mind). Keep this in mind
+
+* I only figured this out tonight and decided to document something for the world to comment on. Iâ€™m pretty excited about my findings
+* There might be negative effects on Textpattern that I havenâ€™t found. It might even have some security-related effects that could ruin your day.
+* It wonâ€™t work if youâ€™re using clean urls and youâ€™ve got two sections with the same name on your main and sub-sites (e.g. example.com/news and example.com/airweek2006/news). Having a copy of .htaccess in the airweek2006 directory might help but I havenâ€™t tried that out yet.
+
+h3(sectionedit3#additional_notes). Additional Notes
+
+* I would like to see the changes that I made to textpattern/index.php made a little more permanent by having it integrated into future releases of Txp but Iâ€™ll leave that for the developers to decide.
+* Eventually multiple instances of Txp from one install might not be such a problem. I quite like the idea of doing so but there might be good reasons why not to do so (I really canâ€™t think of any). Iâ€™d like to hear your thoughts.
+
+h3(sectionedit4#resources). Resources
+
+* Example: "$":http://www.eaa.org.za/ "$":http://www.eaa.org.za/airweek/2006
+
+h3(sectionedit5#credits). Credits
+
+* This Example has been provided by Glen Wilson
+

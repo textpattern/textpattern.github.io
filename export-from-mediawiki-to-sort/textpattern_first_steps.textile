@@ -1,0 +1,391 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+Tutorial by "Peter Moulding":http://txpq.com/.
+
+Some say Textpattern is a steep learning curve. Textpattern users often say they came to a point where something clicked and after that Textpattern became clear and simple. I hope the 10 tasks below will take you to the point where it clicks - and beyond.
+
+The tasks are designed for learning by doing. With practical experience of various parts of Textpattern, further instructions or theory should fall more easily into place. Please start from the beginning and work right through to the end step by step. If you miss a step, some future steps may not make sense. So take your time, be conscious of how an action causes an effect, and all will become clear.
+
+*BEFORE YOU BEGIN*
+
+You have downloaded and installed Textpattern, logged in and checked Diagnostics. Open your website in a separate tab so you have both your website and the Textpattern admin open and can easily switch between them.
+
+While you are viewing your website notice the defaults. You have First Post with date, some text, your name and a few other things.
+
+By default, when you login, you are in *Content &gt; Write*
+
+h4(#task_1_-_write_an_article). Task 1 - Write An Article
+
+# In the *Title field* at the top, write *Second Post*
+# In the *Body field* below it, write *Body Body*
+# In the *Excerpt field*, write *Excerpt Excerpt*
+# In *Category 1* on the right, select *Hope for the Future*
+# In *Category 2* on the right, select *Reciprocal Affection*
+# Click *_PUBLISH._* (Textpattern saves it to the database)
+# Refresh your home page and notice that Second Post title, the date, the body, your name and the categories are displayed, along with the other things that were there before.
+
+You now know how to publish an article. You will learn how to use other Write options later on.
+
+h4(#task_2_-_get_briefly_acquainted). Task 2 - Get Briefly Acquainted
+
+On your website home page:
+
+# Click the *Second Post title*. It takes you to the article's own page, also known as the archive page for the article. Notice commenting, the link to First Post and look at the URL. Click the *Back* button on your browser.
+# Click the *First Post title*. Look at the commenting section, the link to Second Post and the URL. Click the *Back* button.
+# Click on *Hope for the Future*. Notice the Category title and that both articles are listed because they both come under this Category. Look at the URL. Click the *Back* button.
+# Click on *Articles* (on the left). Notice the Section title and that both articles are listed because they both come under this Section. Look at the URL.
+# Click on *About* (on the left). Notice there is no section title and nothing is listed because there are not yet any articles in this section. Look at the URL. Click on the *site title* to return to the home page.
+# In the *Search* box, type in *body* and press enter. Notice the Search results title and results. Look at the URL.
+# Click on *RSS* and *Atom*. Notice the content of each feed and the URL. Click the *Back* button each time.
+# Click a *link* on the right. Press the *Back* button.
+# Feel free to click around in Sections, Categories and other internal links so you get to know what to expect.
+
+You now know a little about the Textpattern default settings and how to get around. You will learn how to change defaults and other settings later on.
+
+h4(#task_3_-_change_some_preferences). Task 3 - Change Some Preferences
+
+In your Textpattern admin:
+
+# Click *Go* (top right) and *Preferences*. You should now be in the *Basic Preferences* tab. In the *Publish* part:
+# Change *Site name* and *Site slogan* to your choice
+# Change *Permanent link mode* to */section/title* (NB: if your server does not support clean URLs you will have to use ?=messy)
+# Change the *Time* zone and *Date* formats to your choice.
+# *_SAVE_*
+# Click around your site to see the changes.
+
+You now know a bit more about Preferences, URLs and dates. You will learn more later on.
+
+h4(#task_4_-_set_defaults_for_testing). Task 4 - Set Defaults For Testing
+
+<ol>
+<li>Go to the *Pages* tab. Check that the top line reads: *You are editing page template* _default_
+<ul>
+<li>At the bottom, *copy* the page as *defaultpage*. Notice that it becomes listed on the right and becomes the page you are editing (read the top line again)</li>
+</ul>
+</li>
+<li>Go to the *Forms* tab. You will see the *default* form displayed.
+<ul>
+<li>*Copy* all the contents</li>
+<li>Click *Create new form* (on the right)</li>
+<li>*Paste* in the contents</li>
+<li>Name: *defaultform*</li>
+<li>Type: *article*</li>
+<li>*_SAVE NEW_*</li>
+<li>Notice defaultform is now listed on the right</li>
+</ul>
+</li>
+<li>Go to the *Style* tab. On the left it says: *You are editing style* _default_
+<ul>
+<li>At the bottom, *copy* the style as *defaultstyle*. Notice it becomes listed on the right and becomes the style you are editing.</li>
+</ul>
+</li>
+<li>Go to the *Sections* tab and *Default* (near the top)
+<ul>
+<li>*Uses page: defaultpage*</li>
+<li>*Uses style: defaultstyle*</li>
+<li>*_SAVE_*</li>
+</ul>
+</li>
+<li>Return to the *Pages* tab. Select *defaultpage*.
+<ul>
+<li><p>Find:</p>
+bc(code). <txp:article limit="5" />
+
+</li>
+<li><p>Change it to:</p>
+bc(code). <txp:article form="defaultform" limit="5" />
+
+</li>
+<li>*_SAVE_*</li>
+</ul>
+</li>
+</ol>
+
+You have created a new defaultform, defaultpage and defaultstyle. You have set defaultpage to use defaultform. You have set the default section to use defaultpage and defaultstyle. At the moment your website will look exactly the same (if it doesn't check you made all the changes correctly). But you are now free to use your new defaults anyway you like, whilst the Textpattern defaults stay intact for you to fall back on when you need them.
+
+h4(#task_5_-_styles_and_sections). Task 5 - Styles And Sections
+
+# Go to the *Style* tab and make sure you are editing style *defaultstyle*.
+#* Find: *body {* and *background-color: #fff;*
+#* Change *#fff* to *#ff6*
+#* *_SAVE_*
+# Refresh your *home page*. You will see it is now yellow.
+# Click *Second Post* so you can see its archive page. You will see it is still white.
+# Go to the *Sections* tab.
+#* Notice that the default uses style defaultstyle - hence the default page is yellow.
+#* Notice the articles section uses style default - hence it is white.
+# In the *articles* section, select *Uses style: defaultstyle*. *_SAVE._* Refresh your archive page and it is yellow.
+# In the *articles* section, select *Uses style: default*. *_SAVE._* Check Second Post is now white again.
+# In the *Sections* tab
+#* *Create* a new section called *test*
+#* In the *test* section, select *Uses style: defaultstyle*
+#* *_SAVE_*
+# Go to *Content &gt; Articles*
+#* Select *Second Post*
+#* Change the Section from *articles* to *test* (on the right)
+#* *_SAVE_*
+#* Click *View* (near the title) and you will see that Second Post now has a yellow background. Notice the URL now shows it using the test section (unless you are using messy URLs). Notice also that the test section now appears with the other sections on the left.
+#* Click the *Back* button to edit Second Post again
+#* Change the Section back to *articles*
+#* *_SAVE_*
+
+You can make several sections each using a different style. You can assign each article to any section. You may have news articles, product descriptions and business information all requiring different colours and layout, so you create a section, create a style for it and then assign articles accordingly.
+
+h4(#task_6_-_forms_and_pages). Task 6 - Forms And Pages
+
+<ol>
+<li>Go to the *Forms* tab and select *defaultform*.</li>
+<li><p>Just above where it says</p>
+bc(code). <txp:body / >
+
+
+<p>type *RHUBARB RHUBARB* and *_SAVE._*</p></li>
+<li>Look at your home page to see the changes. Look at the archives pages and you will see no change.</li>
+<li>Go to the *Pages* tab and select the *archive* page template
+<ul>
+<li><p>Find:</p>
+bc(code). <txp:article listform="article_listing" limit="5" />
+
+</li>
+<li>This txp tag dictates the main content. It means “If this page is a list, then use the form called article&#95;listing. Otherwise use the default article form.”</li>
+<li><p>Change it to:</p>
+bc(code). <txp:article form="defaultform" listform="article_listing" limit="5" />
+
+
+<p>(We just told it to use defaultform instead of the default)</p></li>
+<li>*_SAVE_*</li>
+<li>Look at the First Post and Second Post archives pages and you will now see rhubarb.</li>
+<li>Edit the archive page template again to remove *form=“defaultform”*</li>
+<li>*_SAVE_* and check the rhubarb has gone from the archives pages</li>
+</ul>
+</li>
+<li>Go to the *Forms* tab
+<ul>
+<li>*Create a new form*</li>
+<li>Write *CABBAGES* in the main field</li>
+<li>Name: *test*</li>
+<li>Type: *misc*</li>
+<li>*_SAVE NEW_*</li>
+</ul>
+</li>
+<li>In the *Forms* tab
+<ul>
+<li>Select *defaultform*</li>
+<li><p>Replace RHUBARB RHUBARB with</p>
+bc(code). <txp:output_form form="test" />
+
+</li>
+<li>*_SAVE_*</li>
+<li>Check your home page to see the cabbages</li>
+</ul>
+</li>
+<li>In *defaultform*
+<ul>
+<li><p>Find:</p>
+bc(code). <txp:output_form form="test" />
+
+</li>
+<li><p>Replace with:</p>
+bc(code). <txp:excerpt />
+
+</li>
+<li>*_SAVE_*</li>
+<li>Check your home page to see that the Second Post excerpt now appears. (First Post had a blank Excerpt field, otherwise it would show the excerpt too).</li>
+</ul>
+</li>
+</ol>
+
+You altered (changed the attributes of) txp tags within the defaultpage and archive page templates so they would use your form instead of the default. You altered your form to firstly use plain text, then a form within a form and finally a txp tag. You can use forms, text, txp tags and html quite flexibly in txp forms and pages. You can position these elements as you like to get exactly the results you require.
+
+h4(#task_7_-_consolidating_forms_pages_sections_and_style). Task 7 - Consolidating Forms, Pages, Sections and Style
+
+People say Textpattern is a steep learning curve, especially understanding forms, pages, sections and style and how they relate to each other. To improve our understanding, let's think about what we would do if we wanted a series of pages each of which only has one quotation or joke on it and nothing else, except for the page header and left sidebar. How do we go about this? Understand this rather long task and you've done the hard part!
+
+<ol>
+<li>Go to the *Pages* tab, open the *archive* page template and copy it as *fun*.</li>
+<li>Check you are *editing page template* _fun_, scroll down to where it says &lt;_yamdwe&#95;nowiki&gt;0&lt;/_yamdwe&#95;nowiki&gt; and delete it and everything up to where it says &lt;_yamdwe&#95;nowiki&gt;1&lt;/_yamdwe&#95;nowiki&gt; *_SAVE._*</li>
+<li>Go to the *Sections* tab
+<ul>
+<li>*Create* a new section called *fun*</li>
+<li>Section name: fun</li>
+<li>Section title: Daily Fun</li>
+<li>Uses page: fun</li>
+<li>Uses style: defaultstyle</li>
+<li>Selected by default? No</li>
+<li>On front page? No</li>
+<li>Syndicate? Yes</li>
+<li>Include in site search? Yes</li>
+<li>*_SAVE_*</li>
+</ul>
+</li>
+<li>Go to the *Write* tab
+<ul>
+<li>In the title bar write *When I Die*</li>
+<li>In the body write *When I die, I want to go peacefully like my Grandfather did, in his sleep  -  not screaming, like the passengers in his car*</li>
+<li>Select Section *fun*</li>
+<li>*_PUBLISH_*</li>
+</ul>
+</li>
+<li>Click *View* (near the title) to see how it looks. It is OK except it has the title, date, author and a commenting message that we do not want. Click the *Back* button</li>
+<li><p>Go to the *Pages* tab, open the *fun* page template and scroll down to the *center* part. You will see</p>
+bc(code). <txp:article listform="article_listing" limit="5" />
+
+
+<p>This txp tag dictates the main content. It means “If this page is a list, then use the form called article&#95;listing. Otherwise use the default article form.” The default article form includes the page title, author etc so we will create a custom form and use that instead.</p></li>
+<li>Go to the *Forms* tab
+<ul>
+<li>*Copy* the contents of the *default* form</li>
+<li>*Create a new form*</li>
+<li>*Paste* the contents into it</li>
+<li>Name: *funcontent*</li>
+<li>Type: *article*</li>
+<li>*_SAVE NEW_*</li>
+<li><p>In funcontent *delete everything except*:</p>
+bc(code). 
+
+</li>
+</ul>
+</li>
+</ol>
+
+&lt;txp:body /&gt; (We'll leave the div for styling.)
+
+* *_SAVE._*
+
+# Go to the *Pages* tab, open the *fun* page template
+
+<ul>
+<li><p>Find:</p>
+bc(code). <txp:article listform="article_listing" limit="5" />
+
+</li>
+<li><p>Change it to:</p>
+bc(code). <txp:article form="funcontent" listform="article_listing" limit="5" />
+
+</li>
+<li>*_SAVE_*</li>
+</ul>
+
+# If we navigate to the article we see that the commenting message is still there. This is because in *Preferences* _Automatically append comments to articles?_ is set to Yes. So set it to *No* and *_SAVE._* (We probably want commenting in other sections but we can set that manually later on.)
+# Go to the *fun page template* and (shortly after the &lt;txp:article /&gt; tag)
+
+<ul>
+<li><p>*Delete*</p>
+bc(code). 
+
+</li>
+</ul>
+
+&lt;img src=“&lt;txp:site&#95;url /&gt;images/1.gif” width=“400” height=“1” alt=“ -- ” title=“” /&gt; (This removes the divider line)
+
+<ul>
+<li><p>*Delete*</p>
+bc(code). 
+
+</li>
+</ul>
+
+&lt;txp:link&#95;to&#95;prev&gt;...&lt;/txp:link&#95;to&#95;next&gt; (If there was more than one article in the fun section this would create a link there, so let's delete it)
+
+* *_SAVE_*
+
+The article is now how we want it. Click *Daily Fun* and we are taken to a list of articles under the section title of Daily Fun. Look at the URL and we see the section name is used rather than the section title (unless you are using messy URLs). Go to your home page and refresh it. Notice that our latest article is not listed. This is because in the fun section we specified *On front page: No*. Change it to *Yes* and check out how it looks on the front page. Can you figure out why the fun article looks different on the home page than it does in its own archive page? If you can, I think you have now got the hang of forms, pages and sections.
+
+h4(#task_8_-_images_in_textpattern). Task 8 - Images in Textpattern
+
+<ol>
+<li>Go to the *Images* tab, choose a small image and *Upload* You will see it appear at the top of the page
+<ul>
+<li>Write some alternative text for it</li>
+<li>*_SAVE_*</li>
+<li>You will see it listed with ID and other info and options</li>
+</ul>
+</li>
+<li>Go to the *Pages* tab and select *fun*
+<ul>
+<li><p>Find:</p>
+bc(code). div id="sidebar-1">
+
+
+<p>and position your cursor just after it</p></li>
+<li><p>Write:</p>
+bc(code). <txp:if_individual_article><txp:article_image /></txp:if_individual_article>
+
+</li>
+<li>*_SAVE_*</li>
+</ul>
+</li>
+<li>Go to *Articles* and select *When I Die*
+<ul>
+<li>Select *Advanced Options* (on the left)</li>
+<li>In *Article image* write *2*</li>
+<li>*_SAVE_*</li>
+</ul>
+</li>
+<li>On your web page click *Daily Fun*</li>
+<li>Click on *When I Die*</li>
+<li>You should now see the image you uploaded (which has ID=2) at the top of the left sidebar.</li>
+<li>Go to *Articles* and select *When I Die*
+<ul>
+<li><p>Write</p>
+bc(code). <txp:image id="2" />
+
+
+<p>somewhere in the body of the article</p></li>
+<li>*_SAVE_*</li>
+<li>*View* the page and you should now see the image in the article as well</li>
+</ul>
+</li>
+</ol>
+
+Those are two ways of inserting images. If you use a lot of images on your site, there are many plugins to make image handling easy.
+
+h4(#task_9_-_installing_a_plugin). Task 9 - Installing A Plugin
+
+# Go to "$":http://textpattern.org/plugins/332/upm_savenew (Textpattern Resources is where you will find most plugins)
+# Click *Download File* (on the left) and *Copy* all the text and code that you see
+# Go to the *Plugins* tab and *Paste* it into the *Install plugin* field.
+# Click *_Upload_*. You will see the Plugin Preview and Help and at the bottom:
+# Click *_Install_*
+# Look at the plugin info and note that it is not yet active. Click *No* and it will turn to Yes and become active.
+
+The plugin is installed. View *Help* to see if there is any additional info you may need. In this case there are no more steps to take. Some plugins give you many options you can set manually, all found in the Help. Go to the editing page of any article and you will now see a Save New button. This gives you the ability to, for example, create a page formatted just the way you want it and then to save it under a different name so you can use it as a template for other articles. Go to the Forms tab and you see the Save New button there too
+
+h4(#task_10_-_categories_are_not_sections). Task 10 - Categories Are Not Sections
+
+<ol>
+<li>Go to the *Categories* tab and *create* a new Article Category called *jokes*</li>
+<li>Go to the *Categories* tab and *create* a new Article Category called *quotes*</li>
+<li>Go to the *Articles* tab and assign two categories to all articles</li>
+<li>On your home page click a category to see a list of articles in that category. Repeat with all the categories.</li>
+<li>Go to the *Sections* tab and *fun*. Change *On front page* to *No* and *_SAVE_*</li>
+<li>On your home page, fun section articles are no longer listed. Clicking a category also only lists articles whose section is set to use the front page. So how can we click a category to see articles from the fun section too?</li>
+<li>Go to the *Pages* tab and the *fun* page template
+<ul>
+<li><p>Find:</p>
+bc(code). div id="sidebar-1">
+
+</li>
+<li>You will see code for section&#95;list, search and feed</li>
+<li><p>Put your cursor just after</p>
+bc(code). label="Atom" />
+
+</li>
+<li>Click *Site Navigation* and then *Category List* (on the left). A *Tag Builder* for Category List opens.</li>
+<li>Leave all the setting as they are (default) except *Link to current section? Yes*</li>
+<li>*Build Tag*</li>
+<li>*Copy and paste* the results into the left sidebar.</li>
+<li>*_SAVE_*</li>
+</ul>
+</li>
+</ol>
+
+On your web page, click the Daily Fun link and you will see the categories listed on the left. Click each category to notice that only articles in the fun section are listed. Take note of the URLs. They all show the fun section and ?=. By linking to the current section, we have overridden the default. By default, category listings use the front page and the URL looks something like: mysite/category/jokes/ (unless you are using messy URLs). This may lead you to think that there is a section called category. This is not so, however. It is just the way Textpattern writes the URL.
+
+Note well that a section is compulsory for all articles and is the primary way of organising content. Categories are optional, independent of sections and are an additional way of organising content. Although only two categories are by default allowed for each article, there are plugins which allow unlimited categories and can also create category clouds just like the tag clouds you see on so many blogs. The word Tags has a special meaning within Textpattern, referring to code like
+
+bc(code). txp:article
+
+
+. If you are familiar with tag clouds just remember they are the same as Textpattern's category clouds.
+

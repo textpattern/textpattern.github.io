@@ -1,0 +1,43 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_thumbnail />
+
+
+The "if&#95;thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_thumbnail tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_thumbnail>
+...conditional statement...
+</txp:if_thumbnail>
+
+
+The tag will execute the contained statements if the current image (from an "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images) has a thumbnail assigned to it. Must always be used in an image context.
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1only_show_a_thumbnail_if_one_exists). Example 1: Only show a thumbnail if one exists
+
+bc(code). <txp:images author="neo" wraptag="div" class="author_gallery">
+   <txp:if_thumbnail>
+      <div><txp:thumbnail /></div>
+   <txp:else />
+      <div>No thumbnail</div>
+   </txp:if_thumbnail>
+   <txp:image_info />
+</txp:images>
+
+
+*What this does...*
+ For each image uploaded by *neo*, display its thumbnail if it has one, or the text “No thumbnail” if it doesn't. Add the caption beneath that using "image&#95;info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info.
+
+Other tags used: "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images, "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else, "image&#95;info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info, "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_430). Version 4.3.0
+
+* tag introduced
+

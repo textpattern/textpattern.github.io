@@ -1,0 +1,289 @@
+\n"mininav&#95;content&#95;index":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-write_fig1.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-write_fig1.gif
+
+*Write* is the default panel opened when you log into Textpattern's admin-side (see Figure 1). This panel reveals the various features for managing articles on your Web site, which includes creating new articles, editing existing articles, assigning (or reassigning) articles to sections and categories, setting the time and date of articles, and various other abilities that are covered in the following description.
+
+h3(sectionedit1#panel_layout). Panel Layout
+
+The contents of the _Write_ panel are arranged in three columns: left, middle and right column (see Figure 2). The items in each region are discussed in in the following sections, beginning with the middle column, which is the _main editing area_.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-1-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-1-en.png
+
+h3(sectionedit2#write_panel_middle_column_-_main_editing_area). Write Panel Middle Column - Main Editing Area
+
+The middle column of the Write panel is where the base creating, drafting and editing of your article takes place. There are four components of this region (see Figure 2 in the middle column) - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below. (It should be noted that you must have content in at least one of the article content fields - _title_, _body_, or _excerpt_ - before you can save an article draft, but you do not need to have all fields filled.)
+
+h4(#title). Title
+
+This field is simply where you type the _title_ (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e., HTML or Textile, formatting will be added by an article form (see "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms). The Textpattern tag that is used to output the title of articles is
+
+bc(code). <txp:title />
+
+
+(see "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title).
+
+h4(#body). Body
+
+This large field is where the article is actually written (or pasted, if you prefer drafting your articles in another text editor). The _Article View_ (see below) works in combination with this field. The primary article tag that is used to output the body of articles is
+
+bc(code). <txp:body />
+
+
+(see "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article).
+
+h4(#excerpt). Excerpt
+
+This field is where you would add an excerpt, which is a brief bit of text about the article itself. This field is not required, but such a decision would be founded on how you ultimately wanted to establish your Web site's presentation and architecture. For example, a typical use of an excerpt is for article lists on a home page, where only a title and excerpt for each article is shown in the list; the excerpt provides a little indication about what the full article is about, and the title acts as a link to the full article itself, but when you go to the full article the excerpt is no longer seen.
+
+In Textpattern, the excerpt is not part of the article body but rather is a discrete content item managed separately; however, like the body, you can use Textile (or HTML) to format text in the excerpt. The tag used to output the article excerpt is
+
+bc(code). <txp:excerpt />
+
+
+(see "excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=excerpt).
+
+h4(#article_view). Article View
+
+See (1). At the right of the body field are three vertical tabs labeled “TEXT,” “HTML,” and “PREVIEW;” these provide three different views of your article-in-progress, as described below:
+
+* *TEXT*: As indicated by the white background of the TEXT tab in Figure 2, this tab is active by default and is the one you actually draft your article in. The TEXT view works just like a regular text editor (not a word processor). To give your text formatting, you will have to know either Hypertext Markup Language (HTML), or use "Textile":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#textile. Textile is a remarkably simple text editing syntax that allows you to format text for the Web without having to know HTML. (More about using Textile is provided in the section _Textile Help_ below).
+* *HTML*: This tab, when clicked, will show you what your article looks like in HTML format, assuming you have used HTML or Textile to do any formatting. If you have, you will see the resulting HTML syntax incorporated in your text. You cannot do any editing in this view, it is for previewing your HTML work-in-progress only.
+* *PREVIEW*: This tab, when clicked, will show you what your text will look like (whether you used HTML or Textile) once it is live on the Web. You cannot do any editing in this view, it is for previewing your work-in-progress only.
+
+As you write or edit an article, you may choose to do so using Textile, or you may want to add a single image to the article before posting. The _options_ in the left column provide help in these and other areas, so we will go over those next.
+
+h3(sectionedit3#write_panel_left_column_-_options). Write Panel Left Column - Options
+
+The left column of the Write panel provides _options_ for editing as well as content (see Fig. 3): “Textile Help” (2), “Advanced Options” (3), and “Recent Articles” (4); each covered below. All three links _toggle_ (show and hide) additional options, when you click them.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-2-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-2-en.png
+
+h4(#textile_help). Textile Help
+
+See (2). Since Textile is built into Textpattern, and since it is so useful for drafting articles without having to know any HTML at all, a link is provided here to assist article authors with some quick-reference to basic Textile. “Textile help” contains a short reference list of common Textile syntax (see Figure 4).
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-textile.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-textile.png
+
+Each Textile item shown is followed by a little brown question mark - “?” - symbolizing a help reference for that item (see Figure 4, 2a); when clicked, a pop-up window will appear with complete details about how to use the particular Textile syntax and what it will produce. For example, see Figure 5 for what appears when the help is clicked for the “header: *hn*.” item.
+
+At the bottom of both the expanded Textile Help list (Figure 4, 2b) and the pop-up help (Figure 5) there is another link called “_More_” and “_More information_,” respectively, which leads to the Textile reference site ("txstyle.org":http://textpattern.com/textile-sandbox) where complete (and advanced) information about Textile formatting can be found. Note also at the very bottom of the pop-up help window (Figure 5) there is a search feature for searching all information in the entire built-in Textpattern help.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-write_fig6.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-write_fig6.gif
+
+h4(#advanced_options). Advanced Options
+
+See (3). The second toggle-link in the left column - _Advanced Options_ - contains a number of extended options for the particular article being edited (see Figure 6). They are described in detail here:
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-5-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-5-en.png
+
+The advanced options column remembers its open/close state across sessions via cookie.
+
+h5(#article_and_excerpt_markup). Article and Excerpt Markup
+
+See (3 a+b). There are two options regarding Textile-markup: _Article Markup_ (for the _body_) and _Excerpt Markup_ (for the excerpt). By default _full_ Textile-markup is turned on by _Use Textile_. You can turn off _all_ markup by choosing “Leave text untouched”. If you want a minimum of comfort you can choose _Convert linebreaks_ - single linebreaks will be converted to linebreaks and double linebreaks will get paragraphs.
+
+h5(#override_form). Override Form
+
+See (3 c). The option “Override Form” offers the possibility that single articles may use a different _Form_ than the overall form specified. Let's look at an example for a possible use of this.
+
+In your blog, you normally publish articles which are pure text. So your default form contains only the tags for title, body etc. On every first day of the month, however, you publish a photo of your garden. For this, you need the "article&#95;image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image tag in your form. So you create a form called “garden&#95;image” which, among other tags, contains "article&#95;image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image. Whenever you want to publish a photo along with your text, you choose “Override form” and then “garden&#95;image” from the dropdown list.
+
+This way, just this article will use the form “garden&#95;image” for being displayed whereas all other articles will continue to use the default form.
+
+h5(#custom_fields). Custom Fields
+
+Custom fields are "defined in Advanced preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#custom_fields, which then makes them available for use here in the left column of the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever tag constructs you create using the "custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field (and possibly the "if&#95;custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_custom_field) tag(s).
+
+h5(#keywords). Keywords
+
+See (3 e). The next option, _Keywords_, allows you to specify a comma-separated list of words that relate to your article. This list might be used to generate a list of keywords for search engines (using the "meta&#95;keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag). You may also use keywords to help locate articles later by essentially 'tagging' your articles with related words so that - when searching within Textpattern - you can more easily find what you are looking for. To add keywords, simply type them into the text field provided and separate them with a comma.
+
+h5(#article_image). Article Image
+
+See (3 f). The _Article image_ option enables associating one or more images with an article, as opposed to entering the image into the article itself, and is used in conjunction with "article&#95;image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image. This allows images to appear in the same place across many articles, yet still be easily changed later.
+
+= What Can Be Done With This? =
+
+This feature could be used to power:
+
+* A photoblog, where a photo or gallery of shots is associated with an article, which might contain details about where the images were taken, or what kind of equipment was used to take it.
+* A portfolio, where an illustration or a screenshot of a website is associated with an article, which contains details about the project or the client involved.
+* A news site, where each article has, optionally, one main image that is always placed at the top of the article, and maybe other images used throughout the text (you can use the _offset_ attribute of the "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images tag to skip images you have already displayed).
+
+= How To Use It =
+
+There are two ways to assign an image to an article:
+
+<ul>
+<li>by ID (as it appears in the "Images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel panel; this only works for images managed through the Textpattern *Images* tab)</li>
+<li><p>by absolute url to the image, such as</p>
+bc(code). /images/imagefile.png
+
+</li>
+</ul>
+
+Once the image is associated with an article, "article&#95;image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image is used to display it by placing this tag within the article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#form being used.
+
+h5(#url-only_title). URL-only Title
+
+See (3 g). The last advanced option, _URL-only title_ (“URL” meaning _Uniform Resource Locator_), is a very handy feature that allows you to modify the "Permalink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#permalink URL for the article as it would appear, for example, in the the address bar of a Web browser if you were using Clean URLs. This is particularly useful if the title of your article uses non-ascii characters, such as what might be involved with certain languages.
+
+In addition to modifying the title as it appears in the URL, this will also be the title used in the pop-up dialogue box that appears when you hover over the article title on a Web page (so long as it is displayed as a link). If you leave this field blank, the URL title will be generated from the actual article title, which is recommended for URL health reasons.
+
+For interdependencies between article status and URL-only title read the grey box "here":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write#pending.
+
+h4(#recent_articles). Recent Articles
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-6-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-6-en.png
+
+See (4). The last option is _Recent Articles_, and there's not much to say about this option other than it toggles a list of titles for the last ten _most recently_ *modified* articles (new or edited). This makes it easier to move between articles you might want to work on without actually having to jump between the _write_ tab and the _articles_ tab (see "articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles tab).
+
+h3(sectionedit4#write_panel_right_column_-_publishing_controls). Write Panel Right Column - Publishing Controls
+
+Note: Especially if you like to save your work from time to time while not yet finished, you should take care of the article's *status*: By default it is “Live” - so using “Save” (or “Publish”) in an unfinished state without altering its status to _Draft_ (recommended) or _Hidden_ will make an article _public_ before its time. Pay attention!
+
+When you are done with writing or editing an article, particularly if it's a new article, you will want to make sure you have the various *controls* on the right side of the write panel configured appropriately. These regard *publishing* an article (or keep it unpublished) in various ways. They come in two portions: Controls you always need statically at the top (Figure 8) and a portion of optional controls which you can toggle using the “More”-Link (Figure 9).
+
+h4(#panel_modenew_or_saved_posted_article). Panel Mode: New or Saved/Posted Article
+
+There are two different states for the right column _appearance_ depending on whether the article is _new_ (see Fig. 8 and 9) or already has been _saved_ before (see Fig. 10 near bottom). The settings themselves are much the same, so they will be explained as they appear for a new article, and differences pointed out in brackets (saved:_alternate_). Some additional elements we'll point out in “Write navigation” and “'Publish' or 'Save' Button”.
+
+There are essentially five different publishing controls to address (see Figures 8 and 9): Status, Sort and Display, Comments, Timestamp and Expires.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-3-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-3-en.png
+
+h4(#status). Status
+
+Public (Published) or Private (Not Published): The first and most important publishing control is the article _status_; a series of five radio button options for indicating the status of your article (Figure 8, item 5). If you select _draft_, _hidden_ or _pending_, your article will not be visible online, but if you select _live_ or _sticky_ it will be visible. The specific function of each status mode is described in following sections.
+
+Status assignment depends on the _Privileges_ of a user. Depending on your site's publishing objectives, or number of contributors, not every user may have the same privileges, as set in the "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users panel. If multiple contributors support a site and different roles are set, it may be that some users will only be able to choose a subset of these status modes.
+
+h5(#draft). Draft
+
+The _Draft_ status means pretty much what it implies: your article is not finished, it is a draft. Select this mode if you are starting an article (or revising an existing article) but you do not expect to finish it in one sitting. By selectng draft your article will be saved to the database, but it will not be made live to the world. You can come back anytime to work on the draft article, and change the status when you are ready.
+
+h5(#hidden). Hidden
+
+The _Hidden_ status might seem a bit odd, but it does have a purpose - think of it as a gaff hook to pull a bad actor off stage; in this case a “bad” (of course it needn't be “bad”) article offline. In Textpattern, the Hidden status is a way to pull a live article from being viewable to the world without deleting it so that it might be revamped (or held in limbo) for an *undetermined* amount of time (or until a decision is made as to whether or not is should just be deleted). While _Draft_ is used as a document status for _revision control_ and _publishing workflow_, _Hidden_ is merely a quick way to pull an article out of circulation. Note: If you have a _determined_ time period for an article to be public, it might be better to set it “Live” and use _Timestamp_ and _Expires_ as needed.
+
+h5(#pending). Pending
+
+The status of _Pending_ is primarily intended for _versioning activities_ - for example where multiple contributors are working on the same article, or where someone can finish an article, but where the article can _only be published_ by an authorized user with a particular user role. “Pending” is the final Status that can be assigned by “Freelancer” and “Designer” - it indicates, that an authorized user may start reviewing, editing and publishing it.
+
+As long as the article is in one of Draft, Hidden, or Pending mode, changes made to its title are assigned to its URL-only title. If you, however, gave the article intentionally a URL-only title thats different from the article's title, this field remains untouched.
+
+h5(#live). Live
+
+A _live_ article status means that when you click the “Publish” button (all new articles will use a button that reads “Publish”, after that, the button will read “Save”) the article will be posted for the world to see, so you generally want your article in question to be pretty much done if you select this mode. (This status and the next one, _sticky_, are the only two publicly-viewable modes.) However, you can always unpublish an article that has been made live by coming back to the _write_ panel and selecting the _Hidden_ status above (or deleting it altogether).
+
+For those privileges who have the rights to assign _Live_, this button will be selected by default whenever you start a new article. “Freelancer” and “Designer” aren't privileged to assign “Live”. Their articles have to be published by higher privileges. Once published they cannot modify even own articles any longer.
+
+h5(#sticky). Sticky
+
+A _sticky_ article is also considered 'live'; however, it won't show up with your other live articles in normal article flow (such as those output with
+
+bc(code). <txp:article />
+
+
+), nor will it appear in any article output lists you might have. The sole purpose of making an article sticky is to give it the status (or rather the appearance) of being static on a page. The sticky status is intended for things like “about” pages, articles that are pinned to the top of a page, or snippets of text that are displayed on pages outside the regular flow of articles.
+
+Same privilege restrictions apply for “Freelancer” and “Designer” as in _Live_.
+
+To implement a sticky article you need to do two things:
+
+# Write the article you want to be sticky.
+# Create a code snippet for the sticky output and insert it in the Page template you want the sticky article to appear.
+
+A code snippet might be something like this (though certainly not the only structure):
+
+<pre class="code">
+&lt;txp:if_article_list&gt;
+   &lt;!-- display the sticky article --&gt;
+   &lt;txp:article form=&quot;myshortform&quot; status=&quot;sticky&quot; /&gt;
+&lt;/txp:if_article_list&gt;
+
+&lt;!-- now the regular article list --&gt; 
+&lt;txp:article limit=5 /&gt;
+</pre>
+
+Generally speaking, what the snippet of code above is saying is...'if an article list, display the sticky article using the form called “myshortform” - then underneath the sticky article, output regular article flow but only show the last five articles.'
+
+h4(#sort_and_display). Sort and Display
+
+h5(#category). Category
+
+Assign Categories See (6). This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an “edit” link. Assigning categories of course only works if _there is_ at least one article category in the "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories panel (there are three sample ones in a default install). The “edit” link will open the Categories panel, where you can create or edit categories. The drop-down menus will both list _all_ categories by their _title_. This basically allows you to put an article in up to two different categories, which you can then manipulate later according to your planned site architecture and content presentation (such level of discussion is out of scope here). (For saved articles this control will show existing category assignments.)
+
+h5(#section). Section
+
+Section Assignment See (6). In Textpattern each article must be assigned to a _Section_ (see "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections). This control provides a drop-down menu to select the Section that you want. If you need to create or modify a section, you can get to the "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections panel using the “edit” link. For a new article the _default section_ is automatically preselected. You can override this assignment by selecting another Section of your choosing. (For saved articles the assigned section will be selected and displayed in the drop-down menu.)
+
+There are two Sections provided in a default install of Textpattern: “article” (which here is the “default section” mentioned above, see Figure 9, number 3; it is used for Textpattern's base article flow), and “about”. These sections are simply provided because these are often desired in Web sites and the folks at Textpattern are saving you a small step by creating them for you; you can use them (though you may have to modify their settings depending on what you want) or delete them, it is up to you.
+
+Sections basically control in what area of your Web site your article will be displayed. You can use Sections in combination with Categories to create very diverse content management strategies, giving your Web site visitors the impression of a structured, hierarchical Web site architecture. More description of Sections is out of scope here, but review later documentation chapters for more insight.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-4-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-4-en.png
+
+h4(#more). More
+
+Additional Controls Toggle See (7). There are more settings, which will be opened with the “More”-Link (7). You can toggle them by clicking on “More”.
+
+h4(#comments). Comments
+
+*Important note:* The Comments control on the write panel is actually a second-level setting for managing comments at _per article_ level; you should have already configured your settings for first-level (site-level) comment management, which is handled in the "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences panel at “Publish” and “Comments”. There you will find different Comments settings that need your consideration about how to handle comments for all articles in your site by default. If _Publish_ “Accept comments” is “No”, no Comments control will appear in the Write panel. Two of the settings - “On by default?” and “Default invite” - will determine the defaults in the Comments control at article level. Here, as described below, you can adjust the behavior as you desire for a particular article.
+
+_Comments_ "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:pointer-comments.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:pointer-comments.png controls two things: With a pair of on/off radio buttons first you either accept or deny comments for the given article. Second is an “Invitation” field that allows you to customize the text for the link that users will see if comments are “on”.
+
+The comment link itself will lead to the location in your site where a visitor can actually add a comment to your article. By default the link text is “Leave Comment”, but other possibilities might include: “Let's hear it!”, “Speak Up”, “Respond”, “Got something to say?”, etc. - whatever you want. If you choose to have a single invitation for use with all of your articles then it is easiest to just set that value in your site-level _Comments_ settings in the Preferences panel.
+
+h4(#timestamp). Timestamp
+
+Time Management See (9). This part might be considered two _different_ functions: Time*stamp* and Time*control*. They are both managed (and discussed) here.
+
+By default, at the moment of _opening the Write panel_ Textpattern adds the current date and time to the text boxes provided, thus marking the beginning of work. Unless you specifically indicate a different date and time this time will be saved when publishing the article, thus documenting the beginning of your work. If you rather want the current time _when finally publishing_ (or re-publishing) the article (“Live” and public), then you should mark the check box “*Set timestamp to now*” (saved: “Reset time to now”) before you click “Publish” or “Save” in order to set the article public. This option will always establish the date and time at the moment you click the “Publish” or “Save” button as the article's “publish”-timestamp, no matter what status you give it.
+
+To change your article's date and time value to _something other than the current time_, leave the aforementioned box unchecked and type in the date and time you want in the “*or publish at*” (saved: “Published at”) text boxes provided. If the time is in the future and the Status is “Live”, the article will automatically be published at the given time.
+
+h5(#documentary_or_historical_aspect_-_time_of_origin). Documentary or Historical Aspect - Time of Origin
+
+If you are interested in documenting the time when an article has been originally published (whether by its true creating time or by an arbitrary time of first publishing), you shouldn't update the timestamp to “now” when modifying. The timestamp defines the order of articles when an article list is created by publishing time - a change thus will reflect in the sequence of articles.
+
+If you nevertheless want to indicate a “last modified” date, you can use "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified in your article forms.
+
+If you need the timestamp for publishing schedules apart from marking an origin, you need to indicate the origin otherwise: If you do _not_ modify after your “origin” date, you could use "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified as an indicator. Else you could provide a custom field (e.g. “first&#95;published”) for that task.
+
+h4(#expires). Expires
+
+Advanced Time Management See (10). In the same way you can set a deliberate publishing date/time for an article, you can also set a time, when it will expire and thus vanish (or unpublish) from particular page or the whole website - depending on your site's setup.
+
+Note: Using expire-preferences and a set of expire-tags you can achieve a sophisticated way of publishing and removing articles though at the same time keeping them active for permanent links or an archive.
+
+h4(#write_panel_navigation). Write Panel Navigation
+
+As described earlier, the right column changes _appearance_ a little bit when you work on articles you have already saved (Figure 10). Different labels have been marked above. There are a few additions described below.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-8-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-8-en.png
+
+On the right side of the _title_ there is a new link “View”. It will open the public-side view of the current article in the same browser window.
+
+See (11 a). At the top of the right column there is a new link “Create new”. It will abandon all unsaved edits of the current article and open a new empty Write panel.
+
+See (11 b). Two navigation buttons - *previous* and *next* (when applicable) - let you navigate from one article (in the article catalogue) to another without having to leave the write panel. (Another option is to select articles from under the _Recent Articles_ link on the right side of the panel, as already discussed in an earlier section.) The navigation buttons will rotate through your articles catalogue from the reference point of the article you happen to be viewing at the time. When you click the previous button you will move to the article that is one above the one you are at in the catalogue. When you click the next button you will move down one article in your catalogue.
+
+h4(#publish_or_save_button). &quot;Publish&quot; or &quot;Save&quot; Button
+
+See (11 and 11 e). The last thing to be aware of has to do with the button that publishes/saves your article and settings. Basically, there are two button labels you will see when working in the write panel; “Publish” (new article state) and “Save” (existing article state).
+
+When drafting a new article, the button will read as _Publish_. This might be a bit confusing because the word _publish_ would suggest your article is going directly live to the world when you click this button; however, that will only be true if you set the article's status to be either _Live_ or _Sticky_, as already discussed earlier. If this was a new article, and you changed your status to draft (for example), then this button would still read as “Publish” (even though you were just saving a draft), and not go live to the world. Basically, the _Publish_ label is the default label.
+
+Once you publish an article for the first time, no matter what the status (_Draft_, _Live_, ect.), then the next time you come back to edit your article in the write panel, the button will change to read as “Save,” as it does in Figure 10 (e). The _Save_ button will behave exactly the same as the _Publish_ button, despite whatever article status you happen to want to select (if not _Live_).
+
+When considering this button situation, it probably would make more sense to just have a “Save” button in all cases, but that is not how it currently works. *At least* the “Publish”-state before you “save” your work for the first time - probably when still unfinished - could beware you of inadvertently publishing rough work: When the button reads “Publish” better look twice if the Status is correct and really should be “Live”.
+
+h3(sectionedit5#messages). Messages
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-7-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-7-en.png
+
+See (12). When publishing or saving an article, Textpattern gives a feedback in the _message area_ top left beneath “Textpattern” (see Figure 11). When an article will be public (live or sticky), message reads “Article posted.” - when another Status (Draft, Hidden, Pending) is active, message is “Article saved as _status mode_.”. Sometimes there will be an additional info and need to modify something - most likely dealing with an identical URL, e.g. “Article posted. The same URL-only title is used by 2 different articles.”.
+

@@ -1,0 +1,54 @@
+\n
+
+h4(#site_admin_subtab). Site Admin Subtab
+
+Information controled on the site admin subtab is pretty straightforward. This page permits a user to change his or her password and e-mail address. As an administrator, the user can additionally create new user accounts and change the account type.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:site_admin.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:site_admin.png
+
+The account types are: *Publisher*
+
+
+* can create, edit or delete any article, link or comment
+* can change article status
+* can edit site preferences
+* has access to all site design areas
+* can edit sections and categories
+* can add and remove authors
+* can grant and restrict privileges
+
+*Managing Editor*
+
+
+* can edit and delete any article, link or comment
+* can change article status from Pending to Live
+* can edit site preferences
+* has access to all site design areas
+* can edit sections and categories
+
+*Copy Editor*
+
+
+* can edit any article, link or comment
+* can edit page Page and Form HTML
+
+*Staff Writer*
+
+
+* can create, edit, publish and delete own articles
+* can upload images
+
+*Freelancer*
+
+
+* can create and edit own articles
+* can change article status from Draft to Pending
+
+*Designer*
+
+
+* can edit Page HTML, Forms, and CSS
+
+*None*
+
+

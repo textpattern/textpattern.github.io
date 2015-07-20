@@ -1,0 +1,166 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+On this page are several methods offered by the Txp community that aim to make your Textpattern installation more secure. However, before you jump into employing one, consider the bottom line and decide which side is more important to you.
+
+*Default Install:* Many Txp users, including the Txp developers themselves, contend that a default install of Textpattern is secure enough, provided your username/password details are wisely chosen. Add to this the fact there's no modifications to your file tree to maintain at each upgrade, and you have a strong argument.
+
+*Added Security:* Other Txp users prefer taking extra steps to secure Txp further, often by changing the identity/location of the configuration directory. The argument here is, “_if hackers can't find your admin login page, they can't attempt to guess your username and/or password_”.
+
+Keep in mind that many of the added security methods require modifications to the core files. Thus you'll need to make such modifications after every Txp version upgrade.
+
+For more on the pros/cons of extra security efforts, see the thread that inspires this page, "What do you do to secure &quot;/textpattern&quot;?":http://forum.textpattern.com/viewtopic.php?id=28772
+
+h3(sectionedit1#rename_the_textpattern_directory). Rename the //textpattern// Directory
+
+"warning":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=warning
+
+Last edited for Txp 4.0.3.
+
+The objective of this method is to rename the
+
+bc(code). /textpattern/
+
+
+directory (a critical system directory) and all references to it. Also, Textpattern's internal CSS can not be used, otherwise a visitor could simply 'view source' to see where your admin is located.
+
+Assuming your Textpattern admin is currrently located at */root/textpattern/* and that you want to move to */root/myadmin/*:
+
+<ol>
+<li>rename folder */root/textpattern* folder to */root/myadmin*</li>
+<li>edit */root/myadmin/index.php*:
+<ul>
+<li><p>change line 19 to:</p>
+bc(code). include './myadmin/config.php';
+
+</li>
+</ul>
+</li>
+<li>edit */root/myadmin/include/txp&#95;admin.php*:
+<ul>
+<li><p>change line 168 to be:</p>
+bc(code). gTxt('log_in_at').' '.hu.'myadmin/index.php';
+
+</li>
+<li><p>change line 183 to be:</p>
+bc(code). gTxt('log_in_at').' '.hu.'myadmin/index.php';
+
+</li>
+</ul>
+</li>
+<li>dit */root/myadmin/include/txp&#95;tag.php*:
+<ul>
+<li><p>change line 7 to be:</p>
+bc(code). <link rel="stylesheet" href="/myadmin/textpattern.css" type="text/css" />
+
+</li>
+</ul>
+</li>
+<li>edit */root/myadmin/publish/taghandlers.php*:
+<ul>
+<li><p>change line 37 to be:</p>
+bc(code). if ($n) return hu.'myadmin/css.php?n='.$n;
+
+</li>
+<li><p>change line 38 to be:</p>
+bc(code). return hu.'myadmin/css.php?s='.$s;
+
+</li>
+</ul>
+</li>
+<li>edit */root/myadmin/publish/comment.php*:
+<ul>
+<li><p>change line 492 to be:</p>
+bc(code). $out .= hu.'myadmin/?event=discuss&step=discuss_edit&discussid='.$discussid."\r\n";
+
+</li>
+</ul>
+</li>
+</ol>
+
+Below are all the files in which the _/textpattern_/ filepath is mentioned. However, only the ones mentioned above are strictly in need of changing.
+
+* /index.php - 2 occurrences
+* /textpattern/include/txp&#95;admin.php - 3 occurrences
+* /textpattern/include/txp&#95;prefs.php - 3 occurrences
+* /textpattern/include/txp&#95;tag.php - 2 occurrences
+* /textpattern/publish/comment.php - 2 occurrences
+* /textpattern/publish/taghandlers.php - 3 occurrences
+* /textpattern/setup/en-gb.php - 4 occurrences
+* /textpattern/setup/index.php - 8 occurrences (including header comment)
+* /textpattern/setup/txpsql.php - 3 occurrences
+* /textpattern/update/&#95;to&#95;4.0.2.php - 2 occurrences
+
+h3(sectionedit2#htaccess_method_1). .htaccess Method 1
+
+These rules work by denying everything except what is needed for normal operation.
+
+Create an .htaccess file in the root of the _textpattern_ directory (i.e., _../textpattern_/), and add the following rewrite rules.
+
+bc(code). <IfModule mod_rewrite.c>
+ RewriteEngine On
+ RewriteCond %{REQUEST_FILENAME} !textpattern(/setup)?/?$
+ RewriteCond %{REQUEST_FILENAME} !textpattern/((setup/)?index|css)\.php$
+ RewriteCond %{REQUEST_FILENAME} !textpattern/textpattern\.(css|js)$
+ RewriteCond %{REQUEST_FILENAME} !textpattern/txp_img/.+\.(jpg|gif|png)$
+ RewriteRule ^(.*) - [F]
+</IfModule>
+
+
+This method works, but has been witnessed to reduce server performance to a significant degree.
+
+h3(sectionedit3#htaccess_method_2). .htaccess Method 2
+
+The code for an experimental (but proven effective) .htaccess file is shown below. You are advised in this case to turn off indexes unless you specifically need them. The code below does this but it might not work on your host if they donâ€™t allow indexing to be turned off in .htaccess files. In that case, an alternative would be to ask your host to turn off indexes on your site in its virtual host file and failing that, just add a simple static index.html or index.php that redirects to the site root into every directory you donâ€™t want Apache to index automatically. Additionally, make sure that your setup directory has been removed after you install textpattern.
+
+<pre class="code">
+DirectoryIndex index.php index.html
+
+#Options +FollowSymLinks
+Options -Indexes
+
+&lt;IfModule mod_rewrite.c&gt;
+    RewriteEngine On
+    #RewriteBase /relative/web/path/
+
+    #
+    #   Protect specific /textpattern folders by preventing Indexes and webfile access even if
+    # Options -Indexes isn't allowed. 
+    #
+    RewriteRule ^textpattern/lang/.* index.php
+    RewriteRule ^textpattern/tmp/.* index.php
+    RewriteRule ^textpattern/lib/.* index.php
+    RewriteRule ^textpattern/include/.* index.php
+    RewriteRule ^textpattern/publish/.* index.php
+    RewriteRule ^textpattern/update/.* index.php
+    #
+    #   Uncomment the following line if you are using cnk_versioning or hcg_templates...
+    #
+    #RewriteRule ^textpattern/_templates/.* index.php
+    #
+    #   Uncomment the following line (adjust the path if needed) if your plugin-cache directory is under your site root...
+    #
+    #RewriteRule ^textpattern/plugins/.* index.php
+
+    #
+    #   Otherwise, allow access to all existing files...
+    #
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^(.+) - [PT,L]
+
+    #
+    #   But redirect all remaining access attempts to the public index script...
+    #
+    RewriteRule ^(.*) index.php
+
+    RewriteCond %{HTTP:Authorization}  !^$
+    RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+&lt;/IfModule&gt;
+
+#php_value register_globals 0
+</pre>
+
+h3(sectionedit4#add_a_second_password_layer). Add a Second Password Layer
+
+This is not a core modification but rather the use of an external script, "password-protect":http://www.zubrag.com/scripts/password-protect.php.
+

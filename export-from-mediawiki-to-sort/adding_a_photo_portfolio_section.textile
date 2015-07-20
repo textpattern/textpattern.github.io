@@ -1,0 +1,72 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+This article covers a simple method used for the creation of a Portfolio section with thumbnail navigation. When completed, the first page of the Portfolio section will display a selection of thumbnails, and clicking on one of the thumbnails will load up the article related to that thumbnail.
+
+h3(sectionedit1#the_process). The Process
+
+h4(#step_1). Step 1
+
+The first step is to create a Portfolio section in the admin area..._presentation &gt; sections_. You may name the section whatever you'd like, but for our purposes here we'll simply call it “portfolio”. Be sure to add the appropriate files to your server and edit your .htaccess file if using clean URLs.
+
+h4(#step_2). Step 2
+
+The second step is to create a page template for the Portfolio in the admin area..._presentation &gt; pages_. You may copy an existing page template if you wish, or start from scratch. Save the page as “folio”. You should see it added to the list of pages to the right of the editing window.
+
+Before continuing, go back to the sections tab, _presentation &gt; sections_, and find the option for the “portfolio” section labeled “uses page”. Use the dropdown menu to select “folio” and hit SAVE.
+
+h4(#step_3). Step 3
+
+The third step is to create thumbnails for all of the artwork or photos that will be a part of the Portfolio. You will need to do this in a graphics editor. Make sure the thumbnails aren't too big; 40×40 pixels is a good size, but ultimately the decision on size and placement is yours.
+
+h4(#step_4). Step 4
+
+The fourth step is to write the articles for the Portfolio section in the admin area..._content &gt; write_. The article body field may have an
+
+bc(code). <img src="" />
+
+
+tag pointing to the full-size version of the image (i.e., _../images/big&#95;picture1.jpg_), a bit of text describing the image, or a combination of both. The contents of the article body field is what will display when the thumbnail is clicked.
+
+In the excerpt field, place the
+
+bc(code). <img src="" />
+
+
+tag for the thumbnail image (i.e., _../images/small&#95;picture1.gif_).
+
+Be sure to assign the article(s) to the “portfolio” section under the “Section” dropdown menu. Comments, on or off, is up to you.
+
+h4(#step_5). Step 5
+
+The fifth step is to create the form that will display the thumbnail menu. What we want to do is display only the excerpts of each article, because the excerpts are what contain the thumbnails. In the admin area, go to _presentation &gt; forms_ and click on the “create new form” link (upper right corner). We'll name the form “excerpt&#95;portfolio” (form name) and make it a “list” (form type). In the form contents field, paste:
+
+bc(code). <txp:permlink><txp:excerpt />
+</txp:permlink>
+
+
+This form will extract the article's excerpt field (which in our case is a thumbnail image) and wrap it in a permalink. You may need to style the thumbnail images via CSS to make them appear as you want.
+
+h4(#step_6). Step 6
+
+Step six takes us back to the Portfolio page template, _presentation &gt; pages_; make sure you click on “folio” on the right hand list to select it.
+
+You can now insert the thumbnail menu where you wish it to display using the following code:
+
+bc(code). <txp:if_article_list>
+<txp:article_custom listform="excerpt_portfolio" />
+</txp:if_article_list>
+
+
+You may add other attributes to *article&#95;custom* as needed.
+
+h4(#step_7). Step 7
+
+Now we will set the format for displaying the indivivual articles  -  the articles that will display when the thumbnails are clicked. Paste this code into your page template:
+
+bc(code). <txp:if_individual_article>
+<txp:article limit="1" form="whatever" />
+</txp:if_individual_article>
+
+
+*form&#95;whatever* should, naturally, be changed to an existing form that will properly format your portfolio article.
+

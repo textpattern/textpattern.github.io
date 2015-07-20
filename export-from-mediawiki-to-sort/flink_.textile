@@ -1,0 +1,46 @@
+\n"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Function Editing Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_function_editing_reference &#124; "txp&#95;defined&#95;functions&#95;by&#95;file&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions_by_file &#124; "TXP Defined Functions (Alphabetically)":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions
+
+h3(sectionedit1#about_this_page). About This Page
+
+This page is a reference for a function in the core code. Please note that it is possible that below information has changed since the last update, and as such, you should be sure to check out the "development browser":http://dev.textpattern.com/browser/ for the final definitive information about this function.
+
+h3(sectionedit2#general_information). General Information
+
+h4(#name). Name
+
+bc(code). fLink()
+
+
+h4(#purpose). Purpose
+
+This function is part of the
+
+bc(code). [[textile]]
+
+
+class.
+
+h4(#location_in_source_code). Location in Source Code
+
+"textpattern/lib/classTextile.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:class_textile.php_file :: line 728
+
+h4(#this_page_last_updated). This Page Last Updated
+
+ako 17:35, 18 October 2006 (UTC)
+
+h4(#information_retrieved_from). Information Retrieved From
+
+"$":http://www.ako-k.com/txpref/textpattern/lib/classTextile.php.source.html
+
+h3(sectionedit3#parameters). Parameters
+
+<ul>
+<li>bc(code). $m
+
+</li>
+</ul>
+
+h3(sectionedit4#examples). Examples
+
+_(needed)_
+

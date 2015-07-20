@@ -1,0 +1,59 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:permlink>
+
+
+The "permlink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlink can be used as a _single_ tag or a _container_ tag to return the permanent url of the article being displayed.
+
+If used as a container tag, the HTML required to output a hyperlink is returned; if used as a single tag, only the URL itself is returned.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“class name”*
+ CSS class attribute. Default: unset. *"id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#id=“article id”*
+ The article ID to link. Default: unset (current article). *"style":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#style=“style rule”*
+ Inline CSS style definition. Recommended that you use CSS via
+
+bc(code). class
+
+
+attribute instead. Default: unset. *"title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#title=“text”*
+ HTML title attribute. Default: unset.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1container_tag). Example 1: Container tag
+
+bc(code). <txp:permlink><txp:title /></txp:permlink>
+
+
+would result in:
+
+bc(code). <nowiki><a rel="bookmark" href="http://example.com/index.php?id=2">Article title</a></nowiki>
+
+
+Other tags used: "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title
+
+h4(#example_2single_tag). Example 2: Single Tag
+
+bc(code). <txp:permlink />
+
+
+would result in something like:
+
+bc(code). <nowiki>http://example.com/index.php?id=2</nowiki>
+
+
+h4(#example_3customizing_permanent_links). Example 3: Customizing Permanent Links
+
+By default permlink returns only a very basic link, which doesn't allow for customizing the link title, or adding a CSS class, etc. Using the tag in its single tag capacity opens up a lot more possibilities.
+
+For example, to have the permanent link have an HTML title attribute of the article's title, and also apply a class to it named “orange”:
+
+bc(code). <a href="<txp:permlink />" title="<txp:title />" class="orange"><txp:title /></a>
+
+
+Other tags used: "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title
+

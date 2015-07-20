@@ -1,0 +1,43 @@
+\n"mininav&#95;core&#95;function&#95;reference":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_core_function_reference
+
+h3(sectionedit1#description). Description
+
+array "next&#95;row":/home/www/zendstudio/dokuwiki/bin/doku.php?id=next_row ( resource _$r_ )
+
+Fetch the next row from a MySQL result resource.
+
+h3(sectionedit2#parameters). Parameters
+
+*r*
+ MySQL result resource
+
+h3(sectionedit3#return_values). Return Values
+
+Returns an associative array, or
+
+bc(code). FALSE
+
+
+on failure.
+
+h3(sectionedit4#changelog). Changelog
+
+h3(sectionedit5#examples). Examples
+
+bc(code). $result = safe_rows_start('name, RealName', 'txp_users', 1);
+while ($r = nextRow($result)) {
+    extract($r);
+    $out[$name] = $RealName
+}
+return $out;    // user full names keyed by login name
+
+
+h3(sectionedit6#see_also). See Also
+
+* "safe&#95;rows&#95;start()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows_start
+* "safe&#95;query()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_query
+
+h3(sectionedit7#notes). Notes
+
+Use this function to iterate over a MySQL result resource, as returned by "safe&#95;query()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_query or "safe&#95;rows&#95;start()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows_start. It automatically frees the resource after the last row has been retrieved.
+

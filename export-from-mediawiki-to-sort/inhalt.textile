@@ -1,0 +1,8 @@
+\n"mininav&#95;redaktionsseite":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_redaktionsseite
+
+Die Hauptregisterkarte “Inhalt” enthÃ¤lt mehrere untergeordnete Registerkarten fÃ¼r das Erstellen und Verwalten verschiedener Inhaltsformen.
+
+*Registerkarten:*
+
+"registerkarten&#95;inhalt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=registerkarten_inhalt
+

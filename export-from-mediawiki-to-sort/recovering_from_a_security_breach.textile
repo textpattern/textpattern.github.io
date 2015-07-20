@@ -1,0 +1,133 @@
+\n"mininav&#95;troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
+
+(a.k.a. I've been hacked: help!)
+
+Sites get hacked. It happens. It feels awful, but the key is to *_not panic_*. Most malware is injected at the server level through an easily-guessed or brute-forced password and will infect some or all files directly on the server. Usually this is done by adding extra files or folders to your installation, or by directly modifying files such as
+
+bc(code). index.php
+
+
+. Only rarely does it corrupt your database as well.
+
+In the first instance, follow these steps to get back up and running:
+
+*Step 1*
+
+Log into the control panel software on your host and change your account password to a *_strong_* word or phrase ("password hints":http://stefdawson.com/blog/choosing-a-brilliant-password if you need them).
+
+*Step 2*
+
+In your host's control panel find phpMyAdmin (or an equivalent MySQL tool) and backup the database. This is just in case the damage has stretched to your database and you need to create a new one. You can then repopulate the new one from the good parts of this backup later.
+
+*Step 3*
+
+Again from your host's control panel, find the MySQL admin tool and change your MySQL admin password(s) for your account to a *_strong_* password.
+
+*Step 4*
+
+From your (S)FTP program, download all the files from your Textpattern installation to a folder on your computer  -  anywhere will do as long as you don't ever run them on a local web server.
+
+Keep these files for now in case you need to refer to them later to find out the nature of the attack, and also to extract a copy of your Textpattern config file. You may need to send us copies of any infected files so we can analyse them  -  we'll ask if we need them after you've "contacted us via our security e-mail":http://textpattern.com/security. But try our social channels first as you'll get a more timely response from one of the many security experts.
+
+*Step 5*
+
+On the server, delete all files under your Textpattern installation. This includes (but is not limited to) all the following files and folders:
+
+* .htaccess
+* index.php
+* css.php
+* HISTORY.txt
+* README.txt
+* /textpattern
+* /sites
+* /rpc
+
+It would also be prudent to go through all files in the following folders:
+
+* /images
+* /files
+* /js (if you have one)
+* /css (if you have one)
+
+and any other folders you may have, to make sure that the files there are all the ones you expect. For example, in the
+
+bc(code). /images
+
+
+folder you *_only_* have
+
+bc(code). .jpg
+
+
+,
+
+bc(code). .png
+
+
+, and
+
+bc(code). .gif
+
+
+files. In the
+
+bc(code). /js
+
+
+folder you should only have javascript files that you have uploaded. The files in the
+
+bc(code). /files
+
+
+folder should be those that you have uploaded and should not have been tampered with in any way.
+
+Check the file modification times are consistent with the time(s) you uploaded the files. If the file times differ from those you expect, or when you open any file in a text editor or the application viewer it has suspicious looking code added at the top or bottom of the file (that's the usual place to find it, although some malware hides in the middle of the file somewhere), delete the file.
+
+If you're unsure, ask either on the "forum":http://forum.textpattern.com/ or on one of our social channels. Someone will be able to help you figure it out.
+
+*Step 6*
+
+Once you've cleaned out all the files and checked any left on the server as per step 5, upload a clean, fresh copy of the "latest version of Textpattern":http://textpattern.com/download. It is advisable *not* to upload:
+
+* HISTORY.txt
+* README.txt
+* the /setup folder
+
+*Step 7*
+
+Copy the
+
+bc(code). /textpattern/config.php
+
+
+file from your tainted downloaded files to another place on your local hard drive and open the file in a text editor like notepad or gedit. Check, double check, and triple check it has not been altered. It should *only* contain something like this:
+
+bc(code). <?php
+$txpcfg['db'] = 'your_db_name';
+$txpcfg['user'] = 'your_mysql_user';
+$txpcfg['pass'] = 'your_strong_mysql_password';
+$txpcfg['host'] = 'localhost';
+$txpcfg['table_prefix'] = '';
+$txpcfg['txpath'] = '/path/to/your/textpattern';
+$txpcfg['dbcharset'] = 'utf8';
+?>
+
+
+If you're happy with it, make sure you alter the 'pass' to the new one that you set in step 3. Upload this
+
+bc(code). config.php
+
+
+to your
+
+bc(code). /textpattern
+
+
+folder.
+
+*Step 8*
+
+Log into your Textpattern admin side using your regular user name and password. Visit the "Admin-&gt;Users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users tab and change your password immediately to a *strong* password. It is highly recommended that you disable or reset all other user account passwords too and ensure that your user base know how to choose a good, strong password.
+
+The above should get you back up and running. Be mindful that the weakest link is nearly always a user password. Limit access to only those people that need it, and only at the appropriate level.
+

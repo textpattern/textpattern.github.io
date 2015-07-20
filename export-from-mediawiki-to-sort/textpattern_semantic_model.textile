@@ -1,0 +1,79 @@
+\n"work&#95;in&#95;progress":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=work_in_progress "related&#95;reading":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=related_reading
+
+When we talk about Textpattern's semantic model, we're talking about the system's six primary building blocks that make it possible to create and manage your site's structure, content and presentation easily. All it takes is getting familiar with the blocks, and how they are associated to one another, which is what this page overviews.
+
+h3(sectionedit1#semantic_model_building_blocks). Semantic Model Building Blocks
+
+Following is a visual representation, as it would reflect in a website, of the structural association between the semantic building blocks.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:semantic-model-diagram.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:semantic-model-diagram.png
+
+Note in the diagram above (essentially a code perspective) that "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories (the sixth building block) are not reflected, as they are easier visualized in a front-end perspective showing the organization of content.
+
+h4(#sections). Sections
+
+"sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections, as you might expect, provide the lateral structure in a website, and are often reflected by the main navigation menu links.
+
+Pages and Styles (described next) are associated to Sections to provide an HTML template and the CSS presentation  -  complete separation of content and aesthetics.
+
+h4(#pages). Pages
+
+"pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages are essentially HTML templates to which all content is added, usually as a combination of standard HTML and Textpattern Tags. As mentioned, Pages must be assigned to Sections, which is how a given section of your website receives the web template it will use.
+
+h4(#styles). Styles
+
+"styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles are the CSS style sheets that define the presentational layer of your web content. Like Pages, Styles are associated to Sections. A single Style can be associated to all Sections you create, or each Section can have it's own Style, depending on your website design objectives.
+
+*Note:* Like all building blocks described on this page, Textpattern manages Styles in the database by default, not as files on the web server. However, you are not forced to manage your style sheets this way. E.g., you could still set a default Style to a given Section, but then inside that Style use only
+
+bc(code). @import url("../path/to/file.css");
+
+
+to call other CSS file(s) you might manage elsewhere, such as in a _css_ folder in the root directory of your website. Then business as usual. Not a problem.
+
+h4(#forms). Forms
+
+"forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms, conceptually speaking, are like PHP includes or any other kind of code insertion process you may be aware of that enables you to create a predefined chunk of content once and reuse it in multiple places. In fact, Forms can be used in a variety of ways, including nesting Forms within each other.
+
+h4(#tags). Tags
+
+Tags are Textpattern's own type of markup syntax that work interchangeably with HTML. There is a variety of Tag types, all of which provide a seemingly infinite number of ways to construct website architecture and content publishing behavior. Not the least of which, Tags are the means for positioning and inserting Form content into your various Page template locations. The more you learn about Textpattern's Tags, the more adept at using Textpattern you will become.
+
+h4(#categories). Categories
+
+"categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories are a method of organizing content (articles, images, links, files...) by particular topics to which the content relates. The category associations with content can then be used to create various content outputs in the website.
+
+h3(sectionedit2#theoretical_example_for_blackcheesetld). Theoretical Example for blackcheese.tld
+
+Let's walkthrough the creation and assembly of the building blocks for a hypothetical website called _Black Cheese_ (blackcheese.tld).
+
+All building block panels are accessed in your "admin-side":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin-side. For purposes of this example, we are only focusing on "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections, "pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages, "styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles, "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms, and "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories. The Tags don't have their own panel; rather you simply type them up like you would HTML markup, or use one of the contextual Tag builders located at the top of the left column in the Forms and Pages panels.
+
+h4(#sections_need_pages_and_styles). Sections Need Pages and Styles
+
+Unless you plan on using Textpattern's "default page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_pages#default and default style sheet, you'll need to first create your new Page and Style that you intend to associate with a new Section. That said, it is often advantageous to use default components (and edit them to your needs) as much as possible to keep things simple from a management standpoint.
+
+To this end, let's say we intend to create a “history” section in the Black Cheese website where the legacy of Black Cheese will be shared with the world. We also decide to create a new page, _History_, specifically for this section, but we figure it's fine using a single style for the entire site's presentation and thus we'll go with the “default” style for simplicity and customize it as necessary. Thus we first create the _History_ page, then the history section, and finally associate the page and style to the section.
+
+h4(#page_template_uses_forms). Page Template Uses Forms
+
+Clicking the “Pages” tab will let you see the templates your site uses, which are essentially HTML documents. One template may be in use by one or more sections.
+
+Inside a page template are various txp tags which give Textpattern further instructions. The template dictates the overall structure of the rendered HTML page.
+
+In addition to showing article(s) assigned to the section, the structure may employ forms to show repetitive information. For example, a header; a footer; or the manner in which definition lists are displayed, may be defined in a form and reused across many pages.
+
+h4(#section_uses_stylesheet_information). Section Uses Stylesheet Information
+
+If you click on the Style tab, you will see one stylesheet by default. All pages will use this unless another stylesheet is specified. Perhaps you want a different style for the “cheese” section. So you create a new stylesheet with new fonts etc. Then, in the sections tab, select it to be used by the cheese section. Other sections will still use the default styles unless told otherwise.
+
+h3(sectionedit3#related_reading). Related Reading
+
+The following resources may be of interest to you as well:
+
+* "Understanding Textpattern Building Blocks":http://wion.com/articles/understanding-textpattern-building-blocks (Wion, 2006)
+* "Textpattern Building Block Mechanics":http://wion.com/articles/textpattern-building-block-mechanics (Wion, 2006)
+* "Tutorial on the TextPattern Presentation Model":http://tp.douglasedmunds.com/ (Edmunds, 2004)
+* "Textpattern Semantics":http://www.jdueck.net/article/10/textpattern-semantics (Dueck, 2004)
+* "Intro to Textpattern":http://erraticwisdom.com/2005/11/30/intro-to-textpattern (Fadial, 2005)
+

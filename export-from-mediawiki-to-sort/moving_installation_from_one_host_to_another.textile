@@ -1,0 +1,146 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+h3(sectionedit1#overview). Overview
+
+Sometimes it is necessary (whether for better service, a cheaper deal, etc.) to move your website from one Web hosting service to another (e.g., 1and1 to DreamHost, DreamHost to TextDrive, whatever). This is a relatively easy matter that mainly just involves backing up your current Textpattern installation and database, reinstalling them on the new server location, and fiddling with the files to make sure everything is all working properly. Or as Dean puts it (thread "7175":http://forum.textpattern.com/viewtopic.php?id=7155 )“ _the idea behind keeping the plugins in the database - along with the content, page templates, css, etc - is one of portability: you should be able to land at a new webhost with a mysqldump in hand, install the software, point to the database via config, and you're away._”
+
+To save you some potential headaches, you are encouraged to NOT make any version upgrades or downgrades with respect to either Textpattern or your MySQL if you can help it; it's better to switch first using the same versions of the technology, and then do whatever upgrades you need to do once everthing is working properly. (See example issue discussed in Textpattern Forum thread "6879":http://forum.textpattern.com/viewtopic.php?id=6879.
+
+h3(sectionedit2#the_process). The Process
+
+h4(#step_1backing-up_your_existing_textpattern_resources). Step 1: Backing-Up Your Existing Textpattern Resources
+
+What we're talking about here is two things: exporting a copy of your existing datbase files, and moving a copy of your Textpattern folder and file tree on the current server to your local machine.
+
+h5(#exporting_the_existing_database_tables). Exporting the Existing Database Tables
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:login.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:login.gif
+
+# Log into phpMyAdmin
+# Click on _Export_ in the option menu.
+# At this point you will have alot of choices for the export schema. One note, if you need a smaller file size you can exlude your logs files. You can choose to export a plain sql file (txt) or a variety of zipped files. I have sucessfully exported with the options pictured (these are also the default checked options on textdrive). There may be more specific export needs for you host. If these settings do not work you may need to contact you host for specific needs for your server.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:export.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:export.gif
+
+h5(#move_textpattern_folder_file_tree_to_local_machine). Move Textpattern Folder/File Tree to Local Machine
+
+Use FTP or SFTP (whichever is appropriate) to move the Textpattern tree from the root folder of your site to your local machine. You will use this copy to upload the tree later to the new Web server location.
+
+*Note:* As a matter of practicality, it is highly recomend setting up your new account and fully testing your migration before closing down the old hosting account (for that matter, you might not tell your old host your leaving until you have everything working at the new location). If something goes wrong somewhere along the way you have a working copy to refer back to, to make any adjustments or re-export if necessary.
+
+h4(#step_2installing_your_resources_on_the_new_web_hosts_servers). Step 2: Installing Your Resources on the New Web Hosts Servers
+
+h5(#creating_new_database_uploading_folder_file_tree_and_editing_configphp_file). Creating New Database, Uploading Folder/File Tree, and Editing config.php File
+
+= Moving to DreamHost =
+
+*Setting up database:*
+
+1) Log in to your DreamHost Control Panel and go to Goodies &gt; Magage MySQL.
+
+2) Create a Database Name and First User. Your new database name can be different than the name previously used by Textpattern.
+
+3) Add new database now!
+
+4) In the section below, you should now see your database: mysql.yourname.com [phpMyAdmin]. Click the [phpMyAdmin] link to access the database.
+
+* Caveat: The URL for your phpMyAdmin is, by default, mysql.yourdomain.com. Since it is recommended to not “flip the switch” on your DNS until you're sure the new host is going to support your needs, that [phpMyAdmin] link may not work. The exception would be that you have already swithed over to DreamHost's DNS nameservers, in which case it will definitely work.
+
+The [phpMyAdmin] link may initially be an alternate, non-domain-specific URL. If not, you'll have to contact Support to get a direct link to the MySQL database.
+
+*Import your database:*
+
+1) Select the database you created in the left sidebar if it's not selected by default.
+
+2) Click the Import tab.
+
+3) Browse for the text file backup of your database on your hard drive.
+
+4) Upload it!
+
+*Configuring Textpattern to interface with the new database:*
+
+1) Upload your entire Textpattern tree (yourdomain.com/textpattern) and the default index.php &amp; .htaccess files to your new server via FTP.
+
+2) Open textpattern/config.php
+
+3) You will need to update all of the values that have changes with your server move:
+
+&lt;?php
+
+$txpcfg['db'] = 'your database name';
+
+$txpcfg['user'] = 'your mysql username';
+
+$txpcfg['pass'] = 'your mysql password';
+
+$txpcfg['host'] = 'mysql.yourname.com';
+
+$txpcfg['table&#95;prefix'] = _;_
+
+The following two values may require you to contact Support to find them out:
+
+$txpcfg['txpath'] = '/home/.some&#95;name/site&#95;username/yourname.com/textpattern';
+
+$txpcfg['doc&#95;root'] = '/home/.some&#95;name/site&#95;username/yourname.com/';
+
+?&gt;
+
+4) That's it!
+
+In order to “see” your domain before switching DNS, see this DreamHost Wiki article: "$":http://wiki.dreamhost.com/index.php/DNS_-_Viewing_site_before_DNS_change
+
+h5(#handling_the_password). Handling the Password
+
+Changing your password after migrating your installation or upgrading MySQL.
+
+1) From the drop down menu on the left select your txp&#95; database. A list of tables in that db will appear directly below the drop down menu. Near the bottom of that list you should see your txp&#95;user table. Click on that table.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:image1chgpass.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:image1chgpass.gif
+
+2) All the information for that table will now occupy the main content area of your screen. There are a row of tabs at the top. Click on the STRUCTURE tab.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:image2chgpass.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:image2chgpass.gif
+
+3) In the main content area look for the row that says pass (3rd from top) and click on the little pencil to the far right.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:image3chgpass.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:image3chgpass.gif
+
+4) At the top of the main content area you will see “Field” “Type” “Length/Values&#42;” “Collation” etc. Retype the 128 in the Length/Values box with 128 then click on SAVE.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:image4chgpass.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:image4chgpass.gif
+
+5) Click on the BROWSE tab
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:image5chgpass.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:image5chgpass.gif
+
+6) In the middle of the content area you should see a little pencil. Click on it.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:image6chgpass.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:image6chgpass.gif
+
+7) The main content area will now have a five columns labeled Field, Type, Function, Null, Value. The third row from the top should be called “pass”. At the far right is the encrypted value of your current password. Delete the contents of that box and type in your new password. You can also just retype in your old password. IMPORTANT: Do not use uppercase letters in your password at this point! (Textpattern converts your password to lowercase before hashing it, hence it won't ever match if you hash any password with uppercase letters.)
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:image7chgpass.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:image7chgpass.gif
+
+8) In the drop down menu for the row “pass” select PASSWORD. 9) Hit “Go”
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:image8chgpass.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:image8chgpass.gif
+
+You're now ready to log back in to your Textpattern interface.
+
+h4(#step_3reconfiguring_your_configphp_file). Step 3: Reconfiguring Your config.php File
+
+(needed)
+
+h4(#step_4troubleshooting_problems_after_moving). Step 4: Troubleshooting Problems After Moving
+
+Probably the number one thing that gets people hung-up when physically moving an installation from one server to another is the odd inclusion of white space in the _config.php_ file during the move (most likely during the reinstallation of the file). When this happens three problems are usually to be the result...
+
+* your home page will likely appear to be missing any CSS styling,
+* when you log in to the textpattern admin panel, you will not be able to access some of your tabs (except perhaps the *_Content_* tab),
+* and the following error message, or something similar to it, will appear at the top of the page...
+
+“Warning: Cannot modify header information - headers already sent by (output started at _/home/user/public&#95;html/textpattern/config.php:13)_ in _/home/user/public&#95;html/textpattern/publish.php_ on line 170”
+
+To collectively fix these problems, open up your _config.php_ file and remove any trailing white space that has been automagically added to the end of the file.
+

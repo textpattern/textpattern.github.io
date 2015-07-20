@@ -1,0 +1,14 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+_This is an excerpt of "this tutorial":http://fuelyourcoding.com/easy-to-update-thumbnail-gallery-using-textpattern-and-galleriffic/ by "Marie Poulin":http://www.mariepoulin.com/. The full article includes downloadable files and step-by-step instructions for creating a fully-functional photo gallery._
+
+This tutorial assumes that you have a fairly strong understanding of HTML and CSS. I have provided a basic style sheet with all necessary styles to achieve the look of gallery demo, but please feel free to edit the css. We will be building a very simple updateable thumbnail gallery using Textpattern and Galleriffic. There are a few tutorials out there of a similar nature, but I have found this to be the simplest way to integrate Galleriffic with Textpattern.
+
+To see the gallery in action, click "here":http://www.textpatternworkshops.com/gallery
+
+h3(sectionedit1#galleriffic). Galleriffic
+
+This gallery is based on Galleriffic, a jQuery plugin for rendering fast-performing photo galleries. This is adapted from "$":http://www.twospy.com/galleriffic/ to work with textpattern so you (and your clients!) can easily update the gallery. In a nutshell, the gallery works by associating image id #s with a specific article. The article form gallery and article&#95;image&#95;form work together to render the article in the form of all of the associated images (in their thumbnail format) to appear as an unordered list on the left, while the full version of the current image appears on the right. All that is necessary to add or change images, is to change the numbered list appearing in the advanced options on the left of the article containing the images. So easy once implemented, even a client that doesn't speak nerd can add, subtract or change their own images.
+
+_Read the "full article":http://fuelyourcoding.com/easy-to-update-thumbnail-gallery-using-textpattern-and-galleriffic/ ..._
+

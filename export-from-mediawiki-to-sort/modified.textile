@@ -1,0 +1,101 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:modified />
+
+
+The "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified tag is a _single_ tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields on the "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences tab.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“class name”*
+ CSS class name which will be applied to the
+
+bc(code). wraptag
+
+
+element. Default: unset. *"format":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#format=“format string”*
+ Override the default date format set in the preferences. Values: any valid "strftime()":http://php.net/strftime string values,
+
+bc(code). since
+
+
+,
+
+bc(code). [[http://en.wikipedia.org/wiki/ISO_8601|iso8601]]
+
+
+,
+
+bc(code). w3cdtf
+
+
+, or
+
+bc(code). [[http://www.w3.org/Protocols/rfc822/#z28|rfc822]]
+
+
+. Default: unset (date format set via preferences). *"gmt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#gmt=“boolean”*
+ Return either local time  -  according to the set time zone preferences  -  or GMT. Values:
+
+bc(code). 0
+
+
+(local time) or
+
+bc(code). 1
+
+
+(GMT). Default:
+
+bc(code). 0
+
+
+. *"lang":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#lang=“ISO language code”*
+ Format time string suitable for the specified language (locale). Values: locales adhere to "ISO-639":http://www.loc.gov/standards/iso639-2/php/code_list.php. Default: unset (time format set via preferences). *"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag”*
+ HTML tag surrounding the modified date, without brackets. Default: unset.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_since_format_date_setting). Example 1: Display &quot;since&quot; format date setting
+
+bc(code). <p>modified: <txp:modified format="since" /></p>
+
+
+would result in:
+
+bc(code). <p>modified: 29 Days ago</p>
+
+
+h4(#example_2display_custom_date_format). Example 2: Display custom date format
+
+bc(code). <p>modified: <txp:modified format="%b %d, %Y" /></p>
+
+
+would result in:
+
+bc(code). <code><p>modified: May 28, 2005</p>
+
+
+&lt;/code&gt;
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_450). Version 4.5.0
+
+<ul>
+<li>bc(code). wraptag
+
+
+<p>and</p>
+bc(code). class
+
+
+<p>attributes added.</p></li>
+</ul>
+
+h4(#version_407). Version 4.0.7
+
+* tag added.
+

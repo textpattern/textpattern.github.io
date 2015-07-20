@@ -1,0 +1,166 @@
+\n"mininav&#95;content&#95;index":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-image.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-image.png
+
+"Images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel lets you manage everything you need to include images (and galleries) in your content. From this panel you can *upload* images, *create thumbnails*, add *captions* (and *alternate text*), build *groups* of images (using categories) and *generate tags* to place images in your articles (or forms).
+
+Of course you could upload images (using ftp) and place image tags (using HTML) directly. But then you'd have to provide elements like captions separately for every place you use an image. The images tools of Textpattern provide a way of managing image-related info _in a central place_. If you have to change a caption or for example need to replace an image (e.g. a sharper one or another view) you can do these changes once at a central place and the changes will automatically take effect wherever you placed the image using textpatterns tags.
+
+There are three basic things you can do in this panel:
+
+* _Upload_ images
+* _Edit_ image-related information (create a thumbnail, add caption and alternate text, categorise
+* list and _manage_ your existing images.
+
+(So the images panel in a way combines what for _articles_ is divided in two panels “Write” and “Article”.)
+
+h3(sectionedit1#upload_images). Upload images
+
+The first tool at the top of the panel is the _upload_ area. Labeled “Upload image” you will find a field for entering a path to the image. On its right side there is a “Browse...”-button which (as well as clicking on the field itself) will open a pop-up-window containing your file manager's tools to locate an image file for upload.
+
+Note: At the moment images can only be selected one by one. But there are some "Plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_-_deutsch which provide batch uploading.
+
+When you have marked an image and put its path into the upload field by clicking “open” (or OK), you can start uploading by clicking “Upload”.
+
+The image will be uploaded to the images folder of Textpattern (but remind the file size limitations). A reference will automatically be saved in the database and the single image editing panel will be opened. Here you can enter additional information (see below) regarding the image. To save those informations and return to the Images panel click “Save”.
+
+Technical note: In the images folder all uploaded images will have only a number as name. The number equals the Textpattern-ID# of the image - extended by “t” for a thumbnail. The original name is kept in the images properties.
+
+h3(sectionedit2#edit_images_properties). Edit images properties
+
+h4(#imagepieces_of_information). Image: pieces of information
+
+These pieces of information can be saved in an image record:
+
+*Image name* - here by default the images _filename_ will be entered automatically. If you'd like to rename the image you can do so here.
+
+*Category* - A Category for the image. Categories are used to generate lists of images and galleries.
+
+*Alternate text* - Text which will replace the image when it's broken or images will not be downloaded. Very important for webstandards and accessibility.
+
+*Caption* - Any text to make a good caption.
+
+h4(#thumbnail). Thumbnail
+
+There are two ways to include thumbnails:
+
+* You can upload your own thumbnail with the upload fields labelled “Upload thumbnail”.
+* Or you can Create a thumbnail with textpatterns built-in tool.
+
+Fill in the appropriate width and/or height. If you define both and don't want the image to be scaled mark “Crop”. To create the thumbnail click “Create”.
+
+h4(#replace_the_image). Replace the image
+
+If you need to _replace_ an image by another or a better one (instead of placing another one, especially if you already have placed it on several places in your content) you can do so with the upload fields labelled “Replace image”.
+
+h3(sectionedit3#table_of_existing_images). Table of existing images
+
+Beneath the Upload area there is the table or list of existing images.
+
+h4(#search_and_filter_function). Search and filter function
+
+For it can get pretty long the first thing at the top is a *Search function*, which you can use to
+
+* *locate* images individually by search phrases
+* or to *filter* the list below (quite similar to the "articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles panel).
+
+The Search function has two components:
+
+* A _drop-down-list_ to specify which area is to be searched
+* and a _textarea_ for entering the search phrase.
+
+Text entered in the textarea will be treated as a complete phrase (see "articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles for details on this).
+
+After entering your search criteria you start searching by clicking “Go”. As a result you will be given a new list of images which meet the criteria.
+
+As a default the search will normally proceed in the images' *name*. But you can do more refined searches by selecting another area to search in. The drop-down-list left from the textarea provides the following search criteria:
+
+* ID#
+* Name
+* Category
+* Author
+* Alternate text
+* Caption
+
+h4(#table_of_images). Table of images
+
+Each row is one image. The columns provide basic information about the image. (Note: The columns (except “Tags”) can be sorted. If you click the header of a column, it will sort the list of images according to that column. Click again to reverse sort direction. The current sort column is marked by a yellow arrow on the right side of its name indicating its direction.)
+
+The table shows seven columns:
+
+*ID#* â€“ an ID number is automatically assigned to each image. This is what identifies it and calls it on the live site. Right from the ID# two links reside: _Edit_ â€“ click this (or the name of the image) to edit the images properties. _View_ â€“ click this to view the image in the browser window.
+
+*Date* â€“ the date, when the image record has been created (normally when the image has been uploaded).
+
+*Name* â€“ the filename of the image. Click this to edit the images properties.
+
+*Thumbnail* - shows a thumbnail of the image, if any exists. (So for a better overview in this table it is recommended to always generate a thumbnail.)
+
+*Tags* â€“ here you have a choice of _three ways_ to include the image in your articles or forms:
+
+* as a textile(d) text
+* as a textpattern image-tag
+* as plain HTML
+
+Each link will open a pop-up-window with a tag-builder. You can choose the elements you need and an appropriate tag in Textile, Textpattern or HTML will be created. This tag you can copy and place where needed.
+
+The tag builder has several options:
+
+*Escape HTML*: Escape any HTML entities encountered in the form (clarification needed).
+
+*Id XHTML attribute*: Example:
+
+bc(code). gallery1
+
+
+. The ID you'd like to assign to the image. In HTML / XHTML this is rendered as id=“my&#95;id” inside the img tag.
+
+*CSS class*: Example:
+
+bc(code). gallery
+
+
+. The CSS class to assign to the image tag when it is rendered in HTML / XHTML.
+
+*Inline style (CSS)*: Example:
+
+bc(code). border: 1px solid black
+
+
+. The inline CSS style(s) (separated by semicolons) you'd like to assign to the image. These styles are placed inside a style tag in the final HTML / XHTML.
+
+*Wrap tag*: Example
+
+bc(code). p
+
+
+. Tells Textpattern to surround the image with this HTML / XHTML tag when rendered. Output would be
+
+bc(code). <p><img src="etc" /></p>
+
+
+...in this case.
+
+Returning to the Images table:
+
+*Category* â€“ if the image was assigned a category, then it will reflect that here.
+
+*Author* - the author who created the images record.
+
+h4(#perform_changes_on_selected_images). Perform changes on selected images
+
+On the right side you will find a checkbox for each image. Here you can select images you want to change in a jointly manner. You can mark images by ckecking the checkbox or you can use select-buttons at the bottom of the list: “All”, “None” or “Range”. If you want to select a range you simply mark the checkbox of both the first and the last image in the range and then click “Range”. The images between will then automatically be checked too.
+
+For performing changes now you go to the drop-down-list “with selected” and choose the function you want to perform. The following changes are available:
+
+* Change Category
+* Delete
+
+When selecting the “Change Category”-option you will get another drop-down-list below which will give you the list of categories to choose from.
+
+After selecting the options you want to perform click “Go” to start the changes. A pop-up window will ask “Are you sure?” and then (if “yes”) the changes will be performed.
+
+h3(sectionedit4#pagination). Pagination
+
+At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. By default Textpattern will show 25 images per page. You can also change the number of images per page by selecting another value in the drop-down-list “View # per page”: 15, 25, 50 and 100.
+

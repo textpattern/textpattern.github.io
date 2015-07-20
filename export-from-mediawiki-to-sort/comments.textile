@@ -1,0 +1,153 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:comments />
+
+
+The "comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments tag is a _single_ tag which is used to display the comments associated with a particular article. Comments will be displayed for the present individual article as a default, or to the article set by the “id” attribute.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"break":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#break=“text”*
+ HTML tag (without brackets) or string used to separate comments. Default depends upon "preference setting":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences#present_comments_as_a_numbered_list_3, either
+
+bc(code). li
+
+
+or
+
+bc(code). div
+
+
+. *"breakclass":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#breakclass=“class name”*
+ CSS class attribute to be applied to
+
+bc(code). break
+
+
+(when value supplied is a tag). Default: unset. *"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“class name”*
+ CSS class attribute to be applied to
+
+bc(code). wraptag
+
+
+. Default:
+
+bc(code). comments
+
+
+. *"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“form name”*
+ Default is
+
+bc(code). comments
+
+
+. *"limit":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#limit=“integer”*
+ The number of comments to display. Default:
+
+bc(code). 0
+
+
+(no limit). *"offset":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#offset=“integer”*
+ The number of comments to skip. Default:
+
+bc(code). 0
+
+
+. *"sort":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#sort=“sort value(s)”*
+ How to sort the resulting list. Values:
+
+bc(code). discussid
+
+
+(comment ID)
+
+bc(code). parentid
+
+
+(article ID)
+
+bc(code). name
+
+
+bc(code). email
+
+
+bc(code). web
+
+
+bc(code). ip
+
+
+("IP address":http://en.wikipedia.org/wiki/IP_address)
+
+bc(code). posted
+
+
+bc(code). message
+
+
+bc(code). rand()
+
+
+("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand) Default:
+
+bc(code). posted asc
+
+
+. *"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag text”*
+ HTML tag (without brackets) to wrap around list. Default depends upon "preference setting":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences#present_comments_as_a_numbered_list_3, either
+
+bc(code). ol
+
+
+or unset.
+
+h4(#example_1display_comments_and_give_an_indication_of_comments_status). Example 1: Display comments, and give an indication of //Comments// status
+
+Comments for articles can be turned off or on at the author's discretion for any article that is published; by using the following scheme in an article form, you can still have the on/off control over comments while still giving users indication of comment status.
+
+<pre class="code">
+&lt;txp:comments /&gt;
+
+&lt;txp:if_comments_allowed&gt;
+    &lt;txp:comments_form /&gt;
+&lt;txp:else /&gt;
+    &lt;p&gt;Comments are turned off for this article.&lt;/p&gt;
+&lt;/txp:if_comments_allowed&gt;
+</pre>
+
+Other tags used: "comments&#95;form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form, "if&#95;comments&#95;allowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments_allowed, "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else
+
+h4(#example_2conditional_comments). Example 2: Conditional comments
+
+*Tags*
+
+<pre class="code">
+&lt;txp:if_comments_allowed&gt;
+    &lt;txp:comments form=&quot;lineitem&quot; breakclass=&quot;special&quot; break=&quot;li&quot; wraptag=&quot;ul&quot; /&gt;
+
+    &lt;txp:comments_form /&gt;
+&lt;/txp:if_comments_allowed&gt;
+</pre>
+
+*Form (lineitem) (type: comment)*
+
+bc(code). <small><txp:comment_id /></small>
+
+
+*Styles could go this way*
+
+bc(code). .special
+{
+        display:list-item;
+        list-style-type:none;
+}
+
+
+*What it does...*
+ For the article, list id numbers and a comment input form; but only if comments are currently allowed.
+
+Other tags used: "comment&#95;id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_id, "comments&#95;form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form, "if&#95;comments&#95;allowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments_allowed
+

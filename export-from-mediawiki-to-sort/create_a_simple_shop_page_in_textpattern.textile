@@ -1,0 +1,20 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+_This is an excerpt of "this tutorial":http://fuelyourcoding.com/create-a-simple-shop-page-in-textpattern/ by "Marie Poulin":http://www.mariepoulin.com/._
+
+We will be building a very simple “shop” type page in Textpattern. There are plugins which allow Textpattern to integrate paypal support, but this is a fairly simple alternative. This allows you to feature products which you may sell through paypal, e-junkie, Amazon (or whatever else you may be using) The structure of this page is built with the client in mind â€“ they don't need to format the page with any html or div's in order to get the products laid out nicely.
+
+Two example links of this simple functionality in action are:
+
+1. "$":http://www.meghantelpner.com/shop/?c=books
+
+2. "$":http://www.elmwoodspa.com/shop/
+
+In the first example, you can click on one of Meghan's books to see more information before deciding to purchase. If you click on “buy now”, you will be taken to her e-junkie store. Additionally, if you click on a specific book to see more information, you get a small navigation block at the top of the article that allows you to quickly browse the next and previous products. You may notice that if you click on one of the other submenus within her store, such as the Books/DVDs/Audio, that you will be taken directly to the Amazon affiliate link for that product. The client has the capacity to choose whether or not to link the product to an external link (Amazon, e-junkie, paypal) or whether or not to link to the full product page itself first, with a “buy now” button.
+
+In the second example, you can click to see details/shop online which takes you immediately to Elmwood Spa's online store.
+
+I will be using the first example as a basis for the tutorial.
+
+_Read the "full article":http://fuelyourcoding.com/create-a-simple-shop-page-in-textpattern/ ..._
+

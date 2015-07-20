@@ -1,0 +1,37 @@
+\nBlogging and CMS tools fall into one of two categories: They either create static HTML files from the data that's entered and store them on a server for viewing in a browser (for example Blogger). Or they store the data in a database and create the HTML pages dynamically when someone requests to view the page (like b2). Textpattern falls into the second category, in fact _all_ of it's content is stored in a database for retrieval when needed.
+
+h3(sectionedit1#step_1mapping_content). Step 1: Mapping Content
+
+The first step in the migration process is to figure out how to get the content from the old system into Textpattern's database and how to do it in a way that's most useful. With the different fields and information that each system uses, sometimes it's hard to map from one tool to another. Luckily most of this is taken care of by Textpattern's *Admin &gt; Import* code.
+
+We'll talk about each major blogging and CMS system that's available in this appendix. If you're using another product, you may be able to follow the documentation of one that uses the same basic style as your tool. And don't forget to tell about your success in the forum when you get it imported.
+
+h3(sectionedit2#step_2layout_and_navigation). Step 2: Layout and Navigation
+
+The second part of migrating to Textpattern is getting the layout and navigation working. This is very site specific, so we won't talk about many details here. In general, you'll want to convert the existing template to a Textpress “page” and convert existing tags to Textpress tags.
+
+Following are a few guidelines.
+
+h4(#files). Files
+
+Upload all of your images and other media files to your new server. To make things run smoothly, you should keep the same directory structure. For example, this usually means having a /images directory, which would be located in the root of your website where the /textpattern directory is.
+
+h4(#stylesheets). Stylesheets
+
+By default, Textpattern doesn't use CSS files stored on the server, instead the information is stored in the database using the "styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles panel in the admin interface. You don't have to manage your stylesheets with Textpattern, and depending on your use of stylesheets you may not be able to completely (e.g., if you have multiple stylesheets for one page), but your encouraged to use this method if convenient (it makes things easy).
+
+h4(#tags). Tags
+
+The hardest step is changing the tags to Textpattern. Some systems (like Xoops) uses the concept of “modules” to encapsulate and reuse content. These could be changed to “forms” in Textpattern. Also, if you have any PHP scripting in your page, then you'll want to replace the PHP &lt;? ?&gt; tags with Textpattern's "php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=php tag.
+
+Because of the huge differences in templates for all of the different systems, it's impossible to walk you through converting your template to Textpattern. Hopefully these guidelines will help.
+
+h3(sectionedit3#import_scripts_in_development). Import Scripts in Development
+
+(Add/edit links and start pages as needed.)
+
+* "importing&#95;from&#95;blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
+* "importing&#95;from&#95;moveable&#95;type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_moveable_type
+* "importing&#95;from&#95;pivot":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_pivot
+* "importing&#95;word&#95;press":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_word_press
+

@@ -1,0 +1,26 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:comments_count />
+
+
+The "comments&#95;count":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_count tag is a _single_ tag which is used to display the number of comments associated with a particular article.
+
+Though comments&#95;count can be used independently, it is also called by "comments&#95;invite":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_invite to append the comments count to the comments&#95;invite link. Used in an article form.
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_comment_invitation_and_count). Example 1: Display comment invitation and count
+
+But only if any comments are associated with the current article.
+
+bc(code). <txp:if_comments>
+    <p><txp:comments_invite showcount="0" /> <txp:comments_count /> people have already responded.</p>
+</txp:if_comments>
+
+
+Other tags used: "comments&#95;invite":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_invite, "if&#95;comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments
+

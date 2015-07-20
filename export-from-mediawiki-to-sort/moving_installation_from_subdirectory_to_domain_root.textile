@@ -1,0 +1,2 @@
+\n - REDIRECT "moving&#95;installation&#95;from&#95;subdirectory&#95;to&#95;domain&#95;root&#95;on&#95;the&#95;same&#95;server":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_subdirectory_to_domain_root_on_the_same_server
+

@@ -1,0 +1,61 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_individual_article>
+
+
+The "if&#95;individual&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_individual_article tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_individual_article>
+...conditional statement...
+</txp:if_individual_article>
+
+
+The tag will execute the contained statements if an individual article is being displayed (i.e. not an article list).
+
+Please note, that "article&#95;custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom always displays an article list, even when you set it to display only one article. Thus the "if&#95;individual&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_individual_article tag will not work with "article&#95;custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom, you'll have to use the "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tag instead.
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1select_next-prev_or_older-newer_navigation). Example 1: Select next-prev or older-newer navigation
+
+<pre class="code">
+&lt;txp:article /&gt;
+
+&lt;txp:if_individual_article&gt;
+    &lt;p&gt;
+    &lt;txp:link_to_prev&gt;&lt;txp:prev_title /&gt;&lt;/txp:link_to_prev&gt;
+    &lt;txp:link_to_next&gt;&lt;txp:next_title /&gt;&lt;/txp:link_to_next&gt;
+    &lt;/p&gt;
+&lt;/txp:if_individual_article&gt;
+
+&lt;txp:if_article_list&gt;
+    &lt;p&gt;
+    &lt;txp:older&gt;Previous&lt;/txp:older&gt;
+    &lt;txp:newer&gt;Next&lt;/txp:newer&gt;
+    &lt;/p&gt;
+&lt;/txp:if_article_list&gt;
+</pre>
+
+*What this does...*
+ Shows links to the next / previous article if the current page is an article, or shows links to the next / previous page of results if the current page is an article list.
+
+Other tags used: "link&#95;to&#95;prev":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_to_prev, "link&#95;to&#95;next":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_to_next, "next&#95;title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=next_title, "prev&#95;title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=prev_title, "if&#95;article&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_article_list, "older":/home/www/zendstudio/dokuwiki/bin/doku.php?id=older, "newer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=newer
+
+h4(#example_2use_the_tag_with_else). Example 2: Use the tag with [[else]]
+
+bc(code). <txp:if_individual_article>
+    <p><txp:site_name /></p>
+<txp:else />
+    <p><img src="http://yoursite/yourlogo.jpg"></img></p>
+</txp:if_individual_article>
+
+
+*What this does*
+ Displays the site's name when showing a single article, and a logo when not displaying a single article.
+
+Other tags used: "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else, "site&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_name
+

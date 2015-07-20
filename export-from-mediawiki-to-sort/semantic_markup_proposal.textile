@@ -1,0 +1,53 @@
+\nStandards compliant, semantic markup, with hooks for CSS &amp; DOM scripting. Please post your suggestions on the forum for agreement. This is just to get the ball rolling.
+
+*Note: Can anyone fix the code formatting on the wiki? anything wrapped in 'tt' tags comes out at about 6pt on OSX/Firefox*
+
+h3(sectionedit1#naming_conventions). Naming conventions
+
+Still to be agreed...
+
+# wrapper
+# header
+
+body id=“area” class =“action”
+
+# main
+# footer
+
+<hr />
+
+h3(sectionedit2#repeated_snippets_present_on_every_admin_page). Repeated snippets present on every admin page:
+
+* "header&#95;navigation":/home/www/zendstudio/dokuwiki/bin/doku.php?id=header_navigation
+* "footer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=footer
+
+<hr />
+
+h3(sectionedit3#a_page_for_the_main_content_of_each_area_action_template). A page for the main content of each area/action template:
+
+h5(#content). Content
+
+* "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories
+* "write":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write
+* "articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles
+* "Images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel
+* "files":/home/www/zendstudio/dokuwiki/bin/doku.php?id=files
+* "links":/home/www/zendstudio/dokuwiki/bin/doku.php?id=links
+* "comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments
+
+h5(#presentation). Presentation
+
+* "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections
+* "pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages
+* "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms
+* "style":/home/www/zendstudio/dokuwiki/bin/doku.php?id=style
+
+h5(#admin). Admin
+
+* "diagnostics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics
+* "preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=preferences
+* "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users
+* "visitor&#95;logs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs
+* "plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins
+* "import":/home/www/zendstudio/dokuwiki/bin/doku.php?id=import
+

@@ -1,0 +1,39 @@
+\n
+
+h3(sectionedit1#wiki_navigation). Wiki Navigation
+
+ - Destry 21:29, 16 Dec 2004 (UTC): Remillard, is there a way to add some links into the “navigation” box at the left of the page? (I think that's probably an admin thing.) If so, it would be nice to add the following (URLs from the main page intro)
+
+Remillard 23:30, 16 Dec 2004 (UTC): I believe so. I'd just have to poke through the User's Guide to figure out how. It's probably an admin account function.
+
+*UPDATE*: Remillard 12:23, 21 Dec 2004 (GMT): I looked into this. The MediaWiki help suggests this is possible (e.g. the “toolbox” to the left is supposed to be able to be edited just like a wiki page) however the help provided did not work. I haven't given up completely, as I haven't asked on the MediaWiki mailing list yet, but for now we might as well consider them permanent.
+
+ - Inspired 16:01, 22 Feb 2005 (GMT) *Q:* _is there a way to add some links into the “navigation” box at the left of the page?_ *A:* Add this to LocalSettings.php:
+
+bc(code). $wgNavigationLinks = array (
+ array( 'text'=>'mainpage',  'href'=>'mainpage' ),
+ array( 'text'=>'portal',  'href'=>'portal-url' ),
+ array( 'text'=>'currentevents', 'href'=>'currentevents-url' ),
+ array( 'text'=>'recentchanges', 'href'=>'recentchanges-url' ),
+ array( 'text'=>'randompage',  'href'=>'randompage-url' ),
+ array( 'text'=>'help',     'href'=>'helppage' ),
+ array( 'text'=>'sitesupport',  'href'=>'sitesupport-url' )
+);
+
+
+Comment out those that you do not want to show up and easily add new. _Edit:_ ah, forgot to say that the values in the array above are labels to the content of the respective pages in “MediaWiki:” namespace. For example see , , to get the idea. The pages under “MediaWiki:” namespace can be edited only by administrator. Here's a good page about this:
+
+Remillard 22:50, 30 Mar 2005 (GMT): Okay, well if it's that easy, just let me know what ought to be linked and I'll see if I can't get into LocalSettings and make it happen.
+
+As usual, I apologize for my absence, but I'll see what I can do about getting back in and messy with documentation.
+
+ - Destry 12:11, 4 Aug 2005 (GMT): I've tried using the above method and I've tried following methods linked from the "WikiMedia Navigation":http://meta.wikimedia.org/wiki/Navigation page, but no luck. Figuring this out is not easy, that's for sure. There seems to be some kind of method for editing a namespace page (see "How do I change the contents of the navigation toolbar":http://meta.wikimedia.org/wiki/MediaWiki_FAQ#How_do_I_change_the_contents_of_the_navigation_toolbar.3F), but I don't follow, and the documentation is piss-poor.
+
+h3(sectionedit2#chapter_1txp_semantic_model_information). Chapter 1: TxP Semantic Model Information
+
+What should we do with respect to Chapter 1 and the Semantic Model informatin? The way it appears to be going now is the various “components” of Textpattern are being listed out and plugged with descriptions of what they are. I'm not sure that's really effective or appropriate so soon. For one thing, that information (the components) are already described in two other places of the manual (Appendix A and the Glossary) so doing it again is probably overkill. Also, the first chapter (at least as it seems sensible to me) is meant to give people an overview of TxP, not a full description of it's entire machinery. What I was hoping to see for the Semantic Model section was not another definition list, but an abstract description of how TxP separates content and presentation in an elegant and flexible manner (perhaps even add a cool diagram to this section that assists with visualizing the abstraction); thereby being unlike anything else on the market. Chapter 1 is really for those people who are still considering TxP, but have not yet actually downloaded or installed the product. The previous sections in Chapter 1 are all written with that assumption in mind (content right off the TxP Web site Home page). On the other hand, I do think it's good to drop a few keywords in the semantic model overview (“sections”, “pages”, “forms”, etc.) but only as needed to write the abstract. Then the words themselves can be made into hyperlinks that go to the Glossary, respectively, where each component is fully defined and described, with further links to other places in the manual as relevent (such as Appendix A). (This last notion is something I would like to see employed throughout TextBook more, as listed in the "TextBook Solely":/home/www/zendstudio/dokuwiki/bin/doku.php?id=current_events#textbook_solely section of the Current Events page.) Anyway, just some thoughts. What do you think? However it goes, we should make sure everyone is working towards a common goal in the Chapters.
+
+ - andreas 10:32, 19 May 2005 (GMT) I've thought about the *semantic model* a lot but haven't come to a clear picture. Would you think it a good idea for us here to *collect our ideas* about the semantic model, that separation of content and presentation, sections vs. categories here?
+
+One of the first things I read was "Joel's article":http://www.jdueck.net/article/10/textpattern-semantics which influenced my understanding. Perhaps we could use that as a basis? Has anyone got other, better, alternative approaches?
+

@@ -1,0 +1,44 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:comment_name />
+
+
+The "comment&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_name tag is a _single_ tag which is used to display a link using the commenter's name as text. If email address is supplied and "allowed to be viewed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#never_display_email_9, an email link is created. Otherwise, if a website is entered, the website URL is used. If neither is supplied, name displays as plain text.
+
+"Commenter's name and/or email address can be set as a requirement":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#comments.
+
+Used in a comments display form.
+
+h3(sectionedit1#attributes). Attributes
+
+*"link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#link=“boolean”*
+ Whether to display as link or plain text. Values:
+
+bc(code). 1
+
+
+(yes) or
+
+bc(code). 0
+
+
+(no). Default is
+
+bc(code). 1
+
+
+.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1comments_display_form). Example 1: Comments Display Form
+
+<pre class="code">
+&lt;txp:comment_message /&gt;
+
+&lt;p&gt;&lt;small&gt;&amp;#8212; &lt;txp:comment_name /&gt; &lt;txp:comment_time /&gt; 
+    &lt;txp:comment_permlink&gt;#&lt;/txp:comment_permlink&gt;&lt;/small&gt;&lt;/p&gt;
+</pre>
+
+Other tags used: "comment&#95;message":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_message, "comment&#95;permlink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_permlink, "comment&#95;time":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_time
+

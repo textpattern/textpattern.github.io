@@ -1,0 +1,81 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_article_category>
+
+
+The "if&#95;article&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_article_category tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_article_category>
+...conditional statement...
+</txp:if_article_category>
+
+
+It will execute the contained statement if the category name associated with a particular article (Category1 or Category2) matches the values of the name and number attributes. Should be used in an article "form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#name=“category”*
+ Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the Category tab. Also note that if you had called your category *My Category Name* it becomes *my-category-name* when used in tags. Default: unset. *"number":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#number=“number”*
+ match category in Cat1 or Cat2 (or both). Values:
+
+bc(code). 1
+
+
+or
+
+bc(code). 2
+
+
+Default: unset, causing both categories to be matched against the specified name.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_matched_category). Example 1: Display matched category
+
+bc(code). <txp:if_article_category name="prose" number="1">
+    <p><txp:category1 /></p>
+</txp:if_article_category>
+
+
+*What this does...*
+ If the Category1 assigned to the article is “Prose”, the category is displayed. Note that the category *name* is used in this tag, which may be different to its displayed category *Title*. When categories are created, TXP converts them to lower case and replaces spaces with hyphens. So, for example, “My Category” has a name “my-category”.
+
+Other tags used: "category1":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category1
+
+h4(#example_2using_the_tag_with_else). Example 2: Using the tag with [[else]]
+
+bc(code). <txp:if_article_category name="prose" number="1">
+    <p>Fun With Prose</p>
+<txp:else />
+    <p><a href="index.php">Home</a></p> 
+</txp:if_article_category>
+
+
+*What this does...*
+ Displays the welcome text if the category and category number match the given values, or shows a default link otherwise.
+
+Other tags used: "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else
+
+h4(#example_3display_a_list_of_matching_links). Example 3: Display a list of matching links
+
+In an article form, put the following set of conditionals for each category you want to look for:
+
+bc(code). <txp:if_article_category name="yourcategory" number="1">
+<ul>
+    <txp:article_custom form="sub" category="yourcategory" sortby="Posted" sortdir="asc" />
+</ul>
+</txp:if_article_category>
+
+
+And then your article form (in this case called 'sub') can be used to list links to other articles like this:
+
+bc(code). <li><txp:permlink><txp:title /></txp:permlink></li>
+
+
+*What it does...*
+ Lists articles of the "same category as the current article's Category1":http://forum.textpattern.com/viewtopic.php?id=12303
+
+Other tags used: "article&#95;custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom, "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else, "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title, "permlink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlink
+

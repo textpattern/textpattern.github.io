@@ -1,0 +1,203 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:related_articles>
+
+
+The "related&#95;articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles tag can be used as either a _single_ tag or a _container_ tag, and is used to produce a list of related (by category) articles.
+
+When used as a _container_ tag, it must be specified as an opening and closing pair of tags, like this:
+
+bc(code). <txp:related_articles>
+...contained statements...
+</txp:related_articles>
+
+
+This is equivalent to putting the contained statements into a form named “my&#95;form” and using
+
+bc(code). <txp:related_articles form="my_form" />
+
+
+.
+
+Related matches are selected as follows:
+
+If a match to category 1 ("category1":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category1) or category 2 ("category2":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category2) of the individual article being displayed is found in either category 1 or category 2 of any other article in the database, it will cause that article to be listed as related.
+
+If category 1 of the individual article being displayed is left blank and category 2 is not blank, then all other articles are selected as being related. If both categories are left blank, then no articles are selected.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“form name”*
+ Use specified form. Default: unset. If left empty, the permlinked article title(s) will be displayed. *"limit":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#limit=“integer”*
+ Number of articles to display. Default:
+
+bc(code). 10
+
+
+. *"match":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#match=“category number(s)”*
+ Restrict to articles related by specified category. Values: “
+
+bc(code). Category1
+
+
+”, “
+
+bc(code). Category2
+
+
+”, “
+
+bc(code). Category1,Category2
+
+
+”. Default: “
+
+bc(code). Category1,Category2
+
+
+”. *"no&#95;widow":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#no_widow=“boolean”*
+ Whether to inhibit line breaks in titles which would leave just a single word on the last line ("widows":http://en.wikipedia.org/wiki/Widow_%28typesetting%29). Values:
+
+bc(code). 0
+
+
+single words allowed;
+
+bc(code). 1
+
+
+single words not allowed on their own line Default: Whatever is set in "Advanced Preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#prevent_widowed_words_in_article_titles3f *"section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#section=“section name(s)”*
+ Restrict to articles from specified section(s). Values: (comma separated list of) section name(s). Default: unset. *"sort":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#sort=“sort value(s)”*
+ How to sort resulting list. Values:
+
+bc(code). ID
+
+
+(article id#)
+
+bc(code). AuthorID
+
+
+(author)
+
+bc(code). LastMod
+
+
+(date last modified)
+
+bc(code). LastModID
+
+
+(author of last modification)
+
+bc(code). Posted
+
+
+(date posted)
+
+bc(code). Title
+
+
+bc(code). Category1
+
+
+bc(code). Category2
+
+
+bc(code). comments_count
+
+
+bc(code). Status
+
+
+bc(code). Section
+
+
+bc(code). Keywords
+
+
+bc(code). Image
+
+
+(article image id#)
+
+bc(code). url_title
+
+
+bc(code). custom_1
+
+
+through
+
+bc(code). custom_10
+
+
+(From 4.2.0 on:
+
+bc(code). custom_//n//
+
+
+)
+
+bc(code). rand()
+
+
+("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand). Default:
+
+bc(code). Posted desc
+
+
+.
+
+"common&#95;presentational&#95;attributes":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_presentational_attributes
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1labelled_list_of_related_articles). Example 1: Labelled list of related articles
+
+bc(code). <txp:related_articles label="Related" limit="5" />
+
+
+h4(#example_2related_articles_as_an_unordered_list). Example 2: Related articles as an unordered list
+
+bc(code). <txp:related_articles label="Related" limit="10" break="li" wraptag="ul" />
+
+
+*Styles could go this way*
+
+bc(code). .related_articles {
+     list-style-type:none;
+}
+
+
+h4(#example_3used_as_a_container_tag). Example 3: Used as a container tag
+
+bc(code). <txp:related_articles label="Related" labeltag="h3" limit="10" break="li" wraptag="ul">
+    <txp:permlink><txp:title /></txp:permlink> by <txp:author />
+</txp:related_articles>
+
+
+Other tags used: "permlink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlink, "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title, "author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author.
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_406). Version 4.0.6
+
+* support added for comma separated list for section attribute
+
+h4(#version_407). Version 4.0.7
+
+<ul>
+<li>Can be used as a container tag.</li>
+<li>bc(code). form
+
+
+<p>and</p>
+bc(code). no-widow
+
+
+<p>attributes added.</p></li>
+</ul>
+

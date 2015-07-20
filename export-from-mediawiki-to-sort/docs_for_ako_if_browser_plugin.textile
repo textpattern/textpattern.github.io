@@ -1,0 +1,79 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Plugin Archive Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive &#124; "plugins&#95;alphabetical&#95;by&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name &#124; "plugins&#95;grouped&#95;by&#95;purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose
+
+h3(sectionedit1#overview_of_plugin). Overview of Plugin
+
+Conditionally include enclosed text based on the user agent of the browser viewing the page.
+
+h3(sectionedit2#general_instructions). General Instructions
+
+(needed)
+
+h3(sectionedit3#examples_of_use). Examples of Use
+
+The following will only display in Internet Explorer 5.5:
+
+bc(code). <txp:ako_ifBrowser checkfor="ie55">Only IE 5.5!</txp:ako_ifBrowser>
+
+
+The following will only display in Opera 6 or Opera 8 the first time a user views the page in said browser
+
+bc(code). <txp:ako_ifBrowser checkfor="op6,op8" cookie="1">Only Opera 6 or Opera 8</txp:ako_ifBrowser>
+
+
+The following will only output the user agent string of the browser that is being used to view the site:
+
+bc(code). <txp:ako_ifBrowserUA />
+
+
+h3(sectionedit4#tags). Tags
+
+<ul>
+<li>cookie - This tag will set a cookie the first time a user views the page, and will only display the enclosed text the first time a user views the page. 1 = on, 0 = off. By default, this behavior is off (0).</li>
+<li><p>viewua- This tag will output the user agent of the browser that is being used to view the page. 1 = on, 0 = off. By defualt it is set to off (0). Please note that if this attribute is set to on (1) *the plugin will* *_only_* *output the user agent. Nothing else.* This also does the same thing as calling</p>
+bc(code). <txp:ako_ifBrowserUA />
+
+
+<p>.</p></li>
+<li>checkfor - This is the one and only tag. This decides which browsers will have the enclosed text viewable. You &#42;must&#42; use the codes bellow for this tag. Otherwise, it will not work at all.
+<ul>
+<li>bt - Bots (includes Google, Yahoo!, MSN, and most other bots)</li>
+<li>cm - Camino</li>
+<li>ch - Chimera</li>
+<li>fb - Firebird</li>
+<li>ff - Firefox</li>
+<li>ic - iCab</li>
+<li>ie4 - Internet Explorer 4.0, _Windows_</li>
+<li>ie50 - Internet Explorer 5.0, _Windows_</li>
+<li>ie52 - Internet Explorer 5.2, _Mac_</li>
+<li>ie55 - Internet Explorer 5.5, _Windows_</li>
+<li>ie60 - Internet Explorer 6.0, _Windows_</li>
+<li>ie70 - Internet Explorer 7.0b, _Windows_</li>
+<li>kq - Konquerer</li>
+<li>lk - Links</li>
+<li>lx - Lynx</li>
+<li>mz - Mozilla</li>
+<li>ns48 - Netscape 4.8</li>
+<li>ns7 - Netscape 7</li>
+<li>ns8 - Netscape 8</li>
+<li>op6 - Opera 6</li>
+<li>op7 - Opera 7</li>
+<li>op8 - Opera 8</li>
+<li>op85 - Opera 8.5</li>
+<li>ow - Omniweb</li>
+<li>px - Pheonix</li>
+<li>ps2 - PlayStation Portable</li>
+<li>sf85 - Safari v85 (1.0)</li>
+<li>sf100 - Safari v100 (1.1)</li>
+<li>sf125 - Safari v125 (1.2)</li>
+<li>sf412 - Safari v412 (2.0)</li>
+<li>ur - Unregognized browser</li>
+</ul>
+</li>
+</ul>
+
+h3(sectionedit5#previous_versions). Previous Versions
+
+* "ako&#95;if&#95;browser-0&#95;1.txt0.1":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_if_browser-0_1.txt0.1 (09/09/05)
+

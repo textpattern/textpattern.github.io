@@ -1,0 +1,54 @@
+\n"mininav&#95;troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
+
+Some common issues with searching:
+
+h3(sectionedit1#blank_page). Blank page
+
+If your search results page is _completely_ blank (a zero byte page), the problem is probably a fatal error that is not displayed because of your "Production Status":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences#production_status setting. Switch to either Testing or Debugging mode and see if that gives any clues.
+
+h3(sectionedit2#page_layout_with_no_articles). Page layout with no articles
+
+If your search results page shows its normal page layout with no articles, you should check three things:
+
+<ol>
+<li>The sections containing the articles in question have *Include in site search* set to Yes on the "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections tab.</li>
+<li>The search term you're using really does match some articles. Test the same search term in the *Search Body &amp; Title* box on the Articles tab and make sure that finds at least one *_Live_* article. If not, use a single, common word, and try varying the case. Case sensitive search results are caused by an incorrect collation setting on your textpattern database or table.</li>
+<li><p>If you're using a special section such as</p>
+bc(code). /search/
+
+
+<p>to display your search results, make sure your</p>
+bc(code). <txp:article />
+
+
+<p>tag doesn't specify</p>
+bc(code). searchall="0"
+
+
+<p> -  this will force it to look for articles in the</p>
+bc(code). search
+
+
+<p>section.</p>
+bc(code). searchall="1"
+
+
+<p>is the default; this tells the article tag to display results from all sections that have *Include in site search* set to Yes.</p></li>
+</ol>
+
+h3(sectionedit3#wrong_articles_are_displayed). Wrong articles are displayed
+
+If your search results page displays the wrong articles  -  the same articles as your front page, for example  -  it's probably because you're using the "article&#95;custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom tag instead of the "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tag.
+
+bc(code). <txp:article_custom />
+
+
+is context insensitive; that is, it always displays the same list of articles regardless of the URL or query parameters.
+
+Either change your page template to use
+
+bc(code). <txp:article />
+
+
+instead, or use a separate section and template to display the search results.
+

@@ -1,0 +1,42 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:link_category />
+
+
+The "link&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_category tag is a _single_ tag which returns the link category as text. This tag is used in a “link” form or inside the "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist container tag to return information about the current link in a "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist.
+
+h3(sectionedit1#attributes). Attributes
+
+*"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“class name”*
+ CSS class to apply to the wraptag Default: unset. *"label":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#label=“text”*
+ Label for the top of the list. Default: unset. *"labeltag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#labeltag=“tag text”*
+ HTML tag to wrap the label at the top of the list. Default: unset. *"title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#title=“integer”*
+ Display link category name or its title. Values:
+
+bc(code). 0
+
+
+(category name) or
+
+bc(code). 1
+
+
+(category title). Default:
+
+bc(code). 0
+
+
+. *"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag text”*
+ HTML tag to be used to wrap the category, without brackets. Default: unset.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_a_link_with_class_attribute). Example 1: Display a link with class attribute
+
+bc(code). <a class="thislink" href="<txp:link_url />">
+<txp:link_name escape="html" />
+</a> : <txp:link_category title="1" />
+
+
+Other tags used: "link&#95;url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_url, "link&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_name
+

@@ -1,0 +1,133 @@
+\n"mininav&#95;tag&#95;basics":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tag_basics
+
+"Container tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=self-closed_versus_container_tags in Textpattern are great for making lists and you use "conditional&#95;tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=conditional_tags to get there.
+
+In TXP your visitors are in one of two _views_; either an *individual* (article) view or a *list* view. You don't need to worry about managing which is which, because Textpattern take care of that for you, but you can decide what action you are going to take when a vistor views your site in either state.
+
+h3(sectionedit1#displaying_category_lists). Displaying category lists
+
+When you show visitors an article, you can opt to make the categories to which it belongs hyperlinkable. If a visitor clicks one of these links, they are taken to a category list showing other articles in the same category. Textpattern automatically switches from _individual article_ mode to _list_ mode; the magic behind how the content changes on-screen is fairly simple with containers and conditionals.
+
+On your default article page you might see something like this:
+
+<pre class="code">
+&lt;txp:if_category&gt;
+
+   &lt;h2&gt;&lt;txp:category title=&quot;1&quot; /&gt;&lt;/h2&gt;
+
+   &lt;txp:article limit=&quot;5&quot; wraptag=&quot;div&quot; class=&quot;hfeed&quot;&gt;
+      &lt;h3&gt;&lt;txp:permlink&gt;&lt;txp:title /&gt;&lt;/txp:permlink&gt;&lt;/h3&gt;
+      &lt;txp:excerpt /&gt;
+   &lt;/txp:article&gt;
+
+&lt;txp:else /&gt;
+
+   &lt;txp:article wraptag=&quot;div&quot; class=&quot;hfeed&quot; /&gt;
+
+&lt;/txp:if_category&gt;
+</pre>
+
+Taking this block by block we see that the conditional "if&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_category determines if the visitor has clicked a category hyperlink. If they have, we are in the *list* view. If they have not, the "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else portion is executed.
+
+In this example, the "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article in the _else_ portion is treated as an individual article, by virtue of it not being a category list. In more complex pages it may be part of a larger nested structure and therefore could be a different type of list (e.g. search results), but for now we'll take it at face value and assume it is an individual article.
+
+Since the only attributes in use in this
+
+bc(code). <txp:article />
+
+
+tag are
+
+bc(code). wraptag
+
+
+and
+
+bc(code). class
+
+
+, the tag will use the _default_ form to render the article, and wrap the entire contents in
+
+bc(code). <nowiki><div class="hfeed">...</div></nowiki>
+
+
+HTML tags. If you had specified your own
+
+bc(code). form
+
+
+attribute, the article contents would be rendered by your chosen form instead.
+
+The interesting part is if the visitor is viewing a list. In this case, the first thing that happens is to display the "category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category title inside HTML
+
+bc(code). <nowiki><h2></nowiki>
+
+
+tags.
+
+Next, we call the standard article tag but instead of using the *default* form to render its contents, we use the tag as a container.
+
+Since we are in a *list* view we have told the article tag to
+
+bc(code). limit
+
+
+its output and only show a maximum of 5 articles per page. Again, we are wrapping the article list in
+
+bc(code). <nowiki><div class="hfeed">...</div></nowiki>
+
+
+tags.
+
+The tags inside the _article_ container dictate how we will render each article in the list. In this example, we will show each article's title wrapped in
+
+bc(code). <nowiki><h3></nowiki>
+
+
+tags, permalinked to its individual article contents. Beneath each title is the corresponding article's excerpt.
+
+In just a few simple tags you have automatically rendered a list of articles. The tags have:
+
+# Determined if the visitor is browsing a category list or not
+# Displayed a list of 5 article titles and excerpts if they are
+# Displayed a single article if they are viewing an individual article
+
+That is the fundamental building block of how container and conditional tags can make building lists of things easy.
+
+One thing to note: containers are great for simple content like this but if you find yourself repeating the same contained content over and over in a Page or across a series of Pages, you can make it easier on yourself by using a "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained instead. You then just write the container content once and use the
+
+bc(code). form="my_contained_stuff"
+
+
+attribute in self-closing "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tags to use it.
+
+h3(sectionedit2#article_navigation_lists_and_their_differences). Article Navigation Lists and their Differences
+
+Towards the bottom of the default Page template there are two different types of navigation in use; one to leaf through articles one by one (next article, previous article) and one to step through pages of articles in blocks of _N_ articles. It often looks something like this:
+
+<pre class="code">
+&lt;txp:if_individual_article&gt;
+
+   &lt;txp:link_to_prev&gt;Â« &lt;txp:prev_title /&gt;&lt;/txp:link_to_prev&gt; 
+   &lt;txp:link_to_next&gt;&lt;txp:next_title /&gt; Â»&lt;/txp:link_to_next&gt;
+
+&lt;txp:else /&gt;
+
+   &lt;txp:older&gt;Â« &lt;txp:text item=&quot;older&quot; /&gt;&lt;/txp:older&gt; 
+   &lt;txp:newer&gt;&lt;txp:text item=&quot;newer&quot; /&gt; Â»&lt;/txp:newer&gt;
+
+&lt;/txp:if_individual_article&gt;
+</pre>
+
+As you can see, if a visitor is looking at an individual article they will see Â« and Â» links to the articles either side of the current one.
+
+If, however, a visitor is viewing a list of your articles (perhaps you have elected to show them 5 at a time, as in the example above), they will see Â« and Â» links that take them to a list of the next 5 oldest or next 5 newest articles, respectively.
+
+h3(sectionedit3#going_further). Going further
+
+These are just two examples of how conditionals and containers can help your visitors filter and navigate your content. You can build up more complicated pages with nested conditional tags to handle the different type of lists  -  search results, author lists, section lists, and so on.
+
+If you prefer, you may elect to break your pages down into discrete chunks to keep things a little simpler. Or you can use Containers / Forms or a combination of the two to render your individual articles and lists. You could even use some or all of your conditional tags in a Form and use the same Form for lists and individual articles, or use a series of Forms for each type of content.
+
+The flexibility of TXP is in this approach; it empowers you to choose the method that works best for your particular application. After a little while you get a feel for the mechanism that works best for you, and you will refine this as you become more experienced and your site portfolio grows.
+

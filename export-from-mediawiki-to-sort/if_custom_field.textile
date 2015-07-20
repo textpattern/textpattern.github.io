@@ -1,0 +1,162 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_custom_field>
+
+
+The "if&#95;custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_custom_field tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_custom_field>
+...conditional statement...
+</txp:if_custom_field>
+
+
+The tag will execute the contained statements if one or more custom fields for a given article have content. The contents of a custom field can be displayed with the "custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field tag.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"match":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#match=“match type”*
+ How you wish your value to be tested. Choose from:
+
+bc(code). exact
+
+
+: value text must exactly match the custom field
+
+bc(code). any
+
+
+: checks if any of the given comma-separated list of *value*s occur anywhere in the custom field
+
+bc(code). all
+
+
+: checks if all of the given comma-separated list of *value*s occur anywhere in the custom field
+
+bc(code). pattern
+
+
+: allows you to specify a regular expression in your *value* attribute to match against the custom field Default: exact. *"name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#name=“field name”*
+ The custom field name you wish to check. *"separator":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#separator=“character”*
+ If you wish to treat your custom field as a list of items  -  so that each item is a discrete entity and tested separately when using *any* or *all* matching  -  specify the delimiter that you use in the custom field. This attribute is ignored if using *exact* or *pattern* matching *"value":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#value=“field value”*
+ The custom field content you want to check for a match.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_contents_of_custom_fields). Example 1: Display contents of custom fields
+
+bc(code). <txp:if_custom_field name="subtitle"> 
+  <txp:custom_field name="subtitle" />
+</txp:if_custom_field>
+
+
+*What it does...*
+ Checks if a custom field has any content (at all) and display it. *Why you might do it...*
+ Say, you are publishing book reviews on your site and you use custom fields to enter the author, title, publisher and year of publication ("see example":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field#examples). Some of the books have a subtitle, others don't so the conditional checks if the custom field you named “subtitle” holds any content and if it does, it will be displayed. If it's empty, the field won't turn up on the page.
+
+The whole set of custom fields could look like this:
+
+bc(code). <p><txp:custom_field name="author" />: <txp:custom_field name="title" /> <br />
+  <txp:if_custom_field name="subtitle"> 
+    <txp:custom_field name="subtitle" /><br />
+  </txp:if_custom_field>
+published by <txp:custom_field name="publisher" /> in <txp:custom_field name="year" />.</p>
+
+
+For a *book that has a subtitle*, this may be seen:
+
+bc(code). <p>Stephen Covey: The Seven Habits of Highly Effective People<br />
+Powerful Lessons in Personal Change<br />
+published by Simon & Schuster in 2002.</p>
+
+
+For a *book without a subtitle*, this might be shown:
+
+bc(code). <p>J.R.R. Tolkien: The Lord of the Rings<br />
+published by HarperCollins in 2004.</p>
+
+
+Other tags used: "custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field
+
+h4(#example_2check_custom_field_value). Example 2: Check custom field value
+
+A mood indicator:
+
+<pre class="code">
+&lt;txp:if_custom_field name=&quot;mood&quot; value=&quot;happy&quot;&gt;
+  &lt;img src=&quot;/images/happy-face.gif&quot; alt=&quot;&quot; /&gt;
+&lt;/txp:if_custom_field&gt;
+
+&lt;txp:if_custom_field name=&quot;mood&quot; value=&quot;sad&quot;&gt;
+  &lt;img src=&quot;/images/sad-face.gif&quot; alt=&quot;&quot; /&gt;
+&lt;/txp:if_custom_field&gt;
+</pre>
+
+*What it does...*
+ Checks the content of the custom field named
+
+bc(code). mood
+
+
+to see if it matches the text “happy” or “sad”. Depending which one it matches determines which of the emoticons is displayed. *Why you might do it...*
+ If you define a custom field “mood”, you can enter a word to indicate your mood while writing an article. You enter either “happy” or “sad”.
+
+h4(#example_3use_the_tag_with_else). Example 3: Use the tag with [[else]]
+
+bc(code). <txp:if_custom_field name="website">
+  <txp:custom_field name="website" />
+<txp:else />
+  <p>Unfortunately, this band hasn't got a website.</p>
+</txp:if_custom_field>
+
+
+*What it does...*
+ If the custom field named 'website' has some content, display it, otherwise display a standard message. *Why you might do it...*
+ If you publish music reviews and you've set up some custom fields for the band name, the album title and the band's website. But not all bands have a website and you want to display a standard message if a band hasn't got one.
+
+Other tags used: "custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field, "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else
+
+h4(#example_4display_a_conditional_statement_based_on_a_comma_separated_value). Example 4: Display a conditional statement based on a comma separated value
+
+bc(code). <txp:if_custom_field name="animals" separator="," match="any" value="monkeys">  
+  <p>The monkeys are eating bananas.</p>
+<txp:else />
+  <p>The bears ate all the monkeys. How sad.</p>
+</txp:if_custom_field>
+
+
+*What it does...*
+ Checks the content of the custom field named
+
+bc(code). animals
+
+
+which has a comma separated list of animals. It checks if it contains the text “monkeys”, and displays a conditional statement if it does.
+
+Other tags used: "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_430). Version 4.3.0
+
+<ul>
+<li><p>Attribute</p>
+bc(code). val
+
+
+<p>deprecated and renamed to</p>
+bc(code). value
+
+</li>
+<li><p>Added the</p>
+bc(code). match
+
+
+<p>and</p>
+bc(code). separator
+
+
+<p>attributes</p></li>
+</ul>
+

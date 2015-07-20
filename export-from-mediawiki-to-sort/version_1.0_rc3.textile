@@ -1,0 +1,2 @@
+\n - REDIRECT "version&#95;1.0&#95;rc3&#95;changelog":/home/www/zendstudio/dokuwiki/bin/doku.php?id=version_1.0_rc3_changelog
+

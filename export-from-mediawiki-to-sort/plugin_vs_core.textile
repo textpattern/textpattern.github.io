@@ -1,0 +1,31 @@
+\nWhen someone writes a "feature&#95;requests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feature_requests on the "appropriate forum":http://forum.textpattern.com/viewforum.php?id=2, an important thing to keep in mind is whether the feature should be a plugin, or be integrated into the core of Textpattern.
+
+A “core” feature, is something that is avalaible natively within Textpattern, without any plugins involved. It has several advantages over a plugin:
+
+# *Quality of code*: not that plugins authors don't write good code, but the overall rating of the Textpattern code is generally very good. And most plugin users don't know enough PHP to rate the plugins they use. A core feature ensures everyone that the feature won't break a shared hosting server for example
+# *Ascendant &amp; descendant compatibility*: Textpattern's authors use extensive tests to make sure a new feature won't break older ones, and that old features won't stop working in the future
+# *Extensive debugging*: since a core feature is more likely to be widely used, or to affect other core features, a bug has more chance of being discovered and corrected
+
+However, and it's a *huge* however, adding core feature can't, aren't, and shouldn't be added without thinking it through. They have inherent issues:
+
+# *Don't bloat*: a path chosen by many other web software, and we all know the results. 50 lines of code and a button somewhere in the backend might not seem like a lot. But add this one, and that one, and that other one, and you'll get thousands of lines of code. This _will_ slow down the overall software
+# *Confusing*: adding more buttons, commands, features can confuse a beginner because he won't know where to start, or won't understand how to achieve a particular web feature when so many Textpattern tools can do the job
+# *Slow down new features and maintenance*: adding more things means there are more things to debug and check for compatibility when other features are added
+# *Limited time &amp; resources*: the core Textpattern development team is deliberately kept small, and they don't get paid to fulfill their own feature requests. The Textpattern dev team has limited ressources and, more importantly, limited time to do it. You don't want them working on something someone else can do
+
+Plugins on the other hand are good. They are only installed and used by the webmasters who need them, they don't usually use hundreds lines of code, and so are easier (and often faster) to improve, maintain, and debug. But they have one serious issue, their lifetime and maintainer.
+
+When a webmaster uses a plugin to achieve a goal on its website, if that goal is “critical” then he should seriously think it through. Because if:
+
+# a new Textpattern version breaks the plugin
+# the plugin is not maintained anymore
+# a security flaw is discovered with it
+
+and the plugin author does not (or can't) fix it, the site may not function as you intend.
+
+An example: let's say you use a plugin to create links to resources (like articles, images or files) inside your articles. It's been a couple of months, you have a couple hundreds articles, with around half a dozen links in each article. A security flaw is discovered in Textpattern, and fixed. The webmaster updates their Textpattern install, and the link plugin doesn't work anymore. If the plugin's author is not around, or does not maintain the plugin, the webmaster's website is now broken and it would take some degree of handywork to correct it.
+
+In those areas (defined as “it will break my website if the plugin stops working”), it might be best to have a native core feature to work with.
+
+So, it's not a good idea to request things, tools, or features for the Textpattern core without thinking them through. If they are carefully thought out, most of the time the developers will answer them. *As a rule of thumb*, it's generally a good idea to request for a plugin first, and if needed to lobby the dev team to integrate the plugin into core when the feature has been tested, refined and improved. But not everything is meant to be a plugin, especially if you don't have the PHP skills to correct the errors and bugs yourself.
+

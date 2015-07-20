@@ -1,0 +1,111 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:author />
+
+
+The "author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author tag is a _single_ tag that is used to return the name of the author of the currently displayed article.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#link=“boolean”*
+ Make text a link to the author's posts. Values:
+
+bc(code). 0
+
+
+(no) or
+
+bc(code). 1
+
+
+(yes). Default:
+
+bc(code). 0
+
+
+. *"section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#section=“section name”*
+ Only link to articles from the named section. Default: unset. *"this&#95;section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#this_section=“boolean”*
+ Only link to other articles from the same section as the current article. Values:
+
+bc(code). 0
+
+
+(no) or
+
+bc(code). 1
+
+
+(yes). Default:
+
+bc(code). 0
+
+
+. *"title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#title=“boolean”*
+ Whether to display the author's real name (1) or login name (0). Default: 1.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1link_to_list_of_author_s_articles). Example 1: Link to list of author's articles
+
+The author's name in this article form is a hyperlink to a list of articles by this author.
+
+<pre class="code">
+&lt;h1&gt;&lt;txp:title /&gt;&lt;/h1&gt;
+
+&lt;txp:body /&gt;
+
+&lt;p class=&quot;author-date&quot;&gt;
+Posted By: &lt;txp:author link=&quot;1&quot; /&gt; @ &lt;txp:posted /&gt;
+&lt;/p&gt;
+</pre>
+
+Other tags used: "posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted, "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title, "body":/home/www/zendstudio/dokuwiki/bin/doku.php?id=body
+
+h4(#example_2author_landing_page). Example 2: Author landing page
+
+Display the author's name above a list of articles by that author when visiting
+
+bc(code). site.com/author/Author+Name
+
+
+URLs.
+
+bc(code). <txp:if_author>
+   <h1>Articles by author: <txp:author /></h1>
+   <txp:article form="article_listing" limit="5" />
+</txp:if_author>
+
+
+Other tags used: "if&#95;author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_author, "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_450). Version 4.5.0
+
+* Permitted the tag to be used on author list landing pages
+
+h4(#version_430). Version 4.3.0
+
+<ul>
+<li><p>Added the</p>
+bc(code). title
+
+
+<p>attribute.</p></li>
+</ul>
+
+h4(#version_404). Version 4.0.4
+
+<ul>
+<li>bc(code). section
+
+
+<p>,</p>
+bc(code). this_section
+
+
+<p>added.</p></li>
+</ul>
+

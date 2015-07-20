@@ -1,0 +1,20 @@
+\nHere are a smattering of historical Textpattern sites produced independently by community members. We try to separate them by _active_ and _dead_. Frankly, dead links and outdated information isn't doing anybody any good, so there's really no point adding a site if it's just content ROT (Redundant, Outdated, Trivial).
+
+Don't add project links that are already in the main navigation!
+
+h3(sectionedit1#active_sites). Active sites
+
+* "TXP Magazine":http://txpmag.com/ (magazine for the open source publishing community)
+* "Txp Tips":http://txptips.com (tips and tutorials)
+* "TxPlanet":http://txplanet.net/ (feeds and links from around the Textpattern world)
+* "TXPQ":http://txpq.com/ (community interviews)
+
+h3(sectionedit2#defunct_and_dead). Defunct and dead
+
+Seriously, please don't add historical links that just mislead people to crap (or gone) information. We'll keep these here as examples of what not to promote. Keep official sources updated and you'll do the project good.
+
+* "Textpattern Tags: A Manual for Impatient Users":http://kusor.com/en/txptags/5/index (Defunct.) Official source is now the Tag Reference.
+* "We Love Textpattern":http://welovetxp.com/ (Defunct!) Supported source is now TXP's "Exhibit":http://txpmag.com/exhibit.
+* "Txp Manual":http://txpmanual.com (Dead!) Official source is (and always has been) the "Textpattern User Manual":/home/www/zendstudio/dokuwiki/bin/doku.php?id=index wiki.
+* "Textpattern Snippets":http://textsnippets.com (Dead!) Official source is now the Tag Reference, and you should find useful code tips at "TXP Tips":http://txptips.com.
+

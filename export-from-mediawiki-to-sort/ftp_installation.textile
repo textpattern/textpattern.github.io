@@ -1,0 +1,164 @@
+\nMake sure you have the minimum "system requirements":http://textpattern.com/about/119/system-requirements to run Textpattern.
+
+Then start with the _simple instructions_ below. If you have trouble (unlikely), then look at the detailed instructions further down the page. Upgrading instructions are at the very end.
+
+h3(sectionedit1#simple_installation_instructions). Simple installation instructions
+
+The user-friendly version:
+
+# "Download":http://textpattern.com/download/ the latest _.zip/.gzip_ package (currently version "txp&#95;current&#95;version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version).
+# Create a new folder (_e.g._, “txp-unzipped”) on your local drive, move the zip file into it, and unpack "the file tree contents":https://github.com/textpattern/textpattern.
+# Create an FTP connection to your server (sometimes SFTP is necessary, depending on your host requirements), and move the unpacked file tree to your web domain root (or subdirectory if you plan to run it that way).
+# Create a MySQL database and the associated user and password for it.
+# Open a web browser and go to *domain.tld/textpattern/setup/index.php* (or *domain.tld/sub-directory/textpattern/setup/index.php* if you're running it from a sub directory), where “domain.tld” is your web domain (and “sub-directory” is your actual sub-directory of choice).
+# Follow the instructions in the web browser.
+
+h3(sectionedit2#detailed_installation_instructions). Detailed installation instructions
+
+In case you need more explanation...
+
+*INSTALLATION FILE PACKAGE*
+
+Relates with step 2 in the "simple instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ftp_installation#simple_installation_instructions above. Textpattern is designed to work exactly as the folders and files are organized in the unpacked _.zip/.gzip_ file package. *Do not move or rename any of the folders or files* or Textpattern will not work.
+
+The unpacked "file tree":/home/www/zendstudio/dokuwiki/bin/doku.php?id=4_5.2_file_tree described:
+
+<ul>
+<li>bc(code). textpattern
+
+
+<p>â€” This is the folder that all the core scripting and functionality</p></li>
+<li>bc(code). images
+
+
+<p>â€” This folder is empty by default, but will be utilized later in the course of building your site, particularly if/when using the upload features in the admin-side's "Images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel panel.</p></li>
+<li>bc(code). files
+
+
+<p>â€” This folder is empty by default, but will be used if/when you use the upload features in the admin-side's "files":/home/www/zendstudio/dokuwiki/bin/doku.php?id=files panel.</p></li>
+<li>bc(code). rpc
+
+
+<p>â€” This folder is where the XML-RPC functionality is kept.</p></li>
+<li>bc(code). sites
+
+
+<p>â€” This folder contains a _site1_ template, and provides support for "multiple&#95;websites&#95;with&#95;a&#95;single&#95;textpattern&#95;installation":/home/www/zendstudio/dokuwiki/bin/doku.php?id=multiple_websites_with_a_single_textpattern_installation.</p></li>
+<li>bc(code). index.php
+
+
+<p>â€” The default location of your site; where web users will arrive, and where content publishing happens dynamically.</p></li>
+<li>bc(code). .htaccess
+
+
+<p>â€” An important file for many reasons that are out of scope here, but not the least of which is handling URL formatting.</p></li>
+<li>bc(code). css.php
+
+
+<p>â€” Handles the site's styles.</p></li>
+<li>bc(code). README.txt
+
+
+<p>â€” Provides brief instruction on installing and upgrading.</p></li>
+<li>bc(code). HISTORY.txt
+
+
+<p>â€” The installation changelog.</p></li>
+</ul>
+
+*ROOT OR SUBDIRECTORY INSTALLATION?*
+
+Relates with step 3 in the "simple instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ftp_installation#simple_installation_instructions. If you plan to manage your entire website with Textpattern, then installing in the root domain (_e.g._, *domain.tld*) is likely how you'll do it.
+
+On other hand, if Textpattern will only be used to run a blogâ€”alongside other systems used in website construction, for exampleâ€”then you may need to install Textpattern in a sub-directory (domain.tld/*blog*).
+
+*FTP or SFTP TRANSFER*
+
+Relates with step 3 in the "simple instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ftp_installation#simple_installation_instructions. To get files to your server, you will need to use some form of FTP or Secure-FTP (SFTP). Some web hosts require SFTP (_e.g._, Transmit3 for Mac or WinSCP3 for Windows).
+
+Setting up your FTP/SFTP client is beyond scope here, but once done, you should be able to make a connection with your hosted website, and drag/drop your unpacked file tree to the root (or sub-directory) location on your hosted web server.
+
+*INSTALLATION PROCESS*
+
+In other words, what you do at yoursite.tld/textpattern.
+
+h4(#step_1language_selection). Step 1: Language selection
+
+When you load the setup URL correctly in your browser, you'll see “Welcome to Textpattern” and a drop-down list for choosing a language. This language will be used for the installation screens and as the initial default for your Textpattern user interface.
+
+h4(#step_2database_setup). Step 2: Database setup
+
+Now you will see the database setup screen, where you will add information about your MySQL database, and verify the site paths that it indicates.
+
+This specific step requires you having first done step 4 in the "simple instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ftp_installation#simple_installation_instructions. If you haven't done that at this point, stop with the setup process and go do the following:
+
+# Use phpMyAdmin, for example, to create a database for your Textpattern installation and give it a name.
+# Create a database user and associated password. Give the account “write” privileges on the database.
+
+When the database is created, return to the database setup screen in the web browser and fill in the needed database details. Note that your web host user account ID may be needed as a prefix for the fields _MySQL login_ and _MySQL database_.
+
+Here is a guide for how it should look:
+
+* MySQL login: *_yourhostID&#95;databaseUserID_*
+* MySQL password: *_databasePassword_*
+* MySQL server: *_localhost_* (If “localhost” does not work, check with your host provider about what to use.)
+* MySQL database: *_yourhostID&#95;datbaseName_*
+* Table prefix: *_prefix&#95;_* (e.g., _txp&#95;_, _txp2&#95;_, _cats&#95;_, _whatever&#95;_)
+
+The Textpattern setup screen will indicate that you don't need to provide a table prefix if this will be your only installation of Textpattern. It is advised that you create a prefix anyway. You might not need a second installation of Textpattern right now, but you might want to have one at a later point in time, and providing a prefix for this installation enables you to do that later.
+
+Make sure you use "valid characters for MySQL":http://dev.mysql.com/doc/mysql/en/legal-names.html for the prefix, only underscore (&#95;), dollar ($), letters and numbers are allowed.
+
+The site paths should already be filled in on your setup screen. You only need to verify that they are correct; but don't think too much about this, because if you added your Textpattern files as described previously, then these paths will be correct and you don't have to do anything.
+
+h4(#step_3creating_your_configphp_file). Step 3: Creating your //config.php// file
+
+If everything goes well up to this point, Textpattern will generate a snippet of code and ask you to copy/paste it into your configuration file on your server, replacing the contents of the file.
+
+The file you'll actually be looking for is
+
+bc(code). textpattern/config-dist.php
+
+
+. Open the file and paste in the snippet of generated code (overwriting all file contents). Then save it. Then rename the file to just
+
+bc(code). config.php
+
+
+.
+
+Go back to your browser with the config setup screen, and click the “_I did it_” button for the configuration setup.
+
+h4(#step_4create_the_login_account). Step 4: Create the login account
+
+The next screen is to create your Textpattern administration login account, which will also generate the necessary tables in the MySQL database.
+
+(Note this is *not* the same as the ID and password used for your database, as discussed above.)
+
+h4(#step_5confirmation). Step 5: Confirmation
+
+Textpattern will let you know if all has gone well, and ask you delete the _setup_ directory for security reasons. Do it now.
+
+Use your FTP client and browse to
+
+bc(code). /textpattern/setup
+
+
+and delete the _setup_ folder (and all contents) from your server.
+
+Return to the browser and click the “main interface” link at the top of the screen, which will take you to the administration login screen for your new Textpattern site.
+
+h4(#step_6first_login_screen). Step 6: First Login Screen
+
+You should now have reached the administration login screen for your Textpattern installation. Bookmark the location for easy reference; though you only need to remember the login is always at the textpattern folder default (_i.e._, _example.com/textpattern_).
+
+To login to your admin interface, use the login information you created in Step 3 above. If you want to avoid logging in each time you visit, make sure the check box is selected (*not advised* if you share your computer with anyone).
+
+*Congratulations! You've installed Textpattern.* There are some final security checks to take care of, so give yourself a pat and then get started with "administration&#95;workflow":/home/www/zendstudio/dokuwiki/bin/doku.php?id=administration_workflow.
+
+h3(sectionedit3#upgrading_your_installation). Upgrading your installation
+
+See "upgrading&#95;downgrading&#95;nightlies&#95;and&#95;bleeding&#95;edge":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_downgrading_nightlies_and_bleeding_edge.
+
+"ftp&#95;installation&#95;translations":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=ftp_installation_translations
+

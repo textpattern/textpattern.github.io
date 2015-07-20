@@ -1,0 +1,118 @@
+\n
+
+h3(sectionedit1#overview). Overview
+
+Admin-side plugins add a whole new level of options. There are still some limitations, but not many, if you're motivated.
+
+h3(sectionedit2#built-in_user_roles_and_their_abilities). Built-in User Roles and Their Abilities
+
+bc(code). $txp_permissions = array(
+    'admin'                       => '1,2,3,4,5,6',
+    'admin.edit'                  => '1',
+    'admin.list'                  => '1,2,3',
+    'article.delete.own'          => '1,2,3,4',
+    'article.delete'              => '1,2',
+    'article.edit'                => '1,2,3',
+    'article.edit.published'      => '1,2,3',
+    'article.edit.own'            => '1,2,3,4,5,6',
+    'article.edit.own.published'  => '1,2,3,4',
+    'article.publish'             => '1,2,3,4',
+    'article.php'                 => '1,2',
+    'article'                     => '1,2,3,4,5,6',
+    'list'                        => '1,2,3,4,5,6',
+    'category'                    => '1,2,3',
+    'css'                         => '1,2,      6',
+    'diag'                        => '1,2',
+    'discuss'                     => '1,2,3',
+    'file'                        => '1,2,3,4,  6',
+    'file.edit'                   => '1,2,      6',
+    'file.edit.own'               => '1,2,3,4,  6',
+    'file.delete'                 => '1,2',
+    'file.delete.own'             => '1,2,3,4,  6',
+    'file.publish'                => '1,2,3,4,  6',
+    'form'                        => '1,2,3,    6',
+    'image'                       => '1,2,3,4,  6',
+    'image.edit'                  => '1,2,3,    6',
+    'image.edit.own'              => '1,2,3,4,  6',
+    'image.delete'                => '1,2',
+    'image.delete.own'            => '1,2,3,4,  6',
+    'import'                      => '1,2',
+    'link'                        => '1,2,3',
+    'link.edit'                   => '1,2,3',
+    'link.edit.own'               => '1,2,3',
+    'link.delete'                 => '1,2',
+    'link.delete.own'             => '1,2,3',
+    'log'                         => '1,2,3',
+    'page'                        => '1,2,3,    6',
+    'plugin'                      => '1,2',
+    'prefs'                       => '1,2',
+    'section'                     => '1,2,3,    6',
+    'tab.admin'                   => '1,2,3,4,5,6',
+    'tab.content'                 => '1,2,3,4,5,6',
+    'tab.extensions'              => '1,2',
+    'tab.presentation'            => '1,2,3,    6',
+    'tag'                         => '1,2,3,4,5,6',
+);
+
+
+h4(#publisher_1). Publisher (1)
+
+* can manage articles, comments and links
+** can use PHP in articles if admin Preference is enabled
+* can manage images and files
+* can manage sections and categories
+* can manage pages, forms and style
+* can view diagnostic information
+* can manage site preferences
+* can manage users
+* can manage visitor logs
+* can manage plugins
+* can import data
+
+h4(#managing_editor_2). Managing Editor (2)
+
+* can manage articles, comments and links
+** can use PHP in articles if admin Preference is enabled
+* can manage images and files
+* can manage sections and categories
+* can manage pages, forms and style
+* can view diagnostic information
+* can manage site preferences
+* can view users
+* can manage visitor logs
+* can manage plugins
+* can import data
+
+h4(#copy_editor_3). Copy Editor (3)
+
+* can manage articles with some limitation:
+** cannot delete those belonging to other users
+* can manage comments and links
+* can manage images and files
+* can manage sections and categories
+* can manage pages and forms
+* can view users
+* can manage visitor logs
+
+h4(#staff_writer_4). Staff Writer (4)
+
+* can manage own articles, view other users' articles
+* can manage images and files
+
+h4(#freelancer_5). Freelancer (5)
+
+* can manage own articles in a limited sense:
+** can only modify article until is published
+** can apply status of only Draft, Hidden or Pending
+* can view other users' articles
+
+h4(#designer_6). Designer (6)
+
+* can manage own articles in a limited sense:
+** can only modify article until is published
+** can apply status of only Draft, Hidden or Pending
+* can view other users' articles
+* can manage images and files
+* can manage sections
+* can manage pages, forms and style
+

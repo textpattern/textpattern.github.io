@@ -1,0 +1,90 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+h3(sectionedit1#overview). Overview
+
+This solution is a way to properly distribute and feed mp3 files, format them so that they go out with the Artist â€“ Track for their name and Id3 tag
+
+h3(sectionedit2#what_you_will_need). What you will need
+
+* You need to install this plugin: "plugin-jnm-audio":http://www.textpatternmania.com/2006/04/29/plugin-jnmaudio
+* You need to set up custom fields in admin/ advanced prefs for your mp3 items
+** Artist
+** Track Name
+** Mp3 url
+
+h3(sectionedit3#the_process). The Process
+
+* Set up a new page template named *Podcast* under Presentation/Pages with a valid XML RSS Namespace, like so:
+
+<pre class="code">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;rss xmlns:itunes=&quot;http://www.itunes.com/dtds/podcast-1.0.dtd&quot; version=&quot;2.0&quot;&gt;
+
+  &lt;channel&gt;
+
+    &lt;title&gt;Through It All Podcast&lt;/title&gt;
+    &lt;description&gt;ThroughItAll.net&lt;/description&gt;
+    &lt;link&gt;http://www.throughitall.net&lt;/link&gt;
+    &lt;language&gt;en-us&lt;/language&gt;
+    &lt;copyright&gt;Copyright 2006&lt;/copyright&gt;
+    &lt;lastBuildDate&gt;Sat, 27 May 2006 11:30:00 -0500&lt;/lastBuildDate&gt;
+    &lt;pubDate&gt;Sat, 27 May 2006 11:30:00 -0500&lt;/pubDate&gt;
+    &lt;docs&gt;http://blogs.law.harvard.edu/tech/rss&lt;/docs&gt;
+    &lt;webMaster&gt;matt@thetrc.net&lt;/webMaster&gt;
+
+    &lt;itunes:author&gt;matt @ throughitall.net&lt;/itunes:author&gt;
+
+    &lt;itunes:summary&gt;ThroughItAll.net is a music blog about hardcore, indie, rock, and metal&lt;/itunes:summary&gt;
+
+    &lt;itunes:owner&gt;
+           &lt;itunes:name&gt;Matt&lt;/itunes:name&gt;
+           &lt;itunes:email&gt;matt@thetrc.net&lt;/itunes:email&gt;
+    &lt;/itunes:owner&gt;
+
+&lt;itunes:explicit&gt;No&lt;/itunes:explicit&gt;
+
+&lt;itunes:image href=&quot;http://throughitall.net/podcast.jpg&quot;/&gt;
+
+&lt;txp:article_custom  form=&quot;podcast&quot; sortby=&quot;Posted&quot;  sortdir=&quot;desc&quot; limit=&quot;9&quot; /&gt;
+    
+&lt;/channel&gt;
+
+&lt;/rss&gt;
+</pre>
+
+* Next create an article form named podcast, where the custom fields get your podcast data, like so:
+
+bc(code). <txp:if_custom_field name="Mp3" val=""><txp:else /><item>
+<title><txp:custom_field name="Artist" /> - <txp:custom_field name="Track" /></title>
+<link>http://throughitall.net</link>
+<guid><txp:custom_field name="Mp3" /></guid>
+<description><txp:custom_field name="Artist" /> - <txp:custom_field name="Track" /> - <txp:custom_field name="Official" /></description>
+<enclosure url="<txp:custom_field name="Mp3" />" length="11779397" type="audio/mpeg"/>
+<category>Podcasts</category>
+<pubDate><txp:posted format=â€%a, %d %b %Y %I:%m:%Sâ€ /> GMT</pubDate>
+</item>
+</txp:if_custom_field>
+
+
+* Refine your page template further to taste. If you want to use an excerpt for your feed description tag, the following workaround was suggested on the forum, to get rid of the p tags, that would invalidate the feed.
+
+bc(code). <description>
+<txp:php>
+$text = excerpt ( array () );
+echo strip_tags($text);
+echo "\n";
+</txp:php>
+</description>
+
+
+* Check to see, if your feeds validate. You should be able now to post mp3 articles. For valid mp3 URL's, the following format was suggested instead of http:
+
+bc(code). itms://
+
+
+h4(#resources). Resources
+
+* "itune podcast specs from Apple":http://www.apple.com/itunes/podcasts/techspecs.html
+* "podcasting with textpattern":http://couchfort.net/article/49/podcasting-with-textpattern
+* "pÎ¿dcasting plugin":http://textpattern.org/plugins/739/tru_podcast
+

@@ -1,0 +1,25 @@
+\n
+
+h3(sectionedit1#what_is_this). What is this?
+
+From time to time there is need for Sysops (in TextBook these people are otherwise known as _Language Go-Tos_, or LGTs) to communicate with eachother about changes to the TextBook structure. Discussion here will mostly concern changes to TextBook's main page structure. Other modes for keeping informed of wiki changes are the Forum's "$":http://forum.textpattern.com/viewtopic.php?id=12836 Translation Information] thread, the "change&#95;log":/home/www/zendstudio/dokuwiki/bin/doku.php?id=change_log (English version), and the wiki systems history.
+
+h3(sectionedit2#current_topics_of_discussion). Current Topics of Discussion
+
+(add as needed; remove when obsolete)
+
+h4(#chapter_article_title_changes). Chapter/Article Title Changes
+
+Because TextBook is still growing and changing, it's expected that page titles will not always be appropriately conceived when a page is first created; hence, it is sometimes necessary to change a page title for better content usability. There are two ways to change a page title:
+
+# One is to create a new page with the new title and transfer the page content to the new page (any wiki author can do this). If external links to such a page exist, they will be broken.
+# The other is to use the “*move*” feature (found in a page edit mode as a tab at the top of the edit panel), which essentially renames the existing page (*only Sysops can do this*). This is the better option because it redirects links rather than breaks them.
+
+One other useful thing to keep in mind is you can change a link label to read as anything you want without having to change the name of the page itself. This is easily done using the appropriate wiki syntax.
+
+h4(#wiki_utility_page_changes). Wiki Utility Page Changes
+
+ - hakjoon 02:37, 8 December 2005 (GMT): Made the modifications to the Log In page text as discussed in "the forum":http://forum.textpattern.com/viewtopic.php?pid=89364#p89364.
+
+ - Destry 17:03, 3 Aug 2005 (GMT): Two new pages have been added to the wiki which are intended to assist with collaboration efforts, particularly with TextBook editing in the English version: the "to&#95;do":/home/www/zendstudio/dokuwiki/bin/doku.php?id=to_do page, and the "text&#95;book&#95;collaboration&#95;procedures":/home/www/zendstudio/dokuwiki/bin/doku.php?id=text_book_collaboration_procedures page.
+

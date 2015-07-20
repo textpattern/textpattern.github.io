@@ -1,0 +1,2 @@
+\n - REDIRECT "mac&#95;my&#95;sql&#95;development&#95;servers&#95;using&#95;mamp&#95;application&#95;set":/home/www/zendstudio/dokuwiki/bin/doku.php?id=mac_my_sql_development_servers_using_mamp_application_set
+

@@ -1,0 +1,59 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:text />
+
+
+The "text":/home/www/zendstudio/dokuwiki/bin/doku.php?id=text tag is a _single_ tag which is primarily used to return localized language strings from the
+
+bc(code). txp_lang
+
+
+database table.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"item":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#item=“text”*
+ Piece of text to display, preferably an item from the
+
+bc(code). name
+
+
+column of the
+
+bc(code). txp_lang
+
+
+table. If the given item matches a key there, the contents of the respective item in the
+
+bc(code). data
+
+
+column will be returned. Otherwise, whatever you supply as the
+
+bc(code). item
+
+
+value is returned verbatim.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_some_localized_text). Example 1: Display some localized text
+
+bc(code). <txp:older><txp:text item="older" /></txp:older>
+
+
+*What it does...*
+ Outputs the text 'older' inside the &lt;txp:older /&gt; tag, respecting the current Textpattern language.
+
+*Why you might use this...*
+ Instead of using the tag like this:
+
+bc(code). <txp:older>older</txp:older>
+
+
+which would always render the English text 'older', it replaces the contents with the value assigned to the name 'older' in the current language. So you would see a link with the word 'Ã¤lter' if you were using German (de) as the Textpattern site language.
+
+Other tags used: "older":/home/www/zendstudio/dokuwiki/bin/doku.php?id=older
+

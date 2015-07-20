@@ -1,0 +1,50 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:search_term />
+
+
+The "search&#95;term":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_term tag is a _single_ tag which returns the expression the user searched for through the full text search form.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*_align_[^deprecated^]=“html”*
+ When set to
+
+bc(code). html
+
+
+, HTML entities are used for &lt;, &gt;, and &amp; in the output text. As of Textpattern 4.5 the attribute is deprecated and its use is highly unrecommended. Default:
+
+bc(code). html
+
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_the_search_term_on_the_search_results_page). Example 1: Display the search term on the search results page
+
+bc(code). <txp:if_search>
+<h3>Search results</h3>
+<p>You searched for <strong><txp:search_term /></strong>.</p>
+<txp:article />
+</txp:if_search>
+
+
+Other tags used: "if&#95;search":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_search, "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_450). Version 4.5.0
+
+<ul>
+<li>bc(code). escape
+
+
+<p>attribute deprecated</p></li>
+</ul>
+
+h4(#version_406). Version 4.0.6
+
+* Tag support added
+

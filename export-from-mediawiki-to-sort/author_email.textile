@@ -1,0 +1,53 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:author_email />
+
+
+The "author&#95;email":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author_email tag is a _single_ tag that is used to return the email address of the author of the currently displayed article.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"escape":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#escape=“html”*
+ Escape HTML markup. Default:
+
+bc(code). html
+
+
+*"link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#link=“boolean”*
+ Make text a mailto link. Values:
+
+bc(code). 0
+
+
+(no) or
+
+bc(code). 1
+
+
+(yes). Default:
+
+bc(code). 0
+
+
+.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_email_address). Example 1: Display email address
+
+bc(code). <txp:author_email />
+
+
+h4(#example_2create_a_mailto_link). Example 2: Create a mailto link
+
+bc(code). <txp:author_email link="1" />
+
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_450). Version 4.5.0
+
+* Tag support added
+

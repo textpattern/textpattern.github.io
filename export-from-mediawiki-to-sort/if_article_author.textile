@@ -1,0 +1,35 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_article_author>
+
+
+The "if&#95;article&#95;author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_article_author tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_article_author>
+...conditional statement...
+</txp:if_article_author>
+
+
+The tag will execute the contained statement if the author name associated with a particular article matches the value of the name attribute. Should be used in an article form.
+
+The _name_ attribute requires an author's login name not their Real Name
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#name=“author”*
+ Comma-separated list of author (login) names. Default: unset (i.e. any author at all)
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_some_text_dependent_on_an_article_s_author). Example 1: Display some text dependent on an article's author
+
+bc(code). <txp:if_article_author name="admin">
+    <p>Publisher</p>
+</txp:if_article_author>
+
+
+*What this does...*
+ Displays the text “Publisher” if the article was written (posted) by the author “admin”.
+

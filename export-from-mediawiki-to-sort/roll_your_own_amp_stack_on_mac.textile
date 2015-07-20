@@ -1,0 +1,120 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+This guide will get you up and running with a custom Apache, MySQL, and PHP install on Leopard. Compared to "MAMP.app":http://mamp.info, a homegrown setup uses less resources because you're not using a separate application.
+
+h4(#important). Important
+
+<ul>
+<li><p>Any line beginning with</p>
+bc(code). $
+
+
+<p>represents a shell prompt (/Applications/Utilities/Terminal.app). Type everything after the</p>
+bc(code). $ 
+
+
+<p>.</p></li>
+<li>bc(code). ~/
+
+
+<p>=</p>
+bc(code). /Users/yourShortName
+
+</li>
+</ul>
+
+h4(#mysql). MySQL
+
+<ol>
+<li>Download the "Mac OS X 10.5 package":http://dev.mysql.com/downloads/mysql/5.0.html#macosx-dmg.</li>
+<li>Mount the image</li>
+<li>Install all the pkgs and the MySQL.prefPane</li>
+<li><p>Add the following to</p>
+bc(code). ~/.bash_profile
+
+
+<p>(create it if it doesn't exist)</p>
+bc(code). export PATH="/usr/local/mysql/bin":$PATH
+
+</li>
+</ol>
+
+Your MySQL user is “root” with no password.
+
+h4(#php). PHP
+
+The default PHP install included with Leopard lacks GD, so download and install "Entropy PHP":http://www.entropy.ch/software/macosx/php/#install.
+
+h4(#apache). Apache
+
+To setup the built-in web server, go to System Preferences &gt; Sharing and check “Enable Web Sharing.” You can view the default Apache page at
+
+bc(code). http://localhost/~yourShortName/
+
+
+.
+
+h5(#enable_clean_urls). Enable clean URLs
+
+Use the following for
+
+bc(code). /etc/apache2/users/yourShortName.conf
+
+
+:
+
+bc(code). # http://localhost = http://localhost/~yourShortName
+DocumentRoot /Users/yourShortName/Sites
+<Directory "/Users/yourShortName/Sites/">
+    Options Indexes MultiViews FollowSymLinks
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+</Directory>
+
+
+Restart Apache:
+
+bc(code). $ sudo apachectl restart
+
+
+h5(#virtual_hosts). Virtual hosts
+
+<ol>
+<li><p>Uncomment (remove the hash) this line in</p>
+bc(code). /etc/apache2/httpd.conf
+
+
+bc(code). #Include /private/etc/apache2/extra/httpd-vhosts.conf
+
+</li>
+<li><p>Append “txp.dev” to the 127.0.0.1 line in</p>
+bc(code). /etc/hosts
+
+
+<p>:</p>
+bc(code). 127.0.0.1       localhost txp.dev
+
+</li>
+<li><p>Use the following for</p>
+bc(code). /etc/apache2/extra/httpd-vhosts.conf
+
+</li>
+</ol>
+
+NameVirtualHost &#42;
+
+<pre class="code">
+&lt;VirtualHost *&gt;
+    DocumentRoot /Users/yourShortName/Sites/
+    ServerName localhost
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost *&gt;
+    DocumentRoot /Users/yourShortName/Sites/projects/txp/site/
+    ServerName txp.dev
+&lt;/VirtualHost&gt;
+</pre>
+
+Restart Apache and view "$":http://txp.dev in your browser.
+

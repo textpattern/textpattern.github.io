@@ -1,0 +1,415 @@
+\n
+
+h3(sectionedit1#article_forms). Article Forms
+
+h4(#article_listing). article&#95;listing
+
+<pre class="code">
+&lt;txp:if_first_article&gt;&lt;ul id=&quot;article-list&quot;&gt;&lt;/txp:if_first_article&gt;
+  &lt;li role=&quot;article&quot; itemscope itemtype=&quot;http://schema.org/Article&quot;&gt;
+    &lt;h4 itemprop=&quot;name&quot;&gt;&lt;a href=&quot;&lt;txp:permlink /&gt;&quot; itemprop=&quot;url&quot;&gt;&lt;txp:title /&gt;&lt;/a&gt;&lt;/h4&gt;
+
+    &lt;!-- if the article has an excerpt, display that --&gt;
+    &lt;txp:if_excerpt&gt;
+      &lt;div itemprop=&quot;description&quot;&gt;
+        &lt;txp:excerpt /&gt;
+      &lt;/div&gt;
+    &lt;/txp:if_excerpt&gt;
+
+    &lt;p class=&quot;footnote&quot;&gt;&lt;txp:text item=&quot;posted&quot; /&gt; &lt;time datetime=&quot;&lt;txp:posted format='iso8601' /&gt;&quot; itemprop=&quot;datePublished&quot;&gt;&lt;txp:posted /&gt;&lt;/time&gt;, &lt;txp:text item=&quot;author&quot; /&gt; &lt;span itemprop=&quot;author&quot;&gt;&lt;txp:author link=&quot;1&quot; this_section=&quot;1&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;txp:if_last_article&gt;&lt;/ul&gt;&lt;/txp:if_last_article&gt;
+</pre>
+
+h4(#comments_display). comments&#95;display
+
+<pre class="code">
+&lt;!-- added an id attribute to the section so we can link directly to here e.g. http://mysite.com/section/article#comments-head --&gt;
+
+&lt;section id=&quot;comments-head&quot;&gt;
+
+&lt;h3&gt;&lt;txp:text item=&quot;comments&quot; /&gt;&lt;/h3&gt;
+
+&lt;!-- if there are comments, display them (note: example code below overrides the global preference setting for comments wrapping by stating
+  attributes of wraptag=&quot;&quot; and break=&quot;&quot;, you are instead using ol and li tags below)... --&gt;
+&lt;txp:if_comments&gt;
+  &lt;ol class=&quot;comments-list&quot; itemscope itemtype=&quot;http://schema.org/UserComments&quot;&gt;
+
+    &lt;txp:comments wraptag=&quot;&quot; break=&quot;li&quot; /&gt; &lt;!-- links by default to form: 'comments.comment.txp' unless you specify a different form --&gt;
+
+  &lt;!-- if this is a comment preview, display it (but only if there is no error) --&gt;
+    &lt;txp:if_comments_preview&gt;
+      &lt;li&gt;
+        &lt;p id=&quot;cpreview&quot;&gt;&lt;txp:text item=&quot;press_preview_then_submit&quot; /&gt;&lt;/p&gt;
+        &lt;txp:comments_preview wraptag=&quot;&quot; /&gt; &lt;!-- links by default to form: 'comments.comment.txp' unless you specify a different form --&gt;
+      &lt;/li&gt;
+    &lt;/txp:if_comments_preview&gt;
+
+  &lt;/ol&gt;
+
+&lt;txp:else /&gt;
+
+&lt;!-- else if there are no comments and if user is currently previewing comment,display it (but only if there is no error) --&gt;
+  &lt;txp:if_comments_preview&gt;
+    &lt;ol class=&quot;comments-list&quot; itemscope itemtype=&quot;http://schema.org/UserComments&quot;&gt;
+      &lt;li&gt;
+        &lt;p id=&quot;cpreview&quot;&gt;&lt;txp:text item=&quot;press_preview_then_submit&quot; /&gt;&lt;/p&gt;
+        &lt;txp:comments_preview wraptag=&quot;&quot; /&gt; &lt;!-- links by default to form: 'comments.comment.txp' unless you specify a different form --&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+
+  &lt;txp:else /&gt;
+
+&lt;!-- else just display that there are simply no comments whatsoever :( ...but only if comments are allowed --&gt;
+    &lt;txp:if_comments_allowed&gt;
+      &lt;p&gt;&lt;txp:text item=&quot;no_comments&quot; /&gt;&lt;/p&gt;
+    &lt;/txp:if_comments_allowed&gt;
+
+  &lt;/txp:if_comments_preview&gt;
+
+&lt;/txp:if_comments&gt;
+
+&lt;!-- if new comments are allowed for this article then display comment form, if not then display 'closed' messages --&gt;
+&lt;txp:if_comments_allowed&gt;
+  &lt;section id=&quot;comments-form&quot;&gt;
+
+    &lt;!-- comment invite text is taken for the article's comment invitation field on the 'write' screen --&gt;
+    &lt;h3&gt;&lt;txp:comments_invite showcount=&quot;0&quot; textonly=&quot;1&quot; showalways=&quot;1&quot; /&gt;&lt;/h3&gt;
+
+    &lt;txp:comments_form isize=&quot;32&quot; msgcols=&quot;64&quot; msgrows=&quot;4&quot; /&gt; &lt;!-- links by default to form: 'comment_form.comment.txp' unless you specify a different form --&gt;
+  &lt;/section&gt;
+
+&lt;txp:else /&gt;
+  
+  &lt;!-- display either a comments expired message or a comments disabled message --&gt;
+  &lt;txp:if_comments&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;txp:text item=&quot;comments_expired&quot; /&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;txp:else /&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;txp:text item=&quot;comments_closed&quot; /&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/txp:if_comments&gt;
+&lt;/txp:if_comments_allowed&gt;
+
+&lt;/section&gt;
+</pre>
+
+h4(#default). default
+
+<pre class="code">
+&lt;article role=&quot;article&quot; itemscope itemtype=&quot;http://schema.org/Article&quot;&gt;
+
+&lt;!-- if not an individual article then make the title h1 a link --&gt;
+&lt;txp:if_individual_article&gt;
+  &lt;h1 itemprop=&quot;name&quot;&gt;&lt;txp:title /&gt;&lt;/h1&gt;
+&lt;txp:else /&gt;
+  &lt;h1 itemprop=&quot;name&quot;&gt;&lt;a href=&quot;&lt;txp:permlink /&gt;&quot; itemprop=&quot;url&quot;&gt;&lt;txp:title /&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;/txp:if_individual_article&gt;
+
+  &lt;p&gt;&lt;strong&gt;&lt;txp:text item=&quot;posted&quot; /&gt;&lt;/strong&gt; &lt;time datetime=&quot;&lt;txp:posted format='iso8601' /&gt;&quot; itemprop=&quot;datePublished&quot;&gt;&lt;txp:posted /&gt;&lt;/time&gt;&lt;br&gt;
+    &lt;strong&gt;&lt;txp:text item=&quot;comments&quot; /&gt;&lt;/strong&gt; &lt;a href=&quot;&lt;txp:permlink /&gt;#comments-head&quot; title=&quot;&lt;txp:text item='view' /&gt;…&quot; itemprop=&quot;discussionUrl&quot; itemscope itemtype=&quot;http://schema.org/UserComments&quot;&gt;
+
+&lt;!-- if comments then display the number, if no comments then print 'none' --&gt;
+&lt;txp:if_comments&gt;
+  &lt;span itemprop=&quot;interactionCount&quot;&gt;&lt;txp:comments_count /&gt;&lt;/span&gt;
+&lt;txp:else /&gt;
+  &lt;span itemprop=&quot;interactionCount&quot;&gt;&lt;txp:text item=&quot;none&quot; /&gt;&lt;/span&gt;
+&lt;/txp:if_comments&gt;
+
+  &lt;/a&gt;&lt;/p&gt;
+
+  &lt;div itemprop=&quot;articleBody&quot;&gt;
+    &lt;txp:body /&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;&lt;strong&gt;&lt;txp:text item=&quot;author&quot; /&gt;&lt;/strong&gt; &lt;span itemprop=&quot;author&quot;&gt;&lt;txp:author link=&quot;1&quot; this_section=&quot;1&quot; /&gt;&lt;/span&gt;
+
+  &lt;!-- only display categories if they are actually set for an article, otherwise omit --&gt;
+  &lt;txp:if_article_category&gt;
+    &lt;br&gt;&lt;strong&gt;&lt;txp:text item=&quot;categories&quot; /&gt;&lt;/strong&gt; &lt;span itemprop=&quot;keywords&quot;&gt;&lt;txp:category1 title=&quot;1&quot; link=&quot;1&quot; /&gt;&lt;txp:if_article_category number=&quot;1&quot;&gt;&lt;txp:if_article_category number=&quot;2&quot;&gt;, &lt;/txp:if_article_category&gt;&lt;/txp:if_article_category&gt;&lt;txp:category2 title=&quot;1&quot; link=&quot;1&quot; /&gt;&lt;/span&gt;
+  &lt;/txp:if_article_category&gt;
+
+  &lt;/p&gt;
+
+&lt;!-- if this is an individual article then add the comments section via form: comments_display.article.txp --&gt;
+&lt;txp:if_individual_article&gt;
+  &lt;txp:article form=&quot;comments_display&quot; /&gt;
+&lt;/txp:if_individual_article&gt;
+
+&lt;/article&gt;
+</pre>
+
+h4(#search_results). search&#95;results
+
+<pre class="code">
+&lt;txp:if_search&gt;
+
+&lt;!-- count how many results return --&gt;
+  &lt;txp:article limit=&quot;10&quot; pgonly=&quot;1&quot; /&gt;
+
+  &lt;txp:if_search_results&gt;
+
+&lt;!-- if search result count greater than 200 then display excessive results message, otherwise show search result count --&gt;
+    &lt;txp:if_search_results max=&quot;200&quot;&gt;
+      &lt;h3&gt;&lt;txp:search_result_count /&gt; &lt;txp:text item=&quot;matching_search_request&quot; /&gt; ‘&lt;txp:search_term /&gt;’…&lt;/h3&gt;
+    &lt;txp:else /&gt;
+      &lt;h3&gt;&lt;txp:text item=&quot;too_common_search_term&quot; /&gt; ‘&lt;txp:search_term /&gt;’&lt;/h3&gt;
+    &lt;/txp:if_search_results&gt;
+
+&lt;!-- if no search results, then display no search results message --&gt;
+  &lt;txp:else /&gt;
+    &lt;h3&gt;&lt;txp:text item=&quot;no_search_matches&quot; /&gt;&lt;/h3&gt;
+
+  &lt;/txp:if_search_results&gt;
+
+&lt;!-- display resulting articles (10 per page) --&gt;
+  &lt;txp:article limit=&quot;10&quot;&gt;
+
+    &lt;txp:if_first_article&gt;&lt;ul id=&quot;article-list&quot;&gt;&lt;/txp:if_first_article&gt;
+      &lt;li role=&quot;article&quot; itemscope itemtype=&quot;http://schema.org/Article&quot;&gt;
+        &lt;h4 itemprop=&quot;name&quot;&gt;&lt;a href=&quot;&lt;txp:permlink /&gt;&quot; itemprop=&quot;url&quot;&gt;&lt;txp:title /&gt;&lt;/a&gt;&lt;/h4&gt;
+
+&lt;!-- if the article has an excerpt, display that, otherwise show highlighted keywords in context of article --&gt;
+        &lt;txp:if_excerpt&gt;
+          &lt;div itemprop=&quot;description&quot;&gt;
+            &lt;txp:excerpt /&gt;
+          &lt;/div&gt;
+        &lt;txp:else /&gt;
+          &lt;p&gt;&lt;txp:search_result_excerpt /&gt;&lt;/p&gt;
+        &lt;/txp:if_excerpt&gt;
+
+        &lt;p class=&quot;footnote&quot;&gt;&lt;txp:text item=&quot;posted&quot; /&gt; &lt;time datetime=&quot;&lt;txp:posted format='iso8601' /&gt;&quot; itemprop=&quot;datePublished&quot;&gt;&lt;txp:posted /&gt;&lt;/time&gt;, &lt;txp:text item=&quot;author&quot; /&gt; &lt;span itemprop=&quot;author&quot;&gt;&lt;txp:author link=&quot;1&quot; this_section=&quot;1&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;txp:if_last_article&gt;&lt;/ul&gt;&lt;/txp:if_last_article&gt;
+
+  &lt;/txp:article&gt;
+
+&lt;!-- check if there are further results and provide pagination links or disabled buttons depending on the result,
+  this method is more flexibile than using simple txp:older/txp:newer tags --&gt;
+  &lt;txp:if_search_results min=&quot;11&quot;&gt;
+
+    &lt;p id=&quot;paginator&quot;&gt;
+
+    &lt;txp:variable name=&quot;prev&quot; value='&lt;txp:older /&gt;' /&gt;
+    &lt;txp:variable name=&quot;next&quot; value='&lt;txp:newer /&gt;' /&gt;
+
+    &lt;txp:if_variable name=&quot;next&quot; value=&quot;&quot;&gt;
+      &lt;span id=&quot;paginator-l&quot; class=&quot;button disabled&quot;&gt;← &lt;txp:text item=&quot;prev&quot; /&gt;&lt;/span&gt;
+    &lt;txp:else /&gt;
+      &lt;a id=&quot;paginator-l&quot; href=&quot;&lt;txp:newer /&gt;&quot; title=&quot;← &lt;txp:text item=&quot;prev&quot; /&gt;&quot; class=&quot;button&quot;&gt;← &lt;txp:text item=&quot;prev&quot; /&gt;&lt;/a&gt;
+    &lt;/txp:if_variable&gt;
+    &lt;txp:if_variable name=&quot;prev&quot; value=&quot;&quot;&gt;
+      &lt;span id=&quot;paginator-r&quot; class=&quot;button disabled&quot;&gt;&lt;txp:text item=&quot;next&quot; /&gt; →&lt;/span&gt;
+    &lt;txp:else /&gt;
+      &lt;a id=&quot;paginator-r&quot; href=&quot;&lt;txp:older /&gt;&quot; title=&quot;&lt;txp:text item=&quot;next&quot; /&gt; →&quot; class=&quot;button&quot;&gt;&lt;txp:text item=&quot;next&quot; /&gt; →&lt;/a&gt;
+    &lt;/txp:if_variable&gt;
+
+    &lt;/p&gt;
+
+  &lt;/txp:if_search_results&gt;
+
+&lt;/txp:if_search&gt;
+</pre>
+
+h3(sectionedit2#miscellaneous). Miscellaneous
+
+h4(#images). images
+
+<pre class="code">
+&lt;!-- set up a variable to check whether a image also has a caption associated with it... --&gt;
+&lt;txp:variable name=&quot;caption&quot; value='&lt;txp:image_info type=&quot;caption&quot; /&gt;' /&gt;
+
+&lt;!-- ...now use that image caption and wrap img inside a figure with figcaption tags, otherwise just use a plain img tag --&gt;
+&lt;txp:if_variable name=&quot;caption&quot; value=&quot;&quot;&gt;
+
+&lt;!-- image - overriding the width and height to let the image scale to fit parent container --&gt;
+  &lt;p&gt;&lt;txp:image width=&quot;0&quot; height=&quot;0&quot; /&gt;&lt;/p&gt;
+
+&lt;txp:else /&gt;
+
+  &lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+
+&lt;!-- image - overriding the width and height to let the image scale to fit parent container --&gt;
+    &lt;txp:image width=&quot;0&quot; height=&quot;0&quot; /&gt;
+
+&lt;!-- you do not need to specify the attribute type=&quot;caption&quot; as that is the default setting for &lt;txp:image_info /&gt; tag --&gt;
+    &lt;figcaption itemprop=&quot;caption&quot;&gt;&lt;txp:image_info type=&quot;caption&quot; /&gt;&lt;/figcaption&gt;
+
+  &lt;/figure&gt;
+
+&lt;/txp:if_variable&gt;
+</pre>
+
+h4(#search_input). search&#95;input
+
+bc(code). <form role="search" method="get" action="<txp:site_url />">
+  <h4><label for="search-textbox"><txp:text item="search" /></label></h4>
+  <p><input id="search-textbox" type="search" name="q"<txp:if_search> value="<txp:search_term />"</txp:if_search>><input type="submit" value="<txp:text item='go' />"></p>
+</form>
+
+
+h3(sectionedit3#comment_forms). Comment Forms
+
+h4(#comments). comments
+
+<pre class="code">
+&lt;!-- load the comment email into a variable. you will be using below this along with author email variable loaded in form: default.article.txp
+  then check the comment email variable against article author email variable, and if it matches add 'comments-author' class --&gt;
+&lt;txp:variable name=&quot;this_comment&quot; value='&lt;txp:comment_email /&gt;' /&gt;
+&lt;txp:if_variable name=&quot;this_comment&quot; value='&lt;txp:author_email /&gt;'&gt;
+  &lt;article class=&quot;comments comments-author&quot; itemprop=&quot;comment&quot;&gt;
+&lt;txp:else /&gt;
+  &lt;article class=&quot;comments&quot; itemprop=&quot;comment&quot;&gt;
+&lt;/txp:if_variable&gt;
+
+  &lt;h4&gt;
+
+  &lt;span itemprop=&quot;creator&quot;&gt;&lt;txp:comment_name /&gt;&lt;/span&gt;
+
+  &lt;!-- ...now check the comment email variable against article author email variable, and if it matches add '(author)' text --&gt;
+  &lt;txp:if_variable name=&quot;this_comment&quot; value='&lt;txp:author_email /&gt;'&gt;
+    &lt;span class=&quot;is-author&quot;&gt;(&lt;txp:text item=&quot;author&quot; /&gt;)&lt;/span&gt;
+  &lt;/txp:if_variable&gt;
+
+  &lt;!-- add a permlink so people can link direct to this comment --&gt;
+    &lt;span class=&quot;comment-anchor&quot; itemprop=&quot;url&quot;&gt;&lt;txp:comment_permlink&gt;#&lt;/txp:comment_permlink&gt;&lt;/span&gt;
+
+  &lt;/h4&gt;
+
+  &lt;!-- also add a 'since' to show comment freshness --&gt;
+  &lt;p class=&quot;footnote&quot;&gt;&lt;time datetime=&quot;&lt;txp:comment_time format='iso8601' /&gt;&quot; itemprop=&quot;commentTime&quot;&gt;&lt;txp:comment_time /&gt; (&lt;txp:comment_time format=&quot;since&quot; /&gt;)&lt;/time&gt;&lt;/p&gt;
+
+  &lt;div itemprop=&quot;commentText&quot;&gt;
+    &lt;txp:comment_message /&gt;
+  &lt;/div&gt;
+
+&lt;/article&gt;
+</pre>
+
+h4(#comment_form). comment&#95;form
+
+<pre class="code">
+&lt;txp:comments_error wraptag=&quot;ul&quot; break=&quot;li&quot; /&gt;
+
+&lt;p&gt;&lt;txp:text item=&quot;enter_comment_here&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- if there is an error, then inform user --&gt;
+&lt;txp:if_comments_error&gt;
+  &lt;txp:comments_error wraptag=&quot;ol&quot; break=&quot;li&quot; class=&quot;error_message&quot; /&gt;
+&lt;/txp:if_comments_error&gt;
+
+&lt;fieldset&gt;
+
+  &lt;p class=&quot;large&quot;&gt;&lt;label for=&quot;name&quot;&gt;&lt;txp:text item=&quot;comment_name&quot; /&gt; &lt;b class=&quot;required&quot;&gt;*&lt;/b&gt;&lt;/label&gt;&lt;br&gt;
+  &lt;txp:comment_name_input /&gt;&lt;/p&gt;
+
+  &lt;p class=&quot;large&quot;&gt;&lt;label for=&quot;email&quot;&gt;&lt;txp:text item=&quot;comment_email&quot; /&gt; &lt;b class=&quot;required&quot;&gt;*&lt;/b&gt;&lt;/label&gt;&lt;br&gt;
+  &lt;txp:comment_email_input /&gt;&lt;/p&gt;
+
+  &lt;p class=&quot;large&quot;&gt;&lt;label for=&quot;web&quot;&gt;&lt;txp:text item=&quot;comment_web&quot; /&gt;&lt;/label&gt;&lt;br&gt;
+  &lt;txp:comment_web_input /&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;txp:comment_remember /&gt;&lt;/p&gt;
+
+  &lt;p class=&quot;small&quot;&gt;&lt;label for=&quot;message&quot;&gt;&lt;txp:text item=&quot;comment_message&quot; /&gt; &lt;b class=&quot;required&quot;&gt;*&lt;/b&gt;&lt;/label&gt;&lt;br&gt;
+  &lt;txp:comment_message_input /&gt;&lt;/p&gt;
+
+&lt;/fieldset&gt;
+
+&lt;!-- preview and submit buttons (note: submit button will have a class of 'disabled' applied until you have previewed the message at least once) --&gt;
+&lt;p&gt;&lt;txp:comment_preview /&gt; &lt;txp:comment_submit /&gt;&lt;/p&gt;
+</pre>
+
+h4(#popup_comments). popup&#95;comments
+
+<pre class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;&lt;txp:lang /&gt;&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+
+  &lt;title&gt;&lt;txp:page_title /&gt;&lt;/title&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;Textpattern CMS&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;noindex, follow, noodp, noydir&quot;&gt;
+
+  &lt;!-- CSS --&gt;
+  &lt;!-- Google font API (remove this if you intend to use the theme in a project without internet access) --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=PT+Serif:n4,i4,n7,i7|Cousine&quot;&gt;
+
+  &lt;txp:css format=&quot;link&quot; media=&quot;&quot; /&gt;
+  &lt;!-- ...or you can use (faster) external CSS files eg. &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;txp:site_url /&gt;css/default.css&quot;&gt; --&gt;
+
+  &lt;!-- HTML5/Media Queries support for IE &lt; 9 (you can remove this section and the corresponding 'js' directory files if you don't intend to support IE &lt; 9) --&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;&lt;txp:site_url /&gt;js/html5shiv.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;&lt;txp:site_url /&gt;js/css3-mediaqueries.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+
+&lt;/head&gt;
+
+&lt;body id=&quot;popup-page&quot;&gt;
+
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+
+      &lt;!-- this form is only used if you set 'Comments mode' to 'popup' format in preferences --&gt;
+      &lt;txp:popup_comments /&gt;
+
+    &lt;/div&gt; &lt;!-- /.container --&gt;
+  &lt;/div&gt; &lt;!-- /.wrapper --&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+h3(sectionedit4#file_forms). File Forms
+
+h4(#files). files
+
+<pre class="code">
+&lt;!-- set up variables to check whether a file also has a title, description, category associated with it... --&gt;
+&lt;txp:variable name=&quot;file_download_title&quot; value='&lt;txp:file_download_name title=&quot;1&quot; /&gt;' /&gt;
+&lt;txp:variable name=&quot;file_download_description&quot; value='&lt;txp:file_download_description /&gt;' /&gt;
+&lt;txp:variable name=&quot;file_download_category&quot; value='&lt;txp:file_download_category /&gt;' /&gt;
+
+&lt;div itemscope itemtype=&quot;http://schema.org/DataDownloads&quot;&gt;
+
+  &lt;!-- ...if exists, use the file title, otherwise use file name --&gt;
+  &lt;txp:if_variable name=&quot;file_download_title&quot; value=&quot;&quot;&gt;
+    &lt;strong itemprop=&quot;name&quot;&gt;&lt;a href=&quot;&lt;txp:file_download_link /&gt;&quot; title=&quot;&lt;txp:file_download_name /&gt;&quot; itemprop=&quot;url&quot;&gt;&lt;txp:file_download_name /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+  &lt;txp:else /&gt;
+    &lt;strong itemprop=&quot;name&quot;&gt;&lt;a href=&quot;&lt;txp:file_download_link /&gt;&quot; title=&quot;&lt;txp:file_download_name title='1' /&gt;&quot; itemprop=&quot;url&quot;&gt;&lt;txp:file_download_name title=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+  &lt;/txp:if_variable&gt;
+
+  &lt;!-- ...if exists, use the file description, otherwise omit that line --&gt;
+  &lt;txp:if_variable name=&quot;file_download_description&quot; value=&quot;&quot;&gt;
+  &lt;txp:else /&gt;
+  &lt;span itemprop=&quot;description&quot;&gt;&lt;txp:file_download_description /&gt;&lt;/span&gt;&lt;br&gt;
+  &lt;/txp:if_variable&gt;
+
+  &lt;span class=&quot;footnote&quot;&gt;
+
+  &lt;!-- ...if exists, use the file category, otherwise omit that line --&gt;
+  &lt;txp:if_variable name=&quot;file_download_category&quot; value=&quot;&quot;&gt;
+  &lt;txp:else /&gt;
+    &lt;strong&gt;&lt;txp:text item=&quot;category&quot; /&gt;&lt;/strong&gt; &lt;txp:file_download_category /&gt; | 
+  &lt;/txp:if_variable&gt;
+
+    &lt;strong&gt;&lt;txp:text item=&quot;author&quot; /&gt;&lt;/strong&gt; &lt;txp:file_download_author link=&quot;1&quot; /&gt; | 
+    &lt;strong&gt;&lt;txp:text item=&quot;file_size&quot; /&gt;&lt;/strong&gt; &lt;txp:file_download_size /&gt; | 
+    &lt;strong&gt;&lt;txp:text item=&quot;last_modified&quot; /&gt;&lt;/strong&gt; &lt;span itemprop=&quot;dateModified&quot;&gt;&lt;txp:file_download_created /&gt;&lt;/span&gt; | 
+    &lt;strong&gt;&lt;txp:text item=&quot;download_count&quot; /&gt;&lt;/strong&gt; &lt;span itemprop=&quot;interactionCount&quot;&gt;&lt;txp:file_download_downloads /&gt;&lt;/span&gt;
+
+  &lt;/span&gt;
+
+&lt;/div&gt;
+</pre>
+
+h3(sectionedit5#link_forms). Link Forms
+
+h4(#plainlinks). plainlinks
+
+bc(code). <!-- This is being used as an external links form, therefore rel is set to 'external' -->
+<txp:linkdesctitle rel="external" />
+
+

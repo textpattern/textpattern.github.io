@@ -1,0 +1,4 @@
+\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+
+This page has been moved to Tag Reference.
+

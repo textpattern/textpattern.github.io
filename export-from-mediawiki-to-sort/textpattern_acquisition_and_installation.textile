@@ -1,0 +1,21 @@
+\n
+
+h3(sectionedit1#chapter_overview). Chapter Overview
+
+If you are reading this, you probably have decided that Textpattern is right for you and you now want to install it for use, or you are already using it and need to upgrade or update your current version/revision, as the case may be. Whichever scenario is right for you, be sure to read "post&#95;installation&#95;upgrading&#95;updating&#95;suggestions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_installation_upgrading_updating_suggestions and "managing&#95;clean&#95;urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls if you do in fact want clean URLs.
+
+h4(#chapter_2textpattern_acquisition_and_installation). Chapter 2: [[textpattern&#95;acquisition&#95;and&#95;installation]]
+
+* *2.1)*   "installation&#95;overview&#95;and&#95;options":/home/www/zendstudio/dokuwiki/bin/doku.php?id=installation_overview_and_options
+* *2.2)*   "detailed&#95;installation&#95;instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_installation_instructions
+* *2.3)*   "upgrading&#95;to&#95;a&#95;new&#95;version":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_to_a_new_version
+* *2.4)*   "updating&#95;to&#95;a&#95;new&#95;revision":/home/www/zendstudio/dokuwiki/bin/doku.php?id=updating_to_a_new_revision (i.e., a new build of the latest release)
+* *2.5)*   "downgrading&#95;to&#95;an&#95;older&#95;stable&#95;release":/home/www/zendstudio/dokuwiki/bin/doku.php?id=downgrading_to_an_older_stable_release
+* *2.6)*   "post&#95;installation&#95;upgrading&#95;updating&#95;suggestions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_installation_upgrading_updating_suggestions
+
+4.0 OK
+
+* *2.7)*   "managing&#95;clean&#95;urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls
+
+In progress
+

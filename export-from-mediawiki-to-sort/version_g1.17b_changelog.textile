@@ -1,0 +1,10 @@
+\n &#42; Rebuilding the category tree now works as expected
+
+<ul>
+<li><p>The phantom category 'root' should no longer appear when</p>
+bc(code). <txp:category_list />
+
+
+<p>is used.</p></li>
+</ul>
+

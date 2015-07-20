@@ -1,0 +1,124 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:css />
+
+
+The basic "css":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css tag is a _single_ tag and used to output the URL of the style sheet assigned in the "Sections tab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"format":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#format=“value”*
+ How to format output: either return complete "HTML link tag":http://www.w3.org/TR/html4/struct/links.html#edef-LINK with necessary HTML attributes, or only the StyleSheet's URL. Available values are
+
+bc(code). link
+
+
+or
+
+bc(code). url
+
+
+. Default is
+
+bc(code). url
+
+
+. *"media":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#media=“value”*
+ "HTML media attribute":http://www.w3.org/TR/html4/present/styles.html#adef-media to be applied to link tag (when invoked with
+
+bc(code). format="link"
+
+
+). Default is
+
+bc(code). screen
+
+
+. *"name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#name=“style name”*
+ Link to specified style. *"rel":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#rel=“value”*
+ "HTML rel attribute":http://www.w3.org/TR/html4/struct/links.html#adef-rel to be applied to link tag (when invoked with
+
+bc(code). format="link"
+
+
+). Default is
+
+bc(code). stylesheet
+
+
+. *"title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#title=“value”*
+ "HTML title attribute":http://www.w3.org/TR/html4/struct/global.html#adef-title to be applied to link tag (when invoked with
+
+bc(code). format="link"
+
+
+). Default is unset.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1output_the_link_to_the_section_s_default_style_sheet). Example 1: Output the link to the section's default style sheet
+
+bc(code). <head>
+<!-- ...tags... -->
+<txp:css format="link" />
+<!-- ...more tags... -->
+</head>
+
+
+h4(#example_2output_the_link_to_a_named_style_sheet). Example 2: Output the link to a named style sheet
+
+bc(code). <head>
+<!-- ...tags... -->
+<txp:css format="link" name="style_name" />
+<!-- ...more tags... -->
+</head>
+
+
+h4(#example_3output_print_and_alternate_style_sheets). Example 3: Output print and alternate style sheets
+
+bc(code). <head>
+<!-- ...tags... -->
+<txp:css format="link" name="plain" rel="alternate" title="Plain and Simple Style" />
+<txp:css format="link" name="glossy" rel="alternate" title="Glossy Style"/>
+<txp:css format="link" name="print" media="print" />
+<!-- ...more tags... -->
+</head>
+
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_430). Version 4.3.0
+
+<ul>
+<li>bc(code). n
+
+
+<p>attribute deprecated and renamed</p>
+bc(code). name
+
+</li>
+</ul>
+
+h4(#version_404). Version 4.0.4
+
+<ul>
+<li>bc(code). format
+
+
+<p>,</p>
+bc(code). media
+
+
+<p>,</p>
+bc(code). rel
+
+
+<p>,</p>
+bc(code). title
+
+
+<p>added.</p></li>
+</ul>
+

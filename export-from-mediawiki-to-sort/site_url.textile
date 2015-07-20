@@ -1,0 +1,37 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:site_url />
+
+
+The "site&#95;url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_url tag is a _single_ tag which returns the full URL of the site (as defined in the "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences) as text.
+
+If you maintain local development versions of your live sites and import databases between them, then this tag is extremely valuable for ensuring your domain links are never confused (thus broken) between the two locations (see example 1).
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1maintain_accurate_domain_paths). Example 1: Maintain accurate domain paths
+
+The idea is that you don't break URL paths after importing a database from local development to live, or visa versa. By using this tag it will automatically be relative to a given site and you'll never have to manually edit broken domain paths again. A classic example is with navigation links.
+
+bc(code). <ul id="navmenu">
+<li class="articles"><a class="nopad" href="<txp:site_url />articles" title="Articles">Articles</a></li>
+<li class="photos"><a href="<txp:site_url />photos" title="Photographs">Photographs</a></li>
+</ul>
+
+
+h4(#example_2html_header_paths). Example 2: HTML header paths
+
+In your Head section of your HTML pages you might have a variety of links to locations relative to the local server, such as CSS files, Javascript files, a favicon and so forth. The relevance is similar to example #1, you want to ensure the paths are accurate relative to the server if a database has been imported from another location. Following is an example for the _shortcut icon_ file (if you use one).
+
+bc(code). <link rel="shortcut icon" href="<txp:site_url />favicon.ico" />
+
+
+h4(#example_3display_a_hyperlink_to_download_a_text_file). Example 3: Display a hyperlink to download a text file
+
+bc(code). <a href="<txp:site_url />download.txt">Download</a>
+
+

@@ -1,0 +1,6 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+On YouTube you will find a number of video tutorials:
+
+"$":http://www.youtube.com/results?search_query=textpattern
+

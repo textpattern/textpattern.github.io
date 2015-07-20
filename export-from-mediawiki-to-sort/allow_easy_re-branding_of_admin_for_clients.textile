@@ -1,0 +1,39 @@
+\n
+
+h3(sectionedit1#problem_definition). Problem definition
+
+* The developer needs a quick visual cue to tell which site they are currently editing
+* The developer wants to quickly modify the admin to their visual preferences
+* The developer wants to present a customised product / the client expects this
+* 'Textpattern' should be transparent to the client (but appropriate credit should remain)
+
+<hr />
+
+h3(sectionedit2#solution_ideas). Solution ideas
+
+h5(#a_well_structured_css_file). A well structured CSS file
+
+With quick customisation options moved to the top &amp; well commented
+
+* Font-sizes done as percentage of a base style (= only one change needed)
+* All colour options presented together (or abstracted to separate 'colour.css' file?)
+
+h5(#provide_customisation_options_under_the_admin_panel). Provide customisation options under the Admin panel
+
+* Options to select default font-size, colour scheme, upload logo (see Backpack, Basecamp for examples)
+
+or if that's too complicated...
+
+* Provide a form with access to relevant html of admin header and another for CSS
+* Allow switch from top to side Navigation
+
+h5(#theme_skin_switcher). Theme/skin switcher
+
+Drop in new themes to a folder, select from a list.
+
+<hr />
+
+h3(sectionedit3#votes). Votes
+
+* hazel (CSS file)
+

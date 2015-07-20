@@ -1,0 +1,24 @@
+\n
+
+h3(sectionedit1#rc3_and_v_10_issues). RC3 and V 1.0 Issues
+
+ - Boblet 00:18, 22 Sep 2005 (GMT) Maybe I haven't had enough coffee yet, but shouldn't the "if individual article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_individual_article page description “The if&#95;individual&#95;article tag is a Conditional Tag, and therefore a Container Tag, as all conditional tags are container tags. The tag will execute the contained statement if an article list is being displayed.” actually read “The tag will execute the contained statement if an article list is being displayed.”?  - Rick 01:07, 22 Sep 2005 (GMT)Yes, its fixed - thanks (are we top posting here?)
+
+ - Rick 17:08, 31 Mar 2005 (GMT) I noticed an entry in Appendix C about “listform” in RC3. My most recent copy of RC3 has this code incorporated in “doArticles”:
+
+bc(code). //the listform
+$form = gAtt($atts, 'listform', $form);
+
+
+I am assuming from this that it is still there. On the other hand, I have seen discussion on the forums about doArticle not behaving as it once did. My most recent RC3 is three weeks old - any news on this?
+
+ - Destry 23:29, 31 Mar 2005 (GMT): Hate to say it, but I have yet to look at rc3, but I'm getting to that this weekend. I thought I read a forum thread somewhere by zem that the *listform* attribute was being dropped in v1.0; but then maybe they reverted on that. According to Rick there it still seems to be hanging around.
+
+ - Rick 06:55, 4 Apr 2005 (GMT) True statement, listform is no longer functionally there. If you place it in a tag, the tag will use it - but only it, it no longer serves a purpose. Temporary transitional arrangement perhaps.
+
+ - Destry 11:13, 4 Apr 2005 (GMT): Good to know, thanks. By the way, Rick, From what I've seen, I think you're doing a great job with the tag appendix...and Mary too! Just thought you should know.
+
+ - Rick 01:51, 6 Apr 2005 (GMT) Thank you and Mary, so very nice a second pair of eyes!
+
+ - Rick 02:34, 25 Apr 2005 (GMT) A bit of contention with the txp:if&#95;article&#95;category tag, I left the original entries&lt;"if&#95;article&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:txp:if_article_category&gt; in place and added my take on it.
+

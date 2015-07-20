@@ -1,0 +1,45 @@
+\n"mininav&#95;core&#95;function&#95;reference":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_core_function_reference
+
+h3(sectionedit1#description). Description
+
+string "href":/home/www/zendstudio/dokuwiki/bin/doku.php?id=href ( string _$item_, string _$href_, string _$atts = “”_ )
+
+Returns an HTML anchor tag.
+
+h3(sectionedit2#parameters). Parameters
+
+*item*
+ Link text *href*
+ Anchor
+
+bc(code). href
+
+
+attribute *atts*
+ Other tag attributes as a string (if used, must begin with a space)
+
+h3(sectionedit3#return_values). Return Values
+
+Returns the anchor tag as a string if _$item_ has content, otherwise an empty string.
+
+h3(sectionedit4#changelog). Changelog
+
+h3(sectionedit5#examples). Examples
+
+bc(code). $href = 'http://thissite.com/';
+$item = 'Visit this site';
+$atts = ' class="external"';
+$out = href($item, $href, $atts);
+// <a class="external" href="http://thissite.com/">Visit this site</a>
+
+
+h3(sectionedit6#see_also). See Also
+
+* "s&#95;link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=s_link
+* "e&#95;link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=e_link
+* "w&#95;link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=w_link
+* "d&#95;link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=d_link
+* "a&#95;link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=a_link
+
+h3(sectionedit7#notes). Notes
+

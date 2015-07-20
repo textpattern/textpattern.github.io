@@ -1,0 +1,16 @@
+\n &#42; Security: Fix several vulnerabilites. Updates are &#42;absolutely&#42; recommended for sites running any older version. Thanks, Neal Poole.
+
+* Passwords are case-sensitive.
+* Hotlink protection for files: Downloads from a web-accessible “/files” directory are inhibited. The “/file&#95;download/$id/example.foo” route is the only valid way to access downloadable files. Requires an Apache webserver and usage of the sample .htaccess file.
+* Empty &lt;txp:variable&gt;&lt;/txp:variable&gt; container sets a variable's value to “”.
+* WordPress import tool fixed for WP 3.x.
+* Context bug in messy mode fixed
+* get&#95;pref() now honours per-user prefs in all cases
+* Developer: txp&#95;validate() accepts a '$log' parameter to discern between “real user login” vs. “just validating credentials” usage.
+* Developer: sendAsyncEvent() accepts parameter $format.
+* Developer: Introducing escape&#95;js() and send&#95;script&#95;response().
+* Developer: Taghandler functions &#42;must not&#42; contain upper case letters.
+* Developer: Taghandler functions &#42;must not&#42; be defined within a &lt;txp:php&gt; element.
+* Developer: phpass 0.3 / genuine for password portability, hashing, stretching, and salting. Old-style passwords will be migrated upon a user's first login. Persistent hash values in database are incompatible with previous versions.
+* jQuery 1.5.1
+

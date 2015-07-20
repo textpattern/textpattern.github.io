@@ -1,0 +1,30 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:linkdesctitle />
+
+
+The "linkdesctitle":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linkdesctitle tag is a _single_ tag which is used to return an HTML hyperlink, defined under the "links":/home/www/zendstudio/dokuwiki/bin/doku.php?id=links tab.
+
+It uses the *Title* field as the link's text; the *Description* field contents will be displayed as an anchor title attribute. This tag is used in a link form or inside the "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist container tag.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"rel":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#rel=“relation”*
+ Value for the HTML
+
+bc(code). rel
+
+
+attribute. Default: unset.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_a_link_and_its_title_field_contents). Example 1: Display a link and its Title field contents
+
+bc(code). <nowiki><p><txp:linkdesctitle /></p></nowiki>
+
+
+Link, _title=Description_
+

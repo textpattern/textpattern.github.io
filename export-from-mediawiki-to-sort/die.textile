@@ -1,0 +1,2 @@
+\n - REDIRECT "txp&#95;die":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_die
+

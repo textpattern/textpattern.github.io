@@ -1,0 +1,30 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:link_author />
+
+
+The "link&#95;author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_author tag is a _single_ tag that Textpattern will replace with the author's name associated with the current link in a "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist. It can *only* be used inside
+
+bc(code). <txp:linklist />
+
+
+.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“class name”*
+ CSS class attribute to be applied to the wraptag. Default: Unset. *"link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#link=“link type (boolean)”*
+ Whether to hyperlink the author (1) or not (0). Default: 0. *"section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#section=“section name”*
+ Direct any linked author name to the nominated section instead of to the default (front) page. Default: Unset. *"this&#95;section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#this_section=“boolean”*
+ If set to 1, the linked author name will direct users to an author list in the current section. Default: 0. *"title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#title=“boolean”*
+ Whether to display the author's real name (1) or login name (0). Default: 1. *"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag”*
+ HTML tag (without brackets) to wrap around the author name. Default: unset.
+
+h3(sectionedit2#genealogy). Genealogy
+
+h4(#version_430). Version 4.3.0
+
+* tag introduced
+

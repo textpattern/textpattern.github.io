@@ -1,0 +1,153 @@
+\n
+
+h3(sectionedit1#overview). Overview
+
+Static articles are often a necessary component of webpages. You may, for example, wish to create an “About Me” page where you can post an article with your biography, and article with your “thank you's” and an article with a copyright notice. These articles would be classified as “static content” because they are not meant to change or be associated with your blog articles. Textpattern can be used in two different ways to support you at that task. In contrast to a fully static page coded in native HTML, you gain the advantages of Textpattern's infrastructure components like article und page template editing facilities, referrer logging and permission restrictions.
+
+h5(#option_1static_page_templates). Option 1: Static page templates
+
+Static pages are composed by means of one static page template _per page_ which contains all necessary HTML and
+
+bc(code). <[[txp:article_custom_:]]>
+
+
+tags to render the desired layout and include the desired articles.
+
+* Pro: You can put articles in any order you wish and apply a different form to each article if you wish.
+* Con: Modifications to the contents of the static page might force you to edit both articles _and_ the page template. This might be considered harmful in a situation where authors and page designers work independently.
+
+h5(#option_2sticky_articles). Option 2: Sticky articles
+
+Static pages are composed by means of one static page template _per layout_ which contains all necessary HTML and Textpattern tags to render the desired layout.
+
+Articles flagged as “sticky” differ from regular articles in the following aspects:
+
+<ol>
+<li><p>They will not show up in a regular article or article&#95;custom list. Use</p>
+bc(code). <[[txp:article_:|txp:article status="sticky" /]]>
+
+
+<p>(or</p>
+bc(code). <[[txp:article_custom_:]]>
+
+
+<p>) to display.</p></li>
+<li><p>They will not show up on lists produced by</p>
+bc(code). <[[txp:recent_articles_:]]>
+
+
+<p>,</p>
+bc(code). <[[txp:related_articles_:]]>
+
+
+<p>, or any similar tag.</p></li>
+<li>They will not show up in any feeds.</li>
+</ol>
+
+Sticky articles therefore explicitly support the semantics of static pages.
+
+<ul>
+<li>Pro: The whole page content is solely derived from your articles, their attributes and their relation to sections. You could use _one_ page template for both dynamic, intermediate and static pages.</li>
+<li><p>Con: The order of articles on the page is not determined by markup sequence, but by a sort criterion based on any of the article's attributes. Anyway, you can choose any attribute (default is</p>
+bc(code). Posted
+
+
+<p>, other possible choices include</p>
+bc(code). id
+
+
+<p>or a</p>
+bc(code). custom_x
+
+
+<p>field) and any sorting direction (</p>
+bc(code). asc
+
+
+<p>,</p>
+bc(code). desc
+
+
+<p>, or even</p>
+bc(code). rand()
+
+
+<p>).</p></li>
+</ul>
+
+h3(sectionedit2#the_process). The Process
+
+What follows are instructions, and additional examples for an “about” page.
+
+<ol>
+<li><p>Create a section for your static content (</p>
+bc(code). Admin panel > presentation > sections
+
+
+<p>). For an “about” section, create a section named “about”. In the settings for this section, make sure the option “On front page?” is set to *no*.</p></li>
+<li><p>Create your static articles (</p>
+bc(code). Admin panel > content > write
+
+
+<p>). If you're making the “about” page, assign your articles to the “about” section. Before you save your article, make sure you have Comments turned off and have assigned the article to your static section.</p></li>
+<li><p>Create a new form for your static articles (</p>
+bc(code). Admin panel > presentation > forms
+
+
+<p>). You can do whatever you'd like in the form to make it display what you wish, but for the purposes of this example we will use &lt;"title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:title:start&gt; and &lt;"body&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:body:start&gt;.</p></li>
+<li>Save this new form as *static*. When applying this form to an article, the article will display with only a title and a text body.</li>
+<li>Choose articles (Option 1)
+<ol>
+<li><p>Find each article's id# (</p>
+bc(code). Admin panel > content > articles
+
+
+<p>). Each article you write in Textpattern is assigned an *id* number. If you go to your article list, and hover your mouse on one of the article titles, you will see the *id* number for that article in the status bar of your browser (</p>
+bc(code). ...mydomain.com/textpattern/index.php?event=article&step=edit&ID=3
+
+
+<p>). Make a note of each article's *ID* number. In our example, the ID number is 3.</p></li>
+<li>Insert each article into your page template (Admin panel &gt; presentation &gt; pages), using the &lt;"article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt; tag. &lt;"article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt; accepts a number of attributes, including *id* (here's where you enter each id from earlier) and *form* (from earlier, this was “static”).</li>
+</ol>
+</li>
+<li>Choose articles (Option 2)
+<ol>
+<li>Flag each chosen article as “sticky”.</li>
+<li>Insert articles into the section of your page template delimited by &lt;"if&#95;article&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_list&gt; (Admin panel &gt; presentation &gt; pages), using the &lt;"article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt; tag.</li>
+</ol>
+</li>
+</ol>
+
+Set &lt;"article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt;'s *status* attribute to “sticky”, *form* to the name you gave the form created in step 3 (this was “static”). Add attribute values for *sortdir* and *sortby* according to the display order you'd wish to achieve.
+
+# Including articles from other sections is simple: use &lt;"article&#95;custom&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article_custom:start&gt; instead of &lt;"article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt;.
+
+h3(sectionedit3#examples). Examples
+
+<pre class="code">
+&lt;!-- Example will output article 1, article 2, and article 3 
+with the format specified in the form named &quot;static&quot; --&gt;
+
+&lt;txp:article id=&quot;1&quot; form=&quot;static&quot; /&gt;
+
+&lt;txp:article id=&quot;2&quot; form=&quot;static&quot; /&gt;
+
+&lt;txp:article id=&quot;3&quot; form=&quot;static&quot; /&gt;
+</pre>
+
+<pre class="code">
+&lt;!-- Example will output sticky articles
+with the format specified in the form named &quot;static&quot;,
+sorted by &quot;id&quot; ascending, followed by dynamic articles 
+belonging to that section --&gt;
+
+&lt;txp:if_article_list&gt;
+&lt;txp:article form=&quot;static&quot; status=&quot;sticky&quot; sortby=&quot;id&quot; sortdir=&quot;asc&quot; /&gt;
+&lt;txp:article /&gt;   
+&lt;/txp:if_article_list&gt;
+</pre>
+
+bc(code). <!-- an article from another section -->
+<txp:article_custom id="1" form="static" />
+
+

@@ -1,0 +1,41 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:else />
+
+
+The "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else tag is a _single_ tag that is used within a containing conditional tag to provide the means to assign default, or alternative, behavior when the condition in the surrounding tag is _not_ met.
+
+Visually, this is the general structure in which it is used:
+
+<pre class="code">
+&lt;txp:if_conditional_tag&gt;
+
+  ...Content if true...
+
+&lt;txp:else /&gt;
+
+  ...Content if not true...
+
+&lt;/txp:if_conditional_tag&gt;
+</pre>
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_excerpt_when_available). Example 1: Display excerpt when available
+
+bc(code). <txp:if_excerpt>
+    And Furthermore &#183; <txp:excerpt />
+<txp:else />
+    <txp:section link="1" /> 
+</txp:if_excerpt>
+
+
+*What this does...*
+ When the excerpt is available it is displayed, but when it is missing a hyperlinked section name is displayed instead.
+
+Other tags used: "excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=excerpt, "if&#95;excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_excerpt, "section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section
+

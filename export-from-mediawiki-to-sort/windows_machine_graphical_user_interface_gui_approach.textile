@@ -1,0 +1,22 @@
+\n
+
+h3(sectionedit1#overview). Overview
+
+These instructions describe how to get the latest Textpattern sourcecode from the "Subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#subversion repository to your Windows machine using a graphical user interface application called TortoiseSVN. After that you can transfer the Textpattern package to your Web server using whatever normal means you use (e.g., FTP, SFTP, etc.), or simply use the intallation on your local machine.
+
+# "Download TortoiseSVN":http://tortoisesvn.tigris.org/download.html.
+# Once installed, create a local folder with a catchy name (such as Textpattern).
+# Right click on the new folder and you'll see some new options for TortoiseSVN.
+# Select Checkout and use this for URL of Repository: "$":http://textpattern.googlecode.com/svn/development/4.x
+
+If you develop on a local web server you can create as many local installations as you want or you can just upload the files to a remote web server. Complete the following steps to create a new Textpattern installation on your local web server. If you don't have a local web server, you should still complete the following steps but pick any old empty folder. Following these steps will automatically copy all of the necessary Textpattern code and leave out all of the internal SVN files.
+
+# Right click on the new folder you created that now has the Textpattern source.
+# Select TortoiseSVN → Export from the menu.
+# Select the root of your web server as the folder. On Apache it would be something like C:\apache\htdocs. All of the Textpattern code, sans .svn files, will be copied to a new directory.
+# Now just rename the new directory in your web root and navigate to the setup script in your browser.
+
+Complete the following steps to update your local code from the SVN repository.
+
+# Right click on your Textpattern source folder and select Update.
+

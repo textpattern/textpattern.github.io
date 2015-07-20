@@ -1,0 +1,252 @@
+\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+
+h3(sectionedit1#introduction). Introduction:
+
+First off let me appologise for my terrible spelling. this has been rushed and i will correct it at a later date.. anyway.. continue.
+
+In this documentation i am trying to make it easier for people using apple mac computers (laptops, towering g5's or anything running OSX 10.3) to install and run an implimentation of the following application daemons:
+
+bc(code).    * Apache Version: 2.0.50
+   * MySQL Version: 4.0.20
+   * PHP Version: 4.3.9 und 5.0.2
+   * Turck MMCache: 2.4.6
+   * Zend Optimizer: 2.5.5
+   * phpMyAdmin 2.6.0-pl2
+
+
+bc(code).    * Image Magik ( Later on )
+
+
+h3(sectionedit2#what_will_this_acheive). What will this acheive?
+
+Well, its primarily for people that want to use their mac as a testing server for web based applications like "Textpattern":http://www.textpattern.com or anything else that uses MySQL, PHP and Apache..
+
+h3(sectionedit3#what_do_you_need). What do you need?
+
+The requirements for text pattern are pretty simple, so i'm going to try a couple of different routes towards getting a working TXP site on my G4 laptop.
+
+The First way i'm going to try this is with a neet little application set called
+
+h3(sectionedit4#mamp). MAMP.
+
+*Mamp Version: 1.0a3 Contains:*
+
+bc(code).    * Apache Version: 2.0.50
+   * MySQL Version: 4.0.20
+   * PHP Version: 4.3.9 und 5.0.2
+   * Turck MMCache: 2.4.6
+   * Zend Optimizer: 2.5.5
+   * phpMyAdmin 2.6.0-pl2
+
+
+h3(sectionedit5#mamp_requirements). Mamp Requirements
+
+# Mac OS X 10.3 (Panther) or higher
+# at least 250 MB of free space on your hard drive
+
+Documentation for each individual daemon is attached to these links:
+
+"Apache":http://httpd.apache.org/docs-2.0/
+
+"MySQL":http://dev.mysql.com/doc/mysql/en/index.html
+
+"PHP":http://www.php.net/manual/en/
+
+"phpMyAdmin":http://www.phpmyadmin.net/home_page/docs.php
+
+h3(sectionedit6#step_1_installation_of_mamp). Step 1. Installation of Mamp
+
+installing mamp is a quick and easy method of getting the following onto your mac to use locally or (if your not using a laptop like me) worldwide as a server..
+
+bc(code).    * Apache Version: 2.0.50
+   * MySQL Version: 4.0.20
+   * PHP Version: 4.3.9 und 5.0.2
+   * Turck MMCache: 2.4.6
+   * Zend Optimizer: 2.5.5
+   * phpMyAdmin 2.6.0-pl2
+
+
+i'm sure your aware of the importance of these applications which is why your following these instructions. if your not sure what these are for then i suggest using google to find out!!..
+
+Now, my primary use for this is "Textpattern":http://www.textpattern.com so later on i will show you some other usefull apps that will function and co-exist with the applications above..
+
+this will include: "ImageMagick":http://www.imagemagick.org/ ( a great image manipulation tool that has far more functionality than GD, GD is installed by default with php. where as ImageMajick is not!)
+
+*Anyway, lets get on with it.*
+
+you have downloaded Mamp from the "English Mamp Homepage":http://www.mamp.info/en/home/
+
+for future reference if you have any trouble, the forum is only a shot away and found in the "Mamp Forum":http://forum.mamp.info/
+
+"Download":http://mamp.info/en/downloads/index.html the latest package and run the installer file on your OSX 10.3 machine.
+
+it's really easy to install and took me less than a minute to do.. __
+
+So, you have installed mamp in around a minute or less.. if you had errors already (Highly unlikely) then your MacOSX probably has some serious errors going somwhere..
+
+but like i said, it's highly unlikely that you will have problems getting past the installation.
+
+if you do first check these things: (DOH)
+
+a. make sure you followed the installation instructions
+
+b. make sure you put the Mamp folder into the top level of your applications folder. (not in utilities or anywhere else.!!)
+
+*Getting There*
+
+I'm running a G4 Powerbook 17“ with 1GB memory with about 10gb freespace..
+
+i have plenty of resources to soak into, but the good thing about running mamp, is that you can start or stop the processes very easily, and as i'm only going to be using this for developing it means i wont soak into my cpu and memory when its not needed..
+
+It is a neet little package, and im not going to enjoy setting up the same functionality with the less simplistic method of installing all this manually.. :( poor me.
+
+h3(sectionedit7#mamp-iswift). Mamp-iSwift
+
+Now then, lets open it up and get something running so we can try this out.
+
+open Mamp in */applications/mamp/* on your mac.
+
+you will be greeted by a lovely aqua panel like this one:
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1a.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1a.png
+
+you can start the servers (if they didnt start automatically first time.) and the red will turn to green ! yay.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1b.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1b.png
+
+and also a start page in your default browser which will confirm everything is running ok. it should look like this:
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1c.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1c.png
+
+Now, if its not.. i'd first check you havent got apache running in your apple system prefs.
+
+Check this by going into your system prefs and goto Sharing..
+
+see the image below for how it should look.. ( we dont want the OSX default version of apache conflicting with MAMP.)
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1d.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1d.png
+
+h3(sectionedit8#configuring_mamp). Configuring Mamp
+
+Now, were just going to check the preferences are right for you, they should be all standard if you want to use this as a development test bed, However, some of you will want to run your server into the wider world for other people to see what your doing..
+
+I won't even start getting into port forwarding, NAT, NAPT, and all that malarky.. but if you are running these services to the wider world and are doing so through a router, firewall or connection sharing on your mac.. then your going to need to fiddle around a bit with your firewall config and probably get your hands dirty with your router config..
+
+You may also want to ask your ISP about a permanent IP address instead of DHCP assigned addresses. there are dynamic methods but again, thats a road i dont want to go down..
+
+See the image below for the first screen of the Preferences window in MAMP.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1e.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1e.png
+
+And now the Ports Screen :
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1f.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1f.png
+
+You may want to change these ports to suit your router config, but i'd stick to these if at all possible. i can't remember if you need both UDP and TCP open for these services so i'd probably open both UDP and TCP for the *ports 8888 8889*.
+
+You can of course use port 80 if your prefer, however i'm going to stick with 8888 8889.
+
+I'm not sure about this, and opening too many is a security risk.. so carefull now. if your not sure, look it up on "Google":http://google.com
+
+There is a third screen of preferences for choosing wether you want PHP4 or 5, it defaults to 4.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1g.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1g.png
+
+h3(sectionedit9#start_screen_and_further_configuration). Start Screen and Further Configuration
+
+Ok, We'll start on the Mamp Start page in your browser,
+
+click onto the tab named phpInfo along the top.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1h.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1h.png
+
+theres not much we can do here. but if your install isnt working properly i should imaging there will be some red,usefull when visiting the forum.
+
+Now on the next tab 'MMCache' this should allow you to disable, clear, clean your php cached items..
+
+again, not alot you can do here..
+
+Now for the more important one.. phpMyAdmin
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1i.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1i.png
+
+your main screen should look like that.
+
+now, assuming for instance your installing textpattern on your newly working web server daemons.
+
+we need to create a Database and user for this to work with the rest we should be able to do through the textpattern installation.
+
+Add a database name that you wish to create in the *Create New Database* field no less. and of course click on create..
+
+this should now appear on the left under the phpMyAdmin logo, in a drop down menu with a couple of other default databases.
+
+We now need a user for your database, we certainly dont want to be using root for security reasons.. you should probably ready the Documentation for MySQL and phpMyAdmin if you have no idea what to do about securing your mac box.. especially if your opening these services to the wider world.
+
+click on the *Privileges* button under the MySql header.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1j.jpg(mac_sql_mamp_image1j.jpg)!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1j.jpg
+
+And now a list of a few users will appear, probably all root.
+
+click on *Add a new User*
+
+now fill in the details of your new user..
+
+mine looks like this, you can change permissions to suit what you want to use this user for..
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1k.jpg(mac_sql_mamp_image1k.jpg)!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1k.jpg
+
+click on *GO* and you should get a confirmation in purple at the top..
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image1_l.jpg(mac_sql_mamp_image1_l.jpg)!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image1_l.jpg
+
+Great! now we should be able to use our mac as a development server..
+
+lets give it a go with a fresh installation of textpattern.
+
+h3(sectionedit10#ready_to_roll_mysql_aqua_style). Ready To Roll mySQL, AQUA Style!
+
+*Yes now!*, were nearly there you know. i hope it's all been going ok for you lot.. its been smooth sailing for me.
+
+So then, lets do this.. here is my applications folder, you need to put your php, xhtml or whatever you want to test and run inside the following directory:
+
+/Applications/MAMP/htdocs/yourtestfolder/ (obviosly where 'yourtestfolder' is anything you want)
+
+so for example i'm going to put in there a folder called /site1/ and then put the textpattern folder inside that. this way i can have multiple sites and testing applications.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image2a.jpg(mac_sql_mamp_image2a.jpg)!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image2a.jpg
+
+Now, depending on if you have changed your ports or anything in the MAMP configuration the address that should be used in your browser to test these sites is:
+
+*"$":http://localhost:8888/yourtestfolder/'''*
+
+but obviosly we need to put something there first. try it..
+
+as i'm using TextPattern, the basic install instructions are:
+
+*TXP Installation* Extract the files to your site (in the root, or choose a subdirectory)(in our case this would be:
+
+/Applications/MAMP/htdocs/yourtestfolder/
+
+The top-level index.php should reside in this directory, as should the /textpattern/ directory.
+
+Create, or establish the existence of, a working mysql database, then load /textpattern/setup.php in a browser, and follow the directions.
+
+If you get problems from here with textpattern then you should refer back to the "TextPattern Forum":http://forum.textpattern.com and/or the Documentation provided with TextPattern.
+
+h3(sectionedit11#to_finish_off_for_now). To Finish off, For now
+
+Just make an Alias of your htdocs folder, give it a funky icon or something like this:
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_image2b.jpg(mac_sql_mamp_image2b.jpg)!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_image2b.jpg
+
+and your all set, you can add databases using MAMP and add files through your htdocs folder.
+
+VIOLA!!!
+
+soon i'll add Image Majick Functions and possibly an alternative to the above if your silly enough not to want to use MAMP..
+
+good luck to all, on yer new Power-iBlogger!!
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:mac_sql_mamp_madeonmac.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:mac_sql_mamp_madeonmac.png
+

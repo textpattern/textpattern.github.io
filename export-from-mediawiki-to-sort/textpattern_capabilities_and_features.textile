@@ -1,0 +1,74 @@
+\n
+
+h4(#content_publishing). Content Publishing
+
+Textpattern is a flexible and elegant content management system for powering all kinds of websites, including personal journals (weblogs) and commercial sites.
+
+When it comes to publishing on the internet, beginners and experts alike are met with a bothersome paradox: word processors and graphics applications allow anyone to do a pretty good job of managing text and images on a personal computer, however the same skills do not translate to creating content on the world-wide web. Up till now, creating web content requires knowledge of several standards, intricacies of competing browsers, programming skills, computer-based graphic design, and it helps to have the patience of a saint. Those who soldier on anyway may find themselves further held back by the web's purported inflexibility with written language, with its reluctance to cope with all but the plainest of text, or by the unpredictable results brought about by using “WYSIWYG” web editors.
+
+Textpattern is a content management system (CMS) designed to help overcome these hurdles and to simplify the production of well-structured, standards-compliant web pages. It is suitable for small and medium sized sites and incorporates many features found in other popular weblog software packages without forcing the user into a date-based organizational model. In Textpattern, the content is organized by type.
+
+Textpattern is simple enough to be used as a weblog, and capable enough to be used as a CMS for business and news web sites.
+
+For other features, read on.
+
+h4(#multiple_contributors). Multiple Contributors
+
+Sites published with Textpattern can employ unlimited registered contributors, each of whom may be assigned privileges by the publisher of the site. Five levels of privileges (publisher, managing editor, copy editor, writer and designer) are provided, and each reflects different access to article creation, approval, editing and deletion, and to image uploads, page design and CSS, and of course adding more contributors.
+
+h4(#textile). Textile
+
+Built into Textpattern is _Textile_, a simple syntax for nudging plain text into structurally sound and stylistically rich web content.
+
+Ordinarily fussy text amendments such as headers, hyperlinks, image tags and tables are created with one or two simple markers. Compared to navigating the tag soup of markup, writing and revising with Textile is much more intuitive, being closer to working with ordinary text. Content marked up with Textile is automatically converted to valid Extensible Hypertext Markup Language (HTML)  -  the code with which a web browser renders the article  -  and because Textpattern stores both versions of each article, revising and updating is a snap.
+
+When composing or readying articles for publication in Textpattern, you can switch between three views of the article: plain text, HTML, and a rendered preview.
+
+Discover all of Textile's great features on Textpattern's Textile documentation and proving ground, "txstyle.org":http://txstyle.org/.
+
+h4(#cascading_style_sheets_management). Cascading Style Sheets Management
+
+The Cascading Style Sheets (CSS) standard is a slim, powerful language that allows you to centralize site-wide control of content presentation. Everything from fonts and colours to sizes and positions can be governed through CSS.
+
+Ordinarily CSS data appears in the head section of an Hypertext Markup Language (HTML) document, or is stored in a text file linked to the document. Modern browsers parse this data in advance of displaying a page, and then cache the data for use on subsequent pages or site visits. As such, CSS can greatly reduce the download size of web pages: just one of many improvements CSS formatting offers over older web design methods.
+
+h4(#links_management). Links Management
+
+Maintaining and displaying lists of links to other sites, or to other areas within your own site, is central to Textpattern. Unlimited links in unlimited categories can be stored and output wherever you like. Adding new links is easy through the Textpattern editor, or easier still by way of a Javascript bookmarklet, which presents a popup input to you wherever you are on the web.
+
+The central link repository provides for an easy means of maintaining links and their properties like URL, title, and category which can thus be used in multiple scattered instances distributed across your site, allowing for separation of site content (the links) from page presentation (the
+
+bc(code). form
+
+
+of the tag used to display the link).
+
+Hard coded links are a lot harder to maintain on changes, especially when one link is used multiple times across your site, and lack the information Textpattern keeps for managed links.
+
+h4(#textpattern_expansion). Textpattern Expansion
+
+Installing and managing plugins that extend Textpattern's abilities is straightforward. Once installed, plugins can be turned on and off from within the Textpattern interface, where detailed help and access to parameters used by plugins is also available. For detailed instructions on installing and the basic operation of plugins view the "plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins page.
+
+h4(#yes_but_what_kind_of_sites_can_it_make). Yes, but what kind of sites can it make?
+
+Textpattern is best suited for web sites that require several  -  though not necessarily all - of the following features:
+
+* News or weblog-style chronological articles, perhaps organized into several distinct departments or sections
+* Groups of articles organized by other means, like an FAQ, product catalog or portfolio
+* Single “static” pages, like an About or Contact page
+* Images; either attached to articles (as in a photoblog), or displayed in a gallery
+* File downloads
+* Structure, presentation and content maintained separately
+* Articles written by authors who don't necessarily know HTML
+
+In other words, Textpattern is well suited for:
+
+* News, magazine, tutorial and review sites
+* Weblogs and photoblogs
+* Web sites for businesses and non-profit organizations
+* Online product catalogs
+* Portfolio and professional sites
+* Simple portals and file download sites
+
+...or any web site that includes several of those characteristics.
+

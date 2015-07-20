@@ -1,0 +1,512 @@
+\nTextpattern stores all data in a MySQL database. Within that database, there are several tables, each containing a different collection of information.
+
+This page shows for each table what type of information it contains, followed by a list of columns for that table and the intended usage (description) of those columns. Since the columns can be used to influence sorting in various list tags, non-developers may find their descriptions useful as well.
+
+*Note:* The size limits shown here for the various table columns may differ slightly from the actual size limits found in the tables created by Textpattern (when a column is used in multiple tables, the smallest size is used). You should consider the limits shown here as authoritative. When in doubt, ask a developer on the forum.
+
+This reference applies to Textpattern version 4.4.1. Older versions may have different table layouts.
+
+= textpattern =
+
+The 'textpattern' table contains the articles you create on the write tab.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ID
+integer
+Unique, auto incremented numerical ID of the article</td>
+<td align="left">Posted
+datetime
+Publication date and time</td>
+<td align="left">Expires
+datetime
+Expiration date and time (defaults to 0000-00-00 00:00:00, which indicates that the article never expires)</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;category =
+
+The 'txp&#95;category' table contains all the categories you create on the category tab.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">id
+integer
+Unique auto-incremented ID of this category</td>
+<td align="left">name
+varchar(64)
+Category name, used in URLs. The category 'root' is reserved (and invisible)</td>
+<td align="left">title
+varchar(255)
+Category title</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;css =
+
+The 'txp&#95;css' table contains the style sheets created on the Style tab.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">name
+varchar(128)
+Name of the style sheet</td>
+<td align="left">css
+text
+Style sheet contents, base64 encoded for historical reasons (max 64kB)</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;discuss =
+
+The 'txp&#95;discuss' table contains all the comments for all the articles.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">discussid
+integer
+Unique auto-incremented ID of this comment</td>
+<td align="left">parentid
+integer
+ID of the article to which this comment belongs</td>
+<td align="left">name
+varchar(255)
+Name of the person who commented</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;discuss&#95;ipban =
+
+The 'txp&#95;discuss&#95;ipban' table contains a list of all IP-numbers that have been banned from commenting by the person that moderates the comments.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ip
+varchar(255)
+IP-number</td>
+<td align="left">name&#95;used
+varchar(255)
+Name used by the commenter to submit the comment that cause him/her to be banned</td>
+<td align="left">date&#95;banned
+datetime
+Date when the ban was imposed</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;discuss&#95;nonce =
+
+The 'txp&#95;discuss&#95;nonce' table is an important part of the spam protection in the commenting system. When the comment form is shown to the user, it contains a hidden variable (nonce) with a unique code. This code is valid for 10 minutes. If the comment form is submitted, the nonce is looked up in this table and must exist unused with a valid timestamp for the comment to be accepted.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">issue&#95;time
+datetime
+Date and time when the 'nonce' was created</td>
+<td align="left">nonce
+varchar(32)
+Random alphanumeric string of text (md5)</td>
+<td align="left">used
+integer
+Has the nonce been used for submitting a comment (0 = no, 1 = yes). A nonce cannot be used twice.</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;file =
+
+The 'txp&#95;file' table contains information on all the files uploaded through textpattern. The files themselves are stored as normal files on disk instead of in the database.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">id
+integer
+Unique auto-incremented ID of this file</td>
+<td align="left">filename
+varchar(255)
+Name of the file as stored on the harddisk</td>
+<td align="left">title
+varchar(255)
+Title given to this file for display purposes</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;form =
+
+The 'txp&#95;form' table contains all the forms, which are created on the Forms tab.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">name
+varchar(64)
+Form name</td>
+<td align="left">type
+varchar(28)
+Form type: article, category, comment, file, link, misc or section</td>
+<td align="left">Form
+text
+Contents of the form: HTML / Textpattern tags (max 64kB)</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;image =
+
+The 'txp&#95;image' table contains information on all the images that are uploaded and managed through Textpattern. The images themselves are not stored on in the database. They are stored as normal files using the image ID as the filename (i.e. 1.png for the main image or 1t.png for the corresponding thumbnail).
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">id
+integer
+Unique auto-incremented ID of this image</td>
+<td align="left">name
+varchar(255)
+Name of the image file as it was uploaded</td>
+<td align="left">category
+varchar(64)
+Name of the category associated with this image</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;lang =
+
+The 'txp&#95;lang' table contains translations for the various built-in strings of text used both on the public and admin side of Textpattern.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">id
+integer
+Unique auto-incremented ID of this language string</td>
+<td align="left">lang
+varchar(16)
+Language code (for example: en-gb for British English)</td>
+<td align="left">name
+varchar(64)
+Unique name which identifies the language string</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;link =
+
+The 'txp&#95;link' table contains all the links and related information as created on the Links tab.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">id
+integer
+Unique auto-incremented ID of this link</td>
+<td align="left">date
+datetime
+Creation date and time</td>
+<td align="left">category
+varchar(64)
+Name of the category associated with this link</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;log =
+
+The 'txp&#95;log' table contains log entries of page requests (visits) to your website. Depending on your preferences, nothing is logged, just referers or all requests. Old log entries are removed automatically.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">id
+integer
+Unique auto-incremented ID of this log entry</td>
+<td align="left">time
+datetime
+Date and time</td>
+<td align="left">host
+varchar(255)
+hostname of the computer that requested the page. If DNS lookups are disabled in the preferences or if the reverse DNS lookup of the IP-number failed, the IP-number is stored instead</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;page =
+
+The 'txp&#95;page' table contains all the page templates you create on the Page tab.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">name
+varchar(128)
+Name of the template</td>
+<td align="left">user&#95;html
+text
+Template contents: HTML / Textpattern tags (max 64kB)</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;plugin =
+
+The 'txp&#95;plugin' table contains all the plugins you have installed.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">name
+varchar(64)
+Plugin name</td>
+<td align="left">status
+integer
+Status (0 = disabled, 1 = enabled)</td>
+<td align="left">author
+varchar(128)
+Plugin author name</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;prefs =
+
+The 'txp&#95;prefs' table contains all the preferences (basic, advanced and hidden).
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">prefs&#95;id
+integer
+Unknown (always set to 1?)</td>
+<td align="left">name
+varchar(255)
+Name that identifies this preference</td>
+<td align="left">val
+text
+Contents/setting of this preference (max 64kB)</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;section =
+
+The 'txp&#95;section' table contains all the sections you create on the Sections tab.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">name
+varchar(128)
+Section name (used in URL)</td>
+<td align="left">page
+varchar(128)
+Page template used for this section</td>
+<td align="left">css
+varchar(128)
+Style sheet used for this section</td>
+</tr>
+</tbody>
+</table>
+
+= txp&#95;users =
+
+The 'txp&#95;users' table contains information on all the users that can log into Textpattern on the admin side.
+
+<table>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr class="header">
+<th align="left">Column
+Type
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">user&#95;id
+integer
+Unique auto-incremented ID of this user</td>
+<td align="left">name
+varchar(64)
+Login name</td>
+<td align="left">pass
+varchar(128)
+Password</td>
+</tr>
+</tbody>
+</table>
+

@@ -1,0 +1,32 @@
+\n_notoc_
+
+h3(sectionedit1#installation). Installation
+
+* "ftp&#95;installation":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ftp_installation
+
+h4(#installation_change_scenarios). Installation change scenarios
+
+* "installing&#95;on&#95;an&#95;nginx&#95;webserver":/home/www/zendstudio/dokuwiki/bin/doku.php?id=installing_on_an_nginx_webserver
+* "detailed&#95;upgrading&#95;instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_upgrading_instructions
+* "upgrading&#95;downgrading&#95;nightlies&#95;and&#95;bleeding&#95;edge":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_downgrading_nightlies_and_bleeding_edge
+
+h4(#subversion_installation). Subversion Installation
+
+* "svn&#95;install&#95;with&#95;tortoise&#95;svn":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_install_with_tortoise_svn
+* "svn&#95;install&#95;with&#95;wget":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_install_with_wget
+* "svn&#95;install&#95;for&#95;mac":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_install_for_mac
+* "svn&#95;install&#95;for&#95;linux":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_install_for_linux
+
+h4(#moving_multiple_installations). Moving/Multiple Installations
+
+* "moving&#95;installation&#95;from&#95;subdirectory&#95;to&#95;domain&#95;root&#95;on&#95;the&#95;same&#95;server":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_subdirectory_to_domain_root_on_the_same_server
+* "moving&#95;installation&#95;from&#95;remote&#95;live&#95;server&#95;to&#95;localhost":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_remote_live_server_to_localhost
+* "moving&#95;installation&#95;from&#95;one&#95;host&#95;to&#95;another":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_one_host_to_another
+
+h4(#importing_from_another_system). Importing from Another System
+
+* "migrating&#95;from&#95;another&#95;system":/home/www/zendstudio/dokuwiki/bin/doku.php?id=migrating_from_another_system
+* "importing&#95;from&#95;blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
+* "importing&#95;from&#95;movable&#95;type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_movable_type
+* "importing&#95;word&#95;press":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_word_press
+

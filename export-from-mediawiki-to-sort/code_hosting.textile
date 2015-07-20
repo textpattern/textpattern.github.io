@@ -1,0 +1,18 @@
+\n
+
+h4(#httpbazaar-vcsorg_bazaar). [[http://bazaar-vcs.org/&#124;Bazaar]]
+
+* "Launchpad":https://launchpad.net/
+
+h4(#httpgit-scmcom_git). [[http://git-scm.com/&#124;Git]]
+
+* "Github":http://git.or.cz/
+
+h4(#httpwwwseleniccom_mercurial_wiki_mercurial). [[http://www.selenic.com/mercurial/wiki/&#124;Mercurial]]
+
+* "Bitbucket":http://bitbucket.org
+
+h4(#httpsubversiontigrisorg_subversion). [[http://subversion.tigris.org/&#124;Subversion]]
+
+* "Google Code":http://code.google.com/hosting/
+

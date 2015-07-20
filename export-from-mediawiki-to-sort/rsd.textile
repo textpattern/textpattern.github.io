@@ -1,0 +1,23 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:rsd />
+
+
+The "rsd":/home/www/zendstudio/dokuwiki/bin/doku.php?id=rsd tag is a _single_ tag which is used to insert a "Really Simple Discoverability":http://archipelago.phrasewise.com/rsd link element helping XML-RPC client programs to configure themselves.
+
+h3(sectionedit1#attributes). Attributes
+
+None.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1to_be_written). Example 1: To be written
+
+TBW.
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_407). Version 4.0.7
+
+* Added as a new tag.
+

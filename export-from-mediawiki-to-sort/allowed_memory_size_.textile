@@ -1,0 +1,28 @@
+\nFatal error: Allowed memory size of 8388608 bytes exhausted..
+
+h3(sectionedit1#risposta). Risposta
+
+L'utilizzo di memoria di Textpattern ÃƒÂ¨ molto basso, di solito un paio di megabytes.
+
+A meno che l'amministratore del tuo server abbia configurato l'utilizzo della memoria per il PHP a valori molto bassi Ã¢â‚¬â€œ improbabile, ma non impossibile Ã¢â‚¬â€œ la causa ÃƒÂ¨ probabilmente un plugin.
+
+Alcuni vecchi plugin per archiviare le pagine caricano tutti gli articoli in memoria in una sola volta, e potrebbe accadere che consumino tutta la memoria nel caso tu abbia molti articoli.
+
+Disalbilta i plugin uno ad uno, fino a quando non trovi quello che causa il problema, e contatta lo sviluppatore per spiegare il problema.
+
+In alternativa puoi usare il codice
+
+bc(code). <txp:article_custom />
+
+
+per generare la lista degli archivi.
+
+bc(code). <txp:article_custom />
+
+
+utilizza la memoria in modo efficiente.
+
+Alcuni nuovi tags in Textpattern 4.0.2 potrebbero aiutarti con la formattazione delle pagine.
+
+*Torna a "faq&#95;-&#95;domande&#95;frequenti":/home/www/zendstudio/dokuwiki/bin/doku.php?id=it:faq_-_domande_frequenti*
+

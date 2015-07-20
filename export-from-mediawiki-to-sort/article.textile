@@ -1,0 +1,378 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:article />
+
+
+The basic "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tag can be used as either a _single_ tag or _container_ tag and used to output one or more articles depending on the attributes used. Default attributes will be used when nothing specific is assigned.
+
+It may be used as a _container_ tag, in which case it must be specified as an opening and closing pair of tags, like this:
+
+bc(code). <txp:article>
+...contained statements...
+</txp:article>
+
+
+This is equivalent to putting the contained statements into a form named “my&#95;form” and using
+
+bc(code). <txp:article form="my_form" />
+
+
+.
+
+The tag is context-sensitive, which means it will grab articles from the currently viewed section/category/author, etc.
+
+When used on the front page, article's context will include articles from all "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections set to display “On front page”.
+
+See this "comparison of how article and article&#95;custom differ":http://textpattern.org/tips/337/article-vs-articlecustom.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept content/behaviour and presentation attributes (*case-sensitive*).
+
+h4(#content_behaviour_attributes). Content/behaviour attributes
+
+*"allowoverride":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#allowoverride=“boolean”*
+ Whether to use override forms for the generated article list. Default:
+
+bc(code). 1
+
+
+(yes). *<em>"customfieldname":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#customfieldname</em>=“value”*
+ Restrict to articles with specified value for specified custom field name. Replace “_customfieldname_” with the name of the custom field. *"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“form name”*
+ Use specified form. Default:
+
+bc(code). default
+
+
+. *"keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#keywords=“keyword(s)”*
+ Restrict to articles with specified keyword(s). *"limit":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#limit=“integer”*
+ The number of articles to display. Default:
+
+bc(code). 10
+
+
+. *"listform":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#listform=“form name”*
+ Use specified form when page is displaying an article list. *"offset":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#offset=“integer”*
+ The number of articles to skip. Default:
+
+bc(code). 0
+
+
+. *"pageby":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#pageby=“integer”*
+ The number of articles to jump forward or back when an older or newer link is clicked. Allows you to call the article tag several times on a page without messing up older/newer links. Default: value matches the value assigned to
+
+bc(code). limit
+
+
+. *"pgonly":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#pgonly=“boolean”*
+ Do the article count, but do not display anything. Used when you want to show a search result count, or article navigation tags *before* the list of articles. Just make sure that, other than pgonly, both article tags are identical (form-related attributes are the exception, they do not need to be assigned). Default:
+
+bc(code). 0
+
+
+(no). *"searchall":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#searchall=“boolean”*
+ When outputting search results, include only those articles with *Include in site search* set on the "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections page. If set to 0, only articles in the current section are displayed. See "fixing&#95;search&#95;results":/home/www/zendstudio/dokuwiki/bin/doku.php?id=fixing_search_results for more. Default:
+
+bc(code). 1
+
+
+. *"searchform":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#searchform=“form name”*
+ The form to be used for your customized search results output. Default:
+
+bc(code). search_results
+
+
+. *"searchsticky":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#searchsticky=“boolean”*
+ When outputting search results, include articles with status “sticky”. Default:
+
+bc(code). 0
+
+
+(no). *"sort":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#sort=“sort value(s)”*
+ How to sort resulting list. Values:
+
+bc(code). ID
+
+
+(article id#)
+
+bc(code). AuthorID
+
+
+(author name)
+
+bc(code). LastMod
+
+
+(date last modified)
+
+bc(code). LastModID
+
+
+(author name of last modification)
+
+bc(code). Posted
+
+
+(date posted)
+
+bc(code). Expires
+
+
+(expiry date)
+
+bc(code). Title
+
+
+bc(code). Category1
+
+
+bc(code). Category2
+
+
+bc(code). comments_count
+
+
+bc(code). Status
+
+
+bc(code). Section
+
+
+bc(code). Keywords
+
+
+bc(code). Image
+
+
+(article image id#)
+
+bc(code). url_title
+
+
+bc(code). custom_1
+
+
+through
+
+bc(code). custom_10
+
+
+(From 4.2.0 on:
+
+bc(code). custom_//n//
+
+
+) For numeric values use “
+
+bc(code). (custom_//n//+0)
+
+
+”
+
+bc(code). rand()
+
+
+("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand). Each field in the
+
+bc(code). textpattern
+
+
+database table can be used as a sort key. When viewing a search results list,
+
+bc(code). score
+
+
+(how well the search terms match the article) is available as an additional value. Default:
+
+bc(code). Posted desc
+
+
+(
+
+bc(code). score desc
+
+
+for search results) *"status":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#status=“status”*
+ Restrict to articles with the specified status. Values:
+
+bc(code). live
+
+
+or
+
+bc(code). sticky
+
+
+Default:
+
+bc(code). live
+
+
+. *"time":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#time=“time”*
+ Restrict to articles posted within specified timeframe. Values:
+
+bc(code). past
+
+
+,
+
+bc(code). future
+
+
+, or
+
+bc(code). any
+
+
+(both
+
+bc(code). past
+
+
+and
+
+bc(code). future
+
+
+). Default:
+
+bc(code). past
+
+
+.
+
+"common&#95;presentational&#95;attributes":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_presentational_attributes
+
+h3(sectionedit2#note_on_article_list_vs_individual_article_context). Note on Article List vs. Individual Article context
+
+The "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tag is context-sensitive. It will produce different results depending on whether the page being viewed is an article list or an individual article. Article-list context includes the default (home) page, section front pages, and category pages. Individual-article context applies on an article page (i.e., a page with a URL like
+
+bc(code). <nowiki><http://example.com/archives/24/my-article></nowiki>
+
+
+).
+
+h3(sectionedit3#examples). Examples
+
+h4(#example_1basic_use_as_single_tag). Example 1: Basic Use as Single Tag
+
+Here is the "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tag responsible for the main content of the home page on a new Textpattern 4.0.7 installation:
+
+bc(code). <txp:article limit="5" />
+
+
+*What this does...*
+ Calls the _default_ article form, which may contain any variation of article output you want to create. The _default_ form cannot be deleted; it is the form you see on first viewing the "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms tab. Uses the
+
+bc(code). limit
+
+
+attribute to specify the maximum number of articles displayed in article list context. (If not specified, this defaults to 10.)
+
+h4(#example_2specifying_a_form). Example 2: Specifying a Form
+
+Expanding on example 1, here is the "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tag responsible for showing lists of articles by category in the default page of a new Textpattern installation:
+
+bc(code). <txp:article listform="article_listing" limit="5" />
+
+
+*What this does...*
+ In article list context, the form named “article&#95;listing” will be processed and displayed for each article in the list. In individual article context, the default form would be used.
+
+To see this in action, on a new Textpattern install, from the home page click on one of the category links near the bottom (right above the Comment link). Note the URL, similar to
+
+bc(code). <nowiki><http://example.com/category/meaningful-labor></nowiki>
+
+
+. The
+
+bc(code). category
+
+
+in the URL means this is a listing of articles by category. Here you see only the article title and posting date, because that is what is contained in the form named “article&#95;listing”.
+
+Now click on the article title. Note the URL, similar to
+
+bc(code). <nowiki><http://example.com/articles/1/welcome-to-your-site></nowiki>
+
+
+. This is an individual article page. Once again you can see the full article, this time with comments showing.
+
+h4(#example_3offsetting_article_display). Example 3: Offsetting Article Display
+
+Continuing from the previous examples:
+
+bc(code). <txp:article listform="article_listing" limit="5" offset="2" />
+
+
+*What this does...*
+ Here we include the _offset_ attribute to offset article display by two (2) articles. This means the five articles that will be displayed (i.e.,
+
+bc(code). limit="5"
+
+
+) in article list context will begin with the third most recent article published in the site. (The offset will not be applied in individual article context.) *Why you might do it...*
+ Offsetting articles is useful in situations where the most recent article(s) are already accessible in some way and you don't want them appearing again in normal article flow.
+
+h4(#example_4using_code_pageby_code_to_split_article_output_on_a_page). Example 4: Using &lt;code&gt;pageby&lt;/code&gt; to Split Article Output on a Page
+
+bc(code). <div id="first"><txp:article limit="1" pageby="10" /></div>
+<div id="middle"><txp:article limit="8" offset="1" pageby="10" /></div>
+<div id="last"><txp:article limit="1" offset="9" pageby="10" /></div>
+
+
+Another:
+
+bc(code). <txp:article limit="5" pageby="10" />
+<txp:article limit="5" offset="5" pageby="10" />
+
+
+The *pageby* number should be the total number of articles displayed on the page. Without *pageby*, each article tag would page independently based on its own *limit*, as if it was the only article tag. - From "Alex's original forum post":http://forum.textpattern.com/viewtopic.php?id=12481.
+
+h4(#example_5combined_with_custom_fields). Example 5: Combined with Custom Fields
+
+This code will display articles that have a custom field named “colour” with a value “red”:
+
+bc(code). <txp:article colour="red" />
+
+
+h4(#example_6article_sorting). Example 6: Article Sorting
+
+bc(code). <txp:article sort="AuthorID asc, Posted desc" />
+
+
+*What this does...*
+ uses the
+
+bc(code). sort
+
+
+attribute to define values by which to order article output. In this case two values are declared. _AuthorID asc_ first orders articles alphabetically by author names, then _Posted desc_ orders them by date published (“desc” meaning newest to oldest). *Why you might do it...*
+ Sorting is a powerful way to group articles (e.g., by author), and/or give priority to articles most recently published (typically better for your website visitors).
+
+h3(sectionedit4#genealogy). Genealogy
+
+h4(#version_407). Version 4.0.7
+
+<ul>
+<li>Can be used as a container.</li>
+<li>bc(code). wraptag
+
+
+<p>and</p>
+bc(code). break
+
+
+<p>attributes added.</p></li>
+</ul>
+
+h4(#version_404). Version 4.0.4
+
+* sort added (replaces sortby and sortdir)
+* sortby and sortdir deprecated
+
+h4(#version_402). Version 4.0.2
+
+* pageby added
+

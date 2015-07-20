@@ -1,0 +1,2 @@
+\n*Deprecated page!* Needs removing. Has been "moved":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_word_press
+

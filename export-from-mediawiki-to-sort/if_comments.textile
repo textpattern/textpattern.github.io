@@ -1,0 +1,34 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:if_comments>
+
+
+The "if&#95;comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_comments tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc(code). <txp:if_comments>
+...conditional statement...
+</txp:if_comments>
+
+
+The tag will execute the contained statements if there are one or more comments associated with a particular article. Should be used in an article form.
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1number_of_comments_associated_with_an_article). Example 1: Number of comments associated with an article
+
+bc(code). <txp:if_comments>
+<p><txp:comments_count /> Comments</p>
+<txp:else />
+<p>No Current Comments</p>
+</txp:if_comments>
+
+
+*What this does...*
+ Displays the number of comments written against the current article, otherwise display default text to indicate there are no comments.
+
+Other tags used: "comments&#95;count":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_count, "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else
+

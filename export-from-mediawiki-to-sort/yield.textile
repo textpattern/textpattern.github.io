@@ -1,0 +1,57 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:yield />
+
+
+The "yield":/home/www/zendstudio/dokuwiki/bin/doku.php?id=yield tag is a _single_ tag which is used to return the inner content of the enclosing &lt;txp:output&#95;form&gt; tag.
+
+h3(sectionedit1#attributes). Attributes
+
+This tag has no attributes.
+
+h3(sectionedit2#examples). Examples
+
+h4(#exampleinner_content). Example: inner content
+
+Given the following form named “example&#95;form”:
+
+bc(code).    <div>
+      This content is static and will be the same every time this form is invoked.
+      <txp:yield />
+   </div>
+
+
+We can invoke it twice with different inner content each time:
+
+<pre class="code">
+   &lt;txp:output_form form=&quot;example_form&quot;&gt;
+      Invoking &quot;example_form&quot; with some inner content.
+   &lt;/txp:output_form&gt;
+
+   &lt;txp:output_form form=&quot;example_form&quot;&gt;
+      Invoking &quot;example_form&quot; again, this time with different inner content.
+   &lt;/txp:output_form&gt;
+</pre>
+
+And the result will be:
+
+<pre class="code">
+&lt;div&gt;
+      This content is static and will be the same every time this form is invoked.
+      Invoking &quot;example_form&quot; with some inner content.
+&lt;/div&gt;
+
+&lt;div&gt;
+      This content is static and will be the same every time this form is invoked.
+      Invoking &quot;example_form&quot; again, this time with different inner content.
+&lt;/div&gt;
+</pre>
+
+Other tags used: "output&#95;form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=output_form
+
+h3(sectionedit3#genealogy). Genealogy
+
+h4(#version_420). Version 4.2.0
+
+* Added as a new tag
+

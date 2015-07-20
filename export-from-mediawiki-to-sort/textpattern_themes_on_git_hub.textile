@@ -1,0 +1,27 @@
+\nWith the popularity of "GitHub":http://github.com, comes a natural tendency for Textpattern theme designers to make their theme code available there, *or anywhere else*, if not in Textgarden directly. Please use this page to keep track of them all "until we figure out something better":http://forum.textpattern.com/viewtopic.php?pid=263182.
+
+h3(sectionedit1#front-side_themes). Front-side themes
+
+*"Textpattern official front-side theme":http://github.com/philwareham/txp-h5bp-theme*
+ Latest version of the default Textpattern theme for v4.5 onwards, additional modules and features are available over and above the version that ships as standard (such as Sass files). Maintained by "Phil Wareham":http://twitter.com/philwareham.
+
+*"Yoko theme":http://github.com/perlmonkey/txp-yoko-theme*
+ A port of the WordPress theme Yoko to Textpattern 4. "Demo here":http://yoko.yauh.de/.
+
+*"JKg3 theme":http://github.com/JamieKnight/jkg3-Theme*
+ “This is a simple lightweight theme; developed for use on the "blog":http://jkg3.com.”
+
+h3(sectionedit2#admin-side_themes). Admin-side themes
+
+*"Textpattern Hive admin theme":http://github.com/philwareham/txp-hive-admin-theme*
+ This is an official admin-side theme shipping with v4.5 onwards. Maintained by "Phil Wareham":http://twitter.com/philwareham.
+
+*"Textpattern Moderne":http://github.com/weightshift/textpattern-moderne*
+ A clean and fresh Textpattern admin theme "from Naz Hamid":http://weightshift.com/memo/textpattern-moderne. Also turned into an installable "theme package version":http://github.com/jstubbs/textpattern-moderne by TXP Builders.
+
+*"Textpattern Khaki":http://github.com/jstubbs/Textpattern-Khaki*
+ Khaki is an admin theme from "TXP Builders":http://txpbuilders.com/ based on the Remora theme.
+
+*"Steel":http://github.com/redbot/Steel*
+ Steel admin-side theme by "redbot":http://www.redbot.it/txp/steel-theme.
+

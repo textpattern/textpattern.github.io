@@ -1,0 +1,58 @@
+\n"mininav&#95;admin&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-users-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-users-tab.png
+
+*Users* is where site administrators create new user accounts and establish user roles for those accounts. This panel is also where anyone with a user account can come to change their own password or user email address.
+
+h3(sectionedit1#panel_controls). Panel Controls
+
+The Users panel is initially composed of four functional regions (figure 2) from the viewpoint of a Admin/Publisher upon a new installation of Textpattern:
+
+# Change Your Password
+# Change Your Email Address
+# Authors
+# Add New Author
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-users-controls.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-users-controls.png
+
+There is a fifth functional region, "Reset Author Password":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users#reset_author_password_28529 (figure 3), that an Admin/Publisher will see at the bottom of the panel if/when they create one or more additional accounts besides their own.
+
+*Notes about panel regions against user roles:*
+
+* _Admin/Publisher_ is the only user role that can see all five regions (figures 2 and 3). They can also change a user's privileges (role) in the Authors region, which is a function that disappears for all other roles. Admin/Publishers can also see and use the “Save” button at the bottom of the panel (figure 2), which disappears from view for users with any other role.
+* _Managing Editors_ can see regions 1 through 3 (figure 2), but can only change their own password and email address.
+* All other users under _Managing Editor_ have the following conditions:
+*# They cannot see the primary Admin tab in the tab navigation when logging in so they cannot get to the Users panel via the tabs; however, they can use the Go dropdown menu at the top-right or bottom of the Site Admin view to jump directly to the Users panel (this is strange functionality indeed, and should hopefully change).
+*# They can only see regions 1 and 2 (figure 2), and can only change their own email and password.
+* A user account set as None cannot even login. This is probably a role setting that is intended for nothing more than deactivating a user without having to actually delete their account information (in the event they should be reactivated again).
+
+h4(#change_your_password_1). Change Your Password (1)
+
+As indicated in the notes above, all user roles can change their own password, which is done by retyping the new password in the password field and clicking the corresponding Submit button. If the _Mail it to me_ check box is clicked, an email will also be sent to the email address in the account as a reminder of what the new password is.
+
+Admins/Publishers can also reset a users password by using the "Reset Author Password":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users#reset_author_password_28529 utility (figure 3).
+
+h4(#change_your_email_address_2). Change Your Email Address (2)
+
+With respect to the notes above, anyone with a site account can change their own email address. Your email address will appear in the text field by default, which is a function of you already being logged into the admin side with your personal account information.
+
+Change the email address by editing it in the text box and clicking the corresponding Submit button.
+
+h4(#authors_3). Authors (3)
+
+The _Authors_ region of the panel is simply a list of the existing accounts in the Textpattern site. As indicated in the notes above, Admin/Publishers and Managing Editors are the only user roles that can see this list; however, only Admin/Publishers can use the list to edit the privileges of another user account.
+
+"user&#95;roles&#95;and&#95;permissions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions are defined for each type of admin-side user (with respect to the entire Textpattern site, not just the Users panel). Privileges change (decrease) with each lesser role.
+
+h4(#add_new_author_4). Add New Author (4)
+
+This region of controls is where Admin/Publishers add new user accounts to the site. Once an account is created it is automatically added to the Authors region list, where the Admin/Publisher can then edit the assigned privileges if ever needed.
+
+h4(#reset_author_password_5). Reset Author Password (5)
+
+When one or more additional user roles are created, the Reset Author Password region (figure 3) becomes visible to the Admin/Publisher, which can then be used for the implied job, if ever needed.
+
+The Admin/Publisher will not know what the password is, the process is managed by selecting the user from the dropdown list and clicking the corresponding Submit button. Textpattern then changes the password and auto-sends an email to the user informing them of the new change.
+
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-users-resetauthpsswd.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-users-resetauthpsswd.png
+

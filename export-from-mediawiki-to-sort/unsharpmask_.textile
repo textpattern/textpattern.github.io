@@ -1,0 +1,16 @@
+\n
+
+h3(sectionedit1#name). Name
+
+unsharpmask()
+
+h3(sectionedit2#purpose). Purpose
+
+Image enhancing routine providing the “unsharp mask” algorithm.
+
+h3(sectionedit3#inputs). Inputs
+
+h3(sectionedit4#outputs). Outputs
+
+h3(sectionedit5#examples). Examples
+

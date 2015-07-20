@@ -1,0 +1,124 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:image_index />
+
+
+The "image&#95;index":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_index tag is a _single_ tag that is intended to be used in tandem with "image&#95;display":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_display.
+
+It renders thumbnails of all images contained in an image category. This category can be specified as an attribute to the tag and defaults to the current site category as given in the page's URL.
+
+The thumbnail images are linked to an address which will pass the image id plus the active category on to the tandem "image&#95;display":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_display tag. It is up to the user to include this tandem tag at an appropriate place inside the page template.
+
+As the image category is passed into "image&#95;display":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_display, it requires to either place the “receiving” image&#95;display on an article independent portion of the page (i.e. outside of the article form), or otherwise both the article used for display and the images have to share a *common* category.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#category=“category name”*
+ Category of images to display. Default: presently viewed category. *"limit":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#limit=“integer”*
+ The number of images to display. Default:
+
+bc(code). 0
+
+
+(no limit). *"offset":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#offset=“integer”*
+ The number of images to skip. Default:
+
+bc(code). 0
+
+
+. *"sort":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#sort=“sort value(s)”*
+ How to sort resulting list. Values:
+
+bc(code). id
+
+
+(image id#)
+
+bc(code). name
+
+
+(image name)
+
+bc(code). category
+
+
+(image category)
+
+bc(code). ext
+
+
+(image extension)
+
+bc(code). w
+
+
+(image width)
+
+bc(code). h
+
+
+(image height)
+
+bc(code). alt
+
+
+(image alt text)
+
+bc(code). caption
+
+
+(image caption text)
+
+bc(code). date
+
+
+(date posted)
+
+bc(code). author
+
+
+bc(code). thumbnail
+
+
+bc(code). rand()
+
+
+("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand) Each field in the “txp&#95;image”-table can be used as a sort key. Default:
+
+bc(code). name asc
+
+
+.
+
+"common&#95;presentational&#95;attributes":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_presentational_attributes
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1create_a_list_of_images_in_a_category). Example 1: Create a list of images in a category
+
+bc(code). <txp:image_index category="personal" break="li" wraptag="ol" />
+
+
+*What it does...*
+ Shows the thumbnail images from the category “personal”.
+
+h3(sectionedit3#reference). Reference
+
+"image&#95;display":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_display
+
+h3(sectionedit4#genealogy). Genealogy
+
+h4(#version_430). Version 4.3.0
+
+<ul>
+<li>bc(code). c
+
+
+<p>attribute deprecated and renamed</p>
+bc(code). category
+
+</li>
+</ul>
+

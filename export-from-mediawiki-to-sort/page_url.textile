@@ -1,0 +1,83 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:page_url />
+
+
+The "page&#95;url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_url tag is a _single_ tag. It is used to return a particular component of the URL from the current page being displayed.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#type=“type”*
+ Specifies which component of the current page's URL will be returned. Values:
+
+bc(code). request_uri
+
+
+: current article's URL-title including any query string
+
+bc(code). id
+
+
+: current article's id on a single article page
+
+bc(code). s
+
+
+: current page's section
+
+bc(code). c
+
+
+: current page's category
+
+bc(code). q
+
+
+: search query string
+
+bc(code). pg
+
+
+: current page number in article list mode
+
+bc(code). month
+
+
+: current page's month on time based article lists
+
+bc(code). author
+
+
+: current page's author on article lists filtered by author
+
+bc(code). status
+
+
+: HTTP error response (200, 404)
+
+bc(code). css
+
+
+: current style sheet name
+
+bc(code). page
+
+
+: current page template name Default:
+
+bc(code). request_uri
+
+
+.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1show_the_current_article_s_id_http_status_and_section). Example 1: Show the current article's ID, HTTP status and section
+
+bc(code). <p>Article ID: <txp:page_url type="id" /><br />
+From section: <txp:page_url type="s" />
+     (Result: <txp:page_url type="status" />)</p>
+
+

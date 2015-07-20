@@ -1,0 +1,30 @@
+\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+
+bc(code). <txp:link />
+
+
+The "link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link tag is a _single_ tag which is used to return an HTML hyperlink defined under the "links":/home/www/zendstudio/dokuwiki/bin/doku.php?id=links tab. It uses the *Title* field as the link's text.
+
+This tag is used in “link” forms or inside the "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist container tag.
+
+h3(sectionedit1#attributes). Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+*"rel":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#rel=“relation”*
+ Value for the HTML
+
+bc(code). rel
+
+
+attribute. Default: unset.
+
+h3(sectionedit2#examples). Examples
+
+h4(#example_1display_a_link_and_its_description). Example 1: Display a link and its description
+
+bc(code). <nowiki><p><txp:link /><br /><txp:link_description /></p></nowiki>
+
+
+Other tags used: "link&#95;description":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_description
+
