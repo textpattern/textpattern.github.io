@@ -1,4 +1,0 @@
-\n"mainindexpage":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mainindexpage
-
-(Automatically exported to Dokuwiki from Mediawiki by "Yamdwe":https://github.com/projectgus/yamdwe on 07/19/15.)
-
