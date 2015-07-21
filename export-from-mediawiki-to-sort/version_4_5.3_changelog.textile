@@ -1,8 +1,0 @@
-\nChanges in 4.5.3
-
-* Maintenance release with bug fixes, no security implications
-* Fix &lt;txp:link&#95;to&#95;prev&gt;, &lt;txp:link&#95;to&#95;next&gt;, &lt;txp:prev&#95;title&gt;, and &lt;txp:next&#95;title&gt; tags for certain combinations with &lt;txp:article&#95;custom&gt;
-* Escape new page name in the 'Pages' panel
-* Developer: Render valid HTML in fInput() for input types 'file' and 'image'
-* Developer: In http&#95;accept&#95;format(), discard MIME formats with a quality factor below 0.1
-
