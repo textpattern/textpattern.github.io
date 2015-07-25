@@ -24,12 +24,12 @@ h2. Setting up Nginx
 
 There are several configuration files for Nginx (path names may vary between Linux distributions). The ones that may need adjustments are as follows:
 
-; @/etc/nginx/nginx.conf@
-: Main configuration, similar to @httpd.conf@ for Apache.
-; @/etc/nginx/conf.d/*.conf@
-: Additional configuration files (everything with a suffix of @.conf@) - those will also be used for the virtual host configuration.
-; @/etc/nginx/fastcgi_params@
-: FastCGI settings.
+* @/etc/nginx/nginx.conf@
+Main configuration, similar to @httpd.conf@ for Apache.
+* @/etc/nginx/conf.d/*.conf@
+Additional configuration files (everything with a suffix of @.conf@) - those will also be used for the virtual host configuration.
+* @/etc/nginx/fastcgi_params@
+FastCGI settings.
 
 h3. /etc/nginx/nginx.conf
 
