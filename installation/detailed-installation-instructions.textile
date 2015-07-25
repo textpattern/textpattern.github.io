@@ -15,28 +15,28 @@ p(alert-block warning). Textpattern is designed to work exactly as the folders a
 
 *The folders/files in the package are:*
 
-; @.htaccess@
-: Important for many reasons that are out of scope here, but not the least of which is handling URL formatting.
-; @css.php@
-: Handles the site's styles.
-; @files@ (directory)
-: Empty by default, but will be utilized later in the course of building your site, particularly if/when you use the upload features in the admin-side's [[Files page]].
-; @HISTORY.txt@
-: Changelog.
-; @images@ (directory)
-: Empty by default, but will be utilized later in the course of building your site, particularly if/when you use the upload features in the admin-side's [[Images page]].
-; @index.php@
-: The default location of your site where web users will arrive, and where content publishing takes place dynamically.
-; @js@ (directory)
-: Contains JavaScript specific to the default website theme. This may be safely removed depending on whether you plan to use your own theme instead of the default.
-; @README.txt@
-: Provides brief instruction on installing and upgrading.
-; @rpc@ (directory)
-: XML-RPC functionality is kept in this folder.
-; @sites@ (directory)
-: Contains site template, and provides support for [[Multiple Sites with a Single Install]].
-; @textpattern@ (directory)
-: All the core scripting and functionality is kept in this folder.
+* @.htaccess@
+Important for many reasons that are out of scope here, but not the least of which is handling URL formatting.
+* @css.php@
+Handles the site's styles.
+* @files@ (directory)
+Empty by default, but will be utilized later in the course of building your site, particularly if/when you use the upload features in the admin-side's [[Files page]].
+* @HISTORY.txt@
+Changelog.
+* @images@ (directory)
+Empty by default, but will be utilized later in the course of building your site, particularly if/when you use the upload features in the admin-side's [[Images page]].
+* @index.php@
+The default location of your site where web users will arrive, and where content publishing takes place dynamically.
+* @js@ (directory)
+Contains JavaScript specific to the default website theme. This may be safely removed depending on whether you plan to use your own theme instead of the default.
+* @README.txt@
+Provides brief instruction on installing and upgrading.
+* @rpc@ (directory)
+XML-RPC functionality is kept in this folder.
+* @sites@ (directory)
+Contains site template, and provides support for [[Multiple Sites with a Single Install]].
+* @textpattern@ (directory)
+All the core scripting and functionality is kept in this folder.
 
 h2. Where to install on your server?
 
