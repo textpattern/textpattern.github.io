@@ -17,8 +17,8 @@ h2. Core tags
 
 Building with Textpattern means learning to use the core set of __Tags__.
 
-* "Tag basics":tag-basics/index.textile - A good place to start.
-* "Complete list of Textpattern Tags":tag-reference/index.textile - Create any web publishing architecture imaginable using the magic of Textpattern Tags.
+* "Tag basics":tags/tag-basics/index.textile - A good place to start.
+* "Complete list of Textpattern Tags":tags/index.textile - Create any web publishing architecture imaginable using the magic of Textpattern Tags.
 
 h2. Advanced topics
 
@@ -26,7 +26,7 @@ Going beyond core functionality.
 
 h3. Themes
 
-Better theme support is coming in future releases. Until then, there are other ways to get started with custom theme designs: 
+Better theme support is coming in future releases. Until then, there are other ways to get started with custom theme designs:
 
 * "Creating Textpattern themes":themes/index.textile
 * "Creating and using admin-side themes":themes/creating_and_using_admin-side_themes.textile
