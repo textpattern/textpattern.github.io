@@ -4,7 +4,7 @@ h2. Installation
 
 Textpattern CMS installation in a hand basket...
 
-# "Quick installation/upgrade guide":installation/quick-installation-upgrade-guide.textile - The basic Textpattern CMS installation/upgrade approach.
+# "Quick installation/upgrade guide":installation/index.textile - The basic Textpattern CMS installation/upgrade approach.
 # "Detailed installation instructions":installation/detailed-installation-instructions.textile - In-depth information regarding Textpattern CMS installation.
 # "Detailed upgrading instructions":installation/detailed-upgrading-instructions.textile - In-depth information regarding upgrading to a newer Textpattern CMS version.
 # "Downgrading, nightlies and bleeding edge":installation/downgrading-nightlies-bleeding-edge.textile - Installation of non-current/development Textpattern CMS releases.
@@ -25,7 +25,7 @@ h2. Tag reference
 
 If you can use HTML, you can use Textpattern Tags...
 
-# Tag basics - A good place to start.
+# "Tag basics":tag-basics/index.textile - A good place to start.
 # "Complete list of Textpattern Tags":tag-reference/index.textile - Create any web publishing architecture imaginable using the magic of Textpattern Tags.
 
 See all tag reference documentation...
