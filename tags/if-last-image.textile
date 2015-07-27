@@ -1,4 +1,4 @@
-h1. If last image EXISTS? [todo:pw]
+h1. If last image [todo:pw]
 
 bc(code). <txp:if_last_image>
 
@@ -16,9 +16,8 @@ h3(sectionedit1#attributes). Attributes
 
 This tag has no attributes.
 
-h3(sectionedit2#genealogy). Genealogy
+h2. Genealogy
 
-h4(#version_xyz). Version x.y.z
+h3. Version 4.6.0
 
-* tag introduced
-
+Tag support added.

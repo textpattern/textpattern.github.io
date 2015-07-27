@@ -114,11 +114,17 @@ h3. I
 * "if expires":if-expires.textile
 * "if first article":if-first-article.textile
 * "if first category":if-first-category.textile
+* "if first file":if-first-file.textile
+* "if first image":if-first-image.textile
+* "if first link":if-first-link.textile
 * "if first section":if-first-section.textile
 * "if individual article":if-individual-article.textile
 * "if keywords":if-keywords.textile
 * "if last article":if-last-article.textile
 * "if last category":if-last-category.textile
+* "if last file":if-last-file.textile
+* "if last image":if-last-image.textile
+* "if last link":if-last-link.textile
 * "if last section":if-last-section.textile
 * "if plugin":if-plugin.textile
 * "if search":if-search.textile
