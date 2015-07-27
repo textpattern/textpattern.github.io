@@ -8,7 +8,7 @@ For SEO friendly URLs, and for consistency, all directory names/file names shoul
 
 # All text in lowercase.
 # Use hyphens, *not* underscores, to separate words within the URL.
-# Ensure @.textile@ prefix is used on files (Markdown is not be used).
+# Ensure @.textile@ prefix is used on files (Markdown is not to be used).
 
 *Example:*
 
