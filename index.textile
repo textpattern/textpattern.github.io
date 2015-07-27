@@ -2,73 +2,40 @@ h1. Index
 
 h2. Installation
 
-Textpattern CMS installation in a hand basket...
-
-# "Quick installation/upgrade guide":installation/index.textile - The basic Textpattern CMS installation/upgrade approach.
-# "Detailed installation instructions":installation/detailed-installation-instructions.textile - In-depth information regarding Textpattern CMS installation.
-# "Detailed upgrading instructions":installation/detailed-upgrading-instructions.textile - In-depth information regarding upgrading to a newer Textpattern CMS version.
-# "Downgrading, nightlies and bleeding edge":installation/downgrading-nightlies-bleeding-edge.textile - Installation of non-current/development Textpattern CMS releases.
-# Multi-site installation - One Textpattern CMS install to rule them all.
-
-See all installation documentation...
+# "Quick installation/upgrade guide":installation/index.textile -- The basic Textpattern CMS installation/upgrade approach.
+# "Detailed installation instructions":installation/detailed-installation-instructions.textile -- In-depth information regarding Textpattern CMS installation.
+# "Detailed upgrading instructions":installation/detailed-upgrading-instructions.textile -- In-depth information regarding upgrading to a newer Textpattern CMS version.
+# "Downgrading, nightlies and bleeding edge":installation/downgrading-nightlies-bleeding-edge.textile -- Installation of non-current/development Textpattern CMS releases.
+# Multi-site installation -- One Textpattern CMS install to rule them all.
 
 h2. Administration
 
-Site administration is power to unveil...
+# "Administration panels":administration/index.textile -- The organisation and general functionality of the administration side of Textpattern CMS.
+# "Administration workflow highlights":administration/admin-highlights.textile -- A useful frame of reference for quickly navigating and using the admin-side.
 
-# Administration workflow - Journey through a contextual workflow as if setting up an actual site. Not every feature, just orientation and links to deeper learning.
-# Admin-side - Organisation of the administration side of Textpattern CMS, with complete details of every feature in each panel.
+h2. Core tags
 
-See all administration documentation...
-
-h2. Tag reference
-
-If you can use HTML, you can use Textpattern Tags...
+Building with Textpattern means learning to use the core set of __Tags__.
 
 # "Tag basics":tag-basics/index.textile - A good place to start.
 # "Complete list of Textpattern Tags":tag-reference/index.textile - Create any web publishing architecture imaginable using the magic of Textpattern Tags.
 
-See all tag reference documentation...
+h2. Advanced topics
 
-h2. Top 10 tutorials
+Going beyond core functionality.
 
-Something for every skill level...
+h3. Themes
 
-# Top 10 tutorials: The most common post-installation developments to help you establish your baseline site.
-# TXP tips - Community tips and tricks for when you're ready to learn more. Lots of advanced Textpattern Tag techniques.
+Better theme support is coming in future releases. Until then, there are other ways to get started with custom theme designs: 
 
-h2. Create themes
+# "Creating Textpattern themes":themes/index.textile
+# "Creating and using admin-side themes":themes/creating_and_using_admin-side_themes.textile
+# "Textpattern themes on GitHub":themes/themes-on-github.textile
 
-Textpattern is a canvas, you're the artist...
-
-# Creating Textpattern themes.
-# Creating and using admin-side themes.
-# Textpattern themes - When you need something ready-made.
-# Textpattern themes on GitHub.
-
-See all theme documentation...
-
-h2. Plugins
+h3. Plugins
 
 Develop the next must-have plugins...
 
-# Plugin development 1-2-3.
-# The most recent tips, hacks, and facts for your favorite plugins.
-# Plugin fact sheets.
-
-See all plugin documentation...
-
-h2. FAQs
-
-'Frequently asked questions' does not mean 'everything you can possibly imagine', that's what the rest of this user manual is for. These are only the top FAQs. Please keep these short, sweet (and thus helpful).
-
-# Textpattern FAQs
-
-h2. Community
-
-We sometimes use the Wiki for brainstorming and sharing - bring your brain and your contributions...
-
-# Macros for Textpattern CMS.
-# Feature requests.
-# Community projects.
-# Community sites listing.
+# "Plugin development":plugins/index.textile
+# The most recent tips, hacks, and facts for your favorite plugins
+# Plugin fact sheets
