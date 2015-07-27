@@ -102,7 +102,6 @@ h2. Nesting quotes in quotes in...
 Referring to the last point above, things can become 'a little hairy' if you want to insert a tag into an attribute of a tag that's already an attribute! But keep your wits about you and you can do things like this:
 
 bc. <txp:variable name="file_count" value='<txp:file_download_list form="file_cat" category=''<txp:l10n_get_lang type="short" />'' />' />
-
 <txp:if_variable name="file-count">
     <h3>Some Header</h3>
     <txp:file_download_list category='<txp:l10n_get_lang type="short" />' wraptag="ul" break="li" />
