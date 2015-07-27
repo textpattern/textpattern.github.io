@@ -1,3 +1,9 @@
+---
+layout: document
+published: true
+title: "Textpattern CMS User Documentation"
+---
+
 h1. Index
 
 h2. Installation
@@ -18,7 +24,7 @@ h2. Core tags
 Building with Textpattern means learning to use the core set of __Tags__.
 
 * "Tag basics":tags/tag-basics/index.textile - A good place to start.
-* "Complete list of Textpattern Tags":tags/index.textile - Create any web publishing architecture imaginable using the magic of Textpattern Tags.
+* "Complete list of Textpattern tags":tags/index.textile - Create any web publishing architecture imaginable using the magic of Textpattern tags.
 
 h2. Advanced topics
 

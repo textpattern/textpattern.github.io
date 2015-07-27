@@ -58,7 +58,7 @@ You can build your own custom search form by specifying @form="form-name"@ insid
 
 bc. <txp:search_input form="form-name" />
 
-You would then need to build your Form (i.e., @form-name@), and the absolute minimum Textpattern Tags and attributes required would be:
+You would then need to build your Form (i.e., @form-name@), and the absolute minimum Textpattern tags and attributes required would be:
 
 bc. <form action="<txp:site_url />">
     <input name="q" type="search" />

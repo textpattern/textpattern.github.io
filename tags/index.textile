@@ -1,12 +1,21 @@
-h1. Textpattern Tag reference
+---
+layout: document
+category: tag-reference
+published: true
+title: "Textpattern tag reference"
+tags:
+  - Tag reference
+---
 
-Pages describing each Textpattern Tag are alphabetised at below, by tag name. See [[Tag Basics]] for Textpattern Tag fundamentals and overview.
+h1. Textpattern tag reference
+
+Pages describing each Textpattern tag are alphabetised at below, by tag name. See "Tag basics":tag-basics/index.textile for Textpattern tag fundamentals and overview.
 
 h2. Subcategories
 
 *TODO*
 
-h2. Complete list of Textpattern Tags
+h2. Complete list of Textpattern tags
 
 h3. A
 
