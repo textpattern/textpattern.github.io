@@ -1,3 +1,12 @@
+---
+layout: document
+category: tag-basics
+published: true
+title: "Self-closed versus container tags"
+tags:
+  - Tag basics
+---
+
 h1. Self-closed versus container tags
 
 h2. Self-closed tags

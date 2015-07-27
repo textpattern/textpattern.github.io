@@ -1,3 +1,12 @@
+---
+layout: document
+category: installation
+published: true
+title: "Downgrading, nightlies, and bleeding edge"
+tags:
+  - Installation
+---
+
 h1. Downgrading, nightlies, and bleeding edge
 
 You have Textpattern CMS installed somewhere already and now you want to either downgrade, use a nightly build or use a development (bleeding edge) release.

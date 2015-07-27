@@ -1,3 +1,12 @@
+---
+layout: document
+category: installation
+published: true
+title: "Detailed installation instructions"
+tags:
+  - Installation
+---
+
 h1. Detailed installation instructions
 
 This article is intended to help users with the installation process if the short instructions on the "Textpattern download":http://textpattern.com/download page don't work out for you.

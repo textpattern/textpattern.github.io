@@ -1,3 +1,12 @@
+---
+layout: document
+category: tag-basics
+published: true
+title: "Textpattern conditional tags"
+tags:
+  - Tag basics
+---
+
 h1. Conditional tags
 
 "Container tags":self-closed-versus-container-tags.textile in Textpattern are great for making lists and you use *conditional tags* to get there.

@@ -1,3 +1,12 @@
+---
+layout: document
+category: installation
+published: true
+title: "Moving installation from subdirectory to domain root on the same server"
+tags:
+  - Installation
+---
+
 h1. Moving installation from subdirectory to domain root on the same server
 
 For whatever reason, it is sometimes the case that you have Textpattern installed in a subdirectory of a web domain (i.e., @example.com/subdirectory@) and later decide you would like it to be located in the domain root (i.e., @example.com@). Moving a Textpattern installation from a subdirectory to the domain root is a relatively easy matter; you simply backup your resources (not required but encouraged), move the files, change paths in a few key places, and you should be good to go.

@@ -1,3 +1,12 @@
+---
+layout: document
+category: tag-basics
+published: true
+title: "Tag basics"
+tags:
+  - Tag basics
+---
+
 h1. Tag basics
 
 Textpattern tags are arguably the most important feature of Textpattern. They represent a shorthand method for calling functions defined inside Textpattern core. The functions themselves represent content components, their sources, and means of displaying them.

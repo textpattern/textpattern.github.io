@@ -1,3 +1,12 @@
+---
+layout: document
+category: tag-basics
+published: true
+title: "Tag nesting"
+tags:
+  - Tag basics
+---
+
 h1. Tag nesting
 
 Similar to HTML, Textpattern allows you to nest tags within tags, as long as you close them in the correct order (i.e., tag closing cannot overlap).

@@ -1,3 +1,12 @@
+---
+layout: document
+category: installation
+published: true
+title: "Moving installation from one host to another"
+tags:
+  - Installation
+---
+
 h1. Moving installation from one host to another
 
 Sometimes it is necessary (whether for better service, a cheaper deal, etc.) to move your website from one web hosting service to another. This is a relatively easy matter that mainly just involves backing up your current Textpattern installation and database, reinstalling them on the new server location, and adjusting the files to make sure everything is all working properly.

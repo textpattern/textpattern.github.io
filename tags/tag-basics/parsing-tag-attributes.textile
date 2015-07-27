@@ -1,3 +1,12 @@
+---
+layout: document
+category: tag-basics
+published: true
+title: "Parsing tag attributes"
+tags:
+  - Tag basics
+---
+
 h1. Parsing tag attributes
 
 h2. Conventions for attributes
