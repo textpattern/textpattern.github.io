@@ -2,23 +2,23 @@ h1. Index
 
 h2. Installation
 
-# "Quick installation/upgrade guide":installation/index.textile -- The basic Textpattern CMS installation/upgrade approach.
-# "Detailed installation instructions":installation/detailed-installation-instructions.textile -- In-depth information regarding Textpattern CMS installation.
-# "Detailed upgrading instructions":installation/detailed-upgrading-instructions.textile -- In-depth information regarding upgrading to a newer Textpattern CMS version.
-# "Downgrading, nightlies and bleeding edge":installation/downgrading-nightlies-bleeding-edge.textile -- Installation of non-current/development Textpattern CMS releases.
-# Multi-site installation -- One Textpattern CMS install to rule them all.
+* "Quick installation/upgrade guide":installation/index.textile -- The basic Textpattern CMS installation/upgrade approach.
+* "Detailed installation instructions":installation/detailed-installation-instructions.textile -- In-depth information regarding Textpattern CMS installation.
+* "Detailed upgrading instructions":installation/detailed-upgrading-instructions.textile -- In-depth information regarding upgrading to a newer Textpattern CMS version.
+* "Downgrading, nightlies and bleeding edge":installation/downgrading-nightlies-bleeding-edge.textile -- Installation of non-current/development Textpattern CMS releases.
+* Multi-site installation -- One Textpattern CMS install to rule them all.
 
 h2. Administration
 
-# "Administration panels":administration/index.textile -- The organisation and general functionality of the administration side of Textpattern CMS.
-# "Administration workflow highlights":administration/admin-highlights.textile -- A useful frame of reference for quickly navigating and using the admin-side.
+* "Administration panels":administration/index.textile -- The organisation and general functionality of the administration side of Textpattern CMS.
+* "Administration workflow highlights":administration/admin-highlights.textile -- A useful frame of reference for quickly navigating and using the admin-side.
 
 h2. Core tags
 
 Building with Textpattern means learning to use the core set of __Tags__.
 
-# "Tag basics":tag-basics/index.textile - A good place to start.
-# "Complete list of Textpattern Tags":tag-reference/index.textile - Create any web publishing architecture imaginable using the magic of Textpattern Tags.
+* "Tag basics":tag-basics/index.textile - A good place to start.
+* "Complete list of Textpattern Tags":tag-reference/index.textile - Create any web publishing architecture imaginable using the magic of Textpattern Tags.
 
 h2. Advanced topics
 
@@ -28,14 +28,14 @@ h3. Themes
 
 Better theme support is coming in future releases. Until then, there are other ways to get started with custom theme designs: 
 
-# "Creating Textpattern themes":themes/index.textile
-# "Creating and using admin-side themes":themes/creating_and_using_admin-side_themes.textile
-# "Textpattern themes on GitHub":themes/themes-on-github.textile
+* "Creating Textpattern themes":themes/index.textile
+* "Creating and using admin-side themes":themes/creating_and_using_admin-side_themes.textile
+* "Textpattern themes on GitHub":themes/themes-on-github.textile
 
 h3. Plugins
 
 Develop the next must-have plugins...
 
-# "Plugin development":plugins/index.textile
-# The most recent tips, hacks, and facts for your favorite plugins
-# Plugin fact sheets
+* "Plugin development":plugins/index.textile
+* The most recent tips, hacks, and facts for your favorite plugins
+* Plugin fact sheets
