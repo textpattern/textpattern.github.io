@@ -19,202 +19,202 @@ h2. Complete list of Textpattern tags
 
 h3. A
 
-# "article":article.textile
-# "article custom":article-custom.textile
-# "article id":article-id.textile
-# "article image":article-image.textile
-# "article url title":article-url-title.textile
-# "author":author.textile
-# "author email":author-email.textile
+* "article":article.textile
+* "article custom":article-custom.textile
+* "article id":article-id.textile
+* "article image":article-image.textile
+* "article url title":article-url-title.textile
+* "author":author.textile
+* "author email":author-email.textile
 
 h3. B
 
-# "body":body.textile
-# "breadcrumb":breadcrumb.textile
+* "body":body.textile
+* "breadcrumb":breadcrumb.textile
 
 h3. C
 
-# "category":category.textile
-# "category list":category-list.textile
-# "category1":category1.textile
-# "category2":category1.textile
-# "comment anchor":comment-anchor.textile
-# "comment email":comment-email.textile
-# "comment email input":comment-email-input.textile
-# "comment id":comment-id.textile
-# "comment message":comment-message.textile
-# "comment message input":comment-message-input.textile
-# "comment name":comment-name.textile
-# "comment name input":comment-name-input.textile
-# "comment permlink":comment-permlink.textile
-# "comment preview":comment-preview.textile
-# "comment remember":comment-remember.textile
-# "comment submit":comment-submit.textile
-# "comment time":comment-time.textile
-# "comment web":comment-web.textile
-# "comment web input":comment-web-input.textile
-# "comments":comments.textile
-# "comments count":comments-count.textile
-# "comments error":comments-error.textile
-# "comments form":comments-form.textile
-# "comments help":comments-help.textile
-# "comments invite":comments-invite.textile
-# "comments preview":comments-preview.textile
-# "css":css.textile
-# "custom field":custom-field.textile
+* "category":category.textile
+* "category list":category-list.textile
+* "category1":category1.textile
+* "category2":category1.textile
+* "comment anchor":comment-anchor.textile
+* "comment email":comment-email.textile
+* "comment email input":comment-email-input.textile
+* "comment id":comment-id.textile
+* "comment message":comment-message.textile
+* "comment message input":comment-message-input.textile
+* "comment name":comment-name.textile
+* "comment name input":comment-name-input.textile
+* "comment permlink":comment-permlink.textile
+* "comment preview":comment-preview.textile
+* "comment remember":comment-remember.textile
+* "comment submit":comment-submit.textile
+* "comment time":comment-time.textile
+* "comment web":comment-web.textile
+* "comment web input":comment-web-input.textile
+* "comments":comments.textile
+* "comments count":comments-count.textile
+* "comments error":comments-error.textile
+* "comments form":comments-form.textile
+* "comments help":comments-help.textile
+* "comments invite":comments-invite.textile
+* "comments preview":comments-preview.textile
+* "css":css.textile
+* "custom field":custom-field.textile
 
 h3. E
 
-# "else":else.textile
-# "email":email.textile
-# "error message":error-message.textile
-# "error status":error-status.textile
-# "excerpt":excerpt.textile
-# "expires":expires.textile
+* "else":else.textile
+* "email":email.textile
+* "error message":error-message.textile
+* "error status":error-status.textile
+* "excerpt":excerpt.textile
+* "expires":expires.textile
 
 h3. F
 
-# "feed link":feed-link.textile
-# "file download":file-download.textile
-# "file download author":file-download-author.textile
-# "file download category":file-download-category.textile
-# "file download created":file-download-created.textile
-# "file download description":file-download-description.textile
-# "file download downloads":file-download-downloads.textile
-# "file download id":file-download-id.textile
-# "file download link":file-download-link.textile
-# "file download list":file-download-list.textile
-# "file download modified":file-download-modified.textile
-# "file download name":file-download-name.textile
-# "file download size":file-download-size.textile
+* "feed link":feed-link.textile
+* "file download":file-download.textile
+* "file download author":file-download-author.textile
+* "file download category":file-download-category.textile
+* "file download created":file-download-created.textile
+* "file download description":file-download-description.textile
+* "file download downloads":file-download-downloads.textile
+* "file download id":file-download-id.textile
+* "file download link":file-download-link.textile
+* "file download list":file-download-list.textile
+* "file download modified":file-download-modified.textile
+* "file download name":file-download-name.textile
+* "file download size":file-download-size.textile
 
 h3. H
 
-# "hide":hide.textile
+* "hide":hide.textile
 
 h3. I
 
-# "if article author":if-article-author.textile
-# "if article category":if-article-category.textile
-# "if article id":if-article-id.textile
-# "if article image":if-article-image.textile
-# "if article list":if-article-list.textile
-# "if article section":if-article-section.textile
-# "if author":if-author.textile
-# "if category":if-category.textile
-# "if comments":if-comments.textile
-# "if comments allowed":if-comments-allowed.textile
-# "if comments disallowed":if-comments-disallowed.textile
-# "if comments error":if-comments-error.textile
-# "if comments preview":if-comments-preview.textile
-# "if custom field":if-custom-field.textile
-# "if different":if-different.textile
-# "if excerpt":if-excerpt.textile
-# "if expired":if-expired.textile
-# "if expires":if-expires.textile
-# "if first article":if-first-article.textile
-# "if first category":if-first-category.textile
-# "if first section":if-first-section.textile
-# "if individual article":if-individual-article.textile
-# "if keywords":if-keywords.textile
-# "if last article":if-last-article.textile
-# "if last category":if-last-category.textile
-# "if last section":if-last-section.textile
-# "if plugin":if-plugin.textile
-# "if search":if-search.textile
-# "if search results":if-search-results.textile
-# "if section":if-section.textile
-# "if status":if-status.textile
-# "if thumbnail":if-thumbnail.textile
-# "if variable":if-variable.textile
-# "image":image.textile
-# "image author":image-author.textile
-# "image date":image-date.textile
-# "image display":image-display.textile
-# "image index":image-index.textile
-# "image info":image-info.textile
-# "image url":image-url.textile
-# "images":images.textile
+* "if article author":if-article-author.textile
+* "if article category":if-article-category.textile
+* "if article id":if-article-id.textile
+* "if article image":if-article-image.textile
+* "if article list":if-article-list.textile
+* "if article section":if-article-section.textile
+* "if author":if-author.textile
+* "if category":if-category.textile
+* "if comments":if-comments.textile
+* "if comments allowed":if-comments-allowed.textile
+* "if comments disallowed":if-comments-disallowed.textile
+* "if comments error":if-comments-error.textile
+* "if comments preview":if-comments-preview.textile
+* "if custom field":if-custom-field.textile
+* "if different":if-different.textile
+* "if excerpt":if-excerpt.textile
+* "if expired":if-expired.textile
+* "if expires":if-expires.textile
+* "if first article":if-first-article.textile
+* "if first category":if-first-category.textile
+* "if first section":if-first-section.textile
+* "if individual article":if-individual-article.textile
+* "if keywords":if-keywords.textile
+* "if last article":if-last-article.textile
+* "if last category":if-last-category.textile
+* "if last section":if-last-section.textile
+* "if plugin":if-plugin.textile
+* "if search":if-search.textile
+* "if search results":if-search-results.textile
+* "if section":if-section.textile
+* "if status":if-status.textile
+* "if thumbnail":if-thumbnail.textile
+* "if variable":if-variable.textile
+* "image":image.textile
+* "image author":image-author.textile
+* "image date":image-date.textile
+* "image display":image-display.textile
+* "image index":image-index.textile
+* "image info":image-info.textile
+* "image url":image-url.textile
+* "images":images.textile
 
 h3. L
 
-# "lang":lang.textile
-# "link":link.textile
-# "link author":link-author.textile
-# "link category":link-category.textile
-# "link date":link-date.textile
-# "link description":link-description.textile
-# "link feed link":link-feed-link.textile
-# "link id":link-id.textile
-# "link name":link-name.textile
-# "link to home":link-to-home.textile
-# "link to next":link-to-next.textile
-# "link to prev":link-to-prev.textile
-# "link url":link-url.textile
-# "linkdesctitle":linkdesctitle.textile
-# "linklist":linklist.textile
+* "lang":lang.textile
+* "link":link.textile
+* "link author":link-author.textile
+* "link category":link-category.textile
+* "link date":link-date.textile
+* "link description":link-description.textile
+* "link feed link":link-feed-link.textile
+* "link id":link-id.textile
+* "link name":link-name.textile
+* "link to home":link-to-home.textile
+* "link to next":link-to-next.textile
+* "link to prev":link-to-prev.textile
+* "link url":link-url.textile
+* "linkdesctitle":linkdesctitle.textile
+* "linklist":linklist.textile
 
 h3. M
 
-# "meta author":meta-author.textile
-# "meta description":meta-description.textile
-# "meta keywords":meta-keywords.textile
-# "modified":modified.textile
+* "meta author":meta-author.textile
+* "meta description":meta-description.textile
+* "meta keywords":meta-keywords.textile
+* "modified":modified.textile
 
 h3. N
 
-# "newer":newer.textile
-# "next title":next-title.textile
+* "newer":newer.textile
+* "next title":next-title.textile
 
 h3. O
 
-# "older":older.textile
-# "output form":output-form.textile
+* "older":older.textile
+* "output form":output-form.textile
 
 h3. P
 
-# "page title":page-title.textile
-# "page url":page-url.textile
-# "password protect":password-protect.textile
-# "permlink":permlink.textile
-# "php":php.textile
-# "popup":popup.textile
-# "posted":posted.textile
-# "prev title":prev-title.textile
+* "page title":page-title.textile
+* "page url":page-url.textile
+* "password protect":password-protect.textile
+* "permlink":permlink.textile
+* "php":php.textile
+* "popup":popup.textile
+* "posted":posted.textile
+* "prev title":prev-title.textile
 
 h3. R
 
-# "recent articles":recent-articles.textile
-# "recent comments":recent-comments.textile
-# "related articles":related-articles.textile
-# "rsd":rsd.textile
+* "recent articles":recent-articles.textile
+* "recent comments":recent-comments.textile
+* "related articles":related-articles.textile
+* "rsd":rsd.textile
 
 h3. S
 
-# "search input":search-input.textile
-# "search result count":search-result-count.textile
-# "search result date":search-result-date.textile
-# "search result excerpt":search-result-excerpt.textile
-# "search result title":search-result-title.textile
-# "search result url":search-result-url.textile
-# "search term":search-term.textile
-# "section":section.textile
-# "section list":section-list.textile
-# "site name":site-name.textile
-# "site slogan":site-slogan.textile
-# "site url":site-url.textile
+* "search input":search-input.textile
+* "search result count":search-result-count.textile
+* "search result date":search-result-date.textile
+* "search result excerpt":search-result-excerpt.textile
+* "search result title":search-result-title.textile
+* "search result url":search-result-url.textile
+* "search term":search-term.textile
+* "section":section.textile
+* "section list":section-list.textile
+* "site name":site-name.textile
+* "site slogan":site-slogan.textile
+* "site url":site-url.textile
 
 h3. T
 
-# "text":text.textile
-# "thumbnail":thumbnail.textile
-# "title":title.textile
-# "txp die":txp-die.textile
+* "text":text.textile
+* "thumbnail":thumbnail.textile
+* "title":title.textile
+* "txp die":txp-die.textile
 
 h3. V
 
-# "variable":variable.textile
+* "variable":variable.textile
 
 h3. Y
 
-# "yield":yield.textile
+* "yield":yield.textile
