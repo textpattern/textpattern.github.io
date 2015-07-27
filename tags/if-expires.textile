@@ -1,44 +1,44 @@
-h1. If expires [todo:pw]
+---
+layout: document
+category: tag-reference
+published: true
+title: "If expires"
+tags:
+  - Tag reference
+  - Article tags
+  - Conditonal tags
+---
 
-bc(code). <txp:if_expires>
+h1. If expires
 
+h2. Syntax
 
-The "if&#95;expires":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expires tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+bc. <txp:if_expires>
 
-bc(code). <txp:if_expires>
-...conditional statement...
+The *if_expires* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc. <txp:if_expires>
+    ...conditional statement...
 </txp:if_expires>
 
+The tag will execute the contained statements, if a particular article has an expiry date set. Should be used in an 'article' type form.
 
-The tag will execute the contained statements, if a particular article has an expiry date set. Should be used in an article form.
+h2. Attributes
 
-For more on this tag see its announcement, "So, youâ€™d like to stick a â€œBest Beforeâ€? label on those articles?":http://textpattern.com/weblog/327/so-youd-like-to-stick-a-best-before-label-on-those-articles
+This tag has no attributes.
 
-h3(sectionedit1#attributes). Attributes
+h2. Examples
 
-None.
+h3. Example 1: Show when an article is to expire
 
-h3(sectionedit2#examples). Examples
-
-h4(#example_1show_when_an_article_is_to_expire). Example 1: Show when an article is to expire
-
-bc(code). <txp:if_expires>
-This article expires on <txp:expires />.
+bc. <txp:if_expires>
+    This article expires on <txp:expires />.
 </txp:if_expires>
 
+Other tags used: "expires":expires.textile.
 
-Other tags used: "expires":/home/www/zendstudio/dokuwiki/bin/doku.php?id=expires
+h2. Genealogy
 
-h3(sectionedit3#related). Related
+h3. Version 4.0.7
 
-Related tags are:
-
-* "expires":/home/www/zendstudio/dokuwiki/bin/doku.php?id=expires
-* "if&#95;expired":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expired
-
-h3(sectionedit4#genealogy). Genealogy
-
-h4(#version_407). Version 4.0.7
-
-* tag added
-
+Tag support added.
