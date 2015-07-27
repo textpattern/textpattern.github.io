@@ -16,7 +16,7 @@ A few important rules to remember:
 # Attribute keys must be lowercase.
 # For plugin developers: attribute keys can consist of the letters 'a' through 'z' and underscore (not as the first or last character).
 
-h3. Attribute value escaping
+h2. Attribute value escaping
 
 Almost any character can be used in an attribute value. Unlike in HTML, there is no need for using escape codes for characters like @>@, @<@ and @&@. In fact, attribute values should contain no HTML escape codes at all, because the tag itself should take care of proper escaping.
 
