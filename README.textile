@@ -4,7 +4,7 @@ Textpattern documentation without the wiki (a work in progress). See "index":ind
 
 h2. Filename (URL) conventions
 
-For SEO friendly URLs, and for consistency, all directory names/file names should be structured using the following patterns:
+To ensure SEO friendly URL patterns, and for consistency, all directory names/file names should be structured using the following rules:
 
 # All text in lowercase.
 # Use hyphens, *not* underscores, to separate words within the URL.
