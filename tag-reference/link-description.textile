@@ -36,7 +36,11 @@ h2. Examples
 
 h3. Example 1: Display a link and its description field contents
 
-&lt;code&gt;&lt;nowiki&gt;&lt;p&gt;&lt;txp:link /&gt;&lt;br /&gt;&lt;txp:link_description /&gt;&lt;/p&gt;&lt;/nowiki&gt;&lt;/code&gt;
+<p>
+    <txp:link />
+    <br />
+    <txp:link_description />
+</p>
 
 Other tags used: "link":link.textile.
 
