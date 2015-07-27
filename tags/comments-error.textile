@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Comments error"
+tags:
+  - Tag reference
+  - Comment tags
+---
+
 h1. Comments error
 
 h2. Syntax

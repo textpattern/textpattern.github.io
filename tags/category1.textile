@@ -6,6 +6,7 @@ title: "Category1"
 tags:
   - Tag reference
   - Article tags
+  - Navigation tags
 ---
 
 h1. Category1

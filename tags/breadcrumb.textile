@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Breadcrumb"
+tags:
+  - Tag reference
+  - Navigation tags
+---
+
 h1. Breadcrumb
 
 h2. Syntax

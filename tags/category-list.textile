@@ -1,3 +1,15 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Category list"
+tags:
+  - Tag reference
+  - List tags
+  - Structural tags
+  - Navigation tags
+---
+
 h1. Category list
 
 h2. Syntax

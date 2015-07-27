@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Comment remember"
+tags:
+  - Tag reference
+  - Comment tags
+---
+
 h1. Comment remember
 
 h2. Syntax

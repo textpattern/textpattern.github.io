@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Email"
+tags:
+  - Tag reference
+  - Navigation tags
+---
+
 h1. Email
 
 h2. Syntax

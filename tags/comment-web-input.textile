@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Comment web input"
+tags:
+  - Tag reference
+  - Comment tags
+---
+
 h1. Comment web input
 
 h2. Syntax
