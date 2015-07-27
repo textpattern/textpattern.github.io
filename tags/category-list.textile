@@ -6,8 +6,8 @@ title: "Category list"
 tags:
   - Tag reference
   - List tags
-  - Structural tags
   - Navigation tags
+  - Structural tags
 ---
 
 h1. Category list

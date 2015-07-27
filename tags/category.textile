@@ -5,8 +5,8 @@ published: true
 title: "Category"
 tags:
   - Tag reference
-  - Structural tags
   - Navigation tags
+  - Structural tags
 ---
 
 h1. Category

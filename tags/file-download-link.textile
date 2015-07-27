@@ -1,3 +1,14 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "File download link"
+tags:
+  - Tag reference
+  - File tags
+  - Navigation tags
+---
+
 h1. File download link
 
 h2. Syntax
