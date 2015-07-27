@@ -1,4 +1,4 @@
-\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+h1. Tags in development [todo:pw]
 
 This page represents tags and attributes added in development versions of Textpattern since the the latest, stable release ("txp&#95;current&#95;version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version), whether completely new tags or existing tags that are undergoing modifications. Because we are talking about development, the information here is subject to change.
 

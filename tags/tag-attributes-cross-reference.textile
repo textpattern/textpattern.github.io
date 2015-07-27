@@ -1,4 +1,4 @@
-\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+h1. Tag attributes cross-reference [todo:pw]
 
 This cross-reference makes clear the different Textpattern tags associated with a given attribute. For each attribute, the associated tags are listed underneath it.
 

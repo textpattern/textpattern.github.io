@@ -1,4 +1,4 @@
-\n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
+h1. Linklist [todo:pw]
 
 bc(code). <txp:linklist />
 

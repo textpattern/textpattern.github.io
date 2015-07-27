@@ -1,4 +1,4 @@
-\n - REDIRECT "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images
+h1. Image list DEPRECATED [todo:pw]
 
 "mininav":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav
 
