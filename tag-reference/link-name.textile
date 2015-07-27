@@ -19,8 +19,8 @@ h2. Examples
 
 h3. Example 1: Display a link with class attribute
 
-bc. <a href="<txp:link_url />">
-    <txp:link_name escape="html" />
+bc. <a class="awesome-links" href="<txp:link_url />">
+    <txp:link_name />
 </a>
 
 Other tags used: "link_url":link-url.textile.
