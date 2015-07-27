@@ -3,14 +3,14 @@ h1. If first file EXISTS? [todo:pw]
 bc(code). <txp:if_first_file>
 
 
-The "if&#95;first&#95;file":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_file tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The "if_first_file":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_file tag is a _conditional_ tag and always used as an opening and closing pair, like this...
 
 bc(code). <txp:if_first_file>
 ...conditional statement...
 </txp:if_first_file>
 
 
-The tag will execute the contained statements if the displayed file is the first in the currently displayed "file&#95;download&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list. The tag supports "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else.
+The tag will execute the contained statements if the displayed file is the first in the currently displayed "file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list. The tag supports "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else.
 
 h3(sectionedit1#attributes). Attributes
 

@@ -4,7 +4,7 @@ h3(sectionedit1#overview). Overview
 
 A Geoblogging tutorial for Textpattern that uses the Google AJAX API by "David Hall":http://spotthehall.com/ aka Spot
 
-This method follows the earlier work by David Ramos - "geoblogging&#95;with&#95;textpattern&#95;and&#95;the&#95;google&#95;maps&#95;api":/home/www/zendstudio/dokuwiki/bin/doku.php?id=geoblogging_with_textpattern_and_the_google_maps_api. But extends the function, by loading version 2 of the Maps API, incorporates parsing of url co-ordinates plus zoom level, places "ICBM":http://en.wikipedia.org/wiki/ICBM_address/ content in the document head which can be read by "iCab":http://www.icab.de/ and the Firefox "MiniMap":http://minimap.spatialviews.com/ extension, and allows linking from an article/image to a specific map point.
+This method follows the earlier work by David Ramos - "geoblogging_with_textpattern_and_the_google_maps_api":/home/www/zendstudio/dokuwiki/bin/doku.php?id=geoblogging_with_textpattern_and_the_google_maps_api. But extends the function, by loading version 2 of the Maps API, incorporates parsing of url co-ordinates plus zoom level, places "ICBM":http://en.wikipedia.org/wiki/ICBM_address/ content in the document head which can be read by "iCab":http://www.icab.de/ and the Firefox "MiniMap":http://minimap.spatialviews.com/ extension, and allows linking from an article/image to a specific map point.
 
 Author's functioning Map: "/ Map":http://spotthehall.com/map and site "tutorial":http://spotthehall.com/geoblogging/.
 
@@ -50,7 +50,7 @@ h4(#map_code). Map Code
 Now copy "this script":http://spotthehall.com/files/gmap_script.txt (complete example text file from my site) and insert it into your Map Page immediately before the end body tag. This governs the map and includes tools for the following (I've included these extracts to make it easier for anyone to remove or edit any parts - carefully!):
 
 * parse the latitude, longitude and zoom url information presented to the script.
-** In line #21 (of the downloaded gmap&#95;script.txt file) you may fix the variable zoom that the links show and not pass it in the url, to a level to suit you â€“ the alternative line is after OR in this code section - do NOT include both.
+** In line #21 (of the downloaded gmap_script.txt file) you may fix the variable zoom that the links show and not pass it in the url, to a level to suit you â€“ the alternative line is after OR in this code section - do NOT include both.
 ** Here we also set the lat/lng/zmn co-ordinates for the overall map view â€“ play with them to suit yourself â€“ they are all set to 1.
 
 bc(code). var lat = parseFloat(url.lat);
@@ -219,9 +219,9 @@ bc(code). <txp:if_custom_field name="lat">
 </txp:if_custom_field>
 
 
-If you used a fixed zoom level in your Map javascript code, then you should remove &lt;_yamdwe&#95;nowiki&gt;0&lt;/_yamdwe&#95;nowiki&gt; from the above. I have put the fixed level here to enable me to send links set at a point and zoom level (governed by the url) from a link within a page that bypasses the Custom Fields and hence the Article Form, to show an area without a marker â€“ "example":http://spotthehall.com/map?lat=54.665889404406479&lng=-1.96998596191406254&zmn=11/
+If you used a fixed zoom level in your Map javascript code, then you should remove &lt;_yamdwe_nowiki&gt;0&lt;/_yamdwe_nowiki&gt; from the above. I have put the fixed level here to enable me to send links set at a point and zoom level (governed by the url) from a link within a page that bypasses the Custom Fields and hence the Article Form, to show an area without a marker â€“ "example":http://spotthehall.com/map?lat=54.665889404406479&lng=-1.96998596191406254&zmn=11/
 
-If you want a variable zoom for every link, create another Custom Field for zmn and add the relevant &lt;_yamdwe&#95;nowiki&gt;1&lt;/_yamdwe&#95;nowiki&gt; tag to the Default Form.
+If you want a variable zoom for every link, create another Custom Field for zmn and add the relevant &lt;_yamdwe_nowiki&gt;1&lt;/_yamdwe_nowiki&gt; tag to the Default Form.
 
 h4(#meta_content). Meta Content
 

@@ -1,8 +1,8 @@
 \n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
 
-"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Getting Started":/home/www/zendstudio/dokuwiki/bin/doku.php?id=getting_started_with_textpattern &#124; "Intermediate/Advanced Topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=intermediate_and_advanced_topics &#124; "Designer/Developer Interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests &#124; "Tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing &#124; "tutorials":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tutorials &#124; "article&#95;contributions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_contributions
+"main_page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Getting Started":/home/www/zendstudio/dokuwiki/bin/doku.php?id=getting_started_with_textpattern &#124; "Intermediate/Advanced Topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=intermediate_and_advanced_topics &#124; "Designer/Developer Interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests &#124; "Tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing &#124; "tutorials":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tutorials &#124; "article_contributions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_contributions
 
-*_TextBook_* is a community-produced user manual for "Textpattern":http://www.textpattern.com, and compliments the Textpattern "FAQ":http://textpattern.com/faq/. Where the FAQ is brief, TextBook aims to be more explanatory, as well as provide articles in multiple languages. To get started writing or editing articles, obtain a wiki account via "new&#95;accounts":/home/www/zendstudio/dokuwiki/bin/doku.php?id=new_accounts. Please offer content suggestions and feedback in Textpattern's "Documentation Discussion":http://forum.textpattern.com/viewforum.php?id=28 forum.
+*_TextBook_* is a community-produced user manual for "Textpattern":http://www.textpattern.com, and compliments the Textpattern "FAQ":http://textpattern.com/faq/. Where the FAQ is brief, TextBook aims to be more explanatory, as well as provide articles in multiple languages. To get started writing or editing articles, obtain a wiki account via "new_accounts":/home/www/zendstudio/dokuwiki/bin/doku.php?id=new_accounts. Please offer content suggestions and feedback in Textpattern's "Documentation Discussion":http://forum.textpattern.com/viewforum.php?id=28 forum.
 
 Note that links with blue arrows, "like this":http://www.textpattern.com, lead to external sites.
 
@@ -11,17 +11,17 @@ Getting Started and Official Docs
 *Reading Up*
 
 * "Textpattern Licensing":http://textpattern.com/faq/51/what-license-does-textpattern-use
-* "textpattern&#95;capabilities&#95;and&#95;features":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_capabilities_and_features
+* "textpattern_capabilities_and_features":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_capabilities_and_features
 * "Can Textpattern do //this//?":http://textpattern.com/faq/57/can-i-use-textpattern-to-do-this
 * "System Requirements":http://textpattern.com/faq/119/what-are-the-system-requirements
-* "textpattern&#95;semantic&#95;model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model
+* "textpattern_semantic_model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model
 * "glossary":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary
 
 *Getting Started*
 
 * Installation "Short":http://textpattern.com/download/ , "Detailed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_installation_instructions
-* "site&#95;administration":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_administration
-* "how&#95;do&#95;i&#95;.&#95;starters":/home/www/zendstudio/dokuwiki/bin/doku.php?id=how_do_i_._starters
+* "site_administration":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_administration
+* "how_do_i_._starters":/home/www/zendstudio/dokuwiki/bin/doku.php?id=how_do_i_._starters
 * Defaults: "Pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_pages, "Styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_styles, "Forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms
 * Tags: "Index":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing, "Groups":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_groups, "Topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tags_by_topic, "Attributes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross_reference
 * "Learning Textile":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textile
@@ -29,19 +29,19 @@ Getting Started and Official Docs
 *Official/Supporting Resources*
 
 * FAQ: "Official FAQ":http://textpattern.com/faq/ , "Translation FAQ":/home/www/zendstudio/dokuwiki/bin/doku.php?id=faq_index
-* "textpattern&#95;resources&#95;listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_resources_listing
+* "textpattern_resources_listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_resources_listing
 * "Textpattern Feature Requests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feature_requests
-* "community&#95;projects":/home/www/zendstudio/dokuwiki/bin/doku.php?id=community_projects
+* "community_projects":/home/www/zendstudio/dokuwiki/bin/doku.php?id=community_projects
 
 Intermediate and Advanced Topics
 
 *Upgrades and Post-Upgrade Configurations*
 
-* "upgrading&#95;to&#95;a&#95;new&#95;version":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_to_a_new_version
-* "updating&#95;to&#95;a&#95;new&#95;revision":/home/www/zendstudio/dokuwiki/bin/doku.php?id=updating_to_a_new_revision (i.e., a new build of the latest release)
-* "downgrading&#95;to&#95;an&#95;older&#95;stable&#95;release":/home/www/zendstudio/dokuwiki/bin/doku.php?id=downgrading_to_an_older_stable_release
-* "post&#95;installation&#95;upgrading&#95;updating&#95;suggestions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_installation_upgrading_updating_suggestions
-* "managing&#95;clean&#95;urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls
+* "upgrading_to_a_new_version":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_to_a_new_version
+* "updating_to_a_new_revision":/home/www/zendstudio/dokuwiki/bin/doku.php?id=updating_to_a_new_revision (i.e., a new build of the latest release)
+* "downgrading_to_an_older_stable_release":/home/www/zendstudio/dokuwiki/bin/doku.php?id=downgrading_to_an_older_stable_release
+* "post_installation_upgrading_updating_suggestions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_installation_upgrading_updating_suggestions
+* "managing_clean_urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls
 
 *Moving/Multiple Installations*
 
@@ -53,12 +53,12 @@ Intermediate and Advanced Topics
 *Administrator Topics*
 
 * "Unicode Support (UTF-8)":/home/www/zendstudio/dokuwiki/bin/doku.php?id=unicode_support
-* "backing&#95;up&#95;the&#95;textpattern&#95;database":/home/www/zendstudio/dokuwiki/bin/doku.php?id=backing_up_the_textpattern_database
+* "backing_up_the_textpattern_database":/home/www/zendstudio/dokuwiki/bin/doku.php?id=backing_up_the_textpattern_database
 * "Modifying User Roles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modifying_user_account_roles_and_privileges
 * "Renaming Admin Directory for Added Security":/home/www/zendstudio/dokuwiki/bin/doku.php?id=renaming_the_textpattern_admin_directory_for_added_security
-* "resetting&#95;admin&#95;password":/home/www/zendstudio/dokuwiki/bin/doku.php?id=resetting_admin_password
+* "resetting_admin_password":/home/www/zendstudio/dokuwiki/bin/doku.php?id=resetting_admin_password
 * "Combatting Comment Spam":/home/www/zendstudio/dokuwiki/bin/doku.php?id=combat_comment_spam
-* "common&#95;xhtml&#95;validation&#95;issues":/home/www/zendstudio/dokuwiki/bin/doku.php?id=common_xhtml_validation_issues
+* "common_xhtml_validation_issues":/home/www/zendstudio/dokuwiki/bin/doku.php?id=common_xhtml_validation_issues
 
 Designer and Developer Interests
 
@@ -66,16 +66,16 @@ Designer and Developer Interests
 
 For All Web Hosts and/or Local Development
 
-* "subversion&#95;installation&#95;for&#95;windows&#95;via&#95;tortoise&#95;svn":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_windows_via_tortoise_svn
-* "subversion&#95;installation&#95;for&#95;windows&#95;via&#95;wget":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_windows_via_wget (Not recommended by Textpattern developers! See FAQ _"How do I fetch the current development version?":http://textpattern.com/faq/103/how-do-i-fetch-the-current-development-version_)
-* "subversion&#95;installation&#95;for&#95;macintosh":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_macintosh
-* "subversion&#95;installation&#95;for&#95;linux":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_linux
+* "subversion_installation_for_windows_via_tortoise_svn":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_windows_via_tortoise_svn
+* "subversion_installation_for_windows_via_wget":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_windows_via_wget (Not recommended by Textpattern developers! See FAQ _"How do I fetch the current development version?":http://textpattern.com/faq/103/how-do-i-fetch-the-current-development-version_)
+* "subversion_installation_for_macintosh":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_macintosh
+* "subversion_installation_for_linux":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_for_linux
 
 For TextDrive Only
 
-* "subversion&#95;installation&#95;at&#95;text&#95;drive&#95;via&#95;webmin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_at_text_drive_via_webmin
-* "subversion&#95;installation&#95;at&#95;text&#95;drive&#95;via&#95;secure&#95;shell":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_at_text_drive_via_secure_shell
-* "svn&#95;installation&#95;at&#95;tx&#95;d&#95;via&#95;ssh&#95;for&#95;dev&#95;testing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_installation_at_tx_d_via_ssh_for_dev_testing
+* "subversion_installation_at_text_drive_via_webmin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_at_text_drive_via_webmin
+* "subversion_installation_at_text_drive_via_secure_shell":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion_installation_at_text_drive_via_secure_shell
+* "svn_installation_at_tx_d_via_ssh_for_dev_testing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_installation_at_tx_d_via_ssh_for_dev_testing
 
 *Local Development*
 
@@ -84,13 +84,13 @@ For TextDrive Only
 
 *"Migrating from Another System":/home/www/zendstudio/dokuwiki/bin/doku.php?id=migrating_to_textpattern_from_another_system*
 
-* "importing&#95;from&#95;blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
-* "importing&#95;from&#95;pivot":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_pivot
+* "importing_from_blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
+* "importing_from_pivot":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_pivot
 
 *Other Interests*
 
-* "css&#95;styling&#95;topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_styling_topics
-* "plugin&#95;development&#95;topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_development_topics
-* "comparison&#95;of&#95;gallery&#95;plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comparison_of_gallery_plugins
+* "css_styling_topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css_styling_topics
+* "plugin_development_topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_development_topics
+* "comparison_of_gallery_plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comparison_of_gallery_plugins
 * vacant
 

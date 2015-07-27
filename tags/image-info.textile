@@ -3,7 +3,7 @@ h1. Image info [todo:pw]
 bc(code). <txp:image_info />
 
 
-The "image&#95;info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info tag is a _single_ tag that Textpattern will replace with the relevant image data from the current image. Should usually be used in an "image form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, although it may be used on its own providing you specify an *id* or *name*.
+The "image_info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info tag is a _single_ tag that Textpattern will replace with the relevant image data from the current image. Should usually be used in an "image form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, although it may be used on its own providing you specify an *id* or *name*.
 
 h3(sectionedit1#attributes). Attributes
 
@@ -99,7 +99,7 @@ bc(code). ext
 bc(code). author
 
 
-(login name: see "image&#95;author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_author to display the author's real name)
+(login name: see "image_author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_author to display the author's real name)
 
 bc(code). w
 
@@ -124,7 +124,7 @@ bc(code). thumb_h
 bc(code). date
 
 
-(timestamp of image upload: this is not very useful so consult "image&#95;date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_date for a better alternative) Default:
+(timestamp of image upload: this is not very useful so consult "image_date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_date for a better alternative) Default:
 
 bc(code). caption
 
@@ -177,7 +177,7 @@ bc(code). <txp:if_different>
 
 conditional can be used to output the category title at the top of the list of images each time it changes.
 
-Other tags used: "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images, "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail, "if&#95;different":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_different
+Other tags used: "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images, "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail, "if_different":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_different
 
 h4(#example_3specific_image_information). Example 3: Specific image information
 
@@ -185,7 +185,7 @@ bc(code). <txp:image_info id="5" type="category_title" />
 
 
 *What it does*
- Displays the category&#95;title of the category assigned to image ID 5.
+ Displays the category_title of the category assigned to image ID 5.
 
 h3(sectionedit3#genealogy). Genealogy
 

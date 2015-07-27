@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 h3(sectionedit1#overview). Overview
 
@@ -16,7 +16,7 @@ bc(code). mysite.com
 
 h3(sectionedit2#the_process). The Process
 
-# Login to your Textpattern administration pages, navigate to the "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences panel, and change your Site URL entry to reflect the new root install location (should simply be a matter of removing the subdirectory from the path). You will also need to update the file upload path (Preferences &gt; Advanced Preferences). Again, it should simply be a matter of removing the subdirectory.
+# Login to your Textpattern administration pages, navigate to the "basic_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences panel, and change your Site URL entry to reflect the new root install location (should simply be a matter of removing the subdirectory from the path). You will also need to update the file upload path (Preferences &gt; Advanced Preferences). Again, it should simply be a matter of removing the subdirectory.
 
 <ol>
 <li><p>Next, you need to change your referencing paths to the database in the</p>

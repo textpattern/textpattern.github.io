@@ -1,4 +1,4 @@
-\n"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Function Editing Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_function_editing_reference &#124; "txp&#95;defined&#95;functions&#95;by&#95;file&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions_by_file &#124; "TXP Defined Functions (Alphabetically)":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions
+\n"main_page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Function Editing Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_function_editing_reference &#124; "txp_defined_functions_by_file_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions_by_file &#124; "TXP Defined Functions (Alphabetically)":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_defined_functions
 
 h3(sectionedit1#about_this_page). About This Page
 
@@ -15,13 +15,13 @@ bc(code). _null()
 
 h4(#purpose). Purpose
 
-This function simply returns null no matter what is passed in. It's main purpose seems to be it's use as a callback event in "array&#95;null&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=array_null.
+This function simply returns null no matter what is passed in. It's main purpose seems to be it's use as a callback event in "array_null_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=array_null.
 
 This function was added to the core after the release of 4.0.4, in "revision 1983":http://dev.textpattern.com/changeset/1983.
 
 h4(#location_in_source_code). Location in Source Code
 
-"Textpattern/lib/txplib&#95;misc.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:txplib_misc.php_file :: line 67
+"Textpattern/lib/txplib_misc.php":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern:lib:txplib_misc.php_file :: line 67
 
 h4(#this_page_last_updated). This Page Last Updated
 

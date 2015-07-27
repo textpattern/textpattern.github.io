@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 It is sometimes the case people have two or more installations of Textpattern going and would like to merge content of their databases into one (presumably to continue supporting only one site). This article should help you go about it.
 

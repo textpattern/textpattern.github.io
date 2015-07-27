@@ -24,5 +24,5 @@ utilizza la memoria in modo efficiente.
 
 Alcuni nuovi tags in Textpattern 4.0.2 potrebbero aiutarti con la formattazione delle pagine.
 
-*Torna a "faq&#95;-&#95;domande&#95;frequenti":/home/www/zendstudio/dokuwiki/bin/doku.php?id=it:faq_-_domande_frequenti*
+*Torna a "faq_-_domande_frequenti":/home/www/zendstudio/dokuwiki/bin/doku.php?id=it:faq_-_domande_frequenti*
 

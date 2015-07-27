@@ -6,7 +6,7 @@ This write-up will cover the default capabilities of v 1.0 to handle images, wit
 
 h3(sectionedit2#default_textpattern_photo_image_management_abilities). Default Textpattern Photo/Image Management Abilities
 
-What are the current abilities and limitations? (Links to "write&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write_subtab and "images&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_subtab, where used in context.)
+What are the current abilities and limitations? (Links to "write_subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write_subtab and "images_subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_subtab, where used in context.)
 
 If someone has done a photo album with just default abilities, it would be good to get that tutorial written into here.
 

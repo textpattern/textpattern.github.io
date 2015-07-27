@@ -18,7 +18,7 @@ body id=“area” class =“action”
 
 h3(sectionedit2#repeated_snippets_present_on_every_admin_page). Repeated snippets present on every admin page:
 
-* "header&#95;navigation":/home/www/zendstudio/dokuwiki/bin/doku.php?id=header_navigation
+* "header_navigation":/home/www/zendstudio/dokuwiki/bin/doku.php?id=header_navigation
 * "footer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=footer
 
 <hr />
@@ -47,7 +47,7 @@ h5(#admin). Admin
 * "diagnostics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics
 * "preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=preferences
 * "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users
-* "visitor&#95;logs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs
+* "visitor_logs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs
 * "plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins
 * "import":/home/www/zendstudio/dokuwiki/bin/doku.php?id=import
 

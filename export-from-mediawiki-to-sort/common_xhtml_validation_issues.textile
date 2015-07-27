@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 Web page validation is an important part of good Web site design, and the W3C's "Markup Validation Service":http://validator.w3.org/ is a good way to test it. There are a number of validation snafus that people frequently have with Textpattern due to the way it natively handles content, especially for _XHTML Strict_ doctypes. We try to cover these issues here.
 
@@ -122,11 +122,11 @@ Note the whole list complex, from open to closing list tag, is indented in the a
 &lt;p&gt;Start of second paragraph....end of paragraph.&lt;/p&gt;
 </pre>
 
-The examples provided above explain how to manually added standard XHTML syntax to an article so the resulting markup output will validate correctly. However, there are two other methods for achieving markup that validates. One is to use the upm&#95;quicktags plugin, and the other is to use Textile. Which one you may find to be more effective for you will depend on how comfortable you are with writing syntax. If you (or the someone else using the Textpattern site) are more comfortable with text editing tools as opposed to manual development, then the upm&#95;quicktags plugin might be right for you. On the other hand, if you are comfortable with XHTML, or simply want to do things in the easiest, cleanest way possible, then the suggested method is Textile. Both of these approaches are discussed in the next two sections.
+The examples provided above explain how to manually added standard XHTML syntax to an article so the resulting markup output will validate correctly. However, there are two other methods for achieving markup that validates. One is to use the upm_quicktags plugin, and the other is to use Textile. Which one you may find to be more effective for you will depend on how comfortable you are with writing syntax. If you (or the someone else using the Textpattern site) are more comfortable with text editing tools as opposed to manual development, then the upm_quicktags plugin might be right for you. On the other hand, if you are comfortable with XHTML, or simply want to do things in the easiest, cleanest way possible, then the suggested method is Textile. Both of these approaches are discussed in the next two sections.
 
-h4(#upm_quicktags_plugina_button_solution_for_xhtml_syntax_editing). upm&#95;quicktags Plugin: A Button Solution for XHTML Syntax Editing
+h4(#upm_quicktags_plugina_button_solution_for_xhtml_syntax_editing). upm_quicktags Plugin: A Button Solution for XHTML Syntax Editing
 
-If you do not trust yourself with writing standard XHTML syntax markup, the upm&#95;quicktags plugn can do the job for you.
+If you do not trust yourself with writing standard XHTML syntax markup, the upm_quicktags plugn can do the job for you.
 
 * Get the plugin from the "Textpattern Resources":http://textpattern.org/ site, "right here":http://textpattern.org/search/?selectwhere=1&selecthow=1&selectdate=1&selectresults=result_10&submitsearch=1&q=upm_quicktags.
 * Read the documentation that comes with the plugin, and install the plugin in the "plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins tab in your site administration area.

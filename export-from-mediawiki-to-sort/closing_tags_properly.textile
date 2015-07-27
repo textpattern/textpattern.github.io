@@ -1,4 +1,4 @@
-\n"mininav&#95;troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
+\n"mininav_troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
 
 TXP tags behave like XML tags insofar as they must be *closed* correctly.
 

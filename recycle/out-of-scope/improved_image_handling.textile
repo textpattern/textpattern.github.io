@@ -2,7 +2,7 @@
 
 h3(sectionedit1#overview). Overview
 
-Better Image handling seems to be an issue that comes up a lot. Many requests lately seem to end up geared at adding functionality to "upm&#95;img&#95;popper":http://utterplush.com/txp-plugins/upm-img-popper. It seems that better image functionality is definitely a topic that comes up alot so I thought an organised location for discussion would be useful.
+Better Image handling seems to be an issue that comes up a lot. Many requests lately seem to end up geared at adding functionality to "upm_img_popper":http://utterplush.com/txp-plugins/upm-img-popper. It seems that better image functionality is definitely a topic that comes up alot so I thought an organised location for discussion would be useful.
 
 I think we could begin with people listing and explaining ideas and then consolidating and prioritizing towards a working group.  - hakjoon 23:48, 13 February 2006 (GMT)
 
@@ -14,7 +14,7 @@ I could discuss issues I have with TXP image handling, but instead I think I wil
 
 <hr />
 
-"Img&#95;Wizard":http://textpattern.net/wiki/index.php?title=Img_Wizard is a plugin in development to add img handling to write screen.  - Bastian 17:36, 17 March 2006 (GMT)
+"Img_Wizard":http://textpattern.net/wiki/index.php?title=Img_Wizard is a plugin in development to add img handling to write screen.  - Bastian 17:36, 17 March 2006 (GMT)
 
 h3(sectionedit2#image_upload_examples_from_other_systems). Image Upload (examples from other systems)
 
@@ -129,7 +129,7 @@ Should you choose to browse, this shot shows you that you can sort your photos f
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:wp_img_8.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:wp_img_8.png
 
-If you choose to upload a photo, or edit one in the browser window, you will see the image above which shows you that you have some options for categorizing and naming the photo. Not nearly as versatile or comprehensive as TXP here (implemented with upm&#95;img&#95;popper TXP is even more versatile here)
+If you choose to upload a photo, or edit one in the browser window, you will see the image above which shows you that you have some options for categorizing and naming the photo. Not nearly as versatile or comprehensive as TXP here (implemented with upm_img_popper TXP is even more versatile here)
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:wp_img_9.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:wp_img_9.png
 
@@ -206,7 +206,7 @@ bc(code). image_name="//value//"
 
 
 **
- image&#95;name (from images tab) of the image to display. Can take comma separated list.
+ image_name (from images tab) of the image to display. Can take comma separated list.
 
 **
 
@@ -310,7 +310,7 @@ bc(code). allow_override="//yes/no//"
 
 
 **
- When specifiying id/category/article&#95;image this will allow you to override the default via the url. Default is no.
+ When specifiying id/category/article_image this will allow you to override the default via the url. Default is no.
 
 bc(code). <txp:thumbnail>
 
@@ -336,7 +336,7 @@ bc(code). custom_height="//integer//"
 
 
 **
- Creates a thumbnail of a custom size. Height to use for custom size. If custom&#95;width is empty width will be calculated automatically.
+ Creates a thumbnail of a custom size. Height to use for custom size. If custom_width is empty width will be calculated automatically.
 
 **
 
@@ -344,7 +344,7 @@ bc(code). custom_width="//integer//"
 
 
 **
- Creates a thumbnail of a custom size. Width to use for custom size. If custom&#95;height is empty height will be calculated automatically.
+ Creates a thumbnail of a custom size. Width to use for custom size. If custom_height is empty height will be calculated automatically.
 
 These next few tags will actually call
 
@@ -361,7 +361,7 @@ bc(code). <txp:thumbnail>
 bc(code). <txp:article_image> <txp:article_thumbnail>
 
 
-Sets source to the article&#95;image field. Displays full image and thumbnail respectively.
+Sets source to the article_image field. Displays full image and thumbnail respectively.
 
 bc(code). <txp:custom_field_image> <txp:custom_field_thumbnail>
 
@@ -387,7 +387,7 @@ bc(code). category="//category_name//"
 
 
 **
- Display images from category&#95;name category.
+ Display images from category_name category.
 
 **
 
@@ -465,39 +465,39 @@ I don't know if this is the way to do this? or if it needs a individual tag?
 
 h5(#image_form_tags). Image Form tags
 
-These are pretty much straight from upm&#95;image.
+These are pretty much straight from upm_image.
 
-*&lt;code&gt;&lt;txp&#124;img&#95;alt /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp&#124;img_alt /&gt;&lt;/code&gt;*
  Alternate text
 
-*&lt;code&gt;&lt;txp&#124;img&#95;caption /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp&#124;img_caption /&gt;&lt;/code&gt;*
  Caption
 
-*&lt;code&gt;&lt;txp&#124;img&#95;category /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp&#124;img_category /&gt;&lt;/code&gt;*
  The category the image belongs to.
 
-*&lt;code&gt;&lt;txp&#124;img&#95;full&#95;height /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp&#124;img_full_height /&gt;&lt;/code&gt;*
  Image height
 
-*&lt;code&gt;&lt;txp&#124;img&#95;full&#95;url /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp&#124;img_full_url /&gt;&lt;/code&gt;*
  Image url
 
-*&lt;code&gt;&lt;txp&#124;img&#95;full&#95;width /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp&#124;img_full_width /&gt;&lt;/code&gt;*
  Image width
 
-*&lt;code&gt;&lt;txp&#124;img&#95;id /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp&#124;img_id /&gt;&lt;/code&gt;*
  Id
 
-*&lt;code&gt;&lt;txp&#124;img&#95;name /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp&#124;img_name /&gt;&lt;/code&gt;*
  Name
 
-*&lt;code&gt;&lt;txp&#124;img&#95;thumb&#95;height /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp&#124;img_thumb_height /&gt;&lt;/code&gt;*
  Thumbnail image height
 
-*&lt;code&gt;&lt;txp&#124;img&#95;thumb&#95;url /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp&#124;img_thumb_url /&gt;&lt;/code&gt;*
  Thumbnail image url
 
-*&lt;code&gt;&lt;txp&#124;img&#95;thumb&#95;width /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp&#124;img_thumb_width /&gt;&lt;/code&gt;*
  Thumbnail image width
 
 h4(#include_images_with_ajax). Include Images with AJAX
@@ -510,7 +510,7 @@ h5(#write_tab). Write Tab
 
 The image-screen is loaded if click on img-wizard by AJAX. The tabs you can see are also loaded on request.
 
-On the left side there on that screenshot you see basicly what the bas&#95;img&#95;selector display beside s the body-textarea: Select an category, select an image and add it.
+On the left side there on that screenshot you see basicly what the bas_img_selector display beside s the body-textarea: Select an category, select an image and add it.
 
 On the right side are the images that are currently connected to the article. On top thumbnails and on bottom one enlarged.
 

@@ -18,8 +18,8 @@ bc(code). <txp:site_slogan />
 <p>as a Useful tag</p></li>
 <li>Added an option in CSS to 'copy as...' the current style sheet</li>
 <li>Added an option to 'save as...' while editing raw CSS data</li>
-<li>Added an option to limit recent&#95;articles output by category (thanks michaeln3)</li>
-<li>Added missing whitespace between 'a' and 'href' in messy tag output for recent&#95;articles</li>
+<li>Added an option to limit recent_articles output by category (thanks michaeln3)</li>
+<li>Added missing whitespace between 'a' and 'href' in messy tag output for recent_articles</li>
 <li>Added new form category 'misc' for search inputs, etc</li>
 <li>Fixed a 'txpath' variable collision error when previewing article forms</li>
 <li>Fixed a failure when saving new css files</li>
@@ -30,10 +30,10 @@ bc(code). <txp:site_slogan />
 <li>Fixed how Textile handles article titles</li>
 <li>Fixed incorrect time offset display in Txp comments editor</li>
 <li>Improved the behaviour of article searches in write tab</li>
-<li>Installer now does a better job defining doc&#95;root (though it should still be confirmed)</li>
+<li>Installer now does a better job defining doc_root (though it should still be confirmed)</li>
 <li>Keyed (almost) all remaining hard-coded text in the Txp interface to the lang file (thanks to mamash for the help)</li>
 <li>Removed some extremely supercilious log entries from the sql installer</li>
-<li><p>The tags category&#95;list, recent&#95;articles and related&#95;articles should now be able to accept the parameters</p>
+<li><p>The tags category_list, recent_articles and related_articles should now be able to accept the parameters</p>
 bc(code). wraptag="ul" break="li"
 
 

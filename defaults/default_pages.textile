@@ -305,7 +305,7 @@ h3(sectionedit2#default). default
 &lt;/html&gt;
 </pre>
 
-h3(sectionedit3#error_default). error&#95;default
+h3(sectionedit3#error_default). error_default
 
 <pre class="code">
 &lt;!DOCTYPE html&gt;

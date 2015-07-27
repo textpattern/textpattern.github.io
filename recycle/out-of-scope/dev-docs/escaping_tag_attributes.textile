@@ -1,6 +1,6 @@
 \n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
 
-Content has been merged with "parsing&#95;tag&#95;attributes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=parsing_tag_attributes
+Content has been merged with "parsing_tag_attributes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=parsing_tag_attributes
 
 <hr />
 
@@ -108,7 +108,7 @@ In the above examples, the attribute are treated as plain text; the literal TXP 
 bc(code). <txp:tag key='parsed <txp:tag />' />
 
 
-Letâ€™s take a real-world example, using an article that has a custom field named â€˜my&#95;emailâ€™ containing an email address me&#64;example.com and a custom field â€˜my&#95;nameâ€™ containing the name 'Dean Allen':
+Letâ€™s take a real-world example, using an article that has a custom field named â€˜my_emailâ€™ containing an email address me&#64;example.com and a custom field â€˜my_nameâ€™ containing the name 'Dean Allen':
 
 bc(code). <txp:email
   email='<txp:custom_field name="my_email" />'
@@ -126,7 +126,7 @@ bc(code). <txp:email
 />
 
 
-If it were just one article, you wouldnâ€™t need attribute parsing, but if you have many articles with different email addresses in such a â€˜my&#95;emailâ€™ custom field, this can be very useful.
+If it were just one article, you wouldnâ€™t need attribute parsing, but if you have many articles with different email addresses in such a â€˜my_emailâ€™ custom field, this can be very useful.
 
 Attribute value parsing has no real limitations. Within a parsed attribute value, you can:
 

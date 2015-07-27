@@ -10,6 +10,6 @@
 * fixed bogus cookie warning when Firefox has selective cookies enabled.
 * improved diagnostics
 * minor improvements to Textile (i18n, block handling)
-* tidied admin css (thanks David&#95;1cog)
+* tidied admin css (thanks David_1cog)
 * improved security (upgrades are strongly encouraged)
 

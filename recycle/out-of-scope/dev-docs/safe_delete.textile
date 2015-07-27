@@ -1,8 +1,8 @@
-\n"mininav&#95;core&#95;function&#95;reference":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_core_function_reference
+\n"mininav_core_function_reference":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_core_function_reference
 
 h3(sectionedit1#description). Description
 
-array "safe&#95;delete":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_delete ( string _$table_, string _$where_, boolean _$debug_ = “” _)_
+array "safe_delete":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_delete ( string _$table_, string _$where_, boolean _$debug_ = “” _)_
 
 Delete rows (records) from the Textpattern database.
 

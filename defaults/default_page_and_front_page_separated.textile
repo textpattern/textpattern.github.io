@@ -6,11 +6,11 @@ The default section/page and the front page are the same. This default page is m
 
 h3(sectionedit2#issue). Issue
 
-The frontpage is similar to other articles page on a blog like website, but a lot of non-blog websites use a specific frontpage. Some without even a txp:article tag in it. We can now detect the category browsing using a txp:if&#95;category name=“” / else trigger, but it's a trick. And a trick not usable for author browsing. And a complex one to newcommers, who have to deal with nested conditionnal triggers on their first template/page coding.
+The frontpage is similar to other articles page on a blog like website, but a lot of non-blog websites use a specific frontpage. Some without even a txp:article tag in it. We can now detect the category browsing using a txp:if_category name=“” / else trigger, but it's a trick. And a trick not usable for author browsing. And a complex one to newcommers, who have to deal with nested conditionnal triggers on their first template/page coding.
 
 h3(sectionedit3#request). Request
 
-Make a distinction between the default section/page, and the frontpage. It's more elegant and more simple to newcomers than another trick like a new txp:if&#95;author name=“” or something similar.
+Make a distinction between the default section/page, and the frontpage. It's more elegant and more simple to newcomers than another trick like a new txp:if_author name=“” or something similar.
 
 This would mean creating a new hardcoded FrontPage section, with a chosen page (exactly like the default section right now).
 

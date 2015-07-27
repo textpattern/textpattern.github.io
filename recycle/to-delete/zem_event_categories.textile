@@ -7,11 +7,11 @@ The
 bc(code). zem_event_categories
 
 
-tag is used as a "Single&#95;Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag. Used in a zem&#95;event&#95;list form or wraptags, it returns the event categories associated with a specific event.
+tag is used as a "Single_Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag. Used in a zem_event_list form or wraptags, it returns the event categories associated with a specific event.
 
 h4(#syntax). Syntax
 
-The _zem&#95;event&#95;categories_ tag has the following syntactic structure...
+The _zem_event_categories_ tag has the following syntactic structure...
 
 bc(code). <txp:zem_event_categories />
 

@@ -1,4 +1,4 @@
-\n"work&#95;in&#95;progress":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=work_in_progress "related&#95;reading":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=related_reading
+\n"work_in_progress":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=work_in_progress "related_reading":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=related_reading
 
 When we talk about Textpattern's semantic model, we're talking about the system's six primary building blocks that make it possible to create and manage your site's structure, content and presentation easily. All it takes is getting familiar with the blocks, and how they are associated to one another, which is what this page overviews.
 

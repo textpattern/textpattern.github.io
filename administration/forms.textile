@@ -1,9 +1,9 @@
-\n"mininav&#95;presentation&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs
+\n"mininav_presentation_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs
 
 bc(code). //Presentation// â†’ **//Forms//**
 
 
-"forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms are one of the six “building blocks” described in the "textpattern&#95;semantic&#95;model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model. The Forms panel contains a Form editor, with a list of existing Forms organized in the right column and a Tag builder in the left column to help you construct Form content.
+"forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms are one of the six “building blocks” described in the "textpattern_semantic_model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model. The Forms panel contains a Form editor, with a list of existing Forms organized in the right column and a Tag builder in the left column to help you construct Form content.
 
 h3(sectionedit1#creating_a_new_form). Creating a New Form
 
@@ -19,7 +19,7 @@ When creating a form, it must be assigned to a “Type,” which is available vi
 
 Form types have almost no inherent semantic but aid solely as a means of organization for the designer/user. One notable exception: _article_ type forms are the only ones listed in the _override form_ dropdown on the write screen.
 
-The category and section types are intended to be used in conjunction with "category&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list and "section&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list, respectively, as a value to the form attribute, along the lines of
+The category and section types are intended to be used in conjunction with "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list and "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list, respectively, as a value to the form attribute, along the lines of
 
 bc(code). <nowiki><txp:section_list form="foo" /></nowiki>
 
@@ -28,6 +28,6 @@ bc(code). <nowiki><txp:section_list form="foo" /></nowiki>
 
 See also:
 
-* "forms&#95;explained":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained
-* "default&#95;forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms
+* "forms_explained":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained
+* "default_forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms
 

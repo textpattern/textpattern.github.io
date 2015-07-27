@@ -6,7 +6,7 @@ h3(sectionedit1#simple_installation_instructions). Simple installation instructi
 
 The user-friendly version:
 
-# "Download":http://textpattern.com/download/ the latest _.zip/.gzip_ package (currently version "txp&#95;current&#95;version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version).
+# "Download":http://textpattern.com/download/ the latest _.zip/.gzip_ package (currently version "txp_current_version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version).
 # Create a new folder (_e.g._, “txp-unzipped”) on your local drive, move the zip file into it, and unpack "the file tree contents":https://github.com/textpattern/textpattern.
 # Create an FTP connection to your server (sometimes SFTP is necessary, depending on your host requirements), and move the unpacked file tree to your web domain root (or subdirectory if you plan to run it that way).
 # Create a MySQL database and the associated user and password for it.
@@ -43,7 +43,7 @@ The unpacked "file tree":/home/www/zendstudio/dokuwiki/bin/doku.php?id=4_5.2_fil
 <li>bc(code). sites
 
 
-<p>â€” This folder contains a _site1_ template, and provides support for "multiple&#95;websites&#95;with&#95;a&#95;single&#95;textpattern&#95;installation":/home/www/zendstudio/dokuwiki/bin/doku.php?id=multiple_websites_with_a_single_textpattern_installation.</p></li>
+<p>â€” This folder contains a _site1_ template, and provides support for "multiple_websites_with_a_single_textpattern_installation":/home/www/zendstudio/dokuwiki/bin/doku.php?id=multiple_websites_with_a_single_textpattern_installation.</p></li>
 <li>bc(code). index.php
 
 
@@ -99,15 +99,15 @@ When the database is created, return to the database setup screen in the web bro
 
 Here is a guide for how it should look:
 
-* MySQL login: *_yourhostID&#95;databaseUserID_*
+* MySQL login: *_yourhostID_databaseUserID_*
 * MySQL password: *_databasePassword_*
 * MySQL server: *_localhost_* (If “localhost” does not work, check with your host provider about what to use.)
-* MySQL database: *_yourhostID&#95;datbaseName_*
-* Table prefix: *_prefix&#95;_* (e.g., _txp&#95;_, _txp2&#95;_, _cats&#95;_, _whatever&#95;_)
+* MySQL database: *_yourhostID_datbaseName_*
+* Table prefix: *_prefix__* (e.g., _txp__, _txp2__, _cats__, _whatever__)
 
 The Textpattern setup screen will indicate that you don't need to provide a table prefix if this will be your only installation of Textpattern. It is advised that you create a prefix anyway. You might not need a second installation of Textpattern right now, but you might want to have one at a later point in time, and providing a prefix for this installation enables you to do that later.
 
-Make sure you use "valid characters for MySQL":http://dev.mysql.com/doc/mysql/en/legal-names.html for the prefix, only underscore (&#95;), dollar ($), letters and numbers are allowed.
+Make sure you use "valid characters for MySQL":http://dev.mysql.com/doc/mysql/en/legal-names.html for the prefix, only underscore (_), dollar ($), letters and numbers are allowed.
 
 The site paths should already be filled in on your setup screen. You only need to verify that they are correct; but don't think too much about this, because if you added your Textpattern files as described previously, then these paths will be correct and you don't have to do anything.
 
@@ -154,11 +154,11 @@ You should now have reached the administration login screen for your Textpattern
 
 To login to your admin interface, use the login information you created in Step 3 above. If you want to avoid logging in each time you visit, make sure the check box is selected (*not advised* if you share your computer with anyone).
 
-*Congratulations! You've installed Textpattern.* There are some final security checks to take care of, so give yourself a pat and then get started with "administration&#95;workflow":/home/www/zendstudio/dokuwiki/bin/doku.php?id=administration_workflow.
+*Congratulations! You've installed Textpattern.* There are some final security checks to take care of, so give yourself a pat and then get started with "administration_workflow":/home/www/zendstudio/dokuwiki/bin/doku.php?id=administration_workflow.
 
 h3(sectionedit3#upgrading_your_installation). Upgrading your installation
 
-See "upgrading&#95;downgrading&#95;nightlies&#95;and&#95;bleeding&#95;edge":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_downgrading_nightlies_and_bleeding_edge.
+See "upgrading_downgrading_nightlies_and_bleeding_edge":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_downgrading_nightlies_and_bleeding_edge.
 
-"ftp&#95;installation&#95;translations":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=ftp_installation_translations
+"ftp_installation_translations":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=ftp_installation_translations
 

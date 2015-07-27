@@ -1,8 +1,8 @@
-\n"mininav&#95;core&#95;function&#95;reference":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_core_function_reference
+\n"mininav_core_function_reference":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_core_function_reference
 
 h3(sectionedit1#description). Description
 
-string "safe&#95;query":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_query ( string _$q = “”_, bool _$debug = “”_, bool _$unbuf = “”_ )
+string "safe_query":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_query ( string _$q = “”_, bool _$debug = “”_, bool _$unbuf = “”_ )
 
 Execute a query and return the result.
 
@@ -11,7 +11,7 @@ h3(sectionedit2#parameters). Parameters
 *q*
  MySQL query *debug*
  If true, "dmp()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=dmp $q even when global debug mode is off *unbuf*
- If true, use _"mysql&#95;unbuffered&#95;query()":http://us2.php.net/manual/en/function.mysql-unbuffered-query.php_ instead of _"mysql&#95;query()":http://us2.php.net/manual/en/function.mysql-query.php_
+ If true, use _"mysql_unbuffered_query()":http://us2.php.net/manual/en/function.mysql-unbuffered-query.php_ instead of _"mysql_query()":http://us2.php.net/manual/en/function.mysql-query.php_
 
 h3(sectionedit3#return_values). Return Values
 
@@ -37,21 +37,21 @@ $rs = safe_query($sql);
 
 h3(sectionedit6#see_also). See Also
 
-"safe&#95;pfx()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_pfx
+"safe_pfx()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_pfx
 
 h3(sectionedit7#notes). Notes
 
 For simple database calls it is better to use the higher-level functions:
 
-* "safe&#95;row()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_row
-* "safe&#95;rows()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows
-* "safe&#95;rows&#95;start()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows_start
-* "safe&#95;upsert()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_upsert
-* "safe&#95;delete()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_delete
+* "safe_row()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_row
+* "safe_rows()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows
+* "safe_rows_start()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows_start
+* "safe_upsert()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_upsert
+* "safe_delete()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_delete
 
 etc.
 
-When using "safe&#95;query()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_query you should generally use "safe&#95;pfx()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_pfx to prepare the query.
+When using "safe_query()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_query you should generally use "safe_pfx()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_pfx to prepare the query.
 
 For
 

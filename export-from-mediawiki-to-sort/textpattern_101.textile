@@ -52,13 +52,13 @@ Okay, pretty easy, huh? There's a reason for that. We as writers, commentators, 
 
 When you create a section, there are several options to play with, but possibly the most critical are “Page” and “Stylesheet”. These controls are what you are going to use to create that unique look to each portion of your site. For example, this tutorial is set up in its own section. If you find your way over to the navigation bar on the left and select “Musings of an Engineer”, this will take you to the main page of the site. You'll hopefully notice that the page layout and style changed dramatically between this essay and that page.
 
-Sections are a powerful way to categorize articles. Think of it as a meta-category. While you may have categories about your articles, this meta-category determines &#95;where&#95; your articles are going to show up. Each section will have its own page located at _"$":http://your.site.org/sectionname''. Additionally, if the section is marked as “Shows on Front Page” then as well as showing up on it's own section page, the articles will display on the front page as well._
+Sections are a powerful way to categorize articles. Think of it as a meta-category. While you may have categories about your articles, this meta-category determines _where_ your articles are going to show up. Each section will have its own page located at _"$":http://your.site.org/sectionname''. Additionally, if the section is marked as “Shows on Front Page” then as well as showing up on it's own section page, the articles will display on the front page as well._
 
 Once you get sections figured out, it'll be a snap (fingers or spine, depends on your outlook) to get something like a photo page set up, or completely different logs for different people.
 
-*Presentation:Pages* is where different page layouts are created. Back on the Sections tab if you'll remember, you got to pick what page you wanted to use. This is where you will edit the &#95;template&#95; for each page. If you are coming from the MT world, you'll hopefully be familiar with the idea of tags. For the newcomers, HTML tags control how the page will look. TXP tags control what &#95;content&#95; the page will have.
+*Presentation:Pages* is where different page layouts are created. Back on the Sections tab if you'll remember, you got to pick what page you wanted to use. This is where you will edit the _template_ for each page. If you are coming from the MT world, you'll hopefully be familiar with the idea of tags. For the newcomers, HTML tags control how the page will look. TXP tags control what _content_ the page will have.
 
-HTML tags you can buy a ready reference for at your local bookseller. TXP tags... you *also* have a ready reference for. Dean Allen, the TXP author, has helpfully provided us with a basic cheatsheat of tags on the left hand side. For most options, when you need to insert _content_, you can click on one of these items. A web window will pop up and ask you some questions on what you want, and then it will translate that into the tag you need. A little cut-and-paste and you're home free. For more advanced uses, the "Textpattern Tags: A Manual for Impatient Users":http://kusor.com/en/txptagmanual/ is available and will go into a lot more detail about what each of these gizmos do. (Edit: more up to date is "alphabetical&#95;tag&#95;listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing)
+HTML tags you can buy a ready reference for at your local bookseller. TXP tags... you *also* have a ready reference for. Dean Allen, the TXP author, has helpfully provided us with a basic cheatsheat of tags on the left hand side. For most options, when you need to insert _content_, you can click on one of these items. A web window will pop up and ask you some questions on what you want, and then it will translate that into the tag you need. A little cut-and-paste and you're home free. For more advanced uses, the "Textpattern Tags: A Manual for Impatient Users":http://kusor.com/en/txptagmanual/ is available and will go into a lot more detail about what each of these gizmos do. (Edit: more up to date is "alphabetical_tag_listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing)
 
 *Presentation:Forms* is a complex one and here is possibly one of the hardest tabs to explain. I'm afraid I may lose newcomer and old-hands alike, but hang on.
 
@@ -82,7 +82,7 @@ Now that I've gotten you all very excited about the possibilities and craft of T
 
 And lastly, *View Site* will pop open another window, and display your site whenever you like.
 
-*Brief Technical Note*: For the site admin, there is also _another_ place to configure TXP. In the lib/ directory of your TXP installation there is a file called admin&#95;config.php. In there are a few other configuration capabilities that are well explained in that file. These are very fundamental options and will probably only be set up when TXP is installed.
+*Brief Technical Note*: For the site admin, there is also _another_ place to configure TXP. In the lib/ directory of your TXP installation there is a file called admin_config.php. In there are a few other configuration capabilities that are well explained in that file. These are very fundamental options and will probably only be set up when TXP is installed.
 
 h4(#phase_3how_txp_works_or_what_exactly_is_going_on). Phase 3: How TXP Works (or What Exactly Is Going On?)
 
@@ -94,7 +94,7 @@ PHP is a powerful scripting language for web development. If you are more of a c
 
 And while we are talking about layout, this brings us to the Textile facet of TXP. Along with not having to hand edit HTML files, for the most part, you do not need to use HTML for your content format. Textile is a sort of meta-markup, a shorthand for simple formatting. There is a dropdown cheat sheet for Textile markers on the side in the Content:Write page for the simple stuff. Now occasionally to get what you are looking for, HTML will still be required. This is due to the fact that Textile is not completely perfect just yet. In my estimation however, it covers about 90% of commonly used HTML formatting. This saves time.
 
-The last main component is MySQL, an open-source database. This is where TXP stores everything about the site. And I mean &#42;everything&#42;. The articles are stored in the database. The comments are stored in the database. So are all the links, categories, preferences, and even the page templates and style templates. Everything is in the database. If you start poking around in the TXP installation directories, you'll realize there is not a scrap of static content (aside from config.php and lib/admin&#95;config.php) anywhere. If you wish to backup your site, you need to backup the database, not the installation. (With the exception of images, which are stored in the images/ directory.)
+The last main component is MySQL, an open-source database. This is where TXP stores everything about the site. And I mean &#42;everything&#42;. The articles are stored in the database. The comments are stored in the database. So are all the links, categories, preferences, and even the page templates and style templates. Everything is in the database. If you start poking around in the TXP installation directories, you'll realize there is not a scrap of static content (aside from config.php and lib/admin_config.php) anywhere. If you wish to backup your site, you need to backup the database, not the installation. (With the exception of images, which are stored in the images/ directory.)
 
 This is somewhat different from "MT":http://movabletype.org. MT also uses MySQL as a backend. It uses Perl as the scripting for the engine. However, MT requires that the content be physically published. When you click the publish link, MT retrieves everything it needs from the database, combines it with some static content (template pages can be stored statically) and physically writes out each static page. When a viewer tries to retrieve a page, the webserver will find an HTML file and serve that.
 
@@ -102,7 +102,7 @@ Which is better? It's hard to say and primarily up to personal preference. The 1
 
 h4(#phase_4using_txp_or_it_s_very_pretty_but_what_should_i_do_now). Phase 4: Using TXP (or It's Very Pretty, But What Should I Do Now?)
 
-Alright, this is where it gets more complex, but at the same time, this is where the creativity kicks in and it gets really &#95;fun&#95;. However, to give those who are still a little blank a push, I can think of some ways to come at this problem (or should I say &#42;opportunity&#42;?) for both the newcomer and the old-hands alike.
+Alright, this is where it gets more complex, but at the same time, this is where the creativity kicks in and it gets really _fun_. However, to give those who are still a little blank a push, I can think of some ways to come at this problem (or should I say &#42;opportunity&#42;?) for both the newcomer and the old-hands alike.
 
 *_1. What do you want to do on this site?_*
 
@@ -149,7 +149,7 @@ _Tools_
 * Presentation:Pages and Styles : for creating this structure and view
 * Your HTML reference book: for the basics
 * Your CSS reference book : for the not-so-basics
-* "alphabetical&#95;tag&#95;listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing: for some TXP specifics
+* "alphabetical_tag_listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing: for some TXP specifics
 
 *_4. Decide on your navigation._*
 
@@ -171,7 +171,7 @@ _Tools_
 * Presentation:Forms : This is where you tell how your atomic content is to be created.
 * Content:Write : There are options here under “Advanced Options” on controlling the form you want a particular post to use.
 * Presentation:Pages : And you can also usually specify form in the TXP tag.
-* "alphabetical&#95;tag&#95;listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing : Because it's so damn useful for these places in forms and pages where you want to control things.
+* "alphabetical_tag_listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing : Because it's so damn useful for these places in forms and pages where you want to control things.
 
 h4(#phase_5creating_content_and_overall_satisfaction_or_hooray_i_did_it_except_oh_there_s_a_tiny_thing_i_want_to_tweak). Phase 5: Creating Content and Overall Satisfaction (or Hooray! I did it... Except Oh There's A Tiny Thing I Want To Tweak)
 

@@ -1,2 +1,2 @@
-\n - REDIRECT "creating&#95;lists&#95;with&#95;conditional&#95;tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=creating_lists_with_conditional_tags
+\n - REDIRECT "creating_lists_with_conditional_tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=creating_lists_with_conditional_tags
 

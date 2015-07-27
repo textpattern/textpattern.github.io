@@ -2,10 +2,10 @@
 
 * "Unicode Support (UTF-8)":/home/www/zendstudio/dokuwiki/bin/doku.php?id=unicode_support
 
-* "troubleshooting&#95;common&#95;xhtml&#95;validation&#95;issues&#95;in&#95;a&#95;textpattern&#95;site":/home/www/zendstudio/dokuwiki/bin/doku.php?id=troubleshooting_common_xhtml_validation_issues_in_a_textpattern_site
+* "troubleshooting_common_xhtml_validation_issues_in_a_textpattern_site":/home/www/zendstudio/dokuwiki/bin/doku.php?id=troubleshooting_common_xhtml_validation_issues_in_a_textpattern_site
 
 * "Textpattern Licensing":http://textpattern.com/faq/51/what-license-does-textpattern-use
-* "textpattern&#95;release&#95;history":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_release_history
+* "textpattern_release_history":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_release_history
 
 h3(sectionedit1#glossary). [[glossary]]
 

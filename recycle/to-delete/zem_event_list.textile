@@ -7,11 +7,11 @@ The
 bc(code). zem_event_list
 
 
-tag can be used as a "Single&#95;Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag or a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag. It will take a form attribute as a "Single&#95;Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag as well as other attributes. When used as a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag the contained statements are executed recursively as the "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag's form.
+tag can be used as a "Single_Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag or a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag. It will take a form attribute as a "Single_Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag as well as other attributes. When used as a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag the contained statements are executed recursively as the "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag's form.
 
 h4(#syntax). Syntax
 
-The _zem&#95;event&#95;list_ tag has the following syntactic structure...
+The _zem_event_list_ tag has the following syntactic structure...
 
 bc(code). <txp:zem_event_list /> or <txp:zem_event_list>... contained content ...</txp:zem_event_list>
 
@@ -32,22 +32,22 @@ bc(code). empty
  HTML tag to be used for line breaks, without brackets. Default is empty. *&lt;code&gt;*breakclass=“*_class text_*“*&lt;/code&gt;*
  HTML class to be used for line breaks, without brackets. Default is empty. *&lt;code&gt;*wraptag=“*_wraptag text_*“*&lt;/code&gt;*
  HTML tag to be used as the wraptag, without brackets. Default is empty. *&lt;code&gt;*category=“*_category name_*“*&lt;/code&gt;*
- Selected from available categories. (Default is the currently searched for category) *&lt;code&gt;*all&#95;categories=“*_0 or 1_*“*&lt;/code&gt;*
- (Default is the current value of all&#95;categories) *&lt;code&gt;*location=“*_location name_*“*&lt;/code&gt;*
- Selected from available locations. (Default is the currently selected location) *&lt;code&gt;*all&#95;locations=“*_0 or 1_*“*&lt;/code&gt;*
- (Default is the current value of all&#95;locations) *&lt;code&gt;*form=“*_Form Name_*“*&lt;/code&gt;*
+ Selected from available categories. (Default is the currently searched for category) *&lt;code&gt;*all_categories=“*_0 or 1_*“*&lt;/code&gt;*
+ (Default is the current value of all_categories) *&lt;code&gt;*location=“*_location name_*“*&lt;/code&gt;*
+ Selected from available locations. (Default is the currently selected location) *&lt;code&gt;*all_locations=“*_0 or 1_*“*&lt;/code&gt;*
+ (Default is the current value of all_locations) *&lt;code&gt;*form=“*_Form Name_*“*&lt;/code&gt;*
  Form to be used when single tag is used, wraptag usage will disregard this attribute.Default is
 
 bc(code). **zem_event_display**
 
 
-. *&lt;code&gt;*date&#95;from=“*_Event start date_*“*&lt;/code&gt;*
+. *&lt;code&gt;*date_from=“*_Event start date_*“*&lt;/code&gt;*
  Default is
 
 bc(code). **currently set start date or current day**
 
 
-. *&lt;code&gt;*date&#95;to=“*_Event end date_*“*&lt;/code&gt;*
+. *&lt;code&gt;*date_to=“*_Event end date_*“*&lt;/code&gt;*
  Default is
 
 bc(code). **currently set end date or empty**

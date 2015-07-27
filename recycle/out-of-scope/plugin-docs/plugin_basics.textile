@@ -9,9 +9,9 @@ Let's get stuck in and write a simple client-side plugin. This plugin will:
 # Output some text when that tag is called
 # Use TXP's "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else tag
 
-Since all plugins must use a three-letter prefix (see the "plugin&#95;development&#95;guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_development_guidelines for more on this) we're going to use *abc&#95;* in this example.
+Since all plugins must use a three-letter prefix (see the "plugin_development_guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_development_guidelines for more on this) we're going to use *abc_* in this example.
 
-Let's build the code piece by piece using the "ied&#95;plugin&#95;composer":http://stefdawson.com/ied_plugin_composer plugin. Create a new plugin called *abc&#95;hello&#95;world* and put this code in:
+Let's build the code piece by piece using the "ied_plugin_composer":http://stefdawson.com/ied_plugin_composer plugin. Create a new plugin called *abc_hello_world* and put this code in:
 
 bc(code). function abc_hello_world($atts, $thing=NULL) {
    return 'Hello Textpattern world!';
@@ -184,7 +184,7 @@ bc(code). if (@txpinterface == 'admin') {
 }
 
 
-So go ahead, create a new plugin in ied&#95;plugin&#95;composer called *abc&#95;admin&#95;hello&#95;world* and put the above code in it. Make sure the plugin is set to type _Admin_.
+So go ahead, create a new plugin in ied_plugin_composer called *abc_admin_hello_world* and put the above code in it. Make sure the plugin is set to type _Admin_.
 
 Nothing will happen yet of course, so let's create our tab on the Extensions panel:
 
@@ -207,7 +207,7 @@ h4(#events_and_steps). Events and steps
 
 We've created a new tab: we need to actually give the plugin a function to execute when that tab is clicked. To understand what goes on here let's take some time out to reveal Textpattern *events* and *steps*.
 
-For our purposes here, think of an event as a tab in the TXP interface. That tab has a name that Tetxpattern knows. It has built-in events such as 'file', 'image', 'admin' and so on. In our case, we've told the system that our tab  -  our event  -  is to be known as *abc&#95;admin&#95;hello&#95;world*. When we target a particular event inside some PHP in plugin, we simply tell TXP to execute code when someone visits that tab.
+For our purposes here, think of an event as a tab in the TXP interface. That tab has a name that Tetxpattern knows. It has built-in events such as 'file', 'image', 'admin' and so on. In our case, we've told the system that our tab  -  our event  -  is to be known as *abc_admin_hello_world*. When we target a particular event inside some PHP in plugin, we simply tell TXP to execute code when someone visits that tab.
 
 A step is some action that a user takes when within one of the tabs  -  i.e. some action that takes place inside the event that we are interested in. More on steps later. For now we need to tell Textpattern what to do when our tab is clicked. For this we use
 
@@ -229,7 +229,7 @@ function abc_admin_hw_gui($event, $step) {
 }
 </pre>
 
-Now we're getting somewhere! When someone visits the abc&#95;admin&#95;hello&#95;world tab we have told TXP to call the function abc&#95;admin&#95;hw&#95;gui(). The
+Now we're getting somewhere! When someone visits the abc_admin_hello_world tab we have told TXP to call the function abc_admin_hw_gui(). The
 
 bc(code). pagetop()
 
@@ -276,7 +276,7 @@ bc(code). function abc_admin_hw_gui($event, $step) {
 }
 
 
-Essentially it checks to see if there is a $step or if the name of the step is abc&#95;admin&#95;hw&#95;save or abc&#95;admin&#95;hw&#95;edit. If it is, it simply calls the function with the same name as the step. If there's no step or the step is somehow mistyped or mangled, the default step abc&#95;admin&#95;hw&#95;list is run instead.
+Essentially it checks to see if there is a $step or if the name of the step is abc_admin_hw_save or abc_admin_hw_edit. If it is, it simply calls the function with the same name as the step. If there's no step or the step is somehow mistyped or mangled, the default step abc_admin_hw_list is run instead.
 
 Before we forget let's write our functions for the remaining steps:
 

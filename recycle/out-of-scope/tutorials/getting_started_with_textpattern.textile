@@ -1,25 +1,25 @@
 \n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
 
-"Getting Started":/home/www/zendstudio/dokuwiki/bin/doku.php?id=getting_started_with_textpattern &#124; "Intermediate/Advanced Topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=intermediate_and_advanced_topics &#124; "Designer/Developer Interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests &#124; "Tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing &#124; "tutorials":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tutorials &#124; "article&#95;contributions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_contributions
+"Getting Started":/home/www/zendstudio/dokuwiki/bin/doku.php?id=getting_started_with_textpattern &#124; "Intermediate/Advanced Topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=intermediate_and_advanced_topics &#124; "Designer/Developer Interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests &#124; "Tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing &#124; "tutorials":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tutorials &#124; "article_contributions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_contributions
 
 h3(sectionedit1#getting_started). Getting Started
 
 * Installation Instructions: "Short":http://textpattern.com/download/ &#124; "Detailed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_installation_instructions
-* "textpattern&#95;first&#95;steps":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_first_steps
-* "textpattern&#95;101":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_101
-* "site&#95;administration":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_administration
-* Defaults: "default&#95;pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_pages &#124; "default&#95;styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_styles &#124; "default&#95;forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms
-* Tags: "alphabetical&#95;tag&#95;listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing &#124; "tag&#95;groups":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_groups &#124; "tags&#95;by&#95;topic":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tags_by_topic &#124; "attributes&#95;cross&#95;reference":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross_reference
+* "textpattern_first_steps":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_first_steps
+* "textpattern_101":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_101
+* "site_administration":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_administration
+* Defaults: "default_pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_pages &#124; "default_styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_styles &#124; "default_forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms
+* Tags: "alphabetical_tag_listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing &#124; "tag_groups":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tag_groups &#124; "tags_by_topic":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tags_by_topic &#124; "attributes_cross_reference":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross_reference
 * "Learning Textile":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textile
 * "tutorials":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tutorials
-* "article&#95;contributions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_contributions
+* "article_contributions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_contributions
 
 h3(sectionedit2#official_and_supporting_resources). Official and Supporting Resources
 
 * FAQ: "Official FAQ":http://textpattern.com/faq/ &#124; "Translation FAQ":/home/www/zendstudio/dokuwiki/bin/doku.php?id=faq_index
-* "textpattern&#95;resources&#95;listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_resources_listing
+* "textpattern_resources_listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_resources_listing
 * "Textpattern Feature Requests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feature_requests
-* "community&#95;projects":/home/www/zendstudio/dokuwiki/bin/doku.php?id=community_projects
+* "community_projects":/home/www/zendstudio/dokuwiki/bin/doku.php?id=community_projects
 
 h3(sectionedit3#glossary). [[glossary]]
 

@@ -1,4 +1,4 @@
-\nThe following is a list of callbacks in Textpattern. It is current as of Textpattern "txp&#95;current&#95;version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version:
+\nThe following is a list of callbacks in Textpattern. It is current as of Textpattern "txp_current_version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version:
 
 h3(sectionedit1#regular_public-side_callbacks). Regular public-side callbacks
 
@@ -10,7 +10,7 @@ h4(#code_publishphp_code). &lt;code&gt;publish.php&lt;/code&gt;
 bc(code). pretext()
 
 
-function, just after the prefs have been extracted *event = _pretext&#95;end_*
+function, just after the prefs have been extracted *event = _pretext_end_*
  occurs just after
 
 bc(code). pretext()
@@ -21,21 +21,21 @@ has run but before its variables have been extracted into the global scope usefu
 bc(code). pretext()
 
 
-or adding variables to it *event = _file&#95;download_*
- occurs as soon as a file&#95;download is detected, allowing you to intercept the regular file downloading process *event = _textpattern_*
- occurs just before the page is rendered *event = _textpattern&#95;end_*
+or adding variables to it *event = _file_download_*
+ occurs as soon as a file_download is detected, allowing you to intercept the regular file downloading process *event = _textpattern_*
+ occurs just before the page is rendered *event = _textpattern_end_*
  occurs once the page has been fully rendered
 
 h4(#code_publish_atomphp_code). &lt;code&gt;publish/atom.php&lt;/code&gt;
 
-*event = _atom&#95;head_*
- occurs after the feed's header has been set allows you to add items to the feed's header *event = _atom&#95;entry_*
+*event = _atom_head_*
+ occurs after the feed's header has been set allows you to add items to the feed's header *event = _atom_entry_*
  occurs as soon as the article's data has been populated allows you to inject extra markup after the standard feed items have been generated
 
 h4(#code_publish_rssphp_code). &lt;code&gt;publish/rss.php&lt;/code&gt;
 
-*event = _rss&#95;head_*
- occurs after the feed's header has been set allows you to add items to the feed's header *event = _rss&#95;entry_*
+*event = _rss_head_*
+ occurs after the feed's header has been set allows you to add items to the feed's header *event = _rss_entry_*
  occurs as soon as the article's data has been populated allows you to inject extra markup after the standard feed items have been generated
 
 h4(#code_publish_commentphp_code). &lt;code&gt;publish/comment.php&lt;/code&gt;
@@ -57,32 +57,32 @@ tag *event = _comment.save_*
 
 h4(#code_publish_logphp_code). &lt;code&gt;publish/log.php&lt;/code&gt;
 
-*event = _log&#95;hit_*
- occurs just before a log message is recorded in the txp&#95;log table allows you to alter the log message
+*event = _log_hit_*
+ occurs just before a log message is recorded in the txp_log table allows you to alter the log message
 
 h3(sectionedit2#function-_and_tag-based_callbacks). Function- and tag-based callbacks
 
-h4(#code_lib_txplib_miscphp_code). &lt;code&gt;lib/txplib&#95;misc.php&lt;/code&gt;
+h4(#code_lib_txplib_miscphp_code). &lt;code&gt;lib/txplib_misc.php&lt;/code&gt;
 
-*event = _sanitize&#95;for&#95;url_*
+*event = _sanitize_for_url_*
  occurs at the start of the
 
 bc(code). sanitizeForUrl()
 
 
-function allowing you to apply your own URL sanitization rules passes the text to be sanitized as the callback's 4th argument *event = _sanitize&#95;for&#95;file_*
+function allowing you to apply your own URL sanitization rules passes the text to be sanitized as the callback's 4th argument *event = _sanitize_for_file_*
  occurs at the start of the
 
 bc(code). sanitizeForFile()
 
 
-function allowing you to apply your own filename sanitization rules passes the text to be sanitized as the callback's 4th argument *event = _sanitize&#95;for&#95;page_*
+function allowing you to apply your own filename sanitization rules passes the text to be sanitized as the callback's 4th argument *event = _sanitize_for_page_*
  occurs at the start of the
 
 bc(code). sanitizeForPage()
 
 
-function allowing you to apply your own page name sanitization rules passes the text to be sanitized as the callback's 4th argument *event = _txp&#95;die_ step = _http&#95;status&#95;code_*
+function allowing you to apply your own page name sanitization rules passes the text to be sanitized as the callback's 4th argument *event = _txp_die_ step = _http_status_code_*
  occurs once the page's HTTP status has been determined passes the numerical HTTP status code as the callback's _step_ (e.g.
 
 bc(code). 410
@@ -97,7 +97,7 @@ bc(code). 301
 
 h3(sectionedit3#plugin_callbacks). Plugin callbacks
 
-h4(#code_include_txp_pluginphp_code). &lt;code&gt;include/txp&#95;plugin.php&lt;/code&gt;
+h4(#code_include_txp_pluginphp_code). &lt;code&gt;include/txp_plugin.php&lt;/code&gt;
 
 In order to process these callbacks, your plugin must raise the
 
@@ -111,48 +111,48 @@ bc(code). PLUGIN_HAS_PREFS
 
 flag.
 
-*event = _plugin&#95;lifecycle.abc&#95;your&#95;plugin_ step = _enabled_*
- occurs when somebody switches abc&#95;your&#95;plugin to *Yes* from the Admin&gt;Plugins panel *event = _plugin&#95;lifecycle.abc&#95;your&#95;plugin_ step = _disabled_*
- occurs when somebody switches abc&#95;your&#95;plugin to *No* from the Admin&gt;Plugins panel *event = _plugin&#95;lifecycle.abc&#95;your&#95;plugin_ step = _installed_*
- occurs when abc&#95;your&#95;plugin has been installed by the act of the user pasting its code in the Admin&gt;Plugins panel and clicking Install on the next screen *event = _plugin&#95;lifecycle.abc&#95;your&#95;plugin_ step = _deleted_*
- occurs when abc&#95;your&#95;plugin has been removed by the act of the user selecting it and deleting it from the Admin&gt;Plugins panel note that the _plugin&#95;lifecycle.abc&#95;your&#95;plugin_ / _disabled_ callback fires first
+*event = _plugin_lifecycle.abc_your_plugin_ step = _enabled_*
+ occurs when somebody switches abc_your_plugin to *Yes* from the Admin&gt;Plugins panel *event = _plugin_lifecycle.abc_your_plugin_ step = _disabled_*
+ occurs when somebody switches abc_your_plugin to *No* from the Admin&gt;Plugins panel *event = _plugin_lifecycle.abc_your_plugin_ step = _installed_*
+ occurs when abc_your_plugin has been installed by the act of the user pasting its code in the Admin&gt;Plugins panel and clicking Install on the next screen *event = _plugin_lifecycle.abc_your_plugin_ step = _deleted_*
+ occurs when abc_your_plugin has been removed by the act of the user selecting it and deleting it from the Admin&gt;Plugins panel note that the _plugin_lifecycle.abc_your_plugin_ / _disabled_ callback fires first
 
 h3(sectionedit4#regular_admin-side_callbacks). Regular admin-side callbacks
 
-h4(#code_lib_txplib_headphp_code). &lt;code&gt;lib/txplib&#95;head.php&lt;/code&gt;
+h4(#code_lib_txplib_headphp_code). &lt;code&gt;lib/txplib_head.php&lt;/code&gt;
 
-*event = _admin&#95;side_ step = _head&#95;end_*
+*event = _admin_side_ step = _head_end_*
  occurs just before the closing
 
 bc(code). <nowiki></head></nowiki>
 
 
-tag on every admin side panel useful for injecting javascript or style rules into the page's header *event = _admin&#95;side_ step = _pagetop_*
- occurs immediately before control is handed to the theme to render the navigation bar *event = _admin&#95;side_ step = _pagetop&#95;end_*
+tag on every admin side panel useful for injecting javascript or style rules into the page's header *event = _admin_side_ step = _pagetop_*
+ occurs immediately before control is handed to the theme to render the navigation bar *event = _admin_side_ step = _pagetop_end_*
  occurs immediately after the theme has finished rendering the navigation bar useful for adding admin-wide markup below pagetop
 
-h4(#code_lib_txplib_htmlphp_code). &lt;code&gt;lib/txplib&#95;html.php&lt;/code&gt;
+h4(#code_lib_txplib_htmlphp_code). &lt;code&gt;lib/txplib_html.php&lt;/code&gt;
 
-*event = _admin&#95;side_ step = _body&#95;end_*
+*event = _admin_side_ step = _body_end_*
  occurs once the theme has rendered its footer allows you to tack on any extra admin-wide information immediately before the closing
 
 bc(code). <nowiki></body></nowiki>
 
 
-tag *event = _some&#95;event&#95;ui_ step = _multi&#95;edit&#95;options_*
+tag *event = _some_event_ui_ step = _multi_edit_options_*
  allows you to alter or augment the multi-edit select list. argument #3 contains the options array which is passed by reference so it may be altered directly
 
-h4(#code_include_txp_articlephp_code). &lt;code&gt;include/txp&#95;article.php&lt;/code&gt;
+h4(#code_include_txp_articlephp_code). &lt;code&gt;include/txp_article.php&lt;/code&gt;
 
-*event = _article&#95;posted_*
- called immediately after article creation *event = _article&#95;saved_*
+*event = _article_posted_*
+ called immediately after article creation *event = _article_saved_*
  called immediately after article update/save *event = _ping_*
- occurs just before a ping notification is sent upon publication of an article so you may intercept the ping and provide your own *event = _article&#95;ui_ step = _partials&#95;meta_*
+ occurs just before a ping notification is sent upon publication of an article so you may intercept the ping and provide your own *event = _article_ui_ step = _partials_meta_*
  allows you to alter or augment the interface, usually based on the data sent to/from the AJAX save process argument #3 is the record set of the article being edited argument #4 is the partials array, which comprises: *_key_* unique name of the item available to alter, then an array: *_mode_* the mechanism by which the partial may be updated *_selector_* the wholly encapsulated DOM selector to which the partial applies *_callback_* the callback function to utilise to update the nominated part of the interface *_html_* (optional) return value of the callback function
 
-h4(#code_include_txp_diagphp_code). &lt;code&gt;include/txp&#95;diag.php&lt;/code&gt;
+h4(#code_include_txp_diagphp_code). &lt;code&gt;include/txp_diag.php&lt;/code&gt;
 
-*event = _diag&#95;results_ step = _high_ or _low_*
+*event = _diag_results_ step = _high_ or _low_*
  occurs at the end of the
 
 bc(code). doDiagnostics()
@@ -160,60 +160,60 @@ bc(code). doDiagnostics()
 
 function for rendering the content of the Admin→Diagnostics panel allows you to add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low)
 
-h4(#code_include_txp_adminphp_code). &lt;code&gt;include/txp&#95;admin.php&lt;/code&gt;
+h4(#code_include_txp_adminphp_code). &lt;code&gt;include/txp_admin.php&lt;/code&gt;
 
-*event = _authors&#95;deleted_*
+*event = _authors_deleted_*
  occurs just after user(s) have been deleted and all assets have been reassigned an array of deleted user names is passed as a parameter
 
-h4(#code_include_txp_categoryphp_code). &lt;code&gt;include/txp&#95;category.php&lt;/code&gt;
+h4(#code_include_txp_categoryphp_code). &lt;code&gt;include/txp_category.php&lt;/code&gt;
 
-*event = _categories&#95;deleted_*
+*event = _categories_deleted_*
  occurs just after one or more categories have been deleted and the tree has been rebuilt an array of deleted category IDs is passed as a parameter
 
-h4(#code_include_txp_cssphp_code). &lt;code&gt;include/txp&#95;css.php&lt;/code&gt;
+h4(#code_include_txp_cssphp_code). &lt;code&gt;include/txp_css.php&lt;/code&gt;
 
-*event = _css&#95;deleted_*
+*event = _css_deleted_*
  occurs just after a stylesheet has been deleted the name of the deleted stylesheet is passed as a parameter
 
-h4(#code_include_txp_discussphp_code). &lt;code&gt;include/txp&#95;discuss.php&lt;/code&gt;
+h4(#code_include_txp_discussphp_code). &lt;code&gt;include/txp_discuss.php&lt;/code&gt;
 
-*event = _discuss&#95;deleted_*
+*event = _discuss_deleted_*
  occurs just after one or more comments have been deleted, but _before_ the comment counts have been updated in the affected articles an array of the deleted comment IDs is passed as a parameter
 
-h4(#code_include_txp_filephp_code). &lt;code&gt;include/txp&#95;file.php&lt;/code&gt;
+h4(#code_include_txp_filephp_code). &lt;code&gt;include/txp_file.php&lt;/code&gt;
 
-*event = _file&#95;deleted_*
+*event = _file_deleted_*
  occurs just _before_ each file is deleted the first additional parameter is the file's ID the second additional parameter is the full path to the file
 
-h4(#code_include_txp_formphp_code). &lt;code&gt;include/txp&#95;form.php&lt;/code&gt;
+h4(#code_include_txp_formphp_code). &lt;code&gt;include/txp_form.php&lt;/code&gt;
 
-*event = _forms&#95;deleted_*
+*event = _forms_deleted_*
  occurs just after one or more forms have been deleted an array of deleted form names is passed as a parameter
 
-h4(#code_include_txp_imagephp_code). &lt;code&gt;include/txp&#95;image.php&lt;/code&gt;
+h4(#code_include_txp_imagephp_code). &lt;code&gt;include/txp_image.php&lt;/code&gt;
 
-*event = _image&#95;deleted_ step = _image_*
- occurs just before an image and its thumbnail are deleted the image ID is passed as a parameter *event = _image&#95;uploaded_ step = _image_*
+*event = _image_deleted_ step = _image_*
+ occurs just before an image and its thumbnail are deleted the image ID is passed as a parameter *event = _image_uploaded_ step = _image_*
  occurs just after an image has been uploaded or replaced by another image. The image ID is passed as a parameter
 
-h4(#code_include_txp_linkphp_code). &lt;code&gt;include/txp&#95;link.php&lt;/code&gt;
+h4(#code_include_txp_linkphp_code). &lt;code&gt;include/txp_link.php&lt;/code&gt;
 
-*event = _links&#95;deleted_*
+*event = _links_deleted_*
  occurs just after one or more links have been deleted an array of deleted link IDs is passed as a parameter
 
-h4(#code_include_txp_listphp_code). &lt;code&gt;include/txp&#95;list.php&lt;/code&gt;
+h4(#code_include_txp_listphp_code). &lt;code&gt;include/txp_list.php&lt;/code&gt;
 
-*event = _articles&#95;deleted_*
+*event = _articles_deleted_*
  occurs just after one or more articles have been deleted and any associated comments have had their visibility removed an array of deleted article IDs is passed as a parameter
 
-h4(#code_include_txp_pagephp_code). &lt;code&gt;include/txp&#95;page.php&lt;/code&gt;
+h4(#code_include_txp_pagephp_code). &lt;code&gt;include/txp_page.php&lt;/code&gt;
 
-*event = _page&#95;deleted_*
+*event = _page_deleted_*
  occurs just after a page template has been deleted the name of the deleted page is passed as a parameter
 
-h4(#code_include_txp_sectionphp_code). &lt;code&gt;include/txp&#95;section.php&lt;/code&gt;
+h4(#code_include_txp_sectionphp_code). &lt;code&gt;include/txp_section.php&lt;/code&gt;
 
-*event = _sections&#95;deleted_*
+*event = _sections_deleted_*
  occurs just after one or more sections have been deleted an array of deleted section names is passed as a parameter
 
 h3(sectionedit5#admin-side_criteria_callbacks). Admin-side criteria callbacks
@@ -234,19 +234,19 @@ bc(code). " AND 1 AND ..."
 
 The third argument to your callback function contains the current criteria used so you may make decisions based on its contents (for example, you may not want to filter the results if a search has been performed).
 
-The callbacks all have event = _admin&#95;criteria_ and the following steps:
+The callbacks all have event = _admin_criteria_ and the following steps:
 
-* Articles panel: _list&#95;list_
-* Comments panel: _discuss&#95;list_
-* Files panel: _file&#95;list_
-* Forms panel: _form&#95;list_
-* Images panel: _image&#95;list_
-* Links panel: _link&#95;list_
-* Pages panel: _page&#95;list_
-* Sections panel: _section&#95;list_
-* Styles panel: _css&#95;list_
-* Users panel: _author&#95;list_
-* Visitor logs panel: _log&#95;list_
+* Articles panel: _list_list_
+* Comments panel: _discuss_list_
+* Files panel: _file_list_
+* Forms panel: _form_list_
+* Images panel: _image_list_
+* Links panel: _link_list_
+* Pages panel: _page_list_
+* Sections panel: _section_list_
+* Styles panel: _css_list_
+* Users panel: _author_list_
+* Visitor logs panel: _log_list_
 
 h3(sectionedit6#admin_side_validation_callbacks). Admin side validation callbacks
 
@@ -260,39 +260,39 @@ Note that these additional arguments are all passed by reference to your applica
 
 h4(#articles_panel). Articles panel
 
-* event = _article&#95;ui_
+* event = _article_ui_
 
-step = _validate&#95;publish_
+step = _validate_publish_
 
-* event = _article&#95;ui_
+* event = _article_ui_
 
-step = _validate&#95;save_
+step = _validate_save_
 
 h4(#comments_panel). Comments panel
 
-* event = _discuss&#95;ui_
+* event = _discuss_ui_
 
-step = _validate&#95;save_
+step = _validate_save_
 
 h4(#files_panel). Files panel
 
-* event = _file&#95;ui_
+* event = _file_ui_
 
-step = _validate&#95;save_
+step = _validate_save_
 
 h4(#images_panel). Images panel
 
-* event = _image&#95;ui_
+* event = _image_ui_
 
-step = _validate&#95;save_
+step = _validate_save_
 
 h4(#links_panel). Links panel
 
-* event = _link&#95;ui_
+* event = _link_ui_
 
-step = _validate&#95;save_
+step = _validate_save_
 
-h3(sectionedit7#pluggable_ui_callbacks). pluggable&#95;ui() callbacks
+h3(sectionedit7#pluggable_ui_callbacks). pluggable_ui() callbacks
 
 Argument #1 passed to your function is the _event_ and argument #2 is the _step_. Arguments 3 and 4 (and occasionally 5) vary depending on the functionality of the UI component. In general, the following holds true unless otherwise stated:
 
@@ -301,23 +301,23 @@ Argument #1 passed to your function is the _event_ and argument #2 is the _step_
 
 Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
 
-h4(#write_panel_code_include_txp_articlephp_code). Write panel (&lt;code&gt;include/txp&#95;article.php&lt;/code&gt;)
+h4(#write_panel_code_include_txp_articlephp_code). Write panel (&lt;code&gt;include/txp_article.php&lt;/code&gt;)
 
-All of the UI elements on this page have the same event = _article&#95;ui_.
+All of the UI elements on this page have the same event = _article_ui_.
 
 *step = _sidehelp_*
- allows you to replace or alter the 'Textile Help' lever and its entire contents *step = _extend&#95;col&#95;1_*
+ allows you to replace or alter the 'Textile Help' lever and its entire contents *step = _extend_col_1_*
  allows you to add your own markup below the sidehelp argument #3 is empty as there is no default content here *step = _markup_*
  allows you to replace or alter the two select lists for article and excerpt markup *step = _override_*
  allows you to alter or replace the _override form_ select list *step = _view_*
- allows you to alter or replace the view/HTML/Preview icons *step = _sort&#95;display_*
+ allows you to alter or replace the view/HTML/Preview icons *step = _sort_display_*
  allows you to alter or replace the _section_ and _category_ select lists *step = _timestamp_*
  allows you to alter or replace the article's posted timestamp area *step = _expires_*
- allows you to alter or replace the article expiry area *step = _custom&#95;fields_*
+ allows you to alter or replace the article expiry area *step = _custom_fields_*
  allows you to alter or replace the block of custom field input controls *step = _keywords_*
- allows you to alter or replace the keywords area *step = _article&#95;image_*
- allows you to alter or replace the article&#95;image area *step = _url&#95;title_*
- allows you to alter or replace the URL title input area *step = _recent&#95;articles_*
+ allows you to alter or replace the keywords area *step = _article_image_*
+ allows you to alter or replace the article_image area *step = _url_title_*
+ allows you to alter or replace the URL title input area *step = _recent_articles_*
  allows you to alter or replace the recent articles list *step = _title_*
  allows you to alter or replace the article's title element *step = _body_*
  allows you to alter or replace the article's body element *step = _excerpt_*
@@ -325,67 +325,67 @@ All of the UI elements on this page have the same event = _article&#95;ui_.
  allows you to alter or replace the author / published-at info *step = _status_*
  allows you to alter or replace the article's status area *step = _categories_*
  allows you to alter or replace the article's category1/category2 area *step = _section_*
- allows you to alter or replace the article's section select list *step = _annotate&#95;invite_*
+ allows you to alter or replace the article's section select list *step = _annotate_invite_*
  allows you to alter or replace the article's comments on/off and comments invite area
 
-h4(#categories_panel_code_include_txp_categoryphp_code). Categories panel (&lt;code&gt;include/txp&#95;category.php&lt;/code&gt;)
+h4(#categories_panel_code_include_txp_categoryphp_code). Categories panel (&lt;code&gt;include/txp_category.php&lt;/code&gt;)
 
-*event = _category&#95;ui_ step = _extend&#95;detail&#95;form_*
+*event = _category_ui_ step = _extend_detail_form_*
  allows you to add markup above the category _Save_ button when editing an individual category argument #3 is empty because there is no default content
 
-h4(#images_panel_code_include_txp_imagephp_code). Images panel (&lt;code&gt;include/txp&#95;image.php&lt;/code&gt;)
+h4(#images_panel_code_include_txp_imagephp_code). Images panel (&lt;code&gt;include/txp_image.php&lt;/code&gt;)
 
-*event = _image&#95;ui_ step = _extend&#95;controls_*
- allows you to add markup to the txp-control-panel area argument #3 is empty because there is no default content *event = _image&#95;ui_ step = _extend&#95;detail&#95;form_*
- allows you to add markup above the image _Save_ button when editing an image argument #3 is empty because there is no default content *event = _image&#95;ui_ step = _thumbnail_*
- allows you to alter/replace the thumbnail in the image list *event = _image&#95;ui_ step = _fullsize&#95;image_*
- allows you to alter/replace the main image in the image edit panel *event = _image&#95;ui_ step = _image&#95;edit_*
- allows you to alter/replace the area containing the upload (replace) image form *event = _image&#95;ui_ step = _thumbnail&#95;image_*
- allows you to alter/replace the thumbnail image in the image edit panel *event = _image&#95;ui_ step = _thumbnail&#95;edit_*
- allows you to alter/replace the area containing the thumbnail upload form *event = _image&#95;ui_ step = _thumbnail&#95;create_*
+*event = _image_ui_ step = _extend_controls_*
+ allows you to add markup to the txp-control-panel area argument #3 is empty because there is no default content *event = _image_ui_ step = _extend_detail_form_*
+ allows you to add markup above the image _Save_ button when editing an image argument #3 is empty because there is no default content *event = _image_ui_ step = _thumbnail_*
+ allows you to alter/replace the thumbnail in the image list *event = _image_ui_ step = _fullsize_image_*
+ allows you to alter/replace the main image in the image edit panel *event = _image_ui_ step = _image_edit_*
+ allows you to alter/replace the area containing the upload (replace) image form *event = _image_ui_ step = _thumbnail_image_*
+ allows you to alter/replace the thumbnail image in the image edit panel *event = _image_ui_ step = _thumbnail_edit_*
+ allows you to alter/replace the area containing the thumbnail upload form *event = _image_ui_ step = _thumbnail_create_*
  allows you to alter/replace the 'thumbnail create' area containing the width / height input fields and crop checkbox
 
-h4(#files_panel_code_include_txp_filephp_code). Files panel (&lt;code&gt;include/txp&#95;file.php&lt;/code&gt;)
+h4(#files_panel_code_include_txp_filephp_code). Files panel (&lt;code&gt;include/txp_file.php&lt;/code&gt;)
 
-*event = _file&#95;ui_ step = _extend&#95;detail&#95;form_*
+*event = _file_ui_ step = _extend_detail_form_*
  allows you to add markup above the file _Save_ button when editing a file argument #3 is empty because there is no default content the same callback is used whether the file you are editing exists or is missing from the database  -  use the absence or availability of the 4th argument (record set) to determine which state the panel is in
 
-h4(#links_panel_code_include_txp_linksphp_code). Links panel (&lt;code&gt;include/txp&#95;links.php&lt;/code&gt;)
+h4(#links_panel_code_include_txp_linksphp_code). Links panel (&lt;code&gt;include/txp_links.php&lt;/code&gt;)
 
-*event = _link&#95;ui_ step = _extend&#95;detail&#95;form_*
+*event = _link_ui_ step = _extend_detail_form_*
  allows you to add markup above the link _Save_ button argument #3 is empty because there is no default content
 
-h4(#sections_panel_code_include_txp_sectionphp_code). Sections panel (&lt;code&gt;include/txp&#95;section.php&lt;/code&gt;)
+h4(#sections_panel_code_include_txp_sectionphp_code). Sections panel (&lt;code&gt;include/txp_section.php&lt;/code&gt;)
 
-*event = _section&#95;ui_ step = _extend&#95;detail&#95;form_*
+*event = _section_ui_ step = _extend_detail_form_*
  allows you to add markup immediately above the _Save_ button in the _section edit_ panel argument #3 is empty because there is no default content the record set in argument #4 contains only the columns _page_ and _css_ when in the default area, and contains all columns at other times
 
-h4(#users_panel_code_include_txp_adminphp_code). Users panel (&lt;code&gt;include/txp&#95;admin.php&lt;/code&gt;)
+h4(#users_panel_code_include_txp_adminphp_code). Users panel (&lt;code&gt;include/txp_admin.php&lt;/code&gt;)
 
-*event = _author&#95;ui_ step = _extend&#95;detail&#95;form_*
+*event = _author_ui_ step = _extend_detail_form_*
  allows you to add markup immediately above the author _Save_ button argument #3 is empty because there is no default content
 
-h4(#preferences_panel_code_include_txp_prefsphp_code). Preferences panel (&lt;code&gt;include/txp&#95;prefs.php&lt;/code&gt;)
+h4(#preferences_panel_code_include_txp_prefsphp_code). Preferences panel (&lt;code&gt;include/txp_prefs.php&lt;/code&gt;)
 
-*event = _prefs&#95;ui_ step = _gmtoffset_*
- allows you to alter or replace the _Time zone_ select list (just the input control, not the label) argument #4 is the preference name in the txp&#95;prefs table (_timezone&#95;key_ in this case) argument #5 is the preference's value (i.e. the chosen item) *event = _prefs&#95;ui_ step = _is&#95;dst_*
- allows you to alter or replace the _DST enabled_ radio buttons (just the input control, not the label) argument #4 is the preference name in the txp&#95;prefs table (_is&#95;dst_ in this case) argument #5 is the preference's value (i.e. the numerical state of the radio button) *event = _prefs&#95;ui_ step = _weeks_*
- allows you to alter or replace the _Comments disabled after_ select list (just the input control, not the label) argument #4 is the preference name in the txp&#95;prefs table (_comments&#95;disabled&#95;after_ in this case) argument #5 is the preference's value (i.e. the numerical value of the selected item; in this case the number of days to keep commenting open) *event = _prefs&#95;ui_ step = _custom&#95;set_*
- allows you to alter or replace the Custom Field text boxes on the Advanced Prefs panel (just the input controls, not the labels). Each text box is called separately; you distinguish between them using argument #4 argument #4 is the preference name in the txp&#95;prefs table (_custom&#95;set&#95;N_ by default, where _N_ is the custom field number) argument #5 is the preference's value (i.e. the name of the custom field) *event = _prefs&#95;ui_ step = _theme&#95;name_*
+*event = _prefs_ui_ step = _gmtoffset_*
+ allows you to alter or replace the _Time zone_ select list (just the input control, not the label) argument #4 is the preference name in the txp_prefs table (_timezone_key_ in this case) argument #5 is the preference's value (i.e. the chosen item) *event = _prefs_ui_ step = _is_dst_*
+ allows you to alter or replace the _DST enabled_ radio buttons (just the input control, not the label) argument #4 is the preference name in the txp_prefs table (_is_dst_ in this case) argument #5 is the preference's value (i.e. the numerical state of the radio button) *event = _prefs_ui_ step = _weeks_*
+ allows you to alter or replace the _Comments disabled after_ select list (just the input control, not the label) argument #4 is the preference name in the txp_prefs table (_comments_disabled_after_ in this case) argument #5 is the preference's value (i.e. the numerical value of the selected item; in this case the number of days to keep commenting open) *event = _prefs_ui_ step = _custom_set_*
+ allows you to alter or replace the Custom Field text boxes on the Advanced Prefs panel (just the input controls, not the labels). Each text box is called separately; you distinguish between them using argument #4 argument #4 is the preference name in the txp_prefs table (_custom_set_N_ by default, where _N_ is the custom field number) argument #5 is the preference's value (i.e. the name of the custom field) *event = _prefs_ui_ step = _theme_name_*
  allows you to alter or replace the _Admin theme_ select list on the Advanced Prefs panel (just the input control, not the label)
 
 h3(sectionedit8#theme_callbacks). Theme callbacks
 
 The following callbacks are all usable to alter various elements within admin-side themes.
 
-h4(#code_lib_txplib_themephp_code). &lt;code&gt;lib/txplib&#95;theme.php&lt;/code&gt;
+h4(#code_lib_txplib_themephp_code). &lt;code&gt;lib/txplib_theme.php&lt;/code&gt;
 
-*event = _admin&#95;side_ step = _theme&#95;name_*
+*event = _admin_side_ step = _theme_name_*
  allows you to alter a theme's name when it is being initialised there is no argument #4
 
-h4(#code_lib_txplib_headphp_code1). &lt;code&gt;lib/txplib&#95;head.php&lt;/code&gt;
+h4(#code_lib_txplib_headphp_code1). &lt;code&gt;lib/txplib_head.php&lt;/code&gt;
 
-*event = _admin&#95;side_ step = _header_*
+*event = _admin_side_ step = _header_*
  allows you to replace the standard pagetop header with something of your choosing. Theme authors do this by writing a
 
 bc(code). header()
@@ -393,24 +393,24 @@ bc(code). header()
 
 function in their theme's PHP file there is no argument #4
 
-h4(#code_lib_txplib_htmlphp_code1). &lt;code&gt;lib/txplib&#95;html.php&lt;/code&gt;
+h4(#code_lib_txplib_htmlphp_code1). &lt;code&gt;lib/txplib_html.php&lt;/code&gt;
 
-*event = _admin&#95;side_ step = _footer_*
- allows you to replace the standard end&#95;page footer with something of your choosing. Theme authors do this by writing a
+*event = _admin_side_ step = _footer_*
+ allows you to replace the standard end_page footer with something of your choosing. Theme authors do this by writing a
 
 bc(code). footer()
 
 
-function in their theme's PHP file there is no spoon *event = _some&#95;event&#95;ui_ step = _upload&#95;form_*
- allows you to alter or replace Textpattern's standard upload forms throughout the admin side _some&#95;event_ is the name of the event on the panel upon which the input form appears (e.g. on the Files panel, the event is 'file' so the
+function in their theme's PHP file there is no spoon *event = _some_event_ui_ step = _upload_form_*
+ allows you to alter or replace Textpattern's standard upload forms throughout the admin side _some_event_ is the name of the event on the panel upon which the input form appears (e.g. on the Files panel, the event is 'file' so the
 
 bc(code). pluggable_ui()
 
 
-event name is _file&#95;ui_) argument #4 contains the remainder of the arguments to the
+event name is _file_ui_) argument #4 contains the remainder of the arguments to the
 
 bc(code). upload_form()
 
 
-function, i.e. 'label', 'pophelp', 'step', 'event', 'id', 'max&#95;file&#95;size', 'label&#95;id' and 'class'.
+function, i.e. 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class'.
 

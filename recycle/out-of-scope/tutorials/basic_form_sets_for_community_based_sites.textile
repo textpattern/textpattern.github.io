@@ -8,25 +8,25 @@ h4(#introduction). Introduction
 # As promised earlier, this article will be a brief explanation of how "Godbit.com]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:www.godbit.com runs â€œunder the hood,â€? so to speak. One of the great things about CSS, HTML and JavaScript is that they are public facing, meaning if you see something that is cool, itâ€™s pretty easy to reverse engineer and figure out how itâ€™s done. This is also the drawback, because people take it a step further into outright stealing.
 # On the flip side of that coin are server-side technologies such as "PHP]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:php.net or proprietary CMS code. It is often tough to learn how various peopleâ€™s projects are done, because by the time the code gets to your browser, it has been transformed into straight HTML. In this case, weâ€™ll be talking about CMS code, but of course itâ€™s from the open-source project Textpattern. Lucky for our readership, my parents taught me to share, and I want your sites to be nice.
 # Please note that the basics of how to set up and use Textpattern are beyond the scope of this article. Likewise, I am not going to cover all of the syntax since that is done in the "Resources]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:textpattern.org + "Wiki]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:textpattern.net_wiki_index.php&title=Index. All Iâ€™m going to do here is provide you with all of the templates that drive Godbit, and let you sort out the rest. I am presupposing that you know how to at least get Textpattern up and running.
-# Thereâ€™s really no effective way to show huge chunks of Textpattern code in the body of an article, because it would be tedious, and Textpattern would try to convert it to HTML. So, Iâ€™ve done the next best thing and made each page template and form into a text file. Since some of the Forms templates are named the same as the Pages (such as default), I have prefixed the files with either F&#95; or P&#95; depending on the type. Also note that intermixed is various plugin syntax, as well as PHP from "PunBB]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:punbb.org. I left it unaltered, just in case it proves useful.
+# Thereâ€™s really no effective way to show huge chunks of Textpattern code in the body of an article, because it would be tedious, and Textpattern would try to convert it to HTML. So, Iâ€™ve done the next best thing and made each page template and form into a text file. Since some of the Forms templates are named the same as the Pages (such as default), I have prefixed the files with either F_ or P_ depending on the type. Also note that intermixed is various plugin syntax, as well as PHP from "PunBB]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:punbb.org. I left it unaltered, just in case it proves useful.
 
 h4(#plugins_and_forms). Plugins and Forms
 
 # In case you are curious, here are the plugins that are used on this website:
 
-* "ajw&#95;comments&#95;feed]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:compooter.org_article_140_textpattern-plugin-ajw-comments-feed
-* "ajw&#95;comment&#95;num]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:compooter.org_article_109_textpattern-plugin-ajw-comment-num
-* "kgr&#95;safe&#95;excerpt]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:www.raschke.net_kurt_software_kgr_safe_excerptkgr_safe_excerpt
-* "rss&#95;admin&#95;db&#95;manager]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:www.wilshireone.com_textpattern-plugins_rss_admin_db_manager
-* "rss&#95;suparchive]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:www.wilshireone.com_textpattern-plugins_rss-suparchive
-* "zem&#95;contact&#95;reborn]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:thebombsite.com_txpplugins_408
-* "zem&#95;contact&#95;lang]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:thebombsite.com_txpplugins_412
-* "pap&#95;contact&#95;cleaner]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:textpattern.org_plugins_703_pap_contact_cleaner
+* "ajw_comments_feed]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:compooter.org_article_140_textpattern-plugin-ajw-comments-feed
+* "ajw_comment_num]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:compooter.org_article_109_textpattern-plugin-ajw-comment-num
+* "kgr_safe_excerpt]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:www.raschke.net_kurt_software_kgr_safe_excerptkgr_safe_excerpt
+* "rss_admin_db_manager]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:www.wilshireone.com_textpattern-plugins_rss_admin_db_manager
+* "rss_suparchive]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:www.wilshireone.com_textpattern-plugins_rss-suparchive
+* "zem_contact_reborn]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:thebombsite.com_txpplugins_408
+* "zem_contact_lang]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:thebombsite.com_txpplugins_412
+* "pap_contact_cleaner]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:textpattern.org_plugins_703_pap_contact_cleaner
 
 h4(#resources). Resources
 
-# Note: The plugins named â€œrss&#95;â€? have nothing to do with RSS feeds. The authorâ€™s name is Rob S. Sable. Also, rss&#95;admin&#95;db&#95;manager is not essential to the functioning of Godbitâ€™s front-end. That plugin simply allows me to one-click backup the entire site. The JavaScript in the default article form is used for our tutorial code highlighting. Because of a little txp:if&#95;category conditional, the four JS files can be toggled on/off by simply choosing â€œcodeâ€? as the 2nd article category. Hopefully these files will be helpful to you.
-# To start to get a feel for the IA, you can download this Template Set that the Godbit Community Site is based on. "Code: TXP&#95;Godbit.zip (12kb) â€“ for v4.0.4]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:godbit.com_files_txp_godbit.zipdownload
+# Note: The plugins named â€œrss_â€? have nothing to do with RSS feeds. The authorâ€™s name is Rob S. Sable. Also, rss_admin_db_manager is not essential to the functioning of Godbitâ€™s front-end. That plugin simply allows me to one-click backup the entire site. The JavaScript in the default article form is used for our tutorial code highlighting. Because of a little txp:if_category conditional, the four JS files can be toggled on/off by simply choosing â€œcodeâ€? as the 2nd article category. Hopefully these files will be helpful to you.
+# To start to get a feel for the IA, you can download this Template Set that the Godbit Community Site is based on. "Code: TXP_Godbit.zip (12kb) â€“ for v4.0.4]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:godbit.com_files_txp_godbit.zipdownload
 # This Tutorial and much more will also be available in the forthcoming Book "Textpattern Solutions]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:www.friendsofed.com_book.html&isbn=1590598326
 
 h4(#copyright_notice). Copyright Notice

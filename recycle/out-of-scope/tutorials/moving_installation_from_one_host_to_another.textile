@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 h3(sectionedit1#overview). Overview
 
@@ -76,13 +76,13 @@ $txpcfg['pass'] = 'your mysql password';
 
 $txpcfg['host'] = 'mysql.yourname.com';
 
-$txpcfg['table&#95;prefix'] = _;_
+$txpcfg['table_prefix'] = _;_
 
 The following two values may require you to contact Support to find them out:
 
-$txpcfg['txpath'] = '/home/.some&#95;name/site&#95;username/yourname.com/textpattern';
+$txpcfg['txpath'] = '/home/.some_name/site_username/yourname.com/textpattern';
 
-$txpcfg['doc&#95;root'] = '/home/.some&#95;name/site&#95;username/yourname.com/';
+$txpcfg['doc_root'] = '/home/.some_name/site_username/yourname.com/';
 
 ?&gt;
 
@@ -94,7 +94,7 @@ h5(#handling_the_password). Handling the Password
 
 Changing your password after migrating your installation or upgrading MySQL.
 
-1) From the drop down menu on the left select your txp&#95; database. A list of tables in that db will appear directly below the drop down menu. Near the bottom of that list you should see your txp&#95;user table. Click on that table.
+1) From the drop down menu on the left select your txp_ database. A list of tables in that db will appear directly below the drop down menu. Near the bottom of that list you should see your txp_user table. Click on that table.
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:image1chgpass.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:image1chgpass.gif
 
@@ -140,7 +140,7 @@ Probably the number one thing that gets people hung-up when physically moving an
 * when you log in to the textpattern admin panel, you will not be able to access some of your tabs (except perhaps the *_Content_* tab),
 * and the following error message, or something similar to it, will appear at the top of the page...
 
-“Warning: Cannot modify header information - headers already sent by (output started at _/home/user/public&#95;html/textpattern/config.php:13)_ in _/home/user/public&#95;html/textpattern/publish.php_ on line 170”
+“Warning: Cannot modify header information - headers already sent by (output started at _/home/user/public_html/textpattern/config.php:13)_ in _/home/user/public_html/textpattern/publish.php_ on line 170”
 
 To collectively fix these problems, open up your _config.php_ file and remove any trailing white space that has been automagically added to the end of the file.
 

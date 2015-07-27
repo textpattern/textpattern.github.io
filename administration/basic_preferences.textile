@@ -1,8 +1,8 @@
-\n"mininav&#95;admin&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
+\n"mininav_admin_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:basic-prefs.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:basic-prefs.png
 
-The "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences tab is the first most important panel in a new Textpattern site; it (along with "advanced&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences and "language&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences) is where you configure just about every aspect of how you want your site to function on a regular basis.
+The "basic_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences tab is the first most important panel in a new Textpattern site; it (along with "advanced_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences and "language_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences) is where you configure just about every aspect of how you want your site to function on a regular basis.
 
 The Basic Preferences panel is organized into two regions: “Publish” and “Comments”. Both regions control the global site settings for article publishing and article commenting, respectively.
 
@@ -128,7 +128,7 @@ h4(#permanent_link_mode). Permanent link mode
 
 The _Permanent link mode_ drop-down list is intended to make it easier to establish flexible (or "Clean URLs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#clean_urls) in your site, which in turn is a nice usability feature for your Web site visitors. The drop-down list currently provides six different options (Figure 5), one for “messy” URLs (which is the option for NOT having clean URLs), and five for clean URLs; each having a specific path format.
 
-If you want clean URLs to work for your site, this is the very first step to making it happen, by selecting one of the options other than “messy.” However, it is usually not as simple as just selecting one of these options to make clean URLs work. Getting clean URLs to work may take a combination of steps, addressed in "managing&#95;clean&#95;urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls.
+If you want clean URLs to work for your site, this is the very first step to making it happen, by selecting one of the options other than “messy.” However, it is usually not as simple as just selecting one of these options to make clean URLs work. Getting clean URLs to work may take a combination of steps, addressed in "managing_clean_urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls.
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-prefs-publ-permlink.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-prefs-publ-permlink.gif
 
@@ -138,7 +138,7 @@ Textile is a meta-formatting language that lets site authors format work without
 
 h4(#logging). Logging
 
-The “Logging” control allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the "visitor&#95;logs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs panel for you to review. This _Logging_ control is a drop-down menu with three options (Figure 6).
+The “Logging” control allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the "visitor_logs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs panel for you to review. This _Logging_ control is a drop-down menu with three options (Figure 6).
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-prefs-publ-logging.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-prefs-publ-logging.gif
 

@@ -23,7 +23,7 @@ Static pages are composed by means of one static page template _per layout_ whic
 Articles flagged as “sticky” differ from regular articles in the following aspects:
 
 <ol>
-<li><p>They will not show up in a regular article or article&#95;custom list. Use</p>
+<li><p>They will not show up in a regular article or article_custom list. Use</p>
 bc(code). <[[txp:article_:|txp:article status="sticky" /]]>
 
 
@@ -94,7 +94,7 @@ bc(code). Admin panel > content > write
 bc(code). Admin panel > presentation > forms
 
 
-<p>). You can do whatever you'd like in the form to make it display what you wish, but for the purposes of this example we will use &lt;"title&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:title:start&gt; and &lt;"body&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:body:start&gt;.</p></li>
+<p>). You can do whatever you'd like in the form to make it display what you wish, but for the purposes of this example we will use &lt;"title_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:title:start&gt; and &lt;"body_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:body:start&gt;.</p></li>
 <li>Save this new form as *static*. When applying this form to an article, the article will display with only a title and a text body.</li>
 <li>Choose articles (Option 1)
 <ol>
@@ -107,20 +107,20 @@ bc(code). ...mydomain.com/textpattern/index.php?event=article&step=edit&ID=3
 
 
 <p>). Make a note of each article's *ID* number. In our example, the ID number is 3.</p></li>
-<li>Insert each article into your page template (Admin panel &gt; presentation &gt; pages), using the &lt;"article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt; tag. &lt;"article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt; accepts a number of attributes, including *id* (here's where you enter each id from earlier) and *form* (from earlier, this was “static”).</li>
+<li>Insert each article into your page template (Admin panel &gt; presentation &gt; pages), using the &lt;"article_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt; tag. &lt;"article_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt; accepts a number of attributes, including *id* (here's where you enter each id from earlier) and *form* (from earlier, this was “static”).</li>
 </ol>
 </li>
 <li>Choose articles (Option 2)
 <ol>
 <li>Flag each chosen article as “sticky”.</li>
-<li>Insert articles into the section of your page template delimited by &lt;"if&#95;article&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_list&gt; (Admin panel &gt; presentation &gt; pages), using the &lt;"article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt; tag.</li>
+<li>Insert articles into the section of your page template delimited by &lt;"if_article_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_list&gt; (Admin panel &gt; presentation &gt; pages), using the &lt;"article_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt; tag.</li>
 </ol>
 </li>
 </ol>
 
-Set &lt;"article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt;'s *status* attribute to “sticky”, *form* to the name you gave the form created in step 3 (this was “static”). Add attribute values for *sortdir* and *sortby* according to the display order you'd wish to achieve.
+Set &lt;"article_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt;'s *status* attribute to “sticky”, *form* to the name you gave the form created in step 3 (this was “static”). Add attribute values for *sortdir* and *sortby* according to the display order you'd wish to achieve.
 
-# Including articles from other sections is simple: use &lt;"article&#95;custom&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article_custom:start&gt; instead of &lt;"article&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt;.
+# Including articles from other sections is simple: use &lt;"article_custom_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article_custom:start&gt; instead of &lt;"article_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt;.
 
 h3(sectionedit3#examples). Examples
 

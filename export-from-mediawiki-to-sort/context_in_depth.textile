@@ -105,7 +105,7 @@ Txp version 4.3.0 introduced new context-related behavior, as my "Txp gallery de
 * "$":http://ipsedixit.net/txp_gallery/category/image/sleep/
 * "$":http://ipsedixit.net/txp_gallery/?c=sleep&context=image
 
-Note: the home page for site above is "$":http://ipsedixit.net/txp_gallery/. I.e., “txp&#95;gallery” is not part of the context.
+Note: the home page for site above is "$":http://ipsedixit.net/txp_gallery/. I.e., “txp_gallery” is not part of the context.
 
 bc(code). context=image
 

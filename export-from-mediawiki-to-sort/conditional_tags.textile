@@ -69,25 +69,25 @@ apples!
 
 h3(sectionedit3#conditional_article_tags). Conditional Article Tags
 
-* &lt;"if&#95;article&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_list&gt; ... &lt;/"if&#95;article&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_list&gt;
-* &lt;"if&#95;individual&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_individual_article&gt; ... &lt;/"if&#95;individual&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_individual_article&gt;
-* &lt;"if&#95;first&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_first_article&gt; ... &lt;/"if&#95;first&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_first_article&gt;
-* &lt;"if&#95;last&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_last_article&gt; ... &lt;/"if&#95;last&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_last_article&gt;
-* &lt;"if&#95;different":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_different&gt; ... &lt;/"if&#95;different":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_different&gt;
-* &lt;"if&#95;article&#95;section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_section&gt; ... &lt;/"if&#95;article&#95;section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_section&gt;
-* &lt;"if&#95;article&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_category&gt; ... &lt;/"if&#95;article&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_category&gt;
-* &lt;"if&#95;section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_section&gt; ... &lt;/"if&#95;section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_section&gt;
-* &lt;"if&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_category&gt; ... &lt;/"if&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_category&gt;
-* &lt;"if&#95;excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_excerpt&gt; ... &lt;/"if&#95;excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_excerpt&gt;
-* &lt;"if&#95;custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_custom_field&gt; ... &lt;/"if&#95;custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_custom_field&gt;
+* &lt;"if_article_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_list&gt; ... &lt;/"if_article_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_list&gt;
+* &lt;"if_individual_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_individual_article&gt; ... &lt;/"if_individual_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_individual_article&gt;
+* &lt;"if_first_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_first_article&gt; ... &lt;/"if_first_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_first_article&gt;
+* &lt;"if_last_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_last_article&gt; ... &lt;/"if_last_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_last_article&gt;
+* &lt;"if_different":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_different&gt; ... &lt;/"if_different":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_different&gt;
+* &lt;"if_article_section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_section&gt; ... &lt;/"if_article_section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_section&gt;
+* &lt;"if_article_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_category&gt; ... &lt;/"if_article_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_category&gt;
+* &lt;"if_section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_section&gt; ... &lt;/"if_section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_section&gt;
+* &lt;"if_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_category&gt; ... &lt;/"if_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_category&gt;
+* &lt;"if_excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_excerpt&gt; ... &lt;/"if_excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_excerpt&gt;
+* &lt;"if_custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_custom_field&gt; ... &lt;/"if_custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_custom_field&gt;
 
 h3(sectionedit4#conditional_comments_tags). Conditional Comments Tags
 
-* &lt;"if&#95;comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments&gt; ... &lt;/"if&#95;comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments&gt;
-* &lt;"if&#95;comments&#95;allowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_allowed&gt; ... &lt;/"if&#95;comments&#95;allowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_allowed&gt;
-* &lt;"if&#95;comments&#95;disallowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_disallowed&gt; ... &lt;/"if&#95;comments&#95;disallowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_disallowed&gt;
+* &lt;"if_comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments&gt; ... &lt;/"if_comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments&gt;
+* &lt;"if_comments_allowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_allowed&gt; ... &lt;/"if_comments_allowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_allowed&gt;
+* &lt;"if_comments_disallowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_disallowed&gt; ... &lt;/"if_comments_disallowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_disallowed&gt;
 
 h3(sectionedit5#conditional_search_tags). Conditional Search Tags
 
-* &lt;"if&#95;search":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_search&gt; ... &lt;"else&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:else:start&gt; ... &lt;/"if&#95;search":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_search&gt; double conditional tag to allow you to customise search results template and main page, even if both share the same template
+* &lt;"if_search":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_search&gt; ... &lt;"else_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:else:start&gt; ... &lt;/"if_search":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_search&gt; double conditional tag to allow you to customise search results template and main page, even if both share the same template
 

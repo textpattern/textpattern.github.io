@@ -2,11 +2,11 @@
 
 h3(sectionedit1#important_note). Important note
 
-*This page is written with respect to Textpattern release RC1*. This page is only temporary until Textpattern v 1.0 final is released, at which time this page will be deleted and you will be directed to the "preferences&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=preferences_subtab page where the new panel for v 1.0 is discussed accordingly.
+*This page is written with respect to Textpattern release RC1*. This page is only temporary until Textpattern v 1.0 final is released, at which time this page will be deleted and you will be directed to the "preferences_subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=preferences_subtab page where the new panel for v 1.0 is discussed accordingly.
 
 h3(sectionedit2#overview). Overview
 
-After you have successfully installed Textpattern rc1 in a desired directory on your Web server, the first thing you need to do is fill in a few details about where your installation is located (absolutely necessary for Textpattern to function correctly) and how you want some of the features to appear or function. Appendex A, "textpattern&#95;administration&#95;interface":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_administration_interface, of _TextBook_ provides a complete description of the entire admin interface pages which you can use at your convenience for easy reference; however, now is the time to address the _Admin &gt; Preferences_ subtab.
+After you have successfully installed Textpattern rc1 in a desired directory on your Web server, the first thing you need to do is fill in a few details about where your installation is located (absolutely necessary for Textpattern to function correctly) and how you want some of the features to appear or function. Appendex A, "textpattern_administration_interface":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_administration_interface, of _TextBook_ provides a complete description of the entire admin interface pages which you can use at your convenience for easy reference; however, now is the time to address the _Admin &gt; Preferences_ subtab.
 
 h3(sectionedit3#site_preferences). Site Preferences
 

@@ -44,19 +44,19 @@ h3(sectionedit3#active_projects). Active projects
 
 Add title of your new project page below. (Inactive or abandoned projects should be moved to the *Old projects* section.)
 
-* "infographic&#95;data&#95;pooling":/home/www/zendstudio/dokuwiki/bin/doku.php?id=infographic_data_pooling
+* "infographic_data_pooling":/home/www/zendstudio/dokuwiki/bin/doku.php?id=infographic_data_pooling
 
 h3(sectionedit4#inactive_projects). Inactive projects
 
 Abandoned projects that may or may not be worth anything anymore. If one is salvageable, feel free to revive it, _loudly_. If you know it's too far gone, move it to the *Dead* list.
 
-* "multilingual&#95;publishing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=multilingual_publishing
-* "admin-side&#95;redevelopment":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin-side_redevelopment
-* "zem&#95;event&#95;tag&#95;reference":/home/www/zendstudio/dokuwiki/bin/doku.php?id=zem_event_tag_reference
-* "naming&#95;conventions&#95;for&#95;template&#95;authors":/home/www/zendstudio/dokuwiki/bin/doku.php?id=naming_conventions_for_template_authors
+* "multilingual_publishing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=multilingual_publishing
+* "admin-side_redevelopment":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin-side_redevelopment
+* "zem_event_tag_reference":/home/www/zendstudio/dokuwiki/bin/doku.php?id=zem_event_tag_reference
+* "naming_conventions_for_template_authors":/home/www/zendstudio/dokuwiki/bin/doku.php?id=naming_conventions_for_template_authors
 * ???
 
 h3(sectionedit5#dead_projects_that_wiki_admins_need_to_remove). Dead projects that wiki admins need to remove
 
-* "textpattern&#95;community&#95;map&#95;project":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_community_map_project
+* "textpattern_community_map_project":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_community_map_project
 

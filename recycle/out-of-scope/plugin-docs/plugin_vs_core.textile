@@ -1,4 +1,4 @@
-\nWhen someone writes a "feature&#95;requests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feature_requests on the "appropriate forum":http://forum.textpattern.com/viewforum.php?id=2, an important thing to keep in mind is whether the feature should be a plugin, or be integrated into the core of Textpattern.
+\nWhen someone writes a "feature_requests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feature_requests on the "appropriate forum":http://forum.textpattern.com/viewforum.php?id=2, an important thing to keep in mind is whether the feature should be a plugin, or be integrated into the core of Textpattern.
 
 A “core” feature, is something that is avalaible natively within Textpattern, without any plugins involved. It has several advantages over a plugin:
 

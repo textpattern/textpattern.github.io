@@ -20,12 +20,12 @@ h5(#background_and_current_base_implementations_of_templating_work). Background 
 # The basic need for a naming convention has partly emerged, after various Tools, to work with template files have been created from the TXP Userbase.
 # These Tools do exist in various forms and for different reasons, either in the form of plugins, modifications of the Source code and as extensions of External TextEditors to also ease the work on Source code in general.
 
-h5(#understanding_templating_workflows_with_mcw_templates). Understanding templating workflows with mcw&#95;templates
+h5(#understanding_templating_workflows_with_mcw_templates). Understanding templating workflows with mcw_templates
 
 # Import and Export Session.
 
-# To maintain compatibilty with mcw&#95;templates for example, we have to distinguish between Import and export Sessions.
-# Performing an export session, mcw&#95;templates already prepends the form type delimiter on all form files that successfully got exported, while the file extension is configurable in the plugin itself.
+# To maintain compatibilty with mcw_templates for example, we have to distinguish between Import and export Sessions.
+# Performing an export session, mcw_templates already prepends the form type delimiter on all form files that successfully got exported, while the file extension is configurable in the plugin itself.
 # An Import Session of a Template Set can not be performed, if the form type delimiter prepended to the extension is missing. (That is how it works)
 
 h5(#current_convention_proposals). Current Convention Proposals
@@ -82,7 +82,7 @@ Things, that generally should be avoided:
 # White space characters in file and folder-names
 # Arbitrary and unnecessary Information in File and Form-names (Those can easily go inside the files themself as comments)
 # UTF characters that are not part of the ASCII ANSI range
-# Braces, hyphens, quotes or any other non&#95;word or non&#95;numerical characters
+# Braces, hyphens, quotes or any other non_word or non_numerical characters
 # Files, that are not properly UTF-8 encoded and old-style ISO doctype meta declarations in Page Templates.
 # Uppercasing,Titlecasing and Camelcasing of file and folder names. Lowercase file and folder names should be the prefered format, to avoid confusion and inconsistencies accross different OS platforms.
 
@@ -91,17 +91,17 @@ Things, that generally should be avoided:
 # All names lowercase.
 # No spaces
 # The folder names can simply be :`css`,`pages`, and `forms` and should be sibblings where the parent-folder could have the template name as folder-name.
-# It has been suggested, to move the textpattern Folder outside of the textpattern directory, to make maintenance of the TXP Source Code easier and more reliable. This example can be seen in a modified version of mcw&#95;templates "here]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:txpun.com_wiki_cms:templates
+# It has been suggested, to move the textpattern Folder outside of the textpattern directory, to make maintenance of the TXP Source Code easier and more reliable. This example can be seen in a modified version of mcw_templates "here]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:txpun.com_wiki_cms:templates
 
 h5(#to_consider). To Consider
 
-A Folder and File structure and convention like the one mentioned above, does successfully perform an Import session with mcw&#95;templates. If part of the conventions mentioned in section one are not met, it fails.
+A Folder and File structure and convention like the one mentioned above, does successfully perform an Import session with mcw_templates. If part of the conventions mentioned in section one are not met, it fails.
 
 h4(#resources). Resources
 
 h5(#existing_templating_tools). Existing Templating Tools
 
-"mcw&#95;templates by Mike West]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:mikewest.org_archive_mcwtemplates-v02
+"mcw_templates by Mike West]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:mikewest.org_archive_mcwtemplates-v02
 
 "cms templates]":/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:txpun.com_wiki_cms:templates
 

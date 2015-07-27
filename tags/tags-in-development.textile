@@ -1,6 +1,6 @@
 h1. Tags in development [todo:pw]
 
-This page represents tags and attributes added in development versions of Textpattern since the the latest, stable release ("txp&#95;current&#95;version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version), whether completely new tags or existing tags that are undergoing modifications. Because we are talking about development, the information here is subject to change.
+This page represents tags and attributes added in development versions of Textpattern since the the latest, stable release ("txp_current_version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version), whether completely new tags or existing tags that are undergoing modifications. Because we are talking about development, the information here is subject to change.
 
 If you wish to write the documentation for new tags in preparation for the next release, please restrict them to the *category:Future Tags* only until the development version becomes stable whereby they can be recategorised in the correct location(s). At that point, remember to also check any example syntax in modified tags to ensure they still follow recommended use and will still work as before.
 
@@ -9,18 +9,18 @@ h4(#dev_branch_4x). Dev Branch (4.x)
 h5(#new_tags). New Tags
 
 * "authors":/home/www/zendstudio/dokuwiki/bin/doku.php?id=authors
-* "if&#95;first&#95;image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_image
-* "if&#95;last&#95;image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_image
-* "if&#95;first&#95;file":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_file
-* "if&#95;last&#95;file":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_file
-* "if&#95;first&#95;link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_link
-* "if&#95;last&#95;link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_link
-* "if&#95;yield":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_yield
+* "if_first_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_image
+* "if_last_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_image
+* "if_first_file":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_file
+* "if_last_file":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_file
+* "if_first_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_link
+* "if_last_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_link
+* "if_yield":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_yield
 
 h5(#modified_tags). Modified Tags
 
 <ul>
-<li><p>"category&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list: add</p>
+<li><p>"category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list: add</p>
 bc(code). offset
 
 
@@ -29,7 +29,7 @@ bc(code). limit
 
 
 <p>attributes</p></li>
-<li><p>"category&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list:</p>
+<li><p>"category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list:</p>
 bc(code). parent
 
 
@@ -43,7 +43,7 @@ bc(code). id
 
 
 <p>attributes</p></li>
-<li><p>"section&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list: add</p>
+<li><p>"section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list: add</p>
 bc(code). offset
 
 

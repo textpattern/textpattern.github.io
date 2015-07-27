@@ -8,8 +8,8 @@ One more thing, as any smart web site owner should know, using plugins (however 
 
 h3(sectionedit1#plugin_tables). Plugin Tables
 
-* "plugins&#95;alphabetical&#95;by&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name
-* "plugins&#95;grouped&#95;by&#95;purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose
+* "plugins_alphabetical_by_name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name
+* "plugins_grouped_by_purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose
 
 h3(sectionedit2#table_editing_instructions). Table Editing Instructions
 
@@ -19,8 +19,8 @@ Below are the rest of the instructions for adding to - and upkeeping - the plugi
 
 h4(#table_specific_instructions). Table Specific Instructions
 
-# For the table, "plugins&#95;alphabetical&#95;by&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name, add new rows in alphabetical order by the plugin name.
-# For the tables, "plugins&#95;grouped&#95;by&#95;purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose, add new tables, or table sections, as necessary in a given group category. Add a new category if needed. For each table, add plugin rows to the relevant group, and then alphabetical by plugin name in the group.
+# For the table, "plugins_alphabetical_by_name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name, add new rows in alphabetical order by the plugin name.
+# For the tables, "plugins_grouped_by_purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose, add new tables, or table sections, as necessary in a given group category. Add a new category if needed. For each table, add plugin rows to the relevant group, and then alphabetical by plugin name in the group.
 
 h4(#common_instructions). Common Instructions
 
@@ -40,7 +40,7 @@ bc(code). [http://domain.tld/article-title Article Title]
 bc(code). plugin_file_name-n.n.tld
 
 
-<p>where “*plugin&#95;file&#95;name*” is the name of the plugin file, “*n.n*” is the plugin file version, and “*.tld*” is the file extension (either .txt or .zip); e.g., *ajw&#95;clean&#95;feed-0.2.txt*. When asked for a file description in the upload process, at the very least add “*Plugin file*,” though a sentence about the plugin would be better. (Note: the wiki automatically makes the first character of the file name capitalized and loads these files into the “images” directory. There's no getting around either situation, so don't get confused nor go on a rampage - just ignore it.) If you uploading a zip file, you may see a warning that the “image” file is exeeding a recommended max byte size. Just ignore this message and upload anyway.</p></li>
+<p>where “*plugin_file_name*” is the name of the plugin file, “*n.n*” is the plugin file version, and “*.tld*” is the file extension (either .txt or .zip); e.g., *ajw_clean_feed-0.2.txt*. When asked for a file description in the upload process, at the very least add “*Plugin file*,” though a sentence about the plugin would be better. (Note: the wiki automatically makes the first character of the file name capitalized and loads these files into the “images” directory. There's no getting around either situation, so don't get confused nor go on a rampage - just ignore it.) If you uploading a zip file, you may see a warning that the “image” file is exeeding a recommended max byte size. Just ignore this message and upload anyway.</p></li>
 <li><p>*Linking Files in Table:* Your files will be linked in the “Current” section of the plugin tables (be sure to notate the current plugin version too). There's a place for text files and a place for zip files; you only need to use one or the other. In the cell not used, add two dashes. Links use wiki syntax, which keeps code cleaner. The syntax will be exactly the same for each file type except you will changes the file extension as needed. Following is an example of the syntax to use for each link:</p>
 bc(code). [[media:plugin_file_name-n.n.txt|txt]]
 
@@ -48,17 +48,17 @@ bc(code). [[media:plugin_file_name-n.n.txt|txt]]
 bc(code). [[media:plugin_file_name-n.n.zip|zip]]
 
 
-<p>again where “plugin&#95;file&#95;name” is the actual file name, and “n.n” is the version number.</p></li>
+<p>again where “plugin_file_name” is the actual file name, and “n.n” is the version number.</p></li>
 <li><p>*File Management Link:* Next to the link(s) just added, add the following link syntax:</p>
 bc(code). ([[:image:plugin_file_name-n.n.tld|man]])
 
 
-<p>(note the beginning colon is necessary) and again replace “plugin&#95;file&#95;name,” “n.n,”, and “.tld” with the corresponding information. This will add a link to the edit page for the file where it can be replaced, edited, or deleted altogether; it's a nice file management feature the wiki provides (*man=manage*).</p></li>
+<p>(note the beginning colon is necessary) and again replace “plugin_file_name,” “n.n,”, and “.tld” with the corresponding information. This will add a link to the edit page for the file where it can be replaced, edited, or deleted altogether; it's a nice file management feature the wiki provides (*man=manage*).</p></li>
 <li><p>*Documentation:* For the Documentation field, create a new link using the following wiki syntax</p>
 bc(code). [[Docs for plugin_file_name Plugin|yes]]
 
 
-<p>where “plugin&#95;file&#95;name” is the actual title of the plugin (*important: do not add the version number in this case, just the plugin title only!*). What this will do is create a new wiki page with the descriptive title, but show it as a link in the tables as “yes”. Then follow the link (it will appear in red text) and add whatever kind of documentation you want to the page. This doesn't have to be the documentation that comes with the plugin (but can certainly include that), but might also be additional examples of use by commumity members. Anything that would help users understand the plugin better. Images too for that matter could be upload and embedded in the documentation page. If you do start content on the documentation page, copy the code for the breadcrumb navigation at the top of this page and paste into the top of the new documentation page.</p></li>
+<p>where “plugin_file_name” is the actual title of the plugin (*important: do not add the version number in this case, just the plugin title only!*). What this will do is create a new wiki page with the descriptive title, but show it as a link in the tables as “yes”. Then follow the link (it will appear in red text) and add whatever kind of documentation you want to the page. This doesn't have to be the documentation that comes with the plugin (but can certainly include that), but might also be additional examples of use by commumity members. Anything that would help users understand the plugin better. Images too for that matter could be upload and embedded in the documentation page. If you do start content on the documentation page, copy the code for the breadcrumb navigation at the top of this page and paste into the top of the new documentation page.</p></li>
 <li><p>*Forum Thread:* If the plugin has a Textpattern Support Forum thread started for it, provide the thread ID number and make it a link to the associated thread. Use the external link syntax:</p>
 bc(code). [http://forum.textpattern.com/viewtopic.php?id=xxxxxx xxxxxx]
 

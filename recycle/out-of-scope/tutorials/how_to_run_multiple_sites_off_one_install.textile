@@ -1,6 +1,6 @@
 \n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
 
-"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 Please note: While the approach documented here does work, bear in mind that as of Textpattern 4.2.0 there is built-in support for running multiple sites from a single installation. Consult the README.txt file in the *sites* directory of your TXP install for more information.
 
@@ -35,7 +35,7 @@ bc(code). define("txpath", $txpcfg['txpath']);
 <li>airweek2006/textpattern/config.php</li>
 <li>airweek2006/textpattern/textpattern.css</li>
 <li>airweek2006/textpattern/textpattern,js</li>
-<li>airweek2006/textpattern/txp&#95;img/&#42;.&#42;</li>
+<li>airweek2006/textpattern/txp_img/&#42;.&#42;</li>
 <li>airweek2006/files/&#42;.&#42; (if it exists).</li>
 </ul>
 </li>

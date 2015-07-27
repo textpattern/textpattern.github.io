@@ -2,16 +2,16 @@
 
 h3(sectionedit1#chapter_1_overview). Chapter 1 Overview
 
-Welcome to Textpattern. If you are thinking of using Textpattern as your next (or first) system for content publishing online, then you have come to the right place. This chapter is here to provide you with a little more information about Textpattern before you make any moves to start working with it. Here you will find information about licensing, Textpattern features/capabilities, extension possibilities, and anyting else that authors might find to share. When you are ready to try Textpattern for yourself, have a look at Chapter 2: "textpattern&#95;acquisition&#95;and&#95;installation":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_acquisition_and_installation.
+Welcome to Textpattern. If you are thinking of using Textpattern as your next (or first) system for content publishing online, then you have come to the right place. This chapter is here to provide you with a little more information about Textpattern before you make any moves to start working with it. Here you will find information about licensing, Textpattern features/capabilities, extension possibilities, and anyting else that authors might find to share. When you are ready to try Textpattern for yourself, have a look at Chapter 2: "textpattern_acquisition_and_installation":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_acquisition_and_installation.
 
 h3(sectionedit2#chapter_1_contents). Chapter 1 Contents
 
-* *1.1)*   "textpattern&#95;licensing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_licensing
-* *1.2)*   "textpattern&#95;capabilities&#95;and&#95;features":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_capabilities_and_features
+* *1.1)*   "textpattern_licensing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_licensing
+* *1.2)*   "textpattern_capabilities_and_features":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_capabilities_and_features
 
 4.0 OK
 
-* *1.3)*   "textpattern&#95;semantic&#95;model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model
+* *1.3)*   "textpattern_semantic_model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model
 
 In progress
 

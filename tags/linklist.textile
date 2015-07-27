@@ -17,8 +17,8 @@ h3(sectionedit1#attributes). Attributes
 Tag will accept the following attributes (*case-sensitive*):
 
 *"author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#author=“author login name”*
- Restrict to links with the specified author. Default: unset. *"auto&#95;detect":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#auto_detect=“string context”*
- List of Textpattern contexts to consider when automatically searching for links. If you wish to turn off the automatic check, set this to *auto&#95;detect=““*. You can choose from the following contexts: *category* to look in the URL for a category list *author* to look in the URL for an author list Default: *category, author* *"category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#category=“category name(s)”*
+ Restrict to links with the specified author. Default: unset. *"auto_detect":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#auto_detect=“string context”*
+ List of Textpattern contexts to consider when automatically searching for links. If you wish to turn off the automatic check, set this to *auto_detect=““*. You can choose from the following contexts: *category* to look in the URL for a category list *author* to look in the URL for an author list Default: *category, author* *"category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#category=“category name(s)”*
  Restrict to links from specified category/ies. Values: (comma separated list of) category name(s). Note: category names may be different to the Title you typed when you created the category, as the names are sanitized for URL use. Check the "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories tab to ensure you are using the correct names Default: unset. *"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“form name”*
  Use specified form. Default:
 
@@ -108,7 +108,7 @@ bc(code). linksort asc
 
 .
 
-"common&#95;presentational&#95;attributes":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_presentational_attributes
+"common_presentational_attributes":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_presentational_attributes
 
 h3(sectionedit2#examples). Examples
 
@@ -129,7 +129,7 @@ bc(code). <txp:if_category name="100">
 </txp:if_category>
 
 
-Other tags used: "if&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_category
+Other tags used: "if_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_category
 
 h4(#example_3links_form_default_links). Example 3: Links Form (default [[links]])
 

@@ -16,7 +16,7 @@ bc(code). <txp:section_list />
 
 
 <p>tag, which will output an href list of site sections</p></li>
-<li>Added an option in admin&#95;config to toggle changing the site's 'last updated' stamp whenever a new comment is added</li>
+<li>Added an option in admin_config to toggle changing the site's 'last updated' stamp whenever a new comment is added</li>
 <li>Added an option to list the count of articles using each article category in the Organise tab</li>
 <li>Added an option to toggle showing an article's current comment count in XML feed titles</li>
 <li><p>Added simple image gallery implementation, using</p>
@@ -44,7 +44,7 @@ bc(code). wraptag
 
 <p>logic to prevent empty tags from being generated (thanks John Serris)</p></li>
 <li>Only one section at a time can now be 'selected by default' when composing a new article</li>
-<li>Removed an erroneous 'malformed tag' message that showed up when using password&#95;protect</li>
+<li>Removed an erroneous 'malformed tag' message that showed up when using password_protect</li>
 <li>Textile was incorrectly handling article titles at Publish and Save - this is now fixed</li>
 </ul>
 

@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 _This is an excerpt of "this tutorial":http://fuelyourcoding.com/create-a-simple-portfolio-website-and-blog-with-textpattern/ by "Marie Poulin":http://www.mariepoulin.com/. The full article includes downloadable files and step-by-step instructions for creating a fully-functional portfolio and blog site, explaining many basic concepts along the way._
 

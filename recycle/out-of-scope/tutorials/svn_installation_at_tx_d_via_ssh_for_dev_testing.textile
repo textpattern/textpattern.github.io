@@ -1,4 +1,4 @@
-\n"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Designer/Developer Interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests &#124; "svn&#95;installation&#95;at&#95;tx&#95;d&#95;via&#95;ssh&#95;for&#95;dev&#95;testing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_installation_at_tx_d_via_ssh_for_dev_testing
+\n"main_page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Designer/Developer Interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests &#124; "svn_installation_at_tx_d_via_ssh_for_dev_testing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_installation_at_tx_d_via_ssh_for_dev_testing
 
 h3(sectionedit1#overview). Overview
 
@@ -61,7 +61,7 @@ bc(code). ls
 
 *Note:*
 
-* The first will tell you where you are at via a path, which should be _/home/yourusername_/, where “username” is your TextDrive account username. &#42; The second will list all the directories on the server at the level you are currently at, which should be root of your server account. One of the directories (the one in which your installation is installed somewhere) is _public&#95;html_.
+* The first will tell you where you are at via a path, which should be _/home/yourusername_/, where “username” is your TextDrive account username. &#42; The second will list all the directories on the server at the level you are currently at, which should be root of your server account. One of the directories (the one in which your installation is installed somewhere) is _public_html_.
 
 # If your Textpattern is installed in your domain root, type the following and hit Enter...
 
@@ -84,7 +84,7 @@ When initializing Subversion for the first time with an existing site, it's not 
 bc(code). mv textpattern textpattern-old
 
 
-If you have any custom mod&#95;rewrite rules in your _.htaccess_ file, then move it aside as well...
+If you have any custom mod_rewrite rules in your _.htaccess_ file, then move it aside as well...
 
 bc(code). mv .htaccess .htaccess-old
 
@@ -123,7 +123,7 @@ If that does not work for some reason, then you may need to open up a _Secure Fi
 # Handling the _.htaccess_ File:
 ## Check to see if you even have the _.htaccess_ file in your install location. Because using the “ls” command will not reveal your _.htaccess_ file in the SSH client, you will need to open an SFTP client and look at the directory contents that way.
 ## If you don't see the _.htaccess_ file, you'll need to retrieve it from the source location using SFTP.
-## Finally, if your old _.htaccess_ file had custom modifications you want to retain (e.g., custom _mod&#95;rewrite_), you will need to copy and paste those customizations from your old file to the *top* of the new one without overwriting the contents of the new files.
+## Finally, if your old _.htaccess_ file had custom modifications you want to retain (e.g., custom _mod_rewrite_), you will need to copy and paste those customizations from your old file to the *top* of the new one without overwriting the contents of the new files.
 
 Once these files are in place you are then ready to initialize your new Textpattern site.
 
@@ -132,7 +132,7 @@ h3(sectionedit4#finalizing_the_upgrade_process). Finalizing the Upgrade Process
 Now you will handle the finishing touches for your switch to subversion.
 
 # Open your Web browser and login to the admin area of your Textpattern installation. By doing this you automatically trigger Textpattern to fire-off a bunch of scripts that updates the MySQL database with the code of the latest Textpattern version. The first page you should be taken to is the Languages page, where you will need to update your preferred language (simply click the link where indicated in the languages list).
-# Go to the "diagnostics&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics_subtab panel and check for any diagnostics that need addressed.
+# Go to the "diagnostics_subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics_subtab panel and check for any diagnostics that need addressed.
 
 h3(sectionedit5#removing_obsolete_files). Removing Obsolete Files
 
@@ -158,7 +158,7 @@ bc(code). rm textpattern/config.php.default
 bc(code). rm -rf textpattern/setup/
 
 
-*Note:* See "post&#95;installation&#95;upgrading&#95;updating&#95;suggestions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_installation_upgrading_updating_suggestions for clarifications about the
+*Note:* See "post_installation_upgrading_updating_suggestions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_installation_upgrading_updating_suggestions for clarifications about the
 
 bc(code). setup
 
@@ -174,7 +174,7 @@ h3(sectionedit6#future_subversion_updates_much_easier_at_this_point). Future Sub
 bc(code). svn update
 
 
-# Login to your administration panel to initialize the updates. You should be automatically taken to the *_Manage Languages_* view of the "preferences&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=preferences_subtab panel. If you are already logged into your admin pages, then navigate to the Preferences subtab and click on the 'Manage Languages' link at the top. Look for the languages you have installed and make sure to update them.
+# Login to your administration panel to initialize the updates. You should be automatically taken to the *_Manage Languages_* view of the "preferences_subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=preferences_subtab panel. If you are already logged into your admin pages, then navigate to the Preferences subtab and click on the 'Manage Languages' link at the top. Look for the languages you have installed and make sure to update them.
 
 *Note:* Languages that you have installed, and which need updated should be distinguished in the list with an orange background.
 

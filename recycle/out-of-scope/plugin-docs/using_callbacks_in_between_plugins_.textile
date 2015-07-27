@@ -51,9 +51,9 @@ h3(sectionedit2#admin-side_callback_events). Admin-side Callback Events
 
 Callback-Events on the admin-side are easy to recognize in the address bar of your browser. If you click on any tab, you'll see that the url will contain “?event=something” and if you click further eventually “?event=something&amp;step=anotherthing”. Those values correspond to the events and steps you can use for your plugins. And in fact they will call any user-defined function that is registered for said event/step, allowing you to add your own events and steps as you need them.
 
-h3(sectionedit3#pluggable_ui_callback_events). pluggable&#95;ui() Callback Events
+h3(sectionedit3#pluggable_ui_callback_events). pluggable_ui() Callback Events
 
-A special type of callback introduced in Textpattern 4.2.0 is pluggable&#95;ui(). This is used throughout the core to allow plugin authors to redesign or alter the layout of the admin side.
+A special type of callback introduced in Textpattern 4.2.0 is pluggable_ui(). This is used throughout the core to allow plugin authors to redesign or alter the layout of the admin side.
 
 *IMPORTANT*: although it is possible to completely redesign the HTML markup within the page, it is advisable to refrain from this action. For example, by removing
 
@@ -106,7 +106,7 @@ bc(code). custom_fields
 
 , and so on.
 
-When writing your own functions using the pluggable&#95;ui() callbacks, note they have a different function signature from regular callbacks. They usually have 4 parameters:
+When writing your own functions using the pluggable_ui() callbacks, note they have a different function signature from regular callbacks. They usually have 4 parameters:
 
 # event
 # step
@@ -115,5 +115,5 @@ When writing your own functions using the pluggable&#95;ui() callbacks, note the
 
 Sometimes (for example when dealing with preference settings) the 4th argument becomes the preference name and a 5th argument holds its value.
 
-Please consult the "core&#95;callback&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=core_callback_list for detailed information on all the callbacks available within Textpattern.
+Please consult the "core_callback_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=core_callback_list for detailed information on all the callbacks available within Textpattern.
 

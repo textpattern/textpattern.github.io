@@ -1,4 +1,4 @@
-\n"mininav&#95;admin&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
+\n"mininav_admin_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-plugins-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-plugins-tab.png
 
@@ -57,7 +57,7 @@ h4(#upgrading_plugins). Upgrading plugins
 
 Upgrading plugins is the same process. Install the new text file code as you would normally. In this case, the existing plugin is updated with the code revisions.
 
-In case you've edited plugins, there's another plugin that helps you track down the lines that you've altered, "rvm&#95;plugin&#95;diff":http://forum.textpattern.com/viewtopic.php?id=19909. Use it before upgrading plugins.
+In case you've edited plugins, there's another plugin that helps you track down the lines that you've altered, "rvm_plugin_diff":http://forum.textpattern.com/viewtopic.php?id=19909. Use it before upgrading plugins.
 
 h4(#installation_problems). Installation problems
 
@@ -79,7 +79,7 @@ h4(#plugin_cache_directory). Plugin cache directory
 
 Plugins that you install via the Admin → Plugins tab are inserted into the database. There is another method of installing a plugin that involves obtaining the plugin as a file in the "standard template format":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_template.
 
-Visit the "advanced&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences tab and enter a folder path/name to use as your plugin cache directory. Make sure it exists on your server!
+Visit the "advanced_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences tab and enter a folder path/name to use as your plugin cache directory. Make sure it exists on your server!
 
 When you have saved the changes, you may upload (via FTP) plugins in the standard template format (_not_ the Base-64 method outlined above)into this nominated directory. Once uploaded, they will be available automatically and are “always on”, but otherwise behave in the same manner as regular plugins.
 
@@ -101,13 +101,13 @@ Use the check boxes and the _with selected_ tool (at the bottom of the list) to 
 
 h3(sectionedit5#editing_and_publishing_plugins). Editing and publishing plugins
 
-You can either edit plugin source code directly from the Plugins tab or use a third party tool such as the "plugin&#95;template":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_template or the "ied&#95;plugin&#95;composer plugin":http://forum.textpattern.com/viewtopic.php?pid=201350#p201350.
+You can either edit plugin source code directly from the Plugins tab or use a third party tool such as the "plugin_template":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_template or the "ied_plugin_composer plugin":http://forum.textpattern.com/viewtopic.php?pid=201350#p201350.
 
 The plugin composer allows you to create, code and document plugins, then publish them in either conventional text format, compressed text format, or exported in the standard template format for sharing with developers or using in the "plugin cache directory":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences. Plugins in the cache can also be edited directly by the Composer.
 
 Before embarking on your own plugin, it is worth following these steps:
 
-# read the "plugin&#95;vs&#95;core":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_vs_core topic to understand the stance the Textpattern developers take on what should (and should not) be a core feature and what might work best as a plugin
+# read the "plugin_vs_core":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_vs_core topic to understand the stance the Textpattern developers take on what should (and should not) be a core feature and what might work best as a plugin
 # check a core tag does not do what you want already
 # check a "plugin does not already exist":http://textpattern.org/archives?section=plugins that performs your intended feature
 # assuming you still wish to go ahead with the plugin (and you don't already have a plugin prefix), "register one":/home/www/zendstudio/dokuwiki/bin/doku.php?id=registered_textpattern_developer_prefixes for your own use

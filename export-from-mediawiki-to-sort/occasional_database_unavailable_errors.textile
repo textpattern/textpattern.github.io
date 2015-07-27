@@ -1,2 +1,2 @@
-\n - redirect "errori&#95;occasionali&#95;di&#95;database&#95;unavailable&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=errori_occasionali_di_database_unavailable
+\n - redirect "errori_occasionali_di_database_unavailable_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=errori_occasionali_di_database_unavailable
 

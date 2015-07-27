@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 On this page are several methods offered by the Txp community that aim to make your Textpattern installation more secure. However, before you jump into employing one, consider the bottom line and decide which side is more important to you.
 
@@ -35,7 +35,7 @@ bc(code). include './myadmin/config.php';
 </li>
 </ul>
 </li>
-<li>edit */root/myadmin/include/txp&#95;admin.php*:
+<li>edit */root/myadmin/include/txp_admin.php*:
 <ul>
 <li><p>change line 168 to be:</p>
 bc(code). gTxt('log_in_at').' '.hu.'myadmin/index.php';
@@ -47,7 +47,7 @@ bc(code). gTxt('log_in_at').' '.hu.'myadmin/index.php';
 </li>
 </ul>
 </li>
-<li>dit */root/myadmin/include/txp&#95;tag.php*:
+<li>dit */root/myadmin/include/txp_tag.php*:
 <ul>
 <li><p>change line 7 to be:</p>
 bc(code). <link rel="stylesheet" href="/myadmin/textpattern.css" type="text/css" />
@@ -80,15 +80,15 @@ bc(code). $out .= hu.'myadmin/?event=discuss&step=discuss_edit&discussid='.$disc
 Below are all the files in which the _/textpattern_/ filepath is mentioned. However, only the ones mentioned above are strictly in need of changing.
 
 * /index.php - 2 occurrences
-* /textpattern/include/txp&#95;admin.php - 3 occurrences
-* /textpattern/include/txp&#95;prefs.php - 3 occurrences
-* /textpattern/include/txp&#95;tag.php - 2 occurrences
+* /textpattern/include/txp_admin.php - 3 occurrences
+* /textpattern/include/txp_prefs.php - 3 occurrences
+* /textpattern/include/txp_tag.php - 2 occurrences
 * /textpattern/publish/comment.php - 2 occurrences
 * /textpattern/publish/taghandlers.php - 3 occurrences
 * /textpattern/setup/en-gb.php - 4 occurrences
 * /textpattern/setup/index.php - 8 occurrences (including header comment)
 * /textpattern/setup/txpsql.php - 3 occurrences
-* /textpattern/update/&#95;to&#95;4.0.2.php - 2 occurrences
+* /textpattern/update/_to_4.0.2.php - 2 occurrences
 
 h3(sectionedit2#htaccess_method_1). .htaccess Method 1
 

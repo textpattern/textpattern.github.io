@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 Note: the following examples can, in theory, be applied for *tri*lingualism and, indeed, *multi*lingualism. Actually, they would involve geometrically growing levels of operational complication. Rather, the proper way to tackle the task of building a site with more than two languages points to "this feature request":/home/www/zendstudio/dokuwiki/bin/doku.php?id=multilingual_publishing, with the "Multilingual Publishing Pack":http://txpforge.org/projects/show/mlp as an elaborated and usable - although not flawless and 4.0.5 updated - answer. Stay tuned "here":http://forum.textpattern.com/viewtopic.php?id=20692 for the latest discussions on it.
 
@@ -93,7 +93,7 @@ echo article_custom (array(
 
 That's it. Now, to get the mirroring link, we put the following tag wherever we want to show the reader to the other language version of an article:
 
-&lt;txp:output&#95;form form=“lang” /&gt;
+&lt;txp:output_form form=“lang” /&gt;
 
 _(end outdated instructions)_
 

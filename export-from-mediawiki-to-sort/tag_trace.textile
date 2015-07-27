@@ -1,4 +1,4 @@
-\n"mininav&#95;troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
+\n"mininav_troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
 
 In "Debugging mode":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences, Textpattern appends a *Tag Trace* to the HTML output of each page. This is your key to working out which Textpattern tags are being executed and their outcome.
 

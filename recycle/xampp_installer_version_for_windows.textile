@@ -6,7 +6,7 @@ h3(sectionedit1#overview). Overview
 
 This write-up describes how to set up and use a *XAMPP Installer* package for Textpattern development on a Windows machine. Furthermore, these instructions assume you will be installing the XAMPP package in the default location on your machine, namely *c:\apachefriends*.
 
-*Note:* If you are a “purist” and prefer normal ZIP packages and handling files manually, then you might find the "using&#95;xampp&#95;apache-my&#95;sql-php-perl&#95;for&#95;windows":/home/www/zendstudio/dokuwiki/bin/doku.php?id=using_xampp_apache-my_sql-php-perl_for_windows instructions more suitable.
+*Note:* If you are a “purist” and prefer normal ZIP packages and handling files manually, then you might find the "using_xampp_apache-my_sql-php-perl_for_windows":/home/www/zendstudio/dokuwiki/bin/doku.php?id=using_xampp_apache-my_sql-php-perl_for_windows instructions more suitable.
 
 Keep in mind that using a local install of XAMPP as a publishing server to the Internet is a _very bad_ idea; use it only as a local development server! Also keep in mind that a local install of XAMPP does not emulate a live server environement (it's just not that robust), so if your project involves integrating other applications into Textpattern, you may run into problems (out of scope here); however, it should be fine for Textpattern only development and testing.
 
@@ -119,13 +119,13 @@ h4(#php_considerations). PHP Considerations
 * If needed, you can switch back and forth between php 5 (default) and php 4 through a batch file program (convenient).
 * You can verify any changes or configurations from the PHP info page (added modules, PHP, MySQL etc.).
 * You definetely cannot rely on the information provided on the status page, in the case you had made any changes in your configuration files. Just refer to PHP info for any configuration information.
-* If you work with PHP 5, the _mod&#95;php5_ module will be loaded in your _httpd.conf_ file by default, if you switch to php4, PHP will run through CGI&#95;API, which might not be the same as on a live server environement.
+* If you work with PHP 5, the _mod_php5_ module will be loaded in your _httpd.conf_ file by default, if you switch to php4, PHP will run through CGI_API, which might not be the same as on a live server environement.
 
-Now that you have XAMPP installed and know a thing or two about the components, let's begin making some modifications to get it ready for use with Textpattern; we'll start by adding _mod&#95;rewrite_ abilities to the Apache server.
+Now that you have XAMPP installed and know a thing or two about the components, let's begin making some modifications to get it ready for use with Textpattern; we'll start by adding _mod_rewrite_ abilities to the Apache server.
 
-h3(sectionedit6#adding_the_mod_rewrite_module_to_the_apache_server). Adding the //Mod&#95;Rewrite// Module to the Apache Server
+h3(sectionedit6#adding_the_mod_rewrite_module_to_the_apache_server). Adding the //Mod_Rewrite// Module to the Apache Server
 
-Considering that Textpattern makes use of using mode&#95;rewrite to make "Clean URLs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#clean_urls work (and perhaps other important functions), you need to turn that on in the Apache configuration file.
+Considering that Textpattern makes use of using mode_rewrite to make "Clean URLs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#clean_urls work (and perhaps other important functions), you need to turn that on in the Apache configuration file.
 
 <ol>
 <li><p>Open *_httpd.conf_* (located in</p>
@@ -135,9 +135,9 @@ bc(code). c:\apachefriends\xampp\apache\conf\httpd.conf
 <p>) with Crimson Editor (or TypePad, etc.).</p></li>
 </ol>
 
-# Scroll down to the “Dynamic shared Objects” section (about line 125), here you can switch modules on and off or enter new module directives. You are going to to activate (essentially _turn on_) the *_mod&#95;rewrite.so_* directive (line *168*); to do this, you simply uncomment the line by removing the octothorpe (#), also known as a _hash_ sign, at the beginning of the line. If the hash is already gone, then you are fine.
+# Scroll down to the “Dynamic shared Objects” section (about line 125), here you can switch modules on and off or enter new module directives. You are going to to activate (essentially _turn on_) the *_mod_rewrite.so_* directive (line *168*); to do this, you simply uncomment the line by removing the octothorpe (#), also known as a _hash_ sign, at the beginning of the line. If the hash is already gone, then you are fine.
 
-*Note:* Textpattern relies on some rewrite rules externally through a _.htaccess_ file, so you have to turn the *_mod&#95;rewrite.so_* directive on. If you want to learn more here is the rewrite "documentation":http://httpd.apache.org/docs/misc/rewriteguide.html .
+*Note:* Textpattern relies on some rewrite rules externally through a _.htaccess_ file, so you have to turn the *_mod_rewrite.so_* directive on. If you want to learn more here is the rewrite "documentation":http://httpd.apache.org/docs/misc/rewriteguide.html .
 
 h3(sectionedit7#creating_virtual_host_containers). Creating Virtual Host Containers
 
@@ -398,6 +398,6 @@ h4(#textpattern_retrieval_setup_and_post_configuration). Textpattern Retrieval, 
 
 At this point you have covered the XAMPP process and are ready to switch to Textpattern. First you will need to install Textpattern in your new Apache server setup, and there are two ways to do it: manually, and via "Subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#subversion (SVN):
 
-* If manually, see the "detailed&#95;installation&#95;instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_installation_instructions.
-* If via SVN, follow an appropriate method offered earlier in "&#95;advanced&#95;topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=chapter_5:advanced_topics.
+* If manually, see the "detailed_installation_instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_installation_instructions.
+* If via SVN, follow an appropriate method offered earlier in "_advanced_topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=chapter_5:advanced_topics.
 

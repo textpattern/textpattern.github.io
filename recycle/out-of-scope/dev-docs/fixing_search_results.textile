@@ -1,4 +1,4 @@
-\n"mininav&#95;troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
+\n"mininav_troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
 
 Some common issues with searching:
 
@@ -38,7 +38,7 @@ bc(code). searchall="1"
 
 h3(sectionedit3#wrong_articles_are_displayed). Wrong articles are displayed
 
-If your search results page displays the wrong articles  -  the same articles as your front page, for example  -  it's probably because you're using the "article&#95;custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom tag instead of the "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tag.
+If your search results page displays the wrong articles  -  the same articles as your front page, for example  -  it's probably because you're using the "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom tag instead of the "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tag.
 
 bc(code). <txp:article_custom />
 

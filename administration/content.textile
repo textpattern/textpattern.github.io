@@ -1,4 +1,4 @@
-\n"mininav&#95;primary&#95;backoffice&#95;tabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_primary_backoffice_tabs
+\n"mininav_primary_backoffice_tabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_primary_backoffice_tabs
 
 The Content tab contains all the panels for creating and managing different types of content.
 
@@ -7,7 +7,7 @@ The Content tab contains all the panels for creating and managing different type
 * "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories
 * "write":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write
 * "articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles
-* "images&#95;panel&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel
+* "images_panel_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel
 * "files":/home/www/zendstudio/dokuwiki/bin/doku.php?id=files
 * "links":/home/www/zendstudio/dokuwiki/bin/doku.php?id=links
 * "Comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_admin-side

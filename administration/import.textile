@@ -1,4 +1,4 @@
-\n"mininav&#95;admin&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
+\n"mininav_admin_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-import-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-import-tab.png
 
@@ -47,7 +47,7 @@ The *Default comments invite* control is a text box that allows you to create a 
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_admin_import_fig06-invite.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_admin_import_fig06-invite.png
 
-*Note:* The comments invite can be controlled in two other locations in Textpattern. The first is in the Comments section of the "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences, which controls the invite label and other comment settings for the entire site by default. The second is in the "write":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write tab, where you can set the invite label for each new article you write.
+*Note:* The comments invite can be controlled in two other locations in Textpattern. The first is in the Comments section of the "basic_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences, which controls the invite label and other comment settings for the entire site by default. The second is in the "write":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write tab, where you can set the invite label for each new article you write.
 
 h3(sectionedit2#the_process). The Process
 
@@ -73,10 +73,10 @@ When it's done, you can go the the "articles":/home/www/zendstudio/dokuwiki/bin/
 
 See also the articles:
 
-* "importing&#95;from&#95;blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
-* "importing&#95;from&#95;b2":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_b2
-* "importing&#95;from&#95;movable&#95;type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_movable_type
-* "importing&#95;from&#95;word&#95;press":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_word_press
+* "importing_from_blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
+* "importing_from_b2":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_b2
+* "importing_from_movable_type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_movable_type
+* "importing_from_word_press":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_word_press
 
 h4(#importing_from_a_mysql_database). Importing from a MySQL database
 

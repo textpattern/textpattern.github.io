@@ -1,4 +1,4 @@
-\n"mininav&#95;admin&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
+\n"mininav_admin_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-users-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-users-tab.png
 
@@ -42,7 +42,7 @@ h4(#authors_3). Authors (3)
 
 The _Authors_ region of the panel is simply a list of the existing accounts in the Textpattern site. As indicated in the notes above, Admin/Publishers and Managing Editors are the only user roles that can see this list; however, only Admin/Publishers can use the list to edit the privileges of another user account.
 
-"user&#95;roles&#95;and&#95;permissions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions are defined for each type of admin-side user (with respect to the entire Textpattern site, not just the Users panel). Privileges change (decrease) with each lesser role.
+"user_roles_and_permissions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions are defined for each type of admin-side user (with respect to the entire Textpattern site, not just the Users panel). Privileges change (decrease) with each lesser role.
 
 h4(#add_new_author_4). Add New Author (4)
 

@@ -1,34 +1,34 @@
 \n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
 
-"Getting Started":/home/www/zendstudio/dokuwiki/bin/doku.php?id=getting_started_with_textpattern &#124; "Intermediate/Advanced Topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=intermediate_and_advanced_topics &#124; "Designer/Developer Interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests &#124; "Tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing &#124; "tutorials":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tutorials &#124; "article&#95;contributions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_contributions
+"Getting Started":/home/www/zendstudio/dokuwiki/bin/doku.php?id=getting_started_with_textpattern &#124; "Intermediate/Advanced Topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=intermediate_and_advanced_topics &#124; "Designer/Developer Interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests &#124; "Tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing &#124; "tutorials":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tutorials &#124; "article_contributions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_contributions
 
 h3(sectionedit1#upgrades_and_post-upgrade_configurations). Upgrades and Post-Upgrade Configurations
 
-* "upgrading&#95;to&#95;a&#95;new&#95;version":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_to_a_new_version
-* "updating&#95;to&#95;a&#95;new&#95;revision":/home/www/zendstudio/dokuwiki/bin/doku.php?id=updating_to_a_new_revision (i.e., a new build of the latest release)
-* "downgrading&#95;to&#95;an&#95;older&#95;stable&#95;release":/home/www/zendstudio/dokuwiki/bin/doku.php?id=downgrading_to_an_older_stable_release
-* "post&#95;installation&#95;upgrading&#95;updating&#95;suggestions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_installation_upgrading_updating_suggestions
-* "managing&#95;clean&#95;urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls
+* "upgrading_to_a_new_version":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_to_a_new_version
+* "updating_to_a_new_revision":/home/www/zendstudio/dokuwiki/bin/doku.php?id=updating_to_a_new_revision (i.e., a new build of the latest release)
+* "downgrading_to_an_older_stable_release":/home/www/zendstudio/dokuwiki/bin/doku.php?id=downgrading_to_an_older_stable_release
+* "post_installation_upgrading_updating_suggestions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_installation_upgrading_updating_suggestions
+* "managing_clean_urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls
 
 h3(sectionedit2#site_administrator_resources). Site Administrator Resources
 
-* "renaming&#95;the&#95;textpattern&#95;admin&#95;directory&#95;for&#95;added&#95;security":/home/www/zendstudio/dokuwiki/bin/doku.php?id=renaming_the_textpattern_admin_directory_for_added_security
-* "modifying&#95;user&#95;account&#95;roles&#95;and&#95;privileges":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modifying_user_account_roles_and_privileges
-* "resetting&#95;admin&#95;password":/home/www/zendstudio/dokuwiki/bin/doku.php?id=resetting_admin_password
-* "managing&#95;404&#95;errors&#95;in&#95;a&#95;textpattern&#95;site":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_404_errors_in_a_textpattern_site
+* "renaming_the_textpattern_admin_directory_for_added_security":/home/www/zendstudio/dokuwiki/bin/doku.php?id=renaming_the_textpattern_admin_directory_for_added_security
+* "modifying_user_account_roles_and_privileges":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modifying_user_account_roles_and_privileges
+* "resetting_admin_password":/home/www/zendstudio/dokuwiki/bin/doku.php?id=resetting_admin_password
+* "managing_404_errors_in_a_textpattern_site":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_404_errors_in_a_textpattern_site
 
 h3(sectionedit3#moving_multiple_installations). Moving/Multiple Installations
 
-* "moving&#95;installation&#95;from&#95;subdirectory&#95;to&#95;domain&#95;root&#95;on&#95;the&#95;same&#95;server":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_subdirectory_to_domain_root_on_the_same_server
-* "moving&#95;installation&#95;from&#95;remote&#95;live&#95;server&#95;to&#95;localhost":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_remote_live_server_to_localhost
-* "moving&#95;installation&#95;from&#95;one&#95;host&#95;to&#95;another":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_one_host_to_another
-* "importing&#95;article&#95;content&#95;from&#95;one&#95;textpattern&#95;install&#95;to&#95;another":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_article_content_from_one_textpattern_install_to_another
-* "creating&#95;multiple&#95;subdomain&#95;weblogs&#95;with&#95;one&#95;textpattern&#95;install":/home/www/zendstudio/dokuwiki/bin/doku.php?id=creating_multiple_subdomain_weblogs_with_one_textpattern_install
+* "moving_installation_from_subdirectory_to_domain_root_on_the_same_server":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_subdirectory_to_domain_root_on_the_same_server
+* "moving_installation_from_remote_live_server_to_localhost":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_remote_live_server_to_localhost
+* "moving_installation_from_one_host_to_another":/home/www/zendstudio/dokuwiki/bin/doku.php?id=moving_installation_from_one_host_to_another
+* "importing_article_content_from_one_textpattern_install_to_another":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_article_content_from_one_textpattern_install_to_another
+* "creating_multiple_subdomain_weblogs_with_one_textpattern_install":/home/www/zendstudio/dokuwiki/bin/doku.php?id=creating_multiple_subdomain_weblogs_with_one_textpattern_install
 
-h3(sectionedit4#migrating_to_textpattern_from_another_system). [[migrating&#95;to&#95;textpattern&#95;from&#95;another&#95;system]]
+h3(sectionedit4#migrating_to_textpattern_from_another_system). [[migrating_to_textpattern_from_another_system]]
 
-* "importing&#95;from&#95;blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
-* "importing&#95;from&#95;moveable&#95;type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_moveable_type
-* "importing&#95;from&#95;pivot":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_pivot
-* "importing&#95;word&#95;press":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_word_press
+* "importing_from_blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
+* "importing_from_moveable_type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_moveable_type
+* "importing_from_pivot":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_pivot
+* "importing_word_press":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_word_press
 

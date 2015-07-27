@@ -53,7 +53,7 @@ bc(code). search_results
 
 
 <p>, with appropriate placeholder tags, instead of nested html</p></li>
-<li>There is now an option in admin&#95;config.php to use excerpts or full article text in XML feeds</li>
+<li>There is now an option in admin_config.php to use excerpts or full article text in XML feeds</li>
 <li>When creating a new article, section and category selections were being lost when toggling html and preview; this is now fixed</li>
 <li>You can now put newer/older paging links anywhere on the page</li>
 </ul>

@@ -12,18 +12,18 @@ The second part of migrating to Textpattern is getting the layout and navigation
 
 * Files: Upload all of your images and other media files to your new server. To make things run smoothly, you should keep the same directory structure. For example, this usually means having a /images directory, which would be located in the root of your website where the /textpattern directory is.
 
-* Stylesheets: By default, Textpattern doesn't use CSS files stored on the server, instead the information is stored in the database using the "style&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=style_subtab panel in the admin interface. You don't have to manage your stylesheets with Textpattern, and depending on your use of stylesheets you may not be able to completely (e.g., if you have multiple stylesheets for one page), but your encouraged to use this method if convenient (it makes things easy).
+* Stylesheets: By default, Textpattern doesn't use CSS files stored on the server, instead the information is stored in the database using the "style_subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=style_subtab panel in the admin interface. You don't have to manage your stylesheets with Textpattern, and depending on your use of stylesheets you may not be able to completely (e.g., if you have multiple stylesheets for one page), but your encouraged to use this method if convenient (it makes things easy).
 
 * Tags: The hardest step is changing the tags to Textpattern. Some systems (like Xoops) uses the concept of “modules” to encapsulate and reuse content. These could be changed to “forms” in Textpattern. Also, if you have any PHP scripting in your page, then you'll want to replace the PHP &lt;? ?&gt; tags with Textpattern's &lt;txp:php&gt; tag.
 
-Because of the huge differences in templates for all of the different systems, it's impossible to walk you through converting your template to Textpattern. Hopefully these guidelines will help, you should also study the "textpattern&#95;tag&#95;definitions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_tag_definitions.
+Because of the huge differences in templates for all of the different systems, it's impossible to walk you through converting your template to Textpattern. Hopefully these guidelines will help, you should also study the "textpattern_tag_definitions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_tag_definitions.
 
 h3(sectionedit2#import_scripts_in_development). Import Scripts in Development
 
 (Add/edit links and start pages as needed.)
 
-* "importing&#95;from&#95;blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
-* "importing&#95;from&#95;moveable&#95;type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_moveable_type
-* "importing&#95;from&#95;pivot":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_pivot
-* "importing&#95;word&#95;press":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_word_press
+* "importing_from_blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
+* "importing_from_moveable_type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_moveable_type
+* "importing_from_pivot":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_pivot
+* "importing_word_press":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_word_press
 

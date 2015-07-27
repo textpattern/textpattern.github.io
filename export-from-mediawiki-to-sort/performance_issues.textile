@@ -1,4 +1,4 @@
-\n"mininav&#95;troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
+\n"mininav_troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
 
 (a.k.a. why is my site so slow?)
 
@@ -62,7 +62,7 @@ If your Runtime, Queries and Memory figures are all in or near the normal limits
 * *Counters and external stats* : are you using an image or javascript link to an offsite “hit counter”, stats service, or a local stats application like Shortstat? Try removing the link to see if it makes a difference.
 * *Links to off-site objects*: does your page link to images, javascript, CSS or other objects on another web server? Do your pages include content from external sources such as Gravatars or similar? Any of these could be the culprit.
 * *Advertisements*: banner, popup and text ads all work by loading content from another server. Try disabling them and measure the difference.
-* *CSS*: certain CSS techniques can cause choppy page loading and scrolling. In particular, “fixed” background images and blocks can cause loading and scrolling problems. You may, however, consider installing the "rvm&#95;css":http://vanmelick.com/txp plugin which can improve CSS performance considerably
+* *CSS*: certain CSS techniques can cause choppy page loading and scrolling. In particular, “fixed” background images and blocks can cause loading and scrolling problems. You may, however, consider installing the "rvm_css":http://vanmelick.com/txp plugin which can improve CSS performance considerably
 
 h3(sectionedit3#improving_performance). Improving performance
 
@@ -75,7 +75,7 @@ bc(code). <txp:...>
 
 
 <p>tags that require database queries. If you're not sure, remove tags one at a time and watch the Queries count.</p></li>
-<li>*Caching*: sometimes pages are necessarily complex, and there are limits to server performance. If you have a popular site that's not fast enough, try a caching plugin such as "asy&#95;jpcache":http://forum.textpattern.com/viewtopic.php?pid=54333</li>
+<li>*Caching*: sometimes pages are necessarily complex, and there are limits to server performance. If you have a popular site that's not fast enough, try a caching plugin such as "asy_jpcache":http://forum.textpattern.com/viewtopic.php?pid=54333</li>
 </ul>
 
 The important thing with any performance tweak is to *change only one thing at a time*, and always measure the results. If something has no real effect, change it back and try something else. You'll almost certainly find that one or two changes will have a large effect, while others will be insignificant.

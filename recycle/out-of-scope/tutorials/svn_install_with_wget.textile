@@ -1,6 +1,6 @@
-\nThis is an alternate approach to using "Subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#subversion with Windows. If you are not comfortable working in the command prompt, you are advised to use the "windows&#95;machine&#95;graphical&#95;user&#95;interface&#95;gui&#95;approach":/home/www/zendstudio/dokuwiki/bin/doku.php?id=windows_machine_graphical_user_interface_gui_approach.
+\nThis is an alternate approach to using "Subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#subversion with Windows. If you are not comfortable working in the command prompt, you are advised to use the "windows_machine_graphical_user_interface_gui_approach":/home/www/zendstudio/dokuwiki/bin/doku.php?id=windows_machine_graphical_user_interface_gui_approach.
 
-The Textpattern development team encourages the use of Subversion over wget whenever possible. See the FAQ entry "How do I fetch the current development version?":http://textpattern.com/faq/103/how-do-i-fetch-the-current-development-version for more information. Basically, it's recommended you use the "svn&#95;install&#95;with&#95;tortoise&#95;svn":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_install_with_tortoise_svn instead.
+The Textpattern development team encourages the use of Subversion over wget whenever possible. See the FAQ entry "How do I fetch the current development version?":http://textpattern.com/faq/103/how-do-i-fetch-the-current-development-version for more information. Basically, it's recommended you use the "svn_install_with_tortoise_svn":/home/www/zendstudio/dokuwiki/bin/doku.php?id=svn_install_with_tortoise_svn instead.
 
 There are two possible methods to this approach:
 
@@ -31,7 +31,7 @@ then hit _Enter_.
 
 This will create a text file containing the revision's id number. *Don't skip this step*, because you won't be able to find or figure this number out later.
 
-It's actually just a copy of the html file, "$":http://textpattern.googlecode.com/svn/releases/"txp&#95;current&#95;version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version/source, but it serves its purpose well: it contains the revision number of the copy of Textpattern you downloaded, which you will need later when reporting bugs.
+It's actually just a copy of the html file, "$":http://textpattern.googlecode.com/svn/releases/"txp_current_version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version/source, but it serves its purpose well: it contains the revision number of the copy of Textpattern you downloaded, which you will need later when reporting bugs.
 
 # Type in (case-sensitive)
 

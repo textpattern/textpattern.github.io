@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 Although it is not officially supported running Textpattern on an nginx webserver works just fine, given the correct configuration. This article outlines the requirements for a successful installation of Textpattern using nginx on a CentOS 5.6 system.
 
@@ -25,7 +25,7 @@ There are several configuration files for nginx (path names may vary between lin
 
 *_/etc/nginx/nginx.conf_*
  Main configuration, similar to httpd.conf for Apache. *_/etc/nginx/conf.d/&#42;.conf_*
- Additional configuration files (everything with a suffix of .conf), those will also be used for the virtual host configuration. *_/etc/nginx/fastcgi&#95;params_*
+ Additional configuration files (everything with a suffix of .conf), those will also be used for the virtual host configuration. *_/etc/nginx/fastcgi_params_*
  fastcgi settings
 
 h4(#etc_nginx_nginxconf). /etc/nginx/nginx.conf
@@ -110,7 +110,7 @@ http {
 
 h4(#etc_nginx_confd_exampleconconf). /etc/nginx/conf.d/example.con.conf
 
-For each virtual host (i.e. each URL under which your Textpattern site should be accessible) you need to define one _server_ block. It is good practice to create one file per domain so you can better keep track of all settings. Since nginx does not make use of _.htaccess_ files or offers _mod&#95;rewrite_, so you need to use an alternative approach to allow clean URLs. The _try&#95;files_ directive is responsible for clean URLs in this example.
+For each virtual host (i.e. each URL under which your Textpattern site should be accessible) you need to define one _server_ block. It is good practice to create one file per domain so you can better keep track of all settings. Since nginx does not make use of _.htaccess_ files or offers _mod_rewrite_, so you need to use an alternative approach to allow clean URLs. The _try_files_ directive is responsible for clean URLs in this example.
 
 <pre class="code">
 server {
@@ -151,9 +151,9 @@ server {
 }
 </pre>
 
-h4(#etc_nginx_fastcgi_params). /etc/nginx/fastcgi&#95;params
+h4(#etc_nginx_fastcgi_params). /etc/nginx/fastcgi_params
 
-These are example settings for _fastcgi&#95;params_:
+These are example settings for _fastcgi_params_:
 
 <pre class="code">
 fastcgi_param  QUERY_STRING       $query_string;

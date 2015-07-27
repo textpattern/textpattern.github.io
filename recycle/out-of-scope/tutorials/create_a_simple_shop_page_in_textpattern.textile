@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 _This is an excerpt of "this tutorial":http://fuelyourcoding.com/create-a-simple-shop-page-in-textpattern/ by "Marie Poulin":http://www.mariepoulin.com/._
 

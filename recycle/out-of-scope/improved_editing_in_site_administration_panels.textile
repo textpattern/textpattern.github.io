@@ -1,2 +1,2 @@
-\n - redirect "improved&#95;copy&#95;in&#95;site&#95;administration&#95;panels":/home/www/zendstudio/dokuwiki/bin/doku.php?id=improved_copy_in_site_administration_panels
+\n - redirect "improved_copy_in_site_administration_panels":/home/www/zendstudio/dokuwiki/bin/doku.php?id=improved_copy_in_site_administration_panels
 

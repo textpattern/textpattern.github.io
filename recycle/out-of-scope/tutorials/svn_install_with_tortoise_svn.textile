@@ -6,7 +6,7 @@ h4(#using_tortoisesvn_to_download_the_source_files). Using TortoiseSVN to Downlo
 
 <ol>
 <li>Download and install "TortoiseSVN":http://tortoisesvn.tigris.org/.</li>
-<li>Create a local folder with a catchy, but meaningful, name (such as *TxP&#95;via&#95;Tortoise*). The folder you create here is called your “source” folder, and you should keep it because whenever you update Textpattern, this is the folder you first update via TortoiseSVN.</li>
+<li>Create a local folder with a catchy, but meaningful, name (such as *TxP_via_Tortoise*). The folder you create here is called your “source” folder, and you should keep it because whenever you update Textpattern, this is the folder you first update via TortoiseSVN.</li>
 <li>Right click on the new folder and you will see some new options for TortoiseSVN.</li>
 <li><p>Select 'Checkout' and use the following path for the 'URL of Repository':</p>
 bc(code). <nowiki>http://</nowiki>

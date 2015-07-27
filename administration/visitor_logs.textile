@@ -1,4 +1,4 @@
-\n"mininav&#95;admin&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
+\n"mininav_admin_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-vislogs-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-vislogs-tab.png
 
@@ -8,7 +8,7 @@ h3(sectionedit1#visitor_logs). Visitor Logs
 
 Each record is composed of the following information:
 
-* *Time*  -  The time your Web page was visited. The time is shifted by the time preferences set in "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences panel.
+* *Time*  -  The time your Web page was visited. The time is shifted by the time preferences set in "basic_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences panel.
 * *IP*  -  The IP address of the visitor.
 * *Host*  -  The published hostname associated with the IP address.
 * *Page*  -  The page in your Textpattern Web site that is first visited. If it is *bold* it shows an attempt to leave a comment. If no comment has been left, it is probably a script that unsuccessfully tried to leave some spam.

@@ -1,4 +1,4 @@
-\n"feature&#95;requests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feature_requests &#124; "improved&#95;copy&#95;in&#95;site&#95;administration&#95;panels":/home/www/zendstudio/dokuwiki/bin/doku.php?id=improved_copy_in_site_administration_panels
+\n"feature_requests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feature_requests &#124; "improved_copy_in_site_administration_panels":/home/www/zendstudio/dokuwiki/bin/doku.php?id=improved_copy_in_site_administration_panels
 
 h3(sectionedit1#overview). Overview
 
@@ -10,7 +10,7 @@ Add your suggestions to the list below. Strike an item from a list if it's been 
 
 When you add an item to the panel lists below, please be very specific as to where the edit in the admin panel needs made. Begin by adding the item to the proper panel section, then indicate name of panel view (if relevant), then name of panel view section (if relevant), then name of widget that needs edited.
 
-When most of the changes for a given panel (or panel view) has been updated to a large extent, see if any images in the corresponding "site&#95;administration":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_administration documentation needs updated to reflect the improvements. If so, make a note about it in the *discussion* page for that doc, or post in the "Documentation forum":http://forum.textpattern.com/viewforum.php?id=28 about it.
+When most of the changes for a given panel (or panel view) has been updated to a large extent, see if any images in the corresponding "site_administration":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_administration documentation needs updated to reflect the improvements. If so, make a note about it in the *discussion* page for that doc, or post in the "Documentation forum":http://forum.textpattern.com/viewforum.php?id=28 about it.
 
 h3(sectionedit2#panel_edits_needed_in_general). Panel Edits Needed in General
 
@@ -63,7 +63,7 @@ The header of this section needs capitalized, from link to *Link*.
 
 h5(#publish_section1). Publish// section: //
 
-# allow&#95;raw&#95;php&#95;scripting probably to *Allow raw PHP scripting?* (with a Yes/No radion button pair).
+# allow_raw_php_scripting probably to *Allow raw PHP scripting?* (with a Yes/No radion button pair).
 # Spam blacklists (comma separated) to *Spam Blacklists (Comma Separated)*
 # Max URL length to *Max URL Length*
 # Use mail on feeds id? to *Use email on feeds id?*
@@ -78,7 +78,7 @@ h5(#publish_section1). Publish// section: //
 # Ping textpattern.com?  -  The internal help for this only indicates that choosing _yes_ lets you do it, it doesnâ€™t explain at all why you would want to do it, or even what it does if you did. Not very helpful for people who don't know about pinging. If you offer the capability, explain the purposes/value.
 # How is #1 in the Publish section above different than the _allow PHP on pages/articles_ widgets? Redundancy?
 # A couple more down from that there is the Include email in atom feeds? widget. If a person says yes to this, is the email address open to the world/harvestable? Oh, and going back up a bit thereâ€™s another one that reads Use mail on feeds id?. Should that read as e-mail?. Also see #7 below.
-# This whole section of widgets needs rearranged a bit better so that like topic widgets are next to eachother. For example the admin-side plugin widget question is clear up near the top while this one is at the bottom (thereâ€™s 22 widgets in that section). Same goes for the &#95;ping-related widgets, and so forth. Itâ€™s just easier on the brain to compare and understand like questions when the questions are directly next to eachother.
+# This whole section of widgets needs rearranged a bit better so that like topic widgets are next to eachother. For example the admin-side plugin widget question is clear up near the top while this one is at the bottom (thereâ€™s 22 widgets in that section). Same goes for the _ping-related widgets, and so forth. Itâ€™s just easier on the brain to compare and understand like questions when the questions are directly next to eachother.
 ## *Update:* Mary says itâ€™s because of when and how controls are entered. Each pref has a sort order column, where a number is entered where it should appear in the list. Entering in one later, youâ€™d have to update all the othersâ€™ sort ids. Itâ€™s not difficult to fix per se, itâ€™s just a bit of a nuisance. Probably means this will be crockery.
 
 h3(sectionedit4#internal_txp_help_edits_needed_in_general). Internal Txp &quot;Help&quot; Edits Needed in General

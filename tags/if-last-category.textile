@@ -3,14 +3,14 @@ h1. If last category [todo:pw]
 bc(code). <txp:if_last_category>
 
 
-The "if&#95;last&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_category tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The "if_last_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_category tag is a _conditional_ tag and always used as an opening and closing pair, like this...
 
 bc(code). <txp:if_last_category>
 ...conditional statements...
 </txp:if_last_category>
 
 
-The tag will execute the contained statements if the current category (usually one inside the container or form of a "category&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list) is the last in the currently displayed list.
+The tag will execute the contained statements if the current category (usually one inside the container or form of a "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list) is the last in the currently displayed list.
 
 h3(sectionedit1#attributes). Attributes
 

@@ -1,8 +1,8 @@
-\n"mininav&#95;core&#95;function&#95;reference":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_core_function_reference
+\n"mininav_core_function_reference":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_core_function_reference
 
 h3(sectionedit1#description). Description
 
-array "safe&#95;rows&#95;start":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows_start ( string _$things_, string _$table_, string _$where_, boolean _$debug_ = “” _)_
+array "safe_rows_start":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows_start ( string _$things_, string _$table_, string _$where_, boolean _$debug_ = “” _)_
 
 Returns a MySQL result resource.
 
@@ -47,7 +47,7 @@ return $out;    // user full names keyed by login name
 
 h3(sectionedit6#see_also). See Also
 
-* "safe&#95;rows()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows
+* "safe_rows()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_rows
 * "nextRow()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=next_row
 
 h3(sectionedit7#notes). Notes

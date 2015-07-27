@@ -6,23 +6,23 @@ Ready to create a plugin? Great! Get started with the links below.
 
 h3(sectionedit1#reading_up). Reading Up
 
-* "what&#95;is&#95;a&#95;plugin&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=what_is_a_plugin
-* "plugin&#95;basics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_basics
-* "plugin&#95;development&#95;guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_development_guidelines
-* "creating&#95;plugin&#95;help&#95;guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=creating_plugin_help_guidelines
-* "how&#95;plugins&#95;are&#95;loaded":/home/www/zendstudio/dokuwiki/bin/doku.php?id=how_plugins_are_loaded
-* "using&#95;callbacks&#95;in&#95;between&#95;plugins&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=using_callbacks_in_between_plugins
+* "what_is_a_plugin_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=what_is_a_plugin
+* "plugin_basics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_basics
+* "plugin_development_guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_development_guidelines
+* "creating_plugin_help_guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=creating_plugin_help_guidelines
+* "how_plugins_are_loaded":/home/www/zendstudio/dokuwiki/bin/doku.php?id=how_plugins_are_loaded
+* "using_callbacks_in_between_plugins_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=using_callbacks_in_between_plugins
 * "Textpattern Plugin Anatomy":http://thresholdstate.com/articles/?c=txp-anatomy
 * "textpacks":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpacks
 
 h3(sectionedit2#tools_and_aides). Tools and Aides
 
-* "plugin&#95;template":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_template
+* "plugin_template":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_template
 * "Phpxref: Comprehensive Cross-reference of Textpattern Functions and Variables":http://phpxref.com/xref/textpattern/
 * Core Function Reference (in progress)
 * Plugins for creating plugins:
-** "ied&#95;plugin&#95;composer":http://textpattern.org/plugins/588/ied_plugin_composer
-** "sed&#95;plugin&#95;help&#95;viewer":http://textpattern.org/plugins/612/sed_plugin_help_viewer
+** "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer
+** "sed_plugin_help_viewer":http://textpattern.org/plugins/612/sed_plugin_help_viewer
 * "Commandline plugin decoder":http://forum.textpattern.com/viewtopic.php?id=4252
 * "Generate a list of tags and attributes":http://forum.textpattern.com/viewtopic.php?id=12299
 * "Classes in plugins":http://forum.textpattern.com/viewtopic.php?id=26025
@@ -32,15 +32,15 @@ h3(sectionedit2#tools_and_aides). Tools and Aides
 * Global Variables:
 ** "Accessing Global Variables":http://www.focusontheclouds.com/home/articles/72/accessing-global-variables-in-textpattern
 * "Plugin Development Mailing List":http://lists.textpattern.com/
-* "code&#95;hosting":/home/www/zendstudio/dokuwiki/bin/doku.php?id=code_hosting
+* "code_hosting":/home/www/zendstudio/dokuwiki/bin/doku.php?id=code_hosting
 * "How do I fetch the current development version?":http://textpattern.com/faq/103/how-do-i-fetch-the-current-development-version
 
 h3(sectionedit3#implementation). Implementation
 
-* "registered&#95;textpattern&#95;developer&#95;prefixes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=registered_textpattern_developer_prefixes (These are _not_ available to new plugin authors. You must add yours here. Use only one!)
-* "admin&#95;events&#95;and&#95;steps":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin_events_and_steps
-* "user&#95;roles&#95;and&#95;permissions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions
-* "database&#95;schema&#95;reference":/home/www/zendstudio/dokuwiki/bin/doku.php?id=database_schema_reference
+* "registered_textpattern_developer_prefixes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=registered_textpattern_developer_prefixes (These are _not_ available to new plugin authors. You must add yours here. Use only one!)
+* "admin_events_and_steps":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin_events_and_steps
+* "user_roles_and_permissions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions
+* "database_schema_reference":/home/www/zendstudio/dokuwiki/bin/doku.php?id=database_schema_reference
 * "extensions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=extensions (the Extensions tab in admin-side for administration-related plugins)
 
 h3(sectionedit4#beneficial_practice). Beneficial Practice

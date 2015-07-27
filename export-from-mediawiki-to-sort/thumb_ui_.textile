@@ -2,7 +2,7 @@
 
 h3(sectionedit1#name). Name
 
-thumb&#95;ui()
+thumb_ui()
 
 h3(sectionedit2#purpose). Purpose
 

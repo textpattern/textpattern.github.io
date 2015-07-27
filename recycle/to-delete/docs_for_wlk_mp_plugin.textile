@@ -1,6 +1,6 @@
 \n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
 
-"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Plugin Archive Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive &#124; "plugins&#95;alphabetical&#95;by&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name &#124; "plugins&#95;grouped&#95;by&#95;purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose
+"main_page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Plugin Archive Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive &#124; "plugins_alphabetical_by_name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name &#124; "plugins_grouped_by_purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose
 
 h3(sectionedit1#overview_of_plugin). Overview of Plugin
 
@@ -16,7 +16,7 @@ h3(sectionedit2#archived_zip_instructions). Archived Zip Instructions
 
 h3(sectionedit3#general_plugin_instructions). General Plugin Instructions
 
-Place the &lt;txp:wlk&#95;mp /&gt; tag in an article, form or page. Attributes
+Place the &lt;txp:wlk_mp /&gt; tag in an article, form or page. Attributes
 
 width - specify entire width of magazine box.
 
@@ -51,7 +51,7 @@ h3(sectionedit4#author_notes_about_use). Author notes about use
 
 h3(sectionedit5#examples_of_use). Examples of Use
 
-&lt;txp:wlk&#95;mp width=“600” padding=“3” alt=“magazine images” images=“1&#124;5&#124;6&#124;7” /&gt;
+&lt;txp:wlk_mp width=“600” padding=“3” alt=“magazine images” images=“1&#124;5&#124;6&#124;7” /&gt;
 
 Putting the tag in a form means that every article tries to load this up. How do you specify images, then?
 
@@ -61,5 +61,5 @@ And donâ€™t worry about using up too many resources, if no images are speci
 
 h3(sectionedit6#version_history). Version History
 
-* "wlk&#95;mp-0&#95;5.zip0.3":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wlk_mp-0_5.zip0.3
+* "wlk_mp-0_5.zip0.3":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wlk_mp-0_5.zip0.3
 

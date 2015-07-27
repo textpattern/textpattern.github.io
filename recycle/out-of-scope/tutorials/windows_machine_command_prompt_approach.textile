@@ -2,7 +2,7 @@
 
 h4(#overview). Overview
 
-This is an alternate approach to using "Subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#subversion with Windows. If you are not comfortable working in the command prompt, you are advised to use the "windows&#95;machine&#95;graphical&#95;user&#95;interface&#95;gui&#95;approach":/home/www/zendstudio/dokuwiki/bin/doku.php?id=windows_machine_graphical_user_interface_gui_approach.
+This is an alternate approach to using "Subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#subversion with Windows. If you are not comfortable working in the command prompt, you are advised to use the "windows_machine_graphical_user_interface_gui_approach":/home/www/zendstudio/dokuwiki/bin/doku.php?id=windows_machine_graphical_user_interface_gui_approach.
 
 There are two possible methods to this approach.
 

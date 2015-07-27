@@ -1,6 +1,6 @@
 \n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
 
-"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Plugin Archive Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive &#124; "plugins&#95;alphabetical&#95;by&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name &#124; "plugins&#95;grouped&#95;by&#95;purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose
+"main_page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Plugin Archive Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive &#124; "plugins_alphabetical_by_name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name &#124; "plugins_grouped_by_purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose
 
 h3(sectionedit1#plugin_overview). Plugin Overview
 
@@ -8,7 +8,7 @@ h3(sectionedit1#plugin_overview). Plugin Overview
 
 h3(sectionedit2#how_to_use_archived_package). How to Use Archived Package
 
-The archived package is a zip file that contains both the plugin text file and the required audio&#95;player files. Unzip the package to break out the files and then follow instructions as provided by plugin author.
+The archived package is a zip file that contains both the plugin text file and the required audio_player files. Unzip the package to break out the files and then follow instructions as provided by plugin author.
 
 h3(sectionedit3#useful_notes). Useful Notes
 

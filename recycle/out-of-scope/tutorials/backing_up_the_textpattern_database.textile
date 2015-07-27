@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 This section will describe how to back up your Textpattern installation.
 
@@ -22,7 +22,7 @@ bc(code). Export
 
 
 <p>.</p></li>
-<li>In the box you will want to select all the tables that are related to Textpattern. IE:textpattern and the other tables with a txp&#95; prefix.</li>
+<li>In the box you will want to select all the tables that are related to Textpattern. IE:textpattern and the other tables with a txp_ prefix.</li>
 <li>Select SQL as your as the Export option.</li>
 <li>Under the SQL Options box there is no need to change anything so skip this step.</li>
 <li><p>In the last box check the option</p>
@@ -43,9 +43,9 @@ bc(code). remember template
 
 *Note:* Reading the "phpMyAdmin":http://www.phpmyadmin.net/home_page/index.php documentation, which has more detailed backup information, is suggested.
 
-h3(sectionedit2#backing_up_with_rob_sable_rss_admin_db_manager_plugin). Backing up with Rob Sable rss&#95;admin&#95;db&#95;manager Plugin
+h3(sectionedit2#backing_up_with_rob_sable_rss_admin_db_manager_plugin). Backing up with Rob Sable rss_admin_db_manager Plugin
 
-This is probably the easiest route to go, when it comes to backing up your Database. Rob Sable has made a great plugin that allows you to maintain the Textpattern database directly from the Textpattern Admin Interface. You can get Rob's plugin from his website "rss&#95;admin&#95;db&#95;manager":http://www.wilshireone.com/textpattern-plugins/rss_admin_db_manager.
+This is probably the easiest route to go, when it comes to backing up your Database. Rob Sable has made a great plugin that allows you to maintain the Textpattern database directly from the Textpattern Admin Interface. You can get Rob's plugin from his website "rss_admin_db_manager":http://www.wilshireone.com/textpattern-plugins/rss_admin_db_manager.
 
 After you install the plugin you well see a new tab at the top of your screen between
 
@@ -57,7 +57,7 @@ and
 bc(code). View Site
 
 
-, this is were you well access the db&#95;manager.
+, this is were you well access the db_manager.
 
 <ol>
 <li><p>Click on the</p>

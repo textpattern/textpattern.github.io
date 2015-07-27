@@ -30,8 +30,8 @@ h3(sectionedit3#import_scripts_in_development). Import Scripts in Development
 
 (Add/edit links and start pages as needed.)
 
-* "importing&#95;from&#95;blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
-* "importing&#95;from&#95;moveable&#95;type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_moveable_type
-* "importing&#95;from&#95;pivot":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_pivot
-* "importing&#95;word&#95;press":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_word_press
+* "importing_from_blogger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger
+* "importing_from_moveable_type":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_moveable_type
+* "importing_from_pivot":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_pivot
+* "importing_word_press":/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_word_press
 

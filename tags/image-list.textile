@@ -7,7 +7,7 @@ h1. Image list DEPRECATED [todo:pw]
 bc(code). <txp:image_list />
 
 
-The "image&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_list tag is a _single_ or _container_ tag that Textpattern will use to gather a list of matching images uploaded via the TXP "images&#95;panel&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel tab. Utilising the other image tags in the suite "image&#95;info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info, "image&#95;url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_url, "image&#95;date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_date and "if&#95;thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_thumbnail) you can display simple image galleries from this list.
+The "image_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_list tag is a _single_ or _container_ tag that Textpattern will use to gather a list of matching images uploaded via the TXP "images_panel_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel tab. Utilising the other image tags in the suite "image_info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info, "image_url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_url, "image_date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_date and "if_thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_thumbnail) you can display simple image galleries from this list.
 
 If used as a _container_ tag, it must be specified as an opening and closing pair of tags, like this:
 
@@ -16,14 +16,14 @@ bc(code). <txp:image_list>
 </txp:image_list>
 
 
-This is equivalent to putting the contained statements into a form named “my&#95;form” and using
+This is equivalent to putting the contained statements into a form named “my_form” and using
 
 bc(code). <txp:image_list form="my_form" />
 
 
 .
 
-By default, the tag is context-sensitive, which means that in the absence of any other filter attributes (*id*, *name*, *category*, *author*, *realname*, *extension*, *thumbnail*), it will grab a list of image IDs from the currently viewed article's *article&#95;image* field. If it finds nothing there, it will check the URL to see if there is a category list in progress. If it finds nothg there too, the tag will display nothing. See the *auto&#95;detect* attribute for further information.
+By default, the tag is context-sensitive, which means that in the absence of any other filter attributes (*id*, *name*, *category*, *author*, *realname*, *extension*, *thumbnail*), it will grab a list of image IDs from the currently viewed article's *article_image* field. If it finds nothing there, it will check the URL to see if there is a category list in progress. If it finds nothg there too, the tag will display nothing. See the *auto_detect* attribute for further information.
 
 h3(sectionedit1#attributes). Attributes
 
@@ -64,7 +64,7 @@ bc(code). 0
 bc(code). img
 
 
-tag, specified without brackets. Default: unset. *"html&#95;id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#html_id=“id number”*
+tag, specified without brackets. Default: unset. *"html_id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#html_id=“id number”*
  The HTML
 
 bc(code). id
@@ -182,8 +182,8 @@ bc(code). name asc
 
 
 *"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“form name”*
- Use specified form for each image. If not used, and the container is empty, the tag will output a list of images that are compatible with "image&#95;display":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_display. Default: unset. *"auto&#95;detect":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#auto_detect=“string context”*
- List of Textpattern contexts to consider when automatically searching for images. If you wish to turn off the automatic check, set this to *auto&#95;detect=““*. You can choose from the following contexts: *article* to look in the article&#95;image field *category* to look in the URL for a category list *author* to look in the URL for an author list Default: *article, category, author*
+ Use specified form for each image. If not used, and the container is empty, the tag will output a list of images that are compatible with "image_display":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_display. Default: unset. *"auto_detect":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#auto_detect=“string context”*
+ List of Textpattern contexts to consider when automatically searching for images. If you wish to turn off the automatic check, set this to *auto_detect=““*. You can choose from the following contexts: *article* to look in the article_image field *category* to look in the URL for a category list *author* to look in the URL for an author list Default: *article, category, author*
 
 h3(sectionedit2#examples). Examples
 
@@ -193,39 +193,39 @@ This example shows the outcome of various attribute configurations to give you a
 
 NB: THESE MAY NOT BE CORRECT ANY MORE DUE TO TAG CHANGES SINCE THE EXAMPLES WERE WRITTEN. NEED VERIFICATION.
 
-*&lt;code&gt;&lt;txp:image&#95;list /&gt;&lt;/code&gt;*
+*&lt;code&gt;&lt;txp:image_list /&gt;&lt;/code&gt;*
  uses the current article image field as a list of image IDs. If the article image field is empty, it contains names/URLs, or the tag is used on an article list page, it returns no images. If, however, the tag is used on a category list page (e.g.
 
 bc(code). category/image/photos
 
 
-) then the *photos* category would be used *&lt;code&gt;&lt;txp:image&#95;list auto&#95;detect=”” /&gt;&lt;/code&gt;*
- displays all images in the database. *&lt;code&gt;&lt;txp:image&#95;list id=“” /&gt;&lt;/code&gt; &lt;code&gt;&lt;txp:image&#95;list name=“” /&gt;&lt;/code&gt; &lt;code&gt;&lt;txp:image&#95;list category=“” /&gt;&lt;/code&gt;*
+) then the *photos* category would be used *&lt;code&gt;&lt;txp:image_list auto_detect=”” /&gt;&lt;/code&gt;*
+ displays all images in the database. *&lt;code&gt;&lt;txp:image_list id=“” /&gt;&lt;/code&gt; &lt;code&gt;&lt;txp:image_list name=“” /&gt;&lt;/code&gt; &lt;code&gt;&lt;txp:image_list category=“” /&gt;&lt;/code&gt;*
  no images displayed. This means that if you did some tag-in-tag magic such as :
 
 bc(code). category='<txp:custom_field name="my_cats" />'
 
 
-it will show no images if the custom field is empty. *&lt;code&gt;&lt;txp:image&#95;list id=“2,3,6” /&gt;&lt;/code&gt;*
- display images 2, 3, and 6. *&lt;code&gt;&lt;txp:image&#95;list name=“lion.jpg, zebra.jpg” /&gt;&lt;/code&gt;*
- the named images are displayed. *&lt;code&gt;&lt;txp:image&#95;list name=“pengiun.jpg” /&gt;&lt;/code&gt;*
- no images are displayed (mis-spelled image name). *&lt;code&gt;&lt;txp:image&#95;list category=“mammals, birds” /&gt;&lt;/code&gt;*
- all images in the named categories are displayed. *&lt;code&gt;&lt;txp:image&#95;list category=“, mammals, birds” /&gt;&lt;/code&gt;*
- all images in the named categories and any uncategorized images are displayed. *&lt;code&gt;&lt;txp:image&#95;list category=“ ” /&gt;&lt;/code&gt;*
+it will show no images if the custom field is empty. *&lt;code&gt;&lt;txp:image_list id=“2,3,6” /&gt;&lt;/code&gt;*
+ display images 2, 3, and 6. *&lt;code&gt;&lt;txp:image_list name=“lion.jpg, zebra.jpg” /&gt;&lt;/code&gt;*
+ the named images are displayed. *&lt;code&gt;&lt;txp:image_list name=“pengiun.jpg” /&gt;&lt;/code&gt;*
+ no images are displayed (mis-spelled image name). *&lt;code&gt;&lt;txp:image_list category=“mammals, birds” /&gt;&lt;/code&gt;*
+ all images in the named categories are displayed. *&lt;code&gt;&lt;txp:image_list category=“, mammals, birds” /&gt;&lt;/code&gt;*
+ all images in the named categories and any uncategorized images are displayed. *&lt;code&gt;&lt;txp:image_list category=“ ” /&gt;&lt;/code&gt;*
  just uncategorized images are displayed (note that
 
 bc(code). category=","
 
 
-also works, but a space looks better). *&lt;code&gt;&lt;txp:image&#95;list author=“attenborough, morris” /&gt;&lt;/code&gt;*
- all images by author (ID) *attenborough* and *morris* are displayed. *&lt;code&gt;&lt;txp:image&#95;list realname=“David+Attenborough” /&gt;&lt;/code&gt;*
- all images by author *David Attenborough* are displayed. This incurs one extra query to look up the author's ID from the given real name. *&lt;code&gt;&lt;txp:image&#95;list category=“mammals, birds” author=“attenborough, morris” /&gt;&lt;/code&gt;*
- all images in the named categories that are assigned to the named authors are displayed. *&lt;code&gt;&lt;txp:image&#95;list category=“mammals, birds” extension=“.jpg” /&gt;&lt;/code&gt;*
- all jpg images in the named categories are displayed. *&lt;code&gt;&lt;txp:image&#95;list category=“mammals, birds” extension=“.jpg” author=“attenborough, morris” /&gt;&lt;/code&gt;*
- all jpg images in the named categories that are assigned to the named authors are displayed. *&lt;code&gt;&lt;txp:image&#95;list extension=“.gif” /&gt;&lt;/code&gt;*
- all GIF images are displayed. *&lt;code&gt;&lt;txp:image&#95;list category=“mammals, birds” thumbnail=“1” /&gt;&lt;/code&gt;*
- all images in the named categories that have thumbnails assigned to them are displayed. *&lt;code&gt;&lt;txp:image&#95;list thumbnail=“1” /&gt;&lt;/code&gt;*
- all images that have thumbnails assigned to them are displayed. *&lt;code&gt;&lt;txp:image&#95;list thumbnail=“0” /&gt;&lt;/code&gt;*
+also works, but a space looks better). *&lt;code&gt;&lt;txp:image_list author=“attenborough, morris” /&gt;&lt;/code&gt;*
+ all images by author (ID) *attenborough* and *morris* are displayed. *&lt;code&gt;&lt;txp:image_list realname=“David+Attenborough” /&gt;&lt;/code&gt;*
+ all images by author *David Attenborough* are displayed. This incurs one extra query to look up the author's ID from the given real name. *&lt;code&gt;&lt;txp:image_list category=“mammals, birds” author=“attenborough, morris” /&gt;&lt;/code&gt;*
+ all images in the named categories that are assigned to the named authors are displayed. *&lt;code&gt;&lt;txp:image_list category=“mammals, birds” extension=“.jpg” /&gt;&lt;/code&gt;*
+ all jpg images in the named categories are displayed. *&lt;code&gt;&lt;txp:image_list category=“mammals, birds” extension=“.jpg” author=“attenborough, morris” /&gt;&lt;/code&gt;*
+ all jpg images in the named categories that are assigned to the named authors are displayed. *&lt;code&gt;&lt;txp:image_list extension=“.gif” /&gt;&lt;/code&gt;*
+ all GIF images are displayed. *&lt;code&gt;&lt;txp:image_list category=“mammals, birds” thumbnail=“1” /&gt;&lt;/code&gt;*
+ all images in the named categories that have thumbnails assigned to them are displayed. *&lt;code&gt;&lt;txp:image_list thumbnail=“1” /&gt;&lt;/code&gt;*
+ all images that have thumbnails assigned to them are displayed. *&lt;code&gt;&lt;txp:image_list thumbnail=“0” /&gt;&lt;/code&gt;*
  all images that do not have thumbnails assigned to them are displayed.
 
 h4(#example_2description_goes_here). Example 2: description goes here

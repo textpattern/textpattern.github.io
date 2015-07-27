@@ -1,4 +1,4 @@
-\n"mininav&#95;primary&#95;backoffice&#95;tabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_primary_backoffice_tabs
+\n"mininav_primary_backoffice_tabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_primary_backoffice_tabs
 
 See also the Administration tutorials page.
 
@@ -14,11 +14,11 @@ Unless you make modifications to your file tree (not recommended if you are just
 
 h3(sectionedit2#first-time_login_landing_point). First-Time Login Landing Point
 
-When you install Textpattern and login for the first time (or when you first login after upgrading an installation), the default view will be in the "admin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin area, specifically at the "language&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences view where you need to install/update the languages you choose to use (Figure 2).
+When you install Textpattern and login for the first time (or when you first login after upgrading an installation), the default view will be in the "admin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin area, specifically at the "language_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences view where you need to install/update the languages you choose to use (Figure 2).
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:languages-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:languages-tab.png
 
-From there you should configure your "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences, check/troubleshoot "diagnostics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics as needed, and then tackle setting up site architecture and presentation with a little trial and error. The latter is a big chunk of learning and doing and there's no direct 1-2-3 method for it, but this wiki is here, the learning is fun, and once you understand how it all fits together you'll thank yourself for choosing such an elegant system.
+From there you should configure your "basic_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences, check/troubleshoot "diagnostics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics as needed, and then tackle setting up site architecture and presentation with a little trial and error. The latter is a big chunk of learning and doing and there's no direct 1-2-3 method for it, but this wiki is here, the learning is fun, and once you understand how it all fits together you'll thank yourself for choosing such an elegant system.
 
 h3(sectionedit3#routine_login_landing_point). Routine Login Landing Point
 
@@ -26,5 +26,5 @@ After your initial login, all other admin-side visits will default you directly 
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-tab.png
 
-You can optionally change the location of your login landing point from the "advanced&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences tab in the "admin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin area: set the _Default admin tab_ dropdown to your preferred page.
+You can optionally change the location of your login landing point from the "advanced_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences tab in the "admin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin area: set the _Default admin tab_ dropdown to your preferred page.
 

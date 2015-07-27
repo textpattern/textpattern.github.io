@@ -46,12 +46,12 @@ h3(sectionedit3#working_documents). Working Documents
 
 h4(#current_project1). Current project
 
-* "semantic&#95;markup&#95;proposal":/home/www/zendstudio/dokuwiki/bin/doku.php?id=semantic_markup_proposal (outline of new markup, as proposed and agreed on the forum)
+* "semantic_markup_proposal":/home/www/zendstudio/dokuwiki/bin/doku.php?id=semantic_markup_proposal (outline of new markup, as proposed and agreed on the forum)
 
 h4(#further_development1). Further development
 
 * (the place to keep track of all our ideas)
-* "textpattern&#95;identity&#95;guiding&#95;principles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_identity_guiding_principles
+* "textpattern_identity_guiding_principles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_identity_guiding_principles
 * "workflow":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_users:workflow (this should eventually be cross-ref with Feature ideas..., see above)
 
 h3(sectionedit4#working_group). Working Group
@@ -64,7 +64,7 @@ Your forum name, email:
 
 * hazel - office [at] graphics-plus.co.uk
 * Ace of Dubs - steven [at] housecafemusic.com
-* Jakob - jakob&#95;r [at] gmx.net
+* Jakob - jakob_r [at] gmx.net
 * rloaderro - support [at] travelatlas.org
 
 h4(#debugging). Debugging

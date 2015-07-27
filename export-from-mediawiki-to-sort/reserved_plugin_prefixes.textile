@@ -44,14 +44,14 @@ h3(sectionedit2#b). B
  bauhouse *bas*
  Bastian *beb*
  1beb *ben*
- Baseline&#95;Benny *bep*
- alice&#95;c *bit*
+ Baseline_Benny *bep*
+ alice_c *bit*
  bit *bkp*
  AkaScooter *bnk*
  Duncan Clarke (website and forum account unknown) *bos*
  Zanza *bot*
  redbot *bsl*
- polygon&#95;monkey *btx*
+ polygon_monkey *btx*
  DougBTX *bud*
  andyb
 
@@ -113,7 +113,7 @@ h3(sectionedit6#f). F
 *fgr*
  fathersGrave *fha*
  mamash *fng*
- fungus&#95;sn *foo*
+ fungus_sn *foo*
  Documentation sample *fox*
  Gr3yFox *fpx*
  Flashpix
@@ -181,7 +181,7 @@ h3(sectionedit10#j). J
  Rufnex *jgp*
  Rufnex *jjj*
  jascha *jk*
- Jeff&#95;K *jmc*
+ Jeff_K *jmc*
  jufemaiz *jmd*
  jm *jmr*
  jmrhoades *jnm*
@@ -296,7 +296,7 @@ h3(sectionedit17#q_-_r). Q - R
  Internally used by Textpattern *rss*
  wilshire *rsx*
  ramanan *rtr*
- rob&#95;roy, possibly abandoned? *rvm*
+ rob_roy, possibly abandoned? *rvm*
  ruud
 
 h3(sectionedit18#s). S
@@ -339,7 +339,7 @@ h3(sectionedit19#t). T
  Internally used by Textpattern *tfu*
  carton *the*
  Internally used by Textpattern *thg*
- the&#95;ghost *tin*
+ the_ghost *tin*
  jeroen *tps*
  Tomsec *tpt*
  Internally used by Textpattern *tru*

@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 _Originally adapted from "this tutorial":http://ipsedixit.net/txp/116/textpattern-quickstart-hello-world by "Jeff Soo":http://ipsedixit.net/txp/._
 
@@ -7,7 +7,7 @@ Moving from traditional, static web development to dynamic, CMS-based developmen
 Two good choices for introductory "Textpattern":http://textpattern.com/ tutorials are:
 
 * "Understanding Textpattern Building Blocks":http://wion.com/articles/understanding-textpattern-building-blocks. This is the “big picture” approach, if you like to start with theory.
-* "textpattern&#95;first&#95;steps":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_first_steps. The “feel your way around” approach, if you prefer to tinker with an existing installation.
+* "textpattern_first_steps":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_first_steps. The “feel your way around” approach, if you prefer to tinker with an existing installation.
 
 Then there's the “Hello, World!” approach -- start from a blank slate and add pieces one at a time. It's not for everyone so do have a look at the above links. Otherwise, read on:
 
@@ -222,7 +222,7 @@ Create some new article categories in "categories":/home/www/zendstudio/dokuwiki
 
 h3(sectionedit8#forms). Forms
 
-Textpattern forms (see "Forms Explained":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, not to be confused with "HTML forms":http://htmlhelp.com/reference/html40/forms/form.html) are reusable template chunks, a convenient way to keep your templates tidy and also to share code and markup among templates. For example, on my Textpattern sites I nearly always have a form called “page&#95;top”, which contains the doctype declaration, the opening
+Textpattern forms (see "Forms Explained":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, not to be confused with "HTML forms":http://htmlhelp.com/reference/html40/forms/form.html) are reusable template chunks, a convenient way to keep your templates tidy and also to share code and markup among templates. For example, on my Textpattern sites I nearly always have a form called “page_top”, which contains the doctype declaration, the opening
 
 bc(code). <html>
 
@@ -269,9 +269,9 @@ this way, it generally uses the “default” article form. The exception is sea
 bc(code). article
 
 
-looks for a form called “search&#95;results”.
+looks for a form called “search_results”.
 
-Go to "Presentation→Forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms. We're going to overwrite the “default” and “search&#95;results” forms, so if you want to keep the originals copy each of them and make new forms to hold the backups. Again, this is optional, because you can always retrieve “the "default&#95;forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms.
+Go to "Presentation→Forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms. We're going to overwrite the “default” and “search_results” forms, so if you want to keep the originals copy each of them and make new forms to hold the backups. Again, this is optional, because you can always retrieve “the "default_forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms.
 
 Load the “default” form into the editor by clicking its link in the right-hand list. Replace the entire contents of the form with:
 
@@ -283,7 +283,7 @@ bc(code). <h2><txp:permlink><txp:title /></txp:permlink></h2>
 </txp:if_individual_article>
 
 
-and save the change. Select “search&#95;results” for editing and replace its contents with:
+and save the change. Select “search_results” for editing and replace its contents with:
 
 bc(code). <h2><txp:permlink><txp:title /></txp:permlink></h2>
 <txp:search_result_excerpt />

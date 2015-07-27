@@ -7,11 +7,11 @@ The
 bc(code). zem_article_event
 
 
-tag can be used as a "Single&#95;Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag or a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag. It will take a form attribute as a "Single&#95;Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag as well as other attributes. When used as a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag the contained statements are executed recursively as the "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag's form.
+tag can be used as a "Single_Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag or a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag. It will take a form attribute as a "Single_Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag as well as other attributes. When used as a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag the contained statements are executed recursively as the "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag's form.
 
 h4(#syntax). Syntax
 
-The _zem&#95;article&#95;event_ tag has the following syntactic structure...
+The _zem_article_event_ tag has the following syntactic structure...
 
 bc(code). <txp:zem_article_event />
 
@@ -47,7 +47,7 @@ bc(code). **zem_event_display**
 
 h4(#examples). Examples
 
-h5(#example_1zem_event_display_form_default). Example 1: zem&#95;event&#95;display form (default)
+h5(#example_1zem_event_display_form_default). Example 1: zem_event_display form (default)
 
 bc(code). <txp:zem_event_permlink wraptag="" >
   <txp:zem_event_name label="Event" wraptag="" />

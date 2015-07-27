@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 "warning":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=warning
 
@@ -34,11 +34,11 @@ There is an excellent and more in-depth overview you can find here: "$":http://w
 
 h4(#utf-8_support_in_textpattern). UTF-8 support in Textpattern
 
-Textpattern supports UTF-8 as best as is possible under the circumstances (also see the explanation under the _The Quick Guide for the End-User_ section above). What this currently means is when you install Textpattern it will (if you are using MySQL4.1 and above) create the tables in the database as UTF-8 (with the default UTF-8 collation of utf8&#95;general&#95;ci). Textpattern uses MySQL's fulltext indexing to provide its search-functionality, this means if you are using characters outside of the ASCII range your search will likely only function properly with MySQL4.1 and above (but Textpattern will still work with MySQL versions 4.0.x and 3.x in general).
+Textpattern supports UTF-8 as best as is possible under the circumstances (also see the explanation under the _The Quick Guide for the End-User_ section above). What this currently means is when you install Textpattern it will (if you are using MySQL4.1 and above) create the tables in the database as UTF-8 (with the default UTF-8 collation of utf8_general_ci). Textpattern uses MySQL's fulltext indexing to provide its search-functionality, this means if you are using characters outside of the ASCII range your search will likely only function properly with MySQL4.1 and above (but Textpattern will still work with MySQL versions 4.0.x and 3.x in general).
 
 Currently Textpattern tries to be as conservative as possible in the use of PHP's string-functions. So articles are only processed by Textile which only replaces distinct syntax that it recognizes and otherwise leaves the text alone. The i18n-strings that Textpattern uses for the admin-side (and some parts of the public-side) are also in UTF-8 and stay mostly untouched.
 
-*Note:* Textpattern does not rely on the mb&#95;strings extension for PHP. Future versions may well take advantage of it where available, but it won't be a requirement.
+*Note:* Textpattern does not rely on the mb_strings extension for PHP. Future versions may well take advantage of it where available, but it won't be a requirement.
 
 h3(sectionedit3#troubleshooting_unicode_problems_in_textpattern). Troubleshooting unicode problems in Textpattern
 
@@ -53,7 +53,7 @@ In high-level diagnostics we can find more detailed information about the config
 bc(code). Charset (default/config)
 
 
-gives us two pieces of information - the first one *(default)* tells us which character-encoding the mysql-connection *would* use as a default. For some mysql-versions this will report the collation that is used for the connection, so if you see something like 'latin1&#95;swedish&#95;ci' don't be confused (swedish is the default collation of MySQL for latin1 character sets).
+gives us two pieces of information - the first one *(default)* tells us which character-encoding the mysql-connection *would* use as a default. For some mysql-versions this will report the collation that is used for the connection, so if you see something like 'latin1_swedish_ci' don't be confused (swedish is the default collation of MySQL for latin1 character sets).
 
 The second one *config* reflects the configured charset in _config.php_. It is important to understand that this _config_ value will only set the encoding of the *connection* (using the mysql-command SET NAMES ...), therefore it must reflect the encoding of the tables in the database. You should *never* have to set or change this value manually (unless you are downgrading from post MySQL 4.1.x to MySQL 4.0 or older, which is described in its own section below) - this value is set automatically by Textpattern during initial installation according to the tables that are created. If the _config_ value is empty this likely means your initial installation of Textpattern was pre-1.0rc4, and you are using an upgraded version. In this case Textpattern falls back to using whichever defaults your system is set up to - For table creation as well as for the connection.
 
@@ -85,7 +85,7 @@ If you are using an upgrade or plugins that create additional tables your exact 
 # Check tables didn't find an error in the tables,
 # and more importantly, that the character set of the table matches the one we have set in *config* above.
 
-If the charset for the tables are different from _config_, you will see something like: _txp&#95;permissions is latin1_. Which means that config is probably set to utf8, but this specific table is set to latin1. (Note: This is not a problem for the permissions table, since only numbers are stored anyway. But for tables that store text, this is a likely source of mangled characters)
+If the charset for the tables are different from _config_, you will see something like: _txp_permissions is latin1_. Which means that config is probably set to utf8, but this specific table is set to latin1. (Note: This is not a problem for the permissions table, since only numbers are stored anyway. But for tables that store text, this is a likely source of mangled characters)
 
 h4(#converting_tables). Converting Tables
 

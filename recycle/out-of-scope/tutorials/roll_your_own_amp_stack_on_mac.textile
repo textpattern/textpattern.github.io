@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 This guide will get you up and running with a custom Apache, MySQL, and PHP install on Leopard. Compared to "MAMP.app":http://mamp.info, a homegrown setup uses less resources because you're not using a separate application.
 

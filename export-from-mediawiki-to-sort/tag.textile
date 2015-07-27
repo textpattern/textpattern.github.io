@@ -1,4 +1,4 @@
-\n"mininav&#95;core&#95;function&#95;reference":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_core_function_reference
+\n"mininav_core_function_reference":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_core_function_reference
 
 h3(sectionedit1#description). Description
 

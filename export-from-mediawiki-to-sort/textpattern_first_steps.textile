@@ -147,7 +147,7 @@ bc(code). <txp:body / >
 bc(code). <txp:article listform="article_listing" limit="5" />
 
 </li>
-<li>This txp tag dictates the main content. It means “If this page is a list, then use the form called article&#95;listing. Otherwise use the default article form.”</li>
+<li>This txp tag dictates the main content. It means “If this page is a list, then use the form called article_listing. Otherwise use the default article form.”</li>
 <li><p>Change it to:</p>
 bc(code). <txp:article form="defaultform" listform="article_listing" limit="5" />
 
@@ -203,7 +203,7 @@ People say Textpattern is a steep learning curve, especially understanding forms
 
 <ol>
 <li>Go to the *Pages* tab, open the *archive* page template and copy it as *fun*.</li>
-<li>Check you are *editing page template* _fun_, scroll down to where it says &lt;_yamdwe&#95;nowiki&gt;0&lt;/_yamdwe&#95;nowiki&gt; and delete it and everything up to where it says &lt;_yamdwe&#95;nowiki&gt;1&lt;/_yamdwe&#95;nowiki&gt; *_SAVE._*</li>
+<li>Check you are *editing page template* _fun_, scroll down to where it says &lt;_yamdwe_nowiki&gt;0&lt;/_yamdwe_nowiki&gt; and delete it and everything up to where it says &lt;_yamdwe_nowiki&gt;1&lt;/_yamdwe_nowiki&gt; *_SAVE._*</li>
 <li>Go to the *Sections* tab
 <ul>
 <li>*Create* a new section called *fun*</li>
@@ -231,7 +231,7 @@ People say Textpattern is a steep learning curve, especially understanding forms
 bc(code). <txp:article listform="article_listing" limit="5" />
 
 
-<p>This txp tag dictates the main content. It means “If this page is a list, then use the form called article&#95;listing. Otherwise use the default article form.” The default article form includes the page title, author etc so we will create a custom form and use that instead.</p></li>
+<p>This txp tag dictates the main content. It means “If this page is a list, then use the form called article_listing. Otherwise use the default article form.” The default article form includes the page title, author etc so we will create a custom form and use that instead.</p></li>
 <li>Go to the *Forms* tab
 <ul>
 <li>*Copy* the contents of the *default* form</li>
@@ -276,7 +276,7 @@ bc(code).
 </li>
 </ul>
 
-&lt;img src=“&lt;txp:site&#95;url /&gt;images/1.gif” width=“400” height=“1” alt=“ -- ” title=“” /&gt; (This removes the divider line)
+&lt;img src=“&lt;txp:site_url /&gt;images/1.gif” width=“400” height=“1” alt=“ -- ” title=“” /&gt; (This removes the divider line)
 
 <ul>
 <li><p>*Delete*</p>
@@ -285,7 +285,7 @@ bc(code).
 </li>
 </ul>
 
-&lt;txp:link&#95;to&#95;prev&gt;...&lt;/txp:link&#95;to&#95;next&gt; (If there was more than one article in the fun section this would create a link there, so let's delete it)
+&lt;txp:link_to_prev&gt;...&lt;/txp:link_to_next&gt; (If there was more than one article in the fun section this would create a link there, so let's delete it)
 
 * *_SAVE_*
 
@@ -366,7 +366,7 @@ h4(#task_10_-_categories_are_not_sections). Task 10 - Categories Are Not Section
 bc(code). div id="sidebar-1">
 
 </li>
-<li>You will see code for section&#95;list, search and feed</li>
+<li>You will see code for section_list, search and feed</li>
 <li><p>Put your cursor just after</p>
 bc(code). label="Atom" />
 

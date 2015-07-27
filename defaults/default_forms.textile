@@ -2,7 +2,7 @@
 
 h3(sectionedit1#article_forms). Article Forms
 
-h4(#article_listing). article&#95;listing
+h4(#article_listing). article_listing
 
 <pre class="code">
 &lt;txp:if_first_article&gt;&lt;ul id=&quot;article-list&quot;&gt;&lt;/txp:if_first_article&gt;
@@ -21,7 +21,7 @@ h4(#article_listing). article&#95;listing
 &lt;txp:if_last_article&gt;&lt;/ul&gt;&lt;/txp:if_last_article&gt;
 </pre>
 
-h4(#comments_display). comments&#95;display
+h4(#comments_display). comments_display
 
 <pre class="code">
 &lt;!-- added an id attribute to the section so we can link directly to here e.g. http://mysite.com/section/article#comments-head --&gt;
@@ -137,7 +137,7 @@ h4(#default). default
 &lt;/article&gt;
 </pre>
 
-h4(#search_results). search&#95;results
+h4(#search_results). search_results
 
 <pre class="code">
 &lt;txp:if_search&gt;
@@ -238,7 +238,7 @@ h4(#images). images
 &lt;/txp:if_variable&gt;
 </pre>
 
-h4(#search_input). search&#95;input
+h4(#search_input). search_input
 
 bc(code). <form role="search" method="get" action="<txp:site_url />">
   <h4><label for="search-textbox"><txp:text item="search" /></label></h4>
@@ -284,7 +284,7 @@ h4(#comments). comments
 &lt;/article&gt;
 </pre>
 
-h4(#comment_form). comment&#95;form
+h4(#comment_form). comment_form
 
 <pre class="code">
 &lt;txp:comments_error wraptag=&quot;ul&quot; break=&quot;li&quot; /&gt;
@@ -318,7 +318,7 @@ h4(#comment_form). comment&#95;form
 &lt;p&gt;&lt;txp:comment_preview /&gt; &lt;txp:comment_submit /&gt;&lt;/p&gt;
 </pre>
 
-h4(#popup_comments). popup&#95;comments
+h4(#popup_comments). popup_comments
 
 <pre class="code">
 &lt;!DOCTYPE html&gt;

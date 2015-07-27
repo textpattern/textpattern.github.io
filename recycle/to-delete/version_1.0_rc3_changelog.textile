@@ -55,15 +55,15 @@ bc(code). <label>
 <li>Closed a potential mail-relay hole in email-comments function (zem)</li>
 <li>Closed off code injection vulnerabilities in comments</li>
 <li>Commenter and referrer IP addresses are now checked against the following spam blacklists: bl.spamcop.net, list.dsbl.org and sbl.spamhaus.org</li>
-<li>Completely removed reliance on the flaky prefs variables $doc&#95;root and $path&#95;from&#95;root. This means Textpattern should now run as intended on subdomains and tilde sites. There are three master variables that now define everything: $siteurl (the http-reachable address of the site, including subdirectory if any), $path&#95;to&#95;site (the full server path to the site, mainly useful for handling file uploads), and the familiar $txpath (which is set at install).</li>
+<li>Completely removed reliance on the flaky prefs variables $doc_root and $path_from_root. This means Textpattern should now run as intended on subdomains and tilde sites. There are three master variables that now define everything: $siteurl (the http-reachable address of the site, including subdirectory if any), $path_to_site (the full server path to the site, mainly useful for handling file uploads), and the familiar $txpath (which is set at install).</li>
 <li>Dealt with the annoying regex error that would occur when site.com/subdirectory/ urls were recorded in the Web Domain field in prefs</li>
 <li>Fixed a bug in XML feeds: characters already converted to entities by Textile were being re-encoded by htmlspecialchars (zem)</li>
 <li>Fixed a problem where txp:keywords was outputting the current section name instead of, you know, keywords</li>
 <li>Fixed error thrown when a label was used inside txp:linklist tags (remillard)</li>
-<li>Fixed some forehead-smackingly stupid flaws in the way $&#95;POST variables were handled when saving comments</li>
+<li>Fixed some forehead-smackingly stupid flaws in the way $_POST variables were handled when saving comments</li>
 <li>Fixed two bugs in the IP bannning code: one that prevented banned IPs from being blocked, and one that stopped unban from working (zem)</li>
-<li>Fixed two problems in discuss&#95;edit: first, when comments containing i18n characters were double-escaped in the admin textarea for editing a comment. Second, when an edited comment is saved, characters weren't re-encoded as HTML entities. (zem)</li>
-<li>Fixed txp:recent&#95;comments output, which was failing to display commentator names as before</li>
+<li>Fixed two problems in discuss_edit: first, when comments containing i18n characters were double-escaped in the admin textarea for editing a comment. Second, when an edited comment is saved, characters weren't re-encoded as HTML entities. (zem)</li>
+<li>Fixed txp:recent_comments output, which was failing to display commentator names as before</li>
 <li><p>Having comments presented as a numbered list (using</p>
 bc(code). 
 

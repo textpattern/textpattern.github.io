@@ -6,7 +6,7 @@ Expand Textile syntax to accept a shorthand notation for referencing site-local 
 
 h4(#feature). Feature
 
-Textile should contain a method of creating links to articles and files, as well as for calling images and thumbnails out of the textpattern repository, thus reducing the need for plugins like zem&#95;link or upm&#95;image.
+Textile should contain a method of creating links to articles and files, as well as for calling images and thumbnails out of the textpattern repository, thus reducing the need for plugins like zem_link or upm_image.
 
 One possible solution: Any numerical reference following Textile's standard notation of links and images will be interpreted as an article's or image's id.
 

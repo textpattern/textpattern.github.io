@@ -7,11 +7,11 @@ The
 bc(code). zem_event_finish_time
 
 
-tag is used as a "Single&#95;Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag. Used in a zem&#95;event&#95;list form, it returns the contents of the event's finish time field.
+tag is used as a "Single_Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag. Used in a zem_event_list form, it returns the contents of the event's finish time field.
 
 h4(#syntax). Syntax
 
-The _zem&#95;event&#95;finish&#95;time_ tag has the following syntactic structure...
+The _zem_event_finish_time_ tag has the following syntactic structure...
 
 bc(code). <txp:zem_event_finish_time />
 
@@ -49,7 +49,7 @@ bc(code).  %X
 
 h4(#examples). Examples
 
-h5(#example_1modified_zem_event_display_form_default). Example 1: modified zem&#95;event&#95;display form (default)
+h5(#example_1modified_zem_event_display_form_default). Example 1: modified zem_event_display form (default)
 
 bc(code). <txp:zem_event_permlink wraptag="" >
   <txp:zem_event_name label="Event" wraptag="" />

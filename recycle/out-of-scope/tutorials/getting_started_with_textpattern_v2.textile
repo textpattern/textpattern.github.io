@@ -1,15 +1,15 @@
-\n &#42; "textpattern&#95;first&#95;steps":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_first_steps
+\n &#42; "textpattern_first_steps":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_first_steps
 
-* "textpattern&#95;semantic&#95;model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model
+* "textpattern_semantic_model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model
 * "Textpattern Tabs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=site_administration
-* "detailed&#95;installation&#95;instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_installation_instructions
+* "detailed_installation_instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_installation_instructions
 * "Understanding Textpattern Building Blocks":http://wion.com/journal/understanding-textpattern-building-blocks original article by Destry Wion (offered 7 January 2006).
 * "Textpattern Building Block Mechanics":http://wion.com/journal/textpattern-building-block-mechanics original article by Destry Wion (offered 30 May 2006)
 
 Also
 
-* "textpattern&#95;capabilities&#95;and&#95;features":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_capabilities_and_features &#124; "//Can Textpattern do this?//":http://textpattern.com/faq/57/can-i-use-textpattern-to-do-this
-* "textpattern&#95;101":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_101 A cross between a tutorial and a novel!
+* "textpattern_capabilities_and_features":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_capabilities_and_features &#124; "//Can Textpattern do this?//":http://textpattern.com/faq/57/can-i-use-textpattern-to-do-this
+* "textpattern_101":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_101 A cross between a tutorial and a novel!
 * "System Requirements":http://textpattern.com/faq/119/what-are-the-system-requirements
 * Short Installation Instructions: "Short":http://textpattern.com/download/
 * "Installation":http://thegentlemenslull.com/manual/textpattern/1-installation.mp4 (Quicktime video)

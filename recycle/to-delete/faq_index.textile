@@ -24,7 +24,7 @@ h3(sectionedit2#errors_warnings_and_notices_26). Errors, warnings and notices (2
 * "Comment emails aren't received":http://textpattern.com/faq/115/comment-emails-arent-received
 * "The install page shows a jumble of PHP code":http://textpattern.com/faq/113/the-install-page-shows-a-jumble-of-php-code
 * "Article Images aren't working":http://textpattern.com/faq/109/article-images-arent-working
-* "Tabs show up as tab&#95;content, tab&#95;presentation..":http://textpattern.com/faq/106/tabs-show-up-as-tab_content-tab_presentation
+* "Tabs show up as tab_content, tab_presentation..":http://textpattern.com/faq/106/tabs-show-up-as-tab_content-tab_presentation
 * "404 error unless I use index.php":http://textpattern.com/faq/104/404-error-unless-i-use-indexphp
 * "Client does not support authentication protocol requested by server":http://textpattern.com/faq/96/client-does-not-support-authentication-protocol-requested-by-server
 * "412 Precondition Failed":http://textpattern.com/faq/89/412-precondition-failed
@@ -36,7 +36,7 @@ h3(sectionedit2#errors_warnings_and_notices_26). Errors, warnings and notices (2
 * "404 error when linking to article pages":http://textpattern.com/faq/66/404-error-when-linking-to-article-pages
 * "500 Internal Server Error":http://textpattern.com/faq/52/500-internal-server-error
 * "Notice: undefined variable..":http://textpattern.com/faq/44/notice-undefined-variable
-* "Fatal error: xml&#95;parser&#95;create":http://textpattern.com/faq/42/fatal-error-xml_parser_create
+* "Fatal error: xml_parser_create":http://textpattern.com/faq/42/fatal-error-xml_parser_create
 * "Notice: Constant txpinterface already defined..":http://textpattern.com/faq/41/notice-constant-txpinterface-already-defined
 * "Fatal error: Call to undefined function..":http://textpattern.com/faq/38/fatal-error-call-to-undefined-function
 * "Warning: failed to open stream..":http://textpattern.com/faq/37/warning-failed-to-open-stream
@@ -81,7 +81,7 @@ h3(sectionedit6#presentation_and_templates_20). Presentation and templates (20)
 * How do I search in the current section only
 * Where can I get the default templates?
 * Comment display confusion
-* What does article&#95;custom do?
+* What does article_custom do?
 * How do I keep a post at the top of the page?
 * How do I change the article markup?
 * How do I skip the comment preview?
@@ -99,21 +99,21 @@ h3(sectionedit6#presentation_and_templates_20). Presentation and templates (20)
 h3(sectionedit7#releases402_3). Releases: 4.0.2 (3)
 
 * How can I tell if I've upgraded correctly?
-* How do I turn off register&#95;globals?
-* if&#95;comments, comments&#95;invite changes
+* How do I turn off register_globals?
+* if_comments, comments_invite changes
 
 h3(sectionedit8#template_tags_12). Template Tags (12)
 
-* if&#95;category vs. if&#95;article&#95;category
+* if_category vs. if_article_category
 * Is there a tag or attribute for..
 * How do I change the appearance of..
 * How do I create navigation links?
-* Problems with nested txp:if&#95;.. tags
+* Problems with nested txp:if_.. tags
 * Can I use PHP code in article bodies?
 * How do I use PHP code?
 * Can I use txp tags in articles?
 * How do I use a custom date format?
 * My dates look like 'Y m d'!
 * Why aren't the right articles showing up on my page?
-* How do I change the output of txp:recent&#95;articles?
+* How do I change the output of txp:recent_articles?
 

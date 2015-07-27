@@ -1,8 +1,8 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 h3(sectionedit1#overview). Overview
 
-This document describes how to set up and use a XAMPP package for Textpattern development on a Windows machine (all things working optimally). These instructions describe using the normal ZIP package or 7-zip executable package. Both are the same thing, but the latter is self-extracting and the file size is much smaller so it downloads quicker. We are not focusing on the _installer_ version for two reasons: First, the installer version installs files into the Windows registry, a place people generally don't like to mess around with. Second, the installer version requires a complete uninstall/reinstall of XAMPP if you ever decide to move it to another drive/partition. Contrarily, the zip versions are completely independant of your registry, and can be moved physically moved to another drive, followed by a simple reset of the _xampp/setup&#95;xampp.bat_ file. (Be warned: if you move a xampp install you will potentially need to account for a number of changed paths, such as any VirtualHosts you might have set, your Textpattern config paths, and so forth. Simply rerunning the _setup&#95;xampp.bat_ file does not do this for you.)
+This document describes how to set up and use a XAMPP package for Textpattern development on a Windows machine (all things working optimally). These instructions describe using the normal ZIP package or 7-zip executable package. Both are the same thing, but the latter is self-extracting and the file size is much smaller so it downloads quicker. We are not focusing on the _installer_ version for two reasons: First, the installer version installs files into the Windows registry, a place people generally don't like to mess around with. Second, the installer version requires a complete uninstall/reinstall of XAMPP if you ever decide to move it to another drive/partition. Contrarily, the zip versions are completely independant of your registry, and can be moved physically moved to another drive, followed by a simple reset of the _xampp/setup_xampp.bat_ file. (Be warned: if you move a xampp install you will potentially need to account for a number of changed paths, such as any VirtualHosts you might have set, your Textpattern config paths, and so forth. Simply rerunning the _setup_xampp.bat_ file does not do this for you.)
 
 h4(#installation_considerations). Installation Considerations
 
@@ -70,16 +70,16 @@ bc(code). C:\>cd xampp
 
 so your prompt finally looks like *C:\xampp&gt;*.
 
-# Finally, run the _xampp&#95;start.exe_ file like so:
+# Finally, run the _xampp_start.exe_ file like so:
 
 bc(code). C:\xampp>xampp_start.exe
 
 
 You should see error-free shell output similar to Figure 1, and the Control Panel should launch in your systems tray with Apache and MySQL running (you could open the Control Panel to check this for yourself). You must leave this shell open until you are ready to shut XAMPP down.
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:xampp_win_shell.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:xampp_win_shell.png *Figure 1: Command Prompt (shell) running the xampp&#95;start.exe file*
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:xampp_win_shell.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:xampp_win_shell.png *Figure 1: Command Prompt (shell) running the xampp_start.exe file*
 
-*Note:* As indicated in Figure 1, you should not close the shell while XAMPP is running. Instead, minimize the shell window and let it sit idle in the background until you are ready to shut XAMPP down. When ready, open the shell window again and run the _xampp&#95;stop.exe_ file. Note this also automatically turns off the running Apache and MySQL processes in the Control Panel too. Click the “Exit” button in the Control Panel before logging off.
+*Note:* As indicated in Figure 1, you should not close the shell while XAMPP is running. Instead, minimize the shell window and let it sit idle in the background until you are ready to shut XAMPP down. When ready, open the shell window again and run the _xampp_stop.exe_ file. Note this also automatically turns off the running Apache and MySQL processes in the Control Panel too. Click the “Exit” button in the Control Panel before logging off.
 
 h4(#using_the_control_panel_approach). Using the Control Panel Approach
 
@@ -120,7 +120,7 @@ What you can now do while your sitting in phpMyAdmin (but only if your ready bec
 
 h3(sectionedit5#apache_configuration). Apache Configuration
 
-There's really only one modification you need to make to the configuration file to get XAMPP up and running with Textpattern. Textpattern relies on some rewrite rules externally through a _.htaccess_ file, so we have to make sure the rewrite module is on. (If you want to learn more about mod&#95;rewrite, see Apache's "Rewrite Guide documentation":http://httpd.apache.org/docs/misc/rewriteguide.html.)
+There's really only one modification you need to make to the configuration file to get XAMPP up and running with Textpattern. Textpattern relies on some rewrite rules externally through a _.htaccess_ file, so we have to make sure the rewrite module is on. (If you want to learn more about mod_rewrite, see Apache's "Rewrite Guide documentation":http://httpd.apache.org/docs/misc/rewriteguide.html.)
 
 <ol>
 <li>Open _httpd.conf_ (_C:\xampp\apache\conf\httpd-conf_) with a good text editor giving line number support (Crimson Editor, TypePad, whatever).</li>
@@ -185,9 +185,9 @@ The last VirtualHost block is a representative one for whatever container you mi
 * local.*domain1.tld*:80  -  Although you don't have to use “local” here, it's recommended you do as it makes for a very intuitive situation; it's basically saying _this is the local (development) version of the real site that is (or will be) live at domain1.com on the Internet_. Hence, the only thing you need to edit in this line - and in most of the rest of the block - is “domain1.tld” to whatever the actual domain will be (e.g., heavytools.com). If you follow this model, then it's very easy to copy/paste the VirtualHost containers for each new one you need and simply edit the site domains accordingly throughout the rest of the VirtualHost blocks.
 * C:/*pathto/domain1*/  -  This is the only other part you need to edit if you follow the model just described. The “domain1” part is easy, that will be the same domain throughout the block. That just leaves “pathto” which will be the directory in the C:\ drive that holds your Textpattern sites outside of XAMPPs default _htdocs_ working directory (as shown in the default VirtualHost container). Some like to replace _pathto_ with “www”, “sites”, “web”, “dev” and so forth, but what if you want to work with other CMS systems besides Textpattern. Then you might want to create directories for them accordingly to keep your various system projects separate and easy to manage. Hence, you might go with paths like (the underscore is to keep them conveniently positioned together at the top of the C:\ drive directory tree):
 
-* &#42; C:/&#95;txp/domain1/
-** C:/&#95;modx/domain1/
-** C:/&#95;drupal/domain1/
+* &#42; C:/_txp/domain1/
+** C:/_modx/domain1/
+** C:/_drupal/domain1/
 ** etc.
 
 That's one idea for setting up your VirtualHost containers. How you ultimately do it though should be how it works best for you.
@@ -227,7 +227,7 @@ Start XAMPP (both Apache and MySQL) and go to "$":http://localhost/phpmyadmin/
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:xampp_winphp_my_admin.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:xampp_winphp_my_admin.png *Figure 4: phpMyAdmin Home page*
 
-For each database you need you first type the name in the Create database: field, then from the Collation drop down select *utf-8&#95;unicode&#95;ci*, and then click the Create button. An empty database will be created and ready for use.
+For each database you need you first type the name in the Create database: field, then from the Collation drop down select *utf-8_unicode_ci*, and then click the Create button. An empty database will be created and ready for use.
 
 h4(#local_smtp_mail_client_configuration). Local SMTP mail client configuration
 
@@ -239,6 +239,6 @@ h3(sectionedit8#textpattern_retrieval_setup_and_post_configuration). Textpattern
 
 At this point you have covered the XAMPP process and are ready to switch Textpattern. First you will need to install Textpattern in your new Apache server setup, and there are two ways to do it: manually, and via "Subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#subversion (SVN):
 
-* If manually, see the "detailed&#95;installation&#95;instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_installation_instructions.
-* If via SVN, follow an appropriate method described in "designer&#95;and&#95;developer&#95;interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests.
+* If manually, see the "detailed_installation_instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_installation_instructions.
+* If via SVN, follow an appropriate method described in "designer_and_developer_interests":/home/www/zendstudio/dokuwiki/bin/doku.php?id=designer_and_developer_interests.
 

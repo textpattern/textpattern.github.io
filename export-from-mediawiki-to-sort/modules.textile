@@ -1,9 +1,9 @@
-\n"mininav&#95;presentation&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs
+\n"mininav_presentation_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs
 
 bc(code). //PrÃ©sentation// â†’ **//Modules//**
 
 
-Les "modules":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modules sont un des six “blocs de construction” dÃ©crit dans "textpattern&#95;semantic&#95;model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model. L'onglet *Modules* contient un Ã©diteur identique Ã  celui des "gabarits":/home/www/zendstudio/dokuwiki/bin/doku.php?id=gabarits. Une liste des modules existants est situÃ©e Ã  droite de la fenÃªtre, et sur la gauche, vous trouverez un constructeur de balises (ou constructeur de tags) pour vous aider Ã  mettre en place vos contenus.
+Les "modules":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modules sont un des six “blocs de construction” dÃ©crit dans "textpattern_semantic_model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model. L'onglet *Modules* contient un Ã©diteur identique Ã  celui des "gabarits":/home/www/zendstudio/dokuwiki/bin/doku.php?id=gabarits. Une liste des modules existants est situÃ©e Ã  droite de la fenÃªtre, et sur la gauche, vous trouverez un constructeur de balises (ou constructeur de tags) pour vous aider Ã  mettre en place vos contenus.
 
 h3(sectionedit1#cra_er_un_nouveau_module). CrÃ©er un nouveau module
 
@@ -17,7 +17,7 @@ Un nom unique doit Ãªtre attribuÃ© Ã  chaque module et un type de module d
 
 Il existe cependant une diffÃ©rence notable pour les modules de type article, puiqu'ils sont les seuls Ã  apparaÃ®tre dans la liste des modules de remplacements proposÃ©s lors de la rÃ©daction d'un article via l'option “Configuration avancÃ©e” de l'onglet "RÃ©diger":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write.
 
-Les types “catÃ©gorie” et “section” sont censÃ©s Ãªtre utilisÃ©s en relation avec les tags "category&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list et "section&#95;list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list, comme valeur de l'attribut "form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossaire_des_attributs_communs#form (_ex._ :
+Les types “catÃ©gorie” et “section” sont censÃ©s Ãªtre utilisÃ©s en relation avec les tags "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list et "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list, comme valeur de l'attribut "form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossaire_des_attributs_communs#form (_ex._ :
 
 bc(code). <nowiki><txp:section_list form="foo" /></nowiki>
 
@@ -26,6 +26,6 @@ bc(code). <nowiki><txp:section_list form="foo" /></nowiki>
 
 Voir aussiÂ :
 
-* "forms&#95;explained":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained
-* "default&#95;forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms
+* "forms_explained":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained
+* "default_forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms
 

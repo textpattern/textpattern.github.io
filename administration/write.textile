@@ -1,4 +1,4 @@
-\n"mininav&#95;content&#95;index":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index
+\n"mininav_content_index":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-write_fig1.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-write_fig1.gif
 
@@ -87,21 +87,21 @@ h5(#override_form). Override Form
 
 See (3 c). The option “Override Form” offers the possibility that single articles may use a different _Form_ than the overall form specified. Let's look at an example for a possible use of this.
 
-In your blog, you normally publish articles which are pure text. So your default form contains only the tags for title, body etc. On every first day of the month, however, you publish a photo of your garden. For this, you need the "article&#95;image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image tag in your form. So you create a form called “garden&#95;image” which, among other tags, contains "article&#95;image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image. Whenever you want to publish a photo along with your text, you choose “Override form” and then “garden&#95;image” from the dropdown list.
+In your blog, you normally publish articles which are pure text. So your default form contains only the tags for title, body etc. On every first day of the month, however, you publish a photo of your garden. For this, you need the "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image tag in your form. So you create a form called “garden_image” which, among other tags, contains "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image. Whenever you want to publish a photo along with your text, you choose “Override form” and then “garden_image” from the dropdown list.
 
-This way, just this article will use the form “garden&#95;image” for being displayed whereas all other articles will continue to use the default form.
+This way, just this article will use the form “garden_image” for being displayed whereas all other articles will continue to use the default form.
 
 h5(#custom_fields). Custom Fields
 
-Custom fields are "defined in Advanced preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#custom_fields, which then makes them available for use here in the left column of the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever tag constructs you create using the "custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field (and possibly the "if&#95;custom&#95;field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_custom_field) tag(s).
+Custom fields are "defined in Advanced preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#custom_fields, which then makes them available for use here in the left column of the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever tag constructs you create using the "custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field (and possibly the "if_custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_custom_field) tag(s).
 
 h5(#keywords). Keywords
 
-See (3 e). The next option, _Keywords_, allows you to specify a comma-separated list of words that relate to your article. This list might be used to generate a list of keywords for search engines (using the "meta&#95;keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag). You may also use keywords to help locate articles later by essentially 'tagging' your articles with related words so that - when searching within Textpattern - you can more easily find what you are looking for. To add keywords, simply type them into the text field provided and separate them with a comma.
+See (3 e). The next option, _Keywords_, allows you to specify a comma-separated list of words that relate to your article. This list might be used to generate a list of keywords for search engines (using the "meta_keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag). You may also use keywords to help locate articles later by essentially 'tagging' your articles with related words so that - when searching within Textpattern - you can more easily find what you are looking for. To add keywords, simply type them into the text field provided and separate them with a comma.
 
 h5(#article_image). Article Image
 
-See (3 f). The _Article image_ option enables associating one or more images with an article, as opposed to entering the image into the article itself, and is used in conjunction with "article&#95;image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image. This allows images to appear in the same place across many articles, yet still be easily changed later.
+See (3 f). The _Article image_ option enables associating one or more images with an article, as opposed to entering the image into the article itself, and is used in conjunction with "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image. This allows images to appear in the same place across many articles, yet still be easily changed later.
 
 = What Can Be Done With This? =
 
@@ -123,7 +123,7 @@ bc(code). /images/imagefile.png
 </li>
 </ul>
 
-Once the image is associated with an article, "article&#95;image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image is used to display it by placing this tag within the article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#form being used.
+Once the image is associated with an article, "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image is used to display it by placing this tag within the article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#form being used.
 
 h5(#url-only_title). URL-only Title
 
@@ -231,7 +231,7 @@ Additional Controls Toggle See (7). There are more settings, which will be opene
 
 h4(#comments). Comments
 
-*Important note:* The Comments control on the write panel is actually a second-level setting for managing comments at _per article_ level; you should have already configured your settings for first-level (site-level) comment management, which is handled in the "basic&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences panel at “Publish” and “Comments”. There you will find different Comments settings that need your consideration about how to handle comments for all articles in your site by default. If _Publish_ “Accept comments” is “No”, no Comments control will appear in the Write panel. Two of the settings - “On by default?” and “Default invite” - will determine the defaults in the Comments control at article level. Here, as described below, you can adjust the behavior as you desire for a particular article.
+*Important note:* The Comments control on the write panel is actually a second-level setting for managing comments at _per article_ level; you should have already configured your settings for first-level (site-level) comment management, which is handled in the "basic_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences panel at “Publish” and “Comments”. There you will find different Comments settings that need your consideration about how to handle comments for all articles in your site by default. If _Publish_ “Accept comments” is “No”, no Comments control will appear in the Write panel. Two of the settings - “On by default?” and “Default invite” - will determine the defaults in the Comments control at article level. Here, as described below, you can adjust the behavior as you desire for a particular article.
 
 _Comments_ "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:pointer-comments.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:pointer-comments.png controls two things: With a pair of on/off radio buttons first you either accept or deny comments for the given article. Second is an “Invitation” field that allows you to customize the text for the link that users will see if comments are “on”.
 
@@ -251,7 +251,7 @@ If you are interested in documenting the time when an article has been originall
 
 If you nevertheless want to indicate a “last modified” date, you can use "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified in your article forms.
 
-If you need the timestamp for publishing schedules apart from marking an origin, you need to indicate the origin otherwise: If you do _not_ modify after your “origin” date, you could use "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified as an indicator. Else you could provide a custom field (e.g. “first&#95;published”) for that task.
+If you need the timestamp for publishing schedules apart from marking an origin, you need to indicate the origin otherwise: If you do _not_ modify after your “origin” date, you could use "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified as an indicator. Else you could provide a custom field (e.g. “first_published”) for that task.
 
 h4(#expires). Expires
 

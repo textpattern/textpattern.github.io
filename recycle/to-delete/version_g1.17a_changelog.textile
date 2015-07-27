@@ -1,4 +1,4 @@
-\n &#42; Added automatic cleanup of the txp&#95;category db table whenever the category tree is rebuilt
+\n &#42; Added automatic cleanup of the txp_category db table whenever the category tree is rebuilt
 
 <ul>
 <li>Added missing privileges check in presentation → forms tab</li>

@@ -3,7 +3,7 @@ h1. Related articles [todo:pw]
 bc(code). <txp:related_articles>
 
 
-The "related&#95;articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles tag can be used as either a _single_ tag or a _container_ tag, and is used to produce a list of related (by category) articles.
+The "related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles tag can be used as either a _single_ tag or a _container_ tag, and is used to produce a list of related (by category) articles.
 
 When used as a _container_ tag, it must be specified as an opening and closing pair of tags, like this:
 
@@ -12,7 +12,7 @@ bc(code). <txp:related_articles>
 </txp:related_articles>
 
 
-This is equivalent to putting the contained statements into a form named “my&#95;form” and using
+This is equivalent to putting the contained statements into a form named “my_form” and using
 
 bc(code). <txp:related_articles form="my_form" />
 
@@ -57,7 +57,7 @@ bc(code). Category1,Category2
 bc(code). Category1,Category2
 
 
-”. *"no&#95;widow":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#no_widow=“boolean”*
+”. *"no_widow":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#no_widow=“boolean”*
  Whether to inhibit line breaks in titles which would leave just a single word on the last line ("widows":http://en.wikipedia.org/wiki/Widow_%28typesetting%29). Values:
 
 bc(code). 0
@@ -151,7 +151,7 @@ bc(code). Posted desc
 
 .
 
-"common&#95;presentational&#95;attributes":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_presentational_attributes
+"common_presentational_attributes":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_presentational_attributes
 
 h3(sectionedit2#examples). Examples
 

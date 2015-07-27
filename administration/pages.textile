@@ -1,4 +1,4 @@
-\n"mininav&#95;presentation&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs
+\n"mininav_presentation_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs
 
 _Presentation &gt; Pages_ is a basic editor. The page templates used by Textpattern are created in this editor. It's important to note that, like everything else, the page template is stored in the database. This is the primary way of getting at the template and modifying it. There is no physical file on the server that contains this template.
 
@@ -8,5 +8,5 @@ A Save button, located at the bottom of the edit box will save the template back
 
 Also see:
 
-* "default&#95;pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_pages
+* "default_pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_pages
 

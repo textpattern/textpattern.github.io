@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 h4(#overview). Overview
 
@@ -98,7 +98,7 @@ In Textpattern &gt; Admin &gt; Advanced Preferences, create two custom fields, l
 
 h5(#step_8geocode_your_articles). Step 8: Geocode your articles
 
-You need to add the latitude and longitude of each article that you would like to place on the map. Use a Google Maps compatible geocoding tool like "Get&#95;Lon&#95;Lat":http://mapki.com/wiki/Get_Lon_Lat. Paste the latitude into the lat custom field, and the longitude into the long custom field or use a plugin such as "msd&#95;google&#95;map":http://textpattern.org/plugins/1084/msd_google_map.
+You need to add the latitude and longitude of each article that you would like to place on the map. Use a Google Maps compatible geocoding tool like "Get_Lon_Lat":http://mapki.com/wiki/Get_Lon_Lat. Paste the latitude into the lat custom field, and the longitude into the long custom field or use a plugin such as "msd_google_map":http://textpattern.org/plugins/1084/msd_google_map.
 
 Take another look at YourSite.com/map â€“ you should see pushpins for each of your geocoded articles. If you donâ€™t, try refreshing the map and mapdata sections in the browser. You may need to empty the browser cache.
 
@@ -132,5 +132,5 @@ h4(#resources). Resources
 
 "Author's modified Javascript to draw the Map":http://davidramos.org/thesis/files/gmaps-in-txp.js
 
-"Get&#95;Lon&#95;Lat Geo-Coding Tool":http://mapki.com/wiki/Get_Lon_Lat/
+"Get_Lon_Lat Geo-Coding Tool":http://mapki.com/wiki/Get_Lon_Lat/
 

@@ -14,7 +14,7 @@ This isn't really different from how you would approach designing any website. T
 
 h4(#plugin_approach). Plugin approach
 
-In this way you rely on a plugin to help manage the construction, portability, and use of a given front-end theme. The most relevant plugin to use in this case is *cxc&#95;template*:
+In this way you rely on a plugin to help manage the construction, portability, and use of a given front-end theme. The most relevant plugin to use in this case is *cxc_template*:
 
 * "Google code source":http://code.google.com/p/cxc-templates/downloads/list
 * "forum help thread":http://forum.textpattern.com/viewtopic.php?id=35319.
@@ -46,19 +46,19 @@ h4(#admin_theme_file_tree_structure). Admin theme file tree structure
 Your admin theme files should be packaged into a single folder. The folder should be a single word name of your theme. Following is the *_Classic_* theme folder and its file contents that ships with Textpattern:
 
 *Classic*
- expand&#95;collapse.gif carver.gif textpattern.gif up.gif screenshot.png down.gif down2.gif htmldown.gif htmlup.gif previewdown.gif previewup.gif tabs.gif tabshadow.gif textdown.gif texttabshadow.gif textup.gif up2.gif classic.php textpattern.css
+ expand_collapse.gif carver.gif textpattern.gif up.gif screenshot.png down.gif down2.gif htmldown.gif htmlup.gif previewdown.gif previewup.gif tabs.gif tabshadow.gif textdown.gif texttabshadow.gif textup.gif up2.gif classic.php textpattern.css
 
 Note there is no sub-folder structure in this case; all files are directly inside the *_Classic_* folder, including images, the CSS file, and the default theme page (.php). This is easiest and you might do the same, but you could create sub-structure inside your theme folder for more advanced designs.
 
 h4(#admin_theme_manager_plugin). Admin theme manager plugin
 
-The plugin most favored and supported for admin themes is Stef Dawson's *smd&#95;admin&#95;themes*:
+The plugin most favored and supported for admin themes is Stef Dawson's *smd_admin_themes*:
 
 * "Developer's source code":http://stefdawson.com/sw/plugins/smd_admin_themes
 * "Support forum thread":http://forum.textpattern.com/viewtopic.php?id=30952
 * "In Textpattern Plugins":http://textpattern.org/plugins/1096/smd_admin_themes
 
-*Note:* You also need to install "smd&#95;crunchers":http://stefdawson.com/smd_crunchers in combination with smd&#95;admin&#95;themes if you want import and export abilities.
+*Note:* You also need to install "smd_crunchers":http://stefdawson.com/smd_crunchers in combination with smd_admin_themes if you want import and export abilities.
 
 Following the plugin documentation instructions, and use the support forum thread for questions and help.
 

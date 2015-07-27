@@ -179,7 +179,7 @@ Ping refers to the automatic update of various weblog related sites that keep tr
 
 h4(#plugin). Plugin
 
-See "what&#95;is&#95;a&#95;plugin&#95;":/home/www/zendstudio/dokuwiki/bin/doku.php?id=what_is_a_plugin
+See "what_is_a_plugin_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=what_is_a_plugin
 
 h3(sectionedit4#q_-_t). Q - T
 
@@ -238,12 +238,12 @@ h4(#tag). Tag
 
 See:
 
-* "alphabetical&#95;tag&#95;listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing (soon to be replaced)
+* "alphabetical_tag_listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing (soon to be replaced)
 * (the new reference coming in TxB)
 
 h4(#textile). Textile
 
-Textile is a form of editorial markup that makes writing eXtensible Hypertext Markup Language (XHTML) a lot easier, particularly for users who don't know XHTML. Textile is used (when chosen to be used, but is on by default) in "write&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write_subtab) panel of the administration area when drafting or editing an article. Complete details about Textile can be found on the "Textile":http://textile.thresholdstate.com/ page of Threshold State.
+Textile is a form of editorial markup that makes writing eXtensible Hypertext Markup Language (XHTML) a lot easier, particularly for users who don't know XHTML. Textile is used (when chosen to be used, but is on by default) in "write_subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write_subtab) panel of the administration area when drafting or editing an article. Complete details about Textile can be found on the "Textile":http://textile.thresholdstate.com/ page of Threshold State.
 
 h4(#textpattern). Textpattern
 

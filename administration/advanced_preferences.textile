@@ -1,8 +1,8 @@
-\n"mininav&#95;admin&#95;subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
+\n"mininav_admin_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:advanced-prefs.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:advanced-prefs.png
 
-The "advanced&#95;preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences is where you enhance your site beyond just what is essential for basic function; for example, folder locations, custom fields, and the specifics on your publishing needs, just to name a few. All of the _Advanced Preferences_ features are discussed on this page. *(Edit: Updated to 4.2.0, but needs screenshots.)*
+The "advanced_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences is where you enhance your site beyond just what is essential for basic function; for example, folder locations, custom fields, and the specifics on your publishing needs, just to name a few. All of the _Advanced Preferences_ features are discussed on this page. *(Edit: Updated to 4.2.0, but needs screenshots.)*
 
 h3(sectionedit1#advanced_preferences). Advanced Preferences
 
@@ -59,7 +59,7 @@ For whatever reason (can someone give one?) you might want to use ISO-8859-1 cha
 
 h5(#enable_xml-rpc_server). Enable XML-RPC server
 
-XML-RPC is an integral part of Textpattern, but disabled by default. To use "xml-rpc&#95;for&#95;desktop&#95;publishing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=xml-rpc_for_desktop_publishing (publishing to your Textpattern site remotely), switch the server on by setting this to “Yes”.
+XML-RPC is an integral part of Textpattern, but disabled by default. To use "xml-rpc_for_desktop_publishing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=xml-rpc_for_desktop_publishing (publishing to your Textpattern site remotely), switch the server on by setting this to “Yes”.
 
 h5(#default_admin_tab). Default admin tab
 
@@ -122,7 +122,7 @@ This region is where ten (10) custom fields can be defined. New installations of
 
 *Important notes on creating custom field names:*
 
-Custom field names may include letters (uppercase or lowercase), numbers, and under scores, but no spaces or other special characters should be used. For example, _custom1_, _Custom1_, and _Custom&#95;1_ are all valid name constructs, while _custom 1_ and _custom !_ are not.
+Custom field names may include letters (uppercase or lowercase), numbers, and under scores, but no spaces or other special characters should be used. For example, _custom1_, _Custom1_, and _Custom_1_ are all valid name constructs, while _custom 1_ and _custom !_ are not.
 
 (*Attention:* you might find that you can use spaces in custom field names and it works in some situations. But this is *not advised*â€”and may eventually become impossible anywayâ€”because there are instances where custom field names are used as attributes in other Textpattern tags and thus required to be non-breaking strings, e.g.,
 
@@ -134,14 +134,14 @@ bc(code). <txp:article_custom customfieldname="value" />
 Also, there are certain names *reserved* by Textpattern, which should not be used to name custom fields, or it could cause your code to not work as expected. *Do not use the following for custom field names:*
 
 * annotate
-* article&#95;image
+* article_image
 * authorid
 * body
 * category
 * category1
 * category2
-* comments&#95;count
-* comments&#95;invite
+* comments_count
+* comments_invite
 * excerpt
 * form
 * keywords
@@ -153,7 +153,7 @@ Also, there are certain names *reserved* by Textpattern, which should not be use
 * status
 * thisid
 * title
-* url&#95;title
+* url_title
 * Any other "tag attribute":http://textpattern.net/wiki/index.php?title=Attributes_Cross-reference, just in case
 
 A symptom of a name clash is when you go to check or display the contents of a custom field and receive unexpected (or no) output. In this case, make sure your custom field names are not any of the reserved names listed above.
@@ -221,13 +221,13 @@ This can reduce bandwidth consumption, page load times, and reduce the load on t
 
 h5(#publish_expired_articles). Publish expired articles?
 
-When set to “Yes”, expired articles will continue to show on your site after their expiry date has elapsed. You can use "if&#95;expired":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expired to show alternate content or markup for expired articles.
+When set to “Yes”, expired articles will continue to show on your site after their expiry date has elapsed. You can use "if_expired":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expired to show alternate content or markup for expired articles.
 
-When set to “No”, expired articles will be removed from the public site and return a “410 Gone” HTTP status instead. Visitors hitting an expired article will be shown a custom page template named “error&#95;410” if it's present .
+When set to “No”, expired articles will be removed from the public site and return a “410 Gone” HTTP status instead. Visitors hitting an expired article will be shown a custom page template named “error_410” if it's present .
 
-h5(#compensate_for_persistent_connections_mod_deflate_bug). Compensate for persistent connections mod&#95;deflate bug?
+h5(#compensate_for_persistent_connections_mod_deflate_bug). Compensate for persistent connections mod_deflate bug?
 
-Some mod&#95;deflate versions have a bug that breaks subsequent requests when keep-alive is used. Dropping the connection is the only reliable way to fix this. Setting this preference to “Yes” will close the connection, forcing the browser to reconnect for the next request.
+Some mod_deflate versions have a bug that breaks subsequent requests when keep-alive is used. Dropping the connection is the only reliable way to fix this. Setting this preference to “Yes” will close the connection, forcing the browser to reconnect for the next request.
 
 h5(#ping_ping-o-maticcom). Ping ping-o-matic.com?
 

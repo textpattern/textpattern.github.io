@@ -25,7 +25,7 @@ The requirements for a compatible host are: clean URLs work with no tweaks and T
 
 h5(#notes). Notes
 
-# With almost no hosts will clean URLs work without tweaks if the URL to access your Textpattern contains a subdirectory. See "managing&#95;clean&#95;urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls to see how to configure .htaccess for this situation.
+# With almost no hosts will clean URLs work without tweaks if the URL to access your Textpattern contains a subdirectory. See "managing_clean_urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls to see how to configure .htaccess for this situation.
 # Many hosting companies are switching or have switched to "phpsuexec":http://corz.org/devblog/2006-Q1/phpsuexec. phpsuexec cares about the file permissions on .php files - they must not be world- or group-writable. This is only likely to be a problem if you are upgrading an existing installation where the permissions are already wrong, or if the program that you used to upload the files sets more liberal permissions than is required.
 
 h4(#hosts_to_avoid). Hosts to Avoid

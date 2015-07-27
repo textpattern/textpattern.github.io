@@ -2,7 +2,7 @@
 
 h3(sectionedit1#upgrade_to_the_newest_stable_release). Upgrade to the newest stable release
 
-In the root folder of your installation is a *README.txt* file that provides *simple upgrading instructions*. The same instructions are repeated below for convenience. See "detailed&#95;upgrading&#95;instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_upgrading_instructions if you need more stepwise explanation.
+In the root folder of your installation is a *README.txt* file that provides *simple upgrading instructions*. The same instructions are repeated below for convenience. See "detailed_upgrading_instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=detailed_upgrading_instructions if you need more stepwise explanation.
 
 # Log out of the admin-side.
 # Verify the existence of a working database and file backup.
@@ -12,7 +12,7 @@ In the root folder of your installation is a *README.txt* file that provides *si
 
 Regarding step #4: Upgrades from versions below 4.2.0 will present this warning upon your very first login to the admin-side:
 
-Warning: Unknown column 'user&#95;name' in 'where clause' select name, val from txp&#95;prefs where prefs&#95;id=1 AND user&#95;name= _in /path/to/your/site/textpattern/lib/txplib&#95;db.php on line xx_
+Warning: Unknown column 'user_name' in 'where clause' select name, val from txp_prefs where prefs_id=1 AND user_name= _in /path/to/your/site/textpattern/lib/txplib_db.php on line xx_
 
 This is expected behaviour for the very first login after an upgrade. *Every further move in the admin side must not throw any error message*.
 

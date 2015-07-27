@@ -43,7 +43,7 @@ bc(code). <txp:variable name="test" value="" />
 
 In Textpattern versions 4.3.0 and older you should not use container-tag mode unless you know the tag contents will never be empty. This issue has been fixed in "r3471":http://code.google.com/p/textpattern/source/detail?r=3471 (v4.4.0+).
 
-*Note:* Avoid entering white space characters for better code readability between the opening and closing _variable_ tags, they will lead to falsified results in the _if&#95;variable_ evaluation.
+*Note:* Avoid entering white space characters for better code readability between the opening and closing _variable_ tags, they will lead to falsified results in the _if_variable_ evaluation.
 
 h3(sectionedit3#examples). Examples
 
@@ -52,7 +52,7 @@ h4(#example_1store_sitewide_constants). Example 1: Store sitewide constants
 bc(code). <txp:variable />
 
 
-allows you to define constants at a single location (e.g., a _Form_, or even at the top of a _Page_ template) and use them elsewhere later on, for instance as the email address for zem&#95;contact&#95;reborn's
+allows you to define constants at a single location (e.g., a _Form_, or even at the top of a _Page_ template) and use them elsewhere later on, for instance as the email address for zem_contact_reborn's
 
 bc(code). to
 
@@ -88,7 +88,7 @@ google_ad_height = 240;
 </script>
 
 
-Other tags used: "if&#95;variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable, "css":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css
+Other tags used: "if_variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable, "css":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css
 
 h4(#example_2use_any_tag_s_value_as_a_conditional_expression). Example 2: Use any tag's value as a conditional expression
 
@@ -110,7 +110,7 @@ bc(code). <txp:if_variable name="foo" value="example.com/bar/baz">
 
 The conditional is saying if there is a variable named “foo” having a specific value of “example.com/bar/baz”, then output what is defined, i.e., “do this”.
 
-Other tags used: "if&#95;variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable
+Other tags used: "if_variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable
 
 h4(#example_3build_a_table_of_article_titles). Example 3: Build a table of article titles
 
@@ -118,7 +118,7 @@ Textpattern will build a three-column table where each row has the title of the 
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:textbook_table.jpg(textbook_table.jpg)!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:textbook_table.jpg
 
-First, use an "article&#95;custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom or "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tag somewhere:
+First, use an "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom or "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article tag somewhere:
 
 bc(code). <txp:article_custom limit="100" section="article" form="tables" />
 
@@ -184,7 +184,7 @@ Form *tables*:
 
 In this case an article "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title was used but any article information could be inserted in the cells.
 
-Other tags used: "if&#95;variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable, "if&#95;first&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_article, "if&#95;last&#95;article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_article, "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title, "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else
+Other tags used: "if_variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable, "if_first_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_article, "if_last_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_article, "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title, "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else
 
 h3(sectionedit4#genealogy). Genealogy
 

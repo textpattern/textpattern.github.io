@@ -1,10 +1,10 @@
 \n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
 
-"main&#95;page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Plugin Archive Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive &#124; "plugins&#95;alphabetical&#95;by&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name &#124; "plugins&#95;grouped&#95;by&#95;purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose
+"main_page":/home/www/zendstudio/dokuwiki/bin/doku.php?id=en:main_page &#124; "Plugin Archive Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive &#124; "plugins_alphabetical_by_name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name &#124; "plugins_grouped_by_purpose":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_grouped_by_purpose
 
 For the time being these pages can still be used, but are locked and no longer supported. Improved plugin archiving will be handled at textpattern.org. See note "here":http://forum.textpattern.com/viewtopic.php?pid=129844#p129844.
 
-*Read* the "Plugin Archive Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive before editing tables! Please be attentive and edit tables carefully, mind HTML classes and wiki syntax. If you add a plugin record to any table below, make sure you also add the record to the "plugins&#95;alphabetical&#95;by&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name as well. It will be a lot easier if you first add the new plugin row to the "plugins&#95;alphabetical&#95;by&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name table, then simply copy that row from there and paste it into the appropriate group tables below. Alternating row colors is handled by the row classes “eveno” and “oddo” accordingly. The “man” link stands for *manage*, and it's the page where you can manage the version file in the wiki.
+*Read* the "Plugin Archive Instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive before editing tables! Please be attentive and edit tables carefully, mind HTML classes and wiki syntax. If you add a plugin record to any table below, make sure you also add the record to the "plugins_alphabetical_by_name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name as well. It will be a lot easier if you first add the new plugin row to the "plugins_alphabetical_by_name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins_alphabetical_by_name table, then simply copy that row from there and paste it into the appropriate group tables below. Alternating row colors is handled by the row classes “eveno” and “oddo” accordingly. The “man” link stands for *manage*, and it's the page where you can manage the version file in the wiki.
 
 *Plugin authors*  -  add your PayPal “donate” buttons for increased support potential.
 
@@ -36,7 +36,7 @@ zip
 
 compatibility
 
-ako&#95;spellCheker
+ako_spellCheker
 
 "Adrian Kostrubiak":http://www.ako-k.com/
 
@@ -44,7 +44,7 @@ This plugin adds a useful spell checker (the Speller Pages script) to the write 
 
 0.2
 
-"ako&#95;spell&#95;cheker-0&#95;2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_spell_cheker-0_2.txttxt ("ako&#95;spell&#95;cheker-0&#95;2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_spell_cheker-0_2.txtman)
+"ako_spell_cheker-0_2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_spell_cheker-0_2.txttxt ("ako_spell_cheker-0_2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_spell_cheker-0_2.txtman)
 
 no
 
@@ -58,7 +58,7 @@ ID#
 
 "donate":https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=akokskis%40gmail%2ecom&item_name=ako_spellCheker&no_shipping=2&no_note=1&tax=0&currency_code=USD&bn=PP%2dDonationsBF&charset=UTF%2d8
 
-ako&#95;write&#95;page&#95;email
+ako_write_page_email
 
 "Adrian Kostrubiak":http://www.ako-k.com/
 
@@ -66,7 +66,7 @@ Add a little link to the email tagbuilder on the write page of the TXP interface
 
 0.2
 
-"ako&#95;write&#95;page&#95;email-0&#95;2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_write_page_email-0_2.txttxt ("ako&#95;write&#95;page&#95;email-0&#95;2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_write_page_email-0_2.txtman)
+"ako_write_page_email-0_2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_write_page_email-0_2.txttxt ("ako_write_page_email-0_2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_write_page_email-0_2.txtman)
 
 no
 
@@ -80,7 +80,7 @@ ID#
 
 "donate":https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=akokskis%40gmail%2ecom&item_name=ako_write_page_email&no_shipping=2&no_note=1&tax=0&currency_code=USD&bn=PP%2dDonationsBF&charset=UTF%2d8
 
-"mcw&#95;templates":http://mikewest.org/archive/mcwtemplates-v02
+"mcw_templates":http://mikewest.org/archive/mcwtemplates-v02
 
 Mike West
 
@@ -88,7 +88,7 @@ Allows you to export pages, styles, and forms to an external location to edit in
 
 0.2
 
-"mcw&#95;templates-0&#95;2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mcw_templates-0_2.txttxt ("mcw&#95;templates-0&#95;2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mcw_templates-0_2.txtman)
+"mcw_templates-0_2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mcw_templates-0_2.txttxt ("mcw_templates-0_2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mcw_templates-0_2.txtman)
 
  - 
 
@@ -124,7 +124,7 @@ ID#
 
 donate
 
-hpw&#95;admincss
+hpw_admincss
 
 "Adrian Duffell":http://www.hyperwhat.com
 
@@ -132,7 +132,7 @@ Customize the presentation of admin side. Code is stored in database so does not
 
 0.1
 
-"hpw&#95;admincss-0&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:hpw_admincss-0_1.txttxt ("hpw&#95;admincss-0&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:hpw_admincss-0_1.txtman)
+"hpw_admincss-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:hpw_admincss-0_1.txttxt ("hpw_admincss-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:hpw_admincss-0_1.txtman)
 
  - 
 
@@ -146,7 +146,7 @@ ID#
 
 donate
 
-"ied&#95;hide&#95;in&#95;admin":http://inspired.kiev.ua/txp/ied_hide_in_admin/
+"ied_hide_in_admin":http://inspired.kiev.ua/txp/ied_hide_in_admin/
 
 Yuriy Linnyk
 
@@ -154,7 +154,7 @@ Gives you control over what certain user levels see in the Write and Users tab a
 
 0.1.5
 
-"ied&#95;hide&#95;in&#95;admin-0&#95;1&#95;5.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_hide_in_admin-0_1_5.txttxt ("ied&#95;hide&#95;in&#95;admin-0&#95;1&#95;5.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_hide_in_admin-0_1_5.txtman)
+"ied_hide_in_admin-0_1_5.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_hide_in_admin-0_1_5.txttxt ("ied_hide_in_admin-0_1_5.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_hide_in_admin-0_1_5.txtman)
 
  - 
 
@@ -168,7 +168,7 @@ ID#
 
 donate
 
-ign&#95;password&#95;protect
+ign_password_protect
 
 "Jeremy Amos":http://www.igneramos.com
 
@@ -176,7 +176,7 @@ Provides a variety of password protection (password-only access) to site regions
 
 0.4.2d
 
-"ign&#95;password&#95;protect-0&#95;4&#95;2d.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ign_password_protect-0_4_2d.txttxt ("ign&#95;password&#95;protect-0&#95;4&#95;2d.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ign_password_protect-0_4_2d.txtman)
+"ign_password_protect-0_4_2d.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ign_password_protect-0_4_2d.txttxt ("ign_password_protect-0_4_2d.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ign_password_protect-0_4_2d.txtman)
 
  - 
 
@@ -190,7 +190,7 @@ ID#
 
 donate
 
-"rss&#95;admin&#95;db&#95;manager":http://www.wilshireone.com/textpattern-plugins/rss_admin_db_manager
+"rss_admin_db_manager":http://www.wilshireone.com/textpattern-plugins/rss_admin_db_manager
 
 Rob Sable
 
@@ -198,7 +198,7 @@ Gives you full control over your Txp database, like a lightweight replacement fo
 
 4.1
 
-"rss&#95;admin&#95;db&#95;manager-4&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_db_manager-4_1.txttxt ("rss&#95;admin&#95;db&#95;manager-4&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_db_manager-4_1.txtman)
+"rss_admin_db_manager-4_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_db_manager-4_1.txttxt ("rss_admin_db_manager-4_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_db_manager-4_1.txtman)
 
  - 
 
@@ -212,15 +212,15 @@ ID#
 
 donate
 
-"rss&#95;admin&#95;resize":http://www.wilshireone.com/textpattern-plugins/rss-admin-resize
+"rss_admin_resize":http://www.wilshireone.com/textpattern-plugins/rss-admin-resize
 
 Rob Sable
 
-The rss&#95;admin&#95;resize plugin allows you to customize the size of the primary textareas and input fields while editing articles, pages, styles and forms.
+The rss_admin_resize plugin allows you to customize the size of the primary textareas and input fields while editing articles, pages, styles and forms.
 
 0.2
 
-"rss&#95;admin&#95;resize-0&#95;2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_resize-0_2.txttxt ("rss&#95;admin&#95;resize-0&#95;2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_resize-0_2.txtman)
+"rss_admin_resize-0_2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_resize-0_2.txttxt ("rss_admin_resize-0_2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_resize-0_2.txtman)
 
  - 
 
@@ -236,15 +236,15 @@ donate
 
 PLUGIN DEVELOPMENT ENHANCEMENT
 
-"ied&#95;plugin&#95;composer":http://inspired.kiev.ua/txp/ied_plugin_composer
+"ied_plugin_composer":http://inspired.kiev.ua/txp/ied_plugin_composer
 
 Yuriy Linnyk
 
-Create new plugins right in the admin interface. Edit any plugin data. List and edit files in _plugin&#95;cache&#95;dir_. Publish plugins by saving .txt file or copying code for distribution. Export plugin from database to .php file. Import plugin from .php file into database.
+Create new plugins right in the admin interface. Edit any plugin data. List and edit files in _plugin_cache_dir_. Publish plugins by saving .txt file or copying code for distribution. Export plugin from database to .php file. Import plugin from .php file into database.
 
 0.4
 
-"ied&#95;plugin&#95;composer-0&#95;4.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_plugin_composer-0_4.txttxt ("ied&#95;plugin&#95;composer-0&#95;4.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_plugin_composer-0_4.txtman)
+"ied_plugin_composer-0_4.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_plugin_composer-0_4.txttxt ("ied_plugin_composer-0_4.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_plugin_composer-0_4.txtman)
 
  - 
 
@@ -258,7 +258,7 @@ ID#
 
 donate
 
-"sed&#95;plugin&#95;help&#95;viewer":http://txp-plugins.netcarving.com/plugins/plugin-help-viewer
+"sed_plugin_help_viewer":http://txp-plugins.netcarving.com/plugins/plugin-help-viewer
 
 Steve Dickinson
 
@@ -266,9 +266,9 @@ Substantially simplifies the worflow of creating a plugin help file.
 
 0.2
 
-"sed&#95;plugin&#95;help&#95;viewer-0&#95;2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:sed_plugin_help_viewer-0_2.txttxt ("sed&#95;plugin&#95;help&#95;viewer-0&#95;2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:sed_plugin_help_viewer-0_2.txtman)
+"sed_plugin_help_viewer-0_2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:sed_plugin_help_viewer-0_2.txttxt ("sed_plugin_help_viewer-0_2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:sed_plugin_help_viewer-0_2.txtman)
 
-"sed&#95;plugin&#95;help&#95;viewer-0&#95;2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:sed_plugin_help_viewer-0_2.zipzip ("sed&#95;plugin&#95;help&#95;viewer-0&#95;2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:sed_plugin_help_viewer-0_2.zipman)
+"sed_plugin_help_viewer-0_2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:sed_plugin_help_viewer-0_2.zipzip ("sed_plugin_help_viewer-0_2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:sed_plugin_help_viewer-0_2.zipman)
 
 4.0.3
 
@@ -308,7 +308,7 @@ zip
 
 compatibility
 
-"ied&#95;doArticle":http://inspired.kiev.ua/txp/ied_doarticle/
+"ied_doArticle":http://inspired.kiev.ua/txp/ied_doarticle/
 
 Yuriy Linnyk
 
@@ -316,7 +316,7 @@ Allows inserting any piece of an article (title, body, excerpt, etc.) by article
 
 0.2.1
 
-"ied&#95;doarticle-0&#95;2&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_doarticle-0_2_1.txttxt ("ied&#95;doarticle-0&#95;2&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_doarticle-0_2_1.txtman)
+"ied_doarticle-0_2_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_doarticle-0_2_1.txttxt ("ied_doarticle-0_2_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_doarticle-0_2_1.txtman)
 
  - 
 
@@ -330,7 +330,7 @@ ID#
 
 donate
 
-"pap&#95;printer&#95;friendly":http://www.txp.seitenweberei.ch/
+"pap_printer_friendly":http://www.txp.seitenweberei.ch/
 
 ?? “Tranquillo” ??
 
@@ -340,7 +340,7 @@ Used on an individual article page to display a link to the printer friendly ver
 
  - 
 
-"pap&#95;printer&#95;friendly-0&#95;2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_printer_friendly-0_2.zipzip ("pap&#95;printer&#95;friendly-0&#95;2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_printer_friendly-0_2.zipman)
+"pap_printer_friendly-0_2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_printer_friendly-0_2.zipzip ("pap_printer_friendly-0_2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_printer_friendly-0_2.zipman)
 
 4.0.3
 
@@ -380,15 +380,15 @@ zip
 
 compatibility
 
-"rss&#95;unlimited&#95;categories":http://www.wilshireone.com/textpattern-plugins/rss-unlimited-categories
+"rss_unlimited_categories":http://www.wilshireone.com/textpattern-plugins/rss-unlimited-categories
 
 Rob Sable
 
-The rss&#95;unlimited&#95;categories plugin enables you to assign an unlimited number of categories to an article so that you're not limited to the default number allowed by Textpattern (2).
+The rss_unlimited_categories plugin enables you to assign an unlimited number of categories to an article so that you're not limited to the default number allowed by Textpattern (2).
 
 0.3
 
-"rss&#95;unlimited&#95;categories-0&#95;3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_unlimited_categories-0_3.txttxt ("rss&#95;unlimited&#95;categories-0&#95;3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_unlimited_categories-0_3.txtman)
+"rss_unlimited_categories-0_3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_unlimited_categories-0_3.txttxt ("rss_unlimited_categories-0_3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_unlimited_categories-0_3.txtman)
 
  - 
 
@@ -402,7 +402,7 @@ ID#
 
 donate
 
-"zem&#95;popup&#95;cat":http://thresholdstate.com/software/3703/zem_popup_cat
+"zem_popup_cat":http://thresholdstate.com/software/3703/zem_popup_cat
 
 Alex Shiels
 
@@ -410,7 +410,7 @@ A context-sensitive popup category list for Textpattern, shows only categories a
 
 0.1
 
-"zem&#95;popup&#95;cat-0&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_popup_cat-0_1.txttxt ("zem&#95;popup&#95;cat-0&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_popup_cat-0_1.txtman)
+"zem_popup_cat-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_popup_cat-0_1.txttxt ("zem_popup_cat-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_popup_cat-0_1.txtman)
 
  - 
 
@@ -452,7 +452,7 @@ zip
 
 compatibility
 
-"ajw&#95;comment&#95;alt":http://compooter.org/article/107/textpattern-plugin-ajw-comment-alt
+"ajw_comment_alt":http://compooter.org/article/107/textpattern-plugin-ajw-comment-alt
 
 Andrew Waer
 
@@ -460,7 +460,7 @@ Alternates output based on even- or odd-numbered comments.
 
 0.3
 
-"ajw&#95;comment&#95;alt-0&#95;3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comment_alt-0_3.txttxt ("ajw&#95;comment&#95;alt-0&#95;3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comment_alt-0_3.txtman)
+"ajw_comment_alt-0_3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comment_alt-0_3.txttxt ("ajw_comment_alt-0_3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comment_alt-0_3.txtman)
 
  - 
 
@@ -474,7 +474,7 @@ ID#
 
 donate
 
-"ajw&#95;comments-feed":http://compooter.org/article/140/textpattern-plugin-ajw-comments-feed
+"ajw_comments-feed":http://compooter.org/article/140/textpattern-plugin-ajw-comments-feed
 
 Andrew Waer
 
@@ -482,7 +482,7 @@ Extends Textpattern's RSS &amp; Atom functionality to allow for sitewide, sectio
 
 0.5
 
-"ajw&#95;comments&#95;feed-0&#95;5.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comments_feed-0_5.txttxt ("ajw&#95;comments&#95;feed-0&#95;5.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comments_feed-0_5.txtman)
+"ajw_comments_feed-0_5.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comments_feed-0_5.txttxt ("ajw_comments_feed-0_5.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comments_feed-0_5.txtman)
 
  - 
 
@@ -496,7 +496,7 @@ ID#
 
 donate
 
-"mrw&#95;spamkeywords&#95;urlcount":http://bw.watchtan.com/article/183/anti-spam-plugin
+"mrw_spamkeywords_urlcount":http://bw.watchtan.com/article/183/anti-spam-plugin
 
 Brian Warren
 
@@ -504,7 +504,7 @@ Helps control comment spam by checking if there are more than a set number of li
 
 0.1
 
-"mrw&#95;spamkeywords&#95;urlcount-0&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mrw_spamkeywords_urlcount-0_1.txttxt ("mrw&#95;spamkeywords&#95;urlcount-0&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mrw_spamkeywords_urlcount-0_1.txtman)
+"mrw_spamkeywords_urlcount-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mrw_spamkeywords_urlcount-0_1.txttxt ("mrw_spamkeywords_urlcount-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mrw_spamkeywords_urlcount-0_1.txtman)
 
  - 
 
@@ -518,7 +518,7 @@ ID#
 
 donate
 
-"pap&#95;moderate&#95;comments":http://www.txp.seitenweberei.ch/
+"pap_moderate_comments":http://www.txp.seitenweberei.ch/
 
 ?? “Tranquillo” ??
 
@@ -533,7 +533,7 @@ event.
 
  - 
 
-"pap&#95;moderate&#95;comments-0&#95;3.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_moderate_comments-0_3.zipzip ("pap&#95;moderate&#95;comments-0&#95;3.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_moderate_comments-0_3.zipman)
+"pap_moderate_comments-0_3.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_moderate_comments-0_3.zipzip ("pap_moderate_comments-0_3.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_moderate_comments-0_3.zipman)
 
 4.0.3
 
@@ -573,7 +573,7 @@ zip
 
 compatibility
 
-etz&#95;striptags
+etz_striptags
 
 "Etz Haim":http://www.agitprop.gr/
 
@@ -581,7 +581,7 @@ Strips HTML tags that Textpattern automatically adds around content output, such
 
 0.1
 
-"etz&#95;striptags-0&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:etz_striptags-0_1.txttxt ("etz&#95;striptags-0&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:etz_striptags-0_1.txtman)
+"etz_striptags-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:etz_striptags-0_1.txttxt ("etz_striptags-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:etz_striptags-0_1.txtman)
 
  - 
 
@@ -673,7 +673,7 @@ zip
 
 compatibility
 
-"mdp&#95;calendar":http://outoverthevoid.com/projects/3/calendar
+"mdp_calendar":http://outoverthevoid.com/projects/3/calendar
 
 Marshall (Last?)
 
@@ -681,7 +681,7 @@ Allows you to create a calendar of live articles for a certain month. The calend
 
 1.0
 
-"mdp&#95;calendar-1&#95;0.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mdp_calendar-1_0.txttxt ("mdp&#95;calendar-1&#95;0.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mdp_calendar-1_0.txtman)
+"mdp_calendar-1_0.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mdp_calendar-1_0.txttxt ("mdp_calendar-1_0.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mdp_calendar-1_0.txtman)
 
  - 
 
@@ -723,7 +723,7 @@ zip
 
 compatibility
 
-pap&#95;contact&#95;cleaner
+pap_contact_cleaner
 
 ?? “Tranquillo” ??
 
@@ -731,7 +731,7 @@ Helps keep spam efforts blocked in your contact forms.
 
 0.1
 
-"pap&#95;contact&#95;cleaner-0&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_contact_cleaner-0_1.txttxt ("pap&#95;contact&#95;cleaner-0&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_contact_cleaner-0_1.txtman)
+"pap_contact_cleaner-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_contact_cleaner-0_1.txttxt ("pap_contact_cleaner-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_contact_cleaner-0_1.txtman)
 
  - 
 
@@ -745,17 +745,17 @@ ID#
 
 donate
 
-"zem&#95;contact&#95;reborn":http://thebombsite.com/txpplugins/408
+"zem_contact_reborn":http://thebombsite.com/txpplugins/408
 
 community
 
-A rebirth of the original zem&#95;contact with some (or many) changes. The reborn version now requires zem&#95;contact&#95;lang (which is included in this zip package), and works nicely with pap&#95;contact&#95;cleaner, which is a nice little spam-prevention aide you can get elsewhere in the archive.
+A rebirth of the original zem_contact with some (or many) changes. The reborn version now requires zem_contact_lang (which is included in this zip package), and works nicely with pap_contact_cleaner, which is a nice little spam-prevention aide you can get elsewhere in the archive.
 
 4.0.3.17
 
  - 
 
-"zem&#95;contact&#95;reborn-4&#95;0&#95;3&#95;17.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_contact_reborn-4_0_3_17.zipzip ("zem&#95;contact&#95;reborn-4&#95;0&#95;3&#95;17.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_contact_reborn-4_0_3_17.zipman)
+"zem_contact_reborn-4_0_3_17.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_contact_reborn-4_0_3_17.zipzip ("zem_contact_reborn-4_0_3_17.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_contact_reborn-4_0_3_17.zipman)
 
 4.0.3
 
@@ -795,7 +795,7 @@ zip
 
 compatibility
 
-"ako&#95;boxover":http://ako-k.com/archive/153
+"ako_boxover":http://ako-k.com/archive/153
 
 Adrian Kostrubiak
 
@@ -803,7 +803,7 @@ Bringing the "Boxover":http://boxover.swazz.org/ Tooltips script to Textpattern.
 
 0.3
 
-"ako&#95;boxover-0&#95;3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_boxover-0_3.txttxt ("ako&#95;boxover-0&#95;3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_boxover-0_3.txtman)
+"ako_boxover-0_3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_boxover-0_3.txttxt ("ako_boxover-0_3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_boxover-0_3.txtman)
 
  - 
 
@@ -817,7 +817,7 @@ ID#
 
 "donate":https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=akokskis%40gmail%2ecom&item_name=ako_boxover&no_shipping=2&no_note=1&tax=0&currency_code=USD&bn=PP%2dDonationsBF&charset=UTF%2d8
 
-"fpx&#95;image&#95;import":http://www.dirksteins.de/article/419/textpattern-plugin-fpximageimport
+"fpx_image_import":http://www.dirksteins.de/article/419/textpattern-plugin-fpximageimport
 
 "Dirk Steins":http://www.dirksteins.de
 
@@ -825,7 +825,7 @@ Allows multiple image additions to Textpattern in batch style, and includes a us
 
 0.3
 
-"fpx&#95;image&#95;import-0&#95;3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:fpx_image_import-0_3.txttxt ("fpx&#95;image&#95;import-0&#95;3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:fpx_image_import-0_3.txtman)
+"fpx_image_import-0_3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:fpx_image_import-0_3.txttxt ("fpx_image_import-0_3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:fpx_image_import-0_3.txtman)
 
  - 
 
@@ -839,7 +839,7 @@ ID#
 
 donate
 
-"upm&#95;image":http://utterplush.com/txp-plugins
+"upm_image":http://utterplush.com/txp-plugins
 
 Mary Fredborg
 
@@ -847,7 +847,7 @@ More powerful image display. Requires Textpattern 4.0.3 or newer.
 
 0.4.3
 
-"upm&#95;image-0&#95;4&#95;3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:upm_image-0_4_3.txttxt ("upm&#95;image-0&#95;4&#95;3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:upm_image-0_4_3.txtman)
+"upm_image-0_4_3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:upm_image-0_4_3.txttxt ("upm_image-0_4_3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:upm_image-0_4_3.txtman)
 
  - 
 
@@ -861,7 +861,7 @@ ID#
 
 donate
 
-"upm&#95;image&#95;popper":http://utterplush.com/txp-plugins
+"upm_image_popper":http://utterplush.com/txp-plugins
 
 Mary Fredborg
 
@@ -883,7 +883,7 @@ ID#
 
 donate
 
-"vdh&#95;flickr":http://rvdh.net/vdh_flickr/Download
+"vdh_flickr":http://rvdh.net/vdh_flickr/Download
 
 Ralph von der Heyden
 
@@ -891,7 +891,7 @@ Integrates your flickr photo sets into your Textpattern interface.
 
 0.8.7
 
-"vdh&#95;flickr-0&#95;8&#95;7.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:vdh_flickr-0_8_7.txttxt ("vdh&#95;flickr-0&#95;8&#95;7.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:vdh_flickr-0_8_7.txtman)
+"vdh_flickr-0_8_7.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:vdh_flickr-0_8_7.txttxt ("vdh_flickr-0_8_7.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:vdh_flickr-0_8_7.txtman)
 
  - 
 
@@ -905,7 +905,7 @@ ID#
 
 donate
 
-"wet&#95;thumbfilter":http://awasteofwords.com/article/wetthumbfilter-textpattern-thumbnail-gallery
+"wet_thumbfilter":http://awasteofwords.com/article/wetthumbfilter-textpattern-thumbnail-gallery
 
 "Robert Wetzlmayr":http://awasteofwords.com/
 
@@ -913,7 +913,7 @@ Displays the thumbnail for articles' images meeting various filter criteria with
 
 0.4
 
-"wet&#95;thumbfilter-0&#95;4.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_thumbfilter-0_4.txttxt ("wet&#95;thumbfilter-0&#95;4.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_thumbfilter-0_4.txtman)
+"wet_thumbfilter-0_4.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_thumbfilter-0_4.txttxt ("wet_thumbfilter-0_4.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_thumbfilter-0_4.txtman)
 
  - 
 
@@ -927,7 +927,7 @@ ID#
 
 "donate":https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=r%2ewetzlmayr%40gmail%2ecom&item_name=wet_thumbfilter&no_shipping=2&no_note=1&tax=0&currency_code=EUR&bn=PP%2dDonationsBF&charset=UTF%2d8
 
-"wlk&#95;mp":http://www.walkerhamilton.com/421/wlkmp
+"wlk_mp":http://www.walkerhamilton.com/421/wlkmp
 
 "Walker Hamilton":http://www.walkerhamilton.com/
 
@@ -937,7 +937,7 @@ Creates magazine-style image output.
 
  - 
 
-"wlk&#95;mp-0&#95;5.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wlk_mp-0_5.zipzip ("wlk&#95;mp-0&#95;5.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wlk_mp-0_5.zipman)
+"wlk_mp-0_5.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wlk_mp-0_5.zipzip ("wlk_mp-0_5.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wlk_mp-0_5.zipman)
 
 4.0.3
 
@@ -949,7 +949,7 @@ ID#
 
 donate
 
-"zem&#95;article&#95;image":http://thresholdstate.com/software/3699/zem_article_image
+"zem_article_image":http://thresholdstate.com/software/3699/zem_article_image
 
 Alex Shiels
 
@@ -962,7 +962,7 @@ bc(code). <txp:article_image />
 
 0.1
 
-"zem&#95;article&#95;image-0&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_article_image-0_1.txttxt ("zem&#95;article&#95;image-0&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_article_image-0_1.txtman)
+"zem_article_image-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_article_image-0_1.txttxt ("zem_article_image-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_article_image-0_1.txtman)
 
  - 
 
@@ -1004,7 +1004,7 @@ zip
 
 compatibility
 
-"ajw&#95;clean&#95;feed":http://compooter.org/article/141/textpattern-plugin-ajw-clean-feed
+"ajw_clean_feed":http://compooter.org/article/141/textpattern-plugin-ajw-clean-feed
 
 Andrew Waer
 
@@ -1012,7 +1012,7 @@ Extends Atom &amp; RSS functionality to allow for */clean/feed/urls*
 
 0.2
 
-"ajw&#95;clean&#95;feed-0&#95;2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_clean_feed-0_2.txttxt ("ajw&#95;clean&#95;feed-0&#95;2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_clean_feed-0_2.txtman)
+"ajw_clean_feed-0_2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_clean_feed-0_2.txttxt ("ajw_clean_feed-0_2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_clean_feed-0_2.txtman)
 
  - 
 
@@ -1026,7 +1026,7 @@ ID#
 
 donate
 
-gbp&#95;permanent&#95;links
+gbp_permanent_links
 
 Graeme Porteous
 
@@ -1076,7 +1076,7 @@ zip
 
 compatibility
 
-"ako&#95;ifBrowser":http://ako-k.com/archive/129
+"ako_ifBrowser":http://ako-k.com/archive/129
 
 Adrian Kostrubiak
 
@@ -1084,7 +1084,7 @@ Conditionally include enclosed text based on the user agent of the browser viewi
 
 0.2
 
-"ako&#95;if&#95;browser-0&#95;2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_if_browser-0_2.txttxt ("ako&#95;if&#95;browser-0&#95;2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_if_browser-0_2.txtman)
+"ako_if_browser-0_2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_if_browser-0_2.txttxt ("ako_if_browser-0_2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_if_browser-0_2.txtman)
 
  - 
 
@@ -1098,7 +1098,7 @@ ID#
 
 "donate":https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=akokskis%40gmail%2ecom&item_name=ako_ifBrowser&no_shipping=2&no_note=1&tax=0&currency_code=USD&bn=PP%2dDonationsBF&charset=UTF%2d8
 
-ako&#95;syntax
+ako_syntax
 
 "Adrian Kostrubiak":http://www.ako-k.com/
 
@@ -1106,7 +1106,7 @@ Syntax highlighting for CSS, PHP and (X)HTML
 
 0.1
 
-"ako&#95;syntax-0&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_syntax-0_1.txttxt ("ako&#95;syntax-0&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_syntax-0_1.txtman)
+"ako_syntax-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_syntax-0_1.txttxt ("ako_syntax-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_syntax-0_1.txtman)
 
 no
 
@@ -1120,7 +1120,7 @@ ID#
 
 "donate":https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=akokskis%40gmail%2ecom&item_name=ako_syntax&no_shipping=2&no_note=1&tax=0&currency_code=USD&bn=PP%2dDonationsBF&charset=UTF%2d8
 
-"mem&#95;imdb&#95;votes":http://manfre.net/article/690/imdb-vote-history-plugin
+"mem_imdb_votes":http://manfre.net/article/690/imdb-vote-history-plugin
 
 Michael Manfre
 
@@ -1128,7 +1128,7 @@ Allows you to integrate an IMDB movie voting feature into your site.
 
 0.1
 
-"mem&#95;imdb&#95;votes-0&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mem_imdb_votes-0_1.txttxt ("mem&#95;imdb&#95;votes-0&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mem_imdb_votes-0_1.txtman)
+"mem_imdb_votes-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mem_imdb_votes-0_1.txttxt ("mem_imdb_votes-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mem_imdb_votes-0_1.txtman)
 
  - 
 
@@ -1142,7 +1142,7 @@ ID#
 
 donate
 
-"wet&#95;if&#95;page":http://awasteofwords.com/article/wetifpage-textpattern-plugin-testing-for-listing-page-number
+"wet_if_page":http://awasteofwords.com/article/wetifpage-textpattern-plugin-testing-for-listing-page-number
 
 "Robert Wetzlmayr":http://awasteofwords.com/
 
@@ -1150,7 +1150,7 @@ Conditionally tests for the current page number being member of a list.
 
 0.1
 
-"wet&#95;if&#95;page.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_if_page.txttxt ("wet&#95;if&#95;page.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_if_page.txtman)
+"wet_if_page.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_if_page.txttxt ("wet_if_page.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_if_page.txtman)
 
  - 
 
@@ -1192,7 +1192,7 @@ zip
 
 compatibility
 
-"bas&#95;flvplayer":http://lab.samisdat.org/bas-flvplayer
+"bas_flvplayer":http://lab.samisdat.org/bas-flvplayer
 
 Bastian Sackermann
 
@@ -1202,7 +1202,7 @@ Allows you to stream .flv videos in Txp.
 
  - 
 
-"bas&#95;flvplayer-0&#95;2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_flvplayer-0_2.zipzip ("bas&#95;flvplayer-0&#95;2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_flvplayer-0_2.zipman)
+"bas_flvplayer-0_2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_flvplayer-0_2.zipzip ("bas_flvplayer-0_2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_flvplayer-0_2.zipman)
 
 4.0.3
 
@@ -1214,7 +1214,7 @@ ID#
 
 donate
 
-ako&#95;youtube
+ako_youtube
 
 "Adrian Kostrubiak":http://www.ako-k.com/
 
@@ -1222,7 +1222,7 @@ Easily embed YouTube videos into your TXP site.
 
 0.2.1
 
-"ako&#95;youtube-0&#95;2&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_youtube-0_2_1.txttxt ("ako&#95;youtube-0&#95;2&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_youtube-0_2_1.txtman)
+"ako_youtube-0_2_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_youtube-0_2_1.txttxt ("ako_youtube-0_2_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_youtube-0_2_1.txtman)
 
 no
 
@@ -1238,17 +1238,17 @@ ID#
 
 AUDIO AND PODCASTING
 
-"jnm&#95;audio":http://www.textpatternmania.com/2006/04/29/plugin-jnmaudio
+"jnm_audio":http://www.textpatternmania.com/2006/04/29/plugin-jnmaudio
 
 "Juanjo Navarro":http://www.juanjonavarro.com/
 
-Inserts an mp3 audio player (flash) in your pages and articles. Requires the audio&#95;player files which are included in the zip.
+Inserts an mp3 audio player (flash) in your pages and articles. Requires the audio_player files which are included in the zip.
 
 0.2
 
  - 
 
-"jnm&#95;audio-0&#95;2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:jnm_audio-0_2.zipzip ("jnm&#95;audio-0&#95;2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:jnm_audio-0_2.zipman)
+"jnm_audio-0_2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:jnm_audio-0_2.zipzip ("jnm_audio-0_2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:jnm_audio-0_2.zipman)
 
 4.0.3
 
@@ -1260,7 +1260,7 @@ ID#
 
 donate
 
-"bas&#95;emff":http://lab.samisdat.org/bas-emff
+"bas_emff":http://lab.samisdat.org/bas-emff
 
 Bastian Sackermann
 
@@ -1270,7 +1270,7 @@ Allows you to stream .mp3 files in Txp. Works in conjunction with the "easy musi
 
  - 
 
-"bas&#95;emff-0&#95;4.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_emff-0_4.zipzip ("bas&#95;emff-0&#95;4.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_emff-0_4.zipman)
+"bas_emff-0_4.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_emff-0_4.zipzip ("bas_emff-0_4.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_emff-0_4.zipman)
 
 4.0.3
 
@@ -1310,7 +1310,7 @@ zip
 
 compatibility
 
-"ako&#95;nav":http://www.ako-k.com/archive/108
+"ako_nav":http://www.ako-k.com/archive/108
 
 Adrian Kostrubiak
 
@@ -1318,7 +1318,7 @@ A Dynamic Navigation System
 
 0.9.1
 
-"ako&#95;nav-0&#95;9&#95;1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_nav-0_9_1.txttxt ("ako&#95;nav-0&#95;9&#95;1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_nav-0_9_1.txtman)
+"ako_nav-0_9_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_nav-0_9_1.txttxt ("ako_nav-0_9_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_nav-0_9_1.txtman)
 
  - 
 
@@ -1360,7 +1360,7 @@ zip
 
 compatibility
 
-cbs&#95;live&#95;search
+cbs_live_search
 
 "Christophe Beyls":http://www.digitalia.be/
 
@@ -1375,7 +1375,7 @@ bc(code). <txp:search input />
 
  - 
 
-"cbs&#95;live&#95;search-0&#95;3.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:cbs_live_search-0_3.zipzip ("cbs&#95;live&#95;search-0&#95;3.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:cbs_live_search-0_3.zipman)
+"cbs_live_search-0_3.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:cbs_live_search-0_3.zipzip ("cbs_live_search-0_3.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:cbs_live_search-0_3.zipman)
 
 4.0.3
 
@@ -1415,7 +1415,7 @@ zip
 
 compatibility
 
-mtp&#95;subsections
+mtp_subsections
 
 Matt Plummer
 
@@ -1423,7 +1423,7 @@ Allows you to create subsections, much like Txp's model for handling parented ca
 
 0.1a
 
-"mtp&#95;subsections-0&#95;1a.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mtp_subsections-0_1a.txttxt ("mtp&#95;subsections-0&#95;1a.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mtp_subsections-0_1a.txtman)
+"mtp_subsections-0_1a.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mtp_subsections-0_1a.txttxt ("mtp_subsections-0_1a.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mtp_subsections-0_1a.txtman)
 
  - 
 
@@ -1465,17 +1465,17 @@ zip
 
 compatibility
 
-asy&#95;jpcache
+asy_jpcache
 
 "Sencer YurdagÃƒÂ¼l":http://www.sencer.de/
 
-Plugin that enhances speed of your web site and reduces server work by allowing cache of complete pages (including your feeds). If you want to cache partial pages to retain some dynamic parts then check out zem&#95;cache instead which is perfect for that.
+Plugin that enhances speed of your web site and reduces server work by allowing cache of complete pages (including your feeds). If you want to cache partial pages to retain some dynamic parts then check out zem_cache instead which is perfect for that.
 
 0.9.8
 
  - 
 
-"asy&#95;jpcache-0&#95;9&#95;8.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:asy_jpcache-0_9_8.zipzip ("asy&#95;jpcache-0&#95;9&#95;8.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:asy_jpcache-0_9_8.zipman)
+"asy_jpcache-0_9_8.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:asy_jpcache-0_9_8.zipzip ("asy_jpcache-0_9_8.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:asy_jpcache-0_9_8.zipman)
 
 4.0.3
 
@@ -1515,7 +1515,7 @@ zip
 
 compatibility
 
-"pap&#95;xpoll":http://www.txp.seitenweberei.ch/
+"pap_xpoll":http://www.txp.seitenweberei.ch/
 
 ?? “Tranquillo” ??
 
@@ -1525,7 +1525,7 @@ Is based on "X-poll":http://www.hotscripts.com/Detailed/41118.html by X-scripts.
 
  - 
 
-"pap&#95;xpoll-0&#95;2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_xpoll-0_2.zipzip ("pap&#95;xpoll-0&#95;2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_xpoll-0_2.zipman)
+"pap_xpoll-0_2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_xpoll-0_2.zipzip ("pap_xpoll-0_2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_xpoll-0_2.zipman)
 
 4.0.3
 

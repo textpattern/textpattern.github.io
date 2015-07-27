@@ -8,7 +8,7 @@ h3(sectionedit2#tip_topics). Tip Topics
 
 h4(#handling_diagnostics). Handling Diagnostics
 
-See the "diagnostics&#95;subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics_subtab panel for more info on this.
+See the "diagnostics_subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics_subtab panel for more info on this.
 
 h4(#handling_urls). Handling URLs
 

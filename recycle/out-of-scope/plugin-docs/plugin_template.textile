@@ -43,7 +43,7 @@ bc(code). $ cp zem_plugin.php abc_myplugin.php
 $ php abc_myplugin.php > abc_myplugin-0.1.txt
 
 
-abc&#95;myplugin-0.1.txt is the finished plugin, ready to install.
+abc_myplugin-0.1.txt is the finished plugin, ready to install.
 
 h3(sectionedit3#quick_notes). Quick Notes
 
@@ -88,7 +88,7 @@ h3(sectionedit4#speedy_development). Speedy Development
 It speeds up development tremendously if you do the following:
 
 <ol>
-<li><p>Make sure plugin name and plugin filename correspond, e.g.: zem&#95;test should be in</p>
+<li><p>Make sure plugin name and plugin filename correspond, e.g.: zem_test should be in</p>
 bc(code). zem_test.php
 
 

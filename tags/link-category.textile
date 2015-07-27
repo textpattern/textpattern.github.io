@@ -1,9 +1,9 @@
-h1. Link category
+h1. Link category [todo:pw]
 
 bc(code). <txp:link_category />
 
 
-The "link&#95;category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_category tag is a _single_ tag which returns the link category as text. This tag is used in a “link” form or inside the "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist container tag to return information about the current link in a "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist.
+The "link_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_category tag is a _single_ tag which returns the link category as text. This tag is used in a “link” form or inside the "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist container tag to return information about the current link in a "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist.
 
 h3(sectionedit1#attributes). Attributes
 
@@ -38,5 +38,5 @@ bc(code). <a class="thislink" href="<txp:link_url />">
 </a> : <txp:link_category title="1" />
 
 
-Other tags used: "link&#95;url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_url, "link&#95;name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_name
+Other tags used: "link_url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_url, "link_name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_name
 

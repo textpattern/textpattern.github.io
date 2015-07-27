@@ -1,4 +1,4 @@
-\n"mininav&#95;tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
+\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
 Tutorial by "Jon-Michael Deldin":http://jmdeldin.com/.
 
@@ -129,7 +129,7 @@ If you want the body of the article (photo) to display in the popup comment, jus
 bc(code). <txp:body/>
 
 
-to the popup&#95;comments form.
+to the popup_comments form.
 
 h4(#posting_an_image). Posting an image
 
