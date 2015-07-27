@@ -1,6 +1,6 @@
 \n"mininav&#95;tags":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tags
 
-bc(code). <txp:keywords />
+bc(code). <txp:keywords /> DEPRECATED
 
 
 The "keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=keywords tag is a _single_ tag that Textpattern will replace with the keywords associated with the article being displayed. The tag can be used in an article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, or within "pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages (templates), either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). For keywords metadata, see "meta&#95;keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag.
