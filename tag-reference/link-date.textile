@@ -32,4 +32,4 @@ bc. <a class="awesome-links" href="<txp:link_url />">
 </a>
 (<txp:link_date />)
 
-Other tags used: "link_url":link-url.textile, "link_name":link-name.textile.
+Other tags used: "link_name":link-name.textile, "link_url":link-url.textile.
