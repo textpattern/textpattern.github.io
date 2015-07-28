@@ -8,7 +8,8 @@ To ensure SEO friendly URL patterns, and for consistency, all directory names/fi
 
 # All text in lowercase.
 # Use hyphens, *not* underscores, to separate words within the URL.
-# Use Textile formatting (Markdown is not to be used) and ensure @.textile@ extension is appended to filenames.
+# Use Textile formatting (not Markdown).
+# Ensure filenames have @.textile@ extension.
 
 *Example:*
 
