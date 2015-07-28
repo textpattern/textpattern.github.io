@@ -1,33 +1,33 @@
-h1. If first section [todo:pw]
+h1. If first section
 
-bc(code). <txp:if_first_section>
+h2. Syntax
 
+bc. <txp:if_first_section>
 
-The "if_first_section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_section tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The *if_first_section* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
 
-bc(code). <txp:if_first_section>
-...conditional statements...
+bc. <txp:if_first_section>
+    ...conditional statements...
 </txp:if_first_section>
 
+The tag will execute the contained statements if the current section (usually one inside the container or form of a "section_list":section-list.textile) is the first in the currently displayed list.
 
-The tag will execute the contained statements if the current section (usually one inside the container or form of a "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list) is the first in the currently displayed list.
-
-h3(sectionedit1#attributes). Attributes
+h2. Attributes
 
 This tag has no attributes.
 
-h3(sectionedit2#examples). Examples
+h2. Examples
 
-h4(#example_1assign_a_specific_id_to_the_first_item_in_the_list). Example 1: Assign a specific id to the first item in the list
+h3. Example 1: Assign a specific id to the first item in the list
 
-bc(code). <txp:section_list wraptag="ul" break="">
-   <li<txp:if_first_section> id="first"</txp:if_first_section>><txp:section title="1" link="1" /></li>
+bc. <txp:section_list wraptag="ul" break="">
+    <li<txp:if_first_section> id="first"</txp:if_first_section>>
+        <txp:section title="1" link="1" />
+    </li>
 </txp:section_list>
 
+h2. Genealogy
 
-h3(sectionedit3#genealogy). Genealogy
+h3. Version 4.0.7
 
-h4(#version_407). Version 4.0.7
-
-* Added as a new tag.
-
+Tag support added.
