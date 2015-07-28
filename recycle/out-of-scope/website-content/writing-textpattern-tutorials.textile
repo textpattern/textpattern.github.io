@@ -1,6 +1,8 @@
-\nFirst thing is you need to have something to write about, right? If you already have something to write about, great, skip the next section and review the other tips. If you don't know what to write about, consider this simple yet powerful approach for identifying a topic.
+h1. Writing a Textpattern tutorial [todo:dw]
 
-h3(sectionedit1#choosing_a_topic). Choosing a Topic
+h2. Choosing a topic
+
+You need a topic to write about, of course. Perhaps you already have an idea based on a recent experience with Textpattern. Great. But we have our own list of topic ideas too that we'd like you to consider writing about, and publish at the Textpattern blog.
 
 If you have spent any time in the Forum at all, then you've surely seen when when a great solution was presented to a seemingly common problem. Maybe you even thought to capture the idea and write it up proper before it sinks out of sight to the bottom of a forum, eventually lost and forgotten. In fact, these knowledge bits are too frequently forgotten. As a result, the same questions get asked over and over, and the forum gets more and more redundant. Let's face it, the forum is a great place for chit-chat, but it sucks for easily finding good documentation. The crappy search engine doesn't help.
 
