@@ -1,4 +1,4 @@
-h1. How do I change the grey line separating articles?
+h1. How do I change the grey line separating articles? [todo]
 
 The layout of each article is controlled by a *form*.  Go to *textpattern > presentation > forms* and edit the one used by your page template (probably 'default', unless you've changed it).
 

@@ -1,4 +1,4 @@
-h1. How do I show only an excerpt in article lists?
+h1. How do I show only an excerpt in article lists? [todo]
 
 Textpattern provides two main text fields per article: the _Body_ and the _Excerpt_.  The Body is the main article content.  The Excerpt is normally used for a summary, introductory paragraph, abstract or similar.
 

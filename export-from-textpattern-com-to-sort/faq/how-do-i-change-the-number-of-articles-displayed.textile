@@ -1,4 +1,4 @@
-h1. How do I change the number of articles displayed?
+h1. How do I change the number of articles displayed? [todo]
 
 Edit your *page template*, and change the @<txp:article />@ tag to include a @limit@ attribute, like this:
 
