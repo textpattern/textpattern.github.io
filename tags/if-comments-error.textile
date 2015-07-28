@@ -25,7 +25,7 @@ The tag will execute the contained statements when an error exists with the comm
 
 h2. Attributes
 
-This tag has no attributes:
+This tag has no attributes.
 
 h2. Examples
 
