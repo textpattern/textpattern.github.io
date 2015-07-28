@@ -9,7 +9,7 @@ tags:
 
 h1. Textpattern tag reference
 
-Pages describing each Textpattern tag are alphabetised at below, by tag name. See "Tag basics":tag-basics/index.textile for Textpattern tag fundamentals and overview.
+Each Textpattern tag is described in detail on its respective reference page. See "Tag basics":tag-basics/index.textile for overview of tag types and modes of use.
 
 h2. Subcategories
 
