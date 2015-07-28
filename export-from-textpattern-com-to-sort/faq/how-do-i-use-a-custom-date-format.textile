@@ -1,6 +1,6 @@
 h1. How do I use a custom date format? [todo]
 
-Use @<txp:posted format="%Y-%m-%d" />@ or similar.  See the "PHP manual":http://us3.php.net/manual/en/function.strftime.php for a list of format specifiers.
+Use @<txp:posted format="%Y-%m-%d" />@ or similar. See the "PHP manual":http://us3.php.net/manual/en/function.strftime.php for a list of format specifiers.
 
 Please note that Windows supports only a "limited subset":http://msdn2.microsoft.com/en-us/library/fe06s4ak of format specifiers.
 
