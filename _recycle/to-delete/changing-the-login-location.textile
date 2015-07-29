@@ -1,16 +1,4 @@
-\n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
-
-On this page are several methods offered by the Txp community that aim to make your Textpattern installation more secure. However, before you jump into employing one, consider the bottom line and decide which side is more important to you.
-
-*Default Install:* Many Txp users, including the Txp developers themselves, contend that a default install of Textpattern is secure enough, provided your username/password details are wisely chosen. Add to this the fact there's no modifications to your file tree to maintain at each upgrade, and you have a strong argument.
-
-*Added Security:* Other Txp users prefer taking extra steps to secure Txp further, often by changing the identity/location of the configuration directory. The argument here is, “_if hackers can't find your admin login page, they can't attempt to guess your username and/or password_”.
-
-Keep in mind that many of the added security methods require modifications to the core files. Thus you'll need to make such modifications after every Txp version upgrade.
-
-For more on the pros/cons of extra security efforts, see the thread that inspires this page, "What do you do to secure &quot;/textpattern&quot;?":http://forum.textpattern.com/viewtopic.php?id=28772
-
-h3(sectionedit1#rename_the_textpattern_directory). Rename the //textpattern// Directory
+h1. Renaming the "textpattern" directory
 
 "warning":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=warning
 

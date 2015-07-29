@@ -16,23 +16,27 @@ h2. Installation
 
 h2. Administration
 
-* "Administration panels":administration/index.textile -- The organisation and general functionality of the administration side of Textpattern CMS.
+* "Administration panels":administration/index.textile -- The organisation and general functionality of the administration side of Textpattern.
 * "Administration workflow highlights":administration/admin-highlights.textile -- A useful frame of reference for quickly navigating and using the admin-side.
 
 h2. Core tags
 
-Building with Textpattern means learning to use the core set of __Tags__.
+Building with Textpattern -- literally any publishing architecture imaginable -- means learning to use the core set of tags.
 
 * "Tag basics":tags/tag-basics/index.textile - A good place to start.
-* "Complete list of Textpattern tags":tags/index.textile - Create any web publishing architecture imaginable using the magic of Textpattern tags.
+* "Tag reference index":tags/index.textile
 
-h2. Advanced topics
+h2. Security
 
-Going beyond core functionality.
+* "Textpattern security":security/index.textile (Read this before you worry, or do anything.)
+
+h2. Beyond core functionality
+
+Stuff that requires extensions and modifications.
 
 h3. Themes
 
-Better theme support is coming in future releases. Until then, there are other ways to get started with custom theme designs:
+Better theme support is coming in future releases. Until then, here are some ways to get started with creating custom themes.
 
 * "Creating Textpattern themes":themes/index.textile
 * "Creating and using admin-side themes":themes/creating_and_using_admin-side_themes.textile
@@ -40,7 +44,7 @@ Better theme support is coming in future releases. Until then, there are other w
 
 h3. Plugins
 
-Develop the next must-have plugins...
+Develop the next must-have plugins.
 
 * "Plugin development":plugins/index.textile
 * The most recent tips, hacks, and facts for your favorite plugins

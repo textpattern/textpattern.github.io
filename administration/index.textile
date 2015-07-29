@@ -1,16 +1,12 @@
-\n"mininav_primary_backoffice_tabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_primary_backoffice_tabs
+h1. Textpattern administration [todo:dw]
 
-See also the Administration tutorials page.
+The administration side of Textpattern (often called "admin-side") is where the website administrator (perhaps you) -- as well as any additional "users":administration/users/index.textile having the right kind of access -- manages the Textpattern installation.
 
-The "admin-side":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin-side is where you manage your Textpattern site. If the site is owned and managed by you only, then you'll do it all here. If the site is maintained by different people (e.g., administrator, authors, presentation designer, etc.) then they may only have access to the areas relevant to their roles as initially setup in the "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users panel.
+h2. Admin-side login
 
-The admin-side login screen and two default landing points are indicated below.
+Textpattern is typically installed in the root web location of a website's domain, which puts the login location at __domain.tld/textpattern__.
 
-h3(sectionedit1#admin-side_login). Admin-side Login
-
-Unless you make modifications to your file tree (not recommended if you are just getting started), admin-side login will always be at _example.com/textpattern_ (Figure 1).
-
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:back-office-login.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:back-office-login.png
+<aside class="tipbox">See "Security":security/index.textile information if you're worried about this location being common knowledge.'</aside>
 
 h3(sectionedit2#first-time_login_landing_point). First-Time Login Landing Point
 
