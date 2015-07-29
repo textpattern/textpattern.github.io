@@ -28,7 +28,7 @@ Building publishing architectures with Textpattern -- literally anything imagina
 
 h2. Security
 
-Read our statement about "Textpattern security":security/index.textile before you worry, or do anything hasty.
+Read "Textpattern security":security/index.textile before you worry, or do anything hasty.
 
 h2. Beyond core functionality
 
