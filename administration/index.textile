@@ -1,14 +1,54 @@
-h1. Textpattern administration [todo:dw]
+h1. Textpattern administration
 
 The administration side of Textpattern (often called "admin-side") is where the website administrator (perhaps you) -- as well as any additional "users":administration/users/index.textile having the right kind of access -- manages most aspects of the Textpattern installation (exluding what actually needs done on the web server itself).
 
-h2. Login location
+On this page:
+
+* "Login location":#sec1
+* "Admin-side organisation":#sec2
+* "First tasks after intallation or upgrade":#sec3
+* "Routine default panel":#sec4
+
+h2(sec1). Login location
 
 Users typically install Textpattern CMS in the root location of a website's domain because they intend to run the entire website with the CMS. This puts the login location at __domain.tld/textpattern__.[1] If you installed Textpattern in a sub-directory, the login location would reflect that (__domain.tld/sub-directory/textpattern__).  
 
 fn1. See "Textpattern security":../security/index.textile if you're worried about the login location being common knowledge.
 
-h2. First tasks after intallation or upgrade
+h2(sec2). Admin-side organisation
+
+The admin-side is organised into a primary set of regions, with each region having a secondary set of working panels.[2] A third set of panels exists in the case of Preferences only. One panel in each primary region (and the secondary preferences region) serves as the default view:
+
+* Content
+** "Articles":content/articles-panel.textile
+** "Categories":content/categories-panel.textile
+** "Comments":content/comments-panel.textile
+** "Files":content/files-panel.textile
+** "Images":content/images-panel.textile
+** "Links":content/links-panel.textile
+** "Write":content/write-panel.textile (default)
+* Presentation
+** "Forms":presentation/forms-panel.textile
+** "Pages":presentation/pages-panel.textile (default)
+** "Sections":presentation/sections-panel.textile
+** "Styles":presentation/styles-panel.textile
+* Admin
+** "Diagnostics":admin/diagnostics-panel.textile
+** "Import":admin/import-panel.textile
+** "Plugins":admin/plugins-panel.textile
+** Preferences
+*** "Basic":admin/preferences-basic-panel.textile (default)
+*** "Advanced":admin/preferences-advanced-panel.textile
+*** "Language":admin/preferences-language-panel.textile
+** "Users":admin/users-panel.textile (default)
+** "Visitor logs":admin/-panel.textile
+* Extensions[3]
+
+fn2. The presentational theme of the admin-side's organisation was originally conceived as a system of file folders, with each region label depicted as a folder "tab". This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as "tabs" even though they may use an admin theme that does not depict the file folder concept. You'll even see the word "tab" used in the admin-side UI, such as in preferences, help dialogue, and so forth. For purposes of user documentation, "panel" and "tab" mean exactly the same thing, but docs will only use "tab" when a specific reference is being made to the admin-side UI where the word is still encoded.
+
+fn3. The Extensions panel is not a core system panel. It only appears if you install any of the admin-side plugins that make use of it, and you probably will, eventually. As just two examples, "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 is a popular admin-side plugin for extending core user data, which is helpful for creating author bio pages in multi-contributor websites. And "ied_plugin-composer":http://forum.textpattern.com/viewtopic.php?id=14898 (now maintained by "smd"), is a powerful plugin for those interested in "plugin development":../plugins/index.textile.
+
+h2(sec3). First tasks after intallation or upgrade
 
 When you first log in after an intallation (or upgrade), you'll be taken to the  "Language":admin/preferences-language-panel.textile preferences panel under the "Admin":admin/index.textile area to install (or update) the language packs you choose to use. Be sure you make the language selection(s) _and_ save the changes.
 
@@ -16,7 +56,7 @@ Your next stop should be the "Diagnostics":admin/diagnostics-panel.textile panel
 
 Eventually you'll tackle setting up site architecture and presentation with a little trial and error. Building publishing architectures with Textpattern is a big chunk of learning and tinkering, and there's no direct 1-2-3 method for it, but the learning is fun, and once you understand how it all fits together you'll thank yourself for choosing such an elegant system. See "administration highlights":administration-highlights.textile for getting up to speed with common admin navigation routes and tasks.
 
-h2. Routine default panel
+h2(sec4). Routine default panel
 
 After your initial log in to set languages, as described above, the default admin-side landing location changes; you'll find yourself landing on the "Write panel":content/write-panel.textile after loggin in, which is under the "Content":content/index.textile area of the admin-side. The assumption is that once your site is built, you'll want to go straight to the Write panel every time.
 
