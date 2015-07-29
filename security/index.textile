@@ -2,7 +2,7 @@ h1. Textpattern security
 
 The developers of Textpattern take system security seriously. They regularly audit the source code for potential "holes" that bad people might try to exploit. Textpattern can proudly claim that for many years now there has been no confirmed reports of an exploited hole in core Textpattern code. 
 
-There have been occasional reports, however, of hacked Textpattern sites, and the problem has always been traced to security holes in _other applications_ (or in the web server itself), which were exploited and used to take control of the Textpattern administrator's account.
+There have been occasional reports of hacked Textpattern sites, but the problem always traces back to security holes in _other applications_ (or in the web server itself), which were exploited and used to take control of the Textpattern administrator's account.
 
 This is important to understand, because while Textpattern itself is quite secure, you can still make it vulnerable by using other technology in relation that is not as secure. *There is nothing Textpattern developers can do to defend against security holes in other applications.*
 
