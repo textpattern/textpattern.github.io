@@ -19,7 +19,7 @@ h2(sec2). Admin-side organisation
 
 The admin-side is organised into a primary set of regions, with each region having a secondary set of working panels. A third set of panels exists in the case of Preferences only. One panel in each primary region (and the secondary Preferences region) serves as the default view:
 
-* Content
+* "Content":content/index.textile
 ** "Articles":content/articles-panel.textile
 ** "Categories":content/categories-panel.textile
 ** "Comments":content/comments-panel.textile
@@ -27,22 +27,22 @@ The admin-side is organised into a primary set of regions, with each region havi
 ** "Images":content/images-panel.textile
 ** "Links":content/links-panel.textile
 ** "Write":content/write-panel.textile (default)
-* Presentation
+* "Presentation":presentation/index.textile
 ** "Forms":presentation/forms-panel.textile
 ** "Pages":presentation/pages-panel.textile (default)
 ** "Sections":presentation/sections-panel.textile
 ** "Styles":presentation/styles-panel.textile
-* Admin
+* "Admin":admin/index.textile
 ** "Diagnostics":admin/diagnostics-panel.textile
 ** "Import":admin/import-panel.textile
 ** "Plugins":admin/plugins-panel.textile
-** Preferences
+** "Preferences":preferences/index.textile
 *** "Basic":admin/preferences-basic-panel.textile (default)
 *** "Advanced":admin/preferences-advanced-panel.textile
 *** "Language":admin/preferences-language-panel.textile
 ** "Users":admin/users-panel.textile (default)
 ** "Visitor logs":admin/-panel.textile
-* Extensions[2]
+* ["Extensions":extensions/index.textile][2]
 
 fn2. The Extensions panel is not a core system panel. It only appears if you install any of the admin-side plugins that make use of it, and you probably will eventually. Two examples: "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 is a popular admin-side plugin for extending core user data, which is helpful for creating author bio pages in multi-contributor websites. And "ied_plugin_composer":http://forum.textpattern.com/viewtopic.php?id=14898 (now maintained by "smd"), is a powerful plugin for those interested in "plugin development":../plugins/index.textile.
 
