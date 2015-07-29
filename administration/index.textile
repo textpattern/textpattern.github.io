@@ -4,7 +4,7 @@ The administration side of Textpattern (often called "admin-side") is where the 
 
 h2. Admin-side login
 
-Textpattern is typically installed in the root web location of a website's domain, which puts the login location at __domain.tld/textpattern__.
+Textpattern is typically installed in the web root location of a website's domain, which puts the login location at __domain.tld/textpattern__.
 
 <aside class="tipbox">See "Textpattern security":../security/index.textile if you're worried about the login location being common knowledge.</aside>
 
