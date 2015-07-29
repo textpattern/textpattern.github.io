@@ -17,7 +17,7 @@ fn1. See "Textpattern security":../security/index.textile if you're worried abou
 
 h2(sec2). Admin-side organisation
 
-The admin-side is organised into a primary set of regions, with each region having a secondary set of working panels.[2] A third set of panels exists in the case of Preferences only. One panel in each primary region (and the secondary preferences region) serves as the default view:
+The admin-side is organised into a primary set of regions, with each region having a secondary set of working panels.[2] A third set of panels exists in the case of Preferences only. One panel in each primary region (and the secondary Preferences region) serves as the default view:
 
 * Content
 ** "Articles":content/articles-panel.textile
