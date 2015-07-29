@@ -8,11 +8,11 @@ h1. Index
 
 h2. Installation
 
-* "Quick installation/upgrade guide":installation/index.textile -- The basic Textpattern CMS installation/upgrade approach.
-* "Detailed installation instructions":installation/detailed-installation-instructions.textile -- In-depth information regarding Textpattern CMS installation.
-* "Detailed upgrading instructions":installation/detailed-upgrading-instructions.textile -- In-depth information regarding upgrading to a newer Textpattern CMS version.
-* "Downgrading, nightlies and bleeding edge":installation/downgrading-nightlies-bleeding-edge.textile -- Installation of non-current/development Textpattern CMS releases.
-* Multi-site installation -- One Textpattern CMS install to rule them all.
+* "Quick installation/upgrade guide":installation/index.textile
+* "Detailed installation instructions":installation/detailed-installation-instructions.textile
+* "Detailed upgrading instructions":installation/detailed-upgrading-instructions.textile (Upgrading is smart and recommended.) 
+* "Downgrading, nightlies and bleeding edge":installation/downgrading-nightlies-bleeding-edge.textile  (For the testers and risk takers.)
+* Multi-site installation (Multiple sites managed by one admin-side.)
 
 h2. Administration
 
@@ -21,14 +21,14 @@ h2. Administration
 
 h2. Core tags
 
-Building with Textpattern -- literally any publishing architecture imaginable -- means learning to use the core set of tags.
+Building publishing architectures with Textpattern -- literally anything imaginable -- means learning to use the core set of tags.
 
 * "Tag basics":tags/tag-basics/index.textile - A good place to start.
 * "Tag reference index":tags/index.textile
 
 h2. Security
 
-* "Textpattern security":security/index.textile (Read this before you worry, or do anything.)
+Read our statement about "Textpattern security":security/index.textile before you worry, or do anything hasty.
 
 h2. Beyond core functionality
 
