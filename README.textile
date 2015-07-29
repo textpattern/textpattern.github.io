@@ -45,3 +45,10 @@ To improve the ability to scan pages as described above, write as concisely as y
 # Avoid over use of adverbs, idioms, and other partial clauses at the beginning of sentences: "Meanwhile, ...", "On the other hand, ...", "However, ...", "In other words, ...", "Nevertheless, ..." and so forth. This doesn't mean never use them, but if you're using them regularly, or more than once in a paragraph, then it's too much. Rewrite the sentences more concisely without the clause breaks.
 # Remove words from your sentences until you can't remove anymore for the meaning to remain clear.
 # Break long, multi-clause sentences into shorter sentences. (Careful here, though, sometimes a single longer sentence can read more smoothly if it's free of needless word bloat. Multiple shorter sentences doesn't mean result in choppy stilted reading. Use your best judgement.)
+
+h2(sec4). Typo gotchas to watch out for
+
+* User docs are written using "British English spelling and punctuation":https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences conventions. But don't kill yourself over it.
+* Use "login" and "logout" when it's a noun (e.g., "the login location"). 
+* Use "log in" and "log out" when it's a verb (e.g., "after you log in" or "after logging in").
+* Avoid using "Txp" and "TXP". While these pet uses are convenient in the support forum, they lend confusion to brand awareness in official docs. (E.g., the world is still confused about "Textpattern" vs. "TextPattern"). Always spell Textpattern out fully. This will also help you see if you're using the name too repetitively, which can be a sentence bloat problem.
