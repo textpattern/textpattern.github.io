@@ -44,7 +44,7 @@ The admin-side is organised into a primary set of regions, with each region havi
 ** "Visitor logs":admin/-panel.textile
 * Extensions[2]
 
-fn2. The Extensions panel is not a core system panel. It only appears if you install any of the admin-side plugins that make use of it, and you probably will eventually. Two examples: "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 is a popular admin-side plugin for extending core user data, which is helpful for creating author bio pages in multi-contributor websites. And "ied_plugin-composer":http://forum.textpattern.com/viewtopic.php?id=14898 (now maintained by "smd"), is a powerful plugin for those interested in "plugin development":../plugins/index.textile.
+fn2. The Extensions panel is not a core system panel. It only appears if you install any of the admin-side plugins that make use of it, and you probably will eventually. Two examples: "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 is a popular admin-side plugin for extending core user data, which is helpful for creating author bio pages in multi-contributor websites. And "ied_plugin_composer":http://forum.textpattern.com/viewtopic.php?id=14898 (now maintained by "smd"), is a powerful plugin for those interested in "plugin development":../plugins/index.textile.
 
 h2(sec3). First tasks after intallation or upgrade
 
