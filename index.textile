@@ -10,14 +10,16 @@ h2. Installation
 
 * "Quick installation/upgrade guide":installation/index.textile
 * "Detailed installation instructions":installation/detailed-installation-instructions.textile
-* "Detailed upgrading instructions":installation/detailed-upgrading-instructions.textile (Upgrading is smart and recommended.) 
+* "Detailed upgrading instructions":installation/detailed-upgrading-instructions.textile[1] 
 * "Downgrading, nightlies and bleeding edge":installation/downgrading-nightlies-bleeding-edge.textile  (For the testers and risk takers.)
 * Multi-site installation (Multiple sites managed by one admin-side.)
 
+fn1. Upgrading is smart and recommended for "site security":security/index.textile. 
+
 h2. Administration
 
-* "Administration panels":administration/index.textile -- The organisation and general functionality of the administration side of Textpattern.
-* "Administration workflow highlights":administration/admin-highlights.textile -- A useful frame of reference for quickly navigating and using the admin-side.
+* "Administration panels":administration/index.textile -- (Organisation and functionality of the admin-side.)
+* "Administration workflow highlights":administration/admin-highlights.textile (Quick walkthrough of common admin-side routines.)
 
 h2. Core tags
 

@@ -6,7 +6,7 @@ h2. Admin-side login
 
 Textpattern is typically installed in the root web location of a website's domain, which puts the login location at __domain.tld/textpattern__.
 
-<aside class="tipbox">See "Security":security/index.textile information if you're worried about this location being common knowledge.'</aside>
+<aside class="tipbox">See "Textpattern security":security/index.textile if you're worried about the login location being common knowledge.</aside>
 
 h3(sectionedit2#first-time_login_landing_point). First-Time Login Landing Point
 
