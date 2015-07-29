@@ -1,12 +1,14 @@
 h1. Textpattern administration [todo:dw]
 
-The administration side of Textpattern (often called "admin-side") is where the website administrator (perhaps you) -- as well as any additional "users":administration/users/index.textile having the right kind of access -- manages the Textpattern installation.
+The administration side of Textpattern (often called "admin-side") is where the website administrator (perhaps you) -- as well as any additional "users":administration/users/index.textile having the right kind of access -- manages most aspects of the Textpattern installation (exluding what actually needs done on the web server itself).
 
 h2. Admin-side login
 
-Textpattern is typically installed in the web root location of a website's domain, which puts the login location at __domain.tld/textpattern__.
+Textpattern is typically installed in the web root location of a website's domain, which puts the login location at __domain.tld/textpattern__[1].
 
-<aside class="tipbox">See "Textpattern security":../security/index.textile if you're worried about the login location being common knowledge.</aside>
+<aside class="tipbox" style="background-color:#ffeead; padding:.76em; font-size:85%;">See "Textpattern security":../security/index.textile if you're worried about the login location being common knowledge.</aside>
+
+fn1. See "Textpattern security":../security/index.textile if you're worried about the login location being common knowledge.
 
 h3(sectionedit2#first-time_login_landing_point). First-Time Login Landing Point
 
