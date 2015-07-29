@@ -1,0 +1,7 @@
+h1. 404 error unless I use index.php [todo]
+
+Uncomment (remove the "#" from) the following line in your .htaccess file:
+
+bq. @#DirectoryIndex index.php index.html@
+
+If that doesn't help, or causes a 500 Internal Server error, contact your web host tech support and ask them about enabling @DirectoryIndex@ for PHP files.
