@@ -2,27 +2,23 @@ h1. Textpattern administration [todo:dw]
 
 The administration side of Textpattern (often called "admin-side") is where the website administrator (perhaps you) -- as well as any additional "users":administration/users/index.textile having the right kind of access -- manages most aspects of the Textpattern installation (exluding what actually needs done on the web server itself).
 
-h2. Admin-side login
+h2. Login location
 
-Textpattern is typically installed in the web root location of a website's domain, which puts the login location at __domain.tld/textpattern__[1].
-
-<aside class="tipbox" style="background-color:#ffeead; padding:.76em; font-size:85%;">See "Textpattern security":../security/index.textile if you're worried about the login location being common knowledge.</aside>
+Users typically install Textpattern CMS in the root location of a website's domain because they intend to run the entire website with the CMS. This puts the login location at __domain.tld/textpattern__.[1] If you installed Textpattern in a sub-directory, the login location would reflect that (__domain.tld/sub-directory/textpattern__).  
 
 fn1. See "Textpattern security":../security/index.textile if you're worried about the login location being common knowledge.
 
-h3(sectionedit2#first-time_login_landing_point). First-Time Login Landing Point
+h2. First tasks after intallation or upgrade
 
-When you install Textpattern and login for the first time (or when you first login after upgrading an installation), the default view will be in the "admin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin area, specifically at the "language_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences view where you need to install/update the languages you choose to use (Figure 2).
+When you first log in after an intallation (or upgrade), you'll be taken to the  "Language":admin/preferences-language-panel.textile preferences panel under the "Admin":admin/index.textile area to install (or update) the language packs you choose to use. Be sure you make the language selection(s) _and_ save the changes.
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:languages-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:languages-tab.png
+Your next stop should be the "Diagnostics":admin/diagnostics-panel.textile panel to check if there are any warnings are problems to troubleshoot. Then go configure your "Basic preferences":admin/preferences-basic-panel.textile, such as site identity values, time zones, publishing behaviour, and so forth. 
 
-From there you should configure your "basic_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences, check/troubleshoot "diagnostics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics as needed, and then tackle setting up site architecture and presentation with a little trial and error. The latter is a big chunk of learning and doing and there's no direct 1-2-3 method for it, but this wiki is here, the learning is fun, and once you understand how it all fits together you'll thank yourself for choosing such an elegant system.
+Eventually you'll tackle setting up site architecture and presentation with a little trial and error. Building publishing architectures with Textpattern is a big chunk of learning and tinkering, and there's no direct 1-2-3 method for it, but the learning is fun, and once you understand how it all fits together you'll thank yourself for choosing such an elegant system. See "administration highlights":administration-highlights.textile for getting up to speed with common admin navigation routes and tasks.
 
-h3(sectionedit3#routine_login_landing_point). Routine Login Landing Point
+h2. Routine default panel
 
-After your initial login, all other admin-side visits will default you directly in the "content":/home/www/zendstudio/dokuwiki/bin/doku.php?id=content tab's "write":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write panel, which will be convenient later when all you need to do is write articles (Figure 3).
+After your initial log in to set languages, as described above, the default admin-side landing location changes; you'll find yourself landing on the "Write panel":content/write-panel.textile after loggin in, which is under the "Content":content/index.textile area of the admin-side. The assumption is that once your site is built, you'll want to go straight to the Write panel every time.
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-tab.png
-
-You can optionally change the location of your login landing point from the "advanced_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences tab in the "admin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin area: set the _Default admin tab_ dropdown to your preferred page.
+You can change the default landing location in "Basic preferences":admin/preferences-basic-panel.textile to whatever admin-side panel you want. Look under the *Admin* section on the Basic preferences panel and find the preference for "Default admin tab". Use the drop-down menu to select the panel you want, then save.
 
