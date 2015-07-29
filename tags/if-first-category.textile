@@ -29,7 +29,7 @@ This tag has no attributes.
 
 h2. Examples
 
-h3. Example 1: Identify first category in category_list
+h3. Example 1: Identify first category in a category list
 
 bc. <txp:category_list parent="group-1" children="0">
     <txp:if_first_category>
