@@ -1,30 +1,41 @@
-h1. If last category [todo:pw]
+h1. If last category
 
-bc(code). <txp:if_last_category>
+h2. Syntax
 
+bc. <txp:if_last_category>
 
-The "if_last_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_category tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The *if_last_category* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
 
-bc(code). <txp:if_last_category>
-...conditional statements...
+bc. <txp:if_last_category>
+    ...conditional statements...
 </txp:if_last_category>
 
+The tag will execute the contained statements if the current category (usually one inside the container or form of a "category_list":category-list.textile) is the last in the currently displayed list.
 
-The tag will execute the contained statements if the current category (usually one inside the container or form of a "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list) is the last in the currently displayed list.
-
-h3(sectionedit1#attributes). Attributes
+h2. Attributes
 
 This tag has no attributes.
 
-h3(sectionedit2#examples). Examples
+h2. Examples
 
-h4(#example_1to_be_written). Example 1: To be written
+h3. Example 1: Identify last category in a category list
 
-TBW
+bc. <txp:category_list parent="group-1" children="0">
+    <txp:if_last_category>
+        <h3>
+            <txp:category />
+        </h3>
+    <txp:else />
+        <txp:category link="1" />
+    </txp:if_last_category>
+</txp:category_list>
 
-h3(sectionedit3#genealogy). Genealogy
+Prevents the last category in the list from being hyperlinked to a category page. Why you might do it? If you nest categories under a 'header' category you might want to show the header of the group but not allow people to link to its category page.
 
-h4(#version_407). Version 4.0.7
+Other tags used: "category":/category.textile, "category_list":category-list.textile, "else":else.textile.
 
-* Added as a new tag.
+h2. Genealogy
 
+h3. Version 4.0.7
+
+Tag support added.
