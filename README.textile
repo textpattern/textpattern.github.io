@@ -30,8 +30,8 @@ Make doc pages *scannable* with a *consistent structure* across them, as much as
 # Avoid using h4-h6 header levels, if possible. Deep structuring means the copy is probably too complex. Try and structure content with h2-h3 only.
 # If you have more than two "h2" sections on the page, follow the h1 title with an in-page ToC ("see ToC example":security/index.textile). Do this by:
 ## adding "On this page:" in normal text, followed by 
-## an unordered list of links to the "h2" headers only, and
-## use "#sec1", "#sec2", "#sec3", etc as the anchors to make it easy.
+## an unordered list of links to the "h2" headers only (e.g., @"Header label":#sec1@), and
+## use "#sec1", "#sec2", "#sec3", etc as the anchors to make it easy every time (i.e., @h2(#sec1). Header label@).
 # Use footnotes in a given h2 section for any "Tips" or side details not needing said in the primary paragraph. ("see footnote examples":security/index.textile)
 
 h2(#sec3). Concise copywriting
