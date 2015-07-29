@@ -1,0 +1,33 @@
+h1. How should I ask for help on the forum? [todo]
+
+The "Textpattern Forum":http://forum.textpattern.com/ is for discussion and support of all things Textpattern.
+
+Please bear in mind that it is a _community forum_ - when you ask for assistance, you are asking volunteers and fellow users, not paid technical support staff.
+
+The usual common-sense conventions of etiquette and politeness apply.
+
+A few rules of thumb specific to the Textpattern forum:
+
+* Please make an effort to check the "FAQ":http://textpattern.com/faq/ and "documentation":http://textbook.textpattern.net/ before posting, and check for duplicate threads on the forum.  The forum search feature has been unreliable of late; try "Google instead":http://www.google.com.au/search?hl=en&q=site%3Aforum.textpattern.com.
+
+* Try to choose the most appropriate forum for your question.  *Troubleshooting* is for when you've tried something and it doesn't work as expected.  *How do I?* is self explanatory.  Questions about plugins should go to the *Plugins* forum, not How do I or Troubleshooting.
+
+* If you're asking for help with a problem or error, please describe the problem clearly and unambiguously.  If there is an error message, please include an _exact copy_ of the message in your post.  If something doesn't work as expected, describe what you're expecting to see, and the actual behaviour.  A link to the page in question is usually helpful, and sometimes a screenshot might be appropriate.  Descriptions like "doesn't work" or "it's broken" are too vague, and unlikely to receive an answer.
+
+* Most suspected bugs aren't really bugs, but problems caused by external factors.  Unless you've confirmed the problem with a fresh install, or can identify the problem in the PHP source, start with a Troubleshooting post rather than a bug report.
+
+* Troubleshooting questions will usually be answered quicker if you include a copy of your diagnostics in your post (textpattern > admin > diagnostics).  Don't post the "High" detail version unless someone asks.
+
+* Questions about templates and appearance will usually benefit from including a _minimal_ copy of the code in question.  Edit out as much irrelevant code as you can -- a short snippet of code is much easier for people to quickly diagnose than an entire page.
+
+* Surround HTML or template code with @&#60;code> &#60;/code>@ tags when posting.
+
+* Surround Textile code with @&#60;notextile> &#60;/notextile>@ tags when posting.
+
+* More detailed examples of how to post HTML, template and Textile code are provided in "this FAQ":http://textpattern.com/faq/43/how-do-i-post-tags-and-code-on-the-forum
+
+* If you haven't received an answer in a day or so, there's probably a good reason: an ambiguous or rambling question, or not enough information.  *Don't* "bump" your thread with a single-word post, it's more likely to annoy people than attract an answer.  Post some more information instead.
+
+* Don't post a troubleshooting question as a reply to an existing thread unless your problem is exactly the same as the one described at the beginning of the thread.
+
+* If you're requesting a feature, "this article":http://forum.textpattern.com/viewtopic.php?id=10325 lists some of the things you can do to increase its chances.
