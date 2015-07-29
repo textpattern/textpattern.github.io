@@ -2,12 +2,12 @@
 layout: document
 category: tag-reference
 published: true
-title: "Textpattern tag reference"
+title: "Tag reference index"
 tags:
   - Tag reference
 ---
 
-h1. Textpattern tag reference
+h1. Tag reference index
 
 Each Textpattern tag is described in detail on its respective reference page. See "Tag basics":tag-basics/index.textile for overview of tag types and modes of use.
 
