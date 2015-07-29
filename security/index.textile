@@ -2,29 +2,45 @@ h1. Textpattern security
 
 The developers of Textpattern take system security seriously. They regularly audit the source code for potential "holes" that bad people might try to exploit. Textpattern can proudly claim that for many years now there has been no confirmed reports of an exploited hole in core Textpattern code. 
 
-There have been occasional reports of hacked Textpattern sites, but the problem always traces back to security holes in _other applications_ (or in the web server itself), which were exploited and used to take control of the Textpattern administrator's account.
+There have been occasional reports of hacked Textpattern sites, but the problem always traces to security holes in _other applications_ (or in the web server itself), which were exploited and used to take control of the Textpattern administrator's account.
 
 This is important to understand, because while Textpattern itself is quite secure, you can still make it vulnerable by using other technology in relation that is not as secure. *There is nothing Textpattern developers can do to defend against security holes in other applications.*
 
 h2. Do your part for good security
 
-Textpattern developers do their part to keep core code as secure as they can. It's up to you to do the rest. There are several things you can and should do to ensure the security of your website:
+Textpattern developers do their part to keep core code as secure as they can. It's up to you to do the rest. There are several things you can and should do to help keep your website secure.
 
-* Keep your Textpattern installation current by updating to the "latest stable release version":https:/textpattern.com/download.
+With regard to your Textpattern installation:
+
+* Update your installation to the "latest stable release version":https:/textpattern.com/download whenever new releases are available.
 * Check your "diagnostics":administration/admin/diagnostics.textile for security warnings. [todo:add warning examples on diagnostics page]
-* Regularly verify the Textpattern plugins you've installed and have turned _on_ are the latest versions. (*Tip:** Subscribe to all the plugin author support threads for the plugins you use so you're informed when new versions are released.)
-* Remove plugins you have turned _off_ and don't rely on anymore. (You can always reinstall them )
-* If you're using other PHP or CGI applications, like a photo gallery or form mail application, make sure they are maintained and up to date.
+
+With regard to Texpattern plugins:
+
+* Regularly verify the plugins you've uploaded and turned _on_ are the latest versions.[1]
+* Remove plugins you have turned _off_ and don't rely on anymore. (You can always reinstall them if ever needed again.)
+
+With respect to other third-party software integrations:
+
+* If you're using other PHP or CGI applications, like a photo gallery or form mail application, make sure they are maintained and up to date.[2]
 * Don't leave test code or unused PHP/CGI applications on your server.
+
+With regard to your web host or web server:
+
 * Pay attention to security announcements from your hosting company or server admin. Likewise, if you find your host is slow to update its provided software, contact the host admins and remind them to do it.
 * If you maintain your own web server, keep it updated with security patches. (If you maintain your own server, you should know that already.)
 
-Textpattern developers have no control over the quality or security of community plugins, add-ons, and/or modifications to the core system. It's up to you to evaluate the security of third-party code.
+Core developers have no control over the quality or security of community plugins, third-party add-ons, or modifications you might make to the core system. It's up to you to evaluate the security of third-party code, and to make smart judgement calles about code modification.
+
+fn1. Tip: Subscribe to all the plugin author support threads for the plugins you use so you're informed when new versions are released. This is subject to the plugin authors making announcements in those threads, of course, so not an guarantee you will be notified, but better than nothing.
+fn2. Tip: Odds are generally better that hosted third-party services like Disqus, Twitter, Google Maps, and so on are safer to integrate than dubious scripts you might find on the internet.
 
 h2. To modify or not modify the core for added security
 
-Textpattern developers (current and past) tell us (e.g., "here":http://forum.textpattern.com/viewtopic.php?pid=192807#p192807, "here":http://forum.textpattern.com/viewtopic.php?pid=192818#p192818, and "here":http://forum.textpattern.com/viewtopic.php?pid=192827#p192827) that a default installation of Textpattern is secure enough, and that trying to mask the identity of your Textpattern install or change the location of the admin login (i.e., changing the name of the configuration directory) is unwarranted, especially if your login details were wisely chosen and you follow all of the security precautions listed above. Thus, you are not advised to modify core files for the sake of security, but you are advised to keep on top of the other precautions listed above.
+Textpattern developers, current and past, tell us (e.g., "here":http://forum.textpattern.com/viewtopic.php?pid=192807#p192807, "here":http://forum.textpattern.com/viewtopic.php?pid=192818#p192818, and "here":http://forum.textpattern.com/viewtopic.php?pid=192827#p192827) that a default installation of Textpattern is sufficiently secure for most needs. Thus changing the location of the admin login (i.e., renaming the configuration directory), or masking the identity of your Textpattern install is unwarranted, especially if your login details were wisely chosen and you follow all of the security precautions listed above.[3] An exception might be if you use Textpattern in a business setting that requires something like SSL authentication, in which case you should have the development skills to know how to do that.
 
-h2. Should you suspect your security is questionable
+fn3. In fact, core developers appreciate when you proudly declare your choice for Textpattern by using this meta tag in the @head@ section of your page templates: @<meta name="generator" content="Textpattern CMS" />@. 
 
-If you ever suspect a security problem in Textpattern installation, *do not publish any sensitive information about it*. "Report the security incident to core developers":http://textpattern.com/security immediately and give them a chance to respond to the issue.
+h2. If you suspect your site has been hacked
+
+If you ever suspect there's a security problem in Textpattern, *do not publish any sensitive information about it*. "Report the security incident to core developers":http://textpattern.com/security immediately and give them a chance to respond to the issue.
