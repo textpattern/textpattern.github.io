@@ -10,22 +10,22 @@ h2. Do your part for good security
 
 Textpattern developers do their part to keep core code as secure as they can. It's up to you to do the rest. There are several things you can and should do to help keep your website secure.
 
-With regard to your Textpattern installation:
+**With regard to Textpattern installation:**
 
 * Update your installation to the "latest stable release version":https:/textpattern.com/download whenever new releases are available.
 * Check your "diagnostics":administration/admin/diagnostics.textile for security warnings. [todo:add warning examples on diagnostics page]
 
-With regard to Texpattern plugins:
+**With regard to Texpattern plugins:**
 
 * Regularly verify the plugins you've uploaded and turned _on_ are the latest versions.[1]
 * Remove plugins you have turned _off_ and don't rely on anymore. (You can always reinstall them if ever needed again.)
 
-With respect to other third-party software integrations:
+**With respect to other third-party software integrations:**
 
 * If you're using other PHP or CGI applications, like a photo gallery or form mail application, make sure they are maintained and up to date.[2]
 * Don't leave test code or unused PHP/CGI applications on your server.
 
-With regard to your web host or web server:
+**With regard to your web host or web server:**
 
 * Pay attention to security announcements from your hosting company or server admin. Likewise, if you find your host is slow to update its provided software, contact the host admins and remind them to do it.
 * If you maintain your own web server, keep it updated with security patches. (If you maintain your own server, you should know that already.)
