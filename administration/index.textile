@@ -7,7 +7,7 @@ On this page:
 * "Login location":#sec1
 * "Admin-side organisation":#sec2
 * "First tasks after intallation or upgrade":#sec3
-* "Routine default panel":#sec4
+* "Changing default login panel":#sec4
 
 h2(sec1). Login location
 
@@ -54,7 +54,7 @@ Your next stop should be the "Diagnostics":admin/diagnostics-panel.textile panel
 
 Eventually you'll tackle setting up site architecture and presentation with a little trial and error. Building publishing architectures with Textpattern is a big chunk of learning and tinkering, and there's no direct 1-2-3 method for it, but the learning is fun, and once you understand how it all fits together you'll thank yourself for choosing such an elegant system. See "administration highlights":administration-highlights.textile for getting up to speed with common admin navigation routes and tasks.
 
-h2(sec4). Routine default panel
+h2(sec4). Changing default login panel
 
 After your initial log in to set languages, as described above, the default admin-side landing location changes; you'll find yourself landing on the "Write panel":content/write-panel.textile after loggin in, which is under the "Content":content/index.textile area of the admin-side. The assumption is that once your site is built, you'll want to go straight to the Write panel every time.
 
