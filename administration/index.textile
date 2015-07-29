@@ -1,6 +1,6 @@
 h1. Textpattern administration
 
-The administration side of Textpattern (often called "admin-side") is where the website administrator (perhaps you) -- as well as any additional "users":administration/users/index.textile having the right kind of access -- manages most aspects of the Textpattern installation (exluding what actually needs done on the web server itself).
+The administration side of Textpattern (often called "admin-side") is where the website administrator -- and any additional "users":administration/users/index.textile having rights of access -- manages website content, architecture, presentation, and behaviour configuration (exluding what actually needs done on the web server itself).
 
 On this page:
 
