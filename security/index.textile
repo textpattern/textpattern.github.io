@@ -33,6 +33,7 @@ Textpattern developers do their part to keep core code as secure as they can. It
 Core developers have no control over the quality or security of community plugins, third-party add-ons, or modifications you might make to the core system. It's up to you to evaluate the security of third-party code, and to make smart judgement calles about code modification.
 
 fn1. Tip: Subscribe to all the plugin author support threads for the plugins you use so you're informed when new versions are released. This is subject to the plugin authors making announcements in those threads, of course, so not an guarantee you will be notified, but better than nothing.
+
 fn2. Tip: Odds are generally better that hosted third-party services like Disqus, Twitter, Google Maps, and so on are safer to integrate than dubious scripts you might find on the internet.
 
 h2. To modify or not modify the core for added security
