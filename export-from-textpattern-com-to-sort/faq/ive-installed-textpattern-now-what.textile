@@ -1,4 +1,8 @@
-h1. I've installed Textpattern.  Now what? [todo]
+h1. I've installed Textpattern.  Now what? [todo:dw]
+
+This content will largely be rewritten into an admin-side highlights page. Leave it to me. — Destry
+
+======
 
 Textpattern is a blank slate.  Though it almost always works out-of-the-box, and includes a simple layout and structure to get you started, you'll need to learn some basic concepts in order to shape it to your needs.
 

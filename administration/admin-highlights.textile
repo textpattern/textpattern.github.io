@@ -1,12 +1,23 @@
-\n"work_in_progress":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=work_in_progress This is a workflow perspective of the "admin-side":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin-side in context of building a small, arbitrary website with five navigational sections (homepage, about, blog, archive, and contact). The aim is to show you where things are done in the admin-side, and in what order, more than to show you how to do them. The _how_ of things is covered elsewhere in the documentation. To that end, each stage of the workflow provides suggested reading (where relevant, and within reason) for more on a given topic, and how to get more power out of admin-side panels via key admin plugins.
+h1. Building your first Textpattern architecture [todo:dw]
 
-Our journey begins with having just finished "installing a new version of Textpattern":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ftp_installation, and we're logging in for the first time.
+This will integrate the FAQ: ive-installed-textpattern-now-what.textile
 
-h3(sectionedit1#language_selection). Language selection
+This is a fast-track orientation to help you build your first publishing architecture in Textpattern CMS. It assumes you've read the "Textpattern administration":index.textile doc and have installed, configured, and diagnosed a new instance of Textpattern on your web server. If you have done all that but nothing more, then you are now in a good place. This orientation will map out the process and associated locations in the admin-side for building a single-author blog system. The same mechanics would be followed for any other kind of website, with adjustments to content types and functionality needed. But exploring more content types and functionality gets into more advanced Textpattern topics (not to mention requires planning your content model and information architecture), which you are not ready for yet. So we'll kick-start you with a basic blog model and you learn the rest like everyone else does -- by reading more users docs, asking questions in the "support forum":http://forum.textpattern.com, and exploring on your own (the best kind of learning).
 
-When you first login, Textpattern takes you to the "language_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences screen to set your working language. You install the language you want, and save the change.
+On this page:
 
-The only time you'll ever _need_ to go to the Languages preference screen again is when upgrading your installation. At each upgrade, Textpattern guides you to reset your language file.
+* "":#sec1
+* "":#sec2
+* "":#sec3
+* "":#sec4
+* "":#sec5
+* "":#sec6
+
+h2(#sec1). Blog structure
+
+h2(#sec2). Textpattern building blocks
+
+==================below this line still needs editing==================
 
 *Recommended reading:*
 
