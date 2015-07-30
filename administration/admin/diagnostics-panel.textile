@@ -18,7 +18,7 @@ h3. Low info display
 
 Low diagnostics info begins with a set of valuble data values about your installation and web server technology, and then finishes with the contents of your @.htaccess@ file in the installation directory. The convenience of having all this data immediatly available here for quick reference is invaluable, which you'll realise more over time.
 
-Info displayed begins with the following installation and server data. Values are intentionally removed here to focus on the range of data types. A few parenthetical notes are provided for general understanding:
+Low info display begins with the following installation and server data. A few value descriptions are provided here for general understanding, but most should be obvious.
 
 |_. Data item |_. What it tells you |
 | Textpattern version: | whatever version you have installed |
@@ -27,25 +27,25 @@ Info displayed begins with the following installation and server data. Values ar
 | $path_to_site: | |
 | Textpattern path: | path to your installation directory |
 | Permanent link mode: | how you've configured your URLs to appear |
-upload_tmp_dir: 
-Temporary directory path: 
-Site URL:
-PHP version: 
-GD Graphics Library: 
-Server TZ: (your web server's time zone)
-Server local time: 
-DST enabled?: 
-Automatically adjust DST setting?: 
-Time zone: (your time zone)
-MySQL: 
-Locale: (the language and character set you have configured)
-Server: 
-PHP server API: 
-RFC 2616 headers: 
-Server OS: 
-Active plugins: (a list of all plugins you have installed that are turned ON)
+| upload_tmp_dir: | | 
+| Temporary directory path: | |
+| Site URL: | |
+| PHP version: | |
+| GD Graphics Library: | |
+| Server TZ: | your web server's time zone |
+| Server local time: | |
+| DST enabled?: | |
+| Automatically adjust DST setting?: | |
+| Time zone: | your time zone |
+| MySQL: | |
+| Locale: | the language and character set you have configured |
+| Server: | |
+| PHP server API: | |
+| RFC 2616 headers: | |
+| Server OS: | |
+| Active plugins: | a list of all plugins you have installed that are turned _ON_ |
 
-p. The installation and server data is followed by the contents of your @.htaccess@ file in the installation directory, which for purposes here is the "@.htaccess@ file contents":https://github.com/textpattern/textpattern/blob/master/.htaccess for a new installation. The actual file content is the part between the two dotted lines:
+The installation and server data is followed by the contents of your @.htaccess@ file (from the installation directory), which for purposes here is the "@.htaccess@ file contents":https://github.com/textpattern/textpattern/blob/master/.htaccess for a new installation. The actual file content is the part between the two dotted lines:
 
 bc.. <code>.htaccess</code> file contents: 
 ------------------------
@@ -83,27 +83,25 @@ p. Over time your @.htaccess@ file will change as you add your own mod_rewrite r
 
 h3. High info display
 
-High diagnostics info display includes the Low info, but adds new data types, including character set info, the number of Textpattern tables you have in your installation (and their status), the number of custom fields, the PHP extensions implemented on your web server, pretext data, and list of Textpattern configuration files from the /textpattern directory, showing their path, revision, and ??? numbers (these files are not shown here, but would be at the end):
+High diagnostics info display includes the Low info above, but adds the following information.
 
-bc.. Charset (default/config): (if you don't see a lot of "UTF-8" values on these, you might want to look into that)
-character_set_client:
-character_set_connection:
-character_set_database:
-character_set_filesystem:
-character_set_results:
-character_set_server:
-character_set_system:
-character_sets_dir:
+|_. Data item |_. What it tells you |
+| Charset (default/config): | if you don't see a lot of "UTF-8" values on these "character_set" items, you might want ask yourself why not |
+| character_set_client: | |
+| character_set_connection: | |
+| character_set_database: | |
+| character_set_filesystem: | |
+| character_set_results: | |
+| character_set_server: | |
+| character_set_system: | |
+| character_sets_dir: | |
+| "n" Tables: | "n" being the number of Textpattern tables that exist in your installation (default is ??); the value also indicates if tables are "OK" or not |
+| "n" Custom fields: |"n" being the number of custom fields; value also indicates name of all counted fields |
+| PHP extensions: | list of extension names/versions your web host has enabled |
+| pretext_data: | value is a piece of code; useful for developers to evaluate |
+| {/textpattern files, not shown here} | list of Textpattern configuration files from the /textpattern directory; indicates file path, revision number, and ??? number |
 
-"n" Tables: ("n" being the number that exists, default is ??; value also indicates if tables are "OK" or not)
-
-"n" Custom fields: ("n" being the number of custom fields; value also indicates name of all counted fields)
-
-PHP extensions: (list of extension names/versions your web host has enabled)
-
-pretext_data: (for developer use)
-
-(list of Textile configuration files here to end the High info display)
+The last item above reflects a long list of Textpattern configuration files which makes up the end of the High info data shown.
 
 h2(#sec2). Pre-flight checks
 
