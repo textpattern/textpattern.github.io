@@ -8,28 +8,32 @@ The administrator is the person who installs and configures the Textpattern soft
 
 h2. Publisher
 
-The publisher role has the same rights and abilities as the administrator -- no restrictions to any location or feature -- with the sole exception that a publisher can not delete or demote the adminstrator account.
+The publisher role has the same rights and abilities as the administrator -- no restrictions to any location or feature -- with the sole exception that a publisher can not delete or demote the adminstrator account. In short, the publisher can:
 
-* can create, edit or delete any article, link or comment
-* can change article status
-* can edit site preferences
-* has access to all site design areas
-* can edit sections and categories
-* can add and remove other user accounts (except the administrator)
-* can grant and restrict privileges
+* create, edit or delete any article, link or comment
+* change article status
+* edit site preferences
+* access all site design areas
+* edit sections and categories
+* add and remove other user accounts (except the administrator)
+* grant and restrict privileges
 
 h2. Managing editor
 
-* can edit and delete any article, link or comment
-* can change article status from Pending to Live
-* can edit site preferences
-* has access to all site design areas
-* can edit sections and categories
+The managing editor has fewer rights than the publisher, but can still:
+
+* edit and delete any article, link or comment
+* change article status from **Pending** to **Live**
+* edit site preferences
+* access all site design areas
+* edit sections and categories
 
 h2. Copy editor
 
-* can edit any article, link or comment
-* can edit page Page and Form HTML
+The copy editor can't work on site structure, presentation, or change preferences. Copy editors can only:
+
+* edit article, links, or comments
+* edit HTML in Page template and Forms
 
 h2. Staff writer
 
