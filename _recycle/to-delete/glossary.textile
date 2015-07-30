@@ -128,7 +128,7 @@ h4(#news_feed). News Feed
 
 A news feed (or just “feed”) is a means to distribute up-to-date information about a web site without a reader actually visiting it. Many programs (called _aggregators_, but often referred to as _news readers_) permit aggregation of news feeds from many sources (i.e., articles are essentially _pushed_ to the news reader), and the reader can browse through the list and select the content that is most interesting. Really Simple Syndication (RSS) and Atom are two formats for news feeds that Textpattern supports. To implement a feed in your own Textpattern site, you need to use the Textpattern
 
-bc(code). <[[txp:feed_link_:]]>
+bc. <[[txp:feed_link_:]]>
 
 
 tag.
@@ -141,12 +141,12 @@ Textpattern uses *forms to control the display of an article*. You define forms 
 
 If you use the blank
 
-bc(code). <txp:article />
+bc. <txp:article />
 
 
 tag, TXP will use the form named “default” to control the display of the article. You can also choose a form inside the tag, like this:
 
-bc(code). <txp:article form="form_name" />
+bc. <txp:article form="form_name" />
 
 
 which will then be used for all articles in that section.
@@ -163,12 +163,12 @@ Short for “permanent link”. Each article that is pusblished with Textpattern
 
 Based on that choice, a permlink might contain the name of the section your article was published in if you chose
 
-bc(code). /section/id/title
+bc. /section/id/title
 
 
 or it could be a date-based permlink if you chose
 
-bc(code). /year/month/day/title
+bc. /year/month/day/title
 
 
 . Other options are available.

@@ -31,7 +31,7 @@ As hinted to above, we are going to describe XAMPP acquisition using the MD5 met
 # Go to "$":http://downloads.activestate.com/contrib/md5sum/Windows/md5sum.exe. Download the *md5sum.exe* file and also put this in your _C:\_ root. (You can also get an MD5 application from "MD5 Summer":http://www.md5summer.org/.)
 # Open a command prompt, change directory to the _C:\_ drive root and run the md5 XAMPP file like so
 
-bc(code). c:\> md5sum -c xampp-win32-1.5.3a.exe.md5
+bc. c:\> md5sum -c xampp-win32-1.5.3a.exe.md5
 
 
 .
@@ -42,7 +42,7 @@ h4(#installation). Installation
 
 Now that you know you have a clean package (no pun intended), simply run the 7-zip file at the xampp prompt:
 
-bc(code). c:\xampp> xampp-win32-1.5.3a.exe
+bc. c:\xampp> xampp-win32-1.5.3a.exe
 
 
 Installation complete!
@@ -60,19 +60,19 @@ Here's what you do:
 # If you don't already have a shell handy in Windows, go to _Programs / Accessories / Command Prompt_ to open one.
 # Change directory to the xampp folder. Depending on where your shell defaults to, it might be easiest to first change directory to the root
 
-bc(code). ..\>cd\
+bc. ..\>cd\
 
 
 and then change again to the xampp folder
 
-bc(code). C:\>cd xampp
+bc. C:\>cd xampp
 
 
 so your prompt finally looks like *C:\xampp&gt;*.
 
 # Finally, run the _xampp_start.exe_ file like so:
 
-bc(code). C:\xampp>xampp_start.exe
+bc. C:\xampp>xampp_start.exe
 
 
 You should see error-free shell output similar to Figure 1, and the Control Panel should launch in your systems tray with Apache and MySQL running (you could open the Control Panel to check this for yourself). You must leave this shell open until you are ready to shut XAMPP down.
@@ -125,7 +125,7 @@ There's really only one modification you need to make to the configuration file 
 <ol>
 <li>Open _httpd.conf_ (_C:\xampp\apache\conf\httpd-conf_) with a good text editor giving line number support (Crimson Editor, TypePad, whatever).</li>
 <li><p>Scroll down to around line 118 (in the _Dynamic shared Objects_ section,) and look for the line</p>
-bc(code). #LoadModule rewrite_module modules/mod_rewrite.so
+bc. #LoadModule rewrite_module modules/mod_rewrite.so
 
 
 <p>Remove the octothorpe (#) from the beginning of the line. This is referred to as uncommenting the line, and it effectively turns on the rewrite module.</p></li>
@@ -142,7 +142,7 @@ h4(#adding_the_virtualhost_blocks). Adding the VirtualHost Blocks
 
 XAMPP has changed they way it handles this a little bit. It used to be that you added the VirtualHost Containers to the bottom of the _httpd-conf_ file itself. Not anymore. XAMPP now reads such VirtualHost declarations from the _httpd-vhosts.conf_ file. You can see where the include is added in the _httpd-conf_ file by scrolling down to about line 497 and look for the lines
 
-bc(code). # Virtual hosts
+bc. # Virtual hosts
 Include conf/extra/httpd-vhosts.conf
 
 
@@ -194,7 +194,7 @@ That's one idea for setting up your VirtualHost containers. How you ultimately d
 
 *Note:* The four directives in the
 
-bc(code). <Directory> ... </Directory>
+bc. <Directory> ... </Directory>
 
 
 element (Options, AllowOverride, Order, Allow) are very important for countering the strict default directives set in the _httpd-conf_ file. If you change these, you'll likely get an “Access forbidden ... Error 403” when trying to view your Textpattern site. Use the directives as shown above.
@@ -210,7 +210,7 @@ Because working with non registered domains would result in a DNS conflic, you a
 
 Scroll to the bottom of the file, where you should see notes about what to do, but basically for each site you defined in a VirtualHost container you begin with the local IP, add a space or tab, and then the local domains you defined. For example, if you defined three VirtualHost sites at _local.domain1.tld_, _local.domain2.tld_, and _local.domain3.tld_, then you would add three corresponding lines in the hosts file as:
 
-bc(code). 127.0.0.1  local.domain1.tld
+bc. 127.0.0.1  local.domain1.tld
 127.0.0.1  local.domain2.tld
 127.0.0.1  local.domain3.tld
 

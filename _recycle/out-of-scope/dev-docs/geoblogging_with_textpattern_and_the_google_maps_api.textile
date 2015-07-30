@@ -12,7 +12,7 @@ h4(#what_you_will_need). What you will need
 
 A Textpattern map section and map page template hold the map.
 
-bc(code).    A JavaScript on the page draws the map, the controls, and the points. It pulls data from an XML file elsewhere on       the site.
+bc.    A JavaScript on the page draws the map, the controls, and the points. It pulls data from an XML file elsewhere on       the site.
 *  A hidden mapdata section and mapdata form provide the XML data that the JavaScript uses.
 Note that this is the method I used. There are simpler ways to do this. I wanted to create a map from an XML file.      You donâ€™t need to take that approach. You could create a JavaScript on the fly instead.
 
@@ -35,12 +35,12 @@ Create a new page called map. This is going to be the public face for the map. L
 
 Insert this line into the head, replacing my text with your Google Maps API Key:
 
-bc(code). <script src="http://maps.google.com/maps?file=api&v=2&key=Paste_Your_Google_Maps_API_Key_here" type="text/javascript"></script>
+bc. <script src="http://maps.google.com/maps?file=api&v=2&key=Paste_Your_Google_Maps_API_Key_here" type="text/javascript"></script>
 
 
 Next we need to create a div that will hold the map. Insert this line of HTML into the page body. The width and height of this div will become the width and height of the map. It is essential that this div has a unique id:
 
-bc(code). <div id="map" style="width: 600px; height: 450px;"></div>
+bc. <div id="map" style="width: 600px; height: 450px;"></div>
 
 
 You can only control the mapâ€™s position on the page and its size. Most of the map customization comes in the JavaScript, which we will deal with next.
@@ -53,7 +53,7 @@ I got this script from Mike Williams "Google Maps Tutorial":http://www.econym.de
 
 You need to customize a few lines. First, look at lines 39 and 40:
 
-bc(code). map.setCenter(new GLatLng(38.61687046392973,-95.2734375), 4);
+bc. map.setCenter(new GLatLng(38.61687046392973,-95.2734375), 4);
 
 
 Here you can specify the initial viewpoint of the map. The first figure is the latitude, and the second is the longitude. The whole-number value (4) is the starting zoom level, where 0 is zoomed all the way out and 17 is zoomed in.
@@ -70,7 +70,7 @@ Make another section, called mapdata. The JavaScript will pull its data from thi
 
 Create a page called mapdata. Paste this code into the page.
 
-bc(code). <markers>
+bc. <markers>
 <txp:article_custom form="mapdata" limit="999" />
 </markers>
 
@@ -79,7 +79,7 @@ On this page, Textpattern lists every article in the site, using the form mapdat
 
 Make an article form called mapdata. Paste this code into the form:
 
-bc(code). <txp:if_custom_field name="lat"> 
+bc. <txp:if_custom_field name="lat"> 
 <marker lat="<txp:custom_field name="lat" />" lng="<txp:custom_field name="long" />" label="<txp:title />">
     <infowindow><![CDATA[
     <p><txp:permlink><txp:title /></txp:permlink></p><txp:excerpt />
@@ -106,7 +106,7 @@ h5(#further_possibilities). Further Possibilities
 
 <ul>
 <li><p>You can insert other code, like</p>
-bc(code). <txp:excerpt />
+bc. <txp:excerpt />
 
 
 <p>or the contents of custom fields, into the Google Map popups. Just stick it into the mapdata form alongside the title and permalink.</p></li>

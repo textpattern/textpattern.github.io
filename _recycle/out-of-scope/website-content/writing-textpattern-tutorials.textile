@@ -26,12 +26,12 @@ Start with a brief paragraph that summarizes what the tute is about. Do not add 
 
 If your tutorial requires some minimum requirements or prerequisite applications or knowledge, make that clear next under an h2 heading
 
-bc(code). == Requirements ==
+bc. == Requirements ==
 
 
 Finally would be your process section that actually walks readers through the steps of the tutorial.
 
-bc(code). == The Process ==
+bc. == The Process ==
 
 
 Don't forget the other great authoring help in to make it all pretty.

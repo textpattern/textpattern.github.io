@@ -1,11 +1,11 @@
 h1. If first file [todo:pw]
 
-bc(code). <txp:if_first_file>
+bc. <txp:if_first_file>
 
 
 The "if_first_file":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_file tag is a _conditional_ tag and always used as an opening and closing pair, like this...
 
-bc(code). <txp:if_first_file>
+bc. <txp:if_first_file>
 ...conditional statement...
 </txp:if_first_file>
 

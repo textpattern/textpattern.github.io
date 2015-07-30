@@ -12,7 +12,7 @@ h3(sectionedit2#parameters). Parameters
  Link text *href*
  Anchor
 
-bc(code). href
+bc. href
 
 
 attribute *atts*
@@ -26,7 +26,7 @@ h3(sectionedit4#changelog). Changelog
 
 h3(sectionedit5#examples). Examples
 
-bc(code). $href = 'http://thissite.com/';
+bc. $href = 'http://thissite.com/';
 $item = 'Visit this site';
 $atts = ' class="external"';
 $out = href($item, $href, $atts);

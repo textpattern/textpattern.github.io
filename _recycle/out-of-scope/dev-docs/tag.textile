@@ -21,7 +21,7 @@ h3(sectionedit4#changelog). Changelog
 
 h3(sectionedit5#examples). Examples
 
-bc(code). $content = 'The New York Times';
+bc. $content = 'The New York Times';
 $tag = 'cite';
 $atts = ' class="newspaper"';
 $out = tag($content, $tag, $atts);

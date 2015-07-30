@@ -8,7 +8,7 @@ h3(sectionedit2#general_information). General Information
 
 h4(#name). Name
 
-bc(code). TextileRestricted()
+bc. TextileRestricted()
 
 
 h4(#purpose). Purpose
@@ -34,16 +34,16 @@ h4(#information_retrieved_from). Information Retrieved From
 h3(sectionedit3#parameters). Parameters
 
 <ul>
-<li>bc(code). $text
+<li>bc. $text
 
 </li>
-<li>bc(code). $lite=1
+<li>bc. $lite=1
 
 </li>
-<li>bc(code). $noimage=1
+<li>bc. $noimage=1
 
 </li>
-<li>bc(code). $rel='nofollow'
+<li>bc. $rel='nofollow'
 
 </li>
 </ul>

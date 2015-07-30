@@ -21,39 +21,39 @@ h5(#modified_tags). Modified Tags
 
 <ul>
 <li><p>"category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list: add</p>
-bc(code). offset
+bc. offset
 
 
 <p>and</p>
-bc(code). limit
+bc. limit
 
 
 <p>attributes</p></li>
 <li><p>"category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list:</p>
-bc(code). parent
+bc. parent
 
 
 <p>accepts comma-separated list of values</p></li>
 <li><p>"link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link: add</p>
-bc(code). name
+bc. name
 
 
 <p>and</p>
-bc(code). id
+bc. id
 
 
 <p>attributes</p></li>
 <li><p>"section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list: add</p>
-bc(code). offset
+bc. offset
 
 
 <p>and</p>
-bc(code). limit
+bc. limit
 
 
 <p>attributes</p></li>
 <li><p>"text":/home/www/zendstudio/dokuwiki/bin/doku.php?id=text: accepts L10n replacement tags as attributes, add</p>
-bc(code). escape
+bc. escape
 
 
 <p>attribute</p></li>

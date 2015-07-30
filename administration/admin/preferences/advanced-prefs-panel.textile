@@ -24,17 +24,17 @@ h5(#maximum_file_size_of_uploads_in_bytes). Maximum file size of uploads (in byt
 
 Maximim size for file uploads via the "files":/home/www/zendstudio/dokuwiki/bin/doku.php?id=files panel. Note that this value is also limited by the configuration of PHP on your Web server; if Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host. (The relevant values in _php.ini_ are
 
-bc(code). post_max_size
+bc. post_max_size
 
 
 ,
 
-bc(code). upload_max_filesize
+bc. upload_max_filesize
 
 
 and
 
-bc(code). memory_limit
+bc. memory_limit
 
 
 .)
@@ -126,7 +126,7 @@ Custom field names may include letters (uppercase or lowercase), numbers, and un
 
 (*Attention:* you might find that you can use spaces in custom field names and it works in some situations. But this is *not advised*â€”and may eventually become impossible anywayâ€”because there are instances where custom field names are used as attributes in other Textpattern tags and thus required to be non-breaking strings, e.g.,
 
-bc(code). <txp:article_custom customfieldname="value" />
+bc. <txp:article_custom customfieldname="value" />
 
 
 . In this example, “customfieldname” represents a custom field name, which must be a single string in this case to work correctly. If the defined custom field name has one or more spaces, it won't work correctly.)

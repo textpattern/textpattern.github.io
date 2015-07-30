@@ -19,7 +19,7 @@ The first thing you will need to do, if you have not already done so, is obtain 
 
 *Note:* Mac OS X and Linux users are able to access SSH using the shell (usually
 
-bc(code). bash
+bc. bash
 
 
 ) and terminal emulation program of their choice. Skip to Step 6, and proceed with these instructions. If necessary, consult the documentation that came with your operating system/distribution.
@@ -40,7 +40,7 @@ bc(code). bash
 # The information will change to reflect your status; it should now look like something with the following pattern: “*username&#64;IPaddress's password*”. Type in your TextDrive password at the command prompt.
 # If you successfully login, the information will change again and you'll see some copyright information. You'll also see a new command line prompt that looks something like this...*-bash-2.05b$*. At the prompt, type in the following line replacing _yourusername_ and _yourserver_ accordingly:
 
-bc(code). ssh yourusername@yourserver.textdrive.com
+bc. ssh yourusername@yourserver.textdrive.com
 
 
 # Depending on whether you said yes or no to the “trusted connection” inquiry in step 3 above, you may or may not get a message indicating the authenticity of your server can't be established and do you want to continue. If you do, type “Yes”. Your unknown server connection will be permanently added to your connections list. PuTTY will also indicate that your IP connection was closed; this is a little confusing, but in fact you are still connected to the server and the continued presence of the “-bash-2.05b$” at the command prompt is proof of this.
@@ -51,12 +51,12 @@ At this point you have simply created a SSH _tunnel_ connection to TextDrive wit
 
 # Use either of the following to make sure you're where you think you are and get oriented...
 
-bc(code). pwd
+bc. pwd
 
 
 or...
 
-bc(code). ls
+bc. ls
 
 
 *Note:*
@@ -65,12 +65,12 @@ bc(code). ls
 
 # If your Textpattern is installed in your domain root, type the following and hit Enter...
 
-bc(code). cd public_html
+bc. cd public_html
 
 
 If it's in a subdirectory, then type the following and hit Enter (where _yoursubdirectory_ is the subdirectory location you want or have)...
 
-bc(code). cd public_html/yoursubdirectory
+bc. cd public_html/yoursubdirectory
 
 
 Now you should be in the directory of the Textpattern site you want to update.
@@ -81,41 +81,41 @@ When initializing Subversion for the first time with an existing site, it's not 
 
 # First, move your _textpattern_ folder aside...
 
-bc(code). mv textpattern textpattern-old
+bc. mv textpattern textpattern-old
 
 
 If you have any custom mod_rewrite rules in your _.htaccess_ file, then move it aside as well...
 
-bc(code). mv .htaccess .htaccess-old
+bc. mv .htaccess .htaccess-old
 
 
 *Notes:*
 
 * It is not necessary to move the _.htaccess_ file if you have not added any custom rules to the file. &#42; In case you noticed it earlier, and are concerned, the _.htaccess_ file will not appear in the SSH client when you do a _list directory_ (_ls_) command to view your directory contents; however the file is indeed there, which you can verify with a SFTP client. If you have added images in your Textpattern _images_ folder then you might want to move that aside too (otherwise, ignore the images folder), type the following at the command prompt and hit Enter...
 
-bc(code). mv images images-old
+bc. mv images images-old
 
 
 # Now you are ready to *check out* the latest revision of Textpattern's development series using SVN, use the following...
 
-bc(code). svn co http://textpattern.googlecode.com/svn/development/4.x .
+bc. svn co http://textpattern.googlecode.com/svn/development/4.x .
 
 
 *Reminder:* This version of Textpattern is intended for beta testing new features and changes only. If you want to run a live (public) site safely, you should use the instructions, "Repo (Stable) to TxD Server via SSH (for Publishing)":/home/www/zendstudio/dokuwiki/bin/doku.php?id=repository_to_web_server_using_secure_shell_ssh_with_text_drive_hosting.
 
 # Now you need to recover the things you moved. First, retrieve your old _config.php_ file from the old _/textpattern_/ directory...
 
-bc(code). cp textpattern-old/config.php textpattern/
+bc. cp textpattern-old/config.php textpattern/
 
 
 If you moved your _images_ folder, retrieve that as well...
 
-bc(code). mv images-old images
+bc. mv images-old images
 
 
 # Next, make sure the "CHMOD":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#chmod permissions on your _images_ folder is 777 so you can add images to it later; try doing that now by typing the following at the command prompt and hit Enter...
 
-bc(code). chmod 777 images
+bc. chmod 777 images
 
 
 If that does not work for some reason, then you may need to open up a _Secure File Transfer Protocol_ (SFTP) client (required for TextDrive servers) and change the CHMOD value that way.
@@ -140,27 +140,27 @@ If all has gone well up to this point, you will now have a number of old or obso
 
 # To remove any previously installed files, use...
 
-bc(code). rm .htaccess-old
+bc. rm .htaccess-old
 
 
 or...
 
-bc(code). rm -R textpattern-old
+bc. rm -R textpattern-old
 
 
 # To remove the obsolete files installed from the SVN process, use...
 
-bc(code). rm textpattern/config.php.default
+bc. rm textpattern/config.php.default
 
 
 # Since setup-related files are now in their own folder (namely, _/setup_/), the folder and all its contained files should be deleted after udgrading Textpattern as a security precaution. You should be able to delete this folder (and contents) all at once using...
 
-bc(code). rm -rf textpattern/setup/
+bc. rm -rf textpattern/setup/
 
 
 *Note:* See "post_installation_upgrading_updating_suggestions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_installation_upgrading_updating_suggestions for clarifications about the
 
-bc(code). setup
+bc. setup
 
 
 folder.
@@ -171,7 +171,7 @@ h3(sectionedit6#future_subversion_updates_much_easier_at_this_point). Future Sub
 # Access the directory where you have Textpattern installed.
 # Run an SVN update...
 
-bc(code). svn update
+bc. svn update
 
 
 # Login to your administration panel to initialize the updates. You should be automatically taken to the *_Manage Languages_* view of the "preferences_subtab":/home/www/zendstudio/dokuwiki/bin/doku.php?id=preferences_subtab panel. If you are already logged into your admin pages, then navigate to the Preferences subtab and click on the 'Manage Languages' link at the top. Look for the languages you have installed and make sure to update them.

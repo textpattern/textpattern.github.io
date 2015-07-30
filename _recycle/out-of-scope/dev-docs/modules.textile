@@ -1,6 +1,6 @@
 \n"mininav_presentation_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs
 
-bc(code). //PrÃ©sentation// â†’ **//Modules//**
+bc. //PrÃ©sentation// â†’ **//Modules//**
 
 
 Les "modules":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modules sont un des six “blocs de construction” dÃ©crit dans "textpattern_semantic_model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model. L'onglet *Modules* contient un Ã©diteur identique Ã  celui des "gabarits":/home/www/zendstudio/dokuwiki/bin/doku.php?id=gabarits. Une liste des modules existants est situÃ©e Ã  droite de la fenÃªtre, et sur la gauche, vous trouverez un constructeur de balises (ou constructeur de tags) pour vous aider Ã  mettre en place vos contenus.
@@ -19,7 +19,7 @@ Il existe cependant une diffÃ©rence notable pour les modules de type article, 
 
 Les types “catÃ©gorie” et “section” sont censÃ©s Ãªtre utilisÃ©s en relation avec les tags "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list et "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list, comme valeur de l'attribut "form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossaire_des_attributs_communs#form (_ex._ :
 
-bc(code). <nowiki><txp:section_list form="foo" /></nowiki>
+bc. <nowiki><txp:section_list form="foo" /></nowiki>
 
 
 ), alors que les types “article” et “commentaire” sont censÃ©s Ãªtre utilisÃ©s en relation avec les tags "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article et "comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments.

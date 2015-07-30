@@ -4,7 +4,7 @@
 <li>Added missing privileges check in presentation → forms tab</li>
 <li>Changed incorrect page titling for new Sections tab</li>
 <li><p>Fixed</p>
-bc(code). txp:article_custom />
+bc. txp:article_custom />
 
 
 <p>outputting draft and future-dated articles</p></li>

@@ -13,20 +13,20 @@ One possible solution: Any numerical reference following Textile's standard nota
 h4(#syntax). Syntax
 
 <ul>
-<li>bc(code). !23!
+<li>bc. !23!
 
 
 <p>would insert the image with id #23, accompanied with title, alt, width, height and other HTML attributes</p></li>
-<li>bc(code). "an article":23
+<li>bc. "an article":23
 
 
 <p>would link to article #23</p></li>
-<li>bc(code). "&":23
+<li>bc. "&":23
 
 
 <p>would link to article #23, replacing the ampersand (or any other suitable special char) with the article's title</p></li>
 <li>additional syntax would be required to cover thumbnails and files.</li>
-<li>bc(code). (class), (#id), (class#id), {style}, [language]
+<li>bc. (class), (#id), (class#id), {style}, [language]
 
 
 <p>modifiers would apply.</p></li>

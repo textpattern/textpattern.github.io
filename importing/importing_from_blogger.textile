@@ -8,7 +8,7 @@ h3(sectionedit2#process). Process
 
 Log onto the Blogger system and pick the blog that you want to export from the list that's provided on the dashboard. Select the “Template” tab and back up your old template. Then replace it with the contents of the file “textpattern\include\import\BloggerImportTemplate.txt” that is part of the Textpattern installation:
 
-bc(code). <Blogger>
+bc. <Blogger>
 TITLE: <PostSubject><$BlogItemSubject$></PostSubject>
 AUTHOR: <$BlogItemAuthor$>
 DATE: <$BlogItemDateTime$>

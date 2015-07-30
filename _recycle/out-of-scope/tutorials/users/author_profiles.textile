@@ -21,7 +21,7 @@ h5(#link_to_profile). Link to profile
 
 Add the following to your article form:
 
-bc(code). <a href="<txp:jmd_author display="name" lowercase="1" separator="-"/>">
+bc. <a href="<txp:jmd_author display="name" lowercase="1" separator="-"/>">
     <txp:author/>
 </a>
 
@@ -30,7 +30,7 @@ h5(#author-index). Author-index
 
 The following can be placed wherever you want an author-index to appear.
 
-bc(code). <h2>Staff</h2>
+bc. <h2>Staff</h2>
 <ul>
     <txp:article_custom section="staff">
         <li>

@@ -10,7 +10,7 @@ h3(sectionedit2#general_information). General Information
 
 h4(#name). Name
 
-bc(code). fieldset()
+bc. fieldset()
 
 
 h4(#purpose). Purpose
@@ -34,13 +34,13 @@ h4(#information_retrieved_from). Information Retrieved From
 h3(sectionedit3#parameters). Parameters
 
 <ul>
-<li>bc(code). $content
+<li>bc. $content
 
 </li>
-<li>bc(code). <nowiki>$legend=''</nowiki>
+<li>bc. <nowiki>$legend=''</nowiki>
 
 </li>
-<li>bc(code). <nowiki>$id=''</nowiki>
+<li>bc. <nowiki>$id=''</nowiki>
 
 </li>
 </ul>

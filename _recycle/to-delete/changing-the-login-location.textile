@@ -6,7 +6,7 @@ Last edited for Txp 4.0.3.
 
 The objective of this method is to rename the
 
-bc(code). /textpattern/
+bc. /textpattern/
 
 
 directory (a critical system directory) and all references to it. Also, Textpattern's internal CSS can not be used, otherwise a visitor could simply 'view source' to see where your admin is located.
@@ -18,7 +18,7 @@ Assuming your Textpattern admin is currrently located at */root/textpattern/* an
 <li>edit */root/myadmin/index.php*:
 <ul>
 <li><p>change line 19 to:</p>
-bc(code). include './myadmin/config.php';
+bc. include './myadmin/config.php';
 
 </li>
 </ul>
@@ -26,11 +26,11 @@ bc(code). include './myadmin/config.php';
 <li>edit */root/myadmin/include/txp_admin.php*:
 <ul>
 <li><p>change line 168 to be:</p>
-bc(code). gTxt('log_in_at').' '.hu.'myadmin/index.php';
+bc. gTxt('log_in_at').' '.hu.'myadmin/index.php';
 
 </li>
 <li><p>change line 183 to be:</p>
-bc(code). gTxt('log_in_at').' '.hu.'myadmin/index.php';
+bc. gTxt('log_in_at').' '.hu.'myadmin/index.php';
 
 </li>
 </ul>
@@ -38,7 +38,7 @@ bc(code). gTxt('log_in_at').' '.hu.'myadmin/index.php';
 <li>dit */root/myadmin/include/txp_tag.php*:
 <ul>
 <li><p>change line 7 to be:</p>
-bc(code). <link rel="stylesheet" href="/myadmin/textpattern.css" type="text/css" />
+bc. <link rel="stylesheet" href="/myadmin/textpattern.css" type="text/css" />
 
 </li>
 </ul>
@@ -46,11 +46,11 @@ bc(code). <link rel="stylesheet" href="/myadmin/textpattern.css" type="text/css"
 <li>edit */root/myadmin/publish/taghandlers.php*:
 <ul>
 <li><p>change line 37 to be:</p>
-bc(code). if ($n) return hu.'myadmin/css.php?n='.$n;
+bc. if ($n) return hu.'myadmin/css.php?n='.$n;
 
 </li>
 <li><p>change line 38 to be:</p>
-bc(code). return hu.'myadmin/css.php?s='.$s;
+bc. return hu.'myadmin/css.php?s='.$s;
 
 </li>
 </ul>
@@ -58,7 +58,7 @@ bc(code). return hu.'myadmin/css.php?s='.$s;
 <li>edit */root/myadmin/publish/comment.php*:
 <ul>
 <li><p>change line 492 to be:</p>
-bc(code). $out .= hu.'myadmin/?event=discuss&step=discuss_edit&discussid='.$discussid."\r\n";
+bc. $out .= hu.'myadmin/?event=discuss&step=discuss_edit&discussid='.$discussid."\r\n";
 
 </li>
 </ul>
@@ -84,7 +84,7 @@ These rules work by denying everything except what is needed for normal operatio
 
 Create an .htaccess file in the root of the _textpattern_ directory (i.e., _../textpattern_/), and add the following rewrite rules.
 
-bc(code). <IfModule mod_rewrite.c>
+bc. <IfModule mod_rewrite.c>
  RewriteEngine On
  RewriteCond %{REQUEST_FILENAME} !textpattern(/setup)?/?$
  RewriteCond %{REQUEST_FILENAME} !textpattern/((setup/)?index|css)\.php$

@@ -28,24 +28,24 @@ h4(#site_url). Site URL
 
 The “Site URL” information is important for many reasons, not the least of which is simply making your Textpattern site work. The Site URL will be your Web site domain, without the
 
-bc(code). http://
+bc. http://
 
 
 prefix and without a trailing forward slash (“/”); for example,
 
-bc(code). www.example.com
+bc. www.example.com
 
 
 or if you force dropping the “www” by way of rewrite rules, use
 
-bc(code). example.com
+bc. example.com
 
 
 .
 
 If you install in a subdirectory, then it will be something like
 
-bc(code). www.example.com/subdirectory
+bc. www.example.com/subdirectory
 
 
 .
@@ -108,7 +108,7 @@ h4(#date_format). Date format
 
 The “Date Format” control allows you to select how you want your date and time formats to appear in your articles by default. There are several options to choose from (Figure 4). Dates are output in your written articles via the
 
-bc(code). [[posted]]
+bc. [[posted]]
 
 
 tag.
@@ -119,7 +119,7 @@ h4(#archive_date_format). Archive date format
 
 The _Archive date format_ is a drop-down menu that provides the exact same options as the _Date format_ menu (see Figure 4 above), but enables you to create different date formats for the Archive section of your site. This might be of interest depending on your site audience. As before, the dates are output in your written articles (in this case in your archival section) via the
 
-bc(code). [[posted]]
+bc. [[posted]]
 
 
 tag.
@@ -156,7 +156,7 @@ h3(sectionedit3#comments). Comments
 
 If you set *Accept comments* to
 
-bc(code). yes
+bc. yes
 
 
 , the bottom region of the Site Preferences view is where you establish your global settings for article comments.

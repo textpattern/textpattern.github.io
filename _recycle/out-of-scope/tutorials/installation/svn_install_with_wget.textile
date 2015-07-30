@@ -24,7 +24,7 @@ h3(sectionedit2#manual_instructions). Manual Instructions
 
 # Type in (case-sensitive)
 
-bc(code). wget -O rev.txt -q <__yamdwe_nowiki>0</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source
+bc. wget -O rev.txt -q <__yamdwe_nowiki>0</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source
 
 
 then hit _Enter_.
@@ -35,7 +35,7 @@ It's actually just a copy of the html file, "$":http://textpattern.googlecode.co
 
 # Type in (case-sensitive)
 
-bc(code). wget -e robots=off -r -q -np -nH --cut-dirs=4 -R index.html <__yamdwe_nowiki>1</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source
+bc. wget -e robots=off -r -q -np -nH --cut-dirs=4 -R index.html <__yamdwe_nowiki>1</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source
 
 
 then hit _Enter_. This will download Textpattern into a folder named _txp_.
@@ -68,10 +68,10 @@ These instructions are confirmed to work on *Windows XP/Vista*.
 
 First, open up a text editor, like notepad. Add the following to it (case-sensitive, each command on one line, for a combined total of two lines):
 
-bc(code). wget -P txp -O rev.txt -q <__yamdwe_nowiki>2</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source
+bc. wget -P txp -O rev.txt -q <__yamdwe_nowiki>2</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source
 
 
-bc(code). wget -P txp -e robots=off -r -q -np -nH --cut-dirs=4 -R index.html <__yamdwe_nowiki>3</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source
+bc. wget -P txp -e robots=off -r -q -np -nH --cut-dirs=4 -R index.html <__yamdwe_nowiki>3</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source
 
 
 Next, save the file as *current-txp.cmd* to your desktop (for ease-of-use; you can move it elsewhere later).

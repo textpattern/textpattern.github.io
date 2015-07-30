@@ -10,7 +10,7 @@ h3(sectionedit2#general_information). General Information
 
 h4(#name). Name
 
-bc(code). is_mod_php()
+bc. is_mod_php()
 
 
 h4(#purpose). Purpose

@@ -1,13 +1,13 @@
 \nTextpattern "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms are predefined portions of text, Textpattern Tags, and/or HTML, which collectively define how content should be formatted and displayed. Textpattern forms are easily created in the "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms panel. Forms are used by the Tags that call them, via the
 
-bc(code). form=""
+bc. form=""
 
 
 attribute. Once you have a good grasp of Tags, Forms, and the relationship between, you'll begin to realize the seeming endless possibilities of how to customize your website's architecture and content.
 
 h3(sectionedit1#an_example). An Example
 
-bc(code). <txp:article form="single" listform="default" />
+bc. <txp:article form="single" listform="default" />
 
 
 This snippet dictates that the article should be displayed with the “default” form when the section is displaying a list of articles, but will use the “Single” form when displaying the individual article. You may modify this Form to your own liking, or keep this one and simply create a new one of your own.

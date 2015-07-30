@@ -8,12 +8,12 @@ h3(sectionedit1#changing_the_user_labels_as_they_appear_in_the_users_tab). Chang
 
 To modify the labels used for user privileges as they appear in the “Users” tab of the administration area of your website, you need to access the
 
-bc(code). txp_admin.php
+bc. txp_admin.php
 
 
 file. In it you will see the following:
 
-bc(code). $levels = array(
+bc. $levels = array(
   1 => gTxt('publisher'),
   2 => gTxt('managing_editor'),
   3 => gTxt('copy_editor'),
@@ -26,17 +26,17 @@ bc(code). $levels = array(
 
 To rename a label, change the text following the arrow (
 
-bc(code). =>
+bc. =>
 
 
 ). For example: if you wanted to change “Publisher” to appear as “Supreme Being” in the “Users” tab options, then in the code above you would change
 
-bc(code). gTxt('publisher')
+bc. gTxt('publisher')
 
 
 to
 
-bc(code). 'Supreme Being'
+bc. 'Supreme Being'
 
 
 .
@@ -45,7 +45,7 @@ h3(sectionedit2#changing_the_permissions_for_each_user_role). Changing the Permi
 
 To customize the user permissions that are assignable on the site's admin tab, you need to access the
 
-bc(code). /textpattern/lib/admin_config.php
+bc. /textpattern/lib/admin_config.php
 
 
 file. At the bottom of the file you will see the code shown "here":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions. Note in each line of code there is text description of the particular feature of Textpattern to which a specific privilege can be assigned; this is followed by a sequence of numbers that match the user roles indicated in the previous section, and which are assigned to each particular Textpattern feature. For example, in the second line of code below you see the feature of “admin” followed by a sequence of numbers from 1 to 6. This is indicating that the admin of the site has the abilities to serve every role indicated in the previous section... Publisher (1), Managing Editor (2), Copy Editor (3), etc.

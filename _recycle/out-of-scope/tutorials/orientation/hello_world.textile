@@ -31,17 +31,17 @@ h3(sectionedit3#site_pages_and_page_templates). Site pages and page templates
 
 Clearly the home page of our new Textpattern site is simply the page template “default” (plus status info). Let's add another page to the site. Back in "Presentation→Pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages, go to the “copy page as” box, enter “page2” and click “Copy”. You now have two identical page templates: “default” and “page2”. Add links to each page: in the “page2” template add
 
-bc(code). <a href="./">Home</a>
+bc. <a href="./">Home</a>
 
 
 somewhere in the
 
-bc(code). <body>
+bc. <body>
 
 
 and save. Open the “default” page template by clicking its link in the right-hand list, and add
 
-bc(code). <a href="./?s=page2">Page 2</a>
+bc. <a href="./?s=page2">Page 2</a>
 
 
 and save.
@@ -58,7 +58,7 @@ h3(sectionedit4#textpattern_tags). Textpattern tags
 
 We turn our static page templates into functional ones by adding *_Textpattern tags_*, which are placeholders for dynamic content. Return to "Presentation→Pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages and the “default” template. Delete the anchor to Page 2 we added earlier; in its place enter
 
-bc(code). <txp:section_list />
+bc. <txp:section_list />
 
 
 and save the template.
@@ -67,46 +67,46 @@ Before looking at the results, go to "Presentation→Sections":/home/www/zendstu
 
 Go to the live site and re-load the home page. Now there are two links: “Articles” and “Page 2”. Click each link and observe the URL: the URL for “Articles” will have your base URL followed by “?s=articles”, and the URL for “Page 2” will end in “?s=page2”. Otherwise the pages are identical. We no longer have a link to the home page, though, so let's add that in: return to the template and edit the
 
-bc(code). section_list
+bc. section_list
 
 
 tag we added earlier so it looks like this:
 
-bc(code). <txp:section_list include_default="1" />
+bc. <txp:section_list include_default="1" />
 
 
 Now the pages on the live site have three links: “My Site”, a link to the home page, has been added to the top of the list. Perhaps you've already realized that
 
-bc(code). section_list
+bc. section_list
 
 
 is a Textpattern tag, and that setting its
 
-bc(code). include_default
+bc. include_default
 
 
 attribute caused it to include the link to the home page. Note that it uses the same syntax as an HTML tag, and is mainly distinguished by the “txp:” prefix. All Textpattern tags follow this convention.
 
 Our three pages are still identical, other than the URL, so let's add some content. In the default template, below the
 
-bc(code). section_list
+bc. section_list
 
 
 tag, add this:
 
-bc(code). <txp:article>
+bc. <txp:article>
 <h2><txp:title /></h2>
 </txp:article>
 
 
 Look at the results on the live site. Check all three links. Note how the home and Articles pages now have “Welcome to Your Site!” below the section links. Look at the page source; the new line is in
 
-bc(code). h2
+bc. h2
 
 
 tags. That is, the
 
-bc(code). title
+bc. title
 
 
 tag you added to the template has been replaced by an article title. (“Welcome to Your Site!” is a sample article included in the installation.)
@@ -125,19 +125,19 @@ The three pages on the live site all use the same page template. They show diffe
 
 The URLs we've seen so far give a value for the section (the “s” parameter in the query string). The base URL doesn't do this explicity, but as we saw with the “?s=default” experiment, even the base URL implies a section. Context can include other factors, but section is the essential one -- every page in a Textpattern site belongs to a section. We've already seen how the section determines which page template will be used, and also how it tells the
 
-bc(code). article
+bc. article
 
 
 tag which articles to display.
 
 The next most important facet of context is whether the page shows a single article or a list. Go back to the default template and edit the
 
-bc(code). article
+bc. article
 
 
 tag so that it looks like this:
 
-bc(code). <txp:article>
+bc. <txp:article>
 <h2><txp:permlink><txp:title /></txp:permlink></h2>
 <txp:if_individual_article>
 <txp:body />
@@ -153,7 +153,7 @@ Return to the live site and re-load the home page (or simply click on the “My 
 
 Adding the
 
-bc(code). permlink
+bc. permlink
 
 
 tag has turned each article title into a link to its individual article page. Note the URLs of these pages, with query strings like “?id=3”. Every article has a unique ID number, which you can see in "Content→Articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles. The “s” parameter -- section -- doesn't appear in these URLs, because section is implied (every article belongs to a section).
@@ -166,22 +166,22 @@ h4(#search). Search
 
 Add this to the default template, above the
 
-bc(code). section_list
+bc. section_list
 
 
 :
 
-bc(code). <txp:search_input />
+bc. <txp:search_input />
 
 
 Then modify the
 
-bc(code). article
+bc. article
 
 
 tag to this:
 
-bc(code). <txp:article>
+bc. <txp:article>
     <h2><txp:permlink><txp:title /></txp:permlink></h2>
     <txp:if_individual_article>
         <txp:body />
@@ -199,7 +199,7 @@ I've added some indenting to make the structure clearer, but you don't have to i
 
 Now the live pages have a search input box. Try a search on “body” (there's no “Search” button, so just enter the term and hit the Return key). Note how each article listed shows the search term highlighted, thanks to the
 
-bc(code). search_result_excerpt
+bc. search_result_excerpt
 
 
 tag. Also note the URL: “?q=body”. Again, context comes from URL, so in this case the context is search results (the “q” stands for “query”).
@@ -208,12 +208,12 @@ h4(#category_lists). Category lists
 
 Add this to the template, below the
 
-bc(code). section_list
+bc. section_list
 
 
 :
 
-bc(code). <txp:category_list wraptag="ul" break="li" />
+bc. <txp:category_list wraptag="ul" break="li" />
 
 
 A list of three linked items now appears below the section list. Try clicking them: as usual, note both the URL and what appears on the page. The three categories, with their absurd names, are included in the default installation, and the “Welcome to Your Site!” article is assigned to two of them.
@@ -224,49 +224,49 @@ h3(sectionedit8#forms). Forms
 
 Textpattern forms (see "Forms Explained":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, not to be confused with "HTML forms":http://htmlhelp.com/reference/html40/forms/form.html) are reusable template chunks, a convenient way to keep your templates tidy and also to share code and markup among templates. For example, on my Textpattern sites I nearly always have a form called “page_top”, which contains the doctype declaration, the opening
 
-bc(code). <html>
+bc. <html>
 
 
 tag, the
 
-bc(code). <head>
+bc. <head>
 
 
 , and the opening
 
-bc(code). <body>
+bc. <body>
 
 
 tag. Then at the top of each template I call the form thusly:
 
-bc(code). <txp:output_form form="page_top" />
+bc. <txp:output_form form="page_top" />
 
 
 h4(#article_forms). Article forms
 
 A special Textpattern form type is the *_article form_*. In our template we have been using
 
-bc(code). article
+bc. article
 
 
 as a container tag (see "Self-closed versus Container Tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=self-closed_versus_container_tags), and it's starting to get unwieldy. We would gain a lot of flexibility (and also tidy up the default template) by putting the tags in our
 
-bc(code). article
+bc. article
 
 
 container into a form instead. Then we use
 
-bc(code). article
+bc. article
 
 
 as a self-closing tag and call the form. If you don't specify an article form when using
 
-bc(code). article
+bc. article
 
 
 this way, it generally uses the “default” article form. The exception is search results, in which context
 
-bc(code). article
+bc. article
 
 
 looks for a form called “search_results”.
@@ -275,7 +275,7 @@ Go to "Presentation→Forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms
 
 Load the “default” form into the editor by clicking its link in the right-hand list. Replace the entire contents of the form with:
 
-bc(code). <h2><txp:permlink><txp:title /></txp:permlink></h2>
+bc. <h2><txp:permlink><txp:title /></txp:permlink></h2>
 <txp:if_individual_article>
 <txp:body />
 <txp:else />
@@ -285,18 +285,18 @@ bc(code). <h2><txp:permlink><txp:title /></txp:permlink></h2>
 
 and save the change. Select “search_results” for editing and replace its contents with:
 
-bc(code). <h2><txp:permlink><txp:title /></txp:permlink></h2>
+bc. <h2><txp:permlink><txp:title /></txp:permlink></h2>
 <txp:search_result_excerpt />
 
 
 and save the change. Return to "Presentation→Pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages and in the default template replace the entire
 
-bc(code). article
+bc. article
 
 
 container tag with this:
 
-bc(code). <txp:article />
+bc. <txp:article />
 
 
 The live site will work exactly as before, but now the default template is much cleaner, and by splitting search results into its own form we've made the article display logic much simpler.
@@ -309,48 +309,48 @@ h4(#page_title_and_site_name). Page title and site name
 
 Add a
 
-bc(code). <title>
+bc. <title>
 
 
 element to the default template's
 
-bc(code). <head>
+bc. <head>
 
 
 (or replace the existing
 
-bc(code). <title>
+bc. <title>
 
 
 if there is one):
 
-bc(code). <title><txp:page_title /></title>
+bc. <title><txp:page_title /></title>
 
 
 Note how each page on the live site now shows an appropriate title. If you want to change the base title to something other than “My Site”, do so in "Admin→Preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences; “Site name” is the first item in the list. While you're here, change “Site slogan”. Back to the default template, add this above the
 
-bc(code). search_input
+bc. search_input
 
 
 :
 
-bc(code). <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+bc. <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
 <p><txp:site_slogan /></p>
 
 
 and remove the
 
-bc(code). include_default
+bc. include_default
 
 
 attribute from
 
-bc(code). section_list
+bc. section_list
 
 
 , because the home page link is now handled by the
 
-bc(code). link_to_home
+bc. link_to_home
 
 
 tag.
@@ -359,12 +359,12 @@ h4(#css). CSS
 
 Add
 
-bc(code). <txp:css format="link" />
+bc. <txp:css format="link" />
 
 
 to the
 
-bc(code). <head>
+bc. <head>
 
 
 . Your site now has CSS. See "styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles to edit the stylesheet. In "Presentation→Sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections, note that each section is associated with one of these name stylesheets, allowing you to set section-specific styles.
@@ -373,12 +373,12 @@ h4(#conditional_headers). Conditional headers
 
 Add these conditional blocks just above
 
-bc(code). article
+bc. article
 
 
 :
 
-bc(code). <txp:if_search>
+bc. <txp:if_search>
 <h1>Search results for “<txp:search_term />”</h1>
 </txp:if_search>
 <txp:if_category>
@@ -392,34 +392,34 @@ h4(#textpattern_tag_attributes). Textpattern tag attributes
 
 Most Textpattern tags allow you to set options through tag attributes. We've seen a few of these in action above. For our
 
-bc(code). category_list
+bc. category_list
 
 
 we used the
 
-bc(code). wraptag
+bc. wraptag
 
 
 and
 
-bc(code). break
+bc. break
 
 
 attributes to format the list as an HTML
 
-bc(code). ul
+bc. ul
 
 
 element. Let's do the same with our section list:
 
-bc(code). <txp:section_list wraptag="ul" break="li" />
+bc. <txp:section_list wraptag="ul" break="li" />
 
 
 h4(#the_finished_template). The finished template
 
 The template should now look something like this:
 
-bc(code). <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+bc. <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>

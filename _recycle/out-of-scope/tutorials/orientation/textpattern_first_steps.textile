@@ -89,11 +89,11 @@ h4(#task_4_-_set_defaults_for_testing). Task 4 - Set Defaults For Testing
 <li>Return to the *Pages* tab. Select *defaultpage*.
 <ul>
 <li><p>Find:</p>
-bc(code). <txp:article limit="5" />
+bc. <txp:article limit="5" />
 
 </li>
 <li><p>Change it to:</p>
-bc(code). <txp:article form="defaultform" limit="5" />
+bc. <txp:article form="defaultform" limit="5" />
 
 </li>
 <li>*_SAVE_*</li>
@@ -136,7 +136,7 @@ h4(#task_6_-_forms_and_pages). Task 6 - Forms And Pages
 <ol>
 <li>Go to the *Forms* tab and select *defaultform*.</li>
 <li><p>Just above where it says</p>
-bc(code). <txp:body / >
+bc. <txp:body / >
 
 
 <p>type *RHUBARB RHUBARB* and *_SAVE._*</p></li>
@@ -144,12 +144,12 @@ bc(code). <txp:body / >
 <li>Go to the *Pages* tab and select the *archive* page template
 <ul>
 <li><p>Find:</p>
-bc(code). <txp:article listform="article_listing" limit="5" />
+bc. <txp:article listform="article_listing" limit="5" />
 
 </li>
 <li>This txp tag dictates the main content. It means “If this page is a list, then use the form called article_listing. Otherwise use the default article form.”</li>
 <li><p>Change it to:</p>
-bc(code). <txp:article form="defaultform" listform="article_listing" limit="5" />
+bc. <txp:article form="defaultform" listform="article_listing" limit="5" />
 
 
 <p>(We just told it to use defaultform instead of the default)</p></li>
@@ -172,7 +172,7 @@ bc(code). <txp:article form="defaultform" listform="article_listing" limit="5" /
 <ul>
 <li>Select *defaultform*</li>
 <li><p>Replace RHUBARB RHUBARB with</p>
-bc(code). <txp:output_form form="test" />
+bc. <txp:output_form form="test" />
 
 </li>
 <li>*_SAVE_*</li>
@@ -182,11 +182,11 @@ bc(code). <txp:output_form form="test" />
 <li>In *defaultform*
 <ul>
 <li><p>Find:</p>
-bc(code). <txp:output_form form="test" />
+bc. <txp:output_form form="test" />
 
 </li>
 <li><p>Replace with:</p>
-bc(code). <txp:excerpt />
+bc. <txp:excerpt />
 
 </li>
 <li>*_SAVE_*</li>
@@ -228,7 +228,7 @@ People say Textpattern is a steep learning curve, especially understanding forms
 </li>
 <li>Click *View* (near the title) to see how it looks. It is OK except it has the title, date, author and a commenting message that we do not want. Click the *Back* button</li>
 <li><p>Go to the *Pages* tab, open the *fun* page template and scroll down to the *center* part. You will see</p>
-bc(code). <txp:article listform="article_listing" limit="5" />
+bc. <txp:article listform="article_listing" limit="5" />
 
 
 <p>This txp tag dictates the main content. It means “If this page is a list, then use the form called article_listing. Otherwise use the default article form.” The default article form includes the page title, author etc so we will create a custom form and use that instead.</p></li>
@@ -241,7 +241,7 @@ bc(code). <txp:article listform="article_listing" limit="5" />
 <li>Type: *article*</li>
 <li>*_SAVE NEW_*</li>
 <li><p>In funcontent *delete everything except*:</p>
-bc(code). 
+bc. 
 
 </li>
 </ul>
@@ -256,11 +256,11 @@ bc(code).
 
 <ul>
 <li><p>Find:</p>
-bc(code). <txp:article listform="article_listing" limit="5" />
+bc. <txp:article listform="article_listing" limit="5" />
 
 </li>
 <li><p>Change it to:</p>
-bc(code). <txp:article form="funcontent" listform="article_listing" limit="5" />
+bc. <txp:article form="funcontent" listform="article_listing" limit="5" />
 
 </li>
 <li>*_SAVE_*</li>
@@ -271,7 +271,7 @@ bc(code). <txp:article form="funcontent" listform="article_listing" limit="5" />
 
 <ul>
 <li><p>*Delete*</p>
-bc(code). 
+bc. 
 
 </li>
 </ul>
@@ -280,7 +280,7 @@ bc(code).
 
 <ul>
 <li><p>*Delete*</p>
-bc(code). 
+bc. 
 
 </li>
 </ul>
@@ -304,12 +304,12 @@ h4(#task_8_-_images_in_textpattern). Task 8 - Images in Textpattern
 <li>Go to the *Pages* tab and select *fun*
 <ul>
 <li><p>Find:</p>
-bc(code). div id="sidebar-1">
+bc. div id="sidebar-1">
 
 
 <p>and position your cursor just after it</p></li>
 <li><p>Write:</p>
-bc(code). <txp:if_individual_article><txp:article_image /></txp:if_individual_article>
+bc. <txp:if_individual_article><txp:article_image /></txp:if_individual_article>
 
 </li>
 <li>*_SAVE_*</li>
@@ -328,7 +328,7 @@ bc(code). <txp:if_individual_article><txp:article_image /></txp:if_individual_ar
 <li>Go to *Articles* and select *When I Die*
 <ul>
 <li><p>Write</p>
-bc(code). <txp:image id="2" />
+bc. <txp:image id="2" />
 
 
 <p>somewhere in the body of the article</p></li>
@@ -363,12 +363,12 @@ h4(#task_10_-_categories_are_not_sections). Task 10 - Categories Are Not Section
 <li>Go to the *Pages* tab and the *fun* page template
 <ul>
 <li><p>Find:</p>
-bc(code). div id="sidebar-1">
+bc. div id="sidebar-1">
 
 </li>
 <li>You will see code for section_list, search and feed</li>
 <li><p>Put your cursor just after</p>
-bc(code). label="Atom" />
+bc. label="Atom" />
 
 </li>
 <li>Click *Site Navigation* and then *Category List* (on the left). A *Tag Builder* for Category List opens.</li>
@@ -384,7 +384,7 @@ On your web page, click the Daily Fun link and you will see the categories liste
 
 Note well that a section is compulsory for all articles and is the primary way of organising content. Categories are optional, independent of sections and are an additional way of organising content. Although only two categories are by default allowed for each article, there are plugins which allow unlimited categories and can also create category clouds just like the tag clouds you see on so many blogs. The word Tags has a special meaning within Textpattern, referring to code like
 
-bc(code). txp:article
+bc. txp:article
 
 
 . If you are familiar with tag clouds just remember they are the same as Textpattern's category clouds.

@@ -17,7 +17,7 @@ h3(sectionedit3#return_values). Return Values
 
 Returns the query result (see Notes), or
 
-bc(code). FALSE
+bc. FALSE
 
 
 on failure.
@@ -29,7 +29,7 @@ h3(sectionedit4#changelog). Changelog
 
 h3(sectionedit5#examples). Examples
 
-bc(code). $t1 = safe_pfx('txp_category');
+bc. $t1 = safe_pfx('txp_category');
 $t2 = safe_pfx('textpattern');
 $sql = "select distinct name from $t1 join $t2 on name=category1";
 $rs = safe_query($sql);
@@ -55,17 +55,17 @@ When using "safe_query()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=safe_que
 
 For
 
-bc(code). SELECT
+bc. SELECT
 
 
 queries the result is a MySQL result resource which can be passed to Textpattern's "nextRow()":/home/www/zendstudio/dokuwiki/bin/doku.php?id=next_row function. For most other types of query the result is
 
-bc(code). TRUE
+bc. TRUE
 
 
 on success or
 
-bc(code). FALSE
+bc. FALSE
 
 
 on failure.

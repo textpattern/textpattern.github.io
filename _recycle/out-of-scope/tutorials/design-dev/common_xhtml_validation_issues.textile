@@ -8,7 +8,7 @@ One of the requirements of XHTML-_Strict_ validation is to code certain characte
 
 <ul>
 <li><p>Ampersand (&amp;) - must be encoded as an HTML entity:</p>
-bc(code). &amp;
+bc. &amp;
 
 
 <p>(this is also applies for ampersands used in URLs as well).</p></li>

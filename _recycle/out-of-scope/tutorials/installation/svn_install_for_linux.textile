@@ -4,17 +4,17 @@ h3(sectionedit1#the_process). The Process
 
 Use _svn_, the Subversion command line client:
 
-bc(code). svn checkout <__yamdwe_nowiki>0</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source /your/path/to/textpattern/install
+bc. svn checkout <__yamdwe_nowiki>0</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source /your/path/to/textpattern/install
 
 
 Replace
 
-bc(code). /your/path/to/textpattern/install
+bc. /your/path/to/textpattern/install
 
 
 with the actual path to the directory into which you wish to install Textpattern. Or use a
 
-bc(code). .
+bc. .
 
 
 (period) if you're already in that directory.
@@ -27,6 +27,6 @@ The Textpattern development team encourages the use of Subversion over wget when
 
 Use the wget tool to do it, as follow:
 
-bc(code). wget -r -np -nH --cut-dirs=1 svn checkout <__yamdwe_nowiki>1</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source
+bc. wget -r -np -nH --cut-dirs=1 svn checkout <__yamdwe_nowiki>1</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source
 
 

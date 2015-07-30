@@ -15,7 +15,7 @@ Before you go any further, you should make sure you have "Mod_Rewrite":/home/www
 <ol>
 <li>Create a new file with a .php extension, name it anything you like (but something easy to remember, because it's just temporary).</li>
 <li><p>Add the following to the file (and nothing else)...</p>
-bc(code). <?php phpinfo(); ?>
+bc. <?php phpinfo(); ?>
 
 </li>
 <li>Upload the file to your Web root, and run it in your browser (type the URL to the file in the browser address bar and hit _Enter_).</li>
@@ -47,12 +47,12 @@ One situation in which it may need to be tweaked is if you have not yet transfer
 
 In this case you would add the following RewriteBase rule to the .htaccess file:
 
-bc(code). RewriteBase /~mysite
+bc. RewriteBase /~mysite
 
 
 Note that there should be no trailing slash on the directory name. This line goes immediately after
 
-bc(code). RewriteEngine On
+bc. RewriteEngine On
 
 
 .

@@ -57,13 +57,13 @@ Importing systems via a text file (such as for Movable Type and Blogger) can be 
 
 <ol>
 <li><p>Name the textfile</p>
-bc(code). import.txt
+bc. import.txt
 
 
 <p>and place the file in the directory located at _&lt;code&gt;/textpattern/include/import/&lt;/code&gt;_.</p></li>
 <li>Go to the Import subtab (the panel you are reading about now), and make the appropriate selections as described under the _Controls_ section above (Figures 3 through 6).</li>
 <li><p>Click the _Continue_ button. Textpattern will use your text file</p>
-bc(code). import.txt
+bc. import.txt
 
 
 <p>and import it's contents into the Textpattern database structure. You get a list of imported articles with a message at the end about the status of the action.</p></li>
@@ -94,7 +94,7 @@ For _Movable Type_ it will be a control called *Weblog ID* (Figure 8).
 
 For _Wordpress_ it will be a control for *table prefix* (Figure 9). Most likely you can leave the default
 
-bc(code). wp_
+bc. wp_
 
 
 if you haven't changed that when you installed WordPress (you might have changed it if your WordPress site shared the database with another application).

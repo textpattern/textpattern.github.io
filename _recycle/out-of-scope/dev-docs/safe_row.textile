@@ -13,12 +13,12 @@ h3(sectionedit2#parameters). Parameters
  Textpattern table name, without any installation-specific prefix *where*
  MySQL
 
-bc(code). WHERE
+bc. WHERE
 
 
 statement, without the
 
-bc(code). WHERE
+bc. WHERE
 
 
 keyword *debug*
@@ -32,7 +32,7 @@ h3(sectionedit4#changelog). Changelog
 
 h3(sectionedit5#examples). Examples
 
-bc(code). $row = safe_row('*', 'textpattern', 'Title like "a%"');
+bc. $row = safe_row('*', 'textpattern', 'Title like "a%"');
 
 
 h3(sectionedit6#see_also). See Also

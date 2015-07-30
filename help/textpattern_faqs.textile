@@ -7,7 +7,7 @@ h3(sectionedit1#how_to_display_a_caption_with_an_image). How to display a captio
 # In the admin pages, click on Presentation→Forms.
 # In the “default” form, on the third line from the top, insert the following code:
 
-bc(code). <txp:if_article_image>
+bc. <txp:if_article_image>
 <txp:images auto_detect="article" >
   <txp:image />
   <txp:image_info type="caption" wraptag="div" class="img_cap" />

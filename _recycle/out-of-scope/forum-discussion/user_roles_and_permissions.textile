@@ -6,7 +6,7 @@ Admin-side plugins add a whole new level of options. There are still some limita
 
 h3(sectionedit2#built-in_user_roles_and_their_abilities). Built-in User Roles and Their Abilities
 
-bc(code). $txp_permissions = array(
+bc. $txp_permissions = array(
     'admin'                       => '1,2,3,4,5,6',
     'admin.edit'                  => '1',
     'admin.list'                  => '1,2,3',

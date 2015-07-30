@@ -4,7 +4,7 @@ After installing and activating this plugin, you can create a new style with the
 
 The plugin rewrites all pages in the backend and inserts a
 
-bc(code). @import url("css.php?n=admin")
+bc. @import url("css.php?n=admin")
 
 
 to call the stylesheet. It additionally adds an id to the body-element, which is identical to the event (see url). Textpattern 4.0.4 has cleaned up markup and plenty of ids/classes which should allow for pretty far-reaching and specific customization.

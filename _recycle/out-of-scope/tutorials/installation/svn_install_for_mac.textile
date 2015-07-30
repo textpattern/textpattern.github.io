@@ -16,11 +16,11 @@ This method will download the most recent version of Textpattern. This is the â€
 <li>Set the following:
 <ul>
 <li><p>*Server:*</p>
-bc(code). textpattern.googlecode.com
+bc. textpattern.googlecode.com
 
 
 <p>&#42; *Initial Path:*</p>
-bc(code). /svn/releases/{{Txp current version}}/source/
+bc. /svn/releases/{{Txp current version}}/source/
 
 
 <p>&#42; *Protocol:* WebDAV</p></li>
@@ -35,7 +35,7 @@ h3(sectionedit3#command_line_approach). Command Line Approach
 
 This approach requires permission to use
 
-bc(code). /Applications/Utilities/Terminal.app
+bc. /Applications/Utilities/Terminal.app
 
 
 on your Macintosh (enabled by default) and shell access to your UNIX-based hosting provider. If you do not have access to both of these components, please speak with your system administrator or choose one of the alternate approaches listed above.
@@ -51,7 +51,7 @@ Once SVN is installed, take the following steps to checkout Textpattern from the
 
 <ul>
 <li><p>Login to your hosting provider using Terminal.app (probably using</p>
-bc(code). ssh
+bc. ssh
 
 </li>
 </ul>
@@ -60,18 +60,18 @@ If your site is hosted with Joyent, see "svn_install_on_joyent_accelerators":/ho
 
 <ul>
 <li><p>Move into the directory where you want to install Textpattern, like so:</p>
-bc(code). cd /my/textpattern/directory/
+bc. cd /my/textpattern/directory/
 
 </li>
 <li><p>Run the following command (*Note:* the space and period at the end are necessary!):</p>
-bc(code). svn checkout <__yamdwe_nowiki>0</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source .
+bc. svn checkout <__yamdwe_nowiki>0</__yamdwe_nowiki>textpattern.googlecode.com/svn/releases/{{Txp current version}}/source .
 
 </li>
 </ul>
 
 Alternatively, you may install Textpattern without moving into the desired directory first (i.e., combine steps 2 and 3 together), by running the command:
 
-bc(code). svn checkout http://textpattern.googlecode.com/svn/releases/{{Txp current version}}/source /my/textpattern/directory/
+bc. svn checkout http://textpattern.googlecode.com/svn/releases/{{Txp current version}}/source /my/textpattern/directory/
 
 
 h3(sectionedit4#future_updates). Future Updates
@@ -79,10 +79,10 @@ h3(sectionedit4#future_updates). Future Updates
 Once you have initially setup SVN, you simply need to do the following for all future updates.
 
 <ol>
-<li>bc(code). cd /my/textpattern/directory/
+<li>bc. cd /my/textpattern/directory/
 
 </li>
-<li>bc(code). svn update
+<li>bc. svn update
 
 </li>
 </ol>

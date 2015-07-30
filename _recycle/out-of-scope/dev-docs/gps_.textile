@@ -22,12 +22,12 @@ Given:
 
 http://www.example.com/?var1=foo
 
-bc(code). $title = gps('var1');
+bc. $title = gps('var1');
 echo $title;
 
 
 result:
 
-bc(code). foo
+bc. foo
 
 

@@ -8,7 +8,7 @@ h3(sectionedit2#general_information). General Information
 
 h4(#name). Name
 
-bc(code). TextileThis()
+bc. TextileThis()
 
 
 h4(#purpose). Purpose
@@ -34,22 +34,22 @@ h4(#information_retrieved_from). Information Retrieved From
 h3(sectionedit3#parameters). Parameters
 
 <ul>
-<li>bc(code). $text
+<li>bc. $text
 
 </li>
-<li>bc(code). $lite=<__yamdwe_nowiki>0</__yamdwe_nowiki>
+<li>bc. $lite=<__yamdwe_nowiki>0</__yamdwe_nowiki>
 
 </li>
-<li>bc(code). $encode=<__yamdwe_nowiki>1</__yamdwe_nowiki>
+<li>bc. $encode=<__yamdwe_nowiki>1</__yamdwe_nowiki>
 
 </li>
-<li>bc(code). $noimage=<__yamdwe_nowiki>2</__yamdwe_nowiki>
+<li>bc. $noimage=<__yamdwe_nowiki>2</__yamdwe_nowiki>
 
 </li>
-<li>bc(code). $strict=<__yamdwe_nowiki>3</__yamdwe_nowiki>
+<li>bc. $strict=<__yamdwe_nowiki>3</__yamdwe_nowiki>
 
 </li>
-<li>bc(code). $rel=<__yamdwe_nowiki>4</__yamdwe_nowiki>
+<li>bc. $rel=<__yamdwe_nowiki>4</__yamdwe_nowiki>
 
 </li>
 </ul>

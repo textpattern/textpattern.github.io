@@ -12,12 +12,12 @@ Disalbilta i plugin uno ad uno, fino a quando non trovi quello che causa il prob
 
 In alternativa puoi usare il codice
 
-bc(code). <txp:article_custom />
+bc. <txp:article_custom />
 
 
 per generare la lista degli archivi.
 
-bc(code). <txp:article_custom />
+bc. <txp:article_custom />
 
 
 utilizza la memoria in modo efficiente.

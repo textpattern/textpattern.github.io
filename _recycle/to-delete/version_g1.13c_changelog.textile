@@ -1,18 +1,18 @@
 \n &#42;
 
-bc(code). <txp:search_input />
+bc. <txp:search_input />
 
 
 now accepts a
 
-bc(code). form=""
+bc. form=""
 
 
 parameter to use a named form for output
 
 <ul>
 <li><p>Added</p>
-bc(code). <txp:site_slogan />
+bc. <txp:site_slogan />
 
 
 <p>as a Useful tag</p></li>
@@ -34,7 +34,7 @@ bc(code). <txp:site_slogan />
 <li>Keyed (almost) all remaining hard-coded text in the Txp interface to the lang file (thanks to mamash for the help)</li>
 <li>Removed some extremely supercilious log entries from the sql installer</li>
 <li><p>The tags category_list, recent_articles and related_articles should now be able to accept the parameters</p>
-bc(code). wraptag="ul" break="li"
+bc. wraptag="ul" break="li"
 
 
 <p>and produce a well-formed list</p></li>

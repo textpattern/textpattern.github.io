@@ -1,6 +1,6 @@
 \n"mininav_presentation_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs
 
-bc(code). //Presentation// â†’ **//Forms//**
+bc. //Presentation// â†’ **//Forms//**
 
 
 "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms are one of the six “building blocks” described in the "textpattern_semantic_model":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model. The Forms panel contains a Form editor, with a list of existing Forms organized in the right column and a Tag builder in the left column to help you construct Form content.
@@ -21,7 +21,7 @@ Form types have almost no inherent semantic but aid solely as a means of organiz
 
 The category and section types are intended to be used in conjunction with "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list and "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list, respectively, as a value to the form attribute, along the lines of
 
-bc(code). <nowiki><txp:section_list form="foo" /></nowiki>
+bc. <nowiki><txp:section_list form="foo" /></nowiki>
 
 
 . They serve the same use case as the form attributes for articles do.

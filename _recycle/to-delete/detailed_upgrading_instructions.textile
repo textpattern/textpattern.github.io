@@ -16,7 +16,7 @@ h4(#duplicate_the_existing_txp_file_tree). Duplicate the Existing Txp File Tree
 
 You must make a copy of your
 
-bc(code). config.php
+bc. config.php
 
 
 file as a minimum
@@ -44,45 +44,45 @@ Using FTP/SFTP again, navigate to the folder you created in step 1 and copy the 
 
 <ol>
 <li><p>Copy the files</p>
-bc(code). .htaccess
+bc. .htaccess
 
 
 <p>,</p>
-bc(code). css.php
+bc. css.php
 
 
 <p>, and</p>
-bc(code). index.php
+bc. index.php
 
 
 <p>. The README.txt and HISTORY.txt are optional.</p></li>
 <li><p>Copy any folders you are using, for example</p>
-bc(code). rpc
+bc. rpc
 
 
 <p>and</p>
-bc(code). sites
+bc. sites
 
 
 <p>. You do not usually need to copy</p>
-bc(code). files
+bc. files
 
 
 <p>and</p>
-bc(code). images
+bc. images
 
 
 <p>unless otherwise directed because you will already have done so when installing a prior release.</p></li>
 <li><p>Copy the contents of the</p>
-bc(code). textpattern
+bc. textpattern
 
 
 <p>folder to the server's</p>
-bc(code). textpattern
+bc. textpattern
 
 
 <p>folder. You may exclude the</p>
-bc(code). setup
+bc. setup
 
 
 <p>directory, since it is only used for first-time installations.</p></li>
@@ -92,29 +92,29 @@ It is important that you make sure all three _index.php_, _css.php_ and _.htacce
 
 Ensure your existing
 
-bc(code). config.php
+bc. config.php
 
 
 file is still inside your
 
-bc(code). textpattern
+bc. textpattern
 
 
 folder on the server. This rarely changes between releases; if any changes are required or options become available they are documented in the README.txt file.
 
 If you are running an Apache web server and wish to prohibit direct access to your downloadable files (i.e. by someone manually entering
 
-bc(code). <nowiki>http://site.com/files/name_of_file</nowiki>
+bc. <nowiki>http://site.com/files/name_of_file</nowiki>
 
 
 ) you may rename the
 
-bc(code). /files/.htaccess-dist
+bc. /files/.htaccess-dist
 
 
 file to
 
-bc(code). /files/.htaccess
+bc. /files/.htaccess
 
 
 .

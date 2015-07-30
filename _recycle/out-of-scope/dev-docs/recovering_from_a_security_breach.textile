@@ -4,7 +4,7 @@
 
 Sites get hacked. It happens. It feels awful, but the key is to *_not panic_*. Most malware is injected at the server level through an easily-guessed or brute-forced password and will infect some or all files directly on the server. Usually this is done by adding extra files or folders to your installation, or by directly modifying files such as
 
-bc(code). index.php
+bc. index.php
 
 
 . Only rarely does it corrupt your database as well.
@@ -51,32 +51,32 @@ It would also be prudent to go through all files in the following folders:
 
 and any other folders you may have, to make sure that the files there are all the ones you expect. For example, in the
 
-bc(code). /images
+bc. /images
 
 
 folder you *_only_* have
 
-bc(code). .jpg
+bc. .jpg
 
 
 ,
 
-bc(code). .png
+bc. .png
 
 
 , and
 
-bc(code). .gif
+bc. .gif
 
 
 files. In the
 
-bc(code). /js
+bc. /js
 
 
 folder you should only have javascript files that you have uploaded. The files in the
 
-bc(code). /files
+bc. /files
 
 
 folder should be those that you have uploaded and should not have been tampered with in any way.
@@ -97,12 +97,12 @@ Once you've cleaned out all the files and checked any left on the server as per 
 
 Copy the
 
-bc(code). /textpattern/config.php
+bc. /textpattern/config.php
 
 
 file from your tainted downloaded files to another place on your local hard drive and open the file in a text editor like notepad or gedit. Check, double check, and triple check it has not been altered. It should *only* contain something like this:
 
-bc(code). <?php
+bc. <?php
 $txpcfg['db'] = 'your_db_name';
 $txpcfg['user'] = 'your_mysql_user';
 $txpcfg['pass'] = 'your_strong_mysql_password';
@@ -115,12 +115,12 @@ $txpcfg['dbcharset'] = 'utf8';
 
 If you're happy with it, make sure you alter the 'pass' to the new one that you set in step 3. Upload this
 
-bc(code). config.php
+bc. config.php
 
 
 to your
 
-bc(code). /textpattern
+bc. /textpattern
 
 
 folder.

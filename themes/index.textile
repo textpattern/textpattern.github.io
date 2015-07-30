@@ -66,14 +66,14 @@ h4(#adding_admin_themes_to_your_site). Adding admin themes to your site
 
 All packaged themes, like above, are added to
 
-bc(code). /textpattern/themes
+bc. /textpattern/themes
 
 
 in your Textpattern installation. This makes them available from the Advanced preferences of the admin-side.
 
 In fact, you could simply duplicate an out-of-box theme folder and files (whether _Classic_, _Remora_, or _Hive_), rename the folder to your new theme name, select the new theme from the admin preferences, and develop your new theme directly in place in the
 
-bc(code). /textpattern/themes
+bc. /textpattern/themes
 
 
 directory so changes reflect on your website as you work.

@@ -4,12 +4,12 @@ h3(sectionedit1#overview). Overview
 
 For whatever reason, it is often the case that someone has Textpattern installed in a subdirectory of a Web domain (i.e.,
 
-bc(code). mysite.com/subdirectory
+bc. mysite.com/subdirectory
 
 
 ) and later decide they would like it to be located in the domain root (i.e.,
 
-bc(code). mysite.com
+bc. mysite.com
 
 
 ). Moving a Textpattern installation from a subdirectory to the domain root is a relatively easy matter; you simply backup your resources (not required but encouraged), move the files, change paths in a few key places, and you should be good to go. Following is the process in more detail.
@@ -20,11 +20,11 @@ h3(sectionedit2#the_process). The Process
 
 <ol>
 <li><p>Next, you need to change your referencing paths to the database in the</p>
-bc(code). config.php
+bc. config.php
 
 
 <p>file. Navigate to</p>
-bc(code). /textpattern/config.php
+bc. /textpattern/config.php
 
 
 <p>, open the file and change your paths so they now reflect a link to the database with respect from the domain root instead of the former subdirectory (i.e., simply remove the subdirectory from the paths).</p></li>

@@ -20,29 +20,29 @@ It uses one custom field and two forms. Basically one has two articles: first ha
 
 One way of creating a link in textpattern is to use the
 
-bc(code). <txp:article_custom />
+bc. <txp:article_custom />
 
 
 tag together with a form (named for example “link”) containing
 
-bc(code). <txp:permlink>link text</txp:permlink>
+bc. <txp:permlink>link text</txp:permlink>
 
 
 .
 
 Thus to link to the article with the id=1 we use
 
-bc(code). <txp:article_custom id="1" form="link" />
+bc. <txp:article_custom id="1" form="link" />
 
 
 In our case to link from article 1 to article 2 we would have to use
 
-bc(code). <txp:article_custom id="2" form="link"/>
+bc. <txp:article_custom id="2" form="link"/>
 
 
 and the reciprocal to link back. Also, the “link” form would have to be:
 
-bc(code). <txp:if_section name="english">
+bc. <txp:if_section name="english">
 <txp:permlink>Read in Romanian</txp:permlink>
 <txp:else />
 <txp:permlink>Read in English</txp:permlink>
@@ -53,7 +53,7 @@ Now, to generalize, we use a custom field, naming it “ro-en”, and fill it wi
 
 To get the mirroring link, we put the following tags wherever we want to show the reader to the other language version of an article:
 
-bc(code). <txp:if_custom_field name="ro-en">
+bc. <txp:if_custom_field name="ro-en">
 <txp:article_custom id='<txp:custom_field name="ro-en" />' form="link" />
 </txp:if_custom_field>
 
@@ -64,12 +64,12 @@ _(begin outdated instructions)_
 
 The ideal tag would look like this:
 
-bc(code). <txp:article_custom id="<txp:custom_field name="ro-en">" form="link" />
+bc. <txp:article_custom id="<txp:custom_field name="ro-en">" form="link" />
 
 
 But textpattern does not support tags in tags. To overcome this we adapt "this slick php trick":http://awasteofwords.com/article/textpattern-tags-in-tags-the-gordian-knot to look like this:
 
-bc(code). <txp:php>
+bc. <txp:php>
 $a = custom_field (array ('name' => 'ro-en'));
 echo article_custom (array(
     'id' => $a,
@@ -80,7 +80,7 @@ echo article_custom (array(
 
 and we put it in a form, not before containing it in a conditional that will let the link show only if the “ro-en” has any content. We name the form “lang”:
 
-bc(code). <txp:if_custom_field name="ro-en">
+bc. <txp:if_custom_field name="ro-en">
 <txp:php>
 $a = custom_field (array ('name' => 'ro-en'));
 echo article_custom (array(
@@ -103,7 +103,7 @@ h3(sectionedit3#solution_no_3). Solution no. 3
 
 Textpattern developer Robert Wetzlmayr came up with this "following solution on his blog":http://awasteofwords.com/article/multi-lingual-articles-in-textpattern-a-poor-man-s-solution, which makes use of
 
-bc(code). <txp:variable />
+bc. <txp:variable />
 
 
 and therefore requires textpattern 4.0.7 and upwards.
@@ -112,7 +112,7 @@ The idea is to put all localized renditions of a text into just one article and 
 
 A form wisely named accept-language establishes a default language preference, tries to sniff out the visitorâ€™s language preferences subsequently, and finally stores the resulting language code into a Textpattern variable:
 
-bc(code). <txp:php>
+bc. <txp:php>
 variable(array('name' =>'accept-language', 'value' => 'de'));
 $al = @$_SERVER['HTTP_ACCEPT_LANGUAGE'];
 if (preg_match('/(.*?)[,;-]/', $al, $a)) {
@@ -128,7 +128,7 @@ if (preg_match('/(.*?)[,;-]/', $al, $a)) {
 
 This form is placed somewhere above the content in question, either in the pageâ€™s template or at the very beginning of the article. Inside the articleâ€™s body, each localized fraction is surrounded by
 
-bc(code). <txp:if_variable name="accept-language" value="LANGCODE">
+bc. <txp:if_variable name="accept-language" value="LANGCODE">
 
 
 tags. LANGCODE is one of the ISO languages codes like de, en, fr.

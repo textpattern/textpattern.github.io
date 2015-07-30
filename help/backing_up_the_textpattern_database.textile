@@ -14,11 +14,11 @@ In order to back up your database using phpMyAdmin is first to check and see if 
 <li>Login to phpMyAdmin, using the web address have were you installed it to.</li>
 <li>In the left column you should see a drop down menu given you a list of your Database's you currenty have available to you. Select the database in which you setup during your installation</li>
 <li><p>On the right side of the screen you should now be able to see a list of all the tables in database. At the top of the screen you should see</p>
-bc(code). Structure, SQL, Search, Query, Export, Operations, and Drop
+bc. Structure, SQL, Search, Query, Export, Operations, and Drop
 
 
 <p>You are going to want to select</p>
-bc(code). Export
+bc. Export
 
 
 <p>.</p></li>
@@ -26,15 +26,15 @@ bc(code). Export
 <li>Select SQL as your as the Export option.</li>
 <li>Under the SQL Options box there is no need to change anything so skip this step.</li>
 <li><p>In the last box check the option</p>
-bc(code). Save as file
+bc. Save as file
 
 
 <p>this well allow you to save your database backup to your hard disk for buring to a cd. Enter a filename in the</p>
-bc(code). File name template
+bc. File name template
 
 
 <p>box. Un-Check</p>
-bc(code). remember template
+bc. remember template
 
 
 <p>.</p></li>
@@ -49,23 +49,23 @@ This is probably the easiest route to go, when it comes to backing up your Datab
 
 After you install the plugin you well see a new tab at the top of your screen between
 
-bc(code). Admin
+bc. Admin
 
 
 and
 
-bc(code). View Site
+bc. View Site
 
 
 , this is were you well access the db_manager.
 
 <ol>
 <li><p>Click on the</p>
-bc(code). extensions
+bc. extensions
 
 
 <p>tab and than click on the</p>
-bc(code). db backup
+bc. db backup
 
 
 <p>tab.</p></li>

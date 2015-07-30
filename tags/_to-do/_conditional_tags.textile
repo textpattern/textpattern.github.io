@@ -22,7 +22,7 @@ h4(#display_different_navigational_links_on_individual_article_and_article_list_
 
 h4(#use_special_formatting_for_all_the_articles_by_a_specific_author). Use special formatting for all the articles by a specific author
 
-bc(code). <txp:if_article_author name="the-wizard">
+bc. <txp:if_article_author name="the-wizard">
    <txp:article form="wizard-form" />
 <txp:else />
    <txp:article />
@@ -58,7 +58,7 @@ oranges!
 
 These will *not* work:
 
-bc(code). <txp:if_custom_field name="apples">
+bc. <txp:if_custom_field name="apples">
 apples!
 <txp:else />
     <txp:if_custom_field name="oranges">

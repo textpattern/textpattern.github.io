@@ -1,11 +1,11 @@
 \n &#42;
 
-bc(code). <txp:posted />
+bc. <txp:posted />
 
 
 now accepts a
 
-bc(code). format=""
+bc. format=""
 
 
 parameter, which will render an article timestamp in the date/time formats defined at "php.net":http://php.net/date
@@ -14,7 +14,7 @@ parameter, which will render an article timestamp in the date/time formats defin
 <li>Discrete chunks of PHP should now work on page templates, provided this is turned on in /textpattern/lib/admin_config.php</li>
 <li>Finished preparing another sheaf of embedded text for internationalisation</li>
 <li><p>Fixed erroneous tag generation for</p>
-bc(code). <txp:comment_message_input />
+bc. <txp:comment_message_input />
 
 </li>
 <li>Fixed referrer recording failure in g1.13c</li>
@@ -22,7 +22,7 @@ bc(code). <txp:comment_message_input />
 <li>There is now an option in /textpattern/lib/admin_config.php to turn raw CSS editing on by default</li>
 <li>Changed some wording in admin→prefs to make the roles of 'Site URL' (now called 'Server root URL') and 'Path to site' more apparent</li>
 <li><p>Removed 'Insert at beginning' and 'Insert at end' article form tags, as appending and prepending to articles is better accomplished using CSS and</p>
-bc(code). float
+bc. float
 
 </li>
 <li>Various small fixes</li>

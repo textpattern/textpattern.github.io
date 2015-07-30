@@ -50,7 +50,7 @@ First the MySQL version. This can be found in the low-level diagnostics in the u
 
 In high-level diagnostics we can find more detailed information about the configuration. The line starting with
 
-bc(code). Charset (default/config)
+bc. Charset (default/config)
 
 
 gives us two pieces of information - the first one *(default)* tells us which character-encoding the mysql-connection *would* use as a default. For some mysql-versions this will report the collation that is used for the connection, so if you see something like 'latin1_swedish_ci' don't be confused (swedish is the default collation of MySQL for latin1 character sets).
@@ -59,7 +59,7 @@ The second one *config* reflects the configured charset in _config.php_. It is i
 
 If you are using MySQL 4.0.x or 3.x, the lines will look like the following...
 
-bc(code). character_set: latin1
+bc. character_set: latin1
 character_sets: latin1 big5 [...] win1251ukr win1251
 
 
@@ -67,7 +67,7 @@ Not much to see here. As explained Textpattern should be using _latin1_ for the 
 
 For MySQL 4.1.x and above you should see something like...
 
-bc(code). character_set_client: utf8
+bc. character_set_client: utf8
 character_set_connection: utf8
 character_set_database: latin1
 character_set_results: utf8
@@ -77,7 +77,7 @@ character_set_system: latin1
 
 The exact values will differ of course from system to system. These are system variables from MySQL and are described in more detail in the MySQL manual on system variables: "$":http://dev.mysql.com/doc/mysql/en/server-system-variables.html . The ones that are relevant for us are client, connection and results. They should match what is defined in _config_ above and they should also of course match the tables that we have - which can be seen in the next Line that reads:
 
-bc(code). 18 Tables: OK
+bc. 18 Tables: OK
 
 
 If you are using an upgrade or plugins that create additional tables your exact number may differ. The *OK* means two things:

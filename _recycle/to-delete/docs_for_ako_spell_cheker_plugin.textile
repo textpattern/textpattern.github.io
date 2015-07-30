@@ -12,7 +12,7 @@ For this plugin to work correctly, you will need to download the "Speller Pages"
 
 As well, your server will need to have
 
-bc(code). [[http://aspell.sourceforge.net/|aspell]]
+bc. [[http://aspell.sourceforge.net/|aspell]]
 
 
 installed. Most hosts should have it installed on their servers, and if not, hosts generally won't have a problem with installing it.

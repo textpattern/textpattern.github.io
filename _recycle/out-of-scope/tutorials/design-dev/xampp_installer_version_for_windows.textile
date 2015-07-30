@@ -54,7 +54,7 @@ Let's test Apache and see if it is working.
 
 <ol>
 <li><p>Open your browser and type the following...</p>
-bc(code). http://localhost/
+bc. http://localhost/
 
 
 <p>You should get a XAMPP splash screen that gives you the option to work in a variety of languages (Figure 3).</p></li>
@@ -129,7 +129,7 @@ Considering that Textpattern makes use of using mode_rewrite to make "Clean URLs
 
 <ol>
 <li><p>Open *_httpd.conf_* (located in</p>
-bc(code). c:\apachefriends\xampp\apache\conf\httpd.conf
+bc. c:\apachefriends\xampp\apache\conf\httpd.conf
 
 
 <p>) with Crimson Editor (or TypePad, etc.).</p></li>
@@ -147,7 +147,7 @@ h4(#modifying_the_apache_httpdconf_file). Modifying the Apache //httpd.conf// Fi
 
 # Scroll down to the bottom of *'httpd.conf*', you should see a section for setting up a virtual host with a *VirtualHost* example. The entire block looks something like this:
 
-bc(code). #NameVirtualHost *
+bc. #NameVirtualHost *
 #
 # VirtualHost example:
 # Almost any Apache directive may go into a VirtualHost container.
@@ -167,28 +167,28 @@ Leave the example in place, it is not hurting anything by being there.
 
 <ol>
 <li><p>Copy the third line in the block above (</p>
-bc(code). #NameVirtualHost *
+bc. #NameVirtualHost *
 
 
 <p>), paste it on a new line under the example block (the bottom of your file), delete the octothorpe (#) to uncomment the line, and replace the asterisk (&#42;) with your localhost IP (127.0.0.1) using port 80. You should end up with a line like this...</p></li>
 </ol>
 
-bc(code). NameVirtualHost 127.0.0.1:80
+bc. NameVirtualHost 127.0.0.1:80
 
 
 <ol>
 <li><p>Now copy the Virtual Host directives from the example block above (starting with</p>
-bc(code). <VirtualHost *>
+bc. <VirtualHost *>
 
 
 <p>and ending with</p>
-bc(code). </VirtualHost>
+bc. </VirtualHost>
 
 
 <p>and paste them under the line you added in the previous step. Remove all the octothorpes (#) to uncomment the lines. Then edit the lines so your first Virtual Host directives block looks as follows...</p></li>
 </ol>
 
-bc(code). <VirtualHost 127.0.0.1:80>
+bc. <VirtualHost 127.0.0.1:80>
     ServerAdmin admin@localhost
     DocumentRoot /apachefriends/xampp/htdocs/xampp
     ServerName localhost
@@ -203,7 +203,7 @@ There are some important things to note here.
 <ul>
 <li>First, in the 'ServerAdmin' line, you can leave “admin” or replace it with whatever ID you want; you are actually designating that value here (not pulling it from somewhere else) so it makes no difference what you use.</li>
 <li><p>Second, because we are setting up development directories outside of the htdocs root location (path indicated in 'DocumentRoot' line), it is necessary to add the</p>
-bc(code). <Directory > ... </Directory>
+bc. <Directory > ... </Directory>
 
 
 <p>directive, which tells Apache to look for the locations elsewhere via SymLinks.</p></li>
@@ -212,19 +212,19 @@ bc(code). <Directory > ... </Directory>
 
 <ol>
 <li><p>Now you need a new set of Virtual Host directives for each development location on your local computer. You also need to include the</p>
-bc(code). NameVirtualHost *:80
+bc. NameVirtualHost *:80
 
 
 <p>line (described earlier) above each new block of directives you create. For demonstration purposes, let's say you wanted to add all your development sites (e.g., _site1_, _site2_, _site3_, etc.) in your computer's root under a single directory called _MySites_ (i.e.,</p>
-bc(code). c:\MySites\site1
+bc. c:\MySites\site1
 
 
 <p>,</p>
-bc(code). c:\MySites\site2
+bc. c:\MySites\site2
 
 
 <p>,</p>
-bc(code). c:\MySites\site3
+bc. c:\MySites\site3
 
 
 <p>, etc.). In such a case, you would need a set of Virtual Host directives for each site.</p></li>
@@ -248,41 +248,41 @@ NameVirtualHost local.site1.com:80
 
 *Note:* Take notice that the 'NameVirtualHost' and the two directives 'ServerAdmin' and 'ServerName' utilize domain names (e.g.,
 
-bc(code). local.site1.com
+bc. local.site1.com
 
 
 ). It is assumed here that the folders, _site1_, _site2_, _site3_, etc. are named after real domain names that you have (or will eventually have) online. The
 
-bc(code). .local
+bc. .local
 
 
 is added to the local site (domain) name to distinguish the development domain from the real domain online. The idea being that you will eventually transfer your development work to the live location, and you want to ensure your path editing is easy and logical (i.e., you will only have to drop the
 
-bc(code). .local
+bc. .local
 
 
 part from the path in your Textpattern's
 
-bc(code). config.php
+bc. config.php
 
 
 file when making the transfer. Be mindful, however, of the other database variables (database name, Textpattern table prefix, and so forth) in Textpattern's
 
-bc(code). config.php
+bc. config.php
 
 
 file).
 
 For each additional development site you wanted to add (i.e., _site2_, _site3_, etc.) you would add the same block of code above at the bottom of the
 
-bc(code). http.conf
+bc. http.conf
 
 
 file, and change the folder name accordingly (i.e., from _site1_ to _site2_, etc.).
 
 Save your changes to the
 
-bc(code). http.conf
+bc. http.conf
 
 
 file.
@@ -295,11 +295,11 @@ We are not done yet, because working with non registered domains would result in
 <li>Browse to and open your hosts file.
 <ul>
 <li><p>If you are on win2k this file should be located at</p>
-bc(code). c:\WINNT\system32\drivers\etc\hosts
+bc. c:\WINNT\system32\drivers\etc\hosts
 
 </li>
 <li><p>If you are on XP, this file should be located at</p>
-bc(code). c:\WINDOWS\system32\drivers\etc\hosts
+bc. c:\WINDOWS\system32\drivers\etc\hosts
 
 </li>
 </ul>
@@ -308,13 +308,13 @@ bc(code). c:\WINDOWS\system32\drivers\etc\hosts
 
 <ol>
 <li><p>At the bottom of the</p>
-bc(code). hosts
+bc. hosts
 
 
 <p>file, make sure you have a pointer for the 'localhost', and one for each development domain you need, suggested as follows...</p></li>
 </ol>
 
-bc(code).      127.0.0.1  localhost
+bc.      127.0.0.1  localhost
      127.0.0.1  local.site1.com
      127.0.0.1  local.site2.com
      127.0.0.1  local.site3.com
@@ -325,11 +325,11 @@ bc(code).      127.0.0.1  localhost
 
 <ol>
 <li><p>Save your changes and restart Apache and MySQL. and see if your local domain is accessible from your browser. You should be able to access the _somedomain_ index page. You should now be able to access your local development sites from your browser without having a DNS conflict with any live sites you have; e.g.,</p>
-bc(code). local.site1.com
+bc. local.site1.com
 
 
 <p>and</p>
-bc(code). www.site1.com
+bc. www.site1.com
 
 
 <p>. In essence, your development domain is now like a subdomain of your live site.</p></li>
@@ -346,11 +346,11 @@ Since you likely do not have Textpattern installed in your development locations
 
 <ol>
 <li><p>Add an HTML file into a development location (i.e.,</p>
-bc(code). c:\MySites\site1
+bc. c:\MySites\site1
 
 
 <p>), and name the HTML file</p>
-bc(code). index.html
+bc. index.html
 
 
 <p>.</p></li>
@@ -361,7 +361,7 @@ http:local.site1.com/index.html.
 
 *Note:* Looking ahead a bit  -  once you eventually have Textpattern installed in the _site1_ folder (for example), your path for intalling Textpattern will be...
 
-bc(code). http:local.site1.com/textpattern/setup/index.php
+bc. http:local.site1.com/textpattern/setup/index.php
 
 
 h3(sectionedit8#preparing_xampp_for_textpattern). Preparing XAMPP for Textpattern
@@ -375,7 +375,7 @@ OK, it is time to get your database setup.
 # Using the XAMPP Control panel (remember the icon on your desktop?), start your Apache server and MySQL database modules.
 # Open a browser and navigate to the XAMPP start page (you were encouraged to bookmark this in an earlier section, you might do so now if you have not)...
 
-bc(code). http://localhost/
+bc. http://localhost/
 
 
 # Click the _phpMyAdmin_ link under the Tools section in the left column to access your local phpMyAdmin interface (Figure 7). Enter a name in the *Create new database* .

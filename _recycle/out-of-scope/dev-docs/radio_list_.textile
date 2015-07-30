@@ -10,7 +10,7 @@ h3(sectionedit2#general_information). General Information
 
 h4(#name). Name
 
-bc(code). radio_list()
+bc. radio_list()
 
 
 h4(#purpose). Purpose
@@ -34,17 +34,17 @@ h4(#information_retrieved_from). Information Retrieved From
 h3(sectionedit3#parameters). Parameters
 
 <ul>
-<li>bc(code). $name
+<li>bc. $name
 
 </li>
-<li>bc(code). $values
+<li>bc. $values
 
 
 <p>- an array of value ⇒ label pairs</p></li>
-<li>bc(code). <nowiki>$current_val=''</nowiki>
+<li>bc. <nowiki>$current_val=''</nowiki>
 
 </li>
-<li>bc(code). <nowiki>$hilight_val=''</nowiki>
+<li>bc. <nowiki>$hilight_val=''</nowiki>
 
 </li>
 </ul>

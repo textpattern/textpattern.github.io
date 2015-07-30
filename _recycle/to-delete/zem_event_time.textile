@@ -4,7 +4,7 @@ h4(#classification). Classification
 
 The
 
-bc(code). zem_event_time
+bc. zem_event_time
 
 
 tag is used as a "Single_Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag. Used in a zem_event_list form, it returns the contents of the event's finish time field.
@@ -13,7 +13,7 @@ h4(#syntax). Syntax
 
 The _zem_event_time_ tag has the following syntactic structure...
 
-bc(code). <txp:zem_event_time />
+bc. <txp:zem_event_time />
 
 
 h4(#attributes). Attributes
@@ -23,36 +23,36 @@ Tag will accept the following attributes (note: attributes are *case sensitive*)
 *&lt;code&gt;*type=“*_type text_*“*&lt;/code&gt;*
  event type. Default is
 
-bc(code). date
+bc. date
 
 
 . *&lt;code&gt;*field=“*_field name(internal use)_*“*&lt;/code&gt;*
  Default is
 
-bc(code). event_time
+bc. event_time
 
 
 . *&lt;code&gt;*wraptag=“*_wraptag text_*“*&lt;/code&gt;*
  HTML tag to be used as the wraptag, without brackets. Default is span. *&lt;code&gt;*class=“*_class name_*“*&lt;/code&gt;*
  CSS class attribute, default is
 
-bc(code). **zem_event_time**
+bc. **zem_event_time**
 
 
 . *&lt;code&gt;*format=“*_time display format (strftime)_*“*&lt;/code&gt;*
  Default is
 
-bc(code).  %X 
+bc.  %X 
 
 
 . To return 7:30pm us
 
-bc(code). %l:%M%p
+bc. %l:%M%p
 
 
 (on Linux) or
 
-bc(code). %#I:%M%p
+bc. %#I:%M%p
 
 
 (on Windows).
@@ -61,7 +61,7 @@ h4(#examples). Examples
 
 h5(#example_1zem_event_display_form_default). Example 1: zem_event_display form (default)
 
-bc(code). <txp:zem_event_permlink wraptag="" >
+bc. <txp:zem_event_permlink wraptag="" >
   <txp:zem_event_name label="Event" wraptag="" />
 </txp:zem_event_permlink>
 <txp:zem_event_date label="Date" wraptag="" />

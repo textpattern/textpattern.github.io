@@ -10,7 +10,7 @@ h3(sectionedit2#general_information). General Information
 
 h4(#name). Name
 
-bc(code). rebuild_tree_full()
+bc. rebuild_tree_full()
 
 
 h4(#purpose). Purpose
@@ -34,7 +34,7 @@ h4(#information_retrieved_from). Information Retrieved From
 h3(sectionedit3#parameters). Parameters
 
 <ul>
-<li>bc(code). $type
+<li>bc. $type
 
 </li>
 </ul>

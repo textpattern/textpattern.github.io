@@ -26,25 +26,25 @@ A runtime figure that regularly measures 1 second or more usually indicates one 
 <li>*DNS issues*: a slow or misconfigured DNS server at your web hosting company can cause high page runtimes. Usually this occurs in the Textpattern logging code. In "Advanced Preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#use_dns3f, set 'Use DNS' to 'No', and see if that makes a difference. If not, try disabling logging altogether</li>
 <li>*Plugins*: plugins aren't necessarily as efficient as Textpattern itself. If your performance problems coincide with the installation of a plugin, or occur only on a particular page template that invokes a plugin, try disabling it and see if there's a difference. If your page won't display properly without the plugin, try temporarily reverting to the default Textpattern "page template and form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms</li>
 <li><p>*PHP code*: if you've included any PHP code in your page templates, whether directly in the template or indirectly via an</p>
-bc(code). include()
+bc. include()
 
 
 <p>call or similar, try disabling it. In particular, check for any code that might try to fetch a file from an external server, e.g. by using a</p>
-bc(code). <nowiki>http://..</nowiki>
+bc. <nowiki>http://..</nowiki>
 
 
 <p>URL in an</p>
-bc(code). fopen()
+bc. fopen()
 
 
 <p>or</p>
-bc(code). include()
+bc. include()
 
 
 <p>call.</p></li>
 <li>*MySQL issues*: MySQL doesn't have to run on the same physical machine as your web server. Some hosting companies run these on separate servers connected by a fast LAN connection, which is fine. However, if Textpattern and MySQL are on entirely different networks, performance will be unaviodably slow, since all MySQL queries and results must travel back and forth over a comparatively slow internet connection every time a Textpattern page is viewed. Other MySQL performance problems can be harder to diagnose. An overloaded MySQL server can slow down Textpattern - ask your hosting company if this could be the case</li>
 <li><p>*Spam blacklist*: sometimes the built-in blacklist checking causes page slowdowns. Go to "Advanced Preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#spam_blacklists_28comma-separated29 and remove</p>
-bc(code). sbl.spamhaus.org
+bc. sbl.spamhaus.org
 
 
 <p>from the *Spam blacklists* preference if it is there</p></li>
@@ -71,7 +71,7 @@ If your Runtime/Queries/Memory figures are within normal limits, but you'd like 
 <ul>
 <li>*Minimize plugins*: the more active plugins, the more code must be loaded, parsed and run. Don't use a plugin when you can achieve the same results with a built-in tag. And make sure you disable any plugins you no longer use.</li>
 <li><p>*Simplify your code*: do your templates use complex nested conditionals, PHP code, or forms within forms? Simplify them. In particular, try to reduce the number of</p>
-bc(code). <txp:...>
+bc. <txp:...>
 
 
 <p>tags that require database queries. If you're not sure, remove tags one at a time and watch the Queries count.</p></li>

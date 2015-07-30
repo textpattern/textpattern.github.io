@@ -54,7 +54,7 @@ h3(sectionedit3#the_process). The Process
 
 * Next create an article form named podcast, where the custom fields get your podcast data, like so:
 
-bc(code). <txp:if_custom_field name="Mp3" val=""><txp:else /><item>
+bc. <txp:if_custom_field name="Mp3" val=""><txp:else /><item>
 <title><txp:custom_field name="Artist" /> - <txp:custom_field name="Track" /></title>
 <link>http://throughitall.net</link>
 <guid><txp:custom_field name="Mp3" /></guid>
@@ -68,7 +68,7 @@ bc(code). <txp:if_custom_field name="Mp3" val=""><txp:else /><item>
 
 * Refine your page template further to taste. If you want to use an excerpt for your feed description tag, the following workaround was suggested on the forum, to get rid of the p tags, that would invalidate the feed.
 
-bc(code). <description>
+bc. <description>
 <txp:php>
 $text = excerpt ( array () );
 echo strip_tags($text);
@@ -79,7 +79,7 @@ echo "\n";
 
 * Check to see, if your feeds validate. You should be able now to post mp3 articles. For valid mp3 URL's, the following format was suggested instead of http:
 
-bc(code). itms://
+bc. itms://
 
 
 h4(#resources). Resources

@@ -8,19 +8,19 @@ h3(sectionedit2#general_information). General Information
 
 h4(#name). Name
 
-bc(code). Textile()
+bc. Textile()
 
 
 h4(#purpose). Purpose
 
 This function is a constructor for the
 
-bc(code). [[textile]]
+bc. [[textile]]
 
 
 class. It is used to create an instance of the
 
-bc(code). [[textile]]
+bc. [[textile]]
 
 
 class so that text can be formated according to the
@@ -43,6 +43,6 @@ None.
 
 h3(sectionedit4#examples). Examples
 
-bc(code). $textile = new Textile();
+bc. $textile = new Textile();
 
 

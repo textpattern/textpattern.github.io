@@ -1,11 +1,11 @@
 h1. If last link [todo:pw]
 
-bc(code). <txp:if_last_link>
+bc. <txp:if_last_link>
 
 
 The "if_last_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_link tag is a _conditional_ tag and always used as an opening and closing pair, like this...
 
-bc(code). <txp:if_last_link>
+bc. <txp:if_last_link>
 ...conditional statement...
 </txp:if_last_link>
 

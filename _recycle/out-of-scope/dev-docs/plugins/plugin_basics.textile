@@ -13,14 +13,14 @@ Since all plugins must use a three-letter prefix (see the "plugin_development_gu
 
 Let's build the code piece by piece using the "ied_plugin_composer":http://stefdawson.com/ied_plugin_composer plugin. Create a new plugin called *abc_hello_world* and put this code in:
 
-bc(code). function abc_hello_world($atts, $thing=NULL) {
+bc. function abc_hello_world($atts, $thing=NULL) {
    return 'Hello Textpattern world!';
 }
 
 
 Once you save the code and enable the plugin, it is available for use. You've just created a new Textpattern tag: go and try it out! In your Page or Form template  -  or even in an article  -  put:
 
-bc(code). <nowiki><txp:abc_hello_world /></nowiki>
+bc. <nowiki><txp:abc_hello_world /></nowiki>
 
 
 There you go; your first plugin. Admittedly, not very useful yet.
@@ -29,22 +29,22 @@ h4(#attributes). Attributes
 
 In the function signature  -  the first line of the above code  -  you'll see reference to two variables
 
-bc(code). $atts
+bc. $atts
 
 
 and
 
-bc(code). $thing
+bc. $thing
 
 
 . These are Textpattern conventions:
 
 <ul>
-<li>bc(code). $atts
+<li>bc. $atts
 
 
 <p>will hold any attributes that have been used inside your tag</p></li>
-<li>bc(code). $thing
+<li>bc. $thing
 
 
 <p>holds the contents of any container if your tag can be used that way</p></li>
@@ -52,12 +52,12 @@ bc(code). $thing
 
 Notice that
 
-bc(code). $thing
+bc. $thing
 
 
 is set to
 
-bc(code). NULL
+bc. NULL
 
 
 by default. This is good practice.
@@ -78,46 +78,46 @@ function abc_hello_world($atts, $thing=NULL) {
 
 the
 
-bc(code). lAtts()
+bc. lAtts()
 
 
 function is a TXP function that helps you deal with tag attributes easily. It takes care of all the drudgery of making sure that users are not trying to use badly named or incorrect attribute names. It takes an array as its only argument, containing a list of all your attributes and any default values. In this example, we have defined two:
 
-bc(code). name
+bc. name
 
 
 (which has no default value) and
 
-bc(code). text
+bc. text
 
 
 whch has some default content.
 
 If you refresh your site's page you'll now see
 
-bc(code). Hello ! Pleased to meet you.
+bc. Hello ! Pleased to meet you.
 
 
 Change your tag to read:
 
-bc(code). <nowiki><txp:abc_hello_world name="Fred" /></nowiki>
+bc. <nowiki><txp:abc_hello_world name="Fred" /></nowiki>
 
 
 and notice the difference. Textpattern has read your attribute and used it; the
 
-bc(code). extract()
+bc. extract()
 
 
 function takes care of making the variable available in your code simply as
 
-bc(code). $name
+bc. $name
 
 
 .
 
 You can of course also use the
 
-bc(code). text
+bc. text
 
 
 attribute; notice that if you do, the default value you set up is replaced with whatever is used in the plugin's tag.
@@ -141,7 +141,7 @@ function abc_hello_world($atts, $thing=NULL) {
 
 It's a stupid example, but change your txp tag to the following:
 
-bc(code). <txp:abc_hello_world name="Fred">
+bc. <txp:abc_hello_world name="Fred">
    <p>Welcome admin</p>
 <txp:else />
    <p>Welcome normal user person</p>
@@ -150,22 +150,22 @@ bc(code). <txp:abc_hello_world name="Fred">
 
 What we're doing here is checking if the tag's
 
-bc(code). name
+bc. name
 
 
 attribute is equal to *Admin*. If it is, the conditional branch will execute and if not, the "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else branch will run. The TXP function
 
-bc(code). EvalElse()
+bc. EvalElse()
 
 
 does the magic for us by fetching and parsing the relevant part of
 
-bc(code). $thing
+bc. $thing
 
 
 (the container) depending on whether the value of
 
-bc(code). $result
+bc. $result
 
 
 is true or false.
@@ -180,7 +180,7 @@ We're going to write a plugin that works on the admin side now. This plugin will
 
 To begin with, we need to target the admin side. To do that we have to check whether the current user is on the Admin side or not. We do this as follows:
 
-bc(code). if (@txpinterface == 'admin') {
+bc. if (@txpinterface == 'admin') {
 }
 
 
@@ -188,7 +188,7 @@ So go ahead, create a new plugin in ied_plugin_composer called *abc_admin_hello_
 
 Nothing will happen yet of course, so let's create our tab on the Extensions panel:
 
-bc(code). if (@txpinterface == 'admin') {
+bc. if (@txpinterface == 'admin') {
    add_privs('abc_admin_hello_world', '1'); // Publishers only
    register_tab('extensions', 'abc_admin_hello_world', 'My Plugin');
 }
@@ -196,7 +196,7 @@ bc(code). if (@txpinterface == 'admin') {
 
 The
 
-bc(code). add_privs()
+bc. add_privs()
 
 
 function is a necessary step to tell TXP who can see the new tab.
@@ -211,7 +211,7 @@ For our purposes here, think of an event as a tab in the TXP interface. That tab
 
 A step is some action that a user takes when within one of the tabs  -  i.e. some action that takes place inside the event that we are interested in. More on steps later. For now we need to tell Textpattern what to do when our tab is clicked. For this we use
 
-bc(code). register_callback()
+bc. register_callback()
 
 
 :
@@ -231,12 +231,12 @@ function abc_admin_hw_gui($event, $step) {
 
 Now we're getting somewhere! When someone visits the abc_admin_hello_world tab we have told TXP to call the function abc_admin_hw_gui(). The
 
-bc(code). pagetop()
+bc. pagetop()
 
 
 function is another TXP function that renders the tabs along the top of the interface; its mandatory first argument is the name to display in the browser's
 
-bc(code). <title>
+bc. <title>
 
 
 tag.
@@ -249,24 +249,24 @@ In the code so far we have done one thing when the tab  -  our event  -  is exec
 
 Let's prepare our plugin to work with these three steps; *list* is going to be our default step. To do this we're going to rename our existing
 
-bc(code). abc_admin_hw_gui()
+bc. abc_admin_hw_gui()
 
 
 function to reflect its actual implementation; it's now going to be called
 
-bc(code). abc_admin_hw_list()
+bc. abc_admin_hw_list()
 
 
 .
 
 The original
 
-bc(code). abc_admin_hw_gui()
+bc. abc_admin_hw_gui()
 
 
 is going to become a sort of *_dispatcher_* for steps. Here's the new function:
 
-bc(code). function abc_admin_hw_gui($event, $step) {
+bc. function abc_admin_hw_gui($event, $step) {
    if(!$step or !in_array($step, array(
       'abc_admin_hw_save',
       'abc_admin_hw_edit',
@@ -294,12 +294,12 @@ function abc_admin_hw_edit() {
 
 To finish it off we're going to add a couple of hyperlinks to our
 
-bc(code). abc_admin_hw_list()
+bc. abc_admin_hw_list()
 
 
 function that allows us to simulate the user clicking on stuff in your interface:
 
-bc(code). function abc_admin_hw_list() {
+bc. function abc_admin_hw_list() {
    pagetop('My plugin tab');
    echo '<ul>';
    echo '<li><a href="?event=abc_admin_hello_world&step=abc_admin_hw_save">Click to Save</a></li>';

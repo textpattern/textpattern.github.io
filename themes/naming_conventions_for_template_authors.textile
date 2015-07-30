@@ -36,14 +36,14 @@ h5(#current_convention_proposals). Current Convention Proposals
 
 An example for an article form file (As a packaged derivative)
 
-bc(code). xxx_yyyy.article.ext
+bc. xxx_yyyy.article.ext
 
 
 # - - The first part (xxx) is the creator code, that would identify the Template author, in the same fashion, as it is already handled for plugin files.Here it is followed by an underscore, that suits the general syntax structure of a txp tag.
 ## The second part (yyyy) (after the underscore delimiter) is the part that could identify the structural and functional aspect of the form file.It is followed by a dot delimiter.
 ## This second part, can by itself have a subpattern, that could naturally follow any mental pattern a Template Author prefers. Example:
 
-bc(code). xxx_promo_sticky_teaser_front.article.ext
+bc. xxx_promo_sticky_teaser_front.article.ext
 
 
 <ol>
@@ -53,13 +53,13 @@ bc(code). xxx_promo_sticky_teaser_front.article.ext
 <ol>
 <li>Proposal:
 <ol>
-<li>bc(code). txfml for forms.
+<li>bc. txfml for forms.
 
 </li>
-<li>bc(code). txpml for pages.
+<li>bc. txpml for pages.
 
 </li>
-<li>bc(code). css for styles. 
+<li>bc. css for styles. 
 
 </li>
 </ol>

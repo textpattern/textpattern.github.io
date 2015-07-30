@@ -240,7 +240,7 @@ h4(#images). images
 
 h4(#search_input). search_input
 
-bc(code). <form role="search" method="get" action="<txp:site_url />">
+bc. <form role="search" method="get" action="<txp:site_url />">
   <h4><label for="search-textbox"><txp:text item="search" /></label></h4>
   <p><input id="search-textbox" type="search" name="q"<txp:if_search> value="<txp:search_term />"</txp:if_search>><input type="submit" value="<txp:text item='go' />"></p>
 </form>
@@ -409,7 +409,7 @@ h3(sectionedit5#link_forms). Link Forms
 
 h4(#plainlinks). plainlinks
 
-bc(code). <!-- This is being used as an external links form, therefore rel is set to 'external' -->
+bc. <!-- This is being used as an external links form, therefore rel is set to 'external' -->
 <txp:linkdesctitle rel="external" />
 
 

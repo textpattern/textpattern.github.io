@@ -8,7 +8,7 @@ h3(sectionedit2#general_information). General Information
 
 h4(#name). Name
 
-bc(code). pba()
+bc. pba()
 
 
 h4(#purpose). Purpose
@@ -30,10 +30,10 @@ h4(#information_retrieved_from). Information Retrieved From
 h3(sectionedit3#parameters). Parameters
 
 <ul>
-<li>bc(code). $in
+<li>bc. $in
 
 </li>
-<li>bc(code). $element = ""
+<li>bc. $element = ""
 
 </li>
 </ul>

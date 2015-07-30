@@ -24,43 +24,43 @@ Relates with step 2 in the "simple instructions":/home/www/zendstudio/dokuwiki/b
 The unpacked "file tree":/home/www/zendstudio/dokuwiki/bin/doku.php?id=4_5.2_file_tree described:
 
 <ul>
-<li>bc(code). textpattern
+<li>bc. textpattern
 
 
 <p>â€” This is the folder that all the core scripting and functionality</p></li>
-<li>bc(code). images
+<li>bc. images
 
 
 <p>â€” This folder is empty by default, but will be utilized later in the course of building your site, particularly if/when using the upload features in the admin-side's "Images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel panel.</p></li>
-<li>bc(code). files
+<li>bc. files
 
 
 <p>â€” This folder is empty by default, but will be used if/when you use the upload features in the admin-side's "files":/home/www/zendstudio/dokuwiki/bin/doku.php?id=files panel.</p></li>
-<li>bc(code). rpc
+<li>bc. rpc
 
 
 <p>â€” This folder is where the XML-RPC functionality is kept.</p></li>
-<li>bc(code). sites
+<li>bc. sites
 
 
 <p>â€” This folder contains a _site1_ template, and provides support for "multiple_websites_with_a_single_textpattern_installation":/home/www/zendstudio/dokuwiki/bin/doku.php?id=multiple_websites_with_a_single_textpattern_installation.</p></li>
-<li>bc(code). index.php
+<li>bc. index.php
 
 
 <p>â€” The default location of your site; where web users will arrive, and where content publishing happens dynamically.</p></li>
-<li>bc(code). .htaccess
+<li>bc. .htaccess
 
 
 <p>â€” An important file for many reasons that are out of scope here, but not the least of which is handling URL formatting.</p></li>
-<li>bc(code). css.php
+<li>bc. css.php
 
 
 <p>â€” Handles the site's styles.</p></li>
-<li>bc(code). README.txt
+<li>bc. README.txt
 
 
 <p>â€” Provides brief instruction on installing and upgrading.</p></li>
-<li>bc(code). HISTORY.txt
+<li>bc. HISTORY.txt
 
 
 <p>â€” The installation changelog.</p></li>
@@ -117,12 +117,12 @@ If everything goes well up to this point, Textpattern will generate a snippet of
 
 The file you'll actually be looking for is
 
-bc(code). textpattern/config-dist.php
+bc. textpattern/config-dist.php
 
 
 . Open the file and paste in the snippet of generated code (overwriting all file contents). Then save it. Then rename the file to just
 
-bc(code). config.php
+bc. config.php
 
 
 .
@@ -141,7 +141,7 @@ Textpattern will let you know if all has gone well, and ask you delete the _setu
 
 Use your FTP client and browse to
 
-bc(code). /textpattern/setup
+bc. /textpattern/setup
 
 
 and delete the _setup_ folder (and all contents) from your server.

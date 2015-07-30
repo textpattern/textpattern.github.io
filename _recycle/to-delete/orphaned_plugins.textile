@@ -1,6 +1,6 @@
 \nA temporary list of all plugins that we can use to work out which are used, which are superceded and which are to remain here, listed as orphaned /adopted.
 
-bc(code). Plugin                           | Status / comments
+bc. Plugin                           | Status / comments
 ------------------------------------------------------------------------------------------
 aaa_dates                        |
 aam_if_host                      |

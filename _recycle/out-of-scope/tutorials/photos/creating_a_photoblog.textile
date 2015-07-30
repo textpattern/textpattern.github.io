@@ -115,7 +115,7 @@ h5(#formthumbtypearticle). Form: thumb; Type: article
 
 This links the article imageâ€™s thumbnail to the article.
 
-bc(code). <li>
+bc. <li>
     <txp:permlink>
         <txp:article_image thumbnail="1"/>
     </txp:permlink>
@@ -126,7 +126,7 @@ h4(#options). Options
 
 If you want the body of the article (photo) to display in the popup comment, just add
 
-bc(code). <txp:body/>
+bc. <txp:body/>
 
 
 to the popup_comments form.

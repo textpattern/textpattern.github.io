@@ -8,7 +8,7 @@ The main reason that RSS 2.0 is not supported is that the "specification":http:/
 
 For example: it's easy to understand what the RSS 'title' element should look like for an article entitled *My pet cat*:
 
-bc(code). <title>My pet cat</title>
+bc. <title>My pet cat</title>
 
 
 It's not clear at all what the 'title' element should look like for an article entitled *About the '&amp;amp;' entity*, or *XHTML tutorial: the &lt;br /&gt; tag*.

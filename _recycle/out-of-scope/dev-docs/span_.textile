@@ -8,14 +8,14 @@ h3(sectionedit2#general_information). General Information
 
 h4(#name). Name
 
-bc(code). span()
+bc. span()
 
 
 h4(#purpose). Purpose
 
 This function is part of the
 
-bc(code). [[textile]]
+bc. [[textile]]
 
 
 class.
@@ -35,7 +35,7 @@ h4(#information_retrieved_from). Information Retrieved From
 h3(sectionedit3#parameters). Parameters
 
 <ul>
-<li>bc(code). $text
+<li>bc. $text
 
 </li>
 </ul>

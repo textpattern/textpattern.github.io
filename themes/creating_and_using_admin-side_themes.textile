@@ -26,17 +26,17 @@ h5(#file_structure_and_name). File structure and name
 
 Every theme will be created within its own folder, which will then be uploaded to
 
-bc(code). ../textpattern/theme/
+bc. ../textpattern/theme/
 
 
 . Thus, a theme named
 
-bc(code). foo_theme
+bc. foo_theme
 
 
 will be stored as
 
-bc(code). ../textpattern/theme/foo_theme/
+bc. ../textpattern/theme/foo_theme/
 
 
 .
@@ -47,7 +47,7 @@ Your folder and the principle .php file inside it must have a common but unique 
 
 For example:
 
-bc(code). foo_theme
+bc. foo_theme
        â”œ foo_theme.php
        â”œ css
            â”” bar.css
@@ -65,19 +65,19 @@ An admin theme will draw fractions of the admin-side user interface:
 
 <ul>
 <li><p>Entries in the HTML</p>
-bc(code). <head>
+bc. <head>
 
 
 <p>element:</p>
-bc(code). html_head()
+bc. html_head()
 
 </li>
 <li><p>Navigation menu and other header markup</p>
-bc(code). header()
+bc. header()
 
 </li>
 <li><p>Footer</p>
-bc(code). footer()
+bc. footer()
 
 </li>
 </ul>
@@ -86,26 +86,26 @@ bc(code). footer()
 
 For example, the DOM element having ID
 
-bc(code). <nowiki>messagepane</nowiki>
+bc. <nowiki>messagepane</nowiki>
 
 
 is important for providing system feedback messages. If you removed it from your custom
 
-bc(code). header()
+bc. header()
 
 
 function, code that relies on it would stop working, and users would not get such messages.
 
 If you must rename elements as it is integral to your theme, consider leaving the existing items intact, adding your own and then setting the originals to
 
-bc(code). display:none
+bc. display:none
 
 
 via CSS.
 
 Optionally, a theme may contain administrative data in its
 
-bc(code). manifest()
+bc. manifest()
 
 
 method. Current items are indicated in Table 1.
@@ -124,7 +124,7 @@ version
 
 Some version information that increments as the theme is revised. No versioning convention is enforced. Note that the built-in themes use a programmatic way of displaying the version based on the
 
-bc(code). $prefs
+bc. $prefs
 
 
 array. This keeps it in step with Textpattern but *it is not recommended to do this for your own themes*: you should use an actual numeric version number instead.
@@ -140,10 +140,10 @@ A hyperlink to some documentation about the theme.
 For code examples, see the code in your files at:
 
 <ul>
-<li>bc(code). ../textpattern/lib/txplib_theme.php
+<li>bc. ../textpattern/lib/txplib_theme.php
 
 </li>
-<li>bc(code). ../textpattern/theme/classic/classic.php
+<li>bc. ../textpattern/theme/classic/classic.php
 
 </li>
 </ul>
@@ -160,17 +160,17 @@ For example, the *Remora* admin theme makes use of this technique by extending f
 
 Inheritance kicks off by including one line into the theme's .php file:
 
-bc(code). theme::based_on('classic');
+bc. theme::based_on('classic');
 
 
 Note in this example it's extending from the *Classic* theme. But if you wanted to extend from the *Hive* theme, then just change
 
-bc(code). 'classic'
+bc. 'classic'
 
 
 with
 
-bc(code). 'hive'
+bc. 'hive'
 
 
 .

@@ -8,7 +8,7 @@ h5(#option_1static_page_templates). Option 1: Static page templates
 
 Static pages are composed by means of one static page template _per page_ which contains all necessary HTML and
 
-bc(code). <[[txp:article_custom_:]]>
+bc. <[[txp:article_custom_:]]>
 
 
 tags to render the desired layout and include the desired articles.
@@ -24,20 +24,20 @@ Articles flagged as “sticky” differ from regular articles in the following a
 
 <ol>
 <li><p>They will not show up in a regular article or article_custom list. Use</p>
-bc(code). <[[txp:article_:|txp:article status="sticky" /]]>
+bc. <[[txp:article_:|txp:article status="sticky" /]]>
 
 
 <p>(or</p>
-bc(code). <[[txp:article_custom_:]]>
+bc. <[[txp:article_custom_:]]>
 
 
 <p>) to display.</p></li>
 <li><p>They will not show up on lists produced by</p>
-bc(code). <[[txp:recent_articles_:]]>
+bc. <[[txp:recent_articles_:]]>
 
 
 <p>,</p>
-bc(code). <[[txp:related_articles_:]]>
+bc. <[[txp:related_articles_:]]>
 
 
 <p>, or any similar tag.</p></li>
@@ -49,27 +49,27 @@ Sticky articles therefore explicitly support the semantics of static pages.
 <ul>
 <li>Pro: The whole page content is solely derived from your articles, their attributes and their relation to sections. You could use _one_ page template for both dynamic, intermediate and static pages.</li>
 <li><p>Con: The order of articles on the page is not determined by markup sequence, but by a sort criterion based on any of the article's attributes. Anyway, you can choose any attribute (default is</p>
-bc(code). Posted
+bc. Posted
 
 
 <p>, other possible choices include</p>
-bc(code). id
+bc. id
 
 
 <p>or a</p>
-bc(code). custom_x
+bc. custom_x
 
 
 <p>field) and any sorting direction (</p>
-bc(code). asc
+bc. asc
 
 
 <p>,</p>
-bc(code). desc
+bc. desc
 
 
 <p>, or even</p>
-bc(code). rand()
+bc. rand()
 
 
 <p>).</p></li>
@@ -81,17 +81,17 @@ What follows are instructions, and additional examples for an “about” page.
 
 <ol>
 <li><p>Create a section for your static content (</p>
-bc(code). Admin panel > presentation > sections
+bc. Admin panel > presentation > sections
 
 
 <p>). For an “about” section, create a section named “about”. In the settings for this section, make sure the option “On front page?” is set to *no*.</p></li>
 <li><p>Create your static articles (</p>
-bc(code). Admin panel > content > write
+bc. Admin panel > content > write
 
 
 <p>). If you're making the “about” page, assign your articles to the “about” section. Before you save your article, make sure you have Comments turned off and have assigned the article to your static section.</p></li>
 <li><p>Create a new form for your static articles (</p>
-bc(code). Admin panel > presentation > forms
+bc. Admin panel > presentation > forms
 
 
 <p>). You can do whatever you'd like in the form to make it display what you wish, but for the purposes of this example we will use &lt;"title_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:title:start&gt; and &lt;"body_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:body:start&gt;.</p></li>
@@ -99,11 +99,11 @@ bc(code). Admin panel > presentation > forms
 <li>Choose articles (Option 1)
 <ol>
 <li><p>Find each article's id# (</p>
-bc(code). Admin panel > content > articles
+bc. Admin panel > content > articles
 
 
 <p>). Each article you write in Textpattern is assigned an *id* number. If you go to your article list, and hover your mouse on one of the article titles, you will see the *id* number for that article in the status bar of your browser (</p>
-bc(code). ...mydomain.com/textpattern/index.php?event=article&step=edit&ID=3
+bc. ...mydomain.com/textpattern/index.php?event=article&step=edit&ID=3
 
 
 <p>). Make a note of each article's *ID* number. In our example, the ID number is 3.</p></li>
@@ -147,7 +147,7 @@ belonging to that section --&gt;
 &lt;/txp:if_article_list&gt;
 </pre>
 
-bc(code). <!-- an article from another section -->
+bc. <!-- an article from another section -->
 <txp:article_custom id="1" form="static" />
 
 

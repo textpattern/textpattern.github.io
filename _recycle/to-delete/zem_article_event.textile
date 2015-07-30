@@ -4,7 +4,7 @@ h4(#classification). Classification
 
 The
 
-bc(code). zem_article_event
+bc. zem_article_event
 
 
 tag can be used as a "Single_Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag or a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag. It will take a form attribute as a "Single_Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#single_tag as well as other attributes. When used as a "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag the contained statements are executed recursively as the "Container Tag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#container_tag's form.
@@ -13,7 +13,7 @@ h4(#syntax). Syntax
 
 The _zem_article_event_ tag has the following syntactic structure...
 
-bc(code). <txp:zem_article_event />
+bc. <txp:zem_article_event />
 
 
 h4(#attributes). Attributes
@@ -25,7 +25,7 @@ Tag will accept the following attributes (note: attributes are *case sensitive*)
  Independent wraptag for label for the top of the list. Default is empty. *&lt;code&gt;*limit=“*_integer_*“*&lt;/code&gt;*
  Maximum number of listed events. Default is
 
-bc(code). empty
+bc. empty
 
 
 . *&lt;code&gt;*break=“*_tag text_*“*&lt;/code&gt;*
@@ -34,13 +34,13 @@ bc(code). empty
  HTML tag to be used as the wraptag, without brackets. Default is empty. *&lt;code&gt;*class=“*_class name_*“*&lt;/code&gt;*
  CSS class attribute, default is
 
-bc(code). **zem_article_event**
+bc. **zem_article_event**
 
 
 . *&lt;code&gt;*form=“*_Form Name_*“*&lt;/code&gt;*
  Form to be used. Default is
 
-bc(code). **zem_event_display**
+bc. **zem_event_display**
 
 
 .
@@ -49,7 +49,7 @@ h4(#examples). Examples
 
 h5(#example_1zem_event_display_form_default). Example 1: zem_event_display form (default)
 
-bc(code). <txp:zem_event_permlink wraptag="" >
+bc. <txp:zem_event_permlink wraptag="" >
   <txp:zem_event_name label="Event" wraptag="" />
 </txp:zem_event_permlink>
 <txp:zem_event_date label="Date" wraptag="" />

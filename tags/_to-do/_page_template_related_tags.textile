@@ -16,12 +16,12 @@ h4(#header_related_tags). Header Related Tags
 
 <ul>
 <li><p>Style Tag (</p>
-bc(code). <[[txp:css_:]]>
+bc. <[[txp:css_:]]>
 
 
 <p>):</p></li>
 <li><p>Page Title (</p>
-bc(code). <[[txp:page_title_:]]>
+bc. <[[txp:page_title_:]]>
 
 
 <p>):</p></li>
@@ -32,10 +32,10 @@ h4(#main_content_area_related_tags). Main Content Area Related Tags
 <ul>
 <li>Article Related Tags
 <ul>
-<li>bc(code). <[[txp:article_:]]>
+<li>bc. <[[txp:article_:]]>
 
 </li>
-<li>bc(code). <[[txp:article_custom_:]]>
+<li>bc. <[[txp:article_custom_:]]>
 
 </li>
 </ul>
@@ -44,19 +44,19 @@ h4(#main_content_area_related_tags). Main Content Area Related Tags
 <ul>
 <li>Comments Display
 <ul>
-<li>bc(code). <[[txp:comment_name_:]]>
+<li>bc. <[[txp:comment_name_:]]>
 
 </li>
-<li>bc(code). <[[txp:comment_permlink]]>###</[[txp:comment_permlink]]>
+<li>bc. <[[txp:comment_permlink]]>###</[[txp:comment_permlink]]>
 
 </li>
-<li>bc(code). <[[txp:comment_time_:]]>
+<li>bc. <[[txp:comment_time_:]]>
 
 </li>
-<li>bc(code). <[[txp:comments_count_:]]>
+<li>bc. <[[txp:comments_count_:]]>
 
 </li>
-<li>bc(code). <[[txp:comments_invite_:]]>
+<li>bc. <[[txp:comments_invite_:]]>
 
 </li>
 </ul>
@@ -68,28 +68,28 @@ h4(#main_content_area_related_tags). Main Content Area Related Tags
 <ul>
 <li>Comment Input Form
 <ul>
-<li>bc(code). <[[txp:comment_name_input_:]]>
+<li>bc. <[[txp:comment_name_input_:]]>
 
 </li>
-<li>bc(code). <[[txp:comment_remember_:]]>
+<li>bc. <[[txp:comment_remember_:]]>
 
 </li>
-<li>bc(code). <[[txp:comment_email_input_:]]>
+<li>bc. <[[txp:comment_email_input_:]]>
 
 </li>
-<li>bc(code). <[[txp:comment_web_input_:]]>
+<li>bc. <[[txp:comment_web_input_:]]>
 
 </li>
-<li>bc(code). <[[txp:comment_message_input_:]]>
+<li>bc. <[[txp:comment_message_input_:]]>
 
 </li>
-<li>bc(code). <[[txp:comments_help_:]]>
+<li>bc. <[[txp:comments_help_:]]>
 
 </li>
-<li>bc(code). <[[txp:comment_preview_:]]>
+<li>bc. <[[txp:comment_preview_:]]>
 
 </li>
-<li>bc(code). <[[txp:comment_submit_:]]>
+<li>bc. <[[txp:comment_submit_:]]>
 
 </li>
 </ul>
@@ -101,20 +101,20 @@ h4(#column_related_tags). Column Related Tags
 <ul>
 <li>Recent Content Related Tags
 <ul>
-<li>bc(code). <[[txp:recent_articles_:]]>
+<li>bc. <[[txp:recent_articles_:]]>
 
 </li>
-<li>bc(code). <[[txp:recent_comments_:]]>
+<li>bc. <[[txp:recent_comments_:]]>
 
 </li>
 </ul>
 </li>
 <li>File Download Tags
 <ul>
-<li>bc(code). <[[txp:file_download_:]]>
+<li>bc. <[[txp:file_download_:]]>
 
 </li>
-<li>bc(code). <[[txp:file_download_list_:]]>
+<li>bc. <[[txp:file_download_list_:]]>
 
 </li>
 </ul>
@@ -126,16 +126,16 @@ h4(#navigation_related_tags). Navigation Related Tags
 <ul>
 <li>Article Navigation Tags
 <ul>
-<li>bc(code). <[[txp:link_to_previous]]> | <[[txp:link_to_next]]>
+<li>bc. <[[txp:link_to_previous]]> | <[[txp:link_to_next]]>
 
 </li>
-<li>bc(code). <[[txp:older]]> | <[[txp:newer]]>
+<li>bc. <[[txp:older]]> | <[[txp:newer]]>
 
 </li>
-<li>bc(code). <[[txp:prev_title_:]]> | <[[txp:next_title_:]]>
+<li>bc. <[[txp:prev_title_:]]> | <[[txp:next_title_:]]>
 
 </li>
-<li>bc(code). <[[txp:related_articles_:]]>
+<li>bc. <[[txp:related_articles_:]]>
 
 </li>
 </ul>
@@ -145,16 +145,16 @@ h4(#navigation_related_tags). Navigation Related Tags
 <ul>
 <li>Site Navigation Tags
 <ul>
-<li>bc(code). <[[txp:link_to_home]]>
+<li>bc. <[[txp:link_to_home]]>
 
 </li>
-<li>bc(code). <[[txp:popup_:]]>
+<li>bc. <[[txp:popup_:]]>
 
 </li>
-<li>bc(code). <[[txp:breadcrumb_:]]>
+<li>bc. <[[txp:breadcrumb_:]]>
 
 </li>
-<li>bc(code). <[[txp:search_input_:]]>
+<li>bc. <[[txp:search_input_:]]>
 
 </li>
 </ul>
@@ -166,7 +166,7 @@ h4(#link_related_tags). Link Related Tags
 <ul>
 <li>Link Tags
 <ul>
-<li>bc(code). <[[txp:linklist_:]]>
+<li>bc. <[[txp:linklist_:]]>
 
 </li>
 </ul>
@@ -176,10 +176,10 @@ h4(#link_related_tags). Link Related Tags
 <ul>
 <li>Feed Tags
 <ul>
-<li>bc(code). <[[txp:feed_link_:]]>
+<li>bc. <[[txp:feed_link_:]]>
 
 </li>
-<li>bc(code). <[[txp:link_feed_link_:]]>
+<li>bc. <[[txp:link_feed_link_:]]>
 
 </li>
 </ul>

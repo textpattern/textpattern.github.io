@@ -6,19 +6,19 @@ h3(sectionedit1#the_process). The Process
 
 Insert the following markup in your archive page template. This creates a dummy unordered list at the beginning of the list, but it wonâ€™t break your validation, if you care about that. Otherwise, you could just omit the dummy list that I have shown here.
 
-bc(code). <ul style="display: none;">
+bc. <ul style="display: none;">
 <li style="display: none;"></li>
 <txp:article_custom limit=99999 form="monthly_article" section="article" /> </ul>
 
 
 Create an article form named:
 
-bc(code). monthly article
+bc. monthly article
 
 
 with the following markup:
 
-bc(code). <txp:if_different>
+bc. <txp:if_different>
 </ul>
 <h2><txp:posted format="%Y" /></h2>
 </txp:if_different>

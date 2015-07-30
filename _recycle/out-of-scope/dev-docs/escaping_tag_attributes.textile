@@ -8,10 +8,10 @@ Most TXP tags allow you to specify attributes as key/value pairs to override def
 
 Examples:
 
-bc(code). <txp:tag key="value" />
+bc. <txp:tag key="value" />
 
 
-bc(code). <txp:category type="image" title="1" />
+bc. <txp:category type="image" title="1" />
 
 
 Usage of attributes in TXP tags is similar to attributes in XHTML.
@@ -26,17 +26,17 @@ h3(sectionedit1#attribute_value_escaping). Attribute value escaping
 
 Almost any character can be used in an attribute value. Unlike in XHTML, there is no need for using escape codes for characters like
 
-bc(code). >
+bc. >
 
 
 ,
 
-bc(code). <
+bc. <
 
 
 and
 
-bc(code). &
+bc. &
 
 
 . In fact, attribute values should contain no XHTML escape codes at all, because the TXP tag itself should take care of proper escaping.
@@ -49,38 +49,38 @@ Suppose you wanted to use this as an attribute value: *reward for “good” beh
 
 *incorrect*:
 
-bc(code). <txp:tag key="reward for "good" behaviour" />
+bc. <txp:tag key="reward for "good" behaviour" />
 
 
 For a human, it's easy to understand how this was intended, but for Textpattern the attribute value ends at the double quote before 'good'. The remainder of the attribute value makes it an incorrectly formatted tag (causing to show up as-is in the resulting HTML code).
 
 If single quotes didn't have special meaning, one would solve this by using single quotes to delimit the attribute value:
 
-bc(code). <txp:tag key='reward for "good" behaviour' />
+bc. <txp:tag key='reward for "good" behaviour' />
 
 
 While this works as intended, it doesn't account for attribute values containing both single and double quotes.
 
 Since TXP 4.0.7, duplicate delimiter characters used as part of an attribute value are interpreted as a literal character instead of delimiters. A few examples:
 
-bc(code). <txp:tag key="reward for ""good"" behaviour" />
+bc. <txp:tag key="reward for ""good"" behaviour" />
 
 
-bc(code). <nowiki><txp:tag key='reward for ''good'' behaviour' /></nowiki>
+bc. <nowiki><txp:tag key='reward for ''good'' behaviour' /></nowiki>
 
 
 If you look closely at the second example, you'll see that in the attribute value, there are two single quotes on each side of the word 'good', not a double quote.
 
 One last example that shows what's possible:
 
-bc(code). <txp:tag key="let's use ""double"" quotes & <html> here" />
+bc. <txp:tag key="let's use ""double"" quotes & <html> here" />
 
 
 The only character that needs escaping is the chosen attribute delimiter itself where it occurs inside the attribute value (double quote in this instance).
 
 NOTE: In TXP 4.0.6 and older, delimiter escaping did not exist and the tag parser also failed to handle attribute values containing a
 
-bc(code). >
+bc. >
 
 
 .
@@ -97,20 +97,20 @@ Double quoted attribute values are not parsed, so if your attribute value contai
 
 What does this all mean? Well, letâ€™s give a few examples, starting with attribute values that are not parsed:
 
-bc(code). <txp:tag key="plain text" />
+bc. <txp:tag key="plain text" />
 
 
-bc(code). <txp:tag key="literal <txp:tag />" />
+bc. <txp:tag key="literal <txp:tag />" />
 
 
 In the above examples, the attribute are treated as plain text; the literal TXP tag is not parsed. If you wanted the TXP tag in the attribute value to be parsed, you should write it like this:
 
-bc(code). <txp:tag key='parsed <txp:tag />' />
+bc. <txp:tag key='parsed <txp:tag />' />
 
 
 Letâ€™s take a real-world example, using an article that has a custom field named â€˜my_emailâ€™ containing an email address me&#64;example.com and a custom field â€˜my_nameâ€™ containing the name 'Dean Allen':
 
-bc(code). <txp:email
+bc. <txp:email
   email='<txp:custom_field name="my_email" />'
   linktext="Send email"
   title='Send email to <txp:custom_field name="my_name" />'
@@ -119,7 +119,7 @@ bc(code). <txp:email
 
 Because the single quoted attribute values are parsed, after parsing the attribute values, it looks like this:
 
-bc(code). <txp:email 
+bc. <txp:email 
   email="me@example.com" 
   linktext="Send email"
   title="Send email to Dean Allen"

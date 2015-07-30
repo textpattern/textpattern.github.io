@@ -14,12 +14,12 @@ From the top:
 <li>Get a wiki account, if you don't already have one. .</li>
 <li>Come back to this page and add your project page link to the *Active projects* section below.</li>
 <li><p>Follow the link to edit the page and immediately add this snip of code at very top of page:</p>
-bc(code). <nowiki>{{Projects}}</nowiki>
+bc. <nowiki>{{Projects}}</nowiki>
 
 
 <p>, which adds the project flag.</p></li>
 <li><p>And add this category tag at very bottom of page:</p>
-bc(code). <nowiki>[[category:Projects]]</nowiki>
+bc. <nowiki>[[category:Projects]]</nowiki>
 
 
 <p>, which puts the page into the Projects category so it's easily found against other real user documentation pages. (Important for wiki maintenance.)</p></li>

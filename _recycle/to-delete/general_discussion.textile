@@ -6,7 +6,7 @@ h3(sectionedit1#rc3_and_v_10_issues). RC3 and V 1.0 Issues
 
  - Rick 17:08, 31 Mar 2005 (GMT) I noticed an entry in Appendix C about “listform” in RC3. My most recent copy of RC3 has this code incorporated in “doArticles”:
 
-bc(code). //the listform
+bc. //the listform
 $form = gAtt($atts, 'listform', $form);
 
 

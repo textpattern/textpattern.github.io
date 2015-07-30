@@ -6,19 +6,19 @@ h4(#important). Important
 
 <ul>
 <li><p>Any line beginning with</p>
-bc(code). $
+bc. $
 
 
 <p>represents a shell prompt (/Applications/Utilities/Terminal.app). Type everything after the</p>
-bc(code). $ 
+bc. $ 
 
 
 <p>.</p></li>
-<li>bc(code). ~/
+<li>bc. ~/
 
 
 <p>=</p>
-bc(code). /Users/yourShortName
+bc. /Users/yourShortName
 
 </li>
 </ul>
@@ -30,11 +30,11 @@ h4(#mysql). MySQL
 <li>Mount the image</li>
 <li>Install all the pkgs and the MySQL.prefPane</li>
 <li><p>Add the following to</p>
-bc(code). ~/.bash_profile
+bc. ~/.bash_profile
 
 
 <p>(create it if it doesn't exist)</p>
-bc(code). export PATH="/usr/local/mysql/bin":$PATH
+bc. export PATH="/usr/local/mysql/bin":$PATH
 
 </li>
 </ol>
@@ -49,7 +49,7 @@ h4(#apache). Apache
 
 To setup the built-in web server, go to System Preferences &gt; Sharing and check “Enable Web Sharing.” You can view the default Apache page at
 
-bc(code). http://localhost/~yourShortName/
+bc. http://localhost/~yourShortName/
 
 
 .
@@ -58,12 +58,12 @@ h5(#enable_clean_urls). Enable clean URLs
 
 Use the following for
 
-bc(code). /etc/apache2/users/yourShortName.conf
+bc. /etc/apache2/users/yourShortName.conf
 
 
 :
 
-bc(code). # http://localhost = http://localhost/~yourShortName
+bc. # http://localhost = http://localhost/~yourShortName
 DocumentRoot /Users/yourShortName/Sites
 <Directory "/Users/yourShortName/Sites/">
     Options Indexes MultiViews FollowSymLinks
@@ -75,29 +75,29 @@ DocumentRoot /Users/yourShortName/Sites
 
 Restart Apache:
 
-bc(code). $ sudo apachectl restart
+bc. $ sudo apachectl restart
 
 
 h5(#virtual_hosts). Virtual hosts
 
 <ol>
 <li><p>Uncomment (remove the hash) this line in</p>
-bc(code). /etc/apache2/httpd.conf
+bc. /etc/apache2/httpd.conf
 
 
-bc(code). #Include /private/etc/apache2/extra/httpd-vhosts.conf
+bc. #Include /private/etc/apache2/extra/httpd-vhosts.conf
 
 </li>
 <li><p>Append “txp.dev” to the 127.0.0.1 line in</p>
-bc(code). /etc/hosts
+bc. /etc/hosts
 
 
 <p>:</p>
-bc(code). 127.0.0.1       localhost txp.dev
+bc. 127.0.0.1       localhost txp.dev
 
 </li>
 <li><p>Use the following for</p>
-bc(code). /etc/apache2/extra/httpd-vhosts.conf
+bc. /etc/apache2/extra/httpd-vhosts.conf
 
 </li>
 </ol>

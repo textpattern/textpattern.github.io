@@ -10,7 +10,7 @@ h3(sectionedit2#general_information). General Information
 
 h4(#name). Name
 
-bc(code). gtxt()
+bc. gtxt()
 
 
 h4(#purpose). Purpose
@@ -21,23 +21,23 @@ h3(sectionedit3#examples). Examples
 
 Following:
 
-bc(code). gTxt('view')
+bc. gTxt('view')
 
 
 Outputs:
 
 English:
 
-bc(code). View
+bc. View
 
 
 Finnish:
 
-bc(code). NÃ¤ytÃ¤
+bc. NÃ¤ytÃ¤
 
 
 Nederland:
 
-bc(code). bekijken
+bc. bekijken
 
 

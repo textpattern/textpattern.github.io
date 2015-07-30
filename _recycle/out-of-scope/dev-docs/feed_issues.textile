@@ -14,16 +14,16 @@ Some other avenues of exploration:
  Depending on your browser, this is the correct behaviour. More likely than not, your browser is not capable of displaying XML. As the feeds are sent with the correct MIME type, your browser offers to download the file, rather than just displaying the raw content. This is the correct behavior, and your feed should work in a proper feed aggregator. *If you want to set up feed autodetection*
  You'll need to add tags like the following to the
 
-bc(code). <head>
+bc. <head>
 
 
 of your main page:
 
-bc(code). <txp:feed_link format="link" flavor="rss" />
+bc. <txp:feed_link format="link" flavor="rss" />
 
 
 or
 
-bc(code). <txp:feed_link format="link" flavor="atom" />
+bc. <txp:feed_link format="link" flavor="atom" />
 
 

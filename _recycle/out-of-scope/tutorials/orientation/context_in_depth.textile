@@ -33,12 +33,12 @@ _Or, a not-too-technical glimpse at Txp's inner workings_
 
 A traditional, “static”, website consists mainly of HTML files on a web server, each file matching a URL. If a web browser requests
 
-bc(code). example.com/about/staff.html
+bc. example.com/about/staff.html
 
 
 , the
 
-bc(code). example.com
+bc. example.com
 
 
 server looks for a file named “staff.html” inside a top-level directory named “about”. If that file exists, the server simply sends its contents back to the web browser. If not, it sends the familiar “File Not Found” error message.
@@ -70,19 +70,19 @@ h4(#implied_context). Implied context
 
 Messy mode isn't a popular URL scheme, partly because it isn't very user-friendly. Note the example above:
 
-bc(code). ?id=131
+bc. ?id=131
 
 
 tells almost nothing to a user, even a user familiar with "URL query strings":http://en.wikipedia.org/wiki/Query_string. But it's enough to give Txp the full global context. This isn't because
 
-bc(code). ?id=131
+bc. ?id=131
 
 
 is some kind of secret code (it means just what it seems  -  the page has the ID value 131), it's because some aspects of global context are inferred. I'll call such elements the _implied context_.
 
 To Txp, ID means article ID. So
 
-bc(code). ?id=131
+bc. ?id=131
 
 
 means that article #131 is part of the page's context. We can say the page has _article context_. It also has _section context_. Every Txp page must have section context; among other things, this determines which template is used. The messy URL doesn't state the section, so Txp infers the section context from the article ID  -  every Txp article is assigned to a section. (In this case it is the “txp” section, as you can also see by looking at the page's normal URL.)
@@ -107,27 +107,27 @@ Txp version 4.3.0 introduced new context-related behavior, as my "Txp gallery de
 
 Note: the home page for site above is "$":http://ipsedixit.net/txp_gallery/. I.e., “txp_gallery” is not part of the context.
 
-bc(code). context=image
+bc. context=image
 
 
 is misleading. The example page does not have _image context_, i.e., the context of a particular image. It has _category context_ (from the
 
-bc(code). c
+bc. c
 
 
 in the query string), the context of a particular category (“sleep”, in this case).
 
-bc(code). context=image
+bc. context=image
 
 
 refers to the category _type_, which would have been a better name for this parameter. (Indeed,
 
-bc(code). type
+bc. type
 
 
 is the attribute name that sets this in
 
-bc(code). category_list
+bc. category_list
 
 
 .) We could say the page has _image-category context_.

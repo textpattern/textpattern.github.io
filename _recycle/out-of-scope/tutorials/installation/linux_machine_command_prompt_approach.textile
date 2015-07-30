@@ -8,6 +8,6 @@ h3(sectionedit2#the_process). The Process
 
 Use _svn_, the "subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=subversion command line client:
 
-bc(code). svn co http://textpattern.googlecode.com/svn/development/4.x /path/to/your/TxP/directory/
+bc. svn co http://textpattern.googlecode.com/svn/development/4.x /path/to/your/TxP/directory/
 
 

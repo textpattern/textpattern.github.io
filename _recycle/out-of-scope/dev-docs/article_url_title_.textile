@@ -10,14 +10,14 @@ h3(sectionedit2#general_information). General Information
 
 h4(#name). Name
 
-bc(code). article_url_title()
+bc. article_url_title()
 
 
 h4(#purpose). Purpose
 
 This function is used by the
 
-bc(code). <txp:article_url_title />
+bc. <txp:article_url_title />
 
 
 tag.

@@ -110,33 +110,33 @@ The tag builder has several options:
 
 *Id XHTML attribute*: Example:
 
-bc(code). gallery1
+bc. gallery1
 
 
 . The ID you'd like to assign to the image. In HTML / XHTML this is rendered as id=“my_id” inside the img tag.
 
 *CSS class*: Example:
 
-bc(code). gallery
+bc. gallery
 
 
 . The CSS class to assign to the image tag when it is rendered in HTML / XHTML.
 
 *Inline style (CSS)*: Example:
 
-bc(code). border: 1px solid black
+bc. border: 1px solid black
 
 
 . The inline CSS style(s) (separated by semicolons) you'd like to assign to the image. These styles are placed inside a style tag in the final HTML / XHTML.
 
 *Wrap tag*: Example
 
-bc(code). p
+bc. p
 
 
 . Tells Textpattern to surround the image with this HTML / XHTML tag when rendered. Output would be
 
-bc(code). <p><img src="etc" /></p>
+bc. <p><img src="etc" /></p>
 
 
 ...in this case.

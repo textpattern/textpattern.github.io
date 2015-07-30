@@ -22,14 +22,14 @@ h4(#step_4). Step 4
 
 The fourth step is to write the articles for the Portfolio section in the admin area..._content &gt; write_. The article body field may have an
 
-bc(code). <img src="" />
+bc. <img src="" />
 
 
 tag pointing to the full-size version of the image (i.e., _../images/big_picture1.jpg_), a bit of text describing the image, or a combination of both. The contents of the article body field is what will display when the thumbnail is clicked.
 
 In the excerpt field, place the
 
-bc(code). <img src="" />
+bc. <img src="" />
 
 
 tag for the thumbnail image (i.e., _../images/small_picture1.gif_).
@@ -40,7 +40,7 @@ h4(#step_5). Step 5
 
 The fifth step is to create the form that will display the thumbnail menu. What we want to do is display only the excerpts of each article, because the excerpts are what contain the thumbnails. In the admin area, go to _presentation &gt; forms_ and click on the “create new form” link (upper right corner). We'll name the form “excerpt_portfolio” (form name) and make it a “list” (form type). In the form contents field, paste:
 
-bc(code). <txp:permlink><txp:excerpt />
+bc. <txp:permlink><txp:excerpt />
 </txp:permlink>
 
 
@@ -52,7 +52,7 @@ Step six takes us back to the Portfolio page template, _presentation &gt; pages_
 
 You can now insert the thumbnail menu where you wish it to display using the following code:
 
-bc(code). <txp:if_article_list>
+bc. <txp:if_article_list>
 <txp:article_custom listform="excerpt_portfolio" />
 </txp:if_article_list>
 
@@ -63,7 +63,7 @@ h4(#step_7). Step 7
 
 Now we will set the format for displaying the indivivual articles  -  the articles that will display when the thumbnails are clicked. Paste this code into your page template:
 
-bc(code). <txp:if_individual_article>
+bc. <txp:if_individual_article>
 <txp:article limit="1" form="whatever" />
 </txp:if_individual_article>
 

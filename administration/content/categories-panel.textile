@@ -40,14 +40,14 @@ The *category name* is the one used in URLs and other technical purposes. It con
 
 The *category title* is your original title with special characters, spaces and all. This is the title that *will appear on your pages* if you use tags such as
 
-bc(code). <txp:category1 />, <txp:category2 /> or <txp:category_list />
+bc. <txp:category1 />, <txp:category2 /> or <txp:category_list />
 
 
 .
 
 These fields exist for all four kinds of content (articles, links, images, files) and exactly as just described for the article categories. However, the tags mentioned above (
 
-bc(code). <txp:category1 />, <txp:category2 /> or <txp:category_list />
+bc. <txp:category1 />, <txp:category2 /> or <txp:category_list />
 
 
 ) are only for article categories. For links, images and files there are other tags or tag attributes. See the tag section for details.

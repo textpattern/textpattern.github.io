@@ -15,7 +15,7 @@ h3(sectionedit3#return_values). Return Values
 
 Returns an associative array, or
 
-bc(code). FALSE
+bc. FALSE
 
 
 on failure.
@@ -24,7 +24,7 @@ h3(sectionedit4#changelog). Changelog
 
 h3(sectionedit5#examples). Examples
 
-bc(code). $result = safe_rows_start('name, RealName', 'txp_users', 1);
+bc. $result = safe_rows_start('name, RealName', 'txp_users', 1);
 while ($r = nextRow($result)) {
     extract($r);
     $out[$name] = $RealName

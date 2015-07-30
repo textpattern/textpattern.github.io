@@ -18,7 +18,7 @@ h4(#title). Title
 
 This field is simply where you type the _title_ (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e., HTML or Textile, formatting will be added by an article form (see "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms). The Textpattern tag that is used to output the title of articles is
 
-bc(code). <txp:title />
+bc. <txp:title />
 
 
 (see "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title).
@@ -27,7 +27,7 @@ h4(#body). Body
 
 This large field is where the article is actually written (or pasted, if you prefer drafting your articles in another text editor). The _Article View_ (see below) works in combination with this field. The primary article tag that is used to output the body of articles is
 
-bc(code). <txp:body />
+bc. <txp:body />
 
 
 (see "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article).
@@ -38,7 +38,7 @@ This field is where you would add an excerpt, which is a brief bit of text about
 
 In Textpattern, the excerpt is not part of the article body but rather is a discrete content item managed separately; however, like the body, you can use Textile (or HTML) to format text in the excerpt. The tag used to output the article excerpt is
 
-bc(code). <txp:excerpt />
+bc. <txp:excerpt />
 
 
 (see "excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=excerpt).
@@ -118,7 +118,7 @@ There are two ways to assign an image to an article:
 <ul>
 <li>by ID (as it appears in the "Images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel panel; this only works for images managed through the Textpattern *Images* tab)</li>
 <li><p>by absolute url to the image, such as</p>
-bc(code). /images/imagefile.png
+bc. /images/imagefile.png
 
 </li>
 </ul>
@@ -183,7 +183,7 @@ h5(#sticky). Sticky
 
 A _sticky_ article is also considered 'live'; however, it won't show up with your other live articles in normal article flow (such as those output with
 
-bc(code). <txp:article />
+bc. <txp:article />
 
 
 ), nor will it appear in any article output lists you might have. The sole purpose of making an article sticky is to give it the status (or rather the appearance) of being static on a page. The sticky status is intended for things like “about” pages, articles that are pinned to the top of a page, or snippets of text that are displayed on pages outside the regular flow of articles.

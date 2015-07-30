@@ -8,34 +8,34 @@ A dynamic portable navigation creator. What's it do? Well...
 
 <ul>
 <li><p>Creates a primary</p>
-bc(code). div
+bc. div
 
 
 <p>(optionally).</p></li>
 <li><p>Inside the</p>
-bc(code). div
+bc. div
 
 
 <p>, a heading is added for the nav bar (optionally).</p></li>
 <li><p>Creates a</p>
-bc(code). ul
+bc. ul
 
 
 <p>to hold the nav bar.</p></li>
 <li><p>Goes through given urls and names of pages and dynmically adds them as</p>
-bc(code). li
+bc. li
 
 
 <p>'s</p></li>
-<li>bc(code). class="active"
+<li>bc. class="active"
 
 
 <p>is automatically added to the current page's</p>
-bc(code). a
+bc. a
 
 
 <p>tag (or optionally,</p>
-bc(code). li
+bc. li
 
 
 <p>tag).</p></li>
@@ -49,12 +49,12 @@ h3(sectionedit3#examples_of_use). Examples of Use
 
 The simplest form is this:
 
-bc(code). <txp:ako_nav name="home,about,contact" url="/,/about,/contact" />
+bc. <txp:ako_nav name="home,about,contact" url="/,/about,/contact" />
 
 
 it will produce something like this:
 
-bc(code). <div>
+bc. <div>
 <h2>Navigation</h2>
     <ul>
         <li><a href="/">home</a></li>

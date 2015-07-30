@@ -4,21 +4,21 @@ h1. Image list DEPRECATED [todo:pw]
 
 *Do not use this tag, it was renamed to "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images!*
 
-bc(code). <txp:image_list />
+bc. <txp:image_list />
 
 
 The "image_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_list tag is a _single_ or _container_ tag that Textpattern will use to gather a list of matching images uploaded via the TXP "images_panel_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel tab. Utilising the other image tags in the suite "image_info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info, "image_url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_url, "image_date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_date and "if_thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_thumbnail) you can display simple image galleries from this list.
 
 If used as a _container_ tag, it must be specified as an opening and closing pair of tags, like this:
 
-bc(code). <txp:image_list>
+bc. <txp:image_list>
 ...contained statements...
 </txp:image_list>
 
 
 This is equivalent to putting the contained statements into a form named “my_form” and using
 
-bc(code). <txp:image_list form="my_form" />
+bc. <txp:image_list form="my_form" />
 
 
 .
@@ -32,7 +32,7 @@ Tag will accept the following attributes (*case-sensitive*):
 *"id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#id=“integer”*
  Filter the images by this list of
 
-bc(code). id
+bc. id
 
 
 s assigned at upload. The IDs can be found on the "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images tab. Default: unset. *"name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#name=“image name”*
@@ -42,18 +42,18 @@ s assigned at upload. The IDs can be found on the "images":/home/www/zendstudio/
  Filter the image list so it only includes images uploaded by this list of author real names. The author names may be URL encoded (e.g. *realname=“John+Smith”*) and thus could be read from the current site.com/author/author+name URL. Note that this attribute may incur one extra query per name, so if it is possible to use the raw author instead it will be faster. Default: unset. *"extension":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#extension=“.extension”*
  Filter the images by this list of image extensions, including the leading dot. Example:
 
-bc(code). extension=".jpg, .png"
+bc. extension=".jpg, .png"
 
 
 Default: unset. *"thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#thumbnail=“boolean”*
  Filter the image list to only include images that have a thumbnail (
 
-bc(code). 1
+bc. 1
 
 
 ) or not (
 
-bc(code). 0
+bc. 0
 
 
 ). Default: unset (i.e. all images). *"label":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#label=“text”*
@@ -61,124 +61,124 @@ bc(code). 0
  HTML tag to be used to wrap the label, specified without brackets. Default: unset. *"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag text”*
  HTML tag to be used to wrap the
 
-bc(code). img
+bc. img
 
 
 tag, specified without brackets. Default: unset. *"html_id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#html_id=“id number”*
  The HTML
 
-bc(code). id
+bc. id
 
 
 attribute applied to the
 
-bc(code). wraptag
+bc. wraptag
 
 
 , if set, otherwise to the
 
-bc(code). img
+bc. img
 
 
 tag. Default: unset. *"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“class name”*
  CSS
 
-bc(code). class
+bc. class
 
 
 attribute applied to the
 
-bc(code). wraptag
+bc. wraptag
 
 
 , if set, otherwise to the
 
-bc(code). img
+bc. img
 
 
 tag. Default: unset. *"break":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#break=“tag text”*
  The (X)HTML tag (without brackets) or string to separate each image. Default: unset. *"limit":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#limit=“integer”*
  The number of images to display per page. Default:
 
-bc(code). 0
+bc. 0
 
 
 (unlimited). *"offset":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#offset=“integer”*
  The number of images to skip. Default:
 
-bc(code). 0
+bc. 0
 
 
 . *"pageby":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#pageby=“integer” (or* _“limit”_*)*
  The number of images to jump forward or back when an "older":/home/www/zendstudio/dokuwiki/bin/doku.php?id=older or "newer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=newer link is clicked. Without this attribute, pagination is not available; you will simply see *limit* images. You may specify
 
-bc(code). pageby="limit"
+bc. pageby="limit"
 
 
 to allow pagination to automatically follow the value of the
 
-bc(code). limit
+bc. limit
 
 
 attribute. NOTE: "newer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=newer and "older":/home/www/zendstudio/dokuwiki/bin/doku.php?id=older will paginate all content types at once. Default: unset. *"sort":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#sort=“sort value(s)”*
  How to sort the resulting image list. Specify an image attribute from the ones below and add either *asc* or *desc* to sort in ascending or descending order, respectively. Values:
 
-bc(code). id
+bc. id
 
 
 (image id#)
 
-bc(code). name
+bc. name
 
 
 (image name)
 
-bc(code). category
+bc. category
 
 
-bc(code). extension
+bc. extension
 
 
 (image extension)
 
-bc(code). author
+bc. author
 
 
-bc(code). alt
+bc. alt
 
 
-bc(code). caption
+bc. caption
 
 
-bc(code). date
+bc. date
 
 
-bc(code). w
+bc. w
 
 
 (image width)
 
-bc(code). h
+bc. h
 
 
 (image height)
 
-bc(code). thumb_w
+bc. thumb_w
 
 
 (image thumbnail width)
 
-bc(code). thumb_h
+bc. thumb_h
 
 
 (image thumbnail height)
 
-bc(code). rand()
+bc. rand()
 
 
 ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand) Default:
 
-bc(code). name asc
+bc. name asc
 
 
 *"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“form name”*
@@ -196,14 +196,14 @@ NB: THESE MAY NOT BE CORRECT ANY MORE DUE TO TAG CHANGES SINCE THE EXAMPLES WERE
 *&lt;code&gt;&lt;txp:image_list /&gt;&lt;/code&gt;*
  uses the current article image field as a list of image IDs. If the article image field is empty, it contains names/URLs, or the tag is used on an article list page, it returns no images. If, however, the tag is used on a category list page (e.g.
 
-bc(code). category/image/photos
+bc. category/image/photos
 
 
 ) then the *photos* category would be used *&lt;code&gt;&lt;txp:image_list auto_detect=”” /&gt;&lt;/code&gt;*
  displays all images in the database. *&lt;code&gt;&lt;txp:image_list id=“” /&gt;&lt;/code&gt; &lt;code&gt;&lt;txp:image_list name=“” /&gt;&lt;/code&gt; &lt;code&gt;&lt;txp:image_list category=“” /&gt;&lt;/code&gt;*
  no images displayed. This means that if you did some tag-in-tag magic such as :
 
-bc(code). category='<txp:custom_field name="my_cats" />'
+bc. category='<txp:custom_field name="my_cats" />'
 
 
 it will show no images if the custom field is empty. *&lt;code&gt;&lt;txp:image_list id=“2,3,6” /&gt;&lt;/code&gt;*
@@ -214,7 +214,7 @@ it will show no images if the custom field is empty. *&lt;code&gt;&lt;txp:image_
  all images in the named categories and any uncategorized images are displayed. *&lt;code&gt;&lt;txp:image_list category=“ ” /&gt;&lt;/code&gt;*
  just uncategorized images are displayed (note that
 
-bc(code). category=","
+bc. category=","
 
 
 also works, but a space looks better). *&lt;code&gt;&lt;txp:image_list author=“attenborough, morris” /&gt;&lt;/code&gt;*

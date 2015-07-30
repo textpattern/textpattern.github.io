@@ -3,46 +3,46 @@
 <ul>
 <li>Added 'select all', 'select none' and 'select range' widgetty buttons in list view for articles, links and comments</li>
 <li><p>Added</p>
-bc(code). <txp:breadcrumb />
+bc. <txp:breadcrumb />
 
 
 <p>tag. Will output CategoryOne &gt; CategoryTwo &gt; CategoryThree for nested categories, or Home &gt; section &gt; title breadcrumbs</p></li>
 <li><p>Added</p>
-bc(code). <txp:lang />
+bc. <txp:lang />
 
 
 <p>tag. Intended to be used on DOCTYPE declarations. (kusor)</p></li>
 <li>Added a function which will translate i18n characters to their ascii equivalents (Ã© → e, Ã¤ → a) for url titles; previously these were simply stripped or displayed as clipped unicode entities</li>
 <li><p>Added double conditional tag</p>
-bc(code). <txp:if_search>
+bc. <txp:if_search>
 
 
 <p>...</p>
-bc(code). <txp:else />
+bc. <txp:else />
 
 
 <p>...</p>
-bc(code). </txp:if_search>
+bc. </txp:if_search>
 
 
 <p>to allow you to customise search results template and main page, even if both share the same template (kusor)</p></li>
 <li><p>Added double conditional tags</p>
-bc(code). <txp:if_excerpt>
+bc. <txp:if_excerpt>
 
 
 <p>...</p>
-bc(code). <txp:else />
+bc. <txp:else />
 
 
 <p>...</p>
-bc(code). </txp:if_excerpt>
+bc. </txp:if_excerpt>
 
 
 <p>More like this to come... (kusor)</p></li>
 <li>Added Import tab to Admin. You can import data from Movable Type - both MySQL DB and import file - blogger, WordPress and B2. The import tool is still being developed, but is mature enough to import 2.5mb of data in 30 seconds. (kusor, zem)</li>
 <li>Added new admin → diagnostics tab, which should simplify a large percentage of installation problems (zem)</li>
 <li><p>Added proper</p>
-bc(code). <label>
+bc. <label>
 
 
 <p>tags to checkbox and radio form elements in various tabs to aid clickability and pleasantness</p></li>
@@ -65,14 +65,14 @@ bc(code). <label>
 <li>Fixed two problems in discuss_edit: first, when comments containing i18n characters were double-escaped in the admin textarea for editing a comment. Second, when an edited comment is saved, characters weren't re-encoded as HTML entities. (zem)</li>
 <li>Fixed txp:recent_comments output, which was failing to display commentator names as before</li>
 <li><p>Having comments presented as a numbered list (using</p>
-bc(code). 
+bc. 
 
 </li>
 </ul>
 
 and
 
-bc(code).       *  tags), the previous hard-coded default, can now be switched off via prefs. Note that switching this off will require you to edit the 'comments' form, wrapping the entire form in a block-level tag like <code>
+bc.       *  tags), the previous hard-coded default, can now be switched off via prefs. Note that switching this off will require you to edit the 'comments' form, wrapping the entire form in a block-level tag like <code>
         *  It's now easy, via the tag generator, to make displayed article categories, sections, and authors into links to a list of other articles with the same category, section or author
         *  Killed, after much long analysis, the the vapourware concept 'mentions'. Sorry, it was a gaping spam vulnerability waiting to happen. A 'trackback' plugin by kusor is in the works, for those that see a need.
         *  Lots of efficient code refactoring and simplification in txp_category.php, publish.php and many txp_event files (kusor)

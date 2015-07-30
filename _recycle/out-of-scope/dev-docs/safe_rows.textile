@@ -13,12 +13,12 @@ h3(sectionedit2#parameters). Parameters
  Textpattern table name, without any installation-specific prefix *where*
  MySQL
 
-bc(code). WHERE
+bc. WHERE
 
 
 statement, without the
 
-bc(code). WHERE
+bc. WHERE
 
 
 keyword *debug*
@@ -32,7 +32,7 @@ h3(sectionedit4#changelog). Changelog
 
 h3(sectionedit5#examples). Examples
 
-bc(code). $rs = safe_rows('DISTINCT AuthorID', 'textpattern', 1);
+bc. $rs = safe_rows('DISTINCT AuthorID', 'textpattern', 1);
 foreach ($rs as $r)
     $out[] = $r['AuthorID'];
 return $out;    // list of authors in the textpattern table
@@ -47,17 +47,17 @@ h3(sectionedit7#notes). Notes
 
 The _$where_ parameter is required, so you must set it to a positive value such as
 
-bc(code). TRUE
+bc. TRUE
 
 
 or
 
-bc(code). 1
+bc. 1
 
 
 when you don't need an actual
 
-bc(code). WHERE
+bc. WHERE
 
 
 clause.

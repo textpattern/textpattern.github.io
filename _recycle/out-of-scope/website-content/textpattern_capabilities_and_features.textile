@@ -38,7 +38,7 @@ Maintaining and displaying lists of links to other sites, or to other areas with
 
 The central link repository provides for an easy means of maintaining links and their properties like URL, title, and category which can thus be used in multiple scattered instances distributed across your site, allowing for separation of site content (the links) from page presentation (the
 
-bc(code). form
+bc. form
 
 
 of the tag used to display the link).

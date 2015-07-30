@@ -14,14 +14,14 @@ h3(sectionedit3#examples_of_use). Examples of Use
 
 The simplest form is this:
 
-bc(code). <txp:ako_youtube v="KOmIGUqLka0" />
+bc. <txp:ako_youtube v="KOmIGUqLka0" />
 
 
 Which will embed the video with the “v” url variable set to “KOmIGUqLka0” (That is, in this example, the music video to "Four to the Floor (Thin White Duke Remix)":http://youtube.com/watch?v=KOmIGUqLka0).
 
 *Begining with version 0.2*, you can now enclose text with this tag to create a link. For example,
 
-bc(code). <txp:ako_youtube v="KOmIGUqLka0" link="1">Four to the Floor (Thin White Duke Remix)</txp:ako_youtube>
+bc. <txp:ako_youtube v="KOmIGUqLka0" link="1">Four to the Floor (Thin White Duke Remix)</txp:ako_youtube>
 
 
 Which will create a link to the "YouTube":http://www.youtube.com page with this video on it using the enclosed text for the link text (in this case, that would be “Four to the Floor (Thin White Duke Remix)”). *Note* that for this plugin to work as a wrapping plugin, the “link” attribute needs to be set to “1”.

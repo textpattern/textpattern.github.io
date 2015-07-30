@@ -2,7 +2,7 @@
 
 <ul>
 <li><p>The phantom category 'root' should no longer appear when</p>
-bc(code). <txp:category_list />
+bc. <txp:category_list />
 
 
 <p>is used.</p></li>

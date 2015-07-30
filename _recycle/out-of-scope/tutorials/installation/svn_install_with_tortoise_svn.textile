@@ -9,7 +9,7 @@ h4(#using_tortoisesvn_to_download_the_source_files). Using TortoiseSVN to Downlo
 <li>Create a local folder with a catchy, but meaningful, name (such as *TxP_via_Tortoise*). The folder you create here is called your “source” folder, and you should keep it because whenever you update Textpattern, this is the folder you first update via TortoiseSVN.</li>
 <li>Right click on the new folder and you will see some new options for TortoiseSVN.</li>
 <li><p>Select 'Checkout' and use the following path for the 'URL of Repository':</p>
-bc(code). <nowiki>http://</nowiki>
+bc. <nowiki>http://</nowiki>
 
 </li>
 </ol>
@@ -22,7 +22,7 @@ Whether you now intend to use Textpattern on a local Web server or transfer the 
 <li>Right click on the new folder you created that now has the Textpattern source.</li>
 <li>Select _TortoiseSVN &gt; Export_ from the menu.</li>
 <li><p>Select the root of your web server as the folder. On Apache it would be something like</p>
-bc(code). c:\apache\htdocs
+bc. c:\apache\htdocs
 
 
 <p>. All of the Textpattern code, sans .svn files, will be copied to a new directory.</p></li>

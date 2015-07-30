@@ -22,7 +22,7 @@ h3(sectionedit4#changelog). Changelog
 
 h3(sectionedit5#examples). Examples
 
-bc(code). $t1 = safe_pfx('txp_category');
+bc. $t1 = safe_pfx('txp_category');
 $t2 = safe_pfx('textpattern');
 $sql = "select distinct name from $t1 join $t2 on name=category1";
 $rs = safe_query($sql);

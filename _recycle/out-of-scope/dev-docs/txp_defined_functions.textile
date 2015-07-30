@@ -568,7 +568,7 @@ h4(#backend_user_interface_elements). Backend user interface elements
 
 Functions encapsulating HTML tags, form elements and various other building blocks which are useful for the design of a backend user interface layout. Take a look at
 
-bc(code). /textpattern/include/txp_article.php
+bc. /textpattern/include/txp_article.php
 
 
 and other files in that directory to learn from existing code.
@@ -635,12 +635,12 @@ h4(#tag_handlers). Tag Handlers
 
 Functions which execute a
 
-bc(code). <txp:foo>
+bc. <txp:foo>
 
 
 tag by receiving attributes and returning HTML output. Read
 
-bc(code). /textpattern/publish/taghandlers.php
+bc. /textpattern/publish/taghandlers.php
 
 
 to learn and borrow from existing code.
@@ -728,7 +728,7 @@ h4(#tag_builder). Tag Builder
 
 Generate markup for a given
 
-bc(code). <txp:foo>
+bc. <txp:foo>
 
 
 tag from the backend interface.

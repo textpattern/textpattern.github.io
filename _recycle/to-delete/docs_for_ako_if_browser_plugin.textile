@@ -14,17 +14,17 @@ h3(sectionedit3#examples_of_use). Examples of Use
 
 The following will only display in Internet Explorer 5.5:
 
-bc(code). <txp:ako_ifBrowser checkfor="ie55">Only IE 5.5!</txp:ako_ifBrowser>
+bc. <txp:ako_ifBrowser checkfor="ie55">Only IE 5.5!</txp:ako_ifBrowser>
 
 
 The following will only display in Opera 6 or Opera 8 the first time a user views the page in said browser
 
-bc(code). <txp:ako_ifBrowser checkfor="op6,op8" cookie="1">Only Opera 6 or Opera 8</txp:ako_ifBrowser>
+bc. <txp:ako_ifBrowser checkfor="op6,op8" cookie="1">Only Opera 6 or Opera 8</txp:ako_ifBrowser>
 
 
 The following will only output the user agent string of the browser that is being used to view the site:
 
-bc(code). <txp:ako_ifBrowserUA />
+bc. <txp:ako_ifBrowserUA />
 
 
 h3(sectionedit4#tags). Tags
@@ -32,7 +32,7 @@ h3(sectionedit4#tags). Tags
 <ul>
 <li>cookie - This tag will set a cookie the first time a user views the page, and will only display the enclosed text the first time a user views the page. 1 = on, 0 = off. By default, this behavior is off (0).</li>
 <li><p>viewua- This tag will output the user agent of the browser that is being used to view the page. 1 = on, 0 = off. By defualt it is set to off (0). Please note that if this attribute is set to on (1) *the plugin will* *_only_* *output the user agent. Nothing else.* This also does the same thing as calling</p>
-bc(code). <txp:ako_ifBrowserUA />
+bc. <txp:ako_ifBrowserUA />
 
 
 <p>.</p></li>

@@ -332,7 +332,7 @@ cbs_live_search
 
 Displays a search box similarly to
 
-bc(code). <txp:search input />
+bc. <txp:search input />
 
 
 . If Javascript is enabled, a results list will fade in and resize in real-time in AJAX style under the search box with a nice animation effect as the user types his query in it. And more...
@@ -789,7 +789,7 @@ Richard “Tranquillo” ??
 
 Allows you moderate comments per section or article category; only works in Textpattern 4.0.3, as it uses the new
 
-bc(code). comment.save
+bc. comment.save
 
 
 event.
@@ -1158,7 +1158,7 @@ Alex Shiels
 
 Similar to
 
-bc(code). <txp:article_image />
+bc. <txp:article_image />
 
 
 , except it supports multiple images per article. The article image field must contain one or more numeric image IDs separated by commas. See docs for more.

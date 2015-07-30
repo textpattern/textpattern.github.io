@@ -26,7 +26,7 @@ h4(#styles). Styles
 
 *Note:* Like all building blocks described on this page, Textpattern manages Styles in the database by default, not as files on the web server. However, you are not forced to manage your style sheets this way. E.g., you could still set a default Style to a given Section, but then inside that Style use only
 
-bc(code). @import url("../path/to/file.css");
+bc. @import url("../path/to/file.css");
 
 
 to call other CSS file(s) you might manage elsewhere, such as in a _css_ folder in the root directory of your website. Then business as usual. Not a problem.

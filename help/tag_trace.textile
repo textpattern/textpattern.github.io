@@ -4,7 +4,7 @@ In "Debugging mode":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferen
 
 View the HTML source of the page, and scroll to the bottom. The trace looks something like this:
 
-bc(code). [Page: default]
+bc. [Page: default]
 <txp:css/>
 <txp:page_title/>
 <txp:link_to_home>
@@ -22,16 +22,16 @@ Some things to check:
 
 <ul>
 <li><p>The lines</p>
-bc(code). [Page: default]
+bc. [Page: default]
 
 
 <p>and</p>
-bc(code). [Form: plainlinks]
+bc. [Form: plainlinks]
 
 
 <p>indicate that a particular "Page template":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages or "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms has been loaded. Make sure it's the right one</p></li>
 <li><p>Is the code in question shown in the tag trace at all? If not, it might have been excluded by a conditional tag (</p>
-bc(code). <txp:if_...>
+bc. <txp:if_...>
 
 
 <p>).</p></li>

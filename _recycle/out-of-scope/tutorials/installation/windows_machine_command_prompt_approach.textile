@@ -23,7 +23,7 @@ h4(#manual_instructions). Manual Instructions
 # In the command prompt, type *cd* and then a space. Click on the folder you created in step 3, and drag it onto the prompt window. It should automatically bring over the folders location (in double-quotes on XP, shortname in 98). Click _Enter_. You should now be sitting in that folder.
 # Type in
 
-bc(code). wget -r -np -nH --cut-dirs=1 http://textpattern.googlecode.com/svn/development/4.x/
+bc. wget -r -np -nH --cut-dirs=1 http://textpattern.googlecode.com/svn/development/4.x/
 
 
 then hit _Enter_. (You'll see a whole bunch of text fly by, showing you what's being downloaded. Don't close the window, just wait until it finishes (which will depend on how fast your internet download speed is). You can minimize the window while that's happening.)
@@ -56,7 +56,7 @@ These instructions are confirmed to work on *Windows XP*. Please let someone her
 
 # Open up a text editor, like notepad. Add the following to it
 
-bc(code). wget -r -np -nH --cut-dirs=1 http://textpattern.googlecode.com/svn/development/4.x/
+bc. wget -r -np -nH --cut-dirs=1 http://textpattern.googlecode.com/svn/development/4.x/
 
 
 # Save the file as *current-txp.cmd*

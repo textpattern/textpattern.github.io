@@ -2,17 +2,17 @@
 
 Raise interest using the same
 
-bc(code). register_callback
+bc. register_callback
 
 
 function as regular callbacks, and choose at what stage to hook; event and optional step level, plus whether to run before (pre) Textpattern executes the process, or after it has completed. If
 
-bc(code). pre
+bc. pre
 
 
 is unset, it is assumed 0, i.e. run afterwards:
 
-bc(code). register_callback('event', 'step', pre='boolean')
+bc. register_callback('event', 'step', pre='boolean')
 
 
 * *admin*

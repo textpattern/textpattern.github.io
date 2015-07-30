@@ -72,12 +72,12 @@ Image uploads can be accomplished in two ways:
 
 Image options are set on a concise dialog box. This favours direct styling and has no way of applying a
 
-bc(code). class
+bc. class
 
 
 or an
 
-bc(code). id
+bc. id
 
 
 attribute for CSS based styling.
@@ -94,7 +94,7 @@ Modx imagehandling is very comprehensive. On top of the arcticle writing field y
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:modx_image_shot1.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:modx_image_shot1.gif
 
-bc(code). a popup opens (shot2) 
+bc. a popup opens (shot2) 
 
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:modx_image_shot2.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:modx_image_shot2.gif
@@ -179,22 +179,22 @@ h5(#potential_image_tag_syntax). Potential Image tag Syntax
 
 This is based a lot on
 
-bc(code). <txp:article_custom>
+bc. <txp:article_custom>
 
 
 and
 
-bc(code). <txp:upm_image>
+bc. <txp:upm_image>
 
 
 .
 
-bc(code). <txp:image>
+bc. <txp:image>
 
 
 **
 
-bc(code). image_id="//integer//"
+bc. image_id="//integer//"
 
 
 **
@@ -202,7 +202,7 @@ bc(code). image_id="//integer//"
 
 **
 
-bc(code). image_name="//value//"
+bc. image_name="//value//"
 
 
 **
@@ -210,7 +210,7 @@ bc(code). image_name="//value//"
 
 **
 
-bc(code). class="//value//"
+bc. class="//value//"
 
 
 **
@@ -218,7 +218,7 @@ bc(code). class="//value//"
 
 **
 
-bc(code). id="//value//"
+bc. id="//value//"
 
 
 **
@@ -226,7 +226,7 @@ bc(code). id="//value//"
 
 **
 
-bc(code). form="//form name//"
+bc. form="//form name//"
 
 
 **
@@ -234,7 +234,7 @@ bc(code). form="//form name//"
 
 **
 
-bc(code). wraptag="//value//"
+bc. wraptag="//value//"
 
 
 **
@@ -242,7 +242,7 @@ bc(code). wraptag="//value//"
 
 **
 
-bc(code). break="//value//"
+bc. break="//value//"
 
 
 **
@@ -250,7 +250,7 @@ bc(code). break="//value//"
 
 **
 
-bc(code). breakclass="//value//"
+bc. breakclass="//value//"
 
 
 **
@@ -258,7 +258,7 @@ bc(code). breakclass="//value//"
 
 **
 
-bc(code). limit="//integer//"
+bc. limit="//integer//"
 
 
 **
@@ -266,7 +266,7 @@ bc(code). limit="//integer//"
 
 **
 
-bc(code). offset="//integer//"
+bc. offset="//integer//"
 
 
 **
@@ -274,7 +274,7 @@ bc(code). offset="//integer//"
 
 **
 
-bc(code). show_alt="//yes/no//"
+bc. show_alt="//yes/no//"
 
 
 **
@@ -282,7 +282,7 @@ bc(code). show_alt="//yes/no//"
 
 **
 
-bc(code). show_height="//yes/no//"
+bc. show_height="//yes/no//"
 
 
 **
@@ -290,7 +290,7 @@ bc(code). show_height="//yes/no//"
 
 **
 
-bc(code). show_width="//yes/no//"
+bc. show_width="//yes/no//"
 
 
 **
@@ -298,7 +298,7 @@ bc(code). show_width="//yes/no//"
 
 **
 
-bc(code). show_title="//yes/no//"
+bc. show_title="//yes/no//"
 
 
 **
@@ -306,25 +306,25 @@ bc(code). show_title="//yes/no//"
 
 **
 
-bc(code). allow_override="//yes/no//"
+bc. allow_override="//yes/no//"
 
 
 **
  When specifiying id/category/article_image this will allow you to override the default via the url. Default is no.
 
-bc(code). <txp:thumbnail>
+bc. <txp:thumbnail>
 
 
 Will display thumbnails instead of full size images. Takes all parameters available to
 
-bc(code). <txp:image>
+bc. <txp:image>
 
 
 plus:
 
 **
 
-bc(code). poplink="//yes/no//"
+bc. poplink="//yes/no//"
 
 
 **
@@ -332,7 +332,7 @@ bc(code). poplink="//yes/no//"
 
 **
 
-bc(code). custom_height="//integer//"
+bc. custom_height="//integer//"
 
 
 **
@@ -340,7 +340,7 @@ bc(code). custom_height="//integer//"
 
 **
 
-bc(code). custom_width="//integer//"
+bc. custom_width="//integer//"
 
 
 **
@@ -348,42 +348,42 @@ bc(code). custom_width="//integer//"
 
 These next few tags will actually call
 
-bc(code). <txp:image>
+bc. <txp:image>
 
 
 and
 
-bc(code). <txp:thumbnail>
+bc. <txp:thumbnail>
 
 
 . they just set certain parameters for you and would exist mostly for template clarity.
 
-bc(code). <txp:article_image> <txp:article_thumbnail>
+bc. <txp:article_image> <txp:article_thumbnail>
 
 
 Sets source to the article_image field. Displays full image and thumbnail respectively.
 
-bc(code). <txp:custom_field_image> <txp:custom_field_thumbnail>
+bc. <txp:custom_field_image> <txp:custom_field_thumbnail>
 
 
 Sets source to the custom field specified. Displays full image and thumbnail respectively. Requires custom field to use.
 
 **
 
-bc(code). name="//fieldname//"
+bc. name="//fieldname//"
 
 
 **
  Display images from the custom field with the name fieldname.
 
-bc(code). <txp:image_index>
+bc. <txp:image_index>
 
 
 Displays the thumbnails from a category. If no category is specified it will look for it in the URL.
 
 **
 
-bc(code). category="//category_name//"
+bc. category="//category_name//"
 
 
 **
@@ -391,7 +391,7 @@ bc(code). category="//category_name//"
 
 **
 
-bc(code). recursive="//value//"
+bc. recursive="//value//"
 
 
 **
@@ -399,7 +399,7 @@ bc(code). recursive="//value//"
 
 **
 
-bc(code). sort_by="//sort by//"
+bc. sort_by="//sort by//"
 
 
 **
@@ -407,7 +407,7 @@ bc(code). sort_by="//sort by//"
 
 **
 
-bc(code). sort_dir="//sort direction//"
+bc. sort_dir="//sort direction//"
 
 
 **
@@ -415,7 +415,7 @@ bc(code). sort_dir="//sort direction//"
 
 **
 
-bc(code). captioned="//yes/no//"
+bc. captioned="//yes/no//"
 
 
 **
@@ -423,7 +423,7 @@ bc(code). captioned="//yes/no//"
 
 **
 
-bc(code). author="//author name//"
+bc. author="//author name//"
 
 
 **
@@ -439,26 +439,26 @@ Displays the thumbnails from a section.
 
 **
 
-bc(code). section="//section_name//"
+bc. section="//section_name//"
 
 
 **
  Display images from section. (could be used in conjunction with
 
-bc(code). <txp:if_different />
+bc. <txp:if_different />
 
 
 tags?
 
 **
 
-bc(code). direction="//next//"
+bc. direction="//next//"
 
 
 **
  Display images using pagination? Used in a similar way to
 
-bc(code). <txp:link_to_next />
+bc. <txp:link_to_next />
 
 
 I don't know if this is the way to do this? or if it needs a individual tag?

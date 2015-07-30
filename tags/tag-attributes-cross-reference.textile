@@ -25,7 +25,7 @@ h3(sectionedit3#allowoverride). allowoverride
 
 Used to disable assigned override forms. Works within article lists and single article display. Both article tags use
 
-bc(code). 1
+bc. 1
 
 
 (yes) as default.
@@ -54,24 +54,24 @@ h3(sectionedit7#break). break
 
 "HTML tag":http://www.w3.org/TR/html4/intro/sgmltut.html#h-3.2.1 (without brackets) or string used to separate list items. Suggested values include
 
-bc(code). br
+bc. br
 
 
 and
 
-bc(code). hr
+bc. hr
 
 
 for presentational markup, or
 
-bc(code). li
+bc. li
 
 
 if semantic markup is preferred. Textpattern cares for the correct nesting of tags in either case.
 
 Default is
 
-bc(code). br
+bc. br
 
 
 (except for tags marked by an asterisk, which default to unset).
@@ -331,12 +331,12 @@ h3(sectionedit39#label). label
 
 This string will be prepended to the output. When using a "wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag value of either
 
-bc(code). ol
+bc. ol
 
 
 or
 
-bc(code). ul
+bc. ul
 
 
 , the label will be the first list item.
@@ -357,19 +357,19 @@ Default is unset (except where shown in parentheses).
 <li>"link_feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_feed_link</li>
 <li>"linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist</li>
 <li><p>"popup":/home/www/zendstudio/dokuwiki/bin/doku.php?id=popup (</p>
-bc(code). Browse
+bc. Browse
 
 
 <p>)</p></li>
 <li><p>"recent_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_articles (</p>
-bc(code). Recent Articles
+bc. Recent Articles
 
 
 <p>)</p></li>
 <li>"recent_comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_comments</li>
 <li>"related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles</li>
 <li><p>"search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input (</p>
-bc(code). Search
+bc. Search
 
 
 <p>)</p></li>
@@ -628,12 +628,12 @@ h3(sectionedit77#sort). sort
 
 How to sort the resulting list. Available and default values vary by tag, but multiple, comma-separated values can be used. Each value can be specified as either
 
-bc(code). asc
+bc. asc
 
 
 (ascending) or
 
-bc(code). desc
+bc. desc
 
 
 (descending) order.
@@ -753,7 +753,7 @@ h3(sectionedit92#wraptag). wraptag
 <li>"article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom</li>
 <li>"article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image</li>
 <li><p>"breadcrumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=breadcrumb (</p>
-bc(code). p
+bc. p
 
 
 <p>)</p></li>
@@ -763,7 +763,7 @@ bc(code). p
 <li>"category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list</li>
 <li>"comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments</li>
 <li><p>"comments_error":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_error (</p>
-bc(code). div
+bc. div
 
 
 <p>)</p></li>
@@ -789,7 +789,7 @@ bc(code). div
 <li>"recent_comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_comments</li>
 <li>"related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles</li>
 <li><p>"search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input (</p>
-bc(code). p
+bc. p
 
 
 <p>)</p></li>

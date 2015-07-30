@@ -83,7 +83,7 @@ The administrator is later free to correct the comment-status from the comment-t
 
 In some cases you may be absolutely sure that the comment is undeniably spam or otherwise unwanted. In that case, you can “kill” off the page-request right away and display an error message like this:
 
-bc(code). txp_die('Unable to record the comment. Please contact the publisher of this site, if this problem persists.'
+bc. txp_die('Unable to record the comment. Please contact the publisher of this site, if this problem persists.'
     ,'412 Precondition failed');
 
 

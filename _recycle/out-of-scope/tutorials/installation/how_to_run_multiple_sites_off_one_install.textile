@@ -18,11 +18,11 @@ h3(sectionedit1#the_process). The Process
 <li>change the txpath option to point to your main siteâ€™s Textpattern directory (e.g. /usr/www/example.com/textpattern instead of /usr/www/example.com/airweek2006).</li>
 <li>Now go and edit airweek2006/textpattern/index.php:</li>
 <li><p>Thereâ€™s a define() on Â± line 20 that says</p>
-bc(code). define("txpath", dirname(__FILE__));
+bc. define("txpath", dirname(__FILE__));
 
 </li>
 <li><p>Change this to say:</p>
-bc(code). define("txpath", $txpcfg['txpath']);
+bc. define("txpath", $txpcfg['txpath']);
 
 </li>
 <li>Move this define to Â± line 32 after the code that include()â€˜s config.php</li>

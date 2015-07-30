@@ -1,6 +1,6 @@
 h1. Keywords DEPRECATED [todo:pw]
 
-bc(code). <txp:keywords />
+bc. <txp:keywords />
 
 
 The "keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=keywords tag is a _single_ tag that Textpattern will replace with the keywords associated with the article being displayed. The tag can be used in an article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, or within "pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages (templates), either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). For keywords metadata, see "meta_keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag.
@@ -15,7 +15,7 @@ h4(#example_1display_keywords_in_context_of_an_article_form). Example 1: Display
 
 In this example, keywords are used in an article Form along with other article components. The keywords themselves are used like a list of topical “tags”, _e.g._, like you would use for more granular searching. The keywords would be presented (via CSS) horizontally (ideally) above the article's excerpt.
 
-bc(code). <h3><txp:permlink><txp:title /></txp:permlink></h3>
+bc. <h3><txp:permlink><txp:title /></txp:permlink></h3>
 <p><txp:posted /></p>
 <p><txp:keywords /></p>
 <txp:excerpt />
@@ -28,38 +28,38 @@ h4(#example_2use_keywords_to_fill_code_meta_code_element_values). Example 2: Use
 
 In this example, keywords are used directly in a _Page_ (template) to insert
 
-bc(code). content=""
+bc. content=""
 
 
 values in a
 
-bc(code). meta
+bc. meta
 
 
 element.
 
-bc(code). <meta name="keywords" content="<txp:keywords />" />
+bc. <meta name="keywords" content="<txp:keywords />" />
 
 
 This works if the context is a single article being displayed.
 
 The same result can be done by putting the keywords inside an "if_individual_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_individual_article tag (though a bit more code than necessary).
 
-bc(code). <txp:if_individual_article>
+bc. <txp:if_individual_article>
     <meta name="keywords" content="<txp:keywords />" />
 </txp:if_individual_article>
 
 
 In both of the above, if a given article has keywords associated with it, they will fill the meta value. If not, the meta element remains with no
 
-bc(code). content=""
+bc. content=""
 
 
 values. This might be okay if you know for sure all articles will have keywords assigned.
 
 If not, a metadata tag in your template with no value might not be desired. In which case you could set it up as a condition; if there are no keywords on the article, the entire meta element is not added to the template.
 
-bc(code). <txp:if_keywords>
+bc. <txp:if_keywords>
     <meta name="keywords" content="<txp:keywords />" />
 </txp:if_keywords>
 

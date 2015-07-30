@@ -41,11 +41,11 @@ Plugin installation is a simple three-step process:
 <li>Copy the entire file contents, paste it into the box at the top of the Plugins panel, and click “Upload”.</li>
 <li>You will be shown a preview of the plugin and its documentation. If it looks ok, click “Install” at the bottom of the screen.</li>
 <li><p>You will be returned to the plugin list when the plugin has been installed. Now activate the plugin by clicking its</p>
-bc(code). No
+bc. No
 
 
 <p>link, which toggles the status to</p>
-bc(code). Yes
+bc. Yes
 
 
 <p>, and it's not active.</p></li>
@@ -63,12 +63,12 @@ h4(#installation_problems). Installation problems
 
 Sometimes large plugins can cause problems and you get a
 
-bc(code). Badly formed or empty plugin code
+bc. Badly formed or empty plugin code
 
 
 error. This can usually be solved by obtaining a compressed plugin. These are functionally equivalent to standard plugins but begin with a sequence that looks like this:
 
-bc(code). H4sIAAAAAAAAA919a3PbRrbg56Rq/kOH8UTkDiWKkh+xJCtXsWWPZxXHa8meeyvjUoFEk8QY
+bc. H4sIAAAAAAAAA919a3PbRrbg56Rq/kOH8UTkDiWKkh+xJCtXsWWPZxXHa8meeyvjUoFEk8QY
 BGgAlKz1+L/vefULACk6dvZO3amJRTYa53SfPn3e3YwOHh58LA/uHnSyaK47h+XB/YNOOY8v
 k4l8iZbVLC/wy3B40Dmv9EQ9...
 

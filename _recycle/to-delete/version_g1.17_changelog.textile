@@ -2,25 +2,25 @@
 
 <ul>
 <li><p>Added 'month' parameter to</p>
-bc(code). <txp:article_custom />
+bc. <txp:article_custom />
 
 </li>
 <li><p>Added 'keywords' parameter to</p>
-bc(code). <txp:article_custom />
+bc. <txp:article_custom />
 
 </li>
 <li><p>Added</p>
-bc(code). <txp:excerpt />
+bc. <txp:excerpt />
 
 
 <p>to useful tags</p></li>
 <li>Added an option never to display commenter email addresses</li>
 <li><p>Added new conditional tag pairs</p>
-bc(code). <txp:if_individual_article>
+bc. <txp:if_individual_article>
 
 
 <p>and</p>
-bc(code). <txp:if_article_list>
+bc. <txp:if_article_list>
 
 </li>
 <li>Added error correction that checks if no page template has been assigned to a section</li>
@@ -30,15 +30,15 @@ bc(code). <txp:if_article_list>
 <li>Articles may now be published with a timestamp from any damn century</li>
 <li>Commenters can no longer submit blank comments</li>
 <li><p>Deprecated</p>
-bc(code). <txp:paging_link>
+bc. <txp:paging_link>
 
 
 <p>in favour of two new tags,</p>
-bc(code). <txp:newer>
+bc. <txp:newer>
 
 
 <p>and</p>
-bc(code). <txp:older>
+bc. <txp:older>
 
 
 <p>. These can be placed anywhere on a page where multiple articles are listed, and will page accurately through result sets</p></li>
@@ -49,7 +49,7 @@ bc(code). <txp:older>
 <li>Implemented hierarchical categories: article, image and link categories can now have parents and children</li>
 <li>Moved 'logs' tab from 'content' to 'admin' area</li>
 <li><p>Search results now use a form called</p>
-bc(code). search_results
+bc. search_results
 
 
 <p>, with appropriate placeholder tags, instead of nested html</p></li>

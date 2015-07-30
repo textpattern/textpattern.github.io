@@ -2,37 +2,37 @@
 
 <ul>
 <li><p>Added</p>
-bc(code). <txp:article_id />
+bc. <txp:article_id />
 
 
 <p>tag to output the current article id</p></li>
 <li><p>Added</p>
-bc(code). <txp:article_image />/<code> tag
+bc. <txp:article_image />/<code> tag
 
 
 <p>&lt;/code&gt; &#42; Added</p>
-bc(code). <txp:comments_count />
+bc. <txp:comments_count />
 
 
 <p>tag</p></li>
 <li><p>Added</p>
-bc(code). <txp:meta_keywords />
+bc. <txp:meta_keywords />
 
 
 <p>and</p>
-bc(code). <txp:meta_author />
+bc. <txp:meta_author />
 
 
 <p>tags for outputting metadata in the page</p>
-bc(code). <head>
+bc. <head>
 
 </li>
 <li><p>Added</p>
-bc(code). break="li"
+bc. break="li"
 
 
 <p>and</p>
-bc(code). wraptag="ul"
+bc. wraptag="ul"
 
 
 <p>option for recent_comments</p></li>

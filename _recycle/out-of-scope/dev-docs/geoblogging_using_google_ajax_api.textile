@@ -36,12 +36,12 @@ In Textpattern, set-up new:
 
 Insert the following in the head of your Map page, with the newly acquired _your API Key_
 
-bc(code). <script type="text/javascript" src="http://www.google.com/jsapi?key=your API key"></script>
+bc. <script type="text/javascript" src="http://www.google.com/jsapi?key=your API key"></script>
 
 
 Create a div for the map using this line of HTML in the body of the page, the size and overall appearance can be governed by your new Map _Style_. Also added is a Message div for _move-end_ co-ordinates â€“ we will come on to that later.
 
-bc(code). <div id="map"></div>
+bc. <div id="map"></div>
 <div id="message"></div>
 
 
@@ -53,7 +53,7 @@ Now copy "this script":http://spotthehall.com/files/gmap_script.txt (complete ex
 ** In line #21 (of the downloaded gmap_script.txt file) you may fix the variable zoom that the links show and not pass it in the url, to a level to suit you â€“ the alternative line is after OR in this code section - do NOT include both.
 ** Here we also set the lat/lng/zmn co-ordinates for the overall map view â€“ play with them to suit yourself â€“ they are all set to 1.
 
-bc(code). var lat = parseFloat(url.lat);
+bc. var lat = parseFloat(url.lat);
 var lng = parseFloat(url.lng);
 var zmn = parseFloat(url.zmn); OR var zmn = 11;
 var vars = url.vars;
@@ -137,7 +137,7 @@ var myIcon = [markerIcon,blueIcon,greenIcon];
 
 * &#42; Style your Tooltips in the map CSS file e.g:
 
-bc(code). .tooltip {
+bc. .tooltip {
     text-align:center;
     font-size:0.8em;
     white-space:nowrap;
@@ -157,7 +157,7 @@ bc(code). .tooltip {
 * set the initial type of map presented and controls available
 ** There are options as to the type of map available and the controls on the map. It is set for initial display of the Physical Map, see line #117 and "Google Controls":http://code.google.com/apis/maps/documentation/controls.html/ for info on the controls available. The alternative to set initial view to the normal one you see in Google Map view is to replace PHYSICAL with NORMAL
 
-bc(code).   map = new google.maps.Map2(document.getElementById("map"));
+bc.   map = new google.maps.Map2(document.getElementById("map"));
         map.setCenter(new google.maps.LatLng(lat,lng), zmn, G_PHYSICAL_MAP);
     map.addControl(new google.maps.LargeMapControl());
     map.addControl(new google.maps.HierarchicalMapTypeControl());
@@ -173,7 +173,7 @@ bc(code).   map = new google.maps.Map2(document.getElementById("map"));
 * describes the map centre as you move around
 ** Starting line #164 describes the listener that follows the centre of the map and displays the co-ordinates below the map in my example â€“ this is why the Message div was entered in the page body.
 
-bc(code).         google.maps.Event.addListener (map, "moveend", function() {
+bc.         google.maps.Event.addListener (map, "moveend", function() {
           var center = map.getCenter();
           document.getElementById("message").innerHTML = center.toString();
 
@@ -182,7 +182,7 @@ h3(sectionedit4#making_it_work). Making it Work
 
 Create a new Textpattern page called *Mapdata* and paste in the following. (Because Textpattern outputs itâ€™s content as text/html the standard code hs been changed to accept this, at line #128).
 
-bc(code). <?xml version="1.0" encoding="ISO-8859-1" ?>
+bc. <?xml version="1.0" encoding="ISO-8859-1" ?>
 <markers>
 <txp:article_custom form="mapdata" limit="999" />
 </markers>
@@ -199,7 +199,7 @@ In Admin &gt; Preferences &gt; Advanced fill-in Custom Fields 1-6 with the abbre
 
 In Presentation &gt; Forms create a new one called mapdata and save as Type: article with the following in:
 
-bc(code). <txp:if_custom_field name="lat"> 
+bc. <txp:if_custom_field name="lat"> 
 <marker lat="<txp:custom_field name="lat" />" lng="<txp:custom_field name="long" />" label="<txp:title />"
 txt="<txp:custom_field name="txt" />" url="<txp:custom_field name="url" />" img="<txp:custom_field name="img" />" icn="<txp:custom_field name="icn" />">
 </marker>
@@ -214,7 +214,7 @@ Add the following to your default article form.
 
 (Included is the code for inserting a GeoTag icon "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:geotag.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:geotag.png, if you like you could add text to the link by including the tag for the txt Custom Field)
 
-bc(code). <txp:if_custom_field name="lat"> 
+bc. <txp:if_custom_field name="lat"> 
 <p><a href="<txp:site_url />map?lat=<txp:custom_field name="lat" />&lng=<txp:custom_field name="long" />&zmn=11"><img src="/images/geotag.png" alt="" border="0" title="map view" /></a></p>
 </txp:if_custom_field>
 
@@ -227,7 +227,7 @@ h4(#meta_content). Meta Content
 
 Finally - and the icing on this particular cake - to place the ICBM content in the document _head_, place the following in the head section of the Page â€“ which will probably be your blog page as this is designed to pick up the map co-ordinates of the page being viewed, not static geo info as from say an _About_ page:
 
-bc(code). <txp:if_individual_article>
+bc. <txp:if_individual_article>
 <txp:if_custom_field name="lat">
 <meta name="ICBM" content="<txp:custom_field name="lat" />, <txp:custom_field name="long" />" />
 </txp:if_custom_field>

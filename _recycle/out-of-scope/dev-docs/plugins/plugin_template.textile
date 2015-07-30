@@ -1,16 +1,16 @@
 \nTextpattern plugins are perhaps best thought of as functions supplementary to those found in
 
-bc(code). textpattern/publish/taghandlers.php
+bc. textpattern/publish/taghandlers.php
 
 
 . Functions residing in this file respond to
 
-bc(code). <txp:foo />
+bc. <txp:foo />
 
 
 and
 
-bc(code). <txp:foo>bar</txp:foo>
+bc. <txp:foo>bar</txp:foo>
 
 
 tags found in pages, forms, articles and other dynamic templates in Textpattern.
@@ -22,15 +22,15 @@ A template for plugin distribution is available at:
 h3(sectionedit1#package_contents). Package Contents
 
 <ol>
-<li>bc(code). zem_tpl.php
+<li>bc. zem_tpl.php
 
 
 <p>contains the code to compile plugins into the format required by the Textpattern plugin installer.</p></li>
-<li>bc(code). zem_plugin.php
+<li>bc. zem_plugin.php
 
 
 <p>is the template itself. Make a copy of this file and edit it to write your plugin.</p></li>
-<li>bc(code). zem_example.php
+<li>bc. zem_example.php
 
 
 <p>is a simple example plugin. It demonstrates both public-side tags and admin-side user interface features.</p></li>
@@ -38,7 +38,7 @@ h3(sectionedit1#package_contents). Package Contents
 
 h3(sectionedit2#typical_use_command-line). Typical Use (Command-line)
 
-bc(code). $ cp zem_plugin.php abc_myplugin.php
+bc. $ cp zem_plugin.php abc_myplugin.php
 [edit abc_myplugin.php]
 $ php abc_myplugin.php > abc_myplugin-0.1.txt
 
@@ -49,35 +49,35 @@ h3(sectionedit3#quick_notes). Quick Notes
 
 <ul>
 <li><p>Whatever is returned by the plugin function will be output by the corresponding</p>
-bc(code). <txp:plugin_name />
+bc. <txp:plugin_name />
 
 
 <p>tag.</p></li>
 <li><p>Plugin functions have access to all the functions available to</p>
-bc(code). publish.php
+bc. publish.php
 
 
 <p>, including everything in</p>
-bc(code). textpattern/lib
+bc. textpattern/lib
 
 
 <p>. Further reference on these resources is forthcoming.</p></li>
 <li><p>If you would like to pass variables to the plugin function(s) via paramaters in the</p>
-bc(code). <txp:plugin_name />
+bc. <txp:plugin_name />
 
 
 <p>tag, these will be passed as the first argument to the function as an associative array (</p>
-bc(code). $varname => $value
+bc. $varname => $value
 
 
 <p>).</p></li>
 <li><p>If you would like to pass a variable to the plugin function by enclosing it in</p>
-bc(code). <txp:foo>bar</txp:foo>
+bc. <txp:foo>bar</txp:foo>
 
 
 <p>, this will be passed as the second argument to the function as a string.</p></li>
 <li><p>Do not use</p>
-bc(code). <?php ?>
+bc. <?php ?>
 
 
 <p>tags within the plugin source.</p></li>
@@ -89,22 +89,22 @@ It speeds up development tremendously if you do the following:
 
 <ol>
 <li><p>Make sure plugin name and plugin filename correspond, e.g.: zem_test should be in</p>
-bc(code). zem_test.php
+bc. zem_test.php
 
 
 <p>.</p></li>
 <li><p>Create a directory</p>
-bc(code). /full/path/dev/plugins
+bc. /full/path/dev/plugins
 
 
 <p>.</p></li>
 <li><p>Drop your uncompiled plugins in that directory. Do not put</p>
-bc(code). zem_tpl.php
+bc. zem_tpl.php
 
 
 <p>in the same directory.</p></li>
 <li><p>Admin &gt; Advanced Preferences, set plugin cache dir to</p>
-bc(code). /full/path/dev/plugins
+bc. /full/path/dev/plugins
 
 
 <p>.</p></li>

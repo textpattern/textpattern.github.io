@@ -4,12 +4,12 @@ Certain Textpattern tags are only intended for use in particular places. If you 
 
 Article form tags only work in an *article context*. They refer to one single article so they can only be used in a context that identifies one particular article. Specifically, they may be used on an individual article page template, or in an article form that has been displayed using a
 
-bc(code). <txp:article ... />
+bc. <txp:article ... />
 
 
 or
 
-bc(code). <txp:article_custom ... />
+bc. <txp:article_custom ... />
 
 
 tag.
@@ -18,7 +18,7 @@ Article context tags will not work in an article list page template, because lis
 
 Similarly, Comment form tags may only be used in the form that is used to display each individual comment (usually named
 
-bc(code). comments
+bc. comments
 
 
 ); File and Link form tags operate likewise.
