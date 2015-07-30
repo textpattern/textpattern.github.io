@@ -37,9 +37,9 @@ The admin-side is organised into three primary regions (Content, Presentation, A
 ** "Import":admin/import-panel.textile
 ** "Plugins":admin/plugins-panel.textile
 ** Preferences
-*** "Basic":admin/preferences-basic-panel.textile (default)
-*** "Advanced":admin/preferences-advanced-panel.textile
-*** "Language":admin/preferences-language-panel.textile
+*** "Basic":admin/preferences/basic-prefs-panel.textile (default)
+*** "Advanced":admin/preferences/advanced-prefs-panel.textile
+*** "Language":admin/preferences/language-prefs-panel.textile
 ** "Users":admin/users-panel.textile (default)
 ** "Visitor logs":admin/visitor-logs-panel.textile
 * Extensions[2]
