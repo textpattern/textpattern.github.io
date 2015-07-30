@@ -27,7 +27,7 @@ Low info display begins with the following installation and server data. A few v
 | $path_to_site: | |
 | Textpattern path: | path to your installation directory |
 | Permanent link mode: | how you've configured your URLs to appear |
-| [upload_tmp_dir:] | | 
+| upload_tmp_dir: | |
 | Temporary directory path: | |
 | Site URL: | |
 | PHP version: | |
