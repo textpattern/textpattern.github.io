@@ -12,11 +12,11 @@ On this page:
 
 h2(#sec1). Diagnostic info display
 
-The actual diagnostics information is displayed in the **Diagnostics info** field. The volume of details displayed may be set to "Low" (the default) or "High", which you can toggle between using the **Detail** selection control at bottom of the info display field. The convenience of having all this data immediatly available in the **Diagnostics** panel for quick reference is invaluable, which you'll realise more over time.
+The actual diagnostics information is displayed in the **Diagnostics info** field. The volume of details displayed may be set to "Low" (the default) or "High", which you can toggle between using the **Detail** selection control at bottom of the info display field.
 
 h3. Low info display
 
-Low diagnostics info begins with a set of data values about your installation and web server technology. A few value descriptions are provided here for general understanding, but most should be obvious.
+Low diagnostics info begins with a set of data values about your installation and server technology. A few value descriptions are provided here for general understanding, but most should be obvious.
 
 |_. Data item |_. What it tells you |
 | Textpattern version: | whatever version you have installed |
