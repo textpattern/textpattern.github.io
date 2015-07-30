@@ -1,6 +1,6 @@
 h1. Diagnostics
 
-The **Diagnostics** panel is an important panel for troubleshooting potential problems with your Textpattern installation, such as you might discover when installing or upgrading to a new version. They can also be useful for troubleshooting functional problems that you may have introduced by accident when extending the system, modifying the .htaccess file, and so forth.
+The **Diagnostics** panel is an important panel for troubleshooting potential problems with your Textpattern installation, such as you might discover when installing or upgrading to a new version. They can also be useful for troubleshooting functional problems that you may have introduced by accident when extending the system, modifying the .htaccess file, or some other slight of hand.
 
 The **Diagnostics** panel is composed of two display regions: **Pre-flight checks** and **Diagnostics info**. Though the latter comes after the former in the panel, it may be useful to talk about them in reverse here.
 
@@ -130,7 +130,7 @@ Possible red messages include:
 * @/index.php is inaccessible@ -- This suggests your @index.php@ file is not available, is not the right version, or that your "Site URL" is set wrong in "Basic preferences":basic-prefs-panel.textile. It could also mean the @index.php@ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics. 
 * @path_to_site is inaccessible@ -- This mmeans either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
 * @.htaccess file is missing@ -- This concerns the @.htaccess@ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing @index.php@ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an @.htaccess@ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing @.htaccess@ file with the indicated rewrite rules in the help dialog.
-* @Clean URL test failed@ -- This is not necessarily an error that will prevent your site from working. It could be caused by the PHP configuration setting of @allow_url_fopen@ or some other hosting issue. See "this FAQ":http://textpattern.com/faq/247/clean-url-test-failed.
+* @Clean URL test failed@ -- This is not necessarily an error that will prevent your site from working. It could be caused by the PHP configuration setting of @allow_url_fopen@ or some other hosting issue.
 
 fn1. Cascading errors: Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
 
