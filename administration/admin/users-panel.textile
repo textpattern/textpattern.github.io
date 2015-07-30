@@ -1,21 +1,31 @@
-\n"mininav_admin_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
+h1. Users panel [todo:dw]
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-users-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-users-tab.png
+The *Users* panel is the default panel of the Admin region. It's where user accounts are accessed and managed. The panel has two functional views. The default view is a table of all existing user accounts. The secondary view is a form that displays all data for an individual account (__i.e.__, user profile data).
 
-*Users* is where site administrators create new user accounts and establish user roles for those accounts. This panel is also where anyone with a user account can come to change their own password or user email address.
+h2. All user accounts table (default)
 
-h3(sectionedit1#panel_controls). Panel Controls
+The user accounts table displays the following data for each user:
 
-The Users panel is initially composed of four functional regions (figure 2) from the viewpoint of a Admin/Publisher upon a new installation of Textpattern:
+* **Login** (username)
+* **Real name**
+* **Email**
+* **"Privileges":user-privileges.textile** (users role and rights)
+* **Last log in** (date and time)
 
-# Change Your Password
-# Change Your Email Address
-# Authors
-# Add New Author
+The administrator, and any user having the role of "Publisher", will see _all_ user account records in the table and be able to edit any one.[1] They will also see, and be able to use, the *Add new author* button at top of the table to create a new user account. 
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-users-controls.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-users-controls.png
+All other users with lesser roles will see their account record only, and will not see the **Add new author** button.
 
-There is a fifth functional region, "Reset Author Password":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users#reset_author_password_28529 (figure 3), that an Admin/Publisher will see at the bottom of the panel if/when they create one or more additional accounts besides their own.
+All users will see, and can use, the *Change your password* button at the top of the table, which functions in context of the logged in user. When clicked, it triggers Textpattern to email the user a new password.
+
+fn1. A Publisher has the same rights and power as the site administrator, but can not delete or demote the administrator account. The administrator, however, can delete or demote the Publisher at any time.
+
+h2. Individual user profile data
+
+The usernames in the **Login** column of the user accounts table are links to the individual user's existing account/profile data. The usernames can not be edited, and the dates/times of last log ins are not displayed in the account profile form.
+
+Any user can edit their **Real name** and change their **Email** address. But only an administrator or Publisher can change a user's *Privileges*.
+
 
 *Notes about panel regions against user roles:*
 

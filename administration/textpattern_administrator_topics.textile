@@ -1,2 +1,0 @@
-\n - REDIRECT "advanced_administrator_topics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_administrator_topics
-
