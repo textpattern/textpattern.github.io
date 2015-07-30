@@ -91,7 +91,7 @@ Displays the category_title of the category assigned to image ID '5'.
 
 h2. Genealogy
 
-3. Version 4.6.0
+h3. Version 4.6.0
 
 @breakclass@ attribute deprecated.
 
