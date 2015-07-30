@@ -2,40 +2,138 @@ h1. Diagnostics [todo:dw]
 
 The **Diagnostics** panel is an important panel for troubleshooting potential problems with your Textpattern installation, such as you might discover when installing or upgrading to a new version. They can also be useful for troubleshooting functional problems that you may have introduced by accident when extending the system, modifying the .htaccess file, and so forth.
 
-h2. Diagnostic info display
+The **Diagnostics** panel is composed of two display regions: **Pre-flight checks** and **Diagnostics info**. Though the latter comes after the former in the panel, it may be useful to talk about them in reverse here.
 
-The **Diagnostics info** display field has two "Detail" views for convenience: Low and High. Low is displayed by default. You can toggle between the views using the **Detail** selection control at bottom of the info display field.
+On this page:
 
-h2. Diagnostic feedback messages
+* "Diagnostic info display":#sec1
+* "Pre-flight checks":#sec2
+* "Getting diagnostics help":#sec3
 
-At any given time you do not want to see feedback messages on the Diagnostics panel. No messages generally means everything is okay. The time to start looking for any feedback messages is after installing Textpattern and whenever you update to a new version release. Feedback messages come in three colors, which correspond with the severity of the feedback messages you might see.[1]
+h2(sec1). Diagnostic info display
 
-h3. Green (everything is okay) 
+The actual diagnostics information is displayed in the **Diagnostics info** field. The volume of details displayed may be set to "Low" (the default) or "High", which you can toggle between using the **Detail** selection control at bottom of the info display field.
 
-There is only one green message: 
+h3. Low info display
 
-* "All systems check okay." 
+Low diagnostics info begins with a set of valuble data values about your installation and web server technology, and then finishes with the contents of your @.htaccess@ file in the installation directory. The convenience of having all this data immediatly available here for quick reference is invaluable, which you'll realise more over time.
 
-You get this message when successfully troubleshooting all yellow and red feedback messages that may exist first. The green message will go away once you leave the Diagnostics panel. Again, no messages means everything is good.
+Info displayed begins with the following installation and server data. Values are intentionally removed here to focus on the range of data types. A few parenthetical notes are provided for general understanding:
+
+bc.. Textpattern version: (whatever version you have installed)
+Last update: 
+Document root: 
+$path_to_site: 
+Textpattern path: (path to your installation directory)
+Permanent link mode: (how you've configured your URLs to appear)
+upload_tmp_dir: 
+Temporary directory path: 
+Site URL:
+PHP version: 
+GD Graphics Library: 
+Server TZ: (your web server's time zone)
+Server local time: 
+DST enabled?: 
+Automatically adjust DST setting?: 
+Time zone: (your time zone)
+MySQL: 
+Locale: (the language and character set you have configured)
+Server: 
+PHP server API: 
+RFC 2616 headers: 
+Server OS: 
+Active plugins: (a list of all plugins you have installed that are turned ON)
+
+p. The installation and server data is followed by the contents of your @.htaccess@ file in the installation directory, which for purposes here is the "@.htaccess@ file contents":https://github.com/textpattern/textpattern/blob/master/.htaccess for a new installation. The actual file content is the part between the two dotted lines:
+
+bc.. <code>.htaccess</code> file contents: 
+------------------------
+#DirectoryIndex index.php index.html
+
+#Options +FollowSymLinks
+#Options -Indexes
+#ErrorDocument 403 default
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	#RewriteBase /relative/web/path/
+
+	RewriteCond %{REQUEST_FILENAME} -f [OR]
+	RewriteCond %{REQUEST_FILENAME} -d
+	RewriteRule ^(.+) - [PT,L]
+
+	RewriteCond %{REQUEST_URI} !=/favicon.ico
+	RewriteRule ^(.*) index.php
+
+	RewriteCond %{HTTP:Authorization}  !^$
+	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+#php_value register_globals 0
+
+# SVG
+<IfModule mod_mime.c>
+	AddType image/svg+xml  svg svgz
+	AddEncoding gzip       svgz
+</IfModule>
+------------------------
+
+p. Over time your @.htaccess@ file will change as you add your own mod_rewrite rules, or whatever, and the changes will reflect in the diagnostics info display. 
+
+h3. High info display
+
+High diagnostics info display includes the Low info, but adds new data types, including character set info, the number of Textpattern tables you have in your installation (and their status), the number of custom fields, the PHP extensions implemented on your web server, pretext data, and list of Textpattern configuration files from the /textpattern directory, showing their path, revision, and ??? numbers (these files are not shown here, but would be at the end):
+
+bc.. Charset (default/config): (if you don't see a lot of "UTF-8" values on these, you might want to look into that)
+character_set_client:
+character_set_connection:
+character_set_database:
+character_set_filesystem:
+character_set_results:
+character_set_server:
+character_set_system:
+character_sets_dir:
+
+"n" Tables: ("n" being the number that exists, default is ??; value also indicates if tables are "OK" or not)
+
+"n" Custom fields: ("n" being the number of custom fields; value also indicates name of all counted fields)
+
+PHP extensions: (list of extension names/versions your web host has enabled)
+
+pretext_data: (for developer use)
+
+(list of Textile configuration files here to end the High info display)
+
+h2(sec2). Pre-flight checks
+
+The **Pre-flight checks** display is where diagnostic feedback messages appear. The feedback messsages come in three colors, which correspond with the severity of the feedback messages you might see: green (all is good), yellow (warning, heads up), and red (critical).
+
+h3. Green (OK) 
+
+There is only one green message: @All checks passed!@ This is the message you always want to see when you visit the **Diagnostics** panel. The green message displays when successfully troubleshoot any yellow and red feedback messages that might exist otherwise. _Go green!_
 
 h3. Yellow (warning) 
 
-Yellow messages are not indicators of critical emergencies, they simply bring your attention to things that could be better. Address them when you can. 
+Yellow messages are not indicators of critical emergencies, they simply bring your attention to things that could be better. Address them when you can.[1] 
 
-Yellow messages usually appear when you need to remove the @/update@ directory on your server and/or when directories need a change to their rights of access order to function.[2] Following are the yellow messages you will generally see: 
+Yellow messages usually appear when you need to remove the @/update@ directory on your server and/or when directories need a change to their rights of access order to function.[2] 
+
+Following are the yellow messages you will generally see: 
 
 * @/usr/home/{username}/public_html/textpattern/setup/ still exists@ (means you need to remove the "setup" folder from the web server) 
 * @image directory is read-only@ (means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[3]
 
 h3. Red (critical)
 
-Red messages mean something is wrong and you need to fix it immediately for functional or security reasons. Possible red messages include:
+Red messages mean something critical appears to be wrong and you need to troubleshoot it immediately. 
 
-* @path_to_site doesn't match document_root [ /home/yourserveralias/public_html ]@ (could either mean you do not have the right “Site URL” path set in the "Basic preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences, or in the case of upgrading, you still need to update your @index.php@ and/or @.htaccess@ files (see next diagnostic). Could be a false error: Symlinks, unfortunately, cannot be correctly recognized, so you might get this error even though there is not really a problem. Unless you are having actual problems you shouldn't worry too much about this. 
-* @/index.php is inaccessible@ (suggests your @index.php@ file is not available, is not the right version, or that your "Site URL" is wrong, as described previously. It could also mean the @index.php@ file did not directly download during an initial upgrade (for whatever reason). Get the latest copy of @index.php@ from the "current":http://dev.textpattern.com/browser/current/ repository for Textpattern development. 
-* @path_to_site is inaccessible@ (means either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly.
-* @.htaccess file is missing@ (concerns the .htaccess file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or missing _index.php_ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an _.htaccess_ file. If the file is there, then either replace it from current development repository, or click the help link next to this particular message and replace the contents of your existing _.htaccess_ file with the indicated rewrite rules in the help dialog.
-* @Clean URL test failed@ (is is not necessarily an error that will prevent your site from working. It could be caused by the PHP configuration setting of @allow_url_fopen@ or some other hosting issue. See "this FAQ":http://textpattern.com/faq/247/clean-url-test-failed.
+Possible red messages include:
+
+* @path_to_site doesn't match document_root [ /home/yourserveralias/public_html ]@ -- This could either mean you do not have the right “Site URL” path set in "Basic preferences":basic-prefs-panel.textile, or, in the case of upgrading, you still need to update your @index.php@ and/or @.htaccess@ files (see next message). (This could also be a false error. For example, symlinks cannot be correctly recognised, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Undertandably that is not satisfying advice.) 
+* @/index.php is inaccessible@ -- This suggests your @index.php@ file is not available, is not the right version, or that your "Site URL" is set wrong in "Basic preferences":basic-prefs-panel.textile. It could also mean the @index.php@ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics. 
+* @path_to_site is inaccessible@ -- This mmeans either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
+* @.htaccess file is missing@ -- This concerns the @.htaccess@ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing @index.php@ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an @.htaccess@ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing @.htaccess@ file with the indicated rewrite rules in the help dialog.
+* @Clean URL test failed@ -- This is not necessarily an error that will prevent your site from working. It could be caused by the PHP configuration setting of @allow_url_fopen@ or some other hosting issue. See "this FAQ":http://textpattern.com/faq/247/clean-url-test-failed.
 
 fn1. Cascading errors: Feedback messages can often appear because of the appearance of other feedback messages. In other words, one problem might be the cause of another, so by troubleshooting the first problem the second problem will go away too. There's not way to know for sure which issue leads the cascade, so troubleshoot the red (critical) issues first, refreshing the Diagnostics panel as you go, to see if other issues go away. If not, address the remaining yellow issues one-by-one, refreshing the panel accordingly.
 
@@ -43,7 +141,6 @@ fn2. False errors: On rare occasions, yellow messages have been known to appear 
 
 fn3. Folder permissions: A chmod setting of 755 or 711 should word, and is secure. But a lot of people have trouble with this and need to use a chmod of 777, which has "security implications":http://forum.textpattern.com/viewtopic.php?id=26613. The discrepancy is due to how Apache directives are configured on the web server, which means you may have to haggle with your web host to change the directives.
 
-
-h2. FAQ Diagnostics [todo:dw]
+h2(sec3). Getting diagnostics help [todo:dw]
 
 Check the "FAQ Diagnostics":http://textpattern.com/faq/?c=diagnostics.
