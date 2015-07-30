@@ -48,17 +48,35 @@ fn2. The Extensions panel is not a core system panel. It only appears if you ins
 
 h2(sec3). First tasks after intallation or upgrade
 
-When you first log in after an intallation (or upgrade), you'll be taken to the  "Language":admin/preferences-language-panel.textile preferences panel under the "Admin":admin/index.textile area to install (or update) the language packs you choose to use. Be sure you make the language selection(s) _and_ save the changes.
+h3. Language selection
 
-Your next stop should be the "Diagnostics":admin/diagnostics-panel.textile panel to check if there are any warnings are problems to troubleshoot. Then go configure your "Basic preferences":admin/preferences-basic-panel.textile, such as site identity values, time zones, publishing behaviour, and so forth. 
+English is the default installation language for the admin-side of Textpattern. You are given a chance to change this immediately following your first log in. You'll be taken to the "Update languages":admin/preferences-language-panel.textile panel under the **Admin** area to "Install" the additional language(s) you want to use.[3] You'll see a green confirmation message at bottom of screen after each language install. When done, click the yellow **Save** button.
 
-Eventually you'll tackle setting up site architecture and presentation with a little trial and error. Building publishing architectures with Textpattern is a big chunk of learning and tinkering, and there's no direct 1-2-3 method for it, but the learning is fun, and once you understand how it all fits together you'll thank yourself for choosing such an elegant system. See "administration highlights":administration-highlights.textile for getting up to speed with common admin navigation routes and tasks.
+If you install more than one language, you can override the English default by selecting the new default via the drop-down selection box at top of the languages table. Again, save the changes. 
+
+You won't be auto-directed to the **Update languages** panel with each update of your Textpattern installation, but go there anyway when you do update because language packs may have been modified since Textpattern's last version release and you want to implement them if so. You'll easily see the languages you initially installed because they will be labeled as "Update" instead of "Install". Update them all and click the **Save** button when done.
+
+fn3. [todo:dw] Notes about multi-lingual use. 
+
+h3. Configuration of site identity and publishing behavior
+
+Your next stop after languages is "Basic preferences":admin/basic-prefs-panel.textile to configure site identity values, choose time zones and date formats, set necessary file paths, establish desired publishing behaviour, and so forth. Don't worry about getting everything perfect the fist pass. Some things won't be applicable anyway until you've planned your website architecture. Jut focus on the things that you know can be set, and save all changes.
+
+h3. Diagnostics check
+
+When basic preferences are set, go to the "Diagnostics":admin/diagnostics-panel.textile panel to address the warning messages under **Pre-flight checks**, until you get a green, "All checks passed!" feedback messasge.
+
+h3. Build your architecture
+
+Whenall diagnostics checks are clear, you're ready to build your site architecture and presentation with a little trial and error. Building publishing architectures with Textpattern is a big chunk of learning and tinkering, and there's no direct 1-2-3 method for it. But the learning is fun, and once you understand how things all fit together, you'll thank yourself for choosing such an elegant system. 
+
+For further orientation on publishing architecture basics, see "administration highlights":administration-highlights.textile.
 
 h2(sec4). Changing default login panel
 
-After your initial log in to set languages, as described above, the default admin-side landing location changes; you'll find yourself landing on the "Write panel":content/write-panel.textile after loggin in, which is under the "Content":content/index.textile area of the admin-side. The assumption is that once your site is built, you'll want to go straight to the Write panel every time.
+The default admin-side landing location changes once you's initially set your language preferences. You'll find yourself landing on the "Write panel":content/write-panel.textile from that point on, which is the default panel under the "Content":content/index.textile region of the admin-side. The assumption is that once your site is built, you'll want to go straight to writing new articles every time.
 
-You can change the default landing location in "Basic preferences":admin/preferences-basic-panel.textile to whatever admin-side panel you want. Look under the *Admin* section on the Basic preferences panel and find the preference for "Default admin tab".[3] Use the drop-down menu to select the panel you want, then save.
+You can change the default login landing location in "Basic preferences":admin/preferences-basic-panel.textile to whatever admin-side panel you want. In Basic preferences, look under the **Admin** section and find the preference for "Default admin tab".[4] Use the drop-down menu to select the panel you want, then save.
 
-fn3. The presentational theme of the admin-side's organisation was originally conceived as a system of file folders, with each region label depicted as a folder "tab". This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as "tabs" even though they may use an admin theme that does not depict the file folder concept. You'll even see the word "tab" used in the admin-side UI, as in this case, but not only. For purposes of user documentation, "panel" and "tab" mean exactly the same thing, but docs will only use "tab" when a specific reference is being made to the admin-side UI where the word is still encoded.
+fn4. The presentational theme of the admin-side's organisation was originally conceived as a system of file folders, with each region label depicted as a folder "tab". This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as "tabs" even though they may use an admin theme that does not depict the file folder concept. You'll even see the word "tab" used in the admin-side UI, as in this case, but not only. For purposes of user documentation, "panel" and "tab" mean exactly the same thing, but docs will only use "tab" when a specific reference is being made to the admin-side UI where the word is still encoded.
 
