@@ -43,7 +43,7 @@ Low diagnostics info begins with a set of data values about your installation an
 | Server OS: | |
 | Active plugins: | a list of all plugins you have installed that are turned _ON_ |
 
-The installation and server data is followed by the contents of your @.htaccess@ file (from the installation directory). For purposes here we show the file contents from the current version code":https://github.com/textpattern/textpattern/blob/master/.htaccess, which is the part between the two dotted lines below:
+The installation and server data is followed by the contents of your @.htaccess@ file (from the installation directory). For purposes here we show the "file contents from the current version code":https://github.com/textpattern/textpattern/blob/master/.htaccess, which is the part between the two dotted lines below:
 
 bc.. <code>.htaccess</code> file contents: 
 ------------------------
