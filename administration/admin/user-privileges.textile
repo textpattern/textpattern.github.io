@@ -4,7 +4,7 @@ Textpattern provides several types of user account roles, out-of-the-box. These 
 
 h2. Administrator
 
-The administrator is the person who installs and configures the Textpattern software on a web server. They have access to every feature and the right to modify any of them, as well the ability to create, manage, and delete every other user account. The administrator is the most powerful user.
+The administrator is the person who installs and configures the Textpattern software on a web server. As the first user account in the system, the administrator can access and modify any feature, as well create, manage, and delete other user accounts. The administrator is the most powerful user.
 
 h2. Publisher
 
