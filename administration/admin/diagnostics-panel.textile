@@ -103,15 +103,15 @@ The last item above reflects a long list of Textpattern configuration files whic
 
 h2(#sec2). Pre-flight checks
 
-The **Pre-flight checks** display is where diagnostic feedback messages appear. The feedback messsages come in three colors, which correspond with the severity of the feedback messages you might see: green (all is good), yellow (warning, heads up), and red (critical).
+The **Pre-flight checks** display is where diagnostic feedback messages appear. The feedback messsages come in three colors, which correspond with the severity of the feedback messages you might see: green (all is good), yellow (warning, heads up), and red (critical).[1]
 
 h3. Green (OK) 
 
-There is only one green message: @All checks passed!@ This is the message you always want to see when you visit the **Diagnostics** panel. The green message displays when successfully troubleshoot any yellow and red feedback messages that might exist otherwise. _Go green!_
+There is only one green message: @All checks passed!@ This is the message you always want to see when you visit the **Diagnostics** panel. The green feedback message displays when you successfully troubleshoot any yellow and red feedback messages that might exist otherwise. _Go green!_
 
 h3. Yellow (warning) 
 
-Yellow messages are not indicators of critical emergencies, they simply bring your attention to things that could be better. Address them when you can.[1] 
+Yellow messages are not critical emergencies, but some may indicate problems that may prevent you from doing something in particular, such as upload files to your /files directory. 
 
 Yellow messages usually appear when you need to remove the @/update@ directory on your server and/or when directories need a change to their rights of access order to function.[2] 
 
@@ -132,9 +132,9 @@ Possible red messages include:
 * @.htaccess file is missing@ -- This concerns the @.htaccess@ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing @index.php@ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an @.htaccess@ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing @.htaccess@ file with the indicated rewrite rules in the help dialog.
 * @Clean URL test failed@ -- This is not necessarily an error that will prevent your site from working. It could be caused by the PHP configuration setting of @allow_url_fopen@ or some other hosting issue. See "this FAQ":http://textpattern.com/faq/247/clean-url-test-failed.
 
-fn1. Cascading errors: Feedback messages can often appear because of the appearance of other feedback messages. In other words, one problem might be the cause of another, so by troubleshooting the first problem the second problem will go away too. There's not way to know for sure which issue leads the cascade, so troubleshoot the red (critical) issues first, refreshing the Diagnostics panel as you go, to see if other issues go away. If not, address the remaining yellow issues one-by-one, refreshing the panel accordingly.
+fn1. Cascading errors: Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
 
-fn2. False errors: On rare occasions, yellow messages have been known to appear but not go away when addressed as instructed by their help information. Textpattern developers have indicated this can happen in odd situations and is almost always a false warning, meaning there isn't anything to worry about. If you ever have this problem, post about it in the "Troubleshooting forum":http://forum.textpattern.com/viewforum.php?id=67 and someone will try to help.
+fn2. False errors: On rare occasions, yellow and red messages have been known to appear but not go away when addressed as instructed by their help information. Textpattern developers have indicated this can happen in odd situations and is almost always a false warning when it does, meaning there isn't anything to worry about. If you ever have this problem and can't seem to resolve it, post about it in the "Troubleshooting forum":http://forum.textpattern.com/viewforum.php?id=67 and someone will try to help.
 
 fn3. Folder permissions: A chmod setting of 755 or 711 should word, and is secure. But a lot of people have trouble with this and need to use a chmod of 777, which has "security implications":http://forum.textpattern.com/viewtopic.php?id=26613. The discrepancy is due to how Apache directives are configured on the web server, which means you may have to haggle with your web host to change the directives.
 
