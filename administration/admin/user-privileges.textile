@@ -1,24 +1,24 @@
-\n
+h1. User roles and associated privileges
 
-h4(#site_admin_subtab). Site Admin Subtab
+Textpattern provides several types of user account roles, out-of-the-box. These roles and their associated admin-side rights of access and abilitities are described here from most powerful to least.
 
-Information controled on the site admin subtab is pretty straightforward. This page permits a user to change his or her password and e-mail address. As an administrator, the user can additionally create new user accounts and change the account type.
+h2. Administrator
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:site_admin.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:site_admin.png
+The administrator is the person who installs and configures the Textpattern software on a web server. They have access to every feature and the right to modify any of them, as well the ability to create, manage, and delete every other user account. The administrator is the most powerful user.
 
-The account types are: *Publisher*
+h2. Publisher
 
+The publisher role has the same rights and abilities as the administrator -- no restrictions to any location or feature -- with the sole exception that a publisher can not delete or demote the adminstrator account.
 
 * can create, edit or delete any article, link or comment
 * can change article status
 * can edit site preferences
 * has access to all site design areas
 * can edit sections and categories
-* can add and remove authors
+* can add and remove other user accounts (except the administrator)
 * can grant and restrict privileges
 
-*Managing Editor*
-
+h2. Managing editor
 
 * can edit and delete any article, link or comment
 * can change article status from Pending to Live
@@ -26,29 +26,27 @@ The account types are: *Publisher*
 * has access to all site design areas
 * can edit sections and categories
 
-*Copy Editor*
-
+h2. Copy editor
 
 * can edit any article, link or comment
 * can edit page Page and Form HTML
 
-*Staff Writer*
-
+h2. Staff writer
 
 * can create, edit, publish and delete own articles
 * can upload images
 
-*Freelancer*
-
+h2. Freelancer
 
 * can create and edit own articles
 * can change article status from Draft to Pending
 
-*Designer*
-
+h2. Designer
 
 * can edit Page HTML, Forms, and CSS
 
-*None*
+h2. None
+
+This option allows removing all privileges on a given user account without actually deleting the account from the CMS. This is a good option, for example, if you run a multi-author site of some kind, and an author leaves the collaboration effort/team. You can freeze their account so they can't add/modify/undo anything, while still keepiong their name on their past published work.
 
 
