@@ -1,4 +1,4 @@
-h1. Diagnostics [todo:dw]
+h1. Diagnostics
 
 The **Diagnostics** panel is an important panel for troubleshooting potential problems with your Textpattern installation, such as you might discover when installing or upgrading to a new version. They can also be useful for troubleshooting functional problems that you may have introduced by accident when extending the system, modifying the .htaccess file, and so forth.
 
@@ -35,9 +35,9 @@ Low diagnostics info begins with a set of data values about your installation an
 | DST enabled?: | |
 | Automatically adjust DST setting?: | |
 | Time zone: | your time zone |
-| MySQL: | |
+| MySQL: | version and build of your MySQL database server |
 | Locale: | the language and character set you have configured |
-| Server: | |
+| Server: | version and build of your web server |
 | PHP server API: | |
 | RFC 2616 headers: | |
 | Server OS: | |
