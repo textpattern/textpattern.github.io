@@ -1,6 +1,6 @@
 h1. User roles and associated privileges
 
-Textpattern provides several types of user account roles, out-of-the-box. These roles and their associated admin-side rights of access and abilitities are described here from most powerful to least.
+Textpattern provides several types of user account roles, out-of-the-box. These roles and their associated abilitities are described here from most powerful to least.
 
 h2. Administrator
 
