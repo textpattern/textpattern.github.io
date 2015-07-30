@@ -12,13 +12,11 @@ On this page:
 
 h2(#sec1). Diagnostic info display
 
-The actual diagnostics information is displayed in the **Diagnostics info** field. The volume of details displayed may be set to "Low" (the default) or "High", which you can toggle between using the **Detail** selection control at bottom of the info display field.
+The actual diagnostics information is displayed in the **Diagnostics info** field. The volume of details displayed may be set to "Low" (the default) or "High", which you can toggle between using the **Detail** selection control at bottom of the info display field. The convenience of having all this data immediatly available in the **Diagnostics** panel for quick reference is invaluable, which you'll realise more over time.
 
 h3. Low info display
 
-Low diagnostics info begins with a set of valuble data values about your installation and web server technology, and then finishes with the contents of your @.htaccess@ file in the installation directory. The convenience of having all this data immediatly available here for quick reference is invaluable, which you'll realise more over time.
-
-Low info display begins with the following installation and server data. A few value descriptions are provided here for general understanding, but most should be obvious.
+Low diagnostics info begins with a set of data values about your installation and web server technology. A few value descriptions are provided here for general understanding, but most should be obvious.
 
 |_. Data item |_. What it tells you |
 | Textpattern version: | whatever version you have installed |
@@ -45,7 +43,7 @@ Low info display begins with the following installation and server data. A few v
 | Server OS: | |
 | Active plugins: | a list of all plugins you have installed that are turned _ON_ |
 
-The installation and server data is followed by the contents of your @.htaccess@ file (from the installation directory), which for purposes here is the "@.htaccess@ file contents":https://github.com/textpattern/textpattern/blob/master/.htaccess for a new installation. The actual file content is the part between the two dotted lines:
+The installation and server data is followed by the contents of your @.htaccess@ file (from the installation directory). For purposes here we show the file contents from the current version code":https://github.com/textpattern/textpattern/blob/master/.htaccess, which is the part between the two dotted lines below:
 
 bc.. <code>.htaccess</code> file contents: 
 ------------------------
