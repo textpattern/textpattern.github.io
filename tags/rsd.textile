@@ -1,14 +1,4 @@
----
-layout: document
-category: tag-reference
-published: true
-title: "Rsd"
-tags:
-  - Tag reference
-  - Article tags
----
-
-h1. Rsd
+h1. Rsd DEPRECATED [todo:pw]
 
 h2. Syntax
 

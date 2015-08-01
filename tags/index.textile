@@ -193,7 +193,6 @@ h3. R
 * "recent articles":recent-articles
 * "recent comments":recent-comments
 * "related articles":related-articles
-* "rsd":rsd
 
 h3. S
 
