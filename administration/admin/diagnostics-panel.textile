@@ -2,7 +2,7 @@ h1. Diagnostics
 
 The **Diagnostics** panel is important for troubleshooting problems with your Textpattern installation, such as you might discover when installing or upgrading to a new version. They can also be useful for troubleshooting functional problems that you may have introduced by accident when extending the system, modifying the .htaccess file, or some other slight of hand.
 
-The **Diagnostics** panel is composed of two display regions: **Pre-flight checks** and **Diagnostics info**. Though the latter comes after the former in the panel, it may be useful to talk about them in reverse here.
+The **Diagnostics** panel is composed of two display regions: **Pre-flight checks** and **Diagnostic info**. Though the latter comes after the former in the panel, it may be useful to talk about them in reverse here.
 
 On this page:
 
@@ -97,7 +97,7 @@ High diagnostics info display includes the Low info above, but adds the followin
 | "n" Custom fields: |"n" being the number of custom fields; value also indicates name of all counted fields |
 | PHP extensions: | list of extension names/versions your web host has enabled |
 | pretext_data: | value is a piece of code; useful for developers to evaluate |
-| {/textpattern files, not shown here} | list of Textpattern configuration files from the /textpattern directory; indicates file path, revision number, and ??? number |
+| {/textpattern files, not shown here} | list of Textpattern configuration files from the /textpattern directory; indicates file path, revision number, and MD5 Checksum hash number |
 
 The last item above reflects a long list of Textpattern configuration files which makes up the end of the High info data shown.
 
