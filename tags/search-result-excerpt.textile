@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Search result excerpt"
+tags:
+  - Tag reference
+  - Search tags
+---
+
 h1. Search result excerpt
 
 h2. Syntax

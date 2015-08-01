@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Site url"
+tags:
+  - Tag reference
+  - Markup tags
+---
+
 h1. Site url
 
 h2. Syntax
