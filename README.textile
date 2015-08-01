@@ -8,7 +8,9 @@ On this page are guidelines for doc authors:
 * "Filename (URL) conventions":#sec1
 * "Document page structure":#sec2
 * "Concise copywriting tips":#sec3
-* "Typo gotchas to watch out for":#sec4
+* "Brand identity":#sec4
+* "Admin-side UI text elements (names, headings, labels, options...)":#sec5
+* "Typo gotchas to watch out for":#sec6
 
 h2(#sec1). Filename (URL) conventions
 
@@ -48,30 +50,30 @@ To improve the ability to scan pages as described above, write as concisely as y
 # Remove words from your sentences until you can't remove anymore for the meaning to remain clear.
 # Break long, multi-clause sentences into shorter sentences. (Careful here, though, sometimes a single longer sentence can read more smoothly if it's free of needless word bloat. Multiple shorter sentences doesn't mean result in choppy stilted reading. Use your best judgement.)
 
-h2(#sec4). Typo gotchas to watch out for
-
-* User docs are written using "British English spelling and punctuation":https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences conventions. But don't kill yourself over it.
-* Use "login" and "logout" when it's a noun (e.g., "the login location"). 
-* Use "log in" and "log out" when it's a verb (e.g., "after you log in" or "after logging in").
-
-Regarding brand identity:
+h2(#sec4). Brand identity
 
 * Do not use "Txp" and "TXP". While these pet uses are convenient in the support forum, they lend confusion to brand awareness in official docs. The world is still confused between "Textpattern" vs. "TextPattern", for example. Always spell "Textpattern" out fully. This will also help you see if you're using the name too repetitively, which can be a sentence bloat problem.
 
-Regarding dialogue and labels in the admin-side UI:[1]
+h2(#sec5). Admin-side UI text elements (names, headings, labels, options...)
 
-* Do not use "tab" (use "panel") when talking about the admin-side panels unless you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab"). Here's why: The presentational theme of the admin-side was originally conceived as a set of manilla file folders, with each region label depicted as a folder “tab”. This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as “tabs” even though they may use an admin theme that does not depict the file folder concept. New docs should not perpetuate that false concept and terminology, particularly as the file folder concept is not depicted in the admin-side navigation of the official admin-side theme -- Hive. The use of “tab” in the admin-side UI, such as in preferences, help dialogue, and so forth, is probably only clear to veteran Textpattern users. When/if the admin-side UI is cleaned of all use of the word "tab", then docs can be fully cleaned of the use as well, but we can get most of the way there by only using "tab" when it's in direct reference of an UI element label.
+Important rules for consistency, which also has implications for plugin authors.[1]
+
 * When referring to admin-side panel names, panel section headers, form control labels, and button labels, spell the name exactly as it appears in the panel and make it bold (double-asterisks each side in Textile). For example:
 ** Non-linked text: @The articles table on the **Articles** panel shows article IDs, titles, dates posted, the sections they're in, and their current status.@
 ** Linked text: @See all your articles listed in the **"Articles":#** panel.@
 * When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: @You can control widowed words in article titles by selecting "Yes" on the "__Prevent widowed words in article titles?__" preference.@ 
 * When referring to a form control options (e.g, select-menu options, radio button options, etc) or any other non-header UI dialogue, quote the text and leave it in normal format. For example: @When you're ready to publish your draft, change status to "Live" and click the *Save* button*.@
 * When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.[2]
+* When referring to file names, make them italic (double underscores) and include the extension. For example: __.htaccess__ and __index.php__. *Do not make them appear as code, unless they are part of a code snippet.**
 
 fn1. Plugin authors must follow panel UI text capitalization rules, which is _sentence case_.
 
-fn2. There should be three CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type, even providing the background color. 
+fn2. There should be three CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type, even providing the background color.
 
-Regarding other kinds of system names:
+h2(#sec6). Typo gotchas to watch out for
 
-* When referring to file names, make them italic (double underscores) and include the extension. For example: __.htaccess__ and __index.php__. *Do not make them appear as code, unless they are part of a code snippet.**
+* User docs are written using "British English spelling and punctuation":https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences conventions. But don't kill yourself over it.
+* Use "login" and "logout" when it's a noun (e.g., "the login location"). 
+* Use "log in" and "log out" when it's a verb (e.g., "after you log in" or "after logging in").
+* Do not use "tab" (use "panel") when talking about the admin-side panels unless you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab"). Here's why: The presentational theme of the admin-side was originally conceived as a set of manilla file folders, with each region label depicted as a folder “tab”. This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as “tabs” even though they may use an admin theme that does not depict the file folder concept. New docs should not perpetuate that false concept and terminology, particularly as the file folder concept is not depicted in the admin-side navigation of the official admin-side theme -- Hive. The use of “tab” in the admin-side UI, such as in preferences, help dialogue, and so forth, is probably only clear to veteran Textpattern users. When/if the admin-side UI is cleaned of all use of the word "tab", then docs can be fully cleaned of the use as well, but we can get most of the way there by only using "tab" when it's in direct reference of an UI element label.
+
