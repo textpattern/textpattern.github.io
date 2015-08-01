@@ -8,6 +8,7 @@ On this page are guidelines for doc authors:
 * "Filename (URL) conventions":#sec1
 * "Document page structure":#sec2
 * "Concise copywriting tips":#sec3
+* "Typo gotchas to watch out for":#sec4
 
 h2(#sec1). Filename (URL) conventions
 
@@ -47,7 +48,7 @@ To improve the ability to scan pages as described above, write as concisely as y
 # Remove words from your sentences until you can't remove anymore for the meaning to remain clear.
 # Break long, multi-clause sentences into shorter sentences. (Careful here, though, sometimes a single longer sentence can read more smoothly if it's free of needless word bloat. Multiple shorter sentences doesn't mean result in choppy stilted reading. Use your best judgement.)
 
-h2(sec4). Typo gotchas to watch out for
+h2(#sec4). Typo gotchas to watch out for
 
 * User docs are written using "British English spelling and punctuation":https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences conventions. But don't kill yourself over it.
 * Use "login" and "logout" when it's a noun (e.g., "the login location"). 
