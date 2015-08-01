@@ -6,6 +6,7 @@ title: "Meta author"
 tags:
   - Tag reference
   - Article tags
+  - Markup tags
 ---
 
 h1. Meta author

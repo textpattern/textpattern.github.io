@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "If plugin"
+tags:
+  - Tag reference
+  - Conditional tags
+---
+
 h1. If plugin
 
 h2. Syntax

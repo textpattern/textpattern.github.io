@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Link to home"
+tags:
+  - Tag reference
+  - Navigation tags
+---
+
 h1. Link to home
 
 h2. Syntax

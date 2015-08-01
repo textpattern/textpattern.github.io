@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Link author"
+tags:
+  - Tag reference
+  - Link tags
+---
+
 h1. Link author
 
 h2. Syntax

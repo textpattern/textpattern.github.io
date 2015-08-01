@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Php"
+tags:
+  - Tag reference
+  - Programmer tags
+---
+
 h1. Php
 
 h2. Syntax

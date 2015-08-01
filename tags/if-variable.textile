@@ -1,3 +1,14 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "If variable"
+tags:
+  - Tag reference
+  - Conditional tags
+  - Programmer tags
+---
+
 h1. If variable
 
 h2. Syntax

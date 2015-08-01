@@ -6,6 +6,7 @@ title: "Permlink"
 tags:
   - Tag reference
   - Article tags
+  - Navigation tags
 ---
 
 h1. Permlink

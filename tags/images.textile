@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Images"
+tags:
+  - Tag reference
+  - Image tags
+---
+
 h1. Images
 
 h2. Syntax
