@@ -39,7 +39,7 @@ bc. <head>
     ....
 </head>
 
-Other tags used: "meta_keywords":meta-keywords.textile, "if_individual_article":if-individual-article.textile, "else":else.textile.
+Other tags used: "meta_keywords":meta-keywords, "if_individual_article":if-individual-article, "else":else.
 
 h2. Genealogy
 

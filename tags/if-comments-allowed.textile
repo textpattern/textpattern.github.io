@@ -25,9 +25,9 @@ The tag will execute the contained statements if comments are allowed for a give
 
 This tag can be used in pages, or in article or comment forms; though it will allow you to use an @id@ attribute in a comment form, the default behavior (no attribute) will ensure consistency in comment/article matching when viewing an individual article.
 
-When used in a page template, it will test the article identified by the attribute for status and act, or not, according to that status. It will not pass the @id@ attribute to the contained statement, such as "comments":comments.textile or "comments_form":comments-form.textile, they must be added as attributes to the contained tag.
+When used in a page template, it will test the article identified by the attribute for status and act, or not, according to that status. It will not pass the @id@ attribute to the contained statement, such as "comments":comments or "comments_form":comments-form, they must be added as attributes to the contained tag.
 
-This tag is mainly used in combination with "if_comments_disallowed":if-comments-disallowed.textile.
+This tag is mainly used in combination with "if_comments_disallowed":if-comments-disallowed.
 
 h2. Attributes
 
@@ -47,7 +47,7 @@ bc.. <txp:if_comments_allowed>
 
 p. Comments for articles can be turned off or on at the author's discretion for any article that is published; by using the following scheme in an article form, you can still have the on/off control over comments while also giving an indication of the comment status.
 
-Other tags used: "comments_form":comments-form.textile, "if_comments_disallowed":if-comments-disallowed.textile.
+Other tags used: "comments_form":comments-form, "if_comments_disallowed":if-comments-disallowed.
 
 h3. Example 2: Display a list of IDs
 
@@ -63,4 +63,4 @@ bc. <txp:comment_id />
 
 Displays a list of id numbers for comments on the current article, if comments are currently allowed.
 
-Other tags used: "comments":comments.textile, "else":else.textile, "comment_id":comment-id.textile.
+Other tags used: "comments":comments, "else":else, "comment_id":comment-id.

@@ -16,7 +16,7 @@ bc. <txp:prev_title />
 
 The *prev_title* tag is a _single_ tag which Textpattern will replace with the name (text) of the previous article in the sort order.
 
-The container tag "link_to_prev":link-to-prev.textile wraps the text or tag and assigns the link.
+The container tag "link_to_prev":link-to-prev wraps the text or tag and assigns the link.
 
 h2. Attributes
 
@@ -30,4 +30,4 @@ bc. <txp:link_to_prev>
     <txp:prev_title />
 </txp:link_to_prev>
 
-Other tags used: "link_to_prev":link-to-prev.textile.
+Other tags used: "link_to_prev":link-to-prev.

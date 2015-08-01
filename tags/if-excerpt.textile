@@ -35,4 +35,4 @@ bc. <txp:if_excerpt>
     <txp:excerpt />
 </txp:if_excerpt>
 
-Other tags used: "excerpt":excerpt.textile.
+Other tags used: "excerpt":excerpt.

@@ -72,7 +72,7 @@ bc. <h1>
 
 In this example, keywords are used in a Textpattern 'article' type [[Form template]] along with other article components. The keywords themselves are used like a list of topical 'tags', e.g., like you would use for more granular searching. The keywords would be presented above the article's excerpt.
 
-Other tags used: "permlink":permlink.textile, "title":title.textile, "posted":posted.textile, "excerpt":excerpt.textile, "body":body.textile.
+Other tags used: "permlink":permlink, "title":title, "posted":posted, "excerpt":excerpt, "body":body.
 
 h2. Genealogy
 

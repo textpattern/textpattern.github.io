@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:link_date />
 
-The *link_date* tag is a _single_ tag which returns the date the link was created as text. This tag is used in a 'links' type form or inside the "linklist":linklist.textile container tag to display information about the current link.
+The *link_date* tag is a _single_ tag which returns the date the link was created as text. This tag is used in a 'links' type form or inside the "linklist":linklist container tag to display information about the current link.
 
 h2. Attributes
 
@@ -32,4 +32,4 @@ bc. <a class="awesome-links" href="<txp:link_url />">
 </a>
 (<txp:link_date />)
 
-Other tags used: "link_name":link-name.textile, "link_url":link-url.textile.
+Other tags used: "link_name":link-name, "link_url":link-url.

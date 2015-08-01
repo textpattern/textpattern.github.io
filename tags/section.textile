@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:section>
 
-The *section* tag can be used as either a _single_ tag or _container_ tag. It will display information about the section as defined by either the @name@ attribute, the section currently being viewed, or the section of the article being displayed (if used within a Textpattern 'article' type [[Form template]], or an "if_individual_article":if-individual-article.textile conditional tag).
+The *section* tag can be used as either a _single_ tag or _container_ tag. It will display information about the section as defined by either the @name@ attribute, the section currently being viewed, or the section of the article being displayed (if used within a Textpattern 'article' type [[Form template]], or an "if_individual_article":if-individual-article conditional tag).
 
 When used as a containing tag, it will turn the contents into a link to that section. Otherwise, it will return plain text.
 

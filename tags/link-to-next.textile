@@ -25,7 +25,7 @@ bc. <txp:link_to_next>
     <txp:next_title />
 </txp:link_to_next>
 
-Other tags used: "next_title":next-title.textile.
+Other tags used: "next_title":next-title.
 
 h3. Example 2: Link to next article using static text
 
@@ -35,7 +35,7 @@ bc. <txp:link_to_next showalways="1">
 
 This will always display the text 'Next', even when there is no next article.
 
-p(alert-block information). Note: While @showalways@ will enable this tag to display what is wrapped inside it, next_title":next-title.textile returns nothing if there is no next title, so nothing is displayed. Use text, or the returned value, that you need displayed.
+p(alert-block information). Note: While @showalways@ will enable this tag to display what is wrapped inside it, next_title":next-title returns nothing if there is no next title, so nothing is displayed. Use text, or the returned value, that you need displayed.
 
 h3. Example 3: Customising links
 
@@ -47,4 +47,4 @@ bc. <a class="link--next" href="<txp:link_to_next />" title="<txp:next_title />"
     Next article →
 </a>
 
-Other tags used: "next_title":next-title.textile.
+Other tags used: "next_title":next-title.

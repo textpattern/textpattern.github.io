@@ -28,4 +28,4 @@ bc. <h3>
 
 Used in a search results form, this offers a search result entry comprising a hyperlinked article title, and the date that article was posted.
 
-Other tags used: "title":title.textile, "permlink":permlink.textile, "posted":posted.textile.
+Other tags used: "title":title, "permlink":permlink, "posted":posted.

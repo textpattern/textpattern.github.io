@@ -47,4 +47,4 @@ bc.. <h3>
     <img src="http://example.com/footer.jpg" alt="Footer">
 </txp:if_last_article>
 
-p. Other tags used: "permlink""permlink.textile, "title":title.textile, "posted":posted.textile, "author":author.textile, "body":body.textile, "comments_invite":comments-invite.textile.
+p. Other tags used: "permlink""permlink, "title":title, "posted":posted, "author":author, "body":body, "comments_invite":comments-invite.

@@ -35,7 +35,7 @@ bc. <txp:images category="mammals">
     </div>
 </txp:images>
 
-Other tags used: "images":images.textile, "image_url":image-url.textile, "image_info":image-info.textile, "thumbnail":thumbnail.textile.
+Other tags used: "images":images, "image_url":image-url, "image_info":image-info, "thumbnail":thumbnail.
 
 h2. Genealogy
 

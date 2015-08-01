@@ -41,7 +41,7 @@ bc. <head>
     ....
 </head>
 
-Other tags used: "meta_description":meta-description.textile.
+Other tags used: "meta_description":meta-description.
 
 h2. Genealogy
 

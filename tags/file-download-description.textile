@@ -45,7 +45,7 @@ bc. <p>
     <txp:file_download_description />
 </p>
 
-Other tags used: "text":text.textile.
+Other tags used: "text":text.
 
 h2. Genealogy
 

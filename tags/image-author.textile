@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:image_author />
 
-The *image_author* tag is a _single_ tag that Textpattern will replace with the author's name associated with the current image in an "images":images.textile list. It can *only* be used inside @<txp:images />@.
+The *image_author* tag is a _single_ tag that Textpattern will replace with the author's name associated with the current image in an "images":images list. It can *only* be used inside @<txp:images />@.
 
 h2. Attributes
 
@@ -50,7 +50,7 @@ bc. txp:images category="mammals">
     </div>
 </txp:images>
 
-Other tags used: "images":images.textile, "thumbnail":thumbnail.textile.
+Other tags used: "images":images, "thumbnail":thumbnail.
 
 h3. Example 2: Link to author list
 
@@ -65,7 +65,7 @@ bc. <txp:images category"fish">
 
 Displays thumbnails and author info for each image in the @fish@ category. The authors' names are hyperlinked to @example.com/author/image/User+Name@.
 
-Other tags used: "images":images.textile, "thumbnail":thumbnail.textile.
+Other tags used: "images":images, "thumbnail":thumbnail.
 
 h2. Genealogy
 

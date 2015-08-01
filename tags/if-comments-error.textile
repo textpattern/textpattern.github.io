@@ -35,4 +35,4 @@ bc. <txp:if_comments_error>
     <txp:comments_error />
 </txp:if_comments_error>
 
-Other tags used: "comments_error":comments-error.textile.
+Other tags used: "comments_error":comments-error.

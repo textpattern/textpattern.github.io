@@ -6,7 +6,7 @@ bc. <txp:output_form />
 
 The *output_form* tag can be used as a _single_ or a _container_ tag. Textpattern will replace this tag with the content resulting from the form template called by the tag.
 
-For the container tag usage, see the "yield":yield.textile tag.
+For the container tag usage, see the "yield":yield tag.
 
 h2. Attributes
 

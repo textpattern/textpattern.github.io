@@ -35,7 +35,7 @@ bc. <txp:if_expires>
     This article expires on <txp:expires />.
 </txp:if_expires>
 
-Other tags used: "expires":expires.textile.
+Other tags used: "expires":expires.
 
 h2. Genealogy
 

@@ -23,7 +23,7 @@ bc. <txp:if_author>
 
 The tag will execute the contained statement *if* the called page is the result of an article search by a specific author's name.
 
-p(alert-block information). This is *not* the same as checking if the current article was written (posted) by the given author. Use "if_article_author":if-article-author.textile for that situation.
+p(alert-block information). This is *not* the same as checking if the current article was written (posted) by the given author. Use "if_article_author":if-article-author for that situation.
 
 h2. Attributes
 
@@ -52,7 +52,7 @@ bc. <txp:if_author name="admin">
     <link rel="stylesheet" href="<txp:css />" media="screen">
 </txp:if_author>
 
-Other tags used: "else":else.textile, "css":css.textile.
+Other tags used: "else":else, "css":css.
 
 h2. Genealogy
 

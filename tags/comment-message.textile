@@ -32,4 +32,4 @@ bc. <txp:comment_message />
     </txp:comment_permlink>
 </p>
 
-Other tags used: "comment_email":comment-email.textile, "comment_id":comment-id.textile, "comment_permlink":comment-permlink.textile.
+Other tags used: "comment_email":comment-email, "comment_id":comment-id, "comment_permlink":comment-permlink.

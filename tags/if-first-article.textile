@@ -49,7 +49,7 @@ bc. <h3>
 
 Displays a link to the header of the first article in an article list.
 
-Other tags used: "permlink":permlink.textile, "title":title.textile, "author":author.textile, "posted":posted.textile, "section":section.textile, "body":body.textile, "comments_invite":comments-invite.textile.
+Other tags used: "permlink":permlink, "title":title, "author":author, "posted":posted, "section":section, "body":body, "comments_invite":comments-invite.
 
 h3. Example 2: Add a class to a list item
 
@@ -61,4 +61,4 @@ bc. <li<txp:if_first_article> class="first"</txp:if_first_article>>
 
 Adds a CSS class to the first article in an article list.
 
-Other tags used: "permlink":permlink.textile, "title":title.textile.
+Other tags used: "permlink":permlink, "title":title.

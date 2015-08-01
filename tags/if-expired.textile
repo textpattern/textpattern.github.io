@@ -41,7 +41,7 @@ bc. <txp:if_expired>
     </txp:if_expires>
 </txp:if_expired>
 
-Other tags used: "else":else.textile, "expires":expires.textile, "if_expires":if_expires.textile.
+Other tags used: "else":else, "expires":expires, "if_expires":if_expires.
 
 h2. Genealogy
 

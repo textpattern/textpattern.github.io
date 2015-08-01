@@ -16,7 +16,7 @@ bc. <txp:excerpt />
 
 The *excerpt* tag is a _single_ tag which is used to return the excerpt text, if any, associated with the article being displayed.
 
-The conditional tag "if_excerpt":if-excerpt.textile can be used to check if there is an excerpt.
+The conditional tag "if_excerpt":if-excerpt can be used to check if there is an excerpt.
 
 h2. Attributes
 
@@ -46,7 +46,7 @@ bc. <txp:if_article_list>
     </div>
 </txp:if_article_list>
 
-Other tags used: "body":body.textile, "else":else.textile, "if_article_list":if-article-list.textile, "if_excerpt":if-excerpt.textile, "permlink":permlink.textile, "title":title.textile.
+Other tags used: "body":body, "else":else, "if_article_list":if-article-list, "if_excerpt":if-excerpt, "permlink":permlink, "title":title.
 
 h3. Example 2: Display the excerpt text or a default link
 
@@ -61,4 +61,4 @@ bc. <txp:if_excerpt>
     </p>
 </txp:if_excerpt>
 
-Other tags used: "else":else.textile, "if_excerpt":if-excerpt.textile, "section":section.textile.
+Other tags used: "else":else, "if_excerpt":if-excerpt, "section":section.

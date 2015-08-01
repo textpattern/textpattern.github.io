@@ -42,4 +42,4 @@ bc. <txp:if_comments_error>
     <txp:comments_error break="li" wraptag="ul" />
 </txp:if_comments_error>
 
-Other tags used: "if_comments_error":if-comments-error.textile.
+Other tags used: "if_comments_error":if-comments-error.

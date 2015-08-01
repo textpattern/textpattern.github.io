@@ -52,4 +52,4 @@ bc. <txp:if_article_section name"poetry">
 
 Display the welcome text if the article's section matches @poetry@, or shows a default link otherwise.
 
-Other tags used: "else":else.textile.
+Other tags used: "else":else.

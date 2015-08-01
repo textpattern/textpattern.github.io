@@ -17,7 +17,7 @@ bc. <txp:category2 />
 
 The *category2* tag can be used as either a _single_ tag or _container_ tag. It will display information of the category as defined by *Category 2* of the article being displayed. When used as a containing tag, it will turn the contents into a link to that category. Otherwise, it will return plain text.
 
-This tag may be used within either an article form, or in a page, wrapped in an "if_individual_article":if-individual-article.textile conditional tag.
+This tag may be used within either an article form, or in a page, wrapped in an "if_individual_article":if-individual-article conditional tag.
 
 h2. Attributes
 
@@ -85,7 +85,7 @@ bc. <p>
 
 Shows a hyperlinked category 1, and also hyperlinked category 2 but only if it is used.
 
-Other tags used: "category1":category1.textile, "if_article_category":if-article-category.textile.
+Other tags used: "category1":category1, "if_article_category":if-article-category.
 
 h2. Genealogy
 

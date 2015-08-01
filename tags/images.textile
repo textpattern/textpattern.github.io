@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:images />
 
-The *images* tag is a _single_ or _container_ tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern [[Images page]]. Utilising the other image tags in the suite "image_info":image-info.textile, "image_url":image-url.textile, "image_date":image-date.textile and "if_thumbnail":if-thumbnail.textile) you can display simple image galleries from this list.
+The *images* tag is a _single_ or _container_ tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern [[Images page]]. Utilising the other image tags in the suite "image_info":image-info, "image_url":image-url, "image_date":image-date and "if_thumbnail":if-thumbnail) you can display simple image galleries from this list.
 
 If used as a _container_ tag, it must be specified as an opening and closing pair of tags, like this:
 
@@ -40,7 +40,7 @@ Filter the images by this list of category names as defined in the [[Categories 
 Filter the images by this list of image extensions, including the leading dot. Example: @extension=".jpg, .png"@.
 Default: unset.
 * @form="form name"@
-Use specified form template to process each image. If not used, and the container is empty, the tag will output a list of images that are compatible with "image_display":image-display.textile.
+Use specified form template to process each image. If not used, and the container is empty, the tag will output a list of images that are compatible with "image_display":image-display.
 Default: unset.
 * @html_id="id number"@
 The HTML @id@ attribute applied to the @wraptag@, if set, otherwise to the @img@ tag.
@@ -59,7 +59,7 @@ Default: unset.
 The number of images to skip.
 Default: @0@ (only effective if @limit@ is set).
 * @pageby="integer" (or "limit")@
-The number of images to jump forward or back when an "older":older.textile or "newer":newer.textile link is clicked. Without this attribute, pagination is not available; you will simply see @limit@ images. You may specify @pageby="limit"@ to allow pagination to automatically follow the value of the @limit@ attribute. Note: "newer":newer.textile and "older":textile will paginate all content types at once.
+The number of images to jump forward or back when an "older":older or "newer":newer link is clicked. Without this attribute, pagination is not available; you will simply see @limit@ images. You may specify @pageby="limit"@ to allow pagination to automatically follow the value of the @limit@ attribute. Note: "newer":newer and "older":textile will paginate all content types at once.
 Default: unset.
 * @realname="author name"@
 Filter the image list so it only includes images uploaded by this list of author real names. The author names may be URL encoded (e.g. @realname="John+Smith"@) and thus could be read from the current @example.com/author/author+name@ URL. Note that this attribute may incur one extra query per name, so if it is possible to use the raw author instead it will be faster.
@@ -210,7 +210,7 @@ bc. <txp:images category="birds, mammals" thumbnail="1" sort="category asc">
 
 Shows the thumbnail of each image that has an assigned thumbnail image from the 'mammals' and 'birds' categories and, beneath each, show its dimensions 'width' x 'height' along with the author of the image. Since the list has been sorted by category, the @<txp:if_different>@ conditional can be used to output the category title at the top of the list of images each time it changes.
 
-Other tags used: "if_different":if-different.textile, "image_info":image-info.textile, "thumbnail":thumbnail.textile.
+Other tags used: "if_different":if-different, "image_info":image-info, "thumbnail":thumbnail.
 
 h3. Example 3: Integration with third-party PHP resizing script (TimThumb)
 
@@ -229,11 +229,11 @@ bc. <txp:images limit="6" category="gallery">
 
 Creates a small gallery of 6 images from the category 'gallery'. Uses the TimThumb script to proportionately resize a thumbnail version (160px wide) of the image automatically, and keep a cached version of the thumbnail for future visitors. Links the thumbnail to the original image, and lists the image author name below each thumbnail.
 
-Other tags used: "image_author":image-author.textile, "image_info":image-info.textile, "image_url":image-url.textile, "site_url":site-url.textile.
+Other tags used: "image_author":image-author, "image_info":image-info, "image_url":image-url, "site_url":site-url.
 
 h3. Example 4: Using offset and limit for news pages
 
-You can use the @offset@ attribute to slice up your "article_image":article-image.textile list. By specifying a comma-separated list of image IDs in your 'Article image' field, this tag can iterate over them in groups. So, if your 'Article image' list contained four IDs you could treat your first image as the 'Hero' at the top of the article, displayed using:
+You can use the @offset@ attribute to slice up your "article_image":article-image list. By specifying a comma-separated list of image IDs in your 'Article image' field, this tag can iterate over them in groups. So, if your 'Article image' list contained four IDs you could treat your first image as the 'Hero' at the top of the article, displayed using:
 
 bc. <txp:images limit="1">
     <txp:article_image />
@@ -247,7 +247,7 @@ bc. <txp:images offset="1" limit="3" wraptag="div" class="gallery">
 
 ...to display the three remaining supporting images as thumbnails in a gallery, all taken from the Article Image field.
 
-Other tags used: "article_image":article-image.textile, "thumbnail":thumbnail.textile.
+Other tags used: "article_image":article-image, "thumbnail":thumbnail.
 
 h2. Genealogy
 

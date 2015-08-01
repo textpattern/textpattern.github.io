@@ -16,7 +16,7 @@ bc. <txp:comments_count />
 
 The *comments_count* tag is a _single_ tag which is used to display the number of comments associated with a particular article.
 
-Though *comments_count* can be used independently, it is also called by "comments_invite":comments-invite.textile to append the comments count to the *comments_invite* link.
+Though *comments_count* can be used independently, it is also called by "comments_invite":comments-invite to append the comments count to the *comments_invite* link.
 
 Used in an article form.
 
@@ -37,4 +37,4 @@ bc. <txp:if_comments>
     </p>
 </txp:if_comments>
 
-Other tags used: "comments_invite":comments-invite.textile, "if_comments":if-comments.textile.
+Other tags used: "comments_invite":comments-invite, "if_comments":if-comments.

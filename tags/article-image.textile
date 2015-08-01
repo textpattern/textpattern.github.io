@@ -77,7 +77,7 @@ bc. <txp:permlink>
     <txp:article_image thumbnail="1" />
 </txp:permlink>
 
-Other tags used: "permlink":permlink.textile.
+Other tags used: "permlink":permlink.
 
 h2. Genealogy
 

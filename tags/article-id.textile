@@ -41,4 +41,4 @@ bc. <txp:if_individual_article>
     </txp:permlink>
 </txp:if_individual_article>
 
-Other tags used: "if_individual_article":if-individual-article.textile, "permlink":permlink.textile.
+Other tags used: "if_individual_article":if-individual-article, "permlink":permlink.

@@ -23,8 +23,8 @@ h2. Core tags
 
 Building publishing architectures with Textpattern -- literally anything imaginable -- means learning to use the core set of tags.
 
-* "Tag basics":tags/tag-basics/index.textile - a good place to start.
-* "Tag reference index":tags/index.textile.
+* "Tag basics":tags/tag-basics/ - a good place to start.
+* "Tag reference index":tags/.
 
 h2. Security
 

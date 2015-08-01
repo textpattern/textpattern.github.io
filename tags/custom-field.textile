@@ -21,7 +21,7 @@ Custom fields are useful when you need to output content having a consistent str
 # [[Defining custom fields]]
 # [[Adding custom field data]]
 
-Also see the "if_custom_field":if-custom-field.textile conditional tag, which provides more flexibility and power using custom fields.
+Also see the "if_custom_field":if-custom-field conditional tag, which provides more flexibility and power using custom fields.
 
 h2. Attributes
 
@@ -89,7 +89,7 @@ bc. <article class="linklog-entry">
     <p>Textpattern is awesome!</p>
 </article>
 
-Other tags used: "title":title.textile, "posted":posted.textile, "excerpt":excerpt.textile.
+Other tags used: "title":title, "posted":posted, "excerpt":excerpt.
 
 h3. Example 3: Unescaping HTML output
 

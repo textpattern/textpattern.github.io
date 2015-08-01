@@ -33,4 +33,4 @@ bc. <h1>
 
 With the tags arranged like this (as they are in the @error_default@ page template), they display the error status code as a header and the relevant server message beneath it, usually to indicate to the visitor that something went wrong.
 
-Other tags used: "error_message":error-message.textile.
+Other tags used: "error_message":error-message.

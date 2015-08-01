@@ -70,7 +70,7 @@ bc. <txp:if_comments_allowed>
     <p>Comments are turned off for this article.</p>
 </txp:if_comments_allowed>
 
-Other tags used: "if_comments_allowed":if-comments-allowed.textile, "else":.textile.
+Other tags used: "if_comments_allowed":if-comments-allowed, "else":.
 
 h3. Example 2: Text area changes in preview
 
@@ -88,7 +88,7 @@ bc. <txp:if_comments_preview>
     </txp:if_comments_allowed>
 </txp:if_comments_preview>
 
-Other tags used: "comments_preview":comments-preview.textile, "if_comments_allowed":if-comments-allowed.textile, "if_comments_preview":if-comments-preview.textile, "else":else.textile.
+Other tags used: "comments_preview":comments-preview, "if_comments_allowed":if-comments-allowed, "if_comments_preview":if-comments-preview, "else":else.
 
 h3. Example 3: Display conditional comments and form
 
@@ -103,7 +103,7 @@ bc. <txp:comment_id />
 
 For the current article, returns a list of id numbers for comments and a comment input form (but only if comments are currently allowed).
 
-Other tags used: "comment_id":comment-id.textile, "comments":comments.textile, "if_comments_allowed":if-comments-allowed.textile.
+Other tags used: "comment_id":comment-id, "comments":comments, "if_comments_allowed":if-comments-allowed.
 
 h2. Genealogy
 

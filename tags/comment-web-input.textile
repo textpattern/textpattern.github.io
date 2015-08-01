@@ -51,4 +51,4 @@ bc. <p>
     <txp:comment_submit />
 </p>
 
-Other tags used: "comment_email_input":comment-email-input.textile, "comments_help":comments-help.textile, "comment_message_input":comment-message-input.textile, "comment_name_input":comment-name-input.textile, "comment_preview":comment-preview.textile, "comment_remember":comment-remember.textile, "comment_submit":comment-submit.textile.
+Other tags used: "comment_email_input":comment-email-input, "comments_help":comments-help, "comment_message_input":comment-message-input, "comment_name_input":comment-name-input, "comment_preview":comment-preview, "comment_remember":comment-remember, "comment_submit":comment-submit.

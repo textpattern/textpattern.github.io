@@ -10,9 +10,9 @@ bc. <txp:if_variable>
     ...conditional statement...
 </txp:if_variable>
 
-It tests the existence and/or value of a global variable set with the "variable":variable.textile tag.
+It tests the existence and/or value of a global variable set with the "variable":variable tag.
 
-p(alert-block information). Note: In case you are getting unexpected results in an *if_variable* evaluation, check whether you have entered additional white space or invisible characters in your "variable":variable.textile declarations and remove those.
+p(alert-block information). Note: In case you are getting unexpected results in an *if_variable* evaluation, check whether you have entered additional white space or invisible characters in your "variable":variable declarations and remove those.
 
 h2. Attributes
 

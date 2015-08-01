@@ -41,7 +41,7 @@ bc. <div>
     Invoking 'example_form' again, this time with different inner content.
 </div>
 
-Other tags used: "output_form":output-form.textile.
+Other tags used: "output_form":output-form.
 
 h2. Genealogy
 

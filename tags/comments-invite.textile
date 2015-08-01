@@ -56,4 +56,4 @@ bc. <txp:if_comments>
 
 This will display the comments invitation and a comment count (but only if there are any comments associated with the current article).
 
-Other tags used: "if_comments":if-comments.textile.
+Other tags used: "if_comments":if-comments.

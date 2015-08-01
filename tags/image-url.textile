@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:image_url />
 
-The *image_url* tag is a _single_ or a _container_ tag that Textpattern will replace with the URL of the current image in an "images":images.textile list, or the specific image if given an @id@ or @name@.
+The *image_url* tag is a _single_ or a _container_ tag that Textpattern will replace with the URL of the current image in an "images":images list, or the specific image if given an @id@ or @name@.
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 
@@ -54,7 +54,7 @@ bc. <txp:images category="mammals">
     </txp:image_url>
 </txp:images>
 
-Other tags used: "images"images.textile, "thumbnail":thumbnail.textile.
+Other tags used: "images"images, "thumbnail":thumbnail.
 
 h2. Genealogy
 

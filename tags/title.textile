@@ -39,7 +39,7 @@ bc. <h1>
 
 Shows the current article title as the page heading, a few other pieces of information such as the article's author and posted date, then the article body itself.
 
-Other tags used: "author":author.textile, "posted":posted.textile, "body":body.textile.
+Other tags used: "author":author, "posted":posted, "body":body.
 
 h3. Example 2: Display a hyperlinked title
 
@@ -49,4 +49,4 @@ bc. <txp:permlink>
 
 Wraps a permanent link to the current article around its title.
 
-Other tags used: "permlink":permlink.textile.
+Other tags used: "permlink":permlink.

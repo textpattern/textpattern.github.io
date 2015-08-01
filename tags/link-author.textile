@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:link_author />
 
-The *link_author* tag is a _single_ tag that Textpattern will replace with the author's name associated with the current link in a "linklist":linklist.textile. It can *only* be used inside @<txp:linklist />@.
+The *link_author* tag is a _single_ tag that Textpattern will replace with the author's name associated with the current link in a "linklist":linklist. It can *only* be used inside @<txp:linklist />@.
 
 h2. Attributes
 

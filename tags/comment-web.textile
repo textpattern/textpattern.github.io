@@ -36,7 +36,7 @@ bc. <txp:comment_message />
     <a href="<txp:comment_web />">Visit their website</a>
 </p>
 
-Other tags used: "comment_message":comment-message.textile, "comment_name":comment-name.textile, "comment_time":comment-time.textile.
+Other tags used: "comment_message":comment-message, "comment_name":comment-name, "comment_time":comment-time.
 
 h3. Example 2: Container example
 

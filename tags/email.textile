@@ -85,7 +85,7 @@ li.email a:hover {
     /* design as you want */
 }
 
-p. See the "feed_link":feed-link.textile tag for a similar solution for Symbolset's 'rss' glyph.
+p. See the "feed_link":feed-link tag for a similar solution for Symbolset's 'rss' glyph.
 
 h2. Genealogy
 

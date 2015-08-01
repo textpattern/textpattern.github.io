@@ -117,7 +117,7 @@ li.email a:hover {
     /* design as you want */
 }
 
-p. See the "email":email.textile tag for a similar solution for Symbolset's 'email' glyph.
+p. See the "email":email tag for a similar solution for Symbolset's 'email' glyph.
 
 h2. Genealogy
 

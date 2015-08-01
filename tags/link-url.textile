@@ -4,7 +4,7 @@ h2. Syntax
 
 bc. <txp:link_url />
 
-The *link_url* tag is a _single_ tag which returns the URL of the link as text. This tag is used in a 'links' type form or inside the "linklist":linklist.textile container tag to show information about the current link in the list.
+The *link_url* tag is a _single_ tag which returns the URL of the link as text. This tag is used in a 'links' type form or inside the "linklist":linklist container tag to show information about the current link in the list.
 
 h2. Attributes
 
@@ -18,4 +18,4 @@ bc. <a class="awesome-links" href="<txp:link_url />">
     <txp:link_name />
 </a>
 
-Other tags used: "link_name":link-name.textile.
+Other tags used: "link_name":link-name.

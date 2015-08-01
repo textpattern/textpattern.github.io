@@ -58,7 +58,7 @@ This would result in the following:
 
 bc. <a rel="bookmark" href="http://example.com/index.php?id=2">Article title</a>
 
-Other tags used: "title":title.textile.
+Other tags used: "title":title.
 
 h3. Example 3: Customising permanent links
 
@@ -74,4 +74,4 @@ bc. <a class="awesome-article" href="<txp:permlink />">
     <txp:title />
 </a>
 
-Other tags used: "title":title.textile.
+Other tags used: "title":title.

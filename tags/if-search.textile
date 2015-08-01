@@ -28,4 +28,4 @@ bc. <txp:if_search>
 
 Selects a stylesheet named 'search' when search results are being displayed, or a stylesheet determined by the active section for normal page display.
 
-Other tags used: "else":else.textile, "css":css.textile.
+Other tags used: "else":else, "css":css.

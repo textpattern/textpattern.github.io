@@ -105,7 +105,7 @@ bc. <txp:category_list wraptag="ul" break="">
 
 This code will add @class="active"@ to the @<li>@ element around the current viewed category in the list, allowing your to style it with CSS as desired.
 
-Other tags used: "category":category.textile, "if_category":if-category.textile.
+Other tags used: "category":category, "if_category":if-category.
 
 h2. Genealogy
 

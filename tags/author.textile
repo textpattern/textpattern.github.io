@@ -59,7 +59,7 @@ bc. <h1>
 
 The author's name in this article form is a hyperlink to a list of articles by this author.
 
-Other tags used: "posted":posted.textile, "title":title.textile, "body":body.textile.
+Other tags used: "posted":posted, "title":title, "body":body.
 
 h3. Example 2: Author landing page
 
@@ -72,7 +72,7 @@ bc. <txp:if_author>
 
 Display the author's name above a list of articles by that author when visiting @example.com/author/Author+Name@ URLs.
 
-Other tags used: "if_author":if-author.textile, "article":article.textile.
+Other tags used: "if_author":if-author, "article":article.
 
 h2. Genealogy
 

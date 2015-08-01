@@ -47,7 +47,7 @@ bc. <txp:if_article_category name="prose" number="1">
 
 If the Category1 assigned to the article is 'Prose', the category is displayed. Note that the category *name* is used in this tag, which may be different to its displayed category *Title*. When categories are created, Textpattern converts them to lowercase and replaces spaces with hyphens. So, for example, 'My Category' has a name @my-category@.
 
-Other tags used: "category1":category1.textile.
+Other tags used: "category1":category1.
 
 h3. Example 2: Using the tag with else
 
@@ -61,7 +61,7 @@ bc. <txp:if_article_category name="algebra" number="1">
 
 Displays the welcome text if the category and category number match the given values, or shows a default link otherwise.
 
-Other tags used: "else":else.textile.
+Other tags used: "else":else.
 
 h3. Example 3: Display a list of matching links
 
@@ -77,4 +77,4 @@ bc. <txp:if_article_category name="yourcategory" number="1">
 
 Lists articles of the same category as the current article's Category1.
 
-Other tags used: "article_custom":article-custom.textile, "else":else.textile, "title":title.textile, "permlink":permlink.textile.
+Other tags used: "article_custom":article-custom, "else":else, "title":title, "permlink":permlink.

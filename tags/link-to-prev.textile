@@ -25,7 +25,7 @@ bc. <txp:link_to_prev>
     <txp:prev_title />
 </txp:link_to_prev>
 
-Other tags used: "prev_title":prev-title.textile.
+Other tags used: "prev_title":prev-title.
 
 h3. Example 2: Link to previous article using static text
 
@@ -35,7 +35,7 @@ bc. <txp:link_to_prev showalways="1">
 
 This will always display the text 'Previous', even when there is no previous article.
 
-p(alert-block information). Note: While @showalways@ will enable this tag to display what is wrapped inside it, "prev_title":prev-title.textile returns nothing if there is no previous title, so nothing is displayed. Use text, or the returned value, that you need displayed.
+p(alert-block information). Note: While @showalways@ will enable this tag to display what is wrapped inside it, "prev_title":prev-title returns nothing if there is no previous title, so nothing is displayed. Use text, or the returned value, that you need displayed.
 
 h3. Example 3: Customising links
 
@@ -47,4 +47,4 @@ bc. <a class="link--prev" href="<txp:link_to_prev />" title="<txp:prev_title />"
     ← Previous article
 </a>
 
-Other tags used: "prev_title":prev-title.textile.
+Other tags used: "prev_title":prev-title.

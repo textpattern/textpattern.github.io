@@ -43,7 +43,7 @@ bc. <txp:if_article_id id="33">
 
 Displays the article title if the id of the current article is 33.
 
-Other tags used: "title":title.textile.
+Other tags used: "title":title.
 
 h3. Example 2: Display a list of articles omitting current article
 
@@ -60,7 +60,7 @@ bc. <txp:article_custom label="related" labeltag="h4" section="<txp:section />" 
 
 Displays an unordered linked list of articles from the same section omitting the article currently viewed.
 
-Other tags used: "article_custom":article_custom.textile, "section":section.textile, "else":else.textile, "permlink":permlink.textile, "title":title.textile.
+Other tags used: "article_custom":article_custom, "section":section, "else":else, "permlink":permlink, "title":title.
 
 h3. Genealogy
 

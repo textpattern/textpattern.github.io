@@ -38,4 +38,4 @@ bc. <txp:comment_message />
     </txp:comment_permlink>
 </p>
 
-Other tags used: "comment_id":comment-id.textile, "comment_message":comment-message.textile, "comment_name":comment-name.textile, "comment_time":comment_time.textile.
+Other tags used: "comment_id":comment-id, "comment_message":comment-message, "comment_name":comment-name, "comment_time":comment_time.

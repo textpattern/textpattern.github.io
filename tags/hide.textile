@@ -44,4 +44,4 @@ bc. <div class="entry-content">
 
 Renders the body text inside the @<div class="entry-content">@ but skips the @<address>@ and @<txp:comments_invite />@ tags.
 
-Other tags used: "body":body.textile, "author":author.textile, "comments_invite":comments-invite.textile.
+Other tags used: "body":body, "author":author, "comments_invite":comments-invite.

@@ -34,4 +34,4 @@ bc. <h1>
 
 When used as part of your article form, this displays the article title, author and posted date, then the body text beneath that.
 
-Other tags used: "author":author.textile, "posted":posted.textile, "title":title.textile.
+Other tags used: "author":author, "posted":posted, "title":title.
