@@ -57,7 +57,7 @@ Regarding brand identity:
 
 * Do not use "Txp" and "TXP". While these pet uses are convenient in the support forum, they lend confusion to brand awareness in official docs. The world is still confused between "Textpattern" vs. "TextPattern", for example. Always spell "Textpattern" out fully. This will also help you see if you're using the name too repetitively, which can be a sentence bloat problem.
 
-Regarding dialogue and labels in the admin-side UI:
+Regarding dialogue and labels in the admin-side UI:[1]
 
 * Do not use "tab" (use "panel") when talking about the admin-side panels unless you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab"). Here's why: The presentational theme of the admin-side was originally conceived as a set of manilla file folders, with each region label depicted as a folder “tab”. This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as “tabs” even though they may use an admin theme that does not depict the file folder concept. New docs should not perpetuate that false concept and terminology, particularly as the file folder concept is not depicted in the admin-side navigation of the official admin-side theme -- Hive. The use of “tab” in the admin-side UI, such as in preferences, help dialogue, and so forth, is probably only clear to veteran Textpattern users. When/if the admin-side UI is cleaned of all use of the word "tab", then docs can be fully cleaned of the use as well, but we can get most of the way there by only using "tab" when it's in direct reference of an UI element label.
 * When referring to admin-side panel names, panel section headers, form control labels, and button labels, spell the name exactly as it appears in the panel and make it bold (double-asterisks each side in Textile). For example:
@@ -66,8 +66,8 @@ Regarding dialogue and labels in the admin-side UI:
 * When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: @You can control widowed words in article titles by selecting "Yes" on the "__Prevent widowed words in article titles?__"@ 
 * When referring to a form control option (e.g, select-menu options, radio button options, etc) or any other non-header UI dialogue such as feedback messages, etc, then quote the text and leave it in normal format. For example: @When you're ready to publish your draft, change status to "Live" and click the *Save* button*.@
 
+fn1. Plugin authors must follow panel UI text capitalization rules, which is _sentence case_.
+
 Regarding other kinds of system names:
 
 * When referring to file names, make them italic (double underscores) and include the extension. For example: __.htaccess__ and __index.php__. *Do not make them appear as code, unless they are part of a code snippet.**
-
-*Note:* Plugin authors must follow panel UI text capitalization rules, which is _sentence case_.
