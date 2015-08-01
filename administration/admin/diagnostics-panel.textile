@@ -93,7 +93,7 @@ High diagnostics info display includes the Low info above, but adds the followin
 | character_set_server: | |
 | character_set_system: | |
 | character_sets_dir: | |
-| "n" Tables: | "n" being the number of Textpattern tables that exist in your installation (default is ??); the value also indicates if tables are "OK" or not |
+| "n" Tables: | "n" being the number of Textpattern tables that exist in your installation (a default install has 17, anything more is from plugins or other extensions you've added); the value also indicates if tables are "OK" or not |
 | "n" Custom fields: |"n" being the number of custom fields; value also indicates name of all counted fields |
 | PHP extensions: | list of extension names/versions your web host has enabled |
 | pretext_data: | value is a piece of code; useful for developers to evaluate |
