@@ -57,6 +57,7 @@ h2(sec4). Typo gotchas to watch out for
 * When referring to admin-side panel names, panel section headers, form control labels, and button labels, spell the name exactly as it appears in the panel and make it bold (double-asterisks each side in Textile). For example:
 ** Non-linked text: @The articles table on the **Articles** panel shows article IDs, titles, dates posted, the sections they're in, and their current status.@
 ** Linked text: @See all your articles listed in the **"Articles":#** panel.@
-** (Note: Plugin authors need to follow panel UI text capitalization rules, which is sentence case.)
 * When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: @You can control widowed words in article titles by selecting "Yes" on the "__Prevent widowed words in article titles?__"@ 
 * When referring to a form control option (e.g, select-menu options, radio button options, etc) or any other non-header UI dialogue such as feedback messages, etc, then quote the text and leave it in normal format. For example: @When you're ready to publish your draft, change status to "Live" and click the *Save* button*.@
+
+*Note:* Plugin authors must follow panel UI text capitalization rules, which is _sentence case_.
