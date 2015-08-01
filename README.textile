@@ -54,7 +54,7 @@ h2(#sec4). Brand identity
 
 * Do not use "Txp" and "TXP". While these pet uses are convenient in the support forum, they lend confusion to brand awareness in official docs. The world is still confused between "Textpattern" vs. "TextPattern", for example. Always spell "Textpattern" out fully. This will also help you see if you're using the name too repetitively, which can be a sentence bloat problem.
 
-h2(#sec5). Admin-side UI text elements (names, headings, labels, options...)
+h2(#sec5). Admin-side UI text elements
 
 Important rules for consistency, which also has implications for plugin authors.[1]
 
