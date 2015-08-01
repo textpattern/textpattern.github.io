@@ -1,5 +1,8 @@
+timezone: Europe/London
 permalink: none
 markdown: rdiscount
+rdiscount:
+  extensions: [smart]
 prose:
   rooturl: '_posts'
   siteurl: 'http://textpattern.github.io/'
