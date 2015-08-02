@@ -31,7 +31,7 @@ fn1. See "Textpattern security":../security/index.textile if you're worried abou
 
 h2(#sec2). Admin-side organisation
 
-The admin-side is organised into three primary regions (Content, Presentation, Admin), with each region having a secondary set of working panels. A third set of panels exists in the case of Preferences only. One panel in each primary region (and the secondary Preferences region) serves as the default view:
+The admin-side is organised into three primary regions: **Content**, **Presentation**, and **Admin**. Each region has a set of working panels, listed below, one of which serves as the default landing location for that region.[2] A tertiary set of panels exists in the case of the **Admin** section's **Preferences** panels:
 
 * Content [paths=content/{name}-panel]
 ** Articles
@@ -56,21 +56,23 @@ The admin-side is organised into three primary regions (Content, Presentation, A
 *** Language
 ** Users (default:name=index)
 ** "Visitor logs":admin/visitor-logs-panel.textile
-* Extensions[2] [path=extensions/index]
+* Extensions[3] [path=extensions/index]
 
-fn2. The Extensions panel is not a core system panel. It only appears if you install any of the admin-side plugins that make use of it, and you probably will eventually. Two examples: "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 is a popular admin-side plugin for extending core user data, which is helpful for creating author bio pages in multi-contributor websites. And "ied_plugin_composer":http://forum.textpattern.com/viewtopic.php?id=14898 (now maintained by "smd"), is a powerful plugin for those interested in "plugin development":../plugins/index.
+fn2. The admin-side landing location after setting up your installation will be the **"Write":content/index** panel. You can change that default login behaviour in **"Basic preferences":admin/preferences/basic-prefs-panel/**.
+
+fn3. The Extensions panel is not a core system panel. It only appears if you install any of the admin-side plugins that make use of it, and you probably will eventually. Two examples: "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 is a popular admin-side plugin for extending core user data, which is helpful for creating author bio pages in multi-contributor websites. And "ied_plugin_composer":http://forum.textpattern.com/viewtopic.php?id=14898 (now maintained by "smd"), is a powerful plugin for those interested in "plugin development":../plugins/index.
 
 h2(#sec3). First tasks after intallation or upgrade
 
 h3. Language selection
 
-English is the default installation language for the admin-side of Textpattern. You are given a chance to change this immediately following your first log in. You'll be taken to the "Update languages":admin/preferences-language-panel.textile panel under the **Admin** area to "Install" the additional language(s) you want to use.[3] You'll see a green confirmation message at bottom of screen after each language install. When done, click the yellow **Save** button.
+English is the default installation language for the admin-side of Textpattern. You are given a chance to change this immediately following your first log in. You'll be taken to the "Update languages":admin/preferences-language-panel.textile panel under the **Admin** area to "Install" the additional language(s) you want to use.[4] You'll see a green confirmation message at bottom of screen after each language install. When done, click the yellow **Save** button.
 
 If you install more than one language, you can override the English default by selecting the new default via the drop-down selection box at top of the languages table. Again, save the changes. 
 
 You won't be auto-directed to the **Update languages** panel with each update of your Textpattern installation, but go there anyway when you do update because language packs may have been modified since Textpattern's last version release and you want to implement them if so. You'll easily see the languages you initially installed because they will be labeled as "Update" instead of "Install". Update them all and click the **Save** button when done.
 
-fn3. [todo:dw] Notes about multi-lingual use. 
+fn4. [todo:dw] Notes about multi-lingual use. 
 
 h3. Configuration of site identity and publishing behavior
 
@@ -90,7 +92,7 @@ h2(#sec4). Changing default login panel
 
 The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the **"Write":content/write-panel** panel from that point on, which is the default panel under the **Content** region of the admin-side. The assumption is, once your site is built, you'll want to go straight to writing new articles every time.
 
-You can change the default login landing location in "Basic preferences":admin/preferences-basic-panel to whatever admin-side panel you want. In **Basic** preferences, look under the **Admin** section for the preference, "Default admin tab".[4] Use the drop-down menu to select the panel you want, then save.
+You can change the default login landing location in "Basic preferences":admin/preferences-basic-panel to whatever admin-side panel you want. In **Basic** preferences, look under the **Admin** section for the preference, "Default admin tab".[5] Use the drop-down menu to select the panel you want, then save.
 
-fn4. The presentational theme of the admin-side's organisation was originally conceived as a system of file folders, with each region label depicted as a folder "tab". This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as "tabs" even though they may use an admin theme that does not depict the file folder concept. You'll even see the word "tab" used in the admin-side UI, as in this case, but not only. For purposes of user documentation, "panel" and "tab" mean exactly the same thing, but docs will only use "tab" when a specific reference is being made to the admin-side UI where the word is still encoded.
+fn5. The presentational theme of the admin-side's organisation was originally conceived as a system of file folders, with each region label depicted as a folder "tab". This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as "tabs" even though they may use an admin theme that does not depict the file folder concept. You'll even see the word "tab" used in the admin-side UI, as in this case, but not only. For purposes of user documentation, "panel" and "tab" mean exactly the same thing, but docs will only use "tab" when a specific reference is being made to the admin-side UI where the word is still encoded.
 
