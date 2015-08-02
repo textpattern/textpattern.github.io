@@ -117,17 +117,29 @@ The last item above reflects a long list of Textpattern configuration files whic
 
 h2(#sec2). Pre-flight checks
 
-The **Pre-flight checks** display is where diagnostic feedback messages appear. The feedback messsages come in three colors, which correspond with the severity of the feedback messages you might see: green (all is good), yellow (warning, heads up), and red (critical).[1]
+The **Pre-flight checks** display is where diagnostic feedback messages appear. The feedback messsages come in four colors (green, blue, yellow, and red), which correspond with the type and severity of the feedback messages you might see.[1]
 
-h3. Green (OK) 
+h3. Green (all is good) 
 
-There is only one green message: @All checks passed!@ This is the message you always want to see when you visit the **Diagnostics** panel. The green feedback message displays when you successfully troubleshoot any yellow and red feedback messages that might exist otherwise. _Go green!_
+There is only one green message: 
 
-h3. Yellow (warning) 
+@All checks passed!@ 
 
-Yellow messages are not critical emergencies, but some may indicate problems that may prevent you from doing something in particular, such as upload files to your /files directory. 
+This is the message you always want to see when you visit the **Diagnostics** panel. The green feedback message displays when you successfully address and/or troubleshoot all, blue, yellow, and red feedback messages that might exist. _Go green!_
 
-Yellow messages usually appear when you need to remove the @/update@ directory on your server and/or when directories need a change to their rights of access order to function.[2] 
+h3. Blue (time to update)
+
+There is only one blue message: 
+
+<span style="font-style:italic; background-color:#e7f6fc;">New Textpattern version n.n.n "available for download":http://textpattern.com/download.</span> (where "n.n.n" is the latest version number)
+
+As it suggests, you get this message when your version of Textpattern is not current. For security reasons, you should update as soon as possible. When you do, your diagnostics will show some yellow messages needing addressed.
+
+h3. Yellow (warnings) 
+
+Yellow messages are not critical emergencies, but some may indicate problems that may prevent you from doing something in particular, such as upload files to your __/files__ directory. 
+
+Yellow messages usually appear when you need to remove the __/update__ directory on your server and/or when directories need a change to their rights of access in order to function.[2] 
 
 Following are the yellow messages you will generally see: 
 
