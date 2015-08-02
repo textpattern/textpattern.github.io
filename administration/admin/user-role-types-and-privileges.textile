@@ -12,7 +12,7 @@ tags:
 
 h1. User roles and associated privileges
 
-Textpattern provides several user roles out-of-the-box.
+Textpattern provides several user roles out-of-the-box. Each role has an associated set of admin-side privileges that are meant to help with leveraging the different responsibilities in a publishing workflow.
 
 On this page:
 
