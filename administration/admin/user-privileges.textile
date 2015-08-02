@@ -1,12 +1,66 @@
+---
+layout: document
+category: administration
+published: true
+title: "User roles and associated privileges"
+tags:
+  - users 
+  - roles
+  - privileges
+  - account types
+---
+
 h1. User roles and associated privileges
 
-Textpattern provides several types of user account roles, out-of-the-box. These roles and their associated abilitities are described here from most powerful to least.
+Textpattern provides several user roles out-of-the-box. These roles and their associated privileges are described here.
 
-h2. Administrator
+On this page:
 
-The administrator is the person who installs and configures the Textpattern software on a web server. As the first user account in the system, the administrator can access and modify any feature, as well create, manage, and delete other user accounts. The administrator is the most powerful user.
+* "Roles in terms of panel access":#sec1
+* "Roles in terms of privileges":#sec2
+** "Publisher":#sec2-1
+** "Managing Editor":#sec2-2
+** "Copy Editor":#sec2-3
+** "Staff Writer":#sec2-4
+** "Freelancer":#sec2-5
+** "Designer":#sec2-6
+** "None":#sec2-7
 
-h2. Publisher
+h2(#sec1). Roles in terms of panel access
+
+The following table shows user role types versus admin-side panels.[1] If a role has access to a given panel, it's indicated with "X". (The primary regions -- **Content**, **Presentation**, and **Admin** -- are not actual panel locations so marked out with hyphens.)
+
+|_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[2] |
+|_. Content | - | - | - | - | - | - | - |
+|_. Articles | X |  |  |  |  |  |  |
+|_. Categories | X |  |  |  |  |  |  |
+|_. Comments | X |  |  |  |  |  |  |
+|_. Files | X |  |  |  |  |  |  |
+|_. Images | X |  |  |  |  |  |  |
+|_. Links | X |  |  |  |  |  |  |
+|_. Write | X |  |  |  |  |  |  |
+|_. Presentation | - | - | - | - | - | - | - |
+|_. Forms | X |  |  |  |  |  |  |
+|_. Pages | X |  |  |  |  |  |  |
+|_. Sections | X |  |  |  |  |  |  |
+|_. Styles | X |  |  |  |  |  |  |
+|_. Admin | - | - | - | - | - | - | - |
+|_. Diagnostics | X |  |  |  |  |  |  |
+|_. Import | X |  |  |  |  |  |  |
+|_. Plugins | X |  |  |  |  |  |  |
+|_. Basic, prefs | X |  |  |  |  |  |  |
+|_. Advanced, prefs | X |  |  |  |  |  |  |
+|_. Language, prefs | X |  |  |  |  |  |  |
+|_. Users | X | X | X | X | X | X |  |
+|_. Visitor logs | X |  |  |  |  |  |  |
+
+fn1. Administrators are not shown but are the people who install and configure the Textpattern software on a web server. They are all-powerful, having access to all panels and every function.
+
+fn2. "None":#sec2-7 is an actual role, but has no access to any panels.
+
+h2(#sec2). Roles in terms of privileges
+
+h3(#sec2-1). Publisher
 
 The publisher role has the same rights and abilities as the administrator -- no restrictions to any location or feature -- with the sole exception that a publisher can not delete or demote the adminstrator account. In short, the publisher can:
 
@@ -18,7 +72,7 @@ The publisher role has the same rights and abilities as the administrator -- no 
 * add and remove other user accounts (except the administrator)
 * grant and restrict privileges
 
-h2. Managing editor
+h3(#sec2-2). Managing editor
 
 The managing editor has fewer rights than the publisher, but can still:
 
@@ -28,29 +82,29 @@ The managing editor has fewer rights than the publisher, but can still:
 * access all site design areas
 * edit sections and categories
 
-h2. Copy editor
+h3(#sec2-3). Copy editor
 
 The copy editor can't work on site structure, presentation, or change preferences. Copy editors can only:
 
 * edit article, links, or comments
 * edit HTML in Page template and Forms
 
-h2. Staff writer
+h3(#sec2-4). Staff writer
 
 * can create, edit, publish and delete own articles
 * can upload images
 
-h2. Freelancer
+h3(#sec2-5). Freelancer
 
 * can create and edit own articles
 * can change article status from Draft to Pending
 
-h2. Designer
+h3(#sec2-6). Designer
 
 * can edit Page HTML, Forms, and CSS
 
-h2. None
+h3(#sec2-7). None
 
-This option allows removing all privileges on a given user account without actually deleting the account from the CMS. This is a good option, for example, if you run a multi-author site of some kind, and an author leaves the collaboration effort/team. You can freeze their account so they can't add/modify/undo anything, while still keepiong their name on their past published work.
+This option allows removing all privileges on a given user account without actually deleting the account from the CMS. This is a good option, for example, if you run a multi-author site of some kind, and an author leaves the collaboration effort/team. You can freeze their account so they can't add/modify/undo anything, while still keepiong their name on their published work.
 
 
