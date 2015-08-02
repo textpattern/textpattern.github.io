@@ -18,7 +18,7 @@ fn1. Upgrading your Textpattern installation is strongly recommended for "site s
 
 h2. Administration
 
-* "Textpattern administration":administration/. (panel organisation and full functionality)
+* "Textpattern administration":administration/ (panel organisation and full functionality)
 * "Administration fast-track":administration/admin-fast-track/ (quick learning by simple example)
 
 h2. Core tags
@@ -26,11 +26,11 @@ h2. Core tags
 Building publishing architectures with Textpattern means learning to use the core set of tags.
 
 * "Tag basics":tags/tag-basics/ (a good place to start)
-* "Tag reference index":tags/.
+* "Tag reference index":tags/
 
 h2. Security
 
-Read "Textpattern security":security/. before you worry, or do anything hasty.
+Read "Textpattern security":security/ before you worry, or do anything hasty.
 
 h2. Beyond core functionality
 
@@ -40,7 +40,7 @@ h3. Themes [todo]
 
 Theme support is coming in future releases. Until then, here are some ways to get started with creating custom themes.
 
-* "Front-side themes":themes/.
+* "Front-side themes":themes/
 * "Admin-side themes":themes/admin-side-themes/
 * "Themes on GitHub":themes/themes-on-github/
 
@@ -48,6 +48,6 @@ h3. Plugins
 
 Develop the next must-have plugins.
 
-* "Plugin development":plugins/.
+* "Plugin development":plugins/
 * The most recent tips, hacks, and facts for your favorite plugins
 * Plugin fact sheets
