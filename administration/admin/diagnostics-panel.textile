@@ -123,17 +123,17 @@ h3. Green (all is good)
 
 There is only one green message: 
 
-@All checks passed!@ 
+<span style="color:#238c23; background-color:#dff0d8;">ll checks passed!</span> 
 
-This is the message you always want to see when you visit the **Diagnostics** panel. The green feedback message displays when you successfully address and/or troubleshoot all, blue, yellow, and red feedback messages that might exist. _Go green!_
+This message displays when you successfully address and/or troubleshoot all, blue, yellow, and red feedback messages that might exist. _Go green!_
 
 h3. Blue (time to update)
 
 There is only one blue message: 
 
-<span style="font-style:italic; background-color:#e7f6fc;">New Textpattern version n.n.n "available for download":http://textpattern.com/download.</span> (where "n.n.n" is the latest version number)
+<span style="color:#3a87ad; background-color:#e7f6fc;">New Textpattern version n.n.n "available for download":http://textpattern.com/download.</span> (where "n.n.n" is the latest version number)
 
-As it suggests, you get this message when your version of Textpattern is not current. For security reasons, you should update as soon as possible. When you do, your diagnostics will show some yellow messages needing addressed.
+As it suggests, this message means your version of Textpattern is not current. For security reasons, you should update as soon as possible. When you do, your diagnostics will show some yellow messages needing addressed.
 
 h3. Yellow (warnings) 
 
@@ -143,8 +143,8 @@ Yellow messages usually appear when you need to remove the __/update__ directory
 
 Following are the yellow messages you will generally see: 
 
-* @/usr/home/{username}/public_html/textpattern/setup/ still exists@ (means you need to remove the "setup" folder from the web server) 
-* @image directory is read-only@ (means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[3]
+* <span style="color:#cb8f02; background-color:cornflower;">/usr/home/{username}/public_html/textpattern/setup/ still exists</span> (means you need to remove the "setup" folder from the web server) 
+* <span style="color:#cb8f02; background-color:#fff6d3;">image directory is read-only</span> (means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[3]
 
 h3. Red (critical)
 
@@ -152,11 +152,11 @@ Red messages mean something critical appears to be wrong and you need to trouble
 
 Possible red messages include:
 
-* @path_to_site doesn't match document_root [ /home/yourserveralias/public_html ]@ -- This could either mean you do not have the right “Site URL” path set in "Basic preferences":basic-prefs-panel.textile, or, in the case of upgrading, you still need to update your @index.php@ and/or @.htaccess@ files (see next message). (This could also be a false error. For example, symlinks cannot be correctly recognised, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Undertandably that is not satisfying advice.) 
-* @/index.php is inaccessible@ -- This suggests your @index.php@ file is not available, is not the right version, or that your "Site URL" is set wrong in "Basic preferences":basic-prefs-panel.textile. It could also mean the @index.php@ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics. 
-* @path_to_site is inaccessible@ -- This mmeans either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
-* @.htaccess file is missing@ -- This concerns the @.htaccess@ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing @index.php@ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an @.htaccess@ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing @.htaccess@ file with the indicated rewrite rules in the help dialog.
-* @Clean URL test failed@ -- This is not necessarily an error that will prevent your site from working. It could be caused by the PHP configuration setting of @allow_url_fopen@ or some other hosting issue.
+* <span style="color:#e2062c; background-color:#fccfd4;">path_to_site doesn't match document_root [ /home/yourserveralias/public_html ]</span> -- This could either mean you do not have the right “Site URL” path set in "Basic preferences":basic-prefs-panel.textile, or, in the case of upgrading, you still need to update your @index.php@ and/or @.htaccess@ files (see next message). (This could also be a false error. For example, symlinks cannot be correctly recognised, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Undertandably that is not satisfying advice.) 
+* <span style="color:#e2062c; background-color:#fccfd4;">/index.php is inaccessible</span> -- This suggests your @index.php@ file is not available, is not the right version, or that your "Site URL" is set wrong in "Basic preferences":basic-prefs-panel.textile. It could also mean the @index.php@ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics. 
+* <span style="color:#e2062c; background-color:#fccfd4;">path_to_site is inaccessible</span> -- This mmeans either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
+* <span style="color:#e2062c; background-color:#fccfd4;">.htaccess file is missing</span> -- This concerns the @.htaccess@ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing @index.php@ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an @.htaccess@ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing @.htaccess@ file with the indicated rewrite rules in the help dialog.
+* <span style="color:#e2062c; background-color:#fccfd4;">Clean URL test failed</span> -- This is not necessarily an error that will prevent your site from working. It could be caused by the PHP configuration setting of @allow_url_fopen@ or some other hosting issue.
 
 fn1. Cascading errors: Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
 
