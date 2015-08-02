@@ -36,7 +36,7 @@ The user accounts table displays the following data for each user:
 
 Associated with the user accounts table (a top of table) are two data editing buttons: **Add new author** and **Change your password**. Their respective labels suggest who can see and use them.
 
-fn1. See "User role types and privileges":user-role-types-and-privileges/ for how roles and privileges match up.
+fn1. See "User role types and privileges":user-role-types-and-privileges for how roles and privileges match up.
 
 h3(#sec1-1). Add new author button
 
