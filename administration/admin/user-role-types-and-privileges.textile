@@ -12,7 +12,7 @@ tags:
 
 h1. User roles and associated privileges
 
-Textpattern provides several user roles out-of-the-box. These roles and their associated privileges are described here.
+Textpattern provides several user roles out-of-the-box.
 
 On this page:
 
