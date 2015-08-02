@@ -18,7 +18,7 @@ fn1. Upgrading your Textpattern installation is strongly recommended for "site s
 
 h2. Administration
 
-* "Textpattern administration":administration/index (panel organisation and full functionality)
+* "Textpattern administration":administration/ (panel organisation and full functionality)
 * "Administration fast-track":administration/admin-fast-track/ (quick learning by simple example)
 
 h2. Core tags
