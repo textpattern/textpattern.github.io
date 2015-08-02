@@ -1,51 +1,53 @@
 ---
 layout: default
 published: true
-title: "Textpattern CMS User Documentation"
+title: "Textpattern CMS user documentation"
 ---
 
 h1. Index
 
-h2. Installation
+h2. Installation [todo]
 
-* "Quick installation/upgrade guide":installation/index.textile.
-* "Detailed installation instructions":installation/detailed-installation-instructions.textile.
-* "Detailed upgrading instructions":installation/detailed-upgrading-instructions.textile -- upgrading is smart and recommended for "site security":security/index.textile.
-* "Downgrading, nightlies and bleeding edge":installation/downgrading-nightlies-bleeding-edge.textile -- for the testers and risk-takers.
-* Multi-site installation -- multiple sites managed by one admin-side.
+* Quick installation/upgrade guide
+* Detailed installation instructions
+* Detailed upgrading instructions[1]
+* Downgrading, nightlies and bleeding edge (for testers and risk-takers)
+* Multi-site installation (multiple sites managed with one admin-side)
+
+fn1. Upgrading your Textpattern installation is strongly recommended for "site security":security/index.
 
 h2. Administration
 
-* "Administration panels":administration/index.textile -- organisation and functionality of the admin-side.
-* "Administration workflow highlights":administration/admin-highlights.textile -- quick walkthrough of common admin-side routines.
+* "Textpattern administration":administration/. (panel organisation and full functionality)
+* "Administration fast-track":administration/admin-fast-track/ (quick learning by simple example)
 
 h2. Core tags
 
-Building publishing architectures with Textpattern -- literally anything imaginable -- means learning to use the core set of tags.
+Building publishing architectures with Textpattern means learning to use the core set of tags.
 
-* "Tag basics":tags/tag-basics/ - a good place to start.
+* "Tag basics":tags/tag-basics/ (a good place to start)
 * "Tag reference index":tags/.
 
 h2. Security
 
-Read "Textpattern security":security/index.textile before you worry, or do anything hasty.
+Read "Textpattern security":security/. before you worry, or do anything hasty.
 
 h2. Beyond core functionality
 
 Stuff that requires extensions and modifications.
 
-h3. Themes
+h3. Themes [todo]
 
-Better theme support is coming in future releases. Until then, here are some ways to get started with creating custom themes.
+Theme support is coming in future releases. Until then, here are some ways to get started with creating custom themes.
 
-* "Creating Textpattern themes":themes/index.textile.
-* "Creating and using admin-side themes":themes/creating_and_using_admin-side_themes.textile.
-* "Textpattern themes on GitHub":themes/themes-on-github.textile.
+* "Front-side themes":themes/.
+* "Admin-side themes":themes/admin-side-themes/
+* "Themes on GitHub":themes/themes-on-github/
 
 h3. Plugins
 
 Develop the next must-have plugins.
 
-* "Plugin development":plugins/index.textile.
-* The most recent tips, hacks, and facts for your favorite plugins.
-* Plugin fact sheets.
+* "Plugin development":plugins/.
+* The most recent tips, hacks, and facts for your favorite plugins
+* Plugin fact sheets
