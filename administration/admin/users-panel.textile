@@ -1,68 +1,72 @@
-h1. Users panel [todo:dw]
+---
+layout: document
+category: administration
+published: true
+title: "Users"
+tags:
+  - users 
+  - roles
+  - privileges
+  - accounts
+  - passwords
+  - emails
+---
 
-The *Users* panel is the default panel of the Admin region. It's where user accounts are accessed and managed. The panel has two functional views. The default view is a table of all existing user accounts. The secondary view is a form that displays all data for an individual account (__i.e.__, user profile data).
+h1. Users
 
-h2. All user accounts table (default)
+The *Users* panel is the default panel of the **Admin** region. It's where user accounts are accessed and managed. The panel has two functional views. The default view is a table of all existing user accounts. The secondary view is a form that displays all data for an individual account (__i.e.__, user profile data).
+
+On this page:
+
+* "User accounts table":#sec1
+** "Add new author button":#sec1-1
+** "Change your password button":#sec1-2
+** "Administrator controls":#sec1-3
+* "User data form":#sec2
+
+h2(#sec1). User accounts table
 
 The user accounts table displays the following data for each user:
 
-* **Login** (username)
+* **Login** (username; serves as link to user's existing account/profile data)
 * **Real name**
 * **Email**
-* **"Privileges":user-privileges.textile** (users role and rights)
+* **Privileges** (in this sense, _role type_)[1]
 * **Last log in** (date and time)
 
-The administrator, and any user having the role of "Publisher", will see _all_ user account records in the table and be able to edit any one.[1] They will also see, and be able to use, the *Add new author* button at top of the table to create a new user account. 
+Associated with the user accounts table (a top of table) are two data editing buttons: **Add new author** and **Change your password**. Their respective labels suggest who can see and use them.
+
+fn1. See "User role types and privileges":user-role-types-and-privileges/ for how roles and privileges match up.
+
+h3(#sec1-1). Add new author button
+
+The administrator, and any user having the role of __Publisher__[2], can see and use the *Add new author* button to create a new user account. Administrators and Publishers can also edit any user account by clicking the username in the **Login** column, which opens up the user data form.
 
 All other users with lesser roles will see their account record only, and will not see the **Add new author** button.
 
-All users will see, and can use, the *Change your password* button at the top of the table, which functions in context of the logged in user. When clicked, it triggers Textpattern to email the user a new password.
+fn2. A Publisher has the same rights and power as the site administrator, but can not delete or demote the administrator account. The administrator, however, can delete or demote the Publisher at any time.
 
-fn1. A Publisher has the same rights and power as the site administrator, but can not delete or demote the administrator account. The administrator, however, can delete or demote the Publisher at any time.
+h3(#sec1-2). Change your password button
 
-h2. Individual user profile data
+All users can see and use the *Change your password* button at the top of the table, which functions in context of the logged in user. When clicked, it opens the **Change your password** form, which consists of a single field for your new password, and a checkbox option to have the new password emailed to you, if desired.
 
-The usernames in the **Login** column of the user accounts table are links to the individual user's existing account/profile data. The usernames can not be edited, and the dates/times of last log ins are not displayed in the account profile form.
+h3(#sec1-3). Administrator controls
 
-Any user can edit their **Real name** and change their **Email** address. But only an administrator or Publisher can change a user's *Privileges*.
+Administrators and Publisher can see and use a selection list control under the user accounts table. The selection menu options are:
 
+* Change privilege
+* Reset password
+* Delete
 
-*Notes about panel regions against user roles:*
+The control menu works in relation to the check boxes that begin each table record.
 
-* _Admin/Publisher_ is the only user role that can see all five regions (figures 2 and 3). They can also change a user's privileges (role) in the Authors region, which is a function that disappears for all other roles. Admin/Publishers can also see and use the “Save” button at the bottom of the panel (figure 2), which disappears from view for users with any other role.
-* _Managing Editors_ can see regions 1 through 3 (figure 2), but can only change their own password and email address.
-* All other users under _Managing Editor_ have the following conditions:
-*# They cannot see the primary Admin tab in the tab navigation when logging in so they cannot get to the Users panel via the tabs; however, they can use the Go dropdown menu at the top-right or bottom of the Site Admin view to jump directly to the Users panel (this is strange functionality indeed, and should hopefully change).
-*# They can only see regions 1 and 2 (figure 2), and can only change their own email and password.
-* A user account set as None cannot even login. This is probably a role setting that is intended for nothing more than deactivating a user without having to actually delete their account information (in the event they should be reactivated again).
+h2(#sec2). User data form
 
-h4(#change_your_password_1). Change Your Password (1)
+Administrators, publishers, and the account owner can open the user account data form by clicking the username in the **Login** column of the user accounts table. 
 
-As indicated in the notes above, all user roles can change their own password, which is done by retyping the new password in the password field and clicking the corresponding Submit button. If the _Mail it to me_ check box is clicked, an email will also be sent to the email address in the account as a reminder of what the new password is.
+As the data form makes clear, usernames can not be edited here[3], and the last login date/time values are not displayed, but the **Real name**, **Email**, and **Privileges** data is editable. 
 
-Admins/Publishers can also reset a users password by using the "Reset Author Password":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users#reset_author_password_28529 utility (figure 3).
+Only an administrator or __Publisher__ can change a user's privileges, which can be done here or using the administrator controls mentioned above.
 
-h4(#change_your_email_address_2). Change Your Email Address (2)
-
-With respect to the notes above, anyone with a site account can change their own email address. Your email address will appear in the text field by default, which is a function of you already being logged into the admin side with your personal account information.
-
-Change the email address by editing it in the text box and clicking the corresponding Submit button.
-
-h4(#authors_3). Authors (3)
-
-The _Authors_ region of the panel is simply a list of the existing accounts in the Textpattern site. As indicated in the notes above, Admin/Publishers and Managing Editors are the only user roles that can see this list; however, only Admin/Publishers can use the list to edit the privileges of another user account.
-
-"user_roles_and_permissions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions are defined for each type of admin-side user (with respect to the entire Textpattern site, not just the Users panel). Privileges change (decrease) with each lesser role.
-
-h4(#add_new_author_4). Add New Author (4)
-
-This region of controls is where Admin/Publishers add new user accounts to the site. Once an account is created it is automatically added to the Authors region list, where the Admin/Publisher can then edit the assigned privileges if ever needed.
-
-h4(#reset_author_password_5). Reset Author Password (5)
-
-When one or more additional user roles are created, the Reset Author Password region (figure 3) becomes visible to the Admin/Publisher, which can then be used for the implied job, if ever needed.
-
-The Admin/Publisher will not know what the password is, the process is managed by selecting the user from the dropdown list and clicking the corresponding Submit button. Textpattern then changes the password and auto-sends an email to the user informing them of the new change.
-
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-users-resetauthpsswd.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-users-resetauthpsswd.png
+fn3. The only way to change a username is to change the value directly in the database table using phpMyAdmin, the command-line, or by whatever other means the database administrators prefers.
 
