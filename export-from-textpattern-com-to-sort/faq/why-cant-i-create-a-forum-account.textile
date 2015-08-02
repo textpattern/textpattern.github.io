@@ -1,0 +1,18 @@
+h1. Why can't I create a Forum account? [todo]
+
+The most common cause of problems creating forum accounts are email spam filters and blacklists.
+
+You must supply a working email address in order to create an account: when you sign-up, the forum software will send you the password you may use to login, to verify that your email address is correct and working properly.
+
+Some email servers refuse to accept these emails, or incorrectly intercept them as spam. This is particularly common with free web mail services.
+
+The following email providers seem to have problems accepting email from the forum, for one reason or another:
+
+* bk.ru
+* comcast.net
+* hotmail.com
+* inbox.ru
+* list.ru
+* mail.ru
+
+It is therefore recommended that you use an address from another provider.
