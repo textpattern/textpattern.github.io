@@ -143,8 +143,11 @@ Yellow messages usually appear when you need to remove the __/update__ directory
 
 Possible yellow messages include: 
 
-* <span style="color:#cb8f02; background-color:#fff6d3;">/usr/home/{username}/public_html/textpattern/setup/ still exists</span> (means you need to remove the "setup" folder from the web server) 
-* <span style="color:#cb8f02; background-color:#fff6d3;">image directory is read-only</span> (means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[3]
+* <span style="color:#cb8f02; background-color:#fff6d3;">/usr/home/{username}/public_html/textpattern/setup/ still exists</span> -- This means you need to remove the "setup" folder from the web server. 
+* <span style="color:#cb8f02; background-color:#fff6d3;">image directory is read-only</span> -- This means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[3]
+* <span style="color:#cb8f02; background-color:#fff6d3;">DNS lookup failed: {site URL}</span> -- This means the "Site URL" preference you have entered in the **"Basic":preferences/basic-prefs-panel** panel is probably incorrect somehow.
+* <span style="color:#cb8f02; background-color:#fff6d3;">Site URL preference might be incorrect: {site URL}</span> -- Similar to the previous message, this is suggesting the "Site URL" as set in the preferences tab does not match the actual URL you use to visit your website.
+* <span style="color:#cb8f02; background-color:#fff6d3;">Clean URL test failed.</span> -- This is not necessarily an error, and could appear for different reasons. Check the help information. It could be caused by the PHP configuration setting of @allow_url_fopen@, or some other hosting issue, or it might go away by fixing other warning messages.
 
 h3. Red (critical)
 
@@ -156,7 +159,6 @@ Possible red messages include:
 * <span style="color:#e2062c; background-color:#fccfd4;">/index.php is inaccessible</span> -- This suggests your @index.php@ file is not available, is not the right version, or that your "Site URL" is set wrong in "Basic preferences":basic-prefs-panel.textile. It could also mean the @index.php@ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics. 
 * <span style="color:#e2062c; background-color:#fccfd4;">path_to_site is inaccessible</span> -- This mmeans either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
 * <span style="color:#e2062c; background-color:#fccfd4;">.htaccess file is missing</span> -- This concerns the @.htaccess@ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing @index.php@ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an @.htaccess@ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing @.htaccess@ file with the indicated rewrite rules in the help dialog.
-* <span style="color:#e2062c; background-color:#fccfd4;">Clean URL test failed</span> -- This is not necessarily an error that will prevent your site from working. It could be caused by the PHP configuration setting of @allow_url_fopen@ or some other hosting issue.
 
 fn1. Cascading errors: Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
 
