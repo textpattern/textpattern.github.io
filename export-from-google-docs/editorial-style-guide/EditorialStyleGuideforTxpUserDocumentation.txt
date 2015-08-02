@@ -1,0 +1,236 @@
+﻿Editorial Style Guide
+
+for  
+
+Textpattern CMS User Documentation
+
+
+Edited by 
+Destry Wion, http://wion.com
+
+
+Contributions, that lead to actual changes, from
+Jeff Soo, Jukka Svahn, Philippe Wittenbergh, Stef Dawson, Pete Cooper, Phil Wareham
+
+
+Last revised
+1 November 2011
+
+
+These guidelines are to be used when producing English web content for Textpattern CMS User Documentation. The guidelines should help English-speaking authors of varying backgrounds and nationality to write and edit content more consistently, and with fewer problems with style, tense, tone, and so forth. The guidelines are recommended for other Textpattern holdings too, including the main Textpattern CMS website, and Textpattern Plugins, as well the dialogue in the user interface (UI) of the CMS itself (including custom admin-side themes).
+
+
+Table of Contents
+
+
+Brand
+Brand usage
+Textpattern spelling
+Brand abbreviation
+Link labels for Textpattern websites
+Default language version
+Spelling
+Quotation marks
+Quotation mark placement
+Quotation mark style
+Serial commas
+Exclamation points (!)
+Spacing post punctuation
+Foreign terms and expressions
+Latin expressions
+Point of view (personal pronouns)
+Style and tone
+Titles and section headers
+Density
+Content density
+Topic density
+Capitalisation
+All-caps
+Numerals and special characters
+Numerals
+Ampersands (&)
+Links
+Terminology
+Textpattern terms as admin-side panel and link references
+Textpattern terms as semantical (non-linked) references
+Non-Textpattern terminology
+Versioning
+Appendix A: Visual branding
+Appendix B: Template metadata
+References
+
+
+
+
+Brand
+How to refer to Textpattern CMS in documentation.
+Brand usage
+While "Textpattern CMS" is the full name, it’s not necessary to write "CMS" every time when referring to the system in copy. As long as the full name is used clearly in leading content of a site, you can simply use "Textpattern" everywhere else.
+Currently, user documentation uses the full spelling in the tagline, which is prominently positioned at the top of the site. It reads, "Textpattern CMS is free, and so are you to help document it." 
+Textpattern spelling
+"Textpattern" is one word and the "p" is always lowercase. 
+Correct → Textpattern
+Never use camel-case or spell it as two words.
+Wrong → TextPattern
+Wrong → Text Pattern
+Wrong → Text pattern
+Brand abbreviation
+Do not abbreviate "Textpattern" in documentation. Always spell the name out in full.
+Do not use → Txp
+Do not use → TXP
+Do not use → TxP
+It is common to abbreviate "Textpattern" as Txp or TXP (TxP should never be used as it implies a camel-case spelling). Use this as you like in the Textpattern Support Forum, social channels, or your own websites, but it should not be used in official content. Readers new to the community may be confused by these abbreviations, especially if authors are not using a single abbreviation consistently. Spell the name out and it’s always clear.
+Link labels for Textpattern websites
+Refer to Textpattern locations by their actual name. Ensure site names are capitalised and used consistently.
+
+
+* Wiki (textpattern.net): Use "Textpattern CMS Documentation". 
+For example...
+This style guide should be used when adding and editing content in the Textpattern CMS Documentation.
+* Forum (forum.textpattern.com): Use "Textpattern CMS Support Forum". 
+For example...
+If all else fails, post your question in the Textpattern CMS Support Forum.
+* Dev blog (textpattern.com/weblog): Use "Textpattern CMS Blog". 
+For example...
+Follow the feed of the Textpattern CMS Blog to get development news from the horses mouth.
+* Plugins (textpattern.org): Use "Textpattern CMS Plugins". 
+For example...
+Extending Textpattern is done rather easily using plugins, which you can search for at—and download from—the Textpattern CMS Plugins site.
+* Themes (textgarden.org): Use "Textpattern CMS Themes". 
+For example...
+A variety of themes, both front-side and admin-side, are freely available at  Textpattern CMS Themes site.
+
+
+Default language version
+Default language for written communication should follow the conventions of British English.[1]
+Spelling
+Use British English (en-GB) spelling of words. The most common differences between British English and American English spelling have to do with verbs ending in "...ise" and their related forms, and adjectives and verbs ending in "...our". We're not going to list every possible example, but these should give you an idea:
+en-GB → organise, organiser, organisation, organisational ...
+en-GB → colour, flavour ...
+en-US → organize, organizer, organization, organizational ...
+en-US → color, flavor ...
+Quotation marks
+Quotation mark placement
+We won't bother getting complicated[2], but a closing quotation mark should most often be inside (per British English conventions) the trailing punctuation of a clause or phrase, not outside (per American English conventions).
+Yes → Expand the header reading "Textile help".
+Yes → Expand the header reading "Textile help", then click the More... link.
+No → Expand the header reading "Textile help," then click the More... link.
+Quotation mark style
+Use straight quotation marks in the wiki instead of curly quotation marks. While the latter are attractive for regular text copy, they can complicate code (such as when copy/pasting wiki content to a text editor). Straight quotations marks may prove best for documentation portability over the long-term.
+Recommended → The link label reads "see more", but see more of what?
+Not recommended → The link label reads “see more”, but see more of what?
+
+
+(Quotations marks enlarged here for readability.)
+Serial commas
+The serial comma is probably the most debated grammatical convention ever, but when it comes down to it, serial comma's only need to be used when doing so clarifies the intended meaning of a given phrase. That means a judgement call needs made every time. Chances are good that the more complex your phrase structure, the more likely you'll need a serial comma.
+An example where a serial comma is not needed... 
+Separating content, presentation and behaviour is always a smart thing to do.
+An example where a serial comma is needed (in this case to show that "macaroni and cheese" is a single preparation)... 
+Today’s lunch special includes meatloaf, macaroni and cheese, and green beans.
+Exclamation points (!)
+Do not use these in normal copy unless absolutely necessary. Nobody likes to be shouted at, unless you’re saying Ka-pow!
+The exception is if the exclamation mark is needed in a code example.
+Spacing post punctuation
+Use a single space following a period, semi-colon, colon, question mark, and an exclamation mark.
+Foreign terms and expressions
+Do not use foreign language words and expressions in the English copy. 
+Foreign terms in localised documentation are unnecessary, and the wiki already has content translation efforts in progress. Use the English language simply and concisely and it will be easier for translators of all languages to understand and translate your text. 
+Latin expressions
+Latin should be avoided except for common abbreviated expressions like e.g., i.e., etc., et cetera, lorem ipsum, and so forth. Always italicise Latin, including abbreviations.
+Point of view (personal pronouns)
+Only write in the second person point of view, using second person pronouns.
+Correct → you, your, yours
+An example of doing it right: 
+"If you want to put your site under subversion but are not comfortable using the command-line, you might try a desktop client like TortoiseSVN for Windows or Versions for Mac."
+Do not write in the first or third person point of view, regardless of whether the pronouns are normative, objective, or possessive. (Remember, there are many contributing authors to the user documentation. The wiki is not your personal website. Don’t talk to readers as if it is.)
+Wrong → 1st person: I, we … me, us … my, mine, our, ours
+Wrong → 3rd person: he, she, they … him, her, them … his, her, hers, their, theirs … it
+An example of doing it wrong:
+"I like to use TortoiseSVN, it suits my needs, but you can use whatever subversion client you want."
+Style and tone
+When writing documentation, be human, but leave your personality out of it. Get straight to the point. There are a lot of contributors to the documentation wiki, and competing personalities are more distracting to readers than helpful.
+Titles and section headers
+(forthcoming)
+Density
+Content density
+Avoid excessive content (especially text) on a given page when possible. If text gets necessarily long, break it into easily scanned sections with headers and/or lists.
+Topic density
+Avoid having too many topics on a single page.
+Capitalisation
+Mainly titles, headings, navigation links, etc. are the issue with capitalisation. Most important is to be consistent, and sentence-case headings are more effective in this respect.
+The logic of using sentence-case for consistency is especially apparent when one in a series of headings is written as a question. 
+Correct → Why use the text editor?
+So it makes sense to use sentence-case for non-question headings too.
+Correct → How to use the tab builder
+Correct → About us
+This does not mean proper nouns should not be capitalised.
+Correct → How to use Textpattern’s text editor
+Wrong → How to use textpattern’s text editor
+Wrong → Why use textile?
+All-caps
+Do not use all-caps to emphasise a word. It’s unnecessary and a barrier to accessibility. A screen reader will read each letter separately instead of together as one word.
+Numerals and special characters
+Numerals
+Reserve numerals for dates, prices and other numeric data, but write out the numeral for counts if it’s less than ten (10). For example, instead of "a 3-day event", use "a three-day event".
+Ampersands (&)
+Do not use ampersands in place of the conjunction "and". However, if they used for a legitimate reason, ensure the character is marked up as an ASCII value, not a glyph. For example, Sanford & Sons Inc. would be:
+
+
+<p>Sanford &amp; Sons Inc.</p>
+Note: The p element used here is arbitrary.
+Links
+Keep links in body copy to a minimum. Ensure links that are used are focused on calls to action (e.g., "Download") and/or contextual integration of different topic pages (e.g., links between different pages in wiki documentation). Only link to third-party websites if doing so aides the user in completing a Textpattern-related task.
+Terminology
+Textpattern terms as admin-side panel and link references
+When using the name of any admin-side panel to mean the location of that panel, it should always be a non-italicised link to the given wiki page it's referring to, and the link should only be on the word itself. I.e., the link text should be the same as the name of the wiki page it's pointing to.
+Correct → Most of your content is created in the Write panel.
+Wrong → Most of your content is created in the Write panel.
+Wrong → Most of your content is created in the Write panel.
+ There are two exceptions to the rule in bold above. Wiki pages for the Images and Comments panels are titled "Images (panel)" and "Comments (admin-side)", respectively. These are necessary (though inconsistently named) titles to avoid wiki page title conflicts with Tag pages having the same names. But they are unattractive, so we use custom links to these pages via wiki syntax.
+Correct → Photos and other images are uploaded in the Images panel.
+Correct → You can edit article comments in the Comments panel.
+Wrong → Photos and other images are uploaded in the Images (panel).
+Wrong → You can edit article comments in the Comments (admin-side) panel.
+Textpattern terms as semantical (non-linked) references
+Certain panel names—often considered to be Textpattern's semantical features—have a lot of similarity with general web terms, and thus can be easily confused if not clearly distinguished in documentation. Textpattern terms used in context of semantics, but not linked to panel documentation pages, should be capitalised and italicised.
+Correct → All Textpattern Sections must have a Page and Style associated to it.
+Wrong → All Textpattern Sections must have a Page and Style associated to it.
+        (Because it suggests the context of an non-linked panel, which shouldn't exist.)
+Wrong → All Textpattern Sections must have a page and style associated to it.
+        (Because it lacks capitalisation as used in Textpattern's UI.)
+        
+Wrong → All Textpattern Sections must have a page and style associated to it.
+        (Because there is no distinction from any other context.)
+Non-Textpattern terminology
+Use these word constructs when used at all in text.
+* When referring to the World Wide Web or Internet, capitalise the world.
+   * The Web (not The web)
+* When "web" is a regular (object) noun, do not capitalise it.
+   * website (not web site); or Website when beginning a sentence.
+Versioning
+The proper way write the version releases of Textpattern. This is less a stylistic issue and more a Textpattern development policy; however, it’s relevant to the template:Txp current version that provide this dynamic value in multiple places in documentation. Ensure the version is correct in this template against the current Textpattern release.
+Appendix A: Visual branding
+(forthcoming)
+Appendix B: Template metadata
+For the sake of referencing, all Textpattern sites maintained on Joyent servers in support of the Textpattern project should use "Textpattern CMS" in template header data.
+Recommended use of name (arbitrary examples only):
+Complete → <title>Textpattern CMS – Homepage</title>
+Complete → <meta name="description" content="The Textpattern CMS homepage">
+Complete → <meta name="keywords" content="Textpattern, CMS, homepage">
+
+
+Not recommended:
+Incomplete → <title>Textpattern – Homepage</title>
+Incomplete → <meta name="description" content="The Textpattern homepage">
+Incomplete → <meta name="keywords" content="Textpattern, homepage">
+References
+1. Clarke, Andy (2008).  A client-focused copy style guide. For a Beautiful Web. 15 Dec 2010.
+2. Cohen, Georgy (2010). Mandy Brown and Erin Kissane at Content Strategy New England: A Pragmatic Approach to Editorial Style. Georgy Cohen: Writing and Web Communications. 15 Dec 2010.
+3. Gruber, John (2010). Title Junk. Daring Fireball. 21 December 2010
+4. Saloka, Elizabeth (2009). 5 Tips on Working with a Style Guide. Brain Traffic Blog. 18 Dec 2010
+
+
+________________
+[1] Considering that Textpattern’s audiences are international, International English would be a preferable default language for its aims towards an English neutrality (not preferring any given country’s dialect of English). However, there are currently no agreed standards for writing International English, so British English is considered the best alternative. Why? Because Dean Allen, the creator of Txp, was Canadian (so it rules out using American English), and we could make the argument that all English came from the UK (philosophically speaking).
+[2] See http://en.wikipedia.org/wiki/Quotation_mark if you really have nothing better to do.
