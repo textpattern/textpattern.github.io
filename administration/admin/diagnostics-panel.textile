@@ -141,9 +141,9 @@ Yellow messages are not critical emergencies, but some may indicate problems tha
 
 Yellow messages usually appear when you need to remove the __/update__ directory on your server and/or when directories need a change to their rights of access in order to function.[2] 
 
-Following are the yellow messages you will generally see: 
+Possible yellow messages include: 
 
-* <span style="color:#cb8f02; background-color:cornflower;">/usr/home/{username}/public_html/textpattern/setup/ still exists</span> (means you need to remove the "setup" folder from the web server) 
+* <span style="color:#cb8f02; background-color:#fff6d3;">/usr/home/{username}/public_html/textpattern/setup/ still exists</span> (means you need to remove the "setup" folder from the web server) 
 * <span style="color:#cb8f02; background-color:#fff6d3;">image directory is read-only</span> (means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[3]
 
 h3. Red (critical)
