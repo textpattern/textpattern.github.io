@@ -5,6 +5,7 @@ published: true
 title: "Lang"
 tags:
   - Tag reference
+  - Language tags
   - Markup tags
 ---
 

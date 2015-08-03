@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Yield"
+tags:
+  - Tag reference
+  - Structural tags
+---
+
 h1. Yield
 
 On this page:

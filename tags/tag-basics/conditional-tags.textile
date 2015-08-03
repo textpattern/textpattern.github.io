@@ -5,6 +5,7 @@ published: true
 title: "Textpattern conditional tags"
 tags:
   - Tag basics
+  - Conditional tags
 ---
 
 h1. Conditional tags

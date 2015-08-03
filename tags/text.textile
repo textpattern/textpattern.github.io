@@ -1,3 +1,13 @@
+---
+layout: document
+category: tag-reference
+published: true
+title: "Text"
+tags:
+  - Tag reference
+  - Language tags
+---
+
 h1. Text
 
 On this page:
