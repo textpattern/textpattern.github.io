@@ -10,7 +10,14 @@ tags:
 
 h1. Newer
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:newer />
 
@@ -24,7 +31,7 @@ Given a @<txp:article limit="5" />@ tag on the page in question, @<txp:newer />@
 
 p(alert-block information). Note: This tag is context-sensitive, meaning it will only fetch content from the section or category being viewed.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -40,7 +47,7 @@ Default: @0@.
 "HTML title attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title to be applied to link.
 Default: unset.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Container tag - link with text
 
@@ -64,7 +71,7 @@ The difference between examples 2 and 3 is that the tags in example 2 will displ
 
 Other tags used: "image":image.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

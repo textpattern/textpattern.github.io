@@ -10,7 +10,13 @@ tags:
 
 h1. Link to next
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:link_to_next>
 
@@ -18,7 +24,7 @@ The *link_to_next* tag can be used as a _single_ tag or a _container_ tag to ret
 
 If used as a container tag, the HTML required to output a hyperlink is returned; if used as a single tag, only the URL itself is returned.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -27,7 +33,7 @@ Show the wrapped value even when no next article exists.
 Values: @0@ (no) or @1@ (yes).
 Default: @0@.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Link to next article using the article title
 

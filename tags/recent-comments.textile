@@ -10,7 +10,14 @@ tags:
 
 h1. Recent comments
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:recent_comments />
 
@@ -24,7 +31,7 @@ bc. <txp:recent_comments>
     ...contained statements...
 </txp:recent_comments>
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -71,7 +78,7 @@ Default: unset.
 HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Labelled list of recent comments
 
@@ -83,7 +90,7 @@ bc. <txp:recent_comments label="Recent Comments" wraptag="ol" break="li" limit="
 
 This example also increases the results to a maximum of 25 list items (instead of the default 10).
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.7
 

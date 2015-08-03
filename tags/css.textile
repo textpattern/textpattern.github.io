@@ -10,13 +10,20 @@ tags:
 
 h1. Css
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:css />
 
 The basic *css* tag is a _single_ tag used to output the URL of the stylesheet assigned in the Textpattern [[Sections page]].
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -36,7 +43,7 @@ Default: @stylesheet@.
 "HTML title attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title to be applied to link tag (when invoked with @format="link"@).
 Default: unset.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Output just the stylesheet's URL
 
@@ -72,7 +79,7 @@ bc. <head>
     <!-- ...more tags... -->
 </head>
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

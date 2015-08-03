@@ -10,17 +10,24 @@ tags:
 
 h1. Article url title
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:article_url_title />
 
 The *article_url_title* tag is a _single_ tag which returns the dumbed-down 'URL title' of the article being displayed. This URL title may also be part of the page's address depending on the 'Permanent link mode' chosen in the [[Preferences page]].
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.5
 

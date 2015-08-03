@@ -10,7 +10,13 @@ tags:
 
 h1. Comment name
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:comment_name />
 
@@ -18,7 +24,7 @@ The *comment_name* tag is a _single_ tag which is used to display a link using t
 
 Commenter's name and/or email address can be set as a requirement. Should be used in a Textpattern 'comment' type [[Form template]].
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag will accept the following attributes (*case-sensitive*):
 
@@ -27,7 +33,7 @@ Make text a link to the author's URL/email (depending on the information given).
 Values: @0@ (no) or @1@ (yes).
 Default: @0@.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Comments display form
 

@@ -10,13 +10,19 @@ tags:
 
 h1. Link date
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:link_date />
 
 The *link_date* tag is a _single_ tag which returns the date the link was created as text. This tag is used in a 'links' type form or inside the "linklist":linklist container tag to display information about the current link.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -33,7 +39,7 @@ Format time string suitable for the specified language (locale).
 Values: locales adhere to "ISO-639":http://en.wikipedia.org/wiki/ISO_639-2.
 Default: unset (time format set in the [[Preferences page]].
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display a link with date and a class attribute
 

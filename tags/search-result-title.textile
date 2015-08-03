@@ -10,17 +10,23 @@ tags:
 
 h1. Search result title
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:search_result_title />
 
 The *search_result_title* tag is a _single_ tag. This tag will provide a hyperlinked title to an article as returned by the search function.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display a hyperlinked title to an article
 

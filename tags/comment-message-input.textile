@@ -10,17 +10,23 @@ tags:
 
 h1. Comment message input
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:comment_message_input />
 
 The *comment_message_input tag is a _single_ tag which is used to display a text entry field to accept the commenter's message text. Used in the comment input form template.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Comment form
 

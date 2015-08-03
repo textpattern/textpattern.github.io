@@ -10,13 +10,19 @@ tags:
 
 h1. File download
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:file_download />
 
 The *file_download* tag is a _single_ tag which Textpattern will replace with a Textpattern 'file' type [[Form template]]. Inside that form go the other [[file tags]].
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -30,7 +36,7 @@ Default: @files@.
 File @id@ of the file to link to.
 Default: unset (nothing is returned).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display a download form
 

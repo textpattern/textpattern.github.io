@@ -11,7 +11,14 @@ tags:
 
 h1. If expires
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:if_expires>
 
@@ -23,11 +30,11 @@ bc. <txp:if_expires>
 
 The tag will execute the contained statements, if a particular article has an expiry date set. Should be used in an 'article' type form.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Show when an article is to expire
 
@@ -37,7 +44,7 @@ bc. <txp:if_expires>
 
 Other tags used: "expires":expires.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.7
 

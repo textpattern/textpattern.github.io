@@ -10,7 +10,13 @@ tags:
 
 h1. Comments count
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:comments_count />
 
@@ -20,11 +26,11 @@ Though *comments_count* can be used independently, it is also called by "comment
 
 Used in an article form.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display comment invitation and count
 

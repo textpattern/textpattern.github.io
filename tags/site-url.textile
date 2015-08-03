@@ -10,17 +10,23 @@ tags:
 
 h1. Site url
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:site_url />
 
 The *site_url* tag is a _single_ tag which returns the full URL of the site (as defined in the [[Preferences page]]) as text. If you maintain local development versions of your live sites and import databases between them, then this tag is extremely valuable for ensuring your domain links are never confused (and thus broken) between the two locations (see example 1, below).
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Maintain accurate domain paths
 

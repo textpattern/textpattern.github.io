@@ -10,7 +10,13 @@ tags:
 
 h1. Comments invite
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:comments_invite />
 
@@ -18,7 +24,7 @@ The *comments_invite* tag is a _single_ tag which is used to display a link to a
 
 This tag can be used in both a Textpattern [[Page template]] and a [[Form template]].
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -46,7 +52,7 @@ Default: @comments_invite@ (see [[class cross-reference]]).
 HTML tag to wrap around invite text, specified without brackets (e.g., @wraptag="p"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display comments invitation and comment count
 

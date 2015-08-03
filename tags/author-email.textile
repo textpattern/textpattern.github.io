@@ -10,13 +10,20 @@ tags:
 
 h1. Author email
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:author_email />
 
 The *author_email* tag is a _single_ tag that is used to return the email address of the author of the currently displayed article.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -29,7 +36,7 @@ Make text a @mailto:@ link.
 Values: @0@ (no) or @1@ (yes).
 Default: @0@.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display email address (but don't link)
 
@@ -41,7 +48,7 @@ h3. Example 2: Create a mailto: link
 
 bc. <txp:author_email link="1" />
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.5.0
 

@@ -10,17 +10,23 @@ tags:
 
 h1. Article id
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:article_id />
 
 The @article_id@ tag is a _single_ tag which returns the numeric ID of the article being displayed. This number will also be reflected as a part of the article permanent URL if it has been chosen as the 'Permanent link mode' in the [[Preferences page]].
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Hyperlinked to the article
 
@@ -28,7 +34,7 @@ bc. <txp:permlink>
     <txp:article_id />
 </txp:permlink>
 
-Other tags used: [[permlink]].
+Other tags used: "permlink":permlink.
 
 h3. Example 2: Conditional use
 

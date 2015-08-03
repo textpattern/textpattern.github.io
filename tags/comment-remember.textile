@@ -10,17 +10,23 @@ tags:
 
 h1. Comment remember
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:comment_remember />
 
 The *comment_remember* tag is a _single_ tag which is used to display a check box input field. If checked the users details are remembered by the system the next time they open a comment form. Used in the comment input form template.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Comment form
 

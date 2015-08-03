@@ -10,7 +10,13 @@ tags:
 
 h1. Prev title
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:prev_title />
 
@@ -18,11 +24,11 @@ The *prev_title* tag is a _single_ tag which Textpattern will replace with the n
 
 The container tag "link_to_prev":link-to-prev wraps the text or tag and assigns the link.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag takes no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display a link to the previous article when displaying individual articles
 

@@ -10,13 +10,20 @@ tags:
 
 h1. Link feed link
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:link_feed_link />
 
 The *link_feed_link* tag is a _single_ tag. Textpattern will replace this tag with an anchor to the site's 'links' RSS feed.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -52,13 +59,13 @@ Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 p(alert-block information). Note: @label@ and @wraptag@ attributes are applicable only when using @format@ of @a@ (@label@ used as link text).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Atom feed link with custom label
 
 bc. <txp:link_feed_link flavor="atom" label="Commerce links" />
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

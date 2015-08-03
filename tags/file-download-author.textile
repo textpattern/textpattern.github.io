@@ -10,13 +10,20 @@ tags:
 
 h1. File download author
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:file_download_author />
 
 The *file_download_author* tag is a _single_ tag that Textpattern will replace with the author's name associated with the current download in a "file_download":file-download. Can *only* be used inside @<txp:file_download />@.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -47,7 +54,7 @@ Default: unset (see [[class cross-reference]]).
 HTML tag (specified without brackets) to wrap around the author name (e.g., @wraptag="p"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display and link the file author
 
@@ -56,7 +63,7 @@ bc. <p>
     <txp:file_download_author link="1" />
 </p>
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

@@ -10,7 +10,13 @@ tags:
 
 h1. Excerpt
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:excerpt />
 
@@ -18,11 +24,11 @@ The *excerpt* tag is a _single_ tag which is used to return the excerpt text, if
 
 The conditional tag "if_excerpt":if-excerpt can be used to check if there is an excerpt.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Excerpt and 'read more' button
 

@@ -11,7 +11,14 @@ tags:
 
 h1. If last category
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:if_last_category>
 
@@ -23,11 +30,11 @@ bc. <txp:if_last_category>
 
 The tag will execute the contained statements if the current category (usually one inside the container or form of a "category_list":category-list) is the last in the currently displayed list.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Identify last category in a category list
 
@@ -45,7 +52,7 @@ Prevents the last category in the list from being hyperlinked to a category page
 
 Other tags used: "category":/category, "category_list":category-list, "else":else.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.7
 

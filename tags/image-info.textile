@@ -10,13 +10,20 @@ tags:
 
 h1. Image info
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:image_info />
 
 The *image_info* tag is a _single_ tag that Textpattern will replace with the relevant image data from the current image. Should usually be used in an 'image' type form, although it may be used on its own providing you specify an *id* or *name*.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -62,7 +69,7 @@ Default: unset (see [[class cross-reference]]).
 HTML element to wrap the items grabbed from the @type@ attribute, specified without brackets (e.g., @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Gallery thumbnail and caption
 
@@ -99,7 +106,7 @@ bc. <txp:image_info id="5" type="category_title" />
 
 Displays the category_title of the category assigned to image ID '5'.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.6.0
 

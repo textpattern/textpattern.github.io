@@ -10,7 +10,14 @@ tags:
 
 h1. Variable
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:variable />
 
@@ -24,7 +31,7 @@ bc. <txp:variable>
 
 p(alert-block information). Note: Avoid entering white space characters for better code readability between the opening and closing _variable_ tags, they will lead to falsified results in the "if_variable":if-variable evaluation.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -33,7 +40,7 @@ The variable name for which you wish to assign a value. Valid variable names mus
 * @value="value"@
 (Optionally) define the value to which you wish to set the variable. Without this attribute, the tag returns the current value assigned to the named variable.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Store site-wide constants
 
@@ -84,7 +91,7 @@ The conditional is saying if there is a variable named 'foo' having a specific v
 
 Other tags used: "if_variable":if-variable.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.7
 

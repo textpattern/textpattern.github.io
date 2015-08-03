@@ -10,13 +10,20 @@ tags:
 
 h1. Image
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:image />
 
 The *image* tag is a _single_ tag that Textpattern will replace with the @<img src="...">@ HTML tag matching the image of the numeric @id@ assigned by Textpattern when the image was uploaded via the Textpattern [[Images page]].
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -52,7 +59,7 @@ Default: unset.
 HTML tag to be used to wrap the @<img>@ tag, specified without brackets (e.g., @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display the given image
 
@@ -68,7 +75,7 @@ Displays the image named @chickens.jpg@ and assigns a @class="promoted"@ attribu
 
 Had the @wraptag@ attribute been used, the @class="promoted"@ attribute/value would have been applied to that instead of directly to the image tag.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

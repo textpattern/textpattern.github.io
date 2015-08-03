@@ -11,7 +11,14 @@ tags:
 
 h1. If author
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:if_author>
 
@@ -25,7 +32,7 @@ The tag will execute the contained statement *if* the called page is the result 
 
 p(alert-block information). This is *not* the same as checking if the current article was written (posted) by the given author. Use "if_article_author":if-article-author for that situation.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -40,7 +47,7 @@ Textpattern context to check against. You can choose from the following contexts
 @link@ is this a link author list?
 Default: @article@.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Select a stylesheet based on author
 
@@ -54,7 +61,7 @@ bc. <txp:if_author name="admin">
 
 Other tags used: "else":else, "css":css.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

@@ -10,13 +10,19 @@ tags:
 
 h1. Comment permlink
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:comment_permlink>
 
 The *comment_permlink* tag is a _container_ tag which is used to return the permanent link of the article comment being displayed. The container tag wraps the text assigned to the link. Should be used in a Textpattern 'comment' type [[Form template]].
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -25,7 +31,7 @@ Whether to apply the comment's ID number to the hyperlink tag (as the @id@ attri
 Values: @0@ (no) or @1@ (yes).
 Default: @0@.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Comments display form
 

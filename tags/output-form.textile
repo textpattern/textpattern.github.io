@@ -10,7 +10,14 @@ tags:
 
 h1. Output form
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:output_form />
 
@@ -18,7 +25,7 @@ The *output_form* tag can be used as a _single_ or a _container_ tag. Textpatter
 
 For the container tag usage, see the "yield":yield tag.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -26,7 +33,7 @@ Tag will accept the following attributes (*case-sensitive*):
 Use specified form.
 Default: unset (no output).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Manage small pieces of static text
 
@@ -59,7 +66,7 @@ bc. <txp:output_form form="head" />
 
 The advantage of this is that when you edit your page header, you can do so once in the form template and it will update all instances of use in your different pages at the same time.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.2.0
 

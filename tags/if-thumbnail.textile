@@ -11,7 +11,14 @@ tags:
 
 h1. If thumbnail
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:if_thumbnail>
 
@@ -23,11 +30,11 @@ bc. <txp:if_thumbnail>
 
 The tag will execute the contained statements *if* the current image (from an "images":images tag) has a thumbnail assigned to it. Must always be used in an image context.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Only show a thumbnail if one exists
 
@@ -44,7 +51,7 @@ For each image uploaded by author 'neo', display its thumbnail if it has one, or
 
 Other tags used: "images":images, "else":else, "image_info":image-info, "thumbnail":thumbnail.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

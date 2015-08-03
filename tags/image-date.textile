@@ -10,13 +10,20 @@ tags:
 
 h1. Image date
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:image_date />
 
 The *image_date* tag is a _single_ tag that Textpattern will replace with the uploaded date of the current (or given) image. Should usually be used in an [[image form]], although it may be used on its own providing you specify an @id@ or @name@.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -31,7 +38,7 @@ Default: the 'Archive date format' set in preferences.
 An image to display, given by its image name as shown on the [[Images page]]. If both @name@ and @id@ are specified, the @id@ takes precedence.
 Default: unset.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display additional image information
 
@@ -47,7 +54,7 @@ bc. <txp:images category="mammals">
 
 Other tags used: "images":images, "image_url":image-url, "image_info":image-info, "thumbnail":thumbnail.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

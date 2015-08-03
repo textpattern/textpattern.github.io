@@ -10,13 +10,20 @@ tags:
 
 h1. Author
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:author />
 
 The *author* tag is a _single_ tag that is used to return the name of the author of the currently displayed article.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -45,7 +52,7 @@ Whether to display the author's real name or login name.
 Values: @0@ (login name) or @1@ (real name).
 Default: @1@.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Link to list of author's articles
 
@@ -74,7 +81,7 @@ Display the author's name above a list of articles by that author when visiting 
 
 Other tags used: "if_author":if-author, "article":article.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.6.0
 

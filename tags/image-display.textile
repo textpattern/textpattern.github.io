@@ -10,7 +10,13 @@ tags:
 
 h1. Image display
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:image_display />
 
@@ -20,11 +26,11 @@ The *image_display* tag displays an image specified by the page URL which in tur
 
 If this tag seems to display no image at all, it probably resides inside an article which is never rendered as it does not belong to the currently active category.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display a single image as chosen by image_index
 

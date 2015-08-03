@@ -1,16 +1,23 @@
 h1. Yield
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:yield />
 
 The *yield* tag is a _single_ tag which is used to return the inner content of the enclosing @<txp:output_form />@ tag.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example: Inner content
 
@@ -43,7 +50,7 @@ bc. <div>
 
 Other tags used: "output_form":output-form.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.2.0
 

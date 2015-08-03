@@ -10,7 +10,14 @@ tags:
 
 h1. Article
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:article />
 
@@ -30,7 +37,7 @@ When used on the front page, article's context will include articles from all se
 
 p(alert-block information). @<txp:article />@ is *not* the same as @<txp:article_custom />@ - you can "check out the differences of that tag":article-custom if you're unsure of the differences!
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept content/behaviour and presentation attributes (*case-sensitive*):
 
@@ -131,7 +138,7 @@ h2. Note on 'article list' vs. 'individual article' context
 
 The *article* tag is context-sensitive. It will produce different results depending on whether the page being viewed is an article list or an individual article. Article-list context includes the default (home) page, section front pages, and category pages. Individual-article context applies on an article page (i.e., a page with a URL like @http://example.com/archives/24/my-article@).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Basic use as single tag
 
@@ -197,7 +204,7 @@ Uses the @sort@ attribute to define values by which to order article output. In 
 
 Why might you do it? Sorting is a powerful way to group articles (e.g., by author), and/or give priority to articles most recently published (typically better for your website visitors).
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.7
 

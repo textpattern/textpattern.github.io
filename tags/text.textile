@@ -1,6 +1,12 @@
 h1. Text
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:text />
 
@@ -8,7 +14,7 @@ The *text* tag is a _single_ tag which is primarily used to return localised lan
 
 p(alert-block information). Note: only language strings designated with a type of @common@ or @public@ are available to use. All other language string types are reserved for use within the Textpattern system itself.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -19,7 +25,7 @@ Default: @html@.
 * @item="text"@
 Piece of text to display, preferably an item from the @name@ column of the @txp_lang@ database table. If the given item matches a key there, the contents of the respective item in the @data@ column will be returned. Otherwise, whatever you supply as the @item@ value is returned verbatim.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display some localised text
 

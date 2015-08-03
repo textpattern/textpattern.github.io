@@ -11,7 +11,14 @@ tags:
 
 h1. If article id
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:if_article_id>
 
@@ -23,7 +30,7 @@ bc. <txp:if_article_id>
 
 The tag will execute the contained statement if the article id associated with a particular article matches the id attribute. Should be used in an article form/container. The @id@ attribute *must* be used in an *article list context* (when producing a page that displays more than one article) or the tag will do nothing.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -31,7 +38,7 @@ Tag will accept the following attributes (*case-sensitive*):
 Comma delimited integer article ID list.
 Default: current article's ID if available (i.e. on a page that displays a single article).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display info if the article id matches
 
@@ -62,7 +69,7 @@ Displays an unordered linked list of articles from the same section omitting the
 
 Other tags used: "article_custom":article_custom, "section":section, "else":else, "permlink":permlink, "title":title.
 
-h3. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.7
 

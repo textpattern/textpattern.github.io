@@ -10,13 +10,20 @@ tags:
 
 h1. Recent articles
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:recent_articles />
 
 The *recent_articles* tag is a _single_ tag which is used to produce a list of permanent links to recent articles by title.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -76,7 +83,7 @@ Default: unset.
 HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Labelled list of recent articles
 
@@ -96,7 +103,7 @@ bc. <txp:recent_articles label="Other recent articles" limit="5" offset="1" />
 
 Produces a list of the 5 most recent articles _apart_ from the most recent one, along with the label 'Other recent articles'.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.6.0
 

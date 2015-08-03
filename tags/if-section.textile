@@ -10,7 +10,13 @@ tags:
 
 h1. If section
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:if_section>
 
@@ -22,14 +28,14 @@ bc. <;txp:if_section>
 
 The tag will execute the contained statements if the called page is part of the section specified with the name attribute.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
 * @name="section"@
 Comma-separated list of section names. For the default section, either use the text @default@ or a single comma @,@ (for example, both @name=", other_section"@ and @name="default, other_section"@ are equivalent).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Conditionally display text for a section
 

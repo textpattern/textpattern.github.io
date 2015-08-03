@@ -10,13 +10,20 @@ tags:
 
 h1. Search input
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:search_input />
 
 The *search_input* tag is a _single_ tag. This tag will provide a text entry field for search parameters and an optional button to initiate the search.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -56,7 +63,7 @@ Default: unset (but see [[label cross-reference]] for exceptions).
 HTML element to wrap markup, specified without brackets (e.g., @wraptag="div"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display a search input form
 
@@ -80,7 +87,7 @@ Other tags used: "site_url":site-url.
 
 p(alert-block information). Textpattern will use a user defined form named @search_results@, or an internally defined default form if no search result form is defined by you.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

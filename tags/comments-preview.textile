@@ -10,13 +10,20 @@ tags:
 
 h1. Comments preview
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:comments_preview />
 
 The *comments_preview* tag is a _single_ tag which is used to display a preview of a visitor's comment.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -35,7 +42,7 @@ Default: @comments_preview@ (see [[class cross-reference]]).
 HTML tag to wrap around the list, specified without brackets (e.g., @wraptag="div"@).
 Default: depends upon 'Present Comments as a Numbered List?' preference setting - either @ol@ or unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.4
 

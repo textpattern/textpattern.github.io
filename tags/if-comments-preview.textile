@@ -11,7 +11,13 @@ tags:
 
 h1. If comments preview
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:if_comments_preview>
 
@@ -23,11 +29,11 @@ bc. <txp:if_comments_preview>
 
 The tag will execute the contained statements if a comment is being previewed.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag takes no attributes:
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display text prompt when comment is previewed
 

@@ -11,7 +11,13 @@ tags:
 
 h1. If comments
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:if_comments>
 
@@ -23,11 +29,11 @@ bc. <txp:if_comments>
 
 The tag will execute the contained statements if there are one or more comments associated with a particular article. Should be used in an 'article' type form.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Number of comments associated with an article
 

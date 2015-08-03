@@ -16,7 +16,7 @@ h3(sectionedit1#attributes). Attributes
 
 This tag has no attributes.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.6.0
 

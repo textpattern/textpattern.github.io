@@ -10,7 +10,13 @@ tags:
 
 h1. Link to home
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:link_to_home>
 
@@ -22,7 +28,7 @@ bc. <txp:link_to_home />
 
 In this mode it operates identically to "site_url":site-url.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -34,7 +40,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 CSS class attribute to apply to the anchor. Will be ignored if used as a single tag.
 Default: unset.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Home page link with site's name
 

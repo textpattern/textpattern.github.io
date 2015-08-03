@@ -12,7 +12,14 @@ tags:
 
 h1. Section list
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:section_list />
 
@@ -22,7 +29,7 @@ bc. <txp:section_list>
     ...contained statements...
 </txp:section_list>
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -83,7 +90,7 @@ Default: unset.
 HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display a linked section list
 
@@ -107,7 +114,7 @@ This code will add @class="active"@ to the @<li>@ element around the currently v
 
 Other tags used: "if_section":if-section, "section":section.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.6.0
 

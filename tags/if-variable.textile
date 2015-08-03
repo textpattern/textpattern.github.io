@@ -11,7 +11,14 @@ tags:
 
 h1. If variable
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:if_variable>
 
@@ -25,7 +32,7 @@ It tests the existence and/or value of a global variable set with the "variable"
 
 p(alert-block information). Note: In case you are getting unexpected results in an *if_variable* evaluation, check whether you have entered additional white space or invisible characters in your "variable":variable declarations and remove those.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -34,11 +41,11 @@ The name of the variable you wish to check.
 * @value="value"@
 The (optional) value which the named variable must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns 'true' if the named variable is defined. If this attribute's value is omitted (i.e., @value=""@), the tag returns 'true' if the variable is defined, but has no value.
 
-h2. Examples
+h2(#sec3). Examples
 
 See the "variable":textile page for examples.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.7
 

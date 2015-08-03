@@ -11,7 +11,13 @@ tags:
 
 h1. If article author
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:if_article_author>
 
@@ -25,7 +31,7 @@ The tag will execute the contained statement if the author name associated with 
 
 p(alert-block information). The @name@ attribute requires an author's login name *not* their real name.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -33,7 +39,7 @@ Tag will accept the following attributes (*case-sensitive*):
 Comma-separated list of author names.
 Default: unset (i.e. any author at all).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display some text dependent on an article's author
 

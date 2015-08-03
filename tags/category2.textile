@@ -11,7 +11,14 @@ tags:
 
 h1. Category2
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:category2 />
 
@@ -19,7 +26,7 @@ The *category2* tag can be used as either a _single_ tag or _container_ tag. It 
 
 This tag may be used within either an article form, or in a page, wrapped in an "if_individual_article":if-individual-article conditional tag.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -51,7 +58,7 @@ Default: unset (see [[class cross-reference]]).
 HTML tag to wrap around output, specified without brackets (e.g., @wraptag="p"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Category name in plain text
 
@@ -87,7 +94,7 @@ Shows a hyperlinked category 1, and also hyperlinked category 2 but only if it i
 
 Other tags used: "category1":category1, "if_article_category":if-article-category.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.4
 

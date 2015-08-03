@@ -10,17 +10,23 @@ tags:
 
 h1. Body
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:body />
 
 The *body* tag is a _single_ tag which is used to return the text, or content, of the article being displayed (the article itself). The tag can be used in a Textpattern 'article' type [[Form template]], or within a [[Page template]], either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list).
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display the article text
 

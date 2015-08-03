@@ -11,7 +11,14 @@ tags:
 
 h1. Meta keywords
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:meta_keywords />
 
@@ -27,7 +34,7 @@ Context of use must be within a single article (as opposed to an article list). 
 
 p(alert-block information). Note: The corresponding keywords field has a 255 character limit by default, which includes spaces and commas. This is the MySQL database default. You can edit the default using "phpMyAdmin":http://www.phpmyadmin.net, for example.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 * @escape="html"@
 Escape HTML entities such as @<@, @>@ and @&@.
@@ -41,7 +48,7 @@ Default: @meta@ (display as a @<meta>@ tag).
 Character to be used as the keywords separator.
 Default: unset.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Use article's keywords for meta tag content
 
@@ -75,7 +82,7 @@ In this example, keywords are used in a Textpattern 'article' type [[Form templa
 
 Other tags used: "permlink":permlink, "title":title, "posted":posted, "excerpt":excerpt, "body":body.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.6.0
 

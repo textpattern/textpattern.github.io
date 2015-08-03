@@ -1,6 +1,13 @@
 h1. If keywords
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:if_keywords>
 
@@ -12,7 +19,7 @@ bc. <txp:if_keywords>
 
 The tag will execute the contained statement if the current article's 'Keywords' field has one or more entries.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -20,7 +27,7 @@ Tag will accept the following attributes (*case-sensitive*):
 Comma-separated list of keywords.
 Default: unset, which determines whether any keywords are assigned to the article.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Supply meta tag if keywords exist
 
@@ -41,7 +48,7 @@ bc. <head>
 
 Other tags used: "meta_keywords":meta-keywords, "if_individual_article":if-individual-article, "else":else.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.7
 

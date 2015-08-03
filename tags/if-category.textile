@@ -10,7 +10,14 @@ tags:
 
 h1. If category
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:if_category>
 
@@ -24,7 +31,7 @@ The tag will execute the contained statements if the @name@ attribute matches a 
 
 Should be used in a page template; if checking the category in an article form, use "if_article_category":if-article-category.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -39,7 +46,7 @@ Textpattern context to check against. You can choose from the following contexts
 @link@ is this a link category list?
 Default: @article@.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display info depending on list category
 
@@ -97,7 +104,7 @@ p. Shows a category list and, underneath it, a list of related articles in the c
 
 Other tags used: "category_list":category-list, "recent_articles":recent-articles.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

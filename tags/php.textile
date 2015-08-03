@@ -10,7 +10,13 @@ tags:
 
 h1. Php
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:php>
 
@@ -22,7 +28,7 @@ bc. <txp:php>
 
 Control over where this tag is allowed to appear (i.e., the privileges required to allow it to appear in pages and forms) are governed by settings in the [[Preferences page]].
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
@@ -50,7 +56,7 @@ h3. Arrays must be passed to all functions
 
 You must pass an array to all tag functions, even if there are no attributes to set. For tags that require no attributes or those that you do not wish to modify the defaults, pass an empty array, e.g., @category1(array());@.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display PHP server library information
 

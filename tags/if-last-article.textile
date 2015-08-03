@@ -10,7 +10,13 @@ tags:
 
 h1. If last article
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:if_last_article>
 
@@ -22,11 +28,11 @@ bc. <txp:if_last_article>
 
 The tag will execute the contained statements if the displayed article is the last in the currently displayed list. It will display in both single article and article list modes. Should be used in an Textpattern 'article' type [[Form template]].
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Add an image after the last article in a list
 

@@ -10,13 +10,20 @@ tags:
 
 h1. Link description
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:link_description />
 
 The *link_description* tag is a _single_ tag which is used to return the text from the 'Description' field as defined within the [[Links page]]. This tag is used in a 'links' type form or inside a "linklist":linklist container tag to display information about the current link.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -42,7 +49,7 @@ Default: unset.
 HTML element to wrap around description, specified without brackets (e.g., @wraptag="div"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display a link and its description field contents
 
@@ -54,7 +61,7 @@ h3. Example 1: Display a link and its description field contents
 
 Other tags used: "link":link.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.7
 

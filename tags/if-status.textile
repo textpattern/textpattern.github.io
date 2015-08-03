@@ -11,7 +11,13 @@ tags:
 
 h1. If status
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:if_status>
 
@@ -25,7 +31,7 @@ The tag will execute the contained statements depending on the requested page's 
 
 This tag provides a method of sharing one page template between common pages and error pages, but including different output depending on the page's HTTP status.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -33,7 +39,7 @@ Tag will accept the following attributes (*case-sensitive*):
 Numerical "HTTP status code":https://en.wikipedia.org/wiki/List_of_HTTP_status_codes.
 Default: @200@ (OK).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Conditionally display text on missing pages
 

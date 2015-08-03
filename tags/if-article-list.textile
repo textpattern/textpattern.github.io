@@ -11,7 +11,13 @@ tags:
 
 h1. If article list
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:if_article_list>
 
@@ -23,11 +29,11 @@ bc. <txp:if_article_list>
 
 The tag will execute the contained statement if an article list is being displayed (i.e. not showing an individual article).
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Article/article list navigation
 

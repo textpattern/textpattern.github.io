@@ -11,7 +11,14 @@ tags:
 
 h1. File download list
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:file_download_list />
 
@@ -23,7 +30,7 @@ bc. <txp:file_download_list>
     ...contained statements...
 </txp:file_download_list>
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -95,13 +102,13 @@ Default: unset.
 HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display a list of the ten most popular downloads, in descending order
 
 bc. <txp:file_download_list limit="10" break="li" wraptag="ol" sort="downloads desc" />
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

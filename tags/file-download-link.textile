@@ -11,7 +11,13 @@ tags:
 
 h1. File download link
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:file_download_link />
 
@@ -23,7 +29,7 @@ bc. <txp:file_download_link>
 
 When used as a single tag, Textpattern will replace the tag with a download link to the file being downloaded. As a container, it will assign the link to the given text or tag, while the single tag outputs the file's plain URL.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -34,7 +40,7 @@ Specifies the @id@, assigned at upload of the file, to display. Can be found on 
 
 p(alert-block information). Note: @id@ takes precedence over @filename@. If neither is defined and the tag is not used within the context of a file, nothing is returned.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Provide a link to download file #4
 

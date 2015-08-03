@@ -11,7 +11,13 @@ tags:
 
 h1. If comments error
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:if_comments_error>
 
@@ -23,11 +29,11 @@ bc. <txp:if_comments_error>
 
 The tag will execute the contained statements when an error exists with the comments.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display comments error when an error occurs
 

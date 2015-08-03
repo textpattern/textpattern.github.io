@@ -11,7 +11,14 @@ tags:
 
 h1. Meta description
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:meta_description />
 
@@ -27,7 +34,7 @@ The tag is context aware, in that it will use article descriptions (if available
 
 p(alert-block information). Note: The corresponding description field has a 255 character limit by default, which includes spaces and punctuation. This is the MySQL database default. You can edit the default using "phpMyAdmin":http://www.phpmyadmin.net, for example.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 * @escape="html"@
 Escape HTML entities such as @<@, @>@ and @&@.
@@ -42,7 +49,7 @@ The context from which to display meta information.
 Values: @article@, @section@, or @category@. The @category@ may also be augmented to include its type, e.g. @category.image@ or @category.file@ to display description information from the nominated category type.
 Default: empty (i.e. automatic, depending on where the tag is used).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Use article or section's description for meta tag content
 
@@ -101,7 +108,7 @@ The second instance is only shown if on a landing page, and will force the displ
 
 Other tags used: "section":section, "if_article_list":if-article-list, "article":article.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.6.0
 

@@ -10,17 +10,23 @@ tags:
 
 h1. Hide
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:hide />
 
 The *hide* tag is a _container_ tag which is used to suppress the interpretation of all enclosed contents. Use it for comments, temporary concealment of article text parts or non-destructive form changes.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Insert a useful note in a template
 

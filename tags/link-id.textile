@@ -10,17 +10,24 @@ tags:
 
 h1. Link id
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:link_id />
 
 The *link_id* tag is a _single_ tag which returns the numerical ID of the link. This tag is used in a 'links' type form or inside the "linklist":linklist container tag to show information about the current link in the list.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display link information
 
@@ -34,7 +41,7 @@ bc. <txp:linklist category="dogs">
 
 Other tags used: "linklist":linklist, "link_name":link-name, "link_category":link-category.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.2.0
 

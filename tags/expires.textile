@@ -10,13 +10,20 @@ tags:
 
 h1. Expires
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:expires />
 
 The *expires* tag is a _single_ tag used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive (e.g., events like conferences, meetings and so forth). The tag is defined by expiration date values that are set under the ''Date and time' section of the [[Write page]].
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -44,7 +51,7 @@ Default: tag name or unset (see [[class cross-reference]]).
 HTML tag to wrap around output, specified without brackets (e.g., @wraptag="p"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Custom format date setting
 
@@ -81,7 +88,7 @@ bc. <p>
 
 This provides styling hooks for each date part.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.7
 

@@ -1,20 +1,27 @@
 h1. Rsd DEPRECATED [todo:pw]
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:rsd />
 
 The *rsd* tag is a _single_ tag which is used to insert a "Really Simple Discoverability":https://github.com/danielberlinger/rsd link element, helping XML-RPC client programs to configure themselves.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 Example 1: TODO?
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.7
 

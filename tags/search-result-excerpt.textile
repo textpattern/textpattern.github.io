@@ -10,13 +10,20 @@ tags:
 
 h1. Search result excerpt
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:search_result_excerpt />
 
 The *search_result_excerpt* tag is a _single_ tag. The tag will show the occurrence of the search term with some surrounding context.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -30,7 +37,7 @@ Default: @strong@.
 Maximum number of search match excerpts per search result.
 Default: @5@.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display up to 15 search excerpts with a search results form
 
@@ -49,7 +56,7 @@ bc. <h3>
 
 Other tags used: "permlink":permlink, "posted":posted, "title":title.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.0.6
 

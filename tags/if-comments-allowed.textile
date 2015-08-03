@@ -11,7 +11,13 @@ tags:
 
 h1. If comments allowed
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:if_comments_allowed>
 
@@ -29,11 +35,11 @@ When used in a page template, it will test the article identified by the attribu
 
 This tag is mainly used in combination with "if_comments_disallowed":if-comments-disallowed.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Give an indication of comments status
 

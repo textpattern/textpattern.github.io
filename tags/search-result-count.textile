@@ -10,7 +10,13 @@ tags:
 
 h1. Search result count
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:search_result_count />
 
@@ -18,7 +24,7 @@ The *search_result_count* tag is a _single_ tag that returns the number of artic
 
 p(alert-block information). Note: The "if_search":if-search conditional tag is required to recognise actual search results, without them the number of articles is returned by default.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -26,7 +32,7 @@ Tag will accept the following attributes (*case-sensitive*):
 Text to display with the number of matches.
 Default: @articles found@.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display a number of matches
 

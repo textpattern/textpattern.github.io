@@ -10,17 +10,23 @@ tags:
 
 h1. Lang
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:lang />
 
 The *lang* tag is a _single_ tag. Textpattern will replace this tag with the 2-letter code of the language which is set as the site's language preference in the [[Languages page]], according to "RFC 1766":https://www.ietf.org/rfc/rfc1766.txt.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 This tag has no attributes.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Define a document's language
 

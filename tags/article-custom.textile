@@ -10,7 +10,14 @@ tags:
 
 h1. Article custom
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:article_custom />
 
@@ -38,7 +45,7 @@ bc.. <txp:if_article_list>
     <txp:article />
 </txp:if_individual_article>
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -140,7 +147,7 @@ Default: unset.
 HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display 5 articles from a specific section on the homepage
 
@@ -228,7 +235,7 @@ bc. <txp:article_custom id="81,73" sort="field(id,81,73)" />
 
 Outputs articles specified by list of IDs, in the order given in the @sort@ field.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.5.0
 

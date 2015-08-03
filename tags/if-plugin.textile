@@ -10,7 +10,14 @@ tags:
 
 h1. If plugin
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:if_plugin>
 
@@ -22,7 +29,7 @@ bc. <txp:if_plugin>
 
 The tag will execute the contained statements if the name attribute matches a currently installed and enabled plugin, and the current version number is equal to or greater than the @version@ attribute assigned (if used).
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -32,7 +39,7 @@ Plugin name as defined on [[Plugins page]].
 Minimum plugin version number.
 Default: unset.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Check plugin exists before using a tag
 
@@ -42,7 +49,7 @@ bc. <txp:if_plugin name="zem_plugin_lang" version="4">
 
 Applies the tag @<txp:zem_contact />@ if the 'zem_contact_lang' plugin is installed, activated, and the version number is equal to or greater than 4.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

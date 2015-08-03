@@ -11,7 +11,13 @@ tags:
 
 h1. If article category
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
 
 bc. <txp:if_article_category>
 
@@ -23,7 +29,7 @@ bc. <txp:if_article_category>
 
 It will execute the contained statement if the category name associated with a particular article (Category1 or Category2) matches the values of the name and number attributes. Should be used in an 'article' type Textpattern [Form]] template.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -35,7 +41,7 @@ Match category in Category1 or Category2 (or both).
 Values: @1@ or @2@.
 Default: unset, causing both categories to be matched against the specified name.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display matched category
 

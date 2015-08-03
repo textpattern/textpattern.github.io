@@ -10,13 +10,20 @@ tags:
 
 h1. Breadcrumb
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:breadcrumb />
 
 The *breadcrumb* tag is a _single_ tag which is used to create "breadcrumb navigation":http://en.wikipedia.org/wiki/Breadcrumb_trail. It provides either hyperlinked navigation, or plain text positional display, any time you are *not* on the Home page.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -49,7 +56,7 @@ Default: unset (but see [[label cross-reference]] for exceptions).
 HTML element to wrap breadcrumb block, specified without brackets (e.g., @wraptag="p"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display a hyperlinked breadcrumb trail
 
@@ -65,7 +72,7 @@ bc. <txp:breadcrumb label="Navigation" separator="/" link="0" wraptag="p" />
 
 Provides a breadcrumb guide that reflects where a user is within the site's navigation.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.5.0
 

@@ -11,7 +11,14 @@ tags:
 
 h1. If custom field
 
-h2. Syntax
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:if_custom_field>
 
@@ -23,7 +30,7 @@ bc. <txp:if_custom_field>
 
 The tag will execute the contained statements if one or more custom fields for a given article have content. The contents of a custom field can be displayed with the "custom_field":custom-field tag.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -41,7 +48,7 @@ If you wish to treat your custom field as a list of items - so that each item is
 * @value="field value"@
 The custom field content you want to check for a match.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Display contents of custom fields
 
@@ -128,7 +135,7 @@ Checks the content of the custom field named @animals@ which has a comma separat
 
 Other tags used: "else":else.
 
-h2. Genealogy
+h2(#sec4). Genealogy
 
 h3. Version 4.3.0
 

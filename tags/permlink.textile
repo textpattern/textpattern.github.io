@@ -11,13 +11,21 @@ tags:
 
 h1. Permlink
 
-h2. <txp:permlink>
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+
+h2(#sec1). Syntax
+
+<txp:permlink>
 
 The *permlink* can be used as a _single_ tag or a _container_ tag to return the permanent url of the article being displayed.
 
 If used as a container tag, the HTML required to output a hyperlink is returned; if used as a single tag, only the URL itself is returned.
 
-h2. Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
@@ -39,7 +47,7 @@ Default: tag name or unset (see [[class cross-reference]]).
 Inline CSS @style@ rule. It's recommended that you assign CSS rules via @class@ attribute instead.
 Default: unset.
 
-h2. Examples
+h2(#sec3). Examples
 
 h3. Example 1: Single tag
 
