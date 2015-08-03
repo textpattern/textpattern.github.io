@@ -1,4 +1,4 @@
-\n"mininav_troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
+[todo:pw]
 
 Certain Textpattern tags are only intended for use in particular places. If you see a message similar to this: “Article tags cannot be used outside an article context” then Textpattern is telling you that you shouldn't use the named tag where you have placed it.
 

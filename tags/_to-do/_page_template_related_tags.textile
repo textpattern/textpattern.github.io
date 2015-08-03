@@ -1,4 +1,4 @@
-\n"stop":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=stop
+[todo:pw]
 
 "alphabetical_tag_listing":/home/www/zendstudio/dokuwiki/bin/doku.php?id=alphabetical_tag_listing &#124; "Tag Attributes Cross-Reference":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross_reference &#124; "Page (template) Tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_template_related_tags &#124; "form_related_tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=form_related_tags &#124; "conditional_tags":/home/www/zendstudio/dokuwiki/bin/doku.php?id=conditional_tags
 

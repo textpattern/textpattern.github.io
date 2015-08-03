@@ -1,6 +1,6 @@
-\n"mininav_troubleshooting":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting
+[todo:pw]
 
-TXP tags behave like XML tags insofar as they must be *closed* correctly.
+Textpattern tags behave like XML tags insofar as they must be *closed* correctly.
 
 Any containing tag must have both an opening tag and a corresponding closing tag (marked with a preceding slash):
 
