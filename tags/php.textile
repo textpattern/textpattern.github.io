@@ -67,7 +67,7 @@ bc. <txp:php>
 h3. Example 2: Show the current linked category title
 
 bc. <txp:php>
-    echo "The current TXP category is: "
+    echo "The current Textpattern category is: "
         .category(array(
             'title'   => '1',
             'link'    => '1',
