@@ -1,11 +1,11 @@
-h1. Rsd DEPRECATED [todo:pw]
+h1. Rsd [todo:pw]
+
+p(alert-block error). DEPRECATED 4.6.0
 
 On this page:
 
 * "Syntax":#sec1
-* "Attributes":#sec2
-* "Examples":#sec3
-* "Genealogy":#sec4
+* "Genealogy":#sec2
 
 h2(#sec1). Syntax
 
@@ -13,15 +13,11 @@ bc. <txp:rsd />
 
 The *rsd* tag is a _single_ tag which is used to insert a "Really Simple Discoverability":https://github.com/danielberlinger/rsd link element, helping XML-RPC client programs to configure themselves.
 
-h2(#sec2). Attributes
-
-This tag has no attributes.
-
-h2(#sec3). Examples
-
-Example 1: TODO?
-
 h2(#sec4). Genealogy
+
+h3. Version 4.6.0
+
+Tag support removed.
 
 h3. Version 4.0.7
 
