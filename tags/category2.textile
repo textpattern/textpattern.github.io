@@ -1,10 +1,9 @@
 ---
 layout: document
-category: tag-reference
+category: tags
 published: true
 title: "Category2"
 tags:
-  - Tag reference
   - Article tags
   - Navigation tags
 ---

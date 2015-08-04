@@ -1,10 +1,9 @@
 ---
 layout: document
-category: tag-reference
+category: tags
 published: true
 title: "Lang"
 tags:
-  - Tag reference
   - Language tags
   - Markup tags
 ---

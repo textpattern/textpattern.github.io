@@ -1,10 +1,9 @@
 ---
 layout: document
-category: tag-reference
+category: tags
 published: true
 title: "Image index"
 tags:
-  - Tag reference
   - Image tags
   - List tags
 ---

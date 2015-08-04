@@ -1,10 +1,9 @@
 ---
 layout: document
-category: tag-reference
+category: tags
 published: true
 title: "Text"
 tags:
-  - Tag reference
   - Language tags
 ---
 

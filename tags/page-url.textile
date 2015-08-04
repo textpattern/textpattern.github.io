@@ -1,10 +1,9 @@
 ---
 layout: document
-category: tag-reference
+category: tags
 published: true
 title: "Page url"
 tags:
-  - Tag reference
   - Markup tags
 ---
 

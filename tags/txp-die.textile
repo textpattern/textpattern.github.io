@@ -1,10 +1,9 @@
 ---
 layout: document
-category: tag-reference
+category: tags
 published: true
 title: "Txp die"
 tags:
-  - Tag reference
   - Error handling tags
   - Programmer tags
 ---

@@ -1,10 +1,9 @@
 ---
 layout: document
-category: tag-reference
+category: tags
 published: true
 title: "If excerpt"
 tags:
-  - Tag reference
   - Article tags
   - Conditional tags
 ---
