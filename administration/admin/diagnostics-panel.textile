@@ -152,7 +152,7 @@ Yellow (warning) messages are not critical, per se, and sometimes can even be ca
 There are several possible warning messages. Where no description is given below, you are advised to look at the UI information for the warnings by clicking the "Information" icon at right of the **Pre-flight check** items: 
 
 * path_to_site_missing %(warning)txp_lang phrase needed here%
-* %(warning)DNS lookup failed: {site URL}% -- This means the "Site URL" preference you have entered in the **"Basic":preferences/basic-prefs-panel** panel is probably incorrect somehow. Check the value and make sure it's entered exactly like this, @domain.tld@, using your domain name and TLD extension.
+* %(warning)DNS lookup failed: {site URL}% -- This means the "Site URL" preference you have entered in the **"Basic preferences":preferences/basic-prefs-panel** panel is probably incorrect somehow. Check the value and make sure it's entered exactly like this, @domain.tld@, using your domain name and TLD extension.
 * %(warning)Site URL preference might be incorrect: {site URL}% -- Similar to the previous message, this is suggesting the "Site URL" as set in the preferences tab does not match the actual URL you use to visit your website.
 * %(warning)Clean URL test failed.% -- This is not necessarily an error, and could appear for different reasons. Check the help information. It could be caused by the PHP configuration setting of @allow_url_fopen@, or some other hosting issue, or it might go away by fixing other warning messages.
 * site_trailing_slash %(warning)txp_lang phrase needed here%
