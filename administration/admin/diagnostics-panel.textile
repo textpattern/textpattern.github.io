@@ -119,7 +119,7 @@ High diagnostics info display includes the Low info above, but adds the followin
 | pretext_data: | value is a piece of code; useful for developers to evaluate |
 | {/textpattern files, not shown here} | list of Textpattern configuration files from the /textpattern directory; indicates file path, revision number, and MD5 Checksum hash number |
 
-</div>
+.notextile </div>
 
 The last item above reflects a long list of Textpattern configuration files which makes up the end of the High info data shown.
 
