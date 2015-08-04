@@ -137,7 +137,7 @@ This message displays when you successfully address and/or troubleshoot all, blu
 
 h3. Information (blue)
 
-Blue messages are informational only. They tell something to make you aware of it, not because you need to troubleshooting a functional problem, necessarily. 
+Blue messages are informational only. They make you aware of something simply so you're informed about it, not because it's a functional problem you need to troubleshoot, necessarily. 
 
 There are three possible blue messages: 
 
@@ -152,7 +152,7 @@ Yellow (warning) messages are not critical, per se, and sometimes can even be ca
 There are several possible warning messages. Where no description is given below, you are advised to look at the UI information for the warnings by clicking the "Information icon at right of the **Pre-flight check** items": 
 
 * path_to_site_missing %(warning)txp_lang phrase needed here%
-* dns_lookup_fails %(warning)DNS lookup failed: {site URL}% -- This means the "Site URL" preference you have entered in the **"Basic":preferences/basic-prefs-panel** panel is probably incorrect somehow. Check the value and make sure it's entered exactly like this, @domain.tld@, using your domain name and TLD extension.
+* %(warning)DNS lookup failed: {site URL}% -- This means the "Site URL" preference you have entered in the **"Basic":preferences/basic-prefs-panel** panel is probably incorrect somehow. Check the value and make sure it's entered exactly like this, @domain.tld@, using your domain name and TLD extension.
 * %(warning)Site URL preference might be incorrect: {site URL}% -- Similar to the previous message, this is suggesting the "Site URL" as set in the preferences tab does not match the actual URL you use to visit your website.
 * %(warning)Clean URL test failed.% -- This is not necessarily an error, and could appear for different reasons. Check the help information. It could be caused by the PHP configuration setting of @allow_url_fopen@, or some other hosting issue, or it might go away by fixing other warning messages.
 * site_trailing_slash %(warning)txp_lang phrase needed here%
@@ -163,7 +163,7 @@ There are several possible warning messages. Where no description is given below
 * warn_register_globals_or_update %(warning)txp_lang phrase needed here%
 * modified_files %(warning)txp_lang phrase needed here%
 * dev_version_live %(warning)txp_lang phrase needed here%
-* some_php_functions_disabled %(warning)The following PHP functions (which may be necessary to run Textpattern) are disabled on your server...% -- If you see this message, it will be followed by a number of PHP functions that are disabled on your web server. Textpattern needs certain functions enabled to work correctly, while other functions, if disabled, can be ignored. See section below, "Diagnostics reporting on PHP functions":#sec3, for more about which function are needed or not.
+* %(warning)The following PHP functions (which may be necessary to run Textpattern) are disabled on your server...% -- If you see this message, it will be followed by a number of PHP functions that are disabled on your web server. Textpattern needs certain functions enabled to work correctly, while other functions, if disabled, can be ignored. See section below, "Diagnostics reporting on PHP functions":#sec3, for more about which function are needed or not.
 * site_url_mismatch %(warning)path_to_site doesn't match document_root [ /home/yourserveralias/public_html ]% -- This could either mean you do not have the right “Site URL” path set in "Basic preferences":basic-prefs-panel.textile, or, in the case of upgrading, you still need to update your @index.php@ and/or @.htaccess@ files (see next message). (This could also be a false error. For example, symlinks cannot be correctly recognised, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Understandably that is not satisfying advice.)
 * clean_url_data_failed %(warning)txp_lang phrase needed here%
 * clean_url_test_failed %(warning)txp_lang phrase needed here%
@@ -180,16 +180,16 @@ Red messages mean something critical appears to be wrong and you need to trouble
 
 Possible red messages include:
 
-* path_to_site_inacc %(error)path_to_site is inaccessible% -- This mmeans either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
+* %(error)path_to_site is inaccessible% -- This mmeans either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
 * php_version_required %(error)txp_lang phrase needed here%
-* index_inaccessible %(error)/index.php is inaccessible% -- This suggests your @index.php@ file is not available, is not the right version, or that your "Site URL" is set wrong in "Basic preferences":basic-prefs-panel.textile. It could also mean the @index.php@ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics.
+* %(error)/index.php is inaccessible% -- This suggests your @index.php@ file is not available, is not the right version, or that your "Site URL" is set wrong in "Basic preferences":basic-prefs-panel.textile. It could also mean the @index.php@ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics.
 * dir_not_writable %(error)txp_lang phrase needed here%
-* htaccess_missing %(error).htaccess file is missing% -- This concerns the @.htaccess@ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing @index.php@ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an @.htaccess@ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing @.htaccess@ file with the indicated rewrite rules in the help dialog.
+* %(error).htaccess file is missing% -- This concerns the @.htaccess@ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing @index.php@ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an @.htaccess@ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing @.htaccess@ file with the indicated rewrite rules in the help dialog.
 * mod_rewrite_missing %(error)txp_lang phrase needed here%
-* old_placeholder_exists %(error)xxx% -- This likely means you have created an actual folder in your server file tree that shares a name with a __section__ you created in the **Sections** panel, or visa versa. This can break your site. You need to rename or remove one or the other. 
+* old_placeholder_exists %(error)txp_lang phrase needed here% -- This likely means you have created an actual folder in your server file tree that shares a name with a __section__ you created in the **Sections** panel, or visa versa. This can break your site. You need to rename or remove one or the other. 
 * missing_files %(error)txp_lang phrase needed here%
 * mysql_table_errors %(error)txp_lang phrase needed here%
-* tmp_plugin_paths_match %(error)txp_lang phrase needed here% -- This means paths to your plugin cache and __tmp__ locations are the same. Neither should be web accessible, but if you set them to the same location, a temp file could overwrite a plugin, and that would be bad. Create a different folder location for your plugin cache.
+* %(error)txp_lang phrase needed here% -- This means paths to your plugin cache and __tmp__ locations are the same. Neither should be web accessible, but if you set them to the same location, a temp file could overwrite a plugin, and that would be bad. Create a different folder location for your plugin cache.
 
 h2(#sec3). Diagnostic reporting on PHP functions
 
