@@ -149,7 +149,7 @@ h3. Warning (yellow)
 
 Yellow (warning) messages are not critical, per se, and sometimes can even be cascading[1] or false.[2] But when warnings are accurate, they mean something specific needs resolved in order to work correctly.
 
-There are several possible warning messages. Where no description is given below, you are advised to look at the UI information for the warnings by clicking the "Information icon at right of the **Pre-flight check** items": 
+There are several possible warning messages. Where no description is given below, you are advised to look at the UI information for the warnings by clicking the "Information" icon at right of the **Pre-flight check** items: 
 
 * path_to_site_missing %(warning)txp_lang phrase needed here%
 * %(warning)DNS lookup failed: {site URL}% -- This means the "Site URL" preference you have entered in the **"Basic":preferences/basic-prefs-panel** panel is probably incorrect somehow. Check the value and make sure it's entered exactly like this, @domain.tld@, using your domain name and TLD extension.
