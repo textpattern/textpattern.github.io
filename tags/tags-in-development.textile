@@ -43,15 +43,7 @@ bc. id
 
 
 <p>attributes</p></li>
-<li><p>"section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list: add</p>
-bc. offset
 
-
-<p>and</p>
-bc. limit
-
-
-<p>attributes</p></li>
 <li><p>"text":/home/www/zendstudio/dokuwiki/bin/doku.php?id=text: accepts L10n replacement tags as attributes, add</p>
 bc. escape
 

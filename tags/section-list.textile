@@ -50,6 +50,12 @@ The HTML @id@ attribute applied to the @wraptag@, if set.
 Whether to include 'default' section in section list.
 Values: @0@ (no) or @1@ (yes).
 Default: @0@.
+* @limit="integer"@
+The number of articles to display.
+Default: @0@ (no limit).
+* @offset="integer"@
+The number of articles to skip.
+Default: @0@.
 * @sections="section name(s)"@
 Comma-separated list of section names to include in the list, displayed in specified order (unless overridden by the @sort@ attribute).
 Default: unset (all sections).
@@ -117,7 +123,7 @@ h2(#sec4). Genealogy
 
 h3. Version 4.6.0
 
-@html_id@ attribute added.
+@html_id@, @limit@ and @offset@ attributes added.
 
 h3. Version 4.0.7
 
