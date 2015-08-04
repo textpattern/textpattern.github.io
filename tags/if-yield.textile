@@ -1,0 +1,28 @@
+h1. If yield [todo:pw]
+
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
+
+bc. <txp:if_yield>
+
+The *if_yield* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+bc. <txp:if_yield>
+    ...conditional statement...
+</txp:if_yield>
+
+h2(#sec2). Attributes
+
+h2(#sec3). Examples
+
+h2(#sec4). Genealogy
+
+h3. Version 4.6.0
+
+Tag support added.

@@ -1,0 +1,22 @@
+h1. Authors [todo:pw]
+
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
+
+bc. <txp:authors>
+
+h2(#sec2). Attributes
+
+h2(#sec3). Examples
+
+h2(#sec4). Genealogy
+
+h3. Version 4.6.0
+
+Tag support added.
