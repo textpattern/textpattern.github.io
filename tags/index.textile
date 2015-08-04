@@ -25,6 +25,7 @@ h3. A
 * "article url title":article-url-title
 * "author":author
 * "author email":author-email
+* "authors":authors
 
 h3. B
 
@@ -132,6 +133,7 @@ h3. I
 * "if status":if-status
 * "if thumbnail":if-thumbnail
 * "if variable":if-variable
+* "if yield":if-yield
 * "image":image
 * "image author":image-author
 * "image date":image-date
