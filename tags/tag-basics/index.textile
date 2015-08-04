@@ -3,8 +3,6 @@ layout: document
 category: tag-basics
 published: true
 title: "Tag basics"
-tags:
-  - Tag basics
 ---
 
 h1. Tag basics

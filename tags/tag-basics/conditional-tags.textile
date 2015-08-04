@@ -4,7 +4,6 @@ category: tag-basics
 published: true
 title: "Textpattern conditional tags"
 tags:
-  - Tag basics
   - Conditional tags
 ---
 
