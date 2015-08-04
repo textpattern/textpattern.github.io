@@ -32,7 +32,7 @@ h3. Low info display
 
 Low diagnostics info begins with a set of data values about your installation and server technology. A few value descriptions are provided here for general understanding, but most should be obvious.
 
-.notextile <div class="tabular-data">
+ <div class="tabular-data">
 	
 |_. Data item |_. What it tells you |
 | Textpattern version: | whatever version you have installed |
@@ -59,7 +59,7 @@ Low diagnostics info begins with a set of data values about your installation an
 | Server OS: | |
 | Active plugins: | a list of all plugins you have installed that are turned _ON_ |
 
-.notextile </div>
+ </div>
 
 The installation and server data is followed by the contents of your @.htaccess@ file (from the installation directory). For purposes here we show the "file contents from the current version code":https://github.com/textpattern/textpattern/blob/master/.htaccess, which is the part between the two dotted lines below:
 
@@ -101,7 +101,7 @@ h3. High info display
 
 High diagnostics info display includes the Low info above, but adds the following information.
 
-.notextile <div class="tabular-data">
+ <div class="tabular-data">
 	
 |_. Data item |_. What it tells you |
 | Charset (default/config): | if you don't see a lot of "UTF-8" values on these "character_set" items, you might want ask yourself why not |
@@ -119,7 +119,7 @@ High diagnostics info display includes the Low info above, but adds the followin
 | pretext_data: | value is a piece of code; useful for developers to evaluate |
 | {/textpattern files, not shown here} | list of Textpattern configuration files from the /textpattern directory; indicates file path, revision number, and MD5 Checksum hash number |
 
-.notextile </div>
+ </div>
 
 The last item above reflects a long list of Textpattern configuration files which makes up the end of the High info data shown.
 
