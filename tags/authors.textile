@@ -98,7 +98,7 @@ Other tags used: "author":author, "author_email":author-email.
 
 h3. Example 3: Render a drop-down list of authors
 
-<select name="author">
+bc. <select name="author">
     <txp:authors sort="realname asc">
         <option value="<txp:author />"><txp:author /></option>
     </txp:authors>
