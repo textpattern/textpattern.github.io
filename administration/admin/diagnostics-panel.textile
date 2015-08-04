@@ -180,11 +180,11 @@ Red messages mean something critical appears to be wrong and you need to trouble
 
 Possible red messages include:
 
-* %(error)path_to_site is inaccessible% -- This mmeans either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
 * php_version_required %(error)txp_lang phrase needed here%
 * %(error)/index.php is inaccessible% -- This suggests your @index.php@ file is not available, is not the right version, or that your "Site URL" is set wrong in "Basic preferences":basic-prefs-panel.textile. It could also mean the @index.php@ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics.
-* dir_not_writable %(error)txp_lang phrase needed here%
 * %(error).htaccess file is missing% -- This concerns the @.htaccess@ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing @index.php@ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an @.htaccess@ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing @.htaccess@ file with the indicated rewrite rules in the help dialog.
+* %(error)path_to_site is inaccessible% -- This means either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
+* dir_not_writable %(error)txp_lang phrase needed here%
 * mod_rewrite_missing %(error)txp_lang phrase needed here%
 * old_placeholder_exists %(error)txp_lang phrase needed here% -- This likely means you have created an actual folder in your server file tree that shares a name with a __section__ you created in the **Sections** panel, or visa versa. This can break your site. You need to rename or remove one or the other. 
 * missing_files %(error)txp_lang phrase needed here%
