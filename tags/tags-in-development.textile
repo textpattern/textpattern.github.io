@@ -16,38 +16,3 @@ h5(#new_tags). New Tags
 * "if_first_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_first_link
 * "if_last_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_link
 * "if_yield":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_yield
-
-h5(#modified_tags). Modified Tags
-
-<ul>
-<li><p>"category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list: add</p>
-bc. offset
-
-
-<p>and</p>
-bc. limit
-
-
-<p>attributes</p></li>
-<li><p>"category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list:</p>
-bc. parent
-
-
-<p>accepts comma-separated list of values</p></li>
-<li><p>"link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link: add</p>
-bc. name
-
-
-<p>and</p>
-bc. id
-
-
-<p>attributes</p></li>
-
-<li><p>"text":/home/www/zendstudio/dokuwiki/bin/doku.php?id=text: accepts L10n replacement tags as attributes, add</p>
-bc. escape
-
-
-<p>attribute</p></li>
-</ul>
-

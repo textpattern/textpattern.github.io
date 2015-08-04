@@ -47,8 +47,15 @@ Default: unset.
 * @html_id="id"@
 The HTML @id@ attribute applied to the @wraptag@, if set.
 Default: unset.
+* @limit="integer"@
+The number of articles to display.
+Default: @0@ (no limit).
+* @offset="integer"@
+The number of articles to skip.
+Default: @0@.
 * @parent="category name"@
-Return only specified category and its children categories.
+Return only specified category and its children categories. Accepts comma-separated list of values.
+Default: unset.
 * @section="section name"@
 Restrict to articles from specified section(s).
 Values: (comma separated list of) section name(s).
@@ -117,7 +124,7 @@ h2(#sec4). Genealogy
 
 h3. Version 4.6.0
 
-@html_id@ attribute added.
+@html_id@, @limit@ and @offset@ attributes added.
 
 h3. Version 4.0.7
 

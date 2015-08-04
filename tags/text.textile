@@ -14,6 +14,7 @@ On this page:
 * "Syntax":#sec1
 * "Attributes":#sec2
 * "Examples":#sec3
+* "Genealogy":#sec4
 
 h2(#sec1). Syntax
 
@@ -45,3 +46,10 @@ bc. <txp:older>
 Outputs the text 'older' inside the @<txp:older />@ tag, respecting the current Textpattern language, instead of using the tag like this: @<txp:older>older</txp:older>@ which would always render the English text 'older', it replaces the contents with the value assigned to the name 'older' in the current language. So you would see a link with the word 'älter' if you were using German @de@ as the Textpattern site language.
 
 Other tags used: "older":textile.
+
+h2(#sec4). Genealogy
+
+h3. Version 4.6.0
+
+Accepts L10n replacement tags as attributes.
+@escape@ attribute added.

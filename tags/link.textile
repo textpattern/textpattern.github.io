@@ -14,6 +14,7 @@ On this page:
 * "Syntax":#sec1
 * "Attributes":#sec2
 * "Examples":#sec3
+* "Genealogy":#sec4
 
 h2(#sec1). Syntax
 
@@ -27,6 +28,10 @@ h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
+* @id="integer"@
+Specifies the @id@, assigned at creation of the link, to display. Can be found on the [[Links page]]. If both @name@ and @id@ are specified, @name@ is used while @id@ is ignored.
+* @name="link name"@
+Specifies which link to display by its link @name@ as shown on the [[Links page]].
 * @rel="relation"@
 "HTML rel attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types to be applied to link.
 Default: unset.
@@ -41,3 +46,9 @@ bc. <p>
 </p>
 
 Other tags used: "link_description":link-description.
+
+h2(#sec4). Genealogy
+
+h3. Version 4.6.0
+
+@id@ and @name@ attributes added.
