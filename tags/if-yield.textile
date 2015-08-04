@@ -40,7 +40,7 @@ h2(#sec3). Examples
 
 h3. Example 1: Check if yield is defined
 
-<txp:if_yield>
+bc. <txp:if_yield>
     Output_form was used as a container.
 <txp:else />
     No yield defined.
@@ -48,7 +48,7 @@ h3. Example 1: Check if yield is defined
 
 h3. Example 2: Check if yield content is set
 
-<txp:if_yield value="">
+bc. <txp:if_yield value="">
     No yield, is empty.
 <txp:else />
     Yield set: <txp:yield />
