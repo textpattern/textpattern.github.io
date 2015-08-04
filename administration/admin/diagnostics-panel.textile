@@ -125,35 +125,48 @@ The last item above reflects a long list of Textpattern configuration files whic
 
 h2(#sec2). Pre-flight checks
 
-The **Pre-flight checks** display is where diagnostic feedback messages appear. The feedback messsages come in four colors (green, blue, yellow, and red), which correspond with the type and severity of the feedback messages you might see.
+The **Pre-flight checks** display is where diagnostic feedback messages appear. There are four kinds of feedback messages: success (green), information (blue), warning (yellow), and error (red)..
 
-h3. Green (all is good) 
+h3. Success (green)
 
 There is only one green message: 
 
-<span style="color:#238c23; background-color:#dff0d8;">ll checks passed!</span> 
+%(success)All checks passed!% 
 
 This message displays when you successfully address and/or troubleshoot all, blue, yellow, and red feedback messages that might exist. _Go green!_
 
-h3. Blue (time to update)
+h3. Information (blue)
 
-There is only one blue message: 
+Blue messages are informational only. They tell something to make you aware of it, not because you need to troubleshooting a functional problem, necessarily. 
 
-<span style="color:#3a87ad; background-color:#e7f6fc;">New Textpattern version n.n.n "available for download":http://textpattern.com/download.</span> (where "n.n.n" is the latest version number)
+There are three possible blue messages: 
 
-As it suggests, this message means your version of Textpattern is not current. For security reasons, you should update as soon as possible. When you do, your diagnostics will show some yellow messages needing addressed.
+* %(information)New Textpattern version n.n.n "available for download":http://textpattern.com/download.% -- This is simply letting you know that you're not using the latest stable release (where "n.n.n" is the version number). Generally you should update your system for security reasons, if nothing else. 
+* %(information)cleanurl_only_apache% -- If you see this message, it means you are _not_ using an Apache web server. The message appears to let you know that clean URLs are not supported on IIS or any other server besides Apache. The implication is, you know what you're doing so don't need to be nagged about it with a real warning (yellow) or error (red) message.
+* %(information)file_uploads_disabled% -- This message appears if you have file uploads disabled. The assumption is that you've consciously made this choice so no action is needed. The blue message is simply confirming the situation. If you want the message to go away, enable file uploads.
 
-h3. Yellow (warnings) 
+h3. Warning (yellow) 
 
-Yellow messages are not critical emergencies, per se, and sometimes can even be cascading error messages[1], or not be errors at all.[2] They usually appear when you need to remove the __/update__ directory after updating your installation, need to change rights of access for a content directory on your server[3], or when there's a problem of some kind with your site identity or path. 
+Yellow (warning) messages are not critical, per se, and sometimes can even be cascading[1] or false.[2] But when warnings are accurate, they mean something specific needs resolved in order to work correctly.
 
-Possible yellow messages include: 
+There are several possible warning messages. Where no description is given below, you are advised to look at the UI information for the warnings by clicking the "Information icon at right of the **Pre-flight check** items": 
 
-* <span style="color:#cb8f02; background-color:#fff6d3;">/usr/home/{username}/public_html/textpattern/setup/ still exists</span> -- This means you need to remove the "setup" folder from the web server. 
-* <span style="color:#cb8f02; background-color:#fff6d3;">image directory is read-only</span> -- This means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.
-* <span style="color:#cb8f02; background-color:#fff6d3;">DNS lookup failed: {site URL}</span> -- This means the "Site URL" preference you have entered in the **"Basic":preferences/basic-prefs-panel** panel is probably incorrect somehow.
-* <span style="color:#cb8f02; background-color:#fff6d3;">Site URL preference might be incorrect: {site URL}</span> -- Similar to the previous message, this is suggesting the "Site URL" as set in the preferences tab does not match the actual URL you use to visit your website.
-* <span style="color:#cb8f02; background-color:#fff6d3;">Clean URL test failed.</span> -- This is not necessarily an error, and could appear for different reasons. Check the help information. It could be caused by the PHP configuration setting of @allow_url_fopen@, or some other hosting issue, or it might go away by fixing other warning messages.
+* path_to_site_missing %(warning)txp_lang phrase needed here%
+* dns_lookup_fails %(warning)DNS lookup failed: {site URL}% -- This means the "Site URL" preference you have entered in the **"Basic":preferences/basic-prefs-panel** panel is probably incorrect somehow. Check the value and make sure it's entered exactly like this, @domain.tld@, using your domain name and TLD extension.
+* %(warning)Site URL preference might be incorrect: {site URL}% -- Similar to the previous message, this is suggesting the "Site URL" as set in the preferences tab does not match the actual URL you use to visit your website.
+* %(warning)Clean URL test failed.% -- This is not necessarily an error, and could appear for different reasons. Check the help information. It could be caused by the PHP configuration setting of @allow_url_fopen@, or some other hosting issue, or it might go away by fixing other warning messages.
+* site_trailing_slash %(warning)txp_lang phrase needed here%
+* setup_still_exists %(warning)/usr/home/{username}/public_html/textpattern/setup/ still exists% -- This means you need to remove the "setup" folder from the web server. 
+* %(warning)image directory is read-only% -- This means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[3]
+* no_temp_dir %(warning)txp_lang phrase needed here%
+* warn_mail_unavailable %(warning)txp_lang phrase needed here%
+* warn_register_globals_or_update %(warning)txp_lang phrase needed here%
+* modified_files %(warning)txp_lang phrase needed here%
+* dev_version_live %(warning)txp_lang phrase needed here%
+* some_php_functions_disabled %(warning)The following PHP functions (which may be necessary to run Textpattern) are disabled on your server...% -- If you see this message, it will be followed by a number of PHP functions that are disabled on your web server. Textpattern needs certain functions enabled to work correctly, while other functions, if disabled, can be ignored. See section below, "Diagnostics reporting on PHP functions":#sec3, for more about which function are needed or not.
+* site_url_mismatch %(warning)path_to_site doesn't match document_root [ /home/yourserveralias/public_html ]% -- This could either mean you do not have the right “Site URL” path set in "Basic preferences":basic-prefs-panel.textile, or, in the case of upgrading, you still need to update your @index.php@ and/or @.htaccess@ files (see next message). (This could also be a false error. For example, symlinks cannot be correctly recognised, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Understandably that is not satisfying advice.)
+* clean_url_data_failed %(warning)txp_lang phrase needed here%
+* clean_url_test_failed %(warning)txp_lang phrase needed here%
 
 fn1. Cascading errors: Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
 
@@ -161,30 +174,36 @@ fn2. False errors: On rare occasions, yellow and red messages have been known to
 
 fn3. Folder permissions: A chmod setting of 755 or 711 should word, and is secure. But a lot of people have trouble with this and need to use a chmod of 777, which has "security implications":http://forum.textpattern.com/viewtopic.php?id=26613. The discrepancy is due to how Apache directives are configured on the web server, which means you may have to haggle with your web host to change the directives.
 
-h3. Red (critical)
+h3. Error (red)
 
 Red messages mean something critical appears to be wrong and you need to troubleshoot it immediately. 
 
 Possible red messages include:
 
-* <span style="color:#e2062c; background-color:#fccfd4;">path_to_site doesn't match document_root [ /home/yourserveralias/public_html ]</span> -- This could either mean you do not have the right “Site URL” path set in "Basic preferences":basic-prefs-panel.textile, or, in the case of upgrading, you still need to update your @index.php@ and/or @.htaccess@ files (see next message). (This could also be a false error. For example, symlinks cannot be correctly recognised, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Undertandably that is not satisfying advice.) 
-* <span style="color:#e2062c; background-color:#fccfd4;">/index.php is inaccessible</span> -- This suggests your @index.php@ file is not available, is not the right version, or that your "Site URL" is set wrong in "Basic preferences":basic-prefs-panel.textile. It could also mean the @index.php@ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics. 
-* <span style="color:#e2062c; background-color:#fccfd4;">path_to_site is inaccessible</span> -- This mmeans either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
-* <span style="color:#e2062c; background-color:#fccfd4;">.htaccess file is missing</span> -- This concerns the @.htaccess@ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing @index.php@ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an @.htaccess@ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing @.htaccess@ file with the indicated rewrite rules in the help dialog.
+* path_to_site_inacc %(error)path_to_site is inaccessible% -- This mmeans either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
+* php_version_required %(error)txp_lang phrase needed here%
+* index_inaccessible %(error)/index.php is inaccessible% -- This suggests your @index.php@ file is not available, is not the right version, or that your "Site URL" is set wrong in "Basic preferences":basic-prefs-panel.textile. It could also mean the @index.php@ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics.
+* dir_not_writable %(error)txp_lang phrase needed here%
+* htaccess_missing %(error).htaccess file is missing% -- This concerns the @.htaccess@ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing @index.php@ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an @.htaccess@ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing @.htaccess@ file with the indicated rewrite rules in the help dialog.
+* mod_rewrite_missing %(error)txp_lang phrase needed here%
+* old_placeholder_exists %(error)xxx% -- This likely means you have created an actual folder in your server file tree that shares a name with a __section__ you created in the **Sections** panel, or visa versa. This can break your site. You need to rename or remove one or the other. 
+* missing_files %(error)txp_lang phrase needed here%
+* mysql_table_errors %(error)txp_lang phrase needed here%
+* tmp_plugin_paths_match %(error)txp_lang phrase needed here% -- This means paths to your plugin cache and __tmp__ locations are the same. Neither should be web accessible, but if you set them to the same location, a temp file could overwrite a plugin, and that would be bad. Create a different folder location for your plugin cache.
 
 h2(#sec3). Diagnostic reporting on PHP functions
 
-Textpattern requires certain PHP functions to be enabled for your website to work properly, or to work at all. Your website administrator or web host will be in control of these, and may have certain functions turned off for "security" reasons. Diagnostics can tell you if these necessary functions are enabled or not.
+Textpattern requires certain PHP functions to be enabled for your website to work properly, or to work at all. Your website administrator or web host will be in control of these, and may have certain functions turned off for "security" reasons. 
 
-If you see this pre-flight check message...
+Diagnostics can tell you if any of these necessary functions are disabled. You'll see this pre-flight check warning: %(warning)The following PHP functions (which may be necessary to run Textpattern) are disabled on your server...%.
 
-bq. The following PHP functions (which may be necessary to run Textpattern) are disabled on your server…
-
-It means your hosting company or server administrator has disabled one or more PHP functions that Textpattern needs.
+If so, compare the indicated functions with those in the table below to see if any match and thus need enabled.
 
 h3. Functions used by Textpattern
 
 The following functions are used by Textpattern. If your diagnostics reports any of these as _disabled_, you need to get in touch with your web server administrator or web host and explain why you need them turned on (for your Textpattern site to work). Point them to this page, if you want. If they won't help you, find a more suitable web host, because there is no real reason to disable these functions.
+
+notextile. <div class="tabular-data">
 
 |_. Name |_. Use |
 | apache_get_modules | Helps determine whether clean urls could be used at setup, and for diagnostics info. |
@@ -193,6 +212,8 @@ The following functions are used by Textpattern. If your diagnostics reports any
 | php_sapi_name | Determines whether PHP is running as an Apache module or CGI. Used for sending header information appropriate to the platform. |
 | php_uname | Provides diagnostics info regarding the server’s operating system. |
 | set_time_limit | Makes sure PHP does not timeout before installation, updates (including language string changes), and file downloads can be completed. |
+
+notextile. </div>
 
 h3. Functions not used by Textpattern
 
