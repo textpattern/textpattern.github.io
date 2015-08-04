@@ -1,4 +1,4 @@
-h1. Deflating pages for improved performance
+h1. Deflating pages for improved performance [todo]
 
 This article is intended to help Textpattern administrators implement web server compression techniques to improve page load times.
 
