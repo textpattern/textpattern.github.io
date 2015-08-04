@@ -3,8 +3,6 @@ layout: document
 category: installation
 published: true
 title: "Detailed installation instructions"
-tags:
-  - Installation
 ---
 
 h1. Detailed installation instructions

@@ -3,8 +3,6 @@ layout: document
 category: installation
 published: true
 title: "Installing on an Nginx webserver"
-tags:
-  - Installation
 ---
 
 h1. Installing on an Nginx webserver

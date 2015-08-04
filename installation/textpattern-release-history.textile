@@ -3,8 +3,6 @@ layout: document
 category: installation
 published: true
 title: "Textpattern CMS release history"
-tags:
-  - Installation
 ---
 
 h1. Textpattern CMS release history

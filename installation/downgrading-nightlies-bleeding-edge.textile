@@ -3,8 +3,6 @@ layout: document
 category: installation
 published: true
 title: "Downgrading, nightlies, and bleeding edge"
-tags:
-  - Installation
 ---
 
 h1. Downgrading, nightlies, and bleeding edge

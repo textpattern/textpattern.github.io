@@ -3,8 +3,6 @@ layout: document
 category: installation
 published: true
 title: "Moving installation from subdirectory to domain root on the same server"
-tags:
-  - Installation
 ---
 
 h1. Moving installation from subdirectory to domain root on the same server
