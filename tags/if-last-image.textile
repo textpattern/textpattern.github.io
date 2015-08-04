@@ -1,20 +1,31 @@
 h1. If last image [todo:pw]
 
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
+
 bc. <txp:if_last_image>
 
-
-The "if_last_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_last_image tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The *if_last_image* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
 
 bc. <txp:if_last_image>
-...conditional statement...
+    ...conditional statement...
 </txp:if_last_image>
 
+The tag will execute the contained statements if the displayed image is the last in the currently displayed "images":images list. The tag supports "else":else.
 
-The tag will execute the contained statements if the displayed image is the last in the currently displayed "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images list. The tag supports "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else.
-
-h3(sectionedit1#attributes). Attributes
+h3(#sec2). Attributes
 
 This tag has no attributes.
+
+h2(#sec3). Examples
+
+h3. Example 1: [todo]
 
 h2(#sec4). Genealogy
 
