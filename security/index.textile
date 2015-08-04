@@ -1,3 +1,10 @@
+---
+layout: document
+category: security
+published: true
+title: "Textpattern security"
+---
+
 h1. Textpattern security
 
 On this page:
@@ -9,7 +16,7 @@ On this page:
 
 h2(#sec1). Textpattern security statement
 
-The developers of Textpattern take system security seriously. They regularly audit the source code for potential "holes" that bad people might try to exploit. Textpattern can proudly claim that for many years now there has been no confirmed reports of an exploited hole in core Textpattern code. 
+The developers of Textpattern take system security seriously. They regularly audit the source code for potential "holes" that bad people might try to exploit. Textpattern can proudly claim that for many years now there has been no confirmed reports of an exploited hole in core Textpattern code.
 
 There have been occasional reports of hacked Textpattern sites, but the problem always traces to security holes in _other applications_ (or in the web server itself), which were exploited and used to take control of the Textpattern administrator's account.
 
@@ -49,7 +56,7 @@ h2(#sec3). To modify or not modify the core for added security
 
 Textpattern developers, current and past, tell us (e.g., "here":http://forum.textpattern.com/viewtopic.php?pid=192807#p192807, "here":http://forum.textpattern.com/viewtopic.php?pid=192818#p192818, and "here":http://forum.textpattern.com/viewtopic.php?pid=192827#p192827) that a default installation of Textpattern is sufficiently secure for most needs. Thus changing the location of the admin login (i.e., renaming the configuration directory), or masking the identity of your Textpattern install is unwarranted, especially if your login details were wisely chosen and you follow all of the security precautions listed above.[3] An exception might be if you use Textpattern in a business setting that requires something like SSL authentication, which is out of scope for this documentation.
 
-fn3. Contrary to masking your site's identity, core developers appreciate when you proudly -- yet subtly -- declare your choice for Textpattern by using this meta tag in the @head@ section of your page templates: @<meta name="generator" content="Textpattern CMS" />@. 
+fn3. Contrary to masking your site's identity, core developers appreciate when you proudly -- yet subtly -- declare your choice for Textpattern by using this meta tag in the @head@ section of your page templates: @<meta name="generator" content="Textpattern CMS" />@.
 
 h2(#sec4). If you suspect your site has been hacked
 
