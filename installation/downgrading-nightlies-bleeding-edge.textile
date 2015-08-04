@@ -15,7 +15,7 @@ h2. Downgrade to a previous stable release
 
 Downgrading is done exactly as upgrading. Follow the instructions for upgrading above but using the earlier Textpattern CMS version you need.
 
-"List of archived Textpattern CMS releases":textpattern-release-history.textile.
+"List of archived Textpattern CMS releases":textpattern-release-history.
 
 h2. Apply the latest nightly build
 
@@ -23,7 +23,7 @@ h2. Apply the latest nightly build
 
 "Download the latest nightly":http://textpattern.com/download#nightly from Textpattern's download page.
 
-Upgrading to a nightly build is done just like a regular upgrade. See the "Detailed upgrade instructions":detailed-upgrading-instructions.textile for more information.
+Upgrading to a nightly build is done just like a regular upgrade. See the "Detailed upgrade instructions":detailed-upgrading-instructions for more information.
 
 h2. Explore the bleeding edge development
 
