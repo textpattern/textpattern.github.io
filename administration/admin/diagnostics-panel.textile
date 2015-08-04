@@ -137,7 +137,7 @@ This message displays when you successfully address and/or troubleshoot all, blu
 
 h3. Information (blue)
 
-Blue messages are informational only. They make you aware of something simply so you're informed about it, not because it's a functional problem you need to troubleshoot, necessarily. 
+Blue messages are informational only. They make you aware of something so you're informed about it, not because it's a functional problem you need to troubleshoot, necessarily. 
 
 There are three possible blue messages: 
 
