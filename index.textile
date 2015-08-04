@@ -14,7 +14,7 @@ h2. Installation [todo]
 * Downgrading, nightlies and bleeding edge (for testers and risk-takers)
 * Multi-site installation (multiple sites managed with one admin-side)
 
-fn1. Upgrading your Textpattern installation is strongly recommended for "site security":security/index.
+fn1. Upgrading your Textpattern installation is strongly recommended for "site security":security/.
 
 h2. Administration
 
