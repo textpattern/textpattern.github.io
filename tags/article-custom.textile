@@ -68,6 +68,9 @@ Default: unset.
 Restrict to articles with/without an excerpt.
 Values: @0@ (no, return all) or @1@ (yes return only those containing an excerpt).
 Default: @0@.
+* @exclude="article id(s)"@
+Exclude a specific article or list of articles (each ID separated by a comma).
+Default: unset.
 * @expired="boolean"@
 Whether to include articles that have expired or not.
 Values: @0@ (no, don't include expired articles) or @1@ (yes, include expired articles).
@@ -235,6 +238,10 @@ bc. <txp:article_custom id="81,73" sort="field(id,81,73)" />
 Outputs articles specified by list of IDs, in the order given in the @sort@ field.
 
 h2(#sec4). Genealogy
+
+h3. Version 4.6.0
+
+@exclude@ attribute added.
 
 h3. Version 4.5.0
 
