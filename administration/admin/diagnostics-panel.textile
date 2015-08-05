@@ -61,9 +61,9 @@ notextile. <div class="tabular-data">
 
 notextile. </div>
 
-The installation and server data is followed by the contents of your @.htaccess@ file (from the installation directory). For purposes here we show the "file contents from the current version code":https://github.com/textpattern/textpattern/blob/master/.htaccess, which is the part between the two dotted lines below:
+The installation and server data is followed by the contents of your __.htaccess__ file (from the installation directory). For purposes here we show the "file contents from the current version code":https://github.com/textpattern/textpattern/blob/master/.htaccess, which is the part between the two dotted lines below:
 
-bc.. <code>.htaccess</code> file contents: 
+bc.. .htaccess file contents: 
 ------------------------
 #DirectoryIndex index.php index.html
 
@@ -95,7 +95,7 @@ bc.. <code>.htaccess</code> file contents:
 </IfModule>
 ------------------------
 
-p. Over time your @.htaccess@ file will change as you add your own mod_rewrite rules, or whatever, and the changes will reflect in the diagnostics info display. 
+p. Over time your __.htaccess__ file will change as you add your own __mod_rewrite___ rules, or whatever, and the changes will reflect in the diagnostics info display. 
 
 h3. High info display
 
