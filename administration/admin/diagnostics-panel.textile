@@ -95,7 +95,7 @@ bc.. .htaccess file contents:
 </IfModule>
 ------------------------
 
-p. Over time your __.htaccess__ file will change as you add your own __mod_rewrite___ rules, or whatever, and the changes will reflect in the diagnostics info display. 
+p. Over time your __.htaccess__ file will change as you add your own <i>mod_rewrite</i> rules, or whatever, and the changes will reflect in the diagnostics info display. 
 
 h3. High info display
 
