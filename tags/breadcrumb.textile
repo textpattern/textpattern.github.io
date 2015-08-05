@@ -20,7 +20,7 @@ h2(#sec1). Syntax
 
 bc. <txp:breadcrumb />
 
-The *breadcrumb* tag is a _single_ tag which is used to create "breadcrumb navigation":http://en.wikipedia.org/wiki/Breadcrumb_trail. It provides either hyperlinked navigation, or plain text positional display, any time you are *not* on the Home page.
+The *breadcrumb* tag is a _single_ tag which is used to create "breadcrumb navigation":http://en.wikipedia.org/wiki/Breadcrumb_trail. It provides either hyperlinked navigation, or plain text positional display. Breadcrumbs are _not_ displayed on the 'default' section (home page) of your site.
 
 h2(#sec2). Attributes
 
@@ -62,8 +62,6 @@ h3. Example 1: Display a hyperlinked breadcrumb trail
 bc. <txp:breadcrumb label="Navigation" separator="::" link="1" wraptag="p" />
 
 Provides hyperlinks to sections or categories in a breadcrumb style, linking back to your home page.
-
-p(alert-block information). Breadcrumbs are not displayed on the 'Default' section of your site.
 
 h3. Example 2: Display a text only breadcrumb trail
 
