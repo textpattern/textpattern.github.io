@@ -1,4 +1,15 @@
-h1. If last link [todo:pw]
+---
+layout: document
+category: tags
+published: true
+title: "If last link"
+tags:
+  - Conditional tags
+  - Link tags
+  - Structural tags
+---
+
+h1. If last link
 
 On this page:
 
@@ -25,7 +36,11 @@ This tag has no attributes.
 
 h2(#sec3). Examples
 
-h3. Example 1: [todo]
+h3. Example 1: Identify last link in an link list
+
+[todo:pw]
+
+Other tags used:
 
 h2(#sec4). Genealogy
 

@@ -1,4 +1,15 @@
-h1. If first image [todo:pw]
+---
+layout: document
+category: tags
+published: true
+title: "If first image"
+tags:
+  - Conditional tags
+  - Image tags
+  - Structural tags
+---
+
+h1. If first image
 
 On this page:
 
@@ -25,7 +36,11 @@ This tag has no attributes.
 
 h2(#sec3). Examples
 
-h3. Example 1: [todo]
+h3. Example 1: Identify first image in an image list
+
+[todo:pw]
+
+Other tags used:
 
 h2(#sec4). Genealogy
 
