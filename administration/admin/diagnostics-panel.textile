@@ -168,11 +168,11 @@ There are several possible warning messages. Where no description is given below
 * %(warning)Clean URL data test failed% --
 * %(warning)Clean URL test failed.% --
 
-fn1. Folder permissions: A chmod setting of 755 or 711 should work to make a folder writable, and is secure. A lot of people have trouble setting these values, however, and need to use a chmod of 777, which has "security implications":http://forum.textpattern.com/viewtopic.php?id=26613. The discrepancy is due to how Apache directives are configured on the web server, which means you may have to ask your server administrator or web host to change the directives. If they won't do it, it might be time to find a new web host, because no web host should force you to operate your site insecurely.
+fn1. **Folder permissions:** A chmod setting of 755 or 711 should work to make a folder writable, and is secure. A lot of people have trouble setting these values, however, and need to use a chmod of 777, which has "security implications":http://forum.textpattern.com/viewtopic.php?id=26613. The discrepancy is due to how Apache directives are configured on the web server, which means you may have to ask your server administrator or web host to change the directives. If they won't do it, it might be time to find a new web host, because no web host should force you to operate your site insecurely.
 
-fn2. Cascading errors: Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
+fn2. **Cascading errors:** Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
 
-fn3. False errors: On rare occasions, yellow and red messages have been known to appear but not go away when addressed as instructed by their help information. Textpattern developers have indicated this can happen in odd situations and is almost always a false warning when it does, meaning there isn't anything to worry about. If you ever have this problem and can't seem to resolve it, post about it in the "Troubleshooting forum":http://forum.textpattern.com/viewforum.php?id=67 and someone will try to help.
+fn3. **False errors:** On rare occasions, yellow and red messages have been known to appear but not go away when addressed as instructed by their help information. Textpattern developers have indicated this can happen in odd situations and is almost always a false warning when it does, meaning there isn't anything to worry about. If you ever have this problem and can't seem to resolve it, post about it in the "Troubleshooting forum":http://forum.textpattern.com/viewforum.php?id=67 and someone will try to help.
 
 h3. Error (red)
 
