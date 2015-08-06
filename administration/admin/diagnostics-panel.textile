@@ -156,7 +156,7 @@ There are several possible warning messages. Where no description is given below
 * %(warning)Site URL preference might be incorrect: {site URL}% -- Similar to the previous message, this is suggesting the "Site URL" as set in the preferences tab does not match the actual URL you use to visit your website.
 * %(warning)Clean URL test failed.% -- This is not necessarily an error, and could appear for different reasons. Check the help information. It could be caused by the PHP configuration setting of @allow_url_fopen@, or some other hosting issue, or it might go away by fixing other warning messages.
 * %(warning)Site URL has a trailing slash% --
-* setup_still_exists %(warning)/usr/home/{username}/public_html/textpattern/setup/ still exists% -- This means you need to remove the "setup" folder from the web server. 
+* %(warning){path} still exists% -- This means you need to remove the "setup" folder from the web server. The path to the folder respective to your installation will be shown.  
 * %(warning)image directory is read-only% -- This means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[1]
 * no_temp_dir %(warning)txp_lang phrase needed here%
 * warn_mail_unavailable %(warning)txp_lang phrase needed here%
