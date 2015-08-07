@@ -64,9 +64,9 @@ h2(#sec2). User data form
 
 Administrators, publishers, and the account owner can open the user account data form by clicking the username in the **Login** column of the user accounts table. 
 
-As the data form makes clear, usernames can not be edited here[3], and the last login date/time values are not displayed, but the **Real name**, **Email**, and **Privileges** data is editable. 
+As the data form makes clear, only the **Real name**, **Email**, and **Privileges** data is editable. **Login** names (usernames) can not be edited here[3], and the last login date/time values are not displayed. 
 
-Only an administrator or __Publisher__ can change a user's privileges, which can be done here or using the administrator controls mentioned above.
+Only an administrator or Publisher can change a user's privileges, which can be done here or using the administrator controls mentioned above.
 
 fn3. The only way to change a username is to change the value directly in the database table using phpMyAdmin, the command-line, or by whatever other means the database administrators prefers.
 
