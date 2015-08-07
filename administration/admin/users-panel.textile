@@ -14,7 +14,7 @@ tags:
 
 h1. Users
 
-The *Users* panel is the default panel of the **Admin** region. It's where user accounts are accessed and managed. The panel has two functional views. The default view is a table of all existing user accounts. The secondary view is a form that displays all data for an individual account (__i.e.__, user profile data).
+The *Users* panel is the default panel of the **Admin** region. It's where user accounts are accessed and managed.
 
 On this page:
 
@@ -26,25 +26,25 @@ On this page:
 
 h2(#sec1). User accounts table
 
-The user accounts table displays the following data for each user:
+The default view of the **Users** panel is the user accounts table, which displays the following data for each user:
 
-* **Login** (username; serves as link to user's existing account/profile data)
+* **Login** (username; links to user's account/profile data)
 * **Real name**
 * **Email**
 * **Privileges** (in this sense, _role type_)[1]
 * **Last log in** (date and time)
 
-Associated with the user accounts table (a top of table) are two data editing buttons: **Add new author** and **Change your password**. Their respective labels suggest who can see and use them.
+Associated with the user accounts table (at top of table) are two data editing buttons: **Add new author** and **Change your password**. Their respective labels suggest who can see and use them.
 
 fn1. See "User role types and privileges":user-role-types-and-privileges for how roles and privileges match up.
 
 h3(#sec1-1). Add new author button
 
-The administrator, and any user having the role of __Publisher__[2], can see and use the *Add new author* button to create a new user account. Administrators and Publishers can also edit any user account by clicking the username in the **Login** column, which opens up the user data form.
+The administrator, and any user having a "Publisher" role[2], can see and use the *Add new author* button to create a new user account. Administrators and Publishers can also edit any user account by clicking the username in the **Login** column, which opens up the user data form.
 
 All other users with lesser roles will see their account record only, and will not see the **Add new author** button.
 
-fn2. A Publisher has the same rights and power as the site administrator, but can not delete or demote the administrator account. The administrator, however, can delete or demote the Publisher at any time.
+fn2. A Publisher has the same rights and power as the site administrator, but can not delete or demote the administrator account. The administrator can delete or demote the Publisher at any time. The only way to change the administrator account is to do so directly in the users table of the database. This might need done, for example, when a website is being delivered to a client and ongoing support from the original site administrator (builder) is no longer needed or wanted.
 
 h3(#sec1-2). Change your password button
 
