@@ -71,7 +71,7 @@ Only an administrator or Publisher can change a user's privileges, which can be 
 
 fn3. The only way to change a username is to change the value directly in the database table using phpMyAdmin, the command-line, or by whatever other means the database administrators prefers.
 
-h2(sec3). Extending user account functionality [todo:dw]
+h2(sec3). Extending user account functionality
 
 It's common for site owners of multi-user sites to extend Textpattern's core functionality around user account management. The specifics of such extension is beyond scope of this documentation, but we can point you in the right direction if you want to explore it.[4]
 
