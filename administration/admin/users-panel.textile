@@ -84,7 +84,12 @@ fn4. User accounts extension requires the installation and use of various plugin
 
 h3. Admin-side management and data extension
 
-For admin-side extension of user accounts, the most popular approach (indeed what should nearly be core functionality) is to install and use the "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 and "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 plugins, which work together. The former provides a much richer set of features for managing user accounts, including modifying the core user roles and privileges. The latter extends the user account data itself, so you can create user bios and profiles having any data structure you want and display that data on the front-side of a website. TXP Magazine's "Peaple":http://txpmag.com/people are an example of where these plugins are used to extend user account management and publish that information on the front-side.
+The most popular approach for admin-side extension of user accounts, indeed what should nearly be core functionality, is to install and use two plugins that work together:
+
+* "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 -- This plugin provides a much richer set of features for managing user accounts, including modifying the core user roles and privileges.
+* "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 -- This plugin extends the user account data itself, so you can create user bios and profiles having any data structure you want and display that data on the front-side of a website. 
+
+TXP Magazine's "Peaple":http://txpmag.com/people are an example of where these plugins are used to extend user account management and publish that information on the front-side.
 
 h3. Autonomous registration, log in, and data access/submission
 
