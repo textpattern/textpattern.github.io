@@ -12,7 +12,7 @@ tags:
   - emails
 ---
 
-"Main ToC":http://docs.textpattern.io &#10784 **"Textpattern administration":http://docs.textpattern.io/administration/** &#10784 **Admin** &#10784 **Users**
+"Main ToC":http://docs.textpattern.io ⨠ **"Textpattern administration":http://docs.textpattern.io/administration/** ⨠ **Admin** ⨠ **Users**
 
 h1. Users
 
