@@ -4,7 +4,7 @@ published: true
 title: "Textpattern CMS user documentation"
 ---
 
-h1. Index
+h1. Table of Contents
 
 h2. Installation [todo]
 
