@@ -40,7 +40,7 @@ notextile. <div class="tabular-data">
 | "sed_plugin_help_viewer":http://forum.textpattern.com/viewtopic.php?id=16473 | ? | ? | ? |
 | "smd_admin_themes":http://forum.textpattern.com/viewtopic.php?id=30952 | ? | ? | ? |
 | "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 | ? | Bio config | Extends core user account data. (Usually used in relation to smd_user_manager.) |
-| "smd_redirect":https://github.com/Bloke/smd_redirect | ? | Redirects | Provides an convenient means to redirect retired content. Can be done at the URL, __category__, or __section__ level.
+| "smd_redirect":https://github.com/Bloke/smd_redirect | ? | Redirects | Provides an convenient means to redirect retired content. Can be done at the URL, __category__, or __section__ level. |
 | "smd_tags":http://forum.textpattern.com/viewtopic.php?id=28621 | ? | ? | ? |
 | "smd_where_used":http://textpattern.org/plugins/984/smd_where_used | ? | Where used | Provides a search mechanism to find where any text string is used in all of your __sections__, __pages__, __forms__, __styles__, and __articles__. |
 | "tru_tags":http://textpattern.org/plugins/584/tru_tags | ? | ? | ? |
