@@ -12,6 +12,8 @@ tags:
   - site management
 ---
 
+"Main page":http://docs.textpattern.io > "Textpattern administration":http://docs.textpattern.io/administration/ > 
+
 h1. Textpattern administration
 
 The administration side of Textpattern (often called "admin-side") is where the site administrator -- and any "users":admin/users-panel having sufficient rights -- configures and manages the website's content, architecture, presentation, and behaviour (exluding what might need done via the web or database servers).
