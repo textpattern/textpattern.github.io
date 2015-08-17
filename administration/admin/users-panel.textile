@@ -91,7 +91,7 @@ The most popular approach for admin-side extension of user accounts, indeed what
 * "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 -- This plugin provides a much richer set of features for managing user accounts, including modifying the core user roles and privileges.
 * "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 -- This plugin extends the user account data itself, so you can create user bios or profiles having any data structure you want and display that data on the front-side of a website.[5] 
 
-TXP Magazine's "Peaple":http://txpmag.com/people are an example of where these plugins are used to extend user account management and publish that information on the front-side.
+TXP Magazine's "Peaple":http://txpmag.com/people pages are an example of where these plugins are used to extend user account management and publish user data on the front-side as author bios.
 
 fn5. This plugin adds a **Bio config** panel option to the **"Extensions":http://docs.textpattern.io/administration/#sec2** region, as an example of how the Extensions region is used.
 
