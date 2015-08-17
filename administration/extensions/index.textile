@@ -24,12 +24,12 @@ When you upload a plugin that uses the **Extensions** region, a secondary panel 
 
 notextile. <div class="tabular-data">
 	
-|_. Plugin name |_. Resulting panel | Plugin function |
+|_. Plugin name |_. Resulting panel label[2] | Plugin function |
 | "adi_notes":http://forum.textpattern.com/viewtopic.php?id=27957 | ? | ? |
 | "asy_jpcache":http://forum.textpattern.com/viewtopic.php?id=8352 | ? | ? |
-| "bas_lightbox":http://lab.samisdat.org/bas-lightbox | ? | ? |
+| "bas_lightbox":http://forum.textpattern.com/viewtopic.php?id=14748 | ? | ? |
 | "glz_custom_fields":http://forum.textpattern.com/viewtopic.php?id=23996 | ? | ? |
-| "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer | ? | A powerful plugin for those interested in "plugin development":http://docs.textpattern.io/plugins/. (Now maintained by "smd".) |
+| "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer | ? | (Now maintained by "smd".) A powerful plugin for those interested in "plugin development":http://docs.textpattern.io/plugins/. |
 | "msd_admin_colorpicker":http://forum.textpattern.com/viewtopic.php?id=26742 | ? | ? |
 | "msd_google_map":http://forum.textpattern.com/viewtopic.php?id=30493 | ? | ? |
 | "rah_change_passwords":http://rahforum.biz/plugins/rah_change_passwords | ? | ? |
@@ -39,9 +39,10 @@ notextile. <div class="tabular-data">
 | "rss_article_edit":http://www.wilshireone.com/textpattern-plugins/rss_article_edit | ? | ? |
 | "sed_plugin_help_viewer":http://txp-plugins.netcarving.com/plugins/plugin-help-viewer | ? | ? |
 | "smd_admin_themes":http://forum.textpattern.com/viewtopic.php?id=30952 | ? | ? |
-| "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 | ? | Extends core user account data. (Usually used in relation to smd_user_manager.) |
+| "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 | Bio config | Extends core user account data. (Usually used in relation to smd_user_manager.) |
+| "smd_redirect":https://github.com/Bloke/smd_redirect | Redirects | Provides an convenient means to redirect retired content. Can be done at the URL, __category__, or __section__ level.
 | "smd_tags":http://forum.textpattern.com/viewtopic.php?id=28621 | ? | ? |
-| "smd_where_used":http://textpattern.org/plugins/984/smd_where_used | ? | ? |
+| "smd_where_used":http://textpattern.org/plugins/984/smd_where_used | Where used | Provides a search mechanism to find where any text string is used in all of your __sections__, __pages__, __forms__, __styles__, and __articles__. |
 | "tru_tags":http://textpattern.org/plugins/584/tru_tags | ? | ? |
 | "upm_image":http://textpattern.org/plugins/597/upm_image | ? | ? |
 | "upm_img_popper":http://forum.textpattern.com/viewtopic.php?id=21459 | ? | ? |
@@ -49,3 +50,5 @@ notextile. <div class="tabular-data">
 notextile. </div>
 
 fn1. This list may not be complete, nor may all of the indicated plugins be supported anymore (we will try to remove them here if not). It's up to you to research them and ask questions in the forum about their viability before installing and trying to use them.
+
+fn2. Plugin developers: Please follow the Textpattern editorial style conventions for UI headers/labels and use **sentence-case**, not title-case. For example, "Plugin composer", not "Plugin Composer".
