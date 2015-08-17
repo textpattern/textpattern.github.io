@@ -12,7 +12,7 @@ tags:
   - site management
 ---
 
-"Main page":http://docs.textpattern.io ⨠ "Textpattern administration":http://docs.textpattern.io/administration/ 
+"Main ToC":http://docs.textpattern.io ⨠ **"Textpattern administration":http://docs.textpattern.io/administration/**
 
 h1. Textpattern administration
 
