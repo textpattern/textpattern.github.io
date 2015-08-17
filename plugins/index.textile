@@ -1,8 +1,24 @@
-\nTextpattern is a lean publishing platform, and appropriate use of "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms and Tags can do a lot. When certain requirements cannot be met by Forms and Tags along, Textpattern can be extended with "plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins.
+---
+layout: document
+category: development
+published: true
+title: "Plugin development"
+tags:
+  - development 
+  - plugins
+---
 
-Plugins allow functional extension of Textpattern without jeopardising paths of future updates. While there are no guarantee that plugins will continue to work as intended after an update (plugin authors must ensure their plugins work at every new Textpattern release), there is a lot of effort put into maintaining backwards compatibility within the development branch of Textpattern itself.
+"Main ToC":http://docs.textpattern.io ⨠ Beyond core ⨠ Plugins ⨠ **Plugin development*
 
-Ready to create a plugin? Great! Get started with the links below.
+h1. Plugin development
+
+This information, and all linked information from it, is not end-user documentation. This is for those who are thinking about developing Textpattern plugins.
+
+Plugins allow functional extension of Textpattern without conflicting with core development, or without interfering with an end-users ability to update their installation. 
+
+Textpattern's core developers put a lot of effort into maintaining backwards compatibility within the development branch of Textpattern itself, but there's no guarantee your plugins will continue to work as intended after new versions of Textpattern are released. Sometimes new development directions (particularly as we  go to version 4.6 and later) require making core changes, and as a plugin developer, it is your responsibility to ensure your plugins work against core code at point of every future Textpattern release. 
+
+Cool? Great! Get started building plugins with the help information below.
 
 h3(sectionedit1#reading_up). Reading Up
 
