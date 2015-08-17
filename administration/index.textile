@@ -29,7 +29,7 @@ h2(#sec1). Login location
 
 Users typically install Textpattern CMS in the root location of a website's domain because they intend to run the entire website with the CMS. This puts the login location at __domain.tld/textpattern__.[1] If you installed Textpattern in a sub-directory, the login location would reflect that (__domain.tld/sub-directory/textpattern__).  
 
-fn1. See "Textpattern security":../security/index.textile if you're worried about the login location being common knowledge.
+fn1. See "Textpattern security":../security/ if you're worried about the login location being common knowledge.
 
 h2(#sec2). Admin-side organisation
 
@@ -51,13 +51,13 @@ The admin-side is organised into three primary regions: **Content**, **Presentat
 * Admin
 ** "Diagnostics":admin/diagnostics-panel
 ** Import
-** Plugins
+** "Plugins":admin/plugins-panel
 ** Preferences
 *** Basic (default)
 *** Advanced
 *** Language
 ** "Users":admin/users-panel (default)
-** "Visitor logs":admin/visitor-logs-panel.textile
+** "Visitor logs":admin/visitor-logs-panel
 * ["Extensions":extensions/][3]
 
 fn2. The admin-side landing location after setting up your installation will be the **"Write":content/** panel. You can change that default login behaviour in **"Basic preferences":admin/preferences/basic-prefs-panel/**.
