@@ -25,27 +25,27 @@ When you upload a plugin that uses the **Extensions** region, a secondary panel 
 notextile. <div class="tabular-data">
 	
 |_. Plugin name |_. Version (latest) |_. Resulting panel label[2] |_. Plugin function |
-| "adi_notes":http://forum.textpattern.com/viewtopic.php?id=27957 | ? | | ? | ? |
-| "asy_jpcache":http://forum.textpattern.com/viewtopic.php?id=8352 | ? | | ? | ? |
-| "bas_lightbox":http://forum.textpattern.com/viewtopic.php?id=14748 | ? | | ? | ? |
-| "glz_custom_fields":http://forum.textpattern.com/viewtopic.php?id=23996 | ? | | ? | ? |
-| "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer | ? | | ? | (Now maintained by "smd".) A powerful plugin for those interested in "plugin development":http://docs.textpattern.io/plugins/. |
-| "msd_admin_colorpicker":http://forum.textpattern.com/viewtopic.php?id=26742 | ? | | ? | ? |
-| "msd_google_map":http://forum.textpattern.com/viewtopic.php?id=30493 | ? | | ? | ? |
-| "rah_change_passwords":http://forum.textpattern.com/viewtopic.php?id=28696 | ? | | ? | Enables Publishers to reset anyone's password, and without sending password details via email. (A security enhancement, as well takes the password-change responsibility out of the hands of the individual account holder, solely.) |
-| "rah_post_versions":http://forum.textpattern.com/viewtopic.php?id=33855 | ? | | ? | Version control for __articles__, __forms__, and __pages__. |
-| "rah_tabtor":http://forum.textpattern.com/viewtopic.php?id=34815 | ? | | ? | Allows you to move a panal from one region of the admin-side to another. |
-| "rss_admin_db_manager":http://forum.textpattern.com/viewtopic.php?id=10395 | ? | | ? | Provides a basic UI for your MySQL database, to do things like create dump files easier. |
-| "rss_article_edit":http://forum.textpattern.com/viewtopic.php?id=13720 | ? | | ? | ? |
-| "sed_plugin_help_viewer":http://forum.textpattern.com/viewtopic.php?id=16473 | ? | | ? | ? |
-| "smd_admin_themes":http://forum.textpattern.com/viewtopic.php?id=30952 | ? | | ? | ? |
-| "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 | ? | | Bio config | Extends core user account data. (Usually used in relation to smd_user_manager.) |
-| "smd_redirect":https://github.com/Bloke/smd_redirect | ? | | Redirects | Provides an convenient means to redirect retired content. Can be done at the URL, __category__, or __section__ level.
-| "smd_tags":http://forum.textpattern.com/viewtopic.php?id=28621 | ? | | ? | ? |
-| "smd_where_used":http://textpattern.org/plugins/984/smd_where_used | ? | | Where used | Provides a search mechanism to find where any text string is used in all of your __sections__, __pages__, __forms__, __styles__, and __articles__. |
-| "tru_tags":http://textpattern.org/plugins/584/tru_tags | ? | | ? | ? |
-| "upm_image":http://textpattern.org/plugins/597/upm_image | ? | | ? | ? |
-| "upm_img_popper":http://forum.textpattern.com/viewtopic.php?id=21459 | ? | | ? | ? |
+| "adi_notes":http://forum.textpattern.com/viewtopic.php?id=27957 | ? | ? | ? |
+| "asy_jpcache":http://forum.textpattern.com/viewtopic.php?id=8352 | ? | ? | ? |
+| "bas_lightbox":http://forum.textpattern.com/viewtopic.php?id=14748 | ? | ? | ? |
+| "glz_custom_fields":http://forum.textpattern.com/viewtopic.php?id=23996 | ? | ? | ? |
+| "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer | ? | ? | (Now maintained by "smd".) A powerful plugin for those interested in "plugin development":http://docs.textpattern.io/plugins/. |
+| "msd_admin_colorpicker":http://forum.textpattern.com/viewtopic.php?id=26742 | ? | ? | ? |
+| "msd_google_map":http://forum.textpattern.com/viewtopic.php?id=30493 | ? | ? | ? |
+| "rah_change_passwords":http://forum.textpattern.com/viewtopic.php?id=28696 | ? | ? | Enables Publishers to reset anyone's password, and without sending password details via email. (A security enhancement, as well takes the password-change responsibility out of the hands of the individual account holder, solely.) |
+| "rah_post_versions":http://forum.textpattern.com/viewtopic.php?id=33855 | ? | ? | Version control for __articles__, __forms__, and __pages__. |
+| "rah_tabtor":http://forum.textpattern.com/viewtopic.php?id=34815 | ? | ? | Allows you to move a panal from one region of the admin-side to another. |
+| "rss_admin_db_manager":http://forum.textpattern.com/viewtopic.php?id=10395 | ? | ? | Provides a basic UI for your MySQL database, to do things like create dump files easier. |
+| "rss_article_edit":http://forum.textpattern.com/viewtopic.php?id=13720 | ? | ? | ? |
+| "sed_plugin_help_viewer":http://forum.textpattern.com/viewtopic.php?id=16473 | ? | ? | ? |
+| "smd_admin_themes":http://forum.textpattern.com/viewtopic.php?id=30952 | ? | ? | ? |
+| "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 | ? | Bio config | Extends core user account data. (Usually used in relation to smd_user_manager.) |
+| "smd_redirect":https://github.com/Bloke/smd_redirect | ? | Redirects | Provides an convenient means to redirect retired content. Can be done at the URL, __category__, or __section__ level.
+| "smd_tags":http://forum.textpattern.com/viewtopic.php?id=28621 | ? | ? | ? |
+| "smd_where_used":http://textpattern.org/plugins/984/smd_where_used | ? | Where used | Provides a search mechanism to find where any text string is used in all of your __sections__, __pages__, __forms__, __styles__, and __articles__. |
+| "tru_tags":http://textpattern.org/plugins/584/tru_tags | ? | ? | ? |
+| "upm_image":http://textpattern.org/plugins/597/upm_image | ? | ? | ? |
+| "upm_img_popper":http://forum.textpattern.com/viewtopic.php?id=21459 | ? | ? | ? |
 
 notextile. </div>
 
