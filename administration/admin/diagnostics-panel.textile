@@ -12,6 +12,8 @@ tags:
   - php functions
 ---
 
+"Main ToC":http://docs.textpattern.io ⨠ **"Textpattern administration":http://docs.textpattern.io/administration/** ⨠ **Admin** ⨠ **Diagnostics*
+
 h1. Diagnostics
 
 The **Diagnostics** panel is important for troubleshooting problems with your Textpattern installation, such as misconfigurations you might discover when installing or upgrading to a new version. The panel can also be useful for troubleshooting functional problems that you may have introduced by accident when extending the system, modifying the __.htaccess__ file, or some other slight of hand.
