@@ -10,7 +10,7 @@ tags:
   - plugins
 ---
 
-"Main ToC":http://docs.textpattern.io ⨠ **Textpattern administration** ⨠ **Extensions**
+"Main ToC":http://docs.textpattern.io ⨠ **"Textpattern administration":http://docs.textpattern.io/administration/** ⨠ **Extensions**
 
 h1. Extensions
 
