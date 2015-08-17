@@ -58,7 +58,7 @@ The admin-side is organised into three primary regions: **Content**, **Presentat
 *** Language
 ** "Users":admin/users-panel (default)
 ** "Visitor logs":admin/visitor-logs-panel.textile
-* "Extensions":extensions/[3]
+* ["Extensions":extensions/][3]
 
 fn2. The admin-side landing location after setting up your installation will be the **"Write":content/** panel. You can change that default login behaviour in **"Basic preferences":admin/preferences/basic-prefs-panel/**.
 
