@@ -20,27 +20,32 @@ When you upload such a plugin and activate it, the **Extensions** region appears
 
 h2. Plugins that use the Extensions region
 
-When you upload a plugin that uses the **Extensions** region, a secondary panel option will appear under the region that provides the configurable elements for that plugin. Following is a list of known plugins that will do this:[1]
+When you upload a plugin that uses the **Extensions** region, a secondary panel option will appear under the region that provides the configurable elements for that plugin. The following table names the plugins that will do this, and their correcponding panel labels:[1]
 
-* "adi_notes":http://forum.textpattern.com/viewtopic.php?id=27957
-* "asy_jpcache":http://forum.textpattern.com/viewtopic.php?id=8352
-* "bas_lightbox":http://lab.samisdat.org/bas-lightbox
-* "glz_custom_fields":http://forum.textpattern.com/viewtopic.php?id=23996
-* "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer -- A powerful plugin for those interested in "plugin development":http://docs.textpattern.io/plugins/. (Now maintained by "smd".)
-* "msd_admin_colorpicker":http://forum.textpattern.com/viewtopic.php?id=26742
-* "msd_google_map":http://forum.textpattern.com/viewtopic.php?id=30493
-* "rah_change_passwords":http://rahforum.biz/plugins/rah_change_passwords
-* "rah_post_versions":http://rahforum.biz/plugins/rah_post_versions
-* "rah_tabtor":http://rahforum.biz/plugins/rah_tabtor
-* "rss_admin_db_manager":http://www.wilshireone.com/textpattern-plugins/rss_admin_db_manager
-* "rss_article_edit":http://www.wilshireone.com/textpattern-plugins/rss_article_edit
-* "sed_plugin_help_viewer":http://txp-plugins.netcarving.com/plugins/plugin-help-viewer
-* "smd_admin_themes":http://forum.textpattern.com/viewtopic.php?id=30952
-* "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 -- Extends core user account data. (Usually used in relation to smd_user_manager.)
-* "smd_tags":http://forum.textpattern.com/viewtopic.php?id=28621
-* "smd_where_used":http://textpattern.org/plugins/984/smd_where_used
-* "tru_tags":http://textpattern.org/plugins/584/tru_tags
-* "upm_image":http://textpattern.org/plugins/597/upm_image
-* "upm_img_popper":http://forum.textpattern.com/viewtopic.php?id=21459
+notextile. <div class="tabular-data">
+	
+|_. Plugin name |_. Resulting panel | Plugin function |
+| "adi_notes":http://forum.textpattern.com/viewtopic.php?id=27957 | ? | ? |
+| "asy_jpcache":http://forum.textpattern.com/viewtopic.php?id=8352 | ? | ? |
+| "bas_lightbox":http://lab.samisdat.org/bas-lightbox | ? | ? |
+| "glz_custom_fields":http://forum.textpattern.com/viewtopic.php?id=23996 | ? | ? |
+| "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer | ? | A powerful plugin for those interested in "plugin development":http://docs.textpattern.io/plugins/. (Now maintained by "smd".) |
+| "msd_admin_colorpicker":http://forum.textpattern.com/viewtopic.php?id=26742 | ? | ? |
+| "msd_google_map":http://forum.textpattern.com/viewtopic.php?id=30493 | ? | ? |
+| "rah_change_passwords":http://rahforum.biz/plugins/rah_change_passwords | ? | ? |
+| "rah_post_versions":http://rahforum.biz/plugins/rah_post_versions | ? | ? |
+| "rah_tabtor":http://rahforum.biz/plugins/rah_tabtor | ? | ? |
+| "rss_admin_db_manager":http://www.wilshireone.com/textpattern-plugins/rss_admin_db_manager | ? | ? |
+| "rss_article_edit":http://www.wilshireone.com/textpattern-plugins/rss_article_edit | ? | ? |
+| "sed_plugin_help_viewer":http://txp-plugins.netcarving.com/plugins/plugin-help-viewer | ? | ? |
+| "smd_admin_themes":http://forum.textpattern.com/viewtopic.php?id=30952 | ? | ? |
+| "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 | ? | Extends core user account data. (Usually used in relation to smd_user_manager.) |
+| "smd_tags":http://forum.textpattern.com/viewtopic.php?id=28621 | ? | ? |
+| "smd_where_used":http://textpattern.org/plugins/984/smd_where_used | ? | ? |
+| "tru_tags":http://textpattern.org/plugins/584/tru_tags | ? | ? |
+| "upm_image":http://textpattern.org/plugins/597/upm_image | ? | ? |
+| "upm_img_popper":http://forum.textpattern.com/viewtopic.php?id=21459 | ? | ? |
+
+notextile. </div>
 
 fn1. This list may not be complete, nor may all of the indicated plugins be supported anymore (we will try to remove them here if not). It's up to you to research them and ask questions in the forum about their viability before installing and trying to use them.
