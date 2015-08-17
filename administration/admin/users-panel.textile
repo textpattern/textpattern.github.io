@@ -12,6 +12,8 @@ tags:
   - emails
 ---
 
+"Main ToC":http://docs.textpattern.io &#10784 **"Textpattern administration":http://docs.textpattern.io/administration/** &#10784 **Admin** &#10784 **Users**
+
 h1. Users
 
 The *Users* panel is the default panel of the **Admin** region. It's where user accounts are accessed and managed.
@@ -87,9 +89,11 @@ h3. Admin-side management and data extension
 The most popular approach for admin-side extension of user accounts, indeed what should nearly be core functionality, is to install and use two plugins that work together:
 
 * "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 -- This plugin provides a much richer set of features for managing user accounts, including modifying the core user roles and privileges.
-* "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 -- This plugin extends the user account data itself, so you can create user bios and profiles having any data structure you want and display that data on the front-side of a website. 
+* "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 -- This plugin extends the user account data itself, so you can create user bios or profiles having any data structure you want and display that data on the front-side of a website.[5] 
 
 TXP Magazine's "Peaple":http://txpmag.com/people are an example of where these plugins are used to extend user account management and publish that information on the front-side.
+
+fn5. This plugin adds a **Bio config** panel option to the **"Extensions":http://docs.textpattern.io/administration/#sec2** region, as an example of how the Extensions region is used.
 
 h3. Autonomous registration, log in, and data access/submission
 
