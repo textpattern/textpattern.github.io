@@ -12,11 +12,13 @@ tags:
 
 h1. Plugins
 
-Textpattern by itself is capable of doing a lot, and especially as you learn to use __forms__ and __"core tags":http://docs.textpattern.io/tags/__ in increasingly sophisticated ways. When certain requirements cannot be met, or easily, by core ingenuity alone, Textpattern can be extended with plugins, whether to produce content and behaviour for the front-side experience, enhance the configurability or usability of the admin-side, or both -- or even more.[1] Most plugins essentially extend functionality by providing you with more specific tags that can be used in combination with Textpattern's own core set, and, as usual, inline with HTML.
+Textpattern by itself is capable of doing a lot, and especially as you learn to use __forms__ and __"core tags":http://docs.textpattern.io/tags/__ in increasingly sophisticated ways. When certain requirements cannot be met, or easily, by core ingenuity alone, Textpattern can be extended with plugins, whether to produce content and behaviour for the front-side experience, enhance the configurability or usability of the admin-side, or both -- or even more.[1] 
 
-The **Plugins** panel is composed of two main sections: a top **Install plugin** field for adding plugin files and uploading them, and a table display for seeing and managing the plugins you've uploaded. The table will be empty after a new Textpattern installation.
+Most plugins essentially extend functionality by providing one or more specific tags that can be used in combination with Textpattern's own core set, and are compatible with using inline with HTML, as usual.
 
-fn1. While plugins can do many wonderful things, the prudent -- even zen -- website owner (particularly the site architect) is encouraged to adopt a frugal plugin habit and become a Textpattern jedi. That is to say, only install plugins if while learning Textpattern you discover you really do need them. (Don't install a bunch because they sound cool, or because the promise of one plugn tag seems better than, say, five core tags that can provide the same result when combined correctly.) The zen habit favours two beneficial states. First, you learn to master Textpattern faster by spending more time initially learning core capabilities. Second, fewer plugins means less need to update the ones you have, less likelihood to run into troubleshooting issues after updating Textpattern in the future, and improves system security by having fewer third-party vectors for possible exploitation. Be one with the Force.
+The **Plugins** panel is composed of two main sections: a top **Install plugin** field for uploading plugin files, and a table display for seeing and managing the plugins you've uploaded. The table will be empty after a new Textpattern installation.
+
+fn1. While plugins can do many things, the prudent (even zen) website owner -- particularly the site architect -- is encouraged to adopt a frugal plugin habit and become a Textpattern jedi. That is to say, only install plugins if while learning Textpattern you discover you really do need them. (Installing a bunch of plugins right off the bat is not a good way to learn Textpattern.) The zen habit favours two beneficial states. First, you master Textpattern by spending more time learning core capabilities. Second, fewer plugins means less need to update the ones you have, less likelihood of running into issues later when new Textpattern versions are released, and fewer third-party vectors to possibly exploit (thus better system security). Be one with the Force of the core.
 
 h2(#sec1). Uploading plugins
 
@@ -39,11 +41,9 @@ At this time, the Textpattern project doesn't have a centralised repository for 
 
 **Plugin author support forum**. Second, plugin developers will initially announce their plugins by creating a plugin support thread for each one in the "Plugin author support":http://forum.textpattern.com/viewforum.php?id=79 forum. This provides a vector for finding plugins by monitoring the forum activity or using the forum's search. These plugin threads are also where you ask questions about using a given plugin, or share ideas for its improvement.[3]
 
-**Plugin archive**. Third, plugin developers will generally (not always) add their plugin to the "plugins archive":http://textpattern.org/plugins at textpattern.org. This is an old site (disregard the lack of brand cohesion) that may one day become the official central plugin repository that the Textpattern project desparately needs. For now, it's just another possible location to look.
+**Plugin archive**. Third, plugin developers will generally (not always) add their plugin to the "plugins archive":http://textpattern.org/plugins at textpattern.org. This is an old site (disregard the lack of brand cohesion) that may one day become the official central plugin repository that the Textpattern project desparately needs. For now, it's just another possible location to look. Use the search or category filtering to find the functionality or focus you are after and download it. (As an alternative to the search, you can scan through the "entire list of plugins":http://textpattern.org/archives?section=plugins.)
 
 **Github**. Finally, plugin developers are increasingly using Github to archive and maintain their plugins, but there's not a lot of momentum in this direction yet, nor is there a convenient listing of those authors that are going this way.
-
-Use the search or category filtering to find the functionality or focus you are after and download it. (As an alternative to the search, you can scan through the "entire list of plugins":http://textpattern.org/archives?section=plugins.)
 
 fn2. Plugin authors have been known to abandon their plugins and websites over time, so relying on a plugin author's website alone is not always possible.
 
@@ -51,7 +51,7 @@ fn3. This has always been the most popular way for people to discover plugins, b
 
 h3. Plugin file anatomy
 
-The plugin itself is a text (.txt) file. It usually has a header stating the name of the plugin and other details, then the code itself in "Base-64":http://en.wikipedia.org/wiki/Base64 format. Following an hypothetical example showing the exact structure of a given file. The Base-64 part on the bottom would normally be much longer, so be sure to copy the _entire_ file when you really do go after one:
+The plugin itself is a text (.txt) file. It usually has a header stating the name of the plugin and other details, then the code itself in "Base-64":http://en.wikipedia.org/wiki/Base64 format. Following is an hypothetical example showing the exact structure of a given file:
 
 bc.. # Name: abc_myplugin v0.1
 # Type: Client side plugin
@@ -70,40 +70,58 @@ YTo5OntzOjQ6Im5hbWUiO3M6Njoic21kX2lmIjtzOjY6ImF1dGhvciI7czoxMToiU3RlZiBE
 YXdzb24iO3M6MTA6ImF1dGhvcl91cmkiO3M6MjI6Imh0dHA6Ly9zdGVmZGF3c29uLmNvbS8i
 O3M6NzoidmVyc2lvbiI7czo0OiIw...
 
-p. 
+p. The Base-64 part on the bottom would normally be much longer, so be sure to copy the _entire_ file when you really do go after one.
 
+Depending on where you find your plugin file, you may be able to view its contents on location and copy the file without downloading it, or you may need to download the file first, open it, and copy the contents locally. Either way, once you have the text file contents copied, paste it into the **Install plugin** textarea box as indicated earlier, and click **Upload**.
 
+h3. Verifying file contents
+
+After clicking the **Upload** button, you'll be shown an intermediate view of the plugin file -- a decompiled view -- as it was written. You don't have to do anything here but look for obvious weirdness. For example, if you didn't see anything at all, that would be a problem, or if the plugin panel disappeared, that should be telling you to retreat. Otherwise, find the **Install** button and click it.
+
+This will add the plugin record to the table, where you can then manage it.
 
 h2(#sec2). Managing plugins
 
+The plugin table displays the following data columns for each plugin:
 
+* Plugin (name)
+* Author
+* Version
+* Modified
+* Description
+* Active
+* Order
+* Manage
 
+All of the columns can be used to sort the table records in alpha-numeric order by the column data types, _except_ the **Description** and **Manage* columns, which are static.
 
-h3(sectionedit3#installing_plugins). Installing plugins
+Beyond that, certain columns have particular value.
 
-Plugin installation is a simple three-step process:
+h3. Activating a plugin
 
-<ol>
-<li>Copy the entire file contents, paste it into the box at the top of the Plugins panel, and click “Upload”.</li>
-<li>You will be shown a preview of the plugin and its documentation. If it looks ok, click “Install” at the bottom of the screen.</li>
-<li><p>You will be returned to the plugin list when the plugin has been installed. Now activate the plugin by clicking its</p>
-bc. No
+When you first install a plugin, it's in a non-utilisable state until you activate it. To activate a plugin, click the "No" link in the **Active** column. The link will turn to "Yes" and the plugin is ready to use. To deactivate a plugin, which you might do temporarily when troubleshooting errors in your code that could be related to plugins in some way, simply click the "Yes" link to toggle it off again.[3]
 
+fn3. Plugin zen good practice tips: Don't install plugins that you don't need right away, there's no point. Don't install and activate plugins you don't use right away, which creates a possible vector for hacker exploitation. Don't de-activate plugins you don't want to use and leave them installed (again, there's no point). Delete them. 
 
-<p>link, which toggles the status to</p>
-bc. Yes
+h3. Editing a plugin
 
+Once a plugin is installed, you can make changes to its code. You might do this if you have a special functional need from the plugin, or you find a small bug that the plugin author doesn't have the time to fix right away. To access the PHP code, click the plugin's name in the **Plugin** column of the table. This opens the code in "edit" mode.[4] If you edit the plugin and save it, you'll see a %(warning)Yes% entry for the plugin in the **Modified** column. Keep in mind that if you update the plugin to a new version later, it will overwrite any custom edits you make.
 
-<p>, and it's not active.</p></li>
-</ol>
+fn4. You could also install and used "ied_plugin_composer":http://forum.textpattern.com/viewtopic.php?id=14898, which not only allows you to edit plugins, but to compile and export them too as entirely new plugins, assuming you make enough custom changes to warrant doing so. (Ediquette tip: Always give credit to the developers whose code you expand from.)
 
-Check the plugin help file (click _Help_ on the same row as the plugin name) after installation because some of them have post-install instructions or other information. If you have read the docs, check the "Plugin Author Support forum":http://forum.textpattern.com/viewforum.php?id=79 for the plugin. Known issues are often highlighted in the threads there (tip: use Google to search long threads!) or, if not, you can post your questions.
+h3. Plugin help and options
 
-h4(#upgrading_plugins). Upgrading plugins
+Depending on the plugin, activating it may not make it usable without further effort. Plugins that provide you with specialised functionality through one or more custom tags, for example, will require you to fold those tags into your publishing architecture somehow. It's through use of those tags, and any other constructs the plugin may require, that the plugin will jump to life. To learn how a plugin is supposed to be used, click the "Help" link in the **Manage** column of the table.
 
-Upgrading plugins is the same process. Install the new text file code as you would normally. In this case, the existing plugin is updated with the code revisions.
+Some plugins may also provide an "Options" link next to the "Help" link, which opens a special view. These options are neigher an **"Extensions":http://docs.textpattern.io/extensions/ panel nor Advanced preferences, exactly, but are nevertheless important for helping to make the plugin function as you may need it to.
 
-In case you've edited plugins, there's another plugin that helps you track down the lines that you've altered, "rvm_plugin_diff":http://forum.textpattern.com/viewtopic.php?id=19909. Use it before upgrading plugins.
+If you read the plugin's Help information and find yourself still having trouble, that's the time to go to the plugin's "support thread":http://forum.textpattern.com/viewforum.php?id=79. Known issues are often highlighted in the threads (tip: use Google to search long threads), or you can post with questions or issues you have.
+
+h2(#sec3). Upgrading plugins
+
+Upgrading a plugin is done the same way you first install one, as described earlier. Textpattern will know which plugin it is and overwrite the old plugin code accordingly with no additional input on your part.[5]
+
+fn5. In the event you need to update a plugin you've edited, you may like to install "rvm_plugin_diff":http://forum.textpattern.com/viewtopic.php?id=19909 first, a plugin that helps you track down the lines of code you edited in other plugins so you don't lose track of the edits and can make them again if necessary. Keeping your own edited versions of plugins on Github is another way you could maintain your customised versions separate from the plugin developer's latest releases.
 
 h4(#installation_problems). Installation problems
 
