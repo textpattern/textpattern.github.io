@@ -10,7 +10,7 @@ tags:
   - skin
 ---
 
-"Main ToC":http://docs.textpattern.io ⨠ "Themes":http://docs.textpattern.io/themes/ ⨠ **Theme design**
+"ToC":http://docs.textpattern.io ⨠ "Themes":http://docs.textpattern.io/themes/ ⨠ **Theme design**
 
 h1. Theme design [todo]
 
