@@ -1,18 +1,34 @@
-\nBeginning with Textpattern version 4.5, there will be some exciting improvements with the underlying markup of Textpattern's default front- and admin-side markup, and even more in version 4.6, _et cetera_. There will even be new default front- and admin-side versions of the *_Hive_* theme in core. This means it will be considerably easier to make custom themes of your own that will have all the modern code, semantics, and functionality already in them (like responsive behavior). All you need to do is create beautiful skins on top of the code.
+---
+layout: document
+category: themes
+published: true
+title: "Theme design"
+tags:
+  - themes 
+  - presentation
+  - design
+  - skin
+---
 
-h3(sectionedit1#front-end_theme_design). Front-end theme design
+"Main ToC":http://docs.textpattern.io ⨠ "Themes":http://docs.textpattern.io/themes/ ⨠ **Theme design**
+
+h1. Theme design [todo]
+
+Beginning with Textpattern version 4.5, there will be some exciting improvements with the underlying markup of Textpattern's default front- and admin-side markup, and even more in version 4.6, _et cetera_. There will even be new default front- and admin-side versions of the *_Hive_* theme in core. This means it will be considerably easier to make custom themes of your own that will have all the modern code, semantics, and functionality already in them (like responsive behavior). All you need to do is create beautiful skins on top of the code.
+
+h2(#sec1). Front-end theme design
 
 Front-end theme design is approached just like you probably approach any website design effort; you either build your theme from scratch, or start with someone else's code and tweak your model as needed. However, because the context here is with sharing themes with other people (whether free or at cost), you also need to take into account theme construction that is portable; _i.e._, can be packaged up for distribution and importation later.
 
 To this end, there are two approaches, and you have to decide which one is more to your liking, both as a theme creator and as a user of other people's themes.
 
-h4(#manual_approach). Manual approach
+h3. Manual approach
 
 This is the puritan's method. In this way you develop from scratch, host your code somewhere in downloadable package form (_e.g._, at Github), and document your folder/file tree in great detail so someone can unpack and load the files where they need to go to function correctly.
 
 This isn't really different from how you would approach designing any website. The most important thing in this case is your documentation for people who will use your designâ€”it's needs to be super clear and easy to use!
 
-h4(#plugin_approach). Plugin approach
+h3. Plugin approach
 
 In this way you rely on a plugin to help manage the construction, portability, and use of a given front-end theme. The most relevant plugin to use in this case is *cxc_template*:
 
@@ -23,7 +39,7 @@ Follow the plugin's own documentation, and use the forum help thread if you have
 
 *Note:* This plugin is not available in "Textpattern Plugins":http://textpattern.org.
 
-h4(#design_approach_tips). Design approach tips
+h3. Design approach tips
 
 Regardless of which approach you take, here are some tips that will help along the way:
 
@@ -32,7 +48,7 @@ Regardless of which approach you take, here are some tips that will help along t
 # Find an existing theme that has design patterns that most closely match what you want in your own theme design. Use this code as your model. Unless you really know the code history of the designer whose theme you're modeling from, you might be better off using Textpattern's own default theme, which will have lot's of modern improvements built in beginning v.4.5.
 # Open up a copy of the model theme in your editor of choice and replace the model's code patterns and presentation with your own design code and images. Sky's the limit. Have fun!
 
-h3(sectionedit2#admin-side_theme_design). Admin-side theme design
+h2(#sec2). Admin-side theme design
 
 The approach to an admin-side theme is similar in principle to doing a front-end theme:
 
@@ -41,7 +57,7 @@ The approach to an admin-side theme is similar in principle to doing a front-end
 
 *Tip:* You're encouraged to use one of the native themes that ships with Textpattern 4.5 as a model for your first custom admin theme attempt, for the simple fact the code in these themes reflects the most up to date HTML/CSS improvements of Textpattern's admin-side markup.
 
-h4(#admin_theme_file_tree_structure). Admin theme file tree structure
+h3. Admin theme file tree structure
 
 Your admin theme files should be packaged into a single folder. The folder should be a single word name of your theme. Following is the *_Classic_* theme folder and its file contents that ships with Textpattern:
 
@@ -50,24 +66,15 @@ Your admin theme files should be packaged into a single folder. The folder shoul
 
 Note there is no sub-folder structure in this case; all files are directly inside the *_Classic_* folder, including images, the CSS file, and the default theme page (.php). This is easiest and you might do the same, but you could create sub-structure inside your theme folder for more advanced designs.
 
-h4(#admin_theme_manager_plugin). Admin theme manager plugin
+h3. Admin theme manager plugin
 
-The plugin most favored and supported for admin themes is Stef Dawson's *smd_admin_themes*:
+The plugin currently favoured by the community for admin themes is "smd_admin_themes":http://forum.textpattern.com/viewtopic.php?id=30952. You'll also need to install "smd_crunchers":http://stefdawson.com/smd_crunchers in combination with smd_admin_themes if you want import and export abilities. Following the plugin documentation instructions, and use the support forum thread for questions and help.
 
-* "Developer's source code":http://stefdawson.com/sw/plugins/smd_admin_themes
-* "Support forum thread":http://forum.textpattern.com/viewtopic.php?id=30952
-* "In Textpattern Plugins":http://textpattern.org/plugins/1096/smd_admin_themes
-
-*Note:* You also need to install "smd_crunchers":http://stefdawson.com/smd_crunchers in combination with smd_admin_themes if you want import and export abilities.
-
-Following the plugin documentation instructions, and use the support forum thread for questions and help.
-
-h4(#adding_admin_themes_to_your_site). Adding admin themes to your site
+h3. Adding admin themes to your site
 
 All packaged themes, like above, are added to
 
 bc. /textpattern/themes
-
 
 in your Textpattern installation. This makes them available from the Advanced preferences of the admin-side.
 
@@ -75,10 +82,9 @@ In fact, you could simply duplicate an out-of-box theme folder and files (whethe
 
 bc. /textpattern/themes
 
-
 directory so changes reflect on your website as you work.
 
-h4(#admin-side_theme_development_reference). Admin-side theme development reference
+h3. Admin-side theme development reference
 
 You might find these admin-side development guides for _Remora_ and _Hive_ themes helpful:
 
