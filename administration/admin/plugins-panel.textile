@@ -28,7 +28,7 @@ On this page:
 ** "Plugin help and options":#sec3-3
 * "Updating plugins":#sec4
 * "Advice on plugin usage":#sec5
-* "Plugin development?":#sec6 (developers only)
+* "Plugin development?":#sec6
 
 h2(#sec1). Uploading plugins
 
