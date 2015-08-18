@@ -16,13 +16,13 @@ tags:
 
 h1. Textpattern administration
 
-The administration side of Textpattern (often called "admin-side") is where the site administrator -- and any "users":admin/users-panel having sufficient rights -- configures and manages the website's content, architecture, presentation, and behaviour (exluding what might need done via the web or database servers).
+The administration side of Textpattern (often called "admin-side") is where the site administrator -- and any "users":admin/users-panel having sufficient rights -- configures and manages the website's content, architecture, presentation, and behaviour (excluding what might need done via the web or database servers).
 
 On this page:
 
 * "Login location":#sec1
 * "Admin-side organisation":#sec2
-* "First tasks after intallation or upgrade":#sec3
+* "First tasks after installation or upgrade":#sec3
 * "Changing default login panel":#sec4
 
 h2(#sec1). Login location
@@ -64,7 +64,7 @@ fn2. The admin-side landing location after setting up your installation will be 
 
 fn3. The Extensions region is not a core system region. It only appears if you install any of the admin-side plugins that make use of it.
 
-h2(#sec3). First tasks after intallation or upgrade
+h2(#sec3). First tasks after installation or upgrade
 
 h3. Language selection
 
@@ -82,7 +82,7 @@ Your next stop after languages is "Basic preferences":admin/basic-prefs-panel.te
 
 h3. Diagnostics check
 
-When basic preferences are set, go to the "Diagnostics":admin/diagnostics-panel.textile panel to address the warning messages under **Pre-flight checks**, until you get a green, "All checks passed!" feedback messasge.
+When basic preferences are set, go to the "Diagnostics":admin/diagnostics-panel.textile panel to address the warning messages under **Pre-flight checks**, until you get a green, "All checks passed!" feedback message.
 
 h3. Build your architecture
 

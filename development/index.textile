@@ -8,58 +8,84 @@ tags:
   - plugins
 ---
 
-"Main ToC":http://docs.textpattern.io ⨠ Beyond core ⨠ Plugins ⨠ **Plugin development*
+"Main ToC":http://docs.textpattern.io ⨠ Development ⨠ **Plugin development*
 
 h1. Plugin development
 
-This information, and all linked information from it, is not end-user documentation. This is for those who are thinking about developing Textpattern plugins.
+This information, and all pages linked from it, is not CMS end-user documentation. This is for those who are thinking about developing Textpattern plugins. Plugins allow functional extension of Textpattern without conflicting with core development, or without interfering with an end-user's ability to update her installation.
 
-Plugins allow functional extension of Textpattern without conflicting with core development, or without interfering with an end-users ability to update their installation. 
+On this page:
 
-Textpattern's core developers put a lot of effort into maintaining backwards compatibility within the development branch of Textpattern itself, but there's no guarantee your plugins will continue to work as intended after new versions of Textpattern are released. Sometimes new development directions (particularly as we  go to version 4.6 and later) require making core changes, and as a plugin developer, it is your responsibility to ensure your plugins work against core code at point of every future Textpattern release. 
+* "The deal":#sec1
+* "Reading up":#sec2
+* "Tools and aides":#sec3
+* "Implementation":#sec4
+* "Beneficial practice":#sec5
 
-Cool? Great! Get started building plugins with the help information below.
+h2(#sec1). The deal
 
-h3(sectionedit1#reading_up). Reading Up
+If you decide to develop a plugin, understand this...
 
-* "what_is_a_plugin_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=what_is_a_plugin
-* "plugin_basics":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_basics
-* "plugin_development_guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_development_guidelines
-* "creating_plugin_help_guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=creating_plugin_help_guidelines
-* "how_plugins_are_loaded":/home/www/zendstudio/dokuwiki/bin/doku.php?id=how_plugins_are_loaded
-* "using_callbacks_in_between_plugins_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=using_callbacks_in_between_plugins
-* "Textpattern Plugin Anatomy":http://thresholdstate.com/articles/?c=txp-anatomy
-* "textpacks":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpacks
+Core developers put a lot of effort into maintaining backwards compatibility within the development branch of Textpattern itself, but that does not guarantee your plugins will continue to work as intended after new versions of Textpattern are released. Sometimes new development directions -- like what might come as we head to version 4.6 and later -- require making changes that affect backwards compatibility. As a plugin developer, it is your responsibility to ensure your plugins work against core code at point of every future Textpattern release. 
 
-h3(sectionedit2#tools_and_aides). Tools and Aides
+Cool? Great! Get started building plugins.
 
-* "plugin_template":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_template
-* "Phpxref: Comprehensive Cross-reference of Textpattern Functions and Variables":http://phpxref.com/xref/textpattern/
-* Core Function Reference (in progress)
-* Plugins for creating plugins:
-** "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer
-** "sed_plugin_help_viewer":http://textpattern.org/plugins/612/sed_plugin_help_viewer
-* "Commandline plugin decoder":http://forum.textpattern.com/viewtopic.php?id=4252
+h2(#sec2). Reading up
+
+Before diving into code, get some perspective.
+
+* "What is a plugin?":http://docs.textpattern.io/development/what-is-a-plugin
+* Textpattern plugin anatomy
+* "Textpattern plugin how-to":http://www.wilshireone.com/article/38/textpattern-plugin-how-to
+* "Plugin basics":http://docs.textpattern.io/development/plugin-basics
+* "Plugin development guidelines":http://docs.textpattern.io/development/plugin-development-guidelines
+* "Plugin 'user help' guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines
+* "How plugins are loaded":http://docs.textpattern.io/development/how-plugins-are-loaded
+* "Using callbacks in between plugins":http://docs.textpattern.io/development/using-callbacks
+* "Textpacks":http://docs.textpattern.io/development/textpacks
+
+h2(#sec3). Aides and resources
+
+* "Plugin template":http://docs.textpattern.io/development/plugin-template
+* Core function reference
+* "Plugin development mailing list":http://lists.textpattern.com/
+
+h3. Tags, attributes, and classes
+
 * "Generate a list of tags and attributes":http://forum.textpattern.com/viewtopic.php?id=12299
 * "Classes in plugins":http://forum.textpattern.com/viewtopic.php?id=26025
-* Wilshire One's:
-** "Textpattern Plugin How To":http://www.wilshireone.com/article/38/textpattern-plugin-how-to
-** "Textpattern source code bookmarklet":http://www.wilshireone.com/article/130/searching-textpattern-source-code
-* Global Variables:
-** "Accessing Global Variables":http://www.focusontheclouds.com/home/articles/72/accessing-global-variables-in-textpattern
-* "Plugin Development Mailing List":http://lists.textpattern.com/
-* "code_hosting":/home/www/zendstudio/dokuwiki/bin/doku.php?id=code_hosting
-* "How do I fetch the current development version?":http://textpattern.com/faq/103/how-do-i-fetch-the-current-development-version
 
-h3(sectionedit3#implementation). Implementation
+h3. Functions and variables
 
-* "registered_textpattern_developer_prefixes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=registered_textpattern_developer_prefixes (These are _not_ available to new plugin authors. You must add yours here. Use only one!)
-* "admin_events_and_steps":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin_events_and_steps
-* "user_roles_and_permissions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions
-* "database_schema_reference":/home/www/zendstudio/dokuwiki/bin/doku.php?id=database_schema_reference
-* "extensions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=extensions (the Extensions tab in admin-side for administration-related plugins)
+* "Accessing global variables":http://www.focusontheclouds.com/home/articles/72/accessing-global-variables-in-textpattern
+* "Phpxref":http://phpxref.com/xref/textpattern/ (Comprehensive cross-reference of Textpattern functions and variables)
 
-h3(sectionedit4#beneficial_practice). Beneficial Practice
+h3. Tools
 
-* "Writing or porting an anti-spam plugin for Textpattern":/home/www/zendstudio/dokuwiki/bin/doku.php?id=combat_comment_spam#writing_porting_an_anti-spam_plugin
+* "Commandline plugin decoder":http://forum.textpattern.com/viewtopic.php?id=4252
+* "Textpattern source code bookmarklet":http://www.wilshireone.com/article/130/searching-textpattern-source-code
+
+h3. Plugins
+
+Plugins to help build plugins, ironically enough.
+
+* "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer -- This plugin allows you to create, code, and document plugins, then publish them in either conventional text format, compressed text format, or exported in the standard template format for sharing with developers or using in the plugin cache directory. This plugin also lets you directly edit plugins that are in the plugin cache directory.
+* "sed_plugin_help_viewer":http://textpattern.org/plugins/612/sed_plugin_help_viewer
+
+h2(#sec4). Hosting and repos
+
+* "Fetching the current development version":http://docs.textpattern.io/development/fetching-current-dev-version (Also addresses which branch or release to use and where to get old versions of Textpattern.)
+* "code_hosting":http://docs.textpattern.io/development/code_hosting
+
+h2(#sec5). Implementation
+
+* "registered_textpattern_developer_prefixes":http://docs.textpattern.io/development/registered_textpattern_developer_prefixes (These are _not_ available to new plugin authors. You must add yours here. Use only one!)
+* "admin_events_and_steps":http://docs.textpattern.io/development/admin_events_and_steps
+* "user_roles_and_permissions":user_roles_and_permissions
+* "database_schema_reference":http://docs.textpattern.io/development/database_schema_reference
+* "extensions":http://docs.textpattern.io/development/extensions (the Extensions tab in admin-side for administration-related plugins)
+
+h2(#sec6). Beneficial practice
+
+* "Writing or porting an anti-spam plugin for Textpattern":http://docs.textpattern.io/development/combat_comment_spam#writing_porting_an_anti-spam_plugin
 

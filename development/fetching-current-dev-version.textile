@@ -1,0 +1,36 @@
+---
+layout: document
+category: development
+published: true
+title: "Fetching the latest development version of Textpattern"
+tags:
+  - development 
+  - plugins
+  - versions
+  - git
+  - github
+  - repository
+---
+
+"Main ToC":http://docs.textpattern.io ⨠ Development ⨠ **Fetching the latest development version of Textpattern*
+
+h1. Fetching the latest development version of Textpattern
+
+The "Textpattern source code":https://github.com/textpattern/textpattern is stored in a git repository at Github. The important endpoints are:
+
+* "releases":https://github.com/textpattern/textpattern/releases -- If you're looking for an older version, this is where to go. Contains a copy of most official Textpattern releases, identical to the .zip/.tar.gz downloads.
+* "master":https://github.com/textpattern/textpattern -- The main 4.x branch. This is where we work towards each new release (4.5.0, 4.6.0 etc). Please note that, while the 4.x branch is intended to be stable and reliable, the changes between releases occasionally include errors or omissions. If you’re looking for the most reliable current copy of Textpattern, use the "latest release":http://textpattern.com/download/.
+
+To download from Github, you’ll need to install the "git command-line client":https://git-scm.com/downloads (for most operating systems, including OS X). There are graphical clients available, such as Github for "Windows":https://windows.github.com/ or "OSX":https://mac.github.com/help.html should you prefer, although the command-line version gives far more flexibility.
+
+The command you need to get started is:
+
+bc. $ git clone https://github.com/textpattern/textpattern.git
+
+That will clone the repository to your machine, you can use "git config":https://www.kernel.org/pub/software/scm/git/docs/git-config.html to set up a few things like your @user.name@ and @user.email@, then you’re free to make changes, publish them to your own github repo and issue a Pull Request for us to merge your changes, or just create a diff patch and send it to us.
+
+Note there are experimental branches that contain new features in development that are not ready to merge into the master branch yet. Feel free to peruse these using:
+
+bc. $ git checkout name-of-branch
+
+You can see the list of available branches using the @git branch@ command. To get back to your master copy, use @git checkout master@.
