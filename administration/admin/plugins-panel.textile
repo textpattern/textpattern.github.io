@@ -47,17 +47,17 @@ h3(#sec1-1). Finding plugins
 
 At this time, the Textpattern project doesn't have a centralised repository for all its community-built plugins, but plugin developers (often called "plugin authors") generally proceed by the following process to make their plugins available, and thus for others to find them:
 
-**Developer websites**. First, plugin developers typically make their plugins available at their own websites, and once you know who those plugin developers are, you can find their websites via their forum profiles, and often their specific plugin links in the signatures of their forum posts.[1]
+**Developer websites**. Plugin developers typically make their plugins available at their own websites, and once you know who those plugin developers are, you can find their websites via their forum profiles, and often their specific plugin links in the signatures of their forum posts.[1]
 
-**Plugin author support forum**. Second, plugin developers will initially announce their plugins by creating a plugin support thread for each one in the "Plugin author support":http://forum.textpattern.com/viewforum.php?id=79 forum. This provides a vector for finding plugins by monitoring the forum activity or using the forum's search. These plugin threads are also where you ask questions about using a given plugin, or share ideas for its improvement.[2]
+**Plugin author support forum**. Plugin developers initially announce their plugins by creating a plugin support thread for each one in the "Plugin author support":http://forum.textpattern.com/viewforum.php?id=79 forum. This provides a vector for finding plugins by monitoring the forum activity or using the forum's search.[2]
 
-**Plugin archive**. Third, plugin developers will generally (not always) add their plugin to the "plugins archive":http://textpattern.org/plugins at textpattern.org. This is an old site (disregard the lack of brand cohesion) that may one day become the official central plugin repository that the Textpattern project desparately needs. For now, it's just another possible location to look. Use the search or category filtering to find the functionality or focus you are after and download it. (As an alternative to the search, you can scan through the "entire list of plugins":http://textpattern.org/archives?section=plugins.)
+**Plugin archive**. Plugin developers will generally (not always) add their plugin to the "plugins archive":http://textpattern.org/plugins at textpattern.org. This is an old site (disregard the lack of brand cohesion) that may one day become the official central plugin repository that the Textpattern project desparately needs. For now, it's just another possible location to look. Use the search or category filtering to find a plugin concerned with the functionality you want. (As an alternative to the search, you can scan through the "entire list of plugins":http://textpattern.org/archives?section=plugins.)
 
-**Github**. Finally, plugin developers are increasingly using Github to archive and maintain their plugins, but there's not a lot of momentum in this direction yet, nor is there a convenient listing of those authors that are going this way.
+**Github**. Plugin developers are increasingly using Github to archive and maintain their plugins, but there's not a lot of momentum in this direction yet, nor is there a convenient listing of those authors that are going this way.
 
 fn1. Plugin authors have been known to abandon their plugins and websites over time, so relying on a plugin author's website alone is not always possible.
 
-fn2. This has always been the most popular way for people to discover plugins, but your kilometrage will vary.
+fn2. This has always been the most popular way for people to discover plugins. Plugin threads are also where you ask questions about using a given plugin, find developer notes about changes, or share ideas for plugin improvement. Whenever you install a plugin, you should always _subscribe_ to it's associated support thread to keep up with any changes.
 
 h3(#sec1-2). Plugin file anatomy
 
