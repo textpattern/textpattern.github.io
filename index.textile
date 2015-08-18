@@ -34,20 +34,5 @@ Read "Textpattern security":security/ before you worry, or do anything hasty.
 
 h2. Beyond core functionality
 
-Stuff that requires extensions and modifications.
-
-h3. Themes [todo]
-
-Theme support is coming in future releases. Until then, here are some ways to get started with creating custom themes.
-
-* "Front-side themes":themes/
-* "Admin-side themes":themes/admin-side-themes/
-* "Themes on GitHub":themes/themes-on-github/
-
-h3. Plugins
-
-Develop the next must-have plugins.
-
-* "Plugin development":plugins/
-* The most recent tips, hacks, and facts for your favorite plugins
-* Plugin fact sheets
+* "Theme design":themes/
+* "Plugin development":development/
