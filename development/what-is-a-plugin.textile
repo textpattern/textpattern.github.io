@@ -1,8 +1,23 @@
-\nA “plugin” is a container for any kind of PHP code.
+---
+layout: document
+category: development
+published: true
+title: "What is a plugin?"
+tags:
+  - development 
+  - plugins
+  - 
+---
 
-On the "admin-side":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin-side under "plugins":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins you can click the _edit_ link for any listed plugin to see its code. Code can be a few lines of PHP, or _function_ and _class_ definitions.
+"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **What is a plugin?**
 
-Defining functions in the plugin is the most commonâ€”and easiestâ€”way when starting out, as they can then be called from templates. But more advanced ways for plugins to modify Textpattern behaviour exist. We can categorize plugins by how they offer their functionality roughly into 3 categories:
+h1. What is a plugin?
+
+A “plugin” is a container for any kind of PHP code.
+
+You can see the code for any installed plugin by clicking its name in the table on the **"Plugins":http://docs.textpattern.io/administration/admin/plugins-panel**. Code can be a few lines of PHP, or _function_ and _class_ definitions.
+
+Defining functions in the plugin is a common and easy way to start out, as they can be called from templates. But more advanced ways exist for plugins to influence Textpattern behaviour. We can categorise plugins by their functionality in roughly three ways:
 
 * “on demand” - providing tags for templates and forms
 * “up front” - intercepting pagerequests (either all or those having special characteristics)
