@@ -26,11 +26,11 @@ On this page:
 
 h2(#sec1). Register your plugin developer prefix
 
-All hopeful plugin developers must have a "plugin developer prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes that will be used to name their plugins. A prefix is a three-character (alphanumeric) indication of who the plugin developer is, and precedes a plugin name with an underscore. 
+All hopeful plugin developers must have a "plugin developer prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes. A prefix is a three-character (alphanumeric) indication of who the plugin developer is, and precedes a plugin name with an underscore.
 
 For example, **wet_haystack** is one of several plugins by Robert Wetzlmayr. The prefix in this case is "**wet**", which precedes the specific plugin name ("**haystack**") with an underscore. All together it forms the unique and complete name of the plugin.
 
-Some rules of engagement about plugin prefixes:
+There are some courtesies to keep in mind when registering a plugin prefix:
 
 # **The prefix must be selected when you have a plugin ready for publication -- no squatting.** In other words, you cannot register a prefix and sit on it indefinitely without ever creating a plugin. This wouldn't be fair to those who might like that prefix and have a plugin ready.
 # **You cannot pick a prefix already used by another developer if they have a plugin using that prefix**, even if that developer is no longer active in the community. Check the prefix list and come up with something unique.[1]
