@@ -13,7 +13,7 @@ tags:
 
 h1. Plugin developer prefixes
 
-All plugin developers must have a prefix to name their plugins. A prefix is a three-character (alphanumeric) indication of who the plugin developer is, and precedes a plugin name with an underscore. For example, **wet_haystack** is one of several plugins by Robert Wetzlmayr. The prefix in this case is "**wet**", which precedes the specific plugin name ("**haystack**") with an underscore. All together it forms the unique and complete name of the plugin.
+All plugin developers must have a prefix to name their plugins. A prefix is a three-character (alphanumeric) indication of who the plugin developer is, and precedes a plugin name with an underscore. For example, **wet_haystack** is one of several plugins by Robert Wetzlmayr. The prefix in this case is "**wet**", which precedes the specific plugin name ("**haystack**") with an underscore. All together it forms the unique and complete name of the plugin. An underscore is used for each additional word in a compound name. For example, **smd_user_manager**. Plugins names are entirely lowercase. 
 
 h2(#sec1). Guidelines for choosing and using a prefix 
 
@@ -23,7 +23,7 @@ There are some courtesies to keep in mind when registering a plugin prefix:
 # Register a prefix when you have a plugin ready for publication. Or to put it another way, don't register a prefix and sit on it indefinitely without ever creating a plugin. This is just squatting, and it's not fair to someone else who might like that prefix and have their first plugin ready. Unused prefixes go to the person who first has a plugin to share.
 # You cannot use a prefix already used by another developer, even if that developer is no longer active in the community.[2]
 
-fn1. Sometimes a plugin developer will _assume_ the prefix of a retired plugin developer when the former "adopts" the latter's "orphaned" plugins. This is the preferred practice against simply changing plugin names. Either way, you must have a unique plugin prefix of your own, and at least one plugin using that prefix.
+fn1. Sometimes a plugin developer will _assume_ the prefix of a retired plugin developer when the former "adopts" the latter's "orphaned" plugins. This is the preferred practice against simply changing plugin names.
 
 fn2. Prefix ownership may be challenged if it's found a developer has not created a plugin yet and has been squatting on the prefix. In this case, you (the challenger) must produce the first plugin to earn prefix ownership.
 
@@ -33,34 +33,14 @@ When you're ready to register a prefix, create an "issue" in the "user docs repo
 
 h2(#sec3). Registered prefixes
 
-The prefixes in the following table are registered (taken). Prefixes are noted in relation to their owners (prefix/username). Owners are identified by their Textpattern Support Forum usernames. Usernames link to the forum profiles when they exist, or to a developer's website if no forum profile is known, or not linked at all if neither is known.
+The prefixes in the following table are registered (taken). Prefixes are noted in relation to their owners (prefix/username). Owners are identified by their Textpattern Support Forum usernames. 
 
-|_. Alphabetical |_. Claimed prefixes |
-| A | aaa/jayrope, aam/Logoleptic, aao/aurelian, aba/aba, abl/developr, "act":http://www.angrycat.info (Forum account unknown), add (used by Textpattern), adi/"gomedia":http://forum.textpattern.com/profile.php?id=15145, afa/Anton, ajt/segfault, ajw/Andrew, aka/AkaScooter, akh/tweak, ako/akokskis, akw/thekolonel, alt/GeertAki, an7/iaian7, anc/usonian, any/anyNeT, arc/monkeyninja, arg/argi, aro/rloaderro, asv/variaas, asy/Sencer, atb/atbradley, ats/schussat, aud/Alex McKee |
+**Work-in-progress:** Usernames link to forum profiles when they exist, or to a developer's website if no forum profile is known, or not linked at all if neither is known.
+
+|_. Alphanumeric order |_. Claimed prefixes and owners |
+| A | aaa/jayrope, aam/Logoleptic, aao/aurelian, aba/aba, abl/developr, "act":http://www.angrycat.info (Forum account unknown), *add* (used by Textpattern), adi/"gomedia":http://forum.textpattern.com/profile.php?id=15145, afa/Anton, ajt/segfault, ajw/Andrew, aka/AkaScooter, akh/tweak, ako/akokskis, akw/thekolonel, alt/GeertAki, an7/iaian7, anc/usonian, any/anyNeT, arc/monkeyninja, arg/argi, aro/rloaderro, asv/variaas, asy/Sencer, atb/atbradley, ats/schussat, aud/Alex McKee |
 | B | bab/benbruce, bau/bauhouse, bas/Bastian, beb/1beb, ben/Baseline_Benny, bep/alice_c, bit/bit, bkp/AkaScooter, bnk/Duncan Clarke (forum profile unknown), bos/Zanza, bot/redbot, bsl/polygon_monkey, btx/DougBTX, bud/andyb |
-
-h3(sectionedit3#c). C
-
-*cbe*
- "CeBe":http://forum.textpattern.com/profile.php?id=76735 *cbs*
- cbeyls *cfm*
- "aeonflux":http://forum.textpattern.com/profile.php?id=8082 *cgd*
- Caged *cha*
- "chalito":http://forum.textpattern.com/profile.php?id=13435 (_AndrÃ©s TarrÃ­o_) *chh*
- takshaka *chu*
- charmston *cjm*
- chrismc *ckr*
- Cedric *cng*
- chess *cnj*
- octover *cnk*
- chriloi *cnn*
- cnewkirk *cno*
- cnolle *csb*
- csandberg *css*
- Internally used by Textpattern *cxc*
- "~cXc~":http://forum.textpattern.com/profile.php?id=106730 (Doc) *cti*
- Celti *czg*
- cziggurat
+| C | cbe/"CeBe":http://forum.textpattern.com/profile.php?id=76735, cbs/cbeyls, cfm/"aeonflux":http://forum.textpattern.com/profile.php?id=8082, cgd/Caged, cha/"chalito":http://forum.textpattern.com/profile.php?id=13435, chh/takshaka, chu/charmston, cjm/hrismc, ckr/Cedric, cng/chess, cnj/octover, cnk/chriloi, cnn/cnewkirk, cno/cnolle, csb/csandberg, *css* (used by Textpattern), cxc/"~cXc~":http://forum.textpattern.com/profile.php?id=106730, cti/Celti, czg/cziggurat |
 
 h3(sectionedit4#d). D
 
