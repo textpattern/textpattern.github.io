@@ -32,11 +32,11 @@ For example, **wet_haystack** is one of several plugins by Robert Wetzlmayr. The
 
 There are some courtesies to keep in mind when registering a plugin prefix:
 
-# **The prefix must be selected when you have a plugin ready for publication -- no squatting.** In other words, you cannot register a prefix and sit on it indefinitely without ever creating a plugin. This wouldn't be fair to those who might like that prefix and have a plugin ready.
-# **You cannot pick a prefix already used by another developer if they have a plugin using that prefix**, even if that developer is no longer active in the community. Check the prefix list and come up with something unique.[1]
-# **You may claim an existing prefix only if it's found that the prefix owner has never created a plugin** (i.e., the owner has been squatting on the prefix, undetected). 
+# **Register a prefix when you have a plugin ready for publication.** In other words, no prefix squatting. You cannot register a prefix and sit on it indefinitely without ever creating a plugin. This wouldn't be fair to those who might like that prefix and have a plugin ready.
+# **You cannot pick a prefix already used by another developer _if_ they have a plugin using that prefix**, even if that developer is no longer active in the community. Check the prefix list and come up with something unique.[1]
+# **You may claim an existing prefix only if it's found that the prefix owner has never created a plugin**, and has no immediate plans to do so (i.e., the owner has been squatting on the prefix, undetected). Unused prefixes go to the person who first has a plugin to share.
 
-When you're ready to have your prefix added to the list, create an "issue" in the "user docs repo on Github":https://github.com/textpattern/textpattern.github.io and an editor will add it.
+When you're ready to register a prefix, create an "issue" in the "user docs repo on Github":https://github.com/textpattern/textpattern.github.io and an editor will add it to the "plugin developer prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes list.
 
 fn1. Sometimes a plugin developer will _assume_ the prefix of a retired plugin developer when the former "adopts" the latter's "orphaned" plugins. This is the preferred practice against simply changing plugin names. Either way, you must have a unique plugin prefix of your own, and at least one plugin using that prefix.
 
