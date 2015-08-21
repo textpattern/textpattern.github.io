@@ -13,7 +13,13 @@ tags:
 
 h1. Plugin developer prefixes
 
-All plugin developers must have a prefix to name their plugins. A prefix is a three-character (alphanumeric) indication of who the plugin developer is, and precedes a plugin name with an underscore. For example, **wet_haystack** is one of several plugins by Robert Wetzlmayr. The prefix in this case is "**wet**", which precedes the specific plugin name ("**haystack**") with an underscore. All together it forms the unique and complete name of the plugin. An underscore is used for each additional word in a compound name. For example, **smd_user_manager**. Plugins names are entirely lowercase. 
+All plugin developers must have a prefix to name their plugins. A prefix is a three-character (alphanumeric) indication of who the plugin developer is, and precedes a plugin name with an underscore. For example, **wet_haystack** is one of several plugins by Robert Wetzlmayr. The prefix in this case is "**wet**", which precedes the specific plugin name ("**haystack**") with an underscore. All together it forms the unique and complete name of the plugin. An underscore is used for each additional word in a compound name. For example, **smd_user_manager**. Plugins names are entirely lowercase.
+
+On this page:
+
+* "Guidelines for choosing and using a prefix":#sec1
+* "How to register a prefix":#sec2
+* "Registered prefixes":#sec3
 
 h2(#sec1). Guidelines for choosing and using a prefix 
 
@@ -32,6 +38,8 @@ fn2. Prefix ownership may be challenged if it's found that a "developer" has not
 h2(#sec2). How to register a prefix
 
 When you're ready to register a prefix, create an "issue" in the "user docs repo on Github":https://github.com/textpattern/textpattern.github.io and an editor will add it to the "plugin developer prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes list.
+
+**Prefix owners**, if you're username is not linked with your forum profile and you would like it to be, create an issue as described indicating your forum profile link and it will be added.
 
 h2(#sec3). Registered prefixes
 
