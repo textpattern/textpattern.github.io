@@ -38,7 +38,10 @@ The prefixes in the following table are registered (taken).
 
 Prefixes are noted in relation to their owners (prefix/username). Owners are identified by their Textpattern Support Forum usernames. Usernames link to forum profiles when they exist[3], or to a developer's website if no forum profile is known, or not linked at all if neither is known.
 
-Prefixes noted with %(warning)yellow% are used internally by Textpattern and are absolutely off limits.
+Legend:
+
+* %(warning)Yellow% prefixes are used internally by Textpattern and are off limits.
+* %(information)%Blue% prefixes indicate current Textpattern core developers.%
 
 |_. Alphanumeric order |_. Claimed prefixes and owners |
 | A | aaa/jayrope, aam/Logoleptic, aao/aurelian, aba/aba, abl/developr, "act":http://www.angrycat.info (Forum account unknown), %(warning)add%, adi/"gomedia":http://forum.textpattern.com/profile.php?id=15145, afa/Anton, ajt/segfault, ajw/Andrew, aka/AkaScooter, akh/tweak, ako/akokskis, akw/thekolonel, alt/GeertAki, an7/iaian7, anc/usonian, any/anyNeT, arc/monkeyninja, arg/argi, aro/rloaderro, asv/variaas, asy/Sencer, atb/atbradley, ats/schussat, aud/Alex McKee |
@@ -53,178 +56,20 @@ Prefixes noted with %(warning)yellow% are used internally by Textpattern and are
 | J | ja/london567, jab/jbaty, jad/jdueck, jas/larry, jbb/Jeremie, jbe/jot.be, jcb/jimb, jcp/JohnAJ, jcv/grump.org, jdt/iioshius, jdw/JanDW, jea/Jeadorf, jfp/jordi.f, jgh/Rufnex, jgk/Rufnex, jgp/Rufnex, jjj/jascha, jk/Jeff_K, jmc/jufemaiz, jmd/jm, jmr/jmrhoades, jnm/juanjonavarro, jns/himynameisjonas, joe/joewils, jof/woof, joh/Slaktad, jrh/Jan H, jsh/pericat, jtb/JeffClark, jvg/jeroenvg, jwl/grapeice925 |
 | K | kai/kaioshin, kaf/"Pin007":http://forum.textpattern.com/profile.php?id=4180, kam/"lithium002":http://forum.textpattern.com/profile.php?id=140651, kff/"Karl Francisco Fernandes":http://mesonprojekt.com/, kgr/KurtRaschke, kis/alexbighea, klp/kelp, kml/kimili, krl/vitch, kuo/kuopassa |
 | L | lam/iblastoff, leo/LeonNet, lhg/1ukaz, low/JustinLow, lsx/LeeStewart, lum/"Themroc":http://forum.textpattern.com/profile.php?id=107941, lwh/Luke Wesley-Holley |
-
-h3(sectionedit13#m). M
-
-*mcb*
- mcbenton *mck*
- MarcoK *mcw*
- mikewest *mdn*
- Remillard *mdp*
- greenrift *mem*
- Manfre *mic*
- micampe *mik*
- mikkeX *mim*
- kemie *mka*
- "Martin Kozianka":http://kozianka.de/ (forum account unknown) *mkp*
- michaelkpate *mlk*
- milkshake *mrd*
- mrdale *mrh*
- aesop1 *mrs*
- marios *mrz*
- marz *mrw*
- nesher *msd*
- MattD *msv*
- "Martin Svihla":http://www.svihla.net/ (forum account unknown) *mta*
- morgant *mtp*
- plummerm
-
-h3(sectionedit14#n). N
-
-*nab*
- nabrown78 *nav*
- Internally used by Textpattern *nhn*
- (was Skubidu?) *nok*
- anoke
-
-h3(sectionedit15#o). O
-
-*ob1*
- obeewan *ort*
- "baby":http://forum.textpattern.com/profile.php?id=7103 and his students from the "Instituto ORT":http://semap.baby.com.ar *oui*
- "NicolasGraph":http://forum.textpattern.com/profile.php?id=15445
-
-h3(sectionedit16#p). P
-
-*pac*
- gaekwad ("Pete Cooper":http://petecooper.org/) *pap*
- tranquillo *pat*
- pat64 ("Patrick Lefevre":http://cara-tm.com/) *pax*
- "John Stephens":http://designop.us/ *pcs*
- Internally used by Textpattern *phq*
- phq *phw*
- phiw13 *plh*
- planeth ("Aleth Gueguen":http://pixrobot.net/) *pnh*
- placenamehere *ppc*
- kusor *prad*
- fpradignac *pro*
- hilaryaq *psa*
- Internally used by Textpattern *pub*
- (Means “public”, and intended for plugins resulting from community collaboration.) *ptv*
- Borisch *pzc*
- prizmcloud
-
-h3(sectionedit17#q_-_r). Q - R
-
-*r11*
- skipper *rah*
- Gocom *ras*
- rsilletti *rcb*
- Russell Brown (forum account unknown) *rdi*
- ian *rdt*
- rdtietjen *rei*
- ReinierBiz *rlt*
- richtestani *rmc*
- ruairi *rob*
- "Rob Bell":http://rob-bell.net/ (forum account unknown) *rom*
- Romuald *rpc*
- ARCanine *rpg*
- leralle *rsd*
- Internally used by Textpattern *rss*
- wilshire *rsx*
- ramanan *rtr*
- rob_roy, possibly abandoned? *rvm*
- ruud
-
-h3(sectionedit18#s). S
-
-*sab*
- supa *sac*
- saccade *saw*
- ninj *scs*
- steph *sdr*
- sderuiter *sed*
- net-carver *see*
- sthmtc *sen*
- gago *set*
- Internally used by Textpattern *sgb*
- sungodbiff *sho*
- stephan *sir*
- fabio sirna *ske*
- skeptisch *skp*
- piyashrija *smd*
- Bloke ("Stef Dawson":http://www.stefdawson.com/) *smf*
- txfrog1999 *smu*
- e-sven *soo*
- jsoo *spc*
- spchampion *spf*
- spiffin ("Simon Finch":http://www.spiffin.net/) *spi*
- photonomad ("Stacey Irvin":http://www.staceyirvin.com/) *spr*
- springworks *srh*
- Vitruvius *ste*
- stefan *stm*
- monsta *stw*
- santheo *swf*
- swf
-
-h3(sectionedit19#t). T
-
-*tab*
- Internally used by Textpattern *tbs*
- thebombsite *tch*
- Sketch *tcm*
- tmacwrig *tda*
- Internally used by Textpattern *tfu*
- carton *the*
- Internally used by Textpattern *thg*
- the_ghost *tin*
- jeroen *tps*
- Tomsec *tok*
- "ToK":http://forum.textpattern.com/profile.php?id=192280 *tpt*
- Internally used by Textpattern *tru*
- truist *tsw*
- mwaldtha *tuk*
- paradotsky *txp*
- Internally used by Textpattern
-
-h3(sectionedit20#u). U
-
-*uli*
- uli *uri*
- urizen *upm*
- Mary
-
-h3(sectionedit21#v). V
-
-*vag*
- vagari *vdh*
- larf *vg*
- Vincent Grouls
-
-h3(sectionedit22#w). W
-
-*wan*
- wanni *waz*
- wazdog *wcz*
- whocarez *wet*
- wet *wlk*
- Walker *wnp*
- datafirm *wm*
- watts *wow*
- nighthawk
-
-h3(sectionedit23#x_-_y). X - Y
-
-*xkl*
- nimnix *yab*
- trenc ("Tommy Schmucker":http://tommyschmucker.de/) *yes*
- Internally used by Textpattern
-
-h3(sectionedit24#z). Z
-
-*zem*
- zem *zen*
- zenigy *zmk*
- maxk
+| M | mcb/mcbenton, mck/MarcoK, mcw/mikewest, mdn/Remillard, mdp/greenrift, mem/Manfre, mic/micampe, mik/mikkeX, mim/kemie, mka/"Martin Kozianka":http://kozianka.de/, mkp/michaelkpate, mlk/milkshake, mrd/mrdale, mrh/aesop1, mrs/marios, mrz/marz, mrw/nesher, msd/MattD, msv/"Martin Svihla":http://www.svihla.net/, mta/morgant, mtp/plummerm |
+| N | nab/nabrown78, %(warning)nav%, nhn/(was Skubidu?), nok/anoke |
+| O | ob1/obeewan, ort/"baby":http://forum.textpattern.com/profile.php?id=7103 (and his students from the "Instituto ORT":http://semap.baby.com.ar), oui/"NicolasGraph":http://forum.textpattern.com/profile.php?id=15445 |
+| P | pac/"gaekwad":http://forum.textpattern.com/profile.php?id=7456, pap/tranquillo, pat/"pat64":http://forum.textpattern.com/profile.php?id=7660, pax/"johnstephens":http://forum.textpattern.com/profile.php?id=15144, %(warning)pcs%, phq/phq, phw/phiw13, plh/"planeth":http://forum.textpattern.com/profile.php?id=31641, pnh/placenamehere, ppc/kusor, prad/fpradignac, pro/hilaryaq, %(warning)psa%, pub
+ (“public”; used for plugins resulting from community collaboration), ptv/Borisch, pzc/prizmcloud |
+| Q | None at this time. |
+| R | r11/skipper, %(information)rah%/"Gocom":http://forum.textpattern.com/profile.php?id=9632, ras/rsilletti, rcb/Russell Brown, rdi/ian, rdt/rdtietjen, rei/ReinierBiz, rlt/richtestani, rmc/ruairi, rob/"Rob Bell":http://rob-bell.net/, rom/Romuald, rpc/ARCanine, rpg/leralle, %(warning)rsd%, rss/wilshire, rsx/ramanan, rtr/rob_roy (possibly abandoned?, rvm/"ruud":http://forum.textpattern.com/profile.php?id=9348 |
+| S | sab/supa, sac/saccade, saw/ninj, scs/steph, sdr/sderuiter, sed/net-carver, see/sthmtc, sen/gago, %(warning)set%, sgb/sungodbiff, sho/stephan, sir/fabio sirna, ske/skeptisch, skp/piyashrija, %(information)smd%/"Bloke":http://forum.textpattern.com/profile.php?id=8181, smf/txfrog1999, smu/e-sven, soo/jsoo, spc/spchampion, spf/"spiffin":http://forum.textpattern.com/profile.php?id=1340, spi/"photonomad":http://forum.textpattern.com/profile.php?id=6698, spr/springworks, srh/Vitruvius, ste/stefan, stm/monsta, stw/santheo, swf/swf |
+| T | %(warning)tab%, tbs/thebombsite, tch/Sketch, tcm/tmacwrig, %(warning)tda%, tfu/carton %(warning)the%, thg/the_ghost, tin/jeroen, tps/Tomsec, tok/"ToK":http://forum.textpattern.com/profile.php?id=192280, %(warning)tpt%, tru/truist, tsw/mwaldtha, tuk/paradotsky, %(warning)txp% |
+| U | uli/uli, uri/urizen, upm/Mary |
+| V | vag/vagari, vdh/larf, vg/Vincent Grouls |
+| W | wan/wanni, waz/wazdog, wcz/whocarez, %(information)wet%/"wet":http://forum.textpattern.com/profile.php?id=5463, wlk/Walker, wnp/datafirm, wm/watts, wow/nighthawk |
+| X | xkl/nimnix, yab/"trenc":http://forum.textpattern.com/profile.php?id=14613, %(warning)yes% |
+| Y | None at this time. |
+| Z | zem/zem, zen/zenigy, zmk/maxk |
 
 fn3. Editors: Please help get usernames linked up by searching for their profile pages in the forum and adding them here as you can.
