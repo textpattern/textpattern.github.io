@@ -52,7 +52,7 @@ Legend:
 * %(warning)Yellow% prefixes are used internally by Textpattern and are off limits.
 * %(information)Blue% prefixes indicate current Textpattern core developers.
 * %(success)Green% prefixes mean the developer has abandoned the community and no plugins remain with that prefix anymore. These prefixes can be claimed by a new developer. 
-* (?) next to a username means no forum profile or website is found and the status of the prefix is questionable. These prefixes could certainly be challenged for new ownership (see guidelines above).
+* (?) next to a username means no forum profile is found and the status of the prefix is questionable. If an external link is known, it will be on the "?". These prefixes could certainly be challenged for new ownership (see guidelines above).
 * **(!)** next to a username means the indicated username has adopted all plugins from the original developer.
 
 |_. Index |_. Claimed prefixes and owners (prefix/username) |
