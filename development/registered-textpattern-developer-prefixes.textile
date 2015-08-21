@@ -45,7 +45,7 @@ h2(#sec3). Registered prefixes
 
 The prefixes in the following table are registered, but see the guidelines above. 
 
-Prefixes are noted in relation to their owners (prefix/username). Owners are identified by their Textpattern Support Forum usernames. Usernames link to forum profiles, not personal websites (which should be indicated in the profiles anyway).[3]
+Prefixes are noted in relation to their owners (prefix/username). Owners are identified by their Textpattern Support Forum usernames. Usernames link to forum profiles, not personal websites (which should be indicated in the profiles anyway).
 
 Legend:
 
@@ -82,5 +82,3 @@ Legend:
 | X | xkl/nimnix |
 | Y | yab/"trenc":http://forum.textpattern.com/profile.php?id=14613, %(warning)yes% |
 | Z | zem/zem, zen/zenigy, zmk/maxk |
-
-fn3. Editors: Please help get usernames linked up by searching for their profile pages in the forum and adding them here as you can.
