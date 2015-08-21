@@ -41,12 +41,12 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 Legend:
 
 * %(warning)Yellow% prefixes are used internally by Textpattern and are off limits.
-* %(information)Blue% prefixes indicate current Textpattern core developers.%
+* %(information)Blue% prefixes indicate current Textpattern core developers.
 
 |_. Alphanumeric order |_. Claimed prefixes and owners |
 | A | aaa/jayrope, aam/Logoleptic, aao/aurelian, aba/aba, abl/developr, "act":http://www.angrycat.info (Forum account unknown), %(warning)add%, adi/"gomedia":http://forum.textpattern.com/profile.php?id=15145, afa/Anton, ajt/segfault, ajw/Andrew, aka/AkaScooter, akh/tweak, ako/akokskis, akw/thekolonel, alt/GeertAki, an7/iaian7, anc/usonian, any/anyNeT, arc/monkeyninja, arg/argi, aro/rloaderro, asv/variaas, asy/Sencer, atb/atbradley, ats/schussat, aud/Alex McKee |
 | B | bab/benbruce, bau/bauhouse, bas/Bastian, beb/1beb, ben/Baseline_Benny, bep/alice_c, bit/bit, bkp/AkaScooter, bnk/Duncan Clarke (forum profile unknown), bos/Zanza, bot/redbot, bsl/polygon_monkey, btx/DougBTX, bud/andyb |
-| C | cbe/"CeBe":http://forum.textpattern.com/profile.php?id=76735, cbs/cbeyls, cfm/"aeonflux":http://forum.textpattern.com/profile.php?id=8082, cgd/Caged, cha/"chalito":http://forum.textpattern.com/profile.php?id=13435, chh/takshaka, chu/charmston, cjm/"chrismc":http://forum.textpattern.com/profile.php?id=2333, ckr/Cedric, cng/chess, cnj/octover, cnk/chriloi, cnn/cnewkirk, cno/cnolle, csb/csandberg, %(warning)css%, cxc/"[~cXc~]":http://forum.textpattern.com/profile.php?id=106730, cti/Celti, czg/cziggurat |
+| C | cbe/"CeBe":http://forum.textpattern.com/profile.php?id=76735, cbs/cbeyls, cfm/"aeonflux":http://forum.textpattern.com/profile.php?id=8082, cgd/Caged, cha/"chalito":http://forum.textpattern.com/profile.php?id=13435, chh/takshaka, chu/charmston, cjm/"chrismc":http://forum.textpattern.com/profile.php?id=2333, ckr/Cedric, cng/chess, cnj/octover, cnk/chriloi, cnn/cnewkirk, cno/cnolle, csb/csandberg, %(warning)css%, cxc/"~[cXc]~":http://forum.textpattern.com/profile.php?id=106730, cti/Celti, czg/cziggurat |
 | D | dak/Kaiser, dca/Dean, dds/nemoorange, dem/demoncleaner, dfc/domfucssion, djw/wet, %(warning)dmp%, %(warning)dom%, dow/dow, dru/Drew, dub/jamiew, dzd/Dragondz |
 | E | e26/edduddiee, ebl/TheEric, eck/ecklesroad, ede/edeverett, egg/yatil.de, %(warning)end%, eoi/dubsky, esq/cain-mi, etc/etc, etz/Etz Haim |
 | F | fgr/fathersGrave, fha/mamash, fly/superfly, fng/fungus_sn, foo (Documentation sample), fox/Gr3yFox, fpx/Flashpix |
