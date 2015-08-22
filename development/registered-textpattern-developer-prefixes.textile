@@ -53,7 +53,7 @@ Legend:
 * %(information)Blue% prefixes indicate current Textpattern core developers.
 * %(success)Green% prefixes mean the developer has abandoned the community and no plugins remain with that prefix anymore. These prefixes can be claimed by a new developer. 
 * (?) next to a username means no forum profile is found and the status of the prefix is questionable. If an external link is known, it will be on the "?". These prefixes could certainly be challenged for new ownership (see guidelines above).
-* **(!)** next to a username means the indicated username has adopted all plugins from the original developer.
+* **(!)** next to a username means the indicated developer has adopted all the original developer's plugins, which were abandoned (orphaned).
 
 |_. Index |_. Claimed prefixes and owners (prefix/username) |
 | A | aaa/jayrope, aam/Logoleptic, aao/aurelian, aba/aba, abl/"developr":http://forum.textpattern.com/profile.php?id=160386, act/angryCat (?), %(warning)add%, adi/"gomedia":http://forum.textpattern.com/profile.php?id=15145, afa/Anton, ajt/segfault, ajw/Andrew, aka/AkaScooter, akh/tweak, ako/akokskis, aks/"makss":http://forum.textpattern.com/profile.php?id=19245, akw/thekolonel, alt/GeertAki, an7/iaian7, anc/usonian, any/anyNeT, arc/"monkeyninja":http://forum.textpattern.com/profile.php?id=18747, arg/argi, aro/rloaderro, asv/variaas, asy/"Sencer":http://forum.textpattern.com/profile.php?id=462, atb/atbradley, ats/schussat, aud/Alex McKee (?) |
