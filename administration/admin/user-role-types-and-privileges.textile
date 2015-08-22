@@ -2,7 +2,7 @@
 layout: document
 category: administration
 published: true
-title: "User roles and associated privileges"
+title: "User role types and privileges"
 tags:
   - users 
   - roles
@@ -10,7 +10,7 @@ tags:
   - account types
 ---
 
-h1. User roles and associated privileges
+h1. User role types and privileges
 
 Textpattern provides several pre-defined user roles out-of-the-box. Each role has an associated set of admin-side privileges that are meant to help with leveraging the different responsibilities in a publishing workflow.
 
