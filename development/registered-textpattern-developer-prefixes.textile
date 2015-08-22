@@ -33,7 +33,7 @@ There are some courtesies to keep in mind when registering a plugin prefix:
 
 fn1. Sometimes a plugin developer will _assume_ the prefix of a retired plugin developer when the former "adopts" the latter's "orphaned" plugins. This is the preferred practice against simply changing plugin names. For example, username "wet" has his own plugins (wet/wet), as indicated in the prefix table at bottom, but he's adopted the orphaned plugins with prefix "djw" too (djw/wet).
 
-fn2. Prefix ownership may be challenged if it's found that a "developer" has not created a plugin yet and is squatting on the prefix. In this case, you (the challenger) must produce the first plugin to earn ownership of the prefix in question. Challenge prefix ownership by bringing the issue to light in the "Plugin discussion":http://forum.textpattern.com/viewforum.php?id=13 forum, where others can help determine if the challenge is reasonable. Some prefixes in the table at bottom are indicated with a question mark (?); their status is unknown and could certainly be challenged, for example.
+fn2. Prefix ownership may be challenged if it's found that a "developer" has not created a plugin yet and is squatting on the prefix. In this case, you (the challenger) must produce the first plugin to earn ownership of the prefix in question. To challenge prefix ownership, bring the issue to light in the "Plugin discussion":http://forum.textpattern.com/viewforum.php?id=13 forum, where others can help determine if the challenge is reasonable.
 
 h2(#sec2). How to register a prefix
 
