@@ -75,7 +75,7 @@ Cool? Great! Let's build some plugins.
 
 h2(#sec3). Developer rules of the road
 
-Three strong recommendations, really, meant to help ensure that you're producing plugins people will want to use. And that's the whole point, right?
+More like three strong recommendations, meant to help ensure that you're producing plugins people will want to use. And that's the whole point, right?
 
 **Avoid reinventing the wheel:** 
 
@@ -83,11 +83,11 @@ Before you start developing, spend some time researching what plugins exist, wha
 
 **Do it the Textpattern way:** 
 
-Do it the “Textpattern's way” from the start by using "Textpattern functions":#sec7-2, whenever possible, instead of re-inventing what already works efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Additionally, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
+Do it the “Textpattern's way” from the start by using "Textpattern functions":#sec7-2, whenever possible, which already work efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Additionally, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
 
 **Write clear and concise plugin help:** 
 
-Don't be one of those developers that assumes everyone knows what you know -- the opposite is true. People won't use your plugin if you don't explain how it should be used, no matter how innovative it is. You can avoid fielding a lot of repetitive questions in the support forum by producing good plugin user instructions to begin with. Use the "Plugin user help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines to ensure your plugin instructions are consistently structured and properly formatted.
+Don't be one of those developers that assumes everyone knows what you know -- the opposite is true. People won't use your plugin, innovative or not, if you don't explain how. You can avoid fielding a lot of unnecessary questions in the support forum by producing good plugin user instructions to begin with. Use the "Plugin user help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines to ensure your plugin instructions are consistently structured and properly formatted.
 
 h2(#sec4). Register your plugin developer prefix
 
