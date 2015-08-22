@@ -1,174 +1,18 @@
-\nThis tutorial assumes a working knowledge of "PHP":http://php.net.
-
-h3(sectionedit1#client-side_plugins). Client-side plugins
-
-Let's get stuck in and write a simple client-side plugin. This plugin will:
-
-# Create a Textpattern tag
-# Read some optional attributes
-# Output some text when that tag is called
-# Use TXP's "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else tag
-
-Since all plugins must use a three-letter prefix (see the "plugin_development_guidelines":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_development_guidelines for more on this) we're going to use *abc_* in this example.
-
-Let's build the code piece by piece using the "ied_plugin_composer":http://stefdawson.com/ied_plugin_composer plugin. Create a new plugin called *abc_hello_world* and put this code in:
-
-bc. function abc_hello_world($atts, $thing=NULL) {
-   return 'Hello Textpattern world!';
-}
-
-
-Once you save the code and enable the plugin, it is available for use. You've just created a new Textpattern tag: go and try it out! In your Page or Form template  -  or even in an article  -  put:
-
-bc. <nowiki><txp:abc_hello_world /></nowiki>
-
-
-There you go; your first plugin. Admittedly, not very useful yet.
-
-h4(#attributes). Attributes
-
-In the function signature  -  the first line of the above code  -  you'll see reference to two variables
-
-bc. $atts
-
-
-and
-
-bc. $thing
-
-
-. These are Textpattern conventions:
-
-<ul>
-<li>bc. $atts
-
-
-<p>will hold any attributes that have been used inside your tag</p></li>
-<li>bc. $thing
-
-
-<p>holds the contents of any container if your tag can be used that way</p></li>
-</ul>
-
-Notice that
-
-bc. $thing
-
-
-is set to
-
-bc. NULL
-
-
-by default. This is good practice.
-
-As it stands our plugin does not have any attributes. Let's change that:
-
-<pre class="code">
-function abc_hello_world($atts, $thing=NULL) {
-
-   extract(lAtts(array(
-      'name' =&gt; '',
-      'text' =&gt; 'Pleased to meet you.',
-   ), $atts));
-
-   return 'Hello ' . $name . '! ' . $text;
-}
-</pre>
-
-the
-
-bc. lAtts()
-
-
-function is a TXP function that helps you deal with tag attributes easily. It takes care of all the drudgery of making sure that users are not trying to use badly named or incorrect attribute names. It takes an array as its only argument, containing a list of all your attributes and any default values. In this example, we have defined two:
-
-bc. name
-
-
-(which has no default value) and
-
-bc. text
-
-
-whch has some default content.
-
-If you refresh your site's page you'll now see
-
-bc. Hello ! Pleased to meet you.
-
-
-Change your tag to read:
-
-bc. <nowiki><txp:abc_hello_world name="Fred" /></nowiki>
-
-
-and notice the difference. Textpattern has read your attribute and used it; the
-
-bc. extract()
-
-
-function takes care of making the variable available in your code simply as
-
-bc. $name
-
-
-.
-
-You can of course also use the
-
-bc. text
-
-
-attribute; notice that if you do, the default value you set up is replaced with whatever is used in the plugin's tag.
-
-h4(#conditional_output). Conditional output
-
-To finish off this little example, we'll alter the plugin to work as a conditional tag and take action based on the name given.
-
-<pre class="code">
-function abc_hello_world($atts, $thing=NULL) {
-
-   extract(lAtts(array(
-      'name' =&gt; '',
-   ), $atts));
-
-   $result = ($name == 'Admin') ? 1 : 0;
-
-   return parse(EvalElse($thing, $result));
-}
-</pre>
-
-It's a stupid example, but change your txp tag to the following:
-
-bc. <txp:abc_hello_world name="Fred">
-   <p>Welcome admin</p>
-<txp:else />
-   <p>Welcome normal user person</p>
-</txp:abc_hello_world>
-
-
-What we're doing here is checking if the tag's
-
-bc. name
-
-
-attribute is equal to *Admin*. If it is, the conditional branch will execute and if not, the "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else branch will run. The TXP function
-
-bc. EvalElse()
-
-
-does the magic for us by fetching and parsing the relevant part of
-
-bc. $thing
-
-
-(the container) depending on whether the value of
-
-bc. $result
-
-
-is true or false.
+---
+layout: document
+category: development
+published: true
+title: "Admin-side plugin tutorial"
+tags:
+  - development 
+  - plugins
+  - admin-side
+  - tutorial
+---
+
+"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Admin-side plugin tutorial**
+
+h1. Admin-side plugin tutorial
 
 h3(sectionedit2#admin-side_plugins). Admin-side plugins
 

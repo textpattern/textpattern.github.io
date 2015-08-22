@@ -2,98 +2,176 @@
 layout: document
 category: development
 published: true
-title: "Plugin development"
+title: "Textpattern plugin development"
 tags:
   - development 
   - plugins
 ---
 
-"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Plugin development**
+"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Textpattern plugin development**
 
-h1. Plugin development
+h1. Textpattern plugin development
 
-This information is for those who are thinking about developing Textpattern plugins. Before you embark on this journey, understand that core developers put a lot of effort into maintaining backwards compatibility within the development branch of Textpattern itself, but that does not guarantee your plugins will continue to work as intended after new versions of Textpattern are released. Sometimes new development directions -- like what might come as we head to version 4.6 and later -- require making changes that affect backwards compatibility. As a plugin developer, it is your responsibility to ensure your plugins work against core code at point of every future Textpattern release. Cool? Great! Let's build some plugins.
+This information is for those who are thinking about developing Textpattern plugins.
 
 On this page:
 
-* "Register your plugin developer prefix":#sec1
-* "What is a plugin?":#sec2
-* "Plugin anatomy":#sec3
-* "":#sec
-* "":#sec
-* "":#sec
-* "Further reading":#sec6
+* "What is a plugin?":#sec1
+** "Functional categories":#sec1-1
+** "Public-side plugins":#sec1-2
+** "Admin-side plugins":#sec1-3
+* "Disclaimer":#sec2
+* "Developer rules of the road":#sec3
+* "Register your plugin developer prefix":#sec4
+* "Plugin anatomy":#sec5
+* "Development guidelines":#sec6
+* "Code":#sec7
+** "Callbacks":#sec7-1
+** "Functions and variables":#sec7-2
+** "Tags, classes, and attributes":#sec7-3
+* "Implementation":#sec8
+* "Hosting and repos":#sec9
+* "Tools and aides":#sec10
+* "Getting help":#sec11
+* "Further reading":#sec12
 
-h2(#sec1). Register your plugin developer prefix
+h2(#sec1). What is a plugin?
 
-All hopeful plugin developers must have a "plugin developer prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes, and there are some guidelines about picking one, so check it out and keep it in mind.
+A "plugin" is a container for any kind of PHP code. The code can be a few lines of PHP, or _function_ and _class_ definitions.[1] Defining functions in the plugin is a common and easy way to start out, as they can be called from templates. But more advanced ways exist for plugins to influence Textpattern behaviour.
 
-h2(#sec2). What is a plugin?
+fn1. You can see the code for any installed plugin by clicking its name in the table on the **"Plugins":http://docs.textpattern.io/administration/admin/plugins-panel**, or by installing and using "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer.
 
-A "plugin" is a container for any kind of PHP code. The code can be a few lines of PHP, or _function_ and _class_ definitions.[1] Defining functions in the plugin is a common and easy way to start out, as they can be called from templates, but more advanced ways exist for plugins to influence Textpattern behaviour. 
+h3(#sec1-1). Functional categories
 
-Plugins may be functionally categorised in three ways:
+Plugins can be categorised in three functional ways:
 
-* “on demand” -- providing __tags__ for __pages__ and __forms__
+* “on demand” -- providing tags for __pages__ and __forms__
 * “up front” -- intercepting page requests (either all or those having special characteristics)
-* “in between” -- using Textpattern hooks to automatically change or add behaviour
+* “in between” -- using Textpattern hooks to automatically change or add behaviour.
 
-There is a common distinction between public-side and "admin-side":http://docs.textpattern.io/administration/ plugins. Admin-side plugins often make use of the **"Extensions":http://docs.textpattern.io/administration/extensions/** region. Many practical plugins fall into several of the above categories at once because a plugin is really nothing more than a container for code.
+The most practical (and most popular) plugins fall into more than one category, because a plugin is really nothing more than a container for code. If it provides functionality in multiple ways, it's likely providing more benefit to the user.
 
-fn1. You can see the code for any installed plugin by clicking its name in the table on the **"Plugins":http://docs.textpattern.io/administration/admin/plugins-panel**.
+Plugins can also be public-side or admin-side.
 
-h2(#sec3). Plugin anatomy
+h3(#sec1-2). Public-side plugins
 
-[todo]
+Public-side (aka "client-side" or "front-side") plugins are those that provide content or behaviour on the front-side of a website, often by providing specialised tags, which a website designer can then use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
 
-h2(#sec4). Guidelines
+* "Public-side plugin tutorial":http://docs.textpattern.io/administration/public-side-plugin-tutorial -- A basic tutorial to learn the ropes of the easiest kind of plugin to build.
+
+h3(#sec1-3). Admin-side plugins
+
+Admin-side plugins provide site administrators and designers the ability to alter the "admin-side":http://docs.textpattern.io/administration/ UI and/or functionality in some way. 
+
+Admin-side plugins often make use of the **"Extensions":http://docs.textpattern.io/administration/extensions/** region. In other words, if a admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the Extensions region.
+
+* "Admin-side plugin tutorial":http://docs.textpattern.io/administration/admin-side-plugin-tutorial -- A basic tutorial to get acquainted with the tricker kinds of plugins to build. 
+
+h2(#sec2). Disclaimer
+
+Before you embark on this journey, understand that core developers put a lot of effort into maintaining backwards compatibility within the development branch of Textpattern itself, but that does not guarantee your plugins will continue to work as intended after new versions of Textpattern are released. Sometimes new development directions -- like what might come as we head to version 4.6 and later -- require making changes that affect backwards compatibility. As a plugin developer, it is your responsibility to ensure your plugins work against core code at point of every future Textpattern release. 
+
+Cool? Great! Let's build some plugins.
+
+h2(#sec3). Developer rules of the road
+
+Three strong recommendations, really, meant to help ensure that you're producing plugins people will want to use. And that's the whole point, right?
+
+**Avoid reinventing the wheel:** 
+
+Before you start developing, spend some time researching what plugins exist, what functionality, they provide, and how well they're working for people (often indicated by how popular they are). While it might be good exercise to reinvent the wheel, building a plugin that does what another plugin already does isn't going to be immediately useful unless it's _extremely_ innovative in some way. If you decide to throw caution to the wind and reinvent the wheel anyway (perhaps stepping on toes in the process), make sure you're ready to raise the bar. Somebody has to eventually.
+
+**Do it the Textpattern way:** 
+
+Do it the “Textpattern's way” from the start by using "Textpattern functions":#sec7-2, whenever possible, instead of re-inventing what already works efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Additionally, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
+
+**Write clear and concise plugin help:** 
+
+Don't be one of those developers that assumes everyone knows what you know -- the opposite is true. People won't use your plugin if you don't explain how it should be used, no matter how innovative it is. You can avoid fielding a lot of repetitive questions in the support forum by producing good plugin user instructions to begin with. Use the "Plugin user help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines to ensure your plugin instructions are consistently structured and properly formatted.
+
+h2(#sec4). Register your plugin developer prefix
+
+All hopeful plugin developers must have a "plugin developer prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes.
+
+When developing your plugins, you will apply your prefix in the following places:
+
+* In the names of PHP classes, functions, and global variables in the plugin's code.
+* In the database table and indices names.
+* In the names of stored preferences in the @_txp_prefs_@ table and/or the @$prefs array;@.
+* In any global JavaScript variables or function names you use for modifying the backend or adding features to the front-end.
+* In IDs and, to some extent, classes of HTML elements that you add to the backend interface.[2] 
+* In URL parameter names. Replace @?foo=bar&baz=1@ with @?abc_foo=bar&abc_baz=1@, where "@abc@" would be your own prefix.
+
+fn2. The exception to this is if an element of your markup is logically similar to an already existing core element and you wish it to be styled in the same way by themes. Doing this saves theme designers from having to write specific rules to target your plugin's markup.
+
+h2(#sec5). Plugin anatomy 
+
+[todo:anyone]
+
+h2(#sec6). Development guidelines
 
 Before diving into code, get some perspective.
 
-* *"Plugin development guidelines":http://docs.textpattern.io/development/plugin-development-guidelines
+* "Plugin development guidelines":http://docs.textpattern.io/development/plugin-development-guidelines
+
 * "Plugin basics":http://docs.textpattern.io/development/plugin-basics
-* "Plugin 'user help' guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines
 * "How plugins are loaded":http://docs.textpattern.io/development/how-plugins-are-loaded
-* "Using callbacks in between plugins":http://docs.textpattern.io/development/using-callbacks
-* "Textpacks":http://docs.textpattern.io/development/textpacks
 
-h2(#sec5). Aides and resources
+h2(#sec7). Code
 
-* "Plugin template":http://docs.textpattern.io/development/plugin-template
+The important stuff.
+
+h3(#sec7-1). Callbacks
+
+Textpattern makes extensive use of callbacks. Hook into these known points to choose where and when your plugins run. See these:
+
+* "Using callbacks 'in between' plugins":http://docs.textpattern.io/development/using-callbacks-between-plugins
+* "Core callback list":http://docs.textpattern.io/development/core-callback-list
+
+h3(#sec7-2). Functions and variables
+
+Be aware of the *helper functions*. Helper functions can be found in the “lib” folder:
+
+* @txplib_db.php@ -- for interacting with the Textpattern database
+* @txplib_forms.php@ -- to help build various HTML form elements
+* txplib_html.php -- to help build various other HTML elements
+* @txplib_misc.php@ -- various “miscellaneous” functions.
+
+Other references for functions and variables:
+
 * Core function reference
-* "Plugin development mailing list":http://lists.textpattern.com/
+* "Phpxref":http://phpxref.com/xref/textpattern/ -- A comprehensive cross-reference of Textpattern functions and variables.
+* "Accessing global variables":http://www.focusontheclouds.com/home/articles/72/accessing-global-variables-in-textpattern
 
-Tags, attributes, and classes:
+h3(#sec7-3). Tags, classes, and attributes
 
 * "Generate a list of tags and attributes":http://forum.textpattern.com/viewtopic.php?id=12299
 * "Classes in plugins":http://forum.textpattern.com/viewtopic.php?id=26025
 
-Functions and variables
+h2(#sec8). Implementation
 
-* "Accessing global variables":http://www.focusontheclouds.com/home/articles/72/accessing-global-variables-in-textpattern
-* "Phpxref":http://phpxref.com/xref/textpattern/ (Comprehensive cross-reference of Textpattern functions and variables)
+* "Admin events and steps":http://docs.textpattern.io/development/admin-events-and-steps
+* "User role types and privileges":http://docs.textpattern.io/administration/admin/user-role-types-and-privileges
+* "Database schema reference":http://docs.textpattern.io/development/database-schema-reference
+* "Extensions":http://docs.textpattern.io/development/extensions -- The **Extensions** region of the administration UI for admin-side plugins.
 
-Tools:
-
-* "Commandline plugin decoder":http://forum.textpattern.com/viewtopic.php?id=4252
-* "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer -- This plugin allows you to create, code, and document plugins, then publish them in either conventional text format, compressed text format, or exported in the standard template format for sharing with developers or using in the plugin cache directory. This plugin also lets you directly edit plugins that are in the plugin cache directory.
-* "sed_plugin_help_viewer":http://textpattern.org/plugins/612/sed_plugin_help_viewer
-
-h2(#sec6). Hosting and repos
+h2(#sec9). Hosting and repos
 
 * "Fetching the current development version":http://docs.textpattern.io/development/fetching-current-dev-version (Also addresses which branch or release to use and where to get old versions of Textpattern.)
 * "Code hosting":http://docs.textpattern.io/development/code_hosting
 
-h2(#sec7). Implementation
+h2(#sec10). Tools and aides
 
-* "Admin events and steps":http://docs.textpattern.io/development/admin-events-and-steps
-* "User roles and permissions":user_roles_and_permissions
-* "Database schema reference":http://docs.textpattern.io/development/database-schema-reference
-* "Extensions":http://docs.textpattern.io/development/extensions (the Extensions tab in admin-side for administration-related plugins)
+* "Plugin template":http://docs.textpattern.io/development/plugin-template
+* "Commandline plugin decoder":http://forum.textpattern.com/viewtopic.php?id=4252
+* "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer -- This plugin allows you to create, code, and document plugins, then publish them in either conventional text format, compressed text format, or exported in the standard template format for sharing with developers or using in the plugin cache directory. This plugin also lets you directly edit plugins that are in the plugin cache directory.
+* "sed_plugin_help_viewer":http://textpattern.org/plugins/612/sed_plugin_help_viewer
 
-h2(sec8). Further reading
+h2(#sec11). Getting help
 
-See the official "Plugin development guidelines":http://docs.textpattern.io/development/plugin-development-guidelines. You may also find these resources of value:
+If you need a warm shoulder to lean on, subscribe to the "plugin development mailing list":http://lists.textpattern.com/.
+
+h2(sec12). Further reading
 
 * "How to build a Textpattern plugin":http://txptips.com/how-to-build-a-textpattern-plugin
 
