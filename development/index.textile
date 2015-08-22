@@ -55,17 +55,17 @@ Plugins can also be public-side or admin-side.
 
 h3(#sec1-2). Public-side plugins
 
-Public-side (aka "client-side" or "front-side") plugins are those that provide content or behaviour on the front-side of a website, often by providing specialised tags, which a website designer can then use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
+Public-side (aka "client-side" or "front-side") plugins are those that enable content output on the front-side of a website, often through specialised tags, which a website designer can use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
 
-* "Public-side plugin tutorial":http://docs.textpattern.io/administration/public-side-plugin-tutorial -- A basic tutorial to learn the ropes of the easiest kind of plugin to build.
+* "Public-side plugin tutorial":http://docs.textpattern.io/development/public-side-plugin-tutorial -- A basic tutorial to learn the ropes of the easiest kind of plugin to build.
 
 h3(#sec1-3). Admin-side plugins
 
 Admin-side plugins provide site administrators and designers the ability to alter the "admin-side":http://docs.textpattern.io/administration/ UI and/or functionality in some way. 
 
-Admin-side plugins often make use of the **"Extensions":http://docs.textpattern.io/administration/extensions/** region. In other words, if a admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the Extensions region.
+Admin-side plugins often make use of the **"Extensions":http://docs.textpattern.io/administration/extensions/** region. In other words, if an admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the Extensions region.
 
-* "Admin-side plugin tutorial":http://docs.textpattern.io/administration/admin-side-plugin-tutorial -- A basic tutorial to get acquainted with the tricker kinds of plugins to build. 
+* "Admin-side plugin tutorial":http://docs.textpattern.io/development/admin-side-plugin-tutorial -- A basic tutorial to get acquainted with the tricker kinds of plugins to build. 
 
 h2(#sec2). Disclaimer
 
