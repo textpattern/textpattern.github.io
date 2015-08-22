@@ -13,7 +13,7 @@ tags:
 
 h1. Plugin developer prefixes
 
-All plugin developers must have a prefix to name their plugins. A prefix is a three-character (alphanumeric) indication of who the plugin developer is, and precedes a plugin name with an underscore. For example, **wet_haystack** is one of several plugins by Robert Wetzlmayr. The prefix in this case is "**wet**", which precedes the specific plugin name ("**haystack**") with an underscore. All together it forms the unique and complete name of the plugin. An underscore is used for each additional word in a compound name. For example, **smd_user_manager**. Plugins names are entirely lowercase.
+All plugin developers must have a prefix to name their plugins. A prefix is a three-character (alphanumeric) indication of who the plugin developer is, and precedes a plugin name with an underscore. For example, **wet_haystack** is one of several plugins by Robert Wetzlmayr. The prefix in this case is "**wet**", which precedes the specific plugin name ("**haystack**") with an underscore. All together it forms the unique and complete name of the plugin. An underscore is used for each additional word in a compound name. For example, **smd_user_manager**. Plugin names are entirely lowercase.
 
 On this page:
 
@@ -25,7 +25,7 @@ h2(#sec1). Guidelines for choosing and using a prefix
 
 There are some courtesies to keep in mind when registering a plugin prefix:
 
-# You should have a "Textpattern Support Forum":http://forum.textpattern.com account, and you should provide your _username_ profile link when registering a prefix.
+# You must have a "Textpattern Support Forum":http://forum.textpattern.com account, and you should provide the link to your forum profile when registering a prefix.
 # You can only have **one** prefix.[1]
 # Your prefix should be *three* alphanumeric characters. No less and no more. (Ignore any you see that defy this convention.)
 # Register a prefix when you have a plugin ready for publication. Or to put it another way, don't register a prefix and sit on it indefinitely without ever creating a plugin. This is just squatting, and it's not fair to someone else who might like that prefix and have their first plugin ready. Unused prefixes go to the person who first has a plugin to share.
