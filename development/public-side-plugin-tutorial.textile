@@ -106,7 +106,7 @@ bc. <txp:abc_hello_world name="Fred">
    <p>Welcome normal user person</p>
 </txp:abc_hello_world>
 
-What we're doing here is checking if the tag's @name@ attribute is equal to "*Admin*". If it is, the conditional branch will execute. If not, the "else":/home/www/zendstudio/dokuwiki/bin/doku.php?id=else branch will run. 
+What we're doing here is checking if the tag's @name@ attribute is equal to "*Admin*". If it is, the conditional branch will execute. If not, the "else":http://docs.textpattern.io/tags/else branch will run. 
 
 The Textpattern function @EvalElse()@ does the magic for us by fetching and parsing the relevant part of @$thing@ (the container) depending on whether the value of @$result@ is true or false.
 
