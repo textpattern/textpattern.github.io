@@ -14,33 +14,40 @@ tags:
 
 h1. Admin-side plugin tutorial
 
-This tutorial walks you through the basics of creating and admin-side plugin. This tutorial assumes you have a working knowledge of PHP, a Textpattern website ready for use, and the ied_plugin_composer plugin installed.
+This tutorial walks you through the basics of creating and admin-side plugin, covering functions, callbacks, and the concept of _events_ and _steps_. This tutorial assumes you have a working knowledge of PHP, a Textpattern website ready for use, and the ied_plugin_composer plugin installed.
 
 On this page:
 
-* "Overview":#sec1
+* "Tutorial objective":#sec1
 * "Targeting the admin side":#sec2
-* "Adding events and steps":#sec3
-* "Respond to a plugin step":#sec4
+* "Creating an Extensions panel":#sec3
+* "Adding events and steps":#sec4
+* "Respond to a plugin step":#sec5
 
-h2. Overview
+h2(#sec1). Tutorial objective
 
-For this tutorial, this plugin will:
+For this tutorial, your plugin will:
 
-# Register its own tab (for "Publishers only":/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions)
-# Output some text on that tab
+# Register its own panel under **Extensions**
+# Output some text on that panel
 # Respond to a plugin step
 
-h2(#sec1). Targeting the admin side
+h2(#sec2). Targeting the admin side
 
-To begin, you need to target the admin-side. To do that, you have to check whether the current user is on the admin-side or not, as follows:
+Log into Textpattern and open the ied_plugin_composer plugin.
+
+To begin your admin plugin, you need to target the administrative side of Textpattern. You do that by checking whether the current user is on the admin-side or not, as follows:
 
 bc. if (@txpinterface == 'admin') {
 }
 
-So, create a new plugin in ied_plugin_composer called *abc_admin_hello_world* and put the above code in it. Make sure the plugin is set to type _Admin_.
+Put that code in your plugin, make sure the plugin is set to type _Admin_, and save.
 
-Nothing will happen yet, of course, so let's create our plugin's sub-panel under **Extensions**:
+Nothing will happen yet, of course, so let's create your plugin's panel under **Extensions**.[1]
+
+fn1. The term "panel" here is synonymous with the term "tab" (as you'll see used in code examples later with @register_tab()@), which is an older term for the admin-side navigation links and their associated views. "Tab" comes from the concept of folder tabs, which is what the admin-side was originally designed to look like -- a series of primary and secondary folders with "tab" links for navigating the admin-side. In documentation we now call these locations "panels" (moving away from the folder tabs concept), but there are still artifacts in the code. Just think of "panels" and "tabs" as the same thing.
+
+h2(#sec3). Creating an Extensions panel
 
 bc. if (@txpinterface == 'admin') {
    add_privs('abc_admin_hello_world', '1'); // Publishers only
@@ -49,19 +56,19 @@ bc. if (@txpinterface == 'admin') {
 
 The @add_privs()@ function is a necessary step to tell TXP who can see the new tab.
 
-If you visit the **Extensions** region, you'll see *My plugin*.[1] But if you click it nothing much will happen -- you'll probably get some un-styled default content on the screen. Time to give your plugin's new sub-panel some content.
+If you visit the **Extensions** region, you'll see your plugin panel link, *My plugin*.[2] But if you click it nothing much will happen, or you'll probably get some un-styled default content on the screen. Time to give your plugin's panel some content.
 
-fn1. The Textpattern presentational style guide [link needed here] defines using sentence-case for all user-interface titles, headings, and labels. In other words, "My plugin" is correct, but "My Plugin" (capital-case), would be incorrect. If you don't follow this guideline, your plugin will produce UI content that's inconsistent with the rest of the UI, and won't look very professional.
+fn2. The Textpattern presentational style guide [link needed here] defines using sentence-case for all user-interface titles, headings, and labels. In other words, "My plugin" is correct, but "My Plugin" (capital-case), would be incorrect. If you don't follow this guideline, your plugin will produce UI content that's inconsistent with the rest of the UI, and won't look very professional.
 
-h2(#sec3). Adding events and steps
+h2(#sec4). Adding events and steps
 
 You've created a new **Extensions** sub-panel for your plugin, but now you need to give the plugin a function to execute when that sub-panel is clicked. To understand what goes on here let's take some time out to reveal Textpattern _events_ and _steps_.
 
 For purposes here, think of an event as a panel option under the **Extensions** region in the Textpattern admin-side UI (i.e., a sub-panel). The plugin panel has a name that Tetxpattern knows. The panel also has built-in events such as 'file', 'image', 'admin' and so on. 
 
-In your case, we've told the system, using @register_tab()@, that your panel (your _event_) is known as *abc_admin_hello_world* (what users will see as **My plugin**).[2] So when you target a particular event inside some PHP in the plugin, you tell Textpattern to execute code when someone visits your panel.
+In your case, we've told the system, using @register_tab()@, that your panel (your _event_) is known as *abc_admin_hello_world* (what users will see as **My plugin**). So when you target a particular event inside some PHP in the plugin, you tell Textpattern to execute code when someone visits your panel.
 
-A _step_ is some action that a user takes when within a plugin panel; i.e., some action that takes place inside the event that we are interested in. More on steps later. For now you need to tell Textpattern what to do when your plugin's panel link is clicked. For this we use @register_callback()@:
+A _step_ is some action that a user takes when they're in a plugin panel; i.e., some action that takes place inside the event that we are interested in. More on steps later. For now you need to tell Textpattern what to do when your plugin's panel link is clicked. For this we use @register_callback()@:
 
 bc.. if (@txpinterface == 'admin') {
    add_privs('abc_admin_hello_world', '1'); // Publishers only
@@ -76,11 +83,9 @@ function abc_admin_hw_gui($event, $step) {
 
 p. Now you're getting somewhere! You've told Textpattern to call the @abc_admin_hw_gui()@ function when someone visits the abc_admin_hello_world sub-panel (what users will see labeled as "My plugin"). 
 
-The @pagetop()@ function is another Textpattern function that renders the primary regions (**Content**, **Presentation**, **Admin**, etc.) of the admin-side interface. The function's mandatory first argument is the name to display in the browser's @<title>@ tag. From there you can display anything you like; draw buttons, widgets, text, whatever. The trick then is to make it do something.
-	
-fn2. The term "panel" here is synonymous with the term "tab" (as you see used in @register_tab()@), which is an older term for the admin-side navigation links and their associated views. The term "tab" comes from the concept of folder tabs, which is what the admin-side was originally designed to look like -- a series of primary and secondary folders with "tab" links. In documentation we now call these locations "panels" (moving away from the folder tabs concept), but there are still artifacts in the code. Just think of "tabs" and "panels" as the same thing. 
+The @pagetop()@ function is another Textpattern function that renders the primary regions (**Content**, **Presentation**, **Admin**, etc.) of the admin-side interface. The function's mandatory first argument is the name to display in the browser's @<title>@ tag. From there you can display anything you like; draw buttons, widgets, text, whatever. The trick then is to make it do something. 
 
-h2(#sec4). Respond to a plugin step
+h2(#sec5). Respond to a plugin step
 
 In the code so far you have done one thing when you plugin's panel -- your event -- is executed. In reality you should take any number of actions as people interact with your panel. For example, maybe you want to allow users to save some settings (the *save* step), or *edit* something, or simply *list* some stuff.
 
