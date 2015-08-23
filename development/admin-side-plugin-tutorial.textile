@@ -14,7 +14,7 @@ tags:
 
 h1. Admin-side plugin tutorial
 
-This tutorial walks you through the basics of creating and admin-side plugin, covering functions, callbacks, and the concept of __events__ and __steps__. This tutorial assumes you have a working knowledge of PHP, a Textpattern website ready for use, and the ied_plugin_composer plugin installed.
+This tutorial walks you through the basics of creating and admin-side plugin; it covers functions, callbacks, and the concept of __events__ and __steps__. This tutorial assumes you have a working knowledge of PHP, a Textpattern website ready for use, and the ied_plugin_composer plugin installed.
 
 On this page:
 
