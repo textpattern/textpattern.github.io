@@ -122,7 +122,7 @@ bc. ~PLUGIN_RESERVED_FLAGS
 
 ). These might come in handy to trigger some one-time actions, as these bits are copied into the txp_plugin table row for any particular plugin whenever it is uploaded.
 
-h3(sectionedit4#altering_admin_side_markuppluggable_ui). Altering admin side markup: pluggable_ui()
+h2. Altering admin side markup: pluggable_ui()
 
 Introduced in Textpattern 4.2.0, the
 

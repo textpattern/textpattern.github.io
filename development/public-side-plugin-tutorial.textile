@@ -18,6 +18,13 @@ h1. Public-side plugin tutorial
 
 This tutorial will walk you through the basics of creating a simple public-side plugin; not to be used, exactly, but so you understand what's involved.
 
+On this page:
+
+* "Overview":#sec1
+* "Your first plugin and tag":#sec2
+* "Adding plugin attributes":#sec3
+* "Creating conditional output":#sec4
+
 h2. Overview
 
 This tutorial assumes you have a working knowledge of "PHP":http://php.net, a Textpattern website ready for use, and the "ied_plugin_composer":http://stefdawson.com/ied_plugin_composer plugin installed.
@@ -81,7 +88,7 @@ Change your tag to read @<txp:abc_hello_world name="Fred" />@ and notice the dif
 
 You can also use the @text@ attribute. If you do, notice the default value you set up is replaced with whatever is used in the plugin's tag.
 
-h2(#sec3). Conditional output
+h2(#sec3). Creating conditional output
 
 To finish off this little tutorial, we'll alter the plugin to work as a conditional tag and take action based on the name given.
 
