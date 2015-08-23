@@ -21,7 +21,7 @@ On this page:
 * "Overview":#sec1
 * "Targeting the admin side":#sec2
 * "Adding events and steps":#sec3
-* "":#sec4
+* "Respond to a plugin step":#sec4
 
 h2. Overview
 
