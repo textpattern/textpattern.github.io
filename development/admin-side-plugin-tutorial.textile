@@ -32,6 +32,8 @@ For this tutorial, your plugin will:
 # Output some text on that panel
 # Respond to a plugin step
 
+Since all plugins must use a "three-character alphanumeric prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes, we're going to use *abc* in this tutorial, which is reserved for documentation purposes.
+
 h2(#sec2). Targeting the admin side
 
 Log into Textpattern and open the ied_plugin_composer plugin.
