@@ -29,7 +29,7 @@ On this page:
 ** "[@register_callback()@]":#sec7-1
 ** "Public-side callback events":#sec7-2
 ** "Admin-side callback events":#sec7-3
-** "@pluggable_ui()@ callback events: Admin-side layout modifications":#sec7-4
+** "@pluggable_ui()@ callback events for admin-side layout modifications":#sec7-4
 ** "Complete core callback list":#sec7-5
 * "Admin-side events and steps":#sec8
 * "Plugin lifecycle management and preferences":#sec9
@@ -168,7 +168,7 @@ h3(#sec7-3). Admin-side callback events
 
 Callback events on the admin-side are easy to recognize in the address bar of your browser. If you click on any admin-side panel link, you'll see the url contains "_?event=panelname_", and if you click on any link in that panel, you'll see "_?event=panelname&step=anotherthing_". Those values correspond to the _events_ and _steps_ you can use for your plugins. In fact, they will call any user-defined function that is registered for said event/step, allowing you to add your own events and steps as you need them.
 
-h3(#sec7-4). @pluggable_ui()@ callback events: Admin-side layout modifications
+h3(#sec7-4). @pluggable_ui()@ callback events for admin-side layout modifications
 
 A special type of callback, @pluggable_ui()@, is used throughout the core to allow plugin developers to redesign or alter the layout of the administration side of Textpattern.[3]
 
