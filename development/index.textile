@@ -325,7 +325,7 @@ If you need a warm shoulder to lean on, subscribe to the "plugin development mai
 
 The Textpattern Support Forum, notably the "Plugin discussions":http://forum.textpattern.com/viewforum.php?id=13 area, is a good place to post questions too. 
 
-h2(sec14). External reading
+h2(#sec14). External reading
 
 These are external to official documentation. Their status and value is out of our hands, but you may find something useful there. Not a long list, in any case.
 
