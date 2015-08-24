@@ -1,27 +1,6 @@
----
-layout: document
-category: development
-published: true
-title: "Plugin development guidelines"
-tags:
-  - development 
-  - plugins
-  - guidelines
----
+\nA few guidelines, hints, and examples to help ensure you walk through the plugin development process with confidence.
 
-"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Plugin development guidelines**
-
-h1. Plugin development guidelines
-
-A few guidelines, hints, and examples to help ensure you walk through the plugin development process with confidence.
-
-On this page:
-
-* "Development rules":#sec1
-* "":#sec1
-* "":#sec1
-
-h2(#sec1). Rules of the road
+h2. Rules of the road
 
 These rules are meant to help ensure that you're producing plugins people will want to use. And that's the whole point, right?
 
@@ -60,7 +39,7 @@ Some helper functions can be found in the “lib” folder:
 
 h2(#sec2). Callbacks
 
-Textpattern makes extensive use of callbacks. Hook into these known points to choose where and when your plugins run. For more information, please see:
+Textpattern makes _extensive_ use of callbacks. Hook into these known points to choose where and when your plugins run. For more information, please see:
 
 * "using_callbacks_in_between_plugins_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=using_callbacks_in_between_plugins
 * The "core_callback_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=core_callback_list

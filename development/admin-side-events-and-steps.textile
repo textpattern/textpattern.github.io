@@ -18,7 +18,7 @@ h1. Admin-side events and steps
 
 These are the main events and steps that Textpattern uses as you interact with the admin-side interface. Although they are not direct "callbacks":http://docs.textpattern.io/development/core-callback-list, you may hook into these events and steps from a plugin to perform an action.
 
-As mentioned in the @register_callback()@ information on the main "Textpattern plugin development":http://docs.textpattern.io/development/ page, the full function definition looks like this:
+As mentioned in the "@register_callback()@ information":http://docs.textpattern.io/development/#sec7-1, the full function definition looks like this:
 
 bc. function register_callback($func, $event, $step='', $pre=0)
 

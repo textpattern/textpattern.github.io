@@ -16,67 +16,34 @@ This information is for those who are thinking about developing Textpattern plug
 
 On this page:
 
-* "What is a plugin?":#sec1
-** "Functional categories":#sec1-1
-** "Public-side plugins":#sec1-2 (with tutorial)
-** "Admin-side plugins":#sec1-3 (with tutorial)
-* "Disclaimer":#sec2
-* "Developer rules of the road":#sec3
-* "Register your plugin developer prefix":#sec4
+* "Disclaimer":#sec1
+* "Developer rules of the road":#sec2
+* "Register your plugin developer prefix":#sec3
+* "What is a plugin?":#sec4
+** "Functional categories":#sec4-1
+** "Public-side plugins":#sec4-2 (with tutorial)
+** "Admin-side plugins":#sec4-3 (with tutorial)
 * "Plugin anatomy":#sec5
-* "Development guidelines":#sec6
+* "How plugins are loaded":#sec6
 * "Callbacks":#sec7
-** "__register_callback()__":#sec7-1
+** "[@register_callback()@]":#sec7-1
 ** "Public-side callback events":#sec7-2
 ** "Admin-side callback events":#sec7-3
-** "Admin-side layout modifications with __pluggable_ui()__ callback events":#sec7-4
-* "Functions and variables":#sec8
-* "Tags, classes, and attributes":#sec9
-* "Implementation":#sec10
-* "Hosting and repos":#sec11
-* "Tools and aides":#sec12
+** "@pluggable_ui()@ callback events: Admin-side layout modifications":#sec7-4
+** "Complete core callback list":#sec7-5
+* "Admin-side events and steps":#sec8
+* "Plugin lifecycle management and preferences":#sec9
+* "Functions and variables":#sec10
+* "Tags, classes, and attributes":#sec11
+* "Implementation":#sec12
 * "Getting help":#sec13
-* "Further reading":#sec14
+* "External reading":#sec14
 
-h2(#sec1). What is a plugin?
+h2(#sec1). Disclaimer
 
-A "plugin" is a container for any kind of PHP code. The code can be a few lines of PHP, or _function_ and _class_ definitions.[1] Defining functions in the plugin is a common and easy way to start out, as they can be called from templates. But more advanced ways exist for plugins to influence Textpattern behaviour.
+Before you embark on this journey, understand that core developers put a lot of effort into maintaining backwards compatibility within the development branch of Textpattern itself, but that does not guarantee your plugins will continue to work as intended after new versions of Textpattern are released. Sometimes new development directions -- like what might come as we head to version 4.6 and later -- require making changes that affect backwards compatibility. As a plugin developer, it is your responsibility to ensure your plugins work against core code at point of every future Textpattern release.
 
-fn1. You can see the code for any installed plugin by clicking its name in the table on the **"Plugins":http://docs.textpattern.io/administration/admin/plugins-panel**, or by installing and using "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer.
-
-h3(#sec1-1). Functional categories
-
-Plugins can be categorised in three functional ways:
-
-* “on demand” -- providing tags for __pages__ and __forms__
-* “up front” -- intercepting page requests (either all or those having special characteristics)
-* “in between” -- using Textpattern hooks to automatically change or add behaviour.
-
-The most practical (and most popular) plugins fall into more than one category, because a plugin is really nothing more than a container for code. If it provides functionality in multiple ways, it's likely providing more benefit to the user.
-
-Plugins can also be public-side or admin-side.
-
-h3(#sec1-2). Public-side plugins
-
-Public-side (aka "client-side" or "front-side") plugins are those that enable content output on the front-side of a website, often through specialised tags, which a website designer can use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
-
-* "Public-side plugin tutorial":http://docs.textpattern.io/development/public-side-plugin-tutorial -- A basic tutorial to learn the ropes of the easiest kind of plugin to build.
-
-h3(#sec1-3). Admin-side plugins
-
-Admin-side plugins provide site administrators and designers the ability to alter the "admin-side":http://docs.textpattern.io/administration/ UI and/or functionality in some way. 
-
-Admin-side plugins often make use of the **"Extensions":http://docs.textpattern.io/administration/extensions/** region. In other words, if an admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the Extensions region.
-
-* "Admin-side plugin tutorial":http://docs.textpattern.io/development/admin-side-plugin-tutorial -- A basic tutorial to get acquainted with the tricker kinds of plugins to build. 
-
-h2(#sec2). Disclaimer
-
-Before you embark on this journey, understand that core developers put a lot of effort into maintaining backwards compatibility within the development branch of Textpattern itself, but that does not guarantee your plugins will continue to work as intended after new versions of Textpattern are released. Sometimes new development directions -- like what might come as we head to version 4.6 and later -- require making changes that affect backwards compatibility. As a plugin developer, it is your responsibility to ensure your plugins work against core code at point of every future Textpattern release. 
-
-Cool? Great! Let's build some plugins.
-
-h2(#sec3). Developer rules of the road
+h2(#sec2). Developer rules of the road
 
 More like three strong recommendations, meant to help ensure that you're producing plugins people will want to use. And that's the whole point, right?
 
@@ -92,7 +59,9 @@ Do it the “Textpattern's way” from the start by using "Textpattern functions
 
 Don't be one of those developers that assumes everyone knows what you know -- the opposite is true. People won't use your plugin, innovative or not, if you don't explain how. You can avoid fielding a lot of unnecessary questions in the support forum by producing good plugin user instructions to begin with. Use the "Plugin user help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines to ensure your plugin instructions are consistently structured and properly formatted.
 
-h2(#sec4). Register your plugin developer prefix
+Cool? Great! Let's build some plugins.
+
+h2(#sec3). Register your plugin developer prefix
 
 All hopeful plugin developers must have a "plugin developer prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes.
 
@@ -107,24 +76,64 @@ When developing your plugins, you will apply your prefix in the following places
 
 fn2. The exception to this is if an element of your markup is logically similar to an already existing core element and you wish it to be styled in the same way by themes. Doing this saves theme designers from having to write specific rules to target your plugin's markup.
 
+h2(#sec4). What is a plugin?
+
+A "plugin" is a container for any kind of PHP code. The code can be a few lines of PHP, or _function_ and _class_ definitions.[1] Defining functions in the plugin is a common and easy way to start out, as they can be called from templates. But more advanced ways exist for plugins to influence Textpattern behaviour.
+
+fn1. You can see the code for any installed plugin by clicking its name in the table on the **"Plugins":http://docs.textpattern.io/administration/admin/plugins-panel** panel, or by installing and using "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer.
+
+h3(#sec4-1). Functional categories
+
+Plugins can be categorised in three functional ways:
+
+* “on demand” -- providing tags for __pages__ and __forms__
+* “up front” -- intercepting page requests (either all or those having special characteristics)
+* “in between” -- using Textpattern hooks to automatically change or add behaviour.
+
+The most practical (and most popular) plugins fall into more than one category, because a plugin is really nothing more than a container for code. If it provides functionality in multiple ways, it's likely providing more benefit to the user.
+
+Plugins can also be public-side or admin-side, or be one of several types that correspond to all of the above (see section, __How plugins are loaded__, below.)
+
+h3(#sec4-2). Public-side plugins
+
+Public-side (aka "client-side" or "front-side") plugins are those that enable content output on the front-side of a website, often through specialised tags, which a website designer can use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
+
+* "Public-side plugin tutorial":http://docs.textpattern.io/development/public-side-plugin-tutorial -- A basic tutorial to learn the ropes of the easiest kind of plugin to build.
+
+h3(#sec4-3). Admin-side plugins
+
+Admin-side plugins provide site administrators and designers the ability to alter the "admin-side":http://docs.textpattern.io/administration/ UI and/or functionality in some way. 
+
+Admin-side plugins often make use of the **"Extensions":http://docs.textpattern.io/administration/extensions/** region. In other words, if an admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the Extensions region.
+
+* "Admin-side plugin tutorial":http://docs.textpattern.io/development/admin-side-plugin-tutorial -- A basic tutorial to get acquainted with the tricker kinds of plugins to build.
+
 h2(#sec5). Plugin anatomy 
 
 [todo:anyone]
 
-h2(#sec6). Development guidelines
+h2(#sec6). How plugins are loaded
 
-Before diving into code, get some perspective.
+Plugins are loaded very early during script execution. It happens in textpattern/publish.php (public-side) and in textpattern/index.php (admin-side). Look out for @load_plugins@ to see where it is happening.
 
-* "Plugin development guidelines":http://docs.textpattern.io/development/plugin-development-guidelines
+By setting the plugin-type in your plugin you can control how a plugin will be loaded:
 
-* "Plugin basics":http://docs.textpattern.io/development/plugin-basics
-* "How plugins are loaded":http://docs.textpattern.io/development/how-plugins-are-loaded
+* A “*public*” plugin (0) will only be loaded on the public side.
+* An “*admin + client*” plugin (1) will be loaded on both public _and_ the admin sides.
+* A “*library*” plugin (2) will not automatically load, rather it loads when included/required by other plugins.
+* An “*admin*” plugin (3) will only be loaded on the admin side and may _not_ make asynchronous calls.
+* An “*admin + AJAX*” plugin (4) will only be loaded on the admin side and may make asynchronous calls.
+* An “*admin + public + AJAX*” plugin (5) will be loaded on both the admin and public sides and may make asynchronous calls.
+
+The code of the plugin is then @eval()@ 'ed (or included) within that @load_plugins()@ function, _not_ in the global scope. This means if you need to use global variables, you have to explicitly set them to be global. Functions and classes are always in the “global scope”, so there is no problem with that.
+
+Understanding how plugins are loaded, also shows how you can write “on demand” and “up front” plugins, which were mentioned earlier. Defining a function will make it available as a tag in Textpattern __pages__ and __forms__. Whereas any code that is outside of any function/class definition will be executed right away. You can check for Request-Variables and initiate some action and @exit;@ the execution of the script (for example to serve images or other binary data from within a plugin).
 
 h2(#sec7). Callbacks
 
-Textpattern makes extensive use of "callbacks":http://docs.textpattern.io/development/core-callback-list. Hook into these known points to choose where and when your plugins run.
+Textpattern makes extensive use of "callbacks":http://docs.textpattern.io/development/core-callback-list (the complete list). Hook into these known points to choose where and when your plugins run.
 
-h3(#sec7-1). __register_callback()__
+h3(#sec7-1). @register_callback()@
 
 @register_callback()@ is at the core of using callbacks. The full function definition looks like this:
 
@@ -133,9 +142,11 @@ bc. function register_callback($func, $event, $step='', $pre=0)
 And the indicated names are:
 
 * @$func@ -- The name of the function you coded and want to add to a callback-event.
-* *$event -- The name of the (Textpattern-provided) event with which you want to associate your plugin.
-* $step -- (Optional). *Admin-side only**: @$events@ are (disjunctively) divided into steps. For admin-side plugins, you have the choice of narrowing your plugin to a specific step.
-* @$pre@ -- (Optional). *Admin-side only**: If this is set to @1@, @$func@ is called before any part of the page is rendered or executed. This allows you to "replace " existing panels on the admin-side. By default, however, @$func@ is called after the main part of the page is executed and rendered. Allowing your function to add things below it (or go for manipulating the DOM). 
+* @$event@ -- The name of the (Textpattern-provided) event with which you want to associate your plugin.
+* @$step=''@ -- (Optional). *Admin-side only**: @$events@ are (disjunctively) divided into steps. For admin-side plugins, you have the choice of narrowing your plugin to a specific step.
+* @$pre=0@ -- (Optional). *Admin-side only**: By default (@$pre=0@), @$func@ is called after the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. If you set this to "1" (@$pre=1@), then @$func@ is called before any part of the page is rendered or executed. This allows you to replace existing panels on the admin-side.
+
+Also see the "complete list of admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps. 
 
 h3(#sec7-2). Public-side callback events
 
@@ -146,26 +157,28 @@ These two are mainly for comments and spam-related plugins:
 * comment.save -- Gets called after the nonce check passed, but before a plugin is saved.
 * comment.form -- Gets called before a comment form is rendered and allows to add to it. 
 
-These two are useful if you want to introduce your own uri-schemas:
+These two are useful if you want to introduce your own URI schemas:
 
 * pretext -- Gets called at the beginning of @pretext()@.
 * textpattern -- Gets called at the beginning of @textpattern()@. 
 
-For example, say you decided to write an archive plugin and wanted to prevent the the url, __domain.tld/section/archive/__, from returning a 404.
+For example, imagine building an archive plugin that prevented the URL, __domain.tld/section/archive/__, from returning a 404.
 
 h3(#sec7-3). Admin-side callback events
 
 Callback events on the admin-side are easy to recognize in the address bar of your browser. If you click on any admin-side panel link, you'll see the url contains "_?event=panelname_", and if you click on any link in that panel, you'll see "_?event=panelname&step=anotherthing_". Those values correspond to the _events_ and _steps_ you can use for your plugins. In fact, they will call any user-defined function that is registered for said event/step, allowing you to add your own events and steps as you need them.
 
-h3(#sec7-3). Admin-side layout modifications with __pluggable_ui()__ callback events
+h3(#sec7-4). @pluggable_ui()@ callback events: Admin-side layout modifications
 
-A special type of callback, @pluggable_ui()@, is used throughout the core to allow plugin developers to redesign or alter the layout of the admin side.[3] 
+A special type of callback, @pluggable_ui()@, is used throughout the core to allow plugin developers to redesign or alter the layout of the administration side of Textpattern.[3]
 
-This callback's event usually ends in @_ui@ and begins with the event to which it refers. For example, on the **Write** panel the events are @article_ui@, and on the **Files** panel the events are @file_ui@.
+This callback's event usually ends in @_ui@ (for "user interface") and begins with the event to which it refers. For example, on the **Write** panel the event is @article_ui@, and on the **Files** panel the event is @file_ui@. Straightforward.
 
 The _step_ is usually the part of the page that contains the element you wish to change. On the **Write** panel, for example, the **Article image** control has a step called @article_image@ and the **Custom fields** area has one called @custom_fields@, and so on.
 
-When writing your own functions using the @pluggable_ui()@ callbacks, note they have a different function signature from regular callbacks. They usually have 4 parameters:
+**@pluggable_ui()@ parameters:**
+
+Note that @pluggable_ui()@ callbacks have a different function signature from regular callbacks, which you should be aware of when writing your own functions. They usually have 4 parameters:
 
 # event
 # step
@@ -174,54 +187,147 @@ When writing your own functions using the @pluggable_ui()@ callbacks, note they 
 
 Sometimes (e.g., when dealing with preference settings) the fourth argument becomes the preference name and a fifth argument holds its value.
 
-Consult the "Core callback list":http://docs.textpattern.io/development/core-callback-list for detailed information on all the callbacks available within Textpattern.
+Let's consider some examples of using @pluggable_ui()@ to alter the admin-side interface.
 
-fn3. *Attention!* Though it's possible to completely redesign the HTML markup within the page, it is advisable to refrain from this action. For example, by removing @<input id="article_image">@ from the **Write** panel, you may render Textpattern (and plugins that rely on the existence of such a DOM element) inoperable. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the originals to @display:none@ via CSS. 
+fn3. *Attention!* Though it's possible to completely redesign the HTML markup within the page, it is advisable to refrain from this action. For example, by removing @<input id="article_image">@ from the **Write** panel, you may render Textpattern (and plugins that rely on the existence of such a DOM element) inoperable. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the originals to @display:none@ via CSS.
 
-h2(#sec8). Functions and variables
+h4(#sec7-3-1). Adding your own admin-side panel elements
 
-Be aware of the *helper functions*. Helper functions can be found in the “lib” folder:
+When we talk about "elements" in these examples, we simply mean anything on a given admin panel that a user will see or interact with, such as a panel section or more of its contained form controls.
+
+There are two ways elements can be added to an admin-side panel: as new elements entirely, or to the existing markup.
+
+**Adding new elements:**
+
+@pluggable_ui()@ can be used to add something to the administrative interface like this:
+
+bc.. register_callback('abc_add_text', 'article_ui', 'extend_col_1');
+
+function abc_add_text($event, $step, '', $rs) {
+   return 'Hello world!';
+}
+
+p. That adds the text to the interface immediately below the **Textile help** link: that is where the @extend_col_1@ step puts its markup. Note there is no third argument this time because there is no default content to alter.
+
+**Adding new elements to existing panel markup:**
+
+Another way to add elements is to existing markup. For example, to add the url_title below the article's **Title** field, you could do this:
+
+bc.. register_callback('abc_append_item', 'article_ui', 'title');
+
+function abc_append_item($event, $step, $data, $rs) {
+   $urlttl = isset($rs['url_title']) ? '&lt;br/&gt;'.$rs['url_title'] : '';
+
+   return $data.$urlttl;
+}
+
+p. Notice we return the default markup, @$data@, and tack on our own markup which we read from the record set that was passed to our function.
+
+h4(#sec7-3-2). Removing admin-side panel elements
+
+Another example only, but let's say you wanted to remove the **Keywords** field from the **Write** panel. You could hook into the 'keywords' step of the **Write** panel by doing the following in a plugin:
+
+bc.. register_callback('abc_remove_keywords', 'article_ui', 'keywords');
+
+function abc_remove_keywords($event, $step, $data, $rs) {
+   return ' ';
+}
+
+p. That's it! If your function returns anything at all (note we return a space character here) then the default markup is dropped in favour of your own markup.
+
+In reality, you probably wouldn't want to do something this drastic unless you were sure there were no other plugins that targeted the **Keywords** field field -- these plugins would fail if they couldn't find the element you had destroyed. A safer alternative would be to hide the element via the CSS using @display:none@. If this is a problem for you and you feel you must delete the element, you could set your plugin to run at a lower priority (i.e., greater than "5") so the other plugin can render its own markup _before_ you remove the **Keywords** field.
+
+h4(#sec7-3-3). Changing admin-side panel elements
+
+The final mechanism for altering panel elements is good ol' fashioned search-and-replace, by looking in the default markup for particular items to change. This is the least robust mechanism but it can be very useful at times
+
+Consider this example, which adds a radio button to the existing button set under the **Status** section of the **Write** panel:
+
+bc.. register_callback('abc_altered_status', 'article_ui', 'status');
+
+function abc_altered_status($event, $step, $data, $rs) {
+
+   $stat = isset($rs['Status']) ? $rs['Status'] : '';
+
+   $new_status = n.t.'&lt;li&gt;'.radio('Status', 6, ($stat == 6) ? 1 : 0, 'status-6').'&lt;label for=&quot;status-6&quot;&gt;Velcro&lt;/label&gt;&lt;/li&gt;';
+
+   $data = str_replace('&lt;/ul&gt;', $new_status.'&lt;/ul&gt;', $data);
+
+   return $data;
+}
+
+h3(#sec7-5). Complete core callback list
+
+Again, see Textpattern's "complete list of core callbacks":http://docs.textpattern.io/development/core-callback-list for detailed information on all available callbacks.
+
+h2(#sect8). Admin-side events and steps
+
+In relation to callbacks, Textpattern also uses "events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps to interact with the admin-side. As you've seen from the earlier examples, you may hook into these events and steps from a plugin to perform an action.
+
+h2(#sec9). Plugin lifecycle management and preferences
+
+Plugins can opt into receiving @plugin_prefs.abc_my_plugin_name@ and @plugin_lifecycle.abc_my_plugin_name@ events. This opt-in is signaled to the core by raising the appropriate bits in @$plugin['flags']@.
+
+@PLUGIN_LIFECYCLE_NOTIFY@ and @PLUGIN_HAS_PREFS@ are human-readable defined bit masks for your coding pleasure. Use them in any appropriate combination (@PLUGIN_LIFECYCLE_NOTIFY | PLUGIN_HAS_PREFS@, etc).
+
+Once you have flagged your intention to use the events, you use the standard @register_callback()@ system to invoke your own code when the event fires:
+
+bc. register_callback('my_prefs_page', 'plugin_prefs.abc_my_plugin_name');
+
+Or:
+
+bc. register_callback('my_install_routine',
+   'plugin_lifecycle.abc_my_plugin_name', 'installed'); register_callback('my_delete_routine',
+   'plugin_lifecycle.abc_my_plugin_name', 'deleted');
+register_callback('my_enable_routine',
+   'plugin_lifecycle.abc_my_plugin_name', 'enabled');;
+register_callback('my_disable_routine', 
+   'plugin_lifecycle.abc_my_plugin_name', 'disabled');
+
+It is worth noting that Textpattern reserves the lower twelve bits of @$plugin['flags']@ for its own use, plugin authors may take advantage of the remaining four (@~PLUGIN_RESERVED_FLAGS@). These might come in handy to trigger some one-time actions, as these bits are copied into the __txp_plugin__ table row for any particular plugin whenever it is uploaded.
+
+h2(#sec10). Functions and variables
+
+Be aware of the *helper functions*. Helper functions can be found in the __/lib__ folder:
 
 * @txplib_db.php@ -- for interacting with the Textpattern database
 * @txplib_forms.php@ -- to help build various HTML form elements
 * txplib_html.php -- to help build various other HTML elements
 * @txplib_misc.php@ -- various “miscellaneous” functions.
 
-Other references for functions and variables:
+Other references for Textpattern functions and variables:
 
 * Core function reference
 * "Phpxref":http://phpxref.com/xref/textpattern/ -- A comprehensive cross-reference of Textpattern functions and variables.
 * "Accessing global variables":http://www.focusontheclouds.com/home/articles/72/accessing-global-variables-in-textpattern
 
-h2(#sec9). Tags, classes, and attributes
+h2(#sec11). Tags, classes, and attributes
 
 * "Generate a list of tags and attributes":http://forum.textpattern.com/viewtopic.php?id=12299
 * "Classes in plugins":http://forum.textpattern.com/viewtopic.php?id=26025
 
-h2(#sec10). Implementation
+h2(#sec12). Implementation
 
-* "Admin events and steps":http://docs.textpattern.io/development/admin-events-and-steps
-* "User role types and privileges":http://docs.textpattern.io/administration/admin/user-role-types-and-privileges
-* "Database schema reference":http://docs.textpattern.io/development/database-schema-reference
-* "Extensions":http://docs.textpattern.io/development/extensions -- The **Extensions** region of the administration UI for admin-side plugins.
+Now you know what plugins are and ready to kick plugin ass. You'll probably need some combination of these to see the job through:
 
-h2(#sec11). Hosting and repos
-
-* "Fetching the current development version":http://docs.textpattern.io/development/fetching-current-dev-version (Also addresses which branch or release to use and where to get old versions of Textpattern.)
-* "Code hosting":http://docs.textpattern.io/development/code_hosting
-
-h2(#sec12). Tools and aides
-
-* "Plugin template":http://docs.textpattern.io/development/plugin-template
-* "Commandline plugin decoder":http://forum.textpattern.com/viewtopic.php?id=4252
-* "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer -- This plugin allows you to create, code, and document plugins, then publish them in either conventional text format, compressed text format, or exported in the standard template format for sharing with developers or using in the plugin cache directory. This plugin also lets you directly edit plugins that are in the plugin cache directory.
-* "sed_plugin_help_viewer":http://textpattern.org/plugins/612/sed_plugin_help_viewer
+* "Plugin development template":http://docs.textpattern.io/development/plugin-development-template (Always use a template when one is available, and there is.)
+* "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer (Mentioned already, but worth saying again: This plugin allows you to create, code, and document plugins, then publish them in either conventional text format, compressed text format, or exported in the standard template format for sharing with developers or using in the plugin cache directory. This plugin also lets you directly edit plugins that are in the plugin cache directory.)
+* "Fetching development version of Textpattern":http://docs.textpattern.io/development/fetching-dev-version-of-txp (Also addresses which branch or release to use, and where to get old versions.)
+* "User role types and privileges":http://docs.textpattern.io/administration/admin/user-role-types-and-privileges (If your plugins will interact with user accounts, and it likely will.)
+* "Database schema reference":http://docs.textpattern.io/development/database-schema-reference (If your plugins will need a database table.)
+* "Extensions":http://docs.textpattern.io/administration/extensions/ (If your admin-side plugin will provide __Publisher__ controls in it's own panel under **Extensions**.)
+* "sed_plugin_help_viewer":http://textpattern.org/plugins/612/sed_plugin_help_viewer (Another plugin, but this one useful when you're coding is done; now it's time to write that tight and useful plugin help documentation mentioned under _Developer rules of the road_ earlier.)
+* "Commandline plugin decoder":http://forum.textpattern.com/viewtopic.php?id=4252 [???]
 
 h2(#sec13). Getting help
 
-If you need a warm shoulder to lean on, subscribe to the "plugin development mailing list":http://lists.textpattern.com/.
+If you need a warm shoulder to lean on, subscribe to the "plugin development mailing list":http://lists.textpattern.com/, which might be rather quiet unless you use it. 
 
-h2(sec14). Further reading
+The Textpattern Support Forum, notably the "Plugin discussions":http://forum.textpattern.com/viewforum.php?id=13 area, is a good place to post questions too. 
+
+h2(sec14). External reading
+
+These are external to official documentation. Their status and value is out of our hands, but you may find something useful there. Not a long list, in any case.
 
 * "How to build a Textpattern plugin":http://txptips.com/how-to-build-a-textpattern-plugin
 
