@@ -171,7 +171,7 @@ Clarifying notes about using the template:
 
 **Features list**. If your plugin isn't complex (doesn't have a lot of features), you may merge the "Features list" section into your summary by simply saying in the summary what your plugin will do, rather than making an unnecessary list.
 
-**Minimum requirements**. If your plugin has no minimum requirements, include this section anyway and simply say "None." This makes it clear rather than enigmatic.
+**Minimum requirements**. If your plugin has no minimum requirements or dependencies, include this section anyway and simply say "None." This makes it clear rather than enigmatic.
 
 **Installation/Uninstallation**. Only include these sections if they provide any instruction _different_ from standard installation procedure. If not, leave them out.
 
@@ -192,7 +192,7 @@ The template already includes the necessary "Textile":http://txstyle.org/. We as
 **Paragraph copy:**
 
 * @p.@ begins every new paragraph. (This is only required in plugin help, not  when using Textpattern itself.)
-* %(highlight)important statement here% is an inline @span@ having @class="highlight"@. Use this when you want to notate something important within a paragraph.
+* @%(highlight)important statement here%@ is an inline @span@ having @class="highlight"@. Use this when you want to notate something important within a paragraph.
 
 **Lists:**
 
