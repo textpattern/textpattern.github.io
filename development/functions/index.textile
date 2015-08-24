@@ -1,0 +1,20 @@
+---
+layout: document
+category: development
+published: true
+title: "Core functions reference"
+tags:
+  - development 
+  - plugins
+  - core functions
+  - reference
+  - php
+---
+
+"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ "Functions":http://docs.textpattern.io/development/functions/ ⨠ **Core functions reference**
+
+h1. Core functions reference
+
+A selective guide to Textpattern's built-in functions, emphasising functions of particular use to plugin developers.
+
+*Attention:* Status of this document and it's sub-documents is currently being decided. 

@@ -32,12 +32,11 @@ On this page:
 ** "@pluggable_ui()@ callback events for admin-side layout modifications":#sec7-4
 ** "Complete core callback list":#sec7-5
 * "Admin-side events and steps":#sec8
-* "Plugin lifecycle management and preferences":#sec9
-* "Functions and variables":#sec10
-* "Tags, classes, and attributes":#sec11
-* "Implementation":#sec12
-* "Getting help":#sec13
-* "External reading":#sec14
+* "Functions, variables, classes, and constants":#sec9
+* "Plugin lifecycle management and preferences":#sec10
+* "Implementation":#sec11
+* "Getting help":#sec12
+* "External reading":#sec13
 
 h2(#sec1). Disclaimer
 
@@ -53,7 +52,7 @@ Before you start developing, spend some time researching what plugins exist, wha
 
 **Do it the Textpattern way:** 
 
-Do it the “Textpattern's way” from the start by using "Textpattern functions":#sec7-2, whenever possible, which already work efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Additionally, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
+Do it the “Textpattern's way” from the start by using "Textpattern functions":#sec9, whenever possible, which already work efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Additionally, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
 
 **Write clear and concise plugin help:** 
 
@@ -264,7 +263,37 @@ h2(#sec8). Admin-side events and steps
 
 In relation to callbacks, Textpattern also uses "events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps to interact with the admin-side. As you've seen from the earlier examples, you may hook into these events and steps to perform an action.
 
-h2(#sec9). Plugin lifecycle management and preferences
+h2(#sec9). Functions, variables, classes, and constants
+
+References for each.
+
+**Functions:**
+
+* "Core functions reference":http://docs.textpattern.io/development/functions/ (Work in progress.)
+* "Functions list":http://phpcrossref.com/xref/textpattern/_functions/ (via PHP Cross Reference)
+
+Be aware of the _helper_ functions, which can be found in the __/lib__ folder:
+
+* @txplib_db.php@ -- for interacting with the Textpattern database
+* @txplib_forms.php@ -- to help build various HTML form elements
+* txplib_html.php -- to help build various other HTML elements
+* @txplib_misc.php@ -- various “miscellaneous” functions.
+
+**Variables:**
+
+* "Variable list":http://phpcrossref.com/xref/textpattern/_variables/ (via PHP Cross Reference)
+* "Accessing global variables":http://www.focusontheclouds.com/home/articles/72/accessing-global-variables-in-textpattern
+
+**Classes:**
+
+* "Classes list":http://phpcrossref.com/xref/textpattern/_classes/ (via PHP Cross Reference)
+* "Class in plugins example":http://forum.textpattern.com/viewtopic.php?id=26025
+
+**Constants:**
+
+* "Constants list":http://phpcrossref.com/xref/textpattern/_constants/ (via PHP Cross Reference)
+
+h2(#sec10). Plugin lifecycle management and preferences
 
 Plugins can opt into receiving @plugin_prefs.abc_my_plugin_name@ and @plugin_lifecycle.abc_my_plugin_name@ events. This opt-in is signaled to the core by raising the appropriate bits in @$plugin['flags']@.
 
@@ -284,29 +313,9 @@ register_callback('my_enable_routine',
 register_callback('my_disable_routine', 
    'plugin_lifecycle.abc_my_plugin_name', 'disabled');
 
-It is worth noting that Textpattern reserves the lower twelve bits of @$plugin['flags']@ for its own use, plugin authors may take advantage of the remaining four (@~PLUGIN_RESERVED_FLAGS@). These might come in handy to trigger some one-time actions, as these bits are copied into the __txp_plugin__ table row for any particular plugin whenever it is uploaded.
+It is worth noting that Textpattern reserves the lower twelve bits of @$plugin['flags']@ for its own use, plugin developers may take advantage of the remaining four (@~PLUGIN_RESERVED_FLAGS@). These might come in handy to trigger some one-time actions, as these bits are copied into the __txp_plugin__ table row for any particular plugin whenever it is uploaded.
 
-h2(#sec10). Functions and variables
-
-Be aware of the *helper functions*. Helper functions can be found in the __/lib__ folder:
-
-* @txplib_db.php@ -- for interacting with the Textpattern database
-* @txplib_forms.php@ -- to help build various HTML form elements
-* txplib_html.php -- to help build various other HTML elements
-* @txplib_misc.php@ -- various “miscellaneous” functions.
-
-Other references for Textpattern functions and variables:
-
-* Core function reference
-* "Phpxref":http://phpxref.com/xref/textpattern/ -- A comprehensive cross-reference of Textpattern functions and variables.
-* "Accessing global variables":http://www.focusontheclouds.com/home/articles/72/accessing-global-variables-in-textpattern
-
-h2(#sec11). Tags, classes, and attributes
-
-* "Generate a list of tags and attributes":http://forum.textpattern.com/viewtopic.php?id=12299
-* "Classes in plugins":http://forum.textpattern.com/viewtopic.php?id=26025
-
-h2(#sec12). Implementation
+h2(#sec11). Implementation
 
 Now you know what plugins are and ready to kick plugin ass. You'll probably need some combination of these to see the job through:
 
@@ -317,15 +326,16 @@ Now you know what plugins are and ready to kick plugin ass. You'll probably need
 * "Database schema reference":http://docs.textpattern.io/development/database-schema-reference (If your plugins will need a database table.)
 * "Extensions":http://docs.textpattern.io/administration/extensions/ (If your admin-side plugin will provide __Publisher__ controls in it's own panel under **Extensions**.)
 * "sed_plugin_help_viewer":http://textpattern.org/plugins/612/sed_plugin_help_viewer (Another plugin, but this one useful when you're coding is done; now it's time to write that tight and useful plugin help documentation mentioned under _Developer rules of the road_ earlier.)
+* "Generate a list of tags and attributes":http://forum.textpattern.com/viewtopic.php?id=12299 [???]
 * "Commandline plugin decoder":http://forum.textpattern.com/viewtopic.php?id=4252 [???]
 
-h2(#sec13). Getting help
+h2(#sec12). Getting help
 
 If you need a warm shoulder to lean on, subscribe to the "plugin development mailing list":http://lists.textpattern.com/, which might be rather quiet unless you use it. 
 
 The Textpattern Support Forum, notably the "Plugin discussions":http://forum.textpattern.com/viewforum.php?id=13 area, is a good place to post questions too. 
 
-h2(#sec14). External reading
+h2(#sec13). External reading
 
 These are external to official documentation. Their status and value is out of our hands, but you may find something useful there. Not a long list, in any case.
 
