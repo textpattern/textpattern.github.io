@@ -260,9 +260,9 @@ h3(#sec7-5). Complete core callback list
 
 Again, see Textpattern's "complete list of core callbacks":http://docs.textpattern.io/development/core-callback-list for detailed information on all available callbacks.
 
-h2(#sect8). Admin-side events and steps
+h2(#sec8). Admin-side events and steps
 
-In relation to callbacks, Textpattern also uses "events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps to interact with the admin-side. As you've seen from the earlier examples, you may hook into these events and steps from a plugin to perform an action.
+In relation to callbacks, Textpattern also uses "events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps to interact with the admin-side. As you've seen from the earlier examples, you may hook into these events and steps to perform an action.
 
 h2(#sec9). Plugin lifecycle management and preferences
 
