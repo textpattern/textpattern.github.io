@@ -29,7 +29,7 @@ h2(#sec1). Suggested sections
 
 This is the full set of sections for structuring your help file. You may not need all of these, but you should not need more than this. (Items in **bold** are what you must use no matter what.)
 
-# **Summary and version details**
+#(roman) **Summary and version details**
 # Table of contents (use if you have more than three sections, or your sections are long)
 # **List of features** (if you don't have many features, make this part of your summary)
 # **Minimum requirements** (even if no requirements, say that)
@@ -60,7 +60,7 @@ p. *Version:* current version number goes here.
 
 h2. Table of contents
 
-# "List of features":#sec01
+#(roman) "List of features":#sec01
 # "Minimum requirements":#sec02
 # "Installation":#sec03
 # "Uninstallation":#sec04
