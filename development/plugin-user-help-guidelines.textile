@@ -14,7 +14,9 @@ tags:
 
 h1. Plugin user-help guidelines
 
-Use this template and associated guidelines when writing your plugin's user instructions.[1] Doing so will make it easier for you, as well result in plugin help that's complete, consistent across plugins, and more usable (intuitive and easy to navigate).
+Use this template and its associated guidelines when writing your plugin's user instructions.[1] Doing so will make it easier for you, as well result in plugin help that's complete, consistent across other developer plugins (improved user experience), and more usable (intuitive and easy to navigate). 
+
+Equally important to help file structure is writing concisely (without sacrificing clarity). Complex plugins require larger help files due to more explanatory detail, which adds to the size of the plugin file overall. Large plugin files sometimes interfere with plugin installation by timing out before they fully load. So keep your copy clear and concise to help reduce total plugin file size. 
 
 fn1. Derived from "this forum discussion":http://forum.textpattern.com/viewtopic.php?id=25327.
 
