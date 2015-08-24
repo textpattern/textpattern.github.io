@@ -56,7 +56,7 @@ Do it the “Textpattern's way” from the start by using "Textpattern functions
 
 **Write clear and concise plugin help:** 
 
-Don't be one of those developers that assumes everyone knows what you know -- the opposite is true. People won't use your plugin, innovative or not, if you don't explain how. You can avoid fielding a lot of unnecessary questions in the support forum by producing good plugin user instructions to begin with. Use the "Plugin user help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines to ensure your plugin instructions are consistently structured and properly formatted.
+Don't be one of those developers that assumes everyone knows what you know -- the opposite is true. People won't use your plugin, innovative or not, if you don't explain how. You can avoid fielding a lot of unnecessary questions in the support forum by producing good plugin user instructions to begin with. Use the "plugin user-help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines to ensure your plugin instructions are consistently structured and properly formatted.
 
 Cool? Great! Let's build some plugins.
 
