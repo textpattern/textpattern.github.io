@@ -53,8 +53,8 @@ p. *Version:* current version number goes here.
 
 h2. Table of contents
 
-# &quot;List of features&quot;:#sec01
-# &quot;Minimum requirements&quot;:#sec02
+# "List of features":#sec01
+# "Minimum requirements":#sec02
 # &quot;Installation&quot;:#sec03
 # &quot;Uninstallation&quot;:#sec04
 # &quot;Tags&quot;:#sec05
