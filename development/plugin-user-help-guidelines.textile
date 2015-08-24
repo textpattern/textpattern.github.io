@@ -16,9 +16,14 @@ h1. Plugin user-help guidelines
 
 Use this template and associated guidelines when writing your plugin's user instructions.[1] Doing so will make it easier for you, as well result in plugin help that's complete, consistent across plugins, and more usable (intuitive and easy to navigate).
 
-*Do not use inline CSS styling* of your own. Allow the presentation provided in the admin-side theme to work on its own. All you need to do is use the indicated Textile as clarified.
+fn1. Derived from "this forum discussion":http://forum.textpattern.com/viewtopic.php?id=25327.
 
-fn1. These guidelines and template derived from "this forum discussion":http://forum.textpattern.com/viewtopic.php?id=25327.
+On this page:
+
+* "Suggested help sections":#sec1
+* "The template":#sec2
+* "Template guidelines":#sec3
+* "Textile formatting":#sec4
 
 h2(#sec1). Suggested sections
 
@@ -42,7 +47,9 @@ Obviously, if your plugin provides a tag or more, you will include sections 7 an
 
 h2(#sec2). The template
 
-The following code block is the plugin help template, which takes into account the entire suite of sections indicated above. Copy everything in the block, paste it into your editor, and remove the sections you don't need, if any. Don't get creative beyond that. All Textile formatting is provided already -- with the exception of some options made clear at bottom -- all you have to do is fill in your content in the right locations. A few clarifications about templet items are made at bottom of template.
+The following code block is the plugin help template, which takes into account the entire suite of sections indicated above. Copy everything in the block, paste it into your editor, and remove the sections you don't need, if any. Nothing else but text editing should be needed.[1]
+
+fn1. All Textile formatting is provided already. All you have to do is fill in your content in the right locations. *Do not* use inline CSS styling of your own in help information. Allow the presentation provided in the admin-side theme to work on its own. All you need to do is use the indicated Textile as clarified.
 
 <pre>
 h1. prefix_plugin_name
@@ -55,15 +62,15 @@ h2. Table of contents
 
 # "List of features":#sec01
 # "Minimum requirements":#sec02
-# &quot;Installation&quot;:#sec03
-# &quot;Uninstallation&quot;:#sec04
-# &quot;Tags&quot;:#sec05
-# &quot;Exposed functions&quot;:#sec06
-# &quot;Global variables&quot;:#sec07
-# &quot;Plugin events&quot;:#sec08
-# &quot;Examples&quot;:#sec09
-# &quot;License&quot;:#sec10
-# &quot;Author contact&quot;:#sec11
+# "Installation":#sec03
+# "Uninstallation":#sec04
+# "Plugin tags":#sec05
+# "Exposed functions":#sec06
+# "Global variables":#sec07
+# "Plugin events":#sec08
+# "Examples":#sec09
+# "License":#sec10
+# "Author contact":#sec11
 
 h2(#sec01). List of features
 
@@ -73,7 +80,7 @@ h2(#sec01). List of features
 
 h2(#sec02). Minimum requirements
 
-p. This plugin has the following minimum requirements:
+p. This plugin has the following minimum requirements (and/or dependencies):
 
 * Textpattern 4.x
 * Plugin dependency 1
@@ -81,13 +88,13 @@ p. This plugin has the following minimum requirements:
 
 h2(#sec03). Installation
 
-p. Any special installation instructions (when differs from standard installation procedure).
+p. Any special installation instructions.
 
 h2(#sec04). Uninstallation
 
-p. Any special uninstallation instructions (when differs from standard uninstallation procedure).
+p. Any special uninstallation instructions.
 
-h2(#sec05). Tags
+h2(#sec05). Plugin tags
 
 h3. prefix_tag_name1
 
@@ -149,25 +156,30 @@ bc. Example code
 
 h2(#sec10). Licence
 
-p. State any special licence information here.
+p. State any special license information here.
 
 h2(#sec11). Author contact
 
-p. Optional direct contact details for the plugin author.
+p. Developer contact details, or links to where one can get more help or make suggestions.
 </pre>
 
 h2(#sec3). Template guidelines
 
-A few clarifying notes about using the template:
+Clarifying notes about using the template:
 
 **Prefix**. In the first line, @h1. prefix_plugin_name@, "prefix" will be your "plugin developer prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes.
 
 **Features list**. If your plugin isn't complex (doesn't have a lot of features), you may merge the "Features list" section into your summary by simply saying in the summary what your plugin will do, rather than making an unnecessary list.
 
 **Minimum requirements**. If your plugin has no minimum requirements, include this section anyway and simply say "None." This makes it clear rather than enigmatic.
- 
 
-h2(#sec1). Textile formatting
+**Installation/Uninstallation**. Only include these sections if they provide any instruction _different_ from standard installation procedure. If not, leave them out.
+
+**Plugin tags**. The @h3.@ subsection headings for tags will be the plugin prefix and name without surrounding tag syntax (i.e., use *abc_tag_name*, not @<txp:abc_tag_name />@).
+
+**Examples**. Ensure your @h3.@ subsection headings for examples are clearly indicative of what the example is about, as much as possible. Your example intros will help make this clear, of course, but for scanning reasons, headings should be informative too.
+
+h2(#sec4). Textile formatting
 
 The template already includes the necessary "Textile":http://txstyle.org/. We assume you already know what Textile is if you're using Textpattern (if not, you should get on that), but following are the basic things to look for in the template. 
 
