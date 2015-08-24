@@ -223,17 +223,21 @@ Inline code is noted by surrounding the code with 'commercial ats'...
 Multi-line block code, if it has no blank lines, begins with @bc.@: 
 
 <pre>
-bc. code...
-code...
-code...
+bc. <code>
+$code
+code('with code') {
 no blank lines
+}
 </pre>
 
 Or with @bc..@ (note the double full-stops) if blank lines exist:
 
 <pre>
-bc.. code...
-code...
+bc.. $code
+code('with code') {
 
-code...
+	}
+
+# Yes, this...
+code_has('$some', '$bad', 'bugs=1)
 </pre>
