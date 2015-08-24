@@ -47,9 +47,9 @@ Obviously, if your plugin provides a tag or more, you will include sections 7 an
 
 h2(#sec2). The template
 
-The following code block is the plugin help template, which takes into account the entire suite of sections indicated above. Copy everything in the block, paste it into your editor, and remove the sections you don't need, if any. Nothing else but text editing should be needed.[1]
+The following code block is the plugin help template, which takes into account the entire suite of sections indicated above. Copy everything in the block, paste it into your editor, and remove the sections you don't need, if any. Nothing else but text editing should be needed.[2]
 
-fn1. All Textile formatting is provided already. All you have to do is fill in your content in the right locations. *Do not* use inline CSS styling of your own in help information. Allow the presentation provided in the admin-side theme to work on its own. All you need to do is use the indicated Textile as clarified.
+fn2. All Textile formatting is provided already. All you have to do is fill in your content in the right locations. *Do not* use inline CSS styling of your own in help information. Allow the presentation provided in the admin-side theme to work on its own. All you need to do is use the indicated Textile as clarified.
 
 <pre>
 h1. prefix_plugin_name
@@ -181,7 +181,7 @@ Clarifying notes about using the template:
 
 h2(#sec4). Textile formatting
 
-The template already includes the necessary "Textile":http://txstyle.org/. We assume you already know what Textile is if you're using Textpattern (if not, you should get on that), but following are the basic things to look for in the template. 
+The template already includes the necessary "Textile":http://txstyle.org/. We assume you know what Textile is if you're using Textpattern (if not, you should get on that), but following are the basic things to look for in the template. 
 
 **Headers h1-h3:**
 
