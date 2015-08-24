@@ -27,7 +27,7 @@ This is the full set of sections for structuring your help file. You may not nee
 # **Summary and version details**
 # Table of contents (use if you have more than three sections, or your sections are long)
 # **List of features** (if you don't have many features, make this part of your summary)
-# **Plugin requirements** (even if no requirements, say that)
+# **Minimum requirements** (even if no requirements, say that)
 # Installation (when differs from standard installation procedure)
 # Uninstallation (when differs from standard uninstallation procedure)
 # Tags (along with attribute descriptions and examples)
@@ -42,7 +42,7 @@ Obviously, if your plugin provides a tag or more, you will include sections 7 an
 
 h2(#sec2). The template
 
-The template takes into account the entire suite of sections indicated above. You remove the sections you don't need, but don't get creative beyond that. All Textile formatting is provided already -- with the exception of some options made clear at bottom -- all you have to do is fill in your content in the right locations.
+The following code block is the plugin help template, which takes into account the entire suite of sections indicated above. Copy everything in the block, paste it into your editor, and remove the sections you don't need, if any. Don't get creative beyond that. All Textile formatting is provided already -- with the exception of some options made clear at bottom -- all you have to do is fill in your content in the right locations. A few clarifications about templet items are made at bottom of template.
 
 <pre>
 h1. prefix_plugin_name
@@ -54,7 +54,7 @@ p. *Version:* current version number goes here.
 h2. Table of contents
 
 # &quot;List of features&quot;:#sec01
-# &quot;Plugin requirements&quot;:#sec02
+# &quot;Minimum requirements&quot;:#sec02
 # &quot;Installation&quot;:#sec03
 # &quot;Uninstallation&quot;:#sec04
 # &quot;Tags&quot;:#sec05
@@ -65,29 +65,29 @@ h2. Table of contents
 # &quot;License&quot;:#sec10
 # &quot;Author contact&quot;:#sec11
 
-h2(#help-section01). List of features
+h2(#sec01). List of features
 
 * Feature 1
 * Feature 2
 * Feature 3
 
-h2(#help-section02). Plugin requirements
+h2(#sec02). Minimum requirements
 
-p. my_plugin_nameâ€™s minimum requirements:
+p. This plugin has the following minimum requirements:
 
 * Textpattern 4.x
 * Plugin dependency 1
 * Plugin dependency 2
 
-h2(#help-section03). Installation
+h2(#sec03). Installation
 
 p. Any special installation instructions (when differs from standard installation procedure).
 
-h2(#help-section04). Uninstallation
+h2(#sec04). Uninstallation
 
 p. Any special uninstallation instructions (when differs from standard uninstallation procedure).
 
-h2(#help-section05). Tags
+h2(#sec05). Tags
 
 h3. prefix_tag_name1
 
@@ -109,7 +109,7 @@ Description of the attribute usage.
 p. %attribute_name% %value_type%
 Description of the attribute usage.
 
-h2(#help-section06). Exposed functions
+h2(#sec06). Exposed functions
 
 h3(tag). my_plugin_func
 
@@ -121,19 +121,19 @@ Description of the function return value.
 p. %arg_name% %arg_value_type%
 Argument description.
 
-h2(#help-section07). Global variables
+h2(#sec07). Global variables
 
 h3. $my_plugin_global
 
 p. This array is set during _blah_ and is false on failure.
 
-h2(#help-section08). Plugin events
+h2(#sec08). Plugin events
 
 h3. my_plugin.event
 
 p. This event is called when blah happens.
 
-h2(#help-section09). Examples
+h2(#sec09). Examples
 
 h3. Example 1
 
@@ -147,42 +147,81 @@ p. A large example that puts it all together or examples to go with each tag (in
 
 bc. Example code
 
-h2(#help-section10). Licence
+h2(#sec10). Licence
 
 p. State any special licence information here.
 
-h2(#help-section11). Author contact
+h2(#sec11). Author contact
 
 p. Optional direct contact details for the plugin author.
 </pre>
 
-h2(#sec1). Use Textile formatting
+h2(#sec3). Template guidelines
 
-Textile is intuitive and will help keep your copy markup clean and readable. (Help files do not support Markdown.)
+A few clarifying notes about using the template:
+
+**Prefix**. In the first line, @h1. prefix_plugin_name@, "prefix" will be your "plugin developer prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes.
+
+**Features list**. If your plugin isn't complex (doesn't have a lot of features), you may merge the "Features list" section into your summary by simply saying in the summary what your plugin will do, rather than making an unnecessary list.
+
+**Minimum requirements**. If your plugin has no minimum requirements, include this section anyway and simply say "None." This makes it clear rather than enigmatic.
+ 
+
+h2(#sec1). Textile formatting
+
+The template already includes the necessary "Textile":http://txstyle.org/. We assume you already know what Textile is if you're using Textpattern (if not, you should get on that), but following are the basic things to look for in the template. 
 
 **Headers h1-h3:**
 
-* "h1." for plugin title
-* "h2." for main section
-* "h3." for subsections
+* @h1.@ is for the help page title (the plugin's name).
+* @h2.@ is for main sections of the help page, and include ID's to enable the in-page Table of Contents lists (e.g., @h2(#sec1).@).
+* @h3.@ is for subsections, and these should not have ID's or classes.
 
 **Paragraph copy:**
 
-Write paragraphs without any need for paragraph-level formatting.
+* @p.@ begins every new paragraph. (This is only required in plugin help, not  when using Textpattern itself.)
+* %(highlight)important statement here% is an inline @span@ having @class="highlight"@. Use this when you want to notate something important within a paragraph.
 
-p. An %(highlight)important statement% within a paragraph
+**Lists:**
 
+Ordered...
+
+<pre>
 # A number list example
 # Item 2
 # Item 3
+</pre>
 
+Numbered...
+
+<pre>
 * A bullet list example
 * Item 2
 * Item 3
-
-An inline @code@ tag
-
-bc. A pre code box with pre formatted
-  code examples
 </pre>
 
+**Code:**
+
+Inline code is noted by surrounding the code with 'commercial ats'...
+
+<pre>
+@<txp:tag_name />@
+</pre>
+
+Multi-line block code, if it has no blank lines, begins with @bc.@: 
+
+<pre>
+bc. code...
+code...
+code...
+no blank lines
+</pre>
+
+Or with @bc..@ (note the double full-stops) if blank lines exist:
+
+<pre>
+bc.. code...
+code...
+
+code...
+</pre>
