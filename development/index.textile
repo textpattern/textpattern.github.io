@@ -64,14 +64,14 @@ h2(#sec3). Register your plugin developer prefix
 
 All hopeful plugin developers must have a "plugin developer prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes.
 
-When developing your plugins, you will apply your prefix in the following places:
+When developing your plugins, you will apply your prefix in:
 
-* In the names of PHP classes, functions, and global variables in the plugin's code.
-* In the database table and indices names.
-* In the names of stored preferences in the @_txp_prefs_@ table and/or the @$prefs array;@.
-* In any global JavaScript variables or function names you use for modifying the backend or adding features to the front-end.
-* In IDs and, to some extent, classes of HTML elements that you add to the backend interface.[2] 
-* In URL parameter names. Replace @?foo=bar&baz=1@ with @?abc_foo=bar&abc_baz=1@, where "@abc@" would be your own prefix.
+* The names of PHP classes, functions, and global variables in the plugin's code.
+* The database table and indices names.
+* The names of stored preferences in the @_txp_prefs_@ table and/or the @$prefs array;@.
+* Any global JavaScript variables or function names you use for modifying the backend or adding features to the front-end.
+* IDs and, to some extent, classes of HTML elements that you add to the backend interface.[2] 
+* URL parameter names. Replace @?foo=bar&baz=1@ with @?abc_foo=bar&abc_baz=1@, where "@abc@" would be your own prefix.
 
 fn2. The exception to this is if an element of your markup is logically similar to an already existing core element and you wish it to be styled in the same way by themes. Doing this saves theme designers from having to write specific rules to target your plugin's markup.
 
