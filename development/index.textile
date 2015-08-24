@@ -8,7 +8,7 @@ tags:
   - plugins
 ---
 
-"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Textpattern plugin development**
+"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Index**
 
 h1. Textpattern plugin development
 

@@ -1,46 +1,33 @@
-\nBelow is a template that all plugin developers should adhere to as closely as possible. Using a template makes writing the plugin help easier, more consistent and more complete, as well as easier for your users to understand and navigate.
+---
+layout: document
+category: development
+published: true
+title: "Plugin user-help guidelines"
+tags:
+  - development 
+  - plugins
+  - user help
+  - guidelines
+---
 
-*Do not use inline CSS styling* of your own - please make use of the existing CSS stylesheet that was provided by the admin theme instead.
+"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Plugin user-help guidelines**
 
-The following guidelines are taken from "this forum post":http://forum.textpattern.com/viewtopic.php?id=25327
+h1. Plugin user-help guidelines
 
-h3(sectionedit1#textile_tags). Textile tags
+Use this template and associated guidelines when writing your plugin's user instructions.[1] Doing so will make it easier for you, as well result in plugin help that's complete, consistent across plugins, and more usable (intuitive and easy to navigate).
 
-Use the following Textile tags when formatting help files:
+*Do not use inline CSS styling* of your own. Allow the presentation provided in the admin-side theme to work on its own. All you need to do is use the indicated Textile as clarified.
 
-<pre class="code">
-h1. Plugin title
+fn1. These guidelines and template derived from "this forum discussion":http://forum.textpattern.com/viewtopic.php?id=25327.
 
-h2. Section name
+h2(#sec1). Suggested sections
 
-h3. Subsection name
+This is the full set of sections for structuring your help file. You may not need all of these, but you should not need more than this. (Items in **bold** are what you must use no matter what.)
 
-p. Body text uses regular paragraph formatting
-
-p. An %(highlight)important statement% within a paragraph
-
-# A number list example
-# Item 2
-# Item 3
-
-* A bullet list example
-* Item 2
-* Item 3
-
-An inline @code@ tag
-
-bc. A pre code box with pre formatted
-  code examples
-</pre>
-
-h3(sectionedit2#suggested_sections). Suggested sections
-
-Here are the suggested sections for your help file - use as many as is necessary for your help file:
-
-# Summary and version details
-# Table of contents
-# List of features
-# Plugin requirements
+# **Summary and version details**
+# Table of contents (use if you have more than three sections, or your sections are long)
+# **List of features** (if you don't have many features, make this part of your summary)
+# **Plugin requirements** (even if no requirements, say that)
 # Installation (when differs from standard installation procedure)
 # Uninstallation (when differs from standard uninstallation procedure)
 # Tags (along with attribute descriptions and examples)
@@ -48,14 +35,16 @@ Here are the suggested sections for your help file - use as many as is necessary
 # Global variables
 # Plugin events
 # Examples
-# License
-# Author contact
+# **License**
+# **Author contact**
 
-h3(sectionedit3#template). Template
+Obviously, if your plugin provides a tag or more, you will include sections 7 and 11 in your help file (and perhaps 8–10), and thus a Table of Contents too.
 
-Here is an example template you can base your help document upon:
+h2(#sec2). The template
 
-<pre class="code">
+The template takes into account the entire suite of sections indicated above. You remove the sections you don't need, but don't get creative beyond that. All Textile formatting is provided already -- with the exception of some options made clear at bottom -- all you have to do is fill in your content in the right locations.
+
+<pre>
 h1. prefix_plugin_name
 
 p. A brief summary of what the plugin does.
@@ -64,17 +53,17 @@ p. *Version:* current version number goes here.
 
 h2. Table of contents
 
-# &quot;List of features&quot;:#help-section01
-# &quot;Plugin requirements&quot;:#help-section02
-# &quot;Installation&quot;:#help-section03
-# &quot;Uninstallation&quot;:#help-section04
-# &quot;Tags&quot;:#help-section05
-# &quot;Exposed functions&quot;:#help-section06
-# &quot;Global variables&quot;:#help-section07
-# &quot;Plugin events&quot;:#help-section08
-# &quot;Examples&quot;:#help-section09
-# &quot;License&quot;:#help-section10
-# &quot;Author contact&quot;:#help-section11
+# &quot;List of features&quot;:#sec01
+# &quot;Plugin requirements&quot;:#sec02
+# &quot;Installation&quot;:#sec03
+# &quot;Uninstallation&quot;:#sec04
+# &quot;Tags&quot;:#sec05
+# &quot;Exposed functions&quot;:#sec06
+# &quot;Global variables&quot;:#sec07
+# &quot;Plugin events&quot;:#sec08
+# &quot;Examples&quot;:#sec09
+# &quot;License&quot;:#sec10
+# &quot;Author contact&quot;:#sec11
 
 h2(#help-section01). List of features
 
@@ -165,5 +154,35 @@ p. State any special licence information here.
 h2(#help-section11). Author contact
 
 p. Optional direct contact details for the plugin author.
+</pre>
+
+h2(#sec1). Use Textile formatting
+
+Textile is intuitive and will help keep your copy markup clean and readable. (Help files do not support Markdown.)
+
+**Headers h1-h3:**
+
+* "h1." for plugin title
+* "h2." for main section
+* "h3." for subsections
+
+**Paragraph copy:**
+
+Write paragraphs without any need for paragraph-level formatting.
+
+p. An %(highlight)important statement% within a paragraph
+
+# A number list example
+# Item 2
+# Item 3
+
+* A bullet list example
+* Item 2
+* Item 3
+
+An inline @code@ tag
+
+bc. A pre code box with pre formatted
+  code examples
 </pre>
 
