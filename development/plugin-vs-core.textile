@@ -41,7 +41,7 @@ A “core” feature, is something that is available natively within Textpattern
 
 h3(#sec2-1). Core code advantages
 
-A core feature has some advantages over a plugin:
+Core features have some advantages over a plugin:
 
 **Code quality**. Not that plugins authors write bad code, but the general rating of Textpattern code is excellent, and most plugin users don't know enough PHP to rate the plugins they use. When a feature is core, you can be sure it won't break a shared hosting server, for example.
 
