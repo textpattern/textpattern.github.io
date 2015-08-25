@@ -13,7 +13,7 @@ tags:
 
 h1. Plugins versus core development
 
-A common discussion point raised in the Textpattern Support Forum -- again and again -- is whether or not the functionality of a given plugin should be integrated into the core code of Textpattern. One could certainly argue the merits of doing so, depending on the functionality in question, but the philosophy behind core development is to keep core code light, secure, and extendable; not bloated, slow, buggy, and complex. Developers have followed that philosophical standpoint for over ten years by not integrating every function or feature that someone says _should_ be in core.
+A common discussion point raised in the Textpattern Support Forum -- again and again -- is whether or not the functionality of a given plugin should be integrated into the core code of Textpattern. One could certainly argue the merits of doing so, depending on the functionality in question, but the philosophy behind core development is to keep core code light, secure, and extendable; not bloated, slow, buggy, and complex. Developers have followed that philosophical standpoint for over ten years by not integrating every function or feature that someone says _should_ be in core. We attempt to break that idea down here. Of all the plugin development documentation, this page is more about perspective than how-to.
 
 On this page:
 
@@ -32,7 +32,7 @@ When a new feature idea pops up, it usually does so in the "Feature ideas":http:
 
 Supported feature ideas usually result from proposals to improve what is already developed, like UI changes, the way a form works, or whatever, but straight up new feature ideas, or old feature ideas that are thrown at the wall again and again, rarely stick. 
 
-That's all manifestation of the core development philosophy, and it's not a bad thing. We attempt to break that idea down here. Of all the plugin development documentation, this page is more about perspective than how-to.
+That's all manifestation of the core development philosophy, and it's not a bad thing.
 
 h2(#sec2). Core code
 
