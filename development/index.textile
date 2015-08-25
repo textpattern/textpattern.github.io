@@ -18,17 +18,17 @@ On this page:
 
 * "Disclaimer":#sec1
 * "Developer rules of the road":#sec2
-* "Register your plugin developer prefix":#sec3
-* "What is a plugin?":#sec4
-** "Functional categories":#sec4-1
-** "Public-side plugins":#sec4-2 (with tutorial)
-** "Admin-side plugins":#sec4-3 (with tutorial)
+* "What is a plugin?":#sec3
+** "Functional categories":#sec3-1
+** "Public-side plugins":#sec3-2 (with tutorial)
+** "Admin-side plugins":#sec3-3 (with tutorial)
+* "Register your plugin developer prefix":#sec4
 * "How plugins are loaded":#sec5
 * "Callbacks":#sec6
 ** "[@register_callback()@]":#sec6-1
 ** "Public-side callback events":#sec6-2
 ** "Admin-side callback events":#sec6-3
-** "@pluggable_ui()@ callback events for admin-side layout modifications":#sec6-4
+** "@pluggable_ui()@ callback events":#sec6-4 (for admin-side layout modifications)
 ** "Complete core callback list":#sec6-5
 * "Admin-side events and steps":#sec7
 * "Functions, variables, classes, and constants":#sec8
@@ -49,9 +49,13 @@ More like three strong recommendations, meant to help ensure that you're produci
 
 Before you start developing, spend some time researching what plugins exist, what functionality, they provide, and how well they're working for people (often indicated by how popular they are). While it might be good exercise to reinvent the wheel, building a plugin that does what another plugin already does isn't going to be immediately useful unless it's _extremely_ innovative in some way. If you decide to throw caution to the wind and reinvent the wheel anyway (perhaps stepping on toes in the process), make sure you're ready to raise the bar. Somebody has to eventually.
 
+Here's the visible approach to plugin conception that can help you make a good choice... 
+
+When plugin ideas aren't conceived quietly in the minds of individuals and built to fruition without a lot of fanfare (usually because the developer needs the functionality regardless of whether the community does or not), they often begin as a core "feature idea":http://forum.textpattern.com/viewforum.php?id=2 ("a shunned one":http://docs.textpattern.io/development/plugin-vs-core), or "plugin discussion":http://forum.textpattern.com/viewforum.php?id=13. Bouncing plugin ideas off the community first is a good way to gauge whether a plugin idea has merit -- the more interest and constructive feedback you get, the more likely the plugin is worth building.
+
 **Do it the Textpattern way:** 
 
-Do it the “Textpattern's way” from the start by using "Textpattern functions":#sec9, whenever possible, which already work efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Additionally, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
+Do it the “Textpattern's way” from the start by using Textpattern functions (see section later on), whenever possible, which already work efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Additionally, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
 
 **Write clear and concise plugin help:** 
 
@@ -59,7 +63,41 @@ Don't be one of those developers that assumes everyone knows what you know -- th
 
 Cool? Great! Let's build some plugins.
 
-h2(#sec3). Register your plugin developer prefix
+h2(#sec3). What is a plugin?
+
+This documentation focuses on the technological aspects of plugins, but you should also understand the "philosophy of core development":http://docs.textpattern.io/development/plugin-vs-core, as it relates to why few of the functional capabilities provided by plugins are ever integrated into core code.
+
+A "plugin" is a container for any kind of PHP code. The code can be a few lines of PHP, or _function_ and _class_ definitions.[1] Defining functions in the plugin is a common and easy way to start out, as they can be called from templates. But more advanced ways exist for plugins to influence Textpattern behaviour.
+
+fn1. You can see the code for any installed plugin by clicking its name in the table on the **"Plugins":http://docs.textpattern.io/administration/admin/plugins-panel** panel, or by installing and using "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer.
+
+h3(#sec3-1). Functional categories
+
+Plugins can be categorised in three functional ways:
+
+* “on demand” -- providing tags for __pages__ and __forms__
+* “up front” -- intercepting page requests (either all or those having special characteristics)
+* “in between” -- using Textpattern hooks to automatically change or add behaviour.
+
+The most practical (and most popular) plugins fall into more than one category, because a plugin is really nothing more than a container for code. If it provides functionality in multiple ways, it's likely providing more benefit to the user.
+
+Plugins can also be public-side or admin-side, or be one of several types that correspond to all of the above (see section, __How plugins are loaded__, below.)
+
+h3(#sec3-2). Public-side plugins
+
+Public-side (aka "client-side" or "front-side") plugins are those that enable content output on the front-side of a website, often through specialised tags, which a website designer can use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
+
+* "Public-side plugin tutorial":http://docs.textpattern.io/development/public-side-plugin-tutorial -- A basic tutorial to learn the ropes of the easiest kind of plugin to build.
+
+h3(#sec3-3). Admin-side plugins
+
+Admin-side plugins provide site administrators and designers the ability to alter the "admin-side":http://docs.textpattern.io/administration/ UI and/or functionality in some way. 
+
+Admin-side plugins often make use of the **"Extensions":http://docs.textpattern.io/administration/extensions/** region. In other words, if an admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the Extensions region.
+
+* "Admin-side plugin tutorial":http://docs.textpattern.io/development/admin-side-plugin-tutorial -- A basic tutorial to get acquainted with the tricker kinds of plugins to build.
+
+h2(#sec4). Register your plugin developer prefix
 
 All hopeful plugin developers must have a "plugin developer prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes.
 
@@ -73,38 +111,6 @@ When developing your plugins, you will apply your prefix in:
 * URL parameter names. Replace @?foo=bar&baz=1@ with @?abc_foo=bar&abc_baz=1@, where "@abc@" would be your own prefix.
 
 fn2. The exception to this is if an element of your markup is logically similar to an already existing core element and you wish it to be styled in the same way by themes. Doing this saves theme designers from having to write specific rules to target your plugin's markup.
-
-h2(#sec4). What is a plugin?
-
-A "plugin" is a container for any kind of PHP code. The code can be a few lines of PHP, or _function_ and _class_ definitions.[1] Defining functions in the plugin is a common and easy way to start out, as they can be called from templates. But more advanced ways exist for plugins to influence Textpattern behaviour.
-
-fn1. You can see the code for any installed plugin by clicking its name in the table on the **"Plugins":http://docs.textpattern.io/administration/admin/plugins-panel** panel, or by installing and using "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer.
-
-h3(#sec4-1). Functional categories
-
-Plugins can be categorised in three functional ways:
-
-* “on demand” -- providing tags for __pages__ and __forms__
-* “up front” -- intercepting page requests (either all or those having special characteristics)
-* “in between” -- using Textpattern hooks to automatically change or add behaviour.
-
-The most practical (and most popular) plugins fall into more than one category, because a plugin is really nothing more than a container for code. If it provides functionality in multiple ways, it's likely providing more benefit to the user.
-
-Plugins can also be public-side or admin-side, or be one of several types that correspond to all of the above (see section, __How plugins are loaded__, below.)
-
-h3(#sec4-2). Public-side plugins
-
-Public-side (aka "client-side" or "front-side") plugins are those that enable content output on the front-side of a website, often through specialised tags, which a website designer can use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
-
-* "Public-side plugin tutorial":http://docs.textpattern.io/development/public-side-plugin-tutorial -- A basic tutorial to learn the ropes of the easiest kind of plugin to build.
-
-h3(#sec4-3). Admin-side plugins
-
-Admin-side plugins provide site administrators and designers the ability to alter the "admin-side":http://docs.textpattern.io/administration/ UI and/or functionality in some way. 
-
-Admin-side plugins often make use of the **"Extensions":http://docs.textpattern.io/administration/extensions/** region. In other words, if an admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the Extensions region.
-
-* "Admin-side plugin tutorial":http://docs.textpattern.io/development/admin-side-plugin-tutorial -- A basic tutorial to get acquainted with the tricker kinds of plugins to build.
 
 h2(#sec5). How plugins are loaded
 
@@ -162,7 +168,7 @@ h3(#sec6-3). Admin-side callback events
 
 Callback events on the admin-side are easy to recognize in the address bar of your browser. If you click on any admin-side panel link, you'll see the url contains "_?event=panelname_", and if you click on any link in that panel, you'll see "_?event=panelname&step=anotherthing_". Those values correspond to the _events_ and _steps_ you can use for your plugins. In fact, they will call any user-defined function that is registered for said event/step, allowing you to add your own events and steps as you need them.
 
-h3(#sec6-4). @pluggable_ui()@ callback events for admin-side layout modifications
+h3(#sec6-4). @pluggable_ui()@ callback events
 
 A special type of callback, @pluggable_ui()@, is used throughout the core to allow plugin developers to redesign or alter the layout of the administration side of Textpattern.[3]
 
