@@ -32,7 +32,7 @@ When a new feature idea pops up, it usually does so in the "Feature ideas":http:
 
 Supported feature ideas usually result from proposals to improve what is already developed, like UI changes, the way a form works, or whatever, but straight up new feature ideas, or old feature ideas that are thrown at the wall again and again, rarely stick. 
 
-That's all manifestation of the core development philosophy, and it's not a bad thing.
+That's all manifestation of the core development philosophy, and it's not a bad thing. We attempt to break that idea down here. Of all the plugin development documentation, this page is more about perspective than how-to.
 
 h2(#sec2). Core code
 
