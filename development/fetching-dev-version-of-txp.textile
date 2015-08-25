@@ -12,7 +12,7 @@ tags:
   - repository
 ---
 
-"Main ToC":http://docs.textpattern.io ⨠ Development ⨠ **Fetching development version of Textpattern*
+"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development ⨠ **Fetching development version of Textpattern*
 
 h1. Fetching development version of Textpattern
 
