@@ -41,8 +41,6 @@ Default: @25@.
 * @msgrows="integer"@
 HTML @rows@ attribute to be applied to HTML form @textarea@ field.
 Default: @5@.
-* @msgstyle="value"@
-CSS inline @style@ attribute to be applied to HTML form @textarea@ field (recommended that you use CSS via @textarea@'s @class@ or @id@ attribute instead).
 * @previewlabel="text"@
 Label that appears on the 'Preview' button.
 Default: @Preview@ (localised).
@@ -112,6 +110,10 @@ For the current article, returns a list of id numbers for comments and a comment
 Other tags used: "comment_id":comment-id, "comments":comments, "if_comments_allowed":if-comments-allowed.
 
 h2(#sec4). Genealogy
+
+h3. Version 4.6.0
+
+@msgstyle@ attribute deprecated.
 
 h3. Version 4.5.0
 
