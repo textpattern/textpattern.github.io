@@ -2,7 +2,7 @@
 layout: document
 category: development
 published: true
-title: "Fetching the latest development version of Textpattern"
+title: "Fetching development version of Textpattern"
 tags:
   - development 
   - plugins
@@ -12,9 +12,9 @@ tags:
   - repository
 ---
 
-"Main ToC":http://docs.textpattern.io ⨠ Development ⨠ **Fetching the latest development version of Textpattern*
+"Main ToC":http://docs.textpattern.io ⨠ Development ⨠ **Fetching development version of Textpattern*
 
-h1. Fetching the latest development version of Textpattern
+h1. Fetching development version of Textpattern
 
 The "Textpattern source code":https://github.com/textpattern/textpattern is stored in a git repository at Github. The important endpoints are:
 
