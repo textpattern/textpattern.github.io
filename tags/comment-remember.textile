@@ -14,6 +14,7 @@ On this page:
 * "Syntax":#sec1
 * "Attributes":#sec2
 * "Examples":#sec3
+* "Genealogy":#sec4
 
 h2(#sec1). Syntax
 
@@ -23,7 +24,14 @@ The *comment_remember* tag is a _single_ tag which is used to display a check bo
 
 h2(#sec2). Attributes
 
-This tag has no attributes.
+Tag will accept the following attributes (*case-sensitive*):
+
+* @forgetlabel="text"@
+Label that appears next to the 'Forget' @checkbox@.
+Default: @Forget@ (localised).
+* @rememberlabel="text"@
+Label that appears next to the 'Remember' @checkbox@.
+Default: @Remember@ (localised).
 
 h2(#sec3). Examples
 
@@ -55,3 +63,9 @@ bc. <p>
 </p>
 
 Other tags used: "comment_email_input":comment-email-input, "comments_help":comments-help, "comment_message_input":comment-message-input, "comment_name_input":comment-name-input, "comment_preview":comment-preview, "comment_submit":comment-submit, "comment_web_input":comment-web-input.
+
+h2(#sec4). Genealogy
+
+h3. Version 4.6.0
+
+@forgetlabel@ and @rememberlabel@ attributes added (replaces functionality of deprecated @forgetlabel@ and @rememberlabel@ attributes in "comments_form":comments-form tag).

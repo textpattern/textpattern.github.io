@@ -26,30 +26,9 @@ h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-* @forgetlabel="text"@
-Label that appears next to the 'Forget' @checkbox@.
-Default: @Forget@ (localised).
 * @form="form name"@
 Use specified form template.
 Default: @comment_form@.
-* @isize="integer"@
-HTML @size@ attribute to be applied to the HTML form text @input@ fields.
-Default: @25&@.
-* @msgcols="integer"@
-HTML @cols@ attribute to be applied to HTML form @textarea@ field.
-Default: @25@.
-* @msgrows="integer"@
-HTML @rows@ attribute to be applied to HTML form @textarea@ field.
-Default: @5@.
-* @previewlabel="text"@
-Label that appears on the 'Preview' button.
-Default: @Preview@ (localised).
-* @rememberlabel="text"@
-Label that appears next to the 'Remember' @checkbox@.
-Default: @Remember@ (localised).
-* @submitlabel="text"@
-Label that appears on the 'Submit' button.
-Default: @Submit@ (localised).
 
 h3. Common presentational attributes
 
@@ -76,25 +55,7 @@ bc. <txp:if_comments_allowed>
 
 Other tags used: "if_comments_allowed":if-comments-allowed, "else":.
 
-h3. Example 2: Text area changes in preview
-
-Using some conditional tags, the size of the comment form @textarea@ can be changed in the preview.
-
-bc. <txp:if_comments_preview>
-    <txp:comments_preview form="comment" />
-    <p>This is just a preview of your comment!</p>
-    <txp:comments_form isize="30" msgcols="55" msgrows="5" />
-<txp:else />
-    <txp:if_comments_allowed>
-        <txp:comments_form isize="30" msgcols="55" msgrows="15" />
-    </txp:else />
-        <p>Comments are turned off for this article.</p>
-    </txp:if_comments_allowed>
-</txp:if_comments_preview>
-
-Other tags used: "comments_preview":comments-preview, "if_comments_allowed":if-comments-allowed, "if_comments_preview":if-comments-preview, "else":else.
-
-h3. Example 3: Display conditional comments and form
+h3. Example 2: Display conditional comments and form
 
 bc. <txp:if_comments_allowed>
     <txp:comments form="lineitem" break="li" wraptag="ul" />
@@ -114,6 +75,7 @@ h2(#sec4). Genealogy
 h3. Version 4.6.0
 
 @msgstyle@ attribute deprecated.
+@forgetlabel@, @isize@, @msgcols@, @msgrows@, @msgstyle@, @previewlabel@, @rememberlabel@ and @submitlabel@ attributes deprecated and functionality moved to individual @comment_*@ input tags.
 
 h3. Version 4.5.0
 

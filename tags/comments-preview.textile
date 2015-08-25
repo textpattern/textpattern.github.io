@@ -29,6 +29,9 @@ Tag will accept the following attributes (*case-sensitive*):
 * @form="form name"@
 Use specified form template to process each comment.
 Default: @comments@.
+* @label="text"@
+Label that appears on the 'Preview' button.
+Default: @Preview@ (localised).
 
 h3. Common presentational attributes
 
@@ -42,6 +45,12 @@ HTML tag to wrap around the list, specified without brackets (e.g., @wraptag="di
 Default: depends upon 'Present Comments as a Numbered List?' preference setting - either @ol@ or unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec4). Genealogy
+
+h2(#sec4). Genealogy
+
+h3. Version 4.6.0
+
+@label@ attribute added (replaces functionality of deprecated @previewlabel@ attribute in "comments_form":comments-form tag).
 
 h3. Version 4.0.4
 

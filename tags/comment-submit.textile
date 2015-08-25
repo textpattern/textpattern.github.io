@@ -14,6 +14,7 @@ On this page:
 * "Syntax":#sec1
 * "Attributes":#sec2
 * "Examples":#sec3
+* "Genealogy":#sec4
 
 h2(#sec1). Syntax
 
@@ -23,7 +24,11 @@ The *comment_submit* tag is a _single_ tag which is used to display a 'Submit' b
 
 h2(#sec2). Attributes
 
-This tag has no attributes.
+Tag will accept the following attributes (*case-sensitive*):
+
+* @label="text"@
+Label that appears on the 'Submit' button.
+Default: @Submit@ (localised).
 
 h2(#sec3). Examples
 
@@ -55,3 +60,9 @@ bc. <p>
 </p>
 
 Other tags used: "comment_email_input":comment-email-input, "comments_help":comments-help, "comment_message_input":comment-message-input, "comment_name_input":comment-name-input, "comment_preview":comment-preview, "comment_remember":comment-remember, "comment_web_input":comment-web-input.
+
+h2(#sec4). Genealogy
+
+h3. Version 4.6.0
+
+@label@ attribute added (replaces functionality of deprecated @submitlabel@ attribute in "comments_form":comments-form tag).
