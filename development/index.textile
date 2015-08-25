@@ -270,7 +270,6 @@ References for each.
 
 **Functions:**
 
-* "Core functions reference":http://docs.textpattern.io/development/functions/ (Work in progress.)
 * "Functions list":http://phpcrossref.com/xref/textpattern/_functions/ (via PHP Cross Reference)
 
 Be aware of the _helper_ functions, which can be found in the __/lib__ folder:
