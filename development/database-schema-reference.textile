@@ -1,42 +1,53 @@
-\nTextpattern stores all data in a MySQL database. Within that database, there are several tables, each containing a different collection of information.
+---
+layout: document
+category: development
+published: true
+title: "Database schema reference"
+tags:
+  - development 
+  - plugins
+  - database
+  - schema
+---
 
-This page shows for each table what type of information it contains, followed by a list of columns for that table and the intended usage (description) of those columns. Since the columns can be used to influence sorting in various list tags, non-developers may find their descriptions useful as well.
+"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Database schema reference**
 
-*Note:* The size limits shown here for the various table columns may differ slightly from the actual size limits found in the tables created by Textpattern (when a column is used in multiple tables, the smallest size is used). You should consider the limits shown here as authoritative. When in doubt, ask a developer on the forum.
+h1. Database schema reference
 
-This reference applies to Textpattern version 4.4.1. Older versions may have different table layouts.
+Textpattern stores all data in a MySQL database. Within that database, there are 17 tables, each containing a different collection of information.[1] Here we describe each table and the information it contains, effective version 4.4.1 and later. (Since the columns can be used to influence sorting in various list tags, non-developers may find their descriptions useful too.)
 
-= textpattern =
+fn1. The size limits shown here for various table columns may differ slightly from the actual size limits found in the tables created by Textpattern (when a column is used in multiple tables, the smallest size is used). You should consider the limits shown here as authoritative. When in doubt, ask a developer on the forum.
 
-The 'textpattern' table contains the articles you create on the write tab.
+On this page:
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">ID
-integer
-Unique, auto incremented numerical ID of the article</td>
-<td align="left">Posted
-datetime
-Publication date and time</td>
-<td align="left">Expires
-datetime
-Expiration date and time (defaults to 0000-00-00 00:00:00, which indicates that the article never expires)</td>
-</tr>
-</tbody>
-</table>
+* "textpattern":#sec1
+* "txp_category":#sec2
+* "txp_css":#sec3
+* "txp_discuss":#sec4
+* "txp_discuss_ipban":#sec5
+* "txp_discuss_nonce":#sec6
+* "txp_file":#sec7
+* "txp_form":#sec8
+* "txp_image":#sec9
+* "txp_lang":#sec10
+* "txp_link":#sec11
+* "txp_log":#sec12
+* "txp_page":#sec13
+* "txp_plugin":#sec14
+* "txp_prefs":#sec15
+* "txp_section":#sec16
+* "txp_users":#sec17
 
-= txp_category =
+h2(#sec1). textpattern
+
+The 'textpattern' table contains the articles you create on the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel.
+
+|_. Column |_. Type |_. Description |
+| ID | integer | Unique, auto incremented numerical ID of the article |
+| Posted | datetime | Publication date and time |
+| Expires | datetime | Expiration date and time (defaults to 0000-00-00 00:00:00, which indicates the article never expires) |
+
+h2(#sec2). txp_category
 
 The 'txp_category' table contains all the categories you create on the category tab.
 
@@ -66,7 +77,7 @@ Category title</td>
 </tbody>
 </table>
 
-= txp_css =
+h2(#sec3). txp_css
 
 The 'txp_css' table contains the style sheets created on the Style tab.
 
@@ -93,7 +104,7 @@ Style sheet contents, base64 encoded for historical reasons (max 64kB)</td>
 </tbody>
 </table>
 
-= txp_discuss =
+h2(#sec4). txp_discuss
 
 The 'txp_discuss' table contains all the comments for all the articles.
 
@@ -123,7 +134,7 @@ Name of the person who commented</td>
 </tbody>
 </table>
 
-= txp_discuss_ipban =
+h2(#sec5). txp_discuss_ipban
 
 The 'txp_discuss_ipban' table contains a list of all IP-numbers that have been banned from commenting by the person that moderates the comments.
 
@@ -153,7 +164,7 @@ Date when the ban was imposed</td>
 </tbody>
 </table>
 
-= txp_discuss_nonce =
+h2(#sec6). txp_discuss_nonce
 
 The 'txp_discuss_nonce' table is an important part of the spam protection in the commenting system. When the comment form is shown to the user, it contains a hidden variable (nonce) with a unique code. This code is valid for 10 minutes. If the comment form is submitted, the nonce is looked up in this table and must exist unused with a valid timestamp for the comment to be accepted.
 
@@ -183,7 +194,7 @@ Has the nonce been used for submitting a comment (0 = no, 1 = yes). A nonce cann
 </tbody>
 </table>
 
-= txp_file =
+h2(#sec7). txp_file
 
 The 'txp_file' table contains information on all the files uploaded through textpattern. The files themselves are stored as normal files on disk instead of in the database.
 
@@ -213,7 +224,7 @@ Title given to this file for display purposes</td>
 </tbody>
 </table>
 
-= txp_form =
+h2(#sec8). txp_form
 
 The 'txp_form' table contains all the forms, which are created on the Forms tab.
 
@@ -243,7 +254,7 @@ Contents of the form: HTML / Textpattern tags (max 64kB)</td>
 </tbody>
 </table>
 
-= txp_image =
+h2(#sec9). txp_image
 
 The 'txp_image' table contains information on all the images that are uploaded and managed through Textpattern. The images themselves are not stored on in the database. They are stored as normal files using the image ID as the filename (i.e. 1.png for the main image or 1t.png for the corresponding thumbnail).
 
@@ -273,7 +284,7 @@ Name of the category associated with this image</td>
 </tbody>
 </table>
 
-= txp_lang =
+h2(#sec10). txp_lang
 
 The 'txp_lang' table contains translations for the various built-in strings of text used both on the public and admin side of Textpattern.
 
@@ -303,7 +314,7 @@ Unique name which identifies the language string</td>
 </tbody>
 </table>
 
-= txp_link =
+h2(#sec11). txp_link
 
 The 'txp_link' table contains all the links and related information as created on the Links tab.
 
@@ -333,7 +344,7 @@ Name of the category associated with this link</td>
 </tbody>
 </table>
 
-= txp_log =
+h2(#sec12). txp_log
 
 The 'txp_log' table contains log entries of page requests (visits) to your website. Depending on your preferences, nothing is logged, just referers or all requests. Old log entries are removed automatically.
 
@@ -363,7 +374,7 @@ hostname of the computer that requested the page. If DNS lookups are disabled in
 </tbody>
 </table>
 
-= txp_page =
+h2(#sec13). txp_page
 
 The 'txp_page' table contains all the page templates you create on the Page tab.
 
@@ -390,7 +401,7 @@ Template contents: HTML / Textpattern tags (max 64kB)</td>
 </tbody>
 </table>
 
-= txp_plugin =
+h2(#sec14). txp_plugin
 
 The 'txp_plugin' table contains all the plugins you have installed.
 
@@ -420,7 +431,7 @@ Plugin author name</td>
 </tbody>
 </table>
 
-= txp_prefs =
+h2(#sec15). txp_prefs
 
 The 'txp_prefs' table contains all the preferences (basic, advanced and hidden).
 
@@ -450,7 +461,7 @@ Contents/setting of this preference (max 64kB)</td>
 </tbody>
 </table>
 
-= txp_section =
+h2(#sec16). txp_section
 
 The 'txp_section' table contains all the sections you create on the Sections tab.
 
@@ -480,7 +491,7 @@ Style sheet used for this section</td>
 </tbody>
 </table>
 
-= txp_users =
+h2(#sec17). txp_users
 
 The 'txp_users' table contains information on all the users that can log into Textpattern on the admin side.
 
