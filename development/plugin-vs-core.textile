@@ -59,7 +59,7 @@ New core features can't and shouldn't be added (and aren't) without thinking it 
 
 **Confusing UI/UX**. An increasing number of features, and their associated UI distractions, will confuse new Textpattern users because they won't know where to start, or won't understand how to achieve a particular objective when there are many options to use. 
 
-**Wrongly assumptive**. Software can't read the minds of end users any more than developers who create the software can, so neither should make assumptions about what end users want any more than other end users should decide for each other.[2] Users of software are often annoyed by excessive features they don't need but have to turn off or hide every time, often through cumbersome hacks to the core code. Ideal software is clean, secure, and conservative -- allowing users to add features as they want them, not having to remove, hide, turn off, or opt out of them.[3]
+**Wrongly assumptive**. Software can't read the minds of end users any more than developers who create the software can, so neither should make assumptions about what end users want any more than other end users should decide for each other.[2] Users of software are often annoyed by excessive features they don't need but have to turn off or hide every time, often through cumbersome hacks to the core code that have to be repeated or conserved and repeated every time the system is updated. Ideal software is minimal, clean, and secure -- allowing users to add features as they want them, not make them remove, hide, turn off, or opt out of them.[3]
 
 **Development progress**. An increasing number of features means an increasing amount of code to debug and check for compatibility.
 
