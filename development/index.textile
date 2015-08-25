@@ -320,7 +320,7 @@ h2(#sec10). Implementation
 
 Now you know what plugins are, and you're ready to kick plugin ass. You'll probably need some combination of these to see the job through:
 
-* "Plugin development template":http://docs.textpattern.io/development/plugin-development-template (Always use a template when one is available, and there is.)
+* "Plugin template":http://docs.textpattern.io/development/plugin-template (Always use a template when one is available, and there is.)
 * "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer (Mentioned already, but worth saying again: This plugin allows you to create, code, and document plugins, then publish them in either conventional text format, compressed text format, or exported in the standard template format for sharing with developers or using in the plugin cache directory. This plugin also lets you directly edit plugins that are in the plugin cache directory.)
 * "Fetching development version of Textpattern":http://docs.textpattern.io/development/fetching-dev-version-of-txp (Also addresses which branch or release to use, and where to get old versions.)
 * "User role types and privileges":http://docs.textpattern.io/administration/admin/user-role-types-and-privileges (If your plugins will interact with user accounts, and it likely will.)
