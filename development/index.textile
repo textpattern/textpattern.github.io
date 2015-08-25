@@ -51,7 +51,7 @@ Before you start developing, spend some time researching what plugins exist, wha
 
 Here's the visible approach to plugin conception that can help you make a good choice... 
 
-When plugin ideas aren't conceived quietly in the minds of individuals and built to fruition without a lot of fanfare (usually because the developer needs the functionality regardless of whether the community does or not), they often begin as a core "feature idea":http://forum.textpattern.com/viewforum.php?id=2 ("a shunned one":http://docs.textpattern.io/development/plugin-vs-core), or "plugin discussion":http://forum.textpattern.com/viewforum.php?id=13. Bouncing plugin ideas off the community first is a good way to gauge whether a plugin idea has merit -- the more interest and constructive feedback you get, the more likely the plugin is worth building.
+When plugin ideas aren't conceived quietly in the minds of individuals and built to fruition without a lot of fanfare (a path usually taken when a developer needs the functionality regardless of whether the community does or not), they often begin as a core "feature idea":http://forum.textpattern.com/viewforum.php?id=2 ("a shunned one":http://docs.textpattern.io/development/plugin-vs-core), or "plugin discussion":http://forum.textpattern.com/viewforum.php?id=13. Bouncing plugin ideas off the community first is a good way to gauge whether a plugin idea has merit -- the more interest and constructive feedback you get, the more likely the plugin is worth building.
 
 **Do it the Textpattern way:** 
 
