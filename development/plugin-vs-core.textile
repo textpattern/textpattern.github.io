@@ -13,11 +13,22 @@ tags:
 
 h1. Plugins versus core development
 
-A common discussion point raised in the Textpattern Support Forum -- again and again -- is whether or not the functionality of a given plugin should be integrated into the core code of Textpattern. One could certainly argue the merits of doing so, depending on the functionality in question, but the philosophy behind core development is to keep core code light, secure, and extendable; not bloated, slow, buggy, and complex. Developers have followed that philosophical standpoint for over ten years by not integrating every function or feature that someone says _should_ be in core. When in doubt, plugin it out! (Yes, plugin used as a verb. There it is.) So it benefits hopeful plugin developers to know what the philosophical difference is between plugins and core code, in addition to the technological differences.
+A common discussion point raised in the Textpattern Support Forum -- again and again -- is whether or not the functionality of a given plugin should be integrated into the core code of Textpattern. One could certainly argue the merits of doing so, depending on the functionality in question, but the philosophy behind core development is to keep core code light, secure, and extendable; not bloated, slow, buggy, and complex. Developers have followed that philosophical standpoint for over ten years by not integrating every function or feature that someone says _should_ be in core.
+
+On this page:
+
+* "A functional idea is born":#sec1
+* "Core code":#sec2
+** "Core code advantages":#sec2-1
+** "New core feature caveats":#sec2-2
+* "Plugin code":#sec3
+** "Plugin lifespan":#sec3-1
+** "Plugin choice and risks":#sec3-2
+* "Conclusion":#sec4
 
 h2(#sec1). A functional idea is born
 
-When a new feature idea pops up, it usually does so in the "Feature ideas":http://forum.textpattern.com/viewforum.php?id=2 area of the support forum. Someone, perhaps you, bravely steps forth and says "X idea should be in core". We say "bravely" because that thread will soon be descended upon by core developers and veteran community members alike who will quickly make it clear what the likelihood of that happening is -- 99% of the time the response will be something like "it ain't gonna happen". The remaining 1% (supported ideas) usually comes from proposals to improve what is already developed, like UI changes, the way a form works, or whatever. Straight up new feature ideas, or old feature ideas that are thrown at the wall again and again, are not going to stick. That's a manifestation of the core development philosophy, and it's not a bad thing.
+When a new feature idea pops up, it usually does so in the "Feature ideas":http://forum.textpattern.com/viewforum.php?id=2 area of the support forum. Someone, perhaps you, bravely steps forth and says "X idea should be in core". We say "bravely" because 99% of the time a core developer and a few veteran community members, will descend on the thread with a response like "it ain't gonna happen", or "make a plugin". Supported feature ideas usually result from proposals to improve what is already developed, like UI changes, the way a form works, or whatever, but straight up new feature ideas, or old feature ideas that are thrown at the wall again and again, rarely stick. That's all manifestation of the core development philosophy, and it's not a bad thing.
 
 h2(#sec2). Core code
 
