@@ -2,16 +2,17 @@
 layout: document
 category: development
 published: true
-title: "Admin-side events and steps"
+title: "Plugin versus core features"
 tags:
   - development 
   - plugins
   - core
+  - features
 ---
 
-"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Admin-side events and steps**
+"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Plugin versus core features**
 
-h1. Plugins versus core development
+h1. Plugin versus core features
 
 A common discussion point raised in the Textpattern Support Forum -- again and again -- is whether or not the functionality of a given plugin should be integrated into the core code of Textpattern. One could certainly argue the merits of doing so, depending on the functionality in question, but the philosophy behind core development is to keep core code light, secure, and extendable; not bloated, slow, buggy, and complex. Developers have followed that philosophical standpoint for over ten years by not integrating every function or feature that someone says _should_ be in core. We attempt to break that idea down here. Of all the plugin development documentation, this page is more about perspective than how-to.
 
