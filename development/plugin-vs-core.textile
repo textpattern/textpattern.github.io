@@ -28,7 +28,11 @@ On this page:
 
 h2(#sec1). A functional idea is born
 
-When a new feature idea pops up, it usually does so in the "Feature ideas":http://forum.textpattern.com/viewforum.php?id=2 area of the support forum. Someone, perhaps you, bravely steps forth and says "X idea should be in core". We say "bravely" because 99% of the time a core developer and a few veteran community members, will descend on the thread with a response like "it ain't gonna happen", or "make a plugin". Supported feature ideas usually result from proposals to improve what is already developed, like UI changes, the way a form works, or whatever, but straight up new feature ideas, or old feature ideas that are thrown at the wall again and again, rarely stick. That's all manifestation of the core development philosophy, and it's not a bad thing.
+When a new feature idea pops up, it usually does so in the "Feature ideas":http://forum.textpattern.com/viewforum.php?id=2 area of the support forum. Someone, perhaps you, bravely steps forth and says "feature X should be in core". We say "bravely" because 99% of the time a core developer and a few veteran community members will descend on the thread with a response like "it ain't gonna happen", or "make a plugin". 
+
+Supported feature ideas usually result from proposals to improve what is already developed, like UI changes, the way a form works, or whatever, but straight up new feature ideas, or old feature ideas that are thrown at the wall again and again, rarely stick. 
+
+That's all manifestation of the core development philosophy, and it's not a bad thing.
 
 h2(#sec2). Core code
 
