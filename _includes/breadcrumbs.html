@@ -6,24 +6,6 @@
             </a>
             <meta itemprop="position" content="1">
         </li>
-        {% capture page_url_without_index_textile %}{{ page.url | remove: "/index.textile" }}{% endcapture %}
-        {% assign splitted_url_parts = page_url_without_index_textile | split: '/' %}
-        {% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}
-        {% for i in (1..forLoopMaxInt) %}
-            {% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.textile{% endcapture %}
-            {% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}
-            {% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}
-            {% for breadcrumb_page in site.pages %}
-                {% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}
-                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"{% if i == forLoopMaxInt %} class="active"{% endif %}>
-                        {% capture breadcrumb_page_page_url_without_index_textile %}{{ breadcrumb_page.url | remove: "index.textile" }}{% endcapture %}
-                        <a itemprop="item" href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_textile}}">
-                            <span itemprop="name">{{breadcrumb_page.breadcrumb}}</span>
-                        </a>
-                        <meta itemprop="position" content="TODO">
-                    </li>
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
+        <li>BREADCRUMBS TODO</li>
     </ol>
 </nav>
