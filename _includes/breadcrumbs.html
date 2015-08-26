@@ -6,6 +6,19 @@
             </a>
             <meta itemprop="position" content="1">
         </li>
-        <li>BREADCRUMBS TODO</li>
+        {% for p in page.ancestors %}
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="{{ site.baseurl}}{{ p.url }}">
+                    <span itemprop="name">{{ p.title }}</span>
+                </a>
+                <meta itemprop="position" content="todo">
+            </li>
+        {% endfor %}
+        <li class="current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <b itemprop="item">
+                <span itemprop="name">{{ page.title }}</span>
+            </b>
+            <meta itemprop="position" content="todo">
+        </li>
     </ol>
 </nav>
