@@ -85,473 +85,215 @@ h2(#sec2). txp_category
 
 The 'txp_category' table contains all the categories you create on the **"Categories":http://docs.textpattern.io/administration/content/categories-panel** panel.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">id
-integer
-Unique auto-incremented ID of this category</td>
-<td align="left">name
-varchar(64)
-Category name, used in URLs. The category 'root' is reserved (and invisible)</td>
-<td align="left">title
-varchar(255)
-Category title</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| id | integer | Unique auto-incremented ID of this category |
+| name | varchar(64) | Category name, used in URLs. The category 'root' is reserved (and invisible) |
+| title | varchar(255) | Category title |
+| type | varchar(64) | Type of media this category is used for: article, image, file or link) |
+| parent | varchar(64) | Parent category name. Determines the hierarchical place of this category compared to other categories. By default it's set to 'root' to indicate that it's a top level category. |
+| lft | integer | Used to maintain category hierarchy using the modified preorder tree traversal algorithm |
+| rgt | integer | Used to maintain category hierarchy using the modified preorder tree traversal algorithm |
 
 h2(#sec3). txp_css
 
 The 'txp_css' table contains the style sheets created on the **"Styles":http://docs.textpattern.io/administration/presentation/styles-panel** panel.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">name
-varchar(128)
-Name of the style sheet</td>
-<td align="left">css
-text
-Style sheet contents, base64 encoded for historical reasons (max 64kB)</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| name | varchar(128) | Name of the style sheet |
+| css | text | Style sheet contents, base64 encoded for historical reasons (max 64kB) |
 
 h2(#sec4). txp_discuss
 
 The 'txp_discuss' table contains all the article comments output on the **"Comments":http://docs.textpattern.io/administration/content/comments-panel** panel.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">discussid
-integer
-Unique auto-incremented ID of this comment</td>
-<td align="left">parentid
-integer
-ID of the article to which this comment belongs</td>
-<td align="left">name
-varchar(255)
-Name of the person who commented</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| discussid | integer | Unique auto-incremented ID of this comment |
+| parentid | integer | ID of the article to which this comment belongs |
+| name | varchar(255) | Name of the person who commented |
+| email | varchar(50) | Email address of the person who commented |
+| web | varchar(255) | Website of the person who commented |
+| ip | varchar(100) | IP-number of the computer used to submit this comment |
+| posted | datetime | Date and time when this comment was submitted |
+| message | text | Comment message in HTML markup (max 64kB) |
+| visible | integer | Status (-1 = Spam, 0 = waiting for moderation, 1 = visible) |
+
 
 h2(#sec5). txp_discuss_ipban
 
 The 'txp_discuss_ipban' table contains a list of all IP-numbers that have been banned from commenting by the person who moderates **"Comments":http://docs.textpattern.io/administration/content/comments-panel**.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">ip
-varchar(255)
-IP-number</td>
-<td align="left">name_used
-varchar(255)
-Name used by the commenter to submit the comment that cause him/her to be banned</td>
-<td align="left">date_banned
-datetime
-Date when the ban was imposed</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| ip | varchar(255) | IP-number |
+| name_used | varchar(255) | Name used by the commenter to submit the comment that cause him/her to be banned |
+| date_banned | datetime | Date when the ban was imposed |
+| banned_on_message | integer | ID of the comment that caused the ban |
 
 h2(#sec6). txp_discuss_nonce
 
 The 'txp_discuss_nonce' table is an important part of the spam protection in the commenting system. When the comment form is shown to the user, it contains a hidden variable (nonce) with a unique code. This code is valid for 10 minutes. If the comment form is submitted, the nonce is looked up in this table and must exist unused with a valid timestamp for the comment to be accepted.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">issue_time
-datetime
-Date and time when the 'nonce' was created</td>
-<td align="left">nonce
-varchar(32)
-Random alphanumeric string of text (md5)</td>
-<td align="left">used
-integer
-Has the nonce been used for submitting a comment (0 = no, 1 = yes). A nonce cannot be used twice.</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| issue_time | datetime | Date and time when the 'nonce' was created |
+| nonce | varchar(32) | Random alphanumeric string of text (md5) |
+| used | integer | Has the nonce been used for submitting a comment (0 = no, 1 = yes). A nonce cannot be used twice. |
+| secret | varchar(32) | Random alphanumeric string of text (md5) used to vary the name of the comment message textarea field, making it harder for spammers to submit comments |
+
 
 h2(#sec7). txp_file
 
 The 'txp_file' table contains information on all the files uploaded through textpattern. The files themselves are stored as normal files on disk instead of in the database.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">id
-integer
-Unique auto-incremented ID of this file</td>
-<td align="left">filename
-varchar(255)
-Name of the file as stored on the harddisk</td>
-<td align="left">title
-varchar(255)
-Title given to this file for display purposes</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| id | integer | Unique auto-incremented ID of this file |
+| filename | varchar(255) | Name of the file as stored on the harddisk |
+| title | varchar(255) | Title given to this file for display purposes |
+| category | varchar(64) | Name of the category associated with this file |
+| permissions | varchar(32) | (reserved for future use) |
+| description | text | File description (max 64kB) |
+| downloads | integer | Number of times this file has been downloaded |
+| status | integer | Status (2 = hidden, 3 = pending, 4 = live) |
+| created | datetime | Creation date and time |
+| modified | datetime | Modification date and time |
+| size | integer | File size in bytes |
+| author | varchar(255) | Login name of the author that added this file |
 
 h2(#sec8). txp_form
 
 The 'txp_form' table contains all the forms, which are created on the **"Forms":http://docs.textpattern.io/administration/presentation/forms-panel** panel.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">name
-varchar(64)
-Form name</td>
-<td align="left">type
-varchar(28)
-Form type: article, category, comment, file, link, misc or section</td>
-<td align="left">Form
-text
-Contents of the form: HTML / Textpattern tags (max 64kB)</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| name | varchar(64) | Form name |
+| type | varchar(28) | Form type: article, category, comment, file, link, misc or section |
+| Form | text | Contents of the form: HTML / Textpattern tags (max 64kB) |
 
 h2(#sec9). txp_image
 
 The 'txp_image' table contains information on all the images uploaded and managed in the **"Images":http://docs.textpattern.io/administration/content/images-panel** panel. The image files are not actually stored in the database, they're stored as normal files on the web server in the __/images__ folder using the image ID as the filename (i.e. __1.png__ for the main image or __1t.png__ for the corresponding thumbnail).
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">id
-integer
-Unique auto-incremented ID of this image</td>
-<td align="left">name
-varchar(255)
-Name of the image file as it was uploaded</td>
-<td align="left">category
-varchar(64)
-Name of the category associated with this image</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| id | integer | Unique auto-incremented ID of this image |
+| name | varchar(255) | Name of the image file as it was uploaded |
+| category | varchar(64) | Name of the category associated with this image |
+| ext | varchar(20) | file extension: .jpg, .gif, .png or .swf |
+| w | integer | Width in pixels |
+| h | integer | Height in pixels |
+| alt | varchar(255) | Alternative text for use in the ALT attribute in the HTML image tag |
+| caption | text | Caption for the image, used in the TITLE attribute for the HTML image tag (max 64kB) |
+| date | datetime | Creation date |
+| author | varchar(64) | Login name of the author that uploaded the image |
+| thumbnail | integer | Thumbnail available? (0 = no, 1 = yes) |
+| thumb_w | integer | Thumbnail width in pixels |
+| thumb_h | integer | Thumbnail height in pixels |
+
 
 h2(#sec10). txp_lang
 
 The 'txp_lang' table contains translations for the various built-in strings of text used on the public and administration sides of Textpattern.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">id
-integer
-Unique auto-incremented ID of this language string</td>
-<td align="left">lang
-varchar(16)
-Language code (for example: en-gb for British English)</td>
-<td align="left">name
-varchar(64)
-Unique name which identifies the language string</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| id | integer | Unique auto-incremented ID of this language string |
+| lang | varchar(16) | Language code (for example: en-gb for British English) |
+| name | varchar(64) | Unique name which identifies the language string |
+| event | varchar(64) | Part of Textpattern where this piece of text is typically used. This helps to keep the language strings organized for the translators. On the public side only the language strings with event 'public' and 'common' are loaded. |
+| data | tinytext | Translation of the language string |
+| lastmod | timestamp | Modification data and time of the language string |
 
 h2(#sec11). txp_link
 
 The 'txp_link' table contains all the links and related information created on the **"Links":http://docs.textpattern.io/administration/content/links-panel** panel.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">id
-integer
-Unique auto-incremented ID of this link</td>
-<td align="left">date
-datetime
-Creation date and time</td>
-<td align="left">category
-varchar(64)
-Name of the category associated with this link</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| id | integer | Unique auto-incremented ID of this link |
+| date | datetime | Creation date and time |
+| category | varchar(64) | Name of the category associated with this link |
+| url | text | Link URL |
+| linkname | varchar(255) | Link text (plain text) |
+| linksort | varchar(128) | String of text which can be used to customize link sorting |
+| description | text | Description of the link (typically plain text) |
+| author | varchar(255) | Login name of the author that created this link |
 
 h2(#sec12). txp_log
 
 The 'txp_log' table contains log entries of page requests (visits) to your website, which are output on the **"Visitor logs":http://docs.textpattern.io/administration/admin/visitor-logs-panel** panel. Depending on your preferences, nothing is logged, just referers or all requests. Old log entries are removed automatically.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">id
-integer
-Unique auto-incremented ID of this log entry</td>
-<td align="left">time
-datetime
-Date and time</td>
-<td align="left">host
-varchar(255)
-hostname of the computer that requested the page. If DNS lookups are disabled in the preferences or if the reverse DNS lookup of the IP-number failed, the IP-number is stored instead</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| id | integer | Unique auto-incremented ID of this log entry |
+| time | datetime | Date and time |
+| host | varchar(255) | hostname of the computer that requested the page. If DNS lookups are disabled in the preferences or if the reverse DNS lookup of the IP-number failed, the IP-number is stored instead |
+| page | varchar(255) | URI of the requested page |
+| refer | mediumtext | Whence the visitor came (Referer URL) |
+| status | integer | HTTP Status response code. Only status 200 (OK) is logged |
+| method | varchar(16) | HTTP Request method: typically POST or GET |
+| ip | varchar(16) | IP-number of the computer that requested the page |
 
 h2(#sec13). txp_page
 
 The 'txp_page' table contains all the page templates you create on the **"Pages":http://docs.textpattern.io/administration/presentation/pages-panel** panel.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">name
-varchar(128)
-Name of the template</td>
-<td align="left">user_html
-text
-Template contents: HTML / Textpattern tags (max 64kB)</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| name | varchar(128) | Name of the template |
+| user_html | text | Template contents: HTML / Textpattern tags (max 64kB) |
 
 h2(#sec14). txp_plugin
 
 The 'txp_plugin' table contains all the plugins you have installed, displayed on the **"Plugins":http://docs.textpattern.io/administration/admin/plugins-panel** panel.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">name
-varchar(64)
-Plugin name</td>
-<td align="left">status
-integer
-Status (0 = disabled, 1 = enabled)</td>
-<td align="left">author
-varchar(128)
-Plugin author name</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| name | varchar(64) | Plugin name |
+| status | integer | Status (0 = disabled, 1 = enabled) |
+| author | varchar(128) | Plugin author name |
+| author_uri | varchar(128) | URL of the plugin author website |
+| version | varchar(10) | Version in dotted format |
+| description | text | Short (!) description of plugin purpose (should be limited to 255 chars) |
+| help | text | Documentation in XHTML format (max 64kB) |
+| code | mediumtext | Plugin code (PHP), sometimes modified by user on Plugin tab (max 16MB) |
+| code_restore | mediumtext | Original plugin code (PHP) (max 16MB) |
+| code_md5 | varchar(32) | Checksum of the original plugin code |
+| type | integer | Where is the plugin loaded (0 = public, 1 = always, 2 = never, 3 = admin) |
+| load_order | integer | Order in which this plugin will be loaded (1 = first, 9 = last). By default set to 5, which should not be changed unless you know what you're doing |
+| flags | smallint (unsigned) | 16-bit value which signals the presence of optional capabilities to the core plugin loader. The four high-order bits 0xf000 are available for private use. "More info":http://www.textpattern.net/wiki/index.php?title=Plugin_Development_Guidelines#Plugin_lifecycle_management_.26_prefs. |
 
 h2(#sec15). txp_prefs
 
 The 'txp_prefs' table contains all the administration preferences (basic, advanced, and hidden).
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">prefs_id
-integer
-Unknown (always set to 1?)</td>
-<td align="left">name
-varchar(255)
-Name that identifies this preference</td>
-<td align="left">val
-text
-Contents/setting of this preference (max 64kB)</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| prefs_id | integer | Unknown (always set to 1?) |
+| name | varchar(255) | Name that identifies this preference |
+| val | text | Contents/setting of this preference (max 64kB) |
+| type | integer | Where is it shown on the Preferences tab? (0 = basic, 1 = advanced, 2 = hidden) |
+| event | varchar(12) | Event to which this preference applies. Allows related preferences to be shown together on the Preferences tab |
+| html | varchar(64) | Type of HTML code used for display when editing this preference: yesnoradio, text_input, gmtoffset_select, logging, permlinkmodes, commentmode, weeks, languages, dateformats, prod_levels or pref_text |
+| position | integer | Display position of this preference among others within the same event on the Preferences tab |
+| user_name | varchar(64) | login name of the user to whom this preference applies (by default set to an empty string to indicate that the preference is not bound to a specific user) |
 
 h2(#sec16). txp_section
 
 The 'txp_section' table contains all the sections you create on the **"Sections":http://docs.textpattern.io/administration/presentation/sections-panel** panel.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">name
-varchar(128)
-Section name (used in URL)</td>
-<td align="left">page
-varchar(128)
-Page template used for this section</td>
-<td align="left">css
-varchar(128)
-Style sheet used for this section</td>
-</tr>
-</tbody>
-</table>
+|^.
+|_. Column |_. Type |_. Description |
+|-.
+| name | varchar(128) | Section name (used in URL) |
+| page | varchar(128) | Page template used for this section |
+| css | varchar(128) | Style sheet used for this section |
+| is_default | integer | Default section for new articles? (0 = no, 1 = yes). Only one section can be set as default |
+| in_rss | integer | Include articles in this section in the site's RSS or Atom XML feeds? (0 = no, 1 = yes) |
+| on_frontpage | integer | Show articles in this section on the front page (0 = no, 1 = yes) |
+| searchable | integer | Are articles in this section searchable? (0 = no, 1 = yes) |
+| title | varchar(255) | Section title |
 
 h2(#sec17). txp_users
 
 The 'txp_users' table contains information for all users, as displayed on the **"Users":http://docs.textpattern.io/administration/admin/users-panel** panel.
 
-<table>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-<thead>
-<tr class="header">
-<th align="left">Column
-Type
-Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">user_id
-integer
-Unique auto-incremented ID of this user</td>
-<td align="left">name
-varchar(64)
-Login name</td>
-<td align="left">pass
-varchar(128)
-Password</td>
-</tr>
-</tbody>
-</table>
+|_. Column |_. Type |_. Description |
+| user_id | integer | Unique auto-incremented ID of this user |
+| name | varchar(64) | Login name |
+| pass | varchar(128) | Password |
+| RealName | varchar(64) | Real name |
+| email | varchar(100) | Email address (used for sending passwords and comment notifications |
+| privs | integer | Privilege level (0 = none, 1 = publisher, 2 = managing editor, 3 = copy editor, 4 = staff writer, 5 = freelancer, 6 = designer). Indicates what the user is allowed to do, once logged in on the admin side |
+| last_access | datetime | Date and time when the user last logged in by entering a valid username and password combination |
+| nonce | varchar(64) | Unique identifier used for cookie authentication (do NOT touch this in plugins!) |
 
