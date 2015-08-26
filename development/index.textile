@@ -348,8 +348,8 @@ Get your repos here. (Other docs regarding command-line interaction with repos w
 These may be useful depending on the kind of plugin you're building. 
 
 * "User role types and privileges":http://docs.textpattern.io/administration/admin/user-role-types-and-privileges (If your plugins will interact with user accounts, and it likely will.)
-* "Database schema reference":http://docs.textpattern.io/development/database-schema-reference (If your plugins will need a database table.)
-* "Extensions":http://docs.textpattern.io/administration/extensions/ (If your admin-side plugin will provide __Publisher__ controls in it's own panel under **Extensions**.)
+* "Database schema reference":http://docs.textpattern.io/development/database-schema-reference (If your plugins will need a database table, and it likely will.)
+* "Extensions":http://docs.textpattern.io/administration/extensions/ (If your admin-side plugin will provide __Publisher__ controls in it's own panel under **Extensions**, and it likely... you know.)
 
 **Miscellaneous tools:**
 
