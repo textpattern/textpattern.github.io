@@ -328,7 +328,7 @@ Always use a template when one is available, and there is:
 
 **Plugin composer:**
 
-Namely, the "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer plugin, as mentioned before. A plugin to build plugins. Ironic, eh? Truth is, this plugin is _extremely_ useful: This plugin allows you to create, code, and document plugins, then publish them in either conventional text format, compressed text format, or exported in the standard template format for sharing with developers or using in the plugin cache directory. This plugin also lets you directly edit plugins that are in the plugin cache directory.
+Namely, the "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_composer plugin, as mentioned before. A plugin to build plugins. Ironic, eh? Truth is, this plugin is _extremely_ useful: It allows you to create, code, and document plugins, then publish them in either conventional text format, compressed text format, or exported in the standard template format for sharing with developers or using in the plugin cache directory. This plugin also lets you directly edit plugins that are in the plugin cache directory.
 
 **Plugin user-help template and guidelines:**
 
