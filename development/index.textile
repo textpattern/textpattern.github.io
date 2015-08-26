@@ -33,7 +33,7 @@ On this page:
 * "Admin-side events and steps":#sec7
 * "Functions, variables, classes, and constants":#sec8
 * "Plugin lifecycle management and preferences":#sec9
-* "Implementation":#sec10
+* "Implementation resources":#sec10
 * "Getting help":#sec11
 * "External reading":#sec12
 
