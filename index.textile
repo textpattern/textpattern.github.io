@@ -6,7 +6,7 @@ title: "Textpattern CMS user documentation"
 
 h1. Table of Contents
 
-h2. Installation [todo]
+h2. Installation
 
 * Quick installation/upgrade guide
 * Detailed installation instructions
@@ -18,7 +18,7 @@ fn1. Upgrading your Textpattern installation is strongly recommended for "site s
 
 h2. Administration
 
-* "Textpattern administration":administration/ (panel organisation and full functionality)
+* "Textpattern administration":administration/ (admin-side organisation and full functionality)
 * "Administration fast-track":administration/admin-fast-track/ (quick learning by simple example)
 
 h2. Core tags
@@ -32,7 +32,7 @@ h2. Security
 
 Read "Textpattern security":security/ before you worry, or do anything hasty.
 
-h2. Beyond core functionality
+h2. Popular topics
 
 * "Theme design":themes/
 * "Plugin development":development/
