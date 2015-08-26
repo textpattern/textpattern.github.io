@@ -353,7 +353,7 @@ These may be useful depending on the kind of plugin you're building.
 
 **Miscellaneous tools:**
 
-These are questionable until further notice.
+These are "questionable":https://github.com/textpattern/textpattern.github.io/issues/34 until further notice.
 
 * "Generate a list of tags and attributes":http://forum.textpattern.com/viewtopic.php?id=12299 [???]
 * "Command-line plugin decoder":http://forum.textpattern.com/viewtopic.php?id=4252 [???]
