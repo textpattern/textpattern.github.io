@@ -42,9 +42,7 @@ h2(#sec1). textpattern
 
 The 'textpattern' table contains the articles you create on the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel.
 
-|^.
 |_. Column  |_. Type  |_. Description |
-|-.
 | ID  | integer  | Unique, auto incremented numerical ID of the article |
 | Posted  | datetime  | Publication date and time |
 | Expires  | datetime  | Expiration date and time (defaults to 0000-00-00 00:00:00, which indicates that the article never expires) |
