@@ -1,174 +1,139 @@
-h1. Linklist [todo:pw]
+---
+layout: document
+category: tags
+published: true
+title: "Linklist"
+tags:
+  - Link tags
+  - List tags
+---
+
+h1. Linklist
+
+On this page:
+
+* "Syntax":#sec1
+* "Attributes":#sec2
+* "Examples":#sec3
+* "Genealogy":#sec4
+
+h2(#sec1). Syntax
 
 bc. <txp:linklist />
 
-
-The "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist tag is a _single_ or a _container_ tag which is used to produce a list of links from the predefined list created on the "links":/home/www/zendstudio/dokuwiki/bin/doku.php?id=links tab.
+The *linklist* tag is a _single_ or a _container_ tag which is used to produce a list of links from the predefined list created on the "links":links tab.
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 
 bc. <txp:linklist>
-...contained statements...
+    ...contained statements...
 </txp:linklist>
 
-
-h3(sectionedit1#attributes). Attributes
+h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
-*"author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#author=“author login name”*
- Restrict to links with the specified author. Default: unset. *"auto_detect":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#auto_detect=“string context”*
- List of Textpattern contexts to consider when automatically searching for links. If you wish to turn off the automatic check, set this to *auto_detect=““*. You can choose from the following contexts: *category* to look in the URL for a category list *author* to look in the URL for an author list Default: *category, author* *"category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#category=“category name(s)”*
- Restrict to links from specified category/ies. Values: (comma separated list of) category name(s). Note: category names may be different to the Title you typed when you created the category, as the names are sanitized for URL use. Check the "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories tab to ensure you are using the correct names Default: unset. *"form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#form=“form name”*
- Use specified form. Default:
+* @author="author login name"@
+Restrict to links with the specified author.
+Default: unset.
+* @auto_detect="string context"@
+List of Textpattern contexts to consider when automatically searching for links. If you wish to turn off the automatic check, set this to @auto_detect=""@.
+Values: @category@ (to look in the URL for a category list) and/or @author@ (to look in the URL for an author list).
+Default: @category, author@.
+* @category="category name(s)"@
+Restrict to links from specified categories.
+Values: (comma separated list of) category name(s). *Note:* category names may be different to the 'Title' you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories page]] to ensure you are using the correct names.
+Default: unset.
+* @form="form name"@
+Use specified form.
+Default: @plainlinks@.
+* @id="integer"@
+Filter the links by this list of @id@s assigned at link creation time. The IDs can be found on the [[Links page]].
+Default: unset.
+* @limit="integer"@
+Number of links to display.
+Default: @0@ (no limit).
+* @offset="integer"@
+The number of links to skip.
+Default: @0@.
+* @pageby="integer or limit"@
+Number of links to jump each page. Without this attribute, you cannot navigate using the "newer":newer and "older":older tags. Usually you will want to track the @limit@ attribute. Use @pageby="limit"@ to do this, which means you will not have to amend two values if you subsequently decide to alter the @limit@.
+Default: unset
+* @realname="author real name"@
+Restrict to links with the specified author name.
+Default: unset.
+* @sort="sort value(s)"@
+How to sort resulting list.
+Values:
+@category@.
+@date@.
+@description@.
+@id@ (link id#).
+@linkname@.
+@linksort@.
+@rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
+@url@.
+Default: @linksort asc@.
 
-bc. plainlinks
+h3. Common presentational attributes
 
+These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-. *"id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#id=“integer”*
- Filter the links by this list of
+* @break="value"@
+Where value is an HTML element, specified without brackets (e.g., @break="li"@) or some string to separate list items.
+Default: @br@ (but see [[break cross-reference]] for exceptions).
+* @class="class name"@
+HTML @class@ to apply to the @wraptag@ attribute value.
+Default: tag name or unset (see [[class cross-reference]]).
+* @label="text"@
+Label prepended to item.
+Default: unset (but see [[label cross-reference]] for exceptions).
+* @labeltag="element"@
+HTML element to wrap (markup) label, specified without brackets (e.g., labeltag="h3").
+Default: unset.
+* @wraptag="element"@
+HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
+Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
-bc. id
+h2(#sec3). Examples
 
-
-s assigned at link creation time. The IDs can be found on the "links":/home/www/zendstudio/dokuwiki/bin/doku.php?id=links panel. Default: unset. *"limit":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#limit=“integer”*
- Number of links to display. Default:
-
-bc. 0
-
-
-(no limit). *"offset":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#offset=“integer”*
- The number of links to skip. Default:
-
-bc. 0
-
-
-. *"pageby":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#pageby=“integer or &lt;code&gt;limit&lt;/code&gt;”*
- Number of links to jump each page. Without this attribute, you cannot navigate using the "newer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=newer and [older]] tags. Usually you will want to track the
-
-bc. limit
-
-
-attribute. Use
-
-bc. pageby="limit"
-
-
-to do this, which means you will not have to amend two values if you subsequently decide to alter the
-
-bc. limit
-
-
-Default: unset *"realname":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#realname=“author real name”*
- Restrict to links with the specified author name. Default: unset. *"sort":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#sort=“sort value(s)”*
- How to sort the resulting list. Values:
-
-bc. id
-
-
-,
-
-bc. linkname
-
-
-,
-
-bc. url
-
-
-,
-
-bc. description
-
-
-,
-
-bc. category
-
-
-,
-
-bc. date
-
-
-,
-
-bc. linksort
-
-
-,
-
-bc. rand()
-
-
-("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand). Default:
-
-bc. linksort asc
-
-
-.
-
-"common_presentational_attributes":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=common_presentational_attributes
-
-h3(sectionedit2#examples). Examples
-
-h4(#example_1list_of_links_from_specified_category). Example 1: List of links from specified category
+h3. Example 1: List of links from specified category
 
 bc. <txp:linklist form="Links" category="general" limit="10" sort="linksort" wraptag="p" />
 
+h3. Example 2: An ordered list of links
 
-h4(#example_2an_ordered_list_ol_of_links). Example 2: An ordered list (ol) of links
+bc. <txp:if_category name="100">
+    <txp:linklist label="First Floor" category="First" wraptag="ol" break="li" />
+</txp:if_category>
+<txp:if_category name="200">
+    <txp:linklist label="Second Floor" category="Second" wraptag="ol" break="li" />
+</txp:if_category>
 
 This example uses the displayed page's category as the criterion for choosing the linklist's category.
 
-bc. <txp:if_category name="100">
-<txp:linklist label="First Floor" category="First" wraptag="ol" break="li" />
-</txp:if_category>
-<txp:if_category name="200">
-<txp:linklist label="Second Floor" category="Second" wraptag="ol" break="li" />
-</txp:if_category>
+Other tags used: "if_category":if_category.
 
+h3. Example 3: Used as a container tag
 
-Other tags used: "if_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_category
+bc. <txp:linklist wraptrag="ol" break="li">
+    <txp:link /><br />
+    <txp:link_description /><br />
+    <txp:linkdesctitle />
+</txp:linklist>
 
-h4(#example_3links_form_default_links). Example 3: Links Form (default [[links]])
+The tags within the container are repeated for each link provided by the linklist tag.
 
-bc. <txp:link /><br />
-<txp:link_description /><br />
-<txp:linkdesctitle />
+Other tags used: "link":link, "linkdesctitle":linkdesctitle, "link_description":link-description.
 
+h2(#sec4). Genealogy
 
-The form is repeated for each link provided by "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist.
+h3. Version 4.5.0
 
-h3(sectionedit3#genealogy). Genealogy
+@id@ attribute added.
 
-h4(#version_450). Version 4.5.0
+h3. Version 4.3.0
 
-<ul>
-<li>bc. id
-
-
-<p>attribute added</p></li>
-</ul>
-
-h4(#version_430). Version 4.3.0
-
-<ul>
-<li>bc. pageby
-
-
-<p>attribute added to enable paging via "newer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=newer and "older":/home/www/zendstudio/dokuwiki/bin/doku.php?id=older</p></li>
-<li>bc. author
-
-
-<p>and</p>
-bc. realname
-
-
-<p>attributes added</p></li>
-<li>bc. auto_detect
-
-
-<p>added to allow automatic (URL-based) contextual listings</p></li>
-</ul>
-
+@pageby@ attribute added to enable paging via "newer":newer and "older":older tags.
+@author@ and @realname@ attributes added.
+@auto_detect@ attribute added to allow automatic (URL-based) contextual listings.
