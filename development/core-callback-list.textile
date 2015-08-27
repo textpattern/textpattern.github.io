@@ -67,7 +67,7 @@ h2(#sec2). Function- and tag-based callbacks
 
 **_lib/txplib_misc.php_**
 
-|_. Names |_. When it occurs |_. What it allows/does |
+|_. Events/steps |_. When it occurs |_. What it allows/does |
 | event = _sanitize_for_url_ | at the start of the @sanitizeForUrl()@ function | apply your own URL sanitization rules passes the text to be sanitized as the callback's 4th argument
 | event = _sanitize_for_file_ | at the start of the @sanitizeForUrl()@ function | apply your own filename sanitization rules passes the text to be sanitized as the callback's 4th argument |
 | event = _sanitize_for_page_ | at the start of the @sanitizeForUrl()@ function | apply your own page name sanitization rules passes the text to be sanitized as the callback's 4th argument |
@@ -77,23 +77,13 @@ h2(#sec3). Plugin callbacks
 
 **_include/txp_plugin.php_**
 
-In order to process these callbacks, your plugin must raise the
+In order to process these callbacks, your plugin must raise the @PLUGIN_LIFECYCLE_NOTIFY@ flag to register its intent. In addition, if you wish to offer a link to your plugin's preferences from the  **"Plugins":http:docs.textpattern.io/administration/plugins-panel** panel, you must raise the @PLUGIN_HAS_PREFS@ flag.
 
-bc. PLUGIN_LIFECYCLE_NOTIFY
-
-
-flag to register its intent. In addition, if you wish to offer a link to your plugin's preferences from the Admin&gt;Plugins panel, you must raise the
-
-bc. PLUGIN_HAS_PREFS
-
-
-flag.
-
-*event = _plugin_lifecycle.abc_your_plugin_ step = _enabled_*
- occurs when somebody switches abc_your_plugin to *Yes* from the Admin&gt;Plugins panel *event = _plugin_lifecycle.abc_your_plugin_ step = _disabled_*
- occurs when somebody switches abc_your_plugin to *No* from the Admin&gt;Plugins panel *event = _plugin_lifecycle.abc_your_plugin_ step = _installed_*
- occurs when abc_your_plugin has been installed by the act of the user pasting its code in the Admin&gt;Plugins panel and clicking Install on the next screen *event = _plugin_lifecycle.abc_your_plugin_ step = _deleted_*
- occurs when abc_your_plugin has been removed by the act of the user selecting it and deleting it from the Admin&gt;Plugins panel note that the _plugin_lifecycle.abc_your_plugin_ / _disabled_ callback fires first
+|_. Events/steps |_. When it occurs |_. What it allows/does |
+| event = _plugin_lifecycle.abc_your_plugin_ step = _enabled_ | when somebody switches abc_your_plugin to "Enabled" (Yes) from the **Plugins** panel | - |
+| event = _plugin_lifecycle.abc_your_plugin_ step = _disabled_ | when somebody switches abc_your_plugin to "Disabled" (No) on the **Plugins** panel | - |
+| event = _plugin_lifecycle.abc_your_plugin_ step = _installed_ | when abc_your_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and clicking Install on the next screen | - |
+| event = _plugin_lifecycle.abc_your_plugin_ step = _deleted_ | when abc_your_plugin has been removed by the act of the user selecting it and deleting it from the **Plugins** panel (note that the _plugin_lifecycle.abc_your_plugin_ / _disabled_ callback fires first) | - |
 
 h2(#sec4). Regular admin-side callbacks
 
