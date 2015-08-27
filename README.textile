@@ -70,10 +70,26 @@ fn1. Plugin authors must follow panel UI text capitalization rules, which is _se
 
 fn2. There should be three CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type, even providing the background color.
 
-h2(#sec6). Typo gotchas to watch out for
+h2(#sec6). Typo/grammar gotchas to watch out for
 
 * User docs are written using "British English spelling and punctuation":https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences conventions. But don't kill yourself over it.
 * Use "login" and "logout" when it's a noun (e.g., "the login location"). 
 * Use "log in" and "log out" when it's a verb (e.g., "after you log in" or "after logging in").
 * Do not use "tab" (use "panel") when talking about the admin-side panels unless you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab"). Here's why: The presentational theme of the admin-side was originally conceived as a set of manilla file folders, with each region label depicted as a folder “tab”. This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as “tabs” even though they may use an admin theme that does not depict the file folder concept. New docs should not perpetuate that false concept and terminology, particularly as the file folder concept is not depicted in the admin-side navigation of the official admin-side theme -- Hive. The use of “tab” in the admin-side UI, such as in preferences, help dialogue, and so forth, is probably only clear to veteran Textpattern users. When/if the admin-side UI is cleaned of all use of the word "tab", then docs can be fully cleaned of the use as well, but we can get most of the way there by only using "tab" when it's in direct reference of an UI element label.
+
+h2(#sec7). Markup
+
+**Tables:*
+
+Use Textile tables, but they need to have a @notextile. <div>@ wrapper around them too, like this:
+
+bc.. notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. Header |_. Header |_. Header |
+| data | data | data|
+| etc | etc | etc |
+
+notextile. </div>
+
+p.
 
