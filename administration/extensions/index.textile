@@ -24,9 +24,7 @@ When you upload a plugin that uses the **Extensions** region, a secondary panel 
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Plugin name |_. Version (latest) |_. Resulting panel label[2] |_. Plugin function |
-|-.
 | "adi_notes":http://forum.textpattern.com/viewtopic.php?id=27957 | ? | ? | ? |
 | "asy_jpcache":http://forum.textpattern.com/viewtopic.php?id=8352 | ? | ? | ? |
 | "bas_lightbox":http://forum.textpattern.com/viewtopic.php?id=14748 | ? | ? | ? |

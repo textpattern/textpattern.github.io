@@ -13,9 +13,7 @@ h2. 4.5.x (27 Aug 2012 - present)
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_(t50). Release |_. Date |
-|-.
 | "4.5.7":http://textpattern.com/file_download/99/textpattern-4.5.7.zip (Changelog) | 20 Sep 2014 |
 | "4.5.5":http://textpattern.com/file_download/92/textpattern-4.5.5.zip (Changelog) | 04 Oct 2013 |
 | "4.5.4":http://textpattern.com/file_download/90/textpattern-4.5.4.zip (Changelog) | 05 Dec 2012 |
@@ -30,9 +28,7 @@ h2. 4.4.x (26 Mar 2011 - 27 Aug 2012)
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_(t50). Release |_. Date |
-|-.
 | "4.4.1":http://textpattern.com/file_download/71/textpattern-4.4.1.zip (Changelog) | 18 Jun 2011 |
 | "4.4.0":http://textpattern.com/file_download/76/textpattern-4.4.0.zip (Changelog) | 26 Mar 2011 |
 
@@ -42,9 +38,7 @@ h2. 4.3.x (04 Nov 2010 - 26 Mar 2011)
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_(t50). Release |_. Date |
-|-.
 | "4.3.0":http://textpattern.com/file_download/65/textpattern-4.3.0.zip (Changelog) | 04 Nov 2010 |
 
 notextile. </div>
@@ -53,9 +47,7 @@ h2. 4.2.x (28 Aug 2009 - 04 Nov 2010)
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_(t50). Release |_. Date |
-|-.
 | "4.2.0":http://textpattern.com/file_download/57/textpattern-4.2.0.zip (Changelog) | 28 Aug 2009 |
 
 notextile. </div>
@@ -64,9 +56,7 @@ h2. 4.0.x (01 Aug 2005 - 28 Aug 2009)
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_(t50). Release |_. Date |
-|-.
 | "4.0.8":http://textpattern.com/file_download/53/textpattern-4.0.8.zip (Changelog) | 23 Jan 2009 |
 | "4.0.7":http://textpattern.com/file_download/46/textpattern-4.0.7.zip (Changelog) | 28 Nov 2008 |
 | "4.0.6":http://textpattern.com/file_download/43/textpattern-4.0.6.zip (Changelog) | 03 Feb 2008 |
@@ -83,9 +73,7 @@ h2. 1.0 (07 Jun 2004 - 01 Aug 2005)
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_(t50). Release |_. Date |
-|-.
 | 1.0 RC5 | 01 Aug 2005 |
 | 1.0 RC4 | 26 Jul 2005 |
 | "1.0 RC3":http://textpattern.com/file_download/53/textpattern-1.0rc3.zip | 20 Feb 2005 |
@@ -98,9 +86,7 @@ h2. Gamma (23 Feb 2004 - 07 Jun 2004)
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_(t50). Release |_. Date |
-|-.
 | "g119":http://textpattern.com/file_download/95/textpattern-g119.zip | 07 Jun 2004 |
 | "g118a":http://textpattern.com/file_download/94/textpattern-g118a.zip | 11 Apr 2004 |
 | g118 | 11 Apr 2004 |

@@ -44,9 +44,7 @@ The 'textpattern' table contains the articles you create on the **"Write":http:/
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column  |_. Type  |_. Description |
-|-.
 | ID  | integer  | Unique, auto incremented numerical ID of the article |
 | Posted  | datetime  | Publication date and time |
 | Expires  | datetime  | Expiration date and time (defaults to 0000-00-00 00:00:00, which indicates that the article never expires) |
@@ -93,9 +91,7 @@ The 'txp_category' table contains all the categories you create on the **"Catego
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | id | integer | Unique auto-incremented ID of this category |
 | name | varchar(64) | Category name, used in URLs. The category 'root' is reserved (and invisible) |
 | title | varchar(255) | Category title |
@@ -112,9 +108,7 @@ The 'txp_css' table contains the style sheets created on the **"Styles":http://d
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | name | varchar(128) | Name of the style sheet |
 | css | text | Style sheet contents, base64 encoded for historical reasons (max 64kB) |
 
@@ -126,9 +120,7 @@ The 'txp_discuss' table contains all the article comments output on the **"Comme
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | discussid | integer | Unique auto-incremented ID of this comment |
 | parentid | integer | ID of the article to which this comment belongs |
 | name | varchar(255) | Name of the person who commented |
@@ -147,9 +139,7 @@ The 'txp_discuss_ipban' table contains a list of all IP-numbers that have been b
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | ip | varchar(255) | IP-number |
 | name_used | varchar(255) | Name used by the commenter to submit the comment that cause him/her to be banned |
 | date_banned | datetime | Date when the ban was imposed |
@@ -161,9 +151,7 @@ The 'txp_discuss_nonce' table is an important part of the spam protection in the
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | issue_time | datetime | Date and time when the 'nonce' was created |
 | nonce | varchar(32) | Random alphanumeric string of text (md5) |
 | used | integer | Has the nonce been used for submitting a comment (0 = no, 1 = yes). A nonce cannot be used twice. |
@@ -177,9 +165,7 @@ The 'txp_file' table contains information on all the files uploaded through text
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | id | integer | Unique auto-incremented ID of this file |
 | filename | varchar(255) | Name of the file as stored on the harddisk |
 | title | varchar(255) | Title given to this file for display purposes |
@@ -201,9 +187,7 @@ The 'txp_form' table contains all the forms, which are created on the **"Forms":
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | name | varchar(64) | Form name |
 | type | varchar(28) | Form type: article, category, comment, file, link, misc or section |
 | Form | text | Contents of the form: HTML / Textpattern tags (max 64kB) |
@@ -216,9 +200,7 @@ The 'txp_image' table contains information on all the images uploaded and manage
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | id | integer | Unique auto-incremented ID of this image |
 | name | varchar(255) | Name of the image file as it was uploaded |
 | category | varchar(64) | Name of the category associated with this image |
@@ -241,9 +223,7 @@ The 'txp_lang' table contains translations for the various built-in strings of t
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | id | integer | Unique auto-incremented ID of this language string |
 | lang | varchar(16) | Language code (for example: en-gb for British English) |
 | name | varchar(64) | Unique name which identifies the language string |
@@ -259,9 +239,7 @@ The 'txp_link' table contains all the links and related information created on t
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | id | integer | Unique auto-incremented ID of this link |
 | date | datetime | Creation date and time |
 | category | varchar(64) | Name of the category associated with this link |
@@ -279,9 +257,7 @@ The 'txp_log' table contains log entries of page requests (visits) to your websi
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | id | integer | Unique auto-incremented ID of this log entry |
 | time | datetime | Date and time |
 | host | varchar(255) | hostname of the computer that requested the page. If DNS lookups are disabled in the preferences or if the reverse DNS lookup of the IP-number failed, the IP-number is stored instead |
@@ -299,9 +275,7 @@ The 'txp_page' table contains all the page templates you create on the **"Pages"
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | name | varchar(128) | Name of the template |
 | user_html | text | Template contents: HTML / Textpattern tags (max 64kB) |
 
@@ -313,9 +287,7 @@ The 'txp_plugin' table contains all the plugins you have installed, displayed on
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | name | varchar(64) | Plugin name |
 | status | integer | Status (0 = disabled, 1 = enabled) |
 | author | varchar(128) | Plugin author name |
@@ -338,9 +310,7 @@ The 'txp_prefs' table contains all the administration preferences (basic, advanc
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | prefs_id | integer | Unknown (always set to 1?) |
 | name | varchar(255) | Name that identifies this preference |
 | val | text | Contents/setting of this preference (max 64kB) |
@@ -358,9 +328,7 @@ The 'txp_section' table contains all the sections you create on the **"Sections"
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | name | varchar(128) | Section name (used in URL) |
 | page | varchar(128) | Page template used for this section |
 | css | varchar(128) | Style sheet used for this section |
@@ -378,9 +346,7 @@ The 'txp_users' table contains information for all users, as displayed on the **
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Column |_. Type |_. Description |
-|-.
 | user_id | integer | Unique auto-incremented ID of this user |
 | name | varchar(64) | Login name |
 | pass | varchar(128) | Password |

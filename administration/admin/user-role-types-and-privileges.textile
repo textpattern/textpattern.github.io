@@ -32,9 +32,7 @@ The following table shows user roles versus access to admin-side panels. If a ro
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
-|-.
 |_. Content | - | - | - | - | - | - | - |
 |_. Articles | X |  |  |  |  |  |  |
 |_. Categories | X |  |  |  |  |  |  |

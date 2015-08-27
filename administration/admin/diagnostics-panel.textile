@@ -36,9 +36,7 @@ Low diagnostics info begins with a set of data values about your installation an
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Data item |_. What it tells you |
-|-.
 | Textpattern version: | the version you currently have installed |
 | Last update: | the date/time you last updated your installation |
 | Document root: | path to directory where Textpattern is installed |
@@ -108,9 +106,7 @@ High diagnostics info display includes the Low info above, but adds the followin
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Data item |_. What it tells you |
-|-.
 | Charset (default/config): | if you don't see a lot of "UTF-8" values on these "character_set" items, you might want ask yourself why not |
 | character_set_client: | |
 | character_set_connection: | |
@@ -212,9 +208,7 @@ The following functions are used by Textpattern. If your diagnostics reports any
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|^.
 |_. Name |_. Use |
-|-.
 | apache_get_modules | Helps determine whether clean urls could be used at setup, and for diagnostics info. |
 | apache_get_version | Helps provide diagnostics info regarding clean urls. |
 | parse_ini_file | Language features, even if English is used. |
