@@ -1,36 +1,43 @@
-\nThe following is a list of callbacks in Textpattern. It is current as of Textpattern "txp_current_version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version:
+---
+layout: document
+category: development
+published: true
+title: "Core callbacks list"
+tags:
+  - development 
+  - plugins
+  - callbacks
+  - core
+---
 
-h3(sectionedit1#regular_public-side_callbacks). Regular public-side callbacks
+h1. Core callbacks list
 
-h4(#code_publishphp_code). &lt;code&gt;publish.php&lt;/code&gt;
+The following is a list of callbacks in Textpattern. It is current as of Textpattern "txp_current_version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version:
 
-*event = _pretext_*
- occurs at the very top of the
+h2(#sec1). Regular public-side callbacks
 
-bc. pretext()
+The _publish.php_ callback.
 
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+	
+|_. Name type and value |_. Description |
+| event = _pretext_ | occurs at the very top of the  @pretext()@ function, just after the prefs have been extracted |
+| event = _pretext_end_ | occurs just after @pretext()@ has run but before its variables have been extracted into the global scope; useful for overriding anything set in @pretext()@ or adding variables to it
+| event = _file_download_ | occurs as soon as a file_download is detected, allowing you to intercept the regular file downloading process |
+| event = _textpattern_ | occurs just before the page is rendered |
+| event = _textpattern_end_ | occurs once the page has been fully rendered |
 
-function, just after the prefs have been extracted *event = _pretext_end_*
- occurs just after
+notextile. </div>
 
-bc. pretext()
+The _publish/atom.php_ callback.
 
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-has run but before its variables have been extracted into the global scope useful for overriding anything set in
+|_. Name type and value |_. Description |
+|event = _atom_head_ | occurs after the feed's header has been set allows you to add items to the feed's header |
+| event = _atom_entry_ | occurs as soon as the article's data has been populated allows you to inject extra markup after the standard feed items have been generated |
 
-bc. pretext()
-
-
-or adding variables to it *event = _file_download_*
- occurs as soon as a file_download is detected, allowing you to intercept the regular file downloading process *event = _textpattern_*
- occurs just before the page is rendered *event = _textpattern_end_*
- occurs once the page has been fully rendered
-
-h4(#code_publish_atomphp_code). &lt;code&gt;publish/atom.php&lt;/code&gt;
-
-*event = _atom_head_*
- occurs after the feed's header has been set allows you to add items to the feed's header *event = _atom_entry_*
- occurs as soon as the article's data has been populated allows you to inject extra markup after the standard feed items have been generated
+notextile. </div>
 
 h4(#code_publish_rssphp_code). &lt;code&gt;publish/rss.php&lt;/code&gt;
 
@@ -60,7 +67,7 @@ h4(#code_publish_logphp_code). &lt;code&gt;publish/log.php&lt;/code&gt;
 *event = _log_hit_*
  occurs just before a log message is recorded in the txp_log table allows you to alter the log message
 
-h3(sectionedit2#function-_and_tag-based_callbacks). Function- and tag-based callbacks
+h2(#sec2). Function- and tag-based callbacks
 
 h4(#code_lib_txplib_miscphp_code). &lt;code&gt;lib/txplib_misc.php&lt;/code&gt;
 
@@ -95,7 +102,7 @@ bc. 301
 
 , etc) allowing you to target particular status codes and take action
 
-h3(sectionedit3#plugin_callbacks). Plugin callbacks
+h2(#sec3). Plugin callbacks
 
 h4(#code_include_txp_pluginphp_code). &lt;code&gt;include/txp_plugin.php&lt;/code&gt;
 
@@ -117,7 +124,7 @@ flag.
  occurs when abc_your_plugin has been installed by the act of the user pasting its code in the Admin&gt;Plugins panel and clicking Install on the next screen *event = _plugin_lifecycle.abc_your_plugin_ step = _deleted_*
  occurs when abc_your_plugin has been removed by the act of the user selecting it and deleting it from the Admin&gt;Plugins panel note that the _plugin_lifecycle.abc_your_plugin_ / _disabled_ callback fires first
 
-h3(sectionedit4#regular_admin-side_callbacks). Regular admin-side callbacks
+h2(#sec4). Regular admin-side callbacks
 
 h4(#code_lib_txplib_headphp_code). &lt;code&gt;lib/txplib_head.php&lt;/code&gt;
 
@@ -216,7 +223,7 @@ h4(#code_include_txp_sectionphp_code). &lt;code&gt;include/txp_section.php&lt;/c
 *event = _sections_deleted_*
  occurs just after one or more sections have been deleted an array of deleted section names is passed as a parameter
 
-h3(sectionedit5#admin-side_criteria_callbacks). Admin-side criteria callbacks
+h2(#sec5). Admin-side criteria callbacks
 
 These callbacks allow you to alter the criteria that are used in the various panels. You can append SQL to the criteria so you may apply additional filtering.
 
@@ -248,7 +255,7 @@ The callbacks all have event = _admin_criteria_ and the following steps:
 * Users panel: _author_list_
 * Visitor logs panel: _log_list_
 
-h3(sectionedit6#admin_side_validation_callbacks). Admin side validation callbacks
+h2(#sec6). Admin side validation callbacks
 
 The following callbacks allow you to alter or append to the constraints imposed by the core when saving data. Textpattern will check that the passed values for things like categories, sections, and so forth actually exist in the database to avoid new ones being introduced at unexpected places.
 
@@ -292,7 +299,7 @@ h4(#links_panel). Links panel
 
 step = _validate_save_
 
-h3(sectionedit7#pluggable_ui_callbacks). pluggable_ui() callbacks
+h2(#sec7). pluggable_ui() callbacks
 
 Argument #1 passed to your function is the _event_ and argument #2 is the _step_. Arguments 3 and 4 (and occasionally 5) vary depending on the functionality of the UI component. In general, the following holds true unless otherwise stated:
 
@@ -374,7 +381,7 @@ h4(#preferences_panel_code_include_txp_prefsphp_code). Preferences panel (&lt;co
  allows you to alter or replace the Custom Field text boxes on the Advanced Prefs panel (just the input controls, not the labels). Each text box is called separately; you distinguish between them using argument #4 argument #4 is the preference name in the txp_prefs table (_custom_set_N_ by default, where _N_ is the custom field number) argument #5 is the preference's value (i.e. the name of the custom field) *event = _prefs_ui_ step = _theme_name_*
  allows you to alter or replace the _Admin theme_ select list on the Advanced Prefs panel (just the input control, not the label)
 
-h3(sectionedit8#theme_callbacks). Theme callbacks
+h2(#sec8). Theme callbacks
 
 The following callbacks are all usable to alter various elements within admin-side themes.
 
