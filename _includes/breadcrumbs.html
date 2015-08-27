@@ -7,12 +7,21 @@
             <meta itemprop="position" content="1">
         </li>
 
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a itemprop="item" href="">
-                <span itemprop="name">TODO</span>
-            </a>
-            <meta itemprop="position" content="todo">
-        </li>
+        {% if page.url == "index.html" %}
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="">
+                    <span itemprop="name">THIS IS A SECTION INDEX</span>
+                </a>
+                <meta itemprop="position" content="2">
+            </li>
+        {% else %}
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="">
+                    <span itemprop="name">THIS IS NOT A SECTION INDEX</span>
+                </a>
+                <meta itemprop="position" content="2">
+            </li>
+        {% endif %}
 
         <li class="current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <b itemprop="item">
