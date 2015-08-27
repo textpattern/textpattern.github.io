@@ -68,7 +68,7 @@ h2(#sec2). Function- and tag-based callbacks
 **_lib/txplib_misc.php_**
 
 |_. Events/steps |_. When it occurs |_. What it allows/does |
-| event = _sanitize_for_url_ | at the start of the @sanitizeForUrl()@ function | apply your own URL sanitization rules passes the text to be sanitized as the callback's 4th argument
+| event = _sanitize_for_url_ | at the start of the @sanitizeForUrl()@ function | apply your own URL sanitization rules passes the text to be sanitized as the callback's 4th argument |
 | event = _sanitize_for_file_ | at the start of the @sanitizeForUrl()@ function | apply your own filename sanitization rules passes the text to be sanitized as the callback's 4th argument |
 | event = _sanitize_for_page_ | at the start of the @sanitizeForUrl()@ function | apply your own page name sanitization rules passes the text to be sanitized as the callback's 4th argument |
 | event = _txp_die_ step = _http_status_code_ | once the page's HTTP status has been determined | passes the numerical HTTP status code as the callback's _step_ (e.g., @410@, @301@, etc) allowing you to target particular status codes and take action |
