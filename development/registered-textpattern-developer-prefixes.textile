@@ -4,7 +4,7 @@ category: development
 published: true
 title: "Plugin developer prefixes"
 tags:
-  - development 
+  - development
   - plugins
   - prefixes
 ---
@@ -21,7 +21,7 @@ On this page:
 * "How to register a prefix":#sec2
 * "Registered prefixes":#sec3
 
-h2(#sec1). Guidelines for choosing and using a prefix 
+h2(#sec1). Guidelines for choosing and using a prefix
 
 There are some courtesies to keep in mind when registering a plugin prefix:
 
@@ -43,7 +43,7 @@ When you're ready to register a prefix, create an "issue" in the "user docs repo
 
 h2(#sec3). Registered prefixes
 
-The prefixes in the following table are registered, but see the guidelines above. 
+The prefixes in the following table are registered, but see the guidelines above.
 
 Prefixes are noted in relation to their owners (prefix/username). Owners are identified by their Textpattern Support Forum usernames. Usernames link to forum profiles, not personal websites (which should be indicated in the profiles anyway).
 
@@ -52,9 +52,11 @@ Legend:
 * %(error)Red% prefixes are off limits until further notice. (Notably "foo".)
 * %(warning)Yellow% prefixes are used internally by Textpattern and are off limits.
 * %(information)Blue% prefixes indicate current Textpattern core developers.
-* %(success)Green% prefixes mean the developer has abandoned the community and no plugins remain with that prefix anymore. These prefixes can be claimed by a new developer. 
+* %(success)Green% prefixes mean the developer has abandoned the community and no plugins remain with that prefix anymore. These prefixes can be claimed by a new developer.
 * (?) next to a username means no forum profile is found and the status of the prefix is questionable. If an external link is known, it will be on the "?". These prefixes could certainly be challenged for new ownership (see guidelines above).
 * **(!)** next to a username means the indicated developer has adopted all the original developer's plugins, which were abandoned (orphaned).
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Index |_. Claimed prefixes and owners (prefix/username) |
 | A | aaa/jayrope, aam/Logoleptic, aao/aurelian, aba/aba, %(warning)abc% (for user docs only), abl/"developr":http://forum.textpattern.com/profile.php?id=160386, act/angryCat (?), %(warning)add%, adi/"gomedia":http://forum.textpattern.com/profile.php?id=15145, afa/Anton, ajt/segfault, ajw/Andrew, aka/AkaScooter, akh/tweak, ako/akokskis, aks/"makss":http://forum.textpattern.com/profile.php?id=19245, akw/thekolonel, alt/GeertAki, an7/iaian7, anc/usonian, any/anyNeT, arc/"monkeyninja":http://forum.textpattern.com/profile.php?id=18747, arg/argi, aro/rloaderro, asv/variaas, asy/"Sencer":http://forum.textpattern.com/profile.php?id=462, atb/atbradley, ats/schussat, aud/Alex McKee (?) |
@@ -85,3 +87,4 @@ Legend:
 | Y | yab/"trenc":http://forum.textpattern.com/profile.php?id=14613, %(warning)yes% |
 | Z | zem/zem, zen/zenigy, zmk/maxk |
 
+notextile. </div>

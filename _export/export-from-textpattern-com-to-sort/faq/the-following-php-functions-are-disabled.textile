@@ -4,9 +4,11 @@ bq. The following PHP functions (which may be necessary to run Textpattern) are 
 
 This means your hosting company or server administrator has disabled one or PHP functions. Usually they do this in an attempt to tighten security.
 
-h2. Functions Used by Textpattern
+h2. Functions used by Textpattern
 
 The following functions are used by Textpattern.  If your diagnostics page reports any of these as disabled, your copy of Textpattern might work unreliably, or not at all.
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Name |_. Use |
 | apache_get_modules | Helps determine whether clean urls could be used at setup, and for diagnostics info. |
@@ -16,9 +18,11 @@ The following functions are used by Textpattern.  If your diagnostics page repor
 | php_uname | Provides diagnostics info regarding the server's operating system. |
 | set_time_limit | Makes sure PHP does not timeout before installation, updates (including language string changes), and file downloads can be completed. |
 
+notextile. </div>
+
 If one of these functions has been disabled on your server, you should ask your hosting service provider to enable it, or seek more suitable hosting for your Textpattern website, as there is no real reason to disable them.
 
-h2. Functions *Not* Used by Textpattern
+h2. Functions *not* used by Textpattern
 
 The following functions are *not* used by Textpattern 4.0.x releases.  If your diagnostics page reports one or more of these functions as disabled, you may safely ignore it, as they will not affect Textpattern operation in any way.
 
@@ -74,6 +78,6 @@ The following functions are *not* used by Textpattern 4.0.x releases.  If your d
 * virtual
 * wget
 
-h2. Other Functions
+h2. Other functions
 
 If you have any listed in the message but not listed here, create a new topic in the Troubleshooting forum and post the full diagnostics message.

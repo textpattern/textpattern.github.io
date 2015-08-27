@@ -22,8 +22,8 @@ h2. Plugins that use the Extensions region
 
 When you upload a plugin that uses the **Extensions** region, a secondary panel option will appear under the region that provides the configurable elements for that plugin. The following table names the plugins that will do this, and their correcponding panel labels:[1]
 
-notextile. <div class="tabular-data">
-	
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
 |_. Plugin name |_. Version (latest) |_. Resulting panel label[2] |_. Plugin function |
 | "adi_notes":http://forum.textpattern.com/viewtopic.php?id=27957 | ? | ? | ? |
 | "asy_jpcache":http://forum.textpattern.com/viewtopic.php?id=8352 | ? | ? | ? |

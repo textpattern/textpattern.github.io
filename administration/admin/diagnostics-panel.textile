@@ -34,8 +34,8 @@ h3. Low info display
 
 Low diagnostics info begins with a set of data values about your installation and server technology. A few value descriptions are provided here for general understanding, but most of the data items should be obvious.
 
-notextile. <div class="tabular-data">
-	
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
 |_. Data item |_. What it tells you |
 | Textpattern version: | the version you currently have installed |
 | Last update: | the date/time you last updated your installation |
@@ -66,7 +66,7 @@ notextile. </div>
 
 The installation and server data is followed by the contents of your __.htaccess__ file (from the installation directory). For purposes here we show the "file contents from the current version code":https://github.com/textpattern/textpattern/blob/master/.htaccess, which is the part between the two dotted lines below:
 
-bc.. .htaccess file contents: 
+bc.. .htaccess file contents:
 ------------------------
 #DirectoryIndex index.php index.html
 
@@ -98,14 +98,14 @@ bc.. .htaccess file contents:
 </IfModule>
 ------------------------
 
-p. Over time your __.htaccess__ file will change as you add your own <i>mod_rewrite</i> rules, or whatever, and the changes will reflect in the diagnostics info display. 
+p. Over time your __.htaccess__ file will change as you add your own <i>mod_rewrite</i> rules, or whatever, and the changes will reflect in the diagnostics info display.
 
 h3. High info display
 
 High diagnostics info display includes the Low info above, but adds the following information.
 
-notextile. <div class="tabular-data">
-	
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
 |_. Data item |_. What it tells you |
 | Charset (default/config): | if you don't see a lot of "UTF-8" values on these "character_set" items, you might want ask yourself why not |
 | character_set_client: | |
@@ -132,34 +132,34 @@ The **Pre-flight checks** display is where diagnostic feedback messages appear. 
 
 h3. Success (green)
 
-There is only one green message: 
+There is only one green message:
 
-%(success)All checks passed!% 
+%(success)All checks passed!%
 
 This message displays when you successfully address and/or troubleshoot all, blue, yellow, and red feedback messages that might exist. _Go green!_
 
 h3. Information (blue)
 
-Blue messages are informational only. They make you aware of something so you're informed about it, not because it's a functional problem you need to troubleshoot, necessarily. 
+Blue messages are informational only. They make you aware of something so you're informed about it, not because it's a functional problem you need to troubleshoot, necessarily.
 
-There are three possible blue messages: 
+There are three possible blue messages:
 
-* %(information)New Textpattern version n.n.n "available for download":http://textpattern.com/download.% -- This is letting you know that you're not using the latest stable release (where "n.n.n" is the latest version number). The first data item in the **"Diagnostics info":#sec1** display mentioned earlier will indicate your current working version. This blue message is not saying you have to update your installation, but it's good practice to do so for "security":http://docs.textpattern.io/security/ reasons, if nothing else. 
+* %(information)New Textpattern version n.n.n "available for download":http://textpattern.com/download.% -- This is letting you know that you're not using the latest stable release (where "n.n.n" is the latest version number). The first data item in the **"Diagnostics info":#sec1** display mentioned earlier will indicate your current working version. This blue message is not saying you have to update your installation, but it's good practice to do so for "security":http://docs.textpattern.io/security/ reasons, if nothing else.
 * %(information)Clean URLs are only supported on Apache, use at your own risk.% -- This only appears if you're _not_ using an Apache web server. The assumption is that you know what you're doing so it's not a real warning (yellow) or error (red) message. If the assumption is true, you can ignore this message.
 * %(information)File uploads are disabled% -- This appears if the permissions you have set on your __files__ folder in the installation tree is read only. The assumption is that you've consciously made this choice, so you can ignore this message. If you want the message to go away, make the files folder writable.[1]
 
-h3. Warning (yellow) 
+h3. Warning (yellow)
 
 Yellow (warning) messages are not critical, per se, and sometimes can even be cascading[2] or false.[3] But when warnings are accurate, they mean something specific needs resolved in order to work correctly.
 
-There are several possible warning messages. Where no description is given below, you are advised to look at the UI information for the warnings by clicking the "Information" icon at right of the **Pre-flight check** items: 
+There are several possible warning messages. Where no description is given below, you are advised to look at the UI information for the warnings by clicking the "Information" icon at right of the **Pre-flight check** items:
 
 * path_to_site_missing %(warning)txp_lang phrase needed here%
 * %(warning)DNS lookup failed: {site URL}% -- This means the "Site URL" preference you have entered in the **"Basic preferences":preferences/basic-prefs-panel** panel is probably incorrect somehow. Check the value and make sure it's entered exactly like this, @domain.tld@, using your domain name and TLD extension.
 * %(warning)Site URL preference might be incorrect: {site URL}% -- Similar to the previous message, this is suggesting the "Site URL" as set in the preferences tab does not match the actual URL you use to visit your website.
 * %(warning)Clean URL test failed.% -- This is not necessarily an error, and could appear for different reasons. Check the help information. It could be caused by the PHP configuration setting of @allow_url_fopen@, or some other hosting issue, or it might go away by fixing other warning messages.
 * %(warning)Site URL has a trailing slash% --
-* %(warning){path} still exists% -- This means you need to remove the "setup" folder from the web server. The path to the folder respective to your installation will be shown.  
+* %(warning){path} still exists% -- This means you need to remove the "setup" folder from the web server. The path to the folder respective to your installation will be shown.
 * %(warning)image directory is read-only% -- This means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[1]
 * no_temp_dir %(warning)txp_lang phrase needed here%
 * warn_mail_unavailable %(warning)txp_lang phrase needed here%
@@ -179,7 +179,7 @@ fn3. **False errors:** On rare occasions, yellow and red messages have been know
 
 h3. Error (red)
 
-Red messages mean something critical appears to be wrong and you need to troubleshoot it immediately. 
+Red messages mean something critical appears to be wrong and you need to troubleshoot it immediately.
 
 Possible red messages include:
 
@@ -189,14 +189,14 @@ Possible red messages include:
 * %(error)@$path_to_site@ is inaccessible.% -- This means either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
 * %(error){dirtype} is not writable% --
 * %(error)Apache module mod_rewrite is not installed.% --
-* %(error)Old placeholder file is in the way% -- This likely means you have created an actual folder in your server file tree that shares a name with a __section__ you created in the **Sections** panel, or visa versa. This can break your site. You need to rename or remove one or the other. 
+* %(error)Old placeholder file is in the way% -- This likely means you have created an actual folder in your server file tree that shares a name with a __section__ you created in the **Sections** panel, or visa versa. This can break your site. You need to rename or remove one or the other.
 * %(error)Missing files% --
 * mysql_table_errors %(error)txp_lang phrase needed here%
 * %(error)Temporary directory path and Plugin cache directory path should **not*** match.% -- This means paths to your plugin cache and __tmp__ locations are the same. Neither should be web accessible, but if you set them to the same location, a temp file could overwrite a plugin, and that would be bad. Create a different folder location for your plugin cache.
 
 h2(#sec3). Diagnostic reporting on PHP functions
 
-Textpattern requires certain PHP functions to be enabled for your website to work properly, or to work at all. Your website administrator or web host will be in control of these, and may have certain functions turned off for "security" reasons. 
+Textpattern requires certain PHP functions to be enabled for your website to work properly, or to work at all. Your website administrator or web host will be in control of these, and may have certain functions turned off for "security" reasons.
 
 Diagnostics can tell you if any of these necessary functions are disabled. You'll see this pre-flight check warning: %(warning)The following PHP functions (which may be necessary to run Textpattern) are disabled on your server...%.
 
@@ -206,7 +206,7 @@ h3. Functions used by Textpattern
 
 The following functions are used by Textpattern. If your diagnostics reports any of these as _disabled_, you need to get in touch with your web server administrator or web host and explain why you need them turned on (for your Textpattern site to work). Point them to this page, if you want. If they won't help you, find a more suitable web host, because there is no real reason to disable these functions.
 
-notextile. <div class="tabular-data">
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Name |_. Use |
 | apache_get_modules | Helps determine whether clean urls could be used at setup, and for diagnostics info. |

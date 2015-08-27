@@ -4,7 +4,7 @@ category: administration
 published: true
 title: "User role types and privileges"
 tags:
-  - users 
+  - users
   - roles
   - privileges
   - account types
@@ -30,6 +30,8 @@ h2(#sec1). Roles in terms of panel access
 
 The following table shows user roles versus access to admin-side panels. If a role has access to a given panel, it's indicated with "X". (The primary regions -- **Content**, **Presentation**, and **Admin** -- are not actual panel locations so marked out with hyphens.)
 
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
 |_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
 |_. Content | - | - | - | - | - | - | - |
 |_. Articles | X |  |  |  |  |  |  |
@@ -53,6 +55,8 @@ The following table shows user roles versus access to admin-side panels. If a ro
 |_. Language, prefs | X |  |  |  |  |  |  |
 |_. Users | X | X | X | X | X | X |  |
 |_. Visitor logs | X |  |  |  |  |  |  |
+
+notextile. </div>
 
 fn1. "None":#sec2-7 is an actual role, but has no access to any panels.
 
