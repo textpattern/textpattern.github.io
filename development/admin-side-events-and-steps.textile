@@ -12,8 +12,6 @@ tags:
   - callbacks
 ---
 
-"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Admin-side events and steps**
-
 h1. Admin-side events and steps
 
 These are the main events and steps that Textpattern uses as you interact with the admin-side interface. Although they are not direct "callbacks":http://docs.textpattern.io/development/core-callback-list, you may hook into these events and steps from a plugin to perform an action.

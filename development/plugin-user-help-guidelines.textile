@@ -10,8 +10,6 @@ tags:
   - guidelines
 ---
 
-"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Plugin user-help guidelines**
-
 h1. Plugin user-help guidelines
 
 Use this template and its associated guidelines when writing your plugin's user instructions.[1] Doing so will make it easier for you, as well result in plugin help that's complete, consistent across other developer plugins (improved user experience), and more usable (intuitive and easy to navigate). 

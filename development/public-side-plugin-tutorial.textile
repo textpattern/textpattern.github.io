@@ -12,8 +12,6 @@ tags:
   - tutorial
 ---
 
-"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Public-side plugin tutorial**
-
 h1. Public-side plugin tutorial
 
 This tutorial will walk you through the basics of creating a simple public-side plugin; not to be used, exactly, but so you understand what's involved.

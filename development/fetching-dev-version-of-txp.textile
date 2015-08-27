@@ -12,8 +12,6 @@ tags:
   - repository
 ---
 
-"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development ⨠ **Fetching development version of Textpattern*
-
 h1. Fetching development version of Textpattern
 
 The "Textpattern source code":https://github.com/textpattern/textpattern is stored in a git repository at Github. The important endpoints are:

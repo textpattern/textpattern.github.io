@@ -9,8 +9,6 @@ tags:
   - template
 ---
 
-"ToC":http://docs.textpattern.io ⨠ "Development":http://docs.textpattern.io/development/ ⨠ **Plugin template**
-
 h1. Plugin template
 
 Textpattern plugins are perhaps best thought of as functions supplementary to those found in __textpattern/publish/taghandlers.php__. Functions residing in this file respond to @<txp:foo />@ and @<txp:foo>bar</txp:foo>@ tags found in __pages__, __forms__, __articles__ and other dynamic content containers in Textpattern. A "Textpattern plugin template":https://github.com/textpattern/textpattern-plugin-template is available on Github for plugin distribution.
@@ -32,7 +30,7 @@ In addition to the LICENSE and README files, the "plugin template":https://githu
 
 h2(#sec2). Typical template use 
 
-Here are some typical commands (via command-line) that you'll probably use:
+Typical commands (via command-line) that you'll probably use:
 
 bc. $ cp zem_plugin.php abc_myplugin.php
 [edit abc_myplugin.php]
@@ -42,7 +40,7 @@ $ php abc_myplugin.php > abc_myplugin-0.1.txt
 
 h2(#sec3). Helpful notes
 
-A few important and helpful notes.
+Important and helpful notes:
 
 # Whatever is returned by the plugin function will be output by the corresponding @<txp:plugin_name />@ tag.
 # Plugin functions have access to all the functions available to __publish.php__, including everything in __textpattern/lib__. (Further reference on these resources is forthcoming.)
