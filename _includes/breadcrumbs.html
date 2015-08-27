@@ -10,24 +10,23 @@
         {% if page.url contains 'index' %}
             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                 <b itemprop="item">
-                    <span itemprop="name">THIS IS A SECTION INDEX</span>
+                    <span itemprop="name">{{ page.title }}</span>
                 </b>
                 <meta itemprop="position" content="2">
             </li>
         {% else %}
             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                 <a itemprop="item" href="./">
-                    <span itemprop="name">THIS IS NOT A SECTION INDEX</span>
+                    <span itemprop="name">TODO: SECTION INDEX NAME</span>
                 </a>
                 <meta itemprop="position" content="2">
             </li>
+            <li class="current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <b itemprop="item">
+                    <span itemprop="name">{{ page.title }}</span>
+                </b>
+                <meta itemprop="position" content="3">
+            </li>
         {% endif %}
-
-        <li class="current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <b itemprop="item">
-                <span itemprop="name">{{ page.title }}</span>
-            </b>
-            <meta itemprop="position" content="todo">
-        </li>
     </ol>
 </nav>
