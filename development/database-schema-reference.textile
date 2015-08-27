@@ -300,9 +300,11 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | code_md5 | varchar(32) | Checksum of the original plugin code |
 | type | integer | Where is the plugin loaded (0 = public, 1 = always, 2 = never, 3 = admin) |
 | load_order | integer | Order in which this plugin will be loaded (1 = first, 9 = last). By default set to 5, which should not be changed unless you know what you're doing |
-| flags | smallint (unsigned) | 16-bit value which signals the presence of optional capabilities to the core plugin loader. The four high-order bits 0xf000 are available for private use. "More info":http://www.textpattern.net/wiki/index.php?title=Plugin_Development_Guidelines#Plugin_lifecycle_management_.26_prefs. |
+| flags | smallint (unsigned) | 16-bit value which signals the presence of optional capabilities to the core plugin loader. The four high-order bits 0xf000 are available for private use.[2] |
 
 notextile. </div>
+
+fn2. See "Plugin lifecycle management and preferences":http://docs.textpattern.io/development/#sec9 for more info.
 
 h2(#sec15). txp_prefs
 
