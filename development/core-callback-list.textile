@@ -16,16 +16,16 @@ The following is a list of callbacks in Textpattern.
 
 h2(#sec1). Regular public-side callbacks
 
-The _publish.php_ callback.
+**_publish.php_**
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
-|_. Name type and value |_. Description |
-| event = _pretext_ | occurs at the very top of the  @pretext()@ function, just after the prefs have been extracted |
-| event = _pretext_end_ | occurs just after @pretext()@ has run but before its variables have been extracted into the global scope; useful for overriding anything set in @pretext()@ or adding variables to it |
-| event = _file_download_ | occurs as soon as a file_download is detected, allowing you to intercept the regular file downloading process |
-| event = _textpattern_ | occurs just before the page is rendered |
-| event = _textpattern_end_ | occurs once the page has been fully rendered |
+|_. Name type and value |_. When it occurs |
+| event = _pretext_ | at the very top of the  @pretext()@ function, just after the prefs have been extracted |
+| event = _pretext_end_ | just after @pretext()@ has run but before its variables have been extracted into the global scope; useful for overriding anything set in @pretext()@ or adding variables to it |
+| event = _file_download_ | as soon as a file_download is detected, allowing you to intercept the regular file downloading process |
+| event = _textpattern_ | just before the page is rendered |
+| event = _textpattern_end_ | once the page has been fully rendered |
 
 notextile. </div>
 
@@ -33,9 +33,9 @@ The _publish/atom.php_ callback.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. Name type and value |_. Description |
-|event = _atom_head_ | occurs after the feed's header has been set allows you to add items to the feed's header |
-| event = _atom_entry_ | occurs as soon as the article's data has been populated allows you to inject extra markup after the standard feed items have been generated |
+|_. Name type and value |_. When it occurs |
+|event = _atom_head_ | after the feed's header has been set allows you to add items to the feed's header |
+| event = _atom_entry_ | as soon as the article's data has been populated allows you to inject extra markup after the standard feed items have been generated |
 
 notextile. </div>
 
