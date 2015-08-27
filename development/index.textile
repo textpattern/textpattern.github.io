@@ -191,7 +191,7 @@ fn3. *Attention!* Though it's possible to completely redesign the HTML markup wi
 
 h4(#sec6-3-1). Adding your own admin-side panel elements
 
-When we talk about "elements" in these examples, we simply mean anything on a given admin panel that a user will see or interact with, such as a panel section or more of its contained form controls.
+When we talk about "elements" in these examples, we simply mean anything on a given admin panel that a user will see or interact with, such as a panel section or one or more of its contained form controls.
 
 There are two ways elements can be added to an admin-side panel: as new elements entirely, or to the existing markup.
 
