@@ -3,7 +3,6 @@ layout: document
 category: tags
 published: true
 title: "Tag reference index"
-breadcrumb: "Tag reference index"
 tags:
 ---
 
