@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Article custom"
+breadcrumb: "Article custom"
 tags:
   - Article tags
 ---
