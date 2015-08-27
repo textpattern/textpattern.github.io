@@ -9,7 +9,7 @@ On this page are guidelines for doc authors:
 * "Document page structure":#sec2
 * "Concise copywriting tips":#sec3
 * "Brand identity":#sec4
-* "Admin-side references":#sec5
+* "Administration-side references":#sec5
 * "Typo gotchas to watch out for":#sec6
 
 h2(#sec1). Filename (URL) conventions
@@ -54,7 +54,7 @@ h2(#sec4). Brand identity
 
 * Do not use "Txp" and "TXP". While these pet uses are convenient in the support forum, they lend confusion to brand awareness in official docs. The world is still confused between "Textpattern" vs. "TextPattern", for example. Always spell "Textpattern" out fully. This will also help you see if you're using the name too repetitively, which can be a sentence bloat problem.
 
-h2(#sec5). Aministration-side references
+h2(#sec5). Administration-side references
 
 Important rules for consistency, which also has implications for plugin authors.[1]
 
