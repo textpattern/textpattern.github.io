@@ -10,7 +10,9 @@ The following functions are used by Textpattern.  If your diagnostics page repor
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
+|^.
 |_. Name |_. Use |
+|-.
 | apache_get_modules | Helps determine whether clean urls could be used at setup, and for diagnostics info. |
 | apache_get_version | Helps provide diagnostics info regarding clean urls. |
 | parse_ini_file | Language features, even if English is used. |

@@ -58,7 +58,9 @@ Legend:
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
+|^.
 |_. Index |_. Claimed prefixes and owners (prefix/username) |
+|-.
 | A | aaa/jayrope, aam/Logoleptic, aao/aurelian, aba/aba, %(warning)abc% (for user docs only), abl/"developr":http://forum.textpattern.com/profile.php?id=160386, act/angryCat (?), %(warning)add%, adi/"gomedia":http://forum.textpattern.com/profile.php?id=15145, afa/Anton, ajt/segfault, ajw/Andrew, aka/AkaScooter, akh/tweak, ako/akokskis, aks/"makss":http://forum.textpattern.com/profile.php?id=19245, akw/thekolonel, alt/GeertAki, an7/iaian7, anc/usonian, any/anyNeT, arc/"monkeyninja":http://forum.textpattern.com/profile.php?id=18747, arg/argi, aro/rloaderro, asv/variaas, asy/"Sencer":http://forum.textpattern.com/profile.php?id=462, atb/atbradley, ats/schussat, aud/Alex McKee (?) |
 | B | bab/benbruce, bau/bauhouse, bas/Bastian, beb/1beb, ben/Baseline_Benny, bep/alice_c, bit/bit, bkp/AkaScooter, bnk/Duncan Clarke (forum profile unknown), bos/Zanza, bot/"redbot":http://forum.textpattern.com/profile.php?id=8379, bsl/polygon_monkey, btx/DougBTX, bud/andyb |
 | C | cbe/"CeBe":http://forum.textpattern.com/profile.php?id=76735, cbs/cbeyls, cfm/"aeonflux":http://forum.textpattern.com/profile.php?id=8082, cgd/Caged, cha/"chalito":http://forum.textpattern.com/profile.php?id=13435, chh/takshaka, chu/charmston, cjm/"chrismc":http://forum.textpattern.com/profile.php?id=2333, ckr/Cedric, cng/chess, cnj/octover, cnk/chriloi, cnn/cnewkirk, cno/"cnolle":http://forum.textpattern.com/profile.php?id=454, csb/csandberg, %(warning)css%, cxc/"cXc":http://forum.textpattern.com/profile.php?id=106730, cti/Celti, czg/cziggurat |
