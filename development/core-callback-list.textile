@@ -129,103 +129,146 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 |_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
 | @article_posted@ | - | immediately after article creation | - |
 | @article_saved@ | - | immediately after article update/save | - |
-| ping | - | just before a ping notification is sent upon publication of an article so you may intercept the ping and provide your own | - |
-| @article_ui@ | @partials_meta@ | - | alters or augments the interface, usually based on the data sent to/from the AJAX save process; argument #3 is the record set of the article being edited; argument #4 is the partials array, which comprises: *_key_* unique name of the item available to alter, then an array: *_mode_* the mechanism by which the partial may be updated *_selector_* the wholly encapsulated DOM selector to which the partial applies *_callback_* the callback function to utilise to update the nominated part of the interface *_html_* (optional) return value of the callback function |
+| ping | - | just before a ping notification is sent upon publication of an article | so you may intercept the ping and provide your own |
+| @article_ui@ | @partials_meta@ | - | alters or augments the interface, usually based on the data sent to/from the AJAX save process; argument #3 is the record set of the article being edited; argument #4 is the partials array comprised of a *_key_* (unique name of the item available to alter), then an array: *_mode_* (the mechanism by which the partial may be updated), *_selector_* (the wholly encapsulated DOM selector to which the partial applies), *_callback_* (the callback function to utilise to update the nominated part of the interface), and *_html_* (an optional return value of the callback function) |
 
 notextile. </div>
 
 **_include/txp_diag.php_**
 
-*event = _diag_results_ step = _high_ or _low_*
- occurs at the end of the @doDiagnostics()@ function for rendering the content of the Admin→Diagnostics panel allows you to add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low)
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @diag_results@ | @high@ or @low@ | at the end of the @doDiagnostics()@ function | renders the content of the **"Diagnostics":http://docs.textpattern.io/administration/admin/diagnostics-panel** panel; allows you to add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low) |
+
+notextile. </div>
 
 **_include/txp_admin.php_**
 
-*event = _authors_deleted_*
- occurs just after user(s) have been deleted and all assets have been reassigned an array of deleted user names is passed as a parameter
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @authors_deleted@ | - | just after user(s) have been deleted and all assets have been reassigned |  passes an array of deleted user names as a parameter |
+
+notextile. </div>
 
 **_include/txp_category.php_**
 
-*event = _categories_deleted_*
- occurs just after one or more categories have been deleted and the tree has been rebuilt an array of deleted category IDs is passed as a parameter
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @categories_deleted@ | - | just after one or more categories have been deleted and the tree has been rebuilt | passes an array of deleted category IDs as a parameter |
+
+notextile. </div>
 
 **_include/txp_css.php_**
 
-*event = _css_deleted_*
- occurs just after a stylesheet has been deleted the name of the deleted stylesheet is passed as a parameter
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @css_deleted@ | - | just after a stylesheet has been deleted | passes the name of the deleted stylesheet as a parameter |
+
+notextile. </div>
 
 **_include/txp_discuss.php_**
 
-*event = _discuss_deleted_*
- occurs just after one or more comments have been deleted, but _before_ the comment counts have been updated in the affected articles an array of the deleted comment IDs is passed as a parameter
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @discuss_deleted@ | - | just after one or more comments have been deleted, but _before_ the comment counts have been updated in the affected articles | passes an array of the deleted comment IDs as a parameter |
+
+notextile. </div>
 
 **_include/txp_file.php_**
 
-*event = _file_deleted_*
- occurs just _before_ each file is deleted the first additional parameter is the file's ID the second additional parameter is the full path to the file
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @file_deleted@ | - | just _before_ each file is deleted | first additional parameter is the file's ID; second additional parameter is the full path to the file |
+
+notextile. </div>
 
 **include/txp_form.php**
 
-*event = _forms_deleted_*
- occurs just after one or more forms have been deleted an array of deleted form names is passed as a parameter
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @forms_deleted@ | - | just after one or more forms have been deleted | passes an array of deleted form names as a parameter |
+
+notextile. </div>
 
 **_include/txp_image.php_**
 
-*event = _image_deleted_ step = _image_*
- occurs just before an image and its thumbnail are deleted the image ID is passed as a parameter *event = _image_uploaded_ step = _image_*
- occurs just after an image has been uploaded or replaced by another image. The image ID is passed as a parameter
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @image_deleted@ | @image@ | just before an image and its thumbnail are deleted | passes the image ID  as a parameter |
+| @image_uploaded@ | @image@ | just after an image has been uploaded or replaced by another image | passes the image ID as a parameter |
+
+notextile. </div>
 
 **_include/txp_link.php_**
 
-*event = _links_deleted_*
- occurs just after one or more links have been deleted an array of deleted link IDs is passed as a parameter
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @links_deleted@ | - | just after one or more links have been deleted | passes an array of deleted link IDs as a parameter |
+
+notextile. </div>
 
 **_include/txp_list.php_**
 
-*event = _articles_deleted_*
- occurs just after one or more articles have been deleted and any associated comments have had their visibility removed an array of deleted article IDs is passed as a parameter
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @articles_deleted@ | - | just after one or more articles have been deleted and any associated comments have had their visibility removed | passes an array of deleted article IDs as a parameter |
+
+notextile. </div>
 
 **_include/txp_page.php_**
 
-*event = _page_deleted_*
- occurs just after a page template has been deleted the name of the deleted page is passed as a parameter
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @page_deleted@ | - | just after a page template has been deleted | passes the name of the deleted page as a parameter |
+
+notextile. </div>
 
 **_include/txp_section.php_**
 
-*event = _sections_deleted_*
- occurs just after one or more sections have been deleted an array of deleted section names is passed as a parameter
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @sections_deleted@ | - | just after one or more sections have been deleted | passes an array of deleted section names as a parameter |
+
+notextile. </div>
 
 h2(#sec5). Admin-side criteria callbacks
 
-These callbacks allow you to alter the criteria that are used in the various panels. You can append SQL to the criteria so you may apply additional filtering.
+These callbacks allow you to alter the criteria used in the various panels. You can append SQL to the criteria so you may apply additional filtering. 
 
-Note that the criteria is _appended_ so existing search parameters are honoured. Therefore your returned statement should begin with
+Note that the criteria is _appended_, so existing search parameters are honoured. Therefore your returned statement should begin with @" AND ..."@. If you wish to ignore any previous filtering, begin @" AND 1 AND ..."@.
 
-bc. " AND ..."
-
-
-. If you wish to ignore any previous filtering, begin with
-
-bc. " AND 1 AND ..."
-
-
-.
-
-The third argument to your callback function contains the current criteria used so you may make decisions based on its contents (for example, you may not want to filter the results if a search has been performed).
+The third argument to your callback function contains the current criteria used so you may make decisions based on its contents (e.g., you may not want to filter the results if a search has been performed).
 
 The callbacks all have event = _admin_criteria_ and the following steps:
 
-* Articles panel: _list_list_
-* Comments panel: _discuss_list_
-* Files panel: _file_list_
-* Forms panel: _form_list_
-* Images panel: _image_list_
-* Links panel: _link_list_
-* Pages panel: _page_list_
-* Sections panel: _section_list_
-* Styles panel: _css_list_
-* Users panel: _author_list_
-* Visitor logs panel: _log_list_
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. Panel |_. @$event@ |_. @$step@ |
+| "Articles":http://docs.textpattern.io/administration/content/articles-panel | @admin_criteria@ | list_list |
+| "Comments":http://docs.textpattern.io/administration/content/comments-panel | @admin_criteria@ | discuss_list |
+| "Files":http://docs.textpattern.io/administration/content/files-panel | @admin_criteria@ | file_list |
+| "Forms":http://docs.textpattern.io/administration/presentation/forms-panel | @admin_criteria@ | form_list |
+| "Images":http://docs.textpattern.io/administration/content/images-panel | @admin_criteria@ | image_list |
+| "Links":http://docs.textpattern.io/administration/content/links-panel | @admin_criteria@ | link_list |
+| "Pages":http://docs.textpattern.io/administration/presentation/pages-panel | @admin_criteria@ | page_list |
+| "Sections":http://docs.textpattern.io/administration/presentation/sections-panel | @admin_criteria@ | section_list |
+| "Styles":http://docs.textpattern.io/administration/presentation/styles-panel | @admin_criteria@ | css_list |
+| "Users":http://docs.textpattern.io/administration/admin/users-panel | @admin_criteria@ | author_list |
+| "Visitor logs":http://docs.textpattern.io/administration/admin/visitor-logs-panel | @admin_criteria@ | log_list |
+
+notextile. </div>
 
 h2(#sec6). Admin side validation callbacks
 
