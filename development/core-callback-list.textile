@@ -276,9 +276,10 @@ These callbacks allow you to alter or append to the constraints imposed by the c
 
 Inside plugins, you may wish to open up or restrict data in certain types of actions, or create entirely new constraints and take advantage of the built-in validator. If so, these callbacks are the ones to use.
 
-Argument #3 is the incoming array of values posted from the save operation, unsanitized. Argument #4 is the array of constraints.
+These additional arguments are all passed by reference to your application, so you can alter them directly:
 
-Note that these additional arguments are all passed by reference to your application, so you can alter them directly.
+* Argument #3 is the incoming array of values posted from the save operation, unsanitized. 
+* Argument #4 is the array of constraints.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -296,54 +297,68 @@ h2(#sec7). pluggable_ui() callbacks
 
 Argument #1 passed to your function is the _event_ and argument #2 is the _step_. Arguments 3 and 4 (and occasionally 5) vary depending on the functionality of the UI component. In general, the following holds true unless otherwise stated:
 
-* argument #3 is the default markup
-* argument #4 is the record set of the item that is being edited (if applicable)
+* Argument #3 is the default markup.
+* Argument #4 is the record set of the item that is being edited (if applicable).
 
 Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
 
-h4(#write_panel_code_include_txp_articlephp_code). Write panel (&lt;code&gt;include/txp_article.php&lt;/code&gt;)
+**@include/txp_article.php@**
 
-All of the UI elements on this page have the same event = _article_ui_.
+For the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel.
 
-*step = _sidehelp_*
- allows you to replace or alter the 'Textile Help' lever and its entire contents *step = _extend_col_1_*
- allows you to add your own markup below the sidehelp argument #3 is empty as there is no default content here *step = _markup_*
- allows you to replace or alter the two select lists for article and excerpt markup *step = _override_*
- allows you to alter or replace the _override form_ select list *step = _view_*
- allows you to alter or replace the view/HTML/Preview icons *step = _sort_display_*
- allows you to alter or replace the _section_ and _category_ select lists *step = _timestamp_*
- allows you to alter or replace the article's posted timestamp area *step = _expires_*
- allows you to alter or replace the article expiry area *step = _custom_fields_*
- allows you to alter or replace the block of custom field input controls *step = _keywords_*
- allows you to alter or replace the keywords area *step = _article_image_*
- allows you to alter or replace the article_image area *step = _url_title_*
- allows you to alter or replace the URL title input area *step = _recent_articles_*
- allows you to alter or replace the recent articles list *step = _title_*
- allows you to alter or replace the article's title element *step = _body_*
- allows you to alter or replace the article's body element *step = _excerpt_*
- allows you to alter or replace the article's excerpt element *step = _author_*
- allows you to alter or replace the author / published-at info *step = _status_*
- allows you to alter or replace the article's status area *step = _categories_*
- allows you to alter or replace the article's category1/category2 area *step = _section_*
- allows you to alter or replace the article's section select list *step = _annotate_invite_*
- allows you to alter or replace the article's comments on/off and comments invite area
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-h4(#categories_panel_code_include_txp_categoryphp_code). Categories panel (&lt;code&gt;include/txp_category.php&lt;/code&gt;)
+|_. Panel |_. @$event@ |_. @$step@ |_. What it alters or replaces |
+| Write | @article_ui@ | @sidehelp@ | the 'Textile Help' lever and its entire contents |
+| Write | @article_ui@ | @extend_col_1@ | *adds* (not alters or replaces) your own markup below the @sidehelp@; argument #3 is empty as there is no default content here |
+| Write | @article_ui@ | @markup@ | the two select lists for article and excerpt markup |
+| Write | @article_ui@ | @override@ | the _override form_ select list |
+| Write | @article_ui@ | @view@ | the view/HTML/Preview icons |
+| Write | @article_ui@ | @sort_display@ | the _section_ and _category_ select | lists |
+| Write | @article_ui@ | @timestamp@ | the article's posted timestamp area |
+| Write | @article_ui@ | @expires@ | the article expiry area |
+| Write | @article_ui@ | @custom_fields@ | the block of custom field input controls |
+| Write | @article_ui@ | @keywords@ | the keywords area |
+| Write | @article_ui@ | @article_image@ | the article_image area |
+| Write | @article_ui@ | @url_title@ | the URL title input area |
+| Write | @article_ui@ | @recent_articles@ | the recent articles list |
+| Write | @article_ui@ | @title@ | the article's title element |
+| Write | @article_ui@ | @body@ | the article's body element |
+| Write | @article_ui@ | @excerpt@ | the article's excerpt element |
+| Write | @article_ui@ | @author@ | the author / published-at info |
+| Write | @article_ui@ | @status@ | the article's status area |
+| Write | @article_ui@ | @categories@ | the article's category1/category2 area |
+| Write | @article_ui@ | @section@ | the article's section select list | 
+| Write | @article_ui@ | @annotate_invite@ | the article's comments on/off and comments invite area |
 
-*event = _category_ui_ step = _extend_detail_form_*
- allows you to add markup above the category _Save_ button when editing an individual category argument #3 is empty because there is no default content
+notextile. </div>
 
-h4(#images_panel_code_include_txp_imagephp_code). Images panel (&lt;code&gt;include/txp_image.php&lt;/code&gt;)
+**_include/txp_category.php_**
 
-*event = _image_ui_ step = _extend_controls_*
- allows you to add markup to the txp-control-panel area argument #3 is empty because there is no default content *event = _image_ui_ step = _extend_detail_form_*
- allows you to add markup above the image _Save_ button when editing an image argument #3 is empty because there is no default content *event = _image_ui_ step = _thumbnail_*
- allows you to alter/replace the thumbnail in the image list *event = _image_ui_ step = _fullsize_image_*
- allows you to alter/replace the main image in the image edit panel *event = _image_ui_ step = _image_edit_*
- allows you to alter/replace the area containing the upload (replace) image form *event = _image_ui_ step = _thumbnail_image_*
- allows you to alter/replace the thumbnail image in the image edit panel *event = _image_ui_ step = _thumbnail_edit_*
- allows you to alter/replace the area containing the thumbnail upload form *event = _image_ui_ step = _thumbnail_create_*
- allows you to alter/replace the 'thumbnail create' area containing the width / height input fields and crop checkbox
+For the **"Categories":http://docs.textpattern.io/administration/content/categories-panel** panel.
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |
+| Categories | @category_ui@ | @extend_detail_form@ | adds markup above the category _Save_ button when editing an individual category argument #3 is empty because there is no default content |
+
+notextile. </div>
+
+include/txp_image.php
+
+For the **"Images":http://docs.textpattern.io/administration/content/images-panel** panel.
+
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |
+| Images | @image_ui@ | @extend_controls@ | adds markup to the txp-control-panel area; argument #3 is empty because there is no default content |
+| Images | @image_ui@ | @extend_detail_form@ | adds markup above the image **Save** button when editing an image argument #3 is empty because there is no default content |
+| Images | @image_ui@ | @thumbnail@ | alters or replaces the thumbnail in the image list |
+| Images | @image_ui@ | @fullsize_image@ | alters or replaces the main image in the image edit panel |
+| Images | @image_ui@ | @image_edit@ | alters or replaces the area containing the upload (replace) image form |
+| Images | @image_ui@ | @thumbnail_image@ | alters or replaces the thumbnail image in the image edit panel |
+| Images | @image_ui@ | @thumbnail_edit@ | alters or replaces the area containing the thumbnail upload form |
+| Images | @image_ui@ | @thumbnail_create@ | alters or replaces the 'thumbnail create' area containing the width / height input fields and crop checkbox |
+
+notextile. </div>
 
 h4(#files_panel_code_include_txp_filephp_code). Files panel (&lt;code&gt;include/txp_file.php&lt;/code&gt;)
 
