@@ -27,7 +27,9 @@ On this page:
 
 h2(#sec1). Regular public-side callbacks
 
-**_publish.php_**
+[todo:intro line about regular callbacks]
+
+h3. __publish.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
@@ -40,7 +42,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_publish/atom.php_**
+h3. __publish/atom.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -50,7 +52,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_publish/rss.php_**
+h3. __publish/rss.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -60,7 +62,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_publish/comment.php_**
+h3. __publish/comment.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -71,7 +73,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_publish/log.php_**
+h3. __publish/log.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
