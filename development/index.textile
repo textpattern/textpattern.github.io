@@ -16,9 +16,9 @@ On this page:
 
 * "Disclaimer":#sec1
 * "Developer rules of the road":#sec2
-** "Avoid reinventing the wheel"#sec2-1
-** "Do it the Textpattern way"#sec2-2
-** "Write clear and concise plugin help"#sec2-3
+** "Avoid reinventing the wheel":#sec2-1
+** "Do it the Textpattern way":#sec2-2
+** "Write clear and concise plugin help":#sec2-3
 * "What is a plugin?":#sec3
 ** "Functional categories":#sec3-1
 ** "Public-side plugins":#sec3-2 (with tutorial)
