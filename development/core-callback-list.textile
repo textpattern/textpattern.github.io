@@ -256,23 +256,23 @@ The callbacks all have event = _admin_criteria_ and the following steps:
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. @$event@ |_. @$step@ |
-| "Articles":http://docs.textpattern.io/administration/content/articles-panel | @admin_criteria@ | list_list |
+| "Articles":http://docs.textpattern.io/administration/content/articles-panel | @admin_criteria@ | @list_list@ |
 | "Comments":http://docs.textpattern.io/administration/content/comments-panel | @admin_criteria@ | discuss_list |
-| "Files":http://docs.textpattern.io/administration/content/files-panel | @admin_criteria@ | file_list |
-| "Forms":http://docs.textpattern.io/administration/presentation/forms-panel | @admin_criteria@ | form_list |
-| "Images":http://docs.textpattern.io/administration/content/images-panel | @admin_criteria@ | image_list |
+| "Files":http://docs.textpattern.io/administration/content/files-panel | @admin_criteria@ | @file_list@ |
+| "Forms":http://docs.textpattern.io/administration/presentation/forms-panel | @admin_criteria@ | @form_list@ |
+| "Images":http://docs.textpattern.io/administration/content/images-panel | @admin_criteria@ | @image_list@ |
 | "Links":http://docs.textpattern.io/administration/content/links-panel | @admin_criteria@ | link_list |
-| "Pages":http://docs.textpattern.io/administration/presentation/pages-panel | @admin_criteria@ | page_list |
-| "Sections":http://docs.textpattern.io/administration/presentation/sections-panel | @admin_criteria@ | section_list |
-| "Styles":http://docs.textpattern.io/administration/presentation/styles-panel | @admin_criteria@ | css_list |
-| "Users":http://docs.textpattern.io/administration/admin/users-panel | @admin_criteria@ | author_list |
-| "Visitor logs":http://docs.textpattern.io/administration/admin/visitor-logs-panel | @admin_criteria@ | log_list |
+| "Pages":http://docs.textpattern.io/administration/presentation/pages-panel | @admin_criteria@ | @page_list@ |
+| "Sections":http://docs.textpattern.io/administration/presentation/sections-panel | @admin_criteria@ | @section_list@ |
+| "Styles":http://docs.textpattern.io/administration/presentation/styles-panel | @admin_criteria@ | @css_list@ |
+| "Users":http://docs.textpattern.io/administration/admin/users-panel | @admin_criteria@ | @author_list@ |
+| "Visitor logs":http://docs.textpattern.io/administration/admin/visitor-logs-panel | @admin_criteria@ | @log_list@ |
 
 notextile. </div>
 
 h2(#sec6). Admin side validation callbacks
 
-The following callbacks allow you to alter or append to the constraints imposed by the core when saving data. Textpattern will check that the passed values for things like categories, sections, and so forth actually exist in the database to avoid new ones being introduced at unexpected places.
+These callbacks allow you to alter or append to the constraints imposed by the core when saving data. Textpattern will check that the passed values for things like categories, sections, and so forth actually exist in the database to avoid new ones being introduced at unexpected places.
 
 Inside plugins, you may wish to open up or restrict data in certain types of actions, or create entirely new constraints and take advantage of the built-in validator. If so, these callbacks are the ones to use.
 
@@ -280,39 +280,17 @@ Argument #3 is the incoming array of values posted from the save operation, unsa
 
 Note that these additional arguments are all passed by reference to your application, so you can alter them directly.
 
-h4(#articles_panel). Articles panel
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-* event = _article_ui_
+|_. Panel |_. @$event@ |_. @$step@ |
+| "Articles":http://docs.textpattern.io/administration/content/articles-panel | @article_ui@ | @validate_save@ |
+| "Articles":http://docs.textpattern.io/administration/content/articles-panel | @article_ui@ | @validate_publish@ |
+| "Comments":http://docs.textpattern.io/administration/content/comments-panel | @discuss_ui@ | @validate_save@ |
+| "Files":http://docs.textpattern.io/administration/content/files-panel | @file_ui@ | @validate_save@ |
+| "Images":http://docs.textpattern.io/administration/content/images-panel | @image_ui@ | @validate_save@ |
+| "Links":http://docs.textpattern.io/administration/content/links-panel | @link_ui@ | @validate_save@ |
 
-step = _validate_publish_
-
-* event = _article_ui_
-
-step = _validate_save_
-
-h4(#comments_panel). Comments panel
-
-* event = _discuss_ui_
-
-step = _validate_save_
-
-h4(#files_panel). Files panel
-
-* event = _file_ui_
-
-step = _validate_save_
-
-h4(#images_panel). Images panel
-
-* event = _image_ui_
-
-step = _validate_save_
-
-h4(#links_panel). Links panel
-
-* event = _link_ui_
-
-step = _validate_save_
+notextile. </div>
 
 h2(#sec7). pluggable_ui() callbacks
 
