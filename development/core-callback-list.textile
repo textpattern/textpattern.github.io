@@ -310,7 +310,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 |_. Panel |_. @$event@ |_. @$step@ |_. What it alters or replaces |
 | Write | @article_ui@ | @sidehelp@ | the 'Textile Help' lever and its entire contents |
-| Write | @article_ui@ | @extend_col_1@ | *adds* (not alters or replaces) your own markup below the @sidehelp@; argument #3 is empty as there is no default content here |
+| " | " | @extend_col_1@ | *adds* (not alters or replaces) your own markup below the @sidehelp@; argument #3 is empty as there is no default content here |
 | Write | @article_ui@ | @markup@ | the two select lists for article and excerpt markup |
 | Write | @article_ui@ | @override@ | the _override form_ select list |
 | Write | @article_ui@ | @view@ | the view/HTML/Preview icons |
