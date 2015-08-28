@@ -375,15 +375,17 @@ h3. __include/txp_image.php__
 
 For the **"Images":http://docs.textpattern.io/administration/content/images-panel** panel. This callback has a single @$event@ (i.e., @image_ui@).
 
-|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |
-| Images | @image_ui@ | @extend_controls@ | adds markup to the txp-control-panel area; argument #3 is empty because there is no default content |
-| " | " | @extend_detail_form@ | adds markup above the image **Save** button when editing an image argument #3 is empty because there is no default content |
-| " | " | @thumbnail@ | alters or replaces the thumbnail in the image list |
-| " | " | @fullsize_image@ | alters or replaces the main image in the image edit panel |
-| " | " | @image_edit@ | alters or replaces the area containing the upload (replace) image form |
-| " | " | @thumbnail_image@ | alters or replaces the thumbnail image in the image edit panel |
-| " | " | @thumbnail_edit@ | alters or replaces the area containing the thumbnail upload form |
-| " | " | @thumbnail_create@ | alters or replaces the 'thumbnail create' area containing the width / height input fields and crop checkbox |
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
+| Images | @image_ui@ | @extend_controls@ | Adds markup to the @txp-control-panel@ area. | Argument #3 is empty because there is no default content. |
+| " | " | @extend_detail_form@ | Adds markup above the image **Save** button when editing an image. | Argument #3 is empty because there is no default content. |
+| " | " | @thumbnail@ | Alters or replaces the thumbnail in the image list. | - |
+| " | " | @fullsize_image@ | Alters or replaces the main image in the image edit panel. | - |
+| " | " | @image_edit@ | Alters or replaces the area containing the upload (replace) image form. | - |
+| " | " | @thumbnail_image@ | Alters or replaces the thumbnail image in the image edit panel. | - |
+| " | " | @thumbnail_edit@ | Alters or replaces the area containing the thumbnail upload form. | - |
+| " | " | @thumbnail_create@ | Alters or replaces the 'thumbnail create' area containing the width / height input fields and crop checkbox. | - |
 
 notextile. </div>
 
