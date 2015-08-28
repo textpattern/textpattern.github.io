@@ -107,24 +107,32 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 |_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
 | @admin_side@ | @head_end@ | just before the closing @</head>@ tag on every admin-side panel | for injecting javascript or style rules into the page's header |
-| admin_side | pagetop | immediately before control is handed to the theme | renders the navigation bar |
-| admin_side | pagetop_end | immediately after the theme has finished | rendering the navigation bar useful for adding admin-wide markup below pagetop |
+| @admin_side@ | @pagetop@ | immediately before control is handed to the theme | renders the navigation bar |
+| @admin_side@ | @pagetop_end@ | immediately after the theme has finished | rendering the navigation bar useful for adding admin-wide markup below @pagetop@ |
 
 notextile. </div>
 
 **_lib/txplib_html.php_**
 
-*event = _admin_side_ step = _body_end_*
- occurs once the theme has rendered its footer allows you to tack on any extra admin-wide information immediately before the closing @</body>@ tag *event = _some_event_ui_ step = _multi_edit_options_*
- allows you to alter or augment the multi-edit select list. argument #3 contains the options array which is passed by reference so it may be altered directly
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @admin_side@ | @body_end@ | once the theme has rendered its footer | tacks on any extra admin-wide information immediately before the closing @</body>@ tag |
+| @some_event_ui@ | @multi_edit_options@ | - | alters or augments the multi-edit select list; argument #3 contains the options array which is passed by reference so it may be altered directly |
+
+notextile. </div>
 
 **_include/txp_article.php_**
 
-*event = _article_posted_*
- called immediately after article creation *event = _article_saved_*
- called immediately after article update/save *event = _ping_*
- occurs just before a ping notification is sent upon publication of an article so you may intercept the ping and provide your own *event = _article_ui_ step = _partials_meta_*
- allows you to alter or augment the interface, usually based on the data sent to/from the AJAX save process argument #3 is the record set of the article being edited argument #4 is the partials array, which comprises: *_key_* unique name of the item available to alter, then an array: *_mode_* the mechanism by which the partial may be updated *_selector_* the wholly encapsulated DOM selector to which the partial applies *_callback_* the callback function to utilise to update the nominated part of the interface *_html_* (optional) return value of the callback function
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @article_posted@ | - | immediately after article creation | - |
+| @article_saved@ | - | immediately after article update/save | - |
+| ping | - | just before a ping notification is sent upon publication of an article so you may intercept the ping and provide your own | - |
+| @article_ui@ | @partials_meta@ | - | alters or augments the interface, usually based on the data sent to/from the AJAX save process; argument #3 is the record set of the article being edited; argument #4 is the partials array, which comprises: *_key_* unique name of the item available to alter, then an array: *_mode_* the mechanism by which the partial may be updated *_selector_* the wholly encapsulated DOM selector to which the partial applies *_callback_* the callback function to utilise to update the nominated part of the interface *_html_* (optional) return value of the callback function |
+
+notextile. </div>
 
 **_include/txp_diag.php_**
 
