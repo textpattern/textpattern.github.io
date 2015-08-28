@@ -339,28 +339,28 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | " | - | " | @author@ | The _author_ and _published-at_ info. |
 | " | **Advanced options** | " | @markup@ | The **Article markup** and **Excerpt markup** select lists. |
 | " | **Advanced options** | " | @override@ | The **Override form** select list. |
-| " | **Article image** | " | @article_image@ | And the **Article image** field. |
+| " | **Article image** | " | @article_image@ | The widget and **Article image** field. |
 | " | **Comment options** | " | @annotate_invite@ | The **Off/On** and **Invitation** controls. |
-| " | **Custom fields** | " | @custom_fields@ | And the contained fields. |
+| " | **Custom fields** | " | @custom_fields@ | The widget and contained input fields. |
 | " | **Date and time** | " | @timestamp@ | The **Timestamp** controls. |
 | " | **Date and time** | " | @expires@ | The **Expires** controls.  |
 | " | **Meta** | " | @keywords@ | The **Keywords** field. |
 | " | **Meta** | " | @url_title@ | The **URL-only title** field. |
-| " | **Recent articles** | " | @recent_articles@ | And the contained articles list. |
+| " | **Recent articles** | " | @recent_articles@ | The widget and contained articles list. |
 | " | **Sort and display** | " | @sort_display@ | The **Section** and **Category** select lists. |
 | " | **Sort and display** | " | @section@ | The **Section** select list. |
 | " | **Sort and display** | " | @categories@ | The **Category 1** and **Category 2** select lists. |
-| " | **Status** | " | @status@ | And the contained radio buttons. |
-| "" | **Textile help** | " | @sidehelp@ | And it's contents. |
+| " | **Status** | " | @status@ | The widget and contained radio buttons. |
+| "" | **Textile help** | " | @sidehelp@ | The widget and its contents. |
 | " | **Textile help** | " | @extend_col_1@ | Adds (not alters or replaces) markup below @sidehelp@. Argument #3 is empty as there is no default content here. |
 
 Legend:
 
-%(information)% = new in upcoming Textpattern 4.x.x.
+%(information)Blue% means new in upcoming Textpattern 4.x.x.
 
 notextile. </div>
 
-**_include/txp_category.php_**
+h3. __include/txp_category.php__
 
 For the **"Categories":http://docs.textpattern.io/administration/content/categories-panel** panel.
 
@@ -371,7 +371,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_image.php_**
+h3. __include/txp_image.php__
 
 For the **"Images":http://docs.textpattern.io/administration/content/images-panel** panel.
 
@@ -387,72 +387,95 @@ For the **"Images":http://docs.textpattern.io/administration/content/images-pane
 
 notextile. </div>
 
-h4(#files_panel_code_include_txp_filephp_code). Files panel (&lt;code&gt;include/txp_file.php&lt;/code&gt;)
+h3. __include/txp_file.php__
 
-*event = _file_ui_ step = _extend_detail_form_*
- allows you to add markup above the file _Save_ button when editing a file argument #3 is empty because there is no default content the same callback is used whether the file you are editing exists or is missing from the database  -  use the absence or availability of the 4th argument (record set) to determine which state the panel is in
+For the **"Files":http://docs.textpattern.io/administration/content/files-panel** panel.
 
-h4(#links_panel_code_include_txp_linksphp_code). Links panel (&lt;code&gt;include/txp_links.php&lt;/code&gt;)
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-*event = _link_ui_ step = _extend_detail_form_*
- allows you to add markup above the link _Save_ button argument #3 is empty because there is no default content
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+| Files | @file_ui@ | @extend_detail_form@ | Add markup above the **Save** button when editing a file. | Argument #3 is empty because there is no default content. The same callback is used whether the file you are editing exists or is missing from the database. Use the absence or availability of the 4th argument (record set) to determine which state the panel is in. |
 
-h4(#sections_panel_code_include_txp_sectionphp_code). Sections panel (&lt;code&gt;include/txp_section.php&lt;/code&gt;)
+notextile. </div>
 
-*event = _section_ui_ step = _extend_detail_form_*
- allows you to add markup immediately above the _Save_ button in the _section edit_ panel argument #3 is empty because there is no default content the record set in argument #4 contains only the columns _page_ and _css_ when in the default area, and contains all columns at other times
 
-h4(#users_panel_code_include_txp_adminphp_code). Users panel (&lt;code&gt;include/txp_admin.php&lt;/code&gt;)
+h3. __include/txp_links.php__
 
-*event = _author_ui_ step = _extend_detail_form_*
- allows you to add markup immediately above the author _Save_ button argument #3 is empty because there is no default content
+For the **"Links":http://docs.textpattern.io/administration/content/links-panel** panel.
 
-h4(#preferences_panel_code_include_txp_prefsphp_code). Preferences panel (&lt;code&gt;include/txp_prefs.php&lt;/code&gt;)
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-*event = _prefs_ui_ step = _gmtoffset_*
- allows you to alter or replace the _Time zone_ select list (just the input control, not the label) argument #4 is the preference name in the txp_prefs table (_timezone_key_ in this case) argument #5 is the preference's value (i.e. the chosen item) *event = _prefs_ui_ step = _is_dst_*
- allows you to alter or replace the _DST enabled_ radio buttons (just the input control, not the label) argument #4 is the preference name in the txp_prefs table (_is_dst_ in this case) argument #5 is the preference's value (i.e. the numerical state of the radio button) *event = _prefs_ui_ step = _weeks_*
- allows you to alter or replace the _Comments disabled after_ select list (just the input control, not the label) argument #4 is the preference name in the txp_prefs table (_comments_disabled_after_ in this case) argument #5 is the preference's value (i.e. the numerical value of the selected item; in this case the number of days to keep commenting open) *event = _prefs_ui_ step = _custom_set_*
- allows you to alter or replace the Custom Field text boxes on the Advanced Prefs panel (just the input controls, not the labels). Each text box is called separately; you distinguish between them using argument #4 argument #4 is the preference name in the txp_prefs table (_custom_set_N_ by default, where _N_ is the custom field number) argument #5 is the preference's value (i.e. the name of the custom field) *event = _prefs_ui_ step = _theme_name_*
- allows you to alter or replace the _Admin theme_ select list on the Advanced Prefs panel (just the input control, not the label)
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+| Links | @link_ui@ | @extend_detail_form@ | Add markup above the link **Save** button. | Argument #3 is empty because there is no default content. |
+
+notextile. </div>
+
+h3. __include/txp_section.php__
+
+For the **"Sections":http://docs.textpattern.io/administration/presentation/sections-panel** panel.
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+	
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+| Sections | @section_ui@ | @extend_detail_form@ | Add markup immediately above the **Save** button in the _section edit_ panel. | Argument #3 is empty because there is no default content. Argument #4 contains only the columns _page_ and _css_ when in the default area, and contains all columns at other times. |
+
+notextile. </div>
+
+h3. __include/txp_admin.php__
+
+For the **"Users":http://docs.textpattern.io/administration/admin/users-panel** panel.
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+	
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+| Users | @author_ui@ | @extend_detail_form@ | Add markup immediately above the author **Save** button. | Argument #3 is empty because there is no default content. |
+
+notextile. </div>
+
+h3. __include/txp_prefs.php__
+
+For the Preferences panels ("Basic":http://docs.textpattern.io/administration/admin/basic-prefs-panel and "Advanced":http://docs.textpattern.io/administration/admin/advanced-prefs-panel).
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+	
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+| Basic | @prefs_ui@ | @gmtoffset@ | Alters or replaces the **Time zone** select list input control (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@timezone_key@ in this case). Argument #5 is the preference's value (i.e. the chosen item). | 
+| Basic | @prefs_ui@ | @is_dst@ | Alters or replaces the **DST enabled** radio buttons (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@is_dst@ in this case). Argument #5 is the preference's value (i.e. the numerical state of the radio button). |
+| Basic | @prefs_ui@ | @weeks@ | Alter or replace the **Comments disabled after** select list control (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@comments_disabled_after@ in this case). Argument #5 is the preference's value (i.e. the numerical value of the selected item; in this case the number of days to keep commenting open). |
+| Advanced | @prefs_ui@ | @custom_set@ | Alter or replace the Custom field input controls (not the labels). Each text box is called separately; you distinguish between them using argument #4. | Argument #4 is the preference name in the 'txp_prefs' table (@custom_set_N@ by default, where _N_ is the custom field number). Argument #5 is the preference's value (i.e. the name of the custom field). | 
+| Advanced | @prefs_ui@ | @theme_name@ | Alters or replace the **Admin theme** select list control (not the label). | - |
+
+notextile. </div>
 
 h2(#sec8). Theme callbacks
 
-The following callbacks are all usable to alter various elements within admin-side themes.
+These callbacks are all used to alter various elements within admin-side themes.
 
-h4(#code_lib_txplib_themephp_code). &lt;code&gt;lib/txplib_theme.php&lt;/code&gt;
+h3. __lib/txplib_theme.php__
 
-*event = _admin_side_ step = _theme_name_*
- allows you to alter a theme's name when it is being initialised there is no argument #4
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-h4(#code_lib_txplib_headphp_code1). &lt;code&gt;lib/txplib_head.php&lt;/code&gt;
+|_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+| @admin_side@ | @theme_name@ | Alters a theme's name when it is being initialised. | There is no argument #4. |
 
-*event = _admin_side_ step = _header_*
- allows you to replace the standard pagetop header with something of your choosing. Theme authors do this by writing a
+notextile. </div>
 
-bc. header()
+h3. __lib/txplib_head.php__
 
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-function in their theme's PHP file there is no argument #4
+|_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+| @admin_side@ | @header@ | Replaces the standard @pagetop@ header with something of your choosing. Theme authors do this by writing a @header()@ function in their theme's PHP file. | There is no argument #4. |
 
-h4(#code_lib_txplib_htmlphp_code1). &lt;code&gt;lib/txplib_html.php&lt;/code&gt;
+notextile. </div>
 
-*event = _admin_side_ step = _footer_*
- allows you to replace the standard end_page footer with something of your choosing. Theme authors do this by writing a
+h3. __lib/txplib_html.php__
 
-bc. footer()
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+	
+|_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+| admin_side | footer | Replaces the standard @end_page@ footer with something of your choosing. Theme authors do this by writing a @footer()@ function in their theme's PHP file. There is no spoon. | - | 
+| some_event_ui | upload_form | Alters or replaces Textpattern's standard upload forms throughout the admin side. @some_event@ is the name of the event on the panel upon which the input form appears (e.g. on the **Files** panel, the event is @file@ so the @pluggable_ui()@ event name is @file_ui@). | Argument #4 contains the remainder of the arguments to the @upload_form()@ function (i.e., 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class'). |
 
-
-function in their theme's PHP file there is no spoon *event = _some_event_ui_ step = _upload_form_*
- allows you to alter or replace Textpattern's standard upload forms throughout the admin side _some_event_ is the name of the event on the panel upon which the input form appears (e.g. on the Files panel, the event is 'file' so the
-
-bc. pluggable_ui()
-
-
-event name is _file_ui_) argument #4 contains the remainder of the arguments to the
-
-bc. upload_form()
-
-
-function, i.e. 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class'.
+notextile. </div>
 
