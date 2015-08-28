@@ -12,7 +12,18 @@ tags:
 
 h1. Core callbacks list
 
-This is a reference of all callbacks used in Textpattern. 
+This is a reference of all callbacks used in Textpattern.
+
+On this page:
+
+* "Regular public-side callbacks":#sec1
+* "Function- and tag-based callbacks":#sec2
+* "Plugin callbacks":#sec3
+* "Regular admin-side callbacks":#sec4
+* "Admin-side criteria callbacks":#sec5
+* "Admin-side validation callbacks":#sec6
+* "pluggable_ui() callbacks":#sec7
+* "Theme callbacks":#sec8
 
 h2(#sec1). Regular public-side callbacks
 
@@ -270,7 +281,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h2(#sec6). Admin side validation callbacks
+h2(#sec6). Admin-side validation callbacks
 
 These callbacks allow you to alter or append to the constraints imposed by the core when saving data. Textpattern will check that the passed values for things like categories, sections, and so forth actually exist in the database to avoid new ones being introduced at unexpected places.
 
@@ -304,15 +315,15 @@ Parsing argument #3 allows you to alter what was originally going to be displaye
 
 **_include/txp_article.php_**
 
-For the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel only. The @$event@ is the same in each case.
+For the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel only. The @$event@ (= @article_ui@) is the same in each case.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. @$event@ |_. @$step@ |_. What it alters or replaces |
-| Write | @article_ui@ | @sidehelp@ | the 'Textile Help' lever and its entire contents |
-| " | " | @extend_col_1@ | *adds* (not alters or replaces) your own markup below the @sidehelp@; argument #3 is empty as there is no default content here |
-| " | " | @markup@ | the two select lists for article and excerpt markup |
-| " | " | @override@ | the **Override form** select list |
+| Write | @article_ui@ | @sidehelp@ | The **Textile help** widget. |
+| " | " | @extend_col_1@ | Adds (not alters or replaces) markup below @sidehelp@; argument #3 is empty as there is no default content here. |
+| " | " | @markup@ | The **Article markup** and **Excerpt markup** select lists in the **Advanced options** widget. |
+| " | " | @override@ | The **Override form** select list |
 | " | " | @view@ | the view/HTML/Preview icons |
 | " | " | @sort_display@ | the **Section** and **Category** select lists |
 | " | " | @timestamp@ | the article's **Date and time** area |
