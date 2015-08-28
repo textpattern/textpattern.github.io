@@ -441,10 +441,10 @@ For the Preferences panels ("Basic":http://docs.textpattern.io/administration/ad
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
 |_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
-| Basic | @prefs_ui@ | @gmtoffset@ | Alters or replaces the **Time zone** select list input control (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@timezone_key@ in this case). Argument #5 is the preference's value (i.e. the chosen item). | 
+| Basic | @prefs_ui@ | @gmtoffset@ | Alters or replaces the **Time zone** select list input control (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@timezone_key@ in this case). Argument #5 is the preference's value (i.e. the chosen item). |
 | Basic | @prefs_ui@ | @is_dst@ | Alters or replaces the **DST enabled** radio buttons (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@is_dst@ in this case). Argument #5 is the preference's value (i.e. the numerical state of the radio button). |
 | Basic | @prefs_ui@ | @weeks@ | Alter or replace the **Comments disabled after** select list control (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@comments_disabled_after@ in this case). Argument #5 is the preference's value (i.e. the numerical value of the selected item; in this case the number of days to keep commenting open). |
-| Advanced | @prefs_ui@ | @custom_set@ | Alter or replace the Custom field input controls (not the labels). Each text box is called separately; you distinguish between them using argument #4. | Argument #4 is the preference name in the 'txp_prefs' table (@custom_set_N@ by default, where _N_ is the custom field number). Argument #5 is the preference's value (i.e. the name of the custom field). | 
+| Advanced | @prefs_ui@ | @custom_set@ | Alter or replace the Custom field input controls (not the labels). Each text box is called separately; you distinguish between them using argument #4. | Argument #4 is the preference name in the 'txp_prefs' table (@custom_set_N@ by default, where _N_ is the custom field number). Argument #5 is the preference's value (i.e. the name of the custom field). |
 | Advanced | @prefs_ui@ | @theme_name@ | Alters or replace the **Admin theme** select list control (not the label). | - |
 
 notextile. </div>
@@ -476,7 +476,7 @@ h3. __lib/txplib_html.php__
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
 |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
-| admin_side | footer | Replaces the standard @end_page@ footer with something of your choosing. Theme authors do this by writing a @footer()@ function in their theme's PHP file. There is no spoon. | - | 
+| admin_side | footer | Replaces the standard @end_page@ footer with something of your choosing. Theme authors do this by writing a @footer()@ function in their theme's PHP file. There is no spoon. | - |
 | some_event_ui | upload_form | Alters or replaces Textpattern's standard upload forms throughout the admin side. @some_event@ is the name of the event on the panel upon which the input form appears (e.g. on the **Files** panel, the event is @file@ so the @pluggable_ui()@ event name is @file_ui@). | Argument #4 contains the remainder of the arguments to the @upload_form()@ function (i.e., 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class'). |
 
 notextile. </div>
