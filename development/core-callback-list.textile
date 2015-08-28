@@ -393,7 +393,7 @@ For the **"Files":http://docs.textpattern.io/administration/content/files-panel*
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | Files | @file_ui@ | @extend_detail_form@ | Add markup above the **Save** button when editing a file. | Argument #3 is empty because there is no default content. The same callback is used whether the file you are editing exists or is missing from the database. Use the absence or availability of the 4th argument (record set) to determine which state the panel is in. |
 
 notextile. </div>
@@ -405,7 +405,7 @@ For the **"Links":http://docs.textpattern.io/administration/content/links-panel*
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | Links | @link_ui@ | @extend_detail_form@ | Add markup above the link **Save** button. | Argument #3 is empty because there is no default content. |
 
 notextile. </div>
@@ -416,7 +416,7 @@ For the **"Sections":http://docs.textpattern.io/administration/presentation/sect
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
-|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | Sections | @section_ui@ | @extend_detail_form@ | Add markup immediately above the **Save** button in the _section edit_ panel. | Argument #3 is empty because there is no default content. Argument #4 contains only the columns _page_ and _css_ when in the default area, and contains all columns at other times. |
 
 notextile. </div>
@@ -427,7 +427,7 @@ For the **"Users":http://docs.textpattern.io/administration/admin/users-panel** 
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
-|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | Users | @author_ui@ | @extend_detail_form@ | Add markup immediately above the author **Save** button. | Argument #3 is empty because there is no default content. |
 
 notextile. </div>
@@ -438,7 +438,7 @@ For the Preferences panels ("Basic":http://docs.textpattern.io/administration/ad
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
-|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+|_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | Basic | @prefs_ui@ | @gmtoffset@ | Alters or replaces the **Time zone** select list input control (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@timezone_key@ in this case). Argument #5 is the preference's value (i.e. the chosen item). | 
 | Basic | @prefs_ui@ | @is_dst@ | Alters or replaces the **DST enabled** radio buttons (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@is_dst@ in this case). Argument #5 is the preference's value (i.e. the numerical state of the radio button). |
 | Basic | @prefs_ui@ | @weeks@ | Alter or replace the **Comments disabled after** select list control (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@comments_disabled_after@ in this case). Argument #5 is the preference's value (i.e. the numerical value of the selected item; in this case the number of days to keep commenting open). |
@@ -455,7 +455,7 @@ h3. __lib/txplib_theme.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+|_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | @admin_side@ | @theme_name@ | Alters a theme's name when it is being initialised. | There is no argument #4. |
 
 notextile. </div>
@@ -464,7 +464,7 @@ h3. __lib/txplib_head.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+|_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | @admin_side@ | @header@ | Replaces the standard @pagetop@ header with something of your choosing. Theme authors do this by writing a @header()@ function in their theme's PHP file. | There is no argument #4. |
 
 notextile. </div>
@@ -473,7 +473,7 @@ h3. __lib/txplib_html.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
-|_. @$event@ |_. @$step@ |_. What it allows/does | Argument notes |
+|_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | admin_side | footer | Replaces the standard @end_page@ footer with something of your choosing. Theme authors do this by writing a @footer()@ function in their theme's PHP file. There is no spoon. | - | 
 | some_event_ui | upload_form | Alters or replaces Textpattern's standard upload forms throughout the admin side. @some_event@ is the name of the event on the panel upon which the input form appears (e.g. on the **Files** panel, the event is @file@ so the @pluggable_ui()@ event name is @file_ui@). | Argument #4 contains the remainder of the arguments to the @upload_form()@ function (i.e., 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class'). |
 
