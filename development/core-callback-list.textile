@@ -331,28 +331,28 @@ For the **"Write":http://docs.textpattern.io/administration/content/write-panel*
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. @$event@ |_. @$step@ |_. Concerned widget |_. What it alters or replaces |
-| Write | @article_ui@ | @title@ | - | The **Title** field. |
-| " | " | @body@ | - | The **Body** field. |
-| " | " | @excerpt@ | - | The **Excerpt** field. |
-| " | " | @view@ | - | The **View**, **HTML**, and **Preview** icon buttons. |
-| " | " | @author@ | - | The _author_ and _published-at_ info. |
-| " | " | @markup@ | **Advanced options** | The **Article markup** and **Excerpt markup** select lists. |
-| " | " | @override@ | **Advanced options** | The **Override form** select list. |
-| " | " | @article_image@ | **Article image** | And the **Article image** field. |
-| " | " | @annotate_invite@ | **Comment options** | The **Off/On** and **Invitation** controls. |
-| " | " | @custom_fields@ | **Custom fields** | And the contained fields. |
-| " | " | @timestamp@ | **Date and time** | The **Timestamp** controls. |
-| " | " | @expires@ | **Date and time** | The **Expires** controls.  |
-| " | " | @keywords@ | **Meta** | The **Keywords** field. |
-| " | " | @url_title@ | **Meta** | The **URL-only title** field. |
-| " | " | @recent_articles@ | **Recent articles** | And the contained articles list. |
-| " | " | @sort_display@ | **Sort and display** | The **Section** and **Category** select lists. |
-| " | " | @section@ | **Sort and display** | The **Section** select list. |
-| " | " | @categories@ | **Sort and display** | The **Category 1** and **Category 2** select lists. |
-| " | " | @status@ | **Status** | And the contained radio buttons. |
-| "" | " | @sidehelp@ | **Textile help** | And it's contents. |
-| " | " | @extend_col_1@ | **Textile help** | Adds (not alters or replaces) markup below @sidehelp@. Argument #3 is empty as there is no default content here. |
+|_. Panel |_. Concerned widget |_. @$event@ |_. @$step@ |_. What it alters or replaces |
+| Write | - | @article_ui@ | @title@ | The **Title** field. |
+| " | - | " | @body@ | The **Body** field. |
+| " | - | " | @excerpt@ | The **Excerpt** field. |
+| " | - | " | @view@ | The **View**, **HTML**, and **Preview** icon buttons. |
+| " | - | " | @author@ | The _author_ and _published-at_ info. |
+| " | **Advanced options** | " | @markup@ | The **Article markup** and **Excerpt markup** select lists. |
+| " | **Advanced options** | " | @override@ | The **Override form** select list. |
+| " | **Article image** | " | @article_image@ | And the **Article image** field. |
+| " | **Comment options** | " | @annotate_invite@ | The **Off/On** and **Invitation** controls. |
+| " | **Custom fields** | " | @custom_fields@ | And the contained fields. |
+| " | **Date and time** | " | @timestamp@ | The **Timestamp** controls. |
+| " | **Date and time** | " | @expires@ | The **Expires** controls.  |
+| " | **Meta** | " | @keywords@ | The **Keywords** field. |
+| " | **Meta** | " | @url_title@ | The **URL-only title** field. |
+| " | **Recent articles** | " | @recent_articles@ | And the contained articles list. |
+| " | **Sort and display** | " | @sort_display@ | The **Section** and **Category** select lists. |
+| " | **Sort and display** | " | @section@ | The **Section** select list. |
+| " | **Sort and display** | " | @categories@ | The **Category 1** and **Category 2** select lists. |
+| " | **Status** | " | @status@ | And the contained radio buttons. |
+| "" | **Textile help** | " | @sidehelp@ | And it's contents. |
+| " | **Textile help** | " | @extend_col_1@ | Adds (not alters or replaces) markup below @sidehelp@. Argument #3 is empty as there is no default content here. |
 
 Legend:
 
