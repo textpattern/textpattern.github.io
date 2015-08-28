@@ -302,7 +302,7 @@ Argument #1 passed to your function is the _event_ and argument #2 is the _step_
 
 Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
 
-**@include/txp_article.php@**
+**_include/txp_article.php_**
 
 For the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel.
 
@@ -328,7 +328,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | Write | @article_ui@ | @author@ | the author / published-at info |
 | Write | @article_ui@ | @status@ | the article's status area |
 | Write | @article_ui@ | @categories@ | the article's category1/category2 area |
-| Write | @article_ui@ | @section@ | the article's section select list | 
+| Write | @article_ui@ | @section@ | the article's section select list |
 | Write | @article_ui@ | @annotate_invite@ | the article's comments on/off and comments invite area |
 
 notextile. </div>
@@ -344,7 +344,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-include/txp_image.php
+**_include/txp_image.php_**
 
 For the **"Images":http://docs.textpattern.io/administration/content/images-panel** panel.
 
