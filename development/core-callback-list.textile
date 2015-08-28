@@ -304,32 +304,32 @@ Parsing argument #3 allows you to alter what was originally going to be displaye
 
 **_include/txp_article.php_**
 
-For the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel.
+For the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel only. The @$event@ is the same in each case.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. @$event@ |_. @$step@ |_. What it alters or replaces |
 | Write | @article_ui@ | @sidehelp@ | the 'Textile Help' lever and its entire contents |
 | " | " | @extend_col_1@ | *adds* (not alters or replaces) your own markup below the @sidehelp@; argument #3 is empty as there is no default content here |
-| Write | @article_ui@ | @markup@ | the two select lists for article and excerpt markup |
-| Write | @article_ui@ | @override@ | the _override form_ select list |
-| Write | @article_ui@ | @view@ | the view/HTML/Preview icons |
-| Write | @article_ui@ | @sort_display@ | the _section_ and _category_ select | lists |
-| Write | @article_ui@ | @timestamp@ | the article's posted timestamp area |
-| Write | @article_ui@ | @expires@ | the article expiry area |
-| Write | @article_ui@ | @custom_fields@ | the block of custom field input controls |
-| Write | @article_ui@ | @keywords@ | the keywords area |
-| Write | @article_ui@ | @article_image@ | the article_image area |
-| Write | @article_ui@ | @url_title@ | the URL title input area |
-| Write | @article_ui@ | @recent_articles@ | the recent articles list |
-| Write | @article_ui@ | @title@ | the article's title element |
-| Write | @article_ui@ | @body@ | the article's body element |
-| Write | @article_ui@ | @excerpt@ | the article's excerpt element |
-| Write | @article_ui@ | @author@ | the author / published-at info |
-| Write | @article_ui@ | @status@ | the article's status area |
-| Write | @article_ui@ | @categories@ | the article's category1/category2 area |
-| Write | @article_ui@ | @section@ | the article's section select list |
-| Write | @article_ui@ | @annotate_invite@ | the article's comments on/off and comments invite area |
+| " | " | @markup@ | the two select lists for article and excerpt markup |
+| " | " | @override@ | the **Override form** select list |
+| " | " | @view@ | the view/HTML/Preview icons |
+| " | " | @sort_display@ | the **Section** and **Category** select lists |
+| " | " | @timestamp@ | the article's **Date and time** area |
+| " | " | @expires@ | the article expiry area |
+| " | " | @custom_fields@ | the **Custom fields** block of input controls |
+| " | " | @keywords@ | the **Keywords** field |
+| " | " | @article_image@ | the Article image area |
+| " | " | @url_title@ | the URL title input area |
+| " | " | @recent_articles@ | the recent articles list |
+| " | " | @title@ | the article's title element |
+| " | " | @body@ | the article's body element |
+| " | " | @excerpt@ | the article's excerpt element |
+| " | " | @author@ | the author / published-at info |
+| " | " | @status@ | the article's status area |
+| " | " | @categories@ | the article's category1/category2 area |
+| " | " | @section@ | the article's section select list |
+| " | " | @annotate_invite@ | the article's comments on/off and comments invite area |
 
 notextile. </div>
 
