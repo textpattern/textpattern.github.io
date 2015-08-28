@@ -327,7 +327,7 @@ Parsing argument #3 allows you to alter what was originally going to be displaye
 
 h3. __include/txp_article.php__
 
-For the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel only. This callback has a single @$event@ (i.e., @article_ui@).
+For the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel only. These callbacks have a single @$event@ (i.e., @article_ui@).
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -373,7 +373,7 @@ notextile. </div>
 
 h3. __include/txp_image.php__
 
-For the **"Images":http://docs.textpattern.io/administration/content/images-panel** panel. This callback has a single @$event@ (i.e., @image_ui@).
+For the **"Images":http://docs.textpattern.io/administration/content/images-panel** panel. These callbacks have a single @$event@ (i.e., @image_ui@).
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
