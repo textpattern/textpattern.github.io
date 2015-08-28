@@ -27,10 +27,10 @@ On this page:
 * "How plugins are loaded":#sec5
 * "Callbacks":#sec6
 ** "Core callbacks reference":#sec6-1
-** "[@register_callback()@]":#sec6-2
+** "The register callback":#sec6-2
 ** "Public-side callback events":#sec6-3
 ** "Admin-side callback events":#sec6-4
-** "@pluggable_ui()@ callback events":#sec6-5 (for admin-side layout modifications)
+** "The pluggable UI callback events":#sec6-5 (for admin-side layout modifications)
 * "Admin-side events and steps":#sec7
 * "Functions, variables, classes, and constants":#sec8
 * "Plugin lifecycle management and preferences":#sec9
@@ -144,9 +144,9 @@ The ultimate callbacks reference for detailed information on all available callb
 
 * "Core callbacks reference":http://docs.textpattern.io/development/core-callback-reference
 
-h3(#sec6-2). @register_callback()@
+h3(#sec6-2). The register callback
 
-@register_callback()@ is at the core of using callbacks. The full function definition looks like this:
+The @register_callback()@ is at the core of using callbacks. The full function definition looks like this:
 
 bc. function register_callback($func, $event, $step='', $pre=0)
 
@@ -179,20 +179,20 @@ h3(#sec6-4). Admin-side callback events
 
 Callback events on the admin-side are easy to recognize in the address bar of your browser. If you click on any admin-side panel link, you'll see the url contains "_?event=panelname_", and if you click on any link in that panel, you'll see "_?event=panelname&step=anotherthing_". Those values correspond to the _events_ and _steps_ you can use for your plugins. In fact, they will call any user-defined function that is registered for said event/step, allowing you to add your own events and steps as you need them.
 
-h3(#sec6-5). @pluggable_ui()@ callback events
+h3(#sec6-5). The pluggable UI callback events
 
-A special type of callback, @pluggable_ui()@, is used throughout the core to allow plugin developers to redesign or alter the layout of the administration side of Textpattern.[3]
+The @pluggable_ui()@ callback is a special one used throughout the core to allow plugin developers to redesign or alter the layout of the administration side of Textpattern.[3]
 
-This callback's event usually ends in @_ui@ (for "user interface") and begins with the event to which it refers. For example, on the **Write** panel the event is @article_ui@, and on the **Files** panel the event is @file_ui@. Straightforward.
+This callback's @$event@ usually ends in @_ui@ (for "user interface") and begins with the event to which it refers. For example, on the **Write** panel the event is @article_ui@, and on the **Files** panel the event is @file_ui@. Straightforward.
 
-The _step_ is usually the part of the page that contains the element you wish to change. On the **Write** panel, for example, the **Article image** control has a step called @article_image@ and the **Custom fields** area has one called @custom_fields@, and so on.
+The @$step@ is usually the part of the page that contains the element you wish to change. On the **Write** panel, for example, the **Article image** control has a step called @article_image@ and the **Custom fields** area has one called @custom_fields@, and so on.
 
 **@pluggable_ui()@ parameters:**
 
 Note that @pluggable_ui()@ callbacks have a different function signature from regular callbacks, which you should be aware of when writing your own functions. They usually have 4 parameters:
 
-# event
-# step
+# $event
+# $step
 # default content -- The markup that is used if you don't modify it.
 # record set (if applicable) -- The records returned from the database that pertain to this event. (E.g. on the **Write** panel this would be one row containing the columns from the currently edited article.) 
 
@@ -204,7 +204,7 @@ fn3. *Attention!* Though it's possible to completely redesign the HTML markup wi
 
 h4(#sec6-5-1). Adding your own admin-side panel elements
 
-When we talk about "elements" in these examples, we simply mean anything on a given admin panel that a user will see or interact with, such as a panel section or one or more of its contained form controls.
+"Elements" here means any panel widgets and their associated labels, controls, and so forth; in other words, anything a user will see or interact with.
 
 There are two ways elements can be added to an admin-side panel: as new elements entirely, or to the existing markup.
 
