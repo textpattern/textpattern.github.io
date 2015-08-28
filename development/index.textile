@@ -16,6 +16,9 @@ On this page:
 
 * "Disclaimer":#sec1
 * "Developer rules of the road":#sec2
+** "Avoid reinventing the wheel"#sec2-1
+** "Do it the Textpattern way"#sec2-2
+** "Write clear and concise plugin help"#sec2-3
 * "What is a plugin?":#sec3
 ** "Functional categories":#sec3-1
 ** "Public-side plugins":#sec3-2 (with tutorial)
@@ -43,7 +46,7 @@ h2(#sec2). Developer rules of the road
 
 More like three strong recommendations, meant to help ensure that you're producing plugins people will want to use. And that's the whole point, right?
 
-**Avoid reinventing the wheel:** 
+h3(#sec2-1). Avoid reinventing the wheel 
 
 Before you start developing, spend some time researching what plugins exist, what functionality, they provide, and how well they're working for people (often indicated by how popular they are). While it might be good exercise to reinvent the wheel, building a plugin that does what another plugin already does isn't going to be immediately useful unless it's _extremely_ innovative in some way. If you decide to throw caution to the wind and reinvent the wheel anyway (perhaps stepping on toes in the process), make sure you're ready to raise the bar. Somebody has to eventually.
 
@@ -51,11 +54,11 @@ Here's the visible approach to plugin conception that can help you make a good c
 
 When plugin ideas aren't conceived quietly in the minds of individuals and built to fruition without a lot of fanfare (a path usually taken when a developer needs the functionality regardless of whether the community does or not), they often begin as a core "feature idea":http://forum.textpattern.com/viewforum.php?id=2 ("a shunned one":http://docs.textpattern.io/development/plugin-vs-core), or "plugin discussion":http://forum.textpattern.com/viewforum.php?id=13. Bouncing plugin ideas off the community first is a good way to gauge whether a plugin idea has merit -- the more interest and constructive feedback you get, the more likely the plugin is worth building.
 
-**Do it the Textpattern way:** 
+h3(#sec2-2). Do it the Textpattern way
 
 Do it the “Textpattern's way” from the start by using Textpattern functions (see section later on), whenever possible, which already work efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Additionally, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
 
-**Write clear and concise plugin help:** 
+h3(#sec2-3). Write clear and concise plugin help 
 
 Don't be one of those developers that assumes everyone knows what you know -- the opposite is true. People won't use your plugin, innovative or not, if you don't explain how. You can avoid fielding a lot of unnecessary questions in the support forum by producing good plugin user instructions to begin with. Use the "plugin user-help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines to ensure your plugin instructions are consistently structured and properly formatted.
 
