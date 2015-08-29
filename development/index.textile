@@ -140,9 +140,7 @@ Textpattern makes extensive use of callbacks. Hook into these known points to ch
 
 h3(#sec6-1). Core callbacks reference
 
-The ultimate callbacks reference for detailed information on all available callbacks:
-
-* "Core callbacks reference":http://docs.textpattern.io/development/core-callback-reference
+The "Core callbacks reference":http://docs.textpattern.io/development/core-callback-reference provides complete details for all callbacks used in Textpattern.
 
 h3(#sec6-2). The register callback
 
@@ -181,7 +179,7 @@ Callback events on the admin-side are easy to recognize in the address bar of yo
 
 h3(#sec6-5). The pluggable UI callback events
 
-The @pluggable_ui()@ callback is a special one used throughout the core and allows you to redesign or alter the layout of the administration side of Textpattern by targeting any panel's widgets and/or contained controls.[3]
+The @pluggable_ui()@ callback is used throughout the core and allows you to redesign or alter the layout of the administration side of Textpattern by targeting any panel's widgets and/or contained controls.[3]
 
 These callbacks have a different function signature from regular callbacks, which you should be aware of when writing your own functions. They usually have 4 parameters:
 
