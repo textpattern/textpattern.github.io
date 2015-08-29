@@ -140,7 +140,7 @@ Textpattern makes extensive use of callbacks. Hook into these known points to ch
 
 h3(#sec6-1). Core callbacks reference
 
-The "Core callbacks reference":http://docs.textpattern.io/development/core-callback-reference provides complete details for all callbacks used in Textpattern.
+The "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference provides complete details for all callbacks used in Textpattern.
 
 h3(#sec6-2). The register callback
 
@@ -152,8 +152,8 @@ And the indicated names are:
 
 * @$func@ -- The name of the function you coded and want to add to a callback-event.
 * @$event@ -- The name of the (Textpattern-provided) event with which you want to associate your plugin.
-* @$step=''@ -- (Optional). *Admin-side only**: @$events@ are (disjunctively) divided into steps. For admin-side plugins, you have the choice of narrowing your plugin to a specific step.
-* @$pre=0@ -- (Optional). *Admin-side only**: By default (@$pre=0@), @$func@ is called after the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. If you set this to "1" (@$pre=1@), then @$func@ is called before any part of the page is rendered or executed. This allows you to replace existing panels on the admin-side.
+* @$step=''@ -- (Optional). **Admin-side only**: @$events@ are (disjunctively) divided into steps. For admin-side plugins, you have the choice of narrowing your plugin to a specific step.
+* @$pre=0@ -- (Optional). **Admin-side only**: By default (@$pre=0@), @$func@ is called after the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. If you set this to "1" (@$pre=1@), then @$func@ is called before any part of the page is rendered or executed. This allows you to replace existing panels on the admin-side.
 
 Also see the "complete list of admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps. 
 
@@ -240,13 +240,13 @@ function abc_remove_keywords($event, $step, $data, $rs) {
 
 p. That's it! If your function returns anything at all (note we return a space character here) then the default markup is dropped in favour of your own markup.
 
-In reality, you probably wouldn't want to do something this drastic unless you were sure there were no other plugins that targeted the **Keywords** field field -- these plugins would fail if they couldn't find the element you had destroyed. A safer alternative would be to hide the element via the CSS using @display:none@. If this is a problem for you and you feel you must delete the element, you could set your plugin to run at a lower priority (i.e., greater than "5") so the other plugin can render its own markup _before_ you remove the **Keywords** field.
+In reality, you probably wouldn't want to do something this drastic unless you were sure there were no other plugins that targeted the **Keywords** field field, such plugins would fail if they couldn't find the element you had destroyed. Hiding the element with CSS using @display:none@ would be a safer/better approach. If this is a problem for you and you feel you must delete the element, you could set your plugin to run at a lower priority (i.e., greater than "5") so other plugins could render their markup _before_ you remove the **Keywords** field.
 
 h4(#sec6-5-3). Changing admin-side panel elements
 
-The final mechanism for altering panel elements is good ol' fashioned search-and-replace, by looking in the default markup for particular items to change. This is the least robust mechanism but it can be very useful at times
+The final mechanism for altering panel elements is good ol' fashioned search-and-replace, by looking in the default markup for particular items to change. This is the least robust mechanism but it can be very useful at times.
 
-Consider this example, which adds a radio button to the existing button set under the **Status** section of the **Write** panel:
+Consider this example, which adds a radio button to the existing button series in the **Write** panel's **Status** widget:
 
 bc.. register_callback('abc_altered_status', 'article_ui', 'status');
 
