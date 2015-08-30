@@ -2,7 +2,7 @@
 layout: document
 category: development
 published: true
-title: "Core callbacks list"
+title: "Core callbacks reference"
 tags:
   - development 
   - plugins
@@ -10,7 +10,7 @@ tags:
   - core
 ---
 
-h1. Core callbacks list
+h1. Core callbacks reference
 
 This is a reference of all callbacks used in Textpattern.
 
