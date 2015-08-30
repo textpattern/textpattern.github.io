@@ -16,20 +16,21 @@ This is a reference of all callbacks used in Textpattern.
 
 On this page:
 
-* "Regular public-side callbacks":#sec1
-* "Function- and tag-based callbacks":#sec2
+* "Public-side callbacks":#sec1
+* "Admin-side callbacks":#sec2
+* "Regular admin-side callbacks":#sec2-1
+* "Admin-side criteria callbacks":#sec2-2
+* "Admin-side validation callbacks":#sec2-3
+* "Admin-side layout callbacks":#sec2-4
+* "Admin-side theme callbacks":#sec2-5
 * "Plugin callbacks":#sec3
-* "Regular admin-side callbacks":#sec4
-* "Admin-side criteria callbacks":#sec5
-* "Admin-side validation callbacks":#sec6
-* "@pluggable_ui()@ callbacks":#sec7
-* "Theme callbacks":#sec8
+* "Function- and tag-based callbacks":#sec4
 
-h2(#sec1). Regular public-side callbacks
+h2(#sec1). Public-side callbacks
 
 [todo:intro line about regular callbacks]
 
-h3. __publish.php__
+h4. __publish.php__
 
 There are no _steps_ for this callback.
 
@@ -44,7 +45,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __publish/atom.php__
+h4. __publish/atom.php__
 
 There are no _steps_ for this callback.
 
@@ -56,7 +57,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __publish/rss.php__
+h4. __publish/rss.php__
 
 There are no _steps_ for this callback.
 
@@ -68,7 +69,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __publish/comment.php__
+h4. __publish/comment.php__
 
 There are no _steps_ for this callback.
 
@@ -81,7 +82,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __publish/log.php__
+h4. __publish/log.php__
 
 There are no _steps_ for this callback.
 
@@ -92,39 +93,13 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h2(#sec2). Function- and tag-based callbacks
+h2(#sec2). Admin-side callbacks
 
-h3. __lib/txplib_misc.php__
+[todo:intro para]
 
-notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+h3(#sec2-1). Regular admin-side callbacks
 
-|_. @$event@ |_. @$step@ |_. When/where it occurs |_. What it allows/does |
-| @sanitize_for_url@ | - | At start of the @sanitizeForUrl()@ function. | Apply your own URL sanitization rules; passes the text to be sanitized as the callback's 4th argument. |
-| @sanitize_for_file@ | - | At start of the @sanitizeForUrl()@ function. | Apply your own filename sanitization rules; passes the text to be sanitized as the callback's 4th argument. |
-| @sanitize_for_page@ | - | At start of the @sanitizeForUrl()@ function. | Apply your own page name sanitization rules; passes the text to be sanitized as the callback's 4th argument. |
-| @txp_die@ | @http_status_code@ | Once the page's HTTP status has been determined. | Passes the numerical HTTP status code as the callback's _step_ (e.g., @410@, @301@, etc) allowing you to target particular status codes and take action. |
-
-notextile. </div>
-
-h2(#sec3). Plugin callbacks
-
-h3. __include/txp_plugin.php__
-
-In order to process these callbacks, your plugin must raise the @PLUGIN_LIFECYCLE_NOTIFY@ flag to register its intent. In addition, if you wish to offer a link to your plugin's preferences from the  **"Plugins":http:docs.textpattern.io/administration/plugins-panel** panel, you must raise the @PLUGIN_HAS_PREFS@ flag.
-
-notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-
-|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
-| @plugin_lifecycle.abc_your_plugin@ | @enabled@ | When somebody switches abc_your_plugin to "Enabled" (Yes) from the **Plugins** panel. | - |
-| @plugin_lifecycle.abc_your_plugin@ | @disabled@ | When somebody switches abc_your_plugin to "Disabled" (No) on the **Plugins** panel. | - |
-| @plugin_lifecycle.abc_your_plugin@ | @installed@ | When abc_your_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and clicking **Install** button on the next screen. | - |
-| @plugin_lifecycle.abc_your_plugin@ | @deleted@ | When abc_your_plugin has been removed by the act of a user selecting it and deleting it from the **Plugins** panel (note that the @plugin_lifecycle.abc_your_plugin@ / @disabled@ callback fires first). | - |
-
-notextile. </div>
-
-h2(#sec4). Regular admin-side callbacks
-
-h3. __lib/txplib_head.php__
+h4. __lib/txplib_head.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -135,7 +110,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __lib/txplib_html.php__
+h4. __lib/txplib_html.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -145,7 +120,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_article.php__
+h4. __include/txp_article.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -157,7 +132,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_diag.php__
+h4. __include/txp_diag.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -166,7 +141,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_admin.php__
+h4. __include/txp_admin.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -175,7 +150,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_category.php__
+h4. __include/txp_category.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -184,7 +159,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_css.php__
+h4. __include/txp_css.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -193,7 +168,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_discuss.php__
+h4. __include/txp_discuss.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -202,7 +177,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_file.php__
+h4. __include/txp_file.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -211,7 +186,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_form.php__
+h4. __include/txp_form.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -220,7 +195,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_image.php__
+h4. __include/txp_image.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -230,7 +205,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_link.php__
+h4. __include/txp_link.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -239,7 +214,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_list.php__
+h4. __include/txp_list.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -248,7 +223,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_page.php__
+h4. __include/txp_page.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -257,7 +232,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_section.php__
+h4. __include/txp_section.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -266,7 +241,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h2(#sec5). Admin-side criteria callbacks
+h3(#sec2-2). Admin-side criteria callbacks
 
 These callbacks allow you to alter the criteria used in the various panels. You can append SQL to the criteria to apply additional filtering. 
 
@@ -293,7 +268,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h2(#sec6). Admin-side validation callbacks
+h3(#sec2-3). Admin-side validation callbacks
 
 These callbacks allow you to alter or append to the constraints imposed by the core when saving data. Textpattern will check that the passed values for things like categories, sections, and so forth actually exist in the database to avoid new ones being introduced at unexpected places.
 
@@ -316,16 +291,16 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h2(#sec7). @pluggable_ui()@ callbacks
+h3(#sec2-4). Admin-side layout callbacks
 
-The @pluggable_ui()@ callbacks allow you to modify the admin-side panels Argument #1 passed to your function is the @$event@. Argument #2 is the @$step@. Arguments 3 and 4 (and occasionally 5) vary depending on the functionality of the UI component. In general, the following holds true unless otherwise stated:
+The @pluggable_ui()@ callbacks allow you to modify the admin-side panels. Argument #1 passed to your function is the @$event@. Argument #2 is the @$step@. Arguments 3 and 4 (and occasionally 5) vary depending on the functionality of the UI component. In general, the following holds true unless otherwise stated:
 
 * Argument #3 is the default markup.
 * Argument #4 is the record set of the item that is being edited (if applicable).
 
 Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
 
-h3. __include/txp_article.php__
+h4. __include/txp_article.php__
 
 For the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel only. These callbacks have a single @$event@ (i.e., @article_ui@).
 
@@ -360,7 +335,7 @@ Legend:
 
 notextile. </div>
 
-h3. __include/txp_category.php__
+h4. __include/txp_category.php__
 
 For the **"Categories":http://docs.textpattern.io/administration/content/categories-panel** panel.
 
@@ -371,7 +346,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_image.php__
+h4. __include/txp_image.php__
 
 For the **"Images":http://docs.textpattern.io/administration/content/images-panel** panel. These callbacks have a single @$event@ (i.e., @image_ui@).
 
@@ -389,7 +364,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_file.php__
+h4. __include/txp_file.php__
 
 For the **"Files":http://docs.textpattern.io/administration/content/files-panel** panel.
 
@@ -401,7 +376,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 notextile. </div>
 
 
-h3. __include/txp_links.php__
+h4. __include/txp_links.php__
 
 For the **"Links":http://docs.textpattern.io/administration/content/links-panel** panel.
 
@@ -412,7 +387,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_section.php__
+h4. __include/txp_section.php__
 
 For the **"Sections":http://docs.textpattern.io/administration/presentation/sections-panel** panel.
 
@@ -423,7 +398,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_admin.php__
+h4. __include/txp_admin.php__
 
 For the **"Users":http://docs.textpattern.io/administration/admin/users-panel** panel.
 
@@ -434,7 +409,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __include/txp_prefs.php__
+h4. __include/txp_prefs.php__
 
 For the Preferences panels ("Basic":http://docs.textpattern.io/administration/admin/basic-prefs-panel and "Advanced":http://docs.textpattern.io/administration/admin/advanced-prefs-panel).
 
@@ -449,11 +424,11 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h2(#sec8). Theme callbacks
+h3(#sec2-5). Admin-side theme callbacks
 
 These callbacks are all used to alter various elements within admin-side themes.
 
-h3. __lib/txplib_theme.php__
+h4. __lib/txplib_theme.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -462,7 +437,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __lib/txplib_head.php__
+h4. __lib/txplib_head.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -471,13 +446,43 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. __lib/txplib_html.php__
+h4. __lib/txplib_html.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
 |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | admin_side | footer | Replaces the standard @end_page@ footer with something of your choosing. Theme authors do this by writing a @footer()@ function in their theme's PHP file. There is no spoon. | - |
 | some_event_ui | upload_form | Alters or replaces Textpattern's standard upload forms throughout the admin side. @some_event@ is the name of the event on the panel upon which the input form appears (e.g. on the **Files** panel, the event is @file@ so the @pluggable_ui()@ event name is @file_ui@). | Argument #4 contains the remainder of the arguments to the @upload_form()@ function (i.e., 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class'). |
+
+notextile. </div>
+
+h2(#sec3). Plugin callbacks
+
+h4. __include/txp_plugin.php__
+
+In order to process these callbacks, your plugin must raise the @PLUGIN_LIFECYCLE_NOTIFY@ flag to register its intent. In addition, if you wish to offer a link to your plugin's preferences from the  **"Plugins":http:docs.textpattern.io/administration/plugins-panel** panel, you must raise the @PLUGIN_HAS_PREFS@ flag.
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When it occurs |_. What it allows/does |
+| @plugin_lifecycle.abc_your_plugin@ | @enabled@ | When somebody switches abc_your_plugin to "Enabled" (Yes) from the **Plugins** panel. | - |
+| @plugin_lifecycle.abc_your_plugin@ | @disabled@ | When somebody switches abc_your_plugin to "Disabled" (No) on the **Plugins** panel. | - |
+| @plugin_lifecycle.abc_your_plugin@ | @installed@ | When abc_your_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and clicking **Install** button on the next screen. | - |
+| @plugin_lifecycle.abc_your_plugin@ | @deleted@ | When abc_your_plugin has been removed by the act of a user selecting it and deleting it from the **Plugins** panel (note that the @plugin_lifecycle.abc_your_plugin@ / @disabled@ callback fires first). | - |
+
+notextile. </div>
+
+h2(#sec4). Function- and tag-based callbacks
+
+h4. __lib/txplib_misc.php__
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. @$event@ |_. @$step@ |_. When/where it occurs |_. What it allows/does |
+| @sanitize_for_url@ | - | At start of the @sanitizeForUrl()@ function. | Apply your own URL sanitization rules; passes the text to be sanitized as the callback's 4th argument. |
+| @sanitize_for_file@ | - | At start of the @sanitizeForUrl()@ function. | Apply your own filename sanitization rules; passes the text to be sanitized as the callback's 4th argument. |
+| @sanitize_for_page@ | - | At start of the @sanitizeForUrl()@ function. | Apply your own page name sanitization rules; passes the text to be sanitized as the callback's 4th argument. |
+| @txp_die@ | @http_status_code@ | Once the page's HTTP status has been determined. | Passes the numerical HTTP status code as the callback's _step_ (e.g., @410@, @301@, etc) allowing you to target particular status codes and take action. |
 
 notextile. </div>
 
