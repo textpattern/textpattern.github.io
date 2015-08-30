@@ -99,7 +99,7 @@ h2(#sec2). Admin-side callbacks
 
 Most callbacks have to do with the admin-side, organised below as regular, criteria, validation, layout, and theme. 
 
-Admin-side callbacks are easy to recognize in the address bar of your browser. If you click on any admin-side panel link, you'll see the url contains "_?event=panelname_", and if you click on any link in that panel, you'll see "_?event=panelname&step=anothername_". Those values correspond to the _events_ and _steps_ you can use for your plugins. In fact, they will call any user-defined function that is registered for said event/step, allowing you to add your own events and steps as you need them.
+Admin-side callbacks are easy to recognize in the address bar of your browser. If you click on any admin-side panel link, you'll see the url contains _?event=panelname_, and if you click on any link in that panel, you'll see _?event=panelname&step=anothername_. Those values correspond to the @$event@ and @$step@ parameters you can use in "plugin development":http://docs.textpattern.io/development/. In fact, they will call any user-defined function that is registered for said @$event@ and @$step@, allowing you to add your own _events_ and _steps_ as you need them.
 
 h3(#sec2-1). Regular admin-side callbacks
 
