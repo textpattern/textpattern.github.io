@@ -175,28 +175,11 @@ For example, imagine building an archive plugin that prevented the URL, __domain
 
 h3(#sec6-4). Admin-side callback events
 
-Callback events on the admin-side are easy to recognize in the address bar of your browser. If you click on any admin-side panel link, you'll see the url contains "_?event=panelname_", and if you click on any link in that panel, you'll see "_?event=panelname&step=anotherthing_". Those values correspond to the _events_ and _steps_ you can use for your plugins. In fact, they will call any user-defined function that is registered for said event/step, allowing you to add your own events and steps as you need them.
+See "Admin-side callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2 in the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference.
 
-h3(#sec6-5). The pluggable UI callback events
+h3(#sec6-5). The pluggable_ui callback events
 
-The @pluggable_ui()@ callback is used throughout the core and allows you to redesign or alter the layout of the administration side of Textpattern by targeting any panel's widgets and/or contained controls.[3]
-
-These callbacks have a different function signature from regular callbacks, which you should be aware of when writing your own functions. They usually have 4 parameters:
-
-# @$event@
-# @$step@
-# default content (The markup that is used if you don't modify it.)
-# record set (If applicable. The records returned from the database that pertain to this event. For example, on the **Write** panel this would be one row containing the columns from the currently edited article.) 
-
-Sometimes (e.g., when dealing with preference settings) the fourth argument becomes the preference name and a fifth argument holds its value.
-
-Th @$event@ parameter usually ends in @_ui@ (for "user interface") and begins with the event to which it refers. For example, on the **Write** panel the event is @article_ui@, and on the **Files** panel the event is @file_ui@. Straightforward.
-
-The @$step@ parameter is usually the part of the panel that contains the widget or any of its controls you wish to change. For example, on the **Write** panel, the **Article image** control has a @$step@ called @article_image@ and the **Custom fields** widget has one called @custom_fields@, and so on.
-
-Let's consider some examples of using @pluggable_ui()@ to alter the admin-side interface.
-
-fn3. *Attention!* Though it's possible to completely redesign the HTML markup within the page, it is advisable to refrain from this action. For example, by removing @<input id="article_image">@ from the **Write** panel, you may render Textpattern (and plugins that rely on the existence of such a DOM element) inoperable. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the originals to @display:none@ via CSS.
+See "Admin-side user-interface callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2-4) in the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference.
 
 h4(#sec6-5-1). Adding your own admin-side panel elements
 

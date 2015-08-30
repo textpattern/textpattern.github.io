@@ -21,7 +21,7 @@ On this page:
 ** "Regular admin-side callbacks":#sec2-1
 ** "Admin-side criteria callbacks":#sec2-2
 ** "Admin-side validation callbacks":#sec2-3
-** "Admin-side layout callbacks":#sec2-4
+** "Admin-side user-interface callbacks":#sec2-4
 ** "Admin-side theme callbacks":#sec2-5
 * "Plugin callbacks":#sec3
 * "Function- and tag-based callbacks":#sec4
@@ -34,7 +34,7 @@ These regular public-side callbacks have various associated _events_, but no _st
 
 h4. __publish.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
@@ -49,7 +49,7 @@ notextile. </div>
 
 h4. __publish/atom.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -61,7 +61,7 @@ notextile. </div>
 
 h4. __publish/rss.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -73,7 +73,7 @@ notextile. </div>
 
 h4. __publish/comment.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -86,7 +86,7 @@ notextile. </div>
 
 h4. __publish/log.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -107,7 +107,7 @@ h3(#sec2-1). Regular admin-side callbacks
 
 h4. __lib/txplib_head.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -126,7 +126,7 @@ bc.. [todo:simple code example demonstrating this callback]
 
 h4. __lib/txplib_html.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -138,7 +138,7 @@ notextile. </div>
 
 h4. __include/txp_article.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -152,7 +152,7 @@ notextile. </div>
 
 h4. __include/txp_diag.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -163,7 +163,7 @@ notextile. </div>
 
 h4. __include/txp_admin.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -174,7 +174,7 @@ notextile. </div>
 
 h4. __include/txp_category.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -185,7 +185,7 @@ notextile. </div>
 
 h4. __include/txp_css.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -196,7 +196,7 @@ notextile. </div>
 
 h4. __include/txp_discuss.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -207,7 +207,7 @@ notextile. </div>
 
 h4. __include/txp_file.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -218,7 +218,7 @@ notextile. </div>
 
 h4. __include/txp_form.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -229,7 +229,7 @@ notextile. </div>
 
 h4. __include/txp_image.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -241,7 +241,7 @@ notextile. </div>
 
 h4. __include/txp_link.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -252,7 +252,7 @@ notextile. </div>
 
 h4. __include/txp_list.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -263,7 +263,7 @@ notextile. </div>
 
 h4. __include/txp_page.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -274,7 +274,7 @@ notextile. </div>
 
 h4. __include/txp_section.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -314,7 +314,7 @@ h3(#sec2-3). Admin-side validation callbacks
 
 These callbacks allow you to alter or append to the constraints imposed by the core when saving data. Textpattern will check that the passed values for things like categories, sections, and so forth actually exist in the database to avoid new ones being introduced at unexpected places.
 
-Inside plugins, you may wish to open up or restrict data in certain types of actions, or create entirely new constraints and take advantage of the built-in validator. If so, these callbacks are the ones to use.
+If you're developing plugins, you may wish to open up or restrict data in certain types of actions, or create entirely new constraints and take advantage of the built-in validator. If so, these callbacks are the ones to use.
 
 These additional arguments are all passed by reference to your application, so you can alter them directly:
 
@@ -333,18 +333,32 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3(#sec2-4). Admin-side layout callbacks
+h3(#sec2-4). Admin-side user-interface callbacks
 
-The @pluggable_ui()@ callbacks allow you to modify the admin-side panels. Argument #1 passed to your function is the @$event@. Argument #2 is the @$step@. Arguments 3 and 4 (and occasionally 5) vary depending on the functionality of the UI component. In general, the following holds true unless otherwise stated:
+The UI of the administration side of Textpattern can be manipulated with the @pluggable_ui()@ callback. This callback is used throughout the core and allows you to target any panel's widgets and/or contained controls.[1]
 
-* Argument #3 is the default markup.
-* Argument #4 is the record set of the item that is being edited (if applicable).
+These callbacks have a different function signature from regular callbacks, which you should be aware of when writing your own functions. They usually have 4 arguments:
 
-Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
+# Argument #1: @$event@
+# Argument #2: @$step@
+# Argument #3: default content (if applicable)
+# Argument #4: record set (if applicable)
+
+*Argument #1*, the @$event@ passed to your function, usually ends in @_ui@ (for "user interface") and begins with the event to which it refers. For example, on the **Write** panel the event is @article_ui@, and on the **Files** panel the event is @file_ui@. Straightforward.
+
+*Argument #2*, the @$step@, is usually the part of the panel that contains the widget or any of its controls you wish to change. For example, on the **Write** panel, the **Article image** control has a @$step@ called @article_image@ and the **Custom fields** widget has one called @custom_fields@, and so on.
+
+Arguments 3 and 4 (and occasionally 5) vary depending on the functionality of the UI element in question, but in general...
+
+*Argument #3*, if applicable, is the default markup; it will be used if you don't modify it. Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
+
+*Argument #4*, if applicable, is the record set returned from the database that pertain to this event. Sometimes (e.g., when dealing with preference settings) argument #4 becomes the preference name and a fifth argument holds its value.
+
+fn1. *Attention!* Though it's possible to completely redesign the HTML markup within the page, it is advisable to refrain from this action. For example, by removing @<input id="article_image">@ from the **Write** panel, you may render Textpattern (and plugins that rely on the existence of such a DOM element) inoperable. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the originals to @display:none@ via CSS.
 
 h4. __include/txp_article.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 For the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel only. These callbacks have a single @$event@ (i.e., @article_ui@).
 
@@ -381,7 +395,7 @@ notextile. </div>
 
 h4. __include/txp_category.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 For the **"Categories":http://docs.textpattern.io/administration/content/categories-panel** panel.
 
@@ -394,7 +408,7 @@ notextile. </div>
 
 h4. __include/txp_image.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 For the **"Images":http://docs.textpattern.io/administration/content/images-panel** panel. These callbacks have a single @$event@ (i.e., @image_ui@).
 
@@ -414,7 +428,7 @@ notextile. </div>
 
 h4. __include/txp_file.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 For the **"Files":http://docs.textpattern.io/administration/content/files-panel** panel.
 
@@ -428,7 +442,7 @@ notextile. </div>
 
 h4. __include/txp_links.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 For the **"Links":http://docs.textpattern.io/administration/content/links-panel** panel.
 
@@ -441,7 +455,7 @@ notextile. </div>
 
 h4. __include/txp_section.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 For the **"Sections":http://docs.textpattern.io/administration/presentation/sections-panel** panel.
 
@@ -454,7 +468,7 @@ notextile. </div>
 
 h4. __include/txp_admin.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 For the **"Users":http://docs.textpattern.io/administration/admin/users-panel** panel.
 
@@ -467,7 +481,7 @@ notextile. </div>
 
 h4. __include/txp_prefs.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 For the Preferences panels ("Basic":http://docs.textpattern.io/administration/admin/basic-prefs-panel and "Advanced":http://docs.textpattern.io/administration/admin/advanced-prefs-panel).
 
@@ -488,7 +502,7 @@ These callbacks are all used to alter various elements within admin-side themes.
 
 h4. __lib/txplib_theme.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -499,7 +513,7 @@ notextile. </div>
 
 h4. __lib/txplib_head.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -510,7 +524,7 @@ notextile. </div>
 
 h4. __lib/txplib_html.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
@@ -544,7 +558,7 @@ h2(#sec4). Function- and tag-based callbacks
 
 h4. __lib/txplib_misc.php__
 
-[todo:intro para about this callback]
+[todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
