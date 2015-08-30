@@ -12,7 +12,7 @@ tags:
 
 h1. Core callbacks reference
 
-This is a reference of all callbacks used in Textpattern.
+This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their "events and steps":http://docs.textpattern.io/development/events-and-steps. 
 
 On this page:
 
@@ -91,7 +91,7 @@ h4. __publish/log.php__
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. @$event@ |_. When it occurs |_. What it allows/does |
-| @log_hit@ | Just before a log message is recorded in the @txp_log@ table. | Alters the log message. |
+| @log_hit@ | Just before a log message is recorded in the 'txp_log' table. | Alters the log message. |
 
 notextile. </div>
 
