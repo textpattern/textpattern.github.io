@@ -9,157 +9,208 @@ tags:
   - admin-side
   - events
   - steps
-  - callbacks
 ---
 
 h1. Admin-side events and steps
 
-These are the main events and steps that Textpattern uses as you interact with the admin-side interface. Although they are not direct "callbacks":http://docs.textpattern.io/development/core-callback-list, you may hook into these events and steps from a plugin to perform an action.
+These are the main events and steps that Textpattern uses as you interact with the admin-side interface. Although they are not direct "callbacks":http://docs.textpattern.io/development/core-callbacks-reference, you may hook into these events and steps from a plugin to perform an action.
 
-As mentioned in the @register_callback()@ information on the "development main page":http://docs.textpattern.io/development/, the full function definition looks like this:
+h2(#sec1) @admin@ event
 
-bc. function register_callback($func, $event, $step='', $pre=0)
+The associated steps are:
 
-And the indicated parameters are:
+* admin_change_pageby
+* admin_multi_edit
+* author_edit
+* author_list
+* author_save
+* author_save_new
+* change_email
+* change_email_form
+* change_pass
+* new_pass_form
 
-* @$func@ -- The name of the function you coded and want to add to a callback-event.
-* @$event@ -- The name of the (Textpattern-provided) event with which you want to associate your plugin.
-* @$step=''@ -- (Optional). **Admin-side only**: @$events@ are (disjunctively) divided into steps. For admin-side plugins, you have the choice of narrowing your plugin to a specific step.
-* @$pre=0@ -- (Optional). **Admin-side only**: By default (@$pre=0@), @$func@ is called after the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. If you set this to "1" (@$pre=1@), then @$func@ is called before any part of the page is rendered or executed. This allows you to replace existing panels on the admin-side.
+h2(#sec2). @article@ event
 
-In this case, the focus is on _events_ and _steps_ only.
+The associated steps are:
 
-h2. Complete list of events and steps
+* create
+* edit
+* publish
+* save
+* save_pane_state
 
-* *admin*
-** admin_change_pageby
-** admin_multi_edit
-** author_edit
-** author_list
-** author_save
-** author_save_new
-** change_email
-** change_email_form
-** change_pass
-** new_pass_form
-* *article*
-** create
-** edit
-** publish
-** save
-** save_pane_state
-* *category*
-** cat_article_create
-** cat_article_edit
-** cat_article_save
-** cat_category_list
-** cat_category_multiedit
-** cat_file_create
-** cat_file_edit
-** cat_file_save
-** cat_image_create
-** cat_image_edit
-** cat_image_save
-** cat_link_create
-** cat_link_edit
-** cat_link_save
-* *css*
-** css_copy
-** css_edit
-** css_edit_raw
-** css_delete
-** css_save
-** pour
-* *discuss*
-** discuss_change_pageby
-** discuss_delete
-** discuss_edit
-** discuss_list
-** discuss_multi_edit
-** discuss_save
-** ipban_add
-** ipban_list
-** ipban_unban
-* *file*
-** file_change_pageby
-** file_create
-** file_edit
-** file_insert
-** file_list
-** file_multi_edit
-** file_replace
-** file_save
-* *form*
-** form_create
-** form_edit
-** form_delete
-** form_list
-** form_multi_edit
-** form_save
-** save_pane_state
-* *image*
-** image_edit
-** image_change_pageby
-** image_insert
-** image_list
-** image_multi_edit
-** image_replace
-** image_save
-** thumbnail_create
-** thumbnail_delete
-** thumbnail_insert
-* *import*
-** start_import
-** switch_tool
-* *link*
-** link_change_pageby
-** link_edit
-** link_list
-** link_multi_edit
-** link_save
-* *list*
-** list_change_pageby
-** list_list
-** list_multi_edit
-* *log*
-** log_change_pageby
-** log_list
-** log_multi_edit
-* *page*
-** page_edit
-** page_delete
-** page_new
-** page_save
-** page_list
-* *plugin*[1]
-** plugin_edit
-** plugin_help
-** plugin_install
-** plugin_list
-** plugin_multi_edit
-** plugin_save
-** plugin_verify
-** switch_status
-* *prefs*
-** advanced_prefs
-** advanced_prefs_save
-** get_language
-** get_textpack
-** list_languages
-** prefs_list
-** prefs_save
-** remove_language
-* *section*
-** section_change_pageby
-** sec_section_list
-** section_delete
-** section_edit
-** section_multi_edit
-** section_save
-** section_set_default
-** section_toggle_option
-* *tag*
-** build
+h2(#sec3). @category@ event
 
-fn1. For information purposes only. Third party plugins do not run on this panel.
+The associated steps are:
+
+* cat_article_create
+* cat_article_edit
+* cat_article_save
+* cat_category_list
+* cat_category_multiedit
+* cat_file_create
+* cat_file_edit
+* cat_file_save
+* cat_image_create
+* cat_image_edit
+* cat_image_save
+* cat_link_create
+* cat_link_edit
+* cat_link_save
+
+h2(#sec4). @css@ event
+
+The associated steps are:
+
+* css_copy
+* css_edit
+* css_edit_raw
+* css_delete
+* css_save
+* pour
+
+h2(#sec5). @discuss@ event
+
+The associated steps are:
+
+* discuss_change_pageby
+* discuss_delete
+* discuss_edit
+* discuss_list
+* discuss_multi_edit
+* discuss_save
+* ipban_add
+* ipban_list
+* ipban_unban
+
+h2(#sec6). @file@ event
+
+The associated steps are:
+
+* file_change_pageby
+* file_create
+* file_edit
+* file_insert
+* file_list
+* file_multi_edit
+* file_replace
+* file_save
+
+h2(#sec7). @form@ event
+
+The associated steps are:
+
+* form_create
+* form_edit
+* form_delete
+* form_list
+* form_multi_edit
+* form_save
+* save_pane_state
+
+h2(#sec8). @image@ event
+
+The associated steps are:
+
+* image_edit
+* image_change_pageby
+* image_insert
+* image_list
+* image_multi_edit
+* image_replace
+* image_save
+* thumbnail_create
+* thumbnail_delete
+* thumbnail_insert
+
+h2(#sec9). @import@ event
+
+The associated steps are:
+
+* start_import
+* switch_tool
+
+h2(#sec10). @link@ event
+
+The associated steps are:
+
+* link_change_pageby
+* link_edit
+* link_list
+* link_multi_edit
+* link_save
+
+h2(#sec11). @list@ event
+
+The associated steps are:
+
+* list_change_pageby
+* list_list
+* list_multi_edit
+
+h2(#sec12). @log@ event
+
+The associated steps are:
+
+* log_change_pageby
+* log_list
+* log_multi_edit
+
+h2(#sec13). @page@ event
+
+The associated steps are:
+
+* page_edit
+* page_delete
+* page_new
+* page_save
+* page_list
+
+h2(#sec14). @plugin@ event
+
+For information purposes only. Third party plugins do not run on this panel.
+
+The associated steps are:
+
+* plugin_edit
+* plugin_help
+* plugin_install
+* plugin_list
+* plugin_multi_edit
+* plugin_save
+* plugin_verify
+* switch_status
+
+h2(#sec15). @prefs@ event
+
+The associated steps are:
+
+* advanced_prefs
+* advanced_prefs_save
+* get_language
+* get_textpack
+* list_languages
+* prefs_list
+* prefs_save
+* remove_language
+
+h2(#sec16). @section@ event
+
+The associated steps are:
+
+* section_change_pageby
+* sec_section_list
+* section_delete
+* section_edit
+* section_multi_edit
+* section_save
+* section_set_default
+* section_toggle_option
+
+h2(#sec17). @tag@ event
+
+The associated steps are:
+
+* build
 
