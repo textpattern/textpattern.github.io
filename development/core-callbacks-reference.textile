@@ -94,7 +94,7 @@ notextile. </div>
 
 h2(#sec2). Function- and tag-based callbacks
 
-**_lib/txplib_misc.php_**
+h3. __lib/txplib_misc.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -108,7 +108,7 @@ notextile. </div>
 
 h2(#sec3). Plugin callbacks
 
-**_include/txp_plugin.php_**
+h3. __include/txp_plugin.php__
 
 In order to process these callbacks, your plugin must raise the @PLUGIN_LIFECYCLE_NOTIFY@ flag to register its intent. In addition, if you wish to offer a link to your plugin's preferences from the  **"Plugins":http:docs.textpattern.io/administration/plugins-panel** panel, you must raise the @PLUGIN_HAS_PREFS@ flag.
 
@@ -124,7 +124,7 @@ notextile. </div>
 
 h2(#sec4). Regular admin-side callbacks
 
-**_lib/txplib_head.php_**
+h3. __lib/txplib_head.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -135,7 +135,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_lib/txplib_html.php_**
+h3. __lib/txplib_html.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -145,7 +145,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_article.php_**
+h3. __include/txp_article.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -157,7 +157,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_diag.php_**
+h3. __include/txp_diag.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -166,7 +166,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_admin.php_**
+h3. __include/txp_admin.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -175,7 +175,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_category.php_**
+h3. __include/txp_category.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -184,7 +184,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_css.php_**
+h3. __include/txp_css.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -193,7 +193,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_discuss.php_**
+h3. __include/txp_discuss.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -202,7 +202,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_file.php_**
+h3. __include/txp_file.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -211,7 +211,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**include/txp_form.php**
+h3. __include/txp_form.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -220,7 +220,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_image.php_**
+h3. __include/txp_image.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -230,7 +230,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_link.php_**
+h3. __include/txp_link.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -239,7 +239,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_list.php_**
+h3. __include/txp_list.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -248,7 +248,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_page.php_**
+h3. __include/txp_page.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -257,7 +257,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**_include/txp_section.php_**
+h3. __include/txp_section.php__
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
