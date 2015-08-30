@@ -18,17 +18,17 @@ On this page:
 
 * "Public-side callbacks":#sec1
 * "Admin-side callbacks":#sec2
-* "Regular admin-side callbacks":#sec2-1
-* "Admin-side criteria callbacks":#sec2-2
-* "Admin-side validation callbacks":#sec2-3
-* "Admin-side layout callbacks":#sec2-4
-* "Admin-side theme callbacks":#sec2-5
+** "Regular admin-side callbacks":#sec2-1
+** "Admin-side criteria callbacks":#sec2-2
+** "Admin-side validation callbacks":#sec2-3
+** "Admin-side layout callbacks":#sec2-4
+** "Admin-side theme callbacks":#sec2-5
 * "Plugin callbacks":#sec3
 * "Function- and tag-based callbacks":#sec4
 
 h2(#sec1). Public-side callbacks
 
-[todo:intro line about regular callbacks]
+[todo:intro para]
 
 h4. __publish.php__
 
