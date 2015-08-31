@@ -345,36 +345,36 @@ These callbacks are grouped here by the panel they are associated with.
 
 h4. Write panel
 
-All function calls for modifying the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel are made to the __include/txp_article.php__ file. The full set of possible callbacks use the same @$event@ (i.e., @article_ui@).
+All calls are made to the __include/txp_article.php__ file. 
 
-Legend:
+The same @$event@ is used in each case: @article_ui@.
 
 %(information)Blue% means new in upcoming Textpattern 4.x.x.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. Concerned widget |_. @$event@ |_. @$step@ |_. What it alters or replaces |
-| - | @article_ui@ | @title@ | The **Title** field. |
-| - | " | @body@ | The **Body** field. |
-| - | " | @excerpt@ | The **Excerpt** field. |
-| - | " | @view@ | The **View**, **HTML**, and **Preview** icon buttons. |
-| - | " | @author@ | The _author_ and _published-at_ info. |
-| **Advanced options** | " | @markup@ | The **Article markup** and **Excerpt markup** select lists. |
-| **Advanced options** | " | @override@ | The **Override form** select list. |
-| **Article image** | " | @article_image@ | The widget and **Article image** field. |
-| **Comment options** | " | @annotate_invite@ | The **Off/On** and **Invitation** controls. |
-| **Custom fields** | " | @custom_fields@ | The widget and contained input fields. |
-| **Date and time** | " | @timestamp@ | The **Timestamp** controls. |
-| **Date and time** | " | @expires@ | The **Expires** controls.  |
-| **Meta** | " | @keywords@ | The **Keywords** field. |
-| **Meta** | " | @url_title@ | The **URL-only title** field. |
-| **Recent articles** | " | @recent_articles@ | The widget and contained articles list. |
-| **Sort and display** | " | @sort_display@ | The **Section** and **Category** select lists. |
-| **Sort and display** | " | @section@ | The **Section** select list. |
-| **Sort and display** | " | @categories@ | The **Category 1** and **Category 2** select lists. |
-| **Status** | " | @status@ | The widget and contained radio buttons. |
-| **Textile help** | " | @sidehelp@ | The widget and its contents. |
-| **Textile help** | " | @extend_col_1@ | Adds (not alters or replaces) markup below @sidehelp@. Argument #3 is empty as there is no default content here. See _Example 2_ below. |
+|_. Concerned widget |_. @$step@ |_. What it alters or replaces |
+| - | @title@ | The **Title** field. |
+| - | @body@ | The **Body** field. |
+| - | @excerpt@ | The **Excerpt** field. |
+| - | @view@ | The **View**, **HTML**, and **Preview** icon buttons. |
+| - | @author@ | The _author_ and _published-at_ info. |
+| **Advanced options** | @markup@ | The **Article markup** and **Excerpt markup** select lists. |
+| **Advanced options** | @override@ | The **Override form** select list. |
+| **Article image** | @article_image@ | The widget and **Article image** field. |
+| **Comment options** | @annotate_invite@ | The **Off/On** and **Invitation** controls. |
+| **Custom fields** | @custom_fields@ | The widget and contained input fields. |
+| **Date and time** | @timestamp@ | The **Timestamp** controls. |
+| **Date and time** | @expires@ | The **Expires** controls.  |
+| **Meta** | @keywords@ | The **Keywords** field. |
+| **Meta** | @url_title@ | The **URL-only title** field. |
+| **Recent articles** | @recent_articles@ | The widget and contained articles list. |
+| **Sort and display** | @sort_display@ | The **Section** and **Category** select lists. |
+| **Sort and display** | @section@ | The **Section** select list. |
+| **Sort and display** | @categories@ | The **Category 1** and **Category 2** select lists. |
+| **Status** | @status@ | The widget and contained radio buttons. |
+| **Textile help** | @sidehelp@ | The widget and its contents. |
+| **Textile help** | @extend_col_1@ | Adds (not alters or replaces) markup below @sidehelp@. Argument #3 is empty as there is no default content here. See _Example 2_ below. |
 
 notextile. </div>
 
