@@ -232,15 +232,15 @@ Textpattern makes extensive use of callbacks. [todo:what is a callback?] Hook in
 
 The @register_callback()@ and @pluggable_ui()@ functions mentioned earlier are instrumental in writing callbacks, and especially for administration-related plugins.
 
-Here we put it all together -- functions and arguments to write callbacks -- with a few examples.
+Let's put it all together with a few examples using functions and arguments (events, steps, etc) to write callbacks.
 
 h3(#sec7-1). Adding your own admin-side panel elements
 
 There are two ways panel elements can be added to an admin-side panel: as _new_ elements, or as modifications to existing elements.
 
-h3(#sec7-1-1). Adding new elements
+h4(#sec7-1-1). Adding new elements
 
-@pluggable_ui()@ can be used to add something to the administrative interface like this:
+In this example, we use the @pluggable_ui()@ function to add text immediately below the **Textile help** link in the **Write** panel. That is where the @extend_col_1@ step puts its markup:
 
 bc.. register_callback('abc_add_text', 'article_ui', 'extend_col_1');
 
@@ -248,9 +248,9 @@ function abc_add_text($event, $step, '', $rs) {
    return 'Hello world!';
 }
 
-p. That adds the text to the interface immediately below the **Textile help** link: that is where the @extend_col_1@ step puts its markup. Note there is no third argument this time because there is no default content to alter.
+p. Note there is no third argument because there is no default content to alter.
 
-h3(#sec7-1-2). Adding new elements to existing panel markup
+h4(#sec7-1-2). Adding new elements to existing panel markup
 
 Another way to add elements is to existing markup. For example, to add the url_title below the article's **Title** field, you could do this:
 
@@ -266,7 +266,7 @@ p. Notice we return the default markup, @$data@, and tack on our own markup whic
 
 h3(#sec7-2). Removing admin-side panel elements
 
-Another example only, but let's say you wanted to remove the **Keywords** field from the **Write** panel. You could hook into the 'keywords' step of the **Write** panel by doing the following in a plugin:
+In this example, let's say you wanted to remove the **Keywords** field from the **Write** panel. You could hook into the @keywords@ step of the **Write** panel by doing the following:
 
 bc.. register_callback('abc_remove_keywords', 'article_ui', 'keywords');
 
