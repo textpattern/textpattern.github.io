@@ -80,13 +80,13 @@ h3(#sec3-1). Functional categories
 
 Plugins can be categorised in three functional ways:
 
-* “on demand” -- providing tags for __pages__ and __forms__
-* “up front” -- intercepting page requests (either all or those having special characteristics)
-* “in between” -- using Textpattern hooks to automatically change or add behaviour.
+* “On demand” (providing tags for __pages__ and __forms__)
+* “Up front” (intercepting page requests; either all or those having special characteristics)
+* “In between” (using Textpattern hooks to automatically change or add behaviour)
 
 The most practical (and most popular) plugins fall into more than one category, because a plugin is really nothing more than a container for code. If it provides functionality in multiple ways, it's likely providing more benefit to the user.
 
-Plugins can also be public-side or admin-side, or be one of several types that correspond to all of the above (see section, __How plugins are loaded__, below.)
+Plugins can also be public-side or admin-side, or be one of several types that correspond to all of the above (see __How plugins are loaded__ later.)
 
 h3(#sec3-2). Public-side plugins
 
