@@ -226,7 +226,7 @@ fn1. *Attention!* Though it’s possible to completely redesign the HTML markup 
 
 h2(#sec7). Callbacks
 
-Textpattern makes extensive use of callbacks. [todo:what is a callback?] Hook into these known points to choose where and when your plugins run. The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callbacks used in Textpattern, organised by type.
+Textpattern makes extensive use of callbacks. A callback is essentially an order (written as a function) that your plugin can use to execute some events (and steps). Hook into these known points to choose where and when your plugins run. The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callbacks used in Textpattern, organised by type.
 
 The @register_callback()@ and @pluggable_ui()@ functions mentioned earlier are instrumental in writing callbacks, and especially for administration-related plugins.
 
