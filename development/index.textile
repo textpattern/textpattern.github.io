@@ -187,7 +187,7 @@ bc. function register_callback($func, $event, $step='', $pre=0)
 
 And the indicated *arguments* (or parameters) are:
 
-|_. Argument |_. Parameter |_. Explanation |
+|_. No. |_. Argument |_. Explanation |
 | 1 | @$func@ | The name of the function you coded and want to add to a callback event. |
 | 2 | @$event@ | The name of the Textpattern-provided event that you associate your plugin with. |
 | 3 | @$step=''@ | **For admin-side plugins only, thus optional.** The _event_ is (disjunctively) divided into steps, so you have the choice of narrowing your plugin to a specific step. |
@@ -201,7 +201,7 @@ The @pluggable_ui@ function is for admin-side plugins solely. It allows you to m
 
 Callbacks written with @pluggable_ui@ have a different signature than those written with other functions. The usually have 4 arguments (and sometimes 5).
 
-|_. Argument |_. Parameter |_. Explanation |
+|_. No. |_. Argument |_. Explanation |
 | 1 | @$event@ | The name of the Textpattern-provided event that you associate your plugin with. |
 | 2 | @$step=''@ | The step(s) of the event that you're specifically targeting. |
 | 3 | (default markup) | Used if not modified. |
