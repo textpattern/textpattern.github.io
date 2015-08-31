@@ -26,7 +26,7 @@ On this page:
 * "Register your plugin developer prefix":#sec4
 * "How plugins are loaded":#sec5
 * "Functions and arguments":#sec6
-** "Public-side functions":#sec6-2
+** "Public-side functions and arguments":#sec6-2
 ** "Administration functions":#sec6-2
 *** "Function: @pluggable_ui()@":#sec6-2-1
 *** "Function: @register_callback()@":#sec6-2-1
@@ -146,13 +146,33 @@ There are many "functions used in Textpattern":http://phpcrossref.com/xref/textp
 * __"txplib_html.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_html.php__ -- to help build various other HTML elements
 * __"txplib_misc.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_misc.php__ -- various “miscellaneous” functions.
 
-h3(#sec6-1). Public-side functions
+When we talk about *arguments* in these docs, we're referring to the parameters of a given function. For example, say we have the hypothetical function foo(). Its signature (or definition), including the arguments (or parameters), might be:
 
-[todo:intro para for this section]
+bc. function foo($argument1, $argument2, $argument3, $etc)
 
-It is probably not helpful to make a list of public-side functions. If you're comfortable with PHP, you'll figure things out, and the helper functions mentioned above will get you on your way.
+The arguments for a given function will vary depending on what your functions are for, and whether you're developing a public-side or admin-side plugin.
 
-What are worth detailing, however, are the relevant administration functions.
+Two arguments you'll see mentioned a lot in these docs are for _events_ (@$event@) and _steps_ (@$step@). Their position in a function signature varies depending on the function type. You'll see what we mean below when defining the @register_callback()@ and @pluggable_ui@ functions.
+
+See the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference for all _events_ and _steps_ used to write every possible Textpattern callback.
+
+See the "Admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps for all the _events_ and _steps_ you might use in admin-side plugins specifically.
+
+h3(#sec6-1). Public-side functions and arguments
+
+It's probably not helpful to make a list of public-side functions. If you're comfortable with PHP, you'll figure things out, and the helper functions mentioned above will get you on your way.
+
+But there are four _events_ (i.e., the @$event@ argument) to be aware of for writing public-side callbacks. These two are mainly for comments and spam-related plugins:
+
+* @comment.save@ -- Gets called after the nonce check passed, but before a plugin is saved.
+* @comment.form@ -- Gets called before a comment form is rendered and allows to add to it. 
+
+And these two are useful for introducing your own URI schemas:
+
+* @pretext@ -- Gets called at the beginning of the @pretext()@ function.
+* @textpattern@ -- Gets called at the beginning of the @textpattern()@ function. 
+
+In the latter case, for example, imagine building an archive plugin that prevented this URL, __domain.tld/section/archive/__, from returning a 404 error.
 
 h3(#sec6-2). Administration functions
 
@@ -205,7 +225,7 @@ See "Admin-side user-interface callbacks":http://docs.textpattern.io/development
 
 fn1. *Attention!* Though it’s possible to completely redesign the HTML markup within the page, you are advised to refrain from doing so with a plugin. Removing and changing admin-side panel elements can make the plugins of other developers who target those DOM elements non-functional. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the originals to display:none via CSS.
 
-h4(#sec7-5-1). Adding your own admin-side panel elements
+h4(#sec7-). Adding your own admin-side panel elements
 
 There are two ways panel elements can be added to an admin-side panel: as _new_ elements, or as modifications to existing elements.
 
@@ -279,25 +299,11 @@ Textpattern makes extensive use of callbacks. Hook into these known points to ch
 The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callbacks used in Textpattern.
  
 
-h3(#sec7-3). Public-side callback events
-
-There are four public-side callback events to be aware of.
-
-These two are mainly for comments and spam-related plugins:
-
-* comment.save -- Gets called after the nonce check passed, but before a plugin is saved.
-* comment.form -- Gets called before a comment form is rendered and allows to add to it. 
-
-These two are useful if you want to introduce your own URI schemas:
-
-* pretext -- Gets called at the beginning of @pretext()@.
-* textpattern -- Gets called at the beginning of @textpattern()@. 
-
-For example, imagine building an archive plugin that prevented the URL, __domain.tld/section/archive/__, from returning a 404.
-
 h3(#sec7-4). Admin-side callback events
 
 See "Admin-side callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2 in the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference.
+
+[todo:harmonize the "admin-side callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2 section with the isolated "admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps]
 
 h2(#sec8). Variables, classes, and constants
 
