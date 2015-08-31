@@ -197,7 +197,7 @@ Also see the "complete list of admin-side events and steps":http://docs.textpatt
 
 h4(#sec6-2-2). Function: @pluggable_ui@
 
-The @pluggable_ui@ function is for admin-side plugins solely. It allows you to manipulate the user-interface of the administration side. The function is used throughout the core and allows you to target any panel’s widgets and/or contained controls.[1]
+The @pluggable_ui@ function is for admin-side plugins solely. The function is used throughout the core and allows you to manipulate the user-interface of the administration side by targeting any panel widgets or their contained controls.[1]
 
 Callbacks written with @pluggable_ui@ have a different signature than those written with other functions. The usually have 4 arguments (and sometimes 5).
 
