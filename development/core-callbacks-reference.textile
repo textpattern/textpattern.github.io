@@ -335,11 +335,11 @@ notextile. </div>
 
 h3(#sec2-4). Admin-side user-interface callbacks
 
-These callbacks allow you to modify the admin-side panels in some way, by targeting their associated widgets or individual controls. Modifications include:
+These callbacks allow you to modify the admin-side panels in some way by targeting their associated widgets or individual controls. Modifications include:
 
 * adding new elements, 
 * removing elements, or 
-* changing existing elements in some way.
+* changing existing elements.
 
 These callbacks are grouped here by the panel they are associated with.
 
