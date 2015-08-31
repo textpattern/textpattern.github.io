@@ -26,7 +26,8 @@ On this page:
 * "Register your plugin developer prefix":#sec4
 * "How plugins are loaded":#sec5
 * "Functions and arguments":#sec6
-** "Administration functions":#sec6-1
+** "Public-side functions":#sec6-2
+** "Administration functions":#sec6-2
 *** "Function: @pluggable_ui()@":#sec6-2-1
 *** "Function: @register_callback()@":#sec6-2-1
 * "Callbacks":#sec7
