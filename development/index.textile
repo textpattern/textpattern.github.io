@@ -58,7 +58,7 @@ When plugin ideas aren't conceived quietly in the minds of individuals and built
 
 h3(#sec2-2). Do it the Textpattern way
 
-Do it the “Textpattern's way” from the start by using Textpattern functions (see __Functions, variables, classes, and constants__ section below), because they already work efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Further, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
+Do it the “Textpattern's way” from the start by using Textpattern functions (talked about later), because they already work efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Further, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
 
 h3(#sec2-3). Write clear and concise plugin help 
 
