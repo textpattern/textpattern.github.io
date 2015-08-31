@@ -335,63 +335,66 @@ notextile. </div>
 
 h3(#sec2-4). Admin-side user-interface callbacks
 
-The UI of the administration side of Textpattern can be manipulated with the @pluggable_ui()@ callback. This callback is used throughout the core and allows you to target any panel's widgets and/or contained controls.[1]
+These callbacks allow you to modify the admin-side panels in some way, by targeting their associated widgets or individual controls. Modifications include:
 
-These callbacks have a different function signature from regular callbacks, which you should be aware of when writing your own functions. They usually have 4 arguments:
+* adding new elements, 
+* removing elements, or 
+* changing existing elements in some way.
 
-# Argument #1: @$event@
-# Argument #2: @$step@
-# Argument #3: default content (if applicable)
-# Argument #4: record set (if applicable)
+These callbacks are grouped here by the panel they are associated with.
 
-*Argument #1*, the @$event@ passed to your function, usually ends in @_ui@ (for "user interface") and begins with the event to which it refers. For example, on the **Write** panel the event is @article_ui@, and on the **Files** panel the event is @file_ui@. Straightforward.
+h4. Write panel
 
-*Argument #2*, the @$step@, is usually the part of the panel that contains the widget or any of its controls you wish to change. For example, on the **Write** panel, the **Article image** control has a @$step@ called @article_image@ and the **Custom fields** widget has one called @custom_fields@, and so on.
-
-Arguments 3 and 4 (and occasionally 5) vary depending on the functionality of the UI element in question, but in general...
-
-*Argument #3*, if applicable, is the default markup; it will be used if you don't modify it. Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
-
-*Argument #4*, if applicable, is the record set returned from the database that pertain to this event. Sometimes (e.g., when dealing with preference settings) argument #4 becomes the preference name and a fifth argument holds its value.
-
-fn1. *Attention!* Though it's possible to completely redesign the HTML markup within the page, it is advisable to refrain from this action. For example, by removing @<input id="article_image">@ from the **Write** panel, you may render Textpattern (and plugins that rely on the existence of such a DOM element) inoperable. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the originals to @display:none@ via CSS.
-
-h4. __include/txp_article.php__
-
-[todo:intro para about what this callback is concerned with]
-
-For the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel only. These callbacks have a single @$event@ (i.e., @article_ui@).
-
-notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-
-|_. Panel |_. Concerned widget |_. @$event@ |_. @$step@ |_. What it alters or replaces |
-| Write | - | @article_ui@ | @title@ | The **Title** field. |
-| " | - | " | @body@ | The **Body** field. |
-| " | - | " | @excerpt@ | The **Excerpt** field. |
-| " | - | " | @view@ | The **View**, **HTML**, and **Preview** icon buttons. |
-| " | - | " | @author@ | The _author_ and _published-at_ info. |
-| " | **Advanced options** | " | @markup@ | The **Article markup** and **Excerpt markup** select lists. |
-| " | **Advanced options** | " | @override@ | The **Override form** select list. |
-| " | **Article image** | " | @article_image@ | The widget and **Article image** field. |
-| " | **Comment options** | " | @annotate_invite@ | The **Off/On** and **Invitation** controls. |
-| " | **Custom fields** | " | @custom_fields@ | The widget and contained input fields. |
-| " | **Date and time** | " | @timestamp@ | The **Timestamp** controls. |
-| " | **Date and time** | " | @expires@ | The **Expires** controls.  |
-| " | **Meta** | " | @keywords@ | The **Keywords** field. |
-| " | **Meta** | " | @url_title@ | The **URL-only title** field. |
-| " | **Recent articles** | " | @recent_articles@ | The widget and contained articles list. |
-| " | **Sort and display** | " | @sort_display@ | The **Section** and **Category** select lists. |
-| " | **Sort and display** | " | @section@ | The **Section** select list. |
-| " | **Sort and display** | " | @categories@ | The **Category 1** and **Category 2** select lists. |
-| " | **Status** | " | @status@ | The widget and contained radio buttons. |
-| "" | **Textile help** | " | @sidehelp@ | The widget and its contents. |
-| " | **Textile help** | " | @extend_col_1@ | Adds (not alters or replaces) markup below @sidehelp@. Argument #3 is empty as there is no default content here. |
+All function calls for modifying the **"Write":http://docs.textpattern.io/administration/content/write-panel** panel are made to the __include/txp_article.php__ file. The full set of possible callbacks use the same @$event@ (i.e., @article_ui@).
 
 Legend:
 
 %(information)Blue% means new in upcoming Textpattern 4.x.x.
 
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. Concerned widget |_. @$event@ |_. @$step@ |_. What it alters or replaces |
+| - | @article_ui@ | @title@ | The **Title** field. |
+| - | " | @body@ | The **Body** field. |
+| - | " | @excerpt@ | The **Excerpt** field. |
+| - | " | @view@ | The **View**, **HTML**, and **Preview** icon buttons. |
+| - | " | @author@ | The _author_ and _published-at_ info. |
+| **Advanced options** | " | @markup@ | The **Article markup** and **Excerpt markup** select lists. |
+| **Advanced options** | " | @override@ | The **Override form** select list. |
+| **Article image** | " | @article_image@ | The widget and **Article image** field. |
+| **Comment options** | " | @annotate_invite@ | The **Off/On** and **Invitation** controls. |
+| **Custom fields** | " | @custom_fields@ | The widget and contained input fields. |
+| **Date and time** | " | @timestamp@ | The **Timestamp** controls. |
+| **Date and time** | " | @expires@ | The **Expires** controls.  |
+| **Meta** | " | @keywords@ | The **Keywords** field. |
+| **Meta** | " | @url_title@ | The **URL-only title** field. |
+| **Recent articles** | " | @recent_articles@ | The widget and contained articles list. |
+| **Sort and display** | " | @sort_display@ | The **Section** and **Category** select lists. |
+| **Sort and display** | " | @section@ | The **Section** select list. |
+| **Sort and display** | " | @categories@ | The **Category 1** and **Category 2** select lists. |
+| **Status** | " | @status@ | The widget and contained radio buttons. |
+| **Textile help** | " | @sidehelp@ | The widget and its contents. |
+| **Textile help** | " | @extend_col_1@ | Adds (not alters or replaces) markup below @sidehelp@. Argument #3 is empty as there is no default content here. See _Example 2_ below. |
+
 notextile. </div>
+
+**Example 1: [todo:pick a callback from table and write a simple function for it]**
+
+[todo:the code] 
+
+**Example 2: Adding text to the *Textile help* widget**
+
+Note the last callback in the table above is different from the others; it _adds_ something to the panel instead of changing it. Let's consider that callback as another example.
+
+We'll add some text -- "Textile, the humane web text generator." -- in the **Textile help** widget:
+
+bc.. register_callback('abc_add_text', 'article_ui', 'extend_col_1');
+
+function abc_add_text($event, $step, '', $rs) {
+   return 'Textile, the humane web text generator.';
+}
+
+p. The text is added immediately below the widget header link, which is where the @extend_col_1@ step happens to output its markup.
 
 h4. __include/txp_category.php__
 

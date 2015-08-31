@@ -234,25 +234,27 @@ Let's put it all together with a few examples using functions and arguments (eve
 
 h3(#sec7-1). Adding your own admin-side panel elements
 
-There are two ways panel elements can be added to an admin-side panel: as _new_ elements, or as modifications to existing elements.
+There are two ways elements can be added to an admin-side panel: as _new_ elements, or as modifications to existing elements. Each panel has its own set of core callback parameters to work with, which are detailed in the "Admin-side user-interface callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2-4 section of the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference.
 
-h4(#sec7-1-1). Adding new elements
+h4(#sec7-1-1). Adding new elements (without altering existing markup)
 
-In this example, we use the @register_callback@ function to add text immediately below the **Textile help** link in the **Write** panel. That is where the @extend_col_1@ step puts its markup:
+In this example, we use the @register_callback@ function to add some text -- "Textile, the humane web text generator." -- in the **Write** panel's **Textile help** widget. The text is added immediately below the widget header link, which is where the @extend_col_1@ step happens to output its markup:
 
 bc.. register_callback('abc_add_text', 'article_ui', 'extend_col_1');
 
 function abc_add_text($event, $step, '', $rs) {
-   return 'Hello world!';
+   return 'The humane web text generator.';
 }
 
-p. If you recall from the @register_callback@ definition provided earlier, the first line is giving these arguments:
+p. From the "@register_callback@ definition":#sec6-2-1 provided earlier, we can see the first line is giving these arguments:
 
-* @$func@ = @abc_add_text@
+* @$func@ = @abc_add_text@ (hypothetical)
 * @$event@ = @article_ui@
 * @$step@ = @extend_col_1@
 
-So @abc_add_text@ is the named callback in this case, and the next line of code is the callback function, namely @abc_add_text()@. Note there's no third argument (the empty single-quotes, @''@) for this function because there's no default content to alter.
+So @abc_add_text@ is the named custom function in this case, and @article_ui@ and @extend_col_1@ are the actual event and step in core that define the callback action. The event value (@article_ui@) makes clear the callback action is made to the __include/txp_article.php__ file, which is where all Write panel modification callbacks are made to.
+
+The next line of code is the callback function, namely @abc_add_text()@. Note there's no third argument in the function (indicated by the empty single-quotes) because there's no default content to alter.
 
 h4(#sec7-1-2). Adding new elements to existing panel markup
 
