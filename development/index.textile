@@ -27,14 +27,13 @@ On this page:
 * "How plugins are loaded":#sec5
 * "Functions and arguments":#sec6
 ** "Public-side functions and arguments":#sec6-2
-** "Administration functions":#sec6-2
+** "Admin-side functions and arguments":#sec6-2
 *** "Function: @pluggable_ui()@":#sec6-2-1
 *** "Function: @register_callback()@":#sec6-2-1
 * "Callbacks":#sec7
-** "The register callback":#sec7-2
-** "Public-side callback events":#sec7-3
-** "Admin-side callback events":#sec7-4
-** "The pluggable UI callback events":#sec7-5 (for admin-side layout modifications)
+** "Adding admin-side panel elements":#sec7-1)
+** "Removing admin-side panel elements":#sec7-2)
+** "Modifyiing admin-side panel elements":#sec7-3)
 * "Variables, classes, and constants":#sec8
 * "Plugin lifecycle management and preferences":#sec9
 * "Implementation resources":#sec10
@@ -146,11 +145,11 @@ There are many "functions used in Textpattern":http://phpcrossref.com/xref/textp
 * __"txplib_html.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_html.php__ -- to help build various other HTML elements
 * __"txplib_misc.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_misc.php__ -- various “miscellaneous” functions.
 
-When we talk about *arguments* in these docs, we're referring to the parameters of a given function. For example, say we have the hypothetical function foo(). Its signature (or definition), including the arguments (or parameters), might be:
+When we talk about *arguments* in these docs, we're referring to the parameters of a given function. For example, say we have the hypothetical function @foo()@. Its signature (or definition), including the arguments (or parameters), might be:
 
 bc. function foo($argument1, $argument2, $argument3, $etc)
 
-The arguments for a given function will vary depending on what your functions are for, and whether you're developing a public-side or admin-side plugin.
+The arguments for a given function will vary depending on what your functions are for, and whether you're developing a plugin for the public-side or admin-side.
 
 Two arguments you'll see mentioned a lot in these docs are for _events_ (@$event@) and _steps_ (@$step@). Their position in a function signature varies depending on the function type. You'll see what we mean below when defining the @register_callback()@ and @pluggable_ui@ functions.
 
@@ -174,9 +173,11 @@ And these two are useful for introducing your own URI schemas:
 
 In the latter case, for example, imagine building an archive plugin that prevented this URL, __domain.tld/section/archive/__, from returning a 404 error.
 
-h3(#sec6-2). Administration functions
+h3(#sec6-2). Admin-side functions and arguments
 
-Two functions in particular are notable for admin-side plugins: @register_callback()@ and @pluggable_ui()@. Both of these functions are important for writing "callbacks":http://docs.textpattern.io/development/core-callbacks-reference.
+Two functions in particular are notable for admin-side plugins: @register_callback()@ and @pluggable_ui()@. Both of these functions are important for writing admin-side "callbacks":#sec7.
+
+In addition to the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference, also see the "Admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps for all the _events_ and _steps_ you might use in admin-side plugins specifically.
 
 h4(#sec6-2-1). Function: @register_callback()@
 
@@ -225,11 +226,19 @@ See "Admin-side user-interface callbacks":http://docs.textpattern.io/development
 
 fn1. *Attention!* Though it’s possible to completely redesign the HTML markup within the page, you are advised to refrain from doing so with a plugin. Removing and changing admin-side panel elements can make the plugins of other developers who target those DOM elements non-functional. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the originals to display:none via CSS.
 
-h4(#sec7-). Adding your own admin-side panel elements
+h2(#sec7). Callbacks
+
+Textpattern makes extensive use of callbacks. [todo:what is a callback?] Hook into these known points to choose where and when your plugins run. The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callbacks used in Textpattern, organised by type.
+
+The @register_callback()@ and @pluggable_ui()@ functions mentioned earlier are instrumental in writing callbacks, and especially for administration-related plugins.
+
+Here we put it all together -- functions and arguments to write callbacks -- with a few examples.
+
+h3(#sec7-1). Adding your own admin-side panel elements
 
 There are two ways panel elements can be added to an admin-side panel: as _new_ elements, or as modifications to existing elements.
 
-**Adding new elements:**
+h3(#sec7-1-1). Adding new elements
 
 @pluggable_ui()@ can be used to add something to the administrative interface like this:
 
@@ -241,7 +250,7 @@ function abc_add_text($event, $step, '', $rs) {
 
 p. That adds the text to the interface immediately below the **Textile help** link: that is where the @extend_col_1@ step puts its markup. Note there is no third argument this time because there is no default content to alter.
 
-**Adding new elements to existing panel markup:**
+h3(#sec7-1-2). Adding new elements to existing panel markup
 
 Another way to add elements is to existing markup. For example, to add the url_title below the article's **Title** field, you could do this:
 
@@ -255,7 +264,7 @@ function abc_append_item($event, $step, $data, $rs) {
 
 p. Notice we return the default markup, @$data@, and tack on our own markup which we read from the record set that was passed to our function.
 
-h4(#sec7-5-2). Removing admin-side panel elements
+h3(#sec7-2). Removing admin-side panel elements
 
 Another example only, but let's say you wanted to remove the **Keywords** field from the **Write** panel. You could hook into the 'keywords' step of the **Write** panel by doing the following in a plugin:
 
@@ -269,7 +278,7 @@ p. That's it! If your function returns anything at all (note we return a space c
 
 In reality, you probably wouldn't want to do something this drastic unless you were sure there were no other plugins that targeted the **Keywords** field field, such plugins would fail if they couldn't find the element you had destroyed. Hiding the element with CSS using @display:none@ would be a safer/better approach. If this is a problem for you and you feel you must delete the element, you could set your plugin to run at a lower priority (i.e., greater than "5") so other plugins could render their markup _before_ you remove the **Keywords** field.
 
-h4(#sec7-5-3). Changing admin-side panel elements
+h3(#sec7-3). Modifying admin-side panel elements
 
 The final mechanism for altering panel elements is good ol' fashioned search-and-replace, by looking in the default markup for particular items to change. This is the least robust mechanism but it can be very useful at times.
 
@@ -287,23 +296,6 @@ function abc_altered_status($event, $step, $data, $rs) {
 
    return $data;
 }
-
-**Arguments**
-
-In relation to callbacks, Textpattern also uses "events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps to interact with the admin-side. As you've seen from the earlier examples, you may hook into these events and steps to perform an action.
-
-h2(#sec7). Callbacks
-
-Textpattern makes extensive use of callbacks. Hook into these known points to choose where and when your plugins run.
-
-The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callbacks used in Textpattern.
- 
-
-h3(#sec7-4). Admin-side callback events
-
-See "Admin-side callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2 in the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference.
-
-[todo:harmonize the "admin-side callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2 section with the isolated "admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps]
 
 h2(#sec8). Variables, classes, and constants
 
