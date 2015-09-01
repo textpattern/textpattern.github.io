@@ -390,7 +390,7 @@ We'll add some text -- "Textile, the humane web text generator." -- in the **Tex
 
 bc.. register_callback('abc_add_text', 'article_ui', 'extend_col_1');
 
-function abc_add_text($event, $step, '', $rs) {
+function abc_add_text($event, $step, $data, $rs) {
    return 'Textile, the humane web text generator.';
 }
 

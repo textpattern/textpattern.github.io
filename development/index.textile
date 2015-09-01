@@ -183,14 +183,14 @@ The @register_callback()@ function is at the core of writing callbacks and can b
 
 The full function definition (signature) looks like this:
 
-bc. function register_callback($func, $event, $step='', $pre=0)
+bc. function register_callback($func, $event, $step, $pre=0)
 
 And the indicated *arguments* (or parameters) are:
 
 |_. No. |_. Argument |_. Explanation |
 | 1 | @$func@ | The name of the function you coded and want to add to a callback event. |
 | 2 | @$event@ | The name of the Textpattern-provided event that you associate your plugin with. |
-| 3 | @$step=''@ | **For admin-side plugins only, thus optional.** The _event_ is (disjunctively) divided into steps, so you have the choice of narrowing your plugin to a specific step. |
+| 3 | @$step@ | **For admin-side plugins only, thus optional.** The _event_ is (disjunctively) divided into steps, so you have the choice of narrowing your plugin to a specific step. |
 | 4 | @$pre=0@ | **For admin-side plugins only, thus optional.** By default, this argument is equal to @0@, thus @$func@ is called after the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. If you set this to "1" (@$pre=1@), then @$func@ is called before any part of the page is rendered or executed. This allows you to replace existing panels on the admin-side. |
 
 Also see the "complete list of admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps.
@@ -202,10 +202,10 @@ The @pluggable_ui@ function is for admin-side plugins solely. The function is us
 Callbacks written with @pluggable_ui@ have a different signature than those written with other functions. The usually have 4 arguments (and sometimes 5).
 
 |_. No. |_. Argument |_. Explanation |
-| 1 | @$event@ | The name of the Textpattern-provided event that you associate your plugin with. |
-| 2 | @$step=''@ | The step(s) of the event that you're specifically targeting. |
-| 3 | (default markup) | Used if not modified. |
-| 4 | (record set) | Returned from the database. |
+| 1 | @$event@ | The name of the event for the panel you're targeting. |
+| 2 | @$step@ | The step of the event for the specific DOM element  you're targeting. |
+| 3 | (default content) | The default markup; used if not modified. |
+| 4 | (records) | The returned set of records from the database. |
 | 5 | (value) | The value of a named element (e.g., preference setting), indicated by argument 4. |
 
 **Argument #1** is the event passed to your function, usually ends in @_ui@ (for “user interface”) and begins with the event to which it refers. For example, on the **Write** panel the event is @article_ui@, and on the **Files** panel the event is file_ui. Straightforward.
@@ -228,13 +228,11 @@ h2(#sec7). Callbacks
 
 Textpattern makes extensive use of callbacks. A callback is essentially an order (written as a function) that your plugin can use to execute some events (and steps). Hook into these known points to choose where and when your plugins run. The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callback actions used in Textpattern, organised by type and by where in Textpattern they are called from.
 
-The @register_callback()@ and @pluggable_ui()@ functions mentioned earlier are instrumental in writing callbacks, and especially for administration-related plugins.
-
-Let's put it all together with a few examples using functions and arguments (events, steps, etc) to write callbacks.
+The @register_callback()@ and @pluggable_ui()@ functions are instrumental in writing callbacks, and especially for administration-related plugins. Let's put it all together with a few examples using these functions and arguments (events, steps, etc) to write callbacks.
 
 h3(#sec7-1). Adding your own admin-side panel elements
 
-There are two ways elements can be added to an admin-side panel: as _new_ elements, or as modifications to existing elements. Each panel has its own set of core callback parameters to work with, which are detailed in the "Admin-side user-interface callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2-4 section of the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference.
+Elements can be added to admin-side panels in two ways: as _new_ elements, or as modifications to existing elements. Each panel has its own set of core callback parameters to work with, which are detailed in the "Admin-side user-interface callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2-4 section of the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference.
 
 h4(#sec7-1-1). Adding new elements (without altering existing markup)
 
@@ -242,19 +240,19 @@ In this example, we use the @register_callback@ function to add some text -- "Te
 
 bc.. register_callback('abc_add_text', 'article_ui', 'extend_col_1');
 
-function abc_add_text($event, $step, '', $rs) {
-   return 'The humane web text generator.';
+function abc_add_text($event, $step, $data, $rs) {
+   return 'Textile, the humane web text generator.';
 }
 
-p. From the "@register_callback@ definition":#sec6-2-1 provided earlier, we can see the first line is giving these arguments:
+p. From the "@register_callback@ definition":#sec6-2-1 provided earlier, we see the first line is giving these arguments:
 
 * @$func@ = @abc_add_text@ (hypothetical)
 * @$event@ = @article_ui@
 * @$step@ = @extend_col_1@
 
-So @abc_add_text@ is the named custom function in this case, and @article_ui@ and @extend_col_1@ are the actual event and step in core that define the callback action. The event value (@article_ui@) makes clear the callback action is made to the __include/txp_article.php__ file, which is where all Write panel modification callbacks are made to.
+So @abc_add_text@ is the named custom function in this case, and @article_ui@ and @extend_col_1@ are the actual event and step in core that define the callback action. The event value (@article_ui@) makes clear the callback action is made to the __include/txp_article.php__ file, which is where all **Write** panel UI modification callbacks are made to.
 
-The next line of code is the callback function, namely @abc_add_text()@. Note there's no third argument in the function (indicated by the empty single-quotes) because there's no default content to alter.
+The next line of code is the actual callback function, namely @abc_add_text()@. Because this particular event/step combination only outputs new content, that's what happens here.
 
 h4(#sec7-1-2). Adding new elements to existing panel markup
 
