@@ -32,8 +32,8 @@ On this page:
 *** "Function: @register_callback()@":#sec6-2-1
 * "Callbacks":#sec7
 ** "Adding admin-side panel elements":#sec7-1
-** "Removing admin-side panel elements":#sec7-2
-** "Modifying admin-side panel elements":#sec7-3
+** "Altering admin-side panel elements":#sec7-2
+** "Removing admin-side panel elements":#sec7-3
 * "Variables, classes, and constants":#sec8
 * "Plugin lifecycle management and preferences":#sec9
 * "Implementation resources":#sec10
@@ -204,8 +204,8 @@ Callbacks written with @pluggable_ui@ have a different signature than those writ
 |_. No. |_. Argument |_. Explanation |
 | 1 | @$event@ | The name of the event for the panel you're targeting. |
 | 2 | @$step@ | The step of the event for the specific DOM element  you're targeting. |
-| 3 | (default content) | The default markup; used if not modified. |
-| 4 | (records) | The returned set of records from the database. |
+| 3 | @$data@ | The default data (content and/or markup); it's used if not modified. |
+| 4 | @$rs@ | The returned 'record set' from the database. |
 | 5 | (value) | The value of a named element (e.g., preference setting), indicated by argument 4. |
 
 **Argument #1** is the event passed to your function, usually ends in @_ui@ (for “user interface”) and begins with the event to which it refers. For example, on the **Write** panel the event is @article_ui@, and on the **Files** panel the event is file_ui. Straightforward.
@@ -214,9 +214,9 @@ Callbacks written with @pluggable_ui@ have a different signature than those writ
 
 Arguments 3, 4, and 5 are optional depending on what you're trying to do…
 
-**Argument #3**, if applicable, is the default markup; it will be used if you don’t modify it. Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
+**Argument #3**, if applicable, is the default data (text, markup, both...); it will be used if you don’t modify it. Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
 
-**Argument #4**, if applicable, is the record set returned from the database table that pertains to the named _event_.
+**Argument #4**, if applicable, is the _record set_ returned from the database table that pertains to the named _event_.
 
 **Argument #5**, if applicable, is a special case (e.g., when dealing with preference settings) where argument #4 becomes the preference name and argument #5 holds its value.
 
@@ -252,11 +252,11 @@ p. From the "@register_callback@ definition":#sec6-2-1 provided earlier, we see 
 
 So @abc_add_text@ is the named custom function in this case, and @article_ui@ and @extend_col_1@ are the actual event and step in core that define the callback action. The event value (@article_ui@) makes clear the callback action is made to the __include/txp_article.php__ file, which is where all **Write** panel UI modification callbacks are made to.
 
-The next line of code is the actual callback function, namely @abc_add_text()@. Because this particular event/step combination only outputs new content, that's what happens here.
+The next line of code is the actual callback function, namely @abc_add_text()@. The particular @$event@/@$step@ combination passed to the function only outputs new content (we're not modifying anything), so @$data@ and @$rs@ are ignored and the content is deposited as defined.
 
 h4(#sec7-1-2). Adding new elements to existing panel markup
 
-Another way to add elements is to existing markup. For example, to add the url_title below the article's **Title** field, you could do this:
+Another way to add elements is to existing markup. For example, to add the @url_title@ below the article's **Title** field, you could do this:
 
 bc.. register_callback('abc_append_item', 'article_ui', 'title');
 
@@ -266,25 +266,11 @@ function abc_append_item($event, $step, $data, $rs) {
    return $data.$urlttl;
 }
 
-p. Notice we return the default markup, @$data@, and tack on our own markup which we read from the record set that was passed to our function.
+p. Here we return the default markup (@$data@) and tack on our own markup which we read from the record set (@$rs@) that was passed to our function.
 
-h3(#sec7-2). Removing admin-side panel elements
+h3(#sec7-2). Altering admin-side panel elements
 
-In this example, let's say you wanted to remove the **Keywords** field from the **Write** panel. You could hook into the @keywords@ step of the **Write** panel by doing the following:
-
-bc.. register_callback('abc_remove_keywords', 'article_ui', 'keywords');
-
-function abc_remove_keywords($event, $step, $data, $rs) {
-   return ' ';
-}
-
-p. That's it! If your function returns anything at all (note we return a space character here) then the default markup is dropped in favour of your own markup.
-
-In reality, you probably wouldn't want to do something this drastic unless you were sure there were no other plugins that targeted the **Keywords** field field, such plugins would fail if they couldn't find the element you had destroyed. Hiding the element with CSS using @display:none@ would be a safer/better approach. If this is a problem for you and you feel you must delete the element, you could set your plugin to run at a lower priority (i.e., greater than "5") so other plugins could render their markup _before_ you remove the **Keywords** field.
-
-h3(#sec7-3). Modifying admin-side panel elements
-
-The final mechanism for altering panel elements is good old fashioned search-and-replace, by looking in the default markup for particular items to change. This is the least robust mechanism but it can be very useful at times.
+Most of the UI elements in the admin-side panels can be altered or removed, depending on how you write your functions. In this let's alter something by looking in the default markup for particular items to change. This is the least robust mechanism but it can be very useful at times.
 
 Consider this example, which adds a radio button to the existing button series in the **Write** panel's **Status** widget:
 
@@ -300,6 +286,22 @@ function abc_altered_status($event, $step, $data, $rs) {
 
    return $data;
 }
+
+Again we've used @register_callback()@ to define our callback function, and in this case we've employed the @$event@/@$step@ combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, and returns (outputs) the resulting altered list.
+
+h3(#sec7-3). Removing admin-side panel elements
+
+In this case, let's say you wanted to remove the **Keywords** field.[2] You could hook into the @keywords@ step and return a space character:
+
+bc.. register_callback('abc_remove_keywords', 'article_ui', 'keywords');
+
+function abc_remove_keywords($event, $step, $data, $rs) {
+   return ' ';
+}
+
+p. That's it! The returned space character (@return ' '@) replaces the keywords field, effectively removing it.
+
+fn2. *Attention!* Removing elements like this is a little drastic, because other plugins exist that target most UI elements, including the **Keywords** field. Such plugins would fail if they couldn't find the element you had destroyed. Hiding the element with CSS using @display:none@ would be a safer/better approach. If this is a problem for you and you feel you must delete the element, you could set your plugin to run at a lower priority (i.e., greater than "5") so other plugins could render their markup _before_ you remove your targeted element.
 
 h2(#sec8). Variables, classes, and constants
 
