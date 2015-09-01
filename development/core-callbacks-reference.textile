@@ -378,13 +378,28 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-**Example 1: [todo:pick a callback from table and write a simple function for it]**
+**Example 1: Altering the Status widget's radio button list**
 
-[todo:the code] 
+In this example we'll alter the **Status** widget's radio button list by adding a new button option to it:
+
+bc.. register_callback('abc_altered_status', 'article_ui', 'status');
+
+function abc_altered_status($event, $step, $data, $rs) {
+
+   $stat = isset($rs['Status']) ? $rs['Status'] : '';
+
+   $new_status = n.t.'&lt;li&gt;'.radio('Status', 6, ($stat == 6) ? 1 : 0, 'status-6').'&lt;label for=&quot;status-6&quot;&gt;Velcro&lt;/label&gt;&lt;/li&gt;';
+
+   $data = str_replace('&lt;/ul&gt;', $new_status.'&lt;/ul&gt;', $data);
+
+   return $data;
+}
+
+We've used @register_callback()@ to define our callback function, and in this case we've employed the @$event@/@$step@ combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, and returns (outputs) the resulting altered list. 
 
 **Example 2: Adding text to the *Textile help* widget**
 
-Note the last callback in the table above is different from the others; it _adds_ something to the panel instead of changing it. Let's consider that callback as another example.
+Note the last record in the callbacks table above is different from the others; it adds a new, unique element to the panel instead of changing one that already exists, as in the previous example. Let's consider that callback as another example.
 
 We'll add some text -- "Textile, the humane web text generator." -- in the **Textile help** widget:
 
@@ -394,7 +409,7 @@ function abc_add_text($event, $step, $data, $rs) {
    return 'Textile, the humane web text generator.';
 }
 
-p. The text is added immediately below the widget header link, which is where the @extend_col_1@ step happens to output its markup.
+p. Easy-peasy. The text is added immediately below the widget header link, which is where the @extend_col_1@ step happens to output its markup.
 
 h4. __include/txp_category.php__
 
