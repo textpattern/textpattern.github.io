@@ -134,32 +134,35 @@ The code of the plugin is then @eval()@ 'ed (or included) within that @load_plug
 
 Understanding how plugins are loaded, also shows how you can write “on demand” and “up front” plugins, which were mentioned earlier. Defining a function will make it available as a tag in Textpattern __pages__ and __forms__. Whereas any code that is outside of any function/class definition will be executed right away. You can check for Request-Variables and initiate some action and @exit;@ the execution of the script (for example to serve images or other binary data from within a plugin).
 
-h2(#sec6). Functions and arguments
+h2(#sec6). Function: @register_callback()@
 
-There are many "functions used in Textpattern":http://phpcrossref.com/xref/textpattern/_functions/ that may be relevant to your plugin development aims. As you learn about them, be aware of the helper functions found in the __"/lib":https://github.com/textpattern/textpattern/tree/master/textpattern/lib__ folder. Here are a few examples of where to look:
+There are many "functions used in Textpattern":http://phpcrossref.com/xref/textpattern/_functions/ that may be relevant to your plugin development aims.[1] 
 
-* __"txplib_db.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_db.php__ -- for interacting with the Textpattern database
-* __"txplib_forms.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_forms.php__ -- to help build various HTML form elements
-* __"txplib_html.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_html.php__ -- to help build various other HTML elements
-* __"txplib_misc.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_misc.php__ -- various “miscellaneous” functions.
+In particular, the @register_callback()@ function is important for writing "callbacks":#sec7 (especially admin-side callbacks).[2] This is the full function definition:
 
-When we talk about *arguments* in these docs, we're referring to the parameters of a given function. For example, say we have the hypothetical function @foo()@. Its signature (or definition), including the arguments (or parameters), might be:
+bc. function register_callback($func, $event, $step, $pre=0)
 
-bc. function foo($argument1, $argument2, $argument3, $etc)
+And the *arguments* (or parameters) are:
 
-The arguments for a given function will vary depending on what your functions are for, and whether you're developing a plugin for the public-side or admin-side.
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-Two arguments you'll see mentioned a lot in these docs are for _events_ (@$event@) and _steps_ (@$step@). Their position in a function signature varies depending on the function type. You'll see what we mean below when defining the @register_callback()@ and @pluggable_ui@ functions.
+|_. No. |_. Argument |_. Explanation |
+| 1 | @$func@ | Name of the function you add to a callback event. |
+| 2 | @$event@ | The Textpattern _event_. |
+| 3 | @$step@ | **For admin-side plugins only, thus optional.** The _event_ is (disjunctively) divided into steps, so you have the choice of narrowing your plugin to a specific step. |
+| 4 | @$pre=0@ | **For admin-side plugins only, thus optional.** By default, this argument is equal to @0@, thus @$func@ is called after the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. If you set this to "1" (@$pre=1@), then @$func@ is called before any part of the page is rendered or executed. This allows you to replace existing panels on the admin-side. |
 
-See the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference for all _events_ and _steps_ used to write every possible Textpattern callback.
+notextile. </div>
 
-See the "Admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps for all the _events_ and _steps_ you might use in admin-side plugins specifically.
+The @$event@ and @$step@ arguments are significant. They're built into Textpattern and can be combined in various ways to do different things. The "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference details all _events_ and _steps_ used to write every possible Textpattern callback. The "Admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps references all the _events_ and _steps_ for admin-side plugins specifically.
+
+fn1. As you learn about functions, be aware of the helper functions found in the __"/lib":https://github.com/textpattern/textpattern/tree/master/textpattern/lib__ folder. Some examples: The __"txplib_db.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_db.php__ file for interacting with the Textpattern database; __"txplib_forms.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_forms.php__ to help build different HTML form controls; __"txplib_html.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_html.php__ to help build various other types of HTML elements; and __"txplib_misc.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_misc.php__ to help build various “miscellaneous” functions.
+
+fn2. Another function, @pluggable_ui@, can also be used for manipulating admin-side panels, but it's not _necessary_ for plugin development. See "The pluggable_ui function":http://docs.textpattern.io/development/the-pluggable-ui-function for more about that.
 
 h3(#sec6-1). Public-side functions and arguments
 
-It's probably not helpful to make a list of public-side functions. If you're comfortable with PHP, you'll figure things out, and the helper functions mentioned above will get you on your way.
-
-But there are four _events_ (i.e., the @$event@ argument) to be aware of for writing public-side callbacks. These two are mainly for comments and spam-related plugins:
+There are four _events_ to be aware of for writing public-side callbacks. These two are mainly for comments and spam-related plugins:
 
 * @comment.save@ -- Gets called after the nonce check passed, but before a plugin is saved.
 * @comment.form@ -- Gets called before a comment form is rendered and allows to add to it. 
@@ -173,62 +176,13 @@ In the latter case, for example, imagine building an archive plugin that prevent
 
 h3(#sec6-2). Admin-side functions and arguments
 
-Two functions in particular are notable for admin-side plugins: @register_callback()@ and @pluggable_ui()@. Both of these functions are important for writing admin-side "callbacks":#sec7.
-
 In addition to the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference, also see the "Admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps for all the _events_ and _steps_ you might use in admin-side plugins specifically.
-
-h4(#sec6-2-1). Function: @register_callback()@
-
-The @register_callback()@ function is at the core of writing callbacks and can be used for public-side or admin-side plugins depending on how you write it.
-
-The full function definition (signature) looks like this:
-
-bc. function register_callback($func, $event, $step, $pre=0)
-
-And the indicated *arguments* (or parameters) are:
-
-|_. No. |_. Argument |_. Explanation |
-| 1 | @$func@ | The name of the function you coded and want to add to a callback event. |
-| 2 | @$event@ | The name of the Textpattern-provided event that you associate your plugin with. |
-| 3 | @$step@ | **For admin-side plugins only, thus optional.** The _event_ is (disjunctively) divided into steps, so you have the choice of narrowing your plugin to a specific step. |
-| 4 | @$pre=0@ | **For admin-side plugins only, thus optional.** By default, this argument is equal to @0@, thus @$func@ is called after the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. If you set this to "1" (@$pre=1@), then @$func@ is called before any part of the page is rendered or executed. This allows you to replace existing panels on the admin-side. |
-
-Also see the "complete list of admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps.
-
-h4(#sec6-2-2). Function: @pluggable_ui@
-
-The @pluggable_ui@ function is for admin-side plugins solely. The function is used throughout the core and allows you to manipulate the user-interface of the administration side by targeting any panel widgets or their contained controls.[1]
-
-Callbacks written with @pluggable_ui@ have a different signature than those written with other functions. The usually have 4 arguments (and sometimes 5).
-
-|_. No. |_. Argument |_. Explanation |
-| 1 | @$event@ | The name of the event for the panel you're targeting. |
-| 2 | @$step@ | The step of the event for the specific DOM element  you're targeting. |
-| 3 | @$data@ | The default data (content and/or markup); it's used if not modified. |
-| 4 | @$rs@ | The returned 'record set' from the database. |
-| 5 | (value) | The value of a named element (e.g., preference setting), indicated by argument 4. |
-
-**Argument #1** is the event passed to your function, usually ends in @_ui@ (for “user interface”) and begins with the event to which it refers. For example, on the **Write** panel the event is @article_ui@, and on the **Files** panel the event is file_ui. Straightforward.
-
-**Argument #2**, the $step, is usually the part of the panel that contains the widget or any of its controls you wish to change. For example, on the Write panel, the Article image control has a $step called article_image and the Custom fields widget has one called custom_fields, and so on.
-
-Arguments 3, 4, and 5 are optional depending on what you're trying to do…
-
-**Argument #3**, if applicable, is the default data (text, markup, both...); it will be used if you don’t modify it. Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
-
-**Argument #4**, if applicable, is the _record set_ returned from the database table that pertains to the named _event_.
-
-**Argument #5**, if applicable, is a special case (e.g., when dealing with preference settings) where argument #4 becomes the preference name and argument #5 holds its value.
-
-See "Admin-side user-interface callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2-4) in the "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference for more callback options.
-
-fn1. *Attention!* Though it’s possible to completely redesign the HTML markup within the page, you are advised to refrain from doing so with a plugin. Removing and changing admin-side panel elements can make the plugins of other developers who target those DOM elements non-functional. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the originals to display:none via CSS.
 
 h2(#sec7). Callbacks
 
 Textpattern makes extensive use of callbacks. A callback is essentially an order (written as a function) that your plugin can use to execute some events (and steps). Hook into these known points to choose where and when your plugins run. The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callback actions used in Textpattern, organised by type and by where in Textpattern they are called from.
 
-The @register_callback()@ and @pluggable_ui()@ functions are instrumental in writing callbacks, and especially for administration-related plugins. Let's put it all together with a few examples using these functions and arguments (events, steps, etc) to write callbacks.
+The @register_callback()@ function -- and to a lesser degree, the @pluggable_ui()@ function -- is instrumental in writing callbacks, and especially for administration-related plugins. Let's put it all together with a few examples using these functions and arguments (events, steps, etc) to write callbacks.
 
 h3(#sec7-1). Adding your own admin-side panel elements
 
@@ -250,9 +204,9 @@ p. From the "@register_callback@ definition":#sec6-2-1 provided earlier, we see 
 * @$event@ = @article_ui@
 * @$step@ = @extend_col_1@
 
-So @abc_add_text@ is the named custom function in this case, and @article_ui@ and @extend_col_1@ are the actual event and step in core that define the callback action. The event value (@article_ui@) makes clear the callback action is made to the __include/txp_article.php__ file, which is where all **Write** panel UI modification callbacks are made to.
+So @abc_add_text@ is the named custom function in this case, and @article_ui@ and @extend_col_1@ are the actual _event_ and _step_ in core that define the callback action. The event value (@article_ui@) makes clear the callback action is made to the __include/txp_article.php__ file, which is where all **Write** panel UI modification callbacks are made to.
 
-The next line of code is the actual callback function, namely @abc_add_text()@. The particular @$event@/@$step@ combination passed to the function only outputs new content (we're not modifying anything), so @$data@ and @$rs@ are ignored and the content is deposited as defined.
+The next line of code is the actual callback function, namely @abc_add_text()@. The particular @$event@/@$step@ combination passed to the function only outputs new content (we're not modifying anything), so @$data@ and @$rs@ are ignored and the content is returned (output) as defined.
 
 h4(#sec7-1-2). Adding new elements to existing panel markup
 

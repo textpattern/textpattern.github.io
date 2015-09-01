@@ -1,0 +1,62 @@
+---
+layout: document
+category: development
+published: true
+title: "The pluggable_ui function"
+tags:
+  - development 
+  - php
+  - functions
+  - admin-side
+---
+
+
+h1. The @pluggable_ui@ function
+
+The @pluggable_ui@ function was first introduced in Textpattern core in 2009. It's main purpose was to provide additional ways to modify the administration side of Textpattern with callbacks, and thus could be used in admin-side plugins.
+
+On this page:
+
+* "Caution":#sec1
+* "Function definition":#sec2
+* "Reference":#sec3
+
+h2(#sec1). Caution
+
+Though it’s possible to completely redesign the HTML markup within the page, you are advised to refrain from doing so with a plugin. Removing and changing admin-side panel elements can make the plugins of other developers who target those DOM elements non-functional. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the original's to @display:none@ via CSS.
+
+h2(#sec2). Function definition
+
+Callbacks written with @pluggable_ui@ have a different signature than those written with other functions ("compare with @register_callback()@":#). They usually have 4 arguments (and sometimes 5).
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+	
+|_. No. |_. Argument |_. Explanation |
+| 1 | @$event@ | The name of the event for the panel you're targeting. |
+| 2 | @$step@ | The step of the event for the specific DOM element  you're targeting. |
+| 3 | @$data@ | The default data (content and/or markup); it's used if not modified. |
+| 4 | @$rs@ | The returned 'record set' from the database. |
+| 5 | (value) | The value of a named element (e.g., preference setting), indicated by argument 4. |
+
+notextile. </div>
+	
+**Argument #1** is the event passed to your function, usually ends in @_ui@ (for “user interface”) and begins with the event to which it refers. For example, on the **Write** panel the event is @article_ui@, and on the **Files** panel the event is file_ui. Straightforward.
+
+**Argument #2**, the $step, is usually the part of the panel that contains the widget or any of its controls you wish to change. For example, on the Write panel, the Article image control has a $step called article_image and the Custom fields widget has one called custom_fields, and so on.
+
+Arguments 3, 4, and 5 are optional depending on what you're trying to do…
+
+**Argument #3**, if applicable, is the default data (text, markup, both...); it will be used if you don’t modify it. Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
+
+**Argument #4**, if applicable, is the _record set_ returned from the database table that pertains to the named _event_.
+
+**Argument #5**, if applicable, is a special case (e.g., when dealing with preference settings) where argument #4 becomes the preference name and argument #5 holds its value.
+
+h2(#sec4). Callback examples
+
+[todo]
+
+h2(#sec5). Reference
+
+* "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference
+** "Admin-side user-interface callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2-4 (for more callback options)
