@@ -186,7 +186,7 @@ The *"Core callbacks reference":http://docs.textpattern.io/development/core-call
 
 The @register_callback()@ function, described previously, is instrumental in writing callbacks, and especially for administration-related plugins. Let's look a few examples.
 
-fn5. There's also the "Admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps listing for admin-side plugins specifically. This would correspond with the various "admin-side callbacks":/core-callbacks-reference#sec2 in the __Core callbacks reference__, but it doesn't provide the explanatory details like the callbacks reference does.
+fn5. There's also the "Admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps listing for admin-side plugins specifically. This would correspond with the various "admin-side callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2 in the __Core callbacks reference__, but it doesn't provide the explanatory details like the callbacks reference does.
 
 h3(#sec7-1). Adding your own admin-side panel elements
 

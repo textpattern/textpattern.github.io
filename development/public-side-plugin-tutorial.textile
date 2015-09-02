@@ -16,6 +16,8 @@ h1. Public-side plugin tutorial
 
 This tutorial will walk you through the basics of creating a simple public-side plugin; not to be used, exactly, but so you understand what's involved.
 
+(You might also like to see the "Admin-side plugin tutorial":http://docs.textpattern.io/development/admin-side-plugin-tutorial.)
+
 On this page:
 
 * "Overview":#sec1
@@ -27,7 +29,7 @@ h2. Overview
 
 This tutorial assumes you have a working knowledge of "PHP":http://php.net, a Textpattern website ready for use, and the "ied_plugin_composer":http://stefdawson.com/ied_plugin_composer plugin installed.
 
-For this tutorial, this plugin will:
+The plugin in this tutorial will:
 
 # Create a Textpattern tag
 # Read some optional attributes

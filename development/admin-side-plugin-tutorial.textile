@@ -12,7 +12,9 @@ tags:
 
 h1. Admin-side plugin tutorial
 
-This tutorial walks you through the basics of creating and admin-side plugin; it covers functions, callbacks, and the concept of __events__ and __steps__. This tutorial assumes you have a working knowledge of PHP, a Textpattern website ready for use, and the ied_plugin_composer plugin installed.
+This tutorial walks you through the basics of creating and admin-side plugin; it covers functions, callbacks, and the concept of __events__ and __steps__.
+
+(You might also like to see the "Public-side plugin tutorial":http://docs.textpattern.io/development/public-side-plugin-tutorial.)
 
 On this page:
 
@@ -24,13 +26,15 @@ On this page:
 
 h2(#sec1). Tutorial objective
 
-For this tutorial, your plugin will:
+This tutorial assumes you have a working knowledge of "PHP":http://php.net, a Textpattern website ready for use, and the "ied_plugin_composer":http://stefdawson.com/ied_plugin_composer plugin installed.
+
+The plugin in this tutorial will:
 
 # Register its own panel under **Extensions**
 # Output some text on that panel
-# Respond to a plugin step
+# Respond to a plugin _step_
 
-Since all plugins must use a "three-character alphanumeric prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes, we're going to use *abc* in this tutorial, which is reserved for documentation purposes.
+Since all plugins must use a three-character alphanumeric "prefix":http://docs.textpattern.io/development/registered-textpattern-developer-prefixes, we're using *abc* in this tutorial, which is reserved for documentation purposes.
 
 h2(#sec2). Targeting the admin side
 
