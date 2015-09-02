@@ -8,8 +8,6 @@ tags:
   - Extension
 ---
 
-"Main ToC":http://docs.textpattern.io ⨠ Administration ⨠ **Admin** ⨠  **Plugins**
-
 h1. Plugins
 
 Textpattern by itself is capable of doing a lot, especially as you learn to use __forms__ and __"core tags":http://docs.textpattern.io/tags/__ in increasingly sophisticated ways. But when your needs cannot be met (or met easily) by core ingenuity alone, you can extend functionality with plugins, whether to produce content and behaviour, enhance configurability or usability, and more.

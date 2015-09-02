@@ -10,8 +10,6 @@ tags:
   - Plugins
 ---
 
-"Main ToC":http://docs.textpattern.io ⨠ **"Textpattern administration":http://docs.textpattern.io/administration/** ⨠ **Extensions**
-
 h1. Extensions
 
 The **Extensions** region is not a core region you see out-of-the-box. It appears when you add certain plugins that make use of it. Plugins will do this when they provide configurable functionality specific to their design and use.

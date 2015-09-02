@@ -12,8 +12,6 @@ tags:
   - Emails
 ---
 
-"Main ToC":http://docs.textpattern.io ⨠ **"Textpattern administration":http://docs.textpattern.io/administration/** ⨠ **Admin** ⨠ **Users**
-
 h1. Users
 
 The *Users* panel is the default panel of the **Admin** region. It's where user accounts are accessed and managed.
