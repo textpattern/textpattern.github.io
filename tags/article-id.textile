@@ -19,7 +19,7 @@ h2(#sec1). Syntax
 
 bc. <txp:article_id />
 
-The @article_id@ tag is a _single_ tag which returns the numeric ID of the article being displayed. This number will also be reflected as a part of the article permanent URL if it has been chosen as the 'Permanent link mode' in the [[Preferences administration panel]].
+The @article_id@ tag is a _single_ tag which returns the numeric ID of the article being displayed. This number will also be reflected as a part of the article permanent URL if it has been chosen as the 'Permanent link mode' in the "Preferences administration panel":../administration/preferences-panel.
 
 h2(#sec2). Attributes
 

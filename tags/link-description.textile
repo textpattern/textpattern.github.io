@@ -20,7 +20,7 @@ h2(#sec1). Syntax
 
 bc. <txp:link_description />
 
-The *link_description* tag is a _single_ tag which is used to return the text from the 'Description' field as defined within the [[Links administration panel]]. This tag is used in a 'links' type form or inside a "linklist":linklist container tag to display information about the current link.
+The *link_description* tag is a _single_ tag which is used to return the text from the 'Description' field as defined within the "Links administration panel":../administration/links-panel. This tag is used in a 'links' type form or inside a "linklist":linklist container tag to display information about the current link.
 
 h2(#sec2). Attributes
 

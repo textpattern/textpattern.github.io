@@ -20,7 +20,7 @@ h2(#sec1). Syntax
 
 bc. <txp:thumbnail />
 
-The *thumbnail* tag is a _single_ tag that Textpattern will replace with the @<img src="...">@ HTML tag matching the thumbnail image of the numeric @id@ assigned by Textpattern when the parent image was uploaded via the Textpattern [[Images administration panel]].
+The *thumbnail* tag is a _single_ tag that Textpattern will replace with the @<img src="...">@ HTML tag matching the thumbnail image of the numeric @id@ assigned by Textpattern when the parent image was uploaded via the Textpattern "Images administration panel":../administration/images-panel.
 
 h2(#sec2). Attributes
 
@@ -36,7 +36,7 @@ Specify an image @height@ which overrides the value stored in the database. Use 
 The HTML @id@ attribute assigned to the image (or to the @wraptag@, if set).
 Default: unset.
 * @id="integer"@
-Specifies the @id@ assigned at upload of the image to display. Can be found on the Textpattern [[Images administration panel]]. If both @name@ and @id@ are specified, @name@ is used while @id@ is ignored.
+Specifies the @id@ assigned at upload of the image to display. Can be found on the Textpattern "Images administration panel":../administration/images-panel. If both @name@ and @id@ are specified, @name@ is used while @id@ is ignored.
 * @link="boolean"@
 If set, the thumbnail will be rendered as a (non-Javascript) URL link to the full-size image.
 Values: @0@ (no) or @1@ (yes).
@@ -45,7 +45,7 @@ Default: @0@.
 Value for the HTML @rel@ attribute.
 Default: unset.
 * @name="image name"@
-Specifies which image thumbnail to display by its image name as shown on the Textpattern [[Images administration panel]].
+Specifies which image thumbnail to display by its image name as shown on the Textpattern "Images administration panel":../administration/images-panel.
 * @poplink="boolean"@
 If set, the image will be rendered in a popup window.
 Values: @0@ (no) or @1@ (yes).

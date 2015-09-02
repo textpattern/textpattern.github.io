@@ -35,7 +35,7 @@ h2(#sec2). Attributes
 Tag will accept the following attributes (*case-sensitive*):
 
 * @name="category"@
-Comma-separated list of category names. Note the category name is specified in lower case regardless of how you typed its title in the [[Category administration panel]]. Also note that if you had called your category 'My Category Name' it becomes 'my-category-name' when used in tags.
+Comma-separated list of category names. Note the category name is specified in lower case regardless of how you typed its title in the "Categories administration panel":../administration/categories-panel. Also note that if you had called your category 'My Category Name' it becomes 'my-category-name' when used in tags.
 Default: unset, which determines whether ''any'' category listing is being viewed.
 * @type="context"@
 Textpattern context to check against. You can choose from the following contexts (set to empty to include all contexts):

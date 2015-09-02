@@ -25,7 +25,7 @@ bc. <txp:php>
     // Code goes here...
 </txp:php>
 
-Control over where this tag is allowed to appear (i.e. the privileges required to allow it to appear in pages and forms) are governed by settings in the [[Preferences administration panel]].
+Control over where this tag is allowed to appear (i.e. the privileges required to allow it to appear in pages and forms) are governed by settings in the "Preferences administration panel":../administration/preferences-panel.
 
 h2(#sec2). Attributes
 

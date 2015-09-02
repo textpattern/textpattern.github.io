@@ -31,10 +31,10 @@ Escape HTML entities such as @<@, @>@ and @&@.
 Values: @html@ or unset.
 Default: @html@;
 * @id="integer"@
-An @id@ assigned at upload of an image to display. The IDs can be found on the [[Images administration panel]].
+An @id@ assigned at upload of an image to display. The IDs can be found on the "Images administration panel":../administration/images-panel.
 Default: unset.
 * @name="image name"@
-An image to display, given by its image name as shown on the [[Images administration panel]]. If both @name@ and @id@ are specified, the @id@ takes precedence.
+An image to display, given by its image name as shown on the "Images administration panel":../administration/images-panel. If both @name@ and @id@ are specified, the @id@ takes precedence.
 Default: unset.
 * @type="information type"@
 One or more of the following values to display the particular pieces of information from the current image.

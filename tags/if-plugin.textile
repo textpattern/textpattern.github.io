@@ -33,7 +33,7 @@ h2(#sec2). Attributes
 Tag will accept the following attributes (*case-sensitive*):
 
 * @name="text"@
-Plugin name as defined on the [[Plugins administration panel]].
+Plugin name as defined on the "Plugins administration panel":../administration/plugins-panel.
 * @version="number"@
 Minimum plugin version number.
 Default: unset.

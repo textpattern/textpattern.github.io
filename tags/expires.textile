@@ -20,14 +20,14 @@ h2(#sec1). Syntax
 
 bc. <txp:expires />
 
-The *expires* tag is a _single_ tag used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive (e.g. events like conferences, meetings and so forth). The tag is defined by expiration date values that are set under the ''Date and time' section of the [[Write administration panel]].
+The *expires* tag is a _single_ tag used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive (e.g. events like conferences, meetings and so forth). The tag is defined by expiration date values that are set under the ''Date and time' section of the "Write administration panel":../administration/write-panel.
 
 h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
 * @format="format string"@
-Override the default date format set in the [[Preferences administration panel]].
+Override the default date format set in the "Preferences administration panel":../administration/preferences-panel.
 Values: any valid "strftime":http://php.net/strftime string values.
 Default: the 'Archive date format' set in preferences.
 * @gmt="boolean"@
@@ -37,7 +37,7 @@ Default: @0@.
 * @lang="ISO language code"@
 Format time string suitable for the specified language (locale).
 Values: locales adhere to "ISO-639":http://en.wikipedia.org/wiki/ISO_639-2.
-Default: unset (time format set in the [[Preferences administration panel]].
+Default: unset (time format set in the "Preferences administration panel":../administration/preferences-panel.
 
 h3. Common presentational attributes
 

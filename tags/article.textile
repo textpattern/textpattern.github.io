@@ -32,7 +32,7 @@ This is equivalent to putting the contained statements into a form named 'my_for
 
 The tag is context-sensitive, which means it will grab articles from the currently viewed section/category/author, etc.
 
-When used on the front page, article's context will include articles from all sections set to display via 'Section appears on front page?' settings (see the [[Sections administration panel]] for more information).
+When used on the front page, article's context will include articles from all sections set to display via 'Section appears on front page?' settings (see the "Sections administration panel":../administration/sections-panel for more information).
 
 p(alert-block information). @<txp:article />@ is *not* the same as @<txp:article_custom />@ - you can "check out the differences of that tag":article-custom if you're unsure of the differences!
 
@@ -71,7 +71,7 @@ Do the article count, but do not display anything. Used when you want to show a 
 Values: @0@ (no) or @1@ (yes).
 Default: @0@.
 * @searchall="boolean"@
-When outputting search results, include only those articles with 'Include in site search' set on the [[Sections administration panel]]. If set to @0@, only articles in the current section are displayed. See [[Fixing search results]] for more.
+When outputting search results, include only those articles with 'Include in site search' set on the "Sections administration panel":../administration/sections-panel. If set to @0@, only articles in the current section are displayed. See [[Fixing search results]] for more.
 Values: @0@ (no) or @1@ (yes).
 Default: @1@.
 * @searchform="form name"@
@@ -145,7 +145,7 @@ Here is the *article* tag responsible for the main content of the home page on a
 
 bc. <txp:article limit="5" />
 
-Calls the @default@ article form, which may contain any variation of article output you want to create. The @default@ form cannot be deleted; it is the form you see on first viewing the [[Forms administration panel]].
+Calls the @default@ article form, which may contain any variation of article output you want to create. The @default@ form cannot be deleted; it is the form you see on first viewing the "Forms administration panel":../administration/forms-panel.
 
 Uses the @limit@ attribute to specify the maximum number of articles displayed in article list context (if not specified, this defaults to @10@).
 

@@ -20,14 +20,14 @@ h2(#sec1). Syntax
 
 bc. <txp:modified />
 
-The *modified* tag is a _single_ tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the [[Preferences administration panel]].
+The *modified* tag is a _single_ tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the "Preferences administration panel":../administration/preferences-panel.
 
 h2(#sec2). Attributes
 
 Tag will accept the following attributes (*case-sensitive*):
 
 * @format="format string"@
-Override the default date format set in the [[Preferences administration panel]].
+Override the default date format set in the "Preferences administration panel":../administration/preferences-panel.
 Values: any valid "strftime":http://php.net/strftime string values.
 Default: the 'Archive date format' set in preferences.
 * @gmt="boolean"@
@@ -37,7 +37,7 @@ Default: @0@.
 * @lang="ISO language code"@
 Format time string suitable for the specified language (locale).
 Values: locales adhere to "ISO-639":http://en.wikipedia.org/wiki/ISO_639-2.
-Default: unset (time format set in the [[Preferences administration panel]].
+Default: unset (time format set in the "Preferences administration panel":../administration/preferences-panel.
 
 h3. Common presentational attributes
 

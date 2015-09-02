@@ -21,7 +21,7 @@ h2(#sec1). Syntax
 
 bc. <txp:linklist />
 
-The *linklist* tag is a _single_ or a _container_ tag which is used to produce a list of links from the predefined list created on the [[Links administration panel]].
+The *linklist* tag is a _single_ or a _container_ tag which is used to produce a list of links from the predefined list created on the "Links administration panel":../administration/links-panel.
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 
@@ -42,13 +42,13 @@ Values: @category@ (to look in the URL for a category list) and/or @author@ (to 
 Default: @category, author@.
 * @category="category name(s)"@
 Restrict to links from specified categories.
-Values: (comma separated list of) category name(s). *Note:* category names may be different to the 'Title' you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories administration panel]] to ensure you are using the correct names.
+Values: (comma separated list of) category name(s). *Note:* category names may be different to the 'Title' you typed when you created the category, as the names are sanitised for URL use. Check the "Categories administration panel":../administration/categories-panel to ensure you are using the correct names.
 Default: unset.
 * @form="form name"@
 Use specified form.
 Default: @plainlinks@.
 * @id="integer"@
-Filter the links by this list of @id@s assigned at link creation time. The IDs can be found on the [[Links administration panel]].
+Filter the links by this list of @id@s assigned at link creation time. The IDs can be found on the "Links administration panel":../administration/links-panel.
 Default: unset.
 * @limit="integer"@
 Number of links to display.
