@@ -308,7 +308,7 @@ Namely, the "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_
 
 **Plugin user-help template and guidelines:**
 
-When you're coding is done, it's time to write that tight and useful plugin help documentation -- one of the _Developer rules of the road_ mentioned earlier. Ensure your plugin instructions are consistently structured, properly formatted, and easier for users to ... well, use.
+One of the "Developer rules of the road":#sec2. When you're plugin is done (or as you code it), it's time to write that tight and useful plugin help documentation. There's a template for that:
 
 * "Plugin user-help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines
 * "sed_plugin_help_viewer":http://textpattern.org/plugins/612/sed_plugin_help_viewer (A help viewer plugin that you might find... helpful.)
