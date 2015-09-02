@@ -13,19 +13,20 @@ tags:
 
 h1. The @pluggable_ui@ function
 
-The @pluggable_ui@ function was first introduced in Textpattern core in 2009. It's main purpose was to provide additional event>step callback hooks to modify the administration side when it was trickier under the prevailing conditions (i.e. constraints of the hard-coded admin-side templates and limited selector options), and thus could be used in admin-side plugins. The function, however, is now a bit dated, and some say entirely unnecessary for use in plugins. That's because the admin-side templates have evolved considerably since 2009, making the core @register_callback()@ function more effective on it's own. 
+The @pluggable_ui@ function was first introduced in Textpattern core prior to March 2009. It's main purpose was to provide additional event/step hooks to modify the administration side when admin-side web templates were harder to work with.[1] However, admin-side templates have come a long way and are vastly improved, not to mention other core features have emerged too (or will soon) that make new plugin designs possible. Thus @pluggable_ui@ has less to offer the average plugin developer. Some say it's only value anymore is to allow other plugins to modify your plugin's content. See example below. 
 
-As a result, this information is for historical purposes only. While the @pluggable_ui@ function is in core and usable, you should try to write your admin-side plugins without it. 
+fn1. In 2009, web page templates of the administration side still had table-based layouts, poor separation of presentation and content, and selectors were somewhat limited or applied in non-ideal places, among other things.
 
 On this page:
 
 * "Caution":#sec1
 * "Function definition":#sec2
-* "Reference":#sec3
+* "Examples":#sec3
+* "Events and steps reference":#sec4
 
 h2(#sec1). Caution
 
-Should you throw caution to the wind and use the @pluggable_ui@ function anyway, keep this in mind: Though it’s possible to completely redesign the HTML markup within an admin-side panel, you are advised not to with a plugin with a plugin. Removing and changing admin-side panel elements can make the plugins of other developers who target those DOM elements non-functional. If you must (really?) rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the original's to @display:none@ via CSS.
+Though it’s possible to completely redesign the HTML markup within an admin-side panel, you are advised not to it with a plugin. Removing and changing admin-side panel elements can make the plugins of other developers who target those DOM elements non-functional. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the original's to @display:none@ via CSS.
 
 h2(#sec2). Function definition
 
@@ -54,11 +55,34 @@ Arguments 3, 4, and 5 are optional depending on what you're trying to do…
 
 **Argument #5**, if applicable, is a special case (e.g. when dealing with preference settings) where argument #4 becomes the preference name and argument #5 holds its value.
 
-h2(#sec4). Callback examples
+h2(#sec3). Examples
 
-[todo]
+In this example we have a basic admin-side plugin called "abc_hello". The plugin creates a new **ABC Hello** panel under the **Extensions** region, which is accessible to administrators and _publishers_ (i.e. privs 1,2 users):
 
-h2(#sec5). Reference
+bc.. php
+add_privs('abc_hello', '1,2');
+register_tab('extensions', 'abc_hello', 'ABC Hello'); //parent, event, title
+register_callback('abc_hello_world', 'abc_hello'); //callback, event
+
+function abc_hello_world($event, $step) {
+	pagetop('ABC Hello', '<strong>ABC Hello</strong> preferences');
+	echo '<p>Hello, World!</p>';
+
+p. So far @pluggable_ui()@ is not used at all in the plugin. We've used @register_callback()@ to add the plugin's preferences panel under **Extensions**, like we could use it to do most everything else to admin-side panels too.
+
+But in the rare case we might want to allow other plugins to alter the output of abc_hello, we could replace @echo '<p>Hello, World!</p>';@ part with:
+
+bc. php
+echo pluggable_ui('abc_hello', '', '<p>Hello, World!</p>');
+
+Now other plugins can step in with something like this:
+
+bc. php
+register_callback('xyz_hello_world', 'abc_hello', '');
+
+And that is pretty much all @pluggable_ui()@ brings to the table anymore.
+
+h2(#sec4). Events and steps reference
 
 * "Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference
 ** "Admin-side user-interface callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2-4 (for more callback options)
