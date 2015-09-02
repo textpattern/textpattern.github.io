@@ -156,7 +156,7 @@ And the *arguments* (or parameters) are:
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. No. |_. Argument |_. What it is/does |
+|_. Argument |_. Parameter |_. What it is/does |
 | 1 | @$func@ | Name of the function you add to a callback event. |
 | 2 | @$event@ | Name of the core _event_. |
 | 3 | @$step@ (admin-side only) | Name of the associated core _step_. Not always required. |
