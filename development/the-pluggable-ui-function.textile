@@ -33,9 +33,9 @@ Callbacks written with @pluggable_ui@ have a different signature than those writ
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 	
-|_. No. |_. Argument |_. Explanation |
-| 1 | @$event@ | The name of the event for the panel you're targeting. |
-| 2 | @$step@ | The step of the event for the specific DOM element  you're targeting. |
+|_. Argument |_. Parameters |_. What it is/does |
+| 1 | @$event@ | Name of the core _event_ for the panel you're targeting. |
+| 2 | @$step@ | Name of the core _step_ for the specific DOM element targeted. |
 | 3 | @$data@ | The default data (content and/or markup); it's used if not modified. |
 | 4 | @$rs@ | The returned 'record set' from the database. |
 | 5 | (value) | The value of a named element (e.g. preference setting), indicated by argument 4. |
