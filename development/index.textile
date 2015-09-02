@@ -30,8 +30,8 @@ On this page:
 ** "Adding admin-side panel elements":#sec7-1
 ** "Altering admin-side panel elements":#sec7-2
 ** "Removing admin-side panel elements":#sec7-3
-* "Variables, classes, and constants":#sec8
-* "Plugin lifecycle management and preferences":#sec9
+* "Plugin lifecycle management and preferences":#sec8
+* "Variables, classes, and constants":#sec9
 * "Implementation resources":#sec10
 * "Getting help":#sec11
 * "External reading":#sec12
@@ -180,7 +180,7 @@ function abc_add_text($event, $step, $data, $rs) {
    return 'Textile, the humane web text generator.';
 }
 
-p. From the "@register_callback@ definition":#sec6-2-1 provided earlier, we see the first line is giving these arguments:
+p. From the @register_callback@ definition provided earlier, we see the first line is giving these arguments:
 
 * @$func@ = @abc_add_text@ (hypothetical)
 * @$event@ = @article_ui@
@@ -239,29 +239,13 @@ p. That's it! The returned space character (@return ' '@) replaces the keywords 
 
 fn6. *Attention!* Removing elements like this is a little drastic, because other plugins exist that target most UI elements, including the **Keywords** field. Such plugins would fail if they couldn't find the element you had destroyed. Hiding the element with CSS using @display:none@ would be a safer/better approach. If this is a problem for you and you feel you must delete the element, you could set your plugin to run at a lower priority (i.e., greater than "5") so other plugins could render their markup _before_ you remove your targeted element.
 
-h2(#sec8). Variables, classes, and constants
-
-**Variables:**
-
-* "Variable list":http://phpcrossref.com/xref/textpattern/_variables/ (via PHP Cross Reference)
-* "Accessing global variables":http://www.focusontheclouds.com/home/articles/72/accessing-global-variables-in-textpattern
-
-**Classes:**
-
-* "Classes list":http://phpcrossref.com/xref/textpattern/_classes/ (via PHP Cross Reference)
-* "Class in plugins example":http://forum.textpattern.com/viewtopic.php?id=26025
-
-**Constants:**
-
-* "Constants list":http://phpcrossref.com/xref/textpattern/_constants/ (via PHP Cross Reference)
-
-h2(#sec9). Plugin lifecycle management and preferences
+h2(#sec8). Plugin lifecycle management and preferences
 
 Plugins can opt into receiving @plugin_prefs.abc_my_plugin_name@ and @plugin_lifecycle.abc_my_plugin_name@ events. This opt-in is signaled to the core by raising the appropriate bits in @$plugin['flags']@.
 
-@PLUGIN_LIFECYCLE_NOTIFY@ and @PLUGIN_HAS_PREFS@ are human-readable defined bit masks for your coding pleasure. Use them in any appropriate combination (@PLUGIN_LIFECYCLE_NOTIFY | PLUGIN_HAS_PREFS@, etc).
+@PLUGIN_LIFECYCLE_NOTIFY@ and @PLUGIN_HAS_PREFS@ are human-readable defined bit masks you can use in any appropriate combination (@PLUGIN_LIFECYCLE_NOTIFY | PLUGIN_HAS_PREFS@, etc).
 
-Once you have flagged your intention to use the events, you use the standard @register_callback()@ system to invoke your own code when the event fires:
+Once you flag your intention to use the events, you use the standard @register_callback()@ system to invoke your own code when the event fires:
 
 bc. register_callback('my_prefs_page', 'plugin_prefs.abc_my_plugin_name');
 
@@ -276,6 +260,22 @@ register_callback('my_disable_routine',
    'plugin_lifecycle.abc_my_plugin_name', 'disabled');
 
 It is worth noting that Textpattern reserves the lower twelve bits of @$plugin['flags']@ for its own use, plugin developers may take advantage of the remaining four (@~PLUGIN_RESERVED_FLAGS@). These might come in handy to trigger some one-time actions, as these bits are copied into the __txp_plugin__ table row for any particular plugin whenever it is uploaded.
+
+h2(#sec9). Variables, classes, and constants
+
+**Variables:**
+
+* "Variable list":http://phpcrossref.com/xref/textpattern/_variables/ (via PHP Cross Reference)
+* "Accessing global variables":http://www.focusontheclouds.com/home/articles/72/accessing-global-variables-in-textpattern
+
+**Classes:**
+
+* "Classes list":http://phpcrossref.com/xref/textpattern/_classes/ (via PHP Cross Reference)
+* "Class in plugins example":http://forum.textpattern.com/viewtopic.php?id=26025
+
+**Constants:**
+
+* "Constants list":http://phpcrossref.com/xref/textpattern/_constants/ (via PHP Cross Reference)
 
 h2(#sec10). Implementation resources
 
