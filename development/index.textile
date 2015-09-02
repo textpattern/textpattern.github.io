@@ -132,9 +132,9 @@ Understanding how plugins are loaded, also shows how you can write “on demand�
 
 h2(#sec6). Function: @register_callback()@
 
-There are many "functions used in Textpattern":http://phpcrossref.com/xref/textpattern/_functions/ that may be relevant to your plugin development aims.[1] 
+There are many "functions used in Textpattern":http://phpcrossref.com/xref/textpattern/_functions/ that may be relevant to your plugin development aims.[3] 
 
-In particular, the @register_callback()@ function is important for writing "callbacks":#sec7 (especially admin-side callbacks).[2] This is the full function definition:
+In particular, the @register_callback()@ function is important for writing "callbacks":#sec7 (especially admin-side callbacks).[4] This is the full function definition:
 
 bc. function register_callback($func, $event, $step, $pre=0)
 
@@ -152,9 +152,9 @@ notextile. </div>
 
 The @$event@ and @$step@ arguments are significant. They're built into Textpattern and combined in various ways to do different things as callbacks.
 
-fn1. As you learn about functions, be aware of the helper functions found in the __"/lib":https://github.com/textpattern/textpattern/tree/master/textpattern/lib__ folder. Some examples: The __"txplib_db.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_db.php__ file for interacting with the Textpattern database; __"txplib_forms.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_forms.php__ to help build different HTML form controls; __"txplib_html.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_html.php__ to help build various other types of HTML elements; and __"txplib_misc.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_misc.php__ to help build various “miscellaneous” functions.
+fn3. As you learn about functions, be aware of the helper functions found in the __"/lib":https://github.com/textpattern/textpattern/tree/master/textpattern/lib__ folder. Some examples: The __"txplib_db.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_db.php__ file for interacting with the Textpattern database; __"txplib_forms.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_forms.php__ to help build different HTML form controls; __"txplib_html.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_html.php__ to help build various other types of HTML elements; and __"txplib_misc.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_misc.php__ to help build various “miscellaneous” functions.
 
-fn2. Another function, @pluggable_ui()@, was introduced in 2009, which provided additional event/step hooks for the admin-side panels. But the admin-side template markup has since evolved, thus @pluggable_ui()@ no longer offers the value it once did. See "The pluggable_ui function":http://docs.textpattern.io/development/the-pluggable-ui-function for more.
+fn4. Another function, @pluggable_ui()@, was introduced in 2009, which provided additional event/step hooks for the admin-side panels. But the admin-side template markup has since evolved, thus @pluggable_ui()@ no longer offers the value it once did. See "The pluggable_ui function":http://docs.textpattern.io/development/the-pluggable-ui-function for more.
 
 h2(#sec7). Callbacks
 
@@ -162,11 +162,11 @@ The "Core callbacks reference":/core-callbacks-reference details all _events_ an
 
 A callback is essentially an order (written as a function) that your plugin can use to execute some _events_ (and _steps_). You hook into these known points to choose where and when your plugins run. 
 
-The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callback actions used in Textpattern, organised by type and by where in Textpattern they are called from. The callbacks reference is organised by public-side, admin-side, plugin, and function- and tag-based callbacks.[3]
+The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callback actions used in Textpattern, organised by type and by where in Textpattern they are called from. The callbacks reference is organised by public-side, admin-side, plugin, and function- and tag-based callbacks.[5]
 
 The @register_callback()@ function, described previously, is instrumental in writing callbacks, and especially for administration-related plugins. Let's put it all together with a few examples.
 
-fn3. There's also the "Admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps listing for admin-side plugins specifically. This would correspond with the various "admin-side callbacks":/core-callbacks-reference#sec2 in the __Core callbacks reference__, but it doesn't provide the explanatory details like the callbacks reference does.
+fn5. There's also the "Admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps listing for admin-side plugins specifically. This would correspond with the various "admin-side callbacks":/core-callbacks-reference#sec2 in the __Core callbacks reference__, but it doesn't provide the explanatory details like the callbacks reference does.
 
 h3(#sec7-1). Adding your own admin-side panel elements
 
@@ -229,7 +229,7 @@ Again we've used @register_callback()@ to define our callback function, and in t
 
 h3(#sec7-3). Removing admin-side panel elements
 
-In this case, let's say you wanted to remove the **Keywords** field.[2] You could hook into the @keywords@ step and return a space character:
+In this case, let's say you wanted to remove the **Keywords** field.[6] You could hook into the @keywords@ step and return a space character:
 
 bc.. register_callback('abc_remove_keywords', 'article_ui', 'keywords');
 
@@ -239,7 +239,7 @@ function abc_remove_keywords($event, $step, $data, $rs) {
 
 p. That's it! The returned space character (@return ' '@) replaces the keywords field, effectively removing it.
 
-fn2. *Attention!* Removing elements like this is a little drastic, because other plugins exist that target most UI elements, including the **Keywords** field. Such plugins would fail if they couldn't find the element you had destroyed. Hiding the element with CSS using @display:none@ would be a safer/better approach. If this is a problem for you and you feel you must delete the element, you could set your plugin to run at a lower priority (i.e., greater than "5") so other plugins could render their markup _before_ you remove your targeted element.
+fn6. *Attention!* Removing elements like this is a little drastic, because other plugins exist that target most UI elements, including the **Keywords** field. Such plugins would fail if they couldn't find the element you had destroyed. Hiding the element with CSS using @display:none@ would be a safer/better approach. If this is a problem for you and you feel you must delete the element, you could set your plugin to run at a lower priority (i.e., greater than "5") so other plugins could render their markup _before_ you remove your targeted element.
 
 h2(#sec8). Variables, classes, and constants
 
