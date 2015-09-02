@@ -158,13 +158,18 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 |_. No. |_. Argument |_. Explanation |
 | 1 | @$func@ | Name of the function you add to a callback event. |
-| 2 | @$event@ | The Textpattern _event_. |
-| 3 | @$step@ | **For admin-side plugins only, thus optional.** The _event_ is (disjunctively) divided into steps, so you have the choice of narrowing your plugin to a specific step. |
-| 4 | @$pre=0@ | **For admin-side plugins only, thus optional.** By default, this argument is equal to @0@, thus @$func@ is called after the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. If you set this to "1" (@$pre=1@), then @$func@ is called before any part of the page is rendered or executed. This allows you to replace existing panels on the admin-side. |
+| 2 | @$event@ | Name of the core _event_. |
+| 3 | @$step@ (admin-side only) | Name of the associated core _step_. Not always required. |
+| 4 | @$pre=@ (admin-side only) | Designates when @$func@ is called. Values are @$pre=0@ (default) or @$pre=1@. |
 
-notextile. </div>
+notextile. </div> 
 
-The @$event@ and @$step@ arguments are significant. They're built into Textpattern and combined in various ways to do different things as callbacks.
+*Argument #3:* In these situations, the @$event@ (argument #2) is (disjunctively) divided into steps, with each @$step@ pinpointing a particular action or DOM location (e.g., a panel widget or one of its controls) in the admin-side. 
+
+*Argument #4:* This argument determines when the function is called, with implications for what you can do:
+
+* If @$pre=0@ (default), the function is called _after_ the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. 
+* If @$pre=1@, the funcntion is called _before_ any part of the page is rendered or executed, allowing you to replace existing panels on the admin-side.
 
 fn3. As you learn about functions, be aware of the helper functions found in the __"/lib":https://github.com/textpattern/textpattern/tree/master/textpattern/lib__ folder. Some examples: The __"txplib_db.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_db.php__ file for interacting with the Textpattern database; __"txplib_forms.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_forms.php__ to help build different HTML form controls; __"txplib_html.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_html.php__ to help build various other types of HTML elements; and __"txplib_misc.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_misc.php__ to help build various “miscellaneous” functions.
 
@@ -172,7 +177,7 @@ fn4. Another function, @pluggable_ui()@, was introduced in 2009, which provided 
 
 h2(#sec7). Callbacks
 
-A callback is essentially an order (written as a function) that your plugin can use to execute some _events_ (and _steps_). You hook into these known points to choose where and when your plugins run. 
+A callback is essentially an instruction (written as a function) that your plugin follows to execute some _events_ (and _steps_) -- either @$event@ by itself or combined with a @$step@. You hook into these known points to choose where and when your plugins run. 
 
 The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callback actions used in Textpattern, organised by type and by where in Textpattern they are called from. The callbacks reference is organised by public-side, admin-side, plugin, and function- and tag-based callbacks.[5]
 
