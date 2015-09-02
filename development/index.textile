@@ -158,8 +158,6 @@ fn4. Another function, @pluggable_ui()@, was introduced in 2009, which provided 
 
 h2(#sec7). Callbacks
 
-The "Core callbacks reference":/core-callbacks-reference details all _events_ and _steps_ used to write every possible Textpattern callback. 
-
 A callback is essentially an order (written as a function) that your plugin can use to execute some _events_ (and _steps_). You hook into these known points to choose where and when your plugins run. 
 
 The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callback actions used in Textpattern, organised by type and by where in Textpattern they are called from. The callbacks reference is organised by public-side, admin-side, plugin, and function- and tag-based callbacks.[5]
