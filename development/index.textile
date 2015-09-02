@@ -22,8 +22,8 @@ On this page:
 ** "Write clear and concise plugin help":#sec2-4
 * "What is a plugin?":#sec3
 ** "Functional categories":#sec3-1
-** "Public-side plugins":#sec3-2 (with tutorial)
-** "Admin-side plugins":#sec3-3 (with tutorial)
+** "Public-side plugins":#sec3-2
+** "Admin-side plugins":#sec3-3
 * "Register your plugin developer prefix":#sec4
 * "How plugins are loaded":#sec5
 * "Function: @register_callback()@":#sec6
@@ -33,9 +33,10 @@ On this page:
 ** "Removing admin-side panel elements":#sec7-3
 * "Plugin lifecycle management and preferences":#sec8
 * "Variables, classes, and constants":#sec9
-* "Implementation resources":#sec10
-* "Getting help":#sec11
-* "External reading":#sec12
+* "Full plugin tutorials":#sec10
+* "Implementation resources":#sec11
+* "Getting help":#sec12
+* "External reading":#sec13
 
 h2(#sec1). Disclaimer
 
@@ -183,7 +184,7 @@ A callback is essentially an instruction (written as a function) that your plugi
 
 The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callback actions used in Textpattern, organised by type and by where in Textpattern they are called from. The callbacks reference is organised by public-side, admin-side, plugin, and function- and tag-based callbacks.[5]
 
-The @register_callback()@ function, described previously, is instrumental in writing callbacks, and especially for administration-related plugins. Let's put it all together with a few examples.
+The @register_callback()@ function, described previously, is instrumental in writing callbacks, and especially for administration-related plugins. Let's look a few examples.
 
 fn5. There's also the "Admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps listing for admin-side plugins specifically. This would correspond with the various "admin-side callbacks":/core-callbacks-reference#sec2 in the __Core callbacks reference__, but it doesn't provide the explanatory details like the callbacks reference does.
 
@@ -298,7 +299,14 @@ h2(#sec9). Variables, classes, and constants
 
 * "Constants list":http://phpcrossref.com/xref/textpattern/_constants/ (via PHP Cross Reference)
 
-h2(#sec10). Implementation resources
+h2(#sec10). Full plugin tutorials
+
+Here are two basic plugin tutorials to put it all in perspective:
+
+* "Public-side plugin tutorial":http://docs.textpattern.io/development/public-side-plugin-tutorial
+* "Admin-side plugin tutorial":http://docs.textpattern.io/development/admin-side-plugin-tutorial
+
+h2(#sec11). Implementation resources
 
 Now you know what plugins are and you're ready to kick plugin ass. You'll probably need some combination of these to see the job through:
 
@@ -341,13 +349,13 @@ These are "questionable":https://github.com/textpattern/textpattern.github.io/is
 * "Generate a list of tags and attributes":http://forum.textpattern.com/viewtopic.php?id=12299 [???]
 * "Command-line plugin decoder":http://forum.textpattern.com/viewtopic.php?id=4252 [???]
 
-h2(#sec11). Getting help
+h2(#sec12). Getting help
 
 If you need a warm shoulder to lean on, subscribe to the "plugin development mailing list":http://lists.textpattern.com/, which might be rather quiet unless you use it. 
 
 The Textpattern Support Forum, notably the "Plugin discussions":http://forum.textpattern.com/viewforum.php?id=13 area, is a good place to post questions too. 
 
-h2(#sec12). External reading
+h2(#sec13). External reading
 
 These are external to official documentation. Their status and value is out of our hands, but you may find something useful there. Not a long list, in any case.
 
