@@ -4,15 +4,15 @@ category: administration
 published: true
 title: "Plugins"
 tags:
-  - plugins
-  - extension
+  - Plugins
+  - Extension
 ---
 
 "Main ToC":http://docs.textpattern.io ⨠ Administration ⨠ **Admin** ⨠  **Plugins**
 
 h1. Plugins
 
-Textpattern by itself is capable of doing a lot, especially as you learn to use __forms__ and __"core tags":http://docs.textpattern.io/tags/__ in increasingly sophisticated ways. But when your needs cannot be met (or met easily) by core ingenuity alone, you can extend functionality with plugins, whether to produce content and behaviour, enhance configurability or usability, and more. 
+Textpattern by itself is capable of doing a lot, especially as you learn to use __forms__ and __"core tags":http://docs.textpattern.io/tags/__ in increasingly sophisticated ways. But when your needs cannot be met (or met easily) by core ingenuity alone, you can extend functionality with plugins, whether to produce content and behaviour, enhance configurability or usability, and more.
 
 On this page:
 
@@ -41,7 +41,7 @@ Installing a standard text (.txt) plugin goes something like this:
 # Paste the file into the **Install plugin** textarea box at top of the panel.
 # Click the **Upload** button to verify contents.
 # Click the **Install** button to finish installation and add plugin to the plugin table.
-# When ready, activate the plugin by clicking the "No" link under the **Active** column in the table. 
+# When ready, activate the plugin by clicking the "No" link under the **Active** column in the table.
 
 Most of that is pretty straight forward, but let's touch upon steps 1, 2, and 4 a bit more.
 
@@ -135,7 +135,7 @@ Beyond that, certain columns have particular value.
 
 h3(#sec3-1). Activating a plugin
 
-When you first install a plugin, it's in a non-utilisable state until you activate it. To activate a plugin, click the "No" link in the **Active** column. The link will turn to "Yes" and the plugin is ready to use. To deactivate a plugin, which you might do temporarily when troubleshooting errors in your code that could be related to plugins in some way, click the "Yes" link to toggle it off again. 
+When you first install a plugin, it's in a non-utilisable state until you activate it. To activate a plugin, click the "No" link in the **Active** column. The link will turn to "Yes" and the plugin is ready to use. To deactivate a plugin, which you might do temporarily when troubleshooting errors in your code that could be related to plugins in some way, click the "Yes" link to toggle it off again.
 
 h3(#sec3-2). Editing a plugin
 
@@ -159,7 +159,7 @@ fn4. In the event you need to update a plugin you've edited, you may like to ins
 
 h2(#sec5). Advice on plugin usage
 
-While plugins can do many things, there is often a misconception that you need plugins to do everything. That is not true with Textpattern. Many long-time users of Textpattern, in fact, pride themselves on using as few plugins as possible, while still creating sophisticated publishing architectures with core capabilities, especially when it comes to building front-ends -- true Textpattern jedi. 
+While plugins can do many things, there is often a misconception that you need plugins to do everything. That is not true with Textpattern. Many long-time users of Textpattern, in fact, pride themselves on using as few plugins as possible, while still creating sophisticated publishing architectures with core capabilities, especially when it comes to building front-ends -- true Textpattern jedi.
 
 The prudent website owner, and particularly the site architect, is encouraged to adopt a frugal habit of plugin use and learn the jedi way. That is to say, only install plugins if while learning Textpattern you discover you really do need them. Installing a bunch of plugins right away because they sound cool, or because they provide a quick way of achieving something is not a good way to learn what Textpattern is capable of.
 
@@ -169,10 +169,10 @@ Here are a few tips for achieving plugin zen:
 
 * Take the time to research if what you want to do can't be done with core functionality alone. Chances are it can be done, and notably with designing your front-end publishing architecture.[5]
 * Don't install plugins that you don't need, even if you _think_ you might need them later, there's no point. Also, some plugins install their own database tables. You don't need plugin database tables for nothing.
-* If you do install plugins, but don't use them right away, don't enable them. Every enabled plugin, used or not, is a potential vector for exploitation, and notably if it's not well maintained, so having enabled plugins sitting there that you aren't using increases your odds of being hacked. 
+* If you do install plugins, but don't use them right away, don't enable them. Every enabled plugin, used or not, is a potential vector for exploitation, and notably if it's not well maintained, so having enabled plugins sitting there that you aren't using increases your odds of being hacked.
 * Don't de-activate plugins you don't want to use and leave them installed. Again, there's no point. Delete them. Be one with the Textpattern Force.
 
-fn5. Good places to look and learn about building sophisticated publishing architectures with core functionality include: "Tags reference":http://docs.textpattern.io/tags/ (notably the examples provided on each tag page), "TXP Tips":http://txptips/com, all throughout the support forum, but notably in the "How do I...? And other questions":http://forum.textpattern.com/viewforum.php?id=5 area, and the "Textpattern Blog":http://textpattern.com/blog, where more community tutorials will be published in the future. 
+fn5. Good places to look and learn about building sophisticated publishing architectures with core functionality include: "Tags reference":http://docs.textpattern.io/tags/ (notably the examples provided on each tag page), "TXP Tips":http://txptips/com, all throughout the support forum, but notably in the "How do I...? And other questions":http://forum.textpattern.com/viewforum.php?id=5 area, and the "Textpattern Blog":http://textpattern.com/blog, where more community tutorials will be published in the future.
 
 h2(#sec6). Plugin development?
 

@@ -4,10 +4,10 @@ category: administration
 published: true
 title: "User role types and privileges"
 tags:
-  - users
-  - roles
-  - privileges
-  - account types
+  - Users
+  - Roles
+  - Privileges
+  - Account types
 ---
 
 h1. User role types and privileges

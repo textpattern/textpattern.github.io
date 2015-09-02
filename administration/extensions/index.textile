@@ -4,10 +4,10 @@ category: extension
 published: true
 title: "Extensions"
 tags:
-  - extension
-  - admin-side
-  - region
-  - plugins
+  - Extension
+  - Admin-side
+  - Region
+  - Plugins
 ---
 
 "Main ToC":http://docs.textpattern.io ⨠ **"Textpattern administration":http://docs.textpattern.io/administration/** ⨠ **Extensions**

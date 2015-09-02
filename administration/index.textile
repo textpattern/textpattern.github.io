@@ -4,12 +4,12 @@ category: administration
 published: true
 title: "Textpattern administration"
 tags:
-  - administration
-  - admin-side
-  - panels
-  - configuration
-  - site structure
-  - site management
+  - Administration
+  - Admin-side
+  - Panels
+  - Configuration
+  - Site structure
+  - Site management
 ---
 
 "Main ToC":http://docs.textpattern.io ⨠ **Textpattern administration**
@@ -27,7 +27,7 @@ On this page:
 
 h2(#sec1). Login location
 
-Users typically install Textpattern CMS in the root location of a website's domain because they intend to run the entire website with the CMS. This puts the login location at __domain.tld/textpattern__.[1] If you installed Textpattern in a sub-directory, the login location would reflect that (__domain.tld/sub-directory/textpattern__).  
+Users typically install Textpattern CMS in the root location of a website's domain because they intend to run the entire website with the CMS. This puts the login location at __domain.tld/textpattern__.[1] If you installed Textpattern in a sub-directory, the login location would reflect that (__domain.tld/sub-directory/textpattern__).
 
 fn1. See "Textpattern security":../security/ if you're worried about the login location being common knowledge.
 
@@ -70,11 +70,11 @@ h3. Language selection
 
 English is the default installation language for the admin-side of Textpattern. You are given a chance to change this immediately following your first log in. You'll be taken to the "Update languages":admin/preferences-language-panel.textile panel under the **Admin** area to "Install" the additional language(s) you want to use.[4] You'll see a green confirmation message at bottom of screen after each language install. When done, click the yellow **Save** button.
 
-If you install more than one language, you can override the English default by selecting the new default via the drop-down selection box at top of the languages table. Again, save the changes. 
+If you install more than one language, you can override the English default by selecting the new default via the drop-down selection box at top of the languages table. Again, save the changes.
 
 You won't be auto-directed to the **Update languages** panel with each update of your Textpattern installation, but go there anyway when you do update because language packs may have been modified since Textpattern's last version release and you want to implement them if so. You'll easily see the languages you initially installed because they will be labeled as "Update" instead of "Install". Update them all and click the **Save** button when done.
 
-fn4. [todo:dw] Notes about multi-lingual use. 
+fn4. [todo:dw] Notes about multi-lingual use.
 
 h3. Configuration of site identity and publishing behavior
 
@@ -86,7 +86,7 @@ When basic preferences are set, go to the "Diagnostics":admin/diagnostics-panel.
 
 h3. Build your architecture
 
-Whenall diagnostics checks are clear, you're ready to build your site architecture and presentation with a little trial and error. Building publishing architectures with Textpattern is a big chunk of learning and tinkering, and there's no direct 1-2-3 method for it. But the learning is fun, and once you understand how things all fit together, you'll thank yourself for choosing such an elegant system. 
+Whenall diagnostics checks are clear, you're ready to build your site architecture and presentation with a little trial and error. Building publishing architectures with Textpattern is a big chunk of learning and tinkering, and there's no direct 1-2-3 method for it. But the learning is fun, and once you understand how things all fit together, you'll thank yourself for choosing such an elegant system.
 
 For further orientation on publishing architecture basics, see "administration highlights":administration-highlights.textile.
 

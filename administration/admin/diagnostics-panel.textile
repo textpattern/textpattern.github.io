@@ -4,12 +4,12 @@ category: administration
 published: true
 title: "Diagnostics"
 tags:
-  - diagnostics
-  - pre-flight checks
-  - error messages
-  - low info
-  - high info
-  - php functions
+  - Diagnostics
+  - Pre-flight checks
+  - Error messages
+  - Low info
+  - High info
+  - PHP functions
 ---
 
 "Main ToC":http://docs.textpattern.io ⨠ **"Textpattern administration":http://docs.textpattern.io/administration/** ⨠ **Admin** ⨠ **Diagnostics*
