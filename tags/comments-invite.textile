@@ -19,7 +19,7 @@ h2(#sec1). Syntax
 
 bc. <txp:comments_invite />
 
-The *comments_invite* tag is a _single_ tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern [[Write page]].
+The *comments_invite* tag is a _single_ tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern [[Write administration panel]].
 
 This tag can be used in both a Textpattern [[Page template]] and a [[Form template]].
 
@@ -48,7 +48,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 HTML @class@ to apply to the @wraptag@ attribute value.
 Default: @comments_invite@ (see [[class cross-reference]]).
 * @wraptag="tag"@
-HTML tag to wrap around invite text, specified without brackets (e.g., @wraptag="p"@).
+HTML tag to wrap around invite text, specified without brackets (e.g. @wraptag="p"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec3). Examples

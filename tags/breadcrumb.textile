@@ -52,7 +52,7 @@ Default: unset (see [[class cross-reference]]).
 Label prepended to item.
 Default: unset (but see [[label cross-reference]] for exceptions).
 * @wraptag="element"@
-HTML element to wrap breadcrumb block, specified without brackets (e.g., @wraptag="p"@).
+HTML element to wrap breadcrumb block, specified without brackets (e.g. @wraptag="p"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec3). Examples

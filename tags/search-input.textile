@@ -59,7 +59,7 @@ Default: tag name or unset (see [[class cross-reference]]).
 Label prepended to item.
 Default: unset (but see [[label cross-reference]] for exceptions).
 * @wraptag="element"@
-HTML element to wrap markup, specified without brackets (e.g., @wraptag="div"@).
+HTML element to wrap markup, specified without brackets (e.g. @wraptag="div"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec3). Examples
@@ -74,7 +74,7 @@ You can build your own custom search form by specifying @form="form-name"@ insid
 
 bc. <txp:search_input form="form-name" />
 
-You would then need to build your Form (i.e., @form-name@), and the absolute minimum Textpattern tags and attributes required would be:
+You would then need to build your Form (i.e. @form-name@), and the absolute minimum Textpattern tags and attributes required would be:
 
 bc. <form action="<txp:site_url />">
     <input name="q" type="search" />

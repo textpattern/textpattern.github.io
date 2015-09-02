@@ -48,7 +48,7 @@ Default: tag name or unset (see [[class cross-reference]]).
 Label prepended to item.
 Default: unset (but see [[label cross-reference]] for exceptions).
 * @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
+HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec3). Examples

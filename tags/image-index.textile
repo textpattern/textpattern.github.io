@@ -25,7 +25,7 @@ The *image_index* tag is a _single_ tag that is intended to be used in tandem wi
 
 The thumbnail images are linked to an address which will pass the image ID plus the active category on to the tandem "image_display":image-display tag. It is up to the user to include this tandem tag at an appropriate place inside the page template.
 
-p(alert-block information). Note: As the image category is passed into "image_display":image-display, it requires to either place the 'receiving' image_display on an article independent portion of the page (i.e., outside of the article form), or otherwise both the article used for display and the images have to share a 'common' category.
+p(alert-block information). Note: As the image category is passed into "image_display":image-display, it requires to either place the 'receiving' image_display on an article independent portion of the page (i.e. outside of the article form), or otherwise both the article used for display and the images have to share a 'common' category.
 
 h2(#sec2). Attributes
 
@@ -64,7 +64,7 @@ h3. Common presentational attributes
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
 * @break="value"@
-Where value is an HTML element, specified without brackets (e.g., @break="li"@) or some string to separate list items.
+Where value is an HTML element, specified without brackets (e.g. @break="li"@) or some string to separate list items.
 Default: @br@ (but see [[break cross-reference]] for exceptions).
 * @class="class name"@
 HTML @class@ to apply to the @wraptag@ attribute value.
@@ -73,10 +73,10 @@ Default: tag name or unset (see [[class cross-reference]]).
 Label prepended to item.
 Default: unset (but see [[label cross-reference]] for exceptions).
 * @labeltag="element"@
-HTML element to wrap (markup) label, specified without brackets (e.g., labeltag="h3").
+HTML element to wrap (markup) label, specified without brackets (e.g. labeltag="h3").
 Default: unset.
 * @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
+HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec3). Examples

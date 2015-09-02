@@ -57,7 +57,7 @@ Restrict to articles by specified author(s) *login name*.
 Values: (comma separated list of) author login name(s).
 Default: unset, retrieves from all authors.
 * @category="category name"@
-Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories page]] to ensure you are using the correct names.
+Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories administration panel]] to ensure you are using the correct names.
 Values: (comma separated list of) category name(s).
 Default: unset, retrieves from all categories.
 * @customfieldname="value"@
@@ -134,7 +134,7 @@ h3. Common presentational attributes
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
 * @break="value"@
-Where value is an HTML element, specified without brackets (e.g., @break="li"@) or some string to separate list items.
+Where value is an HTML element, specified without brackets (e.g. @break="li"@) or some string to separate list items.
 Default: @br@ (but see [[break cross-reference]] for exceptions).
 * @class="class name"@
 HTML @class@ to apply to the @wraptag@ attribute value.
@@ -143,10 +143,10 @@ Default: tag name or unset (see [[class cross-reference]]).
 Label prepended to item.
 Default: unset (but see [[label cross-reference]] for exceptions).
 * @labeltag="element"@
-HTML element to wrap (markup) label, specified without brackets (e.g., labeltag="h3").
+HTML element to wrap (markup) label, specified without brackets (e.g. labeltag="h3").
 Default: unset.
 * @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
+HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec3). Examples
@@ -225,7 +225,7 @@ bc. <txp:article_custom sort="AuthorID asc, Posted asc" />
 
 Uses the @sort@ attribute to define values by which to order article output. In this case two values are declared. @AuthorID asc@ first orders articles alphabetically by author names, then @Posted desc@ orders them by date published (@desc@ meaning newest to oldest).
 
-Why might you do it? Sorting is a powerful way to group articles (e.g., by author), and/or give priority to articles most recently published (typically better for your website visitors).
+Why might you do it? Sorting is a powerful way to group articles (e.g. by author), and/or give priority to articles most recently published (typically better for your website visitors).
 
 h3. Example 7: Select by article ID(s)
 

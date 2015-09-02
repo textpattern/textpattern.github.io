@@ -51,7 +51,7 @@ List of Textpattern contexts to consider when automatically searching for images
 @author@ to look in the URL for an author list.
 Default: @article, category, author@.
 * @category="image category"@
-Filter the images by this list of category names as defined in the [[Categories page]].
+Filter the images by this list of category names as defined in the [[Categories administration panel]].
 * @extension=".extension"@
 Filter the images by this list of image extensions, including the leading dot. Example: @extension=".jpg, .png"@.
 Default: unset.
@@ -62,14 +62,14 @@ Default: unset.
 The HTML @id@ attribute applied to the @wraptag@, if set, otherwise to the @img@ tag.
 Default: unset.
 * @id="integer"@
-Filter the images by this list of @id@s assigned at upload. The IDs can be found on the [[Images page]].
+Filter the images by this list of @id@s assigned at upload. The IDs can be found on the [[Images administration panel]].
 The order of the ids overrides the default @sort@ attribute.
 Default: unset.
 * @limit="integer"@
 The number of images to display per page.
 Default: @0@ (unlimited).
 * @name="image name"@
-Filter the images by this list of image names as shown on the [[Images page]].
+Filter the images by this list of image names as shown on the [[Images administration panel]].
 Default: unset.
 * @offset="integer"@
 The number of images to skip.
@@ -99,7 +99,7 @@ Values:
 Default: @name asc@.
 * @thumbnail="boolean"@
 Filter the image list to only include images that have a thumbnail, or not.
-Values: unset (i.e. all images), @1@ (images that have a thumbnail) or @0@ (images that do not have a thumbnail).
+Values: unset (i.e.,all images), @1@ (images that have a thumbnail) or @0@ (images that do not have a thumbnail).
 Default: unset.
 
 h3. Common presentational attributes
@@ -107,7 +107,7 @@ h3. Common presentational attributes
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
 * @break="value"@
-Where value is an HTML element, specified without brackets (e.g., @break="li"@) or some string to separate list items.
+Where value is an HTML element, specified without brackets (e.g. @break="li"@) or some string to separate list items.
 Default: @br@ (but see [[break cross-reference]] for exceptions).
 * @class="class name"@
 CSS @class@ attribute to apply to the image (or to the @wraptag@, if set).
@@ -116,10 +116,10 @@ Default: tag name *or* unset (see [[class cross-reference]]).
 Label prepended to item.
 Default: unset (but see [[label cross-reference]] for exceptions).
 * @labeltag="element"@
-HTML element to wrap (markup) label, specified without brackets (e.g., labeltag="h3").
+HTML element to wrap (markup) label, specified without brackets (e.g. labeltag="h3").
 Default: unset.
 * @wraptag="tag"@
-HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
+HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec3). Examples

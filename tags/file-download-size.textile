@@ -40,7 +40,7 @@ Values:
 @e@ (exabytes)
 @z@ (zettabytes)
 @y@ (yottabytes)
-Default: unset (i.e. the most appropriate units based on the file size).
+Default: unset (i.e.,the most appropriate units based on the file size).
 
 h2(#sec3). Examples
 

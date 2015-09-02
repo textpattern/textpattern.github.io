@@ -27,7 +27,7 @@ h2(#sec2). Attributes
 Tag will accept the following attributes (*case-sensitive*):
 
 * @category="category name"@
-Restrict to specified category. Note: the category name may be different to the title you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories page]] to ensure you are using the correct name.
+Restrict to specified category. Note: the category name may be different to the title you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories administration panel]] to ensure you are using the correct name.
 Value: category name.
 Default: current category.
 * @flavor="value"@
@@ -53,7 +53,7 @@ Default: tag name or unset (see [[class cross-reference]]).
 Label prepended to item.
 Default: unset (but see [[label cross-reference]] for exceptions).
 * @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
+HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 p(alert-block information). Note: @label@ and @wraptag@ attributes are applicable only when using @format@ of @a@ (@label@ used as link text).

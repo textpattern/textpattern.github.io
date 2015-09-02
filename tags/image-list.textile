@@ -56,7 +56,7 @@ bc. 1
 bc. 0
 
 
-). Default: unset (i.e. all images). *"label":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#label=“text”*
+). Default: unset (i.e.,all images). *"label":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#label=“text”*
  Text to display above the list of images as a label. Default: unset. *"labeltag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag text”*
  HTML tag to be used to wrap the label, specified without brackets. Default: unset. *"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag text”*
  HTML tag to be used to wrap the

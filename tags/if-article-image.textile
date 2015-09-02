@@ -28,7 +28,7 @@ bc. <txp:if_article_image>
     ...conditional statement...
 </txp:if_article_image>
 
-The tag will execute the contained statements if an image is associated (through the [[Write page]] 'Article image' field) with the article being displayed.
+The tag will execute the contained statements if an image is associated (through the [[Write administration panel]] 'Article image' field) with the article being displayed.
 
 h2(#sec2). Attributes
 

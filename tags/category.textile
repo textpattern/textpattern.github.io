@@ -34,7 +34,7 @@ Whether to display as link. Works only in the _single_ tag, *not* in the _contai
 Values: @0@ (no) or @1@ (yes).
 Default: @0@.
 * @name="category name"@
-Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [[Categories page]]. Also note that if you had called your category @My Category Name@ it becomes @my-category-name@ when used in tags.
+Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [[Categories administration panel]]. Also note that if you had called your category @My Category Name@ it becomes @my-category-name@ when used in tags.
 Default: unset (use current category).
 * @section="section name"@
 Restrict to articles from specified section(s).
@@ -65,7 +65,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 HTML @class@ attribute, applied to @wraptag@. If no @wraptag@ is supplied (and @link="1"@), the @class@ is applied to the @<a>@ tag instead.
 Default: unset (see [[class cross-reference]]).
 * @wraptag="tag"@
-HTML tag to wrap around output, specified without brackets (e.g., @wraptag="p"@).
+HTML tag to wrap around output, specified without brackets (e.g. @wraptag="p"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec3). Examples

@@ -20,7 +20,7 @@ h2(#sec1). Syntax
 
 bc. <txp:css />
 
-The basic *css* tag is a _single_ tag used to output the URL of the stylesheet assigned in the Textpattern [[Sections page]].
+The basic *css* tag is a _single_ tag used to output the URL of the stylesheet assigned in the Textpattern [[Sections administration panel]].
 
 h2(#sec2). Attributes
 

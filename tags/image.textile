@@ -20,7 +20,7 @@ h2(#sec1). Syntax
 
 bc. <txp:image />
 
-The *image* tag is a _single_ tag that Textpattern will replace with the @<img src="...">@ HTML tag matching the image of the numeric @id@ assigned by Textpattern when the image was uploaded via the Textpattern [[Images page]].
+The *image* tag is a _single_ tag that Textpattern will replace with the @<img src="...">@ HTML tag matching the image of the numeric @id@ assigned by Textpattern when the image was uploaded via the Textpattern [[Images administration panel]].
 
 h2(#sec2). Attributes
 
@@ -37,9 +37,9 @@ Default: height of image stored in the database.
 The HTML @id@ attribute applied to the @wraptag@, if set, otherwise to the @<img>@ tag.
 Default: unset.
 * @id="integer"@
-Specifies the @id@, assigned at upload of the image, to display. Can be found on the [[Images page]]. If both @name@ and @id@ are specified, @name@ is used while @id@ is ignored.
+Specifies the @id@, assigned at upload of the image, to display. Can be found on the [[Images administration panel]]. If both @name@ and @id@ are specified, @name@ is used while @id@ is ignored.
 * @name="image name"@
-Specifies which image to display by its image @name@ as shown on the [[Images page]].
+Specifies which image to display by its image @name@ as shown on the [[Images administration panel]].
 * @width="integer"@
 Specify an image @width@ which overrides the value stored in the database. Use @width="0"@ to turn off the output of a width attribute in the @<img>@ tag (thus the browser will scale the width if a height is used).
 Default: width of image stored in the database.
@@ -55,7 +55,7 @@ Default: unset (see [[class cross-reference]]).
 Inline CSS @style@ rule. It's recommended that you assign CSS rules via @class@ attribute instead.
 Default: unset.
 * @wraptag="element"@
-HTML tag to be used to wrap the @<img>@ tag, specified without brackets (e.g., @wraptag="ul"@).
+HTML tag to be used to wrap the @<img>@ tag, specified without brackets (e.g. @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec3). Examples

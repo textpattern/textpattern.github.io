@@ -43,7 +43,7 @@ h2(#sec3). Examples
 
 h3. Example 1: Store site-wide constants
 
-Allows you to define constants at a single location (e.g., a [[Form]] template, or even at the top of a [[Page]] template) and use them elsewhere later on.
+Allows you to define constants at a single location (e.g. a [[Form]] template, or even at the top of a [[Page]] template) and use them elsewhere later on.
 
 Somewhere at the very beginning of a template you would define names and values, just like you do on your desktop calculatorâ€™s “memory” keys:
 
@@ -64,7 +64,7 @@ bc. <txp:if_search>
     </txp:if_category>
 </txp:if_search>
 
-Later down the [[Page]] template or in a separate [[Form]] you can read the attribute values previously set onditionals come in handy at times:
+Later down the [[Page]] template or in a separate [[Form]] you can read the attribute values previously set conditionals come in handy at times:
 
 bc. <txp:if_variable name="homepage" value="1">
     ...homepage content...
@@ -86,7 +86,7 @@ bc. <txp:if_variable name="foo" value="example.com/bar/baz">
     ...do this...
 </txp:if_variable>
 
-The conditional is saying if there is a variable named 'foo' having a specific value of 'example.com/bar/baz', then output what is defined, i.e., 'do this'.
+The conditional is saying if there is a variable named 'foo' having a specific value of 'example.com/bar/baz', then output what is defined, i.e. 'do this'.
 
 Other tags used: "if_variable":if-variable.
 

@@ -38,7 +38,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 HTML @class@ to apply to the @wraptag@ attribute value.
 Default: unset (see [[class cross-reference]]).
 * @wraptag="element"@
-HTML tag to wrap around category text, specified without brackets (e.g., @wraptag="p"@).
+HTML tag to wrap around category text, specified without brackets (e.g. @wraptag="p"@).
 Default: unset.
 
 h2(#sec3). Examples

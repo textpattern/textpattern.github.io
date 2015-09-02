@@ -27,16 +27,16 @@ h2(#sec2). Attributes
 Tag will accept the following attributes (*case-sensitive*):
 
 * @category="category name"@
-Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories page]] to ensure you are using the correct names.
+Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitised for URL use. Check the [[Categories administration panel]] to ensure you are using the correct names.
 Values: (comma separated list of) category name(s).
 Default: unset, retrieves from all categories.
 * @limit="integer"@
 The number of articles to display.
 Default: @10@.
 * @no_widow="boolean"@
-Control "widows":http://en.wikipedia.org/wiki/Widows_and_orphans and overrule 'widows' setting in the [[Preferences page]].
-Values: @0@ allow the last word in the title to appear on its own line, i.e. the title content is rendered unchanged, @1@ ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
-Default: as set in the [[Preferences page]].
+Control "widows":http://en.wikipedia.org/wiki/Widows_and_orphans and overrule 'widows' setting in the [[Preferences administration panel]].
+Values: @0@ allow the last word in the title to appear on its own line, i.e.,the title content is rendered unchanged, @1@ ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
+Default: as set in the [[Preferences administration panel]].
 * @offset="integer"@
 The number of articles to skip.
 Default: @0@.
@@ -70,7 +70,7 @@ h3. Common presentational attributes
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
 * @break="value"@
-Where value is an HTML element, specified without brackets (e.g., @break="li"@) or some string to separate list items.
+Where value is an HTML element, specified without brackets (e.g. @break="li"@) or some string to separate list items.
 Default: @br@ (but see [[break cross-reference]] for exceptions).
 * @class="class name"@
 HTML @class@ to apply to the @wraptag@ attribute value.
@@ -79,10 +79,10 @@ Default: tag name or unset (see [[class cross-reference]]).
 Label prepended to item.
 Default: unset (but see [[label cross-reference]] for exceptions).
 * @labeltag="element"@
-HTML element to wrap (markup) label, specified without brackets (e.g., labeltag="h3").
+HTML element to wrap (markup) label, specified without brackets (e.g. labeltag="h3").
 Default: unset.
 * @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
+HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec3). Examples

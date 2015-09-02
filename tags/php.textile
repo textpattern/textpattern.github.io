@@ -25,7 +25,7 @@ bc. <txp:php>
     // Code goes here...
 </txp:php>
 
-Control over where this tag is allowed to appear (i.e., the privileges required to allow it to appear in pages and forms) are governed by settings in the [[Preferences page]].
+Control over where this tag is allowed to appear (i.e. the privileges required to allow it to appear in pages and forms) are governed by settings in the [[Preferences administration panel]].
 
 h2(#sec2). Attributes
 
@@ -37,7 +37,7 @@ h3. Using PHP inside of an article
 
 When inserting markup or PHP into the content boxes of a Textpattern article:
 
-# Don’t include the usual PHP delineations: i.e., @<?php ... ?>@.
+# Don’t include the usual PHP delineations: i.e. @<?php ... ?>@.
 # Use PHP as you would use normal PHP, not interspersed with markup. For example, inside the PHP tags, use PHP's echo command to output HTML, rather than writing HTML directly.
 # Surround the code with both the special @<notextile>@ tag and Textpattern @<txp:php>@ tag to *disable Textile* parsing:
 
@@ -53,7 +53,7 @@ All Textpattern tags have equivalent programmatic names which are _exactly_ the 
 
 h3. Arrays must be passed to all functions
 
-You must pass an array to all tag functions, even if there are no attributes to set. For tags that require no attributes or those that you do not wish to modify the defaults, pass an empty array, e.g., @category1(array());@.
+You must pass an array to all tag functions, even if there are no attributes to set. For tags that require no attributes or those that you do not wish to modify the defaults, pass an empty array, e.g. @category1(array());@.
 
 h2(#sec3). Examples
 

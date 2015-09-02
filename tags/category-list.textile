@@ -36,7 +36,7 @@ Comma-separated list of categories to include, displayed in the order specified 
 Default: unset (all categories).
 * @children="boolean"@
 Can limit the list depth to one level below the parent category.
-Values: @0@ (no children, i.e. only show one level below the parent) or @1@ (show all nested categories).
+Values: @0@ (no children, i.e.,only show one level below the parent) or @1@ (show all nested categories).
 Default: @1@.
 * @exclude="category name(s)"@
 List of category names which will be excluded from the list. @categories@ takes precendence over @exclude@.
@@ -83,7 +83,7 @@ h3. Common presentational attributes
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
 * @break="value"@
-Where value is an HTML element, specified without brackets (e.g., @break="li"@) or some string to separate list items.
+Where value is an HTML element, specified without brackets (e.g. @break="li"@) or some string to separate list items.
 Default: @br@ (but see [[break cross-reference]] for exceptions).
 * @class="class name"@
 HTML @class@ to apply to the @wraptag@ attribute value.
@@ -92,10 +92,10 @@ Default: tag name or unset (see [[class cross-reference]]).
 Label prepended to item.
 Default: unset (but see [[label cross-reference]] for exceptions).
 * @labeltag="element"@
-HTML element to wrap (markup) label, specified without brackets (e.g., labeltag="h3").
+HTML element to wrap (markup) label, specified without brackets (e.g. labeltag="h3").
 Default: unset.
 * @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
+HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2(#sec3). Examples

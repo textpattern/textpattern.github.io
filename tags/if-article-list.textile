@@ -26,7 +26,7 @@ bc. <txp:if_article_list>
     ...conditional statement...
 </txp:if_article_list>
 
-The tag will execute the contained statement if an article list is being displayed (i.e. not showing an individual article).
+The tag will execute the contained statement if an article list is being displayed (i.e.,not showing an individual article).
 
 h2(#sec2). Attributes
 

@@ -32,7 +32,7 @@ This is equivalent to putting the contained statements into a form named 'my_for
 
 The tag is context-sensitive, which means it will grab articles from the currently viewed section/category/author, etc.
 
-When used on the front page, article's context will include articles from all sections set to display via 'Section appears on front page?' settings (see the [[Sections page]] for more information).
+When used on the front page, article's context will include articles from all sections set to display via 'Section appears on front page?' settings (see the [[Sections administration panel]] for more information).
 
 p(alert-block information). @<txp:article />@ is *not* the same as @<txp:article_custom />@ - you can "check out the differences of that tag":article-custom if you're unsure of the differences!
 
@@ -71,7 +71,7 @@ Do the article count, but do not display anything. Used when you want to show a 
 Values: @0@ (no) or @1@ (yes).
 Default: @0@.
 * @searchall="boolean"@
-When outputting search results, include only those articles with 'Include in site search' set on the [[Sections page]]. If set to @0@, only articles in the current section are displayed. See [[Fixing search results]] for more.
+When outputting search results, include only those articles with 'Include in site search' set on the [[Sections administration panel]]. If set to @0@, only articles in the current section are displayed. See [[Fixing search results]] for more.
 Values: @0@ (no) or @1@ (yes).
 Default: @1@.
 * @searchform="form name"@
@@ -118,7 +118,7 @@ h3. Common presentational attributes
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
 * @break="value"@
-Where value is an HTML element, specified without brackets (e.g., @break="li"@) or some string to separate list items.
+Where value is an HTML element, specified without brackets (e.g. @break="li"@) or some string to separate list items.
 Default: @br@ (but see [[break cross-reference]] for exceptions).
 * @class="class name"@
 HTML @class@ to apply to the @wraptag@ attribute value.
@@ -127,15 +127,15 @@ Default: tag name or unset (see [[class cross-reference]]).
 Label prepended to item.
 Default: unset (but see [[label cross-reference]] for exceptions).
 * @labeltag="element"@
-HTML element to wrap (markup) label, specified without brackets (e.g., labeltag="h3").
+HTML element to wrap (markup) label, specified without brackets (e.g. labeltag="h3").
 Default: unset.
 * @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g., @wraptag="ul"@).
+HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
 Default: unset (but see [[wraptag cross-reference]] for exceptions).
 
 h2. Note on 'article list' vs. 'individual article' context
 
-The *article* tag is context-sensitive. It will produce different results depending on whether the page being viewed is an article list or an individual article. Article-list context includes the default (home) page, section front pages, and category pages. Individual-article context applies on an article page (i.e., a page with a URL like @http://example.com/archives/24/my-article@).
+The *article* tag is context-sensitive. It will produce different results depending on whether the page being viewed is an article list or an individual article. Article-list context includes the default (home) page, section front pages, and category pages. Individual-article context applies on an article page (i.e. a page with a URL like @http://example.com/archives/24/my-article@).
 
 h2(#sec3). Examples
 
@@ -145,7 +145,7 @@ Here is the *article* tag responsible for the main content of the home page on a
 
 bc. <txp:article limit="5" />
 
-Calls the @default@ article form, which may contain any variation of article output you want to create. The @default@ form cannot be deleted; it is the form you see on first viewing the [[Forms page]].
+Calls the @default@ article form, which may contain any variation of article output you want to create. The @default@ form cannot be deleted; it is the form you see on first viewing the [[Forms administration panel]].
 
 Uses the @limit@ attribute to specify the maximum number of articles displayed in article list context (if not specified, this defaults to @10@).
 
@@ -165,7 +165,7 @@ Continuing from the previous examples:
 
 bc. <txp:article listform="article_listing" limit="5" offset="2" />
 
-Here we include the @offset@ attribute to offset article display by @2@ articles. This means the five articles that will be displayed (i.e., @limit="5"@) in article list context will begin with the third most recent article published in the site (the offset will not be applied in individual article context).
+Here we include the @offset@ attribute to offset article display by @2@ articles. This means the five articles that will be displayed (i.e. @limit="5"@) in article list context will begin with the third most recent article published in the site (the offset will not be applied in individual article context).
 
 Why might you do it? Offsetting articles is useful in situations where the most recent article(s) are already accessible in some way and you don't want them appearing again in normal article flow.
 
@@ -201,7 +201,7 @@ bc. <txp:article sort="AuthorID asc, Posted desc" />
 
 Uses the @sort@ attribute to define values by which to order article output. In this case two values are declared. @AuthorID asc@ first orders articles alphabetically by author names, then @Posted desc@ orders them by date published (@desc@ meaning newest to oldest).
 
-Why might you do it? Sorting is a powerful way to group articles (e.g., by author), and/or give priority to articles most recently published (typically better for your website visitors).
+Why might you do it? Sorting is a powerful way to group articles (e.g. by author), and/or give priority to articles most recently published (typically better for your website visitors).
 
 h2(#sec4). Genealogy
 
