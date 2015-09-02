@@ -1,3 +1,5 @@
+[todo: needs to be marged with perferences doc - no advanced prefs panel in Textpattern 4.6]
+
 \n"mininav_admin_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:advanced-prefs.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:advanced-prefs.png
