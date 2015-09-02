@@ -82,7 +82,7 @@ h3(sectionedit2#htaccess_method_1). .htaccess Method 1
 
 These rules work by denying everything except what is needed for normal operation.
 
-Create an .htaccess file in the root of the _textpattern_ directory (i.e., _../textpattern_/), and add the following rewrite rules.
+Create an .htaccess file in the root of the _textpattern_ directory (i.e. _../textpattern_/), and add the following rewrite rules.
 
 bc. <IfModule mod_rewrite.c>
  RewriteEngine On

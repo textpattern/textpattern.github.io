@@ -289,7 +289,7 @@ These callbacks allow you to alter the criteria used in the various panels. You 
 
 Note the criteria is _appended_, so existing search parameters are honoured. Therefore your returned statement should begin with @" AND ..."@. If you wish to ignore any previous filtering, begin @" AND 1 AND ..."@.
 
-The third argument to your callback function contains the current criteria used so you may make decisions based on its contents (e.g., you may not want to filter the results if a search has been performed).
+The third argument to your callback function contains the current criteria used so you may make decisions based on its contents (e.g. you may not want to filter the results if a search has been performed).
 
 These callbacks all have the same @$event@ (= @admin_criteria@).
 
@@ -428,7 +428,7 @@ h4. __include/txp_image.php__
 
 [todo:intro para about what this callback is concerned with]
 
-For the **"Images":http://docs.textpattern.io/administration/content/images-panel** panel. These callbacks have a single @$event@ (i.e., @image_ui@).
+For the **"Images":http://docs.textpattern.io/administration/content/images-panel** panel. These callbacks have a single @$event@ (i.e. @image_ui@).
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -548,7 +548,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 	
 |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | admin_side | footer | Replaces the standard @end_page@ footer with something of your choosing. Theme authors do this by writing a @footer()@ function in their theme's PHP file. There is no spoon. | - |
-| some_event_ui | upload_form | Alters or replaces Textpattern's standard upload forms throughout the admin side. @some_event@ is the name of the event on the panel upon which the input form appears (e.g. on the **Files** panel, the event is @file@ so the @pluggable_ui()@ event name is @file_ui@). | Argument #4 contains the remainder of the arguments to the @upload_form()@ function (i.e., 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class'). |
+| some_event_ui | upload_form | Alters or replaces Textpattern's standard upload forms throughout the admin side. @some_event@ is the name of the event on the panel upon which the input form appears (e.g. on the **Files** panel, the event is @file@ so the @pluggable_ui()@ event name is @file_ui@). | Argument #4 contains the remainder of the arguments to the @upload_form()@ function (i.e. 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class'). |
 
 notextile. </div>
 
@@ -584,7 +584,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | @sanitize_for_url@ | - | At start of the @sanitizeForUrl()@ function. | Apply your own URL sanitization rules; passes the text to be sanitized as the callback's 4th argument. |
 | @sanitize_for_file@ | - | At start of the @sanitizeForUrl()@ function. | Apply your own filename sanitization rules; passes the text to be sanitized as the callback's 4th argument. |
 | @sanitize_for_page@ | - | At start of the @sanitizeForUrl()@ function. | Apply your own page name sanitization rules; passes the text to be sanitized as the callback's 4th argument. |
-| @txp_die@ | @http_status_code@ | Once the page's HTTP status has been determined. | Passes the numerical HTTP status code as the callback's _step_ (e.g., @410@, @301@, etc) allowing you to target particular status codes and take action. |
+| @txp_die@ | @http_status_code@ | Once the page's HTTP status has been determined. | Passes the numerical HTTP status code as the callback's _step_ (e.g. @410@, @301@, etc) allowing you to target particular status codes and take action. |
 
 notextile. </div>
 

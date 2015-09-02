@@ -16,7 +16,7 @@ The middle column of the Write panel is where the base creating, drafting and ed
 
 h4(#title). Title
 
-This field is simply where you type the _title_ (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e., HTML or Textile, formatting will be added by an article form (see "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms). The Textpattern tag that is used to output the title of articles is
+This field is simply where you type the _title_ (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e. HTML or Textile, formatting will be added by an article form (see "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms). The Textpattern tag that is used to output the title of articles is
 
 bc. <txp:title />
 

@@ -32,7 +32,7 @@ bc. bash
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:svn_txd_ssh_fig02.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:svn_txd_ssh_fig02.gif *Figure 2: The PuTTY Configuration window*
 
-# In the top section of the _PuTTY Configuration_ window where it reads _Specify your connection by host name or IP address_, you can type in either your servername at TextDrive (i.e., _servername.textdrive.com_) or use the TextDrive server "IP":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#ip address (you should have received this when you received your initial email from TextDrive about account setup information). Make sure the _SSH_ radio button is selected and then click the _Open_ button at the bottom of the window.
+# In the top section of the _PuTTY Configuration_ window where it reads _Specify your connection by host name or IP address_, you can type in either your servername at TextDrive (i.e. _servername.textdrive.com_) or use the TextDrive server "IP":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#ip address (you should have received this when you received your initial email from TextDrive about account setup information). Make sure the _SSH_ radio button is selected and then click the _Open_ button at the bottom of the window.
 
 *Note:* you will get a PuTTY security alert saying that the server's rsa2 key fingerprint is not recognized in your registry, and you will be be asked what to do. You have to either say Yes or No to do anything at all; saying Yes will add the key to your saved  -  and assumingly trusted  -  connections where it will remain next time, saying No will use the key to connect to the server but only for this session. You can say “Yes” if you are certain your IP is correct. A PuTTY command window will become active (see Figure 3 below). "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:svn_txd_ssh_fig03.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:svn_txd_ssh_fig03.gif *Figure 3: The PuTTY command-line window showing login prompt.*
 
@@ -123,7 +123,7 @@ If that does not work for some reason, then you may need to open up a _Secure Fi
 # Handling the _.htaccess_ File:
 ## Check to see if you even have the _.htaccess_ file in your install location. Because using the “ls” command will not reveal your _.htaccess_ file in the SSH client, you will need to open an SFTP client and look at the directory contents that way.
 ## If you don't see the _.htaccess_ file, you'll need to retrieve it from the source location using SFTP.
-## Finally, if your old _.htaccess_ file had custom modifications you want to retain (e.g., custom _mod_rewrite_), you will need to copy and paste those customizations from your old file to the *top* of the new one without overwriting the contents of the new files.
+## Finally, if your old _.htaccess_ file had custom modifications you want to retain (e.g. custom _mod_rewrite_), you will need to copy and paste those customizations from your old file to the *top* of the new one without overwriting the contents of the new files.
 
 Once these files are in place you are then ready to initialize your new Textpattern site.
 

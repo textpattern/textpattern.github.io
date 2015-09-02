@@ -24,7 +24,7 @@ h4(#styles). Styles
 
 "styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles are the CSS style sheets that define the presentational layer of your web content. Like Pages, Styles are associated to Sections. A single Style can be associated to all Sections you create, or each Section can have it's own Style, depending on your website design objectives.
 
-*Note:* Like all building blocks described on this page, Textpattern manages Styles in the database by default, not as files on the web server. However, you are not forced to manage your style sheets this way. E.g., you could still set a default Style to a given Section, but then inside that Style use only
+*Note:* Like all building blocks described on this page, Textpattern manages Styles in the database by default, not as files on the web server. However, you are not forced to manage your style sheets this way. e.g. you could still set a default Style to a given Section, but then inside that Style use only
 
 bc. @import url("../path/to/file.css");
 

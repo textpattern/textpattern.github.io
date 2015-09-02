@@ -1,11 +1,11 @@
 ﻿Editorial Style Guide
 
-for  
+for
 
 Textpattern CMS User Documentation
 
 
-Edited by 
+Edited by
 Destry Wion, http://wion.com
 
 
@@ -66,9 +66,9 @@ Brand
 How to refer to Textpattern CMS in documentation.
 Brand usage
 While "Textpattern CMS" is the full name, it’s not necessary to write "CMS" every time when referring to the system in copy. As long as the full name is used clearly in leading content of a site, you can simply use "Textpattern" everywhere else.
-Currently, user documentation uses the full spelling in the tagline, which is prominently positioned at the top of the site. It reads, "Textpattern CMS is free, and so are you to help document it." 
+Currently, user documentation uses the full spelling in the tagline, which is prominently positioned at the top of the site. It reads, "Textpattern CMS is free, and so are you to help document it."
 Textpattern spelling
-"Textpattern" is one word and the "p" is always lowercase. 
+"Textpattern" is one word and the "p" is always lowercase.
 Correct → Textpattern
 Never use camel-case or spell it as two words.
 Wrong → TextPattern
@@ -84,19 +84,19 @@ Link labels for Textpattern websites
 Refer to Textpattern locations by their actual name. Ensure site names are capitalised and used consistently.
 
 
-* Wiki (textpattern.net): Use "Textpattern CMS Documentation". 
+* Wiki (textpattern.net): Use "Textpattern CMS Documentation".
 For example...
 This style guide should be used when adding and editing content in the Textpattern CMS Documentation.
-* Forum (forum.textpattern.com): Use "Textpattern CMS Support Forum". 
+* Forum (forum.textpattern.com): Use "Textpattern CMS Support Forum".
 For example...
 If all else fails, post your question in the Textpattern CMS Support Forum.
-* Dev blog (textpattern.com/weblog): Use "Textpattern CMS Blog". 
+* Dev blog (textpattern.com/weblog): Use "Textpattern CMS Blog".
 For example...
 Follow the feed of the Textpattern CMS Blog to get development news from the horses mouth.
-* Plugins (textpattern.org): Use "Textpattern CMS Plugins". 
+* Plugins (textpattern.org): Use "Textpattern CMS Plugins".
 For example...
 Extending Textpattern is done rather easily using plugins, which you can search for at—and download from—the Textpattern CMS Plugins site.
-* Themes (textgarden.org): Use "Textpattern CMS Themes". 
+* Themes (textgarden.org): Use "Textpattern CMS Themes".
 For example...
 A variety of themes, both front-side and admin-side, are freely available at  Textpattern CMS Themes site.
 
@@ -124,9 +124,9 @@ Not recommended → The link label reads “see more”, but see more of what?
 (Quotations marks enlarged here for readability.)
 Serial commas
 The serial comma is probably the most debated grammatical convention ever, but when it comes down to it, serial comma's only need to be used when doing so clarifies the intended meaning of a given phrase. That means a judgement call needs made every time. Chances are good that the more complex your phrase structure, the more likely you'll need a serial comma.
-An example where a serial comma is not needed... 
+An example where a serial comma is not needed...
 Separating content, presentation and behaviour is always a smart thing to do.
-An example where a serial comma is needed (in this case to show that "macaroni and cheese" is a single preparation)... 
+An example where a serial comma is needed (in this case to show that "macaroni and cheese" is a single preparation)...
 Today’s lunch special includes meatloaf, macaroni and cheese, and green beans.
 Exclamation points (!)
 Do not use these in normal copy unless absolutely necessary. Nobody likes to be shouted at, unless you’re saying Ka-pow!
@@ -134,14 +134,14 @@ The exception is if the exclamation mark is needed in a code example.
 Spacing post punctuation
 Use a single space following a period, semi-colon, colon, question mark, and an exclamation mark.
 Foreign terms and expressions
-Do not use foreign language words and expressions in the English copy. 
-Foreign terms in localised documentation are unnecessary, and the wiki already has content translation efforts in progress. Use the English language simply and concisely and it will be easier for translators of all languages to understand and translate your text. 
+Do not use foreign language words and expressions in the English copy.
+Foreign terms in localised documentation are unnecessary, and the wiki already has content translation efforts in progress. Use the English language simply and concisely and it will be easier for translators of all languages to understand and translate your text.
 Latin expressions
-Latin should be avoided except for common abbreviated expressions like e.g., i.e., etc., et cetera, lorem ipsum, and so forth. Always italicise Latin, including abbreviations.
+Latin should be avoided except for common abbreviated expressions like e.g., i.e., etc., et cetera, lorem ipsum, and so forth. Always italicise Latin, including abbreviations. When using e.g. and i.e. the British English convention should be adhered to (there should be no comma after these abbreviations).
 Point of view (personal pronouns)
 Only write in the second person point of view, using second person pronouns.
 Correct → you, your, yours
-An example of doing it right: 
+An example of doing it right:
 "If you want to put your site under subversion but are not comfortable using the command-line, you might try a desktop client like TortoiseSVN for Windows or Versions for Mac."
 Do not write in the first or third person point of view, regardless of whether the pronouns are normative, objective, or possessive. (Remember, there are many contributing authors to the user documentation. The wiki is not your personal website. Don’t talk to readers as if it is.)
 Wrong → 1st person: I, we … me, us … my, mine, our, ours
@@ -159,7 +159,7 @@ Topic density
 Avoid having too many topics on a single page.
 Capitalisation
 Mainly titles, headings, navigation links, etc. are the issue with capitalisation. Most important is to be consistent, and sentence-case headings are more effective in this respect.
-The logic of using sentence-case for consistency is especially apparent when one in a series of headings is written as a question. 
+The logic of using sentence-case for consistency is especially apparent when one in a series of headings is written as a question.
 Correct → Why use the text editor?
 So it makes sense to use sentence-case for non-question headings too.
 Correct → How to use the tab builder
@@ -180,10 +180,10 @@ Do not use ampersands in place of the conjunction "and". However, if they used f
 <p>Sanford &amp; Sons Inc.</p>
 Note: The p element used here is arbitrary.
 Links
-Keep links in body copy to a minimum. Ensure links that are used are focused on calls to action (e.g., "Download") and/or contextual integration of different topic pages (e.g., links between different pages in wiki documentation). Only link to third-party websites if doing so aides the user in completing a Textpattern-related task.
+Keep links in body copy to a minimum. Ensure links that are used are focused on calls to action (e.g. "Download") and/or contextual integration of different topic pages (e.g. links between different pages in wiki documentation). Only link to third-party websites if doing so aides the user in completing a Textpattern-related task.
 Terminology
 Textpattern terms as admin-side panel and link references
-When using the name of any admin-side panel to mean the location of that panel, it should always be a non-italicised link to the given wiki page it's referring to, and the link should only be on the word itself. I.e., the link text should be the same as the name of the wiki page it's pointing to.
+When using the name of any admin-side panel to mean the location of that panel, it should always be a non-italicised link to the given wiki page it's referring to, and the link should only be on the word itself. i.e. the link text should be the same as the name of the wiki page it's pointing to.
 Correct → Most of your content is created in the Write panel.
 Wrong → Most of your content is created in the Write panel.
 Wrong → Most of your content is created in the Write panel.
@@ -199,7 +199,7 @@ Wrong → All Textpattern Sections must have a Page and Style associated to it.
         (Because it suggests the context of an non-linked panel, which shouldn't exist.)
 Wrong → All Textpattern Sections must have a page and style associated to it.
         (Because it lacks capitalisation as used in Textpattern's UI.)
-        
+
 Wrong → All Textpattern Sections must have a page and style associated to it.
         (Because there is no distinction from any other context.)
 Non-Textpattern terminology

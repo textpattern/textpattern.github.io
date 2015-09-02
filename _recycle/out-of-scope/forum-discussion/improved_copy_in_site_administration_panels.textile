@@ -18,7 +18,7 @@ A few generall edits needing checked across the board:
 
 # Tabs could be capitalized. Done!
 # Title-style capitalizations need to be made to all headers and widget labels consistantly. Right now it's all over the place.
-# Any widget label that requires a Yes/No responsde (e.g., with radio buttons) needs to have a question mark added to the end of the question. Right now most do many there's still many that do not.
+# Any widget label that requires a Yes/No responsde (e.g. with radio buttons) needs to have a question mark added to the end of the question. Right now most do many there's still many that do not.
 
 h3(sectionedit3#preferences_panel). Preferences Panel
 

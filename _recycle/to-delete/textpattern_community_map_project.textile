@@ -30,7 +30,7 @@ Whether represented graphically or as plain text the main content categories are
 
 * Documentation
 * Development
-* Design (e.g., TextGarden)
+* Design (e.g. TextGarden)
 * Community (e.g. TxPMag)
 
 h3(sectionedit3#possible_configuration). Possible Configuration

@@ -63,7 +63,7 @@ h3(sectionedit7#managing_content). Managing content
 
 h3(sectionedit8#extending_with_plugins). Extending with plugins
 
-[Plugins, Extensions, etc] (highlight some popular plugins used in relation to the topics already covered; e.g., discussion of smd_bio/smd_user_manager in relation of user accounts)
+[Plugins, Extensions, etc] (highlight some popular plugins used in relation to the topics already covered; e.g. discussion of smd_bio/smd_user_manager in relation of user accounts)
 
 h3(sectionedit9#monitoring_referrers). Monitoring referrers
 

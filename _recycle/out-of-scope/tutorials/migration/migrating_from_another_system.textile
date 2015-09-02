@@ -18,7 +18,7 @@ Upload all of your images and other media files to your new server. To make thin
 
 h4(#stylesheets). Stylesheets
 
-By default, Textpattern doesn't use CSS files stored on the server, instead the information is stored in the database using the "styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles panel in the admin interface. You don't have to manage your stylesheets with Textpattern, and depending on your use of stylesheets you may not be able to completely (e.g., if you have multiple stylesheets for one page), but your encouraged to use this method if convenient (it makes things easy).
+By default, Textpattern doesn't use CSS files stored on the server, instead the information is stored in the database using the "styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles panel in the admin interface. You don't have to manage your stylesheets with Textpattern, and depending on your use of stylesheets you may not be able to completely (e.g. if you have multiple stylesheets for one page), but your encouraged to use this method if convenient (it makes things easy).
 
 h4(#tags). Tags
 

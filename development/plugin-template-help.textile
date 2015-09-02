@@ -52,7 +52,7 @@ h2(#sect4). Speedy development
 
 It speeds up development tremendously if you do the following:
 
-# Make sure plugin name and plugin filename correspond; e.g., **zem_test** should be in __zem_test.php__.
+# Make sure plugin name and plugin filename correspond; e.g. **zem_test** should be in __zem_test.php__.
 # Create a directory, __/full/path/dev/plugins__.
 # Drop your uncompiled plugins in that directory. Do not put __zem_tpl.php__ in the same directory.
 # In the **Advanced preferences** panel of the admin-side, set plugin cache directory to __/full/path/dev/plugins__.

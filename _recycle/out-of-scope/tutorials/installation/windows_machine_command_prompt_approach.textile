@@ -15,7 +15,7 @@ h4(#setup_instructions). Setup Instructions
 
 # Download "wget":http://allserv.ugent.be/~bpuype/wget/#download for Windows.
 # Save wget to the WINDOWS folder. Saving to this folder makes wget a LOT easier to use, and won't harm your Windows system by being there.
-# Create a folder where you'd like to save Textpattern (e.g., a folder on your desktop named “_txp_”).
+# Create a folder where you'd like to save Textpattern (e.g. a folder on your desktop named “_txp_”).
 
 h4(#manual_instructions). Manual Instructions
 

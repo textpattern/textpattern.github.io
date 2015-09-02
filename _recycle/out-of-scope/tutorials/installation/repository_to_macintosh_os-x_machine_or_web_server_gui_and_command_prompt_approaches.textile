@@ -2,7 +2,7 @@
 
 h3(sectionedit1#overview). Overview
 
-(a little overview here; e.g., how the nice Mac provides SVN cababilities built-in, etc or whatever...if an overview isn't needed, delete this section altogether)
+(a little overview here; e.g. how the nice Mac provides SVN cababilities built-in, etc or whatever...if an overview isn't needed, delete this section altogether)
 
 h4(#graphical_user_interface_svn_approach). Graphical User Interface (SVN Approach)
 

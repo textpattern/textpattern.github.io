@@ -1,6 +1,6 @@
 \nLike tag names, we'll have a big obvious identifier here: *smd_macro v n.n*
 
-Then this summary paragraph, describing what type of plugin it is (front vs. admin), what function/area it relates with (e.g., navigation, images, Write panel, etc.), and what the plugin can essentially do. Very similar to how you would lead off a new plugin thread in the forum.
+Then this summary paragraph, describing what type of plugin it is (front vs. admin), what function/area it relates with (e.g. navigation, images, Write panel, etc.), and what the plugin can essentially do. Very similar to how you would lead off a new plugin thread in the forum.
 
 h3(sectionedit1#quick_use). Quick use
 

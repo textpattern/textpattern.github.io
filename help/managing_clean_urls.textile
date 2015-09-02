@@ -2,7 +2,7 @@
 
 "warning":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=warning
 
-These instructions are specifically for version 1.0. If you're working on any earlier version of Textpattern (e.g., rc1) and you want clean URLs but are having trouble, then use the information available in the "Textpattern Forum":http://forum.textpattern.com (it's spread all over, but it's there); we are only concerned with v 1.0 here.
+These instructions are specifically for version 1.0. If you're working on any earlier version of Textpattern (e.g. rc1) and you want clean URLs but are having trouble, then use the information available in the "Textpattern Forum":http://forum.textpattern.com (it's spread all over, but it's there); we are only concerned with v 1.0 here.
 
 You do not have to use clean URLs, they are just better for your site visitors if you do because they provide them with more orientation cues while browsing (navigating) your site. If you do not care about site usability then you can go with "Messy URLs":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#messy_urls, simply select the “*?=messy*” option in the Permanent Link Mode drop-down box in the "basic_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences panel and forget about the rest of these instructions.
 

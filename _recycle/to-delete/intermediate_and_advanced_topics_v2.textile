@@ -5,7 +5,7 @@
 h3(sectionedit1#upgrades_and_post-upgrade_configurations). Upgrades and Post-Upgrade Configurations
 
 * "upgrading_to_a_new_version":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_to_a_new_version
-* "updating_to_a_new_revision":/home/www/zendstudio/dokuwiki/bin/doku.php?id=updating_to_a_new_revision (i.e., a new build of the latest release)
+* "updating_to_a_new_revision":/home/www/zendstudio/dokuwiki/bin/doku.php?id=updating_to_a_new_revision (i.e. a new build of the latest release)
 * "downgrading_to_an_older_stable_release":/home/www/zendstudio/dokuwiki/bin/doku.php?id=downgrading_to_an_older_stable_release
 * "post_installation_upgrading_updating_suggestions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=post_installation_upgrading_updating_suggestions
 * "managing_clean_urls":/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls

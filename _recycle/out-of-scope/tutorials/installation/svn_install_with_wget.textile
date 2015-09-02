@@ -16,7 +16,7 @@ h3(sectionedit1#setup_instructions). Setup Instructions
 
 h3(sectionedit2#manual_instructions). Manual Instructions
 
-# Create a folder where you'd like to save Textpattern (e.g., a folder on your desktop named “txp”).
+# Create a folder where you'd like to save Textpattern (e.g. a folder on your desktop named “txp”).
 
 # Follow _Start &gt; Run_. If you're on WinXP type *cmd*; otherwise, type *command* (WinXP doesn't seem to like long filenames in command). Click _OK_. You should now have your little command prompt window open.
 

@@ -69,7 +69,7 @@ bc. svn checkout <__yamdwe_nowiki>0</__yamdwe_nowiki>textpattern.googlecode.com/
 </li>
 </ul>
 
-Alternatively, you may install Textpattern without moving into the desired directory first (i.e., combine steps 2 and 3 together), by running the command:
+Alternatively, you may install Textpattern without moving into the desired directory first (i.e. combine steps 2 and 3 together), by running the command:
 
 bc. svn checkout http://textpattern.googlecode.com/svn/releases/{{Txp current version}}/source /my/textpattern/directory/
 

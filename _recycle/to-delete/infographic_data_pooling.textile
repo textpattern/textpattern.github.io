@@ -18,7 +18,7 @@ More interesting comparisons might be with MODx, ExpressionEngine, ProcessWire, 
 
 h4(#textpattern_user_geography). Textpattern user geography
 
-At the very least this means a geographical location (e.g., city, country) for each Textpattern user (thus a concentration value per location).
+At the very least this means a geographical location (e.g. city, country) for each Textpattern user (thus a concentration value per location).
 
 h4(#your_idea_here). Your idea here
 

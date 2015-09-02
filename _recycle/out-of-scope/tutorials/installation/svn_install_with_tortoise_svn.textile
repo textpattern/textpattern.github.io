@@ -1,4 +1,4 @@
-\nThese instructions describe how to get the latest Textpattern sourcecode from the "Subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#subversion repository to your Windows machine using a graphical user interface application called TortoiseSVN. After that you can transfer the Textpattern package to your Web server using whatever normal means you use (e.g., FTP, SFTP, etc.), or simply use the intallation on your local machine.
+\nThese instructions describe how to get the latest Textpattern sourcecode from the "Subversion":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#subversion repository to your Windows machine using a graphical user interface application called TortoiseSVN. After that you can transfer the Textpattern package to your Web server using whatever normal means you use (e.g. FTP, SFTP, etc.), or simply use the intallation on your local machine.
 
 h3(sectionedit1#the_process). The Process
 

@@ -103,7 +103,7 @@ Here is a guide for how it should look:
 * MySQL password: *_databasePassword_*
 * MySQL server: *_localhost_* (If “localhost” does not work, check with your host provider about what to use.)
 * MySQL database: *_yourhostID_datbaseName_*
-* Table prefix: *_prefix__* (e.g., _txp__, _txp2__, _cats__, _whatever__)
+* Table prefix: *_prefix__* (e.g. _txp__, _txp2__, _cats__, _whatever__)
 
 The Textpattern setup screen will indicate that you don't need to provide a table prefix if this will be your only installation of Textpattern. It is advised that you create a prefix anyway. You might not need a second installation of Textpattern right now, but you might want to have one at a later point in time, and providing a prefix for this installation enables you to do that later.
 

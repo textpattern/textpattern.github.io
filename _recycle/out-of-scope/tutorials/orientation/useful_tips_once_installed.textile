@@ -25,5 +25,5 @@ h5(#backing-up_your_mysql_database). Backing-up Your MySQL Database
 
 h5(#backing-up_your_installation_files). Backing-up Your Installation Files
 
-Pretty straightforward here; keep a copy of your installation files somewhere safe, especially to any files you end up making changes to (e.g., _.htaccess_, _config.php_, _publish.php_, whatever).
+Pretty straightforward here; keep a copy of your installation files somewhere safe, especially to any files you end up making changes to (e.g. _.htaccess_, _config.php_, _publish.php_, whatever).
 

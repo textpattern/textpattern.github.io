@@ -117,7 +117,7 @@ http {
 
 h3. /etc/nginx/conf.d/example.con.conf
 
-For each virtual host (i.e., each URL under which your Textpattern site should be accessible) you need to define one 'server' block. It is good practice to create one file per domain so you can better keep track of all settings.
+For each virtual host (i.e. each URL under which your Textpattern site should be accessible) you need to define one 'server' block. It is good practice to create one file per domain so you can better keep track of all settings.
 
 Since nginx does not make use of @.htaccess@ files or offer @mod_rewrite@, you will need to use an alternative approach to allow clean URLs. The @try_files@ directive is responsible for clean URLs in this example.
 

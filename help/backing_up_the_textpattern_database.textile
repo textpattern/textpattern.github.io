@@ -2,7 +2,7 @@
 
 This section will describe how to back up your Textpattern installation.
 
-In a nutshell what you will be doing is backing up your current installation (saving your database and installation files on your server or Hard Disk). Regular backups of your Database and Files is highly recommended, especially before making changes (e.g., upgrading to a new release) to your Textpattern installation.
+In a nutshell what you will be doing is backing up your current installation (saving your database and installation files on your server or Hard Disk). Regular backups of your Database and Files is highly recommended, especially before making changes (e.g. upgrading to a new release) to your Textpattern installation.
 
 Below are some way you can back up your Database and Files.
 

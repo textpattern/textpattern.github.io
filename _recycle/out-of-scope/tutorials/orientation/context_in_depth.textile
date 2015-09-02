@@ -5,7 +5,7 @@ h3(sectionedit1#overview). Overview
 h4(#terms_introduced_in_this_article). Terms introduced in this article
 
 ** Context **
- Conditions (i.e., state) affecting the output of Textpattern templates and tags. ** Global context *_or_* \\ ** Page context **
+ Conditions (i.e. state) affecting the output of Textpattern templates and tags. ** Global context *_or_* \\ ** Page context **
  Context provided by the URL. ** Local context *_or_* \\ ** Tag context **
  Context provided by Textpattern tags. ** Context-setting tag **
  Tag that establishes a local context ** Context-sensitive **
@@ -51,7 +51,7 @@ Txp is a typical CMS _(Content Management System)_ in that it stores its content
 
 To Txp, a URL represents not a file request, but a set of conditions. Txp makes many decisions while generating an HTML page, and throughout the process Txp repeatedly refers back to those base conditions. That is, the URL provides the _context_ in which Txp works.
 
-*Developer note:* the term “global” is used throughout this article; unless otherwise noted it is used in its general sense, *not* the PHP sense. I.e., it refers to the state provided by the URL, *not* the state of any particular Txp global variable at a given point.
+*Developer note:* the term “global” is used throughout this article; unless otherwise noted it is used in its general sense, *not* the PHP sense. i.e. it refers to the state provided by the URL, *not* the state of any particular Txp global variable at a given point.
 
 The URL-provided context is a general state that applies throughout the page. In addition to this _global context_ (or _page context_), some Txp tags create their own _local context_ (or _tag context_), potentially overriding some aspects of global context  -  I will call such tags _context setting_. Some Txp tags base their output on the context, whether global or local; this class of tags is called _context sensitive_. For non-context-sensitive tags I will use the term _static tags_. Nearly all Txp tags are either context-setting or context-sensitive; some are both. Finally, there are a few Txp tags that neither affect context nor respond to it.
 
@@ -59,9 +59,9 @@ We can think of a Txp site not as a collection of pages, but as a set of global 
 
 h3(sectionedit3#context_elements). Context elements
 
-Txp offers several URL schemes (i.e., "Permanent Link Modes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences#permanent_link_mode). The basic function of all these schemes is to convert URLs to global contexts. URLs must be unambiguous, i.e., there must be only one global context for a given URL.
+Txp offers several URL schemes (i.e. "Permanent Link Modes":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences#permanent_link_mode). The basic function of all these schemes is to convert URLs to global contexts. URLs must be unambiguous, i.e. there must be only one global context for a given URL.
 
-The reverse need not be true: on most Txp sites there are two URLs for any given global context. That's because most sites aren't set to “messy” mode, but messy URLs work no matter the site's Permanent Link Mode preference. For example, on the author's website, these two URLs lead to the same page, i.e., give the same global context:
+The reverse need not be true: on most Txp sites there are two URLs for any given global context. That's because most sites aren't set to “messy” mode, but messy URLs work no matter the site's Permanent Link Mode preference. For example, on the author's website, these two URLs lead to the same page, i.e. give the same global context:
 
 * "$":http://ipsedixit.net/txp/131/parsing-global-context
 * "$":http://ipsedixit.net/?id=131
@@ -105,12 +105,12 @@ Txp version 4.3.0 introduced new context-related behavior, as my "Txp gallery de
 * "$":http://ipsedixit.net/txp_gallery/category/image/sleep/
 * "$":http://ipsedixit.net/txp_gallery/?c=sleep&context=image
 
-Note: the home page for site above is "$":http://ipsedixit.net/txp_gallery/. I.e., “txp_gallery” is not part of the context.
+Note: the home page for site above is "$":http://ipsedixit.net/txp_gallery/. i.e. “txp_gallery” is not part of the context.
 
 bc. context=image
 
 
-is misleading. The example page does not have _image context_, i.e., the context of a particular image. It has _category context_ (from the
+is misleading. The example page does not have _image context_, i.e. the context of a particular image. It has _category context_ (from the
 
 bc. c
 

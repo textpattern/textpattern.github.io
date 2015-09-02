@@ -16,7 +16,7 @@ h1. Extensions
 
 The **Extensions** region is not a core region you see out-of-the-box. It appears when you add certain plugins that make use of it. Plugins will do this when they provide configurable functionality specific to their design and use.
 
-When you upload such a plugin and activate it, the **Extensions** region appears on all admin-side views _except_ when you're in context of the **Plugins** panel itself. This ensures buggy (e.g., outdated) plugins can be deactivated safely even if the rest of the site manifests problems due to the buggy plugin.
+When you upload such a plugin and activate it, the **Extensions** region appears on all admin-side views _except_ when you're in context of the **Plugins** panel itself. This ensures buggy (e.g. outdated) plugins can be deactivated safely even if the rest of the site manifests problems due to the buggy plugin.
 
 h2. Plugins that use the Extensions region
 

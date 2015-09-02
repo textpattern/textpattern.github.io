@@ -13,7 +13,7 @@ tags:
 
 h1. The @pluggable_ui@ function
 
-The @pluggable_ui@ function was first introduced in Textpattern core in 2009. It's main purpose was to provide additional event>step callback hooks to modify the administration side when it was trickier under the prevailing conditions (i.e., constraints of the hard-coded admin-side templates and limited selector options), and thus could be used in admin-side plugins. The function, however, is now a bit dated, and some say entirely unnecessary for use in plugins. That's because the admin-side templates have evolved considerably since 2009, making the core @register_callback()@ function more effective on it's own. 
+The @pluggable_ui@ function was first introduced in Textpattern core in 2009. It's main purpose was to provide additional event>step callback hooks to modify the administration side when it was trickier under the prevailing conditions (i.e. constraints of the hard-coded admin-side templates and limited selector options), and thus could be used in admin-side plugins. The function, however, is now a bit dated, and some say entirely unnecessary for use in plugins. That's because the admin-side templates have evolved considerably since 2009, making the core @register_callback()@ function more effective on it's own. 
 
 As a result, this information is for historical purposes only. While the @pluggable_ui@ function is in core and usable, you should try to write your admin-side plugins without it. 
 
@@ -38,7 +38,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | 2 | @$step@ | The step of the event for the specific DOM element  you're targeting. |
 | 3 | @$data@ | The default data (content and/or markup); it's used if not modified. |
 | 4 | @$rs@ | The returned 'record set' from the database. |
-| 5 | (value) | The value of a named element (e.g., preference setting), indicated by argument 4. |
+| 5 | (value) | The value of a named element (e.g. preference setting), indicated by argument 4. |
 
 notextile. </div>
 	
@@ -52,7 +52,7 @@ Arguments 3, 4, and 5 are optional depending on what you're trying to do…
 
 **Argument #4**, if applicable, is the _record set_ returned from the database table that pertains to the named _event_.
 
-**Argument #5**, if applicable, is a special case (e.g., when dealing with preference settings) where argument #4 becomes the preference name and argument #5 holds its value.
+**Argument #5**, if applicable, is a special case (e.g. when dealing with preference settings) where argument #4 becomes the preference name and argument #5 holds its value.
 
 h2(#sec4). Callback examples
 

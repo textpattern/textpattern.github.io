@@ -45,7 +45,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | Permanent link mode: | how you've configured your URLs to appear |
 | upload_tmp_dir: | the absolute path of __tmp__ directory on web server |
 | Temporary directory path: | the path of __tmp__ directory relative to web root |
-| Site URL: | your domain and TLD (i.e., domain.tld); corresponds with setting in **"Basic preferences":preferences/basic-prefs-panel** |
+| Site URL: | your domain and TLD (i.e. domain.tld); corresponds with setting in **"Basic preferences":preferences/basic-prefs-panel** |
 | PHP version: | version number of your PHP install |
 | GD Graphics Library: | |
 | Server TZ: | your web server's time zone |
@@ -55,7 +55,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | Time zone: | your time zone in GMT; corresponds with setting in **"Basic preferences":preferences/basic-prefs-panel** |
 | MySQL: | version number and build of your MySQL database server |
 | Locale: | the language and character set you have configured |
-| Server: | web server type (e.g., Apache) |
+| Server: | web server type (e.g. Apache) |
 | PHP server API: | |
 | RFC 2616 headers: | |
 | Server OS: | |

@@ -21,14 +21,14 @@ To use XAMPP you will need:
 h4(#installation_considerations). Installation Considerations
 
 * If you already have a server installed in your local root (e.g. IIS Server, ColdFusion Server, etc.), you will not be able to launch XAMPP after installing it due to a port-binding conflict. The safest (albeit perhaps not the most convenient) solution is to uninstall whatever system/application that is already binding the port. IIS Server is often a common culprit because it's already a part of your PC; so if you have a port-binding conflict, see if you need to "disable IIS Server":http://www.louisville.edu/it/twotier/securexp/IIS.htm on your system. Another option would be to install XAMPP in another drive (such as an external drive) or in a drive partition; anywhere that a port-binding conflict can be avoided while still keeping your other server type installed. Other solutions might exist, but they are not well documented anywhere, and in any case are out of scope here.
-* During installation, or after it is done, you may see your _Windows Firewall_ system indicate that some utilities and/or files are blocked (e.g., the Apache server itself). Again, do not use a local install for production purposes (development only), go ahead and unblock the indicated utilities and/or files.
+* During installation, or after it is done, you may see your _Windows Firewall_ system indicate that some utilities and/or files are blocked (e.g. the Apache server itself). Again, do not use a local install for production purposes (development only), go ahead and unblock the indicated utilities and/or files.
 
 h3(sectionedit2#xampp_installation). XAMPP Installation
 
 # Select the XAMPP _Installer_ package from the "XAMPP for Windows":http://www.apachefriends.org/en/xampp-windows.html download page. You'll be directed to a another Web page offering a number of mirror sites. Pick the one that is closest to your geographic location.
 # As the download process proceeds, you'll be asked to select the install location. As mentioned already, it is assumed here you will be using the XAMPP default, which is your local machine's hard drive so your install path will be *_c:\apachefriends_*.
 
-*Note:* If you have another physical drive location you want to use (e.g., an external drive), you could just change the drive letter and leave the directory name the same (e.g., *_g:\_*_apachefriends_); but, again, we continue here with th assumption it will be *_c:\apachefriends_*.
+*Note:* If you have another physical drive location you want to use (e.g. an external drive), you could just change the drive letter and leave the directory name the same (e.g. *_g:\_*_apachefriends_); but, again, we continue here with th assumption it will be *_c:\apachefriends_*.
 
 # When your installation has finished, you should have two icons on your desktop, one being a _XAMPP Installer Executable_ and one for a _XAMPP Control Panel_. You can delete the _executable_ icon since the Installer already installed XAMPP for you, but keep the control panel icon (Figure 1); you can use it to start and stop the Apache server and MySQL database easily without having to access these utility files in the root directory.
 
@@ -95,7 +95,7 @@ Using open XAMPP page in your browser, click the _Security_ link in the left col
 All of those red “unsecure” readings are not as bad as they appear; here are some things to consider:
 
 * If you are not connected to the Internet, or to a network of local users (e.g. a home network), then you do not need to take steps to make all of the subjects “secure.” You can of course do so anyway, but making the subjects secure requires additional password layers (one for the “apachefriends” directory and one for the MySQL database) which may get tedious to deal with if you work with XAMPP a lot.
-* If you are online (but still only doing development) and have a Windows Firewall running, then you also are reasonably safe and do not need to take steps to make everything secure. However, in this case you should make the following configuration changes in your Windows Firewall, because by default all the XAMPP services and process are added to the firewall as unblocked, i.e., the “_Any computer (including those on the internet)_” is selected as having access to the components:
+* If you are online (but still only doing development) and have a Windows Firewall running, then you also are reasonably safe and do not need to take steps to make everything secure. However, in this case you should make the following configuration changes in your Windows Firewall, because by default all the XAMPP services and process are added to the firewall as unblocked, i.e. the “_Any computer (including those on the internet)_” is selected as having access to the components:
 
 # Go to _Control Panel &gt; Windows Firewall &gt; Exceptions_ (tab).
 # Select a given XAMPP component in the list, then click _Edit_
@@ -215,7 +215,7 @@ bc. <Directory > ... </Directory>
 bc. NameVirtualHost *:80
 
 
-<p>line (described earlier) above each new block of directives you create. For demonstration purposes, let's say you wanted to add all your development sites (e.g., _site1_, _site2_, _site3_, etc.) in your computer's root under a single directory called _MySites_ (i.e.,</p>
+<p>line (described earlier) above each new block of directives you create. For demonstration purposes, let's say you wanted to add all your development sites (e.g. _site1_, _site2_, _site3_, etc.) in your computer's root under a single directory called _MySites_ (i.e.,</p>
 bc. c:\MySites\site1
 
 
@@ -256,7 +256,7 @@ bc. local.site1.com
 bc. .local
 
 
-is added to the local site (domain) name to distinguish the development domain from the real domain online. The idea being that you will eventually transfer your development work to the live location, and you want to ensure your path editing is easy and logical (i.e., you will only have to drop the
+is added to the local site (domain) name to distinguish the development domain from the real domain online. The idea being that you will eventually transfer your development work to the live location, and you want to ensure your path editing is easy and logical (i.e. you will only have to drop the
 
 bc. .local
 
@@ -273,12 +273,12 @@ bc. config.php
 
 file).
 
-For each additional development site you wanted to add (i.e., _site2_, _site3_, etc.) you would add the same block of code above at the bottom of the
+For each additional development site you wanted to add (i.e. _site2_, _site3_, etc.) you would add the same block of code above at the bottom of the
 
 bc. http.conf
 
 
-file, and change the folder name accordingly (i.e., from _site1_ to _site2_, etc.).
+file, and change the folder name accordingly (i.e. from _site1_ to _site2_, etc.).
 
 Save your changes to the
 

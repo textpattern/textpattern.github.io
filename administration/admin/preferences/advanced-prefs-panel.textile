@@ -51,7 +51,7 @@ Leave this empty unless you are using a plugin that requires it, or you are a pl
 
 h5(#smtp_envelope_sender_address). SMTP envelope sender address
 
-This preference should be left blank unless you experience problems with sending email in Textpattern (i.e., no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you've installed Textpattern (i.e. if your website is example.com, you might use you&#64;example.com).
+This preference should be left blank unless you experience problems with sending email in Textpattern (i.e. no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you've installed Textpattern (i.e. if your website is example.com, you might use you&#64;example.com).
 
 h5(#use_iso-8859-1_encoding_in_e-mails_sent_default_is_utf-8). Use ISO-8859-1 encoding in e-mails sent (default is UTF-8)?
 
@@ -215,7 +215,7 @@ This setting only has an effect when “Attach titles to permalinks” is set to
 
 h5(#send_last-modified_header). Send &quot;Last-Modified&quot; header?
 
-When set, Textpattern will read a visitor's HTTP If-Modified-Since header (if one exists) and compare it to the last site update. If nothing has changed since the visitor last loaded the page (i.e., if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor's browser to use its cached version of the page.
+When set, Textpattern will read a visitor's HTTP If-Modified-Since header (if one exists) and compare it to the last site update. If nothing has changed since the visitor last loaded the page (i.e. if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor's browser to use its cached version of the page.
 
 This can reduce bandwidth consumption, page load times, and reduce the load on the webserver.
 

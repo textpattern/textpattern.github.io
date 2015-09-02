@@ -24,7 +24,7 @@ The category is a secondary method of classifying articles, and the main method 
 
 h4(#chmod). chmod
 
-chmod stands for *ch*ange *mod*e; it is a process for changing the file permissions on a folder or file in a server hierarchy. Change mode permissions are set by giving the folder/file a 3-digit number (e.g., 764) using an SFTP client, Webmin, or some other utility that provides such capability. Permissions are of course set to control how a folder/file is used, and by whom. Each digit is a representation of *rwx*, which stands for *read*-*write*-*execute*, and each value of *rwx* has it's own numeric (and binary) value.
+chmod stands for *ch*ange *mod*e; it is a process for changing the file permissions on a folder or file in a server hierarchy. Change mode permissions are set by giving the folder/file a 3-digit number (e.g. 764) using an SFTP client, Webmin, or some other utility that provides such capability. Permissions are of course set to control how a folder/file is used, and by whom. Each digit is a representation of *rwx*, which stands for *read*-*write*-*execute*, and each value of *rwx* has it's own numeric (and binary) value.
 
 There are three user categories who can have permissions on a folder/file, which correspond with each of the three digits. The three categories are:
 
@@ -32,7 +32,7 @@ There are three user categories who can have permissions on a folder/file, which
 * *Group*  -  everyone who belongs to the same group as the owner (gets the second digit).
 * *World*  -  everyone else who might visit the folder/file (gets the third digit).
 
-It should be pretty clear that “owner” is you if you are the one who creates the folder/file (e.g., on your Web server, or hosts Web server), and it should be equally clear that “world” is anyone who visits your Web site to access a file for viewing, downloading, etc.; however, “group” might need a little more explanation. Let's say you are _owner_ Bob and you belong to _group_ Marketing: This model lets you do things like say Bob can *rwx* (read-write-execute) the file, Bob's _group_ (Marketing) can *rw* (read-write) the file, and everyone else in the _world_ can only *r* (read) the file. Such a setting would translate to a 3-digit number of 764.
+It should be pretty clear that “owner” is you if you are the one who creates the folder/file (e.g. on your Web server, or hosts Web server), and it should be equally clear that “world” is anyone who visits your Web site to access a file for viewing, downloading, etc.; however, “group” might need a little more explanation. Let's say you are _owner_ Bob and you belong to _group_ Marketing: This model lets you do things like say Bob can *rwx* (read-write-execute) the file, Bob's _group_ (Marketing) can *rw* (read-write) the file, and everyone else in the _world_ can only *r* (read) the file. Such a setting would translate to a 3-digit number of 764.
 
 How do we know this value of 764? Because each number is itself a sum of values, each representing *r*, *w*, and *x* for that user category, as shown below:
 
@@ -126,7 +126,7 @@ h4(#messy_urls). Messy URLs
 
 h4(#news_feed). News Feed
 
-A news feed (or just “feed”) is a means to distribute up-to-date information about a web site without a reader actually visiting it. Many programs (called _aggregators_, but often referred to as _news readers_) permit aggregation of news feeds from many sources (i.e., articles are essentially _pushed_ to the news reader), and the reader can browse through the list and select the content that is most interesting. Really Simple Syndication (RSS) and Atom are two formats for news feeds that Textpattern supports. To implement a feed in your own Textpattern site, you need to use the Textpattern
+A news feed (or just “feed”) is a means to distribute up-to-date information about a web site without a reader actually visiting it. Many programs (called _aggregators_, but often referred to as _news readers_) permit aggregation of news feeds from many sources (i.e. articles are essentially _pushed_ to the news reader), and the reader can browse through the list and select the content that is most interesting. Really Simple Syndication (RSS) and Atom are two formats for news feeds that Textpattern supports. To implement a feed in your own Textpattern site, you need to use the Textpattern
 
 bc. <[[txp:feed_link_:]]>
 
@@ -205,7 +205,7 @@ See
 
 h4(#style). Style
 
-This is the term Textpattern uses to refer to a _Cascading Style Sheet_ (CSS) file, or _stylesheet_. A CSS file is a text-format file written as a set of rules that define the presentational aspects of each object or element on your Web site (e.g., divisions, headers, fonts, tables, forms, etc.). In Textpattern, the style is kept in the MySQL database and managed in the *_presentation &gt; style_* area of the Textpattern administration. Styles (along with a few nice images) are what make your Web site nice to look at.
+This is the term Textpattern uses to refer to a _Cascading Style Sheet_ (CSS) file, or _stylesheet_. A CSS file is a text-format file written as a set of rules that define the presentational aspects of each object or element on your Web site (e.g. divisions, headers, fonts, tables, forms, etc.). In Textpattern, the style is kept in the MySQL database and managed in the *_presentation &gt; style_* area of the Textpattern administration. Styles (along with a few nice images) are what make your Web site nice to look at.
 
 h4(#subversion). Subversion
 

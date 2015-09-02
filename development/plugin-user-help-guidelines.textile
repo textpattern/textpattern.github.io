@@ -175,7 +175,7 @@ Clarifying notes about using the template:
 
 **Installation/Uninstallation**. Only include these sections if they provide any instruction _different_ from standard installation procedure. If not, leave them out.
 
-**Plugin tags**. The @h3.@ subsection headings for tags will be the plugin prefix and name without surrounding tag syntax (i.e., use *abc_tag_name*, not @<txp:abc_tag_name />@).
+**Plugin tags**. The @h3.@ subsection headings for tags will be the plugin prefix and name without surrounding tag syntax (i.e. use *abc_tag_name*, not @<txp:abc_tag_name />@).
 
 **Examples**. Ensure your @h3.@ subsection headings for examples are clearly indicative of what the example is about, as much as possible. Your example intros will help make this clear, of course, but for scanning reasons, headings should be informative too.
 
@@ -186,7 +186,7 @@ The template already includes the necessary "Textile":http://txstyle.org/. We as
 **Headers h1-h3:**
 
 * @h1.@ is for the help page title (the plugin's name).
-* @h2.@ is for main sections of the help page, and include ID's to enable the in-page Table of Contents lists (e.g., @h2(#sec1).@).
+* @h2.@ is for main sections of the help page, and include ID's to enable the in-page Table of Contents lists (e.g. @h2(#sec1).@).
 * @h3.@ is for subsections, and these should not have ID's or classes.
 
 **Paragraph copy:**

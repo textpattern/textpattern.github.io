@@ -64,11 +64,11 @@ h2(#sec4). Adding events and steps
 
 You've created a new **Extensions** sub-panel for your plugin, but now you need to give the plugin a function to execute when that sub-panel is clicked. To understand what goes on here let's take some time out to reveal Textpattern _events_ and _steps_.
 
-For purposes here, think of an event as a panel option under the **Extensions** region in the Textpattern admin-side UI (i.e., a sub-panel). The plugin panel has a name that Tetxpattern knows. The panel also has built-in events such as 'file', 'image', 'admin' and so on. 
+For purposes here, think of an event as a panel option under the **Extensions** region in the Textpattern admin-side UI (i.e. a sub-panel). The plugin panel has a name that Tetxpattern knows. The panel also has built-in events such as 'file', 'image', 'admin' and so on. 
 
 In your case, we've told the system, using @register_tab()@, that your panel (your _event_) is known as *abc_admin_hello_world* (what users will see as **My plugin**). So when you target a particular event inside some PHP in the plugin, you tell Textpattern to execute code when someone visits your panel.
 
-A _step_ is some action that a user takes when they're in a plugin panel; i.e., some action that takes place inside the event that we are interested in. More on steps later. For now you need to tell Textpattern what to do when your plugin's panel link is clicked. For this we use @register_callback()@:
+A _step_ is some action that a user takes when they're in a plugin panel; i.e. some action that takes place inside the event that we are interested in. More on steps later. For now you need to tell Textpattern what to do when your plugin's panel link is clicked. For this we use @register_callback()@:
 
 bc.. if (@txpinterface == 'admin') {
    add_privs('abc_admin_hello_world', '1'); // Publishers only
@@ -125,7 +125,7 @@ bc. function abc_admin_hw_list() {
 }
 
 
-When you click on a link you'll see (above pagetop) that the relevant function is being called. That's how you differentiate between steps and do things. In this example, we might do something (e.g., update a database table) and then show the list again. You could use the different steps to display completely different interface elements on your new tab. The limit is your imagination.
+When you click on a link you'll see (above pagetop) that the relevant function is being called. That's how you differentiate between steps and do things. In this example, we might do something (e.g. update a database table) and then show the list again. You could use the different steps to display completely different interface elements on your new tab. The limit is your imagination.
 
 Here's the final code for the admin side example:
 

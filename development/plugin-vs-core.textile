@@ -45,7 +45,7 @@ Core features have some advantages over a plugin:
 
 **Ascendant/descendant compatibility**. Textpattern's core developers extensively test new features, when added, to ensure they won't break older ones, and that old features won't stop working in the future.[1]
 
-**Debugging**: By fact that everyone installs Textpattern but not the same plugins, the odds of bugs being discovered in a core feature, or that might affect other core features, are far greater and thus code is generally much better (i.e., code quality, again).
+**Debugging**: By fact that everyone installs Textpattern but not the same plugins, the odds of bugs being discovered in a core feature, or that might affect other core features, are far greater and thus code is generally much better (i.e. code quality, again).
 
 fn1. If you're developing plugins, make sure you understand the related "Disclaimer":http://docs.textpattern.io/development/#sec1.
 
@@ -84,7 +84,7 @@ fn5. This is the worst situation for expiring plugins, because their developers 
 
 h3(#sec3-2). Plugin choice and risks  
 
-As you might realise by this point, when someone uses a plugin to provide specialised functionality, they are faced with some risks in that choice; risks they may not be aware of based on the status of the plugin (i.e., Is it abandoned?) and how well it's been developed (quality of code). When it comes down to it, a bad plugin choice can be the root of many problems, from rendering other plugins inoperable, to rending the whole website inoperable, to being the cause of security weaknesses that can be exploited by malware and hackers. 
+As you might realise by this point, when someone uses a plugin to provide specialised functionality, they are faced with some risks in that choice; risks they may not be aware of based on the status of the plugin (i.e. Is it abandoned?) and how well it's been developed (quality of code). When it comes down to it, a bad plugin choice can be the root of many problems, from rendering other plugins inoperable, to rending the whole website inoperable, to being the cause of security weaknesses that can be exploited by malware and hackers. 
 
 h2(#sec4). Conclusion
 

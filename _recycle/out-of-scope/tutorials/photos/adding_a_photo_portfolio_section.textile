@@ -25,14 +25,14 @@ The fourth step is to write the articles for the Portfolio section in the admin 
 bc. <img src="" />
 
 
-tag pointing to the full-size version of the image (i.e., _../images/big_picture1.jpg_), a bit of text describing the image, or a combination of both. The contents of the article body field is what will display when the thumbnail is clicked.
+tag pointing to the full-size version of the image (i.e. _../images/big_picture1.jpg_), a bit of text describing the image, or a combination of both. The contents of the article body field is what will display when the thumbnail is clicked.
 
 In the excerpt field, place the
 
 bc. <img src="" />
 
 
-tag for the thumbnail image (i.e., _../images/small_picture1.gif_).
+tag for the thumbnail image (i.e. _../images/small_picture1.gif_).
 
 Be sure to assign the article(s) to the “portfolio” section under the “Section” dropdown menu. Comments, on or off, is up to you.
 
