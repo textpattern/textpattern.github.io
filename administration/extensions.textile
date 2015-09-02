@@ -1,6 +1,6 @@
 ---
 layout: document
-category: extension
+category: Administration
 published: true
 title: "Extensions"
 tags:

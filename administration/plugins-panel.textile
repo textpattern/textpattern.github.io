@@ -1,6 +1,6 @@
 ---
 layout: document
-category: administration
+category: Administration
 published: true
 title: "Plugins"
 tags:

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: administration
+category: Administration
 published: true
 title: "User role types and privileges"
 tags:
