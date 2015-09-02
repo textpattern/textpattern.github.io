@@ -61,16 +61,16 @@ Do it the “Textpattern's way” from the start by using Textpattern functions 
 
 h3(#sec2-3). Use the templates
 
-Templates come from the trials and errors of those who came before you. Thus using templates helps you do things easier, with better results. There are two templates to be aware of and use: the _plugin development template_, and the _plugin user-help template_.
+Templates come from the trials and errors of those who came before you. Thus using templates helps you do things easier, with better results. There are two templates to be aware of and use: the _plugin development template_, and the _plugin user-help template and guidelines_.
 
 **Plugin development template:**
 
 * "Plugin template":https://github.com/textpattern/textpattern-plugin-template
 * "Plugin template helper":http://docs.textpattern.io/development/plugin-template-help
 
-**Plugin user-help template:**
+**Plugin user-help template and guidelines:**
 
-* "Plugin user-help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines
+* "Plugin user-help template and guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines
 
 h3(#sec2-4). Write clear and concise plugin help 
 
