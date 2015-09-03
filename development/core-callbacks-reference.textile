@@ -407,7 +407,7 @@ function abc_add_text($event, $step, $data, $rs) {
    return 'Textile, the humane web text generator.';
 }
 
-p. Easy-peasy. The text is added immediately below the widget header link, which is where the @extend_col_1@ step happens to output its markup.
+p. Easy-peasy. The text is added immediately below the widget header link, which is where the @extend_col_1@ step outputs its markup.
 
 h4. __include/txp_category.php__
 

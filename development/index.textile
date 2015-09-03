@@ -178,7 +178,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div> 
 
-*Argument #3:* In admin-side situations, the @$event@ (argument #2) is (disjunctively) divided into _steps_, with each @$step@ pinpointing a particular action or DOM location (e.g. a panel widget or one of its controls) in the admin-side. 
+*Argument #3:* In admin-side situations, the @$event@ (argument #2) is (disjunctively) divided into _steps_, with each @$step@ pinpointing a particular action or DOM location (e.g. a panel widget or one of its controls). 
 
 *Argument #4:* In admin-side situations, this argument determines when the function is called, with implications for what you can do:
 
