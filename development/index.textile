@@ -175,9 +175,9 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div> 
 
-*Argument #3:* In these situations, the @$event@ (argument #2) is (disjunctively) divided into steps, with each @$step@ pinpointing a particular action or DOM location (e.g. a panel widget or one of its controls) in the admin-side. 
+*Argument #3:* In admin-side situations, the @$event@ (argument #2) is (disjunctively) divided into _steps_, with each @$step@ pinpointing a particular action or DOM location (e.g. a panel widget or one of its controls) in the admin-side. 
 
-*Argument #4:* This argument determines when the function is called, with implications for what you can do:
+*Argument #4:* In admin-side situations, this argument determines when the function is called, with implications for what you can do:
 
 * If @$pre=0@ (default), the function is called _after_ the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. 
 * If @$pre=1@, the funcntion is called _before_ any part of the page is rendered or executed, allowing you to replace existing panels on the admin-side.
