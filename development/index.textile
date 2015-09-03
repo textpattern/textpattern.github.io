@@ -138,13 +138,13 @@ You can control how a plugin will load by setting the plugin type.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. Plugin type |_. No. |_. Explanation |
-| public | 0 | Will only be loaded on the public side. |
-| admin + client | 1 | Will be loaded on both public _and_ the admin sides. |
-| library | 2 | Will not automatically load, rather it loads when included/required by other plugins. |
-| admin | 3 | Will only be loaded on the admin side and may _not_ make asynchronous calls. |
-| admin + AJAX | 4 | Will only be loaded on the admin side and may make asynchronous calls. |
-| admin + public + AJAX | 5 | Will be loaded on both the admin and public sides and may make asynchronous calls. |
+|_. Plugin type |_. No. |_. Will... |
+| public | 0 | only load on the public side. |
+| admin + client | 1 | load on the public _and_ administration sides. |
+| library | 2 | not automatically load, rather it loads when included/required by other plugins. |
+| admin | 3 | only load on the administration side and may _not_ make asynchronous calls. |
+| admin + AJAX | 4 | only load on the administration side and may make asynchronous calls. |
+| admin + public + AJAX | 5 | load on the administration and public sides and may make asynchronous calls. |
 
 notextile. </div>
 
