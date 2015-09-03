@@ -134,14 +134,19 @@ h2(#sec5). How plugins are loaded
 
 Plugins are loaded very early during script execution. It happens in __textpattern/publish.php__ (public-side) and in textpattern/index.php (admin-side). Look out for @load_plugins@ to see where it is happening.
 
-You can control how a plugin will be loaded by setting the plugin-type:
+You can control how a plugin will load by setting the plugin type.
 
-* A “*public*” plugin (0) will only be loaded on the public side.
-* An “*admin + client*” plugin (1) will be loaded on both public _and_ the admin sides.
-* A “*library*” plugin (2) will not automatically load, rather it loads when included/required by other plugins.
-* An “*admin*” plugin (3) will only be loaded on the admin side and may _not_ make asynchronous calls.
-* An “*admin + AJAX*” plugin (4) will only be loaded on the admin side and may make asynchronous calls.
-* An “*admin + public + AJAX*” plugin (5) will be loaded on both the admin and public sides and may make asynchronous calls.
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. Plugin type |_. No. |_. Explanation |
+| public | 0 | Will only be loaded on the public side. |
+| admin + client | 1 | Will be loaded on both public _and_ the admin sides. |
+| library | 2 | Will not automatically load, rather it loads when included/required by other plugins. |
+| admin | 3 | Will only be loaded on the admin side and may _not_ make asynchronous calls. |
+| admin + AJAX | 4 | Will only be loaded on the admin side and may make asynchronous calls. |
+| admin + public + AJAX | 5 | Will be loaded on both the admin and public sides and may make asynchronous calls. |
+
+notextile. </div>
 
 The code of the plugin is then @eval()@ 'ed (or included) within that @load_plugins()@ function, _not_ in the global scope. This means if you need to use global variables, you have to explicitly set them to be global. Functions and classes are always in the “global scope”, so there is no problem with that.
 
