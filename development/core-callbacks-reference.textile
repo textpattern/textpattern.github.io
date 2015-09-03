@@ -399,9 +399,7 @@ p. We've used @register_callback()@ to define our callback function, and in this
 
 **Example 2: Adding text to the *Textile help* widget**
 
-Note the last record in the callbacks table above is different from the others; it adds a new, unique element to the panel instead of changing one that already exists, as in the previous example. Let's consider that callback as another example.
-
-We'll add some text -- "Textile, the humane web text generator." -- in the **Textile help** widget:
+Note the last record in the callbacks table above is different from the others; it adds a new, unique element to the panel instead of changing one that already exists, as in the previous example. Let's do that one. We'll add some text -- "Textile, the humane web text generator." -- in the **Textile help** widget:
 
 bc.. register_callback('abc_add_text', 'article_ui', 'extend_col_1');
 
