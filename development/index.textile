@@ -162,9 +162,7 @@ fn3. There's also the "Admin-side events and steps":http://docs.textpattern.io/d
 
 h3(#sec6-1). Function: @register_callback()@
 
-There are many "functions used in Textpattern":http://phpcrossref.com/xref/textpattern/_functions/ that may be relevant to your plugin development aims.[4] 
-
-In particular, the @register_callback()@ function is important for writing "callbacks":#sec7 (especially admin-side callbacks).[5] This is the full function definition:
+There are many "functions used in Textpattern":http://phpcrossref.com/xref/textpattern/_functions/ that may be relevant to your plugin development aims.[4] In particular, the @register_callback()@ function is important for writing "callbacks":#sec7 (especially admin-side callbacks).[5] This is the full function definition:
 
 bc. function register_callback($func, $event, $step, $pre=0)
 
