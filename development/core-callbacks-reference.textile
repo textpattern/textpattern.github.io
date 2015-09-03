@@ -395,7 +395,7 @@ function abc_altered_status($event, $step, $data, $rs) {
    return $data;
 }
 
-We've used @register_callback()@ to define our callback function, and in this case we've employed the @$event@/@$step@ combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, and returns (outputs) the resulting altered list. 
+p. We've used @register_callback()@ to define our callback function, and in this case we've employed the @$event@/@$step@ combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, and returns (outputs) the resulting altered list. 
 
 **Example 2: Adding text to the *Textile help* widget**
 
