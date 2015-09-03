@@ -84,12 +84,13 @@
 
 
 <!-- Primary Content -->
-        <main aria-label="Main content" itemscope itemtype="http://schema.org/Blog">
+        <main aria-label="Main content">
             <div class="container">
                 {% include breadcrumbs.html %}
 
-
-                {{ content }}
+                <article>
+                    {{ content }}
+                </article>
 
                 <p class="alert-block information footnote">See something wrong on this page? Outdated info, a broken link, faulty code example, or whatever? Please <a rel="external" href="https://github.com/textpattern/textpattern.github.io/issues">write an issue</a> and we’ll fix it.</p>
             </div><!-- /.container -->
