@@ -182,7 +182,7 @@ notextile. </div>
 * If @$pre=0@ (default), the function is called _after_ the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. 
 * If @$pre=1@, the funcntion is called _before_ any part of the page is rendered or executed, allowing you to replace existing panels on the admin-side.
 
-The @register_callback()@ function is instrumental in writing callbacks, and especially for administration-related plugins. Let's look a few examples.
+Let's look a few @register_callback()@ examples.
 
 fn4. As you learn about functions, be aware of the helper functions found in the __"/lib":https://github.com/textpattern/textpattern/tree/master/textpattern/lib__ folder. Some examples: The __"txplib_db.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_db.php__ file for interacting with the Textpattern database; __"txplib_forms.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_forms.php__ to help build different HTML form controls; __"txplib_html.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_html.php__ to help build various other types of HTML elements; and __"txplib_misc.php":https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_misc.php__ to help build various “miscellaneous” functions.
 
