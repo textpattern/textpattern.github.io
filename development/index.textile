@@ -132,9 +132,9 @@ fn2. The exception to this is if an element of your markup is logically similar 
 
 h2(#sec5). How plugins are loaded
 
-Plugins are loaded very early during script execution. It happens in textpattern/publish.php (public-side) and in textpattern/index.php (admin-side). Look out for @load_plugins@ to see where it is happening.
+Plugins are loaded very early during script execution. It happens in __textpattern/publish.php__ (public-side) and in textpattern/index.php (admin-side). Look out for @load_plugins@ to see where it is happening.
 
-By setting the plugin-type in your plugin you can control how a plugin will be loaded:
+You can control how a plugin will be loaded by setting the plugin-type:
 
 * A “*public*” plugin (0) will only be loaded on the public side.
 * An “*admin + client*” plugin (1) will be loaded on both public _and_ the admin sides.
