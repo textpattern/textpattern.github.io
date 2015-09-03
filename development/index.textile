@@ -245,7 +245,7 @@ function abc_altered_status($event, $step, $data, $rs) {
    return $data;
 }
 
-Again we've used @register_callback()@ to define our callback function, and in this case we've employed the @$event@/@$step@ combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, and returns (outputs) the resulting altered list.
+p. Again we've used @register_callback()@ to define our callback function, and in this case we've employed the @$event@/@$step@ combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, and returns (outputs) the resulting altered list.
 
 h3(#sec6-4). Removing admin-side panel elements
 
