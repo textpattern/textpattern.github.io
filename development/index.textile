@@ -62,7 +62,7 @@ Do it the “Textpattern's way” from the start by using Textpattern functions 
 
 h3(#sec2-3). Use the templates
 
-Templates come from the trials and errors of those who came before you. Thus using templates helps you do things easier, with better results. There are two templates to be aware of and use: the _plugin development template_, and the _plugin user-help template and guidelines_.
+Templates come from the trials and errors of those who came before you. Thus using templates helps you do things easier, with better results. There are two templates to employ: the _plugin development template_, and the _plugin user-help template and guidelines_.
 
 **Plugin development template:**
 
@@ -75,7 +75,7 @@ Templates come from the trials and errors of those who came before you. Thus usi
 
 h3(#sec2-4). Write clear and concise plugin help 
 
-Yes, we're emphasising this. Don't be one of _those_ developers that assumes everyone knows what you know -- the opposite is true. People won't use your plugin (innovative or not) if you don't explain how. You can avoid fielding a lot of unnecessary questions in the support forum and empower users by producing good plugin user instructions to begin with. Use the template to ensure your plugin instructions are consistently structured and properly formatted. Here it is again:
+Yes, we're emphasising this. Don't be one of _those_ developers that assumes everyone knows what you know -- the opposite is true. People won't use your plugin (innovative or not) if you don't explain how it works. You can avoid fielding a lot of unnecessary questions in the support forum and empower users by producing good plugin user instructions to begin with. Use the template to ensure your plugin instructions are consistently structured and properly formatted. Here it is again:
 
 * "Plugin user-help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines
 
