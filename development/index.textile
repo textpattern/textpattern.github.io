@@ -27,7 +27,7 @@ On this page:
 * "Register your plugin developer prefix":#sec4
 * "How plugins are loaded":#sec5
 * "Callbacks":#sec6
-* "Function: @register_callback()@":#sec6-1
+** "Function: @register_callback()@":#sec6-1
 ** "Adding admin-side panel elements":#sec6-2
 ** "Altering admin-side panel elements":#sec6-3
 ** "Removing admin-side panel elements":#sec6-4
