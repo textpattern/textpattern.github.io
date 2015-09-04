@@ -1,0 +1,32 @@
+---
+layout: document
+category: brand
+published: true
+title: "Textpattern editorial style guidelines"
+tags:
+  - audience
+  - brand identity
+  - communication
+  - editorial
+  - style guidelines
+  - taxonomy
+  - tone
+  - voice
+
+---
+
+h1. Textpattern editorial style guidelines
+
+These guidelines concern all text content published on Textpattern platforms and through the project's social media channels. Following these guidelines will help you produce accurate, clear, and concise copy that Textpattern audiences will find easier to read, translate, understand, and use. Wouldn't that be nice.
+
+On this page:
+
+* "":#sec1
+* "":#sec1
+* "":#sec1
+* "":#sec1
+* "":#sec1
+* "":#sec1
+* "":#sec1
+* "":#sec1
+
