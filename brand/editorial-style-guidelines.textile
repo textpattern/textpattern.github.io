@@ -52,12 +52,12 @@ And...
 
 h2(#sec). Textpattern identity
 
-Textpattern is spelled "*Textpattern*". Look at that closely. There is no capital "p". This isn't WordPress, or any other number of CMSes that have camel-case names. Nope. Textpattern is all one word. One capital letter. To put it another way: %(error)WRONG!% → TextPattern.
+Textpattern is spelled "*Textpattern*". Look at that closely. There is no capital "p". This isn't WordPress, or any other number of CMSes that have camel-case names. Nope. Textpattern is all one word with one capital letter.
 
-; Do not abbreviate the name either:
-: %(error)WRONG!% → Txp
-: %(error)WRONG!% → TXP
-: %(error)WRONG!% → TxP
+: Do not abbreviate the name either:
+; %(error)WRONG!% → Txp
+; %(error)WRONG!% → TXP
+; %(error)WRONG!% → TxP
 
 While these pet uses are convenient in the support forum, they lend confusion to brand awareness in official docs. The world is still confused between “Textpattern” vs. “TextPattern”, after all. 
 
