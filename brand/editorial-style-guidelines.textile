@@ -22,21 +22,24 @@ These guidelines concern all text content published on Textpattern platforms and
 On this page:
 
 * "British English":#sec1
-* "":#sec1
-* "":#sec1
-* "":#sec1
-* "":#sec1
-* "":#sec1
-* "":#sec1
-* "Textpattern identity":#sec1
+** "Spellings":#sec1-1
+** "Punctuation":#sec1-1
+*** "Quotations":#sec1-1-1
+* "Latin and foreign expressions":#sec2
+** "Latin":#sec2-1
+* "Point of view (personal pronouns)":#sec3
+* "x":#sec1
+* "x":#sec1
+* "x":#sec1
+* "Textpattern usage":#sec1
 
-h2(#sec). British English
+h2(#sec1). British English
 
 Textpattern content is written following the conventions of British English (en-GB). That convention is chosen because this is an international project, and all English used around the world today came from Britain. On a per capita basis (at the very least), it's the most "international language" there is. So there. 
 
 Throughout these guidelines will be examples (spelling, punctuation, etc), and they will reflect British English usage.
 
-**Spelling examples:**
+h3(#sec1-1). Spellings
 
 The most common differences (though not the only) between British and American English spelling is with verbs ending in "...ise" and their related forms, and adjectives and verbs ending in "...our". 
 
@@ -50,145 +53,146 @@ And...
 * %(success)Use%: colour, behaviour, etc.
 * %(error)Don't use%: color, behavior, etc.
 
+h2(#sec2). Punctuation
+
+[todo]
+
+h3(#sec2-1). Commas
+
+British English aside, we favor the serial comma (aka, the "Oxford comma"). If you use them every time, you won't be wrong, even if you don't need one. For example, both forms of this sentence are correct, and the serial comma is used in the second:
+
+bq.. Separating content, presentation and behaviour is always a smart thing to do.
+
+Separating content, presentation, and behaviour is always a smart thing to do.
+
+p. But the opposite is not true. Sometimes a missing serial comma changes the meaning considerably, and there are poignant examples to demonstrate this:
+
+bq. I saw Bob's uncle, a boozer and a cruiser in the park, run into the corner deli.
+
+Poor Bob's uncle. So, generally speaking, use a serial comma.
+
+h3(#sec2-2). Quotations marks
+
+We won't get complicated here, but a closing quotation mark should most often be _inside_ of the trailing punctuation of a clause or phrase, not outside.[1] 
+
+Tip: Be mindful when writing Textile links that your text editor is using straight quotation marks, not curly quotation marks. While the latter are attractive for regular text copy, they won't work for links. Thus straight quotations marks may prove best for documentation portability over the long-term. So you'll have quote marks looking like this:
+
+bc. The link label reads "see more", but see more of what?
+
+Instead of this:
+
+bq. The link label reads “see more”, but see more of what? 
+
+fn1. See "$":http://en.wikipedia.org/wiki/Quotation_mark if you really have nothing better to do.
+
+h2(#sec3). Point of view (personal pronouns)
+
+Write in the *second-person point of view only*, not first-person or third-person. Most of the words you'll use are "you", "your", and "yours" when talking to the reader.
+
+For example:
+
+bq. You can change the default landing panel in **Basic** preferences.
+
+Do not write in the first-person point of view, regardless of whether the pronouns are normative, objective, or possessive. In other words, you should never be using these: I/we, me/us, my, mine, our, ours. It's easy to forget and start using "we" and "us", as if you and the reader are working through a problem together. But don't do that. Take the second person stance and empower the reader. Make them feel like their doing it alone by your instruction, because they are. Change "we" to "you", or "our" to "your". 
+
+Likewise, do not use the third-person in your copy. So not these words: he, she, they … him, her, them … his, her, hers, their, theirs … it. Too indirect and totally unnecessary.
+
+h2(#sec3). Latin and foreign expressions
+
+In short, don't use them, with exception to the situations noted for __Latin__. Stick with simple and concise English and your copy will be easier for people to understand and translate, if they desire.
+
+h3(#sec3-1). Latin
+
+Avoid using __Latin__ in course of regular phrases, whether abbreviations or full words -- with the exception to these words, which are fine: "via" and "versus". 
+
+Instead, use common __Latin__ abbreviations _only_ (in other words, "e.g." and "i.e.") in parenthetical phrases or clauses.
+
+For example, don't do this:
+
+bq. The **Content** region panels included **Write**, **Articles**, **Images**, **Links**, etc. [or et cetera.]
+
+Instead, either put the __Latin__ in a parenthetical clause and shorten the list of items to three max:
+
+bq. The **Content** region contains all the content panels (**Write**, **Articles**, **Images**, etc.).
+
+Or replace the __Latin__ and parenthetical clause entirely for a regular English expression:
+
+bq. The **Content** region contains all the content panels, like **Write**, **Articles**, **Images**, and so forth.
+
+You don't have to italicise Latin abbreviations in parenthetical breaks, as described, but you do have italicise any __Latin__ used in the normal sentence, if you use it there at all.
+
 h2(#sec). Textpattern identity
 
-Textpattern is spelled "*Textpattern*". Look at that closely. There is no capital "p". This isn't WordPress, or any other number of CMSes that have camel-case names. Nope. Textpattern is all one word with one capital letter.
+Use the Textpattern name fully and correctly.
 
-: Do not abbreviate the name either:
-; %(error)WRONG!% → Txp
-; %(error)WRONG!% → TXP
-; %(error)WRONG!% → TxP
+h3(). Brand name usage
 
-While these pet uses are convenient in the support forum, they lend confusion to brand awareness in official docs. The world is still confused between “Textpattern” vs. “TextPattern”, after all. 
+Textpattern is spelled "*Textpattern*". Look at that closely. That's not two words, and there's no capital "p". This isn't WordPress, and "Text" isn't used as an adjective. Nope. Textpattern is proudly all one word with one capital letter -- a proper noun.
 
-Always spell “Textpattern” out fully. This will also help you see if you’re using the name too repetitively, which can be a sentence bloat problem.
+Always spell “Textpattern” out fully in official copy. Never abbreviate the name, like Txp, TXP, TxP, txP, or txp (unless your writing Textpattern tags in code examples). While these invented pet uses are convenient in the forum, they lend confusion to brand awareness in official copy. The world is still confused between “Textpattern” vs. “TextPattern”, after all. 
 
-Brand
-How to refer to Textpattern CMS in documentation.
-Brand usage
-While "Textpattern CMS" is the full name, it’s not necessary to write "CMS" every time when referring to the system in copy. As long as the full name is used clearly in leading content of a site, you can simply use "Textpattern" everywhere else.
-Currently, user documentation uses the full spelling in the tagline, which is prominently positioned at the top of the site. It reads, "Textpattern CMS is free, and so are you to help document it." 
-Textpattern spelling
-"Textpattern" is one word and the "p" is always lowercase. 
-Correct → Textpattern
-Never use camel-case or spell it as two words.
-Wrong → TextPattern
-Wrong → Text Pattern
-Wrong → Text pattern
-Brand abbreviation
-Do not abbreviate "Textpattern" in documentation. Always spell the name out in full.
-Do not use → Txp
-Do not use → TXP
-Do not use → TxP
-It is common to abbreviate "Textpattern" as Txp or TXP (TxP should never be used as it implies a camel-case spelling). Use this as you like in the Textpattern Support Forum, social channels, or your own websites, but it should not be used in official content. Readers new to the community may be confused by these abbreviations, especially if authors are not using a single abbreviation consistently. Spell the name out and it’s always clear.
-Link labels for Textpattern websites
-Refer to Textpattern locations by their actual name. Ensure site names are capitalised and used consistently.
+Good news! Writing the name out fully has the added benefit of helping you see when you’re using the name too repetitively, which is a sentence bloat problem.
 
+Finally, while some feel "Textpattern CMS" is important for search engine ranking (arguably), it’s not necessary to write "CMS", and especially in user documentation (marketing copy at textpattern.com, maybe). Textpattern began as "Textpattern" alone in 2003, and it's still recognised by that name. Leave "CMS" out; it's needless distraction and word bloat.
 
-* Wiki (textpattern.net): Use "Textpattern CMS Documentation". 
-For example...
-This style guide should be used when adding and editing content in the Textpattern CMS Documentation.
-* Forum (forum.textpattern.com): Use "Textpattern CMS Support Forum". 
-For example...
-If all else fails, post your question in the Textpattern CMS Support Forum.
-* Dev blog (textpattern.com/weblog): Use "Textpattern CMS Blog". 
-For example...
-Follow the feed of the Textpattern CMS Blog to get development news from the horses mouth.
-* Plugins (textpattern.org): Use "Textpattern CMS Plugins". 
-For example...
-Extending Textpattern is done rather easily using plugins, which you can search for at—and download from—the Textpattern CMS Plugins site.
-* Themes (textgarden.org): Use "Textpattern CMS Themes". 
-For example...
-A variety of themes, both front-side and admin-side, are freely available at  Textpattern CMS Themes site.
+h3(). Platform name usage
 
+When referring to one of the Textpattern platforms, use the proper noun, not the domain name, unless you're specifically naming the domain name, in which case do not abbreviate. 
 
-Table of Contents
+For example, here we name the main site by it's proper noun and clarify the correct _full_ domain name from the other confusing options.
 
-Spelling
-Quotation marks
-Quotation mark placement
-Quotation mark style
-Serial commas
-Exclamation points (!)
-Spacing post punctuation
-Foreign terms and expressions
-Latin expressions
-Point of view (personal pronouns)
-Style and tone
-Titles and section headers
-Density
-Content density
-Topic density
-Capitalisation
-All-caps
-Numerals and special characters
-Numerals
-Ampersands (&)
-Links
-Terminology
-Textpattern terms as admin-side panel and link references
-Textpattern terms as semantical (non-linked) references
-Non-Textpattern terminology
-Versioning
-Appendix A: Visual branding
-Appendix B: Template metadata
-References
+bq. Go to the "Textpattern":# website to download the latest version, which is at textpattern.com, not textpattern.org or textpattern.net.
+
+It's a silly example, since the link would suffice to direct somebody, but the point is made about how to reference a platform name versus naming the domain specifically.
+
+h2(#sec3). Concise copywriting
+
+To improve the ability to scan pages as described above, write as concisely as you can, and use the style guide [link needed]. Here are a few quick wins for cleaner copy:
+
+# Write in the third-person. You're speaking to an individual on behalf of Textpattern, so you don't use "me", "I", "my", etc. (But you will use "you", "your", etc.) When you don't talk about something from your personal point of view, you say a lot less. It's magic.
+# Avoid passive 'to be' and 'to have' verb structures (e.g. could be/have, should be/have, might be/have). Passive writing is not only miserable to read, it bloats copy with unnecessary words. Find a more direct/active way of wording the phrase. For example, instead of "The widget should be at the top of the sidebar." say "Put the widget at top of the sidebar."
+# Avoid useless adverbs like "very", "really", "only" and many others. For example, "If you really want to do that." is better as "If you want to do that." A person either wants to or doesn't, adding "really" does't change anything.
+# Question every use of "that" and "just" in your copy. It's easy to abuse both words. Every time you use "that" or "just" in a sentence, read the sentence and see if it still makes sense without the word. Most of the time it will. If it does, it's probably correct to leave the words out.
+# Avoid over use of adverbs, idioms, and other partial clauses at the beginning of sentences: "Meanwhile, ...", "On the other hand, ...", "However, ...", "In other words, ...", "Nevertheless, ..." and so forth. This doesn't mean never use them, but if you're using them regularly, or more than once in a paragraph, then it's too much. Rewrite the sentences more concisely without the clause breaks.
+# Remove words from your sentences until you can't remove anymore for the meaning to remain clear.
+# Break long, multi-clause sentences into shorter sentences. (Careful here, though, sometimes a single longer sentence can read more smoothly if it's free of needless word bloat. Multiple shorter sentences doesn't mean result in choppy stilted reading. Use your best judgement.)
+
+h2(#sec5). User-interface content
+
+Follows these when writing about Textpattern UIs, which has implications for plugin authors too.[1]
+
+* Use "*administration side*" correctly when used as an _adjective_ versus a _noun_:
+** *noun* form (no hyphen is used): E.g.: "The login to the administration side is located at __/textpattern__." (Write "administration" out fully to distinguish the place from a person ("admin")
+** "ajective" form (hyphen is used): E.g.: "The administration-side panels are organised by **Content**, **Presentation**, and **Admin** (and **Extensions for admin-side plugins). (As the example shows, you may use "admin-side" when used as an ajective, due to it's popularity and convenience, but writing it out fully as "administration-side" is always preferred.)
+** 
+* When referring to admin-side panel names, panel section headers, form control labels, and button labels, spell the name exactly as it appears in the panel and make it bold (double-asterisks each side in Textile):
+** Non-linked text: E.g.: "The articles table on the **Articles** panel shows article IDs, titles, dates posted, the sections they're in, and their current status.@
+** Linked text: E.g.: @See all your articles listed in the **"Articles":#** panel.@
+* When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: @You can control widowed words in article titles by selecting "Yes" on the "__Prevent widowed words in article titles?__" preference.@ 
+* When referring to a form control options (e.g, select-menu options, radio button options, etc) or any other non-header UI dialogue, quote the text and leave it in normal format. E.g.: @When you're ready to publish your draft, change status to "Live" and click the *Save* button*.@
+* When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.[2]
+* When referring to file names, make them italic (double underscores) and include the extension. E.g.: __.htaccess__ and __index.php__. (Do not make them appear as code, unless they are part of a code snippet.)
+
+fn1. Plugin authors must follow the same editorial rules in their "plugin help files":http://docs.textpattern.io/development/plugin-template-help.
+
+fn2. There are four CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type: %(information)information%, %(success)success%, %(warning)warning%, and %(error)error%.
+
+h2(). Style and tone
+
+Be human and relaxed, but get straight to the point and out of the way. Leave your personality out of it. If you think you're being funny, you're probably not.
+
+h2(#sec6). Typo/grammar gotchas to watch out for
+
+* User docs are written using "British English spelling and punctuation":https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences conventions. But don't kill yourself over it.
+* Use "login" and "logout" when it's a noun (e.g. "the login location"). 
+* Use "log in" and "log out" when it's a verb (e.g. "after you log in" or "after logging in").
+* Do not use "tab" -- use "panel" -- when talking about the admin-side panels.[3] The only exception is you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab").[4]
+
+fn3. The presentational theme of the admin-side was originally conceived as a set of manilla file folders, with each region label depicted as a folder “tab”. This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as “tabs” even though they may use an admin theme that does not depict the file folder concept. New docs should not perpetuate that false concept and terminology, particularly as the file folder concept is not depicted in the admin-side navigation of the official admin-side theme -- Hive. The use of “tab” in the admin-side UI, such as in preferences, help dialogue, and so forth, is probably only clear to veteran Textpattern users. When/if the admin-side UI is cleaned of all use of the word "tab", then docs can be fully cleaned of the use as well, but we can get most of the way there by only using "tab" when it's in direct reference of an UI element label.
+
+fn4. These uses of "tab" in the admin-side UI preferences, for example, should be treated as bugs that need fixed, and issues written for them.
 
 
-
-
-
-
-
-
-Quotation marks
-Quotation mark placement
-We won't bother getting complicated[2], but a closing quotation mark should most often be inside (per British English conventions) the trailing punctuation of a clause or phrase, not outside (per American English conventions).
-Yes → Expand the header reading "Textile help".
-Yes → Expand the header reading "Textile help", then click the More... link.
-No → Expand the header reading "Textile help," then click the More... link.
-Quotation mark style
-Use straight quotation marks in the wiki instead of curly quotation marks. While the latter are attractive for regular text copy, they can complicate code (such as when copy/pasting wiki content to a text editor). Straight quotations marks may prove best for documentation portability over the long-term.
-Recommended → The link label reads "see more", but see more of what?
-Not recommended → The link label reads “see more”, but see more of what?
-
-
-(Quotations marks enlarged here for readability.)
-Serial commas
-The serial comma is probably the most debated grammatical convention ever, but when it comes down to it, serial comma's only need to be used when doing so clarifies the intended meaning of a given phrase. That means a judgement call needs made every time. Chances are good that the more complex your phrase structure, the more likely you'll need a serial comma.
-An example where a serial comma is not needed... 
-Separating content, presentation and behaviour is always a smart thing to do.
-An example where a serial comma is needed (in this case to show that "macaroni and cheese" is a single preparation)... 
-Today’s lunch special includes meatloaf, macaroni and cheese, and green beans.
-Exclamation points (!)
-Do not use these in normal copy unless absolutely necessary. Nobody likes to be shouted at, unless you’re saying Ka-pow!
-The exception is if the exclamation mark is needed in a code example.
-Spacing post punctuation
-Use a single space following a period, semi-colon, colon, question mark, and an exclamation mark.
-Foreign terms and expressions
-Do not use foreign language words and expressions in the English copy. 
-Foreign terms in localised documentation are unnecessary, and the wiki already has content translation efforts in progress. Use the English language simply and concisely and it will be easier for translators of all languages to understand and translate your text. 
-Latin expressions
-Latin should be avoided except for common abbreviated expressions like e.g., i.e., etc., et cetera, lorem ipsum, and so forth. Always italicise Latin, including abbreviations.
-Point of view (personal pronouns)
-Only write in the second person point of view, using second person pronouns.
-Correct → you, your, yours
-An example of doing it right: 
-"If you want to put your site under subversion but are not comfortable using the command-line, you might try a desktop client like TortoiseSVN for Windows or Versions for Mac."
-Do not write in the first or third person point of view, regardless of whether the pronouns are normative, objective, or possessive. (Remember, there are many contributing authors to the user documentation. The wiki is not your personal website. Don’t talk to readers as if it is.)
-Wrong → 1st person: I, we … me, us … my, mine, our, ours
-Wrong → 3rd person: he, she, they … him, her, them … his, her, hers, their, theirs … it
-An example of doing it wrong:
-"I like to use TortoiseSVN, it suits my needs, but you can use whatever subversion client you want."
-Style and tone
-When writing documentation, be human, but leave your personality out of it. Get straight to the point. There are a lot of contributors to the documentation wiki, and competing personalities are more distracting to readers than helpful.
-Titles and section headers
-(forthcoming)
-Density
-Content density
-Avoid excessive content (especially text) on a given page when possible. If text gets necessarily long, break it into easily scanned sections with headers and/or lists.
-Topic density
-Avoid having too many topics on a single page.
 Capitalisation
 Mainly titles, headings, navigation links, etc. are the issue with capitalisation. Most important is to be consistent, and sentence-case headings are more effective in this respect.
 The logic of using sentence-case for consistency is especially apparent when one in a series of headings is written as a question. 
@@ -262,6 +266,4 @@ References
 3. Gruber, John (2010). Title Junk. Daring Fireball. 21 December 2010
 4. Saloka, Elizabeth (2009). 5 Tips on Working with a Style Guide. Brain Traffic Blog. 18 Dec 2010
 
-
-[2] See http://en.wikipedia.org/wiki/Quotation_mark if you really have nothing better to do.
 
