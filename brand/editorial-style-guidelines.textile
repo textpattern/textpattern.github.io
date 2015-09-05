@@ -26,7 +26,6 @@ On this page:
 ** "Punctuation":#sec1-1
 *** "Quotations":#sec1-1-1
 * "Latin and foreign expressions":#sec2
-** "Latin":#sec2-1
 * "Point of view (personal pronouns)":#sec3
 * "x":#sec1
 * "x":#sec1
@@ -59,67 +58,75 @@ h2(#sec2). Punctuation
 
 h3(#sec2-1). Commas
 
-British English aside, we favor the serial comma (aka, the "Oxford comma"). If you use them every time, you won't be wrong, even if you don't need one. For example, both forms of this sentence are correct, and the serial comma is used in the second:
+British English aside, we favour the serial comma (aka, the "Oxford comma"). If you use them every time, you won't be wrong, even if you don't need one. For example, both forms of this sentence are correct (the serial comma is in the second, between "presentation" and "and"):
 
 bq.. Separating content, presentation and behaviour is always a smart thing to do.
 
 Separating content, presentation, and behaviour is always a smart thing to do.
 
-p. But the opposite is not true. Sometimes a missing serial comma changes the meaning considerably, and there are poignant examples to demonstrate this:
+p. But the opposite is not true. Sometimes a missing serial comma changes the grammar -- thus meaning -- of a phrase considerably, and there are poignant examples to demonstrate this:
 
-bq. I saw Bob's uncle, a boozer and a cruiser in the park, run into the corner deli.
+bq. I saw Bob's uncle, a boozer and a cruiser in the park, climb into that cardboard hut.
 
-Poor Bob's uncle. So, generally speaking, use a serial comma.
+Poor Bob's uncle. He's described there as being a boozer and a cruiser, because of one missing serial comma. But add the serial comma (after "boozer") and you realize the sentence is talking about three different people, though the story is still a bit dark:
+
+bq. I saw Bob's uncle, a boozer, and a cruiser in the park, climb into that cardboard hut. 
+
+So use a serial comma and you'll never be wrong. If you don't, make sure the sentence is grammatically correct.
 
 h3(#sec2-2). Quotations marks
 
-We won't get complicated here, but a closing quotation mark should most often be _inside_ of the trailing punctuation of a clause or phrase, not outside.[1] 
+Without making this overly complicated, a closing quotation mark is most often used _inside_ of the trailing punctuation of a clause or full phrase, not outside, unless the quoted part has it's own punctuation.[1] Also, when quoting a quotation, use double quotation marks for the outer quote, and single quotation marks for the inner quote.
 
-Tip: Be mindful when writing Textile links that your text editor is using straight quotation marks, not curly quotation marks. While the latter are attractive for regular text copy, they won't work for links. Thus straight quotations marks may prove best for documentation portability over the long-term. So you'll have quote marks looking like this:
+For example, here's a normal phrase using quotation marks to indicate an actual preference label (which is how you should indicate UI labels in Textpattern documentation; see section on __User-interface content__). The ending quote mark goes inside the sentence's ending punctuation:
 
-bc. The link label reads "see more", but see more of what?
+bq. Your domain name preference goes in "Site URL".
 
-Instead of this:
+Next is an example using the same preference label _inside_ a quotation having its own ending full-stop. So the label gets single quotation marks, and the ending quotation mark of the outer quote goes _outside_ of the full-stop because it's part of the inner quoted phrase.
 
-bq. The link label reads “see more”, but see more of what? 
+bq. The instruction says, "Put your domain name in 'Site URL'."
 
-fn1. See "$":http://en.wikipedia.org/wiki/Quotation_mark if you really have nothing better to do.
+**Straight vs. curly quotation marks:**
+
+Be mindful when writing Textile links that your text editor is using straight quotation marks, not curly quotation marks. While the latter are attractive for regular text copy, they won't work for links. Thus straight quotations marks may prove best for documentation portability over the long-term. This means you'll have quote marks looking like "this" instead of “this”. 
+
+fn1. See "$":http://en.wikipedia.org/wiki/Quotation_mark for more reference.
 
 h2(#sec3). Point of view (personal pronouns)
 
-Write in the *second-person point of view only*, not first-person or third-person. Most of the words you'll use are "you", "your", and "yours" when talking to the reader.
+Write in the *second-person* point of view only, not first-person or third-person. Use "you", "your", and "yours" when talking to the reader.
 
 For example:
 
 bq. You can change the default landing panel in **Basic** preferences.
 
-Do not write in the first-person point of view, regardless of whether the pronouns are normative, objective, or possessive. In other words, you should never be using these: I/we, me/us, my, mine, our, ours. It's easy to forget and start using "we" and "us", as if you and the reader are working through a problem together. But don't do that. Take the second person stance and empower the reader. Make them feel like their doing it alone by your instruction, because they are. Change "we" to "you", or "our" to "your". 
+Do not write in first-person, regardless of whether the pronouns are normative, objective, or possessive. You should never be using these: I/we, me/us, my, mine, our, ours. It's easy to forget and start using "we" and "us", as if you and the reader are working through a problem together. But don't do that. Take the second person stance and empower the reader. Make them feel like their doing it alone, because they are. Change "we" to "you", or "our" to "your". 
 
-Likewise, do not use the third-person in your copy. So not these words: he, she, they … him, her, them … his, her, hers, their, theirs … it. Too indirect and totally unnecessary.
+Likewise, do not use the third-person in your copy. So don't use these words: he, she, they … him, her, them … his, her, hers, their, theirs … it. They're indirect and totally unnecessary.
 
 h2(#sec3). Latin and foreign expressions
 
-In short, don't use them, with exception to the situations noted for __Latin__. Stick with simple and concise English and your copy will be easier for people to understand and translate, if they desire.
+In short, don't use them, with exception to the __Latin__ notes below. Stick with simple and concise English and your copy will be easier for people to understand (and translate, if they desire).
 
-h3(#sec3-1). Latin
+**Latin:**
 
-Avoid using __Latin__ in course of regular phrases, whether abbreviations or full words -- with the exception to these words, which are fine: "via" and "versus". 
+You're not writing an academic paper, so don't use __Latin__, whether abbreviations or full words, except as follows... 
 
-Instead, use common __Latin__ abbreviations _only_ (in other words, "e.g." and "i.e.") in parenthetical phrases or clauses.
+You may use use "via" and "versus", which are now universally common, and you don't have to italicise them. 
 
-For example, don't do this:
+You may use common __Latin__ abbreviations, but _only_ when used in parenthetical phrases or clauses. For example, do _not_ do this:
 
 bq. The **Content** region panels included **Write**, **Articles**, **Images**, **Links**, etc. [or et cetera.]
 
-Instead, either put the __Latin__ in a parenthetical clause and shorten the list of items to three max:
-
-bq. The **Content** region contains all the content panels (**Write**, **Articles**, **Images**, etc.).
-
-Or replace the __Latin__ and parenthetical clause entirely for a regular English expression:
+The preferred method instead is to replace the __Latin__ and parenthetical clause entirely for a regular English expression, which is a cleaner sentence:
 
 bq. The **Content** region contains all the content panels, like **Write**, **Articles**, **Images**, and so forth.
 
-You don't have to italicise Latin abbreviations in parenthetical breaks, as described, but you do have italicise any __Latin__ used in the normal sentence, if you use it there at all.
+But it would also be okay to put the __Latin__ (abbreviation only) in a parenthetical clause and shorten the list of items to three max:
+
+bq. The **Content** region contains all the content panels (**Write**, **Articles**, **Images**, etc.).
+
+You don't have to italicise Latin abbreviations in parenthetical breaks, as described.
 
 h2(#sec). Textpattern identity
 
