@@ -81,7 +81,7 @@ Do not use → TXP
 Do not use → TxP
 It is common to abbreviate "Textpattern" as Txp or TXP (TxP should never be used as it implies a camel-case spelling). Use this as you like in the Textpattern Support Forum, social channels, or your own websites, but it should not be used in official content. Readers new to the community may be confused by these abbreviations, especially if authors are not using a single abbreviation consistently. Spell the name out and it’s always clear.
 Link labels for Textpattern websites
-Refer to Textpattern locations by their actual name. Ensure site names are capitalised and used consistently.
+Refer to Textpattern locations by their actual name. Ensure site names are capitalized and used consistently.
 
 
 * Wiki (textpattern.net): Use "Textpattern CMS Documentation".
@@ -105,7 +105,7 @@ Default language version
 Default language for written communication should follow the conventions of British English.[1]
 Spelling
 Use British English (en-GB) spelling of words. The most common differences between British English and American English spelling have to do with verbs ending in "...ise" and their related forms, and adjectives and verbs ending in "...our". We're not going to list every possible example, but these should give you an idea:
-en-GB → organise, organiser, organisation, organisational ...
+en-GB → organise, organier, organisation, organisational ...
 en-GB → colour, flavour ...
 en-US → organize, organizer, organization, organizational ...
 en-US → color, flavor ...
@@ -135,7 +135,7 @@ Spacing post punctuation
 Use a single space following a period, semi-colon, colon, question mark, and an exclamation mark.
 Foreign terms and expressions
 Do not use foreign language words and expressions in the English copy.
-Foreign terms in localised documentation are unnecessary, and the wiki already has content translation efforts in progress. Use the English language simply and concisely and it will be easier for translators of all languages to understand and translate your text.
+Foreign terms in localized documentation are unnecessary, and the wiki already has content translation efforts in progress. Use the English language simply and concisely and it will be easier for translators of all languages to understand and translate your text.
 Latin expressions
 Latin should be avoided except for common abbreviated expressions like e.g., i.e., etc., et cetera, lorem ipsum, and so forth. Always italicise Latin, including abbreviations. When using e.g. and i.e. the British English convention should be adhered to (there should be no comma after these abbreviations).
 Point of view (personal pronouns)
@@ -164,7 +164,7 @@ Correct → Why use the text editor?
 So it makes sense to use sentence-case for non-question headings too.
 Correct → How to use the tab builder
 Correct → About us
-This does not mean proper nouns should not be capitalised.
+This does not mean proper nouns should not be capitalized.
 Correct → How to use Textpattern’s text editor
 Wrong → How to use textpattern’s text editor
 Wrong → Why use textile?
@@ -193,7 +193,7 @@ Correct → You can edit article comments in the Comments panel.
 Wrong → Photos and other images are uploaded in the Images (panel).
 Wrong → You can edit article comments in the Comments (admin-side) panel.
 Textpattern terms as semantical (non-linked) references
-Certain panel names—often considered to be Textpattern's semantical features—have a lot of similarity with general web terms, and thus can be easily confused if not clearly distinguished in documentation. Textpattern terms used in context of semantics, but not linked to panel documentation pages, should be capitalised and italicised.
+Certain panel names—often considered to be Textpattern's semantical features—have a lot of similarity with general web terms, and thus can be easily confused if not clearly distinguished in documentation. Textpattern terms used in context of semantics, but not linked to panel documentation pages, should be capitalized and italicized.
 Correct → All Textpattern Sections must have a Page and Style associated to it.
 Wrong → All Textpattern Sections must have a Page and Style associated to it.
         (Because it suggests the context of an non-linked panel, which shouldn't exist.)
@@ -204,9 +204,9 @@ Wrong → All Textpattern Sections must have a page and style associated to it.
         (Because there is no distinction from any other context.)
 Non-Textpattern terminology
 Use these word constructs when used at all in text.
-* When referring to the World Wide Web or Internet, capitalise the world.
+* When referring to the World Wide Web or Internet, capitalize the world.
    * The Web (not The web)
-* When "web" is a regular (object) noun, do not capitalise it.
+* When "web" is a regular (object) noun, do not capitalize it.
    * website (not web site); or Website when beginning a sentence.
 Versioning
 The proper way write the version releases of Textpattern. This is less a stylistic issue and more a Textpattern development policy; however, it’s relevant to the template:Txp current version that provide this dynamic value in multiple places in documentation. Ensure the version is correct in this template against the current Textpattern release.

@@ -29,9 +29,9 @@ Users typically install Textpattern in the root location of a website's domain b
 
 fn1. See "Textpattern security":../security/ if you're worried about the login location being common knowledge.
 
-h2(#sec2). Admin-side organisation
+h2(#sec2). Admin-side organization
 
-The administration side is organised into three primary regions: **Content**, **Presentation**, and **Admin**.[2] Each region has a set of working panels, listed below, one of which serves as the default landing location for that region. A tertiary set of panels exists in the case of the **Admin** section's **Preferences** panels:
+The administration side is organized into three primary regions: **Content**, **Presentation**, and **Admin**.[2] Each region has a set of working panels, listed below, one of which serves as the default landing location for that region. A tertiary set of panels exists in the case of the **Admin** section's **Preferences** panels:
 
 * Content
 ** Articles
@@ -64,7 +64,7 @@ h2(#sec3). First tasks after installation or upgrade
 
 h3. Language selection
 
-English is the default installation language for the administration side of Textpattern. 
+English is the default installation language for the administration side of Textpattern.
 
 **Changing the default language:**
 
@@ -76,9 +76,9 @@ After installing the additional language(s) you want, override the English defau
 
 You won't be auto-directed to the **Update languages** panel with each update of your Textpattern installation, but go there anyway when you do update because language packs may have been modified since Textpattern's last version release and you want to implement them if so. You'll easily see the languages you initially installed because they will be labeled as "Update" instead of "Install". Update them all and click the **Save** button when done.
 
-h3. Configuration of site identity and publishing behavior
+h3. Configuration of site identity and publishing behaviour
 
-Your next stop after languages is **"Basic preferences":admin/basic-prefs-panel.textile** to configure site identity values, choose time zones and date formats, set necessary file paths, establish desired publishing behaviour, and so forth. 
+Your next stop after languages is **"Basic preferences":admin/basic-prefs-panel.textile** to configure site identity values, choose time zones and date formats, set necessary file paths, establish desired publishing behaviour, and so forth.
 
 Don't worry about getting everything perfect the fist pass. Some things won't be applicable anyway until you've planned your website architecture. Jut focus on the things that you know can be set, and save all changes.
 
@@ -88,7 +88,7 @@ When basic preferences are set, go to the **"Diagnostics":admin/diagnostics-pane
 
 h3. Build your architecture
 
-When all diagnostics checks are clear, you're ready to build your site architecture and presentation. Building publishing architectures with Textpattern requires time learning and tinkering. There's no direct 1-2-3 method for it. But the learning is fun, and once you understand how Textpattern structures content and puts it together, you'll thank yourself for choosing such an elegant system. 
+When all diagnostics checks are clear, you're ready to build your site architecture and presentation. Building publishing architectures with Textpattern requires time learning and tinkering. There's no direct 1-2-3 method for it. But the learning is fun, and once you understand how Textpattern structures content and puts it together, you'll thank yourself for choosing such an elegant system.
 
 For further orientation on publishing architecture basics, see "administration highlights":administration-highlights.textile.
 

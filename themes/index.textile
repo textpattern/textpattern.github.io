@@ -4,7 +4,7 @@ category: themes
 published: true
 title: "Theme design"
 tags:
-  - themes 
+  - themes
   - presentation
   - design
   - skin
@@ -14,7 +14,7 @@ tags:
 
 h1. Theme design [todo]
 
-Beginning with Textpattern version 4.5, there will be some exciting improvements with the underlying markup of Textpattern's default front- and admin-side markup, and even more in version 4.6, _et cetera_. There will even be new default front- and admin-side versions of the *_Hive_* theme in core. This means it will be considerably easier to make custom themes of your own that will have all the modern code, semantics, and functionality already in them (like responsive behavior). All you need to do is create beautiful skins on top of the code.
+Beginning with Textpattern version 4.5, there will be some exciting improvements with the underlying markup of Textpattern's default front- and admin-side markup, and even more in version 4.6, _et cetera_. There will even be new default front- and admin-side versions of the *_Hive_* theme in core. This means it will be considerably easier to make custom themes of your own that will have all the modern code, semantics, and functionality already in them (like responsive behaviour). All you need to do is create beautiful skins on top of the code.
 
 h2(#sec1). Front-end theme design
 

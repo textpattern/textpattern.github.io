@@ -4,7 +4,7 @@ category: development
 published: true
 title: "Textpattern plugin development"
 tags:
-  - development 
+  - development
   - plugins
 ---
 
@@ -46,15 +46,15 @@ h2(#sec2). Developer rules of the road
 
 More like four strong recommendations, to help ensure you're producing plugins that people will use. And that's the whole point, right?
 
-h3(#sec2-1). Avoid reinventing the wheel 
+h3(#sec2-1). Avoid reinventing the wheel
 
-While reinventing the wheel is a good way to learn, it's not so good for making useful or popular plugins. If you're plugin does what another plugin already does, few users will take the time to install and try it unless it's _extremely_ innovative in some way. We recommend that before you start developing, spend some time researching what plugins exist, what functionality they provide, and how well they're working for people (often indicated by how popular they are). 
+While reinventing the wheel is a good way to learn, it's not so good for making useful or popular plugins. If you're plugin does what another plugin already does, few users will take the time to install and try it unless it's _extremely_ innovative in some way. We recommend that before you start developing, spend some time researching what plugins exist, what functionality they provide, and how well they're working for people (often indicated by how popular they are).
 
-Here's the visible approach to plugin conception that can help you make a good choice... 
+Here's the visible approach to plugin conception that can help you make a good choice...
 
 When plugin ideas aren't conceived quietly in the minds of individuals and built to fruition without a lot of fanfare (a path usually taken when a developer needs the functionality regardless of whether the community does or not), they often begin as a core "feature idea":http://forum.textpattern.com/viewforum.php?id=2 ("a shunned one":http://docs.textpattern.io/development/plugin-vs-core), or "plugin discussion":http://forum.textpattern.com/viewforum.php?id=13. Bouncing plugin ideas off the community first is a good way to gauge whether a plugin idea has merit -- the more interest and constructive feedback you get, the more likely the plugin is worth building.
 
-If you do throw caution to the wind and reinvent the wheel anyway, make sure you're ready to raise the bar. Somebody has to eventually. 
+If you do throw caution to the wind and reinvent the wheel anyway, make sure you're ready to raise the bar. Somebody has to eventually.
 
 h3(#sec2-2). Do it the Textpattern way
 
@@ -73,7 +73,7 @@ Templates come from the trials and errors of those who came before you. Thus usi
 
 * "Plugin user-help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines (and template)
 
-h3(#sec2-4). Write clear and concise plugin help 
+h3(#sec2-4). Write clear and concise plugin help
 
 Yes, we're emphasising this. Don't be one of _those_ developers that assumes everyone knows what you know -- the opposite is true. People won't use your plugin (innovative or not) if you don't explain how it works. You can avoid fielding a lot of unnecessary questions in the support forum and empower users by producing good plugin user instructions to begin with. Use the template to ensure your plugin instructions are consistently structured and properly formatted. Here it is again:
 
@@ -103,13 +103,13 @@ Plugins can also be public-side or admin-side, or be one of several types that c
 
 h3(#sec3-2). Public-side plugins
 
-Public-side (aka "client-side" or "front-side") plugins are those that enable content output on the front-side of a website, often through specialised tags, which a website designer can use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
+Public-side (aka "client-side" or "front-side") plugins are those that enable content output on the front-side of a website, often through specialized tags, which a website designer can use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
 
 * "Public-side plugin tutorial":http://docs.textpattern.io/development/public-side-plugin-tutorial -- A basic tutorial to learn the ropes of the easiest kind of plugin to build.
 
 h3(#sec3-3). Admin-side plugins
 
-Admin-side plugins provide site administrators and designers the ability to alter the "admin-side":http://docs.textpattern.io/administration/ UI and/or functionality in some way. 
+Admin-side plugins provide site administrators and designers the ability to alter the "admin-side":http://docs.textpattern.io/administration/ UI and/or functionality in some way.
 
 Admin-side plugins often make use of the **"Extensions":http://docs.textpattern.io/administration/extensions/** region. In other words, if an admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the Extensions region.
 
@@ -125,7 +125,7 @@ When developing your plugins, you will apply your prefix in:
 * The database table and indices names.
 * The names of stored preferences in the @_txp_prefs_@ table and/or the @$prefs array;@.
 * Any global JavaScript variables or function names you use for modifying the backend or adding features to the front-end.
-* IDs and, to some extent, classes of HTML elements that you add to the backend interface.[2] 
+* IDs and, to some extent, classes of HTML elements that you add to the backend interface.[2]
 * URL parameter names. Replace @?foo=bar&baz=1@ with @?abc_foo=bar&abc_baz=1@, where "@abc@" would be your own prefix.
 
 fn2. The exception to this is if an element of your markup is logically similar to an already existing core element and you wish it to be styled in the same way by themes. Doing this saves theme designers from having to write specific rules to target your plugin's markup.
@@ -154,9 +154,9 @@ Understanding how plugins are loaded, also shows how you can write â€œon demandâ
 
 h2(#sec6). Callbacks
 
-A callback is essentially an instruction (written as a function) that your plugin follows to execute some _events_ (and _steps_) -- either @$event@ by itself or combined with a @$step@. You hook into these known points to choose where and when your plugins run. 
+A callback is essentially an instruction (written as a function) that your plugin follows to execute some _events_ (and _steps_) -- either @$event@ by itself or combined with a @$step@. You hook into these known points to choose where and when your plugins run.
 
-The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callback actions used in Textpattern, organised by public-side, admin-side, plugin, and function- and tag-based callbacks.[3]
+The *"Core callbacks reference":http://docs.textpattern.io/development/core-callbacks-reference* provides complete details for all callback actions used in Textpattern, organized by public-side, admin-side, plugin, and function- and tag-based callbacks.[3]
 
 fn3. There's also the "Admin-side events and steps":http://docs.textpattern.io/development/admin-side-events-and-steps listing for admin-side plugins specifically. This would correspond with the various "admin-side callbacks":http://docs.textpattern.io/development/core-callbacks-reference#sec2 in the __Core callbacks reference__, but it doesn't provide the explanatory details like the callbacks reference does.
 
@@ -176,13 +176,13 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | 3 | @$step@ (admin-side only) | Name of the associated core _step_. Not always required. |
 | 4 | @$pre=@ (admin-side only) | Designates when @$func@ is called. Values are @0@ (default) or @1@. Not always required. |
 
-notextile. </div> 
+notextile. </div>
 
-*Argument #3:* In admin-side situations, the @$event@ (argument #2) is (disjunctively) divided into _steps_, with each @$step@ pinpointing a particular action or DOM location (e.g. a panel widget or one of its controls). 
+*Argument #3:* In admin-side situations, the @$event@ (argument #2) is (disjunctively) divided into _steps_, with each @$step@ pinpointing a particular action or DOM location (e.g. a panel widget or one of its controls).
 
 *Argument #4:* In admin-side situations, this argument determines when the function is called, with implications for what you can do:
 
-* If @$pre=0@ (default), the function is called _after_ the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM. 
+* If @$pre=0@ (default), the function is called _after_ the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM.
 * If @$pre=1@, the funcntion is called _before_ any part of the page is rendered or executed, allowing you to replace existing panels on the admin-side.
 
 Let's look a few @register_callback()@ examples.
@@ -281,7 +281,7 @@ bc. register_callback('my_install_routine',
    'plugin_lifecycle.abc_plugin', 'deleted');
 register_callback('my_enable_routine',
    'plugin_lifecycle.abc_plugin', 'enabled');;
-register_callback('my_disable_routine', 
+register_callback('my_disable_routine',
    'plugin_lifecycle.abc_plugin', 'disabled');
 
 Textpattern reserves the lower twelve bits of @$plugin['flags']@ for its own use, plugin developers may take advantage of the remaining four (@~PLUGIN_RESERVED_FLAGS@). These might come in handy to trigger some one-time actions, as these bits are copied into the __txp_plugin__ table row for any particular plugin whenever it is uploaded.
@@ -339,7 +339,7 @@ Get your repos here. (Other docs regarding command-line interaction with repos w
 
 **Integration and waypoints:**
 
-These may be useful depending on the kind of plugin you're building. 
+These may be useful depending on the kind of plugin you're building.
 
 * "User role types and privileges":http://docs.textpattern.io/administration/admin/user-role-types-and-privileges (If your plugin will interact with user accounts.)
 * "Database schema reference":http://docs.textpattern.io/development/database-schema-reference (If your plugin will need a database table.)
@@ -354,9 +354,9 @@ These are "questionable":https://github.com/textpattern/textpattern.github.io/is
 
 h2(#sec11). Getting help
 
-If you need a warm shoulder to lean on, subscribe to the "plugin development mailing list":http://lists.textpattern.com/, which might be rather quiet unless you use it. 
+If you need a warm shoulder to lean on, subscribe to the "plugin development mailing list":http://lists.textpattern.com/, which might be rather quiet unless you use it.
 
-The Textpattern Support Forum, notably the "Plugin discussions":http://forum.textpattern.com/viewforum.php?id=13 area, is a good place to post questions too. 
+The Textpattern Support Forum, notably the "Plugin discussions":http://forum.textpattern.com/viewforum.php?id=13 area, is a good place to post questions too.
 
 h2(#sec12). External reading
 

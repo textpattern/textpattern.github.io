@@ -4,7 +4,7 @@ category: development
 published: true
 title: "Core callbacks reference"
 tags:
-  - development 
+  - development
   - plugins
   - callbacks
   - core
@@ -12,7 +12,7 @@ tags:
 
 h1. Core callbacks reference
 
-This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their "events and steps":http://docs.textpattern.io/development/events-and-steps. 
+This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their "events and steps":http://docs.textpattern.io/development/events-and-steps.
 
 On this page:
 
@@ -37,7 +37,7 @@ h4. __publish.php__
 [todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-	
+
 |_. @$event@ |_. When it occurs |_. What it allows/does |
 | @pretext@ | At the very top of the  @pretext()@ function, just after the prefs have been extracted. | - |
 | @pretext_end@ | Just after @pretext()@ has run but before its variables have been extracted into the global scope. | Overrides anything set in @pretext()@ or adds variables to it. |
@@ -97,7 +97,7 @@ notextile. </div>
 
 h2(#sec2). Admin-side callbacks
 
-Most callbacks have to do with the admin-side, organised below as regular, criteria, validation, layout, and theme. 
+Most callbacks have to do with the admin-side, organized below as regular, criteria, validation, layout, and theme.
 
 Admin-side callbacks are easy to recognize in the address bar of your browser. If you click on any admin-side panel link, you'll see the url contains _?event=panelname_, and if you click on any link in that panel, you'll see _?event=panelname&step=anothername_. Those values correspond to the @$event@ and @$step@ parameters you can use in "plugin development":http://docs.textpattern.io/development/. In fact, they will call any user-defined function that is registered for said @$event@ and @$step@, allowing you to add your own _events_ and _steps_ as you need them.
 
@@ -146,7 +146,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | @article_posted@ | - | Immediately after article creation. | - |
 | @article_saved@ | - | Immediately after article update/save. | - |
 | ping | - | Just before a ping notification is sent upon publication of an article. | You may intercept the ping and provide your own. |
-| @article_ui@ | @partials_meta@ | - | Alters or augments the interface, usually based on the data sent to/from the AJAX save process. Argument #3 is the record set of the article being edited. Argument #4 is the partials array comprised of a *_key_* (unique name of the item available to alter), then an array: *_mode_* (the mechanism by which the partial may be updated), *_selector_* (the wholly encapsulated DOM selector to which the partial applies), *_callback_* (the callback function to utilise to update the nominated part of the interface), and *_html_* (an optional return value of the callback function). |
+| @article_ui@ | @partials_meta@ | - | Alters or augments the interface, usually based on the data sent to/from the AJAX save process. Argument #3 is the record set of the article being edited. Argument #4 is the partials array comprised of a *_key_* (unique name of the item available to alter), then an array: *_mode_* (the mechanism by which the partial may be updated), *_selector_* (the wholly encapsulated DOM selector to which the partial applies), *_callback_* (the callback function to utilize to update the nominated part of the interface), and *_html_* (an optional return value of the callback function). |
 
 notextile. </div>
 
@@ -285,7 +285,7 @@ notextile. </div>
 
 h3(#sec2-2). Admin-side criteria callbacks
 
-These callbacks allow you to alter the criteria used in the various panels. You can append SQL to the criteria to apply additional filtering. 
+These callbacks allow you to alter the criteria used in the various panels. You can append SQL to the criteria to apply additional filtering.
 
 Note the criteria is _appended_, so existing search parameters are honoured. Therefore your returned statement should begin with @" AND ..."@. If you wish to ignore any previous filtering, begin @" AND 1 AND ..."@.
 
@@ -318,7 +318,7 @@ If you're developing plugins, you may wish to open up or restrict data in certai
 
 These additional arguments are all passed by reference to your application, so you can alter them directly:
 
-* Argument #3 is the incoming array of values posted from the save operation, unsanitized. 
+* Argument #3 is the incoming array of values posted from the save operation, unsanitized.
 * Argument #4 is the array of constraints.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
@@ -337,15 +337,15 @@ h3(#sec2-4). Admin-side user-interface callbacks
 
 These callbacks allow you to modify the admin-side panels in some way by targeting their associated widgets or individual controls. Modifications include:
 
-* adding new elements, 
-* replacing elements, or 
+* adding new elements,
+* replacing elements, or
 * changing existing elements.
 
 These callbacks are grouped here by the panel they are associated with.
 
 h4. Write panel
 
-All calls are made to the __include/txp_article.php__ file. 
+All calls are made to the __include/txp_article.php__ file.
 
 The same @$event@ is used in each case: @article_ui@.
 
@@ -395,7 +395,7 @@ function abc_altered_status($event, $step, $data, $rs) {
    return $data;
 }
 
-p. We've used @register_callback()@ to define our callback function, and in this case we've employed the @$event@/@$step@ combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, and returns (outputs) the resulting altered list. 
+p. We've used @register_callback()@ to define our callback function, and in this case we've employed the @$event@/@$step@ combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, and returns (outputs) the resulting altered list.
 
 **Example 2: Adding text to the *Textile help* widget**
 
@@ -476,7 +476,7 @@ h4. __include/txp_section.php__
 For the **"Sections":http://docs.textpattern.io/administration/presentation/sections-panel** panel.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-	
+
 |_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | Sections | @section_ui@ | @extend_detail_form@ | Add markup immediately above the **Save** button in the _section edit_ panel. | Argument #3 is empty because there is no default content. Argument #4 contains only the columns _page_ and _css_ when in the default area, and contains all columns at other times. |
 
@@ -489,7 +489,7 @@ h4. __include/txp_admin.php__
 For the **"Users":http://docs.textpattern.io/administration/admin/users-panel** panel.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-	
+
 |_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | Users | @author_ui@ | @extend_detail_form@ | Add markup immediately above the author **Save** button. | Argument #3 is empty because there is no default content. |
 
@@ -502,7 +502,7 @@ h4. __include/txp_prefs.php__
 For the Preferences panels ("Basic":http://docs.textpattern.io/administration/admin/basic-prefs-panel and "Advanced":http://docs.textpattern.io/administration/admin/advanced-prefs-panel).
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-	
+
 |_. Panel |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | Basic | @prefs_ui@ | @gmtoffset@ | Alters or replaces the **Time zone** select list input control (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@timezone_key@ in this case). Argument #5 is the preference's value (i.e. the chosen item). |
 | Basic | @prefs_ui@ | @is_dst@ | Alters or replaces the **DST enabled** radio buttons (not the label). | Argument #4 is the preference name in the 'txp_prefs' table (@is_dst@ in this case). Argument #5 is the preference's value (i.e. the numerical state of the radio button). |
@@ -523,7 +523,7 @@ h4. __lib/txplib_theme.php__
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
-| @admin_side@ | @theme_name@ | Alters a theme's name when it is being initialised. | There is no argument #4. |
+| @admin_side@ | @theme_name@ | Alters a theme's name when it is being initialized. | There is no argument #4. |
 
 notextile. </div>
 
@@ -543,7 +543,7 @@ h4. __lib/txplib_html.php__
 [todo:intro para about what this callback is concerned with]
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-	
+
 |_. @$event@ |_. @$step@ |_. What it allows/does |_. Argument notes |
 | admin_side | footer | Replaces the standard @end_page@ footer with something of your choosing. Theme authors do this by writing a @footer()@ function in their theme's PHP file. There is no spoon. | - |
 | some_event_ui | upload_form | Alters or replaces Textpattern's standard upload forms throughout the admin side. @some_event@ is the name of the event on the panel upon which the input form appears (e.g. on the **Files** panel, the event is @file@ so the @pluggable_ui()@ event name is @file_ui@). | Argument #4 contains the remainder of the arguments to the @upload_form()@ function (i.e. 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class'). |

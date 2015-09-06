@@ -19,7 +19,7 @@ h2(#sec1). Syntax
 
 bc. <txp:else />
 
-The *else* tag is a _single_ tag that is used within a containing conditional tag to provide the means to assign default, or alternative, behavior when the condition in the surrounding tag is *not* met.
+The *else* tag is a _single_ tag that is used within a containing conditional tag to provide the means to assign default, or alternative, behaviour when the condition in the surrounding tag is *not* met.
 
 Visually, this is the general structure in which it is used:
 

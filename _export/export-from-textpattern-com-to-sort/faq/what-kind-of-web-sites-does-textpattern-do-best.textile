@@ -3,7 +3,7 @@ h1. What kind of web sites does Textpattern do best? [todo]
 We receive many questions about Textpattern's strengths and limitations.  Textpattern is best suited for web sites that require several -- though not necessarily all - of the following features:
 
 * News or Weblog-style chronological articles, perhaps organized into several distinct departments or sections.
-* Groups of articles organized by other means, like a FAQ, product catalog or portfolio.
+* Groups of articles organized by other means, like a FAQ, product catalogue or portfolio.
 * Single "static" pages, like an About or Contact page.
 * Images; either attached to articles (as in a photoblog), or displayed in a gallery.
 * File downloads.
@@ -15,7 +15,7 @@ In other words, Textpattern is well suited for:
 * News, magazine, tutorial and review sites
 * Weblogs and photoblogs
 * Web sites for businesses and non-profit organizations
-* Online product catalogs
+* Online product catalogues
 * Portfolio and professional sites
 * Simple portals and file download sites
 

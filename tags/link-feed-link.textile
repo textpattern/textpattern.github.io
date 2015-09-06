@@ -27,7 +27,7 @@ h2(#sec2). Attributes
 Tag will accept the following attributes (*case-sensitive*):
 
 * @category="category name"@
-Restrict to specified category. Note: the category name may be different to the title you typed when you created the category, as the names are sanitised for URL use. Check the "Categories administration panel":../administration/categories-panel to ensure you are using the correct name.
+Restrict to specified category. Note: the category name may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the "Categories administration panel":../administration/categories-panel to ensure you are using the correct name.
 Value: category name.
 Default: current category.
 * @flavor="value"@

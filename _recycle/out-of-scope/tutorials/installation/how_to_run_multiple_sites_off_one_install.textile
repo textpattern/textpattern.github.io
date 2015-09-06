@@ -4,7 +4,7 @@
 
 Please note: While the approach documented here does work, bear in mind that as of Textpattern 4.2.0 there is built-in support for running multiple sites from a single installation. Consult the README.txt file in the *sites* directory of your TXP install for more information.
 
-airweek2006 is a separate website for an airshow that my organisation runs annually. I wanted the airweek2006 website to run from the same installation files that my main site runs from (i.e. "www.example.com/textpattern/":http://www.example.com/textpattern/...), but still have its own sections, admin interface, users etc.
+airweek2006 is a separate website for an airshow that my organization runs annually. I wanted the airweek2006 website to run from the same installation files that my main site runs from (i.e. "www.example.com/textpattern/":http://www.example.com/textpattern/...), but still have its own sections, admin interface, users etc.
 
 The main reason for wanting this is so that I only have to update one set of files each time a new version of Txp comes out. I wanted the airweek site separate from the main one because the airshow site is only active for a part of the year and I prefer keeping its users and content completely separate from the main site.
 

@@ -31,7 +31,7 @@ Use specified form template to process each comment.
 Default: @comments@.
 * @label="text"@
 Label that appears on the 'Preview' button.
-Default: @Preview@ (localised).
+Default: @Preview@ (localized).
 
 h3. Common presentational attributes
 

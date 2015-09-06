@@ -37,7 +37,7 @@ h4(#forms). Forms
 
 h4(#tags). Tags
 
-Tags are Textpattern's own type of markup syntax that work interchangeably with HTML. There is a variety of Tag types, all of which provide a seemingly infinite number of ways to construct website architecture and content publishing behavior. Not the least of which, Tags are the means for positioning and inserting Form content into your various Page template locations. The more you learn about Textpattern's Tags, the more adept at using Textpattern you will become.
+Tags are Textpattern's own type of markup syntax that work interchangeably with HTML. There is a variety of Tag types, all of which provide a seemingly infinite number of ways to construct website architecture and content publishing behaviour. Not the least of which, Tags are the means for positioning and inserting Form content into your various Page template locations. The more you learn about Textpattern's Tags, the more adept at using Textpattern you will become.
 
 h4(#categories). Categories
 

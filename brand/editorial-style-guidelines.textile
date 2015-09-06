@@ -18,9 +18,9 @@ tags:
 
 h1. Textpattern editorial style guide
 
-These guidelines concern all text content published on Textpattern platforms, and any outbound content for marketing reasons. Following these guidelines will help you produce accurate, clear, and concise copy that Textpattern audiences will find easier to read, translate, understand, and use. 
+These guidelines concern all text content published on Textpattern platforms, and any outbound content for marketing reasons. Following these guidelines will help you produce accurate, clear, and concise copy that Textpattern audiences will find easier to read, translate, understand, and use.
 
-The main sections are organised alphabetically by topic, which may be different from what you expect, but it should help you scan entries faster and thus be more usable (feedback on your experience is welcome).  
+The main sections are organised alphabetically by topic, which may be different from what you expect, but it should help you scan entries faster and thus be more usable (feedback on your experience is welcome).
 
 On this page:
 
@@ -46,13 +46,13 @@ bq.. Separating content, presentation and behaviour is always a smart thing to d
 
 Separating content, presentation, and behaviour is always a smart thing to do.
 
-p. If you write a sentence like that either way, it's fine. If you write a sentence without a serial comma and a Textpattern editor later changes it to have one, just look the other way and ignore it, because it's better to have a serial comma than not. 
+p. If you write a sentence like that either way, it's fine. If you write a sentence without a serial comma and a Textpattern editor later changes it to have one, just look the other way and ignore it, because it's better to have a serial comma than not.
 
 The opposite is not true. Sometimes a missing serial comma changes the meaning of a phrase considerably, with unintended consequences, and there are poignant examples to demonstrate this:
 
 bq. I saw Bob's uncle, a boozer and a cruiser in the park, climb into that cardboard hut.
 
-Poor Bob's uncle. He's described there as being a boozer and a cruiser because of a missing serial comma. But add the serial comma (after "boozer") and you realize the sentence is talking about three different people, though the story is still a bit dark. 
+Poor Bob's uncle. He's described there as being a boozer and a cruiser because of a missing serial comma. But add the serial comma (after "boozer") and you realize the sentence is talking about three different people, though the story is still a bit dark.
 
 Use a serial comma and you'll never be wrong. If you don't use one, make sure the sentence is grammatically correct, or you could end up like Bob's uncle.
 
@@ -75,7 +75,7 @@ fn1. And there's the fact Dean Allen, Textpattern's creator, is Canadian, and Ca
 
 h2(#spell). Spellings
 
-There are many differences between British and American English with respect to how words are spelled. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com, as described in the "Languages":#lang section of these guidelines. 
+There are many differences between British and American English with respect to how words are spelled. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com, as described in the "Languages":#lang section of these guidelines.
 
 The following table compares conventional patterns of spelling between North American regions, Great Britain, and the Oxford English Dictionary (*en-GB-oxendict*).[2] Use the Oxford conventions when writing Textpattern content.
 
@@ -103,7 +103,7 @@ bq. The instruction says, "Put your domain name in 'Site URL'."
 
 **Straight vs. curly quotation marks:**
 
-Be mindful when writing Textile links that your text editor is using straight quotation marks, not curly quotation marks. While the latter are attractive for regular text copy, they won't work for links. Thus straight quotations marks may prove best for documentation portability over the long-term. This means you'll have quote marks looking like "this" instead of “this”. 
+Be mindful when writing Textile links that your text editor is using straight quotation marks, not curly quotation marks. While the latter are attractive for regular text copy, they won't work for links. Thus straight quotations marks may prove best for documentation portability over the long-term. This means you'll have quote marks looking like "this" instead of “this”.
 
 fn1. See "$":http://en.wikipedia.org/wiki/Quotation_mark for more reference.
 
@@ -115,7 +115,7 @@ For example:
 
 bq. You can change the default landing panel in **Basic** preferences.
 
-Do not write in first-person, regardless of whether the pronouns are normative, objective, or possessive. You should never be using these: I/we, me/us, my, mine, our, ours. It's easy to forget and start using "we" and "us", as if you and the reader are working through a problem together. But don't do that. Take the second person stance and empower the reader. Make them feel like their doing it alone, because they are. Change "we" to "you", or "our" to "your". 
+Do not write in first-person, regardless of whether the pronouns are normative, objective, or possessive. You should never be using these: I/we, me/us, my, mine, our, ours. It's easy to forget and start using "we" and "us", as if you and the reader are working through a problem together. But don't do that. Take the second person stance and empower the reader. Make them feel like their doing it alone, because they are. Change "we" to "you", or "our" to "your".
 
 Likewise, do not use the third-person in your copy. So don't use these words: he, she, they … him, her, them … his, her, hers, their, theirs … it. They're indirect and totally unnecessary.
 
@@ -125,9 +125,9 @@ In short, don't use them, with exception to the __Latin__ notes below. Stick wit
 
 **Latin:**
 
-You're not writing an academic paper, so don't use __Latin__, whether abbreviations or full words, except as follows... 
+You're not writing an academic paper, so don't use __Latin__, whether abbreviations or full words, except as follows...
 
-You may use use "via" and "versus", which are now universally common, and you don't have to italicise them. 
+You may use use "via" and "versus", which are now universally common, and you don't have to italicise them.
 
 You may use common __Latin__ abbreviations, but _only_ when used in parenthetical phrases or clauses. For example, do _not_ do this:
 
@@ -151,7 +151,7 @@ h3(). Brand name usage
 
 Textpattern is spelled "*Textpattern*". Look at that closely. That's not two words, and there's no capital "p". This isn't WordPress, and "Text" isn't used as an adjective. Nope. Textpattern is proudly all one word with one capital letter -- a proper noun.
 
-Always spell “Textpattern” out fully in official copy. Never abbreviate the name, like Txp, TXP, TxP, txP, or txp (unless your writing Textpattern tags in code examples). While these invented pet uses are convenient in the forum, they lend confusion to brand awareness in official copy. The world is still confused between “Textpattern” vs. “TextPattern”, after all. 
+Always spell “Textpattern” out fully in official copy. Never abbreviate the name, like Txp, TXP, TxP, txP, or txp (unless your writing Textpattern tags in code examples). While these invented pet uses are convenient in the forum, they lend confusion to brand awareness in official copy. The world is still confused between “Textpattern” vs. “TextPattern”, after all.
 
 Good news! Writing the name out fully has the added benefit of helping you see when you’re using the name too repetitively, which is a sentence bloat problem.
 
@@ -159,7 +159,7 @@ Finally, while some feel "Textpattern CMS" is important for search engine rankin
 
 h3(). Platform name usage
 
-When referring to one of the Textpattern platforms, use the proper noun, not the domain name, unless you're specifically naming the domain name, in which case do not abbreviate. 
+When referring to one of the Textpattern platforms, use the proper noun, not the domain name, unless you're specifically naming the domain name, in which case do not abbreviate.
 
 For example, here we name the main site by it's proper noun and clarify the correct _full_ domain name from the other confusing options.
 
@@ -186,11 +186,11 @@ Follows these when writing about Textpattern UIs, which has implications for plu
 * Use "*administration side*" correctly when used as an _adjective_ versus a _noun_:
 ** *noun* form (no hyphen is used): E.g.: "The login to the administration side is located at __/textpattern__." (Write "administration" out fully to distinguish the place from a person ("admin")
 ** "ajective" form (hyphen is used): E.g.: "The administration-side panels are organised by **Content**, **Presentation**, and **Admin** (and **Extensions for admin-side plugins). (As the example shows, you may use "admin-side" when used as an ajective, due to it's popularity and convenience, but writing it out fully as "administration-side" is always preferred.)
-** 
+**
 * When referring to admin-side panel names, panel section headers, form control labels, and button labels, spell the name exactly as it appears in the panel and make it bold (double-asterisks each side in Textile):
 ** Non-linked text: E.g.: "The articles table on the **Articles** panel shows article IDs, titles, dates posted, the sections they're in, and their current status.@
 ** Linked text: E.g.: @See all your articles listed in the **"Articles":#** panel.@
-* When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: @You can control widowed words in article titles by selecting "Yes" on the "__Prevent widowed words in article titles?__" preference.@ 
+* When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: @You can control widowed words in article titles by selecting "Yes" on the "__Prevent widowed words in article titles?__" preference.@
 * When referring to a form control options (e.g, select-menu options, radio button options, etc) or any other non-header UI dialogue, quote the text and leave it in normal format. E.g.: @When you're ready to publish your draft, change status to "Live" and click the *Save* button*.@
 * When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.[2]
 * When referring to file names, make them italic (double underscores) and include the extension. E.g.: __.htaccess__ and __index.php__. (Do not make them appear as code, unless they are part of a code snippet.)
@@ -206,7 +206,7 @@ Be human and relaxed, but get straight to the point and out of the way. Leave yo
 h2(#sec6). Typo/grammar gotchas to watch out for
 
 * User docs are written using "British English spelling and punctuation":https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences conventions. But don't kill yourself over it.
-* Use "login" and "logout" when it's a noun (e.g. "the login location"). 
+* Use "login" and "logout" when it's a noun (e.g. "the login location").
 * Use "log in" and "log out" when it's a verb (e.g. "after you log in" or "after logging in").
 * Do not use "tab" -- use "panel" -- when talking about the admin-side panels.[3] The only exception is you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab").[4]
 
@@ -217,7 +217,7 @@ fn4. These uses of "tab" in the admin-side UI preferences, for example, should b
 
 Capitalisation
 Mainly titles, headings, navigation links, etc. are the issue with capitalisation. Most important is to be consistent, and sentence-case headings are more effective in this respect.
-The logic of using sentence-case for consistency is especially apparent when one in a series of headings is written as a question. 
+The logic of using sentence-case for consistency is especially apparent when one in a series of headings is written as a question.
 Correct → Why use the text editor?
 So it makes sense to use sentence-case for non-question headings too.
 Correct → How to use the tab builder
@@ -257,7 +257,7 @@ Wrong → All Textpattern Sections must have a Page and Style associated to it.
         (Because it suggests the context of an non-linked panel, which shouldn't exist.)
 Wrong → All Textpattern Sections must have a page and style associated to it.
         (Because it lacks capitalisation as used in Textpattern's UI.)
-        
+
 Wrong → All Textpattern Sections must have a page and style associated to it.
         (Because there is no distinction from any other context.)
 Non-Textpattern terminology
@@ -287,5 +287,4 @@ References
 2. Cohen, Georgy (2010). Mandy Brown and Erin Kissane at Content Strategy New England: A Pragmatic Approach to Editorial Style. Georgy Cohen: Writing and Web Communications. 15 Dec 2010.
 3. Gruber, John (2010). Title Junk. Daring Fireball. 21 December 2010
 4. Saloka, Elizabeth (2009). 5 Tips on Working with a Style Guide. Brain Traffic Blog. 18 Dec 2010
-
 

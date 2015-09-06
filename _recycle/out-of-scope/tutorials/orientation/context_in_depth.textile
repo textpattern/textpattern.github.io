@@ -100,7 +100,7 @@ Section is the only required element of global context, so this example represen
 
 h4(#category_context). Category context
 
-Txp version 4.3.0 introduced new context-related behavior, as my "Txp gallery demo":http://ipsedixit.net/txp_gallery/ shows. The context at these two URLs, the canonical version and its messy equivalent, gives an example:
+Txp version 4.3.0 introduced new context-related behaviour, as my "Txp gallery demo":http://ipsedixit.net/txp_gallery/ shows. The context at these two URLs, the canonical version and its messy equivalent, gives an example:
 
 * "$":http://ipsedixit.net/txp_gallery/category/image/sleep/
 * "$":http://ipsedixit.net/txp_gallery/?c=sleep&context=image

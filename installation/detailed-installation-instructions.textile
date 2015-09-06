@@ -16,9 +16,9 @@ h2. Acquisition and unpacking
 
 h2. Getting familiar with the folders and files
 
-All folders and files in the unzipped package are organised under a directory named after the current release. You will install the files and folders contained within this directory; do not install the container directory itself!
+All folders and files in the unzipped package are organized under a directory named after the current release. You will install the files and folders contained within this directory; do not install the container directory itself!
 
-p(alert-block warning). Textpattern is designed to work exactly as the folders and files are organised in the unzipped package, it is critical that you do not move, nor rename, any of the folders or files; doing so will cause Textpattern to not function.
+p(alert-block warning). Textpattern is designed to work exactly as the folders and files are organized in the unzipped package, it is critical that you do not move, nor rename, any of the folders or files; doing so will cause Textpattern to not function.
 
 *The folders/files in the package are:*
 

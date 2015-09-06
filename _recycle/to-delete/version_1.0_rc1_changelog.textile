@@ -7,7 +7,7 @@
 * Fixed a confusing hierarchy rearrangement that came about after deleting an article category
 * Forms, articles, comments and links can now have 'power editing' thrust upon them (actually, you can just delete more than one at a time)
 * Lists in the links editor can now be sorted by name, description or category
-* Made some preliminary steps (notable in content → organise) toward replacing table layouts where they're not implicitly useful with webstandardsy layout
+* Made some preliminary steps (notable in content → organize) toward replacing table layouts where they're not implicitly useful with webstandardsy layout
 * Moved the article list to its own tab ('articles') separate from 'write'
 * Paging through article lists (in the 'article' tab) now retains the current sort-by column and direction preference
 * Per-version updates to the database should now happen transparently: if the software install doesn't match the version indicated in the database, _update.php is automatically run

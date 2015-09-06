@@ -65,7 +65,7 @@ bc. <label>
 <li>Fixed two problems in discuss_edit: first, when comments containing i18n characters were double-escaped in the admin textarea for editing a comment. Second, when an edited comment is saved, characters weren't re-encoded as HTML entities. (zem)</li>
 <li>Fixed txp:recent_comments output, which was failing to display commentator names as before</li>
 <li><p>Having comments presented as a numbered list (using</p>
-bc. 
+bc.
 
 </li>
 </ul>
@@ -76,13 +76,13 @@ bc.       *  tags), the previous hard-coded default, can now be switched off via
         *  It's now easy, via the tag generator, to make displayed article categories, sections, and authors into links to a list of other articles with the same category, section or author
         *  Killed, after much long analysis, the the vapourware concept 'mentions'. Sorry, it was a gaping spam vulnerability waiting to happen. A 'trackback' plugin by kusor is in the works, for those that see a need.
         *  Lots of efficient code refactoring and simplification in txp_category.php, publish.php and many txp_event files (kusor)
-        *  New author login and password change emails are now hooked in to localised languages
+        *  New author login and password change emails are now hooked in to localized languages
         *  plugins: help and edit are more clearly presented, on separate pages
         *  recent_comments now no longer lists comments flagged as not visible (zem)
         *  Removed deprecated txp:paging_link tag
         *  Removed the prefs options for 'use sections' and 'use categories', as this was designed to make things easy for simple sites but in fact ended up causing confusion
         *  Tab index order for form items in article edit window should now behave as expected
-        *  The 'time since' date format is now hooked into the localised language file, so outputting it in most non-english languages should be doable
+        *  The 'time since' date format is now hooked into the localized language file, so outputting it in most non-english languages should be doable
         *  The criteria for saving an article for the first time is now more liberal: articles can be saved with only a title, body or excerpt (zem)
         *  The first time you log into the system after a fresh install or an update, you're redirected to the prefs section
 

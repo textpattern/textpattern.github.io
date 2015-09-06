@@ -26,7 +26,7 @@ bc. <nowiki>[[category:Projects]]</nowiki>
 <li>Provide the following information on your project page so people know what the heck it's about:
 <ul>
 <li>Name of person coordinating the effort, if relevant.</li>
-<li>Names of recognised contributors, if any.</li>
+<li>Names of recognized contributors, if any.</li>
 <li>A problem statement (_i.e._, why are you even starting this project?)</li>
 <li>The objectives you expect to achieve.</li>
 <li>Any supporting information and/or reference.</li>

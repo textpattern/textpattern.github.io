@@ -90,7 +90,7 @@ Allows you to export pages, styles, and forms to an external location to edit in
 
 "mcw_templates-0_2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mcw_templates-0_2.txttxt ("mcw_templates-0_2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mcw_templates-0_2.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -112,7 +112,7 @@ n.n
 
 dwnld links
 
- - 
+ -
 
 4.0.4
 
@@ -134,7 +134,7 @@ Customize the presentation of admin side. Code is stored in database so does not
 
 "hpw_admincss-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:hpw_admincss-0_1.txttxt ("hpw_admincss-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:hpw_admincss-0_1.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -156,7 +156,7 @@ Gives you control over what certain user levels see in the Write and Users tab a
 
 "ied_hide_in_admin-0_1_5.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_hide_in_admin-0_1_5.txttxt ("ied_hide_in_admin-0_1_5.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_hide_in_admin-0_1_5.txtman)
 
- - 
+ -
 
 4.0.4
 
@@ -178,7 +178,7 @@ Provides a variety of password protection (password-only access) to site regions
 
 "ign_password_protect-0_4_2d.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ign_password_protect-0_4_2d.txttxt ("ign_password_protect-0_4_2d.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ign_password_protect-0_4_2d.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -200,7 +200,7 @@ Gives you full control over your Txp database, like a lightweight replacement fo
 
 "rss_admin_db_manager-4_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_db_manager-4_1.txttxt ("rss_admin_db_manager-4_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_db_manager-4_1.txtman)
 
- - 
+ -
 
 4.0.4
 
@@ -222,7 +222,7 @@ The rss_admin_resize plugin allows you to customize the size of the primary text
 
 "rss_admin_resize-0_2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_resize-0_2.txttxt ("rss_admin_resize-0_2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_admin_resize-0_2.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -246,7 +246,7 @@ Create new plugins right in the admin interface. Edit any plugin data. List and 
 
 "ied_plugin_composer-0_4.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_plugin_composer-0_4.txttxt ("ied_plugin_composer-0_4.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_plugin_composer-0_4.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -318,7 +318,7 @@ Allows inserting any piece of an article (title, body, excerpt, etc.) by article
 
 "ied_doarticle-0_2_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_doarticle-0_2_1.txttxt ("ied_doarticle-0_2_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ied_doarticle-0_2_1.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -338,7 +338,7 @@ Used on an individual article page to display a link to the printer friendly ver
 
 0.2
 
- - 
+ -
 
 "pap_printer_friendly-0_2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_printer_friendly-0_2.zipzip ("pap_printer_friendly-0_2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_printer_friendly-0_2.zipman)
 
@@ -390,7 +390,7 @@ The rss_unlimited_categories plugin enables you to assign an unlimited number of
 
 "rss_unlimited_categories-0_3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_unlimited_categories-0_3.txttxt ("rss_unlimited_categories-0_3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:rss_unlimited_categories-0_3.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -412,7 +412,7 @@ A context-sensitive popup category list for Textpattern, shows only categories a
 
 "zem_popup_cat-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_popup_cat-0_1.txttxt ("zem_popup_cat-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_popup_cat-0_1.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -462,7 +462,7 @@ Alternates output based on even- or odd-numbered comments.
 
 "ajw_comment_alt-0_3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comment_alt-0_3.txttxt ("ajw_comment_alt-0_3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comment_alt-0_3.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -484,7 +484,7 @@ Extends Textpattern's RSS &amp; Atom functionality to allow for sitewide, sectio
 
 "ajw_comments_feed-0_5.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comments_feed-0_5.txttxt ("ajw_comments_feed-0_5.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_comments_feed-0_5.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -506,7 +506,7 @@ Helps control comment spam by checking if there are more than a set number of li
 
 "mrw_spamkeywords_urlcount-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mrw_spamkeywords_urlcount-0_1.txttxt ("mrw_spamkeywords_urlcount-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mrw_spamkeywords_urlcount-0_1.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -531,7 +531,7 @@ event.
 
 0.3
 
- - 
+ -
 
 "pap_moderate_comments-0_3.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_moderate_comments-0_3.zipzip ("pap_moderate_comments-0_3.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_moderate_comments-0_3.zipman)
 
@@ -545,9 +545,9 @@ ID#
 
 donate
 
-h3(sectionedit9#countering_textpattern_behavior). Countering Textpattern Behavior
+h3(sectionedit9#countering_textpattern_behaviour). Countering Textpattern behaviour
 
-Plugins Countering Textpattern Behavior
+Plugins Countering Textpattern behaviour
 
 Name
 
@@ -583,7 +583,7 @@ Strips HTML tags that Textpattern automatically adds around content output, such
 
 "etz_striptags-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:etz_striptags-0_1.txttxt ("etz_striptags-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:etz_striptags-0_1.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -683,7 +683,7 @@ Allows you to create a calendar of live articles for a certain month. The calend
 
 "mdp_calendar-1_0.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mdp_calendar-1_0.txttxt ("mdp_calendar-1_0.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mdp_calendar-1_0.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -733,7 +733,7 @@ Helps keep spam efforts blocked in your contact forms.
 
 "pap_contact_cleaner-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_contact_cleaner-0_1.txttxt ("pap_contact_cleaner-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_contact_cleaner-0_1.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -753,7 +753,7 @@ A rebirth of the original zem_contact with some (or many) changes. The reborn ve
 
 4.0.3.17
 
- - 
+ -
 
 "zem_contact_reborn-4_0_3_17.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_contact_reborn-4_0_3_17.zipzip ("zem_contact_reborn-4_0_3_17.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_contact_reborn-4_0_3_17.zipman)
 
@@ -805,7 +805,7 @@ Bringing the "Boxover":http://boxover.swazz.org/ Tooltips script to Textpattern.
 
 "ako_boxover-0_3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_boxover-0_3.txttxt ("ako_boxover-0_3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_boxover-0_3.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -827,7 +827,7 @@ Allows multiple image additions to Textpattern in batch style, and includes a us
 
 "fpx_image_import-0_3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:fpx_image_import-0_3.txttxt ("fpx_image_import-0_3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:fpx_image_import-0_3.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -849,7 +849,7 @@ More powerful image display. Requires Textpattern 4.0.3 or newer.
 
 "upm_image-0_4_3.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:upm_image-0_4_3.txttxt ("upm_image-0_4_3.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:upm_image-0_4_3.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -869,9 +869,9 @@ Minimal image selector. Requires Textpattern 4.0.3.
 
 1.1
 
- - 
+ -
 
- - 
+ -
 
 4.0.3
 
@@ -893,7 +893,7 @@ Integrates your flickr photo sets into your Textpattern interface.
 
 "vdh_flickr-0_8_7.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:vdh_flickr-0_8_7.txttxt ("vdh_flickr-0_8_7.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:vdh_flickr-0_8_7.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -915,7 +915,7 @@ Displays the thumbnail for articles' images meeting various filter criteria with
 
 "wet_thumbfilter-0_4.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_thumbfilter-0_4.txttxt ("wet_thumbfilter-0_4.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_thumbfilter-0_4.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -935,7 +935,7 @@ Creates magazine-style image output.
 
 0.5
 
- - 
+ -
 
 "wlk_mp-0_5.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wlk_mp-0_5.zipzip ("wlk_mp-0_5.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wlk_mp-0_5.zipman)
 
@@ -964,7 +964,7 @@ bc. <txp:article_image />
 
 "zem_article_image-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_article_image-0_1.txttxt ("zem_article_image-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:zem_article_image-0_1.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -1014,7 +1014,7 @@ Extends Atom &amp; RSS functionality to allow for */clean/feed/urls*
 
 "ajw_clean_feed-0_2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_clean_feed-0_2.txttxt ("ajw_clean_feed-0_2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ajw_clean_feed-0_2.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -1036,7 +1036,7 @@ Custom, user defined, permanent links, page link and Syndication Links rules.
 
 See forum thread.
 
- - 
+ -
 
 4.0.3 - 4.0.4
 
@@ -1086,7 +1086,7 @@ Conditionally include enclosed text based on the user agent of the browser viewi
 
 "ako_if_browser-0_2.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_if_browser-0_2.txttxt ("ako_if_browser-0_2.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_if_browser-0_2.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -1130,7 +1130,7 @@ Allows you to integrate an IMDB movie voting feature into your site.
 
 "mem_imdb_votes-0_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mem_imdb_votes-0_1.txttxt ("mem_imdb_votes-0_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mem_imdb_votes-0_1.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -1152,7 +1152,7 @@ Conditionally tests for the current page number being member of a list.
 
 "wet_if_page.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_if_page.txttxt ("wet_if_page.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:wet_if_page.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -1200,7 +1200,7 @@ Allows you to stream .flv videos in Txp.
 
 0.2
 
- - 
+ -
 
 "bas_flvplayer-0_2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_flvplayer-0_2.zipzip ("bas_flvplayer-0_2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_flvplayer-0_2.zipman)
 
@@ -1246,7 +1246,7 @@ Inserts an mp3 audio player (flash) in your pages and articles. Requires the aud
 
 0.2
 
- - 
+ -
 
 "jnm_audio-0_2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:jnm_audio-0_2.zipzip ("jnm_audio-0_2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:jnm_audio-0_2.zipman)
 
@@ -1268,7 +1268,7 @@ Allows you to stream .mp3 files in Txp. Works in conjunction with the "easy musi
 
 0.4
 
- - 
+ -
 
 "bas_emff-0_4.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_emff-0_4.zipzip ("bas_emff-0_4.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:bas_emff-0_4.zipman)
 
@@ -1320,7 +1320,7 @@ A Dynamic Navigation System
 
 "ako_nav-0_9_1.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_nav-0_9_1.txttxt ("ako_nav-0_9_1.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:ako_nav-0_9_1.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -1373,7 +1373,7 @@ bc. <txp:search input />
 
 0.3
 
- - 
+ -
 
 "cbs_live_search-0_3.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:cbs_live_search-0_3.zipzip ("cbs_live_search-0_3.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:cbs_live_search-0_3.zipman)
 
@@ -1425,7 +1425,7 @@ Allows you to create subsections, much like Txp's model for handling parented ca
 
 "mtp_subsections-0_1a.txttxt":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mtp_subsections-0_1a.txttxt ("mtp_subsections-0_1a.txtman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:mtp_subsections-0_1a.txtman)
 
- - 
+ -
 
 4.0.3
 
@@ -1473,7 +1473,7 @@ Plugin that enhances speed of your web site and reduces server work by allowing 
 
 0.9.8
 
- - 
+ -
 
 "asy_jpcache-0_9_8.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:asy_jpcache-0_9_8.zipzip ("asy_jpcache-0_9_8.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:asy_jpcache-0_9_8.zipman)
 
@@ -1523,7 +1523,7 @@ Is based on "X-poll":http://www.hotscripts.com/Detailed/41118.html by X-scripts.
 
 0.2
 
- - 
+ -
 
 "pap_xpoll-0_2.zipzip":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_xpoll-0_2.zipzip ("pap_xpoll-0_2.zipman":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=file:pap_xpoll-0_2.zipman)
 

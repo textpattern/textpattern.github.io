@@ -30,7 +30,7 @@ bc. <txp:ako_ifBrowserUA />
 h3(sectionedit4#tags). Tags
 
 <ul>
-<li>cookie - This tag will set a cookie the first time a user views the page, and will only display the enclosed text the first time a user views the page. 1 = on, 0 = off. By default, this behavior is off (0).</li>
+<li>cookie - This tag will set a cookie the first time a user views the page, and will only display the enclosed text the first time a user views the page. 1 = on, 0 = off. By default, this behaviour is off (0).</li>
 <li><p>viewua- This tag will output the user agent of the browser that is being used to view the page. 1 = on, 0 = off. By defualt it is set to off (0). Please note that if this attribute is set to on (1) *the plugin will* *_only_* *output the user agent. Nothing else.* This also does the same thing as calling</p>
 bc. <txp:ako_ifBrowserUA />
 

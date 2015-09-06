@@ -203,7 +203,7 @@ A code snippet might be something like this (though certainly not the only struc
    &lt;txp:article form=&quot;myshortform&quot; status=&quot;sticky&quot; /&gt;
 &lt;/txp:if_article_list&gt;
 
-&lt;!-- now the regular article list --&gt; 
+&lt;!-- now the regular article list --&gt;
 &lt;txp:article limit=5 /&gt;
 </pre>
 
@@ -231,7 +231,7 @@ Additional Controls Toggle See (7). There are more settings, which will be opene
 
 h4(#comments). Comments
 
-*Important note:* The Comments control on the write panel is actually a second-level setting for managing comments at _per article_ level; you should have already configured your settings for first-level (site-level) comment management, which is handled in the "basic_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences panel at “Publish” and “Comments”. There you will find different Comments settings that need your consideration about how to handle comments for all articles in your site by default. If _Publish_ “Accept comments” is “No”, no Comments control will appear in the Write panel. Two of the settings - “On by default?” and “Default invite” - will determine the defaults in the Comments control at article level. Here, as described below, you can adjust the behavior as you desire for a particular article.
+*Important note:* The Comments control on the write panel is actually a second-level setting for managing comments at _per article_ level; you should have already configured your settings for first-level (site-level) comment management, which is handled in the "basic_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences panel at “Publish” and “Comments”. There you will find different Comments settings that need your consideration about how to handle comments for all articles in your site by default. If _Publish_ “Accept comments” is “No”, no Comments control will appear in the Write panel. Two of the settings - “On by default?” and “Default invite” - will determine the defaults in the Comments control at article level. Here, as described below, you can adjust the behaviour as you desire for a particular article.
 
 _Comments_ "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:pointer-comments.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:pointer-comments.png controls two things: With a pair of on/off radio buttons first you either accept or deny comments for the given article. Second is an “Invitation” field that allows you to customize the text for the link that users will see if comments are “on”.
 

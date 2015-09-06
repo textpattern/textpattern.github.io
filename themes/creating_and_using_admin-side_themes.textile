@@ -122,7 +122,7 @@ URL to your home page
 
 version
 
-Some version information that increments as the theme is revised. No versioning convention is enforced. Note that the built-in themes use a programmatic way of displaying the version based on the
+Some version information that increments as the theme is revized. No versioning convention is enforced. Note that the built-in themes use a programmatic way of displaying the version based on the
 
 bc. $prefs
 
@@ -154,7 +154,7 @@ This is out of scope of Textpattern documentation, but if you need help with CSS
 
 h3(sectionedit3#extending_admin_themes_via_inheritance). Extending admin themes via inheritance
 
-You can create new admin-side themes that extend from one of the core themes. This allows you to customise smaller amounts (by extension) while reusing (inheriting) most of the CSS, JavaScript, and so forth from one of the core theme packages.
+You can create new admin-side themes that extend from one of the core themes. This allows you to customize smaller amounts (by extension) while reusing (inheriting) most of the CSS, JavaScript, and so forth from one of the core theme packages.
 
 For example, the *Remora* admin theme makes use of this technique by extending from the *Classic* theme.
 

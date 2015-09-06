@@ -20,7 +20,7 @@ h2(#sec1). Syntax
 
 bc. <txp:text />
 
-The *text* tag is a _single_ tag which is primarily used to return localised language strings from the @txp_lang@ database table.
+The *text* tag is a _single_ tag which is primarily used to return localized language strings from the @txp_lang@ database table.
 
 p(alert-block information). Note: only language strings designated with a type of @common@ or @public@ are available to use. All other language string types are reserved for use within the Textpattern system itself.
 
@@ -37,7 +37,7 @@ Piece of text to display, preferably an item from the @name@ column of the @txp_
 
 h2(#sec3). Examples
 
-h3. Example 1: Display some localised text
+h3. Example 1: Display some localized text
 
 bc. <txp:older>
     <txp:text item="older" />

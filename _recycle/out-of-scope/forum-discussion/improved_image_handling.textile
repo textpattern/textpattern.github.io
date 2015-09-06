@@ -2,7 +2,7 @@
 
 h3(sectionedit1#overview). Overview
 
-Better Image handling seems to be an issue that comes up a lot. Many requests lately seem to end up geared at adding functionality to "upm_img_popper":http://utterplush.com/txp-plugins/upm-img-popper. It seems that better image functionality is definitely a topic that comes up alot so I thought an organised location for discussion would be useful.
+Better Image handling seems to be an issue that comes up a lot. Many requests lately seem to end up geared at adding functionality to "upm_img_popper":http://utterplush.com/txp-plugins/upm-img-popper. It seems that better image functionality is definitely a topic that comes up alot so I thought an organized location for discussion would be useful.
 
 I think we could begin with people listing and explaining ideas and then consolidating and prioritizing towards a working group.  - hakjoon 23:48, 13 February 2006 (GMT)
 
@@ -94,7 +94,7 @@ Modx imagehandling is very comprehensive. On top of the arcticle writing field y
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:modx_image_shot1.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:modx_image_shot1.gif
 
-bc. a popup opens (shot2) 
+bc. a popup opens (shot2)
 
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:modx_image_shot2.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:modx_image_shot2.gif

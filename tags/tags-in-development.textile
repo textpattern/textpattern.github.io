@@ -4,7 +4,7 @@ This page represents tags and attributes added in development versions of Textpa
 
 p(alert-block information). Because we are talking about development, the information here is subject to change.
 
-If you wish to write the documentation for new tags in preparation for the next release, please restrict them to the 'Future tags' category only until the development version becomes stable whereby they can be recategorised in the correct location(s). At that point, remember to also check any example syntax in modified tags to ensure they still follow recommended use and will still work as before.
+If you wish to write the documentation for new tags in preparation for the next release, please restrict them to the 'Future tags' category only until the development version becomes stable whereby they can be recategorized in the correct location(s). At that point, remember to also check any example syntax in modified tags to ensure they still follow recommended use and will still work as before.
 
 h2. New tags
 

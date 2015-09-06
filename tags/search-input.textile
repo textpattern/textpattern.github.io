@@ -30,7 +30,7 @@ Tag will accept the following attributes (*case-sensitive*):
 Creates and labels a button to initiate the search.
 Default: unset (no button is created).
 * @form="form name"@
-Use specified form template to build a customised HTML form.
+Use specified form template to build a customized HTML form.
 Default: @search_input@.
 * @html_id="id"@
 The HTML @id@ attribute assigned to the search form.
@@ -68,7 +68,7 @@ h3. Example 1: Display a search input form
 
 bc. <txp:search_input label="Search" button="Search" size="20" wraptag="div" />
 
-h3. Example 2: Elements required for building a customised HTML search form
+h3. Example 2: Elements required for building a customized HTML search form
 
 You can build your own custom search form by specifying @form="form-name"@ inside the @<txp:search_input />@ tag:
 
@@ -80,7 +80,7 @@ bc. <form action="<txp:site_url />">
     <input name="q" type="search" />
 </form>
 
-When using a customised form template, Textpattern doesn't automatically wrap the HTML form output with @<form>@ tags, thus you need the opening and closing @<form>@ tag pair. The @name="q"@ attribute and value is *required* to initiate a search query.
+When using a customized form template, Textpattern doesn't automatically wrap the HTML form output with @<form>@ tags, thus you need the opening and closing @<form>@ tag pair. The @name="q"@ attribute and value is *required* to initiate a search query.
 
 Other tags used: "site_url":site-url.
 

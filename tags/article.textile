@@ -75,7 +75,7 @@ When outputting search results, include only those articles with 'Include in sit
 Values: @0@ (no) or @1@ (yes).
 Default: @1@.
 * @searchform="form name"@
-The form to be used for your customised search results output.
+The form to be used for your customized search results output.
 Default: @search_results@.
 * @searchsticky="boolean"@
 When outputting search results, include articles with status @sticky@.

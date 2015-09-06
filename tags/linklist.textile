@@ -42,7 +42,7 @@ Values: @category@ (to look in the URL for a category list) and/or @author@ (to 
 Default: @category, author@.
 * @category="category name(s)"@
 Restrict to links from specified categories.
-Values: (comma separated list of) category name(s). *Note:* category names may be different to the 'Title' you typed when you created the category, as the names are sanitised for URL use. Check the "Categories administration panel":../administration/categories-panel to ensure you are using the correct names.
+Values: (comma separated list of) category name(s). *Note:* category names may be different to the 'Title' you typed when you created the category, as the names are sanitized for URL use. Check the "Categories administration panel":../administration/categories-panel to ensure you are using the correct names.
 Default: unset.
 * @form="form name"@
 Use specified form.

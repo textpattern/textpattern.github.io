@@ -87,7 +87,7 @@ If you're unsure, ask either on the "forum":http://forum.textpattern.com/ or on 
 
 *Step 6*
 
-Once you've cleaned out all the files and checked any left on the server as per step 5, upload a clean, fresh copy of the "latest version of Textpattern":http://textpattern.com/download. It is advisable *not* to upload:
+Once you've cleaned out all the files and checked any left on the server as per step 5, upload a clean, fresh copy of the "latest version of Textpattern":http://textpattern.com/download. It is advizable *not* to upload:
 
 * HISTORY.txt
 * README.txt

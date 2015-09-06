@@ -20,7 +20,7 @@ Safari RSS does not appear to output a single useful error message. If Safari RS
 
 h2. My browser tries to download the feed when I click the feed's link.
 
-Depending upon your browser, this is the correct behaviour. More likely than not, your browser is not capable of displaying XML. As the feeds are sent with the *correct* MIME type, your browser offers to download the file, rather than just displaying the raw content.This is the correct behavior, and your feed should work in a proper feed aggregator.
+Depending upon your browser, this is the correct behaviour. More likely than not, your browser is not capable of displaying XML. As the feeds are sent with the *correct* MIME type, your browser offers to download the file, rather than just displaying the raw content.This is the correct behaviour, and your feed should work in a proper feed aggregator.
 
 h2. How can I setup feed autodetection?
 

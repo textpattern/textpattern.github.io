@@ -12,7 +12,7 @@ parameter, which will render an article timestamp in the date/time formats defin
 
 <ul>
 <li>Discrete chunks of PHP should now work on page templates, provided this is turned on in /textpattern/lib/admin_config.php</li>
-<li>Finished preparing another sheaf of embedded text for internationalisation</li>
+<li>Finished preparing another sheaf of embedded text for internationalization</li>
 <li><p>Fixed erroneous tag generation for</p>
 bc. <txp:comment_message_input />
 

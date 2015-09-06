@@ -45,7 +45,7 @@ Most of that is pretty straight forward, but let's touch upon steps 1, 2, and 4 
 
 h3(#sec1-1). Finding plugins
 
-At this time, the Textpattern project doesn't have a centralised repository for all its community-built plugins, but plugin developers (often called "plugin authors") generally proceed by the following process to make their plugins available, and thus for others to find them:
+At this time, the Textpattern project doesn't have a centralized repository for all its community-built plugins, but plugin developers (often called "plugin authors") generally proceed by the following process to make their plugins available, and thus for others to find them:
 
 **Developer websites**. Plugin developers typically make their plugins available at their own websites, and once you know who those plugin developers are, you can find their websites via their forum profiles, and often their specific plugin links in the signatures of their forum posts.
 
@@ -133,7 +133,7 @@ Beyond that, certain columns have particular value.
 
 h3(#sec3-1). Activating a plugin
 
-When you first install a plugin, it's in a non-utilisable state until you activate it. To activate a plugin, click the "No" link in the **Active** column. The link will turn to "Yes" and the plugin is ready to use. To deactivate a plugin, which you might do temporarily when troubleshooting errors in your code that could be related to plugins in some way, click the "Yes" link to toggle it off again.
+When you first install a plugin, it's in a non-utilizable state until you activate it. To activate a plugin, click the "No" link in the **Active** column. The link will turn to "Yes" and the plugin is ready to use. To deactivate a plugin, which you might do temporarily when troubleshooting errors in your code that could be related to plugins in some way, click the "Yes" link to toggle it off again.
 
 h3(#sec3-2). Editing a plugin
 
@@ -143,7 +143,7 @@ fn3. You could also install and used "ied_plugin_composer":http://forum.textpatt
 
 h3(#sec3-3). Plugin help and options
 
-Depending on the plugin, activating it may not make it usable without further effort. Plugins that provide you with specialised functionality through one or more custom tags, for example, will require you to fold those tags into your publishing architecture somehow. It's through use of those tags, and any other constructs the plugin may require, that the plugin will jump to life. To learn how a plugin is supposed to be used, click the "Help" link in the **Manage** column of the table.
+Depending on the plugin, activating it may not make it usable without further effort. Plugins that provide you with specialized functionality through one or more custom tags, for example, will require you to fold those tags into your publishing architecture somehow. It's through use of those tags, and any other constructs the plugin may require, that the plugin will jump to life. To learn how a plugin is supposed to be used, click the "Help" link in the **Manage** column of the table.
 
 Some plugins may also provide an "Options" link next to the "Help" link, which opens a special view. These options are neigher an **"Extensions":http://docs.textpattern.io/extensions/ panel nor Advanced preferences, exactly, but are nevertheless important for helping to make the plugin function as you may need it to.
 

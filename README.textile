@@ -1,6 +1,6 @@
 h1. Textpattern CMS user documentation
 
-See the **"Main Index":index.textile.** 
+See the **"Main Index":index.textile.**
 This is the new user documentation, and it's a work in progress.
 
 On this page are guidelines for doc authors:
@@ -32,7 +32,7 @@ Make doc pages *scannable* with a *consistent structure* across them, as much as
 # Start page with an "h1" header that serves as the document's title.
 # Where it's reasonable to do so, follow the title with a brief introductory paragraph that sums up the page or it's purpose ("intro paragraph example":administration/index.textile).
 # If you have more than three "h2" sections on the page (or three that are kind of long), follow the h1 title (or intro paragraph, see previous example) with an in-page ToC ("ToC example without intro paragraph":security/index.textile). Do this by:
-## adding "On this page:" in normal text, followed by 
+## adding "On this page:" in normal text, followed by
 ## an unordered list of links to the "h2" headers only (e.g. @"Header label":#sec1@), and
 ## use "#sec1", "#sec2", "#sec3", etc as the anchors to make it easy every time (i.e. @h2(#sec1). Header label@).
 # Avoid using h4-h6 header levels, if possible, especially h5-h6. Deep structuring means the copy is too complex for new-user docs. Try and structure content with h2-h3 only (and h4 if really necessary).
@@ -60,12 +60,12 @@ Important rules for consistency, which also has implications for plugin authors.
 
 * Use "*administration side*" correctly when used as an _adjective_ versus a _noun_:
 ** *noun* form (no hyphen is used): E.g.: "The login to the administration side is located at __/textpattern__." (Write "administration" out fully to distinguish the place from a person ("admin")
-** "ajective" form (hyphen is used): E.g.: "The administration-side panels are organised by **Content**, **Presentation**, and **Admin** (and **Extensions for admin-side plugins). (As the example shows, you may use "admin-side" when used as an ajective, due to it's popularity and convenience, but writing it out fully as "administration-side" is always preferred.)
-** 
+** "ajective" form (hyphen is used): E.g.: "The administration-side panels are organized by **Content**, **Presentation**, and **Admin** (and **Extensions for admin-side plugins). (As the example shows, you may use "admin-side" when used as an ajective, due to it's popularity and convenience, but writing it out fully as "administration-side" is always preferred.)
+**
 * When referring to admin-side panel names, panel section headers, form control labels, and button labels, spell the name exactly as it appears in the panel and make it bold (double-asterisks each side in Textile):
 ** Non-linked text: E.g.: "The articles table on the **Articles** panel shows article IDs, titles, dates posted, the sections they're in, and their current status.@
 ** Linked text: E.g.: @See all your articles listed in the **"Articles":#** panel.@
-* When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: @You can control widowed words in article titles by selecting "Yes" on the "__Prevent widowed words in article titles?__" preference.@ 
+* When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: @You can control widowed words in article titles by selecting "Yes" on the "__Prevent widowed words in article titles?__" preference.@
 * When referring to a form control options (e.g, select-menu options, radio button options, etc) or any other non-header UI dialogue, quote the text and leave it in normal format. E.g.: @When you're ready to publish your draft, change status to "Live" and click the *Save* button*.@
 * When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.[2]
 * When referring to file names, make them italic (double underscores) and include the extension. E.g.: __.htaccess__ and __index.php__. (Do not make them appear as code, unless they are part of a code snippet.)
@@ -77,7 +77,7 @@ fn2. There should be three CSS class selectors to use in the Jekyll site that ma
 h2(#sec6). Typo/grammar gotchas to watch out for
 
 * User docs are written using "British English spelling and punctuation":https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences conventions. But don't kill yourself over it.
-* Use "login" and "logout" when it's a noun (e.g. "the login location"). 
+* Use "login" and "logout" when it's a noun (e.g. "the login location").
 * Use "log in" and "log out" when it's a verb (e.g. "after you log in" or "after logging in").
 * Do not use "tab" -- use "panel" -- when talking about the admin-side panels.[3] The only exception is you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab").[4]
 

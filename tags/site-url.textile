@@ -40,7 +40,7 @@ bc. <nav>
     </ul>
 </nav>
 
-A classic example is with navigation links - the idea is that you don't break URL paths after importing a database from local development to live, or visa versa. By using this tag it will automatically be relative to a given site and you'll never have to manually edit broken domain paths again.
+A classic example is with navigation links - the idea is that you don't break URL paths after importing a database from local development to live, or vice versa. By using this tag it will automatically be relative to a given site and you'll never have to manually edit broken domain paths again.
 
 h3. Example 2: HTML header paths
 

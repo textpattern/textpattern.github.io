@@ -2,10 +2,9 @@ h1. How do I select which form is used to display articles? [todo]
 
 The form used to display articles is specified by the @<txp:article />@ tag in your page template. In the default template it looks similar to this:
 
-bq. @<!-- center -->@
-@<div id="content">@
-@<txp:article />@
-@</div>@
+bq. <div id="content">
+    <txp:article />
+</div>
 
 To display articles using a different form, change the @<txp:article />@ tag to specify the form name like this:
 

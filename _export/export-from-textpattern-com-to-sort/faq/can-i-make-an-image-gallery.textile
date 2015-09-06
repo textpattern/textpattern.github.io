@@ -15,7 +15,7 @@ You can use the standard @wraptag@, @break@ and @class@ attributes to control th
 
 2. Create a new section named @gallery@.  Set _Uses page_ to _gallery_.
 
-3. Create one or more new image categories in *textpattern > content > organise*.
+3. Create one or more new image categories in *textpattern > content > organize*.
 
 3. Upload some images via *textpattern > content > images*.  Make sure each one has a thumbnail - you can use the create thumbnail feature - and assign it to one of your image categories.
 

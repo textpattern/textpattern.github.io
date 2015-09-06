@@ -17,7 +17,7 @@ bc. <txp:section_list />
 
 <p>tag, which will output an href list of site sections</p></li>
 <li>Added an option in admin_config to toggle changing the site's 'last updated' stamp whenever a new comment is added</li>
-<li>Added an option to list the count of articles using each article category in the Organise tab</li>
+<li>Added an option to list the count of articles using each article category in the Organize tab</li>
 <li>Added an option to toggle showing an article's current comment count in XML feed titles</li>
 <li><p>Added simple image gallery implementation, using</p>
 bc. <txp:image_index />
@@ -33,7 +33,7 @@ bc. <txp:if_comments>
 
 <p>. When used on an article form, everyting inside this tag will only appear if commenting for the article is open, or was open in the past.</p></li>
 <li>Category popups in the write tab now list alphabetically</li>
-<li>Changed wording and positioning in the Organise tab to improve clarity</li>
+<li>Changed wording and positioning in the Organize tab to improve clarity</li>
 <li>Fixed (for real this time) erroneous slash inserted in 'show site' href</li>
 <li>Fixed an urlencode problem that prevented browsing categories whose names contained an ampersand</li>
 <li>Fixed form misnomer which prevented image categories from being changed</li>

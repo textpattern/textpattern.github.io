@@ -89,5 +89,5 @@ h3(sectionedit4#conditional_comments_tags). Conditional Comments Tags
 
 h3(sectionedit5#conditional_search_tags). Conditional Search Tags
 
-* &lt;"if_search":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_search&gt; ... &lt;"else_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:else:start&gt; ... &lt;/"if_search":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_search&gt; double conditional tag to allow you to customise search results template and main page, even if both share the same template
+* &lt;"if_search":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_search&gt; ... &lt;"else_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:else:start&gt; ... &lt;/"if_search":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_search&gt; double conditional tag to allow you to customize search results template and main page, even if both share the same template
 

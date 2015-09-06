@@ -6,17 +6,17 @@ In this tab you *define categories* for your *articles, links, images and files*
 
 Categorising things makes it easier for both you and your visitors to keep track of different kinds of content. You might, for example, have a category “software” in which you write about your experiments with the latest programs and another category “pets” in which you post stories about your cats.
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organise-all_categories.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organise-all_categories.png
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organize-all_categories.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organize-all_categories.png
 
 h3(sectionedit1#article_categories). Article categories
 
-Article categories allow *organisation of articles by their subject matter*. Once categories are assigned, lists of articles belonging to particular categories can be browsed. It's similar with link-, image-, and file categories: you *group things together by their type or subject* in order to make it easier to organise them or to display them in a way that makes sense to your readers.
+Article categories allow *organization of articles by their subject matter*. Once categories are assigned, lists of articles belonging to particular categories can be browsed. It's similar with link-, image-, and file categories: you *group things together by their type or subject* in order to make it easier to organize them or to display them in a way that makes sense to your readers.
 
 h4(#create_a_new_category). Create a new category
 
 To *create a category* you simply *type its name* in the textfield at the top and click *“create”*. Textpattern then adds the new category to the list.
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organise-article_categories.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organise-article_categories.png
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organize-article_categories.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organize-article_categories.png
 
 Some *changes might occur* if you've chosen a name that has more than one word or if your language is not English: *special characters* such as umlauts (Ã¤, Ã¶, Ã¼) are *converted* into replacement characters (e.g. ae, oe, ue, respectively) and *individual words are linked with hypens*. Category names are also converted to lower case letters.
 
@@ -32,7 +32,7 @@ However, *Texpattern keeps the original names*. Just click on a category name an
 # *parent category*
 # *category title*
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organise-category_details.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organise-category_details.png
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organize-category_details.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organize-category_details.png
 
 The *category name* is the one used in URLs and other technical purposes. It contains no special characters and no spaces.
 
@@ -54,11 +54,11 @@ bc. <txp:category1 />, <txp:category2 /> or <txp:category_list />
 
 h4(#delete_one_or_more_categories). Delete one or more categories
 
-Let's go *back to the category list in the organise tab*.
+Let's go *back to the category list in the organize tab*.
 
 There's *one more function there*: you can *select each category* by clicking the checkbox next to it and with the widget at the bottom of each list you can *delete* the category/categories.
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organise-article_categories-delete.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organise-article_categories-delete.png
+"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organize-article_categories-delete.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organize-article_categories-delete.png
 
 h3(sectionedit2#categories_for_links_images_and_files). Categories for links, images and files
 

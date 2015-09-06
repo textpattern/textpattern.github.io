@@ -80,5 +80,5 @@ h3(sectionedit3#related_plugins). Related Plugins
 
 "tru_tags":http://textpattern.org/plugins/584/tru_tags uses keywords to offer tagging features.
 
-"wet_haystack":http://textpattern.org/plugins/1046/wet_haystack-custom-fulltext-search-index-builder allows site publishers to modify the default search behavior by adding additional article fields to the set of indexed content, including keywords.
+"wet_haystack":http://textpattern.org/plugins/1046/wet_haystack-custom-fulltext-search-index-builder allows site publishers to modify the default search behaviour by adding additional article fields to the set of indexed content, including keywords.
 

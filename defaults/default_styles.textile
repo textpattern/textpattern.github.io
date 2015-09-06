@@ -160,7 +160,7 @@ dd {
 }
 
 /**
- * Italicise definition terms.
+ * Italicize definition terms.
  */
 dt {
   font-style: italic;
@@ -568,7 +568,7 @@ pre code {
 }
 
 /**
- * Harmonise size and style of small text.
+ * Harmonize size and style of small text.
  */
 small,
 figcaption,
@@ -710,7 +710,7 @@ tfoot:last-child {
    ========================================================================== */
 
 /**
- * Italicise definition terms.
+ * Italicize definition terms.
  */
 dt {
   font-style: italic;
@@ -933,7 +933,7 @@ select[multiple] {
 }
 
 /**
- * Normalise styling of `optgroup`.
+ * Normalize styling of `optgroup`.
  */
 optgroup {
   font-family: Arial, Helvetica, sans-serif;
@@ -1428,7 +1428,7 @@ p {
 }
 
 /**
- * Harmonise size and style of small text.
+ * Harmonize size and style of small text.
  */
 footer,
 figcaption,
@@ -1551,7 +1551,7 @@ ol {
 }
 
 /**
- * Normalise margins on `dl` definition lists.
+ * Normalize margins on `dl` definition lists.
  */
 dl {
   padding: 0 0 8pt 1.8em;
@@ -1569,7 +1569,7 @@ table {
 }
 
 /**
- * Harmonise styling for `caption`.
+ * Harmonize styling for `caption`.
  */
 caption {
   font-weight: bold;
