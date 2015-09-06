@@ -77,7 +77,7 @@ h2(#spell). Spellings
 
 There are many differences between British and American English with regard to spelling. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com, as described in the "Languages":#lang section of these guidelines. 
 
-The following table compares conventional patterns of spelling between North American regions, Great Britain, and the Oxford English Dictionary (*en-GB-oxendict*).[2] The words shown are simply representative of all possible words having those respective patterns. Use the Oxford conventions when writing Textpattern content.
+The following table compares conventional patterns of spelling between North American regions, Great Britain, and the Oxford English Dictionary.[2] The words shown are simply representative of all possible words having those respective patterns. Use the Oxford conventions (*en-GB-oxendict*) when writing Textpattern content.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
