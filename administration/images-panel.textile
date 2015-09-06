@@ -9,7 +9,7 @@ Of course you could upload images (using ftp) and place image tags (using HTML) 
 There are three basic things you can do in this panel:
 
 * _Upload_ images
-* _Edit_ image-related information (create a thumbnail, add caption and alternate text, categorise
+* _Edit_ image-related information (create a thumbnail, add caption and alternate text, categorize
 * list and _manage_ your existing images.
 
 (So the images panel in a way combines what for _articles_ is divided in two panels “Write” and “Article”.)

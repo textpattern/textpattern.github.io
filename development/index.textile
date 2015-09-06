@@ -91,7 +91,7 @@ fn1. You can see the code for any installed plugin by clicking its name in the t
 
 h3(#sec3-1). Functional categories
 
-Plugins can be categorised in three functional ways:
+Plugins can be categorized in three functional ways:
 
 * “On demand” (providing tags for __pages__ and __forms__)
 * “Up front” (intercepting page requests; either all or those having special characteristics)

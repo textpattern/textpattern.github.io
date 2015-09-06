@@ -32,7 +32,7 @@ h4(#mp3_tab). MP3 Tab
 
 * Handle uploading even large MP3's
 * Editing ID3-Tags
-* Categorise and/or tag MP3's
+* Categorize and/or tag MP3's
 
 h4(#write_tab). Write Tab
 
