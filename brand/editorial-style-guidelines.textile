@@ -77,7 +77,7 @@ h2(#spell). Spellings
 
 There are many differences between British and American English with respect to how words are spelled. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com, as described in the "Languages":#lang section of these guidelines. 
 
-The following table compares British (en-GB), American (en-US), and Canadian English conventions with Oxford English Dictionary (en-GB-oxendict) choices relative to different types of word structure.[2] Use the Oxford conventions when writing Textpattern content.
+The following table compares conventional patterns of spelling between North American regions, Great Britain, and the Oxford English Dictionary (*en-GB-oxendict*).[2] Use the Oxford conventions when writing Textpattern content.
 
 | |_. -ize/-ise |_. -yze/-yse |_. -or/-our |_. -ler/-ller |_. -og/-ogue |_. -am/-amme |_. -ense/-ence |_. -ter/-tre |
 |_. en-GB-oxendict | realize | analyse | behaviour | traveller | catalogue | programme<br>program (computer code) | defence | centre |
@@ -85,18 +85,7 @@ The following table compares British (en-GB), American (en-US), and Canadian Eng
 |_. en-CA | realize | analyze,<br>analyse | behaviour,<br>behavior | traveller | catalogue | program,<br> programme | defence | centre |
 |_. en-US | realize | analyze | behavior | traveler | catalog | program | defense | center |
 
-erbs ending in “-ize” (en-US) and their related forms should be written with an "s" instead:
-
-* organise, organiser, organisation, organisational…
-* italicise, normalise, hypothesise, and so forth
-
-Nouns and adjectives ending in "-or" (en-US) should be written with "-our" instead:
-
-* colour, behaviour, harbour, flavour, and the like
-
-Certain nouns and adjectives ending in "-er" should be written with "-tre" instead. These are likely the ones to watch out for:
-
-* metre, centre 
+For most part there's little difference between British English and the Oxford English Dictionary, except for words ending in “-ize/-ise” and their related grammatical forms. Use the -ize form (e.g., organize, organizer, organization, organizational).
 
 fn2. See "en.wikipedia.org/wiki/Oxford_spelling":https://en.wikipedia.org/wiki/Oxford_spelling.
 
