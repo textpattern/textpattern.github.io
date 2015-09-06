@@ -67,10 +67,12 @@ p. By adopting the Oxford way for Textpattern's international English copy, four
 
 # It provides a precise reason and source for the decision to write words a certain and consistent way, without wishy-washy and debatable explanations.
 # It's definable in metadata to a more precise level: @lang="en-GB-oxendict"@, because even in Great Britain there's an increasing degree of variation with how words are spelled and punctuation is used.
-# It's a measure easier for future Txp authors/editors who come from a significant part of the English-speaking world that uses the same conventions. (And there's the fact Dean Allen, Textpattern's creator, is Canadian, and Canada uses _-ize_ verb spellings instead of _-ise_, for example.)
+# It's a measure easier for future Txp authors/editors who come from a significant part of the English-speaking world that uses the same conventions.[1]
 # It normalizes the effort to creating copy (due to Oxford rules being a fair compromise across British and American English conventions), so one group of writers/editors doesn't have the upper hand on the other. It may in fact be the most "International" form of English usage.
 
 The rest of these guidelines will specify conventions in context to topics.
+
+fn1. And there's the fact Textpattern's creator, Dean Allen, is Canadian, and Canada uses _-ize_ verb spellings instead of _-ise_, for example, as defined in Oxford usage.
 
 h2(#spell). Spellings
 
