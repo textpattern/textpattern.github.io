@@ -58,7 +58,7 @@ Use a serial comma and you'll never be wrong. If you don't use one, make sure th
 
 h2(#lang). Language (Oxford English conventions)
 
-Textpattern's default language is English, and follows the conventions provided by Oxford University Press resources, including the "Oxford English Dictionary":http://www.oed.com. All Textpattern platforms designate this choice of English usage in the language tags of website templates:
+Textpattern's default language is English, and follows the conventions provided by Oxford University Press resources, notably the __New Oxford Style Manual__, 2nd Edition, and the __"Oxford English Dictionary":http://www.oed.com__. All Textpattern platforms designate this choice of English usage in the language tags of website templates:
 
 bc.. <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB-oxendict" lang="en-GB-oxendict" dir="ltr">
 <meta name="language" content="en-GB-oxendict" />
@@ -79,19 +79,27 @@ There are many differences between British and American English with respect to 
 
 The following table compares conventional patterns of spelling between North American regions, Great Britain, and the Oxford English Dictionary (*en-GB-oxendict*).[2] Use the Oxford conventions when writing Textpattern content.
 
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
 | |_. -ize/-ise |_. -yze/-yse |_. -or/-our |_. -ler/-ller |_. -og/-ogue |_. -am/-amme |_. -ense/-ence |_. -ter/-tre |
 |_. en-GB-oxendict | realize | analyse | behaviour | traveller | catalogue | programme<br>program (computer code) | defence | centre |
 |_. en-GB | realise,<br>realize | analyse | behaviour | traveller | catalogue | programme<br>program (computer code) | defence | centre |
 |_. en-CA | realize | analyze,<br>analyse | behaviour,<br>behavior | traveller | catalogue | program,<br> programme | defence | centre |
 |_. en-US | realize | analyze | behavior | traveler | catalog | program | defense | center |
 
-For most part there's little difference between British English and the Oxford English Dictionary, except for words ending in “-ize/-ise” and their related grammatical forms. Use the -ize form (e.g., organize, organizer, organization, organizational).
+notextile. </div>
+
+Words in the table are representative of all possible words having those respective patterns. 
+
+The main thing to note is there's little difference between British English and the Oxford English Dictionary, except for words ending in “-ize/-ise” and their related grammatical forms. Use "z" in all such forms (e.g., organize, organizer, organization, organizational).
+
+Also note that "program" (not "programme") is the correct spelling when used in context of software only. Likewise you would never use "centre" where "center" was required in code (e.g, @text-align:center;@). And it would be "data modelling" (not "data modeling") according to the -ler/-ller convention. 
 
 fn2. See "en.wikipedia.org/wiki/Oxford_spelling":https://en.wikipedia.org/wiki/Oxford_spelling.
 
 h2(#quotes). Quotations marks
 
-Without making this overly complicated, a closing quotation mark is most often used _inside_ of the trailing punctuation of a clause or full phrase, not outside, unless the quoted part has it's own punctuation.[1] Also, when quoting a quotation, use double quotation marks for the outer quote, and single quotation marks for the inner quote.
+We , a closing quotation mark is most often used _inside_ of the trailing punctuation of a clause or full phrase, not outside, unless the quoted part has it's own punctuation.[1] Also, when quoting a quotation, use double quotation marks for the outer quote, and single quotation marks for the inner quote.
 
 For example, here's a normal phrase using quotation marks to indicate an actual preference label (which is how you should indicate UI labels in Textpattern documentation; see section on __User-interface content__). The ending quote mark goes inside the sentence's ending punctuation:
 
