@@ -75,9 +75,17 @@ fn1. And there's the fact Dean Allen, Textpattern's creator, is Canadian, and Ca
 
 h2(#spell). Spellings
 
-There are many differences between British and American English with respect to how words are spelled.[999] However, history shows these differences become fewer as time goes by, so only worry about the following if you're used to writing in American English.
+There are many differences between British and American English with respect to how words are spelled. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com, as described in the "Languages":#lang section of these guidelines. 
 
-Verbs ending in “-ize” (en-US) and their related forms should be written with an "s" instead:
+The following table compares British (en-GB), American (en-US), and Canadian English conventions with Oxford English Dictionary (en-GB-oxendict) choices relative to different types of word structure.[2] Use the Oxford conventions when writing Textpattern content.
+
+| |_. -ize/-ise |_. -yze/-yse |_. -or/-our |_. -ler/-ller |_. -og/-ogue |_. -am/-amme |_. -ense/-ence |_. -ter/-tre |
+|_. en-GB-oxendict | realize | analyse | behaviour | traveller | catalogue | programme<br>program (computer code) | defence | centre |
+|_. en-GB | realise,<br>realize | analyse | behaviour | traveller | catalogue | programme<br>program (computer code) | defence | centre |
+|_. en-CA | realize | analyze,<br>analyse | behaviour,<br>behavior | traveller | catalogue | program,<br> programme | defence | centre |
+|_. en-US | realize | analyze | behavior | traveler | catalog | program | defense | center |
+
+erbs ending in “-ize” (en-US) and their related forms should be written with an "s" instead:
 
 * organise, organiser, organisation, organisational…
 * italicise, normalise, hypothesise, and so forth
@@ -90,7 +98,7 @@ Certain nouns and adjectives ending in "-er" should be written with "-tre" inste
 
 * metre, centre 
 
-fn999. See "$":https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences
+fn2. See "en.wikipedia.org/wiki/Oxford_spelling":https://en.wikipedia.org/wiki/Oxford_spelling.
 
 h2(#quotes). Quotations marks
 
