@@ -75,9 +75,9 @@ fn1. And there's the fact Dean Allen, Textpattern's creator, is Canadian, and Ca
 
 h2(#spell). Spellings
 
-There are many differences between British and American English with respect to how words are spelled. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com, as described in the "Languages":#lang section of these guidelines.
+There are many differences between British and American English with regard to spelling. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com, as described in the "Languages":#lang section of these guidelines. 
 
-The following table compares conventional patterns of spelling between North American regions, Great Britain, and the Oxford English Dictionary (*en-GB-oxendict*).[2] Use the Oxford conventions when writing Textpattern content.
+The following table compares conventional patterns of spelling between North American regions, Great Britain, and the Oxford English Dictionary (*en-GB-oxendict*).[2] The words shown are simply representative of all possible words having those respective patterns. Use the Oxford conventions when writing Textpattern content.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -89,11 +89,9 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-Words in the table are representative of all possible words having those respective patterns. 
+The main thing to note is there's little difference between British English and the Oxford English Dictionary, except for words ending in “-ize/-ise” and their related grammatical forms. In other words, use "z" in all such forms (e.g., organize, organizer, organization, organizational).
 
-The main thing to note is there's little difference between British English and the Oxford English Dictionary, except for words ending in “-ize/-ise” and their related grammatical forms. Use "z" in all such forms (e.g., organize, organizer, organization, organizational).
-
-Also note that "program" (not "programme") is the correct spelling when used in context of software only. Likewise you would never use "centre" where "center" was required in code (e.g, @text-align:center;@). And it would be "data modelling" (not "data modeling") according to the -ler/-ller convention. 
+Also note that "program" (not "programme") is the correct spelling when used in context of software only. Likewise you would never use "centre" where "center" was required in code (e.g, @text-align:center;@). And it would be "data modelling", according to the -ler/-ller convention, not "data modeling". 
 
 fn2. See "en.wikipedia.org/wiki/Oxford_spelling":https://en.wikipedia.org/wiki/Oxford_spelling.
 
