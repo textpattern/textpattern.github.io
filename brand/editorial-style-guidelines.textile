@@ -18,11 +18,14 @@ tags:
 
 h1. Textpattern editorial style guide
 
-These guidelines concern all text content published on Textpattern platforms, and any outbound content for marketing reasons. Following these guidelines will help you produce accurate, clear, and concise copy that Textpattern audiences will find easier to read, translate, understand, and use. Wouldn't that be nice.
+These guidelines concern all text content published on Textpattern platforms, and any outbound content for marketing reasons. Following these guidelines will help you produce accurate, clear, and concise copy that Textpattern audiences will find easier to read, translate, understand, and use. 
+
+The main sections are organised alphabetically by topic, which may be different from what you expect, but it should help you scan entries faster and thus be more usable (feedback on your experience is welcome).  
 
 On this page:
 
-* "British English":#sec1
+* "Comma (serial)":#comma
+* "Language (International English conventions)":#lang
 ** "Spellings":#sec1-1
 ** "Punctuation":#sec1-1
 *** "Quotations":#sec1-1-1
@@ -33,49 +36,62 @@ On this page:
 * "x":#sec1
 * "Textpattern usage":#sec1
 
-h2(#sec1). British English
+h2(#comma). Comma (serial)
 
-Textpattern content is written following the conventions of British English (en-GB). That convention is chosen because this is an international project, and all English used around the world today came from Britain. On a per capita basis (at the very least), it's the most "international language" there is. So there. 
+More important than consistency, in this case, is ensuring your sentences are grammatically correct. That said, if you use serial commas (aka, "Oxford commas") every time, you won't be wrong, even if you don't need one.
 
-Throughout these guidelines will be examples (spelling, punctuation, etc), and they will reflect British English usage.
-
-h3(#sec1-1). Spellings
-
-The most common differences (though not the only) between British and American English spelling is with verbs ending in "...ise" and their related forms, and adjectives and verbs ending in "...our". 
-
-As example:
-
-* %(success)Use%: organise, organiser, organisation, organisational...
-* %(error)Don't use%: organize, organizer, organization, organizational...
-
-And...
-
-* %(success)Use%: colour, behaviour, etc.
-* %(error)Don't use%: color, behavior, etc.
-
-h2(#sec2). Punctuation
-
-[todo]
-
-h3(#sec2-1). Commas
-
-British English aside, we favour the serial comma (aka, the "Oxford comma"). If you use them every time, you won't be wrong, even if you don't need one. For example, both forms of this sentence are correct (the serial comma is in the second, between "presentation" and "and"):
+For example, both forms of the following sentence are correct (the serial comma is in the second, between "presentation" and "and"):
 
 bq.. Separating content, presentation and behaviour is always a smart thing to do.
 
 Separating content, presentation, and behaviour is always a smart thing to do.
 
-p. But the opposite is not true. Sometimes a missing serial comma changes the grammar -- thus meaning -- of a phrase considerably, and there are poignant examples to demonstrate this:
+p. If you write a sentence like that either way, it's fine. If you write a sentence without a serial comma and a Textpattern editor later changes it to have one, just look the other way and ignore it, because it's better to have a serial comma than not. 
+
+The opposite is not true. Sometimes a missing serial comma changes the meaning of a phrase considerably, with unintended consequences, and there are poignant examples to demonstrate this:
 
 bq. I saw Bob's uncle, a boozer and a cruiser in the park, climb into that cardboard hut.
 
-Poor Bob's uncle. He's described there as being a boozer and a cruiser, because of one missing serial comma. But add the serial comma (after "boozer") and you realize the sentence is talking about three different people, though the story is still a bit dark:
+Poor Bob's uncle. He's described there as being a boozer and a cruiser because of a missing serial comma. But add the serial comma (after "boozer") and you realize the sentence is talking about three different people, though the story is still a bit dark. 
 
-bq. I saw Bob's uncle, a boozer, and a cruiser in the park, climb into that cardboard hut. 
+Use a serial comma and you'll never be wrong. If you don't use one, make sure the sentence is grammatically correct, or you could end up like Bob's uncle.
 
-So use a serial comma and you'll never be wrong. If you don't, make sure the sentence is grammatically correct.
+h2(#lang). Language (International English conventions)
 
-h3(#sec2-2). Quotations marks
+Textpattern's default language is English, and all written copy follows conventions provided in resources by the Oxford University Press, including the "Oxford English Dictionary":http://www.oed.com. All Textpattern platforms designate this choice of English usage in the language tags of website templates:
+
+bc.. <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB-oxendict" lang="en-GB-oxendict" dir="ltr">
+<meta name="language" content="en-GB-oxendict" />
+
+p. By adopting the Oxford way for Textpattern's international English copy, four main benefits are gained:
+
+# It provides a precise reason and source for the decision to write words a certain and consistent way, without wishy-washy and debatable explanations.
+# It's definable in metadata to a more precise level: lang="en-GB-oxendict", because even in Great Britain there's an increasing degree of variation in how words are spelled and punctuation is used.
+# It's a measure easier for future Txp authors/editors who come from a significant part of the English-speaking world that uses the same conventions. (And there's the fact Dean Allen, Textpattern's creator, is Canadian, and Canada uses -ize spellings, for example.)
+# It normalizes the effort to creating copy (due to Oxford rules being a fair compromise across British and American English conventions), so one group of writers/editors doesn't have the upper hand on the other. It may in fact be the most "International" form of English usage.
+
+The rest of these guidelines will specify conventions in context to topics.
+
+h2(#spell). Spellings
+
+There are many differences between British and American English with respect to how words are spelled.[999] However, history shows these differences become fewer as time goes by, so only worry about the following if you're used to writing in American English.
+
+Verbs ending in “-ize” (en-US) and their related forms should be written with an "s" instead:
+
+* organise, organiser, organisation, organisational…
+* italicise, normalise, hypothesise, and so forth
+
+Nouns and adjectives ending in "-or" (en-US) should be written with "-our" instead:
+
+* colour, behaviour, harbour, flavour, and the like
+
+Certain nouns and adjectives ending in "-er" should be written with "-tre" instead. These are likely the ones to watch out for:
+
+* metre, centre 
+
+fn999. See "$":https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences
+
+h2(#quotes). Quotations marks
 
 Without making this overly complicated, a closing quotation mark is most often used _inside_ of the trailing punctuation of a clause or full phrase, not outside, unless the quoted part has it's own punctuation.[1] Also, when quoting a quotation, use double quotation marks for the outer quote, and single quotation marks for the inner quote.
 
