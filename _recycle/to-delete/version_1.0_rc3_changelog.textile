@@ -25,7 +25,7 @@ bc. <txp:else />
 bc. </txp:if_search>
 
 
-<p>to allow you to customise search results template and main page, even if both share the same template (kusor)</p></li>
+<p>to allow you to customize search results template and main page, even if both share the same template (kusor)</p></li>
 <li><p>Added double conditional tags</p>
 bc. <txp:if_excerpt>
 
