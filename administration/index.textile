@@ -47,15 +47,15 @@ The administration side is organized into three primary regions: **Content**, **
 ** Sections
 ** Styles
 * Admin
-** "Diagnostics":admin/diagnostics-panel
+** "Diagnostics":diagnostics-panel
 ** Import
-** "Plugins":admin/plugins-panel
+** "Plugins":plugins-panel
 ** Preferences
 *** Basic (default)
 *** Advanced
 *** Language
-** "Users":admin/users-panel (default)
-** "Visitor logs":admin/visitor-logs-panel
+** "Users":users-panel (default)
+** "Visitor logs":visitor-logs-panel
 * "Extensions":extensions
 
 fn2. The **Extensions** region is not a core system region. It only appears (to site administrators and publishers) if you install any of the admin-side plugins that make use of it.
@@ -78,25 +78,25 @@ You won't be auto-directed to the **Update languages** panel with each update of
 
 h3. Configuration of site identity and publishing behaviour
 
-Your next stop after languages is **"Preferences (Basic)":admin/basic-prefs-panel.textile** to configure site identity values, choose time zones and date formats, set necessary file paths, establish desired publishing behaviour, and so forth.
+Your next stop after languages is **"Preferences (Basic)":basic-prefs-panel.textile** to configure site identity values, choose time zones and date formats, set necessary file paths, establish desired publishing behaviour, and so forth.
 
 Don't worry about getting everything perfect the fist pass. Some things won't be applicable anyway until you've planned your website architecture. Jut focus on the things that you know can be set, and save all changes.
 
 h3. Diagnostics check
 
-When basic preferences are set, go to the **"Diagnostics":admin/diagnostics-panel** panel to address the warning messages in the **Pre-flight checks** section.
+When basic preferences are set, go to the **"Diagnostics":diagnostics-panel** panel to address the warning messages in the **Pre-flight checks** section.
 
 h3. Build your architecture
 
 When all diagnostics checks are clear, you're ready to build your site architecture and presentation. Building publishing architectures with Textpattern requires time learning and tinkering. There's no direct 1-2-3 method for it. But the learning is fun, and once you understand how Textpattern structures content and puts it together, you'll thank yourself for choosing such an elegant system.
 
-For further orientation on publishing architecture basics, see "Administration fast track":/administration/admin-fast-track.
+For further orientation on publishing architecture basics, see "Administration fast track":admin-fast-track.
 
 h2(#sec4). Changing default login panel
 
-The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the **"Write":content/write-panel** panel from that point on, which is the default panel under the **Content** region.[3]
+The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the **"Write":write-panel** panel from that point on, which is the default panel under the **Content** region.[3]
 
-You can change the default landing panel in **"Basic preferences":admin/preferences-basic-panel** to whatever admin-side panel you want. In **Basic preferences**, look under the **Admin** area for the preference, "Default admin tab".[4] Use the drop-down menu to select the panel you want, then save.
+You can change the default landing panel to whatever admin-side panel you want. In **"Preferences (Basic)":admin/preferences-basic-panel**, look under the **Admin** area for "Default admin tab".[4] Use the drop-down menu to select the panel you want, then save.
 
 fn3. The assumption is that once your site is built, you'll want to go straight to writing new articles every time. But not everybody does.
 

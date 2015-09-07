@@ -16,7 +16,7 @@ Installing Textpattern and working with source code.
 * Downgrading, nightlies and bleeding edge (for testers and risk-takers)
 * Multi-site installation (multiple sites managed with one admin-side)
 
-fn1. Upgrading your Textpattern installation is strongly recommended for "site security":security/.
+fn1. Upgrading your Textpattern installation is strongly recommended for "site security":administration/security.
 
 h2. Administration
 
