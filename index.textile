@@ -8,6 +8,8 @@ h1. Table of Contents
 
 h2. Installation
 
+Installing Textpattern and working with source code.
+
 * Quick installation/upgrade guide
 * Detailed installation instructions
 * Detailed upgrading instructions[1]
@@ -18,8 +20,10 @@ fn1. Upgrading your Textpattern installation is strongly recommended for "site s
 
 h2. Administration
 
-* "Textpattern administration":administration/ (admin-side organization and full functionality)
-* "Administration fast-track":administration/admin-fast-track/ (quick learning by simple example)
+Configuring Textpattern and establishing your base architecture.
+
+* ["Administration fast-track":administration/admin-fast-track]: Gets you up to speed with the administration side and building your first publishing architecture. Useful if you've just installed Textpattern for the first time.
+* ["Textpattern administration":administration/]: Covers the suite of core administration panels, including full functionality on each one.
 
 h2. Core tags
 
@@ -30,7 +34,7 @@ Building publishing architectures with Textpattern means learning to use the cor
 
 h2. Security
 
-Read "Textpattern security":security/ before you worry, or do anything hasty.
+Read "Textpattern security":administration/security before you worry, or do anything hasty.
 
 h2. Popular topics
 

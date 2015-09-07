@@ -103,8 +103,6 @@ bq. Your domain name goes in "Site URL".
 
  Also, when quoting a quotation, use double quotation marks for the outer quote, and single quotation marks for the inner quote.
 
-
-
 bq. Your domain name preference goes in "Site URL".
 
 Next is an example using the same preference label _inside_ a quotation having its own ending full-stop. So the label gets single quotation marks, and the ending quotation mark of the outer quote goes _outside_ of the full-stop because it's part of the inner quoted phrase.
