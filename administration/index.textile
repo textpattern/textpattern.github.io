@@ -78,7 +78,7 @@ You won't be auto-directed to the **Update languages** panel with each update of
 
 h3. Configuration of site identity and publishing behaviour
 
-Your next stop after languages is **"Preferences (Basic)":basic-prefs-panel.textile** to configure site identity values, choose time zones and date formats, set necessary file paths, establish desired publishing behaviour, and so forth.
+Your next stop after languages is "**Preferences (Basic)**":basic-prefs-panel.textile to configure site identity values, choose time zones and date formats, set necessary file paths, establish desired publishing behaviour, and so forth.
 
 Don't worry about getting everything perfect the fist pass. Some things won't be applicable anyway until you've planned your website architecture. Jut focus on the things that you know can be set, and save all changes.
 
