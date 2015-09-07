@@ -13,14 +13,13 @@ tags:
   - taxonomy
   - tone
   - voice
-
 ---
 
 h1. Textpattern editorial style guide
 
 These guidelines concern all text content published on Textpattern platforms, and any outbound content for marketing reasons. Following these guidelines will help you produce accurate, clear, and concise copy that Textpattern audiences will find easier to read, translate, understand, and use.
 
-The main sections are organised alphabetically by topic, which may be different from what you expect, but it should help you scan entries faster and thus be more usable (feedback on your experience is welcome).
+The main sections are organized alphabetically by topic, which may be different from what you expect, but it should help you scan entries faster and thus be more usable (feedback on your experience is welcome).
 
 On this page:
 
