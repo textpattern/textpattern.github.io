@@ -67,17 +67,15 @@ p. By adopting the Oxford way for Textpattern's international English copy, thre
 
 # It provides a precise reason and source for the decision to write words a certain and consistent way, without wishy-washy and debatable explanations.
 # It's definable in metadata to a more precise level: @lang="en-GB-oxendict"@, because even in Great Britain there's an increasing degree of variation with how words are spelled and punctuation is used.
-# It normalizes the effort to create copy (due to Oxford rules being a fair compromise across British and American English conventions), so one group of writers/editors doesn't have the upper hand on the other. Oxford rules may, in fact, be the most "International" form of English usage.[1]
+# It normalizes the effort to create copy (due to Oxford rules being a fair compromise across British and American English conventions), so one group of writers/editors doesn't have the upper hand on the other. Oxford rules may, in fact, be the most "International" form of English usage.
 
 The rest of these guidelines will specify conventions in context to topics.
-
-fn1. And there's the fact Dean Allen, Textpattern's creator, is Canadian, and Canada uses _-ize_ verb spellings, as defined in Oxford usage, instead of _-ise_.
 
 h2(#spell). Spellings
 
 There are many differences between British and American English with regard to spelling. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com, as described in the "Languages":#lang section of these guidelines. 
 
-The following table compares conventional patterns of spelling between North American regions, Great Britain, and the Oxford English Dictionary.[2] The words shown are simply representative of all possible words having those respective patterns. Use the Oxford conventions (*en-GB-oxendict*) when writing Textpattern content.
+The following table compares conventional patterns of spelling between North American regions, Great Britain, and the Oxford English Dictionary.[1] The words shown are simply representative of all possible words having those respective patterns. Use the Oxford conventions (*en-GB-oxendict*) when writing Textpattern content.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -93,13 +91,19 @@ The main thing to note is there's little difference between British English and 
 
 Also note that "program" (not "programme") is the correct spelling when used in context of software only. Likewise you would never use "centre" where "center" was required in code (e.g, @text-align:center;@). And it would be "data modelling", according to the -ler/-ller convention, not "data modeling". 
 
-fn2. See "en.wikipedia.org/wiki/Oxford_spelling":https://en.wikipedia.org/wiki/Oxford_spelling.
+fn1. See "en.wikipedia.org/wiki/Oxford_spelling":https://en.wikipedia.org/wiki/Oxford_spelling.
 
 h2(#quotes). Quotations marks
 
-We , a closing quotation mark is most often used _inside_ of the trailing punctuation of a clause or full phrase, not outside, unless the quoted part has it's own punctuation.[1] Also, when quoting a quotation, use double quotation marks for the outer quote, and single quotation marks for the inner quote.
+Use double quotation marks when quoting text, such as admin-side UI form control labels and options, and put the closing quotation mark _inside_ the end punctuation of a clause or full phrase:[4] 
 
-For example, here's a normal phrase using quotation marks to indicate an actual preference label (which is how you should indicate UI labels in Textpattern documentation; see section on __User-interface content__). The ending quote mark goes inside the sentence's ending punctuation:
+bq. Your domain name goes in "Site URL".
+
+, unless the quoted part has it's own punctuation
+
+ Also, when quoting a quotation, use double quotation marks for the outer quote, and single quotation marks for the inner quote.
+
+
 
 bq. Your domain name preference goes in "Site URL".
 
@@ -111,7 +115,7 @@ bq. The instruction says, "Put your domain name in 'Site URL'."
 
 Be mindful when writing Textile links that your text editor is using straight quotation marks, not curly quotation marks. While the latter are attractive for regular text copy, they won't work for links. Thus straight quotations marks may prove best for documentation portability over the long-term. This means you'll have quote marks looking like "this" instead of “this”.
 
-fn1. See "$":http://en.wikipedia.org/wiki/Quotation_mark for more reference.
+fn4. See section on __User-interface content__ for UI text formatting conventions.
 
 h2(#sec3). Point of view (personal pronouns)
 

@@ -47,7 +47,7 @@ The administration side is organized into three primary regions: **Content**, **
 ** Sections
 ** Styles
 * Admin
-** "Diagnostics":http://docs.textpattern.io/administration/admin/diagnostics-panel
+** "Diagnostics":/admin/diagnostics-panel
 ** Import
 ** "Plugins":http://docs.textpattern.io/administration/admin/plugins-panel
 ** Preferences
