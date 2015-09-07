@@ -10,7 +10,7 @@ tags:
 
 h1. Installing Textpattern
 
-The __README.txt__ file in the latest Textpattern package provides abbreviated installation instructions. You might look at those if you don't need much help. The instructions here are more detailed.
+These are detailed instructions for installing and configuring Textpattern. If you're familiar with installing CMS software and prefer the quick notes, see the "__README.txt__":https://github.com/textpattern/textpattern/blob/master/README.txt file that's included in the install package.
 
 On this page:
 
