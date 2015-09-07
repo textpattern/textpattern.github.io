@@ -2,12 +2,12 @@
 layout: document
 category: installation
 published: true
-title: "Installing on an Nginx webserver"
+title: "Installing on an Nginx web server"
 ---
 
-h1. Installing on an Nginx webserver
+h1. Installing on an Nginx web server
 
-Although it is not officially supported, running Textpattern CMS on an Nginx webserver works just fine - given the correct configuration. This article outlines the requirements for a successful installation of Textpattern using Nginx on a CentOS 5.6 system.
+Although it is not officially supported, running Textpattern CMS on an Nginx web server works just fine - given the correct configuration. This article outlines the requirements for a successful installation of Textpattern using Nginx on a CentOS 5.6 system.
 
 h2. Acquisition and unpacking
 

@@ -6,24 +6,24 @@ title: "Textpattern CMS user documentation"
 
 h1. Table of Contents
 
-h2. Installation
+h2. Installation handling
 
-Installing Textpattern and working with source code.
+Installing, upgrading, and moving Textpattern, and working from source code.
 
-* Quick installation/upgrade guide
-* Detailed installation instructions
-* Detailed upgrading instructions[1]
-* Downgrading, nightlies and bleeding edge (for testers and risk-takers)
-* Multi-site installation (multiple sites managed with one admin-side)
+* "Installing Textpattern":installation/installing-txp
+* "Installing Textpattern, detailed":installation/installing-txp-detailed
+* "Installing latest development version":installation/installing-txp-development-version (for testers and risk-takers)
+* "Upgrading and downgrading Textpattern":installation/upgrading-downgrading-txp[1]
+* "Moving a Textpattern installation":installation/moving-txp
 
-fn1. Upgrading your Textpattern installation is strongly recommended for "site security":administration/security.
+fn1. Upgrading your Textpattern installation is strongly recommended for "site security":administration/security, not downgrading.
 
 h2. Administration
 
 Configuring Textpattern and establishing your base architecture.
 
-* ["Administration fast-track":administration/admin-fast-track]: Gets you up to speed with the administration side and building your first publishing architecture. Useful if you've just installed Textpattern for the first time.
-* ["Textpattern administration":administration/]: Covers the suite of core administration panels, including full functionality on each one.
+* "Administration fast-track":administration/admin-fast-track -- Gets you up to speed with the administration side and building your first publishing architecture. Useful if you've just installed Textpattern for the first time.
+* "Textpattern administration":administration/ -- Covers the suite of core administration panels, including full functionality on each one.
 
 h2. Core tags
 
