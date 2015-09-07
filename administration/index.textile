@@ -68,13 +68,13 @@ English is the default installation language for the administration side of Text
 
 **Changing the default language:**
 
-You are given a chance to change the default language immediately following your first log in. The **Preferences (Update languages)** panel under the **Admin** region will automatically appear, where you can "Install" the additional language(s) you want to use. A green confirmation message will flash at bottom of screen after each language install. When done, click the yellow **Save** button.
+You are given a chance to change the default language immediately following your first log in. The **Preferences (Languages)** panel under the **Admin** region will automatically appear, where you can "Install" the additional language(s) you want to use. A green confirmation message will flash at bottom of screen after each language install. When done, click the yellow **Save** button.
 
 After installing the additional language(s) you want, override the English default by selecting the new default language via the drop-down selection box at top of the languages table. Again, save the changes.
 
 **Updating language packs:**
 
-You won't be auto-directed to the **Update languages** panel with each update of your Textpattern installation, but go there anyway when you do update because language packs may have been modified since Textpattern's last version release and you want to implement them if so. You'll easily see the languages you initially installed because they will be labeled as "Update" instead of "Install". Update them all and click the **Save** button when done.
+You won't be auto-directed to the **Languages** panel with each update of your Textpattern installation, but go there anyway when you do update because language packs may have been modified since Textpattern's last version release and you want to implement them if so. The languages you initially installed labeled "Update" instead of "Install". Update them all and click the **Save** button when done.
 
 h3. Configuration of site identity and publishing behaviour
 
@@ -84,7 +84,7 @@ Don't worry about getting everything perfect the fist pass. Some things won't be
 
 h3. Diagnostics check
 
-When basic preferences are set, go to the **"Diagnostics":diagnostics-panel** panel to address the warning messages in the **Pre-flight checks** section.
+When basic preferences are set, go to the "**Diagnostics**":diagnostics-panel panel to address the warning messages in the **Pre-flight checks** section.
 
 h3. Build your architecture
 
@@ -94,9 +94,9 @@ For further orientation on publishing architecture basics, see "Administration f
 
 h2(#sec4). Changing default login panel
 
-The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the **"Write":write-panel** panel from that point on, which is the default panel under the **Content** region.[3]
+The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the "**Write**":write-panel panel from that point on, which is the default panel under the **Content** region.[3]
 
-You can change the default landing panel to whatever admin-side panel you want. In **"Preferences (Basic)":admin/preferences-basic-panel**, look under the **Admin** area for "Default admin tab".[4] Use the drop-down menu to select the panel you want, then save.
+You can change the default landing panel to whatever admin-side panel you want. In "**Preferences (Basic)**":admin/preferences-basic-panel, look under the **Admin** area for "Default admin tab".[4] Use the drop-down menu to select the panel you want, then save.
 
 fn3. The assumption is that once your site is built, you'll want to go straight to writing new articles every time. But not everybody does.
 
