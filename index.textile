@@ -10,10 +10,10 @@ h2. Installation handling
 
 Installing, upgrading, and moving Textpattern, and working from source code.
 
-* "Installing Textpattern":installation/installing-txp
+* "Installing Textpattern":installation/
 * "Installing Textpattern, detailed":installation/installing-txp-detailed
 * "Installing latest development version":installation/installing-txp-development-version (for testers and risk-takers)
-* "Upgrading and downgrading Textpattern":installation/upgrading-downgrading-txp[1]
+* ["Upgrading and downgrading Textpattern":installation/upgrading-downgrading-txp][1]
 * "Moving a Textpattern installation":installation/moving-txp
 
 fn1. Upgrading your Textpattern installation is strongly recommended for "site security":administration/security, not downgrading.
