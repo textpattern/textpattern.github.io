@@ -47,16 +47,16 @@ The administration side is organized into three primary regions: **Content**, **
 ** Sections
 ** Styles
 * Admin
-** "Diagnostics":admin/diagnostics-panel
+** "Diagnostics":http://docs.textpattern.io/administration/admin/diagnostics-panel
 ** Import
-** "Plugins":admin/plugins-panel
+** "Plugins":http://docs.textpattern.io/administration/admin/plugins-panel
 ** Preferences
 *** Basic (default)
 *** Advanced
 *** Language
-** "Users":admin/users-panel (default)
-** "Visitor logs":admin/visitor-logs-panel
-* ["Extensions":extensions/]
+** "Users":http://docs.textpattern.io/administration/admin/users-panel (default)
+** "Visitor logs":http://docs.textpattern.io/administration/admin/visitor-logs-panel
+* ["Extensions":http://docs.textpattern.io/administration/extensions/]
 
 fn2. The **Extensions** region is not a core system region. It only appears (to site administrators and publishers) if you install any of the admin-side plugins that make use of it.
 
@@ -68,7 +68,7 @@ English is the default installation language for the administration side of Text
 
 **Changing the default language:**
 
-You are given a chance to change the default language immediately following your first log in. The "Update languages":admin/preferences-language-panel.textile panel under the **Admin** region will automatically appear, where you can "Install" the additional language(s) you want to use. A green confirmation message will flash at bottom of screen after each language install. When done, click the yellow **Save** button.
+You are given a chance to change the default language immediately following your first log in. The **Preferences (Update languages)** panel under the **Admin** region will automatically appear, where you can "Install" the additional language(s) you want to use. A green confirmation message will flash at bottom of screen after each language install. When done, click the yellow **Save** button.
 
 After installing the additional language(s) you want, override the English default by selecting the new default language via the drop-down selection box at top of the languages table. Again, save the changes.
 
