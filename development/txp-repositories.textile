@@ -78,7 +78,7 @@ The Github GUI client may not be as flexible as the command-line client, but unl
 
 First you'll need to install the client, either "for Mac OSX":https://mac.github.com/help.html or "for Windows":https://windows.github.com/. Then fire it up and add your Github account details so Github and the client can "communicate" with one another.
 
-$(error)[todo:finish tutorial about using GUI client with a repo]$
+$(error)todo:finish tutorial about using GUI client with a repo$
 
 h3(#sec2-2). Git command-line client
 
