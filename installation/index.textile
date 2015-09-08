@@ -51,18 +51,22 @@ Now we begin the Textpattern part of the deal:
 
 The zip package will have a folder/file tree matching that in the "Textpattern repo":https://github.com/textpattern/textpattern.[1]. Following are important folders and files you'll see.
 
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
 |_. Name |_. Type |_. What it's for or contains |
 | htaccess | file | Important for many reasons that are out of scope here, but not the least of which is handling URL formatting. |
 | css.php | file | Handles the site's styles. |
 | files | directory | Empty by default, but utilized if you upload content files later in the **Files** panel. |
 | HISTORY.txt | file | The package release Changelog. |
-| images | directory | Empty by default, but utilized later when uploading images in the **Images** panel.
+| images | directory | Empty by default, but utilized later when uploading images in the **Images** panel. |
 | index.php | file | The default location of your site where web users will arrive, and dynamic publishing takes place. |
 | js | directory | Contains JavaScript specific to the default website theme. This may be safely removed depending on whether you plan to use your own theme instead of the default. |
 | README.txt | file | Provides brief instruction on installing and upgrading. |
 | rpc | directory | Contains XML-RPC functionality. |
 | sites | directory | Contains site template, and provides support for multi-site installations. |
 | textpattern | directory | Contains all the core scripting and functionality. |
+
+notextile. </div>
 
 fn1. Do not move files in the tree or change their names. Doing so will render Textpattern useless.
 
