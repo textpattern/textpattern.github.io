@@ -56,14 +56,14 @@ The zip package will have a folder/file tree matching that in the ["Textpattern 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Item |_. Type |_. Removable? |_. What it's for |
-| __files__ | directory | no | Empty by default. It's where content files (__.pdf__, __.docx__, __.rtf__, __.epub__, __.txt__, etc.) will go when/if you upload them in the "**Files**":/administration/files-panel panel. You may see a warning about the file's @chmod@ status (editing rights) in the "**Diagnostics**":../administration/diagnostics-panel panel. |
+| __files__ | directory | no | Empty by default. It's where content files (__.pdf__, __.docx__, __.rtf__, __.epub__, __.txt__, etc.) will go when/if you upload them in the "**Files**":/administration/files-panel panel. You may see a warning about the file's @chmod@ status (editing rights) in the "**Diagnostics**":/administration/diagnostics-panel panel. |
 | __images__ | directory | no | Empty by default. It's where images will go when you upload them in the "**Images**":../administration/images-panel panel. |
-| __rpc__ | directory | yes | Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the "Enable XML-RPC server?" preference is set to "No" in the "**Basic**":../administration/prefs-basic-panel preferences panel. |
+| __rpc__ | directory | yes | Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the "Enable XML-RPC server?" preference is set to "No" in the "**Basic**":/administration/prefs-basic-panel preferences panel. |
 | __sites__ | directory | yes | Supports multi-site installations managed by one administration side. It contains a template and instructions (a README.txt) for doing so. You can safely remove this directory if not wanted. |
 | __textpattern__ | directory | no | Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side. |
 | __.htaccess__ | file[2] | no | Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of "www.", and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on. |
 | __index.php__ | file | no | Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing. |
-| __css.php__ | file | no | Negotiates the front-end stylesheets you create in the "**Styles**":../administration/styles-panel panel. |
+| __css.php__ | file | no | Negotiates the front-end stylesheets you create in the "**Styles**":/administration/styles-panel panel. |
 | composer.json | file | ? | A programming checker. [Purpose?] |
 | phpcs.xml | file | ? | A programming checker. [Purpose?] |
 | __README.txt__ | file | yes | The file providing brief instructions for installing and upgrading Textpattern. |
@@ -106,7 +106,7 @@ When ready, click the **Next** button.
 
 fn2. If you don't see this screen, check your URL path. Should it be "https" or "www."? Did you install in a sub-directory? Is there a typo?
 
-fn3. You can change the UI language any time after setup in the "**Basic**":../administration/prefs-basic-panel preferences panel.
+fn3. You can change the UI language any time after setup in the "**Basic**":/administration/prefs-basic-panel preferences panel.
 
 h3(#sec4-2). Screen 2: Database connection
 
@@ -173,10 +173,10 @@ Return to the install screen in your browser and click the "Main interface" link
 
 h2(#sec5). Finishing installation
 
-When you first login, you'll automatically land on the "**Update languages**":../administration/prefs-languages-panel panel in **Preferences** to update your language choice or choose another as the default. 
+When you first login, you'll automatically land on the "**Update languages**":/administration/prefs-languages-panel panel in **Preferences** to update your language choice or choose another as the default. 
 
 After that you're on your own, but your next stop should be the "**Basic**":../administration/prefs-basic-panel preferences panel to set as many of those preferences as you can, particularly those pertaining to site identity, folder paths, time zones, and date/time formats. Setting the identity and install/folder path preferences now will help eliminate diagnostics warnings for those things, which is where you go next.
 
-Jump to the "**Diagnostics**":../administration/diagnostics-panel panel to troubleshoot any installation/setup problems or minor annoyances. For example, if you didn't remove the __/setup__ folder yet as described earlier, a diagnostic will appear to remind you again. Likewise you might see warnings about server directories needing different rights, and so forth.
+Jump to the "**Diagnostics**":/administration/diagnostics-panel panel to troubleshoot any installation/setup problems or minor annoyances. For example, if you didn't remove the __/setup__ folder yet as described earlier, a diagnostic will appear to remind you again. Likewise you might see warnings about server directories needing different rights, and so forth.
 
-When that's all done, you're ready to build your website. Have a look at the "fast-track":http://docs.textpattern.io/administration/admin-fast-track information, which might help you get up to speed with the main building blocks. 
+When that's all done, you're ready to build your website. Have a look at the "fast-track":/administration/admin-fast-track information, which might help you get up to speed with the main building blocks. 
