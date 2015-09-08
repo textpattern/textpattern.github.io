@@ -8,7 +8,7 @@ tags:
   - installation
   - versions
   - git
-  - github
+  - Github
   - repository
   - source code
 ---
@@ -58,7 +58,7 @@ Experimental branches are a moving target, so they're not listed here to lower o
 
 h3(#sec1-4). Legacy packages
 
-Legacy packages, are "**past stable releases**":https://github.com/textpattern/textpattern/releases back to Textpattern's beginning (most packages are accounted for). If for some nutty reason you want to play around in outdated code, this is where to go. Each package is available in the __.zip__ and __.tar.gz__ options. This code is not supported, and the older it gets the more broken it will be. You are strongly advised _not_ to use outdated code for production websites.
+Legacy packages are "**past stable releases**":https://github.com/textpattern/textpattern/releases back to Textpattern's beginning (most packages are accounted for). If for some nutty reason you want to play around in outdated code, this is where to go. Each package is available in the __.zip__ and __.tar.gz__ options. This code is not supported, and the older it gets the more broken it will be. You are strongly advised _not_ to use outdated code for production websites.
 
 h2(#sec2). Working with Github
 
