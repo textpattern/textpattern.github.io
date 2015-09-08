@@ -17,13 +17,13 @@ On this page:
 * "Create your database":#sec1
 * "Download and unpack Textpattern":#sec2
 * "Upload package to web server":#sec3
-* "Setup and configure database connection":#sec4
+* "Setup and configuration":#sec4
 ** "Screen 1: Welcome, select language":#sec4-1
 ** "Screen 2: Database connection":#sec4-2
-** "Screen 3: Config file setup screen":#sec4-3
-** "Screen 4: Create the administrator account":#sec4-4
-** "Screen 5: Confirmation and security screen":#sec4-5
-* "Finishing the installation process":#sec5
+** "Screen 3: Establish config.php file":#sec4-3
+** "Screen 4: Create administrator account":#sec4-4
+** "Screen 5: Confirmation":#sec4-5
+* "Finishing installation":#sec5
 
 
 h2(#sec1). Create your database
@@ -90,7 +90,7 @@ When ready:
 # If not done automatically by the FTP/SFTP client, make a second connection to your local drive and navigate to where you have the unzipped Textpattern install package waiting.
 # Select the package file tree (the folders and files _inside_ the unzipped version number folder) on your local drive and drag/drop them to your web server directory.
 
-h2(#sec4). Setup and configure database connection
+h2(#sec4). Setup and configuration
 
 Now you'll walk through the setup process, which is a series of screens. Have you're "database information":#sec1 ready. 
 
@@ -129,7 +129,7 @@ When ready, click the **Next** button.
 
 If there was a problem with your database information, you'll be notified about it at this point and won't proceed to the next screen. You won't be told what the exact problem is either, so you'll have to figure that part out. It's usually because some aspect of the data you entered was wrong. Go over it again to check for mistakes. Check with your web host if you think there's an actual problem with the database account.
 
-h3(#sec4-3). Screen 3: Config file setup screen
+h3(#sec4-3). Screen 3: Establish config.php file
 
 If all went well in the previous screen, then it's time to create your Textpattern configuration file in the __/textpattern__ directory. Textpattern makes this easy by taking the information you added in the previous screen and generating the required file contents to use. A partial of code is displayed to copy/paste into a __config.php__ file that you create. The code will look something like this, but with your own data values instead:
 
@@ -153,7 +153,7 @@ Proceed as follows:
 
 Return to the install screen in your browser and click the **I did it** button.
 
-h3(#sec4-4). Screen 4: Create the administrator account
+h3(#sec4-4). Screen 4: Create administrator account
 
 You're almost home. You just need to create you're Textpattern administrator account, which will also generate the necessary Textpattern tables in your designated database.
 
@@ -161,7 +161,7 @@ Add a unique user name and password for the site administrator (this is *not* th
 
 Click the **Next** button.
 
-h3(#sec4-5). Screen 5: Confirmation and security screen
+h3(#sec4-5). Screen 5: Confirmation
 
 If all has gone well, Textpattern will indicate your tables have been generated and provide a link to log into the administration side. 
 
@@ -169,7 +169,7 @@ The screen will also suggest deleting the __/textpattern/setup__ directory for s
 
 Return to the install screen in your browser and click the "Main interface" link at the top of the screen. This will take you to the administration login screen for your new Textpattern site.
 
-h2(#sec5). Finishing the installation process
+h2(#sec5). Finishing installation
 
 When you first login, you'll automatically land on the "**Update languages**":../administration/prefs-languages-panel panel in **Preferences** to update your language choice or choose another as the default. 
 
