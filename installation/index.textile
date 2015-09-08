@@ -28,13 +28,15 @@ On this page:
 
 h2(#sec1). Create your database
 
-Before you can install Textpattern, you will need a MySQL database created, as well a user account for the database having 'write' privileges. This isn't really part of installing Textpattern, it's more a hurdle you jump with your web host, but now is a good time to take care of it so it's not holding up the setup process later. The information you will need ready when the time comes is:
+Before you can install Textpattern, you will need a MySQL database ready, and a user account with 'write' privileges to go along with it. It's a hurdle you jump with your web host, but now is a good time to take care of it so it's not holding up the setup process later. 
+
+Record this information and keep it handy after you create the database:
 
 * database name
 * database user name
 * database user password
 
-That information will be used later to link Textpattern with the database and establish the configuration file, but we'll come back to that. For now create your database and keep the above data handy.
+That information will be used later in the setup process, but we'll come back to that.
 
 Note, depending on your web host, you may be forced to use your web host ID as a prefix on the database name and database user name. This will be evident at time of creating the database because the prefix will be added automatically, if at all. For example, if your web host ID was your last name (e.g., 'lname') and you named your database 'oceans', then your actual database name to use later would be "lname_oceans".
 
