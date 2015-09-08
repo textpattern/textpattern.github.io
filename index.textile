@@ -1,18 +1,20 @@
 ---
 layout: default
 published: true
-title: "Textpattern CMS user documentation"
+title: "Textpattern user documentation"
 ---
 
-h1. Table of Contents
+h1. Textpattern user documentation
 
-h2. Textpattern source code
+The *table of contents*.
 
-Zip packages and Github repos!
+h4. Textpattern source code
 
-* "Textpattern repositories":development/txp-repositories (the suite of options)
+Zip packages and Github repos.
 
-h2. Installation handling
+* "Textpattern repositories":development/txp-repositories
+
+h4. Installation handling
 
 Installing, upgrading, and moving Textpattern.
 
@@ -20,26 +22,25 @@ Installing, upgrading, and moving Textpattern.
 * "Upgrading and downgrading Textpattern":installation/upgrading-downgrading-txp
 * "Moving a Textpattern installation":installation/moving-txp
 
-h2. Site administration
+h4. Site administration
 
-Textpattern configuration and website assembly.
+Configuration, assembly, and security.
 
-* "Textpattern administration":administration/ -- Covers the suite of core administration panels and their functionality.
-* "Administration fast-track":administration/admin-fast-track -- A fast-track to the workflow of building your first publishing architecture.
+* "Textpattern administration":administration/ (The core administration panels and their functionality.)
+* "Administration fast-track":administration/admin-fast-track (A workflow fast-track for building your first publishing architecture.)
+* "Textpattern security":administration/security (Read before you worry, or do anything hasty.)
 
+h4. Core tags
 
-h2. Core tags
-
-Learn and use these to build sophisticated publishing architectures, like a Textpattern jedi master.
+Learn the tags and build sophisticated publishing architectures.
 
 * "Tag basics":tags/tag-basics/ (a good place to start)
-* "Tag reference index":tags/
+* "Tag reference index":tags/ 
 
-h2. Security
-
-Read "Textpattern security":administration/security before you worry, or do anything hasty.
-
-h2. Popular topics
+h4. Design
 
 * "Theme design":themes/
+
+h4. Development
+
 * "Plugin development":development/
