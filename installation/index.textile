@@ -28,7 +28,7 @@ On this page:
 
 h2(#sec1). Create your database
 
-Before you can install Textpattern, you will need a MySQL database ready, and a user account with 'write' privileges to go along with it. It's a hurdle you jump with your web host, but now is a good time to take care of it so it's not holding up the setup process later. 
+Before you can install Textpattern, you will need a MySQL database ready, and a user account with 'write' privileges to go along with it. It's a hurdle you jump on the web host side of things, but now is a good time to take care of it so it's not holding up the setup process later. 
 
 Record this information when you create the database and keep it handy:
 
