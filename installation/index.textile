@@ -54,16 +54,16 @@ The zip package will have a folder/file tree matching that in the ["Textpattern 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Item |_. Type |_. Removable? |_. What it's for |
-| __files__ | directory | not really | Empty by default. It's where content files (.pdf, .docx, .rtf, .epub, .txt, etc.) will go when/if you upload them in the **Files** panel. You don't need to use it, per se, but if the directory is missing, you may get warnings about it in the "**Diagnostics**":../administration/diagnostics-panel panel. |
+| __files__ | directory | no | Empty by default. It's where content files (.pdf, .docx, .rtf, .epub, .txt, etc.) will go when/if you upload them in the **Files** panel. You may see a warning about the file's @chmod@ status (editing rights) in the "**Diagnostics**":../administration/diagnostics-panel panel. |
 | __images__ | directory | no | Empty by default. It's where images will go when you upload them in the **Images** panel, and you will, so this directory is nearly essential. |
 | __rpc__ | directory | yes | Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the "Enable XML-RPC server?" preference is set to "No" in the "**Preferences** (**Basic**)":../administration/prefs-basic-panel panel. |
 | __sites__ | directory | yes | Supports multi-site installations managed by one administration side. It contains a template and instructions (a README.txt) for doing so. You can safely remove this directory if not wanted. |
 | __textpattern__ | directory | no | Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side. |
-| __.htaccess__ | server file[2] | no | Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of "www.", and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on. |
+| __.htaccess__ | file[2] | no | Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of "www.", and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on. |
 | __index.php__ | file | no | Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing. |
 | __css.php__ | file | no | Negotiates the front-end stylesheets you create in the **Styles** panel. |
-| composer.json | file | not really | A programming checker. [Purpose?] |
-| phpcs.xml | file | not really | A programming checker. [Purpose?] |
+| composer.json | file | ? | A programming checker. [Purpose?] |
+| phpcs.xml | file | ? | A programming checker. [Purpose?] |
 | __README.txt__ | file | yes | The file providing brief instructions for installing and upgrading Textpattern. |
 | __HISTORY.txt__ | file | yes | The file showing the package release Changelog. |
 | __LICENSE-BSD-3.txt__ | file | no | Textpattern's software copyright agreement. It doesn't impact functionality, but leave it alone. |
@@ -74,7 +74,7 @@ notextile. </div>
 
 fn1. Do not move files in the tree or change their names. Doing so will render Textpattern useless.
 
-fn2. This type of file is a "hidden" file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Macbook Pro laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them. 
+fn2. This type of file is a "hidden" sever file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Macbook Pro laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them. 
 
 h2(#sec3). Upload package to web server
 
