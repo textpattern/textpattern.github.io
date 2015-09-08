@@ -318,7 +318,7 @@ Now you know what plugins are and you're ready to kick plugin ass. You'll probab
 Always use a template when one is available, and there is:
 
 * "Plugin template":https://github.com/textpattern/textpattern-plugin-template
-* "Plugin template helper":http://docs.textpattern.io/development/plugin-template-help
+* "Plugin template helper":plugin-template-help
 
 **Plugin composer:**
 
@@ -328,22 +328,22 @@ Namely, the "ied_plugin_composer":http://textpattern.org/plugins/588/ied_plugin_
 
 One of the "Developer rules of the road":#sec2. When you're plugin is done (or as you code it), it's time to write that tight and useful plugin help documentation. There's a template for that:
 
-* "Plugin user-help guidelines":http://docs.textpattern.io/development/plugin-user-help-guidelines
+* "Plugin user-help guidelines":plugin-user-help-guidelines
 * "sed_plugin_help_viewer":http://textpattern.org/plugins/612/sed_plugin_help_viewer (A help viewer plugin that you might find... helpful.)
 
 **Code repositories:**
 
 Get your repos here; something for everyone. A few git commands included.
 
-* "Textpattern repositories":fetching-dev-version-of-txp
+* "Textpattern repositories":txp-repositories
 
 **Integration and waypoints:**
 
 These may be useful depending on the kind of plugin you're building.
 
-* "User role types and privileges":http://docs.textpattern.io/administration/admin/user-role-types-and-privileges (If your plugin will interact with user accounts.)
-* "Database schema reference":http://docs.textpattern.io/development/database-schema-reference (If your plugin will need a database table.)
-* "Extensions":http://docs.textpattern.io/administration/extensions/ (If your admin-side plugin will provide __Publisher__ controls in it's own panel under **Extensions**.)
+* "User role types and privileges":/administration/user-role-types-and-privileges (If your plugin will interact with user accounts.)
+* "Database schema reference":database-schema-reference (If your plugin will need a database table.)
+* "**Extensions**":/administration/extensions (If your admin-side plugin will provide __Publisher__ controls in it's own panel under **Extensions**.)
 
 **Miscellaneous tools:**
 
