@@ -45,11 +45,11 @@ h2(#sec2). Download and unpack Textpattern
 Now we begin the Textpattern part of the deal:
 
 # Create a folder on your local drive (e.g., _txp-new_). 
-# "Download":http://textpattern.com/download the latest release package (either __.zip__ or __.tar.gz __, as you prefer). 
+# "Download":http://textpattern.com/download the latest release package (either __.zip__ or __.tar.gz__, as you prefer). 
 # Move the zip package to the folder you created.
 # Unzip the package.
 
-The zip package will have a folder/file tree matching that in the "Textpattern repo":https://github.com/textpattern/textpattern.[1]. Following are important folders and files you'll see.
+The zip package will have a folder/file tree matching that in the ["Textpattern repo":https://github.com/textpattern/textpattern].[1] Following are important folders and files you'll see.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
