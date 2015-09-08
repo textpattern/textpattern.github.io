@@ -333,9 +333,9 @@ One of the "Developer rules of the road":#sec2. When you're plugin is done (or a
 
 **Code repositories:**
 
-Get your repos here. (Other docs regarding command-line interaction with repos will appear here later.)
+Get your repos here; something for everyone. A few git commands included.
 
-* "Fetching development version of Textpattern":http://docs.textpattern.io/development/fetching-dev-version-of-txp (Also addresses which branch or release to use, and where to get old versions.)
+* "Textpattern repositories":fetching-dev-version-of-txp
 
 **Integration and waypoints:**
 

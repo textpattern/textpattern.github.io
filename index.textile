@@ -6,25 +6,30 @@ title: "Textpattern CMS user documentation"
 
 h1. Table of Contents
 
+h2. Textpattern source code
+
+A repo for every interest and skill level.
+
+* "Textpattern repositories":development/txp-repositories
+
 h2. Installation handling
 
-Installing, upgrading, and moving Textpattern, and working from source code.
+Installing, upgrading, and moving Textpattern.
 
 * "Installing Textpattern":installation/
 * "Upgrading and downgrading Textpattern":installation/upgrading-downgrading-txp
 * "Moving a Textpattern installation":installation/moving-txp
-* "Fetching development versions":development/fetching-dev-version-of-txp (for plugin developers and feature testers)
 
-h2. Administration
+h2. Site administration
 
-Configuring Textpattern and establishing your base architecture.
+Textpattern configuration and website assembly.
 
 * "Administration fast-track":administration/admin-fast-track -- Gets you up to speed with the administration side and building your first publishing architecture. Useful if you've just installed Textpattern for the first time.
 * "Textpattern administration":administration/ -- Covers the suite of core administration panels, including full functionality on each one.
 
 h2. Core tags
 
-Building publishing architectures with Textpattern means learning to use the core set of tags.
+Learn and use these to build sophisticated publishing architectures, like a Textpattern jedi master.
 
 * "Tag basics":tags/tag-basics/ (a good place to start)
 * "Tag reference index":tags/
