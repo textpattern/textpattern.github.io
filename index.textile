@@ -8,9 +8,9 @@ h1. Table of Contents
 
 h2. Textpattern source code
 
-A repo for every interest, on Github.
+Zip packages and Github repos!
 
-* "Textpattern repositories":development/txp-repositories
+* "Textpattern repositories":development/txp-repositories (the suite of options)
 
 h2. Installation handling
 
