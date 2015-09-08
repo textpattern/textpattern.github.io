@@ -22,8 +22,8 @@ h3. Installation handling
 
 h3. Site administration
 
-* "Textpattern administration":administration/ (administration structure and functionality)
-* "Administration fast-track":administration/admin-fast-track (fast-track workflow to get up to speed)
+* "Textpattern administration":administration/ (admin-side structure and functionality)
+* "Administration fast-track":administration/admin-fast-track (workflow insights to get up to speed  quick)
 * "Textpattern security":administration/security (read before you worry or hack the core)
 
 h3. Core tags
