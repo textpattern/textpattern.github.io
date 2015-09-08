@@ -66,7 +66,7 @@ Where any of the __.zip__ and __.tar.gz__ packages are concerned, you won't need
 
 When working with a repo in Github, you need to decide if you're going to _clone_ it or _fork_ it:
 
-**Clone me.** When cloning a repo, you've made the decision to contribute back to the master repo branch, or whatever repo you may have cloned from. Cloning puts a copy of the repo on your local drive, where you can work on code on your own time and at your own pace. When ready to share back, you make a _pull request_, which is basically a request to the branch manager to merge your edits to the master repo's code. The branch manager can choose not to if your code is sketchy, but generally the intent is to collaborate harmoniously toward the good of all things.
+**Clone me.** When cloning a repo, you've made the decision to contribute back to the master repo branch, or whatever repo you may have cloned from. Cloning puts a copy of the repo on your local drive, where you can work on code (or copy, like this page, for example) on your own time and at your own pace. When ready to share back, you make a _pull request_, which is basically a request to the branch manager to merge your edits to the master repo's code. The branch manager can choose not to if your code is sketchy, but generally the intent is to collaborate harmoniously toward the good of all things.
 
 **Fork off!** When forking a repo, you've essentially made the decision to run rogue with the code. You can change code however you want, but it won't get merged back to the repo you forked from. You're on your own.
 
