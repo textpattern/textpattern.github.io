@@ -11,9 +11,9 @@ h2. Installation handling
 Installing, upgrading, and moving Textpattern, and working from source code.
 
 * "Installing Textpattern":installation/
-* "Installing development versions":installation/installing-txp-development-version (for testers and risk-takers)
 * "Upgrading and downgrading Textpattern":installation/upgrading-downgrading-txp
 * "Moving a Textpattern installation":installation/moving-txp
+* "Fetching development versions":development/fetching-dev-version-of-txp (for plugin developers and feature testers)
 
 h2. Administration
 
