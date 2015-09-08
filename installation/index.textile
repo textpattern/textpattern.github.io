@@ -10,7 +10,7 @@ tags:
 
 h1. Installing Textpattern
 
-These are detailed instructions for installing and configuring Textpattern. The instructions follow a process of using an (S)FTP client, which you presumably have.[1] If you're familiar with installing CMS software and prefer the quick list of steps, see the "__README.txt__":https://github.com/textpattern/textpattern/blob/master/README.txt file that's included in the install package. If you're more of a command-line jockey, the bits in "working with the development branch":../development/fetching-dev-version-of-txp should suit you.  
+These are detailed instructions for installing and configuring Textpattern. The instructions follow a process of using an (S)FTP client, which you presumably have.[1] If you're familiar with installing CMS software and prefer the quick list of steps, see the "__README.txt__":https://github.com/textpattern/textpattern/blob/master/README.txt file that's included in the install package. If you're more of a command-line jockey, the bits in "working with the development branch":/development/fetching-dev-version-of-txp should suit you.  
 
 fn1. "Transmit":https://www.panic.com/transmit/ is a popular choice for Mac, and "WinSCP":http://sourceforge.net/projects/winscp/ is for Windows.
 
@@ -175,7 +175,7 @@ h2(#sec5). Finishing installation
 
 When you first login, you'll automatically land on the "**Update languages**":/administration/prefs-languages-panel panel in **Preferences** to update your language choice or choose another as the default. 
 
-After that you're on your own, but your next stop should be the "**Basic**":../administration/prefs-basic-panel preferences panel to set as many of those preferences as you can, particularly those pertaining to site identity, folder paths, time zones, and date/time formats. Setting the identity and install/folder path preferences now will help eliminate diagnostics warnings for those things, which is where you go next.
+After that you're on your own, but your next stop should be the "**Basic**":/administration/prefs-basic-panel preferences panel to set as many of those preferences as you can, particularly those pertaining to site identity, folder paths, time zones, and date/time formats. Setting the identity and install/folder path preferences now will help eliminate diagnostics warnings for those things, which is where you go next.
 
 Jump to the "**Diagnostics**":/administration/diagnostics-panel panel to troubleshoot any installation/setup problems or minor annoyances. For example, if you didn't remove the __/setup__ folder yet as described earlier, a diagnostic will appear to remind you again. Likewise you might see warnings about server directories needing different rights, and so forth.
 

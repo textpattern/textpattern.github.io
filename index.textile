@@ -12,7 +12,7 @@ Installing, upgrading, and moving Textpattern, and working from source code.
 
 * "Installing Textpattern":installation/
 * "Installing development versions":installation/installing-txp-development-version (for testers and risk-takers)
-* "Upgrading and downgrading Textpattern":installation/upgrading-downgrading-txp]
+* "Upgrading and downgrading Textpattern":installation/upgrading-downgrading-txp
 * "Moving a Textpattern installation":installation/moving-txp
 
 h2. Administration
