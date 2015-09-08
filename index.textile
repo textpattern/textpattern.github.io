@@ -6,41 +6,37 @@ title: "Textpattern user documentation"
 
 h1. Textpattern user documentation
 
-h3. Table of Contents
+Welcome to the new user documentation, which replaces the old wiki at textpattern.net (soon to retire). This will be work in progress for a while, but any viewable page is ready for use, albeit subject to further editing. A broken link means a page isn't ready.
 
-h5. I. Textpattern source code
+h2. TABLE OF CONTENTS
 
-Zip packages and Github repos.
+h3. Source code
 
-* "Textpattern repositories":development/txp-repositories
+* "Textpattern repositories":development/txp-repositories (zip packages, Github repos, and git commands)
 
-h5. II. Installation handling
+h3. Installation handling
 
-Installing, upgrading, and moving Textpattern.
-
-* "Installing Textpattern":installation/
+* "Installing Textpattern":installation/ (detailed instructions)
 * "Upgrading and downgrading Textpattern":installation/upgrading-downgrading-txp
 * "Moving a Textpattern installation":installation/moving-txp
 
-h5. III. Site administration
+h3. Site administration
 
-Configuration, assembly, and security.
+* "Textpattern administration":administration/ (administration structure and functionality)
+* "Administration fast-track":administration/admin-fast-track (fast-track workflow to get up to speed)
+* "Textpattern security":administration/security (read before you worry or hack the core)
 
-* "Textpattern administration":administration/ (The core administration panels and their functionality.)
-* "Administration fast-track":administration/admin-fast-track (A workflow fast-track for building your first publishing architecture.)
-* "Textpattern security":administration/security (Read before you worry, or do anything hasty.)
+h3. Core tags
 
-h5. IV. Core tags
+* "Tag use basics":tags/tag-basics/ (a good place to start)
+* "Tags reference":tags/ (the complete suite)
 
-Learn the tags and build sophisticated publishing architectures.
-
-* "Tag basics":tags/tag-basics/ (a good place to start)
-* "Tag reference index":tags/ 
-
-h5. V. Design
+h3. Design
 
 * "Theme design":themes/
+* Front-end themes
+* Admin-side themes
 
-h5. VI. Development
+h3. Development
 
 * "Plugin development":development/
