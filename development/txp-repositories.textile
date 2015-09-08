@@ -70,7 +70,7 @@ When working with a repo in Github, you need to decide if you're going to _clone
 
 **Fork off!** When forking a repo, you've essentially made the decision to run rogue with the code. You can change code however you want, but it won't get merged back to the repo you forked from. You're on your own.
 
-In context of Textpattern, it's assumed you're going to clone if contributing to core code, or fork if you just want a sandbox to play and experiment in; say for plugin development reasons, for example.
+In context of Textpattern, it's assumed you're going to clone if contributing to core code, or fork if you just want a sandbox to play and experiment in; say for plugin development reasons.
 
 h3(#sec2-1). Github GUI client
 
