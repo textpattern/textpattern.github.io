@@ -84,13 +84,17 @@ You may, of course, install it in a sub-directory if you're only using Textpatte
 
 You will use FTP -- or Secure-FTP (SFTP), if your web host requires it -- to upload the package to your desired web server location. Two capable clients are WinSCP for Windows and Transmit for Mac.
 
-When ready, make a FTP/SFTP connection to your web server and navigate to the directory where you intend to install Textpattern. If not done automatically by the FTP client, make a second connection to your local drive and navigate to where you have the unzipped Textpattern install package waiting. Select the package files (except, perhaps, README.txt and HISTORY.txt) and upload these to your server.
+When ready:
+
+# Connect to your web server via the FTP/SFTP client and navigate down to the directory where you intend to install Textpattern.
+# If not done automatically by the FTP/SFTP client, make a second connection to your local drive and navigate to where you have the unzipped Textpattern install package waiting.
+# Select the package file tree (the folders and files _inside_ the unzipped version number folder) on your local drive and drag/drop them to your web server directory.
 
 h2(#sec4). Setup and configure database connection
 
-Now you'll walk through the setup process, which is a series of screens. Have you're database information ready. 
+Now you'll walk through the setup process, which is a series of screens. Have you're "database information":#sec1 ready. 
 
-Assuming you uploaded the package to your web root, open a browser and go to __http://domain.tld/textpattern/setup/__. 
+Assuming you uploaded the install file tree to your web root, open a browser and go to __http://domain.tld/textpattern/setup/__. (If you installed in a subdirectory, the path would reflect that.)
 
 h3(#sec4-1). Screen 1: Welcome, select language
 
@@ -100,7 +104,7 @@ When ready, click the **Next** button.
 
 fn2. If you don't see this screen, check your URL path. Should it be "https" or "www."? Did you install in a sub-directory? Is there a typo?
 
-fn3. You can change the UI language any time after setup in the **Preferences (Basic)** panel.
+fn3. You can change the UI language any time after setup in the "**Preferences** (**Basic**)":../administration/prefs-basic-panel panel.
 
 h3(#sec4-2). Screen 2: Database connection
 
@@ -167,7 +171,7 @@ Return to the install screen in your browser and click the "Main interface" link
 
 h2(#sec5). Finishing the installation process
 
-When you first login, you'll automatically land on the "**Preferences (Languages)**":../administration/prefs-languages-panel panel to update your language choice or choose another as the default. After that you're on your own, but your next stop should be the "**Preferences (Basic)**":../administration/prefs-basic-panel panel to set as many of those preferences as you can, particularly the ones pertaining to site identity, folder paths, time zones, and date/time formats.
+When you first login, you'll automatically land on the "**Preferences** (**Languages**)":../administration/prefs-languages-panel panel to update your language choice or choose another as the default. After that you're on your own, but your next stop should be the "**Preferences (Basic)**":../administration/prefs-basic-panel panel to set as many of those preferences as you can, particularly the ones pertaining to site identity, folder paths, time zones, and date/time formats.
 
 Your next stop should be the "Diagnostics":../administration/diagnostics-panel panel to troubleshoot any installation/setup problems or minor annoyances. For example, if you didn't remove the /setup folder yet as described earlier, a diagnostic will appear to remind you again. Likewise you might see warnings about server directories needing different rights, and so forth.
 
