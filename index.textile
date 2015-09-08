@@ -8,13 +8,13 @@ h1. Textpattern user documentation
 
 The *table of contents*.
 
-h4. Textpattern source code
+h5. I. Textpattern source code
 
 Zip packages and Github repos.
 
 * "Textpattern repositories":development/txp-repositories
 
-h4. Installation handling
+h5. II. Installation handling
 
 Installing, upgrading, and moving Textpattern.
 
@@ -22,7 +22,7 @@ Installing, upgrading, and moving Textpattern.
 * "Upgrading and downgrading Textpattern":installation/upgrading-downgrading-txp
 * "Moving a Textpattern installation":installation/moving-txp
 
-h4. Site administration
+h5. III. Site administration
 
 Configuration, assembly, and security.
 
@@ -30,17 +30,17 @@ Configuration, assembly, and security.
 * "Administration fast-track":administration/admin-fast-track (A workflow fast-track for building your first publishing architecture.)
 * "Textpattern security":administration/security (Read before you worry, or do anything hasty.)
 
-h4. Core tags
+h5. IV. Core tags
 
 Learn the tags and build sophisticated publishing architectures.
 
 * "Tag basics":tags/tag-basics/ (a good place to start)
 * "Tag reference index":tags/ 
 
-h4. Design
+h5. V. Design
 
 * "Theme design":themes/
 
-h4. Development
+h5. VI. Development
 
 * "Plugin development":development/
