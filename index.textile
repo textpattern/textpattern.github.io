@@ -8,7 +8,7 @@ h1. Table of Contents
 
 h2. Textpattern source code
 
-A repo for every interest and skill level.
+A repo for every interest, on Github.
 
 * "Textpattern repositories":development/txp-repositories
 
@@ -24,8 +24,9 @@ h2. Site administration
 
 Textpattern configuration and website assembly.
 
-* "Administration fast-track":administration/admin-fast-track -- Gets you up to speed with the administration side and building your first publishing architecture. Useful if you've just installed Textpattern for the first time.
-* "Textpattern administration":administration/ -- Covers the suite of core administration panels, including full functionality on each one.
+* "Textpattern administration":administration/ -- Covers the suite of core administration panels and their functionality.
+* "Administration fast-track":administration/admin-fast-track -- A fast-track to the workflow of building your first publishing architecture.
+
 
 h2. Core tags
 
