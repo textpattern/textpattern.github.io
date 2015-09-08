@@ -49,26 +49,32 @@ Now we begin the Textpattern part of the deal:
 # Move the zip package to the folder you created.
 # Unzip the package.
 
-The zip package will have a folder/file tree matching that in the ["Textpattern repo":https://github.com/textpattern/textpattern].[1] Following are important folders and files you'll see.
+The zip package will have a folder/file tree matching that in the ["Textpattern repo":https://github.com/textpattern/textpattern].[1] Following are the folders and files you'll see.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. Name |_. Type |_. What it's for or contains |
-| htaccess | file | Important for many reasons that are out of scope here, but not the least of which is handling URL formatting. |
-| css.php | file | Handles the site's styles. |
-| files | directory | Empty by default, but utilized if you upload content files later in the **Files** panel. |
-| HISTORY.txt | file | The package release Changelog. |
-| images | directory | Empty by default, but utilized later when uploading images in the **Images** panel. |
-| index.php | file | The default location of your site where web users will arrive, and dynamic publishing takes place. |
-| js | directory | Contains JavaScript specific to the default website theme. This may be safely removed depending on whether you plan to use your own theme instead of the default. |
-| README.txt | file | Provides brief instruction on installing and upgrading. |
-| rpc | directory | Contains XML-RPC functionality. |
-| sites | directory | Contains site template, and provides support for multi-site installations. |
-| textpattern | directory | Contains all the core scripting and functionality. |
+|_. Item |_. Type |_. Removable? |_. What it's for |
+|_. __files__ | directory | not really | Empty by default. It's where content files (.pdf, .docx, .rtf, .epub, .txt, etc.) will go when/if you upload them in the **Files** panel. You don't need to use it, per se, but if the directory is missing, you may get warnings about it in the "**Diagnostics**":../administration/diagnostics-panel panel. |
+|_. __images__ | directory | no | Empty by default. It's where images will go when you upload them in the **Images** panel, and you will, so this directory is nearly essential. |
+|_. __rpc__ | directory | yes | Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the "Enable XML-RPC server?" preference is set to "No" in the "**Preferences** (**Basic**)":../administration/prefs-basic-panel panel. |
+|_. __sites__ | directory | yes | Supports multi-site installations managed by one administration side. It contains a template and instructions (a README.txt) for doing so. You can safely remove this directory if not wanted. |
+|_. __textpattern__ | directory | no | Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side. |
+|_. __.htaccess__ | server file[2] | no | Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of "www.", and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on. |
+|_. __index.php__ | file | no | Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing. |
+|_. __css.php__ | file | no | Negotiates the front-end stylesheets you create in the **Styles** panel. |
+|_. composer.json | file | not really | A programming checker. [Purpose?] |
+|_. phpcs.xml | file | not really | A programming checker. [Purpose?] |
+|_. __README.txt__ | file | yes | The file providing brief instructions for installing and upgrading Textpattern. |
+|_. __HISTORY.txt__ | file | yes | The file showing the package release Changelog. |
+|_. __LICENSE-BSD-3.txt__ | file | no | Textpattern's software copyright agreement. It doesn't impact functionality, but leave it alone. |
+|_. __LICENSE-LESSER.txt__ | file | no | The GNU LESSER GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone. |
+|_. __LICENSE.txt__ | file | no | The GNU GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone. |
 
 notextile. </div>
 
 fn1. Do not move files in the tree or change their names. Doing so will render Textpattern useless.
+
+fn2. This type of file is a "hidden" file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Macbook Pro laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them. 
 
 h2(#sec3). Upload package to web server
 
