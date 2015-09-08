@@ -173,8 +173,8 @@ h2(#sec5). Finishing the installation process
 
 When you first login, you'll automatically land on the "**Update languages**":../administration/prefs-languages-panel panel in **Preferences** to update your language choice or choose another as the default. 
 
-After that you're on your own, but your next stop should be the "**Basic**":../administration/prefs-basic-panel preferences panel to set as many of those preferences as you can, particularly those pertaining to site identity, folder paths, time zones, and date/time formats. Doing so will help eliminate diagnostics warnings, which is where you go next.
+After that you're on your own, but your next stop should be the "**Basic**":../administration/prefs-basic-panel preferences panel to set as many of those preferences as you can, particularly those pertaining to site identity, folder paths, time zones, and date/time formats. Setting the identity and install/folder path preferences now will help eliminate diagnostics warnings for those things, which is where you go next.
 
-Jump to the "Diagnostics":../administration/diagnostics-panel panel to troubleshoot any installation/setup problems or minor annoyances. For example, if you didn't remove the __/setup__ folder yet as described earlier, a diagnostic will appear to remind you again. Likewise you might see warnings about server directories needing different rights, and so forth.
+Jump to the "**Diagnostics**":../administration/diagnostics-panel panel to troubleshoot any installation/setup problems or minor annoyances. For example, if you didn't remove the __/setup__ folder yet as described earlier, a diagnostic will appear to remind you again. Likewise you might see warnings about server directories needing different rights, and so forth.
 
 When that's all done, you're ready to build your website. Have a look at the "fast-track":http://docs.textpattern.io/administration/admin-fast-track information, which might help you get up to speed with the main building blocks. 
