@@ -6,7 +6,7 @@ title: "Textpattern user documentation"
 
 h1. Textpattern user documentation
 
-The *table of contents*.
+h3. Table of Contents
 
 h5. I. Textpattern source code
 
