@@ -149,7 +149,7 @@ Proceed as follows:
 # Use your S/FTP client to connect to your installation directory and open __/textpattern/config-dist.php__ in your text editor of choice.
 # Copy the code that Textpattern generated for you in the current install screen.
 # Paste the code into the __config-dist.php__ file, completely overwriting its entire contents. 
-# Save the file, close it, then rename it by removing the "-dist" from the file name (so it's only __config.php__).
+# Save the file, close it, then rename it by removing "-dist" from the file name, leaving __config.php__.
 
 Return to the install screen in your browser and click the **I did it** button.
 
@@ -163,9 +163,9 @@ Click the **Next** button.
 
 h3(#sec4-5). Screen 5: Confirmation and security screen
 
-If all has gone well, Textpattern will indicate your tables have been generated and and provide a link to log into the administration side. 
+If all has gone well, Textpattern will indicate your tables have been generated and provide a link to log into the administration side. 
 
-It will also tell you to delete the __/textpattern/setup__ directory for security reasons. Do it now. Use your S/FTP client, go to the __/textpattern/setup__ directory, and remove it (and all its contents) from your server.
+The screen will also suggest deleting the __/textpattern/setup__ directory for security reasons. Do it now. Use your FTP/SFTP client, go to the __/textpattern/setup__ directory, and remove it (and all its contents) from your server.
 
 Return to the install screen in your browser and click the "Main interface" link at the top of the screen. This will take you to the administration login screen for your new Textpattern site.
 
