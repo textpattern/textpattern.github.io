@@ -6,7 +6,7 @@ title: "Textpattern user documentation"
 
 h1. Textpattern user documentation
 
-Welcome to the new user documentation, which replaces the old wiki at textpattern.net (soon to retire). This will be work in progress for a while, but any viewable page is ready for use, albeit subject to further editing. A broken link means a page isn't ready.
+Welcome to the new user documentation, which replaces the old wiki at textpattern.net (soon to retire). This is work-in-progress for a while, but any viewable page is ready for use, albeit subject to further editing. Occasional progress updates and feedback requests will be made in the "sites forum":http://forum.textpattern.com/viewforum.php?id=60.
 
 h2. TABLE OF CONTENTS
 
