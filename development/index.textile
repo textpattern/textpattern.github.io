@@ -288,19 +288,11 @@ Textpattern reserves the lower twelve bits of @$plugin['flags']@ for its own use
 
 h2(#sec8). Variables, classes, and constants
 
-**Variables:**
+These resources are hosted at *phpcrossref.com* and require a password log in. You may "request a password":mailto:inbox@phpcrossref.com from the site owner to access the information:
 
-* "Variable list":http://phpcrossref.com/xref/textpattern/_variables/ (via PHP Cross Reference)
-* "Accessing global variables":http://www.focusontheclouds.com/home/articles/72/accessing-global-variables-in-textpattern
-
-**Classes:**
-
-* "Classes list":http://phpcrossref.com/xref/textpattern/_classes/ (via PHP Cross Reference)
-* "Class in plugins example":http://forum.textpattern.com/viewtopic.php?id=26025
-
-**Constants:**
-
-* "Constants list":http://phpcrossref.com/xref/textpattern/_constants/ (via PHP Cross Reference)
+* "Variable list":http://phpcrossref.com/xref/textpattern/_variables/ (%(warning)password access only%)
+* "Classes list":http://phpcrossref.com/xref/textpattern/_classes/ (%(warning)password access only%)
+* "Constants list":http://phpcrossref.com/xref/textpattern/_constants/ (%(warning)password access only%)
 
 h2(#sec9). Full plugin tutorials
 
