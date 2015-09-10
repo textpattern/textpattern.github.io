@@ -49,8 +49,6 @@ h2(#sec2). The template
 
 The following code block is the plugin help template, which takes into account the entire suite of sections indicated above. Copy everything in the block, paste it into your editor, and remove the sections you don't need, if any. Nothing else but text editing should be needed.[2]
 
-fn2. All Textile formatting is provided already. All you have to do is fill in your content in the right locations. *Do not* use inline CSS styling of your own in help information. Allow the presentation provided in the admin-side theme to work on its own. All you need to do is use the indicated Textile as clarified.
-
 <pre>
 h1. prefix_plugin_name
 
@@ -162,6 +160,8 @@ h2(#sec11). Author contact
 
 p. Developer contact details, or links to where one can get more help or make suggestions.
 </pre>
+
+fn2. All Textile formatting is provided already. All you have to do is fill in your content in the right locations. *Do not* use inline CSS styling of your own in help information. Allow the presentation provided in the admin-side theme to work on its own. All you need to do is use the indicated Textile as clarified.
 
 h2(#sec3). Template guidelines
 
