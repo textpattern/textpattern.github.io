@@ -18,6 +18,7 @@ On this page:
 * "Guidelines for choosing and using a prefix":#sec1
 * "How to register a prefix":#sec2
 * "Registered prefixes":#sec3
+* "Where to use the prefix":#sec4
 
 h2(#sec1). Guidelines for choosing and using a prefix
 
@@ -86,3 +87,16 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | Z | zem/zem, zen/zenigy, zmk/maxk |
 
 notextile. </div>
+
+h2(#sec4). Where to use the prefix
+
+When developing your plugins, you will apply your prefix in:
+
+* The names of PHP classes, functions, and global variables in the plugin's code.
+* The database table and indices names.
+* The names of stored preferences in the @_txp_prefs_@ table and/or the @$prefs array;@.
+* Any global JavaScript variables or function names you use for modifying the backend or adding features to the front-end.
+* IDs and, to some extent, classes of HTML elements that you add to the backend interface.[3]
+* URL parameter names. Replace @?foo=bar&baz=1@ with @?abc_foo=bar&abc_baz=1@, where "@abc@" would be your own prefix.
+
+fn3. The exception to this is if an element of your markup is logically similar to an already existing core element and you wish it to be styled in the same way by themes. Doing this saves theme designers from having to write specific rules to target your plugin's markup.

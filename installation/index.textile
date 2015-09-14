@@ -94,30 +94,27 @@ When ready:
 
 h2(#sec4). Setup and configuration
 
-Now you'll walk through the setup process, which is a series of screens. Have you're "database information":#sec1 ready. 
+Now you'll walk through the setup process, which is a series of screens. Have you're "database information":#sec1 ready. Assuming you uploaded the install file tree to your web root, open a browser and go to __http://domain.tld/textpattern/setup/__. (If you installed Textpattern in a subdirectory, the path would reflect that.)
 
-Assuming you uploaded the install file tree to your web root, open a browser and go to __http://domain.tld/textpattern/setup/__. (If you installed in a subdirectory, the path would reflect that.)
+h3(#sec4-1). Select language
 
-h3(#sec4-1). Screen 1: Welcome, select language
+You should now be looking at the default installation screen, which shows the Textpattern logo, a language selection menu, and a **Submit** button.[2] The language you select will be used for the setup process, and become the default for your Textpattern UI.[3]
 
-You should now see the "Welcome to Textpattern" setup screen, as well a dropdown list for choosing a language.[2] The language you select will be used for the setup process, and become the default for your Textpattern UI.[3]
-
-When ready, click the **Next** button.
+Choose the language you want and click the **Submit** button.
 
 fn2. If you don't see this screen, check your URL path. Should it be "https" or "www."? Did you install in a sub-directory? Is there a typo?
 
 fn3. You can change the UI language any time after setup in the "**Basic**":/administration/prefs-basic-panel preferences panel.
 
-h3(#sec4-2). Screen 2: Database connection
+h3(#sec4-2). Step 1: Set database details
 
-The next screen asks for your MySQL database information. This is where you add the information you noted after creating your database originally. The fields you should see are for:
+The next screen represents the first of four installation steps, each clearly numbered at top of screen. asks for your MySQL database information. Screen 1 first asks for the MySQL database details, which you should have noted down when creating it. The fields you should see are for:
 
-* database user name
-* database user password
-* database server (use "localhost")
-* database name
-* database table prefix (optional)
-* Site URL
+* login
+* password
+* server (use "localhost")
+* database
+* table prefix (optional)
 
 **Database user name** and **database name**. As mentioned at the beginning, you may need to prefix the database user name and database name with your web host user account ID. You should have seen if this was necessary, however, when creating the database.
 
@@ -125,13 +122,13 @@ The next screen asks for your MySQL database information. This is where you add 
 
 **Database table prefix**. The screen will say you don't need to provide a table prefix if this will be your only installation of Textpattern. This assumes that you only have one MySQL database available to you. If that were true, adding a prefix here might be sensible so you could add another Textpattern installation to your database in the future without conflict, if you ever wanted to. But it's common anymore for web hosts to provide many databases, in which case you might use a unique database for each install, and thus no prefix would be needed. Either way, this field is optional. If you do use a prefix, a sensible convention is to end it with an underscore (e.g., 'txp1_').
 
-**Site URL**. The site URL field should already be filled in on your screen. You only need to verify it's correct. The path should reflect where the installation is being made, so if you're installing Textpattern in a sub-directory, then that needs to be in the path. If the path isn't already added, type it in manually.
+Screen 1 also requires your site URL. Textpattern should have filled this in automatically by detecting where your installation files are relative to your web root. Just make sure it's correct.
 
 When ready, click the **Next** button.
 
-If there was a problem with your database information, you'll be notified about it at this point and won't proceed to the next screen. You won't be told what the exact problem is either, so you'll have to figure that part out. It's usually because some aspect of the data you entered was wrong. Go over it again to check for mistakes. Check with your web host if you think there's an actual problem with the database account.
+If there was a problem with your database information, you'll be notified about it and won't proceed to the next screen. You won't be told what the exact problem is either, so you'll have to figure that part out. It's usually because some aspect of the data you entered was wrong. Go over it again to check for mistakes. Check with your web host if you think there's an actual problem with the database account.
 
-h3(#sec4-3). Screen 3: Establish config.php file
+h3(#sec4-3). Screen 2: Add config file
 
 If all went well in the previous screen, then it's time to create your Textpattern configuration file in the __/textpattern__ directory. Textpattern makes this easy by taking the information you added in the previous screen and generating the required file contents to use. A partial of code is displayed to copy/paste into a __config.php__ file that you create. The code will look something like this, but with your own data values instead:
 
