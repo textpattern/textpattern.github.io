@@ -117,7 +117,7 @@ Admin-side plugins often make use of the "**Extensions**":administration/extensi
 
 h2(#sec4). Register your plugin developer prefix
 
-All hopeful plugin developers must "register a plugin developer prefix":registered-textpattern-developer-prefixes, and use it in the appropriate locations.
+All hopeful plugin developers must "register a plugin developer prefix":plugin-developer-prefixes, and use it in the appropriate locations.
 
 h2(#sec5). How plugins are loaded
 
