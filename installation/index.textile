@@ -29,7 +29,7 @@ On this page:
 
 h2(#sec1). Create your database
 
-Before you can install Textpattern, you will need a MySQL database ready, and a user account with 'write' privileges to go along with it. It's a hurdle you jump on your web host's side of things, but now is a good time to take care of it so it's not holding up the Textpattern install/setup process later. 
+Before you can install Textpattern, you will need a MySQL database ready, and a user account with 'write' privileges to go with it. It's a hurdle you jump on your web host's side of things, but now is a good time to take care of it so it's not holding up the Textpattern install/setup process later. 
 
 Record this information when you create the database and keep it handy. It will be used later in the setup process:
 
@@ -45,12 +45,12 @@ h2(#sec2). Download and unpack Textpattern
 
 Now we begin the Textpattern part of the deal:
 
-# Create a folder on your local drive (e.g., _txp-new_). 
+# Create a folder on your local drive and name it something recognizable (e.g., _txp-new_). 
 # "Download":http://textpattern.com/download the latest release package (either __.zip__ or __.tar.gz__, as you prefer). 
 # Move the zip package to the folder you created.
 # Unzip the package.
 
-The zip package will have a folder/file tree matching that in the ["Textpattern repo":https://github.com/textpattern/textpattern].[1] Following are the folders and files you'll see.
+The zip package will have a folder/file tree matching that in the ["Textpattern repo":https://github.com/textpattern/textpattern].[2] Following are the folders and files you'll see.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -60,7 +60,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | __rpc__ | directory | yes | Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the "Enable XML-RPC server?" preference is set to "No" in the "**Basic**":/administration/prefs-basic-panel preferences panel. |
 | __sites__ | directory | yes | Supports multi-site installations managed by one administration side. It contains a template and instructions (a README.txt) for doing so. You can safely remove this directory if not wanted. |
 | __textpattern__ | directory | no | Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side. |
-| __.htaccess__ | file[2] | no | Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of "www.", and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on. |
+| __.htaccess__ | file[3] | no | Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of "www.", and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on. |
 | __index.php__ | file | no | Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing. |
 | __css.php__ | file | no | Negotiates the front-end stylesheets you create in the "**Styles**":/administration/styles-panel panel. |
 | composer.json | file | ? | A programming checker. [Purpose?] |
@@ -73,9 +73,9 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-fn1. Do not move files in the tree or change their names. Doing so will render Textpattern useless.
+fn2. Do not move files in the tree or change their names. Doing so will render Textpattern useless.
 
-fn2. This type of file is a "hidden" sever file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Macbook Pro laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them. 
+fn3. This type of file is a "hidden" sever file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Macbook Pro laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them. 
 
 h2(#sec3). Upload package to web server
 
@@ -97,13 +97,13 @@ Now you'll walk through the setup process, which is a series of screens. Have yo
 
 h3(#sec4-1). Select language
 
-You should now be looking at the default installation screen, which shows the Textpattern logo, a language selection menu, and a **Submit** button.[2] The language you select will be used for the setup process, and become the default for your Textpattern UI.[3]
+You should now be looking at the default installation screen, which shows the Textpattern logo, a language selection menu, and a **Submit** button.[4] The language you select will be used for the setup process, and become the default for your Textpattern UI.[5]
 
 Choose the language you want and click the **Submit** button.
 
-fn2. If you don't see this screen, check your URL path. Should it be "https" or "www."? Did you install in a sub-directory? Is there a typo?
+fn4. If you don't see this screen, check your URL path. Should it be "https" or "www."? Did you install in a sub-directory? Is there a typo?
 
-fn3. You can change the UI language any time after setup in the "**Basic**":http://docs.textpattrn.io/administration/prefs-basic-panel preferences panel.
+fn5. You can change the UI language any time after setup in the "**Basic**":http://docs.textpattrn.io/administration/prefs-basic-panel preferences panel.
 
 h3(#sec4-2). Step 1: Set database details
 
@@ -145,7 +145,7 @@ bq.. %(success)Connected%
 
 %(success)Using {database} ({encoding})%
 
-Where {database} is the name of your database and {encoding} is the character encoding your database is configured to use -- ideally "utf8".[4]
+Where {database} is the name of your database and {encoding} is the character encoding your database is configured to use -- ideally "utf8".[6]
 
 *Creating config.php file*
 
@@ -171,7 +171,7 @@ Proceed as follows:
 
 Return to the **Add config file** screen in your browser and click the **I did it** button.
 
-fn4. If you want to change your character encoding, you'll need to do that at your database. But finish installing first, then change the database encoding later.
+fn6. If you want to change your character encoding, you'll need to do that at your database. But finish installing first, then change the database encoding later.
 
 h3(#sec4-4). Step 3: Populate database
 
@@ -190,11 +190,11 @@ To create the administrator account and generate the database tables, add the fo
 
 *Site configuration*
 
-Under this area, you're asked to select the admin-side theme you want to use. The default theme is Hive.[5] You can change the admin-side theme choice at any time in "**Preferences (Basic)**":http://docs.textpattern.io/administration/pref-basic-panel after logging in.
+Under this area, you're asked to select the admin-side theme you want to use. The default theme is Hive.[7] You can change the admin-side theme choice at any time in "**Preferences (Basic)**":http://docs.textpattern.io/administration/pref-basic-panel after logging in.
 
 When ready click the **Next** button.
 
-fn5. This section may be obsolete in future versions of Textpattern. Hive may become the only officially-supported admin theme, thus no selection process here will be needed. The Classic and Remora themes will be available as add-ons post-installation, like any other admin-theme.
+fn7. This section may be obsolete in future versions of Textpattern. Hive may become the only officially-supported admin theme, thus no selection process here will be needed. The Classic and Remora themes will be available as add-ons post-installation, like any other admin-theme.
 
 h3(#sec4-5). Step 4: Go! (first admin-side log in)
 
