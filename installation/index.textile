@@ -22,7 +22,7 @@ On this page:
 ** "Step 1: Set database details":#sec4-2
 ** "Step 2: Add config file":#sec4-3
 ** "Step 3: Populate database":#sec4-4
-** "Step 4: Go! (first admin-side log in)":#sec4-5
+** "Step 4: Go!":#sec4-5
 
 
 h2(#sec1). Create your database
