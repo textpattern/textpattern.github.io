@@ -20,11 +20,11 @@ On this page:
 * "Download and unpack Textpattern":#sec2
 * "Upload package to web server":#sec3
 * "Setup and configuration":#sec4
-** "Screen 1: Welcome, select language":#sec4-1
-** "Screen 2: Database connection":#sec4-2
-** "Screen 3: Establish config.php file":#sec4-3
-** "Screen 4: Create administrator account":#sec4-4
-** "Screen 5: Confirmation":#sec4-5
+** "Select language":#sec4-1
+** "Step 1: Set database details":#sec4-2
+** "Step 2: Add config file":#sec4-3
+** "Step 3: Populate database":#sec4-4
+** "Step 4: Go! (first admin-side log in)":#sec4-5
 * "Finishing installation":#sec5
 
 
@@ -82,7 +82,7 @@ h2(#sec3). Upload package to web server
 
 If you intend to use Textpattern to manage the entire website, you'll upload the install package to your web root (i.e., the root of your web domain). For many hosts, the path to the root looks like this: __/users/home/{username}/web/public/__, where {username} is your user account name. You would upload the Textpattern package to the __/public__ directory (equal to _yourdomain.tld_). 
 
-You may, of course, install it in a sub-directory if you're only using Textpattern to run a blog, for example, as part of a larger site. (Generally people who do that end up "moving the installation":moving-textpattern later.)
+You may, of course, install it in a sub-directory if you're only using Textpattern to run a blog, for example, as part of a larger site. (Generally people who do that end up "moving the installation":http://docs.textpattrn.io/installation/moving-textpattern later.)
 
 You will use FTP, or Secure-FTP (SFTP) if your web host requires it, to upload the package to your desired web server location. Two capable clients are WinSCP for Windows and Transmit for Mac.
 
@@ -104,76 +104,106 @@ Choose the language you want and click the **Submit** button.
 
 fn2. If you don't see this screen, check your URL path. Should it be "https" or "www."? Did you install in a sub-directory? Is there a typo?
 
-fn3. You can change the UI language any time after setup in the "**Basic**":/administration/prefs-basic-panel preferences panel.
+fn3. You can change the UI language any time after setup in the "**Basic**":http://docs.textpattrn.io/administration/prefs-basic-panel preferences panel.
 
 h3(#sec4-2). Step 1: Set database details
 
-The next screen represents the first of four installation steps, each clearly numbered at top of screen. asks for your MySQL database information. Screen 1 first asks for the MySQL database details, which you should have noted down when creating it. The fields you should see are for:
+The next screen, the first of four installation steps, asks for your MySQL database details and site URL
 
-* login
+*MySQL:*
+
+The MySQL details are those you should have noted down when creating the database. The data asked for is:
+
+* login (database user name)
 * password
 * server (use "localhost")
-* database
+* database (database name)
 * table prefix (optional)
 
-**Database user name** and **database name**. As mentioned at the beginning, you may need to prefix the database user name and database name with your web host user account ID. You should have seen if this was necessary, however, when creating the database.
+As mentioned at the beginning of this doc, some web hosts automatically prefix _database_ and database _login_ names with your host account username. Be sure to check for this.
 
-**Database server**. The host server is almost always "localhost". It would be unusual if it wasn't, so try that first if your not sure. Textpattern sets "localhost" by default, so if you leave this field blank, you should still be fine.
+The _server_ is almost always "localhost". It would be unusual if it wasn't, so try that first if your not sure.
 
-**Database table prefix**. The screen will say you don't need to provide a table prefix if this will be your only installation of Textpattern. This assumes that you only have one MySQL database available to you. If that were true, adding a prefix here might be sensible so you could add another Textpattern installation to your database in the future without conflict, if you ever wanted to. But it's common anymore for web hosts to provide many databases, in which case you might use a unique database for each install, and thus no prefix would be needed. Either way, this field is optional. If you do use a prefix, a sensible convention is to end it with an underscore (e.g., 'txp1_').
+The screen will say you don't need to provide a _table prefix__ if this will be your only installation of Textpattern. This assumes you only have one MySQL database available to you. If that were true, adding a prefix here (e.g., 'txp1_') would allow you, if desired in the future, to add another Textpattern installation (e.g. 'txp2_') to your database without conflict with the original tables. But it's common anymore for web hosts to provide many databases, in which case no prefix would be necessary. Either way, this field is optional. If you do use a prefix, a sensible convention is something short ending with an underscore.
 
-Screen 1 also requires your site URL. Textpattern should have filled this in automatically by detecting where your installation files are relative to your web root. Just make sure it's correct.
+*Site URL:*
+
+Textpattern should have filled this in automatically by detecting where your installation files are relative to your web root. Just make sure it's correct.
 
 When ready, click the **Next** button.
 
-If there was a problem with your database information, you'll be notified about it and won't proceed to the next screen. You won't be told what the exact problem is either, so you'll have to figure that part out. It's usually because some aspect of the data you entered was wrong. Go over it again to check for mistakes. Check with your web host if you think there's an actual problem with the database account.
+If there was a problem with your database information, you'll be notified about it now and won't advance to the next screen. You won't be told what the exact problem is either, but it will either be a typographical error in the data you entered, or there's a problem with your database setup, in which case you should submit a support ticket to your web host.
 
-h3(#sec4-3). Screen 2: Add config file
+h3(#sec4-3). Step 2: Add config file
 
-If all went well in the previous screen, then it's time to create your Textpattern configuration file in the __/textpattern__ directory. Textpattern makes this easy by taking the information you added in the previous screen and generating the required file contents to use. A partial of code is displayed to copy/paste into a __config.php__ file that you create. The code will look something like this, but with your own data values instead:
+If all went well in the previous screen, you'll advance to screen 2, which is composed of two sections: **Checking database connection** and **Creating config.php file**.
+
+*Checking database connection:*
+
+This part shows if Textpattern has actually communicated successfully with your database using the information from the previous screen. If so, you'll see this:
+
+bq.. %(success)Connected%
+
+%(success)Using {database} ({encoding})%
+
+Where {database} is the name of your database and {encoding} is the character encoding your database is configured to use -- ideally "utf8".[4]
+
+*Creating config.php file*
+
+Then it's time to create your Textpattern configuration file in the __/textpattern__ directory. Textpattern makes this easy by generating the __config.php__ file contents based on your successful connection details. The code will look like this, but with your own data values entered:
 
 bc. <?php
-$txpcfg['db'] = 'dbname';
-$txpcfg['user'] = 'dbusername';
-$txpcfg['pass'] = 'dbpassword';
+$txpcfg['db'] = 'database';
+$txpcfg['user'] = 'login';
+$txpcfg['pass'] = 'password';
 $txpcfg['host'] = 'localhost';
 $txpcfg['table_prefix'] = '';
-$txpcfg['txpath'] = '/home/path/to/textpattern';
+$txpcfg['txpath'] = '/server/path/to/textpattern/install/directory';
 $txpcfg['dbcharset'] = 'utf8';
 $txpcfg['client_flags'] = 0;
 ?>
 
 Proceed as follows:
 
-# Use your S/FTP client to connect to your installation directory and open __/textpattern/config-dist.php__ in your text editor of choice.
-# Copy the code that Textpattern generated for you in the current install screen.
+# Use your S/FTP client to connect to your web host, navigate to the installation directory, and open __/textpattern/config-dist.php__ in your text editor of choice.
+# Copy the code that Textpattern generated for you in the current screen.
 # Paste the code into the __config-dist.php__ file, completely overwriting its entire contents. 
 # Save the file, close it, then rename it by removing "-dist" from the file name, leaving __config.php__.
 
-Return to the install screen in your browser and click the **I did it** button.
+Return to the **Add config file** screen in your browser and click the **I did it** button.
 
-h3(#sec4-4). Screen 4: Create administrator account
+fn4. If you want to change your character encoding, you'll need to do that at your database. But finish installing first, then change the database encoding later.
 
-You're almost home. You just need to create you're Textpattern administrator account, which will also generate the necessary Textpattern tables in your designated database.
+h3(#sec4-4). Step 3: Populate database
 
-Add a unique user name and password for the site administrator (this is *not* the same user name and password used for your database).
+The next screen, step 3, is where you create your Textpattern administrator account. Doing so also populates the database with the necessary Textpattern tables and the CMS–database bridge is complete. The screen has two sections: **Creating database tables** and **Site configuration**.
 
-Click the **Next** button.
+*Creating database tables:*
 
-h3(#sec4-5). Screen 5: Confirmation
+To create the administrator account and generate the database tables, add the following information:
 
-If all has gone well, Textpattern will indicate your tables have been generated and provide a link to log into the administration side. 
+* Full name (e.g, Jane Doe)
+* Login name
+* Password
+* Email address
 
-The screen will also suggest deleting the __/textpattern/setup__ directory for security reasons. Do it now. Use your FTP/SFTP client, go to the __/textpattern/setup__ directory, and remove it (and all its contents) from your server.
+*%(error)Attention%:* The login name and password should *not* be the same login and password used for your database.
 
-Return to the install screen in your browser and click the "Main interface" link at the top of the screen. This will take you to the administration login screen for your new Textpattern site.
+*Site configuration*
 
-h2(#sec5). Finishing installation
+Under this area, you're asked to select the admin-side theme you want to use. The default theme is Hive.[5] You can change the admin-side theme choice at any time in "**Preferences (Basic)**":http://docs.textpattern.io/administration/pref-basic-panel after logging in.
 
-When you first login, you'll automatically land on the "**Update languages**":/administration/prefs-languages-panel panel in **Preferences** to update your language choice or choose another as the default. 
+When ready click the **Next** button.
 
-After that you're on your own, but your next stop should be the "**Basic**":/administration/prefs-basic-panel preferences panel to set as many of those preferences as you can, particularly those pertaining to site identity, folder paths, time zones, and date/time formats. Setting the identity and install/folder path preferences now will help eliminate diagnostics warnings for those things, which is where you go next.
+fn5. This section may be obsolete in future versions of Textpattern. Hive may become the only officially-supported admin theme, thus no selection process here will be needed. The Classic and Remora themes will be available as add-ons post-installation, like any other admin-theme.
 
-Jump to the "**Diagnostics**":/administration/diagnostics-panel panel to troubleshoot any installation/setup problems or minor annoyances. For example, if you didn't remove the __/setup__ folder yet as described earlier, a diagnostic will appear to remind you again. Likewise you might see warnings about server directories needing different rights, and so forth.
+h3(#sec4-5). Step 4: Go! (first admin-side log in)
 
-When that's all done, you're ready to build your website. Have a look at the "fast-track":/administration/admin-fast-track information, which might help you get up to speed with the main building blocks. 
+The final step is essentially a confirmation screen with a link to the administration login location for your new Textpattern site. The screen will also suggest deleting the __/setup__ directory for security reasons, and troubleshooting your diagnostics. But Textpattern will require a slight detour that's not indicated here, so here's the optimal course of action to take:
+
+# Use your S/FTP client to connect with your web server. Go to the __/textpattern/setup__ directory, and delete it (and all its contents). This eliminates one potential diagnostic warning that you would otherwise see later.
+# Return to the current install screen in your browser, click the "Main interface" link, which takes you to the administration login location. Textpattern said to go to Diagnostics, but you'll actually land on the Preferences (Languages) panel, where you should update the language choice you made earlier, or add new ones, if desired. Do this now. 
+# Proceed to the "**Diagnostics**":http://docs.textpattern.io/administration/ panel, as Textpattern suggested on the **Go!** screen, to troubleshoot any warnings and errors you see.
+# Go to the public side of your website (the homepage) -- easy to do by clicking it's name in the navigation bar of any admin-side location -- and read the suggestions and tips provided on the default article. They will help you get up to speed building your first publishing architecture with Textpattern.
+
+Congratulations! You've installed one of the best open source CMS systems available.
