@@ -196,11 +196,16 @@ fn6. This section may be obsolete in future versions of Textpattern. Hive may be
 
 h3(#sec4-5). Step 4: Go! (first admin-side log in)
 
-The final step is essentially a confirmation screen with a link to the administration login location for your new Textpattern site. The screen will also suggest deleting the __/setup__ directory for security reasons, and troubleshooting your diagnostics. But Textpattern will require a slight detour that's not indicated here, so here's the optimal course of action to take:
+The final step is essentially a confirmation screen with a link to the administration login location for your new Textpattern site. The screen will also suggest deleting the __/setup__ directory for security reasons, and troubleshooting your diagnostics. 
 
-# Use your S/FTP client to connect with your web server. Go to the __/textpattern/setup__ directory, and delete it (and all its contents). This eliminates one potential diagnostic warning that you would otherwise see later.
-# Return to the current install screen in your browser, click the "Main interface" link, which takes you to the administration login location. Textpattern said to go to Diagnostics, but you'll actually land on the Preferences (Languages) panel, where you should update the language choice you made earlier, or add new ones, if desired. Do this now. 
-# Proceed to the "**Diagnostics**":http://docs.textpattern.io/administration/ panel, as Textpattern suggested on the **Go!** screen, to troubleshoot any warnings and errors you see.
-# Go to the public side of your website (the homepage) -- easy to do by clicking it's name in the navigation bar of any admin-side location -- and read the suggestions and tips provided on the default article. They will help you get up to speed building your first publishing architecture with Textpattern.
+But Textpattern will require a slight detour that's not indicated here, so here's the optimal course of action to take...
+
+First, use your S/FTP client to connect with your web server. Go to the __/textpattern/setup__ directory, and delete it (and all its contents). This eliminates one potential diagnostic warning you would otherwise see later.
+
+Then return to the **Go!** screen in your browser and click the "Main interface" link, which takes you to the administration login location. Textpattern said to go to Diagnostics, but you'll actually land on the "**Preferences (Languages)**":http://docs.textpattern.io/administration/prefs-languages-panel panel, where you should update the language choice you made at the start, or add new ones, if desired. Do this now. 
+
+Then proceed to the "**Diagnostics**":http://docs.textpattern.io/administration/ panel, as Textpattern suggested, to troubleshoot any warnings and errors you see.
+
+Finally, go to the public side of your website (the homepage) -- easy to do by clicking it's name in the navigation bar of any admin-side location -- and read the suggestions and tips provided on the default article. They will help you get up to speed building your first publishing architecture with Textpattern.
 
 Congratulations! You've installed one of the best open source CMS systems available.
