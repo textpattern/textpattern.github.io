@@ -8,12 +8,12 @@ If you wish to write the documentation for new tags in preparation for the next 
 
 h2. New tags
 
-* "authors":authors
-* "if_first_file":if-first-file
-* "if_first_image":if-first-image
-* "if_first_link":if-first-link
-* "if_last_file":if-last-file
-* "if_last_image":if-last-image
-* "if_last_link":if-last-link
-* "if_yield":if_yield
-* "meta_description":meta-description
+* "authors":http://docs.textpattern.io/tags/authors
+* "if_first_file":http://docs.textpattern.io/tags/if-first-file
+* "if_first_image":http://docs.textpattern.io/tags/if-first-image
+* "if_first_link":http://docs.textpattern.io/tags/if-first-link
+* "if_last_file":http://docs.textpattern.io/tags/if-last-file
+* "if_last_image":http://docs.textpattern.io/tags/if-last-image
+* "if_last_link":http://docs.textpattern.io/tags/if-last-link
+* "if_yield":http://docs.textpattern.io/tags/if-yield
+* "meta_description":http://docs.textpattern.io/tags/meta-description

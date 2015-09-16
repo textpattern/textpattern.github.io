@@ -28,7 +28,7 @@ bc. <txp:variable>
     ...contained statements...
 </txp:variable>
 
-p(alert-block information). Note: Avoid entering white space characters for better code readability between the opening and closing _variable_ tags, they will lead to falsified results in the "if_variable":if-variable evaluation.
+p(alert-block information). Note: Avoid entering white space characters for better code readability between the opening and closing _variable_ tags, they will lead to falsified results in the "if_variable":http://docs.textpattern.io/tags/if-variable evaluation.
 
 h2(#sec2). Attributes
 
@@ -70,7 +70,7 @@ bc. <txp:if_variable name="homepage" value="1">
     ...homepage content...
 </txp:if_variable>
 
-Other tags used: "else":else, "if_category":if-category, "if_search":if-search, "if_variable":if-variable, "search_term":search-term.
+Other tags used: "else":http://docs.textpattern.io/tags/else, "if_category":http://docs.textpattern.io/tags/if-category, "if_search":http://docs.textpattern.io/tags/if-search, "if_variable":http://docs.textpattern.io/tags/if-variable, "search_term":http://docs.textpattern.io/tags/search-term.
 
 h3. Example 2: Use any tag's value as a conditional expression
 
@@ -88,7 +88,7 @@ bc. <txp:if_variable name="foo" value="example.com/bar/baz">
 
 The conditional is saying if there is a variable named 'foo' having a specific value of 'example.com/bar/baz', then output what is defined, i.e. 'do this'.
 
-Other tags used: "if_variable":if-variable.
+Other tags used: "if_variable":http://docs.textpattern.io/tags/if-variable.
 
 h2(#sec4). Genealogy
 

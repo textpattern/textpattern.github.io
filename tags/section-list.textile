@@ -117,7 +117,7 @@ bc. <txp:section_list wraptag="ul" break="">
 
 This code will add @class="active"@ to the @<li>@ element around the currently viewed section in the list.
 
-Other tags used: "if_section":if-section, "section":section.
+Other tags used: "if_section":http://docs.textpattern.io/tags/if-section, "section":http://docs.textpattern.io/tags/section.
 
 h2(#sec4). Genealogy
 

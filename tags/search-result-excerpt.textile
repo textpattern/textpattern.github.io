@@ -53,7 +53,7 @@ bc. <h3>
     | <txp:posted />
 </p>
 
-Other tags used: "permlink":permlink, "posted":posted, "title":title.
+Other tags used: "permlink":http://docs.textpattern.io/tags/permlink, "posted":http://docs.textpattern.io/tags/posted, "title":http://docs.textpattern.io/tags/title.
 
 h2(#sec4). Genealogy
 
