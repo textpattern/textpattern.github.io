@@ -58,7 +58,7 @@ The administration side is organized into three primary regions: **Content**, **
 
 fn2. The **Extensions** region is not a core system region. It only appears (to site administrators and publishers) if you install any of the admin-side plugins that make use of it.
 
-fn3. The current version of Textpattern has a tertiary level of panels -- **Basic** (default), **Advanced**, and **Update languages** -- under the **Preferences** link. Beginning with Textpattern version 4.6, the **Basic** and **Advanced** panels will merge into a single, functional **Preferences** panel, and **Update languages** will become a new secondary panel under the **Admin** region and simply called **Languages**. The tree above shows the new 4.6 organization, but panel, and current-release functionality is described on the respective new locations in this documentation. 
+fn3. The current version of Textpattern has a tertiary level of panels -- **Basic** (default), **Advanced**, and **Update languages** -- under the **Preferences** link. Beginning with Textpattern version 4.6, the **Basic** and **Advanced** panels will merge into a single, functional **Preferences** panel, and **Update languages** will become a new secondary panel under the **Admin** region and simply called **Languages**. The tree above shows the new 4.6 organization, but panel, and current-release functionality is described until 4.6 is actually released. 
 
 h2(#sec3). First tasks after installation or upgrade
 
