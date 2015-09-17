@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "User role types and privileges"
+title: "User roles and privileges"
 tags:
   - Users
   - Roles
@@ -10,7 +10,7 @@ tags:
   - Account types
 ---
 
-h1. User role types and privileges
+h1. User roles and privileges
 
 Textpattern provides several pre-defined user roles out-of-the-box. Each role has an associated set of admin-side privileges that are meant to help with leveraging the different responsibilities in a publishing workflow.
 
@@ -30,10 +30,10 @@ h2(#sec1). Roles in terms of panel access
 
 The following table shows user roles versus access to admin-side panels. If a role has access to a given panel, it's indicated with "X". (The primary regions -- **Content**, **Presentation**, and **Admin** -- are not actual panel locations so marked out with hyphens.)
 
-notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
-|_. Content | - | - | - | - | - | - | - |
+|_\8. Content |
 |_. Articles | X |  |  |  |  |  |  |
 |_. Categories | X |  |  |  |  |  |  |
 |_. Comments | X |  |  |  |  |  |  |
