@@ -57,7 +57,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-fn1. "None":#sec2-7 is an actual role, but has no access to any panels.
+fn1. "None":#sec2-7 is an actual role, but has no access to any panels. It has value in collaborative publishing situations (e.g, magazines) when writers leave the group and shouldn't have administration access, but their content must be preserved on the public side by author name.
 
 h2(#sec2). Roles in terms of privileges
 
