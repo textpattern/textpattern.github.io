@@ -31,7 +31,7 @@ fn1. See "Textpattern security":security if you're worried about the login locat
 
 h2(#sec2). Admin-side organization
 
-The administration side is organized into three primary regions: **Content**, **Presentation**, and **Admin**.[2] Each region has a set of working panels, listed below, one of which serves as the default landing location for that region. A tertiary set of panels exists in the case of the **Admin** section's **Preferences** panels:
+The administration side is organized into three primary regions: **Content**, **Presentation**, and **Admin**.[2] Each region has a set of working panels. One panel from each region serves as the default landing location for when you click the primary admin-side navigation links:
 
 * Content
 ** Articles
@@ -49,16 +49,16 @@ The administration side is organized into three primary regions: **Content**, **
 * Admin
 ** "Diagnostics":diagnostics-panel
 ** Import
+** Languages (Update languages)[3]
 ** "Plugins":plugins-panel
-** Preferences
-*** Basic (default)
-*** Advanced
-*** Language
+** Preferences (basic/advanced)[3]
 ** "Users":users-panel (default)
 ** "Visitor logs":visitor-logs-panel
 * "Extensions":extensions
 
 fn2. The **Extensions** region is not a core system region. It only appears (to site administrators and publishers) if you install any of the admin-side plugins that make use of it.
+
+fn3. The current version of Textpattern has a tertiary level of panels -- **Basic** (default), **Advanced**, and **Update languages** -- under the **Preferences** link. Beginning with Textpattern version 4.6, the **Basic** and **Advanced** panels will merge into a single, functional **Preferences** panel, and **Update languages** will become a new secondary panel under the **Admin** region and simply called **Languages**. The tree above shows the new 4.6 organization, but panel, and current-release functionality is described on the respective new locations in this documentation. 
 
 h2(#sec3). First tasks after installation or upgrade
 
@@ -78,27 +78,25 @@ You won't be auto-directed to the **Languages** panel with each update of your T
 
 h3. Configuration of site identity and publishing behaviour
 
-Your next stop after languages is "**Preferences (Basic)**":basic-prefs-panel.textile to configure site identity values, choose time zones and date formats, set necessary file paths, establish desired publishing behaviour, and so forth.
+Your next stop after languages is "**Preferences**":http://docs.textpattern.io/preferences-panel to configure site identity values, choose time zones and date formats, set necessary file paths, establish desired publishing behaviour, and so forth.
 
 Don't worry about getting everything perfect the fist pass. Some things won't be applicable anyway until you've planned your website architecture. Jut focus on the things that you know can be set, and save all changes.
 
 h3. Diagnostics check
 
-When basic preferences are set, go to the "**Diagnostics**":diagnostics-panel panel to address the warning messages in the **Pre-flight checks** section.
+When basic preferences are set, go to the "**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel panel to address the warning messages in the **Pre-flight checks** section.
 
 h3. Build your architecture
 
 When all diagnostics checks are clear, you're ready to build your site architecture and presentation. Building publishing architectures with Textpattern requires time learning and tinkering. There's no direct 1-2-3 method for it. But the learning is fun, and once you understand how Textpattern structures content and puts it together, you'll thank yourself for choosing such an elegant system.
 
-For further orientation on publishing architecture basics, see "Administration fast track":admin-fast-track.
+For further orientation on publishing architecture basics, see "Administration fast track":http://docs.textpattern.io/administration/admin-fast-track.
 
 h2(#sec4). Changing default login panel
 
-The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the "**Write**":write-panel panel from that point on, which is the default panel under the **Content** region.[3]
+The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the "**Write**":http://docs.textpattern.io/administration/write-panel panel from that point on, which is the default panel under the **Content** region.
 
-You can change the default landing panel to whatever admin-side panel you want. In "**Preferences (Basic)**":admin/preferences-basic-panel, look under the **Admin** area for "Default admin tab".[4] Use the drop-down menu to select the panel you want, then save.
+You can change the default landing panel to whatever admin-side panel you want. In "**Preferences**":http://docs.textpattern.io/administration/preferences-panel, look under the **Admin** area for "Default administration panel".[4] Use the drop-down menu to select the panel you want, then save.
 
-fn3. The assumption is that once your site is built, you'll want to go straight to writing new articles every time. But not everybody does.
-
-fn4. The preference label will eventually change to "Default administration panel". Backstory: The default theme of the administration side was originally conceived as a system of manilla file folders, with primary and secondary panel labels depicted as folder "tabs". The concept impacted the mental models of long-time users, who still frequently refer to panels as "tabs" even though they may use a different admin-side theme. "Tab" is even used in core legacy code from time to time, which you might find if you "build admin-side plugins":../development/. "Panel" is now the preferred taxonomic term and in Textpattern's "brand guidelines":../brand/.
+fn4. The current preference label is, "Default admin tab". Beginning with version 4.6 the label will become "Default administration panel", which is a normalization against "Textpattern guidelines":http://docs.textpattern.io/brand/.
 
