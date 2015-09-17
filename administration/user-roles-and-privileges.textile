@@ -33,7 +33,7 @@ The following table shows user roles versus access to administration panels. Acc
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
-|\8. Content |
+|\8=. **Content** |
 |_. "Articles":articles-panel | %(success)Full% |  |  |  |  |  |  |
 |_. "Categories":categories-panel | %(success)Full% |  |  |  |  |  |  |
 |_. "Comments":comments-panel | %(success)Full% |  |  |  |  |  |  |
