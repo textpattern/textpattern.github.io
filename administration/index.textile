@@ -24,7 +24,7 @@ On this page:
 ** "Set default language":#sec3-1
 ** "Configure site identity and publishing behaviour":#sec3-2
 ** "Troubleshoot diagnostics":#sec3-3
-** "Build our architecture":#sec3-4
+** "Build your architecture":#sec3-4
 * "Recommended steps after upgrading":#sec4
 ** "Updating language packs":#sec4-1
 ** "Check diagnostics, again":#sec4-1
