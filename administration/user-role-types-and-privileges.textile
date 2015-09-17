@@ -33,27 +33,27 @@ The following table shows user roles versus access to admin-side panels. If a ro
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
-|_. Content | %(success)Full% |  |  |  |  |  |  |
-|_. Articles | X |  |  |  |  |  |  |
-|_. Categories | X |  |  |  |  |  |  |
-|_. Comments | X |  |  |  |  |  |  |
-|_. Files | X |  |  |  |  |  |  |
-|_. Images | X |  |  |  |  |  |  |
-|_. Links | X |  |  |  |  |  |  |
-|_. Write | X |  |  |  |  |  |  |
+|_. Content | - | - | - | - | - | - | - |
+|_. Articles | %(success)Full% |  |  |  |  |  |  |
+|_. Categories | %(success)Full% |  |  |  |  |  |  |
+|_. Comments | %(success)Full% |  |  |  |  |  |  |
+|_. Files | %(success)Full% |  |  |  |  |  |  |
+|_. Images | %(success)Full% |  |  |  |  |  |  |
+|_. Links | %(success)Full% |  |  |  |  |  |  |
+|_. Write | %(success)Full% |  |  |  |  |  |  |
 |_. Presentation | - | - | - | - | - | - | - |
-|_. Forms | X |  |  |  |  |  |  |
-|_. Pages | X |  |  |  |  |  |  |
-|_. Sections | X |  |  |  |  |  |  |
-|_. Styles | X |  |  |  |  |  |  |
+|_. Forms | %(success)Full% |  |  |  |  |  |  |
+|_. Pages | %(success)Full% |  |  |  |  |  |  |
+|_. Sections | %(success)Full% |  |  |  |  |  |  |
+|_. Styles | %(success)Full% |  |  |  |  |  |  |
 |_. Admin | - | - | - | - | - | - | - |
-|_. Diagnostics | X |  |  |  |  |  |  |
-|_. Import | X |  |  |  |  |  |  |
-|_. Plugins | X |  |  |  |  |  |  |
-|_. Basic, prefs | X |  |  |  |  |  |  |
-|_. Advanced, prefs | X |  |  |  |  |  |  |
-|_. Language, prefs | X |  |  |  |  |  |  |
-|_. Users | X | X | X | X | X | X |  |
+|_. Diagnostics | %(success)Full% |  |  |  |  |  |  |
+|_. Import | %(success)Full% |  |  |  |  |  |  |
+|_. Plugins | %(success)Full% |  |  |  |  |  |  |
+|_. Basic, prefs | %(success)Full% |  |  |  |  |  |  |
+|_. Advanced, prefs | %(success)Full% |  |  |  |  |  |  |
+|_. Language, prefs | %(success)Full% |  |  |  |  |  |  |
+|_. Users | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)None% |
 |_. Visitor logs | X |  |  |  |  |  |  |
 
 notextile. </div>
