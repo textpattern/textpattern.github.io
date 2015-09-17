@@ -64,7 +64,7 @@ h2(#sec2). Limited access specifications
 
 For each role having %(warning)limited% access to a panel, the specific elements they can see and use are detailed.
 
-h3(). Role X
+h3(#sec2-1). Role X
 
 **{Panel}**
 
@@ -73,7 +73,7 @@ h3(). Role X
 * element (how used)
 * etc.
 
-h3(). Role Y
+h3(#sec2-2). Role Y
 
 **{Panel}**
 
