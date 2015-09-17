@@ -37,7 +37,7 @@ The default view of the **Users** panel is the user accounts table, which displa
 
 Associated with the user accounts table (at top of table) are two data editing buttons: **Add new author** and **Change your password**. Their respective labels suggest who can see and use them.
 
-fn1. See "User role types and privileges":user-role-types-and-privileges for how roles and privileges match up.
+fn1. See "User roles and privileges":http://docs.textpattern.io/administration/user-roles-and-privileges for how roles and privileges match up.
 
 h3(#sec1-1). Add new author button
 
@@ -91,7 +91,7 @@ The most popular approach for admin-side extension of user accounts, indeed what
 
 TXP Magazine's "Peaple":http://txpmag.com/people pages are an example of where these plugins are used to extend user account management and publish user data on the front-side as author bios.
 
-fn5. This plugin adds a **Bio config** panel option to the **"Extensions":http://docs.textpattern.io/administration/#sec2** region, as an example of how the Extensions region is used.
+fn5. This plugin adds a **Bio config** panel option to the "**Extensions**":http://docs.textpattern.io/administration/extensions region, as an example of how the Extensions region is used.
 
 h3. Autonomous registration, log in, and data access/submission
 

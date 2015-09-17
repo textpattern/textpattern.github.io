@@ -26,34 +26,33 @@ On this page:
 ** "Designer":#sec2-6
 ** "None":#sec2-7
 
-h2(#sec1). Roles in terms of panel access
+h2(#sec1). Panel access per role
 
-The following table shows user roles versus access to admin-side panels. If a role has access to a given panel, it's indicated with "X". (The primary regions -- **Content**, **Presentation**, and **Admin** -- are not actual panel locations so marked out with hyphens.)
+The following table shows user roles versus access to admin-side panels. Access is either %(success)full%, %(warning)limited%, or %(error)none%. (The primary regions -- **Content**, **Presentation**, and **Admin** -- are not actual panel locations so marked out with hyphens.)
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
 |_. Content | - | - | - | - | - | - | - |
-|_. Articles | %(success)Full% |  |  |  |  |  |  |
-|_. Categories | %(success)Full% |  |  |  |  |  |  |
-|_. Comments | %(success)Full% |  |  |  |  |  |  |
-|_. Files | %(success)Full% |  |  |  |  |  |  |
-|_. Images | %(success)Full% |  |  |  |  |  |  |
-|_. Links | %(success)Full% |  |  |  |  |  |  |
-|_. Write | %(success)Full% |  |  |  |  |  |  |
+|_. "Articles":articles-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Categories":categories-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Comments":comments-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Files":files-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Images":images-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Links":links-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Write":write-panel | %(success)Full% |  |  |  |  |  |  |
 |_. Presentation | - | - | - | - | - | - | - |
-|_. Forms | %(success)Full% |  |  |  |  |  |  |
-|_. Pages | %(success)Full% |  |  |  |  |  |  |
-|_. Sections | %(success)Full% |  |  |  |  |  |  |
-|_. Styles | %(success)Full% |  |  |  |  |  |  |
+|_. "Forms":forms-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Pages":pages-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Sections":sections-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Styles":styles-panel | %(success)Full% |  |  |  |  |  |  |
 |_. Admin | - | - | - | - | - | - | - |
-|_. Diagnostics | %(success)Full% |  |  |  |  |  |  |
-|_. Import | %(success)Full% |  |  |  |  |  |  |
-|_. Plugins | %(success)Full% |  |  |  |  |  |  |
-|_. Basic, prefs | %(success)Full% |  |  |  |  |  |  |
-|_. Advanced, prefs | %(success)Full% |  |  |  |  |  |  |
-|_. Language, prefs | %(success)Full% |  |  |  |  |  |  |
-|_. Users | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)None% |
+|_. "Diagnostics":diagnostics-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Import":import-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Languages":languages-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Plugins":plugins-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Preferences":preferences-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Users":users-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)None% |
 |_. Visitor logs | %(success)Full% |  |  |  |  |  |  |
 
 notextile. </div>
