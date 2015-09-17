@@ -34,26 +34,26 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
 |\8=. **Content** |
-|_. "Articles":articles-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Categories":categories-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Comments":comments-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Files":files-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Images":images-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Links":links-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Write":write-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Articles":articles-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Categories":categories-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Comments":comments-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Files":files-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Images":images-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Links":links-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Write":write-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. Presentation | - | - | - | - | - | - | - |
-|_. "Forms":forms-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Pages":pages-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Sections":sections-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Styles":styles-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Forms":forms-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Pages":pages-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Sections":sections-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Styles":styles-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. Admin | - | - | - | - | - | - | - |
-|_. "Diagnostics":diagnostics-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Import":import-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Languages":languages-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Plugins":plugins-panel | %(success)Full% |  |  |  |  |  |  |
-|_. "Preferences":preferences-panel | %(success)Full% |  |  |  |  |  |  |
+|_. "Diagnostics":diagnostics-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Import":import-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Languages":languages-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Plugins":plugins-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Preferences":preferences-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Users":users-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)None% |
-|_. Visitor logs | %(success)Full% |  |  |  |  |  |  |
+|_. Visitor logs | %(success)Full% |  |  |  |  |  | %(error)None% |
 
 notextile. </div>
 
