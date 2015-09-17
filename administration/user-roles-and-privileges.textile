@@ -28,12 +28,12 @@ On this page:
 
 h2(#sec1). Panel access per role
 
-The following table shows user roles versus access to admin-side panels. Access is either %(success)full%, %(warning)limited%, or %(error)none%. (The primary regions -- **Content**, **Presentation**, and **Admin** -- are not actual panel locations so marked out with hyphens.)
+The following table shows user roles versus access to administration panels. Access is either %(success)full%, %(warning)limited%, or %(error)none%. Note **Content**, **Presentation**, and **Admin** are not actual panels so marked out with hyphens.)
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
-|_. Content | - | - | - | - | - | - | - |
+|\8. Content |
 |_. "Articles":articles-panel | %(success)Full% |  |  |  |  |  |  |
 |_. "Categories":categories-panel | %(success)Full% |  |  |  |  |  |  |
 |_. "Comments":comments-panel | %(success)Full% |  |  |  |  |  |  |
