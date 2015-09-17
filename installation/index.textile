@@ -186,7 +186,7 @@ To create the administrator account and generate the database tables, add the fo
 
 *Site configuration*
 
-Under this area, you're asked to select the admin-side theme you want to use. The default theme is Hive.[7] You can change the admin-side theme choice at any time in basic "**Preferences**":http://docs.textpattern.io/administration/preferences-panel after logging in.
+Under this area, you're asked to select the admin-side theme you want to use. The default theme is Hive.[7] You can change the admin-side theme choice at any time in "**Preferences**":http://docs.textpattern.io/administration/preferences-panel after logging in.
 
 When ready click the **Next** button.
 

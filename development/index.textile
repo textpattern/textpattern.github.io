@@ -285,7 +285,7 @@ These resources are hosted at *phpcrossref.com*:
 
 h2(#sec9). Full plugin tutorials
 
-Here are two basic plugin tutorials to put it all in perspective:
+Two basic plugin tutorials to put it all in perspective:
 
 * "Public-side plugin tutorial":http://docs.textpattern.io/development/public-side-plugin-tutorial
 * "Admin-side plugin tutorial":http://docs.textpattern.io/development/admin-side-plugin-tutorial
@@ -337,11 +337,11 @@ h2(#sec11). Getting help
 
 If you need a warm shoulder to lean on, subscribe to the "plugin development mailing list":http://lists.textpattern.com/, which might be rather quiet unless you use it.
 
-The Textpattern Support Forum, notably the "Plugin discussions":http://forum.textpattern.com/viewforum.php?id=13 area, is a good place to post questions too.
+The Textpattern Support Forum, notably the "Plugin discussion":http://forum.textpattern.com/viewforum.php?id=13 area, is a good place to post questions too.
 
 h2(#sec12). External reading
 
-These are external to official documentation. Their status and value is out of our hands, but you may find something useful there. Not a long list, in any case.
+Additional third-party reading you may find insightful. The information may be outdated, so use with caution. Not a long list, in any case.
 
 * "How to build a Textpattern plugin":http://txptips.com/how-to-build-a-textpattern-plugin
 

@@ -25,7 +25,7 @@ On this page:
 
 h2(#sec1). Login location
 
-Users typically install Textpattern in the root location of a website's domain because they intend to run the entire website with the CMS. This puts the login location at __/domain.tld/textpattern__.[1] If you install Textpattern in a sub-directory, the login location would reflect that, one level down (/__domain.tld/sub-directory/textpattern__).
+Users typically install Textpattern in the root location of a website's domain because they intend to run the entire website with the CMS. This puts the login location at __domain.tld/textpattern__.[1] If you install Textpattern in a sub-directory, the login location would reflect that, one level down (__domain.tld/sub-directory/textpattern__).
 
 fn1. See "Textpattern security":security if you're worried about the login location being common knowledge.
 
