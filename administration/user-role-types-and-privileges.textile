@@ -54,7 +54,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 |_. Advanced, prefs | %(success)Full% |  |  |  |  |  |  |
 |_. Language, prefs | %(success)Full% |  |  |  |  |  |  |
 |_. Users | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)None% |
-|_. Visitor logs | X |  |  |  |  |  |  |
+|_. Visitor logs | %(success)Full% |  |  |  |  |  |  |
 
 notextile. </div>
 
