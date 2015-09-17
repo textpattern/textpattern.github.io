@@ -28,12 +28,12 @@ On this page:
 
 h2(#sec1). Panel access per role
 
-The following table shows user roles versus access to administration panels. Access is either %(success)full%, %(warning)limited%, or %(error)none%. Note **Content**, **Presentation**, and **Admin** are not actual panels so marked out with hyphens.)
+The following table shows user roles versus access to administration panels. Access is either %(success)full%, %(warning)limited%, or %(error)none%.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
-|\8=. **Content** |
+|\8. **Content** |
 |_. "Articles":articles-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Categories":categories-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Comments":comments-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
@@ -41,12 +41,12 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 |_. "Images":images-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Links":links-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Write":write-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. Presentation | - | - | - | - | - | - | - |
+|\8. **Presentation** |
 |_. "Forms":forms-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Pages":pages-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Sections":sections-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Styles":styles-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. Admin | - | - | - | - | - | - | - |
+|\8. **Admin** |
 |_. "Diagnostics":diagnostics-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Import":import-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Languages":languages-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
