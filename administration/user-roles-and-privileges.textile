@@ -84,7 +84,7 @@ h3(#sec2-2). Role Y
 
 [etc]
 
-h2(#sec3). Roles in terms of privileges [old docs]
+h2(#sec3). Privileges per role [old docs]
 
 h3(#sec3-1). Publisher
 
