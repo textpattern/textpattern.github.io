@@ -53,7 +53,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 |_. "Languages":languages-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Plugins":plugins-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Preferences":preferences-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Users":users-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)None% |
+|_. "Users":users-panel | %(success)Full% | %(success)Full% | %(warning)Limited% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)None% |
 |_. Visitor logs | %(success)Full% |  |  |  |  |  | %(error)None% |
 
 notextile. </div>
@@ -62,27 +62,43 @@ fn1. "None":#sec2-7 is a role assignment, but has no access to any panels. It ha
 
 h2(#sec2). Limited access specifications
 
-For each role having %(warning)limited% access to a panel, the specific elements they can see and use are detailed.
+For each role having %(warning)limited% access to a panel, the specific elements they are restricted too are detailed.
 
-h3(#sec2-1). Role X
+h3(#sec2-1). Copy Editor
 
-**{Panel}**
+Limitations of the Copy Editor.
 
-* element (how used)
-* element (how used)
-* element (how used)
-* etc.
+notextile. <div itemscope itemtype="http://schema.org/Table">
 
-h3(#sec2-2). Role Y
+|_. Panel |_. What Copy Editor can see or do... |
+|\2. **Admin** |
+|_. Users | Can see name, email, role, and last login date for all user accounts, but can't edit any except own. |
 
-**{Panel}**
+notextile. </div>
 
-* element (how used)
-* element (how used)
-* element (how used)
-* etc.
+h3(#sec2-2). Freelancer
 
-[etc]
+Limitations of the Freelancer.
+
+notextile. <div itemscope itemtype="http://schema.org/Table">
+
+|_. Panel |_. What the Freelancer can see or do... |
+|\2. **Admin** |
+|_. Users | Can see and edit their own user account data. No one else's. |
+
+notextile. </div>
+
+h3(#sec2-3). Designer
+
+Limitations of the Designer.
+
+notextile. <div itemscope itemtype="http://schema.org/Table">
+
+|_. Panel |_. What the Designer can see or do... |
+|\2. **Admin** |
+|_. Users | Same as Freelancer. |
+
+notextile. </div>
 
 h2(#sec3). Privileges per role [old docs]
 
