@@ -72,11 +72,11 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. What Copy Editor can see or do... |
 |\2. **Admin** |
-|_. Users | Can see basic account data for all user accounts, and can see and edit full account data for any account with an inferior role (i.e., they can not edit other Managing Editor or Publisher accounts).[2] |
+|_. Users | Can see default account data for all user accounts. Can see and edit full account data for any inferior role (i.e., Copy Editor, Staff Writer, Freelancer, and Designer).[2] |
 
 notextile. </div>
 
-fn2. If a website is using the smd_user_manager and smd_bio plugins to expand user account data, the Managing Editor can see and edit the expanded data fields too.
+fn2. If a website is using the smd_user_manager and smd_bio plugins to expand user account data, the Managing Editor can see and edit the expanded data fields too, beyond just the default data types.
 
 h3(#sec2-1). Copy Editor
 
