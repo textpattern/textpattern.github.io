@@ -53,7 +53,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 |_. "Languages":languages-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Plugins":plugins-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
 |_. "Preferences":preferences-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Users":users-panel | %(success)Full% | %(success)Full% | %(warning)Limited% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)None% |
+|_. "Users":users-panel | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)None% |
 |_. Visitor logs | %(success)Full% |  |  |  |  |  | %(error)None% |
 
 notextile. </div>
@@ -63,6 +63,20 @@ fn1. "None":#sec2-7 is a role assignment, but has no access to any panels. It ha
 h2(#sec2). Limited access specifications
 
 For each role having %(warning)limited% access to a panel, the specific elements they are restricted too are detailed.
+
+h3(#sec2-1). Managing Editor
+
+Limitations of the Managing Editor.
+
+notextile. <div itemscope itemtype="http://schema.org/Table">
+
+|_. Panel |_. What Copy Editor can see or do... |
+|\2. **Admin** |
+|_. Users | Can see basic account data for all user accounts, and can see and edit full account data for any account with an inferior role (i.e., they can not edit other Managing Editor or Publisher accounts).[2] |
+
+notextile. </div>
+
+fn2. If a website is using the smd_user_manager and smd_bio plugins to expand user account data, the Managing Editor can see and edit the expanded data fields too.
 
 h3(#sec2-1). Copy Editor
 
@@ -76,6 +90,18 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
+h3(#sec2-2). Staff Writer
+
+Limitations of the Staff Writer.
+
+notextile. <div itemscope itemtype="http://schema.org/Table">
+
+|_. Panel |_. What the Freelancer can see or do... |
+|\2. **Admin** |
+|_. Users | Can see and edit their own user account data. No one else's. |
+
+notextile. </div>
+
 h3(#sec2-2). Freelancer
 
 Limitations of the Freelancer.
@@ -84,7 +110,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. What the Freelancer can see or do... |
 |\2. **Admin** |
-|_. Users | Can see and edit their own user account data. No one else's. |
+|_. Users | Same as Staff Writer |
 
 notextile. </div>
 
@@ -96,7 +122,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. What the Designer can see or do... |
 |\2. **Admin** |
-|_. Users | Same as Freelancer. |
+|_. Users | Same as Staff Writer. |
 
 notextile. </div>
 
