@@ -18,18 +18,15 @@ On this page:
 
 * "Panel access per role":#sec1
 * "Limited access specifications":#sec2
-* "Roles in terms of privileges":#sec3 [old lists]
-** "Publisher":#sec3-1
-** "Managing Editor":#sec3-2
-** "Copy Editor":#sec3-3
-** "Staff Writer":#sec3-4
-** "Freelancer":#sec3-5
-** "Designer":#sec3-6
-** "None":#sec3-7
+** "Managing Editor":#sec2-1
+** "Copy Editor":#sec2-2
+** "Staff Writer":#sec2-3
+** "Freelancer":#sec2-4
+** "Designer":#sec2-5
 
 h2(#sec1). Panel access per role
 
-The following table shows user roles versus access to administration panels:
+The following table shows user roles versus access to administration panels and functionality:
 
 * %(success)Full% means the role can access panel and has no restrictions to functionality. See associated panel documentation in that case. 
 * %(warning)Limited% means the role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
@@ -41,11 +38,11 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 |\8. **Content** |
 |_. "Articles":articles-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
 |_. "Categories":categories-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Comments":comments-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Comments":comments-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
 |_. "Files":files-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
 |_. "Images":images-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Links":links-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Write":write-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Links":links-panel | %(success)Full% | %(warning)Limited% |  |  |  |  | %(error)Blocked% |
+|_. "Write":write-panel | %(success)Full% | %(warning)Limited% |  |  |  |  | %(error)Blocked% |
 |\8. **Presentation** |
 |_. "Forms":forms-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
 |_. "Pages":pages-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
@@ -58,11 +55,11 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 |_. "Plugins":plugins-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
 |_. "Preferences":preferences-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
 |_. "Users":users-panel | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
-|_. Visitor logs | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Visitor logs":visitor-logs-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
 
 notextile. </div>
 
-fn1. "None":#sec2-7 is a role assignment, but has no access to any panels. It has value in collaborative publishing situations, like magazines, where writers may leave the team and thus shouldn't have administration access anymore, but their content must still be preserved and recognized on the public side by author name.
+fn1. "None":#sec2-7 is a **Privileges** assignment option, but has no access to any panels. It has value in collaborative publishing situations, like magazines, where writers may leave the team and shouldn't have administration access anymore, but their published articles must remain and be recognized. 
 
 h2(#sec2). Limited access specifications
 
@@ -70,15 +67,16 @@ For each role having %(warning)Limited% access to a panel, the specific rights a
 
 h3(#sec2-1). Managing Editor
 
-Rights and restrictions of the Managing Editor role.
+Managing Editors are not content creators. They represent a governance role that manages the accounts and content of inferior roles. Their rights and restrictions are...
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Rights |_. Restrictions |
-|\3. **Content** | x | x |
-|_. Write | Can...  | x |
+|\3. **Content** |
+|_. "Links":links-panel | Can edit and delete any link record.  | Can not create new link records. |
+|_. "Write":write-panel | Can edit and delete any article.  | Can not create new articles. |
 |\3. **Admin** |
-|_. Users | Can see default data for all user accounts. Can see and edit full account data for any inferior role.[2] | Can not edit account data for Publishers or other Managing Editors. |
+|_. "Users":users-panel | Can see default data for all user accounts. Can see and edit full account data for any inferior role.[2] | Can not edit account data for Publishers or other Managing Editors. |
 
 notextile. </div>
 
@@ -91,10 +89,10 @@ Rights and restrictions of the Copy Editor role.
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Rights |_. Restrictions |
-|\3. **Content** | x | x |
-|_. Write | x  | x |
+|\3. **Content** |
+|_. "Write":write-panel | x  | x |
 |\3. **Admin** |
-|_. Users | Can see default data for all user accounts. | Can not edit any accounts except own. |
+|_. "Users":users-panel | Can see default data for all user accounts. | Can not edit any accounts except own. |
 
 notextile. </div>
 
@@ -105,10 +103,10 @@ Limitations of the Staff Writer.
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Rights |_. Restrictions |
-|\3. **Content** | x | x |
-|_. Write | x  | x |
+|\3. **Content** |
+|_. "Write":write-panel | x  | x |
 |\3. **Admin** |
-|_. Users | Can see and edit their own user account data. | Can not see anyone else's account data. |
+|_. "Users":users-panel | Can see and edit their own user account data. | Can not see anyone else's account data. |
 
 notextile. </div>
 
@@ -119,10 +117,10 @@ Limitations of the Freelancer.
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Rights |_. Restrictions |
-|\3. **Content** | x | x |
-|_. Write | x  | x |
+|\3. **Content** |
+|_. "Write":write-panel | x  | x |
 |\3. **Admin** |
-|_. Users | Same as Staff Writer. | Same as Staff Writer. |
+|_. "Users":users-panel | Same as Staff Writer. | Same as Staff Writer. |
 
 notextile. </div>
 
@@ -133,10 +131,10 @@ Limitations of the Designer.
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Rights |_. Restrictions |
-|\3. **Content** | x | x |
-|_. Write | x  | x |
+|\3. **Content** |
+|_. "Write":write-panel | x  | x |
 |\3. **Admin** |
-|_. Users | Same as Staff Writer. | Same as Staff Writer. |
+|_. "Users":users-panel | Same as Staff Writer. | Same as Staff Writer. |
 
 notextile. </div>
 
