@@ -32,8 +32,8 @@ h2(#sec1). Panel access per role
 The following table shows user roles versus access to administration panels:
 
 * %(success)Full% means role can access panel and has no restrictions to functionality. See associated panel documentation in that case. 
-* %(warning)Limited% means role can access the panel but does not have feel read or write access to all functionality. See the "limited access" descriptions in following sections. 
-* %(error)Blocked% means the role can not access the panel and will not see the panel link in the administration UI.
+* %(warning)Limited% means role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
+* %(error)Blocked% means the role has no panel access and can not see the panel link in the administration UI.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
