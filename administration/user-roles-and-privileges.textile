@@ -37,7 +37,7 @@ The following table shows user roles versus access to administration panels:
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
+| |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
 |\8. **Content** |
 |_. "Articles":articles-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
 |_. "Categories":categories-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
@@ -74,7 +74,7 @@ Rights and restrictions of the Managing Editor role.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. Rights |_. Restrictions |
+| |_. Rights |_. Restrictions |
 |\3. **Content** | x | x |
 |_. Write | Can...  | x |
 |\3. **Admin** |
