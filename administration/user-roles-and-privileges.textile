@@ -66,15 +66,15 @@ fn1. "None":#sec2-7 is a role assignment, but has no access to any panels. It ha
 
 h2(#sec2). Limited access specifications
 
-For each role having %(warning)limited% access to a panel, the specific elements they are restricted too are detailed.
+For each role having %(warning)Limited% access to a panel, the specific rights and restrictions are clarified.
 
 h3(#sec2-1). Managing Editor
 
-Limitations of the Managing Editor.
+Rights and restrictions of the Managing Editor role.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. Rights | Restrictions |
+|_. Panel |_. Rights |_. Restrictions |
 |\3. **Content** | x | x |
 |_. Write | Can...  | x |
 |\3. **Admin** |
@@ -86,11 +86,11 @@ fn2. If a website is using the smd_user_manager and smd_bio plugins to expand us
 
 h3(#sec2-1). Copy Editor
 
-Limitations of the Copy Editor.
+Rights and restrictions of the Copy Editor role.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. Rights | Restrictions |
+| |_. Rights |_. Restrictions |
 |\3. **Content** | x | x |
 |_. Write | x  | x |
 |\3. **Admin** |
@@ -104,7 +104,7 @@ Limitations of the Staff Writer.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. Rights | Restrictions |
+| |_. Rights |_. Restrictions |
 |\3. **Content** | x | x |
 |_. Write | x  | x |
 |\3. **Admin** |
@@ -118,7 +118,7 @@ Limitations of the Freelancer.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. Rights | Restrictions |
+| |_. Rights |_. Restrictions |
 |\3. **Content** | x | x |
 |_. Write | x  | x |
 |\3. **Admin** |
@@ -132,7 +132,7 @@ Limitations of the Designer.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. Rights | Restrictions |
+| |_. Rights |_. Restrictions |
 |\3. **Content** | x | x |
 |_. Write | x  | x |
 |\3. **Admin** |
