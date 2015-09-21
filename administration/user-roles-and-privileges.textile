@@ -12,7 +12,7 @@ tags:
 
 h1. User roles and privileges
 
-Textpattern provides several pre-defined user roles out-of-the-box. Each role has an associated set of admin-side privileges that are meant to help with leveraging the different responsibilities in a publishing workflow.
+Textpattern provides several pre-defined user roles out-of-the-box. Each role has an associated set of admin-side privileges that are meant to help with leveraging the different responsibilities in a collaborative publishing workflow.
 
 On this page:
 
@@ -74,9 +74,11 @@ Limitations of the Managing Editor.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. What Copy Editor can see or do... |
-|\2. **Admin** |
-|_. Users | Can see default data for all user accounts. Can see and edit full account data for any inferior role (i.e., Copy Editor, Staff Writer, Freelancer, and Designer).[2] |
+|_. Panel |_. Rights | Restrictions |
+|\3. **Content** | x | x |
+|_. Write | Can...  | x |
+|\3. **Admin** |
+|_. Users | Can see default data for all user accounts. Can see and edit full account data for any inferior role.[2] | Can not edit account data for Publishers or other Managing Editors. |
 
 notextile. </div>
 
@@ -88,9 +90,11 @@ Limitations of the Copy Editor.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. What Copy Editor can see or do... |
-|\2. **Admin** |
-|_. Users | Can see default data for all user accounts, but can't edit any accounts except own. |
+|_. Panel |_. Rights | Restrictions |
+|\3. **Content** | x | x |
+|_. Write | x  | x |
+|\3. **Admin** |
+|_. Users | Can see default data for all user accounts. | Can not edit any accounts except own. |
 
 notextile. </div>
 
@@ -100,9 +104,11 @@ Limitations of the Staff Writer.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. What the Freelancer can see or do... |
-|\2. **Admin** |
-|_. Users | Can see and edit their own user account data. No one else's. |
+|_. Panel |_. Rights | Restrictions |
+|\3. **Content** | x | x |
+|_. Write | x  | x |
+|\3. **Admin** |
+|_. Users | Can see and edit their own user account data. | Can not see anyone else's account data. |
 
 notextile. </div>
 
@@ -112,9 +118,11 @@ Limitations of the Freelancer.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. What the Freelancer can see or do... |
-|\2. **Admin** |
-|_. Users | Same as Staff Writer |
+|_. Panel |_. Rights | Restrictions |
+|\3. **Content** | x | x |
+|_. Write | x  | x |
+|\3. **Admin** |
+|_. Users | Same as Staff Writer. | Same as Staff Writer. |
 
 notextile. </div>
 
@@ -124,9 +132,11 @@ Limitations of the Designer.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-|_. Panel |_. What the Designer can see or do... |
-|\2. **Admin** |
-|_. Users | Same as Staff Writer. |
+|_. Panel |_. Rights | Restrictions |
+|\3. **Content** | x | x |
+|_. Write | x  | x |
+|\3. **Admin** |
+|_. Users | Same as Staff Writer. | Same as Staff Writer. |
 
 notextile. </div>
 
