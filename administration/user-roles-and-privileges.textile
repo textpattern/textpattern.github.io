@@ -29,32 +29,32 @@ On this page:
 
 h2(#sec1). Panel access per role
 
-The following table shows user roles versus access to administration panels. Access is either %(success)full%, %(warning)limited%, or %(error)none%.
+The following table shows user roles versus access to administration panels. %(success)Full% means role can access panel and has no restrictions to functionality. See associated panel documentation in that case. %(warning)Limited% means role can access the panel but does not have feel read or write access to all functionality. See the "limited access" descriptions in following sections. %(error)Blocked% means the role can not access the panel and will not see the panel link in the administration UI.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_.  |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
 |\8. **Content** |
-|_. "Articles":articles-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Categories":categories-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Comments":comments-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Files":files-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Images":images-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Links":links-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Write":write-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Articles":articles-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Categories":categories-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Comments":comments-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Files":files-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Images":images-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Links":links-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Write":write-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
 |\8. **Presentation** |
-|_. "Forms":forms-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Pages":pages-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Sections":sections-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Styles":styles-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Forms":forms-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Pages":pages-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Sections":sections-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Styles":styles-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
 |\8. **Admin** |
-|_. "Diagnostics":diagnostics-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Import":import-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Languages":languages-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Plugins":plugins-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Preferences":preferences-panel | %(success)Full% |  |  |  |  |  | %(error)None% |
-|_. "Users":users-panel | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)None% |
-|_. Visitor logs | %(success)Full% |  |  |  |  |  | %(error)None% |
+|_. "Diagnostics":diagnostics-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Import":import-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Languages":languages-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Plugins":plugins-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Preferences":preferences-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Users":users-panel | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
+|_. Visitor logs | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
 
 notextile. </div>
 
@@ -72,7 +72,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. What Copy Editor can see or do... |
 |\2. **Admin** |
-|_. Users | Can see default account data for all user accounts. Can see and edit full account data for any inferior role (i.e., Copy Editor, Staff Writer, Freelancer, and Designer).[2] |
+|_. Users | Can see default data for all user accounts. Can see and edit full account data for any inferior role (i.e., Copy Editor, Staff Writer, Freelancer, and Designer).[2] |
 
 notextile. </div>
 
@@ -86,7 +86,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. What Copy Editor can see or do... |
 |\2. **Admin** |
-|_. Users | Can see name, email, role, and last login date for all user accounts, but can't edit any except own. |
+|_. Users | Can see default data for all user accounts, but can't edit any accounts except own. |
 
 notextile. </div>
 
