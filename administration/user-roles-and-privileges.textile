@@ -140,17 +140,6 @@ notextile. </div>
 
 h2(#sec3). Privileges per role [old docs]
 
-h3(#sec3-1). Publisher
-
-The publisher role has the same rights and abilities as the administrator, with the sole exception that a publisher can not delete or demote the administrator account. The publisher can:
-
-* create, edit or delete any article, link or comment
-* change article status
-* edit site preferences
-* access all site design areas
-* edit sections and categories
-* add and remove other user accounts (except the administrator)
-* grant and restrict privileges
 
 h3(#sec3-2). Managing editor
 
@@ -182,9 +171,3 @@ h3(#sec3-5). Freelancer
 h3(#sec3-6). Designer
 
 * can edit Page HTML, Forms, and CSS
-
-h3(#sec3-7). None
-
-This option allows removing all privileges on a given user account without actually deleting the account from the CMS. This is a good option, for example, if you run a multi-author site of some kind, and an author leaves the collaboration effort/team. You can freeze their account so they can't add/modify/undo anything, while still keepiong their name on their published work.
-
-
