@@ -16,15 +16,20 @@ Textpattern provides several pre-defined user roles out-of-the-box. Each role ha
 
 On this page:
 
-* "Panel access per role":#sec1
-* "Limited access specifications":#sec2
-** "Managing Editor":#sec2-1
-** "Copy Editor":#sec2-2
-** "Staff Writer":#sec2-3
-** "Freelancer":#sec2-4
-** "Designer":#sec2-5
+* "Role descriptions":#sec1
+* "Panel access per role":#sec2
+* "Limited access specifications":#sec3
+** "Managing Editor":#sec3-1
+** "Copy Editor":#sec3-2
+** "Staff Writer":#sec3-3
+** "Freelancer":#sec3-4
+** "Designer":#sec3-5
 
 h2(#sec1). Panel access per role
+
+[todo:brief role descriptions]
+
+h2(#sec2). Panel access per role
 
 The following table shows user roles versus access to administration panels and functionality:
 
@@ -36,53 +41,46 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
 |\8. **Content** |
-|_. "Articles":articles-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Categories":categories-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Articles":articles-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Categories":categories-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
 |_. "Comments":comments-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Files":files-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Images":images-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Links":links-panel | %(success)Full% | %(warning)Limited% |  |  |  |  | %(error)Blocked% |
-|_. "Write":write-panel | %(success)Full% | %(warning)Limited% |  |  |  |  | %(error)Blocked% |
+|_. "Files":files-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Images":images-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Links":links-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Write":write-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
 |\8. **Presentation** |
-|_. "Forms":forms-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Pages":pages-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Sections":sections-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Styles":styles-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Forms":forms-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Pages":pages-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Sections":sections-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Styles":styles-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
 |\8. **Admin** |
-|_. "Diagnostics":diagnostics-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Import":import-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Languages":languages-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Plugins":plugins-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Preferences":preferences-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
-|_. "Users":users-panel | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
-|_. "Visitor logs":visitor-logs-panel | %(success)Full% |  |  |  |  |  | %(error)Blocked% |
+|_. "Diagnostics":diagnostics-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Import":import-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Languages":languages-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Plugins":plugins-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Preferences":preferences-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Users":users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
+|_. "Visitor logs":visitor-logs-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
 
 notextile. </div>
 
 fn1. "None":#sec2-7 is a **Privileges** assignment option, but has no access to any panels. It has value in collaborative publishing situations, like magazines, where writers may leave the team and shouldn't have administration access anymore, but their published articles must remain and be recognized. 
 
-h2(#sec2). Limited access specifications
+h2(#sec3). Limited access specifications
 
 For each role having %(warning)Limited% access to a panel, the specific rights and restrictions are clarified.
 
-h3(#sec2-1). Managing Editor
+h3(#sec3-1). Managing Editor
 
-Managing Editors are not content creators. They represent a governance role that manages the accounts and content of inferior roles. Their rights and restrictions are...
+Managing Editors have the same level of rights as Publishers throughout the administration side, with the exception of the "Users":users-panel. The difference are:
 
-notextile. <div itemscope itemtype="http://schema.org/Table">
-
-| |_. Rights |_. Restrictions |
-|\3. **Content** |
-|_. "Links":links-panel | Can edit and delete any link record.  | Can not create new link records. |
-|_. "Write":write-panel | Can edit and delete any article.  | Can not create new articles. |
-|\3. **Admin** |
-|_. "Users":users-panel | Can see default data for all user accounts. Can see and edit full account data for any inferior role.[2] | Can not edit account data for Publishers or other Managing Editors. |
-
-notextile. </div>
+* Can see default data for all user accounts. 
+* Can see and edit full account data for any inferior role.[2]
+* Can _not_ edit account data for Publishers or other Managing Editors.
 
 fn2. If a website is using the smd_user_manager and smd_bio plugins to expand user account data, the Managing Editor can see and edit the expanded data fields too, beyond just the default data types.
 
-h3(#sec2-1). Copy Editor
+h3(#sec3-1). Copy Editor
 
 Rights and restrictions of the Copy Editor role.
 
@@ -96,7 +94,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-h3(#sec2-2). Staff Writer
+h3(#sec3-2). Staff Writer
 
 Limitations of the Staff Writer.
 
@@ -110,7 +108,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-h3(#sec2-2). Freelancer
+h3(#sec3-2). Freelancer
 
 Limitations of the Freelancer.
 
@@ -124,7 +122,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-h3(#sec2-3). Designer
+h3(#sec3-3). Designer
 
 Limitations of the Designer.
 
@@ -145,8 +143,6 @@ h3(#sec3-2). Managing editor
 
 The managing editor has fewer rights than the publisher, but can still:
 
-* edit and delete any article, link or comment
-* change article status from **Pending** to **Live**
 * edit site preferences
 * access all site design areas
 * edit sections and categories
