@@ -12,26 +12,34 @@ tags:
 
 h1. User roles and privileges
 
-Textpattern provides several pre-defined user roles out-of-the-box. Each role has an associated set of admin-side privileges that are meant to help with leveraging the different responsibilities in a collaborative publishing workflow.
+In addition to the administrator (the most powerful type of Textpattern account), several pre-defined user roles are provided for in Textpattern out-of-the-box. Each role has an associated set of administration privileges that are meant to help with leveraging the different responsibilities in a collaborative publishing workflow. If you're building a Textpattern website for yourself (single user), you wouldn't need to concern yourself with these roles. But if you're building a platform to support multi-user contributions, user roles and privileges may be an important factor in your publishing architecture design.
 
 On this page:
 
-* "Role descriptions":#sec1
-* "Panel access per role":#sec2
+* "Account classifications versus roles":#sec1
+* "Panel access per publishing role":#sec2
 * "Limited access specifications":#sec3
-** "Managing Editor":#sec3-1
-** "Copy Editor":#sec3-2
-** "Staff Writer":#sec3-3
-** "Freelancer":#sec3-4
-** "Designer":#sec3-5
+** "Publisher":#sec3-1
+** "Managing Editor":#sec3-2
+** "Copy Editor":#sec3-3
+** "Staff Writer":#sec3-4
+** "Freelancer":#sec3-5
+** "Designer":#sec3-6
+* "Modifying user roles and privileges":#sec4
 
-h2(#sec1). Role descriptions
+h2(#sec1). Account classifications versus roles
 
-[todo:brief role descriptions]
+There is no physical distinction between Textpattern user accounts, but it's helpful to classify accounts in three ways when talking about individual roles: administrator, collaborative (or _publishing_), and frozen. 
 
-h2(#sec2). Panel access per role
+The *administrator account* is all-powerful, and only one person has this account -- the person who installed Textpattern initially (presumably you). Although administrators can certainly serve in a publishing role, the administrator isn't necessarily part of a collaborative publishing process; they are more like the person to get in touch with if there's a problem with the website's installation. They have the duty of regularly backing up the database and updating the system when new releases are made. Likewise, they typically handle all server-side issues, and will make decisions about website "security":http://docs.textpattern.io/administration/security.
 
-The following table shows user roles versus access to administration panels and functionality:
+The *collaborative (publishing) accounts* represent the actual _roles_ and their associated privileges defined in Textpattern. The roles are primarily what this page is concerned with -- from Publisher down to Designer. These roles are what would be taken into consideration when planning a publishing architecture for a multi-contributor website, primarily around the day-to-day activities of publishing and design.
+
+The *frozen accounts* represent former collaborator accounts that no longer participate in the publishing process. They no longer have association with the website. In this case, frozen accounts are given the status of "None", meaning they have no access rights to administration functionality. This status is useful if former collaborators published content and that content needs to remain on the public side under the author's name. It essentially keeps it safe from the departed collaborator. 
+
+h2(#sec2). Panel access per publishing role
+
+The following table shows collaborator/publishing roles versus access to administration panels and functionality:[1]
 
 * %(success)Full% means the role can access panel and has no restrictions to functionality. See associated panel documentation in that case. 
 * %(warning)Limited% means the role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
@@ -39,44 +47,50 @@ The following table shows user roles versus access to administration panels and 
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-| |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[1] |
-|\8. **Content** |
-|_. "Articles":articles-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Categories":categories-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Comments":comments-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Files":files-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Images":images-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Links":links-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Write":write-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|\8. **Presentation** |
-|_. "Forms":forms-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Pages":pages-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Sections":sections-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Styles":styles-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|\8. **Admin** |
-|_. "Diagnostics":diagnostics-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Import":import-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Languages":languages-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Plugins":plugins-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Preferences":preferences-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Users":users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
-|_. "Visitor logs":visitor-logs-panel | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+| |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[2] |
+|\9. **Content** |
+|_. "Articles":articles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Categories":categories-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Comments":comments-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Files":files-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Images":images-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Links":links-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Write":write-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|\9. **Presentation** |
+|_. "Forms":forms-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Pages":pages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Sections":sections-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Styles":styles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|\9. **Admin** |
+|_. "Diagnostics":diagnostics-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Import":import-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Languages":languages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Plugins":plugins-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Preferences":preferences-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Users":users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
+|_. "Visitor logs":visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
 
 notextile. </div>
 
-fn1. "None":#sec2-7 is a **Privileges** assignment option, but has no access to any panels. It has value in collaborative publishing situations, like magazines, where writers may leave the team and shouldn't have administration access anymore, but their published articles must remain and be recognized. 
+fn1. In addition to this documentation, an administrator can directly see the specific functionality a given collaborator role has by installing the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin and following the instructions. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
+
+fn2. This represents the frozen account classification described earlier. It's more like a status than a role. 
 
 h2(#sec3). Limited access specifications
 
-For each role having %(warning)Limited% access to a panel, the specific rights and restrictions are clarified.
+For each publishing role having %(warning)Limited% access to a panel, the specific rights and restrictions are clarified.
 
-h3(#sec3-1). Managing Editor
+h3(#sec3-1). Publisher
 
-Managing Editors have the same level of rights as Publishers throughout the administration side, except on the "**Users**":users-panel panel. In that case, they can see default data for _all_ user accounts, and edit full account data for any inferior role, but can _not_ edit account data for Publishers or other Managing Editors.[2]
+In terms of collaborative roles (from Publisher down to Designer), the Publisher is all-powerful. In fact, the Publisher shares the same power as the administrator, with one exception: a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's.
 
-fn2. If a website is using the smd_user_manager and smd_bio plugins to expand user account data, the Managing Editor can see and edit the expanded data fields too, beyond just the default data types.
+h3(#sec3-2). Managing Editor
 
-h3(#sec3-1). Copy Editor
+Managing Editors have the same level of rights as Publishers throughout the administration side, except on the "**Users**":users-panel panel. In that case, they can see default data for _all_ user accounts, and edit full account data for any inferior role, but can _not_ edit account data for Publishers or other Managing Editors.[3]
+
+fn3. If a website is using the smd_user_manager and smd_bio plugins to expand user account data, the Managing Editor can see and edit the expanded data fields too, beyond just the default data types.
+
+h3(#sec3-3). Copy Editor
 
 Rights and restrictions of the Copy Editor role.
 
@@ -90,7 +104,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-h3(#sec3-2). Staff Writer
+h3(#sec3-4). Staff Writer
 
 Limitations of the Staff Writer.
 
@@ -104,7 +118,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-h3(#sec3-2). Freelancer
+h3(#sec3-5). Freelancer
 
 Limitations of the Freelancer.
 
@@ -118,7 +132,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-h3(#sec3-3). Designer
+h3(#sec3-6). Designer
 
 Limitations of the Designer.
 
@@ -135,7 +149,7 @@ notextile. </div>
 h2(#sec3). Privileges per role [old docs]
 
 
-h3(#sec3-2). Managing editor
+h3(#sec3-6). Managing editor
 
 The managing editor has fewer rights than the publisher, but can still:
 
@@ -143,23 +157,27 @@ The managing editor has fewer rights than the publisher, but can still:
 * access all site design areas
 * edit sections and categories
 
-h3(#sec3-3). Copy editor
+h3(#sec3-7). Copy editor
 
 The copy editor can't work on site structure, presentation, or change preferences. Copy editors can only:
 
 * edit article, links, or comments
 * edit HTML in Page template and Forms
 
-h3(#sec3-4). Staff writer
+h3(#sec3-8). Staff writer
 
 * can create, edit, publish and delete own articles
 * can upload images
 
-h3(#sec3-5). Freelancer
+h3(#sec3-9). Freelancer
 
 * can create and edit own articles
 * can change article status from Draft to Pending
 
-h3(#sec3-6). Designer
+h3(#sec3-10). Designer
 
 * can edit Page HTML, Forms, and CSS
+
+h2(#sec4). Modifying user roles and privileges
+
+You can modify the default roles and privileges by installing the "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 plugin, which allows creating custom user groups in addition to changing the roles and rights of individuals. Follow the instructions that come with the plugin.
