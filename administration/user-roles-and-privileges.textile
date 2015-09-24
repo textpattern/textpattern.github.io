@@ -51,26 +51,26 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
 |\9. **Content** |
-|_. "Articles":articles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Categories":categories-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Comments":comments-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Files":files-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Images":images-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Links":links-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Write":write-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Articles":articles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Categories":categories-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Comments":comments-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Files":files-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Images":images-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Links":links-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Write":write-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
 |\9. **Presentation** |
 |_. "Forms":forms-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
 |_. "Pages":pages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Sections":sections-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Sections":sections-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
 |_. "Styles":styles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
 |\9. **Admin** |
-|_. "Diagnostics":diagnostics-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Import":import-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Languages":languages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Plugins":plugins-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Preferences":preferences-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Diagnostics":diagnostics-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Import":import-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Languages":languages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Plugins":plugins-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Preferences":preferences-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
 |_. "Users":users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
-|_. "Visitor logs":visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Visitor logs":visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
 
 notextile. </div>
 
@@ -88,93 +88,28 @@ h3(#sec3-2). Managing Editor
 
 Managing Editors equal Publishers throughout the administration side, but with slightly less rights on the "**Users**":users-panel panel. They can see default data for _all_ user accounts, and edit full account data for any inferior role, but cannot edit account data for Publishers or other Managing Editors.
 
-h3(#sec3-3). Copy Editor
-
-Rights and restrictions of the Copy Editor role.
-
-notextile. <div itemscope itemtype="http://schema.org/Table">
-
-| |_. Rights |_. Restrictions |
-|\3. **Content** |
-|_. "Write":write-panel | x  | x |
-|\3. **Admin** |
-|_. "Users":users-panel | Can see default data for all user accounts. | Can not edit any accounts except own. |
-
-notextile. </div>
-
-h3(#sec3-4). Staff Writer
-
-Limitations of the Staff Writer.
-
-notextile. <div itemscope itemtype="http://schema.org/Table">
-
-| |_. Rights |_. Restrictions |
-|\3. **Content** |
-|_. "Write":write-panel | x  | x |
-|\3. **Admin** |
-|_. "Users":users-panel | Can see and edit their own user account data. | Can not see anyone else's account data. |
-
-notextile. </div>
-
-h3(#sec3-5). Freelancer
-
-Limitations of the Freelancer.
-
-notextile. <div itemscope itemtype="http://schema.org/Table">
-
-| |_. Rights |_. Restrictions |
-|\3. **Content** |
-|_. "Write":write-panel | x  | x |
-|\3. **Admin** |
-|_. "Users":users-panel | Same as Staff Writer. | Same as Staff Writer. |
-
-notextile. </div>
-
-h3(#sec3-6). Designer
-
-Limitations of the Designer.
-
-notextile. <div itemscope itemtype="http://schema.org/Table">
-
-| |_. Rights |_. Restrictions |
-|\3. **Content** |
-|_. "Write":write-panel | x  | x |
-|\3. **Admin** |
-|_. "Users":users-panel | Same as Staff Writer. | Same as Staff Writer. |
-
-notextile. </div>
-
-h2(#sec3). Privileges per role [old docs]
-
-
-h3(#sec3-6). Managing editor
-
-The managing editor has fewer rights than the publisher, but can still:
-
-* edit site preferences
-* access all site design areas
-* edit sections and categories
-
-h3(#sec3-7). Copy editor
+h3(#sec3-3). Copy Editor [todo]
 
 The copy editor can't work on site structure, presentation, or change preferences. Copy editors can only:
 
 * edit article, links, or comments
 * edit HTML in Page template and Forms
 
-h3(#sec3-8). Staff writer
+h3(#sec3-4). Staff Writer [todo]
 
 * can create, edit, publish and delete own articles
 * can upload images
 
-h3(#sec3-9). Freelancer
+h3(#sec3-5). Freelancer [todo]
 
 * can create and edit own articles
 * can change article status from Draft to Pending
 
-h3(#sec3-10). Designer
+notextile. </div>
 
-* can edit Page HTML, Forms, and CSS
+h3(#sec3-6). Designer
+
+The Designer blocked from all panels except Pages, Forms, and Styles, where they can work on markup and CSS, and the can access the Users panel to edit their own account details.
 
 h2(#sec4). Modifying user roles and privileges
 
