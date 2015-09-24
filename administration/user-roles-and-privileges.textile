@@ -25,7 +25,7 @@ On this page:
 ** "Freelancer":#sec3-4
 ** "Designer":#sec3-5
 
-h2(#sec1). Panel access per role
+h2(#sec1). Role descriptions
 
 [todo:brief role descriptions]
 
@@ -72,11 +72,7 @@ For each role having %(warning)Limited% access to a panel, the specific rights a
 
 h3(#sec3-1). Managing Editor
 
-Managing Editors have the same level of rights as Publishers throughout the administration side, with the exception of the "Users":users-panel. The difference are:
-
-* Can see default data for all user accounts. 
-* Can see and edit full account data for any inferior role.[2]
-* Can _not_ edit account data for Publishers or other Managing Editors.
+Managing Editors have the same level of rights as Publishers throughout the administration side, except on the "**Users**":users-panel panel. In that case, they can see default data for _all_ user accounts, and edit full account data for any inferior role, but can _not_ edit account data for Publishers or other Managing Editors.[2]
 
 fn2. If a website is using the smd_user_manager and smd_bio plugins to expand user account data, the Managing Editor can see and edit the expanded data fields too, beyond just the default data types.
 

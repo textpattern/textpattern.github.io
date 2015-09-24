@@ -25,9 +25,8 @@ On this page:
 
 * "Comma (serial)":#comma
 * "Language (International English conventions)":#lang
-** "Spellings":#sec1-1
-** "Punctuation":#sec1-1
-*** "Quotations":#sec1-1-1
+** "Spellings":#spell (organized alphabetically)
+** "Quotations":#sec1-1-1
 * "Latin and foreign expressions":#sec2
 * "Point of view (personal pronouns)":#sec3
 * "x":#sec1
@@ -35,7 +34,82 @@ On this page:
 * "x":#sec1
 * "Textpattern usage":#sec1
 
-h2(#comma). Comma (serial)
+h2(#sec3). Audience perspective per platform
+
+The point of view to use in your writing depends on which Textpattern platform you're writing for.
+
+h3(). Textpattern user documentation (docs.textpattern.io)
+
+The perspective of documentation is that of an anonymous expert writing to the first-time administrator, and the operational context is a default (out-of-the-box) Textpattern CMS installation.[1] Write in the *second-person* point of view only. In other words, use "you", "your", and "yours" when talking to the reader. For example:
+
+bq. Manage your account data in the **Users** panel.
+
+Never use the first-person (I/we, me/us, my/our...).It's easy to forget and start using "we" and "us" as if you and the reader are labouring together. But don't do that. Take the second person stance and empower the reader. Make them feel like their doing it alone, because they are. You're just an impartial messenger delivering the instructions. Change "we" to "you", or "our" to "your".
+
+For the most part you shouldn't need the third-person either (his, her, them, they). But there may be exceptions, such as when talking about the "roles and privileges":http://docs.textpattern.io/administration/user-roles-and-prvileges of other website users besides the administrator (who you're addressing).
+
+fn1. But it's okay to use footnotes like this to make reference to common extensions, notably when talking about the administration side. F
+
+h3(). Textpattern CMS website (audience: various)
+
+Write in the first-person _and_ second-person. The perspective in this case is Textpattern (the project), specifically using "we" and "us"
+
+Do not write in first-person, regardless of whether the pronouns are normative, objective, or possessive. You should never be using these: I/we, me/us, my, mine, our, ours. 
+
+Likewise, do not use the third-person in your copy. So don't use these words: he, she, they … him, her, them … his, her, hers, their, theirs … it. They're indirect and totally unnecessary.
+
+h2(#lang). Language (Oxford English conventions)
+
+Textpattern's default language is English, and follows the conventions provided by Oxford University Press resources, notably the __New Oxford Style Manual__, 2nd Edition, and the __"Oxford English Dictionary":http://www.oed.com__ (OED). All Textpattern platforms designate this choice of English usage in the language tags of website templates:
+
+bc.. <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB-oxendict" lang="en-GB-oxendict" dir="ltr">
+<meta name="language" content="en-GB-oxendict" />
+
+p. By adopting the Oxford way for Textpattern's international English copy, three main benefits are gained:
+
+# It provides a precise reason and source for the decision to write words a certain and consistent way, without wishy-washy and debatable explanations.
+# It's definable in metadata to a more precise level: @lang="en-GB-oxendict"@, because even in Great Britain there's an increasing degree of variation with how words are spelled and punctuation is used.
+# It normalizes the effort to create copy (due to Oxford rules being a fair compromise across British and American English conventions), so one group of writers/editors doesn't have the upper hand on the other. Oxford rules may (debatably) be the most "International" form of English usage.
+
+The rest of these guidelines will specify conventions in context to topics.
+
+h2(#spell). Spellings
+
+Concepts and word forms are listed alphabetically.
+
+h3(#spell-a). American or British English?
+
+There are many differences between British and American English with regard to spelling. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com (OED), as described in the "Languages":#lang section of these guidelines. 
+
+The following table compares conventional patterns of spelling between North American regions, Great Britain, and the OED.[1] The words shown are simply representative of all possible words having those patterns. Use the OED conventions (*en-GB-oxendict*) when writing Textpattern content.
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+| |_. -ize/-ise |_. -yze/-yse |_. -or/-our |_. -ler/-ller |_. -og/-ogue |_. -am/-amme |_. -ense/-ence |_. -ter/-tre |
+|_. en-GB-oxendict | realize | analyse | behaviour | traveller | catalogue | programme<br>program (computer code) | defence | centre |
+|_. en-GB | realise,<br>realize | analyse | behaviour | traveller | catalogue | programme<br>program (computer code) | defence | centre |
+|_. en-CA | realize | analyze,<br>analyse | behaviour,<br>behavior | traveller | catalogue | program,<br> programme | defence | centre |
+|_. en-US | realize | analyze | behavior | traveler | catalog | program | defense | center |
+
+notextile. </div>
+
+The main thing to note is there's little difference between British English and the Oxford English Dictionary, except for words ending in “-ize/-ise” and their related grammatical forms. In other words, use "z" in all such forms (e.g., organize, organizer, organization, organizational).
+
+Also note that "program" (not "programme") is the correct spelling when used in context of software only. Likewise you would never use "centre" where "center" was required in code (e.g, @text-align:center;@). And it would be "data modelling", according to the -ler/-ller convention, not "data modeling".
+
+fn1. See "en.wikipedia.org/wiki/Oxford_spelling":https://en.wikipedia.org/wiki/Oxford_spelling.
+
+h3(#spell-c). Cannot / can't / can _not_
+
+Use "cannot" (or "can't") in the context that someone absolutely can _not_ do something. The only time you shouldn't use "cannot" is when you're emphasizing "not", just like demonstrated in the previous sentence.[2]
+
+fn2. "Cannot vs. can not":http://www.dailywritingtips.com/cannot-or-can-not/
+
+h2(#punctuation). Punctuation
+
+Required punctuation usage is discussed for common marks and symbols.
+
+h3(#comma). Comma (serial)
 
 More important than consistency, in this case, is ensuring your sentences are grammatically correct. That said, if you use serial commas (aka, "Oxford commas") every time, you won't be wrong, even if you don't need one.
 
@@ -55,56 +129,11 @@ Poor Bob's uncle. He's described there as being a boozer and a cruiser because o
 
 Use a serial comma and you'll never be wrong. If you don't use one, make sure the sentence is grammatically correct, or you could end up like Bob's uncle.
 
-h2(#lang). Language (Oxford English conventions)
+h3(#quotes). Quotations marks
 
-Textpattern's default language is English, and follows the conventions provided by Oxford University Press resources, notably the __New Oxford Style Manual__, 2nd Edition, and the __"Oxford English Dictionary":http://www.oed.com__. All Textpattern platforms designate this choice of English usage in the language tags of website templates:
+Use double quotation marks when quoting text, such as admin-side UI form control labels and options, and put the closing quotation mark _inside_ the end punctuation of a clause or full phrase, unless the quoted part has it's own ending punctuation, then it goes outside.[3] 
 
-bc.. <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB-oxendict" lang="en-GB-oxendict" dir="ltr">
-<meta name="language" content="en-GB-oxendict" />
-
-p. By adopting the Oxford way for Textpattern's international English copy, three main benefits are gained:
-
-# It provides a precise reason and source for the decision to write words a certain and consistent way, without wishy-washy and debatable explanations.
-# It's definable in metadata to a more precise level: @lang="en-GB-oxendict"@, because even in Great Britain there's an increasing degree of variation with how words are spelled and punctuation is used.
-# It normalizes the effort to create copy (due to Oxford rules being a fair compromise across British and American English conventions), so one group of writers/editors doesn't have the upper hand on the other. Oxford rules may, in fact, be the most "International" form of English usage.
-
-The rest of these guidelines will specify conventions in context to topics.
-
-h2(#spell). Spellings
-
-There are many differences between British and American English with regard to spelling. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com, as described in the "Languages":#lang section of these guidelines. 
-
-The following table compares conventional patterns of spelling between North American regions, Great Britain, and the Oxford English Dictionary.[1] The words shown are simply representative of all possible words having those respective patterns. Use the Oxford conventions (*en-GB-oxendict*) when writing Textpattern content.
-
-notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-
-| |_. -ize/-ise |_. -yze/-yse |_. -or/-our |_. -ler/-ller |_. -og/-ogue |_. -am/-amme |_. -ense/-ence |_. -ter/-tre |
-|_. en-GB-oxendict | realize | analyse | behaviour | traveller | catalogue | programme<br>program (computer code) | defence | centre |
-|_. en-GB | realise,<br>realize | analyse | behaviour | traveller | catalogue | programme<br>program (computer code) | defence | centre |
-|_. en-CA | realize | analyze,<br>analyse | behaviour,<br>behavior | traveller | catalogue | program,<br> programme | defence | centre |
-|_. en-US | realize | analyze | behavior | traveler | catalog | program | defense | center |
-
-notextile. </div>
-
-The main thing to note is there's little difference between British English and the Oxford English Dictionary, except for words ending in “-ize/-ise” and their related grammatical forms. In other words, use "z" in all such forms (e.g., organize, organizer, organization, organizational).
-
-Also note that "program" (not "programme") is the correct spelling when used in context of software only. Likewise you would never use "centre" where "center" was required in code (e.g, @text-align:center;@). And it would be "data modelling", according to the -ler/-ller convention, not "data modeling". 
-
-fn1. See "en.wikipedia.org/wiki/Oxford_spelling":https://en.wikipedia.org/wiki/Oxford_spelling.
-
-h2(#quotes). Quotations marks
-
-Use double quotation marks when quoting text, such as admin-side UI form control labels and options, and put the closing quotation mark _inside_ the end punctuation of a clause or full phrase:[4] 
-
-bq. Your domain name goes in "Site URL".
-
-, unless the quoted part has it's own punctuation
-
- Also, when quoting a quotation, use double quotation marks for the outer quote, and single quotation marks for the inner quote.
-
-bq. Your domain name preference goes in "Site URL".
-
-Next is an example using the same preference label _inside_ a quotation having its own ending full-stop. So the label gets single quotation marks, and the ending quotation mark of the outer quote goes _outside_ of the full-stop because it's part of the inner quoted phrase.
+If you ever need to quote text that contains a quotation, use double quotation marks for the outer quote, and single quotation marks for the inner quote.
 
 bq. The instruction says, "Put your domain name in 'Site URL'."
 
@@ -112,19 +141,7 @@ bq. The instruction says, "Put your domain name in 'Site URL'."
 
 Be mindful when writing Textile links that your text editor is using straight quotation marks, not curly quotation marks. While the latter are attractive for regular text copy, they won't work for links. Thus straight quotations marks may prove best for documentation portability over the long-term. This means you'll have quote marks looking like "this" instead of “this”.
 
-fn4. See section on __User-interface content__ for UI text formatting conventions.
-
-h2(#sec3). Point of view (personal pronouns)
-
-Write in the *second-person* point of view only, not first-person or third-person. Use "you", "your", and "yours" when talking to the reader.
-
-For example:
-
-bq. You can change the default landing panel in **Basic** preferences.
-
-Do not write in first-person, regardless of whether the pronouns are normative, objective, or possessive. You should never be using these: I/we, me/us, my, mine, our, ours. It's easy to forget and start using "we" and "us", as if you and the reader are working through a problem together. But don't do that. Take the second person stance and empower the reader. Make them feel like their doing it alone, because they are. Change "we" to "you", or "our" to "your".
-
-Likewise, do not use the third-person in your copy. So don't use these words: he, she, they … him, her, them … his, her, hers, their, theirs … it. They're indirect and totally unnecessary.
+fn3. See section on __User-interface content__ for UI text formatting conventions.
 
 h2(#sec3). Latin and foreign expressions
 
