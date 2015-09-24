@@ -39,7 +39,7 @@ The *frozen accounts* represent former collaborator accounts that no longer part
 
 h2(#sec2). Panel access per publishing role
 
-The following table shows collaborator/publishing roles versus access to administration panels and functionality:[1]
+The following table shows the three account classifications described above (including the collaborator/publishing roles from Publisher to Designer) versus access to administration panels and functionality:[1]
 
 * %(success)Full% means the role can access panel and has no restrictions to functionality. See associated panel documentation in that case. 
 * %(warning)Limited% means the role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
