@@ -82,7 +82,7 @@ For each publishing role having %(warning)Limited% access to a panel, the specif
 
 h3(#sec3-1). Publisher
 
-Like the administrator, the Publisher is all-powerful with respect to administration functionality, with one exception: a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's.
+Like the administrator, the Publisher is all-powerful with respect to administration-side functionality, with one exception: a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's.
 
 h3(#sec3-2). Managing Editor
 
