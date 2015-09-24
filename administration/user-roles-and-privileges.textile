@@ -35,7 +35,7 @@ The *administrator account* is all-powerful, and only one person has this accoun
 
 The *collaborative (publishing) accounts* represent the actual _roles_ and their associated privileges defined in Textpattern. The roles are primarily what this page is concerned with -- from Publisher down to Designer. These roles are what would be taken into consideration when planning a publishing architecture for a multi-contributor website, primarily around the day-to-day activities of producing content and evolving the presentation.
 
-The *frozen accounts* represent former collaborator accounts that no longer participate in the publishing process. They no longer have association with the website. In this case, frozen accounts are given the status of "None", meaning they have no access rights to administration functionality. This status is useful if former collaborators published content and that content needs to remain on the public side under the author's name. It essentially keeps it safe from the departed collaborator. 
+The *frozen accounts* represent former collaborator accounts that no longer participate in the publishing process. They no longer have association with the website. In this case, frozen accounts are given the status of "None", meaning they have no access rights to administration functionality. This status is useful if former collaborators published content and that content needs to remain on the public side under the author's name. Accounts with a "None" essentially keeps the content produced from those accounts safe from the departed collaborators. 
 
 h2(#sec2). Panel access per publishing role
 
