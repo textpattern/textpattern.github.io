@@ -111,4 +111,4 @@ The Designer blocked from all panels except Pages, Forms, and Styles, where they
 
 h2(#sec4). Modifying user roles and privileges
 
-You can modify the default roles and privileges by installing the "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 plugin, which allows creating custom user groups in addition to changing the roles and rights of individuals. Follow the instructions that come with the plugin.
+You can go beyond assigning roles by installing the "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 plugin and modify the default roles, creating new role types, and changing the privileges a given role has. The plugin also allows creating custom user groups in addition to changing the roles and rights of individuals. Follow the instructions that come with the plugin.
