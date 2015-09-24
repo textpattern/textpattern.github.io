@@ -47,7 +47,7 @@ The following table shows the three account classifications described above (inc
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-| |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None[2] |
+| |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
 |\9. **Content** |
 |_. "Articles":articles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
 |_. "Categories":categories-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
@@ -72,9 +72,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-fn1. In addition to this documentation, an administrator can directly see the specific functionality a given collaborator role has by installing the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin and following the instructions. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
-
-fn2. This represents the frozen account classification described earlier. It's more like a status than a role. 
+fn1. In addition to this documentation, an administrator can directly see the specific functionality a given collaborator role has by installing the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin and following the instructions. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions. 
 
 h2(#sec3). Limited access specifications
 
