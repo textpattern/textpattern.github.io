@@ -105,8 +105,6 @@ h3(#sec3-5). Freelancer [todo]
 * can create and edit own articles
 * can change article status from Draft to Pending
 
-notextile. </div>
-
 h3(#sec3-6). Designer
 
 The Designer blocked from all panels except Pages, Forms, and Styles, where they can work on markup and CSS, and the can access the Users panel to edit their own account details.
