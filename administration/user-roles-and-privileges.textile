@@ -82,7 +82,7 @@ For each publishing role having %(warning)Limited% access to a panel, the specif
 
 h3(#sec3-1). Publisher
 
-In terms of collaborative roles (from Publisher down to Designer), the Publisher is all-powerful. In fact, the Publisher shares the same power as the administrator, with one exception: a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's.
+Like the administrator, the Publisher is all-powerful with respect to administration functionality, with one exception: a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's.
 
 h3(#sec3-2). Managing Editor
 
