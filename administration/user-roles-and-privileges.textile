@@ -33,13 +33,15 @@ There is no physical distinction between Textpattern user accounts, but it's hel
 
 The *administrator account* is all-powerful, and only one person has this account -- the person who installed Textpattern initially (presumably you). Although administrators can certainly serve in a publishing role, the administrator isn't necessarily part of a collaborative publishing process; they are more like the person to get in touch with if there's a problem with the website's installation. They have the duty of regularly backing up the database and updating the system when new releases are made. Likewise, they typically handle all server-side issues, and will make decisions about website "security":http://docs.textpattern.io/administration/security.
 
-The *collaborative (publishing) accounts* represent the actual _roles_ and their associated privileges defined in Textpattern. The roles are primarily what this page is concerned with -- from Publisher down to Designer. These roles are what would be taken into consideration when planning a publishing architecture for a multi-contributor website, primarily around the day-to-day activities of producing content and evolving the presentation.
+The *collaborative (publishing) accounts* represent the actual _roles_ and their associated privileges defined in Textpattern. The roles are primarily what this page is concerned with -- from Publisher down to Designer. These roles are what would be taken into consideration when planning a publishing architecture for a multi-contributor website, primarily around the day-to-day activities of producing content and evolving the presentation.[1]
 
-The *frozen accounts* represent former collaborator accounts that no longer participate in the publishing process. They no longer have association with the website. In this case, frozen accounts are given the status of "None", meaning they have no access rights to administration functionality. This status is useful if former collaborators published content and that content needs to remain on the public side under the author's name. Accounts with a "None" essentially keeps the content produced from those accounts safe from the departed collaborators. 
+The *frozen accounts* represent former collaborator accounts that no longer participate in the publishing process. They no longer have association with the website. In this case, frozen accounts are given the status of "None", meaning they have no access rights to administration functionality. This status is useful if former collaborators published content and that content needs to remain on the public side under the author's name. Accounts with a "None" essentially keeps the content produced from those accounts safe from the departed collaborators.
+
+fn1. The "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 and "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 plugins can be installed and used to expand user account data and produce published bios or user profiles generated from the expanded data.
 
 h2(#sec2). Panel access per publishing role
 
-The following table shows the three account classifications described above (including the collaborator/publishing roles from Publisher to Designer) versus access to administration panels and functionality:[1]
+The following table shows the three account classifications described above (including the collaborator/publishing roles from Publisher to Designer) versus access to administration panels and functionality:[2]
 
 * %(success)Full% means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case. 
 * %(warning)Limited% means the account or role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
@@ -72,7 +74,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-fn1. In addition to this documentation, an administrator can directly see the specific functionality a given collaborator role has by installing the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin and following the instructions. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions. 
+fn2. In addition to this documentation, an administrator can directly see the specific functionality a given collaborator role has by installing the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin and following the instructions. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions. 
 
 h2(#sec3). Limited access specifications
 
@@ -84,9 +86,7 @@ Like the administrator, the Publisher is all-powerful with respect to administra
 
 h3(#sec3-2). Managing Editor
 
-Managing Editors have the same level of rights as Publishers throughout the administration side, except on the "**Users**":users-panel panel. In that case, they can see default data for _all_ user accounts, and edit full account data for any inferior role, but can _not_ edit account data for Publishers or other Managing Editors.[3]
-
-fn3. If a website is using the smd_user_manager and smd_bio plugins to expand user account data, the Managing Editor can see and edit the expanded data fields too, beyond just the default data types.
+Managing Editors equal Publishers throughout the administration side, but with slightly less rights on the "**Users**":users-panel panel. They can see default data for _all_ user accounts, and edit full account data for any inferior role, but cannot edit account data for Publishers or other Managing Editors.
 
 h3(#sec3-3). Copy Editor
 
