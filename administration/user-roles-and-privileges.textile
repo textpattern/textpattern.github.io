@@ -29,19 +29,19 @@ On this page:
 
 h2(#sec1). Account classifications versus roles
 
-There is no physical distinction between Textpattern user accounts, but it's helpful to classify them in three ways to distinguish the those representing user roles. 
+It's helpful to classify user accounts in three ways. 
 
-First is the all-powerful *administrator account*. Only one person has this account, the person who installed Textpattern initially (presumably you). Although administrators can certainly serve in a publishing role, the administrator isn't necessarily part of a collaborative publishing process; they are more like the person to get in touch with if there's a problem with the website's installation. They have the duty of regularly backing up the database and updating the system when new releases are made. Likewise, they typically handle all server-side issues, and will make decisions about website "security":http://docs.textpattern.io/administration/security.
+First is the all-powerful *administrator account*. Only one person has this account; the person who installed Textpattern (presumably you). Though an administrator can certainly serve in a publishing role, an administrator isn't necessarily part of a collaborative publishing process; they are more like the one to get in touch with if there's a problem with the website's installation. They typically handle all server-side issues, update the system when new releases are made, backup the database on a regular schedule, and make decisions about website "security":http://docs.textpattern.io/administration/security. If a website is only a single-user site, this is the only account you need.
 
-Second are the *collaborative (publishing) accounts*, which represent the actual _roles_ defined in Textpattern. The roles are primarily what this page is concerned with, from Publisher down to Designer. Collaborator/publishing roles are taken into consideration when planning a publishing architecture for a multi-contributor website around the day-to-day activities of producing content and evolving the presentation.[1]
+Second are the *collaborative (publishing) accounts*, which represent the six _roles_ defined in Textpattern, from Publisher down to Designer. The roles are primarily what this page is concerned with. Collaborator roles are taken into consideration when planning a publishing architecture around the day-to-day activities of producing content (and evolving the presentation).[1]
 
-Finally there are *frozen accounts*, which, when they exist, represent former collaborator accounts that no longer have association with the website. Such accounts can be given the status of "None", meaning the accounts are preserved but the former collaborators are denied access to the administration side. Frozen accounts are useful for when former collaborators published content and that content needs to remain, safely, on the public side under the author's name.
+Finally there are *frozen accounts*, which, when they exist, represent former collaborator accounts that no longer have association with the website. Frozen accounts have the status of "None", meaning the accounts are preserved but the former collaborators are denied access to the administration side. This is useful for when former collaborators had published content and that content needs to remain, safely, on the public side under the authoring name.
 
 fn1. The "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 and "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 plugins can be installed and used to expand user account data and produce published bios or user profiles generated from the expanded data.
 
 h2(#sec2). Panel access per publishing role
 
-The following table shows the three account classifications described above (including the collaborator/publishing roles from Publisher to Designer) versus access to administration panels and functionality:[2]
+The following table shows the three account classifications described above -- including the six collaborator/publishing roles from Publisher to Designer) -- versus access to administration panels and functionality:[2]
 
 * %(success)Full% means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case. 
 * %(warning)Limited% means the account or role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
