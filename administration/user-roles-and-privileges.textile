@@ -51,26 +51,26 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
 |\9. **Content** |
-|_. "Articles":articles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
-|_. "Categories":categories-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
-|_. "Comments":comments-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
-|_. "Files":files-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
-|_. "Images":images-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
-|_. "Links":links-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
-|_. "Write":write-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(warning)Limited% | %(error)Blocked% |
+|_. "Articles":articles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(success)Full% | %(success)Full% | %(error)Blocked% |
+|_. "Categories":categories-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Comments":comments-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Files":files-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Images":images-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Links":links-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Write":write-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
 |\9. **Presentation** |
-|_. "Forms":forms-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
-|_. "Pages":pages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
-|_. "Sections":sections-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
-|_. "Styles":styles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
+|_. "Forms":forms-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Pages":pages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Sections":sections-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Styles":styles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
 |\9. **Admin** |
-|_. "Diagnostics":diagnostics-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
-|_. "Import":import-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
-|_. "Languages":languages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
-|_. "Plugins":plugins-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
-|_. "Preferences":preferences-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Diagnostics":diagnostics-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Import":import-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Languages":languages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Plugins":plugins-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Preferences":preferences-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 |_. "Users":users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
-|_. "Visitor logs":visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Visitor logs":visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 
 notextile. </div>
 
@@ -102,8 +102,13 @@ h3(#sec3-4). Staff Writer [todo]
 
 h3(#sec3-5). Freelancer [todo]
 
-* can create and edit own articles
-* can change article status from Draft to Pending
+Freelancers represent content producers who are external to the website's editorial team. You could also think of them as "guest authors". As such, they have very few access rights to the administration side. 
+
+* They can see anyone's full article regardless of status, but not edit it in any way. 
+* They can create new "Draft" articles and switch their status to "Pending", but not publish them "Live". 
+* They can edit their own user account details, but not see anyone else's account information.
+
+Note: Articles should be limited, only seeing their own draft, pending, and live articles (or, at most, only the "live" articles of others too).
 
 h3(#sec3-6). Designer
 
@@ -111,6 +116,8 @@ A Designer's focus is on site structure and presentation, but a Designer can see
 
 * A Designer can see the full article of any user in the **Write** panel, but cannot edit articles in any way. Nor can a Designer create articles. 
 * A Designer can access the **Users** panel to edit their own account details. They cannot see anyone else's accounts.
+
+Note: Why do designers need "Files" access?
 
 h2(#sec4). Modifying user roles and privileges
 
