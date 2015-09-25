@@ -107,10 +107,10 @@ h3(#sec3-5). Freelancer [todo]
 
 h3(#sec3-6). Designer
 
-The Designer's focus is on presentational functionality, and on those aspects of content that help to make decisions about it. Designers can:
+A Designer's focus is on site structure and presentation, but a Designer can see some content too to help inform presentational decisions. The Designer has %(warning)limited% privileges on the **Write** and **Users** panels:
 
-* See any article of any user, regardless of article status, but cannot edit them in any way. Nor can a Designer create articles.  * blocked from all panels except Pages, Forms, and Styles, where they can work on markup and CSS
-* Edit and the can access the Users panel to edit their own account details.
+* A Designer can see the full article of any user in the **Write** panel, but cannot edit articles in any way. Nor can a Designer create articles. 
+* A Designer can access the **Users** panel to edit their own account details. They cannot see anyone else's accounts.
 
 h2(#sec4). Modifying user roles and privileges
 
