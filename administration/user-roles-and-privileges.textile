@@ -35,7 +35,7 @@ First is the all-powerful *administrator account*. Only one person has this acco
 
 Second are the *collaborative (publishing) accounts*, which represent the six _roles_ defined in Textpattern, from Publisher down to Designer. The roles are primarily what this page is concerned with. Collaborator roles are taken into consideration when planning a publishing architecture around the day-to-day activities of producing content (and evolving the presentation).[1]
 
-Finally there are *frozen accounts*, which, when they exist, represent former collaborator accounts that no longer have association with the website. Frozen accounts have the status of "None", meaning the accounts are preserved but the former collaborators are denied access to the administration side. This is useful for when former collaborators had published content and that content needs to remain, safely, on the public side under the authoring name.
+Finally there are (potentially) *frozen accounts*, which have the status of "None", meaning the accounts are preserved but the account holders are denied access to the administration side. This is useful for accounts that publish content (e.g., a magazine editor) but later leave the editorial team. Their content will remain safely on the public side of the website, under the authoring name.
 
 fn1. The "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 and "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 plugins can be installed and used to expand user account data and produce published bios or user profiles generated from the expanded data.
 
