@@ -51,30 +51,30 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
 |\9. **Content** |
-|_. "Articles":articles-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% |
-|_. "Categories":categories-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Comments":comments-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Articles":http://docs.textpattern.io/administration/articles-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% |
+|_. "Categories":http://docs.textpattern.io/administration/categories-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Comments":http://docs.textpattern.io/administration/comments-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 |_. "Files":files-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
-|_. "Images":images-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
-|_. "Links":links-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Write":write-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
+|_. "Images":http://docs.textpattern.io/administration/images-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Links":http://docs.textpattern.io/administration/links-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Write":http://docs.textpattern.io/administration/write-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
 |\9. **Presentation** |
 |_. "Forms":forms-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
-|_. "Pages":pages-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
-|_. "Sections":sections-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
-|_. "Styles":styles-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Pages":http://docs.textpattern.io/administration/pages-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Sections":http://docs.textpattern.io/administration/sections-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Styles":http://docs.textpattern.io/administration/styles-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
 |\9. **Admin** |
-|_. "Diagnostics":diagnostics-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Import":import-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Languages":languages-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Plugins":plugins-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Preferences":preferences-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Users":users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
-|_. "Visitor logs":visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Diagnostics":http://docs.textpattern.io/administration/diagnostics-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Import":http://docs.textpattern.io/administration/import-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Languages":http://docs.textpattern.io/administration/languages-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Plugins":http://docs.textpattern.io/administration/plugins-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Preferences":http://docs.textpattern.io/administration/preferences-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Users":http://docs.textpattern.io/administration/users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
+|_. "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 
 notextile. </div>
 
-fn2. In addition to this documentation, an administrator can directly see the specific functionality a given collaborator role has by installing the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin and following the instructions. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions. 
+fn2. You may also install and use the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin to more easily visualize what a given role can see and do in the administration side. However it's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions. 
 
 h2(#sec3). Limited access specifications
 
@@ -82,47 +82,54 @@ For each publishing role having %(warning)Limited% access to a panel, the specif
 
 h3(#sec3-1). Publisher
 
-Like the administrator, the Publisher is all-powerful with respect to administration-side functionality. However, a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's.
+Like the administrator, the Publisher is all-powerful with respect to administration-side functionality, except a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's. However, these roles don't compete. Unlike administrators (an account type described earlier), Publishers represent the top position of the editorial team, which is focused on website architecture, content, and design. Publishers may not actually work on all those things -- from a collaborative standpoint they're more a decision maker than a doer -- but they have the power in the CMS to step in and override something if necessary. 
 
 h3(#sec3-2). Managing Editor
 
-Managing Editors equal Publishers throughout the administration side, but with slightly less rights on the "**Users**":users-panel panel. They can see default data for _all_ user accounts, and edit full account data for any inferior role, but cannot edit account data for Publishers or other Managing Editors.
+Managing Editors are essentially the Publisher's right hand, a transition role from process governance to content production. Managing Editors have the same privileges as Publishers throughout the administration side, with one exception.
 
-h3(#sec3-3). Copy Editor [todo]
+**Users** panel: They can see basic data types (Login, Real name, Email, Privileges, Last log in, etc) for all user accounts, and edit full account data for any inferior role, but cannot edit account data for Publishers or other Managing Editors.
 
-The copy editor can't work on site structure, presentation, or change preferences. Copy Editors can only:
+h3(#sec3-3). Copy Editor
 
-* edit article, links, or comments
-* edit HTML in Page template and Forms
+Copy Editors aren't concerned with governance, as the higher roles are, rather they're all about content production, in this case editing the content produced by writers and making final preparations and/or checks before publishing. Such preps and checks might include formatting copy and adding images (or verifying that it's been done correctly), assigning output designators (the section and categories fields), adding custom field data and metadata, setting publishing date, and so forth. Copy Editor privileges are pretty straight forward, either having full access to panels or no access at all, with one exception. 
+
+**Users** panel: They can see basic data types for all user accounts, but they can only edit their own account data.
+
+Note: Copy editors shouldn't have access to Sections. There's no content there to edit. Sections are structure/presentation thing. Forms and Pages, sure, there's potentially copy there that needs editing. Also, I'm unclear about Files, do they have full rights to Files or just their own files? Also, the "Privs" column on the default panel should be "Role", because that's what it's actually showing. Privs are the kind of things the role can do, which is not being shown, that's what this doc is detailing.
 
 h3(#sec3-4). Staff Writer
 
-As the title suggests, Staff Writers are part of the editorial team and primarily focused on writing articles. As such they don't need access to much of the administration side.
+The Staff Writer is one of two roles primarily concerned with writing articles (the other being Freelancer). They don't need access to much of the administration side except those panels concerned with content, with a few limitations.
 
-* They can create, edit, publish and delete their own articles. They can see the full articles of other user accounts, but not edit them in any way.
-* They can upload images and edit the ones they upload. They can see the images uploaded by other user accounts, but they cannot edit or delete those images.
-* They can upload files and edit the ones they upload. They can see the names of files uploaded by other user accounts, but they cannot edit or delete those files.
-* They can edit their own user account details, but not see anyone else's account information.
+**Write** panel: They can create, edit, publish, and delete their own articles. They can see the full articles of other user accounts, but not edit them in any way.
+
+**Images** panel: They can upload images and edit the ones they upload. They can see the images uploaded by other user accounts, but they cannot edit or delete those images.
+
+**Files** panel: They can upload files and edit the ones they upload. They can see the names of files uploaded by other user accounts, but they cannot edit or delete those files. [???]
+
+**Users** panel: They can edit their own user account details, but not see anyone else's account information.
 
 h3(#sec3-5). Freelancer
 
-Freelancers are somewhat like Staff Writers in terms of what they provide (primarily article content) but are external to the website's editorial team. You can think of them as "guest authors". Their privileges are similar to Staff Writers too, but with a few more restrictions. 
+Freelancers are external to the website's editorial team. You can think of them as "guest authors". Like Staff Writers, Freelancers write articles, but that's mostly it due to their external status. 
 
-* They can see anyone's full article regardless of status, but not edit anyone else's articles in any way. 
-* They can create new "Draft" articles and switch their status to "Pending", but not publish them "Live". 
-* They can edit their own user account details, but not see anyone else's account information.
+**Write** panel: They can create new "Draft" articles and switch their status to "Pending", but not publish them "Live". They can see the full articles of other user accounts, but not edit them in any way.
+
+**Users** panel: Same as Staff Writer.
 
 Note: Articles should be limited, only seeing their own draft, pending, and live articles (or, at most, only the "live" articles of others too).
 
 h3(#sec3-6). Designer
 
-A Designer's focus is on site structure and presentation, but a Designer can see some content too to help inform presentational decisions. The Designer has limited privileges on the **Write** and **Users** panels.
+A Designer's focus is uniquely on site structure and presentation, but a Designer can see some content too to help inform presentational decisions.
 
-* They can see anyone's full article regardless of status, but not edit anyone else's articles in any way. Nor can a Designer create articles. 
-* They can edit their own user account details, but not see anyone else's account information.
+**Write** panel: They can see anyone's full article regardless of status, but not edit anyone else's articles in any way. Nor can a Designer create articles. 
+
+**Users** panel: Same as Staff Writer.
 
 Note: Why do designers need "Files" access?
 
 h2(#sec4). Modifying user roles and privileges
 
-You can go beyond assigning roles by installing the "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 plugin and modify the default roles, creating new role types, and changing the privileges a given role has. The plugin also allows creating custom user groups in addition to changing the roles and rights of individuals. Follow the instructions that come with the plugin.
+You can go beyond assigning roles by installing the "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 plugin and modify the default role titles, creating new role types, and changing the privileges a given role has. The plugin also allows creating custom user groups in addition to changing individual roles. Follow the instructions that come with the plugin.
