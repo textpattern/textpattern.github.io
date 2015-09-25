@@ -51,18 +51,18 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
 |\9. **Content** |
-|_. "Articles":articles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Articles":articles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
 |_. "Categories":categories-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
 |_. "Comments":comments-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
-|_. "Files":files-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
-|_. "Images":images-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Files":files-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
+|_. "Images":images-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
 |_. "Links":links-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
-|_. "Write":write-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
+|_. "Write":write-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(warning)Limited% | %(error)Blocked% |
 |\9. **Presentation** |
-|_. "Forms":forms-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Pages":pages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
-|_. "Sections":sections-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
-|_. "Styles":styles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(error)Blocked% |
+|_. "Forms":forms-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(success)Full% |
+|_. "Pages":pages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(success)Full% |
+|_. "Sections":sections-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
+|_. "Styles":styles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
 |\9. **Admin** |
 |_. "Diagnostics":diagnostics-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
 |_. "Import":import-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
@@ -90,7 +90,7 @@ Managing Editors equal Publishers throughout the administration side, but with s
 
 h3(#sec3-3). Copy Editor [todo]
 
-The copy editor can't work on site structure, presentation, or change preferences. Copy editors can only:
+The copy editor can't work on site structure, presentation, or change preferences. Copy Editors can only:
 
 * edit article, links, or comments
 * edit HTML in Page template and Forms
@@ -107,7 +107,10 @@ h3(#sec3-5). Freelancer [todo]
 
 h3(#sec3-6). Designer
 
-The Designer blocked from all panels except Pages, Forms, and Styles, where they can work on markup and CSS, and the can access the Users panel to edit their own account details.
+The Designer's focus is on presentational functionality, and on those aspects of content that help to make decisions about it. Designers can:
+
+* See any article of any user, regardless of article status, but cannot edit them in any way. Nor can a Designer create articles.  * blocked from all panels except Pages, Forms, and Styles, where they can work on markup and CSS
+* Edit and the can access the Users panel to edit their own account details.
 
 h2(#sec4). Modifying user roles and privileges
 
