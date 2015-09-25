@@ -59,8 +59,8 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 |_. "Links":links-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(error)Blocked% | %(error)Blocked% |
 |_. "Write":write-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(warning)Limited% | %(error)Blocked% |
 |\9. **Presentation** |
-|_. "Forms":forms-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(success)Full% |
-|_. "Pages":pages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  |  | %(success)Full% |
+|_. "Forms":forms-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
+|_. "Pages":pages-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
 |_. "Sections":sections-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
 |_. "Styles":styles-panel | %(success)Full% | %(success)Full% | %(success)Full% |  |  |  | %(success)Full% | %(error)Blocked% |
 |\9. **Admin** |
