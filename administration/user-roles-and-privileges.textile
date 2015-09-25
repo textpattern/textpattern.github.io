@@ -96,8 +96,6 @@ Copy Editors aren't concerned with governance, as the higher roles are, rather t
 
 **Users** panel: They can see basic data types for all user accounts, but they can only edit their own account data.
 
-Note: Copy editors shouldn't have access to Sections. There's no content there to edit. Sections are structure/presentation thing. Forms and Pages, sure, there's potentially copy there that needs editing. Also, I'm unclear about Files, do they have full rights to Files or just their own files? Also, the "Privs" column on the default panel should be "Role", because that's what it's actually showing. Privs are the kind of things the role can do, which is not being shown, that's what this doc is detailing.
-
 h3(#sec3-4). Staff Writer
 
 The Staff Writer is one of two roles primarily concerned with writing articles (the other being Freelancer). They don't need access to much of the administration side except those panels concerned with content, with a few limitations.
@@ -118,8 +116,6 @@ Freelancers are external to the website's editorial team. You can think of them 
 
 **Users** panel: Same as Staff Writer.
 
-Note: Articles should be limited, only seeing their own draft, pending, and live articles (or, at most, only the "live" articles of others too).
-
 h3(#sec3-6). Designer
 
 A Designer's focus is uniquely on site structure and presentation, but a Designer can see some content too to help inform presentational decisions.
@@ -127,8 +123,6 @@ A Designer's focus is uniquely on site structure and presentation, but a Designe
 **Write** panel: They can see anyone's full article regardless of status, but not edit anyone else's articles in any way. Nor can a Designer create articles. 
 
 **Users** panel: Same as Staff Writer.
-
-Note: Why do designers need "Files" access?
 
 h2(#sec4). Modifying user roles and privileges
 
