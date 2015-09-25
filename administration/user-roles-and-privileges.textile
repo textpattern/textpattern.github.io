@@ -100,7 +100,7 @@ h3(#sec3-4). Staff Writer [todo]
 * can create, edit, publish and delete own articles
 * can upload images
 
-h3(#sec3-5). Freelancer [todo]
+h3(#sec3-5). Freelancer
 
 Freelancers represent content producers who are external to the website's editorial team. You could also think of them as "guest authors". As such, they have very few access rights to the administration side. 
 
