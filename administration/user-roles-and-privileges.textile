@@ -41,7 +41,7 @@ fn1. The "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 
 
 h2(#sec2). Panel access per publishing role
 
-The following table shows all the account types, with emphasis on the six publishing roles (from Publisher to Designer), versus access to administration panels and functionality:[2]
+The following table shows all account types versus access to administration panels and functionality, with emphasis on the six publishing roles (from Publisher to Designer):[2]
 
 * %(success)Full% means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case by clicking the panel name. 
 * %(warning)Limited% means the account or role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
