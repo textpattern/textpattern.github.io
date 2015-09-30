@@ -25,8 +25,8 @@ On this page:
 ** "Staff Writer":#sec3-4
 ** "Freelancer":#sec3-5
 ** "Designer":#sec3-6
-* "Multi-contributor security":#sec4
-* "Modifying user roles and privileges":#sec5
+* "Modifying user roles and privileges":#sec4
+* "Multi-contributor security":#sec5
 
 h2(#sec1). Account classifications versus roles
 
@@ -127,16 +127,16 @@ A Designer's focus is uniquely on site structure and presentation, but a Designe
 
 **Write** panel: They can see anyone's full article regardless of status, but not edit anyone else's articles in any way. Nor can a Designer create articles. 
 
-**Users** panel: Same as Staff Writer.
+**Users** panel: Same as Staff Writer.  
 
-h2(#sec4). Multi-contributor security
+h2(#sec4). Modifying user roles and privileges
+
+You can go beyond assigning roles by installing the "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 plugin and modify the default role titles, creating new role types, and changing the privileges a given role has. The plugin also allows creating custom user groups in addition to changing individual roles, thus allowing fine-grained control over roles and privileges. Follow the instructions that come with the plugin.
+
+h2(#sec5). Multi-contributor security
 
 It goes without saying that when granting roles to site contributors, be sure the people you're giving privileges to are trustworthy. The higher roles, like Publisher and Managing Editor, have a lot of power, of course, and can easily change things. But even lesser roles should be granted to people with some attention. 
 
 For example, the Designer role is restricted to those areas of the administration side that may play a role in presentation, including page and form templates. Such restrictions may seem sufficiently secure on the surface, but if the "Allow PHP in pages and forms?" preference is set to "Yes" in the "**Preferences**":http://docs.textpattern/io/administration/preferences-panel panel, then a Designer _could_ use PHP in pages or forms in a malicious way to gain administrator-like power and cause problems. Setting the preference to "No" would prevent such a possibility. 
 
-When it comes down to it, security is a governance concern, relying just as much on smart human decisions as code lockdown. Don't give roles to people you can't trust and make sure your editorial workflows are documented so each contributor knows what's expected of them by role assignment.    
-
-h2(#sec5). Modifying user roles and privileges
-
-You can go beyond assigning roles by installing the "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 plugin and modify the default role titles, creating new role types, and changing the privileges a given role has. The plugin also allows creating custom user groups in addition to changing individual roles, thus allowing fine-grained control over roles and privileges. Follow the instructions that come with the plugin.
+When it comes down to it, security is a governance concern, relying just as much on smart human decisions as code lockdown. Don't give roles to people you can't trust and make sure your editorial workflows are documented so each contributor knows what's expected of them by role assignment.
