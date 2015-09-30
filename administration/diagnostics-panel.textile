@@ -33,30 +33,29 @@ Low diagnostics info begins with a set of data values about your installation an
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Data item |_. What it tells you |
-| Textpattern version: | the version you currently have installed |
-| Last update: | the date/time you last updated your installation |
-| Document root: | path to directory where Textpattern is installed |
-| $path_to_site: | server path to directory where Textpattern is installed |
-| Textpattern path: | path to your installation's configuration directory |
-| Permanent link mode: | how you've configured your URLs to appear |
-| upload_tmp_dir: | the absolute path of __tmp__ directory on web server |
-| Temporary directory path: | the path of __tmp__ directory relative to web root |
-| Site URL: | your domain and TLD (i.e. domain.tld); corresponds with setting in **"Basic preferences":preferences/basic-prefs-panel** |
-| PHP version: | version number of your PHP install |
+| Textpattern version: | The version you currently have installed. |
+| Last update: | The date/time you last updated your installation. |
+| Document root: | The path to the installation directory relative to the user directory on server. |
+| $path_to_site: | The path to the installation directory relative to the user directory on server. |
+| Textpattern path: | The absolute path to your installation's configuration directory. |
+| Permanent link mode: | The pattern of URL type you set in "**Preferences**":preferences/preferences-panel. |
+| Temporary directory path: | The path of __tmp__ directory relative to web root. |
+| Site URL: | Your domain and TLD (i.e. domain.tld); corresponds with setting in "**Preferences**":preferences/preferences-panel. |
+| PHP version: | The version number of your PHP install. |
 | GD Graphics Library: | |
-| Server TZ: | your web server's time zone |
-| Server local time: | the local date/time you have set in **"Basic preferences":preferences/basic-prefs-panel** |
-| DST enabled?: | if Daylight Savings Time is enabled ("0"=no, "1"=yes); corresponds with setting in **"Basic preferences":preferences/basic-prefs-panel** |
-| Automatically adjust DST setting?: | ("0"=no, "1"=yes); corresponds with setting in **"Basic preferences":preferences/basic-prefs-panel** |
-| Time zone: | your time zone in GMT; corresponds with setting in **"Basic preferences":preferences/basic-prefs-panel** |
-| MySQL: | version number and build of your MySQL database server |
-| Locale: | the language and character set you have configured |
-| Server: | web server type (e.g. Apache) |
+| Server TZ: | Your web server's time zone (i.e., relative to where it's located). |
+| Server local time: | The local date/time you have set in "**Preferences**":preferences/preferences-panel. |
+| DST enabled?: | Whether Daylight Savings Time is enabled or not ("0"=no, "1"=yes); corresponds with setting in "**Preferences**":preferences/preferences-panel. |
+| Automatically adjust DST setting?: | Related with DST setting in "**Preferences**":preferences/preferences-panel ("0"=no, "1"=yes). |
+| Time zone: | Your time zone in Greenwich Mean Time (GMT); corresponds with setting in "**Preferences**":preferences/preferences-panel. |
+| MySQL: | The version number and build of your MySQL database server. |
+| Locale: | The language and character set you have configured. |
+| Server: | Your web server type (e.g. Apache). |
 | PHP server API: | |
 | RFC 2616 headers: | |
 | Server OS: | |
-| Active plugins: | a comma-separated list of all plugins and their version numbers you have installed and are turned *ON* |
-| Admin-side theme: | name and version number of active admin-side theme |
+| Active plugins: | A comma-separated list of all plugins (and their version numbers) that are installed _and_ turned *ON*. |
+| Admin-side theme: | The name and version number of the active administration side theme; default is Hive. |
 
 notextile. </div>
 
@@ -214,7 +213,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-h3. Functions not used by Textpattern
+h3. Functions _not_ used by Textpattern
 
 These functions are _not_ used by Textpattern.[4] If diagnostics reports one or more of these functions as disabled, you may safely ignore the message, because they do not affect Textpattern's operation in any way.
 
