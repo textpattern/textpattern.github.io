@@ -135,7 +135,7 @@ You can go beyond assigning roles by installing the "smd_user_manager":http://fo
 
 h2(#sec5). Multi-contributor security
 
-It goes without saying that when granting roles to site contributors, be sure the people you're giving privileges to are trustworthy. The higher roles, like Publisher and Managing Editor, have a lot of power, of course, and can easily change things. But even lesser roles should be granted to people with some attention. 
+It goes without saying that when granting roles to site contributors, be sure the people you're giving privileges to are trustworthy. The higher roles, like Publisher and Managing Editor, have a lot of power and can easily change things. But even lesser roles should be granted to people with some attention. 
 
 For example, the Designer role is restricted to those areas of the administration side that may play a role in presentation, including page and form templates. Such restrictions may seem sufficiently secure on the surface, but if the "Allow PHP in pages and forms?" preference is set to "Yes" in the "**Preferences**":http://docs.textpattern/io/administration/preferences-panel panel, then a Designer _could_ use PHP in pages or forms in a malicious way to gain administrator-like power and cause problems. Setting the preference to "No" would prevent such a possibility. 
 
