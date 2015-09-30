@@ -137,4 +137,4 @@ For example, the Designer role is restricted to those areas of the administratio
 
 h2(#sec5). Modifying user roles and privileges
 
-You can go beyond assigning roles by installing the "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 plugin and modify the default role titles, creating new role types, and changing the privileges a given role has. The plugin also allows creating custom user groups in addition to changing individual roles. Follow the instructions that come with the plugin.
+You can go beyond assigning roles by installing the "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 plugin and modify the default role titles, creating new role types, and changing the privileges a given role has. The plugin also allows creating custom user groups in addition to changing individual roles, thus allowing fine-grained control over roles and privileges. Follow the instructions that come with the plugin.
