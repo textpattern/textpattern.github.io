@@ -14,9 +14,7 @@ tags:
 
 h1. Diagnostics
 
-The **Diagnostics** panel is important for troubleshooting problems with your Textpattern installation, such as misconfigurations you might discover when installing or upgrading to a new version. The panel can also be useful for troubleshooting functional problems that you may have introduced by accident when extending the system, modifying the __.htaccess__ file, or some other slight of hand.
-
-The **Diagnostics** panel is composed of two display regions: **Pre-flight checks** and **Diagnostic info**. Though the latter comes after the former in the panel, it may be useful to talk about them in reverse here.
+The **Diagnostics** panel is important for troubleshooting problems with your Textpattern installation, such as misconfigurations you might discover when installing or upgrading to a new version. The panel can also be useful for troubleshooting functional problems you inadvertently introduce when extending the system, modifying the __.htaccess__ file, or some other slight of hand.
 
 On this page:
 
@@ -26,11 +24,11 @@ On this page:
 
 h2(#sec1). Diagnostic info display
 
-The actual diagnostics information is displayed in the **Diagnostics info** region. The volume of details displayed may be set to "Low" (the default) or "High", which you can toggle between using the **Detail** selection control at bottom of the info display field.
+The actual diagnostics information is displayed in the **Diagnostics info** region at the bottom of the panel display. The volume of details displayed may be set to "Low" (the default) or "High", which you can toggle between using the **Detail** selection control under the info display field.
 
 h3. Low info display
 
-Low diagnostics info begins with a set of data values about your installation and server technology. A few value descriptions are provided here for general understanding, but most of the data items should be obvious.
+Low diagnostics info begins with a set of data values about your installation and server technology. These values and their descriptions are described in the following table.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -126,7 +124,7 @@ The last item above reflects a long list of Textpattern configuration files whic
 
 h2(#sec2). Pre-flight checks
 
-The **Pre-flight checks** display is where diagnostic feedback messages appear. There are four kinds of feedback messages: success (green), information (blue), warning (yellow), and error (red)..
+The **Pre-flight checks** region, at top of the panel is where diagnostic feedback messages appear. There are four kinds of feedback messages: success (green), information (blue), warning (yellow), and error (red).
 
 h3. Success (green)
 
