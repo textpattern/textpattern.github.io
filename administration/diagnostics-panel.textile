@@ -24,7 +24,7 @@ On this page:
 
 h2(#sec1). Diagnostic info display
 
-The actual diagnostics information is displayed in the **Diagnostics info** region at the bottom of the panel display. The volume of details displayed may be set to "Low" (the default) or "High", which you can toggle between using the **Detail** selection control under the info display field.
+The actual diagnostics information is displayed in the **Diagnostics info** region at the bottom of the panel display. The volume of details displayed may be set to "Low" (the default) or "High", which you can toggle using the **Detail** selection control under the info display field.
 
 h3. Low info display
 
@@ -35,27 +35,27 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 |_. Data item |_. What it tells you |
 | Textpattern version: | The version you currently have installed. |
 | Last update: | The date/time you last updated your installation. |
-| Document root: | The path to the installation directory relative to the user directory on server. |
-| $path_to_site: | The path to the installation directory relative to the user directory on server. |
-| Textpattern path: | The absolute path to your installation's configuration directory. |
-| Permanent link mode: | The pattern of URL type you set in "**Preferences**":preferences/preferences-panel. |
-| Temporary directory path: | The path of __tmp__ directory relative to web root. |
-| Site URL: | Your domain and TLD (i.e. domain.tld); corresponds with setting in "**Preferences**":preferences/preferences-panel. |
+| Document root: | The path to the web server's public (document root) directory, specifically. |
+| $path_to_site: | The path to wherever your installation is (e.g., in document root or in a sub-directory thereof). |
+| Textpattern path: | The path to your installation's __/textpattern__ directory. |
+| Permanent link mode: | The pattern of URL type you set. Corresponds with the "Permanent link mode" setting in the **Site** section of "**Preferences**":preferences/preferences-panel. |
+| Temporary directory path: | The path of your __/tmp__ directory relative to document root. |
+| Site URL: | Your domain name and (n)TLD (i.e. domain.tld). Corresponds with "Site URL" setting in the **Site** section of "**Preferences**":preferences/preferences-panel. |
 | PHP version: | The version number of your PHP install. |
 | GD Graphics Library: | |
-| Server TZ: | Your web server's time zone (i.e., relative to where it's located). |
-| Server local time: | The local date/time you have set in "**Preferences**":preferences/preferences-panel. |
-| DST enabled?: | Whether Daylight Savings Time is enabled or not ("0"=no, "1"=yes); corresponds with setting in "**Preferences**":preferences/preferences-panel. |
-| Automatically adjust DST setting?: | Related with DST setting in "**Preferences**":preferences/preferences-panel ("0"=no, "1"=yes). |
-| Time zone: | Your time zone in Greenwich Mean Time (GMT); corresponds with setting in "**Preferences**":preferences/preferences-panel. |
+| Server TZ: | The time zone of your server, specified by the Greenwich Mean Time location (e.g., Europe/Paris). |
+| Server local time: | The local date/time of your server (yyyy-mm-dd hh:mm:ss). |
+| DST enabled?: | Whether or not Daylight Savings Time is enabled ("0"=no, "1"=yes). Corresponds with the "DST enabled?" setting in the **Site** section of "**Preferences**":preferences/preferences-panel. |
+| Automatically adjust DST setting?: | Whether or Textpattern will adjust DST automatically ("0"=no, "1"=yes). Corresponds with the "Automatically adjust DST setting?" setting in the **Site** section of "**Preferences**":preferences/preferences-panel. |
+| Time zone: | Your time zone in Greenwich Mean Time (GMT). Corresponds with setting in "**Preferences**":preferences/preferences-panel. |
 | MySQL: | The version number and build of your MySQL database server. |
 | Locale: | The language and character set you have configured. |
 | Server: | Your web server type (e.g. Apache). |
 | PHP server API: | |
 | RFC 2616 headers: | |
-| Server OS: | |
-| Active plugins: | A comma-separated list of all plugins (and their version numbers) that are installed _and_ turned *ON*. |
-| Admin-side theme: | The name and version number of the active administration side theme; default is Hive. |
+| Server OS: | The name and version number of the server's operating system. |
+| Active plugins: | A comma-separated list of all plugins (with version numbers) that are installed _and_ turned *ON*. |
+| Admin-side theme: | The name and version number of the active administration side theme. The default is Hive. |
 
 notextile. </div>
 
