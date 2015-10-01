@@ -125,7 +125,7 @@ h2(#sec2). Pre-flight checks
 
 The **Pre-flight checks** region, at top of the panel is where diagnostic feedback messages appear. There are four kinds of feedback messages: success (green), information (blue), warning (yellow), and error (red).
 
-h3. Success (%(success)green%)
+h3. Success (green)
 
 There is only one green message:
 
@@ -133,7 +133,7 @@ There is only one green message:
 
 This message displays when you successfully address and/or troubleshoot all, blue, yellow, and red feedback messages that might exist. _Go green!_
 
-h3. Information (%(information)blue%)
+h3. Information (blue)
 
 Blue messages are informational only. They make you aware of something so you're informed about it, not because it's a functional problem you need to troubleshoot, necessarily.
 
@@ -143,7 +143,7 @@ There are three possible blue messages:
 * %(information)Clean URLs are only supported on Apache, use at your own risk.% -- This only appears if you're _not_ using an Apache web server. The assumption is that you know what you're doing so it's not a real warning (yellow) or error (red) message. If the assumption is true, you can ignore this message.
 * %(information)File uploads are disabled% -- This appears if the permissions you have set on your __files__ folder in the installation tree is read only. The assumption is that you've consciously made this choice, so you can ignore this message. If you want the message to go away, make the files folder writable.[1]
 
-h3. Warning (%(warning)yellow%)
+h3. Warning (yellow)
 
 Yellow (warning) messages are not critical, per se, and sometimes can even be cascading[2] or false.[3] But when warnings are accurate, they mean something specific needs resolved in order to work correctly.
 
@@ -172,7 +172,7 @@ fn2. **Cascading problems:** Sometimes the existence of one yellow or red issue 
 
 fn3. **False problems:** On rare occasions, yellow and red messages have been known to appear but not go away when addressed as instructed by their help information. Textpattern developers have indicated this can happen in odd situations, and it's a false reading nearly every time, meaning there isn't anything to worry about. If you ever have this problem and can't seem to resolve it, post about it in the "Troubleshooting forum":http://forum.textpattern.com/viewforum.php?id=67 and someone will try to help.
 
-h3. Error (%(error)red%)
+h3. Error (red)
 
 Red messages mean something critical appears to be wrong and you need to troubleshoot it immediately.
 
