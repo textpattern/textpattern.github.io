@@ -86,9 +86,9 @@ For each publishing role having %(warning)Limited% access to a panel, the specif
 
 h3(#sec3-1). Publisher
 
-Like the administrator, the Publisher is all-powerful with respect to administration-side functionality, except a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's. 
+Like the administrator (an account type described earlier), the Publisher is all-powerful with respect to administration-side functionality, except a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's. 
 
-The administrator and Publisher don't compete. Unlike administrators (an account type described earlier), Publishers represent the top position of the editorial team, which is focused on website architecture, content, and design. Publishers may not actually work on all those things -- from a collaborative standpoint they're more a decision maker than a doer -- but they have the power in the CMS to step in and override something if necessary. 
+But the administrator and Publisher don't compete. Unlike administrators, Publishers represent the top position of the editorial team, which is focused on website architecture, content, and design. Publishers may not actually work on all those things -- from a collaborative standpoint they're more a decision maker than a doer -- but they have the power in the CMS to step in and override something if necessary. 
 
 Like the administrator, however, there should only be one Publisher, functionally speaking. Anyone who needed similar rights, but not the absolute same rights, should be a Manager Editor, and so forth. 
 
