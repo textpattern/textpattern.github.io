@@ -47,6 +47,7 @@ The following table shows all account types versus access to administration pane
 * %(success)Full% means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case by clicking the panel name. 
 * %(warning)Limited% means the account or role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
 * %(error)Blocked% means the account or role has no panel access and can not see the panel link in the administration UI. (For accounts with "None" status, the account cannot be used at all.)
+* %(information)Blocked in 4.6% means the role has full or limited access in the current stable release (4.5.7) but will be blocked in the next 4.6 release.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
@@ -62,7 +63,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 |\9. **Presentation** |
 |_. "Forms":forms-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
 |_. "Pages":http://docs.textpattern.io/administration/pages-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
-|_. "Sections":http://docs.textpattern.io/administration/sections-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Sections":http://docs.textpattern.io/administration/sections-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(information)Blocked in 4.6% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
 |_. "Styles":http://docs.textpattern.io/administration/styles-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
 |\9. **Admin** |
 |_. "Diagnostics":http://docs.textpattern.io/administration/diagnostics-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
