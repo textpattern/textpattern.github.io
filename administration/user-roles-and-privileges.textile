@@ -47,16 +47,16 @@ The following table shows all account types versus access to administration pane
 * %(success)Full% means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case by clicking the panel name. 
 * %(warning)Limited% means the account or role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
 * %(error)Blocked% means the account or role has no panel access and can not see the panel link in the administration UI. (For accounts with "None" status, the account cannot be used at all.)
-* %(information)Blocked in 4.6% means the role has full or limited access in the current stable release (4.5.7) but will be blocked in the next 4.6 release.
+* %(information)Limited/Blocked in 4.6% means the role has full or limited access in the current stable release (4.5.7) but will be limited or blocked, accordingly, in the next 4.6 release.
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
 |\9. **Content** |
-|_. "Articles":http://docs.textpattern.io/administration/articles-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% |
+|_. "Articles":http://docs.textpattern.io/administration/articles-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(information)Limited in 4.6%[3] | %(success)Full% | %(error)Blocked% |
 |_. "Categories":http://docs.textpattern.io/administration/categories-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 |_. "Comments":http://docs.textpattern.io/administration/comments-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Files":files-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Files":files-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% | %(information)Blocked in 4.6% | %(error)Blocked% |
 |_. "Images":http://docs.textpattern.io/administration/images-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
 |_. "Links":http://docs.textpattern.io/administration/links-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 |_. "Write":http://docs.textpattern.io/administration/write-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
@@ -76,7 +76,9 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-fn2. You may also install and use the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin to more easily visualize what a given role can see and do in the administration side. However it's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions. 
+fn2. You may also install and use the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin to more easily visualize what a given role can see and do in the administration side. However it's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
+
+fn3. In 4.6, Freelancers will only be able to see their own articles, and those of other accounts that have "Live" status.
 
 h2(#sec3). Limited access specifications
 
