@@ -36,40 +36,73 @@ Users typically install Textpattern in the root location of a website's domain b
 
 fn1. See "Textpattern security":http://docs.textpattern.io/administration/security if you're worried about the login location being common knowledge.
 
-h2(#sec2). Admin-side organization
+h2(#sec2). Administration-side panel organization
 
-The administration side is organized into three primary regions: **Content**, **Presentation**, and **Admin**.[2] Each region has a set of working panels. One panel from each region serves as the default landing location for when you click the primary admin-side navigation links:
+The administration side is organized into three primary regions: **Content**, **Presentation**, and **Admin**.[2] Each region has a set of working panels, one of which serves as the default for when the primary region link is clicked.[3]
 
-* Content
-** Articles
-** Categories
-** Comments
-** Files
-** Images
-** Links
-** Write (default)
-* Presentation
-** Forms
-** Pages (default)
-** Sections
-** Styles
-* Admin
-** "Diagnostics":http://docs.textpattern.io/administration/diagnostics-panel
-** Import
-** Languages (Update languages)[3]
-** "Plugins":http://docs.textpattern.io/administration/plugins-panel
-** Preferences (basic/advanced)[3]
-** "Users":http://docs.textpattern.io/administration/users-panel (default)
-** "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel
-* "Extensions":http://docs.textpattern.io/administration/extensions
+fn2. There is a fourth region, **Extensions**, that does not exist out-of-the-box, but will appear to site administrators and publishers if any of the admin-side plugins that make use of it are installed. 
 
-fn2. The **Extensions** region is not a core system region. It only appears (to site administrators and publishers) if you install any of the admin-side plugins that make use of it.
+fn3. Not all administration-side plugins use the **Extensions** region. Some will add their associated admin-side functionality as a panel in one of the other core regions. This typically happens when the plugin developer feels the functionality more closely associates with _content_, _presentation_, are _administration_ functionality (the latter being an obvious redundancy). This can be a little confusing if you're expecting to find extension functionality under the **Extensions** region.
 
-fn3. The current version of Textpattern has a tertiary level of panels under the **Preferences** link: **Basic** (default), **Advanced**, and **Update languages**. Beginning with Textpattern 4.6, the **Basic** and **Advanced** panels will merge into a single, functional **Preferences** panel, and **Update languages** will become a new panel called **Languages** under the **Admin** region. The tree above shows the new 4.6 organization. 
+h3(#sec2-1). Content
 
-h2(#sec3). Recommended steps after first installing
+The **Content** region of Textpattern has seven panels out-of-the-box.
 
-For those "installing Textpattern":http://docs.textpattern.io/installing/ for the first time.
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. Panel |_. What you see and do there |
+| **Articles** | Provides a table of all "articles" that can be filtered by various column data types. Clicking a given article title opens the article in context of the **Write** panel, in full edit mode. |    
+| **Categories** | Provides functionality to create and manage topic categories for articles, images, links, and files. |
+| **Comments** | Provides a table of all article comments received, and functionality to manage them.[4] |
+| **Files** | Provides a table of all files uploaded and functionality to manage them. |
+| **Images** | [todo] |
+| **Links** | [todo] |
+| **Write** (default) | [todo] |
+
+notextile. </div>
+
+fn4. In Textpattern 4.6, when the "Accept comments?" preference is set to "No" in the **Preferences** panel, all comments functionality throughout the administration side will be hidden in the UI and the **Comments** panel link will be removed from the list of panel options in the **Content** region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to "Yes". 
+
+h3(#sec2-2). Presentation
+
+The **Presentation** region of the administration side has four panels out-of-the-box.
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. Panel |_. What you see and do there |
+| **Forms** | [todo] |
+| **Pages** (default) | [todo] |    
+| **Sections** | [todo] |
+| **Styles** | [todo] |
+
+notextile. </div>
+
+h3(#sec2-3). Admin
+
+The **Admin** region of the administration side has seven panels out-of-the-box.
+
+notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
+|_. Panel |_. What you see and do there |
+| "**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel | [todo] |
+| **Import** | [todo] |
+| **Languages** (Update languages)[5] | [todo] |
+| "**Plugins**":http://docs.textpattern.io/administration/plugins-panel | [todo] |
+| **Preferences** (basic/advanced)[5] | [todo] |
+| "**Users**":http://docs.textpattern.io/administration/users-panel (default) | [todo] |
+| "**Visitor logs**":http://docs.textpattern.io/administration/visitor-logs-panel | [todo] |
+
+notextile. </div>
+
+fn5. The current version of Textpattern has a tertiary level of panels under the **Preferences** link: **Basic** (default), **Advanced**, and **Update languages**. Beginning with Textpattern 4.6, the **Basic** and **Advanced** panels will merge into a single, functional **Preferences** panel, and **Update languages** will become a new panel called **Languages** under the **Admin** region. The tree above shows the new 4.6 organization.
+
+h3(#sec2-4). Extensions
+
+"Extensions":http://docs.textpattern.io/administration/extensions 
+
+h2(#sec3). Recommended steps after installing
+
+For those "installing Textpattern":http://docs.textpattern.io/installing/ for the first time ever, there's a typical little routine to walk through upon your first log in.
 
 h3(#3-1). Set default language
 
@@ -77,9 +110,9 @@ Unless you change it at the initial installation screen, British English is the 
 
 First you load the language you need by clicking the "Install" link for it. You can add as many as you want, but there's no point adding any you can't read. A green confirmation message will flash at bottom of your browser window after each install action. 
 
-Then you override the current default by selecting the new language you want from the "Current active language" selection menu at top of the languages table.[4]
+Then you override the current default by selecting the new language you want from the "Current active language" selection menu at top of the languages table.[6]
 
-fn4. You'll need to click the **Save** button in Textpattern 4.5.7, but in 4.6 no save is necessary, the language change applies automatically.
+fn6. You'll need to click the **Save** button in Textpattern 4.5.7, but in 4.6 no save is necessary, the language change applies automatically.
 
 h3(#3-2). Configure site identity and publishing behaviour
 
@@ -113,7 +146,7 @@ h2(#sec4). Changing default login panel
 
 The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the "**Write**":http://docs.textpattern.io/administration/write-panel panel from that point on, which is the default panel under the **Content** region.
 
-You can change the default landing panel to whatever admin-side panel you want. In "**Preferences**":http://docs.textpattern.io/administration/preferences-panel, look under the **Admin** area for "Default administration panel".[5] Use the drop-down menu to select the panel you want, then save.
+You can change the default landing panel to whatever admin-side panel you want. In "**Preferences**":http://docs.textpattern.io/administration/preferences-panel, look under the **Admin** area for "Default administration panel".[7] Use the drop-down menu to select the panel you want, then save.
 
-fn5. The current preference label is, "Default admin tab". Beginning with version 4.6 the label will become "Default administration panel", which is a normalization against "Textpattern guidelines":http://docs.textpattern.io/brand/.
+fn7. The current preference label is, "Default admin tab". Beginning with version 4.6 the label will become "Default administration panel", which is a normalization against "Textpattern guidelines":http://docs.textpattern.io/brand/.
 
