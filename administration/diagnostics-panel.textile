@@ -145,22 +145,22 @@ There are three possible blue messages:
 
 h3. Warning (yellow)
 
-Yellow (warning) messages are not critical, per se, and sometimes can even be cascading[2] or false.[3] But when warnings are accurate, they mean something specific needs resolved in order to work correctly.
+Warnings are not critical, per se, and sometimes can even be cascading[2] or false.[3] But when warnings are accurate, something needs resolved in order to work correctly, reliably, or securely.
 
-There are several possible warning messages. Where no description is given below, you are advised to look at the UI information for the warnings by clicking the "Information" icon at right of the **Pre-flight check** items:
+Several warning messages are possible. Where no description is given below, you are advised to look at the UI information for the warnings by clicking the "Information" icon at right of the **Pre-flight check** items:
 
 * path_to_site_missing %(warning)txp_lang phrase needed here%
 * %(warning)DNS lookup failed: {site URL}% -- This means the "Site URL" preference you have entered in the "**Preferences**":preferences/preferences-panel panel is probably incorrect somehow. Check the value and make sure it's entered exactly like this, @domain.tld@, using your domain name and TLD extension.
 * %(warning)Site URL preference might be incorrect: {site URL}% -- Similar to the previous message, this is suggesting the "Site URL" as set in the preferences tab does not match the actual URL you use to visit your website.
 * %(warning)Clean URL test failed.% -- This is not necessarily an error, and could appear for different reasons. Check the help information. It could be caused by the PHP configuration setting of @allow_url_fopen@, or some other hosting issue, or it might go away by fixing other warning messages.
-* %(warning)Site URL has a trailing slash% --
+* %(warning)Site URL has a trailing slash% -- [todo:explanation]
 * %(warning){path} still exists% -- This means you need to remove the "setup" folder from the web server. The path to the folder respective to your installation will be shown.
 * %(warning)image directory is read-only% -- This means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[1]
-* no_temp_dir %(warning)txp_lang phrase needed here%
+* %(warning)No temporary directory defined% -- [todo:explanation]
 * warn_mail_unavailable %(warning)txp_lang phrase needed here%
-* %(warning)Your version of PHP has known security vulnerabilities. Please turn <code>register_globals</code> off or update to a newer PHP version.% --
+* %(warning)Your version of PHP has known security vulnerabilities. Please turn <code>register_globals</code> off or update to a newer PHP version.% -- [todo:explanation]
 * %(warning)Some Textpattern files have been modified% --
-* %(warning)ou are running a development version of Textpattern on a live server.% --
+* %(warning)You are running a development version of Textpattern on a live server.% -- [todo:explanation]
 * %(warning)The following PHP functions (which may be necessary to run Textpattern) are disabled on your server...% -- If you see this message, it will be followed by a number of PHP functions that are disabled on your web server. Textpattern needs certain functions enabled to work correctly, while other functions, if disabled, can be ignored. See section below, "Diagnostics reporting on PHP functions":#sec3, for more about which function are needed or not.
 * %(warning)Site URL preference might be incorrect% -- This could either mean you do not have the right “Site URL” path set in "**Preferences**":preferences/preferences-panel, or, in the case of upgrading, you still need to update your __index.php__ and/or __.htaccess__ files (see next message). (This could also be a false error. For example, symlinks cannot be correctly recognized, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Understandably that is not satisfying advice.)
 * %(warning)Clean URL data test failed% --
