@@ -157,9 +157,9 @@ Several warning messages are possible. Where no description is given below, you 
 * %(warning){path} still exists% -- This means you need to remove the "setup" folder from the web server. The path to the folder respective to your installation will be shown.
 * %(warning)image directory is read-only% -- This means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[1]
 * %(warning)No temporary directory defined% -- [todo:explanation]
-* warn_mail_unavailable %(warning)txp_lang phrase needed here%
+* warn_mail_unavailable %(warning)txp_lang phrase needed here% -- [todo:explanation]
 * %(warning)Your version of PHP has known security vulnerabilities. Please turn <code>register_globals</code> off or update to a newer PHP version.% -- [todo:explanation]
-* %(warning)Some Textpattern files have been modified% --
+* %(warning)Some Textpattern files have been modified% -- [todo:explanation]
 * %(warning)You are running a development version of Textpattern on a live server.% -- [todo:explanation]
 * %(warning)The following PHP functions (which may be necessary to run Textpattern) are disabled on your server...% -- If you see this message, it will be followed by a number of PHP functions that are disabled on your web server. Textpattern needs certain functions enabled to work correctly, while other functions, if disabled, can be ignored. See section below, "Diagnostics reporting on PHP functions":#sec3, for more about which function are needed or not.
 * %(warning)Site URL preference might be incorrect% -- This could either mean you do not have the right “Site URL” path set in "**Preferences**":preferences/preferences-panel, or, in the case of upgrading, you still need to update your __index.php__ and/or __.htaccess__ files (see next message). (This could also be a false error. For example, symlinks cannot be correctly recognized, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Understandably that is not satisfying advice.)
@@ -178,7 +178,7 @@ Red messages mean something critical appears to be wrong and you need to trouble
 
 Possible red messages include:
 
-* %(error)Textpattern requires at least version {version} of PHP to be installed on your server% -- [todo:explanation, where {version} is the recommended version number] 
+* %(error)Textpattern requires at least version {version} of PHP to be installed on your server% -- [todo:explanation] 
 * %(error)/index.php is inaccessible% -- This suggests your __index.php__ file is not available, is not the right version, or that your "Site URL" is set wrong in "**Preferences**":preferences/preferences-panel. It could also mean the __index.php__ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics.
 * %(error).htaccess file is missing% -- This concerns the __.htaccess__ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing __index.php__ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an __.htaccess__ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing __.htaccess__ file with the indicated rewrite rules in the help dialog.
 * %(error)@$path_to_site@ is inaccessible.% -- This means either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
