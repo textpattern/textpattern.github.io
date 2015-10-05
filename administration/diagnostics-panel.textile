@@ -182,10 +182,10 @@ Possible red messages include:
 * %(error)/index.php is inaccessible% -- This suggests your __index.php__ file is not available, is not the right version, or that your "Site URL" is set wrong in "**Preferences**":preferences/preferences-panel. It could also mean the __index.php__ file was not updated for whatever reason during a recent upgrade. Update the file using the one in the "current Textpattern repository":http://dev.textpattern.com/browser/current/ and refresh diagnostics.
 * %(error).htaccess file is missing% -- This concerns the __.htaccess__ file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing __index.php__ file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an __.htaccess__ file. If the file is there, then either replace it from the "current Textpattern repository":http://dev.textpattern.com/browser/current/, or click the help link next to this particular message and replace the contents of your existing __.htaccess__ file with the indicated rewrite rules in the help dialog.
 * %(error)@$path_to_site@ is inaccessible.% -- This means either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
-* %(error){dirtype} is not writable% --
-* %(error)Apache module mod_rewrite is not installed.% --
+* %(error){dirtype} is not writable% -- [todo:explanation]
+* %(error)Apache module mod_rewrite is not installed.% -- [todo:explanation]
 * %(error)Old placeholder file is in the way% -- This likely means you have created an actual folder in your server file tree that shares a name with a __section__ you created in the **Sections** panel, or vice versa. This can break your site. You need to rename or remove one or the other.
-* %(error)Missing files% --
+* %(error)Missing files% -- [todo:explanation]
 * %(error)The following errors were detected in your MySQL tables% -- [todo:explanation]
 * %(error)Temporary directory path and Plugin cache directory path should **not*** match.% -- This means paths to your plugin cache and __tmp__ locations are the same. Neither should be web accessible, but if you set them to the same location, a temp file could overwrite a plugin, and that would be bad. Create a different folder location for your plugin cache.
 
