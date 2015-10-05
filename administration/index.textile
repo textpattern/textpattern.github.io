@@ -71,7 +71,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 |_. Panel |_. What you see and do there |
 | **Forms** | [todo] |
-| **Pages** (default) | [todo] |    
+| **Pages** (default) | [todo] |
 | **Sections** | [todo] |
 | **Styles** | [todo] |
 
