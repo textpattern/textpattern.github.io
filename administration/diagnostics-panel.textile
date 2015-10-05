@@ -149,7 +149,7 @@ Warnings are not critical, per se, and sometimes can even be cascading[2] or fal
 
 Several warning messages are possible. Where no description is given below, you are advised to look at the UI information for the warnings by clicking the "Information" icon at right of the **Pre-flight check** items:
 
-* path_to_site_missing %(warning)txp_lang phrase needed here%
+* path_to_site_missing --
 * %(warning)DNS lookup failed: {site URL}% -- This means the "Site URL" preference you have entered in the "**Preferences**":preferences/preferences-panel panel is probably incorrect somehow. Check the value and make sure it's entered exactly like this, @domain.tld@, using your domain name and TLD extension.
 * %(warning)Site URL preference might be incorrect: {site URL}% -- Similar to the previous message, this is suggesting the "Site URL" as set in the preferences tab does not match the actual URL you use to visit your website.
 * %(warning)Clean URL test failed.% -- This is not necessarily an error, and could appear for different reasons. Check the help information. It could be caused by the PHP configuration setting of @allow_url_fopen@, or some other hosting issue, or it might go away by fixing other warning messages.
@@ -157,7 +157,7 @@ Several warning messages are possible. Where no description is given below, you 
 * %(warning){path} still exists% -- This means you need to remove the "setup" folder from the web server. The path to the folder respective to your installation will be shown.
 * %(warning)image directory is read-only% -- This means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[1]
 * %(warning)No temporary directory defined% -- [todo:explanation]
-* warn_mail_unavailable %(warning)txp_lang phrase needed here% -- [todo:explanation]
+* warn_mail_unavailable -- [todo:explanation]
 * %(warning)Your version of PHP has known security vulnerabilities. Please turn <code>register_globals</code> off or update to a newer PHP version.% -- [todo:explanation]
 * %(warning)Some Textpattern files have been modified% -- [todo:explanation]
 * %(warning)You are running a development version of Textpattern on a live server.% -- [todo:explanation]
