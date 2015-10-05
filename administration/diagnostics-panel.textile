@@ -135,27 +135,23 @@ This message displays when you successfully address and/or troubleshoot all, blu
 
 h3. Information (blue)
 
-Blue messages are informational only. They make you aware of something so you're informed about it, not because it's a functional problem you need to troubleshoot, necessarily.
+Blue messages are informing you of something you might like to know. They're not necessarily functional problems you need to troubleshoot. There are three possible blue messages:
 
-There are three possible blue messages:
-
-* %(information)New Textpattern version n.n.n "available for download":http://textpattern.com/download.% -- This is letting you know that you're not using the latest stable release (where "n.n.n" is the latest version number). The first data item in the **"Diagnostics info":#sec1** display mentioned earlier will indicate your current working version. This blue message is not saying you have to update your installation, but it's good practice to do so for "security":http://docs.textpattern.io/security/ reasons, if nothing else.
-* %(information)Clean URLs are only supported on Apache, use at your own risk.% -- This only appears if you're _not_ using an Apache web server. The assumption is that you know what you're doing so it's not a real warning (yellow) or error (red) message. If the assumption is true, you can ignore this message.
-* %(information)File uploads are disabled% -- This appears if the permissions you have set on your __files__ folder in the installation tree is read only. The assumption is that you've consciously made this choice, so you can ignore this message. If you want the message to go away, make the files folder writable.[1]
+* %(information)New Textpattern version {version} "available for download":http://textpattern.com/download.% -- It's saying you're not using the latest stable release, where {version} will be the latest version number. The first data item in the "Low" **Diagnostics info** display described above will indicate your current working version. Because this is a blue message, you don't _have_ to upgrade (yet) but it's good practice to do so for "security":http://docs.textpattern.io/security/ reasons, if nothing else.
+* %(information)Clean URLs are only supported on Apache, use at your own risk.% -- It's saying you're _not_ using an Apache web server. The assumption is that you know what you're doing so you can ignore this message. It goes away if you ever switch to Apache.
+* %(information)File uploads are disabled% -- This appears if the permissions you have set on your __files__ folder in the installation tree is read only. The assumption is that you've consciously made this choice, so you can ignore this message. If you make the files folder writable, it will go away.[1]
 
 h3. Warning (yellow)
 
-Warnings are not critical, per se, and sometimes can even be cascading[2] or false.[3] But when warnings are accurate, something needs resolved in order to work correctly, reliably, or securely.
-
-Several warning messages are possible. Where no description is given below, you are advised to look at the UI information for the warnings by clicking the "Information" icon at right of the **Pre-flight check** items:
+Warnings are not critical, per se, and sometimes can even be cascading[2] or false.[3] But when warnings are accurate, something needs resolved in order to work correctly, reliably, or securely. Several warning messages are possible:
 
 * path_to_site_missing --
-* %(warning)DNS lookup failed: {site URL}% -- This means the "Site URL" preference you have entered in the "**Preferences**":preferences/preferences-panel panel is probably incorrect somehow. Check the value and make sure it's entered exactly like this, @domain.tld@, using your domain name and TLD extension.
-* %(warning)Site URL preference might be incorrect: {site URL}% -- Similar to the previous message, this is suggesting the "Site URL" as set in the preferences tab does not match the actual URL you use to visit your website.
-* %(warning)Clean URL test failed.% -- This is not necessarily an error, and could appear for different reasons. Check the help information. It could be caused by the PHP configuration setting of @allow_url_fopen@, or some other hosting issue, or it might go away by fixing other warning messages.
-* %(warning)Site URL has a trailing slash% -- [todo:explanation]
-* %(warning){path} still exists% -- This means you need to remove the "setup" folder from the web server. The path to the folder respective to your installation will be shown.
-* %(warning)image directory is read-only% -- This means permissions on your images folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[1]
+* %(warning)DNS lookup failed: {site URL}% -- This means the "Site URL" preference value in the "**Preferences**":preferences/preferences-panel panel is probably incorrect; possibly the wrong name, a spelling mistake, or missing altogether. Check the value and make sure it's entered exactly like this, @domain.tld@, replacing your domain name and TLD extension.
+* %(warning)Site URL preference might be incorrect: {site URL}% -- Similar to the previous message, this is suggesting the "Site URL" as set "**Preferences**":preferences/preferences-panel does not match the actual URL you use to visit your website.
+* %(warning)Clean URL test failed.% -- This could appear for different reasons and may not be a problem, per se. Troubleshoot other messages first and it may go away too. If not, it might be caused by the PHP configuration setting of @allow_url_fopen@, or some other hosting issue.
+* %(warning)Site URL has a trailing slash% -- This means your "Site URL" preference value in the "**Preferences**":preferences/preferences-panel panel has an ending forward slash on it like this, @domain.tld/@. Tsk-tsk. Remove the slash.
+* %(warning){path} still exists% -- This means you need to remove the __/textpattern/setup__ folder from the web server; {path} will be replaced with the actual folder path respective to your installation.
+* %(warning)image directory is read-only% -- This means permissions on your __/images__ folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[1]
 * %(warning)No temporary directory defined% -- [todo:explanation]
 * warn_mail_unavailable -- [todo:explanation]
 * %(warning)Your version of PHP has known security vulnerabilities. Please turn <code>register_globals</code> off or update to a newer PHP version.% -- [todo:explanation]
