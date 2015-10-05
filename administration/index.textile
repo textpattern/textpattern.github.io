@@ -51,13 +51,13 @@ The **Content** region of Textpattern has seven panels out-of-the-box.
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. What you see and do there |
-| **Articles** | Provides a table of all "articles" that can be filtered by various column data types. Clicking a given article title opens the article in context of the **Write** panel, in full edit mode. |
+| **Articles** | Provides a table listing of all "articles", which can be filtered by various column data types. Clicking a given article title opens the article in context of the **Write** panel, in full edit mode. |
 | **Categories** | Provides functionality to create and manage topic categories for articles, images, links, and files. |
-| **Comments**[4] | Provides a table of all article comments received, and functionality to manage them. |
-| **Files** | Provides a table of all files uploaded and functionality to manage them. |
-| **Images** | [todo] |
-| **Links** | [todo] |
-| **Write** (default) | [todo] |
+| **Comments**[4] | Provides a table of all article comments received, and functionality to manage edit them. |
+| **Files** | Provides a table listing of all files uploaded and functionality to manage them. |
+| **Images** | Provides a table listing of all images uploaded, and functionality to manage them. |
+| **Links** | Provides a table listing of all links uploaded and functionality to manage them. |
+| **Write** (default) | Provides article editing fields and controls; is the primary content editor in Textpattern. |
 
 notextile. </div>
 
@@ -70,12 +70,14 @@ The **Presentation** region of the administration side has four panels out-of-th
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. What you see and do there |
-| **Forms** | [todo] |
+| **Forms**[5] | Provides form creation and form management functionality. (Not _web forms_, but Textpattern forms.) |
 | **Pages** (default) | [todo] |
 | **Sections** | [todo] |
 | **Styles** | [todo] |
 
 notextile. </div>
+
+fn5. "Forms" may one day be renamed to "Partials" to better suggest their nature, but core developers have made it clear the change is not on their list of priorities. 
 
 h3(#sec2-3). Admin
 
