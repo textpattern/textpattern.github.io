@@ -53,7 +53,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 |_. Panel |_. What you see and do there |
 | **Articles** | Provides a table of all "articles" that can be filtered by various column data types. Clicking a given article title opens the article in context of the **Write** panel, in full edit mode. |
 | **Categories** | Provides functionality to create and manage topic categories for articles, images, links, and files. |
-| **Comments** | Provides a table of all article comments received, and functionality to manage them.[4] |
+| **Comments**[4] | Provides a table of all article comments received, and functionality to manage them. |
 | **Files** | Provides a table of all files uploaded and functionality to manage them. |
 | **Images** | [todo] |
 | **Links** | [todo] |
