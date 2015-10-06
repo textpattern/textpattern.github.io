@@ -47,11 +47,11 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | |_. What the panel provides you |
 | **Articles** | A table listing of all articles, and the ability to open one in full-edit mode in context of the **Write** panel. |
 | **Categories** | Functionality to create and manage topic categories for articles, images, links, and files. |
-| **Comments**[2] | A table of all article comments received, and functionality to manage edit them. |
+| **Comments**[2] | A table of all article comments received and functionality to manage them. |
 | **Files** | A table listing of all files uploaded and functionality to manage them. |
-| **Images** | A table listing of all images uploaded, and functionality to manage them. |
-| **Links** | A table listing of all links uploaded and functionality to manage them. |
-| **Write** (default) | Article editing fields and controls; is the primary content editor in Textpattern. |
+| **Images** | A table listing of all images uploaded and functionality to manage them. |
+| **Links** | A table listing of all links uploaded and functionality to manage the. |
+| **Write** (default) | Article editing fields and controls. |
 
 notextile. </div>
 
