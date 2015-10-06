@@ -98,10 +98,6 @@ h3(#sec2-4). Extensions (not core)
 
 The "**Extensions**":http://docs.textpattern.io/administration/extensions region is not an out-of-the-box feature of Textpattern. It only appears to the higher "user roles":http://docs.textpattern.io/administration/user-roles-and-privileges if any of the admin-side plugins that make use of it are installed.
 
-The use of the **Extensions** region is basically a convention adopted by plugin developers to put administration-side plugin preferences and other functional controls in a logical place. Not all administration-side plugins use the **Extensions** region, however. Some will add their associated admin-side functionality as a panel in one of the other core regions. This typically happens when the plugin developer feels the functionality more closely associates with _content_, _presentation_, or _admin_ functionality.[5]
-
-fn5. Another reason plugin panels end up in core regions is concern for the potential of having too many plugin panels under the **Extensions** region. Most likely this is an unwarranted concern for 99% of Textpattern's users. Either way, it can be a little confusing if you're expecting to find plugin functionality under **Extensions** but it's mixed in with the core panels. The issue is still evolving and will likely end up at a more regimented process for plugin developers.
-
 h2(#sec3). Changing default login panel
 
 The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the "**Write**":http://docs.textpattern.io/administration/write-panel panel from that point on, which is the default panel under the **Content** region.
