@@ -73,12 +73,15 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 |_. "Preferences":http://docs.textpattern.io/administration/preferences-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 |_. "Users":http://docs.textpattern.io/administration/users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
 |_. "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. **Extensions**[4] | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 
 notextile. </div>
 
 fn2. You may also install and use the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin to more easily visualize what a given role can see and do in the administration side. However it's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
 
 fn3. In 4.6, Freelancers will only be able to see their own articles, and those of other accounts that have "Live" status.
+
+fn4. **Extensions** may have various admin-side plugin panels, depending on what plugins are installed in a given site, but roles are treated at the region level.
 
 h2(#sec3). Limited access specifications
 
