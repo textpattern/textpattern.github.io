@@ -32,7 +32,7 @@ On this page:
 
 h2(#sec1). Login location
 
-Users typically install Textpattern in the root location of a website's domain because they intend to run the entire website with the CMS. This puts the login location at __domain.tld/textpattern__.[1] If you install Textpattern in a sub-directory, the login location would reflect that, one level down (__domain.tld/sub-directory/textpattern__).
+The typical admin login location for a new install of Textpattern is at __domain.tld/textpattern__.[1] If you install Textpattern in a sub-directory, the login location would reflect that, (__domain.tld/sub-directory/textpattern__).
 
 fn1. See "Textpattern security":http://docs.textpattern.io/administration/security if you're worried about the login location being common knowledge.
 
@@ -46,7 +46,7 @@ fn3. Not all administration-side plugins use the **Extensions** region. Some wil
 
 h3(#sec2-1). Content
 
-The **Content** region of Textpattern has seven panels out-of-the-box.
+The **Content** region of the administration side has seven panels out-of-the-box, of which the **Write** panel is the default.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
@@ -65,15 +65,15 @@ fn4. In Textpattern 4.6, when the "Accept comments?" preference is set to "No" i
 
 h3(#sec2-2). Presentation
 
-The **Presentation** region of the administration side has four panels out-of-the-box.
+The **Presentation** region of the administration side has four panels out-of-the-box, of which the **Pages** panel is the default.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. What you see and do there |
-| **Forms**[5] | Provides form creation and form management functionality. (Not _web forms_, but Textpattern forms.) |
-| **Pages** (default) | [todo] |
-| **Sections** | [todo] |
-| **Styles** | [todo] |
+| **Forms**[5] | Provides a list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" **Article** form type displays by default. |
+| **Pages** (default) | Provides a list of HTML page templates and functionality to create and manage them. The "default" page displays by default. |
+| **Sections** | Provides a table listing of sections and functionality to create and manage them. |
+| **Styles** | Provides a list of CSS style files and functionality to create and manage them. The "default" style displays by default. |
 
 notextile. </div>
 
@@ -81,20 +81,22 @@ fn5. "Forms" may one day be renamed to "Partials" to better suggest their nature
 
 h3(#sec2-3). Admin
 
-The **Admin** region of the administration side has seven panels out-of-the-box.
+The **Admin** region of the administration side has seven panels out-of-the-box, of which the **Users** panel is the default.
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. What you see and do there |
-| "**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel | [todo] |
-| **Import** | [todo] |
-| **Languages** (Update languages)[5] | [todo] |
-| "**Plugins**":http://docs.textpattern.io/administration/plugins-panel | [todo] |
-| **Preferences** (basic/advanced)[5] | [todo] |
-| "**Users**":http://docs.textpattern.io/administration/users-panel (default) | [todo] |
-| "**Visitor logs**":http://docs.textpattern.io/administration/visitor-logs-panel | [todo] |
+| "**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel | Provides feedback messages and data displays to troubleshoot any system problems. |
+| **Import** | Provides functionality to import data from another publishing system. |
+| **Languages** (Update languages)[5] | Provides a list of language packs and the ability to update them. |
+| "**Plugins**":http://docs.textpattern.io/administration/plugins-panel | Provides a table listing of installed plugins, and functionality to manage them. |
+| **Preferences** (basic/advanced)[5] | Provides all configurable settings to make your site function correctly and as desired. |
+| "**Users**":http://docs.textpattern.io/administration/users-panel (default) | Provides a table listing of all user accounts, and the functionality to manage them. |
+| "**Visitor logs**":http://docs.textpattern.io/administration/visitor-logs-panel | Provides a display of all site traffic. |
 
 notextile. </div>
+
+Examples of plugins that add additional panel options to the **Admin** region include smd_faux_role and wet_snitch.
 
 fn5. The current version of Textpattern has a tertiary level of panels under the **Preferences** link: **Basic** (default), **Advanced**, and **Update languages**. Beginning with Textpattern 4.6, the **Basic** and **Advanced** panels will merge into a single, functional **Preferences** panel, and **Update languages** will become a new panel called **Languages** under the **Admin** region. The tree above shows the new 4.6 organization.
 
