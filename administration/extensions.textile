@@ -50,6 +50,6 @@ h2. Unconventional panel placement
 
 The use of the **Extensions** region is a convention adopted by plugin developers to put administration-side plugin preferences and other functional controls in a logical place, and that's a good thing when it can be done. 
 
-Not all administration-side plugins use the **Extensions** region, however. Some will add their associated admin-side functionality as a panel in one of the other core regions. This may happen when panel placement is decided with respect to functional context over convention. Another reason may be a concern for having too many plugin panels under the **Extensions** region, though this is likely a moot issue for most Textpattern users. 
+Not all administration-side plugins use the **Extensions** region, however. Some plugins will add their associated admin-side panel in one of the core regions. This may happen when panel placement is decided with respect to functional context over convention. Another reason may be a concern for having too many plugin panels under the **Extensions** region, though this is likely a moot issue for most Textpattern users. 
 
 Either way, it can be a little confusing when your hunting for plugin panel functionality and it's not where you expect it to be. The issue is still evolving and plugin developers will likely settle on a standard process eventually, as well on a convention for creating plugin panel labels.
