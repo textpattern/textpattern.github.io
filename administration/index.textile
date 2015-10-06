@@ -14,7 +14,7 @@ tags:
 
 h1. Textpattern administration
 
-The administration side of Textpattern (often called "admin-side") is where the site administrator -- and any "users":admin/users-panel having sufficient rights -- configures and manages the website's content, architecture, presentation, and behaviour (excluding what might need done via the web or database servers).
+The administration side of Textpattern is where you, and any "users":admin/users-panel having sufficient "privileges":http://docs.textpattern.io/administration/user-roles-and-privileges, configures and manages the website's content, architecture, presentation, and behaviour (excluding what might need done via the web or database servers).
 
 On this page:
 
@@ -42,7 +42,7 @@ h3(#sec2-1). Content
 
 The **Content** region of the administration side has seven panels out-of-the-box, of which the **Write** panel is the default.
 
-notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. What the panel provides you |
 | **Articles** | A table listing of all articles, and the ability to open one in full-edit mode in context of the **Write** panel. |
@@ -61,7 +61,7 @@ h3(#sec2-2). Presentation
 
 The **Presentation** region of the administration side has four panels out-of-the-box, of which the **Pages** panel is the default.
 
-notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. What the panel provides you |
 | **Forms**[3] | A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" **Article** form type displays by default. |
@@ -77,7 +77,7 @@ h3(#sec2-3). Admin
 
 The **Admin** region of the administration side has seven panels out-of-the-box, of which the **Users** panel is the default.
 
-notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. What the panel provides you |
 | "**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel | Feedback messages and data displays to troubleshoot system problems. |
