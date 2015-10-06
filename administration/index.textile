@@ -50,7 +50,7 @@ The **Content** region of the administration side has seven panels out-of-the-bo
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. |_. What you see and do on this panel |
+| |_. What you see and do on this panel |
 | **Articles** | Provides a table listing of all articles, and the ability to open one in full-edit mode in context of the **Write** panel. |
 | **Categories** | Provides functionality to create and manage topic categories for articles, images, links, and files. |
 | **Comments**[3] | Provides a table of all article comments received, and functionality to manage edit them. |
@@ -69,7 +69,7 @@ The **Presentation** region of the administration side has four panels out-of-th
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. |_. What you see and do on this panel |
+| |_. What you see and do on this panel |
 | **Forms**[4] | Provides a list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" **Article** form type displays by default. |
 | **Pages** (default) | Provides a list of HTML page templates and functionality to create and manage them. The "default" page displays by default. |
 | **Sections** | Provides a table listing of sections and functionality to create and manage them. |
@@ -85,7 +85,7 @@ The **Admin** region of the administration side has seven panels out-of-the-box,
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. |_. What you see and do on this panel |
+| |_. What you see and do on this panel |
 | "**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel | Provides feedback messages and data displays to troubleshoot system problems. |
 | **Import** | Provides functionality to import data from another publishing system. |
 | **Languages** (Update languages)[5] | Provides a list of language packs and the ability to update them. |
