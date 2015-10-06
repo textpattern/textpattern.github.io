@@ -100,9 +100,7 @@ fn4. The current version of Textpattern has a tertiary level of panels under the
 
 h3(#sec2-4). Extensions (not core)
 
-The "**Extensions**":http://docs.textpattern.io/administration/extensionswill region is not an out-of-the-box feature of Textpattern, but it will appear to site administrators and Publishers if any of the admin-side plugins that make use of it are installed. 
-
-The following table shows a few examples of admin-side plugins that use the **Extensions** region. This is not a complete list, nor trying to be; it's for demonstration purposes only.[5] If a plugin provides an **Extensions** panel, it will be indicated in the associated plugin instructions.  
+The "**Extensions**":http://docs.textpattern.io/administration/extensionswill region is not an out-of-the-box feature of Textpattern, but it will appear to site administrators and Publishers if any of the admin-side plugins that make use of it are installed. The following table shows a few examples of admin-side plugins that use the **Extensions** region. This is not a complete list, nor trying to be; it's for demonstration purposes only.[5] If a plugin provides an **Extensions** panel, it will be indicated in the associated plugin instructions.  
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
