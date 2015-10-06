@@ -114,7 +114,7 @@ notextile. </div>
 
 The use of the **Extensions** region is basically a convention adopted by plugin developers to put administration-side plugin preferences and other functional controls in a logical place. Not all administration-side plugins use the **Extensions** region, however. Some will add their associated admin-side functionality as a panel in one of the other core regions. This typically happens when the plugin developer feels the functionality more closely associates with _content_, _presentation_, or _admin_ functionality.[6] 
 
-fn5. Plugin developers should follow Textpattern's "editorial style guidelines":http://docs.textpattern.io/brand/editorial-style-guidelines for UI elements to ensure their plugins produce UI elements that are consistent with Textpattern's core presentation. With respect to UI titles, headings, and labels this means using sentence-case (not capital-case or "code_case"). In the table above, for example, the labels "arc_redirect" and "Plugin Composer" should be "Redirects" (or "URL redirects") and "Plugin composer", respectively. You are encouraged to let plugin developers know (by posting in the appropriate "plugin support threads":http://forum.textpattern.com/viewforum.php?id=79) when the appearance of their plugins' UI elements are not conventional.  
+fn5. Plugin developers should follow Textpattern's "editorial style guidelines":http://docs.textpattern.io/brand/editorial-style-guidelines for UI elements to ensure their plugins produce UI elements that are consistent with Textpattern's core presentation. With respect to UI titles, headings, and labels this means not using abbreviations, and using sentence-case (not capital-case or "code_case"). In the table above, for example, the labels "arc_redirect", "Plugin Composer", and "Bio config" should be "Redirects" (or "URL redirects"), "Plugin composer", and "Bio configuration", respectively. You are encouraged to let plugin developers know (by posting in the appropriate "plugin support threads":http://forum.textpattern.com/viewforum.php?id=79) when the appearance of their plugins' UI elements are not conventional.  
 
 fn6. Another reason plugin panels end up in core regions is concern for the potential of having too many plugin panels under the **Extensions** region. Most likely this is an unwarranted concern for 99% of Textpattern's users. Either way, it can be a little confusing if you're expecting to find plugin functionality under **Extensions** but it's mixed in with the core panels. The issue is still evolving and will likely end up at a more regimented process for plugin developers.  
 
@@ -128,9 +128,9 @@ Unless you change it at the initial installation screen, British English is the 
 
 First you load the language you need by clicking the "Install" link for it. You can add as many as you want, but there's no point adding any you can't read. A green confirmation message will flash at bottom of your browser window after each install action. 
 
-Then you override the current default by selecting the new language you want from the "Current active language" selection menu at top of the languages table.[6]
+Then you override the current default by selecting the new language you want from the "Current active language" selection menu at top of the languages table.[7]
 
-fn6. You'll need to click the **Save** button in Textpattern 4.5.7, but in 4.6 no save is necessary, the language change applies automatically.
+fn7. You'll need to click the **Save** button in Textpattern 4.5.7, but in 4.6 no save is necessary, the language change applies automatically.
 
 h3(#3-2). Configure site identity and publishing behaviour
 
@@ -164,7 +164,7 @@ h2(#sec4). Changing default login panel
 
 The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the "**Write**":http://docs.textpattern.io/administration/write-panel panel from that point on, which is the default panel under the **Content** region.
 
-You can change the default landing panel to whatever admin-side panel you want. In "**Preferences**":http://docs.textpattern.io/administration/preferences-panel, look under the **Admin** area for "Default administration panel".[7] Use the drop-down menu to select the panel you want, then save.
+You can change the default landing panel to whatever admin-side panel you want. In "**Preferences**":http://docs.textpattern.io/administration/preferences-panel, look under the **Admin** area for "Default administration panel".[8] Use the drop-down menu to select the panel you want, then save.
 
-fn7. The current preference label is, "Default admin tab". Beginning with version 4.6 the label will become "Default administration panel", which is a normalization against "Textpattern guidelines":http://docs.textpattern.io/brand/.
+fn8. The current preference label is, "Default admin tab". Beginning with version 4.6 the label will become "Default administration panel", which is a normalization against "Textpattern guidelines":http://docs.textpattern.io/brand/.
 
