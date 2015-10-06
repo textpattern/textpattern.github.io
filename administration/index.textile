@@ -81,10 +81,10 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. What the panel provides you |
 | "**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel | Feedback messages and data displays to troubleshoot system problems. |
-| **Import** | Functionality to import data from another publishing system. |
-| **Languages** (Update languages)[4] | A list of language packs and the ability to update them. |
+| "**Import**":http://docs.textpattern.io/administration/import-panel | Functionality to import data from another publishing system. |
+| "**Languages**":http://docs.textpattern.io/administration/languages-panel (Update languages)[4] | A list of language packs and the ability to update them. |
 | "**Plugins**":http://docs.textpattern.io/administration/plugins-panel | A table listing of installed plugins, and functionality to manage them. |
-| **Preferences** (basic/advanced)[4] | All configurable settings to make your site function correctly and as desired. |
+| "**Preferences**":http://docs.textpattern.io/administration/preferences-panel (basic/advanced)[4] | All configurable settings to make your site function correctly and as desired. |
 | "**Users**":http://docs.textpattern.io/administration/users-panel (default) | A table listing of all user accounts and the functionality to manage them. |
 | "**Visitor logs**":http://docs.textpattern.io/administration/visitor-logs-panel | A display of all site traffic. |
 
