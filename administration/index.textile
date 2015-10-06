@@ -48,14 +48,14 @@ The **Content** region of the administration side has seven panels out-of-the-bo
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-| |_. What you see and do on this panel |
-| **Articles** | Provides a table listing of all articles, and the ability to open one in full-edit mode in context of the **Write** panel. |
-| **Categories** | Provides functionality to create and manage topic categories for articles, images, links, and files. |
-| **Comments**[2] | Provides a table of all article comments received, and functionality to manage edit them. |
-| **Files** | Provides a table listing of all files uploaded and functionality to manage them. |
-| **Images** | Provides a table listing of all images uploaded, and functionality to manage them. |
-| **Links** | Provides a table listing of all links uploaded and functionality to manage them. |
-| **Write** (default) | Provides article editing fields and controls; is the primary content editor in Textpattern. |
+| |_. What the panel provides you |
+| **Articles** | A table listing of all articles, and the ability to open one in full-edit mode in context of the **Write** panel. |
+| **Categories** | Functionality to create and manage topic categories for articles, images, links, and files. |
+| **Comments**[2] | A table of all article comments received, and functionality to manage edit them. |
+| **Files** | A table listing of all files uploaded and functionality to manage them. |
+| **Images** | A table listing of all images uploaded, and functionality to manage them. |
+| **Links** | A table listing of all links uploaded and functionality to manage them. |
+| **Write** (default) | Article editing fields and controls; is the primary content editor in Textpattern. |
 
 notextile. </div>
 
@@ -67,11 +67,11 @@ The **Presentation** region of the administration side has four panels out-of-th
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-| |_. What you see and do on this panel |
-| **Forms**[3] | Provides a list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" **Article** form type displays by default. |
-| **Pages** (default) | Provides a list of HTML page templates and functionality to create and manage them. The "default" page displays by default. |
-| **Sections** | Provides a table listing of sections and functionality to create and manage them. |
-| **Styles** | Provides a list of CSS style files and functionality to create and manage them. The "default" style displays by default. |
+| |_. What the panel provides you |
+| **Forms**[3] | A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" **Article** form type displays by default. |
+| **Pages** (default) | A list of HTML page templates and functionality to create and manage them. The "default" page displays by default. |
+| **Sections** | A table listing of sections and functionality to create and manage them. |
+| **Styles** | A list of CSS style files and functionality to create and manage them. The "default" style displays by default. |
 
 notextile. </div>
 
@@ -83,14 +83,14 @@ The **Admin** region of the administration side has seven panels out-of-the-box,
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-| |_. What you see and do on this panel |
-| "**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel | Provides feedback messages and data displays to troubleshoot system problems. |
-| **Import** | Provides functionality to import data from another publishing system. |
-| **Languages** (Update languages)[4] | Provides a list of language packs and the ability to update them. |
-| "**Plugins**":http://docs.textpattern.io/administration/plugins-panel | Provides a table listing of installed plugins, and functionality to manage them. |
-| **Preferences** (basic/advanced)[4] | Provides all configurable settings to make your site function correctly and as desired. |
-| "**Users**":http://docs.textpattern.io/administration/users-panel (default) | Provides a table listing of all user accounts, and the functionality to manage them. |
-| "**Visitor logs**":http://docs.textpattern.io/administration/visitor-logs-panel | Provides a display of all site traffic. |
+| |_. What the panel provides you |
+| "**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel | Feedback messages and data displays to troubleshoot system problems. |
+| **Import** | Functionality to import data from another publishing system. |
+| **Languages** (Update languages)[4] | A list of language packs and the ability to update them. |
+| "**Plugins**":http://docs.textpattern.io/administration/plugins-panel | A table listing of installed plugins, and functionality to manage them. |
+| **Preferences** (basic/advanced)[4] | All configurable settings to make your site function correctly and as desired. |
+| "**Users**":http://docs.textpattern.io/administration/users-panel (default) | A table listing of all user accounts, and the functionality to manage them. |
+| "**Visitor logs**":http://docs.textpattern.io/administration/visitor-logs-panel | A display of all site traffic. |
 
 notextile. </div>
 
