@@ -46,10 +46,10 @@ fn1. Plugin developers should follow Textpattern's "editorial style guidelines":
 
 fn2. Similar functionality as provided by this plugin will be in core after Textpattern 4.6 or the version after.
 
-h2. Those _other_ admin-side plugins
+h2. Unconventional panel placement
 
 The use of the **Extensions** region is basically a convention adopted by plugin developers to put administration-side plugin preferences and other functional controls in a logical place, and that's a good thing when it can be done. 
 
-Not all administration-side plugins use the **Extensions** region, however. Some will add their associated admin-side functionality as a panel in one of the other core regions. This typically happens when decide on panel placement by functional context over convention. Another reason plugin panels end up somewhere else is concern for having too many plugin panels **Extensions**. Most likely this is a moot issue for 99% of Textpattern's users, thus not a warranted reason at all. 
+Not all administration-side plugins use the **Extensions** region, however. Some will add their associated admin-side functionality as a panel in one of the other core regions. This typically happens when panel placement is decided on by functional context over convention. Another reason plugin panels end up somewhere else is concern for having too many plugin panels under the **Extensions** region. Most likely this is a moot issue for 99% of Textpattern users, thus not a warranted reason at all. 
 
-Either way, it can be a little confusing when your hunting for plugin panel functionality and it's not where you expect it to be. The issue is still evolving and will likely settle on a standard process eventually, as well on a panel label naming convention.
+Either way, it can be a little confusing when your hunting for plugin panel functionality and it's not where you expect it to be. The issue is still evolving and plugin developers will likely settle on a standard process eventually, as well on a convention for creating plugin labels.
