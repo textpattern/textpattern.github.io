@@ -36,7 +36,7 @@ The typical admin login location for a new install of Textpattern is at __domain
 
 fn1. See "Textpattern security":http://docs.textpattern.io/administration/security if you're worried about the login location being common knowledge.
 
-h2(#sec2). Administration-side panel organization
+h2(#sec2). Administration regions and panels
 
 The administration side is organized into three primary regions: **Content**, **Presentation**, and **Admin**. Each region has a set of working panels, one of which serves as the default for when the primary region link is clicked.
 
@@ -75,7 +75,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 
 notextile. </div>
 
-fn3. "Forms" may one day be renamed to "Partials" to better suggest their nature, but core developers have made it clear the change is not on their list of priorities. 
+fn3. "Forms" may one day be renamed to "Partials" to better suggest their nature, but core developers have made it clear the change is not on their list of priorities due to the amount of work it would take to edit the core. Patches are probably welcome from the community. 
 
 h3(#sec2-3). Admin
 
@@ -89,7 +89,7 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | **Languages** (Update languages)[4] | A list of language packs and the ability to update them. |
 | "**Plugins**":http://docs.textpattern.io/administration/plugins-panel | A table listing of installed plugins, and functionality to manage them. |
 | **Preferences** (basic/advanced)[4] | All configurable settings to make your site function correctly and as desired. |
-| "**Users**":http://docs.textpattern.io/administration/users-panel (default) | A table listing of all user accounts, and the functionality to manage them. |
+| "**Users**":http://docs.textpattern.io/administration/users-panel (default) | A table listing of all user accounts and the functionality to manage them. |
 | "**Visitor logs**":http://docs.textpattern.io/administration/visitor-logs-panel | A display of all site traffic. |
 
 notextile. </div>
