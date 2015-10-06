@@ -106,7 +106,7 @@ The following table shows a few examples of admin-side plugins that use the **Ex
 
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
-|_. Plugin name |_. Extensions panel label |
+|_. Plugin |_. Extensions panel label |
 | "arc_redirect":http://forum.textpattern.com/viewtopic.php?id=36705 | arc_redirect |
 | "ied_plugin_composer":http://forum.textpattern.com/viewtopic.php?id=14898 | Plugin Composer |
 | "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 | Bio config |
