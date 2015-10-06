@@ -92,7 +92,7 @@ notextile. </div>
 
 Examples of plugins that add additional panel options to the **Admin** region include smd_faux_role and wet_snitch.
 
-fn4. The current version of Textpattern has a tertiary level of panels under the **Preferences** link: **Basic** (default), **Advanced**, and **Update languages**. Beginning with Textpattern 4.6, the **Basic** and **Advanced** panels will merge into a single, functional **Preferences** panel, and **Update languages** will become a new panel called **Languages** under the **Admin** region. The tree above shows the new 4.6 organization.
+fn4. The current version of Textpattern has a tertiary level of panels under the **Preferences** link: **Basic** (default), **Advanced**, and **Update languages**. Beginning with Textpattern 4.6, the **Basic** and **Advanced** panels will merge into a single, functional **Preferences** panel, and **Update languages** will become a new panel called **Languages** under the **Admin** region. The **Admin** panel list above shows the new 4.6 options.
 
 h3(#sec2-4). Extensions (not core)
 
