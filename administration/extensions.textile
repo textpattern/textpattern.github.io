@@ -44,7 +44,7 @@ notextile. </div>
 
 fn1. Plugin developers should follow Textpattern's "editorial style guidelines":http://docs.textpattern.io/brand/editorial-style-guidelines for UI elements to ensure their plugins elements have consistent appearance with Textpattern's core presentation. With respect to UI titles, headings, and labels this means 1) not using abbreviations, and 2) using sentence-case (not capital-case or "code_case"). In the table above, for example, the labels "arc_redirect", "Plugin Composer", and "Bio config" would ideally be "URL redirects" (to distinguish it from the label for smd_redirects), "Plugin composer", and "Bio configuration", respectively. You are encouraged to let plugin developers know (by posting in the appropriate "plugin support threads":http://forum.textpattern.com/viewforum.php?id=79) when the appearance of their plugins' UI elements are not satisfying the expected convention.
 
-fn2. Similar functionality as provided by this plugin will be in core after Textpattern 4.6 or the version after.
+fn2. This plugin provides functionality that may arrive in core by Textpattern version 4.6 or the version after.
 
 h2. Unconventional panel placement
 
