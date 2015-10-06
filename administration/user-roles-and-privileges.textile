@@ -73,7 +73,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 |_. "Preferences":http://docs.textpattern.io/administration/preferences-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 |_. "Users":http://docs.textpattern.io/administration/users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
 |_. "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. **Extensions**[4] | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. ["Extensions":http://docs.textpattern.io/administration/extensions][4] | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 
 notextile. </div>
 
