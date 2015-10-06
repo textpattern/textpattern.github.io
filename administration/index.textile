@@ -32,7 +32,7 @@ On this page:
 
 h2(#sec1). Login location
 
-The typical admin login location for a new install of Textpattern is at __domain.tld/textpattern__.[1] If you install Textpattern in a sub-directory, the login location would reflect that, (__domain.tld/sub-directory/textpattern__).
+The typical admin login location for a new install of Textpattern is at __domain.tld/textpattern__.[1] If you install Textpattern in a subdirectory, the login location would reflect that as __domain.tld/subdirectory/textpattern__.
 
 fn1. See "Textpattern security":http://docs.textpattern.io/administration/security if you're worried about the login location being common knowledge.
 
