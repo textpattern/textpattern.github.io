@@ -51,7 +51,7 @@ The **Content** region of the administration side has seven panels out-of-the-bo
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. What you see and do there |
-| **Articles** | Provides a table listing of all "articles", which can be filtered by various column data types. Clicking a given article title opens the article in context of the **Write** panel, in full edit mode. |
+| **Articles** | Provides a table listing of all "articles", and the ability to open one in full-edit mode in context of the **Write** panel. |
 | **Categories** | Provides functionality to create and manage topic categories for articles, images, links, and files. |
 | **Comments**[4] | Provides a table of all article comments received, and functionality to manage edit them. |
 | **Files** | Provides a table listing of all files uploaded and functionality to manage them. |
@@ -86,7 +86,7 @@ The **Admin** region of the administration side has seven panels out-of-the-box,
 notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Panel |_. What you see and do there |
-| "**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel | Provides feedback messages and data displays to troubleshoot any system problems. |
+| "**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel | Provides feedback messages and data displays to troubleshoot system problems. |
 | **Import** | Provides functionality to import data from another publishing system. |
 | **Languages** (Update languages)[5] | Provides a list of language packs and the ability to update them. |
 | "**Plugins**":http://docs.textpattern.io/administration/plugins-panel | Provides a table listing of installed plugins, and functionality to manage them. |
