@@ -12,12 +12,14 @@ tags:
 
 h1. User roles and privileges
 
-In addition to the administrator (the most powerful type of Textpattern account), several pre-defined user roles are provided for in Textpattern out-of-the-box. Each role has an associated set of administration privileges that are meant to help with leveraging the different responsibilities in a collaborative publishing workflow. If you're building a Textpattern website for yourself (single user), you wouldn't need to concern yourself with these roles. But if you're building a platform to support multi-user contributions, user roles and privileges may be an important factor in your publishing architecture design.
+In addition to the administrator (the most powerful type of Textpattern account), several pre-defined user roles are provided for in Textpattern out-of-the-box. Each role has an associated set of administration privileges that are meant to help with leveraging the different responsibilities in a collaborative publishing workflow. If you're building a Textpattern website for yourself (single user), you wouldn't be concerned with these roles. But if you're building a platform to support multi-user contributions, user roles and privileges are likely important factors in your publishing architecture design.
 
 On this page:
 
 * "Account classifications versus roles":#sec1
-* "Panel access per publishing role":#sec2
+* "Panels access per publishing role":#sec2
+** "Core panels access":#sec2-1
+** "Extended panels access":#sec2-2
 * "Limited access specifications":#sec3
 ** "Publisher":#sec3-1
 ** "Managing Editor":#sec3-2
@@ -40,14 +42,22 @@ Finally there are (potentially) *frozen accounts*, which have the status of "Non
 
 fn1. The "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 and "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 plugins can be installed and used to expand user account data and produce published bios or user profiles generated from the expanded data.
 
-h2(#sec2). Panel access per publishing role
+h2(#sec2). Panels access per publishing role
 
-The following table shows all account types versus access to administration panels and functionality, with emphasis on the six publishing roles (from Publisher to Designer):[2]
+The following tables show all account types versus access to the administration panels and functionality, with emphasis on the six publishing roles (from Publisher to Designer).[2] The following legend applies in each case:
 
 * %(success)Full% means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case by clicking the panel name. 
 * %(warning)Limited% means the account or role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
 * %(error)Blocked% means the account or role has no panel access and can not see the panel link in the administration UI. (For accounts with "None" status, the account cannot be used at all.)
 * %(information)Limited/Blocked in 4.6% means the role has full or limited access in the current stable release (4.5.7) but will be limited or blocked, accordingly, in the next 4.6 release.
+
+fn2. You may also install and use the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin to more easily visualize what a given role can see and do in the administration side. It's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
+
+h3(#sec2-1). Core panels access
+
+Table 1 focuses specifically on the core (out-of-the-box) administration regions (**Content**, **Presentation**, and **Admin**) and their respective panels.
+
+**Table 1. Core panels access per role. (See legend above.)**
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
@@ -73,15 +83,24 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 |_. "Preferences":http://docs.textpattern.io/administration/preferences-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 |_. "Users":http://docs.textpattern.io/administration/users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
 |_. "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. ["Extensions":http://docs.textpattern.io/administration/extensions][4] | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 
 notextile. </div>
 
-fn2. You may also install and use the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin to more easily visualize what a given role can see and do in the administration side. However it's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
-
 fn3. In 4.6, Freelancers will only be able to see their own articles, and those of other accounts that have "Live" status.
 
-fn4. **Extensions** may have various admin-side plugin panels, depending on what plugins are installed in a given site, but roles are treated at the region level.
+h3(#sec2-2). Extended panels access
+
+Table 2 represents the two administration regions that you may see when installing certain admin-side plugins. The regions are **Home** and **Extensions**, and their respective panels. Unlike with core regions and panels, the panels of the extended regions are not treated individually, rather roles are treated at the region level. A given role will either have access to the regions (thus all their panels) or won't see them all. The respective panels one might see in these regions depend on which plugins are installed that make use of them. Most likely anyone with Publisher and Managing Editor roles will see the **Extensions** region eventually because so many useful admin-side plugins make use of it.
+
+**Table 2. Extended panels access per role. (See legend above.)**
+
+notextile. <div itemscope itemtype="http://schema.org/Table">
+
+| |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
+|_. ["Home":http://docs.textpattern.io/administration/home-region] | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. ["Extensions":http://docs.textpattern.io/administration/extensions-region] | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+
+notextile. </div>
 
 h2(#sec3). Limited access specifications
 

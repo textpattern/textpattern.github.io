@@ -36,7 +36,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 | "smd_admin_themes":http://forum.textpattern.com/viewtopic.php?id=30952 | ? |
 | "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496 | Bio config |
 | "smd_redirect":https://github.com/Bloke/smd_redirect | Redirects |
-| "smd_tags":http://forum.textpattern.com/viewtopic.php?id=28621 | ? |
+| "smd_tags":http://forum.textpattern.com/viewtopic.php?id=28621 | smd_tags |
 | "smd_where_used":http://textpattern.org/plugins/984/smd_where_used | Where used |
 | "tru_tags":http://forum.textpattern.com/viewtopic.php?id=15084 | ? |
 

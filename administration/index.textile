@@ -19,12 +19,14 @@ The administration side of Textpattern is where you, and any "users":admin/users
 On this page:
 
 * "Login location":#sec1
-* "Admin-side organization":#sec2
+* "Core administration regions and panels":#sec2
 ** "Content":#sec2-1
 ** "Presentation":#sec2-2
 ** "Admin":#sec2-3
-** "Extensions":#sec2-4
-* "Changing default login panel":#sec3
+* "Extended administration regions":#sec3
+** "Home (Start)":#sec3-1
+** "Extensions":#sec3-2
+* "Changing default login panel":#sec4
 
 h2(#sec1). Login location
 
@@ -32,11 +34,9 @@ The typical admin login location for a new install of Textpattern is at __domain
 
 fn1. See "Textpattern security":http://docs.textpattern.io/administration/security if you're worried about the login location being common knowledge.
 
-h2(#sec2). Administration regions and panels
+h2(#sec2). Core administration regions and panels
 
 The administration side is organized into three primary regions: **Content**, **Presentation**, and **Admin**. Each region has a set of working panels, one of which serves as the default for when the primary region link is clicked.
-
-There is a fourth region, **Extensions**, that does not exist out-of-the-box, but it's worth describing here along with the core regions because you are likely to see it eventually. 
 
 h3(#sec2-1). Content
 
@@ -94,11 +94,19 @@ Examples of plugins that add additional panel options to the **Admin** region in
 
 fn4. The current version of Textpattern has a tertiary level of panels under the **Preferences** link: **Basic** (default), **Advanced**, and **Update languages**. Beginning with Textpattern 4.6, the **Basic** and **Advanced** panels will merge into a single, functional **Preferences** panel, and **Update languages** will become a new panel called **Languages** under the **Admin** region. The **Admin** panel list above shows the new 4.6 options.
 
-h3(#sec2-4). Extensions (not core)
+h2(#sec3). Extended administration regions
 
-The "**Extensions**":http://docs.textpattern.io/administration/extensions region is not an out-of-the-box feature of Textpattern. It only appears to the higher "user roles":http://docs.textpattern.io/administration/user-roles-and-privileges if any of the admin-side plugins that make use of it are installed.
+There are also two extended regions (not out-of-the-box) -- **Home** and **Extensions** -- which appear to the higher "user roles":http://docs.textpattern.io/administration/user-roles-and-privileges if any of the admin-side plugins that make use of them are installed. These regions are not core features, but are worth describing here because they become part of the administration's navigation when relevant.
 
-h2(#sec3). Changing default login panel
+h3(#sec3-1). Home (Start)
+
+The "**Home**":http://docs.textpattern.io/administration/home-region is associated with dashboard development for multi-user websites. If you're not building a multi-user website, you will not be concerned with this, and even then you may not need the plugins that make this region appear.   
+
+h3(#sec3-2). Extensions
+
+The "**Extensions**":http://docs.textpattern.io/administration/extensions-region region is likely one you will see, eventually, because several useful plugins make use of it.
+
+h2(#sec4). Changing default login panel
 
 The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the "**Write**":http://docs.textpattern.io/administration/write-panel panel from that point on, which is the default panel under the **Content** region.
 
