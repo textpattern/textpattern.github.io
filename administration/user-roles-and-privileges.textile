@@ -104,7 +104,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-fn4. While these rights of access per role are indicated at the region level here, it is possible that a given plugin introduces finer rights control, which would alter the access pattern suggested in Table 2. For example, a developer may design an admin-side plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a configuration panel under **Extensions**, then those two lower user roles will see the **Extensions** region and that particular plugin panel only, and the panel would have a limited flag on it. 
+fn4. While these rights of access per role are indicated at the region level here, it is possible that a given plugin introduces finer rights control, which would alter the access pattern suggested in Table 2. For example, a developer may design an admin-side plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a configuration panel under **Extensions**, then those two lower user roles will see the **Extensions** region and that particular plugin panel only. 
 
 h2(#sec3). Limited access specifications
 
