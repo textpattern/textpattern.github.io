@@ -63,28 +63,28 @@ Table 1 focuses specifically on the core (out-of-the-box) administration regions
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-| |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
+| |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
 |\9. **Content** |
-|_. "Articles":http://docs.textpattern.io/administration/articles-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(information)Limited in 4.6%[3] | %(success)Full% | %(error)Blocked% |
-|_. "Categories":http://docs.textpattern.io/administration/categories-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Comments":http://docs.textpattern.io/administration/comments-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Files":files-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% | %(information)Blocked in 4.6% | %(error)Blocked% |
-|_. "Images":http://docs.textpattern.io/administration/images-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
-|_. "Links":http://docs.textpattern.io/administration/links-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Write":http://docs.textpattern.io/administration/write-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
+|_. "Articles":http://docs.textpattern.io/administration/articles-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(information)Limited in 4.6%[3] | %(success)Full% | %(error)Blocked% |
+|_. "Categories":http://docs.textpattern.io/administration/categories-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Comments":http://docs.textpattern.io/administration/comments-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Files"::http://docs.textpattern.io/administration/files-panel | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% | %(information)Blocked in 4.6% | %(error)Blocked% |
+|_. "Images":http://docs.textpattern.io/administration/images-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Links":http://docs.textpattern.io/administration/links-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Write":http://docs.textpattern.io/administration/write-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
 |\9. **Presentation** |
-|_. "Forms":forms-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
-|_. "Pages":http://docs.textpattern.io/administration/pages-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
-|_. "Sections":http://docs.textpattern.io/administration/sections-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(information)Blocked in 4.6% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
-|_. "Styles":http://docs.textpattern.io/administration/styles-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Forms":http://docs.textpattern.io/administration/forms-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Pages":http://docs.textpattern.io/administration/pages-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Sections":http://docs.textpattern.io/administration/sections-panel | %(success)Full% | %(success)Full% | %(information)Blocked in 4.6% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
+|_. "Styles":http://docs.textpattern.io/administration/styles-panel | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(success)Full% | %(error)Blocked% |
 |\9. **Admin** |
-|_. "Diagnostics":http://docs.textpattern.io/administration/diagnostics-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Import":http://docs.textpattern.io/administration/import-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Languages":http://docs.textpattern.io/administration/languages-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Plugins":http://docs.textpattern.io/administration/plugins-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Preferences":http://docs.textpattern.io/administration/preferences-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Users":http://docs.textpattern.io/administration/users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
-|_. "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Diagnostics":http://docs.textpattern.io/administration/diagnostics-panel | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Import":http://docs.textpattern.io/administration/import-panel | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Languages":http://docs.textpattern.io/administration/languages-panel | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Plugins":http://docs.textpattern.io/administration/plugins-panel | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Preferences":http://docs.textpattern.io/administration/preferences-panel | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Users":http://docs.textpattern.io/administration/users-panel | %(success)Full% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(warning)Limited% | %(error)Blocked% |
+|_. "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 
 notextile. </div>
 
@@ -98,9 +98,9 @@ Table 2 represents the two _extended_ regions -- **Home** and **Extensions** -- 
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
-| |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
-|_. "Home":http://docs.textpattern.io/administration/home-region | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Extensions":http://docs.textpattern.io/administration/extensions-region | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+| |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
+|_. "Home":http://docs.textpattern.io/administration/home-region | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Extensions":http://docs.textpattern.io/administration/extensions-region | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 
 notextile. </div>
 
@@ -112,11 +112,11 @@ For each publishing role having %(warning)Limited% access to a panel, the specif
 
 h3(#sec3-1). Publisher limitations
 
-Like the administrator (an account type described earlier), the Publisher is all-powerful with respect to administration-side functionality, except a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's. 
+Publishers have the same scope of rights as the administrator (an account type described earlier), except a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's. 
 
 But the administrator and Publisher don't compete. Unlike administrators, Publishers represent the top position of the editorial team, which is focused on website architecture, content, and design. Publishers may not actually work on all those things -- from a collaborative standpoint they're more a decision maker than a doer -- but they have the power in the CMS to step in and override something if necessary. 
 
-Like the administrator, however, there should only be one Publisher, functionally speaking. Anyone who needed similar rights, but not the absolute same rights, should be a Manager Editor, and so forth. 
+There should only be one Publisher, functionally speaking. Anyone who needed similar rights, but not the absolute same rights, should be a Manager Editor. 
 
 h3(#sec3-2). Managing Editor limitations
 

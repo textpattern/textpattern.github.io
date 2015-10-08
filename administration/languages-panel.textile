@@ -1,6 +1,19 @@
-\n"mininav_admin_subtabs":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs
+---
+layout: document
+category: Administration
+published: true
+title: "Languages"
+tags:
+  - Administration
+  - Admin-side
+  - Admin region
+  - Panel
+  - Configuration
+  - Languages
+  - Textpacks
+---
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:lang-prefs-tab.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:lang-prefs-tab.png
+h1. Languages
 
-This *_Languages_* view of the _Preferences_ panel is simply where you update your chosen languages file from upgrade to upgrade. The one that you activated during your initial installation of Textpattern will appear with a yellow background. You can also come here anytime to install a new language file as well, such as for multi-lingual publishing efforts.
+This **Languages** panel is where you update your chosen language pack (also called "Textpack") after installing and updating Textpattern. The language you activated during your initial installation of Textpattern will be indicated as "Up-to-date". You can also install a new language textpack here anytime, such as for multi-lingual publishing efforts.
 
