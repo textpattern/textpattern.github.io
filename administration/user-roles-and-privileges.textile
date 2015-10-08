@@ -44,12 +44,7 @@ fn1. The "smd_user_manager":http://forum.textpattern.com/viewtopic.php?id=36558 
 
 h2(#sec2). Panels access per publishing role
 
-The following tables show all account types versus access to the administration panels and functionality, with emphasis on the six publishing roles (from Publisher to Designer).[2] The following legend applies in each case:
-
-* %(success)Full% means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case by clicking the panel name. 
-* %(warning)Limited% means the account or role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
-* %(error)Blocked% means the account or role has no panel access and can not see the panel link in the administration UI. (For accounts with "None" status, the account cannot be used at all.)
-* %(information)Limited/Blocked in 4.6% means the role has full or limited access in the current stable release (4.5.7) but will be limited or blocked, accordingly, in the next 4.6 release.
+The tables in the following sections show all account types versus access to the administration panels and functionality, with emphasis on the six publishing roles (from Publisher to Designer).[2]
 
 fn2. You may also install and use the "smd_faux_role":http://forum.textpattern.com/viewtopic.php?id=33462&p=2 plugin to more easily visualize what a given role can see and do in the administration side. It's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
 
@@ -57,7 +52,14 @@ h3(#sec2-1). Core panels access
 
 Table 1 focuses specifically on the core (out-of-the-box) administration regions (**Content**, **Presentation**, and **Admin**) and their respective panels.
 
-**Table 1. Core panels access per role. (See legend above.)**
+**Legend:**
+
+* %(success)Full% means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case by clicking the panel name. 
+* %(warning)Limited% means the account or role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections. 
+* %(error)Blocked% means the account or role has no panel access and can not see the panel link in the administration UI. (For accounts with "None" status, the account cannot be used at all.)
+* %(information)Limited/Blocked in 4.6% means the role has full or limited access in the current stable release (4.5.7) but will be limited or blocked, accordingly, in the next 4.6 release.
+
+**Table 1. Core panels access per role.**
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
@@ -90,15 +92,15 @@ fn3. In 4.6, Freelancers will only be able to see their own articles, and those 
 
 h3(#sec2-2). Extended panels access
 
-Table 2 represents the two administration regions that you may see when installing certain admin-side plugins. The regions are **Home** and **Extensions**, and their respective panels. Unlike with core regions and panels, the panels of the extended regions are not treated individually, rather roles are treated at the region level. A given role will either have access to the regions (thus all their panels) or won't see them all. The respective panels one might see in these regions depend on which plugins are installed that make use of them. Most likely anyone with Publisher and Managing Editor roles will see the **Extensions** region eventually because so many useful admin-side plugins make use of it.
+Table 2 represents the two administration regions you may see -- **Home** and **Extensions**, and their respective panels -- when installing certain admin-side plugins. Unlike with core regions and panels, the panels of the extended regions are generally not treated individually, rather roles are treated at the region level.[4] A given role will either have access to the regions (thus all their panels) or won't see them all. The respective panels one might see in these regions depend on which plugins are installed that make use of them. Most likely anyone with Publisher and Managing Editor roles will see the **Extensions** region eventually because so many useful admin-side plugins make use of it.
 
 **Table 2. Extended panels access per role. (See legend above.)**
 
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
-|_. ["Home":http://docs.textpattern.io/administration/home-region][4] | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. ["Extensions":http://docs.textpattern.io/administration/extensions-region][4] | %(success)Full% | %(success)Full% | %(warning)Limited% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Home":http://docs.textpattern.io/administration/home-region | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Extensions":http://docs.textpattern.io/administration/extensions-region | %(success)Full% | %(success)Full% | %(warning)Limited% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 
 notextile. </div>
 
