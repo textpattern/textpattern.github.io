@@ -97,10 +97,12 @@ Table 2 represents the two administration regions that you may see when installi
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
-|_. ["Home":http://docs.textpattern.io/administration/home-region] | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. ["Extensions":http://docs.textpattern.io/administration/extensions-region] | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. ["Home":http://docs.textpattern.io/administration/home-region][4] | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. ["Extensions":http://docs.textpattern.io/administration/extensions-region][4] | %(success)Full% | %(success)Full% | %(warning)Limited% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 
 notextile. </div>
+
+fn4. While these rights of access per role are indicated at the region level, it is possible that a given plugin my introduce it's own finer control that alters that pattern. For example, a developer may design an admin-side plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a configuration panel under **Extensions**, then those two lower user roles will see the **Extensions** region and that particular plugin panel only. 
 
 h2(#sec3). Limited access specifications
 
@@ -121,6 +123,8 @@ Managing Editors are essentially the Publisher's right hand, a transition role f
 Managing Editors have the same privileges as Publishers throughout the administration side, with one exception:
 
 **Users** panel: They can see basic data types (Login, Real name, Email, Privileges, Last log in, etc) for all user accounts, and edit full account data for any inferior role, but cannot edit account data for Publishers or other Managing Editors.
+
+In addition to the noted panel limitation, Managing Editors don’t have as much detailed debugging info available to them either when the production status is higher. 
 
 h3(#sec3-3). Copy Editor
 
