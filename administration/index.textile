@@ -110,7 +110,7 @@ h2(#sec4). Changing default login panel
 
 The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the "**Write**":http://docs.textpattern.io/administration/write-panel panel from that point on, which is the default panel under the **Content** region.
 
-You can change the default landing panel to whatever admin-side panel you want. In "**Preferences**":http://docs.textpattern.io/administration/preferences-panel, look under the **Admin** area for "Default administration panel".[5] Use the drop-down menu to select the panel you want, then save.
+You can change the default landing panel to whichever one you want using the "Default administration panel" preference under the **Admin** area of the "**Preferences**":http://docs.textpattern.io/administration/preferences-panel panel.[5]
 
 fn5. The current preference label is, "Default admin tab". Beginning with version 4.6 the label will become "Default administration panel", which is a normalization against "Textpattern guidelines":http://docs.textpattern.io/brand/.
 
