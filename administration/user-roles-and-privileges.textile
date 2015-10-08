@@ -100,7 +100,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. Administrator |_. Publisher |_. Managing Editor |_. Copy Editor |_. Staff Writer |_. Freelancer |_. Designer |_. None |
 |_. "Home":http://docs.textpattern.io/administration/home-region | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
-|_. "Extensions":http://docs.textpattern.io/administration/extensions-region | %(success)Full% | %(success)Full% | %(warning)Limited% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
+|_. "Extensions":http://docs.textpattern.io/administration/extensions-region | %(success)Full% | %(success)Full% | %(success)Full% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% | %(error)Blocked% |
 
 notextile. </div>
 
