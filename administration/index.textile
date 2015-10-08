@@ -45,13 +45,13 @@ The **Content** region of the administration side has seven panels out-of-the-bo
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. What the panel provides you |
-| **Articles** | A table listing of all articles, and the ability to open one in full-edit mode in context of the **Write** panel. |
-| **Categories** | Functionality to create and manage topic categories for articles, images, links, and files. |
-| **Comments**[2] | A table of all article comments received and functionality to manage them. |
-| **Files** | A table listing of all files uploaded and functionality to manage them. |
-| **Images** | A table listing of all images uploaded and functionality to manage them. |
-| **Links** | A table listing of all links uploaded and functionality to manage the. |
-| **Write** (default) | Article editing fields and controls. |
+| "**Articles**":http://docs.textpattern.io/administration/articles-panel | A table listing of all articles, and the ability to open one in full-edit mode in context of the **Write** panel. |
+| "**Categories**":http://docs.textpattern.io/administration/categories-panel | Functionality to create and manage topic categories for articles, images, links, and files. |
+| ["**Comments**":http://docs.textpattern.io/administration/comments-panel][2] | A table of all article comments received and functionality to manage them. |
+| "**Files**":http://docs.textpattern.io/administration/files-panel | A table listing of all files uploaded and functionality to manage them. |
+| "**Images**":http://docs.textpattern.io/administration/images-panel | A table listing of all images uploaded and functionality to manage them. |
+| "**Links**":http://docs.textpattern.io/administration/links-panel | A table listing of all links uploaded and functionality to manage the. |
+| "**Write**":http://docs.textpattern.io/administration/write-panel (default) | Article editing fields and controls. |
 
 notextile. </div>
 
@@ -64,10 +64,10 @@ The **Presentation** region of the administration side has four panels out-of-th
 notextile. <div itemscope itemtype="http://schema.org/Table">
 
 | |_. What the panel provides you |
-| **Forms**[3] | A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" **Article** form type displays by default. |
-| **Pages** (default) | A list of HTML page templates and functionality to create and manage them. The "default" page displays by default. |
-| **Sections** | A table listing of sections and functionality to create and manage them. |
-| **Styles** | A list of CSS style files and functionality to create and manage them. The "default" style displays by default. |
+| ["**Forms**":http://docs.textpattern.io/administration/forms-panel][3] | A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" **Article** form type displays by default. |
+| "**Pages**":http://docs.textpattern.io/administration/pages-panel (default) | A list of HTML page templates and functionality to create and manage them. The "default" page displays by default. |
+| "**Sections**":http://docs.textpattern.io/administration/sections-panel | A table listing of sections and functionality to create and manage them. |
+| "**Styles**":http://docs.textpattern.io/administration/styles-panel | A list of CSS style files and functionality to create and manage them. The "default" style displays by default. |
 
 notextile. </div>
 
