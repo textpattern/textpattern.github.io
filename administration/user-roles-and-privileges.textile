@@ -92,7 +92,7 @@ fn3. In 4.6, Freelancers will only be able to see their own articles, and those 
 
 h3(#sec2-2). Extended panels access
 
-Table 2 represents the two administration regions you may see -- **Home** and **Extensions**, and their respective panels -- when installing certain admin-side plugins. Unlike with core regions and panels, the panels of the extended regions are generally not treated individually, rather roles are treated at the region level.[4] A given role will either have access to the regions (thus all their panels) or won't see them all. The respective panels one might see in these regions depend on which plugins are installed that make use of them. Most likely anyone with Publisher and Managing Editor roles will see the **Extensions** region eventually because so many useful admin-side plugins make use of it.
+Table 2 represents the two _extended_ regions -- **Home** and **Extensions** -- you may see when installing certain admin-side plugins. Unlike with core regions and panels, the panels of the extended regions are generally not treated individually, rather roles are treated at the region level, which is why individual panels are not show here.[4] A given role will either have access to the regions (thus all their panels) or won't see them all. The respective panels one might see in these regions depend on which plugins are installed that make use of them. Most likely anyone with Publisher and Managing Editor roles will see the **Extensions** region eventually because so many useful admin-side plugins make use of it.
 
 **Table 2. Extended panels access per role. (See legend above.)**
 
@@ -104,7 +104,7 @@ notextile. <div itemscope itemtype="http://schema.org/Table">
 
 notextile. </div>
 
-fn4. While these rights of access per role are indicated at the region level, it is possible that a given plugin my introduce it's own finer control that alters that pattern. For example, a developer may design an admin-side plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a configuration panel under **Extensions**, then those two lower user roles will see the **Extensions** region and that particular plugin panel only. 
+fn4. While these rights of access per role are indicated at the region level here, it is possible that a given plugin introduces finer rights control, which would alter the access pattern suggested in Table 2. For example, a developer may design an admin-side plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a configuration panel under **Extensions**, then those two lower user roles will see the **Extensions** region and that particular plugin panel only, and the panel would have a limited flag on it. 
 
 h2(#sec3). Limited access specifications
 
