@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Article custom"
+description: Testing meta description for article_custom doc page.
 tags:
   - Article tags
 ---
