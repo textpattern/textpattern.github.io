@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Article"
+description: The basic article tag can be used as either a single tag or container tag and used to output one or more articles depending on the attributes used.
 tags:
   - Article tags
 ---

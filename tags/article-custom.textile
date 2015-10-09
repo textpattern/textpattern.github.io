@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Article custom"
-description: Testing meta description for article_custom doc page.
+description: The article_custom tag is a single or a container tag that provides a variety of custom options for sorting, selecting, and displaying articles.
 tags:
   - Article tags
 ---

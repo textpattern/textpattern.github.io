@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Article url title"
+description: The article_url_title tag is a _single_ tag which returns the dumbed-down 'URL title' of the article being displayed.
 tags:
   - Article tags
 ---
