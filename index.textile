@@ -2,6 +2,7 @@
 layout: default
 published: true
 title: "Textpattern user documentation"
+search_omit: true
 ---
 
 h1. Textpattern user documentation
