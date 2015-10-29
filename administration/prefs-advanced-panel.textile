@@ -204,16 +204,16 @@ This setting allows article authors to override the form to be used when their a
 
 h5(#attach_titles_to_permalinks). Attach titles to permalinks?
 
-This setting will attach a dirified version of your article-title to your URL, it is either generated automatically or can be manually overriden in the “Advanced Options” when editing an article.
+This setting will attach a dirified version of your article-title to your URL, it is either generated automatically or can be manually overridden in the “Advanced Options” when editing an article.
 
-This setting will only have an effect when you are using clean urls. For certain languages this may result in long and ugly URLs, in which case you probably want to set this to “No”.
+This setting will only have an effect when you are using clean URLs. For certain languages this may result in long and ugly URLs, in which case you probably want to set this to “No”.
 
-h5(#permalink_title-like-this_default_is_titlelikethis). Permalink title-like-this (default is TitleLikeThis)?
+h5(#permalink_title-like-this_default_is_titlelikethis). Permalink title URL pattern
 
 This setting only has an effect when “Attach titles to permalinks” is set to “Yes”. When dirifying article-titles for use in URLs, you have the option of:
 
-# Using all lowercase letters, and replacing spaces with hyphens.
-# Completely removing spaces, and using CamelCase, which means that the beginning of new words will be marked by uppercase letters.
+# Hyphenated (title-like-this) - Using all lowercase letters, and replacing spaces with hyphens.
+# Intercapped (TitleLikeThis) - Completely removing spaces, and using CamelCase, which means that the beginning of new words will be marked by uppercase letters.
 
 h5(#send_last-modified_header). Send &quot;Last-Modified&quot; header?
 
@@ -231,13 +231,9 @@ h5(#compensate_for_persistent_connections_mod_deflate_bug). Compensate for persi
 
 Some mod_deflate versions have a bug that breaks subsequent requests when keep-alive is used. Dropping the connection is the only reliable way to fix this. Setting this preference to “Yes” will close the connection, forcing the browser to reconnect for the next request.
 
-h5(#ping_ping-o-maticcom). Ping ping-o-matic.com?
+h5(#ping_ping-o-maticcom). Ping pingomatic.com?
 
-Whenever you publish a new article, Textpattern will send a ping to "ping-o-matic":http://pingomatic.com/. Recommended: “Yes” for live sites, “No” for sites in development.
-
-h5(#ping_textpatterncom). Ping textpattern.com?
-
-This will send a ping to textpattern.com whenever you publish a new article. Recommended: “Yes” for live sites, “No” for sites in development.
+Whenever you publish a new article, Textpattern will send a ping to "Ping-O-Matic":http://pingomatic.com/. Recommended: “Yes” for live sites, “No” for sites in development.
 
 h5(#logs_expire_after_how_many_days). Logs expire after how many days?
 
