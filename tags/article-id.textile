@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Article id"
-description: The article_id tag is a single tag which returns the numeric ID of the article being displayed.
+description: The article_id tag returns the numeric ID of the article being displayed.
 tags:
   - Article tags
 ---

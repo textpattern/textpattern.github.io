@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Category list"
+description: The category_list tag can be used as either a single tag or container tag which is used to produce a list of linked categories.
 tags:
   - List tags
   - Navigation tags

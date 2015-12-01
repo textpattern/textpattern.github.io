@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Article image"
-description: The article_image tag is a single tag. Textpattern will replace this tag with the img HTML tag matching the numeric ID or URL assigned when the article is posted.
+description: The article_image tag is used to create an img HTML tag matching the numeric ID or URL assigned when the article is posted.
 tags:
   - Article tags
   - Image tags
