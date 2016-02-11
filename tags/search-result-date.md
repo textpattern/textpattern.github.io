@@ -1,0 +1,50 @@
+---
+layout: document
+category: tags
+published: true
+title: "Search result date"
+tags:
+  - Search tags
+---
+
+# Search result date
+
+On this page:
+
+* [Syntax](#user-content-syntax)
+* [Attributes](#user-content-attributes)
+* [Examples](#user-content-examples)
+
+## Syntax
+
+```html
+<txp:search_result_date />
+```
+
+The *search_result_date* tag is a __single__ tag. This tag will provide the article posted date as returned by the search function.
+
+## Attributes
+
+* @format="format string"@
+Override the default date format set in the "Preferences administration panel":http://docs.textpattern.io/administration/preferences-panel.
+Values: any valid "strftime":http://php.net/strftime string values, @since@, @iso8601@ ("ISO 8601 reference":http://en.wikipedia.org/wiki/ISO_8601), @w3cdtf@ ("W3CDTF reference":http://www.w3.org/TR/NOTE-datetime), or @rfc822@ ("RFC 822 reference":http://www.w3.org/Protocols/rfc822/#z28).
+Default: the 'Archive date format' set in preferences.
+
+## Examples
+
+### Example 1: Displays the posting date of an article
+
+```html
+<h3>
+    <txp:permlink>
+        <txp:title />
+    </txp:permlink>
+</h3>
+<p>
+    <txp:search_result_date /> | <txp:posted />
+</p>
+```
+
+Used in a search results form, this offers a search result entry comprising a hyperlinked article title, and the date that article was posted.
+
+Other tags used: "title":http://docs.textpattern.io/tags/title, "permlink":http://docs.textpattern.io/tags/permlink, "posted":http://docs.textpattern.io/tags/posted.

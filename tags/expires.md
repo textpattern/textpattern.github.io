@@ -1,0 +1,104 @@
+---
+layout: document
+category: tags
+published: true
+title: "Expires"
+tags:
+  - Article tags
+---
+
+# Expires
+
+On this page:
+
+* [Syntax](#user-content-syntax)
+* [Attributes](#user-content-attributes)
+* [Examples](#user-content-examples)
+* [Genealogy](#user-content-genealogy)
+
+## Syntax
+
+```html
+<txp:expires />
+```
+
+The *expires* tag is a __single__ tag used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive (e.g. events like conferences, meetings and so forth). The tag is defined by expiration date values that are set under the ''Date and time' section of the "Write administration panel":../administration/write-panel.
+
+## Attributes
+
+Tag will accept the following attributes (*case-sensitive*):
+
+* @format="format string"@
+Override the default date format set in the "Preferences administration panel":../administration/preferences-panel.
+Values: any valid "strftime":http://php.net/strftime string values.
+Default: the 'Archive date format' set in preferences.
+* @gmt="boolean"@
+Return either local time (according to the set time zone preferences) or GMT.
+Values: @0@ (local time) or @1@ (GMT).
+Default: @0@.
+* @lang="ISO language code"@
+Format time string suitable for the specified language (locale).
+Values: locales adhere to "ISO-639":http://en.wikipedia.org/wiki/ISO_639-2.
+Default: unset (time format set in the "Preferences administration panel":../administration/preferences-panel.
+
+### Common presentational attributes
+
+These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
+
+* @class="class name"@
+HTML @class@ to apply to the @wraptag@ attribute value.
+Default: tag name or unset (see @@class cross-reference@@).
+* @wraptag="element"@
+HTML tag to wrap around output, specified without brackets (e.g. @wraptag="p"@).
+Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+
+## Examples
+
+### Example 1: Custom format date setting
+
+```html
+<p>
+    Expires:
+    <txp:expires format="%b %d, %Y" />
+</p>
+```
+
+This would result in the following HTML output:
+
+```html
+<p<Expires: Feb 03, 2014</p>
+```
+
+### Example 2: Extended custom format date setting
+
+```html
+<p>
+    Expires:
+    <time datetime="<txp:posted format="iso8601" />">
+        <txp:posted class="time-day" wraptag="span" format="%d" />
+        <txp:posted class="time-month" wraptag="span" format="%b" />
+        <txp:posted class="time-year" wraptag="span" format="%Y" />
+    </time>
+</p>
+```
+
+This would result in the following HTML output:
+
+```html
+<p>
+    Expires:
+    <time datetime="2014-02-03T10:43:39Z">
+        <span class="time-day">03</span>
+        <span class="time-month">Feb</span>
+        <span class="time-year">2014</span>
+    </time>
+</p>
+```
+
+This provides styling hooks for each date part.
+
+## Genealogy
+
+### Version 4.0.7
+
+Tag support added.

@@ -20,7 +20,8 @@ On this page:
 ## Syntax
 
 ```html
-bc. <txp:article />
+```html
+<txp:article />
 ```
 
 The basic **article** tag can be used as either a __single__ tag or __container__ tag and used to output one or more articles depending on the attributes used. Default attributes will be used when nothing specific is assigned.
@@ -77,7 +78,7 @@ Do the article count, but do not display anything. Used when you want to show a 
 Values: `0` (no) or `1` (yes).
 Default: `0`.
 * `searchall="boolean"`
-When outputting search results, include only those articles with 'Include in site search' set on the [Sections administration panel](../administration/sections-panel). If set to `0`, only articles in the current section are displayed. See [[Fixing search results]] for more.
+When outputting search results, include only those articles with 'Include in site search' set on the [Sections administration panel](../administration/sections-panel). If set to `0`, only articles in the current section are displayed. See @@Fixing search results@@ for more.
 Values: `0` (no) or `1` (yes).
 Default: `1`.
 * `searchform="form name"`
@@ -125,19 +126,19 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 * `break="value"`
 Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-Default: `br` (but see [[break cross-reference]] for exceptions).
+Default: `br` (but see @@break cross-reference@@ for exceptions).
 * `class="class name"`
 HTML `class` to apply to the `wraptag` attribute value.
-Default: tag name or unset (see [[class cross-reference]]).
+Default: tag name or unset (see @@class cross-reference@@).
 * `label="text"`
 Label prepended to item.
-Default: unset (but see [[label cross-reference]] for exceptions).
+Default: unset (but see @@label cross-reference@@ for exceptions).
 * `labeltag="element"`
 HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
 Default: unset.
 * `wraptag="element"`
 HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-Default: unset (but see [[wraptag cross-reference]] for exceptions).
+Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Note on 'article list' vs. 'individual article' context
 

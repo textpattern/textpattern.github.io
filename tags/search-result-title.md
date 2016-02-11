@@ -1,0 +1,43 @@
+---
+layout: document
+category: tags
+published: true
+title: "Search result title"
+tags:
+  - Search tags
+---
+
+# Search result title
+
+On this page:
+
+* [Syntax](#user-content-syntax)
+* [Attributes](#user-content-attributes)
+* [Examples](#user-content-examples)
+
+## Syntax
+
+```html
+<txp:search_result_title />
+```
+
+The *search_result_title* tag is a __single__ tag. This tag will provide a hyperlinked title to an article as returned by the search function.
+
+## Attributes
+
+This tag has no attributes.
+
+## Examples
+
+### Example 1: Display a hyperlinked title to an article
+
+```html
+<h3>
+    <txp:search_result_title />
+    <txp:search_result_date />
+</h3>
+```
+
+In a search results form, this shows the title of an article that matched the visitor's search results, and its posted date.
+
+Other tags used: "search_result_date":http://docs.textpattern.io/tags/search-result-date.

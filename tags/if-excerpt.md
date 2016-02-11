@@ -1,0 +1,49 @@
+---
+layout: document
+category: tags
+published: true
+title: "If excerpt"
+tags:
+  - Article tags
+  - Conditional tags
+---
+
+# If excerpt
+
+On this page:
+
+* [Syntax](#user-content-syntax)
+* [Attributes](#user-content-attributes)
+* [Examples](#user-content-examples)
+
+## Syntax
+
+```html
+<txp:if_excerpt>
+```
+
+The *if_excerpt* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+
+```html
+<txp:if_excerpt>
+    ...conditional statement...
+</txp:if_excerpt>
+```
+
+The tag will execute the contained statements if an excerpt is associated with the article being displayed.
+
+## Attributes
+
+This tag has no attributes.
+
+## Examples
+
+### Example 1: Display the excerpt if it exists
+
+```html
+<txp:if_excerpt>
+    <txp:excerpt />
+</txp:if_excerpt>
+```
+
+Other tags used: "excerpt":excerpt.

@@ -1,0 +1,100 @@
+[todo:pw]
+
+h3(sectionedit1#overview). Overview
+
+Conditional tags allow one page or form template to display different elements depending on how the template is used. Code inside a conditional tag is only executed if the conditions of the tag are true. Some conditional tags have an “else” feature that will execute code only if the conditions are false.
+
+Granted that's not the clearest description (it could be better) so here's a few code examples to help it along:
+
+h4(#display_different_navigational_links_on_individual_article_and_article_list_pages). Display different navigational links on individual article and article list pages
+
+<pre class="code">
+&lt;txp:article /&gt;
+
+&lt;txp:if_individual_article&gt;
+   &lt;p&gt;&lt;txp:link_to_prev&gt;Previous article&lt;/txp:link_to_prev&gt;&lt;/p&gt;
+&lt;/txp:if_individual_article&gt;
+
+&lt;txp:if_article_list&gt;
+   &lt;p&gt;&lt;txp:older&gt;Older articles&lt;/txp:older&gt;&lt;/p&gt;
+&lt;/txp:if_article_list&gt;
+</pre>
+```
+
+h4(#use_special_formatting_for_all_the_articles_by_a_specific_author). Use special formatting for all the articles by a specific author
+
+```html
+<txp:if_article_author name="the-wizard">
+   <txp:article form="wizard-form" />
+<txp:else />
+   <txp:article />
+</txp:if_article_author>
+```
+
+
+h3(sectionedit2#nesting). Nesting
+
+Conditional tags may be nested, unless you are nesting a tag within the *same* tag.
+
+For example, these *will* work:
+
+<pre class="code">
+&lt;txp:if_section&gt;
+I'm looking at a particular section.
+
+&lt;txp:if_category name=&quot;oranges&quot;&gt;
+I'm also looking at the category named &quot;oranges&quot;.
+&lt;/txp:if_category&gt;
+
+&lt;/txp:if_section&gt;
+</pre>
+```
+
+<pre class="code">
+&lt;txp:if_custom_field name=&quot;apples&quot;&gt;
+apples!
+&lt;/txp:if_custom_field&gt;
+
+&lt;txp:if_custom_field name=&quot;oranges&quot;&gt;
+oranges!
+&lt;/txp:if_custom_field&gt;
+</pre>
+```
+
+These will *not* work:
+
+```html
+<txp:if_custom_field name="apples">
+apples!
+<txp:else />
+    <txp:if_custom_field name="oranges">
+      oranges!
+    </txp:if_custom_field>
+</txp:if_custom_field>
+```
+
+
+h3(sectionedit3#conditional_article_tags). Conditional Article Tags
+
+* &lt;"if_article_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_list&gt; ... &lt;/"if_article_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_list&gt;
+* &lt;"if_individual_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_individual_article&gt; ... &lt;/"if_individual_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_individual_article&gt;
+* &lt;"if_first_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_first_article&gt; ... &lt;/"if_first_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_first_article&gt;
+* &lt;"if_last_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_last_article&gt; ... &lt;/"if_last_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_last_article&gt;
+* &lt;"if_different":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_different&gt; ... &lt;/"if_different":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_different&gt;
+* &lt;"if_article_section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_section&gt; ... &lt;/"if_article_section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_section&gt;
+* &lt;"if_article_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_category&gt; ... &lt;/"if_article_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_article_category&gt;
+* &lt;"if_section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_section&gt; ... &lt;/"if_section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_section&gt;
+* &lt;"if_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_category&gt; ... &lt;/"if_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_category&gt;
+* &lt;"if_excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_excerpt&gt; ... &lt;/"if_excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_excerpt&gt;
+* &lt;"if_custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_custom_field&gt; ... &lt;/"if_custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_custom_field&gt;
+
+h3(sectionedit4#conditional_comments_tags). Conditional Comments Tags
+
+* &lt;"if_comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments&gt; ... &lt;/"if_comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments&gt;
+* &lt;"if_comments_allowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_allowed&gt; ... &lt;/"if_comments_allowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_allowed&gt;
+* &lt;"if_comments_disallowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_disallowed&gt; ... &lt;/"if_comments_disallowed":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_comments_disallowed&gt;
+
+h3(sectionedit5#conditional_search_tags). Conditional Search Tags
+
+* &lt;"if_search":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_search&gt; ... &lt;"else_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:else:start&gt; ... &lt;/"if_search":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:if_search&gt; double conditional tag to allow you to customize search results template and main page, even if both share the same template
+
