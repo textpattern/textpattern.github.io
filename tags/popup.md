@@ -26,15 +26,15 @@ The *popup* tag is a __single__ tag. Textpattern will replace this tag with a po
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @section="section_name"@
 Jump to the selected category for the named section.
 Default: unset.
 * @this_section="boolean"@
 Jump to the selected category for the currently active section.
-Values: @0@ (no) or @1@ (yes).
-Default: @0@.
+Values: `0` (no) or `1` (yes).
+Default: `0`.
 * @type="type"@
 Values: @s@ (section), @c@ (category).
 Default: @c@.

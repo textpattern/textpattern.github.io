@@ -35,7 +35,7 @@ If used as a container, it must be specified as an opening and closing pair of t
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @author="author login name"@
 Restrict to files with the specified author.
@@ -56,7 +56,7 @@ Values: (comma separated list of) file ID(s).
 Default: unset.
 * @limit="integer"@
 Number of files to display.
-Default: @10@.
+Default: `10`.
 * @offset="integer"@
 Number of files to skip.
 Default: unset.
@@ -69,7 +69,7 @@ Default: unset.
 * @sort="by what and order"@
 How to sort the resulting list.
 Values:
-@id@
+`id`
 @filename@
 @title@
 @category@
@@ -124,7 +124,7 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Version 4.2.0
 
-@id@ attribute added.
+`id` attribute added.
 
 ### Version 4.0.7
 

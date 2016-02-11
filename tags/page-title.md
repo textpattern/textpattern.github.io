@@ -33,7 +33,7 @@ Results appear as follows:
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @separator="character(s)"@
 The character sequence you want between each piece of information.

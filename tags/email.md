@@ -26,7 +26,7 @@ The *email* tag is both a __single__ tag and a __container__ tag. Textpattern wi
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @email="value"@
 The email address from which to make the link.

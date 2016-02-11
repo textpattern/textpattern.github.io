@@ -34,7 +34,7 @@ If used as a __container__ tag, it must be specified as an opening and closing p
 
 This is equivalent to putting the contained statements into a form named 'my_form' and using @<txp:images form="my_form" />@.
 
-By default, the tag is context-sensitive, which means that in the absence of any filter attributes (@id@, @name@, @category@, @author@, @realname@, @extension@, @thumbnail@), it will return image IDs from the first of:
+By default, the tag is context-sensitive, which means that in the absence of any filter attributes (`id`, @name@, @category@, @author@, @realname@, @extension@, @thumbnail@), it will return image IDs from the first of:
 
 # The currently viewed article's 'Article image' field;
 # Images matching the global category context;
@@ -43,7 +43,7 @@ By default, the tag is context-sensitive, which means that in the absence of any
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @author="author (login) ID"@
 Filter the images by this list of author IDs who uploaded the pictures to Textpattern.
@@ -63,21 +63,21 @@ Default: unset.
 Use specified form template to process each image. If not used, and the container is empty, the tag will output a list of images that are compatible with "image_display":image-display.
 Default: unset.
 * @html_id="id number"@
-The HTML @id@ attribute applied to the @wraptag@, if set, otherwise to the @img@ tag.
+The HTML `id` attribute applied to the @wraptag@, if set, otherwise to the @img@ tag.
 Default: unset.
 * @id="integer"@
-Filter the images by this list of @id@s assigned at upload. The IDs can be found on the "Images administration panel":../administration/images-panel.
+Filter the images by this list of `id`s assigned at upload. The IDs can be found on the "Images administration panel":../administration/images-panel.
 The order of the ids overrides the default @sort@ attribute.
 Default: unset.
 * @limit="integer"@
 The number of images to display per page.
-Default: @0@ (unlimited).
+Default: `0` (unlimited).
 * @name="image name"@
 Filter the images by this list of image names as shown on the "Images administration panel":../administration/images-panel.
 Default: unset.
 * @offset="integer"@
 The number of images to skip.
-Default: @0@ (only effective if @limit@ is set).
+Default: `0` (only effective if @limit@ is set).
 * @pageby="integer" (or "limit")@
 The number of images to jump forward or back when an "older":older or "newer":newer link is clicked. Without this attribute, pagination is not available; you will simply see @limit@ images. You may specify @pageby="limit"@ to allow pagination to automatically follow the value of the @limit@ attribute. Note: "newer":newer and "older":textile will paginate all content types at once.
 Default: unset.
@@ -94,7 +94,7 @@ Values:
 @date@
 @extension@ (image extension)
 @h@ (image @height@ attribute)
-@id@ (image id#)
+`id` (image id#)
 @name@ (image name)
 @rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
 @thumb_h@ (image thumbnail @height@ attribute)
@@ -103,7 +103,7 @@ Values:
 Default: @name asc@.
 * @thumbnail="boolean"@
 Filter the image list to only include images that have a thumbnail, or not.
-Values: unset (i.e.,all images), @1@ (images that have a thumbnail) or @0@ (images that do not have a thumbnail).
+Values: unset (i.e.,all images), `1` (images that have a thumbnail) or `0` (images that do not have a thumbnail).
 Default: unset.
 
 ### Common presentational attributes
@@ -142,7 +142,7 @@ Displays all images in the database.
 <txp:images auto_detect="" sort="id desc" />
 ```
 
-Display all images in the database, sorted by @id@ in descending order.
+Display all images in the database, sorted by `id` in descending order.
 
 ```html
 <txp:images />
@@ -319,7 +319,7 @@ Other tags used: "article_image":article-image, "thumbnail":thumbnail.
 
 ### Version 4.5.0
 
-Sort order of @id@ attribute maintained, unless overridden with @sort@ attribute.
+Sort order of `id` attribute maintained, unless overridden with @sort@ attribute.
 
 ### Version 4.3.0
 

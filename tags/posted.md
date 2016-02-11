@@ -26,7 +26,7 @@ The *posted* tag is a __single__ tag which is used to return the publish date of
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @format="format string"@
 Override the default date format set in the "Preferences administration panel":../administration/preferences-panel.
@@ -34,8 +34,8 @@ Values: any valid "strftime":http://php.net/strftime string values, @since@, @is
 Default: the 'Date format' set in preferences.
 * @gmt="boolean"@
 Return either local time (according to the set time zone preferences) or GMT.
-Values: @0@ (local time) or @1@ (GMT).
-Default: @0@.
+Values: `0` (local time) or `1` (GMT).
+Default: `0`.
 * @lang="ISO language code"@
 Format time string suitable for the specified language (locale).
 Values: locales adhere to "ISO-639":http://en.wikipedia.org/wiki/ISO_639-2.

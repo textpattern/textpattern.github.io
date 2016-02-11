@@ -34,14 +34,15 @@ When used as a single tag, Textpattern will replace the tag with a download link
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @filename="text"@
 Specifies which file to display by its @filename@ as shown on the "Files administration panel":../administration/files-panel.
 * @id="integer"@
-Specifies the @id@, assigned at upload of the file, to display. Can be found on the "Files administration panel":../administration/files-panel.
+Specifies the `id`, assigned at upload of the file, to display. Can be found on the "Files administration panel":../administration/files-panel.
 
-p(alert-block information). Note: @id@ takes precedence over @filename@. If neither is defined and the tag is not used within the context of a file, nothing is returned.
+Note: `id` takes precedence over `filename`. If neither is defined and the tag is not used within the context of a file, nothing is returned.
+{: .alert-block .information}
 
 ## Examples
 

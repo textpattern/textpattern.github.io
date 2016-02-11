@@ -26,12 +26,12 @@ The *link_description* tag is a __single__ tag which is used to return the text 
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @escape="html"@
-Escape HTML entities such as @<@, @>@ and @&@.
-Values: @html@ or unset.
-Default: @html@;
+Escape HTML entities such as `<`, `>` and `&`.
+Values: `html` or unset.
+Default: `html`;
 
 ### Common presentational attributes
 
@@ -67,4 +67,4 @@ Other tags used: "link":link.
 
 ### Version 4.0.7
 
-Default value for @escape@ attribute changed from unset to @html@.
+Default value for @escape@ attribute changed from unset to `html`.

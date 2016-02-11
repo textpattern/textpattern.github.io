@@ -22,21 +22,21 @@ On this page:
 <txp:comments />
 ```
 
-The *comments* tag is a __single__ tag which is used to display the comments associated with a particular article. Comments will be displayed for the present individual article as a default, or to the article set by the @id@ attribute.
+The *comments* tag is a __single__ tag which is used to display the comments associated with a particular article. Comments will be displayed for the present individual article as a default, or to the article set by the `id` attribute.
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @form="form name"@
 Use specified form template to process each comment.
 Default: @comments@.
 * @limit="integer"@
 The number of comments to display.
-Default: @0@ (no limit).
+Default: `0` (no limit).
 * @offset="integer"@
 The number of comments to skip.
-Default: @0@.
+Default: `0`.
 * @sort="sort value(s)"@
 How to sort the resulting list.
 Values:

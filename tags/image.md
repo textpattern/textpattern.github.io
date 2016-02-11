@@ -22,24 +22,24 @@ On this page:
 <txp:image />
 ```
 
-The *image* tag is a __single__ tag that Textpattern will replace with the @<img src="...">@ HTML tag matching the image of the numeric @id@ assigned by Textpattern when the image was uploaded via the Textpattern "Images administration panel":../administration/images-panel.
+The *image* tag is a __single__ tag that Textpattern will replace with the @<img src="...">@ HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern "Images administration panel":../administration/images-panel.
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @escape="html"@
-Escape HTML entities such as @<@, @>@ and @&@ for the image's @alt@ and @title@ attributes.
-Values: @html@ or unset.
-Default: @html@.
+Escape HTML entities such as `<`, `>` and `&` for the image's @alt@ and @title@ attributes.
+Values: `html` or unset.
+Default: `html`.
 * @height="integer"@
 Specify an image @height@ which overrides the value stored in the database. Use @height="0"@ to turn off the output of a width attribute in the @<img>@ tag (thus the browser will scale the height if a width is used).
 Default: height of image stored in the database.
 * @html_id="id"@
-The HTML @id@ attribute applied to the @wraptag@, if set, otherwise to the @<img>@ tag.
+The HTML `id` attribute applied to the @wraptag@, if set, otherwise to the @<img>@ tag.
 Default: unset.
 * @id="integer"@
-Specifies the @id@, assigned at upload of the image, to display. Can be found on the "Images administration panel":../administration/images-panel. If both @name@ and @id@ are specified, @name@ is used while @id@ is ignored.
+Specifies the `id`, assigned at upload of the image, to display. Can be found on the "Images administration panel":../administration/images-panel. If both @name@ and `id` are specified, @name@ is used while `id` is ignored.
 * @name="image name"@
 Specifies which image to display by its image @name@ as shown on the "Images administration panel":../administration/images-panel.
 * @width="integer"@
@@ -92,7 +92,7 @@ Had the @wraptag@ attribute been used, the @class="promoted"@ attribute/value wo
 
 ### Version 4.0.7
 
-Default value for @escape@ attribute changed from 'unset' to @html@.
+Default value for @escape@ attribute changed from 'unset' to `html`.
 
 ### Version 4.0.4
 

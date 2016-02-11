@@ -43,21 +43,21 @@ If category 1 of the individual article being displayed is left blank and catego
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @form="form name"@
 Use specified form.
 Default: unset. If left empty, the permlinked article title(s) will be displayed.
 * @limit="integer"@
 Number of articles to display.
-Default: @10@.
+Default: `10`.
 * @match="category number(s)"@
 Restrict to articles related by specified category.
 Values: @Category1@, @Category2@, @Category1,Category2@.
 Default: @Category1,Category2@.
 * @no_widow="boolean"@
 Control "widows":http://en.wikipedia.org/wiki/Widows_and_orphans and overrule 'widows' setting in the "Preferences administration panel":../administration/preferences-panel.
-Values: @0@ allow the last word in the title to appear on its own line, i.e.,the title content is rendered unchanged, @1@ ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
+Values: `0` allow the last word in the title to appear on its own line, i.e.,the title content is rendered unchanged, `1` ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
 Default: as set in the "Preferences administration panel":../administration/preferences-panel.
 * @section="section name(s)"@
 Restrict to articles from specified section(s).
@@ -67,11 +67,11 @@ Default: unset, retrieves from all sections.
 How to sort resulting list.
 Values:
 @authorid@ (author name).
-@category1@.
-@category2@.
+`category1`.
+`category2`.
 @comments_count@.
-@custom_1@ through @custom_10@ (from Textpattern 4.2.0 onwards: @custom_n@ where 'n' is the number of your custom field - for numeric values use @(custom_n+0)@).
-@id@ (article id#).
+`custom_1` through `custom_10` (from Textpattern 4.2.0 onwards: `custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`).
+`id` (article id#).
 @image@ (article image id#).
 @keywords@.
 @lastmod@ (date last modified).

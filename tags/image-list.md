@@ -33,7 +33,7 @@ By default, the tag is context-sensitive, which means that in the absence of any
 
 h3(sectionedit1#attributes). Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 *"id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#id=“integer”*
  Filter the images by this list of

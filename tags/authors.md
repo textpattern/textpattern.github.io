@@ -36,7 +36,7 @@ If used as a __container__ tag, it must be specified as an opening and closing p
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @form="form name"@
 Use specified form template to process each author.
@@ -47,17 +47,17 @@ Values: @publisher@, @managing_editor@, @copy_editor@, @staff_writer@, @freelanc
 Default: unset, retrieves from all groups.
 * @limit="integer"@
 The number of authors to display.
-Default: @0@ (no limit).
+Default: `0` (no limit).
 * @name="author"@
 Comma-separated list of author names.
 Default: unset, which determines whether 'any' author listing is being viewed.
 * @offset="integer"@
 The number of authors to skip.
-Default: @0@.
+Default: `0`.
 * @sort="sort value(s)"@
 How to sort resulting list.
 Values:
-@id@ (author id#).
+`id` (author id#).
 @last_access@ (most recent log in).
 @name@ (login name).
 @realname@ (real name)

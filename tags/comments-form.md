@@ -22,11 +22,11 @@ On this page:
 <txp:comments_form />
 ```
 
-The *comments_form* tag is a __single__ tag which is used to display a comment form. Comments will be attached to present individual article as a default, or to the article set by the @id@ attribute.
+The *comments_form* tag is a __single__ tag which is used to display a comment form. Comments will be attached to present individual article as a default, or to the article set by the `id` attribute.
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @form="form name"@
 Use specified form template.
@@ -83,7 +83,7 @@ Other tags used: "comment_id":comment-id, "comments":comments, "if_comments_allo
 ### Version 4.6.0
 
 @msgstyle@ attribute deprecated.
-@forgetlabel@, @isize@, @msgcols@, @msgrows@, @msgstyle@, @previewlabel@, @rememberlabel@ and @submitlabel@ attributes deprecated and functionality moved to individual @comment_*@ input tags.
+@forgetlabel@, `isize`, @msgcols@, @msgrows@, @msgstyle@, @previewlabel@, @rememberlabel@ and @submitlabel@ attributes deprecated and functionality moved to individual @comment_*@ input tags.
 
 ### Version 4.5.0
 

@@ -1,6 +1,7 @@
 # Rsd [todo:pw]
 
-p(alert-block error). DEPRECATED 4.6.0
+DEPRECATED 4.6.0
+{: .alert-block .error}
 
 On this page:
 

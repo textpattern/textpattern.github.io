@@ -25,7 +25,7 @@ The *file_download* tag is a __single__ tag which Textpattern will replace with 
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @filename="name"@
 Filename of the file to link to.
@@ -34,7 +34,7 @@ Default: unset (nothing is returned).
 Use specified form template to process the files.
 Default: @files@.
 * @id="integer"@
-File @id@ of the file to link to.
+File `id` of the file to link to.
 Default: unset (nothing is returned).
 
 ## Examples
@@ -45,4 +45,4 @@ Default: unset (nothing is returned).
 <txp:file_download form="new-files" id="1" />
 ```
 
-Gets file with @id@ of @1@ and displays results using @new-files@ form.
+Gets file with `id` of `1` and displays results using @new-files@ form.

@@ -24,16 +24,17 @@ On this page:
 
 The *text* tag is a __single__ tag which is primarily used to return localized language strings from the @txp_lang@ database table.
 
-p(alert-block information). Note: only language strings designated with a type of @common@ or @public@ are available to use. All other language string types are reserved for use within the Textpattern system itself.
+Note: only language strings designated with a type of `common` or `public` are available to use. All other language string types are reserved for use within the Textpattern system itself.
+{: .alert-block .information}
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @escape="html"@
-Escape HTML entities such as @<@, @>@ and @&@ within text.
-Values: @html@ or unset.
-Default: @html@.
+Escape HTML entities such as `<`, `>` and `&` within text.
+Values: `html` or unset.
+Default: `html`.
 * @item="text"@
 Piece of text to display, preferably an item from the @name@ column of the @txp_lang@ database table. If the given item matches a key there, the contents of the respective item in the @data@ column will be returned. Otherwise, whatever you supply as the @item@ value is returned verbatim.
 

@@ -32,11 +32,12 @@ The *if_article_author* tag is a _conditional_ tag and always used as an opening
 
 The tag will execute the contained statement if the author name associated with a particular article matches the value of the @name@ attribute. Should be used in an 'article' type form.
 
-p(alert-block information). The @name@ attribute requires an author's login name *not* their real name.
+Note: The `name` attribute requires an author's login name **not** their real name.
+{: .alert-block .information}
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @name="author"@
 Comma-separated list of author names.

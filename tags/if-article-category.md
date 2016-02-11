@@ -34,14 +34,14 @@ It will execute the contained statement if the category name associated with a p
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @name="category"@
 Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the "Categories administration panel":../administration/categories-panel. Also note that if you had called your category 'My Category Name' it becomes @my-category-name@ when used in tags.
 Default: unset.
 * @number="number"@
 Match category in Category1 or Category2 (or both).
-Values: @1@ or @2@.
+Values: `1` or `2`.
 Default: unset, causing both categories to be matched against the specified name.
 
 ## Examples

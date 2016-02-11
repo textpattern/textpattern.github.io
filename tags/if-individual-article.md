@@ -31,7 +31,8 @@ The *if_individual_article* tag is a _conditional_ tag and always used as an ope
 
 The tag will execute the contained statements if an individual article is being displayed (i.e. not an article list).
 
-p(alert-block information). Please note, that "article_custom":article-custom always displays an article list, even when you set it to display only one article. Thus the *if_individual_article* tag will not work with article_custom, you'll have to use the "article":article tag instead.
+Note: [article_custom](article-custom) always displays an article list, even when you set it to display only one article. Thus the **if_individual_article** tag will not work with article_custom, you'll have to use the [article](article) tag instead.
+{: .alert-block .information}
 
 ## Attributes
 

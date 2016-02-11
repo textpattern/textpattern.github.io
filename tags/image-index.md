@@ -27,11 +27,12 @@ The *image_index* tag is a __single__ tag that is intended to be used in tandem 
 
 The thumbnail images are linked to an address which will pass the image ID plus the active category on to the tandem "image_display":image-display tag. It is up to the user to include this tandem tag at an appropriate place inside the page template.
 
-p(alert-block information). Note: As the image category is passed into "image_display":image-display, it requires to either place the 'receiving' image_display on an article independent portion of the page (i.e. outside of the article form), or otherwise both the article used for display and the images have to share a 'common' category.
+Note: As the image category is passed into [image_display](image-display), it requires to either place the 'receiving' image_display on an article independent portion of the page (i.e. outside of the article form), or otherwise both the article used for display and the images have to share a 'common' category.
+{: .alert-block .information}
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @category="category name"@
 Category of images to display.
@@ -39,10 +40,10 @@ Values: (comma separated list of) category name(s).
 Default: presently viewed category.
 * @limit="integer"@
 The number of images to display.
-Default: @0@ (no limit).
+Default: `0` (no limit).
 * @offset="integer"@
 The number of images to skip.
-Default: @0@.
+Default: `0`.
 * @sort="sort value(s)"@
 How to sort resulting list.
 Values:
@@ -53,7 +54,7 @@ Values:
 @date@ (date posted)
 @ext@ (image extension)
 @h@ (image height)
-@id@ (image id#)
+`id` (image id#)
 @name@ (image name)
 @rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
 @thumbnail@

@@ -26,12 +26,12 @@ The *file_download_name* tag is a __single__ tag that Textpattern will replace w
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @title="boolean"@
 Whether to display the file download name or its title.
-Values: @0@ (name), or @1@ (title).
-Default: @0@.
+Values: `0` (name), or `1` (title).
+Default: `0`.
 
 ## Examples
 

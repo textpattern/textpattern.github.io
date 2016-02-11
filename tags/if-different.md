@@ -31,7 +31,8 @@ The *if_different* tag is a _conditional_ tag and always used as an opening and 
 
 The tag will execute the contained statement when the value of the contained statement differs from the preceding value for that contained statement. Can be used in Textpattern 'article', 'link', 'comment', and 'file' type @@Form templates@@.
 
-p(alert-block information). @if_different@ can contain several HTML tags but only *one* Textpattern tag.
+Note: `if_different` can contain several HTML tags but only **one** Textpattern tag.
+{: .alert-block .information}
 
 ## Attributes
 

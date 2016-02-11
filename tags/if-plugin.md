@@ -34,7 +34,7 @@ The tag will execute the contained statements if the name attribute matches a cu
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @name="text"@
 Plugin name as defined on the "Plugins administration panel":../administration/plugins-panel.

@@ -26,11 +26,11 @@ The *comment_email_input* tag is a __single__ tag which is used to display a tex
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @size="integer"@
-HTML @size@ attribute to be applied to the HTML form text @input@ field.
-Default: @25@.
+HTML `size` attribute to be applied to the HTML form text `input` field.
+Default: `25`.
 
 ## Examples
 
@@ -69,4 +69,4 @@ Other tags used: "comments_help":comments-help, "comment_message_input":comment-
 
 ### Version 4.6.0
 
-@size@ attribute added (replaces functionality of deprecated @isize@ attribute in "comments_form":comments-form tag).
+`size` attribute added (replaces functionality of deprecated `isize` attribute in "comments_form":comments-form tag).

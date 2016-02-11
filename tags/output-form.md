@@ -28,7 +28,7 @@ For the container tag usage, see the "yield":yield tag.
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @form="form name"@
 Use specified form.
@@ -44,7 +44,8 @@ Default: unset (no output).
 
 You can use this tag in combination with a form to create small pieces of text that would not otherwise be managed as a regular article. For example you might define the copyright conditions of content on your site in a form and add that to one or more places via the output_form tag. Name the form @copyright@, save it as type @misc@ and call the form using the tag structure.
 
-p(alert-block information). Note that Staff Writers and Freelancers can not edit the contents of forms.
+Note: Staff Writers and Freelancers can not edit the contents of forms.
+{: .alert-block .information}
 
 ### Example 2: Manage header for all pages
 

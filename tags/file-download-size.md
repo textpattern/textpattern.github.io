@@ -25,11 +25,11 @@ The *file_download_size* tag is a __single__ tag which Textpattern will replace 
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @decimals="places"@
 Number of decimal places to format the value to.
-Default: @2@.
+Default: `2`.
 * @format="numbering style"@
 The way to represent the number, based on the file's expected size.
 Values:

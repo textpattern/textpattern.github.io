@@ -26,7 +26,7 @@ The *comments_preview* tag is a __single__ tag which is used to display a previe
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @form="form name"@
 Use specified form template to process each comment.

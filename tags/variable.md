@@ -32,11 +32,12 @@ If used as a __container__ tag, the result of the contained statements are assig
 </txp:variable>
 ```
 
-p(alert-block information). Note: Avoid entering white space characters for better code readability between the opening and closing _variable_ tags, they will lead to falsified results in the "if_variable":http://docs.textpattern.io/tags/if-variable evaluation.
+Note: Avoid entering white space characters for better code readability between the opening and closing __variable__ tags, they will lead to falsified results in the [if_variable](if-variable) evaluation.
+{: .alert-block .information}
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @name="text"@
 The variable name for which you wish to assign a value. Valid variable names must not contain any single or double quotes.
@@ -88,7 +89,8 @@ There are two parts to making this work. First a variable is created that stores
 <txp:variable name="foo" value='<txp:permlink />' />
 ```
 
-p(alert-block information). Note: A Textpattern tag, used as an attribute (a parsed attribute), must be surrounded with single quotes.
+Note: A Textpattern tag, used as an attribute (a parsed attribute), must be surrounded with single quotes.
+{: .alert-block .information}
 
 The variable 'foo' can then be used as a conditional later in the code.
 

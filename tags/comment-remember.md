@@ -26,7 +26,7 @@ The *comment_remember* tag is a __single__ tag which is used to display a check 
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @forgetlabel="text"@
 Label that appears next to the 'Forget' @checkbox@.

@@ -26,12 +26,12 @@ The *link_name* tag is a __single__ tag which returns the name of the link as as
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @escape="html"@
-Escape HTML entities such as @<@, @>@ and @&@.
-Values: @html@ or unset.
-Default: @html@;
+Escape HTML entities such as `<`, `>` and `&`.
+Values: `html` or unset.
+Default: `html`;
 
 ## Examples
 
@@ -49,4 +49,4 @@ Other tags used: "link_url":link-url.
 
 ### Version 4.0.7
 
-Default value for @escape@ attribute changed from unset to @html@.
+Default value for @escape@ attribute changed from unset to `html`.

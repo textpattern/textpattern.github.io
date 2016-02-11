@@ -33,11 +33,12 @@ The *if_author* tag is a _conditional_ tag and always used as an opening and clo
 
 The tag will execute the contained statement *if* the called page is the result of an article search by a specific author's name.
 
-p(alert-block information). This is *not* the same as checking if the current article was written (posted) by the given author. Use "if_article_author":if-article-author for that situation.
+Note: This is **not** the same as checking if the current article was written (posted) by the given author. Use "if_article_author":if-article-author for that situation.
+{: .alert-block .information}
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @name="author"@
 Comma-separated list of author names.
@@ -47,7 +48,7 @@ Textpattern context to check against. You can choose from the following contexts
 @article@ is this an article author list?
 @image@ is this an image author list?
 @file@ is this a file author list?
-@link@ is this a link author list?
+`link` is this a link author list?
 Default: @article@.
 
 ## Examples

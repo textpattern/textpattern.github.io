@@ -35,7 +35,7 @@ If used as a container, it must be specified as an opening and closing pair of t
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @author="author login name"@
 Restrict to links with the specified author.
@@ -52,14 +52,14 @@ Default: unset.
 Use specified form.
 Default: @plainlinks@.
 * @id="integer"@
-Filter the links by this list of @id@s assigned at link creation time. The IDs can be found on the "Links administration panel":../administration/links-panel.
+Filter the links by this list of `id`s assigned at link creation time. The IDs can be found on the "Links administration panel":../administration/links-panel.
 Default: unset.
 * @limit="integer"@
 Number of links to display.
-Default: @0@ (no limit).
+Default: `0` (no limit).
 * @offset="integer"@
 The number of links to skip.
-Default: @0@.
+Default: `0`.
 * @pageby="integer or limit"@
 Number of links to jump each page. Without this attribute, you cannot navigate using the "newer":newer and "older":older tags. Usually you will want to track the @limit@ attribute. Use @pageby="limit"@ to do this, which means you will not have to amend two values if you subsequently decide to alter the @limit@.
 Default: unset
@@ -72,7 +72,7 @@ Values:
 @category@.
 @date@.
 @description@.
-@id@ (link id#).
+`id` (link id#).
 @linkname@.
 @linksort@.
 @rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
@@ -140,7 +140,7 @@ Other tags used: "link":link, "linkdesctitle":linkdesctitle, "link_description":
 
 ### Version 4.5.0
 
-@id@ attribute added.
+`id` attribute added.
 
 ### Version 4.3.0
 

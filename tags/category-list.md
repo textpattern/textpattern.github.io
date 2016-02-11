@@ -29,7 +29,7 @@ The *category_list* tag can be used as either a __single__ tag or __container__ 
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @active_class="class name"@
 HTML @class@ attribute to be applied to the @active@ or current link in a list. Only works in the __single__ tag without the @form@ attribute.
@@ -39,8 +39,8 @@ Comma-separated list of categories to include, displayed in the order specified 
 Default: unset (all categories).
 * @children="boolean"@
 Can limit the list depth to one level below the parent category.
-Values: @0@ (no children, i.e.,only show one level below the parent) or @1@ (show all nested categories).
-Default: @1@.
+Values: `0` (no children, i.e.,only show one level below the parent) or `1` (show all nested categories).
+Default: `1`.
 * @exclude="category name(s)"@
 List of category names which will be excluded from the list. @categories@ takes precendence over @exclude@.
 Default: unset.
@@ -48,14 +48,14 @@ Default: unset.
 Use specified form to process each included category.
 Default: unset.
 * @html_id="id"@
-The HTML @id@ attribute applied to the @wraptag@, if set.
+The HTML `id` attribute applied to the @wraptag@, if set.
 Default: unset.
 * @limit="integer"@
 The number of articles to display.
-Default: @0@ (no limit).
+Default: `0` (no limit).
 * @offset="integer"@
 The number of articles to skip.
-Default: @0@.
+Default: `0`.
 * @parent="category name"@
 Return only specified category and its children categories. Accepts comma-separated list of values.
 Default: unset.
@@ -66,7 +66,7 @@ Default: unset, retrieves from all sections.
 * @sort="sort value(s)"@
 How to sort the resulting list.
 Values:
-@id@.
+`id`.
 @name@.
 @parent@.
 @rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
@@ -75,10 +75,10 @@ Values:
 Default: @name asc@.
 * @this_section="boolean"@
 Link to currently active section (overrides @section@ attribute).
-Values: @0@ (no) or @1@ (yes).
-Default: @0@.
+Values: `0` (no) or `1` (yes).
+Default: `0`.
 * @type="category type"@
-Values: @article@, @image@, @link@, @file@.
+Values: @article@, @image@, `link`, @file@.
 Default: @article@.
 
 ### Common presentational attributes

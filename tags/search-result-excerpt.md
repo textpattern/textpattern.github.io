@@ -26,7 +26,7 @@ The *search_result_excerpt* tag is a __single__ tag. The tag will show the occur
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @break="tag"@
 Trailing string.

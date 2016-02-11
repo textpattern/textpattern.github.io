@@ -26,7 +26,7 @@ The *password_protect* tag can be used as either a __single__ tag or __container
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @login="text"@
 The username the user has to enter.
@@ -43,7 +43,8 @@ Default: unset.
 <txp:password_protect login="theusername" pass="thepassword" />
 ```
 
-p(alert-block information). Note: It is not adequate to protect a single section. This is not due to the tag itself, but rather because of how Textpattern handles URLs. By changing the URL an article can be rendered with a different section template, which would mean that the tag in the protected section would not be rendered and could not protect the article - only page requests that would be rendered in that section would be protected.
+Note: It is not adequate to protect a single section. This is not due to the tag itself, but rather because of how Textpattern handles URLs. By changing the URL an article can be rendered with a different section template, which would mean that the tag in the protected section would not be rendered and could not protect the article - only page requests that would be rendered in that section would be protected.
+{: .alert-block .information}
 
 ### Example 2: Container tag
 

@@ -25,13 +25,13 @@ The *page_url* tag is a __single__ tag. It is used to return a particular compon
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @type="type"@
 Specifies which component of the current page's URL will be returned.
 Values:
 @request_uri@: current article's URL-title including any query string.
-@id@: current article's id on a single article page.
+`id`: current article's id on a single article page.
 @s@: current page's section.
 @c@: current page's category.
 @q@: search query string.

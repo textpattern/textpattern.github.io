@@ -29,7 +29,7 @@ The status can be displayed by the "error_status":http://docs.textpattern.io/tag
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @msg="message"@
 Textual representation of the error condition.

@@ -26,23 +26,23 @@ The *file_download_author* tag is a __single__ tag that Textpattern will replace
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @link="link type (boolean)"@
 Whether to hyperlink the author or not.
-Values: @0@ (no) or @1@ (yes).
-Default: @0@.
+Values: `0` (no) or `1` (yes).
+Default: `0`.
 * @section="section name"@
 Direct any linked author name to the nominated section instead of to the default (front) page.
 Default: unset.
 * @this_section="boolean"@
-If set to @1@, the linked author name will direct users to an author list in the current section, otherwise author list from all sections is displayed.
-Values: @0@ (no, all sections) or @1@ (yes, this section only).
-Default: @0@.
+If set to `1`, the linked author name will direct users to an author list in the current section, otherwise author list from all sections is displayed.
+Values: `0` (no, all sections) or `1` (yes, this section only).
+Default: `0`.
 * @title="boolean"@
 Whether to display the author's real name or login name.
-Values: @0@ (login name) or @1@ (real name).
-Default: @1@.
+Values: `0` (login name) or `1` (real name).
+Default: `1`.
 
 ### Common presentational attributes
 

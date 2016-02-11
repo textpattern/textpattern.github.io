@@ -26,12 +26,12 @@ The *file_download_description* tag is a __single__ tag which Textpattern will r
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @escape="html"@
-Escape HTML entities such as @<@, @>@ and @&@ for the file's @description@ attributes.
-Values: @html@ or unset.
-Default: @html@.
+Escape HTML entities such as `<`, `>` and `&` for the file's @description@ attributes.
+Values: `html` or unset.
+Default: `html`.
 
 ### Common presentational attributes
 
@@ -61,4 +61,4 @@ Other tags used: "text":text.
 
 ### Version 4.0.7
 
-Default value for @escape@ attribute changed from 'unset' to @html@.
+Default value for @escape@ attribute changed from 'unset' to `html`.

@@ -30,12 +30,12 @@ May be used in any context.
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @link="boolean"@
 Whether to display as link. Works only in the __single__ tag, *not* in the _containing_ tag variant.
-Values: @0@ (no) or @1@ (yes).
-Default: @0@.
+Values: `0` (no) or `1` (yes).
+Default: `0`.
 * @name="category name"@
 Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the "Categories administration panel":../administration/categories-panel. Also note that if you had called your category @My Category Name@ it becomes @my-category-name@ when used in tags.
 Default: unset (use current category).
@@ -44,21 +44,21 @@ Restrict to articles from specified section(s).
 Values: (comma separated list of) section name(s).
 Default: current section (for backwards compatibility).
 * @this_section="boolean"@
-If set to @1@, the linked category name will direct users to an category list in the current section, otherwise category list from all sections is displayed.
+If set to `1`, the linked category name will direct users to an category list in the current section, otherwise category list from all sections is displayed.
 Only link to articles from the current section. The @section@ attribute overrides this setting.
-Values: @0@ (no, all sections) or @1@ (yes, this section only).
-Default: @0@.
+Values: `0` (no, all sections) or `1` (yes, this section only).
+Default: `0`.
 * @title="boolean"@
 Whether to display category's title instead of its name.
-Values: @0@ (no, display name) or @1@ (yes, display title).
-Default: @0@.
+Values: `0` (no, display name) or `1` (yes, display title).
+Default: `0`.
 * @type="category type"@
-Values: @article@, @image@, @link@ or @file@.
+Values: @article@, @image@, `link` or @file@.
 Default: @article@.
 * @url="boolean"@
 Display plain URL or full link.
-Values: @0@ (no) or @1@ (yes).
-Default: @0@ (display title or full link, depending on @link@).
+Values: `0` (no) or `1` (yes).
+Default: `0` (display title or full link, depending on `link`).
 
 ### Common presentational attributes
 

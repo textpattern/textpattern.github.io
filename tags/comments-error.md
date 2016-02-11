@@ -25,7 +25,7 @@ The *comments_error* tag is a __single__ tag which is used to produce the curren
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 ### Common presentational attributes
 

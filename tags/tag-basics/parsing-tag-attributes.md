@@ -29,7 +29,7 @@ A few important rules to remember:
 
 ## Attribute value escaping
 
-Almost any character can be used in an attribute value. Unlike in HTML, there is no need for using escape codes for characters like @>@, @<@ and @&@. In fact, attribute values should contain no HTML escape codes at all, because the tag itself should take care of proper escaping.
+Almost any character can be used in an attribute value. Unlike in HTML, there is no need for using escape codes for characters like `>`, `<` and `&`. In fact, attribute values should contain no HTML escape codes at all, because the tag itself should take care of proper escaping.
 
 However, there is one exception: the delimiter character. The attribute value is delimited by a pair of double (or single) quotes and this poses a restriction on using the delimiter character inside the attribute value.
 
@@ -73,7 +73,8 @@ One last example that shows what's possible:
 
 The only character that needs escaping is the chosen attribute delimiter itself where it occurs inside the attribute value (double quote in this instance).
 
-p(alert-block information). Note: In Textpattern 4.0.6 and older, delimiter escaping did not exist and the tag parser also failed to handle attribute values containing a @>@.
+Note: In Textpattern 4.0.6 and older, delimiter escaping did not exist and the tag parser also failed to handle attribute values containing a `>`.
+{: .alert-block .information}
 
 ## Parsed attribute values
 

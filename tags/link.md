@@ -28,10 +28,10 @@ This tag is used in 'links' type forms or inside the "linklist":linklist contain
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @id="integer"@
-Specifies the @id@, assigned at creation of the link, to display. Can be found on the "Links administration panel":../administration/links-panel. If both @name@ and @id@ are specified, @name@ is used while @id@ is ignored.
+Specifies the `id`, assigned at creation of the link, to display. Can be found on the "Links administration panel":../administration/links-panel. If both @name@ and `id` are specified, @name@ is used while `id` is ignored.
 * @name="link name"@
 Specifies which link to display by its link @name@ as shown on the "Links administration panel":../administration/links-panel.
 * @rel="relation"@
@@ -55,4 +55,4 @@ Other tags used: "link_description":link-description.
 
 ### Version 4.6.0
 
-@id@ and @name@ attributes added.
+`id` and @name@ attributes added.

@@ -27,7 +27,7 @@ It uses the 'Title' field as the link's text; the 'Description' field contents w
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @rel="relation"@
 "HTML rel attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types to be applied to link.

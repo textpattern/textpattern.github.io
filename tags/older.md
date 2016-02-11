@@ -26,24 +26,25 @@ The *older* tag is both a __single__ tag and a __container__ tag. The tag should
 
 Textpattern will replace this tag with a link to the next list of articles in the sort order. The container tags wrap the text or tag assigned to the link. As a single tag it outputs the URL for the previous list page.
 
-An article list consists of the assigned number of articles set by the article tag. If there are no articles available having 'Older' status (articles ranked lower, or later, in the present sort criteria than the present bottom of page article) @<txp:older />@ will not display unless the @showalways@ attribute is set to @1@. It is normally seen used in tandem with "newer":newer.
+An article list consists of the assigned number of articles set by the article tag. If there are no articles available having 'Older' status (articles ranked lower, or later, in the present sort criteria than the present bottom of page article) @<txp:older />@ will not display unless the @showalways@ attribute is set to `1`. It is normally seen used in tandem with "newer":newer.
 
 Given a @<txp:article limit="5" />@ tag on the page in question, @<txp:older />@ will page down five articles at a time from the most recent post back in time to the oldest.
 
-p(alert-block information). Note: This tag is context-sensitive, meaning it will only fetch content from the section or category being viewed.
+Note: This tag is context-sensitive, meaning it will only fetch content from the section or category being viewed.
+{: .alert-block .information}
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @escape="html"@
-Escape HTML entities such as @<@, @>@ and @&@.
-Values: @html@ or unset.
-Default: @html@.
+Escape HTML entities such as `<`, `>` and `&`.
+Values: `html` or unset.
+Default: `html`.
 * @showalways="boolean"@
 Show wrapped value even when no older page exists.
-Values: @0@ (no) or @1@ (yes).
-Default: @0@.
+Values: `0` (no) or `1` (yes).
+Default: `0`.
 * @title="text"@
 "HTML title attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title to be applied to link.
 Default: unset.

@@ -26,11 +26,11 @@ The basic *css* tag is a __single__ tag used to output the URL of the stylesheet
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @format="value"@
 How to format output: either return complete "HTML link tag":https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link with necessary HTML attributes, or only the stylesheet's URL.
-Values: @link@ or @url@.
+Values: `link` or @url@.
 Default: @url@.
 * @media="value"@
 "HTML media attribute":https://developer.mozilla.org/en-US/docs/CSS/Media_queries to be applied to link tag (when invoked with @format="link"@).

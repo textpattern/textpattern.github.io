@@ -25,7 +25,7 @@ The *file_download_created* tag is a __single__ tag that Textpattern will replac
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @format="format string"@
 Override the default date format set in the "Preferences administration panel":../administration/preferences-panel.

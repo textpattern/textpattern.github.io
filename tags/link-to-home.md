@@ -33,7 +33,7 @@ In this mode it operates identically to "site_url":site-url.
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 ### Common presentational attributes
 

@@ -27,12 +27,12 @@ If used as a container tag, the HTML required to output a hyperlink is returned;
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @showalways="boolean"@
 Show the wrapped value even when no previous article exists.
-Values: @0@ (no) or @1@ (yes).
-Default: @0@.
+Values: `0` (no) or `1` (yes).
+Default: `0`.
 
 ## Examples
 
@@ -56,7 +56,8 @@ Other tags used: "prev_title":prev-title.
 
 This will always display the text 'Previous', even when there is no previous article.
 
-p(alert-block information). Note: While @showalways@ will enable this tag to display what is wrapped inside it, "prev_title":prev-title returns nothing if there is no previous title, so nothing is displayed. Use text, or the returned value, that you need displayed.
+Note: While `showalways` will enable this tag to display what is wrapped inside it, [prev_title](prev-title) returns nothing if there is no previous title, so nothing is displayed. Use text, or the returned value, that you need displayed.
+{: .alert-block .information}
 
 ### Example 3: Customising links
 

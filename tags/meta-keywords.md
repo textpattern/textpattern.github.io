@@ -37,14 +37,15 @@ The other is to output raw keyword text anywhere else:
 
 Context of use must be within a single article (as opposed to an article list). The tag can be added directly in a @@Page template@@ or as part of an article @@Form template@@. Either way, you may also place it in a given article tag.
 
-p(alert-block information). Note: The corresponding keywords field has a 255 character limit by default, which includes spaces and commas. This is the MySQL database default. You can edit the default using "phpMyAdmin":http://www.phpmyadmin.net, for example.
+Note: The corresponding keywords field has a 255 character limit by default, which includes spaces and commas. This is the MySQL database default. You can edit the default using [phpMyAdmin](http://www.phpmyadmin.net), for example.
+{: .alert-block .information}
 
 ## Attributes
 
 * @escape="html"@
-Escape HTML entities such as @<@, @>@ and @&@.
-Values: @html@ or unset.
-Default: @html@;
+Escape HTML entities such as `<`, `>` and `&`.
+Values: `html` or unset.
+Default: `html`;
 * @format="value"@
 Display as @<meta>@ tag or as raw value.
 Values: @meta@ or unset.

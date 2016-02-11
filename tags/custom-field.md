@@ -32,14 +32,14 @@ Also see the "if_custom_field":if-custom-field conditional tag, which provides m
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @default="value"@
 Default value to use when field is empty.
 * @escape="html"@
-Escape HTML entities such as @<@, @>@ and @&@ prior to echoing the field contents.
-Values: @html@ or unset.
-Default: @html@;
+Escape HTML entities such as `<`, `>` and `&` prior to echoing the field contents.
+Values: `html` or unset.
+Default: `html`;
 * @name="fieldname"@
 Display specified custom field.
 
@@ -74,7 +74,7 @@ HTML returned would be:
 
 ### Example 2: Power A linklog
 
-With an article title of @Textpattern@, an excerpt of @Textpattern is awesome!@, a custom field named @Link@ containing @http://textpattern.com/@, and an 'article' type form like the following:
+With an article title of @Textpattern@, an excerpt of @Textpattern is awesome!@, a custom field named `link` containing @http://textpattern.com/@, and an 'article' type form like the following:
 
 ```html
 <article class="linklog-entry">

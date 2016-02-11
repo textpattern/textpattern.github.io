@@ -25,7 +25,7 @@ The tag will execute the contained statement if the current article's 'Keywords'
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @keywords="keywords"@
 Comma-separated list of keywords.

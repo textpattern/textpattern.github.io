@@ -27,32 +27,32 @@ The *author* tag is a __single__ tag that is used to return the name of the auth
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @escape="html"@
-Escape HTML entities such as @<@, @>@ and @&@.
-Values: @html@ or unset.
-Default: @html@;
+Escape HTML entities such as `<`, `>` and `&`.
+Values: `html` or unset.
+Default: `html`;
 * @format="boolean"@
 Display plain URL or full link.
-Values: @link@, @url@ or unset.
-Default: unset (display title or full link, depending on @link@).
+Values: `link`, @url@ or unset.
+Default: unset (display title or full link, depending on `link`).
 * @link="boolean"@
 Make text a link to the author's posts.
-Values: @0@ (no) or @1@ (yes).
-Default: @0@.
+Values: `0` (no) or `1` (yes).
+Default: `0`.
 * @section="section name"@
 Restrict to articles from specified section(s).
 Values: (comma separated list of) section name(s).
 Default: unset, retrieves from all sections.
 * @this_section="boolean"@
-If set to @1@, the linked author name will direct users to an author list in the current section, otherwise author list from all sections is displayed.
-Values: @0@ (no, all sections) or @1@ (yes, this section only).
-Default: @0@.
+If set to `1`, the linked author name will direct users to an author list in the current section, otherwise author list from all sections is displayed.
+Values: `0` (no, all sections) or `1` (yes, this section only).
+Default: `0`.
 * @title="boolean"@
 Whether to display the author's real name or login name.
-Values: @0@ (login name) or @1@ (real name).
-Default: @1@.
+Values: `0` (login name) or `1` (real name).
+Default: `1`.
 
 ## Examples
 

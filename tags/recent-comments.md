@@ -36,17 +36,17 @@ If used as a container, the tag must be specified as an opening and closing pair
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @form="form name"@
 Use specified form template.
 Default: unset (if left empty, the commenter's name and article title in which the comment was made will be permlinked).
 * @limit="integer"@
 Number of comments to display.
-Default: @10@.
+Default: `10`.
 * @offset="integer"@
 Number of comments to skip.
-Default: @0@.
+Default: `0`.
 * @sort="sort value(s)"@
 How to sort resulting list.
 Values:

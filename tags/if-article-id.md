@@ -31,11 +31,11 @@ The *if_article_id* tag is a _conditional_ tag and always used as an opening and
 </txp:if_article_id>
 ```
 
-The tag will execute the contained statement if the article id associated with a particular article matches the id attribute. Should be used in an article form/container. The @id@ attribute *must* be used in an *article list context* (when producing a page that displays more than one article) or the tag will do nothing.
+The tag will execute the contained statement if the article id associated with a particular article matches the id attribute. Should be used in an article form/container. The `id` attribute *must* be used in an *article list context* (when producing a page that displays more than one article) or the tag will do nothing.
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @id="integer"@
 Comma delimited integer article ID list.

@@ -35,7 +35,7 @@ The tag will execute the contained statements if one or more custom fields for a
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @match="match type"@
 How you wish your value to be tested. Choose from:

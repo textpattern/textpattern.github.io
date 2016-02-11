@@ -26,7 +26,7 @@ The *link_feed_link* tag is a __single__ tag. Textpattern will replace this tag 
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @category="category name"@
 Restrict to specified category. Note: the category name may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the "Categories administration panel":../administration/categories-panel to ensure you are using the correct name.
@@ -38,7 +38,7 @@ Values: @rss@ or @atom@.
 Default: @rss@.
 * @format="value"@
 Whether to output HTML @<a>@ tag or @<link>@ tag.
-Values: @a@ or @link@.
+Values: @a@ or `link`.
 Default: @a@.
 * @title="value"@
 "HTML title attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title to be applied to link tag.
@@ -58,7 +58,8 @@ Default: unset (but see @@label cross-reference@@ for exceptions).
 HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
-p(alert-block information). Note: @label@ and @wraptag@ attributes are applicable only when using @format@ of @a@ (@label@ used as link text).
+Note: `label` and `wraptag` attributes are applicable only when using `format` of `a` (`label` used as link text).
+{: .alert-block .information}
 
 ## Examples
 

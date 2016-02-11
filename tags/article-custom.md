@@ -53,12 +53,12 @@ However, you can have the added features and functionality of @<txp:article_cust
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @allowoverride="boolean"@
 Whether to use override forms for the generated article list.
-Values: @0@ (no) or @1@ (yes).
-Default: @0@.
+Values: `0` (no) or `1` (yes).
+Default: `0`.
 * @author="author name"@
 Restrict to articles by specified author(s) *login name*.
 Values: (comma separated list of) author login name(s).
@@ -69,22 +69,22 @@ Values: (comma separated list of) category name(s).
 Default: unset, retrieves from all categories.
 * @customfieldname="value"@
 Restrict to articles with specified value for specified custom field name. Replace _customfieldname_ with the actual name of the custom field.
-Important: Using dashes @-@ or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
+Important: Using dashes `-` or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
 Default: unset.
 * @excerpted="boolean"@
 Restrict to articles with/without an excerpt.
-Values: @0@ (no, return all) or @1@ (yes, return only those containing an excerpt).
-Default: @0@.
+Values: `0` (no, return all) or `1` (yes, return only those containing an excerpt).
+Default: `0`.
 * @exclude="article id(s)"@
 Exclude a specific article or list of articles (each ID separated by a comma).
 Default: unset.
 * @expired="boolean"@
 Whether to include articles that have expired or not.
-Values: @0@ (no, don't include expired articles) or @1@ (yes, include expired articles).
+Values: `0` (no, don't include expired articles) or `1` (yes, include expired articles).
 Default: Setting of preference 'Publish expired articles'.
 * @form="form name"@
 Use specified form template to process each article.
-Default: @default@.
+Default: `default`.
 * @id="article ID"@
 Display the specific article or list of articles (each ID separated by a comma).
 Important: When a list is supplied, this does *not* imply a sort order (see *Example 6* below).
@@ -94,13 +94,13 @@ Restrict to articles with specified keyword(s).
 Default: unset.
 * @limit="integer"@
 The number of articles to display.
-Default: @10@.
+Default: `10`.
 * @month="yyyy"/"yyyy-mm"/"yyyy-mm-dd"@
 Restrict to articles posted within the specified year/month/day.
 Default: unset.
 * @offset="integer"@
 The number of articles to skip.
-Default: @0@.
+Default: `0`.
 * @section="section name"@
 Restrict to articles from specified section(s).
 Values: (comma separated list of) section name(s).
@@ -109,12 +109,12 @@ Default: unset, retrieves from all sections.
 How to sort resulting list.
 Values:
 @authorid@ (author name).
-@category1@.
-@category2@.
+`category1`.
+`category2`.
 @comments_count@.
-@custom_1@ through @custom_10@ (from Textpattern 4.2.0 onwards: @custom_n@ where 'n' is the number of your custom field - for numeric values use @(custom_n+0)@).
-@expires@ (expiry date).
-@id@ (article id#).
+`custom_1` through `custom_10` (from Textpattern 4.2.0 onwards: `custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`).
+`expires` (expiry date).
+`id` (article id#).
 @image@ (article image id#).
 @keywords@.
 @lastmod@ (date last modified).
@@ -160,7 +160,7 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display 5 articles from a specific section on the homepage
 
-To show 5 articles from a 'news' section within the homepage @default@ page template (or the template you use for displaying your homepage), add:
+To show 5 articles from a 'news' section within the homepage `default` page template (or the template you use for displaying your homepage), add:
 
 ```html
 <txp:article_custom section="news" limit="5" form="homepage_articles" />
@@ -279,7 +279,7 @@ Outputs articles specified by list of IDs, in the order given in the @sort@ fiel
 ### Version 4.0.7
 
 Can be used as a container tag.
-@id@ attribute can take a comma-separated list of IDs.
+`id` attribute can take a comma-separated list of IDs.
 @wraptag@ and @break@ attributes added.
 
 ### Version 4.0.6

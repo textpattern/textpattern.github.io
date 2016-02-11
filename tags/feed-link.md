@@ -26,7 +26,7 @@ The *feed_link* tag can be used as either a __single__ or __container__ tag and 
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @category="category name"@
 Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the "Categories administration panel":../administration/categories-panel to ensure you are using the correct names.
@@ -38,7 +38,7 @@ Values: @rss@ or @atom@.
 Default: @rss@.
 * @format="value"@
 Whether to output HTML @<a>@ tag or @<link>@ tag.
-Values: @a@ or @link@.
+Values: @a@ or `link`.
 Default: @a@.
 * @limit="integer"@
 Number of articles to display in the feed.
@@ -65,7 +65,8 @@ Default: unset (but see @@label cross-reference@@ for exceptions).
 HTML element to wrap feed link, specified without brackets (e.g. @wraptag="p"@).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
-p(alert-block information). Note: @wraptag@ is applicable only when using @format@ of @a@.
+Note: `wraptag` is applicable only when using `format` of `a`.
+{: .alert-block .information}
 
 ## Examples
 

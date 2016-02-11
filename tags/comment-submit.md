@@ -26,7 +26,7 @@ The *comment_submit* tag is a __single__ tag which is used to display a 'Submit'
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @label="text"@
 Label that appears on the 'Submit' button.

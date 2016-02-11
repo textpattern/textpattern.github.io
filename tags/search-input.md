@@ -26,7 +26,7 @@ The *search_input* tag is a __single__ tag. This tag will provide a text entry f
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @button="text"@
 Creates and labels a button to initiate the search.
@@ -35,7 +35,7 @@ Default: unset (no button is created).
 Use specified form template to build a customized HTML form.
 Default: @search_input@.
 * @html_id="id"@
-The HTML @id@ attribute assigned to the search form.
+The HTML `id` attribute assigned to the search form.
 Default: unset.
 * @match="match type"@
 Set the search mode. Choose from:
@@ -47,7 +47,7 @@ Default @exact@.
 Use the specified section as the destination page that will display the search results.
 Default: unset (use the front page).
 * @size="integer"@
-Sets the @size@ attribute of the search @input@ field.
+Sets the `size` attribute of the search `input` field.
 Default: @15@.
 
 ### Common presentational attributes
@@ -92,7 +92,8 @@ When using a customized form template, Textpattern doesn't automatically wrap th
 
 Other tags used: "site_url":http://docs.textpattern.io/tags/site-url.
 
-p(alert-block information). Textpattern will use a user defined form named @search_results@, or an internally defined default form if no search result form is defined by you.
+Note: Textpattern will use a user defined form named `search_results`, or an internally defined default form if no search result form is defined by you.
+{: .alert-block .information}
 
 ## Genealogy
 

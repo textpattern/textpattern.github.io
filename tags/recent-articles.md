@@ -26,7 +26,7 @@ The *recent_articles* tag is a __single__ tag which is used to produce a list of
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @category="category name"@
 Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the "Categories administration panel":../administration/categories-panel to ensure you are using the correct names.
@@ -34,14 +34,14 @@ Values: (comma separated list of) category name(s).
 Default: unset, retrieves from all categories.
 * @limit="integer"@
 The number of articles to display.
-Default: @10@.
+Default: `10`.
 * @no_widow="boolean"@
 Control "widows":http://en.wikipedia.org/wiki/Widows_and_orphans and overrule 'widows' setting in the "Preferences administration panel":../administration/preferences-panel.
-Values: @0@ allow the last word in the title to appear on its own line, i.e.,the title content is rendered unchanged, @1@ ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
+Values: `0` allow the last word in the title to appear on its own line, i.e.,the title content is rendered unchanged, `1` ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
 Default: as set in the "Preferences administration panel":../administration/preferences-panel.
 * @offset="integer"@
 The number of articles to skip.
-Default: @0@.
+Default: `0`.
 * @section="section name"@
 Restrict to articles from specified section(s).
 Values: (comma separated list of) section name(s).
@@ -50,11 +50,11 @@ Default: unset, retrieves from all sections.
 How to sort resulting list.
 Values:
 @authorid@ (author name).
-@category1@.
-@category2@.
+`category1`.
+`category2`.
 @comments_count@.
-@custom_1@ through @custom_10@ (from Textpattern 4.2.0 onwards: @custom_n@ where 'n' is the number of your custom field - for numeric values use @(custom_n+0)@).
-@id@ (article id#).
+`custom_1` through `custom_10` (from Textpattern 4.2.0 onwards: `custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`).
+`id` (article id#).
 @image@ (article image id#).
 @keywords@.
 @lastmod@ (date last modified).

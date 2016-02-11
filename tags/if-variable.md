@@ -33,11 +33,12 @@ The *if_variable* tag is a _conditional_ tag and always used as an opening and c
 
 It tests the existence and/or value of a global variable set with the "variable":variable tag.
 
-p(alert-block information). Note: In case you are getting unexpected results in an *if_variable* evaluation, check whether you have entered additional white space or invisible characters in your "variable":variable declarations and remove those.
+Note: In case you are getting unexpected results in an **if_variable** evaluation, check whether you have entered additional white space or invisible characters in your "variable":variable declarations and remove those.
+{: .alert-block .information}
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @name="variable name"@
 The name of the variable you wish to check.

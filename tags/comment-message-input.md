@@ -26,11 +26,11 @@ The *comment_message_input tag is a __single__ tag which is used to display a te
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @cols="integer"@
 HTML @cols@ attribute to be applied to HTML form @textarea@ field.
-Default: @25@.
+Default: `25`.
 * @rows="integer"@
 HTML @rows@ attribute to be applied to HTML form @textarea@ field.
 Default: @5@.

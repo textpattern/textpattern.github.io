@@ -34,13 +34,13 @@ The *section_list* tag is a __single__ or __container__ tag which is used to pro
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @active_class="class name"@ (only works in the __single__ tag without the @form@ attribute)
 HTML @class@ to apply to the 'active' or current link in a list.
 Default: unset
 * @default_title="text"@
-Text used as a title for the 'default' section when @include_default@ is set to @1@.
+Text used as a title for the 'default' section when @include_default@ is set to `1`.
 Default: site name.
 * @exclude="section name(s)"@
 Comma-separated list of section names to exclude from the list. @sections@ takes precedence over @exclude@.
@@ -49,17 +49,17 @@ Default: unset (none).
 Use specified form template to process each included section.
 Default: unset.
 * @html_id="id"@
-The HTML @id@ attribute applied to the @wraptag@, if set.
+The HTML `id` attribute applied to the @wraptag@, if set.
 * @include_default="boolean"
 Whether to include 'default' section in section list.
-Values: @0@ (no) or @1@ (yes).
-Default: @0@.
+Values: `0` (no) or `1` (yes).
+Default: `0`.
 * @limit="integer"@
 The number of articles to display.
-Default: @0@ (no limit).
+Default: `0` (no limit).
 * @offset="integer"@
 The number of articles to skip.
-Default: @0@.
+Default: `0`.
 * @sections="section name(s)"@
 Comma-separated list of section names to include in the list, displayed in specified order (unless overridden by the @sort@ attribute).
 Default: unset (all sections).

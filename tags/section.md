@@ -29,23 +29,23 @@ When used as a containing tag, it will turn the contents into a link to that sec
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @link="boolean"@ (works only in the __single__ tag)
 Display as plain text or a link.
-Values: @0@ (plain text) or @1@ (link).
-Default: @0@.
+Values: `0` (plain text) or `1` (link).
+Default: `0`.
 * @name="section name"@
 Display the named section.
 Default: unset (display the current section).
 * @title="boolean"@
 Display either the section name or its title.
-Values: @0@ (name) or @1@ (title).
-Default: @0@.
+Values: `0` (name) or `1` (title).
+Default: `0`.
 * @url="boolean"@
 Display plain URL or full link.
-Values: @0@ or @1@.
-Default: @0@ (display title or full link, depending on @link@).
+Values: `0` or `1`.
+Default: `0` (display title or full link, depending on `link`).
 
 ### Common presentational attributes
 

@@ -30,22 +30,22 @@ The image to be associated with the tag is set in the "Write administration pane
 
 ## Attributes
 
-Tag will accept the following attributes (*case-sensitive*):
+Tag will accept the following attributes (**case-sensitive**):
 
 * @escape="html"@
-Escape HTML entities such as @<@, @>@ and @&@ for the image's @alt@ and @title@ attributes.
-Values: @html@ or unset.
-Default: @html@.
+Escape HTML entities such as `<`, `>` and `&` for the image's @alt@ and @title@ attributes.
+Values: `html` or unset.
+Default: `html`.
 * @height="integer"@
 Specify an image @height@ which overrides the value stored in the database. Use @height="0"@ to turn off the output of a width attribute in the @<img>@ tag (thus the browser will scale the height if a width is used).
 Default: height of image stored in the database.
 * @html_id="id"@
-The HTML @id@ attribute assigned to the image (or to the @wraptag@, if set).
+The HTML `id` attribute assigned to the image (or to the @wraptag@, if set).
 Default: unset.
 * @thumbnail="boolean"@
 Use the thumbnail rather than full-size image.
-Values: @0@ (no) or @1@ (yes).
-Default: @0@.
+Values: `0` (no) or `1` (yes).
+Default: `0`.
 * @width="integer"@
 Specify an image @width@ which overrides the value stored in the database. Use @width="0"@ to turn off the output of a width attribute in the @<img>@ tag (thus the browser will scale the width if a height is used).
 Default: width of image stored in the database.
@@ -106,7 +106,7 @@ Other tags used: "permlink":permlink.
 
 ### Version 4.0.7
 
-Default value for @escape@ attribute changed from 'unset' to @html@.
+Default value for @escape@ attribute changed from 'unset' to `html`.
 
 ### Version 4.0.4
 
