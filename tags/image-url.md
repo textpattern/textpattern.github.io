@@ -37,7 +37,7 @@ If used as a container, it must be specified as an opening and closing pair of t
 Tag will accept the following attributes (**case-sensitive**):
 
 * `id="integer"`
-An `id` assigned at upload of an image to display. The IDs can be found on the "Images administration panel":../administration/images-panel.
+An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](../administration/images-panel).
 Default: unset.
 * `link="link type"`
 Whether to hyperlink the URL or not.
@@ -47,7 +47,7 @@ Values:
 `auto`: only apply the hyperlink if the tag is used as a container.
 Default: `auto`.
 * `name="image name"`
-An image to display, given by its image name as shown on the "Images administration panel":../administration/images-panel. If both `name` and `id` are specified, the `id` takes precedence.
+An image to display, given by its image name as shown on the [Images administration panel](../administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
 Default: unset.
 * `thumbnail="boolean"`
 Display the link to the image's thumbnail instead of the full size image.
@@ -78,7 +78,7 @@ Used as a container:
 </txp:images>
 ```
 
-Other tags used: "images"images, "thumbnail":thumbnail.
+Other tags used: [images](images), [thumbnail](thumbnail).
 
 ## Genealogy
 

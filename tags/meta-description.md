@@ -94,7 +94,7 @@ Other tags used: [if_individual_article](if-individual-article).
 </txp:section_list>
 ```
 
-Other tags used: "section_list":section-list, [section](section).
+Other tags used: [section_list](section-list), [section](section).
 
 ### Example 4: Override automatic type
 
@@ -120,7 +120,7 @@ The first time the tag is used in the `<head>`, the section meta description wil
 
 The second instance is only shown if on a landing page, and will force the display of the section meta description as an introductory paragraph.
 
-Other tags used: [section](section), "if_article_list":if-article-list, [article](article).
+Other tags used: [section](section), [if_article_list](if-article-list), [article](article).
 
 ## Genealogy
 

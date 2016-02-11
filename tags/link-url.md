@@ -28,4 +28,4 @@ This tag has no attributes.
 </a>
 ```
 
-Other tags used: "link_name":link-name.
+Other tags used: [link_name](link-name).

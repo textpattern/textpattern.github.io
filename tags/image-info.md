@@ -33,20 +33,20 @@ Escape HTML entities such as `<`, `>` and `&`.
 Values: `html` or unset.
 Default: `html`;
 * `id="integer"`
-An `id` assigned at upload of an image to display. The IDs can be found on the "Images administration panel":../administration/images-panel.
+An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](../administration/images-panel).
 Default: unset.
 * `name="image name"`
-An image to display, given by its image name as shown on the "Images administration panel":../administration/images-panel. If both `name` and `id` are specified, the `id` takes precedence.
+An image to display, given by its image name as shown on the [Images administration panel](../administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
 Default: unset.
 * `type="information type"`
 One or more of the following values to display the particular pieces of information from the current image.
 Values:
 `alt`: image `alt` content.
-`author`: image author's login name (see "image_author":image-author to display the author's real name).
+`author`: image author's login name (see [image_author](image-author) to display the author's real name).
 `caption`: image `caption` content.
 `category`: image category name.
 `category_title`: image category title.
-`date`: timestamp of image upload (this is not very useful, so consult "image_date":image-date for a better alternative).
+`date`: timestamp of image upload (this is not very useful, so consult [image_date](image-date) for a better alternative).
 `ext`: image extension.
 `h`: image height.
 `id`: image id.
@@ -83,7 +83,7 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 Grabs all images from the 'mammals' category and displays the image thumbnail itself along with the image caption surrounded with HTML `<div>` tags. Note that the image IDs/names are not specified inside the container because they are automatically assigned from the `<txp:images>` tag for each image in the given category.
 
-Other tags used: [images](images), "thumbnail":thumbnail.
+Other tags used: [images](images), [thumbnail](thumbnail).
 
 ### Example 2: Multiple pieces of information at once
 
@@ -103,7 +103,7 @@ Other tags used: [images](images), "thumbnail":thumbnail.
 
 Shows the thumbnail of each image that has an assigned thumbnail image from the 'mammals' and 'birds' categories and, beneath each, show its dimensions 'width' x 'height' along with the author of the image. Since the list has been sorted by category, the `<txp:if_different>` conditional can be used to output the category title at the top of the list of images each time it changes.
 
-Other tags used: [images](images), "thumbnail":thumbnail, "if_different":if-different.
+Other tags used: [images](images), [thumbnail](thumbnail), [if_different](if-different).
 
 ### Example 3: Specific image information
 

@@ -48,7 +48,7 @@ Restrict to articles from specified section(s).
 Values: (comma separated list of) section name(s).
 Default: current section.
 * `title="value"`
-"HTML title attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title to be applied to link tag.
+[HTML title attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title) to be applied to link tag.
 Default: depends upon `flavor` used, either `RSS feed` or `Atom feed`.
 
 ### Common presentational attributes
@@ -136,7 +136,7 @@ li.email a:hover {
 }
 ```
 
-See the "email":email tag for a similar solution for Symbolset's 'email' glyph.
+See the [email](email) tag for a similar solution for Symbolset's 'email' glyph.
 
 ## Genealogy
 

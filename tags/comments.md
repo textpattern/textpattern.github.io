@@ -42,7 +42,7 @@ How to sort the resulting list.
 Values:
 `discussid` (comment ID).
 `email`.
-`ip` ("IP address":http://en.wikipedia.org/wiki/IP_address).
+`ip` ([IP address](http://en.wikipedia.org/wiki/IP_address)).
 `message`.
 `name`.
 `parentid` (article ID).
@@ -80,7 +80,7 @@ Default: `ol` or unset, depends upon [Preferences administration panel](../admin
 
 Comments for articles can be turned on or off at the author's discretion for any article that is published; by using the scheme above in an 'article' type form, you can still have the on/off control over comments while still giving users indication of comment status.
 
-Other tags used: [comments_form](comments-form), [else](else), "if_comments_allowed":if-comments-allowed.
+Other tags used: [comments_form](comments-form), [else](else), [if_comments_allowed](if-comments-allowed).
 
 ### Example 2: Conditional comments
 
@@ -105,7 +105,7 @@ And the `comments` form (which is a 'comment' type form):
 
 For the article, list id numbers and a comment input form; but only if comments are currently allowed.
 
-Other tags used: [comment_email](comment-email), [comments_form](comments-form), [comment_id](comment-id), [comment_permlink](comment-permlink), "if_comments_allowed":if-comments-allowed.
+Other tags used: [comment_email](comment-email), [comments_form](comments-form), [comment_id](comment-id), [comment_permlink](comment-permlink), [if_comments_allowed](if-comments-allowed).
 
 ## Genealogy
 

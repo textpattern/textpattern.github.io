@@ -57,7 +57,7 @@ Default: `5`.
 </p>
 ```
 
-Other tags used: "permlink":http://docs.textpattern.io/tags/permlink, "posted":http://docs.textpattern.io/tags/posted, "title":http://docs.textpattern.io/tags/title.
+Other tags used: [permlink](permlink), [posted](posted), [title](title).
 
 ## Genealogy
 

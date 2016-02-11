@@ -70,7 +70,7 @@ This tag has no attributes.
 
 Shows links to the next/previous article if the current page is an article, or shows links to the next/previous page of results if the current page is an article list.
 
-Other tags used: "link_to_prev":link-to-prev, "link_to_next":link-to-next, "next_title":next-title, "prev_title":prev-title, "if_article_list":if-article-list, "older":older, "newer":newer.
+Other tags used: [link_to_prev](link-to-prev), [link_to_next](link-to-next), [next_title](next-title), [prev_title](prev-title), [if_article_list](if-article-list), [older](older), [newer](newer).
 
 ### Example 2: Use the tag with else
 
@@ -88,4 +88,4 @@ Other tags used: "link_to_prev":link-to-prev, "link_to_next":link-to-next, "next
 
 Displays the site's name when showing a single article, and a logo when **not** displaying a single article.
 
-Other tags used: [else](else), "site_name":site-name.
+Other tags used: [else](else), [site_name](site-name).

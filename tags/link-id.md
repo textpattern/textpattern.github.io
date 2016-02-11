@@ -42,7 +42,7 @@ This tag has no attributes.
 </txp:linklist>
 ```
 
-Other tags used: [linklist](linklist), "link_name":link-name, "link_category":link-category.
+Other tags used: [linklist](linklist), [link_name](link-name), [link_category](link-category).
 
 ## Genealogy
 

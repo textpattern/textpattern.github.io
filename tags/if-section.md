@@ -70,6 +70,6 @@ Other tags used: [else](else).
 </nav>
 ```
 
-A different way of marking the active section can be accomplished by using "section_list":section-list and its attribute `active_class`. While the above snippet will mark the list item, "section_list":section-list will mark solely the link.
+A different way of marking the active section can be accomplished by using [section_list](section-list) and its attribute `active_class`. While the above snippet will mark the list item, [section_list](section-list) will mark solely the link.
 
 Other tags used: [section](section).

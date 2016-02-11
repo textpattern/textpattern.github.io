@@ -22,7 +22,7 @@ On this page:
 <txp:link_description />
 ```
 
-The **link_description** tag is a __single__ tag which is used to return the text from the 'Description' field as defined within the "Links administration panel":../administration/links-panel. This tag is used in a 'links' type form or inside a [linklist](linklist) container tag to display information about the current link.
+The **link_description** tag is a __single__ tag which is used to return the text from the 'Description' field as defined within the [Links administration panel](../administration/links-panel). This tag is used in a 'links' type form or inside a [linklist](linklist) container tag to display information about the current link.
 
 ## Attributes
 
@@ -54,6 +54,7 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display a link and its description field contents
 
+```html
 <p>
     <txp:link />
     <br />
@@ -61,7 +62,7 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 </p>
 ```
 
-Other tags used: "link":link.
+Other tags used: [link](link).
 
 ## Genealogy
 

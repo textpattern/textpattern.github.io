@@ -44,7 +44,6 @@ Default: unset, which determines whether any keywords are assigned to the articl
         <txp:else />
             <meta name="keywords" content="Apple, Orange, Pear, Foo, Bar" />
         </txp:if_keywords>
-```
 
     <txp:else />
         <meta name="keywords" content="Apple, Orange, Pear, Foo, Bar" />
@@ -53,7 +52,7 @@ Default: unset, which determines whether any keywords are assigned to the articl
 </head>
 ```
 
-Other tags used: "meta_keywords":meta-keywords, [if_individual_article](if-individual-article), [else](else).
+Other tags used: [meta_keywords](meta-keywords), [if_individual_article](if-individual-article), [else](else).
 
 ## Genealogy
 

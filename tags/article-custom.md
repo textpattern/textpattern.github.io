@@ -35,7 +35,7 @@ If used as a container, it must be specified as an opening and closing pair of t
 
 This is equivalent to putting the contained statements into a form named 'my_form' and using `<txp:article_custom form="my_form" />`.
 
-Unlike the [article](article) tag, `<txp:article_custom>` will always return an article list and **is not context-sensitive**. This means while the [article](article) tag can only see posts within the currently viewed section/category/author and so forth, `<txp:article_custom />` can see all posts from all sections, categories and authors unless you restrict it via attributes (see below), thus context-sensitive navigation tags, such as "older":older and "newer":newer, will not work.
+Unlike the [article](article) tag, `<txp:article_custom>` will always return an article list and **is not context-sensitive**. This means while the [article](article) tag can only see posts within the currently viewed section/category/author and so forth, `<txp:article_custom />` can see all posts from all sections, categories and authors unless you restrict it via attributes (see below), thus context-sensitive navigation tags, such as [older](older) and [newer](newer), will not work.
 
 `<txp:article_custom />` offers many additional attributes that `<txp:article />` does not.. but only `<txp:article />` will produce the full single article page. If you have only `<txp:article_custom />` on a page, rather than `<txp:article />`, then you will never reach the permalinked article page - you'll always get an article list page.
 

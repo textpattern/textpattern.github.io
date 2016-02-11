@@ -43,7 +43,7 @@ Default: `html`;
 </a>
 ```
 
-Other tags used: "link_url":link-url.
+Other tags used: [link_url](link-url).
 
 ## Genealogy
 

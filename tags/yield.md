@@ -24,7 +24,7 @@ On this page:
 
 The **yield** tag is a __single__ tag which is used to return the inner content of the enclosing `<txp:output_form />` tag.
 
-The tag works in unison with the "output_form":http://docs.textpattern.io/tags/output-form tag; You place a `<txp:yield />` tag in a form and then wherever you use that form the content wrapped inside the **output_form** tag gets placed where the **yield** tag was. Essentially, the value of this is that you can use forms as flexible building blocks - each building block has a common structure, but individualized content.
+The tag works in unison with the [output_form](output-form) tag; You place a `<txp:yield />` tag in a form and then wherever you use that form the content wrapped inside the **output_form** tag gets placed where the **yield** tag was. Essentially, the value of this is that you can use forms as flexible building blocks - each building block has a common structure, but individualized content.
 
 ## Attributes
 
@@ -67,7 +67,7 @@ And the result will be:
 </div>
 ```
 
-Other tags used: "output_form":http://docs.textpattern.io/tags/output-form.
+Other tags used: [output_form](output-form).
 
 ## Genealogy
 

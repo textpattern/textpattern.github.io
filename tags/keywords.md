@@ -5,9 +5,9 @@
 ```
 
 
-The "keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=keywords tag is a __single__ tag that Textpattern will replace with the keywords associated with the article being displayed. The tag can be used in an article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, or within "pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages (templates), either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). For keywords metadata, see "meta_keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag.
+The **keywords** tag is a __single__ tag that Textpattern will replace with the keywords associated with the article being displayed. The tag can be used in an article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, or within "pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages (templates), either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). For keywords metadata, see "meta_keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag.
 
-h3(sectionedit1#attributes). Attributes
+## Attributes
 
 This tag has no attributes.
 
@@ -25,27 +25,15 @@ In this example, keywords are used in an article Form along with other article c
 <txp:body />
 ```
 
+Other tags used: [permlink](permlink), [title](title), [posted](posted), [excerpt](excerpt), [body](body).
 
-Other tags used in example: "permlink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlink, "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title, "posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted, "excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=excerpt, and "body":/home/www/zendstudio/dokuwiki/bin/doku.php?id=body
+### Example 2: Use keywords to fill &lt;code&gt;meta&lt;/code&gt; element values
 
-h4(#example_2use_keywords_to_fill_code_meta_code_element_values). Example 2: Use keywords to fill &lt;code&gt;meta&lt;/code&gt; element values
-
-In this example, keywords are used directly in a __Page__ (template) to insert
-
-bc. content=""
-
-
-values in a
-
-bc. meta
-
-
-element.
+In this example, keywords are used directly in a __Page__ (template) to insert `content=""` values in a `meta` element.
 
 ```html
 <meta name="keywords" content="<txp:keywords />" />
 ```
-
 
 This works if the context is a single article being displayed.
 
@@ -57,13 +45,7 @@ The same result can be done by putting the keywords inside an "if_individual_art
 </txp:if_individual_article>
 ```
 
-
-In both of the above, if a given article has keywords associated with it, they will fill the meta value. If not, the meta element remains with no
-
-bc. content=""
-
-
-values. This might be okay if you know for sure all articles will have keywords assigned.
+In both of the above, if a given article has keywords associated with it, they will fill the meta value. If not, the meta element remains with no `content=""` values. This might be okay if you know for sure all articles will have keywords assigned.
 
 If not, a metadata tag in your template with no value might not be desired. In which case you could set it up as a condition; if there are no keywords on the article, the entire meta element is not added to the template.
 
@@ -73,12 +55,11 @@ If not, a metadata tag in your template with no value might not be desired. In w
 </txp:if_keywords>
 ```
 
-
 Either of these uses might work well for certain pages where a single article is in context, but it doesn't account for other page contexts, like home pages with complex content layouts, or pages displaying article lists (rather than single articles). In other words, these are not copy/paste solutions for every template in your site. You may, in fact, create some metadata values manually if the context of certain pages doesn't change much.
 
-Other tags used in example 2: "if_individual_article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_individual_article and "if_keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_keywords.
+Other tags used: [if_individual_article](if-individual-article), [if_keywords](if-keywords).
 
-h3(sectionedit3#related_plugins). Related Plugins
+## Related plugins
 
 "cbe_keywords":http://textpattern.org/plugins/1231/cbe_keywords uses keywords to offer tagging features.
 
@@ -91,4 +72,3 @@ h3(sectionedit3#related_plugins). Related Plugins
 "tru_tags":http://textpattern.org/plugins/584/tru_tags uses keywords to offer tagging features.
 
 "wet_haystack":http://textpattern.org/plugins/1046/wet_haystack-custom-fulltext-search-index-builder allows site publishers to modify the default search behaviour by adding additional article fields to the set of indexed content, including keywords.
-

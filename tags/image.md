@@ -22,7 +22,7 @@ On this page:
 <txp:image />
 ```
 
-The **image** tag is a __single__ tag that Textpattern will replace with the `<img src="...">` HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern "Images administration panel":../administration/images-panel.
+The **image** tag is a __single__ tag that Textpattern will replace with the `<img src="...">` HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern [Images administration panel](../administration/images-panel).
 
 ## Attributes
 
@@ -39,9 +39,9 @@ Default: height of image stored in the database.
 The HTML `id` attribute applied to the `wraptag`, if set, otherwise to the `<img>` tag.
 Default: unset.
 * `id="integer"`
-Specifies the `id`, assigned at upload of the image, to display. Can be found on the "Images administration panel":../administration/images-panel. If both `name` and `id` are specified, `name` is used while `id` is ignored.
+Specifies the `id`, assigned at upload of the image, to display. Can be found on the [Images administration panel](../administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
 * `name="image name"`
-Specifies which image to display by its image `name` as shown on the "Images administration panel":../administration/images-panel.
+Specifies which image to display by its image `name` as shown on the [Images administration panel](../administration/images-panel).
 * `width="integer"`
 Specify an image `width` which overrides the value stored in the database. Use `width="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the width if a height is used).
 Default: width of image stored in the database.

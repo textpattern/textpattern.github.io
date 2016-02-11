@@ -26,7 +26,7 @@ The **newer** tag is both a __single__ tag and a __container__ tag. The tag shou
 
 Textpattern will replace this tag with a link to the next list of articles in the sort order. The container tags wrap the text or tag assigned to the link. As a single tag it outputs the URL for the next list page.
 
-An article list consists of the assigned number of articles set by the article tag. If there are no articles available having 'Newer' status (articles ranked higher, or newer, in the present sort criteria than the present top of page article) `<txp:newer />` will not display unless the `showalways` attribute is set to `1`. It is normally seen used in tandem with "older":older.
+An article list consists of the assigned number of articles set by the article tag. If there are no articles available having 'Newer' status (articles ranked higher, or newer, in the present sort criteria than the present top of page article) `<txp:newer />` will not display unless the `showalways` attribute is set to `1`. It is normally seen used in tandem with [older](older).
 
 Given a `<txp:article limit="5" />` tag on the page in question, `<txp:newer />` will page down five articles at a time from the most oldest post forward in time to the most recently posted article.
 
@@ -46,7 +46,7 @@ Show wrapped value even when no older page exists.
 Values: `0` (no) or `1` (yes).
 Default: `0`.
 * `title="text"`
-"HTML title attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title to be applied to link.
+[HTML title attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title) to be applied to link.
 Default: unset.
 
 ## Examples
@@ -65,7 +65,7 @@ Default: unset.
 </a>
 ```
 
-Other tags used: "image":image.
+Other tags used: [image](image).
 
 ### Example 3: Container tag - link with image
 
@@ -77,7 +77,7 @@ Other tags used: "image":image.
 
 The difference between examples 2 and 3 is that the tags in example 2 will display the image even if there are no newer articles, those used in example 3 won't.
 
-Other tags used: "image":image.
+Other tags used: [image](image).
 
 ## Genealogy
 

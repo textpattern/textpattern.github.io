@@ -61,7 +61,7 @@ Default: `10`.
 Number of files to skip.
 Default: unset.
 * `pageby="integer or limit"`
-Number of files to jump each page. Without this attribute, you cannot navigate using the "newer":newer and "older":older tags. Usually you will want to track the `limit` attribute. Use `pageby="limit"` to do this, which means you will not have to amend two values if you subsequently decide to alter the `limit`.
+Number of files to jump each page. Without this attribute, you cannot navigate using the [newer](newer) and [older](older) tags. Usually you will want to track the `limit` attribute. Use `pageby="limit"` to do this, which means you will not have to amend two values if you subsequently decide to alter the `limit`.
 Default: unset.
 * `realname="author real name"`
 Restrict to files with the specified author name.
@@ -117,7 +117,7 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Version 4.3.0
 
-`pageby` attribute added to enable paging via "newer":newer and "older":older.
+`pageby` attribute added to enable paging via [newer](newer) and [older](older).
 `author` attribute added.
 `realname` attribute added.
 `auto_detect` attribute added to allow automatic (URL-based) contextual listings.

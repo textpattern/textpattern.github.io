@@ -52,7 +52,7 @@ How to sort resulting list.
 Values:
 `discussid` (comment ID#)
 `email"`
-`ip` ("IP address":http://en.wikipedia.org/wiki/IP_address).
+`ip` ([IP address](http://en.wikipedia.org/wiki/IP_address)).
 `message"`
 `name"`
 `parentid` (article ID#)

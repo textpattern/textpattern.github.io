@@ -22,7 +22,7 @@ On this page:
 <txp:file_download_name />
 ```
 
-The **file_download_name** tag is a __single__ tag that Textpattern will replace with the name of the file to download. Should be used in a Textpattern 'file' type @@Form template@@. or within a "file_download_link":file-download-link tag.
+The **file_download_name** tag is a __single__ tag that Textpattern will replace with the name of the file to download. Should be used in a Textpattern 'file' type @@Form template@@. or within a [file_download_link](file-download-link) tag.
 
 ## Attributes
 
@@ -44,7 +44,7 @@ Default: `0`.
 </txp:file_download_link>
 ```
 
-Other tags used: "file_download_link":file-download-link, "file_download_size":file_download_size.
+Other tags used: [file_download_link](file-download-link), [file_download_size](file-download-size).
 
 ## Genealogy
 

@@ -41,7 +41,7 @@ Whether to output HTML `<a>` tag or `<link>` tag.
 Values: `a` or `link`.
 Default: `a`.
 * `title="value"`
-"HTML title attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title to be applied to link tag.
+[HTML title attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title) to be applied to link tag.
 Default: depends upon `flavor` used, either `RSS feed` or `Atom feed`.
 
 ### Common presentational attributes

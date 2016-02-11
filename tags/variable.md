@@ -79,7 +79,7 @@ Later down the @@Page@@ template or in a separate @@Form@@ you can read the attr
 </txp:if_variable>
 ```
 
-Other tags used: "else":http://docs.textpattern.io/tags/else, "if_category":http://docs.textpattern.io/tags/if-category, "if_search":http://docs.textpattern.io/tags/if-search, "if_variable":http://docs.textpattern.io/tags/if-variable, "search_term":http://docs.textpattern.io/tags/search-term.
+Other tags used: [else](else), [if_category](if-category), [if_search](if-search), [if_variable](if-variable), [search_term](search-term).
 
 ### Example 2: Use any tag's value as a conditional expression
 
@@ -102,7 +102,7 @@ The variable 'foo' can then be used as a conditional later in the code.
 
 The conditional is saying if there is a variable named 'foo' having a specific value of 'example.com/bar/baz', then output what is defined, i.e. 'do this'.
 
-Other tags used: "if_variable":http://docs.textpattern.io/tags/if-variable.
+Other tags used: [if_variable](if-variable).
 
 ## Genealogy
 

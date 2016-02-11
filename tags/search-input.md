@@ -90,7 +90,7 @@ You would then need to build your Form (i.e. `form-name`), and the absolute mini
 
 When using a customized form template, Textpattern doesn't automatically wrap the HTML form output with `<form>` tags, thus you need the opening and closing `<form>` tag pair. The `name="q"` attribute and value is **required** to initiate a search query.
 
-Other tags used: "site_url":http://docs.textpattern.io/tags/site-url.
+Other tags used: [site_url](site-url).
 
 Note: Textpattern will use a user defined form named `search_results`, or an internally defined default form if no search result form is defined by you.
 {: .alert-block .information}

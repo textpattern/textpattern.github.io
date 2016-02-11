@@ -66,7 +66,7 @@ Default: `Remember` (localized).
 </p>
 ```
 
-Other tags used: "comment_email_input":comment-email-input, "comments_help":comments-help, "comment_message_input":comment-message-input, "comment_name_input":comment-name-input, "comment_preview":comment-preview, "comment_submit":comment-submit, "comment_web_input":comment-web-input.
+Other tags used: [comment_email_input](comment-email-input), [comments_help](comments-help), [comment_message_input](comment-message-input), [comment_name_input](comment-name-input), [comment_preview](comment-preview), [comment_submit](comment-submit), [comment_web_input](comment-web-input).
 
 ## Genealogy
 

@@ -50,7 +50,7 @@ Piece of text to display, preferably an item from the `name` column of the `txp_
 
 Outputs the text 'older' inside the `<txp:older />` tag, respecting the current Textpattern language, instead of using the tag like this: `<txp:older>older</txp:older>` which would always render the English text 'older', it replaces the contents with the value assigned to the name 'older' in the current language. So you would see a link with the word 'älter' if you were using German `de` as the Textpattern site language.
 
-Other tags used: "older":http://docs.textpattern.io/tags/older.
+Other tags used: [older](older).
 
 ## Genealogy
 

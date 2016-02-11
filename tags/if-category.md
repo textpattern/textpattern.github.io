@@ -75,7 +75,7 @@ Other tags used: [author](author).
 
 Displays the category name if the article list is of category `prose`, otherwise show the site's name.
 
-Other tags used: "category":category, [else](else), "site_name":site-name.
+Other tags used: [category](category), [else](else), [site_name](site-name).
 
 ### Example 3: Display an appropriate heading
 
@@ -89,7 +89,7 @@ Other tags used: "category":category, [else](else), "site_name":site-name.
 
 Displays an appropriate heading for both category and non-category pages.
 
-Other tags used: "category":category, [else](else).
+Other tags used: [category](category), [else](else).
 
 ### Example 4: Display a category/article list
 
@@ -113,7 +113,7 @@ Given the defined article categories: `prose`, `poetry`, and `opinions`.
 
 Shows a category list and, underneath it, a list of related articles in the currently selected category. Changing the category using the list changes the related articles underneath.
 
-Other tags used: "category_list":category-list, "recent_articles":recent-articles.
+Other tags used: [category_list](category-list), [recent_articles](recent-articles).
 
 ## Genealogy
 

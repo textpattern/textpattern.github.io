@@ -29,7 +29,7 @@ The tag can, however, be used as a __single__ tag to generate a raw base URL of 
 <txp:link_to_home />
 ```
 
-In this mode it operates identically to "site_url":site-url.
+In this mode it operates identically to [site_url](site-url).
 
 ## Attributes
 
@@ -53,4 +53,4 @@ Default: unset.
 </txp:link_to_home>
 ```
 
-Other tags used: "site_name":site-name.
+Other tags used: [site_name](site-name).

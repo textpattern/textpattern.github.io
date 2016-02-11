@@ -23,7 +23,7 @@ On this page:
 <txp:section>
 ```
 
-The **section** tag can be used as either a __single__ tag or __container__ tag. It will display information about the section as defined by either the `name` attribute, the section currently being viewed, or the section of the article being displayed (if used within a Textpattern 'article' type @@Form template@@, or an "if_individual_article":http://docs.textpattern.io/tags/if-individual-article conditional tag).
+The **section** tag can be used as either a __single__ tag or __container__ tag. It will display information about the section as defined by either the `name` attribute, the section currently being viewed, or the section of the article being displayed (if used within a Textpattern 'article' type @@Form template@@, or an [if_individual_article](if-individual-article) conditional tag).
 
 When used as a containing tag, it will turn the contents into a link to that section. Otherwise, it will return plain text.
 

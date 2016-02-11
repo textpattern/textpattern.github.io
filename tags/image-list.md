@@ -1,15 +1,12 @@
 # Image list DEPRECATED [todo:pw]
 
-"mininav":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav
-
 *Do not use this tag, it was renamed to "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images!*
 
 ```html
 <txp:image_list />
 ```
 
-
-The "image_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_list tag is a __single__ or __container__ tag that Textpattern will use to gather a list of matching images uploaded via the TXP "images_panel_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel tab. Utilising the other image tags in the suite "image_info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info, "image_url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_url, "image_date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_date and "if_thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_thumbnail) you can display simple image galleries from this list.
+The **image_list** tag is a __single__ or __container__ tag that Textpattern will use to gather a list of matching images uploaded via the TXP "images_panel_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel tab. Utilising the other image tags in the suite "image_info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info, "image_url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_url, "image_date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_date and "if_thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_thumbnail) you can display simple image galleries from this list.
 
 If used as a __container__ tag, it must be specified as an opening and closing pair of tags, like this:
 
@@ -19,29 +16,16 @@ If used as a __container__ tag, it must be specified as an opening and closing p
 </txp:image_list>
 ```
 
-
-This is equivalent to putting the contained statements into a form named “my_form” and using
-
-```html
-<txp:image_list form="my_form" />
-```
-
-
-.
+This is equivalent to putting the contained statements into a form named “my_form” and using `<txp:image_list form="my_form" />`.
 
 By default, the tag is context-sensitive, which means that in the absence of any other filter attributes (*id*, **name*, **category*, **author*, **realname*, **extension*, **thumbnail*), it will grab a list of image IDs from the currently viewed article's **article_image** field. If it finds nothing there, it will check the URL to see if there is a category list in progress. If it finds nothg there too, the tag will display nothing. See the **auto_detect** attribute for further information.
 
-h3(sectionedit1#attributes). Attributes
+## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
 *"id":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#id=“integer”*
- Filter the images by this list of
-
-bc. id
-
-
-s assigned at upload. The IDs can be found on the "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images tab. Default: unset. **"name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#name=“image name”*
+ Filter the images by this list of `id`s assigned at upload. The IDs can be found on the "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images tab. Default: unset. **"name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#name=“image name”*
  Filter the images by this list of image names as shown on the "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images tab. Default: unset. **"category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#category=“image category”*
  Filter the images by this list of category names as defined in the "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories tab. **"author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#author=“author (login) ID”*
  Filter the images by this list of author IDs who uploaded the pictures to Textpattern. Default: unset. **"realname":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#realname=“author name”*
@@ -191,9 +175,9 @@ bc. name asc
  Use specified form for each image. If not used, and the container is empty, the tag will output a list of images that are compatible with "image_display":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_display. Default: unset. **"auto_detect":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#auto_detect=“string context”*
  List of Textpattern contexts to consider when automatically searching for images. If you wish to turn off the automatic check, set this to **auto_detect=““**. You can choose from the following contexts: **article** to look in the article_image field **category** to look in the URL for a category list **author** to look in the URL for an author list Default: **article, category, author*
 
-h3(sectionedit2#examples). Examples
+## Examples
 
-h4(#example_1varying_attributes). Example 1: varying attributes
+### Example 1: Varying attributes
 
 This example shows the outcome of various attribute configurations to give you an idea of what to expect from the tag. More concrete examples follow.
 
@@ -234,14 +218,13 @@ also works, but a space looks better). **&lt;code&gt;&lt;txp:image_list author=�
  all images that have thumbnails assigned to them are displayed. **&lt;code&gt;&lt;txp:image_list thumbnail=“0” /&gt;&lt;/code&gt;*
  all images that do not have thumbnails assigned to them are displayed.
 
-h4(#example_2description_goes_here). Example 2: description goes here
+### Example 2: Description goes here
 
 *What it does...*
  ...
 
-h3(sectionedit3#genealogy). Genealogy
+## Genealogy
 
-h4(#version_430). Version 4.3.0
+### Version 4.3.0
 
-* tag introduced
-
+Tag support added.

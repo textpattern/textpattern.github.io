@@ -50,7 +50,7 @@ Use specified form template to process each included section.
 Default: unset.
 * `html_id="id"`
 The HTML `id` attribute applied to the `wraptag`, if set.
-* `include_default="boolean"
+* `include_default="boolean"`
 Whether to include 'default' section in section list.
 Values: `0` (no) or `1` (yes).
 Default: `0`.
@@ -127,7 +127,7 @@ Adds the label 'Sections' and wraps the output in a paragraph with each section 
 
 This code will add `class="active"` to the `<li>` element around the currently viewed section in the list.
 
-Other tags used: "if_section":http://docs.textpattern.io/tags/if-section, "section":http://docs.textpattern.io/tags/section.
+Other tags used: [if_section](if-section), [section](section).
 
 ## Genealogy
 

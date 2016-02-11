@@ -63,7 +63,7 @@ Default: `1`.
 
 Ensures the visitor does not see a blank page when no articles match the search request.
 
-Other tags used: [else](else), "search_term":search-term.
+Other tags used: [else](else), [search_term](search-term).
 
 ### Example 2: In context within if_search
 
@@ -79,12 +79,12 @@ Other tags used: [else](else), "search_term":search-term.
 </txp:if_search>
 ```
 
-Detects if a search is in progress, calls the [article](article) tag to perform the search but **inhibits display via the `pgonly` attribute**. Once the search has been performed (internally) and Textpattern knows how many search results there are, you can then use "if_search_results":if-search-results to detect whether there were any or not. Why you have to do this? Because it's the only way to use the tag! Trying to use it without first calling an [article](article) tag will give unexpected results and, more often than not, a "Page template ... does not contain a txp:article tag" warning.
+Detects if a search is in progress, calls the [article](article) tag to perform the search but **inhibits display via the `pgonly` attribute**. Once the search has been performed (internally) and Textpattern knows how many search results there are, you can then use [if_search_results](if-search-results) to detect whether there were any or not. Why you have to do this? Because it's the only way to use the tag! Trying to use it without first calling an [article](article) tag will give unexpected results and, more often than not, a "Page template ... does not contain a txp:article tag" warning.
 
 Note: You must ensure that all attributes used in your two article tags are identical (except for any `form` attributes, which can safely be omitted when using `pgonly`). Failure to keep the tags in sync will result in strange article counts or odd behaviour.
 {: .alert-block .information}
 
-Other tags used: "if_search":if-search, [article](article), [else](else), "search_term":search-term.
+Other tags used: [if_search](if-search), [article](article), [else](else), [search_term](search-term).
 
 ### Example 3: Take action when there are too many hits
 

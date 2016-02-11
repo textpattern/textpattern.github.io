@@ -127,7 +127,7 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 This code will add `class="active"` to the `<li>` element around the current viewed category in the list, allowing your to style it with CSS as desired.
 
-Other tags used: "category":category, "if_category":if-category.
+Other tags used: [category](category), [if_category](if-category).
 
 ## Genealogy
 

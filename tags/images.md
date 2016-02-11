@@ -22,7 +22,7 @@ On this page:
 <txp:images />
 ```
 
-The **images** tag is a __single__ or __container__ tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern @@Images page@@. Utilising the other image tags in the suite "image_info":image-info, "image_url":image-url, "image_date":image-date and "if_thumbnail":if-thumbnail) you can display simple image galleries from this list.
+The **images** tag is a __single__ or __container__ tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern @@Images page@@. Utilising the other image tags in the suite [image_info](image-info), [image_url](image-url), [image_date](image-date) and [if_thumbnail](if-thumbnail)) you can display simple image galleries from this list.
 
 If used as a __container__ tag, it must be specified as an opening and closing pair of tags, like this:
 
@@ -60,26 +60,26 @@ Filter the images by this list of category names as defined in the [Categories a
 Filter the images by this list of image extensions, including the leading dot. Example: `extension=".jpg, .png"`.
 Default: unset.
 * `form="form name"`
-Use specified form template to process each image. If not used, and the container is empty, the tag will output a list of images that are compatible with "image_display":image-display.
+Use specified form template to process each image. If not used, and the container is empty, the tag will output a list of images that are compatible with [image_display](image-display).
 Default: unset.
 * `html_id="id number"`
 The HTML `id` attribute applied to the `wraptag`, if set, otherwise to the `img` tag.
 Default: unset.
 * `id="integer"`
-Filter the images by this list of `id`s assigned at upload. The IDs can be found on the "Images administration panel":../administration/images-panel.
+Filter the images by this list of `id`s assigned at upload. The IDs can be found on the [Images administration panel](../administration/images-panel).
 The order of the ids overrides the default `sort` attribute.
 Default: unset.
 * `limit="integer"`
 The number of images to display per page.
 Default: `0` (unlimited).
 * `name="image name"`
-Filter the images by this list of image names as shown on the "Images administration panel":../administration/images-panel.
+Filter the images by this list of image names as shown on the [Images administration panel](../administration/images-panel).
 Default: unset.
 * `offset="integer"`
 The number of images to skip.
 Default: `0` (only effective if `limit` is set).
 * `pageby="integer" (or "limit")"`
-The number of images to jump forward or back when an "older":older or "newer":newer link is clicked. Without this attribute, pagination is not available; you will simply see `limit` images. You may specify `pageby="limit"` to allow pagination to automatically follow the value of the `limit` attribute. Note: "newer":newer and "older":textile will paginate all content types at once.
+The number of images to jump forward or back when an [older](older) or [newer](newer) link is clicked. Without this attribute, pagination is not available; you will simply see `limit` images. You may specify `pageby="limit"` to allow pagination to automatically follow the value of the `limit` attribute. Note: [newer](newer) and [older](older) will paginate all content types at once.
 Default: unset.
 * `realname="author name"`
 Filter the image list so it only includes images uploaded by this list of author real names. The author names may be URL encoded (e.g. `realname="John+Smith"`) and thus could be read from the current `example.com/author/author+name` URL. Note that this attribute may incur one extra query per name, so if it is possible to use the raw author instead it will be faster.
@@ -270,11 +270,11 @@ All images that do not have thumbnails assigned to them are displayed.
 
 Shows the thumbnail of each image that has an assigned thumbnail image from the 'mammals' and 'birds' categories and, beneath each, show its dimensions 'width' x 'height' along with the author of the image. Since the list has been sorted by category, the `<txp:if_different>` conditional can be used to output the category title at the top of the list of images each time it changes.
 
-Other tags used: "if_different":if-different, "image_info":image-info, "thumbnail":thumbnail.
+Other tags used: [if_different](if-different), [image_info](image-info), [thumbnail](thumbnail).
 
 ### Example 3: Integration with third-party PHP resizing script (TimThumb)
 
-"TimThumb":http://www.binarymoon.co.uk/projects/timthumb/ is a simple, flexible, PHP script that resizes images directly on your web server. "Read the TimThumb documentation":http://www.binarymoon.co.uk/2010/08/timthumb/ for basic installation instructions (also requires the GD image library). Then, for example, you can use the following:
+[TimThumb](http://www.binarymoon.co.uk/projects/timthumb/) is a simple, flexible, PHP script that resizes images directly on your web server. [Read the TimThumb documentation](http://www.binarymoon.co.uk/2010/08/timthumb/) for basic installation instructions (also requires the GD image library). Then, for example, you can use the following:
 
 ```html
 <txp:images limit="6" category="gallery">
@@ -291,7 +291,7 @@ Other tags used: "if_different":if-different, "image_info":image-info, "thumbnai
 
 Creates a small gallery of 6 images from the category 'gallery'. Uses the TimThumb script to proportionately resize a thumbnail version (160px wide) of the image automatically, and keep a cached version of the thumbnail for future visitors. Links the thumbnail to the original image, and lists the image author name below each thumbnail.
 
-Other tags used: "image_author":image-author, "image_info":image-info, "image_url":image-url, "site_url":site-url.
+Other tags used: [image_author](image-author), [image_info](image-info), [image_url](image-url), [site_url](site-url).
 
 ### Example 4: Using offset and limit for news pages
 
@@ -313,7 +313,7 @@ And then later on you could drop in...
 
 ...to display the three remaining supporting images as thumbnails in a gallery, all taken from the Article Image field.
 
-Other tags used: [article_image](article-image), "thumbnail":thumbnail.
+Other tags used: [article_image](article-image), [thumbnail](thumbnail).
 
 ## Genealogy
 

@@ -19,7 +19,7 @@ Any self-closed Textpattern tag has the following syntactic structure:
 
 The tag is replaced by contents when Textpattern displays a page.
 
-Self-closed tags can usually take attributes. For example, the following "article":http://docs.textpattern.io/tags/article tag demonstrates using the `form` and `limit` attributes:
+Self-closed tags can usually take attributes. For example, the following [article](article) tag demonstrates using the `form` and `limit` attributes:
 
 ```html
 <txp:article form="formName" limit="15" />

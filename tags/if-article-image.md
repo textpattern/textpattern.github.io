@@ -54,11 +54,11 @@ This tag has no attributes.
 </txp:if_article_image>
 ```
 
-Other tags used: [article_image](article-image), [else](else), "image":image.
+Other tags used: [article_image](article-image), [else](else), [image](image).
 
 ### Example 2: Integration with third-party PHP resizing script (TimThumb)
 
-"TimThumb":http://www.binarymoon.co.uk/projects/timthumb/ is a simple, flexible, PHP script that resizes images directly on your web server. "Read the TimThumb documentation":http://www.binarymoon.co.uk/2010/08/timthumb/ for basic installation instructions (also requires the GD image library). Then, for example, you can use the following:
+[TimThumb](http://www.binarymoon.co.uk/projects/timthumb/) is a simple, flexible, PHP script that resizes images directly on your web server. [Read the TimThumb documentation](http://www.binarymoon.co.uk/2010/08/timthumb/) for basic installation instructions (also requires the GD image library). Then, for example, you can use the following:
 
 ```html
 <txp:if_article_image>
@@ -72,7 +72,7 @@ Other tags used: [article_image](article-image), [else](else), "image":image.
 
 Checks an article image exists, then uses `<txp:images>` with `limit="1"` to display that image (because the `<txp:images>` tag takes the article image as a first priority). Uses the TimThumb script to proportionately resize a 640px wide version of the image automatically, and keep a cached version of the resized image for future visitors.
 
-Other tags used: [images](images), "image_info":image-info, "image_url":image-url, "site_url":site-url.
+Other tags used: [images](images), [image_info](image-info), [image_url](image-url), [site_url](site-url).
 
 ## Genealogy
 

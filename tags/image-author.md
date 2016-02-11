@@ -69,7 +69,7 @@ bc. txp:images category="mammals">
 </txp:images>
 ```
 
-Other tags used: [images](images), "thumbnail":thumbnail.
+Other tags used: [images](images), [thumbnail](thumbnail).
 
 ### Example 2: Link to author list
 
@@ -86,7 +86,7 @@ Other tags used: [images](images), "thumbnail":thumbnail.
 
 Displays thumbnails and author info for each image in the `fish` category. The authors' names are hyperlinked to `example.com/author/image/User+Name`.
 
-Other tags used: [images](images), "thumbnail":thumbnail.
+Other tags used: [images](images), [thumbnail](thumbnail).
 
 ## Genealogy
 

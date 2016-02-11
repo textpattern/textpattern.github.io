@@ -1,46 +1,63 @@
-# Link category [todo:pw]
+---
+layout: document
+category: tags
+published: true
+title: "Link category"
+description: The link-category tag is a single tag which returns the link category as text.
+tags:
+  - Link tags
+---
+
+# Link category
+
+On this page:
+
+* [Syntax](#user-content-syntax)
+* [Attributes](#user-content-attributes)
+* [Examples](#user-content-examples)
+
+## Syntax
 
 ```html
 <txp:link_category />
 ```
 
+The **link-category** tag is a __single__ tag which returns the link category as text. This tag is used in a Textpattern 'link' type @@Form template@@ or inside the [linklist](linklist) container tag to return information about the current link in a list of links.
 
-The "link_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_category tag is a __single__ tag which returns the link category as text. This tag is used in a “link” form or inside the "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist container tag to return information about the current link in a "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist.
+## Attributes
 
-h3(sectionedit1#attributes). Attributes
+Tag will accept the following attributes (**case-sensitive**):
 
-*"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“class name”*
- CSS class to apply to the wraptag Default: unset. **"label":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#label=“text”*
- Label for the top of the list. Default: unset. **"labeltag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#labeltag=“tag text”*
- HTML tag to wrap the label at the top of the list. Default: unset. **"title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#title=“integer”*
- Display link category name or its title. Values:
+* `title="boolean"`
+Whether to display the category name or its title.
+Values: `0` (name), or `1` (title).
+Default: `0`.
 
-bc. 0
+### Common presentational attributes
 
+These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-(category name) or
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
+Default: unset (see @@class cross-reference@@).
+* `label="text"`
+Label prepended to item.
+Default: unset (but see @@label cross-reference@@ for exceptions).
+* `labeltag="element"`
+HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
+Default: unset.
+* `wraptag="element"`
+HTML tag to wrap around category text, specified without brackets (e.g. `wraptag="p"`).
+Default: unset.
 
-bc. 1
+## Examples
 
-
-(category title). Default:
-
-bc. 0
-
-
-. **"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag text”*
- HTML tag to be used to wrap the category, without brackets. Default: unset.
-
-h3(sectionedit2#examples). Examples
-
-h4(#example_1display_a_link_with_class_attribute). Example 1: Display a link with class attribute
+### Example 1: Display a link with class attribute
 
 ```html
-<a class="thislink" href="<txp:link_url />">
-<txp:link_name escape="html" />
-</a> : <txp:link_category title="1" />
+<a href="<txp:link_url />">
+    <txp:link_name escape="html" />
+</a> | <txp:link_category title="1" />
 ```
 
-
-Other tags used: "link_url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_url, "link_name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_name
-
+Other tags used: [link_url](link-url), [link_name](link_name).

@@ -66,7 +66,7 @@ Default: `5`.
 </p>
 ```
 
-Other tags used: "comment_email_input":comment-email-input, "comments_help":comments-help, "comment_name_input":comment-name-input, "comment_preview":comment-preview, "comment_remember":comment-remember, "comment_submit":comment-submit, "comment_web_input":comment-web-input.
+Other tags used: [comment_email_input](comment-email-input), [comments_help](comments-help), [comment_name_input](comment-name-input), [comment_preview](comment-preview), [comment_remember](comment-remember), [comment_submit](comment-submit), [comment_web_input](comment-web-input).
 
 ### Example 2: Text area changes in preview
 
@@ -88,7 +88,7 @@ Using some conditional tags, the size of the comment form `textarea` can be chan
 </txp:if_comments_preview>
 ```
 
-Other tags used: "comments_preview":comments-preview, "if_comments_preview":if-comments-preview, [else](else).
+Other tags used: [comments_preview](comments-preview), [if_comments_preview](if-comments-preview), [else](else).
 
 ## Genealogy
 

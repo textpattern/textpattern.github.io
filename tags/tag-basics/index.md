@@ -11,11 +11,11 @@ Textpattern tags are arguably the most important feature of Textpattern. They re
 
 The tags may be added to @@pages@@ and @@forms@@ in a variety of ways depending on what you are trying to do. The tags are replaced with the content output they call as users move from one page to another in your site.
 
-Below are a series of tag fundamentals, which will get you up and running with Textpattern tags. To learn precise details about the tags themselves, see the "tag reference":http://docs.textpattern.io/tags/index.
+Below are a series of tag fundamentals, which will get you up and running with Textpattern tags. To learn precise details about the tags themselves, see the [tag reference](../index).
 
 ## Tag basics topics
 
-# "Self-closed versus container tags":http://docs.textpattern.io/tags/tag-basics/self-closed-versus-container-tags
-# "Conditional tags":http://docs.textpattern.io/tags/tag-basics/conditional-tags
-# "Tag nesting":http://docs.textpattern.io/tags/tag-basics/tag-nesting
-# "Parsing tag attributes":http://docs.textpattern.io/tags/tag-basics/parsing-tag-attributes
+1. [Self-closed versus container tags](self-closed-versus-container-tags)
+2. [Conditional tags](conditional-tags)
+3. [Tag nesting](tag-nesting)
+4. [Parsing tag attributes](parsing-tag-attributes)
