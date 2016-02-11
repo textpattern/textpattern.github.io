@@ -21,7 +21,7 @@ On this page:
 <txp:comment_email />
 ```
 
-The *comment_email* tag is a __single__ tag which is used to display the commenter's email address, if entered at the time of posting. Should be used in a Textpattern 'comment' type @@Form template@@.
+The **comment_email** tag is a __single__ tag which is used to display the commenter's email address, if entered at the time of posting. Should be used in a Textpattern 'comment' type @@Form template@@.
 
 ## Attributes
 
@@ -41,4 +41,4 @@ This tag has no attributes.
 </p>
 ```
 
-Other tags used: "comment_id":comment-id, "comment_message":comment-message, "comment_permlink":comment-permlink.
+Other tags used: [comment_id](comment-id), [comment_message](comment-message), [comment_permlink](comment-permlink).

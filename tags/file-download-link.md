@@ -22,7 +22,7 @@ On this page:
 <txp:file_download_link />
 ```
 
-The *file_download_link* tag is both a __single__ tag and a __container__ tag. Thus it may be used as an opening and closing pair:
+The **file_download_link** tag is both a __single__ tag and a __container__ tag. Thus it may be used as an opening and closing pair:
 
 ```html
 <txp:file_download_link>
@@ -36,9 +36,9 @@ When used as a single tag, Textpattern will replace the tag with a download link
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @filename="text"@
-Specifies which file to display by its @filename@ as shown on the "Files administration panel":../administration/files-panel.
-* @id="integer"@
+* `filename="text"`
+Specifies which file to display by its `filename` as shown on the "Files administration panel":../administration/files-panel.
+* `id="integer"`
 Specifies the `id`, assigned at upload of the file, to display. Can be found on the "Files administration panel":../administration/files-panel.
 
 Note: `id` takes precedence over `filename`. If neither is defined and the tag is not used within the context of a file, nothing is returned.

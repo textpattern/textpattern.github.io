@@ -2,7 +2,7 @@
 
 This cross-reference makes clear the different Textpattern tags associated with a given attribute. For each attribute, the associated tags are listed underneath it.
 
-*Authors: DO NOT* add new tags/attributes here from development versions of Textpattern, add them to "tags_in_development":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tags_in_development to avoid confusion. Only the latest stable version of Textpattern is officially supported, and this list should only reflect the latest stable version.
+*Authors: DO NOT** add new tags/attributes here from development versions of Textpattern, add them to "tags_in_development":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tags_in_development to avoid confusion. Only the latest stable version of Textpattern is officially supported, and this list should only reflect the latest stable version.
 
 h3(sectionedit1#active_class). active_class
 
@@ -15,7 +15,7 @@ h3(sectionedit2#align). align
 
 As of version 4.2.0 this attribute is deprecated.
 
-"HTML img tag align attribute":http://www.w3.org/TR/html4/struct/objects.html#adef-align-IMG. Recommended that you use CSS via *class* or *id* attribute instead.
+"HTML img tag align attribute":http://www.w3.org/TR/html4/struct/objects.html#adef-align-IMG. Recommended that you use CSS via **class** or **id** attribute instead.
 
 * "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image
 * "image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image
@@ -93,7 +93,7 @@ bc. br
 
 h3(sectionedit8#breakclass). breakclass
 
-"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to *break* (when value supplied is a tag).
+"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to **break** (when value supplied is a tag).
 
 * "comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments
 
@@ -288,7 +288,7 @@ h3(sectionedit32#hilight). hilight
 
 h3(sectionedit33#html_id). html_id
 
-"HTML id attribute":http://www.w3.org/TR/html4/struct/global.html#adef-id to be applied to the *wraptag*.
+"HTML id attribute":http://www.w3.org/TR/html4/struct/global.html#adef-id to be applied to the **wraptag**.
 
 * "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image
 * "image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image

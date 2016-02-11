@@ -22,15 +22,15 @@ On this page:
 <txp:comment_web_input />
 ```
 
-The *comment_web_input* tag is a __single__ tag which is used to display a text entry field to accept the commenter's domain name. Used in the comment input form template.
+The **comment_web_input** tag is a __single__ tag which is used to display a text entry field to accept the commenter's domain name. Used in the comment input form template.
 
-Function assumes @http://@ for all URLs.
+Function assumes `http://` for all URLs.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @size="integer"@
+* `size="integer"`
 HTML `size` attribute to be applied to the HTML form text `input` field.
 Default: `25`.
 
@@ -71,4 +71,4 @@ Other tags used: "comment_email_input":comment-email-input, "comments_help":comm
 
 ### Version 4.6.0
 
-`size` attribute added (replaces functionality of deprecated `isize` attribute in "comments_form":comments-form tag).
+`size` attribute added (replaces functionality of deprecated `isize` attribute in [comments_form](comments-form) tag).

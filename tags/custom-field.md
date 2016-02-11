@@ -21,26 +21,26 @@ On this page:
 <txp:custom_field />
 ```
 
-The basic *custom_field* tag is a __single__ tag and used to display the contents of a custom field.
+The basic **custom_field** tag is a __single__ tag and used to display the contents of a custom field.
 
-Custom fields are useful when you need to output content having a consistent structure, usually in context to a particular type of article. Custom fields are defined in the "Preferences administration panel":../administration/preferences-panel, and used in the "Write administration panel":../administration/write-panel. There are conditions to be aware of in each case, so be sure to read the following sections, respectively:
+Custom fields are useful when you need to output content having a consistent structure, usually in context to a particular type of article. Custom fields are defined in the [Preferences administration panel](../administration/preferences-panel), and used in the [Write administration panel](../administration/write-panel). There are conditions to be aware of in each case, so be sure to read the following sections, respectively:
 
 # @@Defining custom fields@@
 # @@Adding custom field data@@
 
-Also see the "if_custom_field":if-custom-field conditional tag, which provides more flexibility and power using custom fields.
+Also see the [if_custom_field](if-custom-field) conditional tag, which provides more flexibility and power using custom fields.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @default="value"@
+* `default="value"`
 Default value to use when field is empty.
-* @escape="html"@
+* `escape="html"`
 Escape HTML entities such as `<`, `>` and `&` prior to echoing the field contents.
 Values: `html` or unset.
 Default: `html`;
-* @name="fieldname"@
+* `name="fieldname"`
 Display specified custom field.
 
 ## Examples
@@ -49,10 +49,10 @@ Display specified custom field.
 
 You might, for example, publish book reviews (for which you add the author, the title of the book, the publishing company and the year of publication), with:
 
-# a custom field named @Book_Author@ containing @J.R.R. Tolkien@,
-# a custom field named @Book_Title@ containing @The Lord of the Rings@,
-# a custom field named @Book_Publisher@ containing @HarperCollins@,
-# a custom field named @Book_Year@ containing @2004@.
+# a custom field named `Book_Author` containing `J.R.R. Tolkien`,
+# a custom field named `Book_Title` containing `The Lord of the Rings`,
+# a custom field named `Book_Publisher` containing `HarperCollins`,
+# a custom field named `Book_Year` containing `2004`.
 
 and an 'article' type form like the following:
 
@@ -74,7 +74,7 @@ HTML returned would be:
 
 ### Example 2: Power A linklog
 
-With an article title of @Textpattern@, an excerpt of @Textpattern is awesome!@, a custom field named `link` containing @http://textpattern.com/@, and an 'article' type form like the following:
+With an article title of `Textpattern`, an excerpt of `Textpattern is awesome!`, a custom field named `link` containing `http://textpattern.com/`, and an 'article' type form like the following:
 
 ```html
 <article class="linklog-entry">
@@ -104,11 +104,11 @@ HTML returned would be:
 </article>
 ```
 
-Other tags used: "title":title, "posted":posted, "excerpt":excerpt.
+Other tags used: [title](title), [posted](posted), [excerpt](excerpt).
 
 ### Example 3: Unescaping HTML output
 
-With a custom field named @foo@ containing:
+With a custom field named `foo` containing:
 
 ```html
 <a href="../here/">

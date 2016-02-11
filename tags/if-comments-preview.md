@@ -22,7 +22,7 @@ On this page:
 <txp:if_comments_preview>
 ```
 
-The *if_comments_preview* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_comments_preview** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_comments_preview>

@@ -24,7 +24,7 @@ On this page:
 <txp:if_article_image>
 ```
 
-The *if_article_image* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_article_image** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_article_image>
@@ -32,7 +32,7 @@ The *if_article_image* tag is a _conditional_ tag and always used as an opening 
 </txp:if_article_image>
 ```
 
-The tag will execute the contained statements if an image is associated (through the "Write administration panel":../administration/write-panel 'Article image' field) with the article being displayed.
+The tag will execute the contained statements if an image is associated (through the [Write administration panel](../administration/write-panel) 'Article image' field) with the article being displayed.
 
 ## Attributes
 
@@ -54,7 +54,7 @@ This tag has no attributes.
 </txp:if_article_image>
 ```
 
-Other tags used: "article_image":article-image, "else":else, "image":image.
+Other tags used: [article_image](article-image), [else](else), "image":image.
 
 ### Example 2: Integration with third-party PHP resizing script (TimThumb)
 
@@ -70,9 +70,9 @@ Other tags used: "article_image":article-image, "else":else, "image":image.
 </txp:if_article_image>
 ```
 
-Checks an article image exists, then uses @<txp:images>@ with @limit="1"@ to display that image (because the @<txp:images>@ tag takes the article image as a first priority). Uses the TimThumb script to proportionately resize a 640px wide version of the image automatically, and keep a cached version of the resized image for future visitors.
+Checks an article image exists, then uses `<txp:images>` with `limit="1"` to display that image (because the `<txp:images>` tag takes the article image as a first priority). Uses the TimThumb script to proportionately resize a 640px wide version of the image automatically, and keep a cached version of the resized image for future visitors.
 
-Other tags used: "images":images, "image_info":image-info, "image_url":image-url, "site_url":site-url.
+Other tags used: [images](images), "image_info":image-info, "image_url":image-url, "site_url":site-url.
 
 ## Genealogy
 

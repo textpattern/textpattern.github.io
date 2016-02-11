@@ -22,7 +22,7 @@ On this page:
 <txp:if_article_category>
 ```
 
-The *if_article_category* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_article_category** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_article_category>
@@ -36,10 +36,10 @@ It will execute the contained statement if the category name associated with a p
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @name="category"@
-Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the "Categories administration panel":../administration/categories-panel. Also note that if you had called your category 'My Category Name' it becomes @my-category-name@ when used in tags.
+* `name="category"`
+Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the [Categories administration panel](../administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes `my-category-name` when used in tags.
 Default: unset.
-* @number="number"@
+* `number="number"`
 Match category in Category1 or Category2 (or both).
 Values: `1` or `2`.
 Default: unset, causing both categories to be matched against the specified name.
@@ -56,9 +56,9 @@ Default: unset, causing both categories to be matched against the specified name
 </txp:if_article_category>
 ```
 
-If the Category1 assigned to the article is 'Prose', the category is displayed. Note that the category *name* is used in this tag, which may be different to its displayed category *Title*. When categories are created, Textpattern converts them to lowercase and replaces spaces with hyphens. So, for example, 'My Category' has a name @my-category@.
+If the Category1 assigned to the article is 'Prose', the category is displayed. Note that the category **name** is used in this tag, which may be different to its displayed category **Title**. When categories are created, Textpattern converts them to lowercase and replaces spaces with hyphens. So, for example, 'My Category' has a name `my-category`.
 
-Other tags used: "category1":category1.
+Other tags used: [category1](category1).
 
 ### Example 2: Using the tag with else
 
@@ -74,7 +74,7 @@ Other tags used: "category1":category1.
 
 Displays the welcome text if the category and category number match the given values, or shows a default link otherwise.
 
-Other tags used: "else":else.
+Other tags used: [else](else).
 
 ### Example 3: Display a list of matching links
 
@@ -92,4 +92,4 @@ In an article form, put the following set of conditionals for each category you 
 
 Lists articles of the same category as the current article's Category1.
 
-Other tags used: "article_custom":article-custom, "else":else, "title":title, "permlink":permlink.
+Other tags used: [article_custom](article-custom), [else](else), [title](title), [permlink](permlink).

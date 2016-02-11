@@ -22,25 +22,25 @@ On this page:
 <txp:comments_form />
 ```
 
-The *comments_form* tag is a __single__ tag which is used to display a comment form. Comments will be attached to present individual article as a default, or to the article set by the `id` attribute.
+The **comments_form** tag is a __single__ tag which is used to display a comment form. Comments will be attached to present individual article as a default, or to the article set by the `id` attribute.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @form="form name"@
+* `form="form name"`
 Use specified form template.
-Default: @comment_form@.
+Default: `comment_form`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="CSS class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
-Default: @comments_form@ (see @@class cross-reference@@).
-* @wraptag="tag"@
-HTML tag to wrap around output, specified without brackets (e.g. @wraptag="p"@).
+* `class="CSS class name"`
+HTML `class` to apply to the `wraptag` attribute value.
+Default: `comments_form` (see @@class cross-reference@@).
+* `wraptag="tag"`
+HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -68,7 +68,7 @@ Other tags used: "if_comments_allowed":if-comments-allowed, "else":.
 </txp:if_comments_allowed>
 ```
 
-And then an example of what the form @lineitem@ could contain:
+And then an example of what the form `lineitem` could contain:
 
 ```html
 <txp:comment_id />
@@ -76,19 +76,19 @@ And then an example of what the form @lineitem@ could contain:
 
 For the current article, returns a list of id numbers for comments and a comment input form (but only if comments are currently allowed).
 
-Other tags used: "comment_id":comment-id, "comments":comments, "if_comments_allowed":if-comments-allowed.
+Other tags used: [comment_id](comment-id), "comments":comments, "if_comments_allowed":if-comments-allowed.
 
 ## Genealogy
 
 ### Version 4.6.0
 
-@msgstyle@ attribute deprecated.
-@forgetlabel@, `isize`, @msgcols@, @msgrows@, @msgstyle@, @previewlabel@, @rememberlabel@ and @submitlabel@ attributes deprecated and functionality moved to individual @comment_*@ input tags.
+`msgstyle` attribute deprecated.
+`forgetlabel`, `isize`, `msgcols`, `msgrows`, `msgstyle`, `previewlabel`, `rememberlabel` and `submitlabel` attributes deprecated and functionality moved to individual `comment_*` input tags.
 
 ### Version 4.5.0
 
-Added @forgetlabel@, @previewlabel@, @rememberlabel@ and @submitlabel@ attributes.
+Added `forgetlabel`, `previewlabel`, `rememberlabel` and `submitlabel` attributes.
 
 ### Version 4.0.4
 
-@show_preview@ attribute removed.
+`show_preview` attribute removed.

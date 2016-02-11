@@ -21,7 +21,7 @@ On this page:
 <txp:comments_error />
 ```
 
-The *comments_error* tag is a __single__ tag which is used to produce the current comments error.
+The **comments_error** tag is a __single__ tag which is used to produce the current comments error.
 
 ## Attributes
 
@@ -31,14 +31,14 @@ Tag will accept the following attributes (**case-sensitive**):
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @break="value"@
-Where value is an HTML element, specified without brackets (e.g. @break="li"@) or some string to separate list items.
-Default: @br@ (but see @@break cross-reference@@ for exceptions).
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
-Default: @comments_error@ (see @@class cross-reference@@).
-* @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
+* `break="value"`
+Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
+Default: `br` (but see @@break cross-reference@@ for exceptions).
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
+Default: `comments_error` (see @@class cross-reference@@).
+* `wraptag="element"`
+HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -51,4 +51,4 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 </txp:if_comments_error>
 ```
 
-Other tags used: "if_comments_error":if-comments-error.
+Other tags used: [if_comments_error](if-comments-error).

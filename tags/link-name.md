@@ -22,13 +22,13 @@ On this page:
 <txp:link_name />
 ```
 
-The *link_name* tag is a __single__ tag which returns the name of the link as assigned on the links pane as text. This tag is used in a 'links' type form or inside the "linklist":linklist container tag to display information about the current link.
+The **link_name** tag is a __single__ tag which returns the name of the link as assigned on the links pane as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to display information about the current link.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @escape="html"@
+* `escape="html"`
 Escape HTML entities such as `<`, `>` and `&`.
 Values: `html` or unset.
 Default: `html`;
@@ -49,4 +49,4 @@ Other tags used: "link_url":link-url.
 
 ### Version 4.0.7
 
-Default value for @escape@ attribute changed from unset to `html`.
+Default value for `escape` attribute changed from unset to `html`.

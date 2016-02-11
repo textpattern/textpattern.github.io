@@ -22,7 +22,7 @@ On this page:
 <txp:if_comments_error>
 ```
 
-The *if_comments_error* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_comments_error** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_comments_error>
@@ -46,4 +46,4 @@ This tag has no attributes.
 </txp:if_comments_error>
 ```
 
-Other tags used: "comments_error":comments-error.
+Other tags used: [comments_error](comments-error).

@@ -21,7 +21,7 @@ On this page:
 <txp:if_last_article>
 ```
 
-The *if_last_article* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_last_article** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_last_article>
@@ -58,4 +58,4 @@ This tag has no attributes.
 </txp:if_last_article>
 ```
 
-Other tags used: "permlink""permlink, "title":title, "posted":posted, "author":author, "body":body, "comments_invite":comments-invite.
+Other tags used: "permlink""permlink, [title](title), [posted](posted), [author](author), [body](body), [comments_invite](comments-invite).

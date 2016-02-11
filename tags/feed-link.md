@@ -22,47 +22,47 @@ On this page:
 <txp:feed_link>
 ```
 
-The *feed_link* tag can be used as either a __single__ or __container__ tag and is used to output a link to the site's 'articles' RSS feed. When used as a container tag, it will turn the contents into a link to the feed, otherwise the value of @label@ attribute will be used as link text. Should be used in a Textpattern @@Page template@@.
+The **feed_link** tag can be used as either a __single__ or __container__ tag and is used to output a link to the site's 'articles' RSS feed. When used as a container tag, it will turn the contents into a link to the feed, otherwise the value of `label` attribute will be used as link text. Should be used in a Textpattern @@Page template@@.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @category="category name"@
-Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the "Categories administration panel":../administration/categories-panel to ensure you are using the correct names.
+* `category="category name"`
+Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories administration panel](../administration/categories-panel) to ensure you are using the correct names.
 Values: (comma separated list of) category name(s).
 Default: current category.
-* @flavor="value"@
+* `flavor="value"`
 Whether to output a link to the RSS or Atom version of the feed.
-Values: @rss@ or @atom@.
-Default: @rss@.
-* @format="value"@
-Whether to output HTML @<a>@ tag or @<link>@ tag.
-Values: @a@ or `link`.
-Default: @a@.
-* @limit="integer"@
+Values: `rss` or `atom`.
+Default: `rss`.
+* `format="value"`
+Whether to output HTML `<a>` tag or `<link>` tag.
+Values: `a` or `link`.
+Default: `a`.
+* `limit="integer"`
 Number of articles to display in the feed.
-Default: depends upon "Preferences administration panel":../administration/preferences-panel setting.
-* @section="section name"@
+Default: depends upon [Preferences administration panel](../administration/preferences-panel) setting.
+* `section="section name"`
 Restrict to articles from specified section(s).
 Values: (comma separated list of) section name(s).
 Default: current section.
-* @title="value"@
+* `title="value"`
 "HTML title attribute":https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title to be applied to link tag.
-Default: depends upon @flavor@ used, either @RSS feed@ or @Atom feed@.
+Default: depends upon `flavor` used, either `RSS feed` or `Atom feed`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
 Default: tag name or unset (see @@class cross-reference@@).
-* @label="text"@
+* `label="text"`
 Label prepended to item.
 Default: unset (but see @@label cross-reference@@ for exceptions).
-* @wraptag="element"@
-HTML element to wrap feed link, specified without brackets (e.g. @wraptag="p"@).
+* `wraptag="element"`
+HTML element to wrap feed link, specified without brackets (e.g. `wraptag="p"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 Note: `wraptag` is applicable only when using `format` of `a`.
@@ -90,11 +90,11 @@ Note: `wraptag` is applicable only when using `format` of `a`.
 <txp:feed_link section="" category="" />
 ```
 
-Creates a link to the site's feed for articles in all sections and categories. If you omit the @section@ and @category@ attributes, the feed will default to the current section/category.
+Creates a link to the site's feed for articles in all sections and categories. If you omit the `section` and `category` attributes, the feed will default to the current section/category.
 
 ### Example 4: With Symbolset's 'rss' glyph
 
-If you happen to use the 'rss' glyph in the social media set of "Symbolset":http://symbolset.com, you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first three list items show below. For the RSS glyph you need to put the selectors in the @<li>@ since you can't put them in the @<a>@, as the last list item shows:
+If you happen to use the 'rss' glyph in the social media set of [Symbolset](http://symbolset.com), you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first three list items show below. For the RSS glyph you need to put the selectors in the `<li>` since you can't put them in the `<a>`, as the last list item shows:
 
 ```html
 <ul class="socbar">
@@ -113,26 +113,26 @@ If you happen to use the 'rss' glyph in the social media set of "Symbolset":http
 </ul>
 ```
 
-If you're using Symbolset, then you'll know that the @label=""@ attribute value in the last list item above *has* to be @rss@ for the glyph to work. If you try and put the two Symbolset @class@ attribute values in the *feed_link* tag using its @class@ attribute, it won't work, unfortunately. But putting them in the @<li>@ element, like shown above, does work.
+If you're using Symbolset, then you'll know that the `label="` attribute value in the last list item above **has** to be `rss` for the glyph to work. If you try and put the two Symbolset `class` attribute values in the **feed_link** tag using its `class` attribute, it won't work, unfortunately. But putting them in the `<li>` element, like shown above, does work.
 
-There is no @atom@ trigger word in Symbolset! So while you can use @flavor="atom"@ and create an Atom feed just fine, you still need to use @label="rss"@ for the link label to call the Symbolset glyph. This shouldn't be a problem because the glyph replaces the link text. You can then use @title=""@ to provide a custom hover text, or leave it out for the default display: 'Atom feed'.
+There is no `atom` trigger word in Symbolset! So while you can use `flavor="atom"` and create an Atom feed just fine, you still need to use `label="rss"` for the link label to call the Symbolset glyph. This shouldn't be a problem because the glyph replaces the link text. You can then use `title="` to provide a custom hover text, or leave it out for the default display: 'Atom feed'.
 
 Then the CSS must be like follows to target both instances of Symbolset glyph use:
 
 ```css
-/* Common rules */
+/** Common rules **/
 a.ss-icon,
 li.ss-icon a {
-    /* design as you want */
+    /** design as you want **/
 }
 
-/* Target each one if specific hover effect is wanted */
+/** Target each one if specific hover effect is wanted **/
 .twit:hover {
-    /* design as you want */
+    /** design as you want **/
 }
 ... etc ...
 li.email a:hover {
-    /* design as you want */
+    /** design as you want **/
 }
 ```
 
@@ -142,8 +142,8 @@ See the "email":email tag for a similar solution for Symbolset's 'email' glyph.
 
 ### Version 4.3.0
 
-@class@ attribute added.
+`class` attribute added.
 
 ### Version 4.0.4
 
-@format@ attribute added.
+`format` attribute added.

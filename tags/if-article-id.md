@@ -23,7 +23,7 @@ On this page:
 <txp:if_article_id>
 ```
 
-The *if_article_id* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_article_id** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_article_id>
@@ -31,13 +31,13 @@ The *if_article_id* tag is a _conditional_ tag and always used as an opening and
 </txp:if_article_id>
 ```
 
-The tag will execute the contained statement if the article id associated with a particular article matches the id attribute. Should be used in an article form/container. The `id` attribute *must* be used in an *article list context* (when producing a page that displays more than one article) or the tag will do nothing.
+The tag will execute the contained statement if the article id associated with a particular article matches the id attribute. Should be used in an article form/container. The `id` attribute **must** be used in an **article list context** (when producing a page that displays more than one article) or the tag will do nothing.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @id="integer"@
+* `id="integer"`
 Comma delimited integer article ID list.
 Default: current article's ID if available (i.e.,on a page that displays a single article).
 
@@ -55,7 +55,7 @@ Default: current article's ID if available (i.e.,on a page that displays a singl
 
 Displays the article title if the id of the current article is 33.
 
-Other tags used: "title":title.
+Other tags used: [title](title).
 
 ### Example 2: Display a list of articles omitting current article
 
@@ -74,7 +74,7 @@ Other tags used: "title":title.
 
 Displays an unordered linked list of articles from the same section omitting the article currently viewed.
 
-Other tags used: "article_custom":article_custom, "section":section, "else":else, "permlink":permlink, "title":title.
+Other tags used: "article_custom":article_custom, [section](section), [else](else), [permlink](permlink), [title](title).
 
 ## Genealogy
 

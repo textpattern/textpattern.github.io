@@ -12,7 +12,7 @@ On this page:
 <txp:link_url />
 ```
 
-The *link_url* tag is a __single__ tag which returns the URL of the link as text. This tag is used in a 'links' type form or inside the "linklist":linklist container tag to show information about the current link in the list.
+The **link_url** tag is a __single__ tag which returns the URL of the link as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to show information about the current link in the list.
 
 ## Attributes
 

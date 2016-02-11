@@ -22,7 +22,7 @@ On this page:
 <txp:article_id />
 ```
 
-The @article_id@ tag is a __single__ tag which returns the numeric ID of the article being displayed. This number will also be reflected as a part of the article permanent URL if it has been chosen as the 'Permanent link mode' in the "Preferences administration panel":../administration/preferences-panel.
+The `article_id` tag is a __single__ tag which returns the numeric ID of the article being displayed. This number will also be reflected as a part of the article permanent URL if it has been chosen as the 'Permanent link mode' in the [Preferences administration panel](../administration/preferences-panel).
 
 ## Attributes
 
@@ -38,7 +38,7 @@ This tag has no attributes.
 </txp:permlink>
 ```
 
-Other tags used: "permlink":permlink.
+Other tags used: [permlink](permlink).
 
 ### Example 2: Conditional use
 
@@ -53,4 +53,4 @@ This will only display the hyperlinked article ID when on an individual article 
 </txp:if_individual_article>
 ```
 
-Other tags used: "if_individual_article":if-individual-article, "permlink":permlink.
+Other tags used: [if_individual_article](if-individual-article), [permlink](permlink).

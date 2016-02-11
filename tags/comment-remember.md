@@ -22,18 +22,18 @@ On this page:
 <txp:comment_remember />
 ```
 
-The *comment_remember* tag is a __single__ tag which is used to display a check box input field. If checked the users details are remembered by the system the next time they open a comment form. Used in the comment input form template.
+The **comment_remember** tag is a __single__ tag which is used to display a check box input field. If checked the users details are remembered by the system the next time they open a comment form. Used in the comment input form template.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @forgetlabel="text"@
-Label that appears next to the 'Forget' @checkbox@.
-Default: @Forget@ (localized).
-* @rememberlabel="text"@
-Label that appears next to the 'Remember' @checkbox@.
-Default: @Remember@ (localized).
+* `forgetlabel="text"`
+Label that appears next to the 'Forget' `checkbox`.
+Default: `Forget` (localized).
+* `rememberlabel="text"`
+Label that appears next to the 'Remember' `checkbox`.
+Default: `Remember` (localized).
 
 ## Examples
 
@@ -72,4 +72,4 @@ Other tags used: "comment_email_input":comment-email-input, "comments_help":comm
 
 ### Version 4.6.0
 
-@forgetlabel@ and @rememberlabel@ attributes added (replaces functionality of deprecated @forgetlabel@ and @rememberlabel@ attributes in "comments_form":comments-form tag).
+`forgetlabel` and `rememberlabel` attributes added (replaces functionality of deprecated `forgetlabel` and `rememberlabel` attributes in [comments_form](comments-form) tag).

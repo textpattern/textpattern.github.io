@@ -22,7 +22,7 @@ On this page:
 <txp:if_first_article>
 ```
 
-The *if_first_article* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_first_article** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_first_article>
@@ -60,7 +60,7 @@ This tag has no attributes.
 
 Displays a link to the header of the first article in an article list.
 
-Other tags used: "permlink":permlink, "title":title, "author":author, "posted":posted, "section":section, "body":body, "comments_invite":comments-invite.
+Other tags used: [permlink](permlink), [title](title), [author](author), [posted](posted), [section](section), [body](body), [comments_invite](comments-invite).
 
 ### Example 2: Add a class to a list item
 
@@ -74,4 +74,4 @@ Other tags used: "permlink":permlink, "title":title, "author":author, "posted":p
 
 Adds a CSS class to the first article in an article list.
 
-Other tags used: "permlink":permlink, "title":title.
+Other tags used: [permlink](permlink), [title](title).

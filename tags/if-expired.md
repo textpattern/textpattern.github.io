@@ -23,7 +23,7 @@ On this page:
 <txp:if_expired>
 ```
 
-The *if_expired* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_expired** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_expired>
@@ -53,7 +53,7 @@ This tag has no attributes.
 </txp:if_expired>
 ```
 
-Other tags used: "else":else, "expires":expires, "if_expires":if_expires.
+Other tags used: [else](else), [expires](expires), [if_expires](if_expires).
 
 ## Genealogy
 

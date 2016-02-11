@@ -34,9 +34,9 @@ h4(#use_special_formatting_for_all_the_articles_by_a_specific_author). Use speci
 
 h3(sectionedit2#nesting). Nesting
 
-Conditional tags may be nested, unless you are nesting a tag within the *same* tag.
+Conditional tags may be nested, unless you are nesting a tag within the **same** tag.
 
-For example, these *will* work:
+For example, these **will** work:
 
 <pre class="code">
 &lt;txp:if_section&gt;
@@ -61,7 +61,7 @@ oranges!
 </pre>
 ```
 
-These will *not* work:
+These will **not** work:
 
 ```html
 <txp:if_custom_field name="apples">

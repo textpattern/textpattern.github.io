@@ -23,7 +23,7 @@ On this page:
 <txp:if_variable>
 ```
 
-The *if_variable* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_variable** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_variable>
@@ -40,10 +40,10 @@ Note: In case you are getting unexpected results in an **if_variable** evaluatio
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @name="variable name"@
+* `name="variable name"`
 The name of the variable you wish to check.
-* @value="value"@
-The (optional) value which the named variable must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns 'true' if the named variable is defined. If this attribute's value is omitted (i.e. @value=""@), the tag returns 'true' if the variable is defined, but has no value.
+* `value="value"`
+The (optional) value which the named variable must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns 'true' if the named variable is defined. If this attribute's value is omitted (i.e. `value="`), the tag returns 'true' if the variable is defined, but has no value.
 
 ## Examples
 

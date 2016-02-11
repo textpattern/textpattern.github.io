@@ -21,7 +21,7 @@ On this page:
 <txp:hide />
 ```
 
-The *hide* tag is a __container__ tag which is used to suppress the interpretation of all enclosed contents. Use it for comments, temporary concealment of article text parts or non-destructive form changes.
+The **hide** tag is a __container__ tag which is used to suppress the interpretation of all enclosed contents. Use it for comments, temporary concealment of article text parts or non-destructive form changes.
 
 ## Attributes
 
@@ -37,7 +37,7 @@ This tag has no attributes.
 
 ### Example 2: Comment out part of a form for testing
 
-If you want to try something out to see how it affects the layout without actually deleting the content, wrap it in *hide* tags:
+If you want to try something out to see how it affects the layout without actually deleting the content, wrap it in **hide** tags:
 
 ```html
 <div class="entry-content">
@@ -53,6 +53,6 @@ If you want to try something out to see how it affects the layout without actual
 </txp:hide>
 ```
 
-Renders the body text inside the @<div class="entry-content">@ but skips the @<address>@ and @<txp:comments_invite />@ tags.
+Renders the body text inside the `<div class="entry-content">` but skips the `<address>` and `<txp:comments_invite />` tags.
 
-Other tags used: "body":body, "author":author, "comments_invite":comments-invite.
+Other tags used: [body](body), [author](author), [comments_invite](comments-invite).

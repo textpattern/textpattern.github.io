@@ -23,7 +23,7 @@ On this page:
 <txp:if_first_category>
 ```
 
-The *if_first_category* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_first_category** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_first_category>
@@ -55,7 +55,7 @@ This tag has no attributes.
 
 Prevents the first category in the list from being hyperlinked to a category page. Why you might do it? If you nest categories under a 'header' category you might want to show the header of the group but not allow people to link to its category page.
 
-Other tags used: "category":/category, "category_list":category-list, "else":else.
+Other tags used: "category":/category, "category_list":category-list, [else](else).
 
 ## Genealogy
 

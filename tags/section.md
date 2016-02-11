@@ -23,7 +23,7 @@ On this page:
 <txp:section>
 ```
 
-The *section* tag can be used as either a __single__ tag or __container__ tag. It will display information about the section as defined by either the @name@ attribute, the section currently being viewed, or the section of the article being displayed (if used within a Textpattern 'article' type @@Form template@@, or an "if_individual_article":http://docs.textpattern.io/tags/if-individual-article conditional tag).
+The **section** tag can be used as either a __single__ tag or __container__ tag. It will display information about the section as defined by either the `name` attribute, the section currently being viewed, or the section of the article being displayed (if used within a Textpattern 'article' type @@Form template@@, or an "if_individual_article":http://docs.textpattern.io/tags/if-individual-article conditional tag).
 
 When used as a containing tag, it will turn the contents into a link to that section. Otherwise, it will return plain text.
 
@@ -31,18 +31,18 @@ When used as a containing tag, it will turn the contents into a link to that sec
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @link="boolean"@ (works only in the __single__ tag)
+* `link="boolean"` (works only in the __single__ tag)
 Display as plain text or a link.
 Values: `0` (plain text) or `1` (link).
 Default: `0`.
-* @name="section name"@
+* `name="section name"`
 Display the named section.
 Default: unset (display the current section).
-* @title="boolean"@
+* `title="boolean"`
 Display either the section name or its title.
 Values: `0` (name) or `1` (title).
 Default: `0`.
-* @url="boolean"@
+* `url="boolean"`
 Display plain URL or full link.
 Values: `0` or `1`.
 Default: `0` (display title or full link, depending on `link`).
@@ -51,11 +51,11 @@ Default: `0` (display title or full link, depending on `link`).
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value. If no wraptag is supplied (and @link="1"@), the class is applied to the anchor instead.
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value. If no wraptag is supplied (and `link="1"`), the class is applied to the anchor instead.
 Default: unset (see @@class cross-reference@@).
-* @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
+* `wraptag="element"`
+HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -80,7 +80,7 @@ In an article form, it displays the article's section title as a hyperlink to th
 <txp:section link="1" title="1" wraptag="p" name="archive" />
 ```
 
-Displays a hyperlink to the 'archive' section home page, wrapped in @<p>@ tags, using the section's title as link text.
+Displays a hyperlink to the 'archive' section home page, wrapped in `<p>` tags, using the section's title as link text.
 
 ### Example 4: Container tag example
 
@@ -126,5 +126,5 @@ And for messy URLs:
 
 ### Version 4.0.7
 
-Applies @class@ attribute to the @<a>@ element when @wraptag@ is empty.
-@url@ attribute added.
+Applies `class` attribute to the `<a>` element when `wraptag` is empty.
+`url` attribute added.

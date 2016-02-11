@@ -22,7 +22,7 @@ On this page:
 <txp:recent_comments />
 ```
 
-The *recent_comments* tag is a __single__ or a __container__ tag. Textpattern will replace this tag with a list of permanent links to recent comments. This list will be displayed with the format:
+The **recent_comments** tag is a __single__ or a __container__ tag. Textpattern will replace this tag with a list of permanent links to recent comments. This list will be displayed with the format:
 
 bc. User's Name (Article Name)
 
@@ -38,47 +38,47 @@ If used as a container, the tag must be specified as an opening and closing pair
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @form="form name"@
+* `form="form name"`
 Use specified form template.
 Default: unset (if left empty, the commenter's name and article title in which the comment was made will be permlinked).
-* @limit="integer"@
+* `limit="integer"`
 Number of comments to display.
 Default: `10`.
-* @offset="integer"@
+* `offset="integer"`
 Number of comments to skip.
 Default: `0`.
-* @sort="sort value(s)"@
+* `sort="sort value(s)"`
 How to sort resulting list.
 Values:
-@discussid@ (comment ID#)
-@email@
-@ip@ ("IP address":http://en.wikipedia.org/wiki/IP_address).
-@message@
-@name@
-@parentid@ (article ID#)
-@posted@
-@rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
-@web@
-Default: @posted asc@.
+`discussid` (comment ID#)
+`email"`
+`ip` ("IP address":http://en.wikipedia.org/wiki/IP_address).
+`message"`
+`name"`
+`parentid` (article ID#)
+`posted"`
+`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)).
+`web"`
+Default: `posted asc`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @break="value"@
-Where value is an HTML element, specified without brackets (e.g. @break="li"@) or some string to separate list items.
-Default: @br@ (but see @@break cross-reference@@ for exceptions).
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
+* `break="value"`
+Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
+Default: `br` (but see @@break cross-reference@@ for exceptions).
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
 Default: tag name or unset (see @@class cross-reference@@).
-* @label="text"@
+* `label="text"`
 Label prepended to item.
 Default: unset (but see @@label cross-reference@@ for exceptions).
-* @labeltag="element"@
-HTML element to wrap (markup) label, specified without brackets (e.g. labeltag="h3").
+* `labeltag="element"`
+HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
 Default: unset.
-* @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
+* `wraptag="element"`
+HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -102,4 +102,4 @@ This example also increases the results to a maximum of 25 list items (instead o
 ### Version 4.0.7
 
 Can be used as a container tag.
-@offset@ attribute added.
+`offset` attribute added.

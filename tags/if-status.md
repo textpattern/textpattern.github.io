@@ -22,7 +22,7 @@ On this page:
 <txp:if_status>
 ```
 
-The *if_status* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_status** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_status>
@@ -38,9 +38,9 @@ This tag provides a method of sharing one page template between common pages and
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @status="number"@
-Numerical "HTTP status code":https://en.wikipedia.org/wiki/List_of_HTTP_status_codes.
-Default: @200@ (OK).
+* `status="number"`
+Numerical [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+Default: `200` (OK).
 
 ## Examples
 

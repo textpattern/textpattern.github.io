@@ -22,13 +22,13 @@ On this page:
 <txp:file_download_name />
 ```
 
-The *file_download_name* tag is a __single__ tag that Textpattern will replace with the name of the file to download. Should be used in a Textpattern 'file' type @@Form template@@. or within a "file_download_link":file-download-link tag.
+The **file_download_name** tag is a __single__ tag that Textpattern will replace with the name of the file to download. Should be used in a Textpattern 'file' type @@Form template@@. or within a "file_download_link":file-download-link tag.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @title="boolean"@
+* `title="boolean"`
 Whether to display the file download name or its title.
 Values: `0` (name), or `1` (title).
 Default: `0`.
@@ -50,4 +50,4 @@ Other tags used: "file_download_link":file-download-link, "file_download_size":f
 
 ### Version 4.3.0
 
-@title@ attribute added.
+`title` attribute added.

@@ -22,7 +22,7 @@ On this page:
 <txp:if_article_section>
 ```
 
-The *if_article_section* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_article_section** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_article_section>
@@ -30,13 +30,13 @@ The *if_article_section* tag is a _conditional_ tag and always used as an openin
 </txp:if_article_section>
 ```
 
-The tag will execute the contained statements if the section name associated with a particular article matches the value of the @name@ attribute. Should be used in an article form.
+The tag will execute the contained statements if the section name associated with a particular article matches the value of the `name` attribute. Should be used in an article form.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @name="section"@
+* `name="section"`
 Comma-separated list of section names.
 
 ## Examples
@@ -49,9 +49,9 @@ Comma-separated list of section names.
 </txp:if_article_section>
 ```
 
-Displays the author name if the current article belongs to the section named @poetry@.
+Displays the author name if the current article belongs to the section named `poetry`.
 
-Other tags used: "author":author.texttile.
+Other tags used: [author](author).texttile.
 
 ### Example 2: Using the tag with else
 
@@ -63,6 +63,6 @@ Other tags used: "author":author.texttile.
 </txp:if_article_section>
 ```
 
-Display the welcome text if the article's section matches @poetry@, or shows a default link otherwise.
+Display the welcome text if the article's section matches `poetry`, or shows a default link otherwise.
 
-Other tags used: "else":else.
+Other tags used: [else](else).

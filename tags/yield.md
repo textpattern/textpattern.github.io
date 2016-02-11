@@ -22,9 +22,9 @@ On this page:
 <txp:yield />
 ```
 
-The *yield* tag is a __single__ tag which is used to return the inner content of the enclosing @<txp:output_form />@ tag.
+The **yield** tag is a __single__ tag which is used to return the inner content of the enclosing `<txp:output_form />` tag.
 
-The tag works in unison with the "output_form":http://docs.textpattern.io/tags/output-form tag; You place a @<txp:yield />@ tag in a form and then wherever you use that form the content wrapped inside the *output_form* tag gets placed where the *yield* tag was. Essentially, the value of this is that you can use forms as flexible building blocks - each building block has a common structure, but individualized content.
+The tag works in unison with the "output_form":http://docs.textpattern.io/tags/output-form tag; You place a `<txp:yield />` tag in a form and then wherever you use that form the content wrapped inside the **output_form** tag gets placed where the **yield** tag was. Essentially, the value of this is that you can use forms as flexible building blocks - each building block has a common structure, but individualized content.
 
 ## Attributes
 
@@ -34,7 +34,7 @@ This tag has no attributes.
 
 ### Example: Inner content
 
-Given the following form named @example_form@:
+Given the following form named `example_form`:
 
 ```html
 <div>

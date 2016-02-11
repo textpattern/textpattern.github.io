@@ -21,7 +21,7 @@ On this page:
 <txp:site_url />
 ```
 
-The *site_url* tag is a __single__ tag which returns the full URL of the site (as defined in the "Preferences administration panel":http://docs.textpattern.io/administration/preferences-panel) as text. If you maintain local development versions of your live sites and import databases between them, then this tag is extremely valuable for ensuring your domain links are never confused (and thus broken) between the two locations (see example 1, below).
+The **site_url** tag is a __single__ tag which returns the full URL of the site (as defined in the "Preferences administration panel":http://docs.textpattern.io/administration/preferences-panel) as text. If you maintain local development versions of your live sites and import databases between them, then this tag is extremely valuable for ensuring your domain links are never confused (and thus broken) between the two locations (see example 1, below).
 
 ## Attributes
 
@@ -52,7 +52,7 @@ A classic example is with navigation links - the idea is that you don't break UR
 <link rel="stylesheet" href="<txp:site_url />assets/css/main.css">
 ```
 
-In the @<head>@ section of your HTML pages you might have a variety of links to locations relative to the local server, such as CSS files, JavaScript files and so forth. The relevance is similar to example 1 - you want to ensure the paths are accurate relative to the server if a database has been imported from another location.
+In the `<head>` section of your HTML pages you might have a variety of links to locations relative to the local server, such as CSS files, JavaScript files and so forth. The relevance is similar to example 1 - you want to ensure the paths are accurate relative to the server if a database has been imported from another location.
 
 ### Example 3: Display a hyperlink to download a .ZIP file
 

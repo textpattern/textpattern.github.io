@@ -21,7 +21,7 @@ On this page:
 <txp:comment_preview />
 ```
 
-The *comment_preview* tag is a __single__ tag which is used to display a 'Preview' button the user can use to preview the comment text. Used in the comment input form template.
+The **comment_preview** tag is a __single__ tag which is used to display a 'Preview' button the user can use to preview the comment text. Used in the comment input form template.
 
 ## Attributes
 

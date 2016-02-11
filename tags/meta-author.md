@@ -23,7 +23,7 @@ On this page:
 <txp:meta_author />
 ```
 
-The *meta_author* tag is a __single__ tag, used in the head of an individual article page template. Textpattern will replace this tag with an HTML meta tag as follows:
+The **meta_author** tag is a __single__ tag, used in the head of an individual article page template. Textpattern will replace this tag with an HTML meta tag as follows:
 
 ```html
 <meta name="author" content="Article author's name" />
@@ -33,15 +33,15 @@ The *meta_author* tag is a __single__ tag, used in the head of an individual art
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @escape="html"@
+* `escape="html"`
 Escape HTML entities such as `<`, `>` and `&`.
 Values: `html` or unset.
 Default: `html`;
-* @format="boolean"@
-Display as @<meta>@ tag or as raw value.
-Values: @meta@ or unset.
-Default: @meta@ (display as a @<meta>@ tag).
-* @title="boolean"@
+* `format="boolean"`
+Display as `<meta>` tag or as raw value.
+Values: `meta` or unset.
+Default: `meta` (display as a `<meta>` tag).
+* `title="boolean"`
 Whether to display the author's login name or real name.
 Values: `0` (login name) or `1` (real name).
 Default: `0`.
@@ -66,8 +66,8 @@ This results in the following:
 
 ### Version 4.6.0
 
-@escape@ and @format@ attributes added.
+`escape` and `format` attributes added.
 
 ### Version 4.3.0
 
-@title@ attribute added.
+`title` attribute added.

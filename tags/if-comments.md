@@ -22,7 +22,7 @@ On this page:
 <txp:if_comments>
 ```
 
-The *if_comments* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_comments** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_comments>
@@ -53,4 +53,4 @@ This tag has no attributes.
 
 Displays the number of comments written against the current article, otherwise display text to indicate there are no comments.
 
-Other tags used: "comments_count":comments-count, "else":else.
+Other tags used: [comments_count](comments-count), [else](else).

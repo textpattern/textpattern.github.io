@@ -13,7 +13,7 @@ On this page:
 <txp:if_keywords>
 ```
 
-The *if_keywords* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_keywords** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_keywords>
@@ -27,7 +27,7 @@ The tag will execute the contained statement if the current article's 'Keywords'
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @keywords="keywords"@
+* `keywords="keywords"`
 Comma-separated list of keywords.
 Default: unset, which determines whether any keywords are assigned to the article.
 
@@ -53,7 +53,7 @@ Default: unset, which determines whether any keywords are assigned to the articl
 </head>
 ```
 
-Other tags used: "meta_keywords":meta-keywords, "if_individual_article":if-individual-article, "else":else.
+Other tags used: "meta_keywords":meta-keywords, [if_individual_article](if-individual-article), [else](else).
 
 ## Genealogy
 

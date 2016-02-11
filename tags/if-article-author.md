@@ -22,7 +22,7 @@ On this page:
 <txp:if_article_author>
 ```
 
-The *if_article_author* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_article_author** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_article_author>
@@ -30,7 +30,7 @@ The *if_article_author* tag is a _conditional_ tag and always used as an opening
 </txp:if_article_author>
 ```
 
-The tag will execute the contained statement if the author name associated with a particular article matches the value of the @name@ attribute. Should be used in an 'article' type form.
+The tag will execute the contained statement if the author name associated with a particular article matches the value of the `name` attribute. Should be used in an 'article' type form.
 
 Note: The `name` attribute requires an author's login name **not** their real name.
 {: .alert-block .information}
@@ -39,7 +39,7 @@ Note: The `name` attribute requires an author's login name **not** their real na
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @name="author"@
+* `name="author"`
 Comma-separated list of author names.
 Default: unset (i.e.,any author at all).
 
@@ -56,4 +56,4 @@ Default: unset (i.e.,any author at all).
 </p>
 ```
 
-Displays article author name, then displays the text "(Administrator)" if the article was written (posted) by the author @admin@.
+Displays article author name, then displays the text "(Administrator)" if the article was written (posted) by the author `admin`.

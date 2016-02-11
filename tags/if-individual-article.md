@@ -21,7 +21,7 @@ On this page:
 <txp:if_individual_article>
 ```
 
-The *if_individual_article* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_individual_article** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_individual_article>
@@ -86,6 +86,6 @@ Other tags used: "link_to_prev":link-to-prev, "link_to_next":link-to-next, "next
 </txp:if_individual_article>
 ```
 
-Displays the site's name when showing a single article, and a logo when *not* displaying a single article.
+Displays the site's name when showing a single article, and a logo when **not** displaying a single article.
 
-Other tags used: "else":else, "site_name":site-name.
+Other tags used: [else](else), "site_name":site-name.

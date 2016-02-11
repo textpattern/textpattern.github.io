@@ -21,7 +21,7 @@ On this page:
 <txp:error_message />
 ```
 
-The *error_message* tag is a __single__ tag that Textpattern will replace with the error message text for the error status as set by the server. Should be used in an @error_xxx@ or @error_default@ Textpattern @@Page template@@.
+The **error_message** tag is a __single__ tag that Textpattern will replace with the error message text for the error status as set by the server. Should be used in an `error_xxx` or `error_default` Textpattern @@Page template@@.
 
 ## Attributes
 
@@ -40,6 +40,6 @@ This tag has no attributes.
 </p>
 ```
 
-With the tags arranged like this (as they are in the @error_default@ page template), they display the error status code as a heading and the relevant server message beneath it, usually to indicate to the visitor that something went wrong.
+With the tags arranged like this (as they are in the `error_default` page template), they display the error status code as a heading and the relevant server message beneath it, usually to indicate to the visitor that something went wrong.
 
-Other tags used: "error_status":error-status.
+Other tags used: [error_status](error-status).

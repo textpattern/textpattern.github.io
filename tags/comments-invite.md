@@ -21,7 +21,7 @@ On this page:
 <txp:comments_invite />
 ```
 
-The *comments_invite* tag is a __single__ tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern "Write administration panel":../administration/write-panel.
+The **comments_invite** tag is a __single__ tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern [Write administration panel](../administration/write-panel).
 
 This tag can be used in both a Textpattern @@Page template@@ and a @@Form template@@.
 
@@ -29,15 +29,15 @@ This tag can be used in both a Textpattern @@Page template@@ and a @@Form templa
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @showalways="boolean"@
+* `showalways="boolean"`
 Whether to display invite on individual article page.
 Values: `0` (no) or `1` (yes).
 Default: `0`.
-* @showcount="boolean"@
+* `showcount="boolean"`
 Whether to display comment count.
 Values: `0` (no) or `1` (yes).
 Default: `1`.
-* @textonly="boolean"@
+* `textonly="boolean"`
 Whether to display invite as text, rather than a hyperlink.
 Values: `0` (no) or `1` (yes).
 Default: `0`.
@@ -46,11 +46,11 @@ Default: `0`.
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
-Default: @comments_invite@ (see @@class cross-reference@@).
-* @wraptag="tag"@
-HTML tag to wrap around invite text, specified without brackets (e.g. @wraptag="p"@).
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
+Default: `comments_invite` (see @@class cross-reference@@).
+* `wraptag="tag"`
+HTML tag to wrap around invite text, specified without brackets (e.g. `wraptag="p"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -65,4 +65,4 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 This will display the comments invitation and a comment count (but only if there are any comments associated with the current article).
 
-Other tags used: "if_comments":if-comments.
+Other tags used: [if_comments](if-comments).

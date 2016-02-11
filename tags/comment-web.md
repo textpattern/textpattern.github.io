@@ -21,7 +21,7 @@ On this page:
 <txp:comment_web>
 ```
 
-The *comment_web* tag can be used as either a __single__ or a __container__ tag. Thus it may be used as an opening and closing pair:
+The **comment_web** tag can be used as either a __single__ or a __container__ tag. Thus it may be used as an opening and closing pair:
 
 ```html
 <txp:comment_web>
@@ -47,7 +47,7 @@ This tag has no attributes.
 </p>
 ```
 
-Other tags used: "comment_message":comment-message, "comment_name":comment-name, "comment_time":comment-time.
+Other tags used: [comment_message](comment-message), [comment_name](comment-name), [comment_time](comment-time).
 
 ### Example 2: Container example
 

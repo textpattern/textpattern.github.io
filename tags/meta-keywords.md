@@ -23,7 +23,7 @@ On this page:
 <txp:meta_keywords />
 ```
 
-The *meta_keywords* tag is a __single__ tag used in one of two ways. One is to output keyword data as the content of a standard HTML @<meta>@ tag in the @<head>@ of a page template:
+The **meta_keywords** tag is a __single__ tag used in one of two ways. One is to output keyword data as the content of a standard HTML `<meta>` tag in the `<head>` of a page template:
 
 ```html
 <meta name="keywords" content="{your article's Keywords}" />
@@ -42,15 +42,15 @@ Note: The corresponding keywords field has a 255 character limit by default, whi
 
 ## Attributes
 
-* @escape="html"@
+* `escape="html"`
 Escape HTML entities such as `<`, `>` and `&`.
 Values: `html` or unset.
 Default: `html`;
-* @format="value"@
-Display as @<meta>@ tag or as raw value.
-Values: @meta@ or unset.
-Default: @meta@ (display as a @<meta>@ tag).
-* @separator="value"@
+* `format="value"`
+Display as `<meta>` tag or as raw value.
+Values: `meta` or unset.
+Default: `meta` (display as a `<meta>` tag).
+* `separator="value"`
 Character to be used as the keywords separator.
 Default: unset.
 
@@ -62,9 +62,9 @@ Default: unset.
 <txp:meta_keywords />
 ```
 
-The *meta_keywords* tag returns an HTML @meta@ tag, populated with an article's keywords. The tag should always be placed in your template's 'head' section, between the opening and closing HTML @<head>@ tags.
+The **meta_keywords** tag returns an HTML `meta` tag, populated with an article's keywords. The tag should always be placed in your template's 'head' section, between the opening and closing HTML `<head>` tags.
 
-The above will output keywords metadata with @content=""@ populated with the list of keywords set in the article's 'Keywords' field (the tag returns nothing if no keywords are set for an article). For example, if your article's 'Keywords' field contains @sauce, caramel, sugar@, the tag will output the following:
+The above will output keywords metadata with `content="` populated with the list of keywords set in the article's 'Keywords' field (the tag returns nothing if no keywords are set for an article). For example, if your article's 'Keywords' field contains `sauce, caramel, sugar`, the tag will output the following:
 
 ```html
 <meta name="keywords" content="sauce,caramel,sugar" />
@@ -92,10 +92,10 @@ The above will output keywords metadata with @content=""@ populated with the lis
 
 In this example, keywords are used in a Textpattern 'article' type @@Form template@@ along with other article components. The keywords themselves are used like a list of topical 'tags', e.g. like you would use for more granular searching. The keywords would be presented above the article's excerpt.
 
-Other tags used: "permlink":permlink, "title":title, "posted":posted, "excerpt":excerpt, "body":body.
+Other tags used: [permlink](permlink), [title](title), [posted](posted), [excerpt](excerpt), [body](body).
 
 ## Genealogy
 
 ### Version 4.6.0
 
-@escape@, @format@ and @separator@ attributes added.
+`escape`, `format` and `separator` attributes added.

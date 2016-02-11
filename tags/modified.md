@@ -22,34 +22,34 @@ On this page:
 <txp:modified />
 ```
 
-The *modified* tag is a __single__ tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the "Preferences administration panel":../administration/preferences-panel.
+The **modified** tag is a __single__ tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the [Preferences administration panel](../administration/preferences-panel).
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @format="format string"@
-Override the default date format set in the "Preferences administration panel":../administration/preferences-panel.
-Values: any valid "strftime":http://php.net/strftime string values.
+* `format="format string"`
+Override the default date format set in the [Preferences administration panel](../administration/preferences-panel).
+Values: any valid [strftime](http://php.net/strftime) string values.
 Default: the 'Archive date format' set in preferences.
-* @gmt="boolean"@
+* `gmt="boolean"`
 Return either local time (according to the set time zone preferences) or GMT.
 Values: `0` (local time) or `1` (GMT).
 Default: `0`.
-* @lang="ISO language code"@
+* `lang="ISO language code"`
 Format time string suitable for the specified language (locale).
-Values: locales adhere to "ISO-639":http://en.wikipedia.org/wiki/ISO_639-2.
-Default: unset (time format set in the "Preferences administration panel":../administration/preferences-panel.
+Values: locales adhere to [ISO-639](http://en.wikipedia.org/wiki/ISO_639-2).
+Default: unset (time format set in the [Preferences administration panel](../administration/preferences-panel).
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
 Default: tag name or unset (see @@class cross-reference@@).
-* @wraptag="element"@
-HTML tag to wrap around output, specified without brackets (e.g. @wraptag="p"@).
+* `wraptag="element"`
+HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -88,7 +88,7 @@ This would result in the following HTML output:
 
 ### Version 4.5.0
 
-@wraptag@ and @class@ attributes added.
+`wraptag` and `class` attributes added.
 
 ### Version 4.0.7
 

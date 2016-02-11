@@ -21,27 +21,27 @@ On this page:
 <txp:page_url />
 ```
 
-The *page_url* tag is a __single__ tag. It is used to return a particular component of the URL from the current page being displayed.
+The **page_url** tag is a __single__ tag. It is used to return a particular component of the URL from the current page being displayed.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @type="type"@
+* `type="type"`
 Specifies which component of the current page's URL will be returned.
 Values:
-@request_uri@: current article's URL-title including any query string.
+`request_uri`: current article's URL-title including any query string.
 `id`: current article's id on a single article page.
-@s@: current page's section.
-@c@: current page's category.
-@q@: search query string.
-@pg@: current page number in article list mode.
-@month@: current page's month on time based article lists.
-@author@: current page's author on article lists filtered by author.
-@status@: HTTP error response (200, 404).
-@css@: current style sheet name.
-@page@: current page template name.
-Default: @request_uri@.
+`s`: current page's section.
+`c`: current page's category.
+`q`: search query string.
+`pg`: current page number in article list mode.
+`month`: current page's month on time based article lists.
+`author`: current page's author on article lists filtered by author.
+`status`: HTTP error response (200, 404).
+`css`: current style sheet name.
+`page`: current page template name.
+Default: `request_uri`.
 
 ## Examples
 

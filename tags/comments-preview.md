@@ -22,29 +22,29 @@ On this page:
 <txp:comments_preview />
 ```
 
-The *comments_preview* tag is a __single__ tag which is used to display a preview of a visitor's comment.
+The **comments_preview** tag is a __single__ tag which is used to display a preview of a visitor's comment.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @form="form name"@
+* `form="form name"`
 Use specified form template to process each comment.
-Default: @comments@.
-* @label="text"@
+Default: `comments`.
+* `label="text"`
 Label that appears on the 'Preview' button.
-Default: @Preview@ (localized).
+Default: `Preview` (localized).
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
-Default: @comments_preview@ (see @@class cross-reference@@).
-* @wraptag="tag"@
-HTML tag to wrap around the list, specified without brackets (e.g. @wraptag="div"@).
-Default: depends upon 'Present Comments as a Numbered List?' preference setting - either @ol@ or unset (but see @@wraptag cross-reference@@ for exceptions).
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
+Default: `comments_preview` (see @@class cross-reference@@).
+* `wraptag="tag"`
+HTML tag to wrap around the list, specified without brackets (e.g. `wraptag="div"`).
+Default: depends upon 'Present Comments as a Numbered List?' preference setting - either `ol` or unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Genealogy
 
@@ -52,11 +52,11 @@ Default: depends upon 'Present Comments as a Numbered List?' preference setting 
 
 ### Version 4.6.0
 
-@label@ attribute added (replaces functionality of deprecated @previewlabel@ attribute in "comments_form":comments-form tag).
+`label` attribute added (replaces functionality of deprecated `previewlabel` attribute in [comments_form](comments-form) tag).
 
 ### Version 4.0.4
 
-Use is necessary in comments display form (@<comments_display />@, by default).
+Use is necessary in comments display form (`<comments_display />`, by default).
 
 ### Version 4.0.3
 

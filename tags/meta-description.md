@@ -23,7 +23,7 @@ On this page:
 <txp:meta_description />
 ```
 
-The *meta_description* tag is a __single__ tag used in a variety of ways to display meta description content. One is to output description text as the content of a standard HTML @<meta>@ tag in the @<head>@ of a page template:
+The **meta_description** tag is a __single__ tag used in a variety of ways to display meta description content. One is to output description text as the content of a standard HTML `<meta>` tag in the `<head>` of a page template:
 
 ```html
 <meta name="description" content="{your description}" />
@@ -42,17 +42,17 @@ Note: The corresponding description field has a 255 character limit by default, 
 
 ## Attributes
 
-* @escape="html"@
+* `escape="html"`
 Escape HTML entities such as `<`, `>` and `&`.
 Values: `html` or unset.
 Default: `html`;
-* @format="value"@
-Display as @<meta>@ tag or as raw value.
-Values: @meta@ or unset.
-Default: @meta@ (display as a @<meta>@ tag).
-* @type="value"@
+* `format="value"`
+Display as `<meta>` tag or as raw value.
+Values: `meta` or unset.
+Default: `meta` (display as a `<meta>` tag).
+* `type="value"`
 The context from which to display meta information.
-Values: @article@, @section@, or @category@. The @category@ may also be augmented to include its type, e.g. @category.image@ or @category.file@ to display description information from the nominated category type.
+Values: `article`, `section`, or `category`. The `category` may also be augmented to include its type, e.g. `category.image` or `category.file` to display description information from the nominated category type.
 Default: empty (i.e.,automatic, depending on where the tag is used).
 
 ## Examples
@@ -66,11 +66,11 @@ Default: empty (i.e.,automatic, depending on where the tag is used).
 </head>
 ```
 
-The *meta_description* tag returns an HTML @meta@ tag, populated with an article's description if the visitor is viewing an individual article. If viewing an article list (landing) page, the tag will return the description from the Section instead.
+The **meta_description** tag returns an HTML `meta` tag, populated with an article's description if the visitor is viewing an individual article. If viewing an article list (landing) page, the tag will return the description from the Section instead.
 
-The tag should normally be placed in your template's 'head' section, between the opening and closing HTML @<head>@ tags.
+The tag should normally be placed in your template's 'head' section, between the opening and closing HTML `<head>` tags.
 
-The above will output description metadata with @content=""@ populated with the text set in the article or section's 'Description' field (the tag returns nothing if no description is set for either).
+The above will output description metadata with `content="` populated with the text set in the article or section's 'Description' field (the tag returns nothing if no description is set for either).
 
 ### Example 2: Use article's description for Twitter Card description (without meta tag)
 
@@ -80,9 +80,9 @@ The above will output description metadata with @content=""@ populated with the 
 </txp:if_individual_article>
 ```
 
-The above will output the description as a raw value (not enclosed in a @<meta>@ tag) populated with the text set in the article's 'Description' field.
+The above will output the description as a raw value (not enclosed in a `<meta>` tag) populated with the text set in the article's 'Description' field.
 
-Other tags used: "if_individual_article":if-individual-article.
+Other tags used: [if_individual_article](if-individual-article).
 
 ### Example 3: Display section meta description as tooltip in section list
 
@@ -94,7 +94,7 @@ Other tags used: "if_individual_article":if-individual-article.
 </txp:section_list>
 ```
 
-Other tags used: "section_list":section-list, "section":section.
+Other tags used: "section_list":section-list, [section](section).
 
 ### Example 4: Override automatic type
 
@@ -116,11 +116,11 @@ Other tags used: "section_list":section-list, "section":section.
 <txp:article />
 ```
 
-The first time the tag is used in the @<head>@, the section meta description will be output as a @<meta>@ tag if viewing the section landing page, or the article meta description if viewing an individual article.
+The first time the tag is used in the `<head>`, the section meta description will be output as a `<meta>` tag if viewing the section landing page, or the article meta description if viewing an individual article.
 
 The second instance is only shown if on a landing page, and will force the display of the section meta description as an introductory paragraph.
 
-Other tags used: "section":section, "if_article_list":if-article-list, "article":article.
+Other tags used: [section](section), "if_article_list":if-article-list, [article](article).
 
 ## Genealogy
 

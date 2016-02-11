@@ -23,7 +23,7 @@ On this page:
 <txp:if_yield>
 ```
 
-The *if_yield* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_yield** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_yield>
@@ -31,14 +31,14 @@ The *if_yield* tag is a _conditional_ tag and always used as an opening and clos
 </txp:if_yield>
 ```
 
-It tests the existence and/or value of a content set with the "yield":yield tag inside of an "output_form":output-form container tag.
+It tests the existence and/or value of a content set with the [yield](yield) tag inside of an [output_form](output-form) container tag.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @value="value"@
-The (optional) value which the yield content must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns 'true' if the yield content is defined. If this attribute's value is omitted (i.e. @value=""@), the tag returns 'true' if yield content is defined, but has no value.
+* `value="value"`
+The (optional) value which the yield content must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns 'true' if the yield content is defined. If this attribute's value is omitted (i.e. `value="`), the tag returns 'true' if yield content is defined, but has no value.
 
 ## Examples
 
@@ -62,7 +62,7 @@ The (optional) value which the yield content must match in order for the contain
 </txp:if_yield>
 ```
 
-Other tags used: "yield":yield.
+Other tags used: [yield](yield).
 
 ### Example 3: Check against a specific yield content
 

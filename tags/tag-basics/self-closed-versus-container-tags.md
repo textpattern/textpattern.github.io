@@ -9,7 +9,7 @@ title: "Self-closed versus container tags"
 
 ## Self-closed tags
 
-A self-closed tag is the most basic form of a Texpattern tag. Its structure is similar to that of a self-closed tag in HTML (e.g. @<br />@), most notably the inclusion of the terminating forward slash.
+A self-closed tag is the most basic form of a Texpattern tag. Its structure is similar to that of a self-closed tag in HTML (e.g. `<br />`), most notably the inclusion of the terminating forward slash.
 
 Any self-closed Textpattern tag has the following syntactic structure:
 
@@ -19,7 +19,7 @@ Any self-closed Textpattern tag has the following syntactic structure:
 
 The tag is replaced by contents when Textpattern displays a page.
 
-Self-closed tags can usually take attributes. For example, the following "article":http://docs.textpattern.io/tags/article tag demonstrates using the @form@ and @limit@ attributes:
+Self-closed tags can usually take attributes. For example, the following "article":http://docs.textpattern.io/tags/article tag demonstrates using the `form` and `limit` attributes:
 
 ```html
 <txp:article form="formName" limit="15" />
@@ -39,7 +39,7 @@ Container tags are composed of both an opening and closing tag element, giving t
 
 The content that is added between container tags may be either text or other Textpattern tags.
 
-Typical container tags are the *permlink* tag @<txp:permlink></txp:permlink>@ and all *conditional tags*. Container tags are used when something has to be _enclosed_ by tags instead of being _replaced_ by them.
+Typical container tags are the **permlink** tag `<txp:permlink></txp:permlink>` and all **conditional tags**. Container tags are used when something has to be __enclosed__ by tags instead of being __replaced__ by them.
 
 A link is a good example: you have a text string (or a title tag) around which you want to wrap an HTML anchor element:
 

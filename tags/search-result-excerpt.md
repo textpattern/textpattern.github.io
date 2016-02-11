@@ -22,21 +22,21 @@ On this page:
 <txp:search_result_excerpt />
 ```
 
-The *search_result_excerpt* tag is a __single__ tag. The tag will show the occurrence of the search term with some surrounding context.
+The **search_result_excerpt** tag is a __single__ tag. The tag will show the occurrence of the search term with some surrounding context.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @break="tag"@
+* `break="tag"`
 Trailing string.
-Default: @…@ (ellipsis).
-* @hilight="tag"@
+Default: `…` (ellipsis).
+* `hilight="tag"`
 HTML tag to be used for search term matches in excerpt text, without brackets.
-Default: @strong@.
-* @limit="integer"@
+Default: `strong`.
+* `limit="integer"`
 Maximum number of search match excerpts per search result.
-Default: @5@.
+Default: `5`.
 
 ## Examples
 
@@ -63,4 +63,4 @@ Other tags used: "permlink":http://docs.textpattern.io/tags/permlink, "posted":h
 
 ### Version 4.0.6
 
-@break@ attribute added.
+`break` attribute added.

@@ -22,35 +22,35 @@ On this page:
 <txp:popup />
 ```
 
-The *popup* tag is a __single__ tag. Textpattern will replace this tag with a popup selector for browsing by section or category.
+The **popup** tag is a __single__ tag. Textpattern will replace this tag with a popup selector for browsing by section or category.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @section="section_name"@
+* `section="section_name"`
 Jump to the selected category for the named section.
 Default: unset.
-* @this_section="boolean"@
+* `this_section="boolean"`
 Jump to the selected category for the currently active section.
 Values: `0` (no) or `1` (yes).
 Default: `0`.
-* @type="type"@
-Values: @s@ (section), @c@ (category).
-Default: @c@.
+* `type="type"`
+Values: `s` (section), `c` (category).
+Default: `c`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
 Default: tag name or unset (see @@class cross-reference@@).
-* @label="text"@
+* `label="text"`
 Label prepended to item.
 Default: unset (but see @@label cross-reference@@ for exceptions).
-* @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
+* `wraptag="element"`
+HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -71,4 +71,4 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Version 4.3.0
 
-@class@ attribute added.
+`class` attribute added.

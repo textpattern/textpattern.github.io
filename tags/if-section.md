@@ -21,7 +21,7 @@ On this page:
 <txp:if_section>
 ```
 
-The *if_section* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_section** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <;txp:if_section>
@@ -35,8 +35,8 @@ The tag will execute the contained statements if the called page is part of the 
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @name="section"@
-Comma-separated list of section names. For the default section, either use the text `default` or a single comma @,@ (for example, both @name=", other_section"@ and @name="default, other_section"@ are equivalent).
+* `name="section"`
+Comma-separated list of section names. For the default section, either use the text `default` or a single comma `,` (for example, both `name=", other_section"` and `name="default, other_section"` are equivalent).
 
 ## Examples
 
@@ -50,7 +50,7 @@ Comma-separated list of section names. For the default section, either use the t
 </txp:if_section>
 ```
 
-Other tags used: "else":else.
+Other tags used: [else](else).
 
 ### Example 2: Add a special class to mark the currently active section
 
@@ -70,6 +70,6 @@ Other tags used: "else":else.
 </nav>
 ```
 
-A different way of marking the active section can be accomplished by using "section_list":section-list and its attribute @active_class@. While the above snippet will mark the list item, "section_list":section-list will mark solely the link.
+A different way of marking the active section can be accomplished by using "section_list":section-list and its attribute `active_class`. While the above snippet will mark the list item, "section_list":section-list will mark solely the link.
 
-Other tags used: "section":section.
+Other tags used: [section](section).

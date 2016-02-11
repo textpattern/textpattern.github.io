@@ -23,18 +23,18 @@ On this page:
 <txp:author_email />
 ```
 
-The *author_email* tag is a __single__ tag that is used to return the email address of the author of the currently displayed article.
+The **author_email** tag is a __single__ tag that is used to return the email address of the author of the currently displayed article.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @escape="html"@
+* `escape="html"`
 Escape HTML entities such as `<`, `>` and `&`.
 Values: `html` or unset.
 Default: `html`.
-* @link="boolean"@
-Make text a @mailto:@ link.
+* `link="boolean"`
+Make text a `mailto:` link.
 Values: `0` (no) or `1` (yes).
 Default: `0`.
 

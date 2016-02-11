@@ -22,7 +22,7 @@ On this page:
 <txp:comment_name_input />
 ```
 
-The *comment_name_input* tag is a __single__ tag which is used to display a text entry field to accept the commenter's name. Used in the comment input form template.
+The **comment_name_input** tag is a __single__ tag which is used to display a text entry field to accept the commenter's name. Used in the comment input form template.
 
 ## Attributes
 
@@ -69,4 +69,4 @@ Other tags used: "comment_email_input":comment-email-input, "comments_help":comm
 
 ### Version 4.6.0
 
-`size` attribute added (replaces functionality of deprecated `isize` attribute in "comments_form":comments-form tag).
+`size` attribute added (replaces functionality of deprecated `isize` attribute in [comments_form](comments-form) tag).

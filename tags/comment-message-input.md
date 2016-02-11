@@ -22,18 +22,18 @@ On this page:
 <txp:comment_message_input />
 ```
 
-The *comment_message_input tag is a __single__ tag which is used to display a text entry field to accept the commenter's message text. Used in the comment input form template.
+The **comment_message_input tag is a __single__ tag which is used to display a text entry field to accept the commenter's message text. Used in the comment input form template.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @cols="integer"@
-HTML @cols@ attribute to be applied to HTML form @textarea@ field.
+* `cols="integer"`
+HTML `cols` attribute to be applied to HTML form `textarea` field.
 Default: `25`.
-* @rows="integer"@
-HTML @rows@ attribute to be applied to HTML form @textarea@ field.
-Default: @5@.
+* `rows="integer"`
+HTML `rows` attribute to be applied to HTML form `textarea` field.
+Default: `5`.
 
 ## Examples
 
@@ -70,7 +70,7 @@ Other tags used: "comment_email_input":comment-email-input, "comments_help":comm
 
 ### Example 2: Text area changes in preview
 
-Using some conditional tags, the size of the comment form @textarea@ can be changed in the preview.
+Using some conditional tags, the size of the comment form `textarea` can be changed in the preview.
 
 ```html
 <txp:if_comments_preview>
@@ -88,10 +88,10 @@ Using some conditional tags, the size of the comment form @textarea@ can be chan
 </txp:if_comments_preview>
 ```
 
-Other tags used: "comments_preview":comments-preview, "if_comments_preview":if-comments-preview, "else":else.
+Other tags used: "comments_preview":comments-preview, "if_comments_preview":if-comments-preview, [else](else).
 
 ## Genealogy
 
 ### Version 4.6.0
 
-@cols@ and @rows@ attributes added (replaces functionality of deprecated @msgcols@ and @msgrows@ attributes in "comments_form":comments-form tag).
+`cols` and `rows` attributes added (replaces functionality of deprecated `msgcols` and `msgrows` attributes in [comments_form](comments-form) tag).

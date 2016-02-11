@@ -22,9 +22,9 @@ On this page:
 <txp:variable />
 ```
 
-The *variable* tag is both a __single__ and a __container__ tag which sets or returns a user-defined global variable.
+The **variable** tag is both a __single__ and a __container__ tag which sets or returns a user-defined global variable.
 
-If used as a __container__ tag, the result of the contained statements are assigned to the given variable @name@, like this:
+If used as a __container__ tag, the result of the contained statements are assigned to the given variable `name`, like this:
 
 ```html
 <txp:variable>
@@ -39,9 +39,9 @@ Note: Avoid entering white space characters for better code readability between 
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @name="text"@
+* `name="text"`
 The variable name for which you wish to assign a value. Valid variable names must not contain any single or double quotes.
-* @value="value"@
+* `value="value"`
 (Optionally) define the value to which you wish to set the variable. Without this attribute, the tag returns the current value assigned to the named variable.
 
 ## Examples
@@ -83,7 +83,7 @@ Other tags used: "else":http://docs.textpattern.io/tags/else, "if_category":http
 
 ### Example 2: Use any tag's value as a conditional expression
 
-There are two parts to making this work. First a variable is created that stores the output of any tag as the @value@ (the @name@ is arbitrary)...
+There are two parts to making this work. First a variable is created that stores the output of any tag as the `value` (the `name` is arbitrary)...
 
 ```html
 <txp:variable name="foo" value='<txp:permlink />' />

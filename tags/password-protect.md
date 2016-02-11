@@ -22,16 +22,16 @@ On this page:
 <txp:password_protect />
 ```
 
-The *password_protect* tag can be used as either a __single__ tag or __container__ tag. When Textpattern encounters the password protect tag it causes the user to be prompted for a username and password, if these match the attributes set in the tag, the user is allowed access to the site/content. The tag can go anywhere, from page templates, to articles and forms.
+The **password_protect** tag can be used as either a __single__ tag or __container__ tag. When Textpattern encounters the password protect tag it causes the user to be prompted for a username and password, if these match the attributes set in the tag, the user is allowed access to the site/content. The tag can go anywhere, from page templates, to articles and forms.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @login="text"@
+* `login="text"`
 The username the user has to enter.
 Default: unset.
-* @pass="text"@
+* `pass="text"`
 The password the user has to enter.
 Default: unset.
 

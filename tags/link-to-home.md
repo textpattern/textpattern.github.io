@@ -21,7 +21,7 @@ On this page:
 <txp:link_to_home>
 ```
 
-The *link_to_home* tag is primarily a __container__ tag that returns a link to the site's home page. It will apply a hyperlink to whatever it wraps.
+The **link_to_home** tag is primarily a __container__ tag that returns a link to the site's home page. It will apply a hyperlink to whatever it wraps.
 
 The tag can, however, be used as a __single__ tag to generate a raw base URL of the site:
 
@@ -39,7 +39,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
+* `class="class name"`
 CSS class attribute to apply to the anchor. Will be ignored if used as a single tag.
 Default: unset.
 

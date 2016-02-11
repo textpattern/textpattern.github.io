@@ -21,7 +21,7 @@ On this page:
 <txp:site_name />
 ```
 
-The *site_name* tag is a __single__ tag that returns the site's name as defined within the "Preferences administration panel":http://docs.textpattern.io/administration/preferences-panel.
+The **site_name** tag is a __single__ tag that returns the site's name as defined within the "Preferences administration panel":http://docs.textpattern.io/administration/preferences-panel.
 
 ## Attributes
 

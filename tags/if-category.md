@@ -22,7 +22,7 @@ On this page:
 <txp:if_category>
 ```
 
-The *if_category* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_category** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_category>
@@ -30,24 +30,24 @@ The *if_category* tag is a _conditional_ tag and always used as an opening and c
 </txp:if_category>
 ```
 
-The tag will execute the contained statements if the @name@ attribute matches a category search value, or the list is an article list by category.
+The tag will execute the contained statements if the `name` attribute matches a category search value, or the list is an article list by category.
 
-Should be used in a page template; if checking the category in an article form, use "if_article_category":if-article-category.
+Should be used in a page template; if checking the category in an article form, use [if_article_category](if-article-category).
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @name="category"@
-Comma-separated list of category names. Note the category name is specified in lower case regardless of how you typed its title in the "Categories administration panel":../administration/categories-panel. Also note that if you had called your category 'My Category Name' it becomes 'my-category-name' when used in tags.
+* `name="category"`
+Comma-separated list of category names. Note the category name is specified in lower case regardless of how you typed its title in the [Categories administration panel](../administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes 'my-category-name' when used in tags.
 Default: unset, which determines whether ''any'' category listing is being viewed.
-* @type="context"@
+* `type="context"`
 Textpattern context to check against. You can choose from the following contexts (set to empty to include all contexts):
-@article@ is this an article category list?
-@image@ is this an image category list?
-@file@ is this a file category list?
+`article` is this an article category list?
+`image` is this an image category list?
+`file` is this a file category list?
 `link` is this a link category list?
-Default: @article@.
+Default: `article`.
 
 ## Examples
 
@@ -59,9 +59,9 @@ Default: @article@.
 </txp:if_category>
 ```
 
-Displays the author's name if the article list is of category @prose@.
+Displays the author's name if the article list is of category `prose`.
 
-Other tags used: "author":author.
+Other tags used: [author](author).
 
 ### Example 2: Use tag with else
 
@@ -73,9 +73,9 @@ Other tags used: "author":author.
 </txp:if_category>
 ```
 
-Displays the category name if the article list is of category @prose@, otherwise show the site's name.
+Displays the category name if the article list is of category `prose`, otherwise show the site's name.
 
-Other tags used: "category":category, "else":else, "site_name":site-name.
+Other tags used: "category":category, [else](else), "site_name":site-name.
 
 ### Example 3: Display an appropriate heading
 
@@ -89,11 +89,11 @@ Other tags used: "category":category, "else":else, "site_name":site-name.
 
 Displays an appropriate heading for both category and non-category pages.
 
-Other tags used: "category":category, "else":else.
+Other tags used: "category":category, [else](else).
 
 ### Example 4: Display a category/article list
 
-Given the defined article categories: @prose@, @poetry@, and @opinions@.
+Given the defined article categories: `prose`, `poetry`, and `opinions`.
 
 ```html
 <txp:category_list label="Category Navigation" wraptag="p" />
@@ -119,4 +119,4 @@ Other tags used: "category_list":category-list, "recent_articles":recent-article
 
 ### Version 4.3.0
 
-@type@ attribute added.
+`type` attribute added.

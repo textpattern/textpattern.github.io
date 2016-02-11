@@ -15,7 +15,7 @@ h3(sectionedit2#examples). Examples
 
 h4(#example_1display_keywords_in_context_of_an_article_form). Example 1: Display keywords in context of an article Form
 
-In this example, keywords are used in an article Form along with other article components. The keywords themselves are used like a list of topical “tags”, _e.g._, like you would use for more granular searching. The keywords would be presented (via CSS) horizontally (ideally) above the article's excerpt.
+In this example, keywords are used in an article Form along with other article components. The keywords themselves are used like a list of topical “tags”, __e.g._, like you would use for more granular searching. The keywords would be presented (via CSS) horizontally (ideally) above the article's excerpt.
 
 ```html
 <h3><txp:permlink><txp:title /></txp:permlink></h3>
@@ -30,7 +30,7 @@ Other tags used in example: "permlink":/home/www/zendstudio/dokuwiki/bin/doku.ph
 
 h4(#example_2use_keywords_to_fill_code_meta_code_element_values). Example 2: Use keywords to fill &lt;code&gt;meta&lt;/code&gt; element values
 
-In this example, keywords are used directly in a _Page_ (template) to insert
+In this example, keywords are used directly in a __Page__ (template) to insert
 
 bc. content=""
 

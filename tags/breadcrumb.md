@@ -23,23 +23,23 @@ On this page:
 <txp:breadcrumb />
 ```
 
-The *breadcrumb* tag is a __single__ tag which is used to create "breadcrumb navigation":http://en.wikipedia.org/wiki/Breadcrumb_trail. It provides either hyperlinked navigation, or plain text positional display. Breadcrumbs are _not_ displayed on the 'default' section (home page) of your site.
+The **breadcrumb** tag is a __single__ tag which is used to create "breadcrumb navigation":http://en.wikipedia.org/wiki/Breadcrumb_trail. It provides either hyperlinked navigation, or plain text positional display. Breadcrumbs are __not__ displayed on the 'default' section (home page) of your site.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @link="value"@
+* `link="value"`
 Whether to hyperlink breadcrumbs.
 Values: `0` (no) or `1` (yes).
 Default: `1`.
-* @linkclass="class name"@
+* `linkclass="class name"`
 HTML class attribute applied to the breadcrumb links.
 Default: unset.
-* @separator="value"@
+* `separator="value"`
 Character to be used as the breadcrumb separator.
-Default: @ » @.
-* @title="boolean"@
+Default: ` » `.
+* `title="boolean"`
 Whether to display the title or not.
 Values: `0` (no, display name) or `1` (yes).
 Default: `0`.
@@ -48,14 +48,14 @@ Default: `0`.
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
 Default: unset (see @@class cross-reference@@).
-* @label="text"@
+* `label="text"`
 Label prepended to item.
 Default: unset (but see @@label cross-reference@@ for exceptions).
-* @wraptag="element"@
-HTML element to wrap breadcrumb block, specified without brackets (e.g. @wraptag="p"@).
+* `wraptag="element"`
+HTML element to wrap breadcrumb block, specified without brackets (e.g. `wraptag="p"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -80,8 +80,8 @@ Provides a breadcrumb guide that reflects where a user is within the site's navi
 
 ### Version 4.5.0
 
-Default @class="noline"@ for @linkclass@ attribute removed (now unset).
+Default `class="noline"` for `linkclass` attribute removed (now unset).
 
 ### Version 4.3.0
 
-@sep@ attribute deprecated and renamed @separator@.
+`sep` attribute deprecated and renamed `separator`.

@@ -10,9 +10,9 @@ The "link_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_category 
 h3(sectionedit1#attributes). Attributes
 
 *"class":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#class=“class name”*
- CSS class to apply to the wraptag Default: unset. *"label":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#label=“text”*
- Label for the top of the list. Default: unset. *"labeltag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#labeltag=“tag text”*
- HTML tag to wrap the label at the top of the list. Default: unset. *"title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#title=“integer”*
+ CSS class to apply to the wraptag Default: unset. **"label":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#label=“text”*
+ Label for the top of the list. Default: unset. **"labeltag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#labeltag=“tag text”*
+ HTML tag to wrap the label at the top of the list. Default: unset. **"title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#title=“integer”*
  Display link category name or its title. Values:
 
 bc. 0
@@ -28,7 +28,7 @@ bc. 1
 bc. 0
 
 
-. *"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag text”*
+. **"wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag=“tag text”*
  HTML tag to be used to wrap the category, without brackets. Default: unset.
 
 h3(sectionedit2#examples). Examples

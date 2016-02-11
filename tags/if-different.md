@@ -21,7 +21,7 @@ On this page:
 <txp:if_different>
 ```
 
-The *if_different* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_different** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_different>
@@ -50,9 +50,9 @@ This tag has no attributes.
 </txp:if_different>
 ```
 
-To be used inside a Textpattern 'article' type @@Form template@@ or an article tag container (such as "article":article or "article_custom":article-custom).
+To be used inside a Textpattern 'article' type @@Form template@@ or an article tag container (such as [article](article) or [article_custom](article-custom)).
 
-Other tags used: "posted":posted.
+Other tags used: [posted](posted).
 
 ### Example 2: Build an indented list of article titles grouped by section
 
@@ -65,17 +65,17 @@ Intention:
 Desired result:
 
 * about (section title)
-** 1st Article from about section
-** 2nd Article from about section
-** ...another article
+* 1st Article from about section
+* 2nd Article from about section
+* ...another article
 * family (section title)
-** 1st Article from family section
-** 2nd Article from family section
-** ...another article
+* 1st Article from family section
+* 2nd Article from family section
+* ...another article
 * people (section title)
-** 1st Article from people section
-** 2nd Article from people section
-** ...another article
+* 1st Article from people section
+* 2nd Article from people section
+* ...another article
 
 In a Textpattern @@Page template@@, add this tag to loop through all articles from all sections:
 
@@ -92,6 +92,6 @@ In a Textpattern @@Page template@@, add this tag to loop through all articles fr
 </txp:article_custom>
 ```
 
-The snippet above lists all article titles and renders an intermittent heading element whenever a *different* section is encountered while the articles loop through.
+The snippet above lists all article titles and renders an intermittent heading element whenever a **different** section is encountered while the articles loop through.
 
-Other tags used: "article_custom":article-custom, "section":section, "title":title.
+Other tags used: [article_custom](article-custom), [section](section), [title](title).

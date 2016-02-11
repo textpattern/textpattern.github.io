@@ -21,7 +21,7 @@ On this page:
 <txp:site_slogan />
 ```
 
-The *site_slogan* is a __single__ tag which is used to output the site's tagline (labeled as 'Site slogan' in the "Preferences administration panel":http://docs.textpattern.io/administration/preferences-panel).
+The **site_slogan** is a __single__ tag which is used to output the site's tagline (labeled as 'Site slogan' in the "Preferences administration panel":http://docs.textpattern.io/administration/preferences-panel).
 
 The slogan is a brief (255 characters maximum) tagline or description of your site which can be used, for example, in XML feeds.
 
@@ -41,7 +41,7 @@ This tag has no attributes.
 
 ### Example 2: Slogan as content filler
 
-The slogan could be used for the content attribute of the @description@ metadata element. Either whole...
+The slogan could be used for the content attribute of the `description` metadata element. Either whole...
 
 ```html
 <meta name="description" content="<txp:site_slogan />">

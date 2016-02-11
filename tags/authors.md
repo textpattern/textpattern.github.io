@@ -24,7 +24,7 @@ On this page:
 <txp:authors>
 ```
 
-The *authors* tag is a __single__ or __container__ tag that Textpattern will use to gather a list of authors designated within the Textpattern "Users administration panel":../administration/users-panel.
+The **authors** tag is a __single__ or __container__ tag that Textpattern will use to gather a list of authors designated within the Textpattern [Users administration panel](../administration/users-panel).
 
 If used as a __container__ tag, it must be specified as an opening and closing pair of tags, like this:
 
@@ -38,52 +38,52 @@ If used as a __container__ tag, it must be specified as an opening and closing p
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @form="form name"@
+* `form="form name"`
 Use specified form template to process each author.
 Default: unset.
-* @group="user group"@
+* `group="user group"`
 Comma-separated list of user groups (publishing roles that the authors belong to.
-Values: @publisher@, @managing_editor@, @copy_editor@, @staff_writer@, @freelancer@, @designer@ or @privs_none@.
+Values: `publisher`, `managing_editor`, `copy_editor`, `staff_writer`, `freelancer`, `designer` or `privs_none`.
 Default: unset, retrieves from all groups.
-* @limit="integer"@
+* `limit="integer"`
 The number of authors to display.
 Default: `0` (no limit).
-* @name="author"@
+* `name="author"`
 Comma-separated list of author names.
 Default: unset, which determines whether 'any' author listing is being viewed.
-* @offset="integer"@
+* `offset="integer"`
 The number of authors to skip.
 Default: `0`.
-* @sort="sort value(s)"@
+* `sort="sort value(s)"`
 How to sort resulting list.
 Values:
 `id` (author id#).
-@last_access@ (most recent log in).
-@name@ (login name).
-@realname@ (real name)
-@privs@ (user group).
-@rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
-Each field in the @textpattern@ database table can be used as a sort key.
-Default: @name asc@.
+`last_access` (most recent log in).
+`name` (login name).
+`realname` (real name)
+`privs` (user group).
+`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)).
+Each field in the `textpattern` database table can be used as a sort key.
+Default: `name asc`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @break="value"@
-Where value is an HTML element, specified without brackets (e.g. @break="li"@) or some string to separate list items.
-Default: @br@ (but see @@break cross-reference@@ for exceptions).
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
+* `break="value"`
+Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
+Default: `br` (but see @@break cross-reference@@ for exceptions).
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
 Default: tag name or unset (see @@class cross-reference@@).
-* @label="text"@
+* `label="text"`
 Label prepended to item.
 Default: unset (but see @@label cross-reference@@ for exceptions).
-* @labeltag="element"@
-HTML element to wrap (markup) label, specified without brackets (e.g. labeltag="h3").
+* `labeltag="element"`
+HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
 Default: unset.
-* @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
+* `wraptag="element"`
+HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -103,7 +103,7 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 </txp:authors>
 ```
 
-Other tags used: "author":author, "author_email":author-email.
+Other tags used: [author](author), [[author_email](author-email).
 
 ### Example 3: Render a drop-down list of authors
 
@@ -115,7 +115,7 @@ Other tags used: "author":author, "author_email":author-email.
 </select>
 ```
 
-Other tags used: "author":author.
+Other tags used: [author](author).
 
 ## Genealogy
 

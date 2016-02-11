@@ -23,7 +23,7 @@ On this page:
 <txp:image_index />
 ```
 
-The *image_index* tag is a __single__ tag that is intended to be used in tandem with "image_display":image-display. It renders thumbnails of all images contained in an image category. This category can be specified as an attribute to the tag and defaults to the current site category as given in the page's URL.
+The **image_index** tag is a __single__ tag that is intended to be used in tandem with "image_display":image-display. It renders thumbnails of all images contained in an image category. This category can be specified as an attribute to the tag and defaults to the current site category as given in the page's URL.
 
 The thumbnail images are linked to an address which will pass the image ID plus the active category on to the tandem "image_display":image-display tag. It is up to the user to include this tandem tag at an appropriate place inside the page template.
 
@@ -34,52 +34,52 @@ Note: As the image category is passed into [image_display](image-display), it re
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @category="category name"@
+* `category="category name"`
 Category of images to display.
 Values: (comma separated list of) category name(s).
 Default: presently viewed category.
-* @limit="integer"@
+* `limit="integer"`
 The number of images to display.
 Default: `0` (no limit).
-* @offset="integer"@
+* `offset="integer"`
 The number of images to skip.
 Default: `0`.
-* @sort="sort value(s)"@
+* `sort="sort value(s)"`
 How to sort resulting list.
 Values:
-@alt@ (image alt text)
-@author@
-@caption@ (image caption text)
-@category@ (image category)
-@date@ (date posted)
-@ext@ (image extension)
-@h@ (image height)
+`alt` (image alt text)
+`author"`
+`caption` (image caption text)
+`category` (image category)
+`date` (date posted)
+`ext` (image extension)
+`h` (image height)
 `id` (image id#)
-@name@ (image name)
-@rand()@ ("random":http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand).
-@thumbnail@
-@w@ (image width)
-Each field in the @txp_image@ database table can be used as a sort key.
-Default: @name asc@.
+`name` (image name)
+`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)).
+`thumbnail"`
+`w` (image width)
+Each field in the `txp_image` database table can be used as a sort key.
+Default: `name asc`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @break="value"@
-Where value is an HTML element, specified without brackets (e.g. @break="li"@) or some string to separate list items.
-Default: @br@ (but see @@break cross-reference@@ for exceptions).
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
+* `break="value"`
+Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
+Default: `br` (but see @@break cross-reference@@ for exceptions).
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
 Default: tag name or unset (see @@class cross-reference@@).
-* @label="text"@
+* `label="text"`
 Label prepended to item.
 Default: unset (but see @@label cross-reference@@ for exceptions).
-* @labeltag="element"@
-HTML element to wrap (markup) label, specified without brackets (e.g. labeltag="h3").
+* `labeltag="element"`
+HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
 Default: unset.
-* @wraptag="element"@
-HTML element to wrap (markup) list block, specified without brackets (e.g. @wraptag="ul"@).
+* `wraptag="element"`
+HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -99,4 +99,4 @@ Other tags used: "image_display":image-display.
 
 ### Version 4.3.0
 
-@c@ attribute deprecated and renamed @category@.
+`c` attribute deprecated and renamed `category`.

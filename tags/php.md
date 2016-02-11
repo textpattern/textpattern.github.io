@@ -21,7 +21,7 @@ On this page:
 <txp:php>
 ```
 
-Textpattern's *php* tag is a __container__ tag that provides the same output abilities as @<?php //Code goes here... ?>@. Textpattern's tag version is used like this:
+Textpattern's **php** tag is a __container__ tag that provides the same output abilities as `<?php //Code goes here... ?>`. Textpattern's tag version is used like this:
 
 ```html
 <txp:php>
@@ -29,7 +29,7 @@ Textpattern's *php* tag is a __container__ tag that provides the same output abi
 </txp:php>
 ```
 
-Control over where this tag is allowed to appear (i.e. the privileges required to allow it to appear in pages and forms) are governed by settings in the "Preferences administration panel":../administration/preferences-panel.
+Control over where this tag is allowed to appear (i.e. the privileges required to allow it to appear in pages and forms) are governed by settings in the [Preferences administration panel](../administration/preferences-panel).
 
 ## Attributes
 
@@ -41,9 +41,9 @@ This tag has no attributes.
 
 When inserting markup or PHP into the content boxes of a Textpattern article:
 
-# Don’t include the usual PHP delineations: i.e. @<?php ... ?>@.
+# Don’t include the usual PHP delineations: i.e. `<?php ... ?>`.
 # Use PHP as you would use normal PHP, not interspersed with markuFor example, inside the PHP tags, use PHP's echo command to output HTML, rather than writing HTML directly.
-# Surround the code with both the special @<notextile>@ tag and Textpattern @<txp:php>@ tag to *disable Textile* parsing:
+# Surround the code with both the special `<notextile>` tag and Textpattern `<txp:php>` tag to **disable Textile** parsing:
 
 ```html
 <notextile>
@@ -55,11 +55,11 @@ When inserting markup or PHP into the content boxes of a Textpattern article:
 
 ### Equivalent programmatic names
 
-All Textpattern tags have equivalent programmatic names which are _exactly_ the same as the tag names. For example, @<txp:recent_articles />@ is @recent_articles()@.
+All Textpattern tags have equivalent programmatic names which are __exactly__ the same as the tag names. For example, `<txp:recent_articles />` is `recent_articles()`.
 
 ### Arrays must be passed to all functions
 
-You must pass an array to all tag functions, even if there are no attributes to set. For tags that require no attributes or those that you do not wish to modify the defaults, pass an empty array, e.g. @category1(array());@.
+You must pass an array to all tag functions, even if there are no attributes to set. For tags that require no attributes or those that you do not wish to modify the defaults, pass an empty array, e.g. `category1(array());`.
 
 ## Examples
 

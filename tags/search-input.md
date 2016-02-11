@@ -22,46 +22,46 @@ On this page:
 <txp:search_input />
 ```
 
-The *search_input* tag is a __single__ tag. This tag will provide a text entry field for search parameters and an optional button to initiate the search.
+The **search_input** tag is a __single__ tag. This tag will provide a text entry field for search parameters and an optional button to initiate the search.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @button="text"@
+* `button="text"`
 Creates and labels a button to initiate the search.
 Default: unset (no button is created).
-* @form="form name"@
+* `form="form name"`
 Use specified form template to build a customized HTML form.
-Default: @search_input@.
-* @html_id="id"@
+Default: `search_input`.
+* `html_id="id"`
 The HTML `id` attribute assigned to the search form.
 Default: unset.
-* @match="match type"@
+* `match="match type"`
 Set the search mode. Choose from:
-@exact@: search terms must exactly match the words in the article in the order given. This mode is also automatically selected if the search term is surrounded with double quotes.
-@any@: any of the search terms in an article will cause it to show up in the results.
-@all@: all of the search terms in the article must exist (in any order) for the article to be included in the results.
-Default @exact@.
-* @section="section name"@
+`exact`: search terms must exactly match the words in the article in the order given. This mode is also automatically selected if the search term is surrounded with double quotes.
+`any`: any of the search terms in an article will cause it to show up in the results.
+`all`: all of the search terms in the article must exist (in any order) for the article to be included in the results.
+Default `exact`.
+* `section="section name"`
 Use the specified section as the destination page that will display the search results.
 Default: unset (use the front page).
-* @size="integer"@
+* `size="integer"`
 Sets the `size` attribute of the search `input` field.
-Default: @15@.
+Default: `15`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
 Default: tag name or unset (see @@class cross-reference@@).
-* @label="text"@
+* `label="text"`
 Label prepended to item.
 Default: unset (but see @@label cross-reference@@ for exceptions).
-* @wraptag="element"@
-HTML element to wrap markup, specified without brackets (e.g. @wraptag="div"@).
+* `wraptag="element"`
+HTML element to wrap markup, specified without brackets (e.g. `wraptag="div"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -74,13 +74,13 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 2: Elements required for building a customized HTML search form
 
-You can build your own custom search form by specifying @form="form-name"@ inside the @<txp:search_input />@ tag:
+You can build your own custom search form by specifying `form="form-name"` inside the `<txp:search_input />` tag:
 
 ```html
 <txp:search_input form="form-name" />
 ```
 
-You would then need to build your Form (i.e. @form-name@), and the absolute minimum Textpattern tags and attributes required would be:
+You would then need to build your Form (i.e. `form-name`), and the absolute minimum Textpattern tags and attributes required would be:
 
 ```html
 <form action="<txp:site_url />">
@@ -88,7 +88,7 @@ You would then need to build your Form (i.e. @form-name@), and the absolute mini
 </form>
 ```
 
-When using a customized form template, Textpattern doesn't automatically wrap the HTML form output with @<form>@ tags, thus you need the opening and closing @<form>@ tag pair. The @name="q"@ attribute and value is *required* to initiate a search query.
+When using a customized form template, Textpattern doesn't automatically wrap the HTML form output with `<form>` tags, thus you need the opening and closing `<form>` tag pair. The `name="q"` attribute and value is **required** to initiate a search query.
 
 Other tags used: "site_url":http://docs.textpattern.io/tags/site-url.
 
@@ -99,8 +99,8 @@ Note: Textpattern will use a user defined form named `search_results`, or an int
 
 ### Version 4.3.0
 
-@match@ attribute added.
+`match` attribute added.
 
 ### Version 4.0.7
 
-@html_id@ attribute added.
+`html_id` attribute added.

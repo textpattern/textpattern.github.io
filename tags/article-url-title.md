@@ -23,7 +23,7 @@ On this page:
 <txp:article_url_title />
 ```
 
-The *article_url_title* tag is a __single__ tag which returns the dumbed-down 'URL title' of the article being displayed. This URL title may also be part of the page's address depending on the 'Permanent link mode' chosen in the "Preferences administration panel":../administration/preferences-panel.
+The **article_url_title** tag is a __single__ tag which returns the dumbed-down 'URL title' of the article being displayed. This URL title may also be part of the page's address depending on the 'Permanent link mode' chosen in the [Preferences administration panel](../administration/preferences-panel).
 
 ## Attributes
 

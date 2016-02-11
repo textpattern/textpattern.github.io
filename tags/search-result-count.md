@@ -21,7 +21,7 @@ On this page:
 <txp:search_result_count />
 ```
 
-The *search_result_count* tag is a __single__ tag that returns the number of articles returned by an article tag. Use "if_search":http://docs.textpattern.io/tags/if-search to count search results or use in regular page after the "article":http://docs.textpattern.io/tags/article tag. If you need the results' count _before_ the list of results, use the article tag in conjunction with @pgonly="1"@ (see example 3).
+The **search_result_count** tag is a __single__ tag that returns the number of articles returned by an article tag. Use "if_search":http://docs.textpattern.io/tags/if-search to count search results or use in regular page after the "article":http://docs.textpattern.io/tags/article tag. If you need the results' count __before__ the list of results, use the article tag in conjunction with `pgonly="1"` (see example 3).
 
 Note: The [if_search](http://docs.textpattern.io/tags/if-search) conditional tag is required to recognize actual search results, without them the number of articles is returned by default.
 {: .alert-block .information}
@@ -30,9 +30,9 @@ Note: The [if_search](http://docs.textpattern.io/tags/if-search) conditional tag
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @text="text"@
+* `text="text"`
 Text to display with the number of matches.
-Default: @articles found@.
+Default: `articles found`.
 
 ## Examples
 
@@ -45,7 +45,7 @@ Default: @articles found@.
 </txp:if_search>
 ```
 
-If the visitor is searching for articles, it will show the number of articles that matched the search term (e.g. 5) as follows: @5 articles found@.
+If the visitor is searching for articles, it will show the number of articles that matched the search term (e.g. 5) as follows: `5 articles found`.
 
 Other tags used: "article":http://docs.textpattern.io/tags/article, "if_search":http://docs.textpattern.io/tags/if-search.
 
@@ -57,7 +57,7 @@ Other tags used: "article":http://docs.textpattern.io/tags/article, "if_search":
 </txp:if_search />
 ```
 
-Displays the number of articles returned (e.g. 5) as follows: @5 hits@.
+Displays the number of articles returned (e.g. 5) as follows: `5 hits`.
 
 Other tags used: "if_search":http://docs.textpattern.io/tags/if-search.
 
@@ -71,7 +71,7 @@ Other tags used: "if_search":http://docs.textpattern.io/tags/if-search.
 </txp:if_search />
 ```
 
-Displays the number of articles returned (e.g. 5) as follows: @5 hits@ - then displays results as an article listing.
+Displays the number of articles returned (e.g. 5) as follows: `5 hits` - then displays results as an article listing.
 
 Note: The `pgonly` attribute sets the article tag to return pagination statistics without rendering the article list. Care must be taken to remain consistent with article tag attributes to keep statistics accurate.
 {: .alert-block .information}

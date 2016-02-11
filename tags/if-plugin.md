@@ -22,7 +22,7 @@ On this page:
 <txp:if_plugin>
 ```
 
-The *if_plugin* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_plugin** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_plugin>
@@ -30,15 +30,15 @@ The *if_plugin* tag is a _conditional_ tag and always used as an opening and clo
 </txp:if_plugin>
 ```
 
-The tag will execute the contained statements if the name attribute matches a currently installed and enabled plugin, and the current version number is equal to or greater than the @version@ attribute assigned (if used).
+The tag will execute the contained statements if the name attribute matches a currently installed and enabled plugin, and the current version number is equal to or greater than the `version` attribute assigned (if used).
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @name="text"@
-Plugin name as defined on the "Plugins administration panel":../administration/plugins-panel.
-* @version="number"@
+* `name="text"`
+Plugin name as defined on the [Plugins administration panel](../administration/plugins-panel).
+* `version="number"`
 Minimum plugin version number.
 Default: unset.
 
@@ -52,10 +52,10 @@ Default: unset.
 </txp:if_plugin>
 ```
 
-Applies the tag @<txp:zem_contact />@ if the 'zem_contact_lang' plugin is installed, activated, and the version number is equal to or greater than 4.
+Applies the tag `<txp:zem_contact />` if the 'zem_contact_lang' plugin is installed, activated, and the version number is equal to or greater than 4.
 
 ## Genealogy
 
 ### Version 4.3.0
 
-@ver@ attribute deprecated and renamed @version@.
+`ver` attribute deprecated and renamed `version`.

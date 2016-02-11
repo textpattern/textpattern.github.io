@@ -21,13 +21,13 @@ On this page:
 <txp:search_result_date />
 ```
 
-The *search_result_date* tag is a __single__ tag. This tag will provide the article posted date as returned by the search function.
+The **search_result_date** tag is a __single__ tag. This tag will provide the article posted date as returned by the search function.
 
 ## Attributes
 
-* @format="format string"@
+* `format="format string"`
 Override the default date format set in the "Preferences administration panel":http://docs.textpattern.io/administration/preferences-panel.
-Values: any valid "strftime":http://php.net/strftime string values, @since@, @iso8601@ ("ISO 8601 reference":http://en.wikipedia.org/wiki/ISO_8601), @w3cdtf@ ("W3CDTF reference":http://www.w3.org/TR/NOTE-datetime), or @rfc822@ ("RFC 822 reference":http://www.w3.org/Protocols/rfc822/#z28).
+Values: any valid [strftime](http://php.net/strftime) string values, `since`, `iso8601` ("ISO 8601 reference":http://en.wikipedia.org/wiki/ISO_8601), `w3cdtf` ("W3CDTF reference":http://www.w3.org/TR/NOTE-datetime), or `rfc822` ("RFC 822 reference":http://www.w3.org/Protocols/rfc822/#z28).
 Default: the 'Archive date format' set in preferences.
 
 ## Examples

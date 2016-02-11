@@ -21,7 +21,7 @@ On this page:
 <txp:permlink>
 ```
 
-The *permlink* can be used as a __single__ tag or a __container__ tag to return the permanent url of the article being displayed.
+The **permlink** can be used as a __single__ tag or a __container__ tag to return the permanent url of the article being displayed.
 
 If used as a container tag, the HTML required to output a hyperlink is returned; if used as a single tag, only the URL itself is returned.
 
@@ -29,22 +29,22 @@ If used as a container tag, the HTML required to output a hyperlink is returned;
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @id="integer"@
+* `id="integer"`
 Specifies the article `id`, assigned at creation of the article, to link. Can be found on the "Articles administration panel":../administration/articles-panel.
 Default: unset (current article).
-* @title="text"@
-HTML @title@ attribute.
+* `title="text"`
+HTML `title` attribute.
 Default: unset.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
-HTML @class@ to apply to the @a@ tag when used as a container tag.
+* `class="class name"`
+HTML `class` to apply to the `a` tag when used as a container tag.
 Default: tag name or unset (see @@class cross-reference@@).
-* @style="style rule"@
-Inline CSS @style@ rule. It's recommended that you assign CSS rules via @class@ attribute instead.
+* `style="style rule"`
+Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.
 Default: unset.
 
 ## Examples
@@ -73,7 +73,7 @@ This would result in the following:
 <a rel="bookmark" href="http://example.com/index.php?id=2">Article title</a>
 ```
 
-Other tags used: "title":title.
+Other tags used: [title](title).
 
 ### Example 3: Customising permanent links
 
@@ -83,9 +83,9 @@ Other tags used: "title":title.
 </txp:permlink>
 ```
 
-By default @<txp:permlink />@ returns only a very basic link, which doesn't allow for customising the link title, or adding a CSS class, etc. Using the tag in its single tag capacity opens up a lot more possibilities.
+By default `<txp:permlink />` returns only a very basic link, which doesn't allow for customising the link title, or adding a CSS class, etc. Using the tag in its single tag capacity opens up a lot more possibilities.
 
-For example, to give the permanent link an HTML @title@ attribute of the article's title, and also apply a @class@ to it:
+For example, to give the permanent link an HTML `title` attribute of the article's title, and also apply a `class` to it:
 
 ```html
 <a class="awesome-article" href="<txp:permlink />">
@@ -93,4 +93,4 @@ For example, to give the permanent link an HTML @title@ attribute of the article
 </a>
 ```
 
-Other tags used: "title":title.
+Other tags used: [title](title).

@@ -23,7 +23,7 @@ On this page:
 <txp:if_last_section>
 ```
 
-The *if_last_section* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_last_section** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_last_section>

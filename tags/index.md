@@ -18,26 +18,26 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### A
 
-* "article":article
+* [article](article)
 * "article custom":article-custom
 * "article id":article-id
 * "article image":article-image
 * "article url title":article-url-title
-* "author":author
+* [author](author)
 * "author email":author-email
 * "authors":authors
 
 ### B
 
-* "body":body
+* [body](body)
 * "breadcrumb":breadcrumb
 
 ### C
 
 * "category":category
 * "category list":category-list
-* "category1":category1
-* "category2":category1
+* [category1](category1)
+* [category2](category2)
 * "comment anchor":comment-anchor
 * "comment email":comment-email
 * "comment email input":comment-email-input
@@ -60,17 +60,17 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * "comments help":comments-help
 * "comments invite":comments-invite
 * "comments preview":comments-preview
-* "css":css
+* [css](css)
 * "custom field":custom-field
 
 ### E
 
-* "else":else
+* [else](else)
 * "email":email
 * "error message":error-message
 * "error status":error-status
-* "excerpt":excerpt
-* "expires":expires
+* [excerpt](excerpt)
+* [expires](expires)
 
 ### F
 
@@ -141,7 +141,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * "image index":image-index
 * "image info":image-info
 * "image url":image-url
-* "images":images
+* [images](images)
 
 ### L
 
@@ -159,7 +159,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * "link to prev":link-to-prev
 * "link url":link-url
 * "linkdesctitle":linkdesctitle
-* "linklist":linklist
+* [linklist](linklist)
 
 ### M
 
@@ -183,10 +183,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * "page title":page-title
 * "page url":page-url
 * "password protect":password-protect
-* "permlink":permlink
+* [permlink](permlink)
 * "php":php
 * "popup":popup
-* "posted":posted
+* [posted](posted)
 * "prev title":prev-title
 
 ### R
@@ -204,7 +204,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * "search result title":search-result-title
 * "search result url":search-result-url
 * "search term":search-term
-* "section":section
+* [section](section)
 * "section list":section-list
 * "site name":site-name
 * "site slogan":site-slogan
@@ -212,9 +212,9 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### T
 
-* "text":text
+* [text](text)
 * "thumbnail":thumbnail
-* "title":title
+* [title](title)
 * "txp die":txp-die
 
 ### V
@@ -223,4 +223,4 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### Y
 
-* "yield":yield
+* [yield](yield)

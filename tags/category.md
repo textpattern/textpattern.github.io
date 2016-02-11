@@ -24,7 +24,7 @@ On this page:
 <txp:category />
 ```
 
-The *category* tag can be used as either a __single__ or _containing_ tag. It will display information of the category as defined by the @name@ attribute, or the one currently being viewed. When used as a containing tag, it will turn the contents into a link to the category. Otherwise, it will return plain text.
+The **category** tag can be used as either a __single__ or __containing__ tag. It will display information of the category as defined by the `name` attribute, or the one currently being viewed. When used as a containing tag, it will turn the contents into a link to the category. Otherwise, it will return plain text.
 
 May be used in any context.
 
@@ -32,30 +32,30 @@ May be used in any context.
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @link="boolean"@
-Whether to display as link. Works only in the __single__ tag, *not* in the _containing_ tag variant.
+* `link="boolean"`
+Whether to display as link. Works only in the __single__ tag, **not** in the __containing__ tag variant.
 Values: `0` (no) or `1` (yes).
 Default: `0`.
-* @name="category name"@
-Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the "Categories administration panel":../administration/categories-panel. Also note that if you had called your category @My Category Name@ it becomes @my-category-name@ when used in tags.
+* `name="category name"`
+Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [Categories administration panel](../administration/categories-panel). Also note that if you had called your category `My Category Name` it becomes `my-category-name` when used in tags.
 Default: unset (use current category).
-* @section="section name"@
+* `section="section name"`
 Restrict to articles from specified section(s).
 Values: (comma separated list of) section name(s).
 Default: current section (for backwards compatibility).
-* @this_section="boolean"@
+* `this_section="boolean"`
 If set to `1`, the linked category name will direct users to an category list in the current section, otherwise category list from all sections is displayed.
-Only link to articles from the current section. The @section@ attribute overrides this setting.
+Only link to articles from the current section. The `section` attribute overrides this setting.
 Values: `0` (no, all sections) or `1` (yes, this section only).
 Default: `0`.
-* @title="boolean"@
+* `title="boolean"`
 Whether to display category's title instead of its name.
 Values: `0` (no, display name) or `1` (yes, display title).
 Default: `0`.
-* @type="category type"@
-Values: @article@, @image@, `link` or @file@.
-Default: @article@.
-* @url="boolean"@
+* `type="category type"`
+Values: `article`, `image`, `link` or `file`.
+Default: `article`.
+* `url="boolean"`
 Display plain URL or full link.
 Values: `0` (no) or `1` (yes).
 Default: `0` (display title or full link, depending on `link`).
@@ -64,11 +64,11 @@ Default: `0` (display title or full link, depending on `link`).
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
-HTML @class@ attribute, applied to @wraptag@. If no @wraptag@ is supplied (and @link="1"@), the @class@ is applied to the @<a>@ tag instead.
+* `class="class name"`
+HTML `class` attribute, applied to `wraptag`. If no `wraptag` is supplied (and `link="1"`), the `class` is applied to the `<a>` tag instead.
 Default: unset (see @@class cross-reference@@).
-* @wraptag="tag"@
-HTML tag to wrap around output, specified without brackets (e.g. @wraptag="p"@).
+* `wraptag="tag"`
+HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -101,9 +101,9 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Version 4.0.7
 
-Applies @class@; attribute to the @<a>@ tag when the @wraptag@ attribute is empty.
-@url@ attribute added.
+Applies `class`; attribute to the `<a>` tag when the `wraptag` attribute is empty.
+`url` attribute added.
 
 ### Version 4.0.4
 
-@this_section@ attribute added.
+`this_section` attribute added.

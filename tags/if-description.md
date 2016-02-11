@@ -23,7 +23,7 @@ On this page:
 <txp:if_description>
 ```
 
-The *if_description* tag is a _conditional_ tag and always used as an opening and closing pair, like this...
+The **if_description** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
 ```html
 <txp:if_description>
@@ -53,7 +53,7 @@ This tag has no attributes.
 </head>
 ```
 
-Other tags used: "meta_description":meta-description.
+Other tags used: [meta_description](meta-description).
 
 ## Genealogy
 

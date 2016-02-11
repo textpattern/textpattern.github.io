@@ -21,7 +21,7 @@ On this page:
 <txp:comment_id />
 ```
 
-The *comment_id* tag is a __single__ tag which is used to display the comment's internal id as assigned by Textpattern at the time of posting. Used in a comments display form.
+The **comment_id** tag is a __single__ tag which is used to display the comment's internal id as assigned by Textpattern at the time of posting. Used in a comments display form.
 
 ## Attributes
 
@@ -39,9 +39,8 @@ This tag has no attributes.
         <txp:comment_id />
     </txp:comment_permlink>
 </p>
-```
 
 <txp:comment_message />
 ```
 
-Other tags used: "comment_message":comment-message, "comment_name":comment-name, "comment_permlink":comment-permlink, "comment_time":comment-time.
+Other tags used: [comment_message](comment-message), [comment_name](comment-name), [comment_permlink](comment-permlink), [comment_time](comment-time).

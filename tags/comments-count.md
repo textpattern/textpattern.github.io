@@ -21,9 +21,9 @@ On this page:
 <txp:comments_count />
 ```
 
-The *comments_count* tag is a __single__ tag which is used to display the number of comments associated with a particular article.
+The **comments_count** tag is a __single__ tag which is used to display the number of comments associated with a particular article.
 
-Though *comments_count* can be used independently, it is also called by "comments_invite":comments-invite to append the comments count to the *comments_invite* link.
+Though **comments_count** can be used independently, it is also called by [comments_invite](comments-invite) to append the comments count to the **comments_invite** link.
 
 Used in an article form.
 
@@ -46,4 +46,4 @@ But only if any comments are associated with the current article.
 </txp:if_comments>
 ```
 
-Other tags used: "comments_invite":comments-invite, "if_comments":if-comments.
+Other tags used: [comments_invite](comments-invite), [if_comments](if-comments).

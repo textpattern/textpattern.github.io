@@ -100,7 +100,7 @@ In the above examples, the attribute are treated as plain text; the literal tag 
 
 ## Parsing tags example
 
-Using an article that has a custom field named 'email' containing an email address @me@example.com@ and a custom field 'name' containing 'Donald Swain':
+Using an article that has a custom field named 'email' containing an email address `me@example.com` and a custom field 'name' containing 'Donald Swain':
 
 ```html
 <txp:email
@@ -126,7 +126,7 @@ Attribute value parsing has no real limitations. Within a parsed attribute value
 
 * Have an unlimited number of tags.
 * Mix plain text with tags.
-* Use container tags (yes, even @<txp:php>@), self-closing tags and if/else constructs.
+* Use container tags (yes, even `<txp:php>`), self-closing tags and if/else constructs.
 * Even parse the attributes of tags inside an attribute to unlimited depth, provided you use proper attribute value quoting and escaping.
 
 ## Nesting quotes in quotes in...
@@ -143,8 +143,8 @@ Referring to the last point above, things can become 'a little hairy' if you wan
 </txp:if_variable>
 ```
 
-In the first statement, notice the pairs of single apostrophes inside the category attribute? They are necessary to *escape* the single quotes so the parser does not see them as the end of the *value* attribute in the @<txp:variable />@ tag. At each nested level, the number of single quotes surrounding a tag is usually doubled to maintain the integrity of the statements; this can get mighty interesting unless you keep your wits about you!
+In the first statement, notice the pairs of single apostrophes inside the category attribute? They are necessary to **escape** the single quotes so the parser does not see them as the end of the **value** attribute in the `<txp:variable />` tag. At each nested level, the number of single quotes surrounding a tag is usually doubled to maintain the integrity of the statements; this can get mighty interesting unless you keep your wits about you!
 
-The @file-category@ form returns some markup (in this case, just a series of links to the relevant files) which is all assigned to the *value* of the "variable":http://docs.textpattern.io/tags/variable named 'file-count'.
+The `file-category` form returns some markup (in this case, just a series of links to the relevant files) which is all assigned to the **value** of the "variable":http://docs.textpattern.io/tags/variable named 'file-count'.
 
 The upshot is that this variable can be tested with "if-variable":http://docs.textpattern.io/tags/if-variable to see if it contains anything at all and - if it does, the file list can be displayed. Conversely, if there are no files for that language then the "else":http://docs.textpattern.io/tags/else part of the conditional statement is displayed.

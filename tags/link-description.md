@@ -22,13 +22,13 @@ On this page:
 <txp:link_description />
 ```
 
-The *link_description* tag is a __single__ tag which is used to return the text from the 'Description' field as defined within the "Links administration panel":../administration/links-panel. This tag is used in a 'links' type form or inside a "linklist":linklist container tag to display information about the current link.
+The **link_description** tag is a __single__ tag which is used to return the text from the 'Description' field as defined within the "Links administration panel":../administration/links-panel. This tag is used in a 'links' type form or inside a [linklist](linklist) container tag to display information about the current link.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* @escape="html"@
+* `escape="html"`
 Escape HTML entities such as `<`, `>` and `&`.
 Values: `html` or unset.
 Default: `html`;
@@ -37,17 +37,17 @@ Default: `html`;
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* @class="class name"@
-HTML @class@ to apply to the @wraptag@ attribute value.
+* `class="class name"`
+HTML `class` to apply to the `wraptag` attribute value.
 Default: tag name or unset (see @@class cross-reference@@).
-* @label="text"@
+* `label="text"`
 Label prepended to item.
 Default: unset (but see @@label cross-reference@@ for exceptions).
-* @labeltag="element"@
-HTML element to wrap (markup) label, specified without brackets (e.g. labeltag="h3").
+* `labeltag="element"`
+HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
 Default: unset.
-* @wraptag="element"@
-HTML element to wrap around description, specified without brackets (e.g. @wraptag="div"@).
+* `wraptag="element"`
+HTML element to wrap around description, specified without brackets (e.g. `wraptag="div"`).
 Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
@@ -67,4 +67,4 @@ Other tags used: "link":link.
 
 ### Version 4.0.7
 
-Default value for @escape@ attribute changed from unset to `html`.
+Default value for `escape` attribute changed from unset to `html`.
