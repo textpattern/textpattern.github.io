@@ -20,7 +20,6 @@ On this page:
 ## Syntax
 
 ```html
-```html
 <txp:article />
 ```
 
