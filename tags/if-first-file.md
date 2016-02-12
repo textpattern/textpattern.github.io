@@ -20,17 +20,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_first_file>
-```
+~~~
 
 The **if_first_file** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_first_file>
     ...conditional statement...
 </txp:if_first_file>
-```
+~~~
 
 The tag will execute the contained statements if the displayed file is the first in the currently displayed [file_download_list](file-download-list). The tag supports [else](else).
 

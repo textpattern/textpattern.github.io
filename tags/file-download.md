@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:file_download />
-```
+~~~
 
 The **file_download** tag is a __single__ tag which Textpattern will replace with a Textpattern 'file' type @@Form template@@. Inside that form go the other @@file tags@@.
 
@@ -41,8 +41,8 @@ Default: unset (nothing is returned).
 
 ### Example 1: Display a download form
 
-```html
+~~~ html
 <txp:file_download form="new-files" id="1" />
-```
+~~~
 
 Gets file with `id` of `1` and displays results using `new-files` form.

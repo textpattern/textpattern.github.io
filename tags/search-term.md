@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:search_term />
-```
+~~~
 
 The **search_term** tag is a __single__ tag which returns the expression the user searched for through the full text search form.
 
@@ -32,7 +32,7 @@ This tag has no attributes.
 
 ### Example 1: Display the search term on the search results page
 
-```html
+~~~ html
 <txp:if_search>
     <h1>Search results</h1>
     <h3>
@@ -41,7 +41,7 @@ This tag has no attributes.
     </h3>
     <txp:article />
 </txp:if_search>
-```
+~~~
 
 ## Genealogy
 

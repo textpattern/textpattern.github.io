@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:section>
-```
+~~~
 
 The **section** tag can be used as either a __single__ tag or __container__ tag. It will display information about the section as defined by either the `name` attribute, the section currently being viewed, or the section of the article being displayed (if used within a Textpattern 'article' type @@Form template@@, or an [if_individual_article](if-individual-article) conditional tag).
 
@@ -62,65 +62,65 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display the current section name
 
-```html
+~~~ html
 <txp:section />
-```
+~~~
 
 ### Example 2: Display hyperlinked section title
 
-```html
+~~~ html
 <txp:section link="1" title="1" />
-```
+~~~
 
 In an article form, it displays the article's section title as a hyperlink to the section home page. Otherwise, it displays the title of the section currently being viewed as a hyperlink to the section home page.
 
 ### Example 3: Display a link to a specified section
 
-```html
+~~~ html
 <txp:section link="1" title="1" wraptag="p" name="archive" />
-```
+~~~
 
 Displays a hyperlink to the 'archive' section home page, wrapped in `<p>` tags, using the section's title as link text.
 
 ### Example 4: Container tag example
 
-```html
+~~~ html
 <txp:section name="archive">
     My Archive
 </txp:section>
-```
+~~~
 
 Displays the text 'My Archive' as a hyperlink to the 'archive' section home page. HTML output for clean URLs:
 
-```html
+~~~ html
 <a href="http://example.com/archive/">My Archive</a>
-```
+~~~
 
 And for messy URLs:
 
-```html
+~~~ html
 <a href="http://example.com/index.php?s=archive">My Archive</a>
-```
+~~~
 
 ### Example 5: Single tag example
 
-```html
+~~~ html
 <a href="<txp:section name="about" url="1" />">
     <txp:section name="about" title="1" />
 </a>
-```
+~~~
 
 Displays the section title 'About' as a hyperlink to the 'about' section home page. HTML output for clean URLs:
 
-```html
+~~~ html
 <a href="http://example.com/about/">About</a>
-```
+~~~
 
 And for messy URLs:
 
-```html
+~~~ html
 <a href="http://example.com/index.php?s=about">About</a>
-```
+~~~
 
 ## Genealogy
 

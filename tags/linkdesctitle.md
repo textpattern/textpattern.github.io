@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:linkdesctitle />
-```
+~~~
 
 The **linkdesctitle** tag is a __single__ tag which is used to return an HTML hyperlink, defined within the [Links administration panel](../administration/links-panel).
 
@@ -37,7 +37,7 @@ Default: unset.
 
 ### Example 1: Display a link and its 'Title' field contents
 
-```html
+~~~ html
 <p>
     <txp:linkdesctitle />
 </p>

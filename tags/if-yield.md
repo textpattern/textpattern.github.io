@@ -19,17 +19,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_yield>
-```
+~~~
 
 The **if_yield** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_yield>
     ...conditional statement...
 </txp:if_yield>
-```
+~~~
 
 It tests the existence and/or value of a content set with the [yield](yield) tag inside of an [output_form](output-form) container tag.
 
@@ -44,33 +44,33 @@ The (optional) value which the yield content must match in order for the contain
 
 ### Example 1: Check if yield is defined
 
-```html
+~~~ html
 <txp:if_yield>
     Output_form was used as a container.
 <txp:else />
     No yield defined.
 </txp:if_yield>
-```
+~~~
 
 ### Example 2: Check if yield content is set
 
-```html
+~~~ html
 <txp:if_yield value="">
     No yield, is empty.
 <txp:else />
     Yield set: <txp:yield />
 </txp:if_yield>
-```
+~~~
 
 Other tags used: [yield](yield).
 
 ### Example 3: Check against a specific yield content
 
-```html
+~~~ html
 <txp:if_yield value="red">
 	Yield is red.
 </txp:if_yield>
-```
+~~~
 
 ## Genealogy
 

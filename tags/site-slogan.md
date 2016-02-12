@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:site_slogan />
-```
+~~~
 
 The **site_slogan** is a __single__ tag which is used to output the site's tagline (labeled as 'Site slogan' in the [Preferences administration panel](../administration/preferences-panel)).
 
@@ -33,21 +33,21 @@ This tag has no attributes.
 
 ### Example 1: General display of slogan
 
-```html
+~~~ html
 <h2>
     <txp:site_slogan />
 </h2>
-```
+~~~
 
 ### Example 2: Slogan as content filler
 
 The slogan could be used for the content attribute of the `description` metadata element. Either whole...
 
-```html
+~~~ html
 <meta name="description" content="<txp:site_slogan />">
-```
+~~~
 
 or partial...
 
-```html
+~~~ html
 <meta name="description" content="<txp:site_slogan />. And the rest of your pithy description would go here.">

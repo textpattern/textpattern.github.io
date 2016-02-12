@@ -8,9 +8,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:link_url />
-```
+~~~
 
 The **link_url** tag is a __single__ tag which returns the URL of the link as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to show information about the current link in the list.
 
@@ -22,10 +22,10 @@ This tag has no attributes.
 
 ### Example 1: Display a link with class attribute
 
-```html
+~~~ html
 <a class="awesome-links" href="<txp:link_url />">
     <txp:link_name />
 </a>
-```
+~~~
 
 Other tags used: [link_name](link-name).

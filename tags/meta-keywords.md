@@ -19,21 +19,21 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:meta_keywords />
-```
+~~~
 
 The **meta_keywords** tag is a __single__ tag used in one of two ways. One is to output keyword data as the content of a standard HTML `<meta>` tag in the `<head>` of a page template:
 
-```html
+~~~ html
 <meta name="keywords" content="{your article's Keywords}" />
-```
+~~~
 
 The other is to output raw keyword text anywhere else:
 
-```
+~~~
 {your article keywords}
-```
+~~~
 
 Context of use must be within a single article (as opposed to an article list). The tag can be added directly in a @@Page template@@ or as part of an article @@Form template@@. Either way, you may also place it in a given article tag.
 
@@ -58,21 +58,21 @@ Default: unset.
 
 ### Example 1: Use article's keywords for meta tag content
 
-```html
+~~~ html
 <txp:meta_keywords />
-```
+~~~
 
 The **meta_keywords** tag returns an HTML `meta` tag, populated with an article's keywords. The tag should always be placed in your template's 'head' section, between the opening and closing HTML `<head>` tags.
 
 The above will output keywords metadata with `content="` populated with the list of keywords set in the article's 'Keywords' field (the tag returns nothing if no keywords are set for an article). For example, if your article's 'Keywords' field contains `sauce, caramel, sugar`, the tag will output the following:
 
-```html
+~~~ html
 <meta name="keywords" content="sauce,caramel,sugar" />
-```
+~~~
 
 ### Example 2: Display keywords in context of an article form
 
-```html
+~~~ html
 <h1>
     <txp:permlink>
         <txp:title />
@@ -88,7 +88,7 @@ The above will output keywords metadata with `content="` populated with the list
 </p>
 <txp:excerpt />
 <txp:body />
-```
+~~~
 
 In this example, keywords are used in a Textpattern 'article' type @@Form template@@ along with other article components. The keywords themselves are used like a list of topical 'tags', e.g. like you would use for more granular searching. The keywords would be presented above the article's excerpt.
 

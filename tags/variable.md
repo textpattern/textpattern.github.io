@@ -18,19 +18,19 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:variable />
-```
+~~~
 
 The **variable** tag is both a __single__ and a __container__ tag which sets or returns a user-defined global variable.
 
 If used as a __container__ tag, the result of the contained statements are assigned to the given variable `name`, like this:
 
-```html
+~~~ html
 <txp:variable>
     ...contained statements...
 </txp:variable>
-```
+~~~
 
 Note: Avoid entering white space characters for better code readability between the opening and closing __variable__ tags, they will lead to falsified results in the [if_variable](if-variable) evaluation.
 {: .alert-block .information}
@@ -52,7 +52,7 @@ Allows you to define constants at a single location (e.g. a @@Form@@ template, o
 
 Somewhere at the very beginning of a template you would define names and values, just like you do on your desktop calculatorâ€™s “memory” keys:
 
-```html
+~~~ html
 <txp:if_search>
     <title>My blog search results: <txp:search_term /></title>
     <meta name="description" content="Blog article search results.">
@@ -69,15 +69,15 @@ Somewhere at the very beginning of a template you would define names and values,
         <txp:variable name="homepage" value="1" />
     </txp:if_category>
 </txp:if_search>
-```
+~~~
 
 Later down the @@Page@@ template or in a separate @@Form@@ you can read the attribute values previously set conditionals come in handy at times:
 
-```html
+~~~ html
 <txp:if_variable name="homepage" value="1">
     ...homepage content...
 </txp:if_variable>
-```
+~~~
 
 Other tags used: [else](else), [if_category](if-category), [if_search](if-search), [if_variable](if-variable), [search_term](search-term).
 
@@ -85,20 +85,20 @@ Other tags used: [else](else), [if_category](if-category), [if_search](if-search
 
 There are two parts to making this work. First a variable is created that stores the output of any tag as the `value` (the `name` is arbitrary)...
 
-```html
+~~~ html
 <txp:variable name="foo" value='<txp:permlink />' />
-```
+~~~
 
 Note: A Textpattern tag, used as an attribute (a parsed attribute), must be surrounded with single quotes.
 {: .alert-block .information}
 
 The variable 'foo' can then be used as a conditional later in the code.
 
-```html
+~~~ html
 <txp:if_variable name="foo" value="example.com/bar/baz">
     ...do this...
 </txp:if_variable>
-```
+~~~
 
 The conditional is saying if there is a variable named 'foo' having a specific value of 'example.com/bar/baz', then output what is defined, i.e. 'do this'.
 

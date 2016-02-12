@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:image_date />
-```
+~~~
 
 The **image_date** tag is a __single__ tag that Textpattern will replace with the uploaded date of the current (or given) image. Should usually be used in an @@image form@@, although it may be used on its own providing you specify an `id` or `name`.
 
@@ -43,7 +43,7 @@ Default: unset.
 
 ### Example 1: Display additional image information
 
-```html
+~~~ html
 <txp:images category="mammals">
     <a href="<txp:image_url />">
         <txp:thumbnail />
@@ -53,7 +53,7 @@ Default: unset.
         <txp:image_date format="%e %b %Y" />
     </div>
 </txp:images>
-```
+~~~
 
 Other tags used: [images](images), [image_url](image-url), [image_info](image-info), [thumbnail](thumbnail).
 

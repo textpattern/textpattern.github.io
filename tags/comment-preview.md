@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comment_preview />
-```
+~~~
 
 The **comment_preview** tag is a __single__ tag which is used to display a 'Preview' button the user can use to preview the comment text. Used in the comment input form template.
 
@@ -32,7 +32,7 @@ This tag has no attributes.
 
 ### Example 1: Comment form
 
-```html
+~~~ html
 <p>
     Name (required)<br>
     <txp:comment_name_input />
@@ -57,6 +57,6 @@ This tag has no attributes.
     <txp:comment_preview />
     <txp:comment_submit />
 </p>
-```
+~~~
 
 Other tags used: [comment_email_input](comment-email-input), [comments_help](comments-help), [comment_message_input](comment-message-input), [comment_name_input](comment-name-input), [comment_remember](comment-remember), [comment_submit](comment-submit), [comment_web_input](comment-web-input).

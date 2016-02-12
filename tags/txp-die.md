@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:txp_die />
-```
+~~~
 
 The **txp_die** tag is a __single__ tag that will terminate normal page rendition and return the given status to the user agent (browser, search engine crawler, feed aggregator). An error page will also be returned to the user agent.
 
@@ -45,15 +45,15 @@ Default: unset.
 
 ### Example 1: Force a 404 'not found' error
 
-```html
+~~~ html
 <txp:txp_die status="404" />
-```
+~~~
 
 ### Example 2: Issue a permanent redirect
 
-```html
+~~~ html
 <txp:txp_die status="301" url="http://example.com/new/location" />
-```
+~~~
 
 ## Genealogy
 

@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:search_result_url />
-```
+~~~
 
 The **search_result_url** tag is a __single__ tag. This tag will provide a hyperlinked URL to an article as returned by the search function.
 
@@ -31,8 +31,8 @@ This tag has no attributes.
 
 ### Example 1: Display a hyperlinked URL to an article
 
-```html
+~~~ html
 <txp:search_result_url />
-```
+~~~
 
 Used within a search results form to allow visitors to click on the link and be taken to the article that matched their search results.

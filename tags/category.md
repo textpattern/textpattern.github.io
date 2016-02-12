@@ -20,9 +20,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:category />
-```
+~~~
 
 The **category** tag can be used as either a __single__ or __containing__ tag. It will display information of the category as defined by the `name` attribute, or the one currently being viewed. When used as a containing tag, it will turn the contents into a link to the category. Otherwise, it will return plain text.
 
@@ -75,27 +75,27 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display the current category name
 
-```html
+~~~ html
 <txp:category />
-```
+~~~
 
 ### Example 2: Display hyperlinked category title
 
-```html
+~~~ html
 <txp:category title="1" link="1" />
-```
+~~~
 
 ### Example 3: Display a specific category's title, hyperlinked
 
-```html
+~~~ html
 <txp:category name="article" title="1" link="1" wraptag="p" />
-```
+~~~
 
 ### Example 4: Container example
 
-```html
+~~~ html
 <txp:category name="book">My books</txp:category>
-```
+~~~
 
 ## Genealogy
 

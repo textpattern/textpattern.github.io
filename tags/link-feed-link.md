@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:link_feed_link />
-```
+~~~
 
 The **link_feed_link** tag is a __single__ tag. Textpattern will replace this tag with an anchor to the site's 'links' RSS feed.
 
@@ -65,9 +65,9 @@ Note: `label` and `wraptag` attributes are applicable only when using `format` o
 
 ### Example 1: Atom feed link with custom label
 
-```html
+~~~ html
 <txp:link_feed_link flavor="atom" label="Commerce links" />
-```
+~~~
 
 ## Genealogy
 

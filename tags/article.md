@@ -19,19 +19,19 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:article />
-```
+~~~
 
 The basic **article** tag can be used as either a __single__ tag or __container__ tag and used to output one or more articles depending on the attributes used. Default attributes will be used when nothing specific is assigned.
 
 It may be used as a __container__ tag, in which case it must be specified as an opening and closing pair of tags, like this:
 
-```html
+~~~ html
 <txp:article>
     ...contained statements...
 </txp:article>
-```
+~~~
 
 This is equivalent to putting the contained statements into a form named `my_form` and using `<txp:article form="my_form" />`.
 
@@ -149,9 +149,9 @@ The **article** tag is context-sensitive. It will produce different results depe
 
 Here is the **article** tag responsible for the main content of the home page on a new Textpattern installation:
 
-```html
+~~~ html
 <txp:article limit="5" />
-```
+~~~
 
 Calls the `default` article form, which may contain any variation of article output you want to create. The `default` form cannot be deleted; it is the form you see on first viewing the [Forms administration panel](../administration/forms-panel).
 
@@ -161,9 +161,9 @@ Uses the `limit` attribute to specify the maximum number of articles displayed i
 
 Expanding on **Example 1**, here is the `article` tag responsible for showing lists of articles by category in the default page of a new Textpattern installation:
 
-```html
+~~~ html
 <txp:article form="article_listing" limit="5" />
-```
+~~~
 
 In article list context, the form named `article_listing` will be processed and displayed for each article in the list. In individual article context, the `default` form would be used.
 
@@ -173,9 +173,9 @@ To see this in action, on a new Textpattern install, from the home page click on
 
 Continuing from the previous examples:
 
-```html
+~~~ html
 <txp:article listform="article_listing" limit="5" offset="2" />
-```
+~~~
 
 Here we include the `offset` attribute to offset article display by `2` articles. This means the five articles that will be displayed (i.e. `limit="5"`) in article list context will begin with the third most recent article published in the site (the offset will not be applied in individual article context).
 
@@ -183,7 +183,7 @@ Why might you do it? Offsetting articles is useful in situations where the most 
 
 ### Example 4: Using pageby to split article output on a page
 
-```html
+~~~ html
 <div class="first">
     <txp:article limit="1" pageby"10" />
 </div>
@@ -193,31 +193,31 @@ Why might you do it? Offsetting articles is useful in situations where the most 
 <div class="last">
     <txp:article limit="1" offset="9" pageby="10" />
 </div>
-```
+~~~
 
 Another:
 
-```html
+~~~ html
 <txp:article limit="5" pageby="10" />
 <!-- google ad -->
 <txp:article limit="5" offset="5" pageby="10" />
-```
+~~~
 
 The `pageby` number should be the total number of articles displayed on the page. Without `pageby`, each article tag would page independently based on its own `limit`, as if it was the only article tag.
 
 ### Example 5: Combined with custom fields
 
-```html
+~~~ html
 <txp:article colour="red" />
-```
+~~~
 
 This code will display articles that have a custom field named `colour` with a value `red`.
 
 ### Example 6: Article sorting
 
-```html
+~~~ html
 <txp:article sort="AuthorID asc, Posted desc" />
-```
+~~~
 
 Uses the `sort` attribute to define values by which to order article output. In this case two values are declared. `AuthorID asc` first orders articles alphabetically by author names, then `Posted desc` orders them by date published (`desc` meaning newest to oldest).
 

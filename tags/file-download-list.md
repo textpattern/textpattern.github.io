@@ -19,19 +19,19 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:file_download_list />
-```
+~~~
 
 The **file_download_list** tag is a __single__ or a __container__ tag which is used to produce a list of download links according to the given attributes. Each file in the list is formatted by the file tags used in the given form (default is the `files` form).
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 
-```html
+~~~ html
 <txp:file_download_list>
     ...contained statements...
 </txp:file_download_list>
-```
+~~~
 
 ## Attributes
 
@@ -109,9 +109,9 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display a list of the ten most popular downloads, in descending order
 
-```html
+~~~ html
 <txp:file_download_list limit="10" break="li" wraptag="ol" sort="downloads desc" />
-```
+~~~
 
 ## Genealogy
 

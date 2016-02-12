@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comments_preview />
-```
+~~~
 
 The **comments_preview** tag is a __single__ tag which is used to display a preview of a visitor's comment.
 

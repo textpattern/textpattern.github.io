@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:file_download_description />
-```
+~~~
 
 The **file_download_description** tag is a __single__ tag which Textpattern will replace with the description of the file to download, as defined when the file was uploaded. Should be used in a Textpattern 'file' type @@Form template@@.
 
@@ -48,12 +48,12 @@ Default: unset.
 
 ### Example 1: Display a file's description
 
-```html
+~~~ html
 <p>
     File description:
     <txp:file_download_description />
 </p>
-```
+~~~
 
 Other tags used: [text](text).
 

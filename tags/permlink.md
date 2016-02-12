@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:permlink>
-```
+~~~
 
 The **permlink** can be used as a __single__ tag or a __container__ tag to return the permanent url of the article being displayed.
 
@@ -52,9 +52,9 @@ Default: unset.
 
 ### Example 1: Single tag
 
-```html
+~~~ html
 <txp:permlink />
-```
+~~~
 
 This would result in something like:
 
@@ -62,36 +62,36 @@ bc. http://example.com/index.php?id=2
 
 ### Example 2: Container tag
 
-```html
+~~~ html
 <txp:permlink>
     <txp:title />
 </txp:permlink>
-```
+~~~
 
 This would result in the following:
 
-```html
+~~~ html
 <a rel="bookmark" href="http://example.com/index.php?id=2">Article title</a>
-```
+~~~
 
 Other tags used: [title](title).
 
 ### Example 3: Customising permanent links
 
-```html
+~~~ html
 <txp:permlink class="awesome-article">
     <txp:title />
 </txp:permlink>
-```
+~~~
 
 By default `<txp:permlink />` returns only a very basic link, which doesn't allow for customising the link title, or adding a CSS class, etc. Using the tag in its single tag capacity opens up a lot more possibilities.
 
 For example, to give the permanent link an HTML `title` attribute of the article's title, and also apply a `class` to it:
 
-```html
+~~~ html
 <a class="awesome-article" href="<txp:permlink />">
     <txp:title />
 </a>
-```
+~~~
 
 Other tags used: [title](title).

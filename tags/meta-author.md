@@ -19,15 +19,15 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:meta_author />
-```
+~~~
 
 The **meta_author** tag is a __single__ tag, used in the head of an individual article page template. Textpattern will replace this tag with an HTML meta tag as follows:
 
-```html
+~~~ html
 <meta name="author" content="Article author's name" />
-```
+~~~
 
 ## Attributes
 
@@ -52,15 +52,15 @@ Default: `0`.
 
 Tag in the head of an individual article page (article's author name is 'Biff Tannen'):
 
-```html
+~~~ html
 <txp:meta_author />
-```
+~~~
 
 This results in the following:
 
-```html
+~~~ html
 <meta name="author" content="Biff Tannen" />
-```
+~~~
 
 ## Genealogy
 

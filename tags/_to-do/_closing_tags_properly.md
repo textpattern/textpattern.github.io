@@ -4,27 +4,27 @@ Textpattern tags behave like XML tags insofar as they must be **closed** correct
 
 Any containing tag must have both an opening tag and a corresponding closing tag (marked with a preceding slash):
 
-```html
+~~~ html
 <txp:some_tag>
   ...
 </txp:some_tag>
-```
+~~~
 
 If the tag is a conditional tag, check to make sure that any [else"](else) tag is employed correctly:
 
 *Right*:
 
-```html
+~~~ html
 <txp:if_some_condition>
   ...true branch...
 <txp:else />
   ...false branch...
 </txp:if_some_condition>
-```
+~~~
 
 *Wrong*:
 
-```html
+~~~ html
 <ul>
     <li>
         <txp:else>
@@ -36,16 +36,16 @@ If the tag is a conditional tag, check to make sure that any [else"](else) tag i
         </txp:else />
     </li>
 </ul>
-```
+~~~
 
 Single (self-closing) tags must have a single slash at the end:
 
-```html
+~~~ html
 <txp:some_single_tag with="attributes" />
-```
+~~~
 
 Also check that the angle brackets have not been HTML encoded by mistake, e.g.:
 
-```html
+~~~ html
 <txp:some_tag />
-```
+~~~

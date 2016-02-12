@@ -18,19 +18,19 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:image_url />
-```
+~~~
 
 The **image_url** tag is a __single__ or a __container__ tag that Textpattern will replace with the URL of the current image in an [images](images) list, or the specific image if given an `id` or `name`.
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 
-```html
+~~~ html
 <txp:image_url>
     ...link contents...
 </txp:image_url>
-```
+~~~
 
 ## Attributes
 
@@ -60,23 +60,23 @@ Default: `0`.
 
 Used as a single tag:
 
-```html
+~~~ html
 <txp:images category="mammals">
     <a href="<txp:image_url />">
         <txp:thumbnail />
     </a>
 </txp:images>
-```
+~~~
 
 Used as a container:
 
-```html
+~~~ html
 <txp:images category="mammals">
     <txp:image_url>
         <txp:thumbnail />
     </txp:image_url>
 </txp:images>
-```
+~~~
 
 Other tags used: [images](images), [thumbnail](thumbnail).
 

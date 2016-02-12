@@ -10,9 +10,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:rsd />
-```
+~~~
 
 The **rsd** tag is a __single__ tag which is used to insert a [Really Simple Discoverability](https://github.com/danielberlinger/rsd) link element, helping XML-RPC client programs to configure themselves.
 

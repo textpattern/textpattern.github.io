@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:image />
-```
+~~~
 
 The **image** tag is a __single__ tag that Textpattern will replace with the `<img src="...">` HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern [Images administration panel](../administration/images-panel).
 
@@ -64,17 +64,17 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display the given image
 
-```html
+~~~ html
 <txp:image id="42" />
-```
+~~~
 
 Displays the image uploaded as ID #42.
 
 ### Example 2: Apply a CSS class
 
-```html
+~~~ html
 <txp:image name="chickens.jpg" class="promoted" />
-```
+~~~
 
 Displays the image named `chickens.jpg` and assigns a `class="promoted"` attribute/value to the `<img>` tag.
 

@@ -375,7 +375,7 @@ bc. Search
 <p>)</p></li>
 <li>"section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list</li>
 </ul>
-```
+~~~
 
 h3(sectionedit40#labeltag). labeltag
 
@@ -798,5 +798,5 @@ bc. p
 <li>"section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list</li>
 <li>"thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail</li>
 </ul>
-```
+~~~
 

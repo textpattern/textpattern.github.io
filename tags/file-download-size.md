@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:file_download_size />
-```
+~~~
 
 The **file_download_size** tag is a __single__ tag which Textpattern will replace with the formatted file size of the file to be downloaded. Should be used in a Textpattern 'file' type @@Form template@@.
 
@@ -48,5 +48,5 @@ Default: unset (i.e.,the most appropriate units based on the file size).
 
 ### Example 1: Display formatted file size in kilobytes
 
-```html
+~~~ html
 <txp:file_download_size format="k" />

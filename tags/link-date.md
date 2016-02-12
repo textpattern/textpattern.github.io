@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:link_date />
-```
+~~~
 
 The **link_date** tag is a __single__ tag which returns the date the link was created as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to display information about the current link.
 
@@ -44,7 +44,7 @@ Default: unset (time format set in the [Preferences administration panel](../adm
 
 ### Example 1: Display a link with date and a class attribute
 
-```html
+~~~ html
 <a class="awesome-links" href="<txp:link_url />">
     <txp:link_name escape="html" />:
 </a>

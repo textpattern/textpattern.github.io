@@ -20,9 +20,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:article_image />
-```
+~~~
 
 The **article_image** tag is a __single__ tag. Textpattern will replace this tag with the `<img src="...">` HTML tag matching the numeric ID or URL assigned when the article is posted.
 
@@ -68,17 +68,17 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Use wraptag and class for styling
 
-```html
+~~~ html
 <txp:article_image wraptag="p" class="article-image" />
-```
+~~~
 
 This will wrap the image in paragraph tags, applying the `class` to the paragraph:
 
-```html
+~~~ html
 <p class="article-image">
     <img src="...">
 </p>
-```
+~~~
 
 It gives you full control over the image appearance using CSS. Note: Without the wraptag, the class is applied directly to the `<img>` tag.
 
@@ -86,11 +86,11 @@ It gives you full control over the image appearance using CSS. Note: Without the
 
 Used in an article list form, this will display an article list consisting of hyperlinked article images' thumbnails:
 
-```html
+~~~ html
 <txp:permlink>
     <txp:article_image thumbnail="1" />
 </txp:permlink>
-```
+~~~
 
 Other tags used: [permlink](permlink).
 

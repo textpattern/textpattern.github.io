@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:image_author />
-```
+~~~
 
 The **image_author** tag is a __single__ tag that Textpattern will replace with the author's name associated with the current image in an [images](images) list. It can **only** be used inside `<txp:images />`.
 
@@ -67,13 +67,13 @@ bc. txp:images category="mammals">
         by <txp:image_author />
     </div>
 </txp:images>
-```
+~~~
 
 Other tags used: [images](images), [thumbnail](thumbnail).
 
 ### Example 2: Link to author list
 
-```html
+~~~ html
 <txp:images category"fish">
     <a href="<txp:image_url />">
         <txp:thumbnail />
@@ -82,7 +82,7 @@ Other tags used: [images](images), [thumbnail](thumbnail).
         by <txp:image_author link="1" />
     </div>
 </txp:images>
-```
+~~~
 
 Displays thumbnails and author info for each image in the `fish` category. The authors' names are hyperlinked to `example.com/author/image/User+Name`.
 

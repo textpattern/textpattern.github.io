@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:next_title />
-```
+~~~
 
 The **next_title** tag is a __single__ tag which Textpattern will replace with the title of the next article in the sort order.
 
@@ -33,10 +33,10 @@ This tag has no attributes.
 
 ### Example 1: Link to next article by its title
 
-```html
+~~~ html
 <txp:link_to_next>
     <txp:next_title />
 </txp:link_to_next>
-```
+~~~
 
 Other tags used: [link_to_next](link-to-next).

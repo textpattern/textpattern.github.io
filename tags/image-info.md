@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:image_info />
-```
+~~~
 
 The **image_info** tag is a __single__ tag that Textpattern will replace with the relevant image data from the current image. Should usually be used in an 'image' type form, although it may be used on its own providing you specify an **id** or **name**.
 
@@ -74,12 +74,12 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Gallery thumbnail and caption
 
-```html
+~~~ html
 <txp:images category="mammals">
     <txp:thumbnail />
     <txp:image_info type="caption" wraptag="div" />
 </txp:images>
-```
+~~~
 
 Grabs all images from the 'mammals' category and displays the image thumbnail itself along with the image caption surrounded with HTML `<div>` tags. Note that the image IDs/names are not specified inside the container because they are automatically assigned from the `<txp:images>` tag for each image in the given category.
 
@@ -87,7 +87,7 @@ Other tags used: [images](images), [thumbnail](thumbnail).
 
 ### Example 2: Multiple pieces of information at once
 
-```html
+~~~ html
 <txp:images category="birds, mammals" thumbnail="1" sort="category asc">
     <txp:if_different>
         <h4>
@@ -99,7 +99,7 @@ Other tags used: [images](images), [thumbnail](thumbnail).
     by
     <txp:image_info type="author" />
 </txp:images>
-```
+~~~
 
 Shows the thumbnail of each image that has an assigned thumbnail image from the 'mammals' and 'birds' categories and, beneath each, show its dimensions 'width' x 'height' along with the author of the image. Since the list has been sorted by category, the `<txp:if_different>` conditional can be used to output the category title at the top of the list of images each time it changes.
 
@@ -107,9 +107,9 @@ Other tags used: [images](images), [thumbnail](thumbnail), [if_different](if-dif
 
 ### Example 3: Specific image information
 
-```html
+~~~ html
 <txp:image_info id="5" type="category_title" />
-```
+~~~
 
 Displays the category_title of the category assigned to image ID '5'.
 

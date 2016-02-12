@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:link />
-```
+~~~
 
 The **link** tag is a __single__ tag which is used to return an HTML hyperlink defined in the [Links administration panel](../administration/links-panel). It uses the 'Title' field as the link's text.
 
@@ -42,12 +42,12 @@ Default: unset.
 
 ### Example 1: Display a link and its description
 
-```html
+~~~ html
 <p>
     <txp:link />:
     <txp:link_description />
 </p>
-```
+~~~
 
 Other tags used: [link_description](link-description).
 

@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comment_id />
-```
+~~~
 
 The **comment_id** tag is a __single__ tag which is used to display the comment's internal id as assigned by Textpattern at the time of posting. Used in a comments display form.
 
@@ -32,7 +32,7 @@ This tag has no attributes.
 
 ### Example 1: Comments display form with linked comment id
 
-```html
+~~~ html
 <txp:comment_message />
 <p>
     By <txp:comment_name /> at <txp:comment_time />
@@ -42,6 +42,6 @@ This tag has no attributes.
 </p>
 
 <txp:comment_message />
-```
+~~~
 
 Other tags used: [comment_message](comment-message), [comment_name](comment-name), [comment_permlink](comment-permlink), [comment_time](comment-time).

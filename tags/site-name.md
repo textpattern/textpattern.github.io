@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:site_name />
-```
+~~~
 
 The **site_name** tag is a __single__ tag that returns the site's name as defined within the [Preferences administration panel](../administration/preferences-panel).
 
@@ -31,7 +31,7 @@ This tag has no attributes
 
 ### Example 1: Display the site's name
 
-```html
+~~~ html
 <h1>
     <txp:site_name />
 </h1>

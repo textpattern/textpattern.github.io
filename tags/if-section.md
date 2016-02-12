@@ -17,17 +17,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_section>
-```
+~~~
 
 The **if_section** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <;txp:if_section>
     ...conditional statement...
 </txp:if_section>
-```
+~~~
 
 The tag will execute the contained statements if the called page is part of the section specified with the name attribute.
 
@@ -42,19 +42,19 @@ Comma-separated list of section names. For the default section, either use the t
 
 ### Example 1: Conditionally display text for a section
 
-```html
+~~~ html
 <txp:if_section name="about">
     <p>Danger, ego pages ahead!</p>
 <txp:else />
     <p>Nothing. Just nothing. Any ideas? Anybody?</p>
 </txp:if_section>
-```
+~~~
 
 Other tags used: [else](else).
 
 ### Example 2: Add a special class to mark the currently active section
 
-```html
+~~~ html
 <nav>
     <ul>
         <li<txp:if_section name=", article"> class="active"</txp:if_section>>
@@ -68,7 +68,7 @@ Other tags used: [else](else).
         </li>
     </ul>
 </nav>
-```
+~~~
 
 A different way of marking the active section can be accomplished by using [section_list](section-list) and its attribute `active_class`. While the above snippet will mark the list item, [section_list](section-list) will mark solely the link.
 

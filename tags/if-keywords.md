@@ -9,17 +9,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_keywords>
-```
+~~~
 
 The **if_keywords** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_keywords>
     ...conditional statement...
 </txp:if_keywords>
-```
+~~~
 
 The tag will execute the contained statement if the current article's 'Keywords' field has one or more entries.
 
@@ -35,7 +35,7 @@ Default: unset, which determines whether any keywords are assigned to the articl
 
 ### Example 1: Supply meta tag if keywords exist
 
-```html
+~~~ html
 <head>
     ....
     <txp:if_individual_article&gt;
@@ -50,7 +50,7 @@ Default: unset, which determines whether any keywords are assigned to the articl
     </txp:if_individual_article>
     ....
 </head>
-```
+~~~
 
 Other tags used: [meta_keywords](meta-keywords), [if_individual_article](if-individual-article), [else](else).
 

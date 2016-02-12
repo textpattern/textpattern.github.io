@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comment_remember />
-```
+~~~
 
 The **comment_remember** tag is a __single__ tag which is used to display a check box input field. If checked the users details are remembered by the system the next time they open a comment form. Used in the comment input form template.
 
@@ -40,7 +40,7 @@ Default: `Remember` (localized).
 
 ### Example 1: Comment form
 
-```html
+~~~ html
 <p>
     Name (required)<br>
     <txp:comment_name_input />
@@ -65,7 +65,7 @@ Default: `Remember` (localized).
     <txp:comment_preview />
     <txp:comment_submit />
 </p>
-```
+~~~
 
 Other tags used: [comment_email_input](comment-email-input), [comments_help](comments-help), [comment_message_input](comment-message-input), [comment_name_input](comment-name-input), [comment_preview](comment-preview), [comment_submit](comment-submit), [comment_web_input](comment-web-input).
 

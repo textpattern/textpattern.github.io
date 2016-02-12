@@ -20,19 +20,19 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:authors>
-```
+~~~
 
 The **authors** tag is a __single__ or __container__ tag that Textpattern will use to gather a list of authors designated within the Textpattern [Users administration panel](../administration/users-panel).
 
 If used as a __container__ tag, it must be specified as an opening and closing pair of tags, like this:
 
-```html
+~~~ html
 <txp:authors>
     ...contained statements...
 </txp:authors>
-```
+~~~
 
 ## Attributes
 
@@ -90,30 +90,30 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: List all authors
 
-```html
+~~~ html
 <txp:authors />
-```
+~~~
 
 ### Example 2: List authors only from certain groups, with link and email
 
-```html
+~~~ html
 <txp:authors group="publisher, managing_editor" wraptag="ul" break="li">
     <txp:author link="1" />
     (<txp:author_email />)
 </txp:authors>
-```
+~~~
 
 Other tags used: [author](author), [[author_email](author-email).
 
 ### Example 3: Render a drop-down list of authors
 
-```html
+~~~ html
 <select name="author">
     <txp:authors sort="realname asc">
         <option value="<txp:author />"><txp:author /></option>
     </txp:authors>
 </select>
-```
+~~~
 
 Other tags used: [author](author).
 

@@ -20,17 +20,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_last_image>
-```
+~~~
 
 The **if_last_image** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_last_image>
     ...conditional statement...
 </txp:if_last_image>
-```
+~~~
 
 The tag will execute the contained statements if the displayed image is the last in the currently displayed [images](images) list. The tag supports [else](else).
 

@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:page_url />
-```
+~~~
 
 The **page_url** tag is a __single__ tag. It is used to return a particular component of the URL from the current page being displayed.
 
@@ -47,7 +47,7 @@ Default: `request_uri`.
 
 ### Example 1: Show the current article's ID, HTTP status and section
 
-```html
+~~~ html
 <p>
     Article ID:
     <txp:page_url type="id" />,
@@ -55,11 +55,11 @@ Default: `request_uri`.
     <txp:page_url type="s" />
     (Result: <txp:page_url type="status" />)
 </p>
-```
+~~~
 
 This would result in the following, for example:
 
-```html
+~~~ html
 <p>
     Article ID:
     88,

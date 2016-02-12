@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:link_id />
-```
+~~~
 
 The **link_id** tag is a __single__ tag which returns the numerical ID of the link. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to show information about the current link in the list.
 
@@ -32,7 +32,7 @@ This tag has no attributes.
 
 ### Example 1: Display link information
 
-```html
+~~~ html
 <txp:linklist category="dogs">
     Link:
     <a href="<txp:link_url />">
@@ -40,7 +40,7 @@ This tag has no attributes.
     </a>
     (id: <txp:link_id /> | category: <txp:link_category />)
 </txp:linklist>
-```
+~~~
 
 Other tags used: [linklist](linklist), [link_name](link-name), [link_category](link-category).
 

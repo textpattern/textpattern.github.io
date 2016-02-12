@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comment_message_input />
-```
+~~~
 
 The **comment_message_input** tag is a __single__ tag which is used to display a text entry field to accept the commenter's message text. Used in the comment input form template.
 
@@ -40,7 +40,7 @@ Default: `5`.
 
 ### Example 1: Comment form
 
-```html
+~~~ html
 <p>
     Name (required)<br>
     <txp:comment_name_input />
@@ -65,7 +65,7 @@ Default: `5`.
     <txp:comment_preview />
     <txp:comment_submit />
 </p>
-```
+~~~
 
 Other tags used: [comment_email_input](comment-email-input), [comments_help](comments-help), [comment_name_input](comment-name-input), [comment_preview](comment-preview), [comment_remember](comment-remember), [comment_submit](comment-submit), [comment_web_input](comment-web-input).
 
@@ -73,7 +73,7 @@ Other tags used: [comment_email_input](comment-email-input), [comments_help](com
 
 Using some conditional tags, the size of the comment form `textarea` can be changed in the preview.
 
-```html
+~~~ html
 <txp:if_comments_preview>
     <p>
         This is just a preview of your comment!<br>
@@ -87,7 +87,7 @@ Using some conditional tags, the size of the comment form `textarea` can be chan
         <txp:comments_help />
     </p>
 </txp:if_comments_preview>
-```
+~~~
 
 Other tags used: [comments_preview](comments-preview), [if_comments_preview](if-comments-preview), [else](else).
 

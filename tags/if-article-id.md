@@ -19,17 +19,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_article_id>
-```
+~~~
 
 The **if_article_id** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_article_id>
     ...conditional statement...
 </txp:if_article_id>
-```
+~~~
 
 The tag will execute the contained statement if the article id associated with a particular article matches the id attribute. Should be used in an article form/container. The `id` attribute **must** be used in an **article list context** (when producing a page that displays more than one article) or the tag will do nothing.
 
@@ -45,13 +45,13 @@ Default: current article's ID if available (i.e.,on a page that displays a singl
 
 ### Example 1: Display info if the article id matches
 
-```html
+~~~ html
 <txp:if_article_id id="33">
     <p>
         <txp:title />
     </p>
 </txp:if_article_id>
-```
+~~~
 
 Displays the article title if the id of the current article is 33.
 
@@ -59,7 +59,7 @@ Other tags used: [title](title).
 
 ### Example 2: Display a list of articles omitting current article
 
-```html
+~~~ html
 <txp:article_custom label="related" labeltag="h4" section="<txp:section />" wraptag="ul">
     <txp:if_article_id>
     <txp:else />
@@ -70,7 +70,7 @@ Other tags used: [title](title).
         </li>
     </txp:if_article_id>
 </txp:article_custom>
-```
+~~~
 
 Displays an unordered linked list of articles from the same section omitting the article currently viewed.
 

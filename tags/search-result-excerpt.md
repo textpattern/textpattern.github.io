@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:search_result_excerpt />
-```
+~~~
 
 The **search_result_excerpt** tag is a __single__ tag. The tag will show the occurrence of the search term with some surrounding context.
 
@@ -42,7 +42,7 @@ Default: `5`.
 
 ### Example 1: Display up to 15 search excerpts with a search results form
 
-```html
+~~~ html
 <h3>
     <txp:permlink>
         <txp:title />
@@ -55,7 +55,7 @@ Default: `5`.
     </txp:permlink>
     | <txp:posted />
 </p>
-```
+~~~
 
 Other tags used: [permlink](permlink), [posted](posted), [title](title).
 

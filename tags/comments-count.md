@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comments_count />
-```
+~~~
 
 The **comments_count** tag is a __single__ tag which is used to display the number of comments associated with a particular article.
 
@@ -38,13 +38,13 @@ This tag has no attributes.
 
 But only if any comments are associated with the current article.
 
-```html
+~~~ html
 <txp:if_comments>
     <p>
         <txp:comments_invite showcount="0" /> |
         <txp:comments_count /> respones received.
     </p>
 </txp:if_comments>
-```
+~~~
 
 Other tags used: [comments_invite](comments-invite), [if_comments](if-comments).

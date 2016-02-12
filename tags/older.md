@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:older />
-```
+~~~
 
 The **older** tag is both a __single__ tag and a __container__ tag. The tag should be used in a page after an article tag.
 
@@ -53,27 +53,27 @@ Default: unset.
 
 ### Example 1: Container tag - link with text
 
-```html
+~~~ html
 <txp:older>Older</txp:older>
-```
+~~~
 
 ### Example 2: Single tag - link with image
 
-```html
+~~~ html
 <a href="<txp:older />">
     <txp:image name="left-arrow.gif" />
 </a>
-```
+~~~
 
 Other tags used: [image](image).
 
 ### Example 3: Container tag - link with image
 
-```html
+~~~ html
 <txp:older>
     <txp:image name="left-arrow.gif" />
 </txp:older>
-```
+~~~
 
 The difference between examples 2 and 3 is that the tags in example 2 will display the image even if there are no older articles, those used in example 3 won't.
 

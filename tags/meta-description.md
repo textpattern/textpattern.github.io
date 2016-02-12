@@ -19,21 +19,21 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:meta_description />
-```
+~~~
 
 The **meta_description** tag is a __single__ tag used in a variety of ways to display meta description content. One is to output description text as the content of a standard HTML `<meta>` tag in the `<head>` of a page template:
 
-```html
+~~~ html
 <meta name="description" content="{your description}" />
-```
+~~~
 
 The other is to output raw description text anywhere else:
 
-```
+~~~
 {your description}
-```
+~~~
 
 The tag is context aware, in that it will use article descriptions (if available) on individual article pages, and use section and category descriptions (again, if available) on listing pages. The tag can be added directly in a @@Page template@@ or as part of an article @@Form template@@. Either way, you may also use it in a given article tag.
 
@@ -59,12 +59,12 @@ Default: empty (i.e.,automatic, depending on where the tag is used).
 
 ### Example 1: Use article or section's description for meta tag content
 
-```html
+~~~ html
 <head>
   <title>Example 3 page</title>
   <txp:meta_description />
 </head>
-```
+~~~
 
 The **meta_description** tag returns an HTML `meta` tag, populated with an article's description if the visitor is viewing an individual article. If viewing an article list (landing) page, the tag will return the description from the Section instead.
 
@@ -74,11 +74,11 @@ The above will output description metadata with `content="` populated with the t
 
 ### Example 2: Use article's description for Twitter Card description (without meta tag)
 
-```html
+~~~ html
 <txp:if_individual_article>
     <meta name="twitter:description" content="<txp:meta_description format="" />" />
 </txp:if_individual_article>
-```
+~~~
 
 The above will output the description as a raw value (not enclosed in a `<meta>` tag) populated with the text set in the article's 'Description' field.
 
@@ -86,19 +86,19 @@ Other tags used: [if_individual_article](if-individual-article).
 
 ### Example 3: Display section meta description as tooltip in section list
 
-```html
+~~~ html
 <txp:section_list>
     <a href="/<txp:section />" title="<txp:meta_description format="" />">
         <txp:section title="1" />
     </a>
 </txp:section_list>
-```
+~~~
 
 Other tags used: [section_list](section-list), [section](section).
 
 ### Example 4: Override automatic type
 
-```html
+~~~ html
 <head>
     <txp:meta_description />
 </head>
@@ -114,7 +114,7 @@ Other tags used: [section_list](section-list), [section](section).
     </p>
 </txp:if_article_list>
 <txp:article />
-```
+~~~
 
 The first time the tag is used in the `<head>`, the section meta description will be output as a `<meta>` tag if viewing the section landing page, or the article meta description if viewing an individual article.
 

@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:excerpt />
-```
+~~~
 
 The **excerpt** tag is a __single__ tag which is used to return the excerpt text, if any, associated with the article being displayed.
 
@@ -36,7 +36,7 @@ This tag has no attributes.
 
 This example explains how you could display the excerpt in an article list, and excerpt + body in an individual article. Use the following in an article form:
 
-```html
+~~~ html
 <txp:if_article_list>
     <txp:if_excerpt>
         <txp:excerpt />
@@ -54,7 +54,7 @@ This example explains how you could display the excerpt in an article list, and 
         <txp:body />
     </div>
 </txp:if_article_list>
-```
+~~~
 
 Other tags used: [body](body), [else](else), [if_article_list](if-article-list), [if_excerpt](if-excerpt), [permlink](permlink), [title](title).
 
@@ -62,7 +62,7 @@ Other tags used: [body](body), [else](else), [if_article_list](if-article-list),
 
 Use the following within an article form:
 
-```html
+~~~ html
 <txp:if_excerpt>
     <txp:excerpt />
 <txp:else />
@@ -71,6 +71,6 @@ Use the following within an article form:
         <txp:section title="1" link="1" />
     </p>
 </txp:if_excerpt>
-```
+~~~
 
 Other tags used: [else](else), [if_excerpt](if-excerpt), [section](section).

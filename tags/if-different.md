@@ -17,17 +17,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_different>
-```
+~~~
 
 The **if_different** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_different>
     ...contained statements...
 </txp:if_different>
-```
+~~~
 
 The tag will execute the contained statement when the value of the contained statement differs from the preceding value for that contained statement. Can be used in Textpattern 'article', 'link', 'comment', and 'file' type @@Form templates@@.
 
@@ -42,13 +42,13 @@ This tag has no attributes.
 
 ### Example 1: Display posting time per article once per day
 
-```html
+~~~ html
 <txp:if_different>
     <h3>
         <txp:posted format="%d %B %Y" />
     </h3>
 </txp:if_different>
-```
+~~~
 
 To be used inside a Textpattern 'article' type @@Form template@@ or an article tag container (such as [article](article) or [article_custom](article-custom)).
 
@@ -79,7 +79,7 @@ Desired result:
 
 In a Textpattern @@Page template@@, add this tag to loop through all articles from all sections:
 
-```html
+~~~ html
 <txp:article_custom sort="Section asc, Title asc">
     <txp:if_different>
         <h2>
@@ -90,7 +90,7 @@ In a Textpattern @@Page template@@, add this tag to loop through all articles fr
         <txp:title />
     </h3>
 </txp:article_custom>
-```
+~~~
 
 The snippet above lists all article titles and renders an intermittent heading element whenever a **different** section is encountered while the articles loop through.
 

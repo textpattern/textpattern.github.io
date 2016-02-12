@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:link_to_prev>
-```
+~~~
 
 The **link_to_prev** tag can be used as a __single__ tag or a __container__ tag to return the permanent URL of the previous article by posting date.
 
@@ -38,21 +38,21 @@ Default: `0`.
 
 ### Example 1: Link to previous article using its title
 
-```html
+~~~ html
 <txp:link_to_prev>
     <txp:prev_title />
 </txp:link_to_prev>
-```
+~~~
 
 Other tags used: [prev_title](prev-title).
 
 ### Example 2: Link to previous article using static text
 
-```html
+~~~ html
 <txp:link_to_prev showalways="1">
     Previous
 </txp:link_to_prev>
-```
+~~~
 
 This will always display the text 'Previous', even when there is no previous article.
 
@@ -65,10 +65,10 @@ The container tag returns only a very basic link, which doesn't allow for custom
 
 For example, to give the link an HTML `title` attribute of the previous article's title, and also apply a `class` to it:
 
-```html
+~~~ html
 <a class="link--prev" href="<txp:link_to_prev />" title="<txp:prev_title />">
     ← Previous article
 </a>
-```
+~~~
 
 Other tags used: [prev_title](prev-title).

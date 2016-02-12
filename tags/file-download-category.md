@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:file_download_category />
-```
+~~~
 
 The **file_download_category** tag is a __single__ tag that Textpattern will replace with the category of the file to download. Should be used in a Textpattern 'file' type @@Form template@@.
 
@@ -47,7 +47,7 @@ Default: unset.
 
 ### Example 1: Display a file category name
 
-```html
+~~~ html
 <p>
     File category:
     <txp:file_download_category />

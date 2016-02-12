@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:hide />
-```
+~~~
 
 The **hide** tag is a __container__ tag which is used to suppress the interpretation of all enclosed contents. Use it for comments, temporary concealment of article text parts or non-destructive form changes.
 
@@ -31,15 +31,15 @@ This tag has no attributes.
 
 ### Example 1: Insert a useful note in a template
 
-```html
+~~~ html
 <txp:hide>This is a work-around for a bug in Internet Explorer, again</txp:hide>
-```
+~~~
 
 ### Example 2: Comment out part of a form for testing
 
 If you want to try something out to see how it affects the layout without actually deleting the content, wrap it in **hide** tags:
 
-```html
+~~~ html
 <div class="entry-content">
     <txp:body />
 </div>
@@ -51,7 +51,7 @@ If you want to try something out to see how it affects the layout without actual
     </address>
     <txp:comments_invite wraptag="p" />
 </txp:hide>
-```
+~~~
 
 Renders the body text inside the `<div class="entry-content">` but skips the `<address>` and `<txp:comments_invite />` tags.
 

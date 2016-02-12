@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:file_download_author />
-```
+~~~
 
 The **file_download_author** tag is a __single__ tag that Textpattern will replace with the author's name associated with the current download in a [file_download](file-download). Can **only** be used inside `<txp:file_download />`.
 
@@ -59,12 +59,12 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display and link the file author
 
-```html
+~~~ html
 <p>
     File author:
     <txp:file_download_author link="1" />
 </p>
-```
+~~~
 
 ## Genealogy
 

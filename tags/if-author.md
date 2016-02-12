@@ -19,17 +19,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_author>
-```
+~~~
 
 The **if_author** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_author>
     ...conditional statement...
 </txp:if_author>
-```
+~~~
 
 The tag will execute the contained statement **if** the called page is the result of an article search by a specific author's name.
 
@@ -57,13 +57,13 @@ Default: `article`.
 
 Selects a stylesheet named `author_list` when a list by author `admi` is being displayed, or a stylesheet determined by the active section for normal page display.
 
-```html
+~~~ html
 <txp:if_author name="admin">
     <link rel="stylesheet" href="<txp:css name="author_list" />" media="screen">
 <txp:else />
     <link rel="stylesheet" href="<txp:css />" media="screen">
 </txp:if_author>
-```
+~~~
 
 Other tags used: [else](else), [css](css).
 

@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:recent_comments />
-```
+~~~
 
 The **recent_comments** tag is a __single__ or a __container__ tag. Textpattern will replace this tag with a list of permanent links to recent comments. This list will be displayed with the format:
 
@@ -28,11 +28,11 @@ bc. User's Name (Article Name)
 
 If used as a container, the tag must be specified as an opening and closing pair, like this:
 
-```html
+~~~ html
 <txp:recent_comments>
     ...contained statements...
 </txp:recent_comments>
-```
+~~~
 
 ## Attributes
 
@@ -85,15 +85,15 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Labelled list of recent comments
 
-```html
+~~~ html
 <txp:recent_comments label="Recent Comments" wraptag="p" break="br" />
-```
+~~~
 
 ### Example 2: Recent comments as an ordered list
 
-```html
+~~~ html
 <txp:recent_comments label="Recent Comments" wraptag="ol" break="li" limit="25" />
-```
+~~~
 
 This example also increases the results to a maximum of 25 list items (instead of the default 10).
 

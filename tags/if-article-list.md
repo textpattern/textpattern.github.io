@@ -18,17 +18,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_article_list>
-```
+~~~
 
 The **if_article_list** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_article_list>
     ...conditional statement...
 </txp:if_article_list>
-```
+~~~
 
 The tag will execute the contained statement if an article list is being displayed (i.e.,not showing an individual article).
 
@@ -40,7 +40,7 @@ This tag has no attributes.
 
 ### Example 1: Article/article list navigation
 
-```html
+~~~ html
 <txp:article />
 
 <txp:if_individual_article>
@@ -53,7 +53,7 @@ This tag has no attributes.
         </txp:link_to_next>
     </p>
 </txp:if_individual_article>
-```
+~~~
 
 &lt;txp:if_article_list&gt;
     <p>
@@ -61,7 +61,7 @@ This tag has no attributes.
         <txp:newer>Next</txp:newer>
     </p>
 </txp:if_article_list>
-```
+~~~
 
 This example shows how to setup article navigation so that [link_to_prev](link-to-prev) and [link_to_next](link-to-next) are used at the individual article level __or__ [older](older) and [newer](newer) with article lists.
 
@@ -69,7 +69,7 @@ Other tags used: [link_to_prev](link-to-prev), [link_to_next](link-to-next), [pr
 
 ### Example 2: In combination with the 'else' tag
 
-```html
+~~~ html
 <txp:if_article_list>
     <p>
         <txp:site_name />
@@ -79,7 +79,7 @@ Other tags used: [link_to_prev](link-to-prev), [link_to_next](link-to-next), [pr
         <img src="http://example.com/logo.png" alt="Logo">
     </p>
 </txp:if_article_list>
-```
+~~~
 
 This example shows the if_article_list in combination with [else](else) to display a site's [site_name](site-name) or logo when an article list is displayed or not, respectively.
 

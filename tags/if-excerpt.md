@@ -18,17 +18,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_excerpt>
-```
+~~~
 
 The **if_excerpt** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_excerpt>
     ...conditional statement...
 </txp:if_excerpt>
-```
+~~~
 
 The tag will execute the contained statements if an excerpt is associated with the article being displayed.
 
@@ -40,10 +40,10 @@ This tag has no attributes.
 
 ### Example 1: Display the excerpt if it exists
 
-```html
+~~~ html
 <txp:if_excerpt>
     <txp:excerpt />
 </txp:if_excerpt>
-```
+~~~
 
 Other tags used: [excerpt](excerpt).

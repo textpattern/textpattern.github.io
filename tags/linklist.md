@@ -19,19 +19,19 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:linklist />
-```
+~~~
 
 The **linklist** tag is a __single__ or a __container__ tag which is used to produce a list of links from the predefined list created on the [Links administration panel](../administration/links-panel).
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 
-```html
+~~~ html
 <txp:linklist>
     ...contained statements...
 </txp:linklist>
-```
+~~~
 
 ## Attributes
 
@@ -103,20 +103,20 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: List of links from specified category
 
-```html
+~~~ html
 <txp:linklist form="Links" category="general" limit="10" sort="linksort" wraptag="p" />
-```
+~~~
 
 ### Example 2: An ordered list of links
 
-```html
+~~~ html
 <txp:if_category name="100">
     <txp:linklist label="First Floor" category="First" wraptag="ol" break="li" />
 </txp:if_category>
 <txp:if_category name="200">
     <txp:linklist label="Second Floor" category="Second" wraptag="ol" break="li" />
 </txp:if_category>
-```
+~~~
 
 This example uses the displayed page's category as the criterion for choosing the linklist's category.
 
@@ -124,13 +124,13 @@ Other tags used: [if_category](if_category).
 
 ### Example 3: Used as a container tag
 
-```html
+~~~ html
 <txp:linklist wraptrag="ol" break="li">
     <txp:link /><br />
     <txp:link_description /><br />
     <txp:linkdesctitle />
 </txp:linklist>
-```
+~~~
 
 The tags within the container are repeated for each link provided by the linklist tag.
 

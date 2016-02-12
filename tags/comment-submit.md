@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comment_submit />
-```
+~~~
 
 The **comment_submit** tag is a __single__ tag which is used to display a 'Submit' button. Clicking the submit button writes the comment information to the database. Used in the comment input form template.
 
@@ -37,7 +37,7 @@ Default: `Submit` (localized).
 
 ### Example 1: Comment form
 
-```html
+~~~ html
 <p>
     Name (required)<br>
     <txp:comment_name_input />
@@ -62,7 +62,7 @@ Default: `Submit` (localized).
     <txp:comment_preview />
     <txp:comment_submit />
 </p>
-```
+~~~
 
 Other tags used: [comment_email_input](comment-email-input), [comments_help](comments-help), [comment_message_input](comment-message-input), [comment_name_input](comment-name-input), [comment_preview](comment-preview), [comment_remember](comment-remember), [comment_web_input](comment-web-input).
 

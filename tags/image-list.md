@@ -2,19 +2,19 @@
 
 *Do not use this tag, it was renamed to "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images!*
 
-```html
+~~~ html
 <txp:image_list />
-```
+~~~
 
 The **image_list** tag is a __single__ or __container__ tag that Textpattern will use to gather a list of matching images uploaded via the TXP "images_panel_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel tab. Utilising the other image tags in the suite "image_info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info, "image_url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_url, "image_date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_date and "if_thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_thumbnail) you can display simple image galleries from this list.
 
 If used as a __container__ tag, it must be specified as an opening and closing pair of tags, like this:
 
-```html
+~~~ html
 <txp:image_list>
 ...contained statements...
 </txp:image_list>
-```
+~~~
 
 This is equivalent to putting the contained statements into a form named “my_form” and using `<txp:image_list form="my_form" />`.
 

@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:breadcrumb />
-```
+~~~
 
 The **breadcrumb** tag is a __single__ tag which is used to create [breadcrumb navigation](http://en.wikipedia.org/wiki/Breadcrumb_trail). It provides either hyperlinked navigation, or plain text positional display. Breadcrumbs are __not__ displayed on the 'default' section (home page) of your site.
 
@@ -62,17 +62,17 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display a hyperlinked breadcrumb trail
 
-```html
+~~~ html
 <txp:breadcrumb label="Navigation" separator="::" link="1" wraptag="p" />
-```
+~~~
 
 Provides hyperlinks to sections or categories in a breadcrumb style, linking back to your home page.
 
 ### Example 2: Display a text only breadcrumb trail
 
-```html
+~~~ html
 <txp:breadcrumb label="Navigation" separator="/" link="0" wraptag="p" />
-```
+~~~
 
 Provides a breadcrumb guide that reflects where a user is within the site's navigation.
 

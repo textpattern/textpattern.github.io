@@ -18,17 +18,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_status>
-```
+~~~
 
 The **if_status** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_status>
     ...conditional statement...
 </txp:if_status>
-```
+~~~
 
 The tag will execute the contained statements depending on the requested page's HTTP status condition. Normal pages result in a status code of '200', while missing pages set Textpattern's status to '404'.
 
@@ -46,7 +46,7 @@ Default: `200` (OK).
 
 ### Example 1: Conditionally display text on missing pages
 
-```html
+~~~ html
 <txp:if_status status="404">
     <h2>The page you requested could not be found.</h2>
 </txp:if_status>

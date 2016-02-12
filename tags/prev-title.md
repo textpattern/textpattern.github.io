@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:prev_title />
-```
+~~~
 
 The **prev_title** tag is a __single__ tag which Textpattern will replace with the name (text) of the previous article in the sort order.
 
@@ -33,10 +33,10 @@ This tag takes no attributes.
 
 ### Example 1: Display a link to the previous article when displaying individual articles
 
-```html
+~~~ html
 <txp:link_to_prev>
     <txp:prev_title />
 </txp:link_to_prev>
-```
+~~~
 
 Other tags used: [link_to_prev](link-to-prev).

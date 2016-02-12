@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:file_download_id />
-```
+~~~
 
 The **file_download_id** tag is a __single__ tag that Textpattern will replace with the internal ID number of the file to be downloaded. Should be used in a Textpattern 'file' type @@Form template@@.
 
@@ -31,7 +31,7 @@ This tag has no attributes.
 
 ### Example 1: Display a file id
 
-```html
+~~~ html
 <p>
     File ID number:
     <txp:file_download_id />

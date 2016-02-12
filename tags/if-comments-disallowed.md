@@ -18,17 +18,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_comments_disallowed>
-```
+~~~
 
 The **if_comments_disallowed** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_comments_disallowed>
     ...conditional statement...
 </txp:if_comments_disallowed>
-```
+~~~
 
 The tag will execute the contained statements if comments are disallowed for a given article.
 
@@ -46,7 +46,7 @@ This tag has no attributes.
 
 ### Example 1: Give an indication of comments status
 
-```html
+~~~ html
 <txp:if_comments_allowed>
     <txp:comments_form />
 </txp:if_comments_allowed>
@@ -54,7 +54,7 @@ This tag has no attributes.
 <txp:if_comments_disallowed>
     <p>Comments are turned off for this article.</p>
 </txp:if_comments_disallowed>
-```
+~~~
 
 Comments for articles can be turned off or on at the author's discretion for any article that is published; by using the following scheme in an article form, you can still have the on/off control over comments while also giving an indication of the comment status.
 
@@ -62,19 +62,19 @@ Other tags used: [comments_form](comments-form), [if_comments_disallowed](if-com
 
 ### Example 2: List of comment links
 
-```html
+~~~ html
 <txp:if_comments_disallowed>
     <txp:comments form="lineitem" break="li" wraptag="ul" />
 </txp:if_comments_disallowed>
-```
+~~~
 
 And the form 'lineitem' (type: comment):
 
-```html
+~~~ html
 <txp:comment_permlink>
     <txp:comment_id />
 </txp:comment_permlink>
-```
+~~~
 
 Displays a list of links to comments for the current article, using the comment `id` as text, but only if comments are currently **not allowed**.
 

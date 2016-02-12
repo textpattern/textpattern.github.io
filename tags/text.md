@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:text />
-```
+~~~
 
 The **text** tag is a __single__ tag which is primarily used to return localized language strings from the `txp_lang` database table.
 
@@ -42,11 +42,11 @@ Piece of text to display, preferably an item from the `name` column of the `txp_
 
 ### Example 1: Display some localized text
 
-```html
+~~~ html
 <txp:older>
     <txp:text item="older" />
 </txp:older>
-```
+~~~
 
 Outputs the text 'older' inside the `<txp:older />` tag, respecting the current Textpattern language, instead of using the tag like this: `<txp:older>older</txp:older>` which would always render the English text 'older', it replaces the contents with the value assigned to the name 'older' in the current language. So you would see a link with the word 'älter' if you were using German `de` as the Textpattern site language.
 

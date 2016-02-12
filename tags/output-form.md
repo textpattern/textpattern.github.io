@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:output_form />
-```
+~~~
 
 The **output_form** tag can be used as a __single__ or a __container__ tag. Textpattern will replace this tag with the content resulting from the form template called by the tag.
 
@@ -38,9 +38,9 @@ Default: unset (no output).
 
 ### Example 1: Manage small pieces of static text
 
-```html
+~~~ html
 <txp:output_form form="copyright" />
-```
+~~~
 
 You can use this tag in combination with a form to create small pieces of text that would not otherwise be managed as a regular article. For example you might define the copyright conditions of content on your site in a form and add that to one or more places via the output_form tag. Name the form `copyright`, save it as type `misc` and call the form using the tag structure.
 
@@ -51,7 +51,7 @@ Note: Staff Writers and Freelancers can not edit the contents of forms.
 
 Suppose you want to manage the `<head>` section of your page template as a single-sourced block of content. You can create a form called `head` and save it as type `misc`. The content of the form might look like this for example:
 
-```html
+~~~ html
 <head>
     <meta charset="utf-8">
     <title>
@@ -62,13 +62,13 @@ Suppose you want to manage the `<head>` section of your page template as a singl
     <meta name="robots" content="index, follow, noodp, noydir">
     <txp:feed_link flavor="rss" format="link" label="RSS" />
 </head>
-```
+~~~
 
 Then in each of your pages, you insert the header using...
 
-```html
+~~~ html
 <txp:output_form form="head" />
-```
+~~~
 
 ...which will add this `<head>` to all the pages automatically.
 

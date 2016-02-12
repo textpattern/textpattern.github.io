@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:custom_field />
-```
+~~~
 
 The **custom_field** tag is a __single__ tag and used to display the contents of a custom field.
 
@@ -57,27 +57,27 @@ You might, for example, publish book reviews (for which you add the author, the 
 
 and an 'article' type form like the following:
 
-```html
+~~~ html
 <p>
     <txp:custom_field name="Book_Author" />: <txp:custom_field name="Book_Title" /><br>
     Published by <txp:custom_field name="Book_Publisher" /> in <txp:custom_field name="Book_Year" />
 </p>
-```
+~~~
 
 HTML returned would be:
 
-```html
+~~~ html
 <p>
     J.R.R. Tolkien: The Lord of the Rings<br>
     Published by HarperCollins in 2004.
 </p>
-```
+~~~
 
 ### Example 2: Power A linklog
 
 With an article title of `Textpattern`, an excerpt of `Textpattern is awesome!`, a custom field named `link` containing `http://textpattern.com/`, and an 'article' type form like the following:
 
-```html
+~~~ html
 <article class="linklog-entry">
     <h1>
         <a href="<txp:custom_field name="Link" />"><txp:title /></a>
@@ -89,11 +89,11 @@ With an article title of `Textpattern`, an excerpt of `Textpattern is awesome!`,
     </p>
     <txp:excerpt />
 </article>
-```
+~~~
 
 HTML returned would be:
 
-```html
+~~~ html
 <article class="linklog-entry">
     <h1>
         <a href="http://textpattern.com/">Textpattern</a>
@@ -103,7 +103,7 @@ HTML returned would be:
     </p>
     <p>Textpattern is awesome!</p>
 </article>
-```
+~~~
 
 Other tags used: [title](title), [posted](posted), [excerpt](excerpt).
 
@@ -111,26 +111,26 @@ Other tags used: [title](title), [posted](posted), [excerpt](excerpt).
 
 With a custom field named `foo` containing:
 
-```html
+~~~ html
 <a href="../here/">
-```
+~~~
 
 using the following:
 
-```html
+~~~ html
 <txp:custom_field name="foo" />
-```
+~~~
 
 will return this hunk of HTML:
 
-```html
+~~~ html
 &#60;a href=&#34;../here/&#34;&#62;
-```
+~~~
 
 whereas using:
 
-```html
+~~~ html
 <txp:custom_field name="foo" escape="" />
-```
+~~~
 
 will render the URL as you'd expect, exactly as written in the custom field itself. Thus, it will be rendered as a link by the browser.

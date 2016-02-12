@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:css />
-```
+~~~
 
 The basic **css** tag is a __single__ tag used to output the URL of the stylesheet assigned in the Textpattern [Sections administration panel](../administration/sections-panel).
 
@@ -49,37 +49,37 @@ Default: unset.
 
 ### Example 1: Output just the stylesheet's URL
 
-```html
+~~~ html
 <head>
     <!-- ...tags... -->
     <link rel="stylesheet" href="<txp:css />" media="screen, projector">
     <!-- ...more tags... -->
 </head>
-```
+~~~
 
 ### Example 2: Output the link to the section's default stylesheet
 
-```html
+~~~ html
 <head>
     <!-- ...tags... -->
     <txp:css format="link" />
     <!-- ...more tags... -->
 </head>
-```
+~~~
 
 ### Example 3: Output the link to a named stylesheet
 
-```html
+~~~ html
 <head>
     <!-- ...tags... -->
     <txp:css format="link" name="style_name" />
     <!-- ...more tags... -->
 </head>
-```
+~~~
 
 ### Example 4: Output print and alternate stylesheets
 
-```html
+~~~ html
 <head>
     <!-- ...tags... -->
     <txp:css format="link" name="plain" rel="alternate" title="Plain and simple style" />
@@ -87,7 +87,7 @@ Default: unset.
     <txp:css format="link" name="print" media="print" />
     <!-- ...more tags... -->
 </head>
-```
+~~~
 
 ## Genealogy
 

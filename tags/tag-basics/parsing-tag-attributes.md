@@ -11,13 +11,13 @@ title: "Parsing tag attributes"
 
 Most Textpattern tags allow you to specify attributes as key/value pairs to override default behaviour. For example:
 
-```html
+~~~ html
 <txp:tag key="value" />
-```
+~~~
 
-```html
+~~~ html
 <txp:category type="image" title="1" />
-```
+~~~
 
 Usage of attributes in Textpattern tags is similar to attributes in HTML.
 
@@ -39,37 +39,37 @@ bc. Eeward for "good" behaviour
 
 *Incorrect*:
 
-```html
+~~~ html
 <txp:tag key="Reward for "good" behaviour" />
-```
+~~~
 
 For a human, it's easy to understand how this was intended, but for Textpattern the attribute value ends at the double quote before 'good'. The remainder of the attribute value makes it an incorrectly formatted tag (causing to show up as-is in the resulting HTML code).
 
 If single quotes didn't have special meaning, one would solve this by using single quotes to delimit the attribute value:
 
-```html
+~~~ html
 <txp:tag key='reward for "good" behaviour' />
-```
+~~~
 
 While this works as intended, it doesn't account for attribute values containing both single and double quotes.
 
 Since Textpattern 4.0.7, duplicate delimiter characters used as part of an attribute value are interpreted as a literal character instead of delimiters. For example:
 
-```html
+~~~ html
 <txp:tag key="reward for ""good"" behaviour" />
-```
+~~~
 
-```html
+~~~ html
 <txp:tag key='reward for ''good'' behaviour' />
-```
+~~~
 
 If you look closely at the second example, you'll see that in the attribute value, there are two single quotes on each side of the word 'good', not a double quote.
 
 One last example that shows what's possible:
 
-```html
+~~~ html
 <txp:tag key="let's use ""double"" quotes & <html> here" />
-```
+~~~
 
 The only character that needs escaping is the chosen attribute delimiter itself where it occurs inside the attribute value (double quote in this instance).
 
@@ -84,41 +84,41 @@ Double quoted attribute values are not parsed, so if your attribute value contai
 
 What does all this mean? Here are some examples, starting with attribute values that are not parsed:
 
-```html
+~~~ html
 <txp:tag key="plain text" />
-```
+~~~
 
-```html
+~~~ html
 <txp:tag key="literal <txp:tag />" />
-```
+~~~
 
 In the above examples, the attribute are treated as plain text; the literal tag is not parsed. If you wanted the tag in the attribute value to be parsed and return the actual result of the tag, you should write it like this:
 
-```html
+~~~ html
 <txp:tag key='parsed <txp:tag />' />
-```
+~~~
 
 ## Parsing tags example
 
 Using an article that has a custom field named 'email' containing an email address `me@example.com` and a custom field 'name' containing 'Donald Swain':
 
-```html
+~~~ html
 <txp:email
     email='<txp:custom_field name="email" />'
     linktext="Send email"
     title='Send email to <txp:custom_field name="name" />'
 />
-```
+~~~
 
 Because the single quoted attribute values are parsed, after parsing the attribute values, it looks like this:
 
-```html
+~~~ html
 <txp:email
     email="me@example.com"
     linktext="Send email"
     title="Send email to Donald Swain"
 />
-```
+~~~
 
 If it were just one article, you wouldn't need attribute parsing, but if you have many articles with different email addresses in such a custom field, this can be very useful.
 
@@ -133,7 +133,7 @@ Attribute value parsing has no real limitations. Within a parsed attribute value
 
 Referring to the last point above, things can become 'a little hairy' if you want to insert a tag into an attribute of a tag that's already an attribute! But keep your wits about you and you can do things like this:
 
-```html
+~~~ html
 <txp:variable name="file_count" value='<txp:file_download_list form="file_cat" category=''<txp:l10n_get_lang type="short" />'' />' />
 <txp:if_variable name="file-count">
     <h3>Some Header</h3>
@@ -141,7 +141,7 @@ Referring to the last point above, things can become 'a little hairy' if you wan
 <txp:else />
     <p>No files for this language.</p>
 </txp:if_variable>
-```
+~~~
 
 In the first statement, notice the pairs of single apostrophes inside the category attribute? They are necessary to **escape** the single quotes so the parser does not see them as the end of the **value** attribute in the `<txp:variable />` tag. At each nested level, the number of single quotes surrounding a tag is usually doubled to maintain the integrity of the statements; this can get mighty interesting unless you keep your wits about you!
 

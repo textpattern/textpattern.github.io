@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:thumbnail />
-```
+~~~
 
 The **thumbnail** tag is a __single__ tag that Textpattern will replace with the `<img src="...">` HTML tag matching the thumbnail image of the numeric `id` assigned by Textpattern when the parent image was uploaded via the Textpattern [Images administration panel](../administration/images-panel).
 
@@ -73,9 +73,9 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display the given thumbnail
 
-```html
+~~~ html
 <txp:thumbnail id="23" />
-```
+~~~
 
 Displays the image thumbnail for the image uploaded as ID #23.
 

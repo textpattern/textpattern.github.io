@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:author />
-```
+~~~
 
 The **author** tag is a __single__ tag that is used to return the name of the author of the currently displayed article.
 
@@ -58,7 +58,7 @@ Default: `1`.
 
 ### Example 1: Link to list of author's articles
 
-```html
+~~~ html
 <h1>
     <txp:title />
 </h1>
@@ -66,7 +66,7 @@ Default: `1`.
 <p class="author-date">
     Posted By: <txp:author link="1" /> at <txp:posted />
 </p>
-```
+~~~
 
 The author's name in this article form is a hyperlink to a list of articles by this author.
 
@@ -74,14 +74,14 @@ Other tags used: [posted](posted), [title](title), [body](body).
 
 ### Example 2: Author landing page
 
-```html
+~~~ html
 <txp:if_author>
     <h1>
         Articles by author: <txp:author />
     </h1>
     <txp:article form="article_listing" limit="5" />
 </txp:if_author>
-```
+~~~
 
 Display the author's name above a list of articles by that author when visiting `example.com/author/Author+Name` URLs.
 

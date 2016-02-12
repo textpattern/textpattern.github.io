@@ -17,17 +17,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_last_article>
-```
+~~~
 
 The **if_last_article** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_last_article>
     ...conditional statement...
 </txp:if_last_article>
-```
+~~~
 
 The tag will execute the contained statements if the displayed article is the last in the currently displayed list. It will display in both single article and article list modes. Should be used in an Textpattern 'article' type @@Form template@@.
 
@@ -39,7 +39,7 @@ This tag has no attributes.
 
 ### Example 1: Add an image after the last article in a list
 
-```html
+~~~ html
 <h3>
     <txp:permlink>
         <txp:title />
@@ -56,6 +56,6 @@ This tag has no attributes.
 <txp:if_last_article>
     <img src="http://example.com/footer.jpg" alt="Footer">
 </txp:if_last_article>
-```
+~~~
 
 Other tags used: "permlink""permlink, [title](title), [posted](posted), [author](author), [body](body), [comments_invite](comments-invite).

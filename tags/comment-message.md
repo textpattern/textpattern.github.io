@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comment_message />
-```
+~~~
 
 The **comment_message** tag is a __single__ tag which is used to display the message text, or comment. Used in the form that renders your comments (the default form is named 'comments').
 
@@ -32,7 +32,7 @@ This tag has no attributes.
 
 ### Example 1: Comments display form
 
-```html
+~~~ html
 <txp:comment_message />
 <p class="footnote">
     <a href="mailto:<txp:comment_email />">Email</a> |
@@ -40,6 +40,6 @@ This tag has no attributes.
         <txp:comment_id />
     </txp:comment_permlink>
 </p>
-```
+~~~
 
 Other tags used: [comment_email](comment-email), [comment_id](comment-id), [comment_permlink](comment-permlink).

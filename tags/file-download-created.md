@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:file_download_created />
-```
+~~~
 
 The **file_download_created** tag is a __single__ tag that Textpattern will replace with the upload date of the file to download. Should be used in a Textpattern 'file' type @@Form template@@.
 
@@ -36,11 +36,11 @@ Default: the 'Archive date format' set in preferences.
 
 ### Example 1: Display formated file upload date
 
-```html
+~~~ html
 <p>
     File created:
     <txp:file_download_created format="%D" />
 </p>
-```
+~~~
 
 Returns the file creation date in the format `mm/dd/yy`.

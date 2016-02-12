@@ -18,19 +18,19 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:images />
-```
+~~~
 
 The **images** tag is a __single__ or __container__ tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern @@Images page@@. Utilising the other image tags in the suite [image_info](image-info), [image_url](image-url), [image_date](image-date) and [if_thumbnail](if-thumbnail)) you can display simple image galleries from this list.
 
 If used as a __container__ tag, it must be specified as an opening and closing pair of tags, like this:
 
-```html
+~~~ html
 <txp:images>
     ...contained statements...
 </txp:images>
-```
+~~~
 
 This is equivalent to putting the contained statements into a form named 'my_form' and using `<txp:images form="my_form" />`.
 
@@ -132,21 +132,21 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 This example shows the outcome of various attribute configurations to give you an idea of what to expect from the tag. More concrete examples follow.
 
-```html
+~~~ html
 <txp:images auto_detect="" />
-```
+~~~
 
 Displays all images in the database.
 
-```html
+~~~ html
 <txp:images auto_detect="" sort="id desc" />
-```
+~~~
 
 Display all images in the database, sorted by `id` in descending order.
 
-```html
+~~~ html
 <txp:images />
-```
+~~~
 
 Context-sensitivity mode. Returns an image list based on the first of:
 
@@ -155,107 +155,107 @@ Context-sensitivity mode. Returns an image list based on the first of:
 # Images matching author, of on an author list page;
 # All images in the database.
 
-```html
+~~~ html
 <txp:images id="" />
 <txp:images name="" />
 <txp:images category="" />
-```
+~~~
 
 No images displayed. This means that if you did some tag-in-tag magic such as: `category="<txp:custom_field name="my_cats" />"` it will show no images if the custom field is empty.
 
-```html
+~~~ html
 <txp:images id="2,3,6" />
-```
+~~~
 
 Display images 2, 3, and 6.
 
-```html
+~~~ html
 <txp:images name="lion.jpg, zebra.jpg" />
-```
+~~~
 
 The named images are displayed.
 
-```html
+~~~ html
 <txp:images name="pengiun.jpg" />
-```
+~~~
 
 No images are displayed (mis-spelled image name).
 
-```html
+~~~ html
 <txp:images category="mammals, birds" />
-```
+~~~
 
 All images in the named categories are displayed.
 
-```html
+~~~ html
 <txp:images category=", mammals, birds" />
-```
+~~~
 
 All images in the named categories and any uncategorized images are displayed.
 
-```html
+~~~ html
 <txp:images category=" " />
-```
+~~~
 
 Just uncategorized images are displayed (note that `category=","` also works, but a space looks better!).
 
-```html
+~~~ html
 <txp:images author="attenborough, morris" />
-```
+~~~
 
 All images by author (ID) 'attenborough' and 'morris' are displayed.
 
-```html
+~~~ html
 <txp:images realname="David+Attenborough" />
-```
+~~~
 
 All images by author 'David Attenborough' are displayed. This incurs one extra query to look up the author's ID from the given real name.
 
-```html
+~~~ html
 <txp:images category="mammals, birds" author="attenborough, morris" />
-```
+~~~
 
 All images in the named categories that are assigned to the named authors are displayed.
 
-```html
+~~~ html
 <txp:images category="mammals, birds" extension=".jpg" />
-```
+~~~
 
 All JPEG images in the named categories are displayed.
 
-```html
+~~~ html
 <txp:images category="mammals, birds" extension=".jpg" author="attenborough, morris" />
-```
+~~~
 
 All JPEG images in the named categories that are assigned to the named authors are displayed.
 
-```html
+~~~ html
 <txp:images extension=".gif" />
-```
+~~~
 
 All GIF images are displayed.
 
-```html
+~~~ html
 <txp:images category="mammals, birds" thumbnail="1" />
-```
+~~~
 
 All images in the named categories that have thumbnails assigned to them are displayed.
 
-```html
+~~~ html
 <txp:images thumbnail="1" />
-```
+~~~
 
 All images that have thumbnails assigned to them are displayed.
 
-```html
+~~~ html
 <txp:images thumbnail="0" />
-```
+~~~
 
 All images that do not have thumbnails assigned to them are displayed.
 
 ### Example 2: Multiple pieces of information at once, using images tag as wrapper
 
-```html
+~~~ html
 <txp:images category="birds, mammals" thumbnail="1" sort="category asc">
     <txp:if_different>
         <h4>
@@ -266,7 +266,7 @@ All images that do not have thumbnails assigned to them are displayed.
     <txp:image_info type="w, h" wraptag="div" break=" × " />
     by <txp:image_info type="author" />
 </txp:images>
-```
+~~~
 
 Shows the thumbnail of each image that has an assigned thumbnail image from the 'mammals' and 'birds' categories and, beneath each, show its dimensions 'width' x 'height' along with the author of the image. Since the list has been sorted by category, the `<txp:if_different>` conditional can be used to output the category title at the top of the list of images each time it changes.
 
@@ -276,7 +276,7 @@ Other tags used: [if_different](if-different), [image_info](image-info), [thumbn
 
 [TimThumb](http://www.binarymoon.co.uk/projects/timthumb/) is a simple, flexible, PHP script that resizes images directly on your web server. [Read the TimThumb documentation](http://www.binarymoon.co.uk/2010/08/timthumb/) for basic installation instructions (also requires the GD image library). Then, for example, you can use the following:
 
-```html
+~~~ html
 <txp:images limit="6" category="gallery">
     <p>
         <a href="<txp:image_url />" title="Click to view original">
@@ -287,7 +287,7 @@ Other tags used: [if_different](if-different), [image_info](image-info), [thumbn
         Author: <txp:image_author />
     </p>
 </txp:images>
-```
+~~~
 
 Creates a small gallery of 6 images from the category 'gallery'. Uses the TimThumb script to proportionately resize a thumbnail version (160px wide) of the image automatically, and keep a cached version of the thumbnail for future visitors. Links the thumbnail to the original image, and lists the image author name below each thumbnail.
 
@@ -297,19 +297,19 @@ Other tags used: [image_author](image-author), [image_info](image-info), [image_
 
 You can use the `offset` attribute to slice up your [article_image](article-image) list. By specifying a comma-separated list of image IDs in your 'Article image' field, this tag can iterate over them in groups. So, if your 'Article image' list contained four IDs you could treat your first image as the 'Hero' at the top of the article, displayed using:
 
-```html
+~~~ html
 <txp:images limit="1">
     <txp:article_image />
 </txp:images>
-```
+~~~
 
 And then later on you could drop in...
 
-```html
+~~~ html
 <txp:images offset="1" limit="3" wraptag="div" class="gallery">
     <txp:thumbnail />
 </txp:images>
-```
+~~~
 
 ...to display the three remaining supporting images as thumbnails in a gallery, all taken from the Article Image field.
 

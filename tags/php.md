@@ -17,17 +17,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:php>
-```
+~~~
 
 Textpattern's **php** tag is a __container__ tag that provides the same output abilities as `<?php //Code goes here... ?>`. Textpattern's tag version is used like this:
 
-```html
+~~~ html
 <txp:php>
     // Code goes here...
 </txp:php>
-```
+~~~
 
 Control over where this tag is allowed to appear (i.e. the privileges required to allow it to appear in pages and forms) are governed by settings in the [Preferences administration panel](../administration/preferences-panel).
 
@@ -45,13 +45,13 @@ When inserting markup or PHP into the content boxes of a Textpattern article:
 # Use PHP as you would use normal PHP, not interspersed with markuFor example, inside the PHP tags, use PHP's echo command to output HTML, rather than writing HTML directly.
 # Surround the code with both the special `<notextile>` tag and Textpattern `<txp:php>` tag to **disable Textile** parsing:
 
-```html
+~~~ html
 <notextile>
     <txp:php>
         ...code goes here...
     </txp:php>
 </notextile>
-```
+~~~
 
 ### Equivalent programmatic names
 
@@ -65,15 +65,15 @@ You must pass an array to all tag functions, even if there are no attributes to 
 
 ### Example 1: Display PHP server library information
 
-```html
+~~~ html
 <txp:php>
     phpinfo();
 </txp:php>
-```
+~~~
 
 ### Example 2: Show the current linked category title
 
-```html
+~~~ html
 <txp:php>
     echo "The current Textpattern category is: "
         .category(array(

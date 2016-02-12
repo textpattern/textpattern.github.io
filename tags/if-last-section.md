@@ -19,17 +19,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_last_section>
-```
+~~~
 
 The **if_last_section** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_last_section>
     ...conditional statements...
 </txp:if_last_section>
-```
+~~~
 
 The tag will execute the contained statements if the current section (usually one inside the container or form of a [section_list](section-list)) is the last in the currently displayed list.
 
@@ -41,13 +41,13 @@ This tag has no attributes.
 
 ### Example 1: Assign a specific id to the last item in the list
 
-```html
+~~~ html
 <txp:section_list wraptag="ul" break="">
     <li<txp:if_last_section> id="last"</txp:if_last_section>>
         <txp:section title="1" link="1" />
     </li>
 </txp:section_list>
-```
+~~~
 
 ## Genealogy
 

@@ -19,17 +19,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_expires>
-```
+~~~
 
 The **if_expires** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_expires>
     ...conditional statement...
 </txp:if_expires>
-```
+~~~
 
 The tag will execute the contained statements, if a particular article has an expiry date set. Should be used in an 'article' type form.
 
@@ -41,11 +41,11 @@ This tag has no attributes.
 
 ### Example 1: Show when an article is to expire
 
-```html
+~~~ html
 <txp:if_expires>
     This article expires on <txp:expires />.
 </txp:if_expires>
-```
+~~~
 
 Other tags used: [expires](expires).
 

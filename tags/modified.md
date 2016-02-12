@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:modified />
-```
+~~~
 
 The **modified** tag is a __single__ tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the [Preferences administration panel](../administration/preferences-panel).
 
@@ -56,33 +56,33 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display 'since' format date setting
 
-```html
+~~~ html
 <p>
     Modified:
     <txp:modified format="since" />
 </p>
-```
+~~~
 
 This would result in the following HTML output:
 
-```html
+~~~ html
 <p>Modified: 29 days ago</p>
-```
+~~~
 
 ### Example 2: Display custom date format
 
-```html
+~~~ html
 <p>
     Modified:
     <txp:modified format="%b %d, %Y" />
 </p>
-```
+~~~
 
 This would result in the following HTML output:
 
-```html
+~~~ html
 <p>modified: May 28, 2005</p>
-```
+~~~
 
 ## Genealogy
 

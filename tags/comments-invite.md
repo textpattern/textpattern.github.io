@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comments_invite />
-```
+~~~
 
 The **comments_invite** tag is a __single__ tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern [Write administration panel](../administration/write-panel).
 
@@ -58,11 +58,11 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display comments invitation and comment count
 
-```html
+~~~ html
 <txp:if_comments>
     <txp:comments_invite wraptag="p" />
 </txp:if_comments>
-```
+~~~
 
 This will display the comments invitation and a comment count (but only if there are any comments associated with the current article).
 

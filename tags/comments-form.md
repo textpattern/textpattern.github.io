@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comments_form />
-```
+~~~
 
 The **comments_form** tag is a __single__ tag which is used to display a comment form. Comments will be attached to present individual article as a default, or to the article set by the `id` attribute.
 
@@ -50,30 +50,30 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 Comments for articles can be turned on or off at the author's discretion for any article that is published; by using the following scheme in an article form, you can still have the on/off control over comments while still giving users indication of comment status:
 
-```html
+~~~ html
 <txp:if_comments_allowed>
     <txp:comments_form />
 <txp:else />
     <p>Comments are turned off for this article.</p>
 </txp:if_comments_allowed>
-```
+~~~
 
 Other tags used: [if_comments_allowed](if-comments-allowed), [else](else).
 
 ### Example 2: Display conditional comments and form
 
-```html
+~~~ html
 <txp:if_comments_allowed>
     <txp:comments form="lineitem" break="li" wraptag="ul" />
     <txp:comments_form />
 </txp:if_comments_allowed>
-```
+~~~
 
 And then an example of what the form `lineitem` could contain:
 
-```html
+~~~ html
 <txp:comment_id />
-```
+~~~
 
 For the current article, returns a list of id numbers for comments and a comment input form (but only if comments are currently allowed).
 

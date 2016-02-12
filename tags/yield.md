@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:yield />
-```
+~~~
 
 The **yield** tag is a __single__ tag which is used to return the inner content of the enclosing `<txp:output_form />` tag.
 
@@ -36,27 +36,27 @@ This tag has no attributes.
 
 Given the following form named `example_form`:
 
-```html
+~~~ html
 <div>
     This content is static and will be the same every time this form is invoked.
     <txp:yield />
 </div>
-```
+~~~
 
 We can invoke it twice with different inner content each time:
 
-```html
+~~~ html
 <txp:output_form form="example_form">
     Invoking 'example_form' with some inner content.
 </txp:output_form>
 <txp:output_form form="example_form">
     Invoking 'example_form' again, this time with different inner content.
 </txp:output_form>
-```
+~~~
 
 And the result will be:
 
-```html
+~~~ html
 <div>
     This content is static and will be the same every time this form is invoked.
     Invoking 'example_form' with some inner content.
@@ -65,7 +65,7 @@ And the result will be:
     This content is static and will be the same every time this form is invoked.
     Invoking 'example_form' again, this time with different inner content.
 </div>
-```
+~~~
 
 Other tags used: [output_form](output-form).
 

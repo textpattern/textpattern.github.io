@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:site_url />
-```
+~~~
 
 The **site_url** tag is a __single__ tag which returns the full URL of the site (as defined in the [Preferences administration panel](../administration/preferences-panel)) as text. If you maintain local development versions of your live sites and import databases between them, then this tag is extremely valuable for ensuring your domain links are never confused (and thus broken) between the two locations (see example 1, below).
 
@@ -31,7 +31,7 @@ This tag has no attributes.
 
 ### Example 1: Maintain accurate domain paths
 
-```html
+~~~ html
 <nav>
     <ul>
         <li>
@@ -42,19 +42,19 @@ This tag has no attributes.
         </li>
     </ul>
 </nav>
-```
+~~~
 
 A classic example is with navigation links - the idea is that you don't break URL paths after importing a database from local development to live, or vice versa. By using this tag it will automatically be relative to a given site and you'll never have to manually edit broken domain paths again.
 
 ### Example 2: HTML header paths
 
-```html
+~~~ html
 <link rel="stylesheet" href="<txp:site_url />assets/css/main.css">
-```
+~~~
 
 In the `<head>` section of your HTML pages you might have a variety of links to locations relative to the local server, such as CSS files, JavaScript files and so forth. The relevance is similar to example 1 - you want to ensure the paths are accurate relative to the server if a database has been imported from another location.
 
 ### Example 3: Display a hyperlink to download a .ZIP file
 
-```html
+~~~ html
 <a href="<txp:site_url />download.zip">Download</a>

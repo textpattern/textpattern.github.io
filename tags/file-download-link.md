@@ -18,17 +18,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:file_download_link />
-```
+~~~
 
 The **file_download_link** tag is both a __single__ tag and a __container__ tag. Thus it may be used as an opening and closing pair:
 
-```html
+~~~ html
 <txp:file_download_link>
     ...containing statements...
 </txp:file_download_link>
-```
+~~~
 
 When used as a single tag, Textpattern will replace the tag with a download link to the file being downloaded. As a container, it will assign the link to the given text or tag, while the single tag outputs the file's plain URL.
 
@@ -48,12 +48,12 @@ Note: `id` takes precedence over `filename`. If neither is defined and the tag i
 
 ### Example 1: Provide a link to download file #4
 
-```html
+~~~ html
 <txp:file_download_link id="4">
     <txp:file_download_name />
     [<txp:file_download_size format="mb" decimals="2" />]
 </txp:file_download_link>
-```
+~~~
 
 Makes a link to the given file (#4) comprising its file name and size.
 

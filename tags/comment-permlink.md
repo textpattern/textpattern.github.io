@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comment_permlink>
-```
+~~~
 
 The **comment_permlink** tag is a __container__ tag which is used to return the permanent link of the article comment being displayed. The container tag wraps the text assigned to the link. Should be used in a Textpattern 'comment' type @@Form template@@.
 
@@ -37,7 +37,7 @@ Default: `0`.
 
 ### Example 1: Comments display form
 
-```html
+~~~ html
 <txp:comment_message />
 <p>
     <txp:comment_name />
@@ -46,6 +46,6 @@ Default: `0`.
         <txp:comment_id />
     </txp:comment_permlink>
 </p>
-```
+~~~
 
 Other tags used: [comment_id](comment-id), [comment_message](comment-message), [comment_name](comment-name), [comment_time](comment_time).

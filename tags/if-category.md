@@ -18,17 +18,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_category>
-```
+~~~
 
 The **if_category** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_category>
     ...conditional statement...
 </txp:if_category>
-```
+~~~
 
 The tag will execute the contained statements if the `name` attribute matches a category search value, or the list is an article list by category.
 
@@ -53,11 +53,11 @@ Default: `article`.
 
 ### Example 1: Display info depending on list category
 
-```html
+~~~ html
 <txp:if_category name="prose">
     <p><txp:author /></p>
 </txp:if_category>
-```
+~~~
 
 Displays the author's name if the article list is of category `prose`.
 
@@ -65,13 +65,13 @@ Other tags used: [author](author).
 
 ### Example 2: Use tag with else
 
-```html
+~~~ html
 <txp:if_category name="prose">
     <p><txp:category /></p>
 <txp:else />
     <h3><txp:site_name /></h3>
 </txp:if_category>
-```
+~~~
 
 Displays the category name if the article list is of category `prose`, otherwise show the site's name.
 
@@ -79,13 +79,13 @@ Other tags used: [category](category), [else](else), [site_name](site-name).
 
 ### Example 3: Display an appropriate heading
 
-```html
+~~~ html
 <;txp:if_category>
    <h3>Articles in category <txp:category title="1" /></h3>
 <txp:else />
    <h3>All articles</h3>
 </txp:if_category>
-```
+~~~
 
 Displays an appropriate heading for both category and non-category pages.
 
@@ -95,7 +95,7 @@ Other tags used: [category](category), [else](else).
 
 Given the defined article categories: `prose`, `poetry`, and `opinions`.
 
-```html
+~~~ html
 <txp:category_list label="Category Navigation" wraptag="p" />
 
 <txp:if_category name="prose">
@@ -109,7 +109,7 @@ Given the defined article categories: `prose`, `poetry`, and `opinions`.
 <txp:if_category name="opinions">
     <txp:recent_articles limit="25" break="li" wraptag="ol" label="Opinions" category="opinions" />
 </txp:if_category>
-```
+~~~
 
 Shows a category list and, underneath it, a list of related articles in the currently selected category. Changing the category using the list changes the related articles underneath.
 

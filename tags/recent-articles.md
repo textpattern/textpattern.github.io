@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:recent_articles />
-```
+~~~
 
 The **recent_articles** tag is a __single__ tag which is used to produce a list of permanent links to recent articles by title.
 
@@ -91,25 +91,25 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Labelled list of recent articles
 
-```html
+~~~ html
 <txp:recent_articles label="Latest and greatest" limit="5" />
-```
+~~~
 
 Produces a list of the 5 most recent articles, along with the label 'Latest and greatest'.
 
 ### Example 2: List of recent articles by category, with a heading
 
-```html
+~~~ html
 <txp:recent_articles label="Latest" `labeltag="h3"` break="li" wraptag="ol" category="code" sort="Section desc" />
-```
+~~~
 
 Produces a numerical list of the 5 most recent articles categorized with `code`, along with the heading 'Latest'.
 
 ### Example 3: Offsetting a recent article list
 
-```html
+~~~ html
 <txp:recent_articles label="Other recent articles" limit="5" offset="1" />
-```
+~~~
 
 Produces a list of the 5 most recent articles __apart__ from the most recent one, along with the label 'Other recent articles'.
 

@@ -19,17 +19,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_variable>
-```
+~~~
 
 The **if_variable** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_variable>
     ...conditional statement...
 </txp:if_variable>
-```
+~~~
 
 It tests the existence and/or value of a global variable set with the [variable](variable) tag.
 

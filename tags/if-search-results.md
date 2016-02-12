@@ -19,17 +19,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_search_results>
-```
+~~~
 
 The **if_search_results** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <;txp:if_search_results>
     ...conditional statement...
 </txp:if_search_results>
-```
+~~~
 
 The tag will execute the contained statements if the current article list contains a certain amount of entries matching the search term - mostly more than zero.
 
@@ -53,13 +53,13 @@ Default: `1`.
 
 ### Example 1: More informative search result output
 
-```html
+~~~ html
 <txp:if_search_results>
     <p>These articles match your search request:</p>
 <txp:else />
     <p>Sorry, we were not able to find a page matching your search request <q><txp:search_term /></q>.</p>
 </txp:if_search_results>
-```
+~~~
 
 Ensures the visitor does not see a blank page when no articles match the search request.
 
@@ -67,7 +67,7 @@ Other tags used: [else](else), [search_term](search-term).
 
 ### Example 2: In context within if_search
 
-```html
+~~~ html
 <txp:if_search>
     <txp:article pgonly="1" limit="10" />
     <txp:if_search_results>
@@ -77,7 +77,7 @@ Other tags used: [else](else), [search_term](search-term).
         <p>Sorry, we were not able to find a page matching your search request <q><txp:search_term /></q>.</p>
     </txp:if_search_results>
 </txp:if_search>
-```
+~~~
 
 Detects if a search is in progress, calls the [article](article) tag to perform the search but **inhibits display via the `pgonly` attribute**. Once the search has been performed (internally) and Textpattern knows how many search results there are, you can then use [if_search_results](if-search-results) to detect whether there were any or not. Why you have to do this? Because it's the only way to use the tag! Trying to use it without first calling an [article](article) tag will give unexpected results and, more often than not, a "Page template ... does not contain a txp:article tag" warning.
 
@@ -88,13 +88,13 @@ Other tags used: [if_search](if-search), [article](article), [else](else), [sear
 
 ### Example 3: Take action when there are too many hits
 
-```html
+~~~ html
 <txp:if_search_results max="500">
     <p>These articles match your search request:</p>
 <txp:else />
     <p>Seems like you are looking for a very common search term. Try using a more specific search phrase.</p>
 </txp:if_search_results>
-```
+~~~
 
 Advises the visitor to search for something more specific in the case where their search term generated an excessive amount of hits.
 

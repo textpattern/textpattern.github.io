@@ -20,9 +20,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:category2 />
-```
+~~~
 
 The **category2** tag can be used as either a __single__ tag or __container__ tag. It will display information of the category as defined by **Category 2** of the article being displayed. When used as a containing tag, it will turn the contents into a link to that category. Otherwise, it will return plain text.
 
@@ -64,41 +64,41 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Category name in plain text
 
-```html
+~~~ html
 <p>
     <txp:category2 />
 </p>
-```
+~~~
 
 ### Example 2: Hyperlinked category title
 
-```html
+~~~ html
 <p>
     <txp:category2 link="1" title="1" />
 </p>
-```
+~~~
 
 If **category2** is 'Specific stuff', this tag will display the words 'Specific stuff' as a hyperlink to a list of articles in the same category.
 
 ### Example 3: Container example
 
-```html
+~~~ html
 <p>
     <txp:category2>Other articles in category:
     <txp:category2 title="1" /></txp:category2>
 </p>
-```
+~~~
 
 ### Example 4: Category 1 and 2
 
-```html
+~~~ html
 <p>
     Filed in: <txp:category1 link="1" title="1" />
     <txp:if_article_category number="2">
         and <txp:category2 link="1" title="1" />
     </txp:if_article_category>
 </p>
-```
+~~~
 
 Shows a hyperlinked category 1, and also hyperlinked category 2 but only if it is used.
 

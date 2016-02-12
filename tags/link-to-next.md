@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:link_to_next>
-```
+~~~
 
 The **link_to_next** tag can be used as a __single__ tag or a __container__ tag to return the permanent URL of the next article by posting date.
 
@@ -38,21 +38,21 @@ Default: `0`.
 
 ### Example 1: Link to next article using the article title
 
-```html
+~~~ html
 <txp:link_to_next>
     <txp:next_title />
 </txp:link_to_next>
-```
+~~~
 
 Other tags used: [next_title](next-title).
 
 ### Example 2: Link to next article using static text
 
-```html
+~~~ html
 <txp:link_to_next showalways="1">
     Next
 </txp:link_to_next>
-```
+~~~
 
 This will always display the text 'Next', even when there is no next article.
 
@@ -65,10 +65,10 @@ The container tag returns only a very basic link, which doesn't allow for custom
 
 For example, to give the link an HTML `title` attribute of the next article's title, and also apply a `class` to it:
 
-```html
+~~~ html
 <a class="link--next" href="<txp:link_to_next />" title="<txp:next_title />">
     Next article →
 </a>
-```
+~~~
 
 Other tags used: [next_title](next-title).

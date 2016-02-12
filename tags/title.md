@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:title />
-```
+~~~
 
 The **title** tag is a __single__ tag which is used to return the title of the article being displayed. It is usually used in an 'article' type form.
 
@@ -36,7 +36,7 @@ Default: as set in the [Preferences administration panel](../administration/pref
 
 ### Example 1: Display an article title
 
-```html
+~~~ html
 <h1>
     <txp:title />
 </h1>
@@ -44,7 +44,7 @@ Default: as set in the [Preferences administration panel](../administration/pref
     <txp:author /> at <txp:posted />
 </p>
 <txp:body />
-```
+~~~
 
 Shows the current article title as the page heading, a few other pieces of information such as the article's author and posted date, then the article body itself.
 
@@ -52,11 +52,11 @@ Other tags used: [author](author), [posted](posted), [body](body).
 
 ### Example 2: Display a hyperlinked title
 
-```html
+~~~ html
 <txp:permlink>
     <txp:title />
 </txp:permlink>
-```
+~~~
 
 Wraps a permanent link to the current article around its title.
 

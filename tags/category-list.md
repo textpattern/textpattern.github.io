@@ -21,9 +21,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:category_list />
-```
+~~~
 
 The **category_list** tag can be used as either a __single__ tag or __container__ tag which is used to produce a list of linked categories.
 
@@ -105,25 +105,25 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Labelled category list
 
-```html
+~~~ html
 <txp:category_list label="Categories" wraptag="p" break="br" />
-```
+~~~
 
 ### Example 2: As an unordered list
 
-```html
+~~~ html
 <txp:category_list break="li" wraptag="ul" />
-```
+~~~
 
 ### Example 3: Set active class using the container tag
 
-```html
+~~~ html
 <txp:category_list wraptag="ul" break="">
     <li<txp:if_category name="<txp:category />"> class="active"</txp:if_category>>
         <txp:category title="1" link="1" />
     </li>
 </txp:category_list>
-```
+~~~
 
 This code will add `class="active"` to the `<li>` element around the current viewed category in the list, allowing your to style it with CSS as desired.
 

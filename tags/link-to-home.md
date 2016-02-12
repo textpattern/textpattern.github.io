@@ -17,17 +17,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:link_to_home>
-```
+~~~
 
 The **link_to_home** tag is primarily a __container__ tag that returns a link to the site's home page. It will apply a hyperlink to whatever it wraps.
 
 The tag can, however, be used as a __single__ tag to generate a raw base URL of the site:
 
-```html
+~~~ html
 <txp:link_to_home />
-```
+~~~
 
 In this mode it operates identically to [site_url](site-url).
 
@@ -47,10 +47,10 @@ Default: unset.
 
 ### Example 1: Home page link with site's name
 
-```html
+~~~ html
 <txp:link_to_home>
     <txp:site_name />
 </txp:link_to_home>
-```
+~~~
 
 Other tags used: [site_name](site-name).

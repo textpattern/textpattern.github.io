@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:image_display />
-```
+~~~
 
 The **image_display** tag is a __single__ tag that is intended to be used in tandem with [image_index](image-index).
 
@@ -35,8 +35,8 @@ This tag has no attributes.
 
 ### Example 1: Display a single image as chosen by image_index
 
-```html
+~~~ html
 <txp:image_display />
-```
+~~~
 
 See the [image_index](image-index) tag documentation for details on how to populate this tag with content.

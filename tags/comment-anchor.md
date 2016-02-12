@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comment_anchor />
-```
+~~~
 
 The **comment_anchor** tag is a __single__ tag which is used to produce an empty anchor tag with an id attribute reflecting the comment ID. Used in the form that renders your comments (the default form is named 'comments').
 
@@ -32,15 +32,15 @@ This tag has no attributes.
 
 ### Example 1: Generate current comment anchor
 
-```html
+~~~ html
 <txp:comment_anchor />
 <txp:comment_message />
-```
+~~~
 
 When the comment number is `000005` you will see:
 
-```html
+~~~ html
 <a id="c000005"></a>
-```
+~~~
 
 Other tags used: [comment_message](comment-message).

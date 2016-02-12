@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:image_index />
-```
+~~~
 
 The **image_index** tag is a __single__ tag that is intended to be used in tandem with [image_display](image-display). It renders thumbnails of all images contained in an image category. This category can be specified as an attribute to the tag and defaults to the current site category as given in the page's URL.
 
@@ -86,10 +86,10 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Create a list of images in a category
 
-```html
+~~~ html
 <txp:image_index category="personal" wraptag="ol" break="li" />
 <txp:image_display />
-```
+~~~
 
 Shows the thumbnail images from the category 'personal'.
 

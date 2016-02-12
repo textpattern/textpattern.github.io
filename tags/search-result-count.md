@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:search_result_count />
-```
+~~~
 
 The **search_result_count** tag is a __single__ tag that returns the number of articles returned by an article tag. Use [if_search](if-search) to count search results or use in regular page after the [article](article) tag. If you need the results' count __before__ the list of results, use the article tag in conjunction with `pgonly="1"` (see example 3).
 
@@ -38,12 +38,12 @@ Default: `articles found`.
 
 ### Example 1: Display a number of matches
 
-```html
+~~~ html
 <txp:if_search>
     <txp:article />
     <txp:search_result_count />
 </txp:if_search>
-```
+~~~
 
 If the visitor is searching for articles, it will show the number of articles that matched the search term (e.g. 5) as follows: `5 articles found`.
 
@@ -51,11 +51,11 @@ Other tags used: [article](article), [if_search](if-search).
 
 ### Example 2: Number of matches with custom text
 
-```html
+~~~ html
 <txp:if_search>
     <txp:search_result_count text="hits" />
 </txp:if_search />
-```
+~~~
 
 Displays the number of articles returned (e.g. 5) as follows: `5 hits`.
 
@@ -63,13 +63,13 @@ Other tags used: [if_search](if-search).
 
 ### Example 3: Search result count above results
 
-```html
+~~~ html
 <txp:if_search>
     <txp:article pgonly="1" limit="20" />
     <txp:search_result_count text="hits" />
     <txp:article limit="20" />
 </txp:if_search />
-```
+~~~
 
 Displays the number of articles returned (e.g. 5) as follows: `5 hits` - then displays results as an article listing.
 

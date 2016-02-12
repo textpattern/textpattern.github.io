@@ -18,17 +18,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_plugin>
-```
+~~~
 
 The **if_plugin** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_plugin>
     ...conditional statement...
 </txp:if_plugin>
-```
+~~~
 
 The tag will execute the contained statements if the name attribute matches a currently installed and enabled plugin, and the current version number is equal to or greater than the `version` attribute assigned (if used).
 
@@ -46,11 +46,11 @@ Default: unset.
 
 ### Example 1: Check plugin exists before using a tag
 
-```html
+~~~ html
 <txp:if_plugin name="zem_plugin_lang" version="4">
     <txp:zem_contact to="dest@example.com" />
 </txp:if_plugin>
-```
+~~~
 
 Applies the tag `<txp:zem_contact />` if the 'zem_contact_lang' plugin is installed, activated, and the version number is equal to or greater than 4.
 

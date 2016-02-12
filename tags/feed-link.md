@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:feed_link>
-```
+~~~
 
 The **feed_link** tag can be used as either a __single__ or __container__ tag and is used to output a link to the site's 'articles' RSS feed. When used as a container tag, it will turn the contents into a link to the feed, otherwise the value of `label` attribute will be used as link text. Should be used in a Textpattern @@Page template@@.
 
@@ -72,23 +72,23 @@ Note: `wraptag` is applicable only when using `format` of `a`.
 
 ### Example 1: Display an RSS feed link for specific section and category
 
-```html
+~~~ html
 <txp:feed_link flavor="rss" section="about" category="general" label="XML" wraptag="p" />
-```
+~~~
 
 ### Example 2: Container example
 
-```html
+~~~ html
 <txp:feed_link wraptag="p">
     <img src="/path/to/rss-icon.png" alt="RSS">
 </txp:feed_link>
-```
+~~~
 
 ### Example 3: Site wide generic RSS feed
 
-```html
+~~~ html
 <txp:feed_link section="" category="" />
-```
+~~~
 
 Creates a link to the site's feed for articles in all sections and categories. If you omit the `section` and `category` attributes, the feed will default to the current section/category.
 
@@ -96,7 +96,7 @@ Creates a link to the site's feed for articles in all sections and categories. I
 
 If you happen to use the 'rss' glyph in the social media set of [Symbolset](http://symbolset.com), you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first three list items show below. For the RSS glyph you need to put the selectors in the `<li>` since you can't put them in the `<a>`, as the last list item shows:
 
-```html
+~~~ html
 <ul class="socbar">
     <li>
         <a href"https://twitter.com/xxx" class="ss-icon twit">twitter</a>
@@ -111,7 +111,7 @@ If you happen to use the 'rss' glyph in the social media set of [Symbolset](http
         <txp:feed_link flavor="rss" section="articles" category="" label="rss" />
     </li>
 </ul>
-```
+~~~
 
 If you're using Symbolset, then you'll know that the `label="` attribute value in the last list item above **has** to be `rss` for the glyph to work. If you try and put the two Symbolset `class` attribute values in the **feed_link** tag using its `class` attribute, it won't work, unfortunately. But putting them in the `<li>` element, like shown above, does work.
 
@@ -119,7 +119,7 @@ There is no `atom` trigger word in Symbolset! So while you can use `flavor="atom
 
 Then the CSS must be like follows to target both instances of Symbolset glyph use:
 
-```css
+~~~ css
 /** Common rules **/
 a.ss-icon,
 li.ss-icon a {
@@ -134,7 +134,7 @@ li.ss-icon a {
 li.email a:hover {
     /** design as you want **/
 }
-```
+~~~
 
 See the [email](email) tag for a similar solution for Symbolset's 'email' glyph.
 

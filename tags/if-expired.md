@@ -19,17 +19,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_expired>
-```
+~~~
 
 The **if_expired** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_expired>
     ...conditional statement...
 </txp:if_expired>
-```
+~~~
 
 The tag will execute the contained statements, if a particular article is expired. Should be used in an 'article' type form.
 
@@ -41,7 +41,7 @@ This tag has no attributes.
 
 ### Example 1: Show when article has (or will) expire
 
-```html
+~~~ html
 <txp:if_expired>
     This article is already expired. It expired <txp:expires />.
 <txp:else />
@@ -51,7 +51,7 @@ This tag has no attributes.
         This page doesn't expire.
     </txp:if_expires>
 </txp:if_expired>
-```
+~~~
 
 Other tags used: [else](else), [expires](expires), [if_expires](if_expires).
 

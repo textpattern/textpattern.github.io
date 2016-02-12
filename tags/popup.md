@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:popup />
-```
+~~~
 
 The **popup** tag is a __single__ tag. Textpattern will replace this tag with a popup selector for browsing by section or category.
 
@@ -57,15 +57,15 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Browse by category popup selector
 
-```html
+~~~ html
 <txp:popup type="c" wraptag="p" />
-```
+~~~
 
 ### Example 2: Popup selector with custom label
 
-```html
+~~~ html
 <txp:popup label="Browse this site" type="c" wraptag="p" />
-```
+~~~
 
 ## Genealogy
 

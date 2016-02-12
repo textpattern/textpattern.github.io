@@ -19,17 +19,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_custom_field>
-```
+~~~
 
 The **if_custom_field** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_custom_field>
     ...conditional statement...
 </txp:if_custom_field>
-```
+~~~
 
 The tag will execute the contained statements if one or more custom fields for a given article have content. The contents of a custom field can be displayed with the [custom_field](custom-field) tag.
 
@@ -55,11 +55,11 @@ The custom field content you want to check for a match.
 
 ### Example 1: Display contents of custom fields
 
-```html
+~~~ html
 <txp:if_custom_field name="subtitle">
     <txp:custom_field name="subtitle" />
 </txp:if_custom_field>
-```
+~~~
 
 Checks if a custom field has any content (at all) and display it.
 
@@ -67,7 +67,7 @@ Why might you do it? Say, you are publishing book reviews on your site and you u
 
 The whole set of custom fields could look like this:
 
-```html
+~~~ html
 <h4>
     <txp:custom_field name="author" />:
     <txp:custom_field name="title" />
@@ -83,22 +83,22 @@ The whole set of custom fields could look like this:
     in
     <txp:custom_field name="year" />
 </p>
-```
+~~~
 
 For a **book that has a subtitle*, this may be seen:
 
-```html
+~~~ html
 <h4>Stephen Covey: The Seven Habits of Highly Effective People</h4>
 <p>Powerful lessons in personal change</p>
 <p>Published by Simon &amp; Schuster in 2002.</p>
-```
+~~~
 
 For a **book without a subtitle*, this might be shown:
 
-```html
+~~~ html
 <h4>J.R.R. Tolkien: The Lord of the Rings</h4>
 <p>Published by HarperCollins in 2004.</p>
-```
+~~~
 
 Other tags used: [custom_field](custom-field).
 
@@ -106,7 +106,7 @@ Other tags used: [custom_field](custom-field).
 
 A mood indicator:
 
-```html
+~~~ html
 <txp:if_custom_field name="mood" value="happy">
     <img src="happy-face.png" alt="Happy">
 </txp:if_custom_field>
@@ -114,7 +114,7 @@ A mood indicator:
 <txp:if_custom_field name="mood" value="sad">
     <img src="sad-face.png" alt="Sad">
 </txp:if_custom_field>
-```
+~~~
 
 Checks the content of the custom field named `mood` to see if it matches the text `happy` or `sad`. Depending which one it matches determines which of the emoticon images is displayed.
 
@@ -122,7 +122,7 @@ Why might you do it? If you define a custom field `mood`, you can enter a word t
 
 ### Example 3: Use the tag with else
 
-```html
+~~~ html
 <txp:if_custom_field name="website">
     <p>
         <txp:custom_field name="website" />
@@ -130,7 +130,7 @@ Why might you do it? If you define a custom field `mood`, you can enter a word t
 <txp:else />
     <p>Unfortunately, this band hasn't got a website.</p>
 </txp:if_custom_field>
-```
+~~~
 
 If the custom field named 'website' has some content, display it, otherwise display a standard message.
 
@@ -140,13 +140,13 @@ Other tags used: [custom_field](custom-field), [else](else).
 
 ### Example 4: Display a conditional statement based on a comma separated value
 
-```html
+~~~ html
 <txp:if_custom_field name="animals" separator="," match="any" value="monkeys">
     <p>The monkeys are eating bananas.</p>
 <txp:else />
     <p>The bears ate all the monkeys. How sad.</p>
 </txp:if_custom_field>
-```
+~~~
 
 Checks the content of the custom field named `animals` which has a comma separated list of animals. It checks if it contains the text `monkeys`, and displays a conditional statement if it does.
 

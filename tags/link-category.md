@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:link_category />
-```
+~~~
 
 The **link-category** tag is a __single__ tag which returns the link category as text. This tag is used in a Textpattern 'link' type @@Form template@@ or inside the [linklist](linklist) container tag to return information about the current link in a list of links.
 
@@ -54,10 +54,10 @@ Default: unset.
 
 ### Example 1: Display a link with class attribute
 
-```html
+~~~ html
 <a href="<txp:link_url />">
     <txp:link_name escape="html" />
 </a> | <txp:link_category title="1" />
-```
+~~~
 
 Other tags used: [link_url](link-url), [link_name](link_name).

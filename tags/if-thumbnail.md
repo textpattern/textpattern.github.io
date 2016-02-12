@@ -19,17 +19,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_thumbnail>
-```
+~~~
 
 The **if_thumbnail** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_thumbnail>
     ...conditional statement...
 </txp:if_thumbnail>
-```
+~~~
 
 The tag will execute the contained statements **if** the current image (from an [images](images) tag) has a thumbnail assigned to it. Must always be used in an image context.
 
@@ -41,7 +41,7 @@ This tag has no attributes.
 
 ### Example 1: Only show a thumbnail if one exists
 
-```html
+~~~ html
 <txp:images author="neo" wraptag="figure" class="author-gallery">
     <txp:if_thumbnail>
         <txp:thumbnail />
@@ -50,7 +50,7 @@ This tag has no attributes.
         <p>No thumbnail</p>
     </txp:if_thumbnail>
 </txp:images>
-```
+~~~
 
 For each image uploaded by author 'neo', display its thumbnail if it has one, or the text 'No thumbnail' if it doesn't. Add a caption beneath the thumbnail using [image_info](image-info).
 

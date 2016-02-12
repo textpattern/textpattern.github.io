@@ -17,17 +17,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_individual_article>
-```
+~~~
 
 The **if_individual_article** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_individual_article>
     ...conditional statement...
 </txp:if_individual_article>
-```
+~~~
 
 The tag will execute the contained statements if an individual article is being displayed (i.e. not an article list).
 
@@ -42,7 +42,7 @@ This tag has no attributes.
 
 ### Example 1: Select next-prev or older-newer navigation
 
-```html
+~~~ html
 <txp:article />
 
 <txp:if_individual_article>
@@ -66,7 +66,7 @@ This tag has no attributes.
         </txp:newer>
     </p>
 </txp:if_article_list>
-```
+~~~
 
 Shows links to the next/previous article if the current page is an article, or shows links to the next/previous page of results if the current page is an article list.
 
@@ -74,7 +74,7 @@ Other tags used: [link_to_prev](link-to-prev), [link_to_next](link-to-next), [ne
 
 ### Example 2: Use the tag with else
 
-```html
+~~~ html
 <txp:if_individual_article>
     <p>
         <txp:site_name />
@@ -84,7 +84,7 @@ Other tags used: [link_to_prev](link-to-prev), [link_to_next](link-to-next), [ne
         <img src="http://example.com/logo.png" alt="Logo">
     </p>
 </txp:if_individual_article>
-```
+~~~
 
 Displays the site's name when showing a single article, and a logo when **not** displaying a single article.
 

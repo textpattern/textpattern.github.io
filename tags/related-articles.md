@@ -19,19 +19,19 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:related_articles>
-```
+~~~
 
 The **related_articles** tag can be used as either a __single__ tag or a __container__ tag, and is used to produce a list of related (by category) articles.
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 
-```html
+~~~ html
 <txp:related_articles>
     ...contained statements...
 </txp:related_articles>
-```
+~~~
 
 This is equivalent to putting the contained statements into a form named 'my_form' and using `<txp:related_articles form="my_form" />`.
 
@@ -108,19 +108,19 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Labelled list of related articles
 
-```html
+~~~ html
 <txp:related_articles label="Related to this:" limit="5" />
-```
+~~~
 
 ### Example 2: Related articles as an unordered list
 
-```html
+~~~ html
 <txp:related_articles label="Related" limit="10" break="li" wraptag="ul" />
-```
+~~~
 
 ### Example 3: Used as a container tag
 
-```html
+~~~ html
 <txp:related_articles label="Related" `labeltag="h3"` limit="10" break="li" wraptag="ul">
     <txp:permlink>
         <txp:title />
@@ -128,7 +128,7 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
     by
     <txp:author />
 </txp:related_articles>
-```
+~~~
 
 Other tags used: [permlink](permlink), [title](title), [author](author).
 

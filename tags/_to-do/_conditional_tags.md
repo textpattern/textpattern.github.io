@@ -19,17 +19,17 @@ h4(#display_different_navigational_links_on_individual_article_and_article_list_
    &lt;p&gt;&lt;txp:older&gt;Older articles&lt;/txp:older&gt;&lt;/p&gt;
 &lt;/txp:if_article_list&gt;
 </pre>
-```
+~~~
 
 h4(#use_special_formatting_for_all_the_articles_by_a_specific_author). Use special formatting for all the articles by a specific author
 
-```html
+~~~ html
 <txp:if_article_author name="the-wizard">
    <txp:article form="wizard-form" />
 <txp:else />
    <txp:article />
 </txp:if_article_author>
-```
+~~~
 
 
 h3(sectionedit2#nesting). Nesting
@@ -48,7 +48,7 @@ I'm also looking at the category named &quot;oranges&quot;.
 
 &lt;/txp:if_section&gt;
 </pre>
-```
+~~~
 
 <pre class="code">
 &lt;txp:if_custom_field name=&quot;apples&quot;&gt;
@@ -59,11 +59,11 @@ apples!
 oranges!
 &lt;/txp:if_custom_field&gt;
 </pre>
-```
+~~~
 
 These will **not** work:
 
-```html
+~~~ html
 <txp:if_custom_field name="apples">
 apples!
 <txp:else />
@@ -71,7 +71,7 @@ apples!
       oranges!
     </txp:if_custom_field>
 </txp:if_custom_field>
-```
+~~~
 
 
 h3(sectionedit3#conditional_article_tags). Conditional Article Tags

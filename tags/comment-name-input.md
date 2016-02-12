@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comment_name_input />
-```
+~~~
 
 The **comment_name_input** tag is a __single__ tag which is used to display a text entry field to accept the commenter's name. Used in the comment input form template.
 
@@ -37,7 +37,7 @@ Default: `25`.
 
 ### Example 1: Comment form
 
-```html
+~~~ html
 <p>
     Name (required)<br>
     <txp:comment_name_input />
@@ -62,7 +62,7 @@ Default: `25`.
     <txp:comment_preview />
     <txp:comment_submit />
 </p>
-```
+~~~
 
 Other tags used: [comment_email_input](comment-email-input), [comments_help](comments-help), [comment_message_input](comment-message-input), [comment_preview](comment-preview), [comment_remember](comment-remember), [comment_submit](comment-submit), [comment_web_input](comment-web-input).
 

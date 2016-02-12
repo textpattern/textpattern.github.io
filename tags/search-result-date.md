@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:search_result_date />
-```
+~~~
 
 The **search_result_date** tag is a __single__ tag. This tag will provide the article posted date as returned by the search function.
 
@@ -34,7 +34,7 @@ Default: the 'Archive date format' set in preferences.
 
 ### Example 1: Displays the posting date of an article
 
-```html
+~~~ html
 <h3>
     <txp:permlink>
         <txp:title />
@@ -43,7 +43,7 @@ Default: the 'Archive date format' set in preferences.
 <p>
     <txp:search_result_date /> | <txp:posted />
 </p>
-```
+~~~
 
 Used in a search results form, this offers a search result entry comprising a hyperlinked article title, and the date that article was posted.
 

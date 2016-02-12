@@ -18,17 +18,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_article_author>
-```
+~~~
 
 The **if_article_author** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_article_author>
     ...conditional statement...
 </txp:if_article_author>
-```
+~~~
 
 The tag will execute the contained statement if the author name associated with a particular article matches the value of the `name` attribute. Should be used in an 'article' type form.
 
@@ -47,13 +47,13 @@ Default: unset (i.e.,any author at all).
 
 ### Example 1: Display some text dependent on an article's author
 
-```html
+~~~ html
 <p>
     <txp:author />
     <txp:if_article_author name="admin">
         (Administrator)
     </txp:if_article_author>
 </p>
-```
+~~~
 
 Displays article author name, then displays the text "(Administrator)" if the article was written (posted) by the author `admin`.

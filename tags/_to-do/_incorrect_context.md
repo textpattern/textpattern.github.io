@@ -4,16 +4,16 @@ Certain Textpattern tags are only intended for use in particular places. If you 
 
 Article form tags only work in an **article context**. They refer to one single article so they can only be used in a context that identifies one particular article. Specifically, they may be used on an individual article page template, or in an article form that has been displayed using a
 
-```html
+~~~ html
 <txp:article ... />
-```
+~~~
 
 
 or
 
-```html
+~~~ html
 <txp:article_custom ... />
-```
+~~~
 
 
 tag.

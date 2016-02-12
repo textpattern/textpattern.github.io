@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:link_author />
-```
+~~~
 
 The **link_author** tag is a __single__ tag that Textpattern will replace with the author's name associated with the current link in a [linklist](linklist). It can **only** be used inside `<txp:linklist />`.
 

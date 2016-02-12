@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:link_name />
-```
+~~~
 
 The **link_name** tag is a __single__ tag which returns the name of the link as assigned on the links pane as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to display information about the current link.
 
@@ -37,11 +37,11 @@ Default: `html`;
 
 ### Example 1: Display a link with class attribute
 
-```html
+~~~ html
 <a class="awesome-links" href="<txp:link_url />">
     <txp:link_name />
 </a>
-```
+~~~
 
 Other tags used: [link_url](link-url).
 

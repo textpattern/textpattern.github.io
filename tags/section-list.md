@@ -20,17 +20,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:section_list />
-```
+~~~
 
 The **section_list** tag is a __single__ or __container__ tag which is used to produce a list of linked sections. When used as a container tag, it is used as an opening and closing pair, like this:
 
-```html
+~~~ html
 <txp:section_list>
     ...contained statements...
 </txp:section_list>
-```
+~~~
 
 ## Attributes
 
@@ -103,27 +103,27 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display a linked section list
 
-```html
+~~~ html
 <txp:section_list label="Sections" wraptag="p" break="br" />
-```
+~~~
 
 Adds the label 'Sections' and wraps the output in a paragraph with each section on its own line.
 
 ### Example 2: Display a styled section list
 
-```html
+~~~ html
 <txp:section_list wraptag="ul" break="li" />
-```
+~~~
 
 ### Example 3: Set active class using the container tag
 
-```html
+~~~ html
 <txp:section_list wraptag="ul" break="">
     <li<txp:if_section name='<txp:section />'> class="active"></txp:if_section>>
         <txp:section title="1" link="1" />
     </li>
 </txp:section_list>
-```
+~~~
 
 This code will add `class="active"` to the `<li>` element around the currently viewed section in the list.
 

@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:author_email />
-```
+~~~
 
 The **author_email** tag is a __single__ tag that is used to return the email address of the author of the currently displayed article.
 
@@ -42,17 +42,17 @@ Default: `0`.
 
 ### Example 1: Display email address (but don't link)
 
-```html
+~~~ html
 <p>
     <txp:author_email />
 </p>
-```
+~~~
 
 ### Example 2: Create a mailto: link
 
-```html
+~~~ html
 <txp:author_email link="1" />
-```
+~~~
 
 ## Genealogy
 

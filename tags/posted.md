@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:posted />
-```
+~~~
 
 The **posted** tag is a __single__ tag which is used to return the publish date of the article being displayed. The format is determined by the settings specified in the 'Date format' or 'Archive date format' fields in the [Preferences administration panel](../administration/preferences-panel).
 
@@ -54,37 +54,37 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: 'since' format date setting
 
-```html
+~~~ html
 <p>
     Posted:
     <txp:posted format="since" />
 </p>
-```
+~~~
 
 This would result in the following HTML output:
 
-```html
+~~~ html
 <p>Posted: 29 days ago</p>
-```
+~~~
 
 ### Example 2: Custom format date setting
 
-```html
+~~~ html
 <p>
     Posted:
     <txp:posted format="%b %d, %Y" />
 </p>
-```
+~~~
 
 This would result in the following HTML output:
 
-```html
+~~~ html
 <p>Posted: Feb 03, 2014</p>
-```
+~~~
 
 ### Example 3: Extended custom format date setting
 
-```html
+~~~ html
 <p>
     Posted:
     <time datetime="<txp:posted format="iso8601" />">
@@ -93,11 +93,11 @@ This would result in the following HTML output:
         <txp:posted class="time-year" wraptag="span" format="%Y" />
     </time>
 </p>
-```
+~~~
 
 This would result in the following HTML output:
 
-```html
+~~~ html
 <p>
     Posted:
     <time datetime="2014-02-03T10:43:39Z">
@@ -106,7 +106,7 @@ This would result in the following HTML output:
         <span class="time-year">2014</span>
     </time>
 </p>
-```
+~~~
 
 This provides styling hooks for each date part.
 

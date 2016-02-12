@@ -18,17 +18,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_article_category>
-```
+~~~
 
 The **if_article_category** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_article_category>
     ...conditional statement...
 </txp:if_article_category>
-```
+~~~
 
 It will execute the contained statement if the category name associated with a particular article (Category1 or Category2) matches the values of the name and number attributes. Should be used in an 'article' type Textpattern [Form@@ template.
 
@@ -48,13 +48,13 @@ Default: unset, causing both categories to be matched against the specified name
 
 ### Example 1: Display matched category
 
-```html
+~~~ html
 <txp:if_article_category name="prose" number="1">
     <p>
         <txp:category1 />
     </p>
 </txp:if_article_category>
-```
+~~~
 
 If the Category1 assigned to the article is 'Prose', the category is displayed. Note that the category **name** is used in this tag, which may be different to its displayed category **Title**. When categories are created, Textpattern converts them to lowercase and replaces spaces with hyphens. So, for example, 'My Category' has a name `my-category`.
 
@@ -62,7 +62,7 @@ Other tags used: [category1](category1).
 
 ### Example 2: Using the tag with else
 
-```html
+~~~ html
 <txp:if_article_category name="algebra" number="1">
     <p>Fun with algebra</p>
 <txp:else />
@@ -70,7 +70,7 @@ Other tags used: [category1](category1).
         <a href="/">Home</a>
     </p>
 </txp:if_article_category>
-```
+~~~
 
 Displays the welcome text if the category and category number match the given values, or shows a default link otherwise.
 
@@ -80,7 +80,7 @@ Other tags used: [else](else).
 
 In an article form, put the following set of conditionals for each category you want to look for:
 
-```html
+~~~ html
 <txp:if_article_category name="yourcategory" number="1">
     <txp:article_custom category="yourcategory" sort="Posted asc" wraptag="ul" break="li">
         <txp:permlink>
@@ -88,7 +88,7 @@ In an article form, put the following set of conditionals for each category you 
         </txp:permlink>
     </txp:article_custom>
 </txp:if_article_category>
-```
+~~~
 
 Lists articles of the same category as the current article's Category1.
 

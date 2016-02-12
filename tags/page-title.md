@@ -17,9 +17,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:page_title />
-```
+~~~
 
 The **page_title** tag is a __single__ tag that displays text depending on the context it is used. Its primary purpose is for outputting information suitable for the HTML `<title>` tag.
 

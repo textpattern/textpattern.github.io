@@ -19,7 +19,7 @@ When you show visitors an article, you can opt to make the categories to which i
 
 On your default article page you might see something like this:
 
-```html
+~~~ html
 <txp:if_category>
     <h2>
         <txp:category title="1" />
@@ -35,7 +35,7 @@ On your default article page you might see something like this:
 <txp:else />
     <txp:article wraptag="div" />
 </txp:if_category>
-```
+~~~
 
 Taking this block by block we see that the conditional [if-category"](../if-category) determines if the visitor has clicked a category hyperlink. If they have, we are in the **list** view. If they have not, the [else](../else) portion is executed.
 

@@ -16,35 +16,35 @@ h4(#header_related_tags). Header Related Tags
 
 <ul>
 <li><p>Style Tag (</p>
-```html
+~~~ html
 <@@txp:css_:@@>
-```
+~~~
 
 
 <p>):</p></li>
 <li><p>Page Title (</p>
-```html
+~~~ html
 <@@txp:page_title_:@@>
-```
+~~~
 
 
 <p>):</p></li>
 </ul>
-```
+~~~
 
 h4(#main_content_area_related_tags). Main Content Area Related Tags
 
 <ul>
 <li>Article Related Tags
 <ul>
-<li>```html
+<li>~~~ html
 <@@txp:article_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:article_custom_:@@>
-```
+~~~
 
 </li>
 </ul>
@@ -53,29 +53,29 @@ h4(#main_content_area_related_tags). Main Content Area Related Tags
 <ul>
 <li>Comments Display
 <ul>
-<li>```html
+<li>~~~ html
 <@@txp:comment_name_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:comment_permlink@@>###</@@txp:comment_permlink@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:comment_time_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:comments_count_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:comments_invite_:@@>
-```
+~~~
 
 </li>
 </ul>
@@ -83,178 +83,178 @@ h4(#main_content_area_related_tags). Main Content Area Related Tags
 </ul>
 </li>
 </ul>
-```
+~~~
 
 <ul>
 <li>Comment Input Form
 <ul>
-<li>```html
+<li>~~~ html
 <@@txp:comment_name_input_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:comment_remember_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:comment_email_input_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:comment_web_input_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:comment_message_input_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:comments_help_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:comment_preview_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:comment_submit_:@@>
-```
+~~~
 
 </li>
 </ul>
 </li>
 </ul>
-```
+~~~
 
 h4(#column_related_tags). Column Related Tags
 
 <ul>
 <li>Recent Content Related Tags
 <ul>
-<li>```html
+<li>~~~ html
 <@@txp:recent_articles_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:recent_comments_:@@>
-```
+~~~
 
 </li>
 </ul>
 </li>
 <li>File Download Tags
 <ul>
-<li>```html
+<li>~~~ html
 <@@txp:file_download_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:file_download_list_:@@>
-```
+~~~
 
 </li>
 </ul>
 </li>
 </ul>
-```
+~~~
 
 h4(#navigation_related_tags). Navigation Related Tags
 
 <ul>
 <li>Article Navigation Tags
 <ul>
-<li>```html
+<li>~~~ html
 <@@txp:link_to_previous@@> | <@@txp:link_to_next@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:older@@> | <@@txp:newer@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:prev_title_:@@> | <@@txp:next_title_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:related_articles_:@@>
-```
+~~~
 
 </li>
 </ul>
 </li>
 </ul>
-```
+~~~
 
 <ul>
 <li>Site Navigation Tags
 <ul>
-<li>```html
+<li>~~~ html
 <@@txp:link_to_home@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:popup_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:breadcrumb_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:search_input_:@@>
-```
+~~~
 
 </li>
 </ul>
 </li>
 </ul>
-```
+~~~
 
 h4(#link_related_tags). Link Related Tags
 
 <ul>
 <li>Link Tags
 <ul>
-<li>```html
+<li>~~~ html
 <@@txp:linklist_:@@>
-```
+~~~
 
 </li>
 </ul>
 </li>
 </ul>
-```
+~~~
 
 <ul>
 <li>Feed Tags
 <ul>
-<li>```html
+<li>~~~ html
 <@@txp:feed_link_:@@>
-```
+~~~
 
 </li>
-<li>```html
+<li>~~~ html
 <@@txp:link_feed_link_:@@>
-```
+~~~
 
 </li>
 </ul>
 </li>
 </ul>
-```
+~~~
 

@@ -13,17 +13,17 @@ A self-closed tag is the most basic form of a Texpattern tag. Its structure is s
 
 Any self-closed Textpattern tag has the following syntactic structure:
 
-```html
+~~~ html
 <txp:tagname />
-```
+~~~
 
 The tag is replaced by contents when Textpattern displays a page.
 
 Self-closed tags can usually take attributes. For example, the following [article](article) tag demonstrates using the `form` and `limit` attributes:
 
-```html
+~~~ html
 <txp:article form="formName" limit="15" />
-```
+~~~
 
 Most Textpattern tags are self-closed tags. The other type of tag is the container tag.
 
@@ -31,11 +31,11 @@ Most Textpattern tags are self-closed tags. The other type of tag is the contain
 
 Container tags are composed of both an opening and closing tag element, giving them the syntactic structure of:
 
-```html
+~~~ html
 <txp:tag_name>
     ...content...
 </txp:tag_name>
-```
+~~~
 
 The content that is added between container tags may be either text or other Textpattern tags.
 
@@ -43,7 +43,7 @@ Typical container tags are the **permlink** tag `<txp:permlink></txp:permlink>` 
 
 A link is a good example: you have a text string (or a title tag) around which you want to wrap an HTML anchor element:
 
-```html
+~~~ html
 <txp:permlink>
     <txp:title />
 </txp:permlink>
@@ -51,11 +51,11 @@ A link is a good example: you have a text string (or a title tag) around which y
 <txp:permlink>
     Read more...
 </txp:permlink>
-```
+~~~
 
 The example above would be rendered into something like so:
 
-```html
+~~~ html
 <a href="/articles/this-article-title">This article title</a>
 ...content...
 <a href="/articles/this-article-title">Read more...</a>

@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comment_name />
-```
+~~~
 
 The **comment_name** tag is a __single__ tag which is used to display a link using the commenter's name as text. If an email address is supplied and allowed to be viewed, an email link is created. Otherwise, if a website is entered, the website URL is used. If neither is supplied, the name displays as plain text.
 
@@ -39,7 +39,7 @@ Default: `0`.
 
 ### Example 1: Comments display form
 
-```html
+~~~ html
 <txp:comment_message />
 <p>
     <txp:comment_name />
@@ -48,6 +48,6 @@ Default: `0`.
         <txp:comment_id />
     </txp:comment_permlink>
 </p>
-```
+~~~
 
 Other tags used: [comment_id](comment-id), [comment_message](comment-message), [comment_permlink](comment-permlink), [comment_time](comment_time).

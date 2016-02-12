@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comments_error />
-```
+~~~
 
 The **comments_error** tag is a __single__ tag which is used to produce the current comments error.
 
@@ -46,10 +46,10 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display comments error when an error exists
 
-```html
+~~~ html
 <txp:if_comments_error>
     <txp:comments_error break="li" wraptag="ul" />
 </txp:if_comments_error>
-```
+~~~
 
 Other tags used: [if_comments_error](if-comments-error).

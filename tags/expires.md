@@ -19,9 +19,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:expires />
-```
+~~~
 
 The **expires** tag is a __single__ tag used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive (e.g. events like conferences, meetings and so forth). The tag is defined by expiration date values that are set under the ''Date and time' section of the [Write administration panel](../administration/write-panel).
 
@@ -57,22 +57,22 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Custom format date setting
 
-```html
+~~~ html
 <p>
     Expires:
     <txp:expires format="%b %d, %Y" />
 </p>
-```
+~~~
 
 This would result in the following HTML output:
 
-```html
+~~~ html
 <p<Expires: Feb 03, 2014</p>
-```
+~~~
 
 ### Example 2: Extended custom format date setting
 
-```html
+~~~ html
 <p>
     Expires:
     <time datetime="<txp:posted format="iso8601" />">
@@ -81,11 +81,11 @@ This would result in the following HTML output:
         <txp:posted class="time-year" wraptag="span" format="%Y" />
     </time>
 </p>
-```
+~~~
 
 This would result in the following HTML output:
 
-```html
+~~~ html
 <p>
     Expires:
     <time datetime="2014-02-03T10:43:39Z">
@@ -94,7 +94,7 @@ This would result in the following HTML output:
         <span class="time-year">2014</span>
     </time>
 </p>
-```
+~~~
 
 This provides styling hooks for each date part.
 

@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:search_input />
-```
+~~~
 
 The **search_input** tag is a __single__ tag. This tag will provide a text entry field for search parameters and an optional button to initiate the search.
 
@@ -68,25 +68,25 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Example 1: Display a search input form
 
-```html
+~~~ html
 <txp:search_input label="Search" button="Search" size="20" wraptag="div" />
-```
+~~~
 
 ### Example 2: Elements required for building a customized HTML search form
 
 You can build your own custom search form by specifying `form="form-name"` inside the `<txp:search_input />` tag:
 
-```html
+~~~ html
 <txp:search_input form="form-name" />
-```
+~~~
 
 You would then need to build your Form (i.e. `form-name`), and the absolute minimum Textpattern tags and attributes required would be:
 
-```html
+~~~ html
 <form action="<txp:site_url />">
     <input name="q" type="search" />
 </form>
-```
+~~~
 
 When using a customized form template, Textpattern doesn't automatically wrap the HTML form output with `<form>` tags, thus you need the opening and closing `<form>` tag pair. The `name="q"` attribute and value is **required** to initiate a search query.
 

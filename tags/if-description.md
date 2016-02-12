@@ -19,17 +19,17 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:if_description>
-```
+~~~
 
 The **if_description** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
 
-```html
+~~~ html
 <txp:if_description>
     ...conditional statement...
 </txp:if_description>
-```
+~~~
 
 The tag will execute the contained statement if the current article/section/cateogry's 'Description' field has an entry.
 
@@ -41,7 +41,7 @@ This tag has no attributes.
 
 ### Example 1: Supply meta tag if description exists
 
-```html
+~~~ html
 <head>
     ....
     <txp:if_description>
@@ -51,7 +51,7 @@ This tag has no attributes.
     </txp:if_description>
     ....
 </head>
-```
+~~~
 
 Other tags used: [meta_description](meta-description).
 

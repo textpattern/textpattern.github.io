@@ -18,9 +18,9 @@ On this page:
 
 ## Syntax
 
-```html
+~~~ html
 <txp:comment_time />
-```
+~~~
 
 The **comment_time** tag is a __single__ tag which is used to display the time and date the comment was submitted. Should be used in a Textpattern 'comment' type @@Form template@@.
 
@@ -45,7 +45,7 @@ Default: unset (time format set in the [Preferences administration panel](../adm
 
 ### Example 1: Comments display form
 
-```html
+~~~ html
 <txp:comment_message />
 <p>
     <txp:comment_name />
@@ -54,6 +54,6 @@ Default: unset (time format set in the [Preferences administration panel](../adm
         <txp:comment_id />
     </txp:comment_permlink>
 </p>
-```
+~~~
 
 Other tags used: [comment_id](comment-id), [comment_message](comment-message), [comment_name](comment-name), [comment_permlink](comment-permlink).
