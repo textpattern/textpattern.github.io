@@ -1,6 +1,6 @@
 # Textpattern CMS user documentation
 
-See the [Main Index](index). This is the new user documentation, and it's a work in progress.
+See the [built website](http://docs.textpattern.io). This is the new user documentation, and it's a work in progress.
 
 On this page are guidelines for doc authors:
 

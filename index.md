@@ -11,7 +11,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ## TABLE OF CONTENTS
 
-h3. Source code
+### Source code
 
 * [Textpattern repositories](development/txp-repositories) (zip packages, Github repos, and git commands)
 
