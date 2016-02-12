@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comment web"
+Description: The comment_web tag cis used to display (a link to) the commenter's web address.
 tags:
   - Comment tags
 ---

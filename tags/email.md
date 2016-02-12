@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Email"
+Description: The email tag will show a mailto: email link, according to the attributes set.
 tags:
   - Navigation tags
 ---

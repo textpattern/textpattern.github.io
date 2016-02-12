@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Else"
+Description: The else tag is used within a containing conditional tag when the condition in the surrounding tag is not met.
 tags:
   - Conditional tags
 ---

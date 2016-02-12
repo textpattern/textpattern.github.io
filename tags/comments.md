@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comments"
+Description: The comments tag is used to display the comments associated with a particular article.
 tags:
   - Comment tags
 ---

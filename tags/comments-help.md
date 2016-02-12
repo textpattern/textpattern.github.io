@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comments help"
+Description: The comments_help tag is used to display a markup language (textfilter) help link.
 tags:
   - Comment tags
 ---
@@ -21,7 +22,7 @@ On this page:
 <txp:comments_help />
 ```
 
-The **comments_help** tag is a __single__ tag which is used to display a Textile help link. This tag can be used in a Textpattern page or a Textpattern form.
+The **comments_help** tag is a __single__ tag which is used to display a markup language (textfilter) help link. This tag can be used in a Textpattern page or a Textpattern form.
 
 ## Attributes
 

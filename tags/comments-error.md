@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comments error"
+Description: The comments_error tag is used to produce the current comments error.
 tags:
   - Comment tags
 ---

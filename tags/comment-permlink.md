@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comment permlink"
+Description: The comment_permlink tag is used to return the permanent link of the article comment being displayed.
 tags:
   - Comment tags
 ---

@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Error message"
+Description: The error_message tag will show the error message text for the error status as set by the server.
 tags:
   - Error handling tags
 ---

@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Excerpt"
+Description: The excerpt tag is used to return the excerpt text, if any, associated with the article being displayed.
 tags:
   - Article tags
 ---

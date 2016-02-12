@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comment submit"
+Description: The comment_submit tag is used to display a 'Submit' button.
 tags:
   - Comment tags
 ---
