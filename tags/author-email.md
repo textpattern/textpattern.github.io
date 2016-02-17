@@ -23,7 +23,7 @@ On this page:
 <txp:author_email />
 ~~~
 
-The **author_email** tag is a __single__ tag that is used to return the email address of the author of the currently displayed article.
+The **author_email** tag is a *single* tag that is used to return the email address of the author of the currently displayed article.
 
 ## Attributes
 

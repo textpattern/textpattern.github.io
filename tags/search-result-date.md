@@ -21,7 +21,7 @@ On this page:
 <txp:search_result_date />
 ~~~
 
-The **search_result_date** tag is a __single__ tag. This tag will provide the article posted date as returned by the search function.
+The **search_result_date** tag is a *single* tag. This tag will provide the article posted date as returned by the search function.
 
 ## Attributes
 

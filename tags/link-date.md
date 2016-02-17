@@ -21,7 +21,7 @@ On this page:
 <txp:link_date />
 ~~~
 
-The **link_date** tag is a __single__ tag which returns the date the link was created as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to display information about the current link.
+The **link_date** tag is a *single* tag which returns the date the link was created as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to display information about the current link.
 
 ## Attributes
 

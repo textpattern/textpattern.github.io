@@ -22,7 +22,7 @@ On this page:
 <txp:newer />
 ~~~
 
-The **newer** tag is both a __single__ tag and a __container__ tag. The tag should be used in a page after an article tag.
+The **newer** tag is both a *single* tag and a *container* tag. The tag should be used in a page after an article tag.
 
 Textpattern will replace this tag with a link to the next list of articles in the sort order. The container tags wrap the text or tag assigned to the link. As a single tag it outputs the URL for the next list page.
 

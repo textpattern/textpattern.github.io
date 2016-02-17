@@ -22,7 +22,7 @@ On this page:
 <txp:file_download_description />
 ~~~
 
-The **file_download_description** tag is a __single__ tag which Textpattern will replace with the description of the file to download, as defined when the file was uploaded. Should be used in a Textpattern 'file' type @@Form template@@.
+The **file_download_description** tag is a *single* tag which Textpattern will replace with the description of the file to download, as defined when the file was uploaded. Should be used in a Textpattern 'file' type @@Form template@@.
 
 ## Attributes
 

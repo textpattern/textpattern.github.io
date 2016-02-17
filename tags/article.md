@@ -23,9 +23,9 @@ On this page:
 <txp:article />
 ~~~
 
-The basic **article** tag can be used as either a __single__ tag or __container__ tag and used to output one or more articles depending on the attributes used. Default attributes will be used when nothing specific is assigned.
+The basic **article** tag can be used as either a *single* tag or *container* tag and used to output one or more articles depending on the attributes used. Default attributes will be used when nothing specific is assigned.
 
-It may be used as a __container__ tag, in which case it must be specified as an opening and closing pair of tags, like this:
+It may be used as a *container* tag, in which case it must be specified as an opening and closing pair of tags, like this:
 
 ~~~ html
 <txp:article>

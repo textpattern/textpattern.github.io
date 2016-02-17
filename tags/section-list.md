@@ -24,7 +24,7 @@ On this page:
 <txp:section_list />
 ~~~
 
-The **section_list** tag is a __single__ or __container__ tag which is used to produce a list of linked sections. When used as a container tag, it is used as an opening and closing pair, like this:
+The **section_list** tag is a *single* or *container* tag which is used to produce a list of linked sections. When used as a container tag, it is used as an opening and closing pair, like this:
 
 ~~~ html
 <txp:section_list>
@@ -36,7 +36,7 @@ The **section_list** tag is a __single__ or __container__ tag which is used to p
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `active_class="class name"` (only works in the __single__ tag without the `form` attribute)
+* `active_class="class name"` (only works in the *single* tag without the `form` attribute)
 HTML `class` to apply to the 'active' or current link in a list.
 Default: unset
 * `default_title="text"`

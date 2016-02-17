@@ -23,7 +23,7 @@ On this page:
 <txp:if_first_section>
 ~~~
 
-The **if_first_section** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
+The **if_first_section** tag is a *conditional* tag and always used as an opening and closing pair, like this...
 
 ~~~ html
 <txp:if_first_section>

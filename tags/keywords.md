@@ -5,7 +5,7 @@
 ~~~
 
 
-The **keywords** tag is a __single__ tag that Textpattern will replace with the keywords associated with the article being displayed. The tag can be used in an article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, or within "pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages (templates), either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). For keywords metadata, see "meta_keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag.
+The **keywords** tag is a *single* tag that Textpattern will replace with the keywords associated with the article being displayed. The tag can be used in an article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained, or within "pages":/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages (templates), either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list). For keywords metadata, see "meta_keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag.
 
 ## Attributes
 
@@ -15,7 +15,7 @@ h3(sectionedit2#examples). Examples
 
 h4(#example_1display_keywords_in_context_of_an_article_form). Example 1: Display keywords in context of an article Form
 
-In this example, keywords are used in an article Form along with other article components. The keywords themselves are used like a list of topical “tags”, __e.g._, like you would use for more granular searching. The keywords would be presented (via CSS) horizontally (ideally) above the article's excerpt.
+In this example, keywords are used in an article Form along with other article components. The keywords themselves are used like a list of topical “tags”, *e.g._, like you would use for more granular searching. The keywords would be presented (via CSS) horizontally (ideally) above the article's excerpt.
 
 ~~~ html
 <h3><txp:permlink><txp:title /></txp:permlink></h3>
@@ -29,7 +29,7 @@ Other tags used: [permlink](permlink), [title](title), [posted](posted), [excerp
 
 ### Example 2: Use keywords to fill &lt;code&gt;meta&lt;/code&gt; element values
 
-In this example, keywords are used directly in a __Page__ (template) to insert `content=""` values in a `meta` element.
+In this example, keywords are used directly in a *Page* (template) to insert `content=""` values in a `meta` element.
 
 ~~~ html
 <meta name="keywords" content="<txp:keywords />" />

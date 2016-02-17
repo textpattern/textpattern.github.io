@@ -24,7 +24,7 @@ On this page:
 <txp:category2 />
 ~~~
 
-The **category2** tag can be used as either a __single__ tag or __container__ tag. It will display information of the category as defined by **Category 2** of the article being displayed. When used as a containing tag, it will turn the contents into a link to that category. Otherwise, it will return plain text.
+The **category2** tag can be used as either a *single* tag or *container* tag. It will display information of the category as defined by **Category 2** of the article being displayed. When used as a containing tag, it will turn the contents into a link to that category. Otherwise, it will return plain text.
 
 This tag may be used within either an article form, or in a page, wrapped in an [if_individual_article](if-individual-article) conditional tag.
 
@@ -33,7 +33,7 @@ This tag may be used within either an article form, or in a page, wrapped in an 
 Tag will accept the following attributes (**case-sensitive**):
 
 * `link="boolean"`
-Whether to link to articles from the same category. Works only in the __single__ tag.
+Whether to link to articles from the same category. Works only in the *single* tag.
 Values: `0` (no) or `1` (yes).
 Default: `0`.
 * `section="section name"`

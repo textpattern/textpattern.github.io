@@ -22,7 +22,7 @@ On this page:
 <txp:image_url />
 ~~~
 
-The **image_url** tag is a __single__ or a __container__ tag that Textpattern will replace with the URL of the current image in an [images](images) list, or the specific image if given an `id` or `name`.
+The **image_url** tag is a *single* or a *container* tag that Textpattern will replace with the URL of the current image in an [images](images) list, or the specific image if given an `id` or `name`.
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 

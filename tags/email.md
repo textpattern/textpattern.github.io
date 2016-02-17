@@ -23,7 +23,7 @@ On this page:
 <txp:email />
 ~~~
 
-The **email** tag is both a __single__ tag and a __container__ tag. Textpattern will replace it with a `mailto:` email link, according to the attributes set.
+The **email** tag is both a *single* tag and a *container* tag. Textpattern will replace it with a `mailto:` email link, according to the attributes set.
 
 ## Attributes
 

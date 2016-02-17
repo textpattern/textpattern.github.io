@@ -22,7 +22,7 @@ On this page:
 <txp:image_info />
 ~~~
 
-The **image_info** tag is a __single__ tag that Textpattern will replace with the relevant image data from the current image. Should usually be used in an 'image' type form, although it may be used on its own providing you specify an **id** or **name**.
+The **image_info** tag is a *single* tag that Textpattern will replace with the relevant image data from the current image. Should usually be used in an 'image' type form, although it may be used on its own providing you specify an **id** or **name**.
 
 ## Attributes
 

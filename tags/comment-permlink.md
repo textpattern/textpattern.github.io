@@ -22,7 +22,7 @@ On this page:
 <txp:comment_permlink>
 ~~~
 
-The **comment_permlink** tag is a __container__ tag which is used to return the permanent link of the article comment being displayed. The container tag wraps the text assigned to the link. Should be used in a Textpattern 'comment' type @@Form template@@.
+The **comment_permlink** tag is a *container* tag which is used to return the permanent link of the article comment being displayed. The container tag wraps the text assigned to the link. Should be used in a Textpattern 'comment' type @@Form template@@.
 
 ## Attributes
 

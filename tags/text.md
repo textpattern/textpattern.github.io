@@ -22,7 +22,7 @@ On this page:
 <txp:text />
 ~~~
 
-The **text** tag is a __single__ tag which is primarily used to return localized language strings from the `txp_lang` database table.
+The **text** tag is a *single* tag which is primarily used to return localized language strings from the `txp_lang` database table.
 
 Note: only language strings designated with a type of `common` or `public` are available to use. All other language string types are reserved for use within the Textpattern system itself.
 {: .alert-block .information}

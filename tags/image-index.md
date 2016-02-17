@@ -23,7 +23,7 @@ On this page:
 <txp:image_index />
 ~~~
 
-The **image_index** tag is a __single__ tag that is intended to be used in tandem with [image_display](image-display). It renders thumbnails of all images contained in an image category. This category can be specified as an attribute to the tag and defaults to the current site category as given in the page's URL.
+The **image_index** tag is a *single* tag that is intended to be used in tandem with [image_display](image-display). It renders thumbnails of all images contained in an image category. This category can be specified as an attribute to the tag and defaults to the current site category as given in the page's URL.
 
 The thumbnail images are linked to an address which will pass the image ID plus the active category on to the tandem [image_display](image-display) tag. It is up to the user to include this tandem tag at an appropriate place inside the page template.
 

@@ -23,7 +23,7 @@ On this page:
 <txp:comments_preview />
 ~~~
 
-The **comments_preview** tag is a __single__ tag which is used to display a preview of a visitor's comment.
+The **comments_preview** tag is a *single* tag which is used to display a preview of a visitor's comment.
 
 ## Attributes
 

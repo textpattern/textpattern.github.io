@@ -21,7 +21,7 @@ On this page:
 <txp:file_download_modified />
 ~~~
 
-The **file_download_modified** tag is a __single__ tag that Textpattern will replace with the last modified date of the file to download. Should be used in a Textpattern 'file' type @@Form template@@.
+The **file_download_modified** tag is a *single* tag that Textpattern will replace with the last modified date of the file to download. Should be used in a Textpattern 'file' type @@Form template@@.
 
 ## Attributes
 

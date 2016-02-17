@@ -22,7 +22,7 @@ On this page:
 <txp:recent_comments />
 ~~~
 
-The **recent_comments** tag is a __single__ or a __container__ tag. Textpattern will replace this tag with a list of permanent links to recent comments. This list will be displayed with the format:
+The **recent_comments** tag is a *single* or a *container* tag. Textpattern will replace this tag with a list of permanent links to recent comments. This list will be displayed with the format:
 
 bc. User's Name (Article Name)
 

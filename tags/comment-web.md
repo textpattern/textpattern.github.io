@@ -22,7 +22,7 @@ On this page:
 <txp:comment_web>
 ~~~
 
-The **comment_web** tag can be used as either a __single__ or a __container__ tag. Thus it may be used as an opening and closing pair:
+The **comment_web** tag can be used as either a *single* or a *container* tag. Thus it may be used as an opening and closing pair:
 
 ~~~ html
 <txp:comment_web>

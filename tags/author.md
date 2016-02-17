@@ -23,7 +23,7 @@ On this page:
 <txp:author />
 ~~~
 
-The **author** tag is a __single__ tag that is used to return the name of the author of the currently displayed article.
+The **author** tag is a *single* tag that is used to return the name of the author of the currently displayed article.
 
 ## Attributes
 

@@ -21,7 +21,7 @@ On this page:
 <txp:file_download_downloads />
 ~~~
 
-The **file_download_downloads** tag is a __single__ tag that Textpattern will replace with the number of times the current file has been downloaded. Should be used in a Textpattern 'file' type @@Form template@@.
+The **file_download_downloads** tag is a *single* tag that Textpattern will replace with the number of times the current file has been downloaded. Should be used in a Textpattern 'file' type @@Form template@@.
 
 ## Attributes
 

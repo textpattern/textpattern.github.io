@@ -23,7 +23,7 @@ On this page:
 <txp:comment_remember />
 ~~~
 
-The **comment_remember** tag is a __single__ tag which is used to display a check box input field. If checked the users details are remembered by the system the next time they open a comment form. Used in the comment input form template.
+The **comment_remember** tag is a *single* tag which is used to display a check box input field. If checked the users details are remembered by the system the next time they open a comment form. Used in the comment input form template.
 
 ## Attributes
 

@@ -22,7 +22,7 @@ On this page:
 <txp:comments_error />
 ~~~
 
-The **comments_error** tag is a __single__ tag which is used to produce the current comments error.
+The **comments_error** tag is a *single* tag which is used to produce the current comments error.
 
 ## Attributes
 

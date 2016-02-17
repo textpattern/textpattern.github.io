@@ -21,9 +21,9 @@ On this page:
 <txp:link_to_home>
 ~~~
 
-The **link_to_home** tag is primarily a __container__ tag that returns a link to the site's home page. It will apply a hyperlink to whatever it wraps.
+The **link_to_home** tag is primarily a *container* tag that returns a link to the site's home page. It will apply a hyperlink to whatever it wraps.
 
-The tag can, however, be used as a __single__ tag to generate a raw base URL of the site:
+The tag can, however, be used as a *single* tag to generate a raw base URL of the site:
 
 ~~~ html
 <txp:link_to_home />

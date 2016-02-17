@@ -22,7 +22,7 @@ On this page:
 <txp:excerpt />
 ~~~
 
-The **excerpt** tag is a __single__ tag which is used to return the excerpt text, if any, associated with the article being displayed.
+The **excerpt** tag is a *single* tag which is used to return the excerpt text, if any, associated with the article being displayed.
 
 The conditional tag [if_excerpt](if-excerpt) can be used to check if there is an excerpt.
 

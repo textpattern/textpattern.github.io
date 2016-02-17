@@ -22,7 +22,7 @@ On this page:
 <txp:link_id />
 ~~~
 
-The **link_id** tag is a __single__ tag which returns the numerical ID of the link. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to show information about the current link in the list.
+The **link_id** tag is a *single* tag which returns the numerical ID of the link. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to show information about the current link in the list.
 
 ## Attributes
 

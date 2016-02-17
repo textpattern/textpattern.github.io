@@ -22,7 +22,7 @@ On this page:
 <txp:comment_message />
 ~~~
 
-The **comment_message** tag is a __single__ tag which is used to display the message text, or comment. Used in the form that renders your comments (the default form is named 'comments').
+The **comment_message** tag is a *single* tag which is used to display the message text, or comment. Used in the form that renders your comments (the default form is named 'comments').
 
 ## Attributes
 

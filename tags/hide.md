@@ -21,7 +21,7 @@ On this page:
 <txp:hide />
 ~~~
 
-The **hide** tag is a __container__ tag which is used to suppress the interpretation of all enclosed contents. Use it for comments, temporary concealment of article text parts or non-destructive form changes.
+The **hide** tag is a *container* tag which is used to suppress the interpretation of all enclosed contents. Use it for comments, temporary concealment of article text parts or non-destructive form changes.
 
 ## Attributes
 

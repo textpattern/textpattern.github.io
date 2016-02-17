@@ -21,7 +21,7 @@ On this page:
 <txp:linkdesctitle />
 ~~~
 
-The **linkdesctitle** tag is a __single__ tag which is used to return an HTML hyperlink, defined within the [Links administration panel](../administration/links-panel).
+The **linkdesctitle** tag is a *single* tag which is used to return an HTML hyperlink, defined within the [Links administration panel](../administration/links-panel).
 
 It uses the 'Title' field as the link's text; the 'Description' field contents will be displayed as an anchor `title` attribute. This tag is used in a link form or inside the [linklist](linklist) container tag.
 

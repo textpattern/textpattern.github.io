@@ -22,7 +22,7 @@ On this page:
 <txp:posted />
 ~~~
 
-The **posted** tag is a __single__ tag which is used to return the publish date of the article being displayed. The format is determined by the settings specified in the 'Date format' or 'Archive date format' fields in the [Preferences administration panel](../administration/preferences-panel).
+The **posted** tag is a *single* tag which is used to return the publish date of the article being displayed. The format is determined by the settings specified in the 'Date format' or 'Archive date format' fields in the [Preferences administration panel](../administration/preferences-panel).
 
 ## Attributes
 

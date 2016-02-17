@@ -21,7 +21,7 @@ On this page:
 <txp:link_to_next>
 ~~~
 
-The **link_to_next** tag can be used as a __single__ tag or a __container__ tag to return the permanent URL of the next article by posting date.
+The **link_to_next** tag can be used as a *single* tag or a *container* tag to return the permanent URL of the next article by posting date.
 
 If used as a container tag, the HTML required to output a hyperlink is returned; if used as a single tag, only the URL itself is returned.
 

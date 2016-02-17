@@ -23,7 +23,7 @@ On this page:
 <txp:meta_author />
 ~~~
 
-The **meta_author** tag is a __single__ tag, used in the head of an individual article page template. Textpattern will replace this tag with an HTML meta tag as follows:
+The **meta_author** tag is a *single* tag, used in the head of an individual article page template. Textpattern will replace this tag with an HTML meta tag as follows:
 
 ~~~ html
 <meta name="author" content="Article author's name" />

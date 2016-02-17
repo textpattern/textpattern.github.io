@@ -22,7 +22,7 @@ On this page:
 <txp:custom_field />
 ~~~
 
-The **custom_field** tag is a __single__ tag and used to display the contents of a custom field.
+The **custom_field** tag is a *single* tag and used to display the contents of a custom field.
 
 Custom fields are useful when you need to output content having a consistent structure, usually in context to a particular type of article. Custom fields are defined in the [Preferences administration panel](../administration/preferences-panel), and used in the [Write administration panel](../administration/write-panel). There are conditions to be aware of in each case, so be sure to read the following sections, respectively:
 

@@ -24,7 +24,7 @@ On this page:
 <txp:if_first_file>
 ~~~
 
-The **if_first_file** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
+The **if_first_file** tag is a *conditional* tag and always used as an opening and closing pair, like this...
 
 ~~~ html
 <txp:if_first_file>

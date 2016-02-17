@@ -21,7 +21,7 @@ On this page:
 <txp:file_download />
 ~~~
 
-The **file_download** tag is a __single__ tag which Textpattern will replace with a Textpattern 'file' type @@Form template@@. Inside that form go the other @@file tags@@.
+The **file_download** tag is a *single* tag which Textpattern will replace with a Textpattern 'file' type @@Form template@@. Inside that form go the other @@file tags@@.
 
 ## Attributes
 

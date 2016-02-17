@@ -25,14 +25,14 @@ On this page:
 <txp:category_list />
 ~~~
 
-The **category_list** tag can be used as either a __single__ tag or __container__ tag which is used to produce a list of linked categories.
+The **category_list** tag can be used as either a *single* tag or *container* tag which is used to produce a list of linked categories.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
 * `active_class="class name"`
-HTML `class` attribute to be applied to the `active` or current link in a list. Only works in the __single__ tag without the `form` attribute.
+HTML `class` attribute to be applied to the `active` or current link in a list. Only works in the *single* tag without the `form` attribute.
 Default: unset.
 * `categories="category name(s)"`
 Comma-separated list of categories to include, displayed in the order specified (unless overridden by `sort` attribute). Use category names **not** titles here - note that Textpattern automatically converts the names to lowercase and converts spaces to hyphens when they are created.

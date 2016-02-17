@@ -23,7 +23,7 @@ On this page:
 <txp:comment_email_input />
 ~~~
 
-The **comment_email_input** tag is a __single__ tag which is used to display a text entry field to accept the commenter's email address. Used in the comment input form template.
+The **comment_email_input** tag is a *single* tag which is used to display a text entry field to accept the commenter's email address. Used in the comment input form template.
 
 ## Attributes
 

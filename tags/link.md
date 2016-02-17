@@ -22,7 +22,7 @@ On this page:
 <txp:link />
 ~~~
 
-The **link** tag is a __single__ tag which is used to return an HTML hyperlink defined in the [Links administration panel](../administration/links-panel). It uses the 'Title' field as the link's text.
+The **link** tag is a *single* tag which is used to return an HTML hyperlink defined in the [Links administration panel](../administration/links-panel). It uses the 'Title' field as the link's text.
 
 This tag is used in 'links' type forms or inside the [linklist](linklist) container tag.
 

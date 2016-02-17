@@ -21,7 +21,7 @@ On this page:
 <txp:prev_title />
 ~~~
 
-The **prev_title** tag is a __single__ tag which Textpattern will replace with the name (text) of the previous article in the sort order.
+The **prev_title** tag is a *single* tag which Textpattern will replace with the name (text) of the previous article in the sort order.
 
 The container tag [link_to_prev](link-to-prev) wraps the text or tag and assigns the link.
 

@@ -22,7 +22,7 @@ On this page:
 <txp:recent_articles />
 ~~~
 
-The **recent_articles** tag is a __single__ tag which is used to produce a list of permanent links to recent articles by title.
+The **recent_articles** tag is a *single* tag which is used to produce a list of permanent links to recent articles by title.
 
 ## Attributes
 
@@ -111,7 +111,7 @@ Produces a numerical list of the 5 most recent articles categorized with `code`,
 <txp:recent_articles label="Other recent articles" limit="5" offset="1" />
 ~~~
 
-Produces a list of the 5 most recent articles __apart__ from the most recent one, along with the label 'Other recent articles'.
+Produces a list of the 5 most recent articles *apart* from the most recent one, along with the label 'Other recent articles'.
 
 ## Genealogy
 

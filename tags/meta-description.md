@@ -23,7 +23,7 @@ On this page:
 <txp:meta_description />
 ~~~
 
-The **meta_description** tag is a __single__ tag used in a variety of ways to display meta description content. One is to output description text as the content of a standard HTML `<meta>` tag in the `<head>` of a page template:
+The **meta_description** tag is a *single* tag used in a variety of ways to display meta description content. One is to output description text as the content of a standard HTML `<meta>` tag in the `<head>` of a page template:
 
 ~~~ html
 <meta name="description" content="{your description}" />

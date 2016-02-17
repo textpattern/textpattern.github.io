@@ -24,7 +24,7 @@ On this page:
 <txp:article_image />
 ~~~
 
-The **article_image** tag is a __single__ tag. Textpattern will replace this tag with the `<img src="...">` HTML tag matching the numeric ID or URL assigned when the article is posted.
+The **article_image** tag is a *single* tag. Textpattern will replace this tag with the `<img src="...">` HTML tag matching the numeric ID or URL assigned when the article is posted.
 
 The image to be associated with the tag is set in the [Write administration panel](../administration/write-panel). Click 'Advanced options' and enter either the URL of the image, or the Textpattern ID (a number set by Textpattern at upload) into the **Article image** field. Most of the time you will use the image ID here. Note that you can only assign a single image to each article.
 

@@ -21,7 +21,7 @@ On this page:
 <txp:page_title />
 ~~~
 
-The **page_title** tag is a __single__ tag that displays text depending on the context it is used. Its primary purpose is for outputting information suitable for the HTML `<title>` tag.
+The **page_title** tag is a *single* tag that displays text depending on the context it is used. Its primary purpose is for outputting information suitable for the HTML `<title>` tag.
 
 Results appear as follows:
 

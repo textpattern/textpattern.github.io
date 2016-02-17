@@ -22,7 +22,7 @@ On this page:
 <txp:popup />
 ~~~
 
-The **popup** tag is a __single__ tag. Textpattern will replace this tag with a popup selector for browsing by section or category.
+The **popup** tag is a *single* tag. Textpattern will replace this tag with a popup selector for browsing by section or category.
 
 ## Attributes
 

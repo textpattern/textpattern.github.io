@@ -6,9 +6,9 @@
 <txp:image_list />
 ~~~
 
-The **image_list** tag is a __single__ or __container__ tag that Textpattern will use to gather a list of matching images uploaded via the TXP "images_panel_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel tab. Utilising the other image tags in the suite "image_info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info, "image_url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_url, "image_date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_date and "if_thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_thumbnail) you can display simple image galleries from this list.
+The **image_list** tag is a *single* or *container* tag that Textpattern will use to gather a list of matching images uploaded via the TXP "images_panel_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel tab. Utilising the other image tags in the suite "image_info":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_info, "image_url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_url, "image_date":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_date and "if_thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_thumbnail) you can display simple image galleries from this list.
 
-If used as a __container__ tag, it must be specified as an opening and closing pair of tags, like this:
+If used as a *container* tag, it must be specified as an opening and closing pair of tags, like this:
 
 ~~~ html
 <txp:image_list>
@@ -99,7 +99,7 @@ bc. 0
 bc. 0
 
 
-. **"pageby":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#pageby=“integer” (or** __“limit”_*)*
+. **"pageby":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#pageby=“integer” (or** *“limit”_*)*
  The number of images to jump forward or back when an "older":/home/www/zendstudio/dokuwiki/bin/doku.php?id=older or "newer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=newer link is clicked. Without this attribute, pagination is not available; you will simply see **limit** images. You may specify
 
 bc. pageby="limit"

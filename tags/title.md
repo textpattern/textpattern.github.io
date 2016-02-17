@@ -21,7 +21,7 @@ On this page:
 <txp:title />
 ~~~
 
-The **title** tag is a __single__ tag which is used to return the title of the article being displayed. It is usually used in an 'article' type form.
+The **title** tag is a *single* tag which is used to return the title of the article being displayed. It is usually used in an 'article' type form.
 
 ## Attributes
 

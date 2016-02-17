@@ -21,7 +21,7 @@ On this page:
 <txp:if_individual_article>
 ~~~
 
-The **if_individual_article** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
+The **if_individual_article** tag is a *conditional* tag and always used as an opening and closing pair, like this...
 
 ~~~ html
 <txp:if_individual_article>

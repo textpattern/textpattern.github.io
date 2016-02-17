@@ -23,7 +23,7 @@ On this page:
 <txp:linklist />
 ~~~
 
-The **linklist** tag is a __single__ or a __container__ tag which is used to produce a list of links from the predefined list created on the [Links administration panel](../administration/links-panel).
+The **linklist** tag is a *single* or a *container* tag which is used to produce a list of links from the predefined list created on the [Links administration panel](../administration/links-panel).
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 

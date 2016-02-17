@@ -22,7 +22,7 @@ On this page:
 <txp:if_status>
 ~~~
 
-The **if_status** tag is a __conditional__ tag and always used as an opening and closing pair, like this...
+The **if_status** tag is a *conditional* tag and always used as an opening and closing pair, like this...
 
 ~~~ html
 <txp:if_status>

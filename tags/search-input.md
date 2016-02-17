@@ -22,7 +22,7 @@ On this page:
 <txp:search_input />
 ~~~
 
-The **search_input** tag is a __single__ tag. This tag will provide a text entry field for search parameters and an optional button to initiate the search.
+The **search_input** tag is a *single* tag. This tag will provide a text entry field for search parameters and an optional button to initiate the search.
 
 ## Attributes
 

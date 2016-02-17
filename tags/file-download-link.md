@@ -22,7 +22,7 @@ On this page:
 <txp:file_download_link />
 ~~~
 
-The **file_download_link** tag is both a __single__ tag and a __container__ tag. Thus it may be used as an opening and closing pair:
+The **file_download_link** tag is both a *single* tag and a *container* tag. Thus it may be used as an opening and closing pair:
 
 ~~~ html
 <txp:file_download_link>

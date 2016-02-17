@@ -22,9 +22,9 @@ On this page:
 <txp:images />
 ~~~
 
-The **images** tag is a __single__ or __container__ tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern @@Images page@@. Utilising the other image tags in the suite [image_info](image-info), [image_url](image-url), [image_date](image-date) and [if_thumbnail](if-thumbnail)) you can display simple image galleries from this list.
+The **images** tag is a *single* or *container* tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern @@Images page@@. Utilising the other image tags in the suite [image_info](image-info), [image_url](image-url), [image_date](image-date) and [if_thumbnail](if-thumbnail)) you can display simple image galleries from this list.
 
-If used as a __container__ tag, it must be specified as an opening and closing pair of tags, like this:
+If used as a *container* tag, it must be specified as an opening and closing pair of tags, like this:
 
 ~~~ html
 <txp:images>

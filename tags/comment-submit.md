@@ -23,7 +23,7 @@ On this page:
 <txp:comment_submit />
 ~~~
 
-The **comment_submit** tag is a __single__ tag which is used to display a 'Submit' button. Clicking the submit button writes the comment information to the database. Used in the comment input form template.
+The **comment_submit** tag is a *single* tag which is used to display a 'Submit' button. Clicking the submit button writes the comment information to the database. Used in the comment input form template.
 
 ## Attributes
 

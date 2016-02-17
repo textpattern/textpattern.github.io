@@ -24,7 +24,7 @@ On this page:
 <txp:category />
 ~~~
 
-The **category** tag can be used as either a __single__ or __containing__ tag. It will display information of the category as defined by the `name` attribute, or the one currently being viewed. When used as a containing tag, it will turn the contents into a link to the category. Otherwise, it will return plain text.
+The **category** tag can be used as either a *single* or *containing* tag. It will display information of the category as defined by the `name` attribute, or the one currently being viewed. When used as a containing tag, it will turn the contents into a link to the category. Otherwise, it will return plain text.
 
 May be used in any context.
 
@@ -33,7 +33,7 @@ May be used in any context.
 Tag will accept the following attributes (**case-sensitive**):
 
 * `link="boolean"`
-Whether to display as link. Works only in the __single__ tag, **not** in the __containing__ tag variant.
+Whether to display as link. Works only in the *single* tag, **not** in the *containing* tag variant.
 Values: `0` (no) or `1` (yes).
 Default: `0`.
 * `name="category name"`

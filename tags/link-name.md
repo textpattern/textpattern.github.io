@@ -22,7 +22,7 @@ On this page:
 <txp:link_name />
 ~~~
 
-The **link_name** tag is a __single__ tag which returns the name of the link as assigned on the links pane as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to display information about the current link.
+The **link_name** tag is a *single* tag which returns the name of the link as assigned on the links pane as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to display information about the current link.
 
 ## Attributes
 

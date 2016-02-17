@@ -21,7 +21,7 @@ On this page:
 <txp:page_url />
 ~~~
 
-The **page_url** tag is a __single__ tag. It is used to return a particular component of the URL from the current page being displayed.
+The **page_url** tag is a *single* tag. It is used to return a particular component of the URL from the current page being displayed.
 
 ## Attributes
 

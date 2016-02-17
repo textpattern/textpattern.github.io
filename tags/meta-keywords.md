@@ -23,7 +23,7 @@ On this page:
 <txp:meta_keywords />
 ~~~
 
-The **meta_keywords** tag is a __single__ tag used in one of two ways. One is to output keyword data as the content of a standard HTML `<meta>` tag in the `<head>` of a page template:
+The **meta_keywords** tag is a *single* tag used in one of two ways. One is to output keyword data as the content of a standard HTML `<meta>` tag in the `<head>` of a page template:
 
 ~~~ html
 <meta name="keywords" content="{your article's Keywords}" />

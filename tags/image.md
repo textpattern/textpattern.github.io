@@ -22,7 +22,7 @@ On this page:
 <txp:image />
 ~~~
 
-The **image** tag is a __single__ tag that Textpattern will replace with the `<img src="...">` HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern [Images administration panel](../administration/images-panel).
+The **image** tag is a *single* tag that Textpattern will replace with the `<img src="...">` HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern [Images administration panel](../administration/images-panel).
 
 ## Attributes
 

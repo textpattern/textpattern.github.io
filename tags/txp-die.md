@@ -23,7 +23,7 @@ On this page:
 <txp:txp_die />
 ~~~
 
-The **txp_die** tag is a __single__ tag that will terminate normal page rendition and return the given status to the user agent (browser, search engine crawler, feed aggregator). An error page will also be returned to the user agent.
+The **txp_die** tag is a *single* tag that will terminate normal page rendition and return the given status to the user agent (browser, search engine crawler, feed aggregator). An error page will also be returned to the user agent.
 
 The status can be displayed by the [error_status](error-status) tag. A textual message can be associated with the error status and retrieved with the [error_message](error-message) tag. See also: @@Custom Error Pages@@.
 

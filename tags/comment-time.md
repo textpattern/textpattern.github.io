@@ -22,7 +22,7 @@ On this page:
 <txp:comment_time />
 ~~~
 
-The **comment_time** tag is a __single__ tag which is used to display the time and date the comment was submitted. Should be used in a Textpattern 'comment' type @@Form template@@.
+The **comment_time** tag is a *single* tag which is used to display the time and date the comment was submitted. Should be used in a Textpattern 'comment' type @@Form template@@.
 
 ## Attributes
 

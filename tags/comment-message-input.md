@@ -23,7 +23,7 @@ On this page:
 <txp:comment_message_input />
 ~~~
 
-The **comment_message_input** tag is a __single__ tag which is used to display a text entry field to accept the commenter's message text. Used in the comment input form template.
+The **comment_message_input** tag is a *single* tag which is used to display a text entry field to accept the commenter's message text. Used in the comment input form template.
 
 ## Attributes
 

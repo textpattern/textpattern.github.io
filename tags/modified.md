@@ -22,7 +22,7 @@ On this page:
 <txp:modified />
 ~~~
 
-The **modified** tag is a __single__ tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the [Preferences administration panel](../administration/preferences-panel).
+The **modified** tag is a *single* tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the [Preferences administration panel](../administration/preferences-panel).
 
 ## Attributes
 

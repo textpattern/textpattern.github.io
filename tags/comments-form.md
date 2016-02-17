@@ -23,7 +23,7 @@ On this page:
 <txp:comments_form />
 ~~~
 
-The **comments_form** tag is a __single__ tag which is used to display a comment form. Comments will be attached to present individual article as a default, or to the article set by the `id` attribute.
+The **comments_form** tag is a *single* tag which is used to display a comment form. Comments will be attached to present individual article as a default, or to the article set by the `id` attribute.
 
 ## Attributes
 

@@ -23,7 +23,7 @@ On this page:
 <txp:comment_web_input />
 ~~~
 
-The **comment_web_input** tag is a __single__ tag which is used to display a text entry field to accept the commenter's domain name. Used in the comment input form template.
+The **comment_web_input** tag is a *single* tag which is used to display a text entry field to accept the commenter's domain name. Used in the comment input form template.
 
 Function assumes `http://` for all URLs.
 

@@ -22,7 +22,7 @@ On this page:
 <txp:else />
 ~~~
 
-The **else** tag is a __single__ tag that is used within a containing conditional tag to provide the means to assign default, or alternative, behaviour when the condition in the surrounding tag is **not** met.
+The **else** tag is a *single* tag that is used within a containing conditional tag to provide the means to assign default, or alternative, behaviour when the condition in the surrounding tag is **not** met.
 
 Visually, this is the general structure in which it is used:
 

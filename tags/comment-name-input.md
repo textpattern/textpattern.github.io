@@ -23,7 +23,7 @@ On this page:
 <txp:comment_name_input />
 ~~~
 
-The **comment_name_input** tag is a __single__ tag which is used to display a text entry field to accept the commenter's name. Used in the comment input form template.
+The **comment_name_input** tag is a *single* tag which is used to display a text entry field to accept the commenter's name. Used in the comment input form template.
 
 ## Attributes
 

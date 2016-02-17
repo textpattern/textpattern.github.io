@@ -22,7 +22,7 @@ On this page:
 <txp:image_author />
 ~~~
 
-The **image_author** tag is a __single__ tag that Textpattern will replace with the author's name associated with the current image in an [images](images) list. It can **only** be used inside `<txp:images />`.
+The **image_author** tag is a *single* tag that Textpattern will replace with the author's name associated with the current image in an [images](images) list. It can **only** be used inside `<txp:images />`.
 
 ## Attributes
 

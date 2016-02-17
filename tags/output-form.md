@@ -22,7 +22,7 @@ On this page:
 <txp:output_form />
 ~~~
 
-The **output_form** tag can be used as a __single__ or a __container__ tag. Textpattern will replace this tag with the content resulting from the form template called by the tag.
+The **output_form** tag can be used as a *single* or a *container* tag. Textpattern will replace this tag with the content resulting from the form template called by the tag.
 
 For the container tag usage, see the [yield](yield) tag.
 

@@ -21,7 +21,7 @@ On this page:
 <txp:php>
 ~~~
 
-Textpattern's **php** tag is a __container__ tag that provides the same output abilities as `<?php //Code goes here... ?>`. Textpattern's tag version is used like this:
+Textpattern's **php** tag is a *container* tag that provides the same output abilities as `<?php //Code goes here... ?>`. Textpattern's tag version is used like this:
 
 ~~~ html
 <txp:php>
@@ -55,7 +55,7 @@ When inserting markup or PHP into the content boxes of a Textpattern article:
 
 ### Equivalent programmatic names
 
-All Textpattern tags have equivalent programmatic names which are __exactly__ the same as the tag names. For example, `<txp:recent_articles />` is `recent_articles()`.
+All Textpattern tags have equivalent programmatic names which are *exactly* the same as the tag names. For example, `<txp:recent_articles />` is `recent_articles()`.
 
 ### Arrays must be passed to all functions
 

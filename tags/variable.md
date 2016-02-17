@@ -22,9 +22,9 @@ On this page:
 <txp:variable />
 ~~~
 
-The **variable** tag is both a __single__ and a __container__ tag which sets or returns a user-defined global variable.
+The **variable** tag is both a *single* and a *container* tag which sets or returns a user-defined global variable.
 
-If used as a __container__ tag, the result of the contained statements are assigned to the given variable `name`, like this:
+If used as a *container* tag, the result of the contained statements are assigned to the given variable `name`, like this:
 
 ~~~ html
 <txp:variable>
@@ -32,7 +32,7 @@ If used as a __container__ tag, the result of the contained statements are assig
 </txp:variable>
 ~~~
 
-Note: Avoid entering white space characters for better code readability between the opening and closing __variable__ tags, they will lead to falsified results in the [if_variable](if-variable) evaluation.
+Note: Avoid entering white space characters for better code readability between the opening and closing *variable* tags, they will lead to falsified results in the [if_variable](if-variable) evaluation.
 {: .alert-block .information}
 
 ## Attributes

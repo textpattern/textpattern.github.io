@@ -22,7 +22,7 @@ On this page:
 <txp:link_feed_link />
 ~~~
 
-The **link_feed_link** tag is a __single__ tag. Textpattern will replace this tag with an anchor to the site's 'links' RSS feed.
+The **link_feed_link** tag is a *single* tag. Textpattern will replace this tag with an anchor to the site's 'links' RSS feed.
 
 ## Attributes
 

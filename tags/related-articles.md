@@ -23,7 +23,7 @@ On this page:
 <txp:related_articles>
 ~~~
 
-The **related_articles** tag can be used as either a __single__ tag or a __container__ tag, and is used to produce a list of related (by category) articles.
+The **related_articles** tag can be used as either a *single* tag or a *container* tag, and is used to produce a list of related (by category) articles.
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 

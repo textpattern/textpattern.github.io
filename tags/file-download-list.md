@@ -23,7 +23,7 @@ On this page:
 <txp:file_download_list />
 ~~~
 
-The **file_download_list** tag is a __single__ or a __container__ tag which is used to produce a list of download links according to the given attributes. Each file in the list is formatted by the file tags used in the given form (default is the `files` form).
+The **file_download_list** tag is a *single* or a *container* tag which is used to produce a list of download links according to the given attributes. Each file in the list is formatted by the file tags used in the given form (default is the `files` form).
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 

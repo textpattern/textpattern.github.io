@@ -22,7 +22,7 @@ On this page:
 <txp:comment_anchor />
 ~~~
 
-The **comment_anchor** tag is a __single__ tag which is used to produce an empty anchor tag with an id attribute reflecting the comment ID. Used in the form that renders your comments (the default form is named 'comments').
+The **comment_anchor** tag is a *single* tag which is used to produce an empty anchor tag with an id attribute reflecting the comment ID. Used in the form that renders your comments (the default form is named 'comments').
 
 ## Attributes
 

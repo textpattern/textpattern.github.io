@@ -23,7 +23,7 @@ On this page:
 <txp:article_custom />
 ~~~
 
-The **article_custom** tag is a __single__ or a __container__ tag that provides a variety of custom options for sorting, selecting, and displaying articles (the tag will be replaced with one or more articles).
+The **article_custom** tag is a *single* or a *container* tag that provides a variety of custom options for sorting, selecting, and displaying articles (the tag will be replaced with one or more articles).
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 
@@ -68,7 +68,7 @@ Restrict to articles from specified category/categories. Note: the category name
 Values: (comma separated list of) category name(s).
 Default: unset, retrieves from all categories.
 * `customfieldname="value"`
-Restrict to articles with specified value for specified custom field name. Replace __customfieldname__ with the actual name of the custom field.
+Restrict to articles with specified value for specified custom field name. Replace *customfieldname* with the actual name of the custom field.
 Important: Using dashes `-` or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
 Default: unset.
 * `excerpted="boolean"`

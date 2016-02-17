@@ -21,7 +21,7 @@ On this page:
 <txp:search_result_url />
 ~~~
 
-The **search_result_url** tag is a __single__ tag. This tag will provide a hyperlinked URL to an article as returned by the search function.
+The **search_result_url** tag is a *single* tag. This tag will provide a hyperlinked URL to an article as returned by the search function.
 
 ## Attributes
 

@@ -23,7 +23,7 @@ On this page:
 <txp:comments />
 ~~~
 
-The **comments** tag is a __single__ tag which is used to display the comments associated with a particular article. Comments will be displayed for the present individual article as a default, or to the article set by the `id` attribute.
+The **comments** tag is a *single* tag which is used to display the comments associated with a particular article. Comments will be displayed for the present individual article as a default, or to the article set by the `id` attribute.
 
 ## Attributes
 

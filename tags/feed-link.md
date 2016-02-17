@@ -22,7 +22,7 @@ On this page:
 <txp:feed_link>
 ~~~
 
-The **feed_link** tag can be used as either a __single__ or __container__ tag and is used to output a link to the site's 'articles' RSS feed. When used as a container tag, it will turn the contents into a link to the feed, otherwise the value of `label` attribute will be used as link text. Should be used in a Textpattern @@Page template@@.
+The **feed_link** tag can be used as either a *single* or *container* tag and is used to output a link to the site's 'articles' RSS feed. When used as a container tag, it will turn the contents into a link to the feed, otherwise the value of `label` attribute will be used as link text. Should be used in a Textpattern @@Page template@@.
 
 ## Attributes
 

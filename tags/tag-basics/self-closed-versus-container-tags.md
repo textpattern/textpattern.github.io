@@ -39,7 +39,7 @@ Container tags are composed of both an opening and closing tag element, giving t
 
 The content that is added between container tags may be either text or other Textpattern tags.
 
-Typical container tags are the **permlink** tag `<txp:permlink></txp:permlink>` and all **conditional tags**. Container tags are used when something has to be __enclosed__ by tags instead of being __replaced__ by them.
+Typical container tags are the **permlink** tag `<txp:permlink></txp:permlink>` and all **conditional tags**. Container tags are used when something has to be *enclosed* by tags instead of being *replaced* by them.
 
 A link is a good example: you have a text string (or a title tag) around which you want to wrap an HTML anchor element:
 

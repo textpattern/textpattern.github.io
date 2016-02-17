@@ -22,7 +22,7 @@ On this page:
 <txp:image_date />
 ~~~
 
-The **image_date** tag is a __single__ tag that Textpattern will replace with the uploaded date of the current (or given) image. Should usually be used in an @@image form@@, although it may be used on its own providing you specify an `id` or `name`.
+The **image_date** tag is a *single* tag that Textpattern will replace with the uploaded date of the current (or given) image. Should usually be used in an @@image form@@, although it may be used on its own providing you specify an `id` or `name`.
 
 ## Attributes
 
