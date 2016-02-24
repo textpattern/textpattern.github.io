@@ -185,7 +185,7 @@ Why might you do it? Offsetting articles is useful in situations where the most 
 
 ~~~ html
 <div class="first">
-    <txp:article limit="1" pageby"10" />
+    <txp:article limit="1" pageby="10" />
 </div>
 <div class="middle">
     <txp:article limit="8" offset="1" pageby="10" />
