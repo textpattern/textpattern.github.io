@@ -36,8 +36,8 @@ Jump to the selected category for the currently active section.
 Values: `0` (no) or `1` (yes).
 Default: `0`.
 * `type="type"`
-Values: `s` (section), `c` (category).
-Default: `c`.
+Values: `section`, `category`.
+Default: `category`.
 
 ### Common presentational attributes
 
@@ -58,16 +58,20 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 ### Example 1: Browse by category popup selector
 
 ~~~ html
-<txp:popup type="c" wraptag="p" />
+<txp:popup type="category" wraptag="p" />
 ~~~
 
 ### Example 2: Popup selector with custom label
 
 ~~~ html
-<txp:popup label="Browse this site" type="c" wraptag="p" />
+<txp:popup label="Browse this site" type="category" wraptag="p" />
 ~~~
 
 ## Genealogy
+
+### Version 4.6.0
+
+`type` attribute also accepts full string name instead of just `s` and `c`.
 
 ### Version 4.3.0
 
