@@ -13,10 +13,10 @@ tags:
 
 On this page:
 
-* [Syntax](#user-content-syntax)
-* [Attributes](#user-content-attributes)
-* [Examples](#user-content-examples)
-* [Genealogy](#user-content-genealogy)
+* [Syntax](#syntax)
+* [Attributes](#attributes)
+* [Examples](#examples)
+* [Genealogy](#genealogy)
 
 ## Syntax
 

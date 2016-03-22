@@ -4,13 +4,13 @@ See the [built website](http://docs.textpattern.io). This is the new user docume
 
 On this page are guidelines for doc authors:
 
-* [Filename (URL) conventions](#user-content-filename-url-conventions)
-* [Document page structure](#user-content-document-page-structure)
-* [Concise copywriting tips](#user-content-concise-copywriting-tips)
-* [Brand identity](#user-content-brand-identity)
-* [Administration-side references](#user-content-administration-side-references)
-* [Typo gotchas to watch out for](#user-content-typo-gotchas-to-watch-out-for)
-* [Markup](#user-content-markup)
+* [Filename (URL) conventions](#filename-url-conventions)
+* [Document page structure](#document-page-structure)
+* [Concise copywriting tips](#concise-copywriting-tips)
+* [Brand identity](#brand-identity)
+* [Administration-side references](#administration-side-references)
+* [Typo gotchas to watch out for](#typo-gotchas-to-watch-out-for)
+* [Markup](#markup)
 
 ## Filename (URL) conventions
 
@@ -33,8 +33,8 @@ Make doc pages **scannable** with a **consistent structure** across them, as muc
 2. Where it's reasonable to do so, follow the title with a brief introductory paragraph that sums up the page or it's purpose ([intro paragraph example](administration/index)).
 3. If you have more than three `h2` (`##` in Markdown) sections on the page (or three that are kind of long), follow the `h1` title (or intro paragraph, see previous example) with an in-page ToC ([ToC example without intro paragraph](security/index)). Do this by:
    * adding "On this page:" in normal text, followed by
-   * an unordered list of links to the `h2` headers only (e.g. `[Header label](#user-content-xxx)`), and
-   * use `#user-content-xxx` as the anchors, where `xxx` is the heading text in lowercase with hyphens (i.e. for linking to `## Example heading` the anchor would be `(#user-content-example-heading)`).
+   * an unordered list of links to the `h2` headers only (e.g. `[Header label](#xxx)`), and
+   * use `#xxx` as the anchors, where `xxx` is the heading text in lowercase with hyphens (i.e. for linking to `## Example heading` the anchor would be `(#example-heading)`).
 4. Avoid using `h4`-`h6` header levels, if possible, especially `h5`-`h6`. Deep structuring means the copy is too complex for new-user docs. Try and structure content with `h2`-`h3` only (and `h4` if really necessary).
 5. Use [kramdown footnotes](http://kramdown.gettalong.org/syntax.html#footnotes) in a given section for any "tips" or side details not needing said in the primary paragraph. Use a subsequent number for each new footnote on the page, even if they're not in the same section. ([Footnote examples](security/index.textile))
 

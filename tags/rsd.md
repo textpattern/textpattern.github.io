@@ -5,8 +5,8 @@ DEPRECATED 4.6.0
 
 On this page:
 
-* [Syntax](#user-content-syntax)
-* [Genealogy](#user-content-genealogy)
+* [Syntax](#syntax)
+* [Genealogy](#genealogy)
 
 ## Syntax
 

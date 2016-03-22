@@ -2,9 +2,9 @@
 
 On this page:
 
-* [Syntax](#user-content-syntax)
-* [Attributes](#user-content-attributes)
-* [Examples](#user-content-examples)
+* [Syntax](#syntax)
+* [Attributes](#attributes)
+* [Examples](#examples)
 
 ## Syntax
 
