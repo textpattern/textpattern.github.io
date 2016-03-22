@@ -51,14 +51,22 @@ Default: unset. If left empty, the permlinked article title(s) will be displayed
 * `limit="integer"`
 Number of articles to display.
 Default: `10`.
-* `match="category number(s)"`
-Restrict to articles related by specified category.
-Values: `Category1`, `Category2`, `Category1,Category2`.
-Default: `Category1,Category2`.
+* `match="match type"`
+Restrict to articles related by specified category, author, keywords and/or custom field (when matching by custom fields, match type is `exact`).
+Values (comma separated):
+`author`.
+`category1`.
+`category2`.
+`custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`.
+`keywords`.
+Default: `category1,category2`.
 * `no_widow="boolean"`
 Control [widows](http://en.wikipedia.org/wiki/Widows_and_orphans) and overrule 'widows' setting in the [Preferences administration panel](../administration/preferences-panel).
 Values: `0` allow the last word in the title to appear on its own line, i.e.,the title content is rendered unchanged, `1` ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
 Default: as set in the [Preferences administration panel](../administration/preferences-panel).
+* `offset="integer"`
+The number of articles to skip.
+Default: `0`.
 * `section="section name(s)"`
 Restrict to articles from specified section(s).
 Values: (comma separated list of) section name(s).
@@ -70,7 +78,7 @@ Values:
 `category1`.
 `category2`.
 `comments_count`.
-`custom_1` through `custom_10` (from Textpattern 4.2.0 onwards: `custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`).
+`custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`.
 `id` (article id#).
 `image` (article image id#).
 `keywords`.
@@ -133,6 +141,11 @@ Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 Other tags used: [permlink](permlink), [title](title), [author](author).
 
 ## Genealogy
+
+### Version 4.6.0
+
+`offset` attribute added.
+`match` attribute allows author, keywords and custom field values.
 
 ### Version 4.0.7
 
