@@ -94,7 +94,7 @@ Values:
 `category1`.
 `category2`.
 `comments_count`.
-`custom_1` through `custom_10` (from Textpattern 4.2.0 onwards: `custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`).
+`custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`.
 `expires` (expiry date).
 `id` (article id#).
 `image` (article image id#).
