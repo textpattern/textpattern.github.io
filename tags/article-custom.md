@@ -65,51 +65,63 @@ Tag will accept the following attributes (**case-sensitive**):
 : Values: (comma separated list of) author login name(s).
 : Default: unset, retrieves from all authors.
 
-* `category="category name"`
-Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories administration panel](../administration/categories-panel) to ensure you are using the correct names.
-Values: (comma separated list of) category name(s).
-Default: unset, retrieves from all categories.
-* `customfieldname="value"`
-Restrict to articles with specified value for specified custom field name. Replace *customfieldname* with the actual name of the custom field.
-Important: Using dashes `-` or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
-Default: unset.
-* `excerpted="boolean"`
-Restrict to articles with/without an excerpt.
-Values: `0` (no, return all) or `1` (yes, return only those containing an excerpt).
-Default: `0`.
-* `exclude="article id(s)"`
-Exclude a specific article or list of articles (each ID separated by a comma).
-Default: unset.
-* `expired="boolean"`
-Whether to include articles that have expired or not.
-Values: `0` (no, don't include expired articles) or `1` (yes, include expired articles).
-Default: Setting of preference 'Publish expired articles'.
-* `form="form name"`
-Use specified form template to process each article.
-Default: `default`.
-* `id="article ID"`
-Display the specific article or list of articles (each ID separated by a comma).
-Important: When a list is supplied, this does **not** imply a sort order (see **Example 6** below).
-Default: unset.
-* `keywords="keyword(s)"`
-Restrict to articles with specified keyword(s).
-Default: unset.
-* `limit="integer"`
-The number of articles to display.
-Default: `10`.
-* `month="yyyy"/"yyyy-mm"/"yyyy-mm-dd"`
-Restrict to articles posted within the specified year/month/day.
-Default: unset.
-* `offset="integer"`
-The number of articles to skip.
-Default: `0`.
-* `section="section name"`
-Restrict to articles from specified section(s).
-Values: (comma separated list of) section name(s).
-Default: unset, retrieves from all sections.
-* `sort="sort value(s)"`
-How to sort resulting list.
-Values:
+`category="category name"`
+: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories administration panel](../administration/categories-panel) to ensure you are using the correct names.
+: Values: (comma separated list of) category name(s).
+: Default: unset, retrieves from all categories.
+
+`customfieldname="value"`
+: Restrict to articles with specified value for specified custom field name. Replace *customfieldname* with the actual name of the custom field.
+: Important: Using dashes `-` or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
+: Default: unset.
+
+`excerpted="boolean"`
+: Restrict to articles with/without an excerpt.
+: Values: `0` (no, return all) or `1` (yes, return only those containing an excerpt).
+: Default: `0`.
+
+`exclude="article id(s)"`
+: Exclude a specific article or list of articles (each ID separated by a comma).
+: Default: unset.
+
+`expired="boolean"`
+: Whether to include articles that have expired or not.
+: Values: `0` (no, don't include expired articles) or `1` (yes, include expired articles).
+: Default: Setting of preference 'Publish expired articles'.
+
+`form="form name"`
+: Use specified form template to process each article.
+: Default: `default`.
+
+`id="article ID"`
+: Display the specific article or list of articles (each ID separated by a comma).
+: Important: When a list is supplied, this does **not** imply a sort order (see **Example 6** below).
+: Default: unset.
+
+`keywords="keyword(s)"`
+: Restrict to articles with specified keyword(s).
+: Default: unset.
+
+`limit="integer"`
+: The number of articles to display.
+: Default: `10`.
+
+`month="yyyy"/"yyyy-mm"/"yyyy-mm-dd"`
+: Restrict to articles posted within the specified year/month/day.
+: Default: unset.
+
+`offset="integer"`
+: The number of articles to skip.
+: Default: `0`.
+
+`section="section name"`
+: Restrict to articles from specified section(s).
+: Values: (comma separated list of) section name(s).
+: Default: unset, retrieves from all sections.
+
+`sort="sort value(s)"`
+: How to sort resulting list.
+: Values:
 `authorid` (author name).
 `category1`.
 `category2`.
@@ -127,36 +139,42 @@ Values:
 `status`.
 `title`.
 `url_title`.
-Each field in the `textpattern` database table can be used as a sort key.
-Default: `posted desc`.
-* `status="status"`
-Restrict to articles with the specified `status`.
-Values: `live` or `sticky`.
-Default: `live`.
-* `time="time"`
-Restrict to articles posted within specified timeframe.
-Values: `past`, `future` or `any` (both `past` and `future`).
-Default: `past`.
+: Each field in the `textpattern` database table can be used as a sort key.
+: Default: `posted desc`.
+
+`status="status"`
+: Restrict to articles with the specified `status`.
+: Values: `live` or `sticky`.
+: Default: `live`.
+
+`time="time"`
+: Restrict to articles posted within specified timeframe.
+: Values: `past`, `future` or `any` (both `past` and `future`).
+: Default: `past`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* `break="value"`
-Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-Default: `br` (but see @@break cross-reference@@ for exceptions).
-* `class="class name"`
-HTML `class` to apply to the `wraptag` attribute value.
-Default: tag name or unset (see @@class cross-reference@@).
-* `label="text"`
-Label prepended to item.
-Default: unset (but see @@label cross-reference@@ for exceptions).
-* `labeltag="element"`
-HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-Default: unset.
-* `wraptag="element"`
-HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+`break="value"`
+: Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
+: Default: `br` (but see @@break cross-reference@@ for exceptions).
+
+`class="class name"`
+: HTML `class` to apply to the `wraptag` attribute value.
+: Default: tag name or unset (see @@class cross-reference@@).
+
+`label="text"`
+: Label prepended to item.
+: Default: unset (but see @@label cross-reference@@ for exceptions).
+
+`labeltag="element"`
+: HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
+: Default: unset.
+
+`wraptag="element"`
+: HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
+: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 
