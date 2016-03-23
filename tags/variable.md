@@ -39,10 +39,11 @@ Note: Avoid entering white space characters for better code readability between 
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `name="text"`
-The variable name for which you wish to assign a value. Valid variable names must not contain any single or double quotes.
-* `value="value"`
-(Optionally) define the value to which you wish to set the variable. Without this attribute, the tag returns the current value assigned to the named variable.
+`name="text"`
+: The variable name for which you wish to assign a value. Valid variable names must not contain any single or double quotes.
+
+`value="value"`
+: (Optionally) define the value to which you wish to set the variable. Without this attribute, the tag returns the current value assigned to the named variable.
 
 ## Examples
 

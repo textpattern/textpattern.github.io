@@ -30,9 +30,9 @@ For the container tag usage, see the [yield](yield) tag.
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `form="form name"`
-Use specified form.
-Default: unset (no output).
+`form="form name"`
+: Use specified form.
+: Default: unset (no output).
 
 ## Examples
 

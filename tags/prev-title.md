@@ -27,7 +27,7 @@ The container tag [link_to_prev](link-to-prev) wraps the text or tag and assigns
 
 ## Attributes
 
-This tag takes no attributes.
+This tag has no attributes.
 
 ## Examples
 

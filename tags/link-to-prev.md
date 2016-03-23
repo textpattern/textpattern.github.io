@@ -29,10 +29,10 @@ If used as a container tag, the HTML required to output a hyperlink is returned;
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `showalways="boolean"`
-Show the wrapped value even when no previous article exists.
-Values: `0` (no) or `1` (yes).
-Default: `0`.
+`showalways="boolean"`
+: Show the wrapped value even when no previous article exists.
+: Values: `0` (no) or `1` (yes).
+: Default: `0`.
 
 ## Examples
 

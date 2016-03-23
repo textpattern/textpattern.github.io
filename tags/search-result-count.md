@@ -30,9 +30,9 @@ Note: The [if_search](if-search) conditional tag is required to recognize actual
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `text="text"`
-Text to display with the number of matches.
-Default: `articles found`.
+`text="text"`
+: Text to display with the number of matches.
+: Default: `articles found`.
 
 ## Examples
 

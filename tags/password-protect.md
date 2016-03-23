@@ -28,12 +28,13 @@ The **password_protect** tag can be used as either a *single* tag or *container*
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `login="text"`
-The username the user has to enter.
-Default: unset.
-* `pass="text"`
-The password the user has to enter.
-Default: unset.
+`login="text"`
+: The username the user has to enter.
+: Default: unset.
+
+`pass="text"`
+: The password the user has to enter.
+: Default: unset.
 
 ## Examples
 

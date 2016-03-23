@@ -28,41 +28,48 @@ The **search_input** tag is a *single* tag. This tag will provide a text entry f
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `button="text"`
-Creates and labels a button to initiate the search.
-Default: unset (no button is created).
-* `form="form name"`
-Use specified form template to build a customized HTML form.
-Default: `search_input`.
-* `html_id="id"`
-The HTML `id` attribute assigned to the search form.
-Default: unset.
-* `match="match type"`
-Set the search mode. Choose from:
-`exact`: search terms must exactly match the words in the article in the order given. This mode is also automatically selected if the search term is surrounded with double quotes.
-`any`: any of the search terms in an article will cause it to show up in the results.
-`all`: all of the search terms in the article must exist (in any order) for the article to be included in the results.
-Default `exact`.
-* `section="section name"`
-Use the specified section as the destination page that will display the search results.
-Default: unset (use the front page).
-* `size="integer"`
-Sets the `size` attribute of the search `input` field.
-Default: `15`.
+`button="text"`
+: Creates and labels a button to initiate the search.
+: Default: unset (no button is created).
+
+`form="form name"`
+: Use specified form template to build a customized HTML form.
+: Default: `search_input`.
+
+`html_id="id"`
+: The HTML `id` attribute assigned to the search form.
+: Default: unset.
+
+`match="match type"`
+: Set the search mode. Choose from: \\
+`exact`: search terms must exactly match the words in the article in the order given. This mode is also automatically selected if the search term is surrounded with double quotes. \\
+`any`: any of the search terms in an article will cause it to show up in the results. \\
+`all`: all of the search terms in the article must exist (in any order) for the article to be included in the results. \\
+: Default `exact`.
+
+`section="section name"`
+: Use the specified section as the destination page that will display the search results.
+: Default: unset (use the front page).
+
+`size="integer"`
+: Sets the `size` attribute of the search `input` field.
+: Default: `15`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* `class="class name"`
-HTML `class` to apply to the `wraptag` attribute value.
-Default: tag name or unset (see @@class cross-reference@@).
-* `label="text"`
-Label prepended to item.
-Default: unset (but see @@label cross-reference@@ for exceptions).
-* `wraptag="element"`
-HTML element to wrap markup, specified without brackets (e.g. `wraptag="div"`).
-Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+`class="class name"`
+: HTML `class` to apply to the `wraptag` attribute value.
+: Default: tag name or unset (see @@class cross-reference@@).
+
+`label="text"`
+: Label prepended to item.
+: Default: unset (but see @@label cross-reference@@ for exceptions).
+
+`wraptag="element"`
+: HTML element to wrap markup, specified without brackets (e.g. `wraptag="div"`).
+: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

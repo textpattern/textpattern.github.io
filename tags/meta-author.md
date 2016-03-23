@@ -33,18 +33,20 @@ The **meta_author** tag is a *single* tag, used in the head of an individual art
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `escape="html"`
-Escape HTML entities such as `<`, `>` and `&`.
-Values: `html` or unset.
-Default: `html`;
-* `format="boolean"`
-Display as `<meta>` tag or as raw value.
-Values: `meta` or unset.
-Default: `meta` (display as a `<meta>` tag).
-* `title="boolean"`
-Whether to display the author's login name or real name.
-Values: `0` (login name) or `1` (real name).
-Default: `0`.
+`escape="html"`
+: Escape HTML entities such as `<`, `>` and `&`.
+: Values: `html` or unset.
+: Default: `html`;
+
+`format="boolean"`
+: Display as `<meta>` tag or as raw value.
+: Values: `meta` or unset.
+: Default: `meta` (display as a `<meta>` tag).
+
+`title="boolean"`
+: Whether to display the author's login name or real name.
+: Values: `0` (login name) or `1` (real name).
+: Default: `0`.
 
 ## Examples
 

@@ -25,10 +25,10 @@ The **search_result_date** tag is a *single* tag. This tag will provide the arti
 
 ## Attributes
 
-* `format="format string"`
-Override the default date format set in the [Preferences administration panel](../administration/preferences-panel).
-Values: any valid [strftime](http://php.net/strftime) string values, `since`, `iso8601` ([ISO 8601 reference](http://en.wikipedia.org/wiki/ISO_8601)), `w3cdtf` ([W3CDTF reference](http://www.w3.org/TR/NOTE-datetime)), or `rfc822` ([RFC 822 reference](http://www.w3.org/Protocols/rfc822/#z28)).
-Default: the 'Archive date format' set in preferences.
+`format="format string"`
+: Override the default date format set in the [Preferences administration panel](../administration/preferences-panel).
+: Values: any valid [strftime](http://php.net/strftime) string values, `since`, `iso8601` ([ISO 8601 reference](http://en.wikipedia.org/wiki/ISO_8601)), `w3cdtf` ([W3CDTF reference](http://www.w3.org/TR/NOTE-datetime)), or `rfc822` ([RFC 822 reference](http://www.w3.org/Protocols/rfc822/#z28)).
+: Default: the 'Archive date format' set in preferences.
 
 ## Examples
 

@@ -42,17 +42,19 @@ Note: The corresponding keywords field has a 255 character limit by default, whi
 
 ## Attributes
 
-* `escape="html"`
-Escape HTML entities such as `<`, `>` and `&`.
-Values: `html` or unset.
-Default: `html`;
-* `format="value"`
-Display as `<meta>` tag or as raw value.
-Values: `meta` or unset.
-Default: `meta` (display as a `<meta>` tag).
-* `separator="value"`
-Character to be used as the keywords separator.
-Default: unset.
+`escape="html"`
+: Escape HTML entities such as `<`, `>` and `&`.
+: Values: `html` or unset.
+: Default: `html`;
+
+`format="value"`
+: Display as `<meta>` tag or as raw value.
+: Values: `meta` or unset.
+: Default: `meta` (display as a `<meta>` tag).
+
+`separator="value"`
+: Character to be used as the keywords separator.
+: Default: unset.
 
 ## Examples
 

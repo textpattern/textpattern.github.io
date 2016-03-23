@@ -28,10 +28,10 @@ The **link_name** tag is a *single* tag which returns the name of the link as as
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `escape="html"`
-Escape HTML entities such as `<`, `>` and `&`.
-Values: `html` or unset.
-Default: `html`;
+`escape="html"`
+: Escape HTML entities such as `<`, `>` and `&`.
+: Values: `html` or unset.
+: Default: `html`;
 
 ## Examples
 

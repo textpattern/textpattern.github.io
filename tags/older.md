@@ -37,17 +37,19 @@ Note: This tag is context-sensitive, meaning it will only fetch content from the
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `escape="html"`
-Escape HTML entities such as `<`, `>` and `&`.
-Values: `html` or unset.
-Default: `html`.
-* `showalways="boolean"`
-Show wrapped value even when no older page exists.
-Values: `0` (no) or `1` (yes).
-Default: `0`.
-* `title="text"`
-[HTML title attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title) to be applied to link.
-Default: unset.
+`escape="html"`
+: Escape HTML entities such as `<`, `>` and `&`.
+: Values: `html` or unset.
+: Default: `html`.
+
+`showalways="boolean"`
+: Show wrapped value even when no older page exists.
+: Values: `0` (no) or `1` (yes).
+: Default: `0`.
+
+`title="text"`
+: [HTML title attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title) to be applied to link.
+: Default: unset.
 
 ## Examples
 
