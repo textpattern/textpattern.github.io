@@ -40,10 +40,11 @@ Note: In case you are getting unexpected results in an **if_variable** evaluatio
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `name="variable name"`
-The name of the variable you wish to check.
-* `value="value"`
-The (optional) value which the named variable must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns 'true' if the named variable is defined. If this attribute's value is omitted (i.e. `value="`), the tag returns 'true' if the variable is defined, but has no value.
+`name="variable name"`
+: The name of the variable you wish to check.
+
+`value="value"`
+: The (optional) value which the named variable must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns 'true' if the named variable is defined. If this attribute's value is omitted (i.e. `value="`), the tag returns 'true' if the variable is defined, but has no value.
 
 ## Examples
 

@@ -30,19 +30,20 @@ The **if_article_category** tag is a *conditional* tag and always used as an ope
 </txp:if_article_category>
 ~~~
 
-It will execute the contained statement if the category name associated with a particular article (Category1 or Category2) matches the values of the name and number attributes. Should be used in an 'article' type Textpattern [Form@@ template.
+It will execute the contained statement if the category name associated with a particular article (Category1 or Category2) matches the values of the name and number attributes. Should be used in an 'article' type Textpattern @@Form@@ template.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `name="category"`
-Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the [Categories administration panel](../administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes `my-category-name` when used in tags.
-Default: unset.
-* `number="number"`
-Match category in Category1 or Category2 (or both).
-Values: `1` or `2`.
-Default: unset, causing both categories to be matched against the specified name.
+`name="category"`
+: Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the [Categories administration panel](../administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes `my-category-name` when used in tags.
+: Default: unset.
+
+`number="number"`
+: Match category in Category1 or Category2 (or both).
+: Values: `1` or `2`.
+: Default: unset, causing both categories to be matched against the specified name.
 
 ## Examples
 

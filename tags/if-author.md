@@ -40,16 +40,17 @@ Note: This is **not** the same as checking if the current article was written (p
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `name="author"`
-Comma-separated list of author names.
-Default: unset, which determines whether 'any' author listing is being viewed.
-* `type="context"`
-Textpattern context to check against. You can choose from the following contexts (set to empty to include all contexts):
-`article` is this an article author list?
-`image` is this an image author list?
-`file` is this a file author list?
+`name="author"`
+: Comma-separated list of author names.
+: Default: unset, which determines whether 'any' author listing is being viewed.
+
+`type="context"`
+: Textpattern context to check against. You can choose from the following contexts (set to empty to include all contexts): \\
+`article` is this an article author list? \\
+`image` is this an image author list? \\
+`file` is this a file author list? \\
 `link` is this a link author list?
-Default: `article`.
+: Default: `article`.
 
 ## Examples
 

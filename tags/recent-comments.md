@@ -50,15 +50,15 @@ Default: `0`.
 * `sort="sort value(s)"`
 How to sort resulting list.
 Values:
-`discussid` (comment ID#)
-`email"`
+`discussid` (comment ID#).
+`email`.
 `ip` ([IP address](http://en.wikipedia.org/wiki/IP_address)).
-`message"`
-`name"`
-`parentid` (article ID#)
-`posted"`
+`message`.
+`name`.
+`parentid` (article ID#).
+`posted`.
 `rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)).
-`web"`
+`web`.
 Default: `posted asc`.
 
 ### Common presentational attributes

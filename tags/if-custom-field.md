@@ -37,19 +37,22 @@ The tag will execute the contained statements if one or more custom fields for a
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `match="match type"`
-How you wish your value to be tested. Choose from:
-`exact`: value text must exactly match the custom field.
-`any`: checks if any of the given comma-separated list of `value`s occur anywhere in the custom field.
-`all`: checks if all of the given comma-separated list of `value`s occur anywhere in the custom field.
+`match="match type"`
+: How you wish your value to be tested. Choose from: \\
+`exact`: value text must exactly match the custom field. \\
+`any`: checks if any of the given comma-separated list of `value`s occur anywhere in the custom field. \\
+`all`: checks if all of the given comma-separated list of `value`s occur anywhere in the custom field. \\
 `pattern`: allows you to specify a regular expression in your `value` attribute to match against the custom field.
-Default: `exact`.
-* `name="field name"`
-The custom field name you wish to check.
-* `separator="character"`
-If you wish to treat your custom field as a list of items - so that each item is a discrete entity and tested separately when using `any` or `all` matching - specify the delimiter that you use in the custom field. This attribute is ignored if using `exact` or `pattern` matching.
-* `value="field value"`
-The custom field content you want to check for a match.
+: Default: `exact`.
+
+`name="field name"`
+: The custom field name you wish to check.
+
+`separator="character"`
+: If you wish to treat your custom field as a list of items - so that each item is a discrete entity and tested separately when using `any` or `all` matching - specify the delimiter that you use in the custom field. This attribute is ignored if using `exact` or `pattern` matching.
+
+`value="field value"`
+: The custom field content you want to check for a match.
 
 ## Examples
 
@@ -156,5 +159,5 @@ Other tags used: [else](else).
 
 ### Version 4.3.0
 
-`val` attribute deprecated and renamed to `value`.
+`val` attribute deprecated and renamed to `value`. \\
 `matc` and `separator` attributes added.

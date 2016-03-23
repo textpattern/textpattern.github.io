@@ -39,9 +39,9 @@ Note: The `name` attribute requires an author's login name **not** their real na
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `name="author"`
-Comma-separated list of author names.
-Default: unset (i.e.,any author at all).
+`name="author"`
+: Comma-separated list of author names.
+: Default: unset (i.e.,any author at all).
 
 ## Examples
 

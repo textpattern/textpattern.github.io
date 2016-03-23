@@ -37,8 +37,8 @@ It tests the existence and/or value of a content set with the [yield](yield) tag
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `value="value"`
-The (optional) value which the yield content must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns 'true' if the yield content is defined. If this attribute's value is omitted (i.e. `value="`), the tag returns 'true' if yield content is defined, but has no value.
+`value="value"`
+: The (optional) value which the yield content must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns 'true' if the yield content is defined. If this attribute's value is omitted (i.e. `value="`), the tag returns 'true' if yield content is defined, but has no value.
 
 ## Examples
 

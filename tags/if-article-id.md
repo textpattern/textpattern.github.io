@@ -37,9 +37,9 @@ The tag will execute the contained statement if the article id associated with a
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `id="integer"`
-Comma delimited integer article ID list.
-Default: current article's ID if available (i.e.,on a page that displays a single article).
+`id="integer"`
+: Comma delimited integer article ID list.
+: Default: current article's ID if available (i.e.,on a page that displays a single article).
 
 ## Examples
 

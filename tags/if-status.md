@@ -38,9 +38,9 @@ This tag provides a method of sharing one page template between common pages and
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `status="number"`
-Numerical [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
-Default: `200` (OK).
+`status="number"`
+: Numerical [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+: Default: `200` (OK).
 
 ## Examples
 

@@ -27,9 +27,9 @@ The tag will execute the contained statement if the current article's 'Keywords'
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `keywords="keywords"`
-Comma-separated list of keywords.
-Default: unset, which determines whether any keywords are assigned to the article.
+`keywords="keywords"`
+: Comma-separated list of keywords.
+: Default: unset, which determines whether any keywords are assigned to the article.
 
 ## Examples
 

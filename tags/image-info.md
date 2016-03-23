@@ -28,47 +28,52 @@ The **image_info** tag is a *single* tag that Textpattern will replace with the 
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `escape="html"`
-Escape HTML entities such as `<`, `>` and `&`.
-Values: `html` or unset.
-Default: `html`;
-* `id="integer"`
-An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](../administration/images-panel).
-Default: unset.
-* `name="image name"`
-An image to display, given by its image name as shown on the [Images administration panel](../administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
-Default: unset.
-* `type="information type"`
-One or more of the following values to display the particular pieces of information from the current image.
-Values:
-`alt`: image `alt` content.
-`author`: image author's login name (see [image_author](image-author) to display the author's real name).
-`caption`: image `caption` content.
-`category`: image category name.
-`category_title`: image category title.
-`date`: timestamp of image upload (this is not very useful, so consult [image_date](image-date) for a better alternative).
-`ext`: image extension.
-`h`: image height.
-`id`: image id.
-`name`: image name.
-`thumb_w`: image thumbnail width.
-`thumb_h`: image thumbnail height.
+`escape="html"`
+: Escape HTML entities such as `<`, `>` and `&`.
+: Values: `html` or unset.
+: Default: `html`;
+
+`id="integer"`
+: An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](../administration/images-panel).
+: Default: unset.
+
+`name="image name"`
+: An image to display, given by its image name as shown on the [Images administration panel](../administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
+: Default: unset.
+
+`type="information type"`
+: One or more of the following values to display the particular pieces of information from the current image.
+: Values: \\
+`alt`: image `alt` content. \\
+`author`: image author's login name (see [image_author](image-author) to display the author's real name). \\
+`caption`: image `caption` content. \\
+`category`: image category name. \\
+`category_title`: image category title. \\
+`date`: timestamp of image upload (this is not very useful, so consult [image_date](image-date) for a better alternative). \\
+`ext`: image extension. \\
+`h`: image height. \\
+`id`: image id. \\
+`name`: image name. \\
+`thumb_w`: image thumbnail width. \\
+`thumb_h`: image thumbnail height. \\
 `w`: image width.
-Default: `caption`.
+: Default: `caption`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* `break="value"`
-Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-Default: unset.
-* `class="class name"`
-CSS `class` attribute to apply to the `wraptag`, if set.
-Default: unset (see @@class cross-reference@@).
-* `wraptag="tag"`
-HTML element to wrap the items grabbed from the `type` attribute, specified without brackets (e.g. `wraptag="ul"`).
-Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+`break="value"`
+: Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
+: Default: unset.
+
+`class="class name"`
+: CSS `class` attribute to apply to the `wraptag`, if set.
+: Default: unset (see @@class cross-reference@@).
+
+`wraptag="tag"`
+: HTML element to wrap the items grabbed from the `type` attribute, specified without brackets (e.g. `wraptag="ul"`).
+: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 
