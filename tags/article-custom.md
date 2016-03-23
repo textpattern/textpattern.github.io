@@ -121,23 +121,23 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `sort="sort value(s)"`
 : How to sort resulting list.
-: Values:
-`authorid` (author name).
-`category1`.
-`category2`.
-`comments_count`.
-`custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`.
-`expires` (expiry date).
-`id` (article id#).
-`image` (article image id#).
-`keywords`.
-`lastmod` (date last modified).
-`lastmodid` (author name of last modification).
-`posted` (date posted).
-`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)).
-`section`.
-`status`.
-`title`.
+: Values: \\
+`authorid` (author name). \\
+`category1`. \\
+`category2`. \\
+`comments_count`. \\
+`custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`. \\
+`expires` (expiry date). \\
+`id` (article id#). \\
+`image` (article image id#). \\
+`keywords`. \\
+`lastmod` (date last modified). \\
+`lastmodid` (author name of last modification). \\
+`posted` (date posted). \\
+`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
+`section`. \\
+`status`. \\
+`title`. \\
 `url_title`.
 : Each field in the `textpattern` database table can be used as a sort key.
 : Default: `posted desc`.
