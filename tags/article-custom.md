@@ -59,6 +59,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Whether to use override forms for the generated article list.
 : Values: `0` (no) or `1` (yes).
 : Default: `0`.
+
 `author="author name"`
 : Restrict to articles by specified author(s) **login name**.
 : Values: (comma separated list of) author login name(s).
