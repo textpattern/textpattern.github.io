@@ -57,7 +57,7 @@ Values (comma separated):
 `author`.
 `category1`.
 `category2`.
-`custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`.
+`customfieldname` where `customfieldname` is the name of your custom field.
 `keywords`.
 Default: `category1,category2`.
 * `no_widow="boolean"`
