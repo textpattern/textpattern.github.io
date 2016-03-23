@@ -8,49 +8,51 @@ tags:
   - detailed
 ---
 
-h1. Installing Textpattern
+# Installing Textpattern
 
-These are detailed instructions for installing Textpattern. The instructions follow a process of using a (S)FTP client, which you presumably have. ("Transmit":https://www.panic.com/transmit/ is a popular choice for Mac, and "WinSCP":http://sourceforge.net/projects/winscp/ is for Windows.) If you're familiar with installing CMS software and prefer the quick notes, see the "__README.txt__":https://github.com/textpattern/textpattern/blob/master/README.txt file that's included in the install package. If you're more of a command-line jockey, the bits in "working with the development branch":http://docs.textpattern.io/development/txp-repositories should suit you.
+These are detailed instructions for installing Textpattern. The instructions follow a process of using a (S)FTP client, which you presumably have. ([Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, and [WinSCP](http://sourceforge.net/projects/winscp/ is for Windows.)) If you're familiar with installing CMS software and prefer the quick notes, see the [__README.txt__](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. If you're more of a command-line jockey, the bits in [working with the development branch](http://docs.textpattern.io/development/txp-repositories) should suit you.
 
 On this page:
 
-* "Create your database":#sec1
-* "Download and unpack Textpattern":#sec2
-* "Upload package to web server":#sec3
-* "Setup and configuration":#sec4
-** "Select language":#sec4-1
-** "Step 1: Set database details":#sec4-2
-** "Step 2: Add config file":#sec4-3
-** "Step 3: Populate database":#sec4-4
-** "Step 4: Go!":#sec4-5
+- [Create your database]:#create-your-database
+- [Download and unpack Textpattern]:#download-and-unpack-textpattern
+- [Upload package to web server]:#upload-package-to-web-server
+- [Setup and configuration]:#setup-and-configuration
+    - [Select language]:#select-language
+    - [Step 1: Set database details]:#step-1-set-database-details
+    - [Step 2: Add config file]:#step-2-add-config-file
+    - [Step 3: Populate database]:#step-3-populate-database
+    - [Step 4: Go!]:#step-4-go
 
 
-h2(#sec1). Create your database
+## Create your database
 
 Before you can install Textpattern, you will need a MySQL database ready, and a user account with 'write' privileges to go with it. It's a hurdle you jump on your web host's side of things, but now is a good time to take care of it so it's not holding up the Textpattern install/setup process later. 
 
 Record this information when you create the database and keep it handy. It will be used later in the setup process:
 
-* database login
-* database password
-* database name
+- database login
+- database password
+- database name
 
 Depending on your web host, your web host account username (or ID, whatever) may be prefixed on the database name and database login. If this is the case for you, it will be evident when creating the database with your web host. 
 
-For example, if your web host ID was your last name ("lname") and you named your database "oceans" and chose "me" as a database login, then your actual database name and login to use in "Step 1":#sec4-2 would be "lname_oceans" and "lname_me", respectively. 
+For example, if your web host ID was your last name ("lname") and you named your database "oceans" and chose "me" as a database login, then your actual database name and login to use in [Step 1](#step-1-set-database-details) would be `lname_oceans` and `lname_me`, respectively. 
 
-h2(#sec2). Download and unpack Textpattern
+## Download and unpack Textpattern
 
 Now we begin the Textpattern part of the deal:
 
-# Create a folder on your local drive and name it something recognizable (e.g., _txp-new_). 
-# "Download":http://textpattern.com/download the latest release package (either __.zip__ or __.tar.gz__, as you prefer). 
-# Move the zip package to the folder you created.
-# Unzip the package.
+1. Create a folder on your local drive and name it something recognizable (e.g., `txp-new`). 
+2. [Download](http://textpattern.com/download the latest release package) (either '.zip' or '.tar.gz', as you prefer). 
+3. Move the zip package to the folder you created.
+4. Unzip the package.
 
 The zip package will have a folder/file tree matching that in the ["Textpattern repo":https://github.com/textpattern/textpattern].[1] Following are the folders and files you'll see.
 
-notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+TODO:
+~~~ html
+<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Item |_. Type |_. Removable? |_. What it's for |
 | __files__ | directory | no | Empty by default. It's where content files (__.pdf__, __.docx__, __.rtf__, __.epub__, __.txt__, etc.) will go when/if you upload them in the "**Files**":http://docs.textpattrn.io/administration/files-panel panel. You may see a warning about the file's @chmod@ status (editing rights) in the "**Diagnostics**":/administration/diagnostics-panel panel. |
@@ -69,13 +71,14 @@ notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table
 | __LICENSE-LESSER.txt__ | file | no | The GNU LESSER GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone. |
 | __LICENSE.txt__ | file | no | The GNU GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone. |
 
-notextile. </div>
+</div>
+~~~
 
 fn1. Do not move files in the tree or change their names. Doing so will render Textpattern useless.
 
 fn2. This type of file is a "hidden" sever file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Macbook Pro laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them. 
 
-h2(#sec3). Upload package to web server
+## Upload package to web server
 
 If you intend to use Textpattern to manage the entire website, you'll upload the install package to your web root (i.e., the root of your web domain). For many hosts, the path to the root looks like this: __/users/home/{username}/web/public/__, where {username} is your user account name. You would upload the Textpattern package to the __/public__ directory (equal to _yourdomain.tld_). 
 
@@ -89,7 +92,7 @@ When ready:
 # If not done automatically by the FTP/SFTP client, make a second connection to your local drive and navigate to where you have the unzipped Textpattern install package waiting.
 # Select the package file tree (the folders and files _inside_ the unzipped version number folder) on your local drive and drag/drop them to your web server directory.
 
-h2(#sec4). Setup and configuration
+## Setup and configuration
 
 Now you'll walk through the setup process, which is a series of screens. Have you're "database information":#sec1 ready. Assuming you uploaded the install file tree to your web root, open a browser and go to __http://domain.tld/textpattern/setup/__. (If you installed Textpattern in a subdirectory, the path would reflect that.)
 
@@ -139,9 +142,9 @@ If all went well in the previous screen, you'll advance to screen 2, which is co
 
 This part shows if Textpattern has actually communicated successfully with your database using the information from the previous screen. If so, you'll see this:
 
-bq.. %(success)Connected%
+> %(success)Connected%
 
-%(success)Using {database} ({encoding})%
+> %(success)Using {database} ({encoding})%
 
 p. Where {database} is the name of your database and {encoding} is the character encoding your database is configured to use -- ideally "utf8".[5]
 
@@ -149,7 +152,8 @@ p. Where {database} is the name of your database and {encoding} is the character
 
 Then it's time to create your Textpattern configuration file in the __/textpattern__ directory. Textpattern makes this easy by generating the __config.php__ file contents based on your successful connection details. The code will look like this, but with your own data values entered:
 
-bc. <?php
+~~~ php
+<?php
 $txpcfg['db'] = 'database';
 $txpcfg['user'] = 'login';
 $txpcfg['pass'] = 'password';
@@ -159,19 +163,20 @@ $txpcfg['txpath'] = '/server/path/to/textpattern/install/directory';
 $txpcfg['dbcharset'] = 'utf8';
 $txpcfg['client_flags'] = 0;
 ?>
+~~~ html
 
 Proceed as follows:
 
-# Use your S/FTP client to connect to your web host, navigate to the installation directory, and open __/textpattern/config-dist.php__ in your text editor of choice.
-# Copy the code that Textpattern generated for you in the current screen.
-# Paste the code into the __config-dist.php__ file, completely overwriting its entire contents. 
-# Save the file, close it, then rename it by removing "-dist" from the file name, leaving __config.php__.
+1. Use your S/FTP client to connect to your web host, navigate to the installation directory, and open `/textpattern/config-dist.php` in your text editor of choice.
+2. Copy the code that Textpattern generated for you in the current screen.
+3. Paste the code into the `config-dist.php` file, completely overwriting its entire contents. 
+4. Save the file, close it, then rename it by removing `-dist` from the file name, leaving `config.php`.
 
 Return to the **Add config file** screen in your browser and click the **I did it** button.
 
 fn5. If you want to change your character encoding, you'll need to do that at your database. But finish installing first, then change the database encoding later.
 
-h3(#sec4-4). Step 3: Populate database
+### Step 3: Populate database
 
 This screen, step 3, is where you create your Textpattern administrator account. Doing so also populates the database with the necessary Textpattern tables and the CMS–database bridge is complete. The screen has two sections: **Creating database tables** and **Site configuration**.
 
@@ -179,10 +184,10 @@ This screen, step 3, is where you create your Textpattern administrator account.
 
 To create the administrator account and generate the database tables, add the following information, and remember the login/password (you'll need it to log in):[6]
 
-* Full name (e.g, Jane Doe)
-* Login name
-* Password
-* Email address
+- Full name (e.g, Jane Doe)
+- Login name
+- Password
+- Email address
 
 *Site configuration*
 
@@ -194,14 +199,14 @@ fn6. The login name and password should *not* be the same login and password use
 
 fn7. This section may be obsolete in future versions of Textpattern. Hive may become the only officially-supported admin theme, thus no selection process here will be needed. The Classic and Remora themes will be available as add-ons post-installation, like any other admin-theme.
 
-h3(#sec4-5). Step 4: Go! (first admin-side log in)
+### Step 4: Go!
 
 The final step is essentially a confirmation screen with a link to the administration login location for your new Textpattern site. Congratulations! You've installed one of the best open source CMS systems available.
 
-The screen will also suggest deleting the __/setup__ directory for security reasons, and troubleshooting your diagnostics. But when first logging in, Textpattern will land you at a location not mentioned in this screen, so here's the optimal course of action to take once you arrive at this confirmation step:
+The screen will also suggest deleting the `/setup` directory for security reasons, and troubleshooting your diagnostics. But when first logging in, Textpattern will land you at a location not mentioned in this screen, so here's the optimal course of action to take once you arrive at this confirmation step:
 
-# Use your S/FTP client to connect to your web server. Go to the __/textpattern/setup__ directory, and delete it (contents too). This eliminates one potential diagnostic warning you would otherwise see later.
-# Return to your browser screen and click the "Main interface" link, which takes you to the administration login location. Log in using your new administrator account details (entered on the previous install screen), and check the box for remembering you, if you like. 
-# The **Go!** screen says to go to **Diagnostics**, but you'll actually land on the "**Languages**":http://docs.textpattern.io/administration/languages-panel panel, where you add new languages and change the default, if desired.  
-# Proceed to the "**Diagnostics**":http://docs.textpattern.io/administration/ panel, as Textpattern suggested, to troubleshoot any warnings and errors you see.
-# Go to the public side of your website (the homepage), easy to do by clicking its name in the navigation bar of any admin-side location. Read the tips and suggestions provided on the default article titled, __Welcome to your site!__ They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.
+1. Use your S/FTP client to connect to your web server. Go to the `/textpattern/setup` directory, and delete it (contents too). This eliminates one potential diagnostic warning you would otherwise see later.
+2. Return to your browser screen and click the "Main interface" link, which takes you to the administration login location. Log in using your new administrator account details (entered on the previous install screen), and check the box for remembering you, if you like. 
+3. The **Go!** screen says to go to **Diagnostics**, but you'll actually land on the "**Languages**":http://docs.textpattern.io/administration/languages-panel panel, where you add new languages and change the default, if desired.  
+4. Proceed to the "**Diagnostics**":http://docs.textpattern.io/administration/ panel, as Textpattern suggested, to troubleshoot any warnings and errors you see.
+5. Go to the public side of your website (the homepage), easy to do by clicking its name in the navigation bar of any admin-side location. Read the tips and suggestions provided on the default article titled, 'Welcome to your site'. They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.
