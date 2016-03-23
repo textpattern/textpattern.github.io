@@ -29,20 +29,21 @@ The **comments_form** tag is a *single* tag which is used to display a comment f
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `form="form name"`
-Use specified form template.
-Default: `comment_form`.
+`form="form name"`
+: Use specified form template.
+: Default: `comment_form`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* `class="CSS class name"`
-HTML `class` to apply to the `wraptag` attribute value.
-Default: `comments_form` (see @@class cross-reference@@).
-* `wraptag="tag"`
-HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+`class="CSS class name"`
+: HTML `class` to apply to the `wraptag` attribute value.
+: Default: `comments_form` (see @@class cross-reference@@).
+
+`wraptag="tag"`
+: HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
+: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 
@@ -83,7 +84,7 @@ Other tags used: [comment_id](comment-id), [comments](comments), [if_comments_al
 
 ### Version 4.6.0
 
-`msgstyle` attribute deprecated.
+`msgstyle` attribute deprecated. \\
 `forgetlabel`, `isize`, `msgcols`, `msgrows`, `msgstyle`, `previewlabel`, `rememberlabel` and `submitlabel` attributes deprecated and functionality moved to individual `comment_*` input tags.
 
 ### Version 4.5.0

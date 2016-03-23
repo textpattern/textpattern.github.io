@@ -29,14 +29,15 @@ The **author_email** tag is a *single* tag that is used to return the email addr
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `escape="html"`
-Escape HTML entities such as `<`, `>` and `&`.
-Values: `html` or unset.
-Default: `html`.
-* `link="boolean"`
-Make text a `mailto:` link.
-Values: `0` (no) or `1` (yes).
-Default: `0`.
+`escape="html"`
+: Escape HTML entities such as `<`, `>` and `&`.
+: Values: `html` or unset.
+: Default: `html`.
+
+`link="boolean"`
+: Make text a `mailto:` link.
+: Values: `0` (no) or `1` (yes).
+: Default: `0`.
 
 ## Examples
 

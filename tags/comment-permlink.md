@@ -28,10 +28,10 @@ The **comment_permlink** tag is a *container* tag which is used to return the pe
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `anchor="boolean"`
-Whether to apply the comment's ID number to the hyperlink tag (as the `id` attribute), setting this comment permanent link as the comment page anchor.
-Values: `0` (no) or `1` (yes).
-Default: `0`.
+`anchor="boolean"`
+: Whether to apply the comment's ID number to the hyperlink tag (as the `id` attribute), setting this comment permanent link as the comment page anchor.
+: Values: `0` (no) or `1` (yes).
+: Default: `0`.
 
 ## Examples
 

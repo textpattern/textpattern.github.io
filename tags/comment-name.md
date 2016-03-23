@@ -30,10 +30,10 @@ Commenter's name and/or email address can be set as a requirement. Should be use
 
 This tag will accept the following attributes (**case-sensitive**):
 
-* `link="boolean"`
-Make text a link to the author's URL/email (depending on the information given).
-Values: `0` (no) or `1` (yes).
-Default: `0`.
+`link="boolean"`
+: Make text a link to the author's URL/email (depending on the information given).
+: Values: `0` (no) or `1` (yes).
+: Default: `0`.
 
 ## Examples
 

@@ -30,29 +30,32 @@ This tag can be used in both a Textpattern @@Page template@@ and a @@Form templa
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `showalways="boolean"`
-Whether to display invite on individual article page.
-Values: `0` (no) or `1` (yes).
-Default: `0`.
-* `showcount="boolean"`
-Whether to display comment count.
-Values: `0` (no) or `1` (yes).
-Default: `1`.
-* `textonly="boolean"`
-Whether to display invite as text, rather than a hyperlink.
-Values: `0` (no) or `1` (yes).
-Default: `0`.
+`showalways="boolean"`
+: Whether to display invite on individual article page.
+: Values: `0` (no) or `1` (yes).
+: Default: `0`.
+
+`showcount="boolean"`
+: Whether to display comment count.
+: Values: `0` (no) or `1` (yes).
+: Default: `1`.
+
+`textonly="boolean"`
+: Whether to display invite as text, rather than a hyperlink.
+: Values: `0` (no) or `1` (yes).
+: Default: `0`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* `class="class name"`
-HTML `class` to apply to the `wraptag` attribute value.
-Default: `comments_invite` (see @@class cross-reference@@).
-* `wraptag="tag"`
-HTML tag to wrap around invite text, specified without brackets (e.g. `wraptag="p"`).
-Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+`class="class name"`
+: HTML `class` to apply to the `wraptag` attribute value.
+: Default: `comments_invite` (see @@class cross-reference@@).
+
+`wraptag="tag"`
+: HTML tag to wrap around invite text, specified without brackets (e.g. `wraptag="p"`).
+: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

@@ -29,23 +29,25 @@ The **comments_preview** tag is a *single* tag which is used to display a previe
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `form="form name"`
-Use specified form template to process each comment.
-Default: `comments`.
-* `label="text"`
-Label that appears on the 'Preview' button.
-Default: `Preview` (localized).
+`form="form name"`
+: Use specified form template to process each comment.
+: Default: `comments`.
+
+`label="text"`
+: Label that appears on the 'Preview' button.
+: Default: `Preview` (localized).
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* `class="class name"`
-HTML `class` to apply to the `wraptag` attribute value.
-Default: `comments_preview` (see @@class cross-reference@@).
-* `wraptag="tag"`
-HTML tag to wrap around the list, specified without brackets (e.g. `wraptag="div"`).
-Default: depends upon 'Present Comments as a Numbered List?' preference setting - either `ol` or unset (but see @@wraptag cross-reference@@ for exceptions).
+`class="class name"`
+: HTML `class` to apply to the `wraptag` attribute value.
+: Default: `comments_preview` (see @@class cross-reference@@).
+
+`wraptag="tag"`
+: HTML tag to wrap around the list, specified without brackets (e.g. `wraptag="div"`).
+: Default: depends upon 'Present Comments as a Numbered List?' preference setting - either `ol` or unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Genealogy
 

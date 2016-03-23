@@ -29,9 +29,9 @@ The **comment_submit** tag is a *single* tag which is used to display a 'Submit'
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `label="text"`
-Label that appears on the 'Submit' button.
-Default: `Submit` (localized).
+`label="text"`
+: Label that appears on the 'Submit' button.
+: Default: `Submit` (localized).
 
 ## Examples
 

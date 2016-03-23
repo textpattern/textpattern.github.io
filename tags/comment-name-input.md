@@ -29,9 +29,9 @@ The **comment_name_input** tag is a *single* tag which is used to display a text
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `size="integer"`
-HTML `size` attribute to be applied to the HTML form text `input` field.
-Default: `25`.
+`size="integer"`
+: HTML `size` attribute to be applied to the HTML form text `input` field.
+: Default: `25`.
 
 ## Examples
 

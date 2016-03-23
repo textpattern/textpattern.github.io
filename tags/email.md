@@ -29,18 +29,20 @@ The **email** tag is both a *single* tag and a *container* tag. Textpattern will
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `email="value"`
-The email address from which to make the link.
-Values: Any valid email address.
-Default: unset.
-* `linktext="value"`
-The displayed link text.
-Values: Any text.
-Default: `Contact`.
-* `title="value"`
-The `title` attribute to assign to the link.
-Values: Any valid HTML title.
-Default: unset.
+`email="value"`
+: The email address from which to make the link.
+: Values: Any valid email address.
+: Default: unset.
+
+`linktext="value"`
+: The displayed link text.
+: Values: Any text.
+: Default: `Contact`.
+
+`title="value"`
+: The `title` attribute to assign to the link.
+: Values: Any valid HTML title.
+: Default: unset.
 
 ## Examples
 

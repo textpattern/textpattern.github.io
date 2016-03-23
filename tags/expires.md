@@ -29,29 +29,32 @@ The **expires** tag is a *single* tag used to indicate when an article should no
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `format="format string"`
-Override the default date format set in the [Preferences administration panel](../administration/preferences-panel).
-Values: any valid [strftime](http://php.net/strftime) string values.
-Default: the 'Archive date format' set in preferences.
-* `gmt="boolean"`
-Return either local time (according to the set time zone preferences) or GMT.
-Values: `0` (local time) or `1` (GMT).
-Default: `0`.
-* `lang="ISO language code"`
-Format time string suitable for the specified language (locale).
-Values: locales adhere to [ISO-639](http://en.wikipedia.org/wiki/ISO_639-2).
-Default: unset (time format set in the [Preferences administration panel](../administration/preferences-panel).
+`format="format string"`
+: Override the default date format set in the [Preferences administration panel](../administration/preferences-panel).
+: Values: any valid [strftime](http://php.net/strftime) string values.
+: Default: the 'Archive date format' set in preferences.
+
+`gmt="boolean"`
+: Return either local time (according to the set time zone preferences) or GMT.
+: Values: `0` (local time) or `1` (GMT).
+: Default: `0`.
+
+`lang="ISO language code"`
+: Format time string suitable for the specified language (locale).
+: Values: locales adhere to [ISO-639](http://en.wikipedia.org/wiki/ISO_639-2).
+: Default: unset (time format set in the [Preferences administration panel](../administration/preferences-panel).
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* `class="class name"`
-HTML `class` to apply to the `wraptag` attribute value.
-Default: tag name or unset (see @@class cross-reference@@).
-* `wraptag="element"`
-HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+`class="class name"`
+: HTML `class` to apply to the `wraptag` attribute value.
+: Default: tag name or unset (see @@class cross-reference@@).
+
+`wraptag="element"`
+: HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
+: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

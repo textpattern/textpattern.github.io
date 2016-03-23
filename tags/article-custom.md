@@ -138,7 +138,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `section`. \\
 `status`. \\
 `title`. \\
-`url_title`.
+`url_title`. \\
 : Each field in the `textpattern` database table can be used as a sort key.
 : Default: `posted desc`.
 
@@ -298,8 +298,8 @@ Outputs articles specified by list of IDs, in the order given in the `sort` fiel
 
 ### Version 4.0.7
 
-Can be used as a container tag.
-`id` attribute can take a comma-separated list of IDs.
+Can be used as a container tag. \\
+`id` attribute can take a comma-separated list of IDs. \\
 `wraptag` and `break` attributes added.
 
 ### Version 4.0.6
@@ -308,6 +308,6 @@ Support added for comma separated lists for `section`, `category` and `author` a
 
 ### Version 4.0.4
 
-`listform` attribute deprecated (it never made a difference to `article_custom` anyway).
-`sort` attribute added (replaces `sortby` and `sortdir` attributes).
+`listform` attribute deprecated (it never made a difference to `article_custom` anyway). \\
+`sort` attribute added (replaces `sortby` and `sortdir` attributes). \\
 `sortby` and `sortdir` attributes deprecated.

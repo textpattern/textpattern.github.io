@@ -35,14 +35,16 @@ Also see the [if_custom_field](if-custom-field) conditional tag, which provides 
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `default="value"`
-Default value to use when field is empty.
-* `escape="html"`
-Escape HTML entities such as `<`, `>` and `&` prior to echoing the field contents.
-Values: `html` or unset.
-Default: `html`;
-* `name="fieldname"`
-Display specified custom field.
+`default="value"`
+: Default value to use when field is empty.
+
+`escape="html"`
+: Escape HTML entities such as `<`, `>` and `&` prior to echoing the field contents.
+: Values: `html` or unset.
+: Default: `html`;
+
+`name="fieldname"`
+: Display specified custom field.
 
 ## Examples
 

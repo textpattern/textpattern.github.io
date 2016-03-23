@@ -28,21 +28,22 @@ The **file_download_description** tag is a *single* tag which Textpattern will r
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `escape="html"`
-Escape HTML entities such as `<`, `>` and `&` for the file's `description` attributes.
-Values: `html` or unset.
-Default: `html`.
+`escape="html"`
+: Escape HTML entities such as `<`, `>` and `&` for the file's `description` attributes.
+: Values: `html` or unset.
+: Default: `html`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* `class="class name"`
-HTML `class` to apply to the `wraptag` attribute value.
-Default: unset (see @@class cross-reference@@).
-* `wraptag="element"`
-HTML tag to wrap around description text, specified without brackets (e.g. `wraptag="div"`).
-Default: unset.
+`class="class name"`
+: HTML `class` to apply to the `wraptag` attribute value.
+: Default: unset (see @@class cross-reference@@).
+
+`wraptag="element"`
+: HTML tag to wrap around description text, specified without brackets (e.g. `wraptag="div"`).
+: Default: unset.
 
 ## Examples
 

@@ -27,22 +27,23 @@ The **file_download_size** tag is a *single* tag which Textpattern will replace 
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `decimals="places"`
-Number of decimal places to format the value to.
-Default: `2`.
-* `format="numbering style"`
-The way to represent the number, based on the file's expected size.
-Values:
-`b` (bytes)
-`k` (kilobytes)
-`m` (megabytes)
-`g` (gigabytes)
-`t` (terabytes)
-`p` (petabytes)
-`e` (exabytes)
-`z` (zettabytes)
-`y` (yottabytes)
-Default: unset (i.e.,the most appropriate units based on the file size).
+`decimals="places"`
+: Number of decimal places to format the value to.
+: Default: `2`.
+
+`format="numbering style"`
+: The way to represent the number, based on the file's expected size.
+: Values: \\
+`b` (bytes). \\
+`k` (kilobytes). \\
+`m` (megabytes). \\
+`g` (gigabytes). \\
+`t` (terabytes). \\
+`p` (petabytes). \\
+`e` (exabytes). \\
+`z` (zettabytes). \\
+`y` (yottabytes).
+: Default: unset (i.e.,the most appropriate units based on the file size).
 
 ## Examples
 

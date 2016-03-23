@@ -29,12 +29,13 @@ The **comment_message_input** tag is a *single* tag which is used to display a t
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `cols="integer"`
-HTML `cols` attribute to be applied to HTML form `textarea` field.
-Default: `25`.
-* `rows="integer"`
-HTML `rows` attribute to be applied to HTML form `textarea` field.
-Default: `5`.
+`cols="integer"`
+: HTML `cols` attribute to be applied to HTML form `textarea` field.
+: Default: `25`.
+
+`rows="integer"`
+: HTML `rows` attribute to be applied to HTML form `textarea` field.
+: Default: `5`.
 
 ## Examples
 

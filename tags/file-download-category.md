@@ -27,21 +27,22 @@ The **file_download_category** tag is a *single* tag that Textpattern will repla
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `title="boolean"`
-Whether to display the category name or its title.
-Values: `0` (name), or `1` (title).
-Default: `0`.
+`title="boolean"`
+: Whether to display the category name or its title.
+: Values: `0` (name), or `1` (title).
+: Default: `0`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* `class="class name"`
-HTML `class` to apply to the `wraptag` attribute value.
-Default: unset (see @@class cross-reference@@).
-* `wraptag="element"`
-HTML tag to wrap around category text, specified without brackets (e.g. `wraptag="p"`).
-Default: unset.
+`class="class name"`
+: HTML `class` to apply to the `wraptag` attribute value.
+: Default: unset (see @@class cross-reference@@).
+
+`wraptag="element"`
+: HTML tag to wrap around category text, specified without brackets (e.g. `wraptag="p"`).
+: Default: unset.
 
 ## Examples
 

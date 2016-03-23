@@ -29,34 +29,39 @@ The **breadcrumb** tag is a *single* tag which is used to create [breadcrumb nav
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `link="value"`
-Whether to hyperlink breadcrumbs.
-Values: `0` (no) or `1` (yes).
-Default: `1`.
-* `linkclass="class name"`
-HTML class attribute applied to the breadcrumb links.
-Default: unset.
-* `separator="value"`
-Character to be used as the breadcrumb separator.
-Default: ` » `.
-* `title="boolean"`
-Whether to display the title or not.
-Values: `0` (no, display name) or `1` (yes).
-Default: `0`.
+`link="value"`
+: Whether to hyperlink breadcrumbs.
+: Values: `0` (no) or `1` (yes).
+: Default: `1`.
+
+`linkclass="class name"`
+: HTML class attribute applied to the breadcrumb links.
+: Default: unset.
+
+`separator="value"`
+: Character to be used as the breadcrumb separator.
+: Default: ` » `.
+
+`title="boolean"`
+: Whether to display the title or not.
+: Values: `0` (no, display name) or `1` (yes).
+: Default: `0`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* `class="class name"`
-HTML `class` to apply to the `wraptag` attribute value.
-Default: unset (see @@class cross-reference@@).
-* `label="text"`
-Label prepended to item.
-Default: unset (but see @@label cross-reference@@ for exceptions).
-* `wraptag="element"`
-HTML element to wrap breadcrumb block, specified without brackets (e.g. `wraptag="p"`).
-Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+`class="class name"`
+: HTML `class` to apply to the `wraptag` attribute value.
+: Default: unset (see @@class cross-reference@@).
+
+`label="text"`
+: Label prepended to item.
+: Default: unset (but see @@label cross-reference@@ for exceptions).
+
+`wraptag="element"`
+: HTML element to wrap breadcrumb block, specified without brackets (e.g. `wraptag="p"`).
+: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

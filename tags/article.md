@@ -48,96 +48,114 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 
 ### Content/behaviour attributes
 
-* `allowoverride="boolean"`
-Whether to use override forms for the generated article list.
-Values: `0` (no) or `1` (yes).
-Default: `1`.
-* `customfieldname="value"`
-Restrict to articles with specified value for specified custom field name. Replace `customfieldname` with the actual name of the custom field.
-Important: Using dashes `-` or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
-* `form="form name"`
-Use specified form template to process each article.
-Default: `default`.
-* `keywords="keyword(s)"`
-Restrict to articles with specified keyword(s).
-* `limit="integer"`
-The number of articles to display.
-Default: `10`.
-* `listform="form name"`
-Use specified form when page is displaying an article list.
-Default: `article_listing`.
-* `offset="integer"`
-The number of articles to skip.
-Default: `0`.
-* `pageby="integer"`
-The number of articles to jump forward or back when an older or newer link is clicked. Allows you to call the article tag several times on a page without messing up older/newer links.
-Default: value matches the value assigned to `limit`.
-* `pgonly="boolean"`
-Do the article count, but do not display anything. Used when you want to show a search result count, or article navigation tags **before** the list of articles. Just make sure that, other than `pgonly`, both article tags are identical (form-related attributes are the exception, they do not need to be assigned).
-Values: `0` (no) or `1` (yes).
-Default: `0`.
-* `searchall="boolean"`
-When outputting search results, include only those articles with 'Include in site search' set on the [Sections administration panel](../administration/sections-panel). If set to `0`, only articles in the current section are displayed. See @@Fixing search results@@ for more.
-Values: `0` (no) or `1` (yes).
-Default: `1`.
-* `searchform="form name"`
-The form to be used for your customized search results output.
-Default: `search_results`.
-* `searchsticky="boolean"`
-When outputting search results, include articles with status `sticky`.
-Values: `0` (no) or `1` (yes).
-Default: `0`.
-* `sort="sort value(s)"`
-How to sort resulting list.
-Values:
-`authorid` (author name).
-`category1`.
-`category2`.
-`comments_count`.
-`custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`.
-`expires` (expiry date).
-`id` (article id#).
-`image` (article image id#).
-`keywords`.
-`lastmod` (date last modified).
-`lastmodid` (author name of last modification).
-`posted` (date posted).
-`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)).
-`section`.
-`status`.
-`title`.
-`url_title`.
+`allowoverride="boolean"`
+: Whether to use override forms for the generated article list.
+: Values: `0` (no) or `1` (yes).
+: Default: `1`.
+
+`customfieldname="value"`
+: Restrict to articles with specified value for specified custom field name. Replace `customfieldname` with the actual name of the custom field.
+: Important: Using dashes `-` or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
+
+`form="form name"`
+: Use specified form template to process each article.
+: Default: `default`.
+
+`keywords="keyword(s)"`
+: Restrict to articles with specified keyword(s).
+
+`limit="integer"`
+: The number of articles to display.
+: Default: `10`.
+
+`listform="form name"`
+: Use specified form when page is displaying an article list.
+: Default: `article_listing`.
+
+`offset="integer"`
+: The number of articles to skip.
+: Default: `0`.
+
+`pageby="integer"`
+: The number of articles to jump forward or back when an older or newer link is clicked. Allows you to call the article tag several times on a page without messing up older/newer links.
+: Default: value matches the value assigned to `limit`.
+
+`pgonly="boolean"`
+: Do the article count, but do not display anything. Used when you want to show a search result count, or article navigation tags **before** the list of articles. Just make sure that, other than `pgonly`, both article tags are identical (form-related attributes are the exception, they do not need to be assigned).
+: Values: `0` (no) or `1` (yes).
+: Default: `0`.
+
+`searchall="boolean"`
+: When outputting search results, include only those articles with 'Include in site search' set on the [Sections administration panel](../administration/sections-panel). If set to `0`, only articles in the current section are displayed. See @@Fixing search results@@ for more.
+: Values: `0` (no) or `1` (yes).
+: Default: `1`.
+
+`searchform="form name"`
+: The form to be used for your customized search results output.
+: Default: `search_results`.
+
+`searchsticky="boolean"`
+: When outputting search results, include articles with status `sticky`.
+: Values: `0` (no) or `1` (yes).
+: Default: `0`.
+
+`sort="sort value(s)"`
+: How to sort resulting list.
+: Values: \\
+`authorid` (author name). \\
+`category1`. \\
+`category2`. \\
+`comments_count`. \\
+`custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`. \\
+`expires` (expiry date). \\
+`id` (article id#). \\
+`image` (article image id#). \\
+`keywords`. \\
+`lastmod` (date last modified). \\
+`lastmodid` (author name of last modification). \\
+`posted` (date posted). \\
+`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
+`section`. \\
+`status`. \\
+`title`. \\
+`url_title`. \\
 Each field in the `textpattern` database table can be used as a sort key.
-When viewing a search results list, `score` (how well the search terms match the article) is available as an additional value.
-Default: `posted desc` (`score desc` for search results).
-* `status="status"`
-Restrict to articles with the specified `status`.
-Values: `live` or `sticky`.
-Default: `live`.
-* `time="time"`
-Restrict to articles posted within specified timeframe.
-Values: `past`, `future` or `any` (both `past` and `future`).
-Default: `past`.
+: When viewing a search results list, `score` (how well the search terms match the article) is available as an additional value.
+: Default: `posted desc` (`score desc` for search results).
+
+`status="status"`
+: Restrict to articles with the specified `status`.
+: Values: `live` or `sticky`.
+: Default: `live`.
+
+`time="time"`
+: Restrict to articles posted within specified timeframe.
+: Values: `past`, `future` or `any` (both `past` and `future`).
+: Default: `past`.
 
 ### Common presentational attributes
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-* `break="value"`
-Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-Default: `br` (but see @@break cross-reference@@ for exceptions).
-* `class="class name"`
-HTML `class` to apply to the `wraptag` attribute value.
-Default: tag name or unset (see @@class cross-reference@@).
-* `label="text"`
-Label prepended to item.
-Default: unset (but see @@label cross-reference@@ for exceptions).
-* `labeltag="element"`
-HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-Default: unset.
-* `wraptag="element"`
-HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+`break="value"`
+: Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
+: Default: `br` (but see @@break cross-reference@@ for exceptions).
+
+`class="class name"`
+: HTML `class` to apply to the `wraptag` attribute value.
+: Default: tag name or unset (see @@class cross-reference@@).
+
+`label="text"`
+: Label prepended to item.
+: Default: unset (but see @@label cross-reference@@ for exceptions).
+
+`labeltag="element"`
+: HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
+: Default: unset.
+
+`wraptag="element"`
+: HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
+: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Note on 'article list' vs. 'individual article' context
 
@@ -227,12 +245,12 @@ Why might you do it? Sorting is a powerful way to group articles (e.g. by author
 
 ### Version 4.0.7
 
-Can be used as a container.
+Can be used as a container. \\
 `wraptag` and `break` attributes added.
 
 ### Version 4.0.4
 
-`sort` attribute added (replaces `sortby` and `sortdir`) attributes.
+`sort` attribute added (replaces `sortby` and `sortdir`) attributes. \\
 `sortby` and `sortdir` attributes deprecated.
 
 ### Version 4.0.2
