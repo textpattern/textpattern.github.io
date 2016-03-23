@@ -55,14 +55,15 @@ However, you can have the added features and functionality of `<txp:article_cust
 
 Tag will accept the following attributes (**case-sensitive**):
 
-* `allowoverride="boolean"`
-Whether to use override forms for the generated article list.
-Values: `0` (no) or `1` (yes).
-Default: `0`.
-* `author="author name"`
-Restrict to articles by specified author(s) **login name**.
-Values: (comma separated list of) author login name(s).
-Default: unset, retrieves from all authors.
+`allowoverride="boolean"`
+: Whether to use override forms for the generated article list.
+: Values: `0` (no) or `1` (yes).
+: Default: `0`.
+`author="author name"`
+: Restrict to articles by specified author(s) **login name**.
+: Values: (comma separated list of) author login name(s).
+: Default: unset, retrieves from all authors.
+
 * `category="category name"`
 Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories administration panel](../administration/categories-panel) to ensure you are using the correct names.
 Values: (comma separated list of) category name(s).
