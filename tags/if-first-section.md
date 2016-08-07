@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If first section"
+Description: The if_first_section tag will execute the contained statements if the current section is the first in the list.
 tags:
   - Conditional tags
   - Structural tags

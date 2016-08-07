@@ -1,3 +1,13 @@
+---
+layout: document
+category: tags
+published: true
+title: "If keywords"
+Description: The if_keywords tag will execute the contained statement if the current article's 'Keywords' field has one or more entries.
+tags:
+  - Article tags
+---
+
 # If keywords
 
 On this page:

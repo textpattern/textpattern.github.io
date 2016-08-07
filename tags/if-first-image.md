@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If first image"
+Description: The if_first_image tag will execute the contained statements if the displayed image is the first in the currently displayed images list.
 tags:
   - Conditional tags
   - Image tags
@@ -34,7 +35,7 @@ The **if_first_image** tag is a *conditional* tag and always used as an opening 
 
 The tag will execute the contained statements if the displayed image is the first in the currently displayed [images](images) list. The tag supports [else](else).
 
-h3(#sec2). Attributes
+## Attributes
 
 This tag has no attributes.
 

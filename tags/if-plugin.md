@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If plugin"
+Description: The if_plugin tag will execute the contained statements if the name attribute matches a currently installed plugin.
 tags:
   - Conditional tags
 ---

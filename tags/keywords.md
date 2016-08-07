@@ -11,7 +11,7 @@ The **keywords** tag is a *single* tag that Textpattern will replace with the ke
 
 This tag has no attributes.
 
-h3(sectionedit2#examples). Examples
+## Examples
 
 h4(#example_1display_keywords_in_context_of_an_article_form). Example 1: Display keywords in context of an article Form
 

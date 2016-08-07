@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If first link"
+Description: The if_first_link tag will execute the contained statements if the displayed link is the first in the currently displayed link list.
 tags:
   - Conditional tags
   - Link tags
@@ -34,7 +35,7 @@ The **if_first_link** tag is a *conditional* tag and always used as an opening a
 
 The tag will execute the contained statements if the displayed link is the first in the currently displayed [linklist](linklist). The tag supports [else](else).
 
-h3(#sec2). Attributes
+## Attributes
 
 This tag has no attributes.
 

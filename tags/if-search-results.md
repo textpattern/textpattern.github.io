@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If search results"
+Description: The if_search_results tag will execute the contained statements if the current article list contains a certain amount of entries matching a search.
 tags:
   - Conditional tags
   - Search tags

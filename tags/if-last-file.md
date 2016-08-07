@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If last file"
+Description: The if_last_file tag will execute the contained statements if the displayed file is the last in the currently displayed file download list.
 tags:
   - Conditional tags
   - File tags
@@ -34,7 +35,7 @@ The **if_last_file** tag is a *conditional* tag and always used as an opening an
 
 The tag will execute the contained statements if the displayed file is the last in the currently displayed [file_download_list](file-download-list). The tag supports [else](else).
 
-h3(#sec2). Attributes
+## Attributes
 
 This tag has no attributes.
 
