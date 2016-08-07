@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Hide"
+Description: The hide tag is used to suppress the interpretation of all enclosed contents.
 tags:
   - Markup tags
 ---

@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "File download link"
+Description: The file_download_link tag will replace the tag with a download link to the file being downloaded, or assign the link to the given text or tag.
 tags:
   - File tags
   - Navigation tags
