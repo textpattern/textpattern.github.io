@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If article author"
+Description: The if_article_author tag will execute the contained statement if the author name associated with a particular article matches.
 tags:
   - Article tags
   - Conditional tags

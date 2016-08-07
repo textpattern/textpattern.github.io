@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If expired"
+Description: The if_expired tag will execute the contained statements, if a particular article is expired.
 tags:
   - Article tags
   - Conditional tags

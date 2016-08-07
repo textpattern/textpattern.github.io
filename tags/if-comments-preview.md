@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If comments preview"
+Description: The if_comments_preview tag will execute the contained statements if a comment is being previewed.
 tags:
   - Comment tags
   - Conditional tags
