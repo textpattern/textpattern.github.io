@@ -3,6 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If description"
+Description: The if_description tag will execute the contained statement if the current article/section/category's 'Description' field has an entry.
 tags:
   - Article tags
   - Conditional tags
@@ -31,11 +32,21 @@ The **if_description** tag is a *conditional* tag and always used as an opening 
 </txp:if_description>
 ~~~
 
-The tag will execute the contained statement if the current article/section/cateogry's 'Description' field has an entry.
+The tag will execute the contained statement if the current article/section/category's 'Description' field has an entry.
 
 ## Attributes
 
-This tag has no attributes.
+## Attributes
+
+Tag will accept the following attributes (**case-sensitive**):
+
+`type="context"`
+: Textpattern context to check against. You can choose from the following contexts (set to empty to include all contexts): \\
+`article` is this an article author list? \\
+`image` is this an image author list? \\
+`file` is this a file author list? \\
+`link` is this a link author list?
+: Default: `article`.
 
 ## Examples
 
