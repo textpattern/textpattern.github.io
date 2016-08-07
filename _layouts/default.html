@@ -58,10 +58,10 @@
             <meta itemprop="logo" content="http://textpattern.com/assets/img/branding/textpattern/textpattern.svg">
 
             <div itemscope itemtype="http://schema.org/WebSite">
-                <meta itemprop="url" content="http://textpattern.dev/">
-                <form class="search-form" role="search" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
-                    <meta itemprop="target" content="http://textpattern.com/?q={q}">
-                    <input class="form-search-input" name="q" type="search" size="32" placeholder="Search Textpattern.com…" itemprop="query-input">
+                <meta itemprop="url" content="http://docs.textpattern.io/">
+                <form class="search-form" role="search" action="http://docs.textpattern.io/search" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" data-search-form>
+                    <meta itemprop="target" content="http://docs.textpattern.io/search/?q={q}">
+                    <input class="form-search-input" name="q" type="search" size="32" placeholder="Search documentation…" itemprop="query-input" data-search-input>
                 </form>
             </div>
         </header>
@@ -89,9 +89,9 @@
 
 
 <!-- Search form -->
-<form method="get" action="/search" data-search-form>
+<form role="search" method="get" action="/search" data-search-form>
     <label for="q">Search term</label>
-    <input type="search" id="q" name="q" placeholder="Enter search term" data-search-input>
+    <input type="search" name="q" placeholder="Search documentation…" data-search-input>
     <input type="submit" value="Search">
 </form>
 
