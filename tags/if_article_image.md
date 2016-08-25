@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If article image"
-Description: The if_article_image tag will execute the contained statements if an image is associated with the article being displayed.
+description: The if_article_image tag will execute the contained statements if an image is associated with the article being displayed.
 tags:
   - Article tags
   - Conditional tags

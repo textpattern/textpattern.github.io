@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If last image"
-Description: The if_last_image tag will execute the contained statements if the displayed image is the last in the currently displayed images list.
+description: The if_last_image tag will execute the contained statements if the displayed image is the last in the currently displayed images list.
 tags:
   - Conditional tags
   - Image tags

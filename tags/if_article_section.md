@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If article section"
-Description: The if_article_section tag will execute the contained statements if the section name associated with a particular article matches.
+description: The if_article_section tag will execute the contained statements if the section name associated with a particular article matches.
 tags:
   - Article tags
   - Conditional tags

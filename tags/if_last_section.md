@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If last section"
-Description: The if_last_section tag will execute the contained statements if the current section is the last in the list.
+description: The if_last_section tag will execute the contained statements if the current section is the last in the list.
 tags:
   - Conditional tags
   - Structural tags

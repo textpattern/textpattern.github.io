@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If search"
-Description: The if_search tag will execute the contained statements if the called page is the result of a search.
+description: The if_search tag will execute the contained statements if the called page is the result of a search.
 tags:
   - Conditional tags
   - Search tags

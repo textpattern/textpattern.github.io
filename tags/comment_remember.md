@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comment remember"
-Description: The comment_remember tag is used to display a check box input field.
+description: The comment_remember tag is used to display a check box input field.
 tags:
   - Comment tags
 ---

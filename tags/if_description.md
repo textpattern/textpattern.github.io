@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If description"
-Description: The if_description tag will execute the contained statement if the current article/section/category's 'Description' field has an entry.
+description: The if_description tag will execute the contained statement if the current article/section/category's 'Description' field has an entry.
 tags:
   - Article tags
   - Conditional tags

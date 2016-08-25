@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If section"
-Description: The if_section tag will execute the contained statements if the called page is part of the section specified.
+description: The if_section tag will execute the contained statements if the called page is part of the section specified.
 tags:
   - Conditional tags
 ---

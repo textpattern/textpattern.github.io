@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comment id"
-Description: The comment_id tag is used to display the comment's internal id as assigned by Textpattern at the time of posting.
+description: The comment_id tag is used to display the comment's internal id as assigned by Textpattern at the time of posting.
 tags:
   - Comment tags
 ---

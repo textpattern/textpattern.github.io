@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If variable"
-Description: The if_variable tag tests the existence and/or value of a global variable set with the variable tag.
+description: The if_variable tag tests the existence and/or value of a global variable set with the variable tag.
 tags:
   - Conditional tags
   - Programmer tags

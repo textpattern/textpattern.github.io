@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comment message"
-Description: The comment_message tag is used to display the message text, or comment.
+description: The comment_message tag is used to display the message text, or comment.
 tags:
   - Comment tags
 ---

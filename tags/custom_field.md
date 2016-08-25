@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Custom field"
-Description: The custom_field tag is used to display the contents of a custom field.
+description: The custom_field tag is used to display the contents of a custom field.
 tags:
   - Article tags
 ---

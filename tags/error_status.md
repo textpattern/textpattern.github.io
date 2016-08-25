@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Error status"
-Description: The error_status tag shows the error status as set by the server.
+description: The error_status tag shows the error status as set by the server.
 tags:
   - Error handling tags
 ---

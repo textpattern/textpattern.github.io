@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "File download id"
-Description: The file_download_id tag will replace with the internal ID number of the file to be downloaded.
+description: The file_download_id tag will replace with the internal ID number of the file to be downloaded.
 tags:
   - File tags
 ---

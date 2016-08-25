@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If last file"
-Description: The if_last_file tag will execute the contained statements if the displayed file is the last in the currently displayed file download list.
+description: The if_last_file tag will execute the contained statements if the displayed file is the last in the currently displayed file download list.
 tags:
   - Conditional tags
   - File tags

@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "File download modified"
-Description: The file_download_modified tag will replace with the last modified date of the file to download.
+description: The file_download_modified tag will replace with the last modified date of the file to download.
 tags:
   - File tags
 ---

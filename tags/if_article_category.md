@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If article category"
-Description: The if_article_category tag will execute the contained statement if the category name associated with a particular article matches.
+description: The if_article_category tag will execute the contained statement if the category name associated with a particular article matches.
 tags:
   - Article tags
   - Conditional tags

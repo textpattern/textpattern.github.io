@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comment name"
-Description: The comment_name tag is used to display a link using the commenter's name as text.
+description: The comment_name tag is used to display a link using the commenter's name as text.
 tags:
   - Comment tags
 ---

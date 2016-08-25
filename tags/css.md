@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Css"
-Description: The basic css tag is used to output the URL of the stylesheet assigned in the Textpattern Sections administration panel.
+description: The basic css tag is used to output the URL of the stylesheet assigned in the Textpattern Sections administration panel.
 tags:
   - Markup tags
 ---

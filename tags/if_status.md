@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If status"
-Description: The if_status tag will execute the contained statements depending on the requested page's HTTP status condition.
+description: The if_status tag will execute the contained statements depending on the requested page's HTTP status condition.
 tags:
   - Conditional tags
   - Error handling tags

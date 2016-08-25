@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If custom field"
-Description: The if_custom_field tag will execute the contained statements if custom fields for a given article have content.
+description: The if_custom_field tag will execute the contained statements if custom fields for a given article have content.
 tags:
   - Article tags
   - Conditional tags

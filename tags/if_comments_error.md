@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If comments error"
-Description: The if_comments_error tag will execute the contained statements when an error exists with the comments.
+description: The if_comments_error tag will execute the contained statements when an error exists with the comments.
 tags:
   - Comment tags
   - Conditional tags

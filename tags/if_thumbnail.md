@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If thumbnail"
-Description: The if_thumbnail tag will execute the contained statements if the current image has a thumbnail assigned to it.
+description: The if_thumbnail tag will execute the contained statements if the current image has a thumbnail assigned to it.
 tags:
   - Conditional tags
   - Image tags

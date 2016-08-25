@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If first image"
-Description: The if_first_image tag will execute the contained statements if the displayed image is the first in the currently displayed images list.
+description: The if_first_image tag will execute the contained statements if the displayed image is the first in the currently displayed images list.
 tags:
   - Conditional tags
   - Image tags

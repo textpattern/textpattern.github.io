@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "File download description"
-Description: The file_download_description tag will replace with the description of the file to download, as defined when the file was uploaded.
+description: The file_download_description tag will replace with the description of the file to download, as defined when the file was uploaded.
 tags:
   - File tags
 ---

@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comment message input"
-Description: The comment_message_input tag is used to display a text entry field to accept the commenter's message text.
+description: The comment_message_input tag is used to display a text entry field to accept the commenter's message text.
 tags:
   - Comment tags
 ---

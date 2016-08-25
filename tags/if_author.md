@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If author"
-Description: The if_author tag will execute the contained statement if the called page is the result of an article search by a specific author's name.
+description: The if_author tag will execute the contained statement if the called page is the result of an article search by a specific author's name.
 tags:
   - Article tags
   - Conditional tags

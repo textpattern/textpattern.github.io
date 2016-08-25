@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "If first file"
-Description: The if_first_file tag will execute the contained statements if the displayed file is the first in the currently displayed file download list.
+description: The if_first_file tag will execute the contained statements if the displayed file is the first in the currently displayed file download list.
 tags:
   - Conditional tags
   - File tags

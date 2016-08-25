@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comments count"
-Description: The comments_count tag is used to display the number of comments associated with a particular article.
+description: The comments_count tag is used to display the number of comments associated with a particular article.
 tags:
   - Comment tags
 ---

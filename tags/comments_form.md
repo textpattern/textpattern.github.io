@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Comments form"
-Description: The comments_form tag is used to display a comment form.
+description: The comments_form tag is used to display a comment form.
 tags:
   - Comment tags
 ---
