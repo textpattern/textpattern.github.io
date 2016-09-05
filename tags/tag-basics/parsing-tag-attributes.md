@@ -23,9 +23,9 @@ Usage of attributes in Textpattern tags is similar to attributes in HTML.
 
 A few important rules to remember:
 
-# Attribute values must always be delimited by double (or single) quotes. Single quotes have special meaning, so use double quotes by default.
-# Attribute keys must be lowercase.
-# For plugin developers: attribute keys can consist of the letters 'a' through 'z' and underscore (not as the first or last character).
+* Attribute values must always be delimited by double (or single) quotes. Single quotes have special meaning, so use double quotes by default.
+* Attribute keys must be lowercase.
+* For plugin developers: attribute keys can consist of the letters 'a' through 'z', and underscore (not as the first or last character).
 
 ## Attribute value escaping
 
@@ -35,7 +35,7 @@ However, there is one exception: the delimiter character. The attribute value is
 
 Suppose you wanted to use this as an attribute value:
 
-bc. Eeward for "good" behaviour
+bc. Reward for "good" behaviour
 
 *Incorrect*:
 
