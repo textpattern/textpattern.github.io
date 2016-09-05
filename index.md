@@ -31,7 +31,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 ### Core tags
 
 * [Tag use basics](tags/tag-basics/) (a good place to start)
-  ** [Parsing tag attributes](tags/tag-basics/parsing-tag-attributes) (sorcery)
+  * [Parsing tag attributes](tags/tag-basics/parsing-tag-attributes) (sorcery)
 * [Tags reference](tags/) (the complete suite)
 
 ### Design
