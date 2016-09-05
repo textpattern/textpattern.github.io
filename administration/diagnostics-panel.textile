@@ -140,6 +140,7 @@ Blue messages are informing you of something you might like to know. They're not
 * %(information)New Textpattern version {version} "available for download":http://textpattern.com/download.% -- It's saying you're not using the latest stable release, where {version} will be the latest version number. The first data item in the "Low" **Diagnostics info** display described above will indicate your current working version. Because this is a blue message, you don't _have_ to upgrade (yet) but it's good practice to do so for "security":http://docs.textpattern.io/security/ reasons, if nothing else.
 * %(information)Clean URLs are only supported on Apache, use at your own risk.% -- It's saying you're _not_ using an Apache web server. The assumption is that you know what you're doing so you can ignore this message. It goes away if you ever switch to Apache.
 * %(information)File uploads are disabled% -- This appears if the permissions you have set on your __files__ folder in the installation tree is read only. The assumption is that you've consciously made this choice, so you can ignore this message. If you make the files folder writable, it will go away.[1]
+* %(information)There was a problem trying to connect to the RPC server. Please try again later.% -- You may get this if you're working on a local install (v. 4.5.7) and not connected to the internet. Your local install is trying to ping the RPC server and has no internet connection to do so.
 
 h3. Warning (yellow)
 
