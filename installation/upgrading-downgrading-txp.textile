@@ -13,7 +13,7 @@ tags:
 
 h1. Upgrading and downgrading Textpattern
 
-The reasons for upgrading or downgrading Textpattern are different, naturally. Your main concern is upgrading, because it's an essential part maintaining good site security. Whenever a new version of Textpattern is released, upgrade! On the other hand, you should never downgrade (again, for reasons of site security) unless for a couple of valid reasons. 
+The reasons for upgrading or downgrading Textpattern are different, naturally. Your main concern is upgrading, because it's an essential part of maintaining good site security. Whenever a new version of Textpattern is released, upgrade! On the other hand, you should never downgrade (again, for reasons of site security) unless for a couple of valid reasons. 
 
 On this page:
 
@@ -57,7 +57,7 @@ p(alert-box warning). It is strongly advised to log out of the Textpattern admin
 
 Using FTP/SFTP again, navigate to the folder you created in *Step 1* and copy the following files from there to your server, overwriting any previous files:
 
-# Copy the files @.htaccess@, @css.php@, and @index.php@ (the @README.txt@ and @HISTORY.txt@ are optional).
+# Copy the files @.htaccess@, @css.php@, and @index.php@ (the @README.txt@, @HISTORY.txt@ and @LICENSE@ files are optional).
 # Copy any folders you are using, for example @rpc@ and @sites@. You do not usually need to copy @files@ and @images@ unless otherwise directed because you will already have done so when installing a prior release.
 # Copy the contents of the @textpattern@ folder to the server's @textpattern@ folder. You may exclude the @setup@ directory, since it is only used for first-time installations.
 
@@ -65,9 +65,11 @@ p(alert-box information). It is important that you make sure all three @index.ph
 
 Ensure your existing @config.php@ file is still inside your @textpattern@ folder on the server. This rarely changes between releases; if any changes are required or options become available they are documented in the @README.txt@ file.
 
+Note that some operating systems (such as macOS) do not always merge the contents of directories when they are overwritten: they delete the entire directory contents first and then copy the new files in. There are ways to merge duing a file copy, and instructions for doing so vary from version to version and OS to OS, but the simplest solution is to ensure you have taken a backup copy first.
+
 If you are running an Apache web server and wish to prohibit direct access to your downloadable files (i.e. by someone manually entering @http://site.com/files/name_of_file@) you may rename the @/files/.htaccess-dist@ file to @/files/.htaccess@.
 
-For better security, however, we recommend moving the entire folder and its contents *outside* your web-accessible root folder. Once you have relocated it, you can inform Textpattern of its location via the 'File directory path' Advanced Preference when you log back into the admin side.
+For better security, however, we recommend moving the entire folder and its contents *outside* your web-accessible root folder. Once you have relocated it, you can inform Textpattern of its location via the 'File directory path' Advanced Preference when you log back into the admin side. The same advice stands for the @tmp@ directory.
 
 h3(#sec1-1). Update
 
