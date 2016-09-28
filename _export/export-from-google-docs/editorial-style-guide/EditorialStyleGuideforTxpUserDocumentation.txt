@@ -144,8 +144,8 @@ Correct → you, your, yours
 An example of doing it right:
 "If you want to put your site under subversion but are not comfortable using the command-line, you might try a desktop client like TortoiseSVN for Windows or Versions for Mac."
 Do not write in the first or third person point of view, regardless of whether the pronouns are normative, objective, or possessive. (Remember, there are many contributing authors to the user documentation. The wiki is not your personal website. Don’t talk to readers as if it is.)
-Wrong → 1st person: I, we … me, us … my, mine, our, ours
-Wrong → 3rd person: he, she, they … him, her, them … his, her, hers, their, theirs … it
+Wrong → 1st person: I, we ... me, us ... my, mine, our, ours
+Wrong → 3rd person: he, she, they ... him, her, them ... his, her, hers, their, theirs ... it
 An example of doing it wrong:
 "I like to use TortoiseSVN, it suits my needs, but you can use whatever subversion client you want."
 Style and tone

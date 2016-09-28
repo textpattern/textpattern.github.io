@@ -47,7 +47,7 @@ notextile. </div>
 
 **Argument #2**, the $step, is usually the part of the panel that contains the widget or any of its controls you wish to change. For example, on the Write panel, the Article image control has a $step called article_image and the Custom fields widget has one called custom_fields, and so on.
 
-Arguments 3, 4, and 5 are optional depending on what you're trying to do…
+Arguments 3, 4, and 5 are optional depending on what you're trying to do...
 
 **Argument #3**, if applicable, is the default data (text, markup, both...); it will be used if you don’t modify it. Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
 

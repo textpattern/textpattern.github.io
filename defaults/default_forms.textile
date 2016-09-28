@@ -105,7 +105,7 @@ h4(#default). default
 &lt;/txp:if_individual_article&gt;
 
   &lt;p&gt;&lt;strong&gt;&lt;txp:text item=&quot;posted&quot; /&gt;&lt;/strong&gt; &lt;time datetime=&quot;&lt;txp:posted format='iso8601' /&gt;&quot; itemprop=&quot;datePublished&quot;&gt;&lt;txp:posted /&gt;&lt;/time&gt;&lt;br&gt;
-    &lt;strong&gt;&lt;txp:text item=&quot;comments&quot; /&gt;&lt;/strong&gt; &lt;a href=&quot;&lt;txp:permlink /&gt;#comments-head&quot; title=&quot;&lt;txp:text item='view' /&gt;…&quot; itemprop=&quot;discussionUrl&quot; itemscope itemtype=&quot;http://schema.org/UserComments&quot;&gt;
+    &lt;strong&gt;&lt;txp:text item=&quot;comments&quot; /&gt;&lt;/strong&gt; &lt;a href=&quot;&lt;txp:permlink /&gt;#comments-head&quot; title=&quot;&lt;txp:text item='view' /&gt;...&quot; itemprop=&quot;discussionUrl&quot; itemscope itemtype=&quot;http://schema.org/UserComments&quot;&gt;
 
 &lt;!-- if comments then display the number, if no comments then print 'none' --&gt;
 &lt;txp:if_comments&gt;
@@ -149,7 +149,7 @@ h4(#search_results). search_results
 
 &lt;!-- if search result count greater than 200 then display excessive results message, otherwise show search result count --&gt;
     &lt;txp:if_search_results max=&quot;200&quot;&gt;
-      &lt;h3&gt;&lt;txp:search_result_count /&gt; &lt;txp:text item=&quot;matching_search_request&quot; /&gt; ‘&lt;txp:search_term /&gt;’…&lt;/h3&gt;
+      &lt;h3&gt;&lt;txp:search_result_count /&gt; &lt;txp:text item=&quot;matching_search_request&quot; /&gt; ‘&lt;txp:search_term /&gt;’...&lt;/h3&gt;
     &lt;txp:else /&gt;
       &lt;h3&gt;&lt;txp:text item=&quot;too_common_search_term&quot; /&gt; ‘&lt;txp:search_term /&gt;’&lt;/h3&gt;
     &lt;/txp:if_search_results&gt;

@@ -56,7 +56,7 @@ Write in the first-person _and_ second-person. The perspective in this case is T
 
 Do not write in first-person, regardless of whether the pronouns are normative, objective, or possessive. You should never be using these: I/we, me/us, my, mine, our, ours. 
 
-Likewise, do not use the third-person in your copy. So don't use these words: he, she, they … him, her, them … his, her, hers, their, theirs … it. They're indirect and totally unnecessary.
+Likewise, do not use the third-person in your copy. So don't use these words: he, she, they ... him, her, them ... his, her, hers, their, theirs ... it. They're indirect and totally unnecessary.
 
 h2(#lang). Language (Oxford English conventions)
 

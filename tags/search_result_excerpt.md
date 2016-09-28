@@ -30,7 +30,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `break="tag"`
 : Trailing string.
-: Default: `…` (ellipsis).
+: Default: `...` (ellipsis).
 
 `hilight="tag"`
 : HTML tag to be used for search term matches in excerpt text, without brackets.

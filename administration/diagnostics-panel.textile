@@ -258,7 +258,7 @@ These functions are _not_ used by Textpattern.[4] If diagnostics reports one or 
 * set_socket_blocking
 * shell_exec
 * show_source
-* socket_… (i.e. socket_bind)
+* socket_... (i.e. socket_bind)
 * symlink
 * syslog
 * system

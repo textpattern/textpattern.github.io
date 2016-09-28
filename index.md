@@ -18,8 +18,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 ### Installation handling
 
 * [Installing Textpattern](installation/) (detailed instructions)
-* [Upgrading and downgrading Textpattern](installation/upgrading-downgrading-txp)
-* [Moving a Textpattern installation](installation/moving-txp)
+* [Upgrading and downgrading Textpattern](installation/upgrading-textpattern)
+* [Moving a Textpattern installation](installation/moving-textpattern)
 * [Post install and upgrade routines](administration/post-install-and-upgrade-routines)
 
 ### Site administration

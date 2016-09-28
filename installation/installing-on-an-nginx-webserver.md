@@ -3,46 +3,54 @@ layout: document
 category: installation
 published: true
 title: "Installing on an Nginx web server"
+tags:
+  - Installation
+  - Server
 ---
 
-h1. Installing on an Nginx web server
+# Installing on an Nginx web server
 
 Although it is not officially supported, running Textpattern CMS on an Nginx web server works just fine - given the correct configuration. This article outlines the requirements for a successful installation of Textpattern using Nginx on a CentOS 5.6 system.
 
-h2. Acquisition and unpacking
+On this page:
 
-h3. Nginx and PHP-FPM
+* [Acquisition and unpacking](#acquisition-and-unpacking)
+* [Setting up Nginx](#setting-up-nginx)
 
-In order to run any PHP application on Nginx you will have to have "PHP-FPM":http://php-fpm.org available and running on your system. It is part of the PHP core since PHP 5.3.3. For previous versions you might need to compile it yourself.
+## Acquisition and unpacking
 
-To ease the installation you can use pre-built packages in the "EPEL":http://fedoraproject.org/wiki/EPEL, "Remi":http://rpms.famillecollet.com, or "CENTALT":http://centos.alt.ru/repository/centos/readme.txt repositories.
+### Nginx and PHP-FPM
 
-You need to have Nginx as well as PHP-FPM running. If you installed them via "yum":http://yum.baseurl.org you will most likely be able to configure them to start at boot time using:
+In order to run any PHP application on Nginx you will have to have [PHP-FPM](https://php-fpm.org) available and running on your system. It is part of the PHP core since PHP 5.3.3. For previous versions you might need to compile it yourself.
 
-bc. $ chkconfig nginx on
+To ease the installation you can use pre-built packages in the [EPEL](https://fedoraproject.org/wiki/EPEL), [Remi](http://rpms.famillecollet.com), or [Atomic](http://wiki.atomicorp.com/wiki/index.php/Atomic) repositories.
+
+You need to have Nginx as well as PHP-FPM running. If you installed them via [yum](http://yum.baseurl.org) you will most likely be able to configure them to start at boot time using:
+
+~~~ ShellSession
+$ chkconfig nginx on
 $ chkconfig php-fpm on
+~~~
 
-h3. Textpattern
+### Textpattern
 
-# "Download":http://textpattern.com/download the latest release package from the Textpattern download page. Select either @.gzip@ or @.zip@, as you prefer.
-# It is assumed for this tutorial that the unzipped contents of the file are available in @/var/www/html/textpattern@.
+1. [Download](http://textpattern.com/download) the latest release package from the Textpattern download page. Select either `.gzip` or `.zip`, as you prefer.
+2. It is assumed for this tutorial that the unzipped contents of the file are available in `/var/www/html/textpattern`.
 
-h2. Setting up Nginx
+## Setting up Nginx
 
 There are several configuration files for Nginx (path names may vary between Linux distributions). The ones that may need adjustments are as follows:
 
-* @/etc/nginx/nginx.conf@
-Main configuration, similar to @httpd.conf@ for Apache.
-* @/etc/nginx/conf.d/*.conf@
-Additional configuration files (everything with a suffix of @.conf@) - those will also be used for the virtual host configuration.
-* @/etc/nginx/fastcgi_params@
-FastCGI settings.
+* `etc/nginx/nginx.conf`: Main configuration, similar to `httpd.conf` for Apache.
+* `/etc/nginx/conf.d/*.conf`: Additional configuration files (everything with a suffix of `.conf`) - those will also be used for the virtual host configuration.
+* `/etc/nginx/fastcgi_params`: FastCGI settings.
 
-h3. /etc/nginx/nginx.conf
+### /etc/nginx/nginx.conf
 
-This is what an example @nginx.conf@ could look like:
+This is what an example `nginx.conf` could look like:
 
-bc.. user  nginx;
+~~~
+user  nginx;
 worker_processes  2;
 worker_rlimit_nofile  100000;
 
@@ -114,14 +122,16 @@ http {
 
     }
 }
+~~~
 
-h3. /etc/nginx/conf.d/example.con.conf
+### /etc/nginx/conf.d/example.con.conf
 
 For each virtual host (i.e. each URL under which your Textpattern site should be accessible) you need to define one 'server' block. It is good practice to create one file per domain so you can better keep track of all settings.
 
-Since nginx does not make use of @.htaccess@ files or offer @mod_rewrite@, you will need to use an alternative approach to allow clean URLs. The @try_files@ directive is responsible for clean URLs in this example.
+Since nginx does not make use of `.htaccess` files or offer `mod_rewrite`, you will need to use an alternative approach to allow clean URLs. The `try_files` directive is responsible for clean URLs in this example.
 
-bc.. server {
+~~~
+server {
     listen 80;  #could also be 1.2.3.4:80
 
     # adjust this as required
@@ -157,12 +167,14 @@ bc.. server {
         deny  all;
     }
 }
+~~~
 
-h3. /etc/nginx/fastcgi_params
+### /etc/nginx/fastcgi_params
 
-These are example settings for @fastcgi_params@:
+These are example settings for `fastcgi_params`:
 
-bc. fastcgi_param  QUERY_STRING       $query_string;
+~~~
+fastcgi_param  QUERY_STRING       $query_string;
 fastcgi_param  REQUEST_METHOD     $request_method;
 fastcgi_param  CONTENT_TYPE       $content_type;
 fastcgi_param  CONTENT_LENGTH     $content_length;
@@ -184,3 +196,4 @@ fastcgi_param  SERVER_NAME        $server_name;
 
 # PHP only, required if PHP was built with --enable-force-cgi-redirect
 fastcgi_param  REDIRECT_STATUS    200;
+~~~

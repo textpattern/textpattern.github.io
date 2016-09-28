@@ -76,7 +76,7 @@ fn2. There should be three CSS class selectors to use in the Jekyll site that ma
 
 ## Typo/grammar gotchas to watch out for
 
-* User docs are written using "British English spelling and punctuation":https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences conventions. But don't kill yourself over it.
+* User docs are written using [British English spelling and punctuation](https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences) conventions.
 * Use "login" and "logout" when it's a noun (e.g. "the login location").
 * Use "log in" and "log out" when it's a verb (e.g. "after you log in" or "after logging in").
 * Do not use "tab" -- use "panel" -- when talking about the admin-side panels.[3] The only exception is you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab").[4]
