@@ -47,11 +47,10 @@ Now we begin the Textpattern part of the deal:
 3. Move the zip package to the folder you created.
 4. Unzip the package.
 
-The zip package will have a folder/file tree matching that in the ["Textpattern repo":https://github.com/textpattern/textpattern].[1] Following are the folders and files you'll see.
+The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[1] Following are the folders and files you'll see.
 
-TODO:
 ~~~ html
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+TODO <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
 
 |_. Item |_. Type |_. Removable? |_. What it's for |
 | *files* | directory | no | Empty by default. It's where content files (*.pdf*, *.docx*, *.rtf*, *.epub*, *.txt*, etc.) will go when/if you upload them in the "**Files**":http://docs.textpattrn.io/administration/files-panel panel. You may see a warning about the file's @chmod@ status (editing rights) in the "**Diagnostics**":/administration/diagnostics-panel panel. |
