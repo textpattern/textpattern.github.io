@@ -154,14 +154,14 @@ Then it's time to create your Textpattern configuration file in the */textpatter
 
 ~~~ php
 <?php
-$txpcfg['db'] = 'database';
-$txpcfg['user'] = 'login';
-$txpcfg['pass'] = 'password';
-$txpcfg['host'] = 'localhost';
-$txpcfg['table_prefix'] = '';
-$txpcfg['txpath'] = '/server/path/to/textpattern/install/directory';
-$txpcfg['dbcharset'] = 'utf8';
-$txpcfg['client_flags'] = 0;
+    $txpcfg['db'] = 'database';
+    $txpcfg['user'] = 'login';
+    $txpcfg['pass'] = 'password';
+    $txpcfg['host'] = 'localhost';
+    $txpcfg['table_prefix'] = '';
+    $txpcfg['txpath'] = '/server/path/to/textpattern/install/directory';
+    $txpcfg['dbcharset'] = 'utf8';
+    $txpcfg['client_flags'] = 0;
 ?>
 ~~~
 
