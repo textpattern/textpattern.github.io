@@ -48,11 +48,11 @@ The general steps for Pull Requests:
 
 ### Coding standard
 
-The project follows the [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) and [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide-meta.md) standards with PHP 5.3 style namespacing. You can use PHP_CodeSniffer to make sure your additions follow them, too:
+The project follows the [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) and [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide-meta.md) standards with PHP 5.3 style namespacing. You can use [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) to make sure your additions follow them, too:
 
-```
+~~~ ShellSession
 $ ./vendor/bin/phpcs --standard=phpcs.xml *.php textpattern
-```
+~~~
 
 ### Versioning
 
