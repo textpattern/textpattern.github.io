@@ -163,7 +163,7 @@ $txpcfg['txpath'] = '/server/path/to/textpattern/install/directory';
 $txpcfg['dbcharset'] = 'utf8';
 $txpcfg['client_flags'] = 0;
 ?>
-~~~ html
+~~~
 
 Proceed as follows:
 
