@@ -10,7 +10,7 @@ tags:
 
 # Installing Textpattern
 
-These are detailed instructions for installing Textpattern. The instructions follow a process of using a (S)FTP client, which you presumably have. ([Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, and [WinSCP](http://sourceforge.net/projects/winscp/ is for Windows.)) If you're familiar with installing CMS software and prefer the quick notes, see the [README.txt](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. If you're more of a command-line jockey, the bits in [working with the development branch](http://docs.textpattern.io/development/txp-repositories) should suit you.
+These are detailed instructions for installing Textpattern. The instructions follow a process of using a (S)FTP client, which you presumably have ([Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, and [WinSCP](http://sourceforge.net/projects/winscp/) is for Windows). If you're familiar with installing CMS software and prefer the quick notes, see the [README.txt](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. If you're more of a command-line jockey, the bits in [working with the development branch](http://docs.textpattern.io/development/txp-repositories) should suit you.
 
 On this page:
 
