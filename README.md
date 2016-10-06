@@ -30,13 +30,13 @@ file-download-description.md
 Make doc pages **scannable** with a **consistent structure** across them, as much as possible. These guidelines can help:
 
 1. Start page with an `h1` (`#` in Markdown) header that serves as the document's title.
-2. Where it's reasonable to do so, follow the title with a brief introductory paragraph that sums up the page or it's purpose ([intro paragraph example](administration/index)).
-3. If you have more than three `h2` (`##` in Markdown) sections on the page (or three that are kind of long), follow the `h1` title (or intro paragraph, see previous example) with an in-page ToC ([ToC example without intro paragraph](security/index)). Do this by:
+2. Where it's reasonable to do so, follow the title with a brief introductory paragraph that sums up the page or it's purpose ([intro paragraph example](http://docs.textpattern.io/administration/)).
+3. If you have more than three `h2` (`##` in Markdown) sections on the page (or three that are kind of long), follow the `h1` title (or intro paragraph, see previous example) with an in-page ToC ([ToC example without intro paragraph](http://docs.textpattern.io/security/)). Do this by:
   * adding "On this page:" in normal text, followed by
   * an unordered list of links to the `h2` headers only (e.g. `[Header label](#xxx)`), and
   * use `#xxx` as the anchors, where `xxx` is the heading text in lowercase with hyphens (i.e. for linking to `## Example heading` the anchor would be `(#example-heading)`).
 4. Avoid using `h4`-`h6` header levels, if possible, especially `h5`-`h6`. Deep structuring means the copy is too complex for new-user docs. Try and structure content with `h2`-`h3` only (and `h4` if really necessary).
-5. Use [Kramdown footnotes](http://kramdown.gettalong.org/syntax.html#footnotes) in a given section for any "tips" or side details not needing said in the primary paragraph. Use a subsequent number for each new footnote on the page, even if they're not in the same section. ([Footnote examples](security/index.textile))
+5. Use [kramdown footnotes](http://kramdown.gettalong.org/syntax.html#footnotes) in a given section for any "tips" or side details not needing said in the primary paragraph. Use a subsequent number for each new footnote on the page, even if they're not in the same section. ([Footnote examples](http://docs.textpattern.io/security/index.textile))
 
 ## Concise copywriting tips
 
@@ -56,7 +56,7 @@ To improve the ability to scan pages as described above, write as concisely as y
 
 ## Administration-side references
 
-Important rules for consistency, which also has implications for plugin authors.[1]
+Important rules for consistency, which also has implications for plugin authors.[^1]
 
 * Use "*administration side*" correctly when used as an _adjective_ versus a _noun_:
   * *noun* form (no hyphen is used): E.g.: "The login to the administration side is located at __/textpattern__." (Write "administration" out fully to distinguish the place from a person ("admin")
@@ -66,23 +66,23 @@ Important rules for consistency, which also has implications for plugin authors.
   * Linked text: E.g.: @See all your articles listed in the **"Articles":#** panel.@
 * When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: "You can control widowed words in article titles by selecting 'Yes' on the '__Prevent widowed words in article titles?__' preference."
 * When referring to a form control options (e.g. select-menu options, radio button options, etc.) or any other non-header UI dialogue, quote the text and leave it in normal format. E.g. "When you're ready to publish your draft, change status to 'Live' and click the **Save** button*."
-* When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.[2]
+* When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.[^2]
 * When referring to file names, make them italic (double underscores) and include the extension. E.g. __.htaccess__ and __index.php__ (do not make them appear as code, unless they are part of a code snippet).
 
-fn1. Plugin authors must follow same editorial rules in their [plugin help files](http://docs.textpattern.io/development/plugin-template-help).
+[^1]: Plugin authors must follow same editorial rules in their [plugin help files](http://docs.textpattern.io/development/plugin-template-help).
 
-fn2. There should be three CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type, even providing the background colour.
+[^2]: There should be three CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type, even providing the background colour.
 
 ## Typo and grammar gotchas to watch out for
 
 * User docs are written using [British English spelling and punctuation](https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences) conventions.
 * Use 'login' and 'logout' when it's a noun (e.g. "the login location").
 * Use 'log in' and 'log out' when it's a verb (e.g. "after you log in" or "after logging in").
-* Do not use 'tab' -- use 'panel' -- when talking about the admin-side panels.[3] The only exception is you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab").[4]
+* Do not use 'tab' -- use 'panel' -- when talking about the admin-side panels.[^3] The only exception is you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab").[^4]
 
-fn3. The presentational theme of the admin-side was originally conceived as a set of manilla file folders, with each region label depicted as a folder “tab”. This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as “tabs” even though they may use an admin theme that does not depict the file folder concept. New docs should not perpetuate that false concept and terminology, particularly as the file folder concept is not depicted in the admin-side navigation of the official admin-side theme -- Hive. The use of “tab” in the admin-side UI, such as in preferences, help dialogue, and so forth, is probably only clear to veteran Textpattern users. When/if the admin-side UI is cleaned of all use of the word "tab", then docs can be fully cleaned of the use as well, but we can get most of the way there by only using "tab" when it's in direct reference of an UI element label.
+[^3]: The presentational theme of the admin-side was originally conceived as a set of manilla file folders, with each region label depicted as a folder “tab”. This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as “tabs” even though they may use an admin theme that does not depict the file folder concept. New docs should not perpetuate that false concept and terminology, particularly as the file folder concept is not depicted in the admin-side navigation of the official admin-side theme -- Hive. The use of “tab” in the admin-side UI, such as in preferences, help dialogue, and so forth, is probably only clear to veteran Textpattern users. When/if the admin-side UI is cleaned of all use of the word "tab", then docs can be fully cleaned of the use as well, but we can get most of the way there by only using "tab" when it's in direct reference of an UI element label.
 
-fn4. These uses of 'tab' in the admin-side UI preferences, for example, should be treated as bugs that need fixed, and issues written for them.
+[^4]: These uses of 'tab' in the admin-side UI preferences, for example, should be treated as bugs that need fixed, and issues written for them.
 
 ## Markup
 
