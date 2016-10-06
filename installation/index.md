@@ -64,19 +64,19 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
                 <th scope="row">files</th>
                 <td>directory</td>
                 <td>no</td>
-                <td>Empty by default. It’s where content files (<code>.pdf<code>, <code>.docx</code>, <code>.rtf</code>, <code>.epub</code>, <code>.txt</code>, etc.) will go when/if you upload them in the "**Files**":http://docs.textpattrn.io/administration/files-panel panel. You may see a warning about the file's <code>chmod</code> status (editing rights) in the "**Diagnostics**":/administration/diagnostics-panel panel.</td>
+                <td>Empty by default. It’s where content files (<code>.pdf<code>, <code>.docx</code>, <code>.rtf</code>, <code>.epub</code>, <code>.txt</code>, etc.) will go when/if you upload them in the <strong>Files</strong> panel. You may see a warning about the file's <code>chmod</code> status (editing rights) in the <strong>Diagnostics</strong> panel.</td>
             </tr>
             <tr>
                 <th scope="row">images</th>
                 <td>directory</td>
                 <td>no</td>
-                <td>Empty by default. It's where images will go when you upload them in the [Images](http://docs.textpattrn.io/administration/images-panel) panel.</td>
+                <td>Empty by default. It's where images will go when you upload them in the <strong>Images</strong> panel.</td>
             </tr>
             <tr>
                 <th scope="row">rpc</th>
                 <td>directory</td>
                 <td>yes</td>
-                <td>Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the "Enable XML-RPC server?" preference is set to "No" in the "**Preferences**":http://docs.textpattrn.io/administration/prefs-basic-panel panel.</td>
+                <td>Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the "Enable XML-RPC server?" preference is set to "No" in the <strong>Preferences</strong> panel.</td>
             </tr>
             <tr>
                 <th scope="row">sites</th>
@@ -106,7 +106,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
                 <th scope="row">css.php</th>
                 <td>file</td>
                 <td>no</td>
-                <td>Negotiates the front-end stylesheets you create in the "**Styles**":http://docs.textpattrn.io/administration/styles-panel panel.</td>
+                <td>Negotiates the front-end stylesheets you create in the <strong>Styles</strong> panel.</td>
             </tr>
             <tr>
                 <th scope="row">README.txt</th>
