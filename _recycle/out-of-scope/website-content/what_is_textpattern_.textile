@@ -1,8 +1,0 @@
-\nTextpattern is a flexible, elegant, easy-to-use content management system for powering all kinds of Websites, including personal Weblogs and business sites.
-
-When it comes to publishing on the internet, beginners and experts alike are met with a bothersome paradox: word processors and graphics applications allow anyone to do a pretty good job of managing text and images on a personal computer, but to make these available to the worldwide web - a seemingly similar environment of documents and destinations - ease of use vanishes behind sudden requirements for multilingual programming skills, proficiency in computer-based graphic design, and, ultimately, the patience of a saint.
-
-Those who soldier on anyway may find themselves further held back by the web's purported inflexibility with written language, with its reluctance to cope with all but the plainest of text, or by the unpredictable results brought about by using 'WYSIWYG' web editors.
-
-Textpattern is a web application designed to help overcome these and other hurdles to publishing online, and to simplify the production of well-structured, standards-compliant web pages.
-
