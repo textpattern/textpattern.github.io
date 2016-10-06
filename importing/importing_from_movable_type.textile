@@ -1,6 +1,0 @@
-\n*WORK-IN-PROGRESS!* "Throw rocks":http://forum.textpattern.com/viewforum.php?id=28 if it gets quiet.
-
-Click on *Admin* tab  - &gt; *Import* (see the "import":/home/www/zendstudio/dokuwiki/bin/doku.php?id=import page).
-
-Any additonal info specific to Movable Type should go here.
-
