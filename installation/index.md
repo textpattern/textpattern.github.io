@@ -47,7 +47,7 @@ Now we begin the Textpattern part of the deal:
 3. Move the zip package to the folder you created.
 4. Unzip the package.
 
-The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see, pay particular attention the to <code>.htaccess</code> file.[^2]
+The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see, pay particular attention the to <code>.htaccess</code>[^2] file.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
     <table>
