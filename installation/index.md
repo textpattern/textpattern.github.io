@@ -64,7 +64,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
                 <th scope="row">files</th>
                 <td>directory</td>
                 <td>no</td>
-                <td>Empty by default. It’s where content files (<code>.pdf<code>, <code>.docx</code>, <code>.rtf</code>, <code>.epub</code>, <code>.txt</code>, etc.) will go when/if you upload them in the <strong>Files</strong> panel. You may see a warning about the file's <code>chmod</code> status (editing rights) in the <strong>Diagnostics</strong> panel.</td>
+                <td>Empty by default. It’s where content files (<code>.pdf</code>, <code>.docx</code>, <code>.rtf</code>, <code>.epub</code>, <code>.txt</code>, etc.) will go when/if you upload them in the <strong>Files</strong> panel. You may see a warning about the file's <code>chmod</code> status (editing rights) in the <strong>Diagnostics</strong> panel.</td>
             </tr>
             <tr>
                 <th scope="row">images</th>
