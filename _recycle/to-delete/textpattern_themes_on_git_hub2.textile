@@ -1,2 +1,0 @@
-\n - REDIRECT "textpattern_themes_on_git_hub":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_themes_on_git_hub
-

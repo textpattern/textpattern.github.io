@@ -1,4 +1,0 @@
-\n"work_in_progress":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=work_in_progress
-
-This documentation is "a new wiki objective":http://forum.textpattern.com/viewtopic.php?id=36521 and forthcoming. If you have questions, comments, or otherwise, please post them in that thread, or in the discussion side of this page. Thank you.
-

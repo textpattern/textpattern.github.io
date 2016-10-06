@@ -1,2 +1,0 @@
-\n - REDIRECT "plugin_archive":/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugin_archive
-

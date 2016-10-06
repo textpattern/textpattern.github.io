@@ -1,6 +1,0 @@
-\n
-
-h3(sectionedit1#overview). Overview
-
-Clicking on the _View Site_ tab will open your web domain in a new window. Make sure that the domain is "set correctly in preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_administration_interface#preferences_subtab, so that the most written to and relevent page is displayed. For most sites this will mean the front page of the website.
-

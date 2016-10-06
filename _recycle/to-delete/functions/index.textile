@@ -1,5 +1,0 @@
-h1. Core functions reference
-
-A selective guide to Textpattern's built-in functions, emphasising functions of particular use to plugin developers.
-
-*Attention:* Status of this document and it's sub-documents is currently being decided. 

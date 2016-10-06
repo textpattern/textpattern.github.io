@@ -1,2 +1,0 @@
-\n - REDIRECT "admin-side":/home/www/zendstudio/dokuwiki/bin/doku.php?id=admin-side
-
