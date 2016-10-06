@@ -69,7 +69,7 @@ Important rules for consistency, which also has implications for plugin authors.
 * When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.<sup>2</sup>
 * When referring to file names, make them italic (double underscores) and include the extension. E.g. __.htaccess__ and __index.php__ (do not make them appear as code, unless they are part of a code snippet).
 
-<small>1: Plugin authors must follow same editorial rules in their [plugin help files](http://docs.textpattern.io/development/plugin-template-help).</small>
+<p><small>1: Plugin authors must follow same editorial rules in their [plugin help files](http://docs.textpattern.io/development/plugin-template-help).</small></p>
 
 <small>2: There should be three CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type, even providing the background colour.</small>
 
