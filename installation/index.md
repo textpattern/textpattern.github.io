@@ -47,7 +47,7 @@ Now we begin the Textpattern part of the deal:
 3. Move the zip package to the folder you created.
 4. Unzip the package.
 
-The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see.
+The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see, pay particular attention the to <code>.htaccess</code> file.[^2]
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
     <table>
@@ -64,7 +64,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
                 <th scope="row">files</th>
                 <td>directory</td>
                 <td>no</td>
-                <td>Empty by default. It’s where content files (`.pdf`, <code>.docx</code>, <code>.rtf</code>, <code>.epub</code>, <code>.txt</code>, etc.) will go when/if you upload them in the "**Files**":http://docs.textpattrn.io/administration/files-panel panel. You may see a warning about the file's @chmod@ status (editing rights) in the "**Diagnostics**":/administration/diagnostics-panel panel.</td>
+                <td>Empty by default. It’s where content files (<code>.pdf<code>, <code>.docx</code>, <code>.rtf</code>, <code>.epub</code>, <code>.txt</code>, etc.) will go when/if you upload them in the "**Files**":http://docs.textpattrn.io/administration/files-panel panel. You may see a warning about the file's <code>chmod</code> status (editing rights) in the "**Diagnostics**":/administration/diagnostics-panel panel.</td>
             </tr>
             <tr>
                 <th scope="row">images</th>
@@ -92,7 +92,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
             </tr>
             <tr>
                 <th scope="row">.htaccess</th>
-                <td>file[^1]</td>
+                <td>file</td>
                 <td>no</td>
                 <td>Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of "www.", and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on.</td>
             </tr>
@@ -132,7 +132,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 
 [^1]: Do not move files in the tree or change their names. Doing so will render Textpattern useless.
 
-[^2]: This type of file is a 'hidden' server file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Macbook Pro laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them. 
+[^2]: This type of file is a 'hidden' server file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Macbook Pro laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them.
 
 ## Upload package to web server
 
