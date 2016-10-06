@@ -42,7 +42,7 @@ Make doc pages **scannable** with a **consistent structure** across them, as muc
 
 To improve the ability to scan pages as described above, write as concisely as you can. Here are a few quick wins for cleaner copy:
 
-1. Write in the third-person. You're speaking to an individual on behalf of Textpattern, so you don't use "me", "I", "my", etc. (But you will use "you", "your", etc.) When you don't talk about something from your personal point of view, you say a lot less. It's magic.
+1. Write in the third-person. You're speaking to an individual on behalf of Textpattern, so you don't use "me", "I", "my", etc. (but you will use "you", "your", etc.). When you don't talk about something from your personal point of view, you say a lot less. It's magic.
 2. Avoid passive 'to be' and 'to have' verb structures (e.g. could be/have, should be/have, might be/have). Passive writing is not only miserable to read, it bloats copy with unnecessary words. Find a more direct/active way of wording the phrase. For example, instead of "The widget should be at the top of the sidebar." say "Put the widget at top of the sidebar."
 3. Avoid useless adverbs like "very", "really", "only" and many others. For example, "If you really want to do that." is better as "If you want to do that." A person either wants to or doesn't, adding "really" does't change anything.
 4. Question every use of "that" and "just" in your copy. It's easy to abuse both words. Every time you use "that" or "just" in a sentence, read the sentence and see if it still makes sense without the word. Most of the time it will. If it does, it's probably correct to leave the words out.
@@ -58,14 +58,14 @@ To improve the ability to scan pages as described above, write as concisely as y
 
 Important rules for consistency, which also has implications for plugin authors.<sup>1</sup>
 
-* Use "**administration side**" correctly when used as an _adjective_ versus a _noun_:
+* Use "**administration side**" correctly when used as an *adjective* versus a *noun*:
   * *noun* form (no hyphen is used): e.g. "The login to the administration side is located at ..." (Write "administration" out fully to distinguish the place from a person ("admin").
-  * "adjective" form (hyphen is used): e.g. "The administration-side panels are organized by **Content**, **Presentation**, and **Admin** (and **Extensions** for admin-side plugins). As the example shows, you may use "admin-side" when used as an ajective, due to it's popularity and convenience, but writing it out fully as "administration-side" is always preferred.
+  * *adjective* form (hyphen is used): e.g. "The administration-side panels are organized by **Content**, **Presentation**, and **Admin** (and **Extensions** for admin-side plugins). As the example shows, you may use "admin-side" when used as an ajective, due to it's popularity and convenience, but writing it out fully as "administration-side" is always preferred.
 * When referring to admin-side panel names, panel section headers, form control labels, and button labels, spell the name exactly as it appears in the panel and make it strong emphasis (double-asterisks each side in kramdown), e.g. "The articles table on the **Articles** panel shows article IDs, titles, dates posted, the sections they're in, and their current status."
-* When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: "You can control widowed words in article titles by selecting 'Yes' on the '__Prevent widowed words in article titles?__' preference."
-* When referring to a form control options (e.g. select-menu options, radio button options, etc.) or any other non-header UI dialogue, quote the text and leave it in normal format. E.g. "When you're ready to publish your draft, change status to 'Live' and click the **Save** button*."
+* When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: "You can control widowed words in article titles by selecting 'Yes' on the '*Prevent widowed words in article titles?*' preference."
+* When referring to a form control options (e.g. select-menu options, radio button options, etc.) or any other non-header UI dialogue, quote the text and leave it in normal format. E.g. "When you're ready to publish your draft, change status to 'Live' and click the **Save** button."
 * When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.<sup>2</sup>
-* When referring to file names, make them italic (double underscores) and include the extension. E.g. __.htaccess__ and __index.php__ (do not make them appear as code, unless they are part of a code snippet).
+* When referring to file names, make them italic and include the extension. e.g. *.htaccess* and *index.php* (do not make them appear as code, unless they are part of a code snippet).
 
 **Note 1:** Plugin authors must follow same editorial rules in their [plugin help files](http://docs.textpattern.io/development/plugin-template-help).</small></p>
 
