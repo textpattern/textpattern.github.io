@@ -42,8 +42,8 @@ For example, if your web host ID was your last name (`lname`) and you named your
 
 Now we begin the Textpattern part of the deal:
 
-1. Create a folder on your local drive and name it something recognizable (e.g., `txp-new`). 
-2. [Download](http://textpattern.com/download the latest release package) (either '.zip' or '.tar.gz', as you prefer). 
+1. Create a folder on your local drive and name it something recognizable (e.g. `txp-new`). 
+2. [Download](http://textpattern.com/download the latest release package) (either `.zip` or `.tar.gz`, as you prefer). 
 3. Move the zip package to the folder you created.
 4. Unzip the package.
 
@@ -200,7 +200,6 @@ This part shows if Textpattern has actually communicated successfully with your 
 
 ~~~
 > %(success)Connected%
-
 > %(success)Using {database} ({encoding})%
 ~~~
 
