@@ -47,34 +47,92 @@ Now we begin the Textpattern part of the deal:
 3. Move the zip package to the folder you created.
 4. Unzip the package.
 
-The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[1] Following are the folders and files you'll see.
+The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see.
 
-~~~ html
-TODO <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-
-|_. Item |_. Type |_. Removable? |_. What it's for |
-| *files* | directory | no | Empty by default. It's where content files (*.pdf*, *.docx*, *.rtf*, *.epub*, *.txt*, etc.) will go when/if you upload them in the "**Files**":http://docs.textpattrn.io/administration/files-panel panel. You may see a warning about the file's @chmod@ status (editing rights) in the "**Diagnostics**":/administration/diagnostics-panel panel. |
-| *images* | directory | no | Empty by default. It's where images will go when you upload them in the "**Images**":http://docs.textpattrn.io/administration/images-panel panel. |
-| *rpc* | directory | yes | Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the "Enable XML-RPC server?" preference is set to "No" in the "**Preferences**":http://docs.textpattrn.io/administration/prefs-basic-panel panel. |
-| *sites* | directory | yes | Supports multi-site installations managed by one administration side. It contains a template and instructions (a README.txt) for doing so. You can safely remove this directory if not wanted. |
-| *textpattern* | directory | no | Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side. |
-| *.htaccess* | file[2] | no | Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of "www.", and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on. |
-| *index.php* | file | no | Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing. |
-| *css.php* | file | no | Negotiates the front-end stylesheets you create in the "**Styles**":http://docs.textpattrn.io/administration/styles-panel panel. |
-| composer.json | file | ? | A programming checker. [Purpose?] |
-| phpcs.xml | file | ? | A programming checker. [Purpose?] |
-| *README.txt* | file | yes | The file providing brief instructions for installing and upgrading Textpattern. |
-| *HISTORY.txt* | file | yes | The file showing the package release Changelog. |
-| *LICENSE-BSD-3.txt* | file | no | Textpattern's software copyright agreement. It doesn't impact functionality, but leave it alone. |
-| *LICENSE-LESSER.txt* | file | no | The GNU LESSER GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone. |
-| *LICENSE.txt* | file | no | The GNU GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone. |
-
+<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Type</th>
+                <th scope="col">Removable?</th>
+                <th scope="col">What it’s for</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">files</th>
+                <td>directory</td>
+                <td>no</td>
+                <td>Empty by default. It’s where content files (`.pdf`, <code>.docx</code>, <code>.rtf</code>, <code>.epub</code>, <code>.txt</code>, etc.) will go when/if you upload them in the "**Files**":http://docs.textpattrn.io/administration/files-panel panel. You may see a warning about the file's @chmod@ status (editing rights) in the "**Diagnostics**":/administration/diagnostics-panel panel.</td>
+            </tr>
+            <tr>
+                <th scope="row">images</th>
+                <td>directory</td>
+                <td>no</td>
+                <td>Empty by default. It's where images will go when you upload them in the [Images](http://docs.textpattrn.io/administration/images-panel) panel.</td>
+            </tr>
+            <tr>
+                <th scope="row">rpc</th>
+                <td>directory</td>
+                <td>yes</td>
+                <td>Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the "Enable XML-RPC server?" preference is set to "No" in the "**Preferences**":http://docs.textpattrn.io/administration/prefs-basic-panel panel.</td>
+            </tr>
+            <tr>
+                <th scope="row">sites</th>
+                <td>directory</td>
+                <td>yes</td>
+                <td>Supports multi-site installations managed by one administration side. It contains a template and instructions (a README.txt) for doing so. You can safely remove this directory if not wanted.</td>
+            </tr>
+            <tr>
+                <th scope="row">textpattern</th>
+                <td>directory</td>
+                <td>no</td>
+                <td>Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side.</td>
+            </tr>
+            <tr>
+                <th scope="row">.htaccess</th>
+                <td>file[^1]</td>
+                <td>no</td>
+                <td>Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of "www.", and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on.</td>
+            </tr>
+            <tr>
+                <th scope="row">index.php</th>
+                <td>file</td>
+                <td>no</td>
+                <td>Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing.</td>
+            </tr>
+            <tr>
+                <th scope="row">css.php</th>
+                <td>file</td>
+                <td>no</td>
+                <td>Negotiates the front-end stylesheets you create in the "**Styles**":http://docs.textpattrn.io/administration/styles-panel panel.</td>
+            </tr>
+            <tr>
+                <th scope="row">README.txt</th>
+                <td>file</td>
+                <td>yes</td>
+                <td>The file providing brief instructions for installing and upgrading Textpattern.</td>
+            </tr>
+            <tr>
+                <th scope="row">HISTORY.txt</th>
+                <td>file</td>
+                <td>yes</td>
+                <td>The file showing the package release Changelog.</td>
+            </tr>
+            <tr>
+                <th scope="row">LICENSE.txt</th>
+                <td>file</td>
+                <td>no</td>
+                <td>The GNU GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone.</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
-~~~
 
-fn1. Do not move files in the tree or change their names. Doing so will render Textpattern useless.
+[^1]: Do not move files in the tree or change their names. Doing so will render Textpattern useless.
 
-fn2. This type of file is a 'hidden' server file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Macbook Pro laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them. 
+[^2]: This type of file is a 'hidden' server file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Macbook Pro laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them. 
 
 ## Upload package to web server
 
@@ -96,13 +154,13 @@ Now you'll walk through the setup process, which is a series of screens. Have yo
 
 ### Select language
 
-You should now be looking at the default installation screen, which shows the Textpattern logo, a language selection menu, and a **Submit** button.[3] The language you select will be used for the setup process, and become the default for your Textpattern UI.[4]
+You should now be looking at the default installation screen, which shows the Textpattern logo, a language selection menu, and a **Submit** button.[^3] The language you select will be used for the setup process, and become the default for your Textpattern UI.[^4]
 
 Choose the language you want and click the **Submit** button.
 
-fn3. If you don't see this screen, check your URL path. Should it be "https" or "www."? Did you install in a sub-directory? Is there a typo?
+[^3]: If you don't see this screen, check your URL path. Should it be "https" or "www."? Did you install in a sub-directory? Is there a typo?
 
-fn4. You can change the UI language any time after setup in the "**Preferences**":http://docs.textpattrn.io/administration/preferences-panel panel.
+[^4]: You can change the UI language any time after setup in the "**Preferences**":http://docs.textpattrn.io/administration/preferences-panel panel.
 
 ### Step 1: Set database details
 
@@ -146,7 +204,7 @@ This part shows if Textpattern has actually communicated successfully with your 
 > %(success)Using {database} ({encoding})%
 ~~~
 
-Where `{database}` is the name of your database and `{encoding}` is the character encoding your database is configured to use -- ideally `utf8`.[5]
+Where `{database}` is the name of your database and `{encoding}` is the character encoding your database is configured to use -- ideally `utf8`.[^5]
 
 #### Creating config.php file
 
@@ -174,7 +232,7 @@ Proceed as follows:
 
 Return to the **Add config file** screen in your browser and click the **I did it** button.
 
-fn5. If you want to change your character encoding, you'll need to do that at your database. But finish installing first, then change the database encoding later.
+[^5]: If you want to change your character encoding, you'll need to do that at your database. But finish installing first, then change the database encoding later.
 
 ### Step 3: Populate database
 
@@ -182,7 +240,7 @@ This screen, step 3, is where you create your Textpattern administrator account.
 
 #### Creating database tables
 
-To create the administrator account and generate the database tables, add the following information, and remember the login/password (you'll need it to log in):[6]
+To create the administrator account and generate the database tables, add the following information, and remember the login/password (you'll need it to log in):[^6]
 
 * Full name (e.g. Jane Doe)
 * Login name
@@ -191,13 +249,11 @@ To create the administrator account and generate the database tables, add the fo
 
 #### Site configuration
 
-Under this area, you're asked to select the admin-side theme you want to use. The default theme is Hive.[7] You can change the admin-side theme choice at any time in [Preferences](http://docs.textpattern.io/administration/preferences-panel) after logging in.
+Under this area, you're asked to select the admin-side theme you want to use. The default theme is Hive. You can change the admin-side theme choice at any time in [Preferences](http://docs.textpattern.io/administration/preferences-panel) after logging in.
 
 When ready click the **Next** button.
 
-fn6. The login name and password should *not* be the same login and password used for your database.
-
-fn7. This section may be obsolete in future versions of Textpattern. Hive may become the only officially-supported admin theme, thus no selection process here will be needed. The Classic and Remora themes will be available as add-ons post-installation, like any other admin-theme.
+[^6]: The login name and password should *not* be the same login and password used for your database.
 
 ### Step 4: Go!
 
