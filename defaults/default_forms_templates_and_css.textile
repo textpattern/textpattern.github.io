@@ -1,2 +1,0 @@
-\n - REDIRECT "default_forms_pages_and_styles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms_pages_and_styles
-

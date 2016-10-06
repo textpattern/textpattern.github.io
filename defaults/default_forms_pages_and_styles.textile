@@ -1,2 +1,0 @@
-\nThese components have been broken into their own pages. Please see "getting_started_with_textpattern":/home/www/zendstudio/dokuwiki/bin/doku.php?id=getting_started_with_textpattern section for page links.
-
