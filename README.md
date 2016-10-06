@@ -89,14 +89,30 @@ fn4. These uses of "tab" in the admin-side UI preferences, for example, should b
 
 ### Tables
 
-Use Textile tables, but they need to have a @notextile. <div>@ wrapper around them too, like this:
+Use HTML tags for tables within Markdown files, like this:
 
-~~~ markdown
-notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-
-|_. Header |_. Header |_. Header |
-| data | data | data|
-| etc | etc | etc |
-
-notextile. </div>
+~~~ html
+<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">data</th>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <th scope="row">etc</th>
+                <td>etc</td>
+                <td>etc</td>
+            <tr>
+        </tbody>
+    </table>
+</div>
 ~~~
