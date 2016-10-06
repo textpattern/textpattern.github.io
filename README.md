@@ -67,9 +67,9 @@ Important rules for consistency, which also has implications for plugin authors.
 * When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.<sup>2</sup>
 * When referring to file names, make them italic (double underscores) and include the extension. E.g. __.htaccess__ and __index.php__ (do not make them appear as code, unless they are part of a code snippet).
 
-Note 1: Plugin authors must follow same editorial rules in their [plugin help files](http://docs.textpattern.io/development/plugin-template-help).</small></p>
+**Note 1:** Plugin authors must follow same editorial rules in their [plugin help files](http://docs.textpattern.io/development/plugin-template-help).</small></p>
 
-Note 2: There should be three CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type, even providing the background colour.</small>
+**Note 2:** There should be three CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type, even providing the background colour.</small>
 
 ## Typo and grammar gotchas to watch out for
 
@@ -78,9 +78,9 @@ Note 2: There should be three CSS class selectors to use in the Jekyll site that
 * Use 'log in' and 'log out' when it's a verb (e.g. "after you log in" or "after logging in").
 * Do not use 'tab' - use 'panel' - when talking about the admin-side panels.<sup>3</sup> The only exception is you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab").<sup>4</sup>
 
-Note 3: The presentational theme of the admin-side was originally conceived as a set of manilla file folders, with each region label depicted as a folder “tab”. This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as 'tabs' even though they may use an admin theme that does not depict the file folder concept. New docs should not perpetuate that false concept and terminology, particularly as the file folder concept is not depicted in the admin-side navigation of the official admin-side theme - Hive. The use of 'tab' in the admin-side UI, such as in preferences, help dialogue, and so forth, is probably only clear to veteran Textpattern users. When/if the admin-side UI is cleaned of all use of the word 'tab', then docs can be fully cleaned of the use as well, but we can get most of the way there by only using 'tab' when it's in direct reference of an UI element label.</small>
+**Note 3:** The presentational theme of the admin-side was originally conceived as a set of manilla file folders, with each region label depicted as a folder “tab”. This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as 'tabs' even though they may use an admin theme that does not depict the file folder concept. New docs should not perpetuate that false concept and terminology, particularly as the file folder concept is not depicted in the admin-side navigation of the official admin-side theme - Hive. The use of 'tab' in the admin-side UI, such as in preferences, help dialogue, and so forth, is probably only clear to veteran Textpattern users. When/if the admin-side UI is cleaned of all use of the word 'tab', then docs can be fully cleaned of the use as well, but we can get most of the way there by only using 'tab' when it's in direct reference of an UI element label.</small>
 
-Note 4: These uses of 'tab' in the admin-side UI preferences, for example, should be treated as bugs that need fixed, and issues written for them.</small>
+**Note 4:** These uses of 'tab' in the admin-side UI preferences, for example, should be treated as bugs that need fixed, and issues written for them.</small>
 
 ## Markup
 
