@@ -36,7 +36,6 @@ As with any system upgrade, you'll want to be sure you can fall back on your exi
 ### Duplicate the existing Textpattern file tree
 
 You must make a copy of your `config.php` file as a minimum.
-{: .alert-block .information}
 
 Make a copy of the current system (folders and files of the Textpattern installation). The easiest way to do this is to log onto the server using FTP or SFTP, create a new folder called `txp-current`, for example, and copy the existing system file tree into this new folder (leave the file tree structure the same). Alternatively, simply duplicate your existing Textpattern dir and name it `Textpattern_OLD`. Upload the new Textpattern dir and then copy your `config.php` file from the `Textpattern_OLD` **prior** to running the update.
 
@@ -56,7 +55,6 @@ You now have a full backup of your files and database. If things don't work out 
 ## Install the new Textpattern files
 
 It is strongly advised to log out of the Textpattern admin interface before upgrading.
-{: .alert-block .information}
 
 Using FTP/SFTP again, navigate to the folder you created in **Step 1** and copy the following files from there to your server, overwriting any previous files:
 
@@ -65,7 +63,6 @@ Using FTP/SFTP again, navigate to the folder you created in **Step 1** and copy 
 * Copy the contents of the `textpattern` folder to the server's `textpattern` folder. You should exclude the `setup` directory, since it is only used for first-time installations. The [Diagnostics panel](http://docs.textpattern.io/administration/diagnostics-panel) will inform you if the `setup` directory is still available, and whether you have uploaded all files completely.
 
 It is important that you make sure all three `index.php`, `css.php` and `.htaccess` files transfer over. This shouldn't be a problem, but sometimes in the case of the `.htaccess` file it does not show up in certain FTP clients (it's usually there but just not visible). In the case of the `.htaccess` file or `/lib/admin_config.php`, if you had any customizations (such as `mod_rewrite` changes or custom permissions), be sure to add them back so you don't lose that functionality. When in doubt, compare your backed-up copy of the file against the new one.
-{: .alert-block .information}
 
 Ensure your existing `config.php` file is still inside your `textpattern` folder on the server. This rarely changes between releases; if any changes are required or options become available they are documented in the `README.txt` file.
 
@@ -84,13 +81,12 @@ Open a web browser and visit the admin-side location (usually `example.org/textp
 When Textpattern updates, you will be taken by default to the [Languages panel](http://docs.textpattern.io/administration/languages-panel). Once there, update your chosen language files as necessary (highlighted). Then go to the [Diagnostics panel](http://docs.textpattern.io/administration/diagnostics-panel) and troubleshoot any noted issues.
 
 Some notices are not always problems, *per se*, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check the [Diagnostics panel](http://docs.textpattern.io/administration/diagnostics-panel) to see if it's documented, if that doesn't help, ask in the ['How do I...? and other questions' forum](http://forum.textpattern.com).
-{: .alert-block .information}
 
 ## Remove unnecessary files
 
 After installing or upgrading Textpattern, you only need to delete the `setup` folder (`/textpattern/setup`). This folder and its contained files are not used once Textpattern is installed. If you do not do this before checking the [Diagnostics panel](http://docs.textpattern.io/administration/diagnostics-panel) in **Step 5**, you'll see a diagnostic warning reminding you to do it (the error will disappear when the folder is removed).
 
-p(alert-box information). The `setup` folder is only used for **new** installations, not upgrades, thus it's technically not necessary to add this folder from the latest, stable package. However, don't go out of your way to be clinical, simply upgrade using the full package and then delete the folder afterwards - it's easier all-around.
+The `setup` folder is only used for **new** installations, not upgrades, thus it's technically not necessary to add this folder from the latest, stable package. However, don't go out of your way to be clinical, simply upgrade using the full package and then delete the folder afterwards - it's easier all-around.
 
 ## Debugging check
 
@@ -103,7 +99,6 @@ If you do need to update tag or attribute names, the [smd_where_used plugin](htt
 ## Explore the bleeding edge development
 
 For advanced users only!
-{: .alert-block .warning}
 
 The latest, **potentially unstable**, bleeding-edge code is available at [the GitHub repository](https://github.com/textpattern/textpattern).
 
