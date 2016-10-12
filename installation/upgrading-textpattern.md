@@ -62,7 +62,7 @@ Using FTP/SFTP again, navigate to the folder you created in **Step 1** and copy 
 
 * Copy the files `.htaccess`, `css.php`, and `index.php` (the `README.txt`, `HISTORY.txt` and `LICENSE` files are optional).
 * Copy any folders you are using, for example `rpc` and `sites`. You do not usually need to copy `files` and `images` unless otherwise directed because you will already have done so when installing a prior release.
-* Copy the contents of the `textpattern` folder to the server's `textpattern` folder. You may exclude the `setup` directory, since it is only used for first-time installations.
+* Copy the contents of the `textpattern` folder to the server's `textpattern` folder. You should exclude the `setup` directory, since it is only used for first-time installations. The [Diagnostics panel](http://docs.textpattern.io/administration/diagnostics-panel) will inform you if the `setup` directory is still available, and whether you have uploaded all files completely.
 
 It is important that you make sure all three `index.php`, `css.php` and `.htaccess` files transfer over. This shouldn't be a problem, but sometimes in the case of the `.htaccess` file it does not show up in certain FTP clients (it's usually there but just not visible). In the case of the `.htaccess` file or `/lib/admin_config.php`, if you had any customizations (such as `mod_rewrite` changes or custom permissions), be sure to add them back so you don't lose that functionality. When in doubt, compare your backed-up copy of the file against the new one.
 {: .alert-block .information}
@@ -73,22 +73,22 @@ Note that some operating systems (such as macOS) do not always merge the content
 
 If you are running an Apache web server and wish to prohibit direct access to your downloadable files (i.e. by someone manually entering `http://site.com/files/name_of_file`) you may rename the `/files/.htaccess-dist` file to `/files/.htaccess`.
 
-For better security, however, we recommend moving the entire folder and its contents **outside** your web-accessible root folder. Once you have relocated it, you can inform Textpattern of its location via the 'File directory path' Advanced Preference when you log back into the admin side. The same advice stands for the `tmp` directory.
+For better security, however, we recommend moving the entire folder and its contents **outside** your web-accessible root folder. Once you have relocated it, you can inform Textpattern of its location via the 'File directory path' Preference when you log back into the admin side. The same advice stands for the `tmp` directory.
 
 ## Update
 
-Open a web browser and go to the [[Admin-side]] location. Log in. That's it! Easy, huh? There are no update scripts to run or anything else; by simply going to the normal admin-side location, Textpattern will recognize the need to update and do so automatically.
+Open a web browser and visit the admin-side location (usually `example.org/textpattern`). Log in. That's it! Easy, huh? There are no update scripts to run or anything else; by simply going to the normal admin-side location, Textpattern will recognize the need to update and do so automatically.
 
 ## Fine-tune
 
-When Textpattern updates, you will be taken by default to the [[Languages page]]. Once there, update your chosen language files as necessary (highlighted). Then go to the [[Diagnostics page]] and troubleshoot any noted issues.
+When Textpattern updates, you will be taken by default to the [Languages panel](http://docs.textpattern.io/administration/languages-panel). Once there, update your chosen language files as necessary (highlighted). Then go to the [Diagnostics panel](http://docs.textpattern.io/administration/diagnostics-panel) and troubleshoot any noted issues.
 
-Some notices are not always problems, *per se*, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check the [[Diagnostics page]] to see if it's documented, if that doesn't help, ask in the ['How do I...? and other questions' forum](http://forum.textpattern.com).
+Some notices are not always problems, *per se*, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check the [Diagnostics panel](http://docs.textpattern.io/administration/diagnostics-panel) to see if it's documented, if that doesn't help, ask in the ['How do I...? and other questions' forum](http://forum.textpattern.com).
 {: .alert-block .information}
 
 ## Remove unnecessary files
 
-After installing or upgrading Textpattern, you only need to delete the `setup` folder (`/textpattern/setup`). This folder and its contained files are not used once Textpattern is installed. If you do not do this before checking the [[Diagnostics page]] in **Step 5**, you'll see a diagnostic warning reminding you to do it (the error will disappear when the folder is removed).
+After installing or upgrading Textpattern, you only need to delete the `setup` folder (`/textpattern/setup`). This folder and its contained files are not used once Textpattern is installed. If you do not do this before checking the [Diagnostics panel](http://docs.textpattern.io/administration/diagnostics-panel) in **Step 5**, you'll see a diagnostic warning reminding you to do it (the error will disappear when the folder is removed).
 
 p(alert-box information). The `setup` folder is only used for **new** installations, not upgrades, thus it's technically not necessary to add this folder from the latest, stable package. However, don't go out of your way to be clinical, simply upgrade using the full package and then delete the folder afterwards - it's easier all-around.
 
@@ -96,7 +96,7 @@ p(alert-box information). The `setup` folder is only used for **new** installati
 
 This step is highly recommended, but optional. It is best to do this on a development server to avoid showing your users error messages.
 
-Change your site's 'Production status' in the [[Preferences page]] to 'debugging'. Go through the live site (every page, if possible), looking for error messages. Any such messages will be clearly visible at the top of the page. The upgrade may result in notices or errors relating to deprecated tags or attributes (these should be easy to correct).
+Change your site's 'Production status' in the [Preferences panel](http://docs.textpattern.io/administration/preferences-panel) to 'debugging'. Go through the live site (every page, if possible), looking for error messages. Any such messages will be clearly visible at the top of the page. The upgrade may result in notices or errors relating to deprecated tags or attributes (these should be easy to correct).
 
 If you do need to update tag or attribute names, the [smd_where_used plugin](http://forum.textpattern.com/viewtopic.php?id=27493) is a great help for quickly finding all instances of a given tag or attribute.
 
