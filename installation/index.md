@@ -132,7 +132,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 
 [^1]: Do not move files in the tree or change their names. Doing so will render Textpattern useless.
 
-[^2]: This type of file is a 'hidden' server file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Macbook Pro laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them.
+[^2]: This type of file is a 'hidden' server file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Mac laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them.
 
 ## Upload package to web server
 
@@ -158,9 +158,9 @@ You should now be looking at the default installation screen, which shows the Te
 
 Choose the language you want and click the **Submit** button.
 
-[^3]: If you don't see this screen, check your URL path. Should it be "https" or "www."? Did you install in a sub-directory? Is there a typo?
+[^3]: If you don't see this screen, check your URL path. Should it be `https` or `www.`? Did you install in a sub-directory? Is there a typo?
 
-[^4]: You can change the UI language any time after setup in the "**Preferences**":http://docs.textpattrn.io/administration/preferences-panel panel.
+[^4]: You can change the UI language any time after setup in the [**Preferences**](http://docs.textpattrn.io/administration/preferences-panel) panel.
 
 ### Step 1: Set database details
 
