@@ -2,6 +2,7 @@
 layout: default
 published: true
 title: "Textpattern user documentation"
+description: How to install and use Textpattern CMS.
 search_omit: true
 ---
 
@@ -10,10 +11,6 @@ search_omit: true
 Welcome to the new user documentation, which replaces the old wiki at textpattern.net (soon to retire). This is a construction zone for a while, but any viewable page is ready for use, albeit subject to further editing. Occasional progress updates and feedback requests will be made in the [sites forum](http://forum.textpattern.com/viewforum.php?id=60).
 
 ## TABLE OF CONTENTS
-
-### Source code
-
-* [Textpattern repositories](development/txp-repositories) (zip packages, Github repos, and git commands)
 
 ### Installation handling
 
@@ -43,3 +40,4 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 ### Development
 
 * [Plugin development](development/)
+* [Textpattern source code repositories](development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)

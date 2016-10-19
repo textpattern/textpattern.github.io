@@ -6,7 +6,7 @@ The Textpattern source code is stored in a git repository at "Github":https://gi
 
 "master":https://github.com/textpattern/textpattern - the main  4.x branch.  This is where we work towards each new release (4.5.0, 4.6.0 etc).  Please note that, while the 4.x branch is intended to be stable and reliable, the changes _between releases_ occasionally include errors or omissions.  If you're looking for the most reliable current copy of Textpattern, use the "latest release":/download/.
 
-To download from Github, you'll need to install the "git command-line client":https://git-scm.com/downloads (for most operating systems, including OS X). There are graphical clients available, such as "Github for Windows":https://windows.github.com/ or "OSX":https://mac.github.com/help.html should you prefer, although the command-line version gives far more flexibility.
+To download from Github, you'll need to install the "git command-line client":https://git-scm.com/downloads (for most operating systems, including macOS). There are graphical clients available, such as "Github for Windows":https://windows.github.com/ or "OSX":https://mac.github.com/help.html should you prefer, although the command-line version gives far more flexibility.
 
 The command you need to get started is:
 

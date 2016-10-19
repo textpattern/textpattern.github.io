@@ -1,6 +1,6 @@
 h1. Where can I download .htacccess? [todo]
 
-The .htaccess file is inside the main directory in both the .zip and .tar.gz downloads.  Some file browsers (particularly on OS X) don't display files beginning with a '.' by default, but it's there, honest.  
+The .htaccess file is inside the main directory in both the .zip and .tar.gz downloads.  Some file browsers (particularly on macOS) don't display files beginning with a '.' by default, but it's there, honest.
 
 You can also fetch it from the "subversion repository (4.0.7 release)":http://svn.textpattern.com/releases/4.0.7/source/.htaccess.
 
