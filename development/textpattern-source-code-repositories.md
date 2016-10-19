@@ -25,13 +25,13 @@ On this page:
 
 ## Source code options
 
-The current stable release, the latest bleeding-edge nightlies, and the old legacy packages are all available.
+The current stable release, the latest bleeding-edge development code, and the old legacy packages are all available.
 
 ### Production release
 
 The production release - or *latest stable release* - is for the average user who wants the most secure version of Textpattern available. They are terminal branches (or 'snapshots') from the master repo at particular development milestones. When new production releases are available, the previous release becomes obsolete in terms of developer support, so always update your Textpattern installations to the latest stable release when they're available.
 
-* [.zip file download](http://textpattern.com/latest.zip) (an immediate .zip package download from textpattern.com, no messing around) 
+* [Zip file download](http://textpattern.com/latest.zip) (an immediate .zip package download from textpattern.com, no messing around) 
 * [Zip package options](http://textpattern.com/download/) (choose either `.zip` or `.tar.gz`, as you prefer) 
 
 ### Development branch
@@ -74,7 +74,7 @@ First you'll need to [install the client](https://desktop.github.com/). Then fir
 
 ### Git command-line client
 
-The command-line also requires a client, the [git command-line client](https://git-scm.com/downloads) (for most operating systems, including macOS).
+The command-line also requires a client, the [git command-line client](https://git-scm.com/downloads) is available for most operating systems.
 
 Use the following command to clone the Textpattern dev branch repository to your local drive:
 
