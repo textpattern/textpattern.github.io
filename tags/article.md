@@ -50,7 +50,7 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 
 `allowoverride="boolean"`
 : Whether to use override forms for the generated article list.
-: Values: `0` (no) or `1` (yes).
+: **Values:** `0` (no) or `1` (yes).
 : **Default:** `1`.
 
 `customfieldname="value"`
@@ -82,12 +82,12 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 
 `pgonly="boolean"`
 : Do the article count, but do not display anything. Used when you want to show a search result count, or article navigation tags **before** the list of articles. Just make sure that, other than `pgonly`, both article tags are identical (form-related attributes are the exception, they do not need to be assigned).
-: Values: `0` (no) or `1` (yes).
+: **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
 
 `searchall="boolean"`
 : When outputting search results, include only those articles with 'Include in site search' set on the [Sections administration panel](../administration/sections-panel). If set to `0`, only articles in the current section are displayed. See @@Fixing search results@@ for more.
-: Values: `0` (no) or `1` (yes).
+: **Values:** `0` (no) or `1` (yes).
 : **Default:** `1`.
 
 `searchform="form name"`
@@ -96,12 +96,12 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 
 `searchsticky="boolean"`
 : When outputting search results, include articles with status `sticky`.
-: Values: `0` (no) or `1` (yes).
+: **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
 
 `sort="sort value(s)"`
 : How to sort resulting list.
-: Values: \\
+: **Values:** \\
 `authorid` (author name). \\
 `category1`. \\
 `category2`. \\
@@ -125,12 +125,12 @@ Each field in the `textpattern` database table can be used as a sort key.
 
 `status="status"`
 : Restrict to articles with the specified `status`.
-: Values: `live` or `sticky`.
+: **Values:** `live` or `sticky`.
 : **Default:** `live`.
 
 `time="time"`
 : Restrict to articles posted within specified timeframe.
-: Values: `past`, `future` or `any` (both `past` and `future`).
+: **Values:** `past`, `future` or `any` (both `past` and `future`).
 : **Default:** `past`.
 
 ### Common presentational attributes
