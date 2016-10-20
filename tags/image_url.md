@@ -38,24 +38,24 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `id="integer"`
 : An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](../administration/images-panel).
-: Default: unset.
+: **Default:** unset.
 
 `link="link type"`
 : Whether to hyperlink the URL or not.
-: Values: \\
+: **Values:** \\
 `1`: hyperlink the URL (if used as a single tag) or the container content. \\
 `0`: don't hyperlink the URL/container. \\
 `auto`: only apply the hyperlink if the tag is used as a container.
-: Default: `auto`.
+: **Default:** `auto`.
 
 `name="image name"`
 : An image to display, given by its image name as shown on the [Images administration panel](../administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
-: Default: unset.
+: **Default:** unset.
 
 `thumbnail="boolean"`
 : Display the link to the image's thumbnail instead of the full size image.
-: Values: `0` (display the full size image) or `1` (display the thumbnail).
-: Default: `0`.
+: **Values:** `0` (display the full size image) or `1` (display the thumbnail).
+: **Default:** `0`.
 
 ## Examples
 

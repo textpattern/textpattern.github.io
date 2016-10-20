@@ -39,45 +39,45 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `author="author login name"`
 : Restrict to links with the specified author.
-: Default: unset.
+: **Default:** unset.
 
 `auto_detect="string context"`
 : List of Textpattern contexts to consider when automatically searching for links. If you wish to turn off the automatic check, set this to `auto_detect="`.
-: Values: `category` (to look in the URL for a category list) and/or `author` (to look in the URL for an author list).
-: Default: `category, author`.
+: **Values:** `category` (to look in the URL for a category list) and/or `author` (to look in the URL for an author list).
+: **Default:** `category, author`.
 
 `category="category name(s)"`
 : Restrict to links from specified categories.
-: Values: (comma separated list of) category name(s). **Note:** category names may be different to the 'Title' you typed when you created the category, as the names are sanitized for URL use. Check the [Categories administration panel](../administration/categories-panel) to ensure you are using the correct names.
-: Default: unset.
+: **Values:** (comma separated list of) category name(s). **Note:** category names may be different to the 'Title' you typed when you created the category, as the names are sanitized for URL use. Check the [Categories administration panel](../administration/categories-panel) to ensure you are using the correct names.
+: **Default:** unset.
 
 `form="form name"`
 : Use specified form.
-: Default: `plainlinks`.
+: **Default:** `plainlinks`.
 
 `id="integer"`
 : Filter the links by this list of `id`s assigned at link creation time. The IDs can be found on the [Links administration panel](../administration/links-panel).
-: Default: unset.
+: **Default:** unset.
 
 `limit="integer"`
 : Number of links to display.
-: Default: `0` (no limit).
+: **Default:** `0` (no limit).
 
 `offset="integer"`
 : The number of links to skip.
-: Default: `0`.
+: **Default:** `0`.
 
 `pageby="integer or limit"`
 : Number of links to jump each page. Without this attribute, you cannot navigate using the [newer](newer) and [older](older) tags. Usually you will want to track the `limit` attribute. Use `pageby="limit"` to do this, which means you will not have to amend two values if you subsequently decide to alter the `limit`.
-: Default: unset
+: **Default:** unset
 
 `realname="author real name"`
 : Restrict to links with the specified author name.
-: Default: unset.
+: **Default:** unset.
 
 `sort="sort value(s)"`
 : How to sort resulting list.
-: Values: \\
+: **Values:** \\
 `category`. \\
 `date`. \\
 `description`. \\
@@ -86,7 +86,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `linksort`. \\
 `rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
 `url`.
-: Default: `linksort asc`.
+: **Default:** `linksort asc`.
 
 ### Common presentational attributes
 
@@ -94,23 +94,23 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: Default: `br` (but see @@break cross-reference@@ for exceptions).
+: **Default:** `br` (but see @@break cross-reference@@ for exceptions).
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: Default: tag name or unset (see @@class cross-reference@@).
+: **Default:** tag name or unset (see @@class cross-reference@@).
 
 `label="text"`
 : Label prepended to item.
-: Default: unset (but see @@label cross-reference@@ for exceptions).
+: **Default:** unset (but see @@label cross-reference@@ for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-: Default: unset.
+: **Default:** unset.
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

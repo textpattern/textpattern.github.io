@@ -38,7 +38,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `rel="relation"`
 : [HTML rel attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) to be applied to link.
-: Default: unset.
+: **Default:** unset.
 
 ## Examples
 

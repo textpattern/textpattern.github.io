@@ -32,11 +32,11 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `id="integer"`
 : Specifies the article `id`, assigned at creation of the article, to link. Can be found on the [Articles administration panel](../administration/articles-panel).
-: Default: unset (current article).
+: **Default:** unset (current article).
 
 `title="text"`
 : HTML `title` attribute.
-: Default: unset.
+: **Default:** unset.
 
 ### Common presentational attributes
 
@@ -44,11 +44,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `a` tag when used as a container tag.
-: Default: tag name or unset (see @@class cross-reference@@).
+: **Default:** tag name or unset (see @@class cross-reference@@).
 
 `style="style rule"`
 : Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.
-: Default: unset.
+: **Default:** unset.
 
 ## Examples
 

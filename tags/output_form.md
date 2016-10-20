@@ -32,7 +32,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `form="form name"`
 : Use specified form.
-: Default: unset (no output).
+: **Default:** unset (no output).
 
 ## Examples
 

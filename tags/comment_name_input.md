@@ -31,7 +31,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `size="integer"`
 : HTML `size` attribute to be applied to the HTML form text `input` field.
-: Default: `25`.
+: **Default:** `25`.
 
 ## Examples
 

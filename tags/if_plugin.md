@@ -42,7 +42,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `version="number"`
 : Minimum plugin version number.
-: Default: unset.
+: **Default:** unset.
 
 ## Examples
 

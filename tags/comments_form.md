@@ -31,7 +31,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `form="form name"`
 : Use specified form template.
-: Default: `comment_form`.
+: **Default:** `comment_form`.
 
 ### Common presentational attributes
 
@@ -39,11 +39,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="CSS class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: Default: `comments_form` (see @@class cross-reference@@).
+: **Default:** `comments_form` (see @@class cross-reference@@).
 
 `wraptag="tag"`
 : HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

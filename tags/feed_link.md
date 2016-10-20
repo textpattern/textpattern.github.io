@@ -31,31 +31,31 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `category="category name"`
 : Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories administration panel](../administration/categories-panel) to ensure you are using the correct names.
-: Values: (comma separated list of) category name(s).
-: Default: current category.
+: **Values:** (comma separated list of) category name(s).
+: **Default:** current category.
 
 `flavor="value"`
 : Whether to output a link to the RSS or Atom version of the feed.
-: Values: `rss` or `atom`.
-: Default: `rss`.
+: **Values:** `rss` or `atom`.
+: **Default:** `rss`.
 
 `format="value"`
 : Whether to output HTML `<a>` tag or `<link>` tag.
-: Values: `a` or `link`.
-: Default: `a`.
+: **Values:** `a` or `link`.
+: **Default:** `a`.
 
 `limit="integer"`
 : Number of articles to display in the feed.
-: Default: depends upon [Preferences administration panel](../administration/preferences-panel) setting.
+: **Default:** depends upon [Preferences administration panel](../administration/preferences-panel) setting.
 
 `section="section name"`
 : Restrict to articles from specified section(s).
-: Values: (comma separated list of) section name(s).
-: Default: current section.
+: **Values:** (comma separated list of) section name(s).
+: **Default:** current section.
 
 `title="value"`
 : [HTML title attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title) to be applied to link tag.
-: Default: depends upon `flavor` used, either `RSS feed` or `Atom feed`.
+: **Default:** depends upon `flavor` used, either `RSS feed` or `Atom feed`.
 
 ### Common presentational attributes
 
@@ -63,15 +63,15 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: Default: tag name or unset (see @@class cross-reference@@).
+: **Default:** tag name or unset (see @@class cross-reference@@).
 
 `label="text"`
 : Label prepended to item.
-: Default: unset (but see @@label cross-reference@@ for exceptions).
+: **Default:** unset (but see @@label cross-reference@@ for exceptions).
 
 `wraptag="element"`
 : HTML element to wrap feed link, specified without brackets (e.g. `wraptag="p"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 Note: `wraptag` is applicable only when using `format` of `a`.
 {: .alert-block .information}

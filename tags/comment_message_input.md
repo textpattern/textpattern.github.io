@@ -31,11 +31,11 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `cols="integer"`
 : HTML `cols` attribute to be applied to HTML form `textarea` field.
-: Default: `25`.
+: **Default:** `25`.
 
 `rows="integer"`
 : HTML `rows` attribute to be applied to HTML form `textarea` field.
-: Default: `5`.
+: **Default:** `5`.
 
 ## Examples
 

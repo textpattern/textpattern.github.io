@@ -31,7 +31,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `label="text"`
 : Label that appears on the 'Submit' button.
-: Default: `Submit` (localized).
+: **Default:** `Submit` (localized).
 
 ## Examples
 

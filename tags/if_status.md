@@ -41,7 +41,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `status="number"`
 : Numerical [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
-: Default: `200` (OK).
+: **Default:** `200` (OK).
 
 ## Examples
 

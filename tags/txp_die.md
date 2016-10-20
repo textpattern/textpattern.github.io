@@ -37,11 +37,11 @@ Tag will accept the following attributes (**case-sensitive**):
 `status="number"`
 : Numerical representation of the error condition.
 : Typical values: `301`, `302`, `304`, `307`, `401`, `403`, `404`, `408`, `410`, `503`, or any other [valid status code](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
-: Default: `503`.
+: **Default:** `503`.
 
 `url="url"`
 : Redirects to the specified URL. Can be used with redirection statuses `301`, `302` and `307`.
-: Default: unset.
+: **Default:** unset.
 
 ## Examples
 

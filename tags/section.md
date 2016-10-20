@@ -33,22 +33,22 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `link="boolean"` (works only in the *single* tag)
 : Display as plain text or a link.
-: Values: `0` (plain text) or `1` (link).
-: Default: `0`.
+: **Values:** `0` (plain text) or `1` (link).
+: **Default:** `0`.
 
 `name="section name"`
 : Display the named section.
-: Default: unset (display the current section).
+: **Default:** unset (display the current section).
 
 `title="boolean"`
 : Display either the section name or its title.
-: Values: `0` (name) or `1` (title).
-: Default: `0`.
+: **Values:** `0` (name) or `1` (title).
+: **Default:** `0`.
 
 `url="boolean"`
 : Display plain URL or full link.
-: Values: `0` or `1`.
-: Default: `0` (display title or full link, depending on `link`).
+: **Values:** `0` or `1`.
+: **Default:** `0` (display title or full link, depending on `link`).
 
 ### Common presentational attributes
 
@@ -56,11 +56,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value. If no wraptag is supplied (and `link="1"`), the class is applied to the anchor instead.
-: Default: unset (see @@class cross-reference@@).
+: **Default:** unset (see @@class cross-reference@@).
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

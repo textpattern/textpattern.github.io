@@ -33,8 +33,8 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"`
 : Escape HTML entities such as `<`, `>` and `&` within text.
-: Values: `html` or unset.
-: Default: `html`.
+: **Values:** `html` or unset.
+: **Default:** `html`.
 
 `item="text"`
 : Piece of text to display, preferably an item from the `name` column of the `txp_lang` database table. If the given item matches a key there, the contents of the respective item in the `data` column will be returned. Otherwise, whatever you supply as the `item` value is returned verbatim.

@@ -31,23 +31,23 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `format="value"`
 : How to format output: either return complete [HTML link tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) with necessary HTML attributes, or only the stylesheet's URL.
-: Values: `link` or `url`.
-: Default: `url`.
+: **Values:** `link` or `url`.
+: **Default:** `url`.
 
 `media="value"`
 : [HTML media attribute](https://developer.mozilla.org/en-US/docs/CSS/Media_queries) to be applied to link tag (when invoked with `format="link"`).
-: Default: `screen`.
+: **Default:** `screen`.
 
 `name="style name"`
 : Link to specified style.
 
 `rel="value"`
 : [HTML rel attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) to be applied to link tag (when invoked with `format="link"`).
-: Default: `stylesheet`.
+: **Default:** `stylesheet`.
 
 `title="value"`
 : [HTML title attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title) to be applied to link tag (when invoked with `format="link"`).
-: Default: unset.
+: **Default:** unset.
 
 ## Examples
 

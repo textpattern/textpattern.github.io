@@ -30,11 +30,11 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `decimals="places"`
 : Number of decimal places to format the value to.
-: Default: `2`.
+: **Default:** `2`.
 
 `format="numbering style"`
 : The way to represent the number, based on the file's expected size.
-: Values: \\
+: **Values:** \\
 `b` (bytes). \\
 `k` (kilobytes). \\
 `m` (megabytes). \\
@@ -44,7 +44,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `e` (exabytes). \\
 `z` (zettabytes). \\
 `y` (yottabytes).
-: Default: unset (i.e.,the most appropriate units based on the file size).
+: **Default:** unset (i.e.,the most appropriate units based on the file size).
 
 ## Examples
 

@@ -31,21 +31,21 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `link="value"`
 : Whether to hyperlink breadcrumbs.
-: Values: `0` (no) or `1` (yes).
-: Default: `1`.
+: **Values:** `0` (no) or `1` (yes).
+: **Default:** `1`.
 
 `linkclass="class name"`
 : HTML class attribute applied to the breadcrumb links.
-: Default: unset.
+: **Default:** unset.
 
 `separator="value"`
 : Character to be used as the breadcrumb separator.
-: Default: ` » `.
+: **Default:** ` » `.
 
 `title="boolean"`
 : Whether to display the title or not.
-: Values: `0` (no, display name) or `1` (yes).
-: Default: `0`.
+: **Values:** `0` (no, display name) or `1` (yes).
+: **Default:** `0`.
 
 ### Common presentational attributes
 
@@ -53,15 +53,15 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: Default: unset (see @@class cross-reference@@).
+: **Default:** unset (see @@class cross-reference@@).
 
 `label="text"`
 : Label prepended to item.
-: Default: unset (but see @@label cross-reference@@ for exceptions).
+: **Default:** unset (but see @@label cross-reference@@ for exceptions).
 
 `wraptag="element"`
 : HTML element to wrap breadcrumb block, specified without brackets (e.g. `wraptag="p"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

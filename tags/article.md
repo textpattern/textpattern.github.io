@@ -39,7 +39,7 @@ The tag is context-sensitive, which means it will grab articles from the current
 
 When used on the front page, article's context will include articles from all sections set to display via 'Section appears on front page?' settings (see the [Sections administration panel](../administration/sections-panel) for more information).
 
-Note: `<txp:article />` is **not** the same as `<txp:article_custom />` - you can [check out the differences of that tag](article-custom) if you're unsure of the differences!</p>
+Note: `<txp:article />` is **not** the same as `<txp:article_custom />` - you can [check out the differences of that tag](article-custom) if you're unsure of the differences!
 {: .alert-block .information}
 
 ## Attributes
@@ -51,7 +51,7 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 `allowoverride="boolean"`
 : Whether to use override forms for the generated article list.
 : Values: `0` (no) or `1` (yes).
-: Default: `1`.
+: **Default:** `1`.
 
 `customfieldname="value"`
 : Restrict to articles with specified value for specified custom field name. Replace `customfieldname` with the actual name of the custom field.
@@ -59,45 +59,45 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 
 `form="form name"`
 : Use specified form template to process each article.
-: Default: `default`.
+: **Default:** `default`.
 
 `keywords="keyword(s)"`
 : Restrict to articles with specified keyword(s).
 
 `limit="integer"`
 : The number of articles to display.
-: Default: `10`.
+: **Default:** `10`.
 
 `listform="form name"`
 : Use specified form when page is displaying an article list.
-: Default: `article_listing`.
+: **Default:** `article_listing`.
 
 `offset="integer"`
 : The number of articles to skip.
-: Default: `0`.
+: **Default:** `0`.
 
 `pageby="integer"`
 : The number of articles to jump forward or back when an older or newer link is clicked. Allows you to call the article tag several times on a page without messing up older/newer links.
-: Default: value matches the value assigned to `limit`.
+: **Default:** value matches the value assigned to `limit`.
 
 `pgonly="boolean"`
 : Do the article count, but do not display anything. Used when you want to show a search result count, or article navigation tags **before** the list of articles. Just make sure that, other than `pgonly`, both article tags are identical (form-related attributes are the exception, they do not need to be assigned).
 : Values: `0` (no) or `1` (yes).
-: Default: `0`.
+: **Default:** `0`.
 
 `searchall="boolean"`
 : When outputting search results, include only those articles with 'Include in site search' set on the [Sections administration panel](../administration/sections-panel). If set to `0`, only articles in the current section are displayed. See @@Fixing search results@@ for more.
 : Values: `0` (no) or `1` (yes).
-: Default: `1`.
+: **Default:** `1`.
 
 `searchform="form name"`
 : The form to be used for your customized search results output.
-: Default: `search_results`.
+: **Default:** `search_results`.
 
 `searchsticky="boolean"`
 : When outputting search results, include articles with status `sticky`.
 : Values: `0` (no) or `1` (yes).
-: Default: `0`.
+: **Default:** `0`.
 
 `sort="sort value(s)"`
 : How to sort resulting list.
@@ -121,17 +121,17 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 `url_title`. \\
 Each field in the `textpattern` database table can be used as a sort key.
 : When viewing a search results list, `score` (how well the search terms match the article) is available as an additional value.
-: Default: `posted desc` (`score desc` for search results).
+: **Default:** `posted desc` (`score desc` for search results).
 
 `status="status"`
 : Restrict to articles with the specified `status`.
 : Values: `live` or `sticky`.
-: Default: `live`.
+: **Default:** `live`.
 
 `time="time"`
 : Restrict to articles posted within specified timeframe.
 : Values: `past`, `future` or `any` (both `past` and `future`).
-: Default: `past`.
+: **Default:** `past`.
 
 ### Common presentational attributes
 
@@ -139,23 +139,23 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: Default: `br` (but see @@break cross-reference@@ for exceptions).
+: **Default:** `br` (but see @@break cross-reference@@ for exceptions).
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: Default: tag name or unset (see @@class cross-reference@@).
+: **Default:** tag name or unset (see @@class cross-reference@@).
 
 `label="text"`
 : Label prepended to item.
-: Default: unset (but see @@label cross-reference@@ for exceptions).
+: **Default:** unset (but see @@label cross-reference@@ for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-: Default: unset.
+: **Default:** unset.
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ### Note on 'article list' vs. 'individual article' context
 

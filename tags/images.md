@@ -47,58 +47,58 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `author="author (login) ID"`
 : Filter the images by this list of author IDs who uploaded the pictures to Textpattern.
-: Default: unset.
+: **Default:** unset.
 
 `auto_detect="string context"`
 : List of Textpattern contexts to consider when automatically searching for images. If you wish to turn off the automatic check, set this to `auto_detect="`. You can choose from the following contexts: \\
 `article` to look in the article_image field. \\
 `category` to look in the URL for a category list. \\
 `author` to look in the URL for an author list. \\
-: Default: `article, category, author`. \\
+: **Default:** `article, category, author`. \\
 
 `category="image category"`
 : Filter the images by this list of category names as defined in the [Categories administration panel](../administration/categories-panel).
 
 `extension=".extension"`
 : Filter the images by this list of image extensions, including the leading dot. Example: `extension=".jpg, .png"`.
-: Default: unset.
+: **Default:** unset.
 
 `form="form name"`
 : Use specified form template to process each image. If not used, and the container is empty, the tag will output a list of images that are compatible with [image_display](image-display).
-: Default: unset.
+: **Default:** unset.
 
 `html_id="id number"`
 : The HTML `id` attribute applied to the `wraptag`, if set, otherwise to the `img` tag.
-: Default: unset.
+: **Default:** unset.
 
 `id="integer"`
 : Filter the images by this list of `id`s assigned at upload. The IDs can be found on the [Images administration panel](../administration/images-panel).
 : The order of the ids overrides the default `sort` attribute.
-: Default: unset.
+: **Default:** unset.
 
 `limit="integer"`
 : The number of images to display per page.
-: Default: `0` (unlimited).
+: **Default:** `0` (unlimited).
 
 `name="image name"`
 : Filter the images by this list of image names as shown on the [Images administration panel](../administration/images-panel).
-: Default: unset.
+: **Default:** unset.
 
 `offset="integer"`
 : The number of images to skip.
-: Default: `0` (only effective if `limit` is set).
+: **Default:** `0` (only effective if `limit` is set).
 
 `pageby="integer" (or "limit")"`
 : The number of images to jump forward or back when an [older](older) or [newer](newer) link is clicked. Without this attribute, pagination is not available; you will simply see `limit` images. You may specify `pageby="limit"` to allow pagination to automatically follow the value of the `limit` attribute. Note: [newer](newer) and [older](older) will paginate all content types at once.
-: Default: unset.
+: **Default:** unset.
 
 `realname="author name"`
 : Filter the image list so it only includes images uploaded by this list of author real names. The author names may be URL encoded (e.g. `realname="John+Smith"`) and thus could be read from the current `example.com/author/author+name` URL. Note that this attribute may incur one extra query per name, so if it is possible to use the raw author instead it will be faster.
-: Default: unset.
+: **Default:** unset.
 
 `sort="sort value(s)"`
 : How to sort the resulting image list. Specify an image attribute from the ones below and add either `asc` or `desc` to sort in ascending or descending order, respectively.
-: Values: \\
+: **Values:** \\
 `alt`. \\
 `author`. \\
 `caption`. \\
@@ -112,12 +112,12 @@ Tag will accept the following attributes (**case-sensitive**):
 `thumb_h` (image thumbnail `height` attribute). \\
 `thumb_w` (image thumbnail `width` attribute). \\
 `w` (image `width` attribute).
-: Default: `name asc`.
+: **Default:** `name asc`.
 
 `thumbnail="boolean"`
 : Filter the image list to only include images that have a thumbnail, or not.
-: Values: unset (i.e.,all images), `1` (images that have a thumbnail) or `0` (images that do not have a thumbnail).
-: Default: unset.
+: **Values:** unset (i.e.,all images), `1` (images that have a thumbnail) or `0` (images that do not have a thumbnail).
+: **Default:** unset.
 
 ### Common presentational attributes
 
@@ -125,23 +125,23 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: Default: `br` (but see @@break cross-reference@@ for exceptions).
+: **Default:** `br` (but see @@break cross-reference@@ for exceptions).
 
 `class="class name"`
 : CSS `class` attribute to apply to the image (or to the `wraptag`, if set).
-: Default: tag name **or** unset (see @@class cross-reference@@).
+: **Default:** tag name **or** unset (see @@class cross-reference@@).
 
 `label="text"`
 : Label prepended to item.
-: Default: unset (but see @@label cross-reference@@ for exceptions).
+: **Default:** unset (but see @@label cross-reference@@ for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-: Default: unset.
+: **Default:** unset.
 
 `wraptag="tag"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

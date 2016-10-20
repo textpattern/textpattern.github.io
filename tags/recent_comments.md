@@ -40,19 +40,19 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `form="form name"`
 : Use specified form template.
-: Default: unset (if left empty, the commenter's name and article title in which the comment was made will be permlinked).
+: **Default:** unset (if left empty, the commenter's name and article title in which the comment was made will be permlinked).
 
 `limit="integer"`
 : Number of comments to display.
-: Default: `10`.
+: **Default:** `10`.
 
 `offset="integer"`
 : Number of comments to skip.
-: Default: `0`.
+: **Default:** `0`.
 
 `sort="sort value(s)"`
 : How to sort resulting list.
-: Values: \\
+: **Values:** \\
 `discussid` (comment ID#). \\
 `email`. \\
 `ip` ([IP address](http://en.wikipedia.org/wiki/IP_address)). \\
@@ -62,7 +62,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `posted`. \\
 `rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
 `web`.
-: Default: `posted asc`.
+: **Default:** `posted asc`.
 
 ### Common presentational attributes
 
@@ -70,23 +70,23 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: Default: `br` (but see @@break cross-reference@@ for exceptions).
+: **Default:** `br` (but see @@break cross-reference@@ for exceptions).
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: Default: tag name or unset (see @@class cross-reference@@).
+: **Default:** tag name or unset (see @@class cross-reference@@).
 
 `label="text"`
 : Label prepended to item.
-: Default: unset (but see @@label cross-reference@@ for exceptions).
+: **Default:** unset (but see @@label cross-reference@@ for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-: Default: unset.
+: **Default:** unset.
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

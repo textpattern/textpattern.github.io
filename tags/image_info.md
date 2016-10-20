@@ -30,20 +30,20 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"`
 : Escape HTML entities such as `<`, `>` and `&`.
-: Values: `html` or unset.
-: Default: `html`;
+: **Values:** `html` or unset.
+: **Default:** `html`;
 
 `id="integer"`
 : An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](../administration/images-panel).
-: Default: unset.
+: **Default:** unset.
 
 `name="image name"`
 : An image to display, given by its image name as shown on the [Images administration panel](../administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
-: Default: unset.
+: **Default:** unset.
 
 `type="information type"`
 : One or more of the following values to display the particular pieces of information from the current image.
-: Values: \\
+: **Values:** \\
 `alt`: image `alt` content. \\
 `author`: image author's login name (see [image_author](image-author) to display the author's real name). \\
 `caption`: image `caption` content. \\
@@ -57,7 +57,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `thumb_w`: image thumbnail width. \\
 `thumb_h`: image thumbnail height. \\
 `w`: image width.
-: Default: `caption`.
+: **Default:** `caption`.
 
 ### Common presentational attributes
 
@@ -65,15 +65,15 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: Default: unset.
+: **Default:** unset.
 
 `class="class name"`
 : CSS `class` attribute to apply to the `wraptag`, if set.
-: Default: unset (see @@class cross-reference@@).
+: **Default:** unset (see @@class cross-reference@@).
 
 `wraptag="tag"`
 : HTML element to wrap the items grabbed from the `type` attribute, specified without brackets (e.g. `wraptag="ul"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

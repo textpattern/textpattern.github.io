@@ -40,28 +40,28 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `form="form name"`
 : Use specified form template to process each author.
-: Default: unset.
+: **Default:** unset.
 
 `group="user group"`
 : Comma-separated list of user groups (publishing roles that the authors belong to.
-: Values: `publisher`, `managing_editor`, `copy_editor`, `staff_writer`, `freelancer`, `designer` or `privs_none`.
-: Default: unset, retrieves from all groups.
+: **Values:** `publisher`, `managing_editor`, `copy_editor`, `staff_writer`, `freelancer`, `designer` or `privs_none`.
+: **Default:** unset, retrieves from all groups.
 
 `limit="integer"`
 : The number of authors to display.
-: Default: `0` (no limit).
+: **Default:** `0` (no limit).
 
 `name="author"`
 : Comma-separated list of author names.
-: Default: unset, which determines whether 'any' author listing is being viewed.
+: **Default:** unset, which determines whether 'any' author listing is being viewed.
 
 `offset="integer"`
 : The number of authors to skip.
-: Default: `0`.
+: **Default:** `0`.
 
 `sort="sort value(s)"`
 : How to sort resulting list.
-: Values: \\
+: **Values:** \\
 `id` (author id#). \\
 `last_access` (most recent log in). \\
 `name` (login name). \\
@@ -69,7 +69,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `privs` (user group). \\
 `rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
 Each field in the `textpattern` database table can be used as a sort key.
-: Default: `name asc`.
+: **Default:** `name asc`.
 
 ### Common presentational attributes
 
@@ -77,23 +77,23 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: Default: `br` (but see @@break cross-reference@@ for exceptions).
+: **Default:** `br` (but see @@break cross-reference@@ for exceptions).
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: Default: tag name or unset (see @@class cross-reference@@).
+: **Default:** tag name or unset (see @@class cross-reference@@).
 
 `label="text"`
 : Label prepended to item.
-: Default: unset (but see @@label cross-reference@@ for exceptions).
+: **Default:** unset (but see @@label cross-reference@@ for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-: Default: unset.
+: **Default:** unset.
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

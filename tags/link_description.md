@@ -30,8 +30,8 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"`
 : Escape HTML entities such as `<`, `>` and `&`.
-: Values: `html` or unset.
-: Default: `html`;
+: **Values:** `html` or unset.
+: **Default:** `html`;
 
 ### Common presentational attributes
 
@@ -39,19 +39,19 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: Default: tag name or unset (see @@class cross-reference@@).
+: **Default:** tag name or unset (see @@class cross-reference@@).
 
 `label="text"`
 : Label prepended to item.
-: Default: unset (but see @@label cross-reference@@ for exceptions).
+: **Default:** unset (but see @@label cross-reference@@ for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-: Default: unset.
+: **Default:** unset.
 
 `wraptag="element"`
 : HTML element to wrap around description, specified without brackets (e.g. `wraptag="div"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

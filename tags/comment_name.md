@@ -32,8 +32,8 @@ This tag will accept the following attributes (**case-sensitive**):
 
 `link="boolean"`
 : Make text a link to the author's URL/email (depending on the information given).
-: Values: `0` (no) or `1` (yes).
-: Default: `0`.
+: **Values:** `0` (no) or `1` (yes).
+: **Default:** `0`.
 
 ## Examples
 

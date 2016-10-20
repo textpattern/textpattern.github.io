@@ -40,45 +40,45 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `author="author login name"`
 : Restrict to files with the specified author.
-: Default: unset.
+: **Default:** unset.
 
 `auto_detect="string context"`
 : List of Textpattern contexts to consider when automatically searching for files. If you wish to turn off the automatic check, set this to `auto_detect="`.
-: Values: `category` (to look in the URL for a category list) and/or `author` (to look in the URL for an author list).
-: Default: `category, author`.
+: **Values:** `category` (to look in the URL for a category list) and/or `author` (to look in the URL for an author list).
+: **Default:** `category, author`.
 
 `category="category name"`
 : Restrict to files from the specified category. Allows a comma separated list of category names. Note: category names may be different to the Title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories administration panel](../administration/categories-panel) to ensure you are using the correct names.
-: Default: unset.
+: **Default:** unset.
 
 `form="form name"`
 : Use the specified form template to process the files.
-: Default: `files`.
+: **Default:** `files`.
 
 `id="file ID"`
 : Display the specific file or list of files.
-: Values: (comma separated list of) file ID(s).
-: Default: unset.
+: **Values:** (comma separated list of) file ID(s).
+: **Default:** unset.
 
 `limit="integer"`
 : Number of files to display.
-: Default: `10`.
+: **Default:** `10`.
 
 `offset="integer"`
 : Number of files to skip.
-: Default: unset.
+: **Default:** unset.
 
 `pageby="integer or limit"`
 : Number of files to jump each page. Without this attribute, you cannot navigate using the [newer](newer) and [older](older) tags. Usually you will want to track the `limit` attribute. Use `pageby="limit"` to do this, which means you will not have to amend two values if you subsequently decide to alter the `limit`.
-: Default: unset.
+: **Default:** unset.
 
 `realname="author real name"`
 : Restrict to files with the specified author name.
-: Default: unset.
+: **Default:** unset.
 
 `sort="by what and order"`
 : How to sort the resulting list.
-: Values: \\
+: **Values:** \\
 `id`. \\
 `filename`. \\
 `title`. \\
@@ -89,12 +89,12 @@ Tag will accept the following attributes (**case-sensitive**):
 `modifie`. \\
 `rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
 Adding a space and then one of either `asc` or `desc` orders by ascending or descending value, respectively.
-: Default: `filename asc`.
+: **Default:** `filename asc`.
 
 `status="file status"`
 : Restrict to files with the specified status.
-: Values: `hidden`, `pending`, `live`.
-: Default: `live`.
+: **Values:** `hidden`, `pending`, `live`.
+: **Default:** `live`.
 
 ### Common presentational attributes
 
@@ -102,23 +102,23 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: Default: `br` (but see @@break cross-reference@@ for exceptions).
+: **Default:** `br` (but see @@break cross-reference@@ for exceptions).
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: Default: tag name or unset (see @@class cross-reference@@).
+: **Default:** tag name or unset (see @@class cross-reference@@).
 
 `label="text"`
 : Label prepended to item.
-: Default: unset (but see @@label cross-reference@@ for exceptions).
+: **Default:** unset (but see @@label cross-reference@@ for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-: Default: unset.
+: **Default:** unset.
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

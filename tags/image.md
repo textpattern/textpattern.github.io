@@ -30,16 +30,16 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"`
 : Escape HTML entities such as `<`, `>` and `&` for the image's `alt` and `title` attributes.
-: Values: `html` or unset.
-: Default: `html`.
+: **Values:** `html` or unset.
+: **Default:** `html`.
 
 `height="integer"`
 : Specify an image `height` which overrides the value stored in the database. Use `height="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the height if a width is used).
-: Default: height of image stored in the database.
+: **Default:** height of image stored in the database.
 
 `html_id="id"`
 : The HTML `id` attribute applied to the `wraptag`, if set, otherwise to the `<img>` tag.
-: Default: unset.
+: **Default:** unset.
 
 `id="integer"`
 : Specifies the `id`, assigned at upload of the image, to display. Can be found on the [Images administration panel](../administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
@@ -49,7 +49,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `width="integer"`
 : Specify an image `width` which overrides the value stored in the database. Use `width="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the width if a height is used).
-: Default: width of image stored in the database.
+: **Default:** width of image stored in the database.
 
 ### Common presentational attributes
 
@@ -57,15 +57,15 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value, if set, otherwise to the `<img>` tag.
-: Default: unset (see @@class cross-reference@@).
+: **Default:** unset (see @@class cross-reference@@).
 
 `style="style rule"`
 : Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.
-: Default: unset.
+: **Default:** unset.
 
 `wraptag="element"`
 : HTML tag to be used to wrap the `<img>` tag, specified without brackets (e.g. `wraptag="ul"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

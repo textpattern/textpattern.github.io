@@ -44,7 +44,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `any`: checks if any of the given comma-separated list of `value`s occur anywhere in the custom field. \\
 `all`: checks if all of the given comma-separated list of `value`s occur anywhere in the custom field. \\
 `pattern`: allows you to specify a regular expression in your `value` attribute to match against the custom field.
-: Default: `exact`.
+: **Default:** `exact`.
 
 `name="field name"`
 : The custom field name you wish to check.

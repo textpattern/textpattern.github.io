@@ -31,11 +31,11 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `forgetlabel="text"`
 : Label that appears next to the 'Forget' `checkbox`.
-: Default: `Forget` (localized).
+: **Default:** `Forget` (localized).
 
 `rememberlabel="text"`
 : Label that appears next to the 'Remember' `checkbox`.
-: Default: `Remember` (localized).
+: **Default:** `Remember` (localized).
 
 ## Examples
 

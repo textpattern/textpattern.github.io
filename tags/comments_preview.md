@@ -31,11 +31,11 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `form="form name"`
 : Use specified form template to process each comment.
-: Default: `comments`.
+: **Default:** `comments`.
 
 `label="text"`
 : Label that appears on the 'Preview' button.
-: Default: `Preview` (localized).
+: **Default:** `Preview` (localized).
 
 ### Common presentational attributes
 
@@ -43,11 +43,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: Default: `comments_preview` (see @@class cross-reference@@).
+: **Default:** `comments_preview` (see @@class cross-reference@@).
 
 `wraptag="tag"`
 : HTML tag to wrap around the list, specified without brackets (e.g. `wraptag="div"`).
-: Default: depends upon 'Present Comments as a Numbered List?' preference setting - either `ol` or unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** depends upon 'Present Comments as a Numbered List?' preference setting - either `ol` or unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Genealogy
 

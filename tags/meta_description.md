@@ -44,18 +44,18 @@ Note: The corresponding description field has a 255 character limit by default, 
 
 `escape="html"`
 : Escape HTML entities such as `<`, `>` and `&`.
-: Values: `html` or unset.
-: Default: `html`;
+: **Values:** `html` or unset.
+: **Default:** `html`;
 
 `format="value"`
 : Display as `<meta>` tag or as raw value.
-: Values: `meta` or unset.
-: Default: `meta` (display as a `<meta>` tag).
+: **Values:** `meta` or unset.
+: **Default:** `meta` (display as a `<meta>` tag).
 
 `type="value"`
 : The context from which to display meta information.
-: Values: `article`, `section`, or `category`. The `category` may also be augmented to include its type, e.g. `category.image` or `category.file` to display description information from the nominated category type.
-: Default: empty (i.e.,automatic, depending on where the tag is used).
+: **Values:** `article`, `section`, or `category`. The `category` may also be augmented to include its type, e.g. `category.image` or `category.file` to display description information from the nominated category type.
+: **Default:** empty (i.e.,automatic, depending on where the tag is used).
 
 ## Examples
 

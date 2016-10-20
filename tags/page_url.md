@@ -29,7 +29,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `type="type"`
 : Specifies which component of the current page's URL will be returned.
-: Values: \\
+: **Values:** \\
 `request_uri`: current article's URL-title including any query string. \\
 `id`: current article's id on a single article page. \\
 `s`: current page's section. \\
@@ -41,7 +41,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `status`: HTTP error response (200, 404). \\
 `css`: current style sheet name. \\
 `page`: current page template name.
-: Default: `request_uri`.
+: **Default:** `request_uri`.
 
 ## Examples
 

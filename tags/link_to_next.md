@@ -31,8 +31,8 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `showalways="boolean"`
 : Show the wrapped value even when no next article exists.
-: Values: `0` (no) or `1` (yes).
-: Default: `0`.
+: **Values:** `0` (no) or `1` (yes).
+: **Default:** `0`.
 
 ## Examples
 

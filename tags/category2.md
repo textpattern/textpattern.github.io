@@ -34,23 +34,23 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `link="boolean"`
 : Whether to link to articles from the same category. Works only in the *single* tag.
-: Values: `0` (no) or `1` (yes).
-: Default: `0`.
+: **Values:** `0` (no) or `1` (yes).
+: **Default:** `0`.
 
 `section="section name"`
 : Restrict to articles from specified section(s).
-: Values: (comma separated list of) section name(s).
-: Default: unset, retrieves from all sections.
+: **Values:** (comma separated list of) section name(s).
+: **Default:** unset, retrieves from all sections.
 
 `title="boolean"`
 : Whether to output category title, rather than name.
-: Values: `0` (no, use name) or `1` (yes, use title).
-: Default: `0`.
+: **Values:** `0` (no, use name) or `1` (yes, use title).
+: **Default:** `0`.
 
 `this_section="boolean"`
 : Whether to only link to articles from the section containing the current article.
-: Values: `0` (no, allow from any section) or `1` (yes).
-: Default: `0`.
+: **Values:** `0` (no, allow from any section) or `1` (yes).
+: **Default:** `0`.
 
 ### Common presentational attributes
 
@@ -58,11 +58,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class attribute` to be applied to `wraptag`.
-: Default: unset (see @@class cross-reference@@).
+: **Default:** unset (see @@class cross-reference@@).
 
 `wraptag="tag"`
 : HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

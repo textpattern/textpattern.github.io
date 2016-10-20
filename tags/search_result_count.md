@@ -32,7 +32,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `text="text"`
 : Text to display with the number of matches.
-: Default: `articles found`.
+: **Default:** `articles found`.
 
 ## Examples
 

@@ -45,11 +45,11 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `max="number"`
 : If the search results count is no higher than `max`, the tags enclosed by this conditional tag are rendered.
-: Default: unset (which results in no upper limit).
+: **Default:** unset (which results in no upper limit).
 
 `min="number"`
 : If the search results count is at least equal to `min`, the tags enclosed by this conditional tag are rendered.
-: Default: `1`.
+: **Default:** `1`.
 
 ## Examples
 

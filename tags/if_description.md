@@ -46,7 +46,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `image` is this an image author list? \\
 `file` is this a file author list? \\
 `link` is this a link author list?
-: Default: `article`.
+: **Default:** `article`.
 
 ## Examples
 

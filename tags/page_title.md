@@ -37,7 +37,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `separator="character(s)"`
 : The character sequence you want between each piece of information.
-: Default: `:` (a colon).
+: **Default:** `:` (a colon).
 
 ## Examples
 

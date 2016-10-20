@@ -30,15 +30,15 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `break="tag"`
 : Trailing string.
-: Default: `...` (ellipsis).
+: **Default:** `...` (ellipsis).
 
 `hilight="tag"`
 : HTML tag to be used for search term matches in excerpt text, without brackets.
-: Default: `strong`.
+: **Default:** `strong`.
 
 `limit="integer"`
 : Maximum number of search match excerpts per search result.
-: Default: `5`.
+: **Default:** `5`.
 
 ## Examples
 

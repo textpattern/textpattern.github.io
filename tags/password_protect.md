@@ -30,11 +30,11 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `login="text"`
 : The username the user has to enter.
-: Default: unset.
+: **Default:** unset.
 
 `pass="text"`
 : The password the user has to enter.
-: Default: unset.
+: **Default:** unset.
 
 ## Examples
 

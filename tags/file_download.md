@@ -30,15 +30,15 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `filename="name"`
 : Filename of the file to link to.
-: Default: unset (nothing is returned).
+: **Default:** unset (nothing is returned).
 
 `form="form name"`
 : Use specified form template to process the files.
-: Default: `files`.
+: **Default:** `files`.
 
 `id="integer"`
 : File `id` of the file to link to.
-: Default: unset (nothing is returned).
+: **Default:** unset (nothing is returned).
 
 ## Examples
 

@@ -42,7 +42,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `name="author"`
 : Comma-separated list of author names.
-: Default: unset (i.e.,any author at all).
+: **Default:** unset (i.e.,any author at all).
 
 ## Examples
 

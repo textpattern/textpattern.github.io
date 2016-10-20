@@ -36,20 +36,20 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `category="category name"`
 : Category of images to display.
-: Values: (comma separated list of) category name(s).
-: Default: presently viewed category.
+: **Values:** (comma separated list of) category name(s).
+: **Default:** presently viewed category.
 
 `limit="integer"`
 : The number of images to display.
-: Default: `0` (no limit).
+: **Default:** `0` (no limit).
 
 `offset="integer"`
 : The number of images to skip.
-: Default: `0`.
+: **Default:** `0`.
 
 `sort="sort value(s)"`
 : How to sort resulting list.
-: Values: \\
+: **Values:** \\
 `alt` (image alt text). \\
 `author`. \\
 `caption` (image caption text). \\
@@ -63,7 +63,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `thumbnail`. \\
 `w` (image width). \\
 Each field in the `txp_image` database table can be used as a sort key.
-: Default: `name asc`.
+: **Default:** `name asc`.
 
 ### Common presentational attributes
 
@@ -71,23 +71,23 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: Default: `br` (but see @@break cross-reference@@ for exceptions).
+: **Default:** `br` (but see @@break cross-reference@@ for exceptions).
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: Default: tag name or unset (see @@class cross-reference@@).
+: **Default:** tag name or unset (see @@class cross-reference@@).
 
 `label="text"`
 : Label prepended to item.
-: Default: unset (but see @@label cross-reference@@ for exceptions).
+: **Default:** unset (but see @@label cross-reference@@ for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-: Default: unset.
+: **Default:** unset.
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 

@@ -34,37 +34,37 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `link="boolean"`
 : Whether to display as link. Works only in the *single* tag, **not** in the *containing* tag variant.
-: Values: `0` (no) or `1` (yes).
-: Default: `0`.
+: **Values:** `0` (no) or `1` (yes).
+: **Default:** `0`.
 
 `name="category name"`
 : Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [Categories administration panel](../administration/categories-panel). Also note that if you had called your category `My Category Name` it becomes `my-category-name` when used in tags.
-: Default: unset (use current category).
+: **Default:** unset (use current category).
 
 `section="section name"`
 : Restrict to articles from specified section(s).
-: Values: (comma separated list of) section name(s).
-: Default: current section (for backwards compatibility).
+: **Values:** (comma separated list of) section name(s).
+: **Default:** current section (for backwards compatibility).
 
 `this_section="boolean"`
 : If set to `1`, the linked category name will direct users to an category list in the current section, otherwise category list from all sections is displayed.
 : Only link to articles from the current section. The `section` attribute overrides this setting.
-: Values: `0` (no, all sections) or `1` (yes, this section only).
-: Default: `0`.
+: **Values:** `0` (no, all sections) or `1` (yes, this section only).
+: **Default:** `0`.
 
 `title="boolean"`
 : Whether to display category's title instead of its name.
-: Values: `0` (no, display name) or `1` (yes, display title).
-: Default: `0`.
+: **Values:** `0` (no, display name) or `1` (yes, display title).
+: **Default:** `0`.
 
 `type="category type"`
-: Values: `article`, `image`, `link` or `file`.
-: Default: `article`.
+: **Values:** `article`, `image`, `link` or `file`.
+: **Default:** `article`.
 
 `url="boolean"`
 : Display plain URL or full link.
-: Values: `0` (no) or `1` (yes).
-: Default: `0` (display title or full link, depending on `link`).
+: **Values:** `0` (no) or `1` (yes).
+: **Default:** `0` (display title or full link, depending on `link`).
 
 ### Common presentational attributes
 
@@ -72,11 +72,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` attribute, applied to `wraptag`. If no `wraptag` is supplied (and `link="1"`), the `class` is applied to the `<a>` tag instead.
-: Default: unset (see @@class cross-reference@@).
+: **Default:** unset (see @@class cross-reference@@).
 
 `wraptag="tag"`
 : HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-: Default: unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
 
 ## Examples
 
