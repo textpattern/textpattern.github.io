@@ -51,7 +51,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </p>
 ~~~
 
-Other tags used: [link_description](link-description).
+Other tags used: [link_description](link_description).
 
 ## Genealogy
 

@@ -57,7 +57,7 @@ If not, a metadata tag in your template with no value might not be desired. In w
 
 Either of these uses might work well for certain pages where a single article is in context, but it doesn't account for other page contexts, like home pages with complex content layouts, or pages displaying article lists (rather than single articles). In other words, these are not copy/paste solutions for every template in your site. You may, in fact, create some metadata values manually if the context of certain pages doesn't change much.
 
-Other tags used: [if_individual_article](if-individual-article), [if_keywords](if-keywords).
+Other tags used: [if_individual_article](if_individual_article), [if_keywords](if_keywords).
 
 ## Related plugins
 

@@ -75,13 +75,13 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 ### Example 1: Use wraptag and class for styling
 
 ~~~ html
-<txp:article_image wraptag="p" class="article-image" />
+<txp:article_image wraptag="p" class="article_image" />
 ~~~
 
 This will wrap the image in paragraph tags, applying the `class` to the paragraph:
 
 ~~~ html
-<p class="article-image">
+<p class="article_image">
     <img src="...">
 </p>
 ~~~

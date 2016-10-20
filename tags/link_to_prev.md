@@ -44,7 +44,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:link_to_prev>
 ~~~
 
-Other tags used: [prev_title](prev-title).
+Other tags used: [prev_title](prev_title).
 
 ### Example 2: Link to previous article using static text
 
@@ -71,4 +71,4 @@ For example, to give the link an HTML `title` attribute of the previous article'
 </a>
 ~~~
 
-Other tags used: [prev_title](prev-title).
+Other tags used: [prev_title](prev_title).

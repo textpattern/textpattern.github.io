@@ -100,7 +100,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 Shows the thumbnail images from the category 'personal'.
 
-Other tags used: [image_display](image-display).
+Other tags used: [image_display](image_display).
 
 ## Genealogy
 

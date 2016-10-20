@@ -108,7 +108,7 @@ Other tags used: [images](images), [thumbnail](thumbnail).
 
 Shows the thumbnail of each image that has an assigned thumbnail image from the 'mammals' and 'birds' categories and, beneath each, show its dimensions 'width' x 'height' along with the author of the image. Since the list has been sorted by category, the `<txp:if_different>` conditional can be used to output the category title at the top of the list of images each time it changes.
 
-Other tags used: [images](images), [thumbnail](thumbnail), [if_different](if-different).
+Other tags used: [images](images), [thumbnail](thumbnail), [if_different](if_different).
 
 ### Example 3: Specific image information
 

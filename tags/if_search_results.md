@@ -65,7 +65,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 Ensures the visitor does not see a blank page when no articles match the search request.
 
-Other tags used: [else](else), [search_term](search-term).
+Other tags used: [else](else), [search_term](search_term).
 
 ### Example 2: In context within if_search
 
@@ -86,7 +86,7 @@ Detects if a search is in progress, calls the [article](article) tag to perform 
 Note: You must ensure that all attributes used in your two article tags are identical (except for any `form` attributes, which can safely be omitted when using `pgonly`). Failure to keep the tags in sync will result in strange article counts or odd behaviour.
 {: .alert-block .information}
 
-Other tags used: [if_search](if-search), [article](article), [else](else), [search_term](search-term).
+Other tags used: [if_search](if_search), [article](article), [else](else), [search_term](search_term).
 
 ### Example 3: Take action when there are too many hits
 

@@ -40,4 +40,4 @@ This tag has no attributes.
 
 In a search results form, this shows the title of an article that matched the visitor's search results, and its posted date.
 
-Other tags used: [search_result_date](search-result-date).
+Other tags used: [search_result_date](search_result_date).

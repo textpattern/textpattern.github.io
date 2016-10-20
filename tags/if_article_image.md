@@ -55,7 +55,7 @@ This tag has no attributes.
 </txp:if_article_image>
 ~~~
 
-Other tags used: [article_image](article-image), [else](else), [image](image).
+Other tags used: [article_image](article_image), [else](else), [image](image).
 
 ### Example 2: Integration with third-party PHP resizing script (TimThumb)
 

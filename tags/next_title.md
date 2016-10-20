@@ -39,4 +39,4 @@ This tag has no attributes.
 </txp:link_to_next>
 ~~~
 
-Other tags used: [link_to_next](link-to-next).
+Other tags used: [link_to_next](link_to_next).

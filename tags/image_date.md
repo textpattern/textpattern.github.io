@@ -57,7 +57,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:images>
 ~~~
 
-Other tags used: [images](images), [image_url](image-url), [image_info](image-info), [thumbnail](thumbnail).
+Other tags used: [images](images), [image_url](image_url), [image_info](image_info), [thumbnail](thumbnail).
 
 ## Genealogy
 

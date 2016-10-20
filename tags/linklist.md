@@ -147,7 +147,7 @@ Other tags used: [if_category](if_category).
 
 The tags within the container are repeated for each link provided by the linklist tag.
 
-Other tags used: [link](link), [linkdesctitle](linkdesctitle), [link_description](link-description).
+Other tags used: [link](link), [linkdesctitle](linkdesctitle), [link_description](link_description).
 
 ## Genealogy
 

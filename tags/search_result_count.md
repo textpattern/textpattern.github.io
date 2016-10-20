@@ -47,7 +47,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 If the visitor is searching for articles, it will show the number of articles that matched the search term (e.g. 5) as follows: `5 articles found`.
 
-Other tags used: [article](article), [if_search](if-search).
+Other tags used: [article](article), [if_search](if_search).
 
 ### Example 2: Number of matches with custom text
 
@@ -59,7 +59,7 @@ Other tags used: [article](article), [if_search](if-search).
 
 Displays the number of articles returned (e.g. 5) as follows: `5 hits`.
 
-Other tags used: [if_search](if-search).
+Other tags used: [if_search](if_search).
 
 ### Example 3: Search result count above results
 
@@ -76,4 +76,4 @@ Displays the number of articles returned (e.g. 5) as follows: `5 hits` - then di
 Note: The `pgonly` attribute sets the article tag to return pagination statistics without rendering the article list. Care must be taken to remain consistent with article tag attributes to keep statistics accurate.
 {: .alert-block .information}
 
-Other tags used: [article](article), [if_search](if-search).
+Other tags used: [article](article), [if_search](if_search).

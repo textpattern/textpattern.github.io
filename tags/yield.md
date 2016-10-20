@@ -67,7 +67,7 @@ And the result will be:
 </div>
 ~~~
 
-Other tags used: [output_form](output-form).
+Other tags used: [output_form](output_form).
 
 ## Genealogy
 

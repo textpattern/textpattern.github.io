@@ -39,4 +39,4 @@ This tag has no attributes.
 </txp:link_to_prev>
 ~~~
 
-Other tags used: [link_to_prev](link-to-prev).
+Other tags used: [link_to_prev](link_to_prev).

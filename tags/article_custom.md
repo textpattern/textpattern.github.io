@@ -202,7 +202,7 @@ Then create an 'article' type form template called `homepage_articles`, containi
 </article>
 ~~~
 
-Other tags used: [article_image](article-image), [body](body), [if_article_image](if-article-image), [title](title).
+Other tags used: [article_image](article_image), [body](body), [if_article_image](if_article_image), [title](title).
 
 ### Example 2: List articles published in specified month
 
@@ -250,7 +250,7 @@ Other tags used: [permlink](permlink), [title](title).
 </txp:article_custom>
 ~~~
 
-This is exactly equivalent to **Example 3a*, just using a container tag instead of a single tag with referenced form.
+This is exactly equivalent to **Example 3a**, just using a container tag instead of a single tag with referenced form.
 
 Other tags used: [permlink](permlink), [title](title).
 

@@ -52,4 +52,4 @@ Tag will accept the following attributes (**case-sensitive**):
 </a>
 (<txp:link_date />)
 
-Other tags used: [link_name](link-name), [link_url](link-url).
+Other tags used: [link_name](link_name), [link_url](link_url).

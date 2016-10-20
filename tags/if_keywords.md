@@ -62,7 +62,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </head>
 ~~~
 
-Other tags used: [meta_keywords](meta-keywords), [if_individual_article](if-individual-article), [else](else).
+Other tags used: [meta_keywords](meta_keywords), [if_individual_article](if_individual_article), [else](else).
 
 ## Genealogy
 

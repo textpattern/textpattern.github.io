@@ -63,4 +63,4 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 </a> | <txp:link_category title="1" />
 ~~~
 
-Other tags used: [link_url](link-url), [link_name](link_name).
+Other tags used: [link_url](link_url), [link_name](link_name).

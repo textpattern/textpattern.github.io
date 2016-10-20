@@ -45,4 +45,4 @@ This tag has no attributes.
 
 Why you might do this? When declaring a DTD, namespace and language that a site is served, the `lang` attribute is useful for ensuring translators, search engines and content parsers handle the document in the correct manner.
 
-Other tags used: [page_title](page-title), [text](text).
+Other tags used: [page_title](page_title), [text](text).

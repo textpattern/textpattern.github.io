@@ -55,7 +55,7 @@ This tag has no attributes.
 
 For each image uploaded by author 'neo', display its thumbnail if it has one, or the text 'No thumbnail' if it doesn't. Add a caption beneath the thumbnail using [image_info](image-info).
 
-Other tags used: [images](images), [else](else), [image_info](image-info), [thumbnail](thumbnail).
+Other tags used: [images](images), [else](else), [image_info](image_info), [thumbnail](thumbnail).
 
 ## Genealogy
 

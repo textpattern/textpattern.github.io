@@ -140,7 +140,7 @@ Adds the label 'Sections' and wraps the output in a paragraph with each section 
 
 This code will add `class="active"` to the `<li>` element around the currently viewed section in the list.
 
-Other tags used: [if_section](if-section), [section](section).
+Other tags used: [if_section](if_section), [section](section).
 
 ## Genealogy
 

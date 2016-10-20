@@ -287,7 +287,7 @@ All images that do not have thumbnails assigned to them are displayed.
 
 Shows the thumbnail of each image that has an assigned thumbnail image from the 'mammals' and 'birds' categories and, beneath each, show its dimensions 'width' x 'height' along with the author of the image. Since the list has been sorted by category, the `<txp:if_different>` conditional can be used to output the category title at the top of the list of images each time it changes.
 
-Other tags used: [if_different](if-different), [image_info](image-info), [thumbnail](thumbnail).
+Other tags used: [if_different](if_different), [image_info](image_info), [thumbnail](thumbnail).
 
 ### Example 3: Integration with third-party PHP resizing script (TimThumb)
 
@@ -308,11 +308,11 @@ Other tags used: [if_different](if-different), [image_info](image-info), [thumbn
 
 Creates a small gallery of 6 images from the category 'gallery'. Uses the TimThumb script to proportionately resize a thumbnail version (160px wide) of the image automatically, and keep a cached version of the thumbnail for future visitors. Links the thumbnail to the original image, and lists the image author name below each thumbnail.
 
-Other tags used: [image_author](image-author), [image_info](image-info), [image_url](image-url), [site_url](site-url).
+Other tags used: [image_author](image_author), [image_info](image_info), [image_url](image_url), [site_url](site_url).
 
 ### Example 4: Using offset and limit for news pages
 
-You can use the `offset` attribute to slice up your [article_image](article-image) list. By specifying a comma-separated list of image IDs in your 'Article image' field, this tag can iterate over them in groups. So, if your 'Article image' list contained four IDs you could treat your first image as the 'Hero' at the top of the article, displayed using:
+You can use the `offset` attribute to slice up your [article_image](article_image) list. By specifying a comma-separated list of image IDs in your 'Article image' field, this tag can iterate over them in groups. So, if your 'Article image' list contained four IDs you could treat your first image as the 'Hero' at the top of the article, displayed using:
 
 ~~~ html
 <txp:images limit="1">
@@ -330,7 +330,7 @@ And then later on you could drop in...
 
 ...to display the three remaining supporting images as thumbnails in a gallery, all taken from the Article Image field.
 
-Other tags used: [article_image](article-image), [thumbnail](thumbnail).
+Other tags used: [article_image](article_image), [thumbnail](thumbnail).
 
 ## Genealogy
 

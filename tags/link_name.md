@@ -43,7 +43,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </a>
 ~~~
 
-Other tags used: [link_url](link-url).
+Other tags used: [link_url](link_url).
 
 ## Genealogy
 

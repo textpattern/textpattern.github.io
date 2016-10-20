@@ -53,4 +53,4 @@ Default: unset.
 </txp:link_to_home>
 ~~~
 
-Other tags used: [site_name](site-name).
+Other tags used: [site_name](site_name).

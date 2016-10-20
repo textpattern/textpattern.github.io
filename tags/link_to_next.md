@@ -44,7 +44,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:link_to_next>
 ~~~
 
-Other tags used: [next_title](next-title).
+Other tags used: [next_title](next_title).
 
 ### Example 2: Link to next article using static text
 
@@ -71,4 +71,4 @@ For example, to give the link an HTML `title` attribute of the next article's ti
 </a>
 ~~~
 
-Other tags used: [next_title](next-title).
+Other tags used: [next_title](next_title).
