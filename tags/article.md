@@ -39,7 +39,7 @@ The tag is context-sensitive, which means it will grab articles from the current
 
 When used on the front page, article's context will include articles from all sections set to display via 'Section appears on front page?' settings (see the [Sections administration panel](../administration/sections-panel) for more information).
 
-Note: `<txp:article />` is **not** the same as `<txp:article_custom />` - you can [check out the differences of that tag](article-custom) if you're unsure of the differences!
+Note: `<txp:article />` is **not** the same as `<txp:article_custom />` - you can [check out the differences of that tag](article_custom) if you're unsure of the differences!
 {: .alert-block .information}
 
 ## Attributes

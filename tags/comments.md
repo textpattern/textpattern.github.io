@@ -86,7 +86,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 Comments for articles can be turned on or off at the author's discretion for any article that is published; by using the scheme above in an 'article' type form, you can still have the on/off control over comments while still giving users indication of comment status.
 
-Other tags used: [comments_form](comments-form), [else](else), [if_comments_allowed](if-comments-allowed).
+Other tags used: [comments_form](comments_form), [else](else), [if_comments_allowed](if_comments-allowed).
 
 ### Example 2: Conditional comments
 
@@ -111,7 +111,7 @@ And the `comments` form (which is a 'comment' type form):
 
 For the article, list id numbers and a comment input form; but only if comments are currently allowed.
 
-Other tags used: [comment_email](comment-email), [comments_form](comments-form), [comment_id](comment-id), [comment_permlink](comment-permlink), [if_comments_allowed](if-comments-allowed).
+Other tags used: [comment_email](comment_email), [comments_form](comments_form), [comment_id](comment_id), [comment_permlink](comment_permlink), [if_comments_allowed](if_comments-allowed).
 
 ## Genealogy
 

@@ -3,7 +3,7 @@ layout: document
 category: tags
 published: true
 title: "Link category"
-description: The link-category tag is a single tag which returns the link category as text.
+description: The link_category tag is a single tag which returns the link category as text.
 tags:
   - Link tags
 ---
@@ -22,7 +22,7 @@ On this page:
 <txp:link_category />
 ~~~
 
-The **link-category** tag is a *single* tag which returns the link category as text. This tag is used in a Textpattern 'link' type @@Form template@@ or inside the [linklist](linklist) container tag to return information about the current link in a list of links.
+The **link_category** tag is a *single* tag which returns the link category as text. This tag is used in a Textpattern 'link' type @@Form template@@ or inside the [linklist](linklist) container tag to return information about the current link in a list of links.
 
 ## Attributes
 

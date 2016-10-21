@@ -29,7 +29,7 @@ Custom fields are useful when you need to output content having a consistent str
 # @@Defining custom fields@@
 # @@Adding custom field data@@
 
-Also see the [if_custom_field](if-custom-field) conditional tag, which provides more flexibility and power using custom fields.
+Also see the [if_custom_field](if-custom_field) conditional tag, which provides more flexibility and power using custom fields.
 
 ## Attributes
 

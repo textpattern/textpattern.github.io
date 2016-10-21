@@ -59,7 +59,7 @@ Comments for articles can be turned on or off at the author's discretion for any
 </txp:if_comments_allowed>
 ~~~
 
-Other tags used: [if_comments_allowed](if-comments-allowed), [else](else).
+Other tags used: [if_comments_allowed](if_comments_allowed), [else](else).
 
 ### Example 2: Display conditional comments and form
 
@@ -78,7 +78,7 @@ And then an example of what the form `lineitem` could contain:
 
 For the current article, returns a list of id numbers for comments and a comment input form (but only if comments are currently allowed).
 
-Other tags used: [comment_id](comment-id), [comments](comments), [if_comments_allowed](if-comments-allowed).
+Other tags used: [comment_id](comment_id), [comments](comments), [if_comments_allowed](if_comments_allowed).
 
 ## Genealogy
 

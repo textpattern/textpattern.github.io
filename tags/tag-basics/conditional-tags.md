@@ -37,7 +37,7 @@ On your default article page you might see something like this:
 </txp:if_category>
 ~~~
 
-Taking this block by block we see that the conditional [if-category"](../if-category) determines if the visitor has clicked a category hyperlink. If they have, we are in the **list** view. If they have not, the [else](../else) portion is executed.
+Taking this block by block we see that the conditional [if_category"](../if_category) determines if the visitor has clicked a category hyperlink. If they have, we are in the **list** view. If they have not, the [else](../else) portion is executed.
 
 In this example, the [article](article) in the *else* portion is treated as an individual article, by virtue of it not being a category list. In more complex pages it may be part of a larger nested structure and therefore could be a different type of list (e.g. search results), but for now we'll take it at face value and assume it is an individual article.
 

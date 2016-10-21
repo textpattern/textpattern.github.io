@@ -94,4 +94,4 @@ In an article form, put the following set of conditionals for each category you 
 
 Lists articles of the same category as the current article's Category1.
 
-Other tags used: [article_custom](article-custom), [else](else), [title](title), [permlink](permlink).
+Other tags used: [article_custom](article_custom), [else](else), [title](title), [permlink](permlink).

@@ -51,7 +51,7 @@ This tag has no attributes.
 </txp:if_different>
 ~~~
 
-To be used inside a Textpattern 'article' type @@Form template@@ or an article tag container (such as [article](article) or [article_custom](article-custom)).
+To be used inside a Textpattern 'article' type @@Form template@@ or an article tag container (such as [article](article) or [article_custom](article_custom)).
 
 Other tags used: [posted](posted).
 
@@ -95,4 +95,4 @@ In a Textpattern @@Page template@@, add this tag to loop through all articles fr
 
 The snippet above lists all article titles and renders an intermittent heading element whenever a **different** section is encountered while the articles loop through.
 
-Other tags used: [article_custom](article-custom), [section](section), [title](title).
+Other tags used: [article_custom](article_custom), [section](section), [title](title).

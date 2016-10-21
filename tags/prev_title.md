@@ -23,7 +23,7 @@ On this page:
 
 The **prev_title** tag is a *single* tag which Textpattern will replace with the name (text) of the previous article in the sort order.
 
-The container tag [link_to_prev](link-to-prev) wraps the text or tag and assigns the link.
+The container tag [link_to_prev](link_to_prev) wraps the text or tag and assigns the link.
 
 ## Attributes
 

@@ -26,7 +26,7 @@ On this page:
 
 The **category1** tag can be used as either a *single* tag or *container* tag. It will display information of the category as defined by **Category 1** of the article being displayed. When used as a containing tag, it will turn the contents into a link to that category. Otherwise, it will return plain text.
 
-This tag may be used within either an article form, or in a page, wrapped in an [if_individual_article](if-individual-article) conditional tag.
+This tag may be used within either an article form, or in a page, wrapped in an [if_individual_article](if_individual_article) conditional tag.
 
 ## Attributes
 
@@ -106,7 +106,7 @@ If **category1** is 'General stuff', this tag will display the words 'General st
 
 Shows a hyperlinked category 1, and also hyperlinked category 2 but only if it is used.
 
-Other tags used: [category2](category2), [if_article_category](if-article-category).
+Other tags used: [category2](category2), [if_article_category](if_article_category).
 
 ## Genealogy
 

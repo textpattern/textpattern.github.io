@@ -32,7 +32,7 @@ The **if_custom_field** tag is a *conditional* tag and always used as an opening
 </txp:if_custom_field>
 ~~~
 
-The tag will execute the contained statements if one or more custom fields for a given article have content. The contents of a custom field can be displayed with the [custom_field](custom-field) tag.
+The tag will execute the contained statements if one or more custom fields for a given article have content. The contents of a custom field can be displayed with the [custom_field](custom_field) tag.
 
 ## Attributes
 
@@ -104,7 +104,7 @@ For a **book without a subtitle*, this might be shown:
 <p>Published by HarperCollins in 2004.</p>
 ~~~
 
-Other tags used: [custom_field](custom-field).
+Other tags used: [custom_field](custom_field).
 
 ### Example 2: Check custom field value
 
@@ -140,7 +140,7 @@ If the custom field named 'website' has some content, display it, otherwise disp
 
 Why might you do it? If you publish music reviews and you've set up some custom fields for the band name, the album title and the band's website. But not all bands have a website and you want to display a standard message if a band hasn't got one.
 
-Other tags used: [custom_field](custom-field), [else](else).
+Other tags used: [custom_field](custom_field), [else](else).
 
 ### Example 4: Display a conditional statement based on a comma separated value
 

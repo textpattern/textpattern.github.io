@@ -73,7 +73,7 @@ Other tags used: [article_image](article_image), [else](else), [image](image).
 
 Checks an article image exists, then uses `<txp:images>` with `limit="1"` to display that image (because the `<txp:images>` tag takes the article image as a first priority). Uses the TimThumb script to proportionately resize a 640px wide version of the image automatically, and keep a cached version of the resized image for future visitors.
 
-Other tags used: [images](images), [image_info](image-info), [image_url](image-url), [site_url](site-url).
+Other tags used: [images](images), [image_info](image_info), [image_url](image_url), [site_url](site_url).
 
 ## Genealogy
 

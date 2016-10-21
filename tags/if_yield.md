@@ -32,7 +32,7 @@ The **if_yield** tag is a *conditional* tag and always used as an opening and cl
 </txp:if_yield>
 ~~~
 
-It tests the existence and/or value of a content set with the [yield](yield) tag inside of an [output_form](output-form) container tag.
+It tests the existence and/or value of a content set with the [yield](yield) tag inside of an [output_form](output_form) container tag.
 
 ## Attributes
 

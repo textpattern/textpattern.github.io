@@ -52,4 +52,4 @@ This tag has no attributes.
 
 When the excerpt is available it is displayed, but when it is missing a hyperlinked section name is displayed instead.
 
-Other tags used: [excerpt](excerpt), [if_excerpt](if-excerpt), [section](section).
+Other tags used: [excerpt](excerpt), [if_excerpt](if_excerpt), [section](section).

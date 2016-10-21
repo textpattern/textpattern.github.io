@@ -22,7 +22,7 @@ On this page:
 <txp:images />
 ~~~
 
-The **images** tag is a *single* or *container* tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern @@Images page@@. Utilising the other image tags in the suite [image_info](image-info), [image_url](image-url), [image_date](image-date) and [if_thumbnail](if-thumbnail)) you can display simple image galleries from this list.
+The **images** tag is a *single* or *container* tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern @@Images page@@. Utilising the other image tags in the suite [image_info](image_info), [image_url](image_url), [image_date](image_date) and [if_thumbnail](if_thumbnail)) you can display simple image galleries from this list.
 
 If used as a *container* tag, it must be specified as an opening and closing pair of tags, like this:
 
@@ -64,7 +64,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `form="form name"`
-: Use specified form template to process each image. If not used, and the container is empty, the tag will output a list of images that are compatible with [image_display](image-display).
+: Use specified form template to process each image. If not used, and the container is empty, the tag will output a list of images that are compatible with [image_display](image_display).
 : **Default:** unset.
 
 `html_id="id number"`

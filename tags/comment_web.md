@@ -48,7 +48,7 @@ This tag has no attributes.
 </p>
 ~~~
 
-Other tags used: [comment_message](comment-message), [comment_name](comment-name), [comment_time](comment-time).
+Other tags used: [comment_message](comment_message), [comment_name](comment_name), [comment_time](comment_time).
 
 ### Example 2: Container example
 

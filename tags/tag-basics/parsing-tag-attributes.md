@@ -147,4 +147,4 @@ In the first statement, notice the pairs of single apostrophes inside the catego
 
 The `file-category` form returns some markup (in this case, just a series of links to the relevant files) which is all assigned to the **value** of the [variable](../variable) named 'file-count'.
 
-The upshot is that this variable can be tested with [if-variable](../if-variable) to see if it contains anything at all and - if it does, the file list can be displayed. Conversely, if there are no files for that language then the [else](../else) part of the conditional statement is displayed.
+The upshot is that this variable can be tested with [if_variable](../if_variable) to see if it contains anything at all and - if it does, the file list can be displayed. Conversely, if there are no files for that language then the [else](../else) part of the conditional statement is displayed.

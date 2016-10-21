@@ -64,7 +64,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </head>
 ~~~
 
-Other tags used: [meta_description](meta-description).
+Other tags used: [meta_description](meta_description).
 
 ## Genealogy
 

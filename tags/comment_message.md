@@ -42,4 +42,4 @@ This tag has no attributes.
 </p>
 ~~~
 
-Other tags used: [comment_email](comment-email), [comment_id](comment-id), [comment_permlink](comment-permlink).
+Other tags used: [comment_email](comment_email), [comment_id](comment_id), [comment_permlink](comment_permlink).

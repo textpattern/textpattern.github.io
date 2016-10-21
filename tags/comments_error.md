@@ -54,4 +54,4 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 </txp:if_comments_error>
 ~~~
 
-Other tags used: [if_comments_error](if-comments-error).
+Other tags used: [if_comments_error](if_comments_error).

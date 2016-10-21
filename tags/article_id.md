@@ -53,4 +53,4 @@ This will only display the hyperlinked article ID when on an individual article 
 </txp:if_individual_article>
 ~~~
 
-Other tags used: [if_individual_article](if-individual-article), [permlink](permlink).
+Other tags used: [if_individual_article](if_individual_article), [permlink](permlink).

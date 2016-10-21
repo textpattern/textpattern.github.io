@@ -55,7 +55,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 ### Version 4.6.0
 
-`label` attribute added (replaces functionality of deprecated `previewlabel` attribute in [comments_form](comments-form) tag).
+`label` attribute added (replaces functionality of deprecated `previewlabel` attribute in [comments_form](comments_form) tag).
 
 ### Version 4.0.4
 

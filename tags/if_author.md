@@ -34,7 +34,7 @@ The **if_author** tag is a *conditional* tag and always used as an opening and c
 
 The tag will execute the contained statement **if** the called page is the result of an article search by a specific author's name.
 
-Note: This is **not** the same as checking if the current article was written (posted) by the given author. Use [if_article_author](if-article-author) for that situation.
+Note: This is **not** the same as checking if the current article was written (posted) by the given author. Use [if_article_author](if_article_author) for that situation.
 {: .alert-block .information}
 
 ## Attributes

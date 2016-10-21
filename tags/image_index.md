@@ -23,11 +23,11 @@ On this page:
 <txp:image_index />
 ~~~
 
-The **image_index** tag is a *single* tag that is intended to be used in tandem with [image_display](image-display). It renders thumbnails of all images contained in an image category. This category can be specified as an attribute to the tag and defaults to the current site category as given in the page's URL.
+The **image_index** tag is a *single* tag that is intended to be used in tandem with [image_display](image_display). It renders thumbnails of all images contained in an image category. This category can be specified as an attribute to the tag and defaults to the current site category as given in the page's URL.
 
-The thumbnail images are linked to an address which will pass the image ID plus the active category on to the tandem [image_display](image-display) tag. It is up to the user to include this tandem tag at an appropriate place inside the page template.
+The thumbnail images are linked to an address which will pass the image ID plus the active category on to the tandem [image_display](image_display) tag. It is up to the user to include this tandem tag at an appropriate place inside the page template.
 
-Note: As the image category is passed into [image_display](image-display), it requires to either place the 'receiving' image_display on an article independent portion of the page (i.e. outside of the article form), or otherwise both the article used for display and the images have to share a 'common' category.
+Note: As the image category is passed into [image_display](image_display), it requires to either place the 'receiving' image_display on an article independent portion of the page (i.e. outside of the article form), or otherwise both the article used for display and the images have to share a 'common' category.
 {: .alert-block .information}
 
 ## Attributes

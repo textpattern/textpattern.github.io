@@ -75,7 +75,7 @@ Other tags used: [title](title).
 
 Displays an unordered linked list of articles from the same section omitting the article currently viewed.
 
-Other tags used: [article_custom](article-custom), [section](section), [else](else), [permlink](permlink), [title](title).
+Other tags used: [article_custom](article_custom), [section](section), [else](else), [permlink](permlink), [title](title).
 
 ## Genealogy
 

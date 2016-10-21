@@ -112,7 +112,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 </txp:authors>
 ~~~
 
-Other tags used: [author](author), [[author_email](author-email).
+Other tags used: [author](author), [[author_email](author_email).
 
 ### Example 3: Render a drop-down list of authors
 

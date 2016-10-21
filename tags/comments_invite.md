@@ -69,4 +69,4 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 This will display the comments invitation and a comment count (but only if there are any comments associated with the current article).
 
-Other tags used: [if_comments](if-comments).
+Other tags used: [if_comments](if_comments).

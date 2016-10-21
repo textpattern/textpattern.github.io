@@ -33,7 +33,7 @@ The **if_category** tag is a *conditional* tag and always used as an opening and
 
 The tag will execute the contained statements if the `name` attribute matches a category search value, or the list is an article list by category.
 
-Should be used in a page template; if checking the category in an article form, use [if_article_category](if-article-category).
+Should be used in a page template; if checking the category in an article form, use [if_article_category](if_article_category).
 
 ## Attributes
 
@@ -77,7 +77,7 @@ Other tags used: [author](author).
 
 Displays the category name if the article list is of category `prose`, otherwise show the site's name.
 
-Other tags used: [category](category), [else](else), [site_name](site-name).
+Other tags used: [category](category), [else](else), [site_name](site_name).
 
 ### Example 3: Display an appropriate heading
 
@@ -115,7 +115,7 @@ Given the defined article categories: `prose`, `poetry`, and `opinions`.
 
 Shows a category list and, underneath it, a list of related articles in the currently selected category. Changing the category using the list changes the related articles underneath.
 
-Other tags used: [category_list](category-list), [recent_articles](recent-articles).
+Other tags used: [category_list](category_list), [recent_articles](recent_articles).
 
 ## Genealogy
 

@@ -56,7 +56,7 @@ Other tags used: [next_title](next_title).
 
 This will always display the text 'Next', even when there is no next article.
 
-Note: While `showalways` will enable this tag to display what is wrapped inside it, [next_title](next-title) returns nothing if there is no next title, so nothing is displayed. Use text, or the returned value, that you need displayed.
+Note: While `showalways` will enable this tag to display what is wrapped inside it, [next_title](next_title) returns nothing if there is no next title, so nothing is displayed. Use text, or the returned value, that you need displayed.
 {: .alert-block .information}
 
 ### Example 3: Customising links

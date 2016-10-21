@@ -68,10 +68,10 @@ Tag will accept the following attributes (**case-sensitive**):
 </p>
 ~~~
 
-Other tags used: [comment_email_input](comment-email-input), [comments_help](comments-help), [comment_message_input](comment-message-input), [comment_name_input](comment-name-input), [comment_preview](comment-preview), [comment_submit](comment-submit), [comment_web_input](comment-web-input).
+Other tags used: [comment_email_input](comment_email_input), [comments_help](comments_help), [comment_message_input](comment_message-input), [comment_name_input](comment_name-input), [comment_preview](comment_preview), [comment_submit](comment_submit), [comment_web_input](comment_web-input).
 
 ## Genealogy
 
 ### Version 4.6.0
 
-`forgetlabel` and `rememberlabel` attributes added (replaces functionality of deprecated `forgetlabel` and `rememberlabel` attributes in [comments_form](comments-form) tag).
+`forgetlabel` and `rememberlabel` attributes added (replaces functionality of deprecated `forgetlabel` and `rememberlabel` attributes in [comments_form](comments_form) tag).

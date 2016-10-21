@@ -58,4 +58,4 @@ This tag will accept the following attributes (**case-sensitive**):
 </p>
 ~~~
 
-Other tags used: [comment_id](comment-id), [comment_message](comment-message), [comment_name](comment-name), [comment_permlink](comment-permlink).
+Other tags used: [comment_id](comment_id), [comment_message](comment_message), [comment_name](comment_name), [comment_permlink](comment_permlink).

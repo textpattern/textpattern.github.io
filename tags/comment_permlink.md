@@ -48,4 +48,4 @@ Tag will accept the following attributes (**case-sensitive**):
 </p>
 ~~~
 
-Other tags used: [comment_id](comment-id), [comment_message](comment-message), [comment_name](comment-name), [comment_time](comment_time).
+Other tags used: [comment_id](comment_id), [comment_message](comment_message), [comment_name](comment_name), [comment_time](comment_time).

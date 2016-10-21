@@ -32,7 +32,7 @@ The **if_first_category** tag is a *conditional* tag and always used as an openi
 </txp:if_first_category>
 ~~~
 
-The tag will execute the contained statements if the current category (usually one inside the container or form of a [category_list](category-list)) is the first in the currently displayed list.
+The tag will execute the contained statements if the current category (usually one inside the container or form of a [category_list](category_list)) is the first in the currently displayed list.
 
 ## Attributes
 

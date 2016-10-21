@@ -32,7 +32,7 @@ The **if_last_section** tag is a *conditional* tag and always used as an opening
 </txp:if_last_section>
 ~~~
 
-The tag will execute the contained statements if the current section (usually one inside the container or form of a [section_list](section-list)) is the last in the currently displayed list.
+The tag will execute the contained statements if the current section (usually one inside the container or form of a [section_list](section_list)) is the last in the currently displayed list.
 
 ## Attributes
 

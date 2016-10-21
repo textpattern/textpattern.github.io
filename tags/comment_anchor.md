@@ -43,4 +43,4 @@ When the comment number is `000005` you will see:
 <a id="c000005"></a>
 ~~~
 
-Other tags used: [comment_message](comment-message).
+Other tags used: [comment_message](comment_message).

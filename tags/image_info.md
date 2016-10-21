@@ -45,11 +45,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : One or more of the following values to display the particular pieces of information from the current image.
 : **Values:** \\
 `alt`: image `alt` content. \\
-`author`: image author's login name (see [image_author](image-author) to display the author's real name). \\
+`author`: image author's login name (see [image_author](image_author) to display the author's real name). \\
 `caption`: image `caption` content. \\
 `category`: image category name. \\
 `category_title`: image category title. \\
-`date`: timestamp of image upload (this is not very useful, so consult [image_date](image-date) for a better alternative). \\
+`date`: timestamp of image upload (this is not very useful, so consult [image_date](image_date) for a better alternative). \\
 `ext`: image extension. \\
 `h`: image height. \\
 `id`: image id. \\

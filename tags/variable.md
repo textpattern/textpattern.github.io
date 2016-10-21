@@ -32,7 +32,7 @@ If used as a *container* tag, the result of the contained statements are assigne
 </txp:variable>
 ~~~
 
-Note: Avoid entering white space characters for better code readability between the opening and closing *variable* tags, they will lead to falsified results in the [if_variable](if-variable) evaluation.
+Note: Avoid entering white space characters for better code readability between the opening and closing *variable* tags, they will lead to falsified results in the [if_variable](if_variable) evaluation.
 {: .alert-block .information}
 
 ## Attributes

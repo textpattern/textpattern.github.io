@@ -56,4 +56,4 @@ If you want to try something out to see how it affects the layout without actual
 
 Renders the body text inside the `<div class="entry-content">` but skips the `<address>` and `<txp:comments_invite />` tags.
 
-Other tags used: [body](body), [author](author), [comments_invite](comments-invite).
+Other tags used: [body](body), [author](author), [comments_invite](comments_invite).

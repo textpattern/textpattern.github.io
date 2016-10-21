@@ -90,7 +90,7 @@ Other tags used: [posted](posted), [title](title), [body](body).
 
 Display the author's name above a list of articles by that author when visiting `example.com/author/Author+Name` URLs.
 
-Other tags used: [if_author](if-author), [article](article).
+Other tags used: [if_author](if_author), [article](article).
 
 ## Genealogy
 

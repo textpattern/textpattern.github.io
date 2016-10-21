@@ -56,7 +56,7 @@ Other tags used: [prev_title](prev_title).
 
 This will always display the text 'Previous', even when there is no previous article.
 
-Note: While `showalways` will enable this tag to display what is wrapped inside it, [prev_title](prev-title) returns nothing if there is no previous title, so nothing is displayed. Use text, or the returned value, that you need displayed.
+Note: While `showalways` will enable this tag to display what is wrapped inside it, [prev_title](prev_title) returns nothing if there is no previous title, so nothing is displayed. Use text, or the returned value, that you need displayed.
 {: .alert-block .information}
 
 ### Example 3: Customising links

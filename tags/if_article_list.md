@@ -64,9 +64,9 @@ This tag has no attributes.
 </txp:if_article_list>
 ~~~
 
-This example shows how to setup article navigation so that [link_to_prev](link-to-prev) and [link_to_next](link-to-next) are used at the individual article level *or* [older](older) and [newer](newer) with article lists.
+This example shows how to setup article navigation so that [link_to_prev](link_to_prev) and [link_to_next](link_to_next) are used at the individual article level *or* [older](older) and [newer](newer) with article lists.
 
-Other tags used: [link_to_prev](link-to-prev), [link_to_next](link-to-next), [prev_title](prev-title), [next_title](next-title), [if_individual_article](if-individual-article), [older](older).texrtile, [newer](newer).texrtile.
+Other tags used: [link_to_prev](link_to_prev), [link_to_next](link_to_next), [prev_title](prev_title), [next_title](next_title), [if_individual_article](if_individual_article), [older](older).texrtile, [newer](newer).texrtile.
 
 ### Example 2: In combination with the 'else' tag
 
@@ -82,6 +82,6 @@ Other tags used: [link_to_prev](link-to-prev), [link_to_next](link-to-next), [pr
 </txp:if_article_list>
 ~~~
 
-This example shows the if_article_list in combination with [else](else) to display a site's [site_name](site-name) or logo when an article list is displayed or not, respectively.
+This example shows the if_article_list in combination with [else](else) to display a site's [site_name](site_name) or logo when an article list is displayed or not, respectively.
 
-Other tags used: [else](else), [site_name](site-name).
+Other tags used: [else](else), [site_name](site_name).

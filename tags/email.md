@@ -106,7 +106,7 @@ li.email a:hover {
 }
 ~~~
 
-See the [feed_link](feed-link) tag for a similar solution for Symbolset's 'rss' glyph.
+See the [feed_link](feed_link) tag for a similar solution for Symbolset's 'rss' glyph.
 
 ## Genealogy
 

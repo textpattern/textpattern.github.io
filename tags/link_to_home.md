@@ -29,7 +29,7 @@ The tag can, however, be used as a *single* tag to generate a raw base URL of th
 <txp:link_to_home />
 ~~~
 
-In this mode it operates identically to [site_url](site-url).
+In this mode it operates identically to [site_url](site_url).
 
 ## Attributes
 

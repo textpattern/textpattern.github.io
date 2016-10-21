@@ -33,7 +33,7 @@ The **if_last_file** tag is a *conditional* tag and always used as an opening an
 </txp:if_last_file>
 ~~~
 
-The tag will execute the contained statements if the displayed file is the last in the currently displayed [file_download_list](file-download-list). The tag supports [else](else).
+The tag will execute the contained statements if the displayed file is the last in the currently displayed [file_download_list](file_download-list). The tag supports [else](else).
 
 ## Attributes
 

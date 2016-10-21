@@ -21,9 +21,9 @@ On this page:
 <txp:search_result_count />
 ~~~
 
-The **search_result_count** tag is a *single* tag that returns the number of articles returned by an article tag. Use [if_search](if-search) to count search results or use in regular page after the [article](article) tag. If you need the results' count *before* the list of results, use the article tag in conjunction with `pgonly="1"` (see example 3).
+The **search_result_count** tag is a *single* tag that returns the number of articles returned by an article tag. Use [if_search](if_search) to count search results or use in regular page after the [article](article) tag. If you need the results' count *before* the list of results, use the article tag in conjunction with `pgonly="1"` (see example 3).
 
-Note: The [if_search](if-search) conditional tag is required to recognize actual search results, without them the number of articles is returned by default.
+Note: The [if_search](if_search) conditional tag is required to recognize actual search results, without them the number of articles is returned by default.
 {: .alert-block .information}
 
 ## Attributes
