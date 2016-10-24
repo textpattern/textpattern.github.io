@@ -198,10 +198,8 @@ If all went well in the previous screen, you'll advance to screen 2, which is co
 
 This part shows if Textpattern has actually communicated successfully with your database using the information from the previous screen. If so, you'll see this:
 
-~~~
-> %(success)Connected%
-> %(success)Using {database} ({encoding})%
-~~~
+<span class="success">Connected</span> \\
+<span class="success">Using {database} ({encoding})</span>
 
 Where `{database}` is the name of your database and `{encoding}` is the character encoding your database is configured to use -- ideally `utf8`.[^5]
 
