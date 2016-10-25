@@ -15,9 +15,6 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 {::options parse_block_html="true" /}
 
 <div class="layout-container">
-
-{::options parse_block_html="true" /}
-
 <div class="layout-3col">
 
 ### Installation handling
