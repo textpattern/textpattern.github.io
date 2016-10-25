@@ -10,8 +10,6 @@ search_omit: true
 
 Welcome to the new user documentation, which replaces the old wiki at textpattern.net (soon to retire). This is a construction zone for a while, but any viewable page is ready for use, albeit subject to further editing. Occasional progress updates and feedback requests will be made in the [sites forum](http://forum.textpattern.com/viewforum.php?id=60).
 
-## TABLE OF CONTENTS
-
 {::options parse_block_html="true" /}
 
 <div class="layout-container">
@@ -25,9 +23,6 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Post install and upgrade routines](administration/post-install-and-upgrade-routines)
 
 </div>
-
-{::options parse_block_html="true" /}
-
 <div class="layout-3col">
 
 ### Site administration
@@ -37,9 +32,6 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Textpattern security](administration/security) (read before you worry or hack the core)
 
 </div>
-
-{::options parse_block_html="true" /}
-
 <div class="layout-3col">
 
 ### Core tags
@@ -49,9 +41,6 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Tags reference](tags/) (the complete suite)
 
 </div>
-
-{::options parse_block_html="true" /}
-
 <div class="layout-3col">
 
 ### Design
@@ -61,9 +50,6 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * Admin-side themes
 
 </div>
-
-{::options parse_block_html="true" /}
-
 <div class="layout-3col">
 
 ### Development
@@ -72,9 +58,6 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Textpattern source code repositories](development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
 
 </div>
-
-{::options parse_block_html="true" /}
-
 <div class="layout-3col">
 
 ### FAQs
