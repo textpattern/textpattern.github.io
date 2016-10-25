@@ -12,6 +12,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ## TABLE OF CONTENTS
 
+{::options parse_block_html="true" /}
+
 <div class="layout-container">
 
 {::options parse_block_html="true" /}
