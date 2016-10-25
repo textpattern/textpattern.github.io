@@ -12,6 +12,9 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ## TABLE OF CONTENTS
 
+<div class="layout-container">
+<div class="layout-3col">
+
 ### Installation handling
 
 * [Installing Textpattern](installation/) (detailed instructions)
@@ -19,11 +22,17 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Moving a Textpattern installation](installation/moving-textpattern)
 * [Post install and upgrade routines](administration/post-install-and-upgrade-routines)
 
+</div>
+<div class="layout-3col">
+
 ### Site administration
 
 * [Textpattern administration](administration/) (admin-side structure and functionality)
 * [Administration fast-track](administration/admin-fast-track) (workflow insights to get up to speed  quick)
 * [Textpattern security](administration/security) (read before you worry or hack the core)
+
+</div>
+<div class="layout-3col">
 
 ### Core tags
 
@@ -31,13 +40,27 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
   * [Parsing tag attributes](tags/tag-basics/parsing-tag-attributes) (sorcery)
 * [Tags reference](tags/) (the complete suite)
 
+</div>
+<div class="layout-3col">
+
 ### Design
 
 * [Theme design](themes/)
 * Front-end themes
 * Admin-side themes
 
+</div>
+<div class="layout-3col">
+
 ### Development
 
 * [Plugin development](development/)
 * [Textpattern source code repositories](development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
+
+</div>
+<div class="layout-3col">
+
+### FAQs
+
+</div>
+</div>
