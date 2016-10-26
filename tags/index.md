@@ -17,6 +17,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ## Complete list of Textpattern tags
 
+{::options parse_block_html="true" /}
+
+<div class="layout-text3col">
+
 ### A
 
 * [article](article)
@@ -225,3 +229,5 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 ### Y
 
 * [yield](yield)
+
+</div>
