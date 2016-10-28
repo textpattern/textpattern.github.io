@@ -45,6 +45,8 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### C
 
+<div class="layout-text3col">
+
 * [category](category)
 * [category list](category_list)
 * [category1](category1)
@@ -74,7 +76,11 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [css](css)
 * [custom field](custom_field)
 
+</div>
+
 ### E
+
+<div class="layout-text3col">
 
 * [else](else)
 * [email](email)
@@ -83,7 +89,11 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [excerpt](excerpt)
 * [expires](expires)
 
+</div>
+
 ### F
+
+<div class="layout-text3col">
 
 * [feed link](feed_link)
 * [file download](file_download)
@@ -99,11 +109,19 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [file download name](file_download_name)
 * [file download size](file_download_size)
 
+</div>
+
 ### H
+
+<div class="layout-text3col">
 
 * [hide](hide)
 
+</div>
+
 ### I
+
+<div class="layout-text3col">
 
 * [if article author](if_article_author)
 * [if article category](if_article_category)
@@ -154,7 +172,11 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [image url](image_url)
 * [images](images)
 
+</div>
+
 ### L
+
+<div class="layout-text3col">
 
 * [lang](lang)
 * [link](link)
@@ -172,24 +194,40 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [linkdesctitle](linkdesctitle)
 * [linklist](linklist)
 
+</div>
+
 ### M
+
+<div class="layout-text3col">
 
 * [meta author](meta_author)
 * [meta description](meta_description)
 * [meta keywords](meta_keywords)
 * [modified](modified)
 
+</div>
+
 ### N
+
+<div class="layout-text3col">
 
 * [newer](newer)
 * [next title](next_title)
 
+</div>
+
 ### O
+
+<div class="layout-text3col">
 
 * [older](older)
 * [output form](output_form)
 
+</div>
+
 ### P
+
+<div class="layout-text3col">
 
 * [page title](page_title)
 * [page url](page_url)
@@ -200,13 +238,21 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [posted](posted)
 * [prev title](prev_title)
 
+</div>
+
 ### R
+
+<div class="layout-text3col">
 
 * [recent articles](recent_articles)
 * [recent comments](recent_comments)
 * [related articles](related_articles)
 
+</div>
+
 ### S
+
+<div class="layout-text3col">
 
 * [search input](search_input)
 * [search result count](search_result_count)
@@ -221,17 +267,31 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [site slogan](site_slogan)
 * [site url](site_url)
 
+</div>
+
 ### T
+
+<div class="layout-text3col">
 
 * [text](text)
 * [thumbnail](thumbnail)
 * [title](title)
 * [txp die](txp_die)
 
+</div>
+
 ### V
+
+<div class="layout-text3col">
 
 * [variable](variable)
 
+</div>
+
 ### Y
 
+<div class="layout-text3col">
+
 * [yield](yield)
+
+</div>
