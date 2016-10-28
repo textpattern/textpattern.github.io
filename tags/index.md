@@ -33,7 +33,6 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [authors](authors)
 
 </div>
-<hr>
 
 ### B
 
@@ -43,7 +42,6 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [breadcrumb](breadcrumb)
 
 </div>
-<hr>
 
 ### C
 
