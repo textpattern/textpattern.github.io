@@ -3,6 +3,7 @@ layout: document
 category: installation
 published: true
 title: "Installing Textpattern"
+description: These are detailed instructions for installing Textpattern.
 tags:
   - Installation
   - Detailed
