@@ -47,7 +47,7 @@ The **Content** region of the administration side has seven panels out-of-the-bo
     <table>
         <thead>
             <tr>
-                <th>What the panel provides you</th>
+                <th colspan="2">What the panel provides you</th>
             </tr>
         </thead>
         <tbody>
@@ -93,7 +93,7 @@ The **Presentation** region of the administration side has four panels out-of-th
     <table>
         <thead>
             <tr>
-                <th>What the panel provides you</th>
+                <th colspan="2">What the panel provides you</th>
             </tr>
         </thead>
         <tbody>
@@ -125,7 +125,7 @@ The **Admin** region of the administration side has seven panels out-of-the-box,
     <table>
         <thead>
             <tr>
-                <th>What the panel provides you</th>
+                <th colspan="2">What the panel provides you</th>
             </tr>
         </thead>
         <tbody>
