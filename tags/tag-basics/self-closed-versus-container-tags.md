@@ -1,8 +1,9 @@
 ---
 layout: document
-category: tag-basics
+category: Tag basics
 published: true
 title: "Self-closed versus container tags"
+description: A self-closed tag is the most basic form of a Texpattern tag.
 ---
 
 # Self-closed versus container tags
