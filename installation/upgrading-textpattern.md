@@ -1,6 +1,6 @@
 ---
 layout: document
-category: installation
+category: Installation
 published: true
 title: "Upgrading Textpattern"
 description: Upgrading is an essential part of maintaining good site security. Whenever a new version of Textpattern is released, upgrade!

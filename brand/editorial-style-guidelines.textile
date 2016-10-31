@@ -1,18 +1,12 @@
 ---
 layout: document
-category: brand
+category: Brand
 published: true
 title: "Textpattern editorial style guide"
 tags:
-  - audience
-  - brand identity
-  - communication
-  - editorial
-  - style
-  - guidelines
-  - taxonomy
-  - tone
-  - voice
+  - Brand
+  - Communication
+  - Style guidelines
 ---
 
 h1. Textpattern editorial style guide
@@ -54,7 +48,7 @@ h3(). Textpattern CMS website (audience: various)
 
 Write in the first-person _and_ second-person. The perspective in this case is Textpattern (the project), specifically using "we" and "us"
 
-Do not write in first-person, regardless of whether the pronouns are normative, objective, or possessive. You should never be using these: I/we, me/us, my, mine, our, ours. 
+Do not write in first-person, regardless of whether the pronouns are normative, objective, or possessive. You should never be using these: I/we, me/us, my, mine, our, ours.
 
 Likewise, do not use the third-person in your copy. So don't use these words: he, she, they ... him, her, them ... his, her, hers, their, theirs ... it. They're indirect and totally unnecessary.
 
@@ -79,7 +73,7 @@ Concepts and word forms are listed alphabetically.
 
 h3(#spell-a). American or British English?
 
-There are many differences between British and American English with regard to spelling. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com (OED), as described in the "Languages":#lang section of these guidelines. 
+There are many differences between British and American English with regard to spelling. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com (OED), as described in the "Languages":#lang section of these guidelines.
 
 The following table compares conventional patterns of spelling between North American regions, Great Britain, and the OED.[1] The words shown are simply representative of all possible words having those patterns. Use the OED conventions (*en-GB-oxendict*) when writing Textpattern content.
 
@@ -131,7 +125,7 @@ Use a serial comma and you'll never be wrong. If you don't use one, make sure th
 
 h3(#quotes). Quotations marks
 
-Use double quotation marks when quoting text, such as admin-side UI form control labels and options, and put the closing quotation mark _inside_ the end punctuation of a clause or full phrase, unless the quoted part has it's own ending punctuation, then it goes outside.[3] 
+Use double quotation marks when quoting text, such as admin-side UI form control labels and options, and put the closing quotation mark _inside_ the end punctuation of a clause or full phrase, unless the quoted part has it's own ending punctuation, then it goes outside.[3]
 
 If you ever need to quote text that contains a quotation, use double quotation marks for the outer quote, and single quotation marks for the inner quote.
 

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: development
+category: Development
 published: true
 title: "Contributing"
 tags:

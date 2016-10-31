@@ -1,6 +1,6 @@
 ---
 layout: document
-category: brand
+category: Brand
 published: true
 title: "Textpattern brand and voice"
 description: We ask you to consider using these resources too when writing your own blog articles, speaking at conferences, giving work/client presentations, etc.

@@ -1,13 +1,12 @@
 ---
 layout: document
-category: themes
+category: Themes
 published: true
 title: "Theme design"
 tags:
-  - themes
-  - presentation
-  - design
-  - skin
+  - Themes
+  - Presentation
+  - Skin
 ---
 
 "ToC":http://docs.textpattern.io ⨠ "Themes":http://docs.textpattern.io/themes/ ⨠ **Theme design**
