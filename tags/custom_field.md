@@ -24,10 +24,10 @@ On this page:
 
 The **custom_field** tag is a *single* tag and used to display the contents of a custom field.
 
-Custom fields are useful when you need to output content having a consistent structure, usually in context to a particular type of article. Custom fields are defined in the [Preferences administration panel](../administration/preferences-panel), and used in the [Write administration panel](../administration/write-panel). There are conditions to be aware of in each case, so be sure to read the following sections, respectively:
+Custom fields are useful when you need to output content having a consistent structure, usually in context to a particular type of article. Custom fields are defined in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel), and used in the [Write administration panel](http://docs.textpattern.io/administration/write-panel). There are conditions to be aware of in each case, so be sure to read the following sections, respectively:
 
-# @@Defining custom fields@@
-# @@Adding custom field data@@
+1. @@Defining custom fields@@
+2. @@Adding custom field data@@
 
 Also see the [if_custom_field](if-custom_field) conditional tag, which provides more flexibility and power using custom fields.
 
@@ -52,10 +52,10 @@ Tag will accept the following attributes (**case-sensitive**):
 
 You might, for example, publish book reviews (for which you add the author, the title of the book, the publishing company and the year of publication), with:
 
-# a custom field named `Book_Author` containing `J.R.R. Tolkien`,
-# a custom field named `Book_Title` containing `The Lord of the Rings`,
-# a custom field named `Book_Publisher` containing `HarperCollins`,
-# a custom field named `Book_Year` containing `2004`.
+1. a custom field named `Book_Author` containing `J.R.R. Tolkien`,
+2. a custom field named `Book_Title` containing `The Lord of the Rings`,
+3. a custom field named `Book_Publisher` containing `HarperCollins`,
+4. a custom field named `Book_Year` containing `2004`.
 
 and an 'article' type form like the following:
 
