@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Link to prev"
 tags:

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Search input"
 tags:

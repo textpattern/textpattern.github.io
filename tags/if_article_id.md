@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If article id"
 description: The if_article_id tag will execute the contained statement if the article id associated with a particular article matches.

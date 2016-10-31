@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Comments form"
 description: The comments_form tag is used to display a comment form.

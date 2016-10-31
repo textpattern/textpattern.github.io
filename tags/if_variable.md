@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If variable"
 description: The if_variable tag tests the existence and/or value of a global variable set with the variable tag.

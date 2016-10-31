@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If article section"
 description: The if_article_section tag will execute the contained statements if the section name associated with a particular article matches.

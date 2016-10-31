@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Link category"
 description: The link_category tag is a single tag which returns the link category as text.

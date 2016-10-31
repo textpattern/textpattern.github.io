@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If last file"
 description: The if_last_file tag will execute the contained statements if the displayed file is the last in the currently displayed file download list.

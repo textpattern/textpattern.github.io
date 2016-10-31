@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If comments allowed"
 description: The if_comments_allowed tag will test the article identified by the attribute for status and act, or not, according to that status.

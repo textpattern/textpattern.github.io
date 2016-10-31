@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "File download name"
 description: The file_download_name tag will replace with the name of the file to download.

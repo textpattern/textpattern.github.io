@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If first section"
 description: The if_first_section tag will execute the contained statements if the current section is the first in the list.

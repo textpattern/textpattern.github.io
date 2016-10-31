@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Category list"
 description: The category_list tag is used to produce a list of linked categories.

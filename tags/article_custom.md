@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Article custom"
 description: The article_custom tag provides a variety of custom options for sorting, selecting, and displaying articles.

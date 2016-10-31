@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If search"
 description: The if_search tag will execute the contained statements if the called page is the result of a search.

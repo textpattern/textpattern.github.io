@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If first image"
 description: The if_first_image tag will execute the contained statements if the displayed image is the first in the currently displayed images list.

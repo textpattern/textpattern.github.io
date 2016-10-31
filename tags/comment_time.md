@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Comment time"
 description: The comment_time tag is used to display the time and date the comment was submitted.

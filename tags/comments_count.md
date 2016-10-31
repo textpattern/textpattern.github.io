@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Comments count"
 description: The comments_count tag is used to display the number of comments associated with a particular article.

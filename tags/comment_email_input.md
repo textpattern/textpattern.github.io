@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Comment email input"
 description: The comment_email_input tag is used to display a text entry field to accept the commenter's email address.

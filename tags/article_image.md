@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Article image"
 description: The article_image tag is used to create an img HTML tag matching the numeric ID or URL assigned when the article is posted.

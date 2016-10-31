@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Comment id"
 description: The comment_id tag is used to display the comment's internal id as assigned by Textpattern at the time of posting.

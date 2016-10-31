@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Comments preview"
 description: The comments_preview tag is used to display a preview of a visitor's comment.

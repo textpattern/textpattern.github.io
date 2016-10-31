@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Tag reference index"
 description: A complete list of the Textpattern tags.

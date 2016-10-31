@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "File download author"
 description: The file_download_author will replace with the author's name associated with the current download in a file_download.

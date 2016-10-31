@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If comments error"
 description: The if_comments_error tag will execute the contained statements when an error exists with the comments.

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Error message"
 description: The error_message tag will show the error message text for the error status as set by the server.

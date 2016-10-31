@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Email"
 description: The email tag will show a mailto: email link, according to the attributes set.

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If yield"
 description: The if_yield tag tests the existence and/or value of a content set with the yield tag inside of an output_form container tag.

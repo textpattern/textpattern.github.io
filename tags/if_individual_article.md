@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If individual article"
 description: The if_individual_article tag will execute the contained statements if an individual article is being displayed.

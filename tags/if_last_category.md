@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If last category"
 description: The if_last_category tag will execute the contained statements if the current category is the last in the list.

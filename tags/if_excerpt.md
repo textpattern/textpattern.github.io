@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "If excerpt"
 description: The if_excerpt tag will execute the contained statements if an excerpt is associated with the article being displayed.

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: tags
+category: Tags
 published: true
 title: "Comments error"
 description: The comments_error tag is used to produce the current comments error.
