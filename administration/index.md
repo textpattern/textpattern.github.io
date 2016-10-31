@@ -80,7 +80,7 @@ The **Content** region of the administration side has seven panels out-of-the-bo
     </table>
 </div>
 
-In Textpattern 4.6, when the "Accept comments?" preference is set to "No" in the **Preferences** panel, all comments functionality throughout the administration side will be hidden in the UI and the **Comments** panel link will be removed from the list of panel options in the **Content** region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to "Yes". 
+From Textpattern 4.6 onwards, when the "Accept comments?" preference is set to "No" in the **Preferences** panel, all comments functionality throughout the administration side will be hidden in the UI and the **Comments** panel link will be removed from the list of panel options in the **Content** region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to "Yes". 
 
 ### Presentation
 
@@ -178,6 +178,4 @@ The [**Extensions**](http://docs.textpattern.io/administration/extensions-region
 
 The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the [**Write**](http://docs.textpattern.io/administration/write-panel) panel from that point on, which is the default panel under the **Content** region.
 
-You can change the default landing panel to whichever one you want using the "Default administration panel" preference under the **Admin** area of the [**Preferences**](http://docs.textpattern.io/administration/preferences-panel) panel.[^2]
-
-[^2]: The current preference label is, "Default admin tab". Beginning with version 4.6 the label will become "Default administration panel", which is a normalization against [Textpattern guidelines](http://docs.textpattern.io/brand/).
+You can change the default landing panel to whichever one you want using the "Default administration panel" preference under the **Admin** area of the [**Preferences**](http://docs.textpattern.io/administration/preferences-panel) panel.
