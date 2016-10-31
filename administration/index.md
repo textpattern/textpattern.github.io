@@ -49,8 +49,24 @@ The **Content** region of the administration side has seven panels out-of-the-bo
         </thead>
         <tbody>
             <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/write-panel"><strong>Write</strong></a> (default)</th>
+                <td>Article editing fields and controls.</td>
+            </tr>
+            <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/articles-panel"><strong>Articles</strong></a></th>
                 <td>A table listing of all articles, and the ability to open one in full-edit mode in context of the <strong>Write</strong> panel.</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/images-panel"><strong>Images</strong></a></th>
+                <td>A table listing of all images uploaded and functionality to manage them.</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/files-panel"><strong>Files</strong></a></th>
+                <td>A table listing of all files uploaded and functionality to manage them.</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/links-panel"><strong>Links</strong></a></th>
+                <td>A table listing of all links uploaded and functionality to manage the.</td>
             </tr>
             <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/categories-panel"><strong>Categories</strong></a></th>
@@ -59,22 +75,6 @@ The **Content** region of the administration side has seven panels out-of-the-bo
             <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/comments-panel"><strong>Comments</strong></a></th>
                 <td>A table of all article comments received and functionality to manage them.</td>
-            </tr>
-            <tr>
-                <th scope="row"><a href="http://docs.textpattern.io/administration/files-panel"><strong>Files</strong></a></th>
-                <td>A table listing of all files uploaded and functionality to manage them.</td>
-            </tr>
-            <tr>
-                <th scope="row"><a href="http://docs.textpattern.io/administration/images-panel"><strong>Images</strong></a></th>
-                <td>A table listing of all images uploaded and functionality to manage them.</td>
-            </tr>
-            <tr>
-                <th scope="row"><a href="http://docs.textpattern.io/administration/links-panel"><strong>Links</strong></a></th>
-                <td>A table listing of all links uploaded and functionality to manage the.</td>
-            </tr>
-            <tr>
-                <th scope="row"><a href="http://docs.textpattern.io/administration/write-panel"><strong>Write</strong></a> (default)</th>
-                <td>Article editing fields and controls.</td>
             </tr>
         </tbody>
     </table>
@@ -96,16 +96,16 @@ The **Presentation** region of the administration side has four panels out-of-th
         </thead>
         <tbody>
             <tr>
-                <th scope="row"><a href="http://docs.textpattern.io/administration/forms-panel"><strong>Forms</strong></a></th>
-                <td>A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" <strong>Article</strong> form type displays by default.</td>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/sections-panel"><strong>Sections</strong></a></th>
+                <td>A table listing of sections and functionality to create and manage them.</td>
             </tr>
             <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/pages-panel"><strong>Pages</strong></a></th>
                 <td>A list of HTML page templates and functionality to create and manage them. The "default" page displays by default.</td>
             </tr>
             <tr>
-                <th scope="row"><a href="http://docs.textpattern.io/administration/sections-panel"><strong>Sections</strong></a></th>
-                <td>A table listing of sections and functionality to create and manage them.</td>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/forms-panel"><strong>Forms</strong></a></th>
+                <td>A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" <strong>Article</strong> form type displays by default.</td>
             </tr>
             <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/styles-panel"><strong>Styles</strong></a></th>
@@ -133,24 +133,20 @@ The **Admin** region of the administration side has seven panels out-of-the-box,
                 <td>Feedback messages and data displays to troubleshoot system problems.</td>
             </tr>
             <tr>
-                <th scope="row"><a href="http://docs.textpattern.io/administration/import-panel"><strong>Import</strong></a></th>
-                <td>Functionality to import data from another publishing system.</td>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/preferences-panel"><strong>Preferences</strong></a></th>
+                <td>All configurable settings to make your site function correctly and as desired.</td>
             </tr>
             <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/languages-panel"><strong>Languages</strong></a></th>
                 <td>A list of language packs and the ability to update them.</td>
             </tr>
             <tr>
-                <th scope="row"><a href="http://docs.textpattern.io/administration/plugins-panel"><strong>Plugins</strong></a></th>
-                <td>A table listing of installed plugins, and functionality to manage them.</td>
-            </tr>
-            <tr>
-                <th scope="row"><a href="http://docs.textpattern.io/administration/preferences-panel"><strong>Preferences</strong></a></th>
-                <td>All configurable settings to make your site function correctly and as desired.</td>
-            </tr>
-            <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/users-panel"><strong>Users</strong></a></th>
                 <td>A table listing of all user accounts and the functionality to manage them.</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/plugins-panel"><strong>Plugins</strong></a></th>
+                <td>A table listing of installed plugins, and functionality to manage them.</td>
             </tr>
             <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/visitor-logs-panel"><strong>Visitor logs</strong></a></th>
@@ -159,6 +155,8 @@ The **Admin** region of the administration side has seven panels out-of-the-box,
         </tbody>
     </table>
 </div>
+
+From Textpattern 4.6 onwards, when the "Logging" preference is set to "None" in the **Preferences** panel, all logging functionality throughout the administration side will be hidden in the UI and the **Visitor logs** panel link will be removed from the list of panel options in the **Admin** region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to "Yes". 
 
 Examples of plugins that add additional panel options to the **Admin** region include `smd_faux_role` and `wet_snitch`.
 
