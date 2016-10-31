@@ -39,8 +39,6 @@ The administration side is organized into three primary regions: **Content**, **
 
 The **Content** region of the administration side has seven panels out-of-the-box, of which the **Write** panel is the default.
 
-{::options parse_block_html="true" /}
-
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
     <table>
         <thead>
@@ -51,31 +49,31 @@ The **Content** region of the administration side has seven panels out-of-the-bo
         </thead>
         <tbody>
             <tr>
-                <th scope="row">"**Articles**":http://docs.textpattern.io/administration/articles-panel</th>
-                <td>A table listing of all articles, and the ability to open one in full-edit mode in context of the **Write** panel.</td>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/articles-panel"><strong>Articles</strong></a></th>
+                <td>A table listing of all articles, and the ability to open one in full-edit mode in context of the <strong>Write</strong> panel.</td>
             </tr>
             <tr>
-                <th scope="row">"**Categories**":http://docs.textpattern.io/administration/categories-panel</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/categories-panel"><strong>Categories</strong></a></th>
                 <td>Functionality to create and manage topic categories for articles, images, links, and files.</td>
             </tr>
             <tr>
-                <th scope="row">"**Comments**":http://docs.textpattern.io/administration/comments-panel][^1]</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/comments-panel"><strong>Comments</strong></a><sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></th>
                 <td>A table of all article comments received and functionality to manage them.</td>
             </tr>
             <tr>
-                <th scope="row">"**Files**":http://docs.textpattern.io/administration/files-panel</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/files-panel"><strong>Files</strong></a></th>
                 <td>A table listing of all files uploaded and functionality to manage them.</td>
             </tr>
             <tr>
-                <th scope="row">"**Images**":http://docs.textpattern.io/administration/images-panel</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/images-panel"><strong>Images</strong></a></th>
                 <td>A table listing of all images uploaded and functionality to manage them.</td>
             </tr>
             <tr>
-                <th scope="row">"**Links**":http://docs.textpattern.io/administration/links-panel</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/links-panel"><strong>Links</strong></a></th>
                 <td>A table listing of all links uploaded and functionality to manage the.</td>
             </tr>
             <tr>
-                <th scope="row">"**Write**":http://docs.textpattern.io/administration/write-panel (default)</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/write-panel"><strong>Write</strong></a> (default)</th>
                 <td>Article editing fields and controls.</td>
             </tr>
         </tbody>
