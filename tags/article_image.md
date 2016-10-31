@@ -116,4 +116,4 @@ Default value for `escape` attribute changed from 'unset' to `html`.
 
 ### Version 4.0.4
 
-`class`, `escape`, `;html_id`, `thumbnail` and `wraptag` attributes added.
+`class`, `escape`, `html_id`, `thumbnail` and `wraptag` attributes added.
