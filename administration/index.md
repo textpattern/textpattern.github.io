@@ -96,19 +96,19 @@ The **Presentation** region of the administration side has four panels out-of-th
         </thead>
         <tbody>
             <tr>
-                <th scope="row">"**Forms**":http://docs.textpattern.io/administration/forms-panel</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/forms-panel"><strong>Forms</strong></a></th>
                 <td>A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" **Article** form type displays by default.</td>
             </tr>
             <tr>
-                <th scope="row">"**Pages**":http://docs.textpattern.io/administration/pages-panel (default)</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/pages-panel"><strong>Pages</strong></a></th>
                 <td>A list of HTML page templates and functionality to create and manage them. The "default" page displays by default.</td>
             </tr>
             <tr>
-                <th scope="row">"**Sections**":http://docs.textpattern.io/administration/sections-panel</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/sections-panel"><strong>Sections</strong></a></th>
                 <td>A table listing of sections and functionality to create and manage them.</td>
             </tr>
             <tr>
-                <th scope="row">"**Styles**":http://docs.textpattern.io/administration/styles-panel</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/styles-panel"><strong>Styles</strong></a></th>
                 <td>A list of CSS style files and functionality to create and manage them. The "default" style displays by default.</td>
             </tr>
         </tbody>
@@ -129,30 +129,31 @@ The **Admin** region of the administration side has seven panels out-of-the-box,
         </thead>
         <tbody>
             <tr>
-                <th scope="row">"**Diagnostics**":http://docs.textpattern.io/administration/diagnostics-panel</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/diagnostics-panel"><strong>Diagnostics</strong></a></th>
                 <td>Feedback messages and data displays to troubleshoot system problems.</td>
             </tr>
             <tr>
-                <th scope="row">"**Import**":http://docs.textpattern.io/administration/import-panel</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/import-panel"><strong>Import</strong></a></th>
                 <td>Functionality to import data from another publishing system.</td>
             </tr>
             <tr>
-                <th scope="row">"**Languages**":http://docs.textpattern.io/administration/languages-panel (Update languages)</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/languages-panel"><strong>Languages</strong></a></th>
                 <td>A list of language packs and the ability to update them.</td>
             </tr>
             <tr>
-                <th scope="row">"**Plugins**":http://docs.textpattern.io/administration/plugins-panel | A table listing of installed plugins, and functionality to manage them.</td>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/plugins-panel"><strong>Plugins</strong></a></th>
+                <td>A table listing of installed plugins, and functionality to manage them.</td>
             </tr>
             <tr>
-                <th scope="row">"**Preferences**":http://docs.textpattern.io/administration/preferences-panel (basic/advanced)</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/preferences-panel"><strong>Preferences</strong></a></th>
                 <td>All configurable settings to make your site function correctly and as desired.</td>
             </tr>
             <tr>
-                <th scope="row">"**Users**":http://docs.textpattern.io/administration/users-panel (default)</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/users-panel"><strong>Users</strong></a></th>
                 <td>A table listing of all user accounts and the functionality to manage them.</td>
             </tr>
             <tr>
-                <th scope="row">"**Visitor logs**":http://docs.textpattern.io/administration/visitor-logs-panel</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/visitor-logs-panel"><strong>Visitor logs</strong></a></th>
                 <td>A display of all site traffic.</td>
             </tr>
         </tbody>
