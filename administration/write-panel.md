@@ -1,65 +1,77 @@
-\n"mininav_content_index":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index
+---
+layout: document
+category: Administration
+published: true
+title: "Write panel"
+description: The Write panel reveals the various features for managing articles on your Web site, which includes creating new articles, editing existing articles.
+tags:
+  - Administration
+  - Configuration
+---
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-write_fig1.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-write_fig1.gif
+# Write panel
 
-*Write* is the default panel opened when you log into Textpattern's admin-side (see Figure 1). This panel reveals the various features for managing articles on your Web site, which includes creating new articles, editing existing articles, assigning (or reassigning) articles to sections and categories, setting the time and date of articles, and various other abilities that are covered in the following description.
+**Write** is the default panel opened when you log into Textpattern's admin-side (see Figure 1). This panel reveals the various features for managing articles on your website, which includes creating new articles, editing existing articles, assigning (or reassigning) articles to sections and categories, setting the time and date of articles, and various other abilities that are covered in the following description.
 
-h3(sectionedit1#panel_layout). Panel Layout
+## Panel Layout
 
-The contents of the _Write_ panel are arranged in three columns: left, middle and right column (see Figure 2). The items in each region are discussed in in the following sections, beginning with the middle column, which is the _main editing area_.
+The contents of the Write panel are arranged in two columns (see Figure 2). The items in each region are discussed in in the following sections, beginning with the first column, which is the *main editing area*.
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-1-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-1-en.png
+<img src="http://docs.textpattern.io/img/administration/write-1-en.png">
 
-h3(sectionedit2#write_panel_middle_column_-_main_editing_area). Write Panel Middle Column - Main Editing Area
+## Write panel - main eiting area
 
-The middle column of the Write panel is where the base creating, drafting and editing of your article takes place. There are four components of this region (see Figure 2 in the middle column) - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below. (It should be noted that you must have content in at least one of the article content fields - _title_, _body_, or _excerpt_ - before you can save an article draft, but you do not need to have all fields filled.)
+The first column of the Write panel is where the base creating, drafting and editing of your article takes place. There are four components of this region (see Figure 2 in the middle column) - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below (it should be noted that you must have content in at least one of the article content fields - *title*, *body*, or *excerpt* - before you can save an article draft, but you do not need to have all fields filled).
 
-h4(#title). Title
+### Title
 
-This field is simply where you type the _title_ (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e. HTML or Textile, formatting will be added by an article form (see "forms":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms). The Textpattern tag that is used to output the title of articles is
+This field is simply where you type the _title_ (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e. HTML or Textile, formatting will be added by an article form (see @@forms@@). The Textpattern tag that is used to output the title of articles is:
 
-bc. <txp:title />
+~~~ html
+<txp:title />
+~~~
 
+See the [title tag](http://docs.textpattern.io/tags/title) documentation for usage.
 
-(see "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title).
-
-h4(#body). Body
+### Body
 
 This large field is where the article is actually written (or pasted, if you prefer drafting your articles in another text editor). The _Article View_ (see below) works in combination with this field. The primary article tag that is used to output the body of articles is
 
-bc. <txp:body />
+~~~ html
+<txp:body />
+~~~
 
+See the [article tag](http://docs.textpattern.io/tags/article) documentation for usage.
 
-(see "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article).
-
-h4(#excerpt). Excerpt
+### Excerpt
 
 This field is where you would add an excerpt, which is a brief bit of text about the article itself. This field is not required, but such a decision would be founded on how you ultimately wanted to establish your Web site's presentation and architecture. For example, a typical use of an excerpt is for article lists on a home page, where only a title and excerpt for each article is shown in the list; the excerpt provides a little indication about what the full article is about, and the title acts as a link to the full article itself, but when you go to the full article the excerpt is no longer seen.
 
 In Textpattern, the excerpt is not part of the article body but rather is a discrete content item managed separately; however, like the body, you can use Textile (or HTML) to format text in the excerpt. The tag used to output the article excerpt is
 
-bc. <txp:excerpt />
+~~~ html
+<txp:excerpt />
+~~~
 
+See the [excerpt tag](http://docs.textpattern.io/tags/excerpt) documentation for usage.
 
-(see "excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=excerpt).
+### Article view
 
-h4(#article_view). Article View
+See (1). At the top of the main editing area are three vertical tabs labeled 'Text', 'HTML', and 'Preview'; these provide three different views of your article-in-progress, as described below:
 
-See (1). At the right of the body field are three vertical tabs labeled “TEXT,” “HTML,” and “PREVIEW;” these provide three different views of your article-in-progress, as described below:
+* **Text**: This tab is active by default and is the one you actually draft your article in. The Text view works just like a regular text editor (not a word processor). To give your text formatting, you will have to know either Hypertext Markup Language (HTML), or use @@Textile@@. Textile is a remarkably simple text editing syntax that allows you to format text for the Web without having to know HTML (more about using Textile is provided in the section @@Textile help@@ below).
+* **HTML**: This tab will show you what your article looks like in HTML format, assuming you have used HTML or Textile to do any formatting. If you have, you will see the resulting HTML syntax incorporated in your text. You cannot do any editing in this view, it is for previewing your HTML work-in-progress only.
+* **Preview**: This tab will show you what your text will look like (whether you used HTML or Textile) once it is live on the Web. You cannot do any editing in this view, it is for previewing your work-in-progress only.
 
-* *TEXT*: As indicated by the white background of the TEXT tab in Figure 2, this tab is active by default and is the one you actually draft your article in. The TEXT view works just like a regular text editor (not a word processor). To give your text formatting, you will have to know either Hypertext Markup Language (HTML), or use "Textile":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#textile. Textile is a remarkably simple text editing syntax that allows you to format text for the Web without having to know HTML. (More about using Textile is provided in the section _Textile Help_ below).
-* *HTML*: This tab, when clicked, will show you what your article looks like in HTML format, assuming you have used HTML or Textile to do any formatting. If you have, you will see the resulting HTML syntax incorporated in your text. You cannot do any editing in this view, it is for previewing your HTML work-in-progress only.
-* *PREVIEW*: This tab, when clicked, will show you what your text will look like (whether you used HTML or Textile) once it is live on the Web. You cannot do any editing in this view, it is for previewing your work-in-progress only.
+As you write or edit an article, you may choose to do so using Textile, or you may want to add a single image to the article before posting. The *options* in the left column provide help in these and other areas, so we will go over those next.
 
-As you write or edit an article, you may choose to do so using Textile, or you may want to add a single image to the article before posting. The _options_ in the left column provide help in these and other areas, so we will go over those next.
-
-h3(sectionedit3#write_panel_left_column_-_options). Write Panel Left Column - Options
+## Write panel right column
 
 The left column of the Write panel provides _options_ for editing as well as content (see Fig. 3): “Textile Help” (2), “Advanced Options” (3), and “Recent Articles” (4); each covered below. All three links _toggle_ (show and hide) additional options, when you click them.
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-2-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-2-en.png
 
-h4(#textile_help). Textile Help
+### Textile help
 
 See (2). Since Textile is built into Textpattern, and since it is so useful for drafting articles without having to know any HTML at all, a link is provided here to assist article authors with some quick-reference to basic Textile. “Textile help” contains a short reference list of common Textile syntax (see Figure 4).
 
@@ -71,7 +83,7 @@ At the bottom of both the expanded Textile Help list (Figure 4, 2b) and the pop-
 
 "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-write_fig6.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-write_fig6.gif
 
-h4(#advanced_options). Advanced Options
+### Advanced Options
 
 See (3). The second toggle-link in the left column - _Advanced Options_ - contains a number of extended options for the particular article being edited (see Figure 6). They are described in detail here:
 
@@ -79,7 +91,7 @@ See (3). The second toggle-link in the left column - _Advanced Options_ - contai
 
 The advanced options column remembers its open/close state across sessions via cookie.
 
-h5(#article_and_excerpt_markup). Article and Excerpt Markup
+#### Article and Excerpt Markup
 
 See (3 a+b). There are two options regarding Textile-markup: _Article Markup_ (for the _body_) and _Excerpt Markup_ (for the excerpt). By default _full_ Textile-markup is turned on by _Use Textile_. You can turn off _all_ markup by choosing “Leave text untouched”. If you want a minimum of comfort you can choose _Convert linebreaks_ - single linebreaks will be converted to linebreaks and double linebreaks will get paragraphs.
 
