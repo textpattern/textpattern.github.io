@@ -3,14 +3,10 @@ layout: document
 category: Administration
 published: true
 title: "Textpattern administration"
-description: The administration side of Textpattern is where you configures and manages the website's content, architecture, presentation, and behaviour
+description: The administration side of Textpattern is where you configures and manages the website's content, architecture, presentation, and behaviour.
 tags:
   - Administration
-  - Admin-side
-  - Panels
   - Configuration
-  - Site structure
-  - Site management
 ---
 
 # Textpattern administration
@@ -43,11 +39,14 @@ The administration side is organized into three primary regions: **Content**, **
 
 The **Content** region of the administration side has seven panels out-of-the-box, of which the **Write** panel is the default.
 
+{::options parse_block_html="true" /}
+
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
     <table>
         <thead>
             <tr>
-                <th colspan="2">What the panel provides you</th>
+                <th class="t25" scope="col">Panel name</th>
+                <th scope="col">What the panel provides you</th>
             </tr>
         </thead>
         <tbody>
@@ -93,7 +92,8 @@ The **Presentation** region of the administration side has four panels out-of-th
     <table>
         <thead>
             <tr>
-                <th colspan="2">What the panel provides you</th>
+                <th class="t25" scope="col">Panel name</th>
+                <th scope="col">What the panel provides you</th>
             </tr>
         </thead>
         <tbody>
@@ -125,7 +125,8 @@ The **Admin** region of the administration side has seven panels out-of-the-box,
     <table>
         <thead>
             <tr>
-                <th colspan="2">What the panel provides you</th>
+                <th class="t25" scope="col">Panel name</th>
+                <th scope="col">What the panel provides you</th>
             </tr>
         </thead>
         <tbody>
