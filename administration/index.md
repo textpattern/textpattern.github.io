@@ -97,7 +97,7 @@ The **Presentation** region of the administration side has four panels out-of-th
         <tbody>
             <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/forms-panel"><strong>Forms</strong></a></th>
-                <td>A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" **Article** form type displays by default.</td>
+                <td>A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The "default" <strong>Article</strong> form type displays by default.</td>
             </tr>
             <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/pages-panel"><strong>Pages</strong></a></th>
@@ -176,7 +176,7 @@ The [**Extensions**](http://docs.textpattern.io/administration/extensions-region
 
 ## Changing default login panel
 
-The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the "**Write**":http://docs.textpattern.io/administration/write-panel panel from that point on, which is the default panel under the **Content** region.
+The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the [**Write**](http://docs.textpattern.io/administration/write-panel) panel from that point on, which is the default panel under the **Content** region.
 
 You can change the default landing panel to whichever one you want using the "Default administration panel" preference under the **Admin** area of the [**Preferences**](http://docs.textpattern.io/administration/preferences-panel) panel.[^2]
 
