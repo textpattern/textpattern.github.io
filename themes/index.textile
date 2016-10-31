@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: landing
 category: Themes
 published: true
 title: "Theme design"

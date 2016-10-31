@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: landing
 category: Tags
 published: true
 title: "Tag reference index"

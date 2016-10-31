@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: landing
 category: Tag basics
 published: true
 title: "Tag basics"

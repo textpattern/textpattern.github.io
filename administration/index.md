@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: landing
 category: Administration
 published: true
 title: "Textpattern administration"

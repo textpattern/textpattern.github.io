@@ -1,11 +1,11 @@
 ---
-layout: document
+layout: landing
 category: Development
 published: true
 title: "Textpattern plugin development"
 tags:
-  - development
-  - plugins
+  - Development
+  - Plugins
 ---
 
 h1. Textpattern plugin development

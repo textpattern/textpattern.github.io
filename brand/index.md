@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: landing
 category: Brand
 published: true
 title: "Textpattern brand and voice"

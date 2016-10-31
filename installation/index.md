@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: landing
 category: Installation
 published: true
 title: "Installing Textpattern"
