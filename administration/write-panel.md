@@ -19,7 +19,7 @@ The contents of the Write panel are arranged in two columns (see Figure 2). The 
 
 <img src="http://docs.textpattern.io/img/administration/write-1-en.png">
 
-## Write panel - main eiting area
+## Write panel - main editing area
 
 The first column of the Write panel is where the base creating, drafting and editing of your article takes place. There are four components of this region (see Figure 2 in the middle column) - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below (it should be noted that you must have content in at least one of the article content fields - *title*, *body*, or *excerpt* - before you can save an article draft, but you do not need to have all fields filled).
 
@@ -35,7 +35,7 @@ See the [title tag](http://docs.textpattern.io/tags/title) documentation for usa
 
 ### Body
 
-This large field is where the article is actually written (or pasted, if you prefer drafting your articles in another text editor). The _Article View_ (see below) works in combination with this field. The primary article tag that is used to output the body of articles is
+This large field is where the article is actually written (or pasted, if you prefer drafting your articles in another text editor). The _Article View_ (see below) works in combination with this field. The primary article tag that is used to output the body of articles is:
 
 ~~~ html
 <txp:body />
@@ -47,7 +47,7 @@ See the [article tag](http://docs.textpattern.io/tags/article) documentation for
 
 This field is where you would add an excerpt, which is a brief bit of text about the article itself. This field is not required, but such a decision would be founded on how you ultimately wanted to establish your Web site's presentation and architecture. For example, a typical use of an excerpt is for article lists on a home page, where only a title and excerpt for each article is shown in the list; the excerpt provides a little indication about what the full article is about, and the title acts as a link to the full article itself, but when you go to the full article the excerpt is no longer seen.
 
-In Textpattern, the excerpt is not part of the article body but rather is a discrete content item managed separately; however, like the body, you can use Textile (or HTML) to format text in the excerpt. The tag used to output the article excerpt is
+In Textpattern, the excerpt is not part of the article body but rather is a discrete content item managed separately; however, like the body, you can use Textile (or HTML) to format text in the excerpt. The tag used to output the article excerpt is:
 
 ~~~ html
 <txp:excerpt />
