@@ -1,37 +1,41 @@
 ---
 layout: search
-title: Search the documentation
+title: "Search the documentation"
 search_omit: true
 ---
 
-<h1>Search</h1>
+<div class="wrapper-inner odd">
+    <div class="container">
+        <!-- Search form -->
+        <form class="search-hero" role="search" method="get" action="/search" data-search-form>
+            <input type="search" id="q" name="q" placeholder="Search documentation…" data-search-input>
+            <input class="button-primary" type="submit" value="Search">
+        </form>
+    </div><!-- /.container -->
+</div><!-- /.wrapper-inner -->
 
-<!-- Search form -->
-<form method="get" action="/search" data-search-form>
-    <label for="q">Search term</label>
-    <input type="search" id="q" name="q" placeholder="Enter search term" data-search-input>
-    <input type="submit" value="Search">
-</form>
+<div class="wrapper-inner even">
+    <div class="container">
+        <h1>Search</h1>
 
-<!-- Search results placeholder -->
-<p data-search-found>
-    <span data-search-found-count></span> result(s) found for <q><span data-search-found-term></span></q>.
-</p>
-<div data-search-results></div>
+        <!-- Search results placeholder -->
+        <p data-search-found><span data-search-found-count></span> result(s) found for <q><span data-search-found-term></span></q>.</p>
+        <div data-search-results></div>
 
+        <!-- Search result template -->
+        <script type="text/x-template" id="search-result">
+            <article>
+                <h2><a href="##Url##">##Title##</a></h2>
+                <p>##Excerpt##</p>
+                <p><a href="##Url##">Go to the full documention...</a></p>
+            </article>
+        </script>
 
+        <!-- jQuery - required but can be moved to the <head> -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-<!-- Search result template -->
-<script type="text/x-template" id="search-result">
-    <article>
-        <h2><a href="##Url##">##Title##</a></h2>
-        <p>##Excerpt##</p>
-        <p><a href="##Url##">Go to the full documention...</a></p>
-    </article>
-</script>
+        <!-- Search script - Must appear after template -->
+        <script src="/scripts/search.js"></script>
 
-<!-- jQuery - required but can be moved to the <head> -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<!-- Search script - Must appear after template -->
-<script src="/scripts/search.js"></script>
+    </div><!-- /.container -->
+</div><!-- /.wrapper-inner -->
