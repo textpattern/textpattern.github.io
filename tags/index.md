@@ -21,7 +21,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 {::options parse_block_html="true" /}
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [article](article)
 * [article custom](article_custom)
@@ -36,7 +36,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### B
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [body](body)
 * [breadcrumb](breadcrumb)
@@ -45,7 +45,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### C
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [category](category)
 * [category list](category_list)
@@ -80,7 +80,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### E
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [else](else)
 * [email](email)
@@ -93,7 +93,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### F
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [feed link](feed_link)
 * [file download](file_download)
@@ -113,7 +113,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### H
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [hide](hide)
 
@@ -121,7 +121,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### I
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [if article author](if_article_author)
 * [if article category](if_article_category)
@@ -176,7 +176,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### L
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [lang](lang)
 * [link](link)
@@ -198,7 +198,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### M
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [meta author](meta_author)
 * [meta description](meta_description)
@@ -209,7 +209,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### N
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [newer](newer)
 * [next title](next_title)
@@ -218,7 +218,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### O
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [older](older)
 * [output form](output_form)
@@ -227,7 +227,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### P
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [page title](page_title)
 * [page url](page_url)
@@ -242,7 +242,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### R
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [recent articles](recent_articles)
 * [recent comments](recent_comments)
@@ -252,7 +252,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### S
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [search input](search_input)
 * [search result count](search_result_count)
@@ -271,7 +271,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### T
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [text](text)
 * [thumbnail](thumbnail)
@@ -282,7 +282,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### V
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [variable](variable)
 
@@ -290,7 +290,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 ### Y
 
-<div class="layout-text3col">
+<div class="layout-text4col">
 
 * [yield](yield)
 
