@@ -63,24 +63,24 @@
 
 <!-- Primary Content -->
         <main aria-label="Main content">
-            <div class="container">
 
-                <div class="wrapper-inner odd">
-                    <div class="container">
-                        <!-- Search form -->
-                        <form role="search" method="get" action="/search" data-search-form>
-                            <label for="q">Search term</label>
-                            <input type="search" name="q" placeholder="Search documentation…" data-search-input>
-                            <input class="button-primary" type="submit" value="Search">
-                        </form>
-                    </div><!-- /.container -->
-                </div><!-- /.wrapper-inner -->
+            <div class="wrapper-inner odd">
+                <div class="container">
+                    <!-- Search form -->
+                    <form role="search" method="get" action="/search" data-search-form>
+                        <label for="q">Search term</label>
+                        <input type="search" name="q" placeholder="Search documentation…" data-search-input>
+                        <input class="button-primary" type="submit" value="Search">
+                    </form>
+                </div><!-- /.container -->
+            </div><!-- /.wrapper-inner -->
 
+            <div class="wrapper-inner even">
+                <div class="container">
+                    {{ content }}
+                </div><!-- /.container -->
+            </div><!-- /.wrapper-inner -->
 
-                {{ content }}
-
-
-            </div><!-- /.container -->
         </main>
 
 
