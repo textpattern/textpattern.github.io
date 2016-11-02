@@ -137,6 +137,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [if comments error](if_comments_error)
 * [if comments preview](if_comments_preview)
 * [if custom field](if_custom_field)
+* [if description](if_description)
 * [if different](if_different)
 * [if excerpt](if_excerpt)
 * [if expired](if_expired)
