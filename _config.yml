@@ -1,3 +1,6 @@
 url: http://docs.textpattern.io
 timezone: Europe/London
 permalink: none
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
