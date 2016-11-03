@@ -65,10 +65,11 @@
         <main aria-label="Main content">
 
             <div class="wrapper-inner odd">
-                <div class="container">
-                    <!-- Search form -->
-                    <form class="search-hero" role="search" method="get" action="/search" data-search-form>
-                        <input type="search" name="q" placeholder="Search documentation…" data-search-input>
+                <div class="container" itemscope itemtype="http://schema.org/WebSite">
+                    <meta itemprop="url" content="http://docs.textpattern.io/">
+                    <form class="search-hero" role="search" method="get" action="http://docs.textpattern.io/search" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" data-search-form>
+                        <meta itemprop="target" content="http://docs.textpattern.io/search/?q={q}">
+                        <input name="q" type="search" size="32" placeholder="Search documentation…" itemprop="query-input" data-search-input>
                         <input class="button-primary" type="submit" value="Search">
                     </form>
                 </div><!-- /.container -->
