@@ -1,0 +1,25 @@
+\\n[mininav\_presentation\_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs)
+
+*Presentation &gt; Pages* is a basic editor. The page templates used by
+Textpattern are created in this editor. It's important to note that,
+like everything else, the page template is stored in the database. This
+is the primary way of getting at the template and modifying it. There is
+no physical file on the server that contains this template.
+
+Along the right hand side of the page is the list of known pages. To
+select a template for editing, click on the name and Textpattern will
+fill the editor with the selected template. Additionally, the phrase at
+the top of the box “You are editing page template *template name*” will
+change to reflect this.
+
+A Save button, located at the bottom of the edit box will save the
+template back into the Textpattern database. Additionally, there is a
+field named “Copy page as:”. To create a copy of a page template, enter
+the new name of the template in the field, and click the “Copy” button.
+The page will update and the new page will be displayed on the right
+hand side list.
+
+Also see:
+
+-   [default\_pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_pages)
+
