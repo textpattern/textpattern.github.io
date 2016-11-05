@@ -36,8 +36,6 @@ The tag will execute the contained statement if the current article/section/cate
 
 ## Attributes
 
-## Attributes
-
 Tag will accept the following attributes (**case-sensitive**):
 
 `type="context"`
