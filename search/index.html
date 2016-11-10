@@ -24,7 +24,7 @@ search_omit: true
         <div data-search-results></div>
 
         <!-- Search result template -->
-        <script type="text/x-template" id="search-result">
+        <script id="search-result" type="text/x-template">
             <article>
                 <h3><a href="##Url##">##Title##</a></h3>
                 <p>##Excerpt##</p>
@@ -33,10 +33,11 @@ search_omit: true
         </script>
 
         <!-- jQuery - required but can be moved to the <head> -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
         <!-- Search script - Must appear after template -->
-        <script src="/js/search.js"></script>
+        <script src="http://textpattern.com/assets/js/lunr.js"></script>
+        <script src="http://docs.textpattern.io/js/search.js"></script>
 
     </div><!-- /.container -->
 </div><!-- /.wrapper-inner -->
