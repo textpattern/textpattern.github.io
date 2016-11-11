@@ -11,17 +11,17 @@
     Initialisation
     ========================================================================== */
 
-var q, jsonFeedUrl = "/feeds/feed.json",
-  $searchForm = $("[data-search-form]"),
-  $searchInput = $("[data-search-input]"),
-  $resultTemplate = $("#search-result"),
-  $resultsPlaceholder = $("[data-search-results]"),
-  $foundContainer = $("[data-search-found]"),
-  $foundTerm = $("[data-search-found-term]"),
-  $foundCount = $("[data-search-found-count]"),
+var q, jsonFeedUrl = '/feeds/feed.json',
+  $searchForm = $('[data-search-form]'),
+  $searchInput = $('[data-search-input]'),
+  $resultTemplate = $('#search-result'),
+  $resultsPlaceholder = $('[data-search-results]'),
+  $foundContainer = $('[data-search-found]'),
+  $foundTerm = $('[data-search-found-term]'),
+  $foundCount = $('[data-search-found-count]'),
   allowEmpty = true,
   showLoader = true,
-  loadingClass = "is--loading",
+  loadingClass = 'is--loading',
   indexVar;
 
 
@@ -42,7 +42,7 @@ $(document).ready( function() {
  * Binds search function to form submission.
  */
 function initSearch() {
-  if(!sessionStorage.getItem("lunrIndex")) {
+  if(!sessionStorage.getItem('lunrIndex')) {
     // set the index fields
     indexVar = lunr(function () {
       this.field('id');
@@ -62,7 +62,7 @@ function initSearch() {
   }
 
   // Get search results on submission of form
-  $(document).on("submit", $searchForm, function(e) {
+  $(document).on('submit', $searchForm, function(e) {
     e.preventDefault();
     q = $searchInput.val();
     execSearch(q);
@@ -78,15 +78,15 @@ function getData(indexVar) {
   jqxhr = $.getJSON(jsonFeedUrl)
     .done(function(loaded_data){
       // save the actual data as well
-      sessionStorage.setItem("actualData", JSON.stringify(loaded_data));
+      sessionStorage.setItem('actualData', JSON.stringify(loaded_data));
       $.each(loaded_data, function(index, value){
         if ( value.search_omit != "true" ) {
-          console.log("adding to index: " + value.title);
-          indexVar.add($.extend({ "id": index }, value));
+          console.log('adding to index: ' + value.title);
+          indexVar.add($.extend({ 'id': index }, value));
         }
       });
       // store the index in sessionStorage
-      sessionStorage.setItem("lunrIndex", JSON.stringify(indexVar));
+      sessionStorage.setItem('lunrIndex', JSON.stringify(indexVar));
       // Get search results if q parameter is set in querystring
       if (getParameterByName('q')) {
         q = decodeURIComponent(getParameterByName('q'));
@@ -95,10 +95,10 @@ function getData(indexVar) {
       }
     })
     .fail( function() {
-      console.log("get json failed...");
+      console.log('get json failed...');
     })
     .always( function() {
-      console.log("finally...");
+      console.log('finally...');
     });
 }
 
@@ -108,8 +108,8 @@ function getData(indexVar) {
  * @returns search results
  */
 function getResults(q) {
-  var savedIndexData = JSON.parse(sessionStorage.getItem("lunrIndex"));
-  console.log("Indexed var from sessionStorage: " + savedIndexData);
+  var savedIndexData = JSON.parse(sessionStorage.getItem('lunrIndex'));
+  console.log('Indexed var from sessionStorage: ' + savedIndexData);
   return lunr.Index.load(savedIndexData).search(q);
 }
 
@@ -143,13 +143,13 @@ function toggleLoadingClass() {
 function processResultData(searchResults) {
   $results = [];
 
-  console.log("Search Results: " + searchResults);
+  console.log('Search Results: ' + searchResults);
   var resultsCount = 0,
       results = "";
 
   // Iterate over the results
   searchResults.forEach(function(result) {
-    var loaded_data = JSON.parse(sessionStorage.getItem("actualData"));
+    var loaded_data = JSON.parse(sessionStorage.getItem('actualData'));
     var item = loaded_data[result.ref];
     var result = populateResultContent($resultTemplate.html(), item);
         resultsCount++;
@@ -184,14 +184,16 @@ function showSearchResults(results) {
 function populateResultContent(html, item) {
   html = injectContent(html, item.title, '##Title##');
   html = injectContent(html, item.link, '##Url##');
-  if(item.excerpt)
+  if(item.excerpt) {
     html = injectContent(html, item.excerpt, '##Excerpt##');
-  else
-    html = injectContent(html, "", '##Excerpt##');
-  if( item.date)
+  } else {
+    html = injectContent(html, '', '##Excerpt##');
+  }
+  if(item.date) {
     html = injectContent(html, item.date, '##Date##');
-  else
-    html = injectContent(html, "", '##Date##');
+  } else {
+    html = injectContent(html, '', '##Date##');
+  }
   return html;
 }
 
