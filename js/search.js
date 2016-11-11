@@ -30,7 +30,6 @@ $(document).ready( function() {
   $foundContainer.hide();
   // initiate search functionality
   initSearch();
-  $('#q').focus();
 });
 
  /* ==========================================================================
