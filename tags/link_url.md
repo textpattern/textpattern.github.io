@@ -1,3 +1,12 @@
+---
+layout: document
+category: Tags
+published: true
+title: "Link url"
+tags:
+  - Link tags
+---
+
 # Link url
 
 On this page:
