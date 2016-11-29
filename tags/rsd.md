@@ -10,7 +10,7 @@ tags:
 
 # Rsd
 
-**DEPRECATED IN TEXTPATTERN 4.6.0**
+**Deprecated in Textpattern 4.6.0**
 {: .alert-block .error}
 
 On this page:

@@ -248,7 +248,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [recent articles](recent_articles)
 * [recent comments](recent_comments)
 * [related articles](related_articles)
-* [rsd](rsd) <span class="error">**DEPRECATED 4.6.0**</span>
+* [rsd](rsd) <span class="footnote error">**Deprecated 4.6.0**</span>
 
 </div>
 
