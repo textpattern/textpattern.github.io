@@ -1,6 +1,16 @@
-# Rsd [todo:pw]
+---
+layout: document
+category: Tags
+published: true
+title: "Rsd"
+tags:
+  - Article tags
+  - Deprecated tags
+---
 
-DEPRECATED 4.6.0
+# Rsd
+
+**DEPRECATED IN TEXTPATTERN 4.6.0**
 {: .alert-block .error}
 
 On this page:
