@@ -2,9 +2,9 @@
 layout: document
 category: Tags
 published: true
-title: "Rsd"
+title: "Rsd (Deprecated)"
+description: The rsd tag is deprecated - do not use.
 tags:
-  - Article tags
   - Deprecated tags
 ---
 
