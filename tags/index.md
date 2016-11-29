@@ -170,7 +170,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [image display](image_display)
 * [image index](image_index)
 * [image info](image_info)
-* [image list](image_list) <span class="footnote error">**Deprecated 4.4.0**</span>
+* [image list](image_list) <span class="footnote error">**Deprecated**</span>
 * [image url](image_url)
 * [images](images)
 
@@ -249,7 +249,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [recent articles](recent_articles)
 * [recent comments](recent_comments)
 * [related articles](related_articles)
-* [rsd](rsd) <span class="footnote error">**Deprecated 4.6.0**</span>
+* [rsd](rsd) <span class="footnote error">**Deprecated**</span>
 
 </div>
 
