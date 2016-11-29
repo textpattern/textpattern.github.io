@@ -176,6 +176,14 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 </div>
 
+### K
+
+<div class="layout-text4col">
+
+* [keywords](keywords) <span class="footnote error">**Deprecated**</span>)
+
+</div>
+
 ### L
 
 <div class="layout-text4col">
