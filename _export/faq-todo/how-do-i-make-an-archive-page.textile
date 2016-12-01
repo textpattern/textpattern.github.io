@@ -66,4 +66,4 @@ bq. @<!-- show the section -->@
 
 And change the @article_custom@ tag to sort by section:
 
-bq. @<txp:article_custom limit=99999 form="section_article" sortby="section" />@
+bq. @<txp:article_custom limit=99999 form="section_article" sort="section desc" />@

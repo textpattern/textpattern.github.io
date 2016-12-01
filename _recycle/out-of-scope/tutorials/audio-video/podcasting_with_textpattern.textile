@@ -45,8 +45,8 @@ h3(sectionedit3#the_process). The Process
 
 &lt;itunes:image href=&quot;http://throughitall.net/podcast.jpg&quot;/&gt;
 
-&lt;txp:article_custom  form=&quot;podcast&quot; sortby=&quot;Posted&quot;  sortdir=&quot;desc&quot; limit=&quot;9&quot; /&gt;
-    
+&lt;txp:article_custom  form=&quot;podcast&quot; sort=&quot;Posted desc&quot; limit=&quot;9&quot; /&gt;
+
 &lt;/channel&gt;
 
 &lt;/rss&gt;

@@ -118,14 +118,14 @@ bc. ...mydomain.com/textpattern/index.php?event=article&step=edit&ID=3
 </li>
 </ol>
 
-Set &lt;"article_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt;'s *status* attribute to “sticky”, *form* to the name you gave the form created in step 3 (this was “static”). Add attribute values for *sortdir* and *sortby* according to the display order you'd wish to achieve.
+Set &lt;"article_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt;'s *status* attribute to “sticky”, *form* to the name you gave the form created in step 3 (this was “static”).
 
 # Including articles from other sections is simple: use &lt;"article_custom_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article_custom:start&gt; instead of &lt;"article_":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp:article:start&gt;.
 
 h3(sectionedit3#examples). Examples
 
 <pre class="code">
-&lt;!-- Example will output article 1, article 2, and article 3 
+&lt;!-- Example will output article 1, article 2, and article 3
 with the format specified in the form named &quot;static&quot; --&gt;
 
 &lt;txp:article id=&quot;1&quot; form=&quot;static&quot; /&gt;
@@ -138,12 +138,12 @@ with the format specified in the form named &quot;static&quot; --&gt;
 <pre class="code">
 &lt;!-- Example will output sticky articles
 with the format specified in the form named &quot;static&quot;,
-sorted by &quot;id&quot; ascending, followed by dynamic articles 
+sorted by &quot;id&quot; ascending, followed by dynamic articles
 belonging to that section --&gt;
 
 &lt;txp:if_article_list&gt;
-&lt;txp:article form=&quot;static&quot; status=&quot;sticky&quot; sortby=&quot;id&quot; sortdir=&quot;asc&quot; /&gt;
-&lt;txp:article /&gt;   
+&lt;txp:article form=&quot;static&quot; status=&quot;sticky&quot; sort=&quot;id asc&quot; /&gt;
+&lt;txp:article /&gt;
 &lt;/txp:if_article_list&gt;
 </pre>
 

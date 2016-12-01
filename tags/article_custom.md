@@ -43,7 +43,7 @@ However, you can have the added features and functionality of `<txp:article_cust
 
 ~~~ html
 <txp:if_article_list>
-    <txp:article_custom form="myform" limit="10" category="ideas" section="article" sortby="Posted" sortdir="desc" />
+    <txp:article_custom form="myform" limit="10" category="ideas" section="article" sort="Posted desc" />
 </txp:if_article_list>
 
 <txp:if_individual_article>
