@@ -129,7 +129,7 @@ The **Admin** region of the administration side has seven panels out-of-the-box,
         </thead>
         <tbody>
             <tr>
-                <th scope="row"><a href="http://docs.textpattern.io/administration/diagnostics-panel"><strong>Diagnostics</strong></a></th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/diagnostics-panel.md”><strong>Diagnostics</strong></a></th>
                 <td>Feedback messages and data displays to troubleshoot system problems.</td>
             </tr>
             <tr>
