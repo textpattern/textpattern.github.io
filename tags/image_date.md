@@ -30,7 +30,7 @@ The **image_date** tag is a *single* tag that Textpattern will replace with the 
 Tag will accept the following attributes (**case-sensitive**):
 
 `id="integer"`
-: An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](../administration/images-panel).
+: An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](http://docs.textpattern.io/administration/images-panel).
 : **Default:** unset.
 
 `format="format string"`
@@ -39,7 +39,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** the 'Archive date format' set in preferences.
 
 `name="image name"`
-: An image to display, given by its image name as shown on the [Images administration panel](../administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
+: An image to display, given by its image name as shown on the [Images administration panel](http://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
 : **Default:** unset.
 
 ## Examples

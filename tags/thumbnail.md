@@ -22,7 +22,7 @@ On this page:
 <txp:thumbnail />
 ~~~
 
-The **thumbnail** tag is a *single* tag that Textpattern will replace with the `<img src="...">` HTML tag matching the thumbnail image of the numeric `id` assigned by Textpattern when the parent image was uploaded via the Textpattern [Images administration panel](../administration/images-panel).
+The **thumbnail** tag is a *single* tag that Textpattern will replace with the `<img src="...">` HTML tag matching the thumbnail image of the numeric `id` assigned by Textpattern when the parent image was uploaded via the Textpattern [Images administration panel](http://docs.textpattern.io/administration/images-panel).
 
 ## Attributes
 
@@ -41,7 +41,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `id="integer"`
-: Specifies the `id` assigned at upload of the image to display. Can be found on the Textpattern [Images administration panel](../administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
+: Specifies the `id` assigned at upload of the image to display. Can be found on the Textpattern [Images administration panel](http://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
 
 `link="boolean"`
 : If set, the thumbnail will be rendered as a (non-Javascript) URL link to the full-size image.
@@ -53,7 +53,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `name="image name"`
-: Specifies which image thumbnail to display by its image name as shown on the Textpattern [Images administration panel](../administration/images-panel).
+: Specifies which image thumbnail to display by its image name as shown on the Textpattern [Images administration panel](http://docs.textpattern.io/administration/images-panel).
 
 `poplink="boolean"`
 : If set, the image will be rendered in a popup window.

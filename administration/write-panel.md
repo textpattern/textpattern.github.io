@@ -69,25 +69,17 @@ As you write or edit an article, you may choose to do so using Textile, or you m
 
 The left column of the Write panel provides _options_ for editing as well as content (see Fig. 3): “Textile Help” (2), “Advanced Options” (3), and “Recent Articles” (4); each covered below. All three links _toggle_ (show and hide) additional options, when you click them.
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-2-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-2-en.png
-
 ### Textile help
 
 See (2). Since Textile is built into Textpattern, and since it is so useful for drafting articles without having to know any HTML at all, a link is provided here to assist article authors with some quick-reference to basic Textile. “Textile help” contains a short reference list of common Textile syntax (see Figure 4).
-
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-textile.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-textile.png
 
 Each Textile item shown is followed by a little brown question mark - “?” - symbolizing a help reference for that item (see Figure 4, 2a); when clicked, a pop-up window will appear with complete details about how to use the particular Textile syntax and what it will produce. For example, see Figure 5 for what appears when the help is clicked for the “header: *hn*.” item.
 
 At the bottom of both the expanded Textile Help list (Figure 4, 2b) and the pop-up help (Figure 5) there is another link called “_More_” and “_More information_,” respectively, which leads to the Textile reference site ("txstyle.org":http://textpattern.com/textile-sandbox) where complete (and advanced) information about Textile formatting can be found. Note also at the very bottom of the pop-up help window (Figure 5) there is a search feature for searching all information in the entire built-in Textpattern help.
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-write_fig6.gif!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-write_fig6.gif
-
 ### Advanced Options
 
 See (3). The second toggle-link in the left column - _Advanced Options_ - contains a number of extended options for the particular article being edited (see Figure 6). They are described in detail here:
-
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-5-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-5-en.png
 
 The advanced options column remembers its open/close state across sessions via cookie.
 
@@ -127,19 +119,14 @@ This feature could be used to power:
 
 There are two ways to assign an image to an article:
 
-<ul>
-<li>by ID (as it appears in the "Images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel panel; this only works for images managed through the Textpattern *Images* tab)</li>
-<li><p>by absolute url to the image, such as</p>
-bc. /images/imagefile.png
-
-</li>
-</ul>
+1. By ID (as it appears in the [Images administration panel](http://docs.textpattern.io/administration/images-panel); this only works for images managed through the Textpattern *Images* panel).
+2. By absolute URL to the image, such as `/images/imagefile.png`.
 
 Once the image is associated with an article, "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image is used to display it by placing this tag within the article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#form being used.
 
 h5(#url-only_title). URL-only Title
 
-See (3 g). The last advanced option, _URL-only title_ (“URL” meaning _Uniform Resource Locator_), is a very handy feature that allows you to modify the "Permalink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#permalink URL for the article as it would appear, for example, in the the address bar of a Web browser if you were using Clean URLs. This is particularly useful if the title of your article uses non-ascii characters, such as what might be involved with certain languages.
+See (3 g). The last advanced option, _URL-only title_ ('URL' meaning _Uniform Resource Locator_), is a very handy feature that allows you to modify the "Permalink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#permalink URL for the article as it would appear, for example, in the the address bar of a Web browser if you were using Clean URLs. This is particularly useful if the title of your article uses non-ascii characters, such as what might be involved with certain languages.
 
 In addition to modifying the title as it appears in the URL, this will also be the title used in the pop-up dialogue box that appears when you hover over the article title on a Web page (so long as it is displayed as a link). If you leave this field blank, the URL title will be generated from the actual article title, which is recommended for URL health reasons.
 
@@ -195,8 +182,9 @@ h5(#sticky). Sticky
 
 A _sticky_ article is also considered 'live'; however, it won't show up with your other live articles in normal article flow (such as those output with
 
-bc. <txp:article />
-
+~~~ html
+<txp:article />
+~~~
 
 ), nor will it appear in any article output lists you might have. The sole purpose of making an article sticky is to give it the status (or rather the appearance) of being static on a page. The sticky status is intended for things like “about” pages, articles that are pinned to the top of a page, or snippets of text that are displayed on pages outside the regular flow of articles.
 
@@ -209,17 +197,17 @@ To implement a sticky article you need to do two things:
 
 A code snippet might be something like this (though certainly not the only structure):
 
+~~~ html
 <pre class="code">
-&lt;txp:if_article_list&gt;
-   &lt;!-- display the sticky article --&gt;
-   &lt;txp:article form=&quot;myshortform&quot; status=&quot;sticky&quot; /&gt;
-&lt;/txp:if_article_list&gt;
+    <txp:if_article_list>
+        <txp:article form="myshortform" status="sticky" />
+    </txp:if_article_list>
 
-&lt;!-- now the regular article list --&gt;
-&lt;txp:article limit=5 /&gt;
+    <txp:article limit="5" />
 </pre>
+~~~
 
-Generally speaking, what the snippet of code above is saying is...'if an article list, display the sticky article using the form called “myshortform” - then underneath the sticky article, output regular article flow but only show the last five articles.'
+Generally speaking, what the snippet of code above is saying is: 'if an article list, display the sticky article using the form called `myshortform` - then underneath the sticky article, output regular article flow but only show the last five articles.'
 
 h4(#sort_and_display). Sort and Display
 
@@ -295,7 +283,4 @@ When considering this button situation, it probably would make more sense to jus
 
 h3(sectionedit5#messages). Messages
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-7-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-7-en.png
-
 See (12). When publishing or saving an article, Textpattern gives a feedback in the _message area_ top left beneath “Textpattern” (see Figure 11). When an article will be public (live or sticky), message reads “Article posted.” - when another Status (Draft, Hidden, Pending) is active, message is “Article saved as _status mode_.”. Sometimes there will be an additional info and need to modify something - most likely dealing with an identical URL, e.g. “Article posted. The same URL-only title is used by 2 different articles.”.
-
