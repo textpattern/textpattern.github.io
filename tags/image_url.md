@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Image url"
+description: Tag that Textpattern will replace with the URL of the current image in an images list, or a specific image.
 tags:
   - Image tags
 ---
