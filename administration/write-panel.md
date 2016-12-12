@@ -82,7 +82,7 @@ The second column of the Write panel provides _options_ for editing as well as c
 
 #### Status
 
-Public (Published) or Private (Not Published): The first and most important publishing control is the article _status_; a series of five radio button options for indicating the status of your article (Figure 8, item 5). If you select _draft_, _hidden_ or _pending_, your article will not be visible online, but if you select _live_ or _sticky_ it will be visible. The specific function of each status mode is described in following sections.
+Public (published) or Private (not published): The first and most important publishing control is the article _status_; a series of options for indicating the status of your article. If you select _Draft_, _Hidden_ or _Pending_, your article will not be visible online, but if you select _live_ or _sticky_ it will be visible. The specific function of each status mode is described in following sections.
 
 Status assignment depends on the _Privileges_ of a user. Depending on your site's publishing objectives, or number of contributors, not every user may have the same privileges, as set in the "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users panel. If multiple contributors support a site and different roles are set, it may be that some users will only be able to choose a subset of these status modes.
 
@@ -114,8 +114,8 @@ Same privilege restrictions apply for 'Freelancer' and 'Designer' as in _Live_.
 
 To implement a sticky article you need to do two things:
 
-# Write the article you want to be sticky.
-# Create a code snippet for the sticky output and insert it in the Page template you want the sticky article to appear.
+1. Write the article you want to be sticky.
+2. Create a code snippet for the sticky output and insert it in the Page template you want the sticky article to appear.
 
 A code snippet might be something like this (though certainly not the only structure):
 
