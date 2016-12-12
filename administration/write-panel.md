@@ -78,6 +78,71 @@ As you write or edit an article, you may choose to do so using Textile, or you m
 
 The second column of the Write panel provides _options_ for editing as well as content (see Fig. 3): “Textile Help” (2), “Advanced Options” (3), and “Recent Articles” (4); each covered below. All three links _toggle_ (show and hide) additional options, when you click them.
 
+### Sort and display
+
+#### Status
+
+Public (Published) or Private (Not Published): The first and most important publishing control is the article _status_; a series of five radio button options for indicating the status of your article (Figure 8, item 5). If you select _draft_, _hidden_ or _pending_, your article will not be visible online, but if you select _live_ or _sticky_ it will be visible. The specific function of each status mode is described in following sections.
+
+Status assignment depends on the _Privileges_ of a user. Depending on your site's publishing objectives, or number of contributors, not every user may have the same privileges, as set in the "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users panel. If multiple contributors support a site and different roles are set, it may be that some users will only be able to choose a subset of these status modes.
+
+##### Draft
+
+The _Draft_ status means pretty much what it implies: your article is not finished, it is a draft. Select this mode if you are starting an article (or revising an existing article) but you do not expect to finish it in one sitting. By selectng draft your article will be saved to the database, but it will not be made live to the world. You can come back anytime to work on the draft article, and change the status when you are ready.
+
+##### Hidden
+
+The _Hidden_ status might seem a bit odd, but it does have a purpose - think of it as a gaff hook to pull a bad actor off stage; in this case a 'bad' (of course it needn't be bad) article offline. In Textpattern, the Hidden status is a way to pull a live article from being viewable to the world without deleting it so that it might be revamped (or held in limbo) for an *undetermined* amount of time (or until a decision is made as to whether or not is should just be deleted). While _Draft_ is used as a document status for _revision control_ and _publishing workflow_, _Hidden_ is merely a quick way to pull an article out of circulation. Note: If you have a _determined_ time period for an article to be public, it might be better to set it “Live” and use _Publish date_ and _Expire date_ as needed.
+
+##### Pending
+
+The status of _Pending_ is primarily intended for _versioning activities_ - for example where multiple contributors are working on the same article, or where someone can finish an article, but where the article can _only be published_ by an authorized user with a particular user role. 'Pending' is the final Status that can be assigned by 'Freelancer' and 'Designer' - it indicates, that an authorized user may start reviewing, editing and publishing it.
+
+As long as the article is in one of Draft, Hidden, or Pending mode, changes made to its title are assigned to its URL-only title. If you, however, gave the article intentionally a URL-only title thats different from the article's title, this field remains untouched.
+
+##### Live
+
+A _Live_ article status means that when you click the 'Publish' button (all new articles will use a button that reads 'Publish', after that, the button will read 'Save') the article will be posted for the world to see, so you generally want your article in question to be pretty much done if you select this mode. (This status and the next one, _sticky_, are the only two publicly-viewable modes.) However, you can always unpublish an article that has been made live by coming back to the Write panel and selecting the _Hidden_ status above (or deleting it altogether).
+
+For those privileges who have the rights to assign _Live_, this button will be selected by default whenever you start a new article. 'Freelancer' and 'Designer' aren't privileged to assign 'Live'. Their articles have to be published by higher privileges. Once published they cannot modify even own articles any longer.
+
+##### Sticky
+
+A _Sticky_ article is also considered 'live'; however, it won't show up with your other live articles in normal article flow (such as those output with `<txp:article />`), nor will it appear in any article output lists you might have. The sole purpose of making an article sticky is to give it the status (or rather the appearance) of being static on a page. The sticky status is intended for things like 'about' pages, articles that are pinned to the top of a page, or snippets of text that are displayed on pages outside the regular flow of articles.
+
+Same privilege restrictions apply for 'Freelancer' and 'Designer' as in _Live_.
+
+To implement a sticky article you need to do two things:
+
+# Write the article you want to be sticky.
+# Create a code snippet for the sticky output and insert it in the Page template you want the sticky article to appear.
+
+A code snippet might be something like this (though certainly not the only structure):
+
+~~~ html
+<pre class="code">
+    <txp:if_article_list>
+        <txp:article form="myshortform" status="sticky" />
+    </txp:if_article_list>
+
+    <txp:article limit="5" />
+</pre>
+~~~
+
+Generally speaking, what the snippet of code above is saying is: "if an article list, display the sticky article using the form called `myshortform` - then underneath the sticky article, output regular article flow but only show the last five articles."
+
+#### Section
+
+Section Assignment See (6). In Textpattern each article must be assigned to a _Section_ (see "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections). This control provides a drop-down menu to select the Section that you want. If you need to create or modify a section, you can get to the "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections panel using the “edit” link. For a new article the _default section_ is automatically preselected. You can override this assignment by selecting another Section of your choosing. (For saved articles the assigned section will be selected and displayed in the drop-down menu.)
+
+There are two Sections provided in a default install of Textpattern: “article” (which here is the “default section” mentioned above, see Figure 9, number 3; it is used for Textpattern's base article flow), and “about”. These sections are simply provided because these are often desired in Web sites and the folks at Textpattern are saving you a small step by creating them for you; you can use them (though you may have to modify their settings depending on what you want) or delete them, it is up to you.
+
+Sections basically control in what area of your Web site your article will be displayed. You can use Sections in combination with Categories to create very diverse content management strategies, giving your Web site visitors the impression of a structured, hierarchical Web site architecture. More description of Sections is out of scope here, but review later documentation chapters for more insight.
+
+##### Category
+
+Assign Categories See (6). This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an “edit” link. Assigning categories of course only works if _there is_ at least one article category in the "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories panel (there are three sample ones in a default install). The “edit” link will open the Categories panel, where you can create or edit categories. The drop-down menus will both list _all_ categories by their _title_. This basically allows you to put an article in up to two different categories, which you can then manipulate later according to your planned site architecture and content presentation (such level of discussion is out of scope here). (For saved articles this control will show existing category assignments.)
+
 ### Textile help
 
 See (2). Since Textile is built into Textpattern, and since it is so useful for drafting articles without having to know any HTML at all, a link is provided here to assist article authors with some quick-reference to basic Textile. “Textile help” contains a short reference list of common Textile syntax (see Figure 4).
@@ -154,81 +219,6 @@ h4(#panel_modenew_or_saved_posted_article). Panel Mode: New or Saved/Posted Arti
 There are two different states for the right column _appearance_ depending on whether the article is _new_ (see Fig. 8 and 9) or already has been _saved_ before (see Fig. 10 near bottom). The settings themselves are much the same, so they will be explained as they appear for a new article, and differences pointed out in brackets (saved:_alternate_). Some additional elements we'll point out in “Write navigation” and “'Publish' or 'Save' Button”.
 
 There are essentially five different publishing controls to address (see Figures 8 and 9): Status, Sort and Display, Comments, Timestamp and Expires.
-
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-3-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-3-en.png
-
-h4(#status). Status
-
-Public (Published) or Private (Not Published): The first and most important publishing control is the article _status_; a series of five radio button options for indicating the status of your article (Figure 8, item 5). If you select _draft_, _hidden_ or _pending_, your article will not be visible online, but if you select _live_ or _sticky_ it will be visible. The specific function of each status mode is described in following sections.
-
-Status assignment depends on the _Privileges_ of a user. Depending on your site's publishing objectives, or number of contributors, not every user may have the same privileges, as set in the "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users panel. If multiple contributors support a site and different roles are set, it may be that some users will only be able to choose a subset of these status modes.
-
-h5(#draft). Draft
-
-The _Draft_ status means pretty much what it implies: your article is not finished, it is a draft. Select this mode if you are starting an article (or revising an existing article) but you do not expect to finish it in one sitting. By selectng draft your article will be saved to the database, but it will not be made live to the world. You can come back anytime to work on the draft article, and change the status when you are ready.
-
-h5(#hidden). Hidden
-
-The _Hidden_ status might seem a bit odd, but it does have a purpose - think of it as a gaff hook to pull a bad actor off stage; in this case a “bad” (of course it needn't be “bad”) article offline. In Textpattern, the Hidden status is a way to pull a live article from being viewable to the world without deleting it so that it might be revamped (or held in limbo) for an *undetermined* amount of time (or until a decision is made as to whether or not is should just be deleted). While _Draft_ is used as a document status for _revision control_ and _publishing workflow_, _Hidden_ is merely a quick way to pull an article out of circulation. Note: If you have a _determined_ time period for an article to be public, it might be better to set it “Live” and use _Timestamp_ and _Expires_ as needed.
-
-h5(#pending). Pending
-
-The status of _Pending_ is primarily intended for _versioning activities_ - for example where multiple contributors are working on the same article, or where someone can finish an article, but where the article can _only be published_ by an authorized user with a particular user role. “Pending” is the final Status that can be assigned by “Freelancer” and “Designer” - it indicates, that an authorized user may start reviewing, editing and publishing it.
-
-As long as the article is in one of Draft, Hidden, or Pending mode, changes made to its title are assigned to its URL-only title. If you, however, gave the article intentionally a URL-only title thats different from the article's title, this field remains untouched.
-
-h5(#live). Live
-
-A _live_ article status means that when you click the “Publish” button (all new articles will use a button that reads “Publish”, after that, the button will read “Save”) the article will be posted for the world to see, so you generally want your article in question to be pretty much done if you select this mode. (This status and the next one, _sticky_, are the only two publicly-viewable modes.) However, you can always unpublish an article that has been made live by coming back to the _write_ panel and selecting the _Hidden_ status above (or deleting it altogether).
-
-For those privileges who have the rights to assign _Live_, this button will be selected by default whenever you start a new article. “Freelancer” and “Designer” aren't privileged to assign “Live”. Their articles have to be published by higher privileges. Once published they cannot modify even own articles any longer.
-
-h5(#sticky). Sticky
-
-A _sticky_ article is also considered 'live'; however, it won't show up with your other live articles in normal article flow (such as those output with
-
-~~~ html
-<txp:article />
-~~~
-
-), nor will it appear in any article output lists you might have. The sole purpose of making an article sticky is to give it the status (or rather the appearance) of being static on a page. The sticky status is intended for things like “about” pages, articles that are pinned to the top of a page, or snippets of text that are displayed on pages outside the regular flow of articles.
-
-Same privilege restrictions apply for “Freelancer” and “Designer” as in _Live_.
-
-To implement a sticky article you need to do two things:
-
-# Write the article you want to be sticky.
-# Create a code snippet for the sticky output and insert it in the Page template you want the sticky article to appear.
-
-A code snippet might be something like this (though certainly not the only structure):
-
-~~~ html
-<pre class="code">
-    <txp:if_article_list>
-        <txp:article form="myshortform" status="sticky" />
-    </txp:if_article_list>
-
-    <txp:article limit="5" />
-</pre>
-~~~
-
-Generally speaking, what the snippet of code above is saying is: 'if an article list, display the sticky article using the form called `myshortform` - then underneath the sticky article, output regular article flow but only show the last five articles.'
-
-h4(#sort_and_display). Sort and Display
-
-h5(#category). Category
-
-Assign Categories See (6). This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an “edit” link. Assigning categories of course only works if _there is_ at least one article category in the "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories panel (there are three sample ones in a default install). The “edit” link will open the Categories panel, where you can create or edit categories. The drop-down menus will both list _all_ categories by their _title_. This basically allows you to put an article in up to two different categories, which you can then manipulate later according to your planned site architecture and content presentation (such level of discussion is out of scope here). (For saved articles this control will show existing category assignments.)
-
-h5(#section). Section
-
-Section Assignment See (6). In Textpattern each article must be assigned to a _Section_ (see "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections). This control provides a drop-down menu to select the Section that you want. If you need to create or modify a section, you can get to the "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections panel using the “edit” link. For a new article the _default section_ is automatically preselected. You can override this assignment by selecting another Section of your choosing. (For saved articles the assigned section will be selected and displayed in the drop-down menu.)
-
-There are two Sections provided in a default install of Textpattern: “article” (which here is the “default section” mentioned above, see Figure 9, number 3; it is used for Textpattern's base article flow), and “about”. These sections are simply provided because these are often desired in Web sites and the folks at Textpattern are saving you a small step by creating them for you; you can use them (though you may have to modify their settings depending on what you want) or delete them, it is up to you.
-
-Sections basically control in what area of your Web site your article will be displayed. You can use Sections in combination with Categories to create very diverse content management strategies, giving your Web site visitors the impression of a structured, hierarchical Web site architecture. More description of Sections is out of scope here, but review later documentation chapters for more insight.
-
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-4-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-4-en.png
 
 h4(#more). More
 
