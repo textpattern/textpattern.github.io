@@ -15,12 +15,12 @@ tags:
 
 On this page:
 
-* [Write panel layout - main editing area](#write-panel-layout-main-editing-area)
+* [Write panel layout: main editing area](#write-panel-layout-main-editing-area)
   * [Title](#title)
   * [Body](#body)
   * [Excerpt](#excerpt)
   * [Article view](#article-view)
-* [Write panel layout - secondary options area](#write-panel-layout-secondary-options-area)
+* [Write panel layout: secondary options area](#write-panel-layout-secondary-options-area)
 
 ## Panel Layout: main editing area
 
