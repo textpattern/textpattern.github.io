@@ -26,9 +26,9 @@ On this page:
 
 The contents of the Write panel are arranged in two columns (see Figure 1). The items in each region are discussed in in the following sections, beginning with the first column, which is the *main editing area*.
 
-The first column of the Write panel is where the main creating, drafting and editing of your article takes place. There are four components of this region - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below (it should be noted that you must have content in at least one of the article content fields - *title*, *body*, or *excerpt* - before you can save an article draft, but you do not need to have all fields filled).
-
 <img alt="Figure 1" src="http://docs.textpattern.io/img/administration/write-1-en.png">
+
+The first column of the Write panel is where the main creating, drafting and editing of your article takes place. There are four components of this region - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below (it should be noted that you must have content in at least one of the article content fields - *title*, *body*, or *excerpt* - before you can save an article draft, but you do not need to have all fields filled).
 
 ### Title
 
