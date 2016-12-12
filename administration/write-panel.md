@@ -22,7 +22,7 @@ On this page:
   * [Article view](#article-view)
 * [Write panel layout - secondary options area](#write-panel-layout-secondary-options-area)
 
-## Panel Layout - main editing area
+## Panel Layout: main editing area
 
 The contents of the Write panel are arranged in two columns (see Figure 1). The items in each region are discussed in in the following sections, beginning with the first column, which is the *main editing area*.
 
@@ -74,7 +74,7 @@ At the top of the main editing area are three vertical tabs labeled 'Text', 'HTM
 
 As you write or edit an article, you may choose to do so using Textile, or you may want to add a single image to the article before posting. The *options* in the left column provide help in these and other areas, so we will go over those next.
 
-## Write panel - secondary options area
+## Write panel: secondary options area
 
 The second column of the Write panel provides _options_ for editing as well as content (see Fig. 3): “Textile Help” (2), “Advanced Options” (3), and “Recent Articles” (4); each covered below. All three links _toggle_ (show and hide) additional options, when you click them.
 
