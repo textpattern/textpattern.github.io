@@ -15,12 +15,12 @@ tags:
 
 On this page:
 
-* [Write panel layout: main editing area](#write-panel-layout-main-editing-area)
+* [Write panel layout: main editing area](#panel-layout-main-editing-area)
   * [Title](#title)
   * [Body](#body)
   * [Excerpt](#excerpt)
   * [Article view](#article-view)
-* [Write panel layout: secondary options area](#write-panel-layout-secondary-options-area)
+* [Write panel layout: secondary options area](#panel-layout-secondary-options-area)
 
 ## Panel Layout: main editing area
 
@@ -28,7 +28,7 @@ The contents of the Write panel are arranged in two columns (see Figure 1). The 
 
 <img alt="Figure 1" src="http://docs.textpattern.io/img/administration/write-1-en.png">
 
-The first column of the Write panel is where the main creating, drafting and editing of your article takes place. There are four components of this region - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below (it should be noted that you must have content in at least one of the article content fields - *title*, *body*, or *excerpt* - before you can save an article draft, but you do not need to have all fields filled).
+The first column of the Write panel is where the main creating, drafting and editing of your article takes place. There are four components of this region - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below (it should be noted that you must have content in at least one of the article content fields - **Title**, **Body**, or **Excerpt** - before you can save an article draft, but you do not need to have all fields filled).
 
 ### Title
 
@@ -133,15 +133,19 @@ Generally speaking, what the snippet of code above is saying is: "if an article 
 
 #### Section
 
-Section Assignment See (6). In Textpattern each article must be assigned to a _Section_ (see "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections). This control provides a drop-down menu to select the Section that you want. If you need to create or modify a section, you can get to the "sections":/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections panel using the “edit” link. For a new article the _default section_ is automatically preselected. You can override this assignment by selecting another Section of your choosing. (For saved articles the assigned section will be selected and displayed in the drop-down menu.)
+In Textpattern each article must be assigned to a _Section_ (see @@Sections@@). This control provides a drop-down menu to select the Section that you want. If you need to create or modify a section, you can get to the Sections panel using the 'Edit' link.
 
-There are two Sections provided in a default install of Textpattern: “article” (which here is the “default section” mentioned above, see Figure 9, number 3; it is used for Textpattern's base article flow), and “about”. These sections are simply provided because these are often desired in Web sites and the folks at Textpattern are saving you a small step by creating them for you; you can use them (though you may have to modify their settings depending on what you want) or delete them, it is up to you.
+For a new article the _default section_ is automatically preselected. You can override this assignment by selecting another Section of your choosing (for saved articles the assigned section will be selected and displayed in the drop-down menu).
 
-Sections basically control in what area of your Web site your article will be displayed. You can use Sections in combination with Categories to create very diverse content management strategies, giving your Web site visitors the impression of a structured, hierarchical Web site architecture. More description of Sections is out of scope here, but review later documentation chapters for more insight.
+There is a Sections provided in a default install of Textpattern: **Article**, which here is the 'default section' mentioned above; it is used for Textpattern's base article flow. This section is simply provided because it is often desired in a website and the folks at Textpattern are saving you a small step by creating it for you; you can use it (though you may have to modify settings depending on what you want) or delete it - it's up to you!
 
-##### Category
+Sections basically control in what area of your website your article will be displayed. You can use Sections in combination with Categories to create very diverse content management strategies, giving your website visitors the impression of a structured, hierarchical site architecture. More description of Sections is out of scope here, but review later documentation chapters for more insight.
 
-Assign Categories See (6). This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an “edit” link. Assigning categories of course only works if _there is_ at least one article category in the "categories":/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories panel (there are three sample ones in a default install). The “edit” link will open the Categories panel, where you can create or edit categories. The drop-down menus will both list _all_ categories by their _title_. This basically allows you to put an article in up to two different categories, which you can then manipulate later according to your planned site architecture and content presentation (such level of discussion is out of scope here). (For saved articles this control will show existing category assignments.)
+#### Category
+
+This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an 'Edit' link. Assigning categories of course only works if _there is_ at least one article category in the @@categories panel@@ (there are three sample ones in a default install). The 'Edit' link will open the Categories panel, where you can create or edit categories.
+
+The drop-down menus will both list _all_ categories by their _title_. This basically allows you to put an article in up to two different categories, which you can then manipulate later according to your planned site architecture and content presentation (such level of discussion is out of scope here). For saved articles this control will show existing category assignments.
 
 ### Textile help
 
