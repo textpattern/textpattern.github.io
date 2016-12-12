@@ -13,15 +13,22 @@ tags:
 
 **Write** is the default panel opened when you log into Textpattern's admin-side (see Figure 1). This panel reveals the various features for managing articles on your website, which includes creating new articles, editing existing articles, assigning (or reassigning) articles to sections and categories, setting the time and date of articles, and various other abilities that are covered in the following description.
 
-## Panel Layout
+On this page:
 
-The contents of the Write panel are arranged in two columns (see Figure 2). The items in each region are discussed in in the following sections, beginning with the first column, which is the *main editing area*.
+* [Write panel layout - main editing area](#write-panel-layout-main-editing-area)
+  * [Title](#title)
+  * [Body](#body)
+  * [Excerpt](#excerpt)
+  * [Article view](#article-view)
+* [Write panel layout - secondary options area](#write-panel-layout-secondary-options-area)
 
-<img src="http://docs.textpattern.io/img/administration/write-1-en.png">
+## Panel Layout - main editing area
 
-## Write panel - main editing area
+The contents of the Write panel are arranged in two columns (see Figure 1). The items in each region are discussed in in the following sections, beginning with the first column, which is the *main editing area*.
 
-The first column of the Write panel is where the base creating, drafting and editing of your article takes place. There are four components of this region (see Figure 2 in the middle column) - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below (it should be noted that you must have content in at least one of the article content fields - *title*, *body*, or *excerpt* - before you can save an article draft, but you do not need to have all fields filled).
+The first column of the Write panel is where the main creating, drafting and editing of your article takes place. There are four components of this region - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below (it should be noted that you must have content in at least one of the article content fields - *title*, *body*, or *excerpt* - before you can save an article draft, but you do not need to have all fields filled).
+
+<img alt="Figure 1" src="http://docs.textpattern.io/img/administration/write-1-en.png">
 
 ### Title
 
@@ -57,7 +64,9 @@ See the [excerpt tag](http://docs.textpattern.io/tags/excerpt) documentation for
 
 ### Article view
 
-See (1). At the top of the main editing area are three vertical tabs labeled 'Text', 'HTML', and 'Preview'; these provide three different views of your article-in-progress, as described below:
+At the top of the main editing area are three vertical tabs labeled 'Text', 'HTML', and 'Preview'; these provide three different views of your article-in-progress, as described below:
+
+<img alt="Figure 2" src="http://docs.textpattern.io/img/administration/write-2-en.png">
 
 * **Text**: This tab is active by default and is the one you actually draft your article in. The Text view works just like a regular text editor (not a word processor). To give your text formatting, you will have to know either Hypertext Markup Language (HTML), or use @@Textile@@. Textile is a remarkably simple text editing syntax that allows you to format text for the Web without having to know HTML (more about using Textile is provided in the section @@Textile help@@ below).
 * **HTML**: This tab will show you what your article looks like in HTML format, assuming you have used HTML or Textile to do any formatting. If you have, you will see the resulting HTML syntax incorporated in your text. You cannot do any editing in this view, it is for previewing your HTML work-in-progress only.
@@ -65,9 +74,9 @@ See (1). At the top of the main editing area are three vertical tabs labeled 'Te
 
 As you write or edit an article, you may choose to do so using Textile, or you may want to add a single image to the article before posting. The *options* in the left column provide help in these and other areas, so we will go over those next.
 
-## Write panel right column
+## Write panel - secondary options area
 
-The left column of the Write panel provides _options_ for editing as well as content (see Fig. 3): “Textile Help” (2), “Advanced Options” (3), and “Recent Articles” (4); each covered below. All three links _toggle_ (show and hide) additional options, when you click them.
+The second column of the Write panel provides _options_ for editing as well as content (see Fig. 3): “Textile Help” (2), “Advanced Options” (3), and “Recent Articles” (4); each covered below. All three links _toggle_ (show and hide) additional options, when you click them.
 
 ### Textile help
 
@@ -87,7 +96,7 @@ The advanced options column remembers its open/close state across sessions via c
 
 See (3 a+b). There are two options regarding Textile-markup: _Article Markup_ (for the _body_) and _Excerpt Markup_ (for the excerpt). By default _full_ Textile-markup is turned on by _Use Textile_. You can turn off _all_ markup by choosing “Leave text untouched”. If you want a minimum of comfort you can choose _Convert linebreaks_ - single linebreaks will be converted to linebreaks and double linebreaks will get paragraphs.
 
-h5(#override_form). Override Form
+#### Override Form
 
 See (3 c). The option “Override Form” offers the possibility that single articles may use a different _Form_ than the overall form specified. Let's look at an example for a possible use of this.
 
@@ -95,7 +104,7 @@ In your blog, you normally publish articles which are pure text. So your default
 
 This way, just this article will use the form “garden_image” for being displayed whereas all other articles will continue to use the default form.
 
-h5(#custom_fields). Custom Fields
+### Custom Fields
 
 Custom fields are "defined in Advanced preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#custom_fields, which then makes them available for use here in the left column of the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever tag constructs you create using the "custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field (and possibly the "if_custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_custom_field) tag(s).
 
@@ -103,19 +112,15 @@ h5(#keywords). Keywords
 
 See (3 e). The next option, _Keywords_, allows you to specify a comma-separated list of words that relate to your article. This list might be used to generate a list of keywords for search engines (using the "meta_keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag). You may also use keywords to help locate articles later by essentially 'tagging' your articles with related words so that - when searching within Textpattern - you can more easily find what you are looking for. To add keywords, simply type them into the text field provided and separate them with a comma.
 
-h5(#article_image). Article Image
+#### Article Image
 
 See (3 f). The _Article image_ option enables associating one or more images with an article, as opposed to entering the image into the article itself, and is used in conjunction with "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image. This allows images to appear in the same place across many articles, yet still be easily changed later.
-
-= What Can Be Done With This? =
 
 This feature could be used to power:
 
 * A photoblog, where a photo or gallery of shots is associated with an article, which might contain details about where the images were taken, or what kind of equipment was used to take it.
 * A portfolio, where an illustration or a screenshot of a website is associated with an article, which contains details about the project or the client involved.
 * A news site, where each article has, optionally, one main image that is always placed at the top of the article, and maybe other images used throughout the text (you can use the _offset_ attribute of the "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images tag to skip images you have already displayed).
-
-= How To Use It =
 
 There are two ways to assign an image to an article:
 
