@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Link"
+description: The link tag is a single tag which is used to return an HTML hyperlink defined in the Links administration panel.
 tags:
   - Link tags
 ---
@@ -22,7 +23,7 @@ On this page:
 <txp:link />
 ~~~
 
-The **link** tag is a *single* tag which is used to return an HTML hyperlink defined in the [Links administration panel](../administration/links-panel). It uses the 'Title' field as the link's text.
+The **link** tag is a *single* tag which is used to return an HTML hyperlink defined in the [Links administration panel](http://docs.textpattern.io/administration/links-panel). It uses the 'Title' field as the link's text.
 
 This tag is used in 'links' type forms or inside the [linklist](linklist) container tag.
 
@@ -31,10 +32,10 @@ This tag is used in 'links' type forms or inside the [linklist](linklist) contai
 Tag will accept the following attributes (**case-sensitive**):
 
 `id="integer"`
-: Specifies the `id`, assigned at creation of the link, to display. Can be found on the [Links administration panel](../administration/links-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
+: Specifies the `id`, assigned at creation of the link, to display. Can be found on the [Links administration panel](http://docs.textpattern.io/administration/links-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
 
 `name="link name"`
-: Specifies which link to display by its link `name` as shown on the [Links administration panel](../administration/links-panel).
+: Specifies which link to display by its link `name` as shown on the [Links administration panel](http://docs.textpattern.io/administration/links-panel).
 
 `rel="relation"`
 : [HTML rel attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) to be applied to link.

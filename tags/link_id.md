@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Link id"
+description: The link_id tag is a single tag which returns the numerical ID of the link.
 tags:
   - Link tags
 ---

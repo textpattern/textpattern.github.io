@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Linklist"
+description: The linklist tag is used to produce a list of links from the predefined list created on the Links administration panel.
 tags:
   - Link tags
   - List tags
@@ -23,7 +24,7 @@ On this page:
 <txp:linklist />
 ~~~
 
-The **linklist** tag is a *single* or a *container* tag which is used to produce a list of links from the predefined list created on the [Links administration panel](../administration/links-panel).
+The **linklist** tag is a *single* or a *container* tag which is used to produce a list of links from the predefined list created on the [Links administration panel](http://docs.textpattern.io/administration/links-panel).
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 
@@ -56,7 +57,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `plainlinks`.
 
 `id="integer"`
-: Filter the links by this list of `id`s assigned at link creation time. The IDs can be found on the [Links administration panel](../administration/links-panel).
+: Filter the links by this list of `id`s assigned at link creation time. The IDs can be found on the [Links administration panel](http://docs.textpattern.io/administration/links-panel).
 : **Default:** unset.
 
 `limit="integer"`

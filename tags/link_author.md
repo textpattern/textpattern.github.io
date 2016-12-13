@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Link author"
+description: Tag that Textpattern will replace with the author's name associated with the current link in a list.
 tags:
   - Link tags
 ---

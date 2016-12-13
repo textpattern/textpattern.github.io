@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Link to home"
+description: The link_to_home tag is primarily a container tag that returns a link to the site's home page.
 tags:
   - Navigation tags
 ---
