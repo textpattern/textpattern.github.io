@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Search result date"
+description: This tag will provide the article posted date as returned by the search function.
 tags:
   - Search tags
 ---

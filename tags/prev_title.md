@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Prev title"
+description: The prev_title tag is a single tag which Textpattern will replace with the title of the previous article in the sort order.
 tags:
   - Article tags
 ---
@@ -21,7 +22,7 @@ On this page:
 <txp:prev_title />
 ~~~
 
-The **prev_title** tag is a *single* tag which Textpattern will replace with the name (text) of the previous article in the sort order.
+The **prev_title** tag is a *single* tag which Textpattern will replace with the title of the previous article in the sort order.
 
 The container tag [link_to_prev](link_to_prev) wraps the text or tag and assigns the link.
 

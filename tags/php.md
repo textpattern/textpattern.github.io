@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Php"
+description: The php tag is a container tag that provides output of PHP code in Textpattern forms/pages.
 tags:
   - Programmer tags
 ---

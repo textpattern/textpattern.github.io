@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Permlink"
+description: The permlink can be used as a single tag or a container tag to return the permanent URL of the article being displayed.
 tags:
   - Article tags
   - Navigation tags
@@ -22,7 +23,7 @@ On this page:
 <txp:permlink>
 ~~~
 
-The **permlink** can be used as a *single* tag or a *container* tag to return the permanent url of the article being displayed.
+The **permlink** can be used as a *single* tag or a *container* tag to return the permanent URL of the article being displayed.
 
 If used as a container tag, the HTML required to output a hyperlink is returned; if used as a single tag, only the URL itself is returned.
 

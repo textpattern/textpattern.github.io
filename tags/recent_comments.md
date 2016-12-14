@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Recent comments"
+description: Textpattern will replace this tag with a list of permanent links to recent comments.
 tags:
   - Comments tags
 ---

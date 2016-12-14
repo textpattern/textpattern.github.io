@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Popup"
+description: Textpattern will replace this tag with a popup selector for browsing by section or category.
 tags:
   - Navigation tags
 ---

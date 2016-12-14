@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Related articles"
+description: The related_articles tag is used to produce a list of related (by category) articles.
 tags:
   - Article tags
   - List tags
