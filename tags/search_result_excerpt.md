@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Search result excerpt"
+description: The search_result_excerpt tag will show the occurrence of the search term with some surrounding context.
 tags:
   - Search tags
 ---
@@ -22,7 +23,7 @@ On this page:
 <txp:search_result_excerpt />
 ~~~
 
-The **search_result_excerpt** tag is a *single* tag. The tag will show the occurrence of the search term with some surrounding context.
+The **search_result_excerpt** tag is a *single* tag that will show the occurrence of the search term with some surrounding context.
 
 ## Attributes
 

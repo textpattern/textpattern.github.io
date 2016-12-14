@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Site slogan"
+description: The site_slogan tag is a single tag which is used to output the site's tagline.
 tags:
   - Markup tags
 ---
@@ -21,7 +22,7 @@ On this page:
 <txp:site_slogan />
 ~~~
 
-The **site_slogan** is a *single* tag which is used to output the site's tagline (labeled as 'Site slogan' in the [Preferences administration panel](../administration/preferences-panel)).
+The **site_slogan** is a *single* tag which is used to output the site's tagline (labeled as 'Site slogan' in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel)).
 
 The slogan is a brief (255 characters maximum) tagline or description of your site which can be used, for example, in XML feeds.
 

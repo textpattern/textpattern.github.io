@@ -43,9 +43,21 @@ This tag has no attributes.
 
 ### Example 1: Identify first image in an image list
 
-[todo:pw]
+~~~ html
+<txp:images break="" wraptag="ul" sort="date desc">
+    <txp:if_first_image>
+        <li class="latest">
+            <txp:image /> (Latest photo)
+        </li>
+    <txp:else />
+        <li>
+            <txp:image />
+        </li>
+    </txp:if_first_image>
+</txp:images>
+~~~
 
-Other tags used:
+Other tags used: [else](else), [image](image), [images](images).
 
 ## Genealogy
 

@@ -39,6 +39,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Tag use basics](tags/tag-basics/) (a good place to start)
   * [Parsing tag attributes](tags/tag-basics/parsing-tag-attributes) (sorcery)
 * [Tags reference](tags/) (the complete suite)
+* [Tags in development](tags/tags-in-development) (upcoming tags)
 
 </div>
 <div class="layout-3col">

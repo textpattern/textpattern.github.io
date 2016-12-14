@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Search result url"
+description: The search_result_url tag will provide a hyperlinked URL to an article as returned by the search function.
 tags:
   - Search tags
 ---
@@ -21,7 +22,7 @@ On this page:
 <txp:search_result_url />
 ~~~
 
-The **search_result_url** tag is a *single* tag. This tag will provide a hyperlinked URL to an article as returned by the search function.
+The **search_result_url** tag is a *single* tag that will provide a hyperlinked URL to an article as returned by the search function.
 
 ## Attributes
 

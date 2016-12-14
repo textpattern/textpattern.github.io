@@ -61,7 +61,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: **Default:** `li` or `div`, depends upon [Preferences administration panel](../administration/preferences-panel) setting for 'Present comments as a numbered list?'.
+: **Default:** `li` or `div`, depends upon [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel) setting for 'Present comments as a numbered list?'.
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
@@ -69,7 +69,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** `ol` or unset, depends upon [Preferences administration panel](../administration/preferences-panel) setting for 'Present comments as a numbered list?'.
+: **Default:** `ol` or unset, depends upon [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel) setting for 'Present comments as a numbered list?'.
 
 ## Examples
 

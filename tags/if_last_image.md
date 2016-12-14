@@ -43,7 +43,21 @@ This tag has no attributes.
 
 ### Example 1: Identify last image in an image list
 
-[todo:pw]
+~~~ html
+<txp:images break="" wraptag="ul" sort="date desc">
+    <txp:if_last_image>
+        <li class="earliest">
+            <txp:image /> (Earliest photo)
+        </li>
+    <txp:else />
+        <li>
+            <txp:image />
+        </li>
+    </txp:if_last_image>
+</txp:images>
+~~~
+
+Other tags used: [else](else), [image](image), [images](images).
 
 Other tags used:
 

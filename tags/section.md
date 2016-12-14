@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Section"
+description: The section tag can be used as either a single tag or container tag and will display information about the section.
 tags:
   - Navigation tags
   - Structural tags

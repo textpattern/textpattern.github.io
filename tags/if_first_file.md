@@ -43,9 +43,25 @@ This tag has no attributes.
 
 ### Example 1: Identify first file in a file list
 
-[todo:pw]
+~~~ html
+<txp:file_download_list limit="0" break="" wraptag="ul" sort="created desc">
+    <txp:if_first_file>
+        <li class="latest">
+            <txp:file_download_link>
+                <txp:file_download_name /> (Latest release)
+            </txp:file_download_link>
+        </li>
+    <txp:else />
+        <li>
+            <txp:file_download_link>
+                <txp:file_download_name />
+            </txp:file_download_link>
+        </li>
+    </txp:if_first_file>
+</txp:file_download_list>
+~~~
 
-Other tags used:
+Other tags used: [else](else), [file_download_link](file_download_link), [file_download_list](file_download_list), [file_download_name](file_download_name).
 
 ## Genealogy
 

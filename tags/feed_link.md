@@ -46,7 +46,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `limit="integer"`
 : Number of articles to display in the feed.
-: **Default:** depends upon [Preferences administration panel](../administration/preferences-panel) setting.
+: **Default:** depends upon [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel) setting.
 
 `section="section name"`
 : Restrict to articles from specified section(s).

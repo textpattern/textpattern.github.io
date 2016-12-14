@@ -29,7 +29,7 @@ The **comment_time** tag is a *single* tag which is used to display the time and
 This tag will accept the following attributes (**case-sensitive**):
 
 `format="format string"`
-: Override the default date format set in the [Preferences administration panel](../administration/preferences-panel).
+: Override the default date format set in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
 : **Values:** any valid [strftime](http://php.net/strftime) string values, `since`, `iso8601` ([ISO 8601 reference](http://en.wikipedia.org/wiki/ISO_8601)), `w3cdtf` ([W3CDTF reference](http://www.w3.org/TR/NOTE-datetime)), or `rfc822` ([RFC 822 reference](http://www.w3.org/Protocols/rfc822/#z28)).
 : **Default:** the 'Date format' set in preferences.
 
@@ -41,7 +41,7 @@ This tag will accept the following attributes (**case-sensitive**):
 `lang="ISO language code"`
 : Format time string suitable for the specified language (locale).
 : **Values:** locales adhere to [ISO-639](http://en.wikipedia.org/wiki/ISO_639-2).
-: **Default:** unset (time format set in the [Preferences administration panel](../administration/preferences-panel).
+: **Default:** unset (time format set in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
 
 ## Examples
 

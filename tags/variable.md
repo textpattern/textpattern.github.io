@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Variable"
+description: The variable tag is both a single and a container tag which sets or returns a user-defined global variable.
 tags:
   - Programmer tags
 ---

@@ -3,6 +3,7 @@ layout: document
 category: Tags
 published: true
 title: "Search term"
+description: The search_term tag is a single tag which returns the expression the user searched for through the full text search form.
 tags:
   - Search tags
 ---

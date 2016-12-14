@@ -43,9 +43,21 @@ This tag has no attributes.
 
 ### Example 1: Identify last link in an link list
 
-[todo:pw]
+~~~ html
+<txp:linklist break="" wraptag="ul" sort="date desc">
+    <txp:if_last_link>
+        <li class="earliest">
+            <txp:link /> (My first link)
+        </li>
+    <txp:else />
+        <li>
+            <txp:link />
+        </li>
+    </txp:if_last_link>
+</txp:linklist>
+~~~
 
-Other tags used:
+Other tags used: [else](else), [link](link), [linklist](linklist).
 
 ## Genealogy
 
