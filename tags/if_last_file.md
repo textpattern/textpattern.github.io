@@ -63,7 +63,6 @@ This tag has no attributes.
 
 Other tags used: [else](else), [file_download_link](file_download_link), [file_download_list](file_download_list), [file_download_name](file_download_name).
 
-
 ## Genealogy
 
 ### Version 4.6.0

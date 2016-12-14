@@ -44,11 +44,13 @@ This tag has no attributes.
 
 ~~~ html
 <txp:section_list wraptag="ul" break="">
-    <li<txp:if_last_section> id="last"</txp:if_last_section>>
+    <li<txp:if_last_section> class="last"</txp:if_last_section>>
         <txp:section title="1" link="1" />
     </li>
 </txp:section_list>
 ~~~
+
+Other tags used: [section](section), [section_list](section_list).
 
 ## Genealogy
 

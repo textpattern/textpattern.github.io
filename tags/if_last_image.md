@@ -59,8 +59,6 @@ This tag has no attributes.
 
 Other tags used: [else](else), [image](image), [images](images).
 
-Other tags used:
-
 ## Genealogy
 
 ### Version 4.6.0
