@@ -8,6 +8,12 @@ description: A self-closed tag is the most basic form of a Texpattern tag.
 
 # Self-closed versus container tags
 
+On this page:
+
+* [Self-closed tags](#self-closed-tags)
+* [Container tags](#container-tags)
+* [Closing tags correctly](#closing-tags-correctly)
+
 ## Self-closed tags
 
 A self-closed tag is the most basic form of a Texpattern tag. Its structure is similar to that of a self-closed tag in HTML (e.g. `<br />`), most notably the inclusion of the terminating forward slash.
@@ -60,4 +66,54 @@ The example above would be rendered into something like so:
 <a href="/articles/this-article-title">This article title</a>
 ...content...
 <a href="/articles/this-article-title">Read more...</a>
+~~~
+
+## Closing tags correctly
+
+Textpattern tags behave like XML tags insofar as they must be **closed** correctly. Any containing tag must have both an opening tag and a corresponding closing tag (marked with a preceding slash):
+
+~~~ html
+<txp:some_tag>
+    ...content...
+</txp:some_tag>
+~~~
+
+If the tag is a conditional tag, check to make sure that any [else](http://docs.textpattern.io/tags/else) tag is employed correctly:
+
+**Right:**
+
+~~~ html
+<txp:if_some_condition>
+  ...true branch...
+<txp:else />
+  ...false branch...
+</txp:if_some_condition>
+~~~
+
+**Wrong:**
+
+~~~ html
+<ul>
+    <li>
+        <txp:else>
+    </li>
+    <li>
+        </txp:else>
+    </li>
+    <li>
+        </txp:else />
+    </li>
+</ul>
+~~~
+
+Single (self-closing) tags must have a single slash at the end:
+
+~~~ html
+<txp:some_single_tag with="attributes" />
+~~~
+
+Also check that the angle brackets have not been HTML encoded by mistake, e.g.:
+
+~~~ html
+&lt;txp:some_tag /gt;
 ~~~
