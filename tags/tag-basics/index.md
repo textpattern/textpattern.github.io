@@ -20,3 +20,4 @@ Below are a series of tag fundamentals, which will get you up and running with T
 2. [Conditional tags](conditional-tags)
 3. [Tag nesting](tag-nesting)
 4. [Parsing tag attributes](parsing-tag-attributes)
+5. [Incorrect tag contexts](incorrect-tag-contexts)
