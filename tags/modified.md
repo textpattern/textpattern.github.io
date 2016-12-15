@@ -50,11 +50,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** tag name or unset (see @@class cross-reference@@).
+: **Default:** tag name or unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="element"`
 : HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

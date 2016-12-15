@@ -34,15 +34,15 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: **Default:** `br` (but see @@break cross-reference@@ for exceptions).
+: **Default:** `br` (but see [break cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#break) for exceptions).
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** `comments_error` (see @@class cross-reference@@).
+: **Default:** `comments_error` (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

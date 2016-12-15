@@ -70,11 +70,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : CSS `class` attribute to apply to the `wraptag`, if set.
-: **Default:** unset (see @@class cross-reference@@).
+: **Default:** unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="tag"`
 : HTML element to wrap the items grabbed from the `type` attribute, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

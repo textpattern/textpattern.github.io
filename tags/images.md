@@ -126,15 +126,15 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: **Default:** `br` (but see @@break cross-reference@@ for exceptions).
+: **Default:** `br` (but see [break cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#break) for exceptions).
 
 `class="class name"`
 : CSS `class` attribute to apply to the image (or to the `wraptag`, if set).
-: **Default:** tag name **or** unset (see @@class cross-reference@@).
+: **Default:** tag name **or** unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `label="text"`
 : Label prepended to item.
-: **Default:** unset (but see @@label cross-reference@@ for exceptions).
+: **Default:** unset (but see [label cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#label) for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
@@ -142,7 +142,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `wraptag="tag"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

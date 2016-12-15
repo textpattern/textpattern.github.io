@@ -40,7 +40,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** unset (see @@class cross-reference@@).
+: **Default:** unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="element"`
 : HTML tag to wrap around description text, specified without brackets (e.g. `wraptag="div"`).

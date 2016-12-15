@@ -45,7 +45,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `a` tag when used as a container tag.
-: **Default:** tag name or unset (see @@class cross-reference@@).
+: **Default:** tag name or unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `style="style rule"`
 : Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.

@@ -70,7 +70,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value, if set, otherwise to the `<img>` tag.
-: **Default:** unset (see @@class cross-reference@@).
+: **Default:** unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `style="style rule"`
 : Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.
@@ -78,7 +78,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `wraptag="element"`
 : HTML tag to be used to wrap the `<img>` tag, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

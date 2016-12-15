@@ -72,11 +72,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` attribute, applied to `wraptag`. If no `wraptag` is supplied (and `link="1"`), the `class` is applied to the `<a>` tag instead.
-: **Default:** unset (see @@class cross-reference@@).
+: **Default:** unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="tag"`
 : HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see @@wraptag cross-reference@@ for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 
