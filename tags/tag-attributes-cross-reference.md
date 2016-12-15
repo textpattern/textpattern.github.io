@@ -1,80 +1,60 @@
+---
+layout: document
+category: Tags
+published: true
+title: "Tag attributes cross-reference"
+description: This cross-reference makes clear the different Textpattern tags associated with a given attribute.
+---
+
 # Tag attributes cross-reference [todo:pw]
 
 This cross-reference makes clear the different Textpattern tags associated with a given attribute. For each attribute, the associated tags are listed underneath it.
 
-*Authors: DO NOT** add new tags/attributes here from development versions of Textpattern, add them to "tags_in_development":/home/www/zendstudio/dokuwiki/bin/doku.php?id=tags_in_development to avoid confusion. Only the latest stable version of Textpattern is officially supported, and this list should only reflect the latest stable version.
+## active_class
 
-h3(sectionedit1#active_class). active_class
+"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to the 'active' or current link in a list.
 
-"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to the “active” or current link in a list.
+* [category_list](category_list)
+* [section_list](section_list)
 
-* "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
-* "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
+## align
 
-h3(sectionedit2#align). align
-
-As of version 4.2.0 this attribute is deprecated.
+Note: As of Textpattern version 4.2.0 this attribute is deprecated.
+{: .alert-block .warning}
 
 "HTML img tag align attribute":http://www.w3.org/TR/html4/struct/objects.html#adef-align-IMG. Recommended that you use CSS via **class** or **id** attribute instead.
 
-* "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image
-* "image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image
-* "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail
+* [article_image](article_image)
+* [image](image)
+* [thumbnail](thumbnail)
 
-h3(sectionedit3#allowoverride). allowoverride
+## allowoverride
 
-Used to disable assigned override forms. Works within article lists and single article display. Both article tags use
+Used to disable assigned override forms. Works within article lists and single article display. Both article tags use `1` (yes) as default.
 
-bc. 1
+* [article](article)
+* [article_custom](article_custom)
 
+## anchor
 
-(yes) as default.
+* [comment_permlink](comment_permlink)
 
-* "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
-* "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
+## author
 
-h3(sectionedit4#anchor). anchor
+* [article_custom](article_custom)
+* [images](images)
+* [linklist](linklist)
+* [file_download_list](file_download_list)
 
-* "comment_permlink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_permlink
+## auto_detect
 
-h3(sectionedit5#author). author
+* [images](images)
+* [linklist](linklist)
+* [file_download_list](file_download_list)
 
-* "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
-* "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images
-* "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist
-* "file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list
+## break
 
-h3(sectionedit6#auto_detect). auto_detect
-
-* "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images
-* "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist
-* "file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list
-
-h3(sectionedit7#break). break
-
-"HTML tag":http://www.w3.org/TR/html4/intro/sgmltut.html#h-3.2.1 (without brackets) or string used to separate list items. Suggested values include
-
-bc. br
-
-
-and
-
-bc. hr
-
-
-for presentational markup, or
-
-bc. li
-
-
-if semantic markup is preferred. Textpattern cares for the correct nesting of tags in either case.
-
-Default is
-
-bc. br
-
-
-(except for tags marked by an asterisk, which default to unset).
+"HTML tag":http://www.w3.org/TR/html4/intro/sgmltut.html#h-3.2.1 (without brackets) or string used to separate list items. Suggested values include `br` and `hr` for presentational markup, or `li` if semantic markup is preferred. Textpattern cares for the correct nesting of tags in either case. Default is `br` (except for tags marked by an asterisk, which default to unset).
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article &#42;
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom &#42;
@@ -91,17 +71,17 @@ bc. br
 * "search_result_excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_result_excerpt
 * "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
 
-h3(sectionedit8#breakclass). breakclass
+## breakclass
 
 "HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to **break** (when value supplied is a tag).
 
-* "comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments
+* [comments](comments)
 
-h3(sectionedit9#button). button
+## button
 
-* "search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input
+* [search_input](search_input)
 
-h3(sectionedit10#category). category
+## category
 
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 * "feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feed_link
@@ -111,15 +91,15 @@ h3(sectionedit10#category). category
 * "recent_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_articles
 * "file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list
 
-h3(sectionedit11#categories). categories
+## categories
 
 * "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
 
-h3(sectionedit12#children). children
+## children
 
 * "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
 
-h3(sectionedit13#class). class
+## class
 
 "HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to the specified "wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag. Tags marked with an asterisk use the tag name as the class name by default. Otherwise the default is empty.
 
@@ -168,23 +148,23 @@ In your tag, replace “_customfieldname_” with the actual name of the desired
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 
-h3(sectionedit15#decimals). decimals
+## decimals
 
 * "file_download_size":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_size
 
-h3(sectionedit16#default). default
+## default
 
 * "custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field
 
-h3(sectionedit17#default_title). default_title
+## default_title
 
 * "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
 
-h3(sectionedit18#email). email
+## email
 
 * "email":/home/www/zendstudio/dokuwiki/bin/doku.php?id=email
 
-h3(sectionedit19#escape). escape
+## escape
 
 Escape HTML entities.
 
@@ -200,39 +180,39 @@ Escape HTML entities.
 * "older":/home/www/zendstudio/dokuwiki/bin/doku.php?id=older
 * "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail
 
-h3(sectionedit20#excerpted). excerpted
+## excerpted
 
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 
-h3(sectionedit21#exclude). exclude
+## exclude
 
 * "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
 * "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
 
-h3(sectionedit22#expired). expired
+## expired
 
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 
-h3(sectionedit23#extension). extension
+## extension
 
 * "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images
 
-h3(sectionedit24#filename). filename
+## filename
 
 * "file_download":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download
 * "file_download_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_link
 * "file_download_name":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_name
 
-h3(sectionedit25#flavor). flavor
+## flavor
 
 * "feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feed_link
 * "link_feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_feed_link
 
-h3(sectionedit26#forgetlabel). forgetlabel
+## forgetlabel
 
 * "comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form
 
-h3(sectionedit27#form). form
+## form
 
 Used to format content for display. See "forms_explained":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained.
 
@@ -251,7 +231,7 @@ Used to format content for display. See "forms_explained":/home/www/zendstudio/d
 * "search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input
 * "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
 
-h3(sectionedit28#format). format
+## format
 
 * "comment_time":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_time
 * "css":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css
@@ -265,11 +245,11 @@ h3(sectionedit28#format). format
 * "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified
 * "posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted
 
-h3(sectionedit29#frontpage). frontpage
+## frontpage
 
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 
-h3(sectionedit30#gmt). gmt
+## gmt
 
 * "comment_time":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_time
 * "expires":/home/www/zendstudio/dokuwiki/bin/doku.php?id=expires
@@ -277,12 +257,12 @@ h3(sectionedit30#gmt). gmt
 * "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified
 * "posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted
 
-h3(sectionedit31#height). height
+## height
 
 * "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image
 * "image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image
 
-h3(sectionedit32#hilight). hilight
+## hilight
 
 * "search_result_excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_result_excerpt
 
@@ -329,17 +309,7 @@ h3(sectionedit38#keywords). keywords
 
 h3(sectionedit39#label). label
 
-This string will be prepended to the output. When using a "wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag value of either
-
-bc. ol
-
-
-or
-
-bc. ul
-
-
-, the label will be the first list item.
+This string will be prepended to the output. When using a "wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag value of either `ol` or `ul`, the label will be the first list item.
 
 Default is unset (except where shown in parentheses).
 
@@ -631,11 +601,9 @@ How to sort the resulting list. Available and default values vary by tag, but mu
 
 bc. asc
 
-
 (ascending) or
 
 bc. desc
-
 
 (descending) order.
 
@@ -756,7 +724,6 @@ h3(sectionedit92#wraptag). wraptag
 <li><p>"breadcrumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=breadcrumb (</p>
 bc. p
 
-
 <p>)</p></li>
 <li>"category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category</li>
 <li>"category1":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category1</li>
@@ -765,7 +732,6 @@ bc. p
 <li>"comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments</li>
 <li><p>"comments_error":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_error (</p>
 bc. div
-
 
 <p>)</p></li>
 <li>"comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form</li>
@@ -792,11 +758,9 @@ bc. div
 <li><p>"search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input (</p>
 bc. p
 
-
 <p>)</p></li>
 <li>"section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section</li>
 <li>"section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list</li>
 <li>"thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail</li>
 </ul>
 ~~~
-
