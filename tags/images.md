@@ -58,7 +58,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `article, category, author`. \\
 
 `category="image category"`
-: Filter the images by this list of category names as defined in the [Categories administration panel](../administration/categories-panel).
+: Filter the images by this list of category names as defined in the [Categories administration panel](http://docs.textpattern.io/administration/categories-panel).
 
 `extension=".extension"`
 : Filter the images by this list of image extensions, including the leading dot. Example: `extension=".jpg, .png"`.

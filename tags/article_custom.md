@@ -66,7 +66,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset, retrieves from all authors.
 
 `category="category name"`
-: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories administration panel](../administration/categories-panel) to ensure you are using the correct names.
+: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories administration panel](http://docs.textpattern.io/administration/categories-panel) to ensure you are using the correct names.
 : **Values:** (comma separated list of) category name(s).
 : **Default:** unset, retrieves from all categories.
 

@@ -17,36 +17,36 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### Installation handling
 
-* [Installing Textpattern](installation/) (detailed instructions)
-* [Upgrading Textpattern](installation/upgrading-textpattern)
-* [Moving a Textpattern installation](installation/moving-textpattern)
-* [Post install and upgrade routines](administration/post-install-and-upgrade-routines)
+* [Installing Textpattern](http://docs.textpattern.io/installation/) (detailed instructions)
+* [Upgrading Textpattern](http://docs.textpattern.io/installation/upgrading-textpattern)
+* [Moving a Textpattern installation](http://docs.textpattern.io/installation/moving-textpattern)
+* [Post install and upgrade routines](http://docs.textpattern.io/administration/post-install-and-upgrade-routines)
 
 </div>
 <div class="layout-3col">
 
 ### Site administration
 
-* [Textpattern administration](administration/) (admin-side structure and functionality)
-* [Administration fast-track](administration/admin-fast-track) (workflow insights to get up to speed  quick)
-* [Textpattern security](administration/security) (read before you worry or hack the core)
+* [Textpattern administration](http://docs.textpattern.io/administration/) (admin-side structure and functionality)
+* [Administration fast-track](http://docs.textpattern.io/administration/admin-fast-track) (workflow insights to get up to speed  quick)
+* [Textpattern security](http://docs.textpattern.io/administration/security) (read before you worry or hack the core)
 
 </div>
 <div class="layout-3col">
 
 ### Core tags
 
-* [Tag use basics](tags/tag-basics/) (a good place to start)
-  * [Parsing tag attributes](tags/tag-basics/parsing-tag-attributes) (sorcery)
-* [Tags reference](tags/) (the complete suite)
-* [Tags in development](tags/tags-in-development) (upcoming tags)
+* [Tag use basics](http://docs.textpattern.io/tags/tag-basics/) (a good place to start)
+  * [Parsing tag attributes](http://docs.textpattern.io/tags/tag-basics/parsing-tag-attributes) (sorcery)
+* [Tags reference](http://docs.textpattern.io/tags/) (the complete suite)
+* [Tags in development](http://docs.textpattern.io/tags/tags-in-development) (upcoming tags)
 
 </div>
 <div class="layout-3col">
 
 ### Design
 
-* [Theme design](themes/)
+* [Theme design](http://docs.textpattern.io/themes/)
 * Front-end themes
 * Admin-side themes
 
@@ -55,8 +55,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### Development
 
-* [Plugin development](development/)
-* [Textpattern source code repositories](development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
+* [Plugin development](http://docs.textpattern.io/development/)
+* [Textpattern source code repositories](http://docs.textpattern.io/development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
 
 </div>
 <div class="layout-3col">

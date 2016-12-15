@@ -33,7 +33,7 @@ The **if_article_image** tag is a *conditional* tag and always used as an openin
 </txp:if_article_image>
 ~~~
 
-The tag will execute the contained statements if an image is associated (through the [Write administration panel](../administration/write-panel) 'Article image' field) with the article being displayed.
+The tag will execute the contained statements if an image is associated (through the [Write administration panel](http://docs.textpattern.io/administration/write-panel) 'Article image' field) with the article being displayed.
 
 ## Attributes
 

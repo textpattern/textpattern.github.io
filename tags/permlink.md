@@ -32,7 +32,7 @@ If used as a container tag, the HTML required to output a hyperlink is returned;
 Tag will accept the following attributes (**case-sensitive**):
 
 `id="integer"`
-: Specifies the article `id`, assigned at creation of the article, to link. Can be found on the [Articles administration panel](../administration/articles-panel).
+: Specifies the article `id`, assigned at creation of the article, to link. Can be found on the [Articles administration panel](http://docs.textpattern.io/administration/articles-panel).
 : **Default:** unset (current article).
 
 `title="text"`

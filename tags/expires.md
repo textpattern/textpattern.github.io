@@ -23,7 +23,7 @@ On this page:
 <txp:expires />
 ~~~
 
-The **expires** tag is a *single* tag used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive (e.g. events like conferences, meetings and so forth). The tag is defined by expiration date values that are set under the ''Date and time' section of the [Write administration panel](../administration/write-panel).
+The **expires** tag is a *single* tag used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive (e.g. events like conferences, meetings and so forth). The tag is defined by expiration date values that are set under the ''Date and time' section of the [Write administration panel](http://docs.textpattern.io/administration/write-panel).
 
 ## Attributes
 
