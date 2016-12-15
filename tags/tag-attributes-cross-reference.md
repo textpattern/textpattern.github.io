@@ -17,17 +17,6 @@ This cross-reference makes clear the different Textpattern tags associated with 
 * [category_list](category_list)
 * [section_list](section_list)
 
-## align
-
-Note: As of Textpattern version 4.2.0 this attribute is deprecated.
-{: .alert-block .warning}
-
-"HTML img tag align attribute":http://www.w3.org/TR/html4/struct/objects.html#adef-align-IMG. Recommended that you use CSS via **class** or **id** attribute instead.
-
-* [article_image](article_image)
-* [image](image)
-* [thumbnail](thumbnail)
-
 ## allowoverride
 
 Used to disable assigned override forms. Works within article lists and single article display. Both article tags use `1` (yes) as default.
@@ -73,7 +62,7 @@ Used to disable assigned override forms. Works within article lists and single a
 
 ## breakclass
 
-"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to **break** (when value supplied is a tag).
+"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to `break` (when value supplied is a tag).
 
 * [comments](comments)
 
@@ -83,25 +72,25 @@ Used to disable assigned override forms. Works within article lists and single a
 
 ## category
 
-* "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
-* "feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feed_link
-* "image_index":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_index
-* "link_feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_feed_link
-* "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist
-* "recent_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_articles
-* "file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list
+* [article_custom](article_custom)
+* [feed_link](feed_link)
+* [image_index](image_index)
+* [link_feed_link](link_feed_link)
+* [linklist](linklist)
+* [recent_articles](recent_articles)
+* [file_download_list](file_download_list)
 
 ## categories
 
-* "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
+* [category_list](category_list)
 
 ## children
 
-* "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
+* [category_list](category_list)
 
 ## class
 
-"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to the specified "wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag. Tags marked with an asterisk use the tag name as the class name by default. Otherwise the default is empty.
+"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to the specified [wraptag](#wraptag). Tags marked with an asterisk use the tag name as the class name by default. Otherwise the default is empty.
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
@@ -141,9 +130,9 @@ Used to disable assigned override forms. Works within article lists and single a
 * "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list &#42;
 * "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail
 
-h3(sectionedit14#customfieldname). //customfieldname//
+## customfieldname
 
-In your tag, replace “_customfieldname_” with the actual name of the desired custom field (see also “"Important notes on creating custom field names":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#custom_fields”).
+In your tag, replace `customfieldname` with the actual name of the desired custom field (see also "Important notes on creating custom field names":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#custom_fields).
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
@@ -266,7 +255,7 @@ Used to format content for display. See "forms_explained":/home/www/zendstudio/d
 
 * "search_result_excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_result_excerpt
 
-h3(sectionedit33#html_id). html_id
+## html_id
 
 "HTML id attribute":http://www.w3.org/TR/html4/struct/global.html#adef-id to be applied to the **wraptag**.
 
@@ -275,7 +264,7 @@ h3(sectionedit33#html_id). html_id
 * "search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input
 * "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail
 
-h3(sectionedit34#id). id
+## id
 
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 * "file_download":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download
@@ -287,67 +276,50 @@ h3(sectionedit34#id). id
 * "permlink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlink
 * "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail
 
-h3(sectionedit35#include_default). include_default
+## include_default
 
 * "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
 
-h3(sectionedit36#item). item
+## item
 
 * "text":/home/www/zendstudio/dokuwiki/bin/doku.php?id=text
 
-h3(sectionedit37#isize). isize
+## isize
 
 "HTML size attribute":http://www.w3.org/TR/html4/interact/forms.html#adef-size-INPUT to be applied to "HTML form input":http://www.w3.org/TR/html4/interact/forms.html#edef-INPUT output.
 
 * "comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form
 
-h3(sectionedit38#keywords). keywords
+## keywords
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 * "if_keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_keywords
 
-h3(sectionedit39#label). label
+## label
 
-This string will be prepended to the output. When using a "wraptag":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#wraptag value of either `ol` or `ul`, the label will be the first list item.
+This string will be prepended to the output. When using a [wraptag](#wraptag) value of either `ol` or `ul`, the label will be the first list item. Default is unset (except where shown in parentheses).
 
-Default is unset (except where shown in parentheses).
+* "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
+* "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
+* "breadcrumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=breadcrumb (_Site name_)
+* "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
+* "feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feed_link
+* "file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list
+* "image_index":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_index
+* "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images
+* "link_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_category
+* "link_description":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_description
+* "link_feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_feed_link
+* "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist
+* "popup":/home/www/zendstudio/dokuwiki/bin/doku.php?id=popup (Browse)
+* "recent_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_articles (Recent Articles)
+* "recent_comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_comments
+* "related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles
+* "search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input (Search)
+* "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
 
-<ul>
-<li>"article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article</li>
-<li>"article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom</li>
-<li>"breadcrumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=breadcrumb (_Site name_)</li>
-<li>"category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list</li>
-<li>"feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feed_link</li>
-<li>"file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list</li>
-<li>"image_index":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_index</li>
-<li>"images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images</li>
-<li>"link_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_category</li>
-<li>"link_description":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_description</li>
-<li>"link_feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_feed_link</li>
-<li>"linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist</li>
-<li><p>"popup":/home/www/zendstudio/dokuwiki/bin/doku.php?id=popup (</p>
-bc. Browse
-
-
-<p>)</p></li>
-<li><p>"recent_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_articles (</p>
-bc. Recent Articles
-
-
-<p>)</p></li>
-<li>"recent_comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_comments</li>
-<li>"related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles</li>
-<li><p>"search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input (</p>
-bc. Search
-
-
-<p>)</p></li>
-<li>"section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list</li>
-</ul>
-~~~
-
-h3(sectionedit40#labeltag). labeltag
+## labeltag
 
 "HTML tag":http://www.w3.org/TR/html4/intro/sgmltut.html#h-3.2.1 (without brackets) to wrap around "label":/home/www/zendstudio/dokuwiki/bin/doku.php?id=attributes_cross-reference#label. Default is unset.
 
@@ -365,7 +337,7 @@ h3(sectionedit40#labeltag). labeltag
 * "related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles
 * "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
 
-h3(sectionedit41#lang). lang
+## lang
 
 * "comment_time":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comment_time
 * "expires":/home/www/zendstudio/dokuwiki/bin/doku.php?id=expires
@@ -373,7 +345,7 @@ h3(sectionedit41#lang). lang
 * "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified
 * "posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted
 
-h3(sectionedit42#limit). limit
+## limit
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
@@ -387,7 +359,7 @@ h3(sectionedit42#limit). limit
 * "related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles
 * "search_result_excerpt":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_result_excerpt
 
-h3(sectionedit43#link). link
+## link
 
 * "author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author
 * "breadcrumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=breadcrumb
@@ -398,64 +370,64 @@ h3(sectionedit43#link). link
 * "section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section
 * "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail
 
-h3(sectionedit44#linkclass). linkclass
+## linkclass
 
 "HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to links.
 
 * "breadcrumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=breadcrumb
 
-h3(sectionedit45#linktext). linktext
+## linktext
 
 * "email":/home/www/zendstudio/dokuwiki/bin/doku.php?id=email
 
-h3(sectionedit46#listform). listform
+## listform
 
 See "forms_explained":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained.
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 
-h3(sectionedit47#login). login
+## login
 
 * "password_protect":/home/www/zendstudio/dokuwiki/bin/doku.php?id=password_protect
 
-h3(sectionedit48#match). match
+## match
 
 * "related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles
 * "search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input
 
-h3(sectionedit49#media). media
+## media
 
 * "css":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css
 
-h3(sectionedit50#msgcols). msgcols
+## msgcols
 
 "HTML cols attribute":http://www.w3.org/TR/html4/interact/forms.html#adef-cols-TEXTAREA to be applied to "HTML form textarea":http://www.w3.org/TR/html4/interact/forms.html#edef-TEXTAREA output.
 
 * "comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form
 
-h3(sectionedit51#msgrows). msgrows
+## msgrows
 
 "HTML rows attribute":http://www.w3.org/TR/html4/interact/forms.html#adef-rows-TEXTAREA to be applied to "HTML form textarea":http://www.w3.org/TR/html4/interact/forms.html#edef-TEXTAREA output.
 
 * "comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form
 
-h3(sectionedit52#msgstyle). msgstyle
+## msgstyle
 
 "HTML style attribute":http://www.w3.org/TR/html4/present/styles.html#style-element to be applied to "HTML form textarea":http://www.w3.org/TR/html4/interact/forms.html#edef-TEXTAREA output. Recommended that you use CSS via textarea's class or id attribute instead.
 
 * "comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form
 
-h3(sectionedit53#month). month
+## month
 
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 
-h3(sectionedit54#no_widow). no_widow
+## no_widow
 
 * "recent_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_articles
 * "related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles
 * "title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=title
 
-h3(sectionedit55#name). name
+## name
 
 * "category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category
 * "css":/home/www/zendstudio/dokuwiki/bin/doku.php?id=css
@@ -474,11 +446,11 @@ h3(sectionedit55#name). name
 * "section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section
 * "variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=variable
 
-h3(sectionedit56#number). number
+## number
 
 * "if_article_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_article_category
 
-h3(sectionedit57#offset). offset
+## offset
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
@@ -488,43 +460,43 @@ h3(sectionedit57#offset). offset
 * "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist
 * "recent_comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_comments
 
-h3(sectionedit58#pageby). pageby
+## pageby
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 * "file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list
 * "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images
 * "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist
 
-h3(sectionedit59#parent). parent
+## parent
 
 * "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
 
-h3(sectionedit60#pass). pass
+## pass
 
 * "password_protect":/home/www/zendstudio/dokuwiki/bin/doku.php?id=password_protect
 
-h3(sectionedit61#pgonly). pgonly
+## pgonly
 
 Used to return pagination statistics without rendering the article list. Care must be taken to remain consistent with article tag attributes to keep statistics accurate.
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 
-h3(sectionedit62#poplink). poplink
+## poplink
 
 * "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail
 
-h3(sectionedit63#previewlabel). previewlabel
+## previewlabel
 
 * "comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form
 
-h3(sectionedit64#realname). realname
+## realname
 
 * "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images
 * "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist
 * "file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list
 
-h3(sectionedit65#rel). rel
+## rel
 
 "HTML rel attribute":http://www.w3.org/TR/html4/struct/links.html#adef-rel to be applied to links.
 
@@ -532,25 +504,25 @@ h3(sectionedit65#rel). rel
 * "link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link
 * "linkdesctitle":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linkdesctitle
 
-h3(sectionedit66#rememberlabel). rememberlabel
+## rememberlabel
 
 * "comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form
 
-h3(sectionedit67#searchall). searchall
+## searchall
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 
-h3(sectionedit68#searchform). searchform
+## searchform
 
 See "forms_explained":/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained.
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 
-h3(sectionedit69#searchsticky). searchsticky
+## searchsticky
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 
-h3(sectionedit70#section). section
+## section
 
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 * "author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author
@@ -564,16 +536,16 @@ h3(sectionedit70#section). section
 * "recent_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_articles
 * "search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input
 
-h3(sectionedit71#sections). sections
+## sections
 
 * "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
 
-h3(sectionedit72#separator). separator
+## separator
 
 * "breadcrumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=breadcrumb
 * "page_title":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_title
 
-h3(sectionedit73#showalways). showalways
+## showalways
 
 * "comments_invite":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_invite
 * "link_to_next":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_to_next
@@ -581,31 +553,23 @@ h3(sectionedit73#showalways). showalways
 * "newer":/home/www/zendstudio/dokuwiki/bin/doku.php?id=newer
 * "older":/home/www/zendstudio/dokuwiki/bin/doku.php?id=older
 
-h3(sectionedit74#showcount). showcount
+## showcount
 
 * "comments_invite":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_invite
 
-h3(sectionedit75#show_preview). show_preview
+## show_preview
 
 * "comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form
 
-h3(sectionedit76#size). size
+## size
 
 "HTML size attribute":http://www.w3.org/TR/html4/interact/forms.html#adef-size-INPUT to be applied to "HTML form input":http://www.w3.org/TR/html4/interact/forms.html#edef-INPUT output.
 
 * "search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input
 
-h3(sectionedit77#sort). sort
+## sort
 
-How to sort the resulting list. Available and default values vary by tag, but multiple, comma-separated values can be used. Each value can be specified as either
-
-bc. asc
-
-(ascending) or
-
-bc. desc
-
-(descending) order.
+How to sort the resulting list. Available and default values vary by tag, but multiple, comma-separated values can be used. Each value can be specified as either `asc` (ascending) or `desc` (descending) order.
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
@@ -619,33 +583,33 @@ bc. desc
 * "related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles
 * "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
 
-h3(sectionedit78#status). status
+## status
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 * "file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list
 * "if_status":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_status
 
-h3(sectionedit79#style). style
+## style
 
 * "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image
 * "image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image
 * "permlink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlink
 * "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail
 
-h3(sectionedit80#submitlabel). submitlabel
+## submitlabel
 
 * "comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form
 
-h3(sectionedit81#text). text
+## text
 
 * "search_result_count":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_result_count
 
-h3(sectionedit82#textonly). textonly
+## textonly
 
 * "comments_invite":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_invite
 
-h3(sectionedit83#this_section). this_section
+## this_section
 
 * "author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author
 * "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
@@ -654,16 +618,16 @@ h3(sectionedit83#this_section). this_section
 * "category2":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category2
 * "popup":/home/www/zendstudio/dokuwiki/bin/doku.php?id=popup
 
-h3(sectionedit84#thumbnail). thumbnail
+## thumbnail
 
 * "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image
 
-h3(sectionedit85#time). time
+## time
 
 * "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
 * "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
 
-h3(sectionedit86#title). title
+## title
 
 * "author":/home/www/zendstudio/dokuwiki/bin/doku.php?id=author
 * "breadcrumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=breadcrumb
@@ -685,7 +649,7 @@ h3(sectionedit86#title). title
 * "permlink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=permlink
 * "section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section
 
-h3(sectionedit87#type). type
+## type
 
 * "category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category
 * "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
@@ -694,73 +658,61 @@ h3(sectionedit87#type). type
 * "page_url":/home/www/zendstudio/dokuwiki/bin/doku.php?id=page_url
 * "popup":/home/www/zendstudio/dokuwiki/bin/doku.php?id=popup
 
-h3(sectionedit88#url). url
+## url
 
 * "txp_die":/home/www/zendstudio/dokuwiki/bin/doku.php?id=txp_die
 
-h3(sectionedit89#value). value
+## value
 
 * "if_custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_custom_field
 * "if_variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_variable
 * "variable":/home/www/zendstudio/dokuwiki/bin/doku.php?id=variable
 
-h3(sectionedit90#version). version
+## version
 
 * "if_plugin":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_plugin
 
-h3(sectionedit91#width). width
+## width
 
 * "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image
 * "image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image
 
-h3(sectionedit92#wraptag). wraptag
+## wraptag
 
 "HTML tag":http://www.w3.org/TR/html4/intro/sgmltut.html#h-3.2.1 (without brackets) to wrap around output. Default value is unset, except where shown in parentheses.
 
-<ul>
-<li>"article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article</li>
-<li>"article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom</li>
-<li>"article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image</li>
-<li><p>"breadcrumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=breadcrumb (</p>
-bc. p
-
-<p>)</p></li>
-<li>"category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category</li>
-<li>"category1":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category1</li>
-<li>"category2":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category2</li>
-<li>"category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list</li>
-<li>"comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments</li>
-<li><p>"comments_error":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_error (</p>
-bc. div
-
-<p>)</p></li>
-<li>"comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form</li>
-<li>"comments_invite":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_invite</li>
-<li>"comments_preview":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_preview</li>
-<li>"expires":/home/www/zendstudio/dokuwiki/bin/doku.php?id=expires</li>
-<li>"feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feed_link</li>
-<li>"image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image</li>
-<li>"image_index":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_index</li>
-<li>"images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images</li>
-<li>"file_download_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_category</li>
-<li>"file_download_description":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_description</li>
-<li>"file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list</li>
-<li>"link_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_category</li>
-<li>"link_description":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_description</li>
-<li>"link_feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_feed_link</li>
-<li>"linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist</li>
-<li>"modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified</li>
-<li>"popup":/home/www/zendstudio/dokuwiki/bin/doku.php?id=popup</li>
-<li>"posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted</li>
-<li>"recent_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_articles</li>
-<li>"recent_comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_comments</li>
-<li>"related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles</li>
-<li><p>"search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input (</p>
-bc. p
-
-<p>)</p></li>
-<li>"section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section</li>
-<li>"section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list</li>
-<li>"thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail</li>
-</ul>
-~~~
+* "article":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article
+* "article_custom":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_custom
+* "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image
+* "breadcrumb":/home/www/zendstudio/dokuwiki/bin/doku.php?id=breadcrumb (`p`)
+* "category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category
+* "category1":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category1
+* "category2":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category2
+* "category_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list
+* "comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments
+* "comments_error":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_error (`div`)
+* "comments_form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_form
+* "comments_invite":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_invite
+* "comments_preview":/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments_preview
+* "expires":/home/www/zendstudio/dokuwiki/bin/doku.php?id=expires
+* "feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=feed_link
+* "image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image
+* "image_index":/home/www/zendstudio/dokuwiki/bin/doku.php?id=image_index
+* "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images
+* "file_download_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_category
+* "file_download_description":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_description
+* "file_download_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=file_download_list
+* "link_category":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_category
+* "link_description":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_description
+* "link_feed_link":/home/www/zendstudio/dokuwiki/bin/doku.php?id=link_feed_link
+* "linklist":/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist
+* "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified
+* "popup":/home/www/zendstudio/dokuwiki/bin/doku.php?id=popup
+* "posted":/home/www/zendstudio/dokuwiki/bin/doku.php?id=posted
+* "recent_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_articles
+* "recent_comments":/home/www/zendstudio/dokuwiki/bin/doku.php?id=recent_comments
+* "related_articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=related_articles
+* "search_input":/home/www/zendstudio/dokuwiki/bin/doku.php?id=search_input (`p`)
+* "section":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section
+* "section_list":/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list
+* "thumbnail":/home/www/zendstudio/dokuwiki/bin/doku.php?id=thumbnail
