@@ -6,7 +6,7 @@ title: "Tag attributes cross-reference"
 description: This cross-reference makes clear the different Textpattern tags associated with a given attribute.
 ---
 
-# Tag attributes cross-reference [todo:pw]
+# Tag attributes cross-reference
 
 This cross-reference document makes clear the different Textpattern tags associated with a given attribute.
 
@@ -131,6 +131,12 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 * [section](section)
 * [section_list](section_list) &#42;
 * [thumbnail](thumbnail)
+
+### cols
+
+HTML [cols attribute](https://www.w3.org/TR/html5/forms.html#attr-textarea-cols) to be applied to HTML form [textarea tag](https://www.w3.org/TR/html5/forms.html#the-textarea-element).
+
+* [comment_message_input](comment_message_input)
 
 ### customfieldname
 
@@ -286,12 +292,6 @@ Used to format content for display. See @@Form templates@@ for further explanati
 
 * [text](text)
 
-### isize
-
-"HTML size attribute":http://www.w3.org/TR/html4/interact/forms.html#adef-size-INPUT to be applied to "HTML form input":http://www.w3.org/TR/html4/interact/forms.html#edef-INPUT output.
-
-* [comments_form](comments_form)
-
 ### keywords
 
 * [article](article)
@@ -401,24 +401,6 @@ See @@Forms templates@@ for further explanation.
 
 * [css](css)
 
-### msgcols
-
-"HTML cols attribute":http://www.w3.org/TR/html4/interact/forms.html#adef-cols-TEXTAREA to be applied to "HTML form textarea":http://www.w3.org/TR/html4/interact/forms.html#edef-TEXTAREA output.
-
-* [comments_form](comments_form)
-
-### msgrows
-
-"HTML rows attribute":http://www.w3.org/TR/html4/interact/forms.html#adef-rows-TEXTAREA to be applied to "HTML form textarea":http://www.w3.org/TR/html4/interact/forms.html#edef-TEXTAREA output.
-
-* [comments_form](comments_form)
-
-### msgstyle
-
-"HTML style attribute":http://www.w3.org/TR/html4/present/styles.html#style-element to be applied to "HTML form textarea":http://www.w3.org/TR/html4/interact/forms.html#edef-TEXTAREA output. Recommended that you use CSS via textarea's class or id attribute instead.
-
-* [comments_form](comments_form)
-
 ### month
 
 * [article_custom](article_custom)
@@ -500,7 +482,7 @@ Used to return pagination statistics without rendering the article list. Care mu
 
 ### rel
 
-"HTML rel attribute":http://www.w3.org/TR/html4/struct/links.html#adef-rel to be applied to links.
+HTML [rel attribute](https://www.w3.org/TR/html5/document-metadata.html#attr-link-rel) to be applied to links.
 
 * [css](css)
 * [link](link)
@@ -509,6 +491,12 @@ Used to return pagination statistics without rendering the article list. Care mu
 ### rememberlabel
 
 * [comments_form](comments_form)
+
+### rows
+
+HTML [rows attribute](https://www.w3.org/TR/html5/forms.html#attr-textarea-rows) to be applied to HTML form [textarea tag](https://www.w3.org/TR/html5/forms.html#the-textarea-element).
+
+* [comment_message_input](comment_message_input)
 
 ### searchall
 
@@ -565,8 +553,11 @@ See @@Forms templates@@ for further explanation.
 
 ### size
 
-"HTML size attribute":http://www.w3.org/TR/html4/interact/forms.html#adef-size-INPUT to be applied to "HTML form input":http://www.w3.org/TR/html4/interact/forms.html#edef-INPUT output.
+HTML [size attribute](https://www.w3.org/TR/html5/forms.html#the-size-attribute) to be applied to HTML form [input tags](https://www.w3.org/TR/html5/forms.html#the-input-element).
 
+* [comments_email_input](comments_email_input)
+* [comments_name_input](comments_name_input)
+* [comments_web_input](comments_web_input)
 * [search_input](search_input)
 
 ### sort
@@ -593,6 +584,8 @@ How to sort the resulting list. Available and default values vary by tag, but mu
 * [if_status](if_status)
 
 ### style
+
+HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute) to be applied to HTML tag. Recommended that you use CSS via `class` or `id` attribute instead.
 
 * [article_image](article_image)
 * [image](image)
