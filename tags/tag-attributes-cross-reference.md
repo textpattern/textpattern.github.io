@@ -45,10 +45,10 @@ Used to disable assigned override forms. Works within article lists and single a
 
 ### break
 
-HTML tag (without brackets) or string used to separate list items. Suggested values include `br` and `hr` for presentational markup, or `li` if semantic markup is preferred. Textpattern cares for the correct nesting of tags in either case. Default is `br` (except for tags marked <span class="warning">•</span>, which default to unset).
+HTML tag (without brackets) or string used to separate list items. Suggested values include `br` and `hr` for presentational markup, or `li` if semantic markup is preferred. Textpattern cares for the correct nesting of tags in either case. Default is `br` (except for tags marked <span class="warning">●</span>, which default to unset).
 
-* [article](article) <span class="warning">•</span>
-* [article_custom](article_custom) <span class="warning">•</span>
+* [article](article) <span class="warning">●</span>
+* [article_custom](article_custom) <span class="warning">●</span>
 * [authors](authors)
 * [category_list](category_list)
 * [comments](comments)
@@ -57,7 +57,7 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 * [image_index](image_index)
 * [image_info](image_info)
 * [images](images)
-* [linklist](linklist) <span class="warning">•</span>
+* [linklist](linklist) <span class="warning">●</span>
 * [recent_articles](recent_articles)
 * [recent_comments](recent_comments)
 * [related_articles](related_articles)
@@ -89,7 +89,7 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 
 ### class
 
-[HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to the specified [wraptag](#wraptag). Tags marked with <span class="warning">•</span> use the tag name as the class name by default. Otherwise the default is empty.
+[HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to the specified [wraptag](#wraptag). Tags marked with <span class="warning">●</span> use the tag name as the class name by default. Otherwise the default is empty.
 
 * [article](article)
 * [article_custom](article_custom)
@@ -99,38 +99,38 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 * [category](category)
 * [category1](category1)
 * [category2](category2)
-* [category_list](category_list) <span class="warning">•</span>
-* [comments](comments) <span class="warning">•</span>
-* [comments_error](comments_error) <span class="warning">•</span>
-* [comments_form](comments_form) <span class="warning">•</span>
-* [comments_invite](comments_invite) <span class="warning">•</span>
-* [comments_preview](comments_preview) <span class="warning">•</span>
+* [category_list](category_list) <span class="warning">●</span>
+* [comments](comments) <span class="warning">●</span>
+* [comments_error](comments_error) <span class="warning">●</span>
+* [comments_form](comments_form) <span class="warning">●</span>
+* [comments_invite](comments_invite) <span class="warning">●</span>
+* [comments_preview](comments_preview) <span class="warning">●</span>
 * [expires](expires)
 * [feed_link](feed_link)
 * [file_download_author](file_download_author)
 * [file_download_category](file_download_category)
 * [file_download_description](file_download_description)
-* [file_download_list](file_download_list) <span class="warning">•</span>
+* [file_download_list](file_download_list) <span class="warning">●</span>
 * [image](image)
 * [image_author](image_author)
 * [image_index](image_index)
 * [image_info](image_info)
-* [images](images) <span class="warning">•</span>
+* [images](images) <span class="warning">●</span>
 * [link_author](link_author)
 * [link_category](link_category)
 * [link_description](link_description)
-* [link_feed_link](link_feed_link) <span class="warning">•</span>
-* [linklist](linklist) <span class="warning">•</span>
+* [link_feed_link](link_feed_link) <span class="warning">●</span>
+* [linklist](linklist) <span class="warning">●</span>
 * [modified](modified)
 * [permlink](permlink)
 * [popup](popup)
 * [posted](posted)
-* [recent_articles](recent_articles) <span class="warning">•</span>
-* [recent_comments](recent_comments) <span class="warning">•</span>
-* [related_articles](related_articles) <span class="warning">•</span>
+* [recent_articles](recent_articles) <span class="warning">●</span>
+* [recent_comments](recent_comments) <span class="warning">●</span>
+* [related_articles](related_articles) <span class="warning">●</span>
 * [search_input](search_input)
 * [section](section)
-* [section_list](section_list) <span class="warning">•</span>
+* [section_list](section_list) <span class="warning">●</span>
 * [thumbnail](thumbnail)
 
 ### cols
