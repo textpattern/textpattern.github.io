@@ -197,11 +197,11 @@ Escape HTML entities.
 ### flavor
 
 * [feed_link](feed_link)
-* [link_feed_link](link_feed_link
+* [link_feed_link](link_feed_link)
 
 ### forgetlabel
 
-* [comments_form](comments_form
+* [comments_form](comments_form)
 
 ### form
 
@@ -296,7 +296,7 @@ Used to format content for display. See @@Form templates@@ for further explanati
 
 * [article](article)
 * [article_custom](article_custom)
-* [if_keywords](if_keywords
+* [if_keywords](if_keywords)
 
 ### label
 
