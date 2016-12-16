@@ -33,58 +33,55 @@ Used to disable assigned override forms. Works within article lists and single a
 ### author
 
 * [article_custom](article_custom)
+* [file_download_list](file_download_list)
 * [images](images)
 * [linklist](linklist)
-* [file_download_list](file_download_list)
 
 ### auto_detect
 
+* [file_download_list](file_download_list)
 * [images](images)
 * [linklist](linklist)
-* [file_download_list](file_download_list)
 
 ### break
 
-HTML tag (without brackets) or string used to separate list items. Suggested values include `br` and `hr` for presentational markup, or `li` if semantic markup is preferred. Textpattern cares for the correct nesting of tags in either case. Default is `br` (except for tags marked by an asterisk, which default to unset).
+HTML tag (without brackets) or string used to separate list items. Suggested values include `br` and `hr` for presentational markup, or `li` if semantic markup is preferred. Textpattern cares for the correct nesting of tags in either case. Default is `br` (except for tags marked <span class="information">•</span>, which default to unset).
 
-* [article](article) &#42;
-* [article_custom](article_custom) &#42;
+* [article](article) <span class="information">•</span>
+* [article_custom](article_custom) <span class="information">•</span>
+* [authors](authors)
 * [category_list](category_list)
-* [image_index](image_index)
 * [comments](comments)
 * [comments_error](comments_error)
 * [file_download_list](file_download_list)
+* [image_index](image_index)
+* [image_info](image_info)
 * [images](images)
-* [linklist](linklist) &#42;
+* [linklist](linklist) <span class="information">•</span>
 * [recent_articles](recent_articles)
 * [recent_comments](recent_comments)
 * [related_articles](related_articles)
 * [search_result_excerpt](search_result_excerpt)
 * [section_list](section_list)
 
-### breakclass
-
-[HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to `break` (when value supplied is a tag).
-
-* [comments](comments)
-
 ### button
 
 * [search_input](search_input)
+
+### categories
+
+* [category_list](category_list)
 
 ### category
 
 * [article_custom](article_custom)
 * [feed_link](feed_link)
+* [file_download_list](file_download_list)
 * [image_index](image_index)
+* [images](images)
 * [link_feed_link](link_feed_link)
 * [linklist](linklist)
 * [recent_articles](recent_articles)
-* [file_download_list](file_download_list)
-
-### categories
-
-* [category_list](category_list)
 
 ### children
 
@@ -92,44 +89,48 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 
 ### class
 
-[HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to the specified [wraptag](#wraptag). Tags marked with an asterisk use the tag name as the class name by default. Otherwise the default is empty.
+[HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to the specified [wraptag](#wraptag). Tags marked with <span class="information">•</span> use the tag name as the class name by default. Otherwise the default is empty.
 
 * [article](article)
 * [article_custom](article_custom)
 * [article_image](article_image)
+* [authors](authors)
 * [breadcrumb](breadcrumb)
 * [category](category)
 * [category1](category1)
 * [category2](category2)
-* [category_list](category_list) &#42;
-* [comments](comments) &#42;
-* [comments_error](comments_error) &#42;
-* [comments_invite](comments_invite) &#42;
-* [comments_form](comments_form) &#42;
-* [comments_preview](comments_preview) &#42;
+* [category_list](category_list) <span class="information">•</span>
+* [comments](comments) <span class="information">•</span>
+* [comments_error](comments_error) <span class="information">•</span>
+* [comments_form](comments_form) <span class="information">•</span>
+* [comments_invite](comments_invite) <span class="information">•</span>
+* [comments_preview](comments_preview) <span class="information">•</span>
 * [expires](expires)
-* [image](image)
-* [image_index](image_index)
 * [feed_link](feed_link)
+* [file_download_author](file_download_author)
 * [file_download_category](file_download_category)
 * [file_download_description](file_download_description)
-* [file_download_list](file_download_list) &#42;
-* [images](images) &#42;
+* [file_download_list](file_download_list) <span class="information">•</span>
+* [image](image)
+* [image_author](image_author)
+* [image_index](image_index)
+* [image_info](image_info)
+* [images](images) <span class="information">•</span>
+* [link_author](link_author)
 * [link_category](link_category)
 * [link_description](link_description)
-* [link_feed_link](link_feed_link) &#42;
-* [link_to_home](link_to_home)
-* [linklist](linklist) &#42;
+* [link_feed_link](link_feed_link) <span class="information">•</span>
+* [linklist](linklist) <span class="information">•</span>
 * [modified](modified)
 * [permlink](permlink)
 * [popup](popup)
 * [posted](posted)
-* [recent_articles](recent_articles) &#42;
-* [related_articles](related_articles) &#42;
-* [recent_comments](recent_comments) &#42;
-* [search_input](search_input) &#42;
+* [recent_articles](recent_articles) <span class="information">•</span>
+* [recent_comments](recent_comments) <span class="information">•</span>
+* [related_articles](related_articles) <span class="information">•</span>
+* [search_input](search_input)
 * [section](section)
-* [section_list](section_list) &#42;
+* [section_list](section_list) <span class="information">•</span>
 * [thumbnail](thumbnail)
 
 ### cols
@@ -166,6 +167,7 @@ In your tag, replace `customfieldname` with the actual name of the desired custo
 Escape HTML entities.
 
 * [article_image](article_image)
+* [author](author)
 * [author_email](author_email)
 * [custom_field](custom_field)
 * [file_download_description](file_download_description)
@@ -173,8 +175,12 @@ Escape HTML entities.
 * [image_info](image_info)
 * [link_description](link_description)
 * [link_name](link_name)
+* [meta_author](meta_author)
+* [meta_description](meta_description)
+* [meta_keywords](meta_keywords)
 * [newer](newer)
 * [older](older)
+* [text](text)
 * [thumbnail](thumbnail)
 
 ### excerpted
@@ -183,6 +189,7 @@ Escape HTML entities.
 
 ### exclude
 
+* [article_custom](article_custom)
 * [category_list](category_list)
 * [section_list](section_list)
 
@@ -198,7 +205,6 @@ Escape HTML entities.
 
 * [file_download](file_download)
 * [file_download_link](file_download_link)
-* [file_download_name](file_download_name)
 
 ### flavor
 
@@ -207,7 +213,7 @@ Escape HTML entities.
 
 ### forgetlabel
 
-* [comments_form](comments_form)
+* [comment_remember](comment_remember)
 
 ### form
 
@@ -215,12 +221,14 @@ Used to format content for display. See @@Form templates@@ for further explanati
 
 * [article](article)
 * [article_custom](article_custom)
+* [authors](authors)
 * [category_list](category_list)
 * [comments](comments)
 * [comments_form](comments_form)
 * [comments_preview](comments_preview)
 * [file_download](file_download)
 * [file_download_list](file_download_list)
+* [images](images)
 * [linklist](linklist)
 * [output_form](output_form)
 * [recent_comments](recent_comments)
@@ -230,6 +238,7 @@ Used to format content for display. See @@Form templates@@ for further explanati
 
 ### format
 
+* [author](author)
 * [comment_time](comment_time)
 * [css](css)
 * [expires](expires)
@@ -237,14 +246,15 @@ Used to format content for display. See @@Form templates@@ for further explanati
 * [file_download_created](file_download_created)
 * [file_download_modified](file_download_modified)
 * [file_download_size](file_download_size)
+* [image_date](image_date)
 * [link_date](link_date)
 * [link_feed_link](link_feed_link)
+* [meta_author](meta_author)
+* [meta_description](meta_description)
+* [meta_keywords](meta_keywords)
 * [modified](modified)
 * [posted](posted)
-
-### frontpage
-
-* [article_custom](article_custom)
+* [search_result_date](search_result_date)
 
 ### gmt
 
@@ -254,10 +264,15 @@ Used to format content for display. See @@Form templates@@ for further explanati
 * [modified](modified)
 * [posted](posted)
 
+### group
+
+* [authors](authors)
+
 ### height
 
 * [article_image](article_image)
 * [image](image)
+* [thumbnail](thumbnail)
 
 ### hilight
 
@@ -268,8 +283,11 @@ Used to format content for display. See @@Form templates@@ for further explanati
 [HTML id attribute](https://www.w3.org/TR/html5/dom.html#the-id-attribute) to be applied to the [wraptag](#wraptag).
 
 * [article_image](article_image)
+* [category_list](category_list)
 * [image](image)
+* [images](images)
 * [search_input](search_input)
+* [section_list](section_list)
 * [thumbnail](thumbnail)
 
 ### id
@@ -280,7 +298,12 @@ Used to format content for display. See @@Form templates@@ for further explanati
 * [file_download_list](file_download_list)
 * [if_article_id](if_article_id)
 * [image](image)
+* [image_date](image_date)
+* [image_info](image_info)
+* [image_url](image_url)
 * [images](images)
+* [link](link)
+* [linklist](linklist)
 * [permlink](permlink)
 * [thumbnail](thumbnail)
 
@@ -304,8 +327,11 @@ This string will be prepended to the output. When using a [wraptag](#wraptag) va
 
 * [article](article)
 * [article_custom](article_custom)
+* [authors](authors)
 * [breadcrumb](breadcrumb) (Site name)
 * [category_list](category_list)
+* [comment_submit](comment_submit)
+* [comments_preview](comments_preview)
 * [feed_link](feed_link)
 * [file_download_list](file_download_list)
 * [image_index](image_index)
@@ -315,7 +341,7 @@ This string will be prepended to the output. When using a [wraptag](#wraptag) va
 * [link_feed_link](link_feed_link)
 * [linklist](linklist)
 * [popup](popup) (Browse)
-* [recent_articles](recent_articles) (Recent Articles)
+* [recent_articles](recent_articles) (Recent articles)
 * [recent_comments](recent_comments)
 * [related_articles](related_articles)
 * [search_input](search_input) (Search)
@@ -327,6 +353,7 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset.
 
 * [article](article)
 * [article_custom](article_custom)
+* [authors](authors)
 * [category_list](category_list)
 * [file_download_list](file_download_list)
 * [image_index](image_index)
@@ -351,25 +378,38 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset.
 
 * [article](article)
 * [article_custom](article_custom)
+* [authors](authors)
+* [category_list](category_list)
 * [comments](comments)
 * [feed_link](feed_link)
 * [file_download_list](file_download_list)
 * [image_index](image_index)
+* [images](images)
 * [linklist](linklist)
 * [recent_articles](recent_articles)
 * [recent_comments](recent_comments)
 * [related_articles](related_articles)
 * [search_result_excerpt](search_result_excerpt)
+* [section_list](section_list)
 
 ### link
 
 * [author](author)
+* [author_email](author_email)
 * [breadcrumb](breadcrumb)
 * [category](category)
 * [category1](category1)
 * [category2](category2)
 * [comment_name](comment_name)
+* [file_download_author](file_download_author)
+* [image_author](image_author)
+* [image_url](image_url)
+* [link_author](link_author)
 * [section](section)
+* [thumbnail](thumbnail)
+
+### link_rel
+
 * [thumbnail](thumbnail)
 
 ### linkclass
@@ -394,25 +434,33 @@ See @@Forms templates@@ for further explanation.
 
 ### match
 
+* [if_custom_field](if_custom_field)
 * [related_articles](related_articles)
 * [search_input](search_input)
+
+### max
+
+* [if_search_results](if_search_results)
 
 ### media
 
 * [css](css)
 
+### min
+
+* [if_search_results](if_search_results)
+
 ### month
 
 * [article_custom](article_custom)
 
-### no_widow
+### msg
 
-* [recent_articles](recent_articles)
-* [related_articles](related_articles)
-* [title](title)
+* [txp_die](txp_die)
 
 ### name
 
+* [authors](authors)
 * [category](category)
 * [css](css)
 * [custom_field](custom_field)
@@ -420,15 +468,26 @@ See @@Forms templates@@ for further explanation.
 * [if_article_category](if_article_category)
 * [if_article_section](if_article_section)
 * [if_author](if_author)
-* [if_custom_field](if_custom_field)
 * [if_category](if_category)
+* [if_custom_field](if_custom_field)
 * [if_plugin](if_plugin)
 * [if_section](if_section)
 * [if_variable](if_variable)
 * [image](image)
-* [thumbnail](thumbnail)
+* [image_date](image_date)
+* [image_info](image_info)
+* [image_url](image_url)
+* [images](images)
+* [link](link)
 * [section](section)
+* [thumbnail](thumbnail)
 * [variable](variable)
+
+### no_widow
+
+* [recent_articles](recent_articles)
+* [related_articles](related_articles)
+* [title](title)
 
 ### number
 
@@ -438,11 +497,17 @@ See @@Forms templates@@ for further explanation.
 
 * [article](article)
 * [article_custom](article_custom)
+* [authors](authors)
+* [category_list](category_list)
 * [comments](comments)
 * [file_download_list](file_download_list)
 * [image_index](image_index)
+* [images](images)
 * [linklist](linklist)
+* [recent_articles](recent_articles)
 * [recent_comments](recent_comments)
+* [related_articles](related_articles)
+* [section_list](section_list)
 
 ### pageby
 
@@ -464,21 +529,16 @@ See @@Forms templates@@ for further explanation.
 Used to return pagination statistics without rendering the article list. Care must be taken to remain consistent with article tag attributes to keep statistics accurate.
 
 * [article](article)
-* [article_custom](article_custom)
 
 ### poplink
 
 * [thumbnail](thumbnail)
 
-### previewlabel
-
-* [comments_form](comments_form)
-
 ### realname
 
+* [file_download_list](file_download_list)
 * [images](images)
 * [linklist](linklist)
-* [file_download_list](file_download_list)
 
 ### rel
 
@@ -490,7 +550,7 @@ HTML [rel attribute](https://www.w3.org/TR/html5/document-metadata.html#attr-lin
 
 ### rememberlabel
 
-* [comments_form](comments_form)
+* [comment_remember](comment_remember)
 
 ### rows
 
@@ -521,9 +581,12 @@ See @@Forms templates@@ for further explanation.
 * [category2](category2)
 * [category_list](category_list)
 * [feed_link](feed_link)
+* [file_download_author](file_download_author)
+* [image_author](image_author)
+* [link_author](link_author)
 * [popup](popup)
-* [related_articles](related_articles)
 * [recent_articles](recent_articles)
+* [related_articles](related_articles)
 * [search_input](search_input)
 
 ### sections
@@ -533,6 +596,8 @@ See @@Forms templates@@ for further explanation.
 ### separator
 
 * [breadcrumb](breadcrumb)
+* [if_custom_field](if_custom_field)
+* [meta_keywords](meta_keywords)
 * [page_title](page_title)
 
 ### showalways
@@ -547,17 +612,13 @@ See @@Forms templates@@ for further explanation.
 
 * [comments_invite](comments_invite)
 
-### show_preview
-
-* [comments_form](comments_form)
-
 ### size
 
 HTML [size attribute](https://www.w3.org/TR/html5/forms.html#the-size-attribute) to be applied to HTML form [input tags](https://www.w3.org/TR/html5/forms.html#the-input-element).
 
-* [comments_email_input](comments_email_input)
-* [comments_name_input](comments_name_input)
-* [comments_web_input](comments_web_input)
+* [comment_email_input](comment_email_input)
+* [comment_name_input](comment_name_input)
+* [comment_web_input](comment_web_input)
 * [search_input](search_input)
 
 ### sort
@@ -566,10 +627,12 @@ How to sort the resulting list. Available and default values vary by tag, but mu
 
 * [article](article)
 * [article_custom](article_custom)
+* [authors](authors)
 * [category_list](category_list)
 * [comments](comments)
 * [file_download_list](file_download_list)
 * [image_index](image_index)
+* [images](images)
 * [linklist](linklist)
 * [recent_articles](recent_articles)
 * [recent_comments](recent_comments)
@@ -582,6 +645,7 @@ How to sort the resulting list. Available and default values vary by tag, but mu
 * [article_custom](article_custom)
 * [file_download_list](file_download_list)
 * [if_status](if_status)
+* [txp_die](txp_die)
 
 ### style
 
@@ -591,10 +655,6 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 * [image](image)
 * [permlink](permlink)
 * [thumbnail](thumbnail)
-
-### submitlabel
-
-* [comments_form](comments_form)
 
 ### text
 
@@ -607,15 +667,20 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 ### this_section
 
 * [author](author)
-* [category_list](category_list)
 * [category](category)
 * [category1](category1)
 * [category2](category2)
+* [category_list](category_list)
+* [file_download_author](file_download_author)
+* [image_author](image_author)
+* [link_author](link_author)
 * [popup](popup)
 
 ### thumbnail
 
 * [article_image](article_image)
+* [image_url](image_url)
+* [images](images)
 
 ### time
 
@@ -632,13 +697,14 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 * [css](css)
 * [email](email)
 * [feed_link](feed_link)
-* [file_download_category](file_download_category)
 * [file_download_author](file_download_author)
+* [file_download_category](file_download_category)
 * [file_download_name](file_download_name)
 * [image_author](image_author)
 * [link_author](link_author)
 * [link_category](link_category)
 * [link_feed_link](link_feed_link)
+* [meta_author](meta_author)
 * [newer](newer)
 * [older](older)
 * [permlink](permlink)
@@ -650,17 +716,23 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 * [category_list](category_list)
 * [if_author](if_author)
 * [if_category](if_category)
+* [if_description](if_description)
+* [image_info](image_info)
+* [meta_description](meta_description)
 * [page_url](page_url)
 * [popup](popup)
 
 ### url
 
+* [category](category)
+* [section](section)
 * [txp_die](txp_die)
 
 ### value
 
 * [if_custom_field](if_custom_field)
 * [if_variable](if_variable)
+* [if_yield](if_yield)
 * [variable](variable)
 
 ### version
@@ -671,6 +743,7 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 * [article_image](article_image)
 * [image](image)
+* [thumbnail](thumbnail)
 
 ### wraptag
 
@@ -679,6 +752,7 @@ HTML tag (without brackets) to wrap around output. Default value is unset, excep
 * [article](article)
 * [article_custom](article_custom)
 * [article_image](article_image)
+* [authors](authors)
 * [breadcrumb](breadcrumb) (`p`)
 * [category](category)
 * [category1](category1)
@@ -691,12 +765,16 @@ HTML tag (without brackets) to wrap around output. Default value is unset, excep
 * [comments_preview](comments_preview)
 * [expires](expires)
 * [feed_link](feed_link)
-* [image](image)
-* [image_index](image_index)
-* [images](images)
+* [file_download_author](file_download_author)
 * [file_download_category](file_download_category)
 * [file_download_description](file_download_description)
 * [file_download_list](file_download_list)
+* [image](image)
+* [image_author](image_author)
+* [image_index](image_index)
+* [image_info](image_info)
+* [images](images)
+* [link_author](link_author)
 * [link_category](link_category)
 * [link_description](link_description)
 * [link_feed_link](link_feed_link)
