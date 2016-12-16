@@ -8,11 +8,13 @@ description: This cross-reference makes clear the different Textpattern tags ass
 
 # Tag attributes cross-reference [todo:pw]
 
-This cross-reference makes clear the different Textpattern tags associated with a given attribute. For each attribute, the associated tags are listed underneath it.
+This cross-reference document makes clear the different Textpattern tags associated with a given attribute.
+
+For each attribute, the associated tags are listed underneath it.
 
 ### active_class
 
-"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to the 'active' or current link in a list.
+[HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to the 'active' or current link in a list.
 
 * [category_list](category_list)
 * [section_list](section_list)
@@ -62,7 +64,7 @@ Used to disable assigned override forms. Works within article lists and single a
 
 ### breakclass
 
-"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to `break` (when value supplied is a tag).
+[HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to `break` (when value supplied is a tag).
 
 * [comments](comments)
 
@@ -90,7 +92,7 @@ Used to disable assigned override forms. Works within article lists and single a
 
 ### class
 
-"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to the specified [wraptag](#wraptag). Tags marked with an asterisk use the tag name as the class name by default. Otherwise the default is empty.
+[HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to the specified [wraptag](#wraptag). Tags marked with an asterisk use the tag name as the class name by default. Otherwise the default is empty.
 
 * [article](article)
 * [article_custom](article_custom)
@@ -257,7 +259,7 @@ Used to format content for display. See @@Form templates@@ for further explanati
 
 ### html_id
 
-"HTML id attribute":http://www.w3.org/TR/html4/struct/global.html#adef-id to be applied to the [wraptag](#wraptag).
+[HTML id attribute](https://www.w3.org/TR/html5/dom.html#the-id-attribute) to be applied to the [wraptag](#wraptag).
 
 * [article_image](article_image)
 * [image](image)
@@ -321,7 +323,7 @@ This string will be prepended to the output. When using a [wraptag](#wraptag) va
 
 ### labeltag
 
-"HTML tag":http://www.w3.org/TR/html4/intro/sgmltut.html#h-3.2.1 (without brackets) to wrap around "label](attributes_cross-reference#label. Default is unset.
+"HTML tag":http://www.w3.org/TR/html4/intro/sgmltut.html#h-3.2.1 (without brackets) to wrap around [label](#label). Default is unset.
 
 * [article](article)
 * [article_custom](article_custom)
@@ -372,7 +374,7 @@ This string will be prepended to the output. When using a [wraptag](#wraptag) va
 
 ### linkclass
 
-"HTML class attribute":http://www.w3.org/TR/html4/struct/global.html#adef-class to be applied to links.
+[HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to links.
 
 * [breadcrumb](breadcrumb)
 
