@@ -93,17 +93,9 @@ If the tag is a conditional tag, check to make sure that any [else](http://docs.
 **Wrong:**
 
 ~~~ html
-<ul>
-    <li>
-        <txp:else>
-    </li>
-    <li>
-        </txp:else>
-    </li>
-    <li>
-        </txp:else />
-    </li>
-</ul>
+<txp:else>
+</txp:else>
+</txp:else />
 ~~~
 
 Single (self-closing) tags must have a single slash at the end:
@@ -115,5 +107,5 @@ Single (self-closing) tags must have a single slash at the end:
 Also check that the angle brackets have not been HTML encoded by mistake, e.g.:
 
 ~~~ html
-&lt;txp:some_tag /gt;
+&lt;txp:some_tag /&gt;
 ~~~
