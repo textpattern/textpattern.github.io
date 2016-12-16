@@ -9,7 +9,7 @@ tags:
 
 # Tag reference index
 
-Each Textpattern tag is described in detail on its respective reference page. See [Tag basics](http://docs.textpattern.io/tags/tag-basics/) for overview of tag types and modes of use. For a complete list of tag attributes see the [Tag attributes cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference).
+Each Textpattern tag is described in detail on its respective reference page. See [Tag basics](http://docs.textpattern.io/tags/tag-basics/) for overview of tag types and modes of use. For a complete list of tag attributes see [Tag attributes cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference).
 
 ## Subcategories
 
