@@ -45,7 +45,7 @@ Used to disable assigned override forms. Works within article lists and single a
 
 ### break
 
-"HTML tag":http://www.w3.org/TR/html4/intro/sgmltut.html#h-3.2.1 (without brackets) or string used to separate list items. Suggested values include `br` and `hr` for presentational markup, or `li` if semantic markup is preferred. Textpattern cares for the correct nesting of tags in either case. Default is `br` (except for tags marked by an asterisk, which default to unset).
+HTML tag (without brackets) or string used to separate list items. Suggested values include `br` and `hr` for presentational markup, or `li` if semantic markup is preferred. Textpattern cares for the correct nesting of tags in either case. Default is `br` (except for tags marked by an asterisk, which default to unset).
 
 * [article](article) &#42;
 * [article_custom](article_custom) &#42;
@@ -323,7 +323,7 @@ This string will be prepended to the output. When using a [wraptag](#wraptag) va
 
 ### labeltag
 
-"HTML tag":http://www.w3.org/TR/html4/intro/sgmltut.html#h-3.2.1 (without brackets) to wrap around [label](#label). Default is unset.
+HTML tag (without brackets) to wrap around [label](#label). Default is unset.
 
 * [article](article)
 * [article_custom](article_custom)
@@ -384,13 +384,13 @@ This string will be prepended to the output. When using a [wraptag](#wraptag) va
 
 ### listform
 
-See "forms_explained](forms_explained.
+See @@Forms templates@@ for further explanation.
 
 * [article](article)
 
 ### login
 
-* [password_protect](password_protect
+* [password_protect](password_protect)
 
 ### match
 
@@ -399,7 +399,7 @@ See "forms_explained](forms_explained.
 
 ### media
 
-* [css](css
+* [css](css)
 
 ### msgcols
 
@@ -681,7 +681,7 @@ How to sort the resulting list. Available and default values vary by tag, but mu
 
 ### wraptag
 
-"HTML tag":http://www.w3.org/TR/html4/intro/sgmltut.html#h-3.2.1 (without brackets) to wrap around output. Default value is unset, except where shown in parentheses.
+HTML tag (without brackets) to wrap around output. Default value is unset, except where shown in parentheses.
 
 * [article](article)
 * [article_custom](article_custom)
