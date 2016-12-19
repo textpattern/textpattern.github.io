@@ -34,9 +34,7 @@ search_omit: true
     {% for post in site.tags[this_word] %}{% if post.title != null %}
     <div>
         <a href="{{ post.url }}">{{ post.title }}</a>
-        {{ post.date | date_to_string }}
     </div>
-    <div style="clear: both;"></div>
     {% endif %}{% endfor %}
     {% endunless %}{% endfor %}
 </div>
