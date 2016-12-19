@@ -17,7 +17,7 @@ search_omit: true
 <!-- List of all tags -->
 <ul class="tags">
     {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
+    {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
     <li>
         <a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }}
             <span>({{ site.tags[this_word].size }})</span>
@@ -27,14 +27,12 @@ search_omit: true
 </ul>
 
 <!-- Posts by Tag -->
-<div>
-    {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
-    {% for post in site.tags[this_word] %}{% if post.title != null %}
-    <div>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-    </div>
-    {% endif %}{% endfor %}
-    {% endunless %}{% endfor %}
-</div>
+{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+<h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+<ul class="posts">
+{% for post in site.tags[this_word] %}{% if post.title != null %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endif %}{% endfor %}
+</ul>
+{% endunless %}{% endfor %}
