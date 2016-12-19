@@ -4,7 +4,8 @@ category: Tags
 published: true
 title: "Breadcrumb"
 description: The breadcrumb tag is a single tag which is used to create breadcrumb navigation.
-tags: [Navigation tags]
+tags:
+  - Navigation tags
 ---
 
 # Breadcrumb
