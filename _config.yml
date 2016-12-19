@@ -3,3 +3,8 @@ timezone: Europe/London
 permalink: none
 gems:
   - jekyll-sitemap
+tags:
+  - Article tags
+  - List tags
+  - Navigation tags
+  - Structural tags

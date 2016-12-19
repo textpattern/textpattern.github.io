@@ -11,10 +11,11 @@ sitemap: false
 
 A list of Textpattern documentation sorted by category tag.
 
-<ul class="tags">
-{% for tag in site.tags %}
-  {% assign t = tag | first %}
-  {% assign posts = tag | last %}
-  <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
+{% for page in site.pages %}
+  {% if page.tags contains 'Article tags' %}
+    <div class="item">
+      <h3>{{page.title}}</h3>
+      <p>{{page.description}}</p>  
+    </div>
+  {% endif %}
 {% endfor %}
-</ul>
