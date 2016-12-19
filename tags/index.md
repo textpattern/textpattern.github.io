@@ -11,15 +11,32 @@ tags:
 
 Each Textpattern tag is described in detail on its respective reference page. See [Tag basics](http://docs.textpattern.io/tags/tag-basics/) for overview of tag types and modes of use. For a complete list of tag attributes see [Tag attributes cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference).
 
-## Subcategories
+## Subcategories (TODO)
 
-*TODO*
+{::options parse_block_html="true" /}
+
+<div class="layout-text4col">
+
+* Article tags
+* Comment tags
+* Conditional tags
+* Error handling tags
+* File tags
+* Future tags
+* Image tags
+* Link tags
+* List tags
+* Markup tags
+* Navigation tags
+* Programmer tags
+* Search tags
+* Structural tags
+
+</div>
 
 ## Complete list of Textpattern tags
 
 ### A
-
-{::options parse_block_html="true" /}
 
 <div class="layout-text4col">
 
