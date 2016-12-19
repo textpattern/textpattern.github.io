@@ -11,7 +11,7 @@ sitemap: false
 
 A list of Textpattern documentation within category 'Article Tags'.
 
-<ul>
+<div>
     {% for page in site.pages %}
         {% if page.tags contains 'Article tags' %}
             <article>
@@ -21,4 +21,4 @@ A list of Textpattern documentation within category 'Article Tags'.
             </article>
         {% endif %}
     {% endfor %}
-</ul>
+</div>
