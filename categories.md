@@ -7,17 +7,18 @@ search_omit: true
 sitemap: false
 ---
 
-# Categories
+# Category: Article tags
 
-A list of Textpattern documentation sorted by category tag.
+A list of Textpattern documentation within category 'Article Tags'.
 
 <ul>
     {% for page in site.pages %}
         {% if page.tags contains 'Article tags' %}
-            <li>
+            <article>
                 <h3>{{page.title}}</h3>
-                <p>{{page.description}}</p>  
-            </li>
+                <p>{{page.description}}</p>
+                <p><a href="{{page.url}}">Go to the full documentation...</a></p>
+            </article>
         {% endif %}
     {% endfor %}
 </ul>
