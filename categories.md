@@ -2,11 +2,13 @@
 layout: default
 published: true
 title: "Categories"
-description: Documentation categories
+description: A list of Textpattern documentation sorted by category tag.
 search_omit: true
 ---
 
 # Categories
+
+A list of Textpattern documentation sorted by category tag.
 
 <!-- Get the tag name for every tag on the site and set them to the `site_tags` variable. -->
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
