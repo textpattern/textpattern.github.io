@@ -11,6 +11,13 @@ sitemap: false
 
 A list of Textpattern documentation sorted by category tag.
 
-{% for page in site.pages %}
-<a href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
-{% endfor %}
+<ul>
+    {% for page in site.pages %}
+        {% if page.tags contains 'Article tags' %}
+            <li>
+                <h3>{{page.title}}</h3>
+                <p>{{page.description}}</p>  
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
