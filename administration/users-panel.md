@@ -99,11 +99,11 @@ The most popular approach for admin-side extension of user accounts,
 indeed what should nearly be core functionality, is to install and use
 two plugins that work together:
 
--   [smd\_user\_manager](http://forum.textpattern.com/viewtopic.php?id=36558)
+-   [smd_user_manager](http://forum.textpattern.com/viewtopic.php?id=36558)
     -- This plugin provides a much richer set of features for managing
     user accounts, including modifying the core user roles
     and privileges.
--   [smd\_bio](http://forum.textpattern.com/viewtopic.php?id=31496) --
+-   [smd_bio](http://forum.textpattern.com/viewtopic.php?id=31496) --
     This plugin extends the user account data itself, so you can create
     user bios or profiles having any data structure you want and display
     that data on the front-side of a website.[^5]
@@ -123,17 +123,17 @@ front-side access, which effectively abstracts the admin-side UI panels
 away from such users. Depending on what you need or want to do, there
 are various plugins to try:
 
--   [cbe\_frontauth](http://forum.textpattern.com/viewtopic.php?id=36552)
+-   [cbe_frontauth](http://forum.textpattern.com/viewtopic.php?id=36552)
     ([on Github](https://github.com/ClaireBrione/cbe_frontauth)) -- A
     plugin that enables front-side log in abilities for *existing*
     account holders. This plugin is often used in combination with
-    [cbe\_members](http://forum.textpattern.com/viewtopic.php?id=37760).
--   [mem\_self\_register](http://forum.textpattern.com/viewtopic.php?id=8520)
-    -- A plugin similar to cbe\_frontauth, but also enables the ability
+    [cbe_members](http://forum.textpattern.com/viewtopic.php?id=37760).
+-   [mem_self_register](http://forum.textpattern.com/viewtopic.php?id=8520)
+    -- A plugin similar to cbe_frontauth, but also enables the ability
     to register an account too. This plugin is often used in combination
     with
-    [mem\_form](http://forum.textpattern.com/viewtopic.php?id=25247).
--   [ign\_password\_protect](http://forum.textpattern.com/viewtopic.php?id=8799)
+    [mem_form](http://forum.textpattern.com/viewtopic.php?id=25247).
+-   [ign_password_protect](http://forum.textpattern.com/viewtopic.php?id=8799)
     -- A plugin that enables you to password protect part or all of a
     website's front-end, and create varying rights of access to the
     protected areas.

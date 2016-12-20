@@ -1,4 +1,4 @@
-\\n[mininav\_tutorials](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials)
+\\n[mininav_tutorials](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials)
 
 [warning](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=warning)
 
@@ -15,18 +15,18 @@ usability then you can go with [Messy
 URLs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#messy_urls),
 simply select the “**?=messy**” option in the Permanent Link Mode
 drop-down box in the
-[basic\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
+[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
 panel and forget about the rest of these instructions.
 
 ### The Process {#the-process .sectionedit1#the_process}
 
-#### Step 1: Ensure You Have mod\_rewrite Capabilities {#step_1ensure_you_have_mod_rewrite_capabilities}
+#### Step 1: Ensure You Have mod_rewrite Capabilities {#step_1ensure_you_have_mod_rewrite_capabilities}
 
 Before you go any further, you should make sure you have
-[Mod\_Rewrite](/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#mod_rewrite)
+[Mod_Rewrite](/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#mod_rewrite)
 capabilities; if you don't, you will not be able to use clean URLs and
 will have to settle for messy URLs. To check to see if you have
-Mod\_Rewrite abilities, do the following:
+Mod_Rewrite abilities, do the following:
 
 <ol>
 <li>
@@ -49,13 +49,13 @@ URL to the file in the browser address bar and hit *Enter*).
 </li>
 </ol>
 In the resulting file, you want to look in the “Apache” section, then
-“Loaded Modules”, and then for something indicating *Mod\_Rewrite*. If
-you have Mod\_Rewrite, then you can proceed beyond step 2. If not, then
+“Loaded Modules”, and then for something indicating *Mod_Rewrite*. If
+you have Mod_Rewrite, then you can proceed beyond step 2. If not, then
 finish step 2 as follows and call it good with your URLs.
 
-**Note:** You will need to have Mod\_Rewrite abilities even if you try
+**Note:** You will need to have Mod_Rewrite abilities even if you try
 to have clean URLs using plugins like
-[gbp\_permanent\_links](http://forum.textpattern.com/viewtopic.php?id=18918).
+[gbp_permanent_links](http://forum.textpattern.com/viewtopic.php?id=18918).
 
 #### Step 2: Getting Ready in "Messy&quot; Mode {#step_2getting_ready_in_messy_mode}
 
@@ -68,7 +68,7 @@ panel.
 However, what you should do now is go back and make sure you have
 selected the “**?=messy**” option in the Permanent Link Mode section of
 the
-[basic\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
+[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
 panel. (This enables you to establish some site structure and
 troubleshoot diagnostics easier, which are the next things to take care
 of.)
@@ -93,10 +93,10 @@ with each section.
 If you do have some structure and content to your site, then what you
 need to think about now is how you want your clean URLs to look, and
 again we refer you to the Permanent Link Mode options in the
-[basic\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
+[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
 panel where you set this.
 
-#### Step 4: Addressing Your .htaccess File mod\_rewrite Rules {#step_4addressing_your_htaccess_file_mod_rewrite_rules}
+#### Step 4: Addressing Your .htaccess File mod_rewrite Rules {#step_4addressing_your_htaccess_file_mod_rewrite_rules}
 
 With luck, clean URLs will just work with the .htaccess file distributed
 with Textpattern.
@@ -104,7 +104,7 @@ with Textpattern.
 One situation in which it may need to be tweaked is if you have not yet
 transferred your DNS entry to point to the new server, so you are
 accessing your site with a URL such as
-&lt;\_yamdwe\_nowiki&gt;0&lt;/\_yamdwe\_nowiki&gt;.
+&lt;_yamdwe_nowiki&gt;0&lt;/_yamdwe_nowiki&gt;.
 
 In this case you would add the following RewriteBase rule to the
 .htaccess file:

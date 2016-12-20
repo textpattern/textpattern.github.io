@@ -1,4 +1,4 @@
-\\n[mininav\_presentation\_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs)
+\\n[mininav_presentation_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs)
 
 [![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:sections-tab.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:sections-tab.png)
 
@@ -9,7 +9,7 @@ Sections panel is where you manage them (Figure 1).
 Sections essentially provide the ability to create lateral structure in
 your site, thus each section has its own unique URL if the site is
 configured to use clean URLs in
-[basic\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences).
+[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences).
 
 In the sections panel, you're able to define what
 [pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages) and
@@ -55,7 +55,7 @@ following or undesirable results will likely occur:
 -   **category** (or the equivalent in the site's set language)
 -   **section** (or the equivalent in the site's set language)
 -   **atom**
--   **file\_download**
+-   **file_download**
 -   **rss**
 
 Section names already assigned to **directories** (and of course vice

@@ -51,13 +51,13 @@ notextile.
 **Argument \#1** is the event passed to your function, usually ends in
 `_ui` (for “user interface”) and begins with the event to which it
 refers. For example, on the **Write** panel the event is `article_ui`,
-and on the **Files** panel the event is file\_ui. Straightforward.
+and on the **Files** panel the event is file_ui. Straightforward.
 
 **Argument \#2**, the \$step, is usually the part of the panel that
 contains the widget or any of its controls you wish to change. For
 example, on the Write panel, the Article image control has a \$step
-called article\_image and the Custom fields widget has one called
-custom\_fields, and so on.
+called article_image and the Custom fields widget has one called
+custom_fields, and so on.
 
 Arguments 3, 4, and 5 are optional depending on what you're trying to
 do...
@@ -76,7 +76,7 @@ and argument \#5 holds its value.
 
 ## Examples
 
-In this example we have a basic admin-side plugin called "abc\_hello".
+In this example we have a basic admin-side plugin called "abc_hello".
 The plugin creates a new **ABC Hello** panel under the **Extensions**
 region, which is accessible to administrators and *publishers* (i.e.
 privs 1,2 users):
@@ -96,7 +96,7 @@ So far `pluggable_ui()` is not used at all in the plugin. We've used
 admin-side panels too.
 
 But in the rare case we might want to allow other plugins to alter the
-output of abc\_hello, we could replace `echo '<p>Hello, World!</p>';`
+output of abc_hello, we could replace `echo '<p>Hello, World!</p>';`
 part with:
 
     php

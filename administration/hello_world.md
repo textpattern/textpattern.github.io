@@ -1,6 +1,6 @@
-\\n[mininav\_tutorials](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials)
+\\n[mininav_tutorials](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials)
 
-\_Originally adapted from [this
+_Originally adapted from [this
 tutorial](http://ipsedixit.net/txp/116/textpattern-quickstart-hello-world)
 by [Jeff Soo](http://ipsedixit.net/txp/._)
 
@@ -18,7 +18,7 @@ tutorials are:
     Blocks](http://wion.com/articles/understanding-textpattern-building-blocks).
     This is the “big picture” approach, if you like to start
     with theory.
--   [textpattern\_first\_steps](/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_first_steps).
+-   [textpattern_first_steps](/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_first_steps).
     The “feel your way around” approach, if you prefer to tinker with an
     existing installation.
 
@@ -373,7 +373,7 @@ not to be confused with [HTML
 forms](http://htmlhelp.com/reference/html40/forms/form.html)) are
 reusable template chunks, a convenient way to keep your templates tidy
 and also to share code and markup among templates. For example, on my
-Textpattern sites I nearly always have a form called “page\_top”, which
+Textpattern sites I nearly always have a form called “page_top”, which
 contains the doctype declaration, the opening
 
     <html>
@@ -418,15 +418,15 @@ search results, in which context
 
     article
 
-looks for a form called “search\_results”.
+looks for a form called “search_results”.
 
 Go to
 [Presentation→Forms](/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms).
-We're going to overwrite the “default” and “search\_results” forms, so
+We're going to overwrite the “default” and “search_results” forms, so
 if you want to keep the originals copy each of them and make new forms
 to hold the backups. Again, this is optional, because you can always
 retrieve “the
-[default\_forms](/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms).
+[default_forms](/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms).
 
 Load the “default” form into the editor by clicking its link in the
 right-hand list. Replace the entire contents of the form with:
@@ -438,7 +438,7 @@ right-hand list. Replace the entire contents of the form with:
     <txp:excerpt />
     </txp:if_individual_article>
 
-and save the change. Select “search\_results” for editing and replace
+and save the change. Select “search_results” for editing and replace
 its contents with:
 
     <h2><txp:permlink><txp:title /></txp:permlink></h2>

@@ -1,14 +1,14 @@
-\\n[mininav\_admin\_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs)
+\\n[mininav_admin_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs)
 
 [![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:basic-prefs.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:basic-prefs.png)
 
 The
-[basic\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
+[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
 tab is the first most important panel in a new Textpattern site; it
 (along with
-[advanced\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
+[advanced_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
 and
-[language\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences))
+[language_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences))
 is where you configure just about every aspect of how you want your site
 to function on a regular basis.
 
@@ -238,7 +238,7 @@ step to making it happen, by selecting one of the options other than
 “messy.” However, it is usually not as simple as just selecting one of
 these options to make clean URLs work. Getting clean URLs to work may
 take a combination of steps, addressed in
-[managing\_clean\_urls](/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls).
+[managing_clean_urls](/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls).
 
 [![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-prefs-publ-permlink.gif)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-prefs-publ-permlink.gif)
 
@@ -255,7 +255,7 @@ entirely.
 The “Logging” control allows you to select what kinds of visiting
 activity Textpattern should record when such activity occurs. The
 recorded information is displayed in the
-[visitor\_logs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs)
+[visitor_logs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs)
 panel for you to review. This *Logging* control is a drop-down menu with
 three options (Figure 6).
 

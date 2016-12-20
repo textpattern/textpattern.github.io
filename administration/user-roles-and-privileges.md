@@ -258,7 +258,7 @@ Modifying user roles and privileges {#sec4}
 -----------------------------------
 
 You can go beyond assigning roles by installing the
-[smd\_user\_manager](http://forum.textpattern.com/viewtopic.php?id=36558)
+[smd_user_manager](http://forum.textpattern.com/viewtopic.php?id=36558)
 plugin and modify the default role titles, creating new role types, and
 changing the privileges a given role has. The plugin also allows
 creating custom user groups in addition to changing individual roles,
@@ -291,14 +291,14 @@ documented so each contributor knows what's expected of them by role
 assignment.
 
 [^1]: The
-    [smd\_user\_manager](http://forum.textpattern.com/viewtopic.php?id=36558)
-    and [smd\_bio](http://forum.textpattern.com/viewtopic.php?id=31496)
+    [smd_user_manager](http://forum.textpattern.com/viewtopic.php?id=36558)
+    and [smd_bio](http://forum.textpattern.com/viewtopic.php?id=31496)
     plugins can be installed and used to expand user account data and
     produce published bios or user profiles generated from the expanded
     data.
 
 [^2]: You may also install and use the
-    [smd\_faux\_role](http://forum.textpattern.com/viewtopic.php?id=33462&p=2)
+    [smd_faux_role](http://forum.textpattern.com/viewtopic.php?id=33462&p=2)
     plugin to more easily visualize what a given role can see and do in
     the administration side. It's most effective when multiple user
     accounts exist and they have varying kinds of content contribution

@@ -1,4 +1,4 @@
-\\n[mininav\_content\_index](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index)
+\\n[mininav_content_index](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index)
 
 [![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-image.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-image.png)
 
@@ -179,7 +179,7 @@ The tag builder has several options:
     gallery1
 
 . The ID you'd like to assign to the image. In HTML / XHTML this is
-rendered as id=“my\_id” inside the img tag.
+rendered as id=“my_id” inside the img tag.
 
 **CSS class**: Example:
 

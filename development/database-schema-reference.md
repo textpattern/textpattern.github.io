@@ -15,22 +15,22 @@ Here we describe each table and the information it contains, effective version 4
 On this page:
 
 -   [textpattern](#sec1)
--   [txp\_category](#sec2)
--   [txp\_css](#sec3)
--   [txp\_discuss](#sec4)
--   [txp\_discuss\_ipban](#sec5)
--   [txp\_discuss\_nonce](#sec6)
--   [txp\_file](#sec7)
--   [txp\_form](#sec8)
--   [txp\_image](#sec9)
--   [txp\_lang](#sec10)
--   [txp\_link](#sec11)
--   [txp\_log](#sec12)
--   [txp\_page](#sec13)
--   [txp\_plugin](#sec14)
--   [txp\_prefs](#sec15)
--   [txp\_section](#sec16)
--   [txp\_users](#sec17)
+-   [txp_category](#sec2)
+-   [txp_css](#sec3)
+-   [txp_discuss](#sec4)
+-   [txp_discuss_ipban](#sec5)
+-   [txp_discuss_nonce](#sec6)
+-   [txp_file](#sec7)
+-   [txp_form](#sec8)
+-   [txp_image](#sec9)
+-   [txp_lang](#sec10)
+-   [txp_link](#sec11)
+-   [txp_log](#sec12)
+-   [txp_page](#sec13)
+-   [txp_plugin](#sec14)
+-   [txp_prefs](#sec15)
+-   [txp_section](#sec16)
+-   [txp_users](#sec17)
 
 textpattern {#sec1}
 -----------
@@ -51,44 +51,44 @@ notextile.
   LastMod            datetime       Modification date and time
   LastModID          varchar(64)    Login name of the author that modified the article
   Title              varchar(255)   Article Title
-  Title\_html        varchar(255)   (reserved for future use)
-  Body               mediumtext     Main article text (max 16MB), see also 'textile\_body'
-  Excerpt            text           Article excerpt (max 64kB), see also 'textile\_excerpt'
-  Body\_html         mediumtext     HTML version of Body
-  Excerpt\_html      mediumtext     HTML version of Excerpt
+  Title_html        varchar(255)   (reserved for future use)
+  Body               mediumtext     Main article text (max 16MB), see also 'textile_body'
+  Excerpt            text           Article excerpt (max 64kB), see also 'textile_excerpt'
+  Body_html         mediumtext     HTML version of Body
+  Excerpt_html      mediumtext     HTML version of Excerpt
   Image              varchar(255)   numerical ID of an image managed by Textpattern or URL of other image
   Category1          varchar(64)    Name of the 1th category associated with this article
   Category2          varchar(64)    Name of the 2nd category associated with this article
   Annotate           integer        Comments enabled? (0 = no, 1 = yes)
   AnnotateInvite     varchar(255)   Text used for inviting people to comment on the article
-  comments\_count    integer        Number of visible comments associated with this article
+  comments_count    integer        Number of visible comments associated with this article
   Status             integer        Status (1 = draft, 2 = hidden, 3 = pending, 4 = live, 5 = sticky)
-  textile\_body      integer        Body markup (0 = raw HTML and text, 1 = textile, 2 = only convert linebreaks. Default = 1)
-  textile\_excerpt   integer        Excerpt markup (0 = raw HTML and text, 1 = textile, 2 = only convert linebreaks. Default = 1)
+  textile_body      integer        Body markup (0 = raw HTML and text, 1 = textile, 2 = only convert linebreaks. Default = 1)
+  textile_excerpt   integer        Excerpt markup (0 = raw HTML and text, 1 = textile, 2 = only convert linebreaks. Default = 1)
   Section            varchar(64)    Name of the section in which this article belongs
-  override\_form     varchar(64)    Textpattern 'form' containing layout used for displaying this specific article, overriding the form which is normally used to display articles. If left empty, the default layout form is used
+  override_form     varchar(64)    Textpattern 'form' containing layout used for displaying this specific article, overriding the form which is normally used to display articles. If left empty, the default layout form is used
   Keywords           varchar(255)   Comma separated list of keywords (often called 'tags') that describe this article
-  url\_title         varchar(255)   Title of the article as used in the URL for the permalinked article page
-  custom\_1          varchar(255)   1th Custom field (plain text)
-  custom\_2          varchar(255)   2nd Custom field (plain text)
-  custom\_3          varchar(255)   3rd Custom field (plain text)
-  custom\_4          varchar(255)   4th Custom field (plain text)
-  custom\_5          varchar(255)   5th Custom field (plain text)
-  custom\_6          varchar(255)   6th Custom field (plain text)
-  custom\_7          varchar(255)   7th Custom field (plain text)
-  custom\_8          varchar(255)   8th Custom field (plain text)
-  custom\_9          varchar(255)   9th Custom field (plain text)
-  custom\_10         varchar(255)   10th Custom field (plain text)
+  url_title         varchar(255)   Title of the article as used in the URL for the permalinked article page
+  custom_1          varchar(255)   1th Custom field (plain text)
+  custom_2          varchar(255)   2nd Custom field (plain text)
+  custom_3          varchar(255)   3rd Custom field (plain text)
+  custom_4          varchar(255)   4th Custom field (plain text)
+  custom_5          varchar(255)   5th Custom field (plain text)
+  custom_6          varchar(255)   6th Custom field (plain text)
+  custom_7          varchar(255)   7th Custom field (plain text)
+  custom_8          varchar(255)   8th Custom field (plain text)
+  custom_9          varchar(255)   9th Custom field (plain text)
+  custom_10         varchar(255)   10th Custom field (plain text)
   uid                varchar(32)    Random string used to uniquely identify this article in an RSS/Atom feed. Textpattern uses md5(uniqid(rand(),true)) to create the uid
-  feed\_time         date           Creation date of the article (when you first save the article, regardless of status)
+  feed_time         date           Creation date of the article (when you first save the article, regardless of status)
 
 notextile.
 
 </div>
-txp\_category {#sec2}
+txp_category {#sec2}
 -------------
 
-The 'txp\_category' table contains all the categories you create on the
+The 'txp_category' table contains all the categories you create on the
 ****[Categories](http://docs.textpattern.io/administration/content/categories-panel**)
 panel.
 
@@ -108,10 +108,10 @@ notextile.
 notextile.
 
 </div>
-txp\_css {#sec3}
+txp_css {#sec3}
 --------
 
-The 'txp\_css' table contains the style sheets created on the
+The 'txp_css' table contains the style sheets created on the
 ****[Styles](http://docs.textpattern.io/administration/presentation/styles-panel**)
 panel.
 
@@ -126,10 +126,10 @@ notextile.
 notextile.
 
 </div>
-txp\_discuss {#sec4}
+txp_discuss {#sec4}
 ------------
 
-The 'txp\_discuss' table contains all the article comments output on the
+The 'txp_discuss' table contains all the article comments output on the
 ****[Comments](http://docs.textpattern.io/administration/content/comments-panel**)
 panel.
 
@@ -151,10 +151,10 @@ notextile.
 notextile.
 
 </div>
-txp\_discuss\_ipban {#sec5}
+txp_discuss_ipban {#sec5}
 -------------------
 
-The 'txp\_discuss\_ipban' table contains a list of all IP-numbers that
+The 'txp_discuss_ipban' table contains a list of all IP-numbers that
 have been banned from commenting by the person who moderates
 ****[Comments](http://docs.textpattern.io/administration/content/comments-panel**).
 
@@ -164,14 +164,14 @@ notextile.
   Column                Type           Description
   --------------------- -------------- ----------------------------------------------------------------------------------
   ip                    varchar(255)   IP-number
-  name\_used            varchar(255)   Name used by the commenter to submit the comment that cause him/her to be banned
-  date\_banned          datetime       Date when the ban was imposed
-  banned\_on\_message   integer        ID of the comment that caused the ban
+  name_used            varchar(255)   Name used by the commenter to submit the comment that cause him/her to be banned
+  date_banned          datetime       Date when the ban was imposed
+  banned_on_message   integer        ID of the comment that caused the ban
 
-txp\_discuss\_nonce {#sec6}
+txp_discuss_nonce {#sec6}
 -------------------
 
-The 'txp\_discuss\_nonce' table is an important part of the spam
+The 'txp_discuss_nonce' table is an important part of the spam
 protection in the commenting system. When the comment form is shown to
 the user, it contains a hidden variable (nonce) with a unique code. This
 code is valid for 10 minutes. If the comment form is submitted, the
@@ -183,7 +183,7 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column        Type          Description
   ------------- ------------- --------------------------------------------------------------------------------------------------------------------------------------------------------
-  issue\_time   datetime      Date and time when the 'nonce' was created
+  issue_time   datetime      Date and time when the 'nonce' was created
   nonce         varchar(32)   Random alphanumeric string of text (md5)
   used          integer       Has the nonce been used for submitting a comment (0 = no, 1 = yes). A nonce cannot be used twice.
   secret        varchar(32)   Random alphanumeric string of text (md5) used to vary the name of the comment message textarea field, making it harder for spammers to submit comments
@@ -191,10 +191,10 @@ notextile.
 notextile.
 
 </div>
-txp\_file {#sec7}
+txp_file {#sec7}
 ---------
 
-The 'txp\_file' table contains information on all the files uploaded
+The 'txp_file' table contains information on all the files uploaded
 through textpattern. The files themselves are stored as normal files on
 disk instead of in the database.
 
@@ -219,10 +219,10 @@ notextile.
 notextile.
 
 </div>
-txp\_form {#sec8}
+txp_form {#sec8}
 ---------
 
-The 'txp\_form' table contains all the forms, which are created on the
+The 'txp_form' table contains all the forms, which are created on the
 ****[Forms](http://docs.textpattern.io/administration/presentation/forms-panel**)
 panel.
 
@@ -238,10 +238,10 @@ notextile.
 notextile.
 
 </div>
-txp\_image {#sec9}
+txp_image {#sec9}
 ----------
 
-The 'txp\_image' table contains information on all the images uploaded
+The 'txp_image' table contains information on all the images uploaded
 and managed in the
 ****[Images](http://docs.textpattern.io/administration/content/images-panel**)
 panel. The image files are not actually stored in the database, they're
@@ -265,16 +265,16 @@ notextile.
   date        datetime       Creation date
   author      varchar(64)    Login name of the author that uploaded the image
   thumbnail   integer        Thumbnail available? (0 = no, 1 = yes)
-  thumb\_w    integer        Thumbnail width in pixels
-  thumb\_h    integer        Thumbnail height in pixels
+  thumb_w    integer        Thumbnail width in pixels
+  thumb_h    integer        Thumbnail height in pixels
 
 notextile.
 
 </div>
-txp\_lang {#sec10}
+txp_lang {#sec10}
 ---------
 
-The 'txp\_lang' table contains translations for the various built-in
+The 'txp_lang' table contains translations for the various built-in
 strings of text used on the public and administration sides of
 Textpattern.
 
@@ -293,10 +293,10 @@ notextile.
 notextile.
 
 </div>
-txp\_link {#sec11}
+txp_link {#sec11}
 ---------
 
-The 'txp\_link' table contains all the links and related information
+The 'txp_link' table contains all the links and related information
 created on the
 ****[Links](http://docs.textpattern.io/administration/content/links-panel**)
 panel.
@@ -318,10 +318,10 @@ notextile.
 notextile.
 
 </div>
-txp\_log {#sec12}
+txp_log {#sec12}
 --------
 
-The 'txp\_log' table contains log entries of page requests (visits) to
+The 'txp_log' table contains log entries of page requests (visits) to
 your website, which are output on the ****[Visitor
 logs](http://docs.textpattern.io/administration/admin/visitor-logs-panel**)
 panel. Depending on your preferences, nothing is logged, just referers
@@ -344,10 +344,10 @@ notextile.
 notextile.
 
 </div>
-txp\_page {#sec13}
+txp_page {#sec13}
 ---------
 
-The 'txp\_page' table contains all the page templates you create on the
+The 'txp_page' table contains all the page templates you create on the
 ****[Pages](http://docs.textpattern.io/administration/presentation/pages-panel**)
 panel.
 
@@ -357,15 +357,15 @@ notextile.
   Column       Type           Description
   ------------ -------------- -------------------------------------------------------
   name         varchar(128)   Name of the template
-  user\_html   text           Template contents: HTML / Textpattern tags (max 64kB)
+  user_html   text           Template contents: HTML / Textpattern tags (max 64kB)
 
 notextile.
 
 </div>
-txp\_plugin {#sec14}
+txp_plugin {#sec14}
 -----------
 
-The 'txp\_plugin' table contains all the plugins you have installed,
+The 'txp_plugin' table contains all the plugins you have installed,
 displayed on the
 ****[Plugins](http://docs.textpattern.io/administration/admin/plugins-panel**)
 panel.
@@ -378,24 +378,24 @@ notextile.
   name            varchar(64)           Plugin name
   status          integer               Status (0 = disabled, 1 = enabled)
   author          varchar(128)          Plugin author name
-  author\_uri     varchar(128)          URL of the plugin author website
+  author_uri     varchar(128)          URL of the plugin author website
   version         varchar(10)           Version in dotted format
   description     text                  Short (!) description of plugin purpose (should be limited to 255 chars)
   help            text                  Documentation in XHTML format (max 64kB)
   code            mediumtext            Plugin code (PHP), sometimes modified by user on Plugin tab (max 16MB)
-  code\_restore   mediumtext            Original plugin code (PHP) (max 16MB)
-  code\_md5       varchar(32)           Checksum of the original plugin code
+  code_restore   mediumtext            Original plugin code (PHP) (max 16MB)
+  code_md5       varchar(32)           Checksum of the original plugin code
   type            integer               Where is the plugin loaded (0 = public, 1 = always, 2 = never, 3 = admin)
-  load\_order     integer               Order in which this plugin will be loaded (1 = first, 9 = last). By default set to 5, which should not be changed unless you know what you're doing
+  load_order     integer               Order in which this plugin will be loaded (1 = first, 9 = last). By default set to 5, which should not be changed unless you know what you're doing
   flags           smallint (unsigned)   16-bit value which signals the presence of optional capabilities to the core plugin loader. The four high-order bits 0xf000 are available for private use.[^2]
 
 notextile.
 
 </div>
-txp\_prefs {#sec15}
+txp_prefs {#sec15}
 ----------
 
-The 'txp\_prefs' table contains all the administration preferences
+The 'txp_prefs' table contains all the administration preferences
 (basic, advanced, and hidden).
 
 notextile.
@@ -403,22 +403,22 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column       Type           Description
   ------------ -------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  prefs\_id    integer        Unknown (always set to 1?)
+  prefs_id    integer        Unknown (always set to 1?)
   name         varchar(255)   Name that identifies this preference
   val          text           Contents/setting of this preference (max 64kB)
   type         integer        Where is it shown on the Preferences tab? (0 = basic, 1 = advanced, 2 = hidden)
   event        varchar(12)    Event to which this preference applies. Allows related preferences to be shown together on the Preferences tab
-  html         varchar(64)    Type of HTML code used for display when editing this preference: yesnoradio, text\_input, gmtoffset\_select, logging, permlinkmodes, commentmode, weeks, languages, dateformats, prod\_levels or pref\_text
+  html         varchar(64)    Type of HTML code used for display when editing this preference: yesnoradio, text_input, gmtoffset_select, logging, permlinkmodes, commentmode, weeks, languages, dateformats, prod_levels or pref_text
   position     integer        Display position of this preference among others within the same event on the Preferences tab
-  user\_name   varchar(64)    login name of the user to whom this preference applies (by default set to an empty string to indicate that the preference is not bound to a specific user)
+  user_name   varchar(64)    login name of the user to whom this preference applies (by default set to an empty string to indicate that the preference is not bound to a specific user)
 
 notextile.
 
 </div>
-txp\_section {#sec16}
+txp_section {#sec16}
 ------------
 
-The 'txp\_section' table contains all the sections you create on the
+The 'txp_section' table contains all the sections you create on the
 ****[Sections](http://docs.textpattern.io/administration/presentation/sections-panel**)
 panel.
 
@@ -430,19 +430,19 @@ notextile.
   name            varchar(128)   Section name (used in URL)
   page            varchar(128)   Page template used for this section
   css             varchar(128)   Style sheet used for this section
-  is\_default     integer        Default section for new articles? (0 = no, 1 = yes). Only one section can be set as default
-  in\_rss         integer        Include articles in this section in the site's RSS or Atom XML feeds? (0 = no, 1 = yes)
-  on\_frontpage   integer        Show articles in this section on the front page (0 = no, 1 = yes)
+  is_default     integer        Default section for new articles? (0 = no, 1 = yes). Only one section can be set as default
+  in_rss         integer        Include articles in this section in the site's RSS or Atom XML feeds? (0 = no, 1 = yes)
+  on_frontpage   integer        Show articles in this section on the front page (0 = no, 1 = yes)
   searchable      integer        Are articles in this section searchable? (0 = no, 1 = yes)
   title           varchar(255)   Section title
 
 notextile.
 
 </div>
-txp\_users {#sec17}
+txp_users {#sec17}
 ----------
 
-The 'txp\_users' table contains information for all users, as displayed
+The 'txp_users' table contains information for all users, as displayed
 on the
 ****[Users](http://docs.textpattern.io/administration/admin/users-panel**)
 panel.
@@ -452,13 +452,13 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column         Type           Description
   -------------- -------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  user\_id       integer        Unique auto-incremented ID of this user
+  user_id       integer        Unique auto-incremented ID of this user
   name           varchar(64)    Login name
   pass           varchar(128)   Password
   RealName       varchar(64)    Real name
   email          varchar(100)   Email address (used for sending passwords and comment notifications
   privs          integer        Privilege level (0 = none, 1 = publisher, 2 = managing editor, 3 = copy editor, 4 = staff writer, 5 = freelancer, 6 = designer). Indicates what the user is allowed to do, once logged in on the admin side
-  last\_access   datetime       Date and time when the user last logged in by entering a valid username and password combination
+  last_access   datetime       Date and time when the user last logged in by entering a valid username and password combination
   nonce          varchar(64)    Unique identifier used for cookie authentication (do NOT touch this in plugins!)
 
 notextile.

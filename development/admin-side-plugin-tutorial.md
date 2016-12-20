@@ -25,7 +25,7 @@ Tutorial objective {#sec1}
 
 This tutorial assumes you have a working knowledge of
 [PHP](http://php.net), a Textpattern website ready for use, and the
-[ied\_plugin\_composer](http://stefdawson.com/ied_plugin_composer)
+[ied_plugin_composer](http://stefdawson.com/ied_plugin_composer)
 plugin installed.
 
 The plugin in this tutorial will:
@@ -42,7 +42,7 @@ documentation purposes.
 Targeting the admin side {#sec2}
 ------------------------
 
-Log into Textpattern and open the ied\_plugin\_composer plugin.
+Log into Textpattern and open the ied_plugin_composer plugin.
 
 To begin your admin plugin, you need to target the administrative side
 of Textpattern. You do that by checking whether the current user is on
@@ -88,7 +88,7 @@ panel also has built-in events such as 'file', 'image', 'admin' and so
 on.
 
 In your case, we've told the system, using `register_tab()`, that your
-panel (your *event*) is known as **abc\_admin\_hello\_world** (what
+panel (your *event*) is known as **abc_admin_hello_world** (what
 users will see as **My plugin**). So when you target a particular event
 inside some PHP in the plugin, you tell Textpattern to execute code when
 someone visits your panel.
@@ -112,7 +112,7 @@ what to do when your plugin's panel link is clicked. For this we use
 
 Now you're getting somewhere! You've told Textpattern to call the
 `abc_admin_hw_gui()` function when someone visits the
-abc\_admin\_hello\_world sub-panel (what users will see labeled as "My
+abc_admin_hello_world sub-panel (what users will see labeled as "My
 plugin").
 
 The `pagetop()` function is another Textpattern function that renders

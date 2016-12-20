@@ -24,7 +24,7 @@ Overview
 
 This tutorial assumes you have a working knowledge of
 [PHP](http://php.net), a Textpattern website ready for use, and the
-[ied\_plugin\_composer](http://stefdawson.com/ied_plugin_composer)
+[ied_plugin_composer](http://stefdawson.com/ied_plugin_composer)
 plugin installed.
 
 The plugin in this tutorial will:
@@ -42,9 +42,9 @@ documentation purposes.
 Your first plugin and tag {#sec1}
 -------------------------
 
-Log into Textpattern's admin side, and open ied\_plugin\_composer.
+Log into Textpattern's admin side, and open ied_plugin_composer.
 
-Create a new plugin called **abc\_hello\_world** and put this code in:
+Create a new plugin called **abc_hello_world** and put this code in:
 
     function abc_hello_world($atts, $thing=NULL) {
        return 'Hello Textpattern world!';

@@ -38,7 +38,7 @@ notextile.
   Textpattern version:                 The version you currently have installed.
   Last update:                         The date/time you last updated your installation.
   Document root:                       The path to the web server's public (document root) directory, specifically.
-  \$path\_to\_site:                    The path to wherever your installation is (e.g., in document root or in a sub-directory thereof).
+  \$path_to_site:                    The path to wherever your installation is (e.g., in document root or in a sub-directory thereof).
   Textpattern path:                    The path to your installation's */textpattern* directory.
   Permanent link mode:                 The pattern of URL type you set. Corresponds with the "Permanent link mode" setting in the **Site** section of "**Preferences**":preferences/preferences-panel.
   Temporary directory path:            The path of your */tmp* directory relative to document root.
@@ -49,7 +49,7 @@ notextile.
   Server local time:                   The local date/time of your web server (yyyy-mm-dd hh:mm:ss).
   DST enabled?:                        Whether or not Daylight Savings Time is enabled ("0"=no, "1"=yes). Corresponds with the "DST enabled?" setting in the **Site** section of "**Preferences**":preferences/preferences-panel.
   Automatically adjust DST setting?:   Whether or Textpattern will adjust DST automatically ("0"=no, "1"=yes). Corresponds with the "Automatically adjust DST setting?" setting in the **Site** section of "**Preferences**":preferences/preferences-panel.
-  Time zone:                           Your time zone relative to Greenwich Mean Time (GMT). Corresponds with the "Time zone" setting in the **Site** section of [**Preferences**](preferences/preferences-panel). The output includes an offset value in parentheses, which helps developers determine if time-specific problems might stem from a wrong or outdated "tz database":https://en.wikipedia.org/wiki/Tz\_database.
+  Time zone:                           Your time zone relative to Greenwich Mean Time (GMT). Corresponds with the "Time zone" setting in the **Site** section of [**Preferences**](preferences/preferences-panel). The output includes an offset value in parentheses, which helps developers determine if time-specific problems might stem from a wrong or outdated "tz database":https://en.wikipedia.org/wiki/Tz_database.
   MySQL:                               The version number and build of your MySQL database server.
   Locale:                              The language and character set you have configured.
   Server:                              Your web server type (e.g. Apache).
@@ -101,7 +101,7 @@ which is the part between the two dotted lines below:
     ------------------------
 
 Over time your *.htaccess* file will change as you add your own
-<i>mod\_rewrite</i> rules, or whatever, and the changes will reflect in
+<i>mod_rewrite</i> rules, or whatever, and the changes will reflect in
 the diagnostics info display.
 
 ### High info display
@@ -114,19 +114,19 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Data item                              What it tells you
   -------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Charset (default/config):              if you don't see a lot of "UTF-8" values on these "character\_set" items, you might want ask yourself why not
-  character\_set\_client:                
-  character\_set\_connection:            
-  character\_set\_database:              
-  character\_set\_filesystem:            
-  character\_set\_results:               
-  character\_set\_server:                
-  character\_set\_system:                
-  character\_sets\_dir:                  
+  Charset (default/config):              if you don't see a lot of "UTF-8" values on these "character_set" items, you might want ask yourself why not
+  character_set_client:                
+  character_set_connection:            
+  character_set_database:              
+  character_set_filesystem:            
+  character_set_results:               
+  character_set_server:                
+  character_set_system:                
+  character_sets_dir:                  
   "n" Tables:                            "n" being the number of Textpattern tables that exist in your installation (a default install has 17, anything more is from plugins or other extensions you've added); the value also indicates if tables are "OK" or not
   "n" Custom fields:                     "n" being the number of custom fields; value also indicates name of all counted fields
   PHP extensions:                        list of extension names/versions your web host has enabled
-  pretext\_data:                         value is a piece of code; useful for developers to evaluate
+  pretext_data:                         value is a piece of code; useful for developers to evaluate
   {/textpattern files, not shown here}   list of Textpattern configuration files from the /textpattern directory; indicates file path, revision number, and MD5 Checksum hash number
 
 notextile.
@@ -190,7 +190,7 @@ cascading[^2] or false.[^3] But when warnings are accurate, something
 needs resolved in order to work correctly, reliably, or securely.
 Several warning messages are possible:
 
--   path\_to\_site\_missing --
+-   path_to_site_missing --
 -   <span class="warning">DNS lookup failed: {site URL}</span> -- This
     means the "Site URL" preference value in the
     [**Preferences**](preferences/preferences-panel) panel is probably
@@ -223,9 +223,9 @@ Several warning messages are possible:
     711.[^4]
 -   <span class="warning">No temporary directory defined</span> --
     \[todo:explanation\]
--   warn\_mail\_unavailable -- \[todo:explanation\]
+-   warn_mail_unavailable -- \[todo:explanation\]
 -   <span class="warning">Your version of PHP has known
-    security vulnerabilities. Please turn <code>register\_globals</code>
+    security vulnerabilities. Please turn <code>register_globals</code>
     off or update to a newer PHP version.</span> -- \[todo:explanation\]
 -   <span class="warning">Some Textpattern files have been
     modified</span> -- \[todo:explanation\]
@@ -293,7 +293,7 @@ Possible red messages include:
     problem will likely go away.
 -   <span class="error">{dirtype} is not writable</span> --
     \[todo:explanation\]
--   <span class="error">Apache module mod\_rewrite is
+-   <span class="error">Apache module mod_rewrite is
     not installed.</span> -- \[todo:explanation\]
 -   <span class="error">Old placeholder file is in the way</span> --
     This likely means you have created an actual folder in your server
@@ -339,12 +339,12 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Name                   Use
   ---------------------- ----------------------------------------------------------------------------------------------------------------------------------------
-  apache\_get\_modules   Helps determine whether clean urls could be used at setup, and for diagnostics info.
-  apache\_get\_version   Helps provide diagnostics info regarding clean urls.
-  parse\_ini\_file       Language features, even if English is used.
-  php\_sapi\_name        Determines whether PHP is running as an Apache module or CGI. Used for sending header information appropriate to the platform.
-  php\_uname             Provides diagnostics info regarding the server’s operating system.
-  set\_time\_limit       Makes sure PHP does not timeout before installation, updates (including language string changes), and file downloads can be completed.
+  apache_get_modules   Helps determine whether clean urls could be used at setup, and for diagnostics info.
+  apache_get_version   Helps provide diagnostics info regarding clean urls.
+  parse_ini_file       Language features, even if English is used.
+  php_sapi_name        Determines whether PHP is running as an Apache module or CGI. Used for sending header information appropriate to the platform.
+  php_uname             Provides diagnostics info regarding the server’s operating system.
+  set_time_limit       Makes sure PHP does not timeout before installation, updates (including language string changes), and file downloads can be completed.
 
 notextile.
 
@@ -356,33 +356,33 @@ reports one or more of these functions as disabled, you may safely
 ignore the message, because they do not affect Textpattern's operation
 in any way.
 
--   apache\_child\_terminate
--   apache\_getenv
--   apache\_note
--   apache\_setenv
+-   apache_child_terminate
+-   apache_getenv
+-   apache_note
+-   apache_setenv
 -   chgrp
 -   chown
--   close\_log
--   debugger\_off
--   debugger\_on
--   define\_syslog\_variables
+-   close_log
+-   debugger_off
+-   debugger_on
+-   define_syslog_variables
 -   diskfreespace
--   disk\_total\_space
+-   disk_total_space
 -   dl
--   error\_log
+-   error_log
 -   escapeshellarg
 -   escapeshellcmd
 -   exec
--   get\_current\_user
+-   get_current_user
 -   getrusage
--   highlight\_file
+-   highlight_file
 -   imagefilltoborder
--   ini\_alter
--   ini\_restore
+-   ini_alter
+-   ini_restore
 -   leak
 -   link
 -   listen
--   mysql\_pconnect
+-   mysql_pconnect
 -   openlog
 -   pack
 -   passthru
@@ -390,21 +390,21 @@ in any way.
 -   pfsockopen
 -   phpinfo
 -   popen
--   proc\_close
--   proc\_get\_status
--   proc\_nice
--   proc\_open
--   proc\_terminate
+-   proc_close
+-   proc_get_status
+-   proc_nice
+-   proc_open
+-   proc_terminate
 -   putenv
 -   readlink
--   set\_socket\_blocking
--   shell\_exec
--   show\_source
--   socket\_... (i.e. socket\_bind)
+-   set_socket_blocking
+-   shell_exec
+-   show_source
+-   socket_... (i.e. socket_bind)
 -   symlink
 -   syslog
 -   system
--   system\_exec
+-   system_exec
 -   virtual
 -   wget
 

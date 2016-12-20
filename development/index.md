@@ -332,7 +332,7 @@ So `abc_add_text` is the named custom function in this case, and
 `article_ui` and `extend_col_1` are the actual *event* and *step* in
 core that define the callback action. The event value (`article_ui`)
 makes clear the callback action is made to the
-*include/txp\_article.php* file, which is where all **Write** panel UI
+*include/txp_article.php* file, which is where all **Write** panel UI
 modification callbacks are made to.
 
 The next line of code is the actual callback function, namely
@@ -430,7 +430,7 @@ Or:
 Textpattern reserves the lower twelve bits of `$plugin['flags']` for its
 own use, plugin developers may take advantage of the remaining four
 (`~PLUGIN_RESERVED_FLAGS`). These might come in handy to trigger some
-one-time actions, as these bits are copied into the *txp\_plugin* table
+one-time actions, as these bits are copied into the *txp_plugin* table
 row for any particular plugin whenever it is uploaded.
 
 ## Variables, classes, and constants
@@ -469,7 +469,7 @@ Always use a template when one is available, and there is:
 **Plugin composer:**
 
 Namely, the
-[ied\_plugin\_composer](http://textpattern.org/plugins/588/ied_plugin_composer)
+[ied_plugin_composer](http://textpattern.org/plugins/588/ied_plugin_composer)
 plugin, as mentioned before. A plugin to build plugins. Ironic, eh?
 Truth is, this plugin is *extremely* useful: It allows you to create,
 code, and document plugins, then publish them in either conventional
@@ -486,7 +486,7 @@ plugin help documentation. There's a template for that:
 
 -   [Plugin user-help
     guidelines](http://docs.textpattern.io/development/plugin-user-help-guidelines)
--   [sed\_plugin\_help\_viewer](http://textpattern.org/plugins/612/sed_plugin_help_viewer)
+-   [sed_plugin_help_viewer](http://textpattern.org/plugins/612/sed_plugin_help_viewer)
     (A help viewer plugin that you might find... helpful.)
 
 **Code repositories:**
@@ -545,7 +545,7 @@ may be outdated, so use with caution. Not a long list, in any case.
     in the table on the
     [**Plugins**](http://docs.textpattern.io/development/administration/admin/plugins-panel)
     panel, or by installing and using
-    [ied\_plugin\_composer](http://textpattern.org/plugins/588/ied_plugin_composer).
+    [ied_plugin_composer](http://textpattern.org/plugins/588/ied_plugin_composer).
 
 [^2]: There's also the [Admin-side events and
     steps](http://docs.textpattern.io/development/admin-side-events-and-steps)
@@ -559,20 +559,20 @@ may be outdated, so use with caution. Not a long list, in any case.
     found in the
     *[/lib](https://github.com/textpattern/textpattern/tree/master/textpattern/lib__)
     folder. Some examples:
-    The*[txplib\_db.php](https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_db.php__)
+    The*[txplib_db.php](https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_db.php__)
     file for interacting with the Textpattern database;
-    *[txplib\_forms.php](https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_forms.php__)
+    *[txplib_forms.php](https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_forms.php__)
     to help build different HTML form
-    controls;*[txplib\_html.php](https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_html.php__)
+    controls;*[txplib_html.php](https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_html.php__)
     to help build various other types of HTML elements; and
-    **[txplib\_misc.php](https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_misc.php__)
+    **[txplib_misc.php](https://github.com/textpattern/textpattern/blob/master/textpattern/lib/txplib_misc.php__)
     to help build various “miscellaneous” functions.
 
 [^4]: Another function, `pluggable_ui()`, was introduced in 2009, which
     provides additional event/step hooks for the admin-side panels. But
     this is for the advanced Textpattern user and developer, not the
     beginner. This function is not needed 99.9% of the time. See [The
-    pluggable\_ui
+    pluggable_ui
     function](http://docs.textpattern.io/development/the-pluggable-ui-function)
     page for more.
 

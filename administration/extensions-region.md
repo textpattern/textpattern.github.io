@@ -26,22 +26,22 @@ notextile.
 <div itemscope itemtype="http://schema.org/Table">
   Plugin                                                                                                       Extensions panel label[^1]
   ------------------------------------------------------------------------------------------------------------ ----------------------------
-  "arc\_redirect":http://forum.textpattern.com/viewtopic.php?id=36705                                          arc\_redirect
-  "adi\_notes":http://forum.textpattern.com/viewtopic.php?id=27957                                             adi\_notes
-  "asy\_jpcache":http://forum.textpattern.com/viewtopic.php?id=8352                                            ?
-  [glz\_custom\_fields](http://forum.textpattern.com/viewtopic.php?id=23996)[^2]                               Custom Fields
-  [ied\_plugin\_composer](http://textpattern.org/plugins/588/ied_plugin_composer) (Now maintained by "smd".)   Plugin Composer
-  "msd\_admin\_colorpicker":http://forum.textpattern.com/viewtopic.php?id=26742                                ?
-  "msd\_google\_map":http://forum.textpattern.com/viewtopic.php?id=30493                                       ?
-  "rah\_change\_passwords":http://forum.textpattern.com/viewtopic.php?id=28696                                 ?
-  "rah\_post\_versions":http://forum.textpattern.com/viewtopic.php?id=33855                                    ?
-  "rah\_tabtor":http://forum.textpattern.com/viewtopic.php?id=34815                                            ?
-  "smd\_admin\_themes":http://forum.textpattern.com/viewtopic.php?id=30952                                     ?
-  "smd\_bio":http://forum.textpattern.com/viewtopic.php?id=31496                                               Bio config
-  "smd\_redirect":https://github.com/Bloke/smd\_redirect                                                       Redirects
-  "smd\_tags":http://forum.textpattern.com/viewtopic.php?id=28621                                              smd\_tags
-  "smd\_where\_used":http://textpattern.org/plugins/984/smd\_where\_used                                       Where used
-  "tru\_tags":http://forum.textpattern.com/viewtopic.php?id=15084                                              ?
+  "arc_redirect":http://forum.textpattern.com/viewtopic.php?id=36705                                          arc_redirect
+  "adi_notes":http://forum.textpattern.com/viewtopic.php?id=27957                                             adi_notes
+  "asy_jpcache":http://forum.textpattern.com/viewtopic.php?id=8352                                            ?
+  [glz_custom_fields](http://forum.textpattern.com/viewtopic.php?id=23996)[^2]                               Custom Fields
+  [ied_plugin_composer](http://textpattern.org/plugins/588/ied_plugin_composer) (Now maintained by "smd".)   Plugin Composer
+  "msd_admin_colorpicker":http://forum.textpattern.com/viewtopic.php?id=26742                                ?
+  "msd_google_map":http://forum.textpattern.com/viewtopic.php?id=30493                                       ?
+  "rah_change_passwords":http://forum.textpattern.com/viewtopic.php?id=28696                                 ?
+  "rah_post_versions":http://forum.textpattern.com/viewtopic.php?id=33855                                    ?
+  "rah_tabtor":http://forum.textpattern.com/viewtopic.php?id=34815                                            ?
+  "smd_admin_themes":http://forum.textpattern.com/viewtopic.php?id=30952                                     ?
+  "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496                                               Bio config
+  "smd_redirect":https://github.com/Bloke/smd_redirect                                                       Redirects
+  "smd_tags":http://forum.textpattern.com/viewtopic.php?id=28621                                              smd_tags
+  "smd_where_used":http://textpattern.org/plugins/984/smd_where_used                                       Where used
+  "tru_tags":http://forum.textpattern.com/viewtopic.php?id=15084                                              ?
 
 notextile.
 

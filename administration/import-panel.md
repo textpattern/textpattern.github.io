@@ -1,4 +1,4 @@
-\\n[mininav\_admin\_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs)
+\\n[mininav_admin_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs)
 
 [![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-import-tab.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-import-tab.png)
 
@@ -69,7 +69,7 @@ for your respective articles (Figure 6).
 
 **Note:** The comments invite can be controlled in two other locations
 in Textpattern. The first is in the Comments section of the
-[basic\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences),
+[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences),
 which controls the invite label and other comment settings for the
 entire site by default. The second is in the
 [write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) tab, where
@@ -125,10 +125,10 @@ all went reasonably well.
 
 See also the articles:
 
--   [importing\_from\_blogger](/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger)
--   [importing\_from\_b2](/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_b2)
--   [importing\_from\_movable\_type](/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_movable_type)
--   [importing\_from\_word\_press](/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_word_press)
+-   [importing_from_blogger](/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_blogger)
+-   [importing_from_b2](/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_b2)
+-   [importing_from_movable_type](/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_movable_type)
+-   [importing_from_word_press](/home/www/zendstudio/dokuwiki/bin/doku.php?id=importing_from_word_press)
 
 #### Importing from a MySQL database {#importing_from_a_mysql_database}
 

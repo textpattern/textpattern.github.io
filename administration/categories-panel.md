@@ -1,4 +1,4 @@
-\\n[mininav\_content\_index](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index)
+\\n[mininav_content_index](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index)
 
 [![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-category.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-category.png)
 

@@ -158,7 +158,7 @@ Plugins that you install via the Admin → Plugins tab are inserted into
 the database. There is another method of installing a plugin that
 involves obtaining the plugin as a file in the standard template format.
 
-Visit the advanced\_preferences tab and enter a folder path/name to use
+Visit the advanced_preferences tab and enter a folder path/name to use
 as your plugin cache directory. Make sure it exists on your server!
 
 When you have saved the changes, you may upload (via FTP) plugins in the
@@ -303,11 +303,11 @@ developers.
 
 [^2]: You can often find compressed plugins where a regular text version
     is available. If not, you can install the
-    [ied\_plugin\_composer](http://forum.textpattern.com/viewtopic.php?id=14898)
+    [ied_plugin_composer](http://forum.textpattern.com/viewtopic.php?id=14898)
     plugin and use that to create you're own compressed version.
 
 [^3]: You could also install and used
-    [ied\_plugin\_composer](http://forum.textpattern.com/viewtopic.php?id=14898),
+    [ied_plugin_composer](http://forum.textpattern.com/viewtopic.php?id=14898),
     which not only allows you to edit plugins, but to compile and export
     them too as entirely new plugins, assuming you make enough custom
     changes to warrant doing so. (Ediquette tip: Always give credit to
@@ -315,7 +315,7 @@ developers.
 
 [^4]: In the event you need to update a plugin you've edited, you may
     like to install
-    [rvm\_plugin\_diff](http://forum.textpattern.com/viewtopic.php?id=19909)
+    [rvm_plugin_diff](http://forum.textpattern.com/viewtopic.php?id=19909)
     first, a plugin that helps you track down the lines of code you
     edited in other plugins so you don't lose track of them and can make
     the edits again if necessary. Keeping your own edited versions of

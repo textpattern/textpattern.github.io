@@ -37,15 +37,15 @@
     as extensions of External TextEditors to also ease the work on
     Source code in general.
 
-##### Understanding templating workflows with mcw\_templates {#understanding_templating_workflows_with_mcw_templates}
+##### Understanding templating workflows with mcw_templates {#understanding_templating_workflows_with_mcw_templates}
 
 1.  Import and Export Session.
 
 <!-- -->
 
-1.  To maintain compatibilty with mcw\_templates for example, we have to
+1.  To maintain compatibilty with mcw_templates for example, we have to
     distinguish between Import and export Sessions.
-2.  Performing an export session, mcw\_templates already prepends the
+2.  Performing an export session, mcw_templates already prepends the
     form type delimiter on all form files that successfully got
     exported, while the file extension is configurable in the
     plugin itself.
@@ -127,7 +127,7 @@ Things, that generally should be avoided:
 2.  Arbitrary and unnecessary Information in File and Form-names (Those
     can easily go inside the files themself as comments)
 3.  UTF characters that are not part of the ASCII ANSI range
-4.  Braces, hyphens, quotes or any other non\_word or non\_numerical
+4.  Braces, hyphens, quotes or any other non_word or non_numerical
     characters
 5.  Files, that are not properly UTF-8 encoded and old-style ISO doctype
     meta declarations in Page Templates.
@@ -145,20 +145,20 @@ Things, that generally should be avoided:
 4.  It has been suggested, to move the textpattern Folder outside of the
     textpattern directory, to make maintenance of the TXP Source Code
     easier and more reliable. This example can be seen in a modified
-    version of mcw\_templates
+    version of mcw_templates
     [here\]](/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:txpun.com_wiki_cms:templates)
 
 ##### To Consider {#to_consider}
 
 A Folder and File structure and convention like the one mentioned above,
-does successfully perform an Import session with mcw\_templates. If part
+does successfully perform an Import session with mcw_templates. If part
 of the conventions mentioned in section one are not met, it fails.
 
 #### Resources
 
 ##### Existing Templating Tools {#existing_templating_tools}
 
-[mcw\_templates by Mike
+[mcw_templates by Mike
 West\]](/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:mikewest.org_archive_mcwtemplates-v02)
 
 [cms

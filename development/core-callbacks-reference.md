@@ -103,7 +103,7 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`    When it occurs                                                   What it allows/does
   ----------- ---------------------------------------------------------------- -------------------------
-  `log_hit`   Just before a log message is recorded in the 'txp\_log' table.   Alters the log message.
+  `log_hit`   Just before a log message is recorded in the 'txp_log' table.   Alters the log message.
 
 notextile.
 
@@ -128,7 +128,7 @@ need them.
 
 \[todo:intro para about regular admin-side callbacks\]
 
-#### *lib/txplib\_head.php*
+#### *lib/txplib_head.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -150,7 +150,7 @@ notextile.
 
     [todo:simple code example demonstrating this callback]
 
-#### *lib/txplib\_html.php*
+#### *lib/txplib_html.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -165,7 +165,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_article.php*
+#### *include/txp_article.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -182,7 +182,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_diag.php*
+#### *include/txp_diag.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -196,7 +196,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_admin.php*
+#### *include/txp_admin.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -210,7 +210,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_category.php*
+#### *include/txp_category.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -224,7 +224,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_css.php*
+#### *include/txp_css.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -238,7 +238,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_discuss.php*
+#### *include/txp_discuss.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -252,7 +252,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_file.php*
+#### *include/txp_file.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -266,7 +266,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_form.php*
+#### *include/txp_form.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -280,7 +280,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_image.php*
+#### *include/txp_image.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -295,7 +295,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_link.php*
+#### *include/txp_link.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -309,7 +309,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_list.php*
+#### *include/txp_list.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -323,7 +323,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_page.php*
+#### *include/txp_page.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -337,7 +337,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_section.php*
+#### *include/txp_section.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -374,11 +374,11 @@ notextile.
   Panel                                                                               `$event`           `$step`
   ----------------------------------------------------------------------------------- ------------------ ----------------
   "Articles":http://docs.textpattern.io/administration/content/articles-panel         `admin_criteria`   `list_list`
-  "Comments":http://docs.textpattern.io/administration/content/comments-panel         "                  discuss\_list
+  "Comments":http://docs.textpattern.io/administration/content/comments-panel         "                  discuss_list
   "Files":http://docs.textpattern.io/administration/content/files-panel               "                  `file_list`
   "Forms":http://docs.textpattern.io/administration/presentation/forms-panel          "                  `form_list`
   "Images":http://docs.textpattern.io/administration/content/images-panel             "                  `image_list`
-  "Links":http://docs.textpattern.io/administration/content/links-panel               "                  link\_list
+  "Links":http://docs.textpattern.io/administration/content/links-panel               "                  link_list
   "Pages":http://docs.textpattern.io/administration/presentation/pages-panel          "                  `page_list`
   "Sections":http://docs.textpattern.io/administration/presentation/sections-panel    `admin_criteria`   `section_list`
   "Styles":http://docs.textpattern.io/administration/presentation/styles-panel        "                  `css_list`
@@ -436,7 +436,7 @@ These callbacks are grouped here by the panel they are associated with.
 
 #### Write panel
 
-All calls are made to the *include/txp\_article.php* file.
+All calls are made to the *include/txp_article.php* file.
 
 The same `$event` is used in each case: `article_ui`.
 
@@ -514,7 +514,7 @@ the **Textile help** widget:
 Easy-peasy. The text is added immediately below the widget header link,
 which is where the `extend_col_1` step outputs its markup.
 
-#### *include/txp\_category.php*
+#### *include/txp_category.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -532,7 +532,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_image.php*
+#### *include/txp_image.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -557,7 +557,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_file.php*
+#### *include/txp_file.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -575,7 +575,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_links.php*
+#### *include/txp_links.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -593,7 +593,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_section.php*
+#### *include/txp_section.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -611,7 +611,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_admin.php*
+#### *include/txp_admin.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -629,7 +629,7 @@ notextile.
 notextile.
 
 </div>
-#### *include/txp\_prefs.php*
+#### *include/txp_prefs.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -643,10 +643,10 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Panel      `$event`     `$step`        What it allows/does                                                                                                                                       Argument notes
   ---------- ------------ -------------- --------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Basic      `prefs_ui`   `gmtoffset`    Alters or replaces the **Time zone** select list input control (not the label).                                                                           Argument \#4 is the preference name in the 'txp\_prefs' table (`timezone_key` in this case). Argument \#5 is the preference's value (i.e. the chosen item).
-  Basic      `prefs_ui`   `is_dst`       Alters or replaces the **DST enabled** radio buttons (not the label).                                                                                     Argument \#4 is the preference name in the 'txp\_prefs' table (`is_dst` in this case). Argument \#5 is the preference's value (i.e. the numerical state of the radio button).
-  Basic      `prefs_ui`   `weeks`        Alter or replace the **Comments disabled after** select list control (not the label).                                                                     Argument \#4 is the preference name in the 'txp\_prefs' table (`comments_disabled_after` in this case). Argument \#5 is the preference's value (i.e. the numerical value of the selected item; in this case the number of days to keep commenting open).
-  Advanced   `prefs_ui`   `custom_set`   Alter or replace the Custom field input controls (not the labels). Each text box is called separately; you distinguish between them using argument \#4.   Argument \#4 is the preference name in the 'txp\_prefs' table (`custom_set_N` by default, where *N* is the custom field number). Argument \#5 is the preference's value (i.e. the name of the custom field).
+  Basic      `prefs_ui`   `gmtoffset`    Alters or replaces the **Time zone** select list input control (not the label).                                                                           Argument \#4 is the preference name in the 'txp_prefs' table (`timezone_key` in this case). Argument \#5 is the preference's value (i.e. the chosen item).
+  Basic      `prefs_ui`   `is_dst`       Alters or replaces the **DST enabled** radio buttons (not the label).                                                                                     Argument \#4 is the preference name in the 'txp_prefs' table (`is_dst` in this case). Argument \#5 is the preference's value (i.e. the numerical state of the radio button).
+  Basic      `prefs_ui`   `weeks`        Alter or replace the **Comments disabled after** select list control (not the label).                                                                     Argument \#4 is the preference name in the 'txp_prefs' table (`comments_disabled_after` in this case). Argument \#5 is the preference's value (i.e. the numerical value of the selected item; in this case the number of days to keep commenting open).
+  Advanced   `prefs_ui`   `custom_set`   Alter or replace the Custom field input controls (not the labels). Each text box is called separately; you distinguish between them using argument \#4.   Argument \#4 is the preference name in the 'txp_prefs' table (`custom_set_N` by default, where *N* is the custom field number). Argument \#5 is the preference's value (i.e. the name of the custom field).
   Advanced   `prefs_ui`   `theme_name`   Alters or replace the **Admin theme** select list control (not the label).                                                                                -
 
 notextile.
@@ -657,7 +657,7 @@ notextile.
 These callbacks are all used to alter various elements within admin-side
 themes.
 
-#### *lib/txplib\_theme.php*
+#### *lib/txplib_theme.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -671,7 +671,7 @@ notextile.
 notextile.
 
 </div>
-#### *lib/txplib\_head.php*
+#### *lib/txplib_head.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -685,7 +685,7 @@ notextile.
 notextile.
 
 </div>
-#### *lib/txplib\_html.php*
+#### *lib/txplib_html.php*
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -694,8 +694,8 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`          `$step`        What it allows/does                                                                                                                                                                                                                                                          Argument notes
   ----------------- -------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  admin\_side       footer         Replaces the standard `end_page` footer with something of your choosing. Theme authors do this by writing a `footer()` function in their theme's PHP file. There is no spoon.                                                                                                -
-  some\_event\_ui   upload\_form   Alters or replaces Textpattern's standard upload forms throughout the admin side. `some_event` is the name of the event on the panel upon which the input form appears (e.g. on the **Files** panel, the event is `file` so the `pluggable_ui()` event name is `file_ui`).   Argument \#4 contains the remainder of the arguments to the `upload_form()` function (i.e. 'label', 'pophelp', 'step', 'event', 'id', 'max\_file\_size', 'label\_id' and 'class').
+  admin_side       footer         Replaces the standard `end_page` footer with something of your choosing. Theme authors do this by writing a `footer()` function in their theme's PHP file. There is no spoon.                                                                                                -
+  some_event_ui   upload_form   Alters or replaces Textpattern's standard upload forms throughout the admin side. `some_event` is the name of the event on the panel upon which the input form appears (e.g. on the **Files** panel, the event is `file` so the `pluggable_ui()` event name is `file_ui`).   Argument \#4 contains the remainder of the arguments to the `upload_form()` function (i.e. 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class').
 
 notextile.
 
@@ -705,7 +705,7 @@ Plugin callbacks {#sec3}
 
 \[todo:intro para about plugin callbacks in general\]
 
-#### *include/txp\_plugin.php*
+#### *include/txp_plugin.php*
 
 In order to process these callbacks, your plugin must raise the
 `PLUGIN_LIFECYCLE_NOTIFY` flag to register its intent. In addition, if
@@ -718,10 +718,10 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`                             `$step`       When it occurs                                                                                                                                                                                               What it allows/does
   ------------------------------------ ------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------
-  `plugin_lifecycle.abc_your_plugin`   `enabled`     When somebody switches abc\_your\_plugin to "Enabled" (Yes) from the **Plugins** panel.                                                                                                                      -
-  `plugin_lifecycle.abc_your_plugin`   `disabled`    When somebody switches abc\_your\_plugin to "Disabled" (No) on the **Plugins** panel.                                                                                                                        -
-  `plugin_lifecycle.abc_your_plugin`   `installed`   When abc\_your\_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and clicking **Install** button on the next screen.                                               -
-  `plugin_lifecycle.abc_your_plugin`   `deleted`     When abc\_your\_plugin has been removed by the act of a user selecting it and deleting it from the **Plugins** panel (note that the `plugin_lifecycle.abc_your_plugin` / `disabled` callback fires first).   -
+  `plugin_lifecycle.abc_your_plugin`   `enabled`     When somebody switches abc_your_plugin to "Enabled" (Yes) from the **Plugins** panel.                                                                                                                      -
+  `plugin_lifecycle.abc_your_plugin`   `disabled`    When somebody switches abc_your_plugin to "Disabled" (No) on the **Plugins** panel.                                                                                                                        -
+  `plugin_lifecycle.abc_your_plugin`   `installed`   When abc_your_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and clicking **Install** button on the next screen.                                               -
+  `plugin_lifecycle.abc_your_plugin`   `deleted`     When abc_your_plugin has been removed by the act of a user selecting it and deleting it from the **Plugins** panel (note that the `plugin_lifecycle.abc_your_plugin` / `disabled` callback fires first).   -
 
 notextile.
 
@@ -731,7 +731,7 @@ Function- and tag-based callbacks {#sec4}
 
 \[todo:intro para about function- and tag-based callbacks in general\]
 
-#### *lib/txplib\_misc.php*
+#### *lib/txplib_misc.php*
 
 \[todo:intro para about what this callback is concerned with\]
 

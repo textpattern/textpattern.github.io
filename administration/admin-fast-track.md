@@ -39,7 +39,7 @@ below this line still needs editing
 
 **Recommended reading:**
 
--   [sed\_cleaner](https://github.com/netcarver/sed_cleaner) (Plugin for
+-   [sed_cleaner](https://github.com/netcarver/sed_cleaner) (Plugin for
     one-time use immediately after setting language in a
     new installation. In one pass, it removes obsolete admin-side
     features and example content, and resets ID numbers for content
@@ -65,41 +65,41 @@ at all, it makes sense to go have a look at the
 Here is where you change your password and email address. And if other
 users will have access to the admin-side, this is where you'll create
 and edit their account details too, including
-[user\_roles\_and\_permissions](/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions).
+[user_roles_and_permissions](/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions).
 
 **Recommended reading:**
 
--   [smd\_faux\_role](http://textpattern.org/plugins/1159/smd_faux_role)
+-   [smd_faux_role](http://textpattern.org/plugins/1159/smd_faux_role)
     (Plugin for testing which user roles grant or restrict permission to
     which parts of the Textpattern administration, without needing to
     create roles and logging out and back in.)
--   [rah\_change\_passwords](http://rahforum.biz/plugins/rah_change_passwords)
+-   [rah_change_passwords](http://rahforum.biz/plugins/rah_change_passwords)
     (Plugin allowing direct password management. Avoids the system
     generating random passwords and sending them by email.)
--   [smd\_bio](http://textpattern.org/plugins/1116/smd_bio) (Plugin that
+-   [smd_bio](http://textpattern.org/plugins/1116/smd_bio) (Plugin that
     extends user account data collected and stored for custom output.
     *E.g.*, team profiles.)
--   [smd\_user\_manager](http://textpattern.org/plugins/1229/smd_user_manager)
+-   [smd_user_manager](http://textpattern.org/plugins/1229/smd_user_manager)
     (Plugin providing user, group, and privilege
-    management capabilities. Integrates with smd\_bio.)
+    management capabilities. Integrates with smd_bio.)
 
 ### Site identity and default configurations {#site-identity-and-default-configurations .sectionedit4#site_identity_and_default_configurations}
 
 With your installation secure, and your password in place, you should
 set a few defaults that will influence the website's identity and
 base-line publishing behaviour. You do this in
-[basic\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences),
+[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences),
 which is the default screen of the *Preferences* panel. The other two
 screens being
-[advanced\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
+[advanced_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
 and
-[language\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences),
+[language_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences),
 the latter you've already been to.
 
 **Recommended reading:**
 
--   [basic\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
--   [advanced\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
+-   [basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
+-   [advanced_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
 
 ### Establishing site structure and design {#establishing-site-structure-and-design .sectionedit5#establishing_site_structure_and_design}
 
@@ -125,15 +125,15 @@ for the Blog in \#3; invent a simple scenario)
 
 \[Plugins, Extensions, etc\] (highlight some popular plugins used in
 relation to the topics already covered; e.g. discussion of
-smd\_bio/smd\_user\_manager in relation of user accounts)
+smd_bio/smd_user_manager in relation of user accounts)
 
 ### Monitoring referrers {#monitoring-referrers .sectionedit9#monitoring_referrers}
 
-[visitor\_logs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs)
+[visitor_logs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs)
 
 **Recommended reading:**
 
--   [rah\_unlog\_me](http://rahforum.biz/plugins/rah_unlog_me) (Plugin
+-   [rah_unlog_me](http://rahforum.biz/plugins/rah_unlog_me) (Plugin
     that removes the administrators IP, and any others defined, so their
     site visits don't show up in visitor logs. Result is a more
     representative reflection of actual referrers that count.)

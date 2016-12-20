@@ -1,4 +1,4 @@
-\\n[mininav\_tutorials](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials)
+\\n[mininav_tutorials](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials)
 
 This section will describe how to back up your Textpattern installation.
 
@@ -54,7 +54,7 @@ You are going to want to select
 </li>
 <li>
 In the box you will want to select all the tables that are related to
-Textpattern. IE:textpattern and the other tables with a txp\_ prefix.
+Textpattern. IE:textpattern and the other tables with a txp_ prefix.
 
 </li>
 <li>
@@ -100,13 +100,13 @@ Now you can go ahead and select a compression method. And than click Go.
 [phpMyAdmin](http://www.phpmyadmin.net/home_page/index.php)
 documentation, which has more detailed backup information, is suggested.
 
-### Backing up with Rob Sable rss\_admin\_db\_manager Plugin {#backing-up-with-rob-sable-rss_admin_db_manager-plugin .sectionedit2#backing_up_with_rob_sable_rss_admin_db_manager_plugin}
+### Backing up with Rob Sable rss_admin_db_manager Plugin {#backing-up-with-rob-sable-rss_admin_db_manager-plugin .sectionedit2#backing_up_with_rob_sable_rss_admin_db_manager_plugin}
 
 This is probably the easiest route to go, when it comes to backing up
 your Database. Rob Sable has made a great plugin that allows you to
 maintain the Textpattern database directly from the Textpattern Admin
 Interface. You can get Rob's plugin from his website
-[rss\_admin\_db\_manager](http://www.wilshireone.com/textpattern-plugins/rss_admin_db_manager).
+[rss_admin_db_manager](http://www.wilshireone.com/textpattern-plugins/rss_admin_db_manager).
 
 After you install the plugin you well see a new tab at the top of your
 screen between
@@ -117,7 +117,7 @@ and
 
     View Site
 
-, this is were you well access the db\_manager.
+, this is were you well access the db_manager.
 
 <ol>
 <li>

@@ -1,4 +1,4 @@
-\\n[mininav\_tutorials](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials)
+\\n[mininav_tutorials](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials)
 
 [help](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=help)
 
@@ -7,7 +7,7 @@
 Troubleshooting? i.e. would you want to know how to do this just for the
 sake of it, or would you only seek to do it if something went wrong? The
 content is replicated and slightly updated in
-[forgotten\_password](/home/www/zendstudio/dokuwiki/bin/doku.php?id=forgotten_password)
+[forgotten_password](/home/www/zendstudio/dokuwiki/bin/doku.php?id=forgotten_password)
 so if it is deemed to belong there, this topic may be deleted.
 
 <hr />
@@ -24,11 +24,11 @@ Start phpMyAdmin. This may be done from shell or your control panel.
 </li>
 <li>
 At the opening screen, select the database for your Textpattern install
-(eg userid\_textpattern).
+(eg userid_textpattern).
 
 </li>
 <li>
-From the list of tables select **txp\_users**. This should present a
+From the list of tables select **txp_users**. This should present a
 table structure and a selection of tabbed options.
 
 </li>
@@ -84,7 +84,7 @@ management program like phpMyAdmin for the database involved. Following
 is what you do:
 
 1.  Open phpMyAdmin, select the appropriate database, and browse to the
-    **txp\_users** table.
+    **txp_users** table.
 2.  Look for the row with your Textpattern account username, and find
     the column named “**privs**”.
 3.  Change it to the number “**1**”.

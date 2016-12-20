@@ -191,7 +191,7 @@ procedure. If not, leave them out.
 
 **Plugin tags**. The `h3.` subsection headings for tags will be the
 plugin prefix and name without surrounding tag syntax (i.e. use
-**abc\_tag\_name**, not `<txp:abc_tag_name />`).
+**abc_tag_name**, not `<txp:abc_tag_name />`).
 
 **Examples**. Ensure your `h3.` subsection headings for examples are
 clearly indicative of what the example is about, as much as possible.

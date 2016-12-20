@@ -3,37 +3,22 @@ layout: document
 category: Administration
 published: true
 title: "Forms panel"
-description: The Forms panel contains an editing field, a list of existing Forms organized by rough categories, and a tag builder.
+description: The Forms panel is where the Form templates used within a Textpattern website are created and edited.
 ---
 
 # Forms panel
 
-The **Forms** panel contains an editing field, a list of existing Forms organized by rough categories, and a tag builder to help you construct form content.
+The **Forms** panel contains an edit field, a list of existing @@Form templates@@ organized by rough categories, and a tag builder to help you construct form content. It's important to note that, like everything else, the Form templates are stored in the database - there is no physical file on the server that contains this Page template.
 
-## What are forms?
+## What are Form templates?
 
-**Forms** are akin to snippets, includes, partials, and the like that define discrete *packages* of information that can be inserted into web page templates, or nested into other forms that are in turn *pulled* into web page templates. They are not files, per se, but similar in concept to files, having their own name (ID) and content. The content in a form can be any combination of text, HTML markup, Textpattern tags, or tags for third-party [Plugins](http://docs.textpattern.io/administration/plugins-panel) you might use.
+**Form templates** are akin to snippets, includes, partials, and the like that define discrete *packages* of information that can be inserted into web page templates, or nested into other forms that are in turn *pulled* into web page templates. They are not files, *per se*, but similar in concept to files, having their own name (ID) and content. The content in a form can be any combination of text, HTML markup, Textpattern tags, or tags for third-party [Plugins](http://docs.textpattern.io/administration/plugins-panel) you might use.
 
-The content can be a single word, to the HTML framework of an entire
-webpage template, to everything in between or something different
-altogether. But forms are generally most practical when scoped to
-repeatable, semantic regions of a page template (header, main area, side
-column, footer...), or to functional blocks within those regions
-(navigation menu, sign-up form, widget, footer list, etc). There's no
-right or wrong way to design forms, but as you get more familiar with
-Textpattern, you'll discover the optimal patterns to use, as well as how
-to name forms so they aren't confusing when you have many. Don't be
-surprised to adjust your architecture over time as you learn.
+The content can be a single word, to the HTML framework of an entire webpage template, to everything in between or something different altogether. But forms are generally most practical when scoped to repeatable, semantic regions of a page template (header, main area, side column, footer, etc.) or to functional blocks within those regions (navigation menu, sign-up form, widget, footer list, etc.). There's no right or wrong way to design forms, but as you get more familiar with Textpattern, you'll discover the optimal patterns to use, as well as how to name forms so they aren't confusing when you have many. Don't be surprised to adjust your architecture over time as you learn.
 
 ## Out-of-the-box forms
 
-Several forms come with Textpattern out-of-the-box, only enough to
-provide the minimal publishing functionality needed in the default
-installation. The default forms, and presumably those you end up
-creating, are organized by type to help keep them straight.[^1] The type
-groupings used to organize forms are: **Article**, **Miscellaneous**,
-**Comment**, **Category**, **File**, **Links**, and **Section**. You'll
-only a given type in the panel when there's a form assigned to it.
+Several forms come with Textpattern out-of-the-box, only enough to provide the minimal publishing functionality needed in the default installation. The default forms, and presumably those you end up creating, are organized by type to help keep them straight.[^1] The type groupings used to organize forms are: **Article**, **Miscellaneous**, **Comment**, **Category**, **File**, **Links**, and **Section**. You'll only a given type in the panel when there's a form assigned to it.
 
 Form types and the associated default forms are:
 
@@ -43,7 +28,7 @@ Article
 called for a given web page.
 
 , are known as are one of the six “building blocks” described in the
-[textpattern\_semantic\_model](/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model).
+[textpattern_semantic_model](/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_semantic_model).
 
 Textpattern Forms are predefined portions of text, Textpattern Tags,
 and/or HTML, which collectively define how content should be formatted
@@ -117,33 +102,12 @@ to allow Textpattern's tag builder to help you easily find the form you
 want to use. Once you've named and classified your form, you can begin
 building it.
 
-#### Form Types Explained {#form_types_explained}
+#### Form template types explained
 
-When creating a form, it must be assigned to a “Type,” which is
-available via a dropdown selection box under the *Name* field. There are
-currently seven form types: *article*, *category*, *comment*, *file*,
-*link*, *misc* (miscellaneous), and *section*.
+When creating a form, it must be assigned to a 'Type', which is available via a dropdown selection box alongside the 'Name' field. There are currently seven form types: *article*, *category*, *comment*, *file*, *link*, *misc* (miscellaneous), and *section*.
 
-Form types have almost no inherent semantic but aid solely as a means of
-organization for the designer/user. One notable exception: *article*
-type forms are the only ones listed in the *override form* dropdown on
-the write screen.
+Form template types have almost no inherent semantic but aid solely as a means of organization for the designer/user. One notable exception: *article* type forms are the only ones listed in the *override form* dropdown on the write screen.
 
-The category and section types are intended to be used in conjunction
-with
-[category\_list](/home/www/zendstudio/dokuwiki/bin/doku.php?id=category_list)
-and
-[section\_list](/home/www/zendstudio/dokuwiki/bin/doku.php?id=section_list),
-respectively, as a value to the form attribute, along the lines of
+The category and section types are intended to be used in conjunction with [category_list](http://docs.textpattern.io/tags/category_list) and [section_list](http://docs.textpattern.io/tags/section_list), respectively, as a value to the form attribute, along the lines of `<txp:section_list form="foo" />`. They serve the same use case as the form attributes for articles do.
 
-    <nowiki><txp:section_list form="foo" /></nowiki>
-
-. They serve the same use case as the form attributes for articles do.
-
-See also:
-
--   [forms\_explained](/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained)
--   [default\_forms](/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms)
-
-[^1]: The form naming convention you adopt will also help with form
-    organization within a given form type list.
+[^1]: The form naming convention you adopt will also help with form organization within a given form type list.

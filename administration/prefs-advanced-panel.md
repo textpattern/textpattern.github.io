@@ -1,12 +1,12 @@
 \[todo: needs to be marged with perferences doc - no advanced prefs
 panel in Textpattern 4.6 - also, document this change\]
 
-\\n[mininav\_admin\_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs)
+\\n[mininav_admin_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs)
 
 [![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:advanced-prefs.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:advanced-prefs.png)
 
 The
-[advanced\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
+[advanced_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
 is where you enhance your site beyond just what is essential for basic
 function; for example, folder locations, custom fields, and the
 specifics on your publishing needs, just to name a few. All of the
@@ -99,7 +99,7 @@ friendly UTF-8 unicode is set by default, so why change?
 
 XML-RPC is an integral part of Textpattern, but disabled by default. To
 use
-[xml-rpc\_for\_desktop\_publishing](/home/www/zendstudio/dokuwiki/bin/doku.php?id=xml-rpc_for_desktop_publishing)
+[xml-rpc_for_desktop_publishing](/home/www/zendstudio/dokuwiki/bin/doku.php?id=xml-rpc_for_desktop_publishing)
 (publishing to your Textpattern site remotely), switch the server on by
 setting this to “Yes”.
 
@@ -198,7 +198,7 @@ so you can make use of them, as needed, in context of a given article.
 
 Custom field names may include letters (uppercase or lowercase),
 numbers, and under scores, but no spaces or other special characters
-should be used. For example, *custom1*, *Custom1*, and *Custom\_1* are
+should be used. For example, *custom1*, *Custom1*, and *Custom_1* are
 all valid name constructs, while *custom 1* and *custom !* are not.
 
 (**Attention:** you might find that you can use spaces in custom field
@@ -219,14 +219,14 @@ not be used to name custom fields, or it could cause your code to not
 work as expected. **Do not use the following for custom field names:**
 
 -   annotate
--   article\_image
+-   article_image
 -   authorid
 -   body
 -   category
 -   category1
 -   category2
--   comments\_count
--   comments\_invite
+-   comments_count
+-   comments_invite
 -   excerpt
 -   form
 -   keywords
@@ -238,7 +238,7 @@ work as expected. **Do not use the following for custom field names:**
 -   status
 -   thisid
 -   title
--   url\_title
+-   url_title
 -   Any other [tag
     attribute](http://textpattern.net/wiki/index.php?title=Attributes_Cross-reference),
     just in case
@@ -353,17 +353,17 @@ load on the webserver.
 
 When set to “Yes”, expired articles will continue to show on your site
 after their expiry date has elapsed. You can use
-[if\_expired](/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expired)
+[if_expired](/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expired)
 to show alternate content or markup for expired articles.
 
 When set to “No”, expired articles will be removed from the public site
 and return a “410 Gone” HTTP status instead. Visitors hitting an expired
-article will be shown a custom page template named “error\_410” if it's
+article will be shown a custom page template named “error_410” if it's
 present .
 
-##### Compensate for persistent connections mod\_deflate bug? {#compensate_for_persistent_connections_mod_deflate_bug}
+##### Compensate for persistent connections mod_deflate bug? {#compensate_for_persistent_connections_mod_deflate_bug}
 
-Some mod\_deflate versions have a bug that breaks subsequent requests
+Some mod_deflate versions have a bug that breaks subsequent requests
 when keep-alive is used. Dropping the connection is the only reliable
 way to fix this. Setting this preference to “Yes” will close the
 connection, forcing the browser to reconnect for the next request.

@@ -1,4 +1,4 @@
-\\n[mininav\_troubleshooting](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting)
+\\n[mininav_troubleshooting](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting)
 
 A **Publisher** can reset any user's password. Provided there's at least
 one publisher who can log in, ask them to reset your password for you.
@@ -42,11 +42,11 @@ panel
 </li>
 <li>
 At the opening screen, select the database for your Textpattern install
-(e.g. userid\_textpattern)
+(e.g. userid_textpattern)
 
 </li>
 <li>
-From the list of tables select txp\_users. This should present a table
+From the list of tables select txp_users. This should present a table
 structure and a selection of tabbed options
 
 </li>
@@ -98,7 +98,7 @@ management program like phpMyAdmin for the database involved. This is
 what you do:
 
 1.  Open phpMyAdmin, select the appropriate database, and browse to the
-    txp\_users table
+    txp_users table
 2.  Look for the row with your Textpattern account username, and find
     the column named “privs”
 3.  Change it to the number “1” and save the changes

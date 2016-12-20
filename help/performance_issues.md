@@ -1,4 +1,4 @@
-\\n[mininav\_troubleshooting](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting)
+\\n[mininav_troubleshooting](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting)
 
 (a.k.a. why is my site so slow?)
 
@@ -149,7 +149,7 @@ things to check:
 -   **CSS**: certain CSS techniques can cause choppy page loading
     and scrolling. In particular, “fixed” background images and blocks
     can cause loading and scrolling problems. You may, however, consider
-    installing the [rvm\_css](http://vanmelick.com/txp) plugin which can
+    installing the [rvm_css](http://vanmelick.com/txp) plugin which can
     improve CSS performance considerably
 
 ### Improving performance {#improving-performance .sectionedit3#improving_performance}
@@ -184,7 +184,7 @@ at a time and watch the Queries count.
 **Caching**: sometimes pages are necessarily complex, and there are
 limits to server performance. If you have a popular site that's not fast
 enough, try a caching plugin such as
-[asy\_jpcache](http://forum.textpattern.com/viewtopic.php?pid=54333</li>)
+[asy_jpcache](http://forum.textpattern.com/viewtopic.php?pid=54333</li>)
 
 </ul>
 The important thing with any performance tweak is to **change only one

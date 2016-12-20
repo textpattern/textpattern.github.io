@@ -1,4 +1,4 @@
-\\n[mininav\_troubleshooting](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting)
+\\n[mininav_troubleshooting](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_troubleshooting)
 
 In [Debugging
 mode](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences),

@@ -26,11 +26,11 @@ In addition to the LICENSE and README files, the [plugin
 template](https://github.com/textpattern/textpattern-plugin-template)
 contains the following:
 
--   *zem\_tpl.php* -- Contains the code to compile plugins into the
+-   *zem_tpl.php* -- Contains the code to compile plugins into the
     format required by the Textpattern plugin installer.
--   *zem\_plugin.php* -- Is the template itself. Make a copy of this
+-   *zem_plugin.php* -- Is the template itself. Make a copy of this
     file and edit it to write your plugin.
--   *zem\_example.php* -- Is an example plugin that demonstrates both
+-   *zem_example.php* -- Is an example plugin that demonstrates both
     public-side tags and admin-side user interface features.
 
 Typical template use {#sec2}
@@ -69,10 +69,10 @@ Speedy development {#sect4}
 It speeds up development tremendously if you do the following:
 
 1.  Make sure plugin name and plugin filename correspond; e.g.
-    **zem\_test** should be in *zem\_test.php*.
+    **zem_test** should be in *zem_test.php*.
 2.  Create a directory, */full/path/dev/plugins*.
 3.  Drop your uncompiled plugins in that directory. Do not put
-    *zem\_tpl.php* in the same directory.
+    *zem_tpl.php* in the same directory.
 4.  In the **Advanced preferences** panel of the admin-side, set plugin
     cache directory to */full/path/dev/plugins*.
 

@@ -7,13 +7,13 @@ panel. The core admin theme options are:
 -   Hive
 
 To change the theme, go to Admin &gt;
-[basic\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences),
+[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences),
 scroll to the **Admin** section at bottom of panel and select the theme
 you want from the **Admin-side theme** control.
 
 Administrators can also allow account holders to choose their own
 admin-side theme on an individual basis, which is done by installing the
-[smd\_admin\_themes](http://textpattern.org/plugins/1096/smd_admin_themes)
+[smd_admin_themes](http://textpattern.org/plugins/1096/smd_admin_themes)
 plugin.
 
 Further, if a 260Ã -- 150px image of your theme is added into **your
@@ -159,7 +159,7 @@ author
 
 You :)
 
-author\_uri
+author_uri
 
 URL to your home page
 
