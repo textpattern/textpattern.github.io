@@ -4,11 +4,6 @@ layout: document\
 category: Development\
 published: true\
 title: "Database schema reference"\
-tags:\
-- development\
-- plugins\
-- database\
-- schema\
 ---
 
 Database schema reference

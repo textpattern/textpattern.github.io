@@ -4,12 +4,6 @@ layout: document\
 category: Development\
 published: true\
 title: "Admin-side events and steps"\
-tags:\
-- development\
-- plugins\
-- admin-side\
-- events\
-- steps\
 ---
 
 Admin-side events and steps

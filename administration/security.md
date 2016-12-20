@@ -1,13 +1,12 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: security\
-published: true\
-title: "Textpattern security"\
+---
+layout: document
+category: Administration
+published: true
+title: "Textpattern security"
+description: The developers of Textpattern take system security very seriously.
 ---
 
-Textpattern security
-====================
+# Textpattern security
 
 On this page:
 
@@ -16,28 +15,13 @@ On this page:
 -   [To modify or not modify core for added security](#sec3)
 -   [If you suspect your site has been hacked](#sec4)
 
-Textpattern security statement {#sec1}
-------------------------------
+## Textpattern security statement
 
-The developers of Textpattern take system security seriously. They
-regularly audit the source code for potential "holes" that bad people
-might try to exploit. Textpattern can proudly claim that for many years
-now there has been no confirmed reports of an exploited hole in core
-Textpattern code.
+The developers of Textpattern take system security very seriously. They regularly audit the source code for potential 'holes' that bad people might try to exploit. Textpattern can proudly claim that for many years now there has been no confirmed reports of an exploited hole in core Textpattern code.
 
-There have been occasional reports of hacked Textpattern sites, but the
-problem always traces to security holes in *other applications* (or in
-the web server itself), which were exploited and used to take control of
-the Textpattern administrator's account.
+There have been occasional reports of hacked Textpattern sites, but the problem usually traces to security holes in *other applications* (or in the web server itself), which were exploited and used to take control of the Textpattern administrator's account. This is important to understand, because while Textpattern itself is quite secure, you can still make it vulnerable by using other technology in relation that is not as secure. **There is nothing Textpattern developers can do to defend against security holes in other applications.**
 
-This is important to understand, because while Textpattern itself is
-quite secure, you can still make it vulnerable by using other technology
-in relation that is not as secure. **There is nothing Textpattern
-developers can do to defend against security holes in other
-applications.**
-
-Do your part for good security {#sec2}
-------------------------------
+## Do your part for good security
 
 Textpattern developers do their part to keep core code as secure as they
 can. It's up to you to do the rest. There are several things you can and

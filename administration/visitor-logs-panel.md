@@ -1,36 +1,23 @@
-\\n[mininav\_admin\_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs)
+---
+layout: document
+category: Administration
+published: true
+title: "Visitor logs panel"
+description: The Visitor Logs panel is where you can monitor who and what visits your site.
+---
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-vislogs-tab.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-vislogs-tab.png)
+# Visitor logs panel
 
-The Visitor Logs panel is where you can monitor who (Web surfers) and
-what (spambots, search engine spiders, and the like) visits your site.
-Although the information is not extremely detailed, it is easy and
-effective enough for keeping an eye on traffic.
-
-### Visitor Logs {#visitor-logs .sectionedit1#visitor_logs}
+The Visitor Logs panel is where you can monitor who (web surfers) and what (spambots, search engine spiders, etc.) visits your site. Although the information is not extremely detailed, it is easy and effective enough for keeping an eye on traffic.
 
 Each record is composed of the following information:
 
--   **Time** - The time your Web page was visited. The time is shifted
-    by the time preferences set in
-    [basic\_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences) panel.
--   **IP** - The IP address of the visitor.
--   **Host** - The published hostname associated with the IP address.
--   **Page** - The page in your Textpattern Web site that is
-    first visited. If it is **bold** it shows an attempt to leave
-    a comment. If no comment has been left, it is probably a script that
-    unsuccessfully tried to leave some spam.
--   **Referrer** - The location from which the visitor came; in other
-    words, an external location where a link existed to your respective
-    Web page. This may be another Web site, a search results list in
-    Google, a de.licio.us bookmark, and so forth. Be aware that this
-    information can be - and often is - forged or blocked. One reason
-    for this, of course, is spam. A current tactic of spambots is to hit
-    pages in the hopes that the referrer address is published on the
-    page somehow, and when Google indexes the page, their page will
-    incrementally be promoted.
--   **Method** - Usually GET, sometimes POST
--   **Status** - HTTP status code. 200 is successful
+* **Time** - The time your Web page was visited. The time is shifted by the time preferences set in the @@Preferences panel@@.
+* **IP** - The IP address of the visitor.
+* **Host** - The published hostname associated with the IP address.
+* **Page** - The page in your Textpattern Web site that is first visited. If it is **bold** it shows an attempt to leave a comment. If no comment has been left, it is probably a script that unsuccessfully tried to leave some spam.
+* **Referrer** - The location from which the visitor came; in other words, an external location where a link existed to your respective web page. This may be another web site, a search results list in Google, a bookmark, and so forth. Be aware that this information can be - and often is - forged or blocked. One reason for this, of course, is spam. A current tactic of spambots is to hit pages in the hopes that the referrer address is published on the page somehow, and when Google indexes the page, their page will incrementally be promoted.
+* **Method** - Usually GET, sometimes POST
+* **Status** - HTTP status code. 200 is successful.
 
-To see the **IP**, **Method** and **Status** columns, you must check the
-Select Detail box at the bottom of the list.
+To see the **IP**, **Method** and **Status** columns, you must check the 'More detail' box at the bottom of the list.

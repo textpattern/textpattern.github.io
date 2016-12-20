@@ -3,9 +3,6 @@ layout: document
 category: Development
 published: true
 title: "Contributing"
-tags:
-  - Development
-  - Contributing
 ---
 
 # Contributing

@@ -4,11 +4,6 @@ layout: document\
 category: Development\
 published: true\
 title: "Admin-side plugin tutorial"\
-tags:\
-- development\
-- plugins\
-- admin-side\
-- tutorial\
 ---
 
 Admin-side plugin tutorial

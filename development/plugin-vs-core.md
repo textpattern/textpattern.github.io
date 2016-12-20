@@ -4,11 +4,6 @@ layout: document\
 category: Development\
 published: true\
 title: "Plugin versus core features"\
-tags:\
-- development\
-- plugins\
-- core\
-- features\
 ---
 
 Plugin versus core features

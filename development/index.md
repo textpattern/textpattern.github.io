@@ -4,9 +4,6 @@ layout: landing\
 category: Development\
 published: true\
 title: "Textpattern plugin development"\
-tags:\
-- Development\
-- Plugins\
 ---
 
 Textpattern plugin development

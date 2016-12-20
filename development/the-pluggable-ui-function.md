@@ -4,11 +4,6 @@ layout: document\
 category: Development\
 published: true\
 title: "The pluggable\_ui function"\
-tags:\
-- development\
-- php\
-- functions\
-- admin-side\
 ---
 
 The `pluggable_ui` function

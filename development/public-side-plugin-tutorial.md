@@ -4,13 +4,6 @@ layout: document\
 category: Development\
 published: true\
 title: "Public-side plugin tutorial"\
-tags:\
-- development\
-- plugins\
-- public-side\
-- client-side\
-- front-side\
-- tutorial\
 ---
 
 Public-side plugin tutorial

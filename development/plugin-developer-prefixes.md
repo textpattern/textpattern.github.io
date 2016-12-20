@@ -4,10 +4,6 @@ layout: document\
 category: Development\
 published: true\
 title: "Plugin developer prefixes"\
-tags:\
-- development\
-- plugins\
-- prefixes\
 ---
 
 Plugin developer prefixes

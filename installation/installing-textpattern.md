@@ -4,10 +4,6 @@ category: Installation
 published: true
 title: "Quick installation/upgrade guide"
 description: A quick Textpattern CMS installation/upgrade guide,
-tags:
-  - Installation
-  - Upgrading
-  - Quick
 ---
 
 # Quick installation/upgrade guide

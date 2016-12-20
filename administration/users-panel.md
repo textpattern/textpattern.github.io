@@ -1,23 +1,14 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Administration\
-published: true\
-title: "Users"\
-tags:\
-- Users\
-- Roles\
-- Privileges\
-- Accounts\
-- Passwords\
-- Emails\
+---
+layout: document
+category: Administration
+published: true
+title: "Users panel"
+description: The Users panel is where user accounts are accessed and managed.
 ---
 
-Users
-=====
+# Users panel
 
-The **Users** panel is the default panel of the **Admin** region. It's
-where user accounts are accessed and managed.
+The **Users** panel is where user accounts are accessed and managed.
 
 On this page:
 

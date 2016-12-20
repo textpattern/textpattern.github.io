@@ -1,27 +1,14 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Administration\
-published: true\
-title: "Diagnostics"\
-tags:\
-- Diagnostics\
-- Pre-flight checks\
-- Error messages\
-- Low info\
-- High info\
-- PHP functions\
+---
+layout: document
+category: Administration
+published: true
+title: "Diagnostics panel"
+description: The Diagnostics panel is important for troubleshooting problems with your Textpattern installation
 ---
 
-Diagnostics
-===========
+# Diagnostics panel
 
-The **Diagnostics** panel is important for troubleshooting problems with
-your Textpattern installation, such as misconfigurations you might
-discover when installing or upgrading to a new version. The panel can
-also be useful for troubleshooting functional problems you inadvertently
-introduce when extending the system, modifying the *.htaccess* file, or
-some other slight of hand.
+The **Diagnostics** panel is important for troubleshooting problems with your Textpattern installation, such as misconfigurations you might discover when installing or upgrading to a new version. The panel can also be useful for troubleshooting functional problems you inadvertently introduce when extending the system, modifying the `.htaccess` file, or some other slight of hand.
 
 On this page:
 
@@ -29,8 +16,7 @@ On this page:
 -   [Pre-flight checks](#sec2)
 -   [Diagnostic reporting on PHP functions](#sec3)
 
-Diagnostic info display {#sec1}
------------------------
+## Diagnostic info display
 
 The actual diagnostics information is displayed in the **Diagnostics
 info** region at the bottom of the panel display. The volume of details
@@ -149,8 +135,7 @@ notextile.
 The last item above reflects a long list of Textpattern configuration
 files which makes up the end of the High info data shown.
 
-Pre-flight checks {#sec2}
------------------
+## Pre-flight checks
 
 The **Pre-flight checks** region, at top of the panel is where
 diagnostic feedback messages appear. There are four kinds of feedback
@@ -325,8 +310,7 @@ Possible red messages include:
     file could overwrite a plugin, and that would be bad. Create a
     different folder location for your plugin cache.
 
-Diagnostic reporting on PHP functions {#sec3}
--------------------------------------
+## Diagnostic reporting on PHP functions
 
 Textpattern requires certain PHP functions to be enabled for your
 website to work properly, or to work at all. Your website administrator

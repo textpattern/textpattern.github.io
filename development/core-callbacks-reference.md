@@ -4,11 +4,6 @@ layout: document\
 category: Development\
 published: true\
 title: "Core callbacks reference"\
-tags:\
-- development\
-- plugins\
-- callbacks\
-- core\
 ---
 
 Core callbacks reference

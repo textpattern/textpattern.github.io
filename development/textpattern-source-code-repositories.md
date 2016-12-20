@@ -4,9 +4,6 @@ category: Development
 published: true
 title: "Textpattern source code repositories"
 description: All Textpattern code reposistories are now maintained at GitHub and collectively detailed here for documentation convenience.
-tags:
-  - Development 
-  - Installation
 ---
 
 # Textpattern source code repositories

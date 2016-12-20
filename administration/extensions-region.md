@@ -1,35 +1,18 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Administration\
-published: true\
-title: "Extensions"\
-tags:\
-- Extension\
-- Admin-side\
-- Region\
-- Plugins\
+---
+layout: document
+category: Administration
+published: true
+title: "Extensions region"
+description: The extensions region appears to the higher user roles if any of the admin-side plugins that employ it are installed.
 ---
 
-Extensions
-==========
+# Extensions region
 
-The **Extensions** region is not an out-of-the-box feature. It appears
-to the higher [user
-roles](http://docs.textpattern.io/administration/user-roles-and-privileges)
-if any of the admin-side plugins that employ it are installed.
+The The **Extensions** region is not an out-of-the-box feature. It appears to the higher [user roles](http://docs.textpattern.io/administration/user-roles-and-privileges) if any of the admin-side plugins that employ it are installed.
 
-When relevant, the **Extensions** region will be seen in the
-administration navigation from all admin-side views *except* when you
-are in context of the **Plugins** panel, even for the administrator.
-This behaviour ensures being able to safely deactivate and/or remove
-outdated or buggy plugins if they are causing problems. To access the
-**Extensions** panels from the **Plugins** panel, move to anywhere else
-in the admin-side first, and the \***Extensions** region will appear in
-the navigation again.
+When relevant, the **Extensions** region will be seen in the administration navigation from all admin-side views *except* when you are in context of the **Plugins** panel, even for the administrator. This behaviour ensures being able to safely deactivate and/or remove outdated or buggy plugins if they are causing problems. To access the **Extensions** panels from the **Plugins** panel, move to anywhere else in the admin-side first, and the \***Extensions** region will appear in the navigation again.
 
-Plugins that use the Extensions region
---------------------------------------
+## Plugins that use the Extensions region
 
 When you upload a plugin that uses the **Extensions** region, a new
 panel option will appear under the region that provides the plugin's
@@ -63,8 +46,8 @@ notextile.
 notextile.
 
 </div>
-Unconventional panel placement
-------------------------------
+
+## Unconventional panel placement
 
 The use of the **Extensions** region is a convention adopted by plugin
 developers to put administration-side plugin preferences and other

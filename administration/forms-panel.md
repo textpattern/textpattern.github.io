@@ -1,34 +1,18 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Administration\
-published: true\
-title: "Forms"\
-tags:\
-- Forms\
-- Snippets\
-- Partials\
+---
+layout: document
+category: Administration
+published: true
+title: "Forms panel"
+description: The Forms panel contains an editing field, a list of existing Forms organized by rough categories, and a tag builder.
 ---
 
-Forms
-=====
+# Forms panel
 
-The **Forms** panel contains an editing field, a list of existing Forms
-organized by rough categories, and a tag builder in the left column to
-help you construct form content.
+The **Forms** panel contains an editing field, a list of existing Forms organized by rough categories, and a tag builder to help you construct form content.
 
-What are forms? {#sec1}
----------------
+## What are forms?
 
-**Forms** are akin to snippets, includes, partials, and the like that
-define discrete *packages* of information that can be inserted into web
-page templates, or nested into other forms that are in turn *pulled*
-into web page templates. They are not files, per se, but similar in
-concept to files, having their own name (ID) and content. The content in
-a form can be any combination of text, HTML markup, Textpattern tags, or
-tags for third-party
-[**Plugins**](http://docs.textpattern.io/administration/plugins-panel)
-you might use.
+**Forms** are akin to snippets, includes, partials, and the like that define discrete *packages* of information that can be inserted into web page templates, or nested into other forms that are in turn *pulled* into web page templates. They are not files, per se, but similar in concept to files, having their own name (ID) and content. The content in a form can be any combination of text, HTML markup, Textpattern tags, or tags for third-party [Plugins](http://docs.textpattern.io/administration/plugins-panel) you might use.
 
 The content can be a single word, to the HTML framework of an entire
 webpage template, to everything in between or something different
@@ -41,8 +25,7 @@ Textpattern, you'll discover the optimal patterns to use, as well as how
 to name forms so they aren't confusing when you have many. Don't be
 surprised to adjust your architecture over time as you learn.
 
-Out-of-the-box forms {#sec2}
---------------------
+## Out-of-the-box forms
 
 Several forms come with Textpattern out-of-the-box, only enough to
 provide the minimal publishing functionality needed in the default

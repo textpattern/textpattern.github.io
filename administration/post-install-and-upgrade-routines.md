@@ -1,29 +1,14 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Administration\
-published: true\
-title: "Post install and upgrade routines"\
-tags:\
-- Administration\
-- Troubleshooting\
-- Configuration\
-- Diagnostics\
-- Installing\
-- Updating\
-- Upgrading\
+---
+layout: document
+category: Administration
+published: true
+title: "Post install and upgrade routines"
+description: There's a typical routine to walk through after installing or updating Textpattern.
 ---
 
-Post install and upgrade routines
-=================================
+# Post install and upgrade routines
 
-For those [installing
-Textpattern](http://docs.textpattern.io/installing/) for the first time,
-or updating their system to a new release, there's a typical routine to
-walk through afterwards before diving into site creation or returning to
-usual publishing operations. Once you've done it a few times it becomes
-second nature. This page is a reminder of what the routine is in each
-case.
+For those [installing Textpattern](http://docs.textpattern.io/installing/) for the first time, or updating their system to a new release, there's a typical routine to walk through afterwards before diving into site creation or returning to usual publishing operations. Once you've done it a few times it becomes second nature. This page is a reminder of what the routine is in each case.
 
 On this page:
 
@@ -36,13 +21,11 @@ On this page:
     -   [Updating language packs](#sec1-1)
     -   [Check diagnostics, again](#sec1-1)
 
-Post installation routine {#sec1}
--------------------------
+## Post installation routine
 
-For those installing a new package of Textpattern, the routine begins
-upon first log in.
+For those installing a new package of Textpattern, the routine begins upon first log in.
 
-### Set default language {#sec1-1}
+### Set default language
 
 Unless you change it at the initial installation screen, British English
 is the language used by default for the installation process, and
@@ -61,7 +44,7 @@ Then you override the current default by selecting the new language you
 want from the "Current active language" selection menu at top of the
 languages table.[^1]
 
-### Configure site identity and publishing behaviour {#sec1-2}
+### Configure site identity and publishing behaviour
 
 Your next stop after languages is
 [**Preferences**](http://docs.textpattern.io/administration/preferences-panel)
@@ -72,7 +55,7 @@ things won't be applicable at first anyway until you've planned your
 website architecture more. Initially focus on what you know can be set,
 and save all changes.
 
-### Troubleshoot diagnostics {#sec1-3}
+### Troubleshoot diagnostics
 
 Your next stop is the
 [**Diagnostics**](http://docs.textpattern.io/administration/diagnostics-panel)
@@ -82,7 +65,7 @@ class="error">error</span> messages that may be showing under
 pass!</span>* is the usual desired result. See noted exceptions in the
 **Diagnostics** documentation.
 
-### Build your architecture {#sec1-4}
+### Build your architecture
 
 When diagnostics are clear, you're ready to build your site architecture
 and presentation. Building publishing architectures with Textpattern
@@ -95,12 +78,11 @@ get oriented:
 -   [Administration fast
     track](http://docs.textpattern.io/administration/admin-fast-track)
 
-Post upgrade/update routine {#sec2}
----------------------------
+## Post upgrade/update routine
 
 A couple of the post-install routines apply to upgrading too.
 
-### Updating language packs {#sec2-1}
+### Updating language packs
 
 Chances are you don't need to change your default language at this
 point, or install new ones, but you will need to update the Textpacks
@@ -120,12 +102,8 @@ habit of checking the
 panel after installing plugins too, and/or verify with their developers
 if Textpack uploads are needed.
 
-### Check diagnostics, again {#sec2-2}
+### Check diagnostics, again
 
-Anytime you update anything -- system or plugins -- verify no issues
-cropped up in
-[**Diagnostics**](http://docs.textpattern.io/administration/diagnostics-panel).
+Anytime you update anything - system or plugins - verify no issues cropped up in the [Diagnostics panel](http://docs.textpattern.io/administration/diagnostics-panel).
 
-[^1]: You'll need to click the **Save** button in Textpattern 4.5.7, but
-    in 4.6 no save is necessary, the language change applies
-    automatically.
+[^1]: You'll need to click the **Save** button in Textpattern 4.5.7, but in 4.6 no save is necessary, the language change applies automatically.

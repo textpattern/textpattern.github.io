@@ -1,23 +1,14 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Administration\
-published: true\
-title: "Plugins"\
-tags:\
-- Plugins\
-- Extension\
+---
+layout: document
+category: Administration
+published: true
+title: "Plugins panel"
+description: When your needs cannot be met by core ingenuity alone, you can extend Textpattern functionality with plugins.
 ---
 
-Plugins
-=======
+# Plugins panel
 
-Textpattern by itself is capable of doing a lot, especially as you learn
-to use *forms* and **[core tags](http://docs.textpattern.io/tags/__) in
-increasingly sophisticated ways. But when your needs cannot be met (or
-met easily) by core ingenuity alone, you can extend functionality with
-plugins, whether to produce content and behaviour, enhance
-configurability or usability, and more.
+Textpattern by itself is capable of doing a lot, especially as you learn to use @@Page templates@@, @@Form templates@@ and [core tags](http://docs.textpattern.io/tags/) in increasingly sophisticated ways. But when your needs cannot be met (or met easily) by core ingenuity alone, you can extend functionality with plugins, whether to produce content and behaviour, enhance configurability or usability, and more.
 
 On this page:
 

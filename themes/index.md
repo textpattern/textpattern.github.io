@@ -4,10 +4,6 @@ category: Themes
 published: true
 title: "Theme design"
 description: Textpattern theme designs - either building from scratch, or using a pre-built theme.
-tags:
-- Themes
-- Presentation
-- Skin
 ---
 
 # Theme design

@@ -4,11 +4,6 @@ category: Installation
 published: true
 title: "Moving a Textpattern installation"
 description: Moving Textpattern means relocating the installation between two directories; either on the same server or between two servers.
-tags:
-  - Installation
-  - Relocating
-  - Moving
-  - Server
 ---
 
 # Moving a Textpattern installation

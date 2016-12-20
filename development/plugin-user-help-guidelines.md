@@ -4,11 +4,6 @@ layout: document\
 category: Development\
 published: true\
 title: "Plugin user-help guidelines"\
-tags:\
-- development\
-- plugins\
-- user help\
-- guidelines\
 ---
 
 Plugin user-help guidelines

@@ -4,14 +4,11 @@ category: Administration
 published: true
 title: "Write panel"
 description: The Write panel reveals the various features for managing articles on your Web site, which includes creating new articles, editing existing articles.
-tags:
-  - Administration
-  - Configuration
 ---
 
 # Write panel
 
-**Write** is the default panel opened when you log into Textpattern's admin-side (see Figure 1). This panel reveals the various features for managing articles on your website, which includes creating new articles, editing existing articles, assigning (or reassigning) articles to sections and categories, setting the time and date of articles, and various other abilities that are covered in the following description.
+The **Write** panel is the default panel opened when you log into Textpattern's admin-side (see Figure 1). This panel reveals the various features for managing articles on your website, which includes creating new articles, editing existing articles, assigning (or reassigning) articles to sections and categories, setting the time and date of articles, and various other abilities that are covered in the following description.
 
 On this page:
 

@@ -4,10 +4,6 @@ layout: document\
 category: Development\
 published: true\
 title: "Plugin template"\
-tags:\
-- development\
-- plugins\
-- template\
 ---
 
 Plugin template
