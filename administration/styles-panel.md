@@ -1,24 +1,18 @@
-\\n[mininav\_presentation\_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs)
+---
+layout: document
+category: Administration
+published: true
+title: "Styles panel"
+description: The Styles panel is used to edit CSS (Cascading Style Sheets) for your web site.
+---
 
-The [styles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles) panel
-has the familiar layout of
-[pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages). On the
-right there is the list of the currently known stylesheets. On the left
-there are controls for creating a brand new stylesheet, and on the
-bottom there is a control for creating a copy of an existing style
-sheet. Please note here again there is a status line in the upper left
-that tells you which one you are currently editing in the box.
+# Styles panel
 
-Smack in the middle is a large edit field where you may edit the CSS
-directly. This is the default and is familiar to most people. If you so
-choose, there is another option, a CSS style editor. On the left there
-is a link entitled “Edit in CSS editor”. Upon clicking this link you are
-presented with a long table where Textpattern has smartly parsed out
-each element and each style for that element and made them individually
-accessible. I highly recommend editing the raw CSS file however, so
-click the “Edit raw CSS” and we can move along.
+The **Styles** panel is used to edit CSS (Cascading Style Sheets) for your web site, and has a similar layout to the [Pages panel](http://docs.textpattern.io/administration/pages-panel).
 
-Also see:
+The first column is the list of the current style sheets, as well as an indication of which one you are currently editing.
 
--   [default\_styles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_styles)
+The second column is a large edit field where you may edit the CSS directly, and controls for creating a brand new stylesheet or creating a copy of an existing style sheet. Standard CSS rules can be entered here.
 
+Note: For performance benefits, you may wish to host your CSS as flat files (outside of the Textpattern database) instead of using this panel.
+{: .alert-block .information}
