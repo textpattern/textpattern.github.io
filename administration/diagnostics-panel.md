@@ -37,7 +37,7 @@ Low diagnostics info begins with a set of data values about your installation an
         <thead>
             <tr>
                 <th class="t25" scope="col">Data item</th>
-                <th scope="col">What it tells you/th>
+                <th scope="col">What it tells you</th>
             </tr>
         </thead>
         <tbody>
@@ -183,7 +183,7 @@ following information.
         <thead>
             <tr>
                 <th class="t25" scope="col">Data item</th>
-                <th scope="col">What it tells you/th>
+                <th scope="col">What it tells you</th>
             </tr>
         </thead>
         <tbody>
@@ -532,6 +532,8 @@ These functions are *not* used by Textpattern.[^5] If diagnostics reports one or
 * `system_exec`
 * `virtual`
 * `wget`
+
+[Next: Preferences panel](http://docs.textpattern.io/administration/preferences-panel)
 
 [^1]: **Folder permissions:** A chmod setting of 755 or 711 should work to make a folder writable, and is secure. A lot of people have trouble setting these values, however, and need to use a chmod of 777, which has [security implications](http://forum.textpattern.com/viewtopic.php?id=26613). The discrepancy is due to how Apache directives are configured on the web server, which means you may have to ask your server administrator or web host to change the directives. If they won't do it, it might be time to find a new web host, because no web host should force you to operate your site insecurely.
 
