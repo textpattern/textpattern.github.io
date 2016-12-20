@@ -2,12 +2,13 @@
 layout: document
 category: Development
 published: true
-title: "Contributing"
+title: "Contributing to Textpattern"
+description: If you want to help with the development of Textpattern, there are plenty of ways to get involved.
 ---
 
-# Contributing
+# Contributing to Textpattern
 
-If you want to help with the development of Textpattern CMS, there are plenty of ways to get involved. Please take a moment to review this document in order to make the contribution process easy and effective for everyone.
+If you want to help with the development of Textpattern, there are plenty of ways to get involved. Please take a moment to review this document in order to make the contribution process easy and effective for everyone.
 
 ## Who can contribute?
 

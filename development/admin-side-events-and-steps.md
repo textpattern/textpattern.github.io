@@ -1,233 +1,210 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Development\
-published: true\
-title: "Admin-side events and steps"\
+---
+layout: document
+category: Development
+published: true
+title: "Admin-side events and steps"
+description: These are the main events and steps that Textpattern uses as you interact with the admin-side interface.
 ---
 
-Admin-side events and steps
-===========================
+# Admin-side events and steps
 
-These are the main events and steps that Textpattern uses as you
-interact with the admin-side interface. Although they are not direct
-[callbacks](http://docs.textpattern.io/development/core-callbacks-reference),
-you may hook into these events and steps from a plugin to perform an
-action.
+These are the main events and steps that Textpattern uses as you interact with the admin-side interface. Although they are not direct [callbacks](http://docs.textpattern.io/development/core-callbacks-reference), you may hook into these events and steps from a plugin to perform an action.
 
-h2(\#sec1) `admin` event
+## 'admin' event
 
 The associated steps are:
 
--   admin\_change\_pageby
--   admin\_multi\_edit
--   author\_edit
--   author\_list
--   author\_save
--   author\_save\_new
--   change\_email
--   change\_email\_form
--   change\_pass
--   new\_pass\_form
+* admin_change_pageby
+* admin_multi_edit
+* author_edit
+* author_list
+* author_save
+* author_save_new
+* change_email
+* change_email_form
+* change_pass
+* new_pass_form
 
-`article` event {#sec2}
----------------
-
-The associated steps are:
-
--   create
--   edit
--   publish
--   save
--   save\_pane\_state
-
-`category` event {#sec3}
-----------------
+## 'article' event
 
 The associated steps are:
 
--   cat\_article\_create
--   cat\_article\_edit
--   cat\_article\_save
--   cat\_category\_list
--   cat\_category\_multiedit
--   cat\_file\_create
--   cat\_file\_edit
--   cat\_file\_save
--   cat\_image\_create
--   cat\_image\_edit
--   cat\_image\_save
--   cat\_link\_create
--   cat\_link\_edit
--   cat\_link\_save
+* create
+* edit
+* publish
+* save
+* save_pane_state
 
-`css` event {#sec4}
------------
+## 'category' event
 
 The associated steps are:
 
--   css\_copy
--   css\_edit
--   css\_edit\_raw
--   css\_delete
--   css\_save
--   pour
+* cat_article_create
+* cat_article_edit
+* cat_article_save
+* cat_category_list
+* cat_category_multiedit
+* cat_file_create
+* cat_file_edit
+* cat_file_save
+* cat_image_create
+* cat_image_edit
+* cat_image_save
+* cat_link_create
+* cat_link_edit
+* cat_link_save
 
-`discuss` event {#sec5}
----------------
-
-The associated steps are:
-
--   discuss\_change\_pageby
--   discuss\_delete
--   discuss\_edit
--   discuss\_list
--   discuss\_multi\_edit
--   discuss\_save
--   ipban\_add
--   ipban\_list
--   ipban\_unban
-
-`file` event {#sec6}
-------------
+## 'css' event
 
 The associated steps are:
 
--   file\_change\_pageby
--   file\_create
--   file\_edit
--   file\_insert
--   file\_list
--   file\_multi\_edit
--   file\_replace
--   file\_save
+* css_copy
+* css_edit
+* css_edit_raw
+* css_delete
+* css_save
+* pour
 
-`form` event {#sec7}
-------------
+## 'discuss' event
 
 The associated steps are:
 
--   form\_create
--   form\_edit
--   form\_delete
--   form\_list
--   form\_multi\_edit
--   form\_save
--   save\_pane\_state
+* discuss_change_pageby
+* discuss_delete
+* discuss_edit
+* discuss_list
+* discuss_multi_edit
+* discuss_save
+* ipban_add
+* ipban_list
+* ipban_unban
 
-`image` event {#sec8}
--------------
-
-The associated steps are:
-
--   image\_edit
--   image\_change\_pageby
--   image\_insert
--   image\_list
--   image\_multi\_edit
--   image\_replace
--   image\_save
--   thumbnail\_create
--   thumbnail\_delete
--   thumbnail\_insert
-
-`import` event {#sec9}
---------------
+## 'file' event
 
 The associated steps are:
 
--   start\_import
--   switch\_tool
+* file_change_pageby
+* file_create
+* file_edit
+* file_insert
+* file_list
+* file_multi_edit
+* file_replace
+* file_save
 
-`link` event {#sec10}
-------------
-
-The associated steps are:
-
--   link\_change\_pageby
--   link\_edit
--   link\_list
--   link\_multi\_edit
--   link\_save
-
-`list` event {#sec11}
-------------
+## 'form' event
 
 The associated steps are:
 
--   list\_change\_pageby
--   list\_list
--   list\_multi\_edit
+* form_create
+* form_edit
+* form_delete
+* form_list
+* form_multi_edit
+* form_save
+* save_pane_state
 
-`log` event {#sec12}
------------
-
-The associated steps are:
-
--   log\_change\_pageby
--   log\_list
--   log\_multi\_edit
-
-`page` event {#sec13}
-------------
+## 'image' event
 
 The associated steps are:
 
--   page\_edit
--   page\_delete
--   page\_new
--   page\_save
--   page\_list
+* image_edit
+* image_change_pageby
+* image_insert
+* image_list
+* image_multi_edit
+* image_replace
+* image_save
+* thumbnail_create
+* thumbnail_delete
+* thumbnail_insert
 
-`plugin` event {#sec14}
---------------
-
-For information purposes only. Third party plugins do not run on this
-panel.
-
-The associated steps are:
-
--   plugin\_edit
--   plugin\_help
--   plugin\_install
--   plugin\_list
--   plugin\_multi\_edit
--   plugin\_save
--   plugin\_verify
--   switch\_status
-
-`prefs` event {#sec15}
--------------
+## 'import' event
 
 The associated steps are:
 
--   advanced\_prefs
--   advanced\_prefs\_save
--   get\_language
--   get\_textpack
--   list\_languages
--   prefs\_list
--   prefs\_save
--   remove\_language
+* start_import
+* switch_tool
 
-`section` event {#sec16}
----------------
+## 'link' event
 
 The associated steps are:
 
--   section\_change\_pageby
--   sec\_section\_list
--   section\_delete
--   section\_edit
--   section\_multi\_edit
--   section\_save
--   section\_set\_default
--   section\_toggle\_option
+* link_change_pageby
+* link_edit
+* link_list
+* link_multi_edit
+* link_save
 
-`tag` event {#sec17}
------------
+## 'list' event
 
 The associated steps are:
 
--   build
+* list_change_pageby
+* list_list
+* list_multi_edit
 
+## 'log' event
+
+The associated steps are:
+
+* log_change_pageby
+* log_list
+* log_multi_edit
+
+## 'page' event
+
+The associated steps are:
+
+* page_edit
+* page_delete
+* page_new
+* page_save
+* page_list
+
+## 'plugin' event
+
+For information purposes only. Third party plugins do not run on this panel.
+
+The associated steps are:
+
+* plugin_edit
+* plugin_help
+* plugin_install
+* plugin_list
+* plugin_multi_edit
+* plugin_save
+* plugin_verify
+* switch_status
+
+## 'prefs' event
+
+The associated steps are:
+
+* advanced_prefs
+* advanced_prefs_save
+* get_language
+* get_textpack
+* list_languages
+* prefs_list
+* prefs_save
+* remove_language
+
+## 'section' event
+
+The associated steps are:
+
+* section_change_pageby
+* sec_section_list
+* section_delete
+* section_edit
+* section_multi_edit
+* section_save
+* section_set_default
+* section_toggle_option
+
+## 'tag' event
+
+The associated steps are:
+
+* build

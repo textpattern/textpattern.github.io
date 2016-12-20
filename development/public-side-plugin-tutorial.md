@@ -1,20 +1,16 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Development\
-published: true\
-title: "Public-side plugin tutorial"\
+---
+layout: document
+category: Administration
+published: true
+title: "Public-side plugin tutorial"
+description: This tutorial will walk you through the basics of creating a simple public-side plugin.
 ---
 
-Public-side plugin tutorial
-===========================
+# Public-side plugin tutorial
 
-This tutorial will walk you through the basics of creating a simple
-public-side plugin; not to be used, exactly, but so you understand
-what's involved.
+This tutorial will walk you through the basics of creating a simple public-side plugin; not to be used, exactly, but so you understand what's involved.
 
-(You might also like to see the [Admin-side plugin
-tutorial](http://docs.textpattern.io/development/admin-side-plugin-tutorial.))
+You might also like to see the [Admin-side plugin tutorial](http://docs.textpattern.io/development/admin-side-plugin-tutorial).
 
 On this page:
 

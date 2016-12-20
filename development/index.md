@@ -1,20 +1,18 @@
-------------------------------------------------------------------------
-
-layout: landing\
-category: Development\
-published: true\
-title: "Textpattern plugin development"\
+---
+layout: landing
+category: Administration
+published: true
+title: "Textpattern plugin development"
+description: This information is for those who are thinking about developing Textpattern plugins.
 ---
 
-Textpattern plugin development
-==============================
+# Textpattern plugin development
 
-This information is for those who are thinking about developing
-Textpattern plugins.
+This information is for those who are thinking about developing Textpattern plugins.
 
 On this page:
 
--   [Disclaimer](#sec1)
+-   [Disclaimer](disclaimer)
 -   [Developer rules of the road](#sec2)
     -   [Avoid reinventing the wheel](#sec2-1)
     -   [Do it the Textpattern way](#sec2-2)
@@ -38,8 +36,7 @@ On this page:
 -   [Getting help](#sec11)
 -   [External reading](#sec12)
 
-Disclaimer {#sec1}
-----------
+## Disclaimer
 
 Before you embark on this journey, understand that core developers put a
 lot of effort into maintaining backwards compatibility within the
@@ -51,13 +48,12 @@ changes that affect backwards compatibility. As a plugin developer, it
 is your responsibility to ensure your plugins work against core code at
 point of every future Textpattern release.
 
-Developer rules of the road {#sec2}
----------------------------
+## Developer rules of the road
 
 More like four strong recommendations, to help ensure you're producing
 plugins that people will use. And that's the whole point, right?
 
-### Avoid reinventing the wheel {#sec2-1}
+### Avoid reinventing the wheel
 
 While reinventing the wheel is a good way to learn, it's not so good for
 making useful or popular plugins. If you're plugin does what another
@@ -84,7 +80,7 @@ get, the more likely the plugin is worth building.
 If you do throw caution to the wind and reinvent the wheel anyway, make
 sure you're ready to raise the bar. Somebody has to eventually.
 
-### Do it the Textpattern way {#sec2-2}
+### Do it the Textpattern way
 
 Do it the “Textpattern's way” from the start by using Textpattern
 functions (talked about later), because they already work efficiently.
@@ -95,7 +91,7 @@ Further, some functions are in place to assist with keeping Textpattern
 secure and working regardless of host server settings, and you don't
 want to interfere with that kind of thing.
 
-### Use the templates {#sec2-3}
+### Use the templates
 
 Templates come from the trials and errors of those who came before you.
 Thus using templates helps you do things easier, with better results.
@@ -115,7 +111,7 @@ the plugin user-help guidelines and template.
     guidelines](http://docs.textpattern.io/development/plugin-user-help-guidelines)
     (and template)
 
-### Write clear and concise plugin help {#sec2-4}
+### Write clear and concise plugin help
 
 Yes, we're emphasizing this. Don't be one of *those* developers that
 assumes everyone knows what you know -- the opposite is true. People
@@ -134,8 +130,7 @@ If you include screenshots in your plugin help, keep them updated with
 UI changes. Nothing looks worse or is more confusing than outdated
 screenshots that don't match the help copy.
 
-What is a plugin? {#sec3}
------------------
+## What is a plugin?
 
 This documentation focuses on the technological aspects of plugins, but
 you should also understand the [philosophy of core
@@ -149,7 +144,7 @@ Defining functions in the plugin is a common and easy way to start out,
 as they can be called from templates. But more advanced ways exist for
 plugins to influence Textpattern behaviour.
 
-### Functional categories {#sec3-1}
+### Functional categories
 
 Plugins can be categorized in three functional ways:
 
@@ -168,7 +163,7 @@ Plugins can also be public-side or admin-side, or be one of several
 types that correspond to all of the above (see *How plugins are loaded*
 later.)
 
-### Public-side plugins {#sec3-2}
+### Public-side plugins
 
 Public-side (aka "client-side" or "front-side") plugins are those that
 enable content output on the front-side of a website, often through
@@ -182,7 +177,7 @@ getting started with Textpattern plugin development.
     -- A basic tutorial to learn the ropes of the easiest kind of plugin
     to build.
 
-### Admin-side plugins {#sec3-3}
+### Admin-side plugins
 
 Admin-side plugins provide site administrators and designers the ability
 to alter the
@@ -208,8 +203,7 @@ All hopeful plugin developers must [register a plugin developer
 prefix](http://docs.textpattern.io/development/plugin-developer-prefixes),
 and use it in the appropriate locations.
 
-How plugins are loaded {#sec5}
-----------------------
+## How plugins are loaded
 
 Plugins are loaded very early during script execution. It happens in
 *textpattern/publish.php* (public-side) and in textpattern/index.php
@@ -247,8 +241,7 @@ Request-Variables and initiate some action and `exit;` the execution of
 the script (for example to serve images or other binary data from within
 a plugin).
 
-Callbacks {#sec6}
----------
+## Callbacks
 
 A callback is essentially an instruction (written as a function) that
 your plugin follows to execute some *events* (and *steps*) -- either
@@ -261,7 +254,7 @@ provides complete details for all callback actions used in Textpattern,
 organized by public-side, admin-side, plugin, and function- and
 tag-based callbacks.[^2]
 
-### Function: `register_callback()` {#sec6-1}
+### Function: register_callback()
 
 There are many [functions used in
 Textpattern](http://phpcrossref.com/xref/textpattern/_functions/) that
@@ -304,7 +297,7 @@ when the function is called, with implications for what you can do:
 
 Let's look a few `register_callback()` examples.
 
-### Adding your own admin-side panel elements {#sec6-2}
+### Adding your own admin-side panel elements
 
 Elements can be added to admin-side panels in two ways: as *new*
 elements, or as modifications to existing elements. Each panel has its
@@ -314,7 +307,7 @@ callbacks](core-callbacks-reference#sec2-4) section of the [Core
 callbacks
 reference](http://docs.textpattern.io/development/core-callbacks-reference).
 
-#### Adding new elements (without altering existing markup) {#sec6-2-1}
+#### Adding new elements (without altering existing markup)
 
 In this example, we use the `register_callback` function to add some
 text -- "Textile, the humane web text generator." -- in the **Write**
@@ -348,7 +341,7 @@ the function only outputs new content (we're not modifying anything), so
 `$data` and `$rs` are ignored and the content is returned (output) as
 defined.
 
-#### Adding new elements to existing panel markup {#sec6-2-2}
+#### Adding new elements to existing panel markup
 
 Another way to add elements is to existing markup. For example, to add
 the `url_title` below the article's **Title** field, you could do this:
@@ -365,7 +358,7 @@ Here we return the default markup (`$data`) and tack on our own markup
 which we read from the record set (`$rs`) that was passed to our
 function.
 
-### Altering admin-side panel elements {#sec6-3}
+### Altering admin-side panel elements
 
 Most of the UI elements in the admin-side panels can be altered or
 removed, depending on how you write your functions. In this let's alter
@@ -395,7 +388,7 @@ targeting the **Status** widget in the **Write** panel. The function
 then pulls the default record set, defines a new status button option
 for inclusion, and returns (outputs) the resulting altered list.
 
-### Removing admin-side panel elements {#sec6-4}
+### Removing admin-side panel elements
 
 In this case, let's say you wanted to remove the **Keywords** field.[^5]
 You could hook into the `keywords` step and return a space character:
@@ -409,8 +402,7 @@ You could hook into the `keywords` step and return a space character:
 That's it! The returned space character (`return ' '`) replaces the
 keywords field, effectively removing it.
 
-Plugin lifecycle management and preferences {#sec7}
--------------------------------------------
+## Plugin lifecycle management and preferences
 
 Plugins can opt into receiving `plugin_prefs` and `plugin_lifecycle`
 events. The opt-in is signaled to core by flagging your intention using
@@ -441,8 +433,7 @@ own use, plugin developers may take advantage of the remaining four
 one-time actions, as these bits are copied into the *txp\_plugin* table
 row for any particular plugin whenever it is uploaded.
 
-Variables, classes, and constants {#sec8}
----------------------------------
+## Variables, classes, and constants
 
 These resources are hosted at **phpcrossref.com**:
 
@@ -452,8 +443,7 @@ These resources are hosted at **phpcrossref.com**:
 -   [Constants
     list](http://phpcrossref.com/xref/textpattern/_constants/)
 
-Full plugin tutorials {#sec9}
----------------------
+## Full plugin tutorials
 
 Two basic plugin tutorials to put it all in perspective:
 
@@ -462,8 +452,7 @@ Two basic plugin tutorials to put it all in perspective:
 -   [Admin-side plugin
     tutorial](http://docs.textpattern.io/development/admin-side-plugin-tutorial)
 
-Implementation resources {#sec10}
-------------------------
+## Implementation resources
 
 Now you know what plugins are and you're ready to kick plugin ass.
 You'll probably need some combination of these to see the job through:
@@ -534,8 +523,7 @@ until further notice.
 -   [Command-line plugin
     decoder](http://forum.textpattern.com/viewtopic.php?id=4252) \[???\]
 
-Getting help {#sec11}
-------------
+## Getting help
 
 If you need a warm shoulder to lean on, subscribe to the [plugin
 development mailing list](http://lists.textpattern.com/), which might be
@@ -545,8 +533,7 @@ The Textpattern Support Forum, notably the [Plugin
 discussion](http://forum.textpattern.com/viewforum.php?id=13) area, is a
 good place to post questions too.
 
-External reading {#sec12}
-----------------
+## External reading
 
 Additional third-party reading you may find insightful. The information
 may be outdated, so use with caution. Not a long list, in any case.

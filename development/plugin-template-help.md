@@ -1,21 +1,16 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Development\
-published: true\
-title: "Plugin template"\
+---
+layout: document
+category: Administration
+published: true
+title: "Plugin template"
+description: Textpattern plugins are perhaps best thought of as functions supplementary to those found in Textpattern core.
 ---
 
-Plugin template
-===============
+# Plugin template
 
-Textpattern plugins are perhaps best thought of as functions
-supplementary to those found in *textpattern/publish/taghandlers.php*.
-Functions residing in this file respond to `<txp:foo />` and
-`<txp:foo>bar</txp:foo>` tags found in *pages*, *forms*, *articles* and
-other dynamic content containers in Textpattern. A [Textpattern plugin
-template](https://github.com/textpattern/textpattern-plugin-template) is
-available on Github for plugin distribution.
+Textpattern plugins are perhaps best thought of as functions supplementary to those found in Textpattern core.
+
+Functions residing in this file respond to `<txp:foo />` and `<txp:foo>bar</txp:foo>` tags found in @@Page templates@@, @@Form templates@@, @@Articles@@ and other dynamic content containers in Textpattern. A [Textpattern plugin template is available on GitHub](https://github.com/textpattern/textpattern-plugin-template) for plugin distribution.
 
 On this page:
 

@@ -1,20 +1,16 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Development\
-published: true\
-title: "Admin-side plugin tutorial"\
+---
+layout: document
+category: Development
+published: true
+title: "Admin-side plugin tutorial"
+description: This tutorial walks you through the basics of creating and admin-side plugin.
 ---
 
-Admin-side plugin tutorial
-==========================
+# Admin-side plugin tutorial
 
-This tutorial walks you through the basics of creating and admin-side
-plugin; it covers functions, callbacks, and the concept of *events* and
-*steps*.
+This tutorial walks you through the basics of creating and admin-side plugin; it covers functions, callbacks, and the concept of *events* and *steps*.
 
-(You might also like to see the [Public-side plugin
-tutorial](http://docs.textpattern.io/development/public-side-plugin-tutorial.))
+You might also like to see the [Public-side plugin tutorial](http://docs.textpattern.io/development/public-side-plugin-tutorial).
 
 On this page:
 

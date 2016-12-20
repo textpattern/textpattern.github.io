@@ -1,23 +1,14 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Development\
-published: true\
-title: "The pluggable\_ui function"\
+---
+layout: document
+category: Administration
+published: true
+title: "The pluggable_ui function"
+description: The pluggable_ui function's main purpose was to provide additional event/step hooks to modify the administration side.
 ---
 
-The `pluggable_ui` function
-===========================
+# The pluggable_ui function
 
-The `pluggable_ui` function was first introduced in Textpattern core
-prior to March 2009. It's main purpose was to provide additional
-event/step hooks to modify the administration side when admin-side web
-templates were harder to work with.[^1] However, admin-side templates
-have come a long way and are vastly improved, not to mention other core
-features have emerged too (or will soon) that make new plugin designs
-possible. Thus `pluggable_ui` has less to offer the average plugin
-developer. Some say it's only value anymore is to allow other plugins to
-modify your plugin's content. See example below.
+The `pluggable_ui` function was first introduced in Textpattern core prior to March 2009. It's main purpose was to provide additional event/step hooks to modify the administration side when admin-side web templates were harder to work with.[^1] However, admin-side templates have come a long way and are vastly improved, not to mention other core features have emerged too (or will soon) that make new plugin designs possible. Thus `pluggable_ui` has less to offer the average plugin developer. Some say it's only value anymore is to allow other plugins to modify your plugin's content. See example below.
 
 On this page:
 
@@ -26,8 +17,7 @@ On this page:
 -   [Examples](#sec3)
 -   [Events and steps reference](#sec4)
 
-Caution {#sec1}
--------
+## Caution
 
 Though it’s possible to completely redesign the HTML markup within an
 admin-side panel, you are advised not to it with a plugin. Removing and
@@ -37,8 +27,7 @@ rename selectors (IDs, classes), consider leaving the existing items
 intact and adding your own, then setting the original's to
 `display:none` via CSS.
 
-Function definition {#sec2}
--------------------
+## Function definition
 
 Callbacks written with `pluggable_ui` have a different signature than
 those written with other functions ([compare with
@@ -85,8 +74,7 @@ database table that pertains to the named *event*.
 with preference settings) where argument \#4 becomes the preference name
 and argument \#5 holds its value.
 
-Examples {#sec3}
---------
+## Examples
 
 In this example we have a basic admin-side plugin called "abc\_hello".
 The plugin creates a new **ABC Hello** panel under the **Extensions**
@@ -122,8 +110,7 @@ Now other plugins can step in with something like this:
 And that is pretty much all `pluggable_ui()` brings to the table
 anymore.
 
-Events and steps reference {#sec4}
---------------------------
+## Events and steps reference
 
 -   [Core callbacks
     reference](http://docs.textpattern.io/development/core-callbacks-reference)
@@ -131,7 +118,4 @@ Events and steps reference {#sec4}
         callbacks](http://docs.textpattern.io/development/core-callbacks-reference#sec2-4)
         (for more callback options)
 
-[^1]: In 2009, web page templates of the administration side still had
-    table-based layouts, poor separation of presentation and content,
-    and selectors were somewhat limited or applied in non-ideal places,
-    among other things.
+[^1]: In 2009, web page templates of the administration side still had table-based layouts, poor separation of presentation and content, and selectors were somewhat limited or applied in non-ideal places, among other things.

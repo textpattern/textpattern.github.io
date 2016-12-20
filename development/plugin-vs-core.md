@@ -1,25 +1,16 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Development\
-published: true\
-title: "Plugin versus core features"\
+---
+layout: document
+category: Administration
+published: true
+title: "Plugin versus core features"
+description: A common discussion point is whether or not the functionality of a given plugin should be integrated into the core code of Textpattern.
 ---
 
-Plugin versus core features
-===========================
+# Plugin versus core features
 
-A common discussion point raised in the Textpattern Support Forum --
-again and again -- is whether or not the functionality of a given plugin
-should be integrated into the core code of Textpattern. One could
-certainly argue the merits of doing so, depending on the functionality
-in question, but the philosophy behind core development is to keep core
-code light, secure, and extendable; not bloated, slow, buggy, and
-complex. Developers have followed that philosophical standpoint for over
-ten years by not integrating every function or feature that someone says
-*should* be in core. We attempt to break that idea down here. Of all the
-plugin development documentation, this page is more about perspective
-than how-to.
+A common discussion point raised in the Textpattern Support Forum - again and again - is whether or not the functionality of a given plugin should be integrated into the core code of Textpattern. One could certainly argue the merits of doing so, depending on the functionality in question, but the philosophy behind core development is to keep core code light, secure, and extendable; not bloated, slow, buggy, and complex.
+
+Developers have followed that philosophical standpoint for over ten years by not integrating every function or feature that someone says *should* be in core. We attempt to break that idea down here. Of all the plugin development documentation, this page is more about perspective than how-to.
 
 On this page:
 
@@ -32,8 +23,7 @@ On this page:
     -   [Plugin choice and risks](#sec3-2)
 -   [Conclusion](#sec4)
 
-A functional idea is born {#sec1}
--------------------------
+## A functional idea is born
 
 When a new feature idea pops up, it usually does so in the [Feature
 ideas](http://forum.textpattern.com/viewforum.php?id=2) area of the
@@ -50,13 +40,12 @@ at the wall again and again, rarely stick.
 That's all manifestation of the core development philosophy, and it's
 not a bad thing.
 
-Core code {#sec2}
----------
+## Core code
 
 A “core” feature, is something that is available natively within
 Textpattern, without any plugins involved.
 
-### Core code advantages {#sec2-1}
+### Core code advantages
 
 Core features have some advantages over a plugin:
 
@@ -75,7 +64,7 @@ same plugins, the odds of bugs being discovered in a core feature, or
 that might affect other core features, are far greater and thus code is
 generally much better (i.e. code quality, again).
 
-### New core feature caveats {#sec2-2}
+### New core feature caveats
 
 New core features can't and shouldn't be added (and aren't) without
 thinking it through. They have inherent issues:
@@ -115,8 +104,7 @@ on. In short, you don't want them working on something someone else can
 do, and specialized functionality can be done by someone else as a
 plugin.
 
-Plugin code {#sec3}
------------
+## Plugin code
 
 Contrary to core functionality that is minimal and universally needed
 (for the most part), plugins provide specialized functionality that
@@ -128,7 +116,7 @@ Plugins don't usually have hundreds of lines of code, thus are easier
 (and often faster) to improve, maintain, and debug, isolated from the
 core system.
 
-### Plugin lifespan {#sec3-1}
+### Plugin lifespan
 
 Unlike core code, which is maintained in a centralized [Textpattern
 repository](http://docs.textpattern.io/development/fetching-dev-version-of-txp)
@@ -141,7 +129,7 @@ fall out of use. This is usually due to one of a two situations:
     introduction of a new and innovative plugin from someone else that
     provides the same capabilities, and then some.[^5]
 
-### Plugin choice and risks {#sec3-2}
+### Plugin choice and risks
 
 As you might realize by this point, when someone uses a plugin to
 provide specialized functionality, they are faced with some risks in
@@ -152,8 +140,7 @@ of many problems, from rendering other plugins inoperable, to rending
 the whole website inoperable, to being the cause of security weaknesses
 that can be exploited by malware and hackers.
 
-Conclusion {#sec4}
-----------
+## Conclusion
 
 We've been talking about *features*, and whether they should be in core
 or a plugin.

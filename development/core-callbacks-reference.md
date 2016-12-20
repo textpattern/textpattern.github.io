@@ -1,17 +1,14 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Development\
-published: true\
-title: "Core callbacks reference"\
+---
+layout: document
+category: Administration
+published: true
+title: "Core callbacks reference"
+description: This comprehensive reference provides detailed information about all callbacks used in Textpattern.
 ---
 
-Core callbacks reference
-========================
+# Core callbacks reference
 
-This comprehensive reference provides detailed information about all
-callbacks used in Textpattern, including their [events and
-steps](http://docs.textpattern.io/development/events-and-steps).
+This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](http://docs.textpattern.io/development/events-and-steps).
 
 On this page:
 

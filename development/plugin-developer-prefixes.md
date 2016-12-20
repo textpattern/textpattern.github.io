@@ -1,24 +1,16 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Development\
-published: true\
-title: "Plugin developer prefixes"\
+---
+layout: document
+category: Administration
+published: true
+title: "Plugin developer prefixes"
+description: All plugin developers must have a prefix to name their plugins and use in plugin development.
 ---
 
-Plugin developer prefixes
-=========================
+# Plugin developer prefixes
 
-All plugin developers must have a prefix to name their plugins and [use
-in plugin development](#sec4). A prefix is a three-character
-(alphanumeric) indication of who the plugin developer is, and precedes a
-plugin name with an underscore. For example, **wet\_haystack** is one of
-several plugins by Robert Wetzlmayr. The prefix in this case is
-"**wet**", which precedes the specific plugin name ("**haystack**") with
-an underscore. All together it forms the unique and complete name of the
-plugin. An underscore is used for each additional word in a compound
-name. For example, **smd\_user\_manager**. Plugin names are entirely
-lowercase.
+All plugin developers must have a prefix to name their plugins and [use in plugin development](#sec4).
+
+A prefix is a three-character (alphanumeric) indication of who the plugin developer is, and precedes a plugin name with an underscore. For example, **wet_haystack** is one of several plugins by Robert Wetzlmayr. The prefix in this case is 'wet', which precedes the specific plugin name ('haystack') with an underscore. All together it forms the unique and complete name of the plugin. An underscore is used for each additional word in a compound name, for example **smd_user_manager**. Plugin names are entirely lowercase.
 
 On this page:
 
@@ -27,8 +19,7 @@ On this page:
 -   [Registered prefixes](#sec3)
 -   [Where to use the prefix](#sec4)
 
-Guidelines for choosing and using a prefix {#sec1}
-------------------------------------------
+## Guidelines for choosing and using a prefix
 
 There are some courtesies to keep in mind when registering a plugin
 prefix:
@@ -48,8 +39,7 @@ prefix:
 5.  You cannot use a prefix already used by another developer, even if
     that developer is no longer active in the community.[^2]
 
-How to register a prefix {#sec2}
-------------------------
+## How to register a prefix
 
 When you're ready to register a prefix, create an "issue" in the [user
 docs repo on
@@ -62,8 +52,7 @@ list.
 profile and you would like it to be, create an issue as described
 indicating your forum profile link and it will be added.
 
-Registered prefixes {#sec3}
--------------------
+## Registered prefixes
 
 The prefixes in the following table are registered, but see the
 guidelines above.
@@ -155,8 +144,8 @@ notextile.
 notextile.
 
 </div>
-Where to use the prefix {#sec4}
------------------------
+
+## Where to use the prefix
 
 In addition to plugin names, you'll apply your prefix in the following
 locations:
@@ -177,8 +166,7 @@ locations:
     plugin developer when the former "adopts" the latter's "orphaned"
     plugins. This is the preferred practice against simply changing
     plugin names. For example, username "wet" has his own plugins
-    (wet/wet), as indicated in the prefix table at bottom, but he's
-    adopted the orphaned plugins with prefix "djw" too (djw/wet).
+    (wet/wet), as indicated in the prefix table at bottom, but he's adopted the orphaned plugins with prefix "djw" too (djw/wet).
 
 [^2]: Prefix ownership may be challenged if it's found that a
     "developer" has not created a plugin yet and is squatting on the
@@ -188,7 +176,4 @@ locations:
     discussion](http://forum.textpattern.com/viewforum.php?id=13) forum,
     where others can help determine if the challenge is reasonable.
 
-[^3]: The exception to this is if an element of your markup is logically
-    similar to an already existing core element and you wish it to be
-    styled in the same way by themes. Doing this saves theme designers
-    from having to write specific rules to target your plugin's markup.
+[^3]: The exception to this is if an element of your markup is logically similar to an already existing core element and you wish it to be styled in the same way by themes. Doing this saves theme designers from having to write specific rules to target your plugin's markup.

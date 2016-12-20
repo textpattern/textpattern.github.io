@@ -1,20 +1,16 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Development\
-published: true\
-title: "Database schema reference"\
+---
+layout: document
+category: Administration
+published: true
+title: "Database schema reference"
+description: Textpattern stores all data in a database. Within that database, there are 17 tables, each containing a different collection of information.
 ---
 
-Database schema reference
-=========================
+# Database schema reference
 
-Textpattern stores all data in a MySQL database. Within that database,
-there are 17 tables, each containing a different collection of
-information.[^1] Here we describe each table and the information it
-contains, effective version 4.4.1 and later. (Since the columns can be
-used to influence sorting in various list tags, non-developers may find
-their descriptions useful too.)
+Textpattern stores all data in a database. Within that database, there are 17 tables, each containing a different collection of information.[^1]
+
+Here we describe each table and the information it contains, effective version 4.4.1 and later (since the columns can be used to influence sorting in various list tags, non-developers may find their descriptions useful too).
 
 On this page:
 

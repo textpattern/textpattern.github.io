@@ -1,19 +1,14 @@
-------------------------------------------------------------------------
-
-layout: document\
-category: Development\
-published: true\
-title: "Plugin user-help guidelines"\
+---
+layout: document
+category: Administration
+published: true
+title: "Plugin user-help guidelines"
+description: Use this template and its associated guidelines when writing your plugin's user instructions.
 ---
 
-Plugin user-help guidelines
-===========================
+# Plugin user-help guidelines
 
-Use this template and its associated guidelines when writing your
-plugin's user instructions.[^1] Doing so will make it easier for you, as
-well result in plugin help that's complete, consistent across other
-developer plugins (improved user experience), and more usable (intuitive
-and easy to navigate).
+Use this template and its associated guidelines when writing your plugin's user instructions.[^1] Doing so will make it easier for you, as well result in plugin help that's complete, consistent across other developer plugins (improved user experience), and more usable (intuitive and easy to navigate).
 
 Equally important to help file structure is writing concisely (without
 sacrificing clarity). Complex plugins require larger help files due to
@@ -29,8 +24,7 @@ On this page:
 -   [Template guidelines](#sec3)
 -   [Textile formatting](#sec4)
 
-Suggested sections {#sec1}
-------------------
+## Suggested sections
 
 This is the full set of sections for structuring your help file. You may
 not need all of these, but you should not need more than this. (Items in
@@ -57,8 +51,7 @@ Obviously, if your plugin provides a tag or more, you will include
 sections 7 and 11 in your help file (and perhaps 8–10), and thus a Table
 of Contents too.
 
-The template {#sec2}
-------------
+## The template
 
 The following code block is the plugin help template, which takes into
 account the entire suite of sections indicated above. Copy everything in
@@ -175,8 +168,7 @@ need, if any. Nothing else but text editing should be needed.[^2]
 
     p. Developer contact details, or links to where one can get more help or make suggestions.
 
-Template guidelines {#sec3}
--------------------
+## Template guidelines
 
 Clarifying notes about using the template:
 
@@ -206,8 +198,7 @@ clearly indicative of what the example is about, as much as possible.
 Your example intros will help make this clear, of course, but for
 scanning reasons, headings should be informative too.
 
-Textile formatting {#sec4}
-------------------
+## Textile formatting
 
 The template already includes the necessary
 [Textile](http://txstyle.org/). We assume you know what Textile is if
