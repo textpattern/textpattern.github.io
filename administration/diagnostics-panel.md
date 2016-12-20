@@ -26,89 +26,152 @@ On this page:
 
 ## Diagnostic info display
 
-The actual diagnostics information is displayed in the **Diagnostics
-info** region at the bottom of the panel display. The volume of details
-displayed may be set to "Low" (the default) or "High", which you can
-toggle using the **Detail** selection control under the info display
-field.
+The actual diagnostics information is displayed in the **Diagnostics info** region at the bottom of the panel display. The volume of details displayed may be set to 'Low' (the default) or 'High', which you can toggle using the **Detail** selection control under the info display field.
 
 ### Low info display
 
-Low diagnostics info begins with a set of data values about your
-installation and server technology. These values and their descriptions
-are described in the following table.
+Low diagnostics info begins with a set of data values about your installation and server technology. These values and their descriptions are described in the following table.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-
-  Data item                            What it tells you
-  ------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Textpattern version:                 The version you currently have installed.
-  Last update:                         The date/time you last updated your installation.
-  Document root:                       The path to the web server's public (document root) directory, specifically.
-  \$path_to_site:                    The path to wherever your installation is (e.g., in document root or in a sub-directory thereof).
-  Textpattern path:                    The path to your installation's */textpattern* directory.
-  Permanent link mode:                 The pattern of URL type you set. Corresponds with the "Permanent link mode" setting in the **Site** section of "**Preferences**":preferences/preferences-panel.
-  Temporary directory path:            The path of your */tmp* directory relative to document root.
-  Site URL:                            Your domain name and (n)TLD (i.e. domain.tld). Corresponds with "Site URL" setting in the **Site** section of "**Preferences**":preferences/preferences-panel.
-  PHP version:                         The version number of your PHP install.
-  GD Graphics Library:                 
-  Server TZ:                           The server's 'default timezone'; determined by a "specific order of preferences":https://secure.php.net/manual/en/function.date-default-timezone-get.php.
-  Server local time:                   The local date/time of your web server (yyyy-mm-dd hh:mm:ss).
-  DST enabled?:                        Whether or not Daylight Savings Time is enabled ("0"=no, "1"=yes). Corresponds with the "DST enabled?" setting in the **Site** section of "**Preferences**":preferences/preferences-panel.
-  Automatically adjust DST setting?:   Whether or Textpattern will adjust DST automatically ("0"=no, "1"=yes). Corresponds with the "Automatically adjust DST setting?" setting in the **Site** section of "**Preferences**":preferences/preferences-panel.
-  Time zone:                           Your time zone relative to Greenwich Mean Time (GMT). Corresponds with the "Time zone" setting in the **Site** section of [**Preferences**](preferences/preferences-panel). The output includes an offset value in parentheses, which helps developers determine if time-specific problems might stem from a wrong or outdated "tz database":https://en.wikipedia.org/wiki/Tz_database.
-  MySQL:                               The version number and build of your MySQL database server.
-  Locale:                              The language and character set you have configured.
-  Server:                              Your web server type (e.g. Apache).
-  PHP server API:                      
-  RFC 2616 headers:                    
-  Server OS:                           The name and version number of the server's operating system.
-  Active plugins:                      A comma-separated list of all plugins (with version numbers) that are installed *and* turned **ON**.
-  Admin-side theme:                    The name and version number of the active administration side theme. The default is Hive.
-
+    <table>
+        <thead>
+            <tr>
+                <th class="t25" scope="col">Data item</th>
+                <th scope="col">What it tells you/th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Textpattern version</th>
+                <td>The version you currently have installed.</td>
+            </tr>
+            <tr>
+                <th scope="row">Last update</th>
+                <td>The date/time you last updated your installation.</td>
+            </tr>
+            <tr>
+                <th scope="row">Document root</th>
+                <td>The path to the web server's public (document root) directory, specifically.</td>
+            </tr>
+            <tr>
+                <thscope="row">$path_to_site</th>
+                <td>The path to wherever your installation is (e.g., in document root or in a sub-directory thereof).</td>
+            </tr>
+            <tr>
+                <th scope="row">Textpattern path</th>
+                <td>The path to your installation's <code>/textpattern</code> directory.</td>
+            </tr>
+            <tr>
+                <th scope="row">Permanent link mode</th>
+                <td>The pattern of URL type you set. Corresponds with the 'Permanent link mode' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences panel</a>.</td>
+            </tr>
+            <tr>
+                <th scope="row">Temporary directory path</th>
+                <td>The path of your */tmp* directory relative to document root.</td>
+            </tr>
+            <tr>
+                <th scope="row">Site URL</th>
+                <td>Your domain name and top-level domain (i.e. <code>domain.tld</code>). Corresponds with 'Site URL' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences panel</a>.</td>
+            </tr>
+            <tr>
+                <th scope="row">PHP version</th>
+                <td>The version number of your PHP install.</td>
+            </tr>
+            <tr>
+                <th scope="row">GD Graphics Library</th>
+                <td>The version number of your GD Graphics Library install.</td>
+            </tr>
+            <tr>
+                <th scope="row">Server TZ</th>
+                <td>The server's 'default timezone'; determined by a <a rel="external" href="https://secure.php.net/manual/en/function.date-default-timezone-get.php">specific order of preferences</a>.</td>
+            </tr>
+            <tr>
+                <th scope="row">Server local time</th>
+                <td>The local date/time of your web server (yyyy-mm-dd hh:mm:ss).</td>
+            </tr>
+            <tr>
+                <th scope="row">DST enabled?</th>
+                <td>Whether or not Daylight Savings Time is enabled ("0"=no, "1"=yes). Corresponds with the "DST enabled?" setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences panel</a>.</td>
+            </tr>
+            <tr>
+                <th scope="row">Automatically adjust DST setting?</th>
+                <td>Whether or Textpattern will adjust DST automatically ('0'=no, '1'=yes). Corresponds with the 'Automatically adjust DST setting?' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences panel</a>.</td>
+            </tr>
+            <tr>
+                <th scope="row">Time zone</th>
+                <td>Your time zone relative to Greenwich Mean Time (GMT). Corresponds with the 'Time zone' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences panel</a>. The output includes an offset value in parentheses, which helps developers determine if time-specific problems might stem from a wrong or outdated <a rel="external" href="https://en.wikipedia.org/wiki/Tz_database">tz database</a>.</td>
+            </tr>
+            <tr>
+                <th scope="row">MySQL</th>
+                <td>The version number and build of your MySQL database server.</td>
+            </tr>
+            <tr>
+                <th scope="row">Locale</th>
+                <td>The language and character set you have configured.</td>
+            </tr>
+            <tr>
+                <th scope="row">Server</th>
+                <td>Your web server type (e.g. Apache).</td>
+            </tr>
+            <tr>
+                <th scope="row">PHP server API</th>
+                <td>todo:explanation</td>
+            </tr>
+            <tr>
+                <th scope="row">RFC 2616 headers</th>
+                <td>todo:explanation</td>
+            </tr>
+            <tr>
+                <th scope="row">Server OS</th>
+                <td>The name and version number of the server's operating system.</td>
+            </tr>
+            <tr>
+                <th scope="row">Active plugins</th>
+                <td>A comma-separated list of all plugins (with version numbers) that are installed <em>and</em> turned <strong>on</strong>.</td>
+            </tr>
+            <tr>
+                <th scope="row">Admin-side theme</th>
+                <td>The name and version number of the active administration side theme. The default is 'Hive'.</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
-The installation and server data is followed by the contents of your
-*.htaccess* file (from the installation directory). For purposes here we
-show the [file contents from the current version
-code](https://github.com/textpattern/textpattern/blob/master/.htaccess),
-which is the part between the two dotted lines below:
+The installation and server data is followed by the contents of your `.htaccess` file (from the installation directory). For purposes here we show the [file contents from the current version code](https://github.com/textpattern/textpattern/blob/master/.htaccess) below:
 
-    .htaccess file contents:
-    ------------------------
-    #DirectoryIndex index.php index.html
+~~~ html
+# BEGIN Textpattern
+#DirectoryIndex index.php index.html
 
-    #Options +FollowSymLinks
-    #Options -Indexes
-    #ErrorDocument 403 default
+#Options +FollowSymLinks
+#Options -Indexes
+#ErrorDocument 403 default
 
-    <IfModule mod_rewrite.c>
-        RewriteEngine On
-        #RewriteBase /relative/web/path/
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    #RewriteBase /relative/web/path/
 
-        RewriteCond %{REQUEST_FILENAME} -f [OR]
-        RewriteCond %{REQUEST_FILENAME} -d
-        RewriteRule ^(.+) - [PT,L]
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^(.+) - [PT,L]
 
-        RewriteCond %{REQUEST_URI} !=/favicon.ico
-        RewriteRule ^(.*) index.php
+    RewriteCond %{REQUEST_URI} !=/favicon.ico
+    RewriteRule ^(.*) index.php
 
-        RewriteCond %{HTTP:Authorization}  !^$
-        RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
-    </IfModule>
+    RewriteCond %{HTTP:Authorization}  !^$
+    RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
 
-    #php_value register_globals 0
+#php_value register_globals 0
 
-    # SVG
-    <IfModule mod_mime.c>
-        AddType image/svg+xml  svg svgz
-        AddEncoding gzip       svgz
-    </IfModule>
-    ------------------------
+<IfModule mod_mime.c>
+    AddType image/svg+xml  svg svgz
+    AddEncoding gzip       svgz
+</IfModule>
+# END Textpattern
+~~~
 
-Over time your *.htaccess* file will change as you add your own
-<i>mod_rewrite</i> rules, or whatever, and the changes will reflect in
-the diagnostics info display.
+Over time your `.htaccess` file will change as you add your own `mod_rewrite` rules, or whatever, and the changes will reflect in the diagnostics info display.
 
 ### High info display
 
@@ -116,29 +179,75 @@ High diagnostics info display includes the Low info above, but adds the
 following information.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-
-  Data item                              What it tells you
-  -------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Charset (default/config):              if you don't see a lot of "UTF-8" values on these "character_set" items, you might want ask yourself why not
-  character_set_client:                
-  character_set_connection:            
-  character_set_database:              
-  character_set_filesystem:            
-  character_set_results:               
-  character_set_server:                
-  character_set_system:                
-  character_sets_dir:                  
-  "n" Tables:                            "n" being the number of Textpattern tables that exist in your installation (a default install has 17, anything more is from plugins or other extensions you've added); the value also indicates if tables are "OK" or not
-  "n" Custom fields:                     "n" being the number of custom fields; value also indicates name of all counted fields
-  PHP extensions:                        list of extension names/versions your web host has enabled
-  pretext_data:                         value is a piece of code; useful for developers to evaluate
-  {/textpattern files, not shown here}   list of Textpattern configuration files from the /textpattern directory; indicates file path, revision number, and MD5 Checksum hash number
-
-
+    <table>
+        <thead>
+            <tr>
+                <th class="t25" scope="col">Data item</th>
+                <th scope="col">What it tells you/th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Charset (default/config)</th>
+                <td>If you don't see a lot of 'UTF-8' values on these 'character_set' items, you might want ask yourself why not.</td>
+            </tr>
+            <tr>
+                <th scope="row">character_set_client</th>
+                <td>todo:explanation</td>
+            </tr>
+            <tr>
+                <th scope="row">character_set_connection</th>
+                <td>todo:explanation</td>
+            </tr>
+            <tr>
+                <th scope="row">character_set_database</th>
+                <td>todo:explanation</td>
+            </tr>
+            <tr>
+                <th scope="row">character_set_filesystem</th>
+                <td>todo:explanation</td>
+            </tr>
+            <tr>
+                <th scope="row">character_set_results</th>
+                <td>todo:explanation</td>
+            </tr>
+            <tr>
+                <th scope="row">character_set_server</th>
+                <td>todo:explanation</td>
+            </tr>
+            <tr>
+                <th scope="row">character_set_system</th>
+                <td>todo:explanation</td>
+            </tr>
+            <tr>
+                <th scope="row">character_sets_dir</th>
+                <td>todo:explanation</td>
+            </tr>
+            <tr>
+                <th scope="row">{n} Tables</th>
+                <td>{n} being the number of Textpattern tables that exist in your installation (a default install has 17, anything more is from plugins or other extensions you've added); the value also indicates if tables are 'OK' or not.</td>
+            </tr>
+            <tr>
+                <th scope="row">{n} Custom fields</th>
+                <td>{n} being the number of custom fields; value also indicates name of all counted fields.</td>
+            </tr>
+            <tr>
+                <th scope="row">PHP extensions</th>
+                <td>List of extension names/versions your web host has enabled.</td>
+            </tr>
+            <tr>
+                <th scope="row">pretext_data</th>
+                <td>Value is a piece of code; useful for developers to evaluate.</td>
+            </tr>
+            <tr>
+                <th scope="row">{/textpattern files, not shown here}</th>
+                <td>List of Textpattern configuration files from the `/textpattern` directory; indicates file path, revision number, and MD5 Checksum hash number.</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
-The last item above reflects a long list of Textpattern configuration
-files which makes up the end of the High info data shown.
+The last item above reflects a long list of Textpattern configuration files which makes up the end of the High info data shown.
 
 ## Pre-flight checks
 
