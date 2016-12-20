@@ -149,3 +149,5 @@ In the first statement, notice the pairs of single apostrophes inside the catego
 The `file-category` form returns some markup (in this case, just a series of links to the relevant files) which is all assigned to the **value** of the [variable](http://docs.textpattern.io/tags/variable) named 'file-count'.
 
 The upshot is that this variable can be tested with [if_variable](http://docs.textpattern.io/tags/if_variable) to see if it contains anything at all and - if it does, the file list can be displayed. Conversely, if there are no files for that language then the [else](http://docs.textpattern.io/tags/else) part of the conditional statement is displayed.
+
+[Next: Incorrect tag contexts](incorrect-tag-contexts)

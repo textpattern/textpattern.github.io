@@ -37,3 +37,5 @@ Since Textpattern 4.0.7, there are no limits on nesting depth and you can nest t
     </txp:if_section>
 </txp:if_section>
 ~~~
+
+[Next: Parsing tag attributes](parsing-tag-attributes)

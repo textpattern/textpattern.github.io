@@ -110,4 +110,6 @@ Form template types have almost no inherent semantic but aid solely as a means o
 
 The category and section types are intended to be used in conjunction with [category_list](http://docs.textpattern.io/tags/category_list) and [section_list](http://docs.textpattern.io/tags/section_list), respectively, as a value to the form attribute, along the lines of `<txp:section_list form="foo" />`. They serve the same use case as the form attributes for articles do.
 
+[Next: Styles panel](http://docs.textpattern.io/administration/styles-panel)
+
 [^1]: The form naming convention you adopt will also help with form organization within a given form type list.

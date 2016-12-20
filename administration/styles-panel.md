@@ -16,3 +16,5 @@ Note: For performance benefits, you may wish to host your CSS as flat files (out
 The first column is the list of the current style sheets, as well as an indication of which one you are currently editing.
 
 The second column is a large edit field where you may edit the CSS directly, and controls for creating a brand new style sheet or creating a copy of an existing style sheet. Standard CSS rules can be entered here.
+
+[Next: Diagnostics panel](http://docs.textpattern.io/administration/diagnostics-panel)
