@@ -12,9 +12,17 @@ The **Diagnostics** panel is important for troubleshooting problems with your Te
 
 On this page:
 
--   [Diagnostic info display](#sec1)
--   [Pre-flight checks](#sec2)
--   [Diagnostic reporting on PHP functions](#sec3)
+* [Diagnostic info display](#diagnostic-info-display)
+  * [Low info display](#low-info-display)
+  * [High info display](#high-info-display)
+* [Pre-flight checks](#pre-flight-checks)
+  * [Success (green)](#success-green)
+  * [Information (blue)](#information-blue)
+  * [Warning (yellow)](#warning-yellow)
+  * [Error (red)](#error-red)
+* [Diagnostic reporting on PHP functions](#diagnostic-reporting-on-php-functions)
+  * [Functions used by Textpattern](#functions-used-by-textpattern)
+  * [Functions not used by Textpattern](#functions-not-used-by-textpattern)
 
 ## Diagnostic info display
 
@@ -30,9 +38,8 @@ Low diagnostics info begins with a set of data values about your
 installation and server technology. These values and their descriptions
 are described in the following table.
 
-notextile.
-
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
   Data item                            What it tells you
   ------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Textpattern version:                 The version you currently have installed.
@@ -59,9 +66,8 @@ notextile.
   Active plugins:                      A comma-separated list of all plugins (with version numbers) that are installed *and* turned **ON**.
   Admin-side theme:                    The name and version number of the active administration side theme. The default is Hive.
 
-notextile.
-
 </div>
+
 The installation and server data is followed by the contents of your
 *.htaccess* file (from the installation directory). For purposes here we
 show the [file contents from the current version
@@ -109,9 +115,8 @@ the diagnostics info display.
 High diagnostics info display includes the Low info above, but adds the
 following information.
 
-notextile.
-
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
   Data item                              What it tells you
   -------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Charset (default/config):              if you don't see a lot of "UTF-8" values on these "character_set" items, you might want ask yourself why not
@@ -129,59 +134,48 @@ notextile.
   pretext_data:                         value is a piece of code; useful for developers to evaluate
   {/textpattern files, not shown here}   list of Textpattern configuration files from the /textpattern directory; indicates file path, revision number, and MD5 Checksum hash number
 
-notextile.
 
 </div>
+
 The last item above reflects a long list of Textpattern configuration
 files which makes up the end of the High info data shown.
 
 ## Pre-flight checks
 
-The **Pre-flight checks** region, at top of the panel is where
-diagnostic feedback messages appear. There are four kinds of feedback
-messages: success (green), information (blue), warning (yellow), and
-error (red).
+The **Pre-flight checks** region, at top of the panel is where diagnostic feedback messages appear. There are four kinds of feedback messages: success (green), information (blue), warning (yellow), and error (red).
 
 ### Success (green)
 
 There is only one green message:
 
-<span class="success">All checks passed!</span>
+All checks passed!
+{: .alert-block .success}
 
-This message displays when you successfully address and/or troubleshoot
-all, blue, yellow, and red feedback messages that might exist. *Go
-green!*
+This message displays when you successfully address and/or troubleshoot all, blue, yellow, and red feedback messages that might exist. *Go green!*
 
 ### Information (blue)
 
-Blue messages are informing you of something you might like to know.
-They're not necessarily functional problems you need to troubleshoot.
-There are three possible blue messages:
+Blue messages are informing you of something you might like to know. They're not necessarily functional problems you need to troubleshoot. There are three possible blue messages:
 
--   %(information)New Textpattern version {version} [available for
-    download](http://textpattern.com/download.%) -- It's saying you're
-    not using the latest stable release, where {version} will be the
-    latest version number. The first data item in the "Low"
-    **Diagnostics info** display described above will indicate your
-    current working version. Because this is a blue message, you don't
-    *have* to upgrade (yet) but it's good practice to do so for
-    [security](http://docs.textpattern.io/security/) reasons, if
-    nothing else.
--   <span class="information">Clean URLs are only supported on Apache,
-    use at your own risk.</span> -- It's saying you're *not* using an
-    Apache web server. The assumption is that you know what you're doing
-    so you can ignore this message. It goes away if you ever switch
-    to Apache.
--   <span class="information">File uploads are disabled</span> -- This
-    appears if the permissions you have set on your *files* folder in
-    the installation tree is read only. The assumption is that you've
-    consciously made this choice, so you can ignore this message. If you
-    make the files folder writable, it will go away.[^1]
--   <span class="information">There was a problem trying to connect to
-    the RPC server. Please try again later.</span> -- You may get this
-    if you're working on a local install (v. 4.5.7) and not connected to
-    the internet. Your local install is trying to ping the RPC server
-    and has no internet connection to do so.
+New Textpattern version {version} available for download.
+{: .alert-block .information}
+
+It's saying you're not using the latest stable release, where {version} will be the latest version number. The first data item in the 'Low' **Diagnostics info** display described above will indicate your current working version. Because this is a blue message, you don't *have* to upgrade (yet) but it's good practice to do so for [security](http://docs.textpattern.io/security/) reasons, if nothing else.
+
+Clean URLs are only supported on Apache, use at your own risk.
+{: .alert-block .information}
+
+It's saying you're *not* using an Apache web server. The assumption is that you know what you're doing so you can ignore this message. It goes away if you ever switch to Apache.
+
+File uploads are disabled.
+{: .alert-block .information}
+
+This appears if the permissions you have set on your *files* folder in the installation tree is read only. The assumption is that you've consciously made this choice, so you can ignore this message. If you make the files folder writable, it will go away.[^1]
+
+There was a problem trying to connect to the RPC server. Please try again later.
+{: .alert-block .information}
+
+You may get this if you're working on a local install (v. 4.5.7) and not connected to the internet. Your local install is trying to ping the RPC server and has no internet connection to do so.
 
 ### Warning (yellow)
 
@@ -259,10 +253,9 @@ Several warning messages are possible:
 
 ### Error (red)
 
-Red messages mean something critical appears to be wrong and you need to
-troubleshoot it immediately.
+Red messages mean something critical appears to be wrong and you need to troubleshoot it immediately.
 
-Possible red messages include:
+**Possible red messages include:**
 
 -   <span class="error">Textpattern requires at least version {version}
     of PHP to be installed on your server</span> -- \[todo:explanation\]
@@ -322,21 +315,14 @@ disabled. You'll see this pre-flight check warning: <span
 class="warning">The following PHP functions (which may be necessary to
 run Textpattern) are disabled on your server...</span>.
 
-If so, compare the indicated functions with those in the table below to
-see if any match and thus need enabled.
+If so, compare the indicated functions with those in the table below to see if any match and thus need enabled.
 
 ### Functions used by Textpattern
 
-The following functions are used by Textpattern. If your diagnostics
-reports any of these as *disabled*, you need to get in touch with your
-web server administrator or web host and explain why you need them
-turned on (for your Textpattern site to work). Point them to this page,
-if you want. If they won't help you, find a more suitable web host,
-because there is no real reason to disable these functions.
-
-notextile.
+The following functions are used by Textpattern. If your diagnostics reports any of these as *disabled*, you need to get in touch with your web server administrator or web host and explain why you need them turned on (for your Textpattern site to work). Point them to this page, if you want. If they won't help you, find a more suitable web host, because there is no real reason to disable these functions.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+
   Name                   Use
   ---------------------- ----------------------------------------------------------------------------------------------------------------------------------------
   apache_get_modules   Helps determine whether clean urls could be used at setup, and for diagnostics info.
@@ -346,107 +332,70 @@ notextile.
   php_uname             Provides diagnostics info regarding the server’s operating system.
   set_time_limit       Makes sure PHP does not timeout before installation, updates (including language string changes), and file downloads can be completed.
 
-notextile.
-
 </div>
-### Functions *not* used by Textpattern
 
-These functions are *not* used by Textpattern.[^5] If diagnostics
-reports one or more of these functions as disabled, you may safely
-ignore the message, because they do not affect Textpattern's operation
-in any way.
+### Functions not used by Textpattern
 
--   apache_child_terminate
--   apache_getenv
--   apache_note
--   apache_setenv
--   chgrp
--   chown
--   close_log
--   debugger_off
--   debugger_on
--   define_syslog_variables
--   diskfreespace
--   disk_total_space
--   dl
--   error_log
--   escapeshellarg
--   escapeshellcmd
--   exec
--   get_current_user
--   getrusage
--   highlight_file
--   imagefilltoborder
--   ini_alter
--   ini_restore
--   leak
--   link
--   listen
--   mysql_pconnect
--   openlog
--   pack
--   passthru
--   pclose
--   pfsockopen
--   phpinfo
--   popen
--   proc_close
--   proc_get_status
--   proc_nice
--   proc_open
--   proc_terminate
--   putenv
--   readlink
--   set_socket_blocking
--   shell_exec
--   show_source
--   socket_... (i.e. socket_bind)
--   symlink
--   syslog
--   system
--   system_exec
--   virtual
--   wget
+These functions are *not* used by Textpattern.[^5] If diagnostics reports one or more of these functions as disabled, you may safely ignore the message, because they do not affect Textpattern's operation in any way.
 
-[^1]: **Folder permissions:** A chmod setting of 755 or 711 should work
-    to make a folder writable, and is secure. A lot of people have
-    trouble setting these values, however, and need to use a chmod of
-    777, which has [security
-    implications](http://forum.textpattern.com/viewtopic.php?id=26613).
-    The discrepancy is due to how Apache directives are configured on
-    the web server, which means you may have to ask your server
-    administrator or web host to change the directives. If they won't do
-    it, it might be time to find a new web host, because no web host
-    should force you to operate your site insecurely.
+* `apache_child_terminate`
+* `apache_getenv`
+* `apache_note`
+* `apache_setenv`
+* `chgrp`
+* `chown`
+* `close_log`
+* `debugger_off`
+* `debugger_on`
+* `define_syslog_variables`
+* `diskfreespace`
+* `disk_total_space`
+* `dl`
+* `error_log`
+* `escapeshellarg`
+* `escapeshellcmd`
+* `exec`
+* `get_current_user`
+* `getrusage`
+* `highlight_file`
+* `imagefilltoborder`
+* `ini_alter`
+* `ini_restore`
+* `leak`
+* `link`
+* `listen`
+* `mysql_pconnect`
+* `openlog`
+* `pack`
+* `passthru`
+* `pclose`
+* `pfsockopen`
+* `phpinfo`
+* `popen`
+* `proc_close`
+* `proc_get_status`
+* `proc_nice`
+* `proc_open`
+* `proc_terminate`
+* `putenv`
+* `readlink`
+* `set_socket_blocking`
+* `shell_exec`
+* `show_source`
+* `socket_...` (i.e. `socket_bind`)
+* `symlink`
+* `syslog`
+* `system`
+* `system_exec`
+* `virtual`
+* `wget`
 
-[^2]: **Cascading problems:** Sometimes the existence of one yellow or
-    red issue can be the cause of another, so be sure to reload the
-    Diagnostics panel as you resolve each yellow or red issue; you might
-    find it eliminates another in the process.
+[^1]: **Folder permissions:** A chmod setting of 755 or 711 should work to make a folder writable, and is secure. A lot of people have trouble setting these values, however, and need to use a chmod of 777, which has [security implications](http://forum.textpattern.com/viewtopic.php?id=26613). The discrepancy is due to how Apache directives are configured on the web server, which means you may have to ask your server administrator or web host to change the directives. If they won't do it, it might be time to find a new web host, because no web host should force you to operate your site insecurely.
 
-[^3]: **False problems:** On rare occasions, yellow and red messages
-    have been known to appear but not go away when addressed as
-    instructed by their help information. Textpattern developers have
-    indicated this can happen in odd situations, and it's a false
-    reading nearly every time, meaning there isn't anything to worry
-    about. If you ever have this problem and can't seem to resolve it,
-    post about it in the [Troubleshooting
-    forum](http://forum.textpattern.com/viewforum.php?id=67) and someone
-    will try to help.
+[^2]: **Cascading problems:** Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
 
-[^4]: **Folder permissions:** A chmod setting of 755 or 711 should work
-    to make a folder writable, and is secure. A lot of people have
-    trouble setting these values, however, and need to use a chmod of
-    777, which has [security
-    implications](http://forum.textpattern.com/viewtopic.php?id=26613).
-    The discrepancy is due to how Apache directives are configured on
-    the web server, which means you may have to ask your server
-    administrator or web host to change the directives. If they won't do
-    it, it might be time to find a new web host, because no web host
-    should force you to operate your site insecurely.
+[^3]: **False problems:** On rare occasions, yellow and red messages have been known to appear but not go away when addressed as instructed by their help information. Textpattern developers have indicated this can happen in odd situations, and it's a false reading nearly every time, meaning there isn't anything to worry about. If you ever have this problem and can't seem to resolve it, post about it in the [Textpattern Forum Troubleshooting section](http://forum.textpattern.com/viewforum.php?id=67) and someone will try to help.
 
-[^5]: If you discover any functions named in your feedback message that
-    are not listed above, create a new topic in the [Troubleshooting
-    forum](http://forum.textpattern.com/viewforum.php?id=67) and post
-    the "High" diagnostics info so someone can help you determine if the
-    function is necessary or not.
+[^4]: **Folder permissions:** A chmod setting of 755 or 711 should work to make a folder writable, and is secure. A lot of people have trouble setting these values, however, and need to use a chmod of 777, which has [security implications](http://forum.textpattern.com/viewtopic.php?id=26613). The discrepancy is due to how Apache directives are configured on the web server, which means you may have to ask your server administrator or web host to change the directives. If they won't do it, it might be time to find a new web host, because no web host should force you to operate your site insecurely.
+
+[^5]: If you discover any functions named in your feedback message that are not listed above, create a new topic in the [Textpattern Forum Troubleshooting section](http://forum.textpattern.com/viewforum.php?id=67) and post the 'High' diagnostics info so someone can help you determine if the function is necessary or not.
