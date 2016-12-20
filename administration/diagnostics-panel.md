@@ -54,7 +54,7 @@ Low diagnostics info begins with a set of data values about your installation an
                 <td>The path to the web server's public (document root) directory, specifically.</td>
             </tr>
             <tr>
-                <thscope="row">$path_to_site</th>
+                <th scope="row">$path_to_site</th>
                 <td>The path to wherever your installation is (e.g., in document root or in a sub-directory thereof).</td>
             </tr>
             <tr>
@@ -139,7 +139,7 @@ Low diagnostics info begins with a set of data values about your installation an
 
 The installation and server data is followed by the contents of your `.htaccess` file (from the installation directory). For purposes here we show the [file contents from the current version code](https://github.com/textpattern/textpattern/blob/master/.htaccess) below:
 
-~~~ html
+~~~
 # BEGIN Textpattern
 #DirectoryIndex index.php index.html
 
@@ -241,13 +241,13 @@ following information.
             </tr>
             <tr>
                 <th scope="row">{/textpattern files, not shown here}</th>
-                <td>List of Textpattern configuration files from the `/textpattern` directory; indicates file path, revision number, and MD5 Checksum hash number.</td>
+                <td>List of Textpattern configuration files from the <code>/textpattern</code> directory; indicates file path, revision number, and MD5 Checksum hash number.</td>
             </tr>
         </tbody>
     </table>
 </div>
 
-The last item above reflects a long list of Textpattern configuration files which makes up the end of the High info data shown.
+The last item above reflects a long list of Textpattern configuration files which makes up the end of the 'High' info data shown.
 
 ## Pre-flight checks
 
@@ -255,7 +255,7 @@ The **Pre-flight checks** region, at top of the panel is where diagnostic feedba
 
 ### Success (green)
 
-There is only one green message:
+**There is only one green message:**
 
 All checks passed!
 {: .alert-block .success}
@@ -266,7 +266,7 @@ This message displays when you successfully address and/or troubleshoot all, blu
 
 Blue messages are informing you of something you might like to know. They're not necessarily functional problems you need to troubleshoot.
 
-There are four possible blue messages:
+**There are four possible blue messages:**
 
 New Textpattern version {version} available for download.
 {: .alert-block .information}
@@ -286,13 +286,13 @@ This appears if the permissions you have set on your *files* folder in the insta
 There was a problem trying to connect to the RPC server. Please try again later.
 {: .alert-block .information}
 
-You may get this if you're working on a local install (v. 4.5.7) and not connected to the internet. Your local install is trying to ping the RPC server and has no internet connection to do so.
+You may get this if you're working on a local install and not connected to the internet. Your local install is trying to ping the RPC server and has no internet connection to do so.
 
 ### Warning (yellow)
 
 Warnings are not critical, per se, and sometimes can even be cascading[^2] or false.[^3] But when warnings are accurate, something needs resolved in order to work correctly, reliably, or securely.
 
-Several warning messages are possible:
+**Several warning messages are possible:**
 
 DNS lookup failed: {site URL}.
 {: .alert-block .warning}
@@ -373,7 +373,7 @@ todo:explanation
 
 Red messages mean something critical appears to be wrong and you need to troubleshoot it immediately.
 
-Possible red messages include:
+**Possible red messages include:**
 
 Textpattern requires at least version {version} of PHP to be installed on your server
 {: .alert-block .error}
