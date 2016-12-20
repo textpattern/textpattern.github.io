@@ -36,7 +36,9 @@ However, there is one exception: the delimiter character. The attribute value is
 
 Suppose you wanted to use this as an attribute value:
 
-bc. Reward for "good" behaviour
+~~~
+Reward for "good" behaviour
+~~~
 
 *Incorrect*:
 
