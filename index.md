@@ -1,12 +1,12 @@
 ---
 layout: default
 published: true
-title: "Textpattern user documentation"
+title: "Textpattern CMS user documentation"
 description: How to install and use Textpattern CMS.
 search_omit: true
 ---
 
-# Textpattern user documentation
+# Textpattern CMS user documentation
 
 Welcome to the new user documentation, which replaces the old wiki at textpattern.net (soon to retire). This is a construction zone for a while, but any viewable page is ready for use, albeit subject to further editing. Occasional progress updates and feedback requests will be made in the [sites forum](http://forum.textpattern.com/viewforum.php?id=60).
 
