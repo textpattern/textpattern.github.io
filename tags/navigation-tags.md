@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: Category: Navigation tags
+title: "Category: Navigation tags"
 description: A list of Textpattern documentation within the category 'Navigation tags'.
 search_omit: true
 ---

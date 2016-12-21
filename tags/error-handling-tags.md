@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: Category: Error handling tags
+title: "Category: Error handling tags"
 description: A list of Textpattern documentation within the category 'Error handling tags'.
 search_omit: true
 ---

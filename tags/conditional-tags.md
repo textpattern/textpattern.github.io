@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: Category: Conditional tags
+title: "Category: Conditional tags"
 description: A list of Textpattern documentation within the category 'Conditional Tags'.
 search_omit: true
 ---

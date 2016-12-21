@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: Category: Future tags
+title: "Category: Future tags"
 description: A list of Textpattern documentation within the category 'Future tags'.
 search_omit: true
 ---

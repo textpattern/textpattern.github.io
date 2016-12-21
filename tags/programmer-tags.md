@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: Category: Programmer tags
+title: "Category: Programmer tags"
 description: A list of Textpattern documentation within the category 'Programmer tags'.
 search_omit: true
 ---
