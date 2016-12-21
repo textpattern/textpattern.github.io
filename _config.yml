@@ -3,3 +3,6 @@ timezone: Europe/London
 permalink: none
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
+twitter:
+  username: textpattern
