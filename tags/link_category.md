@@ -22,7 +22,7 @@ On this page:
 <txp:link_category />
 ~~~
 
-The **link_category** tag is a *single* tag which returns the link category as text. This tag is used in a Textpattern 'link' type @@Form template@@ or inside the [linklist](linklist) container tag to return information about the current link in a list of links.
+The **link_category** tag is a *single* tag which returns the link category as text. This tag is used in Textpattern 'link' type [Form templates](http://docs.textpattern.io/themes/form-templates-explained) or inside the [linklist](linklist) container tag to return information about the current link in a list of links.
 
 ## Attributes
 

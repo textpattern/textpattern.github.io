@@ -22,7 +22,7 @@ On this page:
 <txp:file_download_category />
 ~~~
 
-The **file_download_category** tag is a *single* tag that Textpattern will replace with the category of the file to download. Should be used in a Textpattern 'file' type @@Form template@@.
+The **file_download_category** tag is a *single* tag that Textpattern will replace with the category of the file to download. Should be used in Textpattern 'file' type [Form templates](http://docs.textpattern.io/themes/form-templates-explained).
 
 ## Attributes
 

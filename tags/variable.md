@@ -50,7 +50,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ### Example 1: Store site-wide constants
 
-Allows you to define constants at a single location (e.g. a @@Form template@@, or even at the top of a @@Page template@@) and use them elsewhere later on.
+Allows you to define constants at a single location (e.g. [Form templates](http://docs.textpattern.io/themes/form-templates-explained), or even at the top of [Page templates](http://docs.textpattern.io/themes/page-templates-explained)) and use them elsewhere later on.
 
 Somewhere at the very beginning of a template you would define names and values, just like you do on your desktop calculatorâ€™s “memory” keys:
 
@@ -73,7 +73,7 @@ Somewhere at the very beginning of a template you would define names and values,
 </txp:if_search>
 ~~~
 
-Later down the @@Page template@@ or in a separate @@Form template@@ you can read the attribute values previously set conditionals come in handy at times:
+Later down the Page template or in a separate Form template you can read the attribute values previously set conditionals come in handy at times:
 
 ~~~ html
 <txp:if_variable name="homepage" value="1">

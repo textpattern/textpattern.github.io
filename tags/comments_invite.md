@@ -24,7 +24,7 @@ On this page:
 
 The **comments_invite** tag is a *single* tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern [Write administration panel](http://docs.textpattern.io/administration/write-panel).
 
-This tag can be used in both a Textpattern @@Page template@@ and a @@Form template@@.
+This tag can be used in both Textpattern [Page templates](http://docs.textpattern.io/themes/page-templates-explained) and [Form templates](http://docs.textpattern.io/themes/form-templates-explained).
 
 ## Attributes
 

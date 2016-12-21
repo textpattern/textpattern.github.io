@@ -217,7 +217,7 @@ Escape HTML entities.
 
 ### form
 
-Used to format content for display. See @@Form templates@@ for further explanation.
+Used to format content for display. See [Form templates](http://docs.textpattern.io/themes/form-templates-explained) for further explanation.
 
 * [article](article)
 * [article_custom](article_custom)
@@ -424,7 +424,7 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset.
 
 ### listform
 
-See @@Forms templates@@ for further explanation.
+See [Form templates](http://docs.textpattern.io/themes/form-templates-explained) for further explanation.
 
 * [article](article)
 
@@ -564,7 +564,7 @@ HTML [rows attribute](https://www.w3.org/TR/html5/forms.html#attr-textarea-rows)
 
 ### searchform
 
-See @@Forms templates@@ for further explanation.
+See [Form templates](http://docs.textpattern.io/themes/form-templates-explained) for further explanation.
 
 * [article](article)
 

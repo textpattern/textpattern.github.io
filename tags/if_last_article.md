@@ -30,7 +30,7 @@ The **if_last_article** tag is a *conditional* tag and always used as an opening
 </txp:if_last_article>
 ~~~
 
-The tag will execute the contained statements if the displayed article is the last in the currently displayed list. It will display in both single article and article list modes. Should be used in an Textpattern 'article' type @@Form template@@.
+The tag will execute the contained statements if the displayed article is the last in the currently displayed list. It will display in both single article and article list modes. Should be used in Textpattern 'article' type [Form templates](http://docs.textpattern.io/themes/form-templates-explained).
 
 ## Attributes
 

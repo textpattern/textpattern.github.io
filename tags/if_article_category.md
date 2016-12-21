@@ -31,7 +31,7 @@ The **if_article_category** tag is a *conditional* tag and always used as an ope
 </txp:if_article_category>
 ~~~
 
-It will execute the contained statement if the category name associated with a particular article (Category1 or Category2) matches the values of the name and number attributes. Should be used in an 'article' type Textpattern @@Form template@@.
+It will execute the contained statement if the category name associated with a particular article (Category1 or Category2) matches the values of the name and number attributes. Should be used in 'article' type Textpattern [Form templates](http://docs.textpattern.io/themes/form-templates-explained).
 
 ## Attributes
 

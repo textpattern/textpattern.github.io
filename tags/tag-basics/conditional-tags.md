@@ -60,6 +60,6 @@ In just a few simple tags you have automatically rendered a list of articles. Th
 
 That is the fundamental building block of how container and conditional tags can make building lists of things easy.
 
-One thing to note: containers are great for simple content like this but if you find yourself repeating the same contained content over and over in a @@Page template@@ or across a series of pages, you can make it easier on yourself by using a @@Form template@@ instead. You then just write the container content once and use the `form="my-contained-stuff"` attribute in self-closing [article](article) tags to use it.
+One thing to note: containers are great for simple content like this but if you find yourself repeating the same contained content over and over in [Page templates](http://docs.textpattern.io/themes/page-templates-explained) or across a series of pages, you can make it easier on yourself by using [Form templates](http://docs.textpattern.io/themes/form-templates-explained) instead. You then just write the container content once and use the `form="my-contained-stuff"` attribute in self-closing [article](article) tags to use it.
 
 [Next: Tag nesting](tag-nesting)

@@ -29,7 +29,7 @@ The first column of the Write panel is where the main creating, drafting and edi
 
 ### Title
 
-This field is simply where you type the _title_ (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e. HTML or Textile, formatting will be added by an article form (see @@forms@@). The Textpattern tag that is used to output the title of articles is:
+This field is simply where you type the _title_ (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e. HTML or Textile, formatting will be added by an article form (see [Form templates](http://docs.textpattern.io/themes/form-templates-explained)). The Textpattern tag that is used to output the title of articles is:
 
 ~~~ html
 <txp:title />

@@ -36,7 +36,7 @@ The other is to output raw keyword text anywhere else:
 {your article keywords}
 ~~~
 
-Context of use must be within a single article (as opposed to an article list). The tag can be added directly in a @@Page template@@ or as part of an article @@Form template@@. Either way, you may also place it in a given article tag.
+Context of use must be within a single article (as opposed to an article list). The tag can be added directly in [Page templates](http://docs.textpattern.io/themes/page-templates-explained) or as part of 'article' type [Form templates](http://docs.textpattern.io/themes/form-templates-explained). Either way, you may also place it in a given article tag.
 
 Note: The corresponding keywords field has a 255 character limit by default, which includes spaces and commas. This is the MySQL database default. You can edit the default using [phpMyAdmin](http://www.phpmyadmin.net), for example.
 {: .alert-block .information}
@@ -93,7 +93,7 @@ The above will output keywords metadata with `content="` populated with the list
 <txp:body />
 ~~~
 
-In this example, keywords are used in a Textpattern 'article' type @@Form template@@ along with other article components. The keywords themselves are used like a list of topical 'tags', e.g. like you would use for more granular searching. The keywords would be presented above the article's excerpt.
+In this example, keywords are used in a Textpattern 'article' type Form template along with other article components. The keywords themselves are used like a list of topical 'tags', e.g. like you would use for more granular searching. The keywords would be presented above the article's excerpt.
 
 Other tags used: [permlink](permlink), [title](title), [posted](posted), [excerpt](excerpt), [body](body).
 
