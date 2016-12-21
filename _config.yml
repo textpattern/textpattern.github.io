@@ -4,5 +4,6 @@ permalink: none
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
+author: The Textpattern Development Team and contributors
 twitter:
   username: textpattern
