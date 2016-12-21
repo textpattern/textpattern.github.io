@@ -12,15 +12,19 @@ search_omit: true
 Textpattern documentation within the category 'Article Tags':
 
 <div>
-    {% for page in site.pages %}
-        {% if page.tags contains 'Article tags' %}
-            <article>
-                <h3>{{page.title}}</h3>
-                <p>{{page.description}}</p>
-                <p><a href="{{page.url}}">Go to the full documentation...</a></p>
-            </article>
-        {% else %}
-            <p class="alert-block information">No articles currently exist in this category.</p>
-        {% endif %}
-    {% endfor %}
+    {% if site.tags.'Article tags'.size%}
+        {% for page in site.pages %}
+            {% if page.tags contains 'Article tags' %}
+                <article>
+                    <h3>{{page.title}}</h3>
+                    <p>{{page.description}}</p>
+                    <p><a href="{{page.url}}">Go to the full documentation...</a></p>
+                </article>
+            {% else %}
+                <p class="alert-block information">No articles currently exist in this category.</p>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p class="alert-block information">No articles currently exist in this category.</p>
+    {% endif%}
 </div>
