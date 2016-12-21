@@ -141,7 +141,7 @@ HTML [cols attribute](https://www.w3.org/TR/html5/forms.html#attr-textarea-cols)
 
 ### customfieldname
 
-In your tag, replace `customfieldname` with the actual name of the desired custom field (see also @@Important notes on creating custom field names@@.
+In your tag, replace `customfieldname` with the actual name of the desired custom field (see also @@Important notes on creating custom field names@@).
 
 * [article](article)
 * [article_custom](article_custom)

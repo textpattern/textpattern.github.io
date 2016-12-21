@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: document
+category: Tags
 published: true
-title: "Categories"
-description: A list of Textpattern documentation sorted by category tag.
+title: "Category: Article tags"
+description: A list of Textpattern documentation within category 'Article Tags'.
 search_omit: true
 sitemap: false
 ---
