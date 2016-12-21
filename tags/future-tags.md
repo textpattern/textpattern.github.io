@@ -2,18 +2,18 @@
 layout: document
 category: Tags
 published: true
-title: "Category: Article tags"
-description: A list of Textpattern documentation within the category 'Article tags'.
+title: "Category: Future tags"
+description: A list of Textpattern documentation within the category 'Future tags'.
 search_omit: true
 ---
 
-# Category: Article tags
+# Category: Future tags
 
-Textpattern documentation within the category 'Article tags':
+Textpattern documentation within the category 'Future tags':
 
 <div>
     {% for page in site.pages %}
-        {% if page.tags contains 'Article tags' %}
+        {% if page.tags contains 'Future tags' %}
             <article>
                 <h3>{{page.title}}</h3>
                 <p>{{page.description}}</p>

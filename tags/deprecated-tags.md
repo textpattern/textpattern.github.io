@@ -2,18 +2,18 @@
 layout: document
 category: Tags
 published: true
-title: "Category: Article tags"
-description: A list of Textpattern documentation within the category 'Article tags'.
+title: "Category: Deprecated tags"
+description: A list of Textpattern documentation within the category 'Deprecated tags'.
 search_omit: true
 ---
 
-# Category: Article tags
+# Category: Deprecated tags
 
-Textpattern documentation within the category 'Article tags':
+Textpattern documentation within the category 'Deprecated tags':
 
 <div>
     {% for page in site.pages %}
-        {% if page.tags contains 'Article tags' %}
+        {% if page.tags contains 'Deprecated tags' %}
             <article>
                 <h3>{{page.title}}</h3>
                 <p>{{page.description}}</p>

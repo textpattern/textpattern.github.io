@@ -2,18 +2,18 @@
 layout: document
 category: Tags
 published: true
-title: "Category: Article tags"
-description: A list of Textpattern documentation within the category 'Article tags'.
+title: "Category: Navigation tags"
+description: A list of Textpattern documentation within the category 'Navigation tags'.
 search_omit: true
 ---
 
-# Category: Article tags
+# Category: Navigation tags
 
-Textpattern documentation within the category 'Article tags':
+Textpattern documentation within the category 'Navigation tags':
 
 <div>
     {% for page in site.pages %}
-        {% if page.tags contains 'Article tags' %}
+        {% if page.tags contains 'Navigation tags' %}
             <article>
                 <h3>{{page.title}}</h3>
                 <p>{{page.description}}</p>

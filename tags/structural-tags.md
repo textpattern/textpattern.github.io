@@ -2,18 +2,18 @@
 layout: document
 category: Tags
 published: true
-title: "Category: Article tags"
-description: A list of Textpattern documentation within the category 'Article tags'.
+title: "Category: Structural tags"
+description: A list of Textpattern documentation within the category 'Structural tags'.
 search_omit: true
 ---
 
-# Category: Article tags
+# Category: Structural tags
 
-Textpattern documentation within the category 'Article tags':
+Textpattern documentation within the category 'Structural tags':
 
 <div>
     {% for page in site.pages %}
-        {% if page.tags contains 'Article tags' %}
+        {% if page.tags contains 'Structural tags' %}
             <article>
                 <h3>{{page.title}}</h3>
                 <p>{{page.description}}</p>
