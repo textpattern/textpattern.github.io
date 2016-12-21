@@ -1,6 +1,6 @@
 url: http://docs.textpattern.io
 timezone: Europe/London
-permalink: none
+permalink: /:categories/:title
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
