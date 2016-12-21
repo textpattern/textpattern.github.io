@@ -2,7 +2,7 @@
 layout: landing
 category: Administration
 published: true
-title: "Textpattern plugin development"
+title: Textpattern plugin development
 description: This information is for those who are thinking about developing Textpattern plugins.
 ---
 

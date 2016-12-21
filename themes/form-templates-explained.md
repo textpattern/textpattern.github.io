@@ -2,7 +2,7 @@
 layout: document
 category: Themes
 published: true
-title: "Form templates explained"
+title: Form templates explained
 description: Textpattern Form templates define discrete packages of information that can be inserted into Page templates.
 ---
 

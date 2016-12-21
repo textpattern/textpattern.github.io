@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "If first article"
+title: If first article
 description: The if_first_article tag will execute the contained statements if the displayed article is the first in the list.
 tags:
   - Article tags

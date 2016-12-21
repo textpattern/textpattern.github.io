@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "File download created"
+title: File download created
 description: The file_download_created tag will replace with the upload date of the file to download.
 tags:
   - File tags

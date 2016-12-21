@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Feed link"
+title: Feed link
 description: The feed_link tag is used to output a link to the site's 'articles' RSS feed.
 tags:
   - Markup tags

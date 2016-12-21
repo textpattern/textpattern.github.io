@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Image list (Deprecated)"
+title: Image list (Deprecated)
 description: The 'image_list' tag is deprecated - use 'images' tag instead.
 tags:
   - Deprecated tags

@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Site name"
+title: Site name
 description: The site_name tag is a single tag that returns the site's name as defined within the Preferences administration panel.
 tags:
   - Markup tags

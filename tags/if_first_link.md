@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "If first link"
+title: If first link
 description: The if_first_link tag will execute the contained statements if the displayed link is the first in the currently displayed link list.
 tags:
   - Conditional tags

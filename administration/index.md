@@ -2,7 +2,7 @@
 layout: landing
 category: Administration
 published: true
-title: "Textpattern administration"
+title: Textpattern administration
 description: The administration side of Textpattern is where you configures and manages the website's content, architecture, presentation, and behaviour.
 ---
 

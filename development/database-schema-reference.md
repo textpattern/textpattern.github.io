@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Database schema reference"
+title: Database schema reference
 description: Textpattern stores all data in a database. Within that database, there are 17 tables, each containing a different collection of information.
 ---
 

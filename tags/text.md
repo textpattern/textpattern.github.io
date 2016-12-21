@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Text"
+title: Text
 description: The text tag is primarily used to return localized language strings from the txp_lang database table.
 tags:
   - Language tags

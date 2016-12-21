@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Body"
+title: Body
 description: The body tag is used to return the text, or content, of the article being displayed (the article itself).
 tags:
   - Article tags

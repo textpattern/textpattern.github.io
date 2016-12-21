@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "If variable"
+title: If variable
 description: The if_variable tag tests the existence and/or value of a global variable set with the variable tag.
 tags:
   - Conditional tags

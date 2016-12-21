@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Breadcrumb"
+title: Breadcrumb
 description: The breadcrumb tag is a single tag which is used to create breadcrumb navigation.
 tags:
   - Navigation tags

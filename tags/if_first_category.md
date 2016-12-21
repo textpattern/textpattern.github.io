@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "If first category"
+title: If first category
 description: The if_first_category tag will execute the contained statements if the current category is the first in the list.
 tags:
   - Conditional tags

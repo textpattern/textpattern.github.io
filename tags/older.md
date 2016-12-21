@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Older"
+title: Older
 description: Textpattern will replace this tag with a link to the previous list of articles in the sort order.
 tags:
   - Navigation tags

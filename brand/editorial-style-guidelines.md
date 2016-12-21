@@ -2,7 +2,7 @@
 layout: document
 category: Brand
 published: true
-title: "Textpattern editorial style guide"
+title: Textpattern editorial style guide
 description: These guidelines concern all text content published on Textpattern platforms, and any outbound content for marketing reasons.
 ---
 

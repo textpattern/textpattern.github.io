@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Category: Deprecated tags"
+title: Category: Deprecated tags
 description: A list of Textpattern documentation within the category 'Deprecated tags'.
 search_omit: true
 ---

@@ -2,7 +2,7 @@
 layout: document
 category: Tag basics
 published: true
-title: "Tag nesting"
+title: Tag nesting
 description: Similar to HTML, Textpattern allows you to nest tags within tags.
 ---
 

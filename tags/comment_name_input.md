@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Comment name input"
+title: Comment name input
 description: The comment_name_input tag is used to display a text entry field to accept the commenter's name.
 tags:
   - Comment tags

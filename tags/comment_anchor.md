@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Comment anchor"
+title: Comment anchor
 description: The comment_anchor tag is used to produce an empty anchor tag with an id attribute reflecting the comment ID.
 tags:
   - Comment tags

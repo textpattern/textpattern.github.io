@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Plugin user-help guidelines"
+title: Plugin user-help guidelines
 description: Use this template and its associated guidelines when writing your plugin's user instructions.
 ---
 

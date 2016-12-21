@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Link feed link"
+title: Link feed link
 description: Textpattern will replace this tag with an anchor to the site's 'links' RSS feed.
 tags:
   - Link tags

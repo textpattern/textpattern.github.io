@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Users panel"
+title: Users panel
 description: The Users panel is where user accounts are accessed and managed.
 ---
 

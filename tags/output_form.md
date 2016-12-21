@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Output form"
+title: Output form
 description: Textpattern will replace this tag with the content resulting from the form template called by the tag.
 tags:
   - Structural tags

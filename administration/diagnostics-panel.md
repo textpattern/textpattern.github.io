@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Diagnostics panel"
+title: Diagnostics panel
 description: The Diagnostics panel is important for troubleshooting problems with your Textpattern installation.
 ---
 

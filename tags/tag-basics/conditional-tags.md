@@ -2,7 +2,7 @@
 layout: document
 category: Tag basics
 published: true
-title: "Textpattern conditional tags"
+title: Textpattern conditional tags
 description: Container tag in Textpattern are great for making lists and you use conditional tags to get there.
 tags:
   - Conditional tags

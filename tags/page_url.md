@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Page url"
+title: Page url
 description: The page_url tag is a single tag that is used to return a particular component of the URL from the current page being displayed.
 tags:
   - Markup tags

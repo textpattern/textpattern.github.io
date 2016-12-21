@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Txp die"
+title: Txp die
 description: The txp_die tag will terminate normal page rendition and return the given status to the user agent.
 tags:
   - Error handling tags

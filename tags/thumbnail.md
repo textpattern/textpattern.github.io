@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Thumbnail"
+title: Thumbnail
 description: Tag that Textpattern will replace with an 'img' HTML tag matching an image thumbnail set via the Images administration panel.
 tags:
   - Image tags

@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "File download category"
+title: File download category
 description: The file_download_category tag will replace with the category of the file to download.
 tags:
   - File tags

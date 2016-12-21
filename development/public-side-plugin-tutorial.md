@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Public-side plugin tutorial"
+title: Public-side plugin tutorial
 description: This tutorial will walk you through the basics of creating a simple public-side plugin.
 ---
 

@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Site slogan"
+title: Site slogan
 description: The site_slogan tag is a single tag which is used to output the site's tagline.
 tags:
   - Markup tags

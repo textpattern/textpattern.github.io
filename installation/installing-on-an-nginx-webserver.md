@@ -2,7 +2,7 @@
 layout: document
 category: Installation
 published: true
-title: "Installing on an Nginx web server"
+title: Installing on an Nginx web server
 description: Although it is not officially supported, running Textpattern CMS on an Nginx web server works just fine.
 ---
 

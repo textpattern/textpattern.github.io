@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Link description"
+title: Link description
 description: The link_description tag is used to return the text from the 'Description' field as defined within the Links administration panel.
 tags:
   - Link tags

@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Authors"
+title: Authors
 description: The authors tag is used to gather a list of authors designated within the Textpattern Users administration panel.
 tags:
   - Article tags

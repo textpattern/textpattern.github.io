@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "The pluggable_ui function"
+title: The pluggable_ui function
 description: The pluggable_ui function's main purpose was to provide additional event/step hooks to modify the administration side.
 ---
 

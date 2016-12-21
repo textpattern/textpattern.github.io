@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Forms panel"
+title: Forms panel
 description: The Forms panel is where the Form templates used within a Textpattern website are created and edited.
 ---
 

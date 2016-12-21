@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Search result title"
+title: Search result title
 description: The search_result_title tag will provide a hyperlinked title to an article as returned by the search function.
 tags:
   - Search tags

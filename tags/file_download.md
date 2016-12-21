@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "File download"
+title: File download
 description: The file_download tag will replace with a Textpattern 'file' type Form template.
 tags:
   - File tags

@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Visitor logs panel"
+title: Visitor logs panel
 description: The Visitor Logs panel is where you can monitor who and what visits your site.
 ---
 

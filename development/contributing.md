@@ -2,7 +2,7 @@
 layout: document
 category: Development
 published: true
-title: "Contributing to Textpattern"
+title: Contributing to Textpattern
 description: If you want to help with the development of Textpattern, there are plenty of ways to get involved.
 ---
 

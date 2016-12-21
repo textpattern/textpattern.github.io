@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Pages panel"
+title: Pages panel
 description: The Pages panel is where the Page templates used within a Textpattern website are created and edited.
 ---
 

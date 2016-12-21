@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Article url title"
+title: Article url title
 description: The article_url_title tag returns the dumbed-down 'URL title' of the article being displayed.
 tags:
   - Article tags

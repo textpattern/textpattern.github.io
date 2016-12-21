@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "File download downloads"
+title: File download downloads
 description: The file_download_downloads tag will replace with the number of times the current file has been downloaded.
 tags:
   - File tags

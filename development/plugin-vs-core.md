@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Plugin versus core features"
+title: Plugin versus core features
 description: A common discussion point is whether or not the functionality of a given plugin should be integrated into the core code of Textpattern.
 ---
 

@@ -2,7 +2,7 @@
 layout: document
 category: Development
 published: true
-title: "Admin-side plugin tutorial"
+title: Admin-side plugin tutorial
 description: This tutorial walks you through the basics of creating and admin-side plugin.
 ---
 

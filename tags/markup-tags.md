@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Category: Markup tags"
+title: Category: Markup tags
 description: A list of Textpattern documentation within the category 'Markup tags'.
 search_omit: true
 ---

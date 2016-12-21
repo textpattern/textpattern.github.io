@@ -1,7 +1,7 @@
 ---
 layout: default
 published: true
-title: "Textpattern CMS user documentation"
+title: Textpattern CMS user documentation
 description: How to install and use Textpattern CMS.
 search_omit: true
 ---

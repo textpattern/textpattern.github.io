@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Recent articles"
+title: Recent articles
 description: The recent_articles tag is a single tag which is used to produce a list of permanent links to recent articles by title.
 tags:
   - Article tags

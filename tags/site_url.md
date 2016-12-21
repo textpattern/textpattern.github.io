@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Site url"
+title: Site url
 description: The site_url tag is a single tag which returns the full URL of the site.
 tags:
   - Markup tags

@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "If search"
+title: If search
 description: The if_search tag will execute the contained statements if the called page is the result of a search.
 tags:
   - Conditional tags

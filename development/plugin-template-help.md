@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Plugin template"
+title: Plugin template
 description: Textpattern plugins are perhaps best thought of as functions supplementary to those found in Textpattern core.
 ---
 

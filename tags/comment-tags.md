@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Category: Comment tags"
+title: Category: Comment tags
 description: A list of Textpattern documentation within the category 'Comment tags'.
 search_omit: true
 ---

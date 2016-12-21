@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Category1"
+title: Category1
 description: The category1 tag will display information of the category as defined by 'Category 1' of the article being displayed.
 tags:
   - Article tags

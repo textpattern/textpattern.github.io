@@ -2,7 +2,7 @@
 layout: landing
 category: Installation
 published: true
-title: "Installing Textpattern"
+title: Installing Textpattern
 description: These are detailed instructions for installing Textpattern.
 ---
 

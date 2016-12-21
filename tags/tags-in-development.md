@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Tags in development"
+title: Tags in development
 description: List of tags added in development versions of Textpattern since the the latest, stable release.
 tags:
   - Future tags

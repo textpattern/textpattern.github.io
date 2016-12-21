@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "If different"
+title: If different
 description: The if_different tag will execute the contained statement when the value of the contained statement differs from the preceding value.
 tags:
   - Conditional tags

@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Search result count"
+title: Search result count
 description: The search_result_count tag is a single tag that returns the number of articles returned by an article tag.
 tags:
   - Search tags

@@ -2,7 +2,7 @@
 layout: landing
 category: Themes
 published: true
-title: "Theme design"
+title: Theme design
 description: Textpattern theme designs - either building from scratch, or using a pre-built theme.
 ---
 

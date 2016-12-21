@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Next title"
+title: Next title
 description: The next_title tag is a single tag which Textpattern will replace with the title of the next article in the sort order.
 tags:
   - Article tags

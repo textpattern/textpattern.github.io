@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Tag attributes cross-reference"
+title: Tag attributes cross-reference
 description: This cross-reference makes clear the different Textpattern tags associated with a given attribute.
 ---
 

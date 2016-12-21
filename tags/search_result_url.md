@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Search result url"
+title: Search result url
 description: The search_result_url tag will provide a hyperlinked URL to an article as returned by the search function.
 tags:
   - Search tags

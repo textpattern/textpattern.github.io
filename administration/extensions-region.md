@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Extensions region"
+title: Extensions region
 description: The extensions region appears to the higher user roles if any of the admin-side plugins that employ it are installed.
 ---
 

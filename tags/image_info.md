@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Image info"
+title: Image info
 description: Tag that Textpattern will replace with the relevant image data from the current image.
 tags:
   - Image tags

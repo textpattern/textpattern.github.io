@@ -2,7 +2,7 @@
 layout: document
 category: Development
 published: true
-title: "Admin-side events and steps"
+title: Admin-side events and steps
 description: These are the main events and steps that Textpattern uses as you interact with the admin-side interface.
 ---
 

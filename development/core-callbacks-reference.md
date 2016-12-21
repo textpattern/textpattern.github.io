@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Core callbacks reference"
+title: Core callbacks reference
 description: This comprehensive reference provides detailed information about all callbacks used in Textpattern.
 ---
 

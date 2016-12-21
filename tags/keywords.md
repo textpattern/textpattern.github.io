@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Keywords (Deprecated)"
+title: Keywords (Deprecated)
 description: The 'keywords' tag is deprecated - use 'meta_keywords' tag instead.
 tags:
   - Deprecated tags

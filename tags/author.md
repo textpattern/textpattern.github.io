@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Author"
+title: Author
 description: The author tag is a single tag that is used to return the name of the author of the currently displayed article.
 tags:
   - Article tags

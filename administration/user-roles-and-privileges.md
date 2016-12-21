@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "User roles and privileges"
+title: User roles and privileges
 description: In addition to the administrator, several pre-defined user roles are provided for in Textpattern out-of-the-box.
 ---
 

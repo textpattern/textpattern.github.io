@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Image index"
+title: Image index
 description: Tag that renders thumbnails of all images contained in an image category.
 tags:
   - Image tags

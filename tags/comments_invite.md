@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Comments invite"
+title: Comments invite
 description: The comments_invite tag is used to display a link to an article comment form.
 tags:
   - Comment tags

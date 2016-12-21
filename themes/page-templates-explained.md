@@ -2,7 +2,7 @@
 layout: document
 category: Themes
 published: true
-title: "Page templates explained"
+title: Page templates explained
 description: Page templates can contain standard HTML, Textpattern Tags and nested Textpattern Form templates which all come together to render a web site, section or individual page.
 ---
 

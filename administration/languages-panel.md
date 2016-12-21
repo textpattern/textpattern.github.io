@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Languages panel"
+title: Languages panel
 description: The Languages panel is where you update your chosen language pack after installing and updating Textpattern.
 ---
 

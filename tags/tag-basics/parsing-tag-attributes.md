@@ -2,7 +2,7 @@
 layout: document
 category: Tag basics
 published: true
-title: "Parsing tag attributes"
+title: Parsing tag attributes
 description: Most Textpattern tags allow you to specify attributes as key/value pairs to override default behaviour.
 ---
 

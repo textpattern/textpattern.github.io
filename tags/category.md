@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Category"
+title: Category
 description: The category tag will display information of the category as defined by the name attribute, or the one currently being viewed.
 tags:
   - Navigation tags

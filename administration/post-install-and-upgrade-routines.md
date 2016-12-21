@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Post install and upgrade routines"
+title: Post install and upgrade routines
 description: There's a typical routine to walk through after installing or updating Textpattern.
 ---
 

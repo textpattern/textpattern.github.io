@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Meta keywords"
+title: Meta keywords
 description: The meta_keywords tag is a single tag used in a variety of ways to display keyword data.
 tags:
   - Article tags

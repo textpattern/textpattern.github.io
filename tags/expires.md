@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Expires"
+title: Expires
 description: The expires tag is used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive.
 tags:
   - Article tags

@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Textpattern security"
+title: Textpattern security
 description: The developers of Textpattern take system security very seriously.
 ---
 

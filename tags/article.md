@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Article"
+title: Article
 description: The basic article tag is used to output one or more articles depending on the attributes used.
 tags:
   - Article tags

@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Write panel"
+title: Write panel
 description: The Write panel reveals the various features for managing articles on your Web site, which includes creating new articles, editing existing articles.
 ---
 

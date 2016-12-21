@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "If last article"
+title: If last article
 description: The if_last_article tag will execute the contained statements if the displayed article is the last in the list.
 tags:
   - Article tags

@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Category: Article tags"
+title: Category: Article tags
 description: A list of Textpattern documentation within the category 'Article tags'.
 search_omit: true
 ---

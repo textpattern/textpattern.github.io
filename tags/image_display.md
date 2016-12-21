@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Image display"
+title: Image display
 description: Tag that is intended to be used in tandem with 'image_index' to produce image-based lists.
 tags:
   - Image tags

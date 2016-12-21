@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Permlink"
+title: Permlink
 description: The permlink can be used as a single tag or a container tag to return the permanent URL of the article being displayed.
 tags:
   - Article tags

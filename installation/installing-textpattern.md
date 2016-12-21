@@ -2,7 +2,7 @@
 layout: document
 category: Installation
 published: true
-title: "Quick installation/upgrade guide"
+title: Quick installation/upgrade guide
 description: A quick Textpattern CMS installation/upgrade guide,
 ---
 

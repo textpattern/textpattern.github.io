@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Page title"
+title: Page title
 description: The page_title tag is a single tag that displays title text depending on the context it is used.
 tags:
   - Markup tags

@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Yield"
+title: Yield
 description: The yield tag is a single tag which is used to return the inner content of the enclosing output_form tag.
 tags:
   - Structural tags

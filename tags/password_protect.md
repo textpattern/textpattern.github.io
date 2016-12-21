@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Password protect"
+title: Password protect
 description: When Textpattern encounters the password_protect tag it causes the user to be prompted for a username and password.
 tags:
   - Markup tags

@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Plugins panel"
+title: Plugins panel
 description: When your needs cannot be met by core ingenuity alone, you can extend Textpattern functionality with plugins.
 ---
 

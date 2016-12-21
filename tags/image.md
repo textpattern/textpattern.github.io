@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Image"
+title: Image
 description: Tag that Textpattern will replace with an 'img' HTML tag matching an image uploaded via the Images administration panel.
 tags:
   - Image tags

@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "If last section"
+title: If last section
 description: The if_last_section tag will execute the contained statements if the current section is the last in the list.
 tags:
   - Conditional tags

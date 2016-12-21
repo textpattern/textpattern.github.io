@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "If comments"
+title: If comments
 description: The if_comments tag will execute the contained statements if there are comments associated with a particular article.
 tags:
   - Comment tags

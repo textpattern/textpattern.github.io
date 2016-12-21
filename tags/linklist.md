@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Linklist"
+title: Linklist
 description: The linklist tag is used to produce a list of links from the predefined list created on the Links administration panel.
 tags:
   - Link tags

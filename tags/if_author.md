@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "If author"
+title: If author
 description: The if_author tag will execute the contained statement if the called page is the result of an article search by a specific author's name.
 tags:
   - Article tags

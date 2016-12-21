@@ -2,7 +2,7 @@
 layout: document
 category: Administration
 published: true
-title: "Styles panel"
+title: Styles panel
 description: The Styles panel is where the CSS (Cascading Style Sheets) used within a Textpattern website are created and edited.
 ---
 

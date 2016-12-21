@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Evaluate"
+title: Evaluate
 description: The evaluate tag will display contained content depending on the evaluation context given.
 tags:
   - Future tags

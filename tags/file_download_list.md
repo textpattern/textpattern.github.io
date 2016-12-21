@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "File download list"
+title: File download list
 description: The file_download_list tag is used to produce a list of download links according to the given attributes.
 tags:
   - File tags

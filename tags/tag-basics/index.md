@@ -2,7 +2,7 @@
 layout: landing
 category: Tag basics
 published: true
-title: "Tag basics"
+title: Tag basics
 description: Textpattern tags are arguably the most important feature of Textpattern. They represent a shorthand method for calling functions defined inside Textpattern core.
 ---
 

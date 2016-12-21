@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Comment preview"
+title: Comment preview
 description: The comment_preview tag is used to display a 'Preview' button the user can use to preview the comment text.
 tags:
   - Comment tags

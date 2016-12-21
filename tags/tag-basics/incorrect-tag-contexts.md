@@ -2,7 +2,7 @@
 layout: document
 category: Tag basics
 published: true
-title: "Incorrect tag contexts"
+title: Incorrect tag contexts
 description: Certain Textpattern tags are only intended for use in particular places.
 ---
 

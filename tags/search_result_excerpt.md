@@ -2,7 +2,7 @@
 layout: document
 category: Tags
 published: true
-title: "Search result excerpt"
+title: Search result excerpt
 description: The search_result_excerpt tag will show the occurrence of the search term with some surrounding context.
 tags:
   - Search tags
