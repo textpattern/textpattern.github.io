@@ -3,14 +3,13 @@ layout: document
 category: Tags
 published: true
 title: "Category: Article tags"
-description: A list of Textpattern documentation within category 'Article Tags'.
+description: A list of Textpattern documentation within the category 'Article Tags'.
 search_omit: true
-sitemap: false
 ---
 
 # Category: Article tags
 
-A list of Textpattern documentation within category 'Article Tags'.
+Textpattern documentation within the category 'Article Tags':
 
 <div>
     {% for page in site.pages %}
@@ -20,6 +19,8 @@ A list of Textpattern documentation within category 'Article Tags'.
                 <p>{{page.description}}</p>
                 <p><a href="{{page.url}}">Go to the full documentation...</a></p>
             </article>
+        {% else %}
+            <p class="alert-block information">No articles currently exist in this category.</p>
         {% endif %}
     {% endfor %}
 </div>
