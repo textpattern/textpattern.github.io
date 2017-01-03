@@ -543,7 +543,7 @@ may be outdated, so use with caution. Not a long list, in any case.
 
 [^1]: You can see the code for any installed plugin by clicking its name
     in the table on the
-    [**Plugins**](http://docs.textpattern.io/development/administration/admin/plugins-panel)
+    [**Plugins**](http://docs.textpattern.io/development/administration/plugins-panel)
     panel, or by installing and using
     [ied_plugin_composer](http://textpattern.org/plugins/588/ied_plugin_composer).
 

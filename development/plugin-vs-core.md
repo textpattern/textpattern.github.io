@@ -168,7 +168,7 @@ are...
 **Plugin users:**
 
 If you're [using
-plugins](http://docs.textpattern.io/administration/admin/plugins-panel),
+plugins](http://docs.textpattern.io/administration/plugins-panel),
 make sure you're using plugins from reliable sources and developers. Do
 the background checking before you install anything.
 
