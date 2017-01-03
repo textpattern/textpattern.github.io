@@ -12,12 +12,12 @@ The **Write** panel is the default panel opened when you log into Textpattern's 
 
 On this page:
 
-* [Write panel layout: main editing area](#panel-layout-main-editing-area)
+* [Panel layout: main editing area](#panel-layout-main-editing-area)
   * [Title](#title)
   * [Body](#body)
   * [Excerpt](#excerpt)
   * [Article view](#article-view)
-* [Write panel layout: secondary area](#panel-layout-secondary-area)
+* [Panel layout: secondary area](#panel-layout-secondary-area)
   * [Publish/Save button](#publish-save-button)
   * [Sort and display](#sort-and-display)
   * [Date and time](#date-and-time)
@@ -74,7 +74,7 @@ At the top of the main editing area are three vertical tabs labeled 'Text', 'HTM
 
 As you write or edit an article, you may choose to do so using Textile, or you may want to add a single image to the article before posting. The *options* in the left column provide help in these and other areas, so we will go over those next.
 
-## Write panel: secondary area
+## Panel Layout: secondary area
 
 The second column of the Write panel provides options for editing as well as content, each covered below.
 
