@@ -495,7 +495,7 @@ Get your repos here; something for everyone. A few git commands
 included.
 
 -   [Textpattern
-    repositories](http://docs.textpattern.io/development/txp-repositories)
+    repositories](http://docs.textpattern.io/development/textpattern-source-code-repositories)
 
 **Integration and waypoints:**
 

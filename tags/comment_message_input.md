@@ -68,7 +68,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </p>
 ~~~
 
-Other tags used: [comment_email_input](comment_email_input), [comments_help](comments_help), [comment_name_input](comment_name-input), [comment_preview](comment_preview), [comment_remember](comment_remember), [comment_submit](comment_submit), [comment_web_input](comment_web-input).
+Other tags used: [comment_email_input](comment_email_input), [comments_help](comments_help), [comment_name_input](comment_name_input), [comment_preview](comment_preview), [comment_remember](comment_remember), [comment_submit](comment_submit), [comment_web_input](comment_web_input).
 
 ### Example 2: Text area changes in preview
 
