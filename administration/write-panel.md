@@ -18,7 +18,7 @@ On this page:
   * [Excerpt](#excerpt)
   * [Article view](#article-view)
 * [Panel layout: secondary area](#panel-layout-secondary-area)
-  * [Publish/Save button](#publish-save-button)
+  * [Publish/Save button](#publishsave-button)
   * [Sort and display](#sort-and-display)
   * [Date and time](#date-and-time)
 
@@ -26,7 +26,7 @@ On this page:
 
 The contents of the Write panel are arranged in two columns (see Figure 1). The items in each region are discussed in in the following sections, beginning with the first column, which is the *main editing area*.
 
-<img alt="Figure 1" src="http://docs.textpattern.io/img/administration/write-1-en.png">
+<img alt="Figure 1" src="http://docs.textpattern.io/img/write-panel-main-editng-area.png">
 
 The first column of the Write panel is where the main creating, drafting and editing of your article takes place. There are four components of this region - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below (it should be noted that you must have content in at least one of the article content fields - **Title**, **Body**, or **Excerpt** - before you can save an article draft, but you do not need to have all fields filled).
 
@@ -66,7 +66,7 @@ See the [excerpt tag](http://docs.textpattern.io/tags/excerpt) documentation for
 
 At the top of the main editing area are three vertical tabs labeled 'Text', 'HTML', and 'Preview'; these provide three different views of your article-in-progress, as described below:
 
-<img alt="Figure 2" src="http://docs.textpattern.io/img/administration/write-2-en.png">
+<img alt="Figure 2" src="http://docs.textpattern.io/img/write-article-view.png">
 
 * **Text**: This tab is active by default and is the one you actually draft your article in. The Text view works just like a regular text editor (not a word processor). To give your text formatting, you will have to know either Hypertext Markup Language (HTML), or use @@Textile@@. Textile is a remarkably simple text editing syntax that allows you to format text for the Web without having to know HTML (more about using Textile is provided in the section @@Textile help@@ below).
 * **HTML**: This tab will show you what your article looks like in HTML format, assuming you have used HTML or Textile to do any formatting. If you have, you will see the resulting HTML syntax incorporated in your text. You cannot do any editing in this view, it is for previewing your HTML work-in-progress only.
