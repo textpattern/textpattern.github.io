@@ -17,7 +17,10 @@ On this page:
   * [Body](#body)
   * [Excerpt](#excerpt)
   * [Article view](#article-view)
-* [Write panel layout: secondary options area](#panel-layout-secondary-options-area)
+* [Write panel layout: secondary area](#panel-layout-secondary-area)
+  * [Publish/Save button](#publish-save-button)
+  * [Sort and display](#sort-and-display)
+  * [Date and time](#date-and-time)
 
 ## Panel Layout: main editing area
 
@@ -71,9 +74,17 @@ At the top of the main editing area are three vertical tabs labeled 'Text', 'HTM
 
 As you write or edit an article, you may choose to do so using Textile, or you may want to add a single image to the article before posting. The *options* in the left column provide help in these and other areas, so we will go over those next.
 
-## Write panel: secondary options area
+## Write panel: secondary area
 
-The second column of the Write panel provides _options_ for editing as well as content (see Fig. 3): “Textile Help” (2), “Advanced Options” (3), and “Recent Articles” (4); each covered below. All three links _toggle_ (show and hide) additional options, when you click them.
+The second column of the Write panel provides options for editing as well as content, each covered below.
+
+### Publish/Save button
+
+The first thing to be aware of has to do with the button that publishes/saves your article and settings. Basically, there are two button labels you will see when working in the write panel; 'Publish' (new article state) and 'Save' (existing article state). When drafting a new article, the button will read as _Publish_. This might be a bit confusing because the word _publish_ would suggest your article is going directly live to the world when you click this button; however, that will only be true if you set the article's status to be either _Live_ or _Sticky_, as already discussed earlier. If this was a new article, and you changed your status to draft (for example), then this button would still read as 'Publish' (even though you were just saving a draft), and not go live to the world. Basically, the _Publish_ label is the default label.
+
+Once you publish an article for the first time, no matter what the status (_Draft_, _Live_, etc.), then the next time you edit your article in the write panel, the button will change to read as 'Save'. The _Save_ button will behave exactly the same as the _Publish_ button, despite whatever article status you happen to want to select (if not _Live_).
+
+When publishing or saving an article, Textpattern gives a feedback in the _message area_. When an article will be public (live or sticky), message reads "Article posted." - when another Status (Draft, Hidden, Pending) is active, message is "Article saved as _status mode_.". Sometimes there will be an additional info and need to modify something - most likely dealing with an identical URL, e.g. "Article posted. The same URL-only title is used by 2 different articles.".
 
 ### Sort and display
 
@@ -143,6 +154,24 @@ Sections basically control in what area of your website your article will be dis
 This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an 'Edit' link. Assigning categories of course only works if _there is_ at least one article category in the @@categories panel@@ (there are three sample ones in a default install). The 'Edit' link will open the Categories panel, where you can create or edit categories.
 
 The drop-down menus will both list _all_ categories by their _title_. This basically allows you to put an article in up to two different categories, which you can then manipulate later according to your planned site architecture and content presentation (such level of discussion is out of scope here). For saved articles this control will show existing category assignments.
+
+### Date and time
+
+This part might be considered two _different_ functions: Publish date/time and Expire date/time.
+
+#### Publish date/time
+
+By default, at the moment of _opening the Write panel_ Textpattern adds the current date and time to the text boxes provided, thus marking the beginning of work. Unless you specifically indicate a different date and time this time will be saved when publishing the article, thus documenting the beginning of your work. If you rather want the current time _when finally publishing_ (or re-publishing) the article ('Live' and public), then you should mark the check box 'Set timestamp to now' (saved: 'Reset time to now') before you click 'Publish' or 'Save' in order to set the article public. This option will always establish the date and time at the moment you click the 'Publish' or 'Save' button as the article's publish-timestamp, no matter what status you give it.
+
+To change your article's date and time value to _something other than the current time_, leave the aforementioned box unchecked and type in the date and time you want in the 'Publish date' and 'Publish time' fields provided. If the time is in the future and the Status is 'Live', the article will automatically be published at the given time.
+
+If you are interested in documenting the time when an article has been originally published (whether by its true creating time or by an arbitrary time of first publishing), you shouldn't update the timestamp to 'now' when modifying. The timestamp defines the order of articles when an article list is created by publishing time - a change thus will reflect in the sequence of articles. If you nevertheless want to indicate a 'last modified' date, you can use the [modified](http://docs.textpattern.io/tags/modified) tag in your Article type [Form templates](http://docs.textpattern.io/themes/form-templates-explained).
+
+If you need the timestamp for publishing schedules apart from marking an origin, you need to indicate the origin otherwise: If you do _not_ modify after your 'origin' date, you could use the [modified](http://docs.textpattern.io/tags/modified) tag as an indicator. Else you could provide a custom field (e.g. 'first_published') for that task.
+
+#### Expire date/time
+
+In the same way you can set a deliberate publishing date/time for an article, you can also set a time when it will expire and thus vanish (or unpublish) from particular page or the whole website - depending on your site's setup. Using expire-preferences and a set of expire-tags you can achieve a sophisticated way of publishing and removing articles though at the same time keeping them active for permanent links or an archive.
 
 ### Textile help
 
@@ -233,28 +262,6 @@ _Comments_ "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:poin
 
 The comment link itself will lead to the location in your site where a visitor can actually add a comment to your article. By default the link text is “Leave Comment”, but other possibilities might include: “Let's hear it!”, “Speak Up”, “Respond”, “Got something to say?”, etc. - whatever you want. If you choose to have a single invitation for use with all of your articles then it is easiest to just set that value in your site-level _Comments_ settings in the Preferences panel.
 
-h4(#timestamp). Timestamp
-
-Time Management See (9). This part might be considered two _different_ functions: Time*stamp* and Time*control*. They are both managed (and discussed) here.
-
-By default, at the moment of _opening the Write panel_ Textpattern adds the current date and time to the text boxes provided, thus marking the beginning of work. Unless you specifically indicate a different date and time this time will be saved when publishing the article, thus documenting the beginning of your work. If you rather want the current time _when finally publishing_ (or re-publishing) the article (“Live” and public), then you should mark the check box “*Set timestamp to now*” (saved: “Reset time to now”) before you click “Publish” or “Save” in order to set the article public. This option will always establish the date and time at the moment you click the “Publish” or “Save” button as the article's “publish”-timestamp, no matter what status you give it.
-
-To change your article's date and time value to _something other than the current time_, leave the aforementioned box unchecked and type in the date and time you want in the “*or publish at*” (saved: “Published at”) text boxes provided. If the time is in the future and the Status is “Live”, the article will automatically be published at the given time.
-
-h5(#documentary_or_historical_aspect_-_time_of_origin). Documentary or Historical Aspect - Time of Origin
-
-If you are interested in documenting the time when an article has been originally published (whether by its true creating time or by an arbitrary time of first publishing), you shouldn't update the timestamp to “now” when modifying. The timestamp defines the order of articles when an article list is created by publishing time - a change thus will reflect in the sequence of articles.
-
-If you nevertheless want to indicate a “last modified” date, you can use "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified in your article forms.
-
-If you need the timestamp for publishing schedules apart from marking an origin, you need to indicate the origin otherwise: If you do _not_ modify after your “origin” date, you could use "modified":/home/www/zendstudio/dokuwiki/bin/doku.php?id=modified as an indicator. Else you could provide a custom field (e.g. “first_published”) for that task.
-
-h4(#expires). Expires
-
-Advanced Time Management See (10). In the same way you can set a deliberate publishing date/time for an article, you can also set a time, when it will expire and thus vanish (or unpublish) from particular page or the whole website - depending on your site's setup.
-
-Note: Using expire-preferences and a set of expire-tags you can achieve a sophisticated way of publishing and removing articles though at the same time keeping them active for permanent links or an archive.
-
 h4(#write_panel_navigation). Write Panel Navigation
 
 As described earlier, the right column changes _appearance_ a little bit when you work on articles you have already saved (Figure 10). Different labels have been marked above. There are a few additions described below.
@@ -266,17 +273,3 @@ On the right side of the _title_ there is a new link “View”. It will open th
 See (11 a). At the top of the right column there is a new link “Create new”. It will abandon all unsaved edits of the current article and open a new empty Write panel.
 
 See (11 b). Two navigation buttons - *previous* and *next* (when applicable) - let you navigate from one article (in the article catalogue) to another without having to leave the write panel. (Another option is to select articles from under the _Recent Articles_ link on the right side of the panel, as already discussed in an earlier section.) The navigation buttons will rotate through your articles catalogue from the reference point of the article you happen to be viewing at the time. When you click the previous button you will move to the article that is one above the one you are at in the catalogue. When you click the next button you will move down one article in your catalogue.
-
-h4(#publish_or_save_button). &quot;Publish&quot; or &quot;Save&quot; Button
-
-See (11 and 11 e). The last thing to be aware of has to do with the button that publishes/saves your article and settings. Basically, there are two button labels you will see when working in the write panel; “Publish” (new article state) and “Save” (existing article state).
-
-When drafting a new article, the button will read as _Publish_. This might be a bit confusing because the word _publish_ would suggest your article is going directly live to the world when you click this button; however, that will only be true if you set the article's status to be either _Live_ or _Sticky_, as already discussed earlier. If this was a new article, and you changed your status to draft (for example), then this button would still read as “Publish” (even though you were just saving a draft), and not go live to the world. Basically, the _Publish_ label is the default label.
-
-Once you publish an article for the first time, no matter what the status (_Draft_, _Live_, ect.), then the next time you come back to edit your article in the write panel, the button will change to read as “Save,” as it does in Figure 10 (e). The _Save_ button will behave exactly the same as the _Publish_ button, despite whatever article status you happen to want to select (if not _Live_).
-
-When considering this button situation, it probably would make more sense to just have a “Save” button in all cases, but that is not how it currently works. *At least* the “Publish”-state before you “save” your work for the first time - probably when still unfinished - could beware you of inadvertently publishing rough work: When the button reads “Publish” better look twice if the Status is correct and really should be “Live”.
-
-h3(sectionedit5#messages). Messages
-
-See (12). When publishing or saving an article, Textpattern gives a feedback in the _message area_ top left beneath “Textpattern” (see Figure 11). When an article will be public (live or sticky), message reads “Article posted.” - when another Status (Draft, Hidden, Pending) is active, message is “Article saved as _status mode_.”. Sometimes there will be an additional info and need to modify something - most likely dealing with an identical URL, e.g. “Article posted. The same URL-only title is used by 2 different articles.”.
