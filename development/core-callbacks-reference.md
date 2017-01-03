@@ -191,7 +191,7 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`         `$step`           When it occurs                                  What it allows/does
   ---------------- ----------------- ----------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  `diag_results`   `high` or `low`   At the end of the `doDiagnostics()` function.   Renders the content of the ****[Diagnostics](http://docs.textpattern.io/administration/admin/diagnostics-panel**) panel. Allows you to add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low).
+  `diag_results`   `high` or `low`   At the end of the `doDiagnostics()` function.   Renders the content of the ****[Diagnostics](http://docs.textpattern.io/administration/diagnostics-panel) panel. Allows you to add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low).
 
 notextile.
 
@@ -519,7 +519,7 @@ which is where the `extend_col_1` step outputs its markup.
 \[todo:intro para about what this callback is concerned with\]
 
 For the
-****[Categories](http://docs.textpattern.io/administration/content/categories-panel**)
+****[Categories](http://docs.textpattern.io/administration/categories-panel)
 panel.
 
 notextile.
@@ -537,7 +537,7 @@ notextile.
 \[todo:intro para about what this callback is concerned with\]
 
 For the
-****[Images](http://docs.textpattern.io/administration/content/images-panel**)
+****[Images](http://docs.textpattern.io/administration/images-panel)
 panel. These callbacks have a single `$event` (i.e. `image_ui`).
 
 notextile.
@@ -562,7 +562,7 @@ notextile.
 \[todo:intro para about what this callback is concerned with\]
 
 For the
-****[Files](http://docs.textpattern.io/administration/content/files-panel**)
+****[Files](http://docs.textpattern.io/administration/files-panel)
 panel.
 
 notextile.
@@ -580,7 +580,7 @@ notextile.
 \[todo:intro para about what this callback is concerned with\]
 
 For the
-****[Links](http://docs.textpattern.io/administration/content/links-panel**)
+****[Links](http://docs.textpattern.io/administration/links-panel)
 panel.
 
 notextile.
@@ -598,7 +598,7 @@ notextile.
 \[todo:intro para about what this callback is concerned with\]
 
 For the
-****[Sections](http://docs.textpattern.io/administration/presentation/sections-panel**)
+****[Sections](http://docs.textpattern.io/administration/sections-panel)
 panel.
 
 notextile.
@@ -616,7 +616,7 @@ notextile.
 \[todo:intro para about what this callback is concerned with\]
 
 For the
-****[Users](http://docs.textpattern.io/administration/admin/users-panel**)
+****[Users](http://docs.textpattern.io/administration/users-panel)
 panel.
 
 notextile.
@@ -710,7 +710,7 @@ Plugin callbacks {#sec3}
 In order to process these callbacks, your plugin must raise the
 `PLUGIN_LIFECYCLE_NOTIFY` flag to register its intent. In addition, if
 you wish to offer a link to your plugin's preferences from the
-****[Plugins](http:docs.textpattern.io/administration/plugins-panel**)
+****[Plugins](http:docs.textpattern.io/administration/plugins-panel)
 panel, you must raise the `PLUGIN_HAS_PREFS` flag.
 
 notextile.

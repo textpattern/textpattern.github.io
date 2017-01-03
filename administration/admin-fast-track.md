@@ -5,7 +5,7 @@ This will integrate the FAQ: ive-installed-textpattern-now-what.textile
 
 This is a fast-track orientation to help you build your first publishing
 architecture in Textpattern. It assumes you've [installed, configured,
-and diagnosed a new instance of Textpattern](installation/intalling-txp)
+and diagnosed a new instance of Textpattern](installation/installing-textpattern)
 on your web server and looked over the [administration](administration/)
 docs. If you've done that but nothing more, you're now in a good place.
 This orientation will map out the administration process and associated
