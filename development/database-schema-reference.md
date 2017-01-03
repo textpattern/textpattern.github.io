@@ -14,32 +14,27 @@ Here we describe each table and the information it contains, effective version 4
 
 On this page:
 
--   [textpattern](#sec1)
--   [txp_category](#sec2)
--   [txp_css](#sec3)
--   [txp_discuss](#sec4)
--   [txp_discuss_ipban](#sec5)
--   [txp_discuss_nonce](#sec6)
--   [txp_file](#sec7)
--   [txp_form](#sec8)
--   [txp_image](#sec9)
--   [txp_lang](#sec10)
--   [txp_link](#sec11)
--   [txp_log](#sec12)
--   [txp_page](#sec13)
--   [txp_plugin](#sec14)
--   [txp_prefs](#sec15)
--   [txp_section](#sec16)
--   [txp_users](#sec17)
+* [textpattern](#textpattern)
+* [txp_category](#sec2)
+* [txp_css](#sec3)
+* [txp_discuss](#sec4)
+* [txp_discuss_ipban](#sec5)
+* [txp_discuss_nonce](#sec6)
+* [txp_file](#sec7)
+* [txp_form](#sec8)
+* [txp_image](#sec9)
+* [txp_lang](#sec10)
+* [txp_link](#sec11)
+* [txp_log](#sec12)
+* [txp_page](#sec13)
+* [txp_plugin](#sec14)
+* [txp_prefs](#sec15)
+* [txp_section](#sec16)
+* [txp_users](#sec17)
 
-textpattern {#sec1}
------------
+## textpattern
 
-The 'textpattern' table contains the articles you create on the
-****[Write](http://docs.textpattern.io/administration/content/write-panel**)
-panel.
-
-notextile.
+The `textpattern` table contains the articles you create on the [Write panel](http://docs.textpattern.io/administration/write-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column             Type           Description
@@ -82,17 +77,11 @@ notextile.
   uid                varchar(32)    Random string used to uniquely identify this article in an RSS/Atom feed. Textpattern uses md5(uniqid(rand(),true)) to create the uid
   feed_time         date           Creation date of the article (when you first save the article, regardless of status)
 
-notextile.
-
 </div>
-txp_category {#sec2}
--------------
 
-The 'txp_category' table contains all the categories you create on the
-****[Categories](http://docs.textpattern.io/administration/content/categories-panel**)
-panel.
+## txp_category
 
-notextile.
+The `txp_category` table contains all the categories you create on the [Categories panel](http://docs.textpattern.io/administration/categories-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column   Type           Description
@@ -105,17 +94,11 @@ notextile.
   lft      integer        Used to maintain category hierarchy using the modified preorder tree traversal algorithm
   rgt      integer        Used to maintain category hierarchy using the modified preorder tree traversal algorithm
 
-notextile.
-
 </div>
-txp_css {#sec3}
---------
 
-The 'txp_css' table contains the style sheets created on the
-****[Styles](http://docs.textpattern.io/administration/presentation/styles-panel**)
-panel.
+## txp_css
 
-notextile.
+The `txp_css` table contains the style sheets created on the [Styles panel](http://docs.textpattern.io/administration/styles-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column   Type           Description
@@ -123,17 +106,11 @@ notextile.
   name     varchar(128)   Name of the style sheet
   css      text           Style sheet contents, base64 encoded for historical reasons (max 64kB)
 
-notextile.
-
 </div>
-txp_discuss {#sec4}
-------------
 
-The 'txp_discuss' table contains all the article comments output on the
-****[Comments](http://docs.textpattern.io/administration/content/comments-panel**)
-panel.
+## txp_discuss
 
-notextile.
+The `txp_discuss` table contains all the article comments output on the [Comments panel](http://docs.textpattern.io/administration/comments-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column      Type           Description
@@ -148,17 +125,11 @@ notextile.
   message     text           Comment message in HTML markup (max 64kB)
   visible     integer        Status (-1 = Spam, 0 = waiting for moderation, 1 = visible)
 
-notextile.
-
 </div>
-txp_discuss_ipban {#sec5}
--------------------
 
-The 'txp_discuss_ipban' table contains a list of all IP-numbers that
-have been banned from commenting by the person who moderates
-****[Comments](http://docs.textpattern.io/administration/content/comments-panel**).
+## txp_discuss_ipban
 
-notextile.
+The `txp_discuss_ipban` table contains a list of all IP-numbers that have been banned from commenting by the person who moderates [Comments](http://docs.textpattern.io/administration/comments-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column                Type           Description
@@ -168,17 +139,11 @@ notextile.
   date_banned          datetime       Date when the ban was imposed
   banned_on_message   integer        ID of the comment that caused the ban
 
-txp_discuss_nonce {#sec6}
--------------------
+</div>
 
-The 'txp_discuss_nonce' table is an important part of the spam
-protection in the commenting system. When the comment form is shown to
-the user, it contains a hidden variable (nonce) with a unique code. This
-code is valid for 10 minutes. If the comment form is submitted, the
-nonce is looked up in this table and must exist unused with a valid
-timestamp for the comment to be accepted.
+## txp_discuss_nonce
 
-notextile.
+The `txp_discuss_nonce` table is an important part of the spam protection in the commenting system. When the comment form is shown to the user, it contains a hidden variable (nonce) with a unique code. This code is valid for 10 minutes. If the comment form is submitted, the nonce is looked up in this table and must exist unused with a valid timestamp for the comment to be accepted.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column        Type          Description
@@ -188,17 +153,11 @@ notextile.
   used          integer       Has the nonce been used for submitting a comment (0 = no, 1 = yes). A nonce cannot be used twice.
   secret        varchar(32)   Random alphanumeric string of text (md5) used to vary the name of the comment message textarea field, making it harder for spammers to submit comments
 
-notextile.
-
 </div>
-txp_file {#sec7}
----------
 
-The 'txp_file' table contains information on all the files uploaded
-through textpattern. The files themselves are stored as normal files on
-disk instead of in the database.
+## txp_file
 
-notextile.
+The `txp_file` table contains information on all the files uploaded through Textpattern. The files themselves are stored as normal files on disk instead of in the database.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column        Type           Description
@@ -216,17 +175,11 @@ notextile.
   size          integer        File size in bytes
   author        varchar(255)   Login name of the author that added this file
 
-notextile.
-
 </div>
-txp_form {#sec8}
----------
 
-The 'txp_form' table contains all the forms, which are created on the
-****[Forms](http://docs.textpattern.io/administration/presentation/forms-panel**)
-panel.
+## txp_form
 
-notextile.
+The `txp_form` table contains all the forms, which are created on the [Forms panel](http://docs.textpattern.io/administration/forms-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column   Type          Description
@@ -235,21 +188,11 @@ notextile.
   type     varchar(28)   Form type: article, category, comment, file, link, misc or section
   Form     text          Contents of the form: HTML / Textpattern tags (max 64kB)
 
-notextile.
-
 </div>
-txp_image {#sec9}
-----------
 
-The 'txp_image' table contains information on all the images uploaded
-and managed in the
-****[Images](http://docs.textpattern.io/administration/content/images-panel**)
-panel. The image files are not actually stored in the database, they're
-stored as normal files on the web server in the */images* folder using
-the image ID as the filename (i.e. *1.png* for the main image or
-*1t.png* for the corresponding thumbnail).
+## txp_image
 
-notextile.
+The `txp_image` table contains information on all the images uploaded and managed in the [Images panel](http://docs.textpattern.io/administration/images-panel). The image files are not actually stored in the database, they're stored as normal files on the web server in the `/images` folder using the image ID as the filename (i.e. `1.png` for the main image or `1t.png` for the corresponding thumbnail).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column      Type           Description
@@ -268,17 +211,11 @@ notextile.
   thumb_w    integer        Thumbnail width in pixels
   thumb_h    integer        Thumbnail height in pixels
 
-notextile.
-
 </div>
-txp_lang {#sec10}
----------
 
-The 'txp_lang' table contains translations for the various built-in
-strings of text used on the public and administration sides of
-Textpattern.
+## txp_lang
 
-notextile.
+The `txp_lang` table contains translations for the various built-in strings of text used on the public and administration sides of Textpattern.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column    Type          Description
@@ -290,18 +227,11 @@ notextile.
   data      tinytext      Translation of the language string
   lastmod   timestamp     Modification data and time of the language string
 
-notextile.
-
 </div>
-txp_link {#sec11}
----------
 
-The 'txp_link' table contains all the links and related information
-created on the
-****[Links](http://docs.textpattern.io/administration/content/links-panel**)
-panel.
+## txp_link
 
-notextile.
+The `txp_link` table contains all the links and related information created on the [Links panel](http://docs.textpattern.io/administration//links-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column        Type           Description
@@ -315,19 +245,11 @@ notextile.
   description   text           Description of the link (typically plain text)
   author        varchar(255)   Login name of the author that created this link
 
-notextile.
-
 </div>
-txp_log {#sec12}
---------
 
-The 'txp_log' table contains log entries of page requests (visits) to
-your website, which are output on the ****[Visitor
-logs](http://docs.textpattern.io/administration/admin/visitor-logs-panel**)
-panel. Depending on your preferences, nothing is logged, just referers
-or all requests. Old log entries are removed automatically.
+## txp_log
 
-notextile.
+The `txp_log` table contains log entries of page requests (visits) to your website, which are output on the [Visitor logs panel](http://docs.textpattern.io/administration/visitor-logs-panel). Depending on your preferences, nothing is logged, just referrers or all requests. Old log entries are removed automatically.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column   Type           Description
@@ -341,17 +263,11 @@ notextile.
   method   varchar(16)    HTTP Request method: typically POST or GET
   ip       varchar(16)    IP-number of the computer that requested the page
 
-notextile.
-
 </div>
-txp_page {#sec13}
----------
 
-The 'txp_page' table contains all the page templates you create on the
-****[Pages](http://docs.textpattern.io/administration/presentation/pages-panel**)
-panel.
+## txp_page
 
-notextile.
+The `txp_page` table contains all the page templates you create on the [Pages panel](http://docs.textpattern.io/administration/pages-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column       Type           Description
@@ -359,18 +275,11 @@ notextile.
   name         varchar(128)   Name of the template
   user_html   text           Template contents: HTML / Textpattern tags (max 64kB)
 
-notextile.
-
 </div>
-txp_plugin {#sec14}
------------
 
-The 'txp_plugin' table contains all the plugins you have installed,
-displayed on the
-****[Plugins](http://docs.textpattern.io/administration/admin/plugins-panel**)
-panel.
+## txp_plugin
 
-notextile.
+The `txp_plugin` table contains all the plugins you have installed, displayed on the [Plugins panel](http://docs.textpattern.io/administration/plugins-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column          Type                  Description
@@ -389,16 +298,11 @@ notextile.
   load_order     integer               Order in which this plugin will be loaded (1 = first, 9 = last). By default set to 5, which should not be changed unless you know what you're doing
   flags           smallint (unsigned)   16-bit value which signals the presence of optional capabilities to the core plugin loader. The four high-order bits 0xf000 are available for private use.[^2]
 
-notextile.
-
 </div>
-txp_prefs {#sec15}
-----------
 
-The 'txp_prefs' table contains all the administration preferences
-(basic, advanced, and hidden).
+## txp_prefs
 
-notextile.
+The `txp_prefs` table contains all the administration preferences.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column       Type           Description
@@ -412,17 +316,11 @@ notextile.
   position     integer        Display position of this preference among others within the same event on the Preferences tab
   user_name   varchar(64)    login name of the user to whom this preference applies (by default set to an empty string to indicate that the preference is not bound to a specific user)
 
-notextile.
-
 </div>
-txp_section {#sec16}
-------------
 
-The 'txp_section' table contains all the sections you create on the
-****[Sections](http://docs.textpattern.io/administration/presentation/sections-panel**)
-panel.
+## txp_section
 
-notextile.
+The `txp_section` table contains all the sections you create on the [Sections panel](http://docs.textpattern.io/administration/sections-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column          Type           Description
@@ -436,18 +334,11 @@ notextile.
   searchable      integer        Are articles in this section searchable? (0 = no, 1 = yes)
   title           varchar(255)   Section title
 
-notextile.
-
 </div>
-txp_users {#sec17}
-----------
 
-The 'txp_users' table contains information for all users, as displayed
-on the
-****[Users](http://docs.textpattern.io/administration/admin/users-panel**)
-panel.
+## txp_users
 
-notextile.
+The `txp_users` table contains information for all users, as displayed on the [Users panel](http://docs.textpattern.io/administration/users-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column         Type           Description
@@ -461,18 +352,8 @@ notextile.
   last_access   datetime       Date and time when the user last logged in by entering a valid username and password combination
   nonce          varchar(64)    Unique identifier used for cookie authentication (do NOT touch this in plugins!)
 
-notextile.
-
 </div>
 
-[^1]: The size limits shown in the *Description* for various table
-    columns (e.g. the *Body* column of the 'textpattern' table) may
-    differ slightly from the actual size limits found in the tables
-    created by Textpattern during installation (when a column is used in
-    multiple tables, the smallest size is used). You should consider the
-    limits indicated here as authoritative. When in doubt, ask a
-    developer on the forum.
+[^1]: The size limits shown in the *Description* for various table columns (e.g. the `Body` column of the `textpattern` table) may differ slightly from the actual size limits found in the tables created by Textpattern during installation (when a column is used in multiple tables, the smallest size is used). You should consider the limits indicated here as authoritative. When in doubt, ask a developer on the forum.
 
-[^2]: See [Plugin lifecycle management and
-    preferences](http://docs.textpattern.io/development/#sec9) for more
-    info.
+[^2]: See [Plugin lifecycle management and preferences](http://docs.textpattern.io/development/) for more info.
