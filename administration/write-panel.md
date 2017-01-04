@@ -19,20 +19,27 @@ On this page:
   * [Article view](#article-view)
 * [Panel layout: secondary area](#panel-layout-secondary-area)
   * [Publish/Save button](#publishsave-button)
+  * [Write panel articles navigation](#write-panel-articles-navigation)
   * [Sort and display](#sort-and-display)
   * [Date and time](#date-and-time)
+  * [Meta](#meta)
+  * [Comment options](#comment-options)
+  * [Article image](#article-image)
+  * [Custom fields](#custom-fields)
+  * [Advanced options](#advanced-options)
+  * [Text formatting help](#text-formatting-help)
+  * [Recent articles](#recent-articles)
+* [Final notes to be aware of](#final-notes-to-be-aware-of)
 
 ## Panel Layout: main editing area
 
 The contents of the Write panel are arranged in two columns (see Figure 1). The items in each region are discussed in in the following sections, beginning with the first column, which is the *main editing area*.
 
-<img alt="Figure 1" src="http://docs.textpattern.io/img/write-panel-main-editing-area.png">
-
 The first column of the Write panel is where the main creating, drafting and editing of your article takes place. There are four components of this region - three that constitute an article itself, and one that allows different ways of viewing that article as you draft/edit it. They are described below (it should be noted that you must have content in at least one of the article content fields - **Title**, **Body**, or **Excerpt** - before you can save an article draft, but you do not need to have all fields filled).
 
 ### Title
 
-This field is simply where you type the _title_ (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e. HTML or Textile, formatting will be added by an article form (see [Form templates](http://docs.textpattern.io/themes/form-templates-explained)). The Textpattern tag that is used to output the title of articles is:
+This field is simply where you type the *title* (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e. HTML or Textile, formatting will be added by an article form (see [Form templates](http://docs.textpattern.io/themes/form-templates-explained)). The Textpattern tag that is used to output the title of articles is:
 
 ~~~ html
 <txp:title />
@@ -42,7 +49,7 @@ See the [title tag](http://docs.textpattern.io/tags/title) documentation for usa
 
 ### Body
 
-This large field is where the article is actually written (or pasted, if you prefer drafting your articles in another text editor). The _Article View_ (see below) works in combination with this field. The primary article tag that is used to output the body of articles is:
+This large field is where the article is actually written (or pasted, if you prefer drafting your articles in another text editor). The [Article view](#article-view) works in combination with this field. The primary article tag that is used to output the body of articles is:
 
 ~~~ html
 <txp:body />
@@ -72,7 +79,7 @@ At the top of the main editing area are three vertical tabs labeled 'Text', 'HTM
 * **HTML**: This tab will show you what your article looks like in HTML format, assuming you have used HTML or Textile to do any formatting. If you have, you will see the resulting HTML syntax incorporated in your text. You cannot do any editing in this view, it is for previewing your HTML work-in-progress only.
 * **Preview**: This tab will show you what your text will look like (whether you used HTML or Textile) once it is live on the Web. You cannot do any editing in this view, it is for previewing your work-in-progress only.
 
-As you write or edit an article, you may choose to do so using Textile, or you may want to add a single image to the article before posting. The *options* in the left column provide help in these and other areas, so we will go over those next.
+As you write or edit an article, you may choose to do so using Textile, or you may want to add a single image to the article before posting. The options in the left column provide help in these and other areas, so we will go over those next.
 
 ## Panel Layout: secondary area
 
@@ -80,45 +87,57 @@ The second column of the Write panel provides options for editing as well as con
 
 ### Publish/Save button
 
-The first thing to be aware of has to do with the button that publishes/saves your article and settings. Basically, there are two button labels you will see when working in the write panel; 'Publish' (new article state) and 'Save' (existing article state). When drafting a new article, the button will read as _Publish_. This might be a bit confusing because the word _publish_ would suggest your article is going directly live to the world when you click this button; however, that will only be true if you set the article's status to be either _Live_ or _Sticky_, as already discussed earlier. If this was a new article, and you changed your status to draft (for example), then this button would still read as 'Publish' (even though you were just saving a draft), and not go live to the world. Basically, the _Publish_ label is the default label.
+The first thing to be aware of has to do with the button that publishes/saves your article and settings. Basically, there are two button labels you will see when working in the write panel; 'Publish' (new article state) and 'Save' (existing article state). When drafting a new article, the button will read as *Publish*. This might be a bit confusing because the word 'Publish' would suggest your article is going directly live to the world when you click this button; however, that will only be true if you set the article's status to be either *Live* or *Sticky*, as already discussed earlier. If this was a new article, and you changed your status to draft (for example), then this button would still read as 'Publish' (even though you were just saving a draft), and not go live to the world. Basically, the 'Publish' label is the default label.
 
-Once you publish an article for the first time, no matter what the status (_Draft_, _Live_, etc.), then the next time you edit your article in the write panel, the button will change to read as 'Save'. The _Save_ button will behave exactly the same as the _Publish_ button, despite whatever article status you happen to want to select (if not _Live_).
+Once you publish an article for the first time, no matter what the status (*Draft*, *Live*, etc.), then the next time you edit your article in the write panel, the button will change to read as 'Save'. The Save button will behave exactly the same as the 'Publish' button, despite whatever article status you happen to want to select (if not *Live*).
 
-When publishing or saving an article, Textpattern gives a feedback in the _message area_. When an article will be public (live or sticky), message reads "Article posted." - when another Status (Draft, Hidden, Pending) is active, message is "Article saved as _status mode_.". Sometimes there will be an additional info and need to modify something - most likely dealing with an identical URL, e.g. "Article posted. The same URL-only title is used by 2 different articles.".
+When publishing or saving an article, Textpattern gives a feedback in the *message area*. When an article will be public (live or sticky), message reads "Article posted." - when another Status (Draft, Hidden, Pending) is active, message is "Article saved as *status mode*.". Sometimes there will be an additional info and need to modify something - most likely dealing with an identical URL, e.g. "Article posted. The same URL-only title is used by 2 different articles.".
+
+### Write panel articles navigation
+
+This region only appears when you work on articles you have already saved, as follows:
+
+There is a link 'Create new'. It will abandon all unsaved edits of the current article and open a new empty Write panel.
+
+There is a link 'Duplicate'. It will create a duplicate of the current article and open a new Write panel to allow you yo edit the duplicate further.
+
+There is a link 'View'. It will open the public-side view of the current article in a new browser window.
+
+Two navigation buttons - *Previous* and *Next* (when applicable) - let you navigate from one article (in the article catalogue) to another without having to leave the Write panel (another option is to select articles from under the [Recent articles](#recent-articles) link on the right side of the panel, as discussed below. The navigation buttons will rotate through your articles catalogue from the reference point of the article you happen to be viewing at the time. When you click the previous button you will move to the article that is one above the one you are at in the catalogue. When you click the next button you will move down one article in your catalogue.
 
 ### Sort and display
 
 #### Status
 
-Public (published) or Private (not published): The first and most important publishing control is the article _status_; a series of options for indicating the status of your article. If you select _Draft_, _Hidden_ or _Pending_, your article will not be visible online, but if you select _live_ or _sticky_ it will be visible. The specific function of each status mode is described in following sections.
+Public (published) or Private (not published): The first and most important publishing control is the article _status_; a series of options for indicating the status of your article. If you select *Draft*, *Hidden* or *Pending*, your article will not be visible online, but if you select *Live* or *Sticky* it will be visible. The specific function of each status mode is described in following sections.
 
-Status assignment depends on the _Privileges_ of a user. Depending on your site's publishing objectives, or number of contributors, not every user may have the same privileges, as set in the "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users panel. If multiple contributors support a site and different roles are set, it may be that some users will only be able to choose a subset of these status modes.
+Status assignment depends on the *Privileges* of a user. Depending on your site's publishing objectives, or number of contributors, not every user may have the same privileges, as set in the "users":/home/www/zendstudio/dokuwiki/bin/doku.php?id=users panel. If multiple contributors support a site and different roles are set, it may be that some users will only be able to choose a subset of these status modes.
 
 ##### Draft
 
-The _Draft_ status means pretty much what it implies: your article is not finished, it is a draft. Select this mode if you are starting an article (or revising an existing article) but you do not expect to finish it in one sitting. By selectng draft your article will be saved to the database, but it will not be made live to the world. You can come back anytime to work on the draft article, and change the status when you are ready.
+The *Draft* status means pretty much what it implies: your article is not finished, it is a draft. Select this mode if you are starting an article (or revising an existing article) but you do not expect to finish it in one sitting. By selectng draft your article will be saved to the database, but it will not be made live to the world. You can come back anytime to work on the draft article, and change the status when you are ready.
 
 ##### Hidden
 
-The _Hidden_ status might seem a bit odd, but it does have a purpose - think of it as a gaff hook to pull a bad actor off stage; in this case a 'bad' (of course it needn't be bad) article offline. In Textpattern, the Hidden status is a way to pull a live article from being viewable to the world without deleting it so that it might be revamped (or held in limbo) for an *undetermined* amount of time (or until a decision is made as to whether or not is should just be deleted). While _Draft_ is used as a document status for _revision control_ and _publishing workflow_, _Hidden_ is merely a quick way to pull an article out of circulation. Note: If you have a _determined_ time period for an article to be public, it might be better to set it “Live” and use _Publish date_ and _Expire date_ as needed.
+The *Hidden* status might seem a bit odd, but it does have a purpose - think of it as a gaff hook to pull a bad actor off stage; in this case a 'bad' (of course it needn't be bad) article offline. In Textpattern, the Hidden status is a way to pull a live article from being viewable to the world without deleting it so that it might be revamped (or held in limbo) for an *undetermined* amount of time (or until a decision is made as to whether or not is should just be deleted). While *Draft* is used as a document status for revision control and publishing workflow, *Hidden* is merely a quick way to pull an article out of circulation. **Note:** If you have a *determined* time period for an article to be public, it might be better to set it 'Live' and use 'Publish date' and 'Expire date' as needed.
 
 ##### Pending
 
-The status of _Pending_ is primarily intended for _versioning activities_ - for example where multiple contributors are working on the same article, or where someone can finish an article, but where the article can _only be published_ by an authorized user with a particular user role. 'Pending' is the final Status that can be assigned by 'Freelancer' and 'Designer' - it indicates, that an authorized user may start reviewing, editing and publishing it.
+The status of *Pending* is primarily intended for versioning activities - for example where multiple contributors are working on the same article, or where someone can finish an article, but where the article can *only be published* by an authorized user with a particular user role. 'Pending' is the final Status that can be assigned by 'Freelancer' and 'Designer' - it indicates, that an authorized user may start reviewing, editing and publishing it.
 
 As long as the article is in one of Draft, Hidden, or Pending mode, changes made to its title are assigned to its URL-only title. If you, however, gave the article intentionally a URL-only title thats different from the article's title, this field remains untouched.
 
 ##### Live
 
-A _Live_ article status means that when you click the 'Publish' button (all new articles will use a button that reads 'Publish', after that, the button will read 'Save') the article will be posted for the world to see, so you generally want your article in question to be pretty much done if you select this mode. (This status and the next one, _sticky_, are the only two publicly-viewable modes.) However, you can always unpublish an article that has been made live by coming back to the Write panel and selecting the _Hidden_ status above (or deleting it altogether).
+A *Live* article status means that when you click the 'Publish' button (all new articles will use a button that reads 'Publish', after that, the button will read 'Save') the article will be posted for the world to see, so you generally want your article in question to be pretty much done if you select this mode. (This status and the next one, *Sticky*, are the only two publicly-viewable modes.) However, you can always unpublish an article that has been made live by coming back to the Write panel and selecting the *Hidden* status above (or deleting it altogether).
 
-For those privileges who have the rights to assign _Live_, this button will be selected by default whenever you start a new article. 'Freelancer' and 'Designer' aren't privileged to assign 'Live'. Their articles have to be published by higher privileges. Once published they cannot modify even own articles any longer.
+For those privileges who have the rights to assign *Live*, this button will be selected by default whenever you start a new article. 'Freelancer' and 'Designer' aren't privileged to assign 'Live'. Their articles have to be published by higher privileges. Once published they cannot modify even own articles any longer.
 
 ##### Sticky
 
-A _Sticky_ article is also considered 'live'; however, it won't show up with your other live articles in normal article flow (such as those output with `<txp:article />`), nor will it appear in any article output lists you might have. The sole purpose of making an article sticky is to give it the status (or rather the appearance) of being static on a page. The sticky status is intended for things like 'about' pages, articles that are pinned to the top of a page, or snippets of text that are displayed on pages outside the regular flow of articles.
+A *Sticky* article is also considered 'live'; however, it won't show up with your other live articles in normal article flow (such as those output with `<txp:article />`), nor will it appear in any article output lists you might have. The sole purpose of making an article sticky is to give it the status (or rather the appearance) of being static on a page. The sticky status is intended for things like 'about' pages, articles that are pinned to the top of a page, or snippets of text that are displayed on pages outside the regular flow of articles.
 
-Same privilege restrictions apply for 'Freelancer' and 'Designer' as in _Live_.
+Same privilege restrictions apply for 'Freelancer' and 'Designer' as in *Live*.
 
 To implement a sticky article you need to do two things:
 
@@ -141,9 +160,9 @@ Generally speaking, what the snippet of code above is saying is: "if an article 
 
 #### Section
 
-In Textpattern each article must be assigned to a _Section_ (see @@Sections@@). This control provides a drop-down menu to select the Section that you want. If you need to create or modify a section, you can get to the Sections panel using the 'Edit' link.
+In Textpattern each article must be assigned to a 'Section' (see @@Sections@@). This control provides a drop-down menu to select the Section that you want. If you need to create or modify a section, you can get to the Sections panel using the 'Edit' link.
 
-For a new article the _default section_ is automatically preselected. You can override this assignment by selecting another Section of your choosing (for saved articles the assigned section will be selected and displayed in the drop-down menu).
+For a new article the *default section* is automatically preselected. You can override this assignment by selecting another Section of your choosing (for saved articles the assigned section will be selected and displayed in the drop-down menu).
 
 There is a Sections provided in a default install of Textpattern: **Article**, which here is the 'default section' mentioned above; it is used for Textpattern's base article flow. This section is simply provided because it is often desired in a website and the folks at Textpattern are saving you a small step by creating it for you; you can use it (though you may have to modify settings depending on what you want) or delete it - it's up to you!
 
@@ -151,125 +170,105 @@ Sections basically control in what area of your website your article will be dis
 
 #### Category
 
-This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an 'Edit' link. Assigning categories of course only works if _there is_ at least one article category in the @@categories panel@@ (there are three sample ones in a default install). The 'Edit' link will open the Categories panel, where you can create or edit categories.
+This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an 'Edit' link. Assigning categories of course only works if *there is* at least one article category in the [Categories administration panel](http://docs.textpattern.io/administration/categories-panel) (there are three sample ones in a default install). The 'Edit' link will open the Categories panel, where you can create or edit categories.
 
-The drop-down menus will both list _all_ categories by their _title_. This basically allows you to put an article in up to two different categories, which you can then manipulate later according to your planned site architecture and content presentation (such level of discussion is out of scope here). For saved articles this control will show existing category assignments.
+The drop-down menus will both list *all* categories by their *title*. This basically allows you to put an article in up to two different categories, which you can then manipulate later according to your planned site architecture and content presentation (such level of discussion is out of scope here). For saved articles this control will show existing category assignments.
 
 ### Date and time
 
-This part might be considered two _different_ functions: Publish date/time and Expire date/time.
+This part might be considered two *different* functions: Publish date/time and Expire date/time.
 
 #### Publish date/time
 
-By default, at the moment of _opening the Write panel_ Textpattern adds the current date and time to the text boxes provided, thus marking the beginning of work. Unless you specifically indicate a different date and time this time will be saved when publishing the article, thus documenting the beginning of your work. If you rather want the current time _when finally publishing_ (or re-publishing) the article ('Live' and public), then you should mark the check box 'Set timestamp to now' (saved: 'Reset time to now') before you click 'Publish' or 'Save' in order to set the article public. This option will always establish the date and time at the moment you click the 'Publish' or 'Save' button as the article's publish-timestamp, no matter what status you give it.
+By default, at the moment of *opening the Write panel* Textpattern adds the current date and time to the text boxes provided, thus marking the beginning of work. Unless you specifically indicate a different date and time this time will be saved when publishing the article, thus documenting the beginning of your work. If you rather want the current time *when finally publishing* (or re-publishing) the article ('Live' and public), then you should mark the check box 'Set timestamp to now' (saved: 'Reset time to now') before you click 'Publish' or 'Save' in order to set the article public. This option will always establish the date and time at the moment you click the 'Publish' or 'Save' button as the article's publish-timestamp, no matter what status you give it.
 
-To change your article's date and time value to _something other than the current time_, leave the aforementioned box unchecked and type in the date and time you want in the 'Publish date' and 'Publish time' fields provided. If the time is in the future and the Status is 'Live', the article will automatically be published at the given time.
+To change your article's date and time value to something other than the current time_, leave the aforementioned box unchecked and type in the date and time you want in the 'Publish date' and 'Publish time' fields provided. If the time is in the future and the Status is 'Live', the article will automatically be published at the given time.
 
 If you are interested in documenting the time when an article has been originally published (whether by its true creating time or by an arbitrary time of first publishing), you shouldn't update the timestamp to 'now' when modifying. The timestamp defines the order of articles when an article list is created by publishing time - a change thus will reflect in the sequence of articles. If you nevertheless want to indicate a 'last modified' date, you can use the [modified](http://docs.textpattern.io/tags/modified) tag in your Article type [Form templates](http://docs.textpattern.io/themes/form-templates-explained).
 
-If you need the timestamp for publishing schedules apart from marking an origin, you need to indicate the origin otherwise: If you do _not_ modify after your 'origin' date, you could use the [modified](http://docs.textpattern.io/tags/modified) tag as an indicator. Else you could provide a custom field (e.g. 'first_published') for that task.
+If you need the timestamp for publishing schedules apart from marking an origin, you need to indicate the origin otherwise: If you do *not* modify after your 'origin' date, you could use the [modified](http://docs.textpattern.io/tags/modified) tag as an indicator. Else you could provide a custom field (e.g. 'first_published') for that task.
 
 #### Expire date/time
 
 In the same way you can set a deliberate publishing date/time for an article, you can also set a time when it will expire and thus vanish (or unpublish) from particular page or the whole website - depending on your site's setup. Using expire-preferences and a set of expire-tags you can achieve a sophisticated way of publishing and removing articles though at the same time keeping them active for permanent links or an archive.
 
-### Textile help
+### Meta
 
-See (2). Since Textile is built into Textpattern, and since it is so useful for drafting articles without having to know any HTML at all, a link is provided here to assist article authors with some quick-reference to basic Textile. “Textile help” contains a short reference list of common Textile syntax (see Figure 4).
+#### URL-only Title
 
-Each Textile item shown is followed by a little brown question mark - “?” - symbolizing a help reference for that item (see Figure 4, 2a); when clicked, a pop-up window will appear with complete details about how to use the particular Textile syntax and what it will produce. For example, see Figure 5 for what appears when the help is clicked for the “header: *hn*.” item.
+The URL-only title field ('URL' meaning *Uniform Resource Locator*), is a very handy feature that allows you to modify the [Permalink](https://en.wikipedia.org/wiki/Permalink) URL for the article as it would appear, for example, in the the address bar of a web browser if you were using 'Clean URLs'. This is particularly useful if the title of your article uses non-ASCII characters, such as what might be involved with certain languages.
 
-At the bottom of both the expanded Textile Help list (Figure 4, 2b) and the pop-up help (Figure 5) there is another link called “_More_” and “_More information_,” respectively, which leads to the Textile reference site ("txstyle.org":http://textpattern.com/textile-sandbox) where complete (and advanced) information about Textile formatting can be found. Note also at the very bottom of the pop-up help window (Figure 5) there is a search feature for searching all information in the entire built-in Textpattern help.
+If you leave this field blank, the URL title will be generated from the actual article title, which is recommended for URL health reasons.
 
-### Advanced Options
+For interdependencies between article status and URL-only title see the [Pending](#pending) status explanation above.
 
-See (3). The second toggle-link in the left column - _Advanced Options_ - contains a number of extended options for the particular article being edited (see Figure 6). They are described in detail here:
+#### Description
 
-The advanced options column remembers its open/close state across sessions via cookie.
+The Description text area allows you to provide a concise description of the article. This might be used to display an SEO-friendly meta description for search engines (using the [meta_description](http://docs.textpattern.io/tags/meta_description) tag) or for providing a shorthand explanation of the article content in search results perhaps (in a similar fashion to using the [Excerpt](#excerpt) text area if you are already utilising that field for another purpose).
 
-#### Article and Excerpt Markup
+#### Keywords
 
-See (3 a+b). There are two options regarding Textile-markup: _Article Markup_ (for the _body_) and _Excerpt Markup_ (for the excerpt). By default _full_ Textile-markup is turned on by _Use Textile_. You can turn off _all_ markup by choosing “Leave text untouched”. If you want a minimum of comfort you can choose _Convert linebreaks_ - single linebreaks will be converted to linebreaks and double linebreaks will get paragraphs.
+The Keywords text area allows you to specify a comma-separated list of words that relate to your article. This list might be used to generate a list of keywords for search engines (using the [meta_keywords](http://docs.textpattern.io/tags/meta_keywords) tag). You may also use keywords to help locate articles later by essentially 'tagging' your articles with related words so that - when searching within Textpattern - you can more easily find what you are looking for. To add keywords, simply type them into the text field provided and separate them with a comma.
 
-#### Override Form
+### Comment options
 
-See (3 c). The option “Override Form” offers the possibility that single articles may use a different _Form_ than the overall form specified. Let's look at an example for a possible use of this.
+**Note:** The Comment options region in the Write panel is actually a second-level setting for managing comments at *per article* level; you should have already configured your settings for first-level (site-level) comment management, which is handled in the @@Preferences administration panel@@ at 'Publish' and 'Comments'. There you will find different Comments settings that need your consideration about how to handle comments for all articles in your site by default. If the preference 'Accept comments?' is set to 'No', then  the Comment options section will not appear in the Write panel. Two of the settings - 'On by default?' and 'Default invite' - will determine the defaults in the Comments control at article level. Here, as described below, you can adjust the behaviour as you desire for a particular article.
 
-In your blog, you normally publish articles which are pure text. So your default form contains only the tags for title, body etc. On every first day of the month, however, you publish a photo of your garden. For this, you need the "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image tag in your form. So you create a form called “garden_image” which, among other tags, contains "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image. Whenever you want to publish a photo along with your text, you choose “Override form” and then “garden_image” from the dropdown list.
+#### On/Off
 
-This way, just this article will use the form “garden_image” for being displayed whereas all other articles will continue to use the default form.
+With a pair of on/off radio buttons you either accept or deny comments for the given article.
 
-### Custom Fields
+#### Invitation
 
-Custom fields are "defined in Advanced preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences#custom_fields, which then makes them available for use here in the left column of the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever tag constructs you create using the "custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=custom_field (and possibly the "if_custom_field":/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_custom_field) tag(s).
+The Invitation field that allows you to customize the text for the link that users will see if comments are 'on'.
 
-h5(#keywords). Keywords
+The comment link itself will lead to the location in your site where a visitor can actually add a comment to your article. By default the link text is "Comment", but other possibilities might include: "Leave a comment…", "Speak up!", "Respond", etc. - whatever you want. If you choose to have a single invitation for use with all of your articles then it is easiest to just set that value in your site-level Comments settings in the @@Preferences administration panel@@.
 
-See (3 e). The next option, _Keywords_, allows you to specify a comma-separated list of words that relate to your article. This list might be used to generate a list of keywords for search engines (using the "meta_keywords":/home/www/zendstudio/dokuwiki/bin/doku.php?id=meta_keywords tag). You may also use keywords to help locate articles later by essentially 'tagging' your articles with related words so that - when searching within Textpattern - you can more easily find what you are looking for. To add keywords, simply type them into the text field provided and separate them with a comma.
+#### Article image
 
-#### Article Image
-
-See (3 f). The _Article image_ option enables associating one or more images with an article, as opposed to entering the image into the article itself, and is used in conjunction with "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image. This allows images to appear in the same place across many articles, yet still be easily changed later.
+The Article image option enables associating one or more images with an article, as opposed to entering the image into the article itself, and is commonly used in conjunction with the [article_image](http://docs.textpattern.io/tags/article_image) tag. This allows images to appear in the same place across many articles, yet still be easily changed later.
 
 This feature could be used to power:
 
 * A photoblog, where a photo or gallery of shots is associated with an article, which might contain details about where the images were taken, or what kind of equipment was used to take it.
 * A portfolio, where an illustration or a screenshot of a website is associated with an article, which contains details about the project or the client involved.
-* A news site, where each article has, optionally, one main image that is always placed at the top of the article, and maybe other images used throughout the text (you can use the _offset_ attribute of the "images":/home/www/zendstudio/dokuwiki/bin/doku.php?id=images tag to skip images you have already displayed).
+* A news site, where each article has, optionally, one main image that is always placed at the top of the article, and maybe other images used throughout the text (you can use the `offset` attribute of the [images](http://docs.textpattern.io/tags/images) tag to skip images you have already displayed).
 
 There are two ways to assign an image to an article:
 
-1. By ID (as it appears in the [Images administration panel](http://docs.textpattern.io/administration/images-panel); this only works for images managed through the Textpattern *Images* panel).
-2. By absolute URL to the image, such as `/images/imagefile.png`.
+1. By ID (as it appears in the [Images administration panel](http://docs.textpattern.io/administration/images-panel); this only works for images managed through the Textpattern Images administration panel).
+2. By an absolute URL to the image, such as `/images/imagefile.png`.
 
-Once the image is associated with an article, "article_image":/home/www/zendstudio/dokuwiki/bin/doku.php?id=article_image is used to display it by placing this tag within the article "Form":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#form being used.
+Once the image is associated with an article, [article_image](http://docs.textpattern.io/tags/article_image) is used to display it by placing this tag within 'article' type [Form templates](http://docs.textpattern.io/themes/form-templates-explained).
 
-h5(#url-only_title). URL-only Title
+### Custom fields
 
-See (3 g). The last advanced option, _URL-only title_ ('URL' meaning _Uniform Resource Locator_), is a very handy feature that allows you to modify the "Permalink":/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#permalink URL for the article as it would appear, for example, in the the address bar of a Web browser if you were using Clean URLs. This is particularly useful if the title of your article uses non-ascii characters, such as what might be involved with certain languages.
+Custom fields are defined in the @@Preferences administration panel@@ custom fields section, which then makes them available for use here in the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever tag constructs you create using the [custom_field](http://docs.textpattern.io/tags/custom_field) (and possibly the [if_custom_field](http://docs.textpattern.io/tags/if_custom_field)) tag(s).
 
-In addition to modifying the title as it appears in the URL, this will also be the title used in the pop-up dialogue box that appears when you hover over the article title on a Web page (so long as it is displayed as a link). If you leave this field blank, the URL title will be generated from the actual article title, which is recommended for URL health reasons.
+### Advanced options
 
-For interdependencies between article status and URL-only title read the grey box "here":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write#pending.
+Advanced Options contains extended options for the particular article being edited.
 
-h4(#recent_articles). Recent Articles
+#### Article markup and Excerpt markup
 
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-6-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-6-en.png
+There are two options regarding markup: 'Article markup' (for the *Body* text area) and 'Excerpt markup' (for the *Excerpt* text area). By default *full* Textile-markup is turned on by 'Use Textile'. You can turn off *all* markup by choosing 'Leave text untouched'. If you want a minimum of comfort you can choose *Convert linebreaks* - single linebreaks will be converted to linebreaks and double linebreaks will get paragraphs. If you have installed alternative text filters in addition to Textile, they will also be available options here.
 
-See (4). The last option is _Recent Articles_, and there's not much to say about this option other than it toggles a list of titles for the last ten _most recently_ *modified* articles (new or edited). This makes it easier to move between articles you might want to work on without actually having to jump between the _write_ tab and the _articles_ tab (see "articles":/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles tab).
+#### Override form
 
-h3(sectionedit4#write_panel_right_column_-_publishing_controls). Write Panel Right Column - Publishing Controls
+The option 'Override form' offers the possibility that single articles may use a different Form template than the overall Form template specified. Let's look at an example for a possible use of this...
 
-Note: Especially if you like to save your work from time to time while not yet finished, you should take care of the article's *status*: By default it is “Live” - so using “Save” (or “Publish”) in an unfinished state without altering its status to _Draft_ (recommended) or _Hidden_ will make an article _public_ before its time. Pay attention!
+In your blog, you normally publish articles which are pure text. So your default form contains only the tags for title, body, etc. On every first day of the month however, you publish a photo of your garden. For this, you need the [article_image](http://docs.textpattern.io/tags/article_image) tag in your form. So you create a form called `garden_image` which, among other tags, contains [article_image](http://docs.textpattern.io/tags/article_image). Whenever you want to publish a photo along with your text, you choose 'Override form' and then `garden_image` from the dropdown list. This way, just this article will use the form `garden_image` for being displayed whereas all other articles will continue to use the default form.
 
-When you are done with writing or editing an article, particularly if it's a new article, you will want to make sure you have the various *controls* on the right side of the write panel configured appropriately. These regard *publishing* an article (or keep it unpublished) in various ways. They come in two portions: Controls you always need statically at the top (Figure 8) and a portion of optional controls which you can toggle using the “More”-Link (Figure 9).
+### Text formatting help
 
-h4(#panel_modenew_or_saved_posted_article). Panel Mode: New or Saved/Posted Article
+Depending on the text filters you have installed (i.e. the default Textile, Markdown, etc.) you can access a quick reference guide here showing the text formatting syntax for common text formatting (note this is *not* a comprehensive list of all formatting options).
 
-There are two different states for the right column _appearance_ depending on whether the article is _new_ (see Fig. 8 and 9) or already has been _saved_ before (see Fig. 10 near bottom). The settings themselves are much the same, so they will be explained as they appear for a new article, and differences pointed out in brackets (saved:_alternate_). Some additional elements we'll point out in “Write navigation” and “'Publish' or 'Save' Button”.
+### Recent articles
 
-There are essentially five different publishing controls to address (see Figures 8 and 9): Status, Sort and Display, Comments, Timestamp and Expires.
+The last option is 'Recent articles', and there's not much to say about this option other than it toggles a list of titles for the last ten *most recently modified* articles (new or edited). This makes it easier to move between articles you might want to work on without actually having to jump between the Write panel and the [Articles administration panel](http://docs.textpattern.io/administration/articles-panel).
 
-h4(#more). More
+## Final notes to be aware of
 
-Additional Controls Toggle See (7). There are more settings, which will be opened with the “More”-Link (7). You can toggle them by clicking on “More”.
+Especially if you like to save your work from time to time while not yet finished, you should take care of the article's *Status*: By default it is 'Live' (although you can change that setting in the @@Preferences administration panel@@) - so using 'Save' (or 'Publish') in an unfinished state without altering its status to 'Draft' (recommended) or 'Hidden' will make an article **public** before its time. Pay attention!
 
-h4(#comments). Comments
-
-*Important note:* The Comments control on the write panel is actually a second-level setting for managing comments at _per article_ level; you should have already configured your settings for first-level (site-level) comment management, which is handled in the "basic_preferences":/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences panel at “Publish” and “Comments”. There you will find different Comments settings that need your consideration about how to handle comments for all articles in your site by default. If _Publish_ “Accept comments” is “No”, no Comments control will appear in the Write panel. Two of the settings - “On by default?” and “Default invite” - will determine the defaults in the Comments control at article level. Here, as described below, you can adjust the behaviour as you desire for a particular article.
-
-_Comments_ "!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:pointer-comments.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:pointer-comments.png controls two things: With a pair of on/off radio buttons first you either accept or deny comments for the given article. Second is an “Invitation” field that allows you to customize the text for the link that users will see if comments are “on”.
-
-The comment link itself will lead to the location in your site where a visitor can actually add a comment to your article. By default the link text is “Leave Comment”, but other possibilities might include: “Let's hear it!”, “Speak Up”, “Respond”, “Got something to say?”, etc. - whatever you want. If you choose to have a single invitation for use with all of your articles then it is easiest to just set that value in your site-level _Comments_ settings in the Preferences panel.
-
-h4(#write_panel_navigation). Write Panel Navigation
-
-As described earlier, the right column changes _appearance_ a little bit when you work on articles you have already saved (Figure 10). Different labels have been marked above. There are a few additions described below.
-
-"!/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:write-8-en.png!":/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:write-8-en.png
-
-On the right side of the _title_ there is a new link “View”. It will open the public-side view of the current article in the same browser window.
-
-See (11 a). At the top of the right column there is a new link “Create new”. It will abandon all unsaved edits of the current article and open a new empty Write panel.
-
-See (11 b). Two navigation buttons - *previous* and *next* (when applicable) - let you navigate from one article (in the article catalogue) to another without having to leave the write panel. (Another option is to select articles from under the _Recent Articles_ link on the right side of the panel, as already discussed in an earlier section.) The navigation buttons will rotate through your articles catalogue from the reference point of the article you happen to be viewing at the time. When you click the previous button you will move to the article that is one above the one you are at in the catalogue. When you click the next button you will move down one article in your catalogue.
+When you are done with writing or editing an article, particularly if it's a new article, you will want to make sure you have the various controls on the secondary column of the Write panel configured appropriately. These regard *publishing* an article (or keep it unpublished) in various ways. They come in two portions: Controls you always need statically at the top and a portion of optional controls which you can use for further fine-tuning.
