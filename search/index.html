@@ -26,10 +26,10 @@ sitemap: false
 
         <!-- Search result template -->
         <script id="search-result" type="text/x-template">
-            <article>
-                <h3><a href="##Url##">##Title##</a></h3>
-                <p>##Excerpt##</p>
-                <p><a href="##Url##">Go to the full documentation...</a></p>
+            <article itemscope itemtype="http://schema.org/Article">
+                <h3 itemprop="name headline">##Title##</h3>
+                <p itemprop="description">##Excerpt##</p>
+                <p><a href="##Url##" itemprop="url">Go to the full documentation…</a></p>
             </article>
         </script>
 
