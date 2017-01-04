@@ -3,7 +3,7 @@ layout: landing
 category: Tags
 published: true
 title: Tag reference index
-description: A complete list of the Textpattern tags.
+description: A complete list of all the Textpattern tags available to use.
 tags:
 ---
 

@@ -2,7 +2,7 @@
 layout: default
 published: true
 title: Textpattern CMS user documentation
-description: How to install and use Textpattern CMS.
+description: Complete documentation on how to install and use the Textpattern Content Management System.
 search_omit: true
 ---
 
