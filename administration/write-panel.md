@@ -66,7 +66,7 @@ See the [excerpt tag](http://docs.textpattern.io/tags/excerpt) documentation for
 
 At the top of the main editing area are three vertical tabs labeled 'Text', 'HTML', and 'Preview'; these provide three different views of your article-in-progress, as described below:
 
-<img alt="Figure 2" src="http://docs.textpattern.io/img/write-panel-article-view.png">
+<img alt="Figure 2" src="http://docs.textpattern.io/img/write-panel-article-view.png" srcset="http://docs.textpattern.io/img/write-panel-article-view.png 1x, http://docs.textpattern.io/img/write-panel-article-view@2x.png 2x">
 
 * **Text**: This tab is active by default and is the one you actually draft your article in. The Text view works just like a regular text editor (not a word processor). To give your text formatting, you will have to know either Hypertext Markup Language (HTML), or use @@Textile@@. Textile is a remarkably simple text editing syntax that allows you to format text for the Web without having to know HTML (more about using Textile is provided in the section @@Textile help@@ below).
 * **HTML**: This tab will show you what your article looks like in HTML format, assuming you have used HTML or Textile to do any formatting. If you have, you will see the resulting HTML syntax incorporated in your text. You cannot do any editing in this view, it is for previewing your HTML work-in-progress only.
