@@ -1,68 +1,59 @@
-\\n[mininav_content_index](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index)
+---
+layout: document
+category: Administration
+published: true
+title: Articles panel
+description: The Articles panel shows a list of all your existing articles, together with some basic information on each.
+---
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-article.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-article.png)
+# Articles panel
 
-This panel will show a list of all your existing articles together with
-basic information (ID\#, Posted, Title, Section, Status and Author).
-Details can optionally be displayed. From this list you can
+This panel will show a list of all your existing articles together with basic information (Such as ID, Posted, Title, Author, etc.). Details can optionally be displayed. From this list you can:
 
--   open an article for editing.
--   perform changes on selected articles.
+1. Open an article for editing
+2. Perform batch changes on selected articles
 
-Because the article list can get pretty long, the Search function is the
-first thing to be seen at the top.
+On this page:
 
-#### Search function {#search_function}
+* [Search function](#search-function)
+* [List of articles](#list-of-articles)
 
-You can use the Search function to
+## Search function
 
--   **locate** an article directly by search phrase
--   or to **filter** the view on your articles by particular criteria,
-    thus reducing the number of articles in the resulting list.
-
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:articles-search-en.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:articles-search-en.png)
+Because the article list can get pretty long, a search function is available at the top of the list. You can use the Search function to locate an article directly by a search phrase or to filter the view on your articles by particular criteria, thus reducing the number of articles in the resulting list.
 
 The Search function has two components:
 
--   A drop-down-list to specify which area is to be searched
--   and a textarea for entering the search query.
+1. A text field for entering the search query
+2. A drop-down-list to specify which area is to be searched
 
-Query text entered in the textarea will be treated as a *complete
-phrase* (e.g. “time stamp” will find exactly that. Text containing only
-“time” or “stamp”, “time, stamp” or “timestamp” will not be in the
-results.). You don't need to wildcard query text at the beginning or the
-end (e.g. “time” will find “parttime”, “times”, “timestamp” as well).
-But you can use wildcard ? within a query.
+Query text entered in the textarea will be treated as a *complete phrase* (e.g. "time stamp" will find exactly that. Text containing only "time" or "stamp", "time, stamp" or "timestamp" will not be in the results).
 
-After entering your search criteria you start searching by clicking
-“Go”. As a result you will be given a new list of articles which meet
-the criteria.
+You don't need to wildcard query text at the beginning or the end (e.g. "time" will find "parttime", "times", "timestamp" as well). But you can use wildcard ? within a query.
+
+After entering your search criteria you start searching by clicking the Search button. As a result you will be given a new list of articles which meet the criteria.
 
 As a default the search will find entered text in the articles' title,
 body and excerpt. But you can do more refined searches by selecting
-another area to search in. The drop-down-list left from the textarea
-provides the following search criteria:
+another area to search in. The drop-down-list toggle button provides the following search criteria:
 
--   ID\#
--   Title, Body & Excerpt (default)
--   Section
--   Categories
--   Keywords
--   Status
--   Author
--   Article image
--   Posted
--   Modified
+* Search all (default)
+* ID
+* Title, body and excerpt
+* Section
+* Keywords
+* Categories
+* Status
+* Author
+* Article image
+* Posted
+* Modified
 
-Examples: You can search (or list) an article by its ID\# or date
-posted. You can list all articles of an author, you even don't need the
-full author ID. Choose “Author” and typing “adm” possibly is enough for
-the admin (provided no other author has “adm” in his ID). You can list
-all “Drafts” (choose “Status” and type “dr”).
+Examples: You can search (or list) an article by its ID number or date posted. You can list all articles of an author, you even don't need the full author ID. Choose 'Author' and typing "adm" possibly is enough for the admin (provided no other author has "adm" in his ID). You can list all 'Drafts' (choose 'Status' and type "dr").
 
-#### List of articles {#list_of_articles}
+## List of articles
 
-Okay, back to the list of articlesâ€¦ Each row is one article.
+Okay, back to the list of articles! Each row is one article.
 
 To explain the *columns* going across the top: (Note: The columns can be
 sorted. If you click the header of a column, it will sort the list of
@@ -141,13 +132,13 @@ For performing changes now you go to the drop-down-list “with selected”
 and choose the function you want to perform. The following changes are
 available:
 
--   Change section
--   Change Category1
--   Change Category2
--   Change status
--   Change comments
--   Change author
--   Delete
+* Change section
+* Change Category1
+* Change Category2
+* Change status
+* Change comments
+* Change author
+* Delete
 
 When selecting a “Change”-option you will get another drop-down-list
 below which will give you the values to choose from, e.g. the list of
@@ -156,9 +147,7 @@ you want to perform click “Go” to start the changes. A pop-up window
 will ask “Are you sure?” and then (if “yes”) the changes will be
 performed.
 
-#### Pages and Articles per page {#pages_and_articles_per_page}
-
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:articles-cataloguenavigatio.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:articles-cataloguenavigatio.png)
+## Pages and articles per page
 
 At the very bottom of the list you will find a pagination and links for
 next and previous pages if there are more pages. By default Textpattern
