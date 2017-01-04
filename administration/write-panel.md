@@ -147,13 +147,11 @@ To implement a sticky article you need to do two things:
 A code snippet might be something like this (though certainly not the only structure):
 
 ~~~ html
-<pre class="code">
-    <txp:if_article_list>
-        <txp:article form="myshortform" status="sticky" />
-    </txp:if_article_list>
+<txp:if_article_list>
+    <txp:article form="myshortform" status="sticky" />
+</txp:if_article_list>
 
-    <txp:article limit="5" />
-</pre>
+<txp:article limit="5" />
 ~~~
 
 Generally speaking, what the snippet of code above is saying is: "if an article list, display the sticky article using the form called `myshortform` - then underneath the sticky article, output regular article flow but only show the last five articles."
@@ -224,7 +222,7 @@ The Invitation field that allows you to customize the text for the link that use
 
 The comment link itself will lead to the location in your site where a visitor can actually add a comment to your article. By default the link text is "Comment", but other possibilities might include: "Leave a comment…", "Speak up!", "Respond", etc. - whatever you want. If you choose to have a single invitation for use with all of your articles then it is easiest to just set that value in your site-level Comments settings in the @@Preferences administration panel@@.
 
-#### Article image
+### Article image
 
 The Article image option enables associating one or more images with an article, as opposed to entering the image into the article itself, and is commonly used in conjunction with the [article_image](http://docs.textpattern.io/tags/article_image) tag. This allows images to appear in the same place across many articles, yet still be easily changed later.
 
