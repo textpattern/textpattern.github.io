@@ -85,21 +85,11 @@ and edit their account details too, including
 
 ### Site identity and default configurations {#site-identity-and-default-configurations .sectionedit4#site_identity_and_default_configurations}
 
-With your installation secure, and your password in place, you should
-set a few defaults that will influence the website's identity and
-base-line publishing behaviour. You do this in
-[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences),
-which is the default screen of the *Preferences* panel. The other two
-screens being
-[advanced_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
-and
-[language_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences),
-the latter you've already been to.
+With your installation secure, and your password in place, you should set a few defaults that will influence the website's identity and base-line publishing behaviour. You do this in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel) and [Languages administration panel](http://docs.textpattern.io/administration/languages-panel), the latter you've already been to.
 
 **Recommended reading:**
 
--   [basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
--   [advanced_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
+* [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel)
 
 ### Establishing site structure and design {#establishing-site-structure-and-design .sectionedit5#establishing_site_structure_and_design}
 
@@ -133,13 +123,8 @@ smd_bio/smd_user_manager in relation of user accounts)
 
 **Recommended reading:**
 
--   [rah_unlog_me](http://rahforum.biz/plugins/rah_unlog_me) (Plugin
-    that removes the administrators IP, and any others defined, so their
-    site visits don't show up in visitor logs. Result is a more
-    representative reflection of actual referrers that count.)
+* [rah_unlog_me](http://rahforum.biz/plugins/rah_unlog_me), a Plugin that removes the administrators IP, and any others defined, so their site visits don't show up in visitor logs. Result is a more representative reflection of actual referrers that count.)
 
-### Similar reading {#similar-reading .sectionedit10#similar_reading}
+### Similar reading
 
--   [Textpattern
-    quickstart](/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_quickstart:hello_world)
-
+* [Textpattern installation quickstart](http://docs.textpattern.io/installation/installing-textpattern)
