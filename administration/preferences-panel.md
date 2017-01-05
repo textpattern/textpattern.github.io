@@ -53,40 +53,14 @@ The 'Site slogan' is an optional site subheading, motto, or other quote for your
 
 ### Production status
 
-The production status provides a means for monitoring your site (or not)
-as you work. There are three options, and each is specific to a
-particular activity, as described below. (See the FAQ, [What does the
-production status setting
-do?](http://textpattern.com/faq/225/what-does-the-production-status-setting-do)
-for a similar explanation.)
+The 'Production status' choice defines the level of error reporting and diagnostic information provided by Textpattern. There are three options, as described below.
 
-**Live**: This mode is primarily intended for production (live)
-publishing; i.e. your site is designed and ready to go, and people on
-the Internet are visiting it. In this mode, no error reporting or
-[diagnostics](/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics)
-information will be sent to the page. Generally, “Live” mode is
-preferred, as it imposes the least overhead on the server. Furthermore,
-you certainly don't want sensitive error messages to be showing up on
-your live site. If your site is live to the world, always run it in live
-mode. If you need to “Test” or “Debug”, you should either do that in a
-secured directory or on a local server.
+**Live**: This mode is best suited production (live) Textpattern sites (i.e. your site is ready to serve pages to visitors) and uses fewest server resources. In 'Live' mode, no errors or diagnostics will be displayed to your visitors.
 
-**Testing**: This mode is primarily intended for the initial setup and
-design of a stable release of Textpattern. PHP error reporting on your
-live site will be visible, as will errors encountered in
-[Page](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages) templates
-and [forms](/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms), CSS,
-configuration settings (e.g. the Preferences panel), or installing or
-updating plugins.
-
-In Testing mode, PHP error and warning messages will be displayed to the
-user on public Web pages. Textpattern will attempt to warn about tag or
-logic errors encountered in page templates and forms. Browser caching is
-disabled. Performance information will be included in HTML comments at
-the bottom of every Textpattern page; including:
+**Testing**: This mode is best suited for the initial setup and design of a stable release of Textpattern. Any PHP errors and selected Textpattern warnings will be displayed on public pages. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page; including:
 
 -   the time it took the server to build the page (“Runtime”)
--   the number of MySQL queries executed
+-   the number of database queries executed
 -   approximate peak memory usage
 
 **Debugging**: This is mainly intended for diagnosing problems in
