@@ -17,6 +17,9 @@ On this page:
 
 * [Search function](#search-function)
 * [List of articles](#list-of-articles)
+  * [Columns](#columns)
+  * [Perform changes on selected articles](#perform-changes-on-selected-articles)
+* [Pages and articles listed per page](#pages-and-articles-listed-per-page)
 
 ## Search function
 
@@ -55,82 +58,45 @@ Examples: You can search (or list) an article by its ID number or date posted. Y
 
 Okay, back to the list of articles! Each row is one article.
 
-To explain the *columns* going across the top: (Note: The columns can be
-sorted. If you click the header of a column, it will sort the list of
-articles according to that column. Click again to reverse sort
-direction. The current sort column is marked by a yellow arrow on the
-right side of its name indicating its direction.)
+To explain the *columns* going across the top: If you click the header of a column, it will sort the list of articles according to that column. Click again to reverse sort direction.
+
+### Columns
 
 The default view shows these columns:
 
-**ID\#** â€“ an ID number is automatically assigned to each article.
-This is what identifies it and calls it on the live site.
+**ID:** a unique ID number is automatically assigned to each article. This is what identifies it and calls it on the live site.
 
-**Posted** â€“ this is the date/time that the article was (or will be)
-published. If it shows on the live site depends on your forms. Articles
-to be published in the future (where you entered a timestamp manually)
-are shown gray instead of black.
+**Posted:** this is the date/time that the article was (or will be) published. If it shows on the live site depends on your forms. Articles to be published in the future (where you entered a timestamp manually) are shown gray instead of black.
 
-**Title** â€“ the title of the article. Click this to edit the article.
+**Title:** the title of the article. Click this to edit the article.
 
-**Section** â€“ the section that the article belongs to.
+**Section:** the section that the article belongs to.
 
-**Status** â€“ this is the status of the article. if set to Live, then
-this article is viewable on your live site (except if it has expired,
-see [expired](/home/www/zendstudio/dokuwiki/bin/doku.php?id=expired)).
-Might otherwise be set to Draft, or Pending, etc.
+**Status:** this is the status of the article. if set to Live, then this article is viewable on your live site (except if it has expired, see the [expired](http://docs.textpattern.io/tags/expired) tag. Might otherwise be set to 'Draft', 'Pending', etc.
 
-**Author** â€“ this is the login name of the person who posted the
-article
+**Author:** this is the name of the person who posted the article.
 
-At the bottom of the list there is an option “Show Detail”. When marked
-additional columns (and two links) will be presented (new ones in bold):
+At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
-ID\# â€“ Beneath the ID two links will be added for each article:
-**Edit** â€“ click this (or the title of the article) to edit the
-article. **View** â€“ click this to view the particular article on the
-live site.
+In the ID column, two links will be added for each article: **Edit:** click this (or the title of the article) to edit the article. **View:** click this to view the particular article on the live site.
 
-Posted â€“ see above
+**Modified:** tells when the article has recently been modified.
 
-**Modified** â€“ tells when the article has recently been modified
+**Expires:** if an expire date/time has been entered for an article it will be shown here.
 
-**Expires** â€“ If an expire date/time has been entered for an article
-it will be shown here
+**Category 1:** if the article was assigned a category, then it will reflect that here.
 
-Title â€“ see above
+**Category 2:** if the article was assigned a second category, it will reflect that here.
 
-Section â€“ see above
+**Comments:** this will show if the article has comments turned on or off, and how many comments have been made to this article. Hidden if the commenting features are turned off globally in the @@Preferences administration panel@@.
 
-**Category 1** â€“ if the article was assigned a category, then it will
-reflect that here.
+### Perform changes on selected articles
 
-**Category 2** â€“ if the article was assigned a second category, it
-will reflect that here.
+On the left side you will find a checkbox for each article. Here you can select articles you want to change in a bulk manner. You can mark articles by checking the checkbox or you can use the checkbox in the head bar of the list to mark all articles on that page.
 
-Status â€“ see above
+In order to quickly select ranges of articles click the checkbox of the first article you want to mark, press and hold the shift key, then click the checkbox of the last article in the range. All articles between will be checked too. You can add ranges to your selection by repeating these steps.
 
-Author â€“ see above
-
-**Comments** â€“ this will show if the article has comments turned on or
-off, and how many comments have been made to this article.
-
-#### Perform changes on selected articles {#perform_changes_on_selected_articles}
-
-On the left side you will find a checkbox for each article. Here you can
-select articles you want to change in a jointly manner. You can mark
-articles by ckecking the checkbox or you can use the checkbox in the
-head bar of the list to mark all articles on that page.
-
-In order to quickly select ranges of articles click the checkbox of the
-first article you want to mark, press and hold the shift key, then click
-the checkbox of the last article in the range. All articles between will
-be checked too. You can add ranges to your selection by repeating these
-steps.
-
-For performing changes now you go to the drop-down-list “with selected”
-and choose the function you want to perform. The following changes are
-available:
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
 
 * Change section
 * Change Category1
@@ -138,19 +104,11 @@ available:
 * Change status
 * Change comments
 * Change author
+* Duplicate
 * Delete
 
-When selecting a “Change”-option you will get another drop-down-list
-below which will give you the values to choose from, e.g. the list of
-authors, sections or a On/Off for comments. After selecting the options
-you want to perform click “Go” to start the changes. A pop-up window
-will ask “Are you sure?” and then (if “yes”) the changes will be
-performed.
+When selecting a 'Change'-option you will get another drop-down-list which will give you the values to choose from, e.g. the list of authors, sections or on/off for comments. After selecting the options you want to perform click 'Go' to start the changes. A pop-up window will ask "Are you sure?" and then (if 'yes') the changes will be performed.
 
-## Pages and articles per page
+## Pages and articles listed per page
 
-At the very bottom of the list you will find a pagination and links for
-next and previous pages if there are more pages. By default Textpattern
-will show 25 articles per page. You can change the number of articles
-per page by selecting another value in the drop-down-list “View \# per
-page”: 15, 25, 50 and 100.
+At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of articles listed per page by selecting another value from the number range.
