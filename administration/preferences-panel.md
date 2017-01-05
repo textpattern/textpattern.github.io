@@ -57,32 +57,22 @@ The 'Production status' choice defines the level of error reporting and diagnost
 
 **Live**: This mode is best suited production (live) Textpattern sites (i.e. your site is ready to serve pages to visitors) and uses fewest server resources. In 'Live' mode, no errors or diagnostics will be displayed to your visitors.
 
-**Testing**: This mode is best suited for the initial setup and design of a stable release of Textpattern. Any PHP errors and selected Textpattern warnings will be displayed on public pages. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page; including:
+**Testing**: This mode is best suited for the initial setup and design of a stable release of Textpattern. Any PHP errors and selected Textpattern warnings will be displayed on public pages. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page, including:
 
--   the time it took the server to build the page (“Runtime”)
+-   the time it took the server to build the page ("Runtime")
 -   the number of database queries executed
 -   approximate peak memory usage
 
-**Debugging**: This is mainly intended for diagnosing problems in
-Textpattern [Page](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages)
-templates,
-[plugins](/home/www/zendstudio/dokuwiki/bin/doku.php?id=plugins) and PHP
-code. PHP notices will be displayed, in addition to the errors and
-warnings shown in Testing mode. Browser caching is disabled.
+**Debugging**: This mode is best suited for diagnosing problems in Textpattern Pages, Forms, plugins and PHP code. PHP notices will be displayed, in addition to the errors and warnings shown in Testing mode. Browser caching is disabled.
 
-The following information will also be visible when you view the HTML
-source of live pages:
+Performance information will be included in HTML comments at the end of every Textpattern page, including:
 
--   the time it took the server to build the page (“Runtime”)
--   the number of MySQL queries executed
+-   the time it took the server to build the page ("Runtime")
+-   the number of database queries executed
 -   approximate peak memory usage
--   all Textpattern tags encountered while building the page (also known
-    as a [Tag
-    trace](http://textpattern.com/faq/165/diagnosing-template-problems))
+-   a Textpattern tag trace (i.e. all Textpattern tags processed while building the page)
 
-Itâ€™s normal to see some PHP notices in “debug” mode. By itself, a PHP
-notice is not an indicator that something is wrong; itâ€™s there to help
-PHP developers find potential problems.
+It's normal to see some PHP notices in 'Debugging' mode. A lone PHP notice is not necessarily an indicator that something is wrong, it's there to aid troubleshooting if a problem arises.
 
 #### Time zone {#time_zone}
 
@@ -103,12 +93,12 @@ control (Figure 3).
 
 Figuring the time offset for your own Textpattern installation is easy.
 Look at the table below and find your respective time region in the
-first column, “Time zone”. In the second column, “UTC Offset”, you will
-see values with a “-” or “*” next to them, these are the number of hours
-you will offset backward (“-”) or forward (“*”), with respect to UTC (or
+first column, "Time zone". In the second column, "UTC Offset", you will
+see values with a "-" or "*" next to them, these are the number of hours
+you will offset backward ("-") or forward ("*"), with respect to UTC (or
 similarly, GMT). For example, if you are living in France, your time
-region will be “Central European Time”, which indicates one hour forward
-of UTC. So in the time zone control you would select “GMT +01:00” to
+region will be "Central European Time", which indicates one hour forward
+of UTC. So in the time zone control you would select "GMT +01:00" to
 adjust your UTC offset, and to ensure your articles reflect dates and
 times accurate to where you are.
 
@@ -135,8 +125,8 @@ UTC -7
 </table>
 #### DST enabled? {#dst_enabled}
 
-The “Daylight Savings” control is a pair of radio buttons for “Yes” and
-“No” which allow you to adjust the UTC time established in the previous
+The "Daylight Savings" control is a pair of radio buttons for "Yes" and
+"No" which allow you to adjust the UTC time established in the previous
 section for daylight savings. Unfortunately, Textpattern will not do
 this for you automatically based on your time zone settings, you need to
 remember to do it yourself. If your region of the world follows a
@@ -147,7 +137,7 @@ daylight savings was over.
 
 #### Date format {#date_format}
 
-The “Date Format” control allows you to select how you want your date
+The "Date Format" control allows you to select how you want your date
 and time formats to appear in your articles by default. There are
 several options to choose from (Figure 4). Dates are output in your
 written articles via the
@@ -176,13 +166,13 @@ to establish flexible (or [Clean
 URLs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#clean_urls))
 in your site, which in turn is a nice usability feature for your Web
 site visitors. The drop-down list currently provides six different
-options (Figure 5), one for “messy” URLs (which is the option for NOT
+options (Figure 5), one for "messy" URLs (which is the option for NOT
 having clean URLs), and five for clean URLs; each having a specific path
 format.
 
 If you want clean URLs to work for your site, this is the very first
 step to making it happen, by selecting one of the options other than
-“messy.” However, it is usually not as simple as just selecting one of
+"messy." However, it is usually not as simple as just selecting one of
 these options to make clean URLs work. Getting clean URLs to work may
 take a combination of steps, addressed in
 [managing_clean_urls](/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls).
@@ -197,7 +187,7 @@ entirely.
 
 #### Logging
 
-The “Logging” control allows you to select what kinds of visiting
+The "Logging" control allows you to select what kinds of visiting
 activity Textpattern should record when such activity occurs. The
 recorded information is displayed in the
 [visitor_logs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs)
@@ -219,7 +209,7 @@ three options (Figure 6).
 
 This is a global setting (in this case for any article in any *Section*)
 for whether or not you want to allow your articles to accept comments.
-This is simply controlled with the “Yes” and “No” radio buttons,
+This is simply controlled with the "Yes" and "No" radio buttons,
 respectively. This setting can be overridden on an article-by-article
 basis in the
 [write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) tab as you
@@ -250,8 +240,8 @@ per-article basis.
 #### Moderate comments? {#moderate_comments}
 
 Controls whether or not comments should be immediately published to an
-article (“No”), or if they should first be screened by a site
-administrator for approval (“Yes”). Although having them published
+article ("No"), or if they should first be screened by a site
+administrator for approval ("Yes"). Although having them published
 immediately is more rewarding for the commenter, and less overhead
 management for the site owner, there is a certain level of risk. One
 might choose to moderate comments if there is a high degree of comment
@@ -267,21 +257,21 @@ from 1 to 6 weeks and *never*.
 
 **Note:** Keep in mind that the longer you keep comments open on a given
 article, the more you increase the likelihood of comment spam. For this
-reason, it is not recommended that you select “never”; however, the
+reason, it is not recommended that you select "never"; however, the
 decision is ultimately yours to make, as well as the management of
 comment spam.
 
 #### Automatically append comments to articles {#automatically_append_comments_to_articles}
 
-If “Yes”, comments are added to articles irrespective of whether you add
+If "Yes", comments are added to articles irrespective of whether you add
 a [comments](/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments) tag
 or not. If you see comments doubled up on an article page, either set
-this to “No” or alter your comment form.
+this to "No" or alter your comment form.
 
 #### Comments mode {#comments_mode}
 
-In “popup” mode, a tiny browser window will pop up for the viewer to
-enter the comment. In “nopopup” mode, the main article page will change
+In "popup" mode, a tiny browser window will pop up for the viewer to
+enter the comment. In "nopopup" mode, the main article page will change
 to show the comment entry form.
 
 #### Comments date format {#comments_date_format}
@@ -292,16 +282,16 @@ of comments.
 #### Present comments as a numbered list? {#present_comments_as_a_numbered_list}
 
 If you want to use an HTML ordered list to display your user comments,
-choose “Yes”. If you choose “No”, your comments will be output as blocks
+choose "Yes". If you choose "No", your comments will be output as blocks
 of text without automatic numbers, thus numbering (if any) will have to
 be done by you.
 
-Some commenting plugins require this to be set to “No” before they work
+Some commenting plugins require this to be set to "No" before they work
 properly
 
 #### Mail comments to author? {#mail_comments_to_author}
 
-If set to “Yes”, whenever a comment is made against an article, the
+If set to "Yes", whenever a comment is made against an article, the
 author will be emailed notification of the event, along with the
 contents of the comment.
 
@@ -337,7 +327,7 @@ sections.
 The root-relative URI (without opening or closing slashes) of the
 directory (folder) that holds images uploaded through the
 [Images](/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel)
-panel. By default this is “images”, and you only need to change this if
+panel. By default this is "images", and you only need to change this if
 you have renamed and/or moved this directory.
 
 ##### File directory path {#file_directory_path}
@@ -345,7 +335,7 @@ you have renamed and/or moved this directory.
 The full path (file path, not URI) to the directory (folder) for files
 uploaded via the
 [files](/home/www/zendstudio/dokuwiki/bin/doku.php?id=files) panel. By
-default it is named “files” and is in the root directory of the website.
+default it is named "files" and is in the root directory of the website.
 As with the Image directory, you only need to change this if you have
 renamed and/or moved this directory.
 
@@ -378,7 +368,7 @@ explained above).
 ##### Temporary directory path {#temporary_directory_path}
 
 Full path (file path, not URI) for this directory, which is needed by
-Textpattern during uploads. By default it is named “tmp” and is at the
+Textpattern during uploads. By default it is named "tmp" and is at the
 root level of the installation. You should not need to change this.
 
 ##### Plugin cache directory path {#plugin_cache_directory_path}
@@ -408,7 +398,7 @@ XML-RPC is an integral part of Textpattern, but disabled by default. To
 use
 [xml-rpc_for_desktop_publishing](/home/www/zendstudio/dokuwiki/bin/doku.php?id=xml-rpc_for_desktop_publishing)
 (publishing to your Textpattern site remotely), switch the server on by
-setting this to “Yes”.
+setting this to "Yes".
 
 ##### Default admin tab {#default_admin_tab}
 
@@ -417,22 +407,22 @@ Set this to the panel you want to appear when you log in.
 ##### Admin-side theme {#admin-side_theme}
 
 Set the theme (appearance) of the admin panels. As of Textpattern 4.5,
-three themes are offered. “Classic” is the original theme with two rows
-of tabs. “Remora” is the updated Classic theme with a single row of tabs
-with drop-down menus. “Hive” is a modern, responsive theme and the basis
+three themes are offered. "Classic" is the original theme with two rows
+of tabs. "Remora" is the updated Classic theme with a single row of tabs
+with drop-down menus. "Hive" is a modern, responsive theme and the basis
 of our future UI direction.
 
 #### Comments
 
 ##### Require user's name? {#require_user_s_name}
 
-If set to “Yes”, people that want to comment on your blog will have to
+If set to "Yes", people that want to comment on your blog will have to
 enter a name in the comment-form. They will receive an error message
 otherwise.
 
 ##### Require user's email address? {#require_user_s_email_address}
 
-If set to “Yes”, people that want to comment on your blog, will have to
+If set to "Yes", people that want to comment on your blog, will have to
 enter an email address in the comment-form. They will receive an error
 message otherwise.
 
@@ -455,12 +445,12 @@ when some search engines rank sites linked to from those comments.
 
 ##### Disallow user images? {#disallow_user_images}
 
-With this option set to “Yes”, images included in comments will be
+With this option set to "Yes", images included in comments will be
 stripped out.
 
 ##### Allow more Textile markup in comments? {#allow_more_textile_markup_in_comments}
 
-When set to “Yes”, comments may contain Textile elements which would
+When set to "Yes", comments may contain Textile elements which would
 otherwise be treated as plain text:
 
 -   headings
@@ -488,9 +478,9 @@ blacklist-providers before you add any.
 ##### New comment means site updated? {#new_comment_means_site_updated}
 
 The database keeps track of when the last change to your site has
-happened. When this setting is set to “Yes”, a new comment will also
-update this value. This value is used for example for the “Send
-Last-Modified header” functionality.
+happened. When this setting is set to "Yes", a new comment will also
+update this value. This value is used for example for the "Send
+Last-Modified header" functionality.
 
 #### Custom Fields {#custom_fields}
 
@@ -509,14 +499,14 @@ should be used. For example, *custom1*, *Custom1*, and *Custom_1* are
 all valid name constructs, while *custom 1* and *custom !* are not.
 
 (**Attention:** you might find that you can use spaces in custom field
-names and it works in some situations. But this is \*not advised\*â€”and
-may eventually become impossible anywayâ€”because there are instances
+names and it works in some situations. But this is \*not advised\*â€"and
+may eventually become impossible anywayâ€"because there are instances
 where custom field names are used as attributes in other Textpattern
 tags and thus required to be non-breaking strings, e.g.,
 
     <txp:article_custom customfieldname="value" />
 
-. In this example, “customfieldname” represents a custom field name,
+. In this example, "customfieldname" represents a custom field name,
 which must be a single string in this case to work correctly. If the
 defined custom field name has one or more spaces, it won't work
 correctly.)
@@ -562,8 +552,8 @@ changes made in the panel**.
 
 ##### Syndicate article excerpt only? {#syndicate_article_excerpt_only}
 
-If this is set to “No”, then feeds will always contain the full article
-bodies. If this is set to “Yes”, feed items will contain an excerpt
+If this is set to "No", then feeds will always contain the full article
+bodies. If this is set to "Yes", feed items will contain an excerpt
 instead of the article body where it is available.
 
 ##### How many articles should be included in feeds? {#how_many_articles_should_be_included_in_feeds}
@@ -573,7 +563,7 @@ time, in RSS/Atom format. Recommended: a low value, such as 5 through 15
 
 ##### Show comment count in feeds? {#show_comment_count_in_feeds}
 
-When set to “Yes”, this setting will append the number of comments to
+When set to "Yes", this setting will append the number of comments to
 your article titles in your XML feeds.
 
 ##### Include email in Atom feeds? {#include_email_in_atom_feeds}
@@ -588,13 +578,13 @@ site, Textpattern allows you to choose between either an email address
 or your domain name to include in these IDs. The email address will be
 the first one used when creating the site. Unless you are likely going
 to be changing your domain name, it is probably safe to set this to
-“No”.
+"No".
 
 #### Publish
 
 ##### Prevent widowed words in article titles? {#prevent_widowed_words_in_article_titles}
 
-In typesetting, a “widow” refers to the last word in a given block of
+In typesetting, a "widow" refers to the last word in a given block of
 text that happens to wrap to the next line by itself. Allowing widows in
 printed work is generally considered a visually sloppy thing to do.
 
@@ -605,7 +595,7 @@ last line, or none at all, depending on your word count and the width of
 the containing element of your titles.
 
 This preference allows you to turn that functionality off by saying
-“No”. As a result, your titles will wrap without interference. This may
+"No". As a result, your titles will wrap without interference. This may
 be more preferable if your page layout is responsive, as titles with a
 no-break between two long words could potentially break the layout at
 smaller screen widths, resulting in text spilling out of the container
@@ -613,29 +603,29 @@ area.
 
 ##### Articles use excerpts? {#articles_use_excerpts}
 
-By choosing “No” the excerpt field will not be shown to the author on
+By choosing "No" the excerpt field will not be shown to the author on
 the article-editing screen.
 
 ##### Allow form override? {#allow_form_override}
 
 This setting allows article authors to override the form to be used when
-their article is rendered. If enabled, an “Override form” dropdown will
-be available under “Advanced Options”, when editing an article.
+their article is rendered. If enabled, an "Override form" dropdown will
+be available under "Advanced Options", when editing an article.
 
 ##### Attach titles to permalinks? {#attach_titles_to_permalinks}
 
 This setting will attach a dirified version of your article-title to
 your URL, it is either generated automatically or can be manually
-overridden in the “Advanced Options” when editing an article.
+overridden in the "Advanced Options" when editing an article.
 
 This setting will only have an effect when you are using clean URLs. For
 certain languages this may result in long and ugly URLs, in which case
-you probably want to set this to “No”.
+you probably want to set this to "No".
 
 ##### Permalink title URL pattern {#permalink_title-like-this_default_is_titlelikethis}
 
-This setting only has an effect when “Attach titles to permalinks” is
-set to “Yes”. When dirifying article-titles for use in URLs, you have
+This setting only has an effect when "Attach titles to permalinks" is
+set to "Yes". When dirifying article-titles for use in URLs, you have
 the option of:
 
 1.  Hyphenated (title-like-this) - Using all lowercase letters, and
@@ -658,33 +648,33 @@ load on the webserver.
 
 ##### Publish expired articles? {#publish_expired_articles}
 
-When set to “Yes”, expired articles will continue to show on your site
+When set to "Yes", expired articles will continue to show on your site
 after their expiry date has elapsed. You can use
 [if_expired](/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expired)
 to show alternate content or markup for expired articles.
 
-When set to “No”, expired articles will be removed from the public site
-and return a “410 Gone” HTTP status instead. Visitors hitting an expired
-article will be shown a custom page template named “error_410” if it's
+When set to "No", expired articles will be removed from the public site
+and return a "410 Gone" HTTP status instead. Visitors hitting an expired
+article will be shown a custom page template named "error_410" if it's
 present .
 
 ##### Compensate for persistent connections mod_deflate bug? {#compensate_for_persistent_connections_mod_deflate_bug}
 
 Some mod_deflate versions have a bug that breaks subsequent requests
 when keep-alive is used. Dropping the connection is the only reliable
-way to fix this. Setting this preference to “Yes” will close the
+way to fix this. Setting this preference to "Yes" will close the
 connection, forcing the browser to reconnect for the next request.
 
 ##### Ping pingomatic.com? {#ping_ping-o-maticcom}
 
 Whenever you publish a new article, Textpattern will send a ping to
-[Ping-O-Matic](http://pingomatic.com/). Recommended: “Yes” for live
-sites, “No” for sites in development.
+[Ping-O-Matic](http://pingomatic.com/). Recommended: "Yes" for live
+sites, "No" for sites in development.
 
 ##### Logs expire after how many days? {#logs_expire_after_how_many_days}
 
 When you are using Textpattern for logging, you can set how long (in
-days) those logs should be kept. “7” will keep the logs available for
+days) those logs should be kept. "7" will keep the logs available for
 seven days.
 
 **Note:** The logs only get cleared when you view the logs, and will
@@ -692,7 +682,7 @@ otherwise continue to build in size.
 
 ##### Use DNS? {#use_dns}
 
-This setting only has an effect, when “Logging” in “Site Preferences” is
+This setting only has an effect, when "Logging" in "Site Preferences" is
 turned on. Using DNS will allow you to translate IP adresses in your
 logs to host-names. For some servers this might subjectively slow down
 your site, in which case you might want to turn this off.
@@ -734,4 +724,4 @@ without opening and closing PHP tags, and enclosed within
 When enabled, this setting allows raw PHP code to be used. Normally this
 isn't allowed, and PHP code must be without both opening and closing PHP
 tags, and enclosed within txp:php tags. This setting is for backwards
-compatible purposes only, and it is recommended to be set to “No”.
+compatible purposes only, and it is recommended to be set to "No".
