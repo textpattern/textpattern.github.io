@@ -3,164 +3,49 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }} / Textpattern CMS user documentation</title>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://ajax.googleapis.com">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    <link rel="prefetch" href="http://textpattern.com/assets/img/branding/misc/icon-sprite.svg">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic">
-    <link rel="stylesheet" href="http://textpattern.com/assets/css/style.css">
+    {% include head.html %}
     <meta name="robots" content="index, follow, noodp, noydir">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="{{ site.author }}">
-    <meta name="theme-color" content="#ffda44">
-    <meta name="application-name" content="Textpattern CMS Documentation">
-    <link rel="icon" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" sizes="16x16" href="/favicon-16x16.png">
     {% seo title=false %}
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-    <meta itemprop="accessibilityControl" content="fullKeyboardControl">
-    <meta itemprop="accessibilityControl" content="fullMouseControl">
-    <meta itemprop="accessibilityHazard" content="noFlashingHazard">
-    <meta itemprop="accessibilityHazard" content="noMotionSimulationHazard">
-    <meta itemprop="accessibilityHazard" content="noSoundHazard">
-    <meta itemprop="accessibilityAPI" content="ARIA">
 
-    <div class="wrapper">
+{% include header.html %}
 
+<div class="container">
+    <nav aria-label="Breadcrumb navigation">
+        <ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="http://docs.textpattern.io/"><span itemprop="name">Documentation</span></a>
+                <meta itemprop="position" content="1">
+            </li>
+            <li class="current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <b itemprop="item"><span itemprop="name">{{ page.category }}</span></b>
+                <meta itemprop="position" content="2">
+            </li>
+        </ol>
+    </nav>
 
-<!-- Header -->
-        <header class="site-header" itemscope itemtype="http://schema.org/Organization">
-            <h1 class="masthead" itemprop="name"><a rel="home" itemprop="url" href="http://textpattern.com/" title="Go to the Textpattern homepage">Textpattern CMS</a></h1>
-            <meta itemprop="logo" content="http://textpattern.com/assets/img/branding/textpattern/textpattern.svg">
+    <article itemscope itemtype="http://schema.org/Article">
 
-            <div itemscope itemtype="http://schema.org/WebSite">
-                <meta itemprop="url" content="http://docs.textpattern.io/">
-                <form class="search-form" role="search" action="http://docs.textpattern.io/search" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" data-search-form>
-                    <meta itemprop="target" content="http://docs.textpattern.io/search/?q={q}">
-                    <input class="form-search-input" id="q" name="q" type="search" size="32" placeholder="Search documentation…" itemprop="query-input" data-search-input>
-                </form>
-            </div>
-        </header>
+        {{ content }}
 
+        {% if page.tags %}
+        <footer class="article-footer">
+            <span class="ui-icon ui-icon-tag">Tags:</span>
+            <span itemprop="keywords">
+                {% for tag in page.tags %}
+                <a rel="category tag" href="/tags#{{ tag }}" title="View documentation in this category">{{ tag }}</a>
+                {% endfor %}
+            </span>
+        </footer>
+        {% endif %}
+    </article>
 
-<!-- Navigation -->
-        <div class="nav-container">
-            <nav class="site-navigation" aria-label="Site navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <ul>
-                    <li><a itemprop="url" href="http://textpattern.com/start">Get started</a></li>
-                    <li class="active"><a itemprop="url" href="http://docs.textpattern.io/">Documentation</a></li>
-                    <li><a itemprop="url" href="http://textpattern.com/themes">Themes</a></li>
-                    <li><a itemprop="url" href="http://textpattern.org/">Plugins</a></li>
-                    <li><a itemprop="url" href="http://forum.textpattern.com/">Forum</a></li>
-                    <li><a itemprop="url" href="http://textpattern.com/weblog">Blog</a></li>
-                    <li><a itemprop="url" href="http://textpattern.com/about">About</a></li>
-                </ul>
-            </nav>
-        </div>
+    <p class="alert-block information footnote report-issues">See something wrong in this document? Outdated info, a broken link, faulty code example, or whatever? Please <a rel="external" href="https://github.com/textpattern/textpattern.github.io/issues">write an issue</a> and we’ll fix it.</p>
+</div>
 
+{% include footer.html %}
 
-<!-- Primary Content -->
-        <main aria-label="Main content">
-
-            <div class="container">
-                <nav aria-label="Breadcrumb navigation">
-                    <ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a itemprop="item" href="http://docs.textpattern.io/"><span itemprop="name">Documentation</span></a>
-                            <meta itemprop="position" content="1">
-                        </li>
-                        <li class="current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <b itemprop="item"><span itemprop="name">{{ page.category }}</span></b>
-                            <meta itemprop="position" content="2">
-                        </li>
-                    </ol>
-                </nav>
-
-                <article itemscope itemtype="http://schema.org/Article">
-                    {{ content }}
-
-                    {% if page.tags %}
-                    <footer class="article-footer">
-                        <span class="ui-icon ui-icon-tag">Tags:</span>
-                        <span itemprop="keywords">
-                            {% for tag in page.tags %}
-                            <a rel="category tag" href="/tags#{{ tag }}" title="View documentation in this category">{{ tag }}</a>
-                            {% endfor %}
-                        </span>
-                    </footer>
-                    {% endif %}
-                </article>
-
-                <p class="alert-block information footnote report-issues">See something wrong in this document? Outdated info, a broken link, faulty code example, or whatever? Please <a rel="external" href="https://github.com/textpattern/textpattern.github.io/issues">write an issue</a> and we’ll fix it.</p>
-            </div><!-- /.container -->
-        </main>
-
-
-    </div><!-- /.wrapper -->
-
-
-<!-- Secondary Content -->
-    <aside class="container complementary-content">
-        <div class="layout-container">
-            <div class="layout-3col-2span">
-                <div class="layout-container">
-                    <section class="layout-2col" itemscope itemtype="http://schema.org/Organization">
-                        <h4>Social channels</h4>
-                        <meta itemprop="name" content="Textpattern CMS">
-                        <ul class="social-channels">
-                            <li><a class="facebook" rel="external" itemprop="url" href="http://textpattern.com/facebook" title="Follow us on Facebook+">Facebook</a></li>
-                            <li><a class="twitter" rel="external" itemprop="url" href="http://textpattern.com/@textpattern" title="Follow us on Twitter">Twitter</a></li>
-                            <li><a class="googleplus" rel="external" itemprop="url" href="http://textpattern.com/+" title="Follow us on Google+">Google+</a></li>
-                            <li><a class="github" rel="external" itemprop="url" href="http://textpattern.com/github" title="Follow us on GitHub">GitHub</a></li>
-                        </ul>
-                        <h4>Donate</h4>
-                        <p>Your kind donations help us keep Textpattern CMS development alive!</p>
-                        <p><a class="button button-primary" href="http://textpattern.com/patrons"><span class="ui-icon ui-icon-heart"></span> Donate…</a></p>
-                    </section>
-                    <section class="layout-2col community-details">
-                        <h4>External links</h4>
-                        <ul class="community-links">
-                            <li><a rel="external" href="https://github.com/textpattern">Textpattern on GitHub</a></li>
-                            <li><a rel="external" href="https://github.com/textile">Textile on GitHub</a></li>
-                            <li><a rel="external" href="http://txpmag.com/">TXP Magazine</a></li>
-                            <li><a rel="external" href="http://textpattern.tips/">Textpattern Tips</a></li>
-                            <li><a rel="external" href="http://txplanet.net/">Textpattern Planet</a></li>
-                            <li><a rel="external" href="http://textpattern.ru/">Textpattern.ru</a></li>
-                            <li><a rel="external" href="http://welovetxp.com/">We Love TXP</a></li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-            <section class="layout-3col host-details">
-                <h4 class="accessibility">Host details</h4>
-                <p><img class="svg" src="http://textpattern.com/assets/img/branding/textpattern-network/textpattern-network-white.svg" alt="Textpattern Network"></p>
-                <p>
-                    <small>
-                        Kindly hosted by<br>
-                        <a class="joyent" rel="external" href="https://joyent.com/" title="Go to the Joyent website"><img class="svg" src="http://textpattern.com/assets/img/branding/misc/joyent-inverse.svg" alt="Joyent"></a>
-                    </small>
-                </p>
-            </section>
-        </div>
-    </aside>
-
-
-<!-- Footer -->
-    <footer class="site-footer" role="contentinfo">
-        <p class="legal">
-            Copyright 2004–{{ site.time | date: '%Y' }} The Textpattern Development Team.
-            <a href="#">Contact us</a>.
-            <a href="#">Privacy</a>.
-            <a rel="external" href="http://textpattern.com/humans.txt">Colophon</a>.
-            Textpattern is both free and open source. <a rel="external" href="https://github.com/textpattern/textpattern.github.io/blob/master/LICENSE.txt">GPLv2 license</a>.
-        </p>
-    </footer>
-
-
-<!-- JavaScript -->
-    <script data-main="http://textpattern.com/assets/js/main.js" src="http://textpattern.com/assets/js/require.js"></script>
-    <noscript>JavaScript is currently disabled in your browser - activate it for the best experience.</noscript>
 </body>
 </html>
