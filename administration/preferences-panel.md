@@ -21,27 +21,27 @@ On this page:
 
 ## Site preferences
 
-Site preferences are global settings for your Textpattern site. They include settings for your site name, website address, web server location, time & date, visitor logging and article comment functionality.
+Site preferences are global settings for your Textpattern site. They include settings for your site name, website address, server location, time & date, visitor logging and article comment functionality.
 
 ### Site name
 
-The 'Site name' is simply the title of your website. For example your personal blog called "The Big Bamboozler" or your business site called "Willie Web Design". By default, Textpattern fills this field with "My site", which of course you should change.
+The 'Site name' is the title of your website. By default, Textpattern fills this field with "My site", though it can be changed to your preference. An example for a travel-centric website might be "Adventures Of A Global Explorer", and a coffee shop might have a website called "Brewster's Java Joint".
 
 ### Site URL
 
-The 'Site URL' information is important for many reasons, not the least of which is simply making your Textpattern site work. The Site URL will be your web site domain, without the `http://` prefix and without a trailing forward slash (`/`); for example:
+The 'Site URL' is the homepage address where your Textpattern site is viewed. This should be set to your domain or hostname, omitting both the `https://` or `http://` protocol and the trailing forward slash (`/`). For example:
 
 ~~~
 www.example.com
 ~~~
 
-or if you force dropping the `www` by way of rewrite rules, use
+If you enforce dropping the `www` by way of a rewrite rule, use
 
 ~~~
 example.com
 ~~~
 
-If you install in a subdirectory, then it will be something like
+If you run Textpattern in a site subdirectory, append the directory name
 
 ~~~
 example.com/subdirectory
