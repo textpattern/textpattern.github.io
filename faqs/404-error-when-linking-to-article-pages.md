@@ -2,13 +2,13 @@
 layout: document
 category: FAQs
 published: true
-title: "Will you add my code to Textpattern?"
+title: "FAQ: Clean URLs don't work"
 description: These and similar problems happen when you use 'clean' URL mode on a server that doesn't support mod_rewrite in .htaccess.
 tags:
  - Error warnings and notices FAQs
 ---
 
-# Clean URLs don't work
+# FAQ: Clean URLs don't work
 
 These and similar problems happen when you use 'clean' URL mode on a server that doesn't support `mod_rewrite` in `.htaccess`, or requires additional configuration in order to work. The .htaccess file supplied with Textpattern is designed to work on most Apache servers, but there is no universal solution.
 

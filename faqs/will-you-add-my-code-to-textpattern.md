@@ -2,13 +2,13 @@
 layout: document
 category: FAQs
 published: true
-title: "Will you add my code to Textpattern?"
+title: "FAQ: Will you add my code to Textpattern?"
 description: We accept most, but not all code that is submitted for inclusion in the Textpattern core.
 tags:
  - Development FAQs
 ---
 
-# Will you add my code to Textpattern?
+# FAQ: Will you add my code to Textpattern?
 
 We accept most, but not all code that is submitted for inclusion in the Textpattern core. Sometimes we'll accept part of a patch, or include a modified or abridged version.
 
