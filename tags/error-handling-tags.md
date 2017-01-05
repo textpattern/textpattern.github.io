@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: collection
 category: Tags
 published: true
 title: "Category: Error handling tags"
@@ -11,10 +11,10 @@ search_omit: true
 
 Textpattern documentation within the category 'Error handling tags':
 
-<div>
+<ol class="list--no-bullets">
     {% for page in site.pages %}
         {% if page.tags contains 'Error handling tags' %}
             {% include article-listing.html %}
         {% endif %}
     {% endfor %}
-</div>
+</ol>

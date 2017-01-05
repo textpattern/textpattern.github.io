@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: collection
 category: Tags
 published: true
 title: "Category: List tags"
@@ -11,10 +11,10 @@ search_omit: true
 
 Textpattern documentation within the category 'List tags':
 
-<div>
+<ol class="list--no-bullets">
     {% for page in site.pages %}
         {% if page.tags contains 'List tags' %}
             {% include article-listing.html %}
         {% endif %}
     {% endfor %}
-</div>
+</ol>
