@@ -8,7 +8,7 @@ description: There's a typical routine to walk through after installing or updat
 
 # Post install and upgrade routines
 
-For those [installing Textpattern](http://docs.textpattern.io/installing/) for the first time, or updating their system to a new release, there's a typical routine to walk through afterwards before diving into site creation or returning to usual publishing operations. Once you've done it a few times it becomes second nature. This page is a reminder of what the routine is in each case.
+For those [installing Textpattern](http://docs.textpattern.io/installation/) for the first time, or updating their system to a new release, there's a typical routine to walk through afterwards before diving into site creation or returning to usual publishing operations. Once you've done it a few times it becomes second nature. This page is a reminder of what the routine is in each case.
 
 On this page:
 
