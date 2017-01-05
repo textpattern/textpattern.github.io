@@ -82,22 +82,11 @@ The standard time system for all Internet-related synchronizations is UTC ([Coor
 
 #### DST enabled? {#dst_enabled}
 
-The "Daylight Savings" control is a pair of radio buttons for "Yes" and
-"No" which allow you to adjust the UTC time established in the previous
-section for daylight savings. Unfortunately, Textpattern will not do
-this for you automatically based on your time zone settings, you need to
-remember to do it yourself. If your region of the world follows a
-daylight savings schedule (see [Worldwide Daylight
-Saving](http://webexhibits.org/daylightsaving/g.html) ), you would turn
-this setting on when daylight savings began, and turn it off when
-daylight savings was over.
+The "Daylight Savings" control is a pair of radio buttons for "Yes" and "No" which allow you to adjust the UTC time established in the previous section for daylight savings. Unfortunately, Textpattern will not do this for you automatically based on your time zone settings, you need to remember to do it yourself. If your region of the world follows a daylight savings schedule (see [Worldwide Daylight Saving](http://webexhibits.org/daylightsaving/g.html) ), you would turn this setting on when daylight savings began, and turn it off when daylight savings was over.
 
 #### Date format {#date_format}
 
-The "Date Format" control allows you to select how you want your date
-and time formats to appear in your articles by default. There are
-several options to choose from (Figure 4). Dates are output in your
-written articles via the
+The "Date Format" control allows you to select how you want your date and time formats to appear in your articles by default. There are several options to choose from (Figure 4). Dates are output in your written articles via the
 
     [[posted]]
 
@@ -105,12 +94,7 @@ tag.
 
 #### Archive date format {#archive_date_format}
 
-The *Archive date format* is a drop-down menu that provides the exact
-same options as the *Date format* menu (see Figure 4 above), but enables
-you to create different date formats for the Archive section of your
-site. This might be of interest depending on your site audience. As
-before, the dates are output in your written articles (in this case in
-your archival section) via the
+The *Archive date format* is a drop-down menu that provides the exact same options as the *Date format* menu (see Figure 4 above), but enables you to create different date formats for the Archive section of your site. This might be of interest depending on your site audience. As before, the dates are output in your written articles (in this case in your archival section) via the
 
     [[posted]]
 

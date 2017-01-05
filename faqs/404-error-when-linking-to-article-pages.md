@@ -53,7 +53,7 @@ Or:
 Options +FollowSymLinks
 ~~~
 
-Both of these lines are included in the default `.htaccess file`, so you can simply uncomment them (remove the leading `#` from them).
+Both of these lines are included in the default `.htaccess` file, so you can simply uncomment them (remove the leading `#` from them).
 
 If you are configuring your own Apache server, or using a hosting arrangement that lets you modify your own Apache configuration settings, you might need to add the following to the appropriate place in `httpd.conf`:
 
