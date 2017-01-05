@@ -63,7 +63,7 @@ The 'Production status' choice defines the level of error reporting and diagnost
 -   the number of database queries executed
 -   approximate peak memory usage
 
-**Debugging**: This mode is best suited for diagnosing problems in Textpattern Pages, Forms, plugins and PHP code. PHP notices will be displayed, in addition to the errors and warnings shown in Testing mode. Browser caching is disabled.
+**Debugging**: This mode is best suited for diagnosing problems in Textpattern Pages, Forms, plugins and PHP code. PHP notices will be displayed, in addition to the errors and warnings shown in 'Testing' mode. Browser caching is disabled.
 
 Performance information will be included in HTML comments at the end of every Textpattern page, including:
 
@@ -76,53 +76,10 @@ It's normal to see some PHP notices in 'Debugging' mode. A lone PHP notice is no
 
 #### Time zone {#time_zone}
 
-This control is where you set Textpattern's displayed time to be the
-same as your local time. Textpattern calculates the local time based on
-the server time (i.e. the time used by the server your Textpattern
-package is installed on); thus, if the server time is not your local
-time, you will need to adjust the time offset here.
+Textpattern's displayed time should typically be set to your local time zone. Textpattern defaults to the localised time as indicated by the server time zone (i.e. the time set by the server Textpattern is installed to).
 
-The time system that is standard for all Internet-related
-synchronizations is UTC ([Coordinated Universal
-Time](http://en.wikipedia.org/wiki/UTC) ), which is the time system your
-Web servers are likely using as well. When UTC is not offset at all, it
-is equal to Greenwich Mean Time (GMT), and all global time zones are
-then either offset forward or backward from this point. Hence,
-Textpattern uses the notation of GMT plus the time offset value in this
-control (Figure 3).
+The standard time system for all Internet-related synchronizations is UTC ([Coordinated Universal Time](http://en.wikipedia.org/wiki/UTC) ). A numeric value in parentheses refers to the time offset in seconds when compared to UTC. Textpattern uses GMT notation instead of UTC, but they are identical.
 
-Figuring the time offset for your own Textpattern installation is easy.
-Look at the table below and find your respective time region in the
-first column, "Time zone". In the second column, "UTC Offset", you will
-see values with a "-" or "*" next to them, these are the number of hours
-you will offset backward ("-") or forward ("*"), with respect to UTC (or
-similarly, GMT). For example, if you are living in France, your time
-region will be "Central European Time", which indicates one hour forward
-of UTC. So in the time zone control you would select "GMT +01:00" to
-adjust your UTC offset, and to ensure your articles reflect dates and
-times accurate to where you are.
-
-Table 1: Converting Universal Time to Standard Local Times\^ Time Zone\^
-UTC Offset |
-
-<table>
-<col width="50%" />
-<col width="50%" />
-<tbody>
-<tr class="odd">
-<td align="left">
-Pacific Standard Time\
-UTC -8
-
-</td>
-<td align="left">
-Mountain Standard Time\
-UTC -7
-
-</td>
-</tr>
-</tbody>
-</table>
 #### DST enabled? {#dst_enabled}
 
 The "Daylight Savings" control is a pair of radio buttons for "Yes" and
