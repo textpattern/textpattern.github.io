@@ -1,80 +1,59 @@
-\\n[mininav_admin_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs)
+---
+layout: document
+category: Administration
+published: true
+title: Preferences panel
+description: The Preferences administration panel is where you configure just about every aspect of how you want your site to function on a regular basis.
+---
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:basic-prefs.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:basic-prefs.png)
+# Preferences panel
 
-The
-[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences)
-tab is the first most important panel in a new Textpattern site; it
-(along with
-[advanced_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
-and
-[language_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=language_preferences))
-is where you configure just about every aspect of how you want your site
-to function on a regular basis.
+The Preferences administration panel is the first most important panel in a new Textpattern site; it (along with the [Languages administration panel](http://docs.textpattern.io/administration/languages-panel)) is where you configure just about every aspect of how you want your site to function on a regular basis. The panel is organized into several regions, described in detail below.
 
-The Basic Preferences panel is organized into two regions: “Publish” and
-“Comments”. Both regions control the global site settings for article
-publishing and article commenting, respectively.
+On this page:
 
-**Note:** You can also control comments at the article level in the
-[write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) panel,
-which effectively overrides the global setting on that given article.
+* [Site preferences](#site-preferences)
+* [Admin preferences](#admin-preferences)
+* [Publish preferences](#publish-preferences)
+* [Feeds preferences](#feeds-preferences)
+* [Comments preferences](#comments-preferences)
+* [Custom fields preferences](#custom-fields-preferences)
 
-### Publish {#publish .sectionedit1#publish}
+## Site preferences
 
-The Publish preferences are an important aspect of site configuration
-and used by Textpattern in other instances of your site, not the least
-of which will be proper diagnostics monitoring, and how certain
-information is presented to site visitors. There are a number of
-different settings (Figure 2), which are discussed below.
+The Site preferences are an important aspect of site configuration and used by Textpattern in other instances of your site, not the least of which will be proper diagnostics monitoring, and how certain information is presented to site visitors. There are a number of different settings, which are discussed below.
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-prefs-siteprefs-publish.gif)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-prefs-siteprefs-publish.gif)
+### Site name
 
-#### Site name {#site_name}
+The 'Site name' is simply the title of your website. For example your personal blog called "The Big Bamboozler" or your business site called "Willie Web Design". By default, Textpattern fills this field with "My site", which of course you should change.
 
-The “Site name” is simply the title of your website. For example your
-personal blog called “The Big Bamboozler” or your business site called
-“Willie Web Design”. By default, Textpattern fills this field with “Your
-site”, which of course you should change.
+### Site URL
 
-#### Site slogan {#site_slogan}
+The 'Site URL' information is important for many reasons, not the least of which is simply making your Textpattern site work. The Site URL will be your web site domain, without the `http://` prefix and without a trailing forward slash (`/`); for example:
 
-The “Site slogan” is meant for a site subheading, motto, or other quip
-that you fancy for your site. Considering the business name above,
-*Willie Web Design*; Willie might like the line “Nothing but the best!”
-in his branding, so he would put that in this field. The tagline is
-optional; you do not have to ise it if nothing is appropriate for your
-site.
+~~~
+www.example.com
+~~~
 
-**Note:** As of Textpattern version 4.0.7, the site slogan is
-HTML-escaped before output. So the site slogan should be plain text,
-with no HTML tags.
+or if you force dropping the `www` by way of rewrite rules, use
 
-#### Site URL {#site_url}
-
-The “Site URL” information is important for many reasons, not the least
-of which is simply making your Textpattern site work. The Site URL will
-be your Web site domain, without the
-
-    http://
-
-prefix and without a trailing forward slash (“/”); for example,
-
-    www.example.com
-
-or if you force dropping the “www” by way of rewrite rules, use
-
-    example.com
-
-.
+~~~
+example.com
+~~~
 
 If you install in a subdirectory, then it will be something like
 
-    www.example.com/subdirectory
+~~~
+example.com/subdirectory
+~~~
 
-.
+### Site slogan
 
-#### Production status {#production_status}
+The 'Site slogan' is meant for a site subheading, motto, or other quip that you fancy for your site. Considering the business name above, "Willie Web Design"; Willie might like the line "Nothing but the best designs!" in his branding, so he would put that in this field. The tagline is optional; you do not have to use it if nothing is appropriate for your site.
+
+**Note:** As of Textpattern version 4.0.7 onwards, the site slogan is HTML-escaped before output. So the site slogan should be plain text, with no HTML tags.
+
+### Production status
 
 The production status provides a means for monitoring your site (or not)
 as you work. There are three options, and each is specific to a
@@ -150,8 +129,6 @@ then either offset forward or backward from this point. Hence,
 Textpattern uses the notation of GMT plus the time offset value in this
 control (Figure 3).
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-prefs-publ-timezone.gif)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-prefs-publ-timezone.gif)
-
 Figuring the time offset for your own Textpattern installation is easy.
 Look at the table below and find your respective time region in the
 first column, “Time zone”. In the second column, “UTC Offset”, you will
@@ -207,8 +184,6 @@ written articles via the
 
 tag.
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-prefs-publ-dateformat.gif)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-prefs-publ-dateformat.gif)
-
 #### Archive date format {#archive_date_format}
 
 The *Archive date format* is a drop-down menu that provides the exact
@@ -240,8 +215,6 @@ these options to make clean URLs work. Getting clean URLs to work may
 take a combination of steps, addressed in
 [managing_clean_urls](/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls).
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-prefs-publ-permlink.gif)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-prefs-publ-permlink.gif)
-
 #### Use Textile {#use_textile}
 
 Textile is a meta-formatting language that lets site authors format work
@@ -258,8 +231,6 @@ recorded information is displayed in the
 [visitor_logs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs)
 panel for you to review. This *Logging* control is a drop-down menu with
 three options (Figure 6).
-
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-prefs-publ-logging.gif)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-prefs-publ-logging.gif)
 
 -   **All hits**: By defaualt Textpattern will collect information for
     all site hits.
@@ -283,8 +254,6 @@ basis in the
 write new articles.
 
 ### Comments {#comments .sectionedit3#comments}
-
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:admin-prefs-siteprefs-comments.gif)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:admin-prefs-siteprefs-comments.gif)
 
 If you set **Accept comments** to
 
@@ -363,3 +332,434 @@ properly
 If set to “Yes”, whenever a comment is made against an article, the
 author will be emailed notification of the event, along with the
 contents of the comment.
+
+\[todo: needs to be marged with perferences doc - no advanced prefs
+panel in Textpattern 4.6 - also, document this change\]
+
+\\n[mininav_admin_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_admin_subtabs)
+
+[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:advanced-prefs.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:advanced-prefs.png)
+
+The
+[advanced_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=advanced_preferences)
+is where you enhance your site beyond just what is essential for basic
+function; for example, folder locations, custom fields, and the
+specifics on your publishing needs, just to name a few. All of the
+*Advanced Preferences* features are discussed on this page. **<span
+class="screenshots. needs but 4.2.0, to Updated Edit:"></span>**
+
+### Advanced Preferences {#advanced-preferences .sectionedit1#advanced_preferences}
+
+As of Textpattern verson 4.2.0, the *Advanced Preferences* view is
+composed of six different regions. At the bottom of the view is a Save
+button, which should be clicked after *any* changes to *any* region are
+made.
+
+#### Admin
+
+The Admin section is composed of ten controls detailed in the following
+sections.
+
+##### Image directory {#image_directory}
+
+The root-relative URI (without opening or closing slashes) of the
+directory (folder) that holds images uploaded through the
+[Images](/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel)
+panel. By default this is “images”, and you only need to change this if
+you have renamed and/or moved this directory.
+
+##### File directory path {#file_directory_path}
+
+The full path (file path, not URI) to the directory (folder) for files
+uploaded via the
+[files](/home/www/zendstudio/dokuwiki/bin/doku.php?id=files) panel. By
+default it is named “files” and is in the root directory of the website.
+As with the Image directory, you only need to change this if you have
+renamed and/or moved this directory.
+
+##### Maximum file size of uploads (in bytes) {#maximum_file_size_of_uploads_in_bytes}
+
+Maximim size for file uploads via the
+[files](/home/www/zendstudio/dokuwiki/bin/doku.php?id=files) panel. Note
+that this value is also limited by the configuration of PHP on your Web
+server; if Textpattern detects that your PHP configuration only allows
+smaller downloads it will automatically correct this value downwards. If
+you want to allow larger file uploads via upload from the browser you
+have to talk with your host. (The relevant values in *php.ini* are
+
+    post_max_size
+
+,
+
+    upload_max_filesize
+
+and
+
+    memory_limit
+
+.)
+
+**Note:** Image Uploads are not restricted by this value. The maximum
+allowed size for images is always \~ 1MB (unless restricted by PHP as
+explained above).
+
+##### Temporary directory path {#temporary_directory_path}
+
+Full path (file path, not URI) for this directory, which is needed by
+Textpattern during uploads. By default it is named “tmp” and is at the
+root level of the installation. You should not need to change this.
+
+##### Plugin cache directory path {#plugin_cache_directory_path}
+
+Leave this empty unless you are using a plugin that requires it, or you
+are a plugin developer and want to test uncompiled plugins. No such
+directory is included by default.
+
+##### SMTP envelope sender address {#smtp_envelope_sender_address}
+
+This preference should be left blank unless you experience problems with
+sending email in Textpattern (i.e. no email is sent at all). Should that
+problem arise, you can enter any valid email address here, although
+preferably one that has the same domain name as the website where you've
+installed Textpattern (i.e. if your website is example.com, you might
+use you@example.com).
+
+##### Use ISO-8859-1 encoding in e-mails sent (default is UTF-8)? {#use_iso-8859-1_encoding_in_e-mails_sent_default_is_utf-8}
+
+For whatever reason (can someone give one?) you might want to use
+ISO-8859-1 character encoding for emails, but the more internationally
+friendly UTF-8 unicode is set by default, so why change?
+
+##### Enable XML-RPC server {#enable_xml-rpc_server}
+
+XML-RPC is an integral part of Textpattern, but disabled by default. To
+use
+[xml-rpc_for_desktop_publishing](/home/www/zendstudio/dokuwiki/bin/doku.php?id=xml-rpc_for_desktop_publishing)
+(publishing to your Textpattern site remotely), switch the server on by
+setting this to “Yes”.
+
+##### Default admin tab {#default_admin_tab}
+
+Set this to the panel you want to appear when you log in.
+
+##### Admin-side theme {#admin-side_theme}
+
+Set the theme (appearance) of the admin panels. As of Textpattern 4.5,
+three themes are offered. “Classic” is the original theme with two rows
+of tabs. “Remora” is the updated Classic theme with a single row of tabs
+with drop-down menus. “Hive” is a modern, responsive theme and the basis
+of our future UI direction.
+
+#### Comments
+
+##### Require user's name? {#require_user_s_name}
+
+If set to “Yes”, people that want to comment on your blog will have to
+enter a name in the comment-form. They will receive an error message
+otherwise.
+
+##### Require user's email address? {#require_user_s_email_address}
+
+If set to “Yes”, people that want to comment on your blog, will have to
+enter an email address in the comment-form. They will receive an error
+message otherwise.
+
+##### Never display email address? {#never_display_email_address}
+
+This setting controls whether the email address of a commenter should be
+shown publicly.
+
+##### Apply rel="nofollow&quot; to comments? {#apply_rel_nofollow_to_comments}
+
+This will add an additional attribute to the links made in comments. It
+is intended to be a measure that takes away the incentive for
+comment-spammers and was initiated by a range of search engines and
+software-writers. You can find out more about it by reading [Google's
+announcement](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html).
+
+**Note:** This setting does not influence the functionality or ranking
+of your site. It may prevent or diminish the influence of your comments
+when some search engines rank sites linked to from those comments.
+
+##### Disallow user images? {#disallow_user_images}
+
+With this option set to “Yes”, images included in comments will be
+stripped out.
+
+##### Allow more Textile markup in comments? {#allow_more_textile_markup_in_comments}
+
+When set to “Yes”, comments may contain Textile elements which would
+otherwise be treated as plain text:
+
+-   headings
+-   ordered and unordered lists
+-   foot notes
+-   tables
+-   code
+-   extended block syntax (bc.., bq.., etc.)
+
+For security reasons, raw HTML is transformed into regular text.
+
+##### Spam blacklists (comma-separated) {#spam_blacklists_comma-separated}
+
+The blacklist providers entered here, will be contacted when a comment
+is posted to your blog and the IP of the comment poster will be checked.
+If the IP is listed, it means there have been spamming complaints made
+about this IP in the past and a comment will be rejected.
+
+You can enter a list of domain names that should be seperated by commas.
+Potential blacklists can be found at
+[dmoz](http://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/), but
+be aware that it is your responsibility to make sure you can trust those
+blacklist-providers before you add any.
+
+##### New comment means site updated? {#new_comment_means_site_updated}
+
+The database keeps track of when the last change to your site has
+happened. When this setting is set to “Yes”, a new comment will also
+update this value. This value is used for example for the “Send
+Last-Modified header” functionality.
+
+#### Custom Fields {#custom_fields}
+
+This region is where ten (10) custom fields can be defined. New
+installations of Textpattern define two custom fields for demonstration
+purposes: *custom1* and *custom2*. When custom fields have names such as
+these, they automatically appear under the *Advanced Options* section of
+the [write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) panel
+so you can make use of them, as needed, in context of a given article.
+
+**Important notes on creating custom field names:**
+
+Custom field names may include letters (uppercase or lowercase),
+numbers, and under scores, but no spaces or other special characters
+should be used. For example, *custom1*, *Custom1*, and *Custom_1* are
+all valid name constructs, while *custom 1* and *custom !* are not.
+
+(**Attention:** you might find that you can use spaces in custom field
+names and it works in some situations. But this is \*not advised\*â€”and
+may eventually become impossible anywayâ€”because there are instances
+where custom field names are used as attributes in other Textpattern
+tags and thus required to be non-breaking strings, e.g.,
+
+    <txp:article_custom customfieldname="value" />
+
+. In this example, “customfieldname” represents a custom field name,
+which must be a single string in this case to work correctly. If the
+defined custom field name has one or more spaces, it won't work
+correctly.)
+
+Also, there are certain names **reserved** by Textpattern, which should
+not be used to name custom fields, or it could cause your code to not
+work as expected. **Do not use the following for custom field names:**
+
+-   annotate
+-   article_image
+-   authorid
+-   body
+-   category
+-   category1
+-   category2
+-   comments_count
+-   comments_invite
+-   excerpt
+-   form
+-   keywords
+-   limit
+-   offset
+-   posted
+-   section
+-   sort
+-   status
+-   thisid
+-   title
+-   url_title
+-   Any other [tag
+    attribute](http://textpattern.net/wiki/index.php?title=Attributes_Cross-reference),
+    just in case
+
+A symptom of a name clash is when you go to check or display the
+contents of a custom field and receive unexpected (or no) output. In
+this case, make sure your custom field names are not any of the reserved
+names listed above.
+
+To remove a custom field, simply clear its name. **Don't forget to save
+changes made in the panel**.
+
+#### Feeds
+
+##### Syndicate article excerpt only? {#syndicate_article_excerpt_only}
+
+If this is set to “No”, then feeds will always contain the full article
+bodies. If this is set to “Yes”, feed items will contain an excerpt
+instead of the article body where it is available.
+
+##### How many articles should be included in feeds? {#how_many_articles_should_be_included_in_feeds}
+
+This is the maximum number of current articles to be syndicated at a
+time, in RSS/Atom format. Recommended: a low value, such as 5 through 15
+
+##### Show comment count in feeds? {#show_comment_count_in_feeds}
+
+When set to “Yes”, this setting will append the number of comments to
+your article titles in your XML feeds.
+
+##### Include email in Atom feeds? {#include_email_in_atom_feeds}
+
+This allows you to include the email address of the author (as set in
+their user account) of an article in the author part of your Atom feeds.
+
+##### Use email address to construct feed ids (default is site URL)? {#use_email_address_to_construct_feed_ids_default_is_site_url}
+
+Feed items in Atom, require a unique ID. To generate IDs unique to your
+site, Textpattern allows you to choose between either an email address
+or your domain name to include in these IDs. The email address will be
+the first one used when creating the site. Unless you are likely going
+to be changing your domain name, it is probably safe to set this to
+“No”.
+
+#### Publish
+
+##### Prevent widowed words in article titles? {#prevent_widowed_words_in_article_titles}
+
+In typesetting, a “widow” refers to the last word in a given block of
+text that happens to wrap to the next line by itself. Allowing widows in
+printed work is generally considered a visually sloppy thing to do.
+
+By default, Textpattern prevents widow words from happening in article
+**titles** by automatically adding a no-break value between the last two
+words. So instead of a widow, there will be two (or more) words on the
+last line, or none at all, depending on your word count and the width of
+the containing element of your titles.
+
+This preference allows you to turn that functionality off by saying
+“No”. As a result, your titles will wrap without interference. This may
+be more preferable if your page layout is responsive, as titles with a
+no-break between two long words could potentially break the layout at
+smaller screen widths, resulting in text spilling out of the container
+area.
+
+##### Articles use excerpts? {#articles_use_excerpts}
+
+By choosing “No” the excerpt field will not be shown to the author on
+the article-editing screen.
+
+##### Allow form override? {#allow_form_override}
+
+This setting allows article authors to override the form to be used when
+their article is rendered. If enabled, an “Override form” dropdown will
+be available under “Advanced Options”, when editing an article.
+
+##### Attach titles to permalinks? {#attach_titles_to_permalinks}
+
+This setting will attach a dirified version of your article-title to
+your URL, it is either generated automatically or can be manually
+overridden in the “Advanced Options” when editing an article.
+
+This setting will only have an effect when you are using clean URLs. For
+certain languages this may result in long and ugly URLs, in which case
+you probably want to set this to “No”.
+
+##### Permalink title URL pattern {#permalink_title-like-this_default_is_titlelikethis}
+
+This setting only has an effect when “Attach titles to permalinks” is
+set to “Yes”. When dirifying article-titles for use in URLs, you have
+the option of:
+
+1.  Hyphenated (title-like-this) - Using all lowercase letters, and
+    replacing spaces with hyphens.
+2.  Intercapped (TitleLikeThis) - Completely removing spaces, and using
+    CamelCase, which means that the beginning of new words will be
+    marked by uppercase letters.
+
+##### Send "Last-Modified&quot; header? {#send_last-modified_header}
+
+When set, Textpattern will read a visitor's HTTP If-Modified-Since
+header (if one exists) and compare it to the last site update. If
+nothing has changed since the visitor last loaded the page (i.e. if the
+timestamp the browser sends is the same as the last site update), then a
+header is sent back instructing the visitor's browser to use its cached
+version of the page.
+
+This can reduce bandwidth consumption, page load times, and reduce the
+load on the webserver.
+
+##### Publish expired articles? {#publish_expired_articles}
+
+When set to “Yes”, expired articles will continue to show on your site
+after their expiry date has elapsed. You can use
+[if_expired](/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expired)
+to show alternate content or markup for expired articles.
+
+When set to “No”, expired articles will be removed from the public site
+and return a “410 Gone” HTTP status instead. Visitors hitting an expired
+article will be shown a custom page template named “error_410” if it's
+present .
+
+##### Compensate for persistent connections mod_deflate bug? {#compensate_for_persistent_connections_mod_deflate_bug}
+
+Some mod_deflate versions have a bug that breaks subsequent requests
+when keep-alive is used. Dropping the connection is the only reliable
+way to fix this. Setting this preference to “Yes” will close the
+connection, forcing the browser to reconnect for the next request.
+
+##### Ping pingomatic.com? {#ping_ping-o-maticcom}
+
+Whenever you publish a new article, Textpattern will send a ping to
+[Ping-O-Matic](http://pingomatic.com/). Recommended: “Yes” for live
+sites, “No” for sites in development.
+
+##### Logs expire after how many days? {#logs_expire_after_how_many_days}
+
+When you are using Textpattern for logging, you can set how long (in
+days) those logs should be kept. “7” will keep the logs available for
+seven days.
+
+**Note:** The logs only get cleared when you view the logs, and will
+otherwise continue to build in size.
+
+##### Use DNS? {#use_dns}
+
+This setting only has an effect, when “Logging” in “Site Preferences” is
+turned on. Using DNS will allow you to translate IP adresses in your
+logs to host-names. For some servers this might subjectively slow down
+your site, in which case you might want to turn this off.
+
+##### Maximum URL length (in characters) {#maximum_url_length_in_characters}
+
+This prevents URLs that are longer than specified from functioning. It
+could be helpful in damage limitation.
+
+##### Use plugins? {#use_plugins}
+
+This allows you to turn off support for plugins. You might want to do
+this if you find strange errors happening on your site, and you want to
+make sure that it is not the fault of plugins.
+
+##### Use admin-side plugins? {#use_admin-side_plugins}
+
+Admin-side plugins are those which can change the operation of the
+administration interface. They might hook into already existing actions,
+like editing or publishing articles, or they might add new tabs for
+added/extended functionality.
+
+##### Allow PHP in pages? {#allow_php_in_pages}
+
+When enabled, this setting allows PHP code within page and form
+templates. PHP code must be without both opening and closing PHP tags,
+and enclosed within
+[php](/home/www/zendstudio/dokuwiki/bin/doku.php?id=php) tags.
+
+##### Allow PHP in articles? {#allow_php_in_articles}
+
+When enabled, this setting will allow use of PHP within articles. The
+author must have sufficient privileges to do so. PHP code must be both
+without opening and closing PHP tags, and enclosed within
+[php](/home/www/zendstudio/dokuwiki/bin/doku.php?id=php) tags.
+
+##### Allow raw php? {#allow_raw_php}
+
+When enabled, this setting allows raw PHP code to be used. Normally this
+isn't allowed, and PHP code must be without both opening and closing PHP
+tags, and enclosed within txp:php tags. This setting is for backwards
+compatible purposes only, and it is recommended to be set to “No”.

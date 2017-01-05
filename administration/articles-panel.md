@@ -88,7 +88,7 @@ In the ID column, two links will be added for each article: **Edit:** click this
 
 **Category 2:** if the article was assigned a second category, it will reflect that here.
 
-**Comments:** this will show if the article has comments turned on or off, and how many comments have been made to this article. Hidden if the commenting features are turned off globally in the @@Preferences administration panel@@.
+**Comments:** this will show if the article has comments turned on or off, and how many comments have been made to this article. Hidden if the commenting features are turned off globally in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
 
 ### Perform changes on selected articles
 
