@@ -25,7 +25,7 @@ Site preferences are global settings for your Textpattern site. They include set
 
 ### Site name
 
-The 'Site name' is the title of your website. By default, Textpattern fills this field with "My site", though it can be changed to your preference. An example for a travel-centric website might be "Adventures Of A Global Explorer", and a coffee shop might have a website called "Brewster's Java Joint".
+The 'Site name' is the title of your website. By default, Textpattern fills this field with "My site", though it can be changed to your preference. An example for a travel-centric website might be "Around The World In 80 Stays", and a coffee shop might have a website called "Brewster's Java Joint".
 
 ### Site URL
 
@@ -49,9 +49,7 @@ example.com/subdirectory
 
 ### Site slogan
 
-The 'Site slogan' is meant for a site subheading, motto, or other quip that you fancy for your site. Considering the business name above, "Willie Web Design"; Willie might like the line "Nothing but the best designs!" in his branding, so he would put that in this field. The tagline is optional; you do not have to use it if nothing is appropriate for your site.
-
-**Note:** As of Textpattern version 4.0.7 onwards, the site slogan is HTML-escaped before output. So the site slogan should be plain text, with no HTML tags.
+The 'Site slogan' is an optional site subheading, motto, or other quote for your site. Considering the examples for Site URL above, "Around The World In 80 Stays"; a slogan of "Adventures Of A Global Explorer" would be relevant here. Likewise, the coffee shop might choose a slogan of "The Best Morning Brew, Since 2002!". The Site slogan should be plain text (i.e. no markup) as it is HTML-escaped before output.
 
 ### Production status
 
