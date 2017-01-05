@@ -1,12 +1,18 @@
-Building your first Textpattern architecture \[todo:dw\]
-========================================================
+---
+layout: document
+category: Administration
+published: true
+title: Building your first Textpattern architecture
+description: This is a fast-track orientation to help you build your first publishing architecture in Textpattern.
+---
+
+# Building your first Textpattern architecture TODO:dw
 
 This will integrate the FAQ: ive-installed-textpattern-now-what.textile
 
-This is a fast-track orientation to help you build your first publishing
-architecture in Textpattern. It assumes you've [installed, configured,
-and diagnosed a new instance of Textpattern](installation/installing-textpattern)
-on your web server and looked over the [administration](administration/)
+This is a fast-track orientation to help you build your first publishing architecture in Textpattern. It assumes you've [installed, configured,
+and diagnosed a new instance of Textpattern](http://docs.textpattern.io/installation/installing-textpattern)
+on your web server and looked over the [administration](http://docs.textpattern.io/administration/)
 docs. If you've done that but nothing more, you're now in a good place.
 This orientation will map out the administration process and associated
 locations in the administration side for building a single-author blog
@@ -17,8 +23,7 @@ Textpattern topics (not to mention requires planning your content model
 and information architecture), which you are not ready for yet. So we'll
 kick-start you with a basic blog model and you learn the rest like
 everyone else does -- by reading more users docs, asking questions in
-the [support forum](http://forum.textpattern.com), and exploring on your
-own (the best kind of learning).
+the [Textpattern CMS support forum](http://forum.textpattern.com), and exploring on your own (the best kind of learning).
 
 On this page:
 

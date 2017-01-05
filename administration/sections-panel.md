@@ -1,15 +1,16 @@
-\\n[mininav_presentation_subtabs](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_presentation_subtabs)
+---
+layout: document
+category: Administration
+published: true
+title: Sections panel
+description: Sections are the principle content organization mechanism in Textpattern, and the Sections panel is where you manage them.
+---
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:sections-tab.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:sections-tab.png)
+# Sections panel
 
-[sections](/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections) are
-the principle content organization mechanism in Textpattern, and the
-Sections panel is where you manage them (Figure 1).
+Sections are the principle content organization mechanism in Textpattern, and the Sections panel is where you manage them.
 
-Sections essentially provide the ability to create lateral structure in
-your site, thus each section has its own unique URL if the site is
-configured to use clean URLs in
-[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences).
+Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
 
 In the sections panel, you're able to define what
 [pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages) and

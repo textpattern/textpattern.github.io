@@ -1,25 +1,23 @@
-\\n[mininav_content_index](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index)
+---
+layout: document
+category: Administration
+published: true
+title: Comments panel
+description: The Comments administration panel provides control about visitor comments on your public pages.
+---
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-comment.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-comment.png)
+# Comments panel
 
-The **Comments** panel provides control about *visitor comments* on your
-public pages. There are three modes of the panel
+The Comments administration panel provides control about *visitor comments* on your public pages. There are two modes to this panel:
 
--   the primary (and default) *comments catalogue* for basic info and
-    instant handling of comments
--   an edit mode where you can edit the comments content.
--   a list of banned IPs.
+1. The primary (and default) comments list for basic info and instant handling of comments.
+2. An edit mode where you can edit the comments content.
 
-When opening the Comments panel you will get a \*catalogue\* of recent
-comments, the latest comment at the top. Above the catalogue you'll find
-a link “List banned IPs” which will show a list of IPs you banned in
-your textpattern install. We'll describe this function later and begin
-with the comments catalogue:
+When opening the Comments panel you will get a list of recent comments, the latest comment at the top.
 
-### Comments catalogue {#comments-catalogue .sectionedit1#comments_catalogue}
+## Comments list
 
-As in the other content panels catalogues can get pretty long after some
-time. So as the first function there is a Search or Filter function:
+As in the other content panels catalogues can get pretty long after some time. So as the first function there is a Search or Filter function:
 
 #### Search and Filter {#search_and_filter}
 

@@ -1,32 +1,18 @@
-\\n[mininav_tutorials](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials)
+---
+layout: document
+category: Administration
+published: true
+title: "Hello, World!"
+description: The Hello, World! approach means to start from a blank slate and add pieces one at a time.
+---
 
-_Originally adapted from [this
-tutorial](http://ipsedixit.net/txp/116/textpattern-quickstart-hello-world)
-by [Jeff Soo](http://ipsedixit.net/txp/._)
+# Hello, World!
 
-Moving from traditional, static web development to dynamic, CMS-based
-development is a dual challenge. Obviously you have to learn the new
-tool -- the CMS. But for many the harder part is understanding dynamic
-publishing, a new way of thinking about website design. Trying to learn
-both at once is a steep learning curve, but is manageable with the right
-step-by-step approach.
+Moving from traditional, static web development to dynamic, CMS-based development can be a challenge. Obviously you have to learn the new tool - the CMS. But for many the harder part is understanding dynamic publishing, a new way of thinking about website design. Trying to learn both at once is a steep learning curve, but is manageable with the right step-by-step approach.
 
-Two good choices for introductory [Textpattern](http://textpattern.com/)
-tutorials are:
+The "Hello, World!" approach means to start from a blank slate and add pieces one at a time. It's not the right approach for everyone, but assuming you want to try this method, read on:
 
--   [Understanding Textpattern Building
-    Blocks](http://wion.com/articles/understanding-textpattern-building-blocks).
-    This is the “big picture” approach, if you like to start
-    with theory.
--   [textpattern_first_steps](/home/www/zendstudio/dokuwiki/bin/doku.php?id=textpattern_first_steps).
-    The “feel your way around” approach, if you prefer to tinker with an
-    existing installation.
-
-Then there's the “Hello, World!” approach -- start from a blank slate
-and add pieces one at a time. It's not for everyone so do have a look at
-the above links. Otherwise, read on:
-
-### Ready, set ... {#ready-set-... .sectionedit1#ready_set}
+## Ready, set ...
 
 Start from a new Textpattern installation. If you want to save [the few
 minutes it takes to

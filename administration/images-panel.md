@@ -1,34 +1,26 @@
-\\n[mininav_content_index](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index)
+---
+layout: document
+category: Administration
+published: true
+title: Images panel
+description: The Images administration panel lets you manage everything you need to include images (and galleries) in your content.
+---
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-image.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-image.png)
+# Images panel
 
-[Images](/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel)
-lets you manage everything you need to include images (and galleries) in
-your content. From this panel you can **upload** images, **create
-thumbnails**, add **captions** (and **alternate text**), build
-**groups** of images (using categories) and **generate tags** to place
-images in your articles (or forms).
+The Images administration panel lets you manage everything you need to include images (and galleries) in your content. From this panel you can upload images, create thumbnails, add captions (and alternate text), build groups of images (using categories) and generate tags to place images in your articles (or forms).
 
-Of course you could upload images (using ftp) and place image tags
-(using HTML) directly. But then you'd have to provide elements like
-captions separately for every place you use an image. The images tools
-of Textpattern provide a way of managing image-related info *in a
-central place*. If you have to change a caption or for example need to
-replace an image (e.g. a sharper one or another view) you can do these
-changes once at a central place and the changes will automatically take
-effect wherever you placed the image using textpatterns tags.
+Of course you could upload images (using FTP) and place image tags (using HTML) directly. But then you'd have to provide elements like captions separately for every place you use an image. The images tools of Textpattern provide a way of managing image-related info *in a central place*. If you have to change a caption or for example need to replace an image (e.g. a sharper one or another view) you can do these changes once at a central place and the changes will automatically take effect wherever you placed the image using textpatterns tags.
 
 There are three basic things you can do in this panel:
 
--   *Upload* images
--   *Edit* image-related information (create a thumbnail, add caption
-    and alternate text, categorize
--   list and *manage* your existing images.
+1. Upload images
+2. Edit image-related information (create a thumbnail, add caption and alternate text, categorize, etc.)
+3. List and manage your existing images.
 
-(So the images panel in a way combines what for *articles* is divided in
-two panels “Write” and “Article”.)
+So the images panel in a way combines what for articles is divided in two panels 'Write' and 'Articles'.
 
-### Upload images {#upload-images .sectionedit1#upload_images}
+## Upload images
 
 The first tool at the top of the panel is the *upload* area. Labeled
 “Upload image” you will find a field for entering a path to the image.

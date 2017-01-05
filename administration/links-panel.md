@@ -1,11 +1,14 @@
-\\n[mininav_content_index](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index)
+---
+layout: document
+category: Administration
+published: true
+title: Links panel
+description: The Links administration panel provides a way of keeping track of links and lists of external resources.
+---
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-link.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-link.png)
+# Links panel
 
-[links](/home/www/zendstudio/dokuwiki/bin/doku.php?id=links) provides a
-way of keeping track of links and lists of resources (often external to
-the site) so they may be included in articles or form content in a
-convenient way.
+The Links administration panel provides a way of keeping track of links and lists of resources (often external to the site) so they may be included in articles or form content in a convenient way.
 
 While you could place links to external resources (or internal pages)
 directly into any article this would mean a lot of work keeping track

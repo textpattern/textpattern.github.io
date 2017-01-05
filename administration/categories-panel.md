@@ -1,19 +1,18 @@
-\\n[mininav_content_index](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_content_index)
+---
+layout: document
+category: Administration
+published: true
+title: Categories panel
+description: In the Categories administration panel you define categories for your articles, links, images and files.
+---
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_content-category.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_content-category.png)
+# Categories panel
 
-In this tab you **define categories** for your **articles, links, images
-and files**.
+In the Categories administration panel you define categories for your articles, links, images and files.
 
-Categorising things makes it easier for both you and your visitors to
-keep track of different kinds of content. You might, for example, have a
-category “software” in which you write about your experiments with the
-latest programs and another category “pets” in which you post stories
-about your cats.
+Categorising things makes it easier for both you and your visitors to keep track of different kinds of content. You might, for example, have a category 'software' in which you write about your experiments with the latest programs and another category 'pets' in which you post stories about your cats.
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organize-all_categories.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organize-all_categories.png)
-
-### Article categories {#article-categories .sectionedit1#article_categories}
+## Article categories
 
 Article categories allow **organization of articles by their subject
 matter**. Once categories are assigned, lists of articles belonging to
@@ -27,8 +26,6 @@ in a way that makes sense to your readers.
 To **create a category** you simply **type its name** in the textfield
 at the top and click **“create”**. Textpattern then adds the new
 category to the list.
-
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organize-article_categories.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organize-article_categories.png)
 
 Some **changes might occur** if you've chosen a name that has more than
 one word or if your language is not English: **special characters** such
@@ -51,8 +48,6 @@ category name and you get to a new screen with three fields:
 1.  **category name**
 2.  **parent category**
 3.  **category title**
-
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organize-category_details.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organize-category_details.png)
 
 The **category name** is the one used in URLs and other technical
 purposes. It contains no special characters and no spaces.
@@ -89,9 +84,6 @@ There's **one more function there**: you can **select each category** by
 clicking the checkbox next to it and with the widget at the bottom of
 each list you can **delete** the category/categories.
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:organize-article_categories-delete.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:organize-article_categories-delete.png)
+## Categories for links, images and files
 
-### Categories for links, images and files {#categories-for-links-images-and-files .sectionedit2#categories_for_links_images_and_files}
-
-The remaining three sets of categories for links, images and files work
-just as article categories described above.
+The remaining three sets of categories for links, images and files work just as article categories described above.
