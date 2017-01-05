@@ -12,29 +12,25 @@ This comprehensive reference provides detailed information about all callbacks u
 
 On this page:
 
--   [Public-side callbacks](#sec1)
--   [Admin-side callbacks](#sec2)
-    -   [Regular admin-side callbacks](#sec2-1)
-    -   [Admin-side criteria callbacks](#sec2-2)
-    -   [Admin-side validation callbacks](#sec2-3)
-    -   [Admin-side user-interface callbacks](#sec2-4)
-    -   [Admin-side theme callbacks](#sec2-5)
--   [Plugin callbacks](#sec3)
--   [Function- and tag-based callbacks](#sec4)
+* [Public-side callbacks](#public-side-callbacks)
+* [Admin-side callbacks](#admin-side-callbacks)
+  * [Regular admin-side callbacks](#sec2-1)
+  * [Admin-side criteria callbacks](#sec2-2)
+  * [Admin-side validation callbacks](#sec2-3)
+  * [Admin-side user-interface callbacks](#sec2-4)
+  * [Admin-side theme callbacks](#sec2-5)
+* [Plugin callbacks](#sec3)
+* [Function- and tag-based callbacks](#sec4)
 
-Public-side callbacks {#sec1}
----------------------
+## Public-side callbacks
 
-\[todo:intro para about what distinguishes a public-side callback\]
+TODO: intro para about what distinguishes a public-side callback
 
-These regular public-side callbacks have various associated *events*,
-but no *steps*.
+These regular public-side callbacks have various associated *events*, but no *steps*.
 
-#### *publish.php*
+#### publish.php
 
-\[todo:intro para about what this callback is concerned with\]
-
-notextile.
+TODO: intro para about what this callback is concerned with
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`            When it occurs                                                                                       What it allows/does
@@ -45,14 +41,11 @@ notextile.
   `textpattern`       Just before the page is rendered.                                                                    -
   `textpattern_end`   Once the page has been fully rendered.                                                               -
 
-notextile.
-
 </div>
-#### *publish/atom.php*
 
-\[todo:intro para about what this callback is concerned with\]
+#### publish/atom.php
 
-notextile.
+TODO: intro para about what this callback is concerned with
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`       When it occurs                                      What it allows/does
@@ -60,14 +53,11 @@ notextile.
   `atom_head`    After the feed's header has been set.               Adds items to the feed's header.
   `atom_entry`   As soon as the article's data has been populated.   Injects extra markup after the standard feed items have been generated.
 
-notextile.
-
 </div>
-#### *publish/rss.php*
 
-\[todo:intro para about what this callback is concerned with\]
+#### publish/rss.php
 
-notextile.
+TODO: intro para about what this callback is concerned with
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`      When it occurs                                      What it allows/does
@@ -75,14 +65,11 @@ notextile.
   `rss_head`    After the feed's header has been set.               Adds items to the feed's header.
   `rss_entry`   As soon as the article's data has been populated.   Injects extra markup after the standard feed items have been generated.
 
-notextile.
-
 </div>
-#### *publish/comment.php*
 
-\[todo:intro para about what this callback is concerned with\]
+#### publish/comment.php
 
-notextile.
+TODO: intro para about what this callback is concerned with
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`          When/where it occurs                              What it allows/does
@@ -91,48 +78,32 @@ notextile.
   `comment.save`    Just before a comment is posted.                  Makes additional decisions based on the comment content (e.g. anti-spam plugins).
   `comment.saved`   Just after a comment is posted to the database.   Argument \#3 is an array of name-value pairs containing the message *text*, *name*, *email*, *web*, *parentid*, *commentid*, *ip*, and visible status of the posted comment.
 
-notextile.
-
 </div>
-#### *publish/log.php*
 
-\[todo:intro para about what this callback is concerned with\]
+#### publish/log.php
 
-notextile.
+TODO: intro para about what this callback is concerned with
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`    When it occurs                                                   What it allows/does
   ----------- ---------------------------------------------------------------- -------------------------
   `log_hit`   Just before a log message is recorded in the 'txp_log' table.   Alters the log message.
 
-notextile.
-
 </div>
-Admin-side callbacks {#sec2}
---------------------
 
-Most callbacks have to do with the admin-side, organized below as
-regular, criteria, validation, layout, and theme.
+## Admin-side callbacks
 
-Admin-side callbacks are easy to recognize in the address bar of your
-browser. If you click on any admin-side panel link, you'll see the url
-contains *?event=panelname*, and if you click on any link in that panel,
-you'll see *?event=panelname&step=anothername*. Those values correspond
-to the `$event` and `$step` parameters you can use in [plugin
-development](http://docs.textpattern.io/development/). In fact, they
-will call any user-defined function that is registered for said `$event`
-and `$step`, allowing you to add your own *events* and *steps* as you
-need them.
+Most callbacks have to do with the admin-side, organized below as regular, criteria, validation, layout, and theme.
 
-### Regular admin-side callbacks {#sec2-1}
+Admin-side callbacks are easy to recognize in the address bar of your browser. If you click on any admin-side panel link, you'll see the URL contains `?event=panelname`, and if you click on any link in that panel, you'll see `?event=panelname&step=anothername`. Those values correspond to the `$event` and `$step` parameters you can use in [plugin development](http://docs.textpattern.io/development/). In fact, they will call any user-defined function that is registered for said `$event` and `$step`, allowing you to add your own *events* and *steps* as you need them.
 
-\[todo:intro para about regular admin-side callbacks\]
+### Regular admin-side callbacks
 
-#### *lib/txplib_head.php*
+TODO: intro para about regular admin-side callbacks
 
-\[todo:intro para about what this callback is concerned with\]
+#### lib/txplib_head.php
 
-notextile.
+TODO: intro para about what this callback is concerned with
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`       `$step`         When it occurs                                                     What it allows/does
@@ -141,20 +112,17 @@ notextile.
   `admin_side`   `pagetop`       Immediately before control is handed to the theme.                 Renders the navigation bar.
   `admin_side`   `pagetop_end`   Immediately after the theme has finished.                          Rendering the navigation bar useful for adding admin-wide markup below `pagetop`.
 
-notextile.
-
 </div>
+
 **Example:**
 
-\[todo:description of code example\]
+TODO: description of code example
 
-    [todo:simple code example demonstrating this callback]
+TODO: simple code example demonstrating this callback
 
-#### *lib/txplib_html.php*
+#### lib/txplib_html.php
 
-\[todo:intro para about what this callback is concerned with\]
-
-notextile.
+TODO: intro para about what this callback is concerned with
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`          `$step`                When it occurs                            What it allows/does
@@ -162,14 +130,11 @@ notextile.
   `admin_side`      `body_end`             Once the theme has rendered its footer.   Tacks on any extra admin-wide information immediately before the closing `</body>` tag.
   `some_event_ui`   `multi_edit_options`   -                                         Alters or augments the multi-edit select list; argument \#3 contains the options array which is passed by reference so it may be altered directly.
 
-notextile.
-
 </div>
-#### *include/txp_article.php*
 
-\[todo:intro para about what this callback is concerned with\]
+#### include/txp_article.php
 
-notextile.
+TODO: intro para about what this callback is concerned with
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`           `$step`           When it occurs                                                            What it allows/does
@@ -179,24 +144,20 @@ notextile.
   ping               -                 Just before a ping notification is sent upon publication of an article.   You may intercept the ping and provide your own.
   `article_ui`       `partials_meta`   -                                                                         Alters or augments the interface, usually based on the data sent to/from the AJAX save process. Argument \#3 is the record set of the article being edited. Argument \#4 is the partials array comprised of a ***key*** (unique name of the item available to alter), then an array: ***mode*** (the mechanism by which the partial may be updated), ***selector*** (the wholly encapsulated DOM selector to which the partial applies), ***callback*** (the callback function to utilize to update the nominated part of the interface), and ***html*** (an optional return value of the callback function).
 
-notextile.
-
 </div>
-#### *include/txp_diag.php*
 
-\[todo:intro para about what this callback is concerned with\]
+#### include/txp_diag.php
 
-notextile.
+TODO: intro para about what this callback is concerned with
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`         `$step`           When it occurs                                  What it allows/does
   ---------------- ----------------- ----------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   `diag_results`   `high` or `low`   At the end of the `doDiagnostics()` function.   Renders the content of the ****[Diagnostics](http://docs.textpattern.io/administration/diagnostics-panel) panel. Allows you to add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low).
 
-notextile.
-
 </div>
-#### *include/txp_admin.php*
+
+#### include/txp_admin.php
 
 \[todo:intro para about what this callback is concerned with\]
 
@@ -613,7 +574,7 @@ notextile.
 </div>
 #### *include/txp_admin.php*
 
-\[todo:intro para about what this callback is concerned with\]
+TODO: intro para about what this callback is concerned with
 
 For the
 ****[Users](http://docs.textpattern.io/administration/users-panel)
@@ -629,14 +590,12 @@ notextile.
 notextile.
 
 </div>
+
 #### *include/txp_prefs.php*
 
-\[todo:intro para about what this callback is concerned with\]
+TODO: intro para about what this callback is concerned with
 
-For the Preferences panels
-([Basic](http://docs.textpattern.io/administration/admin/basic-prefs-panel)
-and
-[Advanced](http://docs.textpattern.io/administration/admin/advanced-prefs-panel)).
+See the [Preferences administration panel](http://docs.textpattern.io/administration/admin/preferences-panel) documentation.
 
 notextile.
 
@@ -703,7 +662,7 @@ notextile.
 Plugin callbacks {#sec3}
 ----------------
 
-\[todo:intro para about plugin callbacks in general\]
+TODO: intro para about plugin callbacks in general
 
 #### *include/txp_plugin.php*
 
@@ -713,8 +672,6 @@ you wish to offer a link to your plugin's preferences from the
 ****[Plugins](http:docs.textpattern.io/administration/plugins-panel)
 panel, you must raise the `PLUGIN_HAS_PREFS` flag.
 
-notextile.
-
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`                             `$step`       When it occurs                                                                                                                                                                                               What it allows/does
   ------------------------------------ ------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------
@@ -723,19 +680,16 @@ notextile.
   `plugin_lifecycle.abc_your_plugin`   `installed`   When abc_your_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and clicking **Install** button on the next screen.                                               -
   `plugin_lifecycle.abc_your_plugin`   `deleted`     When abc_your_plugin has been removed by the act of a user selecting it and deleting it from the **Plugins** panel (note that the `plugin_lifecycle.abc_your_plugin` / `disabled` callback fires first).   -
 
-notextile.
-
 </div>
+
 Function- and tag-based callbacks {#sec4}
 ---------------------------------
 
-\[todo:intro para about function- and tag-based callbacks in general\]
+TODO: intro para about function- and tag-based callbacks in general
 
 #### *lib/txplib_misc.php*
 
-\[todo:intro para about what this callback is concerned with\]
-
-notextile.
+TODO: intro para about what this callback is concerned with
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`              `$step`              When/where it occurs                               What it allows/does
@@ -744,8 +698,6 @@ notextile.
   `sanitize_for_file`   -                    At start of the `sanitizeForUrl()` function.       Apply your own filename sanitization rules; passes the text to be sanitized as the callback's 4th argument.
   `sanitize_for_page`   -                    At start of the `sanitizeForUrl()` function.       Apply your own page name sanitization rules; passes the text to be sanitized as the callback's 4th argument.
   `txp_die`             `http_status_code`   Once the page's HTTP status has been determined.   Passes the numerical HTTP status code as the callback's *step* (e.g. `410`, `301`, etc) allowing you to target particular status codes and take action.
-
-notextile.
 
 </div>
 
