@@ -8,7 +8,7 @@ description: This comprehensive reference provides detailed information about al
 
 # Core callbacks reference
 
-This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](http://docs.textpattern.io/development/events-and-steps).
+This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](http://docs.textpattern.io/development/admin-side-events-and-steps).
 
 On this page:
 
@@ -373,17 +373,17 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Panel                                                                               `$event`           `$step`
   ----------------------------------------------------------------------------------- ------------------ ----------------
-  "Articles":http://docs.textpattern.io/administration/content/articles-panel         `admin_criteria`   `list_list`
-  "Comments":http://docs.textpattern.io/administration/content/comments-panel         "                  discuss_list
-  "Files":http://docs.textpattern.io/administration/content/files-panel               "                  `file_list`
-  "Forms":http://docs.textpattern.io/administration/presentation/forms-panel          "                  `form_list`
-  "Images":http://docs.textpattern.io/administration/content/images-panel             "                  `image_list`
-  "Links":http://docs.textpattern.io/administration/content/links-panel               "                  link_list
-  "Pages":http://docs.textpattern.io/administration/presentation/pages-panel          "                  `page_list`
-  "Sections":http://docs.textpattern.io/administration/presentation/sections-panel    `admin_criteria`   `section_list`
-  "Styles":http://docs.textpattern.io/administration/presentation/styles-panel        "                  `css_list`
-  "Users":http://docs.textpattern.io/administration/admin/users-panel                 "                  `author_list`
-  "Visitor logs":http://docs.textpattern.io/administration/admin/visitor-logs-panel   "                  `log_list`
+  "Articles":http://docs.textpattern.io/administration/articles-panel         `admin_criteria`   `list_list`
+  "Comments":http://docs.textpattern.io/administration/comments-panel         "                  discuss_list
+  "Files":http://docs.textpattern.io/administration/files-panel               "                  `file_list`
+  "Forms":http://docs.textpattern.io/administration/forms-panel          "                  `form_list`
+  "Images":http://docs.textpattern.io/administration/images-panel             "                  `image_list`
+  "Links":http://docs.textpattern.io/administration/links-panel               "                  link_list
+  "Pages":http://docs.textpattern.io/administration/pages-panel          "                  `page_list`
+  "Sections":http://docs.textpattern.io/administration/sections-panel    `admin_criteria`   `section_list`
+  "Styles":http://docs.textpattern.io/administration/styles-panel        "                  `css_list`
+  "Users":http://docs.textpattern.io/administration/users-panel                 "                  `author_list`
+  "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel   "                  `log_list`
 
 notextile.
 

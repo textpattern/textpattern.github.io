@@ -8,7 +8,7 @@ description: The administration side of Textpattern is where you configures and 
 
 # Textpattern administration
 
-The administration side of Textpattern is where you, and any [users](admin/users-panel) having sufficient [privileges](http://docs.textpattern.io/administration/user-roles-and-privileges), configures and manages the website's content, architecture, presentation, and behaviour (excluding what might need done via the web or database servers).
+The administration side of Textpattern is where you, and any [users](http://docs.textpattern.io/administration/users-panel) having sufficient [privileges](http://docs.textpattern.io/administration/user-roles-and-privileges), configures and manages the website's content, architecture, presentation, and behaviour (excluding what might need done via the web or database servers).
 
 On this page:
 
