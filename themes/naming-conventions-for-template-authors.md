@@ -1,8 +1,16 @@
-\\n
+---
+layout: document
+category: Themes
+published: true
+title: Naming conventions for template authors
+description: This is a draft for a proposed naming convention, to name, structure and package up template Files.
+---
 
-#### Unofficial Working Draft for a TXP Templating Naming Convention {#unofficial_working_draft_for_a_txp_templating_naming_convention}
+# Naming conventions for template authors
 
-##### Purpose and Intention of this Document {#purpose_and_intention_of_this_document}
+**Unofficial Working Draft for a TXP Templating Naming Convention**
+
+**Purpose and Intention of this Document**
 
 1.  This is a Draft for a proposed Naming Convention, to name, structure
     and package up Template Files

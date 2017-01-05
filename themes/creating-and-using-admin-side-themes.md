@@ -1,10 +1,20 @@
-\\nAdmin-side themes allow Textpattern administrators (and *publishers*)
-to choose a specific theme from the list of *core* options via the Admin
-panel. The core admin theme options are:
+---
+layout: document
+category: Themes
+published: true
+title: Creating and using admin-side themes
+description: Admin-side themes allow Textpattern administrators (and publishers) to choose a specific theme for the administration panels.
+---
 
--   Classic
--   Remora
--   Hive
+# Creating and using admin-side themes
+
+Admin-side themes allow Textpattern administrators (and publishers) to choose a specific theme for the administration panels, from the list of options via the Admin Preferences.
+
+The core admin-side theme options are:
+
+* Classic
+* Hive
+* Hive (Flat Neutral)
 
 To change the theme, go to Admin &gt;
 [basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences),
