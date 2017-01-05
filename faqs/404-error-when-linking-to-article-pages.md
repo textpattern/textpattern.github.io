@@ -8,6 +8,9 @@ tags:
  - Error warnings and notices FAQs
 ---
 
+TODO: Move relevant parts of this and [500 internal server error](https://github.com/textpattern/textpattern.github.io/blob/master/faqs/500-internal-server-error.md) to [Diagnostics](https://github.com/textpattern/textpattern.github.io/blob/master/administration/diagnostics-panel.md) under the section about clean URLs. The FAQ entries can then be removed.
+
+
 # FAQ: Clean URLs don't work
 
 These and similar problems happen when you use 'clean' URL mode on a server that doesn't support `mod_rewrite` in `.htaccess`, or requires additional configuration in order to work. The .htaccess file supplied with Textpattern is designed to work on most Apache servers, but there is no universal solution.
