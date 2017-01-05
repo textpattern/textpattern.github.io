@@ -75,7 +75,7 @@ At the top of the main editing area are three vertical tabs labeled 'Text', 'HTM
 
 <img alt="Figure 2" src="http://docs.textpattern.io/img/write-panel-article-view.png" srcset="http://docs.textpattern.io/img/write-panel-article-view.png 1x, http://docs.textpattern.io/img/write-panel-article-view@2x.png 2x">
 
-* **Text**: This tab is active by default and is the one you actually draft your article in. The Text view works just like a regular text editor (not a word processor). To give your text formatting, you will have to know either Hypertext Markup Language (HTML), or use @@Textile@@. Textile is a remarkably simple text editing syntax that allows you to format text for the Web without having to know HTML (more about using Textile is provided in the section @@Textile help@@ below).
+* **Text**: This tab is active by default and is the one you actually draft your article in. The Text view works just like a regular text editor (not a word processor). To give your text formatting, you will have to know either Hypertext Markup Language (HTML), or use a text filter such as (the default) Textile. Textile is a remarkably simple text editing syntax that allows you to format text for the web without having to know HTML (more about using text filters is provided in the section [Text formatting help](#text-formatting-help) below).
 * **HTML**: This tab will show you what your article looks like in HTML format, assuming you have used HTML or Textile to do any formatting. If you have, you will see the resulting HTML syntax incorporated in your text. You cannot do any editing in this view, it is for previewing your HTML work-in-progress only.
 * **Preview**: This tab will show you what your text will look like (whether you used HTML or Textile) once it is live on the Web. You cannot do any editing in this view, it is for previewing your work-in-progress only.
 
@@ -192,9 +192,9 @@ In the same way you can set a deliberate publishing date/time for an article, yo
 
 ### Meta
 
-#### URL-only Title
+#### URL-only title
 
-The URL-only title field ('URL' meaning *Uniform Resource Locator*), is a very handy feature that allows you to modify the [Permalink](https://en.wikipedia.org/wiki/Permalink) URL for the article as it would appear, for example, in the the address bar of a web browser if you were using 'Clean URLs'. This is particularly useful if the title of your article uses non-ASCII characters, such as what might be involved with certain languages.
+The URL-only title field ('URL' meaning [Uniform Resource Locator](https://en.wikipedia.org/wiki/Uniform_Resource_Locator)), is a very handy feature that allows you to modify the [Permalink](https://en.wikipedia.org/wiki/Permalink) URL for the article as it would appear, for example, in the the address bar of a web browser if you were using 'Clean URLs'. This is particularly useful if the title of your article uses non-ASCII characters, such as what might be involved with certain languages.
 
 If you leave this field blank, the URL title will be generated from the actual article title, which is recommended for URL health reasons.
 
@@ -245,7 +245,7 @@ Custom fields are defined in the @@Preferences administration panel@@ custom fie
 
 ### Advanced options
 
-Advanced Options contains extended options for the particular article being edited.
+Advanced options contains extended options for the particular article being edited.
 
 #### Article markup and Excerpt markup
 
@@ -259,7 +259,7 @@ In your blog, you normally publish articles which are pure text. So your default
 
 ### Text formatting help
 
-Depending on the text filters you have installed (i.e. the default Textile, Markdown, etc.) you can access a quick reference guide here showing the text formatting syntax for common text formatting (note this is *not* a comprehensive list of all formatting options).
+Depending on the text filters you have installed (i.e. Textile (the default), Markdown, etc.) you can access a quick reference guide here showing the text formatting syntax for common text formatting (note this is *not* a comprehensive list of all formatting options).
 
 ### Recent articles
 
