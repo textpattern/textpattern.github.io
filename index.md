@@ -28,7 +28,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 ### Site administration
 
 * [Textpattern administration](http://docs.textpattern.io/administration/) (admin-side structure and functionality)
-* [Administration fast-track](http://docs.textpattern.io/administration/admin-fast-track) (workflow insights to get up to speed  quick)
+* [Administration fast-track](http://docs.textpattern.io/administration/admin-fast-track) (workflow insights to get up to speed quick)
 * [Textpattern security](http://docs.textpattern.io/administration/security) (read before you worry or hack the core)
 
 </div>
@@ -62,6 +62,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 <div class="layout-3col">
 
 ### FAQs
+
+* [Complete list of Textpattern FAQs](http://docs.textpattern.io/faqs/) (the most commonly-asked Textpattern questions)
 
 </div>
 </div>
