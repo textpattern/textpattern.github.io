@@ -1,2 +1,0 @@
-\nJust fyi: in most places that accept a date, you can use relative dates like &lt;txp:zem_event_mini_calendar date=“next month” /&gt; or &lt;txp:zem_event_mini_calendar date=“+6 weeks” /&gt;. "General syntax info":http://www.gnu.org/software/tar/manual/html_node/tar_109.html
-
