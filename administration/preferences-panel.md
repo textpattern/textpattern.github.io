@@ -102,81 +102,38 @@ tag.
 
 #### Permanent link mode {#permanent_link_mode}
 
-The *Permanent link mode* drop-down list is intended to make it easier
-to establish flexible (or [Clean
-URLs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#clean_urls))
-in your site, which in turn is a nice usability feature for your Web
-site visitors. The drop-down list currently provides six different
-options (Figure 5), one for "messy" URLs (which is the option for NOT
-having clean URLs), and five for clean URLs; each having a specific path
-format.
+The *Permanent link mode* drop-down list is intended to make it easier to establish flexible (or [Clean URLs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#clean_urls)) in your site, which in turn is a nice usability feature for your Web site visitors. The drop-down list currently provides six different options (Figure 5), one for "messy" URLs (which is the option for NOT having clean URLs), and five for clean URLs; each having a specific path format.
 
-If you want clean URLs to work for your site, this is the very first
-step to making it happen, by selecting one of the options other than
-"messy." However, it is usually not as simple as just selecting one of
-these options to make clean URLs work. Getting clean URLs to work may
-take a combination of steps, addressed in
-[managing_clean_urls](/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls).
+If you want clean URLs to work for your site, this is the very first step to making it happen, by selecting one of the options other than "messy." However, it is usually not as simple as just selecting one of these options to make clean URLs work. Getting clean URLs to work may take a combination of steps, addressed in [managing_clean_urls](/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls).
 
 #### Use Textile {#use_textile}
 
-Textile is a meta-formatting language that lets site authors format work
-without having to know HTML completely. This option may be set to select
-usage of Textile in articles; disable Textile but keep smart replacement
-of line breaks and special characters; or disable article manipulation
-entirely.
+Textile is a meta-formatting language that lets site authors format work without having to know HTML completely. This option may be set to select usage of Textile in articles; disable Textile but keep smart replacement of line breaks and special characters; or disable article manipulation entirely.
 
 #### Logging
 
-The "Logging" control allows you to select what kinds of visiting
-activity Textpattern should record when such activity occurs. The
-recorded information is displayed in the
-[visitor_logs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs)
-panel for you to review. This *Logging* control is a drop-down menu with
-three options (Figure 6).
+The "Logging" control allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [visitor_logs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs)
+panel for you to review. This *Logging* control is a drop-down menu with three options (Figure 6).
 
--   **All hits**: By defaualt Textpattern will collect information for
-    all site hits.
--   **Referrers only**: The *Referrers only* option will only record
-    information about visitors from another location. This option is
-    often the most popular choice because it allows you to see what kind
-    of traffic your site is getting, while at the same time eliminating
-    any log entries that might result from your own access to the site
-    while, for example, making any site updates (generally you do not
-    need to see your own activity on your site).
+-   **All hits**: By defaualt Textpattern will collect information for all site hits.
+-   **Referrers only**: The *Referrers only* option will only record information about visitors from another location. This option is often the most popular choice because it allows you to see what kind of traffic your site is getting, while at the same time eliminating any log entries that might result from your own access to the site while, for example, making any site updates (generally you do not need to see your own activity on your site).
 -   **None**: You can also choose to not log any information at all.
 
 #### Accept comments? {#accept_comments}
 
-This is a global setting (in this case for any article in any *Section*)
-for whether or not you want to allow your articles to accept comments.
-This is simply controlled with the "Yes" and "No" radio buttons,
-respectively. This setting can be overridden on an article-by-article
-basis in the
-[write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) tab as you
-write new articles.
+This is a global setting (in this case for any article in any *Section*) for whether or not you want to allow your articles to accept comments. This is simply controlled with the "Yes" and "No" radio buttons, respectively. This setting can be overridden on an article-by-article basis in the [write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) tab as you write new articles.
 
 ### Comments {#comments .sectionedit3#comments}
 
-If you set **Accept comments** to
-
-    yes
-
-, the bottom region of the Site Preferences view is where you establish
-your global settings for article comments.
+If you set **Accept comments** to 'Yes', the bottom region of the Site Preferences view is where you establish your global settings for article comments.
 
 #### On by default? {#on_by_default}
 
-Permission for commenting is regulated on a per-article basis. This
-option controls the default setting for newly authored articles.
+Permission for commenting is regulated on a per-article basis. This option controls the default setting for newly authored articles.
 
 #### Default invite {#default_invite}
 
-The text in this edit field will be automatically set in the comment
-invitation field on the
-[write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) page for
-new articles. The comment invitation may also be controlled on a
-per-article basis.
+The text in this edit field will be automatically set in the comment invitation field on the [write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) page for new articles. The comment invitation may also be controlled on a per-article basis.
 
 #### Moderate comments? {#moderate_comments}
 
