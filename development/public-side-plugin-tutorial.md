@@ -35,7 +35,7 @@ The plugin in this tutorial will:
 4.  Use Textpattern's [else](http://docs.textpattern.io/tags/else) tag
 
 Since all plugins must use a [three-character alphanumeric
-prefix](http://docs.textpattern.io/development/registered-textpattern-developer-prefixes),
+prefix](http://docs.textpattern.io/development/plugin-developer-prefixes),
 we're going to use **abc** in this tutorial, which is reserved for
 documentation purposes.
 

@@ -45,7 +45,7 @@ When you're ready to register a prefix, create an "issue" in the [user
 docs repo on
 Github](https://github.com/textpattern/textpattern.github.io) and an
 editor will add it to the [plugin developer
-prefix](http://docs.textpattern.io/development/registered-textpattern-developer-prefixes)
+prefix](http://docs.textpattern.io/development/plugin-developer-prefixes)
 list.
 
 **Prefix owners**, if you're username is not linked with your forum

@@ -410,7 +410,7 @@ included.
 These may be useful depending on the kind of plugin you're building.
 
 -   [User role types and
-    privileges](http://docs.textpattern.io/administration/user-role-types-and-privileges)
+    privileges](http://docs.textpattern.io/administration/user-roles-and-privileges)
     (If your plugin will interact with user accounts.)
 -   [Database schema
     reference](http://docs.textpattern.io/development/database-schema-reference)
