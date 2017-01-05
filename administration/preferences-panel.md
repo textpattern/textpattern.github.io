@@ -21,7 +21,7 @@ On this page:
 
 ## Site preferences
 
-The Site preferences are an important aspect of site configuration and used by Textpattern in other instances of your site, not the least of which will be proper diagnostics monitoring, and how certain information is presented to site visitors. There are a number of different settings, which are discussed below.
+Site preferences are global settings for your Textpattern site. They include settings for your site name, website address, web server location, time & date, visitor logging and article comment functionality.
 
 ### Site name
 
