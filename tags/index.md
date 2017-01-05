@@ -4,7 +4,6 @@ category: Tags
 published: true
 title: Tag reference index
 description: A complete list of all the Textpattern tags available to use.
-tags:
 ---
 
 # Tag reference index
