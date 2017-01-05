@@ -13,15 +13,15 @@ A list of the most commonly-asked questions on basic usage of Textpattern CMS. T
 
 ## Subcategories
 
-* [Acquisition and installation FAQs](#acquisition-and-installation-faqs)
-* [Development FAQs](#development-faqs)
-* [Errors, warnings and notices FAQs](#errors-warnings-and-notices-faqs)
-* [Features and limitations FAQs](#features-and-limitations-faqs)
-* [Localization FAQs](#localization-faqs)
-* [Miscellaneous FAQs](#miscellaneous-faqs)
-* [Presentation and templates FAQs](#presentation-and-templates-faqs)
-* [Template tags FAQs](#template-tags-faqs)
-* [XML feeds FAQs](#xml-feeds-faqs)
+* [Acquisition and installation FAQs](acquisition-and-installation-faqs)
+* [Development FAQs](development-faqs)
+* [Errors, warnings and notices FAQs](errors-warnings-and-notices-faqs)
+* [Features and limitations FAQs](features-and-limitations-faqs)
+* [Localization FAQs](localization-faqs)
+* [Miscellaneous FAQs](miscellaneous-faqs)
+* [Presentation and templates FAQs](presentation-and-templates-faqs)
+* [Template tags FAQs](template-tags-faqs)
+* [XML feeds FAQs](xml-feeds-faqs)
 
 ## Complete list of Textpattern FAQs
 
