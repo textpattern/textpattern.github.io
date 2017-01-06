@@ -262,6 +262,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [permlink](permlink)
 * [php](php)
 * [popup](popup)
+* [popup_comments](popup_comments)
 * [posted](posted)
 * [prev title](prev_title)
 
