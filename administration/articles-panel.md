@@ -23,7 +23,7 @@ On this page:
 
 ## Search function
 
-Because the article list can get pretty long, a search function is available at the top of the list. You can use the Search function to locate an article directly by a search phrase or to filter the view on your articles by particular criteria, thus reducing the number of articles in the resulting list.
+Because the article list can get pretty long, a search function is available at the top of the list. You can use the search function to locate an article directly by a search phrase or to filter the view on your articles by particular criteria, thus reducing the number of articles in the resulting list.
 
 The Search function has two components:
 
@@ -34,11 +34,9 @@ Query text entered in the textarea will be treated as a *complete phrase* (e.g. 
 
 You don't need to wildcard query text at the beginning or the end (e.g. "time" will find "parttime", "times", "timestamp" as well). But you can use wildcard ? within a query.
 
-After entering your search criteria you start searching by clicking the Search button. As a result you will be given a new list of articles which meet the criteria.
+After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of articles which meet the criteria.
 
-As a default the search will find entered text in the articles' title,
-body and excerpt. But you can do more refined searches by selecting
-another area to search in. The drop-down-list toggle button provides the following search criteria:
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in. The drop-down-list toggle button provides the following search criteria:
 
 * Search all (default)
 * ID
@@ -52,7 +50,7 @@ another area to search in. The drop-down-list toggle button provides the followi
 * Posted
 * Modified
 
-Examples: You can search (or list) an article by its ID number or date posted. You can list all articles of an author, you even don't need the full author ID. Choose 'Author' and typing "adm" possibly is enough for the admin (provided no other author has "adm" in his ID). You can list all 'Drafts' (choose 'Status' and type "dr").
+**Examples:** You can search (or list) an article by its ID number or date posted. You can list all articles of an author, you even don't need the full author ID. Choose 'Author' and typing "adm" possibly is enough for the admin (provided no other author has "adm" in his ID). You can list all 'Drafts' (choose 'Status' and type "dr").
 
 ## List of articles
 
