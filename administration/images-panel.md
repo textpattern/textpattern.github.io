@@ -22,6 +22,7 @@ On this page:
   * [Columns](#columns)
   * [Perform changes on selected images](#perform-changes-on-selected-images)
 * [Pages and articles listed per page](#pages-and-articles-listed-per-page)
+* [Image tag builder](#image-tag-builder)
 
 Of course you could upload images (using FTP) and place image tags (using HTML) directly. But then you'd have to provide elements like captions separately for every place you use an image. The images tools of Textpattern provide a way of managing image-related info *in a central place*. If you have to change a caption or for example need to replace an image (e.g. a sharper one or another view) you can do these changes once at a central place and the changes will automatically take effect wherever you placed the image using Textpattern tags.
 
@@ -83,11 +84,6 @@ Text entered in the textarea will be treated as a complete phrase (see the [Arti
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of images which meet the criteria.
 
-As a default the search will normally proceed in the images' **name**.
-But you can do more refined searches by selecting another area to search
-in. The drop-down-list left from the textarea provides the following
-search criteria:
-
 As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in. The drop-down-list toggle button provides the following search criteria:
 
 * Search all (default)
@@ -106,107 +102,62 @@ Beneath the upload and search area there is the table, or list, of existing imag
 
 To explain the *columns* going across the top: If you click the header of a column (except 'Tags'), it will sort the list of articles according to that column. Click again to reverse sort direction.
 
+### Columns
+
 The default view shows these columns:
 
-**ID:** an ID number is automatically assigned to each image. This
-is what identifies it and calls it on the live site. Right from the ID\#
-two links reside: *Edit* â€“ click this (or the name of the image) to
-edit the images properties. *View* â€“ click this to view the image in
-the browser window.
+**ID:** an ID number is automatically assigned to each image. This is what identifies it and calls it on the live site. Click this ID to edit the image properties.
 
-**Date:** the date, when the image record has been created (normally
-when the image has been uploaded).
+**Name:** the filename of the image. Click this to edit the images properties.
 
-**Name:** the filename of the image. Click this to edit the images
-properties.
+**Thumbnail:** shows a thumbnail of the image, if any exists (for a better visual overview in this table it is recommended to always generate a thumbnail).
 
-**Thumbnail:** shows a thumbnail of the image, if any exists. (So for a
-better overview in this table it is recommended to always generate a
-thumbnail.)
+**Category:** if the image was assigned a category, then it will reflect that here.
 
-**Tags:** here you have a choice of *three ways* to include the image
-in your articles or forms:
+**Author:** the author who created the image record.
 
--   as a textile(d) text
--   as a textpattern image-tag
--   as plain HTML
+At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
-Each link will open a pop-up-window with a tag-builder. You can choose
-the elements you need and an appropriate tag in Textile, Textpattern or
-HTML will be created. This tag you can copy and place where needed.
+In the ID column, a links will be added for each image: *View:* click this to view the actual image in a new browser window.
 
-The tag builder has several options:
+**Date:** the date when the image record was created (normally when the image was initially uploaded).
 
-**Escape HTML:** Escape any HTML entities encountered in the form
-(clarification needed).
+**Tags:** here you have a choice of *three ways* to include the image in your articles or forms:
 
-**Id HTML attribute:** Example:
+1. as a Textile(d) text
+2. as a Textpattern image tag
+3. as plain HTML
 
-    gallery1
+Each link will open a pop-up window with a 'tag builder' ([see below](#image-tag-builder) for further details). You can choose the elements you need and an appropriate tag in Textile, Textpattern or HTML will be created. This tag you can copy and place where needed.
 
-. The ID you'd like to assign to the image. In HTML / XHTML this is
-rendered as id=“my_id” inside the img tag.
+### Perform changes on selected images
 
-**CSS class:** Example:
+In the first column you will find a checkbox for each image. Here you can select images you want to change in a bulk manner. You can mark images by checking the checkbox or you can use the checkbox in the head bar of the list to mark all images on that page.
 
-    gallery
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
 
-. The CSS class to assign to the image tag when it is rendered in HTML /
-XHTML.
-
-**Inline style (CSS)**: Example:
-
-    border: 1px solid black
-
-. The inline CSS style(s) (separated by semicolons) you'd like to assign
-to the image. These styles are placed inside a style tag in the final
-HTML / XHTML.
-
-**Wrap tag**: Example
-
-    p
-
-. Tells Textpattern to surround the image with this HTML / XHTML tag
-when rendered. Output would be
-
-    <p><img src="etc" /></p>
-
-...in this case.
-
-Returning to the Images table:
-
-**Category** â€“ if the image was assigned a category, then it will
-reflect that here.
-
-**Author** - the author who created the images record.
-
-#### Perform changes on selected images {#perform_changes_on_selected_images}
-
-On the right side you will find a checkbox for each image. Here you can
-select images you want to change in a jointly manner. You can mark
-images by ckecking the checkbox or you can use select-buttons at the
-bottom of the list: “All”, “None” or “Range”. If you want to select a
-range you simply mark the checkbox of both the first and the last image
-in the range and then click “Range”. The images between will then
-automatically be checked too.
-
-For performing changes now you go to the drop-down-list “with selected”
-and choose the function you want to perform. The following changes are
-available:
-
-* Change Category
+* Change category (if image categories are defined)
+* Change author
 * Delete
 
-When selecting the “Change Category”-option you will get another
-drop-down-list below which will give you the list of categories to
-choose from.
-
-After selecting the options you want to perform click “Go” to start the
-changes. A pop-up window will ask “Are you sure?” and then (if “yes”)
-the changes will be performed.
+When selecting a 'Change'-option you will get another drop-down-list which will give you the values to choose from, e.g. the list of authors, or categories. After selecting the options you want to perform click 'Go' to start the changes. A pop-up window will ask "Are you sure?" and then (if 'yes') the changes will be performed.
 
 ## Pages and images listed per page
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of images listed per page by selecting another value from the number range.
+
+## Image tag builder
+
+The image tag builder has several options:
+
+**Escape HTML:** escape any HTML entities encountered in the form.
+
+**HTML id attribute:** for example `gallery1`. The `id` attribute you'd like to assign to the image. In HTML this is rendered as `id="my_id"` inside the `<img>` tag.
+
+**CSS class:** for example `gallery`. The CSS class to assign to the image. In HTML this is rendered as `class="my_class"` inside the `<img>` tag.
+
+**Inline (CSS) style**: For example: `border: 1px solid black;`. The inline CSS style(s) (separated by semicolons) you'd like to assign to the image. These styles are placed inside a style attribute in the final HTML.
+
+**Wrap tag**: For example `p`. Tells Textpattern to surround the image with this HTML tag when rendered. Output would be `<p><img src="etc" /></p>` in this example.
 
 [Next: Files panel](http://docs.textpattern.io/administration/files-panel)

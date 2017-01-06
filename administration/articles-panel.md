@@ -90,17 +90,17 @@ In the ID column, two links will be added for each article: **Edit:** click this
 
 ### Perform changes on selected articles
 
-On the left side you will find a checkbox for each article. Here you can select articles you want to change in a bulk manner. You can mark articles by checking the checkbox or you can use the checkbox in the head bar of the list to mark all articles on that page.
+In the first column you will find a checkbox for each article. Here you can select articles you want to change in a bulk manner. You can mark articles by checking the checkbox or you can use the checkbox in the head bar of the list to mark all articles on that page.
 
 In order to quickly select ranges of articles click the checkbox of the first article you want to mark, press and hold the shift key, then click the checkbox of the last article in the range. All articles between will be checked too. You can add ranges to your selection by repeating these steps.
 
 For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
 
 * Change section
-* Change Category1
-* Change Category2
+* Change Category1 (if article categories are defined)
+* Change Category2 (if article categories are defined)
 * Change status
-* Change comments
+* Change comments (if comments are turned on globally)
 * Change author
 * Duplicate
 * Delete
