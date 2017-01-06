@@ -322,7 +322,7 @@ This means you need to remove the `/textpattern/setup` folder from the web serve
 Image directory is read-only.
 {: .alert-block .warning}
 
-This means permissions on your `/images` folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[^4]
+This means permissions on your `/images` folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[^1]
 
 No temporary directory defined.
 {: .alert-block .warning}
@@ -479,7 +479,7 @@ The following functions are used by Textpattern. If your diagnostics reports any
 
 ### Functions not used by Textpattern
 
-These functions are *not* used by Textpattern.[^5] If diagnostics reports one or more of these functions as disabled, you may safely ignore the message, because they do not affect Textpattern's operation in any way.
+These functions are *not* used by Textpattern.[^4] If diagnostics reports one or more of these functions as disabled, you may safely ignore the message, because they do not affect Textpattern's operation in any way.
 
 * `apache_child_terminate`
 * `apache_getenv`
@@ -541,6 +541,4 @@ These functions are *not* used by Textpattern.[^5] If diagnostics reports one or
 
 [^3]: **False problems:** On rare occasions, yellow and red messages have been known to appear but not go away when addressed as instructed by their help information. Textpattern developers have indicated this can happen in odd situations, and it's a false reading nearly every time, meaning there isn't anything to worry about. If you ever have this problem and can't seem to resolve it, post about it in the [Textpattern Forum Troubleshooting section](http://forum.textpattern.com/viewforum.php?id=67) and someone will try to help.
 
-[^4]: **Folder permissions:** A chmod setting of 755 or 711 should work to make a folder writable, and is secure. A lot of people have trouble setting these values, however, and need to use a chmod of 777, which has [security implications](http://forum.textpattern.com/viewtopic.php?id=26613). The discrepancy is due to how Apache directives are configured on the web server, which means you may have to ask your server administrator or web host to change the directives. If they won't do it, it might be time to find a new web host, because no web host should force you to operate your site insecurely.
-
-[^5]: If you discover any functions named in your feedback message that are not listed above, create a new topic in the [Textpattern Forum Troubleshooting section](http://forum.textpattern.com/viewforum.php?id=67) and post the 'High' diagnostics info so someone can help you determine if the function is necessary or not.
+[^4]: If you discover any functions named in your feedback message that are not listed above, create a new topic in the [Textpattern Forum Troubleshooting section](http://forum.textpattern.com/viewforum.php?id=67) and post the 'High' diagnostics info so someone can help you determine if the function is necessary or not.
