@@ -23,7 +23,7 @@ On this page:
 <txp:comments_form />
 ~~~
 
-The **comments_form** tag is a *single* tag which is used to display a comment form. Comments will be attached to present individual article as a default, or to the article set by the `id` attribute.
+The **comments_form** tag can be used as a *single* tag or a *container* tag and is used to display a comment form. Comments will be attached to present individual article as a default, or to the article set by the `id` attribute.
 
 ## Attributes
 
@@ -84,6 +84,7 @@ Other tags used: [comment_id](comment_id), [comments](comments), [if_comments_al
 
 ### Version 4.6.0
 
+Can be used as a container tag. \\
 `msgstyle` attribute deprecated. \\
 `forgetlabel`, `isize`, `msgcols`, `msgrows`, `msgstyle`, `previewlabel`, `rememberlabel` and `submitlabel` attributes deprecated and functionality moved to individual `comment_*` input tags.
 

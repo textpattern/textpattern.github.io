@@ -23,7 +23,7 @@ On this page:
 <txp:comments_preview />
 ~~~
 
-The **comments_preview** tag is a *single* tag which is used to display a preview of a visitor's comment.
+The **comments_preview** tag can be used as a *single* tag or a *container* tag and is used to display a preview of a visitor's comment.
 
 ## Attributes
 
@@ -49,12 +49,15 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : HTML tag to wrap around the list, specified without brackets (e.g. `wraptag="div"`).
 : **Default:** depends upon 'Present Comments as a Numbered List?' preference setting - either `ol` or unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
-## Genealogy
+## Examples
+
+TODO
 
 ## Genealogy
 
 ### Version 4.6.0
 
+Can be used as a container tag. \\
 `label` attribute added (replaces functionality of deprecated `previewlabel` attribute in [comments_form](comments_form) tag).
 
 ### Version 4.0.4

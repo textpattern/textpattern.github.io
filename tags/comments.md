@@ -23,7 +23,7 @@ On this page:
 <txp:comments />
 ~~~
 
-The **comments** tag is a *single* tag which is used to display the comments associated with a particular article. Comments will be displayed for the present individual article as a default, or to the article set by the `id` attribute.
+The **comments** tag can be used as a *single* tag or a *container* tag and is used to display the comments associated with a particular article. Comments will be displayed for the present individual article as a default, or to the article set by the `id` attribute.
 
 ## Attributes
 
@@ -117,4 +117,5 @@ Other tags used: [comment_email](comment_email), [comments_form](comments_form),
 
 ### Version 4.6.0
 
+Can be used as a container tag. \\
 `breakclass` attribute deprecated.

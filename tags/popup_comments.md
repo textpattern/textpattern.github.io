@@ -23,7 +23,7 @@ On this page:
 <txp:popup_comments />
 ~~~
 
-The **popup_comments** can be used as a *single* tag or a *container* tag. TODO.
+The **popup_comments** tag can be used as a *single* tag or a *container* tag. TODO.
 
 ## Attributes
 
