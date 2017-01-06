@@ -184,10 +184,8 @@ After selecting the appropriate options click “Go” to start the changes.
 A pop-up window will ask “Are you sure?” and then (if “yes”) the changes
 will be performed.
 
-### Pagination {#pagination .sectionedit5#pagination}
+## Pages and files listed per page
 
-At the very bottom of the list you will find a pagination and links for
-next and previous pages if there are more pages. By default Textpattern
-will show 25 files per page. You can also change the number of files per
-page by selecting another value in the drop-down-list “View \# per
-page”: 15, 25, 50 and 100.
+At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of files listed per page by selecting another value from the number range.
+
+[Next: Links panel](http://docs.textpattern.io/administration/links-panel)

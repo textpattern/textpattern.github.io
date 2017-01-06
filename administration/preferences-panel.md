@@ -421,3 +421,5 @@ When enabled, this setting will allow use of PHP within articles. The author mus
 ##### Allow raw php? {#allow_raw_php}
 
 When enabled, this setting allows raw PHP code to be used. Normally this isn't allowed, and PHP code must be without both opening and closing PHP tags, and enclosed within txp:php tags. This setting is for backwards compatible purposes only, and it is recommended to be set to "No".
+
+[Next: Languages panel](http://docs.textpattern.io/administration/languages-panel)

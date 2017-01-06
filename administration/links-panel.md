@@ -19,10 +19,12 @@ way changes will take effect at every occurence of a link and - for
 example - additions to a topic list of resource links will automatically
 be included wherever you placed the list.
 
+The [linklist](http://docs.textpattern.io/tags/linklist) tag will output links from the link repository, with filter criteria and presentation settings applied.
+
 On this panel you can do two basic things:
 
--   *Create* a new link and *edit* existing ones
--   and *manage* your existing links.
+1. *Create* a new link and *edit* existing ones
+2. *Manage* your existing links.
 
 (So the link panel in a way combines what for *articles* is divided in
 two panels “Write” and “Article”.)
@@ -173,16 +175,8 @@ After selecting the options you want to perform click “Go” to start the
 changes. A pop-up window will ask “Are you sure?” and then (if “yes”)
 the changes will be performed.
 
-### Pagination {#pagination .sectionedit3#pagination}
+## Pages and links listed per page
 
-At the very bottom of the list you will find a pagination and links for
-next and previous pages if there are more pages. By default Textpattern
-will show 25 links per page. You can also change the number of links per
-page by selecting another value in the drop-down-list “View \# per
-page”: 15, 25, 50 and 100.
+At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of links listed per page by selecting another value from the number range.
 
-### Related Textpattern Tag {#related-textpattern-tag .sectionedit4#related_textpattern_tag}
-
-[linklist](/home/www/zendstudio/dokuwiki/bin/doku.php?id=linklist) will
-output links from the link repository, with filter criteria and
-presentation settings applied.
+[Next: Categories panel](http://docs.textpattern.io/administration/categories-panel)

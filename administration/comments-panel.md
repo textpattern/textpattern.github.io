@@ -104,3 +104,9 @@ reason you banned an IP: the comment's number. If you click on the
 linked number, the comment will be opened in edit mode for reviewing and
 possibly editing. The last column provides an “unban” for the IP (Ip\#
 in the second column).
+
+## Pages and comments listed per page
+
+At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of comments listed per page by selecting another value from the number range.
+
+[Next: Sections panel](http://docs.textpattern.io/administration/sections-panel)

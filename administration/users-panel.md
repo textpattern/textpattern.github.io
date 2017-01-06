@@ -85,6 +85,12 @@ There are situations (membership communities, employee intranets, magazine artic
 * [mem_self_register](http://forum.textpattern.com/viewtopic.php?id=8520) - A plugin similar to cbe_frontauth, but also enables the ability to register an account too. This plugin is often used in combination with [mem_form](http://forum.textpattern.com/viewtopic.php?id=25247).
 * [ign_password_protect](http://forum.textpattern.com/viewtopic.php?id=8799) - A plugin that enables you to password protect part or all of a website's front-end, and create varying rights of access to the protected areas.
 
+## Pages and users listed per page
+
+At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of users listed per page by selecting another value from the number range.
+
+[Next: Plugins panel](http://docs.textpattern.io/administration/plugins-panel)
+
 [^1]: See [User roles and privileges](http://docs.textpattern.io/administration/user-roles-and-privileges) for how roles and privileges match up.
 
 [^2]: A Publisher has the same rights and power as the site administrator, but can not delete or demote the administrator account. The administrator can delete or demote the Publisher at any time. The only way to change the administrator account is to do so directly in the users table of the database. This might need done, for example, when a website is being delivered to a client and ongoing support from the original site administrator (builder) is no longer needed or wanted.

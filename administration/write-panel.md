@@ -270,3 +270,5 @@ The last option is 'Recent articles', and there's not much to say about this opt
 Especially if you like to save your work from time to time while not yet finished, you should take care of the article's *Status*: By default it is 'Live' (although you can change that setting in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel)) - so using 'Save' (or 'Publish') in an unfinished state without altering its status to 'Draft' (recommended) or 'Hidden' will make an article **public** before its time. Pay attention!
 
 When you are done with writing or editing an article, particularly if it's a new article, you will want to make sure you have the various controls on the secondary column of the Write panel configured appropriately. These regard *publishing* an article (or keep it unpublished) in various ways. They come in two portions: Controls you always need statically at the top and a portion of optional controls which you can use for further fine-tuning.
+
+[Next: Articles panel](http://docs.textpattern.io/administration/articles-panel)

@@ -21,3 +21,7 @@ Each record is composed of the following information:
 * **Status:** HTTP status code. 200 is successful.
 
 To see the **IP**, **Method** and **Status** columns, you must check the 'More detail' box.
+
+## Pages and visitor logs listed per page
+
+At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of visitor logs listed per page by selecting another value from the number range.

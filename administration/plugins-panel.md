@@ -292,6 +292,8 @@ You're in the wrong place. Please see [the suite of plugin develop
 aides](http://docs.textpattern.io/development/) for aspiring puglin
 developers.
 
+[Next: Visitor logs panel](http://docs.textpattern.io/administration/visitor-logs-panel)
+
 [^1]: As time goes by and plugin authors move on to other pastures, they
     often abandon their Textpattern plugins, which fall out of repair,
     or disappear altogether. We call these plugins "orphans", and you'll

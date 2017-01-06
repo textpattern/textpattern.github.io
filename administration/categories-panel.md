@@ -87,3 +87,5 @@ each list you can **delete** the category/categories.
 ## Categories for links, images and files
 
 The remaining three sets of categories for links, images and files work just as article categories described above.
+
+[Next: Comments panel](http://docs.textpattern.io/administration/comments-panel)
