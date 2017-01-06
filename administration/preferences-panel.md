@@ -55,32 +55,36 @@ The 'Site slogan' is an optional site subheading, motto, or other quote for your
 
 The 'Production status' choice defines the level of error reporting and diagnostic information provided by Textpattern. There are three options, as described below.
 
-**Live**: This mode is best suited production (live) Textpattern sites (i.e. your site is ready to serve pages to visitors) and uses fewest server resources. In 'Live' mode, no errors or diagnostics will be displayed to your visitors.
+**Live:** This mode is best suited production (live) Textpattern sites (i.e. your site is ready to serve pages to visitors) and uses fewest server resources. In 'Live' mode, no errors or diagnostics will be displayed to your visitors.
 
-**Testing**: This mode is best suited for the initial setup and design of a stable release of Textpattern. Any PHP errors and selected Textpattern warnings will be displayed on public pages. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page, including:
+**Testing:** This mode is best suited for the initial setup and design of a stable release of Textpattern. Any PHP errors and selected Textpattern warnings will be displayed on public pages. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page, including:
 
--   the time it took the server to build the page ("Runtime")
--   the number of database queries executed
--   approximate peak memory usage
+* the time it took the server to build the page ("Runtime")
+* the number of database queries executed
+* approximate peak memory usage
 
-**Debugging**: This mode is best suited for diagnosing problems in Textpattern Pages, Forms, plugins and PHP code. PHP notices will be displayed, in addition to the errors and warnings shown in 'Testing' mode. Browser caching is disabled.
+**Debugging:** This mode is best suited for diagnosing problems in Textpattern Pages, Forms, plugins and PHP code. PHP notices will be displayed, in addition to the errors and warnings shown in 'Testing' mode. Browser caching is disabled.
 
 Performance information will be included in HTML comments at the end of every Textpattern page, including:
 
--   the time it took the server to build the page ("Runtime")
--   the number of database queries executed
--   approximate peak memory usage
--   a Textpattern tag trace (i.e. all Textpattern tags processed while building the page)
+* the time it took the server to build the page ("Runtime")
+* the number of database queries executed
+* approximate peak memory usage
+* a Textpattern tag trace (i.e. all Textpattern tags processed while building the page)
 
 It's normal to see some PHP notices in 'Debugging' mode. A lone PHP notice is not necessarily an indicator that something is wrong, it's there to aid troubleshooting if a problem arises.
 
-#### Time zone {#time_zone}
+### Time zone
 
-Textpattern's displayed time should typically be set to your local or target audience time zone. Textpattern defaults to the localised time as indicated by the server time zone (i.e. the time set by the server Textpattern is installed to).
+Textpattern's displayed time should typically be set to your local or target audience time zone. Textpattern defaults to the localized time as indicated by the server time zone (i.e. the time set by the server Textpattern is installed to).
 
-The standard time system for all Internet-related synchronizations is UTC ([Coordinated Universal Time](http://en.wikipedia.org/wiki/UTC) ). A numeric value in parentheses refers to the time offset in seconds when compared to UTC. Textpattern uses GMT notation instead of UTC, but they are identical.
+The standard time system for all Internet-related synchronizations is UTC ([Coordinated Universal Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)). A numeric value in parentheses refers to the time offset in seconds when compared to UTC. Textpattern uses GMT notation instead of UTC, but they are identical.
 
-#### DST enabled? {#dst_enabled}
+### Automatically adjust Daylight Saving Time setting?
+
+TODO
+
+### Daylight Savings Time enabled?
 
 If the time zone selected above is subject to [daylight saving time](https://en.wikipedia.org/wiki/Daylight_saving_time), you should select 'Yes' when it commences and 'No' when it ends.
 
