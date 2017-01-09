@@ -40,7 +40,7 @@ General performance improvements can usually be made using the following techniq
 
 * Minimize plugins: the more active plugins, the more code must be loaded, parsed and run. Don't use a plugin when you can achieve the same results with a built-in tag. And make sure you disable or remove any plugins you no longer use.
 * Simplify your code: do your templates use complex nested conditionals, PHP code, or Forms within Forms? Simplify them. In particular, try to reduce the number of tags that require database queries. If you're not sure, remove tags one at a time and watch the Queries count.
-* Cacheing: sometimes pages are necessarily complex, and there are limits to server performance. If you have a popular site that's not fast enough, try a caching plugin. 
+* Cacheing: sometimes pages are necessarily complex, and there are limits to server performance. If you have a popular site that's not fast enough, try a cacheing plugin. Although [Textpattern is usually faster than WordPress out of the box](http://forum.textpattern.com/viewtopic.php?pid=292036#p292036), enabling an OpCode cache at the server level is also an option.
 
 The important thing with any performance tweak is to change only one thing at a time, and always measure the results. If something has no real effect, change it back and try something else. You'll almost certainly find that one or two changes will have a large effect, while others will be insignificant.
 
