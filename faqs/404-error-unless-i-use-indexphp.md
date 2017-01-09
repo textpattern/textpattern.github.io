@@ -3,7 +3,7 @@ layout: document
 category: FAQs
 published: true
 title: "FAQ: 404 error unless I use index.php"
-description: What to do if you get a 404 error (unless I use index.php).
+description: What to do if you get a 404 error (unless using index.php).
 tags:
  - Error warnings and notices FAQs
 ---
