@@ -132,6 +132,7 @@ The root-relative URI (without opening or closing slashes) of the directory (fol
 
 The full path (file path, not URI) to the directory (folder) for files uploaded via the [Files administration panel](http://docs.textpattern.io/administration/files-panel). By default it is named `files` and is in the root directory of the website. As with the Image directory, you only need to change this if you have renamed and/or moved this directory.
 
+TODO
 
 
 
