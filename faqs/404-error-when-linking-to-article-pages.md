@@ -8,7 +8,7 @@ tags:
  - Error warnings and notices FAQs
 ---
 
-TODO: Move relevant parts of this and [500 internal server error](https://github.com/textpattern/textpattern.github.io/blob/master/faqs/500-internal-server-error.md) to [Diagnostics](https://github.com/textpattern/textpattern.github.io/blob/master/administration/diagnostics-panel.md) under the section about clean URLs. The FAQ entries can then be removed.
+TODO: Move relevant parts of this to [Diagnostics](https://github.com/textpattern/textpattern.github.io/blob/master/administration/diagnostics-panel.md) under the section about clean URLs, then delete this FAQ.
 
 # FAQ: Clean URLs don't work
 
