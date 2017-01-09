@@ -21,7 +21,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Upgrading Textpattern](http://docs.textpattern.io/installation/upgrading-textpattern)
 * [Moving a Textpattern installation](http://docs.textpattern.io/installation/moving-textpattern)
 * [Post install and upgrade routines](http://docs.textpattern.io/installation/post-install-and-upgrade-routines)
-* [Troubleshooting an installation/upgrade](http://docs.textpattern.io/installation/troubleshooting)
+* [Troubleshooting a Textpattern installation/upgrade](http://docs.textpattern.io/installation/troubleshooting-textpattern)
 
 </div>
 <div class="layout-3col">
