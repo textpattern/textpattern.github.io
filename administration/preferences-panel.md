@@ -114,7 +114,7 @@ The 'Logging' preference allows you to select what kinds of visiting activity Te
 2. **All hits:** Textpattern will collect information for all site visits.
 3. **Referrers only:** Only record information about visitors from another location. This option allows you to see what kind of traffic your site is getting, while at the same time eliminating any log entries that might result from your own access to the site while, for example, making any site updates (generally you do not need to see your own activity on your site).
 
-#### Logs expire after how many days?
+### Logs expire after how many days?
 
 When you are using Textpattern for logging (see above), you can set how long (in days) those logs should be kept. '7' will keep the logs available for seven days.
 
