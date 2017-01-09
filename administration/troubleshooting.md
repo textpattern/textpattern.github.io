@@ -17,8 +17,8 @@ Topics on this page:
   * [Slow administration side](#slow-administration-side)
 * [Feed issues](#feed-issues)
 * [Error codes](#error-codes)
-  * [500 internal server error](#500-internal-server-error)
-  * [404 Page not found](#404-page-not-found)
+  * [500 Internal server error](#internal-server-error)
+  * [404 Page not found](#page-not-found)
   
 ## Performance issues
 
