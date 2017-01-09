@@ -20,7 +20,8 @@ Topics on this page:
   * [500 Internal server error](#internal-server-error)
   * [404 Page not found](#page-not-found)
   * [Database unavailable](#database-unavailable)
-  
+  * [Allowed memory exhausted](#allowed-memory-size-exhausted)
+
 ## Performance issues
 
 Normally, Textpattern is one of the fastest CMS platforms around. There are, however, a few circumstances that can cause performance issues.
@@ -127,3 +128,11 @@ Restart your web server and, if that doesn't help or causes a 500 Internal Serve
 This means Textpattern is unable to connect to the MySQL database. This can happen occasionally on some shared/virtual hosting servers when another user hogs all the available database resources. If it happens regularly, ask your hosting company whether there's something they can do to fix the problem.
 
 If you're seeing Database Unavailable on every page view, without exception, then the problem is most likely a database server crash, or a misconfiguration. Check the settings in your textpattern `config.php` file and make sure you can connect to the database using those settings in phpMyAdmin or similar SQL client. If the database server is working, check your `.htaccess` file and consider temporarily disabling it. If problems persist, talk to your hosting company.
+
+### Allowed memory size of X bytes exhausted
+
+Textpattern's memory usage is quite low - usually no more than a couple of megabytes.
+
+Unless your server admin has set the PHP memory limit far too low (unlikely, but not impossible) the cause is probably a plugin. Some older archive page plugins work by loading all articles into memory at once. This could easily exhaust the available memory if you have a large number of articles.
+
+Disable your plugins one by one, until you find the culprit. If the cause is indeed a plugin, we suggest contacting its author about the problem. In some cases, the plugin's functionality could be replced with core [tags](http://docs.textpattern.io/tags) which may be more memory efficient.
