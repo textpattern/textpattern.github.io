@@ -222,11 +222,7 @@ of those tags, and any other constructs the plugin may require, that the
 plugin will jump to life. To learn how a plugin is supposed to be used,
 click the "Help" link in the **Manage** column of the table.
 
-Some plugins may also provide an "Options" link next to the "Help" link,
-which opens a special view. These options are neigher an
-****[Extensions](http://docs.textpattern.io/extensions/) panel nor
-Advanced preferences, exactly, but are nevertheless important for
-helping to make the plugin function as you may need it to.
+Some plugins may also provide an 'Options' link next to the 'Help' link, which opens a special view. These options are neither an [Extensions region](http://docs.textpattern.io/administration/extensions-region) nor preferences, exactly, but are nevertheless important for helping to make the plugin function as you may need it to.
 
 If you read the plugin's Help information and find yourself still having
 trouble, that's the time to go to the plugin's [support
