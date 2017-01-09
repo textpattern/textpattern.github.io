@@ -16,9 +16,10 @@ Topics on this page:
   * [Slow website](#slow-website)
   * [Slow administration side](#slow-administration-side)
 * [Feed issues](#feed-issues)
-* [Error codes](#error-codes)
+* [Error messages and codes](#error-messages-and-codes)
   * [500 Internal server error](#internal-server-error)
   * [404 Page not found](#page-not-found)
+  * [Database unavailable](#database-unavailable)
   
 ## Performance issues
 
@@ -87,7 +88,7 @@ Some other avenues of exploration:
     <txp:feed_link format="link" flavor="rss" />
     <txp:feed_link format="link" flavor="atom" />
 
-## Error codes
+## Error messages and codes
 
 If some or all of your site or Textpattern administration panels are throwing HTTP status code error messages, here are some things you can try:
 
@@ -121,3 +122,8 @@ If you see this, but the site works if you use `index.php` in the URL, uncomment
 
 Restart your web server and, if that doesn't help or causes a 500 Internal Server error, contact your web host tech support and ask them about enabling `DirectoryIndex` for PHP files.
 
+### Database unavailable
+
+This means Textpattern is unable to connect to the MySQL database. This can happen occasionally on some shared/virtual hosting servers when another user hogs all the available database resources. If it happens regularly, ask your hosting company whether there's something they can do to fix the problem.
+
+If you're seeing Database Unavailable on every page view, without exception, then the problem is most likely a database server crash, or a misconfiguration. Check the settings in your textpattern `config.php` file and make sure you can connect to the database using those settings in phpMyAdmin or similar SQL client. If the database server is working, check your `.htaccess` file and consider temporarily disabling it. If problems persist, talk to your hosting company.
