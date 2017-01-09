@@ -6,7 +6,7 @@ title: Categories panel
 description: In the Categories administration panel you define categories for your articles, links, images and files.
 ---
 
-# Categories panel
+# Categories panel TODO
 
 In the Categories administration panel you define categories for your articles, links, images and files.
 

@@ -6,7 +6,7 @@ title: Comments panel
 description: The Comments administration panel provides control about visitor comments on your public pages.
 ---
 
-# Comments panel
+# Comments panel TODO
 
 The Comments administration panel provides control about *visitor comments* on your public pages. There are two modes to this panel:
 

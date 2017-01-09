@@ -6,7 +6,7 @@ title: Home region
 description:  The home region appears to the higher user roles if any of the admin-side plugins that employ it are installed.
 ---
 
-# Home region
+# Home region TODO
 
 The **Home** region is not an out-of-the-box feature. It appears to the higher [user roles](http://docs.textpattern.io/administration/user-roles-and-privileges) if any of the admin-side plugins that employ it are installed.
 

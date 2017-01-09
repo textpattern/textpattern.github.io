@@ -6,7 +6,7 @@ title: Files panel
 description: The Files administration panel provides central management tools for download files you want to include in your website.
 ---
 
-# Files panel
+# Files panel TODO
 
 The Files administration panel provides central management tools for download files you want to include in your website. It keeps the file, it's description, and automatic information of filesize together, as well as organizing file lists and other functions. So you can place **download links** and lists of downloads in your articles or forms in a very convenient way. If you need to update a file, you can do it once in a central place and don't need to bother where you already have placed a link to it.
 

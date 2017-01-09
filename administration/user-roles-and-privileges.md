@@ -6,7 +6,7 @@ title: User roles and privileges
 description: In addition to the administrator, several pre-defined user roles are provided for in Textpattern out-of-the-box.
 ---
 
-# User roles and privileges
+# User roles and privileges TODO
 
 In addition to the administrator (the most powerful type of Textpattern account), several pre-defined user roles are provided for in Textpattern out-of-the-box. Each role has an associated set of administration privileges that are meant to help with leveraging the different responsibilities in a collaborative publishing workflow. If you're building a Textpattern website for yourself (single user), you wouldn't be concerned with these roles. But if you're building a platform to support multi-user contributions, user roles and privileges are likely important factors in your publishing architecture design.
 

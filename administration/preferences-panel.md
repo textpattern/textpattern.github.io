@@ -6,7 +6,7 @@ title: Preferences panel
 description: The Preferences administration panel is where you configure the everyday operation of your site.
 ---
 
-# Preferences panel
+# Preferences panel TODO
 
 The Preferences administration panel is where you configure the everyday operation of your site. Along with the [Languages administration panel](http://docs.textpattern.io/administration/languages-panel), most of Textpattern's site-wide settings can be configured and fine-tuned. Preferences are grouped for convenience:
 

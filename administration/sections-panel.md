@@ -6,7 +6,7 @@ title: Sections panel
 description: Sections are the principle content organization mechanism in Textpattern, and the Sections panel is where you manage them.
 ---
 
-# Sections panel
+# Sections panel TODO
 
 Sections are the principle content organization mechanism in Textpattern, and the Sections panel is where you manage them.
 

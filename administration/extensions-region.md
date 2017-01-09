@@ -6,7 +6,7 @@ title: Extensions region
 description: The extensions region appears to the higher user roles if any of the admin-side plugins that employ it are installed.
 ---
 
-# Extensions region
+# Extensions region TODO
 
 The The **Extensions** region is not an out-of-the-box feature. It appears to the higher [user roles](http://docs.textpattern.io/administration/user-roles-and-privileges) if any of the admin-side plugins that employ it are installed.
 
