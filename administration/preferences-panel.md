@@ -205,63 +205,63 @@ Some commenting plugins require this to be set to 'No' before they work properly
 
 If set to 'Yes', whenever a comment is made against an article, the author will be emailed notification of the event, along with the contents of the comment.
 
-#### Maximum file size of uploads (in bytes)
+### Maximum file size of uploads (in bytes)
 
 Maximim size for file uploads via the [files](/home/www/zendstudio/dokuwiki/bin/doku.php?id=files) panel. Note that this value is also limited by the configuration of PHP on your Web server; if Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host. (The relevant values in *php.ini* are `post_max_size`, `upload_max_filesize` and `memory_limit`.)
 
 **Note:** Image Uploads are not restricted by this value. The maximum allowed size for images is always \~ 1MB (unless restricted by PHP as explained above).
 
-#### Temporary directory path
+### Temporary directory path
 
 Full path (file path, not URI) for this directory, which is needed by Textpattern during uploads. By default it is named "tmp" and is at the root level of the installation. You should not need to change this.
 
-#### Plugin cache directory path
+### Plugin cache directory path
 
 Leave this empty unless you are using a plugin that requires it, or you are a plugin developer and want to test uncompiled plugins. No such directory is included by default.
 
-#### SMTP envelope sender address
+### SMTP envelope sender address
 
 This preference should be left blank unless you experience problems with sending email in Textpattern (i.e. no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you've installed Textpattern (i.e. if your website is example.com, you might use you@example.com).
 
-#### Use ISO-8859-1 encoding in e-mails sent (default is UTF-8)?
+### Use ISO-8859-1 encoding in e-mails sent (default is UTF-8)?
 
 For whatever reason (can someone give one?) you might want to use ISO-8859-1 character encoding for emails, but the more internationally friendly UTF-8 unicode is set by default, so why change?
 
-#### Enable XML-RPC server
+### Enable XML-RPC server
 
 XML-RPC is an integral part of Textpattern, but disabled by default. To use [xml-rpc_for_desktop_publishing](/home/www/zendstudio/dokuwiki/bin/doku.php?id=xml-rpc_for_desktop_publishing) (publishing to your Textpattern site remotely), switch the server on by setting this to 'Yes'.
 
-#### Default admin tab
+### Default admin tab
 
 Set this to the panel you want to appear when you log in.
 
-#### Admin-side theme
+### Admin-side theme
 
 Set the theme (appearance) of the admin panels. As of Textpattern 4.5, three themes are offered. "Classic" is the original theme with two rows of tabs. "Remora" is the updated Classic theme with a single row of tabs with drop-down menus. "Hive" is a modern, responsive theme and the basis of our future UI direction.
 
-#### Require user's name?
+### Require user's name?
 
 If set to 'Yes', people that want to comment on your blog will have to enter a name in the comment-form. They will receive an error message otherwise.
 
-#### Require user's email address?
+### Require user's email address?
 
 If set to 'Yes', people that want to comment on your blog, will have to enter an email address in the comment-form. They will receive an error message otherwise.
 
-#### Never display email address?
+### Never display email address?
 
 This setting controls whether the email address of a commenter should be shown publicly.
 
-#### Apply rel="nofollow&quot; to comments?
+### Apply rel="nofollow&quot; to comments?
 
 This will add an additional attribute to the links made in comments. It is intended to be a measure that takes away the incentive for comment-spammers and was initiated by a range of search engines and software-writers. You can find out more about it by reading [Google's announcement](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html).
 
 **Note:** This setting does not influence the functionality or ranking of your site. It may prevent or diminish the influence of your comments when some search engines rank sites linked to from those comments.
 
-#### Disallow user images?
+### Disallow user images?
 
 With this option set to 'Yes', images included in comments will be stripped out.
 
-#### Allow more Textile markup in comments?
+### Allow more Textile markup in comments?
 
 When set to 'Yes', comments may contain Textile elements which would otherwise be treated as plain text:
 
@@ -274,17 +274,17 @@ When set to 'Yes', comments may contain Textile elements which would otherwise b
 
 For security reasons, raw HTML is transformed into regular text.
 
-#### Spam blocklists (comma-separated)
+### Spam blocklists (comma-separated)
 
 The blocklist providers entered here, will be contacted when a comment is posted to your blog and the IP of the comment poster will be checked. If the IP is listed, it means there have been spamming complaints made about this IP in the past and a comment will be rejected.
 
 You can enter a list of domain names that should be seperated by commas. Potential blocklists can be found at [dmoz](http://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/), but be aware that it is your responsibility to make sure you can trust those blacklist-providers before you add any.
 
-##### New comment means site updated?
+#### New comment means site updated?
 
 The database keeps track of when the last change to your site has happened. When this setting is set to 'Yes', a new comment will also update this value. This value is used for example for the "Send Last-Modified header" functionality.
 
-#### Custom fields
+### Custom fields
 
 This region is where ten (10) custom fields can be defined. New installations of Textpattern define two custom fields for demonstration purposes: *custom1* and *custom2*. When custom fields have names such as these, they automatically appear under the *Advanced Options* section of the [write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) panel so you can make use of them, as needed, in context of a given article.
 
@@ -327,27 +327,27 @@ A symptom of a name clash is when you go to check or display the contents of a c
 
 To remove a custom field, simply clear its name. **Don't forget to save changes made in the panel.**
 
-#### Syndicate article excerpt only?
+### Syndicate article excerpt only?
 
 If this is set to 'No', then feeds will always contain the full article bodies. If this is set to 'Yes', feed items will contain an excerpt instead of the article body where it is available.
 
-#### How many articles should be included in feeds?
+### How many articles should be included in feeds?
 
 This is the maximum number of current articles to be syndicated at a time, in RSS/Atom format. Recommended: a low value, such as 5 through 15
 
-#### Show comment count in feeds?
+### Show comment count in feeds?
 
 When set to 'Yes', this setting will append the number of comments to your article titles in your XML feeds.
 
-#### Include email in Atom feeds?
+### Include email in Atom feeds?
 
 This allows you to include the email address of the author (as set in their user account) of an article in the author part of your Atom feeds.
 
-#### Use email address to construct feed ids (default is site URL)?
+### Use email address to construct feed ids (default is site URL)?
 
 Feed items in Atom, require a unique ID. To generate IDs unique to your site, Textpattern allows you to choose between either an email address or your domain name to include in these IDs. The email address will be the first one used when creating the site. Unless you are likely going to be changing your domain name, it is probably safe to set this to 'No'.
 
-#### Prevent widowed words in article titles?
+### Prevent widowed words in article titles?
 
 In typesetting, a "widow" refers to the last word in a given block of text that happens to wrap to the next line by itself. Allowing widows in printed work is generally considered a visually sloppy thing to do.
 
@@ -355,73 +355,73 @@ By default, Textpattern prevents widow words from happening in article **titles*
 
 This preference allows you to turn that functionality off by saying 'No'. As a result, your titles will wrap without interference. This may be more preferable if your page layout is responsive, as titles with a no-break between two long words could potentially break the layout at smaller screen widths, resulting in text spilling out of the container area.
 
-#### Articles use excerpts?
+### Articles use excerpts?
 
 By choosing 'No' the excerpt field will not be shown to the author on the article-editing screen.
 
-#### Allow form override?
+### Allow form override?
 
 This setting allows article authors to override the form to be used when their article is rendered. If enabled, an "Override form" dropdown will be available under "Advanced Options", when editing an article.
 
-#### Attach titles to permalinks?
+### Attach titles to permalinks?
 
 This setting will attach a dirified version of your article-title to your URL, it is either generated automatically or can be manually overridden in the "Advanced Options" when editing an article.
 
 This setting will only have an effect when you are using clean URLs. For certain languages this may result in long and ugly URLs, in which case you probably want to set this to 'No'.
 
-#### Permalink title URL pattern
+### Permalink title URL pattern
 
 This setting only has an effect when "Attach titles to permalinks" is set to 'Yes'. When dirifying article-titles for use in URLs, you have the option of:
 
-1.  Hyphenated (title-like-this) - Using all lowercase letters, and replacing spaces with hyphens.
-2.  Intercapped (TitleLikeThis) - Completely removing spaces, and using CamelCase, which means that the beginning of new words will be marked by uppercase letters.
+1. Hyphenated (title-like-this) - Using all lowercase letters, and replacing spaces with hyphens.
+2. Intercapped (TitleLikeThis) - Completely removing spaces, and using CamelCase, which means that the beginning of new words will be marked by uppercase letters.
 
-#### Send Last-Modified header?
+### Send Last-Modified header?
 
 When set, Textpattern will read a visitor's HTTP If-Modified-Since header (if one exists) and compare it to the last site update. If nothing has changed since the visitor last loaded the page (i.e. if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor's browser to use its cached version of the page.
 
 This can reduce bandwidth consumption, page load times, and reduce the load on the webserver.
 
-#### Publish expired articles?
+### Publish expired articles?
 
 When set to 'Yes', expired articles will continue to show on your site after their expiry date has elapsed. You can use [if_expired](/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expired) to show alternate content or markup for expired articles.
 
 When set to 'No', expired articles will be removed from the public site and return a "410 Gone" HTTP status instead. Visitors hitting an expired article will be shown a custom page template named "error_410" if it's
 present.
 
-#### Compensate for persistent connections mod_deflate bug?
+### Compensate for persistent connections mod_deflate bug?
 
 Some mod_deflate versions have a bug that breaks subsequent requests when keep-alive is used. Dropping the connection is the only reliable way to fix this. Setting this preference to 'Yes' will close the connection, forcing the browser to reconnect for the next request.
 
-#### Ping pingomatic.com?
+### Ping pingomatic.com?
 
 Whenever you publish a new article, Textpattern will send a ping to [Ping-O-Matic](http://pingomatic.com/). Recommended: 'Yes' for live sites, 'No' for sites in development.
 
-#### Use DNS?
+### Use DNS?
 
 This setting only has an effect, when "Logging" in "Site Preferences" is turned on. Using DNS will allow you to translate IP adresses in your logs to host-names. For some servers this might subjectively slow down your site, in which case you might want to turn this off.
 
-#### Maximum URL length (in characters)
+### Maximum URL length (in characters)
 
 This prevents URLs that are longer than specified from functioning. It could be helpful in damage limitation.
 
-#### Use plugins?
+### Use plugins?
 
 This allows you to turn off support for plugins. You might want to do this if you find strange errors happening on your site, and you want to make sure that it is not the fault of plugins.
 
-#### Use admin-side plugins?
+### Use admin-side plugins?
 
 Admin-side plugins are those which can change the operation of the administration interface. They might hook into already existing actions, like editing or publishing articles, or they might add new tabs for added/extended functionality.
 
-#### Allow PHP in pages?
+### Allow PHP in pages?
 
 When enabled, this setting allows PHP code within page and form templates. PHP code must be without both opening and closing PHP tags, and enclosed within [php](/home/www/zendstudio/dokuwiki/bin/doku.php?id=php) tags.
 
-#### Allow PHP in articles?
+### Allow PHP in articles?
 
 When enabled, this setting will allow use of PHP within articles. The author must have sufficient privileges to do so. PHP code must be both without opening and closing PHP tags, and enclosed within [php](/home/www/zendstudio/dokuwiki/bin/doku.php?id=php) tags.
 
-#### Allow raw php? 
+### Allow raw php? 
 
 When enabled, this setting allows raw PHP code to be used. Normally this isn't allowed, and PHP code must be without both opening and closing PHP tags, and enclosed within txp:php tags. This setting is for backwards compatible purposes only, and it is recommended to be set to 'No'.
 
