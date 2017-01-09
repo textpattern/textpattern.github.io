@@ -68,5 +68,5 @@ The Hive and Classic themes are available on GitHub at the following repositorie
 
 You might also find these admin-side development reference guides for 'Hive' and 'Classic' themes helpful:
 
-* [Hive admin theme design patterns](http://design-patterns/textpattern.io).
-* [Classic admin theme design patterns](http://design-patterns-classic/textpattern.io).
+* [Hive admin theme design patterns](http://design-patterns.textpattern.io/).
+* [Classic admin theme design patterns](http://design-patterns-classic.textpattern.io/).
