@@ -91,7 +91,9 @@ Some other avenues of exploration:
 
 ## Error messages and codes
 
-If some or all of your site or Textpattern administration panels are throwing HTTP status code error messages, here are some things you can try:
+Notices when your [Production Status](http://docs.textpattern.io/administration/preferences-panel#production-status) is set to Debugging mode are not unusual, and by themselves aren't an indicator of something wrong. Such messages are `Undefined index`, or `Unregistered tag`. If the only symptom you have is that there are warnings/notices produced when this mode is active, then there's likely nothing wrong, and you can safely ignore them.
+
+If, however, some or all pages of your site - or Textpattern administration panels - are throwing HTTP status code error messages, they are more serious. Here are some things you can try:
 
 ### 500 Internal Server Error
 
