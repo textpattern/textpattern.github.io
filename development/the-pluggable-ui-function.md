@@ -91,7 +91,7 @@ privs 1,2 users):
         echo '<p>Hello, World!</p>';
 
 So far `pluggable_ui()` is not used at all in the plugin. We've used
-`register_callback()` to add the plugin's preferences panel under
+`register_callback()` to add the plugin's Preferences administration panel under
 **Extensions**, like we could use it to do most everything else to
 admin-side panels too.
 

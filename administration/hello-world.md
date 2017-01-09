@@ -6,7 +6,7 @@ title: "Hello, World!"
 description: The Hello, World! approach means to start from a blank slate and add pieces one at a time.
 ---
 
-# Hello, World!
+# Hello, World! TODO
 
 Moving from traditional, static web development to dynamic, CMS-based development can be a challenge. Obviously you have to learn the new tool - the CMS. But for many the harder part is understanding dynamic publishing, a new way of thinking about website design. Trying to learn both at once is a steep learning curve, but is manageable with the right step-by-step approach.
 
@@ -33,7 +33,7 @@ tutorial will use. If you see “All checks passed!”, great.
 
 Go to
 [Admin→Preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences).
-Find the “Permanent Link Mode” setting and change it to “?=messy”. Click
+Find the 'Article URL pattern' setting and change it to '?=messy'. Click
 Save. Do this even if the clearn URL test passed, because this tutorial
 will use messy URLs.
 

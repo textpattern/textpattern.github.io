@@ -62,8 +62,8 @@ Low diagnostics info begins with a set of data values about your installation an
                 <td>The path to your installation's <code>/textpattern</code> directory.</td>
             </tr>
             <tr>
-                <th scope="row">Permanent link mode</th>
-                <td>The pattern of URL type you set. Corresponds with the 'Permanent link mode' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences panel</a>.</td>
+                <th scope="row">Article URL pattern</th>
+                <td>The pattern of URL type you set. Corresponds with the 'Article URL pattern' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#article-url-pattern">Preferences administration panel</a>.</td>
             </tr>
             <tr>
                 <th scope="row">Temporary directory path</th>
@@ -71,7 +71,7 @@ Low diagnostics info begins with a set of data values about your installation an
             </tr>
             <tr>
                 <th scope="row">Site URL</th>
-                <td>Your domain name and top-level domain (i.e. <code>domain.tld</code>). Corresponds with 'Site URL' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences panel</a>.</td>
+                <td>Your domain name and top-level domain (i.e. <code>domain.tld</code>). Corresponds with 'Site URL' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#site-url">Preferences administration panel</a>.</td>
             </tr>
             <tr>
                 <th scope="row">PHP version</th>
@@ -90,16 +90,16 @@ Low diagnostics info begins with a set of data values about your installation an
                 <td>The local date/time of your web server (yyyy-mm-dd hh:mm:ss).</td>
             </tr>
             <tr>
-                <th scope="row">DST enabled?</th>
-                <td>Whether or not Daylight Savings Time is enabled ("0"=no, "1"=yes). Corresponds with the "DST enabled?" setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences panel</a>.</td>
+                <th scope="row">Automatically adjust Daylight Saving Time setting?</th>
+                <td>Whether or Textpattern will adjust DST automatically (<code>0</code>=no, <code>1</code>=yes). Corresponds with the 'Automatically adjust Daylight Saving Time setting?' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#automatically-adjust-daylight-saving-time-setting">Preferences administration panel</a>.</td>
             </tr>
             <tr>
-                <th scope="row">Automatically adjust DST setting?</th>
-                <td>Whether or Textpattern will adjust DST automatically ('0'=no, '1'=yes). Corresponds with the 'Automatically adjust DST setting?' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences panel</a>.</td>
+                <th scope="row">Daylight Savings Time enabled?</th>
+                <td>Whether or not Daylight Savings Time is enabled ("0"=no, "1"=yes). Corresponds with the 'Daylight Savings Time enabled?' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#daylight-savings-time-enabled">Preferences administration panel</a>.</td>
             </tr>
             <tr>
                 <th scope="row">Time zone</th>
-                <td>Your time zone relative to Greenwich Mean Time (GMT). Corresponds with the 'Time zone' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences panel</a>. The output includes an offset value in parentheses, which helps developers determine if time-specific problems might stem from a wrong or outdated <a rel="external" href="https://en.wikipedia.org/wiki/Tz_database">tz database</a>.</td>
+                <td>Your time zone relative to Greenwich Mean Time (GMT). Corresponds with the 'Time zone' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences administration panel</a>. The output includes an offset value in parentheses, which helps developers determine if time-specific problems might stem from a wrong or outdated <a rel="external" href="https://en.wikipedia.org/wiki/Tz_database">tz database</a>.</td>
             </tr>
             <tr>
                 <th scope="row">MySQL</th>
@@ -297,12 +297,12 @@ Warnings are not critical, per se, and sometimes can even be cascading[^2] or fa
 DNS lookup failed: {site URL}.
 {: .alert-block .warning}
 
-This means the 'Site URL' preference value in the [Preferences panel](http://docs.textpattern.io/administration/preferences-panel) is probably incorrect; possibly the wrong name, a spelling mistake, or missing altogether. Check the value and make sure it's entered exactly like this, `domain.tld`, replacing your domain name and TLD extension.
+This means the 'Site URL' preference value in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel) is probably incorrect; possibly the wrong name, a spelling mistake, or missing altogether. Check the value and make sure it's entered exactly like this, `domain.tld`, replacing your domain name and TLD extension.
 
 Site URL preference might be incorrect: {site URL}.
 {: .alert-block .warning}
 
-Similar to the previous message, this is suggesting the 'Site URL' as set [Preferences panel](http://docs.textpattern.io/administration/preferences-panel) does not match the actual URL you use to visit your website.
+Similar to the previous message, this is suggesting the 'Site URL' as set [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel) does not match the actual URL you use to visit your website.
 
 Clean URL test failed.
 {: .alert-block .warning}
@@ -312,7 +312,7 @@ This could appear for different reasons and may not be a problem, per se. Troubl
 Site URL has a trailing slash.
 {: .alert-block .warning}
 
-This means your 'Site URL' preference value in the [Preferences panel](http://docs.textpattern.io/administration/preferences-panel) has an ending forward slash on it like this, `domain.tld/`. Tsk-tsk. Remove the slash.
+This means your 'Site URL' preference value in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel) has an ending forward slash on it like this, `domain.tld/`. Tsk-tsk. Remove the slash.
 
 {path} still exists.
 {: .alert-block .warning}
@@ -357,7 +357,7 @@ If you see this message, it will be followed by a number of PHP functions that a
 Site URL preference might be incorrect.
 {: .alert-block .warning}
 
-This could either mean you do not have the right 'Site URL' path set in [Preferences panel](http://docs.textpattern.io/administration/preferences-panel), or, in the case of upgrading, you still need to update your `index.php` and/or `.htaccess` files (see next message). This could also be a false error. For example, symlinks cannot be correctly recognized, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Understandably that is not satisfying advice.
+This could either mean you do not have the right 'Site URL' path set in [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel), or, in the case of upgrading, you still need to update your `index.php` and/or `.htaccess` files (see next message). This could also be a false error. For example, symlinks cannot be correctly recognized, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Understandably that is not satisfying advice.
 
 Clean URL data test failed.
 {: .alert-block .warning}
@@ -383,7 +383,7 @@ todo:explanation
 index.php is inaccessible.
 {: .alert-block .error}
 
-This suggests your `index.php` file is not available, is not the right version, or that your 'Site URL' is set wrong in [Preferences panel](http://docs.textpattern.io/administration/preferences-panel). It could also mean the `index.php` file was not updated for whatever reason during a recent upgrade. Update the file using the one from the [current Textpattern release](https://github.com/textpattern/textpattern/releases) and refresh diagnostics.
+This suggests your `index.php` file is not available, is not the right version, or that your 'Site URL' is set wrong in [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel). It could also mean the `index.php` file was not updated for whatever reason during a recent upgrade. Update the file using the one from the [current Textpattern release](https://github.com/textpattern/textpattern/releases) and refresh diagnostics.
 
 .htaccess file is missing.
 {: .alert-block .error}
@@ -533,7 +533,7 @@ These functions are *not* used by Textpattern.[^4] If diagnostics reports one or
 * `virtual`
 * `wget`
 
-[Next: Preferences panel](http://docs.textpattern.io/administration/preferences-panel)
+[Next: Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel)
 
 [^1]: **Folder permissions:** A chmod setting of 755 or 711 should work to make a folder writable, and is secure. A lot of people have trouble setting these values, however, and need to use a chmod of 777, which has [security implications](http://forum.textpattern.com/viewtopic.php?id=26613). The discrepancy is due to how Apache directives are configured on the web server, which means you may have to ask your server administrator or web host to change the directives. If they won't do it, it might be time to find a new web host, because no web host should force you to operate your site insecurely.
 

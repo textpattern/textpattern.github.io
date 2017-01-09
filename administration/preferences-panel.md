@@ -82,19 +82,59 @@ The standard time system for all Internet-related synchronizations is UTC ([Coor
 
 ### Automatically adjust Daylight Saving Time setting?
 
-TODO
+This setting allows Textpattern to alter when Daylight Savings Time occurs in your locale. If this is set to 'No', you will be able to change the 'DST enabled' preference below manually.
 
 ### Daylight Savings Time enabled?
 
-If the time zone selected above is subject to [daylight saving time](https://en.wikipedia.org/wiki/Daylight_saving_time), you should select 'Yes' when it commences and 'No' when it ends.
+If the time zone selected above is subject to [Daylight Saving Time](https://en.wikipedia.org/wiki/Daylight_saving_time) (and 'Automatically adjust Daylight Saving Time setting?' is set to 'No' above) you should select 'Yes' manually when Daylight Saving Time commences and 'No' when it ends.
 
+### Date format
 
+The 'Date format' control allows you to select how you want your date and time formats to appear in your articles by default from a variety of options. Dates are output in your written articles via the `<txp:posted />` and `<txp:modified />` tags.
 
+### Archive date format
 
+The 'Archive date format' is a drop-down menu that provides the same options as the 'Date format' menu, but applies to articles viewed away from the front page. As before, the dates are output in your written articles (in this case in your archival section) via the `<txp:posted />` and `<txp:modified />` tags.
+
+### Article URL pattern
+
+The 'Article URL pattern' drop-down list is intended to make it easier to establish flexible (or 'Clean' URLs) in your site, which in turn is a nice usability feature for your web site visitors. The drop-down list provides different options, one for 'messy' URLs (which is the option for **not** having clean URLs), and various patterns for clean URLs; each having a specific path format.
+
+Getting clean URLs to work may take a combination of further steps, addressed in @@TODO: managing clean URLs@@.
+
+### Doctype
+
+Select which HTML [doctype](https://www.w3.org/wiki/Doctypes_and_markup_styles) you wish to use (either HTML5 or XHTML).
+
+### Logging
+
+The 'Logging' preference allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [Visitor logs administration panel](http://docs.textpattern.io/administration/visitor-logs-panel) for you to review. This Logging control is a drop-down menu with three options.
+
+1. **None:** By default Textpattern will not log any visitor information at all.
+2. **All hits:** Textpattern will collect information for all site visits.
+3. **Referrers only:** Only record information about visitors from another location. This option allows you to see what kind of traffic your site is getting, while at the same time eliminating any log entries that might result from your own access to the site while, for example, making any site updates (generally you do not need to see your own activity on your site).
+
+#### Logs expire after how many days?
+
+When you are using Textpattern for logging (see above), you can set how long (in days) those logs should be kept. '7' will keep the logs available for seven days.
+
+### Accept comments?
+
+This is a global setting for whether or not you want to allow your articles to accept comments. This setting can be overridden on an article-by-article basis in the [Write panel](http://docs.textpattern.io/administration/write-panel) as you write new articles.
 
 ## Admin preferences
 
-TODO
+### Image directory
+
+The root-relative URI (without opening or closing slashes) of the directory (folder) that holds images uploaded through the [Images administration panel](http://docs.textpattern.io/administration/images-panel). By default this is `images`, and you only need to change this if you have renamed and/or moved this directory.
+
+### File directory path
+
+The full path (file path, not URI) to the directory (folder) for files uploaded via the [Files administration panel](http://docs.textpattern.io/administration/files-panel). By default it is named `files` and is in the root directory of the website. As with the Image directory, you only need to change this if you have renamed and/or moved this directory.
+
+
+
+
 
 ## Publish preferences
 
@@ -104,13 +144,11 @@ TODO
 
 TODO
 
-
 ## Comments preferences
 
-If you set [Accept comments?](#accept-comments) to 'Yes', this region of the Preferences panel is where you establish your global settings for article comments (if set to 'No', this region is omitted).
+If you set [Accept comments?](#accept-comments) to 'Yes', this region of the Preferences administration panel is where you establish your global settings for article comments (if set to 'No', this region is omitted).
 
 TODO
-
 
 ## Custom fields preferences
 
@@ -122,36 +160,9 @@ TODO
 
 ## TODO: TO BE SORTED
 
-### Date format
-
-The 'Date Format' control allows you to select how you want your date and time formats to appear in your articles by default from a variety of options. Dates are output in your written articles via the `<txp:posted />` and `<txp:modified />` tags.
-
-### Archive date format
-
-The 'Archive date format' is a drop-down menu that provides the same options as the 'Date format' menu, but applies to articles viewed away from the front page. As before, the dates are output in your written articles (in this case in your archival section) via the `<txp:posted />` tag.
-
-### Permanent link mode
-
-The *Permanent link mode* drop-down list is intended to make it easier to establish flexible (or [Clean URLs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#clean_urls)) in your site, which in turn is a nice usability feature for your Web site visitors. The drop-down list currently provides six different options (Figure 5), one for "messy" URLs (which is the option for NOT having clean URLs), and five for clean URLs; each having a specific path format.
-
-If you want clean URLs to work for your site, this is the very first step to making it happen, by selecting one of the options other than "messy." However, it is usually not as simple as just selecting one of these options to make clean URLs work. Getting clean URLs to work may take a combination of steps, addressed in [managing_clean_urls](/home/www/zendstudio/dokuwiki/bin/doku.php?id=managing_clean_urls).
-
 ### Use Textile
 
 Textile is a meta-formatting language that lets site authors format work without having to know HTML completely. This option may be set to select usage of Textile in articles; disable Textile but keep smart replacement of line breaks and special characters; or disable article manipulation entirely.
-
-### Logging
-
-The "Logging" control allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [visitor_logs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs)
-panel for you to review. This *Logging* control is a drop-down menu with three options.
-
-1. **All hits:** By defaualt Textpattern will collect information for all site hits.
-2. **Referrers only:** The *Referrers only* option will only record information about visitors from another location. This option is often the most popular choice because it allows you to see what kind of traffic your site is getting, while at the same time eliminating any log entries that might result from your own access to the site while, for example, making any site updates (generally you do not need to see your own activity on your site).
-3. **None:** You can also choose to not log any information at all.
-
-### Accept comments?
-
-This is a global setting (in this case for any article in any *Section*) for whether or not you want to allow your articles to accept comments. This is simply controlled with the 'Yes' and 'No' radio buttons, respectively. This setting can be overridden on an article-by-article basis in the [write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) tab as you write new articles.
 
 ### Comments on by default?
 
@@ -192,14 +203,6 @@ Some commenting plugins require this to be set to 'No' before they work properly
 ### Mail comments to author?
 
 If set to 'Yes', whenever a comment is made against an article, the author will be emailed notification of the event, along with the contents of the comment.
-
-#### Image directory
-
-The root-relative URI (without opening or closing slashes) of the directory (folder) that holds images uploaded through the [Images](/home/www/zendstudio/dokuwiki/bin/doku.php?id=images_panel) panel. By default this is "images", and you only need to change this if you have renamed and/or moved this directory.
-
-#### File directory path
-
-The full path (file path, not URI) to the directory (folder) for files uploaded via the [files](/home/www/zendstudio/dokuwiki/bin/doku.php?id=files) panel. By default it is named "files" and is in the root directory of the website. As with the Image directory, you only need to change this if you have renamed and/or moved this directory.
 
 #### Maximum file size of uploads (in bytes)
 
@@ -392,12 +395,6 @@ Some mod_deflate versions have a bug that breaks subsequent requests when keep-a
 #### Ping pingomatic.com?
 
 Whenever you publish a new article, Textpattern will send a ping to [Ping-O-Matic](http://pingomatic.com/). Recommended: 'Yes' for live sites, 'No' for sites in development.
-
-#### Logs expire after how many days?
-
-When you are using Textpattern for logging, you can set how long (in days) those logs should be kept. "7" will keep the logs available for seven days.
-
-**Note:** The logs only get cleared when you view the logs, and will otherwise continue to build in size.
 
 #### Use DNS?
 

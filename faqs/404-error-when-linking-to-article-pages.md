@@ -16,7 +16,7 @@ These and similar problems happen when you use 'clean' URL mode on a server that
 
 The Textpattern [Diagnostics administration panel](http://docs.textpattern.io/administration/diagnostics-panel) will attempt to warn you if it can determine that clean URLs are not supported on your system. However, it doesn't detect all incompatible servers - the absence of a warning does **not** mean that your server supports clean URLs.
 
-The simplest solution is to use 'messy' URLs instead (see [permanent link mode](http://docs.textpattern.io/administration/preferences-panel#permanent-link-mode), and remove or move aside the `.htaccess` file).
+The simplest solution is to use 'messy' URLs instead (see [Article URL pattern](http://docs.textpattern.io/administration/preferences-panel#article-url-pattern), and remove or move aside the `.htaccess` file).
 
 Some servers support `mod_rewrite`, but require some additional configuration in order to make it work properly.
 

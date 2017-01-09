@@ -22,7 +22,7 @@ On this page:
 <txp:article_id />
 ~~~
 
-The `article_id` tag is a *single* tag which returns the numeric ID of the article being displayed. This number will also be reflected as a part of the article permanent URL if it has been chosen as the 'Permanent link mode' in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
+The `article_id` tag is a *single* tag which returns the numeric ID of the article being displayed. This number will also be reflected as a part of the article permanent URL if it has been chosen as the 'Article URL pattern' in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#article-url-pattern).
 
 ## Attributes
 

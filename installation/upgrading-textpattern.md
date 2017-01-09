@@ -90,7 +90,7 @@ The `setup` folder is only used for **new** installations, not upgrades, thus it
 
 This step is highly recommended, but optional. It is best to do this on a development server to avoid showing your users error messages.
 
-Change your site's 'Production status' in the [Preferences panel](http://docs.textpattern.io/administration/preferences-panel) to 'debugging'. Go through the live site (every page, if possible), looking for error messages. Any such messages will be clearly visible at the top of the page. The upgrade may result in notices or errors relating to deprecated tags or attributes (these should be easy to correct).
+Change your site's 'Production status' in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel) to 'debugging'. Go through the live site (every page, if possible), looking for error messages. Any such messages will be clearly visible at the top of the page. The upgrade may result in notices or errors relating to deprecated tags or attributes (these should be easy to correct).
 
 If you do need to update tag or attribute names, the [smd_where_used plugin](http://forum.textpattern.com/viewtopic.php?id=27493) is a great help for quickly finding all instances of a given tag or attribute.
 

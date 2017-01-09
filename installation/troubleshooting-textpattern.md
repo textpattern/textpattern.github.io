@@ -116,7 +116,7 @@ http://example.com/index.php?id=123
 
 While we've done our best to ensure the `.htaccess` file supplied with Textpattern will work with as many web server configurations as possible, some servers are configured to restrict this. A `500 Internal Server Error` or `403 Forbidden` response is usually the result of a `.htaccess` file that tries to exceed these restrictions.
 
-The simplest thing you can do to fix the problem is simply delete or rename `.htaccess`, and switch to 'Messy' URL mode (see [permanent link mode](http://docs.textpattern.io/administration/preferences-panel#permanent-link-mode)).
+The simplest thing you can do to fix the problem is simply delete or rename `.htaccess`, and switch to 'Messy' URL mode (see [Article URL pattern](http://docs.textpattern.io/administration/preferences-panel#article-url-pattern)).
 
 You'll find some other pointers in @@TODO: link to Clean URLs don't work in Diagnostics panel@@.
 
