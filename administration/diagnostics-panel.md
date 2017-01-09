@@ -271,7 +271,7 @@ Blue messages are informing you of something you might like to know. They're not
 New Textpattern version {version} available for download.
 {: .alert-block .information}
 
-It's saying you're not using the latest stable release, where {version} will be the latest version number. The first data item in the 'Low' **Diagnostics info** display described above will indicate your current working version. Because this is a blue message, you don't *have* to upgrade (yet) but it's good practice to do so for [security](http://docs.textpattern.io/security/) reasons, if nothing else.
+It's saying you're not using the latest stable release, where {version} will be the latest version number. The first data item in the 'Low' **Diagnostics info** display described above will indicate your current working version. Because this is a blue message, you don't *have* to upgrade (yet) but it's good practice to do so for [security](http://docs.textpattern.io/administration/security) reasons, if nothing else.
 
 Clean URLs are only supported on Apache, use at your own risk.
 {: .alert-block .information}

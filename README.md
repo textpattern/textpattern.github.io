@@ -31,12 +31,12 @@ Make doc pages **scannable** with a **consistent structure** across them, as muc
 
 1. Start page with an `h1` (`#` in Markdown) header that serves as the document's title.
 2. Where it's reasonable to do so, follow the title with a brief introductory paragraph that sums up the page or it's purpose ([intro paragraph example](http://docs.textpattern.io/administration/)).
-3. If you have more than three `h2` (`##` in Markdown) sections on the page (or three that are kind of long), follow the `h1` title (or intro paragraph, see previous example) with an in-page ToC ([ToC example without intro paragraph](http://docs.textpattern.io/security/)). Do this by:
+3. If you have more than three `h2` (`##` in Markdown) sections on the page (or three that are kind of long), follow the `h1` title (or intro paragraph, see previous example) with an in-page ToC ([ToC example without intro paragraph](http://docs.textpattern.io/administration/security)). Do this by:
   * adding "On this page:" in normal text, followed by
   * an unordered list of links to the `h2` headers only (e.g. `[Header label](#xxx)`), and
   * use `#xxx` as the anchors, where `xxx` is the heading text in lowercase with hyphens (i.e. for linking to `## Example heading` the anchor would be `(#example-heading)`).
 4. Avoid using `h4`-`h6` header levels, if possible, especially `h5`-`h6`. Deep structuring means the copy is too complex for new-user docs. Try and structure content with `h2`-`h3` only (and `h4` if really necessary).
-5. Use [kramdown footnotes](http://kramdown.gettalong.org/syntax.html#footnotes) in a given section for any "tips" or side details not needing said in the primary paragraph. Use a subsequent number for each new footnote on the page, even if they're not in the same section. ([Footnote examples](http://docs.textpattern.io/security/index.textile))
+5. Use [kramdown footnotes](http://kramdown.gettalong.org/syntax.html#footnotes) in a given section for any 'tips' or side details not needing said in the primary paragraph. Use a subsequent number for each new footnote on the page, even if they're not in the same section. ([Footnote examples](http://docs.textpattern.io/administration/security))
 
 ## Concise copywriting tips
 
