@@ -11,4 +11,10 @@ search_omit: true
 
 Textpattern documentation within the category 'Acquisition and installation FAQs':
 
-TODO
+<ol class="list--no-bullets">
+    {% for page in site.pages %}
+        {% if page.tags contains 'Acquisition and installation FAQs' %}
+            {% include article-listing.html %}
+        {% endif %}
+    {% endfor %}
+</ol>

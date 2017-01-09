@@ -11,4 +11,10 @@ search_omit: true
 
 Textpattern documentation within the category 'Error warnings and notices FAQs':
 
-TODO
+<ol class="list--no-bullets">
+    {% for page in site.pages %}
+        {% if page.tags contains 'Error warnings and notices FAQs' %}
+            {% include article-listing.html %}
+        {% endif %}
+    {% endfor %}
+</ol>
