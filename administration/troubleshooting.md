@@ -111,7 +111,7 @@ http://example.com/articles/123/hello-world
 instead of:
 
 ~~~
-http://example.com/index.php?id=123.
+http://example.com/index.php?id=123
 ~~~
 
 While we've done our best to ensure the `.htaccess` file supplied with Textpattern will work with as many web server configurations as possible, some servers are configured to restrict this. A `500 Internal Server Error` or `403 Forbidden` response is usually the result of a `.htaccess` file that tries to exceed these restrictions.
