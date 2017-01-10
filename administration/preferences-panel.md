@@ -202,7 +202,7 @@ This setting allows article authors to override the Form template to be used whe
 
 ### Attach titles to permalinks?
 
-This setting will attach a automatically-generated version of the article title to the URL. It is either generated automatically or can be manually overridden in 'URL-only title' when editing an article on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#uRL-only-title).
+This setting will attach a automatically-generated version of the article title to the URL. It is either generated automatically or can be manually overridden in 'URL-only title' when editing an article on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#url-only-title).
 
 The setting will only have an effect when you are using clean URLs. For certain languages this may result in long and ugly URLs, in which case you probably want to set this to 'No'.
 
@@ -210,7 +210,7 @@ The setting will only have an effect when you are using clean URLs. For certain 
 
 This setting only has an effect when 'Attach titles to permalinks?' above is set to 'Yes', and defines the method by which article URLs are constructed and assigned when a non-messy [Article URL pattern](#article-url-pattern) is used.
 
-When an article is published, its URL is generated from the article title unless a specific URL is provided in in the 'URL-only title' field on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#uRL-only-title).
+When an article is published, its URL is generated from the article title unless a specific URL is provided in in the 'URL-only title' field on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#url-only-title).
 
 Take the following example article title: "Ann and Bob eat cake"...
 
@@ -248,7 +248,7 @@ Textile is a utility intended to simplify the conversion of plain text to HTML. 
 
 Textile also offers a powerful but easy-to-learn set of commands with which to format text, define structures such as lists, headers and blockquotes, and insert links and images.
 
-The setting you choose here becomes the default for excerpt and body markup on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#uRL-only-title). You can choose to allow complete Textile processing, to convert line breaks into HTML paragraph markers or not convert any text at all.
+The setting you choose here becomes the default for excerpt and body markup on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#url-only-title). You can choose to allow complete Textile processing, to convert line breaks into HTML paragraph markers or not convert any text at all.
 
 ### Use DNS lookup in visitor logs?
 
@@ -276,13 +276,65 @@ This prevents URLs that are longer than the specified length from functioning. I
 
 ## Feeds preferences
 
-TODO
+### Syndicate article excerpt only?
+
+If this is set to 'No', then feeds will always contain the full article bodies. If this is set to 'Yes', feed items will contain an excerpt instead of the article body where it is available.
+
+### How many articles should be included in feeds?
+
+This is the maximum number of current articles to be syndicated at a time, in RSS and Atom formats.
+
+A low value, such as `5` through `15` is recommended.
+
+### Show comment count in feeds?
+
+When set to 'Yes', this setting will append the number of comments to your article titles in RSS/Atom feeds.
+
+### Include email in Atom feeds?
+
+This allows you to include the email address of the author (as set in their user account) of an article in the *author* part of your Atom feeds.
+
+### Use email address to construct feed ids (default is site URL)?
+
+Feed items in Atom, require a unique ID. To generate IDs unique to your site, Textpattern allows you to choose between either an email address or your domain name to include in these IDs. The email address will be the first one used when creating the site. Unless you are likely going to be changing your domain name, it is probably safe to set this to 'No'.
 
 ## Comments preferences
 
 If you set [Accept comments?](#accept-comments) to 'Yes', this region of the Preferences administration panel is where you establish your global settings for article comments (if set to 'No', this region is omitted).
 
+### Comments on by default?
+
+If this is set to 'Yes', comments will be automatically enabled for every article published. If set to 'No', you must enable comments on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#onoff) each time you want to accept comments.
+
+Note that allowing comments can be turned on or off at any time, on a per-article basis.
+
+### Default comments invite
+
+The text in this edit field will be automatically set in the comment invitation field on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#invitation) for new articles. The comment invitation may also be controlled on a per-article basis.
+
+### Moderate comments?
+
+With this set to 'Yes', every new comment will have its visibility turned off until it has been reviewed. You must manually moderate and make each comment visible (a message will be emailed to the article author when a new comment has been received).
+
+### Comments disabled after
+
+This is a selection of time periods during which comments will be accepted for a given article. The time periods begin when a given article is first published in *live* status. The duration options range from 1 to 6 weeks and *never*.
+
+**Note:** Keep in mind that the longer you keep comments open on a given article, the more you increase the likelihood of comment spam. For this reason, it is not recommended that you select 'never'; however, the decision is ultimately yours to make, as well as the management of comment spam.
+
+### Automatically append comments to articles?
+
+This setting determines whether comments and the comment form are automatically appended to all individual articles (by automatically including the contents of the `comments_display` form).
+
+The majority of the time, you will want this set to 'No', as this allows greater flexibility to the positioning of your comments in your site design. You will need to add the [comments](http://docs.textpattern.io/tags/comments) tag manually in any article-based templates where you want comments to appear.
+
+If you are experiencing duplicate display of comments in an article, then chances are your templates have the [comments](http://docs.textpattern.io/tags/comments) tag in a template but also have 'Automatically append comments to articles?' set to 'Yes' too.
+
 TODO
+
+
+
+
 
 ## Custom fields preferences
 
@@ -293,28 +345,6 @@ TODO
 
 
 ## TODO: TO BE SORTED
-
-### Comments on by default?
-
-Permission for commenting is regulated on a per-article basis. This option controls the default setting for newly authored articles.
-
-### Default invite
-
-The text in this edit field will be automatically set in the comment invitation field on the [write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) page for new articles. The comment invitation may also be controlled on a per-article basis.
-
-### Moderate comments?
-
-Controls whether or not comments should be immediately published to an article ('No'), or if they should first be screened by a site administrator for approval ('Yes'). Although having them published immediately is more rewarding for the commenter, and less overhead management for the site owner, there is a certain level of risk. One might choose to moderate comments if there is a high degree of comment spam activity, or if comments are tending to be inappropriate, indecent, etc.
-
-### Disabled after
-
-This is a selection of time periods during which comments will be accepted for a given article. The time periods begin when a given article is first published in *live* status. The duration options range from 1 to 6 weeks and *never*.
-
-**Note:** Keep in mind that the longer you keep comments open on a given article, the more you increase the likelihood of comment spam. For this reason, it is not recommended that you select "never"; however, the decision is ultimately yours to make, as well as the management of comment spam.
-
-### Automatically append comments to articles?
-
-If 'Yes', comments are added to articles irrespective of whether you add a [comments](/home/www/zendstudio/dokuwiki/bin/doku.php?id=comments) tag or not. If you see comments doubled up on an article page, either set this to 'No' or alter your comment form.
 
 ### Comments mode
 
@@ -421,26 +451,6 @@ Also, there are certain names **reserved** by Textpattern, which should not be u
 A symptom of a name clash is when you go to check or display the contents of a custom field and receive unexpected (or no) output. In this case, make sure your custom field names are not any of the reserved names listed above.
 
 To remove a custom field, simply clear its name. **Don't forget to save changes made in the panel.**
-
-### Syndicate article excerpt only?
-
-If this is set to 'No', then feeds will always contain the full article bodies. If this is set to 'Yes', feed items will contain an excerpt instead of the article body where it is available.
-
-### How many articles should be included in feeds?
-
-This is the maximum number of current articles to be syndicated at a time, in RSS/Atom format. Recommended: a low value, such as 5 through 15
-
-### Show comment count in feeds?
-
-When set to 'Yes', this setting will append the number of comments to your article titles in your XML feeds.
-
-### Include email in Atom feeds?
-
-This allows you to include the email address of the author (as set in their user account) of an article in the author part of your Atom feeds.
-
-### Use email address to construct feed ids (default is site URL)?
-
-Feed items in Atom, require a unique ID. To generate IDs unique to your site, Textpattern allows you to choose between either an email address or your domain name to include in these IDs. The email address will be the first one used when creating the site. Unless you are likely going to be changing your domain name, it is probably safe to set this to 'No'.
 
 ### Compensate for persistent connections mod_deflate bug?
 
