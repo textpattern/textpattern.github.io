@@ -154,12 +154,33 @@ It is recommended that you load plugins through the standard Plugins administrat
 
 This preference should be left blank unless you experience problems with sending email in Textpattern (i.e. no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you've installed Textpattern (i.e. if your website is `example.com`, you might use `you@example.com`).
 
-TODO
+### Send login details from this email address
 
+Specify an email address which is used as the sender’s 'From:' address on messages with login information for new users.
 
+If this preference is left blank or contains an invalid email address, Textpattern uses the name and address of the currently logged-in user instead.
 
+### Use ISO-8859-1 encoding in emails (default is UTF-8)?
+
+Textpattern uses UTF-8 encoding wherever possible by default, including for outgoing emails. However, some older email clients (including some versions of Microsoft Outlook) do not have proper UTF-8 support. If you encounter garbled characters in emails, this setting will convert text to ISO-8859-1 encoding before sending them.
+
+**Note:** If you are using a language the characters of which cannot be represented in ISO-8859-1, this setting will unfortunately not help you. You should try finding a UTF-8 (or Unicode) compatible email client.
+
+### Enable XML-RPC server?
+
+If you wish to use [XML-RPC](https://en.wikipedia.org/wiki/XML-RPC) for controlling Textpattern remotely (e.g. desktop or mobile apps) you must switch the XML-RPC server on by setting this to 'Yes'.
+
+### Default administration panel
+
+The Textpattern administration interface panel that will appear first when anybody logs in.
+
+### Admin-side theme
+
+The default admin-side theme that will be used when anybody logs into Textpattern. A number of pre-installed admin themes are included with Textpattern, and you can also add custom theme packages to the `textpattern/admin-themes` directory to make them available for use.
 
 ## Publish preferences
+
+### Default publishing status
 
 TODO
 
@@ -226,22 +247,6 @@ Some commenting plugins require this to be set to 'No' before they work properly
 ### Mail comments to author?
 
 If set to 'Yes', whenever a comment is made against an article, the author will be emailed notification of the event, along with the contents of the comment.
-
-### Use ISO-8859-1 encoding in e-mails sent (default is UTF-8)?
-
-For whatever reason (can someone give one?) you might want to use ISO-8859-1 character encoding for emails, but the more internationally friendly UTF-8 unicode is set by default, so why change?
-
-### Enable XML-RPC server
-
-XML-RPC is an integral part of Textpattern, but disabled by default. To use [xml-rpc_for_desktop_publishing](/home/www/zendstudio/dokuwiki/bin/doku.php?id=xml-rpc_for_desktop_publishing) (publishing to your Textpattern site remotely), switch the server on by setting this to 'Yes'.
-
-### Default admin tab
-
-Set this to the panel you want to appear when you log in.
-
-### Admin-side theme
-
-Set the theme (appearance) of the admin panels. As of Textpattern 4.5, three themes are offered. "Classic" is the original theme with two rows of tabs. "Remora" is the updated Classic theme with a single row of tabs with drop-down menus. "Hive" is a modern, responsive theme and the basis of our future UI direction.
 
 ### Require user's name?
 
