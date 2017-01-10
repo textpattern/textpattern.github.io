@@ -34,7 +34,7 @@ On this page:
 
 ## textpattern
 
-The `textpattern` table contains the articles you create on the [Write panel](http://docs.textpattern.io/administration/write-panel).
+The `textpattern` table contains the articles you create on the [Write administration panel](http://docs.textpattern.io/administration/write-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column             Type           Description
