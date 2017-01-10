@@ -56,6 +56,34 @@ $ ./vendor/bin/phpcs --standard=phpcs.xml *.php textpattern
 
 The project follows [Semantic Versioning](http://semver.org/) and the `major.minor.patch` format.
 
+## Increasing the likelihood of code being accepted
+
+We accept most, but not all code that is submitted for inclusion in the Textpattern core. Sometimes we'll accept part of a patch or pull request, or include a modified or abridged version.
+
+Textpattern is open source, so you don't need our permission to make your own modifications or extensions. However, if you want to maximize the chances it will be accepted and included in the official distribution, here is a quick guide to the Textpattern development philosophy.
+
+### Do the simplest thing that could possibly work
+
+Is there a shorter or easier way to achieve the same result? Then do it that way. Less code often means fewer bugs and is easier to maintain.
+
+Don't reinvent the wheel. Is there already a function in PHP or Textpattern that makes your job easier? Use it.
+
+### Minimize assumptions
+
+Don't try to solve a problem unless you've tested it. This is particularly important for performance enhancements: measure the speed before and after -- is the improvement really significant? If not, the simplest solution might be to leave it alone.
+
+Similarly, don't write a bunch of functions or tag attributes on the assumption that they might be useful in the future. Unless you have a use case, leave it out.
+
+### Make it testable
+
+This is the most important part. It makes the development team's job easier if the code is deemed supportable and maintainable -- after all, we're the ones who will receive the bug reports and cries for help. The more you can do to help test your code, the better: examples of input and expected output, a test plan, notes on what you have and haven't tested.
+
+If you have a big patch, consider splitting it into smaller, related chunks. Git branches are ideal for this as you can commit to each branch and hop between them, then submit each as a separate pull request. Also, please ensure your patch has the latest branch from our repo merged into it immediately prior to submission. If you have written the patch against the `dev` branch, for example, do `git merge dev` when on your branch to pull forward any recent changes to dev from other developers, then prepare your pull request. This step makes it easier for us to pull the patch down and test it in our development environments.
+
+Scripted unit tests are becoming increasingly important in the Textpattern release process. You can make your code more testable by using a [functional design](https://en.wikipedia.org/wiki/Functional_design) with minimal coupling. A function that can be run in isolation, and returns a value based on its arguments, is easy to test. A function that prints output based on global variables, database records and configuration values is much harder to test (conveniently, Textpattern tag handler functions are usually easy to test).
+
+Sure, we break our own rules sometimes. But, as a rule, we err on the side of simplicity.
+
 ## License
 
 [GNU General Public License, version 2](https://github.com/textpattern/textpattern/blob/master/LICENSE.txt). By contributing to the project, you agree to license your additions under the GPLv2 license.
