@@ -6,7 +6,7 @@ title: Preferences panel
 description: The Preferences administration panel is where you configure the everyday operation of your Textpattern site.
 ---
 
-# Preferences panel TODO
+# Preferences panel
 
 The Preferences administration panel is where you configure the everyday operation of your Textpattern site. Along with the [Languages administration panel](http://docs.textpattern.io/administration/languages-panel), most of Textpattern's site-wide settings can be configured and fine-tuned. Preferences are grouped for convenience:
 
@@ -324,67 +324,59 @@ This is a selection of time periods during which comments will be accepted for a
 
 ### Automatically append comments to articles?
 
-This setting determines whether comments and the comment form are automatically appended to all individual articles (by automatically including the contents of the `comments_display` form).
+This setting determines whether comments and the comment form are automatically appended to all individual articles (by automatically including the contents of the `comments_display` Form template).
 
 The majority of the time, you will want this set to 'No', as this allows greater flexibility to the positioning of your comments in your site design. You will need to add the [comments](http://docs.textpattern.io/tags/comments) tag manually in any article-based templates where you want comments to appear.
 
 If you are experiencing duplicate display of comments in an article, then chances are your templates have the [comments](http://docs.textpattern.io/tags/comments) tag in a template but also have 'Automatically append comments to articles?' set to 'Yes' too.
 
-TODO
-
-
-
-
-
-## Custom fields preferences
-
-TODO
-
-
-
-
-
-## TODO: TO BE SORTED
-
 ### Comments mode
 
-In "popup" mode, a tiny browser window will pop up for the viewer to enter the comment. In "nopopup" mode, the main article page will change to show the comment entry form.
+If 'current window' is selected (recommended) the current window will be refreshed to display only the current article, with comments beneath.
+
+If 'popup window' is selected, a new browser window will open when the comments link is clicked (this uses the `popup_comments` Form template).
 
 ### Comments date format
 
 This control will select the date and time format for the posting time of comments.
 
+### Email comments to author?
+
+If set to 'Yes', whenever a new comment is received on an article, a copy will be sent via email to that article's author.
+
 ### Present comments as a numbered list?
 
-If you want to use an HTML ordered list to display your user comments, choose 'Yes'. If you choose 'No', your comments will be output as blocks of text without automatic numbers, thus numbering (if any) will have to be done by you.
+Determines whether article comments will be wrapped with the HTML `<ol>` tag and individual comments will be wrapped in the `<li>` tag (causing comments to be presented as a numbered list), or whether individual comments will be wrapped with the `<div>` tag instead.
 
-Some commenting plugins require this to be set to 'No' before they work properly
+With either value, you can override the tags used on an individual Form template basis by modifying the [comments](http://docs.textpattern.io/tags/comments) tag, found in the `comments_display` Form template.
 
-### Mail comments to author?
+### New comment means site updated?
 
-If set to 'Yes', whenever a comment is made against an article, the author will be emailed notification of the event, along with the contents of the comment.
+The Textpattern database keeps track of when the most recent change to your site took place. When this setting is set to 'Yes', a new comment will also update this value. This value is used for example for [Send Last-Modified header](#send-last-modified-header) functionality.
 
-### Require user's name?
+### Comments require commenter's name?
 
-If set to 'Yes', people that want to comment on your blog will have to enter a name in the comment-form. They will receive an error message otherwise.
+If set to 'Yes', people that want to comment on your article will have to enter a name in the comment input form. They will not be able to submit a comment if they do not supply a name.
 
-### Require user's email address?
+### Comments require commenter's email address?
 
-If set to 'Yes', people that want to comment on your blog, will have to enter an email address in the comment-form. They will receive an error message otherwise.
+If set to 'Yes', people that want to comment on your article will have to enter an email address in the comment write form. They will be unable to post a comment if they do not supply an email address.
 
-### Never display email address?
+### Hide commenter email address?
 
 This setting controls whether the email address of a commenter should be shown publicly.
 
-### Apply rel="nofollow&quot; to comments?
+It's recommended that email addresses should not be shown, as courtesy to your users, but there may be certain situations when showing commenter email addresses is desirable.
 
-This will add an additional attribute to the links made in comments. It is intended to be a measure that takes away the incentive for comment-spammers and was initiated by a range of search engines and software-writers. You can find out more about it by reading [Google's announcement](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html).
+### Apply rel=nofollow to comments?
 
-**Note:** This setting does not influence the functionality or ranking of your site. It may prevent or diminish the influence of your comments when some search engines rank sites linked to from those comments.
+If set to 'Yes', this will add an additional attribute to the links made in comments. It is intended to be a measure that takes away the incentive for comment spammers and was initiated by a range of search engines and software developers. You can find out more by reading [Google's announcement](https://googleblog.blogspot.com/2005/01/preventing-comment-spam.html).
 
-### Disallow user images?
+**Note:** This setting does not influence the functionality of your site. It may prevent or diminish the influence of your comments when some search engines rank sites linked to from those comments.
 
-With this option set to 'Yes', images included in comments will be stripped out.
+### Strip commenter images from comments?
+
+With this option set to 'Yes', any images included in comments will be stripped out.
 
 ### Allow more Textile markup in comments?
 
@@ -392,68 +384,56 @@ When set to 'Yes', comments may contain Textile elements which would otherwise b
 
 * headings
 * ordered and unordered lists
-* foot notes
+* footnotes
 * tables
 * code
-* extended block syntax (bc.., bq.., etc.)
+* extended block syntax (`bc..`, `bq..`, etc.)
 
-For security reasons, raw HTML is transformed into regular text.
+**Note:** For security reasons, raw HTML is transformed into regular text.
 
 ### Spam blocklists (comma-separated)
 
-The blocklist providers entered here, will be contacted when a comment is posted to your blog and the IP of the comment poster will be checked. If the IP is listed, it means there have been spamming complaints made about this IP in the past and a comment will be rejected.
+The [blocklist](https://en.wikipedia.org/wiki/Blacklisting) providers entered here will be queried when a comment is posted to your blog, and the IP address of the comment poster will be checked. If the IP address is listed it means there has been one or more spamming reports made about this IP in the past, and the comment will be rejected.
 
-You can enter a list of domain names that should be seperated by commas. Potential blocklists can be found at [dmoz](http://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/), but be aware that it is your responsibility to make sure you can trust those blacklist-providers before you add any.
+Additionally, checks on approved comments will take place when an article is viewed on the front-side. If you encounter slowness when displaying articles with comments, consider disabling spam blocklists by removing the blocklist address(es).
 
-#### New comment means site updated?
+You can enter a list of domain names here, separated by commas. Potential blocklists can be found via [dmoz](https://www.dmoz.org/Computers/Internet/E-mail/Spam/Blacklisting/Lists/), but please note that it is your responsibility to ensure blocklists are fit for purpose.
 
-The database keeps track of when the last change to your site has happened. When this setting is set to 'Yes', a new comment will also update this value. This value is used for example for the "Send Last-Modified header" functionality.
+## Custom fields preferences
 
-### Custom fields
+This region is where custom fields can be defined (new installations of Textpattern define two custom fields for demonstration purposes: `custom1` and `custom2`). These in turn appear under the 'Custom fields' section of the [Write administration panel](http://docs.textpattern.io/administration/write-panel#custom-fields) so you can make use of them, as needed, in context of a given article.
 
-This region is where ten (10) custom fields can be defined. New installations of Textpattern define two custom fields for demonstration purposes: *custom1* and *custom2*. When custom fields have names such as these, they automatically appear under the *Advanced Options* section of the [write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) panel so you can make use of them, as needed, in context of a given article.
+**Important notes on creating custom field names:** Custom field names may include letters (uppercase or lowercase), numbers, and under scores, but no spaces or other special characters should be used. For example, `custom1`, `Custom1`, and `Custom_1` are all valid name constructs, while `custom 1` and `custom !` are not.
 
-**Important notes on creating custom field names:**
+Also, there are certain names **reserved** by Textpattern, which should *not* be used to name custom fields, or it could cause your code to not work as expected. **Do not use the following for custom field names:**
 
-Custom field names may include letters (uppercase or lowercase), numbers, and under scores, but no spaces or other special characters should be used. For example, *custom1*, *Custom1*, and *Custom_1* are all valid name constructs, while *custom 1* and *custom !* are not.
-
-(**Attention:** you might find that you can use spaces in custom field names and it works in some situations. But this is \*not advised\*â€"and may eventually become impossible anywayâ€"because there are instances where custom field names are used as attributes in other Textpattern tags and thus required to be non-breaking strings, e.g.,
-
-    <txp:article_custom customfieldname="value" />
-
-. In this example, "customfieldname" represents a custom field name, which must be a single string in this case to work correctly. If the defined custom field name has one or more spaces, it won't work correctly.)
-
-Also, there are certain names **reserved** by Textpattern, which should not be used to name custom fields, or it could cause your code to not work as expected. **Do not use the following for custom field names:**
-
-* annotate
-* article_image
-* authorid
-* body
-* category
-* category1
-* category2
-* comments_count
-* comments_invite
-* excerpt
-* form
-* keywords
-* limit
-* offset
-* posted
-* section
-* sort
-* status
-* thisid
-* title
-* url_title
-* Any other [tag attribute](http://docs.textpattern.io/tags/tag-attributes-cross-reference), just in case
+* `annotate`
+* `article_image`
+* `authorid`
+* `body`
+* `category`
+* `category1`
+* `category2`
+* `comments_count`
+* `comments_invite`
+* `excerpt`
+* `form`
+* `keywords`
+* `limit`
+* `offset`
+* `posted`
+* `section`
+* `sort`
+* `status`
+* `thisid`
+* `title`
+* `url_title`
+* Any other [tag attribute](http://docs.textpattern.io/tags/tag-attributes-cross-reference), just in case!
 
 A symptom of a name clash is when you go to check or display the contents of a custom field and receive unexpected (or no) output. In this case, make sure your custom field names are not any of the reserved names listed above.
 
-To remove a custom field, simply clear its name. **Don't forget to save changes made in the panel.**
+To remove a custom field, simply clear its name.
 
-### Compensate for persistent connections mod_deflate bug?
-
-Some mod_deflate versions have a bug that breaks subsequent requests when keep-alive is used. Dropping the connection is the only reliable way to fix this. Setting this preference to 'Yes' will close the connection, forcing the browser to reconnect for the next request.
+**Don't forget to save changes made in the panel.**
 
 [Next: Languages panel](http://docs.textpattern.io/administration/languages-panel)
