@@ -6,7 +6,7 @@ title: Creating and using admin-side themes
 description: Admin-side themes allow Textpattern administrators (and publishers) to choose a specific theme for the administration panels.
 ---
 
-# Creating and using admin-side themes
+# Creating and using admin-side themes TODO
 
 Admin-side themes allow Textpattern administrators (and publishers) to choose a specific theme for the administration panels, from the list of options via the Admin Preferences.
 

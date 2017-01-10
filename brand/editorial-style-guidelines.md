@@ -6,7 +6,7 @@ title: Textpattern editorial style guide
 description: These guidelines concern all text content published on Textpattern platforms, and any outbound content for marketing reasons.
 ---
 
-# Textpattern editorial style guide
+# Textpattern editorial style guide TODO
 
 These guidelines concern all text content published on Textpattern platforms, and any outbound content for marketing reasons. Following these guidelines will help you produce accurate, clear, and concise copy that Textpattern audiences will find easier to read, translate, understand, and use.
 

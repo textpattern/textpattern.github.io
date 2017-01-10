@@ -6,7 +6,7 @@ title: Naming conventions for template authors
 description: This is a draft for a proposed naming convention, to name, structure and package up template Files.
 ---
 
-# Naming conventions for template authors
+# Naming conventions for template authors TODO
 
 **Unofficial Working Draft for a TXP Templating Naming Convention**
 
