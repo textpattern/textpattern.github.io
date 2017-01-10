@@ -120,7 +120,7 @@ When you are using Textpattern for logging (see above), you can set how long (in
 
 ### Accept comments?
 
-This is a global setting for whether or not you want to allow your articles to accept comments. This setting can be overridden on an article-by-article basis in the [Write panel](http://docs.textpattern.io/administration/write-panel) as you write new articles.
+This is a global setting for whether or not you want to allow your articles to accept comments. This setting can be overridden on an article-by-article basis in the [Write administration panel](http://docs.textpattern.io/administration/write-panel) as you write new articles.
 
 ## Admin preferences
 
@@ -194,15 +194,15 @@ Note this preference setting does not affect the status or articles created or e
 
 ### Use excerpts on articles?
 
-By choosing 'No' the excerpt field will not be shown to authors on the [Write panel](http://docs.textpattern.io/administration/write-panel#excerpt).
+By choosing 'No' the excerpt field will not be shown to authors on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#excerpt).
 
 ### Allow form override?
 
-This setting allows article authors to override the Form template to be used when their article is rendered. If enabled, an 'Override form' dropdown will be available under 'Advanced options' on the [Write panel](http://docs.textpattern.io/administration/write-panel#override-form).
+This setting allows article authors to override the Form template to be used when their article is rendered. If enabled, an 'Override form' dropdown will be available under 'Advanced options' on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#override-form).
 
 ### Attach titles to permalinks?
 
-This setting will attach a automatically-generated version of the article title to the URL. It is either generated automatically or can be manually overridden in 'URL-only title' when editing an article on the [Write panel](http://docs.textpattern.io/administration/write-panel#uRL-only-title).
+This setting will attach a automatically-generated version of the article title to the URL. It is either generated automatically or can be manually overridden in 'URL-only title' when editing an article on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#uRL-only-title).
 
 The setting will only have an effect when you are using clean URLs. For certain languages this may result in long and ugly URLs, in which case you probably want to set this to 'No'.
 
@@ -210,7 +210,7 @@ The setting will only have an effect when you are using clean URLs. For certain 
 
 This setting only has an effect when 'Attach titles to permalinks?' above is set to 'Yes', and defines the method by which article URLs are constructed and assigned when a non-messy [Article URL pattern](#article-url-pattern) is used.
 
-When an article is published, its URL is generated from the article title unless a specific URL is provided in in the 'URL-only title' field on the [Write panel](http://docs.textpattern.io/administration/write-panel#uRL-only-title).
+When an article is published, its URL is generated from the article title unless a specific URL is provided in in the 'URL-only title' field on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#uRL-only-title).
 
 Take the following example article title: "Ann and Bob eat cake"...
 
@@ -242,11 +242,37 @@ When set to 'No', expired articles will be removed from the public site and retu
 
 This will send a [ping](https://en.wikipedia.org/wiki/Ping_(blogging)) to [Ping-O-Matic](http://pingomatic.com/) whenever you publish a new article. Ping-O-Matic is a aggregation service to notify listed websites that your website has been updated.
 
-TODO
+### Use Textile
 
+Textile is a utility intended to simplify the conversion of plain text to HTML. When enabled, Textile will process the body text of articles and return structurally sound HTML.
 
+Textile also offers a powerful but easy-to-learn set of commands with which to format text, define structures such as lists, headers and blockquotes, and insert links and images.
 
+The setting you choose here becomes the default for excerpt and body markup on the [Write administration panel](http://docs.textpattern.io/administration/write-panel#uRL-only-title). You can choose to allow complete Textile processing, to convert line breaks into HTML paragraph markers or not convert any text at all.
 
+### Use DNS lookup in visitor logs?
+
+This setting only has an effect when [Logging](#logging) is turned on. Using DNS will, where possible, translate IP addresses in your logs to hostnames. In some instances this might slow down your site, in which case you might want to set this to 'No'.
+
+### Use plugins?
+
+This allows you to turn off all support for Textpattern plugins. This is useful if you are debugging errors on your site, and you want to make check if one or more plugins are involved.
+
+### Use admin-side plugins?
+
+Admin-side plugins can change the operation of the administration interface. They might hook into already existing actions, like editing or publishing articles, or they might add new panels for added/extended functionality.
+
+### Allow PHP in pages?
+
+When enabled, this setting allows PHP code within Page templates and Form templates. PHP code must have opening and closing PHP tags omitted, and also be enclosed within Textpattern [php](http://docs.textpattern.io/tags/php) tags.
+
+### Allow PHP in articles?
+
+When enabled, this setting will allow use of PHP within articles. The author must have sufficient privileges to do so (by default, only @@Publishers@@ and @@Managing Editors@@ can). PHP code must have opening and closing PHP tags omitted, and also be enclosed within Textpattern [php](http://docs.textpattern.io/tags/php) tags.
+
+### Maximum URL length (in characters)
+
+This prevents URLs that are longer than the specified length from functioning. It could be helpful in damage limitation and site security.
 
 ## Feeds preferences
 
@@ -267,10 +293,6 @@ TODO
 
 
 ## TODO: TO BE SORTED
-
-### Use Textile
-
-Textile is a meta-formatting language that lets site authors format work without having to know HTML completely. This option may be set to select usage of Textile in articles; disable Textile but keep smart replacement of line breaks and special characters; or disable article manipulation entirely.
 
 ### Comments on by default?
 
@@ -423,33 +445,5 @@ Feed items in Atom, require a unique ID. To generate IDs unique to your site, Te
 ### Compensate for persistent connections mod_deflate bug?
 
 Some mod_deflate versions have a bug that breaks subsequent requests when keep-alive is used. Dropping the connection is the only reliable way to fix this. Setting this preference to 'Yes' will close the connection, forcing the browser to reconnect for the next request.
-
-### Use DNS?
-
-This setting only has an effect, when "Logging" in "Site Preferences" is turned on. Using DNS will allow you to translate IP adresses in your logs to host-names. For some servers this might subjectively slow down your site, in which case you might want to turn this off.
-
-### Maximum URL length (in characters)
-
-This prevents URLs that are longer than specified from functioning. It could be helpful in damage limitation.
-
-### Use plugins?
-
-This allows you to turn off support for plugins. You might want to do this if you find strange errors happening on your site, and you want to make sure that it is not the fault of plugins.
-
-### Use admin-side plugins?
-
-Admin-side plugins are those which can change the operation of the administration interface. They might hook into already existing actions, like editing or publishing articles, or they might add new tabs for added/extended functionality.
-
-### Allow PHP in pages?
-
-When enabled, this setting allows PHP code within page and form templates. PHP code must be without both opening and closing PHP tags, and enclosed within [php](/home/www/zendstudio/dokuwiki/bin/doku.php?id=php) tags.
-
-### Allow PHP in articles?
-
-When enabled, this setting will allow use of PHP within articles. The author must have sufficient privileges to do so. PHP code must be both without opening and closing PHP tags, and enclosed within [php](/home/www/zendstudio/dokuwiki/bin/doku.php?id=php) tags.
-
-### Allow raw php? 
-
-When enabled, this setting allows raw PHP code to be used. Normally this isn't allowed, and PHP code must be without both opening and closing PHP tags, and enclosed within txp:php tags. This setting is for backwards compatible purposes only, and it is recommended to be set to 'No'.
 
 [Next: Languages panel](http://docs.textpattern.io/administration/languages-panel)
