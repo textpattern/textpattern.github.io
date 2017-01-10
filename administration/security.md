@@ -17,9 +17,9 @@ On this page:
 
 ## Textpattern security statement
 
-The developers of Textpattern take system security very seriously. They regularly audit the source code for potential 'holes' that bad people might try to exploit. Textpattern can proudly claim that for many years now there has been no confirmed reports of an exploited hole in core Textpattern code.
+The developers of Textpattern take system security very seriously. They regularly audit the source code for potential 'holes' that people might try to exploit. Textpattern can proudly claim that for many years now there have been no confirmed reports of an exploited hole in core Textpattern code.
 
-There have been occasional reports of hacked Textpattern sites, but the problem usually traces to security holes in *other applications* (or in the web server itself), which were exploited and used to take control of the Textpattern administrator's account. This is important to understand, because while Textpattern itself is quite secure, you can still make it vulnerable by using other technology in relation that is not as secure. **There is nothing Textpattern developers can do to defend against security holes in other applications.**
+There have, however, been occasional reports of hacked Textpattern sites, but the problem usually traces to security holes in *other applications* (or in the web server itself), which were exploited and used to take control of the Textpattern administrator's account. This is important to understand, because while Textpattern itself is quite secure, you can still make it vulnerable by using other technology in relation that is not as secure. **There is nothing Textpattern developers can do to defend against security holes in other applications.**
 
 ## Do your part for good security
 
@@ -29,6 +29,8 @@ Textpattern developers do their part to keep core code as secure as they can. It
 
 * Update your installation to the [latest stable release version](http:/textpattern.com/download) whenever new releases are available.
 * Check the [Diagnostics panel](http://docs.textpattern.io/administration/diagnostics-panel) for security warnings. @@todo:add warning examples on diagnostics page@@
+* Ensure you use a very strong password for *all* accounts.
+* Only create Textpattern user accounts for people who require them, and ensure their access level is set to only the functionality they require. Don't just create admin-level accounts because it is easier! Each one is a potential avenue of attack.
 
 **With regard to Texpattern plugins:**
 
