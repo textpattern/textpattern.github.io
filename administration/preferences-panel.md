@@ -132,6 +132,28 @@ The root-relative URI (without opening or closing slashes) of the directory (fol
 
 The full path (file path, not URI) to the directory (folder) for files uploaded via the [Files administration panel](http://docs.textpattern.io/administration/files-panel). By default it is named `files` and is in the root directory of the website. As with the Image directory, you only need to change this if you have renamed and/or moved this directory.
 
+### Maximum file size of uploads (in bytes)
+
+Maximum size for file uploads via the [Files administration panel](http://docs.textpattern.io/administration/files-panel). Note that this value is also limited by the configuration of PHP on your web server; if Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host (the relevant values in `php.ini` are `post_max_size`, `upload_max_filesize` and `memory_limit`).
+
+Image uploads are not restricted by this value. The maximum allowed size for images is always ~1MB (unless restricted by PHP as explained above).
+
+### Temporary directory path
+
+Full path (absolute file path, not URI) for this directory, which is required by Textpattern during uploads. By default it is named `tmp` and is at the root level of the Textpattern installation.
+
+### Plugin cache directory path
+
+This setting is mainly used for plugin developers. When specified, you can put the plugin source file (not compiled) in this directory and Textpattern will load it automatically, so you can easily edit the plugin and immediately see the effect it has without having to install/activate the plugin. **Beware** though that by using this method, a broken plugin (which fails to compile) may also break Textpattern!
+
+It is recommended that you load plugins through the standard Plugins administration panel on a production site, rather than using the plugin cache directory.
+
+**Note:** Do not specify the same directory for both 'Temporary directory path' and 'Plugin cache directory path', as this will cause problems (Textpattern would try to run the contents of temporary log files as plugins).
+
+### SMTP envelope sender address
+
+This preference should be left blank unless you experience problems with sending email in Textpattern (i.e. no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you've installed Textpattern (i.e. if your website is `example.com`, you might use `you@example.com`).
+
 TODO
 
 
@@ -204,24 +226,6 @@ Some commenting plugins require this to be set to 'No' before they work properly
 ### Mail comments to author?
 
 If set to 'Yes', whenever a comment is made against an article, the author will be emailed notification of the event, along with the contents of the comment.
-
-### Maximum file size of uploads (in bytes)
-
-Maximim size for file uploads via the [files](/home/www/zendstudio/dokuwiki/bin/doku.php?id=files) panel. Note that this value is also limited by the configuration of PHP on your Web server; if Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host. (The relevant values in *php.ini* are `post_max_size`, `upload_max_filesize` and `memory_limit`.)
-
-**Note:** Image Uploads are not restricted by this value. The maximum allowed size for images is always \~ 1MB (unless restricted by PHP as explained above).
-
-### Temporary directory path
-
-Full path (file path, not URI) for this directory, which is needed by Textpattern during uploads. By default it is named "tmp" and is at the root level of the installation. You should not need to change this.
-
-### Plugin cache directory path
-
-Leave this empty unless you are using a plugin that requires it, or you are a plugin developer and want to test uncompiled plugins. No such directory is included by default.
-
-### SMTP envelope sender address
-
-This preference should be left blank unless you experience problems with sending email in Textpattern (i.e. no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you've installed Textpattern (i.e. if your website is example.com, you might use you@example.com).
 
 ### Use ISO-8859-1 encoding in e-mails sent (default is UTF-8)?
 
