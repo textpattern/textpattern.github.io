@@ -1,5 +1,0 @@
-h1. How do I change the output of txp:recent_articles? [todo]
-
-Use @<txp:article_custom />@ instead, and create or edit a form to control the output. You can use any article tag in that form: @<txp:title />@, @<txp:posted />@, etc.
-
-For detailed examples, see "Customizing txp:recent_articles":http://thresholdstate.com/articles/3649/customizing-txp-recent_articles.
