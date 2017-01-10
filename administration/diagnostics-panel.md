@@ -91,11 +91,11 @@ Low diagnostics info begins with a set of data values about your installation an
             </tr>
             <tr>
                 <th scope="row">Automatically adjust Daylight Saving Time setting?</th>
-                <td>Whether or Textpattern will adjust DST automatically (<code>0</code>=no, <code>1</code>=yes). Corresponds with the 'Automatically adjust Daylight Saving Time setting?' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#automatically-adjust-daylight-saving-time-setting">Preferences administration panel</a>.</td>
+                <td>Whether Textpattern will adjust DST automatically ("0"=no, "1"=yes). Corresponds with the 'Automatically adjust Daylight Saving Time setting?' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#automatically-adjust-daylight-saving-time-setting">Preferences administration panel</a>.</td>
             </tr>
             <tr>
                 <th scope="row">Daylight Savings Time enabled?</th>
-                <td>Whether or not Daylight Savings Time is enabled ("0"=no, "1"=yes). Corresponds with the 'Daylight Savings Time enabled?' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#daylight-savings-time-enabled">Preferences administration panel</a>.</td>
+                <td>Whether Daylight Savings Time is enabled ("0"=no, "1"=yes). Corresponds with the 'Daylight Savings Time enabled?' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#daylight-savings-time-enabled">Preferences administration panel</a>.</td>
             </tr>
             <tr>
                 <th scope="row">Time zone</th>
