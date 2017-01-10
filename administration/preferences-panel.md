@@ -182,7 +182,71 @@ The default admin-side theme that will be used when anybody logs into Textpatter
 
 ### Default publishing status
 
+Defines the [publishing visibility status](http://docs.textpattern.io/administration/write-panel#status) of newly-created Textpattern articles.
+
+Note this preference setting does not affect the status or articles created or edited prior to any change.
+
+### Prevent widowed words in article titles?
+
+'Widowed word' refers to the final word of a sentence shown on a new line when the sentence is too long to fit on one line. In printed works, widowed words are considered sloppy typography and should be avoided. Setting this preference to 'Yes' will ensure that long article titles lines never have only the last word on a new line. Instead, the two last words will appear on a new line.
+
+**Note:** This setting can prove problematic in responsive pages at smaller page widths, because the non-breaking space character between the last two words may cause titles to overspill their parent container. In that case, set this preference to 'No'.
+
+### Use excerpts on articles?
+
+By choosing 'No' the excerpt field will not be shown to authors on the [Write panel](http://docs.textpattern.io/administration/write-panel#excerpt).
+
+### Allow form override?
+
+This setting allows article authors to override the Form template to be used when their article is rendered. If enabled, an 'Override form' dropdown will be available under 'Advanced options' on the [Write panel](http://docs.textpattern.io/administration/write-panel#override-form).
+
+### Attach titles to permalinks?
+
+This setting will attach a automatically-generated version of the article title to the URL. It is either generated automatically or can be manually overridden in 'URL-only title' when editing an article on the [Write panel](http://docs.textpattern.io/administration/write-panel#uRL-only-title).
+
+The setting will only have an effect when you are using clean URLs. For certain languages this may result in long and ugly URLs, in which case you probably want to set this to 'No'.
+
+### Permalink title URL pattern
+
+This setting only has an effect when 'Attach titles to permalinks?' above is set to 'Yes', and defines the method by which article URLs are constructed and assigned when a non-messy [Article URL pattern](#article-url-pattern) is used.
+
+When an article is published, its URL is generated from the article title unless a specific URL is provided in in the 'URL-only title' field on the [Write panel](http://docs.textpattern.io/administration/write-panel#uRL-only-title).
+
+Take the following example article title: "Ann and Bob eat cake"...
+
+When the 'Permalink title URL pattern' option is set to 'Hyphenated (title-like-this)', the URL for the article would be:
+
+~~~
+http://example.com/ann-and-bob-eat-cake
+~~~
+
+When the 'Permalink title URL pattern' option is set to 'Intercapped (TitleLikeThis)', the URL for the article would be:
+
+~~~
+http://example.com/AnnandBobeatcake
+~~~
+
+### Send Last-Modified header?
+
+When set, Textpattern will read a visitor’s HTTP `If-Modified-Since` header (if one exists) and compare it to the last site update. If nothing has changed since the visitor last loaded the page (i.e. if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor’s browser to use its cached version of the page.
+
+This can reduce bandwidth consumption, page load times, and web server load.
+
+### Publish expired articles?
+
+When set to 'Yes', expired articles will continue to show on your site after their expiry date has elapsed. You can use [if_expired](http://docs.textpattern.io/tags/if_expired) to show alternate content or markup for expired articles.
+
+When set to 'No', expired articles will be removed from the public site and return a "410 Gone" HTTP status instead. Visitors hitting an expired article will be shown a custom page template named "error_410" if it's present.
+
+### Ping pingomatic.com?
+
+This will send a [ping](https://en.wikipedia.org/wiki/Ping_(blogging)) to [Ping-O-Matic](http://pingomatic.com/) whenever you publish a new article. Ping-O-Matic is a aggregation service to notify listed websites that your website has been updated.
+
 TODO
+
+
+
+
 
 ## Feeds preferences
 
@@ -356,55 +420,9 @@ This allows you to include the email address of the author (as set in their user
 
 Feed items in Atom, require a unique ID. To generate IDs unique to your site, Textpattern allows you to choose between either an email address or your domain name to include in these IDs. The email address will be the first one used when creating the site. Unless you are likely going to be changing your domain name, it is probably safe to set this to 'No'.
 
-### Prevent widowed words in article titles?
-
-In typesetting, a "widow" refers to the last word in a given block of text that happens to wrap to the next line by itself. Allowing widows in printed work is generally considered a visually sloppy thing to do.
-
-By default, Textpattern prevents widow words from happening in article **titles** by automatically adding a no-break value between the last two words. So instead of a widow, there will be two (or more) words on the last line, or none at all, depending on your word count and the width of the containing element of your titles.
-
-This preference allows you to turn that functionality off by saying 'No'. As a result, your titles will wrap without interference. This may be more preferable if your page layout is responsive, as titles with a no-break between two long words could potentially break the layout at smaller screen widths, resulting in text spilling out of the container area.
-
-### Articles use excerpts?
-
-By choosing 'No' the excerpt field will not be shown to the author on the article-editing screen.
-
-### Allow form override?
-
-This setting allows article authors to override the form to be used when their article is rendered. If enabled, an "Override form" dropdown will be available under "Advanced Options", when editing an article.
-
-### Attach titles to permalinks?
-
-This setting will attach a dirified version of your article-title to your URL, it is either generated automatically or can be manually overridden in the "Advanced Options" when editing an article.
-
-This setting will only have an effect when you are using clean URLs. For certain languages this may result in long and ugly URLs, in which case you probably want to set this to 'No'.
-
-### Permalink title URL pattern
-
-This setting only has an effect when "Attach titles to permalinks" is set to 'Yes'. When dirifying article-titles for use in URLs, you have the option of:
-
-1. Hyphenated (title-like-this) - Using all lowercase letters, and replacing spaces with hyphens.
-2. Intercapped (TitleLikeThis) - Completely removing spaces, and using CamelCase, which means that the beginning of new words will be marked by uppercase letters.
-
-### Send Last-Modified header?
-
-When set, Textpattern will read a visitor's HTTP If-Modified-Since header (if one exists) and compare it to the last site update. If nothing has changed since the visitor last loaded the page (i.e. if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor's browser to use its cached version of the page.
-
-This can reduce bandwidth consumption, page load times, and reduce the load on the webserver.
-
-### Publish expired articles?
-
-When set to 'Yes', expired articles will continue to show on your site after their expiry date has elapsed. You can use [if_expired](/home/www/zendstudio/dokuwiki/bin/doku.php?id=if_expired) to show alternate content or markup for expired articles.
-
-When set to 'No', expired articles will be removed from the public site and return a "410 Gone" HTTP status instead. Visitors hitting an expired article will be shown a custom page template named "error_410" if it's
-present.
-
 ### Compensate for persistent connections mod_deflate bug?
 
 Some mod_deflate versions have a bug that breaks subsequent requests when keep-alive is used. Dropping the connection is the only reliable way to fix this. Setting this preference to 'Yes' will close the connection, forcing the browser to reconnect for the next request.
-
-### Ping pingomatic.com?
-
-Whenever you publish a new article, Textpattern will send a ping to [Ping-O-Matic](http://pingomatic.com/). Recommended: 'Yes' for live sites, 'No' for sites in development.
 
 ### Use DNS?
 
