@@ -1,16 +1,5 @@
-\\n[mininav_tutorials](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials)
+@@todo Merge https://github.com/textpattern/textpattern.github.io/blob/master/faqs/help-i-forgot-my-password.md if required, then move this to a HowTo section?@@
 
-[help](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=help)
-
-<hr />
-- Stef 00:50, 15 Oct 2009 (GMT). Is this a Tutorial or for
-Troubleshooting? i.e. would you want to know how to do this just for the
-sake of it, or would you only seek to do it if something went wrong? The
-content is replicated and slightly updated in
-[forgotten_password](/home/www/zendstudio/dokuwiki/bin/doku.php?id=forgotten_password)
-so if it is deemed to belong there, this topic may be deleted.
-
-<hr />
 Resetting the administrators password (or any user password) is fairly
 straight forward. This presumes you have access to phpMyAdmin which is
 commonly installed on my webservers that use MySQL.
