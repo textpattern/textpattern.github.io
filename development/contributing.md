@@ -26,7 +26,7 @@ The page you're reading now is part of the documentation project. Spot any error
 
 ### Contribute code
 
-Core developers and project maintainers accept Pull Requests. The [main code repository](https://github.com/textpattern/textpattern) is split into at least three branches:
+Core developers and project maintainers accept Pull Requests. The [main code repository](https://github.com/textpattern/textpattern) uses [Git](https://www.sitepoint.com/git-for-beginners/) for its version control and is split into at least three branches:
 
 * `master`: for stable releases only. Core devs only ever merge production-ready code here at release time.
 * `maint-x.y.z`: for patching the most recent stable release.
