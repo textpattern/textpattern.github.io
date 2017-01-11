@@ -8,7 +8,7 @@ description: The Diagnostics panel is important for troubleshooting problems wit
 
 # Diagnostics panel
 
-The **Diagnostics** panel is important for troubleshooting problems with your Textpattern installation, such as misconfigurations you might discover when installing or upgrading to a new version. The panel can also be useful for troubleshooting functional problems you inadvertently introduce when extending the system, modifying the `.htaccess` file, or some other slight of hand.
+The Diagnostics administration panel is important for troubleshooting problems with your Textpattern installation, such as misconfigurations you might discover when installing or upgrading to a new version. The panel can also be useful for troubleshooting functional problems you inadvertently introduce when extending the system, modifying the `.htaccess` file, or some other slight of hand.
 
 On this page:
 

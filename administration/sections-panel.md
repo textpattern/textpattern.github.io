@@ -8,7 +8,7 @@ description: Sections are the principle content organization mechanism in Textpa
 
 # Sections panel TODO
 
-Sections are the principle content organization mechanism in Textpattern, and the Sections panel is where you manage them.
+Sections are the principle content organization mechanism in Textpattern, and the Sections administration panel is where you manage them.
 
 Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
 

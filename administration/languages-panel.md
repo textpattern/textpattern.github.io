@@ -8,7 +8,7 @@ description: The Languages panel is where you update your chosen language pack a
 
 # Languages panel TODO
 
-The **Languages** panel is where you update your chosen language pack (also called a "Textpack") after installing and updating Textpattern.
+The Languages administration panel is where you update your chosen language pack (also called a "Textpack") after installing and updating Textpattern.
 
 The language you activated during your initial installation of Textpattern will be indicated as "Up-to-date". You can also install a new language Textpack here anytime, such as for multi-lingual publishing efforts.
 

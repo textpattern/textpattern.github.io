@@ -8,7 +8,7 @@ description: The Articles panel shows a list of all your existing articles, toge
 
 # Articles panel
 
-This panel will show a list of all your existing articles together with basic information (Such as ID, Posted, Title, Author, etc.). Details can optionally be displayed. From this list you can:
+The Articles administration panel will show a list of all your existing articles together with basic information (Such as ID, Posted, Title, Author, etc.). Details can optionally be displayed. From this list you can:
 
 1. Open an article for editing
 2. Perform batch changes on selected articles

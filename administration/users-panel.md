@@ -8,7 +8,7 @@ description: The Users panel is where user accounts are accessed and managed.
 
 # Users panel
 
-The **Users** panel is where user accounts are accessed and managed.
+The Users administration panel is where user accounts are accessed and managed.
 
 On this page:
 

@@ -8,7 +8,7 @@ description: The Pages panel is where the Page templates used within a Textpatte
 
 # Pages panel
 
-The **Pages** panel contains an edit field, a list of existing [Page templates](http://docs.textpattern.io/themes/page-templates-explained), and a tag builder to help you construct page content. It's important to note that, like everything else, the Page templates are stored in the database - there is no physical file on the server that contains this Page template.
+The Pages administration panel contains an edit field, a list of existing [Page templates](http://docs.textpattern.io/themes/page-templates-explained), and a tag builder to help you construct page content. It's important to note that, like everything else, the Page templates are stored in the database - there is no physical file on the server that contains this Page template.
 
 The first column of the page is the list of known pages. To select a template for editing, click on the name in the first column and Textpattern will fill the second column edit field with the selected template.
 

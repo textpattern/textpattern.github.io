@@ -8,7 +8,7 @@ description: The Visitor Logs panel is where you can monitor who and what visits
 
 # Visitor logs panel
 
-The Visitor Logs panel is where you can monitor who (web surfers) and what (spambots, search engine spiders, etc.) visits your site. Although the information is not extremely detailed, it is easy and effective enough for keeping an eye on traffic.
+The Visitor logs administration panel is where you can monitor who (web surfers) and what (spambots, search engine spiders, etc.) visits your site. Although the information is not extremely detailed, it is easy and effective enough for keeping an eye on traffic.
 
 Each record is composed of the following information:
 
