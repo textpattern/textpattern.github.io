@@ -8,7 +8,7 @@ description: This is a draft for a proposed naming convention, to name, structur
 
 # Naming conventions for template authors TODO
 
-**Unofficial Working Draft for a TXP Templating Naming Convention**
+**Unofficial Working Draft for a Textpattern Templating Naming Convention**
 
 **Purpose and Intention of this Document**
 
@@ -19,8 +19,8 @@ description: This is a draft for a proposed naming convention, to name, structur
 3.  Provide Template Packages, that are compatible with:
     1.  Current versions of Textpattern of the 4.0.x Branch
     2.  Helper Plugins and Texteditors that handle either/or/and
-        1.  TXP Form, Page, and CSS files
-        2.  TXP source Code
+        1.  Textpattern Page template, Form template and CSS files
+        2.  Textpattern source Code
 
 4.  Providing both forwards and backwards compatibility, also towards a
     possible Implementation of a [Theme
@@ -33,13 +33,13 @@ description: This is a draft for a proposed naming convention, to name, structur
 6.  A possible sample Download Package, that Template Authors can
     download would be ideal, to have consistent results, once all
     involved Parties have agreed upon a convention, that does not cause
-    any problems, with any further evolution of the TXP source code.
+    any problems, with any further evolution of the Textpattern source code.
 
 ##### Background and current Base Implementations of Templating work {#background_and_current_base_implementations_of_templating_work}
 
 1.  The basic need for a naming convention has partly emerged, after
     various Tools, to work with template files have been created from
-    the TXP Userbase.
+    the Textpattern userbase.
 2.  These Tools do exist in various forms and for different reasons,
     either in the form of plugins, modifications of the Source code and
     as extensions of External TextEditors to also ease the work on
@@ -74,7 +74,7 @@ An example for an article form file (As a packaged derivative)
 1.  - - The first part (xxx) is the creator code, that would identify
     the Template author, in the same fashion, as it is already handled
     for plugin files.Here it is followed by an underscore, that suits
-    the general syntax structure of a txp tag.
+    the general syntax structure of a Textpattern tag.
     1.  The second part (yyyy) (after the underscore delimiter) is the
         part that could identify the structural and functional aspect of
         the form file.It is followed by a dot delimiter.
@@ -151,7 +151,7 @@ Things, that generally should be avoided:
     should be sibblings where the parent-folder could have the template
     name as folder-name.
 4.  It has been suggested, to move the textpattern Folder outside of the
-    textpattern directory, to make maintenance of the TXP Source Code
+    textpattern directory, to make maintenance of the Textpattern source code
     easier and more reliable. This example can be seen in a modified
     version of mcw_templates
     [here\]](/home/www/zendstudio/dokuwiki/bin/doku.php?id=http:txpun.com_wiki_cms:templates)

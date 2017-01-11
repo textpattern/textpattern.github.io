@@ -114,7 +114,7 @@ everything you can think of. If that still does not work, then remember
 this...
 
 “*Most likely your hosting company has done something to disable or
-limit &lt;code&gt;.htaccess&lt;/code&gt;. We...\[TxP Developers\]...have
+limit &lt;code&gt;.htaccess&lt;/code&gt;. We...\[Textpattern Developers\]...have
 done our best to make clean URLs work on as many hosts as possible;
 unfortunately, there are many ways to configure Apache such that
 &lt;code&gt;.htaccess&lt;/code&gt; needs to be specially customized for

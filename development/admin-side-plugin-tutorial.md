@@ -65,7 +65,7 @@ Creating an Extensions panel {#sec3}
        register_tab('extensions', 'abc_admin_hello_world', 'My plugin');
     }
 
-The `add_privs()` function is a necessary step to tell TXP who can see
+The `add_privs()` function is a necessary step to tell Textpattern who can see
 the new tab.
 
 If you visit the **Extensions** region, you'll see your plugin panel
