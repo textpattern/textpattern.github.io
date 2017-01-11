@@ -39,9 +39,8 @@ and
     [Form: plainlinks]
 
 <p>
-indicate that a particular [Page
-template](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages) or
-[Form](/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms) has been
+indicate that a particular [Page templates](http://docs.textpattern.io/themes/page-templates-explained) or
+[Form templates](http://docs.textpattern.io/themes/form-templates-explained) has been
 loaded. Make sure it's the right one
 
 </p>

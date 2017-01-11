@@ -353,10 +353,8 @@ and see how this changes the category links and the resulting lists.
 
 ### Forms {#forms .sectionedit8#forms}
 
-Textpattern forms (see [Forms
-Explained](/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms_explained),
-not to be confused with [HTML
-forms](http://htmlhelp.com/reference/html40/forms/form.html)) are
+Textpattern forms (see [Form templates](http://docs.textpattern.io/themes/form-templates-explained),
+not to be confused with [HTML forms](http://htmlhelp.com/reference/html40/forms/form.html)) are
 reusable template chunks, a convenient way to keep your templates tidy
 and also to share code and markup among templates. For example, on my
 Textpattern sites I nearly always have a form called “page_top”, which
@@ -406,8 +404,7 @@ search results, in which context
 
 looks for a form called “search_results”.
 
-Go to
-[Presentation→Forms](/home/www/zendstudio/dokuwiki/bin/doku.php?id=forms).
+Go to [Forms administration panel](http://docs.textpattern.io/administration/forms-panel).
 We're going to overwrite the “default” and “search_results” forms, so
 if you want to keep the originals copy each of them and make new forms
 to hold the backups. Again, this is optional, because you can always
