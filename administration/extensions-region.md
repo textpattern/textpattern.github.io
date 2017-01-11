@@ -30,7 +30,7 @@ notextile.
   "adi_notes":http://forum.textpattern.com/viewtopic.php?id=27957                                             adi_notes
   "asy_jpcache":http://forum.textpattern.com/viewtopic.php?id=8352                                            ?
   [glz_custom_fields](http://forum.textpattern.com/viewtopic.php?id=23996)[^2]                               Custom Fields
-  [ied_plugin_composer](http://textpattern.org/plugins/588/ied_plugin_composer) (Now maintained by "smd".)   Plugin Composer
+  [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer)                                        Plugin Composer
   "msd_admin_colorpicker":http://forum.textpattern.com/viewtopic.php?id=26742                                ?
   "msd_google_map":http://forum.textpattern.com/viewtopic.php?id=30493                                       ?
   "rah_change_passwords":http://forum.textpattern.com/viewtopic.php?id=28696                                 ?

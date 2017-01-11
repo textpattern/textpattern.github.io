@@ -25,7 +25,7 @@ Tutorial objective {#sec1}
 
 This tutorial assumes you have a working knowledge of
 [PHP](http://php.net), a Textpattern website ready for use, and the
-[ied_plugin_composer](http://stefdawson.com/ied_plugin_composer)
+[ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer)
 plugin installed.
 
 The plugin in this tutorial will:
@@ -42,7 +42,7 @@ documentation purposes.
 Targeting the admin side {#sec2}
 ------------------------
 
-Log into Textpattern and open the ied_plugin_composer plugin.
+Log into Textpattern and open the [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer) plugin.
 
 To begin your admin plugin, you need to target the administrative side
 of Textpattern. You do that by checking whether the current user is on

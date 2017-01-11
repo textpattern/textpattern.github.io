@@ -43,7 +43,7 @@ prefix:
 
 When you're ready to register a prefix, create an "issue" in the [user
 docs repo on
-Github](https://github.com/textpattern/textpattern.github.io) and an
+GitHub](https://github.com/textpattern/textpattern.github.io) and an
 editor will add it to the [plugin developer
 prefix](http://docs.textpattern.io/development/plugin-developer-prefixes)
 list.
