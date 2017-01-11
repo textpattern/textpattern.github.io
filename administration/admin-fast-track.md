@@ -122,10 +122,6 @@ for the Blog in \#3; invent a simple scenario)
 relation to the topics already covered; e.g. discussion of
 smd_bio/smd_user_manager in relation of user accounts)
 
-### Monitoring referrers {#monitoring-referrers .sectionedit9#monitoring_referrers}
-
-[visitor_logs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=visitor_logs)
-
 **Recommended reading:**
 
 * [rah_unlog_me](http://rahforum.biz/plugins/rah_unlog_me), a Plugin that removes the administrators IP, and any others defined, so their site visits don't show up in visitor logs. Result is a more representative reflection of actual referrers that count.)
