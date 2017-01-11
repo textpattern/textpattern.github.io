@@ -604,9 +604,6 @@ In designing your Textpattern site, explore how to use search and
 category linking to make it easy for users to jump straight to the
 content they want.
 
-### Learning more {#learning-more .sectionedit11#learning_more}
+### Learning more
 
-This is just a bare outline of how to build a Textpattern site. To
-continue your learning path, participate in the [Textpattern support
-forum](http://forum.textpattern.com/), read the Tutorials and [TXP
-Tips](http://txptips.com/), and study the Tag Reference.
+This is just a bare outline of how to build a Textpattern site. To continue your learning path, participate in the [Textpattern support forum](http://forum.textpattern.com/), read the Tutorials and [Textpattern Tips](http://www.textpattern.tips/), and study the Tag Reference.

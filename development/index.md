@@ -441,7 +441,7 @@ The Textpattern CMS support forum, notably the [Plugin discussion](http://forum.
 
 Additional third-party reading you may find insightful. The information may be outdated, so use with caution. Not a long list, in any case.
 
-* [How to build a Textpattern plugin](http://txptips.com/how-to-build-a-textpattern-plugin)
+* [How to build a Textpattern plugin](http://www.textpattern.tips/how-to-build-a-textpattern-plugin)
 
 [^1]: You can see the code for any installed plugin by clicking its name in the table on the [Plugins panel](http://docs.textpattern.io/development/administration/plugins-panel), or by installing and using [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer).
 
