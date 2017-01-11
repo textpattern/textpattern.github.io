@@ -96,9 +96,11 @@ Some other avenues of exploration:
 
 ## Error messages and codes
 
-Notices when your [Production status](http://docs.textpattern.io/administration/preferences-panel#production-status) is set to 'Debugging' mode are not unusual, and by themselves aren't an indicator of something wrong. Such messages are `Undefined index`, or `Unregistered tag`. If the only symptom you have is that there are warnings/notices produced when this mode is active, then there's likely nothing wrong, and you can safely ignore them.
+Notices when your [Production status](http://docs.textpattern.io/administration/preferences-panel#production-status) is set to 'Debugging' mode are not unusual, and by themselves aren't an indicator of something wrong. If messages such as `Undefined index`, `Unregistered tag` or other warnings/notices are the only symptom you have when this mode is active, then there's likely nothing wrong, and you can safely ignore them.
 
-If, however, some or all pages of your site - or Textpattern administration panels - are throwing HTTP status code error messages, they are more serious. Here are some things you can try:
+Errors such as `unexpected end of file` or `failed to read stream` are usually a symptom that the files you uploaded to the web server didn't transfer properly or that the information in your `config.php` is incorrect. Uploading all the Textpattern system files again often remedies this, ensuring that the `.php` and `.js` files are uploaded as ASCII, not binary.
+
+If, however, some or all pages of your site -- or Textpattern administration panels -- are throwing HTTP status code error messages, they are more serious. In those cases, here are some things you can try:
 
 ### 500 Internal Server Error
 
