@@ -147,7 +147,7 @@ bc. <txp:body / >
 bc. <txp:article listform="article_listing" limit="5" />
 
 </li>
-<li>This txp tag dictates the main content. It means “If this page is a list, then use the form called article_listing. Otherwise use the default article form.”</li>
+<li>This Textpattern tag dictates the main content. It means “If this page is a list, then use the form called article_listing. Otherwise use the default article form.”</li>
 <li><p>Change it to:</p>
 bc. <txp:article form="defaultform" listform="article_listing" limit="5" />
 
@@ -195,7 +195,7 @@ bc. <txp:excerpt />
 </li>
 </ol>
 
-You altered (changed the attributes of) txp tags within the defaultpage and archive page templates so they would use your form instead of the default. You altered your form to firstly use plain text, then a form within a form and finally a txp tag. You can use forms, text, txp tags and html quite flexibly in txp forms and pages. You can position these elements as you like to get exactly the results you require.
+You altered (changed the attributes of) Textpattern tags within the defaultpage and archive page templates so they would use your form instead of the default. You altered your form to firstly use plain text, then a form within a form and finally a Textpattern tag. You can use forms, text, Textpattern tags and HTML quite flexibly in Textpattern Form templates and Pages templates. You can position these elements as you like to get exactly the results you require.
 
 h4(#task_7_-_consolidating_forms_pages_sections_and_style). Task 7 - Consolidating Forms, Pages, Sections and Style
 
@@ -231,7 +231,7 @@ People say Textpattern is a steep learning curve, especially understanding forms
 bc. <txp:article listform="article_listing" limit="5" />
 
 
-<p>This txp tag dictates the main content. It means “If this page is a list, then use the form called article_listing. Otherwise use the default article form.” The default article form includes the page title, author etc so we will create a custom form and use that instead.</p></li>
+<p>This Textpattern tag dictates the main content. It means “If this page is a list, then use the form called article_listing. Otherwise use the default article form.” The default article form includes the page title, author etc so we will create a custom form and use that instead.</p></li>
 <li>Go to the *Forms* tab
 <ul>
 <li>*Copy* the contents of the *default* form</li>
@@ -241,7 +241,7 @@ bc. <txp:article listform="article_listing" limit="5" />
 <li>Type: *article*</li>
 <li>*_SAVE NEW_*</li>
 <li><p>In funcontent *delete everything except*:</p>
-bc. 
+bc.
 
 </li>
 </ul>
@@ -271,7 +271,7 @@ bc. <txp:article form="funcontent" listform="article_listing" limit="5" />
 
 <ul>
 <li><p>*Delete*</p>
-bc. 
+bc.
 
 </li>
 </ul>
@@ -280,7 +280,7 @@ bc.
 
 <ul>
 <li><p>*Delete*</p>
-bc. 
+bc.
 
 </li>
 </ul>

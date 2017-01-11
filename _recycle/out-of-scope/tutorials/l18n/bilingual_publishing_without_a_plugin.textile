@@ -8,7 +8,7 @@ Both examples listed below are variations of one solution, involving the use of 
 
 h3(sectionedit1#solution_no_1). Solution no. 1
 
-Minutely explained "here":http://wion.com/articles/core-txp-technique-for-i18n-interests, is about using the urls of the mirrored articles, a number of custom fields equal to the languages used (two in this case) and two txp tags to obtain the link for mirroring.
+Minutely explained "here":http://wion.com/articles/core-txp-technique-for-i18n-interests, is about using the urls of the mirrored articles, a number of custom fields equal to the languages used (two in this case) and two Textpattern tags to obtain the link for mirroring.
 
 h3(sectionedit2#solution_no_2). Solution no. 2
 
@@ -118,7 +118,7 @@ $al = @$_SERVER['HTTP_ACCEPT_LANGUAGE'];
 if (preg_match('/(.*?)[,;-]/', $al, $a)) {
     variable (
         array (
-              'name' =>'accept-language', 
+              'name' =>'accept-language',
               'value' => $a[1]
         )
     );
