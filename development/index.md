@@ -443,7 +443,7 @@ Additional third-party reading you may find insightful. The information may be o
 
 * [How to build a Textpattern plugin](http://www.textpattern.tips/how-to-build-a-textpattern-plugin)
 
-[^1]: You can see the code for any installed plugin by clicking its name in the table on the [Plugins panel](http://docs.textpattern.io/development/administration/plugins-panel), or by installing and using [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer).
+[^1]: You can see the code for any installed plugin by clicking its name in the table on the [Plugins panel](http://docs.textpattern.io/administration/plugins-panel), or by installing and using [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer).
 
 [^2]: There's also the [Admin-side events and steps](http://docs.textpattern.io/development/admin-side-events-and-steps) listing for admin-side plugins specifically. This would correspond with the various [admin-side callbacks](http://docs.textpattern.io/development/core-callbacks-reference#admin-side-callbacks) in the **Core callbacks reference**, but it doesn't provide the explanatory details like the callbacks reference does.
 
