@@ -26,7 +26,4 @@ A list of the most commonly-asked questions on basic usage of Textpattern CMS. T
 
 TODO
 
-* [404 error unless I use index.php](404-error-unless-i-use-indexphp)
-* [500 Internal Server Error or 403 Forbidden](500-internal-server-error-403-forbidden)
 * [Clean URLs don't work](404-error-when-linking-to-article-pages)
-* [Will you add my code to Textpattern?](will-you-add-my-code-to-textpattern)
