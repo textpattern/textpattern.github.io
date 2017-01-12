@@ -12,7 +12,7 @@ This information is for those who are thinking about developing Textpattern plug
 
 On this page:
 
-* [Disclaimer](disclaimer)
+* [Disclaimer](#disclaimer)
 * [Developer rules of the road](#developer-rules-of-the-road)
   * [Avoid reinventing the wheel](#avoid-reinventing-the-wheel)
   * [Do it the Textpattern way](#do-it-the-textpattern-way)
