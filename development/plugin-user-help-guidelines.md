@@ -6,7 +6,7 @@ title: Plugin user-help guidelines
 description: Use this template and its associated guidelines when writing your plugin's user instructions.
 ---
 
-# Plugin user-help guidelines
+# Plugin user-help guidelines TODO
 
 Use this template and its associated guidelines when writing your plugin's user instructions.[^1] Doing so will make it easier for you, as well result in plugin help that's complete, consistent across other developer plugins (improved user experience), and more usable (intuitive and easy to navigate).
 

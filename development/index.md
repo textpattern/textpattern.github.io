@@ -6,7 +6,7 @@ title: Textpattern plugin development
 description: This information is for those who are thinking about developing Textpattern plugins.
 ---
 
-# Textpattern plugin development
+# Textpattern plugin development TODO
 
 This information is for those who are thinking about developing Textpattern plugins.
 

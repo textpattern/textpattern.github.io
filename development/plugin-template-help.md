@@ -6,7 +6,7 @@ title: Plugin template
 description: Textpattern plugins are perhaps best thought of as functions supplementary to those found in Textpattern core.
 ---
 
-# Plugin template
+# Plugin template TODO
 
 Textpattern plugins are perhaps best thought of as functions supplementary to those found in Textpattern core.
 

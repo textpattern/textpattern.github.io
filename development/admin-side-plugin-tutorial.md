@@ -6,7 +6,7 @@ title: Admin-side plugin tutorial
 description: This tutorial walks you through the basics of creating and admin-side plugin.
 ---
 
-# Admin-side plugin tutorial
+# Admin-side plugin tutorial TODO
 
 This tutorial walks you through the basics of creating and admin-side plugin; it covers functions, callbacks, and the concept of *events* and *steps*.
 

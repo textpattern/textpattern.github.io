@@ -6,7 +6,7 @@ title: Public-side plugin tutorial
 description: This tutorial will walk you through the basics of creating a simple public-side plugin.
 ---
 
-# Public-side plugin tutorial
+# Public-side plugin tutorial TODO
 
 This tutorial will walk you through the basics of creating a simple public-side plugin; not to be used, exactly, but so you understand what's involved.
 

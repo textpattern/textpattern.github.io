@@ -6,7 +6,7 @@ title: The pluggable_ui function
 description: The pluggable_ui function's main purpose was to provide additional event/step hooks to modify the administration side.
 ---
 
-# The pluggable_ui function
+# The pluggable_ui function TODO
 
 The `pluggable_ui` function was first introduced in Textpattern core prior to March 2009. It's main purpose was to provide additional event/step hooks to modify the administration side when admin-side web templates were harder to work with.[^1] However, admin-side templates have come a long way and are vastly improved, not to mention other core features have emerged too (or will soon) that make new plugin designs possible. Thus `pluggable_ui` has less to offer the average plugin developer. Some say it's only value anymore is to allow other plugins to modify your plugin's content. See example below.
 
