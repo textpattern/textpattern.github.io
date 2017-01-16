@@ -84,7 +84,7 @@ bc.. <txp:article limit="3" pageby="10" />
 
 <txp:article limit="7" offset="3" pageby="10" />
 
-p. Textpattern Support Forum: "txp:article pageby attribute":http://forum.textpattern.com/viewtopic.php?id=12481
+p. Textpattern CMS support forum: "txp:article pageby attribute":http://forum.textpattern.com/viewtopic.php?id=12481
 
 
 h4. ...supply a special layout to the first article on a page?

@@ -5,7 +5,7 @@
 These instructions are specifically for version 1.0. If you're working
 on any earlier version of Textpattern (e.g. rc1) and you want clean URLs
 but are having trouble, then use the information available in the
-[Textpattern Forum](http://forum.textpattern.com) (it's spread all over,
+[Textpattern Forum](http://forum.textpattern.com/) (it's spread all over,
 but it's there); we are only concerned with v 1.0 here.
 
 You do not have to use clean URLs, they are just better for your site

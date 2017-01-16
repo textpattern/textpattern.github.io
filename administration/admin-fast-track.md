@@ -23,7 +23,7 @@ Textpattern topics (not to mention requires planning your content model
 and information architecture), which you are not ready for yet. So we'll
 kick-start you with a basic blog model and you learn the rest like
 everyone else does -- by reading more users docs, asking questions in
-the [Textpattern CMS support forum](http://forum.textpattern.com), and exploring on your own (the best kind of learning).
+the [Textpattern CMS support forum](http://forum.textpattern.com/), and exploring on your own (the best kind of learning).
 
 On this page:
 
