@@ -168,7 +168,7 @@ If you see a completely white screen when viewing a website page, it usually mea
 
 It's always a good idea to use Testing mode when editing templates and forms. Switch to Live mode only when you're certain everything works. Debugging mode is intended only for developers; it's normal to see some spurious messages in this mode, but it ma also be useful to diagnose particularly troublesome aspects of your page layout.
 
-If you're still seeing a blank page even in Testing mode, the most likely cause is a syntax error in one of your `<txp:...>` tags. In Testing or Debugging mode, the Textpattern parser will try to inform you of any such misconfiguration to help you quickly find the problem.
+If you're still seeing a blank page even in Testing mode, the most likely cause is a syntax error in one of your `<txp:...>` tags. In Debugging mode, the Textpattern parser will try to inform you of any such misconfiguration to help you quickly find the problem.
 
 ## Feed issues
 
