@@ -45,7 +45,6 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 
 * <span class="error">Red</span> prefixes are off limits until further notice (notably "foo").
 * <span class="warning">Yellow</span> prefixes are used internally by Textpattern and are off limits.
-* <span class="information">Blue</span> prefixes indicate current Textpattern core developers.
 * <span class="success">Green</span> prefixes mean the developer has left the community and no plugins remain with that prefix anymore. These prefixes can be claimed by a new developer.
 * (?) next to a username means no forum profile is found and the status of the prefix is questionable. If an external link is known, it will be on the '?'. These prefixes could certainly be challenged for new ownership (see guidelines above).
 * (!) next to a username means the indicated developer has adopted all the original developer's plugins, which were abandoned (orphaned).
@@ -166,7 +165,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * <span class="warning">end</span>
 * eoi/dubsky
 * esq/[cain-mi](http://forum.textpattern.com/profile.php?id=5716)
-* <span class="information">etc</span>/[etc](http://forum.textpattern.com/profile.php?id=96820)
+* etc/[etc](http://forum.textpattern.com/profile.php?id=96820)
 * etz/Etz Haim
 
 </div>
@@ -435,7 +434,7 @@ None at this time.
 * sir/fabio sirna
 * ske/skeptisch
 * skp/piyashrija
-* <span class="information">smd</span>/[Bloke](http://forum.textpattern.com/profile.php?id=8181)
+* smd/[Bloke](http://forum.textpattern.com/profile.php?id=8181)
 * smf/txfrog1999
 * smu/e-sven
 * soo/[jsoo](http://forum.textpattern.com/profile.php?id=3024)
@@ -502,7 +501,7 @@ None at this time.
 * wan/wanni
 * waz/wazdog
 * wcz/[whocarez](http://forum.textpattern.com/profile.php?id=13728)
-* <span class="information">wet</span>/[wet](http://forum.textpattern.com/profile.php?id=5463)
+* wet/[wet](http://forum.textpattern.com/profile.php?id=5463)
 * wlk/[Walker](http://forum.textpattern.com/profile.php?id=37)
 * wnp/datafirm
 * wm/watts
