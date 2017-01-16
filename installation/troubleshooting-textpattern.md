@@ -16,6 +16,7 @@ On this page:
 * [Performance issues](#performance-issues)
   * [Slow website](#slow-website)
   * [Slow administration side](#slow-administration-side)
+* [Blank page output](#blank-page-output)
 * [Feed issues](#feed-issues)
 * [Error messages and codes](#error-messages-and-codes)
   * [500 Internal server error](#internal-server-error)
@@ -137,7 +138,7 @@ If you're experiencing consistently high numbers for Runtime, Query and Memory c
 
 A runtime figure that regularly measures 1 second or more usually indicates one of a few things:
 
-* DNS issues: a slow or misconfigured DNS server at your web hosting company can cause high page runtimes. Usually this occurs in the Textpattern logging code. In the [Preferences administtrarion panel](http://docs.textpattern.io/administration/preferences-panel), set 'Use DNS?' to 'No', and see if that makes a difference. If not, try disabling logging altogether.
+* DNS issues: a slow or misconfigured DNS server at your web hosting company can cause high page runtimes. Usually this occurs in the Textpattern logging code. In the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel), set 'Use DNS?' to 'No', and see if that makes a difference. If not, try disabling logging altogether.
 * Plugins: plugins aren't necessarily as efficient as Textpattern itself. If your performance problems coincide with the installation of a plugin, or occur only on a particular page template that invokes a plugin, try disabling it and see if there's a difference. If your page won't display properly without the plugin, try temporarily reverting to the default Textpattern Page template and Form template.
 * PHP code: if you've included any PHP code in your page templates, whether directly in the template or indirectly via an `include()` call or similar, try disabling it. In particular, check for any code that might try to fetch a file from an external server, e.g. by using a `http://..` URL in an `fopen()` or `include()` call.
 * MySQL issues: MySQL doesn't have to run on the same physical machine as your web server. Some hosting companies run these on separate servers connected by a fast LAN connection, which is fine. However, if Textpattern and MySQL are on entirely different networks, performance will be unavoidably slow, since all MySQL queries and results must travel back and forth over a comparatively slow internet connection every time a Textpattern page is viewed. Other MySQL performance problems can be harder to diagnose. An overloaded MySQL server can slow down Textpattern - ask your hosting company if this could be the case.
@@ -160,6 +161,14 @@ If your Runtime, Queries and Memory figures are all in or near the normal limits
 ### Slow administration side
 
 This is almost always due to a plugin. Try turning them off one by one and testing any troublesome admin panels. If you can narrow it down a single plugin, try contacting the author to see if there's a newer version available, or if the issue can be fixed.
+
+## Blank page output
+
+If you see a completely white screen when viewing a website page, it usually means an error has occured but is not displayed because you're running in Live mode. Setting the [Production Status preference](http://docs.textpattern.io/administration/preferences-panel#site-preferences) to 'Live' suppresses all error messages. Instead, set the Production Status to 'Testing', then view the problem page again. You should see a more informative error message this time.
+
+It's always a good idea to use Testing mode when editing templates and forms. Switch to Live mode only when you're certain everything works. Debugging mode is intended only for developers; it's normal to see some spurious messages in this mode, but it ma also be useful to diagnose particularly troublesome aspects of your page layout.
+
+If you're still seeing a blank page even in Testing mode, the most likely cause is a syntax error in one of your `<txp:...>` tags. In Testing or Debugging mode, the Textpattern parser will try to inform you of any such misconfiguration to help you quickly find the problem.
 
 ## Feed issues
 
