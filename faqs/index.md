@@ -8,10 +8,7 @@ description: A complete listing of all the most commonly-asked Textpattern quest
 
 # Frequently asked questions (FAQs)
 
-A list of the most commonly-asked questions on basic usage of Textpattern CMS. These answers may help save you some much needed time.
+A list of the most commonly-asked questions on usage of Textpattern. These answers may help save you some much needed time.
 
-## Complete list of Textpattern FAQs
-
-TODO
-
-* [Clean URLs don't work](404-error-when-linking-to-article-pages)
+* [How do I use a Tag Trace?](http://docs.textpattern.io/installation/troubleshooting-textpattern#the-tag-trace)
+* [Clean URLs don't work] @@todo point to Clean URL portion of Diagnostics panel@@
