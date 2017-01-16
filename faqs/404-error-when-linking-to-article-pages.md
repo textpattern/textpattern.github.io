@@ -4,8 +4,6 @@ category: FAQs
 published: true
 title: "FAQ: Clean URLs don't work"
 description: These and similar problems happen when you use 'clean' URL mode on a server that doesn't support mod_rewrite in .htaccess.
-tags:
- - Error warnings and notices FAQs
 ---
 
 TODO: Move relevant parts of this to [Diagnostics](https://github.com/textpattern/textpattern.github.io/blob/master/administration/diagnostics-panel.md) under the section about clean URLs, then delete this FAQ.
