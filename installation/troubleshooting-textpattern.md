@@ -12,6 +12,7 @@ If things don't go as expected when installing or upgrading Textpattern, or you'
 
 On this page:
 
+* [The Tag Trace](#the-tag-trace)
 * [Performance issues](#performance-issues)
   * [Slow website](#slow-website)
   * [Slow administration side](#slow-administration-side)
@@ -21,6 +22,88 @@ On this page:
   * [404 Page not found](#page-not-found)
   * [Database unavailable](#database-unavailable)
   * [Allowed memory exhausted](#allowed-memory-size-exhausted)
+
+## The tag trace
+
+Whether you're experiencing site slowdowns, bugs in your site templates, or looking for misbehaving plugins, the Tag Trace is an essential diagnostics tool. To switch it on, set the [Production Status](http://docs.textpattern.io/administration/preferences-panel#site-preferences) on the Preferences administration panel to 'Debugging'. Whenever this mode is on, Textpattern appends a Tag Trace to the HTML output of each page - both on the admin side and public website. This is your key to working out which Textpattern tags are being executed and their outcome.
+
+View the HTML source of the page, and scroll to the bottom. The trace looks something like this:
+
+~~~
+<!-- Trace summary:
+Runtime   : 198.67 ms
+Query time: 44.58 ms
+Queries   : 25
+Memory (*): 7644 kB
+-->
+
+<!-- Trace log:
+  Time(ms) | Duration | Trace
+      3.55 |     2.51 | [PHP includes, stage 1]
+      6.27 |    13.15 | [PHP includes, stage 2]
+      6.55 |          | 	[Textpattern autoload dir: 'vendors']
+      6.64 |          | 	[Textpattern autoload dir: 'lib']
+     16.28 |     0.41 | 	[Load: 'vendors/Txp.php']
+     16.55 |     0.10 | 		[Load: 'vendors/Textpattern/Container/FactoryInterface.php']
+     16.69 |          | 		[Class loaded: 'Txp']
+...
+     46.85 |   123.46 | [Loading plugins]
+...
+    176.02 |     0.40 | [SQL: SELECT page, css FROM txp_section WHERE name = 'default' LIMIT 1 ]
+    176.43 |          | [Rows: 1]
+    176.59 |     0.02 | [Callback_event: 'pretext_end', step='', pre='0']
+    176.73 |     0.01 | [Callback_event: 'log_hit', step='', pre='0']
+    176.75 |     0.01 | [Callback_event: 'textpattern', step='', pre='0']
+    176.80 |     0.45 | [SQL: SELECT user_html FROM txp_page WHERE name = 'default' ]
+    177.26 |          | [Rows: 1]
+    177.27 |          | [Page: 'default']
+    177.90 |     0.14 | <txp:meta_author title="1" />
+    178.05 |     0.04 | <txp:page_title />
+    178.10 |     0.32 | <txp:meta_description />
+    178.15 |     0.24 | 	[SQL: SELECT description FROM txp_section WHERE name = 'default' ]
+    178.40 |          | 	[Rows: 1]
+    178.43 |     0.01 | <txp:site_url />
+    178.71 |     1.70 | <txp:rvm_css format="link" />
+    178.76 |     0.21 | 	[SQL: SELECT css FROM txp_section WHERE name='default' ]
+    178.98 |          | 	[Rows: 1]
+    179.01 |     0.01 | 	[Callback_event: 'sanitize_for_url', step='', pre='0']
+...
+    195.21 |     0.02 | 	<txp:if_first_article>
+    195.22 |          | 		[false]
+    195.23 |          | 	</txp:if_first_article>
+    195.23 |     0.17 | 	<txp:permlink>
+*   195.28 |     0.10 | 		<txp:title />
+    195.41 |          | 	</txp:permlink>
+    195.41 |     0.05 | 	<txp:posted format="%Y-%m-%d" />
+...
+    198.59 |          | [ ~~~ secondpass ~~~ ]
+    198.65 |     0.02 | [Callback_event: 'textpattern_end', step='', pre='0']
+-->
+
+<!-- Query log:
+Duration | Query
+   10.53 | [SQL: SELECT name, val FROM txp_prefs WHERE prefs_id = 1 AND user_name = '' ]
+    9.85 | [SQL: SELECT name, data FROM txp_lang WHERE lang = 'en-gb' AND name != '' AND event IN ('public','common') ]
+   11.24 | [SQL: SELECT name, code, version FROM txp_plugin WHERE status = 1 AND type IN (0,1,5) ORDER BY load_order ASC, name ASC ]
+    0.40 | [SQL: SELECT page, css FROM txp_section WHERE name = 'default' LIMIT 1 ]
+    0.45 | [SQL: SELECT user_html FROM txp_page WHERE name = 'default' ]
+    0.24 | [SQL: SELECT description FROM txp_section WHERE name = 'default' ]
+    0.21 | [SQL: SELECT css FROM txp_section WHERE name='default' ]
+    0.31 | [SQL: SELECT name FROM txp_section WHERE on_frontpage != '1' ]
+    1.62 | [SQL: SELECT COUNT(*) FROM textpattern WHERE 1 = 1 AND Status = 4 AND Posted <= from_unixtime(1591515914) ]
+    0.74 | [SQL: SELECT *, UNIX_TIMESTAMP(Posted) AS uPosted, UNIX_TIMESTAMP(Expires) AS uExpires, UNIX_TIMESTAMP(LastMod) AS uLastMod FROM textpattern WHERE 1 = 1 AND Status = 4 AND Posted <= from_unixtime(1591515914) ORDER BY Posted DESC LIMIT 0, 10 ]
+    0.47 | [SQL: SELECT Form FROM txp_form WHERE name = 'article_listing' ]
+...
+-->
+~~~
+
+Every plugin, every database query, and its associated 'cost' in terms of memory usage and time taken is detailed. The rows are listed in order of their execution as the page is rendered. If something is eating too much memory or taking a long time to run, the tag trace will tell you what it is so you can delve further.
+
+It is also a good place to check your Page and Form logic, because it shows the result of conditional tags. If part of your page is not showing where you expect, the tag trace can help find errors in your templates. By putting the site in debugging mode, it also highlights any PHP errors on each page, which may lead to further investigative work.
+
+Since the tag trace is output on the administration panels too, you can use it to find poorly-behaving plugins and fix/optimise them.
+
+If the problem persists and you can't fathom it out, post the _relevant parts_ of the tag trace in a new topic on the [Textpattern Forum](http://forum.textpattern.com/) along with a description of the problem or what you expect to see, and someone will endeavour to help you out.
 
 ## Performance issues
 
