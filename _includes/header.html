@@ -9,6 +9,7 @@
     <header class="site-header" itemscope itemtype="http://schema.org/Organization">
         <h1 class="masthead" itemprop="name"><a rel="home" itemprop="url" href="http://textpattern.com/" title="Go to the Textpattern homepage">Textpattern CMS</a></h1>
         <meta itemprop="logo" content="http://textpattern.com/assets/img/branding/textpattern/textpattern.svg">
+        {% if page.layout != "default" or page.layout != "search" %}
         <div itemscope itemtype="http://schema.org/WebSite">
             <meta itemprop="url" content="http://docs.textpattern.io/">
             <form class="search-form" role="search" action="http://docs.textpattern.io/search" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" data-search-form>
@@ -16,6 +17,7 @@
                 <input class="form-search-input" id="q" name="q" type="search" size="32" placeholder="Search documentation…" itemprop="query-input" data-search-input>
             </form>
         </div>
+        {% endif %}
     </header>
     <div class="nav-container">
         <nav class="site-navigation" aria-label="Site navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
