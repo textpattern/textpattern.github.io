@@ -5,3 +5,7 @@ gems:
   - jekyll-sitemap
   - jekyll-seo-tag
 author: The Textpattern Development Team and contributors
+exclude:
+  - Gemfile
+  - LICENSE.txt
+  - README.md
