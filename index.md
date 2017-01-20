@@ -14,6 +14,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 <div class="layout-container">
 <div class="layout-3col">
+<img alt="Installation handling" src="/img/index-introduction.jpg" srcset="/img/index-introduction@2x.jpg 2x, /img/index-introduction.jpg 1x">
 
 ### Installation handling
 
@@ -25,6 +26,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
+<img alt="Site administration" src="http://placehold.it/200x200" srcset="http://placehold.it/400x400 2x, http://placehold.it/200x200 1x">
 
 ### Site administration
 
@@ -34,6 +36,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
+<img alt="Core tags" src="http://placehold.it/200x200" srcset="http://placehold.it/400x400 2x, http://placehold.it/200x200 1x">
 
 ### Core tags
 
@@ -44,6 +47,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
+<img alt="Design" src="http://placehold.it/200x200" srcset="http://placehold.it/400x400 2x, http://placehold.it/200x200 1x">
 
 ### Design
 
@@ -53,6 +57,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
+<img alt="Development" src="http://placehold.it/200x200" srcset="http://placehold.it/400x400 2x, http://placehold.it/200x200 1x">
 
 ### Development
 
@@ -61,6 +66,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
+<img alt="FAQs" src="http://placehold.it/200x200" srcset="http://placehold.it/400x400 2x, http://placehold.it/200x200 1x">
 
 ### FAQs
 
