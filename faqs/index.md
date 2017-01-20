@@ -3,10 +3,10 @@ layout: landing
 category: FAQs
 published: true
 title: "Frequently asked questions (FAQs)"
-description: A complete listing of all the most commonly-asked Textpattern questions.
+description: A list of the most commonly-asked questions on usage of Textpattern.
 ---
 
-# Frequently asked questions (FAQs) and How-To information
+# Frequently asked questions (FAQs) and how-to information
 
 A list of the most commonly-asked questions on usage of Textpattern. These answers may help save you some much needed time.
 
