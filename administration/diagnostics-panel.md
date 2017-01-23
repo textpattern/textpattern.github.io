@@ -352,7 +352,7 @@ Means you're intallation version is a future development version, not the lastes
 The following PHP functions (which may be necessary to run Textpattern) are disabled on your server...
 {: .alert-block .warning}
 
-If you see this message, it will be followed by a number of PHP functions that are disabled on your web server. Textpattern needs certain functions enabled to work correctly, while other functions, if disabled, can be ignored. See section below, [Diagnostics reporting on PHP functions](#diagnostics-reporting-on-php-functions), for more about which function are needed or not.
+If you see this message, it will be followed by a number of PHP functions that are disabled on your web server. Textpattern needs certain functions enabled to work correctly, while other functions, if disabled, can be ignored. See section below, [Diagnostic reporting on PHP functions](#diagnostic-reporting-on-php-functions), for more about which function are needed or not.
 
 Site URL preference might be incorrect.
 {: .alert-block .warning}
