@@ -27,9 +27,7 @@ Article categories allow organization of articles by their subject matter. Once 
 
 To create a category you simply type its name in the textfield at the top and click 'Create' - Textpattern then adds the new category to the list. You can also assign a new category to an existing 'parent' category when you create it (i.e. making it a 'subcategory' of an existing 'category').
 
-Some **changes might occur** if you've chosen a name that has more than one word or if your language is not English: **special characters** such as umlauts (ä, ö, ü) are **converted** into replacement characters (e.g. ae, oe, ue, respectively) and **individual words are linked with hypens**. Category names are also converted to lower case letters.
-
-For example: `persönlich` will become `persoenlich` and `about me` will become `about-me`.
+Some **changes might occur** if you've chosen a name that has more than one word or if your language is not English: **special characters** such as umlauts (ä, ö, ü) are **converted** into replacement characters (e.g. ae, oe, ue, respectively) and **individual words are linked with hypens**. Category names are also converted to lower case letters. For example: `persönlich` will become `persoenlich` and `about me` will become `about-me`.
 
 The reason for these changes is that category names can be part of URLs and Textpattern makes sure that a category name contains only characters that are allowed in URLs. **Note:** The category `title` retains any special characters and/or spaces - it is only category `name` that is affected.
 
@@ -50,12 +48,12 @@ The 'Category title' is your original title with special characters, spaces and 
 
 The 'Category description' can be harnessed, for example, as meta data when you display an article category listing page.
 
-These fields exist for all four kinds of content (articles, images, files and links). However, the tags mentioned above (`<txp:category1 />`, `<txp:category2 />` and `<txp:category_list />`) are only for article categories. For images, files and links there are other tags or tag attributes. See the [tag section](http://docs.textpattern.io/tags) for further details.
+These fields exist for all four kinds of content (articles, images, files and links). However, the tags mentioned above (`<txp:category1 />`, `<txp:category2 />` and `<txp:category_list />`) are only for article categories. For images, files and links there are other tags or tag attributes. See the [Tag reference index](http://docs.textpattern.io/tags) for further details on tag usage.
 
 Once you have finished editng your category details, press 'Save' to store the changes and return to the main Categories administration panel.
 
 ## Delete one or more categories
 
-You can select one or more categories within a context list using the checkbox next to it, and with the widget at the bottom of each context list you can then **delete** the category/categories or **change parent**.
+You can select one or more categories within a context list using the checkbox next to it, and with the widget at the bottom of each context list you can then 'Delete' the category/categories or 'Change parent'.
 
 [Next: Comments panel](http://docs.textpattern.io/administration/comments-panel)
