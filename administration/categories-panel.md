@@ -29,9 +29,9 @@ To create a category you simply type its name in the textfield at the top and cl
 
 Some **changes might occur** if you've chosen a name that has more than one word or if your language is not English: **special characters** such as umlauts (ä, ö, ü) are **converted** into replacement characters (e.g. ae, oe, ue, respectively) and **individual words are linked with hypens**. Category names are also converted to lower case letters.
 
-**For example:** `persönlich` will become `persoenlich` and `about me` will become `about-me`.
+For example: `persönlich` will become `persoenlich` and `about me` will become `about-me`.
 
-The reason for these changes is that **category names can be part of URLs** and Textpattern makes sure that a category name contains only characters that are allowed in URLs. **Note:** The category `title` retains any special characters and/or spaces - it is only category `name` that is affected.
+The reason for these changes is that category names can be part of URLs and Textpattern makes sure that a category name contains only characters that are allowed in URLs. **Note:** The category `title` retains any special characters and/or spaces - it is only category `name` that is affected.
 
 ## Edit an existing category and category details
 
@@ -42,13 +42,13 @@ Click on a category name from the list of existing categories and you get to a n
 3. Category title
 4. Category description
 
-The **category name** is the one used in URLs and other technical purposes. It contains no special characters and no spaces, as outlined above.
+The 'Category name' is the one used in URLs and other technical purposes. It contains no special characters and no spaces, as outlined above.
 
-A **parent category** can be defined to create a hierarchical category structure for visual grouping. There are also some plugins that take advantage of nested category lists. The option of appending to a parent is only available if other categories in this context already exist.
+A 'Parent category' can be defined to create a hierarchical category structure for visual grouping. There are also some plugins that take advantage of nested category lists. The option of appending to a parent is only available if other categories in this context already exist.
 
-The **category title** is your original title with special characters, spaces and all. This is the title that **will appear on your pages by default** if you use article tags such as `<txp:category1 />`, `<txp:category2 />` or `<txp:category_list />` (although this can be overrode within tag attributes, if you so wish).
+The 'Category title' is your original title with special characters, spaces and all. This is the title that **will appear on your pages by default** if you use article tags such as `<txp:category1 />`, `<txp:category2 />` or `<txp:category_list />` (although this can be overrode within tag attributes, if you so wish).
 
-The **category description** can be harnessed, for example, as meta data when you display a article category listing page.
+The 'Category description' can be harnessed, for example, as meta data when you display an article category listing page.
 
 These fields exist for all four kinds of content (articles, images, files and links). However, the tags mentioned above (`<txp:category1 />`, `<txp:category2 />` and `<txp:category_list />`) are only for article categories. For images, files and links there are other tags or tag attributes. See the [tag section](http://docs.textpattern.io/tags) for further details.
 
@@ -56,6 +56,6 @@ Once you have finished editng your category details, press 'Save' to store the c
 
 ## Delete one or more categories
 
-You can **select one or more categories** within a context list using the checkbox next to it, and with the widget at the bottom of each context list you can then **delete** the category/categories or **change parent**.
+You can select one or more categories within a context list using the checkbox next to it, and with the widget at the bottom of each context list you can then **delete** the category/categories or **change parent**.
 
 [Next: Comments panel](http://docs.textpattern.io/administration/comments-panel)
