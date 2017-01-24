@@ -57,7 +57,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img alt="Development" src="http://placehold.it/200x200" srcset="http://placehold.it/400x400 2x, http://placehold.it/200x200 1x">
+<img alt="Development" src="/img/index-development.jpg" srcset="/img/index-development@2x.jpg 2x, /img/index-development.jpg 1x">
 
 ### Development
 
