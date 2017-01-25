@@ -124,4 +124,4 @@ After selecting the options you want to perform click 'Go' to start the changes.
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of comments listed per page by selecting another value from the number range.
 
-[Next: Sections panel](http://docs.textpattern.io/administration/sections-panel)
+[Next: Sections administration panel](http://docs.textpattern.io/administration/sections-panel)

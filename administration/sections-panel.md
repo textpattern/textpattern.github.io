@@ -141,4 +141,4 @@ Textpattern does not allow you to delete system defaults. Sensibly so.
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of sections listed per page by selecting another value from the number range.
 
-[Next: Pages panel](http://docs.textpattern.io/administration/pages-panel)
+[Next: Pages administration panel](http://docs.textpattern.io/administration/pages-panel)

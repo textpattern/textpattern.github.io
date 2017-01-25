@@ -12,4 +12,4 @@ The Languages administration panel is where you update your chosen language pack
 
 The language you activated during your initial installation of Textpattern will be indicated as "Up-to-date". You can also install a new language Textpack here anytime, such as for multi-lingual publishing efforts.
 
-[Next: Users panel](http://docs.textpattern.io/administration/users-panel)
+[Next: Users administration panel](http://docs.textpattern.io/administration/users-panel)

@@ -32,4 +32,4 @@ All Form templates need to have unique names and a Form type association before 
 
 The form type you use is not vitally important, the purpose of assigning Form templates a type is to allow Textpattern's tag builder to help you easily find the form you want to use. Once you've named and classified your Form template, you can begin building it.
 
-[Next: Styles panel](http://docs.textpattern.io/administration/styles-panel)
+[Next: Styles administration panel](http://docs.textpattern.io/administration/styles-panel)

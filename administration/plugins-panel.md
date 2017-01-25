@@ -223,7 +223,7 @@ Here are a few tips for achieving plugin zen:
 
 You're in the wrong place! Please see [the suite of plugin develop aides](http://docs.textpattern.io/development/) for aspiring plugin developers.
 
-[Next: Visitor logs panel](http://docs.textpattern.io/administration/visitor-logs-panel)
+[Next: Visitor logs administration panel](http://docs.textpattern.io/administration/visitor-logs-panel)
 
 [^1]: As time goes by some plugin authors move on to other pastures - they may abandon their Textpattern plugins, which fall out of repair, or disappear altogether. We call these plugins 'orphans', and you'll see them labeled this way in their respective support forum threads. Sometimes other developers will 'adopt' the plugins and maintain them, keeping the original plugin name. If you see a plugin indicated as 'orphan', avoid it, and ask in the forum if something else is better.
 

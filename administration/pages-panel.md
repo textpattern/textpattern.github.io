@@ -20,4 +20,4 @@ To create a new Page template, click the 'Create new page' button. The Page temp
 
 You can then go back to editing the Page template's content, either by hand, or by pasting in some starter code from an existing Page template and editing it as needed. Be sure to save your changes as you progress to not risk losing anything!
 
-[Next: Forms panel](http://docs.textpattern.io/administration/forms-panel)
+[Next: Forms administration panel](http://docs.textpattern.io/administration/forms-panel)

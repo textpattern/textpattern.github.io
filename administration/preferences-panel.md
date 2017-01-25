@@ -436,4 +436,4 @@ To remove a custom field, simply clear its name.
 
 **Don't forget to save changes made in the panel.**
 
-[Next: Languages panel](http://docs.textpattern.io/administration/languages-panel)
+[Next: Languages administration panel](http://docs.textpattern.io/administration/languages-panel)

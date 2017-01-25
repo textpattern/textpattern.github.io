@@ -153,4 +153,4 @@ When selecting a 'Change'-option you will get another drop-down-list which will 
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of files listed per page by selecting another value from the number range.
 
-[Next: Links panel](http://docs.textpattern.io/administration/links-panel)
+[Next: Links administration panel](http://docs.textpattern.io/administration/links-panel)

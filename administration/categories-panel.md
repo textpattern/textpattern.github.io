@@ -56,4 +56,4 @@ Once you have finished editng your category details, press 'Save' to store the c
 
 You can select one or more categories within a context list using the checkbox next to it, and with the widget at the bottom of each context list you can then 'Delete' the category/categories or 'Change parent'.
 
-[Next: Comments panel](http://docs.textpattern.io/administration/comments-panel)
+[Next: Comments administration panel](http://docs.textpattern.io/administration/comments-panel)

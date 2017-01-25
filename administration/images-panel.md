@@ -160,4 +160,4 @@ The image tag builder has several options:
 
 **Wrap tag**: For example `p`. Tells Textpattern to surround the image with this HTML tag when rendered. Output would be `<p><img src="etc" /></p>` in this example.
 
-[Next: Files panel](http://docs.textpattern.io/administration/files-panel)
+[Next: Files administration panel](http://docs.textpattern.io/administration/files-panel)

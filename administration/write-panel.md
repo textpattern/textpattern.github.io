@@ -271,4 +271,4 @@ Especially if you like to save your work from time to time while not yet finishe
 
 When you are done with writing or editing an article, particularly if it's a new article, you will want to make sure you have the various controls on the secondary column of the Write panel configured appropriately. These regard *publishing* an article (or keep it unpublished) in various ways. They come in two portions: Controls you always need statically at the top and a portion of optional controls which you can use for further fine-tuning.
 
-[Next: Articles panel](http://docs.textpattern.io/administration/articles-panel)
+[Next: Articles administration panel](http://docs.textpattern.io/administration/articles-panel)
