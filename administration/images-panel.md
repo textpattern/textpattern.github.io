@@ -100,8 +100,6 @@ As a default the search will find matches for all criteria. But you can do more 
 
 Beneath the upload and search area there is the table, or list, of existing images. Each row is one image.
 
-To explain the *columns* going across the top: If you click the header of a column (except 'Tags'), it will sort the list of articles according to that column. Click again to reverse sort direction.
-
 ### Columns
 
 The default view shows these columns:
@@ -118,7 +116,7 @@ The default view shows these columns:
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
-In the ID column, a links will be added for each image: *View:* click this to view the actual image in a new browser window.
+In the ID column, a link will be added for each image: *View:* click this to view the actual image in a new browser window.
 
 **Date:** the date when the image record was created (normally when the image was initially uploaded).
 
