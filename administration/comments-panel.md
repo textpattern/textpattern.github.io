@@ -10,62 +10,61 @@ description: The Comments administration panel provides control about visitor co
 
 The Comments administration panel provides control about *visitor comments* on your public pages.
 
+On this page:
+
+* [Editing comments](#editing-comments)
+* [Search function](#search-function)
+* [List of existing comments](#list-of-existing-comments)
+  * [Show spam](#show-spam)
+  * [Columns](#columns)
+  * [Perform changes on selected comments](#perform-changes-on-selected-comments)
+* [Pages and links listed per page](#pages-and-comments-listed-per-page)
+
 On this panel you can do two things:
 
 1. The primary (and default) comments list for basic info and instant handling of comments.
 2. An edit mode where you can edit the comments content.
 
-When opening the Comments panel you will get a list of recent comments, the latest comment at the top.
+## Editing comments
 
-## Comments list
+TODO
 
-As in the other content panels catalogues can get pretty long after some time. So as the first function there is a Search or Filter function:
+## Search function
 
-#### Search and Filter {#search_and_filter}
+Because the comments list can get pretty long, a search function is available at the top of the list. You can use the search function to locate a comment directly by a search phrase or to filter the view on your comments by particular criteria, thus reducing the number of comments in the resulting list.
 
-The “Search” dialogue has two components:
+The Search function has two components:
 
--   A drop-down-list which lets you specify which area is to be searched
-    or filtered
--   and a textfield for entering a search query or filter criteria.
+1. A text field for entering the search query
+2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textfield will be treated as a phrase, so search
-results must exactly match the whole phrase. There is no OR or other
-boolean search. You don't need to wildcard query text at the beginning
-or the end (e.g. “time” will find “parttime”, “times”, “timestamp” as
-well).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](http://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
-After entering your search phrase you start searching by clicking “Go”.
-As a result you will be given a new catalogue of comments which meet the
-criteria.
+After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of comments which meet the criteria.
 
-By default the search will find entered text in the articles' message.
-But you can do more refined searches by selecting another area to search
-in. The drop-down-list left from the textarea provides the following
-search areas:
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in. The drop-down-list toggle button provides the following search criteria:
 
--   ID\#
--   Parent
--   Name
--   Message (default)
--   E-mail
--   Website
--   IP
+* Search all (default)
+* ID
+* Parent
+* Name
+* Message
+* Email
+* Website
+* IP
+* Visible
 
-Example: You can search a comment by any word in its message, if you
-choose “Message” and type the word. Or you can filter the list and show
-all comments from one person by choosing “Name” and typing an essential
-part of the name (normally you needn't type the whole name).
+## List of existing links
 
-#### The Catalogue {#the_catalogue}
+Beneath the search area there is the table, or list, of existing comments. Each row is one comments.
 
-Each row is a cooment. The columns list basic information about the
-comment. The columns can be sorted. If you click the header of a column,
-it will sort the comments according to that column. Click again to
-reverse sort direction. The current sort column is marked by a yellow
-arrow on the right side of its name indicating its direction.
+### Show spam
 
-The default view of the columns list:
+By default Textpattern will hide comments which are automatically identified and marked as [spam](https://en.wikipedia.org/wiki/Spamming). By selecting 'Show spam' checkbox, spam comments will be visible in the listing.
+
+### Columns
+
+The default view shows these columns:
 
 **ID\#** - provides an ID for each comment.
 
@@ -88,24 +87,20 @@ You will also find two additional links:
 -   “Edit” will open an edit-window with the comment filled in.
 -   “View” will show the comment on the public-side.
 
-#### Hide Spam {#hide_spam}
+### Perform changes on selected comments
 
-By default Textpattern will hide comments which are automatically
-identified and marked as “spam”. By marking “Show Spam” spam comments
-will be visible in the catalogue.
+In the first column you will find a checkbox for each comment. Here you can select comments you want to change in a bulk manner. You can mark comments by checking the checkbox or you can use the checkbox in the head bar of the list to mark all comments on that page.
 
-### List of banned IPs {#list-of-banned-ips .sectionedit2#list_of_banned_ips}
+In order to quickly select ranges of comments click the checkbox of the first comment you want to mark, press and hold the shift key, then click the checkbox of the last comment in the range. All comments between will be checked too. You can add ranges to your selection by repeating these steps.
 
-If you follow the links “List banned IPs” the panel will change into the
-IP-list-mode. You will see a list of banned IPs. each row is an IP, the
-columns provide the following infos:
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
 
-**Date banned** - when you banned the comment's IP **IP** - the IP
-**Name used** - What the user entered as his “name”. **Banned for** the
-reason you banned an IP: the comment's number. If you click on the
-linked number, the comment will be opened in edit mode for reviewing and
-possibly editing. The last column provides an “unban” for the IP (Ip\#
-in the second column).
+* Show
+* Hide (unmoderated)
+* Hide (spam)
+* Delete
+
+After selecting the options you want to perform click 'Go' to start the changes. A pop-up window will ask "Are you sure?" and then (if 'yes') the changes will be performed.
 
 ## Pages and comments listed per page
 
