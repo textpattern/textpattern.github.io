@@ -141,7 +141,7 @@ In the first column you will find a checkbox for each file. Here you can select 
 
 For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
 
-* Change category (if image categories are defined)
+* Change category (if file categories are defined)
 * Change author
 * Change status
 * Reset download count
