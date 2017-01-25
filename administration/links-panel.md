@@ -6,16 +6,16 @@ title: Links panel
 description: The Links administration panel provides a way of keeping track of links and lists of external resources.
 ---
 
-# Links panel TODO
+# Links panel
 
 The Links administration panel provides a way of keeping track of links and lists of resources (often external to the site) so they may be included in article content or [Form templates](http://docs.textpattern.io/themes/form-templates-explained) in a convenient way.
 
 On this page:
 
 * [Why store links in this link repository?](#why-store-links-in-this-link-repository)
-* [Create a new article](#create-a-new-article)
+* [Create a new link](#create-a-new-link)
 * [Editing link](#editing-link)
-  * [Sorting rules](#sorting-rules)
+  * [Link sorting rules](#link-sorting-rules)
 * [Search function](#search-function)
 * [List of existing links](#list-of-existing-links)
   * [Columns](#columns)
@@ -43,19 +43,19 @@ This button will take you to the Link property editor (see below) where you can 
 
 Each link has various pieces of information associated with it, as described here:
 
-**Title:**
-the text that will be displayed for your link **** Sort Value ****\
-assigns listing priorities by number or letter to your links. See below
-for an explanation **** URL ****\
-the hyperlink value assigned to the link **** Category ****\
-the category to assign to the link. Categories must be created on the
-[categories](/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories)
-screen before they appear in the list. Link categories can be used with
-tags (as an attribute) to organize link lists **** Description ****\
-optional way of describing what the link is about. If used, it will be
-set as the anchor “title” attribute
+**Title:** a title for the link, which can be harnessed by tags (such as [linkdesctitle](http://docs.textpattern.io/tags/linkdesctitle)).
 
-### Sorting rules
+**Sort Value:** assigns listing priorities by number or letter to your links. See [Link sorting rules](#link-sorting-rules) below for a full explanation.
+
+**URL:** the hyperlink value assigned to the link.
+
+**Category:** a category for the link. [Categories](http://docs.textpattern.io/administration/categories-panel) are used to generate lists of links.
+
+**Description:** Text that tells something about the link, and can be harnessed by tags (such as [link_description](http://docs.textpattern.io/tags/link_description)).
+
+After editing, you have to **Save** your edits.
+
+### Link sorting rules
 
 When Textpattern sets the list sequence of links it uses the following method: Numbers are considered lower than letters, and values are sequenced lowest to highest, top to bottom.
 
@@ -105,21 +105,21 @@ Beneath the 'Create link' button and search area there is the table, or list, of
 
 The default view shows these columns:
 
-**ID\#** â€“ an ID number is automatically assigned to each link. This
-is what identifies it and calls it on the live site. Right from the ID\#
-two links reside: *Edit* â€“ click this (or the title of the link) to
-edit the link. *View* â€“ click this to view the particular article on
-the live site.
+**ID:** the unique ID number of the link.
 
-**Name** â€“ the title (!) of the link. Click this to edit the link.
+**Name:** the title of the link - click this to edit the link.
 
-**Description** â€“ what has been told about the link, its character,
-any recommendations.
+**Category:** if the link was assigned a category, then it will reflect that here.
 
-**Category** â€“ if the link was assigned a category, then it will
-reflect that here.
+**URL:** the actual hyperlink value of the link - click this to open the target destination in a new browser window.
 
-**Date** - the day and time when this link has been created.
+**Author:** the author who created the link record (only if more than one author exists in the [Users administration panel](http://docs.textpattern.io/administration/users-panel)).
+
+At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
+
+**Description:** what has been told about the link, its character, any recommendations.
+
+**Date:** the day and time of when this link was created.
 
 ### Perform changes on selected links
 
