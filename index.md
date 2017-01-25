@@ -26,7 +26,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img alt="Site administration" src="/img/index-administration.jpg" srcset="/img/index-administration@2x.jpg 2x, /img/index-administration.jpg 1x">
+<img alt="Site administration" src="http://static1.textpattern.io/img/index-administration.jpg" srcset="http://static1.textpattern.io/img/index-administration@2x.jpg 2x, http://static1.textpattern.io/img/index-administration.jpg 1x">
 
 ### Site administration
 
@@ -36,7 +36,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img alt="Core tags" src="/img/index-tags.jpg" srcset="/img/index-tags@2x.jpg 2x, /img/index-tags.jpg 1x">
+<img alt="Core tags" src="http://static1.textpattern.io/img/index-tags.jpg" srcset="http://static1.textpattern.io/img/index-tags@2x.jpg 2x, http://static1.textpattern.io/img/index-tags.jpg 1x">
 
 ### Core tags
 
