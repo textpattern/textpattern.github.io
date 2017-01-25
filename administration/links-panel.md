@@ -13,15 +13,14 @@ The Links administration panel provides a way of keeping track of links and list
 On this page:
 
 * [Why store links in this link repository?](#why-store-links-in-this-link-repository)
+* [Create a new article](#create-a-new-article)
+* [Editing link](#editing-link)
+  * [Sorting rules](#sorting-rules)
+* [Search function](#search-function)
 * [List of existing links](#list-of-existing-links)
+  * [Columns](#columns)
   * [Perform changes on selected links](#perform-changes-on-selected-links)
 * [Pages and links listed per page](#pages-and-links-listed-per-page)
-
-## Why store links in this link repository?
-
-While you could place links to external resources (or internal pages) directly into any article, this would mean a lot of work keeping track and maintaining links and lists of resources. Textpattern provides a better way: manage your links (and lists of links) *in a central place* and then include them in article content or Form templates with Textpattern tags. This way changes will take effect at every occurrence of a link and - for example - additions to a topic list of resource links will automatically be included wherever you placed the list.
-
-The [linklist](http://docs.textpattern.io/tags/linklist) tag will output links from the link repository, with filter criteria and presentation settings applied.
 
 On this panel you can do two things:
 
@@ -30,23 +29,21 @@ On this panel you can do two things:
 
 So the Links panel in a way combines what for articles is divided in two panels 'Write' and 'Articles'.
 
-The first option is to create or edit a link - with the controls at the top of the panel:
+## Why store links in this link repository?
 
-### Link Controls {#link-controls .sectionedit1#link_controls}
+While you could place links to external resources (or internal pages) directly into any article, this would mean a lot of work keeping track and maintaining links and lists of resources. Textpattern provides a better way: manage your links (and lists of links) *in a central place* and then include them in article content or Form templates with Textpattern tags. This way changes will take effect at every occurrence of a link and - for example - additions to a topic list of resource links will automatically be included wherever you placed the list.
 
-If the following controls are **empty** - by default when you just
-opened the panel or when you click on “Links” tab - you can use them to
-**create** a new link. Just fill in the appropriate fields and click
-“Save”. You do not need to fill in all information at once. If you have
-one of them, a link will be created and you can fill in the missing
-information later. If you open a link from the list below for editing,
-the existing link information will be shown in these controls and you
-can edit and save them.
+The [linklist](http://docs.textpattern.io/tags/linklist) tag will output links from the link repository, with filter criteria and presentation settings applied.
 
-Each link has various pieces of information associated with it, as
-described here:
+## Create a new link
 
-**** Title ****\
+This button will take you to the Link property editor (see below) where you can generate a new link along with its properties.
+
+## Editing links
+
+Each link has various pieces of information associated with it, as described here:
+
+**Title:**
 the text that will be displayed for your link **** Sort Value ****\
 assigns listing priorities by number or letter to your links. See below
 for an explanation **** URL ****\
@@ -58,80 +55,55 @@ tags (as an attribute) to organize link lists **** Description ****\
 optional way of describing what the link is about. If used, it will be
 set as the anchor “title” attribute
 
-#### Sorting rules {#sorting_rules}
+### Sorting rules
 
-When Textpattern sets the list sequence of links it uses the following
-method:
+When Textpattern sets the list sequence of links it uses the following method: Numbers are considered lower than letters, and values are sequenced lowest to highest, top to bottom.
 
-Numbers are considered lower than letters, and values are sequenced
-lowest to highest, top to bottom.
+The first character on the left is considered first and all links are sequenced. Then the second character is considered, and those link values that have the same first character are sequenced like a subcategory according to the second character. Then the third character is considered, then the fourth, etc.
 
-The first character on the left is considered first and all links are
-sequenced. Then the second character is considered, and those link
-values that have the same first character are sequenced like a sub
-category according to the second character. Then the third character is
-considered, then the fourth, etc.
+Thus the sort values: `1`, `1B`, `2`, `10`, `11`, `100`, `101`, `A`, `B` would be sequenced as follows.
 
-Thus the sort values: 1, 1B, 2 10, 11, 100, 101, A, B would be sequenced
-as follows.
+1. `1`
+2. `10`
+3. `100`
+4. `101`
+5. `11`
+6. `1B`
+7. `2`
+8. `A`
+9. `B`
 
--   1
--   10
--   100
--   101
--   11
--   1B
--   2
--   A
--   B
+## Search function
+
+Because the links list can get pretty long, a search function is available at the top of the list. You can use the search function to locate a link directly by a search phrase or to filter the view on your links by particular criteria, thus reducing the number of links in the resulting list.
+
+The Search function has two components:
+
+1. A text field for entering the search query
+2. A drop-down-list to specify which area is to be searched
+
+Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](http://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+
+After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of links which meet the criteria.
+
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in. The drop-down-list toggle button provides the following search criteria:
+
+* Search all (default)
+* ID
+* Name
+* URL
+* Description
+* Category
+* Author
+* Sort value
 
 ## List of existing links
 
 Beneath the 'Create link' button and search area there is the table, or list, of existing links. Each row is one link.
 
-#### Search and filter function {#search_and_filter_function}
+### Columns
 
-Because this list can get pretty long, there is a **Search function** at
-the top, which you can use to
-
--   **locate** links individually by search phrases
--   or to **filter** the list below (quite similar to the
-    [articles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles) panel).
-
-The Search function has two components:
-
--   A *drop-down-list* to specify which area is to be searched
--   and a *textarea* for entering the search phrase.
-
-Text entered in the textarea will be treated as a complete phrase (see
-[articles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles) for
-details on this).
-
-After entering your search criteria you start searching by clicking
-“Go”. As a result you will be given a new list of links which meet the
-criteria.
-
-As a default the search will normally proceed in the links' **title**,
-which the drop-down-list indicates a bit unclearly by “name” (remember:
-name and title is very different in Categories). But you can do more
-refined searches by selecting another area to search in. The
-drop-down-list left from the textarea provides the following search
-criteria:
-
--   ID\#
--   Name
--   Description
--   Category
-
-#### Table of Links {#table_of_links}
-
-Each row is one link. The columns provide basic information about the
-link. (Note: The columns can be sorted. If you click the header of a
-column, it will sort the list of links according to that column. Click
-again to reverse sort direction. The current sort column is marked by a
-yellow arrow on the right side of its name indicating its direction.)
-
-The default view shows five columns:
+The default view shows these columns:
 
 **ID\#** â€“ an ID number is automatically assigned to each link. This
 is what identifies it and calls it on the live site. Right from the ID\#
