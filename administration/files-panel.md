@@ -8,16 +8,15 @@ description: The Files administration panel provides central management tools fo
 
 # Files panel TODO
 
-The Files administration panel provides central management tools for download files you want to include in your website. It keeps the file, it's description, and automatic information of filesize together, as well as organizing file lists and other functions. So you can place **download links** and lists of downloads in your articles or forms in a very convenient way. If you need to update a file, you can do it once in a central place and don't need to bother where you already have placed a link to it.
+The Files administration panel provides central management tools for download files you want to include in your website. It keeps the file, it's description, and automatic information of file size together, as well as organizing file lists and other functions. So you can place download links and lists of downloads in your article content or [Form templates](http://docs.textpattern.io/themes/form-templates-explained) in a very convenient way. If you need to update a file, you can do it once in a central place and don't need to bother where you already have placed a link to it.
 
-On this panel you can:
+There are three basic things you can do in this panel:
 
--   as well *upload* a file
--   as *edit* file properties or *replace* the data file
--   and *organize* download lists (by assigning categories).
+1. Upload files
+2. Edit file-related properties or replace the data file
+3. List and manage your existing files
 
-(The files panel in a way combines what for *articles* is divided in two
-panels “Write” and “Article”.)
+So the Files panel in a way combines what for articles is divided in two panels 'Write' and 'Articles'.
 
 ### Upload a file {#upload-a-file .sectionedit1#upload_a_file}
 
@@ -75,10 +74,9 @@ filename - e.g. your version number - it will be saved in the
 files-folder with the name of the replaced file. This is *different*
 from replacing an image's file.)
 
-### List of files (files catalogue) {#list-of-files-files-catalogue .sectionedit4#list_of_files_files_catalogue}
+## List of existing files
 
-If there are any download files in your textpattern install, a list (or
-catalogue) of files will be provided beneath the upload dialogue.
+Beneath the upload and search area there is the table, or list, of existing files. Each row is one file.
 
 #### Search function and filter {#search_function_and_filter}
 

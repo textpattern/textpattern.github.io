@@ -8,7 +8,7 @@ description: The Images administration panel lets you manage everything you need
 
 # Images panel
 
-The Images administration panel lets you manage everything you need to include images (and galleries) in your content. From this panel you can upload images, create thumbnails, add captions (and alternate text), build groups of images (using categories) and generate tags to place images in your articles (or forms).
+The Images administration panel lets you manage everything you need to include images (and galleries) in your content. From this panel you can upload images, create thumbnails, add captions (and alternate text), build groups of images (using categories) and generate tags to place images in your article content or [Form templates](http://docs.textpattern.io/themes/form-templates-explained).
 
 On this page:
 
@@ -30,9 +30,9 @@ There are three basic things you can do in this panel:
 
 1. Upload images
 2. Edit image-related information (create a thumbnail, add caption and alternate text, categorize, etc.)
-3. List and manage your existing images.
+3. List and manage your existing images
 
-So the images panel in a way combines what for articles is divided in two panels 'Write' and 'Articles'.
+So the Images panel in a way combines what for articles is divided in two panels 'Write' and 'Articles'.
 
 ## Upload images
 

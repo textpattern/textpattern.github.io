@@ -13,6 +13,7 @@ The Links administration panel provides a way of keeping track of links and list
 On this page:
 
 * [Why store links in this link repository?](#why-store-links-in-this-link-repository)
+* [List of existing links](#list-of-existing-links)
   * [Perform changes on selected articles](#perform-changes-on-selected-articles)
 * [Pages and links listed per page](#pages-and-links-listed-per-page)
 
@@ -27,7 +28,7 @@ On this panel you can do two things:
 1. Create a new link and edit existing ones.
 2. Manage your existing repository of links.
 
-So the link panel in a way combines what for *articles* is divided in two panels [Write](http://docs.textpattern.io/administration/write-panel) and [Articles](http://docs.textpattern.io/administration/articles-panel).
+So the Links panel in a way combines what for articles is divided in two panels 'Write' and 'Articles'.
 
 The first option is to create or edit a link - with the controls at the top of the panel:
 
@@ -84,10 +85,9 @@ as follows.
 -   A
 -   B
 
-### Table of existing Links {#table-of-existing-links .sectionedit2#table_of_existing_links}
+## List of existing links
 
-Beneath the link controls and the “Save” button a table (list) presents
-your existing links.
+Beneath the 'Create link' button and search area there is the table, or list, of existing links. Each row is one link.
 
 #### Search and filter function {#search_and_filter_function}
 
