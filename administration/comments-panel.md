@@ -6,13 +6,14 @@ title: Comments panel
 description: The Comments administration panel provides control about visitor comments on your public pages.
 ---
 
-# Comments panel TODO
+# Comments panel
 
-The Comments administration panel provides control about *visitor comments* on your public pages.
+The Comments administration panel provides control about visitor comments on your public pages. **Note:** This panel is only available if you have turned on comment functionality in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#accept-comments).
 
 On this page:
 
 * [Editing comments](#editing-comments)
+  * [Comment details](#comment-details)
 * [Search function](#search-function)
 * [List of existing comments](#list-of-existing-comments)
   * [Show spam](#show-spam)
@@ -27,7 +28,25 @@ On this panel you can do two things:
 
 ## Editing comments
 
-TODO
+If you click on the unique ID link of the comment in the list of existing comments, you will open the comment edit panel.
+
+### Comment details
+
+**Status:** select whether the comment is currently shown in the parent article or hidden (either as unmoderated or spam).
+
+**Name:** edit the given name of the commentator.
+
+**IP:** for information only, the IP address of the original commentator.
+
+**Email:** edit the given email address of the commentator.
+
+**Website:** edit the given website URL of the commentator.
+
+**Date:** for information only, when the comment was created.
+
+**Message:** edit the message itself.
+
+After editing, you have to **Save** your edits.
 
 ## Search function
 
@@ -54,38 +73,37 @@ As a default the search will find matches for all criteria. But you can do more 
 * IP
 * Visible
 
-## List of existing links
+## List of existing comments
 
-Beneath the search area there is the table, or list, of existing comments. Each row is one comments.
+Beneath the search area there is the table, or list, of existing comments. Each row is one comment.
 
 ### Show spam
 
-By default Textpattern will hide comments which are automatically identified and marked as [spam](https://en.wikipedia.org/wiki/Spamming). By selecting 'Show spam' checkbox, spam comments will be visible in the listing.
+By default Textpattern will hide comments which are automatically identified and marked as [spam](https://en.wikipedia.org/wiki/Spamming). By marking the 'Show spam' checkbox, spam comments will be visible in the listing.
 
 ### Columns
 
 The default view shows these columns:
 
-**ID\#** - provides an ID for each comment.
+**ID:** the unique ID number of the comment. Click in this to open the comment edit panel (see above).
 
-**Date** - when the comment has been entered
+**Date:** when the comment was created.
 
-**Name** - of the commentator
+**Name:** given name of the commentator.
 
-**Message** - The first words of the message (cropped)
+**Message:** the first words of the message (cropped).
 
-**Parent** - The title of the article the comment has been written to.
-If you click on the provided link, the article will open in the “Write”
-panel.
+**Parent:** the title of the article the comment was written to. If you click on the provided link, the article will open in the [Write administration panel](http://docs.textpattern.io/administration/write-panel).
 
-By marking “Show Detail” there will be additional columns in the list:
+At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
-**E-mail** **Website** **IP** **Status**
+**Email:** given email address of the commentator.
 
-You will also find two additional links:
+**Website:** given website of the commentator.
 
--   “Edit” will open an edit-window with the comment filled in.
--   “View” will show the comment on the public-side.
+**IP:** the IP address of the commentator.
+
+**Status:** whether the comment is currently shown in the parent article or hidden (unmoderated/spam).
 
 ### Perform changes on selected comments
 
