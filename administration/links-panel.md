@@ -14,7 +14,8 @@ On this page:
 
 * [Why store links in this link repository?](#why-store-links-in-this-link-repository)
 * [Create a new link](#create-a-new-link)
-* [Editing link](#editing-link)
+* [Editing links](#editing-links)
+  * [Link details](#link-details)
   * [Link sorting rules](#link-sorting-rules)
 * [Search function](#search-function)
 * [List of existing links](#list-of-existing-links)
@@ -40,6 +41,8 @@ The [linklist](http://docs.textpattern.io/tags/linklist) tag will output links f
 This button will take you to the Link property editor (see below) where you can generate a new link along with its properties.
 
 ## Editing links
+
+### Link details
 
 Each link has various pieces of information associated with it, as described here:
 
