@@ -14,6 +14,9 @@ On this page:
 
 * [Upload files](#upload-files)
 * [Existing files](#existing-files)
+* [Editing files](#editing-files)
+  * [Replace file](#replace-file)
+  * [File details](#file-details)
 * [Pages and files listed per page](#pages-and-files-listed-per-page)
 
 There are three basic things you can do in this panel:
@@ -26,7 +29,7 @@ So the Files panel in a way combines what for articles is divided in two panels 
 
 ## Upload files
 
-The first tool at the top of the panel is the *upload* area. Labeled 'Upload file' you will find a field for entering a path to the file. On its right side there is a 'Browse...'-button which (as well as clicking on the field itself) will open a pop-up-window containing your file manager's tools to locate an image file for upload.
+The first tool at the top of the panel is the *upload* area. Labeled 'Upload file' you will find a field for entering a path to the file. On its right side there is a 'Browse...'-button which (as well as clicking on the field itself) will open a pop-up-window containing your file manager's tools to locate a file for upload.
 
 When you have marked a file and put its path into the upload field by clicking 'open' (or 'OK'), you can start uploading by clicking 'Upload'.
 
@@ -38,16 +41,22 @@ Alternatively to uploading files through a web browser, you can elect to upload 
 
 Select the file from the dropdown list. Manually uploaded files will then be stored in the database, so you can append information to it via the file editing panel (see below).
 
-### Edit File Properties {#edit-file-properties .sectionedit2#edit_file_properties}
+## Editing files
 
-After the upload proceeded successfully the panel view will switch to
-edit-properties-mode (see figure XX). Here you see the following pieces
-of information:
+### Replace file
 
--   **File Status**. Info only. “OK” tells that the file is in the
-    files folder. If it's “Missing” you get additional fields
-    for repairing. (Note: labeled “Condition” in the list of files)
--   **Name**. Info only.
+If you need to **replace a file** (for if there is a corrected or optimized file or a new version and no need to keep the old one) you simply use the small 'Replace file' dialogue. It works the same way as 'Upload file' outlined above but doesn't create a new content element and instead replaces the file in the current one.
+
+**Note:** Even if your replacement file has another filename - e.g. your version number - it will be saved in the files-folder with the name of the replaced file. This is *different* from replacing an image's file.
+
+### File details
+
+**Condition:** "OK" tells that the file is in the files folder - if it's "Missing" you get additional options for repairing.
+
+**ID:** the unique ID number of the file.
+
+**Name:** for information only, but can be harnessed by tags (such as [file_download_name](http://docs.textpattern.io/tags/file_download_name)).
+
 -   **Download count**. Info only. You can click the linked name and
     thus test the download.
 -   **Category**. Editable. With categories you organize download lists.
@@ -65,17 +74,6 @@ After editing you have to *Save* your edits.
 File size isn't there as an info (nor in the file catalogue). But you
 needn't enter it manually (for example in the description) for it is
 included as an option in the file-related tags. See there.
-
-### Replace a file {#replace-a-file .sectionedit3#replace_a_file}
-
-If you need to **replace a file** (for there is a corrected or optimized
-file or a new version and no need to keep the old one) you simply use
-the small “Replace file” dialogue. It's working the same way as “upload”
-but doesn't create a new content element and instead replaces the file
-in the current one. (Note: Even if your replacement file has another
-filename - e.g. your version number - it will be saved in the
-files-folder with the name of the replaced file. This is *different*
-from replacing an image's file.)
 
 ## List of existing files
 
