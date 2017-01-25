@@ -8,29 +8,28 @@ description: The Links administration panel provides a way of keeping track of l
 
 # Links panel TODO
 
-The Links administration panel provides a way of keeping track of links and lists of resources (often external to the site) so they may be included in articles or form content in a convenient way.
+The Links administration panel provides a way of keeping track of links and lists of resources (often external to the site) so they may be included in article content or [Form templates](http://docs.textpattern.io/themes/form-templates-explained) in a convenient way.
 
-While you could place links to external resources (or internal pages)
-directly into any article this would mean a lot of work keeping track
-and maintaining links and lists of recources. Textpattern provides a
-much better way: Manage your links (and lists of links) *in a central
-place* and then include them in article or form content with tags. This
-way changes will take effect at every occurence of a link and - for
-example - additions to a topic list of resource links will automatically
-be included wherever you placed the list.
+On this page:
+
+* [Why store links in this link repository?](#why-store-links-in-this-link-repository)
+  * [Perform changes on selected articles](#perform-changes-on-selected-articles)
+* [Pages and links listed per page](#pages-and-links-listed-per-page)
+
+## Why store links in this link repository?
+
+While you could place links to external resources (or internal pages) directly into any article, this would mean a lot of work keeping track and maintaining links and lists of resources. Textpattern provides a better way: manage your links (and lists of links) *in a central place* and then include them in article content or Form templates with Textpattern tags. This way changes will take effect at every occurrence of a link and - for example - additions to a topic list of resource links will automatically be included wherever you placed the list.
 
 The [linklist](http://docs.textpattern.io/tags/linklist) tag will output links from the link repository, with filter criteria and presentation settings applied.
 
-On this panel you can do two basic things:
+On this panel you can do two things:
 
-1. *Create* a new link and *edit* existing ones
-2. *Manage* your existing links.
+1. Create a new link and edit existing ones.
+2. Manage your existing repository of links.
 
-(So the link panel in a way combines what for *articles* is divided in
-two panels “Write” and “Article”.)
+So the link panel in a way combines what for *articles* is divided in two panels [Write](http://docs.textpattern.io/administration/write-panel) and [Articles](http://docs.textpattern.io/administration/articles-panel).
 
-The first option is to create or edit a link - with the controls at the
-top of the panel:
+The first option is to create or edit a link - with the controls at the top of the panel:
 
 ### Link Controls {#link-controls .sectionedit1#link_controls}
 
@@ -150,30 +149,19 @@ reflect that here.
 
 **Date** - the day and time when this link has been created.
 
-#### Perform changes on selected links {#perform_changes_on_selected_links}
+### Perform changes on selected articles
 
-On the right side you will find a checkbox for each link. Here you can
-select links you want to change in a jointly manner. You can mark links
-by ckecking the checkbox or you can use select-buttons at the bottom of
-the list: “All”, “None” or “Range”. If you want to select a range you
-simply mark the checkbox of both the first and the last link in the
-range and then click “Range”. The links between will automatically be
-checked too.
+In the first column you will find a checkbox for each link. Here you can select links you want to change in a bulk manner. You can mark links by checking the checkbox or you can use the checkbox in the head bar of the list to mark all links on that page.
 
-For performing changes now you go to the drop-down-list “with selected”
-and choose the function you want to perform. The following changes are
-available:
+In order to quickly select ranges of links click the checkbox of the first link you want to mark, press and hold the shift key, then click the checkbox of the last link in the range. All links between will be checked too. You can add ranges to your selection by repeating these steps.
 
--   Change Category
--   Delete
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
 
-When selecting the “Change Category”-option you will get another
-drop-down-list below which will give you the list of categories to
-choose from.
+* Change category (if link categories are defined)
+* Change author
+* Delete
 
-After selecting the options you want to perform click “Go” to start the
-changes. A pop-up window will ask “Are you sure?” and then (if “yes”)
-the changes will be performed.
+When selecting a 'Change'-option you will get another drop-down-list which will give you the values to choose from, e.g. the list of authors or categories. After selecting the options you want to perform click 'Go' to start the changes. A pop-up window will ask "Are you sure?" and then (if 'yes') the changes will be performed.
 
 ## Pages and links listed per page
 
