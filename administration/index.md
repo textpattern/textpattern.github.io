@@ -63,7 +63,7 @@ The **Content** region of the administration side has seven panels out-of-the-bo
             </tr>
             <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/links-panel"><strong>Links</strong></a></th>
-                <td>A table listing of all links uploaded and functionality to manage the.</td>
+                <td>A table listing of all links uploaded and functionality to manage them.</td>
             </tr>
             <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/categories-panel"><strong>Categories</strong></a></th>
