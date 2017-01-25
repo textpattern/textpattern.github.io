@@ -15,11 +15,16 @@ The Articles administration panel will show a list of all your existing articles
 
 On this page:
 
+* [Create a new article](#create-a-new-article)
 * [Search function](#search-function)
 * [List of articles](#list-of-articles)
   * [Columns](#columns)
   * [Perform changes on selected articles](#perform-changes-on-selected-articles)
 * [Pages and articles listed per page](#pages-and-articles-listed-per-page)
+
+## Create a new article
+
+This button will take you directly to the [Write administration panel](http://docs.textpattern.io/administration/write-panel).
 
 ## Search function
 
