@@ -8,10 +8,7 @@ description: The Articles panel shows a list of all your existing articles, toge
 
 # Articles panel
 
-The Articles administration panel will show a list of all your existing articles together with basic information (Such as ID, Posted, Title, Author, etc.). Details can optionally be displayed. From this list you can:
-
-1. Open an article for editing
-2. Perform batch changes on selected articles
+The Articles administration panel will show a list of all your existing articles together with basic information (Such as ID, Posted, Title, Author, etc.).
 
 On this page:
 
@@ -21,6 +18,11 @@ On this page:
   * [Columns](#columns)
   * [Perform changes on selected articles](#perform-changes-on-selected-articles)
 * [Pages and articles listed per page](#pages-and-articles-listed-per-page)
+
+On this panel you can do two things:
+
+1. Open an article for editing
+2. Perform batch changes on selected articles
 
 ## Create a new article
 

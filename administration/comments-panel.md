@@ -8,7 +8,9 @@ description: The Comments administration panel provides control about visitor co
 
 # Comments panel TODO
 
-The Comments administration panel provides control about *visitor comments* on your public pages. There are two modes to this panel:
+The Comments administration panel provides control about *visitor comments* on your public pages.
+
+On this panel you can do two things:
 
 1. The primary (and default) comments list for basic info and instant handling of comments.
 2. An edit mode where you can edit the comments content.

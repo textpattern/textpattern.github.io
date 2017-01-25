@@ -26,7 +26,7 @@ On this page:
 
 Of course you could upload images (using FTP) and place image tags (using HTML) directly. But then you'd have to provide elements like captions separately for every place you use an image. The images tools of Textpattern provide a way of managing image-related info *in a central place*. If you have to change a caption or for example need to replace an image (e.g. a sharper one or another view) you can do these changes once at a central place and the changes will automatically take effect wherever you placed the image using Textpattern tags.
 
-There are three basic things you can do in this panel:
+On this panel you can do three things:
 
 1. Upload images
 2. Edit image-related information (create a thumbnail, add caption and alternate text, categorize, etc.)

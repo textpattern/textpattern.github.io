@@ -23,7 +23,7 @@ On this page:
   * [Perform changes on selected files](#perform-changes-on-selected-files)
 * [Pages and files listed per page](#pages-and-files-listed-per-page)
 
-There are three basic things you can do in this panel:
+On this panel you can do three things:
 
 1. Upload files
 2. Edit file-related properties or replace the data file
