@@ -40,7 +40,7 @@ The first tool at the top of the panel is the *upload* area. Labeled 'Upload ima
 
 When you have marked an image and put its path into the upload field by clicking 'open' (or 'OK'), you can start uploading by clicking 'Upload'.
 
-The image will be uploaded to the images folder of Textpattern (but remember the file size limitations). A reference will automatically be saved in the database and the single image editing panel will be opened. Here you can enter additional information (see below) regarding the image. To save those informations and return to the Images panel click 'Save'.
+The image will be uploaded to the images folder of Textpattern (but remember the file size limitations). A reference will automatically be saved in the database and the image editing panel will be opened. Here you can enter additional information (see below) regarding the image. To save those informations and return to the Images panel click 'Save'.
 
 **Technical note:** In the images folder all uploaded images will have only a number as name. The number equals the unique Textpattern ID number of the image - extended by `t` for a thumbnail. The original name is kept in the images properties.
 

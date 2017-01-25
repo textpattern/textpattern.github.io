@@ -14,7 +14,7 @@ On this page:
 
 * [Why store links in this link repository?](#why-store-links-in-this-link-repository)
 * [List of existing links](#list-of-existing-links)
-  * [Perform changes on selected articles](#perform-changes-on-selected-articles)
+  * [Perform changes on selected links](#perform-changes-on-selected-links)
 * [Pages and links listed per page](#pages-and-links-listed-per-page)
 
 ## Why store links in this link repository?
@@ -149,7 +149,7 @@ reflect that here.
 
 **Date** - the day and time when this link has been created.
 
-### Perform changes on selected articles
+### Perform changes on selected links
 
 In the first column you will find a checkbox for each link. Here you can select links you want to change in a bulk manner. You can mark links by checking the checkbox or you can use the checkbox in the head bar of the list to mark all links on that page.
 

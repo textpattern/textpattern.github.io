@@ -10,6 +10,12 @@ description: The Files administration panel provides central management tools fo
 
 The Files administration panel provides central management tools for download files you want to include in your website. It keeps the file, it's description, and automatic information of file size together, as well as organizing file lists and other functions. So you can place download links and lists of downloads in your article content or [Form templates](http://docs.textpattern.io/themes/form-templates-explained) in a very convenient way. If you need to update a file, you can do it once in a central place and don't need to bother where you already have placed a link to it.
 
+On this page:
+
+* [Upload files](#upload-files)
+* [Existing files](#existing-files)
+* [Pages and files listed per page](#pages-and-files-listed-per-page)
+
 There are three basic things you can do in this panel:
 
 1. Upload files
@@ -18,22 +24,19 @@ There are three basic things you can do in this panel:
 
 So the Files panel in a way combines what for articles is divided in two panels 'Write' and 'Articles'.
 
-### Upload a file {#upload-a-file .sectionedit1#upload_a_file}
+## Upload files
 
-The first function on the panel is a small dialogue for uploading files
-(see figure 1). When opening the panel for the first time, this will be
-the only thing you will see, because there aren't any files yet. The
-**Existing file** select box won't be visible the first time.
+The first tool at the top of the panel is the *upload* area. Labeled 'Upload file' you will find a field for entering a path to the file. On its right side there is a 'Browse...'-button which (as well as clicking on the field itself) will open a pop-up-window containing your file manager's tools to locate an image file for upload.
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:tab_files_upload_dropdowns.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:tab_files_upload_dropdowns.png)
+When you have marked a file and put its path into the upload field by clicking 'open' (or 'OK'), you can start uploading by clicking 'Upload'.
 
-For large files it is recommended *not* to use the **Upload file**
-field, but to use FTP to upload them directly to your files folder. Once
-you have done that, the **Existing file** select box will appear, and
-you can use it to import your file.
+The file will be uploaded to the files folder of Textpattern (but remember the file size limitations). A reference will automatically be saved in the database and the file editing panel will be opened. Here you can enter additional information (see below) regarding the file, or replace the file. To save those informations and return to the Files panel click 'Save'.
 
-Uploaded files will be stored in the files folder of your Textpattern
-install.
+## Existing files
+
+Alternatively to uploading files through a web browser, you can elect to upload files manually (i.e. via FTP) to your files directory; this is especially useful of you have large files then need to be uploaded to the server. The 'Existing file' select box will be available if Textpattern detects any manual uploads to the files directory.
+
+Select the file from the dropdown list. Manually uploaded files will then be stored in the database, so you can append information to it via the file editing panel (see below).
 
 ### Edit File Properties {#edit-file-properties .sectionedit2#edit_file_properties}
 
