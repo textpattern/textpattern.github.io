@@ -6,7 +6,7 @@ title: Files panel
 description: The Files administration panel provides central management tools for download files you want to include in your website.
 ---
 
-# Files panel TODO
+# Files panel
 
 The Files administration panel provides central management tools for download files you want to include in your website. It keeps the file, it's description, and automatic information of file size together, as well as organizing file lists and other functions. So you can place download links and lists of downloads in your article content or [Form templates](http://docs.textpattern.io/themes/form-templates-explained) in a very convenient way. If you need to update a file, you can do it once in a central place and don't need to bother where you already have placed a link to it.
 
@@ -19,6 +19,8 @@ On this page:
   * [File details](#file-details)
 * [Search function](#search-function)
 * [List of existing files](#list-of-existing-files)
+  * [Columns](#columns)
+  * [Perform changes on selected files](#perform-changes-on-selected-files)
 * [Pages and files listed per page](#pages-and-files-listed-per-page)
 
 There are three basic things you can do in this panel:
@@ -39,9 +41,7 @@ The file will be uploaded to the files folder of Textpattern (but remember the f
 
 ## Existing files
 
-Alternatively to uploading files through a web browser, you can elect to upload files manually (i.e. via FTP) to your files directory; this is especially useful of you have large files then need to be uploaded to the server. The 'Existing file' select box will be available if Textpattern detects any manual uploads to the files directory.
-
-Select the file from the dropdown list. Manually uploaded files will then be stored in the database, so you can append information to it via the file editing panel (see below).
+Alternatively to uploading files through a web browser, you can elect to upload files manually (i.e. via FTP) to your files directory; this is especially useful of you have large files then need to be uploaded to the server. The 'Existing file' select box will be available if Textpattern detects any manual uploads to the files directory. Select the file from the dropdown list. Manually uploaded files will then be stored in the database, so you can append information to it via the file editing panel (see below).
 
 ## Editing files
 
@@ -61,7 +61,7 @@ If you need to **replace a file** (for if there is a corrected or optimized file
 
 **Download count:** for information only, but can be harnessed by tags (such as [file_download_downloads](http://docs.textpattern.io/tags/file_download_downloads)).
 
-**File status:** there are three different status modes, which are equal to the articles' status: 'Hidden', 'Pending' and 'Live' (as default).
+**File status:** there are three different status modes, which are equal to the articles' status: 'Hidden', 'Pending' or 'Live' (as default).
 
 **Publish date:** the same handling as articles' timestamp - you can set a file to publish at some point in the future (or now, via the 'Set timestamp to now' checkbox).
 
@@ -101,78 +101,53 @@ As a default the search will find matches for all criteria. But you can do more 
 
 Beneath the upload and search area there is the table, or list, of existing files. Each row is one file.
 
-#### List of files: Information columns {#list_of_filesinformation_columns}
+### Columns
 
-*The list of files provides you with basic information on your file
-content elements.* Each row is one file. There are eight columns. (Note:
-The columns can be sorted. If you click the header of a column, it will
-sort the whole current list of files (including all its pages) according
-to that column. Click again to reverse sort direction. The current sort
-column is marked by a yellow arrow on the right side of its name
-indicating its direction: downwards = ascending = most recent presented
-first at the top.)
+The default view shows these columns:
 
-For *files* there are eight different columns:
+**ID:** an ID number is automatically assigned to each file. This is what identifies it and calls it on the live site. Click this ID to edit the file properties.
 
-**ID\#** â€“ an ID number is automatically assigned to each file. The
-ID\# is used for identifying and placing the content element with a tag.
-Right from the ID\# two links reside: **Edit** â€“ click this (or the
-name of the file) to edit the properties of the content element. The
-panel view will switch to *edit properties mode*. **Download** â€“ click
-this to download the file to your computer.
+**Name:** the filename of the image. Click this to edit the file properties.
 
-**Name** â€“ filename of the file. You can click this linked name to
-edit the files properties. The panel view will switch to *edit
-properties mode*.
+**Title:** if the file was given a title, then it will reflect that here.
 
-**Description** â€“ what has to be told about the file. You needn't
-specify file size here. Filesize will be shown automatically (by tags
-and if you like).
+**Category:** if the file was assigned a category, then it will reflect that here.
 
-**Category** â€“ if the link was assigned a category, then it will
-reflect that here.
+**Status:** the current status of the file ('Hidden', 'Pending' or 'Live').
 
-**Tags** - here you can choose between three modes how to include the
-correct code. There will be a tag builder opened as a pop-up, creating a
-tag for you to copy and paste.
+**Condition:** "OK" tells that the file is in the files folder, or "Missing".
 
-**Status** - the current status of the file.
+**Downloads:** an indicator of how many downloads of this file have taken place.
 
-**Condition** - the day and time when this link has been created. (Note:
-labeled “File Status” in the edit-mode)
+**Author:** the author who created the file record (only if more than one author exists in the [Users administration panel](http://docs.textpattern.io/administration/users-panel)).
 
-**Downloads** - an indicator how many downloads already happened.
+At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
-#### Edit multiple content elements {#edit_multiple_content_elements}
+In the ID column, a link will be added for each file: **Download:** click this to download the file to your computer.
 
-You may want to perform changes on multiple content elements, for
-instance replace a category assignment in a group of 50 files.
-Textpattern provides a way to do this in a single command:
+**Description:** what has to be told about the file - you needn't specify file size here (file size can be shown automatically by tags if you like).
 
-First you have to select the content elements you want to apply a change
-to. On the right side of the list you will find a checkbox for each
-content element to select. You can mark and unmark the element by
-clicking the checkbox. There are also three select-buttons at the bottom
-of the list: “All”, “None” or “Range”. If you want to select a *range*
-you simply mark the checkbox of both the first and the last link in the
-range and then click “Range”. The links between will automatically be
-checked too. You can combine those ways to select the appropriate files.
+**Tags:** here you have a choice of *three ways* to include the file in your article content or Form templates:
 
-Second, you get to the bottom of the list to the drop-down-list labeled
-“With selected:” and choose the function you want to perform.
+1. as a Textile(d) text
+2. as a Textpattern file tag
+3. as plain HTML
 
-For files the following changes are available:
+Each link will open a pop-up window with a 'tag builder'. You can choose the elements you need and an appropriate tag in Textile, Textpattern or HTML will be created. This tag you can copy and place where needed.
 
--   Change Category
--   Delete
+### Perform changes on selected files
 
-When selecting the “Change Category”-option you will get another
-drop-down-list below which will give you the list of categories to
-choose from.
+In the first column you will find a checkbox for each file. Here you can select files you want to change in a bulk manner. You can mark files by checking the checkbox or you can use the checkbox in the head bar of the list to mark all files on that page.
 
-After selecting the appropriate options click “Go” to start the changes.
-A pop-up window will ask “Are you sure?” and then (if “yes”) the changes
-will be performed.
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
+
+* Change category (if image categories are defined)
+* Change author
+* Change status
+* Reset download count
+* Delete
+
+When selecting a 'Change'-option you will get another drop-down-list which will give you the values to choose from, e.g. the list of authors, or categories. After selecting the options you want to perform click 'Go' to start the changes. A pop-up window will ask "Are you sure?" and then (if 'yes') the changes will be performed.
 
 ## Pages and files listed per page
 

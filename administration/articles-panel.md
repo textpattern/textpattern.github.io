@@ -72,7 +72,7 @@ The default view shows these columns:
 
 **Status:** this is the status of the article. if set to Live, then this article is viewable on your live site (except if it has expired, see the [expired](http://docs.textpattern.io/tags/expired) tag. Might otherwise be set to 'Draft', 'Pending', etc.
 
-**Author:** this is the name of the person who posted the article.
+**Author:** this is the name of the person who posted the article (only if more than one author exists in the [Users administration panel](http://docs.textpattern.io/administration/users-panel)).
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 

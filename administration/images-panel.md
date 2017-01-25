@@ -114,15 +114,15 @@ The default view shows these columns:
 
 **Category:** if the image was assigned a category, then it will reflect that here.
 
-**Author:** the author who created the image record.
+**Author:** the author who created the image record (only if more than one author exists in the [Users administration panel](http://docs.textpattern.io/administration/users-panel)).
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
-In the ID column, a link will be added for each image: *View:* click this to view the actual image in a new browser window.
+In the ID column, a link will be added for each image: **View:** click this to view the actual image in a new browser window.
 
 **Date:** the date when the image record was created (normally when the image was initially uploaded).
 
-**Tags:** here you have a choice of *three ways* to include the image in your articles or forms:
+**Tags:** here you have a choice of *three ways* to include the image in your article content or Form templates:
 
 1. as a Textile(d) text
 2. as a Textpattern image tag
