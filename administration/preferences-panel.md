@@ -120,7 +120,7 @@ When you are using Textpattern for logging (see above), you can set how long (in
 
 ### Accept comments?
 
-This is a global setting for whether or not you want to allow your articles to accept comments. This setting can be overridden on an article-by-article basis in the [Write administration panel](http://docs.textpattern.io/administration/write-panel) as you write new articles.
+This is a global setting for whether or not you want to allow your articles to accept comments. Effectively turns of all comment-related functionality within the website and administration panels.
 
 ## Admin preferences
 
