@@ -17,6 +17,8 @@ On this page:
 * [Editing files](#editing-files)
   * [Replace file](#replace-file)
   * [File details](#file-details)
+* [Search function](#search-function)
+* [List of existing files](#list-of-existing-files)
 * [Pages and files listed per page](#pages-and-files-listed-per-page)
 
 There are three basic things you can do in this panel:
@@ -55,60 +57,49 @@ If you need to **replace a file** (for if there is a corrected or optimized file
 
 **ID:** the unique ID number of the file.
 
-**Name:** for information only, but can be harnessed by tags (such as [file_download_name](http://docs.textpattern.io/tags/file_download_name)).
+**Name:** for information only, but can be harnessed by tags (such as [file_download_name](http://docs.textpattern.io/tags/file_download_name)). You can click the linked name and thus test the download (which will also increase the download count).
 
--   **Download count**. Info only. You can click the linked name and
-    thus test the download.
--   **Category**. Editable. With categories you organize download lists.
--   **Description**. Editable. Text that tells something about the file.
--   **Status**. Editable. There are three different status modes, which
-    are equal to the articles' status: *Hidden*, *Pending* and *Live*
-    (as default). (There is no “Sticky” status.)
--   **Timestamp**. Editable. The same handling as articles' timestamp.
-    (There isn't an Expire-setting yet.)
+**Download count:** for information only, but can be harnessed by tags (such as [file_download_downloads](http://docs.textpattern.io/tags/file_download_downloads)).
 
-After editing you have to *Save* your edits.
+**File status:** there are three different status modes, which are equal to the articles' status: 'Hidden', 'Pending' and 'Live' (as default).
 
-#### File size {#file_size}
+**Publish date:** the same handling as articles' timestamp - you can set a file to publish at some point in the future (or now, via the 'Set timestamp to now' checkbox).
 
-File size isn't there as an info (nor in the file catalogue). But you
-needn't enter it manually (for example in the description) for it is
-included as an option in the file-related tags. See there.
+**Title:** a title for the file, which can be harnessed by tags (such as [file_download_name](http://docs.textpattern.io/tags/file_download_name)).
+
+**Category:** a category for the file. [Categories](http://docs.textpattern.io/administration/categories-panel) are used to generate lists of files.
+
+**Description:** Text that tells something about the file, and can be harnessed by tags (such as [file_download_description](http://docs.textpattern.io/tags/file_download_description)).
+
+After editing, you have to **Save** your edits.
+
+## Search function
+
+Because the files list can get pretty long, a search function is available at the top of the list. You can use the search function to locate a file directly by a search phrase or to filter the view on your files by particular criteria, thus reducing the number of files in the resulting list.
+
+The Search function has two components:
+
+1. A text field for entering the search query
+2. A drop-down-list to specify which area is to be searched
+
+Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](http://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+
+After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of files which meet the criteria.
+
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in. The drop-down-list toggle button provides the following search criteria:
+
+* Search all (default)
+* ID
+* Name
+* Title
+* Description
+* Category
+* Status
+* Author
 
 ## List of existing files
 
 Beneath the upload and search area there is the table, or list, of existing files. Each row is one file.
-
-#### Search function and filter {#search_function_and_filter}
-
-For this list can get long, at the top there is a **search function**,
-which you can use to
-
--   **locate** files individually by search phrases
--   or to **filter** the list below.
-
-The Search function has two components:
-
--   A *drop-down-list* to specify which **area** is to be searched
--   and a *textarea* for entering the **search phrase**.
-
-The drop-down-list provides the following search areas:
-
--   ID\#
--   Name (= default)
--   Description
--   Category
-
-By default (when opening the panel) *name* will be selected. You can
-refine your search or filter by selecting another area option.
-
-The search phrase in the textarea will be treated as a complete phrase
-(see [articles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles)
-for details on this).
-
-After entering your search criteria you can start searching by clicking
-“Go”. As a result you will be given a new list of files which meet the
-criteria.
 
 #### List of files: Information columns {#list_of_filesinformation_columns}
 

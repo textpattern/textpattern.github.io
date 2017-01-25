@@ -58,6 +58,8 @@ The image details panel shows the unique ID number of the image. In addition the
 
 **Caption:** any text to make a good caption for the image.
 
+After editing, you have to **Save** your edits.
+
 ### Replace image
 
 If you need to replace an image by another or a better one (instead of placing another one, especially if you already have placed it on several places in your content) you can do so with the upload fields labelled 'Replace image'. The uploaded image replaces the current one, but retains any further details you have entered for it.
