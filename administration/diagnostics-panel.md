@@ -30,7 +30,13 @@ The actual diagnostics information is displayed in the **Diagnostics info** regi
 
 ### Low info display
 
-Low diagnostics info begins with a set of data values about your installation and server technology. These values and their descriptions are described in the following table.
+Low diagnostics info begins with a set of data values about your installation and server technology. These values and their descriptions are described in the following list:
+
+Textpattern version
+: The version you currently have installed.
+
+Last update
+: The date/time you last updated your installation.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
     <table>
@@ -41,14 +47,6 @@ Low diagnostics info begins with a set of data values about your installation an
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">Textpattern version</th>
-                <td>The version you currently have installed.</td>
-            </tr>
-            <tr>
-                <th scope="row">Last update</th>
-                <td>The date/time you last updated your installation.</td>
-            </tr>
             <tr>
                 <th scope="row">Document root</th>
                 <td>The path to the web server's public (document root) directory, specifically.</td>
