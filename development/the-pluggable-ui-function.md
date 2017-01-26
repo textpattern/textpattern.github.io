@@ -64,31 +64,22 @@ Callbacks written with `pluggable_ui` have a different signature than those writ
     </table>
 </div>
 
-**Argument \#1** is the event passed to your function, usually ends in
-`_ui` (for “user interface”) and begins with the event to which it
-refers. For example, on the **Write** panel the event is `article_ui`,
-and on the **Files** panel the event is file_ui. Straightforward.
+Argument #1
+: `_ui` (for 'user interface') and begins with the event to which it refers. For example, on the Write administration panel the event is `article_ui`, and on the Files administration panel the event is `file_ui`. Straightforward.
 
-**Argument \#2**, the \$step, is usually the part of the panel that
-contains the widget or any of its controls you wish to change. For
-example, on the Write panel, the Article image control has a \$step
-called article_image and the Custom fields widget has one called
-custom_fields, and so on.
+Argument #2**
+: The `$step`, is usually the part of the panel that contains the widget or any of its controls you wish to change. For example, on the Write administration panel, the Article image control has a `$step` called `article_image` and the Custom fields widget has one called `custom_fields`, and so on.
 
-Arguments 3, 4, and 5 are optional depending on what you're trying to
-do...
+Arguments 3, 4, and 5 are optional depending on what you're trying to do...
 
-**Argument \#3**, if applicable, is the default data (text, markup,
-both...); it will be used if you don’t modify it. Parsing argument \#3
-allows you to alter what was originally going to be displayed, and then
-return it. Or you may discard this markup and return your own instead.
+Argument #3
+: If applicable, is the default data (text, markup, both...); it will be used if you don’t modify it. Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
 
-**Argument \#4**, if applicable, is the *record set* returned from the
-database table that pertains to the named *event*.
+Argument #4
+: If applicable, is the *record set* returned from the database table that pertains to the named *event*.
 
-**Argument \#5**, if applicable, is a special case (e.g. when dealing
-with preference settings) where argument \#4 becomes the preference name
-and argument \#5 holds its value.
+Argument #5
+: If applicable, is a special case (e.g. when dealing with preference settings) where argument #4 becomes the preference name and argument #5 holds its value.
 
 ## Examples
 
