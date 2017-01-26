@@ -50,7 +50,12 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `files`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it’s for:** Empty by default. It’s where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files administration panel](http://docs.textpattern.io/administration/files-panel). You may see a warning about the file's `chmod` status (editing rights) in the [Diagnostics administration panel](http://docs.textpattern.io/administration/diagnostics-panel).;
+: **What it’s for:** Empty by default. It’s where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files administration panel](http://docs.textpattern.io/administration/files-panel). You may see a warning about the file's `chmod` status (editing rights) in the [Diagnostics administration panel](http://docs.textpattern.io/administration/diagnostics-panel).
+
+`images`
+: **Type:** directory.
+: **Removable?:** no.
+: **What it’s for:** Empty by default. It's where images will go when you upload them in the [Images administration panel](http://docs.textpattern.io/administration/images-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
     <table>
@@ -63,18 +68,6 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">files</th>
-                <td>directory</td>
-                <td>no</td>
-                <td>Empty by default. It’s where content files (<code>.pdf</code>, <code>.docx</code>, <code>.rtf</code>, <code>.epub</code>, <code>.txt</code>, etc.) will go when/if you upload them in the <strong>Files</strong> panel. You may see a warning about the file's <code>chmod</code> status (editing rights) in the <strong>Diagnostics</strong> panel.</td>
-            </tr>
-            <tr>
-                <th scope="row">images</th>
-                <td>directory</td>
-                <td>no</td>
-                <td>Empty by default. It's where images will go when you upload them in the <strong>Images</strong> panel.</td>
-            </tr>
             <tr>
                 <th scope="row">rpc</th>
                 <td>directory</td>
