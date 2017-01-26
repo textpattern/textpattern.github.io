@@ -67,7 +67,7 @@ Callbacks written with `pluggable_ui` have a different signature than those writ
 Argument #1
 : `_ui` (for 'user interface') and begins with the event to which it refers. For example, on the Write administration panel the event is `article_ui`, and on the Files administration panel the event is `file_ui`. Straightforward.
 
-Argument #2**
+Argument #2
 : The `$step`, is usually the part of the panel that contains the widget or any of its controls you wish to change. For example, on the Write administration panel, the Article image control has a `$step` called `article_image` and the Custom fields widget has one called `custom_fields`, and so on.
 
 Arguments 3, 4, and 5 are optional depending on what you're trying to do...
@@ -88,34 +88,34 @@ The plugin creates a new **ABC Hello** panel under the **Extensions**
 region, which is accessible to administrators and *publishers* (i.e.
 privs 1,2 users):
 
-    php
-    add_privs('abc_hello', '1,2');
-    register_tab('extensions', 'abc_hello', 'ABC Hello'); //parent, event, title
-    register_callback('abc_hello_world', 'abc_hello'); //callback, event
+~~~ php
+add_privs('abc_hello', '1,2');
+register_tab('extensions', 'abc_hello', 'ABC Hello'); //parent, event, title
+register_callback('abc_hello_world', 'abc_hello'); //callback, event
 
-    function abc_hello_world($event, $step) {
-        pagetop('ABC Hello', '<strong>ABC Hello</strong> preferences');
-        echo '<p>Hello, World!</p>';
+function abc_hello_world($event, $step) {
+    pagetop('ABC Hello', '<strong>ABC Hello</strong> preferences');
+    echo '<p>Hello, World!</p>';
+~~~
 
 So far `pluggable_ui()` is not used at all in the plugin. We've used
 `register_callback()` to add the plugin's Preferences administration panel under
 **Extensions**, like we could use it to do most everything else to
 admin-side panels too.
 
-But in the rare case we might want to allow other plugins to alter the
-output of abc_hello, we could replace `echo '<p>Hello, World!</p>';`
-part with:
+But in the rare case we might want to allow other plugins to alter the output of abc_hello, we could replace `echo '<p>Hello, World!</p>';` part with:
 
-    php
-    echo pluggable_ui('abc_hello', '', '<p>Hello, World!</p>');
+~~~ php
+echo pluggable_ui('abc_hello', '', '<p>Hello, World!</p>');
+~~~
 
 Now other plugins can step in with something like this:
 
-    php
-    register_callback('xyz_hello_world', 'abc_hello', '');
+~~~ php
+register_callback('xyz_hello_world', 'abc_hello', '');
+~~~
 
-And that is pretty much all `pluggable_ui()` brings to the table
-anymore.
+And that is pretty much all `pluggable_ui()` brings to the table anymore.
 
 ## Events and steps reference
 
