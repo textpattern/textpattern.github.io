@@ -32,16 +32,24 @@ These regular public-side callbacks have various associated *events*, but no *st
 
 TODO: intro para about what this callback is concerned with
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-  `$event`            When it occurs                                                                                       What it allows/does
-  ------------------- ---------------------------------------------------------------------------------------------------- ----------------------------------------------------------------
-  `pretext`           At the very top of the `pretext()` function, just after the prefs have been extracted.               -
-  `pretext_end`       Just after `pretext()` has run but before its variables have been extracted into the global scope.   Overrides anything set in `pretext()` or adds variables to it.
-  `file_download`     As soon as a `file_download` is detected.                                                            Intercepts the regular file downloading process.
-  `textpattern`       Just before the page is rendered.                                                                    -
-  `textpattern_end`   Once the page has been fully rendered.                                                               -
+**`$event` list:**
 
-</div>
+`pretext`
+: **When it occurs:** At the very top of the `pretext()` function, just after the prefs have been extracted.
+
+`pretext_end`
+: **When it occurs:** Just after `pretext()` has run but before its variables have been extracted into the global scope.
+: **What it allows/does:** Overrides anything set in `pretext()` or adds variables to it.
+
+`file_download`
+: **When it occurs:** As soon as a `file_download` is detected.
+: **What it allows/does:** Intercepts the regular file downloading process.
+
+`textpattern`
+: **When it occurs:** Just before the page is rendered.
+
+`textpattern_end`
+: **When it occurs:** Once the page has been fully rendered.
 
 #### publish/atom.php
 
