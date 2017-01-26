@@ -374,44 +374,25 @@ If so, compare the indicated functions with those in the table below to see if a
 
 ### Functions used by Textpattern
 
-The following functions are used by Textpattern. If your diagnostics reports any of these as *disabled*, you need to get in touch with your web server administrator or web host and explain why you need them turned on (for your Textpattern site to work). Point them to this page, if you want. If they won't help you, find a more suitable web host, because there is no real reason to disable these functions.
+The following functions are used by Textpattern. If your diagnostics reports any of these as *disabled*, you need to get in touch with your web server administrator or web host and explain why you need them turned on (for your Textpattern site to work). Point them to this page, if you want. If they won't help you, find a more suitable web host, because there is no real reason to disable these functions:
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-    <table>
-        <thead>
-            <tr>
-                <th class="t25" scope="col">Name</th>
-                <th scope="col">Usage</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row"><code>apache_get_modules</code></th>
-                <td>Helps determine whether clean URLs could be used at setup, and for diagnostics info.</td>
-            </tr>
-            <tr>
-                <th scope="row"><code>apache_get_version</code></th>
-                <td>Helps provide diagnostics info regarding clean URLs.</td>
-            </tr>
-            <tr>
-                <th scope="row"><code>parse_ini_file</code></th>
-                <td>Language features, even if English is used.</td>
-            </tr>
-            <tr>
-                <th scope="row"><code>php_sapi_name</code></th>
-                <td>Determines whether PHP is running as an Apache module or CGI. Used for sending header information appropriate to the platform.</td>
-            </tr>
-            <tr>
-                <th scope="row"><code>php_uname</code></th>
-                <td>Provides diagnostics info regarding the server’s operating system.</td>
-            </tr>
-            <tr>
-                <th scope="row"><code>set_time_limit</code></th>
-                <td>Makes sure PHP does not timeout before installation, updates (including language string changes), and file downloads can be completed.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+`apache_get_modules`
+: Helps determine whether clean URLs could be used at setup, and for diagnostics info.
+
+`apache_get_version`
+: Helps provide diagnostics info regarding clean URLs.
+
+`parse_ini_file`
+: Language features, even if English is used.
+
+`php_sapi_name`
+: Determines whether PHP is running as an Apache module or CGI. Used for sending header information appropriate to the platform.
+
+`php_uname`
+: Provides diagnostics info regarding the server’s operating system.
+
+`set_time_limit`
+: Makes sure PHP does not timeout before installation, updates (including language string changes), and file downloads can be completed.
 
 ### Functions not used by Textpattern
 
