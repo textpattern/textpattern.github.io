@@ -12,22 +12,21 @@ In addition to the administrator (the most powerful type of Textpattern account)
 
 On this page:
 
--   [Account types versus publishing roles](#sec1)
--   [Panels access per publishing role](#sec2)
-    -   [Core panels access](#sec2-1)
-    -   [Extended panels access](#sec2-2)
--   [Limited access specifications](#sec3)
-    -   [Publisher](#sec3-1)
-    -   [Managing Editor](#sec3-2)
-    -   [Copy Editor](#sec3-3)
-    -   [Staff Writer](#sec3-4)
-    -   [Freelancer](#sec3-5)
-    -   [Designer](#sec3-6)
--   [Modifying user roles and privileges](#sec4)
--   [Multi-contributor security](#sec5)
+* [Account types versus publishing roles](#account-types-versus-publishing-roles)
+* [Panels access per publishing role](#panels-access-per-publishing-role)
+  * [Core panels access](#core-panels-access)
+  * [Extended panels access](#sec2-2)
+* [Limited access specifications](#sec3)
+  * [Publisher](#sec3-1)
+  * [Managing Editor](#sec3-2)
+  * [Copy Editor](#sec3-3)
+  * [Staff Writer](#sec3-4)
+  * [Freelancer](#sec3-5)
+  * [Designer](#sec3-6)
+* [Modifying user roles and privileges](#sec4)
+* [Multi-contributor security](#sec5)
 
-Account types versus publishing roles {#sec1}
--------------------------------------
+## Account types versus publishing roles
 
 It's helpful to classify user accounts in three ways.
 
@@ -58,14 +57,13 @@ editorial team. Content from such accounts will remain safely on the
 public side of the website under the account names, but those users no
 longer have administration access to change or delete the content.
 
-Panels access per publishing role {#sec2}
----------------------------------
+## Panels access per publishing role
 
 The tables in the following sections show all account types versus
 access to the administration panels and functionality, with emphasis on
 the six publishing roles (from Publisher to Designer).[^2]
 
-### Core panels access {#sec2-1}
+### Core panels access
 
 Table 1 focuses specifically on the core (out-of-the-box) administration
 regions (**Content**, **Presentation**, and **Admin**) and their
@@ -92,24 +90,61 @@ respective panels.
 
 **Table 1. Core panels access per role.**
 
-notextile.
+<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Panel</th>
+                <th scope="col">Publisher</th>
+                <th scope="col">Managing editor</th>
+                <th scope="col">Copy editor</th>
+                <th scope="col">Staff writer</th>
+                <th scope="col">Freelancer</th>
+                <th scope="col">Designer</th>
+                <th scope="col">None</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="8" scope="col">Content section</th>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/articles-panel">Articles</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/write-panel">Write</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-<div itemscope itemtype="http://schema.org/Table">
-                                                                                Publisher                           Managing Editor                        Copy Editor                                       Staff Writer                           Freelancer                                            Designer                                          None
-  ----------------------------------------------------------------------------- ----------------------------------- -------------------------------------- ------------------------------------------------- -------------------------------------- ----------------------------------------------------- ------------------------------------------------- ------------------------------------
-  **Content**
-  "Articles":http://docs.textpattern.io/administration/articles-panel           <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="success">Full</span>      <span class="information">Limited in 4.6</span>[^3]   <span class="success">Full</span>                 <span class="error">Blocked</span>
+
   "Categories":http://docs.textpattern.io/administration/categories-panel       <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
   "Comments":http://docs.textpattern.io/administration/comments-panel           <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
   "Files"::http://docs.textpattern.io/administration/files-panel                <span class="success">Full</span>   <span class="success">Full</span>      <span class="warning">Limited</span>              <span class="warning">Limited</span>   <span class="error">Blocked</span>                    <span class="information">Blocked in 4.6</span>   <span class="error">Blocked</span>
   "Images":http://docs.textpattern.io/administration/images-panel               <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="warning">Limited</span>   <span class="error">Blocked</span>                    <span class="success">Full</span>                 <span class="error">Blocked</span>
   "Links":http://docs.textpattern.io/administration/links-panel                 <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="success">Full</span>      <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
-  "Write":http://docs.textpattern.io/administration/write-panel                 <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="success">Full</span>      <span class="warning">Limited</span>                  <span class="warning">Limited</span>              <span class="error">Blocked</span>
+
   **Presentation**
   "Forms":http://docs.textpattern.io/administration/forms-panel                 <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="success">Full</span>                 <span class="error">Blocked</span>
   "Pages":http://docs.textpattern.io/administration/pages-panel                 <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="success">Full</span>                 <span class="error">Blocked</span>
   "Sections":http://docs.textpattern.io/administration/sections-panel           <span class="success">Full</span>   <span class="success">Full</span>      <span class="information">Blocked in 4.6</span>   <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="success">Full</span>                 <span class="error">Blocked</span>
   "Styles":http://docs.textpattern.io/administration/styles-panel               <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="success">Full</span>                 <span class="error">Blocked</span>
+
   **Admin**
   "Diagnostics":http://docs.textpattern.io/administration/diagnostics-panel     <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
   "Import":http://docs.textpattern.io/administration/import-panel               <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
@@ -119,9 +154,9 @@ notextile.
   "Users":http://docs.textpattern.io/administration/users-panel                 <span class="success">Full</span>   <span class="warning">Limited</span>   <span class="warning">Limited</span>              <span class="warning">Limited</span>   <span class="warning">Limited</span>                  <span class="warning">Limited</span>              <span class="error">Blocked</span>
   "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel   <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
 
-notextile.
 
 </div>
+
 ### Extended panels access {#sec2-2}
 
 Table 2 represents the two *extended* regions -- **Home** and
@@ -306,9 +341,6 @@ assignment.
     status is not lost and can easily switch back to a Publisher's
     perspective (can see all functionality) at any time, even between
     logged-out sessions.
-
-[^3]: In 4.6, Freelancers will only be able to see their own articles,
-    and those of other accounts that have "Live" status.
 
 [^4]: While these rights of access per role are indicated at the region
     level here, it is possible that a given plugin introduces finer
