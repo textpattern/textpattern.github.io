@@ -165,17 +165,56 @@ respective panels.
                 <td><span class="error">Blocked</span></td>
                 <td><span class="error">Blocked</span></td>
             </tr>
+            <tr>
+                <th colspan="8" scope="col">Presentation section</th>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/sections-panel">Sections</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/pages-panel">Pages</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/forms-panel">Forms</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/styles-panel">Styles</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th colspan="8" scope="col">Admin section</th>
+            </tr>
         </tbody>
     </table>
 </div>
 
-  **Presentation**
-  "Forms":http://docs.textpattern.io/administration/forms-panel                 <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="success">Full</span>                 <span class="error">Blocked</span>
-  "Pages":http://docs.textpattern.io/administration/pages-panel                 <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="success">Full</span>                 <span class="error">Blocked</span>
-  "Sections":http://docs.textpattern.io/administration/sections-panel           <span class="success">Full</span>   <span class="success">Full</span>      <span class="information">Blocked in 4.6</span>   <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="success">Full</span>                 <span class="error">Blocked</span>
-  "Styles":http://docs.textpattern.io/administration/styles-panel               <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="success">Full</span>                 <span class="error">Blocked</span>
-
-  **Admin**
   "Diagnostics":http://docs.textpattern.io/administration/diagnostics-panel     <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
   "Import":http://docs.textpattern.io/administration/import-panel               <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
   "Languages":http://docs.textpattern.io/administration/languages-panel         <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
@@ -183,9 +222,6 @@ respective panels.
   "Preferences":http://docs.textpattern.io/administration/preferences-panel     <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
   "Users":http://docs.textpattern.io/administration/users-panel                 <span class="success">Full</span>   <span class="warning">Limited</span>   <span class="warning">Limited</span>              <span class="warning">Limited</span>   <span class="warning">Limited</span>                  <span class="warning">Limited</span>              <span class="error">Blocked</span>
   "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel   <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
-
-
-</div>
 
 ### Extended panels access {#sec2-2}
 
