@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Administration
+category: Development
 published: true
 title: The pluggable_ui function
 description: The pluggable_ui function's main purpose was to provide additional event/step hooks to modify the administration side.
@@ -8,24 +8,18 @@ description: The pluggable_ui function's main purpose was to provide additional 
 
 # The pluggable_ui function TODO
 
-The `pluggable_ui` function was first introduced in Textpattern core prior to March 2009. It's main purpose was to provide additional event/step hooks to modify the administration side when admin-side web templates were harder to work with.[^1] However, admin-side templates have come a long way and are vastly improved, not to mention other core features have emerged too (or will soon) that make new plugin designs possible. Thus `pluggable_ui` has less to offer the average plugin developer. Some say it's only value anymore is to allow other plugins to modify your plugin's content. See example below.
+The main purpose of the `pluggable_ui` function is to provide additional event/step hooks to modify or extend the administration side user interface. Whereas callbacks are more general hooks that allow you to intercept the entire form submission process or to rewrite an entire page using search/replace, `pluggable_ui()` is far more granular. Each callback point allows the developer or theme designer to tweak a single or block-based visual element of the user interface.
 
 On this page:
 
--   [Caution](#sec1)
--   [Function definition](#sec2)
--   [Examples](#sec3)
--   [Events and steps reference](#sec4)
+-   [Caution](#caution)
+-   [Function definition](#function-definition)
+-   [Examples](#examples)
+-   [Events and steps reference](#events-and-steps-reference)
 
 ## Caution
 
-Though it’s possible to completely redesign the HTML markup within an
-admin-side panel, you are advised not to it with a plugin. Removing and
-changing admin-side panel elements can make the plugins of other
-developers who target those DOM elements non-functional. If you must
-rename selectors (IDs, classes), consider leaving the existing items
-intact and adding your own, then setting the original's to
-`display:none` via CSS.
+Though it’s possible to completely redesign the HTML markup within an admin-side panel, you are advised not to do it with a plugin. Removing and changing admin-side panel elements can make the plugins of other developers who target those DOM elements non-functional. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the original's to `display:none` via CSS.
 
 ## Function definition
 
@@ -33,8 +27,6 @@ Callbacks written with `pluggable_ui` have a different signature than
 those written with other functions ([compare with
 `register_callback()`](#)). They usually have 4 arguments (and sometimes
 5).
-
-notextile.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Argument   Parameters   What it is/does
@@ -112,10 +104,4 @@ anymore.
 
 ## Events and steps reference
 
--   [Core callbacks
-    reference](http://docs.textpattern.io/development/core-callbacks-reference)
-    -   [Admin-side user-interface
-        callbacks](http://docs.textpattern.io/development/core-callbacks-reference#sec2-4)
-        (for more callback options)
-
-[^1]: In 2009, web page templates of the administration side still had table-based layouts, poor separation of presentation and content, and selectors were somewhat limited or applied in non-ideal places, among other things.
+TODO
