@@ -32,7 +32,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `escape="html"`
 : Escape HTML entities such as `<`, `>` and `&`.
 : **Values:** `html` or unset.
-: **Default:** `html`;
+: **Default:** `html`.
 
 `id="integer"`
 : An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](http://docs.textpattern.io/administration/images-panel).

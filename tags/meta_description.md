@@ -46,7 +46,7 @@ Note: The corresponding description field has a 255 character limit by default, 
 `escape="html"`
 : Escape HTML entities such as `<`, `>` and `&`.
 : **Values:** `html` or unset.
-: **Default:** `html`;
+: **Default:** `html`.
 
 `format="value"`
 : Display as `<meta>` tag or as raw value.

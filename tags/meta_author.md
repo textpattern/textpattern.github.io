@@ -37,7 +37,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `escape="html"`
 : Escape HTML entities such as `<`, `>` and `&`.
 : **Values:** `html` or unset.
-: **Default:** `html`;
+: **Default:** `html`.
 
 `format="boolean"`
 : Display as `<meta>` tag or as raw value.

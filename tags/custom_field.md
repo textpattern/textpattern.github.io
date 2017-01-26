@@ -41,7 +41,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `escape="html"`
 : Escape HTML entities such as `<`, `>` and `&` prior to echoing the field contents.
 : **Values:** `html` or unset.
-: **Default:** `html`;
+: **Default:** `html`.
 
 `name="fieldname"`
 : Display specified custom field.

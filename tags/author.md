@@ -32,7 +32,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `escape="html"`
 : Escape HTML entities such as `<`, `>` and `&`.
 : **Values:** `html` or unset.
-: **Default:** `html`;
+: **Default:** `html`.
 
 `format="boolean"`
 : Display plain URL or full link.

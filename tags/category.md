@@ -108,7 +108,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 ### Version 4.0.7
 
-Applies `class`; attribute to the `<a>` tag when the `wraptag` attribute is empty. \\
+Applies `class` attribute to the `<a>` tag when the `wraptag` attribute is empty. \\
 `url` attribute added.
 
 ### Version 4.0.4
