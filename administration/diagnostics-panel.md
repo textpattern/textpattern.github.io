@@ -38,102 +38,68 @@ Textpattern version
 Last update
 : The date/time you last updated your installation.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-    <table>
-        <thead>
-            <tr>
-                <th class="t25" scope="col">Data item</th>
-                <th scope="col">What it tells you</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Document root</th>
-                <td>The path to the web server's public (document root) directory, specifically.</td>
-            </tr>
-            <tr>
-                <th scope="row">$path_to_site</th>
-                <td>The path to wherever your installation is (e.g., in document root or in a sub-directory thereof).</td>
-            </tr>
-            <tr>
-                <th scope="row">Textpattern path</th>
-                <td>The path to your installation's <code>/textpattern</code> directory.</td>
-            </tr>
-            <tr>
-                <th scope="row">Article URL pattern</th>
-                <td>The pattern of URL type you set. Corresponds with the 'Article URL pattern' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#article-url-pattern">Preferences administration panel</a>.</td>
-            </tr>
-            <tr>
-                <th scope="row">Temporary directory path</th>
-                <td>The path of your */tmp* directory relative to document root.</td>
-            </tr>
-            <tr>
-                <th scope="row">Site URL</th>
-                <td>Your domain name and top-level domain (i.e. <code>domain.tld</code>). Corresponds with 'Site URL' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#site-url">Preferences administration panel</a>.</td>
-            </tr>
-            <tr>
-                <th scope="row">PHP version</th>
-                <td>The version number of your PHP install.</td>
-            </tr>
-            <tr>
-                <th scope="row">GD Graphics Library</th>
-                <td>The version number of your GD Graphics Library install.</td>
-            </tr>
-            <tr>
-                <th scope="row">Server TZ</th>
-                <td>The server's 'default timezone'; determined by a <a rel="external" href="https://secure.php.net/manual/en/function.date-default-timezone-get.php">specific order of preferences</a>.</td>
-            </tr>
-            <tr>
-                <th scope="row">Server local time</th>
-                <td>The local date/time of your web server (yyyy-mm-dd hh:mm:ss).</td>
-            </tr>
-            <tr>
-                <th scope="row">Automatically adjust Daylight Saving Time setting?</th>
-                <td>Whether Textpattern will adjust DST automatically ("0"=no, "1"=yes). Corresponds with the 'Automatically adjust Daylight Saving Time setting?' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#automatically-adjust-daylight-saving-time-setting">Preferences administration panel</a>.</td>
-            </tr>
-            <tr>
-                <th scope="row">Daylight Savings Time enabled?</th>
-                <td>Whether Daylight Savings Time is enabled ("0"=no, "1"=yes). Corresponds with the 'Daylight Savings Time enabled?' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel#daylight-savings-time-enabled">Preferences administration panel</a>.</td>
-            </tr>
-            <tr>
-                <th scope="row">Time zone</th>
-                <td>Your time zone relative to Greenwich Mean Time (GMT). Corresponds with the 'Time zone' setting in the 'Site' section of the <a href="http://docs.textpattern.io/administration/preferences-panel">Preferences administration panel</a>. The output includes an offset value in parentheses, which helps developers determine if time-specific problems might stem from a wrong or outdated <a rel="external" href="https://en.wikipedia.org/wiki/Tz_database">tz database</a>.</td>
-            </tr>
-            <tr>
-                <th scope="row">MySQL</th>
-                <td>The version number and build of your MySQL database server.</td>
-            </tr>
-            <tr>
-                <th scope="row">Locale</th>
-                <td>The language and character set you have configured.</td>
-            </tr>
-            <tr>
-                <th scope="row">Server</th>
-                <td>Your web server type (e.g. Apache).</td>
-            </tr>
-            <tr>
-                <th scope="row">PHP server API</th>
-                <td>todo:explanation</td>
-            </tr>
-            <tr>
-                <th scope="row">RFC 2616 headers</th>
-                <td>todo:explanation</td>
-            </tr>
-            <tr>
-                <th scope="row">Server OS</th>
-                <td>The name and version number of the server's operating system.</td>
-            </tr>
-            <tr>
-                <th scope="row">Active plugins</th>
-                <td>A comma-separated list of all plugins (with version numbers) that are installed <em>and</em> turned <strong>on</strong>.</td>
-            </tr>
-            <tr>
-                <th scope="row">Admin-side theme</th>
-                <td>The name and version number of the active administration side theme. The default is 'Hive'.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+Document root
+: The path to the web server's public (document root) directory, specifically.
+
+$path_to_site
+: The path to wherever your installation is (e.g., in document root or in a sub-directory thereof).
+
+Textpattern path
+: The path to your installation's `/textpattern` directory.
+
+Article URL pattern
+: The pattern of URL type you set. Corresponds with the 'Article URL pattern' setting in the 'Site' section of the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#article-url-pattern).
+
+Temporary directory path
+: The path of your `/tmp` directory relative to document root.
+
+Site URL
+: Your domain name and top-level domain (i.e. `domain.tld`). Corresponds with 'Site URL' setting in the 'Site' section of the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#site-url).
+
+PHP version
+: The version number of your PHP install.</td>
+
+GD Graphics Library
+: The version number of your GD Graphics Library install.
+
+Server TZ
+: The server's 'default timezone'; determined by a [specific order of preferences](https://secure.php.net/manual/en/function.date-default-timezone-get.php).
+
+Server local time
+: The local date/time of your web server (`yyyy-mm-dd hh:mm:ss`).
+
+Automatically adjust Daylight Saving Time setting?
+: Whether Textpattern will adjust DST automatically (`0`=no, `1`=yes). Corresponds with the 'Automatically adjust Daylight Saving Time setting?' setting in the 'Site' section of the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#automatically-adjust-daylight-saving-time-setting).
+
+Daylight Savings Time enabled?
+: Whether Daylight Savings Time is enabled (`0`=no, `1`=yes). Corresponds with the 'Daylight Savings Time enabled?' setting in the 'Site' section of the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#daylight-savings-time-enabled).
+
+Time zone
+: Your time zone relative to Greenwich Mean Time (GMT). Corresponds with the 'Time zone' setting in the 'Site' section of the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#time-zone). The output includes an offset value in parentheses, which helps developers determine if time-specific problems might stem from a wrong or outdated [tz database](https://en.wikipedia.org/wiki/Tz_database).
+
+MySQL
+: The version number and build of your MySQL database server.
+
+Locale
+: The language and character set you have configured.
+
+Server
+: Your web server type (e.g. Apache, NGINX).
+
+PHP server API
+: todo:explanation
+
+RFC 2616 headers
+: todo:explanation
+
+Server OS
+: The name and version number of the server's operating system.
+
+Active plugins
+: A comma-separated list of all plugins (with version numbers) that are installed *and<* turned on.
+
+Admin-side theme
+: The name and version number of the active administration side theme. The default is 'Hive'.
 
 The installation and server data is followed by the contents of your `.htaccess` file (from the installation directory). For purposes here we show the [file contents from the current version code](https://github.com/textpattern/textpattern/blob/master/.htaccess) below:
 
