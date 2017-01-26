@@ -12,10 +12,10 @@ The main purpose of the `pluggable_ui` function is to provide additional event/s
 
 On this page:
 
--   [Caution](#caution)
--   [Function definition](#function-definition)
--   [Examples](#examples)
--   [Events and steps reference](#events-and-steps-reference)
+* [Caution](#caution)
+* [Function definition](#function-definition)
+* [Examples](#examples)
+* [Events and steps reference](#events-and-steps-reference)
 
 ## Caution
 
@@ -23,23 +23,49 @@ Though it’s possible to completely redesign the HTML markup within an admin-si
 
 ## Function definition
 
-Callbacks written with `pluggable_ui` have a different signature than
-those written with other functions ([compare with
-`register_callback()`](#)). They usually have 4 arguments (and sometimes
-5).
+Callbacks written with `pluggable_ui` have a different signature than those written with other functions @@compare with `register_callback()`@@. They usually have 4 arguments (and sometimes 5).
+
+{::options parse_block_html="true" /}
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-  Argument   Parameters   What it is/does
-  ---------- ------------ ----------------------------------------------------------------------------------
-  1          `$event`     Name of the core *event* for the panel you're targeting.
-  2          `$step`      Name of the core *step* for the specific DOM element targeted.
-  3          `$data`      The default data (content and/or markup); it's used if not modified.
-  4          `$rs`        The returned 'record set' from the database.
-  5          (value)      The value of a named element (e.g. preference setting), indicated by argument 4.
-
-notextile.
-
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Argument</th>
+                <th scope="col">Parameters</th>
+                <th scope="col">What it is/does</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>`$event`</td>
+                <td>Name of the core *event* for the panel you're targeting.</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>`$step`</td>
+                <td>Name of the core *step* for the specific DOM element targeted.</td>
+            <tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>`$data`</td>
+                <td>The default data (content and/or markup); it's used if not modified.</td>
+            <tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>`$rs`</td>
+                <td>The returned 'record set' from the database.</td>
+            <tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>(value)</td>
+                <td>The value of a named element (e.g. preference setting), indicated by argument 4.</td>
+            <tr>
+        </tbody>
+    </table>
 </div>
+
 **Argument \#1** is the event passed to your function, usually ends in
 `_ui` (for “user interface”) and begins with the event to which it
 refers. For example, on the **Write** panel the event is `article_ui`,
