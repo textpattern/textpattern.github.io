@@ -47,6 +47,11 @@ Now we begin the Textpattern part of the deal:
 
 The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see, pay particular attention the to `.htaccess` file.[^2]
 
+`files`
+: **Type:** directory.
+: **Removable?:** no.
+: **What it’s for:** Empty by default. It’s where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files administration panel](http://docs.textpattern.io/administration/files-panel). You may see a warning about the file's `chmod` status (editing rights) in the [Diagnostics administration panel](http://docs.textpattern.io/administration/diagnostics-panel).;
+
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
     <table>
         <thead>
