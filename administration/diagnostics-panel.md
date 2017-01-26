@@ -139,77 +139,49 @@ Over time your `.htaccess` file will change as you add your own `mod_rewrite` ru
 
 ### High info display
 
-High diagnostics info display includes the Low info above, but adds the
-following information.
+High diagnostics info display includes the Low info above, but adds the following information:
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-    <table>
-        <thead>
-            <tr>
-                <th class="t25" scope="col">Data item</th>
-                <th scope="col">What it tells you</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Charset (default/config)</th>
-                <td>If you don't see a lot of 'UTF-8' values on these 'character_set' items, you might want ask yourself why not.</td>
-            </tr>
-            <tr>
-                <th scope="row">character_set_client</th>
-                <td>todo:explanation</td>
-            </tr>
-            <tr>
-                <th scope="row">character_set_connection</th>
-                <td>todo:explanation</td>
-            </tr>
-            <tr>
-                <th scope="row">character_set_database</th>
-                <td>todo:explanation</td>
-            </tr>
-            <tr>
-                <th scope="row">character_set_filesystem</th>
-                <td>todo:explanation</td>
-            </tr>
-            <tr>
-                <th scope="row">character_set_results</th>
-                <td>todo:explanation</td>
-            </tr>
-            <tr>
-                <th scope="row">character_set_server</th>
-                <td>todo:explanation</td>
-            </tr>
-            <tr>
-                <th scope="row">character_set_system</th>
-                <td>todo:explanation</td>
-            </tr>
-            <tr>
-                <th scope="row">character_sets_dir</th>
-                <td>todo:explanation</td>
-            </tr>
-            <tr>
-                <th scope="row">{n} Tables</th>
-                <td>{n} being the number of Textpattern tables that exist in your installation (a default install has 17, anything more is from plugins or other extensions you've added); the value also indicates if tables are 'OK' or not.</td>
-            </tr>
-            <tr>
-                <th scope="row">{n} Custom fields</th>
-                <td>{n} being the number of custom fields; value also indicates name of all counted fields.</td>
-            </tr>
-            <tr>
-                <th scope="row">PHP extensions</th>
-                <td>List of extension names/versions your web host has enabled.</td>
-            </tr>
-            <tr>
-                <th scope="row">pretext_data</th>
-                <td>Value is a piece of code; useful for developers to evaluate.</td>
-            </tr>
-            <tr>
-                <th scope="row">{/textpattern files, not shown here}</th>
-                <td>List of Textpattern configuration files from the <code>/textpattern</code> directory; indicates file path, revision number, and MD5 Checksum hash number.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+Charset (default/config)
+: If you don't see a lot of 'UTF-8' values on these `character_set` items, you might want ask yourself why not.
+
+character_set_client
+: todo:explanation
+
+character_set_connection
+: todo:explanation
+
+character_set_database
+: todo:explanation
+
+character_set_filesystem
+: todo:explanation
+
+character_set_results
+: todo:explanation
+
+character_set_server
+: todo:explanation
+
+character_set_system
+: todo:explanation
+
+character_sets_dir
+: todo:explanation
+
+{n} Tables
+: {n} being the number of Textpattern tables that exist in your installation (a default install has 17, anything more is from plugins or other extensions you've added); the value also indicates if tables are 'OK' or not.
+
+{n} Custom fields
+: {n} being the number of custom fields; value also indicates name of all counted fields.
+
+PHP extensions
+: List of extension names/versions your web host has enabled.</td>
+
+pretext_data
+: Value is a piece of code; useful for developers to evaluate.</td>
+
+{/textpattern files, not shown here}
+: List of Textpattern configuration files from the `/textpattern` directory; indicates file path, revision number, and MD5 Checksum hash number.
 
 The last item above reflects a long list of Textpattern configuration files which makes up the end of the 'High' info data shown.
 
