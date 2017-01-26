@@ -50,81 +50,57 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `files`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it’s for:** Empty by default. It’s where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files administration panel](http://docs.textpattern.io/administration/files-panel). You may see a warning about the file's `chmod` status (editing rights) in the [Diagnostics administration panel](http://docs.textpattern.io/administration/diagnostics-panel).
+: **What it’s for:** Empty by default. It’s where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files administration panel](http://docs.textpattern.io/administration/files-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics administration panel](http://docs.textpattern.io/administration/diagnostics-panel).
 
 `images`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it’s for:** Empty by default. It's where images will go when you upload them in the [Images administration panel](http://docs.textpattern.io/administration/images-panel).
+: **What it’s for:** Empty by default. It's where images will go when you upload them in the [Images administration panel](http://docs.textpattern.io/administration/images-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics administration panel](http://docs.textpattern.io/administration/diagnostics-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-    <table>
-        <thead>
-            <tr>
-                <th scope="col">Item</th>
-                <th scope="col">Type</th>
-                <th scope="col">Removable?</th>
-                <th scope="col">What it’s for</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">rpc</th>
-                <td>directory</td>
-                <td>yes</td>
-                <td>Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the "Enable XML-RPC server?" preference is set to "No" in the <strong>Preferences</strong> panel.</td>
-            </tr>
-            <tr>
-                <th scope="row">sites</th>
-                <td>directory</td>
-                <td>yes</td>
-                <td>Supports multi-site installations managed by one administration side. It contains a template and instructions (a README.txt) for doing so. You can safely remove this directory if not wanted.</td>
-            </tr>
-            <tr>
-                <th scope="row">textpattern</th>
-                <td>directory</td>
-                <td>no</td>
-                <td>Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side.</td>
-            </tr>
-            <tr>
-                <th scope="row">.htaccess</th>
-                <td>file</td>
-                <td>no</td>
-                <td>Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of "www.", and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on.</td>
-            </tr>
-            <tr>
-                <th scope="row">index.php</th>
-                <td>file</td>
-                <td>no</td>
-                <td>Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing.</td>
-            </tr>
-            <tr>
-                <th scope="row">css.php</th>
-                <td>file</td>
-                <td>no</td>
-                <td>Negotiates the front-end stylesheets you create in the <strong>Styles</strong> panel.</td>
-            </tr>
-            <tr>
-                <th scope="row">README.txt</th>
-                <td>file</td>
-                <td>yes</td>
-                <td>The file providing brief instructions for installing and upgrading Textpattern.</td>
-            </tr>
-            <tr>
-                <th scope="row">HISTORY.txt</th>
-                <td>file</td>
-                <td>yes</td>
-                <td>The file showing the package release Changelog.</td>
-            </tr>
-            <tr>
-                <th scope="row">LICENSE.txt</th>
-                <td>file</td>
-                <td>no</td>
-                <td>The GNU GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+`rpc`
+: **Type:** directory.
+: **Removable?:** yes.
+: **What it’s for:** Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#enable-xml-rpc-server).
+
+`sites`
+: **Type:** directory.
+: **Removable?:** yes.
+: **What it’s for:** Supports multi-site installations managed by one administration side. It contains a template and instructions (a README.txt) for doing so. You can safely remove this directory if not wanted.
+
+`textpattern`
+: **Type:** directory.
+: **Removable?:** no.
+: **What it’s for:** Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side.
+
+`.htaccess`
+: **Type:** file.
+: **Removable?:** no.
+: **What it’s for:** Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on.
+
+`index.php`
+: **Type:** file.
+: **Removable?:** no.
+: **What it’s for:** Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing.
+
+`css.php`
+: **Type:** file.
+: **Removable?:** yes/no.
+: **What it’s for:** Negotiates the front-end stylesheets you create in the [Styles administration panel](http://docs.textpattern.io/administration/styles-panel). If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
+
+`README.txt`
+: **Type:** file.
+: **Removable?:** yes.
+: **What it’s for:** The file providing brief instructions for installing and upgrading Textpattern.
+
+`HISTORY.txt`
+: **Type:** file.
+: **Removable?:** yes.
+: **What it’s for:** The file showing the package release Changelog.
+
+`LICENSE.txt`
+: **Type:** file.
+: **Removable?:** no.
+: **What it’s for:** The GNU GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone.
 
 [^1]: Do not move files in the tree or change their names. Doing so will render Textpattern useless.
 
