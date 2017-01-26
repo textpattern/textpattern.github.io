@@ -83,25 +83,19 @@ Argument #5
 
 ## Examples
 
-In this example we have a basic admin-side plugin called "abc_hello".
-The plugin creates a new **ABC Hello** panel under the **Extensions**
-region, which is accessible to administrators and *publishers* (i.e.
-privs 1,2 users):
+In this example we have a basic admin-side plugin called "abc_hello". The plugin creates a new **ABC Hello** panel under the [Extensions administration region](http://docs.textpattern.io/administration/extensions-region), which is accessible to administrators and publishers (i.e. privs 1 and 2 users):
 
 ~~~ php
 add_privs('abc_hello', '1,2');
-register_tab('extensions', 'abc_hello', 'ABC Hello'); //parent, event, title
-register_callback('abc_hello_world', 'abc_hello'); //callback, event
+register_tab('extensions', 'abc_hello', 'ABC Hello'); // parent, event, title
+register_callback('abc_hello_world', 'abc_hello'); // callback, event
 
 function abc_hello_world($event, $step) {
     pagetop('ABC Hello', '<strong>ABC Hello</strong> preferences');
     echo '<p>Hello, World!</p>';
 ~~~
 
-So far `pluggable_ui()` is not used at all in the plugin. We've used
-`register_callback()` to add the plugin's Preferences administration panel under
-**Extensions**, like we could use it to do most everything else to
-admin-side panels too.
+So far `pluggable_ui()` is not used at all in the plugin. We've used `register_callback()` to add the plugin's preferences under [Extensions administration region](http://docs.textpattern.io/administration/extensions-region), like we could use it to do most everything else to admin-side panels too.
 
 But in the rare case we might want to allow other plugins to alter the output of abc_hello, we could replace `echo '<p>Hello, World!</p>';` part with:
 

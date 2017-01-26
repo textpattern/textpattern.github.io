@@ -163,11 +163,11 @@ There are also two extended regions (not out-of-the-box) - **Home** and **Extens
 
 ### Home (Start)
 
-The [**Home**](http://docs.textpattern.io/administration/home-region) region is associated with dashboard development for multi-user websites. If you're not building a multi-user website, you will not be concerned with this, and even then you may not need the plugins that make this region appear.   
+The [**Home**](http://docs.textpattern.io/administration/home-region) administration region is associated with dashboard development for multi-user websites. If you're not building a multi-user website, you will not be concerned with this, and even then you may not need the plugins that make this region appear.   
 
 ### Extensions
 
-The [**Extensions**](http://docs.textpattern.io/administration/extensions-region) region is likely one you will see in the administration side eventually because several useful plugins make use of it.
+The [**Extensions**](http://docs.textpattern.io/administration/extensions-region) administration region is likely one you will see in the administration side eventually because several useful plugins make use of it.
 
 ## Changing default login panel
 
