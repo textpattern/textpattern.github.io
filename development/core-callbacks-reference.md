@@ -32,8 +32,6 @@ These regular public-side callbacks have various associated *events*, but no *st
 
 TODO: intro para about what this callback is concerned with
 
-**`$event` list:**
-
 `pretext`
 : **When it occurs:** At the very top of the `pretext()` function, just after the prefs have been extracted.
 
@@ -55,25 +53,25 @@ TODO: intro para about what this callback is concerned with
 
 TODO: intro para about what this callback is concerned with
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-  `$event`       When it occurs                                      What it allows/does
-  -------------- --------------------------------------------------- -------------------------------------------------------------------------
-  `atom_head`    After the feed's header has been set.               Adds items to the feed's header.
-  `atom_entry`   As soon as the article's data has been populated.   Injects extra markup after the standard feed items have been generated.
+`atom_head`
+: **When it occurs:** After the feed's header has been set.
+: **What it allows/does:** Adds items to the feed's header.
 
-</div>
+`atom_entry`
+: **When it occurs:** As soon as the article's data has been populated.
+: **What it allows/does:** Injects extra markup after the standard feed items have been generated.
 
 #### publish/rss.php
 
 TODO: intro para about what this callback is concerned with
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-  `$event`      When it occurs                                      What it allows/does
-  ------------- --------------------------------------------------- -------------------------------------------------------------------------
-  `rss_head`    After the feed's header has been set.               Adds items to the feed's header.
-  `rss_entry`   As soon as the article's data has been populated.   Injects extra markup after the standard feed items have been generated.
+`rss_head`
+: **When it occurs:** After the feed's header has been set.
+: **What it allows/does:** Adds items to the feed's header.
 
-</div>
+`rss_entry`
+: **When it occurs:** As soon as the article's data has been populated.
+: **What it allows/does:** Injects extra markup after the standard feed items have been generated.
 
 #### publish/comment.php
 
