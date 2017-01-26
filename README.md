@@ -108,7 +108,7 @@ Use tables sparingly (they can be problematic to read on small screen devices), 
                 <th scope="row">etc</th>
                 <td>etc</td>
                 <td>etc</td>
-            <tr>
+            </tr>
         </tbody>
     </table>
 </div>
