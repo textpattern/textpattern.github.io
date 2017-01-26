@@ -25,8 +25,6 @@ Though it’s possible to completely redesign the HTML markup within an admin-si
 
 Callbacks written with `pluggable_ui` have a different signature than those written with other functions @@compare with `register_callback()`@@. They usually have 4 arguments (and sometimes 5).
 
-{::options parse_block_html="true" /}
-
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
     <table>
         <thead>
@@ -39,23 +37,23 @@ Callbacks written with `pluggable_ui` have a different signature than those writ
         <tbody>
             <tr>
                 <th scope="row">1</th>
-                <td>`$event`</td>
-                <td>Name of the core *event* for the panel you're targeting.</td>
+                <td><code>$event</code></td>
+                <td>Name of the core <em>event</em> for the panel you’re targeting.</td>
             </tr>
             <tr>
                 <th scope="row">2</th>
-                <td>`$step`</td>
-                <td>Name of the core *step* for the specific DOM element targeted.</td>
+                <td><code>$step</code></td>
+                <td>Name of the core <em>step</em> for the specific DOM element targeted.</td>
             <tr>
             <tr>
                 <th scope="row">3</th>
-                <td>`$data`</td>
-                <td>The default data (content and/or markup); it's used if not modified.</td>
+                <td><code>$data</code></td>
+                <td>The default data (content and/or markup); it’s used if not modified.</td>
             <tr>
             <tr>
                 <th scope="row">4</th>
-                <td>`$rs`</td>
-                <td>The returned 'record set' from the database.</td>
+                <td><code>$rs</code></td>
+                <td>The returned ‘record set’ from the database.</td>
             <tr>
             <tr>
                 <th scope="row">5</th>
