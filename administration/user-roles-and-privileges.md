@@ -6,7 +6,7 @@ title: User roles and privileges
 description: In addition to the administrator, several pre-defined user roles are provided for in Textpattern out-of-the-box.
 ---
 
-# User roles and privileges TODO
+# User roles and privileges
 
 In addition to the administrator (the most powerful type of Textpattern account), several pre-defined user roles are provided for in Textpattern out-of-the-box. Each role has an associated set of administration privileges that are meant to help with leveraging the different responsibilities in a collaborative publishing workflow. If you're building a Textpattern website for yourself (single user), you wouldn't be concerned with these roles. But if you're building a platform to support multi-user contributions, user roles and privileges are likely important factors in your publishing architecture design.
 
@@ -242,7 +242,7 @@ Table 1 focuses specifically on the core (out-of-the-box) administration regions
 
 ### Extended panels access
 
-Table 2 represents the two *extended* regions - **Home** and **Extensions** - that you may see when installing certain admin-side plugins. Unlike with core regions and panels, the panels of the extended regions are generally not treated individually, rather roles are treated at the region level, which is why individual panels are not show here.[^3] A given role will either have access to the regions (thus all their panels) or won't see them all. The respective panels one might see in these regions depend on which plugins are installed that make use of them. Most likely anyone with Publisher and Managing Editor roles will see the Extensions administration region eventually because so many useful admin-side plugins make use of it.
+Table 2 represents the two *extended* regions - **Home** and **Extensions** - that you may see when installing certain admin-side plugins. Unlike with core regions and panels, the panels of the extended regions are generally not treated individually, rather roles are treated at the region level, which is why individual panels are not show here.[^3] A given role will either have access to the regions (thus all their panels) or won't see them all. The respective panels one might see in these regions depend on which plugins are installed that make use of them. Most likely anyone with Publisher and Managing Editor roles will see the [Extensions administration region](http://docs.textpattern.io/administration/extensions-region) eventually because so many useful admin-side plugins make use of it.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
     <table>
@@ -316,104 +316,43 @@ Copy Editor privileges are pretty straight forward, either having full access to
 
 ### Staff Writer limitations
 
-The Staff Writer is one of two roles primarily concerned with writing
-articles (the other being Freelancer). They don't need access to much of
-the administration side except those panels concerned with content, with
-a few limitations:
+The Staff Writer is one of two roles primarily concerned with writing articles (the other being Freelancer). They don't need access to much of the administration side except those panels concerned with content, with a few limitations:
 
--   **Write** panel: They can create, edit, publish, and delete their
-    own articles. They can see the full articles of other user accounts,
-    but not edit them in any way.
--   **Images** panel: They can upload images and edit the ones
-    they upload. They can see the images uploaded by other user
-    accounts, but they cannot edit or delete those images.
--   **Files** panel: They can upload files and edit the ones
-    they upload. They can see the names of files uploaded by other user
-    accounts, but they cannot edit or delete those files.
--   **Users** panel: They can edit their own user account details, but
-    not see anyone else's account information.
+* On the [Write administration panel](http://docs.textpattern.io/administration/write-panel): They can create, edit, publish, and delete their own articles. They can see the full articles of other user accounts, but not edit them in any way.
+* On the [Images administration panel](http://docs.textpattern.io/administration/images-panel): They can upload images and edit the ones they upload. They can see the images uploaded by other user accounts, but they cannot edit or delete those images.
+* On the [Files administration panel](http://docs.textpattern.io/administration/files-panel):  They can upload files and edit the ones they upload. They can see the names of files uploaded by other user accounts, but they cannot edit or delete those files.
+* On the [Users administration panel](http://docs.textpattern.io/administration/users-panel): They can edit their own user account details, but not see anyone else's account information.
 
 ### Freelancer limitations
 
-Freelancers are external to the website's editorial team. You can think
-of them as "guest authors". Like Staff Writers, Freelancers write
-articles, but that's mostly it due to their external status. Limitations
-are:
+Freelancers are external to the website's editorial team. You can think of them as 'guest authors'. Like Staff Writers, Freelancers write articles, but that's mostly it due to their external status. Limitations are:
 
--   **Write** panel: They can create new "Draft" articles and switch
-    their status to "Pending", but not publish them "Live". They can see
-    the full articles of other user accounts, but not edit them in
-    any way.
--   **Users** panel: Same as Staff Writer.
+* On the [Write administration panel](http://docs.textpattern.io/administration/write-panel): They can create new 'Draft' articles and switch their status to 'Pending', but not publish them 'Live'. They can see the full articles of other user accounts, but not edit them in any way.
+* On the [Users administration panel](http://docs.textpattern.io/administration/users-panel): Same as Staff Writer.
 
 ### Designer limitations
 
-A Designer's focus is uniquely on site structure and presentation, but a
-Designer can see some content too to help inform presentational
-decisions. Limitations are:
+A Designer's focus is uniquely on site structure and presentation, but a Designer can see some content too to help inform presentational decisions. Limitations are:
 
--   **Write** panel: They can see anyone's full article regardless of
-    status, but not edit anyone else's articles in any way. Nor can a
-    Designer create articles.
--   **Users** panel: Same as Staff Writer.
+* On the [Write administration panel](http://docs.textpattern.io/administration/write-panel): They can see anyone's full article regardless of status, but not edit anyone else's articles in any way. Nor can a Designer create articles.
+* On the [Users administration panel](http://docs.textpattern.io/administration/users-panel): Same as Staff Writer.
 
 ## Modifying user roles and privileges
 
-You can go beyond assigning roles by installing the
-[smd_user_manager](http://forum.textpattern.com/viewtopic.php?id=36558)
-plugin and modify the default role titles, creating new role types, and
-changing the privileges a given role has. The plugin also allows
-creating custom user groups in addition to changing individual roles,
-thus allowing fine-grained control over roles and privileges. Follow the
-instructions that come with the plugin.
+You can go beyond assigning roles by installing the [smd_user_manager](https://github.com/Bloke/smd_user_manager) plugin and modify the default role titles, creating new role types, and changing the privileges a given role has.
+
+The plugin also allows creating custom user groups in addition to changing individual roles, thus allowing fine-grained control over roles and privileges. Follow the instructions that come with the plugin.
 
 ## Multi-contributor security
 
-It goes without saying that when granting roles to site contributors, be
-sure the people you're giving privileges to are trustworthy. The higher
-roles, like Publisher and Managing Editor, have a lot of power and can
-easily change things. But even lesser roles should be granted to people
-with some attention.
+It goes without saying that when granting roles to site contributors, be sure the people you're giving privileges to are trustworthy. The higher roles, like Publisher and Managing Editor, have a lot of power and can easily change things. But even lesser roles should be granted to people with some attention.
 
-For example, the Designer role is restricted to those areas of the
-administration side that may play a role in presentation, including page
-and form templates. Such restrictions may seem sufficiently secure on
-the surface, but if the "Allow PHP in pages and forms?" preference is
-set to "Yes" in the
-[**Preferences**](http://docs.textpattern/io/administration/preferences-panel)
-panel, then a Designer *could* use PHP in pages or forms in a malicious
-way to gain administrator-like power and cause problems. Setting the
-preference to "No" would prevent such a possibility.
+For example, the Designer role is restricted to those areas of the administration side that may play a role in presentation, including Page templates and Form templates. Such restrictions may seem sufficiently secure on the surface, but if the 'Allow PHP in pages?' preference is set to 'Yes' in the [Preferences administration panel](http://docs.textpattern/io/administration/preferences-panel#allow-php-in-pages) panel, then a Designer *could* use PHP in Page templates and/or Form templates in a malicious way to gain administrator-like power and cause problems. Setting the preference to 'No' would prevent such a possibility.
 
-When it comes down to it, security is a governance concern, relying just
-as much on smart human decisions as code lockdown. Don't give roles to
-people you can't trust and make sure your editorial workflows are
-documented so each contributor knows what's expected of them by role
-assignment.
+When it comes down to it, security is a governance concern, relying just as much on smart human decisions as code lockdown. Don't give roles to people you can't trust and make sure your editorial workflows are documented so each contributor knows what's expected of them by role assignment.
 
-[^1]: The
-    [smd_user_manager](http://forum.textpattern.com/viewtopic.php?id=36558)
-    and [smd_bio](http://forum.textpattern.com/viewtopic.php?id=31496)
-    plugins can be installed and used to expand user account data and
-    produce published bios or user profiles generated from the expanded
-    data.
+[^1]: The [smd_user_manager](https://github.com/Bloke/smd_user_manager) and [smd_bio](https://github.com/Bloke/smd_bio) plugins can be installed and used to expand user account data and produce published bios or user profiles generated from the expanded data.
 
-[^2]: You may also install and use the
-    [smd_faux_role](http://forum.textpattern.com/viewtopic.php?id=33462&p=2)
-    plugin to more easily visualize what a given role can see and do in
-    the administration side. It's most effective when multiple user
-    accounts exist and they have varying kinds of content contribution
-    histories to compare against. The plugin ensures the administrator's
-    status is not lost and can easily switch back to a Publisher's
-    perspective (can see all functionality) at any time, even between
-    logged-out sessions.
+[^2]: You may also install and use the [smd_faux_role](http://forum.textpattern.com/viewtopic.php?id=33462&p=2) plugin to more easily visualize what a given role can see and do in the administration side. It's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
 
-[^3]: While these rights of access per role are indicated at the region
-    level here, it is possible that a given plugin introduces finer
-    rights control, which would alter the access pattern suggested in
-    Table 2. For example, a developer may design an admin-side plugin
-    that allows a Copy Editor or Staff Writer to have limited rights to
-    the plugin's configuration functionality. If that plugin has a
-    configuration panel under **Extensions**, then those two lower user
-    roles will see the **Extensions** region and that particular plugin
-    panel only.
+[^3]: While these rights of access per role are indicated at the region level here, it is possible that a given plugin introduces finer rights control, which would alter the access pattern suggested in table 2 (see above). For example, a developer may design an admin-side plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a administration panel under Extensions, then those two lower user roles will see the [Extensions administration region](http://docs.textpattern.io/administration/extensions-region) and that particular plugin panel only.
