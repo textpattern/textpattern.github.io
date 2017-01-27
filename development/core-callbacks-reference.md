@@ -99,9 +99,13 @@ As long as *Logging* is switched on from the [Preferences administration panel](
 
 ## Admin-side callbacks
 
-Most callbacks have to do with the admin-side, organized below as regular, criteria, validation, layout, and theme.
+Admin-side callbacks are split into three flavours. The first are easy to recognize from the address bar of your browser. If you click on any admin-side panel link, you'll see the URL contains `?event=panelname`, and if you click on any link in that panel that performs an action, you'll see `?event=panelname&step=action`. Those values correspond to the `$event` and `$step` parameters you can use during [plugin or theme development](http://docs.textpattern.io/development/). In fact, they will call any user-defined function that is registered for said `$event` and `$step`, allowing you to add your own *events* and *steps* as you need them.
 
-Admin-side callbacks are easy to recognize in the address bar of your browser. If you click on any admin-side panel link, you'll see the URL contains `?event=panelname`, and if you click on any link in that panel, you'll see `?event=panelname&step=anothername`. Those values correspond to the `$event` and `$step` parameters you can use in [plugin development](http://docs.textpattern.io/development/). In fact, they will call any user-defined function that is registered for said `$event` and `$step`, allowing you to add your own *events* and *steps* as you need them.
+If you wish to utilise such core hooks, consult the [admin-side events and steps](http://docs.textpattern.io/development/admin-side-events-and-steps) document, which lists them all.
+
+The second type of callback relate to actions that occur in response to various page-level signals. These could be when certain parts of the administration interface are rendered or when actions (such as deletion) complete, and are listed below.
+
+The final type of callback is `pluggable_ui()`. These deal with specific chunks of content that appear on the page and allow direct manipulation of individual elements or blocks. They are listed in the [pluggable_ui](http://docs.textpattern.io/development/the-pluggable-ui-function) document.
 
 ### Regular admin-side callbacks
 
