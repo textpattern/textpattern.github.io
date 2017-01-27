@@ -12,7 +12,7 @@ These are the main events and steps that Textpattern uses as you interact with t
 
 Although they are not direct [callbacks](http://docs.textpattern.io/development/core-callbacks-reference), you may hook into these events and steps from a plugin to perform an action.
 
-When raising callbacks of this nature, they are normally run in what is referred to as *post* mode, i.e. after Textpattern has serviced the routine. You may elect to run it in *pre* mode so you can intercept the callback before Tetxpattern servcies it. This is handy for manipulating submitted data before Textpattern receives it. To do this, set the fourth argument to `register_callback()` true.
+When raising callbacks of this nature, they are normally run in what is referred to as *post* mode, i.e. after Textpattern has serviced the routine. You may elect to run it in *pre* mode so you can intercept the callback before Tetxpattern services it. This is handy for manipulating submitted data before Textpattern receives it. To do this, set the fourth argument to `register_callback()` true.
 
 ## 'admin' event
 
