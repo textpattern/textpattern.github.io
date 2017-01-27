@@ -42,7 +42,7 @@ Document root
 : The path to the web server's public (document root) directory, specifically.
 
 $path_to_site
-: The path to wherever your installation is (e.g., in document root or in a sub-directory thereof).
+: The path to wherever your installation is (e.g. in document root or in a sub-directory thereof).
 
 Textpattern path
 : The path to your installation's `/textpattern` directory.
