@@ -10,132 +10,121 @@ description: Sections are the principle content organization mechanism in Textpa
 
 Sections are the principle content organization mechanism in Textpattern, and the Sections administration panel is where you manage them.
 
-Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
+On this page:
 
-In the sections panel, you're able to define what
-[pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages) and
-[styles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles) will be
-used for the
-[articles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles)
-published in context to a given section. You can also control if
-articles posted in that section will be seen on the front page of the
-site, and whether or not the articles will be used for site searching.
+* [How do sections work in Textpattern?](#how-do-sections-apply-to-textpattern)
+* [Create a new section](#create-a-new-section)
+* [Default publishing section](#default publishing section)
+* [Editing sections](#editing-sections)
+  * [Section names to avoid](#section-names-to-avoid)
+* [Search function](#search-function)
+* [List of existing sections](#list-of-existing-sections)
+  * [Columns](#columns)
+  * [Perform changes on selected sections](#perform-changes-on-selected-sections)
+* [Pages and articles listed per page](#pages-and-articles-listed-per-page)
 
-The Sections panel composed of two regions: A top region where you can
-create new sections, and a bottom region where all existing sections and
-their respective settings are displayed.
+On this panel you can do two things:
 
-Textpattern includes two sections by default: *About* and *Articles*.
+1. Create a new section and edit existing sections
+3. List and manage your existing sections
 
-### Section Creation Controls {#section-creation-controls .sectionedit1#section_creation_controls}
+## How do sections apply to Textpattern?
 
-The top portion of the *Sections* panel is where you create new
-sections, and it's composed of three controls (Figure 2).
+Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#article-url-pattern).
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:prefs-sections-new.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:prefs-sections-new.png)
+In the Sections administration panel, you're able to define what [Pages](http://docs.textpattern.io/administration/pages-panel) and [Styles](http://docs.textpattern.io/administration/styles-panel) will be used for the [Articles]((http://docs.textpattern.io/administration/articles-panel) published in context to a given section. You can also control if articles posted in that section will be seen on the front page of the site, and whether or not the articles will be included in site searches.
 
-#### Create Section {#create_section}
+Textpattern includes one sections by default: 'Articles'.
 
-The first control in the create section form is a text box and Create
-button where you type a new section name and create it (Figure 2a).
-Textpattern assigns its default page and style automatically (to ensure
-baseline publishing capabilities) but you can select differently if you
-have custom [pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages)
-and [styles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles)
-already created; these will automatically appear in the assignment
-dropdown menus both at time of creating a new section and at any time
-later respective to a given section.
+## Create a new section
 
-##### Section Names to Avoid {#section_names_to_avoid}
+This button will take you to the Section property editor (see below) where you can generate a new section along with its properties.
 
-Sections can be given any arbitrary name, except for a few labels
-already reserved for Textpattern's special functions. Avoid the
-following or undesirable results will likely occur:
+## Default publishing section
 
--   **author** (or the equivalent in the site's set language)
--   **category** (or the equivalent in the site's set language)
--   **section** (or the equivalent in the site's set language)
--   **atom**
--   **file_download**
--   **rss**
+Here you can select what section you'd like to be the default choice when starting to write a new article. This can be overrode of course in the Write administration panel per article.
 
-Section names already assigned to **directories** (and of course vice
-versa) will not work either.
+## Editing sections
 
-#### Page and Style Assignment {#page_and_style_assignment}
+You open the Section property editor when creating a new section or choosing to edit an existing one. Each section has various pieces of information associated with it, as described here:
 
-The next two controls are dropdown lists where you can select a given
-page and style for your section (Figure 2b and 2c). As noted above,
-these will be set as defaults unless you select otherwise. You can't
-select otherwise if you have not yet created custom
-[pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages) and/or
-[styles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles).
+**Section name:** The first control in the section editor panel is a text box where you type a new section name and create it. This name is used in URLs and by various Textpattern tags. See [Section names to avoid](#section-names-to-avoid) below for a list of unsafe names.
 
-### Section Customization Controls {#section-customization-controls .sectionedit2#section_customization_controls}
+**Section title:** a title for the section, which can be harnessed by tags (such as [section](http://docs.textpattern.io/tags/section)).
 
-The rest of the *Sections* panel is where the existing *Sections*
-themselves are listed in alphabetical order. Each has the exact same
-controls, so we'll describe them by using one of the defaults, the
-“about” *Section* (Figure 3).
+**Uses page:** Textpattern assigns its default page template automatically (to ensure baseline publishing capabilities) but you can select differently if you have additonal [Pages](http://docs.textpattern.io/administration/pages-panel) already created; You can reassign sections to pages at any time.
 
-[![](/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?media=file:prefs-sections-existing.png)](/home/www/zendstudio/dokuwiki/bin/lib/exe/detail.php?id=&media=file:prefs-sections-existing.png)
+**Uses style:** Textpattern assigns its default style (CSS) automatically (to ensure baseline publishing capabilities) but you can select differently if you have additonal [Styles](http://docs.textpattern.io/administration/styles-panel) already created; You can reassign sections to styles at any time.
 
-#### //Section// Name (a) {#section_name_a}
+**Section appears on front page?:** This is an extremely important option and should be considered with respect to the overall design of the site. Remember that section content only shows up when that section is called, except for the front page. This is the control that permits or denies content from showing up when the base `index.php` is called with no arguments.
 
-#### //Section// Title (b) {#section_title_b}
+**Syndicate articles in this section?:** Textpattern creates RSS and Atom feeds for those who like to run news aggregators. If this selection is turned on, the feed will display article content from this section.
 
-#### Uses //Page// © {#uses_page_c}
+**Include this section in site search?:** Textpattern provides a search function. It may be desirable to segregate some content and not make it available via the search function. This controls permits or denies the search from finding this content per section.
 
-The Textpattern design encourages maximizing design reuse. It is
-possible to create a single page for every single section in
-*Presentation &gt; Pages*. This is a lot of needless work if they all
-look the same. The Uses Page field is a drop down box listing all the
-currently known pages. When this section is called, the article tags in
-that section will be interpreted with this section's context and provide
-this section's article content.
+**Description:** The section description can be harnessed, for example, as meta data when you display an section article listing page.
 
-#### Uses //Style// (d) {#uses_style_d}
+### Section names to avoid
 
-Additionally, each section can use a different CSS (Cascading Style
-Sheet) layout. This box will drop down and list all the currently known
-styles and lets the designer pick.
+Sections can be given any arbitrary name, except for a few labels already reserved for Textpattern's special functions. Avoid the following or undesirable results will likely occur:
 
-#### Selected by default? (e) {#selected_by_default_e}
+* `atom`
+* `author` (or the equivalent in the site's set language)
+* `category` (or the equivalent in the site's set language)
+* `file_download`
+* `rss`
+* `section` (or the equivalent in the site's set language)
 
-This really has a bit more to do with authorship than design. In
-*Content &gt; Write* there is a field for the section the article should
-be filed in. This field in *Presentation &gt; Sections* allows a section
-name to be highlighted in that field automatically.
+Section names already assigned to physical directories (and of course vice versa) will not work either.
 
-#### On front page? (f) {#on_front_page_f}
+## Search function
 
-This is an extremely important option and should be considered with
-respect to the overall design of the site. Remember that section content
-only shows up when that section is called, except for the front page.
-This is the control that permits or denies content from showing up when
-index.php is called with no arguments.
+Because the links list can get pretty long, a search function is available at the top of the list. You can use the search function to locate a link directly by a search phrase or to filter the view on your links by particular criteria, thus reducing the number of links in the resulting list.
 
-#### Syndicate? (g) {#syndicate_g}
+The Search function has two components:
 
-Textpattern creates RSS and Atom feeds for those who like to run news
-aggregators. If this selection is turned on, the feed will display
-article content from this section.
+1. A text field for entering the search query
+2. A drop-down-list to specify which area is to be searched
 
-#### Include in site search? (h) {#include_in_site_search_h}
+Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](http://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
-Textpattern provides a search function. It may be desirable to segregate
-some content and not make it available via the search function. This
-controls permits or denies the search from finding this content.
+After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of links which meet the criteria.
 
-#### X button (i) {#x_button_i}
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in. The drop-down-list toggle button provides the following search criteria:
 
-Click the “X” button if you ever want to delete a given Section.
+* Search all (default)
+* Name
+* Title
+* Page
+* Style
+* Section appears on front page?
+* Syndicate articles in this section?
+* Include this section in site search?
 
-Note: This “X” button can be found throughout the Site Administration
-interface, and it serves the same function wherever it is. If you don't
-see the button where it otherwise appears to be for similar options,
-it's likely because that particular option is a system default, and
-Textpattern does not allow you to delete system defaults. Sensibly so.
+## List of existing sections
+
+Beneath the 'Create section' button and search area there is the table, or list, of existing sections. Each row is one section.
+
+### Columns
+
+TODO
+
+### Perform changes on selected links
+
+In the first column you will find a checkbox for each section. Here you can select sections you want to change in a bulk manner. You can mark sections by checking the checkbox or you can use the checkbox in the head bar of the list to mark all sections on that page.
+
+In order to quickly select ranges of sections click the checkbox of the first section you want to mark, press and hold the shift key, then click the checkbox of the last section in the range. All sections between will be checked too. You can add ranges to your selection by repeating these steps.
+
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
+
+* Uses page
+* Uses style
+* Section appears on front page?
+* Syndicate articles in this section?
+* Include this section in site search?
+* Delete
+
+When selecting a 'Change'-option you will get another drop-down-list which will give you the values to choose from, e.g. the list of pages or styles available. After selecting the options you want to perform click 'Go' to start the changes. A pop-up window will ask "Are you sure?" and then (if 'yes') the changes will be performed.
 
 ## Pages and sections listed per page
 
