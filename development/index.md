@@ -34,7 +34,7 @@ On this page:
 
 ## Disclaimer
 
-Before you embark on this journey, understand that core developers put a lot of effort into maintaining backwards compatibility within the development branch of Textpattern itself, but that does not guarantee your plugins will continue to work as intended after new versions of Textpattern are released. Sometimes new development directions - like what might come as we head to version 4.6 and later - require making changes that affect backwards compatibility. As a plugin developer, it is your responsibility to ensure your plugins work against core code at point of every future Textpattern release.
+Before you embark on this journey, understand that core developers put a lot of effort into maintaining backwards compatibility within the development branch of Textpattern itself, but that does not guarantee your plugins will continue to work as intended after new versions of Textpattern are released. Sometimes new development directions - like what might come as we head to the next Textpattern version and later - require making changes that affect backwards compatibility. As a plugin developer, it is your responsibility to ensure your plugins work against core code at point of every future Textpattern release.
 
 ## Developer rules of the road
 
