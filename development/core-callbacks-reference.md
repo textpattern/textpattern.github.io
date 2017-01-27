@@ -24,7 +24,7 @@ On this page:
 
 ## Public-side callbacks
 
-These all trigger at various points during the rendering of publicly viewable content served by Textpattern. Use them to inject content -- JavaScript, css or html -- into the page or to alter various facets of visitor interaction with the site. They have *events*, but no *steps*.
+These all trigger at various points during the rendering of publicly viewable content served by Textpattern. Use them to inject content - JavaScript, CSS or HTML - into the page or to alter various facets of visitor interaction with the site. They have *events*, but no *steps*.
 
 #### publish.php
 
@@ -469,7 +469,7 @@ inclusion, and returns (outputs) the resulting altered list.
 Note the last record in the callbacks table above is different from the
 others; it adds a new, unique element to the panel instead of changing
 one that already exists, as in the previous example. Let's do that one.
-We'll add some text -- "Textile, the humane web text generator." -- in
+We'll add some text - "Textile, the humane web text generator." - in
 the **Textile help** widget:
 
     register_callback('abc_add_text', 'article_ui', 'extend_col_1');

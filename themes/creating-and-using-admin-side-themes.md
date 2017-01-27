@@ -26,7 +26,7 @@ admin-side theme on an individual basis, which is done by installing the
 [smd_admin_themes](http://textpattern.org/plugins/1096/smd_admin_themes)
 plugin.
 
-Further, if a 260Ã -- 150px image of your theme is added into **your
+Further, if a 260Ã - 150px image of your theme is added into **your
 theme's directory** as either “screenshot.png”, “screenshot.jpg”,
 “screenshot.gif” or whatever, account holders can select the theme
 visually rather than via the admin control.

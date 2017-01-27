@@ -276,7 +276,7 @@ bc.
 </li>
 </ul>
 
-&lt;img src=“&lt;txp:site_url /&gt;images/1.gif” width=“400” height=“1” alt=“ -- ” title=“” /&gt; (This removes the divider line)
+&lt;img src=“&lt;txp:site_url /&gt;images/1.gif” width=“400” height=“1” alt=“ - ” title=“” /&gt; (This removes the divider line)
 
 <ul>
 <li><p>*Delete*</p>

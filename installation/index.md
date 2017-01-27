@@ -173,7 +173,7 @@ This part shows if Textpattern has actually communicated successfully with your 
 <span class="success">Connected</span> \\
 <span class="success">Using {database} ({encoding})</span>
 
-Where `{database}` is the name of your database and `{encoding}` is the character encoding your database is configured to use -- ideally `utf8`.[^5]
+Where `{database}` is the name of your database and `{encoding}` is the character encoding your database is configured to use - ideally `utf8`.[^5]
 
 #### Creating config.php file
 

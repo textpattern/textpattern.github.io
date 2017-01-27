@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Administration
+category: Development
 published: true
 title: Plugin user-help guidelines
 description: Use this template and its associated guidelines when writing your plugin's user instructions.

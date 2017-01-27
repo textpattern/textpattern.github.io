@@ -30,11 +30,11 @@ This means that the *default* form will be used for full article pages, and the 
 Use an *article form*, containing something like this:
 
 bq. @<txp:if_article_list>@
-@<! -- list page: display the short version -- >@
+@<! - list page: display the short version - >@
 @<txp:excerpt />@
 @<txp:permlink>read more</txp:permlink>@
 @<txp:else />@
-@<! -- article page: display the complete article -- >@
+@<! - article page: display the complete article - >@
 @<txp:body />@
 @</txp:if_article_list>@
 
@@ -45,7 +45,7 @@ If you want to include the excerpt as well as the body on the article page, just
 With either of the above methods, you can use the @<txp:if_excerpt>@ tag *inside the article form* to lay out articles with and without excerpts differently. For example, to apply separate CSS classes to the excerpt and body:
 
 bq. @<txp:if_excerpt>@
-@<! -- this article has an excerpt -- >@
+@<! - this article has an excerpt - >@
 @<div class="excerpt">@
 @<txp:excerpt />@
 @</div>@
@@ -57,11 +57,11 @@ bq. @<txp:if_excerpt>@
 The same "txp:if_excerpt":http://textbook.textpattern.net/wiki/index.php?title=if_excerpt tag can be used on the list page to handle articles that have no Excerpt set. For example, to display the article Body when the Excerpt is empty:
 
 bq. @<txp:if_excerpt>@
-@<! -- the article has an excerpt -- >@
+@<! - the article has an excerpt - >@
 @<txp:excerpt />@
 @<txp:permlink>read more</txp:permlink>@
 @<txp:else />@
-@<! -- there is no excerpt -- >@
+@<! - there is no excerpt - >@
 @<txp:body />@
 @</txp:if_excerpt>@
 

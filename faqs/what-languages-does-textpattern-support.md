@@ -2,7 +2,7 @@ h1. What languages does Textpattern support? [todo]
 
 Textpattern's administrative interface has been translated to more than 40 languages - see below for a list.
 
-You're not limited to *writing* articles in those particular languages.  Textpattern uses UTF-8, so you can write articles and create page templates in any language represented by "Unicode":http://www.unicode.org/.  There's no magic trick to this: just make sure your browser supports UTF-8, and write away.  You can mix languages within an article -- for example, quoting some French text in a German article, or using characters from other languages in an English article, as demonstrated in the list of languages below.
+You're not limited to *writing* articles in those particular languages.  Textpattern uses UTF-8, so you can write articles and create page templates in any language represented by "Unicode":http://www.unicode.org/.  There's no magic trick to this: just make sure your browser supports UTF-8, and write away.  You can mix languages within an article - for example, quoting some French text in a German article, or using characters from other languages in an English article, as demonstrated in the list of languages below.
 
 Textpattern doesn't directly support articles with multiple translations.  You can use *sections* or *categories* to organize a multilingual site.  If you use one section to represent each language, you'll be able to assign a specific template and/or CSS stylesheet to each, which might be helpful if some languages have specific layout requirements.  If you're already using sections for your site structure, create categories to represent languages.
 

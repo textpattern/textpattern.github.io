@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Administration
+category: Development
 published: true
 title: Plugin template
 description: Textpattern plugins are perhaps best thought of as functions supplementary to those found in Textpattern core.
@@ -26,11 +26,11 @@ In addition to the LICENSE and README files, the [plugin
 template](https://github.com/textpattern/textpattern-plugin-template)
 contains the following:
 
--   *zem_tpl.php* -- Contains the code to compile plugins into the
+-   *zem_tpl.php* - Contains the code to compile plugins into the
     format required by the Textpattern plugin installer.
--   *zem_plugin.php* -- Is the template itself. Make a copy of this
+-   *zem_plugin.php* - Is the template itself. Make a copy of this
     file and edit it to write your plugin.
--   *zem_example.php* -- Is an example plugin that demonstrates both
+-   *zem_example.php* - Is an example plugin that demonstrates both
     public-side tags and admin-side user interface features.
 
 Typical template use {#sec2}

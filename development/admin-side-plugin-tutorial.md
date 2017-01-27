@@ -126,7 +126,7 @@ Respond to a plugin step {#sec5}
 ------------------------
 
 In the code so far you have done one thing when you plugin's panel --
-your event -- is executed. In reality you should take any number of
+your event - is executed. In reality you should take any number of
 actions as people interact with your panel. For example, maybe you want
 to allow users to save some settings (the **save** step), or **edit**
 something, or simply **list** some stuff.
@@ -230,7 +230,7 @@ Now go and create something cool for Textpattern!
     see used in code examples later with `register_tab()`), which is an
     older term for the admin-side navigation links and their associated
     views. "Tab" comes from the concept of folder tabs, which is what
-    the admin-side was originally designed to look like -- a series of
+    the admin-side was originally designed to look like - a series of
     primary and secondary folders with "tab" links for navigating the
     admin-side. In documentation we now call these locations "panels"
     (moving away from the folder tabs concept), but there are still

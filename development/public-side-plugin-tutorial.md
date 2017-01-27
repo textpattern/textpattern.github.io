@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Administration
+category: Development
 published: true
 title: Public-side plugin tutorial
 description: This tutorial will walk you through the basics of creating a simple public-side plugin.

@@ -1,6 +1,6 @@
 h1. What kind of web sites does Textpattern do best? [todo]
 
-We receive many questions about Textpattern's strengths and limitations.  Textpattern is best suited for web sites that require several -- though not necessarily all - of the following features:
+We receive many questions about Textpattern's strengths and limitations.  Textpattern is best suited for web sites that require several - though not necessarily all - of the following features:
 
 * News or Weblog-style chronological articles, perhaps organized into several distinct departments or sections.
 * Groups of articles organized by other means, like a FAQ, product catalogue or portfolio.

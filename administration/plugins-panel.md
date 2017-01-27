@@ -184,7 +184,7 @@ you need plugins to do everything. That is not true with Textpattern.
 Many long-time users of Textpattern, in fact, pride themselves on using
 as few plugins as possible, while still creating sophisticated
 publishing architectures with core capabilities, especially when it
-comes to building front-ends -- true Textpattern jedi.
+comes to building front-ends - true Textpattern jedi.
 
 The prudent website owner, and particularly the site architect, is
 encouraged to adopt a frugal habit of plugin use and learn the jedi way.

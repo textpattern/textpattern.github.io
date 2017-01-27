@@ -54,7 +54,7 @@ editing page template **default**”. Replace the entire contents with
 “Hello, World!” and click “Save”. Click the “View Site” link in the top
 menu, to open your site's home page in a new window. Great looking site,
 isn't it! Look at the HTML page source: it is literally “Hello, World!”,
-followed by some status information -- certainly not a valid HTML page.
+followed by some status information - certainly not a valid HTML page.
 
 Close the HTML source view; then get a new, clean, HTML file from your
 HTML editor. Copy the entire contents of this file and paste it in over
@@ -108,9 +108,9 @@ In a traditional, static website, there's an HTML file for every page.
 You might say the two are equivalent: page = HTML file. Our Textpattern
 site is currently much the same, apparently: page = page template. But
 “template” means reusable pattern or framework, and that is just how a
-page template is meant to be used in Textpattern -- as the pattern for
+page template is meant to be used in Textpattern - as the pattern for
 many different pages. The page templates we've created so far aren't
-real templates -- they're just static HTML.
+real templates - they're just static HTML.
 
 ### Textpattern tags {#textpattern-tags .sectionedit4#textpattern_tags}
 
@@ -128,7 +128,7 @@ and save the template.
 Before looking at the results, go to
 [Presentation→Sections](/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections).
 Find the listing for the “about” section and click its “X” button. A
-dialog box will pop up asking if you really want to delete it -- click
+dialog box will pop up asking if you really want to delete it - click
 “OK”. Now find the “articles” section and change its “Uses Page:”
 setting to “default”, then click the Save button for this section. Do
 the same for your “page2” section: change its “Uses Page:” setting to
@@ -229,7 +229,7 @@ The URLs we've seen so far give a value for the section (the “s”
 parameter in the query string). The base URL doesn't do this explicity,
 but as we saw with the “?s=default” experiment, even the base URL
 implies a section. Context can include other factors, but section is the
-essential one -- every page in a Textpattern site belongs to a section.
+essential one - every page in a Textpattern site belongs to a section.
 We've already seen how the section determines which page template will
 be used, and also how it tells the
 
@@ -277,7 +277,7 @@ tag has turned each article title into a link to its individual article
 page. Note the URLs of these pages, with query strings like “?id=3”.
 Every article has a unique ID number, which you can see in
 [Content→Articles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles).
-The “s” parameter -- section -- doesn't appear in these URLs, because
+The “s” parameter - section - doesn't appear in these URLs, because
 section is implied (every article belongs to a section).
 
 ### More contexts {#more-contexts .sectionedit7#more_contexts}

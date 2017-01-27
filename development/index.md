@@ -1,6 +1,6 @@
 ---
 layout: landing
-category: Administration
+category: Development
 published: true
 title: Textpattern plugin development
 description: This information is for those who are thinking about developing Textpattern plugins.
@@ -152,7 +152,7 @@ a plugin).
 ## Callbacks
 
 A callback is essentially an instruction (written as a function) that
-your plugin follows to execute some *events* (and *steps*) -- either
+your plugin follows to execute some *events* (and *steps*) - either
 `$event` by itself or combined with a `$step`. You hook into these known
 points to choose where and when your plugins run.
 
@@ -218,7 +218,7 @@ reference](http://docs.textpattern.io/development/core-callbacks-reference).
 #### Adding new elements (without altering existing markup)
 
 In this example, we use the `register_callback` function to add some
-text -- "Textile, the humane web text generator." -- in the **Write**
+text - "Textile, the humane web text generator." - in the **Write**
 panel's **Textile help** widget. The text is added immediately below the
 widget header link, which is where the `extend_col_1` step happens to
 output its markup:

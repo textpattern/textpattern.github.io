@@ -70,13 +70,13 @@ Don't reinvent the wheel. Is there already a function in PHP or Textpattern that
 
 ### Minimize assumptions
 
-Don't try to solve a problem unless you've tested it. This is particularly important for performance enhancements: measure the speed before and after -- is the improvement really significant? If not, the simplest solution might be to leave it alone.
+Don't try to solve a problem unless you've tested it. This is particularly important for performance enhancements: measure the speed before and after - is the improvement really significant? If not, the simplest solution might be to leave it alone.
 
 Similarly, don't write a bunch of functions or tag attributes on the assumption that they might be useful in the future. Unless you have a use case, leave it out.
 
 ### Make it testable
 
-This is the most important part. It makes the development team's job easier if the code is deemed supportable and maintainable -- after all, we're the ones who will receive the bug reports and cries for help. The more you can do to help test your code, the better: examples of input and expected output, a test plan, notes on what you have and haven't tested.
+This is the most important part. It makes the development team's job easier if the code is deemed supportable and maintainable - after all, we're the ones who will receive the bug reports and cries for help. The more you can do to help test your code, the better: examples of input and expected output, a test plan, notes on what you have and haven't tested.
 
 If you have a big patch, consider splitting it into smaller, related chunks. Git branches are ideal for this as you can commit to each branch and hop between them, then submit each as a separate pull request. Also, please ensure your patch has the latest branch from our repo merged into it immediately prior to submission. If you have written the patch against the `dev` branch, for example, do `git merge dev` when on your branch to pull forward any recent changes to dev from other developers, then prepare your pull request. This step makes it easier for us to pull the patch down and test it in our development environments.
 

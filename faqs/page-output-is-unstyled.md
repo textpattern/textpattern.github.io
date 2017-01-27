@@ -4,7 +4,7 @@ This is most commonly caused by an incorrect txpath setting in config.php.
 
 View the HTML source of the page, and look for the @<link rel="stylesheet" href="..." type="text/css" />@ tag.
 
-If the @href@ link is incorrect -- it should point to @http://example.com/textpattern/ css.php?s=mysection@ or @http://example.com/mysubdir/ textpattern/css.php?s=mysection@ -- you'll need to edit config.php and fix the @txpath@ setting.  Check for an extra slash character, or repeated subdirectory name.
+If the @href@ link is incorrect - it should point to @http://example.com/textpattern/ css.php?s=mysection@ or @http://example.com/mysubdir/ textpattern/css.php?s=mysection@ - you'll need to edit config.php and fix the @txpath@ setting.  Check for an extra slash character, or repeated subdirectory name.
 
 If the link appears correct, try pasting the CSS url directly into the address bar in your browser, and checking the output.  Some possible diagnoses:
 

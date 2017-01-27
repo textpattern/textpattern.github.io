@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Administration
+category: Development
 published: true
 title: Plugin developer prefixes
 description: All plugin developers must have a prefix to name their plugins and use in plugin development.
