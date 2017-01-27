@@ -25,16 +25,16 @@ On this page:
 * [Register your plugin developer prefix](#register-your-plugin-developer-prefix)
 * [How plugins are loaded](#how-plugins-are-loaded)
 * [Callbacks](#callbacks)
-  * [Function: `register_callback()`](#sec6-1)
-  * [Adding admin-side panel elements](#sec6-2)
-  * [Altering admin-side panel elements](#sec6-3)
-  * [Removing admin-side panel elements](#sec6-4)
-* [Plugin lifecycle management and preferences](#sec7)
-* [Variables, classes, and constants](#sec8)
-* [Full plugin tutorials](#sec9)
-* [Implementation resources](#sec10)
-* [Getting help](#sec11)
-* [External reading](#sec12)
+  * [Function: register_callback()](#function-registercallback)
+  * [Adding admin-side panel elements](#adding-admin-side-panel-elements)
+  * [Altering admin-side panel elements](#altering-admin-side-panel-elements)
+  * [Removing admin-side panel elements](#removing-admin-side-panel-elements)
+* [Plugin lifecycle management and preferences](#plugin-lifecycle-management-and-preferences)
+* [Variables, classes and constants](#variables-classes-and-constants)
+* [Full plugin tutorials](#full-plugin-tutorials)
+* [Implementation resources](#implementation-resources)
+* [Getting help](#getting-help)
+* [External reading](#external-reading)
 
 ## Disclaimer
 
@@ -56,7 +56,7 @@ If you do throw caution to the wind and reinvent the wheel anyway, make sure you
 
 ### Do it the Textpattern way
 
-Do it the “Textpattern's way” from the start by using Textpattern functions (talked about later), because they already work efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Further, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
+Do it "the Textpattern way" from the start by using Textpattern functions (talked about later), because they already work efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Further, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
 
 ### Use the templates
 
@@ -87,7 +87,7 @@ In general, a 'plugin' is a container for any kind of PHP code. The code can be 
 
 Plugins can be categorized in three functional ways:
 
-1. 'On demand' (providing tags for **Pages** and **Forms**)
+1. 'On demand' (providing tags for Page templates and Form templates)
 2. 'Up front' (intercepting page requests; either all or those having special characteristics)
 3. 'In between' (using Textpattern hooks to automatically change or add behaviour)
 
@@ -97,7 +97,7 @@ Plugins can also be public-side or admin-side, or be one of several types that c
 
 ### Public-side plugins
 
-Public-side (aka "client-side" or "front-side") plugins are those that enable content output on the front-side of a website, often through specialized tags, which a website designer can use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
+Public-side (aka 'client-side' or 'front-side') plugins are those that enable content output on the front-side of a website, often through specialized tags, which a website designer can use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
 
 * [Public-side plugin tutorial](http://docs.textpattern.io/development/public-side-plugin-tutorial) - A basic tutorial to learn the ropes of the easiest kind of plugin to build.
 
@@ -105,7 +105,7 @@ Public-side (aka "client-side" or "front-side") plugins are those that enable co
 
 Admin-side plugins provide site administrators and designers the ability to alter the [administration](http://docs.textpattern.io/administration/) UI and/or functionality in some way.
 
-Admin-side plugins often make use of the [Extensions](http://docs.textpattern.io/administration/extensions) region. In other words, if an admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the **Extensions** region.
+Admin-side plugins often make use of the [Extensions adninistration region](http://docs.textpattern.io/administration/extensions). In other words, if an admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the **Extensions** region.
 
 * [Admin-side plugin tutorial](http://docs.textpattern.io/development/admin-side-plugin-tutorial) - A basic tutorial to get acquainted with the tricker kinds of plugins to build.
 
@@ -246,9 +246,9 @@ function abc_add_text($event, $step, $data, $rs) {
 From the `register_callback` definition provided earlier, we see the
 first line is giving these arguments:
 
--   `$func` = `abc_add_text` (hypothetical)
--   `$event` = `article_ui`
--   `$step` = `extend_col_1`
+* `$func` = `abc_add_text` (hypothetical)
+* `$event` = `article_ui`
+* `$step` = `extend_col_1`
 
 So `abc_add_text` is the named custom function in this case, and
 `article_ui` and `extend_col_1` are the actual *event* and *step* in
@@ -349,7 +349,9 @@ Or:
 
 ~~~ php
 register_callback('my_install_routine',
-    'plugin_lifecycle.abc_plugin', 'installed'); register_callback('my_delete_routine',
+    'plugin_lifecycle.abc_plugin', 'installed');
+
+register_callback('my_delete_routine',
     'plugin_lifecycle.abc_plugin', 'deleted');
 
 register_callback('my_enable_routine',
@@ -365,7 +367,7 @@ own use, plugin developers may take advantage of the remaining four
 one-time actions, as these bits are copied into the *txp_plugin* table
 row for any particular plugin whenever it is uploaded.
 
-## Variables, classes, and constants
+## Variables, classes and constants
 
 These resources are hosted at **phpcrossref.com**:
 
@@ -379,15 +381,12 @@ These resources are hosted at **phpcrossref.com**:
 
 Two basic plugin tutorials to put it all in perspective:
 
--   [Public-side plugin
-    tutorial](http://docs.textpattern.io/development/public-side-plugin-tutorial)
--   [Admin-side plugin
-    tutorial](http://docs.textpattern.io/development/admin-side-plugin-tutorial)
+* [Public-side plugin tutorial](http://docs.textpattern.io/development/public-side-plugin-tutorial)
+* [Admin-side plugin tutorial](http://docs.textpattern.io/development/admin-side-plugin-tutorial)
 
 ## Implementation resources
 
-Now you know what plugins are and you're ready to kick plugin ass.
-You'll probably need some combination of these to see the job through:
+Now you know what plugins are and you're ready to kick plugin ass! You'll probably need some combination of these to see the job through:
 
 **Plugin code template:**
 
@@ -412,9 +411,7 @@ the plugin cache directory.
 
 **Plugin user-help template and guidelines:**
 
-One of the [Developer rules of the road](#sec2). When you're plugin is
-done (or as you code it), it's time to write that tight and useful
-plugin help documentation. There's a template for that:
+One of the [Developer rules of the road](#developer-rules-of-the-road). When you're plugin is done (or as you code it), it's time to write that tight and useful plugin help documentation. There's a template for that:
 
 -   [Plugin user-help
     guidelines](http://docs.textpattern.io/development/plugin-user-help-guidelines)
@@ -423,11 +420,9 @@ plugin help documentation. There's a template for that:
 
 **Code repositories:**
 
-Get your repos here; something for everyone. A few git commands
-included.
+Get your repos here; something for everyone. A few git commands included.
 
--   [Textpattern
-    repositories](http://docs.textpattern.io/development/textpattern-source-code-repositories)
+* [Textpattern repositories](http://docs.textpattern.io/development/textpattern-source-code-repositories)
 
 **Integration and waypoints:**
 
