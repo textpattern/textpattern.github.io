@@ -12,7 +12,7 @@ Sections are the principle content organization mechanism in Textpattern, and th
 
 On this page:
 
-* [How do sections work in Textpattern?](#how-do-sections-apply-to-textpattern)
+* [How do sections apply to Textpattern?](#how-do-sections-apply-to-textpattern)
 * [Create a new section](#create-a-new-section)
 * [Default publishing section](#default publishing section)
 * [Editing sections](#editing-sections)
@@ -32,7 +32,7 @@ On this panel you can do two things:
 
 Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#article-url-pattern).
 
-In the Sections administration panel, you're able to define what [Pages](http://docs.textpattern.io/administration/pages-panel) and [Styles](http://docs.textpattern.io/administration/styles-panel) will be used for the [Articles]((http://docs.textpattern.io/administration/articles-panel) published in context to a given section. You can also control if articles posted in that section will be seen on the front page of the site, and whether or not the articles will be included in site searches.
+In the Sections administration panel, you're able to define what [Pages](http://docs.textpattern.io/administration/pages-panel) and [Styles](http://docs.textpattern.io/administration/styles-panel) will be used for the [Articles](http://docs.textpattern.io/administration/articles-panel) published in context to a given section. You can also control if articles posted in that section will be seen on the front page of the site, and whether or not the articles will be included in site searches.
 
 Textpattern includes one sections by default: 'Articles'.
 
