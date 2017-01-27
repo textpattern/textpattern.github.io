@@ -17,38 +17,38 @@ On this page:
   * [Core panels access](#core-panels-access)
   * [Extended panels access](#extended panels access)
 * [Limited access specifications](#limited-access-specifications)
-  * [Publisher](#sec3-1)
-  * [Managing Editor](#sec3-2)
-  * [Copy Editor](#sec3-3)
-  * [Staff Writer](#sec3-4)
-  * [Freelancer](#sec3-5)
-  * [Designer](#sec3-6)
-* [Modifying user roles and privileges](#sec4)
-* [Multi-contributor security](#sec5)
+  * [Publisher limitations](#publisher-limitations)
+  * [Managing Editor limitations](#managing-editor-limitations)
+  * [Copy Editor limitations](#copy-editor-limitations)
+  * [Staff Writer limitations](#staff-writer-limitations)
+  * [Freelancer limitations](#freelancer-limitations)
+  * [Designer limitations](#designer-limitations)
+* [Modifying user roles and privileges](#modifying-user-roles-and-privileges)
+* [Multi-contributor security](#multi-contributor-security)
 
 ## Account types versus publishing roles
 
 It's helpful to classify user accounts in three ways.
 
-**Administrator account:** Only one person has this account; the person who installed Textpattern (presumably you). Though an administrator can certainly serve in a publishing role (and is labeled 'Publisher' in the [Users administration panel](http://docs.textpattern.io/administration/users-panel)), an administrator isn't necessarily part of collaborative publishing workflow. Site administrators typically handle all server-side issues, update the system when new releases are made, backup the database on a regular schedule, and make decisions about website [security](http://docs.textpattern.io/administration/security). If a website is only a single-user site, this is the only account you need.
+**Administrator account:** Only one person has this account; the person who installed Textpattern (presumably you). Though an 'Administrator' can certainly serve in a publishing role (and is labeled 'Publisher' in the [Users administration panel](http://docs.textpattern.io/administration/users-panel)), an administrator isn't necessarily part of collaborative publishing workflow. Site administrators typically handle all server-side issues, update the system when new releases are made, backup the database on a regular schedule, and make decisions about website [security](http://docs.textpattern.io/administration/security). If a website is only a single-user site, this is the only account you need.
 
 **Publishing accounts:** These are represented by the six *roles* defined in Textpattern - from Publisher down to Designer. The roles are primarily what this page is concerned with. Publishing roles are taken into consideration when planning a collaborative publishing architecture around the day-to-day activities of producing content (and evolving the presentation).[^1]
 
-**Frozen accounts:** Frozen accounts are those potentially having the status of "None", meaning the accounts are preserved but the account holders are denied access to the administration side. This is useful for when collaborators that published content at one point (e.g. 'Copy editor', 'Staff writer') are no longer doing so; they've left the editorial team. Content from such accounts will remain safely on the public side of the website under the account names, but those users no longer have administration access to change or delete the content.
+**Frozen accounts:** Frozen accounts are those potentially having the status of 'None', meaning the accounts are preserved but the account holders are denied access to the administration side. This is useful for when collaborators that published content at one point (e.g. 'Copy Editor', 'Staff Writer') are no longer doing so; they've left the editorial team. Content from such accounts will remain safely on the public side of the website under the account names, but those users no longer have administration access to change or delete the content.
 
 ## Panels access per publishing role
 
-The tables in the following sections show all account types versus access to the administration panels and functionality, with emphasis on the six publishing roles (from Publisher to Designer).[^2]
+The tables in the following sections show all account types versus access to the administration panels and functionality, with emphasis on the six publishing roles (from 'Publisher' to 'Designer').[^2]
 
 ### Core panels access
 
-Table 1 focuses specifically on the core (out-of-the-box) administration regions (**Content**, **Presentation**, and **Admin**) and their respective panels.
+Table 1 focuses specifically on the core (out-of-the-box) administration regions (**Content**, **Presentation** and **Admin**) and their respective panels.
 
 **Legend:**
 
 * <span class="success">Full</span> means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case by clicking the panel name.
-* <span class="warning">Limited</span> means the account or role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections.
-* <span class="error">Blocked</span> means the account or role has no panel access and can not see the panel link in the administration UI (for accounts with "None" status, the account cannot be used at all).
+* <span class="warning">Limited</span> means the account or role can access the panel but does not have full read or write access to all functionality. See the 'limited access' descriptions in following sections.
+* <span class="error">Blocked</span> means the account or role has no panel access and can not see the panel link in the administration UI (for accounts with 'None' status, the account cannot be used at all).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
     <table>
@@ -57,9 +57,9 @@ Table 1 focuses specifically on the core (out-of-the-box) administration regions
             <tr>
                 <th scope="col">Panel</th>
                 <th scope="col">Publisher</th>
-                <th scope="col">Managing editor</th>
-                <th scope="col">Copy editor</th>
-                <th scope="col">Staff writer</th>
+                <th scope="col">Managing Editor</th>
+                <th scope="col">Copy Editor</th>
+                <th scope="col">Staff Writer</th>
                 <th scope="col">Freelancer</th>
                 <th scope="col">Designer</th>
                 <th scope="col">None</th>
@@ -251,9 +251,9 @@ Table 2 represents the two *extended* regions - **Home** and **Extensions** - th
             <tr>
                 <th scope="col">Panel</th>
                 <th scope="col">Publisher</th>
-                <th scope="col">Managing editor</th>
-                <th scope="col">Copy editor</th>
-                <th scope="col">Staff writer</th>
+                <th scope="col">Managing Editor</th>
+                <th scope="col">Copy Editor</th>
+                <th scope="col">Staff Writer</th>
                 <th scope="col">Freelancer</th>
                 <th scope="col">Designer</th>
                 <th scope="col">None</th>
@@ -288,62 +288,33 @@ Table 2 represents the two *extended* regions - **Home** and **Extensions** - th
 
 For each publishing role having <span class="warning">Limited</span> access to a panel, the specific rights and restrictions for that panel are clarified in the following sections.
 
-### Publisher limitations {#sec3-1}
+### Publisher limitations
 
-Publishers have the same scope of rights as the administrator (an
-account type described earlier), except a Publisher cannot delete the
-administrator's account, whereas an administrator can certainly delete
-the publisher's.
+Publishers have the same scope of rights as the administrator (an account type described earlier), except a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's.
 
-But the administrator and Publisher don't compete. Unlike
-administrators, Publishers represent the top position of the editorial
-team, which is focused on website architecture, content, and design.
-Publishers may not actually work on all those things -- from a
-collaborative standpoint they're more a decision maker than a doer --
-but they have the power in the CMS to step in and override something if
-necessary.
+But the Administrator and Publisher don't compete. Unlike administrators, Publishers represent the top position of the editorial team, which is focused on website architecture, content, and design. Publishers may not actually work on all those things - from a collaborative standpoint they're more a decision maker than a doer - but they have the power in the CMS to step in and override something if necessary.
 
-There should only be one Publisher, functionally speaking. Anyone who
-needed similar rights, but not the absolute same rights, should be a
-Manager Editor.
+There should only be one Publisher, functionally speaking. Anyone who needed similar rights, but not the absolute same rights, should be a 'Managing Editor'.
 
-### Managing Editor limitations {#sec3-2}
+### Managing Editor limitations
 
-Managing Editors are essentially the Publisher's right hand, a
-transition role from process governance to content production. A given
-website project might define specific responsibilities for the Managing
-Editor outside of the CMS, like recruiting freelance writers,
-maintaining the editorial calendar, and so on.
+Managing Editors are essentially the Publisher's right hand, a transition role from process governance to content production. A given website project might define specific responsibilities for the Managing Editor outside of the CMS, like recruiting freelance writers, maintaining the editorial calendar, and so on.
 
-Managing Editors have the same privileges as Publishers throughout the
-administration side, with one exception:
+Managing Editors have the same privileges as Publishers throughout the administration side, with one exception:
 
--   **Users** panel: They can see basic data types (Login, Real name,
-    Email, Privileges, Last log in, etc) for all user accounts, and edit
-    full account data for any inferior role, but cannot edit account
-    data for Publishers or other Managing Editors.
+* On the [Users administration panel](http://docs.textpattern.io/administration/users-panel): They can see basic data types (Login, Real name, Email, Privileges, Last log in, etc) for all user accounts, and edit full account data for any inferior role, but cannot edit account data for Publishers or other Managing Editors.
 
-In addition to the noted panel limitation, Managing Editors don’t have
-as much detailed debugging info available to them either when the
-production status is higher.
+In addition to the noted panel limitation, Managing Editors don't have as much detailed debugging info available to them either when the production status is higher.
 
-### Copy Editor limitations {#sec3-3}
+### Copy Editor limitations
 
-Copy Editors aren't concerned with governance activities like the higher
-roles are. The Copy Editor's focus is specifically on editing the
-content produced by writers and making final preparations and/or checks
-before publishing. Such preps and checks might include formatting copy
-and adding images (or verifying that it's been done correctly),
-assigning output designators (the section and categories fields), adding
-custom field data and metadata, setting publishing date, and so forth.
+Copy Editors aren't concerned with governance activities like the higher roles are. The Copy Editor's focus is specifically on editing the content produced by writers and making final preparations and/or checks before publishing. Such preps and checks might include formatting copy and adding images (or verifying that it's been done correctly), assigning output designators (the section and categories fields), adding custom field data and metadata, setting publishing date, and so forth.
 
-Copy Editor privileges are pretty straight forward, either having full
-access to panels or no access at all, with one exception:
+Copy Editor privileges are pretty straight forward, either having full access to panels or no access at all, with one exception:
 
--   **Users** panel: They can see basic data types for all user
-    accounts, but they can only edit their own account data.
+* On the [Users administration panel](http://docs.textpattern.io/administration/users-panel): They can see basic data types for all user accounts, but they can only edit their own account data.
 
-### Staff Writer limitations {#sec3-4}
+### Staff Writer limitations
 
 The Staff Writer is one of two roles primarily concerned with writing
 articles (the other being Freelancer). They don't need access to much of
@@ -362,7 +333,7 @@ a few limitations:
 -   **Users** panel: They can edit their own user account details, but
     not see anyone else's account information.
 
-### Freelancer limitations {#sec3-5}
+### Freelancer limitations
 
 Freelancers are external to the website's editorial team. You can think
 of them as "guest authors". Like Staff Writers, Freelancers write
@@ -375,7 +346,7 @@ are:
     any way.
 -   **Users** panel: Same as Staff Writer.
 
-### Designer limitations {#sec3-6}
+### Designer limitations
 
 A Designer's focus is uniquely on site structure and presentation, but a
 Designer can see some content too to help inform presentational
@@ -386,8 +357,7 @@ decisions. Limitations are:
     Designer create articles.
 -   **Users** panel: Same as Staff Writer.
 
-Modifying user roles and privileges {#sec4}
------------------------------------
+## Modifying user roles and privileges
 
 You can go beyond assigning roles by installing the
 [smd_user_manager](http://forum.textpattern.com/viewtopic.php?id=36558)
@@ -397,8 +367,7 @@ creating custom user groups in addition to changing individual roles,
 thus allowing fine-grained control over roles and privileges. Follow the
 instructions that come with the plugin.
 
-Multi-contributor security {#sec5}
---------------------------
+## Multi-contributor security
 
 It goes without saying that when granting roles to site contributors, be
 sure the people you're giving privileges to are trustworthy. The higher
