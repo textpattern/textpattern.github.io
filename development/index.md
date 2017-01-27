@@ -14,10 +14,6 @@ On this page:
 
 * [Disclaimer](#disclaimer)
 * [Developer rules of the road](#developer-rules-of-the-road)
-  * [Avoid reinventing the wheel](#avoid-reinventing-the-wheel)
-  * [Do it the Textpattern way](#do-it-the-textpattern-way)
-  * [Use the templates](#use-the-templates)
-  * [Write clear and concise plugin help](#write-clear-and-concise-plugin-help)
 * [What is a plugin?](#what-is-a-plugin)
   * [Functional categories](#functional-categories)
   * [Public-side plugins](#public-side-plugins)
@@ -44,7 +40,7 @@ Before you embark on this journey, understand that core developers put a lot of 
 
 More like four strong recommendations, to help ensure you're producing plugins that people will use. And that's the whole point, right?
 
-### Avoid reinventing the wheel
+### 1. Avoid reinventing the wheel
 
 While reinventing the wheel is a good way to learn, it's not so good for making useful or popular plugins. If you're plugin does what another plugin already does, few users will take the time to install and try it unless it's *extremely* innovative in some way. We recommend that before you start developing, spend some time researching what plugins exist, what functionality they provide, and how well they're working for people (often indicated by how popular they are).
 
@@ -54,11 +50,11 @@ When plugin ideas aren't conceived quietly in the minds of individuals and built
 
 If you do throw caution to the wind and reinvent the wheel anyway, make sure you're ready to raise the bar. Somebody has to eventually.
 
-### Do it the Textpattern way
+### 2. Do it the Textpattern way
 
 Do it "the Textpattern way" from the start by using Textpattern functions (talked about later), because they already work efficiently. Your goal should be to emulate Textpattern as you expand its capabilities, otherwise you run the risk of your plugin feeling foreign or out of place, and perhaps not working well with other plugins. Further, some functions are in place to assist with keeping Textpattern secure and working regardless of host server settings, and you don't want to interfere with that kind of thing.
 
-### Use the templates
+### 3. Use the templates
 
 Templates come from the trials and errors of those who came before you. Thus using templates helps you do things easier, with better results. There are two templates to employ: the plugin development template, and the plugin user-help guidelines and template.
 
@@ -71,7 +67,7 @@ Templates come from the trials and errors of those who came before you. Thus usi
 
 * [Plugin user-help guidelines](http://docs.textpattern.io/development/plugin-user-help-guidelines) (and template)
 
-### Write clear and concise plugin help
+### 4. Write clear and concise plugin help
 
 Yes, we're emphasizing this. Don't be one of *those* developers that assumes everyone knows what you know - the opposite is true. People won't use your plugin (innovative or not) if you don't explain how it works. You can avoid fielding a lot of unnecessary questions in the support forum and empower users by producing good plugin user instructions to begin with. Use the template to ensure your plugin instructions are consistently structured and properly formatted.
 
