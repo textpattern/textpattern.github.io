@@ -15,8 +15,8 @@ On this page:
 * [Account types versus publishing roles](#account-types-versus-publishing-roles)
 * [Panels access per publishing role](#panels-access-per-publishing-role)
   * [Core panels access](#core-panels-access)
-  * [Extended panels access](#sec2-2)
-* [Limited access specifications](#sec3)
+  * [Extended panels access](#extended panels access)
+* [Limited access specifications](#limited-access-specifications)
   * [Publisher](#sec3-1)
   * [Managing Editor](#sec3-2)
   * [Copy Editor](#sec3-3)
@@ -30,44 +30,19 @@ On this page:
 
 It's helpful to classify user accounts in three ways.
 
-**Administrator account.** Only one person has this account; the person
-who installed Textpattern (presumably you). Though an administrator can
-certainly serve in a publishing role (and is labeled "publisher" in the
-**Users** panel), an administrator isn't necessarily part of
-collaborative publishing workflow. Site administrators typically handle
-all server-side issues, update the system when new releases are made,
-backup the database on a regular schedule, and make decisions about
-website [security](http://docs.textpattern.io/administration/security).
-If a website is only a single-user site, this is the only account you
-need.
+**Administrator account:** Only one person has this account; the person who installed Textpattern (presumably you). Though an administrator can certainly serve in a publishing role (and is labeled 'Publisher' in the [Users administration panel](http://docs.textpattern.io/administration/users-panel)), an administrator isn't necessarily part of collaborative publishing workflow. Site administrators typically handle all server-side issues, update the system when new releases are made, backup the database on a regular schedule, and make decisions about website [security](http://docs.textpattern.io/administration/security). If a website is only a single-user site, this is the only account you need.
 
-**Publishing accounts.** These are represented by the six *roles*
-defined in Textpattern -- from Publisher down to Designer. The roles are
-primarily what this page is concerned with. Publishing roles are taken
-into consideration when planning a collaborative publishing architecture
-around the day-to-day activities of producing content (and evolving the
-presentation).[^1]
+**Publishing accounts:** These are represented by the six *roles* defined in Textpattern - from Publisher down to Designer. The roles are primarily what this page is concerned with. Publishing roles are taken into consideration when planning a collaborative publishing architecture around the day-to-day activities of producing content (and evolving the presentation).[^1]
 
-**Frozen accounts.** Frozen accounts are those potentially having the
-status of "None", meaning the accounts are preserved but the account
-holders are denied access to the administration side. This is useful for
-when collaborators that published content at one point (e.g., Copy
-Editor, Staff Writer...) are no longer doing so; they've left the
-editorial team. Content from such accounts will remain safely on the
-public side of the website under the account names, but those users no
-longer have administration access to change or delete the content.
+**Frozen accounts:** Frozen accounts are those potentially having the status of "None", meaning the accounts are preserved but the account holders are denied access to the administration side. This is useful for when collaborators that published content at one point (e.g. 'Copy editor', 'Staff writer') are no longer doing so; they've left the editorial team. Content from such accounts will remain safely on the public side of the website under the account names, but those users no longer have administration access to change or delete the content.
 
 ## Panels access per publishing role
 
-The tables in the following sections show all account types versus
-access to the administration panels and functionality, with emphasis on
-the six publishing roles (from Publisher to Designer).[^2]
+The tables in the following sections show all account types versus access to the administration panels and functionality, with emphasis on the six publishing roles (from Publisher to Designer).[^2]
 
 ### Core panels access
 
-Table 1 focuses specifically on the core (out-of-the-box) administration
-regions (**Content**, **Presentation**, and **Admin**) and their
-respective panels.
+Table 1 focuses specifically on the core (out-of-the-box) administration regions (**Content**, **Presentation**, and **Admin**) and their respective panels.
 
 **Legend:**
 
@@ -75,10 +50,9 @@ respective panels.
 * <span class="warning">Limited</span> means the account or role can access the panel but does not have full read or write access to all functionality. See the "limited access" descriptions in following sections.
 * <span class="error">Blocked</span> means the account or role has no panel access and can not see the panel link in the administration UI (for accounts with "None" status, the account cannot be used at all).
 
-**Table 1. Core panels access per role.**
-
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
     <table>
+        <caption itemprop="about">Table 1: Core panels access per role</caption>
         <thead>
             <tr>
                 <th scope="col">Panel</th>
@@ -92,9 +66,6 @@ respective panels.
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th colspan="8" scope="col">Content section</th>
-            </tr>
             <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/write-panel">Write</a></th>
                 <td><span class="success">Full</span></td>
@@ -166,9 +137,6 @@ respective panels.
                 <td><span class="error">Blocked</span></td>
             </tr>
             <tr>
-                <th colspan="8" scope="col">Presentation section</th>
-            </tr>
-            <tr>
                 <th scope="row"><a href="http://docs.textpattern.io/administration/sections-panel">Sections</a></th>
                 <td><span class="success">Full</span></td>
                 <td><span class="success">Full</span></td>
@@ -209,53 +177,116 @@ respective panels.
                 <td><span class="error">Blocked</span></td>
             </tr>
             <tr>
-                <th colspan="8" scope="col">Admin section</th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/diagnostics-panel">Diagnostics</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/preferences-panel">Preferences</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/languages-panel">Languages</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/users-panel">Users</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/plugins-panel">Plugins</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/visitor-logs-panel">Visitor logs</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
             </tr>
         </tbody>
     </table>
 </div>
 
-  "Diagnostics":http://docs.textpattern.io/administration/diagnostics-panel     <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
-  "Import":http://docs.textpattern.io/administration/import-panel               <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
-  "Languages":http://docs.textpattern.io/administration/languages-panel         <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
-  "Plugins":http://docs.textpattern.io/administration/plugins-panel             <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
-  "Preferences":http://docs.textpattern.io/administration/preferences-panel     <span class="success">Full</span>   <span class="success">Full</span>      <span class="error">Blocked</span>                <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
-  "Users":http://docs.textpattern.io/administration/users-panel                 <span class="success">Full</span>   <span class="warning">Limited</span>   <span class="warning">Limited</span>              <span class="warning">Limited</span>   <span class="warning">Limited</span>                  <span class="warning">Limited</span>              <span class="error">Blocked</span>
-  "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel   <span class="success">Full</span>   <span class="success">Full</span>      <span class="success">Full</span>                 <span class="error">Blocked</span>     <span class="error">Blocked</span>                    <span class="error">Blocked</span>                <span class="error">Blocked</span>
+### Extended panels access
 
-### Extended panels access {#sec2-2}
+Table 2 represents the two *extended* regions - **Home** and **Extensions** - that you may see when installing certain admin-side plugins. Unlike with core regions and panels, the panels of the extended regions are generally not treated individually, rather roles are treated at the region level, which is why individual panels are not show here.[^3] A given role will either have access to the regions (thus all their panels) or won't see them all. The respective panels one might see in these regions depend on which plugins are installed that make use of them. Most likely anyone with Publisher and Managing Editor roles will see the Extensions administration region eventually because so many useful admin-side plugins make use of it.
 
-Table 2 represents the two *extended* regions -- **Home** and
-**Extensions** -- that you may see when installing certain admin-side
-plugins. Unlike with core regions and panels, the panels of the extended
-regions are generally not treated individually, rather roles are treated
-at the region level, which is why individual panels are not show
-here.[^4] A given role will either have access to the regions (thus all
-their panels) or won't see them all. The respective panels one might see
-in these regions depend on which plugins are installed that make use of
-them. Most likely anyone with Publisher and Managing Editor roles will
-see the **Extensions** region eventually because so many useful
-admin-side plugins make use of it.
-
-**Table 2. Extended panels access per role. (See legend above.)**
-
-notextile.
-
-<div itemscope itemtype="http://schema.org/Table">
-                                                                             Publisher                           Managing Editor                     Copy Editor                          Staff Writer                         Freelancer                           Designer                             None
-  -------------------------------------------------------------------------- ----------------------------------- ----------------------------------- ------------------------------------ ------------------------------------ ------------------------------------ ------------------------------------ ------------------------------------
-  "Home":http://docs.textpattern.io/administration/home-region               <span class="success">Full</span>   <span class="success">Full</span>   <span class="error">Blocked</span>   <span class="error">Blocked</span>   <span class="error">Blocked</span>   <span class="error">Blocked</span>   <span class="error">Blocked</span>
-  "Extensions":http://docs.textpattern.io/administration/extensions-region   <span class="success">Full</span>   <span class="success">Full</span>   <span class="error">Blocked</span>   <span class="error">Blocked</span>   <span class="error">Blocked</span>   <span class="error">Blocked</span>   <span class="error">Blocked</span>
-
-notextile.
-
+<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+    <table>
+        <caption itemprop="about">Table 2: Extended panels access per role</caption>
+        <thead>
+            <tr>
+                <th scope="col">Panel</th>
+                <th scope="col">Publisher</th>
+                <th scope="col">Managing editor</th>
+                <th scope="col">Copy editor</th>
+                <th scope="col">Staff writer</th>
+                <th scope="col">Freelancer</th>
+                <th scope="col">Designer</th>
+                <th scope="col">None</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/home-panel">Home</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/extensions-panel">Extensions</a></th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
-Limited access specifications {#sec3}
------------------------------
 
-For each publishing role having <span class="warning">Limited</span>
-access to a panel, the specific rights and restrictions for that panel
-are clarified in the following sections.
+## Limited access specifications
+
+For each publishing role having <span class="warning">Limited</span> access to a panel, the specific rights and restrictions for that panel are clarified in the following sections.
 
 ### Publisher limitations {#sec3-1}
 
@@ -408,7 +439,7 @@ assignment.
     perspective (can see all functionality) at any time, even between
     logged-out sessions.
 
-[^4]: While these rights of access per role are indicated at the region
+[^3]: While these rights of access per role are indicated at the region
     level here, it is possible that a given plugin introduces finer
     rights control, which would alter the access pattern suggested in
     Table 2. For example, a developer may design an admin-side plugin
