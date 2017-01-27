@@ -117,23 +117,30 @@ All hopeful plugin developers must [register a plugin developer prefix](http://d
 
 Plugins are loaded very early during script execution. It happens in `textpattern/publish.php` (public-side) and in `textpattern/index.php` (admin-side). Look out for `load_plugins` to see where it is happening.
 
-You can control how a plugin will load by setting the plugin type.
+`public`
+: **Load order:** 0
+: Will only load on the public side.
 
-notextile.
+`admin + client`
+: **Load order:** 1
+: Will load on the public *and* administration sides.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-  Plugin type             No.   Will...
-  ----------------------- ----- ----------------------------------------------------------------------------------
-  public                  0     only load on the public side.
-  admin + client          1     load on the public *and* administration sides.
-  library                 2     not automatically load, rather it loads when included/required by other plugins.
-  admin                   3     only load on the administration side and may *not* make asynchronous calls.
-  admin + AJAX            4     only load on the administration side and may make asynchronous calls.
-  admin + public + AJAX   5     load on the administration and public sides and may make asynchronous calls.
+`library`
+: **Load order:** 2
+: Will not automatically load, rather it loads when included/required by other plugins.
 
-notextile.
+`admin`
+: **Load order:** 3
+: Will only load on the administration side and may **not** make asynchronous calls.
 
-</div>
+`admin + AJAX`
+: **Load order:** 4
+: Will only load on the administration side and may make asynchronous calls.
+
+`admin + public + AJAX`
+: **Load order:** 5
+: Will load on the administration and public sides and may make asynchronous calls.
+
 The code of the plugin is then `eval()` 'ed (or included) within that
 `load_plugins()` function, *not* in the global scope. This means if you
 need to use global variables, you have to explicitly set them to be
@@ -142,8 +149,8 @@ is no problem with that.
 
 Understanding how plugins are loaded, also shows how you can write “on
 demand” and “up front” plugins, which were mentioned earlier. Defining a
-function will make it available as a tag in Textpattern *pages* and
-*forms*. Whereas any code that is outside of any function/class
+function will make it available as a tag in Textpattern Page templates and
+Form templates. Whereas any code that is outside of any function/class
 definition will be executed right away. You can check for
 Request-Variables and initiate some action and `exit;` the execution of
 the script (for example to serve images or other binary data from within
@@ -171,23 +178,28 @@ may be relevant to your plugin development aims.[^3] In particular, the
 [callbacks](#sec7) (especially admin-side callbacks).[^4] This is the
 full function definition:
 
-    function register_callback($func, $event, $step, $pre=0)
+~~~ php
+function register_callback($func, $event, $step, $pre=0)
+~~~
 
-And the **arguments** (or parameters) are:
+**The arguments (or parameters) are:**
 
-notextile.
+Argument 1
+: **Parameter:** `$func`
+: Name of the function you add to a callback event.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-  Argument   Parameter                   What it is/does
-  ---------- --------------------------- ------------------------------------------------------------------------------------------
-  1          `$func`                     Name of the function you add to a callback event.
-  2          `$event`                    Name of the core *event*.
-  3          `$step` (admin-side only)   Name of the associated core *step*. Not always required.
-  4          `$pre=` (admin-side only)   Designates when `$func` is called. Values are `0` (default) or `1`. Not always required.
+Argument 2
+: **Parameter:** `$event`
+: Name of the core *event*.
 
-notextile.
+Argument 3
+: **Parameter:** `$step` (admin-side only)
+: Name of the associated core step. Not always required.
 
-</div>
+Argument 4
+: **Parameter:** `$pre=` (admin-side only)
+: Designates when `$func` is called. Values are `0` (default) or `1`. Not always required.
+
 **Argument \#3:** In admin-side situations, the `$event` (argument \#2)
 is (disjunctively) divided into *steps*, with each `$step` pinpointing a
 particular action or DOM location (e.g. a panel widget or one of its
@@ -223,11 +235,13 @@ panel's **Textile help** widget. The text is added immediately below the
 widget header link, which is where the `extend_col_1` step happens to
 output its markup:
 
-    register_callback('abc_add_text', 'article_ui', 'extend_col_1');
+~~~ php
+register_callback('abc_add_text', 'article_ui', 'extend_col_1');
 
-    function abc_add_text($event, $step, $data, $rs) {
-       return 'Textile, the humane web text generator.';
-    }
+function abc_add_text($event, $step, $data, $rs) {
+    return 'Textile, the humane web text generator.';
+}
+~~~
 
 From the `register_callback` definition provided earlier, we see the
 first line is giving these arguments:
@@ -254,13 +268,15 @@ defined.
 Another way to add elements is to existing markup. For example, to add
 the `url_title` below the article's **Title** field, you could do this:
 
-    register_callback('abc_append_item', 'article_ui', 'title');
+~~~ php
+register_callback('abc_append_item', 'article_ui', 'title');
 
-    function abc_append_item($event, $step, $data, $rs) {
-       $urlttl = isset($rs['url_title']) ? '&lt;br/&gt;'.$rs['url_title'] : '';
+function abc_append_item($event, $step, $data, $rs) {
+    $urlttl = isset($rs['url_title']) ? '<br/>'.$rs['url_title'] : '';
 
-       return $data.$urlttl;
-    }
+    return $data.$urlttl;
+}
+~~~
 
 Here we return the default markup (`$data`) and tack on our own markup
 which we read from the record set (`$rs`) that was passed to our
@@ -277,18 +293,18 @@ times.
 Consider this example, which adds a radio button to the existing button
 series in the **Write** panel's **Status** widget:
 
-    register_callback('abc_altered_status', 'article_ui', 'status');
+~~~ php
+register_callback('abc_altered_status', 'article_ui', 'status');
 
-    function abc_altered_status($event, $step, $data, $rs) {
+function abc_altered_status($event, $step, $data, $rs) {
+    $stat = isset($rs['Status']) ? $rs['Status'] : '';
+    $new_status = n.t.'<li>'.radio('Status', 6, ($stat == 6) ? 1 : 0, 'status-6').
+    '<label for="status-6">Velcro</label></li>';
+    $data = str_replace('</ul>', $new_status.'</ul>', $data);
 
-       $stat = isset($rs['Status']) ? $rs['Status'] : '';
-
-       $new_status = n.t.'&lt;li&gt;'.radio('Status', 6, ($stat == 6) ? 1 : 0, 'status-6').'&lt;label for=&quot;status-6&quot;&gt;Velcro&lt;/label&gt;&lt;/li&gt;';
-
-       $data = str_replace('&lt;/ul&gt;', $new_status.'&lt;/ul&gt;', $data);
-
-       return $data;
-    }
+   return $data;
+}
+~~~
 
 Again we've used `register_callback()` to define our callback function,
 and in this case we've employed the `$event`/@\$step@ combination for
@@ -301,11 +317,13 @@ for inclusion, and returns (outputs) the resulting altered list.
 In this case, let's say you wanted to remove the **Keywords** field.[^5]
 You could hook into the `keywords` step and return a space character:
 
-    register_callback('abc_remove_keywords', 'article_ui', 'keywords');
+~~~ php
+register_callback('abc_remove_keywords', 'article_ui', 'keywords');
 
-    function abc_remove_keywords($event, $step, $data, $rs) {
-       return ' ';
-    }
+function abc_remove_keywords($event, $step, $data, $rs) {
+    return ' ';
+}
+~~~
 
 That's it! The returned space character (`return ' '`) replaces the
 keywords field, effectively removing it.
@@ -323,17 +341,23 @@ events. The opt-in is signaled to core by flagging your intention using
 Once you flag your intention to use the events, `register_callback()`
 can define where the event fires:
 
-    register_callback('abc_plugin_prefs_panel', 'plugin_prefs.abc_plugin');
+~~~ php
+register_callback('abc_plugin_prefs_panel', 'plugin_prefs.abc_plugin');
+~~~
 
 Or:
 
-    register_callback('my_install_routine',
-       'plugin_lifecycle.abc_plugin', 'installed'); register_callback('my_delete_routine',
-       'plugin_lifecycle.abc_plugin', 'deleted');
-    register_callback('my_enable_routine',
-       'plugin_lifecycle.abc_plugin', 'enabled');;
-    register_callback('my_disable_routine',
-       'plugin_lifecycle.abc_plugin', 'disabled');
+~~~ php
+register_callback('my_install_routine',
+    'plugin_lifecycle.abc_plugin', 'installed'); register_callback('my_delete_routine',
+    'plugin_lifecycle.abc_plugin', 'deleted');
+
+register_callback('my_enable_routine',
+    'plugin_lifecycle.abc_plugin', 'enabled');;
+
+register_callback('my_disable_routine',
+    'plugin_lifecycle.abc_plugin', 'disabled');
+~~~
 
 Textpattern reserves the lower twelve bits of `$plugin['flags']` for its
 own use, plugin developers may take advantage of the remaining four
