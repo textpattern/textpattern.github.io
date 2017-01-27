@@ -23,8 +23,8 @@ On this page:
 
 On this panel you can do two things:
 
-1. The primary (and default) comments list for basic info and instant handling of comments.
-2. An edit mode where you can edit the comments content.
+1. The primary (and default) comments list for basic info and instant handling of comments
+2. An edit mode where you can edit the comments content
 
 ## Editing comments
 

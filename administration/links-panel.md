@@ -25,8 +25,8 @@ On this page:
 
 On this panel you can do two things:
 
-1. Create a new link and edit existing ones.
-2. Manage your existing repository of links.
+1. Create a new link and edit existing ones
+2. Manage your existing repository of links
 
 So the Links panel in a way combines what for articles is divided in two panels 'Write' and 'Articles'.
 
