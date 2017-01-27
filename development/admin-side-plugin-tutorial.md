@@ -48,8 +48,10 @@ To begin your admin plugin, you need to target the administrative side
 of Textpattern. You do that by checking whether the current user is on
 the admin-side or not, as follows:
 
-    if (@txpinterface == 'admin') {
-    }
+~~~ php
+if (@txpinterface == 'admin') {
+}
+~~~
 
 Put that code in your plugin, make sure the plugin is set to type
 *Admin*, and save.
@@ -60,10 +62,12 @@ under **Extensions**.[^1]
 Creating an Extensions panel {#sec3}
 ----------------------------
 
-    if (@txpinterface == 'admin') {
-       add_privs('abc_admin_hello_world', '1'); // Publishers only
-       register_tab('extensions', 'abc_admin_hello_world', 'My plugin');
-    }
+~~~ php
+if (@txpinterface == 'admin') {
+    add_privs('abc_admin_hello_world', '1'); // Publishers only
+    register_tab('extensions', 'abc_admin_hello_world', 'My plugin');
+}
+~~~
 
 The `add_privs()` function is a necessary step to tell Textpattern who can see
 the new tab.
@@ -99,16 +103,18 @@ interested in. More on steps later. For now you need to tell Textpattern
 what to do when your plugin's panel link is clicked. For this we use
 `register_callback()`:
 
-    if (@txpinterface == 'admin') {
-       add_privs('abc_admin_hello_world', '1'); // Publishers only
-       register_tab('extensions', 'abc_admin_hello_world', 'My plugin');
-       register_callback('abc_admin_hw_gui', 'abc_admin_hello_world');
-    }
+~~~ php
+if (@txpinterface == 'admin') {
+    add_privs('abc_admin_hello_world', '1'); // Publishers only
+    register_tab('extensions', 'abc_admin_hello_world', 'My plugin');
+    register_callback('abc_admin_hw_gui', 'abc_admin_hello_world');
+}
 
-    function abc_admin_hw_gui($event, $step) {
-       pagetop('My plugin panel');
-       echo 'Hello Textpattern world!';
-    }
+function abc_admin_hw_gui($event, $step) {
+    pagetop('My plugin panel');
+    echo 'Hello Textpattern world!';
+}
+~~~
 
 Now you're getting somewhere! You've told Textpattern to call the
 `abc_admin_hw_gui()` function when someone visits the
@@ -138,14 +144,18 @@ implementation; it's now going to be called `abc_admin_hw_list()`. The
 original `abc_admin_hw_gui()` function is going to become a sort of
 ***dispatcher*** for steps. Here's the new function:
 
-    function abc_admin_hw_gui($event, $step) {
-       if(!$step or !in_array($step, array(
-          'abc_admin_hw_save',
-          'abc_admin_hw_edit',
-       ))) {
-          abc_admin_hw_list();
-       } else $step();
+~~~ php
+function abc_admin_hw_gui($event, $step) {
+    if (!$step or !in_array($step, array(
+        'abc_admin_hw_save',
+        'abc_admin_hw_edit',
+    ))) {
+        abc_admin_hw_list();
+    } else {
+        $step();
     }
+}
+~~~
 
 This new function essentially checks to see if there's a `$step`, or if
 the name of the step is `abc_admin_hw_save` or `abc_admin_hw_edit`. If
@@ -155,27 +165,31 @@ no step or the step is somehow mistyped or mangled, the default step,
 
 Now let's write your functions for the remaining steps:
 
-    function abc_admin_hw_save() {
-       echo 'Save step triggered';
-       abc_admin_hw_list();
-    }
+~~~ php
+function abc_admin_hw_save() {
+    echo 'Save step triggered';
+    abc_admin_hw_list();
+}
 
-    function abc_admin_hw_edit() {
-       echo 'Edit step triggered';
-       abc_admin_hw_list();
-    }
+function abc_admin_hw_edit() {
+    echo 'Edit step triggered';
+    abc_admin_hw_list();
+}
+~~~
 
 And to finish it off, let's add a couple of hyperlinks to your
 `abc_admin_hw_list()` function that allows you to simulate the user
 clicking on stuff in your interface:
 
-    function abc_admin_hw_list() {
-       pagetop('My plugin panel');
-       echo '<ul>';
-       echo '<li><a href="?event=abc_admin_hello_world&step=abc_admin_hw_save">Click to Save</a></li>';
-       echo '<li><a href="?event=abc_admin_hello_world&step=abc_admin_hw_edit">Click to Edit</a></li>';
-       echo '</ul>';
-    }
+~~~ php
+function abc_admin_hw_list() {
+    pagetop('My plugin panel');
+    echo '<ul>';
+    echo '<li><a href="?event=abc_admin_hello_world&step=abc_admin_hw_save">Click to Save</a></li>';
+    echo '<li><a href="?event=abc_admin_hello_world&step=abc_admin_hw_edit">Click to Edit</a></li>';
+    echo '</ul>';
+}
+~~~
 
 When you click on a link you'll see (above pagetop) that the relevant
 function is being called. That's how you differentiate between steps and
@@ -186,43 +200,48 @@ your new tab. The limit is your imagination.
 
 Here's the final code for the admin side example:
 
-    // Setup the panel and callback
-    if (@txpinterface == 'admin') {
-       add_privs('abc_admin_hello_world', '1'); // Publishers only
-       register_tab('extensions', 'abc_admin_hello_world', 'My plugin');
-       register_callback('abc_admin_hw_gui', 'abc_admin_hello_world');
-    }
+~~~ php
+// Setup the panel and callback
 
-    // Step Dispatcher
-    function abc_admin_hw_gui($event, $step) {
-       if(!$step or !in_array($step, array(
-          'abc_admin_hw_save',
-          'abc_admin_hw_edit',
-       ))) {
-          abc_admin_hw_list();
-       } else $step();
-    }
+if (@txpinterface == 'admin') {
+    add_privs('abc_admin_hello_world', '1'); // Publishers only
+    register_tab('extensions', 'abc_admin_hello_world', 'My plugin');
+    register_callback('abc_admin_hw_gui', 'abc_admin_hello_world');
+}
 
-    // **************
-    // Step functions
-    // **************
-    function abc_admin_hw_list() {
-       pagetop('My plugin panel');
-       echo '&lt;ul&gt;';
-       echo '&lt;li&gt;&lt;a href=&quot;?event=abc_admin_hello_world&amp;step=abc_admin_hw_save&quot;&gt;Click to Save&lt;/a&gt;&lt;/li&gt;';
-       echo '&lt;li&gt;&lt;a href=&quot;?event=abc_admin_hello_world&amp;step=abc_admin_hw_edit&quot;&gt;Click to Edit&lt;/a&gt;&lt;/li&gt;';
-       echo '&lt;/ul&gt;';
-    }
+// Step Dispatcher
 
-    function abc_admin_hw_save() {
-       echo 'Save step triggered';
-       abc_admin_hw_list();
+function abc_admin_hw_gui($event, $step) {
+    if (!$step or !in_array($step, array(
+        'abc_admin_hw_save',
+        'abc_admin_hw_edit',
+    ))) {
+    abc_admin_hw_list();
+    } else {
+        $step();
     }
+}
 
-    function abc_admin_hw_edit() {
-       echo 'Edit step triggered';
-       abc_admin_hw_list();
-    }
+// Step functions
+
+function abc_admin_hw_list() {
+    pagetop('My plugin panel');
+    echo '&lt;ul&gt;';
+    echo '&lt;li&gt;&lt;a href=&quot;?event=abc_admin_hello_world&amp;step=abc_admin_hw_save&quot;&gt;Click to Save&lt;/a&gt;&lt;/li&gt;';
+    echo '&lt;li&gt;&lt;a href=&quot;?event=abc_admin_hello_world&amp;step=abc_admin_hw_edit&quot;&gt;Click to Edit&lt;/a&gt;&lt;/li&gt;';
+    echo '&lt;/ul&gt;';
+}
+
+function abc_admin_hw_save() {
+    echo 'Save step triggered';
+    abc_admin_hw_list();
+}
+
+function abc_admin_hw_edit() {
+    echo 'Edit step triggered';
+    abc_admin_hw_list();
+}
+~~~
 
 Now go and create something cool for Textpattern!
 

@@ -46,9 +46,11 @@ Log into Textpattern's admin side, and open [ied_plugin_composer](https://github
 
 Create a new plugin called **abc_hello_world** and put this code in:
 
-    function abc_hello_world($atts, $thing=NULL) {
-       return 'Hello Textpattern world!';
-    }
+~~~ php
+function abc_hello_world($atts, $thing=NULL) {
+    return 'Hello Textpattern world!';
+}
+~~~
 
 Save the code and enable the plugin. There you go, your first plugin.
 
@@ -74,16 +76,16 @@ Notice that `$thing` is set to `NULL` by default. This is good practice.
 
 As it stands our plugin does not have any attributes. Let's change that:
 
-    function abc_hello_world($atts, $thing=NULL) {
+~~~ php
+function abc_hello_world($atts, $thing=NULL) {
+    extract(lAtts(array(
+        'name' => '',
+        'text' => 'Pleased to meet you.',
+    ), $atts));
 
-       extract(lAtts(array(
-          'name' =&gt; '',
-          'text' =&gt; 'Pleased to meet you.',
-       ), $atts));
-
-       return 'Hello ' . $name . '! ' . $text;
-    }
-    </pre>
+    return 'Hello '.$name.'! '.$text;
+}
+~~~
 
 The `lAtts()` function is a Textpattern function that helps you deal
 with tag attributes easily. It takes care of all the drudgery of making
@@ -94,9 +96,11 @@ your attributes and any default values.
 In this example, we have defined two attributes: `name` (which has no
 default value) and `text`, which has some default content.
 
-If you refresh your site's page you'll now see
+If you refresh your site's page you'll now see:
 
-    Hello ! Pleased to meet you.
+~~~
+Hello ! Pleased to meet you.
+~~~
 
 Change your tag to read `<txp:abc_hello_world name="Fred" />` and notice
 the difference. Textpattern has read your attribute and used it; the
@@ -114,24 +118,27 @@ conditional tag and take action based on the name given.
 
 Consider this code:
 
-    function abc_hello_world($atts, $thing=NULL) {
+~~~ php
+function abc_hello_world($atts, $thing=NULL) {
+    extract(lAtts(array(
+        'name' => '',
+    ), $atts));
 
-       extract(lAtts(array(
-          'name' =&gt; '',
-       ), $atts));
+    $result = ($name == 'Admin') ? 1 : 0;
 
-       $result = ($name == 'Admin') ? 1 : 0;
-
-       return parse(EvalElse($thing, $result));
-    }
+    return parse(EvalElse($thing, $result));
+}
+~~~
 
 It's a stupid example, but change your Textpattern tag to the following:
 
-    <txp:abc_hello_world name="Fred">
-       <p>Welcome admin</p>
-    <txp:else />
-       <p>Welcome normal user person</p>
-    </txp:abc_hello_world>
+~~~ html
+<txp:abc_hello_world name="Fred">
+    <p>Welcome admin</p>
+<txp:else />
+    <p>Welcome normal user person</p>
+</txp:abc_hello_world>
+~~~
 
 What we're doing here is checking if the tag's `name` attribute is equal
 to "**Admin**". If it is, the conditional branch will execute. If not,
