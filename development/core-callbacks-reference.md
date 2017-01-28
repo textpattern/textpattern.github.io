@@ -14,7 +14,7 @@ On this page:
 
 * [Public-side callbacks](#public-side-callbacks)
 * [Admin-side callbacks](#admin-side-callbacks)
-  * [Regular admin-side callbacks](#sec2-1)
+  * [Major block-level callbacks](#major-block-level-callbacks)
   * [Admin-side criteria callbacks](#sec2-2)
   * [Admin-side validation callbacks](#sec2-3)
   * [Admin-side user-interface callbacks](#sec2-4)
@@ -26,7 +26,7 @@ On this page:
 
 These all trigger at various points during the rendering of publicly viewable content served by Textpattern. Use them to inject content - JavaScript, CSS or HTML - into the page or to alter various facets of visitor interaction with the site. They have *events*, but no *steps*.
 
-#### publish.php
+### publish.php
 
 The callbacks in this section all deal with the web page content itself.
 
@@ -49,7 +49,7 @@ The callbacks in this section all deal with the web page content itself.
 : **When it occurs:** Once the page has been fully rendered.
 : **What it allows:** Replacement of content in the output buffer via search/replace.
 
-#### publish/atom.php
+### publish/atom.php
 
 If you wish to alter atom feeds, these callbacks will help.
 
@@ -61,7 +61,7 @@ If you wish to alter atom feeds, these callbacks will help.
 : **When it occurs:** As soon as the article's data has been populated.
 : **What it allows:** Injection of extra markup after the standard Atom feed items have been generated.
 
-#### publish/rss.php
+### publish/rss.php
 
 If you wish to alter rss feeds, these callbacks will help.
 
@@ -73,7 +73,7 @@ If you wish to alter rss feeds, these callbacks will help.
 : **When it occurs:** As soon as the article's data has been populated.
 : **What it allows:** Injection of extra markup after the standard RSS feed items have been generated.
 
-#### publish/comment.php
+### publish/comment.php
 
 Any time a comment form is rendered or a comment is posted on an article, the following callbacks fire, so use them to intercept or alter comment layout/payloads.
 
@@ -89,7 +89,7 @@ Any time a comment form is rendered or a comment is posted on an article, the fo
 : **When it occurs:** Just after a comment is posted to the database.
 : **What it allows:** Additional processing that might affect other related tables. Argument \#3 is an array of name-value pairs containing the message *text*, *name*, *email*, *web*, *parentid*, *commentid*, *ip*, and visible status of the posted comment.
 
-#### publish/log.php
+### publish/log.php
 
 As long as *Logging* is switched on from the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel), whenever a visitor requests a web page from Textpattern, a hit is registered. Use the callback here to intercept it.
 
@@ -107,37 +107,43 @@ The second type of callback relate to actions that occur in response to various 
 
 The final type of callback is `pluggable_ui()`. These deal with specific chunks of content that appear on the page and allow direct manipulation of individual elements or blocks. They are listed in the [pluggable_ui](http://docs.textpattern.io/development/the-pluggable-ui-function) document.
 
-### Regular admin-side callbacks
+### Major block-level callbacks
 
-TODO: intro para about regular admin-side callbacks
+These callbacks relate to the `<head>` and `<footer>` sections, and navigation area of each admin panel. Raising callbacks on these `event > step` combinations will call your plugin on _every_ panel. Check the global `$event` if you only wish to target a specific panel.
 
-#### lib/txplib_head.php
+`admin_side > head_end`
+: **When it occurs:** Just before the closing `</head>` tag on every admin-side panel.
+: **What it allows:** Injecting JavaScript or style rules into the page's header.
 
-TODO: intro para about what this callback is concerned with
+`admin_side > pagetop`
+: **When it occurs:** Immediately before control is handed to the theme.
+: **What it does:** Renders the navigation bar.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-  `$event`       `$step`         When it occurs                                                     What it allows/does
-  -------------- --------------- ------------------------------------------------------------------ -----------------------------------------------------------------------------------
-  `admin_side`   `head_end`      Just before the closing `</head>` tag on every admin-side panel.   For injecting JavaScript or style rules into the page's header.
-  `admin_side`   `pagetop`       Immediately before control is handed to the theme.                 Renders the navigation bar.
-  `admin_side`   `pagetop_end`   Immediately after the theme has finished.                          Rendering the navigation bar useful for adding admin-wide markup below `pagetop`.
+`admin_side > pagetop_end`
+: **When it occurs:** Immediately after the theme has been loaded and its header rendered. Just before the closing `</header>` tag.
+: **What it allows:** Injection of admin-wide markup below the panel navigation area.
 
-</div>
+`admin_side > main_content`
+: **When it occurs:** Immediatley after the 'announce' area (where feedback messages appear) and before the panel's main content begins. Just inside the `<main>` tag.
+: **What it allows:** Addition of information at the top of any panel, below the navigation area.
 
-**Example:**
+`admin_side > main_content_end`
+: **When it occurs:** Immediately before the closing `</main>` tag at the bottom of the panel.
+: **What it allows:** Addition of information at the bottom of any panel, above the footer area.
 
-TODO: description of code example
+`admin_side > body_end`
+: **When it occurs:** After the theme's footer has been rendered, before the clsing `</body>` tag.
+: **What it allows:** Injection of non-blocking JavaScript `<script>` tags.
 
-TODO: simple code example demonstrating this callback
 
-#### lib/txplib_html.php
+
+### lib/txplib_html.php
 
 TODO: intro para about what this callback is concerned with
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`          `$step`                When it occurs                            What it allows/does
   ----------------- ---------------------- ----------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------
-  `admin_side`      `body_end`             Once the theme has rendered its footer.   Tacks on any extra admin-wide information immediately before the closing `</body>` tag.
   `some_event_ui`   `multi_edit_options`   -                                         Alters or augments the multi-edit select list; argument \#3 contains the options array which is passed by reference so it may be altered directly.
 
 </div>
