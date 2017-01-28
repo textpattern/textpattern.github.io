@@ -119,12 +119,41 @@ The admin side has many places where plugins and themes can inject or replace co
 
 `admin_side > header`
 : **When it occurs:** When the theme's navigation bar is rendered.
-: **What it allows:** Alteration of the main panel navigation area.
+: **What it allows:** Alteration of the main panel navigation area. Theme authors do this by writing a `header()` function in their theme's PHP file.
+
+`admin_side > theme_name`
+: **When it occurs:** When the theme's name is set.
+: **What it allows:** Alteration of the theme's name.
 
 ### Footer block
 
 `admin_side > footer`
 : **When it occurs:** When the theme's footer bar is rendered.
-: **What it allows:** Alteration of the footer area of each panel.
+: **What it allows:** Alteration of the footer area of each panel. Theme authors do this by writing a `footer()` function in their theme's PHP file. 
 
+### Widgets
+
+`{event}_ui > inputlabel.{name}`
+: **When it occurs:** Whenever a label plus its associated input control are rendered together. The `{event}` is the panel on which the widget appears. The `{name}` is the control's `name` attribute.
+: **What it allows:** Alteration of any label and input control, such as those found on the Preferences administration panel or the File Edit panel.
+: **Argument \#3:** The default markup.
+: **Argument \#4:** The values passed in as arguments to the function: `name`, `input`, `label`, `help`, `atts`, `wraptag_val`.
+
+`{event}_ui > upload_form`
+: **When it occurs:** Whenever an HTML upload form  is rendered. The `{event}` is the panel on which the form control appears.
+: **What it allows:** Alteration of an upload form, such as those found on the Files and Images administration panels.
+: **Argument \#3:** The default markup.
+: **Argument \#4:** The values passed in as arguments to the function.
+
+`admin_help > {help_topic}`
+: **When it occurs:** Whenever an 'information' symbol is rendered that explains a particular UI feature. The `{help_topic}` is the name of the item to which the topic applies.
+: **What it allows:** Alteration of any 'i' link, primarily to redirect visitors to a resource other than a core topic.
+: **Argument \#3:** The default markup.
+: **Argument \#4:** The values passed in as arguments to the function: `help_var`, `width`, `height`, `class`.
+
+`admin_help_field > {string}`
+: **When it occurs:** Whenever inline help is rendered that explains a particular UI feature. The `{string}` is the key of the `gTxt()` translation string to fetch that describes the UI feature.
+: **What it allows:** Addition of content below an input control to further explain its role. For example, the 'Title' element on the Write administration panel might give information about what constitutes a good, concise title for your articles.
+: **Argument \#3:** The default markup.
+: **Argument \#4:** The value of `help_var` passed into the function.
 
