@@ -43,19 +43,7 @@ You don't need to wildcard query text at the beginning or the end (e.g. "time" w
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of articles which meet the criteria.
 
-As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in. The drop-down-list toggle button provides the following search criteria:
-
-* Search all (default)
-* ID
-* Title, body and excerpt
-* Section
-* Keywords
-* Categories
-* Status
-* Author
-* Article image
-* Posted
-* Modified
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
 **Examples:** You can search (or list) an article by its ID number or date posted. You can list all articles of an author, you even don't need the full author ID. Choose 'Author' and typing "adm" possibly is enough for the admin (provided no other author has "adm" in his ID). You can list all 'Drafts' (choose 'Status' and type "dr").
 
@@ -101,18 +89,7 @@ In the first column you will find a checkbox for each article. Here you can sele
 
 In order to quickly select ranges of articles click the checkbox of the first article you want to mark, press and hold the shift key, then click the checkbox of the last article in the range. All articles between will be checked too. You can add ranges to your selection by repeating these steps.
 
-For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
-
-* Change section
-* Change Category1 (if article categories are defined)
-* Change Category2 (if article categories are defined)
-* Change status
-* Change comments (if comments are turned on globally)
-* Change author
-* Duplicate
-* Delete
-
-When selecting a 'Change'-option you will get another drop-down-list which will give you the values to choose from, e.g. the list of authors, sections or on/off for comments. After selecting the options you want to perform click 'Go' to start the changes. A pop-up window will ask "Are you sure?" and then (if 'yes') the changes will be performed.
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform click 'Go' to start the changes.
 
 ## Pages and articles listed per page
 

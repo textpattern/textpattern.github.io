@@ -86,16 +86,7 @@ Text entered in the textarea will be treated as a complete phrase (see the [Arti
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of files which meet the criteria.
 
-As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in. The drop-down-list toggle button provides the following search criteria:
-
-* Search all (default)
-* ID
-* Name
-* Title
-* Description
-* Category
-* Status
-* Author
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
 ## List of existing files
 
@@ -139,15 +130,7 @@ Each link will open a pop-up window with a 'tag builder'. You can choose the ele
 
 In the first column you will find a checkbox for each file. Here you can select files you want to change in a bulk manner. You can mark files by checking the checkbox or you can use the checkbox in the head bar of the list to mark all files on that page.
 
-For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
-
-* Change category (if file categories are defined)
-* Change author
-* Change status
-* Reset download count
-* Delete
-
-When selecting a 'Change'-option you will get another drop-down-list which will give you the values to choose from, e.g. the list of authors, or categories. After selecting the options you want to perform click 'Go' to start the changes. A pop-up window will ask "Are you sure?" and then (if 'yes') the changes will be performed.
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform click 'Go' to start the changes.
 
 ## Pages and files listed per page
 
