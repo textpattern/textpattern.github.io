@@ -15,6 +15,7 @@ On this page:
 * [Public-side callbacks](#public-side-callbacks)
 * [Admin-side callbacks](#admin-side-callbacks)
   * [Major block-level callbacks](#major-block-level-callbacks)
+  * [Widget callbacks](#widget-callbacks)
   * [Admin-side criteria callbacks](#sec2-2)
   * [Admin-side validation callbacks](#sec2-3)
   * [Admin-side user-interface callbacks](#sec2-4)
@@ -135,18 +136,21 @@ These callbacks relate to the `<head>` and `<footer>` sections, and navigation a
 : **When it occurs:** After the theme's footer has been rendered, before the clsing `</body>` tag.
 : **What it allows:** Injection of non-blocking JavaScript `<script>` tags.
 
+### Widget callbacks
+
+These callbacks are raised when input elements or constructs are rendered. They allow you to target input controls such as multi-edit options, pagination widgets, etc.
+
+`{event}_ui > multi_edit_options`
+: **When it occurs:** Whenever a list of multi-edit options is rendered. The `{event}` is the panel on which the multi-edit control appears.
+: **What it allows:** Alteration or augmentation of the multi-edit select list. Argument \#3 contains the options array, which is passed by reference so it may be altered directly.
+
+`{event}_ui > pageby_values`
+: **When it occurs:** Whenever a set of pagination options are rendered. The `{event}` is the panel on which the pagination options appear.
+: **What it allows:** Alteration or augmentation of the steps in which pagination may occur, i.e. how many 'rows' of data are shown per page.
+: **Argument \#3:** The array of sizes, which is passed by reference so it may be altered directly.
 
 
-### lib/txplib_html.php
 
-TODO: intro para about what this callback is concerned with
-
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-  `$event`          `$step`                When it occurs                            What it allows/does
-  ----------------- ---------------------- ----------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------
-  `some_event_ui`   `multi_edit_options`   -                                         Alters or augments the multi-edit select list; argument \#3 contains the options array which is passed by reference so it may be altered directly.
-
-</div>
 
 #### include/txp_article.php
 
@@ -638,24 +642,10 @@ themes.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-  `$event`       `$step`        What it allows/does                                   Argument notes
-  -------------- -------------- ----------------------------------------------------- ---------------------------
-  `admin_side`   `theme_name`   Alters a theme's name when it is being initialized.   There is no argument \#4.
-
-notextile.
-
 </div>
 #### *lib/txplib_head.php*
 
 \[todo:intro para about what this callback is concerned with\]
-
-notextile.
-
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-  `$event`       `$step`    What it allows/does                                                                                                                                         Argument notes
-  -------------- ---------- ----------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------
-  `admin_side`   `header`   Replaces the standard `pagetop` header with something of your choosing. Theme authors do this by writing a `header()` function in their theme's PHP file.   There is no argument \#4.
 
 notextile.
 
@@ -666,11 +656,8 @@ notextile.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
-  `$event`          `$step`        What it allows/does                                                                                                                                                                                                                                                          Argument notes
-  ----------------- -------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  admin_side       footer         Replaces the standard `end_page` footer with something of your choosing. Theme authors do this by writing a `footer()` function in their theme's PHP file. There is no spoon.                                                                                                -
-  some_event_ui   upload_form   Alters or replaces Textpattern's standard upload forms throughout the admin side. `some_event` is the name of the event on the panel upon which the input form appears (e.g. on the **Files** panel, the event is `file` so the `pluggable_ui()` event name is `file_ui`).   Argument \#4 contains the remainder of the arguments to the `upload_form()` function (i.e. 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class').
+
+some_event_ui   upload_form   Alters or replaces Textpattern's standard upload forms throughout the admin side. `some_event` is the name of the event on the panel upon which the input form appears (e.g. on the **Files** panel, the event is `file` so the `pluggable_ui()` event name is `file_ui`).   Argument \#4 contains the remainder of the arguments to the `upload_form()` function (i.e. 'label', 'pophelp', 'step', 'event', 'id', 'max_file_size', 'label_id' and 'class').
 
 notextile.
 
