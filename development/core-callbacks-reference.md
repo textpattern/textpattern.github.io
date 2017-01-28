@@ -142,12 +142,12 @@ These callbacks are raised when input elements or constructs are rendered. They 
 
 `{event}_ui > multi_edit_options`
 : **When it occurs:** Whenever a list of multi-edit options is rendered. The `{event}` is the panel on which the multi-edit control appears.
-: **What it allows:** Alteration or augmentation of the multi-edit select list. Argument \#3 contains the options array, which is passed by reference so it may be altered directly.
+: **What it allows:** Alteration or augmentation of the multi-edit select list. Argument \#3 contains the options array, passed by reference so it may be altered directly.
 
 `{event}_ui > pageby_values`
 : **When it occurs:** Whenever a set of pagination options are rendered. The `{event}` is the panel on which the pagination options appear.
 : **What it allows:** Alteration or augmentation of the steps in which pagination may occur, i.e. how many 'rows' of data are shown per page.
-: **Argument \#3:** The array of sizes, which is passed by reference so it may be altered directly.
+: **Argument \#3:** The array of sizes, passed by reference so it may be altered directly.
 
 
 
