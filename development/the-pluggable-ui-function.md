@@ -125,7 +125,7 @@ The admin side has many places where plugins and themes can inject or replace co
 : **When it occurs:** When the theme's name is set.
 : **What it allows:** Alteration of the theme's name.
 
-### Footer block
+### Footer block
 
 `admin_side > footer`
 : **When it occurs:** When the theme's footer bar is rendered.
