@@ -61,17 +61,7 @@ Text entered in the textarea will be treated as a complete phrase (see the [Arti
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of comments which meet the criteria.
 
-As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in. The drop-down-list toggle button provides the following search criteria:
-
-* Search all (default)
-* ID
-* Parent
-* Name
-* Message
-* Email
-* Website
-* IP
-* Visible
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
 ## List of existing comments
 
@@ -111,14 +101,7 @@ In the first column you will find a checkbox for each comment. Here you can sele
 
 In order to quickly select ranges of comments click the checkbox of the first comment you want to mark, press and hold the shift key, then click the checkbox of the last comment in the range. All comments between will be checked too. You can add ranges to your selection by repeating these steps.
 
-For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
-
-* Show
-* Hide (unmoderated)
-* Hide (spam)
-* Delete
-
-After selecting the options you want to perform click 'Go' to start the changes. A pop-up window will ask "Are you sure?" and then (if 'yes') the changes will be performed.
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform click 'Go' to start the changes.
 
 ## Pages and comments listed per page
 

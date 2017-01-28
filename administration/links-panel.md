@@ -89,16 +89,7 @@ Text entered in the textarea will be treated as a complete phrase (see the [Arti
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of links which meet the criteria.
 
-As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in. The drop-down-list toggle button provides the following search criteria:
-
-* Search all (default)
-* ID
-* Name
-* URL
-* Description
-* Category
-* Author
-* Sort value
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
 ## List of existing links
 
@@ -130,13 +121,7 @@ In the first column you will find a checkbox for each link. Here you can select 
 
 In order to quickly select ranges of links click the checkbox of the first link you want to mark, press and hold the shift key, then click the checkbox of the last link in the range. All links between will be checked too. You can add ranges to your selection by repeating these steps.
 
-For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
-
-* Change category (if link categories are defined)
-* Change author
-* Delete
-
-When selecting a 'Change'-option you will get another drop-down-list which will give you the values to choose from, e.g. the list of authors or categories. After selecting the options you want to perform click 'Go' to start the changes. A pop-up window will ask "Are you sure?" and then (if 'yes') the changes will be performed.
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform click 'Go' to start the changes.
 
 ## Pages and links listed per page
 

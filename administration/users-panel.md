@@ -45,13 +45,7 @@ All users can see and use the **Change your password** button at the top of the 
 
 ### Administrator controls
 
-Administrators and Publisher can see and use a selection list control under the user accounts table. The selection menu options are:
-
-* Change privilege
-* Reset password
-* Delete
-
-The control menu works in relation to the check boxes that begin each table record.
+Administrators and Publisher can see and use a selection list control under the user accounts table. The control menu works in relation to the check boxes that begin each table record.
 
 ## User data form
 

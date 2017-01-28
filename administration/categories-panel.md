@@ -35,18 +35,13 @@ The reason for these changes is that category names can be part of URLs and Text
 
 Click on a category name from the list of existing categories and you get to a new panel with four fields:
 
-1. Category name
-2. Parent category
-3. Category title
-4. Category description
+**Category name:** is the one used in URLs and other technical purposes. It contains no special characters and no spaces, as outlined above.
 
-The 'Category name' is the one used in URLs and other technical purposes. It contains no special characters and no spaces, as outlined above.
+**Parent category:** can be defined to create a hierarchical category structure for visual grouping. There are also some plugins that take advantage of nested category lists. The option of appending to a parent is only available if other categories in this context already exist.
 
-A 'Parent category' can be defined to create a hierarchical category structure for visual grouping. There are also some plugins that take advantage of nested category lists. The option of appending to a parent is only available if other categories in this context already exist.
+**Category title:** is your original title with special characters, spaces and all. This is the title that **will appear on your pages by default** if you use article tags such as `<txp:category1 />`, `<txp:category2 />` or `<txp:category_list />` (although this can be overrode within tag attributes, if you so wish).
 
-The 'Category title' is your original title with special characters, spaces and all. This is the title that **will appear on your pages by default** if you use article tags such as `<txp:category1 />`, `<txp:category2 />` or `<txp:category_list />` (although this can be overrode within tag attributes, if you so wish).
-
-The 'Category description' can be harnessed, for example, as meta data when you display an article category listing page.
+**Category description:** can be harnessed, for example, as meta data when you display an article category listing page.
 
 These fields exist for all four kinds of content (articles, images, files and links). However, the tags mentioned above (`<txp:category1 />`, `<txp:category2 />` and `<txp:category_list />`) are only for article categories. For images, files and links there are other tags or tag attributes. See the [Tag reference index](http://docs.textpattern.io/tags) for further details on tag usage.
 

@@ -56,11 +56,11 @@ You open the Section property editor when creating a new section or choosing to 
 
 **Uses style:** Textpattern assigns its default style (CSS) automatically (to ensure baseline publishing capabilities) but you can select differently if you have additonal [Styles](http://docs.textpattern.io/administration/styles-panel) already created; You can reassign sections to styles at any time.
 
-**Section appears on front page?:** This is an extremely important option and should be considered with respect to the overall design of the site. Remember that section content only shows up when that section is called, except for the front page. This is the control that permits or denies content from showing up when the base `index.php` is called with no arguments.
+**On front page?:** This is an extremely important option and should be considered with respect to the overall design of the site. Remember that section content only shows up when that section is called, except for the front page. This is the control that permits or denies content from showing up when the base `index.php` is called with no arguments.
 
-**Syndicate articles in this section?:** Textpattern creates RSS and Atom feeds for those who like to run news aggregators. If this selection is turned on, the feed will display article content from this section.
+**Syndicate articles?:** Textpattern creates RSS and Atom feeds for those who like to run news aggregators. If this selection is turned on, the feed will display article content from this section.
 
-**Include this section in site search?:** Textpattern provides a search function. It may be desirable to segregate some content and not make it available via the search function. This controls permits or denies the search from finding this content per section.
+**Searchable?:** Textpattern provides a search function. It may be desirable to segregate some content and not make it available via the search function. This controls permits or denies the search from finding this content per section.
 
 **Description:** The section description can be harnessed, for example, as meta data when you display an section article listing page.
 
@@ -90,16 +90,7 @@ Text entered in the textarea will be treated as a complete phrase (see the [Arti
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of links which meet the criteria.
 
-As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in. The drop-down-list toggle button provides the following search criteria:
-
-* Search all (default)
-* Name
-* Title
-* Page
-* Style
-* Section appears on front page?
-* Syndicate articles in this section?
-* Include this section in site search?
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
 ## List of existing sections
 
@@ -115,16 +106,7 @@ In the first column you will find a checkbox for each section. Here you can sele
 
 In order to quickly select ranges of sections click the checkbox of the first section you want to mark, press and hold the shift key, then click the checkbox of the last section in the range. All sections between will be checked too. You can add ranges to your selection by repeating these steps.
 
-For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. The following changes are available:
-
-* Uses page
-* Uses style
-* Section appears on front page?
-* Syndicate articles in this section?
-* Include this section in site search?
-* Delete
-
-When selecting a 'Change'-option you will get another drop-down-list which will give you the values to choose from, e.g. the list of pages or styles available. After selecting the options you want to perform click 'Go' to start the changes. A pop-up window will ask "Are you sure?" and then (if 'yes') the changes will be performed.
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform click 'Go' to start the changes.
 
 ## Pages and sections listed per page
 
