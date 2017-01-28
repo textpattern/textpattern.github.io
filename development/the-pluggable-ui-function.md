@@ -95,9 +95,9 @@ function abc_hello_world($event, $step) {
     echo '<p>Hello, World!</p>';
 ~~~
 
-So far `pluggable_ui()` is not used at all in the plugin. We've used `register_callback()` to add the plugin's preferences under [Extensions administration region](http://docs.textpattern.io/administration/extensions-region), like we could use it to do most everything else to admin-side panels too.
+So far `pluggable_ui()` is not used at all in the plugin. Instead, `register_callback()` has been used to add the plugin's preferences under the [Extensions administration region](http://docs.textpattern.io/administration/extensions-region), like we could use it to do most everything else to admin-side panels too.
 
-But in the rare case we might want to allow other plugins to alter the output of abc_hello, we could replace `echo '<p>Hello, World!</p>';` part with:
+But if you wished to allow other plugins to alter the output of abc_hello, you could replace `echo '<p>Hello, World!</p>';` part with:
 
 ~~~ php
 echo pluggable_ui('abc_hello', '', '<p>Hello, World!</p>');
@@ -109,8 +109,22 @@ Now other plugins can step in with something like this:
 register_callback('xyz_hello_world', 'abc_hello', '');
 ~~~
 
-And that is pretty much all `pluggable_ui()` brings to the table anymore.
+If no other plugin overrides the content by registering a callback on the `abc_hello` event, `<p>Hello, World!</p>` is rendered.
 
 ## Events and steps reference
 
-TODO
+The admin side has many places where plugins and themes can inject or replace content on a block-by-block basis. These are all listed here.
+
+### Header block
+
+`admin_side > header`
+: **When it occurs:** When the theme's navigation bar is rendered.
+: **What it allows:** Alteration of the main panel navigation area.
+
+### Footer block
+
+`admin_side > footer`
+: **When it occurs:** When the theme's footer bar is rendered.
+: **What it allows:** Alteration of the footer area of each panel.
+
+
