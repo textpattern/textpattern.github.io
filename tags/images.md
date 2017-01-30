@@ -168,10 +168,10 @@ Display all images in the database, sorted by `id` in descending order.
 
 Context-sensitivity mode. Returns an image list based on the first of:
 
-# Article image field, if on an individual article page;
-# Images matching category, if on a category list page;
-# Images matching author, of on an author list page;
-# All images in the database.
+* Article image field, if on an individual article page;
+* Images matching category, if on a category list page;
+* Images matching author, of on an author list page;
+* All images in the database.
 
 ~~~ html
 <txp:images id="" />
