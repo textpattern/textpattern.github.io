@@ -26,18 +26,16 @@
         </ol>
     </nav>
 
-    <article itemscope itemtype="http://schema.org/Article">
+    <article>
 
         {{ content }}
 
         {% if page.tags %}
         <footer class="article-footer">
             <span class="ui-icon ui-icon-tag">Tags:</span>
-            <span itemprop="keywords">
-                {% for tag in page.tags %}
-                <a rel="category tag" href="/tags#{{ tag }}" title="View documentation in this category">{{ tag }}</a>
-                {% endfor %}
-            </span>
+            {% for tag in page.tags %}
+            <a rel="category tag" href="/tags#{{ tag }}" title="View documentation in this category">{{ tag }}</a>
+            {% endfor %}
         </footer>
         {% endif %}
     </article>
