@@ -66,7 +66,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `lastmod` (date last modified). \\
 `lastmodid` (author name of last modification). \\
 `posted` (date posted). \\
-`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
+`rand()` ([random](https://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
 `section`. \\
 `status`. \\
 `title`. \\

@@ -87,7 +87,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `downloads`. \\
 `created`. \\
 `modifie`. \\
-`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
+`rand()` ([random](https://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
 Adding a space and then one of either `asc` or `desc` orders by ascending or descending value, respectively.
 : **Default:** `filename asc`.
 

@@ -109,7 +109,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `h` (image `height` attribute). \\
 `id` (image id#). \\
 `name` (image name). \\
-`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
+`rand()` ([random](https://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
 `thumb_h` (image thumbnail `height` attribute). \\
 `thumb_w` (image thumbnail `width` attribute). \\
 `w` (image `width` attribute).

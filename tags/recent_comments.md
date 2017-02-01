@@ -61,7 +61,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `name`. \\
 `parentid` (article ID#). \\
 `posted`. \\
-`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
+`rand()` ([random](https://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
 `web`.
 : **Default:** `posted asc`.
 

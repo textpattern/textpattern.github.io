@@ -100,4 +100,4 @@ For advanced users only!
 
 The latest, **potentially unstable**, bleeding-edge code is available at [the GitHub repository](https://github.com/textpattern/textpattern).
 
-If you're thinking about testing this code, then we shouldn't have to tell you what [git](http://git-scm.com) is or how to use it. If you don't know, then you don't really want to be messing about here!
+If you're thinking about testing this code, then we shouldn't have to tell you what [git](https://git-scm.com) is or how to use it. If you don't know, then you don't really want to be messing about here!

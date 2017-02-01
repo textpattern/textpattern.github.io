@@ -60,7 +60,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `h` (image height). \\
 `id` (image id#). \\
 `name` (image name). \\
-`rand()` ([random](http://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
+`rand()` ([random](https://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
 `thumbnail`. \\
 `w` (image width). \\
 Each field in the `txp_image` database table can be used as a sort key.
