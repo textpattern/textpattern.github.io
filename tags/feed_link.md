@@ -102,7 +102,7 @@ Creates a link to the site's feed for articles in all sections and categories. I
 
 ### Example 4: With Symbolset's 'rss' glyph
 
-If you happen to use the 'rss' glyph in the social media set of [Symbolset](http://symbolset.com), you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first three list items show below. For the RSS glyph you need to put the selectors in the `<li>` since you can't put them in the `<a>`, as the last list item shows:
+If you happen to use the 'rss' glyph in the social media set of [Symbolset](https://symbolset.com), you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first three list items show below. For the RSS glyph you need to put the selectors in the `<li>` since you can't put them in the `<a>`, as the last list item shows:
 
 ~~~ html
 <ul class="socbar">

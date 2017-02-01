@@ -38,7 +38,7 @@ The other is to output raw keyword text anywhere else:
 
 Context of use must be within a single article (as opposed to an article list). The tag can be added directly in [Page templates](http://docs.textpattern.io/themes/page-templates-explained) or as part of 'article' type [Form templates](http://docs.textpattern.io/themes/form-templates-explained). Either way, you may also place it in a given article tag.
 
-Note: The corresponding keywords field has a 255 character limit by default, which includes spaces and commas. This is the MySQL database default. You can edit the default using [phpMyAdmin](http://www.phpmyadmin.net), for example.
+Note: The corresponding keywords field has a 255 character limit by default, which includes spaces and commas. This is the MySQL database default. You can edit the default using [phpMyAdmin](https://www.phpmyadmin.net), for example.
 {: .alert-block .information}
 
 ## Attributes

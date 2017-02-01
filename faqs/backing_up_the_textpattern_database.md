@@ -18,7 +18,7 @@ PHP intended to handle the administration of MySQL over the Web.
 Currently it can create and drop databases, create/drop/alter tables,
 delete/edit/add fields, execute any SQL statement, manage keys on
 fields. Visit the
-[phpMyAdmin](http://www.phpmyadmin.net/home_page/index.php) website to
+[phpMyAdmin](https://www.phpmyadmin.net/home_page/index.php) website to
 download if you dont have it installed, its free.
 
 <ol>
@@ -97,7 +97,7 @@ Now you can go ahead and select a compression method. And than click Go.
 </li>
 </ol>
 **Note:** Reading the
-[phpMyAdmin](http://www.phpmyadmin.net/home_page/index.php)
+[phpMyAdmin](https://www.phpmyadmin.net/home_page/index.php)
 documentation, which has more detailed backup information, is suggested.
 
 ### Backing up with Rob Sable rss_admin_db_manager Plugin {#backing-up-with-rob-sable-rss_admin_db_manager-plugin .sectionedit2#backing_up_with_rob_sable_rss_admin_db_manager_plugin}

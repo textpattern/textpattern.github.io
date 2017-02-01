@@ -2,7 +2,7 @@ h1. How do I back up Textpattern? [todo]
 
 Currently, there is no built-in backup or export function in Textpattern.  You can use several tools designed for the purpose:
 
-*phpMyAdmin* is supplied by most web hosts.  The phpMyAdmin FAQ has a brief "explanation":http://www.phpmyadmin.net/documentation/#faq6_4 of how to back up and restore.
+*phpMyAdmin* is supplied by most web hosts.  The phpMyAdmin FAQ has a brief "explanation":https://www.phpmyadmin.net/documentation/#faq6_4 of how to back up and restore.
 
 *mysqldump* generates SQL backups that can be restored using phpMyAdmin or with the mysql command-line client.  See the "MySQL manual":http://dev.mysql.com/doc/mysql/en/mysqldump.html for details.
 

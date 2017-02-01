@@ -292,7 +292,7 @@ Other tags used: [if_different](if_different), [image_info](image_info), [thumbn
 
 ### Example 3: Integration with third-party PHP resizing script (TimThumb)
 
-[TimThumb](http://www.binarymoon.co.uk/projects/timthumb/) is a simple, flexible, PHP script that resizes images directly on your web server. [Read the TimThumb documentation](http://www.binarymoon.co.uk/2010/08/timthumb/) for basic installation instructions (also requires the GD image library). Then, for example, you can use the following:
+[TimThumb](https://www.binarymoon.co.uk/projects/timthumb/) is a simple, flexible, PHP script that resizes images directly on your web server. [Read the TimThumb documentation](https://www.binarymoon.co.uk/2010/08/timthumb/) for basic installation instructions (also requires the GD image library). Then, for example, you can use the following:
 
 ~~~ html
 <txp:images limit="6" category="gallery">

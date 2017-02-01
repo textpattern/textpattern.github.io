@@ -68,7 +68,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ### Example 4: With Symbolset's 'email' glyph
 
-If you happen to use the 'email' glyph in the social media set of [Symbolset](http://symbolset.com), you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first three list items show below. For the email glyph you need to put the selectors in the `<li>` since you can't put them in the `<a>`, as the last list item shows:
+If you happen to use the 'email' glyph in the social media set of [Symbolset](https://symbolset.com), you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first three list items show below. For the email glyph you need to put the selectors in the `<li>` since you can't put them in the `<a>`, as the last list item shows:
 
 ~~~ html
 <ul class="socbar">
