@@ -53,8 +53,7 @@ below this line still needs editing
 ### System security and troubleshooting {#system-security-and-troubleshooting .sectionedit2#system_security_and_troubleshooting}
 
 The next step is to go the
-[diagnostics](/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics)
-panel where you'll see a few items in red that need clearing up
+[Diagnostics administration panel](http://docs.textpattern.io/administration/diagnostics-panel) where you'll see a few items in red that need clearing up
 following a new install. New install errors are standard procedure to
 let you know to delete the setup folder (if you haven't already), and to
 create write permissions on the *tmp* and *files* folders in the [file
@@ -66,11 +65,10 @@ each case.
 
 Since user accounts are rather important for being able to do anything
 at all, it makes sense to go have a look at the
-[users](/home/www/zendstudio/dokuwiki/bin/doku.php?id=users) panel next.
+[Users administration panel](http://docs.textpattern.io/administration/users-panel) next.
 Here is where you change your password and email address. And if other
 users will have access to the admin-side, this is where you'll create
-and edit their account details too, including
-[user_roles_and_permissions](/home/www/zendstudio/dokuwiki/bin/doku.php?id=user_roles_and_permissions).
+and edit their account details too, including [User roles and privileges](http://docs.textpattern.io/administration/user-roles-and-privileges).
 
 **Recommended reading:**
 

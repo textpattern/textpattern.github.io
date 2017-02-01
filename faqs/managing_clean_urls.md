@@ -59,8 +59,7 @@ to have clean URLs using plugins like
 It is assumed at this point that you have already set your site
 preferences as you want them to be in the [Basic Preferences\] panel,
 and you have probably even tried fixing any diagnostics issues in the
-\[\[diagnostics](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences_panel_and_you_have_probably_even_tried_fixing_any_diagnostics_issues_in_the_diagnostics)
-panel.
+[Diagnostics administration panel](http://docs.textpattern.io/administration/diagnostics-panel).
 
 However, what you should do now is go back and make sure you have selected the 'Messy' option in the [Article URL pattern](http://docs.textpattern.io/administration/preferences-panel#article-url-pattern) section of the Preferences panel (this enables you to establish some site structure and troubleshoot diagnostics easier, which are the next things to take care of).
 
