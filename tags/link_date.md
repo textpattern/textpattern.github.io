@@ -52,5 +52,6 @@ Tag will accept the following attributes (**case-sensitive**):
     <txp:link_name escape="html" />:
 </a>
 (<txp:link_date />)
+~~~
 
 Other tags used: [link_name](link_name), [link_url](link_url).

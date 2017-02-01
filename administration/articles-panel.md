@@ -65,7 +65,7 @@ The default view shows these columns:
 
 **Section:** the section that the article belongs to.
 
-**Status:** this is the status of the article. if set to Live, then this article is viewable on your live site (except if it has expired, see the [expired](http://docs.textpattern.io/tags/expired) tag. Might otherwise be set to 'Draft', 'Pending', etc.
+**Status:** this is the status of the article. if set to Live, then this article is viewable on your live site (except if it has expired, see the [expired](http://docs.textpattern.io/tags/expires) tag. Might otherwise be set to 'Draft', 'Pending', etc.
 
 **Author:** this is the name of the person who posted the article (only if more than one author exists in the [Users administration panel](http://docs.textpattern.io/administration/users-panel)).
 

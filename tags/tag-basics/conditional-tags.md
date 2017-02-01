@@ -40,7 +40,7 @@ On your default article page you might see something like this:
 
 Taking this block by block we see that the conditional [if_category"](http://docs.textpattern.io/tags/if_category) determines if the visitor has clicked a category hyperlink. If they have, we are in the **list** view. If they have not, the [else](http://docs.textpattern.io/tags/else) portion is executed.
 
-In this example, the [article](article) in the *else* portion is treated as an individual article, by virtue of it not being a category list. In more complex pages it may be part of a larger nested structure and therefore could be a different type of list (e.g. search results), but for now we'll take it at face value and assume it is an individual article.
+In this example, the [article](http://docs.textpattern.io/tags/article) in the *else* portion is treated as an individual article, by virtue of it not being a category list. In more complex pages it may be part of a larger nested structure and therefore could be a different type of list (e.g. search results), but for now we'll take it at face value and assume it is an individual article.
 
 Since the only attribute in use in this `<txp:article />` tag is `wraptag`, the tag will use the *default* form to render the article, and wrap the entire contents in HTML `<div>` tags. If you had specified your own `form` attribute, the article contents would be rendered by your chosen form instead.
 

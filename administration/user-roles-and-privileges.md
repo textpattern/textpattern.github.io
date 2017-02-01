@@ -271,7 +271,7 @@ Table 2 represents the two *extended* regions - **Home** and **Extensions** - th
                 <td><span class="error">Blocked</span></td>
             </tr>
             <tr>
-                <th scope="row"><a href="http://docs.textpattern.io/administration/extensions-panel">Extensions</a></th>
+                <th scope="row"><a href="http://docs.textpattern.io/administration/extensions-region">Extensions</a></th>
                 <td><span class="success">Full</span></td>
                 <td><span class="success">Full</span></td>
                 <td><span class="error">Blocked</span></td>

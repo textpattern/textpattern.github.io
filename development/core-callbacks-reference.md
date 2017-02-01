@@ -615,7 +615,7 @@ notextile.
 
 TODO: intro para about what this callback is concerned with
 
-See the [Preferences administration panel](http://docs.textpattern.io/administration/admin/preferences-panel) documentation.
+See the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel) documentation.
 
 notextile.
 

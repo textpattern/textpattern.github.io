@@ -22,7 +22,7 @@ On this page:
 5. Open a web browser and go to `example.com/textpattern/setup/index.php` (or `example.com/sub-directory/textpattern/setup/index.php` if you're running it from a sub directory), where `example.com` is your web domain (and `sub-directory` is your actual sub-directory of choice).
 6. Follow the instructions in the web browser.
 
-If you require more information, please refer to the [Detailed installation instructions](http://docs.textpattern.io/installation/detailed-installation-instructions).
+If you require more information, please refer to the [Detailed installation instructions](http://docs.textpattern.io/installation/).
 
 ## Upgrade to the newest stable release
 
@@ -44,4 +44,4 @@ Warning: Unknown column 'user_name' in 'where clause' select name, val from txp_
 
 This is expected behaviour for the very first login after the upgrade. Every further move in the admin side should not throw any error messages.
 
-If you require more information, please refer to the [Detailed installation instructions](http://docs.textpattern.io/installation/detailed-installation-instructions).
+If you require more information, please refer to the [Detailed installation instructions](http://docs.textpattern.io/installation/).

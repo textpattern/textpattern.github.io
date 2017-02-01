@@ -101,7 +101,7 @@ Public-side (aka 'client-side' or 'front-side') plugins are those that enable co
 
 Admin-side plugins provide site administrators and designers the ability to alter the [administration](http://docs.textpattern.io/administration/) UI and/or functionality in some way.
 
-Admin-side plugins often make use of the [Extensions adninistration region](http://docs.textpattern.io/administration/extensions). In other words, if an admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the **Extensions** region.
+Admin-side plugins often make use of the [Extensions adninistration region](http://docs.textpattern.io/administration/extensions-region). In other words, if an admin-side plugin is designed to provide a user with special preferences, search mechanisms, functional controls, and so forth, they would be made available on their own sub-panel under the **Extensions** region.
 
 * [Admin-side plugin tutorial](http://docs.textpattern.io/development/admin-side-plugin-tutorial) - A basic tutorial to get acquainted with the tricker kinds of plugins to build.
 
@@ -430,7 +430,7 @@ These may be useful depending on the kind of plugin you're building.
 -   [Database schema
     reference](http://docs.textpattern.io/development/database-schema-reference)
     (If your plugin will need a database table.)
--   [**Extensions**](http://docs.textpattern.io/administration/extensions)
+-   [**Extensions**](http://docs.textpattern.io/administration/extensions-region)
     (If your admin-side plugin will provide *Publisher* controls in it's
     own panel under **Extensions**.)
 

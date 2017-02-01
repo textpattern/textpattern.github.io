@@ -59,4 +59,4 @@ This tag has no attributes.
 </p>
 ~~~
 
-Other tags used: [comment_email_input](comment_email_input), [comments_help](comments_help), [comment_message_input](comment_message-input), [comment_name_input](comment_name_input), [comment_remember](comment_remember), [comment_submit](comment_submit), [comment_web_input](comment_web_input).
+Other tags used: [comment_email_input](comment_email_input), [comments_help](comments_help), [comment_message_input](comment_message_input), [comment_name_input](comment_name_input), [comment_remember](comment_remember), [comment_submit](comment_submit), [comment_web_input](comment_web_input).

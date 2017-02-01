@@ -13,7 +13,7 @@ The Users administration panel is where user accounts are accessed and managed.
 On this page:
 
 * [User accounts table](#user-accounts-table)
-  * [Add new author button](add-new-author-button)
+  * [Add new author button](#add-new-author-button)
   * [Change your password button](#change-your-password-button)
   * [Administrator controls](#administrator-controls)
 * [User data form](#user-data-form)
