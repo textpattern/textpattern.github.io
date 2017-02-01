@@ -114,7 +114,7 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 `lastmod` (date last modified). \\
 `lastmodid` (author name of last modification). \\
 `posted` (date posted). \\
-`rand()` ([random](https://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
+`rand()` ([random](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand)). \\
 `section`. \\
 `status`. \\
 `title`. \\

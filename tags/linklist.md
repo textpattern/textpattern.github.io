@@ -85,7 +85,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `id` (link id#). \\
 `linkname`. \\
 `linksort`. \\
-`rand()` ([random](https://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
+`rand()` ([random](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand)). \\
 `url`.
 : **Default:** `linksort asc`.
 

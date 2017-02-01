@@ -35,7 +35,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `url`.
 
 `media="value"`
-: [HTML media attribute](https://developer.mozilla.org/en-US/docs/CSS/Media_queries) to be applied to link tag (when invoked with `format="link"`).
+: [HTML media attribute](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) to be applied to link tag (when invoked with `format="link"`).
 : **Default:** `screen`.
 
 `name="style name"`

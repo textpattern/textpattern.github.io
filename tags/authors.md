@@ -67,7 +67,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `name` (login name). \\
 `realname` (real name). \\
 `privs` (user group). \\
-`rand()` ([random](https://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
+`rand()` ([random](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand)). \\
 Each field in the `textpattern` database table can be used as a sort key.
 : **Default:** `name asc`.
 

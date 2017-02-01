@@ -82,7 +82,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `name`. \\
 `on_frontpage`. \\
 `page`. \\
-`rand()` ([random](https://dev.mysql.com/doc/refman/5.0/en/mathematical-functions.html#function_rand)). \\
+`rand()` ([random](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand)). \\
 `searchable`. \\
 `title`. \\
 Each field in the `textpattern` database table can be used as a sort key. \\
