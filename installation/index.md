@@ -110,7 +110,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 
 If you intend to use Textpattern to manage the entire website, you'll upload the install package to your web root (i.e., the root of your web domain). For many hosts, the path to the root looks like this: */users/home/{username}/web/public/*, where {username} is your user account name. You would upload the Textpattern package to the `/public` directory (equal to `yourdomain.tld`). 
 
-You may, of course, install it in a sub-directory if you're only using Textpattern to run a blog, for example, as part of a larger site (generally people who do that end up [moving the installation](http://docs.textpattrn.io/installation/moving-textpattern) later).
+You may, of course, install it in a sub-directory if you're only using Textpattern to run a blog, for example, as part of a larger site (generally people who do that end up [moving the installation](http://docs.textpattern.io/installation/moving-textpattern) later).
 
 You will use FTP, or Secure-FTP (SFTP) if your web host requires it, to upload the package to your desired web server location. Two capable clients are WinSCP for Windows and Transmit for Mac.
 
@@ -132,7 +132,7 @@ Choose the language you want and click the **Submit** button.
 
 [^3]: If you don't see this screen, check your URL path. Should it be `https` or `www.`? Did you install in a sub-directory? Is there a typo?
 
-[^4]: You can change the UI language any time after setup in the [**Preferences**](http://docs.textpattrn.io/administration/preferences-panel) panel.
+[^4]: You can change the UI language any time after setup in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
 
 ### Step 1: Set database details
 
@@ -232,6 +232,5 @@ The screen will also suggest deleting the `/setup` directory for security reason
 
 1. Use your S/FTP client to connect to your web server. Go to the `/textpattern/setup` directory, and delete it (contents too). This eliminates one potential diagnostic warning you would otherwise see later.
 2. Return to your browser screen and click the "Main interface" link, which takes you to the administration login location. Log in using your new administrator account details (entered on the previous install screen), and check the box for remembering you, if you like. 
-3. The **Go!** screen says to go to **Diagnostics**, but you'll actually land on the [Languages](http://docs.textpattern.io/administration/languages-panel) panel, where you add new languages and change the default, if desired.  
-4. Proceed to the [Diagnostics](http://docs.textpattern.io/administration/) panel, as Textpattern suggested, to troubleshoot any warnings and errors you see.
-5. Go to the public side of your website (the homepage), easy to do by clicking its name in the navigation bar of any admin-side location. Read the tips and suggestions provided on the default article titled, 'Welcome to your site'. They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.
+3. Proceed to the [Diagnostics administration panel](http://docs.textpattern.io/administration/diagnostics-panel), as Textpattern suggested, to troubleshoot any warnings and errors you see.
+4. Go to the public side of your website (the homepage), easy to do by clicking its name in the navigation bar of any admin-side location. Read the tips and suggestions provided on the default article titled, 'Welcome to your site'. They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.
