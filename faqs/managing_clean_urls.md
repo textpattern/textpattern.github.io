@@ -40,7 +40,7 @@ Add the following to the file (and nothing else)...
 
 </li>
 <li>
-Upload the file to your Web root, and run it in your browser (type the
+Upload the file to your web root, and run it in your browser (type the
 URL to the file in the browser address bar and hit *Enter*).
 
 </li>

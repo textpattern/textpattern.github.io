@@ -2,7 +2,7 @@
 
 h3(sectionedit1#overview). Overview
 
-Static articles are often a necessary component of webpages. You may, for example, wish to create an “About Me” page where you can post an article with your biography, and article with your “thank you's” and an article with a copyright notice. These articles would be classified as “static content” because they are not meant to change or be associated with your blog articles. Textpattern can be used in two different ways to support you at that task. In contrast to a fully static page coded in native HTML, you gain the advantages of Textpattern's infrastructure components like article und page template editing facilities, referrer logging and permission restrictions.
+Static articles are often a necessary component of web pages. You may, for example, wish to create an “About Me” page where you can post an article with your biography, and article with your “thank you's” and an article with a copyright notice. These articles would be classified as “static content” because they are not meant to change or be associated with your blog articles. Textpattern can be used in two different ways to support you at that task. In contrast to a fully static page coded in native HTML, you gain the advantages of Textpattern's infrastructure components like article und page template editing facilities, referrer logging and permission restrictions.
 
 h5(#option_1static_page_templates). Option 1: Static page templates
 

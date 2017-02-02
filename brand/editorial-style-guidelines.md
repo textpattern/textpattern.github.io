@@ -275,11 +275,13 @@ Wrong → All Textpattern Sections must have a page and style associated to it.
 Wrong → All Textpattern Sections must have a page and style associated to it.
         (Because there is no distinction from any other context.)
 Non-Textpattern terminology
-Use these word constructs when used at all in text.
-* When referring to the World Wide Web or Internet, capitalise the world.
-   * The Web (not The web)
-* When "web" is a regular (object) noun, do not capitalise it.
-   * website (not website); or Website when beginning a sentence.
+
+Use these word constructs when used at all in text:
+
+* When referring to the World Wide Web, capitalise it.
+* When referring to either the web or the internet, don't capitalise them (i.e 'the web', not 'the Web').
+* Use website (not web site).
+
 Versioning
 The proper way write the version releases of Textpattern. This is less a stylistic issue and more a Textpattern development policy; however, it’s relevant to the template:Txp current version that provide this dynamic value in multiple places in documentation. Ensure the version is correct in this template against the current Textpattern release.
 Appendix A: Visual branding
