@@ -26,7 +26,7 @@ On servers that support `mod_rewrite`, the most common solution is to uncomment 
 #RewriteBase /relative/web/path/
 ~~~
 
-..and change the path as appropriate. If Textpattern is installed in your web site root (i.e. the front Textpattern page is at `http://example.com/`), you should use this:
+..and change the path as appropriate. If Textpattern is installed in your website root (i.e. the front Textpattern page is at `http://example.com/`), you should use this:
 
 ~~~
 RewriteBase /

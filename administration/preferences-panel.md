@@ -98,7 +98,7 @@ The 'Archive date format' is a drop-down menu that provides the same options as 
 
 ### Article URL pattern
 
-The 'Article URL pattern' drop-down list is intended to make it easier to establish flexible (or 'Clean' URLs) in your site, which in turn is a nice usability feature for your web site visitors. The drop-down list provides different options, one for 'messy' URLs (which is the option for **not** having clean URLs), and various patterns for clean URLs; each having a specific path format.
+The 'Article URL pattern' drop-down list is intended to make it easier to establish flexible (or 'Clean' URLs) in your site, which in turn is a nice usability feature for your website visitors. The drop-down list provides different options, one for 'messy' URLs (which is the option for **not** having clean URLs), and various patterns for clean URLs; each having a specific path format.
 
 Getting clean URLs to work may take a combination of further steps, addressed in @@TODO: managing clean URLs@@.
 

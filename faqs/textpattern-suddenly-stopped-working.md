@@ -10,7 +10,7 @@ Software doesn't wear out or change by itself.  If your copy of Textpattern stop
 
 If your Textpattern site has suddenly stopped working, here are some steps you should take:
 
-1. Check both the public web site and the Textpattern administration interface to see if they are working.  Some problems affect only one or the other.
+1. Check both the public website and the Textpattern administration interface to see if they are working.  Some problems affect only one or the other.
 
 2. If you can log in to the Textpattern admin interface, view the *admin > diagnostics* page in both Low and High detail modes.  Textpattern should report any major database corruption issues.  See "this FAQ":http://textpattern.com/faq/226/why-is-my-database-corrupt for information on repairing these problems.
 

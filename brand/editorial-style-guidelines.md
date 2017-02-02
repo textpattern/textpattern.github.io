@@ -279,7 +279,7 @@ Use these word constructs when used at all in text.
 * When referring to the World Wide Web or Internet, capitalise the world.
    * The Web (not The web)
 * When "web" is a regular (object) noun, do not capitalise it.
-   * website (not web site); or Website when beginning a sentence.
+   * website (not website); or Website when beginning a sentence.
 Versioning
 The proper way write the version releases of Textpattern. This is less a stylistic issue and more a Textpattern development policy; however, it’s relevant to the template:Txp current version that provide this dynamic value in multiple places in documentation. Ensure the version is correct in this template against the current Textpattern release.
 Appendix A: Visual branding

@@ -1,6 +1,6 @@
 h1. How do I create navigation links? [todo]
 
-*Sections* are usually the topmost navigation elements of your web site (more on site structure "here":http://textpattern.com/faq/78/ive-installed-textpattern-now-what).    If you want a simple, automatic list of links to sections, use the "section_list":http://textpattern.net/wiki/index.php?title=section_list tag:
+*Sections* are usually the topmost navigation elements of your website (more on site structure "here":http://textpattern.com/faq/78/ive-installed-textpattern-now-what).    If you want a simple, automatic list of links to sections, use the "section_list":http://textpattern.net/wiki/index.php?title=section_list tag:
 
 bq. @<txp:section_list wraptag="ul" break="li" />@
 

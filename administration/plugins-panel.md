@@ -45,7 +45,7 @@ Most of that is pretty straight forward, but let's touch upon steps 1, 2, and 4 
 
 At this time, the Textpattern project doesn't have a centralized repository for all its community-built plugins, but plugin developers (often called "plugin authors") generally proceed by the following process to make their plugins available, and thus for others to find them:
 
-**Developer websites:** Plugin developers typically make their plugins available at their own web sites, and once you know who those plugin developers are, you can find their web sites via their forum profiles, and often their specific plugin links in the signatures of their forum posts.
+**Developer websites:** Plugin developers typically make their plugins available at their own websites, and once you know who those plugin developers are, you can find their websites via their forum profiles, and often their specific plugin links in the signatures of their forum posts.
 
 **GitHub:** Plugin developers are increasingly using [GitHub](https://github.com) to maintain and release their Textpattern plugins. A curated list of Textpattern plugins available via GitHub is at [Awesome Textpattern](https://github.com/drmonkeyninja/awesome-textpattern).
 

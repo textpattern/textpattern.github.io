@@ -2,7 +2,7 @@ h1. How are sections and categories different? [todo]
 
 *Sections* are exclusive.  Every article is associated with a section.  An article cannot reside in more than one section.
 
-A newspaper web site might have sections named "Politics", "Sport", "Weather" and so on.
+A newspaper website might have sections named "Politics", "Sport", "Weather" and so on.
 
 *Categories* are a looser way of organising articles.  An article can have up to two categories, and may have none.  Categories may cross Section boundaries - that is to say, articles from several different sections can belong to the one category.
 

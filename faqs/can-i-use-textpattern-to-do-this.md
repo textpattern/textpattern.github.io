@@ -4,7 +4,7 @@ Textpattern is endlessly customizable and extendable via templates and plugins. 
 
 You'll find many examples of Textpattern-powered sites listed in the "Let's See Yours, Then":http://forum.textpattern.com/viewforum.php?id=6 forum.
 
-TXP Magazine's "txp sites gallery":http://txpmag.com/all_sites and "sites collection by category":http://txpmag.com/by_cat list some well-designed web sites that use Textpattern.
+TXP Magazine's "txp sites gallery":http://txpmag.com/all_sites and "sites collection by category":http://txpmag.com/by_cat list some well-designed websites that use Textpattern.
 
 If you break your requirements down into specific features and questions, you'll find most of the answers in the "Textbook documentation":http://textbook.textpattern.net/ and "this FAQ":/faq/.
 

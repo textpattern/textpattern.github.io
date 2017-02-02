@@ -10,7 +10,7 @@ Briefly, the important concepts in Textpattern are:
 
 *Sections*
 
-Sections are the topmost divisions of your web site.  A newspaper site might have sections like "Politics", "Sport", "Weather", and so on.  These usually correspond to URLs such as @http://example.com/politics/@, @http://example.com/sport/@, etc.
+Sections are the topmost divisions of your website.  A newspaper site might have sections like "Politics", "Sport", "Weather", and so on.  These usually correspond to URLs such as @http://example.com/politics/@, @http://example.com/sport/@, etc.
 
 Sections are managed in the Textpattern administration panel under *presentation > sections*.
 

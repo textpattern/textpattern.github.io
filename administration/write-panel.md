@@ -3,7 +3,7 @@ layout: document
 category: Administration
 published: true
 title: Write panel
-description: The Write panel reveals the various features for managing articles on your Web site, which includes creating new articles, editing existing articles.
+description: The Write panel reveals the various features for managing articles on your website, which includes creating new articles, editing existing articles.
 ---
 
 # Write panel
@@ -59,7 +59,7 @@ See the [article tag](http://docs.textpattern.io/tags/article) documentation for
 
 ### Excerpt
 
-This field is where you would add an excerpt, which is a brief bit of text about the article itself. This field is not required, but such a decision would be founded on how you ultimately wanted to establish your Web site's presentation and architecture. For example, a typical use of an excerpt is for article lists on a home page, where only a title and excerpt for each article is shown in the list; the excerpt provides a little indication about what the full article is about, and the title acts as a link to the full article itself, but when you go to the full article the excerpt is no longer seen.
+This field is where you would add an excerpt, which is a brief bit of text about the article itself. This field is not required, but such a decision would be founded on how you ultimately wanted to establish your website's presentation and architecture. For example, a typical use of an excerpt is for article lists on a home page, where only a title and excerpt for each article is shown in the list; the excerpt provides a little indication about what the full article is about, and the title acts as a link to the full article itself, but when you go to the full article the excerpt is no longer seen.
 
 In Textpattern, the excerpt is not part of the article body but rather is a discrete content item managed separately; however, like the body, you can use Textile (or HTML) to format text in the excerpt. The tag used to output the article excerpt is:
 

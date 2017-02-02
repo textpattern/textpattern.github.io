@@ -34,7 +34,7 @@ bc. /textpattern/config.php
 
 # Finally, if you have any *internal*, hard-coded links (e.g. image path links) in any of your page templates that are set as absolute paths, you will need to go to any such pages and change those links.
 
-*Note:* you will not have to worry about this if your internal links are hard-coded as relative links and your site structure does not change, nor will you need to change absolute links that go to external content (i.e. different Web sites).
+*Note:* you will not have to worry about this if your internal links are hard-coded as relative links and your site structure does not change, nor will you need to change absolute links that go to external content (i.e. different websites).
 
 If all goes well, you should then be able to go to your Textpattern home page, or the site admin page, via the new domain root location with everything in working order.
 
