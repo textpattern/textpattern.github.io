@@ -54,8 +54,8 @@ Tag will accept the following attributes (**case-sensitive**):
 : List of Textpattern contexts to consider when automatically searching for images. If you wish to turn off the automatic check, set this to `auto_detect=""`. You can choose from the following contexts: \\
 `article` to look in the article_image field. \\
 `category` to look in the URL for a category list. \\
-`author` to look in the URL for an author list. \\
-: **Default:** `article, category, author`. \\
+`author` to look in the URL for an author list.
+: **Default:** `article, category, author`.
 
 `category="image category"`
 : Filter the images by this list of category names as defined in the [Categories administration panel](http://docs.textpattern.io/administration/categories-panel).
