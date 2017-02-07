@@ -37,10 +37,10 @@ This is equivalent to putting the contained statements into a form named 'my_for
 
 By default, the tag is context-sensitive, which means that in the absence of any filter attributes (`id`, `name`, `category`, `author`, `realname`, `extension`, `thumbnail`), it will return image IDs from the first of:
 
-# The currently viewed article's 'Article image' field;
-# Images matching the global category context;
-# Images matching the global author context;
-# All images.
+1. The currently viewed article's 'Article image' field;
+2. Images matching the global category context;
+3. Images matching the global author context;
+4. All images.
 
 ## Attributes
 
