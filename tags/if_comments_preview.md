@@ -35,7 +35,7 @@ The tag will execute the contained statements if a comment is being previewed.
 
 ## Attributes
 
-This tag takes no attributes:
+This tag has no attributes.
 
 ## Examples
 

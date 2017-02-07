@@ -26,11 +26,11 @@ The **page_title** tag is a *single* tag that displays title text depending on t
 
 Results appear as follows:
 
-# Article list: `Your site name`.
-# Articles by category: `Your site name : Category title`.
-# Search results page: `Your site name : Search results: Search term`.
-# Single article page: `Your site name : Article name`.
-# Comments display: `Comments on: Article name`.
+* Article list: `Your site name`.
+* Articles by category: `Your site name : Category title`.
+* Search results page: `Your site name : Search results: Search term`.
+* Single article page: `Your site name : Article name`.
+* Comments display: `Comments on: Article name`.
 
 ## Attributes
 
@@ -44,6 +44,8 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ### Example 1: Show page titles with custom separator
 
+~~~ html
 <title>
     <txp:page_title separator=" &raquo; " />
 </title>
+~~~

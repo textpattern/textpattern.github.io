@@ -12,7 +12,7 @@ Moving from traditional, static web development to dynamic, CMS-based developmen
 
 The "Hello, World!" approach means to start from a blank slate and add pieces one at a time. It's not the right approach for everyone, but assuming you want to try this method, read on:
 
-## Ready, set ...
+### Ready, set ...
 
 Start from a new Textpattern installation. If you want to save [the few
 minutes it takes to

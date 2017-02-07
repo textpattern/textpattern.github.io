@@ -46,8 +46,6 @@ Note: `<txp:article />` is **not** the same as `<txp:article_custom />` - you ca
 
 Tag will accept content/behaviour and presentation attributes (**case-sensitive**):
 
-### Content/behaviour attributes
-
 `allowoverride="boolean"`
 : Whether to use override forms for the generated article list.
 : **Values:** `0` (no) or `1` (yes).

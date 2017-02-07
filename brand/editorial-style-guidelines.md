@@ -53,14 +53,16 @@ Likewise, do not use the third-person in your copy. So don't use these words: he
 
 Textpattern's default language is English, and follows the conventions provided by Oxford University Press resources, notably the __New Oxford Style Manual__, 2nd Edition, and the __"Oxford English Dictionary":http://www.oed.com__ (OED). All Textpattern platforms designate this choice of English usage in the language tags of website templates:
 
-bc.. <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB-oxendict" lang="en-GB-oxendict" dir="ltr">
-<meta name="language" content="en-GB-oxendict" />
+~~~ html
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB-oxendict" lang="en-GB-oxendict" dir="ltr">
+<meta name="language" content="en-GB-oxendict">
+~~~
 
-p. By adopting the Oxford way for Textpattern's international English copy, three main benefits are gained:
+By adopting the Oxford way for Textpattern's international English copy, three main benefits are gained:
 
-# It provides a precise reason and source for the decision to write words a certain and consistent way, without wishy-washy and debatable explanations.
-# It's definable in metadata to a more precise level: @lang="en-GB-oxendict"@, because even in Great Britain there's an increasing degree of variation with how words are spelled and punctuation is used.
-# It normalizes the effort to create copy (due to Oxford rules being a fair compromise across British and American English conventions), so one group of writers/editors doesn't have the upper hand on the other. Oxford rules may (debatably) be the most "International" form of English usage.
+1. It provides a precise reason and source for the decision to write words a certain and consistent way, without wishy-washy and debatable explanations.
+2. It's definable in metadata to a more precise level: @lang="en-GB-oxendict"@, because even in Great Britain there's an increasing degree of variation with how words are spelled and punctuation is used.
+3. It normalizes the effort to create copy (due to Oxford rules being a fair compromise across British and American English conventions), so one group of writers/editors doesn't have the upper hand on the other. Oxford rules may (debatably) be the most "International" form of English usage.
 
 The rest of these guidelines will specify conventions in context to topics.
 
