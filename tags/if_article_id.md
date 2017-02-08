@@ -40,7 +40,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `id="integer"`
 : Comma delimited integer article ID list.
-: **Default:** current article's ID if available (i.e.,on a page that displays a single article).
+: **Default:** current article's ID if available (i.e. on a page that displays a single article).
 
 ## Examples
 

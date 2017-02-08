@@ -66,7 +66,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `no_widow="boolean"`
 : Control [widows](http://en.wikipedia.org/wiki/Widows_and_orphans) and overrule 'widows' setting in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
-: **Values:** `0` allow the last word in the title to appear on its own line, i.e.,the title content is rendered unchanged, `1` ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
+: **Values:** `0` allow the last word in the title to appear on its own line, i.e. the title content is rendered unchanged, `1` ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
 : **Default:** as set in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
 
 `offset="integer"`

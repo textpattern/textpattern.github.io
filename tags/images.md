@@ -117,7 +117,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `thumbnail="boolean"`
 : Filter the image list to only include images that have a thumbnail, or not.
-: **Values:** unset (i.e.,all images), `1` (images that have a thumbnail) or `0` (images that do not have a thumbnail).
+: **Values:** unset (i.e. all images), `1` (images that have a thumbnail) or `0` (images that do not have a thumbnail).
 : **Default:** unset.
 
 ### Common presentational attributes

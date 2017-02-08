@@ -257,7 +257,7 @@ Links
 Keep links in body copy to a minimum. Ensure links that are used are focused on calls to action (e.g. "Download") and/or contextual integration of different topic pages (e.g. links between different pages in wiki documentation). Only link to third-party websites if doing so aides the user in completing a Textpattern-related task.
 Terminology
 Textpattern terms as admin-side panel and link references
-When using the name of any admin-side panel to mean the location of that panel, it should always be a non-italicised link to the given wiki page it's referring to, and the link should only be on the word itself. I.e., the link text should be the same as the name of the wiki page it's pointing to.
+When using the name of any admin-side panel to mean the location of that panel, it should always be a non-italicised link to the given wiki page it's referring to, and the link should only be on the word itself, i.e. the link text should be the same as the name of the wiki page it's pointing to.
 Correct → Most of your content is created in the Write panel.
 Wrong → Most of your content is created in the Write panel.
 Wrong → Most of your content is created in the Write panel.

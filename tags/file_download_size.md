@@ -44,7 +44,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `e` (exabytes). \\
 `z` (zettabytes). \\
 `y` (yottabytes).
-: **Default:** unset (i.e.,the most appropriate units based on the file size).
+: **Default:** unset (i.e. the most appropriate units based on the file size).
 
 ## Examples
 

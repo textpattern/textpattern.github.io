@@ -41,7 +41,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `children="boolean"`
 : Can limit the list depth to one level below the parent category.
-: **Values:** `0` (no children, i.e.,only show one level below the parent) or `1` (show all nested categories).
+: **Values:** `0` (no children, i.e. only show one level below the parent) or `1` (show all nested categories).
 : **Default:** `1`.
 
 `exclude="category name(s)"`

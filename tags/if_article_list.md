@@ -31,7 +31,7 @@ The **if_article_list** tag is a *conditional* tag and always used as an opening
 </txp:if_article_list>
 ~~~
 
-The tag will execute the contained statement if an article list is being displayed (i.e.,not showing an individual article).
+The tag will execute the contained statement if an article list is being displayed (i.e. not showing an individual article).
 
 ## Attributes
 
