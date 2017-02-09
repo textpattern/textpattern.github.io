@@ -133,7 +133,7 @@ These callbacks relate to the `<head>` and `<footer>` sections, and navigation a
 : **What it allows:** Addition of information at the bottom of any panel, above the footer area.
 
 `admin_side > body_end`
-: **When it occurs:** After the theme's footer has been rendered, before the clsing `</body>` tag.
+: **When it occurs:** After the theme's footer has been rendered, before the closing `</body>` tag.
 : **What it allows:** Injection of non-blocking JavaScript `<script>` tags.
 
 ### Widget callbacks
