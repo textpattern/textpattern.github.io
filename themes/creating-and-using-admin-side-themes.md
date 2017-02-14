@@ -16,10 +16,7 @@ The core admin-side theme options are:
 * Hive
 * Hive (Flat Neutral)
 
-To change the theme, go to Admin &gt;
-[basic_preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences),
-scroll to the **Admin** section at bottom of panel and select the theme
-you want from the **Admin-side theme** control.
+To change the admin-side theme, go to the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel), and within the **Admin** section select the theme you want from the 'Admin-side theme' control.
 
 Administrators can also allow account holders to choose their own
 admin-side theme on an individual basis, which is done by installing the
