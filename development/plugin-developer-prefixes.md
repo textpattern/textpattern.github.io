@@ -531,6 +531,7 @@ None at this time.
 
 <div class="layout-text4col">
 
+* zcr/[Bloke](http://forum.textpattern.com/profile.php?id=8181) / community, for zem_contact_reborn modules
 * zem/zem
 * zen/zenigy
 * zmk/maxk
