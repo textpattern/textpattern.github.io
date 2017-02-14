@@ -48,7 +48,7 @@ Tag will accept the following attributes (**case-sensitive**):
 ~~~ html
 <head>
     ....
-    <txp:if_individual_article&gt;
+    <txp:if_individual_article>
         <txp:if_keywords>
             <txp:meta_keywords />
         <txp:else />

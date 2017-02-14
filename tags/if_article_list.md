@@ -54,9 +54,8 @@ This tag has no attributes.
         </txp:link_to_next>
     </p>
 </txp:if_individual_article>
-~~~
 
-&lt;txp:if_article_list&gt;
+<txp:if_article_list>
     <p>
         <txp:older>Previous</txp:older>
         <txp:newer>Next</txp:newer>
