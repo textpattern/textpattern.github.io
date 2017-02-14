@@ -21,7 +21,7 @@ On this page:
 ## Syntax
 
 ~~~ html
-<txp:section>
+<txp:section />
 ~~~
 
 The **section** tag can be used as either a *single* tag or *container* tag. It will display information about the section as defined by either the `name` attribute, the section currently being viewed, or the section of the article being displayed (if used within 'article' type [Form templates](http://docs.textpattern.io/themes/form-templates-explained), or an [if_individual_article](if_individual_article) conditional tag).
