@@ -16,7 +16,7 @@ On this page:
 * [List of existing visitor logs](#list-of-existing-visitor-logs)
   * [Columns](#columns)
   * [Perform changes on selected visitor logs](#perform-changes-on-selected-visitor-logs)
-* [Pages and links listed per page](#pages-and-comments-listed-per-page)
+* [Pages and visitor logs listed per page](#pages-and-visitor-logs-listed-per-page)
 
 ## Search function
 
