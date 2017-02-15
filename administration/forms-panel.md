@@ -10,6 +10,11 @@ description: The Forms administration panel is where the Form templates used wit
 
 The Forms administration panel contains an edit field, a list of existing [Form templates](http://docs.textpattern.io/themes/form-templates-explained) organized by rough categories, and a tag builder to help you construct Form template content. It's important to note that, like everything else, the Form templates are stored in the database - there is no physical file on the server that contains this Form template.
 
+On this page:
+
+* [Creating a new Form template](#creating-a-new-form-template)
+* [Duplicating a Form template](#duplicating-a-form-template)
+
 The first column of the panel is the list of current Form templates. To select a template for editing, click on the name in the first column and Textpattern will fill the second column edit field with the selected template.
 
 The second column is a large edit field where you may edit the Form template code, and controls for creating a brand new Form template or creating a copy of an existing Form template. A Save button, located at the bottom of the second column, will save the Form template back into the Textpattern database.
@@ -31,5 +36,13 @@ All Form templates need to have unique names and a Form type association before 
 * section
 
 The form type you use is not vitally important, the purpose of assigning Form templates a type is to allow Textpattern's tag builder to help you easily find the form you want to use. Once you've named and classified your Form template, you can begin building it.
+
+## Duplicating a Form template
+
+Making a copy of the current Form template is easy. Click the 'Duplicate' button and a copy of whatever is in the 'Form code' field will be saved to a new Form template.
+
+If you have already altered the 'Form name' field before duplication, the new Form template will use that name (as long as the name is not already in use). If you have not altered the name, the new Form template will have the same name as the currently loaded template, with the word 'copy' appended to it.
+
+Your new Form template is then immediately available for editing.
 
 [Next: Styles administration panel](http://docs.textpattern.io/administration/styles-panel)
