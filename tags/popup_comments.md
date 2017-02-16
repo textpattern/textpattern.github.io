@@ -8,7 +8,7 @@ tags:
   - Comment tags
 ---
 
-# Popup comments TODO
+# Popup comments
 
 On this page:
 
@@ -23,21 +23,42 @@ On this page:
 <txp:popup_comments />
 ~~~
 
-The **popup_comments** tag can be used as a *single* tag or a *container* tag. TODO.
+The **popup_comments** tag can be used as a *single* tag or a *container* tag. This tag opens a new page using the `popup_comments` form template as a container.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
 `form="form name"`
-: Use specified form template.
+: Use specified form template to show comments within the `popup_comments` form template.
 : **Default:** `comments_display`.
 
 ## Examples
 
-### Example 1: TODO
+### Example 1: A popup_comments form template
 
-TODO
+~~~ html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        <txp:page_title />
+    </title>
+    <meta name="generator" content="Textpattern CMS">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, follow, noodp, noydir">
+    <txp:css format="link" media="" />
+</head>
+<body class="popup-page">
+    <div class="container">
+        <txp:popup_comments />
+    </div>
+</body>
+</html>
+~~~
+
+Other tags used: [css](css), [page_title](page_title).
 
 ## Genealogy
 
