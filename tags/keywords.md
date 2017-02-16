@@ -10,7 +10,7 @@ tags:
 
 # Keywords
 
-**Deprecated in Textpattern 4.6.0** (use [meta_keywords format=""](meta_keywords) tag instead)
+**Deprecated in Textpattern 4.6.0** (use [meta_keywords](meta_keywords) tag instead)
 {: .alert-block .error}
 
 On this page:
