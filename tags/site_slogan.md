@@ -52,3 +52,4 @@ or partial...
 
 ~~~ html
 <meta name="description" content="<txp:site_slogan />. And the rest of your pithy description would go here.">
+~~~
