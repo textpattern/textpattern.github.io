@@ -29,13 +29,9 @@ The **popup_comments** tag can be used as a *single* tag or a *container* tag. T
 
 Tag will accept the following attributes (**case-sensitive**):
 
-TODO
-
-### Common presentational attributes
-
-These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
-
-TODO
+`form="form name"`
+: Use specified form template.
+: **Default:** `comments_display`.
 
 ## Examples
 
