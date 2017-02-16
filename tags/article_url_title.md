@@ -29,6 +29,14 @@ The **article_url_title** tag is a *single* tag which returns the dumbed-down 'U
 
 This tag has no attributes.
 
+## Examples
+
+### Example 1: Subdomain-based AMP page link
+
+~~~ html
+<link rel="amphtml" href="https://amp.example.com/<txp:article_url_title />">
+~~~
+
 ## Genealogy
 
 ### Version 4.0.5
