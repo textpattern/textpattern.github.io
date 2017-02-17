@@ -8,7 +8,7 @@ description: Textpattern Form templates define discrete packages of information 
 
 # Form templates explained TODO
 
-Textpattern **Form templates** are akin to snippets, includes, partials, and the like that define discrete *packages* of information that can be inserted into [Page templates](http://docs.textpattern.io/themes/page-templates-explained), or nested into other forms that are in turn *pulled* into Page templates. They are not files, *per se*, but similar in concept to files, having their own name (ID) and content. The content in a form can be any combination of text, HTML markup, Textpattern tags, or tags for third-party [Plugins](http://docs.textpattern.io/administration/plugins-panel) you might use.
+Textpattern **Form templates** are akin to snippets, includes, partials, and the like that define discrete *packages* of information that can be inserted into [Page templates](https://docs.textpattern.io/themes/page-templates-explained), or nested into other forms that are in turn *pulled* into Page templates. They are not files, *per se*, but similar in concept to files, having their own name (ID) and content. The content in a form can be any combination of text, HTML markup, Textpattern tags, or tags for third-party [Plugins](https://docs.textpattern.io/administration/plugins-panel) you might use.
 
 The content can be a single word, to the HTML framework of an entire web page template, to everything in between or something different altogether. But forms are generally most practical when scoped to repeatable, semantic regions of a page template (header, main area, side column, footer, etc.) or to functional blocks within those regions (navigation menu, sign-up form, widget, footer list, etc.). There's no right or wrong way to design forms, but as you get more familiar with Textpattern, you'll discover the optimal patterns to use, as well as how to name forms so they aren't confusing when you have many. Don't be surprised to adjust your architecture over time as you learn.
 
@@ -83,6 +83,6 @@ When creating a form, it must be assigned to a 'Type', which is available via a 
 
 Form template types have almost no inherent semantic but aid solely as a means of organization for the designer/user. One notable exception: *article* type forms are the only ones listed in the *override form* dropdown on the write screen.
 
-The category and section types are intended to be used in conjunction with [category_list](http://docs.textpattern.io/tags/category_list) and [section_list](http://docs.textpattern.io/tags/section_list), respectively, as a value to the form attribute, along the lines of `<txp:section_list form="foo" />`. They serve the same use case as the form attributes for articles do.
+The category and section types are intended to be used in conjunction with [category_list](https://docs.textpattern.io/tags/category_list) and [section_list](https://docs.textpattern.io/tags/section_list), respectively, as a value to the form attribute, along the lines of `<txp:section_list form="foo" />`. They serve the same use case as the form attributes for articles do.
 
 [^1]: The form naming convention you adopt will also help with form organization within a given form type list.

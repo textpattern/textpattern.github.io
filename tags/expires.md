@@ -23,14 +23,14 @@ On this page:
 <txp:expires />
 ~~~
 
-The **expires** tag is a *single* tag used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive (e.g. events like conferences, meetings and so forth). The tag is defined by expiration date values that are set under the ''Date and time' section of the [Write administration panel](http://docs.textpattern.io/administration/write-panel).
+The **expires** tag is a *single* tag used to indicate when an article should no longer appear in a site, particularly when the information is date sensitive (e.g. events like conferences, meetings and so forth). The tag is defined by expiration date values that are set under the ''Date and time' section of the [Write administration panel](https://docs.textpattern.io/administration/write-panel).
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
 `format="format string"`
-: Override the default date format set in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
+: Override the default date format set in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
 : **Values:** any valid [strftime](http://php.net/strftime) string values.
 : **Default:** the 'Archive date format' set in preferences.
 
@@ -42,7 +42,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `lang="ISO language code"`
 : Format time string suitable for the specified language (locale).
 : **Values:** locales adhere to [ISO-639](http://en.wikipedia.org/wiki/ISO_639-2).
-: **Default:** unset (time format set in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
+: **Default:** unset (time format set in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
 
 ### Common presentational attributes
 
@@ -50,11 +50,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** tag name or unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="element"`
 : HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

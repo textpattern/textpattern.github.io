@@ -23,7 +23,7 @@ On this page:
 <txp:article_url_title />
 ~~~
 
-The **article_url_title** tag is a *single* tag which returns the dumbed-down 'URL title' of the article being displayed. This URL title may also be part of the page's address depending on the 'Article URL pattern' chosen in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#article-url-pattern).
+The **article_url_title** tag is a *single* tag which returns the dumbed-down 'URL title' of the article being displayed. This URL title may also be part of the page's address depending on the 'Article URL pattern' chosen in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel#article-url-pattern).
 
 ## Attributes
 

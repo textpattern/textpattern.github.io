@@ -8,7 +8,7 @@ description: The Comments administration panel provides control about visitor co
 
 # Comments panel
 
-The Comments administration panel provides control about visitor comments on your public pages. **Note:** This panel is only available if you have turned on comment functionality in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#accept-comments).
+The Comments administration panel provides control about visitor comments on your public pages. **Note:** This panel is only available if you have turned on comment functionality in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel#accept-comments).
 
 On this page:
 
@@ -57,7 +57,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](http://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of comments which meet the criteria.
 
@@ -83,7 +83,7 @@ The default view shows these columns:
 
 **Message:** the first words of the message (cropped).
 
-**Parent:** the title of the article the comment was written to. If you click on the provided link, the article will open in the [Write administration panel](http://docs.textpattern.io/administration/write-panel).
+**Parent:** the title of the article the comment was written to. If you click on the provided link, the article will open in the [Write administration panel](https://docs.textpattern.io/administration/write-panel).
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
@@ -107,4 +107,4 @@ For performing changes now you go to the drop-down list 'With selected...' and c
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of comments listed per page by selecting another value from the number range.
 
-[Next: Sections administration panel](http://docs.textpattern.io/administration/sections-panel)
+[Next: Sections administration panel](https://docs.textpattern.io/administration/sections-panel)

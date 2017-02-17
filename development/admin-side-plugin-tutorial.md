@@ -10,7 +10,7 @@ description: This tutorial walks you through the basics of creating and admin-si
 
 This tutorial walks you through the basics of creating and admin-side plugin; it covers functions, callbacks, and the concept of *events* and *steps*.
 
-You might also like to see the [Public-side plugin tutorial](http://docs.textpattern.io/development/public-side-plugin-tutorial).
+You might also like to see the [Public-side plugin tutorial](https://docs.textpattern.io/development/public-side-plugin-tutorial).
 
 On this page:
 
@@ -35,7 +35,7 @@ The plugin in this tutorial will:
 3.  Respond to a plugin *step*
 
 Since all plugins must use a three-character alphanumeric
-[prefix](http://docs.textpattern.io/development/plugin-developer-prefixes),
+[prefix](https://docs.textpattern.io/development/plugin-developer-prefixes),
 we're using **abc** in this tutorial, which is reserved for
 documentation purposes.
 

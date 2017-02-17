@@ -22,7 +22,7 @@ On this page:
 <txp:site_url />
 ~~~
 
-The **site_url** tag is a *single* tag which returns the full URL of the site (as defined in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel)) as text. If you maintain local development versions of your live sites and import databases between them, then this tag is extremely valuable for ensuring your domain links are never confused (and thus broken) between the two locations (see example 1, below).
+The **site_url** tag is a *single* tag which returns the full URL of the site (as defined in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel)) as text. If you maintain local development versions of your live sites and import databases between them, then this tag is extremely valuable for ensuring your domain links are never confused (and thus broken) between the two locations (see example 1, below).
 
 ## Attributes
 

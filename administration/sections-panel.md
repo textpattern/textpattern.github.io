@@ -30,9 +30,9 @@ On this panel you can do two things:
 
 ## How do sections apply to Textpattern?
 
-Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel#article-url-pattern).
+Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel#article-url-pattern).
 
-In the Sections administration panel, you're able to define what [Pages](http://docs.textpattern.io/administration/pages-panel) and [Styles](http://docs.textpattern.io/administration/styles-panel) will be used for the [Articles](http://docs.textpattern.io/administration/articles-panel) published in context to a given section. You can also control if articles posted in that section will be seen on the front page of the site, and whether or not the articles will be included in site searches.
+In the Sections administration panel, you're able to define what [Pages](https://docs.textpattern.io/administration/pages-panel) and [Styles](https://docs.textpattern.io/administration/styles-panel) will be used for the [Articles](https://docs.textpattern.io/administration/articles-panel) published in context to a given section. You can also control if articles posted in that section will be seen on the front page of the site, and whether or not the articles will be included in site searches.
 
 Textpattern includes one sections by default: 'Articles'.
 
@@ -50,11 +50,11 @@ You open the Section property editor when creating a new section or choosing to 
 
 **Section name:** The first control in the section editor panel is a text box where you type a new section name and create it. This name is used in URLs and by various Textpattern tags. See [Section names to avoid](#section-names-to-avoid) below for a list of unsafe names.
 
-**Section title:** a title for the section, which can be harnessed by tags (such as [section](http://docs.textpattern.io/tags/section)).
+**Section title:** a title for the section, which can be harnessed by tags (such as [section](https://docs.textpattern.io/tags/section)).
 
-**Uses page:** Textpattern assigns its default page template automatically (to ensure baseline publishing capabilities) but you can select differently if you have additonal [Pages](http://docs.textpattern.io/administration/pages-panel) already created; You can reassign sections to pages at any time.
+**Uses page:** Textpattern assigns its default page template automatically (to ensure baseline publishing capabilities) but you can select differently if you have additonal [Pages](https://docs.textpattern.io/administration/pages-panel) already created; You can reassign sections to pages at any time.
 
-**Uses style:** Textpattern assigns its default style (CSS) automatically (to ensure baseline publishing capabilities) but you can select differently if you have additonal [Styles](http://docs.textpattern.io/administration/styles-panel) already created; You can reassign sections to styles at any time.
+**Uses style:** Textpattern assigns its default style (CSS) automatically (to ensure baseline publishing capabilities) but you can select differently if you have additonal [Styles](https://docs.textpattern.io/administration/styles-panel) already created; You can reassign sections to styles at any time.
 
 **On front page?:** This is an extremely important option and should be considered with respect to the overall design of the site. Remember that section content only shows up when that section is called, except for the front page. This is the control that permits or denies content from showing up when the base `index.php` is called with no arguments.
 
@@ -86,7 +86,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](http://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of links which meet the criteria.
 
@@ -112,4 +112,4 @@ For performing changes now you go to the drop-down list 'With selected...' and c
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of sections listed per page by selecting another value from the number range.
 
-[Next: Pages administration panel](http://docs.textpattern.io/administration/pages-panel)
+[Next: Pages administration panel](https://docs.textpattern.io/administration/pages-panel)

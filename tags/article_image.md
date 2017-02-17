@@ -26,7 +26,7 @@ On this page:
 
 The **article_image** tag is a *single* tag. Textpattern will replace this tag with the `<img src="...">` HTML tag matching the numeric ID or URL assigned when the article is posted.
 
-The image to be associated with the tag is set in the [Write administration panel](http://docs.textpattern.io/administration/write-panel). Click 'Advanced options' and enter either the URL of the image, or the Textpattern ID (a number set by Textpattern at upload) into the **Article image** field. Most of the time you will use the image ID here. Note that you can only assign a single image to each article.
+The image to be associated with the tag is set in the [Write administration panel](https://docs.textpattern.io/administration/write-panel). Click 'Advanced options' and enter either the URL of the image, or the Textpattern ID (a number set by Textpattern at upload) into the **Article image** field. Most of the time you will use the image ID here. Note that you can only assign a single image to each article.
 
 ## Attributes
 
@@ -60,7 +60,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : CSS `class` attribute to apply to the image (or to the `wraptag`, if set).
-: **Default:** unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `style="style rule"`
 : Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.
@@ -68,7 +68,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `wraptag="tag"`
 : HTML tag to be used to wrap the `<img>` tag, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

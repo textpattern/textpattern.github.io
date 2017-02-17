@@ -22,7 +22,7 @@ On this page:
 <txp:link_category />
 ~~~
 
-The **link_category** tag is a *single* tag which returns the link category as text. This tag is used in Textpattern 'link' type [Form templates](http://docs.textpattern.io/themes/form-templates-explained) or inside the [linklist](linklist) container tag to return information about the current link in a list of links.
+The **link_category** tag is a *single* tag which returns the link category as text. This tag is used in Textpattern 'link' type [Form templates](https://docs.textpattern.io/themes/form-templates-explained) or inside the [linklist](linklist) container tag to return information about the current link in a list of links.
 
 ## Attributes
 
@@ -39,11 +39,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `label="text"`
 : Label prepended to item.
-: **Default:** unset (but see [label cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#label) for exceptions).
+: **Default:** unset (but see [label cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#label) for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).

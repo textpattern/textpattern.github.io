@@ -35,11 +35,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `html`.
 
 `id="integer"`
-: An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](http://docs.textpattern.io/administration/images-panel).
+: An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](https://docs.textpattern.io/administration/images-panel).
 : **Default:** unset.
 
 `name="image name"`
-: An image to display, given by its image name as shown on the [Images administration panel](http://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
+: An image to display, given by its image name as shown on the [Images administration panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
 : **Default:** unset.
 
 `type="information type"`
@@ -70,11 +70,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : CSS `class` attribute to apply to the `wraptag`, if set.
-: **Default:** unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="tag"`
 : HTML element to wrap the items grabbed from the `type` attribute, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

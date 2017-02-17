@@ -37,7 +37,7 @@ bq. Manage your account data in the **Users** panel.
 
 Never use the first-person (I/we, me/us, my/our...).It's easy to forget and start using "we" and "us" as if you and the reader are labouring together. But don't do that. Take the second person stance and empower the reader. Make them feel like their doing it alone, because they are. You're just an impartial messenger delivering the instructions. Change "we" to "you", or "our" to "your".
 
-For the most part you shouldn't need the third-person either (his, her, them, they). But there may be exceptions, such as when talking about the "roles and privileges":http://docs.textpattern.io/administration/user-roles-and-prvileges of other website users besides the administrator (who you're addressing).
+For the most part you shouldn't need the third-person either (his, her, them, they). But there may be exceptions, such as when talking about the "roles and privileges":https://docs.textpattern.io/administration/user-roles-and-prvileges of other website users besides the administrator (who you're addressing).
 
 [^1]: But it's okay to use footnotes like this to make reference to common extensions, notably when talking about the administration side.
 
@@ -212,7 +212,7 @@ Follows these when writing about Textpattern UIs, which has implications for plu
 * When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.[^2]
 * When referring to file names, make them italic (double underscores) and include the extension. E.g.: __.htaccess__ and __index.php__. (Do not make them appear as code, unless they are part of a code snippet.)
 
-fn1. Plugin authors must follow the same editorial rules in their "plugin help files":http://docs.textpattern.io/development/plugin-template-help.
+fn1. Plugin authors must follow the same editorial rules in their "plugin help files":https://docs.textpattern.io/development/plugin-template-help.
 
 fn2. There are four CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type: %(information)information%, %(success)success%, %(warning)warning%, and %(error)error%.
 

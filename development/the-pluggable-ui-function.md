@@ -83,7 +83,7 @@ Argument #5
 
 ## Examples
 
-In this example we have a basic admin-side plugin called "abc_hello". The plugin creates a new **ABC Hello** panel under the [Extensions administration region](http://docs.textpattern.io/administration/extensions-region), which is accessible to administrators and publishers (i.e. privs 1 and 2 users):
+In this example we have a basic admin-side plugin called "abc_hello". The plugin creates a new **ABC Hello** panel under the [Extensions administration region](https://docs.textpattern.io/administration/extensions-region), which is accessible to administrators and publishers (i.e. privs 1 and 2 users):
 
 ~~~ php
 add_privs('abc_hello', '1,2');
@@ -95,7 +95,7 @@ function abc_hello_world($event, $step) {
     echo '<p>Hello, World!</p>';
 ~~~
 
-So far `pluggable_ui()` is not used at all in the plugin. Instead, `register_callback()` has been used to add the plugin's preferences under the [Extensions administration region](http://docs.textpattern.io/administration/extensions-region), like we could use it to do most everything else to admin-side panels too.
+So far `pluggable_ui()` is not used at all in the plugin. Instead, `register_callback()` has been used to add the plugin's preferences under the [Extensions administration region](https://docs.textpattern.io/administration/extensions-region), like we could use it to do most everything else to admin-side panels too.
 
 But if you wished to allow other plugins to alter the output of abc_hello, you could replace `echo '<p>Hello, World!</p>';` part with:
 

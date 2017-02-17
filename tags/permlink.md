@@ -32,7 +32,7 @@ If used as a container tag, the HTML required to output a hyperlink is returned;
 Tag will accept the following attributes (**case-sensitive**):
 
 `id="integer"`
-: Specifies the article `id`, assigned at creation of the article, to link. Can be found on the [Articles administration panel](http://docs.textpattern.io/administration/articles-panel).
+: Specifies the article `id`, assigned at creation of the article, to link. Can be found on the [Articles administration panel](https://docs.textpattern.io/administration/articles-panel).
 : **Default:** unset (current article).
 
 `title="text"`
@@ -45,7 +45,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `a` tag when used as a container tag.
-: **Default:** tag name or unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `style="style rule"`
 : Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.

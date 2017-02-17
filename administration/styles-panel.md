@@ -8,7 +8,7 @@ description: The Styles administration panel is where the CSS (Cascading Style S
 
 # Styles panel
 
-The Styles administration panel is used to edit CSS (Cascading Style Sheets) for your website, and has a similar layout to the [Pages panel](http://docs.textpattern.io/administration/pages-panel).
+The Styles administration panel is used to edit CSS (Cascading Style Sheets) for your website, and has a similar layout to the [Pages panel](https://docs.textpattern.io/administration/pages-panel).
 
 On this page:
 
@@ -36,4 +36,4 @@ If you have already altered the 'Style name' field before duplication, the new C
 
 Your new CSS file is then immediately available for editing.
 
-[Next: Diagnostics administration panel](http://docs.textpattern.io/administration/diagnostics-panel)
+[Next: Diagnostics administration panel](https://docs.textpattern.io/administration/diagnostics-panel)

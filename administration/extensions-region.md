@@ -8,7 +8,7 @@ description: The extensions region appears to the higher user roles if any of th
 
 # Extensions region TODO
 
-The Extensions administration region is not an out-of-the-box feature. It appears to the higher [user roles](http://docs.textpattern.io/administration/user-roles-and-privileges) if any of the admin-side plugins that employ it are installed.
+The Extensions administration region is not an out-of-the-box feature. It appears to the higher [user roles](https://docs.textpattern.io/administration/user-roles-and-privileges) if any of the admin-side plugins that employ it are installed.
 
 When relevant, the Extensions administration region will be seen in the administration navigation from all admin-side views *except* when you are in context of the **Plugins** panel, even for the administrator. This behaviour ensures being able to safely deactivate and/or remove outdated or buggy plugins if they are causing problems. To access the **Extensions** panels from the **Plugins** panel, move to anywhere else in the admin-side first, and the \***Extensions** region will appear in the navigation again.
 

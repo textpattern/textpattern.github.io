@@ -83,9 +83,9 @@ There are situations (membership communities, employee intranets, magazine artic
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of users listed per page by selecting another value from the number range.
 
-[Next: Plugins administration panel](http://docs.textpattern.io/administration/plugins-panel)
+[Next: Plugins administration panel](https://docs.textpattern.io/administration/plugins-panel)
 
-[^1]: See [User roles and privileges](http://docs.textpattern.io/administration/user-roles-and-privileges) for how roles and privileges match up.
+[^1]: See [User roles and privileges](https://docs.textpattern.io/administration/user-roles-and-privileges) for how roles and privileges match up.
 
 [^2]: A Publisher has the same rights and power as the site administrator, but can not delete or demote the administrator account. The administrator can delete or demote the Publisher at any time. The only way to change the administrator account is to do so directly in the users table of the database. This might need done, for example, when a website is being delivered to a client and ongoing support from the original site administrator (builder) is no longer needed or wanted.
 
@@ -93,4 +93,4 @@ At the very bottom of the list you will find a pagination and links for next and
 
 [^4]: User accounts extension requires the installation and use of various plugins. The plugins mentioned here are reliably maintained.
 
-[^5]: This plugin adds a **Bio config** panel option to the [Extensions region](http://docs.textpattern.io/administration/extensions-region), as an example of how the Extensions region is used.
+[^5]: This plugin adds a **Bio config** panel option to the [Extensions region](https://docs.textpattern.io/administration/extensions-region), as an example of how the Extensions region is used.

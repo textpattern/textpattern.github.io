@@ -10,7 +10,7 @@ description: Textpattern plugins are perhaps best thought of as functions supple
 
 Textpattern plugins are perhaps best thought of as functions supplementary to those found in Textpattern core.
 
-Functions residing in this file respond to `<txp:foo />` and `<txp:foo>bar</txp:foo>` tags found in [Page templates](http://docs.textpattern.io/themes/page-templates-explained), [Form templates](http://docs.textpattern.io/themes/form-templates-explained), @@Articles@@ and other dynamic content containers in Textpattern. A [Textpattern plugin template is available on GitHub](https://github.com/textpattern/textpattern-plugin-template) for plugin distribution.
+Functions residing in this file respond to `<txp:foo />` and `<txp:foo>bar</txp:foo>` tags found in [Page templates](https://docs.textpattern.io/themes/page-templates-explained), [Form templates](https://docs.textpattern.io/themes/form-templates-explained), @@Articles@@ and other dynamic content containers in Textpattern. A [Textpattern plugin template is available on GitHub](https://github.com/textpattern/textpattern-plugin-template) for plugin distribution.
 
 On this page:
 

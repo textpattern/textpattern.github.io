@@ -174,7 +174,7 @@ Clarifying notes about using the template:
 
 **Prefix**. In the first line, `h1. prefix_plugin_name`, "prefix" will
 be your [plugin developer
-prefix](http://docs.textpattern.io/development/plugin-developer-prefixes).
+prefix](https://docs.textpattern.io/development/plugin-developer-prefixes).
 
 **Features list**. If your plugin isn't complex (doesn't have a lot of
 features), you may merge the "Features list" section into your summary

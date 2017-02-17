@@ -22,14 +22,14 @@ On this page:
 <txp:file_download_created />
 ~~~
 
-The **file_download_created** tag is a *single* tag that Textpattern will replace with the upload date of the file to download. Should be used in Textpattern 'file' type [Form templates](http://docs.textpattern.io/themes/form-templates-explained).
+The **file_download_created** tag is a *single* tag that Textpattern will replace with the upload date of the file to download. Should be used in Textpattern 'file' type [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
 `format="format string"`
-: Override the default date format set in the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel).
+: Override the default date format set in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
 : **Values:** any valid [strftime](http://php.net/strftime) string values, `since`, `iso8601` ([ISO 8601 reference](http://en.wikipedia.org/wiki/ISO_8601)), `w3cdtf` ([W3CDTF reference](http://www.w3.org/TR/NOTE-datetime)), or `rfc822` ([RFC 822 reference](http://www.w3.org/Protocols/rfc822/#z28)).
 : **Default:** the 'Archive date format' set in preferences.
 

@@ -8,7 +8,7 @@ description: This comprehensive reference provides detailed information about al
 
 # Core callbacks reference TODO
 
-This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](http://docs.textpattern.io/development/admin-side-events-and-steps).
+This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](https://docs.textpattern.io/development/admin-side-events-and-steps).
 
 On this page:
 
@@ -92,7 +92,7 @@ Any time a comment form is rendered or a comment is posted on an article, the fo
 
 ### publish/log.php
 
-As long as *Logging* is switched on from the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel), whenever a visitor requests a web page from Textpattern, a hit is registered. Use the callback here to intercept it.
+As long as *Logging* is switched on from the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel), whenever a visitor requests a web page from Textpattern, a hit is registered. Use the callback here to intercept it.
 
 `log_hit`
 : **When it occurs:** Just before a log message is recorded in the 'txp_log' table.
@@ -100,13 +100,13 @@ As long as *Logging* is switched on from the [Preferences administration panel](
 
 ## Admin-side callbacks
 
-Admin-side callbacks are split into three flavours. The first are easy to recognize from the address bar of your browser. If you click on any admin-side panel link, you'll see the URL contains `?event=panelname`, and if you click on any link in that panel that performs an action, you'll see `?event=panelname&step=action`. Those values correspond to the `$event` and `$step` parameters you can use during [plugin or theme development](http://docs.textpattern.io/development/). In fact, they will call any user-defined function that is registered for said `$event` and `$step`, allowing you to add your own *events* and *steps* as you need them.
+Admin-side callbacks are split into three flavours. The first are easy to recognize from the address bar of your browser. If you click on any admin-side panel link, you'll see the URL contains `?event=panelname`, and if you click on any link in that panel that performs an action, you'll see `?event=panelname&step=action`. Those values correspond to the `$event` and `$step` parameters you can use during [plugin or theme development](https://docs.textpattern.io/development/). In fact, they will call any user-defined function that is registered for said `$event` and `$step`, allowing you to add your own *events* and *steps* as you need them.
 
-If you wish to utilise such core hooks, consult the [admin-side events and steps](http://docs.textpattern.io/development/admin-side-events-and-steps) document, which lists them all.
+If you wish to utilise such core hooks, consult the [admin-side events and steps](https://docs.textpattern.io/development/admin-side-events-and-steps) document, which lists them all.
 
 The second type of callback relate to actions that occur in response to various page-level signals. These could be when certain parts of the administration interface are rendered or when actions (such as deletion) complete, and are listed below.
 
-The final type of callback is `pluggable_ui()`. These deal with specific chunks of content that appear on the page and allow direct manipulation of individual elements or blocks. They are listed in the [pluggable_ui](http://docs.textpattern.io/development/the-pluggable-ui-function) document.
+The final type of callback is `pluggable_ui()`. These deal with specific chunks of content that appear on the page and allow direct manipulation of individual elements or blocks. They are listed in the [pluggable_ui](https://docs.textpattern.io/development/the-pluggable-ui-function) document.
 
 ### Major block-level callbacks
 
@@ -173,7 +173,7 @@ TODO: intro para about what this callback is concerned with
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   `$event`         `$step`           When it occurs                                  What it allows/does
   ---------------- ----------------- ----------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  `diag_results`   `high` or `low`   At the end of the `doDiagnostics()` function.   Renders the content of the ****[Diagnostics](http://docs.textpattern.io/administration/diagnostics-panel) panel. Allows you to add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low).
+  `diag_results`   `high` or `low`   At the end of the `doDiagnostics()` function.   Renders the content of the ****[Diagnostics](https://docs.textpattern.io/administration/diagnostics-panel) panel. Allows you to add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low).
 
 </div>
 
@@ -354,17 +354,17 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Panel                                                                               `$event`           `$step`
   ----------------------------------------------------------------------------------- ------------------ ----------------
-  "Articles":http://docs.textpattern.io/administration/articles-panel         `admin_criteria`   `list_list`
-  "Comments":http://docs.textpattern.io/administration/comments-panel         "                  discuss_list
-  "Files":http://docs.textpattern.io/administration/files-panel               "                  `file_list`
-  "Forms":http://docs.textpattern.io/administration/forms-panel          "                  `form_list`
-  "Images":http://docs.textpattern.io/administration/images-panel             "                  `image_list`
-  "Links":http://docs.textpattern.io/administration/links-panel               "                  link_list
-  "Pages":http://docs.textpattern.io/administration/pages-panel          "                  `page_list`
-  "Sections":http://docs.textpattern.io/administration/sections-panel    `admin_criteria`   `section_list`
-  "Styles":http://docs.textpattern.io/administration/styles-panel        "                  `css_list`
-  "Users":http://docs.textpattern.io/administration/users-panel                 "                  `author_list`
-  "Visitor logs":http://docs.textpattern.io/administration/visitor-logs-panel   "                  `log_list`
+  "Articles":https://docs.textpattern.io/administration/articles-panel         `admin_criteria`   `list_list`
+  "Comments":https://docs.textpattern.io/administration/comments-panel         "                  discuss_list
+  "Files":https://docs.textpattern.io/administration/files-panel               "                  `file_list`
+  "Forms":https://docs.textpattern.io/administration/forms-panel          "                  `form_list`
+  "Images":https://docs.textpattern.io/administration/images-panel             "                  `image_list`
+  "Links":https://docs.textpattern.io/administration/links-panel               "                  link_list
+  "Pages":https://docs.textpattern.io/administration/pages-panel          "                  `page_list`
+  "Sections":https://docs.textpattern.io/administration/sections-panel    `admin_criteria`   `section_list`
+  "Styles":https://docs.textpattern.io/administration/styles-panel        "                  `css_list`
+  "Users":https://docs.textpattern.io/administration/users-panel                 "                  `author_list`
+  "Visitor logs":https://docs.textpattern.io/administration/visitor-logs-panel   "                  `log_list`
 
 notextile.
 
@@ -393,12 +393,12 @@ notextile.
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Panel                                                                         `$event`       `$step`
   ----------------------------------------------------------------------------- -------------- --------------------
-  "Articles":http://docs.textpattern.io/administration/content/articles-panel   `article_ui`   `validate_save`
-  "Articles":http://docs.textpattern.io/administration/content/articles-panel   `article_ui`   `validate_publish`
-  "Comments":http://docs.textpattern.io/administration/content/comments-panel   `discuss_ui`   `validate_save`
-  "Files":http://docs.textpattern.io/administration/content/files-panel         `file_ui`      `validate_save`
-  "Images":http://docs.textpattern.io/administration/content/images-panel       `image_ui`     `validate_save`
-  "Links":http://docs.textpattern.io/administration/content/links-panel         `link_ui`      `validate_save`
+  "Articles":https://docs.textpattern.io/administration/content/articles-panel   `article_ui`   `validate_save`
+  "Articles":https://docs.textpattern.io/administration/content/articles-panel   `article_ui`   `validate_publish`
+  "Comments":https://docs.textpattern.io/administration/content/comments-panel   `discuss_ui`   `validate_save`
+  "Files":https://docs.textpattern.io/administration/content/files-panel         `file_ui`      `validate_save`
+  "Images":https://docs.textpattern.io/administration/content/images-panel       `image_ui`     `validate_save`
+  "Links":https://docs.textpattern.io/administration/content/links-panel         `link_ui`      `validate_save`
 
 notextile.
 
@@ -500,7 +500,7 @@ which is where the `extend_col_1` step outputs its markup.
 \[todo:intro para about what this callback is concerned with\]
 
 For the
-****[Categories](http://docs.textpattern.io/administration/categories-panel)
+****[Categories](https://docs.textpattern.io/administration/categories-panel)
 panel.
 
 notextile.
@@ -518,7 +518,7 @@ notextile.
 \[todo:intro para about what this callback is concerned with\]
 
 For the
-****[Images](http://docs.textpattern.io/administration/images-panel)
+****[Images](https://docs.textpattern.io/administration/images-panel)
 panel. These callbacks have a single `$event` (i.e. `image_ui`).
 
 notextile.
@@ -543,7 +543,7 @@ notextile.
 \[todo:intro para about what this callback is concerned with\]
 
 For the
-****[Files](http://docs.textpattern.io/administration/files-panel)
+****[Files](https://docs.textpattern.io/administration/files-panel)
 panel.
 
 notextile.
@@ -561,7 +561,7 @@ notextile.
 \[todo:intro para about what this callback is concerned with\]
 
 For the
-****[Links](http://docs.textpattern.io/administration/links-panel)
+****[Links](https://docs.textpattern.io/administration/links-panel)
 panel.
 
 notextile.
@@ -579,7 +579,7 @@ notextile.
 \[todo:intro para about what this callback is concerned with\]
 
 For the
-****[Sections](http://docs.textpattern.io/administration/sections-panel)
+****[Sections](https://docs.textpattern.io/administration/sections-panel)
 panel.
 
 notextile.
@@ -597,7 +597,7 @@ notextile.
 TODO: intro para about what this callback is concerned with
 
 For the
-****[Users](http://docs.textpattern.io/administration/users-panel)
+****[Users](https://docs.textpattern.io/administration/users-panel)
 panel.
 
 notextile.
@@ -615,7 +615,7 @@ notextile.
 
 TODO: intro para about what this callback is concerned with
 
-See the [Preferences administration panel](http://docs.textpattern.io/administration/preferences-panel) documentation.
+See the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel) documentation.
 
 notextile.
 

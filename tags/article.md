@@ -37,7 +37,7 @@ This is equivalent to putting the contained statements into a form named `my_for
 
 The tag is context-sensitive, which means it will grab articles from the currently viewed section/category/author, etc.
 
-When used on the front page, article's context will include articles from all sections set to display via 'Section appears on front page?' settings (see the [Sections administration panel](http://docs.textpattern.io/administration/sections-panel) for more information).
+When used on the front page, article's context will include articles from all sections set to display via 'Section appears on front page?' settings (see the [Sections administration panel](https://docs.textpattern.io/administration/sections-panel) for more information).
 
 Note: `<txp:article />` is **not** the same as `<txp:article_custom />` - you can [check out the differences of that tag](article_custom) if you're unsure of the differences!
 {: .alert-block .information}
@@ -84,7 +84,7 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 : **Default:** `0`.
 
 `searchall="boolean"`
-: When outputting search results, include only those articles with 'Include in site search' set on the [Sections administration panel](http://docs.textpattern.io/administration/sections-panel). If set to `0`, only articles in the current section are displayed. See @@Fixing search results@@ for more.
+: When outputting search results, include only those articles with 'Include in site search' set on the [Sections administration panel](https://docs.textpattern.io/administration/sections-panel). If set to `0`, only articles in the current section are displayed. See @@Fixing search results@@ for more.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `1`.
 
@@ -137,15 +137,15 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: **Default:** `br` (but see [break cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#break) for exceptions).
+: **Default:** `br` (but see [break cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#break) for exceptions).
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** tag name or unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `label="text"`
 : Label prepended to item.
-: **Default:** unset (but see [label cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#label) for exceptions).
+: **Default:** unset (but see [label cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#label) for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
@@ -153,7 +153,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ### Note on 'article list' vs. 'individual article' context
 
@@ -169,7 +169,7 @@ Here is the **article** tag responsible for the main content of the home page on
 <txp:article limit="5" />
 ~~~
 
-Calls the `default` article form, which may contain any variation of article output you want to create. The `default` form cannot be deleted; it is the form you see on first viewing the [Forms administration panel](http://docs.textpattern.io/administration/forms-panel).
+Calls the `default` article form, which may contain any variation of article output you want to create. The `default` form cannot be deleted; it is the form you see on first viewing the [Forms administration panel](https://docs.textpattern.io/administration/forms-panel).
 
 Uses the `limit` attribute to specify the maximum number of articles displayed in article list context (if not specified, this defaults to `10`).
 

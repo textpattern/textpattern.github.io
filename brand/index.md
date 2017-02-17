@@ -48,8 +48,8 @@ Learn how to write and design information that's consistent, clear, and professi
 
 ### Content
 
-* [Editorial style guidelines](http://docs.textpattern.io/brand/editorial-style-guidelines)
-* [Plugin user-help guidelines](http://docs.textpattern.io/development/plugin-user-help-guidelines)
+* [Editorial style guidelines](https://docs.textpattern.io/brand/editorial-style-guidelines)
+* [Plugin user-help guidelines](https://docs.textpattern.io/development/plugin-user-help-guidelines)
 
 ### Presentation
 

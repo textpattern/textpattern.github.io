@@ -38,7 +38,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0`.
 
 `name="category name"`
-: Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [Categories administration panel](http://docs.textpattern.io/administration/categories-panel). Also note that if you had called your category `My Category Name` it becomes `my-category-name` when used in tags.
+: Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [Categories administration panel](https://docs.textpattern.io/administration/categories-panel). Also note that if you had called your category `My Category Name` it becomes `my-category-name` when used in tags.
 : **Default:** unset (use current category).
 
 `section="section name"`
@@ -72,11 +72,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` attribute, applied to `wraptag`. If no `wraptag` is supplied (and `link="1"`), the `class` is applied to the `<a>` tag instead.
-: **Default:** unset (see [class cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="tag"`
 : HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](http://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

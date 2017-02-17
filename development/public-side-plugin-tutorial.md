@@ -10,7 +10,7 @@ description: This tutorial will walk you through the basics of creating a simple
 
 This tutorial will walk you through the basics of creating a simple public-side plugin; not to be used, exactly, but so you understand what's involved.
 
-You might also like to see the [Admin-side plugin tutorial](http://docs.textpattern.io/development/admin-side-plugin-tutorial).
+You might also like to see the [Admin-side plugin tutorial](https://docs.textpattern.io/development/admin-side-plugin-tutorial).
 
 On this page:
 
@@ -32,10 +32,10 @@ The plugin in this tutorial will:
 1.  Create a Textpattern tag
 2.  Read some optional attributes
 3.  Output some text when that tag is called
-4.  Use Textpattern's [else](http://docs.textpattern.io/tags/else) tag
+4.  Use Textpattern's [else](https://docs.textpattern.io/tags/else) tag
 
 Since all plugins must use a [three-character alphanumeric
-prefix](http://docs.textpattern.io/development/plugin-developer-prefixes),
+prefix](https://docs.textpattern.io/development/plugin-developer-prefixes),
 we're going to use **abc** in this tutorial, which is reserved for
 documentation purposes.
 
@@ -142,7 +142,7 @@ It's a stupid example, but change your Textpattern tag to the following:
 
 What we're doing here is checking if the tag's `name` attribute is equal
 to "**Admin**". If it is, the conditional branch will execute. If not,
-the [else](http://docs.textpattern.io/tags/else) branch will run.
+the [else](https://docs.textpattern.io/tags/else) branch will run.
 
 The Textpattern function `EvalElse()` does the magic for us by fetching
 and parsing the relevant part of `$thing` (the container) depending on

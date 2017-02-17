@@ -34,7 +34,7 @@ On this page:
 
 ## textpattern
 
-The `textpattern` table contains the articles you create on the [Write administration panel](http://docs.textpattern.io/administration/write-panel).
+The `textpattern` table contains the articles you create on the [Write administration panel](https://docs.textpattern.io/administration/write-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column             Type           Description
@@ -81,7 +81,7 @@ The `textpattern` table contains the articles you create on the [Write administr
 
 ## txp_category
 
-The `txp_category` table contains all the categories you create on the [Categories panel](http://docs.textpattern.io/administration/categories-panel).
+The `txp_category` table contains all the categories you create on the [Categories panel](https://docs.textpattern.io/administration/categories-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column   Type           Description
@@ -98,7 +98,7 @@ The `txp_category` table contains all the categories you create on the [Categori
 
 ## txp_css
 
-The `txp_css` table contains the style sheets created on the [Styles panel](http://docs.textpattern.io/administration/styles-panel).
+The `txp_css` table contains the style sheets created on the [Styles panel](https://docs.textpattern.io/administration/styles-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column   Type           Description
@@ -110,7 +110,7 @@ The `txp_css` table contains the style sheets created on the [Styles panel](http
 
 ## txp_discuss
 
-The `txp_discuss` table contains all the article comments output on the [Comments panel](http://docs.textpattern.io/administration/comments-panel).
+The `txp_discuss` table contains all the article comments output on the [Comments panel](https://docs.textpattern.io/administration/comments-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column      Type           Description
@@ -129,7 +129,7 @@ The `txp_discuss` table contains all the article comments output on the [Comment
 
 ## txp_discuss_ipban
 
-The `txp_discuss_ipban` table contains a list of all IP-numbers that have been banned from commenting by the person who moderates [Comments](http://docs.textpattern.io/administration/comments-panel).
+The `txp_discuss_ipban` table contains a list of all IP-numbers that have been banned from commenting by the person who moderates [Comments](https://docs.textpattern.io/administration/comments-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column                Type           Description
@@ -179,7 +179,7 @@ The `txp_file` table contains information on all the files uploaded through Text
 
 ## txp_form
 
-The `txp_form` table contains all the forms, which are created on the [Forms panel](http://docs.textpattern.io/administration/forms-panel).
+The `txp_form` table contains all the forms, which are created on the [Forms panel](https://docs.textpattern.io/administration/forms-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column   Type          Description
@@ -192,7 +192,7 @@ The `txp_form` table contains all the forms, which are created on the [Forms pan
 
 ## txp_image
 
-The `txp_image` table contains information on all the images uploaded and managed in the [Images panel](http://docs.textpattern.io/administration/images-panel). The image files are not actually stored in the database, they're stored as normal files on the web server in the `/images` folder using the image ID as the filename (i.e. `1.png` for the main image or `1t.png` for the corresponding thumbnail).
+The `txp_image` table contains information on all the images uploaded and managed in the [Images panel](https://docs.textpattern.io/administration/images-panel). The image files are not actually stored in the database, they're stored as normal files on the web server in the `/images` folder using the image ID as the filename (i.e. `1.png` for the main image or `1t.png` for the corresponding thumbnail).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column      Type           Description
@@ -231,7 +231,7 @@ The `txp_lang` table contains translations for the various built-in strings of t
 
 ## txp_link
 
-The `txp_link` table contains all the links and related information created on the [Links panel](http://docs.textpattern.io/administration//links-panel).
+The `txp_link` table contains all the links and related information created on the [Links panel](https://docs.textpattern.io/administration//links-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column        Type           Description
@@ -249,7 +249,7 @@ The `txp_link` table contains all the links and related information created on t
 
 ## txp_log
 
-The `txp_log` table contains log entries of page requests (visits) to your website, which are output on the [Visitor logs panel](http://docs.textpattern.io/administration/visitor-logs-panel). Depending on your preferences, nothing is logged, just referrers or all requests. Old log entries are removed automatically.
+The `txp_log` table contains log entries of page requests (visits) to your website, which are output on the [Visitor logs panel](https://docs.textpattern.io/administration/visitor-logs-panel). Depending on your preferences, nothing is logged, just referrers or all requests. Old log entries are removed automatically.
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column   Type           Description
@@ -267,7 +267,7 @@ The `txp_log` table contains log entries of page requests (visits) to your websi
 
 ## txp_page
 
-The `txp_page` table contains all the page templates you create on the [Pages panel](http://docs.textpattern.io/administration/pages-panel).
+The `txp_page` table contains all the page templates you create on the [Pages panel](https://docs.textpattern.io/administration/pages-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column       Type           Description
@@ -279,7 +279,7 @@ The `txp_page` table contains all the page templates you create on the [Pages pa
 
 ## txp_plugin
 
-The `txp_plugin` table contains all the plugins you have installed, displayed on the [Plugins panel](http://docs.textpattern.io/administration/plugins-panel).
+The `txp_plugin` table contains all the plugins you have installed, displayed on the [Plugins panel](https://docs.textpattern.io/administration/plugins-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column          Type                  Description
@@ -320,7 +320,7 @@ The `txp_prefs` table contains all the administration preferences.
 
 ## txp_section
 
-The `txp_section` table contains all the sections you create on the [Sections panel](http://docs.textpattern.io/administration/sections-panel).
+The `txp_section` table contains all the sections you create on the [Sections panel](https://docs.textpattern.io/administration/sections-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column          Type           Description
@@ -338,7 +338,7 @@ The `txp_section` table contains all the sections you create on the [Sections pa
 
 ## txp_users
 
-The `txp_users` table contains information for all users, as displayed on the [Users panel](http://docs.textpattern.io/administration/users-panel).
+The `txp_users` table contains information for all users, as displayed on the [Users panel](https://docs.textpattern.io/administration/users-panel).
 
 <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
   Column         Type           Description
@@ -356,4 +356,4 @@ The `txp_users` table contains information for all users, as displayed on the [U
 
 [^1]: The size limits shown in the *Description* for various table columns (e.g. the `Body` column of the `textpattern` table) may differ slightly from the actual size limits found in the tables created by Textpattern during installation (when a column is used in multiple tables, the smallest size is used). You should consider the limits indicated here as authoritative. When in doubt, ask a developer on the forum.
 
-[^2]: See [Plugin lifecycle management and preferences](http://docs.textpattern.io/development/) for more info.
+[^2]: See [Plugin lifecycle management and preferences](https://docs.textpattern.io/development/) for more info.
