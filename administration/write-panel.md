@@ -115,7 +115,7 @@ Status assignment depends on the *Privileges* of a user. Depending on your site'
 
 ##### Draft
 
-The *Draft* status means pretty much what it implies: your article is not finished, it is a draft. Select this mode if you are starting an article (or revising an existing article) but you do not expect to finish it in one sitting. By selectng draft your article will be saved to the database, but it will not be made live to the world. You can come back anytime to work on the draft article, and change the status when you are ready.
+The *Draft* status means pretty much what it implies: your article is not finished, it is a draft. Select this mode if you are starting an article (or revising an existing article) but you do not expect to finish it in one sitting. By selecting draft your article will be saved to the database, but it will not be made live to the world. You can come back anytime to work on the draft article, and change the status when you are ready.
 
 ##### Hidden
 
@@ -249,7 +249,7 @@ Advanced options contains extended options for the particular article being edit
 
 #### Article markup and Excerpt markup
 
-There are two options regarding markup: 'Article markup' (for the *Body* text area) and 'Excerpt markup' (for the *Excerpt* text area). By default *full* Textile-markup is turned on by 'Use Textile'. You can turn off *all* markup by choosing 'Leave text untouched'. If you want a minimum of comfort you can choose *Convert linebreaks* - single linebreaks will be converted to linebreaks and double linebreaks will get paragraphs. If you have installed alternative text filters in addition to Textile, they will also be available options here.
+There are two options regarding markup: 'Article markup' (for the *Body* text area) and 'Excerpt markup' (for the *Excerpt* text area). By default *full* Textile-markup is turned on by 'Use Textile'. You can turn off *all* markup by choosing 'Leave text untouched'. If you want a minimum of comfort you can choose *Convert line breaks* - single line breaks will be converted to line breaks and double line breaks will get paragraphs. If you have installed alternative text filters in addition to Textile, they will also be available options here.
 
 #### Override form
 

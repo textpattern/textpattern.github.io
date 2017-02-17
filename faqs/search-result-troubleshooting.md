@@ -10,9 +10,9 @@ If your search results page is _completely_ blank (a zero byte page), the proble
 
 If your search results page shows its normal page layout, but with no articles, you should check three things:
 
-1. That the sections containing the articles in question have _Include in site search_ set to _Yes_ on *textpattern > presentation > sections*.
+1. That the sections containing the articles in question have _Include in site search_ set to _Yes_ on *Textpattern > presentation > sections*.
 
-2. That the search term you're using really does match some articles.  Test the same search term in the  _Search Body & Title_ box on *textpattern > content > articles*, and make sure that finds at least one *Live* article.  If not, use a single, common word, and try varying the case.  Case sensitive search results are caused by an incorrect collation setting on your textpattern database or table.
+2. That the search term you're using really does match some articles.  Test the same search term in the  _Search Body & Title_ box on *Textpattern > content > articles*, and make sure that finds at least one *Live* article.  If not, use a single, common word, and try varying the case.  Case sensitive search results are caused by an incorrect collation setting on your Textpattern database or table.
 
 3. If you're using a special section such as @/search/@ to display your search results, make sure your @<txp:article />@ tag doesn't 
 specify @searchall=0@ - this will force it to look for articles in the @search@ section.  @searchall=1@ is the default; this tells the article tag to display results from all sections that have _Include in site search_ set to _Yes_.

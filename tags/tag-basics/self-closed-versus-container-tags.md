@@ -3,7 +3,7 @@ layout: document
 category: Tag basics
 published: true
 title: Self-closed versus container tags
-description: A self-closed tag is the most basic form of a Texpattern tag.
+description: A self-closed tag is the most basic form of a Textpattern tag.
 ---
 
 # Self-closed versus container tags
@@ -16,7 +16,7 @@ On this page:
 
 ## Self-closed tags
 
-A self-closed tag is the most basic form of a Texpattern tag. Its structure is similar to that of a self-closed tag in HTML (e.g. `<br />`), most notably the inclusion of the terminating forward slash.
+A self-closed tag is the most basic form of a Textpattern tag. Its structure is similar to that of a self-closed tag in HTML (e.g. `<br />`), most notably the inclusion of the terminating forward slash.
 
 Any self-closed Textpattern tag has the following syntactic structure:
 

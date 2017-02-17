@@ -8,7 +8,7 @@ description: This is a fast-track orientation to help you build your first publi
 
 # Building your first Textpattern architecture TODO:dw
 
-This will integrate the FAQ: ive-installed-textpattern-now-what.textile
+This will integrate the FAQ: ive-installed-textpattern-now-what
 
 This is a fast-track orientation to help you build your first publishing architecture in Textpattern. It assumes you've [installed, configured,
 and diagnosed a new instance of Textpattern](https://docs.textpattern.io/installation/installing-textpattern)

@@ -16,7 +16,7 @@ In Textpattern your visitors are in one of two *views_; either an **individual**
 
 ## Displaying category lists
 
-When you show visitors an article, you can opt to make the categories to which it belongs hyperlinkable. If a visitor clicks one of these links, they are taken to a category list showing other articles in the same category. Textpattern automatically switches from *individual article* mode to *list* mode; the magic behind how the content changes on-screen is fairly simple with containers and conditionals.
+When you show visitors an article, you can opt to make the categories to which it belongs hyperlink-able. If a visitor clicks one of these links, they are taken to a category list showing other articles in the same category. Textpattern automatically switches from *individual article* mode to *list* mode; the magic behind how the content changes on-screen is fairly simple with containers and conditionals.
 
 On your default article page you might see something like this:
 

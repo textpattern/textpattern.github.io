@@ -150,7 +150,7 @@ Things, that generally should be avoided:
 3.  The folder names can simply be :\`css\`,\`pages\`, and \`forms\` and
     should be sibblings where the parent-folder could have the template
     name as folder-name.
-4.  It has been suggested, to move the textpattern Folder outside of the
+4.  It has been suggested, to move the textpattern folder outside of the
     textpattern directory, to make maintenance of the Textpattern source code
     easier and more reliable. This example can be seen in a modified
     version of mcw_templates

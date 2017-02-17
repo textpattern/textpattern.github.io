@@ -125,7 +125,7 @@ These callbacks relate to the `<head>` and `<footer>` sections, and navigation a
 : **What it allows:** Injection of admin-wide markup below the panel navigation area.
 
 `admin_side > main_content`
-: **When it occurs:** Immediatley after the 'announce' area (where feedback messages appear) and before the panel's main content begins. Just inside the `<main>` tag.
+: **When it occurs:** Immediately after the 'announce' area (where feedback messages appear) and before the panel's main content begins. Just inside the `<main>` tag.
 : **What it allows:** Addition of information at the top of any panel, below the navigation area.
 
 `admin_side > main_content_end`
@@ -454,23 +454,22 @@ notextile.
 notextile.
 
 </div>
+
 **Example 1: Altering the Status widget's radio button list**
 
-In this example we'll alter the **Status** widget's radio button list by
-adding a new button option to it:
+In this example we'll alter the **Status** widget's radio button list by adding a new button option to it:
 
-    register_callback('abc_altered_status', 'article_ui', 'status');
+~~~ php
+register_callback('abc_altered_status', 'article_ui', 'status');
 
-    function abc_altered_status($event, $step, $data, $rs) {
+function abc_altered_status($event, $step, $data, $rs) {
+    $stat = isset($rs['Status']) ? $rs['Status'] : '';
+    $new_status = n.t.'&lt;li&gt;'.radio('Status', 6, ($stat == 6) ? 1 : 0, 'status-6').'&lt;label for=&quot;status-6&quot;&gt;Velcro&lt;/label&gt;&lt;/li&gt;';
+    $data = str_replace('&lt;/ul&gt;', $new_status.'&lt;/ul&gt;', $data);
 
-       $stat = isset($rs['Status']) ? $rs['Status'] : '';
-
-       $new_status = n.t.'&lt;li&gt;'.radio('Status', 6, ($stat == 6) ? 1 : 0, 'status-6').'&lt;label for=&quot;status-6&quot;&gt;Velcro&lt;/label&gt;&lt;/li&gt;';
-
-       $data = str_replace('&lt;/ul&gt;', $new_status.'&lt;/ul&gt;', $data);
-
-       return $data;
-    }
+    return $data;
+}
+~~~
 
 We've used `register_callback()` to define our callback function, and in
 this case we've employed the `$event`/@\$step@ combination for targeting

@@ -27,7 +27,7 @@ Article categories allow organization of articles by their subject matter. Once 
 
 To create a category you simply type its name in the textfield at the top and click 'Create' - Textpattern then adds the new category to the list. You can also assign a new category to an existing 'parent' category when you create it (i.e. making it a 'subcategory' of an existing 'category').
 
-Some **changes might occur** if you've chosen a name that has more than one word or if your language is not English: **special characters** such as umlauts (ä, ö, ü) are **converted** into replacement characters (e.g. ae, oe, ue, respectively) and **individual words are linked with hypens**. Category names are also converted to lower case letters. For example: `persönlich` will become `persoenlich` and `about me` will become `about-me`.
+Some **changes might occur** if you've chosen a name that has more than one word or if your language is not English: **special characters** such as umlauts (ä, ö, ü) are **converted** into replacement characters (e.g. ae, oe, ue, respectively) and **individual words are linked with hyphens**. Category names are also converted to lower case letters. For example: `persönlich` will become `persoenlich` and `about me` will become `about-me`.
 
 The reason for these changes is that category names can be part of URLs and Textpattern makes sure that a category name contains only characters that are allowed in URLs. **Note:** The category `title` retains any special characters and/or spaces - it is only category `name` that is affected.
 

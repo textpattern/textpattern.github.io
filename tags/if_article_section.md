@@ -52,7 +52,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 Displays the author name if the current article belongs to the section named `poetry`.
 
-Other tags used: [author](author).texttile.
+Other tags used: [author](author).
 
 ### Example 2: Using the tag with else
 

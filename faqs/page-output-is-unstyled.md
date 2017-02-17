@@ -18,6 +18,6 @@ If the link appears correct, try pasting the CSS url directly into the address b
 
 *If you just updated and expect to see your site here..* - if the CSS output includes this message, you "haven't updated the css.php file":http://textpattern.com/faq/126/error-publishphp-cannot-be-called-directly correctly when upgrading.
 
-If you're seeing _some_ CSS styling, but not the style you'd expect, make sure you've applied the correct stylesheet to your section (textpattern > presentation > sections, "Uses style:").
+If you're seeing _some_ CSS styling, but not the style you'd expect, make sure you've applied the correct stylesheet to your section (Textpattern > presentation > sections, "Uses style:").
 
 If you've manually created a @<link rel="stylesheet" ... />@ tag, rather than using the @<txp:css />@ tag in your template, make sure you've used the correct URL.

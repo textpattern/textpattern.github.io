@@ -32,7 +32,7 @@ Textpattern developers do their part to keep core code as secure as they can. It
 * Ensure you use a very strong password for *all* accounts.
 * Only create Textpattern user accounts for people who require them, and ensure their access level is set to only the functionality they require. Don't just create admin-level accounts because it is easier! Each one is a potential avenue of attack if a password is compromised.
 
-**With regard to Texpattern plugins:**
+**With regard to Textpattern plugins:**
 
 * Regularly verify the plugins you've uploaded and *turned on* are the latest versions.[^1]
 * Remove plugins you have turned off and don't rely on anymore (you can always reinstall them if ever needed again).

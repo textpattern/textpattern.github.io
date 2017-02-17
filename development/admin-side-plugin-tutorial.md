@@ -87,7 +87,7 @@ reveal Textpattern *events* and *steps*.
 
 For purposes here, think of an event as a panel option under the
 **Extensions** region in the Textpattern admin-side UI (i.e. a
-sub-panel). The plugin panel has a name that Tetxpattern knows. The
+sub-panel). The plugin panel has a name that Textpattern knows. The
 panel also has built-in events such as 'file', 'image', 'admin' and so
 on.
 
@@ -253,7 +253,7 @@ Now go and create something cool for Textpattern!
     primary and secondary folders with "tab" links for navigating the
     admin-side. In documentation we now call these locations "panels"
     (moving away from the folder tabs concept), but there are still
-    artifacts in the code. Just think of "panels" and "tabs" as the same
+    artefacts in the code. Just think of "panels" and "tabs" as the same
     thing.
 
 [^2]: The Textpattern presentational style guide \[link needed here\]

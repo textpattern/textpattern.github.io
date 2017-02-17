@@ -88,7 +88,7 @@ notextile. </div>
 
 The main thing to note is there's little difference between British English and the Oxford English Dictionary, except for words ending in “-ize/-ise” and their related grammatical forms. In other words, use "z" in all such forms (e.g. organize, organizer, organization, organizational).
 
-Also note that "program" (not "programme") is the correct spelling when used in context of software only. Likewise you would never use "centre" where "center" was required in code (e.g, @text-align:center;@). And it would be "data modelling", according to the -ler/-ller convention, not "data modeling".
+Also note that "program" (not "programme") is the correct spelling when used in context of software only. Likewise you would never use "centre" where "center" was required in code (e.g, @text-align:center;@). And it would be "data modelling", according to the -ler/-ller convention, not 'data modeling'.
 
 [^2]: See [Oxford spelling](https://en.wikipedia.org/wiki/Oxford_spelling":https://en.wikipedia.org/wiki/Oxford_spelling).
 
@@ -180,7 +180,7 @@ When referring to one of the Textpattern platforms, use the proper noun, not the
 
 For example, here we name the main site by it's proper noun and clarify the correct _full_ domain name from the other confusing options.
 
-bq. Go to the "Textpattern":# website to download the latest version, which is at textpattern.com, not textpattern.org or textpattern.net.
+bq. Go to the "Textpattern":# website to download the latest version, which is at textpattern.com, not textpattern.org or docs.textpattern.io.
 
 It's a silly example, since the link would suffice to direct somebody, but the point is made about how to reference a platform name versus naming the domain specifically.
 

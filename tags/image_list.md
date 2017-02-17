@@ -24,7 +24,7 @@ On this page:
 <txp:image_list />
 ~~~
 
-The **image_list** tag is a *single* or *container* tag that Textpattern will use to gather a list of matching images uploaded via the Textpatterm images panel.
+The **image_list** tag is a *single* or *container* tag that Textpattern will use to gather a list of matching images uploaded via the Textpattern images panel.
 
 If used as a *container* tag, it must be specified as an opening and closing pair of tags, like this:
 

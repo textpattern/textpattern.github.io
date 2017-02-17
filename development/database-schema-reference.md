@@ -58,8 +58,8 @@ The `textpattern` table contains the articles you create on the [Write administr
   AnnotateInvite     varchar(255)   Text used for inviting people to comment on the article
   comments_count    integer        Number of visible comments associated with this article
   Status             integer        Status (1 = draft, 2 = hidden, 3 = pending, 4 = live, 5 = sticky)
-  textile_body      integer        Body markup (0 = raw HTML and text, 1 = textile, 2 = only convert linebreaks. Default = 1)
-  textile_excerpt   integer        Excerpt markup (0 = raw HTML and text, 1 = textile, 2 = only convert linebreaks. Default = 1)
+  textile_body      integer        Body markup (0 = raw HTML and text, 1 = textile, 2 = only convert line breaks. Default = 1)
+  textile_excerpt   integer        Excerpt markup (0 = raw HTML and text, 1 = textile, 2 = only convert line breaks. Default = 1)
   Section            varchar(64)    Name of the section in which this article belongs
   override_form     varchar(64)    Textpattern 'form' containing layout used for displaying this specific article, overriding the form which is normally used to display articles. If left empty, the default layout form is used
   Keywords           varchar(255)   Comma separated list of keywords (often called 'tags') that describe this article
@@ -163,7 +163,7 @@ The `txp_file` table contains information on all the files uploaded through Text
   Column        Type           Description
   ------------- -------------- ------------------------------------------------
   id            integer        Unique auto-incremented ID of this file
-  filename      varchar(255)   Name of the file as stored on the harddisk
+  filename      varchar(255)   Name of the file as stored on the hard disk
   title         varchar(255)   Title given to this file for display purposes
   category      varchar(64)    Name of the category associated with this file
   permissions   varchar(32)    (reserved for future use)

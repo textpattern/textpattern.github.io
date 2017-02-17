@@ -45,7 +45,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `1`.
 
 `exclude="category name(s)"`
-: List of category names which will be excluded from the list. `categories` takes precendence over `exclude`.
+: List of category names which will be excluded from the list. `categories` takes precedence over `exclude`.
 : **Default:** unset.
 
 `form="form name"`

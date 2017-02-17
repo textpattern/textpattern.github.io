@@ -283,7 +283,7 @@ todo:explanation
 You are running a development version of Textpattern on a live server.
 {: .alert-block .warning}
 
-Means you're intallation version is a future development version, not the lastest stable release. This would be okay for local testing, but not recommended for a live production site online.
+Means you're installation version is a future development version, not the latest stable release. This would be okay for local testing, but not recommended for a live production site online.
 
 The following PHP functions (which may be necessary to run Textpattern) are disabled on your server...
 {: .alert-block .warning}

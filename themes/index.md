@@ -37,7 +37,7 @@ Regardless of which approach you take, here are some tips that will help along t
 
 1. Before you begin, think about the kind of content your theme will best present, and write some sample web copy to use in the theme prototype, which will help lead how your theme's information architecture is structured. This helps ensure your design best supports a given genre, whether a blog, magazine, real estate site, whatever.
 2. Sketch or (loosely) mockup the theme design your want to create. Don't pour your time/effort into a full-glossy mockup; just have enough sketch idea to help lead your prototype direction, where you can then refine directly in the code.
-3. Find an existing theme that has design patterns that most closely match what you want in your own theme design. Use this code as your model. Unless you really know the code history of the designer whose theme you're modeling from, you might be better off using Textpattern's own default theme.
+3. Find an existing theme that has design patterns that most closely match what you want in your own theme design. Use this code as your model. Unless you really know the code history of the designer whose theme you're modelling from, you might be better off using Textpattern's own default theme.
 4. Open up a copy of the model theme in your editor of choice and replace the model's code patterns and presentation with your own design code and images. Sky's the limit - have fun!
 
 ## Admin-side theme design

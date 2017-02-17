@@ -52,9 +52,9 @@ You open the Section property editor when creating a new section or choosing to 
 
 **Section title:** a title for the section, which can be harnessed by tags (such as [section](https://docs.textpattern.io/tags/section)).
 
-**Uses page:** Textpattern assigns its default page template automatically (to ensure baseline publishing capabilities) but you can select differently if you have additonal [Pages](https://docs.textpattern.io/administration/pages-panel) already created; You can reassign sections to pages at any time.
+**Uses page:** Textpattern assigns its default page template automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Pages](https://docs.textpattern.io/administration/pages-panel) already created; You can reassign sections to pages at any time.
 
-**Uses style:** Textpattern assigns its default style (CSS) automatically (to ensure baseline publishing capabilities) but you can select differently if you have additonal [Styles](https://docs.textpattern.io/administration/styles-panel) already created; You can reassign sections to styles at any time.
+**Uses style:** Textpattern assigns its default style (CSS) automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Styles](https://docs.textpattern.io/administration/styles-panel) already created; You can reassign sections to styles at any time.
 
 **On front page?:** This is an extremely important option and should be considered with respect to the overall design of the site. Remember that section content only shows up when that section is called, except for the front page. This is the control that permits or denies content from showing up when the base `index.php` is called with no arguments.
 

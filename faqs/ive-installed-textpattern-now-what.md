@@ -32,7 +32,7 @@ To write a new article, go to *content > write* in the Textpattern administratio
 
 Page templates determine the HTML code used to display *list* and *individual article* pages.  Each *section* has an associated page template that's used when displaying lists or articles in that section.  You can share the same page template between multiple sections, or create a unique one for each section if you wish.
 
-Page templates contain *textpattern tags*, which are used to insert dynamic content into the page.  For example, the @<txp:article />@ tag will display the article(s) associated with the current URL.
+Page templates contain Textpattern Tags, which are used to insert dynamic content into the page.  For example, the @<txp:article />@ tag will display the article(s) associated with the current URL.
 
 Page templates are managed in the *presentation > pages* tab of the administration interface.  To assign a template to a particular section, go to *presentation > sections*.
 

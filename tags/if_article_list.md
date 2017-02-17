@@ -65,7 +65,7 @@ This tag has no attributes.
 
 This example shows how to setup article navigation so that [link_to_prev](link_to_prev) and [link_to_next](link_to_next) are used at the individual article level *or* [older](older) and [newer](newer) with article lists.
 
-Other tags used: [link_to_prev](link_to_prev), [link_to_next](link_to_next), [prev_title](prev_title), [next_title](next_title), [if_individual_article](if_individual_article), [older](older).texrtile, [newer](newer).texrtile.
+Other tags used: [link_to_prev](link_to_prev), [link_to_next](link_to_next), [prev_title](prev_title), [next_title](next_title), [if_individual_article](if_individual_article), [older](older), [newer](newer).
 
 ### Example 2: In combination with the 'else' tag
 

@@ -27,7 +27,7 @@ For those installing a new package of Textpattern, the routine begins upon first
 
 ### Set default language
 
-Unless you change it at the initial installation screen, English is the language used by default for the installation process, and subsequently for the administration UI. You can change the default language, again (if you desire), upon first log in, go to the [Languages adminstration panel](https://docs.textpattern.io/administration/languages-panel), where the the available language packs (called Textpacks) are listed.
+Unless you change it at the initial installation screen, English is the language used by default for the installation process, and subsequently for the administration UI. You can change the default language, again (if you desire), upon first log in, go to the [Languages administration panel](https://docs.textpattern.io/administration/languages-panel), where the the available language packs (called Textpacks) are listed.
 
 First you load the language you need by clicking the 'Install' link for it. You can add as many as you want, but there's no point adding any you can't read. A green confirmation message will flash at bottom of your browser window after each install action.
 
@@ -39,7 +39,7 @@ Your next stop after languages is [Preferences administration panel](https://doc
 
 ### Troubleshoot diagnostics
 
-Your next stop is the [Diagnostics administation panel](https://docs.textpattern.io/administration/diagnostics-panel) to troubleshoot any warning or error messages that may be showing under **Pre-flight checks**. A reading of "All checks pass!" is the usual desired result. See noted exceptions in the [Diagnostics documentation](https://docs.textpattern.io/administration/diagnostics-panel).
+Your next stop is the [Diagnostics administration panel](https://docs.textpattern.io/administration/diagnostics-panel) to troubleshoot any warning or error messages that may be showing under **Pre-flight checks**. A reading of "All checks pass!" is the usual desired result. See noted exceptions in the [Diagnostics documentation](https://docs.textpattern.io/administration/diagnostics-panel).
 
 ### Build your architecture
 
