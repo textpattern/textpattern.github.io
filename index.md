@@ -47,7 +47,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img alt="Design" src="/img/index-design.jpg" srcset="/img/index-design@2x.jpg 2x, /img/index-design.jpg 1x">
+<img alt="Design" src="/img/index-build.jpg" srcset="/img/index-build@2x.jpg 2x, /img/index-build.jpg 1x">
 
 ### Design
 
