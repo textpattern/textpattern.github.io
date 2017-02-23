@@ -25,7 +25,7 @@ On this page:
 The **if_section** tag is a *conditional* tag and always used as an opening and closing pair, like this...
 
 ~~~ html
-<;txp:if_section>
+<txp:if_section>
     ...conditional statement...
 </txp:if_section>
 ~~~

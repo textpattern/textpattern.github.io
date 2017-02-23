@@ -82,7 +82,7 @@ Other tags used: [category](category), [else](else), [site_name](site_name).
 ### Example 3: Display an appropriate heading
 
 ~~~ html
-<;txp:if_category>
+<txp:if_category>
    <h3>Articles in category <txp:category title="1" /></h3>
 <txp:else />
    <h3>All articles</h3>

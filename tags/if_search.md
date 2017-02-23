@@ -26,7 +26,7 @@ On this page:
 The **if_search** tag is a *conditional* tag and always used as an opening and closing pair, like this...
 
 ~~~ html
-<;txp:if_search>
+<txp:if_search>
     ...conditional statement...
 </txp:if_search>
 ~~~

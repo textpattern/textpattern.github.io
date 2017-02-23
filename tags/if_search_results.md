@@ -27,7 +27,7 @@ On this page:
 The **if_search_results** tag is a *conditional* tag and always used as an opening and closing pair, like this...
 
 ~~~ html
-<;txp:if_search_results>
+<txp:if_search_results>
     ...conditional statement...
 </txp:if_search_results>
 ~~~
