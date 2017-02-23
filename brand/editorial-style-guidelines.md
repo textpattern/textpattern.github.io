@@ -54,8 +54,7 @@ Likewise, do not use the third-person in your copy. So don't use these words: he
 Textpattern's default language is English, and follows the conventions provided by Oxford University Press resources, notably the __New Oxford Style Manual__, 2nd Edition, and the __"Oxford English Dictionary":http://www.oed.com__ (OED). All Textpattern platforms designate this choice of English usage in the language tags of website templates:
 
 ~~~ html
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB-oxendict" lang="en-GB-oxendict" dir="ltr">
-<meta name="language" content="en-GB-oxendict">
+<html lang="en-GB-oxendict">
 ~~~
 
 By adopting the Oxford way for Textpattern's international English copy, three main benefits are gained:

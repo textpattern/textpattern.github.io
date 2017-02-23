@@ -30,7 +30,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `format="format string"`
 : Override the default date format set in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
-: **Values:** any valid [strftime](http://php.net/strftime) string values, `since`, `iso8601` ([ISO 8601 reference](http://en.wikipedia.org/wiki/ISO_8601)), `w3cdtf` ([W3CDTF reference](http://www.w3.org/TR/NOTE-datetime)), or `rfc822` ([RFC 822 reference](http://www.w3.org/Protocols/rfc822/#z28)).
+: **Values:** any valid [strftime](https://secure.php.net/strftime) string values, `since`, `iso8601` ([ISO 8601 reference](https://en.wikipedia.org/wiki/ISO_8601)), `w3cdtf` ([W3CDTF reference](https://www.w3.org/TR/NOTE-datetime)), or `rfc822` ([RFC 822 reference](https://www.w3.org/Protocols/rfc822/#z28)).
 : **Default:** the 'Date format' set in preferences.
 
 `gmt="boolean"`
@@ -40,7 +40,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `lang="ISO language code"`
 : Format time string suitable for the specified language (locale).
-: **Values:** locales adhere to [ISO-639](http://en.wikipedia.org/wiki/ISO_639-2).
+: **Values:** locales adhere to [ISO-639](https://en.wikipedia.org/wiki/ISO_639-2).
 : **Default:** unset (time format set in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
 
 ## Examples

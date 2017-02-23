@@ -2,7 +2,7 @@
 
 Tutorial by "Jon-Michael Deldin":http://jmdeldin.com/.
 
-This tutorial will show you how to create a "photoblog":http://en.wikipedia.org/wiki/Photoblog with popup comments and a thumbnail page.
+This tutorial will show you how to create a "photoblog":https://en.wikipedia.org/wiki/Photoblog with popup comments and a thumbnail page.
 
 h4(#settings). Settings
 

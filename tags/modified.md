@@ -31,7 +31,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `format="format string"`
 : Override the default date format set in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
-: **Values:** any valid [strftime](http://php.net/strftime) string values.
+: **Values:** any valid [strftime](https://secure.php.net/strftime) string values.
 : **Default:** the 'Archive date format' set in preferences.
 
 `gmt="boolean"`
@@ -41,7 +41,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `lang="ISO language code"`
 : Format time string suitable for the specified language (locale).
-: **Values:** locales adhere to [ISO-639](http://en.wikipedia.org/wiki/ISO_639-2).
+: **Values:** locales adhere to [ISO-639](https://en.wikipedia.org/wiki/ISO_639-2).
 : **Default:** unset (time format set in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
 
 ### Common presentational attributes

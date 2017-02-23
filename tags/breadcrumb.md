@@ -23,7 +23,7 @@ On this page:
 <txp:breadcrumb />
 ~~~
 
-The **breadcrumb** tag is a *single* tag which is used to create [breadcrumb navigation](http://en.wikipedia.org/wiki/Breadcrumb_trail). It provides either hyperlinked navigation, or plain text positional display. Breadcrumbs are *not* displayed on the 'default' section (home page) of your site.
+The **breadcrumb** tag is a *single* tag which is used to create [breadcrumb navigation](https://en.wikipedia.org/wiki/Breadcrumb_trail). It provides either hyperlinked navigation, or plain text positional display. Breadcrumbs are *not* displayed on the 'default' section (home page) of your site.
 
 ## Attributes
 

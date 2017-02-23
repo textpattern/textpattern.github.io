@@ -79,7 +79,7 @@ If you happen to use the 'email' glyph in the social media set of [Symbolset](ht
         <a href="https://plus.google.com/xxx" class="ss-icon gplus">googleplus</a>
     </li>
     <li>
-        <a href="http://www.linkedin.com/xxx" class="ss-icon in">linkedin</a>
+        <a href="https://www.linkedin.com/xxx" class="ss-icon in">linkedin</a>
     </li>
     <li class="ss-icon email">
         <txp:email email="donald.swain@example.com" linktext="email" />

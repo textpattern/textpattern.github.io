@@ -37,7 +37,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `status="number"`
 : Numerical representation of the error condition.
-: Typical values: `301`, `302`, `304`, `307`, `401`, `403`, `404`, `408`, `410`, `503`, or any other [valid status code](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+: Typical values: `301`, `302`, `304`, `307`, `401`, `403`, `404`, `408`, `410`, `503`, or any other [valid status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 : **Default:** `503`.
 
 `url="url"`

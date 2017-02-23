@@ -73,7 +73,7 @@ Messy mode isn't a popular URL scheme, partly because it isn't very user-friendl
 bc. ?id=131
 
 
-tells almost nothing to a user, even a user familiar with "URL query strings":http://en.wikipedia.org/wiki/Query_string. But it's enough to give Txp the full global context. This isn't because
+tells almost nothing to a user, even a user familiar with "URL query strings":https://en.wikipedia.org/wiki/Query_string. But it's enough to give Txp the full global context. This isn't because
 
 bc. ?id=131
 

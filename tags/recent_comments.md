@@ -56,7 +56,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** \\
 `discussid` (comment ID#). \\
 `email`. \\
-`ip` ([IP address](http://en.wikipedia.org/wiki/IP_address)). \\
+`ip` ([IP address](https://en.wikipedia.org/wiki/IP_address)). \\
 `message`. \\
 `name`. \\
 `parentid` (article ID#). \\
