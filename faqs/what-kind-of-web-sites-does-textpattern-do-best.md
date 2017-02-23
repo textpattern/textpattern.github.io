@@ -21,6 +21,6 @@ In other words, Textpattern is well suited for:
 
 ...or any website that includes several of those characteristics.
 
-You'll find many fine examples of Textpattern sites <txp:hide>in "TXP Magazine's gallery":http://txpmag.com/all_sites/, at "We Love Textpattern(A Design Gallery Showcasing Textpattern Powered Sites)":http://welovetxp.com/ and</txp:hide> on the "Let's See Yours, Then":http://forum.textpattern.com/viewforum.php?id=6 forum.
+You'll find many fine examples of Textpattern sites <txp:hide>in "TXP Magazine's gallery":http://txpmag.com/all_sites/, at "We Love Textpattern(A Design Gallery Showcasing Textpattern Powered Sites)":http://welovetxp.com/ and</txp:hide> on the "Let's See Yours, Then":https://forum.textpattern.com/viewforum.php?id=6 forum.
 
 See also "Can I use Textpattern to do this?":http://textpattern.com/faq/57/can-i-use-textpattern-to-do-this

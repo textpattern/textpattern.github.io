@@ -259,7 +259,7 @@ Or with `bc..` (note the double full-stops) if blank lines exist:
     code_has('$some', '$bad', 'bugs=1)
 
 [^1]: Derived from [this forum
-    discussion](http://forum.textpattern.com/viewtopic.php?id=25327).
+    discussion](https://forum.textpattern.com/viewtopic.php?id=25327).
 
 [^2]: All Textile formatting is provided already. All you have to do is
     fill in your content in the right locations. **Do not** use inline

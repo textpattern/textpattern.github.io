@@ -6,6 +6,6 @@ h3(sectionedit1#the_process). The Process
 
 (Author needed to write this tutorial!!)
 
-# See TextPattern Forum thread "6987":http://forum.textpattern.com/viewtopic.php?id=6987, which indicates some successful attempts between Textpattern versions,
+# See TextPattern Forum thread "6987":https://forum.textpattern.com/viewtopic.php?id=6987, which indicates some successful attempts between Textpattern versions,
 # And TextDrive Forum thread "1145":http://forum.textdrive.com/viewtopic.php?id=1145 which includes this "TextPattern Copyover":http://textpattern.com/testing/txp_copyover.phps script.
 

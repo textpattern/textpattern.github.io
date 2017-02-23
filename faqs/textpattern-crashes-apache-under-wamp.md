@@ -6,4 +6,4 @@ The bug is triggered by the apache_get_modules() function call.
 
 There are no plans to alter Textpattern to work around the problem, since the bug is in the web server itself.  We think it's reasonable to include "a web server that doesn't crash" in the list of Textpattern system requirements.
 
-See also "this forum thread":http://forum.textpattern.com/viewtopic.php?pid=77282#p77282 and "weblog post":http://textpattern.com/weblog/69/textpattern-and-wamp.
+See also "this forum thread":https://forum.textpattern.com/viewtopic.php?pid=77282#p77282 and "weblog post":http://textpattern.com/weblog/69/textpattern-and-wamp.

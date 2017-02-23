@@ -26,8 +26,8 @@ h3(sectionedit2#plugins). Plugins
 
 * "asy_captcha":http://www.sencer.de/code/txp/asy_captcha.txt - CAPTCHA plugin, Image verification for comments. (optimized for wide compatibility, does *not* require GD or TTF support)
 * "mrw_spamkeywords_urlcount":http://begoodnotbad.com/article/anti_spam_plugin/ - The number of urls in the comment-text is checked against a soft limit (→ moderation queue) and a hard limit (→ marked as spam). Also allows to define blacklisted words.
-* "asy_stopdude":http://forum.textpattern.com/viewtopic.php?pid=91739#p91739 - totally transparent to users. Specifically targetted against the current spam-bots/tools.
-* "EBL_TXPAkismet":http://forum.textpattern.com/viewtopic.php?id=17689 - uses Akismet to filter comments.
+* "asy_stopdude":https://forum.textpattern.com/viewtopic.php?pid=91739#p91739 - totally transparent to users. Specifically targetted against the current spam-bots/tools.
+* "EBL_TXPAkismet":https://forum.textpattern.com/viewtopic.php?id=17689 - uses Akismet to filter comments.
 
 h3(sectionedit3#writing_porting_an_anti-spam_plugin). Writing/Porting an Anti-Spam Plugin
 

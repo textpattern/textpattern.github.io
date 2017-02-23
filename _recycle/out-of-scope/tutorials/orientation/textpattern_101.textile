@@ -78,7 +78,7 @@ Now that I've gotten you all very excited about the possibilities and craft of T
 
 *Admin:Logs* is where you can see all those porn sites pinging you to see if there are places they can add their advertisements to your comment lists. With any luck, you'll also see lots of regular visitors coming to view your hard creative work.
 
-*Admin:Plugins* is the spot where you can add some of the external TXP plugins that enthusiasts write to cover various areas they feel are deficient in the basic package. You can find out more about these in the Plugins forum at the "Textpattern CMS support forums":http://forum.textpattern.com/.
+*Admin:Plugins* is the spot where you can add some of the external TXP plugins that enthusiasts write to cover various areas they feel are deficient in the basic package. You can find out more about these in the Plugins forum at the "Textpattern CMS support forums":https://forum.textpattern.com/.
 
 And lastly, *View Site* will pop open another window, and display your site whenever you like.
 

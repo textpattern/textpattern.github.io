@@ -12,7 +12,7 @@ If there is an error associated with a tag, the message should identify that tag
 
 One common error to check for is @Warning: Missing argument 2 for ...@.  This usually indicates a @<txp:...>@ tag that hasn't been "closed properly":http://textpattern.com/faq/72/warning-missing-argument-2-for.
 
-If you see some other error message, search the "FAQ":/faq/ and "forum":http://forum.textpattern.com/ for more information, using the main keywords from the error message.
+If you see some other error message, search the "FAQ":/faq/ and "forum":https://forum.textpattern.com/ for more information, using the main keywords from the error message.
 
 h4(#syntaxerrors). Check for template syntax errors
 
@@ -22,7 +22,7 @@ h4(#disable-plugins). Disable plugins
 
 Sometimes a plugin can interfere with Textpattern's normal operation.  If you have plugins installed, try disabling them and see if it fixes the problem.  Disable them one at a time and re-test the problem page after each so you can identify the problem plugin.
 
-If you've identified a particular plugin as the culprit, the "plugin forum":http://forum.textpattern.com/viewforum.php?id=13 is the best starting place to find help.
+If you've identified a particular plugin as the culprit, the "plugin forum":https://forum.textpattern.com/viewforum.php?id=13 is the best starting place to find help.
 
 h4(#rtfm). Double check the documentation
 

@@ -23,7 +23,7 @@ On this page:
 
 There are some courtesies to keep in mind when registering a plugin prefix:
 
-1. You must have a [Textpattern CMS support forum](http://forum.textpattern.com/) account, and you should provide the link to your forum profile when registering a prefix.
+1. You must have a [Textpattern CMS support forum](https://forum.textpattern.com/) account, and you should provide the link to your forum profile when registering a prefix.
 2. You can only have **one** prefix.[^1]
 3. Your prefix should be **three** alphanumeric characters. No less and no more. (Ignore any you see that defy this convention.)
 4. Register a prefix when you have a plugin ready for publication. Or to put it another way, don't register a prefix and sit on it indefinitely without ever creating a plugin. This is just squatting, and it's not fair to someone else who might like that prefix and have their first plugin ready. Unused prefixes go to the person who first has a plugin to share.
@@ -60,27 +60,27 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * aao/aurelian
 * aba/aba
 * <span class="warning">abc</span> (for user docs only)
-* abl/[developr](http://forum.textpattern.com/profile.php?id=160386)
+* abl/[developr](https://forum.textpattern.com/profile.php?id=160386)
 * act/angryCat (?)
 * <span class="warning">add</span>
-* adi/[gomedia](http://forum.textpattern.com/profile.php?id=15145)
+* adi/[gomedia](https://forum.textpattern.com/profile.php?id=15145)
 * afa/Anton
 * ajt/segfault
 * ajw/Andrew
 * aka/AkaScooter
 * akh/tweak
 * ako/akokskis
-* aks/[makss](http://forum.textpattern.com/profile.php?id=19245)
+* aks/[makss](https://forum.textpattern.com/profile.php?id=19245)
 * akw/thekolonel
 * alt/GeertAki
 * an7/iaian7
 * anc/usonian
 * any/anyNeT
-* arc/[monkeyninja](http://forum.textpattern.com/profile.php?id=18747)
+* arc/[monkeyninja](https://forum.textpattern.com/profile.php?id=18747)
 * arg/argi
 * aro/rloaderro
 * asv/variaas
-* asy/[Sencer](http://forum.textpattern.com/profile.php?id=462)
+* asy/[Sencer](https://forum.textpattern.com/profile.php?id=462)
 * atb/atbradley
 * ats/schussat
 * aud/Alex McKee (?)
@@ -101,7 +101,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * bkp/AkaScooter
 * bnk/Duncan Clarke
 * bos/Zanza
-* bot/[redbot](http://forum.textpattern.com/profile.php?id=8379)
+* bot/[redbot](https://forum.textpattern.com/profile.php?id=8379)
 * bsl/polygon_monkey
 * btx/DougBTX
 * bud/andyb
@@ -112,23 +112,23 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 
 <div class="layout-text4col">
 
-* cbe/[CeBe](http://forum.textpattern.com/profile.php?id=76735)
+* cbe/[CeBe](https://forum.textpattern.com/profile.php?id=76735)
 * cbs/cbeyls
-* cfm/[aeonflux](http://forum.textpattern.com/profile.php?id=8082)
+* cfm/[aeonflux](https://forum.textpattern.com/profile.php?id=8082)
 * cgd/Caged
-* cha/[chalito](http://forum.textpattern.com/profile.php?id=13435)
+* cha/[chalito](https://forum.textpattern.com/profile.php?id=13435)
 * chh/takshaka
 * chu/charmston
-* cjm/[chrismc](http://forum.textpattern.com/profile.php?id=2333)
+* cjm/[chrismc](https://forum.textpattern.com/profile.php?id=2333)
 * ckr/Cedric
 * cng/chess
 * cnj/octover
 * cnk/chriloi
 * cnn/cnewkirk
-* cno/[cnolle](http://forum.textpattern.com/profile.php?id=454)
+* cno/[cnolle](https://forum.textpattern.com/profile.php?id=454)
 * csb/csandberg
 * <span class="warning">css</span>
-* cxc/[cXc](http://forum.textpattern.com/profile.php?id=106730)
+* cxc/[cXc](https://forum.textpattern.com/profile.php?id=106730)
 * cti/Celti
 * czg/cziggurat
 
@@ -141,9 +141,9 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * dak/Kaiser
 * dca/Dean
 * dds/nemoorange
-* dem/[demoncleaner](http://forum.textpattern.com/profile.php?id=15280)
+* dem/[demoncleaner](https://forum.textpattern.com/profile.php?id=15280)
 * dfc/domfucssion
-* djw/[wet](http://forum.textpattern.com/profile.php?id=5463) (!)
+* djw/[wet](https://forum.textpattern.com/profile.php?id=5463) (!)
 * <span class="warning">dmp</span>
 * <span class="warning">dom</span>
 * dow/dow
@@ -164,8 +164,8 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * egg/yatil.de
 * <span class="warning">end</span>
 * eoi/dubsky
-* esq/[cain-mi](http://forum.textpattern.com/profile.php?id=5716)
-* etc/[etc](http://forum.textpattern.com/profile.php?id=96820)
+* esq/[cain-mi](https://forum.textpattern.com/profile.php?id=5716)
+* etc/[etc](https://forum.textpattern.com/profile.php?id=96820)
 * etz/Etz Haim
 
 </div>
@@ -174,15 +174,15 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 
 <div class="layout-text4col">
 
-* fab/[DA](http://forum.textpattern.com/profile.php?id=201199)
+* fab/[DA](https://forum.textpattern.com/profile.php?id=201199)
 * fgr/fathersGrave
 * fha/mamash
-* fly/[superfly](http://forum.textpattern.com/profile.php?id=20923)
+* fly/[superfly](https://forum.textpattern.com/profile.php?id=20923)
 * fng/fungus_sn
 * <span class="error">foo</span>
 * fox/Gr3yFox
 * fpx/Flashpix
-* fxn/[Inventor1975](http://forum.textpattern.com/profile.php?id=201799)
+* fxn/[Inventor1975](https://forum.textpattern.com/profile.php?id=201799)
 
 </div>
 
@@ -190,26 +190,26 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 
 <div class="layout-text4col">
 
-* gas/[kirito](http://forum.textpattern.com/profile.php?id=201756)
-* gbp/[graeme](http://forum.textpattern.com/profile.php?id=1482)
+* gas/[kirito](https://forum.textpattern.com/profile.php?id=201756)
+* gbp/[graeme](https://forum.textpattern.com/profile.php?id=1482)
 * gda/groupdocs
 * gds/groupdocs
 * gdt/gdtroiano
 * gdv/groupdocs
 * gem/gemal
-* geo/[geoff777](http://forum.textpattern.com/profile.php?id=14553)
+* geo/[geoff777](https://forum.textpattern.com/profile.php?id=14553)
 * <span class="warning">get</span>
 * gho/graumeister
 * gil/THE BLUE DRAGON
 * gkr/kr37
 * glb/mattgilbert
-* glg/[Grégocentrique](http://forum.textpattern.com/profile.php?id=57564)
+* glg/[Grégocentrique](https://forum.textpattern.com/profile.php?id=57564)
 * glx/graumeister
-* glz/[gerhard](http://forum.textpattern.com/profile.php?id=5686)
+* glz/[gerhard](https://forum.textpattern.com/profile.php?id=5686)
 * gmd/maartenD
-* goe/[goechsler](http://forum.textpattern.com/profile.php?id=173137)
+* goe/[goechsler](https://forum.textpattern.com/profile.php?id=173137)
 * <span class="warning">gps</span>
-* gva/[Turbo-G](http://forum.textpattern.com/profile.php?id=677)
+* gva/[Turbo-G](https://forum.textpattern.com/profile.php?id=677)
 
 </div>
 
@@ -217,13 +217,13 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 
 <div class="layout-text4col">
 
-* hak/[hakjoon](http://forum.textpattern.com/profile.php?id=1920)
+* hak/[hakjoon](https://forum.textpattern.com/profile.php?id=1920)
 * <span class="warning">has</span>
-* hcg/[hcgtv](http://forum.textpattern.com/profile.php?id=7551)
+* hcg/[hcgtv](https://forum.textpattern.com/profile.php?id=7551)
 * hdd/Ron Hickson (?)
 * <span class="warning">hed</span>
 * hfw/DarkWulf
-* hhh/[hoho](http://forum.textpattern.com/profile.php?id=33098)
+* hhh/[hoho](https://forum.textpattern.com/profile.php?id=33098)
 * hpw/duffe
 * htn/grafzahl
 * hwm/hotwebmatter
@@ -235,7 +235,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 <div class="layout-text4col">
 
 * ice/artagesw
-* ied/[Bloke](http://forum.textpattern.com/profile.php?id=8181) (!)
+* ied/[Bloke](https://forum.textpattern.com/profile.php?id=8181) (!)
 * ign/igner
 * imm/mikhail
 * it/Sketch
@@ -252,12 +252,12 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * jas/larry
 * jbb/Jeremie
 * jbe/jot.be,
-* jbx/[grundgesetz](http://forum.textpattern.com/profile.php?id=34501)
+* jbx/[grundgesetz](https://forum.textpattern.com/profile.php?id=34501)
 * jcb/jimb
 * jcp/JohnAJ
 * jcv/grump.org
 * jdt/iioshius
-* jdw/[JanDW](http://forum.textpattern.com/profile.php?id=15409)
+* jdw/[JanDW](https://forum.textpattern.com/profile.php?id=15409)
 * jea/Jeadorf
 * jfp/jordi.f
 * jgh/Rufnex
@@ -268,7 +268,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * jmc/jufemaiz
 * jmd/jm
 * jmr/jmrhoades
-* jnm/[juanjonavarro](http://forum.textpattern.com/profile.php?id=5239)
+* jnm/[juanjonavarro](https://forum.textpattern.com/profile.php?id=5239)
 * jns/himynameisjonas
 * joe/joewils
 * jof/woof
@@ -286,15 +286,15 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 <div class="layout-text4col">
 
 * kai/kaioshin
-* kaf/[Pin007](http://forum.textpattern.com/profile.php?id=4180)
-* kam/[lithium002](http://forum.textpattern.com/profile.php?id=140651)
+* kaf/[Pin007](https://forum.textpattern.com/profile.php?id=4180)
+* kam/[lithium002](https://forum.textpattern.com/profile.php?id=140651)
 * kff/[Karl Francisco Fernandes](http://mesonprojekt.com/)
 * kgr/KurtRaschke
 * kis/alexbighea
 * klp/kelp
-* kml/[kimili](http://forum.textpattern.com/profile.php?id=1440)
+* kml/[kimili](https://forum.textpattern.com/profile.php?id=1440)
 * krl/vitch
-* kuo/[kuopassa](http://forum.textpattern.com/profile.php?id=22289)
+* kuo/[kuopassa](https://forum.textpattern.com/profile.php?id=22289)
 
 </div>
 
@@ -302,12 +302,12 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 
 <div class="layout-text4col">
 
-* lam/[iblastoff](http://forum.textpattern.com/profile.php?id=9405)
+* lam/[iblastoff](https://forum.textpattern.com/profile.php?id=9405)
 * leo/LeonNet
 * lhg/1ukaz
 * low/JustinLow
 * lsx/LeeStewart
-* lum/[Themroc](http://forum.textpattern.com/profile.php?id=107941)
+* lum/[Themroc](https://forum.textpattern.com/profile.php?id=107941)
 * lwh/Luke Wesley-Holley (?)
 
 </div>
@@ -317,23 +317,23 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 <div class="layout-text4col">
 
 * mcb/mcbenton
-* mck/[MarcoK](http://forum.textpattern.com/profile.php?id=10545)
+* mck/[MarcoK](https://forum.textpattern.com/profile.php?id=10545)
 * mcw/mikewest
-* mdn/[Remillard](http://forum.textpattern.com/profile.php?id=982)
+* mdn/[Remillard](https://forum.textpattern.com/profile.php?id=982)
 * mdp/greenrift
-* mem/[Manfre](http://forum.textpattern.com/profile.php?id=1076)
+* mem/[Manfre](https://forum.textpattern.com/profile.php?id=1076)
 * mic/micampe
 * mik/mikkeX
 * mim/kemie
 * mka/Martin Kozianka (?)
-* mkp/[michaelkpate](http://forum.textpattern.com/viewtopic.php?id=42635)
+* mkp/[michaelkpate](https://forum.textpattern.com/viewtopic.php?id=42635)
 * mlk/milkshake
 * mrd/mrdale
 * mrh/aesop1
 * mrs/marios
 * mrz/marz
 * mrw/nesher
-* msd/[MattD](http://forum.textpattern.com/profile.php?id=14767)
+* msd/[MattD](https://forum.textpattern.com/profile.php?id=14767)
 * msv/Martin Svihla (?)
 * mta/morgant
 * mtp/plummerm
@@ -346,7 +346,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 
 * nab/nabrown78
 * <span class="warning">nav</span>
-* nhn/[Skubidu](http://forum.textpattern.com/profile.php?id=2770)
+* nhn/[Skubidu](https://forum.textpattern.com/profile.php?id=2770)
 * nok/anoke
 
 </div>
@@ -356,8 +356,8 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 <div class="layout-text4col">
 
 * ob1/obeewan
-* ort/[baby](http://forum.textpattern.com/profile.php?id=7103)
-* oui/[NicolasGraph](http://forum.textpattern.com/profile.php?id=15445)
+* ort/[baby](https://forum.textpattern.com/profile.php?id=7103)
+* oui/[NicolasGraph](https://forum.textpattern.com/profile.php?id=15445)
 
 </div>
 
@@ -365,14 +365,14 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 
 <div class="layout-text4col">
 
-* pac/[gaekwad](http://forum.textpattern.com/profile.php?id=7456)
+* pac/[gaekwad](https://forum.textpattern.com/profile.php?id=7456)
 * pap/tranquillo
-* pat/[pat64](http://forum.textpattern.com/profile.php?id=7660)
-* pax/[johnstephens](http://forum.textpattern.com/profile.php?id=15144)
+* pat/[pat64](https://forum.textpattern.com/profile.php?id=7660)
+* pax/[johnstephens](https://forum.textpattern.com/profile.php?id=15144)
 * <span class="warning">pcs</span>
 * phq/phq
 * phw/phiw13
-* plh/[planeth](http://forum.textpattern.com/profile.php?id=31641)
+* plh/[planeth](https://forum.textpattern.com/profile.php?id=31641)
 * pnh/placenamehere
 * ppc/kusor
 * prad/fpradignac
@@ -380,7 +380,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * <span class="warning">psa</span>
 * pub ('public'; used for plugins resulting from community collaboration)
 * ptv/Borisch
-* pzc/[prizmcloud](http://forum.textpattern.com/profile.php?id=183307)
+* pzc/[prizmcloud](https://forum.textpattern.com/profile.php?id=183307)
 
 </div>
 
@@ -397,7 +397,7 @@ None at this time.
 <div class="layout-text4col">
 
 * r11/skipper
-* rah/[Gocom](http://forum.textpattern.com/profile.php?id=9632)
+* rah/[Gocom](https://forum.textpattern.com/profile.php?id=9632)
 * ras/rsilletti
 * rcb/Russell Brown (?)
 * rdi/ian
@@ -412,8 +412,8 @@ None at this time.
 * <span class="warning">rsd</span>
 * rss/wilshire
 * rsx/ramanan
-* <span class="success">rtr</span>/[rob_roy](http://forum.textpattern.com/profile.php?id=4307)
-* rvm/[ruud](http://forum.textpattern.com/profile.php?id=9348)
+* <span class="success">rtr</span>/[rob_roy](https://forum.textpattern.com/profile.php?id=4307)
+* rvm/[ruud](https://forum.textpattern.com/profile.php?id=9348)
 
 </div>
 
@@ -426,7 +426,7 @@ None at this time.
 * saw/ninj
 * scs/steph
 * sdr/sderuiter
-* sed/[net-carver](http://forum.textpattern.com/profile.php?id=8659)
+* sed/[net-carver](https://forum.textpattern.com/profile.php?id=8659)
 * see/sthmtc
 * sen/gago
 * <span class="warning">set</span>
@@ -435,13 +435,13 @@ None at this time.
 * sir/fabio sirna
 * ske/skeptisch
 * skp/piyashrija
-* smd/[Bloke](http://forum.textpattern.com/profile.php?id=8181)
+* smd/[Bloke](https://forum.textpattern.com/profile.php?id=8181)
 * smf/txfrog1999
 * smu/e-sven
-* soo/[jsoo](http://forum.textpattern.com/profile.php?id=3024)
+* soo/[jsoo](https://forum.textpattern.com/profile.php?id=3024)
 * spc/spchampion
-* spf/[spiffin](http://forum.textpattern.com/profile.php?id=1340)
-* spi/[photonomad](http://forum.textpattern.com/profile.php?id=6698)
+* spf/[spiffin](https://forum.textpattern.com/profile.php?id=1340)
+* spi/[photonomad](https://forum.textpattern.com/profile.php?id=6698)
 * spr/springworks
 * srh/Vitruvius
 * ste/stefan
@@ -465,10 +465,10 @@ None at this time.
 * thg/the_ghost
 * tin/jeroen
 * tps/Tomsec
-* tok/[ToK](http://forum.textpattern.com/profile.php?id=192280)
-* tom/[Sacripant](http://forum.textpattern.com/profile.php?id=15147)
+* tok/[ToK](https://forum.textpattern.com/profile.php?id=192280)
+* tom/[Sacripant](https://forum.textpattern.com/profile.php?id=15147)
 * <span class="warning">tpt</span>
-* tru/[truist](http://forum.textpattern.com/profile.php?id=2952)
+* tru/[truist](https://forum.textpattern.com/profile.php?id=2952)
 * tsw/mwaldtha
 * tuk/paradotsky
 * <span class="warning">txp</span>
@@ -479,7 +479,7 @@ None at this time.
 
 <div class="layout-text4col">
 
-* uli/[uli](http://forum.textpattern.com/profile.php?id=9890)
+* uli/[uli](https://forum.textpattern.com/profile.php?id=9890)
 * uri/urizen
 * upm/Mary
 
@@ -501,9 +501,9 @@ None at this time.
 
 * wan/wanni
 * waz/wazdog
-* wcz/[whocarez](http://forum.textpattern.com/profile.php?id=13728)
-* wet/[wet](http://forum.textpattern.com/profile.php?id=5463)
-* wlk/[Walker](http://forum.textpattern.com/profile.php?id=37)
+* wcz/[whocarez](https://forum.textpattern.com/profile.php?id=13728)
+* wet/[wet](https://forum.textpattern.com/profile.php?id=5463)
+* wlk/[Walker](https://forum.textpattern.com/profile.php?id=37)
 * wnp/datafirm
 * wm/watts
 * wow/nighthawk
@@ -522,7 +522,7 @@ None at this time.
 
 <div class="layout-text4col">
 
-* yab/[trenc](http://forum.textpattern.com/profile.php?id=14613)
+* yab/[trenc](https://forum.textpattern.com/profile.php?id=14613)
 * <span class="warning">yes</span>
 
 </div>
@@ -551,6 +551,6 @@ In addition to plugin names, you'll apply your prefix in the following locations
 
 [^1]: Sometimes a plugin developer will *assume* the prefix of a retired plugin developer when the former 'adopts' the latter's 'orphaned' plugins. This is the preferred practice against simply changing plugin names. For example, username 'wet' has his own plugins (wet/wet), as indicated in the prefix table at bottom, but he's adopted the orphaned plugins with prefix 'djw' too (djw/wet).
 
-[^2]: Prefix ownership may be challenged if it's found that a developer has not created a plugin yet and is squatting on the prefix. In this case, you (the challenger) must produce the first plugin to earn ownership of the prefix in question. To challenge prefix ownership, bring the issue to light in the [Plugin discussion](http://forum.textpattern.com/viewforum.php?id=13) forum, where others can help determine if the challenge is reasonable.
+[^2]: Prefix ownership may be challenged if it's found that a developer has not created a plugin yet and is squatting on the prefix. In this case, you (the challenger) must produce the first plugin to earn ownership of the prefix in question. To challenge prefix ownership, bring the issue to light in the [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13) forum, where others can help determine if the challenge is reasonable.
 
 [^3]: The exception to this is if an element of your markup is logically similar to an already existing core element and you wish it to be styled in the same way by themes. Doing this saves theme designers from having to write specific rules to target your plugin's markup.

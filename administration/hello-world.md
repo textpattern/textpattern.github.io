@@ -603,4 +603,4 @@ content they want.
 
 ### Learning more
 
-This is just a bare outline of how to build a Textpattern site. To continue your learning path, participate in the [Textpattern CMS support forum](http://forum.textpattern.com/), read the Tutorials and [Textpattern Tips](http://www.textpattern.tips/), and study the Tag Reference.
+This is just a bare outline of how to build a Textpattern site. To continue your learning path, participate in the [Textpattern CMS support forum](https://forum.textpattern.com/), read the Tutorials and [Textpattern Tips](http://www.textpattern.tips/), and study the Tag Reference.

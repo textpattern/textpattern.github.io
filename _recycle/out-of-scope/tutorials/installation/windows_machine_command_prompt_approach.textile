@@ -50,7 +50,7 @@ It should be similar instructions for other versions of Windows.
 
 h4(#automated_instructions). Automated Instructions
 
-*Much thanks goes to "jayaqt":http://forum.textpattern.com/profile.php?id=930 at the Textpattern forum, for bringing the automated approach to the table.*
+*Much thanks goes to "jayaqt":https://forum.textpattern.com/profile.php?id=930 at the Textpattern forum, for bringing the automated approach to the table.*
 
 These instructions are confirmed to work on *Windows XP*. Please let someone here know if it works for other Windows versions too.
 

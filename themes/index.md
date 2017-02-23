@@ -27,7 +27,7 @@ This isn't really different from how you would approach designing any website. T
 In this way you rely on a plugin to help manage the construction, portability, and use of a given front-end theme. The most relevant plugin to use in this case is **cxc_template**:
 
 * [GitHub source code](https://github.com/yauh/txp-cxc-templates).
-* [Forum help thread](http://forum.textpattern.com/viewtopic.php?id=35319).
+* [Forum help thread](https://forum.textpattern.com/viewtopic.php?id=35319).
 
 Follow the plugin's own documentation, and use the forum help thread if you have problems.
 

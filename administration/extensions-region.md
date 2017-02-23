@@ -26,22 +26,22 @@ notextile.
 <div itemscope itemtype="https://schema.org/Table">
   Plugin                                                                                                       Extensions panel label[^1]
   ------------------------------------------------------------------------------------------------------------ ----------------------------
-  "arc_redirect":http://forum.textpattern.com/viewtopic.php?id=36705                                          arc_redirect
-  "adi_notes":http://forum.textpattern.com/viewtopic.php?id=27957                                             adi_notes
-  "asy_jpcache":http://forum.textpattern.com/viewtopic.php?id=8352                                            ?
-  [glz_custom_fields](http://forum.textpattern.com/viewtopic.php?id=23996)[^2]                               Custom Fields
+  "arc_redirect":https://forum.textpattern.com/viewtopic.php?id=36705                                          arc_redirect
+  "adi_notes":https://forum.textpattern.com/viewtopic.php?id=27957                                             adi_notes
+  "asy_jpcache":https://forum.textpattern.com/viewtopic.php?id=8352                                            ?
+  [glz_custom_fields](https://forum.textpattern.com/viewtopic.php?id=23996)[^2]                               Custom Fields
   [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer)                                        Plugin Composer
-  "msd_admin_colorpicker":http://forum.textpattern.com/viewtopic.php?id=26742                                ?
-  "msd_google_map":http://forum.textpattern.com/viewtopic.php?id=30493                                       ?
-  "rah_change_passwords":http://forum.textpattern.com/viewtopic.php?id=28696                                 ?
-  "rah_post_versions":http://forum.textpattern.com/viewtopic.php?id=33855                                    ?
-  "rah_tabtor":http://forum.textpattern.com/viewtopic.php?id=34815                                            ?
-  "smd_admin_themes":http://forum.textpattern.com/viewtopic.php?id=30952                                     ?
-  "smd_bio":http://forum.textpattern.com/viewtopic.php?id=31496                                               Bio config
+  "msd_admin_colorpicker":https://forum.textpattern.com/viewtopic.php?id=26742                                ?
+  "msd_google_map":https://forum.textpattern.com/viewtopic.php?id=30493                                       ?
+  "rah_change_passwords":https://forum.textpattern.com/viewtopic.php?id=28696                                 ?
+  "rah_post_versions":https://forum.textpattern.com/viewtopic.php?id=33855                                    ?
+  "rah_tabtor":https://forum.textpattern.com/viewtopic.php?id=34815                                            ?
+  "smd_admin_themes":https://forum.textpattern.com/viewtopic.php?id=30952                                     ?
+  "smd_bio":https://forum.textpattern.com/viewtopic.php?id=31496                                               Bio config
   "smd_redirect":https://github.com/Bloke/smd_redirect                                                       Redirects
-  "smd_tags":http://forum.textpattern.com/viewtopic.php?id=28621                                              smd_tags
+  "smd_tags":https://forum.textpattern.com/viewtopic.php?id=28621                                              smd_tags
   "smd_where_used":http://textpattern.org/plugins/984/smd_where_used                                       Where used
-  "tru_tags":http://forum.textpattern.com/viewtopic.php?id=15084                                              ?
+  "tru_tags":https://forum.textpattern.com/viewtopic.php?id=15084                                              ?
 
 notextile.
 

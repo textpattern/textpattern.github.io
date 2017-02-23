@@ -29,7 +29,7 @@ notextile.
 <div itemscope itemtype="https://schema.org/Table">
   Plugin                                                              Extensions panel label[^1]
   ------------------------------------------------------------------- ----------------------------
-  "adi_matrix":http://forum.textpattern.com/viewtopic.php?id=35972   ?
+  "adi_matrix":https://forum.textpattern.com/viewtopic.php?id=35972   ?
 
 notextile.
 
