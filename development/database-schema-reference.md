@@ -36,7 +36,7 @@ On this page:
 
 The `textpattern` table contains the articles you create on the [Write administration panel](https://docs.textpattern.io/administration/write-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column             Type           Description
   ------------------ -------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   ID                 integer        Unique, auto incremented numerical ID of the article
@@ -83,7 +83,7 @@ The `textpattern` table contains the articles you create on the [Write administr
 
 The `txp_category` table contains all the categories you create on the [Categories panel](https://docs.textpattern.io/administration/categories-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column   Type           Description
   -------- -------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   id       integer        Unique auto-incremented ID of this category
@@ -100,7 +100,7 @@ The `txp_category` table contains all the categories you create on the [Categori
 
 The `txp_css` table contains the style sheets created on the [Styles panel](https://docs.textpattern.io/administration/styles-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column   Type           Description
   -------- -------------- ------------------------------------------------------------------------
   name     varchar(128)   Name of the style sheet
@@ -112,7 +112,7 @@ The `txp_css` table contains the style sheets created on the [Styles panel](http
 
 The `txp_discuss` table contains all the article comments output on the [Comments panel](https://docs.textpattern.io/administration/comments-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column      Type           Description
   ----------- -------------- -------------------------------------------------------------
   discussid   integer        Unique auto-incremented ID of this comment
@@ -131,7 +131,7 @@ The `txp_discuss` table contains all the article comments output on the [Comment
 
 The `txp_discuss_ipban` table contains a list of all IP-numbers that have been banned from commenting by the person who moderates [Comments](https://docs.textpattern.io/administration/comments-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column                Type           Description
   --------------------- -------------- ----------------------------------------------------------------------------------
   ip                    varchar(255)   IP-number
@@ -145,7 +145,7 @@ The `txp_discuss_ipban` table contains a list of all IP-numbers that have been b
 
 The `txp_discuss_nonce` table is an important part of the spam protection in the commenting system. When the comment form is shown to the user, it contains a hidden variable (nonce) with a unique code. This code is valid for 10 minutes. If the comment form is submitted, the nonce is looked up in this table and must exist unused with a valid timestamp for the comment to be accepted.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column        Type          Description
   ------------- ------------- --------------------------------------------------------------------------------------------------------------------------------------------------------
   issue_time   datetime      Date and time when the 'nonce' was created
@@ -159,7 +159,7 @@ The `txp_discuss_nonce` table is an important part of the spam protection in the
 
 The `txp_file` table contains information on all the files uploaded through Textpattern. The files themselves are stored as normal files on disk instead of in the database.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column        Type           Description
   ------------- -------------- ------------------------------------------------
   id            integer        Unique auto-incremented ID of this file
@@ -181,7 +181,7 @@ The `txp_file` table contains information on all the files uploaded through Text
 
 The `txp_form` table contains all the forms, which are created on the [Forms panel](https://docs.textpattern.io/administration/forms-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column   Type          Description
   -------- ------------- --------------------------------------------------------------------
   name     varchar(64)   Form name
@@ -194,7 +194,7 @@ The `txp_form` table contains all the forms, which are created on the [Forms pan
 
 The `txp_image` table contains information on all the images uploaded and managed in the [Images panel](https://docs.textpattern.io/administration/images-panel). The image files are not actually stored in the database, they're stored as normal files on the web server in the `/images` folder using the image ID as the filename (i.e. `1.png` for the main image or `1t.png` for the corresponding thumbnail).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column      Type           Description
   ----------- -------------- --------------------------------------------------------------------------------------
   id          integer        Unique auto-incremented ID of this image
@@ -217,7 +217,7 @@ The `txp_image` table contains information on all the images uploaded and manage
 
 The `txp_lang` table contains translations for the various built-in strings of text used on the public and administration sides of Textpattern.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column    Type          Description
   --------- ------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   id        integer       Unique auto-incremented ID of this language string
@@ -233,7 +233,7 @@ The `txp_lang` table contains translations for the various built-in strings of t
 
 The `txp_link` table contains all the links and related information created on the [Links panel](https://docs.textpattern.io/administration//links-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column        Type           Description
   ------------- -------------- ------------------------------------------------------------
   id            integer        Unique auto-incremented ID of this link
@@ -251,7 +251,7 @@ The `txp_link` table contains all the links and related information created on t
 
 The `txp_log` table contains log entries of page requests (visits) to your website, which are output on the [Visitor logs panel](https://docs.textpattern.io/administration/visitor-logs-panel). Depending on your preferences, nothing is logged, just referrers or all requests. Old log entries are removed automatically.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column   Type           Description
   -------- -------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   id       integer        Unique auto-incremented ID of this log entry
@@ -269,7 +269,7 @@ The `txp_log` table contains log entries of page requests (visits) to your websi
 
 The `txp_page` table contains all the page templates you create on the [Pages panel](https://docs.textpattern.io/administration/pages-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column       Type           Description
   ------------ -------------- -------------------------------------------------------
   name         varchar(128)   Name of the template
@@ -281,7 +281,7 @@ The `txp_page` table contains all the page templates you create on the [Pages pa
 
 The `txp_plugin` table contains all the plugins you have installed, displayed on the [Plugins panel](https://docs.textpattern.io/administration/plugins-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column          Type                  Description
   --------------- --------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------
   name            varchar(64)           Plugin name
@@ -304,7 +304,7 @@ The `txp_plugin` table contains all the plugins you have installed, displayed on
 
 The `txp_prefs` table contains all the administration preferences.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column       Type           Description
   ------------ -------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   prefs_id    integer        Unknown (always set to 1?)
@@ -322,7 +322,7 @@ The `txp_prefs` table contains all the administration preferences.
 
 The `txp_section` table contains all the sections you create on the [Sections panel](https://docs.textpattern.io/administration/sections-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column          Type           Description
   --------------- -------------- ---------------------------------------------------------------------------------------------
   name            varchar(128)   Section name (used in URL)
@@ -340,7 +340,7 @@ The `txp_section` table contains all the sections you create on the [Sections pa
 
 The `txp_users` table contains information for all users, as displayed on the [Users panel](https://docs.textpattern.io/administration/users-panel).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Column         Type           Description
   -------------- -------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   user_id       integer        Unique auto-incremented ID of this user

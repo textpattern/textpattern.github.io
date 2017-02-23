@@ -36,7 +36,7 @@ The administration side is organized into three primary regions: **Content**, **
 
 The **Content** region of the administration side has seven panels out-of-the-box, of which the **Write** panel is the default.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
         <thead>
             <tr>
@@ -83,7 +83,7 @@ From Textpattern 4.6 onwards, when the "Accept comments?" preference is set to "
 
 The **Presentation** region of the administration side has four panels out-of-the-box, of which the **Pages** panel is the default.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
         <thead>
             <tr>
@@ -116,7 +116,7 @@ The **Presentation** region of the administration side has four panels out-of-th
 
 The **Admin** region of the administration side has seven panels out-of-the-box, of which the **Users** panel is the default.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
         <thead>
             <tr>

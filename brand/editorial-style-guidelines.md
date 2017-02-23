@@ -76,7 +76,7 @@ There are many differences between British and American English with regard to s
 
 The following table compares conventional patterns of spelling between North American regions, Great Britain, and the OED.[^2] The words shown are simply representative of all possible words having those patterns. Use the OED conventions (*en-GB-oxendict*) when writing Textpattern content.
 
-notextile. <div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+notextile. <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
 
 | |_. -ize/-ise |_. -yze/-yse |_. -or/-our |_. -ler/-ller |_. -og/-ogue |_. -am/-amme |_. -ense/-ence |_. -ter/-tre |
 |_. en-GB-oxendict | realize | analyse | behaviour | traveller | catalogue | programme<br>program (computer code) | defence | centre |

@@ -23,7 +23,7 @@ not listed here, intentionally.)
 
 notextile.
 
-<div itemscope itemtype="http://schema.org/Table">
+<div itemscope itemtype="https://schema.org/Table">
   Plugin                                                                                                       Extensions panel label[^1]
   ------------------------------------------------------------------------------------------------------------ ----------------------------
   "arc_redirect":http://forum.textpattern.com/viewtopic.php?id=36705                                          arc_redirect

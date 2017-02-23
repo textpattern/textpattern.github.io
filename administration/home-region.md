@@ -26,7 +26,7 @@ or may not be relevant.
 
 notextile.
 
-<div itemscope itemtype="http://schema.org/Table">
+<div itemscope itemtype="https://schema.org/Table">
   Plugin                                                              Extensions panel label[^1]
   ------------------------------------------------------------------- ----------------------------
   "adi_matrix":http://forum.textpattern.com/viewtopic.php?id=35972   ?

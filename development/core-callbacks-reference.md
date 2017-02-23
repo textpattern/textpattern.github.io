@@ -156,7 +156,7 @@ These callbacks are raised when input elements or constructs are rendered. They 
 
 TODO: intro para about what this callback is concerned with
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`           `$step`           When it occurs                                                            What it allows/does
   ------------------ ----------------- ------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   `article_posted`   -                 Immediately after article creation.                                       -
@@ -170,7 +170,7 @@ TODO: intro para about what this callback is concerned with
 
 TODO: intro para about what this callback is concerned with
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`         `$step`           When it occurs                                  What it allows/does
   ---------------- ----------------- ----------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   `diag_results`   `high` or `low`   At the end of the `doDiagnostics()` function.   Renders the content of the ****[Diagnostics](https://docs.textpattern.io/administration/diagnostics-panel) panel. Allows you to add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low).
@@ -183,7 +183,7 @@ TODO: intro para about what this callback is concerned with
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`            `$step`   When it occurs                                                         What it allows/does
   ------------------- --------- ---------------------------------------------------------------------- -------------------------------------------------------
   `authors_deleted`   -         After user(s) have been deleted and all assets have been reassigned.   Passes an array of deleted user names as a parameter.
@@ -197,7 +197,7 @@ notextile.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`               `$step`   When it occurs                                                                  What it allows/does
   ---------------------- --------- ------------------------------------------------------------------------------- ---------------------------------------------------------
   `categories_deleted`   -         After one or more categories have been deleted and the tree has been rebuilt.   Passes an array of deleted category IDs as a parameter.
@@ -211,7 +211,7 @@ notextile.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`        `$step`   When it occurs                         What it allows/does
   --------------- --------- -------------------------------------- -----------------------------------------------------------
   `css_deleted`   -         After a stylesheet has been deleted.   Passes the name of the deleted stylesheet as a parameter.
@@ -225,7 +225,7 @@ notextile.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`            `$step`   When it occurs                                                                                                              What it allows/does
   ------------------- --------- --------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------
   `discuss_deleted`   -         After one or more comments have been deleted, but *before* the comment counts have been updated in the affected articles.   Passes an array of the deleted comment IDs as a parameter.
@@ -239,7 +239,7 @@ notextile.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`         `$step`   When it occurs                 What it allows/does
   ---------------- --------- ------------------------------ --------------------------------------------------------------------------------------------------------
   `file_deleted`   -         Before each file is deleted.   First additional parameter is the file's ID. Second additional parameter is the full path to the file.
@@ -253,7 +253,7 @@ notextile.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`          `$step`   When it occurs                               What it allows/does
   ----------------- --------- -------------------------------------------- -------------------------------------------------------
   `forms_deleted`   -         After one or more forms have been deleted.   Passes an array of deleted form names as a parameter.
@@ -267,7 +267,7 @@ notextile.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`           `$step`   When it occurs                                                   What it allows/does
   ------------------ --------- ---------------------------------------------------------------- -------------------------------------
   `image_deleted`    `image`   Before an image and its thumbnail are deleted.                   Passes the image ID as a parameter
@@ -282,7 +282,7 @@ notextile.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`          `$step`   When it occurs                               What it allows/does
   ----------------- --------- -------------------------------------------- -----------------------------------------------------
   `links_deleted`   -         After one or more links have been deleted.   Passes an array of deleted link IDs as a parameter.
@@ -296,7 +296,7 @@ notextile.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`             `$step`   When it occurs                                                                                                What it allows/does
   -------------------- --------- ------------------------------------------------------------------------------------------------------------- --------------------------------------------------------
   `articles_deleted`   -         After one or more articles have been deleted and any associated comments have had their visibility removed.   Passes an array of deleted article IDs as a parameter.
@@ -310,7 +310,7 @@ notextile.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`         `$step`   When it occurs                            What it allows/does
   ---------------- --------- ----------------------------------------- -----------------------------------------------------
   `page_deleted`   -         After a page template has been deleted.   Passes the name of the deleted page as a parameter.
@@ -324,7 +324,7 @@ notextile.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`             `$step`   When it occurs                                  What it allows/does
   -------------------- --------- ----------------------------------------------- ----------------------------------------------------------
   `sections_deleted`   -         After one or more sections have been deleted.   Passes an array of deleted section names as a parameter.
@@ -351,7 +351,7 @@ These callbacks all have the same `$event` (= `admin_criteria`).
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Panel                                                                               `$event`           `$step`
   ----------------------------------------------------------------------------------- ------------------ ----------------
   "Articles":https://docs.textpattern.io/administration/articles-panel         `admin_criteria`   `list_list`
@@ -390,7 +390,7 @@ application, so you can alter them directly:
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Panel                                                                         `$event`       `$step`
   ----------------------------------------------------------------------------- -------------- --------------------
   "Articles":https://docs.textpattern.io/administration/content/articles-panel   `article_ui`   `validate_save`
@@ -426,7 +426,7 @@ The same `$event` is used in each case: `article_ui`.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Concerned widget       `$step`             What it alters or replaces
   ---------------------- ------------------- ------------------------------------------------------------------------------------------------------------------------------------------
   -                      `title`             The **Title** field.
@@ -504,7 +504,7 @@ panel.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Panel        `$event`        `$step`                What it allows/does
   ------------ --------------- ---------------------- --------------------------------------------------------------------------------------------------------------------------------------------
   Categories   `category_ui`   `extend_detail_form`   adds markup above the category *Save* button when editing an individual category argument \#3 is empty because there is no default content
@@ -522,7 +522,7 @@ panel. These callbacks have a single `$event` (i.e. `image_ui`).
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Panel    `$event`     `$step`                What it allows/does                                                                                            Argument notes
   -------- ------------ ---------------------- -------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------
   Images   `image_ui`   `extend_controls`      Adds markup to the `txp-control-panel` area.                                                                   Argument \#3 is empty because there is no default content.
@@ -547,7 +547,7 @@ panel.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Panel   `$event`    `$step`                What it allows/does                                         Argument notes
   ------- ----------- ---------------------- ----------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Files   `file_ui`   `extend_detail_form`   Add markup above the **Save** button when editing a file.   Argument \#3 is empty because there is no default content. The same callback is used whether the file you are editing exists or is missing from the database. Use the absence or availability of the 4th argument (record set) to determine which state the panel is in.
@@ -565,7 +565,7 @@ panel.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Panel   `$event`    `$step`                What it allows/does                          Argument notes
   ------- ----------- ---------------------- -------------------------------------------- ------------------------------------------------------------
   Links   `link_ui`   `extend_detail_form`   Add markup above the link **Save** button.   Argument \#3 is empty because there is no default content.
@@ -583,7 +583,7 @@ panel.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Panel      `$event`       `$step`                What it allows/does                                                             Argument notes
   ---------- -------------- ---------------------- ------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Sections   `section_ui`   `extend_detail_form`   Add markup immediately above the **Save** button in the *section edit* panel.   Argument \#3 is empty because there is no default content. Argument \#4 contains only the columns *page* and *css* when in the default area, and contains all columns at other times.
@@ -601,7 +601,7 @@ panel.
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Panel   `$event`      `$step`                What it allows/does                                        Argument notes
   ------- ------------- ---------------------- ---------------------------------------------------------- ------------------------------------------------------------
   Users   `author_ui`   `extend_detail_form`   Add markup immediately above the author **Save** button.   Argument \#3 is empty because there is no default content.
@@ -618,7 +618,7 @@ See the [Preferences administration panel](https://docs.textpattern.io/administr
 
 notextile.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   Panel      `$event`     `$step`        What it allows/does                                                                                                                                       Argument notes
   ---------- ------------ -------------- --------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Basic      `prefs_ui`   `gmtoffset`    Alters or replaces the **Time zone** select list input control (not the label).                                                                           Argument \#4 is the preference name in the 'txp_prefs' table (`timezone_key` in this case). Argument \#5 is the preference's value (i.e. the chosen item).
@@ -674,7 +674,7 @@ you wish to offer a link to your plugin's preferences from the
 ****[Plugins](http:docs.textpattern.io/administration/plugins-panel)
 panel, you must raise the `PLUGIN_HAS_PREFS` flag.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`                             `$step`       When it occurs                                                                                                                                                                                               What it allows/does
   ------------------------------------ ------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------
   `plugin_lifecycle.abc_your_plugin`   `enabled`     When somebody switches abc_your_plugin to "Enabled" (Yes) from the **Plugins** panel.                                                                                                                      -
@@ -693,7 +693,7 @@ TODO: intro para about function- and tag-based callbacks in general
 
 TODO: intro para about what this callback is concerned with
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
   `$event`              `$step`              When/where it occurs                               What it allows/does
   --------------------- -------------------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------
   `sanitize_for_url`    -                    At start of the `sanitizeForUrl()` function.       Apply your own URL sanitization rules; passes the text to be sanitized as the callback's 4th argument.

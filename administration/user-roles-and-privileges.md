@@ -50,7 +50,7 @@ Table 1 focuses specifically on the core (out-of-the-box) administration regions
 * <span class="warning">Limited</span> means the account or role can access the panel but does not have full read or write access to all functionality. See the 'limited access' descriptions in following sections.
 * <span class="error">Blocked</span> means the account or role has no panel access and can not see the panel link in the administration UI (for accounts with 'None' status, the account cannot be used at all).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
         <caption itemprop="about">Table 1: Core panels access per role</caption>
         <thead>
@@ -244,7 +244,7 @@ Table 1 focuses specifically on the core (out-of-the-box) administration regions
 
 Table 2 represents the two *extended* regions - **Home** and **Extensions** - that you may see when installing certain admin-side plugins. Unlike with core regions and panels, the panels of the extended regions are generally not treated individually, rather roles are treated at the region level, which is why individual panels are not show here.[^3] A given role will either have access to the regions (thus all their panels) or won't see them all. The respective panels one might see in these regions depend on which plugins are installed that make use of them. Most likely anyone with Publisher and Managing Editor roles will see the [Extensions administration region](https://docs.textpattern.io/administration/extensions-region) eventually because so many useful admin-side plugins make use of it.
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
         <caption itemprop="about">Table 2: Extended panels access per role</caption>
         <thead>

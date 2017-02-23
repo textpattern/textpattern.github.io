@@ -25,7 +25,7 @@ Though it’s possible to completely redesign the HTML markup within an admin-si
 
 Callbacks written with `pluggable_ui` have a different signature than those written with other functions @@compare with `register_callback()`@@. They usually have 4 arguments (and sometimes 5).
 
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
         <thead>
             <tr>

@@ -89,7 +89,7 @@ Important rules for consistency, which also has implications for plugin authors.
 Use tables sparingly (they can be problematic to read on small screen devices), and only where the content is definitely tabular data (if the content can semantically be called a definition list, then use that context instead). Use HTML tags for tables within Markdown files, like this:
 
 ~~~ html
-<div class="tabular-data" itemscope itemtype="http://schema.org/Table">
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
         <thead>
             <tr>
