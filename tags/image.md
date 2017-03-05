@@ -104,7 +104,7 @@ Displays full-size images for all images found by the [images](images) tag.
 
 ### Version 4.3.0
 
-`width` and `heigh` attributes added. \\
+`width` and `height` attributes added. \\
 Added context sensitivity within [images](images) tag.
 
 ### Version 4.2.0
