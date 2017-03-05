@@ -25,6 +25,8 @@ On this page:
 
 The **image** tag is a *single* tag that Textpattern will replace with the `<img src="...">` HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern [Images administration panel](https://docs.textpattern.io/administration/images-panel).
 
+By default, the tag is context-sensitive: if an `id` or `name` attribute is not specified, it can be used inside an [images](images) tag or form to output an `<img src="...">` HTML tag matching the current image.
+
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
@@ -43,7 +45,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `id="integer"`
-: Specifies the `id`, assigned at upload of the image, to display. Can be found on the [Images administration panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
+: Specifies the `id`, assigned at upload of the image, to display. Can be found on the [Images administration panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](images) tag or form.
 
 `name="image name"`
 : Specifies which image to display by its image `name` as shown on the [Images administration panel](https://docs.textpattern.io/administration/images-panel).
@@ -88,11 +90,22 @@ Displays the image named `chickens.jpg` and assigns a `class="promoted"` attribu
 
 Had the `wraptag` attribute been used, the `class="promoted"` attribute/value would have been applied to that instead of directly to the image tag.
 
+### Example 3: Use with [images](images)
+
+~~~ html
+<txp:images>
+    <txp:image />
+</txp:images>
+~~~
+
+Displays full-size images for all images found by the [images](images) tag.
+
 ## Genealogy
 
 ### Version 4.3.0
 
-`width` and `heigh` attributes added.
+`width` and `heigh` attributes added. \\
+Added context sensitivity within [images](images) tag.
 
 ### Version 4.2.0
 
