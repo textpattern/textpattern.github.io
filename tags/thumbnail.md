@@ -106,7 +106,7 @@ Displays thumbnails for all images found by the [images](images) tag.
 
 ### Version 4.3.0
 
-Added context sensitivity within images](images) tag.
+Added context sensitivity within [images](images) tag.
 
 ### Version 4.2.0
 
