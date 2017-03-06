@@ -25,6 +25,8 @@ On this page:
 
 The **thumbnail** tag is a *single* tag that Textpattern will replace with the `<img src="...">` HTML tag matching the thumbnail image of the numeric `id` assigned by Textpattern when the parent image was uploaded via the Textpattern [Images administration panel](https://docs.textpattern.io/administration/images-panel).
 
+By default, the tag is context-sensitive: if an `id` or `name` attribute is not specified, it can be used inside an [images](images) tag or form to output an `<img src="...">` HTML tag matching the thumbnail of the current image.
+
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
@@ -42,7 +44,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `id="integer"`
-: Specifies the `id` assigned at upload of the image to display. Can be found on the Textpattern [Images administration panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
+: Specifies the `id` assigned at upload of the image to display. Can be found on the Textpattern [Images administration panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](images) tag or form.
 
 `link="boolean"`
 : If set, the thumbnail will be rendered as a (non-Javascript) URL link to the full-size image.
@@ -90,7 +92,21 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 Displays the image thumbnail for the image uploaded as ID #23.
 
+### Example 2: Use with [images](images)
+
+~~~ html
+<txp:images>
+    <txp:thumbnail />
+</txp:images>
+~~~
+
+Displays thumbnails for all images found by the [images](images) tag.
+
 ## Genealogy
+
+### Version 4.3.0
+
+Added context sensitivity within [images](images) tag.
 
 ### Version 4.2.0
 
