@@ -92,7 +92,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 Displays the image thumbnail for the image uploaded as ID #23.
 
-### Example 2: Use with [images](images)
+### Example 2: Use within images tag
 
 ~~~ html
 <txp:images>
@@ -106,7 +106,7 @@ Displays thumbnails for all images found by the [images](images) tag.
 
 ### Version 4.3.0
 
-Added context sensitivity within [images](images) tag.
+Added context sensitivity within images](images) tag.
 
 ### Version 4.2.0
 

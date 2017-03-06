@@ -90,7 +90,7 @@ Displays the image named `chickens.jpg` and assigns a `class="promoted"` attribu
 
 Had the `wraptag` attribute been used, the `class="promoted"` attribute/value would have been applied to that instead of directly to the image tag.
 
-### Example 3: Use with [images](images)
+### Example 3: Use within images tag
 
 ~~~ html
 <txp:images>
