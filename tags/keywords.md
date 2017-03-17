@@ -10,8 +10,8 @@ tags:
 
 # Keywords
 
-**Deprecated in Textpattern 4.6.0** (use [meta_keywords](meta_keywords) tag instead)
-{: .alert-block .error}
+Textpattern 4.6.x claim this tag is deprecated and to use the [meta_keywords](meta_keywords) tag instead. Due to unforeseen functionality being affected, this is incorrect advice. The tag is reinstated as of the next version of Textpattern. Please ignore the warning.
+{: .alert-block .warning}
 
 On this page:
 
@@ -23,9 +23,3 @@ On this page:
 ~~~
 
 The **keywords** tag is a *single* tag that Textpattern will replace with the keywords associated with the article being displayed. For keywords metadata, see [meta_keywords](meta_keywords) tag.
-
-## Genealogy
-
-### Version 4.6.0
-
-Tag support removed.
