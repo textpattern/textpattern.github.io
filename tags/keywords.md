@@ -2,10 +2,10 @@
 layout: document
 category: Tags
 published: true
-title: Keywords (Deprecated)
-description: The 'keywords' tag is deprecated - use 'meta_keywords' tag instead.
+title: Keywords
+description: Display a list af article 'keywords'.
 tags:
-  - Deprecated tags
+  - Markup tags
 ---
 
 # Keywords
