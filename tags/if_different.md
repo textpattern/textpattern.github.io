@@ -86,7 +86,7 @@ In Textpattern [Page templates](https://docs.textpattern.io/themes/page-template
         <h2>
             <txp:section title="1" />
         </h2>
-    </txp:if_differen>
+    </txp:if_different>
     <h3>
         <txp:title />
     </h3>
