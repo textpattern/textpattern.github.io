@@ -16,36 +16,60 @@ For each attribute, the associated tags are listed underneath it.
 
 [HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to the 'active' or current link in a list.
 
+{::options parse_block_html="true" /}
+
+<div class="layout-text4col">
+
 * [category_list](category_list)
 * [section_list](section_list)
+
+</div>
 
 ### allowoverride
 
 Used to disable assigned override forms. Works within article lists and single article display. Both article tags use `1` (yes) as default.
 
+<div class="layout-text4col">
+
 * [article](article)
 * [article_custom](article_custom)
 
+</div>
+
 ### anchor
+
+<div class="layout-text4col">
 
 * [comment_permlink](comment_permlink)
 
+</div>
+
 ### author
+
+<div class="layout-text4col">
 
 * [article_custom](article_custom)
 * [file_download_list](file_download_list)
 * [images](images)
 * [linklist](linklist)
 
+</div>
+
 ### auto_detect
+
+<div class="layout-text4col">
 
 * [file_download_list](file_download_list)
 * [images](images)
 * [linklist](linklist)
+
+</div>
 
 ### break
 
 HTML tag (without brackets) or string used to separate list items. Suggested values include `br` and `hr` for presentational markup, or `li` if semantic markup is preferred. Textpattern cares for the correct nesting of tags in either case. Default is `br` (except for tags marked <span class="warning">●</span>, which default to unset).
+
+<div class="layout-text4col">
 
 * [article](article) <span class="warning">●</span>
 * [article_custom](article_custom) <span class="warning">●</span>
@@ -64,15 +88,27 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 * [search_result_excerpt](search_result_excerpt)
 * [section_list](section_list)
 
+</div>
+
 ### button
+
+<div class="layout-text4col">
 
 * [search_input](search_input)
 
+</div>
+
 ### categories
+
+<div class="layout-text4col">
 
 * [category_list](category_list)
 
+</div>
+
 ### category
+
+<div class="layout-text4col">
 
 * [article_custom](article_custom)
 * [feed_link](feed_link)
@@ -83,13 +119,21 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 * [linklist](linklist)
 * [recent_articles](recent_articles)
 
+</div>
+
 ### children
 
+<div class="layout-text4col">
+
 * [category_list](category_list)
+
+</div>
 
 ### class
 
 [HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to the specified [wraptag](#wraptag). Tags marked with <span class="warning">●</span> use the tag name as the class name by default. Otherwise the default is empty.
+
+<div class="layout-text4col">
 
 * [article](article)
 * [article_custom](article_custom)
@@ -133,38 +177,66 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 * [section_list](section_list) <span class="warning">●</span>
 * [thumbnail](thumbnail)
 
+</div>
+
 ### cols
 
 HTML [cols attribute](https://www.w3.org/TR/html5/forms.html#attr-textarea-cols) to be applied to HTML form [textarea tag](https://www.w3.org/TR/html5/forms.html#the-textarea-element).
 
+<div class="layout-text4col">
+
 * [comment_message_input](comment_message_input)
+
+</div>
 
 ### customfieldname
 
 In your tag, replace `customfieldname` with the actual name of the desired custom field (see also @@Important notes on creating custom field names@@).
 
+<div class="layout-text4col">
+
 * [article](article)
 * [article_custom](article_custom)
 
+</div>
+
 ### decimals
+
+<div class="layout-text4col">
 
 * [file_download_size](file_download_size)
 
+</div>
+
 ### default
+
+<div class="layout-text4col">
 
 * [custom_field](custom_field)
 
+</div>
+
 ### default_title
+
+<div class="layout-text4col">
 
 * [section_list](section_list)
 
+</div>
+
 ### email
 
+<div class="layout-text4col">
+
 * [email](email)
+
+</div>
 
 ### escape
 
 Escape HTML entities.
+
+<div class="layout-text4col">
 
 * [article_image](article_image)
 * [author](author)
@@ -183,41 +255,73 @@ Escape HTML entities.
 * [text](text)
 * [thumbnail](thumbnail)
 
+</div>
+
 ### excerpted
+
+<div class="layout-text4col">
 
 * [article_custom](article_custom)
 
+</div>
+
 ### exclude
+
+<div class="layout-text4col">
 
 * [article_custom](article_custom)
 * [category_list](category_list)
 * [section_list](section_list)
 
+</div>
+
 ### expired
+
+<div class="layout-text4col">
 
 * [article_custom](article_custom)
 
+</div>
+
 ### extension
+
+<div class="layout-text4col">
 
 * [images](images)
 
+</div>
+
 ### filename
+
+<div class="layout-text4col">
 
 * [file_download](file_download)
 * [file_download_link](file_download_link)
 
+</div>
+
 ### flavor
+
+<div class="layout-text4col">
 
 * [feed_link](feed_link)
 * [link_feed_link](link_feed_link)
 
+</div>
+
 ### forgetlabel
 
+<div class="layout-text4col">
+
 * [comment_remember](comment_remember)
+
+</div>
 
 ### form
 
 Used to format content for display. See [Form templates](https://docs.textpattern.io/themes/form-templates-explained) for further explanation.
+
+<div class="layout-text4col">
 
 * [article](article)
 * [article_custom](article_custom)
@@ -236,7 +340,11 @@ Used to format content for display. See [Form templates](https://docs.textpatter
 * [search_input](search_input)
 * [section_list](section_list)
 
+</div>
+
 ### format
+
+<div class="layout-text4col">
 
 * [author](author)
 * [comment_time](comment_time)
@@ -256,7 +364,11 @@ Used to format content for display. See [Form templates](https://docs.textpatter
 * [posted](posted)
 * [search_result_date](search_result_date)
 
+</div>
+
 ### gmt
+
+<div class="layout-text4col">
 
 * [comment_time](comment_time)
 * [expires](expires)
@@ -264,23 +376,39 @@ Used to format content for display. See [Form templates](https://docs.textpatter
 * [modified](modified)
 * [posted](posted)
 
+</div>
+
 ### group
+
+<div class="layout-text4col">
 
 * [authors](authors)
 
+</div>
+
 ### height
+
+<div class="layout-text4col">
 
 * [article_image](article_image)
 * [image](image)
 * [thumbnail](thumbnail)
 
+</div>
+
 ### hilight
 
+<div class="layout-text4col">
+
 * [search_result_excerpt](search_result_excerpt)
+
+</div>
 
 ### html_id
 
 [HTML id attribute](https://www.w3.org/TR/html5/dom.html#the-id-attribute) to be applied to the [wraptag](#wraptag).
+
+<div class="layout-text4col">
 
 * [article_image](article_image)
 * [category_list](category_list)
@@ -290,7 +418,11 @@ Used to format content for display. See [Form templates](https://docs.textpatter
 * [section_list](section_list)
 * [thumbnail](thumbnail)
 
+</div>
+
 ### id
+
+<div class="layout-text4col">
 
 * [article_custom](article_custom)
 * [file_download](file_download)
@@ -307,23 +439,39 @@ Used to format content for display. See [Form templates](https://docs.textpatter
 * [permlink](permlink)
 * [thumbnail](thumbnail)
 
+</div>
+
 ### include_default
+
+<div class="layout-text4col">
 
 * [section_list](section_list)
 
+</div>
+
 ### item
+
+<div class="layout-text4col">
 
 * [text](text)
 
+</div>
+
 ### keywords
+
+<div class="layout-text4col">
 
 * [article](article)
 * [article_custom](article_custom)
 * [if_keywords](if_keywords)
 
+</div>
+
 ### label
 
 This string will be prepended to the output. When using a [wraptag](#wraptag) value of either `ol` or `ul`, the label will be the first list item. Default is unset (except where shown in parentheses).
+
+<div class="layout-text4col">
 
 * [article](article)
 * [article_custom](article_custom)
@@ -347,9 +495,13 @@ This string will be prepended to the output. When using a [wraptag](#wraptag) va
 * [search_input](search_input) (Search)
 * [section_list](section_list)
 
+</div>
+
 ### labeltag
 
 HTML tag (without brackets) to wrap around [label](#label). Default is unset.
+
+<div class="layout-text4col">
 
 * [article](article)
 * [article_custom](article_custom)
@@ -366,7 +518,11 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset.
 * [related_articles](related_articles)
 * [section_list](section_list)
 
+</div>
+
 ### lang
+
+<div class="layout-text4col">
 
 * [comment_time](comment_time)
 * [expires](expires)
@@ -374,7 +530,11 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset.
 * [modified](modified)
 * [posted](posted)
 
+</div>
+
 ### limit
+
+<div class="layout-text4col">
 
 * [article](article)
 * [article_custom](article_custom)
@@ -392,7 +552,11 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset.
 * [search_result_excerpt](search_result_excerpt)
 * [section_list](section_list)
 
+</div>
+
 ### link
+
+<div class="layout-text4col">
 
 * [author](author)
 * [author_email](author_email)
@@ -408,57 +572,105 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset.
 * [section](section)
 * [thumbnail](thumbnail)
 
+</div>
+
 ### link_rel
 
+<div class="layout-text4col">
+
 * [thumbnail](thumbnail)
+
+</div>
 
 ### linkclass
 
 [HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to links.
 
+<div class="layout-text4col">
+
 * [breadcrumb](breadcrumb)
+
+</div>
 
 ### linktext
 
+<div class="layout-text4col">
+
 * [email](email)
+
+</div>
 
 ### listform
 
 See [Form templates](https://docs.textpattern.io/themes/form-templates-explained) for further explanation.
 
+<div class="layout-text4col">
+
 * [article](article)
+
+</div>
 
 ### login
 
+<div class="layout-text4col">
+
 * [password_protect](password_protect)
 
+</div>
+
 ### match
+
+<div class="layout-text4col">
 
 * [if_custom_field](if_custom_field)
 * [related_articles](related_articles)
 * [search_input](search_input)
 
+</div>
+
 ### max
 
+<div class="layout-text4col">
+
 * [if_search_results](if_search_results)
+
+</div>
 
 ### media
 
+<div class="layout-text4col">
+
 * [css](css)
+
+</div>
 
 ### min
 
+<div class="layout-text4col">
+
 * [if_search_results](if_search_results)
+
+</div>
 
 ### month
 
+<div class="layout-text4col">
+
 * [article_custom](article_custom)
+
+</div>
 
 ### msg
 
+<div class="layout-text4col">
+
 * [txp_die](txp_die)
 
+</div>
+
 ### name
+
+<div class="layout-text4col">
 
 * [authors](authors)
 * [category](category)
@@ -483,17 +695,29 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 * [thumbnail](thumbnail)
 * [variable](variable)
 
+</div>
+
 ### no_widow
+
+<div class="layout-text4col">
 
 * [recent_articles](recent_articles)
 * [related_articles](related_articles)
 * [title](title)
 
+</div>
+
 ### number
+
+<div class="layout-text4col">
 
 * [if_article_category](if_article_category)
 
+</div>
+
 ### offset
+
+<div class="layout-text4col">
 
 * [article](article)
 * [article_custom](article_custom)
@@ -509,70 +733,122 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 * [related_articles](related_articles)
 * [section_list](section_list)
 
+</div>
+
 ### pageby
+
+<div class="layout-text4col">
 
 * [article](article)
 * [file_download_list](file_download_list)
 * [images](images)
 * [linklist](linklist)
 
+</div>
+
 ### parent
+
+<div class="layout-text4col">
 
 * [category_list](category_list)
 
+</div>
+
 ### pass
 
+<div class="layout-text4col">
+
 * [password_protect](password_protect)
+
+</div>
 
 ### pgonly
 
 Used to return pagination statistics without rendering the article list. Care must be taken to remain consistent with article tag attributes to keep statistics accurate.
 
+<div class="layout-text4col">
+
 * [article](article)
+
+</div>
 
 ### poplink
 
+<div class="layout-text4col">
+
 * [thumbnail](thumbnail)
 
+</div>
+
 ### realname
+
+<div class="layout-text4col">
 
 * [file_download_list](file_download_list)
 * [images](images)
 * [linklist](linklist)
 
+</div>
+
 ### rel
 
 HTML [rel attribute](https://www.w3.org/TR/html5/document-metadata.html#attr-link-rel) to be applied to links.
+
+<div class="layout-text4col">
 
 * [css](css)
 * [link](link)
 * [linkdesctitle](linkdesctitle)
 
+</div>
+
 ### rememberlabel
 
+<div class="layout-text4col">
+
 * [comment_remember](comment_remember)
+
+</div>
 
 ### rows
 
 HTML [rows attribute](https://www.w3.org/TR/html5/forms.html#attr-textarea-rows) to be applied to HTML form [textarea tag](https://www.w3.org/TR/html5/forms.html#the-textarea-element).
 
+<div class="layout-text4col">
+
 * [comment_message_input](comment_message_input)
+
+</div>
 
 ### searchall
 
+<div class="layout-text4col">
+
 * [article](article)
+
+</div>
 
 ### searchform
 
 See [Form templates](https://docs.textpattern.io/themes/form-templates-explained) for further explanation.
 
+<div class="layout-text4col">
+
 * [article](article)
+
+</div>
 
 ### searchsticky
 
+<div class="layout-text4col">
+
 * [article](article)
 
+</div>
+
 ### section
+
+<div class="layout-text4col">
 
 * [article_custom](article_custom)
 * [author](author)
@@ -589,18 +865,30 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 * [related_articles](related_articles)
 * [search_input](search_input)
 
+</div>
+
 ### sections
+
+<div class="layout-text4col">
 
 * [section_list](section_list)
 
+</div>
+
 ### separator
+
+<div class="layout-text4col">
 
 * [breadcrumb](breadcrumb)
 * [if_custom_field](if_custom_field)
 * [meta_keywords](meta_keywords)
 * [page_title](page_title)
 
+</div>
+
 ### showalways
+
+<div class="layout-text4col">
 
 * [comments_invite](comments_invite)
 * [link_to_next](link_to_next)
@@ -608,22 +896,34 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 * [newer](newer)
 * [older](older)
 
+</div>
+
 ### showcount
 
+<div class="layout-text4col">
+
 * [comments_invite](comments_invite)
+
+</div>
 
 ### size
 
 HTML [size attribute](https://www.w3.org/TR/html5/forms.html#the-size-attribute) to be applied to HTML form [input tags](https://www.w3.org/TR/html5/forms.html#the-input-element).
+
+<div class="layout-text4col">
 
 * [comment_email_input](comment_email_input)
 * [comment_name_input](comment_name_input)
 * [comment_web_input](comment_web_input)
 * [search_input](search_input)
 
+</div>
+
 ### sort
 
 How to sort the resulting list. Available and default values vary by tag, but multiple, comma-separated values can be used. Each value can be specified as either `asc` (ascending) or `desc` (descending) order.
+
+<div class="layout-text4col">
 
 * [article](article)
 * [article_custom](article_custom)
@@ -639,7 +939,11 @@ How to sort the resulting list. Available and default values vary by tag, but mu
 * [related_articles](related_articles)
 * [section_list](section_list)
 
+</div>
+
 ### status
+
+<div class="layout-text4col">
 
 * [article](article)
 * [article_custom](article_custom)
@@ -647,24 +951,40 @@ How to sort the resulting list. Available and default values vary by tag, but mu
 * [if_status](if_status)
 * [txp_die](txp_die)
 
+</div>
+
 ### style
 
 HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute) to be applied to HTML tag. Recommended that you use CSS via `class` or `id` attribute instead.
+
+<div class="layout-text4col">
 
 * [article_image](article_image)
 * [image](image)
 * [permlink](permlink)
 * [thumbnail](thumbnail)
 
+</div>
+
 ### text
+
+<div class="layout-text4col">
 
 * [search_result_count](search_result_count)
 
+</div>
+
 ### textonly
+
+<div class="layout-text4col">
 
 * [comments_invite](comments_invite)
 
+</div>
+
 ### this_section
+
+<div class="layout-text4col">
 
 * [author](author)
 * [category](category)
@@ -676,18 +996,30 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 * [link_author](link_author)
 * [popup](popup)
 
+</div>
+
 ### thumbnail
+
+<div class="layout-text4col">
 
 * [article_image](article_image)
 * [image_url](image_url)
 * [images](images)
 
+</div>
+
 ### time
+
+<div class="layout-text4col">
 
 * [article](article)
 * [article_custom](article_custom)
 
+</div>
+
 ### title
+
+<div class="layout-text4col">
 
 * [author](author)
 * [breadcrumb](breadcrumb)
@@ -710,7 +1042,11 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 * [permlink](permlink)
 * [section](section)
 
+</div>
+
 ### type
+
+<div class="layout-text4col">
 
 * [category](category)
 * [category_list](category_list)
@@ -722,32 +1058,52 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 * [page_url](page_url)
 * [popup](popup)
 
+</div>
+
 ### url
+
+<div class="layout-text4col">
 
 * [category](category)
 * [section](section)
 * [txp_die](txp_die)
 
+</div>
+
 ### value
+
+<div class="layout-text4col">
 
 * [if_custom_field](if_custom_field)
 * [if_variable](if_variable)
 * [if_yield](if_yield)
 * [variable](variable)
 
+</div>
+
 ### version
+
+<div class="layout-text4col">
 
 * [if_plugin](if_plugin)
 
+</div>
+
 ### width
+
+<div class="layout-text4col">
 
 * [article_image](article_image)
 * [image](image)
 * [thumbnail](thumbnail)
 
+</div>
+
 ### wraptag
 
 HTML tag (without brackets) to wrap around output. Default value is unset, except where shown in parentheses.
+
+<div class="layout-text4col">
 
 * [article](article)
 * [article_custom](article_custom)
@@ -789,3 +1145,5 @@ HTML tag (without brackets) to wrap around output. Default value is unset, excep
 * [section](section)
 * [section_list](section_list)
 * [thumbnail](thumbnail)
+
+</div>
