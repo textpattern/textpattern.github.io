@@ -23,7 +23,7 @@ On this page:
 <txp:recent_articles />
 ~~~
 
-The **recent_articles** tag is a *single* tag which is used to produce a list of permanent links to recent articles by title.
+The **recent_articles** tag is a *single* tag which is used to produce a list of permanent links to recent articles by title. If you require the additional flexibility provided by a *container* tag, you might want to use [article_custom](article_custom) instead.
 
 ## Attributes
 
