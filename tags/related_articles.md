@@ -140,7 +140,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 ### Example 3: Used as a container tag
 
 ~~~ html
-<txp:related_articles label="Related" `labeltag="h3"` limit="10" break="li" wraptag="ul">
+<txp:related_articles label="Related" labeltag="h3" limit="10" break="li" wraptag="ul">
     <txp:permlink>
         <txp:title />
     </txp:permlink>
