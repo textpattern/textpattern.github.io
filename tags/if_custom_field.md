@@ -161,4 +161,4 @@ Other tags used: [else](else).
 ### Version 4.3.0
 
 `val` attribute deprecated and renamed to `value`. \\
-`matc` and `separator` attributes added.
+`match` and `separator` attributes added.
