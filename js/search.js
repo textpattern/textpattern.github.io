@@ -47,7 +47,7 @@ function initSearch() {
     indexVar = lunr(function () {
       this.field('id');
       this.field('title');
-      this.field('content', { boost: 10 });
+      this.field('content');
       this.field('author');
     });
     // get the data
