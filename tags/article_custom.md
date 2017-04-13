@@ -139,7 +139,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `status`. \\
 `title`. \\
 `url_title`. \\
-: Each field in the `textpattern` database table can be used as a sort key.
+Each field in the `textpattern` database table can be used as a sort key.
 : **Default:** `posted desc`.
 
 `status="status"`
