@@ -4,7 +4,7 @@
  *
  * @author   Mat Hayward - Erskine Design
  * @author   Rishikesh Darandale <Rishikesh.Darandale@gmail.com>
- * @version  1.0
+ * @version  1.1
  */
 
  /* ==========================================================================
@@ -43,15 +43,8 @@ $(document).ready( function() {
  */
 function initSearch() {
   if(!sessionStorage.getItem('lunrIndex')) {
-    // set the index fields
-    indexVar = lunr(function () {
-      this.field('id');
-      this.field('title');
-      this.field('content');
-      this.field('author');
-    });
     // get the data
-    getData(indexVar);
+    getData();
   } else {
     // Get search results if q parameter is set in querystring
     if (getParameterByName('q')) {
@@ -79,11 +72,18 @@ function getData(indexVar) {
     .done(function(loaded_data){
       // save the actual data as well
       sessionStorage.setItem('actualData', JSON.stringify(loaded_data));
-      $.each(loaded_data, function(index, value){
-        if ( value.search_omit != "true" ) {
-          console.log('adding to index: ' + value.title);
-          indexVar.add($.extend({ 'id': index }, value));
-        }
+      // set the index fields
+      indexVar = lunr(function () {
+        this.field('id');
+        this.field('title');
+        this.field('content', { boost: 10 });
+        this.field('author');
+        loaded_data.forEach(function (doc, index) {
+          if ( doc.search_omit != 'true' ) {
+            console.log('adding to index: ' + doc.title);
+            this.add($.extend({ 'id': index }, doc));
+          }
+        }, this)
       });
       // store the index in sessionStorage
       sessionStorage.setItem('lunrIndex', JSON.stringify(indexVar));
@@ -145,7 +145,7 @@ function processResultData(searchResults) {
 
   console.log('Search Results: ' + searchResults);
   var resultsCount = 0,
-      results = "";
+      results = '';
 
   // Iterate over the results
   searchResults.forEach(function(result) {
@@ -184,12 +184,12 @@ function showSearchResults(results) {
 function populateResultContent(html, item) {
   html = injectContent(html, item.title, '##Title##');
   html = injectContent(html, item.link, '##Url##');
-  if(item.excerpt) {
+  if (item.excerpt) {
     html = injectContent(html, item.excerpt, '##Excerpt##');
   } else {
     html = injectContent(html, '', '##Excerpt##');
   }
-  if(item.date) {
+  if (item.date) {
     html = injectContent(html, item.date, '##Date##');
   } else {
     html = injectContent(html, '', '##Date##');
