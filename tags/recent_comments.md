@@ -52,7 +52,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0`.
 
 `sort="sort value(s)"`
-: How to sort resulting list.
+: How to sort the resulting comment list. Specify a value from the ones below, followed by a space and then add either `asc` or `desc` to sort in ascending or descending order, respectively.
 : **Values:** \\
 `discussid` (comment ID#). \\
 `email`. \\

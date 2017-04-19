@@ -60,7 +60,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0`.
 
 `sort="sort value(s)"`
-: How to sort resulting list. **Note:** values are case sensitive on some servers.
+: How to sort the resulting author list. Specify a value from the ones below, followed by a space and then add either `asc` or `desc` to sort in ascending or descending order, respectively. **Note:** values are case sensitive on some servers.
 : **Values:** \\
 `user_id` (author id#). \\
 `last_access` (most recent log in). \\

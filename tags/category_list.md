@@ -74,7 +74,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset, retrieves from all sections.
 
 `sort="sort value(s)"`
-: How to sort the resulting list.
+: How to sort the resulting category list. Specify a value from the ones below, followed by a space and then add either `asc` or `desc` to sort in ascending or descending order, respectively.
 : **Values:** \\
 `id`. \\
 `name`. \\

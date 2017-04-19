@@ -77,7 +77,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `sort="by what and order"`
-: How to sort the resulting list.
+: How to sort the resulting file list. Specify a value from the ones below, followed by a space and then add either `asc` or `desc` to sort in ascending or descending order, respectively.
 : **Values:** \\
 `id`. \\
 `filename`. \\
@@ -88,7 +88,6 @@ Tag will accept the following attributes (**case-sensitive**):
 `created`. \\
 `modifie`. \\
 `rand()` ([random](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand)). \\
-Adding a space and then one of either `asc` or `desc` orders by ascending or descending value, respectively.
 : **Default:** `filename asc`.
 
 `status="file status"`

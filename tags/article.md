@@ -98,7 +98,7 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 : **Default:** `0`.
 
 `sort="sort value(s)"`
-: How to sort resulting list. **Note:** values are case sensitive on some servers.
+: How to sort the resulting article list. Specify a value from the ones below, followed by a space and then add either `asc` or `desc` to sort in ascending or descending order, respectively. **Note:** values are case sensitive on some servers.
 : **Values:** \\
 `AuthorID` (author name). \\
 `Category1`. \\
