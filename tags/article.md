@@ -98,28 +98,28 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 : **Default:** `0`.
 
 `sort="sort value(s)"`
-: How to sort resulting list.
+: How to sort resulting list. **Note:** values are case sensitive on some servers.
 : **Values:** \\
-`authorid` (author name). \\
-`category1`. \\
-`category2`. \\
+`AuthorID` (author name). \\
+`Category1`. \\
+`Category2`. \\
 `comments_count`. \\
 `custom_n` where `n` is the number of your custom field - for numeric values use `(custom_n+0)`. \\
-`expires` (expiry date). \\
-`id` (article id#). \\
-`image` (article image id#). \\
-`keywords`. \\
-`lastmod` (date last modified). \\
-`lastmodid` (author name of last modification). \\
-`posted` (date posted). \\
+`Expires` (expiry date). \\
+`ID` (article id#). \\
+`Image` (article image id#). \\
+`Keywords`. \\
+`LastMod` (date last modified). \\
+`LastModID` (author name of last modification). \\
+`Posted` (date posted). \\
 `rand()` ([random](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand)). \\
-`section`. \\
-`status`. \\
-`title`. \\
+`Section`. \\
+`Status`. \\
+`Title`. \\
 `url_title`. \\
 Each field in the `textpattern` database table can be used as a sort key.
 : When viewing a search results list, `score` (how well the search terms match the article) is available as an additional value.
-: **Default:** `posted desc` (`score desc` for search results).
+: **Default:** `Posted desc` (`score desc` for search results).
 
 `status="status"`
 : Restrict to articles with the specified `status`.

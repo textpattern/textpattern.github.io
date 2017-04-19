@@ -60,12 +60,12 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0`.
 
 `sort="sort value(s)"`
-: How to sort resulting list.
+: How to sort resulting list. **Note:** values are case sensitive on some servers.
 : **Values:** \\
-`id` (author id#). \\
+`user_id` (author id#). \\
 `last_access` (most recent log in). \\
 `name` (login name). \\
-`realname` (real name). \\
+`RealName` (real name). \\
 `privs` (user group). \\
 `rand()` ([random](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand)). \\
 Each field in the `textpattern` database table can be used as a sort key.
