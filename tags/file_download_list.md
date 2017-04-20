@@ -86,8 +86,8 @@ Tag will accept the following attributes (**case-sensitive**):
 `description`. \\
 `downloads`. \\
 `created`. \\
-`modifie`. \\
-`rand()` ([random](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand)). \\
+`modified`. \\
+`rand()` ([random](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand)).
 : **Default:** `filename asc`.
 
 `status="file status"`

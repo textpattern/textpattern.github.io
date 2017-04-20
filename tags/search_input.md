@@ -45,7 +45,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Set the search mode. Choose from: \\
 `exact`: search terms must exactly match the words in the article in the order given. This mode is also automatically selected if the search term is surrounded with double quotes. \\
 `any`: any of the search terms in an article will cause it to show up in the results. \\
-`all`: all of the search terms in the article must exist (in any order) for the article to be included in the results. \\
+`all`: all of the search terms in the article must exist (in any order) for the article to be included in the results.
 : Default `exact`.
 
 `section="section name"`
