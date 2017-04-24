@@ -84,6 +84,17 @@ Used as a container:
 
 Other tags used: [images](images), [thumbnail](thumbnail).
 
+### Example 2: Usage outside of image list context (directly via image ID)
+
+~~~ html
+<img alt="<txp:image_info id="21" type="alt" />"
+    src="<txp:image_url id="21" link="0" />"
+    srcset="<txp:image_url id="22" link="0" /> 2x,
+            <txp:image_url id="21" link="0" /> 1x">
+~~~
+
+Other tags used: [image_info](image_info).
+
 ## Genealogy
 
 ### Version 4.3.0
