@@ -80,11 +80,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (no, return all) or `1` (yes, return only those containing an excerpt).
 : **Default:** `0`.
 
-`exclude="article id(s)"`
+`exclude="article id(s)"` <span class="footnote warning">v4.6.0+</span>
 : Exclude a specific article or list of articles (each ID separated by a comma).
 : **Default:** unset.
 
-`expired="boolean"`
+`expired="boolean"` <span class="footnote warning">v4.5.0+</span>
 : Whether to include articles that have expired or not.
 : **Values:** `0` (no, don't include expired articles) or `1` (yes, include expired articles).
 : **Default:** Setting of preference 'Publish expired articles'.
@@ -119,7 +119,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** (comma separated list of) section name(s).
 : **Default:** unset, retrieves from all sections.
 
-`sort="sort value(s)"`
+`sort="sort value(s)"` <span class="footnote warning">v4.0.4+</span>
 : How to sort the resulting article list. Specify a value from the ones below, followed by a space and then add either `asc` or `desc` to sort in ascending or descending order, respectively. **Note:** values are case sensitive on some servers.
 : **Values:** \\
 `AuthorID` (author name). \\
@@ -156,7 +156,7 @@ Each field in the `textpattern` database table can be used as a sort key.
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-`break="value"`
+`break="value"` <span class="footnote warning">v4.0.7+</span>
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
 : **Default:** `br` (but see [break cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#break) for exceptions).
 
@@ -172,7 +172,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
 : **Default:** unset.
 
-`wraptag="element"`
+`wraptag="element"` <span class="footnote warning">v4.0.7+</span>
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
 : **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
