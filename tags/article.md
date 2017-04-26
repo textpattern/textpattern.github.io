@@ -74,7 +74,7 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 : The number of articles to skip.
 : **Default:** `0`.
 
-`pageby="integer"` <span class="footnote information">(4.0.2+)</span>
+`pageby="integer"` <span class="footnote alert-block information">4.0.2+</span>
 : The number of articles to jump forward or back when an older or newer link is clicked. Allows you to call the article tag several times on a page without messing up older/newer links.
 : **Default:** value matches the value assigned to `limit`.
 
