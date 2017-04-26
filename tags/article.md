@@ -74,7 +74,7 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 : The number of articles to skip.
 : **Default:** `0`.
 
-`pageby="integer"` <span class="footnote alert-block information">4.0.2+</span>
+`pageby="integer"` <span class="footnote warning">v4.0.2+</span>
 : The number of articles to jump forward or back when an older or newer link is clicked. Allows you to call the article tag several times on a page without messing up older/newer links.
 : **Default:** value matches the value assigned to `limit`.
 
@@ -97,7 +97,7 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
 
-`sort="sort value(s)"`
+`sort="sort value(s)"` <span class="footnote warning">v4.0.4+</span>
 : How to sort the resulting article list. Specify a value from the ones below, followed by a space and then add either `asc` or `desc` to sort in ascending or descending order, respectively. **Note:** values are case sensitive on some servers.
 : **Values:** \\
 `AuthorID` (author name). \\
@@ -135,7 +135,7 @@ Each field in the `textpattern` database table can be used as a sort key.
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-`break="value"`
+`break="value"` <span class="footnote warning">v4.0.7+</span>
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
 : **Default:** `br` (but see [break cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#break) for exceptions).
 
@@ -151,7 +151,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
 : **Default:** unset.
 
-`wraptag="element"`
+`wraptag="element"` <span class="footnote warning">v4.0.7+</span>
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
 : **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
