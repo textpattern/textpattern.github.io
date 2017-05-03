@@ -93,6 +93,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : Use specified form template to process each article.
 : **Default:** `default`.
 
+`frontpage="boolean"`
+: When outputting search results, include only those articles with 'Section appears on front page?' set on the [Sections administration panel](https://docs.textpattern.io/administration/sections-panel). If set to `1`, only such articles are displayed, otherwise they are all displayed.
+: **Values:** `0` (no) or `1` (yes).
+: **Default:** `0`.
+
 `id="article ID"`
 : Display the specific article or list of articles (each ID separated by a comma).
 : Important: When a list is supplied, this does **not** imply a sort order (see **Example 6** below).
