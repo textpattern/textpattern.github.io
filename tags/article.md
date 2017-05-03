@@ -59,6 +59,11 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 : Use specified form template to process each article.
 : **Default:** `default`.
 
+`frontpage="boolean"`
+: When outputting search results, include only those articles with 'Section appears on front page?' set on the [Sections administration panel](https://docs.textpattern.io/administration/sections-panel). If set to `0`, all articles are displayed.
+: **Values:** `0` (no) or `1` (yes).
+: **Default:** `1`.
+
 `keywords="keyword(s)"`
 : Restrict to articles with specified keyword(s).
 
