@@ -94,7 +94,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `default`.
 
 `frontpage="boolean"`
-: When outputting search results, include only those articles with 'Section appears on front page?' set on the [Sections administration panel](https://docs.textpattern.io/administration/sections-panel). If set to `1`, only such articles are displayed, otherwise they are all displayed.
+: Include only those articles with 'Section appears on front page?' set on the [Sections administration panel](https://docs.textpattern.io/administration/sections-panel). If set to `1`, only such articles are displayed, otherwise they are all displayed.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
 
