@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: Popup comments
-description: TODO
+description: This tag opens a new page using the popup_comments form template as a container if you set 'Comments mode' to 'popup window' in Preferences.
 tags:
   - Comment tags
 ---
