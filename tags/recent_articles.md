@@ -131,4 +131,4 @@ Produces a list of the 5 most recent articles *apart* from the most recent one, 
 
 ### Version 4.0.6
 
-Added support for comma separated lists for `section` and `category` attributes.
+Added support for comma separated lists for `category` and `section` attributes.

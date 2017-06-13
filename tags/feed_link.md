@@ -98,7 +98,7 @@ Note: `wraptag` is applicable only when using `format` of `a`.
 <txp:feed_link section="" category="" />
 ~~~
 
-Creates a link to the site's feed for articles in all sections and categories. If you omit the `section` and `category` attributes, the feed will default to the current section/category.
+Creates a link to the site's feed for articles in all sections and categories. If you omit the `category` and `section` attributes, the feed will default to the current section/category.
 
 ### Example 4: With Symbolset's 'rss' glyph
 
