@@ -19,3 +19,5 @@ When you upload a plugin that uses the Extensions administration region, a new p
 The use of the Extensions administration region is a convention adopted by plugin developers to put administration-side plugin preferences and other functional controls in a logical place, and that's a good thing when it can be done.
 
 Not all administration-side plugins use the Extensions administration region, however. Some plugins will add their associated admin-side panel in one of the core regions. This may happen when panel placement is decided with respect to functional context over convention. Another reason may be a concern for having too many plugin panels under the Extensions administration region, though this is likely a moot issue for most Textpattern users.
+
+[Related: Home administration region](https://docs.textpattern.io/administration/home-region)
