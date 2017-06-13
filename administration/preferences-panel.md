@@ -146,7 +146,7 @@ Full path (absolute file path, not URI) for this directory, which is required by
 
 This setting is mainly used for plugin developers. When specified, you can put the plugin source file (not compiled) in this directory and Textpattern will load it automatically, so you can easily edit the plugin and immediately see the effect it has without having to install/activate the plugin. **Beware** though that by using this method, a broken plugin (which fails to compile) may also break Textpattern!
 
-It is recommended that you load plugins through the standard Plugins administration panel on a production site, rather than using the plugin cache directory.
+It is recommended that you load plugins through the standard [Plugins administration panel](https://docs.textpattern.io/administration/plugins-panel) on a production site, rather than using the plugin cache directory.
 
 **Note:** Do not specify the same directory for both 'Temporary directory path' and 'Plugin cache directory path', as this will cause problems (Textpattern would try to run the contents of temporary log files as plugins).
 
