@@ -19,15 +19,18 @@ sitemap: false
 <div class="wrapper-inner">
     <div class="container">
         <h1>Search results</h1>
-        <p data-search-found><span data-search-found-count></span> result(s) found for <q><span data-search-found-term></span></q>.</p>
+        <div class="article-description" data-search-found>
+            <p><span data-search-found-count></span> matching your search request <q><span data-search-found-term></span></q>.</p>
+        </div>
         <div data-search-results></div>
 
         <!-- Search result template -->
         <script id="search-result" type="text/x-template">
-            <article itemscope itemtype="https://schema.org/Article">
-                <h3 itemprop="name headline">##Title##</h3>
-                <p itemprop="description">##Excerpt##</p>
-                <p><a href="##Url##" itemprop="url">Go to the full documentation…</a></p>
+            <article class="teaser">
+                <h2><a href="##Url##">##Title##</a></h2>
+                <div class="article-description">
+                    <p>##Excerpt##</p>
+                </div>
             </article>
         </script>
 
