@@ -29,23 +29,23 @@ The basic **css** tag is a *single* tag used to output the URL of the stylesheet
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`format="value"`
+`format="value"` <span class="footnote warning">v4.0.4+</span>
 : How to format output: either return complete [HTML link tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) with necessary HTML attributes, or only the stylesheet's URL.
 : **Values:** `link` or `url`.
 : **Default:** `url`.
 
-`media="value"`
+`media="value"` <span class="footnote warning">v4.0.4+</span>
 : [HTML media attribute](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) to be applied to link tag (when invoked with `format="link"`).
 : **Default:** `screen`.
 
 `name="style name"`
 : Link to specified style.
 
-`rel="value"`
+`rel="value"` <span class="footnote warning">v4.0.4+</span>
 : [HTML rel attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) to be applied to link tag (when invoked with `format="link"`).
 : **Default:** `stylesheet`.
 
-`title="value"`
+`title="value"` <span class="footnote warning">v4.0.4+</span>
 : [HTML title attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title) to be applied to link tag (when invoked with `format="link"`).
 : **Default:** unset.
 

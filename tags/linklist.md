@@ -38,11 +38,11 @@ If used as a container, it must be specified as an opening and closing pair of t
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`author="author login name"`
+`author="author login name"` <span class="footnote warning">v4.3.0+</span>
 : Restrict to links with the specified author.
 : **Default:** unset.
 
-`auto_detect="string context"`
+`auto_detect="string context"` <span class="footnote warning">v4.3.0+</span>
 : List of Textpattern contexts to consider when automatically searching for links. If you wish to turn off the automatic check, set this to `auto_detect="`.
 : **Values:** `category` (to look in the URL for a category list) and/or `author` (to look in the URL for an author list).
 : **Default:** `category, author`.
@@ -56,7 +56,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Use specified form.
 : **Default:** `plainlinks`.
 
-`id="integer"`
+`id="integer"` <span class="footnote warning">v4.5.0+</span>
 : Filter the links by this list of `id`s assigned at link creation time. The IDs can be found on the [Links administration panel](https://docs.textpattern.io/administration/links-panel).
 : **Default:** unset.
 
@@ -68,11 +68,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : The number of links to skip.
 : **Default:** `0`.
 
-`pageby="integer or limit"`
+`pageby="integer or limit"` <span class="footnote warning">v4.3.0+</span>
 : Number of links to jump each page. Without this attribute, you cannot navigate using the [newer](newer) and [older](older) tags. Usually you will want to track the `limit` attribute. Use `pageby="limit"` to do this, which means you will not have to amend two values if you subsequently decide to alter the `limit`.
 : **Default:** unset
 
-`realname="author real name"`
+`realname="author real name"` <span class="footnote warning">v4.3.0+</span>
 : Restrict to links with the specified author name.
 : **Default:** unset.
 
@@ -158,6 +158,6 @@ Other tags used: [link](link), [linkdesctitle](linkdesctitle), [link_description
 
 ### Version 4.3.0
 
-`pageby` attribute added to enable paging via [newer](newer) and [older](older) tags. \\
 `author` and `realname` attributes added. \\
-`auto_detect` attribute added to allow automatic (URL-based) contextual listings.
+`auto_detect` attribute added to allow automatic (URL-based) contextual listings. \\
+`pageby` attribute added to enable paging via [newer](newer) and [older](older) tags.

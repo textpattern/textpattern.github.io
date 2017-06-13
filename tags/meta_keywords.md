@@ -43,17 +43,17 @@ Note: The corresponding keywords field has a 255 character limit by default, whi
 
 ## Attributes
 
-`escape="html"`
+`escape="html"` <span class="footnote warning">v4.6.0+</span>
 : Escape HTML entities such as `<`, `>` and `&`.
 : **Values:** `html` or unset.
 : **Default:** `html`.
 
-`format="value"`
+`format="value"` <span class="footnote warning">v4.6.0+</span>
 : Display as `<meta>` tag or as raw value.
 : **Values:** `meta` or unset.
 : **Default:** `meta` (display as a `<meta>` tag).
 
-`separator="value"`
+`separator="value"` <span class="footnote warning">v4.6.0+</span>
 : Character to be used as the keywords separator.
 : **Default:** unset.
 

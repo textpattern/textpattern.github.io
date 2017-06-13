@@ -31,10 +31,10 @@ This tag is used in 'links' type forms or inside the [linklist](linklist) contai
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`id="integer"`
+`id="integer"` <span class="footnote warning">v4.6.0+</span>
 : Specifies the `id`, assigned at creation of the link, to display. Can be found on the [Links administration panel](https://docs.textpattern.io/administration/links-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
 
-`name="link name"`
+`name="link name"` <span class="footnote warning">v4.6.0+</span>
 : Specifies which link to display by its link `name` as shown on the [Links administration panel](https://docs.textpattern.io/administration/links-panel).
 
 `rel="relation"`

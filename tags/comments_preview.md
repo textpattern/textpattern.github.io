@@ -33,7 +33,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Use specified form template to process each comment.
 : **Default:** `comments`.
 
-`label="text"`
+`label="text"` <span class="footnote warning">v4.6.0+</span>
 : Label that appears on the 'Preview' button.
 : **Default:** `Preview` (localized).
 

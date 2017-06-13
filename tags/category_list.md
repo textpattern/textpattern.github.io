@@ -31,36 +31,36 @@ The **category_list** tag can be used as either a *single* tag or *container* ta
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`active_class="class name"`
+`active_class="class name"` <span class="footnote warning">v4.0.4+</span>
 : HTML `class` attribute to be applied to the `active` or current link in a list. Only works in the *single* tag without the `form` attribute.
 : **Default:** unset.
 
-`categories="category name(s)"`
+`categories="category name(s)"` <span class="footnote warning">v4.0.4+</span>
 : Comma-separated list of categories to include, displayed in the order specified (unless overridden by `sort` attribute). Use category names **not** titles here - note that Textpattern automatically converts the names to lowercase and converts spaces to hyphens when they are created.
 : **Default:** unset (all categories).
 
-`children="boolean"`
+`children="boolean"` <span class="footnote warning">v4.0.7+</span>
 : Can limit the list depth to one level below the parent category.
 : **Values:** `0` (no children, i.e. only show one level below the parent) or `1` (show all nested categories).
 : **Default:** `1`.
 
-`exclude="category name(s)"`
+`exclude="category name(s)"` <span class="footnote warning">v4.0.4+</span>
 : List of category names which will be excluded from the list. `categories` takes precedence over `exclude`.
 : **Default:** unset.
 
-`form="form name"`
+`form="form name"` <span class="footnote warning">v4.0.7+</span>
 : Use specified form to process each included category.
 : **Default:** unset.
 
-`html_id="id"`
+`html_id="id"` <span class="footnote warning">v4.6.0+</span>
 : The HTML `id` attribute applied to the `wraptag`, if set.
 : **Default:** unset.
 
-`limit="integer"`
+`limit="integer"` <span class="footnote warning">v4.6.0+</span>
 : The number of articles to display.
 : **Default:** `0` (no limit).
 
-`offset="integer"`
+`offset="integer"` <span class="footnote warning">v4.6.0+</span>
 : The number of articles to skip.
 : **Default:** `0`.
 
@@ -68,7 +68,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Return only specified category and its children categories. Accepts comma-separated list of values.
 : **Default:** unset.
 
-`section="section name"`
+`section="section name"` <span class="footnote warning">v4.0.4+</span>
 : Restrict to articles from specified section(s).
 : **Values:** (comma separated list of) section name(s).
 : **Default:** unset, retrieves from all sections.
@@ -84,7 +84,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `type`.
 : **Default:** `name asc`.
 
-`this_section="boolean"`
+`this_section="boolean"` <span class="footnote warning">v4.0.4+</span>
 : Link to currently active section (overrides `section` attribute).
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
@@ -154,7 +154,7 @@ Other tags used: [category](category), [if_category](if_category).
 ### Version 4.0.7
 
 Can be used as a container tag. \\
-`form` and `children` attributes added.
+`children` and `form` attributes added.
 
 ### Version 4.0.4
 

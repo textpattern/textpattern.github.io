@@ -43,7 +43,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Comma-separated list of category names. Note the category name is specified in lower case regardless of how you typed its title in the [Categories administration panel](https://docs.textpattern.io/administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes 'my-category-name' when used in tags.
 : **Default:** unset, which determines whether ''any'' category listing is being viewed.
 
-`type="context"`
+`type="context"` <span class="footnote warning">v4.3.0+</span>
 : Textpattern context to check against. You can choose from the following contexts (set to empty to include all contexts): //
 `article` is this an article category list? //
 `image` is this an image category list? //

@@ -49,11 +49,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : Comma-separated list of section names to exclude from the list. `sections` takes precedence over `exclude`.
 : **Default:** unset (none).
 
-`form="form name"`
+`form="form name"` <span class="footnote warning">v4.0.7+</span>
 : Use specified form template to process each included section.
 : **Default:** unset.
 
-`html_id="id"`
+`html_id="id"` <span class="footnote warning">v4.6.0+</span>
 : The HTML `id` attribute applied to the `wraptag`, if set.
 
 `include_default="boolean"`
@@ -61,11 +61,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
 
-`limit="integer"`
+`limit="integer"` <span class="footnote warning">v4.6.0+</span>
 : The number of articles to display.
 : **Default:** `0` (no limit).
 
-`offset="integer"`
+`offset="integer"` <span class="footnote warning">v4.6.0+</span>
 : The number of articles to skip.
 : **Default:** `0`.
 

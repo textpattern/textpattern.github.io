@@ -29,11 +29,11 @@ The **comment_remember** tag is a *single* tag which is used to display a check 
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`forgetlabel="text"`
+`forgetlabel="text"` <span class="footnote warning">v4.6.0+</span>
 : Label that appears next to the 'Forget' `checkbox`.
 : **Default:** `Forget` (localized).
 
-`rememberlabel="text"`
+`rememberlabel="text"` <span class="footnote warning">v4.6.0+</span>
 : Label that appears next to the 'Remember' `checkbox`.
 : **Default:** `Remember` (localized).
 

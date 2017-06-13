@@ -45,7 +45,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Comma-separated list of author names.
 : **Default:** unset, which determines whether 'any' author listing is being viewed.
 
-`type="context"`
+`type="context"` <span class="footnote warning">v4.3.0+</span>
 : Textpattern context to check against. You can choose from the following contexts (set to empty to include all contexts): \\
 `article` is this an article author list? \\
 `image` is this an image author list? \\

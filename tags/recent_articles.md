@@ -43,7 +43,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` allow the last word in the title to appear on its own line, i.e. the title content is rendered unchanged, `1` ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
 : **Default:** as set in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
 
-`offset="integer"`
+`offset="integer"` <span class="footnote warning">v4.6.0+</span>
 : The number of articles to skip.
 : **Default:** `0`.
 

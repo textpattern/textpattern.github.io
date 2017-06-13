@@ -31,16 +31,16 @@ By default, the tag is context-sensitive: if an `id` or `name` attribute is not 
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`escape="html"`
+`escape="html"` <span class="footnote warning">v4.0.4+</span>
 : Escape HTML entities such as `<`, `>` and `&` for the image's `alt` and `title` attributes.
 : **Values:** `html` or unset.
 : **Default:** `html`.
 
-`height="integer"`
+`height="integer"` <span class="footnote warning">v4.3.0+</span>
 : Specify an image `height` which overrides the value stored in the database. Use `height="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the height if a width is used).
 : **Default:** height of image stored in the database.
 
-`html_id="id"`
+`html_id="id"` <span class="footnote warning">v4.0.4+</span>
 : The HTML `id` attribute applied to the `wraptag`, if set, otherwise to the `<img>` tag.
 : **Default:** unset.
 
@@ -50,7 +50,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `name="image name"`
 : Specifies which image to display by its image `name` as shown on the [Images administration panel](https://docs.textpattern.io/administration/images-panel).
 
-`width="integer"`
+`width="integer"` <span class="footnote warning">v4.3.0+</span>
 : Specify an image `width` which overrides the value stored in the database. Use `width="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the width if a height is used).
 : **Default:** width of image stored in the database.
 
@@ -66,7 +66,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.
 : **Default:** unset.
 
-`wraptag="element"`
+`wraptag="element"` <span class="footnote warning">v4.0.4+</span>
 : HTML tag to be used to wrap the `<img>` tag, specified without brackets (e.g. `wraptag="ul"`).
 : **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
@@ -104,7 +104,7 @@ Displays full-size images for all images found by the [images](images) tag.
 
 ### Version 4.3.0
 
-`width` and `height` attributes added. \\
+`height` and `width` attributes added. \\
 Added context sensitivity within [images](images) tag.
 
 ### Version 4.2.0
@@ -117,4 +117,4 @@ Default value for `escape` attribute changed from 'unset' to `html`.
 
 ### Version 4.0.4
 
-`html_id`, `escape` and `wraptag` attributes added.
+`escape`, `html_id` and `wraptag` attributes added.

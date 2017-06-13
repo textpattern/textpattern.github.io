@@ -37,11 +37,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : Use specified form template to build a customized HTML form.
 : **Default:** `search_input`.
 
-`html_id="id"`
+`html_id="id"` <span class="footnote warning">v4.0.7+</span>
 : The HTML `id` attribute assigned to the search form.
 : **Default:** unset.
 
-`match="match type"`
+`match="match type"` <span class="footnote warning">v4.3.0+</span>
 : Set the search mode. Choose from: \\
 `exact`: search terms must exactly match the words in the article in the order given. This mode is also automatically selected if the search term is surrounded with double quotes. \\
 `any`: any of the search terms in an article will cause it to show up in the results. \\

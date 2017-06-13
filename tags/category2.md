@@ -37,7 +37,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
 
-`section="section name"`
+`section="section name"` <span class="footnote warning">v4.0.4+</span>
 : Restrict to articles from specified section(s).
 : **Values:** (comma separated list of) section name(s).
 : **Default:** unset, retrieves from all sections.
@@ -47,7 +47,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (no, use name) or `1` (yes, use title).
 : **Default:** `0`.
 
-`this_section="boolean"`
+`this_section="boolean"` <span class="footnote warning">v4.0.4+</span>
 : Whether to only link to articles from the section containing the current article.
 : **Values:** `0` (no, allow from any section) or `1` (yes).
 : **Default:** `0`.
@@ -56,11 +56,11 @@ Tag will accept the following attributes (**case-sensitive**):
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-`class="class name"`
+`class="class name"` <span class="footnote warning">v4.0.4+</span>
 : HTML `class attribute` to be applied to `wraptag`.
 : **Default:** unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
-`wraptag="tag"`
+`wraptag="tag"` <span class="footnote warning">v4.0.4+</span>
 : HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
 : **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 

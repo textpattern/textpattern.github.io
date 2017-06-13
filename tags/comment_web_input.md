@@ -31,7 +31,7 @@ Function assumes `http://` for all URLs.
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`size="integer"`
+`size="integer"` <span class="footnote warning">v4.6.0+</span>
 : HTML `size` attribute to be applied to the HTML form text `input` field.
 : **Default:** `25`.
 

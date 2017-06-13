@@ -40,7 +40,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Typical values: `301`, `302`, `304`, `307`, `401`, `403`, `404`, `408`, `410`, `503`, or any other [valid status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 : **Default:** `503`.
 
-`url="url"`
+`url="url"` <span class="footnote warning">v4.5.0+</span>
 : Redirects to the specified URL. Can be used with redirection statuses `301`, `302` and `307`.
 : **Default:** unset.
 

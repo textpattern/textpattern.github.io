@@ -47,7 +47,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Number of comments to display.
 : **Default:** `10`.
 
-`offset="integer"`
+`offset="integer"` <span class="footnote warning">v4.0.7+</span>
 : Number of comments to skip.
 : **Default:** `0`.
 

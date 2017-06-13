@@ -48,11 +48,11 @@ Tag will accept the following attributes (**case-sensitive**):
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-`class="class name"`
+`class="class name"` <span class="footnote warning">v4.5.0+</span>
 : HTML `class` to apply to the `wraptag` attribute value.
 : **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 
-`wraptag="element"`
+`wraptag="element"` <span class="footnote warning">v4.5.0+</span>
 : HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
 : **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
@@ -92,7 +92,7 @@ This would result in the following HTML output:
 
 ### Version 4.5.0
 
-`wraptag` and `class` attributes added.
+`class` and `wraptag` attributes added.
 
 ### Version 4.0.7
 

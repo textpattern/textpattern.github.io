@@ -249,7 +249,7 @@ Why might you do it? Sorting is a powerful way to group articles (e.g. by author
 ### Version 4.0.7
 
 Can be used as a container. \\
-`wraptag` and `break` attributes added.
+`break` and `wraptag` attributes added.
 
 ### Version 4.0.4
 

@@ -29,7 +29,7 @@ The **search_result_excerpt** tag is a *single* tag that will show the occurrenc
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`break="tag"`
+`break="tag"` <span class="footnote warning">v4.0.6+</span>
 : Trailing string.
 : **Default:** `...` (ellipsis).
 

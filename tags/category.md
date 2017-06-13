@@ -46,7 +46,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** (comma separated list of) section name(s).
 : **Default:** current section (for backwards compatibility).
 
-`this_section="boolean"`
+`this_section="boolean"` <span class="footnote warning">v4.0.4+</span>
 : If set to `1`, the linked category name will direct users to an category list in the current section, otherwise category list from all sections is displayed.
 : Only link to articles from the current section. The `section` attribute overrides this setting.
 : **Values:** `0` (no, all sections) or `1` (yes, this section only).
@@ -61,7 +61,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `article`, `image`, `link` or `file`.
 : **Default:** `article`.
 
-`url="boolean"`
+`url="boolean"` <span class="footnote warning">v4.0.7+</span>
 : Display plain URL or full link.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0` (display title or full link, depending on `link`).

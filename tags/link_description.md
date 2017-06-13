@@ -72,4 +72,4 @@ Other tags used: [link](link).
 
 ### Version 4.0.7
 
-Default value for `escape` attribute changed from unset to `html`.
+Default value for `escape` attribute changed from 'unset' to `html`.

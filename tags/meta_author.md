@@ -34,17 +34,17 @@ The **meta_author** tag is a *single* tag, used in the head of an individual art
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`escape="html"`
+`escape="html"` <span class="footnote warning">v4.6.0+</span>
 : Escape HTML entities such as `<`, `>` and `&`.
 : **Values:** `html` or unset.
 : **Default:** `html`.
 
-`format="boolean"`
+`format="boolean"` <span class="footnote warning">v4.6.0+</span>
 : Display as `<meta>` tag or as raw value.
 : **Values:** `meta` or unset.
 : **Default:** `meta` (display as a `<meta>` tag).
 
-`title="boolean"`
+`title="boolean"` <span class="footnote warning">v4.3.0+</span>
 : Whether to display the author's login name or real name.
 : **Values:** `0` (login name) or `1` (real name).
 : **Default:** `0`.

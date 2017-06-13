@@ -46,7 +46,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (name) or `1` (title).
 : **Default:** `0`.
 
-`url="boolean"`
+`url="boolean"` <span class="footnote warning">v4.0.7+</span>
 : Display plain URL or full link.
 : **Values:** `0` or `1`.
 : **Default:** `0` (display title or full link, depending on `link`).

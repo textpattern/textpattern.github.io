@@ -38,11 +38,11 @@ If used as a container, it must be specified as an opening and closing pair of t
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`author="author login name"`
+`author="author login name"` <span class="footnote warning">v4.3.0+</span>
 : Restrict to files with the specified author.
 : **Default:** unset.
 
-`auto_detect="string context"`
+`auto_detect="string context"` <span class="footnote warning">v4.3.0+</span>
 : List of Textpattern contexts to consider when automatically searching for files. If you wish to turn off the automatic check, set this to `auto_detect="`.
 : **Values:** `category` (to look in the URL for a category list) and/or `author` (to look in the URL for an author list).
 : **Default:** `category, author`.
@@ -55,7 +55,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Use the specified form template to process the files.
 : **Default:** `files`.
 
-`id="file ID"`
+`id="file ID"` <span class="footnote warning">v4.2.0+</span>
 : Display the specific file or list of files.
 : **Values:** (comma separated list of) file ID(s).
 : **Default:** unset.
@@ -68,11 +68,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : Number of files to skip.
 : **Default:** unset.
 
-`pageby="integer or limit"`
+`pageby="integer or limit"` <span class="footnote warning">v4.3.0+</span>
 : Number of files to jump each page. Without this attribute, you cannot navigate using the [newer](newer) and [older](older) tags. Usually you will want to track the `limit` attribute. Use `pageby="limit"` to do this, which means you will not have to amend two values if you subsequently decide to alter the `limit`.
 : **Default:** unset.
 
-`realname="author real name"`
+`realname="author real name"` <span class="footnote warning">v4.3.0+</span>
 : Restrict to files with the specified author name.
 : **Default:** unset.
 
@@ -131,10 +131,10 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 ### Version 4.3.0
 
-`pageby` attribute added to enable paging via [newer](newer) and [older](older). \\
 `author` attribute added. \\
-`realname` attribute added. \\
-`auto_detect` attribute added to allow automatic (URL-based) contextual listings.
+`auto_detect` attribute added to allow automatic (URL-based) contextual listings. \\
+`pageby` attribute added to enable paging via [newer](newer) and [older](older). \\
+`realname` attribute added.
 
 ### Version 4.2.0
 

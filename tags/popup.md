@@ -46,7 +46,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
 
-`class="class name"`
+`class="class name"` <span class="footnote warning">v4.3.0+</span>
 : HTML `class` to apply to the `wraptag` attribute value.
 : **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
 

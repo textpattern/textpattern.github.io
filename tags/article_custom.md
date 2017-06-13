@@ -305,11 +305,11 @@ Outputs articles specified by list of IDs, in the order given in the `sort` fiel
 
 Can be used as a container tag. \\
 `id` attribute can take a comma-separated list of IDs. \\
-`wraptag` and `break` attributes added.
+`break` and `wraptag` attributes added.
 
 ### Version 4.0.6
 
-Support added for comma separated lists for `section`, `category` and `author` attributes.
+Support added for comma separated lists for `author`, `category` and `section` attributes.
 
 ### Version 4.0.4
 

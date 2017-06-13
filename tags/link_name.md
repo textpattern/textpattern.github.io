@@ -50,4 +50,4 @@ Other tags used: [link_url](link_url).
 
 ### Version 4.0.7
 
-Default value for `escape` attribute changed from unset to `html`.
+Default value for `escape` attribute changed from 'unset' to `html`.

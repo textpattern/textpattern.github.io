@@ -29,7 +29,7 @@ The **file_download_name** tag is a *single* tag that Textpattern will replace w
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`title="boolean"`
+`title="boolean"` <span class="footnote warning">v4.3.0+</span>
 : Whether to display the file download name or its title.
 : **Values:** `0` (name), or `1` (title).
 : **Default:** `0`.

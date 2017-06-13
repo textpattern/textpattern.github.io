@@ -38,7 +38,7 @@ The tag will execute the contained statements if one or more custom fields for a
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`match="match type"`
+`match="match type"` <span class="footnote warning">v4.3.0+</span>
 : How you wish your value to be tested. Choose from: \\
 `exact`: value text must exactly match the custom field. \\
 `any`: checks if any of the given comma-separated list of `value`s occur anywhere in the custom field. \\
@@ -49,7 +49,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `name="field name"`
 : The custom field name you wish to check.
 
-`separator="character"`
+`separator="character"` <span class="footnote warning">v4.3.0+</span>
 : If you wish to treat your custom field as a list of items - so that each item is a discrete entity and tested separately when using `any` or `all` matching - specify the delimiter that you use in the custom field. This attribute is ignored if using `exact` or `pattern` matching.
 
 `value="field value"`
