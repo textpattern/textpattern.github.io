@@ -14,7 +14,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 <div class="layout-container">
 <div class="layout-3col">
-<img alt="Installation handling" src="/img/index-introduction.jpg" srcset="/img/index-introduction@2x.jpg 2x, /img/index-introduction.jpg 1x">
+<img width="200" height="200" alt="Installation handling" src="/img/index-introduction.jpg" srcset="/img/index-introduction@2x.jpg 2x, /img/index-introduction.jpg 1x">
 
 ### Installation handling
 
@@ -26,7 +26,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img alt="Site administration" src="/img/index-administration.jpg" srcset="/img/index-administration@2x.jpg 2x, /img/index-administration.jpg 1x">
+<img width="200" height="200" alt="Site administration" src="/img/index-administration.jpg" srcset="/img/index-administration@2x.jpg 2x, /img/index-administration.jpg 1x">
 
 ### Site administration
 
@@ -36,7 +36,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img alt="Core tags" src="/img/index-tags.jpg" srcset="/img/index-tags@2x.jpg 2x, /img/index-tags.jpg 1x">
+<img width="200" height="200" alt="Core tags" src="/img/index-tags.jpg" srcset="/img/index-tags@2x.jpg 2x, /img/index-tags.jpg 1x">
 
 ### Core tags
 
@@ -47,7 +47,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img alt="Design" src="/img/index-build.jpg" srcset="/img/index-build@2x.jpg 2x, /img/index-build.jpg 1x">
+<img width="200" height="200" alt="Design" src="/img/index-build.jpg" srcset="/img/index-build@2x.jpg 2x, /img/index-build.jpg 1x">
 
 ### Design
 
@@ -57,7 +57,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img alt="Development" src="/img/index-development.jpg" srcset="/img/index-development@2x.jpg 2x, /img/index-development.jpg 1x">
+<img width="200" height="200" alt="Development" src="/img/index-development.jpg" srcset="/img/index-development@2x.jpg 2x, /img/index-development.jpg 1x">
 
 ### Development
 
@@ -66,7 +66,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img alt="FAQs" src="/img/index-faqs.jpg" srcset="/img/index-faqs@2x.jpg 2x, /img/index-faqs.jpg 1x">
+<img width="200" height="200" alt="FAQs" src="/img/index-faqs.jpg" srcset="/img/index-faqs@2x.jpg 2x, /img/index-faqs.jpg 1x">
 
 ### FAQs
 
