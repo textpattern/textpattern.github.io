@@ -168,6 +168,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * esq/[cain-mi](https://forum.textpattern.com/profile.php?id=5716)
 * etc/[etc](https://forum.textpattern.com/profile.php?id=96820)
 * etz/Etz Haim
+* ext ('extension' - a module that hooks into another plugin)
 
 </div>
 
