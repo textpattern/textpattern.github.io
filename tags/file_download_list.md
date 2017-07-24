@@ -43,7 +43,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `auto_detect="string context"` <span class="footnote warning">v4.3.0+</span>
-: List of Textpattern contexts to consider when automatically searching for files. If you wish to turn off the automatic check, set this to `auto_detect="`.
+: List of Textpattern contexts to consider when automatically searching for files. If you wish to turn off the automatic check, set this to `auto_detect=""`.
 : **Values:** `category` (to look in the URL for a category list) and/or `author` (to look in the URL for an author list).
 : **Default:** `category, author`.
 
