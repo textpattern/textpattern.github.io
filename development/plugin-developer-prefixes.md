@@ -126,6 +126,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * cnk/chriloi
 * cnn/cnewkirk
 * cno/[cnolle](https://forum.textpattern.com/profile.php?id=454)
+* com (used for plugins resulting from community collaboration)
 * csb/csandberg
 * <span class="warning">css</span>
 * cxc/[cXc](https://forum.textpattern.com/profile.php?id=106730)
@@ -167,6 +168,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * esq/[cain-mi](https://forum.textpattern.com/profile.php?id=5716)
 * etc/[etc](https://forum.textpattern.com/profile.php?id=96820)
 * etz/Etz Haim
+* ext ('extension' - a module that hooks into another plugin)
 
 </div>
 
@@ -531,7 +533,6 @@ None at this time.
 
 <div class="layout-text4col">
 
-* zcr/community (zem_contact modules)
 * zem/zem
 * zen/zenigy
 * zmk/maxk
