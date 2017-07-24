@@ -44,10 +44,10 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset, which determines whether ''any'' category listing is being viewed.
 
 `type="context"` <span class="footnote warning">v4.3.0+</span>
-: Textpattern context to check against. You can choose from the following contexts (set to empty to include all contexts): //
-`article` is this an article category list? //
-`image` is this an image category list? //
-`file` is this a file category list? //
+: Textpattern context to check against. You can choose from the following contexts (set to empty to include all contexts): \\
+`article` is this an article category list? \\
+`image` is this an image category list? \\
+`file` is this a file category list? \\
 `link` is this a link category list?
 : **Default:** `article`.
 
