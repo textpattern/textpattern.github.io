@@ -40,9 +40,9 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### Core tags
 
+* [Tags reference](https://docs.textpattern.io/tags/) (the complete suite)
 * [Tag use basics](https://docs.textpattern.io/tags/tag-basics/) (a good place to start)
   * [Parsing tag attributes](https://docs.textpattern.io/tags/tag-basics/parsing-tag-attributes) (sorcery)
-* [Tags reference](https://docs.textpattern.io/tags/) (the complete suite)
 * [Tags in development](https://docs.textpattern.io/tags/tags-in-development) (upcoming tags)
 
 </div>
