@@ -12,65 +12,35 @@ Admin-side themes allow Textpattern administrators (and publishers) to choose a 
 
 The core admin-side theme options are:
 
-* Classic
 * Hive
 * Hive (Flat Neutral)
+* Classic
 
 To change the admin-side theme, go to the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel), and within the **Admin** section select the theme you want from the 'Admin-side theme' control.
 
-Administrators can also allow account holders to choose their own
-admin-side theme on an individual basis, which is done by installing the
-[smd_admin_themes](http://textpattern.org/plugins/1096/smd_admin_themes)
-plugin.
+Administrators can also allow account holders to choose their own admin-side theme on an individual basis, which is done by installing the [smd_admin_themes](https://github.com/Bloke/smd_admin_themes) plugin.
 
-Further, if a 260Ã - 150px image of your theme is added into **your
-theme's directory** as either “screenshot.png”, “screenshot.jpg”,
-“screenshot.gif” or whatever, account holders can select the theme
-visually rather than via the admin control.
-
-That's all great. But it gets even better by installing your own
-admin-side themes and making them available via the options noted above.
-You can choose to add an admin theme from from [Textpattern
-Themes](http://textgarden.org), or create one of your own.
+That's all great. But it gets even better by installing your own admin-side themes and making them available via the options noted above. You can choose to add an existing admin theme, or create one of your own.
 
 From hereon we talk about **creating a new admin theme**.
 
-### Creating admin themes {#creating-admin-themes .sectionedit1#creating_admin_themes}
+## Creating admin themes
 
 There are two ways to create themes: from scratch or by *inheriting*
 much of the theme code from one of the existing core admin themes. Let's
 start with the basics of doing it by scratch.
 
-#### Creating an admin from scratch {#creating_an_admin_from_scratch}
+### Creating an admin from scratch
 
-Your new theme will have a specific file structure and name, as well
-particular code patterns.
+Your new theme will have a specific file structure and name, as well particular code patterns.
 
-##### File structure and name {#file_structure_and_name}
+#### File structure and name
 
-Every theme will be created within its own folder, which will then be
-uploaded to
+Every theme will be created within its own folder, which will then be uploaded to `/textpattern/admin-themes/`. Thus, a theme named `foo_theme` will be stored as `/textpattern/admin-themes/foo_theme/`.
 
-    ../textpattern/theme/
+Within your folder will be the required PHP file, and any additional subdirectories and support files like CSS and JavaScript files, as needed.
 
-. Thus, a theme named
-
-    foo_theme
-
-will be stored as
-
-    ../textpattern/theme/foo_theme/
-
-.
-
-Within your folder will be the required .php file, and any additional
-subdirectories and support files like style sheets and library files, as
-needed.
-
-Your folder and the principle .php file inside it must have a common but
-unique name; common in that they will be the same, but unique in that
-they will not share the same name with any other admin theme used in
-that instance of Textpattern. **No name clashes allowed!**
+Your folder and the principle PHP file inside it must have a common but unique name; common in that they will be the same, but unique in that they will not share the same name with any other admin theme used in that instance of Textpattern. **No name clashes allowed!**
 
 For example:
 
@@ -235,12 +205,4 @@ with
 
 .
 
-**Note:** If you install a theme that itself inherits from another
-theme, *they must both be installed for the theme to function*. Errors
-will likely result if the source theme is disabled or removed. To avoid
-such problems, always inherit from the core admin themes.
-
-#### Forum notes on extending admin themes {#forum_notes_on_extending_admin_themes}
-
--   <https://forum.textpattern.com/viewtopic.php?id=39423>
-
+**Note:** If you install a theme that itself inherits from another theme, *they must both be installed for the theme to function*. Errors will likely result if the source theme is disabled or removed. To avoid such problems, always inherit from the core admin themes.
