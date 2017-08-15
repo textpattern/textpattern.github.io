@@ -3,19 +3,6 @@ layout: null
 ---
 {% assign first = true %}
 [
-{% for post in site.posts %}
-    {% if post.title != null and post.title != empty %}
-    {% unless first %},{% endunless %}{
-        "title": {{post.title | jsonify}},
-        "content": {{post.content | markdownify | strip_html | jsonify}},
-        "link": "{{ site.baseurl }}{{ post.url }}",
-        "date": "{{ post.date }}",
-        "excerpt": "{{ post.snippet }}",
-        "search_omit": "{{ post.search_omit }}"
-    }
-    {% assign first = false %}
-    {% endif %}
-{% endfor %}
 {% for page in site.pages %}
     {% if page.title != null and page.title != empty %}
     {% unless first %},{% endunless %}{
