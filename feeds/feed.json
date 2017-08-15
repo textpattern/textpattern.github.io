@@ -2,6 +2,7 @@
 layout: null
 ---
 {% assign first = true %}
+[
 {% for collection in site.collections %}
     {% for item in collection %}
         {% for item in site.item.label %}
@@ -45,3 +46,4 @@ layout: null
     {% assign first = false %}
     {% endif %}
 {% endfor %}
+]
