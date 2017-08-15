@@ -1,7 +1,7 @@
 url: https://docs.textpattern.io
 timezone: Europe/London
 permalink: /:categories/:title
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 author: The Textpattern Development Team and contributors
