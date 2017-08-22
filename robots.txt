@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: /search/
 Sitemap: https://docs.textpattern.io/sitemap.xml
-Host: docs.textpattern.io
