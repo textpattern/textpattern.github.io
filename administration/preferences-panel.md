@@ -397,7 +397,7 @@ The [blocklist](https://en.wikipedia.org/wiki/Blacklisting) providers entered he
 
 Additionally, checks on approved comments will take place when an article is viewed on the front-side. If you encounter slowness when displaying articles with comments, consider disabling spam blocklists by removing the blocklist address(es).
 
-You can enter a list of domain names here, separated by commas. Potential blocklists can be found via [dmoz](https://www.dmoz.org/Computers/Internet/E-mail/Spam/Blacklisting/Lists/), but please note that it is your responsibility to ensure blocklists are fit for purpose.
+You can enter a list of domain names here, separated by commas. Please note that it is your responsibility to ensure blocklists are fit for purpose.
 
 ## Custom fields preferences
 
