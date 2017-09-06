@@ -1,6 +1,6 @@
 h1. Can I use Textpattern for a photoblog? [todo]
 
-Sure.  Textpattern has an "Article image":http://textpattern.com/faq/109/article_images-arent-working feature, which lets you attach a photo to each article.
+Sure.  Textpattern has an "Article image":https://textpattern.com/faq/109/article_images-arent-working feature, which lets you attach a photo to each article.
 
 All you need to do is use an article form that includes the @<txp:article_image />@ tag.  Each time you want to post a new image, create a new article with the image attached.
 

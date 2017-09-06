@@ -64,7 +64,7 @@ The plugin itself is a text (`.txt`) file. It usually has a header stating the n
 # Recommended load order: 5
 
 # .....................................................................
-# This is a plugin for Textpattern - http://textpattern.com/
+# This is a plugin for Textpattern - https://textpattern.com/
 # To install: textpattern > admin > plugins
 # Paste the following text into the 'Install plugin' box:
 # .....................................................................

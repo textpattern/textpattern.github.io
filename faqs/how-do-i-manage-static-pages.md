@@ -28,6 +28,6 @@ The most recent Sticky article will be displayed as the page contents when you v
 
 To create additional static pages, you can skip steps 1 and 2, and reuse the same @static_page@ template.
 
-For the best way to create links to your static pages, see "How do I create navigation links?":http://textpattern.com/faq/92/how-do-i-create-navigation-links
+For the best way to create links to your static pages, see "How do I create navigation links?":https://textpattern.com/faq/92/how-do-i-create-navigation-links
 
 For a more detailed description, read "Managing Static Pages With Textpattern":http://thresholdstate.com/articles/3667/managing-static-pages

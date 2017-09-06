@@ -24,14 +24,14 @@ bc. <txp:if_article_list>
 
 h4. ...make an "About" page?
 
-FAQ: "Managing Static Pages":http://textpattern.com/faq/31/how-do-i-manage-static-pages
+FAQ: "Managing Static Pages":https://textpattern.com/faq/31/how-do-i-manage-static-pages
 
 
 h4. ...make a reusable sidebar, header or footer?
 
 With the "txp:output_form":http://textbook.textpattern.net/wiki/index.php?title=output_form tag.
 
-FAQ: "How do I reuse chunks of HTML?":http://textpattern.com/faq/32/how-do-i-reuse-chunks-of-html
+FAQ: "How do I reuse chunks of HTML?":https://textpattern.com/faq/32/how-do-i-reuse-chunks-of-html
 
 
 h4. ...show a list of recent articles or comments in a sidebar?
@@ -40,7 +40,7 @@ With the "txp:recent_articles":http://textbook.textpattern.net/wiki/index.php?ti
 
 For more control over a list of recent articles, use "txp:article_custom":http://textbook.textpattern.net/wiki/index.php?title=article_custom instead.
 
-FAQ: "How do I change the output of txp:recent_articles?":http://textpattern.com/faq/26/change-the-output-of-txp%3Arecent_articles
+FAQ: "How do I change the output of txp:recent_articles?":https://textpattern.com/faq/26/change-the-output-of-txp%3Arecent_articles
 
 
 h4. ...show a short list of articles or article links in a sidebar?
@@ -69,7 +69,7 @@ bc.. <txp:if_article_list>
 	<txp:body />
 </txp:if_article_list>
 
-p. FAQ: "How do I show only an excerpt in article lists?":http://textpattern.com/faq/24/how-do-i-show-only-an-excerpt-in-article-lists
+p. FAQ: "How do I show only an excerpt in article lists?":https://textpattern.com/faq/24/how-do-i-show-only-an-excerpt-in-article-lists
 
 Excerpts automatically generated from the article body are possible through "plugins (Textpattern Resources: excerpts)":http://textpattern.org/categoryarchive/?c=excerpts.
 
@@ -133,14 +133,14 @@ h4. ...show a unique intro paragraph on each section page?
 
 Post a "Sticky" article in each section containing the paragraph for that section, and display it with a @<txp:article status="sticky" />@ tag.
 
-FAQ: "How do I keep a post at the top of the page?":http://textpattern.com/faq/84/how-do-i-keep-a-post-at-the-top-of-the-page
+FAQ: "How do I keep a post at the top of the page?":https://textpattern.com/faq/84/how-do-i-keep-a-post-at-the-top-of-the-page
 
 
 h4. ...show the same intro paragraph on more than one section page?
 
 Post a "Sticky" article containing the text, and display it with the tag @<txp:article_custom id="123" />@, where @123@ is the ID number of the sticky article.  Enclose it with the @<txp:if_article_list>@ tag if necessary.
 
-FAQ: "How do I keep a post at the top of the page?":http://textpattern.com/faq/84/how-do-i-keep-a-post-at-the-top-of-the-page
+FAQ: "How do I keep a post at the top of the page?":https://textpattern.com/faq/84/how-do-i-keep-a-post-at-the-top-of-the-page
 
 
 h4. ...show a unique banner image or similar on a particular section page?

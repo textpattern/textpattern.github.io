@@ -44,7 +44,7 @@ An *article form* is used by the @<txp:article />@ tag to determine how to displ
 
 Like *page templates*, *forms* can contain Textpattern tags.  The *article form* will typically include the @<txp:title />@ and @<txp:body />@ tags, for example, which display the article's title and body respectively.
 
-You can use *misc forms* for snippets of HTML code you use on each page, such as a header or footer.  ("read how":http://textpattern.com/faq/32/how-do-i-reuse-chunks-of-html)
+You can use *misc forms* for snippets of HTML code you use on each page, such as a header or footer.  ("read how":https://textpattern.com/faq/32/how-do-i-reuse-chunks-of-html)
 
 Forms are managed in the *presentation > forms* administration tab.
 
@@ -68,4 +68,4 @@ The *content > images* tab is used to upload and manage images that are displaye
 
 The *content > files* tab is used to upload and manage files that are made available for users to download.  A number of "file_download":http://textbook.textpattern.net/wiki/index.php?title=Alphabetical_Tag_Listing template tags are available for creating file download lists.
 
-Alternatively, you can upload and manage images or files manually using FTP and similar programs.  You'll have to use hard-coded HTML and URLs to reference these files, however.  (Be careful when using "relative URLs":http://textpattern.com/faq/77/images-are-broken-on-certain-pages).
+Alternatively, you can upload and manage images or files manually using FTP and similar programs.  You'll have to use hard-coded HTML and URLs to reference these files, however.  (Be careful when using "relative URLs":https://textpattern.com/faq/77/images-are-broken-on-certain-pages).

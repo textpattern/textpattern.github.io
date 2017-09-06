@@ -1,4 +1,4 @@
-\nMake sure you have the minimum "system requirements":http://textpattern.com/about/119/system-requirements to run Textpattern.
+\nMake sure you have the minimum "system requirements":https://textpattern.com/about/119/system-requirements to run Textpattern.
 
 Then start with the _simple instructions_ below. If you have trouble (unlikely), then look at the detailed instructions further down the page. Upgrading instructions are at the very end.
 
@@ -6,7 +6,7 @@ h3(sectionedit1#simple_installation_instructions). Simple installation instructi
 
 The user-friendly version:
 
-# "Download":http://textpattern.com/download/ the latest _.zip/.gzip_ package (currently version "txp_current_version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version).
+# "Download":https://textpattern.com/download/ the latest _.zip/.gzip_ package (currently version "txp_current_version":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=txp_current_version).
 # Create a new folder (_e.g._, “txp-unzipped”) on your local drive, move the zip file into it, and unpack "the file tree contents":https://github.com/textpattern/textpattern.
 # Create an FTP connection to your server (sometimes SFTP is necessary, depending on your host requirements), and move the unpacked file tree to your web domain root (or subdirectory if you plan to run it that way).
 # Create a MySQL database and the associated user and password for it.

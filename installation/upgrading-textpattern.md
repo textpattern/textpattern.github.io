@@ -25,7 +25,7 @@ You may find abbreviated upgrade instructions in the `README.txt` file of every 
 
 ## Download latest stable release
 
-Go to [textpattern.com/download](http://textpattern.com/download) and download the zip package of the latest version to your local machine. Unzip the package into a folder on your local drive. Give the folder a meaningful name like `textpattern-4.6.0`, for example.
+Go to [textpattern.com/download](https://textpattern.com/download) and download the zip package of the latest version to your local machine. Unzip the package into a folder on your local drive. Give the folder a meaningful name like `textpattern-4.6.0`, for example.
 
 ## Backup
 

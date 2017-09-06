@@ -1,6 +1,6 @@
 h1. How do I create navigation links? [todo]
 
-*Sections* are usually the topmost navigation elements of your website (more on site structure "here":http://textpattern.com/faq/78/ive-installed-textpattern-now-what).    If you want a simple, automatic list of links to sections, use the "section_list":http://textpattern.net/wiki/index.php?title=section_list tag:
+*Sections* are usually the topmost navigation elements of your website (more on site structure "here":https://textpattern.com/faq/78/ive-installed-textpattern-now-what).    If you want a simple, automatic list of links to sections, use the "section_list":http://textpattern.net/wiki/index.php?title=section_list tag:
 
 bq. @<txp:section_list wraptag="ul" break="li" />@
 
@@ -19,7 +19,7 @@ bq. @<ul>@
 @    <txp:section wraptag="li" link=1 title=1 name="contact" />@
 @    </ul>@
 
-If you've created "static pages":http://textpattern.com/faq/31/how-do-i-manage-static-pages, like an _about_ or _contact_ page, you can link to them by linking to the associated section:
+If you've created "static pages":https://textpattern.com/faq/31/how-do-i-manage-static-pages, like an _about_ or _contact_ page, you can link to them by linking to the associated section:
 
 bq. @<txp:section link=1 title=1 name="about" />@
 @<txp:section link=1 title=1 name="contact" />@

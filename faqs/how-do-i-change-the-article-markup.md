@@ -4,7 +4,7 @@ By default, Textpattern articles are written in _Textile_, the Humane Web Text G
 
 bq. @&#42;bold*@ becomes *bold*
 @&#95;emphasis_@ becomes _emphasis_
-@&#34;link":http://textpattern.com/@ becomes "link":http://textpattern.com/
+@&#34;link":https://textpattern.com/@ becomes "link":https://textpattern.com/
 
 You can read more about Textile "here":http://textism.com/tools/textile/, and try it out for yourself.
 

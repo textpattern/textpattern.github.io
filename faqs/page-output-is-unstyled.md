@@ -10,13 +10,13 @@ If the link appears correct, try pasting the CSS url directly into the address b
 
 *404 not found* - your @textpattern/css.php@ file is missing.
 
-*PHP error* - if there's a PHP error at the beginning of the CSS output, check the "FAQ":http://textpattern.com/faq/?c=errors-warnings-and-notices for more information.
+*PHP error* - if there's a PHP error at the beginning of the CSS output, check the "FAQ":https://textpattern.com/faq/?c=errors-warnings-and-notices for more information.
 
 *HTML* - if the CSS URL displays a HTML page instead of CSS code, you most likely have a missing css.php file, and/or an overzealous .htaccess RewriteRule.  Try disabling .htaccess and switching to "messy" URL mode.
 
 *Blank page* - switch the Production Status to Testing and reload.
 
-*If you just updated and expect to see your site here..* - if the CSS output includes this message, you "haven't updated the css.php file":http://textpattern.com/faq/126/error-publishphp-cannot-be-called-directly correctly when upgrading.
+*If you just updated and expect to see your site here..* - if the CSS output includes this message, you "haven't updated the css.php file":https://textpattern.com/faq/126/error-publishphp-cannot-be-called-directly correctly when upgrading.
 
 If you're seeing _some_ CSS styling, but not the style you'd expect, make sure you've applied the correct stylesheet to your section (Textpattern > presentation > sections, "Uses style:").
 

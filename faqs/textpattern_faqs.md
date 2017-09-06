@@ -1,5 +1,5 @@
 \\nAs long as this page is under development, we recommend visiting the
-[FAQ pages on textpattern.com](http://textpattern.com/faq/).
+[FAQ pages on textpattern.com](https://textpattern.com/faq/).
 
 ### How to display a caption with an image {#how-to-display-a-caption-with-an-image .sectionedit1#how_to_display_a_caption_with_an_image}
 

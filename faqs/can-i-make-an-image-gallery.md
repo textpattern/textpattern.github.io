@@ -1,6 +1,6 @@
 h1. Can I make an image gallery? [todo]
 
-If you want to display images with descriptions or comments, see "Can I use Textpattern for a photoblog?":http://textpattern.com/faq/110/can-i-use-textpattern-for-a-photoblog
+If you want to display images with descriptions or comments, see "Can I use Textpattern for a photoblog?":https://textpattern.com/faq/110/can-i-use-textpattern-for-a-photoblog
 
 You can construct a simple image gallery like this:
 

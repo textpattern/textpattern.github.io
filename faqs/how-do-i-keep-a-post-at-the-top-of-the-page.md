@@ -15,7 +15,7 @@ bq. @<txp:article_custom status="sticky" id="123" />@
 
 ..where _123_ is the ID number of the article you want to show.  You can use this to show a sticky article in a section other than the one it belongs to, or to pin a specific article to the front page of your site.  The _article_custom_ tag ignores the URL, so the selected section has no effect.
 
-A commonly requested variation is to display an introduction on a section page (or the front page), with headlines or manually crafted links to individual article pages.  For that, you can combine Sticky articles with the conditional tag method outlined "in this faq":http://textpattern.com/faq/24/how-do-i-show-only-an-excerpt-in-article-lists: 
+A commonly requested variation is to display an introduction on a section page (or the front page), with headlines or manually crafted links to individual article pages.  For that, you can combine Sticky articles with the conditional tag method outlined "in this faq":https://textpattern.com/faq/24/how-do-i-show-only-an-excerpt-in-article-lists: 
 
 bq. @<txp:if_article_list>@
 @<!-- section page: display the sticky article -->@

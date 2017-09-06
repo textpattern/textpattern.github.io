@@ -4,4 +4,4 @@ Use @<txp:posted format="%Y-%m-%d" />@ or similar. See the "PHP manual":http://u
 
 Please note that Windows supports only a "limited subset":http://msdn2.microsoft.com/en-us/library/fe06s4ak of format specifiers.
 
-For information about displaying times and dates in different languages, see "How do I display time and date formats in my local language?":http://textpattern.com/faq/30/how-do-i-display-time-and-date-formats-in-my-local-language.
+For information about displaying times and dates in different languages, see "How do I display time and date formats in my local language?":https://textpattern.com/faq/30/how-do-i-display-time-and-date-formats-in-my-local-language.

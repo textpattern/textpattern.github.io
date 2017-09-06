@@ -15,7 +15,7 @@ On this page:
 
 ## Install the software for the first time
 
-1. [Download](http://textpattern.com/download) the latest `.zip` or `.gzip` package.
+1. [Download](https://textpattern.com/download) the latest `.zip` or `.gzip` package.
 2. Create a new folder (e.g. `txp-unzipped`) on your local drive, move the zip file into it, and unpack [the file tree contents](https://github.com/textpattern/textpattern).
 3. Create an FTP connection to your server (sometimes SFTP is necessary, depending on your host requirements), and move the unpacked file tree to your web domain root (or subdirectory, if you plan to run it that way).
 4. Create a MySQL database and the associated user and password for it.

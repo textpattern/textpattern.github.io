@@ -8,7 +8,7 @@ Make sure you use @<txp:php>@ ... @</txp:php>@ instead of @<?php ... ?>@ or @<? 
 
 There is an Advanced Preference that can be used to disable PHP code.
 
-PHP code will also work inside an article body if Textpattern "is configured to allow it":http://textpattern.com/faq/35/can-i-use-php-code-in-article-bodies. If you are using Textile, be sure to escape it:
+PHP code will also work inside an article body if Textpattern "is configured to allow it":https://textpattern.com/faq/35/can-i-use-php-code-in-article-bodies. If you are using Textile, be sure to escape it:
 
 bc. notextile. <txp:php> // your PHP code </txp:php>
 

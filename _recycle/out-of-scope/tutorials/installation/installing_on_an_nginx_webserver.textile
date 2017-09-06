@@ -16,7 +16,7 @@ chkconfig nginx on chkconfig php-fpm on
 
 h4(#textpattern). Textpattern
 
-# "Download":http://textpattern.com/download/ the latest release package from the Textpattern (tested with 4.4.1 but any version should work just fine). Select either _.gzip_ or _.zip_ as you prefer.
+# "Download":https://textpattern.com/download/ the latest release package from the Textpattern (tested with 4.4.1 but any version should work just fine). Select either _.gzip_ or _.zip_ as you prefer.
 # It is assumed that the unzipped contents of the file are available in /var/www/html/textpattern
 
 h3(sectionedit2#set_up_nginx). Set up nginx

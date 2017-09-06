@@ -23,7 +23,7 @@ In your *page template*, use @<txp:article form="default" listform="excerpt" />@
 
 This means that the *default* form will be used for full article pages, and the *excerpt* form will be used for list pages. To change the appearance of either page (e.g. to remove the excerpt from the full article page), edit the appropriate form.
 
-(For more information the article tag and forms, see "'How do I select which form is used to display articles?'":http://textpattern.com/faq/22/how-do-i-select-which-form-is-used-to-display-articles)
+(For more information the article tag and forms, see "'How do I select which form is used to display articles?'":https://textpattern.com/faq/22/how-do-i-select-which-form-is-used-to-display-articles)
 
 *Method 2:*
 

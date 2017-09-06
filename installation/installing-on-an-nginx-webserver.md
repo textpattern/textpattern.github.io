@@ -32,7 +32,7 @@ $ chkconfig php-fpm on
 
 ### Textpattern
 
-1. [Download](http://textpattern.com/download) the latest release package from the Textpattern download page. Select either `.gzip` or `.zip`, as you prefer.
+1. [Download](https://textpattern.com/download) the latest release package from the Textpattern download page. Select either `.gzip` or `.zip`, as you prefer.
 2. It is assumed for this tutorial that the unzipped contents of the file are available in `/var/www/html/textpattern`.
 
 ## Setting up Nginx

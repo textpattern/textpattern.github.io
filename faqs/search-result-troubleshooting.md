@@ -4,7 +4,7 @@ Some common issues with searching:
 
 *Blank page*
 
-If your search results page is _completely_ blank (a zero byte page), the problem is probably a fatal error that is not displayed because of your _Production Status_ setting.  See "this FAQ":http://textpattern.com/faq/74/blank-page-after-editing-a-page-template for more information.
+If your search results page is _completely_ blank (a zero byte page), the problem is probably a fatal error that is not displayed because of your _Production Status_ setting.  See "this FAQ":https://textpattern.com/faq/74/blank-page-after-editing-a-page-template for more information.
 
 *Page layout is displayed, but no articles*
 
@@ -19,6 +19,6 @@ specify @searchall=0@ - this will force it to look for articles in the @search@ 
 
 *Wrong articles are displayed*
 
-If your search results page displays the wrong articles - the same articles as your front page, for example - it's probably because you're using the @<txp:article_custom />@ tag instead of @<txp:article />@.  article_custom is "context insensitive":http://textpattern.com/faq/85/what-does-article_custom-do - that is, it always displays the same list of articles, regardless of the URL or query parameters.
+If your search results page displays the wrong articles - the same articles as your front page, for example - it's probably because you're using the @<txp:article_custom />@ tag instead of @<txp:article />@.  article_custom is "context insensitive":https://textpattern.com/faq/85/what-does-article_custom-do - that is, it always displays the same list of articles, regardless of the URL or query parameters.
 
 Either change your page template to use @<txp:article />@ instead, or use a separate section and template to display the search results.

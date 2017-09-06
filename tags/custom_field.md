@@ -77,7 +77,7 @@ HTML returned would be:
 
 ### Example 2: Power A linklog
 
-With an article title of `Textpattern`, an excerpt of `Textpattern is awesome!`, a custom field named `link` containing `http://textpattern.com/`, and an 'article' type form like the following:
+With an article title of `Textpattern`, an excerpt of `Textpattern is awesome!`, a custom field named `link` containing `https://textpattern.com/`, and an 'article' type form like the following:
 
 ~~~ html
 <article class="linklog-entry">
@@ -98,7 +98,7 @@ HTML returned would be:
 ~~~ html
 <article class="linklog-entry">
     <h1>
-        <a href="http://textpattern.com/">Textpattern</a>
+        <a href="https://textpattern.com/">Textpattern</a>
     </h1>
     <p>
         <time datetime="2005-08-14T15:08:12Z" itemprop="datePublished">14 Aug 2005</time>

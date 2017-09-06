@@ -16,4 +16,4 @@ The MySQL manual has a section on "checking and repairing tables":http://dev.mys
 
 There is also "a Textpattern plugin (rss_admin_db_manager)":http://www.wilshireone.com/textpattern-plugins/rss_admin_db_manager which can allow you to repair tables in your Textpattern database.
 
-In severe cases a corrupt table can cause data loss.  You'll need to restore a "backup":http://textpattern.com/faq/107/how-do-i-back-up-textpattern if this is the case.
+In severe cases a corrupt table can cause data loss.  You'll need to restore a "backup":https://textpattern.com/faq/107/how-do-i-back-up-textpattern if this is the case.

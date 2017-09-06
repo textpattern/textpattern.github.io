@@ -28,6 +28,6 @@ h4(#command_line_approach). Command Line Approach
 # Install _svn_ using "Darwin Ports":http://dawrinports.opendarwin.org or Fink.
 # Run
 
-bc. svn http://textpattern.com/svn/repos/current/path/to/your/TxP/directory/
+bc. svn https://textpattern.com/svn/repos/current/path/to/your/TxP/directory/
 
 

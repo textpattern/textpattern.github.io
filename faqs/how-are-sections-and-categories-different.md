@@ -10,4 +10,4 @@ Following the newspaper example, categories might be used to organize articles i
 
 Categories can be used independently (to list articles from all sections in the National category, for example), or combined with sections (to list articles in section Politics with category World).
 
-For a more detailed explanation of how Textpattern organizes content, read "I've installed Textpattern. Now what?":http://textpattern.com/faq/78/ive-installed-textpattern-now-what
+For a more detailed explanation of how Textpattern organizes content, read "I've installed Textpattern. Now what?":https://textpattern.com/faq/78/ive-installed-textpattern-now-what

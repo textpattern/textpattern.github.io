@@ -19,7 +19,7 @@ h4(#terms_introduced_in_this_article). Terms introduced in this article
  Context for a particular category. ** Image-category context **
  Context for a particular image category
 
-*Context* is a term that crops up often in "Textpattern":http://textpattern.com/-related discussion and articles. “Context” has a special meaning in Textpattern (hereafter abbreviated “Txp”). It is, arguably, the key to understanding how Txp works. By extension, it is the key to understanding how to work _with_ Txp and to get the most out of it.
+*Context* is a term that crops up often in "Textpattern":https://textpattern.com/-related discussion and articles. “Context” has a special meaning in Textpattern (hereafter abbreviated “Txp”). It is, arguably, the key to understanding how Txp works. By extension, it is the key to understanding how to work _with_ Txp and to get the most out of it.
 
 This article aims to help all Txp users gain a better understanding of context. The focus is on how context influences content selection and information architecture, both globally and at the level of individual Txp tags. Txp beginners may find it heavy going, and may want to skim this part and skip ahead to the "demo":http://ipsedixit.net/context_demo/ to get a feel for how context works in practice, then return here for a more thorough reading.
 
