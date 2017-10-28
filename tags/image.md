@@ -25,7 +25,9 @@ On this page:
 
 The **image** tag is a *single* tag that Textpattern will replace with the `<img src="...">` HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern [Images administration panel](https://docs.textpattern.io/administration/images-panel).
 
-By default, the tag is context-sensitive: if an `id` or `name` attribute is not specified, it can be used inside an [images](images) tag or form to output an `<img src="...">` HTML tag matching the current image.
+The image tag outputs the alt, width, and height attributes by default. If you don't need to set image dimensions (e.g. if you use `width: 100%` in your CSS), you can 'turn off' the effect of the width and height attributes by using `width="0" height="0"`.
+
+The tag is also context-sensitive: if an `id` or `name` attribute is not specified, it can be used inside an [images](images) tag or form to output an `<img src="...">` HTML tag matching the current image.
 
 ## Attributes
 
