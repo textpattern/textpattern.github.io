@@ -4,6 +4,7 @@ See the [built website](https://docs.textpattern.io). This is the new user docum
 
 On this page are guidelines for doc authors:
 
+* [Contributing documentation](#contributing-documentation)
 * [Filename (URL) conventions](#filename-url-conventions)
 * [Document page structure](#document-page-structure)
 * [Concise copywriting tips](#concise-copywriting-tips)
@@ -11,6 +12,22 @@ On this page are guidelines for doc authors:
 * [Administration-side references](#administration-side-references)
 * [Typo and grammar gotchas to watch out for](#typo-and-grammar-gotchas-to-watch-out-for)
 * [Markup](#markup)
+
+## Contributing documentation
+
+Helping to edit current documentation and/or writing new documentation by Textpattern users is strongly encouraged!
+
+If you are familiar with Git/GitHub workflows then you can fork this repository, make your edits/additions and then open pull request. A member of the core documentation team will then review you changes and merge into the repository once approved. The site is built using Jekyll every time a file change is detected, and the page is then live for everyone to see.
+
+For simple, smaller edits, you can edit documents in-browser on GitHub as follows:
+
+1. Log into GitHub in your browser.
+2. Go to the docs repo (this repo!).
+3. Find the documentation page you want to add an example too, pages are within sub-directories of root and all labelled logically.
+4. Click the ‘Edit this file’ button (it’s a little pen symbol).
+5. Write/edit content (in Markdown syntax).
+6. Press the ‘Commit changes’ button when finished – that will create a pull request. A member of the core documentation team will then review you changes and merge into the repository once approved.
+7. Jekyll rebuilds automatically when file changes are detected and the page is then live for everyone to see.
 
 ## Filename (URL) conventions
 
