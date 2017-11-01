@@ -49,12 +49,18 @@ Tag will accept the following attributes (**case-sensitive**):
 ### Example 1: Check plugin exists before using a tag
 
 ~~~ html
-<txp:if_plugin name="zem_plugin_lang" version="4">
-    <txp:zem_contact to="dest@example.com" />
+<txp:if_plugin name="com_connect" version="4.6">
+    <txp:com_connect to="recipient@example.com" />
 </txp:if_plugin>
 ~~~
 
-Applies the tag `<txp:zem_contact />` if the 'zem_contact_lang' plugin is installed, activated, and the version number is equal to or greater than 4.
+Applies the tag `<txp:com_connect />` if the 'com_connect' plugin is installed, activated, and the version number is equal to or greater than 4.6. Version numbering supports [semantic versioning](http://semver.org), for example...
+
+~~~
+version="4.6"
+~~~
+
+...means equal to or greater than version @4.6@ (i.e. @4.6.1@, @4.7@, @5@).
 
 ## Genealogy
 
