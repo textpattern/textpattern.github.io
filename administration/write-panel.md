@@ -245,7 +245,7 @@ Once the image is associated with an article, [article_image](https://docs.textp
 
 Custom fields are defined in the **Custom fields** section of the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel), which then makes them available for use here in the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever constructs you create using the [custom_field](https://docs.textpattern.io/tags/custom_field) tag, and possibly the [if_custom_field](https://docs.textpattern.io/tags/if_custom_field)) tag.
 
-**Tip:** You can also treat the **Article image** field, described above, as a custom field. This is useful when you need to isolate the ID value in context of the image so you can pull other parameters for the article. For example, the following markup (demonstrated as a figure) allows isolating the different parts of the image path — in this case focusing on the ID value in context of the image — to display the images caption value too:
+**Tip:** You can also treat the **Article image** field, described above, as a custom field. This is useful when you need to isolate the ID value in context of the image so you can pull other parameters for the article. For example, the following markup (demonstrated as a figure) allows isolating the different parts of the image path — in this case focusing on the ID value in context of the article — to display the images caption value too:
 
 ~~~ html
 <figure>
