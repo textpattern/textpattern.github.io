@@ -3,12 +3,12 @@ layout: document
 category: Themes
 published: true
 title: Creating and using admin-side themes
-description: Admin-side themes allow Textpattern administrators (and publishers) to choose a specific theme for the administration panels.
+description: Admin-side themes allow Textpattern administrators (and publishers) to choose a specific theme for the panels.
 ---
 
 # Creating and using admin-side themes TODO
 
-Admin-side themes allow Textpattern administrators (and publishers) to choose a specific theme for the administration panels, from the list of options via the Admin Preferences.
+Admin-side themes allow Textpattern administrators (and publishers) to choose a specific theme for the panels, from the list of options via the Admin Preferences.
 
 The core admin-side theme options are:
 
@@ -16,7 +16,7 @@ The core admin-side theme options are:
 * Hive (Flat Neutral)
 * Classic
 
-To change the admin-side theme, go to the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel), and within the **Admin** section select the theme you want from the 'Admin-side theme' control.
+To change the admin-side theme, go to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel), and within the **Admin** section select the theme you want from the 'Admin-side theme' control.
 
 Administrators can also allow account holders to choose their own admin-side theme on an individual basis, which is done by installing the [smd_admin_themes](https://github.com/Bloke/smd_admin_themes) plugin.
 

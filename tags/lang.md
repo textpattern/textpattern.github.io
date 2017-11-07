@@ -23,7 +23,7 @@ On this page:
 <txp:lang />
 ~~~
 
-The **lang** tag is a *single* tag. Textpattern will replace this tag with the 2-letter code of the language which is set as the site's language preference in the [Languages administration panel](https://docs.textpattern.io/administration/languages-panel), according to [RFC 1766](https://www.ietf.org/rfc/rfc1766.txt).
+The **lang** tag is a *single* tag. Textpattern will replace this tag with the 2-letter code of the language which is set as the site's language preference in the [Languages panel](https://docs.textpattern.io/administration/languages-panel), according to [RFC 1766](https://www.ietf.org/rfc/rfc1766.txt).
 
 ## Attributes
 

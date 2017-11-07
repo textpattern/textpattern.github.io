@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: Link description
-description: The link_description tag is used to return the text from the 'Description' field as defined within the Links administration panel.
+description: The link_description tag is used to return the text from the 'Description' field as defined within the Links panel.
 tags:
   - Link tags
 ---
@@ -23,7 +23,7 @@ On this page:
 <txp:link_description />
 ~~~
 
-The **link_description** tag is a *single* tag which is used to return the text from the 'Description' field as defined within the [Links administration panel](https://docs.textpattern.io/administration/links-panel). This tag is used in a 'links' type form or inside a [linklist](linklist) container tag to display information about the current link.
+The **link_description** tag is a *single* tag which is used to return the text from the 'Description' field as defined within the [Links panel](https://docs.textpattern.io/administration/links-panel). This tag is used in a 'links' type form or inside a [linklist](linklist) container tag to display information about the current link.
 
 ## Attributes
 

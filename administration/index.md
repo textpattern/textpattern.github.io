@@ -173,4 +173,4 @@ The [**Extensions**](https://docs.textpattern.io/administration/extensions-regio
 
 The default admin-side landing location changes once you initially set your language preferences. You'll find yourself landing on the [**Write**](https://docs.textpattern.io/administration/write-panel) panel from that point on, which is the default panel under the **Content** region.
 
-You can change the default landing panel to whichever one you want using the "Default administration panel" preference under the **Admin** area of the [**Preferences**](https://docs.textpattern.io/administration/preferences-panel) panel.
+You can change the default landing panel to whichever one you want using the "Default panel" preference under the **Admin** area of the [**Preferences**](https://docs.textpattern.io/administration/preferences-panel) panel.

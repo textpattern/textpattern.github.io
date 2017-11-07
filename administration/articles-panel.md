@@ -8,7 +8,7 @@ description: The Articles panel shows a list of all your existing articles, toge
 
 # Articles panel
 
-The Articles administration panel will show a list of all your existing articles together with basic information (Such as ID, Posted, Title, Author, etc.).
+The Articles panel will show a list of all your existing articles together with basic information (Such as ID, Posted, Title, Author, etc.).
 
 On this page:
 
@@ -26,7 +26,7 @@ On this panel you can do two things:
 
 ## Create a new article
 
-This button will take you directly to the [Write administration panel](https://docs.textpattern.io/administration/write-panel).
+This button will take you directly to the [Write panel](https://docs.textpattern.io/administration/write-panel).
 
 ## Search function
 
@@ -67,7 +67,7 @@ The default view shows these columns:
 
 **Status:** this is the status of the article. if set to Live, then this article is viewable on your live site (except if it has expired, see the [expired](https://docs.textpattern.io/tags/expires) tag. Might otherwise be set to 'Draft', 'Pending', etc.
 
-**Author:** this is the name of the person who posted the article (only if more than one author exists in the [Users administration panel](https://docs.textpattern.io/administration/users-panel)).
+**Author:** this is the name of the person who posted the article (only if more than one author exists in the [Users panel](https://docs.textpattern.io/administration/users-panel)).
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
@@ -81,7 +81,7 @@ In the ID column, two links will be added for each article: **Edit:** click this
 
 **Category 2:** if the article was assigned a second category, it will reflect that here.
 
-**Comments:** this will show if the article has comments turned on or off, and how many comments have been made to this article. Hidden if the commenting features are turned off globally in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
+**Comments:** this will show if the article has comments turned on or off, and how many comments have been made to this article. Hidden if the commenting features are turned off globally in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
 
 ### Perform changes on selected articles
 
@@ -95,4 +95,4 @@ For performing changes now you go to the drop-down list 'With selected...' and c
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of articles listed per page by selecting another value from the number range.
 
-[Next: Images administration panel](https://docs.textpattern.io/administration/images-panel)
+[Next: Images panel](https://docs.textpattern.io/administration/images-panel)

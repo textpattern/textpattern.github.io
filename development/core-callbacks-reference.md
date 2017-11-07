@@ -92,7 +92,7 @@ Any time a comment form is rendered or a comment is posted on an article, the fo
 
 ### publish/log.php
 
-As long as *Logging* is switched on from the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel), whenever a visitor requests a web page from Textpattern, a hit is registered. Use the callback here to intercept it.
+As long as *Logging* is switched on from the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel), whenever a visitor requests a web page from Textpattern, a hit is registered. Use the callback here to intercept it.
 
 `log_hit`
 : **When it occurs:** Just before a log message is recorded in the 'txp_log' table.
@@ -614,7 +614,7 @@ notextile.
 
 TODO: intro para about what this callback is concerned with
 
-See the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel) documentation.
+See the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) documentation.
 
 notextile.
 

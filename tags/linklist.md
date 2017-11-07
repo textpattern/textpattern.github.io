@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: Linklist
-description: The linklist tag is used to produce a list of links from the predefined list created on the Links administration panel.
+description: The linklist tag is used to produce a list of links from the predefined list created on the Links panel.
 tags:
   - Link tags
   - List tags
@@ -24,7 +24,7 @@ On this page:
 <txp:linklist />
 ~~~
 
-The **linklist** tag is a *single* or a *container* tag which is used to produce a list of links from the predefined list created on the [Links administration panel](https://docs.textpattern.io/administration/links-panel).
+The **linklist** tag is a *single* or a *container* tag which is used to produce a list of links from the predefined list created on the [Links panel](https://docs.textpattern.io/administration/links-panel).
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 
@@ -49,7 +49,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `category="category name(s)"`
 : Restrict to links from specified categories.
-: **Values:** (comma separated list of) category name(s). **Note:** category names may be different to the 'Title' you typed when you created the category, as the names are sanitized for URL use. Check the [Categories administration panel](https://docs.textpattern.io/administration/categories-panel) to ensure you are using the correct names.
+: **Values:** (comma separated list of) category name(s). **Note:** category names may be different to the 'Title' you typed when you created the category, as the names are sanitized for URL use. Check the [Categories panel](https://docs.textpattern.io/administration/categories-panel) to ensure you are using the correct names.
 : **Default:** unset.
 
 `form="form name"`
@@ -57,7 +57,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `plainlinks`.
 
 `id="integer"` <span class="footnote warning">v4.5.0+</span>
-: Filter the links by this list of `id`s assigned at link creation time. The IDs can be found on the [Links administration panel](https://docs.textpattern.io/administration/links-panel).
+: Filter the links by this list of `id`s assigned at link creation time. The IDs can be found on the [Links panel](https://docs.textpattern.io/administration/links-panel).
 : **Default:** unset.
 
 `limit="integer"`

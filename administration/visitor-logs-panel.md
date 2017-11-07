@@ -8,7 +8,7 @@ description: The Visitor logs panel is where you can monitor who, and what, visi
 
 # Visitor logs panel
 
-The Visitor logs administration panel is where you can monitor who (web surfers) and what (spambots, search engine spiders, etc.) visits your site. Although the information is not all-encompassing, it is detailed enough for keeping an eye on traffic behaviour. **Note:** This panel is only available if you have turned on logging functionality in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel#logging).
+The Visitor logs panel is where you can monitor who (web surfers) and what (spambots, search engine spiders, etc.) visits your site. Although the information is not all-encompassing, it is detailed enough for keeping an eye on traffic behaviour. **Note:** This panel is only available if you have turned on logging functionality in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#logging).
 
 On this page:
 
@@ -27,7 +27,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of visitor logs which meet the criteria.
 
@@ -39,7 +39,7 @@ Beneath the search area there is the table, or list, of existing visitor logs. E
 
 ### Columns
 
-* **Time:** The time your web page was visited. The time is shifted by the time preferences set in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
+* **Time:** The time your web page was visited. The time is shifted by the time preferences set in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
 * **IP:** The IP address of the visitor.
 * **Host:** The published hostname associated with the IP address.
 * **Page:** The page in your Textpattern website that is first visited. If it is **bold** it shows an attempt to leave a comment. If no comment has been left, it is probably a script that unsuccessfully tried to leave some spam.

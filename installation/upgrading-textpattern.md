@@ -39,7 +39,7 @@ Make a copy of the current system (folders and files of the Textpattern installa
 
 ### Create a database dump file (an .sql export)
 
-Log in to the `phpMyAdmin` database administration panel for your site (different web hosts have different access routes), and then follow these steps:
+Log in to the `phpMyAdmin` database panel for your site (different web hosts have different access routes), and then follow these steps:
 
 1. Select the database running the current Textpattern site.
 2. In the resulting main content area, click **'Export'** at the top of the screen.
@@ -90,7 +90,7 @@ The `setup` folder is only used for **new** installations, not upgrades, thus it
 
 This step is highly recommended, but optional. It is best to do this on a development server to avoid showing your users error messages.
 
-Change your site's 'Production status' in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel) to 'debugging'. Go through the live site (every page, if possible), looking for error messages. Any such messages will be clearly visible at the top of the page. The upgrade may result in notices or errors relating to deprecated tags or attributes (these should be easy to correct).
+Change your site's 'Production status' in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) to 'debugging'. Go through the live site (every page, if possible), looking for error messages. Any such messages will be clearly visible at the top of the page. The upgrade may result in notices or errors relating to deprecated tags or attributes (these should be easy to correct).
 
 If you do need to update tag or attribute names, the [smd_where_used plugin](https://forum.textpattern.com/viewtopic.php?id=27493) is a great help for quickly finding all instances of a given tag or attribute.
 

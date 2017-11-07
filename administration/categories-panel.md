@@ -3,12 +3,12 @@ layout: document
 category: Administration
 published: true
 title: Categories panel
-description: In the Categories administration panel you define categories for your content (articles, images, files and links).
+description: In the Categories panel you define categories for your content (articles, images, files and links).
 ---
 
 # Categories panel
 
-In the Categories administration panel you define categories for your content (articles, images, files and links).
+In the Categories panel you define categories for your content (articles, images, files and links).
 
 Categorizing things makes it easier for both you and your visitors to keep track of different kinds of content. You might, for example, have a category 'software' in which you write about your experiments with the latest apps and another category 'pets' in which you post stories about your cats.
 
@@ -45,10 +45,10 @@ Click on a category name from the list of existing categories and you get to a n
 
 These fields exist for all four kinds of content (articles, images, files and links). However, the tags mentioned above (`<txp:category1 />`, `<txp:category2 />` and `<txp:category_list />`) are only for article categories. For images, files and links there are other tags or tag attributes. See the [Tag reference index](https://docs.textpattern.io/tags) for further details on tag usage.
 
-Once you have finished editng your category details, press 'Save' to store the changes and return to the main Categories administration panel.
+Once you have finished editng your category details, press 'Save' to store the changes and return to the main Categories panel.
 
 ## Delete one or more categories
 
 You can select one or more categories within a context list using the checkbox next to it, and with the widget at the bottom of each context list you can then 'Delete' the category/categories or 'Change parent'.
 
-[Next: Comments administration panel](https://docs.textpattern.io/administration/comments-panel)
+[Next: Comments panel](https://docs.textpattern.io/administration/comments-panel)

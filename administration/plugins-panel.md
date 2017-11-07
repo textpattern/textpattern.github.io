@@ -28,7 +28,7 @@ On this page:
 
 ## Uploading plugins
 
-The top part of the Plugins administration panel is an 'Install plugin' field for uploading plugin files.
+The top part of the Plugins panel is an 'Install plugin' field for uploading plugin files.
 
 Installing a standard text (`.txt`) plugin goes something like this:
 
@@ -104,9 +104,9 @@ You'll need gzip on your web server in order to install compressed plugins, but 
 
 ## Plugin cache directory
 
-Plugins that you install via the Plugins administration panel are inserted into the database. There is another method of installing a plugin that involves obtaining the plugin as a file in the standard template format.
+Plugins that you install via the Plugins panel are inserted into the database. There is another method of installing a plugin that involves obtaining the plugin as a file in the standard template format.
 
-Visit the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel) and enter a folder path/name to use as your plugin cache directory. Make sure it exists on your server!
+Visit the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) and enter a folder path/name to use as your plugin cache directory. Make sure it exists on your server!
 
 When you have saved the changes, you may upload (via FTP) plugins in the standard template format (not the Base-64 method outlined above)into this nominated directory. Once uploaded, they will be available automatically and are “always on”, but otherwise behave in the same manner as regular plugins.
 
@@ -223,7 +223,7 @@ Here are a few tips for achieving plugin zen:
 
 You're in the wrong place! Please see [the suite of plugin develop aides](https://docs.textpattern.io/development/) for aspiring plugin developers.
 
-[Next: Visitor logs administration panel](https://docs.textpattern.io/administration/visitor-logs-panel)
+[Next: Visitor logs panel](https://docs.textpattern.io/administration/visitor-logs-panel)
 
 [^1]: As time goes by some plugin authors move on to other pastures - they may abandon their Textpattern plugins, which fall out of repair, or disappear altogether. We call these plugins 'orphans', and you'll see them labeled this way in their respective support forum threads. Sometimes other developers will 'adopt' the plugins and maintain them, keeping the original plugin name. If you see a plugin indicated as 'orphan', avoid it, and ask in the forum if something else is better.
 

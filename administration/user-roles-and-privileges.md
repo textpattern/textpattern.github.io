@@ -30,7 +30,7 @@ On this page:
 
 It's helpful to classify user accounts in three ways.
 
-**Administrator account:** Only one person has this account; the person who installed Textpattern (presumably you). Though an 'Administrator' can certainly serve in a publishing role (and is labeled 'Publisher' in the [Users administration panel](https://docs.textpattern.io/administration/users-panel)), an administrator isn't necessarily part of collaborative publishing workflow. Site administrators typically handle all server-side issues, update the system when new releases are made, backup the database on a regular schedule, and make decisions about website [security](https://docs.textpattern.io/administration/security). If a website is only a single-user site, this is the only account you need.
+**Administrator account:** Only one person has this account; the person who installed Textpattern (presumably you). Though an 'Administrator' can certainly serve in a publishing role (and is labeled 'Publisher' in the [Users panel](https://docs.textpattern.io/administration/users-panel)), an administrator isn't necessarily part of collaborative publishing workflow. Site administrators typically handle all server-side issues, update the system when new releases are made, backup the database on a regular schedule, and make decisions about website [security](https://docs.textpattern.io/administration/security). If a website is only a single-user site, this is the only account you need.
 
 **Publishing accounts:** These are represented by the six *roles* defined in Textpattern - from Publisher down to Designer. The roles are primarily what this page is concerned with. Publishing roles are taken into consideration when planning a collaborative publishing architecture around the day-to-day activities of producing content (and evolving the presentation).[^1]
 
@@ -38,7 +38,7 @@ It's helpful to classify user accounts in three ways.
 
 ## Panels access per publishing role
 
-The tables in the following sections show all account types versus access to the administration panels and functionality, with emphasis on the six publishing roles (from 'Publisher' to 'Designer').[^2]
+The tables in the following sections show all account types versus access to the panels and functionality, with emphasis on the six publishing roles (from 'Publisher' to 'Designer').[^2]
 
 ### Core panels access
 
@@ -302,7 +302,7 @@ Managing Editors are essentially the Publisher's right hand, a transition role f
 
 Managing Editors have the same privileges as Publishers throughout the administration side, with one exception:
 
-* On the [Users administration panel](https://docs.textpattern.io/administration/users-panel): They can see basic data types (Login, Real name, Email, Privileges, Last log in, etc) for all user accounts, and edit full account data for any inferior role, but cannot edit account data for Publishers or other Managing Editors.
+* On the [Users panel](https://docs.textpattern.io/administration/users-panel): They can see basic data types (Login, Real name, Email, Privileges, Last log in, etc) for all user accounts, and edit full account data for any inferior role, but cannot edit account data for Publishers or other Managing Editors.
 
 In addition to the noted panel limitation, Managing Editors don't have as much detailed debugging info available to them either when the production status is higher.
 
@@ -312,30 +312,30 @@ Copy Editors aren't concerned with governance activities like the higher roles a
 
 Copy Editor privileges are pretty straight forward, either having full access to panels or no access at all, with one exception:
 
-* On the [Users administration panel](https://docs.textpattern.io/administration/users-panel): They can see basic data types for all user accounts, but they can only edit their own account data.
+* On the [Users panel](https://docs.textpattern.io/administration/users-panel): They can see basic data types for all user accounts, but they can only edit their own account data.
 
 ### Staff Writer limitations
 
 The Staff Writer is one of two roles primarily concerned with writing articles (the other being Freelancer). They don't need access to much of the administration side except those panels concerned with content, with a few limitations:
 
-* On the [Write administration panel](https://docs.textpattern.io/administration/write-panel): They can create, edit, publish, and delete their own articles. They can see the full articles of other user accounts, but not edit them in any way.
-* On the [Images administration panel](https://docs.textpattern.io/administration/images-panel): They can upload images and edit the ones they upload. They can see the images uploaded by other user accounts, but they cannot edit or delete those images.
-* On the [Files administration panel](https://docs.textpattern.io/administration/files-panel):  They can upload files and edit the ones they upload. They can see the names of files uploaded by other user accounts, but they cannot edit or delete those files.
-* On the [Users administration panel](https://docs.textpattern.io/administration/users-panel): They can edit their own user account details, but not see anyone else's account information.
+* On the [Write panel](https://docs.textpattern.io/administration/write-panel): They can create, edit, publish, and delete their own articles. They can see the full articles of other user accounts, but not edit them in any way.
+* On the [Images panel](https://docs.textpattern.io/administration/images-panel): They can upload images and edit the ones they upload. They can see the images uploaded by other user accounts, but they cannot edit or delete those images.
+* On the [Files panel](https://docs.textpattern.io/administration/files-panel):  They can upload files and edit the ones they upload. They can see the names of files uploaded by other user accounts, but they cannot edit or delete those files.
+* On the [Users panel](https://docs.textpattern.io/administration/users-panel): They can edit their own user account details, but not see anyone else's account information.
 
 ### Freelancer limitations
 
 Freelancers are external to the website's editorial team. You can think of them as 'guest authors'. Like Staff Writers, Freelancers write articles, but that's mostly it due to their external status. Limitations are:
 
-* On the [Write administration panel](https://docs.textpattern.io/administration/write-panel): They can create new 'Draft' articles and switch their status to 'Pending', but not publish them 'Live'. They can see the full articles of other user accounts, but not edit them in any way.
-* On the [Users administration panel](https://docs.textpattern.io/administration/users-panel): Same as Staff Writer.
+* On the [Write panel](https://docs.textpattern.io/administration/write-panel): They can create new 'Draft' articles and switch their status to 'Pending', but not publish them 'Live'. They can see the full articles of other user accounts, but not edit them in any way.
+* On the [Users panel](https://docs.textpattern.io/administration/users-panel): Same as Staff Writer.
 
 ### Designer limitations
 
 A Designer's focus is uniquely on site structure and presentation, but a Designer can see some content too to help inform presentational decisions. Limitations are:
 
-* On the [Write administration panel](https://docs.textpattern.io/administration/write-panel): They can see anyone's full article regardless of status, but not edit anyone else's articles in any way. Nor can a Designer create articles.
-* On the [Users administration panel](https://docs.textpattern.io/administration/users-panel): Same as Staff Writer.
+* On the [Write panel](https://docs.textpattern.io/administration/write-panel): They can see anyone's full article regardless of status, but not edit anyone else's articles in any way. Nor can a Designer create articles.
+* On the [Users panel](https://docs.textpattern.io/administration/users-panel): Same as Staff Writer.
 
 ## Modifying user roles and privileges
 
@@ -347,7 +347,7 @@ The plugin also allows creating custom user groups in addition to changing indiv
 
 It goes without saying that when granting roles to site contributors, be sure the people you're giving privileges to are trustworthy. The higher roles, like Publisher and Managing Editor, have a lot of power and can easily change things. But even lesser roles should be granted to people with some attention.
 
-For example, the Designer role is restricted to those areas of the administration side that may play a role in presentation, including Page templates and Form templates. Such restrictions may seem sufficiently secure on the surface, but if the 'Allow PHP in pages?' preference is set to 'Yes' in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel#allow-php-in-pages) panel, then a Designer *could* use PHP in Page templates and/or Form templates in a malicious way to gain administrator-like power and cause problems. Setting the preference to 'No' would prevent such a possibility.
+For example, the Designer role is restricted to those areas of the administration side that may play a role in presentation, including Page templates and Form templates. Such restrictions may seem sufficiently secure on the surface, but if the 'Allow PHP in pages?' preference is set to 'Yes' in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#allow-php-in-pages) panel, then a Designer *could* use PHP in Page templates and/or Form templates in a malicious way to gain administrator-like power and cause problems. Setting the preference to 'No' would prevent such a possibility.
 
 When it comes down to it, security is a governance concern, relying just as much on smart human decisions as code lockdown. Don't give roles to people you can't trust and make sure your editorial workflows are documented so each contributor knows what's expected of them by role assignment.
 
@@ -355,4 +355,4 @@ When it comes down to it, security is a governance concern, relying just as much
 
 [^2]: You may also install and use the [smd_faux_role](https://forum.textpattern.com/viewtopic.php?id=33462&p=2) plugin to more easily visualize what a given role can see and do in the administration side. It's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
 
-[^3]: While these rights of access per role are indicated at the region level here, it is possible that a given plugin introduces finer rights control, which would alter the access pattern suggested in table 2 (see above). For example, a developer may design an admin-side plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a administration panel under Extensions, then those two lower user roles will see the [Extensions administration region](https://docs.textpattern.io/administration/extensions-region) and that particular plugin panel only.
+[^3]: While these rights of access per role are indicated at the region level here, it is possible that a given plugin introduces finer rights control, which would alter the access pattern suggested in table 2 (see above). For example, a developer may design an admin-side plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a panel under Extensions, then those two lower user roles will see the [Extensions administration region](https://docs.textpattern.io/administration/extensions-region) and that particular plugin panel only.

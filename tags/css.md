@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: Css
-description: The basic css tag is used to output the URL of the stylesheet assigned in the Textpattern Sections administration panel.
+description: The basic css tag is used to output the URL of the stylesheet assigned in the Textpattern Sections panel.
 tags:
   - Markup tags
 ---
@@ -23,7 +23,7 @@ On this page:
 <txp:css />
 ~~~
 
-The basic **css** tag is a *single* tag used to output the URL of the stylesheet assigned in the Textpattern [Sections administration panel](https://docs.textpattern.io/administration/sections-panel).
+The basic **css** tag is a *single* tag used to output the URL of the stylesheet assigned in the Textpattern [Sections panel](https://docs.textpattern.io/administration/sections-panel).
 
 ## Attributes
 

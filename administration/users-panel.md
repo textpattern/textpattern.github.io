@@ -8,7 +8,7 @@ description: The Users panel is where user accounts are accessed and managed.
 
 # Users panel
 
-The Users administration panel is where user accounts are accessed and managed.
+The Users panel is where user accounts are accessed and managed.
 
 On this page:
 
@@ -83,7 +83,7 @@ There are situations (membership communities, employee intranets, magazine artic
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of users listed per page by selecting another value from the number range.
 
-[Next: Plugins administration panel](https://docs.textpattern.io/administration/plugins-panel)
+[Next: Plugins panel](https://docs.textpattern.io/administration/plugins-panel)
 
 [^1]: See [User roles and privileges](https://docs.textpattern.io/administration/user-roles-and-privileges) for how roles and privileges match up.
 

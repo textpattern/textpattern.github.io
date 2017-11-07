@@ -3,12 +3,12 @@ layout: document
 category: Administration
 published: true
 title: Images panel
-description: The Images administration panel lets you manage everything you need to include images (and galleries) in your content.
+description: The Images panel lets you manage everything you need to include images (and galleries) in your content.
 ---
 
 # Images panel
 
-The Images administration panel lets you manage everything you need to include images (and galleries) in your content. From this panel you can upload images, create thumbnails, add captions (and alternate text), build groups of images (using categories) and generate tags to place images in your article content or [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
+The Images panel lets you manage everything you need to include images (and galleries) in your content. From this panel you can upload images, create thumbnails, add captions (and alternate text), build groups of images (using categories) and generate tags to place images in your article content or [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
 
 On this page:
 
@@ -82,7 +82,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of images which meet the criteria.
 
@@ -104,7 +104,7 @@ The default view shows these columns:
 
 **Category:** if the image was assigned a category, then it will reflect that here.
 
-**Author:** the author who created the image record (only if more than one author exists in the [Users administration panel](https://docs.textpattern.io/administration/users-panel)).
+**Author:** the author who created the image record (only if more than one author exists in the [Users panel](https://docs.textpattern.io/administration/users-panel)).
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
@@ -144,4 +144,4 @@ The image tag builder has several options:
 
 **Wrap tag**: For example `p`. Tells Textpattern to surround the image with this HTML tag when rendered. Output would be `<p><img src="etc" /></p>` in this example.
 
-[Next: Files administration panel](https://docs.textpattern.io/administration/files-panel)
+[Next: Files panel](https://docs.textpattern.io/administration/files-panel)

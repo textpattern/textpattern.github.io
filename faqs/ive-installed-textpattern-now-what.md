@@ -12,7 +12,7 @@ Briefly, the important concepts in Textpattern are:
 
 Sections are the topmost divisions of your website.  A newspaper site might have sections like "Politics", "Sport", "Weather", and so on.  These usually correspond to URLs such as @http://example.com/politics/@, @http://example.com/sport/@, etc.
 
-Sections are managed in the Textpattern administration panel under *presentation > sections*.
+Sections are managed in the Textpattern panel under *presentation > sections*.
 
 Each section contains any number of articles.  Sections can look the same, or each one can have a unique page layout.
 
@@ -26,7 +26,7 @@ Each article belongs to one section (and only one).
 
 Every article has its own unique page and URL, usually called an *individual article page* or *permlink page*.  URL modes are configurable, but it often looks like @http://example.com/mysection/123/my-article-title@.
 
-To write a new article, go to *content > write* in the Textpattern administration panel.  To edit or remove existing articles, go to *content > articles*.
+To write a new article, go to *content > write* in the Textpattern panel.  To edit or remove existing articles, go to *content > articles*.
 
 *Page Templates*
 

@@ -38,7 +38,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0`.
 
 `name="category name"`
-: Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [Categories administration panel](https://docs.textpattern.io/administration/categories-panel). Also note that if you had called your category `My Category Name` it becomes `my-category-name` when used in tags.
+: Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [Categories panel](https://docs.textpattern.io/administration/categories-panel). Also note that if you had called your category `My Category Name` it becomes `my-category-name` when used in tags.
 : **Default:** unset (use current category).
 
 `section="section name"`

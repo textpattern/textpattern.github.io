@@ -40,7 +40,7 @@ Should be used in a page template; if checking the category in an article form, 
 Tag will accept the following attributes (**case-sensitive**):
 
 `name="category"`
-: Comma-separated list of category names. Note the category name is specified in lower case regardless of how you typed its title in the [Categories administration panel](https://docs.textpattern.io/administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes 'my-category-name' when used in tags.
+: Comma-separated list of category names. Note the category name is specified in lower case regardless of how you typed its title in the [Categories panel](https://docs.textpattern.io/administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes 'my-category-name' when used in tags.
 : **Default:** unset, which determines whether ''any'' category listing is being viewed.
 
 `type="context"` <span class="footnote warning">v4.3.0+</span>

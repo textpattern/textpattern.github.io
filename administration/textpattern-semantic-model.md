@@ -46,7 +46,7 @@ Pages and Styles (described next) are associated to Sections to provide an HTML 
 
 Let's walkthrough the creation and assembly of the building blocks for a hypothetical website called 'Black Cheese' (`blackcheese.tld`)...
 
-All building block panels are accessed in your [admin-side](https://docs.textpattern.io/administration/). For purposes of this example, we are only focusing on [Sections](https://docs.textpattern.io/administration/sections-panel), [Pages](https://docs.textpattern.io/administration/pages-panel), [Styles](https://docs.textpattern.io/administration/styles-panel), [Forms](https://docs.textpattern.io/administration/pages-panel), and [Categories](https://docs.textpattern.io/administration/categories-panel). The Tags don't have their own panel; rather you simply type them up like you would HTML markup, or use one of the contextual Tag builders located at the top of the left column in the Forms and Pages administration panels.
+All building block panels are accessed in your [admin-side](https://docs.textpattern.io/administration/). For purposes of this example, we are only focusing on [Sections](https://docs.textpattern.io/administration/sections-panel), [Pages](https://docs.textpattern.io/administration/pages-panel), [Styles](https://docs.textpattern.io/administration/styles-panel), [Forms](https://docs.textpattern.io/administration/pages-panel), and [Categories](https://docs.textpattern.io/administration/categories-panel). The Tags don't have their own panel; rather you simply type them up like you would HTML markup, or use one of the contextual Tag builders located at the top of the left column in the Forms and Pages panels.
 
 ### Sections need Pages and Styles
 
@@ -56,7 +56,7 @@ To this end, let's say we intend to create a 'history' section in the Black Chee
 
 ### Page template uses Form templates
 
-The Pages administration panel will let you see the Page templates your site uses, which are essentially HTML documents. One template may be in use by one or more Sections.
+The Pages panel will let you see the Page templates your site uses, which are essentially HTML documents. One template may be in use by one or more Sections.
 
 Inside a Page template are various Tags which give Textpattern further instructions. The template dictates the overall structure of the rendered HTML page.
 
@@ -64,4 +64,4 @@ In addition to showing article(s) assigned to the Section, the structure may emp
 
 ### Section uses Stylesheet information
 
-In the Style administration panel you will see one stylesheet by default. All pages will use this unless another stylesheet is specified. Perhaps you want a different style for the 'cheese' section. So you create a new stylesheet with new fonts, colours, etc. Then, in the Sections administration panel, select it to be used by the cheese section. Other sections will still use the default stylesheet unless told otherwise.
+In the Style panel you will see one stylesheet by default. All pages will use this unless another stylesheet is specified. Perhaps you want a different style for the 'cheese' section. So you create a new stylesheet with new fonts, colours, etc. Then, in the Sections panel, select it to be used by the cheese section. Other sections will still use the default stylesheet unless told otherwise.

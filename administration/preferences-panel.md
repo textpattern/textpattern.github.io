@@ -3,12 +3,12 @@ layout: document
 category: Administration
 published: true
 title: Preferences panel
-description: The Preferences administration panel is where you configure the everyday operation of your Textpattern site.
+description: The Preferences panel is where you configure the everyday operation of your Textpattern site.
 ---
 
 # Preferences panel
 
-The Preferences administration panel is where you configure the everyday operation of your Textpattern site. Along with the [Languages administration panel](https://docs.textpattern.io/administration/languages-panel), most of Textpattern's site-wide settings can be configured and fine-tuned. Preferences are grouped for convenience.
+The Preferences panel is where you configure the everyday operation of your Textpattern site. Along with the [Languages panel](https://docs.textpattern.io/administration/languages-panel), most of Textpattern's site-wide settings can be configured and fine-tuned. Preferences are grouped for convenience.
 
 On this page:
 
@@ -108,7 +108,7 @@ Select which HTML [doctype](https://www.w3.org/wiki/Doctypes_and_markup_styles) 
 
 ### Logging
 
-The 'Logging' preference allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [Visitor logs administration panel](https://docs.textpattern.io/administration/visitor-logs-panel) for you to review. This Logging control is a drop-down menu with three options.
+The 'Logging' preference allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [Visitor logs panel](https://docs.textpattern.io/administration/visitor-logs-panel) for you to review. This Logging control is a drop-down menu with three options.
 
 1. **None:** By default Textpattern will not log any visitor information at all.
 2. **All hits:** Textpattern will collect information for all site visits.
@@ -120,21 +120,21 @@ When you are using Textpattern for logging (see above), you can set how long (in
 
 ### Accept comments?
 
-This is a global setting for whether or not you want to allow your articles to accept comments. Effectively turns of all comment-related functionality within the website and administration panels.
+This is a global setting for whether or not you want to allow your articles to accept comments. Effectively turns of all comment-related functionality within the website and panels.
 
 ## Admin preferences
 
 ### Image directory
 
-The root-relative URI (without opening or closing slashes) of the directory (folder) that holds images uploaded through the [Images administration panel](https://docs.textpattern.io/administration/images-panel). By default this is `images`, and you only need to change this if you have renamed and/or moved this directory.
+The root-relative URI (without opening or closing slashes) of the directory (folder) that holds images uploaded through the [Images panel](https://docs.textpattern.io/administration/images-panel). By default this is `images`, and you only need to change this if you have renamed and/or moved this directory.
 
 ### File directory path
 
-The full path (file path, not URI) to the directory (folder) for files uploaded via the [Files administration panel](https://docs.textpattern.io/administration/files-panel). By default it is named `files` and is in the root directory of the website. As with the Image directory, you only need to change this if you have renamed and/or moved this directory.
+The full path (file path, not URI) to the directory (folder) for files uploaded via the [Files panel](https://docs.textpattern.io/administration/files-panel). By default it is named `files` and is in the root directory of the website. As with the Image directory, you only need to change this if you have renamed and/or moved this directory.
 
 ### Maximum file size of uploads (in bytes)
 
-Maximum size for file uploads via the [Files administration panel](https://docs.textpattern.io/administration/files-panel). Note that this value is also limited by the configuration of PHP on your web server; if Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host (the relevant values in `php.ini` are `post_max_size`, `upload_max_filesize` and `memory_limit`).
+Maximum size for file uploads via the [Files panel](https://docs.textpattern.io/administration/files-panel). Note that this value is also limited by the configuration of PHP on your web server; if Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host (the relevant values in `php.ini` are `post_max_size`, `upload_max_filesize` and `memory_limit`).
 
 Image uploads are not restricted by this value. The maximum allowed size for images is always ~1MB (unless restricted by PHP as explained above).
 
@@ -146,7 +146,7 @@ Full path (absolute file path, not URI) for this directory, which is required by
 
 This setting is mainly used for plugin developers. When specified, you can put the plugin source file (not compiled) in this directory and Textpattern will load it automatically, so you can easily edit the plugin and immediately see the effect it has without having to install/activate the plugin. **Beware** though that by using this method, a broken plugin (which fails to compile) may also break Textpattern!
 
-It is recommended that you load plugins through the standard [Plugins administration panel](https://docs.textpattern.io/administration/plugins-panel) on a production site, rather than using the plugin cache directory.
+It is recommended that you load plugins through the standard [Plugins panel](https://docs.textpattern.io/administration/plugins-panel) on a production site, rather than using the plugin cache directory.
 
 **Note:** Do not specify the same directory for both 'Temporary directory path' and 'Plugin cache directory path', as this will cause problems (Textpattern would try to run the contents of temporary log files as plugins).
 
@@ -170,7 +170,7 @@ Textpattern uses UTF-8 encoding wherever possible by default, including for outg
 
 If you wish to use [XML-RPC](https://en.wikipedia.org/wiki/XML-RPC) for controlling Textpattern remotely (e.g. desktop or mobile apps) you must switch the XML-RPC server on by setting this to 'Yes'.
 
-### Default administration panel
+### Default panel
 
 The Textpattern administration interface panel that will appear first when anybody logs in.
 
@@ -194,15 +194,15 @@ Note this preference setting does not affect the status or articles created or e
 
 ### Use excerpts on articles?
 
-By choosing 'No' the excerpt field will not be shown to authors on the [Write administration panel](https://docs.textpattern.io/administration/write-panel#excerpt).
+By choosing 'No' the excerpt field will not be shown to authors on the [Write panel](https://docs.textpattern.io/administration/write-panel#excerpt).
 
 ### Allow form override?
 
-This setting allows article authors to override the Form template to be used when their article is rendered. If enabled, an 'Override form' dropdown will be available under 'Advanced options' on the [Write administration panel](https://docs.textpattern.io/administration/write-panel#override-form).
+This setting allows article authors to override the Form template to be used when their article is rendered. If enabled, an 'Override form' dropdown will be available under 'Advanced options' on the [Write panel](https://docs.textpattern.io/administration/write-panel#override-form).
 
 ### Attach titles to permalinks?
 
-This setting will attach a automatically-generated version of the article title to the URL. It is either generated automatically or can be manually overridden in 'URL-only title' when editing an article on the [Write administration panel](https://docs.textpattern.io/administration/write-panel#url-only-title).
+This setting will attach a automatically-generated version of the article title to the URL. It is either generated automatically or can be manually overridden in 'URL-only title' when editing an article on the [Write panel](https://docs.textpattern.io/administration/write-panel#url-only-title).
 
 The setting will only have an effect when you are using clean URLs. For certain languages this may result in long and ugly URLs, in which case you probably want to set this to 'No'.
 
@@ -210,7 +210,7 @@ The setting will only have an effect when you are using clean URLs. For certain 
 
 This setting only has an effect when 'Attach titles to permalinks?' above is set to 'Yes', and defines the method by which article URLs are constructed and assigned when a non-messy [Article URL pattern](#article-url-pattern) is used.
 
-When an article is published, its URL is generated from the article title unless a specific URL is provided in in the 'URL-only title' field on the [Write administration panel](https://docs.textpattern.io/administration/write-panel#url-only-title).
+When an article is published, its URL is generated from the article title unless a specific URL is provided in in the 'URL-only title' field on the [Write panel](https://docs.textpattern.io/administration/write-panel#url-only-title).
 
 Take the following example article title: "Ann and Bob eat cake"...
 
@@ -248,7 +248,7 @@ Textile is a utility intended to simplify the conversion of plain text to HTML. 
 
 Textile also offers a powerful but easy-to-learn set of commands with which to format text, define structures such as lists, headers and blockquotes, and insert links and images.
 
-The setting you choose here becomes the default for excerpt and body markup on the [Write administration panel](https://docs.textpattern.io/administration/write-panel#url-only-title). You can choose to allow complete Textile processing, to convert line breaks into HTML paragraph markers or not convert any text at all.
+The setting you choose here becomes the default for excerpt and body markup on the [Write panel](https://docs.textpattern.io/administration/write-panel#url-only-title). You can choose to allow complete Textile processing, to convert line breaks into HTML paragraph markers or not convert any text at all.
 
 ### Use DNS lookup in visitor logs?
 
@@ -300,17 +300,17 @@ Feed items in Atom, require a unique ID. To generate IDs unique to your site, Te
 
 ## Comments preferences
 
-If you set [Accept comments?](#accept-comments) to 'Yes', this region of the Preferences administration panel is where you establish your global settings for article comments (if set to 'No', this region is omitted).
+If you set [Accept comments?](#accept-comments) to 'Yes', this region of the Preferences panel is where you establish your global settings for article comments (if set to 'No', this region is omitted).
 
 ### Comments on by default?
 
-If this is set to 'Yes', comments will be automatically enabled for every article published. If set to 'No', you must enable comments on the [Write administration panel](https://docs.textpattern.io/administration/write-panel#onoff) each time you want to accept comments.
+If this is set to 'Yes', comments will be automatically enabled for every article published. If set to 'No', you must enable comments on the [Write panel](https://docs.textpattern.io/administration/write-panel#onoff) each time you want to accept comments.
 
 Note that allowing comments can be turned on or off at any time, on a per-article basis.
 
 ### Default comments invite
 
-The text in this edit field will be automatically set in the comment invitation field on the [Write administration panel](https://docs.textpattern.io/administration/write-panel#invitation) for new articles. The comment invitation may also be controlled on a per-article basis.
+The text in this edit field will be automatically set in the comment invitation field on the [Write panel](https://docs.textpattern.io/administration/write-panel#invitation) for new articles. The comment invitation may also be controlled on a per-article basis.
 
 ### Moderate comments?
 
@@ -401,7 +401,7 @@ You can enter a list of domain names here, separated by commas. Please note that
 
 ## Custom fields preferences
 
-This region is where custom fields can be defined (new installations of Textpattern define two custom fields for demonstration purposes: `custom1` and `custom2`). These in turn appear under the 'Custom fields' section of the [Write administration panel](https://docs.textpattern.io/administration/write-panel#custom-fields) so you can make use of them, as needed, in context of a given article.
+This region is where custom fields can be defined (new installations of Textpattern define two custom fields for demonstration purposes: `custom1` and `custom2`). These in turn appear under the 'Custom fields' section of the [Write panel](https://docs.textpattern.io/administration/write-panel#custom-fields) so you can make use of them, as needed, in context of a given article.
 
 **Important notes on creating custom field names:** Custom field names may include letters (uppercase or lowercase), numbers, and under scores, but no spaces or other special characters should be used. For example, `custom1`, `Custom1`, and `Custom_1` are all valid name constructs, while `custom 1` and `custom !` are not.
 
@@ -436,4 +436,4 @@ To remove a custom field, simply clear its name.
 
 **Don't forget to save changes made in the panel.**
 
-[Next: Languages administration panel](https://docs.textpattern.io/administration/languages-panel)
+[Next: Languages panel](https://docs.textpattern.io/administration/languages-panel)

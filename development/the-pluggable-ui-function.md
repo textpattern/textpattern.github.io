@@ -65,10 +65,10 @@ Callbacks written with `pluggable_ui` have a different signature than those writ
 </div>
 
 Argument #1
-: `_ui` (for 'user interface') and begins with the event to which it refers. For example, on the Write administration panel the event is `article_ui`, and on the Files administration panel the event is `file_ui`. Straightforward.
+: `_ui` (for 'user interface') and begins with the event to which it refers. For example, on the Write panel the event is `article_ui`, and on the Files panel the event is `file_ui`. Straightforward.
 
 Argument #2
-: The `$step`, is usually the part of the panel that contains the widget or any of its controls you wish to change. For example, on the Write administration panel, the Article image control has a `$step` called `article_image` and the Custom fields widget has one called `custom_fields`, and so on.
+: The `$step`, is usually the part of the panel that contains the widget or any of its controls you wish to change. For example, on the Write panel, the Article image control has a `$step` called `article_image` and the Custom fields widget has one called `custom_fields`, and so on.
 
 Arguments 3, 4, and 5 are optional depending on what you're trying to do...
 
@@ -135,13 +135,13 @@ The admin side has many places where plugins and themes can inject or replace co
 
 `{event}_ui > inputlabel.{name}`
 : **When it occurs:** Whenever a label plus its associated input control are rendered together. The `{event}` is the panel on which the widget appears. The `{name}` is the control's `name` attribute.
-: **What it allows:** Alteration of any label and input control, such as those found on the Preferences administration panel or the File Edit panel.
+: **What it allows:** Alteration of any label and input control, such as those found on the Preferences panel or the File Edit panel.
 : **Argument \#3:** The default markup.
 : **Argument \#4:** The values passed in as arguments to the function: `name`, `input`, `label`, `help`, `atts`, `wraptag_val`.
 
 `{event}_ui > upload_form`
 : **When it occurs:** Whenever an HTML upload form  is rendered. The `{event}` is the panel on which the form control appears.
-: **What it allows:** Alteration of an upload form, such as those found on the Files and Images administration panels.
+: **What it allows:** Alteration of an upload form, such as those found on the Files and Images panels.
 : **Argument \#3:** The default markup.
 : **Argument \#4:** The values passed in as arguments to the function.
 
@@ -153,7 +153,7 @@ The admin side has many places where plugins and themes can inject or replace co
 
 `admin_help_field > {string}`
 : **When it occurs:** Whenever inline help is rendered that explains a particular UI feature. The `{string}` is the key of the `gTxt()` translation string to fetch that describes the UI feature.
-: **What it allows:** Addition of content below an input control to further explain its role. For example, the 'Title' element on the Write administration panel might give information about what constitutes a good, concise title for your articles.
+: **What it allows:** Addition of content below an input control to further explain its role. For example, the 'Title' element on the Write panel might give information about what constitutes a good, concise title for your articles.
 : **Argument \#3:** The default markup.
 : **Argument \#4:** The value of `help_var` passed into the function.
 

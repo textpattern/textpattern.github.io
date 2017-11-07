@@ -170,7 +170,7 @@ Sections basically control in what area of your website your article will be dis
 
 #### Category
 
-This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an 'Edit' link. Assigning categories of course only works if *there is* at least one article category in the [Categories administration panel](https://docs.textpattern.io/administration/categories-panel) (there are three sample ones in a default install). The 'Edit' link will open the Categories panel, where you can create or edit categories.
+This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an 'Edit' link. Assigning categories of course only works if *there is* at least one article category in the [Categories panel](https://docs.textpattern.io/administration/categories-panel) (there are three sample ones in a default install). The 'Edit' link will open the Categories panel, where you can create or edit categories.
 
 The drop-down menus will both list *all* categories by their *title*. This basically allows you to put an article in up to two different categories, which you can then manipulate later according to your planned site architecture and content presentation (such level of discussion is out of scope here). For saved articles this control will show existing category assignments.
 
@@ -212,7 +212,7 @@ The Keywords text area allows you to specify a comma-separated list of words tha
 
 ### Comment options
 
-**Note:** The Comment options region in the Write panel is actually a second-level setting for managing comments at *per article* level; you should have already configured your settings for first-level (site-level) comment management, which is handled in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel) at 'Publish' and 'Comments'. There you will find different Comments settings that need your consideration about how to handle comments for all articles in your site by default. If the preference 'Accept comments?' is set to 'No', then  the Comment options section will not appear in the Write panel. Two of the settings - 'On by default?' and 'Default invite' - will determine the defaults in the Comments control at article level. Here, as described below, you can adjust the behaviour as you desire for a particular article.
+**Note:** The Comment options region in the Write panel is actually a second-level setting for managing comments at *per article* level; you should have already configured your settings for first-level (site-level) comment management, which is handled in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) at 'Publish' and 'Comments'. There you will find different Comments settings that need your consideration about how to handle comments for all articles in your site by default. If the preference 'Accept comments?' is set to 'No', then  the Comment options section will not appear in the Write panel. Two of the settings - 'On by default?' and 'Default invite' - will determine the defaults in the Comments control at article level. Here, as described below, you can adjust the behaviour as you desire for a particular article.
 
 #### On/Off
 
@@ -222,7 +222,7 @@ With a pair of on/off radio buttons you either accept or deny comments for the g
 
 The Invitation field that allows you to customize the text for the link that users will see if comments are 'on'.
 
-The comment link itself will lead to the location in your site where a visitor can actually add a comment to your article. By default the link text is "Comment", but other possibilities might include: "Leave a comment…", "Speak up!", "Respond", etc. - whatever you want. If you choose to have a single invitation for use with all of your articles then it is easiest to just set that value in your site-level Comments settings in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
+The comment link itself will lead to the location in your site where a visitor can actually add a comment to your article. By default the link text is "Comment", but other possibilities might include: "Leave a comment…", "Speak up!", "Respond", etc. - whatever you want. If you choose to have a single invitation for use with all of your articles then it is easiest to just set that value in your site-level Comments settings in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
 
 ### Article image
 
@@ -236,7 +236,7 @@ This feature could be used to power:
 
 There are two ways to assign an image to an article:
 
-1. By ID (as it appears in the [Images administration panel](https://docs.textpattern.io/administration/images-panel); this only works for images managed through the Textpattern Images administration panel).
+1. By ID (as it appears in the [Images panel](https://docs.textpattern.io/administration/images-panel); this only works for images managed through the Textpattern Images panel).
 2. By an absolute URL to the image, such as `/images/imagefile.png`.
 
 Once the image is associated with an article, [article_image](https://docs.textpattern.io/tags/article_image) is used to display it by placing this tag within 'article' type [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
@@ -276,12 +276,12 @@ Depending on the text filters you have installed (i.e. Textile (the default), Ma
 
 ### Recent articles
 
-The last option is 'Recent articles', and there's not much to say about this option other than it toggles a list of titles for the last ten *most recently modified* articles (new or edited). This makes it easier to move between articles you might want to work on without actually having to jump between the Write panel and the [Articles administration panel](https://docs.textpattern.io/administration/articles-panel).
+The last option is 'Recent articles', and there's not much to say about this option other than it toggles a list of titles for the last ten *most recently modified* articles (new or edited). This makes it easier to move between articles you might want to work on without actually having to jump between the Write panel and the [Articles panel](https://docs.textpattern.io/administration/articles-panel).
 
 ## Final notes to be aware of
 
-Especially if you like to save your work from time to time while not yet finished, you should take care of the article's *Status*: By default it is 'Live' (although you can change that setting in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel)) - so using 'Save' (or 'Publish') in an unfinished state without altering its status to 'Draft' (recommended) or 'Hidden' will make an article **public** before its time. Pay attention!
+Especially if you like to save your work from time to time while not yet finished, you should take care of the article's *Status*: By default it is 'Live' (although you can change that setting in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel)) - so using 'Save' (or 'Publish') in an unfinished state without altering its status to 'Draft' (recommended) or 'Hidden' will make an article **public** before its time. Pay attention!
 
 When you are done with writing or editing an article, particularly if it's a new article, you will want to make sure you have the various controls on the secondary column of the Write panel configured appropriately. These regard *publishing* an article (or keep it unpublished) in various ways. They come in two portions: Controls you always need statically at the top and a portion of optional controls which you can use for further fine-tuning.
 
-[Next: Articles administration panel](https://docs.textpattern.io/administration/articles-panel)
+[Next: Articles panel](https://docs.textpattern.io/administration/articles-panel)

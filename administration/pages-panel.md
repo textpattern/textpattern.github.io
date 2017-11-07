@@ -3,12 +3,12 @@ layout: document
 category: Administration
 published: true
 title: Pages panel
-description: The Pages administration panel is where the Page templates used within a Textpattern website are created and edited.
+description: The Pages panel is where the Page templates used within a Textpattern website are created and edited.
 ---
 
 # Pages panel
 
-The Pages administration panel contains an edit field, a list of existing [Page templates](https://docs.textpattern.io/themes/page-templates-explained), and a tag builder to help you construct page content. It's important to note that, like everything else, the Page templates are stored in the database - there is no physical file on the server that contains this Page template.
+The Pages panel contains an edit field, a list of existing [Page templates](https://docs.textpattern.io/themes/page-templates-explained), and a tag builder to help you construct page content. It's important to note that, like everything else, the Page templates are stored in the database - there is no physical file on the server that contains this Page template.
 
 On this page:
 
@@ -33,4 +33,4 @@ If you have already altered the 'Page name' field before duplication, the new Pa
 
 Your new Page template is then immediately available for editing.
 
-[Next: Forms administration panel](https://docs.textpattern.io/administration/forms-panel)
+[Next: Forms panel](https://docs.textpattern.io/administration/forms-panel)

@@ -65,9 +65,9 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `category1,category2`.
 
 `no_widow="boolean"` <span class="footnote warning">v4.0.7+</span>
-: Control [widows](https://en.wikipedia.org/wiki/Widows_and_orphans) and overrule 'widows' setting in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
+: Control [widows](https://en.wikipedia.org/wiki/Widows_and_orphans) and overrule 'widows' setting in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
 : **Values:** `0` allow the last word in the title to appear on its own line, i.e. the title content is rendered unchanged, `1` ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
-: **Default:** as set in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
+: **Default:** as set in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
 
 `offset="integer"` <span class="footnote warning">v4.6.0+</span>
 : The number of articles to skip.

@@ -3,12 +3,12 @@ layout: document
 category: Administration
 published: true
 title: Links panel
-description: The Links administration panel provides a way of keeping track of links and lists of external resources.
+description: The Links panel provides a way of keeping track of links and lists of external resources.
 ---
 
 # Links panel
 
-The Links administration panel provides a way of keeping track of links and lists of resources (often external to the site) so they may be included in article content or [Form templates](https://docs.textpattern.io/themes/form-templates-explained) in a convenient way.
+The Links panel provides a way of keeping track of links and lists of resources (often external to the site) so they may be included in article content or [Form templates](https://docs.textpattern.io/themes/form-templates-explained) in a convenient way.
 
 On this page:
 
@@ -85,7 +85,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of links which meet the criteria.
 
@@ -107,7 +107,7 @@ The default view shows these columns:
 
 **URL:** the actual hyperlink value of the link - click this to open the target destination in a new browser window.
 
-**Author:** the author who created the link record (only if more than one author exists in the [Users administration panel](https://docs.textpattern.io/administration/users-panel)).
+**Author:** the author who created the link record (only if more than one author exists in the [Users panel](https://docs.textpattern.io/administration/users-panel)).
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
@@ -127,4 +127,4 @@ For performing changes now you go to the drop-down list 'With selected...' and c
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of links listed per page by selecting another value from the number range.
 
-[Next: Categories administration panel](https://docs.textpattern.io/administration/categories-panel)
+[Next: Categories panel](https://docs.textpattern.io/administration/categories-panel)

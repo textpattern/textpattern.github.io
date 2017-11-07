@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: Thumbnail
-description: Tag that Textpattern will replace with an 'img' HTML tag matching an image thumbnail set via the Images administration panel.
+description: Tag that Textpattern will replace with an 'img' HTML tag matching an image thumbnail set via the Images panel.
 tags:
   - Image tags
 ---
@@ -23,7 +23,7 @@ On this page:
 <txp:thumbnail />
 ~~~
 
-The **thumbnail** tag is a *single* tag that Textpattern will replace with the `<img src="...">` HTML tag matching the thumbnail image of the numeric `id` assigned by Textpattern when the parent image was uploaded via the Textpattern [Images administration panel](https://docs.textpattern.io/administration/images-panel).
+The **thumbnail** tag is a *single* tag that Textpattern will replace with the `<img src="...">` HTML tag matching the thumbnail image of the numeric `id` assigned by Textpattern when the parent image was uploaded via the Textpattern [Images panel](https://docs.textpattern.io/administration/images-panel).
 
 By default, the tag is context-sensitive: if an `id` or `name` attribute is not specified, it can be used inside an [images](images) tag or form to output an `<img src="...">` HTML tag matching the thumbnail of the current image.
 
@@ -44,7 +44,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `id="integer"`
-: Specifies the `id` assigned at upload of the image to display. Can be found on the Textpattern [Images administration panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](images) tag or form.
+: Specifies the `id` assigned at upload of the image to display. Can be found on the Textpattern [Images panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](images) tag or form.
 
 `link="boolean"` <span class="footnote warning">v4.0.6+</span>
 : If set, the thumbnail will be rendered as a (non-Javascript) URL link to the full-size image.
@@ -56,7 +56,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `name="image name"`
-: Specifies which image thumbnail to display by its image name as shown on the Textpattern [Images administration panel](https://docs.textpattern.io/administration/images-panel).
+: Specifies which image thumbnail to display by its image name as shown on the Textpattern [Images panel](https://docs.textpattern.io/administration/images-panel).
 
 `poplink="boolean"`
 : If set, the image will be rendered in a popup window.

@@ -404,7 +404,7 @@ search results, in which context
 
 looks for a form called “search_results”.
 
-Go to [Forms administration panel](https://docs.textpattern.io/administration/forms-panel).
+Go to [Forms panel](https://docs.textpattern.io/administration/forms-panel).
 We're going to overwrite the “default” and “search_results” forms, so
 if you want to keep the originals copy each of them and make new forms
 to hold the backups. Again, this is optional, because you can always

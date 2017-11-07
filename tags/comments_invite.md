@@ -22,7 +22,7 @@ On this page:
 <txp:comments_invite />
 ~~~
 
-The **comments_invite** tag is a *single* tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern [Write administration panel](https://docs.textpattern.io/administration/write-panel).
+The **comments_invite** tag is a *single* tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern [Write panel](https://docs.textpattern.io/administration/write-panel).
 
 This tag can be used in both Textpattern [Page templates](https://docs.textpattern.io/themes/page-templates-explained) and [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
 

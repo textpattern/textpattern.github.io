@@ -3,12 +3,12 @@ layout: document
 category: Administration
 published: true
 title: Forms panel
-description: The Forms administration panel is where the Form templates used within a Textpattern website are created and edited.
+description: The Forms panel is where the Form templates used within a Textpattern website are created and edited.
 ---
 
 # Forms panel
 
-The Forms administration panel contains an edit field, a list of existing [Form templates](https://docs.textpattern.io/themes/form-templates-explained) organized by rough categories, and a tag builder to help you construct Form template content. It's important to note that, like everything else, the Form templates are stored in the database - there is no physical file on the server that contains this Form template.
+The Forms panel contains an edit field, a list of existing [Form templates](https://docs.textpattern.io/themes/form-templates-explained) organized by rough categories, and a tag builder to help you construct Form template content. It's important to note that, like everything else, the Form templates are stored in the database - there is no physical file on the server that contains this Form template.
 
 On this page:
 
@@ -45,4 +45,4 @@ If you have already altered the 'Form name' field before duplication, the new Fo
 
 Your new Form template is then immediately available for editing.
 
-[Next: Styles administration panel](https://docs.textpattern.io/administration/styles-panel)
+[Next: Styles panel](https://docs.textpattern.io/administration/styles-panel)

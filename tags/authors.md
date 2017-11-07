@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: Authors
-description: The authors tag is used to gather a list of authors designated within the Textpattern Users administration panel.
+description: The authors tag is used to gather a list of authors designated within the Textpattern Users panel.
 tags:
   - Article tags
   - List tags
@@ -24,7 +24,7 @@ On this page:
 <txp:authors>
 ~~~
 
-The **authors** tag is a *single* or *container* tag that Textpattern will use to gather a list of authors designated within the Textpattern [Users administration panel](https://docs.textpattern.io/administration/users-panel).
+The **authors** tag is a *single* or *container* tag that Textpattern will use to gather a list of authors designated within the Textpattern [Users panel](https://docs.textpattern.io/administration/users-panel).
 
 If used as a *container* tag, it must be specified as an opening and closing pair of tags, like this:
 

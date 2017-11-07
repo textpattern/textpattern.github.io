@@ -55,7 +55,7 @@ Your admin theme files should be packaged into a single folder. The folder shoul
 
 ### Adding admin themes to your site
 
-All packaged themes, like above, are added to `/textpattern/admin-themes` in your Textpattern installation. This makes them available from the Preferences administration panel of the admin-side.
+All packaged themes, like above, are added to `/textpattern/admin-themes` in your Textpattern installation. This makes them available from the Preferences panel of the admin-side.
 
 In fact, you could simply duplicate an out-of-box theme folder and files (whether 'Hive' or 'Classic'), rename the folder to your new theme name, select the new theme from the admin preferences, and develop your new theme directly in place in the `/textpattern/admin-themes` directory so changes reflect on your website as you work.
 

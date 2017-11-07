@@ -3,12 +3,12 @@ layout: document
 category: Administration
 published: true
 title: Files panel
-description: The Files administration panel provides central management tools for download files you want to include in your website.
+description: The Files panel provides central management tools for download files you want to include in your website.
 ---
 
 # Files panel
 
-The Files administration panel provides central management tools for download files you want to include in your website. It keeps the file, it's description, and automatic information of file size together, as well as organizing file lists and other functions. So you can place download links and lists of downloads in your article content or [Form templates](https://docs.textpattern.io/themes/form-templates-explained) in a very convenient way. If you need to update a file, you can do it once in a central place and don't need to bother where you already have placed a link to it.
+The Files panel provides central management tools for download files you want to include in your website. It keeps the file, it's description, and automatic information of file size together, as well as organizing file lists and other functions. So you can place download links and lists of downloads in your article content or [Form templates](https://docs.textpattern.io/themes/form-templates-explained) in a very convenient way. If you need to update a file, you can do it once in a central place and don't need to bother where you already have placed a link to it.
 
 On this page:
 
@@ -82,7 +82,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of files which meet the criteria.
 
@@ -110,7 +110,7 @@ The default view shows these columns:
 
 **Downloads:** an indicator of how many downloads of this file have taken place.
 
-**Author:** the author who created the file record (only if more than one author exists in the [Users administration panel](https://docs.textpattern.io/administration/users-panel)).
+**Author:** the author who created the file record (only if more than one author exists in the [Users panel](https://docs.textpattern.io/administration/users-panel)).
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
@@ -136,4 +136,4 @@ For performing changes now you go to the drop-down list 'With selected...' and c
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of files listed per page by selecting another value from the number range.
 
-[Next: Links administration panel](https://docs.textpattern.io/administration/links-panel)
+[Next: Links panel](https://docs.textpattern.io/administration/links-panel)

@@ -35,11 +35,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `html`.
 
 `id="integer"`
-: An `id` assigned at upload of an image to display. The IDs can be found on the [Images administration panel](https://docs.textpattern.io/administration/images-panel).
+: An `id` assigned at upload of an image to display. The IDs can be found on the [Images panel](https://docs.textpattern.io/administration/images-panel).
 : **Default:** unset.
 
 `name="image name"`
-: An image to display, given by its image name as shown on the [Images administration panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
+: An image to display, given by its image name as shown on the [Images panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
 : **Default:** unset.
 
 `type="information type"`

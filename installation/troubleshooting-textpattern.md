@@ -26,7 +26,7 @@ On this page:
 
 ## The Tag Trace
 
-Whether you're experiencing site slowdowns, bugs in your site templates, or looking for misbehaving plugins, the Tag Trace is an essential diagnostics tool. To switch it on, set the [Production Status](https://docs.textpattern.io/administration/preferences-panel#site-preferences) on the Preferences administration panel to 'Debugging'. Whenever this mode is on, Textpattern appends a Tag Trace to the HTML output of each page - both on the admin side and public website. This is your key to working out which Textpattern tags are being executed and their outcome.
+Whether you're experiencing site slowdowns, bugs in your site templates, or looking for misbehaving plugins, the Tag Trace is an essential diagnostics tool. To switch it on, set the [Production Status](https://docs.textpattern.io/administration/preferences-panel#site-preferences) on the Preferences panel to 'Debugging'. Whenever this mode is on, Textpattern appends a Tag Trace to the HTML output of each page - both on the admin side and public website. This is your key to working out which Textpattern tags are being executed and their outcome.
 
 View the HTML source of the page, and scroll to the bottom. The trace looks something like this:
 
@@ -102,7 +102,7 @@ Every plugin, every database query, and its associated 'cost' in terms of memory
 
 It is also a good place to check your Page and Form logic, because it shows the result of conditional tags. If part of your page is not showing where you expect, the tag trace can help find errors in your templates. By putting the site in debugging mode, it also highlights any PHP errors on each page, which may lead to further investigative work.
 
-Since the tag trace is output on the administration panels too, you can use it to find poorly-behaving plugins and fix/optimise them.
+Since the tag trace is output on the panels too, you can use it to find poorly-behaving plugins and fix/optimise them.
 
 If the problem persists and you can't fathom it out, post the _relevant parts_ of the tag trace in a new topic on the [Textpattern Forum](https://forum.textpattern.com/) along with a description of the problem or what you expect to see, and someone will endeavour to help you out.
 
@@ -112,7 +112,7 @@ Normally, Textpattern is one of the fastest CMS platforms around. There are, how
 
 ### Slow website
 
-From the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel) set the 'Production status' to 'Testing' and load a page. Textpattern records the time it takes to generate and send each page. View the HTML source and scroll to the bottom. You can check the runtime figure to distinguish between slowdowns during page generation, and those that occur afterwards (i.e. during page rendering).
+From the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) set the 'Production status' to 'Testing' and load a page. Textpattern records the time it takes to generate and send each page. View the HTML source and scroll to the bottom. You can check the runtime figure to distinguish between slowdowns during page generation, and those that occur afterwards (i.e. during page rendering).
 
 On a properly configured web server with a normal load and typical Textpattern templates and content, expected ranges are:
 
@@ -138,11 +138,11 @@ If you're experiencing consistently high numbers for Runtime, Query and Memory c
 
 A runtime figure that regularly measures 1 second or more usually indicates one of a few things:
 
-* DNS issues: a slow or misconfigured DNS server at your web hosting company can cause high page runtimes. Usually this occurs in the Textpattern logging code. In the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel), set 'Use DNS?' to 'No', and see if that makes a difference. If not, try disabling logging altogether.
+* DNS issues: a slow or misconfigured DNS server at your web hosting company can cause high page runtimes. Usually this occurs in the Textpattern logging code. In the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel), set 'Use DNS?' to 'No', and see if that makes a difference. If not, try disabling logging altogether.
 * Plugins: plugins aren't necessarily as efficient as Textpattern itself. If your performance problems coincide with the installation of a plugin, or occur only on a particular page template that invokes a plugin, try disabling it and see if there's a difference. If your page won't display properly without the plugin, try temporarily reverting to the default Textpattern Page template and Form template.
 * PHP code: if you've included any PHP code in your page templates, whether directly in the template or indirectly via an `include()` call or similar, try disabling it. In particular, check for any code that might try to fetch a file from an external server, e.g. by using a `http://..` URL in an `fopen()` or `include()` call.
 * MySQL issues: MySQL doesn't have to run on the same physical machine as your web server. Some hosting companies run these on separate servers connected by a fast LAN connection, which is fine. However, if Textpattern and MySQL are on entirely different networks, performance will be unavoidably slow, since all MySQL queries and results must travel back and forth over a comparatively slow internet connection every time a Textpattern page is viewed. Other MySQL performance problems can be harder to diagnose. An overloaded MySQL server can slow down Textpattern - ask your hosting company if this could be the case.
-* Spam blocklist: sometimes the built-in blocklist checking causes page slowdowns. Go to the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel) and remove `sbl.spamhaus.org` from the 'Spam blocklists' preference if it is there.
+* Spam blocklist: sometimes the built-in blocklist checking causes page slowdowns. Go to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) and remove `sbl.spamhaus.org` from the 'Spam blocklists' preference if it is there.
 
 #### Queries and Memory
 
@@ -176,8 +176,8 @@ Use a [feed validator](http://www.feedvalidator.org/) if you suspect a feed prob
 
 Some other avenues of exploration:
 
-* If the feed validator reports you have a missing description element, make sure there's something entered in the 'Site slogan' field in your [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
-* If your feeds are empty or don't contain the right articles, check the 'Syndicate?' option, found on the [Sections administration panel](https://docs.textpattern.io/administration/sections-panel). Sections that have the 'Syndicate?' option turned off will not show up in your feeds. Your articles must also have their status set to 'Live' (not 'Sticky').
+* If the feed validator reports you have a missing description element, make sure there's something entered in the 'Site slogan' field in your [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
+* If your feeds are empty or don't contain the right articles, check the 'Syndicate?' option, found on the [Sections panel](https://docs.textpattern.io/administration/sections-panel). Sections that have the 'Syndicate?' option turned off will not show up in your feeds. Your articles must also have their status set to 'Live' (not 'Sticky').
 * If your browser tries to download the feed when the feed's link is clicked then, depending on your browser, this is the correct behaviour. More likely than not, your browser is not capable of displaying XML. As the feeds are sent with the correct MIME type, your browser offers to download the file, rather than just displaying the raw content. This is the correct behaviour, and your feed should work in a proper feed aggregator.
 * If you want to set up feed autodetection, you'll need to add tags like the following to the `<head>` of your main page:
 
@@ -192,7 +192,7 @@ Notices when your [Production status](https://docs.textpattern.io/administration
 
 Errors such as `Unexpected end of file`, `Call to undefined function` or `Failed to read stream` are usually a symptom that the files you uploaded to the web server didn't transfer properly or that the information in your `config.php` is incorrect. Uploading all the Textpattern system files again often remedies this, ensuring that the `.php` and `.js` files are uploaded as ASCII, not binary.
 
-If, however, some or all pages of your site - or Textpattern administration panels - are throwing HTTP status code error messages, they are more serious. In those cases, here are some things you can try:
+If, however, some or all pages of your site - or Textpattern panels - are throwing HTTP status code error messages, they are more serious. In those cases, here are some things you can try:
 
 ### 500 Internal Server Error
 

@@ -8,7 +8,7 @@ description: Sections are the principle content organization mechanism in Textpa
 
 # Sections panel TODO
 
-Sections are the principle content organization mechanism in Textpattern, and the Sections administration panel is where you manage them.
+Sections are the principle content organization mechanism in Textpattern, and the Sections panel is where you manage them.
 
 On this page:
 
@@ -30,9 +30,9 @@ On this panel you can do two things:
 
 ## How do sections apply to Textpattern?
 
-Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel#article-url-pattern).
+Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#article-url-pattern).
 
-In the Sections administration panel, you're able to define what [Pages](https://docs.textpattern.io/administration/pages-panel) and [Styles](https://docs.textpattern.io/administration/styles-panel) will be used for the [Articles](https://docs.textpattern.io/administration/articles-panel) published in context to a given section. You can also control if articles posted in that section will be seen on the front page of the site, and whether or not the articles will be included in site searches.
+In the Sections panel, you're able to define what [Pages](https://docs.textpattern.io/administration/pages-panel) and [Styles](https://docs.textpattern.io/administration/styles-panel) will be used for the [Articles](https://docs.textpattern.io/administration/articles-panel) published in context to a given section. You can also control if articles posted in that section will be seen on the front page of the site, and whether or not the articles will be included in site searches.
 
 Textpattern includes one sections by default: 'Articles'.
 
@@ -42,7 +42,7 @@ This button will take you to the Section property editor (see below) where you c
 
 ## Default publishing section
 
-Here you can select what section you'd like to be the default choice when starting to write a new article. This can be overrode of course in the Write administration panel per article.
+Here you can select what section you'd like to be the default choice when starting to write a new article. This can be overrode of course in the Write panel per article.
 
 ## Editing sections
 
@@ -86,7 +86,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles administration panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of links which meet the criteria.
 
@@ -112,4 +112,4 @@ For performing changes now you go to the drop-down list 'With selected...' and c
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of sections listed per page by selecting another value from the number range.
 
-[Next: Pages administration panel](https://docs.textpattern.io/administration/pages-panel)
+[Next: Pages panel](https://docs.textpattern.io/administration/pages-panel)

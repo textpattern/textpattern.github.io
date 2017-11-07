@@ -50,17 +50,17 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `files`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it’s for:** Empty by default. It’s where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files administration panel](https://docs.textpattern.io/administration/files-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics administration panel](https://docs.textpattern.io/administration/diagnostics-panel).
+: **What it’s for:** Empty by default. It’s where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files panel](https://docs.textpattern.io/administration/files-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel).
 
 `images`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it’s for:** Empty by default. It's where images will go when you upload them in the [Images administration panel](https://docs.textpattern.io/administration/images-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics administration panel](https://docs.textpattern.io/administration/diagnostics-panel).
+: **What it’s for:** Empty by default. It's where images will go when you upload them in the [Images panel](https://docs.textpattern.io/administration/images-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel).
 
 `rpc`
 : **Type:** directory.
 : **Removable?:** yes.
-: **What it’s for:** Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel#enable-xml-rpc-server).
+: **What it’s for:** Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#enable-xml-rpc-server).
 
 `sites`
 : **Type:** directory.
@@ -85,7 +85,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `css.php`
 : **Type:** file.
 : **Removable?:** yes/no.
-: **What it’s for:** Negotiates the front-end stylesheets you create in the [Styles administration panel](https://docs.textpattern.io/administration/styles-panel). If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
+: **What it’s for:** Negotiates the front-end stylesheets you create in the [Styles panel](https://docs.textpattern.io/administration/styles-panel). If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
 
 `README.txt`
 : **Type:** file.
@@ -132,7 +132,7 @@ Choose the language you want and click the **Submit** button.
 
 [^3]: If you don't see this screen, check your URL path. Should it be `https` or `www.`? Did you install in a sub-directory? Is there a typo?
 
-[^4]: You can change the UI language any time after setup in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel).
+[^4]: You can change the UI language any time after setup in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
 
 ### Step 1: Set database details
 
@@ -232,5 +232,5 @@ The screen will also suggest deleting the `/setup` directory for security reason
 
 1. Use your S/FTP client to connect to your web server. Go to the `/textpattern/setup` directory, and delete it (contents too). This eliminates one potential diagnostic warning you would otherwise see later.
 2. Return to your browser screen and click the "Main interface" link, which takes you to the administration login location. Log in using your new administrator account details (entered on the previous install screen), and check the box for remembering you, if you like. 
-3. Proceed to the [Diagnostics administration panel](https://docs.textpattern.io/administration/diagnostics-panel), as Textpattern suggested, to troubleshoot any warnings and errors you see.
+3. Proceed to the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel), as Textpattern suggested, to troubleshoot any warnings and errors you see.
 4. Go to the public side of your website (the homepage), easy to do by clicking its name in the navigation bar of any admin-side location. Read the tips and suggestions provided on the default article titled, 'Welcome to your site'. They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.
