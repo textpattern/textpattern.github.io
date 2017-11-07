@@ -8,7 +8,9 @@ description: The Write panel reveals the various features for managing articles 
 
 # Write panel
 
-The Write administration panel is the default panel opened when you log into Textpattern's admin-side (see Figure 1). This panel reveals the various features for managing articles on your website, which includes creating new articles, editing existing articles, assigning (or reassigning) articles to sections and categories, setting the time and date of articles, and various other abilities that are covered in the following description.
+The Write panel is the default panel of the administration side of Textpattern; it opens when you log in to the admin-side (see Figure 1). The exceptions are when 1) you log in after a new update of your Textpattern installation, in which case you’re initially routed to the [Languages panel](https://docs.textpattern.io/administration/languages-panel), or 2) if you change the default panel to something else via the preference for it in the **Admin** section of the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel). (The Languages and Preferences panels are both under the main Admin menu.) 
+
+The Write panel reveals the editing fields for article content, and various controls for managing content display and publication, such as content organization, date and time, associated images, how you want to format your text, and so on.
 
 On this page:
 
@@ -241,7 +243,18 @@ Once the image is associated with an article, [article_image](https://docs.textp
 
 ### Custom fields
 
-Custom fields are defined in the [Preferences administration panel](https://docs.textpattern.io/administration/preferences-panel) custom fields section, which then makes them available for use here in the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever tag constructs you create using the [custom_field](https://docs.textpattern.io/tags/custom_field) (and possibly the [if_custom_field](https://docs.textpattern.io/tags/if_custom_field)) tag(s).
+Custom fields are defined in the **Custom fields** section of the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel), which then makes them available for use here in the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever constructs you create using the [custom_field](https://docs.textpattern.io/tags/custom_field) tag, and possibly the [if_custom_field](https://docs.textpattern.io/tags/if_custom_field)) tag.
+
+**Tip:** You can also treat the **Article image** field, described above, as a custom field (i.e. ). This is useful when you need to isolate the ID value in context of the image so you can pull other parameters for the article. For example, the following markup (demonstrated as a figure) allows isolating the different parts of the image path — in this case focusing on the ID value in context of the image — to display the images Caption value too:
+
+~~~ html
+<figure>
+  <txp:images id='<txp:custom_field name="article_image" />'>
+    <img src="/images/<txp:image_info type="id" /><txp:image_info type="ext" />" />
+    <figcaption><txp:image_info type="caption" /></figcaption>
+  </txp:images>
+</figure>
+~~~
 
 ### Advanced options
 
