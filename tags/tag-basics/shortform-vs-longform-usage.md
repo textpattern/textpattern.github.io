@@ -29,9 +29,9 @@ Consider the following block of standard HTML markup, which defines displaying a
 </figure>
 ~~~  
 
-That’s straightforward and understandable. The 3 essential HTML elements are there, the image path is defined (the name is the image’s ID value in this case), and the caption is readable. But it’s all static. You have to manually write in the image path and caption content. We have not effectively separated content from structure and presentation. Whether an `alt=“”` attribute for the image is needed alongside a caption is arguable (and might be in some situations) but that could be another manual entry too.
+That’s straightforward and understandable. The 3 essential HTML elements are there, the image path is defined (the name is the image’s ID value in this case), and the caption is readable. But it’s all static. You have to manually write in the image path and caption content. We have not effectively separated content from structure and presentation. It’s arguable if an `alt=""` attribute is needed alongside a caption in this case (and it might be needed in certain situations), but that would be another manual entry too.
 
-But you want the power of server-side functionality, and you _should_ want to separate content from it’s structural and presentational constructs as much as possible, so enter Textpattern.
+Regardless, you want the power of server-side functionality, which is why you’ve opted to try Textpattern, and you _should_ want to separate content from it’s structural and presentational constructs as much as possible, so let’s look at the two ways of writing markup.
 
 ## HTML and Textpattern tags (long-form) 
 
