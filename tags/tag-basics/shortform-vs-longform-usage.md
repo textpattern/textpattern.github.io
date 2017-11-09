@@ -10,13 +10,13 @@ description: There are often many ways to write markup as a mix of Textpattern a
 
 There are often many ways to write markup as a mix of Textpattern and HTML tags to achieve the same functional objectives. Add in the possibility of plugin tags too, and markup can get lengthy and complex. 
 
-When first learning Textpattern, it’s often easier to use a long-form notation, and especially if already familiar with HTML, but even moreso if not. This allows seeing standard HTML tags and attributes distinctly from those of Textpattern (and potential plugins). The result is often larger blocks of markup, but for the Textpattern beiginner it can be easier to understand. 
+When first learning Textpattern, it’s often easier to use a long-form notation, and especially if already familiar with HTML, but even moreso if not. This allows seeing standard HTML tags and attributes distinctly from those of Textpattern (and potential plugins). The result is often larger blocks of markup, but it can be easier to understand for the Textpattern beginner. 
 
 As one becomes more knowledgable of Textpattern tags and the scope of their functional and presentational attributes, it’s possible to write smaller volumes of markup to achieve the same things. In this case we’re really talking about structure and presentational control, less about functionality.
 
-Their is no right or wrong way. There is only the way that makes it easier for you to understand. But the natural tendency over time is for people to start with long-form notation, then tighten up the markup (i.e. use fewer characters overall) as they get more familiar with Textpattern tags. 
+There is no right or wrong way, only the way that makes it easier for you to understand. But the natural tendency over time is for people to start with long-form notation, then tighten up the mix of markup toward a lean on Textpattern tags as they get more familiar with them. The result, as a side benefit, is often fewer characters used overall. 
 
-We should only need one example to demonstrate the idea and difference. Your hands-on with learning Textpattern tags will lead you to discover more.
+We should only need one simple example to demonstrate the idea and difference. Your hands-on with learning Textpattern tags will lead you to discover more.
 
 ## Standard HTML
 
