@@ -146,7 +146,7 @@ Finally, we eliminate the explicite use of the HTML `figcaption` tag by using th
 …
 ~~~
 
-The resulting character count of this block of markup, which is functionally identical to the long-form version previously, is    151 characters, and that’s even with the additional use of the wrapping ‘images’ tag. All-in-all shorter than the long-form notation, but not by a lot. (It’s definitely longer than the static HTML version, but that’s the price for having dynamic functionality.)
+The resulting character count of this block of markup, which is functionally identical to the long-form version previously, is    151 characters, and that’s even with the additional use of the wrapping `images` tag. All-in-all shorter than the long-form notation, but not by a lot. (It’s definitely longer than the static HTML version, but that’s the price for having dynamic functionality.)
 
 But character count is not the most important consideration with respect to whether one uses short-form or long-form notation. Indeed, even some short-form constructions of tag architecture are not much shorter than long-form equivalents. As the markup in the long-form block above shows, we had to include the `images` container tag in order to use the `image_info` tag too. 
 
