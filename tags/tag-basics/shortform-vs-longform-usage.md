@@ -31,13 +31,13 @@ Consider the following block of standard HTML markup, which defines displaying a
 
 That’s straightforward and understandable. The 3 essential HTML elements are there, the image path is defined (the name is the image’s ID value in this case), and the caption is readable. But it’s all static. You have to manually write in the image path and caption content. We have not effectively separated content from structure and presentation. It’s arguable if an `alt=""` attribute is needed alongside a caption in this case (and it might be needed in certain situations), but that would be another manual entry too.
 
-Regardless, you want the power of server-side functionality, which is why you’ve opted to try Textpattern, and you _should_ want to separate content from it’s structural and presentational constructs as much as possible, so let’s look at the two ways of writing markup.
+Regardless, you want the power of server-side functionality, which is why you’ve opted to try Textpattern, and you _should_ want to separate content from it’s structural and presentational constructs as much as possible, so let’s look at the two ways of writing markup in Textpattern.
 
 ## HTML and Textpattern tags (long-form) 
 
 Textpattern helps you construct dynamic publishing architectures by using [Textpattern tags](https://docs.textpattern.io/tags/) _interchangably_ with HTML, which is easier to grasp than having to know PHP scripting.
 
-Here’s the same markup above but with two different Textpattern tags worked in, and with attributes and attribute values adjusted accordingly. This markup is structured in what can be called long-form notation:
+Here’s the same markup above but with two different Textpattern tags worked in, and with attributes and attribute values adjusted accordingly. This markup is structured in what can be called _long-form_ notation:
 
 ~~~ html
 <figure>
@@ -48,7 +48,7 @@ Here’s the same markup above but with two different Textpattern tags worked in
 </figure>
 ~~~
 
-We call this _long-form_ notation because it’s explicit use of HTML tags for layout, and because we’re not doubling up (or more) on values in Textpattern tag attributes. If that leaves you scratching your head, it’s exactly why we’re describing the difference now.
+We call this long-form notation because it’s explicit use of HTML tags for layout, and because we’re not doubling up (or more) on values in Textpattern tag attributes, when possible. If that leaves you scratching your head, it’s exactly why we’re describing the difference now.
 
 Let’s walk through the markup for clarity.
 
@@ -122,7 +122,7 @@ First, we’ve removed the image ID attribute from the `images` tag:
 …
 ~~~
 
-This is not a reflection of short-form notation so much as it’s taking advantage of what we call “article context”. In this case, we can assume the markup block is used in context of an article, and the image ID number has been added to the **Article image** field for the article in which it’s applied. By doing that much, we eliminate having to declare the ID value as an attribute in the `images` tag. (See the [Article image](https://docs.textpattern.io/administration/write-panel#article-image) documentation for more about that field.)
+This is not a reflection of short-form notation so much as it’s taking advantage of what we call “article context”. In this case, we can assume the markup block is used in context of an article, and the image ID number has been added to the [Article image](https://docs.textpattern.io/administration/write-panel#article-image) field for the article in which it’s applied. By doing that much, we eliminate having to declare the ID value as an attribute in the `images` tag.
 
 Next, which _is_ an example of short-form notation, we’ve reduced the image file path to a single instance of `image_info` by declaring the image ID and file extension attribute values to the sole instance of the tag. You can’t do this arbitrarily with all tag attribute parameters, but in this case it is possible, and the shortening result is obvious:
 
@@ -150,8 +150,8 @@ The resulting character count of this block of markup, which is functionally ide
 
 But character count is not the most important consideration with respect to whether one uses short-form or long-form notation. Indeed, even some short-form constructions of tag architecture are not much shorter than long-form equivalents. As the markup in the long-form block above shows, we had to include the `images` container tag in order to use the `image_info` tag too. 
 
-And the character count can change considerably from one given block of markup to another depending on what you’re trying to do. We’ve only demonstrated one simple example here. There are many other possible situations where your markup blocks in templates or forms could be considerably longer and more complex, and even include the tags from plugins you may have installed.
+And the character count can change considerably from one block of markup to another depending on what you’re aiming to do. We’ve only demonstrated one simple example. There are many possible situations where your markup blocks in templates or forms could be longer and more complex, and even include tags for plugins you may have installed.
 
-Instead, what’s most important is your understanding — or that of your client’s, if you’re building a website for them — of the resulting markup, regardless of how it’s written or how long it is. As long as the markup separates content from structure/presentation and you (or the client) understands it, you’re doing well.
+More important than character count is your understanding — or that of your client’s, if you’re building a website for them — of the resulting markup, regardless of how markup is written. As long as the markup separates content from structure/presentation and you (or the client) understands it, you’re doing well.
 
 Long-form notation is generally easier for new Textpattern users to get up to speed with, until they’ve become more familiar with the scope of Textpattern tag functionality. Advanced users of Textpattern generally prefer the short-form notation because it saves character space. But it doesn’t matter either way, as long as the markup is constructed correctly in relation to how Textpattern functions. 
