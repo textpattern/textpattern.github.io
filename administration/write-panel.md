@@ -241,20 +241,38 @@ There are two ways to assign an image to an article:
 
 Once the image is associated with an article, [article_image](https://docs.textpattern.io/tags/article_image) is used to display it by placing this tag within 'article' type [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
 
-### Custom fields
+#### Tip: Using the article image field in relation with captioned figures
 
-Custom fields are defined in the **Custom fields** section of the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel), which then makes them available for use here in the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever constructs you create using the [custom_field](https://docs.textpattern.io/tags/custom_field) tag, and possibly the [if_custom_field](https://docs.textpattern.io/tags/if_custom_field) tag.
+You are not limited to the `article_image` tag. As long as the image is in _context of the article_ (aka _article context_), which it is when adding the ID value to this field, then you can use the [images](https://docs.textpattern.io/tags/images) tag too. This could be useful if you wanted to pull individual data values from the image’s details (see [Images panel](https://docs.textpattern.io/administration/images-panel) documentation). 
 
-**Tip:** You can also treat the **Article image** field, described above, as a custom field. This is useful when you need to isolate the ID value of the image in context of the article it’s applied to so you can pull other parameters from the image’s details. For example, the following markup (demonstrated as a figure) allows isolating the image ID as a custom field value for the `images` tag so that we can, in turn, use the `image_info` tag to display the image’s caption value too:
+For example, here we take advantage of _article context_ by using the `images` and `image_info` tags (and their attributes), along with HTML tags, to display the image as a figure with caption:
 
 ~~~ html
 <figure>
-  <txp:images id='<txp:custom_field name="article_image" />'>
-    <img src="/images/<txp:image_info type="id" /><txp:image_info type="ext" />" />
-    <figcaption><txp:image_info type="caption" /></figcaption>
-  </txp:images>
+   <txp:images>
+      <img src="/images/<txp:image_info type="id, ext" />" />
+      <txp:image_info type="caption" wraptag="figcaption" />
+   </txp:images>
 </figure>
-~~~
+~~~ 
+
+That block of markup (with the middle lines written in [short-form tag notation](https://docs.textpattern.io/tags/tag-basics/shortform-vs-longform-usage)) could be used in an article form, as mentioned, or directly in an article’s **Body** or **Excerpt** fields. 
+
+If you’re adding the markup directly to an article content field, and the Write panel editor is set for using Textile (as described in the _Advanced options_ section below), then you would want to perhaps compact the new-line breaks and indents, and begin the block with the `notextile. ` escape element so Textile doesn’t apply additional HTML markup erroneously. The idea being you never have to touch the markup again once added to the article. The image itself and all associated parameters would be managed in the [Images panel](https://docs.textpattern.io/administration/images-panel) editor.:
+
+~~~ html
+notextile. <figure><txp:images><img src="/images/<txp:image_info type="id, ext" />" /><txp:image_info type="caption" wraptag="figcaption" /></txp:images></figure>
+~~~ 
+
+(While the code example doesn’t wrap well here, it will wrap in the Write panel editor.)
+
+This example can only be done for _one_ image in context. You cannot use the **Article image** field to indicate three image IDs and expect Textpattern to know how to parse them into three different blocks of markup. You can still use different blocks of markup to create different figures in an article, but you would have to declare the IDs for the additional images in the opening `images` tag (i.e. `<txp:images id="n">`, where “n” is the ID value). In fact, you could do all the figures this way and not use the **Article image** field at all. But if you only have one image per article, using the field is a good way to go.
+
+See the [article_image](https://docs.textpattern.io/tags/article_image) tag documentation for other ideas about using the **Article image** field with _multiple_ image IDs.
+
+### Custom fields
+
+Custom fields are defined in the **Custom fields** section of the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel), which then makes them available for use here in the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever constructs you create using the [custom_field](https://docs.textpattern.io/tags/custom_field) tag, and possibly the [if_custom_field](https://docs.textpattern.io/tags/if_custom_field) tag.
 
 ### Advanced options
 
