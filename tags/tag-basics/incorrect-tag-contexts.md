@@ -19,3 +19,5 @@ Certain Textpattern tags are only intended for use in particular places. If you 
 Article context tags will not work in article list [Page templates](https://docs.textpattern.io/themes/page-templates-explained), because list pages are not associated with any single article.
 
 Similarly, 'Comment' form tags may only be used in the form that is used to display each individual comment (usually named `comments`); 'File' form and 'Link' form tags operate likewise.
+
+[Next: Short-form versus long-form usage](shortform-vs-longform-usage)
