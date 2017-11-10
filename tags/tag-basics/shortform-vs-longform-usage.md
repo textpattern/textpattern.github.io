@@ -8,15 +8,15 @@ description: There are often many ways to write markup as a mix of Textpattern a
 
 # Short-form versus long-form usage
 
-There are often many ways to write markup as a mix of Textpattern and HTML tags to achieve the same functional objectives. Add in the possibility of plugin tags too, and markup can get lengthy and complex. 
+There are often many ways to write markup as a mix of Textpattern and HTML tags to achieve the same functional or presentational objectives. Add in the possibility of plugin tags too, and markup can get lengthy and complex. 
 
-When first learning Textpattern, it’s often easier to use a long-form notation, and especially if already familiar with HTML, but even moreso if not. This allows seeing standard HTML tags and attributes distinctly from those of Textpattern (and potential plugins). The result is often larger blocks of markup, but it can be easier to understand for the Textpattern beginner. 
+When first learning Textpattern, it’s often easier to use a long-form notation, and especially if already familiar with HTML, but even moreso if not. In fact, this is how people generally construct their markup at first, without giving it much thought. Long-form notation allows seeing standard HTML tags and attributes distinctly from those of Textpattern (and potential plugins). The result is often larger blocks of markup, but it can be easier to understand for the Textpattern beginner. 
 
-As one becomes more knowledgable of Textpattern tags and the scope of their functional and presentational attributes, it’s possible to write smaller volumes of markup to achieve the same things. In this case we’re really talking about structure and presentational control, less about functionality.
+As one becomes more knowledgable of Textpattern tags and the scope of their functional and presentational attributes, it’s possible to write smaller volumes of markup to achieve the same things. In this case we’re really talking about structure and presentational control, less about functionality. (Advanced functionality can — and often does — involve use of plugin tags too, which increases markup volume beyond Textpattern core functionality.) 
 
 There is no right or wrong way, only the way that makes it easier for you to understand. But the natural tendency over time is for people to start with long-form notation, then tighten up the mix of markup toward a lean on Textpattern tags as they get more familiar with them. The result, as a side benefit, is often fewer characters used overall. 
 
-We should only need one simple example to demonstrate the idea and difference. Your hands-on with learning Textpattern tags will lead you to discover more.
+We should only need one small example to demonstrate the idea and difference. Your hands-on with learning Textpattern tags will lead you to discover more.
 
 ## Standard HTML
 
@@ -29,9 +29,9 @@ Consider the following block of standard HTML markup, which defines displaying a
 </figure>
 ~~~  
 
-That’s straightforward and understandable. The 3 essential HTML elements are there, the image path is defined (the name is the image’s ID value in this case), and the caption is readable. But it’s all static. You have to manually write in the image path and caption content. We have not effectively separated content from structure and presentation. It’s arguable if an `alt=""` attribute is needed alongside a caption in this case (and it might be needed in certain situations), but that would be another manual entry too.
+That’s straightforward and understandable. The 3 essential HTML elements are there, the image path is defined (the name is the image’s ID value in this case), and the caption is readable. But it’s all static. You have to manually write in the image path and caption content. We have not effectively separated content from structure (or presentation if we consider CSS). It’s arguable if an `alt=""` attribute is needed alongside a caption in this case (and it might be needed in certain situations), but that would be another manual entry too.
 
-Regardless, you want the power of server-side functionality, which is why you’ve opted to try Textpattern, and you _should_ want to separate content from it’s structural and presentational constructs as much as possible, so let’s look at the two ways of writing markup in Textpattern.
+Regardless, you want the power of server-side functionality, which is why you’ve opted to try Textpattern. And, in that respect, you _should_ want to separate content from its markup as much as possible. So let’s look at the two possible ways of writing markup in Textpattern.
 
 ## HTML and Textpattern tags (long-form) 
 
@@ -48,7 +48,7 @@ Here’s the same markup above but with two different Textpattern tags worked in
 </figure>
 ~~~
 
-We call this long-form notation because it’s explicit use of HTML tags for layout, and because we’re not doubling up (or more) on values in Textpattern tag attributes, when possible. If that leaves you scratching your head, it’s exactly why we’re describing the difference now.
+We call this long-form notation because it’s explicit use of static HTML tags for structure and layout, and because we’re not doubling up (or more) on values in Textpattern tag attributes, when possible. If that leaves you scratching your head, it’s exactly why we’re describing the difference now.
 
 Let’s walk through the markup for clarity.
 
@@ -62,9 +62,9 @@ Immediately within the HTML `figure` tags are containing Textpattern [`images`](
 …
 ~~~
 
-We need to add this tag container, in this case, to make use of the corresponding [`image_info`](https://docs.textpattern.io/tags/image_info) tag functionality. That’s the only reason. 
+We need to add this extra tag container, in this case, to make use of the corresponding [`image_info`](https://docs.textpattern.io/tags/image_info) tag functionality. That’s the only reason. (A lot of Textpattern tags work in relation to one another like that; a containing parent tag that allows other child tags to do their thing.)
 
-We see the `image_info` tag first used in this line, multiple times:
+We first see the `image_info` tag used in this line multiple times:
 
 ~~~ html
 …
@@ -86,7 +86,7 @@ And again in the line after:
 …
 ~~~
 
-In each line, the `image_info` tag is explicitly calling a data value for the image in context, in this case the image having ID number 9. 
+In each line, the `image_info` tag is explicitly calling a data value for the image in context, in this case the image having ID number 9. It’s all done dynamically now. No manual entry of static content in the templates themselves.
 
 In the first line, the `image_info` tag is used twice to pull out the image’s ID number and file extension. Note there’s no “.” added between the ID and extension values, which is because the `ext` value for the `type=""` attribute already includes the required period.
 
@@ -109,7 +109,7 @@ Now let’s consider the same block of markup in _short-form_ notation. There is
 </figure>
 ~~~
 
-We’ll just highlight the key differences here.
+We’ll just highlight the key differences.
 
 First, we’ve removed the image ID attribute from the `images` tag: 
 
@@ -135,7 +135,7 @@ Next, which _is_ an example of short-form notation, we’ve reduced the image fi
 …
 ~~~
 
-Finally, we eliminate the explicite use of the HTML `figcaption` tag by using the presentational `wraptag` attribute for `image_info`, which happens to be one of several common presentational attributes of many Textpattern tags:
+Finally, we eliminate the explicite use of the HTML `figcaption` tags by using the presentational `wraptag` attribute in `image_info`. The attribute happens to be one of several common presentational attributes of many Textpattern tags. It allows you to declare any HTML element you want, Textpattern style:
 
 ~~~ html
 …
@@ -148,10 +148,10 @@ Finally, we eliminate the explicite use of the HTML `figcaption` tag by using th
 
 The resulting character count of this block of markup, which is functionally identical to the long-form version previously, is    151 characters, and that’s even with the additional use of the wrapping `images` tag. All-in-all shorter than the long-form notation, but not by a lot. (It’s definitely longer than the static HTML version, but that’s the price for having dynamic functionality.)
 
-But character count is not the most important consideration with respect to whether one uses short-form or long-form notation. Indeed, even some short-form constructions of tag architecture are not much shorter than long-form equivalents. As the markup in the long-form block above shows, we had to include the `images` container tag in order to use the `image_info` tag too. 
+But character count is not the most important consideration with respect to whether one uses short-form or long-form notation. Indeed, as the markup in the long-form block above shows, some short-form constructions of tag architecture are not much shorter than long-form equivalents, we had to include the `images` container tag in order to use the `image_info` tag too. 
 
 And the character count can change considerably from one block of markup to another depending on what you’re aiming to do. We’ve only demonstrated one simple example. There are many possible situations where your markup blocks in templates or forms could be longer and more complex, and even include tags for plugins you may have installed.
 
-More important than character count is your understanding — or that of your client’s, if you’re building a website for them — of the resulting markup, regardless of how markup is written. As long as the markup separates content from structure/presentation and you (or the client) understands it, you’re doing well.
+More important than character count is your understanding of the resulting markup — or that of your client’s, if you’re building a website and handing it over to a different administrator — regardless of how markup is written. As long as the markup separates content from static constructs and you (or the client) understands it, you’re doing well.
 
-Long-form notation is generally easier for new Textpattern users to get up to speed with, until they’ve become more familiar with the scope of Textpattern tag functionality. Advanced users of Textpattern generally prefer the short-form notation because it saves character space. But it doesn’t matter either way, as long as the markup is constructed correctly in relation to how Textpattern functions. 
+In summary, long-form notation is generally easier for new Textpattern users to get up to speed with, until they’ve become more familiar with the scope of Textpattern tag functionality. Advanced users of Textpattern generally prefer the short-form notation because it saves character space. But it doesn’t matter either way, as long as the markup is constructed correctly in relation to how Textpattern functions. 
