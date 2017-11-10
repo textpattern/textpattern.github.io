@@ -79,7 +79,7 @@ Use the following command to clone the Textpattern dev branch repository to your
 $ git clone https://github.com/textpattern/textpattern.git
 ~~~
 
-You can use [git config](https://www.kernel.org/pub/software/scm/git/docs/git-config.html) to set up a few things like your `user.name` and `user.email`. Then you’re free to make changes, publish them to your own GitHub repo, and issue a 'Pull Request' to have your changes merged with the dev branch. Or just create a diff patch and send that to Textpattern developers.
+You can use [git config](https://www.kernel.org/pub/software/scm/git/docs/git-config.html) to set up a few things like your `user.name` and `user.email`. Then you're free to make changes, publish them to your own GitHub repo, and issue a 'Pull Request' to have your changes merged with the dev branch. Or just create a diff patch and send that to Textpattern developers.
 
 The experimental branches mentioned earlier can be explored using this command:
 

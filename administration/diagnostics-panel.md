@@ -389,7 +389,7 @@ The following functions are used by Textpattern. If your diagnostics reports any
 : Determines whether PHP is running as an Apache module or CGI. Used for sending header information appropriate to the platform.
 
 `php_uname`
-: Provides diagnostics info regarding the server’s operating system.
+: Provides diagnostics info regarding the server's operating system.
 
 `set_time_limit`
 : Makes sure PHP does not timeout before installation, updates (including language string changes), and file downloads can be completed.

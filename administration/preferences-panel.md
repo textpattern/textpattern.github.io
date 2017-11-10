@@ -156,7 +156,7 @@ This preference should be left blank unless you experience problems with sending
 
 ### Send login details from this email address
 
-Specify an email address which is used as the sender’s 'From:' address on messages with login information for new users.
+Specify an email address which is used as the sender's 'From:' address on messages with login information for new users.
 
 If this preference is left blank or contains an invalid email address, Textpattern uses the name and address of the currently logged-in user instead.
 
@@ -228,7 +228,7 @@ http://example.com/AnnandBobeatcake
 
 ### Send Last-Modified header?
 
-When set, Textpattern will read a visitor’s HTTP `If-Modified-Since` header (if one exists) and compare it to the last site update. If nothing has changed since the visitor last loaded the page (i.e. if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor’s browser to use its cached version of the page.
+When set, Textpattern will read a visitor's HTTP `If-Modified-Since` header (if one exists) and compare it to the last site update. If nothing has changed since the visitor last loaded the page (i.e. if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor's browser to use its cached version of the page.
 
 This can reduce bandwidth consumption, page load times, and web server load.
 

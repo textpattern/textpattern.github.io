@@ -169,9 +169,9 @@ Textpattern is spelled "*Textpattern*". Look at that closely. That's not two wor
 
 Always spell “Textpattern” out fully in official copy. Never abbreviate the name, like Txp, TXP, TxP, txP, or txp (unless your writing Textpattern tags in code examples). While these invented pet uses are convenient in the forum, they lend confusion to brand awareness in official copy. The world is still confused between “Textpattern” vs. “TextPattern”, after all.
 
-Good news! Writing the name out fully has the added benefit of helping you see when you’re using the name too repetitively, which is a sentence bloat problem.
+Good news! Writing the name out fully has the added benefit of helping you see when you're using the name too repetitively, which is a sentence bloat problem.
 
-Finally, while some feel "Textpattern CMS" is important for search engine ranking (arguably), it’s not necessary to write "CMS", and especially in user documentation (marketing copy at textpattern.com, maybe). Textpattern began as "Textpattern" alone in 2003, and it's still recognised by that name. Leave "CMS" out; it's needless distraction and word bloat.
+Finally, while some feel "Textpattern CMS" is important for search engine ranking (arguably), it's not necessary to write "CMS", and especially in user documentation (marketing copy at textpattern.com, maybe). Textpattern began as "Textpattern" alone in 2003, and it's still recognised by that name. Leave "CMS" out; it's needless distraction and word bloat.
 
 ### Platform name usage
 
@@ -238,14 +238,14 @@ So it makes sense to use sentence-case for non-question headings too.
 Correct → How to use the tab builder
 Correct → About us
 This does not mean proper nouns should not be capitalised.
-Correct → How to use Textpattern’s text editor
-Wrong → How to use textpattern’s text editor
+Correct → How to use Textpattern's text editor
+Wrong → How to use textpattern's text editor
 Wrong → Why use textile?
 All-caps
-Do not use all-caps to emphasise a word. It’s unnecessary and a barrier to accessibility. A screen reader will read each letter separately instead of together as one word.
+Do not use all-caps to emphasise a word. It's unnecessary and a barrier to accessibility. A screen reader will read each letter separately instead of together as one word.
 Numerals and special characters
 Numerals
-Reserve numerals for dates, prices and other numeric data, but write out the numeral for counts if it’s less than ten (10). For example, instead of "a 3-day event", use "a three-day event".
+Reserve numerals for dates, prices and other numeric data, but write out the numeral for counts if it's less than ten (10). For example, instead of "a 3-day event", use "a three-day event".
 Ampersands (&)
 Do not use ampersands in place of the conjunction "and". However, if they used for a legitimate reason, ensure the character is marked up as an ASCII value, not a glyph. For example, Sanford & Sons Inc. would be:
 
@@ -284,7 +284,7 @@ Use these word constructs when used at all in text:
 * Use website (not web site).
 
 Versioning
-The proper way write the version releases of Textpattern. This is less a stylistic issue and more a Textpattern development policy; however, it’s relevant to the template:Txp current version that provide this dynamic value in multiple places in documentation. Ensure the version is correct in this template against the current Textpattern release.
+The proper way write the version releases of Textpattern. This is less a stylistic issue and more a Textpattern development policy; however, it's relevant to the template:Txp current version that provide this dynamic value in multiple places in documentation. Ensure the version is correct in this template against the current Textpattern release.
 Appendix A: Visual branding
 (forthcoming)
 Appendix B: Template metadata

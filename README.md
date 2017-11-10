@@ -24,9 +24,9 @@ For simple, smaller edits, you can edit documents in-browser on GitHub as follow
 1. Log into GitHub in your browser.
 2. Go to the docs repo (this repo!).
 3. Find the documentation page you want to add an example too, pages are within sub-directories of root and all labelled logically.
-4. Click the ‘Edit this file’ button (it’s a little pen symbol).
+4. Click the 'Edit this file' button (it's a little pen symbol).
 5. Write/edit content (in Markdown syntax).
-6. Press the ‘Commit changes’ button when finished – that will create a pull request. A member of the core documentation team will then review you changes and merge into the repository once approved.
+6. Press the 'Commit changes' button when finished – that will create a pull request. A member of the core documentation team will then review you changes and merge into the repository once approved.
 7. Jekyll rebuilds automatically when file changes are detected and the page is then live for everyone to see.
 
 ## Filename (URL) conventions

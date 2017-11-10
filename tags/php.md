@@ -42,7 +42,7 @@ This tag has no attributes.
 
 When inserting markup or PHP into the content boxes of a Textpattern article:
 
-1. Don’t include the usual PHP delineations: i.e. `<?php ... ?>`.
+1. Don't include the usual PHP delineations: i.e. `<?php ... ?>`.
 2. Use PHP as you would use normal PHP, not interspersed with markuFor example, inside the PHP tags, use PHP's echo command to output HTML, rather than writing HTML directly.
 3. Surround the code with both the special `<notextile>` tag and Textpattern `<txp:php>` tag to **disable Textile** parsing:
 

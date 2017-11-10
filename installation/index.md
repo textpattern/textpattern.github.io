@@ -50,57 +50,57 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `files`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it’s for:** Empty by default. It’s where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files panel](https://docs.textpattern.io/administration/files-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel).
+: **What it's for:** Empty by default. It's where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files panel](https://docs.textpattern.io/administration/files-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel).
 
 `images`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it’s for:** Empty by default. It's where images will go when you upload them in the [Images panel](https://docs.textpattern.io/administration/images-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel).
+: **What it's for:** Empty by default. It's where images will go when you upload them in the [Images panel](https://docs.textpattern.io/administration/images-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel).
 
 `rpc`
 : **Type:** directory.
 : **Removable?:** yes.
-: **What it’s for:** Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#enable-xml-rpc-server).
+: **What it's for:** Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#enable-xml-rpc-server).
 
 `sites`
 : **Type:** directory.
 : **Removable?:** yes.
-: **What it’s for:** Supports multi-site installations managed by one administration side. It contains a template and instructions (a README.txt) for doing so. You can safely remove this directory if not wanted.
+: **What it's for:** Supports multi-site installations managed by one administration side. It contains a template and instructions (a README.txt) for doing so. You can safely remove this directory if not wanted.
 
 `textpattern`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it’s for:** Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side.
+: **What it's for:** Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side.
 
 `.htaccess`
 : **Type:** file.
 : **Removable?:** no.
-: **What it’s for:** Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on.
+: **What it's for:** Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on.
 
 `index.php`
 : **Type:** file.
 : **Removable?:** no.
-: **What it’s for:** Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing.
+: **What it's for:** Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing.
 
 `css.php`
 : **Type:** file.
 : **Removable?:** yes/no.
-: **What it’s for:** Negotiates the front-end stylesheets you create in the [Styles panel](https://docs.textpattern.io/administration/styles-panel). If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
+: **What it's for:** Negotiates the front-end stylesheets you create in the [Styles panel](https://docs.textpattern.io/administration/styles-panel). If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
 
 `README.txt`
 : **Type:** file.
 : **Removable?:** yes.
-: **What it’s for:** The file providing brief instructions for installing and upgrading Textpattern.
+: **What it's for:** The file providing brief instructions for installing and upgrading Textpattern.
 
 `HISTORY.txt`
 : **Type:** file.
 : **Removable?:** yes.
-: **What it’s for:** The file showing the package release Changelog.
+: **What it's for:** The file showing the package release Changelog.
 
 `LICENSE.txt`
 : **Type:** file.
 : **Removable?:** no.
-: **What it’s for:** The GNU GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone.
+: **What it's for:** The GNU GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone.
 
 [^1]: Do not move files in the tree or change their names. Doing so will render Textpattern useless.
 

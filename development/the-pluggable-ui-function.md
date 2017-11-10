@@ -19,7 +19,7 @@ On this page:
 
 ## Caution
 
-Though it’s possible to completely redesign the HTML markup within an admin-side panel, you are advised not to do it with a plugin. Removing and changing admin-side panel elements can make the plugins of other developers who target those DOM elements non-functional. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the original's to `display:none` via CSS.
+Though it's possible to completely redesign the HTML markup within an admin-side panel, you are advised not to do it with a plugin. Removing and changing admin-side panel elements can make the plugins of other developers who target those DOM elements non-functional. If you must rename selectors (IDs, classes), consider leaving the existing items intact and adding your own, then setting the original's to `display:none` via CSS.
 
 ## Function definition
 
@@ -73,7 +73,7 @@ Argument #2
 Arguments 3, 4, and 5 are optional depending on what you're trying to do...
 
 Argument #3
-: If applicable, is the default data (text, markup, both...); it will be used if you don’t modify it. Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
+: If applicable, is the default data (text, markup, both...); it will be used if you don't modify it. Parsing argument #3 allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
 
 Argument #4
 : If applicable, is the *record set* returned from the database table that pertains to the named *event*.
