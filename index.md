@@ -40,10 +40,10 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### Core tags
 
-* [Tags reference](https://docs.textpattern.io/tags/) (the complete suite)
-* [Tag use basics](https://docs.textpattern.io/tags/tag-basics/) (a good place to start)
-  * [Parsing tag attributes](https://docs.textpattern.io/tags/tag-basics/parsing-tag-attributes) (sorcery)
-* [Tags in development](https://docs.textpattern.io/tags/tags-in-development) (upcoming tags)
+* [Tags reference](https://docs.textpattern.io/tags/) (the complete book of magic)
+* [Tag use basics](https://docs.textpattern.io/tags/tag-basics/). Six preparatory docs to facilitate tag learning, including:
+  * [Parsing tag attributes](https://docs.textpattern.io/tags/tag-basics/parsing-tag-attributes) (er, sorcery)
+* [Tags in development](https://docs.textpattern.io/tags/tags-in-development) (incantations to come)
 
 </div>
 <div class="layout-3col">
