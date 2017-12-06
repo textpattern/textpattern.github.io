@@ -10,7 +10,29 @@ description: The Hello, World! approach means to start from a blank slate and ad
 
 Moving from static web development to dynamic, CMS-based development can be a challenge. Obviously you have to learn the new tool - the CMS - but for many the harder part is understanding dynamic publishing, a different way of thinking about website design. Trying to learn both at once is a steep learning curve, but is manageable with the right step-by-step approach.
 
-The "Hello, World!" approach means to start from a blank slate and add pieces one at a time. It's not the right approach for everyone, but assuming you want to try this method, read on:
+The "Hello, World!" approach means to start from a blank slate and add pieces one at a time. It's not the right approach for everyone, but assuming you want to try this method, read on.
+
+On this page:
+
+* [Ready, set...](#ready-set)
+* [Go!](#go)
+* [Site pages and page templates](#site-pages-and-page-templates)
+* [Textpattern tags](#textpattern-tags)
+* [Articles and sections](#articles-and-sections)
+* [Pages and context](#pages-and-context)
+* [More contexts](#more-contexts)
+  * [Search](#search)
+  * [Category lists](#category-lists)
+* [Form templates](#form-templates)
+  * [Article forms](#article-forms)
+* [Adding details](#adding-details)
+  * [Page title and site name](#page-title-and-site-name)
+  * [CSS](#css)
+  * [Conditional headers](#conditional-headers)
+  * [Textpattern tag attributes](#textpattern-tag-attributes)
+* [The finished template](#the-finished-template)
+* [Extending the structure](#extending-the-structure)
+* [Learning more](#learning-more)
 
 ## Ready, set...
 
@@ -59,7 +81,7 @@ page template is meant to be used in Textpattern - as the pattern for
 many different pages. The page templates we've created so far aren't
 real templates - they're just static HTML.
 
-### Textpattern tags {#textpattern-tags .sectionedit4#textpattern_tags}
+## Textpattern tags
 
 We turn our static page templates into functional ones by adding
 ***Textpattern tags***, which are placeholders for dynamic content.
@@ -134,7 +156,7 @@ tag you added to the template has been replaced by an article title.
 (“Welcome to Your Site!” is a sample article included in the
 installation.)
 
-### Articles and sections {#articles-and-sections .sectionedit5#articles_and_sections}
+## Articles and sections
 
 “Page 2” is empty but for the section links, so let's add an article to
 it. Go to
@@ -164,7 +186,7 @@ on the live site? The new article appears on the “Articles” page,
 because that is the section it was assigned to by default, and also
 appears on the home page; “Page 2” remains unchanged.
 
-### Pages & context {#pages-context .sectionedit6#pages_context}
+## Pages and context
 
 The three pages on the live site all use the same page template. They
 show different content because some Textpattern tags are ***context
@@ -227,12 +249,12 @@ Every article has a unique ID number, which you can see in
 The “s” parameter - section - doesn't appear in these URLs, because
 section is implied (every article belongs to a section).
 
-### More contexts {#more-contexts .sectionedit7#more_contexts}
+## More contexts
 
 ***Search*** and ***category*** are other contexts that are commonly
 built into a Textpattern site.
 
-#### Search
+### Search
 
 Add this to the default template, above the
 
@@ -274,7 +296,7 @@ thanks to the
 tag. Also note the URL: “?q=body”. Again, context comes from URL, so in
 this case the context is search results (the “q” stands for “query”).
 
-#### Category lists {#category_lists}
+### Category lists
 
 Add this to the template, below the
 
@@ -298,7 +320,7 @@ give your new articles some categories, by selecting them from the
 pull-down boxes on the right side of the page. Return to the live site
 and see how this changes the category links and the resulting lists.
 
-### Forms {#forms .sectionedit8#forms}
+## Form templates
 
 Textpattern forms (see [Form templates](https://docs.textpattern.io/themes/form-templates-explained),
 not to be confused with [HTML forms](http://htmlhelp.com/reference/html40/forms/form.html)) are
@@ -321,7 +343,7 @@ tag. Then at the top of each template I call the form thusly:
 
     <txp:output_form form="page_top" />
 
-#### Article forms {#article_forms}
+### Article forms
 
 A special Textpattern form type is the ***article form***. In our
 template we have been using
@@ -388,13 +410,13 @@ The live site will work exactly as before, but now the default template
 is much cleaner, and by splitting search results into its own form we've
 made the article display logic much simpler.
 
-### Adding details {#adding-details .sectionedit9#adding_details}
+## Adding details
 
 There's a myriad of available Textpattern tags (see the Tag Reference)
 for adding dynamic content and control logic. We've only scratched the
 surface, so let's add a few details to our rudimentary site.
 
-#### Page title and site name {#page_title_and_site_name}
+### Page title and site name
 
 Add a
 
@@ -440,7 +462,7 @@ attribute from
 
 tag.
 
-#### CSS
+### CSS
 
 Add
 
@@ -457,7 +479,7 @@ the stylesheet. In
 note that each section is associated with one of these name stylesheets,
 allowing you to set section-specific styles.
 
-#### Conditional headers {#conditional_headers}
+### Conditional headers
 
 Add these conditional blocks just above
 
@@ -475,7 +497,7 @@ Add these conditional blocks just above
 Enter some searches and click the category links to see how this gives
 you appropriate sub-headings for search results and category list pages.
 
-#### Textpattern tag attributes {#textpattern_tag_attributes}
+### Textpattern tag attributes
 
 Most Textpattern tags allow you to set options through tag attributes.
 We've seen a few of these in action above. For our
@@ -498,7 +520,7 @@ element. Let's do the same with our section list:
 
     <txp:section_list wraptag="ul" break="li" />
 
-#### The finished template {#the_finished_template}
+## The finished template
 
 The template should now look something like this:
 
