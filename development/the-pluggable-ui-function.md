@@ -48,7 +48,7 @@ Callbacks written with `pluggable_ui` have a different signature than those writ
             <tr>
                 <th scope="row">3</th>
                 <td><code>$data</code></td>
-                <td>The default data (content and/or markup); it’s used if not modified.</td>
+                <td>The default data (content and/or markup); it's used if not modified.</td>
             </tr>
             <tr>
                 <th scope="row">4</th>

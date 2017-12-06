@@ -65,4 +65,4 @@ bq. @<txp:if_excerpt>@
 @<txp:body />@
 @</txp:if_excerpt>@
 
-If you need to automatically generate an Excerpt from the Body, there are several plugins that will help. You'll find them at "Textpattern Resources":http://textpattern.org/ or on the "Textpattern Plugins Forum":https://forum.textpattern.com/viewforum.php?id=13.
+If you need to automatically generate an Excerpt from the Body, there are several plugins that will help. You'll find them at "Textpattern Resources":http://textpattern.org/ or on the "Textpattern Plugins Forum":https://forum.textpattern.io/viewforum.php?id=13.

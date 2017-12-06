@@ -18,7 +18,7 @@ This "Flash_MP3_Player":http://www.jeroenwijering.com/?item=Flash_MP3_Player by 
 
 h3(sectionedit3#feeds). Feeds
 
-At the moment there is no direct way, to include enclosure into the feeds. But "zem":https://forum.textpattern.com/viewtopic.php?pid=78251#p78251 is working on using templates for feeds in 4.1 Templated feeds should be used for podcasting.
+At the moment there is no direct way, to include enclosure into the feeds. But "zem":https://forum.textpattern.io/viewtopic.php?pid=78251#p78251 is working on using templates for feeds in 4.1 Templated feeds should be used for podcasting.
 
 An alternative could be deliver the complete feed form the plugin
 

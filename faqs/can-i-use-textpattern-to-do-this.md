@@ -2,7 +2,7 @@ h1. Can I use Textpattern to do this? [todo]
 
 Textpattern is endlessly customizable and extendable via templates and plugins.  It's also open source, so you can modify the code as required.  So the short answer to that question is: *yes*, you can build pretty much any kind of site you like with Textpattern, if you're willing to do the work.
 
-You'll find many examples of Textpattern-powered sites listed in the "Let's See Yours, Then":https://forum.textpattern.com/viewforum.php?id=6 forum.
+You'll find many examples of Textpattern-powered sites listed in the "Let's See Yours, Then":https://forum.textpattern.io/viewforum.php?id=6 forum.
 
 TXP Magazine's "txp sites gallery":http://txpmag.com/all_sites and "sites collection by category":http://txpmag.com/by_cat list some well-designed websites that use Textpattern.
 

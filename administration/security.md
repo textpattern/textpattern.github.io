@@ -51,7 +51,7 @@ Core developers have no control over the quality or security of community plugin
 
 ## To modify or not modify the core for added security
 
-Textpattern developers, current and past, tell us (e.g. [here](https://forum.textpattern.com/viewtopic.php?pid=192807#p192807), [here](https://forum.textpattern.com/viewtopic.php?pid=192818#p192818) and [here](https://forum.textpattern.com/viewtopic.php?pid=192827#p192827)) that a default installation of Textpattern is sufficiently secure for most needs. Thus changing the location of the admin login (i.e. renaming the configuration directory), or masking the identity of your Textpattern install is unwarranted, especially if your login details were wisely chosen and you follow all of the security precautions listed above.[^3] An exception might be if you use Textpattern in a business setting that requires something like SSL authentication, which is out of scope for this documentation.
+Textpattern developers, current and past, tell us (e.g. [here](https://forum.textpattern.io/viewtopic.php?pid=192807#p192807), [here](https://forum.textpattern.io/viewtopic.php?pid=192818#p192818) and [here](https://forum.textpattern.io/viewtopic.php?pid=192827#p192827)) that a default installation of Textpattern is sufficiently secure for most needs. Thus changing the location of the admin login (i.e. renaming the configuration directory), or masking the identity of your Textpattern install is unwarranted, especially if your login details were wisely chosen and you follow all of the security precautions listed above.[^3] An exception might be if you use Textpattern in a business setting that requires something like SSL authentication, which is out of scope for this documentation.
 
 ## If you suspect your site has been hacked
 

@@ -5,7 +5,7 @@
 These instructions are specifically for version 1.0. If you're working
 on any earlier version of Textpattern (e.g. rc1) and you want clean URLs
 but are having trouble, then use the information available in the
-[Textpattern Forum](https://forum.textpattern.com/) (it's spread all over,
+[Textpattern Forum](https://forum.textpattern.io/) (it's spread all over,
 but it's there); we are only concerned with v 1.0 here.
 
 You do not have to use clean URLs, they are just better for your site
@@ -52,7 +52,7 @@ finish step 2 as follows and call it good with your URLs.
 
 **Note:** You will need to have Mod_Rewrite abilities even if you try
 to have clean URLs using plugins like
-[gbp_permanent_links](https://forum.textpattern.com/viewtopic.php?id=18918).
+[gbp_permanent_links](https://forum.textpattern.io/viewtopic.php?id=18918).
 
 #### Step 2: Getting Ready in "Messy&quot; Mode {#step_2getting_ready_in_messy_mode}
 
@@ -119,6 +119,6 @@ unfortunately, there are many ways to configure Apache such that
 &lt;code&gt;.htaccess&lt;/code&gt; needs to be specially customized for
 that particular server, or perhaps won't work at all.*” (from zem,
 [right
-here](https://forum.textpattern.com/viewtopic.php?pid=68642#p68642.))
+here](https://forum.textpattern.io/viewtopic.php?pid=68642#p68642.))
 
 In short, there is no guarantee that clean URLs are going to work.

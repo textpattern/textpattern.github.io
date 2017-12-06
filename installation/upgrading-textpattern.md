@@ -78,7 +78,7 @@ Open a web browser and visit the admin-side location (usually `example.org/textp
 
 When Textpattern updates, you will be taken by default to the [Languages panel](https://docs.textpattern.io/administration/languages-panel). Once there, update your chosen language files as necessary (highlighted). Then go to the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) and troubleshoot any noted issues.
 
-Some notices are not always problems, *per se*, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) to see if it's documented, if that doesn't help, ask in the ['How do I...? and other questions' forum](https://forum.textpattern.com/).
+Some notices are not always problems, *per se*, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) to see if it's documented, if that doesn't help, ask in the ['How do I...? and other questions' forum](https://forum.textpattern.io/).
 
 ## Remove unnecessary files
 
@@ -92,7 +92,7 @@ This step is highly recommended, but optional. It is best to do this on a develo
 
 Change your site's 'Production status' in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) to 'debugging'. Go through the live site (every page, if possible), looking for error messages. Any such messages will be clearly visible at the top of the page. The upgrade may result in notices or errors relating to deprecated tags or attributes (these should be easy to correct).
 
-If you do need to update tag or attribute names, the [smd_where_used plugin](https://forum.textpattern.com/viewtopic.php?id=27493) is a great help for quickly finding all instances of a given tag or attribute.
+If you do need to update tag or attribute names, the [smd_where_used plugin](https://forum.textpattern.io/viewtopic.php?id=27493) is a great help for quickly finding all instances of a given tag or attribute.
 
 ## Explore the bleeding edge development
 

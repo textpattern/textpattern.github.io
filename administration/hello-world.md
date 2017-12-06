@@ -8,39 +8,28 @@ description: The Hello, World! approach means to start from a blank slate and ad
 
 # Hello, World! TODO
 
-Moving from traditional, static web development to dynamic, CMS-based development can be a challenge. Obviously you have to learn the new tool - the CMS. But for many the harder part is understanding dynamic publishing, a new way of thinking about website design. Trying to learn both at once is a steep learning curve, but is manageable with the right step-by-step approach.
+Moving from static web development to dynamic, CMS-based development can be a challenge. Obviously you have to learn the new tool - the CMS - but for many the harder part is understanding dynamic publishing, a different way of thinking about website design. Trying to learn both at once is a steep learning curve, but is manageable with the right step-by-step approach.
 
 The "Hello, World!" approach means to start from a blank slate and add pieces one at a time. It's not the right approach for everyone, but assuming you want to try this method, read on:
 
-### Ready, set ...
+## Ready, set...
 
-Start from a new Textpattern installation. If you want to save [the few
-minutes it takes to
-install](http://ipsedixit.net/txp/115/textpattern-quickstart-screencast),
-you could even use [the online Textpattern demo at
-opensourcecms.com](http://php.opensourcecms.com/scripts/details.php?scriptid=86&name=Textpattern),
-keeping in mind that you might be sharing it with other users, which
-could get mighty confusing, and that the demo gets wiped clean every two
-hours.
+Start from a new Textpattern installation. If you just want to test things out, you could even use [the online Textpattern demo](https://textpattern.com/demo), keeping in mind that you might be sharing it with other users, which could get mighty confusing, and that the demo gets wiped clean every two hours.
 
 Log in to the Textpattern control panel. If this is a truly brand-new
-installation you should look at
-[Admin→Diagnostics](/home/www/zendstudio/dokuwiki/bin/doku.php?id=diagnostics)
-first and deal with any warnings or error messages. The one error you
-can leave for now is “Clean URL test failed”, because it can be fussy to
-fix and Textpattern will still work with “messy” URLs, which this
-tutorial will use. If you see “All checks passed!”, great.
+installation you should look at the
+[Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel)
+first and deal with any warnings or error messages. If you see “All checks passed!”, great. If not, please consult the [](https://docs.textpattern.io/administration/diagnostics-panel#pre-flight-checks)
 
-Go to
-[Admin→Preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences).
+Go to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
 Find the 'Article URL pattern' setting and change it to '?=messy'. Click
 Save. Do this even if the clearn URL test passed, because this tutorial
 will use messy URLs.
 
-### Go! {#go .sectionedit2#go}
+## Go!
 
-Go to
-[Presentation→Pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages).
+Go to the
+[Pages panel](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages).
 We're about to overwrite the default page template; if you want to keep
 a copy of the original, find the “copy page as” input, enter a name for
 your backup, and click “Copy”. This is optional (there's a copy at
@@ -603,4 +592,4 @@ content they want.
 
 ### Learning more
 
-This is just a bare outline of how to build a Textpattern site. To continue your learning path, participate in the [Textpattern CMS support forum](https://forum.textpattern.com/), read the Tutorials and [Textpattern Tips](http://www.textpattern.tips/), and study the Tag Reference.
+This is just a bare outline of how to build a Textpattern-powered site. To continue your learning path, participate in the [Textpattern CMS support forum](https://forum.textpattern.io/), read tutorials and [Textpattern tips](http://textpattern.tips/), and study the [Tag reference](https://docs.textpattern.io/tags/).

@@ -21,4 +21,4 @@ You can use the standard @wraptag@, @break@ and @class@ attributes to control th
 
 4. View @http://example.com/gallery/?c=mycategory@ (or http://example.com?s=gallery&c=mycategory@ if you're using Messy URLs).  You can click on each image thumbnail to view the associated image.
 
-There are several "plugins":https://forum.textpattern.com/viewtopic.php?id=2193 that provide more complex gallery features.
+There are several "plugins":https://forum.textpattern.io/viewtopic.php?id=2193 that provide more complex gallery features.

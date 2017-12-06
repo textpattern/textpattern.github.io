@@ -4,7 +4,7 @@ This tutorial will show you how to create author profiles using articles.
 
 h4(#requirements). Requirements
 
-* "jmd_author":https://forum.textpattern.com/viewtopic.php?id=26080 to create the author links
+* "jmd_author":https://forum.textpattern.io/viewtopic.php?id=26080 to create the author links
 
 h4(#content). Content
 

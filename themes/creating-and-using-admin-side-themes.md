@@ -177,7 +177,7 @@ For code examples, see the code in your files at:
 
 This is out of scope of Textpattern documentation, but if you need help
 with CSS and JavaScript, feel free to ask in the [Support
-Forum](https://forum.textpattern.com/) or [G+
+Forum](https://forum.textpattern.io/) or [G+
 Community](https://plus.google.com/u/0/communities/111366418300163664690).
 
 ### Extending admin themes via inheritance {#extending-admin-themes-via-inheritance .sectionedit3#extending_admin_themes_via_inheritance}

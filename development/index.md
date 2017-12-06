@@ -46,7 +46,7 @@ While reinventing the wheel is a good way to learn, it's not so good for making 
 
 Here's the visible approach to plugin conception that can help you make a good choice...
 
-When plugin ideas aren't conceived quietly in the minds of individuals and built to fruition without a lot of fanfare (a path usually taken when a developer needs the functionality regardless of whether the community does or not), they often begin as a core [feature idea](https://forum.textpattern.com/viewforum.php?id=2) ([a shunned one](https://docs.textpattern.io/development/plugin-vs-core)), or [plugin discussion](https://forum.textpattern.com/viewforum.php?id=13). Bouncing plugin ideas off the community first is a good way to gauge whether a plugin idea has merit - the more interest and constructive feedback you get, the more likely the plugin is worth building.
+When plugin ideas aren't conceived quietly in the minds of individuals and built to fruition without a lot of fanfare (a path usually taken when a developer needs the functionality regardless of whether the community does or not), they often begin as a core [feature idea](https://forum.textpattern.io/viewforum.php?id=2) ([a shunned one](https://docs.textpattern.io/development/plugin-vs-core)), or [plugin discussion](https://forum.textpattern.io/viewforum.php?id=13). Bouncing plugin ideas off the community first is a good way to gauge whether a plugin idea has merit - the more interest and constructive feedback you get, the more likely the plugin is worth building.
 
 If you do throw caution to the wind and reinvent the wheel anyway, make sure you're ready to raise the bar. Somebody has to eventually.
 
@@ -441,22 +441,22 @@ These are
 until further notice.
 
 -   [Generate a list of tags and
-    attributes](https://forum.textpattern.com/viewtopic.php?id=12299)
+    attributes](https://forum.textpattern.io/viewtopic.php?id=12299)
     \[???\]
 -   [Command-line plugin
-    decoder](https://forum.textpattern.com/viewtopic.php?id=4252) \[???\]
+    decoder](https://forum.textpattern.io/viewtopic.php?id=4252) \[???\]
 
 ## Getting help
 
 If you need a warm shoulder to lean on, subscribe to the [plugin development mailing list](http://lists.textpattern.com/), which might be rather quiet unless you use it.
 
-The Textpattern CMS support forum, notably the [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13) area, is a good place to post questions too.
+The Textpattern CMS support forum, notably the [Plugin discussion](https://forum.textpattern.io/viewforum.php?id=13) area, is a good place to post questions too.
 
 ## External reading
 
 Additional third-party reading you may find insightful. The information may be outdated, so use with caution. Not a long list, in any case.
 
-* [How to build a Textpattern plugin](http://www.textpattern.tips/how-to-build-a-textpattern-plugin)
+* [How to build a Textpattern plugin](http://textpattern.tips/how-to-build-a-textpattern-plugin)
 
 [^1]: You can see the code for any installed plugin by clicking its name in the table on the [Plugins panel](https://docs.textpattern.io/administration/plugins-panel), or by installing and using [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer).
 

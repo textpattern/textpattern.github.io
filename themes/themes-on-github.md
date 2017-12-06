@@ -8,7 +8,7 @@ description: In this page we attempt to keep track of any Textpattern themes tha
 
 # Textpattern themes available on GitHub TODO
 
-With the popularity of [GitHub](https://github.com), comes a natural tendency for Textpattern theme designers to make their theme code available there. In this page we attempt to keep track of them all [until we figure out something better](https://forum.textpattern.com/viewtopic.php?pid=263182).
+With the popularity of [GitHub](https://github.com), comes a natural tendency for Textpattern theme designers to make their theme code available there. In this page we attempt to keep track of them all [until we figure out something better](https://forum.textpattern.io/viewtopic.php?pid=263182).
 
 ## Front-side themes
 
