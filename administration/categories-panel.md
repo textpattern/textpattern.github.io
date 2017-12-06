@@ -25,7 +25,7 @@ Article categories allow organization of articles by their subject matter. Once 
 
 ## Create a new category
 
-To create a category you simply type its name in the textfield at the top and click 'Create' - Textpattern then adds the new category to the list. You can also assign a new category to an existing 'parent' category when you create it (i.e. making it a 'subcategory' of an existing 'category').
+To create a category you simply type its name in the textfield at the top and press 'Create' - Textpattern then adds the new category to the list. You can also assign a new category to an existing 'parent' category when you create it (i.e. making it a 'subcategory' of an existing 'category').
 
 Some **changes might occur** if you've chosen a name that has more than one word or if your language is not English: **special characters** such as umlauts (ä, ö, ü) are **converted** into replacement characters (e.g. ae, oe, ue, respectively) and **individual words are linked with hyphens**. Category names are also converted to lower case letters. For example: `persönlich` will become `persoenlich` and `about me` will become `about-me`.
 

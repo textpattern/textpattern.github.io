@@ -76,7 +76,7 @@ O3M6NzoidmVyc2lvbiI7czo0OiIw...
 
 The Base-64 part on the bottom would normally be much longer, so be sure to copy the **entire** file when you really do go after one.
 
-Depending on where you find your plugin file, you may be able to view its contents on location and copy the file without downloading it, or you may need to download the file first, open it, and copy the contents locally. Either way, once you have the text file contents copied, paste it into the 'Install plugin' textarea box as indicated earlier, and click 'Upload'.
+Depending on where you find your plugin file, you may be able to view its contents on location and copy the file without downloading it, or you may need to download the file first, open it, and copy the contents locally. Either way, once you have the text file contents copied, paste it into the 'Install plugin' textarea box as indicated earlier, and press 'Upload'.
 
 ### Verifying plugin file contents
 

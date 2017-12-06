@@ -37,7 +37,7 @@ The first tool at the top of the panel is the *upload* area. Labeled 'Upload fil
 
 When you have marked a file and put its path into the upload field by clicking 'open' (or 'OK'), you can start uploading by clicking 'Upload'.
 
-The file will be uploaded to the files folder of Textpattern (but remember the file size limitations). A reference will automatically be saved in the database and the file editing panel will be opened. Here you can enter additional information (see below) regarding the file, or replace the file. To save those informations and return to the Files panel click 'Save'.
+The file will be uploaded to the files folder of Textpattern (but remember the file size limitations). A reference will automatically be saved in the database and the file editing panel will be opened. Here you can enter additional information (see below) regarding the file, or replace the file. To save those informations and return to the Files panel press 'Save'.
 
 ## Existing files
 
@@ -130,7 +130,7 @@ Each link will open a pop-up window with a 'tag builder'. You can choose the ele
 
 In the first column you will find a checkbox for each file. Here you can select files you want to change in a bulk manner. You can mark files by checking the checkbox or you can use the checkbox in the head bar of the list to mark all files on that page.
 
-For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform click 'Go' to start the changes.
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 
 ## Pages and files listed per page
 

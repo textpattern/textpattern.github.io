@@ -40,7 +40,7 @@ The first tool at the top of the panel is the *upload* area. Labeled 'Upload ima
 
 When you have marked an image and put its path into the upload field by clicking 'open' (or 'OK'), you can start uploading by clicking 'Upload'.
 
-The image will be uploaded to the images folder of Textpattern (but remember the file size limitations). A reference will automatically be saved in the database and the image editing panel will be opened. Here you can enter additional information (see below) regarding the image. To save those informations and return to the Images panel click 'Save'.
+The image will be uploaded to the images folder of Textpattern (but remember the file size limitations). A reference will automatically be saved in the database and the image editing panel will be opened. Here you can enter additional information (see below) regarding the image. To save those informations and return to the Images panel press 'Save'.
 
 **Technical note:** In the images folder all uploaded images will have only a number as name. The number equals the unique Textpattern ID number of the image - extended by `t` for a thumbnail. The original name is kept in the images properties.
 
@@ -69,7 +69,7 @@ If you need to replace an image by another or a better one (instead of placing a
 Thumbnails (smaller versions of an image) can be used for various tasks in a website. There are two ways to include thumbnails of an existing image:
 
 1. You can upload your own thumbnail with the upload fields labelled 'Upload thumbnail'.
-2. You can automatically generate a thumbnail with Textpattern's built-in tools. Fill in the appropriate width and/or height. If you define both and don't want the image to be scaled mark 'Crop'. To create the thumbnail click 'Create'.
+2. You can automatically generate a thumbnail with Textpattern's built-in tools. Fill in the appropriate width and/or height. If you define both and don't want the image to be scaled mark 'Crop'. To create the thumbnail press 'Create'.
 
 Thumbnails are stored images folder all uploaded images and have the same ID number as their parent, extended by `t`.
 
@@ -124,7 +124,7 @@ Each link will open a pop-up window with a 'tag builder' ([see below](#image-tag
 
 In the first column you will find a checkbox for each image. Here you can select images you want to change in a bulk manner. You can mark images by checking the checkbox or you can use the checkbox in the head bar of the list to mark all images on that page.
 
-For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform click 'Go' to start the changes.
+For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 
 ## Pages and images listed per page
 
