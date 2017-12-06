@@ -14,49 +14,25 @@ The "Hello, World!" approach means to start from a blank slate and add pieces on
 
 ## Ready, set...
 
-Start from a new Textpattern installation. If you just want to test things out, you could even use [the online Textpattern demo](https://textpattern.com/demo), keeping in mind that you might be sharing it with other users, which could get mighty confusing, and that the demo gets wiped clean every two hours.
+Start from a new Textpattern installation. If you just want to test things out, you could even use [the online Textpattern demo](https://textpattern.com/demo), keeping in mind that you might be sharing it with other users, and that the demo gets wiped clean every two hours.
 
-Log in to the Textpattern control panel. If this is a truly brand-new
-installation you should look at the
-[Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel)
-first and deal with any warnings or error messages. If you see “All checks passed!”, great. If not, please consult the [](https://docs.textpattern.io/administration/diagnostics-panel#pre-flight-checks)
+Log in to the Textpattern control panel. If this is a truly brand-new installation you should look at the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) first and deal with any warnings or error messages. If you see "All checks passed!", great! If not, please consult the [pre-flight checks documentation](https://docs.textpattern.io/administration/diagnostics-panel#pre-flight-checks).
 
-Go to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
-Find the 'Article URL pattern' setting and change it to '?=messy'. Click
-Save. Do this even if the clearn URL test passed, because this tutorial
-will use messy URLs.
+Then go to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) and set your initial preferences. Don't worry about setting every reference correct first time, you can change preference options again at any time.
 
 ## Go!
 
-Go to the
-[Pages panel](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages).
-We're about to overwrite the default page template; if you want to keep
-a copy of the original, find the “copy page as” input, enter a name for
-your backup, and click “Copy”. This is optional (there's a copy at
-[Default
-Pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_pages)); if
-you did so click the “default” link in the list on the right to return
-to the default page template.
+Go to the [Pages panel](https://docs.textpattern.io/administration/pages-panel). We're about to overwrite the default page template; if you want to keep a copy of the original, enter a new name for your backup, then use the 'Duplicate' link. This is optional; if you did so click the “default” link in the list on the right to return to the default page template.
 
-The message above the large central editing area should be “You are
-editing page template **default**”. Replace the entire contents with
-“Hello, World!” and click “Save”. Click the “View Site” link in the top
-menu, to open your site's home page in a new window. Great looking site,
-isn't it! Look at the HTML page source: it is literally “Hello, World!”,
-followed by some status information - certainly not a valid HTML page.
+The 'Page name' above the large code editing area should be `default`. Replace the entire contents with `Hello, World!` and press 'Save'. Use the 'View site' link in the top menu, to open your site's home page in a new window. Great looking site, isn't it?! Look at the HTML page source: it is literally `Hello, World!`, followed by some status information - certainly not a valid HTML page!
 
-Close the HTML source view; then get a new, clean, HTML file from your
-HTML editor. Copy the entire contents of this file and paste it in over
-“Hello, World!” back in the Textpattern control panel. Save the
-template, return to the live site and refresh the page. Now you have a
-real, if empty, web page. Look at the page source; you'll see the HTML
-you pasted into the page template, again followed by status info.
+Close the HTML source view; then get a new, clean, HTML file from your HTML editor. Copy the entire contents of this file and paste it in over `Hello, World!` back in the Textpattern Pages panel. Save the page template, return to the live site and refresh the page. Now you have a real, if empty, web page. Look at the page source; you'll see the HTML you pasted into the page template, again followed by status info.
 
-### Site pages and page templates {#site-pages-and-page-templates .sectionedit3#site_pages_and_page_templates}
+## Site pages and page templates
 
-Clearly the home page of our new Textpattern site is simply the page
-template “default” (plus status info). Let's add another page to the
-site. Back in
+Clearly the home page of our new Textpattern site is simply the page template `default` (plus status info). Let's add another page to the site.
+
+Back in
 [Presentation→Pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages),
 go to the “copy page as” box, enter “page2” and click “Copy”. You now
 have two identical page templates: “default” and “page2”. Add links to
