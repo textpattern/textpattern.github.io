@@ -18,11 +18,11 @@ Start from a new Textpattern installation. If you just want to test things out, 
 
 Log in to the Textpattern control panel. If this is a truly brand-new installation you should look at the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) first and deal with any warnings or error messages. If you see "All checks passed!", great! If not, please consult the [pre-flight checks documentation](https://docs.textpattern.io/administration/diagnostics-panel#pre-flight-checks).
 
-Then go to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) and set your initial preferences. Don't worry about setting every reference correct first time, you can change preference options again at any time.
+Then go to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) and set your initial preferences. Don't worry about setting every preference correct first time, you can change preference options again at any time.
 
 ## Go!
 
-Go to the [Pages panel](https://docs.textpattern.io/administration/pages-panel). We're about to overwrite the default page template; if you want to keep a copy of the original, enter a new name for your backup, then use the 'Duplicate' link. This is optional; if you did so click the “default” link in the list on the right to return to the default page template.
+Go to the [Pages panel](https://docs.textpattern.io/administration/pages-panel). We're about to overwrite the default page template; if you want to keep a copy of the original, enter a new name for your backup, then use the 'Duplicate' link. This is optional; if you did so click the 'default' link in the list on the right to return to the default page template.
 
 The 'Page name' above the large code editing area should be `default`. Replace the entire contents with `Hello, World!` and press 'Save'. Use the 'View site' link in the top menu, to open your site's home page in a new window. Great looking site, isn't it?! Look at the HTML page source: it is literally `Hello, World!`, followed by some status information - certainly not a valid HTML page!
 
@@ -32,27 +32,9 @@ Close the HTML source view; then get a new, clean, HTML file from your HTML edit
 
 Clearly the home page of our new Textpattern site is simply the page template `default` (plus status info). Let's add another page to the site.
 
-Back in
-[Presentation→Pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages),
-go to the “copy page as” box, enter “page2” and click “Copy”. You now
-have two identical page templates: “default” and “page2”. Add links to
-each page: in the “page2” template add
+Back in the [Pages panel](https://docs.textpattern.io/administration/pages-panel), enter a page name `page2` and use the 'Duplicate' link again. You now have two identical page templates: `default` and `page2`. Add links to each page: in the “page2” template add `<a href="./">Home</a>` somewhere in the `<body>` and save. Now open the `default` page template by clicking its link in the list, and add `<a href="./?s=page2">Page 2</a>` somewhere in the `<body>` and save.
 
-    <a href="./">Home</a>
-
-somewhere in the
-
-    <body>
-
-and save. Open the “default” page template by clicking its link in the
-right-hand list, and add
-
-    <a href="./?s=page2">Page 2</a>
-
-and save.
-
-There's one more task before we can see the new page. Switch to
-[Presentation→Sections](/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections),
+There's one more task before we can see the new page. Switch to the [Sections panel](https://docs.textpattern.io/administration/sections-panel),
 enter “page2” in the input field at top, and click “Create”. Scroll down
 and find the section you just created. In the “Uses Page” dropdown for
 this section, select “page2”, then save (be sure to use the save button
@@ -520,52 +502,42 @@ element. Let's do the same with our section list:
 
 The template should now look something like this:
 
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title><txp:page_title /></title>
-    <txp:css format="link" />
-    </head>
-    <body>
-    <div>
-    <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
-    <p><txp:site_slogan /></p>
-    <txp:search_input />
-    <txp:section_list wraptag="ul" break="li" />
-    <txp:category_list wraptag="ul" break="li" />
-    <txp:if_search>
-    <h1>Search results for “<txp:search_term />”</h1>
-    </txp:if_search>
-    <txp:if_category>
-    <h1>Articles in category “<txp:category />”</h1>
-    </txp:if_category>
-    <txp:article />
-    </div>
-    </body>
-    </html>
+~~~html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title><txp:page_title /></title>
+<txp:css format="link" />
+</head>
+<body>
+<div>
+<h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+<p><txp:site_slogan /></p>
+<txp:search_input />
+<txp:section_list wraptag="ul" break="li" />
+<txp:category_list wraptag="ul" break="li" />
+<txp:if_search>
+<h1>Search results for “<txp:search_term />”</h1>
+</txp:if_search>
+<txp:if_category>
+<h1>Articles in category “<txp:category />”</h1>
+</txp:if_category>
+<txp:article />
+</div>
+</body>
+</html>
+~~~
 
-### Extending the structure {#extending-the-structure .sectionedit10#extending_the_structure}
+## Extending the structure
 
-Sections are the framework of a Textpattern site. We started the
-tutorial by naming a new section “Page 2”, but as we've seen, a section
-is much more than a page. On a real site you'll name your sections
-according to the primary level of site structure; generally this is the
-same as your top-level menu items.
+Sections are the framework of a Textpattern site. We started the tutorial by naming a new section `Page 2`, but as we've seen, a section is much more than a page. On a real site you'll name your sections according to the primary level of site structure; generally this is the same as your top-level menu items.
 
-Textpattern does not have native support for subsections, so is not well
-suited to building hierachical site structures. This may seem like a
-serious limitation, but the beauty of a dynamic site is how easy it is
-to cross-link related content, making it easier for users to find what
-they need without delving through multiple layers of site structure.
-Traditional, hierarchical sites are perhaps more convenient for their
-designers than their users.
+Textpattern does not have native support for subsections, so is not well suited to building hierachical site structures. This may seem like a serious limitation, but the beauty of a dynamic site is how easy it is to cross-link related content, making it easier for users to find what they need without delving through multiple layers of site structure. Traditional, hierarchical sites are perhaps more convenient for their designers than their users.
 
-In designing your Textpattern site, explore how to use search and
-category linking to make it easy for users to jump straight to the
-content they want.
+In designing your Textpattern site, explore how to use search and category linking to make it easy for users to jump straight to the content they want.
 
-### Learning more
+## Learning more
 
 This is just a bare outline of how to build a Textpattern-powered site. To continue your learning path, participate in the [Textpattern CMS support forum](https://forum.textpattern.io/), read tutorials and [Textpattern tips](http://textpattern.tips/), and study the [Tag reference](https://docs.textpattern.io/tags/).
