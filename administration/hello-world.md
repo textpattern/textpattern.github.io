@@ -88,66 +88,25 @@ Return to the [Pages panel](https://docs.textpattern.io/administration/pages-pan
 
 ...and resave the template.
 
-Before looking at the results, go to the [Sections panel](https://docs.textpattern.io/administration/sections-panel).
-Find the listing for the `about` section and click its “X” button. A
-dialog box will pop up asking if you really want to delete it - click
-“OK”. Now find the “articles” section and change its “Uses Page:”
-setting to “default”, then click the Save button for this section. Do
-the same for your “page2” section: change its “Uses Page:” setting to
-“default”. While you're here, change its “Section title” to “Page 2”.
-Save your changes.
+Before looking at the results, go to the [Sections panel](https://docs.textpattern.io/administration/sections-panel). Find the `articles` section, edit it and change its 'Uses page' setting to `default`, then press the 'Save' button for this section. Do the same for your `page2` section: change its 'Uses page' setting to `default`. While you're here, change its 'Section title' to `Page 2`. Save your changes.
 
-Go to the live site and re-load the home page. Now there are two links:
-“Articles” and “Page 2”. Click each link and observe the URL: the URL
-for “Articles” will have your base URL followed by “?s=articles”, and
-the URL for “Page 2” will end in “?s=page2”. Otherwise the pages are
-identical. We no longer have a link to the home page, though, so let's
-add that in: return to the template and edit the
+Go to the live site and re-load the home page. Now there are two links: 'Articles' and 'Page 2'. Click each link and observe the URL: the URL for 'Articles' will have your base URL followed by `?s=articles` (in messy URL mode) or `articles` (in clean URL mode), and the URL for 'Page 2' will end in either `?s=page2` (or `page2`). Otherwise the pages are identical. We no longer have a link to the home page, though, so let's add that in: return to the template and edit the `<txp:section_list />` tag we added earlier so it looks like this:
 
-    section_list
+~~~ html
+<txp:section_list include_default="1" />
+~~~
 
-tag we added earlier so it looks like this:
+Now the pages on the live site have three links. 'My site' (a link to the home page) has been added to the top of the list. Perhaps you've already realized that `<txp:section_list />` is a Textpattern tag, and that setting its `include_default` attribute caused it to include the link to the home page. Note that it uses the same syntax as an HTML tag, and is mainly distinguished by the `txp:` prefix. All Textpattern tags generally follow this convention.
 
-    <txp:section_list include_default="1" />
+Our three pages are still identical, other than the URL, so let's add some content. In the default template, below the `<txp:section_list />` tag, add this:
 
-Now the pages on the live site have three links: “My Site”, a link to
-the home page, has been added to the top of the list. Perhaps you've
-already realized that
-
-    section_list
-
-is a Textpattern tag, and that setting its
-
-    include_default
-
-attribute caused it to include the link to the home page. Note that it
-uses the same syntax as an HTML tag, and is mainly distinguished by the
-“txp:” prefix. All Textpattern tags follow this convention.
-
-Our three pages are still identical, other than the URL, so let's add
-some content. In the default template, below the
-
-    section_list
-
-tag, add this:
-
-    <txp:article>
+~~~ html
+<txp:article>
     <h2><txp:title /></h2>
-    </txp:article>
+</txp:article>
+~~~
 
-Look at the results on the live site. Check all three links. Note how
-the home and Articles pages now have “Welcome to Your Site!” below the
-section links. Look at the page source; the new line is in
-
-    h2
-
-tags. That is, the
-
-    title
-
-tag you added to the template has been replaced by an article title.
-(“Welcome to Your Site!” is a sample article included in the
-installation.)
+Look at the results on the live site. Check all three links. Note how the home and Articles pages now have 'Welcome to Your Site!' below the section links. Look at the page source; the new line is in `<h2>...</h2>` tags. That is, the `<txp:title />` tag you added to the template has been replaced by an article title ('Welcome to your site' is a sample article included in the initial installation).
 
 ## Articles and sections
 
@@ -531,24 +490,26 @@ The template should now look something like this:
             <txp:site_name />
         </txp:link_to_home>
     </h1>
-    <p>
-        <txp:site_slogan />
-    </p>
+    <p><txp:site_slogan /></p>
     <txp:search_input />
+
     <txp:section_list wraptag="ul" break="li" />
     <txp:category_list wraptag="ul" break="li" />
+
     <txp:if_search>
         <h1>
             Search results
             <q><txp:search_term /></q>
         </h1>
     </txp:if_search>
+
     <txp:if_category>
         <h1>
             Articles in category
             <q><txp:category /></q>
         </h1>
     </txp:if_category>
+
     <txp:article />
 </body>
 </html>
