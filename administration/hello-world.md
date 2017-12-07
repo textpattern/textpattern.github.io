@@ -54,49 +54,42 @@ Close the HTML source view; then get a new, clean, HTML file from your HTML edit
 
 Clearly the home page of our new Textpattern site is simply the page template `default` (plus status info). Let's add another page to the site.
 
-Back in the [Pages panel](https://docs.textpattern.io/administration/pages-panel), enter a page name `page2` and use the 'Duplicate' link again. You now have two identical page templates: `default` and `page2`. Add links to each page: in the “page2” template add `<a href="./">Home</a>` somewhere in the `<body>` and save. Now open the `default` page template by clicking its link in the list, and add `<a href="./?s=page2">Page 2</a>` somewhere in the `<body>` and save.
+Back in the [Pages panel](https://docs.textpattern.io/administration/pages-panel), enter a page name `page2` and use the 'Duplicate' link again. You now have two identical page templates: `default` and `page2`. Add links to each page: in the “page2” template add...
 
-There's one more task before we can see the new page. Switch to the [Sections panel](https://docs.textpattern.io/administration/sections-panel),
-enter “page2” in the input field at top, and click “Create”. Scroll down
-and find the section you just created. In the “Uses Page” dropdown for
-this section, select “page2”, then save (be sure to use the save button
-at the bottom of the “page2” section).
+~~~ html
+<a href="./">Home</a>
+~~~
 
-Return to the live site and reload the page. Now you have a two-page
-site and can link back and forth: note the URLs as you do so. Look at
-the HTML source for Page 2; once again you can see it is simply the
-contents of your new page template.
+...somewhere in the `<body>` and save. Now open the `default` page template by clicking its link in the list, and add...
 
-You could continue adding templates and sections in this way, putting
-all your content into the templates, adding links manually as above, and
-creating an entire website. You could also [build a working harpsichord
-entirely out of Lego blocks](http://www.henrylim.org/Harpsichord.html),
-which would be just about as easy to build and keep in tune.
+~~~ html
+<a href="./?s=page2">Page 2</a>
+~~~
 
-In a traditional, static website, there's an HTML file for every page.
-You might say the two are equivalent: page = HTML file. Our Textpattern
-site is currently much the same, apparently: page = page template. But
-“template” means reusable pattern or framework, and that is just how a
-page template is meant to be used in Textpattern - as the pattern for
-many different pages. The page templates we've created so far aren't
-real templates - they're just static HTML.
+...somewhere in the `<body>` and save.
+
+There's one more task before we can see the new page. Switch to the [Sections panel](https://docs.textpattern.io/administration/sections-panel), and create and edit a new section called `page2`. In the 'Uses page' dropdown for this section, select `page2` and then press 'Save'.
+
+Return to the live site and reload the page. Now you have a two-page site and can link back and forth: note the URLs as you do so. Look at the HTML source for Page 2; once again you can see it is simply the contents of your new page template.
+
+You could continue adding templates and sections in this way, putting all your content into the templates, adding links manually as above, and creating an entire website. However, more concise and efficient solutions are just a few Textpattern tags away!
+
+In a traditional, static website, there's an HTML file for every page. You might say the two are equivalent: page = HTML file. Our Textpattern site is currently much the same, apparently: page = page template. But 'template' means reusable pattern or framework, and that is just how a page template is meant to be used in Textpattern - as the pattern for many different pages. The page templates we've created so far aren't real templates - they're just static HTML.
 
 ## Textpattern tags
 
-We turn our static page templates into functional ones by adding
-***Textpattern tags***, which are placeholders for dynamic content.
-Return to
-[Presentation→Pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages)
-and the “default” template. Delete the anchor to Page 2 we added
-earlier; in its place enter
+We turn our static page templates into functional ones by adding [Textpattern tags](https://docs.textpattern.io/tags/tag-basics/), which are placeholders for dynamic content.
 
-    <txp:section_list />
+Return to the [Pages panel](https://docs.textpattern.io/administration/pages-panel) and to the `default` template. Delete the anchor to Page 2 we added earlier; in its place enter...
 
-and save the template.
+~~~ html
+<txp:section_list />
+~~~
 
-Before looking at the results, go to
-[Presentation→Sections](/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections).
-Find the listing for the “about” section and click its “X” button. A
+...and resave the template.
+
+Before looking at the results, go to the [Sections panel](https://docs.textpattern.io/administration/sections-panel).
+Find the listing for the `about` section and click its “X” button. A
 dialog box will pop up asking if you really want to delete it - click
 “OK”. Now find the “articles” section and change its “Uses Page:”
 setting to “default”, then click the Save button for this section. Do
@@ -524,30 +517,39 @@ element. Let's do the same with our section list:
 
 The template should now look something like this:
 
-~~~html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+~~~ html
+<!DOCTYPE html> 
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title><txp:page_title /></title>
-<txp:css format="link" />
+	<meta charset="utf-8">
+	<title><txp:page_title /></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <txp:css format="link" />
 </head>
 <body>
-<div>
-<h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
-<p><txp:site_slogan /></p>
-<txp:search_input />
-<txp:section_list wraptag="ul" break="li" />
-<txp:category_list wraptag="ul" break="li" />
-<txp:if_search>
-<h1>Search results for “<txp:search_term />”</h1>
-</txp:if_search>
-<txp:if_category>
-<h1>Articles in category “<txp:category />”</h1>
-</txp:if_category>
-<txp:article />
-</div>
+    <h1>
+        <txp:link_to_home>
+            <txp:site_name />
+        </txp:link_to_home>
+    </h1>
+    <p>
+        <txp:site_slogan />
+    </p>
+    <txp:search_input />
+    <txp:section_list wraptag="ul" break="li" />
+    <txp:category_list wraptag="ul" break="li" />
+    <txp:if_search>
+        <h1>
+            Search results
+            <q><txp:search_term /></q>
+        </h1>
+    </txp:if_search>
+    <txp:if_category>
+        <h1>
+            Articles in category
+            <q><txp:category /></q>
+        </h1>
+    </txp:if_category>
+    <txp:article />
 </body>
 </html>
 ~~~
