@@ -107,101 +107,41 @@ Look at the results on the live site. Check all three links. Note how the home a
 
 ## Articles and sections
 
-“Page 2” is empty but for the section links, so let's add an article to
-it. Go to
-[content](/home/www/zendstudio/dokuwiki/bin/doku.php?id=content), which
-automatically puts you at
-[Content→Write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write).
-Enter “My Second Article” in the “Title” field at top centre. Look for
-the “Section” pulldown at right, and select “page2”. Click “Publish” and
-return to the live site. Look at each page again: “Page 2” shows the
-article title we just added in
-[Content→Write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write),
-“Articles” is unchanged, and the home page shows both articles.
+`Page 2` is empty but for the section links, so let's add an article to it. Go to the [Write panel](https://docs.textpattern.io/administration/write-panel). Enter 'My second article' in the 'Title' field at top. Look for the 'Section' in the side panel and select `page2`. Press 'Publish' and return to the live site. Look at each page again: 'Page 2' shows the article title we just added in the Write panel, 'Articles' is unchanged, and the home page shows both articles.
 
-The new article appears on Page 2 because we assigned it to that section
-(in Textpattern an article must belong to a section). The “Default”
-section is a special case: no articles are directly assigned to it, but
-it displays articles from all sections. That's why “Page 2” and
-“Articles” only show what's in their associated sections, while the home
-page shows both: the home page represents the “Default” section. Try
-this: in the live site, enter the base URL plus “?s=default”. It gets
-you the home page.
+The new article appears on 'Page 2' because we assigned it to that section (in Textpattern an article must belong to a section). The `Default` section is a special case: no articles are directly assigned to it, but it displays articles from all sections. That's why 'Page 2' and 'Articles' only show what's in their associated sections, while the home page shows both: the home page represents the 'Default' section.
 
-Add another article: go to
-[Content→Write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write),
-enter “My Third Article” as the title, and click “Publish”. What happens
-on the live site? The new article appears on the “Articles” page,
-because that is the section it was assigned to by default, and also
-appears on the home page; “Page 2” remains unchanged.
+Add another article: go to the [Write panel](https://docs.textpattern.io/administration/write-panel), enter 'My third article' as the title, and press 'Publish'. What happens on the live site? The new article appears on the 'Articles' page, because that is the section it was assigned to by default, and also appears on the home page; 'Page 2' remains unchanged.
 
 ## Pages and context
 
-The three pages on the live site all use the same page template. They
-show different content because some Textpattern tags are ***context
-sensitive***. Context is essentially what can be gleaned from the URL.
-(If the style of URL with a “?” is new to you, research ***query
-string*** for an explanation.)
+The three pages on the live site all use the same page template. They show different content because some Textpattern tags are **context sensitive**. Context is essentially what can be gleaned from the URL (if the style of URL with a `?` is new to you, research **URL query strings** for an explanation).
 
-The URLs we've seen so far give a value for the section (the “s”
-parameter in the query string). The base URL doesn't do this explicity,
-but as we saw with the “?s=default” experiment, even the base URL
-implies a section. Context can include other factors, but section is the
-essential one - every page in a Textpattern site belongs to a section.
-We've already seen how the section determines which page template will
-be used, and also how it tells the
+The URLs we've seen so far give a value for the section. Context can include other factors, but section is the essential one - every page in a Textpattern site belongs to a section. We've already seen how the section determines which page template will be used, and also how it tells the `<txp:article />` tag which articles to display.
 
-    article
+The next most important facet of context is whether the page shows a single article or a list. Go back to the default template and edit the `<txp:article />` tag so that it looks like this:
 
-tag which articles to display.
-
-The next most important facet of context is whether the page shows a
-single article or a list. Go back to the default template and edit the
-
-    article
-
-tag so that it looks like this:
-
-    <txp:article>
+~~~ html
+<txp:article>
     <h2><txp:permlink><txp:title /></txp:permlink></h2>
+
     <txp:if_individual_article>
-    <txp:body />
+        <txp:body />
     <txp:else />
-    <txp:excerpt />
+        <txp:excerpt />
     </txp:if_individual_article>
-    </txp:article>
+</txp:article>
+~~~
 
-Go to
-[Content→Write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) and
-click on the “Recent Articles” link at left. Links to the two articles
-you added will appear: click “My Third Article”. In the **Body** editing
-area enter “Third article: body” and in the **Excerpt** area enter
-“Third article: excerpt”; click Save. Now do the same for “My Second
-Article”, putting relevant text in the **Body** and **Excerpt** fields.
+Go to the [Articles panel](https://docs.textpattern.io/administration/articles-panel) and a list of the articles you added will appear: select and edit 'My third article' again. In the 'Body' editing area enter 'Third article: body' and in the 'Excerpt' area enter 'Third article: excerpt'; press 'Save'. Now do the same for 'My second article', putting relevant text in the 'Body' and 'Excerpt' fields.
 
-Return to the live site and re-load the home page (or simply click on
-the “My Site” link). The article excerpts you just added appear in this
-list. You'll also see the excerpts on the “Articles” and “Page 2” pages.
-Now click one of the article titles. We see a different view: there is
-only one article, its body is shown instead of the excerpt, and below
-that is a message about comments (or a comment input form, if you are
-looking at “Welcome to Your Site!”).
+Return to the live site and reload the home page (or simply click on the 'My site' link). The article excerpts you just added appear in this list. You'll also see the excerpts on the 'Articles' and 'Page 2' pages.
 
-Adding the
-
-    permlink
-
-tag has turned each article title into a link to its individual article
-page. Note the URLs of these pages, with query strings like “?id=3”.
-Every article has a unique ID number, which you can see in
-[Content→Articles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=articles).
-The “s” parameter - section - doesn't appear in these URLs, because
-section is implied (every article belongs to a section).
+Now click one of the article titles. We see a different view: there is only one article, its body is shown instead of the excerpt, and below that is a message about comments (or a comment input form, if you are looking at 'Welcome to your site'). Adding the `<txp:permlink />` tag has turned each article title into a link to its individual article page.
 
 ## More contexts
 
-***Search*** and ***category*** are other contexts that are commonly
-built into a Textpattern site.
+**Search** and **category** are other contexts that are commonly built into a Textpattern-powered site.
 
 ### Search
 
