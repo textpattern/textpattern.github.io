@@ -6,7 +6,7 @@ title: "Textpattern basic tutorial"
 description: By following this simple tutorial you will gain an insight into the way Textpattern is modelled and can start to plan out your own CMS-driven website.
 ---
 
-# Textpattern basic tutorial
+# Textpattern basic tutorial TODO
 
 Textpattern CMS is a powerful content management system, with many ways of handling and displaying dynamic content. This can seem quite daunting upon first experience, but by following this tutorial you will gain an insight into the way Textpattern is modelled, and can hopefully start to plan out your own CMS-driven website.
 
@@ -107,9 +107,9 @@ Look at the results on the live site. Check all three links. Note how the home a
 
 ## Articles and sections
 
-`Page 2` is empty but for the section links, so let's add an article to it. Go to the [Write panel](https://docs.textpattern.io/administration/write-panel). Enter 'My second article' in the 'Title' field at top. Look for the 'Section' in the side panel and select `page2`. Press 'Publish' and return to the live site. Look at each page again: 'Page 2' shows the article title we just added in the Write panel, 'Articles' is unchanged, and the home page shows both articles.
+'Page 2' is empty but for the section links, so let's add an article to it. Go to the [Write panel](https://docs.textpattern.io/administration/write-panel). Enter 'My second article' in the 'Title' field at top. Look for the 'Section' in the side panel and select `page2`. Press 'Publish' and return to the live site. Look at each page again: 'Page 2' shows the article title we just added in the Write panel, 'Articles' is unchanged, and the home page shows both articles.
 
-The new article appears on 'Page 2' because we assigned it to that section (in Textpattern an article must belong to a section). The `Default` section is a special case: no articles are directly assigned to it, but it displays articles from all sections. That's why 'Page 2' and 'Articles' only show what's in their associated sections, while the home page shows both: the home page represents the 'Default' section.
+The new article appears on 'Page 2' because we assigned it to that section (in Textpattern an article must belong to a section). The 'Default' section is a special case: no articles are directly assigned to it, but it displays articles from all sections. That's why 'Page 2' and 'Articles' only show what's in their associated sections, while the home page shows both: the home page represents the 'Default' section.
 
 Add another article: go to the [Write panel](https://docs.textpattern.io/administration/write-panel), enter 'My third article' as the title, and press 'Publish'. What happens on the live site? The new article appears on the 'Articles' page, because that is the section it was assigned to by default, and also appears on the home page; 'Page 2' remains unchanged.
 
@@ -145,69 +145,43 @@ Now click one of the article titles. We see a different view: there is only one 
 
 ### Search
 
-Add this to the default template, above the
+Add this to your `default` template, above the `<txp:section_list />` tag:
 
-    section_list
+~~~ html
+<txp:search_input />
+~~~
 
-:
+Then modify the `<txp:article />` tag to this:
 
-    <txp:search_input />
+~~~ html
+<txp:article>
+    <h2><txp:permlink><txp:title /></txp:permlink></h2>
 
-Then modify the
-
-    article
-
-tag to this:
-
-    <txp:article>
-        <h2><txp:permlink><txp:title /></txp:permlink></h2>
-        <txp:if_individual_article>
-            <txp:body />
+    <txp:if_individual_article>
+        <txp:body />
+    <txp:else />
+        <txp:if_search>
+            <txp:search_result_excerpt />
         <txp:else />
-            <txp:if_search>
-                <txp:search_result_excerpt />
-            <txp:else />
-                <txp:excerpt />
-            </txp:if_search>
-        </txp:if_individual_article>
-    </txp:article>
+            <txp:excerpt />
+        </txp:if_search>
+    </txp:if_individual_article>
+</txp:article>
+~~~
 
-I've added some indenting to make the structure clearer, but you don't
-have to indent the tags in your template if you don't want to.
-
-Now the live pages have a search input box. Try a search on “body”
-(there's no “Search” button, so just enter the term and hit the Return
-key). Note how each article listed shows the search term highlighted,
-thanks to the
-
-    search_result_excerpt
-
-tag. Also note the URL: “?q=body”. Again, context comes from URL, so in
-this case the context is search results (the “q” stands for “query”).
+Now the live pages have a search input box. Try a search of 'body' (there's no 'Search' button by default, so just enter the term and enter). Note how each article listed shows the search term highlighted, thanks to the `<txp:search_result_excerpt />` tag. Also note the URL: `?q=body`. Context comes from URL, so in this case the context is search results (the `q` stands for 'query').
 
 ### Category lists
 
-Add this to the template, below the
+Add this to your `default` template, below the `<txp:section_list />`:
 
-    section_list
+~~~ html
+<txp:category_list wraptag="ul" break="li" />
+~~~
 
-:
+A list of three linked items now appears below the section list. Try clicking them: as usual, note both the URL and what appears on the page. The three categories, with their absurd names, are included in the default installation, and the 'Welcome to your site' article is assigned to two of them.
 
-    <txp:category_list wraptag="ul" break="li" />
-
-A list of three linked items now appears below the section list. Try
-clicking them: as usual, note both the URL and what appears on the page.
-The three categories, with their absurd names, are included in the
-default installation, and the “Welcome to Your Site!” article is
-assigned to two of them.
-
-Create some new article categories in
-[categories](/home/www/zendstudio/dokuwiki/bin/doku.php?id=categories),
-then go to
-[Content→Write](/home/www/zendstudio/dokuwiki/bin/doku.php?id=write) and
-give your new articles some categories, by selecting them from the
-pull-down boxes on the right side of the page. Return to the live site
-and see how this changes the category links and the resulting lists.
+Create some new article categories inthe [Categories panel](https://docs.textpattern.io/administration/categories-panel), then go to the [Article panel](https://docs.textpattern.io/administration/articles-panel) and edit and give your new articles some categories, by selecting them from the pull-down boxes on the 'Category 1' and 'Category 2' items in the Write panel sidebar. Return to the live site and see how this changes the category links and the resulting lists.
 
 ## Form templates
 
@@ -216,19 +190,8 @@ not to be confused with [HTML forms](http://htmlhelp.com/reference/html40/forms/
 reusable template chunks, a convenient way to keep your templates tidy
 and also to share code and markup among templates. For example, on my
 Textpattern sites I nearly always have a form called “page_top”, which
-contains the doctype declaration, the opening
-
-    <html>
-
-tag, the
-
-    <head>
-
-, and the opening
-
-    <body>
-
-tag. Then at the top of each template I call the form thusly:
+contains the doctype declaration, the opening `<html>` tag, the `<head>`, and the opening
+`<body>` tag. Then at the top of each template I call the form thusly:
 
     <txp:output_form form="page_top" />
 
