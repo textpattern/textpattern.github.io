@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Administration
+category: FAQs
 published: true
 title: "Textpattern basic tutorial"
 description: By following this simple tutorial you will gain an insight into the way Textpattern is modelled and can start to plan out your own CMS-driven website.

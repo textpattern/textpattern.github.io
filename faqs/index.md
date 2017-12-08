@@ -9,6 +9,7 @@ description: A list of tutorials and the most commonly-asked questions on usage 
 # Frequently asked questions (FAQs) and how-to information
 
 * [Textpattern basic tutorial](https://docs.textpattern.io/faqs/textpattern-basic-tutorial)
+* [Textpattern semantic model](https://docs.textpattern.io/faqs/textpattern-semantic-model)
 
 A list of the most commonly-asked questions on usage of Textpattern. These answers may help save you some much needed time.
 

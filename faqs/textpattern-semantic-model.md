@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Administration
+category: FAQs
 published: true
 title: "The Textpattern semantic model"
 description: The system's six primary building blocks that make it possible to create and manage your site's structure, content and presentation.
