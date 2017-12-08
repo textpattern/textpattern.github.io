@@ -2,20 +2,19 @@
 layout: document
 category: Administration
 published: true
-title: "Hello, World!"
-description: The Hello, World! approach means to start from a blank slate and add pieces one at a time.
+title: "Textpattern basic tutorial"
+description: By following this simple tutorial you will gain an insight into the way Textpattern is modelled and can start to plan out your own CMS-driven website.
 ---
 
-# Hello, World! TODO
+# Textpattern basic tutorial
 
-Moving from static web development to dynamic, CMS-based development can be a challenge. Obviously you have to learn the new tool - the CMS - but for many the harder part is understanding dynamic publishing, a different way of thinking about website design. Trying to learn both at once is a steep learning curve, but is manageable with the right step-by-step approach.
+Textpattern CMS is a powerful content management system, with many ways of handling and displaying dynamic content. This can seem quite daunting upon first experience, but by following this tutorial you will gain an insight into the way Textpattern is modelled, and can hopefully start to plan out your own CMS-driven website.
 
-The "Hello, World!" approach means to start from a blank slate and add pieces one at a time. It's not the right approach for everyone, but assuming you want to try this method, read on.
+The approach outlined below starts from a blank slate and adds pieces one at a time. It's not the right approach for everyone, but assuming you want to try this method, read on.
 
 On this page:
 
-* [Ready, set...](#ready-set)
-* [Go!](#go)
+* [Ready, set... go!](#ready-set-go)
 * [Site pages and page templates](#site-pages-and-page-templates)
 * [Textpattern tags](#textpattern-tags)
 * [Articles and sections](#articles-and-sections)
@@ -34,15 +33,13 @@ On this page:
 * [Extending the structure](#extending-the-structure)
 * [Learning more](#learning-more)
 
-## Ready, set...
+## Ready, set... go!
 
 Start from a new Textpattern installation. If you just want to test things out, you could even use [the online Textpattern demo](https://textpattern.com/demo), keeping in mind that you might be sharing it with other users, and that the demo gets wiped clean every two hours.
 
 Log in to the Textpattern control panel. If this is a truly brand-new installation you should look at the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) first and deal with any warnings or error messages. If you see "All checks passed!", great! If not, please consult the [pre-flight checks documentation](https://docs.textpattern.io/administration/diagnostics-panel#pre-flight-checks).
 
 Then go to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) and set your initial preferences. Don't worry about setting every preference correct first time, you can change preference options again at any time.
-
-## Go!
 
 Go to the [Pages panel](https://docs.textpattern.io/administration/pages-panel). We're about to overwrite the default page template; if you want to keep a copy of the original, enter a new name for your backup, then use the 'Duplicate' link. This is optional; if you did so click the 'default' link in the list on the right to return to the default page template.
 

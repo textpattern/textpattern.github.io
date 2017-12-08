@@ -70,6 +70,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### FAQs
 
+* [Textpattern basic tutorial](https://docs.textpattern.io/faqs/textpattern-basic-tutorial)
 * [Complete list of Textpattern FAQs](https://docs.textpattern.io/faqs/) (the most commonly-asked Textpattern questions)
 
 </div>

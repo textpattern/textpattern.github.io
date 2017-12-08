@@ -3,10 +3,12 @@ layout: landing
 category: FAQs
 published: true
 title: "Frequently asked questions (FAQs)"
-description: A list of the most commonly-asked questions on usage of Textpattern.
+description: A list of tutorials and the most commonly-asked questions on usage of Textpattern.
 ---
 
 # Frequently asked questions (FAQs) and how-to information
+
+* [Textpattern basic tutorial](https://docs.textpattern.io/faqs/textpattern-basic-tutorial)
 
 A list of the most commonly-asked questions on usage of Textpattern. These answers may help save you some much needed time.
 
