@@ -185,88 +185,57 @@ Create some new article categories inthe [Categories panel](https://docs.textpat
 
 ## Form templates
 
-Textpattern forms (see [Form templates](https://docs.textpattern.io/themes/form-templates-explained),
-not to be confused with [HTML forms](http://htmlhelp.com/reference/html40/forms/form.html)) are
-reusable template chunks, a convenient way to keep your templates tidy
-and also to share code and markup among templates. For example, on my
-Textpattern sites I nearly always have a form called “page_top”, which
-contains the doctype declaration, the opening `<html>` tag, the `<head>`, and the opening
-`<body>` tag. Then at the top of each template I call the form thusly:
+Textpattern forms (see [Form templates](https://docs.textpattern.io/themes/form-templates-explained), not to be confused with [HTML forms](https://www.w3.org/TR/html401/interact/forms.html)) are reusable template chunks, a convenient way to keep your templates tidy and also to share code and markup among templates. For example, on my Textpattern sites I nearly always have a form called 'head', which contains any common site-wide code between opening `<head>` and closing `</head>` tags. Then at the top of each template I call the form via a `<txp:output_form />` tag thusly:
 
-    <txp:output_form form="page_top" />
+~~~ html
+<txp:output_form form="head" />
+~~~
 
 ### Article forms
 
-A special Textpattern form type is the ***article form***. In our
-template we have been using
+A special Textpattern form type is the **article form**. In our template we have been using `<txp:article>` as a container tag (see [self-closed versus container tags](https://docs.textpattern.io/tags/tag-basics/self-closed-versus-container-tags)), and it's starting to get unwieldy. We would gain a lot of flexibility (and also tidy up the default template) by putting the tags in our...
 
-    article
+~~~ html
+<txp:article>
+   ...contained code...
+</txp:article>
+~~~
 
-as a container tag (see [Self-closed versus Container
-Tags](/home/www/zendstudio/dokuwiki/bin/doku.php?id=self-closed_versus_container_tags)),
-and it's starting to get unwieldy. We would gain a lot of flexibility
-(and also tidy up the default template) by putting the tags in our
+...container into a form template instead. Then we use...
 
-    article
+~~~ html
+<txp:article />
+~~~
 
-container into a form instead. Then we use
+...as a self-closing tag and call the form. If you don't specify an attribute `form` when using `<txp:article />` this way, it generally uses the 'default' article form. The exception is search results, in which context `<txp:article />` looks for a form called 'search_results'.
 
-    article
+Go to the [Forms panel](https://docs.textpattern.io/administration/forms-panel). We're going to overwrite the 'default' and 'search_results' form templates, so if you want to keep the originals copy each of them and make new form templates to hold the backups.
 
-as a self-closing tag and call the form. If you don't specify an article
-form when using
+Load the 'default' form into the editor by clicking its link in the sidebar list. Replace the entire contents of the form with:
 
-    article
-
-this way, it generally uses the “default” article form. The exception is
-search results, in which context
-
-    article
-
-looks for a form called “search_results”.
-
-Go to [Forms panel](https://docs.textpattern.io/administration/forms-panel).
-We're going to overwrite the “default” and “search_results” forms, so
-if you want to keep the originals copy each of them and make new forms
-to hold the backups. Again, this is optional, because you can always
-retrieve “the
-[default_forms](/home/www/zendstudio/dokuwiki/bin/doku.php?id=default_forms).
-
-Load the “default” form into the editor by clicking its link in the
-right-hand list. Replace the entire contents of the form with:
-
-    <h2><txp:permlink><txp:title /></txp:permlink></h2>
-    <txp:if_individual_article>
+~~~ html
+<h2><txp:permlink><txp:title /></txp:permlink></h2>
+<txp:if_individual_article>
     <txp:body />
-    <txp:else />
+<txp:else />
     <txp:excerpt />
-    </txp:if_individual_article>
+</txp:if_individual_article>
+~~~
 
-and save the change. Select “search_results” for editing and replace
-its contents with:
+Save the change. Now select 'search_results' for editing and replace its contents with:
 
-    <h2><txp:permlink><txp:title /></txp:permlink></h2>
-    <txp:search_result_excerpt />
+~~~ html
+<h2><txp:permlink><txp:title /></txp:permlink></h2>
+<txp:search_result_excerpt />
+~~~
 
-and save the change. Return to
-[Presentation→Pages](/home/www/zendstudio/dokuwiki/bin/doku.php?id=pages)
-and in the default template replace the entire
+Save the change. Return to the [Pages panel](https://docs.textpattern.io/administration/pages-panel) and in the default template replace the entire `<txp:article>` container tag with this: `<txp:article />`.
 
-    article
-
-container tag with this:
-
-    <txp:article />
-
-The live site will work exactly as before, but now the default template
-is much cleaner, and by splitting search results into its own form we've
-made the article display logic much simpler.
+The live site will work exactly as before, but now the default template is much cleaner, and by splitting search results into its own form we've made the article display logic much simpler.
 
 ## Adding details
 
-There's a myriad of available Textpattern tags (see the Tag Reference)
-for adding dynamic content and control logic. We've only scratched the
-surface, so let's add a few details to our rudimentary site.
+There's a myriad of available Textpattern tags (see the [Tag reference](https://docs.textpattern.io/tags/)) for adding dynamic content and control logic. We've only scratched the surface, so let's add a few details to our rudimentary site.
 
 ### Page title and site name
 
