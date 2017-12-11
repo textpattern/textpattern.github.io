@@ -6,7 +6,7 @@ title: "Textpattern basic tutorial"
 description: By following this simple tutorial you will gain an insight into the way Textpattern is modelled and can start to plan out your own CMS-driven website.
 ---
 
-# Textpattern basic tutorial TODO
+# Textpattern basic tutorial
 
 Textpattern CMS is a powerful content management system, with many ways of handling and displaying dynamic content. This can seem quite daunting upon first experience, but by following this tutorial you will gain an insight into the way Textpattern is modelled, and can then start to plan out your own CMS-driven website.
 
@@ -239,107 +239,64 @@ There's a myriad of available Textpattern tags (see the [Tag reference](https://
 
 ### Page title and site name
 
-Add a
+Add a `<title>` element to the default template's `<head>` region (or replace the existing `<title>` if there is one):
 
-    <title>
+~~~ html
+<title><txp:page_title /></title>
+~~~
 
-element to the default template's
+Note how each page on the live site now shows an appropriate title. If you want to change the base title to something other than 'My site', you can do so in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel); 'Site name' is the first item in the 'Site' preferences section. While you're here, change 'Site slogan'. Back to the default template, add this above the `<txp:search_input />`:
 
-    <head>
+~~~ html
+<h1>
+    <txp:link_to_home>
+        <txp:site_name />
+    </txp:link_to_home>
+</h1>
+<h3><txp:site_slogan /></h3>
+~~~
 
-(or replace the existing
-
-    <title>
-
-if there is one):
-
-    <title><txp:page_title /></title>
-
-Note how each page on the live site now shows an appropriate title. If
-you want to change the base title to something other than “My Site”, do
-so in
-[Admin→Preferences](/home/www/zendstudio/dokuwiki/bin/doku.php?id=basic_preferences);
-“Site name” is the first item in the list. While you're here, change
-“Site slogan”. Back to the default template, add this above the
-
-    search_input
-
-:
-
-    <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
-    <p><txp:site_slogan /></p>
-
-and remove the
-
-    include_default
-
-attribute from
-
-    section_list
-
-, because the home page link is now handled by the
-
-    link_to_home
-
-tag.
+Remove the `include_default` attribute from `<txp:section_list />` tag, because the home page link is now handled by the `<txp:link_to_home>` tag.
 
 ### CSS
 
-Add
+Add...
 
-    <txp:css format="link" />
+~~~ html
+`<txp:css format="link" />`
+~~~
 
-to the
-
-    <head>
-
-. Your site now has CSS. See
-[styles](/home/www/zendstudio/dokuwiki/bin/doku.php?id=styles) to edit
-the stylesheet. In
-[Presentation→Sections](/home/www/zendstudio/dokuwiki/bin/doku.php?id=sections),
-note that each section is associated with one of these name stylesheets,
-allowing you to set section-specific styles.
+...to the `<head>` region. Your site now has CSS. See the [Styles panel](https://docs.textpattern.io/administration/styles-panel) to edit the stylesheet. In the [Sections panel](https://docs.textpattern.io/administration/sections-panel), note that each section is associated with one of these name stylesheets, allowing you to set section-specific styles.
 
 ### Conditional headers
 
-Add these conditional blocks just above
+Add these conditional blocks just above the `<txp:article />` tag:
 
-    article
+~~~ html
+<txp:if_search>
+    <h2>
+        Search results
+        <q><txp:search_term /></q>
+    </h2>
+</txp:if_search>
 
-:
+<txp:if_category>
+    <h2>
+        Articles in category
+        <q><txp:category /></q>
+    </h2>
+</txp:if_category>
+~~~
 
-    <txp:if_search>
-    <h1>Search results for “<txp:search_term />”</h1>
-    </txp:if_search>
-    <txp:if_category>
-    <h1>Articles in category “<txp:category />”</h1>
-    </txp:if_category>
-
-Enter some searches and click the category links to see how this gives
-you appropriate sub-headings for search results and category list pages.
+Enter some searches and click the category links to see how this gives you appropriate sub-headings for search results and category list pages.
 
 ### Textpattern tag attributes
 
-Most Textpattern tags allow you to set options through tag attributes.
-We've seen a few of these in action above. For our
+Most Textpattern tags allow you to set options through [tag attributes](https://docs.textpattern.io/tags/tag-attributes-cross-reference). We've seen a few of these in action above. For our `<txp:category_list />` we used the `wraptag` and `break` attributes to format the list as an HTML `<ul>` element. Let's do the same with our section list:
 
-    category_list
-
-we used the
-
-    wraptag
-
-and
-
-    break
-
-attributes to format the list as an HTML
-
-    ul
-
-element. Let's do the same with our section list:
-
-    <txp:section_list wraptag="ul" break="li" />
+~~~ html
+<txp:section_list wraptag="ul" break="li" />
+~~~
 
 ## The finished template
 
@@ -359,24 +316,24 @@ The template should now look something like this:
             <txp:site_name />
         </txp:link_to_home>
     </h1>
-    <p><txp:site_slogan /></p>
+    <h3><txp:site_slogan /></h3>
     <txp:search_input />
 
     <txp:section_list wraptag="ul" break="li" />
     <txp:category_list wraptag="ul" break="li" />
 
     <txp:if_search>
-        <h1>
+        <h2>
             Search results
             <q><txp:search_term /></q>
-        </h1>
+        </h2>
     </txp:if_search>
 
     <txp:if_category>
-        <h1>
+        <h2>
             Articles in category
             <q><txp:category /></q>
-        </h1>
+        </h2>
     </txp:if_category>
 
     <txp:article />
