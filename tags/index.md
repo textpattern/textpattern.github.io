@@ -103,6 +103,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [email](email)
 * [error message](error_message)
 * [error status](error_status)
+* [evaluate](evaluate) <span class="footnote warning">**New v4.7.0**</span>
 * [excerpt](excerpt)
 * [expires](expires)
 
@@ -132,6 +133,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
+* [header](header) <span class="footnote warning">**New v4.7.0**</span>
 * [hide](hide)
 
 </div>
