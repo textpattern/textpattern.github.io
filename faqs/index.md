@@ -15,4 +15,4 @@ A list of the most commonly-asked questions on usage of Textpattern. These answe
 
 * [How do I use a Tag Trace?](https://docs.textpattern.io/installation/troubleshooting-textpattern#the-tag-trace)
 * [I want to write a plugin/theme. How do I register a developer prefix?](https://docs.textpattern.io/development/plugin-developer-prefixes)
-* [Clean URLs don't work] @@todo point to Clean URL portion of Diagnostics panel@@
+* [Clean URLs don't work](https://docs.textpattern.io/faqs/clean-urls-do-not-work)

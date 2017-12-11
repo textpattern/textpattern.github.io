@@ -6,11 +6,9 @@ title: "FAQ: Clean URLs don't work"
 description: These and similar problems happen when you use 'clean' URL mode on a server that doesn't support mod_rewrite in .htaccess.
 ---
 
-TODO: Move relevant parts of this to [Diagnostics](https://github.com/textpattern/textpattern.github.io/blob/master/administration/diagnostics-panel.md) under the section about clean URLs, then delete this FAQ.
-
 # FAQ: Clean URLs don't work
 
-These and similar problems happen when you use 'clean' URL mode on a server that doesn't support `mod_rewrite` in `.htaccess`, or requires additional configuration in order to work. The .htaccess file supplied with Textpattern is designed to work on most Apache servers, but there is no universal solution.
+These and similar problems happen when you use 'clean' URL mode on a server that doesn't support `mod_rewrite` in `.htaccess`, or requires additional configuration in order to work. The `.htaccess` file supplied with Textpattern is designed to work on most Apache servers, but there is no universal solution.
 
 The Textpattern [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) will attempt to warn you if it can determine that clean URLs are not supported on your system. However, it doesn't detect all incompatible servers - the absence of a warning does **not** mean that your server supports clean URLs.
 
@@ -58,4 +56,4 @@ If you are configuring your own Apache server, or using a hosting arrangement th
 AllowOverride FileInfo
 ~~~
 
-If none of those changes work, or if they cause a [500 server error](500-internal-server-error), you'll need to use 'messy' URLs instead, or ask your hosting company for help.
+If none of those changes work, or if they cause a [500 server error](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500), you'll need to use 'messy' URLs instead, or ask your hosting company for help.
