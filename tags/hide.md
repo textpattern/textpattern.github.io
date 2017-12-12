@@ -15,6 +15,7 @@ On this page:
 * [Syntax](#syntax)
 * [Attributes](#attributes)
 * [Examples](#examples)
+* [Genealogy](#genealogy)
 
 ## Syntax
 
@@ -29,12 +30,8 @@ The **hide** tag is a *container* tag which is used to suppress or postpone the 
 Tag will accept the following attributes (**case-sensitive**):
 
 `process="integer"` <span class="footnote warning">v4.7.0+</span>
-: Whether and when to process the enclosed contents.
-
-If unset, no tag processing nor output will be done. If set without a value, the contents will be processes but not output. If set to an empty value (`""` or `"0"`), the contents will be output as is without processing. Finally, a positive value `"n"` means process and output on the `n`th pass.
-
-**Default:** unset.
-
+: Whether and when to process the enclosed contents. If unset, no tag processing nor output will be done. If set without a value, the contents will be processes but not output. If set to an empty value (`""` or `"0"`), the contents will be output as is without processing. Finally, a positive value `"n"` means process and output on the `n`th pass.
+: **Default:** unset.
 
 ## Examples
 
@@ -46,6 +43,8 @@ If unset, no tag processing nor output will be done. If set without a value, the
     <txp:variable name="ie_workaround" value='<txp:output_form form="ie_workaround" />' />
 </txp:hide>
 ~~~
+
+Other tags used: [output_form](output_form), [variable](variable).
 
 ### Example 2: Comment out part of a form for testing
 
@@ -67,4 +66,10 @@ If you want to try something out to see how it affects the layout without actual
 
 Renders the body text inside the `<div class="entry-content">` but skips the `<address>` and `<txp:comments_invite />` tags.
 
-Other tags used: [variable](variable), [output_form](output_form), [body](body), [author](author), [comments_invite](comments_invite).
+Other tags used: [author](author), [body](body), [comments_invite](comments_invite), [output_form](output_form), [variable](variable).
+
+## Genealogy
+
+### Version 4.7.0
+
+`process` attribute added.

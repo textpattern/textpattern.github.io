@@ -134,7 +134,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [header](header) <span class="footnote warning">**New v4.7.0**</span>
-* [hide](hide)
+* [hide](hide) <span class="footnote warning">**Modified v4.7.0**</span>
 
 </div>
 
