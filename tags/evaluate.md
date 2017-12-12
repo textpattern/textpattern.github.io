@@ -23,7 +23,7 @@ On this page:
 <txp:evaluate />
 ~~~
 
-The **evaluate** tag can be used as either a *single* or *containing* tag. When used as a single tag, it will evaluate the expression given by the `query` attribute and output its value. When used as a containing tag, it will first check whether the `query` expression (if set) produces an empty result and output nothing in this case. Otherwise, it will process the contained tags optionally filtered by the `test` attribute. If all of them produce empty results, nothing will be output. Otherwise, it will return the whole processed content.
+The **evaluate** tag can be used as either a *single* or *container* tag. When used as a single tag, it will evaluate the expression given by the `query` attribute and output its value. When used as a container tag, it will first check whether the `query` expression (if set) produces an empty result and output nothing in this case. Otherwise, it will process the contained tags optionally filtered by the `test` attribute. If all of them produce empty results, nothing will be output. Otherwise, it will return the whole processed content.
 
 ## Attributes
 
