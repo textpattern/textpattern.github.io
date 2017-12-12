@@ -789,6 +789,14 @@ Used to return pagination statistics without rendering the article list. Care mu
 
 </div>
 
+### query
+
+<div class="layout-text4col">
+
+* [evaluate](evaluate)
+
+</div>
+
 ### realname
 
 <div class="layout-text4col">
@@ -980,6 +988,14 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 * [image](image)
 * [permlink](permlink)
 * [thumbnail](thumbnail)
+
+</div>
+
+### test
+
+<div class="layout-text4col">
+
+* [evaluate](evaluate)
 
 </div>
 
