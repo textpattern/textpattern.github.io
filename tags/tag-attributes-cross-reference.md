@@ -676,6 +676,7 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 * [category](category)
 * [css](css)
 * [custom_field](custom_field)
+* [header](header)
 * [if_article_author](if_article_author)
 * [if_article_category](if_article_category)
 * [if_article_section](if_article_section)
@@ -815,6 +816,14 @@ HTML [rel attribute](https://www.w3.org/TR/html5/document-metadata.html#attr-lin
 <div class="layout-text4col">
 
 * [comment_remember](comment_remember)
+
+</div>
+
+### replace
+
+<div class="layout-text4col">
+
+* [header](header)
 
 </div>
 
@@ -1082,6 +1091,7 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
+* [header](header)
 * [if_custom_field](if_custom_field)
 * [if_variable](if_variable)
 * [if_yield](if_yield)
