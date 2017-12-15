@@ -39,9 +39,17 @@ Should be used in a page template; if checking the category in an article form, 
 
 Tag will accept the following attributes (**case-sensitive**):
 
+`category="category"` <span class="footnote warning">v4.7.0+</span>
+: Category name. Note the category name is specified in lower case regardless of how you typed its title in the [Categories panel](https://docs.textpattern.io/administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes 'my-category-name' when used in tags.
+: **Default:** the current listing category, if any.
+
 `name="category"`
-: Comma-separated list of category names. Note the category name is specified in lower case regardless of how you typed its title in the [Categories panel](https://docs.textpattern.io/administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes 'my-category-name' when used in tags.
+: Comma-separated list of category names.
 : **Default:** unset, which determines whether ''any'' category listing is being viewed.
+
+`parent="category or integer"` <span class="footnote warning">v4.7.0+</span>
+: Comma-separated list of category names or an integer. In the first case, the tag will check if `category` or some of its ancestors belong to the `parent` list. In the second case, the tag will check if `category`'s ancestor of this generation belongs to the `name` list.
+: **Default:** unset.
 
 `type="context"` <span class="footnote warning">v4.3.0+</span>
 : Textpattern context to check against. You can choose from the following contexts (set to empty to include all contexts): \\
@@ -117,7 +125,27 @@ Shows a category list and, underneath it, a list of related articles in the curr
 
 Other tags used: [category_list](category_list), [recent_articles](recent_articles).
 
+### Example 6: Check if `cat` is descendant of `animal`
+
+~~~ html
+<txp:if_category category="cat" parent="animal">
+    <p>Cat is an animal.</p>
+</txp:if_category>
+~~~
+
+### Example 7: Check if `anakin` is the father of `luke`
+
+~~~ html
+<txp:if_category category="luke" parent="1" name="anakin">
+    <p>The test is positive!</p>
+</txp:if_category>
+~~~
+
 ## Genealogy
+
+### Version 4.7.0
+
+`category` and `parent` attributes added.
 
 ### Version 4.3.0
 
