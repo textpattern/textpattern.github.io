@@ -111,6 +111,7 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 <div class="layout-text4col">
 
 * [article_custom](article_custom)
+* [breadcrumb](breadcrumb)
 * [feed_link](feed_link)
 * [file_download_list](file_download_list)
 * [image_index](image_index)
@@ -213,6 +214,7 @@ In your tag, replace `customfieldname` with the actual name of the desired custo
 <div class="layout-text4col">
 
 * [custom_field](custom_field)
+* [yield](yield)
 
 </div>
 
@@ -538,6 +540,7 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset.
 
 * [article](article)
 * [article_custom](article_custom)
+* [breadcrumb](breadcrumb)
 * [authors](authors)
 * [category_list](category_list)
 * [comments](comments)
@@ -686,6 +689,7 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 * [if_plugin](if_plugin)
 * [if_section](if_section)
 * [if_variable](if_variable)
+* [if_yield](if_yield)
 * [image](image)
 * [image_date](image_date)
 * [image_info](image_info)
@@ -695,6 +699,7 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 * [section](section)
 * [thumbnail](thumbnail)
 * [variable](variable)
+* [yield](yield)
 
 </div>
 
@@ -723,6 +728,7 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 * [article](article)
 * [article_custom](article_custom)
 * [authors](authors)
+* [breadcrumb](breadcrumb)
 * [category_list](category_list)
 * [comments](comments)
 * [file_download_list](file_download_list)
@@ -1081,6 +1087,7 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
+* [breadcrumb](breadcrumb)
 * [category](category)
 * [category_list](category_list)
 * [if_author](if_author)
@@ -1179,5 +1186,13 @@ HTML tag (without brackets) to wrap around output. Default value is unset, excep
 * [section](section)
 * [section_list](section_list)
 * [thumbnail](thumbnail)
+
+</div>
+
+### yield
+
+<div class="layout-text4col">
+
+* [output_form](output_form)
 
 </div>

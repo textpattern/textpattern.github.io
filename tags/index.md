@@ -56,7 +56,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [body](body)
-* [breadcrumb](breadcrumb)
+* [breadcrumb](breadcrumb) <span class="footnote warning">**Modified v4.7.0**</span>
 
 </div>
 
@@ -65,7 +65,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [category](category)
-* [category list](category_list)
+* [category list](category_list) <span class="footnote warning">**Modified v4.7.0**</span>
 * [category1](category1)
 * [category2](category2)
 * [comment anchor](comment_anchor)
@@ -182,7 +182,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [if status](if_status)
 * [if thumbnail](if_thumbnail)
 * [if variable](if_variable)
-* [if yield](if_yield)
+* [if yield](if_yield) <span class="footnote warning">**Modified v4.7.0**</span>
 * [image](image)
 * [image author](image_author)
 * [image date](image_date)
@@ -250,7 +250,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [older](older)
-* [output form](output_form)
+* [output form](output_form) <span class="footnote warning">**Modified v4.7.0**</span>
 
 </div>
 
@@ -323,6 +323,6 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [yield](yield)
+* [yield](yield) <span class="footnote warning">**Modified v4.7.0**</span>
 
 </div>
