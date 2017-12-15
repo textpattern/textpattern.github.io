@@ -80,7 +80,7 @@ Other tags used: [yield](yield).
 
 ### Version 4.7.0
 
-Added `name` attribute.
+`name` attribute added.
 
 ### Version 4.6.0
 
