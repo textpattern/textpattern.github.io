@@ -28,6 +28,10 @@ The **page_url** tag is a *single* tag that is used to return a particular compo
 
 Tag will accept the following attributes (**case-sensitive**):
 
+`default="value"` <span class="footnote warning">v4.7.0+</span>
+: The default value if no component of the current page's URL matches the `type` attribute.
+: **Default:** unset.
+
 `type="type"`
 : Specifies which component of the current page's URL will be returned.
 : **Values:** \\
@@ -43,6 +47,8 @@ Tag will accept the following attributes (**case-sensitive**):
 `css`: current style sheet name. \\
 `page`: current page template name.
 : **Default:** `request_uri`.
+
+Any other `type` value will return the matching URL component or the `default` value that will always be **sanitized**. <span class="footnote warning">v4.7.0+</span>
 
 ## Examples
 
@@ -68,4 +74,10 @@ This would result in the following, for example:
     Tasty pea recipes
     (Result: 200)
 </p>
+~~~
+
+### Example 2: Return the sanitized value of some URL component
+
+~~~ html
+<txp:page_url type="lang" default="en" />
 ~~~
