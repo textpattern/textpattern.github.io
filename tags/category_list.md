@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: Category list
-description: The category_list tag is used to produce a list of linked categories.
+description: The category_list tag is a single/container tag which is used to produce a list of linked categories.
 tags:
   - List tags
   - Navigation tags
@@ -40,8 +40,8 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset (all categories).
 
 `children="integer"` <span class="footnote warning">v4.7.0+</span>
-: Can limit the list depth to so many levels below the parent category.
-: **Values:** `0` (no children, i.e. only show one level below the parent) or `n` (show all nested categories and "flatten" the list at the level `n`).
+: Can limit the list depth to defined levels below the parent category.
+: **Values:** `0` (no children, i.e. only show one level below the parent) or `n` (show all nested categories and 'flatten' the list at the level `n`).
 : **Default:** `1`.
 
 `exclude="category name(s)"` <span class="footnote warning">v4.0.4+</span>
@@ -146,6 +146,10 @@ This code will add `class="active"` to the `<li>` element around the current vie
 Other tags used: [category](category), [if_category](if_category).
 
 ## Genealogy
+
+### Version 4.7.0
+
+`children` attribute behaviour extended (accepts integer instead of boolean values).
 
 ### Version 4.6.0
 
