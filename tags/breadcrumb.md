@@ -31,7 +31,7 @@ The main part of the breadcrumb (as obtained with `label="" section=""` attribut
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`category="string"`
+`category="category name"` <span class="footnote warning">v4.7.0+</span>
 : Category to be used as the breadcrumb base.
 : **Default:** the current category.
 
@@ -40,7 +40,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `1`.
 
-`limit="integer"`
+`limit="integer"` <span class="footnote warning">v4.7.0+</span>
 : How many items to include in the category path.
 : **Default:** unset.
 
@@ -48,7 +48,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : HTML class attribute applied to the breadcrumb links.
 : **Default:** unset.
 
-`offset="integer"`
+`offset="integer"` <span class="footnote warning">v4.7.0+</span>
 : The offset of the category path. A negative value offsets from the end.
 : **Default:** `0` (display the whole path).
 
@@ -65,7 +65,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (no, display name) or `1` (yes).
 : **Default:** `0`.
 
-`type="string"`
+`type="string"` <span class="footnote warning">v4.7.0+</span>
 : The type of the viewed resource.
 : **Values:** `article`, `file`, `image` or `link`.
 : **Default:** the current context (typically `article`).
@@ -114,7 +114,8 @@ Provides a breadcrumb guide that reflects where a user is within the site's navi
 
 ### Version 4.7.0
 
-Added `category`, `limit`, `offset` and `type` attributes.
+Can be used as a container tag. \\
+`category`, `limit`, `offset` and `type` attributes added.
 
 ### Version 4.5.0
 
