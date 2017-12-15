@@ -32,11 +32,11 @@ The tag works in unison with the [output_form](output_form) tag; You place a `<t
 Tag will accept the following attributes (**case-sensitive**):
 
 `default="string"` <span class="footnote warning">v4.7.0+</span>
-: The default value, see Examples. If unset, the enclosed content (if any) will be used.
+: The default value (see examples below). If unset, the enclosed content (if any) will be used.
 : **Default:** unset.
 
 `name="string"` <span class="footnote warning">v4.7.0+</span>
-: The name, see Examples.
+: The name (see examples below).
 : **Default:** unset.
 
 ## Examples
@@ -82,7 +82,7 @@ Other tags used: [output_form](output_form).
 
 ### Version 4.7.0
 
-Added `default` and `name` attributes.
+`default` and `name` attributes added.
 
 ### Version 4.2.0
 
