@@ -38,6 +38,9 @@ It tests the existence and/or value of a content set with the [yield](yield) tag
 
 Tag will accept the following attributes (**case-sensitive**):
 
+`name="string"` <span class="footnote warning">v4.7.0+</span>
+: The (optional) name.
+
 `value="value"`
 : The (optional) value which the yield content must match in order for the contained statements to be executed. If this attribute is omitted, the tag returns 'true' if the yield content is defined. If this attribute's value is omitted (i.e. `value="`), the tag returns 'true' if yield content is defined, but has no value.
 
@@ -68,12 +71,16 @@ Other tags used: [yield](yield).
 ### Example 3: Check against a specific yield content
 
 ~~~ html
-<txp:if_yield value="red">
-	Yield is red.
+<txp:if_yield name="color" value="red">
+	Color is red.
 </txp:if_yield>
 ~~~
 
 ## Genealogy
+
+### Version 4.7.0
+
+Added `name` attribute.
 
 ### Version 4.6.0
 
