@@ -27,7 +27,9 @@ The **output_form** tag can be used as a *single* or a *container* tag. Textpatt
 
 The basic function of **output_form** is to take a particular form that defines a given set of scripting or HTML functions and output that set of functions anywhere in a particular web page. Think about your pages; many of them will use different article or link forms to display content unique to the particular page, but they'll also have a lot of things in common, like the opening `DOCTYPE` declaration, calls to CSS, navigation menus, etc. Using **output_form** it's possible to write these page elements once and use them anywhere.
 
-For the container tag usage, see the [yield](yield) tag.
+From 4.7.0 on, `<txp:output_form form="my_form" />` can be invoked as *shortcode* `<txp::my_form />`.
+
+For the container tag and/or shortcode usage, see the [yield](yield) tag.
 
 ## Attributes
 
@@ -36,6 +38,10 @@ Tag will accept the following attributes (**case-sensitive**):
 `form="form name"`
 : Use specified form.
 : **Default:** unset (no output).
+
+`yield="boolean or list of names"` <span class="footnote warning">v4.7.0+</span>
+: Populate `<txp:yield />` tags inside the form with the corresponding attributes.
+: **Default:** unset in the standard form, `1` if used as shortcode.
 
 ## Examples
 
@@ -78,6 +84,10 @@ Then in each of your pages, you insert the header using...
 The advantage of this is that when you edit your page header, you can do so once in the form template and it will update all instances of use in your different pages at the same time.
 
 ## Genealogy
+
+### Version 4.7.0
+
+Can be used as shortcode.
 
 ### Version 4.2.0
 
