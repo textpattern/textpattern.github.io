@@ -39,9 +39,9 @@ Tag will accept the following attributes (**case-sensitive**):
 : Comma-separated list of categories to include, displayed in the order specified (unless overridden by `sort` attribute). Use category names **not** titles here - note that Textpattern automatically converts the names to lowercase and converts spaces to hyphens when they are created.
 : **Default:** unset (all categories).
 
-`children="boolean"` <span class="footnote warning">v4.0.7+</span>
-: Can limit the list depth to one level below the parent category.
-: **Values:** `0` (no children, i.e. only show one level below the parent) or `1` (show all nested categories).
+`children="integer"` <span class="footnote warning">v4.7.0+</span>
+: Can limit the list depth to so many levels below the parent category.
+: **Values:** `0` (no children, i.e. only show one level below the parent) or `n` (show all nested categories and "flatten" the list at the level `n`).
 : **Default:** `1`.
 
 `exclude="category name(s)"` <span class="footnote warning">v4.0.4+</span>
