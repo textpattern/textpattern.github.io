@@ -23,20 +23,38 @@ On this page:
 <txp:breadcrumb />
 ~~~
 
-The **breadcrumb** tag is a *single* tag which is used to create [breadcrumb navigation](https://en.wikipedia.org/wiki/Breadcrumb_trail). It provides either hyperlinked navigation, or plain text positional display. Breadcrumbs are *not* displayed on the 'default' section (home page) of your site.
+The **breadcrumb** tag can be used as either a *single* or *container* tag to create [breadcrumb navigation](https://en.wikipedia.org/wiki/Breadcrumb_trail). It provides either hyperlinked navigation, or plain text positional display. Breadcrumbs are *not* displayed on the 'default' section (home page) of your site.
+
+The main part of the breadcrumb (as obtained with `label="" section=""` attributes) is the category path of the given category. If needed, only some parts of this path (e.g. the parent) can be retrieved via `limit` and `offset` attributes.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
+
+`category="string"`
+: Category to be used as the breadcrumb base.
+: **Default:** the current category.
 
 `link="value"`
 : Whether to hyperlink breadcrumbs.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `1`.
 
+`limit="integer"`
+: How many items to include in the category path.
+: **Default:** unset.
+
 `linkclass="class name"`
 : HTML class attribute applied to the breadcrumb links.
 : **Default:** unset.
+
+`offset="integer"`
+: The offset of the category path. A negative value offsets from the end.
+: **Default:** `0` (display the whole path).
+
+`section="string"`
+: Section link to prepend to the breadcrumb.
+: **Default:** the current section.
 
 `separator="value"`
 : Character to be used as the breadcrumb separator.
@@ -46,6 +64,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : Whether to display the title or not.
 : **Values:** `0` (no, display name) or `1` (yes).
 : **Default:** `0`.
+
+`type="string"`
+: The type of the viewed resource.
+: **Values:** `article`, `file`, `image` or `link`.
+: **Default:** the current context (typically `article`).
 
 ### Common presentational attributes
 
@@ -81,7 +104,17 @@ Provides hyperlinks to sections or categories in a breadcrumb style, linking bac
 
 Provides a breadcrumb guide that reflects where a user is within the site's navigation.
 
+### Example 3: Retrieve the parent of a category
+
+~~~ html
+<txp:breadcrumb label="" section="" category="cat" limit="1" offset="-1" />
+~~~
+
 ## Genealogy
+
+### Version 4.7.0
+
+Added `category`, `limit`, `offset` and `type` attributes.
 
 ### Version 4.5.0
 
