@@ -27,7 +27,7 @@ The **output_form** tag can be used as a *single* or a *container* tag. Textpatt
 
 The basic function of **output_form** is to take a particular form that defines a given set of scripting or HTML functions and output that set of functions anywhere in a particular web page. Think about your pages; many of them will use different article or link forms to display content unique to the particular page, but they'll also have a lot of things in common, like the opening `DOCTYPE` declaration, calls to CSS, navigation menus, etc. Using **output_form** it's possible to write these page elements once and use them anywhere.
 
-From 4.7.0 on, `<txp:output_form form="my_form" />` can be invoked as *shortcode* `<txp::my_form />`.
+From Textpattern CMS version 4.7.0 onwards, `<txp:output_form form="my_form" />` can be invoked as 'shortcode' `<txp::my_form />`.
 
 For the container tag and/or shortcode usage, see the [yield](yield) tag.
 
@@ -83,11 +83,48 @@ Then in each of your pages, you insert the header using...
 
 The advantage of this is that when you edit your page header, you can do so once in the form template and it will update all instances of use in your different pages at the same time.
 
+Other tags used: [css](css), [feed_link](feed_link), [page_title](page_title).
+
+### Example 3: Shortcode to create HTML5 video code
+
+Create a 'misc' type form template with the name `media_video`:
+
+~~~ html
+<div itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+    <video controls width="<txp:yield name="width" />" height="<txp:yield name="height" />"<txp:if_yield name="poster-url"> poster="<txp:yield name="poster-url" />"</txp:if_yield>>
+        <source itemprop="contentUrl" type="video/mp4" src="<txp:yield name="mp4-url" />">
+        <source itemprop="contentUrl" type="video/webm" src="<txp:yield name="webm-url" />">
+    </video>
+    <txp:if_yield name="name"><meta itemprop="name" content="<txp:yield name="name" />"></txp:if_yield>
+    <txp:if_yield name="description"><meta itemprop="description" content="<txp:yield name="description" />"></txp:if_yield>
+    <txp:if_yield name="poster-url"><meta itemprop="thumbnailUrl" content="<txp:yield name="poster-url" />"></txp:if_yield>
+    <meta itemprop="uploadDate" content="<txp:posted format="iso8601" />">
+    <txp:if_yield name="duration-seconds"><meta itemprop="duration" content="T<txp:yield name="duration-seconds" />S"></txp:if_yield>
+</div>
+~~~
+
+This can now be called from within an article using the shortcode format:
+
+~~~ html
+<txp::media_video width="" height="" mp4-url="" webm-url="" poster-url="" name="" description="" duration-seconds=""/>
+~~~
+
+`poster-url`, `name`, `description` and `duration-seconds` are optional for users, but if provided display valid Schema.org microdata.
+
+For example:
+
+~~~ html
+<txp::media_video width="640" height="480" mp4-url="/video/example.mp4" webm-url="/video/example.webm" poster-url="/video/example.png" name="Cat video" description="My great video of cats." duration-seconds="20" />
+~~~
+
+Other tags used: [if_yield](if_yield), [posted](posted), [yield](yield).
+
 ## Genealogy
 
 ### Version 4.7.0
 
-Can be used as shortcode.
+Can be used as shortcode. \\
+`yield` attribute added.
 
 ### Version 4.2.0
 
