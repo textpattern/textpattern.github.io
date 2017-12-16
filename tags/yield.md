@@ -41,7 +41,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ## Examples
 
-### Example: Inner content and custom attributes
+### Example 1: Inner content and custom attributes
 
 Given the following form named `example_form`:
 
