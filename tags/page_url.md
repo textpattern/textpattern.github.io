@@ -15,6 +15,7 @@ On this page:
 * [Syntax](#syntax)
 * [Attributes](#attributes)
 * [Examples](#examples)
+* [Genealogy](#genealogy)
 
 ## Syntax
 
@@ -81,3 +82,10 @@ This would result in the following, for example:
 ~~~ html
 <txp:page_url type="lang" default="en" />
 ~~~
+
+## Genealogy
+
+### Version 4.7.0
+
+`type` attribute behaviour changes (value will always be sanitized). \\
+`default` attribute added.
