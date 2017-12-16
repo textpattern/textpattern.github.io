@@ -10,9 +10,6 @@ tags:
 
 # Keywords
 
-Textpattern 4.6.x claims this tag is deprecated and to use the [meta_keywords](meta_keywords) tag instead. Due to unforeseen functionality being affected, this is incorrect advice. The tag is reinstated as of Textpattern 4.7.0. Please ignore the warning.
-{: .alert-block .warning}
-
 On this page:
 
 * [Syntax](#syntax)
@@ -25,6 +22,9 @@ On this page:
 ~~~
 
 The **keywords** tag can be used as a *single* tag or a *container* tag that Textpattern will replace with the keywords associated with the article being displayed. For keywords metadata, see [meta_keywords](meta_keywords) tag.
+
+Note: Textpattern 4.6.x warns this tag is deprecated and to use the [meta_keywords](meta_keywords) tag instead. This is incorrect advice; the tag is reinstated as of Textpattern 4.7.0. Please ignore the warning.
+{: .alert-block .information}
 
 ## Attributes
 
