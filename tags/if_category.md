@@ -133,11 +133,11 @@ Other tags used: [category_list](category_list), [recent_articles](recent_articl
 </txp:if_category>
 ~~~
 
-### Example 7: Check if `anakin` is the father of `luke`
+### Example 7: Check if 'anakin' is the father of 'luke'
 
 ~~~ html
 <txp:if_category category="luke" parent="1" name="anakin">
-    <p>The test is positive!</p>
+    <p>The test is positive - I am your father!</p>
 </txp:if_category>
 ~~~
 
