@@ -149,7 +149,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [if article list](if_article_list)
 * [if article section](if_article_section)
 * [if author](if_author)
-* [if category](if_category)
+* [if category](if_category) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if comments](if_comments)
 * [if comments allowed](if_comments_allowed)
 * [if comments disallowed](if_comments_disallowed)
@@ -199,7 +199,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [keywords](keywords)
+* [keywords](keywords) <span class="footnote warning">**Modified v4.7.0**</span>
 
 </div>
 
@@ -259,7 +259,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [page title](page_title)
-* [page url](page_url)
+* [page url](page_url) <span class="footnote warning">**Modified v4.7.0**</span>
 * [password protect](password_protect)
 * [permlink](permlink)
 * [php](php)

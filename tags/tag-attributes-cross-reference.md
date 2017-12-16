@@ -81,6 +81,7 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 * [image_index](image_index)
 * [image_info](image_info)
 * [images](images)
+* [keywords](keywords)
 * [linklist](linklist) <span class="warning">●</span>
 * [recent_articles](recent_articles)
 * [recent_comments](recent_comments)
@@ -114,6 +115,7 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 * [breadcrumb](breadcrumb)
 * [feed_link](feed_link)
 * [file_download_list](file_download_list)
+* [if_category](if_category)
 * [image_index](image_index)
 * [images](images)
 * [link_feed_link](link_feed_link)
@@ -161,6 +163,7 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 * [image_index](image_index)
 * [image_info](image_info)
 * [images](images) <span class="warning">●</span>
+* [keywords](keywords)
 * [link_author](link_author)
 * [link_category](link_category)
 * [link_description](link_description)
@@ -214,6 +217,7 @@ In your tag, replace `customfieldname` with the actual name of the desired custo
 <div class="layout-text4col">
 
 * [custom_field](custom_field)
+* [page_url](page_url)
 * [yield](yield)
 
 </div>
@@ -758,6 +762,7 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 <div class="layout-text4col">
 
 * [category_list](category_list)
+* [if_category](if_category)
 
 </div>
 
@@ -1171,6 +1176,7 @@ HTML tag (without brackets) to wrap around output. Default value is unset, excep
 * [image_index](image_index)
 * [image_info](image_info)
 * [images](images)
+* [keywords](keywords)
 * [link_author](link_author)
 * [link_category](link_category)
 * [link_description](link_description)
