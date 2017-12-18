@@ -721,6 +721,10 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 
 </div>
 
+### not
+
+Used to invert the `true/false` parts of conditional and other tags. <span class="footnote warning">**New v4.7.0**
+
 ### number
 
 <div class="layout-text4col">
