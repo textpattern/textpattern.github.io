@@ -91,6 +91,10 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 
 </div>
 
+### breakby
+
+Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items). Default is `1` (actually unset). <span class="footnote warning">**New global v4.7.0**</span>
+
 ### button
 
 <div class="layout-text4col">
@@ -134,7 +138,7 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 
 ### class
 
-[HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to the specified [wraptag](#wraptag). Tags marked with <span class="warning">●</span> use the tag name as the class name by default. Otherwise the default is empty.
+[HTML class attribute](https://www.w3.org/TR/html5/dom.html#classes) to be applied to the specified [wraptag](#wraptag). Tags marked with <span class="warning">●</span> use the tag name as the class name by default. Otherwise the default is empty. <span class="footnote warning">**Global v4.7.0**</span>
 
 <div class="layout-text4col">
 
@@ -240,7 +244,7 @@ In your tag, replace `customfieldname` with the actual name of the desired custo
 
 ### escape
 
-Escape HTML entities.
+Escape HTML entities. <span class="footnote warning">**Global v4.7.0**</span>
 
 <div class="layout-text4col">
 
@@ -412,7 +416,7 @@ Used to format content for display. See [Form templates](https://docs.textpatter
 
 ### html_id
 
-[HTML id attribute](https://www.w3.org/TR/html5/dom.html#the-id-attribute) to be applied to the [wraptag](#wraptag).
+[HTML id attribute](https://www.w3.org/TR/html5/dom.html#the-id-attribute) to be applied to the [wraptag](#wraptag). <span class="footnote warning">**Global v4.7.0**</span>
 
 <div class="layout-text4col">
 
@@ -475,7 +479,7 @@ Used to format content for display. See [Form templates](https://docs.textpatter
 
 ### label
 
-This string will be prepended to the output. When using a [wraptag](#wraptag) value of either `ol` or `ul`, the label will be the first list item. Default is unset (except where shown in parentheses).
+This string will be prepended to the output. When using a [wraptag](#wraptag) value of either `ol` or `ul`, the label will be the first list item. Default is unset (except where shown in parentheses). <span class="footnote warning">**Global v4.7.0**</span>
 
 <div class="layout-text4col">
 
@@ -505,7 +509,7 @@ This string will be prepended to the output. When using a [wraptag](#wraptag) va
 
 ### labeltag
 
-HTML tag (without brackets) to wrap around [label](#label). Default is unset.
+HTML tag (without brackets) to wrap around [label](#label). Default is unset. <span class="footnote warning">**Global v4.7.0**</span>
 
 <div class="layout-text4col">
 
@@ -1147,7 +1151,7 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 ### wraptag
 
-HTML tag (without brackets) to wrap around output. Default value is unset, except where shown in parentheses.
+HTML tag (without brackets) to wrap around output. Default value is unset, except where shown in parentheses. <span class="footnote warning">**Global v4.7.0**</span>
 
 <div class="layout-text4col">
 
