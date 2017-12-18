@@ -93,7 +93,7 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 
 ### breakby
 
-Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items). Default is `1` (actually unset). <span class="footnote warning">**New global v4.7.0**</span>
+Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items). Default is `1` (actually unset). <span class="footnote warning">**New v4.7.0**</span>
 
 ### button
 
