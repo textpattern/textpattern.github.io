@@ -22,3 +22,4 @@ Below are a series of tag fundamentals, which will get you up and running with T
 4. [Parsing tag attributes](parsing-tag-attributes)
 5. [Incorrect tag contexts](incorrect-tag-contexts)
 6. [Short-form versus long-form usage](shortform-vs-longform-usage)
+7. [Tag escaping](tag-escaping)

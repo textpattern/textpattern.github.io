@@ -161,3 +161,5 @@ And the character count can change considerably from one block of markup to anot
 More important than character count is your understanding of the resulting markup - or that of your client's, if you're building a website and handing it over to a different administrator - regardless of how markup is written. As long as the markup separates content from static constructs and you (or the client) understands it, you're doing well.
 
 In summary, long-form notation is generally easier for new Textpattern users to get up to speed with, until they've become more familiar with the scope of Textpattern tag functionality. Advanced users of Textpattern generally prefer the short-form notation because it saves character space. But it doesn't matter either way, as long as the markup is constructed correctly in relation to how Textpattern functions.
+
+7. [Next: Tag escaping](tag-escaping)
