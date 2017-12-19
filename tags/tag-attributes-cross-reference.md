@@ -108,7 +108,7 @@ Used to group list items when separating by `break`. Possible values are lists o
 * [image_info](image_info)
 * [images](images)
 * [keywords](keywords)
-* [linklist](linklist) <span class="warning">●</span>
+* [linklist](linklist)
 * [recent_articles](recent_articles)
 * [recent_comments](recent_comments)
 * [related_articles](related_articles)
