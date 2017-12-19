@@ -95,6 +95,28 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 
 Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items). Default is `1` (actually unset). <span class="footnote warning">**New v4.7.0**</span>
 
+<div class="layout-text4col">
+
+* [article](article)
+* [article_custom](article_custom)
+* [authors](authors)
+* [category_list](category_list)
+* [comments](comments)
+* [comments_error](comments_error)
+* [file_download_list](file_download_list)
+* [image_index](image_index)
+* [image_info](image_info)
+* [images](images)
+* [keywords](keywords)
+* [linklist](linklist) <span class="warning">●</span>
+* [recent_articles](recent_articles)
+* [recent_comments](recent_comments)
+* [related_articles](related_articles)
+* [search_result_excerpt](search_result_excerpt)
+* [section_list](section_list)
+
+</div>
+
 ### button
 
 <div class="layout-text4col">

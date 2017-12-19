@@ -144,6 +144,10 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
 : **Default:** `br` (but see [break cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#break) for exceptions).
 
+`breakby="integer"` <span class="footnote warning">v4.7.0+</span>
+: Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
+: **Default:** `1` (actually unset).
+
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
 : **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
@@ -245,6 +249,10 @@ Uses the `sort` attribute to define values by which to order article output. In 
 Why might you do it? Sorting is a powerful way to group articles (e.g. by author), and/or give priority to articles most recently published (typically better for your website visitors).
 
 ## Genealogy
+
+### Version 4.7.0
+
+`breakby` attribute added.
 
 ### Version 4.0.7
 

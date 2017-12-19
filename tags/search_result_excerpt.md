@@ -33,6 +33,10 @@ Tag will accept the following attributes (**case-sensitive**):
 : Trailing string.
 : **Default:** `...` (ellipsis).
 
+`breakby="integer"` <span class="footnote warning">v4.7.0+</span>
+: Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
+: **Default:** `1` (actually unset).
+
 `hilight="tag"`
 : HTML tag to be used for search term matches in excerpt text, without brackets.
 : **Default:** `strong`.
@@ -63,6 +67,10 @@ Tag will accept the following attributes (**case-sensitive**):
 Other tags used: [permlink](permlink), [posted](posted), [title](title).
 
 ## Genealogy
+
+### Version 4.7.0
+
+`breakby` attribute added.
 
 ### Version 4.0.6
 

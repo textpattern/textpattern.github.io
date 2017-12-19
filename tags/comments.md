@@ -63,6 +63,10 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
 : **Default:** `li` or `div`, depends upon [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) setting for 'Present comments as a numbered list?'.
 
+`breakby="integer"` <span class="footnote warning">v4.7.0+</span>
+: Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
+: **Default:** `1` (actually unset).
+
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
 : **Default:** `comments` (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
@@ -114,6 +118,10 @@ For the article, list id numbers and a comment input form; but only if comments 
 Other tags used: [comment_email](comment_email), [comments_form](comments_form), [comment_id](comment_id), [comment_permlink](comment_permlink), [if_comments_allowed](if_comments_allowed).
 
 ## Genealogy
+
+### Version 4.7.0
+
+`breakby` attribute added.
 
 ### Version 4.6.0
 

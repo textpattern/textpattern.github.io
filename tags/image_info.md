@@ -68,6 +68,10 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
 : **Default:** unset.
 
+`breakby="integer"` <span class="footnote warning">v4.7.0+</span>
+: Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
+: **Default:** `1` (actually unset).
+
 `class="class name"`
 : CSS `class` attribute to apply to the `wraptag`, if set.
 : **Default:** unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
@@ -120,6 +124,10 @@ Other tags used: [images](images), [thumbnail](thumbnail), [if_different](if_dif
 Displays the category_title of the category assigned to image ID '5'.
 
 ## Genealogy
+
+### Version 4.7.0
+
+`breakby` attribute added.
 
 ### Version 4.6.0
 
