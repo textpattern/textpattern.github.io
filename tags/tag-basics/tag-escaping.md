@@ -104,4 +104,40 @@ without `tidy` and `<strong>This</strong> is a <em>test</em>` with `tidy`.
 <txp:excerpt escape="img" />
 ~~~
 
-Other tags used: [variable](https://docs.textpattern.io/tags/variable), [excerpt](https://docs.textpattern.io/tags/excerpt), but it works for any tag.
+### Example 4: Required JSON-LD to validate AMP
+
+Create valid [JSON-LD](https://json-ld.org) for the `<head>` section of an [AMP](https://www.ampproject.org) page, by using `escape="json"` on various tags along with the [smd_thumbnail](https://github.com/Bloke/smd_thumbnail) plugin.
+
+~~~ html
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "<txp:title escape="json" />",
+    "mainEntityOfPage": "<txp:permlink />",
+    "datePublished": "<txp:posted format="iso8601" />",
+    "dateModified": "<txp:modified format="iso8601" />",
+    "description": "<txp:meta_description format="" escape="json" />",
+    "author": {
+      "@type": "Person",
+      "name": "<txp:author escape="json" />"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ExampleCorp",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "<txp:site_url />assets/img/amp-publisher-logo.png",
+        "width": "320",
+        "height": "60"
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      <txp:if_article_image><txp:images limit="1"><txp:smd_if_thumbnail type="amp-696w390h">"url": "<txp:smd_thumbnail type="amp-696w390h" display="url" />",<txp:else />"url": "<txp:site_url />assets/img/amp-article-image-fallback.png",</txp:smd_if_thumbnail></txp:images><txp:else />"url": "<txp:site_url />assets/img/amp-article-image-fallback.png",</txp:if_article_image>
+      "width": "696",
+      "height": "390"
+    }
+  }
+</script>
+~~~
