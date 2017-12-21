@@ -11,11 +11,11 @@ description: TODO.
 From Textpattern CMS 4.7.0 onwards, a global `escape` attribute is available which applies to all tags (core tags and plugin tags) that don't treat it natively. Its value is a comma-separated list of 'transforms' that will be applied to the content in the given order. For example:
 
 ~~~ html
-<txp:variable name="code" escape="trim, textile">
+<txp:variable name="hello" escape="trim, textile">
     Hello, _world_!
 </txp:variable>
 
-<txp:variable name="code" escape="html" />
+<txp:variable name="hello" escape="html" />
 ~~~
 
 Will output:
@@ -68,6 +68,7 @@ Will output:
 
 ~~~ html
 <txp:variable name="amount" value="Price: £1 234.78" />
+
 <txp:variable name="amount" escape="number" />
 <txp:variable name="amount" escape="tidy, number" />
 ~~~
@@ -77,12 +78,25 @@ Outputs `0` without `tidy` (not a number) and `1234.78` with `tidy`.
 ### Example 2: Format a variable with Textile
 
 ~~~ html
-<txp:variable name="test" value="*This* is a _test_" />
+<txp:variable name="test">
+*This*
+is
+
+a _test_
+</txp:variable>
+
 <txp:variable name="test" escape="textile" />
 <txp:variable name="test" escape="tidy, textile" />
 ~~~
 
-Outputs `<p><strong>This</strong> is a <em>test</em></p>`  without `tidy` and `<strong>This</strong> is a <em>test</em>` with `tidy`.
+Outputs
+
+~~~ html
+<p><strong>This</strong><br /> is</p>
+<p>a <em>test</em></p>
+~~~
+
+without `tidy` and `<strong>This</strong> is a <em>test</em>` with `tidy`.
 
 ### Example 3: Remove all images from Excerpt
 
