@@ -32,8 +32,11 @@ Will output:
 `escape="json"`
 : JSON-encode, without the surrounding `""` quotes.
 
+`escape="trim"` (`ltrim`, `rtrim`)
+: Remove surrounding (left, right) spaces/newlines from the content.
+
 `escape="tidy"`
-: Remove spaces/newlines from the content.
+: Remove extra spaces/newlines from the content and trigger a more thorough processing mode.
 
 `escape="number"`
 : Format the content as a number.
@@ -61,4 +64,30 @@ Will output:
 
 ## Examples
 
-TODO
+### Example 1: Extract a number from a variable
+
+~~~ html
+<txp:variable name="amount" value="Price: £1 234.78" />
+<txp:variable name="amount" escape="number" />
+<txp:variable name="amount" escape="tidy, number" />
+~~~
+
+Outputs `0` without `tidy` (not a number) and `1234.78` with `tidy`.
+
+### Example 2: Format a variable with Textile
+
+~~~ html
+<txp:variable name="test" value="*This* is a _test_" />
+<txp:variable name="test" escape="textile" />
+<txp:variable name="test" escape="tidy, textile" />
+~~~
+
+Outputs `<p><strong>This</strong> is a <em>test</em></p>`  without `tidy` and `<strong>This</strong> is a <em>test</em>` with `tidy`.
+
+### Example 3: Remove all images from Excerpt
+
+~~~ html
+<txp:excerpt escape="img" />
+~~~
+
+Other tags used: [variable](variable), [excerpt](excerpt), but it works for any tag.
