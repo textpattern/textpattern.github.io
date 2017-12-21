@@ -90,4 +90,4 @@ Outputs `<p><strong>This</strong> is a <em>test</em></p>`  without `tidy` and `<
 <txp:excerpt escape="img" />
 ~~~
 
-Other tags used: [variable](variable), [excerpt](excerpt), but it works for any tag.
+Other tags used: [variable](https://docs.textpattern.io/tags/variable), [excerpt](https://docs.textpattern.io/tags/excerpt), but it works for any tag.
