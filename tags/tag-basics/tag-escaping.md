@@ -92,7 +92,7 @@ a _test_
 Outputs
 
 ~~~ html
-<p><strong>This</strong><br /> is</p>
+<p><strong>This</strong><br />is</p>
 <p>a <em>test</em></p>
 ~~~
 
