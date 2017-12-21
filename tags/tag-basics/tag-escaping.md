@@ -3,10 +3,10 @@ layout: document
 category: Tag basics
 published: true
 title: Tag escaping
-description: TODO.
+description: A global escape attribute is available which applies to all tags - its value is a list of transforms that will be applied to the content.
 ---
 
-# Tag escaping TODO
+# Tag escaping
 
 From Textpattern CMS 4.7.0 onwards, a global `escape` attribute is available which applies to all tags (core tags and plugin tags) that don't treat it natively. Its value is a comma-separated list of 'transforms' that will be applied to the content in the given order. For example:
 
