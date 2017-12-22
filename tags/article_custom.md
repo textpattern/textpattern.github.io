@@ -80,13 +80,13 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (no, return all) or `1` (yes, return only those containing an excerpt).
 : **Default:** `0`.
 
-`exclude="article id(s)"` <span class="footnote warning">v4.6.0+</span>
-: Exclude a specific article or list of articles (each ID separated by a comma).
+`exclude="article id(s) or field(s)"` <span class="footnote warning">v4.7.0+</span>
+: Exclude a specific article or list of articles (each ID separated by a comma) or the articles with matching fields (author, category etc).
 : **Default:** unset.
 
-`expired="boolean"` <span class="footnote warning">v4.5.0+</span>
-: Whether to include articles that have expired or not.
-: **Values:** `0` (no, don't include expired articles) or `1` (yes, include expired articles).
+`expired="boolean"/"date"` <span class="footnote warning">v4.7.0+</span>
+: Whether to include articles that have expired or not if boolean, or expired between the given date and the `time` attribute.
+: **Values:** `0` (no, don't include expired articles) or `1` (yes, include expired articles) or some English date.
 : **Default:** Setting of preference 'Publish expired articles'.
 
 `form="form name"`
@@ -111,8 +111,12 @@ Tag will accept the following attributes (**case-sensitive**):
 : The number of articles to display.
 : **Default:** `10`.
 
-`month="yyyy"/"yyyy-mm"/"yyyy-mm-dd"`
-: Restrict to articles posted within the specified year/month/day.
+`match="Category1 or Category2"` <span class="footnote warning">v4.6.0+</span>
+: One of these article categories must match `category` attribute.
+: **Default:** `Category1, Category2`.
+
+`month="yyyy"/"yyyy-mm"/"yyyy-mm-dd"/"date"` <span class="footnote warning">v4.7.0+</span>
+: Restrict to articles posted within the specified year/month/day or between the given date and the `time` attribute.
 : **Default:** unset.
 
 `offset="integer"`
@@ -152,9 +156,9 @@ Each field in the `textpattern` database table can be used as a sort key.
 : **Values:** `live` or `sticky`.
 : **Default:** `live`.
 
-`time="time"`
+`time="time"` <span class="footnote warning">v4.7.0+</span>
 : Restrict to articles posted within specified timeframe.
-: **Values:** `past`, `future` or `any` (both `past` and `future`).
+: **Values:** `past`, `future` or `any` (both `past` and `future`) or some English date. In the latter case, `time` will be considered as the end date of the interval started by `month` or `expired` attribute.
 : **Default:** `past`.
 
 ### Common presentational attributes
@@ -299,11 +303,11 @@ Outputs articles specified by list of IDs, in the order given in the `sort` fiel
 
 ### Version 4.7.0
 
-`breakby` attribute added.
+`breakby` attribute added, `exclude`, `expired`, `month` and `time` attributes modified.
 
 ### Version 4.6.0
 
-`exclude` attribute added.
+`exclude` and `match` attributes added.
 
 ### Version 4.5.0
 
