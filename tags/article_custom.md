@@ -81,7 +81,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0`.
 
 `exclude="article id(s) or field(s)"` <span class="footnote warning">v4.7.0+</span>
-: Exclude a specific article or list of articles (each ID separated by a comma) or the articles with matching fields (author, category etc).
+: Exclude a specific article or list of articles (each ID separated by a comma), or the articles with matching fields (author, category, etc.).
 : **Default:** unset.
 
 `expired="boolean"/"date"` <span class="footnote warning">v4.7.0+</span>
@@ -111,7 +111,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : The number of articles to display.
 : **Default:** `10`.
 
-`match="Category1 or Category2"` <span class="footnote warning">v4.6.0+</span>
+`match="category"` <span class="footnote warning">v4.6.0+</span>
 : One of these article categories must match `category` attribute.
 : **Default:** `Category1, Category2`.
 
@@ -158,7 +158,7 @@ Each field in the `textpattern` database table can be used as a sort key.
 
 `time="time"` <span class="footnote warning">v4.7.0+</span>
 : Restrict to articles posted within specified timeframe.
-: **Values:** `past`, `future` or `any` (both `past` and `future`) or some English date. In the latter case, `time` will be considered as the end date of the interval started by `month` or `expired` attribute.
+: **Values:** `past`, `future`, `any` (both `past` and `future`) or a specific date. In the latter case, `time` will be considered as the end date of the interval started by `month` or `expired` attribute.
 : **Default:** `past`.
 
 ### Common presentational attributes
@@ -303,7 +303,8 @@ Outputs articles specified by list of IDs, in the order given in the `sort` fiel
 
 ### Version 4.7.0
 
-`breakby` attribute added, `exclude`, `expired`, `month` and `time` attributes modified.
+`breakby` attribute added. \\
+`exclude`, `expired`, `month` and `time` attributes modified.
 
 ### Version 4.6.0
 

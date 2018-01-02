@@ -131,9 +131,9 @@ Each field in the `textpattern` database table can be used as a sort key.
 : **Values:** `live` or `sticky`.
 : **Default:** `live`.
 
-`time="time"`
+`time="time"` <span class="footnote warning">v4.7.0+</span>
 : Restrict to articles posted within specified timeframe.
-: **Values:** `past`, `future` or `any` (both `past` and `future`).
+: **Values:** `past`, `future`, `any` (both `past` and `future`) or a specific date. In the latter case, `time` will be considered as the end date of the interval started by `month` or `expired` attribute.
 : **Default:** `past`.
 
 ### Common presentational attributes

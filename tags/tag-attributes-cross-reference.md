@@ -655,6 +655,7 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 
 <div class="layout-text4col">
 
+* [article_custom](article_custom)
 * [if_custom_field](if_custom_field)
 * [related_articles](related_articles)
 * [search_input](search_input)

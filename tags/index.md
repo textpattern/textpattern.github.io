@@ -40,8 +40,8 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article custom](article_custom)
+* [article](article) <span class="footnote warning">**Modified v4.7.0**</span>
+* [article custom](article_custom) <span class="footnote warning">**Modified v4.7.0**</span>
 * [article id](article_id)
 * [article image](article_image)
 * [article url title](article_url_title)
