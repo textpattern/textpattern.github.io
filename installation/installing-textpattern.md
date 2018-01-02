@@ -47,4 +47,4 @@ Upgrades from versions below 4.2.0 will present this warning upon your very firs
 Warning: Unknown column 'user_name' in 'where clause' select name, val from txp_prefs where prefs_id=1 AND user_name='' in /path/to/your/site/textpattern/lib/txplib_db.php on line xx
 ~~~
 
-This is expected behaviour for the very first login after the upgrade. Every further move in the admin side should not throw any error messages.
+This is expected behaviour for the very first login after the upgrade. Further navigation within the admin-side will continue without issue.
