@@ -15,26 +15,31 @@ On this page:
 
 ## Install the software for the first time
 
-1. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` package.
-2. Create a new folder (e.g. `txp-unzipped`) on your local drive, move the zip file into it, and unpack [the file tree contents](https://github.com/textpattern/textpattern).
-3. Create an FTP connection to your server (sometimes SFTP is necessary, depending on your host requirements), and move the unpacked file tree to your web domain root (or subdirectory, if you plan to run it that way).
-4. Create a MySQL database and the associated user and password for it.
-5. Open a web browser and go to `example.com/textpattern/setup/index.php` (or `example.com/sub-directory/textpattern/setup/index.php` if you're running it from a sub directory), where `example.com` is your web domain (and `sub-directory` is your actual sub-directory of choice).
-6. Follow the instructions in the web browser.
+1. Ensure your web server meets the Textpattern CMS system requirements.
+2. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` archive.
+3. Create a new directory (e.g. `textpattern-archive`) on your local drive, move the downloaded archive file from step 2. into it, and unpack [the file tree contents](https://github.com/textpattern/textpattern).
+4. Open a file transfer connection to your destination server and upload the unpacked file tree to your web root, a subdomain or subdirectory. This destination directory should contain `css.php`, `index.php`, plus the `files`, `images` and `textpattern` directories as a minimum. The `.htaccess` file is required if your web server is Apache httpd or a derivative. The `sites` subdirectory is only required for optional multi-site functionality and the `rpc` directory is only required for optional XML-RPC functionality. `README.txt` and `HISTORY.txt` are optional.
+5. Establish a known-good MySQL database, either for exclusive Textpattern use or shared, and note its associated username and password credentials.
+6. Open a web browser and go to `example.com/textpattern/setup/index.php` to start the setup process. If you're running Textpattern from a subdomain or subdirectory, go to `subdomain.example.com/textpattern/setup/index.php` or `example.com/subdirectory/textpattern/setup/index.php` as appropriate.
+7. Follow the instructions in the web browser.
 
 If you require more information, please refer to the [Detailed installation instructions](https://docs.textpattern.io/installation/).
 
 ## Upgrade to the newest stable release
 
-In the root folder of your installation is a `README.txt` file that provides simple upgrading instructions. The same instructions are repeated below for convenience. See [[Detailed upgrading instructions]] if you need more stepwise explanation.
+In the root directory of every Textpattern archive is a `README.txt` file with upgrading instructions relevant to that release.
 
-1. Log out of the admin-side.
-2. Verify the existence of a working database and file backup.
-3. Copy the files `.htaccess`, `css.php`, and `index.php` (the `README.txt` and `HISTORY.txt` are optional).
-4. Copy any folders you are using, for example `rpc` and `sites`. You do not usually need to copy `files` and `images` unless otherwise directed because you will already have done so when installing a prior release.
-5. Copy the contents of the `textpattern` folder to the server's `textpattern` folder. You may exclude the `setup` directory, since it is only used for first-time installations.
-6. When you login to the admin-side, the relevant upgrade script is run automatically. Please take a look into diagnostics to find out whether there are any errors and whether the correct version number is displayed.
-7. Verify all preference settings.
+1. Ensure your web server meets the Textpattern CMS system requirements.
+2. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` archive.
+3. Create a new directory (e.g. `textpattern-upgrade`) on your local drive, move the downloaded archive file from step 2. into it, and unpack [the file tree contents](https://github.com/textpattern/textpattern).
+3. Log out of the Textpattern admin-side and clear the browser cache for your existing Textpattern site.
+4. Verify the existence of a working database and file backup of your existing Textpattern site. You may find it useful to copy your existing, known-good `textpattern/config.php` file to an easily accessible location your local hard drive as it will be required shortly.
+5. Open a file transfer connection to your destination server and upload the new `css.php`, and `index.php` files to your web server, overwriting the existing files. Upload the new `textpattern` directory, overwriting the existing directory. The new `.htaccess` file is required if your web server is Apache httpd or a derivative and has an existing file. The new `sites` subdirectory is only required if optional multi-site functionality is enabled and the new `rpc` directory is only required if optional XML-RPC functionality is enabled.
+6. Copy your known-good `textpattern/config.php` into `textpattern`. Delete the `textpattern/setup` directory.
+7. Log in to the Textpattern admin-side. The relevant upgrade scripts are run automatically. Please take a look into diagnostics to confirm the upgraded version number is identified and whether there are any issues.
+9. Verify all preference settings.
+
+If you require more information, please refer to the [Detailed upgrading instructions](https://docs.textpattern.io/installation/upgrading-textpattern).
 
 Upgrades from versions below 4.2.0 will present this warning upon your very first login to the admin-side:
 
@@ -43,5 +48,3 @@ Warning: Unknown column 'user_name' in 'where clause' select name, val from txp_
 ~~~
 
 This is expected behaviour for the very first login after the upgrade. Every further move in the admin side should not throw any error messages.
-
-If you require more information, please refer to the [Detailed installation instructions](https://docs.textpattern.io/installation/).
