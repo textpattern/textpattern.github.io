@@ -1,9 +1,9 @@
 ---
 layout: document
 category: Brand
-published: false
+published: true
 title: Donald Swain
-description: Introducing Donald Swain
+description: When Textpattern CMS is installed with its default content, a welcome article is published along with a comment from Donald Swain.
 ---
 
 # Donald Swain
