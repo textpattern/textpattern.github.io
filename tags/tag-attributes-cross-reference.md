@@ -86,7 +86,6 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 * [recent_articles](recent_articles)
 * [recent_comments](recent_comments)
 * [related_articles](related_articles)
-* [search_result_excerpt](search_result_excerpt)
 * [section_list](section_list)
 
 </div>
@@ -112,7 +111,6 @@ Used to group list items when separating by `break`. Possible values are lists o
 * [recent_articles](recent_articles)
 * [recent_comments](recent_comments)
 * [related_articles](related_articles)
-* [search_result_excerpt](search_result_excerpt)
 * [section_list](section_list)
 
 </div>
@@ -950,6 +948,7 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 * [if_custom_field](if_custom_field)
 * [meta_keywords](meta_keywords)
 * [page_title](page_title)
+* [search_result_excerpt](search_result_excerpt)
 
 </div>
 
