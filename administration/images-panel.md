@@ -36,9 +36,9 @@ So the Images panel in a way combines what for articles is divided in two panels
 
 ## Upload images
 
-The first tool at the top of the panel is the *upload* area. Labeled 'Upload image' you will find a field for entering a path to the image. On its right side there is a 'Browse...'-button which (as well as clicking on the field itself) will open a pop-up-window containing your file manager's tools to locate an image file for upload.
+The first tool at the top of the panel is the *upload* area. Labeled 'Upload image' you will find a field for entering a path to the image. On its right side there is a 'Browse...'-button which (as well as selecting the field itself) will open a pop-up-window containing your file manager's tools to locate an image file for upload.
 
-When you have marked an image and put its path into the upload field by clicking 'open' (or 'OK'), you can start uploading by clicking 'Upload'.
+When you have marked an image and put its path into the upload field by selecting 'open' (or 'OK'), you can start uploading by selecting 'Upload'.
 
 The image will be uploaded to the images folder of Textpattern (but remember the file size limitations). A reference will automatically be saved in the database and the image editing panel will be opened. Here you can enter additional information (see below) regarding the image. To save those informations and return to the Images panel press 'Save'.
 
@@ -84,7 +84,7 @@ The Search function has two components:
 
 Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
-After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of images which meet the criteria.
+After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of images which meet the criteria.
 
 As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
@@ -96,9 +96,9 @@ Beneath the upload and search area there is the table, or list, of existing imag
 
 The default view shows these columns:
 
-**ID:** an ID number is automatically assigned to each image. This is what identifies it and calls it on the live site. Click this ID to edit the image properties.
+**ID:** an ID number is automatically assigned to each image. This is what identifies it and calls it on the live site. Select this ID to edit the image properties.
 
-**Name:** the filename of the image. Click this to edit the images properties.
+**Name:** the filename of the image. Select this to edit the images properties.
 
 **Thumbnail:** shows a thumbnail of the image, if any exists (for a better visual overview in this table it is recommended to always generate a thumbnail).
 
@@ -108,7 +108,7 @@ The default view shows these columns:
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
-In the ID column, a link will be added for each image: **View:** click this to view the actual image in a new browser window.
+In the ID column, a link will be added for each image: **View:** select this to view the actual image in a new browser window.
 
 **Date:** the date when the image record was created (normally when the image was initially uploaded).
 

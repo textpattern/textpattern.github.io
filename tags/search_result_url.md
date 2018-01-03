@@ -36,4 +36,4 @@ This tag has no attributes.
 <txp:search_result_url />
 ~~~
 
-Used within a search results form to allow visitors to click on the link and be taken to the article that matched their search results.
+Used within a search results form to allow visitors to select the link and be taken to the article that matched their search results.

@@ -73,7 +73,7 @@ The `add_privs()` function is a necessary step to tell Textpattern who can see
 the new tab.
 
 If you visit the **Extensions** region, you'll see your plugin panel
-link, **My plugin**.[^2] But if you click it nothing much will happen,
+link, **My plugin**.[^2] But if you select it nothing much will happen,
 or you'll probably get some un-styled default content on the screen.
 Time to give your plugin's panel some content.
 
@@ -82,7 +82,7 @@ Adding events and steps {#sec4}
 
 You've created a new **Extensions** sub-panel for your plugin, but now
 you need to give the plugin a function to execute when that sub-panel is
-clicked. To understand what goes on here let's take some time out to
+selected. To understand what goes on here let's take some time out to
 reveal Textpattern *events* and *steps*.
 
 For purposes here, think of an event as a panel option under the
@@ -100,7 +100,7 @@ someone visits your panel.
 A *step* is some action that a user takes when they're in a plugin
 panel; i.e. some action that takes place inside the event that we are
 interested in. More on steps later. For now you need to tell Textpattern
-what to do when your plugin's panel link is clicked. For this we use
+what to do when your plugin's panel link is selected. For this we use
 `register_callback()`:
 
 ~~~ php
@@ -179,7 +179,7 @@ function abc_admin_hw_edit() {
 
 And to finish it off, let's add a couple of hyperlinks to your
 `abc_admin_hw_list()` function that allows you to simulate the user
-clicking on stuff in your interface:
+selecting stuff in your interface:
 
 ~~~ php
 function abc_admin_hw_list() {
@@ -191,7 +191,7 @@ function abc_admin_hw_list() {
 }
 ~~~
 
-When you click on a link you'll see (above pagetop) that the relevant
+When you select a link you'll see (above pagetop) that the relevant
 function is being called. That's how you differentiate between steps and
 do things. In this example, we might do something (e.g. update a
 database table) and then show the list again. You could use the

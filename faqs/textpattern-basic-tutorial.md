@@ -41,7 +41,7 @@ Log in to the Textpattern control panel. If this is a truly brand-new installati
 
 Then go to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) and set your initial preferences. Don't worry about setting every preference correct first time, you can change preference options at any time. There are plenty of help tips alongside most of the preferences to assist.
 
-Go to the [Pages panel](https://docs.textpattern.io/administration/pages-panel). We're about to overwrite the default page template; if you want to keep a copy of the original, enter a new name for your backup, then use the 'Duplicate' link. This is optional; if you did so click the 'default' link in the list on the right to return to the default page template.
+Go to the [Pages panel](https://docs.textpattern.io/administration/pages-panel). We're about to overwrite the default page template; if you want to keep a copy of the original, enter a new name for your backup, then use the 'Duplicate' link. This is optional; if you did so select the 'default' link in the list on the right to return to the default page template.
 
 The 'Page name' above the large code editing area should be `default`. Replace the entire contents with `Hello, World!` and press 'Save'. Use the 'View site' link in the top menu, to open your site's home page in a new window. Great looking site, isn't it?! Look at the HTML page source: it is literally `Hello, World!`, followed by some status information - certainly not a valid HTML page!
 
@@ -57,7 +57,7 @@ Back in the [Pages panel](https://docs.textpattern.io/administration/pages-panel
 <a href="./">Home</a>
 ~~~
 
-...somewhere in the `<body>` and save. Now open the `default` page template by clicking its link in the list, and add...
+...somewhere in the `<body>` and save. Now open the `default` page template by selecting its link in the list, and add...
 
 ~~~ html
 <a href="./?s=page2">Page 2</a>
@@ -87,7 +87,7 @@ Return to the [Pages panel](https://docs.textpattern.io/administration/pages-pan
 
 Before looking at the results, go to the [Sections panel](https://docs.textpattern.io/administration/sections-panel). Find the `articles` section, edit it and change its 'Uses page' setting to `default`, then press the 'Save' button for this section. Do the same for your `page2` section: change its 'Uses page' setting to `default`. While you're here, change its 'Section title' to `Page 2`. Save your changes.
 
-Go to the live site and re-load the home page. Now there are two links: 'Articles' and 'Page 2'. Click each link and observe the URL: the URL for 'Articles' will have your base URL followed by `?s=articles` (in messy URL mode) or `articles` (in clean URL mode), and the URL for 'Page 2' will end in either `?s=page2` (or `page2`). Otherwise the pages are identical. We no longer have a link to the home page, though, so let's add that in: return to the template and edit the `<txp:section_list />` tag we added earlier so it looks like this:
+Go to the live site and re-load the home page. Now there are two links: 'Articles' and 'Page 2'. Select each link and observe the URL: the URL for 'Articles' will have your base URL followed by `?s=articles` (in messy URL mode) or `articles` (in clean URL mode), and the URL for 'Page 2' will end in either `?s=page2` (or `page2`). Otherwise the pages are identical. We no longer have a link to the home page, though, so let's add that in: return to the template and edit the `<txp:section_list />` tag we added earlier so it looks like this:
 
 ~~~ html
 <txp:section_list include_default="1" />
@@ -135,9 +135,9 @@ The next most important facet of context is whether the page shows a single arti
 
 Go to the [Articles panel](https://docs.textpattern.io/administration/articles-panel) and a list of the articles you added will appear: select and edit 'My third article' again. In the 'Body' editing area enter 'Third article: body' and in the 'Excerpt' area enter 'Third article: excerpt'; press 'Save'. Now do the same for 'My second article', putting relevant text in the 'Body' and 'Excerpt' fields.
 
-Return to the live site and reload the home page (or simply click on the 'My site' link). The article excerpts you just added appear in this list. You'll also see the excerpts on the 'Articles' and 'Page 2' pages.
+Return to the live site and reload the home page (or simply select the 'My site' link). The article excerpts you just added appear in this list. You'll also see the excerpts on the 'Articles' and 'Page 2' pages.
 
-Now click one of the article titles. We see a different view: there is only one article, its body is shown instead of the excerpt, and below that is a message about comments (or a comment input form, if you are looking at 'Welcome to your site'). Adding the `<txp:permlink />` tag has turned each article title into a link to its individual article page.
+Now select one of the article titles. We see a different view: there is only one article, its body is shown instead of the excerpt, and below that is a message about comments (or a comment input form, if you are looking at 'Welcome to your site'). Adding the `<txp:permlink />` tag has turned each article title into a link to its individual article page.
 
 ## More contexts
 
@@ -179,7 +179,7 @@ Add this to your `default` template, below the `<txp:section_list />`:
 <txp:category_list wraptag="ul" break="li" />
 ~~~
 
-A list of three linked items now appears below the section list. Try clicking them: as usual, note both the URL and what appears on the page. The three categories, with their absurd names, are included in the default installation, and the 'Welcome to your site' article is assigned to two of them.
+A list of three linked items now appears below the section list. Try selecting them: as usual, note both the URL and what appears on the page. The three categories, with their absurd names, are included in the default installation, and the 'Welcome to your site' article is assigned to two of them.
 
 Create some new article categories inthe [Categories panel](https://docs.textpattern.io/administration/categories-panel), then go to the [Article panel](https://docs.textpattern.io/administration/articles-panel) and edit and give your new articles some categories, by selecting them from the pull-down boxes on the 'Category 1' and 'Category 2' items in the Write panel sidebar. Return to the live site and see how this changes the category links and the resulting lists.
 
@@ -211,7 +211,7 @@ A special Textpattern form type is the **article form**. In our template we have
 
 Go to the [Forms panel](https://docs.textpattern.io/administration/forms-panel). We're going to overwrite the 'default' and 'search_results' form templates, so if you want to keep the originals copy each of them and make new form templates to hold the backups.
 
-Load the 'default' form into the editor by clicking its link in the sidebar list. Replace the entire contents of the form with:
+Load the 'default' form into the editor by selecting its link in the sidebar list. Replace the entire contents of the form with:
 
 ~~~ html
 <h2><txp:permlink><txp:title /></txp:permlink></h2>
@@ -288,7 +288,7 @@ Add these conditional blocks just above the `<txp:article />` tag:
 </txp:if_category>
 ~~~
 
-Enter some searches and click the category links to see how this gives you appropriate sub-headings for search results and category list pages.
+Enter some searches and select the category links to see how this gives you appropriate sub-headings for search results and category list pages.
 
 ### Textpattern tag attributes
 

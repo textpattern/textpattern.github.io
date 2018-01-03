@@ -33,7 +33,7 @@ The reason for these changes is that category names can be part of URLs and Text
 
 ## Edit an existing category and category details
 
-Click on a category name from the list of existing categories and you get to a new panel with four fields:
+Select a category name from the list of existing categories and you get to a new panel with four fields:
 
 **Category name:** is the one used in URLs and other technical purposes. It contains no special characters and no spaces, as outlined above.
 

@@ -33,9 +33,9 @@ So the Files panel in a way combines what for articles is divided in two panels 
 
 ## Upload files
 
-The first tool at the top of the panel is the *upload* area. Labeled 'Upload file' you will find a field for entering a path to the file. On its right side there is a 'Browse...'-button which (as well as clicking on the field itself) will open a pop-up-window containing your file manager's tools to locate a file for upload.
+The first tool at the top of the panel is the *upload* area. Labeled 'Upload file' you will find a field for entering a path to the file. On its right side there is a 'Browse...'-button which (as well as selecting the field itself) will open a pop-up-window containing your file manager's tools to locate a file for upload.
 
-When you have marked a file and put its path into the upload field by clicking 'open' (or 'OK'), you can start uploading by clicking 'Upload'.
+When you have marked a file and put its path into the upload field by selecting 'open' (or 'OK'), you can start uploading by selecting 'Upload'.
 
 The file will be uploaded to the files folder of Textpattern (but remember the file size limitations). A reference will automatically be saved in the database and the file editing panel will be opened. Here you can enter additional information (see below) regarding the file, or replace the file. To save those informations and return to the Files panel press 'Save'.
 
@@ -57,7 +57,7 @@ If you need to **replace a file** (for if there is a corrected or optimized file
 
 **ID:** the unique ID number of the file.
 
-**Name:** for information only, but can be harnessed by tags (such as [file_download_name](https://docs.textpattern.io/tags/file_download_name)). You can click the linked name and thus test the download (which will also increase the download count).
+**Name:** for information only, but can be harnessed by tags (such as [file_download_name](https://docs.textpattern.io/tags/file_download_name)). You can select the linked name and thus test the download (which will also increase the download count).
 
 **Download count:** for information only, but can be harnessed by tags (such as [file_download_downloads](https://docs.textpattern.io/tags/file_download_downloads)).
 
@@ -84,7 +84,7 @@ The Search function has two components:
 
 Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
-After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of files which meet the criteria.
+After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of files which meet the criteria.
 
 As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
@@ -96,9 +96,9 @@ Beneath the upload and search area there is the table, or list, of existing file
 
 The default view shows these columns:
 
-**ID:** an ID number is automatically assigned to each file. This is what identifies it and calls it on the live site. Click this ID to edit the file properties.
+**ID:** an ID number is automatically assigned to each file. This is what identifies it and calls it on the live site. Select this ID to edit the file properties.
 
-**Name:** the filename of the image. Click this to edit the file properties.
+**Name:** the filename of the image. Select this to edit the file properties.
 
 **Title:** if the file was given a title, then it will reflect that here.
 
@@ -114,7 +114,7 @@ The default view shows these columns:
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
-In the ID column, a link will be added for each file: **Download:** click this to download the file to your computer.
+In the ID column, a link will be added for each file: **Download:** select this to download the file to your computer.
 
 **Description:** what has to be told about the file - you needn't specify file size here (file size can be shown automatically by tags if you like).
 

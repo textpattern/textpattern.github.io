@@ -35,13 +35,13 @@ Associated with the user accounts table (at top of table) are two data editing b
 
 ### Add new author button
 
-The administrator, and any user having a 'Publisher' role[^2], can see and use the **Add new author** button to create a new user account. Administrators and Publishers can also edit any user account by clicking the username in the **Login** column, which opens up the user data form.
+The administrator, and any user having a 'Publisher' role[^2], can see and use the **Add new author** button to create a new user account. Administrators and Publishers can also edit any user account by selecting the username in the **Login** column, which opens up the user data form.
 
 All other users with lesser roles will see their account record only, and will not see the **Add new author** button.
 
 ### Change your password button
 
-All users can see and use the **Change your password** button at the top of the table, which functions in context of the logged in user. When clicked, it opens the **Change your password** form, which consists of a single field for your new password, and a checkbox option to have the new password emailed to you, if desired.
+All users can see and use the **Change your password** button at the top of the table, which functions in context of the logged in user. When selected, it opens the **Change your password** form, which consists of a single field for your new password, and a checkbox option to have the new password emailed to you, if desired.
 
 ### Administrator controls
 
@@ -49,7 +49,7 @@ Administrators and Publisher can see and use a selection list control under the 
 
 ## User data form
 
-Administrators, publishers, and the account owner can open the user account data form by clicking the username in the **Login** column of the user accounts table.
+Administrators, publishers, and the account owner can open the user account data form by selecting the username in the **Login** column of the user accounts table.
 
 As the data form makes clear, only the **Real name**, **Email**, and **Privileges** data is editable. **Login** names (usernames) can not be edited here[^3], and the last login date/time values are not displayed.
 

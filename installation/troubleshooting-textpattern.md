@@ -178,7 +178,7 @@ Some other avenues of exploration:
 
 * If the feed validator reports you have a missing description element, make sure there's something entered in the 'Site slogan' field in your [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
 * If your feeds are empty or don't contain the right articles, check the 'Syndicate?' option, found on the [Sections panel](https://docs.textpattern.io/administration/sections-panel). Sections that have the 'Syndicate?' option turned off will not show up in your feeds. Your articles must also have their status set to 'Live' (not 'Sticky').
-* If your browser tries to download the feed when the feed's link is clicked then, depending on your browser, this is the correct behaviour. More likely than not, your browser is not capable of displaying XML. As the feeds are sent with the correct MIME type, your browser offers to download the file, rather than just displaying the raw content. This is the correct behaviour, and your feed should work in a proper feed aggregator.
+* If your browser tries to download the feed when the feed's link is selected, then - depending on your browser - this is the correct behaviour. More likely than not, your browser is not capable of displaying XML. As the feeds are sent with the correct MIME type, your browser offers to download the file, rather than just displaying the raw content. This is the correct behaviour, and your feed should work in a proper feed aggregator.
 * If you want to set up feed autodetection, you'll need to add tags like the following to the `<head>` of your main page:
 
 ~~~ html

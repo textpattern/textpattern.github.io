@@ -12,7 +12,7 @@ Next, we need to add a tag to display the contents of the field.  In your *artic
 
 bq. @<p>Manufacturer: <txp:custom_field name="manufacturer" /></p>@
 
-Finally, add the manufacturer name to each article.  Under *textpattern > content > write*, click Advanced Options, and you should see a text input box with the title *manufacturer*.  Add the manufacturer name there, and it will be displayed by the @<txp:custom_field .. />@ tag.
+Finally, add the manufacturer name to each article.  Under *textpattern > content > write*, select 'Advanced options', and you should see a text input box with the title *manufacturer*.  Add the manufacturer name there, and it will be displayed by the @<txp:custom_field .. />@ tag.
 
 Custom field names are global, but you don't have to use them on every article.  To display custom fields only for a particular section, either use a different page template and article form for that section; or wrap an "if_section conditional":http://textpattern.net/wiki/index.php?title=if_section around the @<txp:custom_field .. />@ tag.
 

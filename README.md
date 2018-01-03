@@ -24,7 +24,7 @@ For simple, smaller edits, you can edit documents in-browser on GitHub as follow
 1. Log into GitHub in your browser.
 2. Go to the docs repo (this repo!).
 3. Find the documentation page you want to add an example too, pages are within sub-directories of root and all labelled logically.
-4. Click the 'Edit this file' button (it's a little pen symbol).
+4. Select the 'Edit this file' button (it's a little pen symbol).
 5. Write/edit content (in Markdown syntax).
 6. Press the 'Commit changes' button when finished – that will create a pull request. A member of the core documentation team will then review you changes and merge into the repository once approved.
 7. Jekyll rebuilds automatically when file changes are detected and the page is then live for everyone to see.
@@ -80,7 +80,7 @@ Important rules for consistency, which also has implications for plugin authors.
   * *adjective* form (hyphen is used): e.g. "The administration-side panels are organized by **Content**, **Presentation**, and **Admin** (and **Extensions** for admin-side plugins). As the example shows, you may use "admin-side" when used as an ajective, due to it's popularity and convenience, but writing it out fully as "administration-side" is always preferred.
 * When referring to admin-side panel names, panel section headers, form control labels, and button labels, spell the name exactly as it appears in the panel and make it strong emphasis (double-asterisks each side in kramdown), e.g. "The articles table on the **Articles** panel shows article IDs, titles, dates posted, the sections they're in, and their current status."
 * When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: "You can control widowed words in article titles by selecting 'Yes' on the '*Prevent widowed words in article titles?*' preference."
-* When referring to a form control options (e.g. select-menu options, radio button options, etc.) or any other non-header UI dialogue, quote the text and leave it in normal format. E.g. "When you're ready to publish your draft, change status to 'Live' and click the **Save** button."
+* When referring to a form control options (e.g. select-menu options, radio button options, etc.) or any other non-header UI dialogue, quote the text and leave it in normal format. E.g. "When you're ready to publish your draft, change status to 'Live' and select the **Save** button."
 * When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.<sup>2</sup>
 * When referring to file names, make them italic and include the extension. e.g. *.htaccess* and *index.php* (do not make them appear as code, unless they are part of a code snippet).
 

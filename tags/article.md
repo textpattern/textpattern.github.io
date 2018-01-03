@@ -80,7 +80,7 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 : **Default:** `0`.
 
 `pageby="integer"` <span class="footnote warning">v4.0.2+</span>
-: The number of articles to jump forward or back when an older or newer link is clicked. Allows you to call the article tag several times on a page without messing up older/newer links.
+: The number of articles to jump forward or back when an older or newer link is selected. Allows you to call the article tag several times on a page without messing up older/newer links.
 : **Default:** value matches the value assigned to `limit`.
 
 `pgonly="boolean"`
@@ -192,7 +192,7 @@ Expanding on **Example 1**, here is the `article` tag responsible for showing li
 
 In article list context, the form named `article_listing` will be processed and displayed for each article in the list. In individual article context, the `default` form would be used.
 
-To see this in action, on a new Textpattern install, from the home page click on one of the category links near the bottom (right above the Comment link). Note the URL, similar to `http://example.com/category/meaningful-labor`. The `category` in the URL means this is a listing of articles by category. Here you see only the article title, posting date and article information (not the full article itself), because that is what is contained in the form named `article_listing`. Now click on the article title. Note the URL, similar to `http://example.com/articles/1/welcome-to-your-site`. This is an individual article page. Once again you can see the full article, this time with comments showing (if comments are enabled).
+To see this in action, on a new Textpattern install, from the home page select one of the category links near the bottom (right above the Comment link). Note the URL, similar to `http://example.com/category/meaningful-labor`. The `category` in the URL means this is a listing of articles by category. Here you see only the article title, posting date and article information (not the full article itself), because that is what is contained in the form named `article_listing`. Now select the article title. Note the URL, similar to `http://example.com/articles/1/welcome-to-your-site`. This is an individual article page. Once again you can see the full article, this time with comments showing (if comments are enabled).
 
 ### Example 3: Offsetting article display
 

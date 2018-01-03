@@ -87,7 +87,7 @@ The Search function has two components:
 
 Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
-After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of links which meet the criteria.
+After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of links which meet the criteria.
 
 As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
@@ -101,11 +101,11 @@ The default view shows these columns:
 
 **ID:** the unique ID number of the link.
 
-**Name:** the title of the link - click this to edit the link.
+**Name:** the title of the link - select this to edit the link.
 
 **Category:** if the link was assigned a category, then it will reflect that here.
 
-**URL:** the actual hyperlink value of the link - click this to open the target destination in a new browser window.
+**URL:** the actual hyperlink value of the link - select this to open the target destination in a new browser window.
 
 **Author:** the author who created the link record (only if more than one author exists in the [Users panel](https://docs.textpattern.io/administration/users-panel)).
 
@@ -119,7 +119,7 @@ At the top of the list there is an option 'Show detail'. When marked additional 
 
 In the first column you will find a checkbox for each link. Here you can select links you want to change in a bulk manner. You can mark links by checking the checkbox or you can use the checkbox in the head bar of the list to mark all links on that page.
 
-In order to quickly select ranges of links click the checkbox of the first link you want to mark, press and hold the shift key, then click the checkbox of the last link in the range. All links between will be checked too. You can add ranges to your selection by repeating these steps.
+In order to quickly select ranges of links select the checkbox of the first link you want to mark, press and hold the shift key, then select the checkbox of the last link in the range. All links between will be checked too. You can add ranges to your selection by repeating these steps.
 
 For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 

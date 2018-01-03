@@ -16,7 +16,7 @@ In Textpattern your visitors are in one of two *views_; either an **individual**
 
 ## Displaying category lists
 
-When you show visitors an article, you can opt to make the categories to which it belongs hyperlink-able. If a visitor clicks one of these links, they are taken to a category list showing other articles in the same category. Textpattern automatically switches from *individual article* mode to *list* mode; the magic behind how the content changes on-screen is fairly simple with containers and conditionals.
+When you show visitors an article, you can opt to make the categories to which it belongs hyperlink-able. If a visitor selects one of these links, they are taken to a category list showing other articles in the same category. Textpattern automatically switches from *individual article* mode to *list* mode; the magic behind how the content changes on-screen is fairly simple with containers and conditionals.
 
 On your default article page you might see something like this:
 
@@ -38,7 +38,7 @@ On your default article page you might see something like this:
 </txp:if_category>
 ~~~
 
-Taking this block by block we see that the conditional [if_category"](https://docs.textpattern.io/tags/if_category) determines if the visitor has clicked a category hyperlink. If they have, we are in the **list** view. If they have not, the [else](https://docs.textpattern.io/tags/else) portion is executed.
+Taking this block by block we see that the conditional [if_category"](https://docs.textpattern.io/tags/if_category) determines if the visitor has selected a category hyperlink. If they have, we are in the **list** view. If they have not, the [else](https://docs.textpattern.io/tags/else) portion is executed.
 
 In this example, the [article](https://docs.textpattern.io/tags/article) in the *else* portion is treated as an individual article, by virtue of it not being a category list. In more complex pages it may be part of a larger nested structure and therefore could be a different type of list (e.g. search results), but for now we'll take it at face value and assume it is an individual article.
 

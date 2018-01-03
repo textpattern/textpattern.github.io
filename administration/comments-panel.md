@@ -28,7 +28,7 @@ On this panel you can do two things:
 
 ## Editing comments
 
-If you click on the unique ID link of the comment in the list of existing comments, you will open the comment edit panel.
+If you select the unique ID link of the comment in the list of existing comments, you will open the comment edit panel.
 
 ### Comment details
 
@@ -59,7 +59,7 @@ The Search function has two components:
 
 Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
-After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of comments which meet the criteria.
+After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of comments which meet the criteria.
 
 As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
@@ -75,7 +75,7 @@ By default Textpattern will hide comments which are automatically identified and
 
 The default view shows these columns:
 
-**ID:** the unique ID number of the comment. Click in this to open the comment edit panel (see above).
+**ID:** the unique ID number of the comment. Select in this to open the comment edit panel (see above).
 
 **Date:** when the comment was created.
 
@@ -83,7 +83,7 @@ The default view shows these columns:
 
 **Message:** the first words of the message (cropped).
 
-**Parent:** the title of the article the comment was written to. If you click on the provided link, the article will open in the [Write panel](https://docs.textpattern.io/administration/write-panel).
+**Parent:** the title of the article the comment was written to. If you select the provided link, the article will open in the [Write panel](https://docs.textpattern.io/administration/write-panel).
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
@@ -99,7 +99,7 @@ At the top of the list there is an option 'Show detail'. When marked additional 
 
 In the first column you will find a checkbox for each comment. Here you can select comments you want to change in a bulk manner. You can mark comments by checking the checkbox or you can use the checkbox in the head bar of the list to mark all comments on that page.
 
-In order to quickly select ranges of comments click the checkbox of the first comment you want to mark, press and hold the shift key, then click the checkbox of the last comment in the range. All comments between will be checked too. You can add ranges to your selection by repeating these steps.
+In order to quickly select ranges of comments select the checkbox of the first comment you want to mark, press and hold the shift key, then select the checkbox of the last comment in the range. All comments between will be checked too. You can add ranges to your selection by repeating these steps.
 
 For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 

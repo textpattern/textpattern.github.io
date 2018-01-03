@@ -42,9 +42,9 @@ Make a copy of the current system (folders and files of the Textpattern installa
 Log in to the `phpMyAdmin` database panel for your site (different web hosts have different access routes), and then follow these steps:
 
 1. Select the database running the current Textpattern site.
-2. In the resulting main content area, click **'Export'** at the top of the screen.
+2. In the resulting main content area, select **'Export'** at the top of the screen.
 3. You should be able to use the defaults as they already are, just make sure you tick the **'Save as file'** box at the bottom of the screen.
-4. Click **'Go'** button.
+4. Select the **'Go'** button.
 
 The .sql dump file will mostly likely be saved to your desktop. Using FTP/SFTP again, you could optionally copy the file into the backup folder you just created to keep everything together.
 

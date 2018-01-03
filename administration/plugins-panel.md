@@ -35,8 +35,8 @@ Installing a standard text (`.txt`) plugin goes something like this:
 1. Find the plugin file you want.
 2. Copy the plugin file to your clipboard.
 3. Paste the file into the 'Install plugin' textarea box at top of the panel.
-4. Click the 'Upload' button to verify contents.
-5. Click the 'Install' button to finish installation and add plugin to the plugin list table.
+4. Select the 'Upload' button to verify contents.
+5. Select the 'Install' button to finish installation and add plugin to the plugin list table.
 6. When ready, activate the plugin in the **Active** column in the plugin list table.
 
 Most of that is pretty straight forward, but let's touch upon steps 1, 2, and 4 a bit more...
@@ -80,13 +80,13 @@ Depending on where you find your plugin file, you may be able to view its conten
 
 ### Verifying plugin file contents
 
-After clicking the 'Upload' button, you'll be shown an intermediate view of the plugin file - a decompiled view - as it was written. You don't have to do anything here but look for obvious weirdness. For example, if you didn't see anything at all, that would be a problem, or if the plugin panel disappeared, that should be telling you to retreat. Otherwise, find the 'Install' button and click it.
+After selecting the 'Upload' button, you'll be shown an intermediate view of the plugin file - a decompiled view - as it was written. You don't have to do anything here but look for obvious weirdness. For example, if you didn't see anything at all, that would be a problem, or if the plugin panel disappeared, that should be telling you to retreat. Otherwise, find the 'Install' button and select it.
 
 This will add the plugin record to the table, where you can then manage it.
 
 ### Plugin installation errors
 
-Sometimes large plugins can cause problems when you click the **Install
+Sometimes large plugins can cause problems when you select the **Install
 button**, you might see the following error...
 
 Badly formed or empty plugin code.
@@ -125,7 +125,7 @@ The plugin table displays the following data columns for each plugin:
 * Order
 * Manage
 
-All of the column headers can be clicked to sort table records in
+All of the column headers can be selected to sort table records in
 alpha-numeric order by their respective data types, *except* the
 **Description** and **Manage** columns, which are static.
 
@@ -134,18 +134,18 @@ Beyond that, certain columns have particular value.
 ### Activating a plugin
 
 When you first install a plugin, it's in a non-utilizable state until
-you activate it. To activate a plugin, click the "No" link in the
-**Active** column. The link will turn to "Yes" and the plugin is ready
+you activate it. To activate a plugin, select the 'No' link in the
+**Active** column. The link will turn to 'Yes' and the plugin is ready
 to use. To deactivate a plugin, which you might do temporarily when
 troubleshooting errors in your code that could be related to plugins in
-some way, click the "Yes" link to toggle it off again.
+some way, select the 'Yes' link to toggle it off again.
 
 ### Editing a plugin
 
 Once a plugin is installed, you can make changes to its code. You might
 do this if you have a special functional need from the plugin, or you
 find a small bug that the plugin author doesn't have the time to fix
-right away. To access the PHP code, click the plugin's name in the
+right away. To access the PHP code, select the plugin's name in the
 **Plugin** column of the table. This opens the code in "edit" mode.[^3]
 If you edit the plugin and save it, you'll see a <span
 class="warning">Yes</span> entry for the plugin in the **Modified**
@@ -160,7 +160,7 @@ through one or more custom tags, for example, will require you to fold
 those tags into your publishing architecture somehow. It's through use
 of those tags, and any other constructs the plugin may require, that the
 plugin will jump to life. To learn how a plugin is supposed to be used,
-click the "Help" link in the **Manage** column of the table.
+select the "Help" link in the **Manage** column of the table.
 
 Some plugins may also provide an 'Options' link next to the 'Help' link, which opens a special view. These options are neither an [Extensions region](https://docs.textpattern.io/administration/extensions-region) nor preferences, exactly, but are nevertheless important for helping to make the plugin function as you may need it to.
 

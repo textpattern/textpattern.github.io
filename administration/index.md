@@ -30,7 +30,7 @@ The typical admin login location for a new install of Textpattern is at `domain.
 
 ## Core administration regions and panels
 
-The administration side is organized into three primary regions: **Content**, **Presentation**, and **Admin**. Each region has a set of working panels, one of which serves as the default for when the primary region link is clicked.
+The administration side is organized into three primary regions: **Content**, **Presentation**, and **Admin**. Each region has a set of working panels, one of which serves as the default for when the primary region link is selected.
 
 ### Content
 

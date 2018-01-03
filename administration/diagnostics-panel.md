@@ -324,7 +324,7 @@ This suggests your `index.php` file is not available, is not the right version, 
 .htaccess file is missing.
 {: .alert-block .error}
 
-This concerns the `.htaccess` file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing `index.php` file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an *.htaccess* file. If the file is there, then either replace it from the [current Textpattern release](https://github.com/textpattern/textpattern/releases), or click the help link next to this particular message and replace the contents of your existing `.htaccess` file with the indicated rewrite rules in the help dialog.
+This concerns the `.htaccess` file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing `index.php` file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an *.htaccess* file. If the file is there, then either replace it from the [current Textpattern release](https://github.com/textpattern/textpattern/releases), or select the help link next to this particular message and replace the contents of your existing `.htaccess` file with the indicated rewrite rules in the help dialog.
 
 `$path_to_site` is inaccessible.
 {: .alert-block .error}

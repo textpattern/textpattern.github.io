@@ -46,7 +46,7 @@ Table 1 focuses specifically on the core (out-of-the-box) administration regions
 
 **Legend:**
 
-* <span class="success">Full</span> means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case by clicking the panel name.
+* <span class="success">Full</span> means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case by selecting the panel name.
 * <span class="warning">Limited</span> means the account or role can access the panel but does not have full read or write access to all functionality. See the 'limited access' descriptions in following sections.
 * <span class="error">Blocked</span> means the account or role has no panel access and can not see the panel link in the administration UI (for accounts with 'None' status, the account cannot be used at all).
 

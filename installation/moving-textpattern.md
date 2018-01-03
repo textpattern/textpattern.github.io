@@ -46,7 +46,7 @@ What we're talking about here is two things: exporting a copy of your existing d
 #### Exporting the existing database tables
 
 1. Log into phpMyAdmin.
-2. Click on **'Export'** in the option menu.
+2. Select **'Export'** in the option menu.
 3. At this point you will have a lot of choices for the export schema. One note, if you need a smaller file size you can exclude your logs files. You can choose to export a plain .sql file (.txt) or a variety of zipped files. There may be more specific export needs for you host - if these settings do not work you may need to contact you host for specific needs for your server.
 
 #### Move Textpattern folder/file tree to local machine
@@ -62,7 +62,7 @@ As a matter of practicality, it is highly recommended to set up your new account
 
 1. At your new host, use phpMyAdmin (or a similar tool) to create a 'database name' and 'database user' (your new database name can be different than the name previously used by Textpattern).
 2. Select the database you just created, if it's not already selected by default.
-3. Click the 'Import' tab.
+3. Select the 'Import' tab.
 4. Browse for the text file backup of your database you made at *Step 1*.
 5. Upload it!
 
@@ -83,15 +83,15 @@ $txpcfg['doc_root'] = '/home/.some_name/site_username/example.com/';
 
 Changing your password after migrating your installation or upgrading MySQL.
 
-1. When in phpMyAdmin, from the drop down menu on the left select your `txp_` database. A list of tables in that database will appear directly below the drop down menu. Near the bottom of that list you should see your `txp_user` table. Click on that table. All the information for that table will now occupy the main content area of your screen.
-2. There are a row of tabs at the top. Click on the **'Structure'** tab.
-3. In the main content area look for the row called `pass`, and click on the little pencil to the far right.
-4. At the top of the main content area you will see 'Field', 'Type', 'Length/Values', 'Collation', etc. Retype the 128 in the 'Length/Values' box with 128 then click on **'Save'**.
-5. Click on the **'Browse'** tab
-6. In the middle of the content area you should see a little pencil. Click on it.
+1. When in phpMyAdmin, from the drop down menu on the left select your `txp_` database. A list of tables in that database will appear directly below the drop down menu. Near the bottom of that list you should see your `txp_user` table. Select that table. All the information for that table will now occupy the main content area of your screen.
+2. There are a row of tabs at the top. Select the **'Structure'** tab.
+3. In the main content area look for the row called `pass`, and select the little pencil to the far right.
+4. At the top of the main content area you will see 'Field', 'Type', 'Length/Values', 'Collation', etc. Retype the 128 in the 'Length/Values' box with 128 then select **'Save'**.
+5. Select the **'Browse'** tab
+6. In the middle of the content area you should see a little pencil. Select it.
 7. The main content area will now have a five columns labeled 'Field', 'Type', 'Function', 'Null', 'Value'. The third row from the top should be called `pass`. At the far right is the encrypted value of your current password. Delete the contents of that box and type in your new password. You can also just retype in your old password. **Important:** Do not use uppercase letters in your password at this point (Textpattern converts your password to lowercase before hashing it, hence it won't ever match if you hash any password with uppercase letters).
 8. In the drop down menu for the row `pass` select 'Password'.
-9. Click **'Go'**.
+9. Select **'Go'**.
 
 You're now ready to log back in to your Textpattern interface.
 

@@ -100,7 +100,7 @@ As long as *Logging* is switched on from the [Preferences panel](https://docs.te
 
 ## Admin-side callbacks
 
-Admin-side callbacks are split into three flavours. The first are easy to recognize from the address bar of your browser. If you click on any admin-side panel link, you'll see the URL contains `?event=panelname`, and if you click on any link in that panel that performs an action, you'll see `?event=panelname&step=action`. Those values correspond to the `$event` and `$step` parameters you can use during [plugin or theme development](https://docs.textpattern.io/development/). In fact, they will call any user-defined function that is registered for said `$event` and `$step`, allowing you to add your own *events* and *steps* as you need them.
+Admin-side callbacks are split into three flavours. The first are easy to recognize from the address bar of your browser. If you select any admin-side panel link, you'll see the URL contains `?event=panelname`, and if you select any link in that panel that performs an action, you'll see `?event=panelname&step=action`. Those values correspond to the `$event` and `$step` parameters you can use during [plugin or theme development](https://docs.textpattern.io/development/). In fact, they will call any user-defined function that is registered for said `$event` and `$step`, allowing you to add your own *events* and *steps* as you need them.
 
 If you wish to utilise such core hooks, consult the [admin-side events and steps](https://docs.textpattern.io/development/admin-side-events-and-steps) document, which lists them all.
 
@@ -679,7 +679,7 @@ panel, you must raise the `PLUGIN_HAS_PREFS` flag.
   ------------------------------------ ------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------
   `plugin_lifecycle.abc_your_plugin`   `enabled`     When somebody switches abc_your_plugin to "Enabled" (Yes) from the **Plugins** panel.                                                                                                                      -
   `plugin_lifecycle.abc_your_plugin`   `disabled`    When somebody switches abc_your_plugin to "Disabled" (No) on the **Plugins** panel.                                                                                                                        -
-  `plugin_lifecycle.abc_your_plugin`   `installed`   When abc_your_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and clicking **Install** button on the next screen.                                               -
+  `plugin_lifecycle.abc_your_plugin`   `installed`   When abc_your_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and selecting **Install** button on the next screen.                                               -
   `plugin_lifecycle.abc_your_plugin`   `deleted`     When abc_your_plugin has been removed by the act of a user selecting it and deleting it from the **Plugins** panel (note that the `plugin_lifecycle.abc_your_plugin` / `disabled` callback fires first).   -
 
 </div>

@@ -15,13 +15,13 @@ On this page:
 * [Creating a new Form template](#creating-a-new-form-template)
 * [Duplicating a Form template](#duplicating-a-form-template)
 
-The first column of the panel is the list of current Form templates. To select a template for editing, click on the name in the first column and Textpattern will fill the second column edit field with the selected template.
+The first column of the panel is the list of current Form templates. To select a template for editing, select the name in the first column and Textpattern will fill the second column edit field with the selected template.
 
 The second column is a large edit field where you may edit the Form template code, and controls for creating a brand new Form template or creating a copy of an existing Form template. A Save button, located at the bottom of the second column, will save the Form template back into the Textpattern database.
 
 ## Creating a new Form template
 
-To create a new Form template, click the 'Create new form' button. The Form template editor will be empty. Before working on the Form template content, it's best to first give it an unique name, assign a Form type and save it, all using the controls in the Form template editor.
+To create a new Form template, select the 'Create new form' button. The Form template editor will be empty. Before working on the Form template content, it's best to first give it an unique name, assign a Form type and save it, all using the controls in the Form template editor.
 
 You can then go back to editing the Form template's content, either by hand, or by pasting in some starter code from an existing Form template and editing it as needed. Be sure to save your changes as you progress to not risk losing anything!
 
@@ -39,7 +39,7 @@ The form type you use is not vitally important, the purpose of assigning Form te
 
 ## Duplicating a Form template
 
-Making a copy of the current Form template is easy. Click the 'Duplicate' button and a copy of whatever is in the 'Form code' field will be saved to a new Form template.
+Making a copy of the current Form template is easy. Select the 'Duplicate' button and a copy of whatever is in the 'Form code' field will be saved to a new Form template.
 
 If you have already altered the 'Form name' field before duplication, the new Form template will use that name (as long as the name is not already in use). If you have not altered the name, the new Form template will have the same name as the currently loaded template, with the word 'copy' appended to it.
 

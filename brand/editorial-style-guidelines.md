@@ -207,7 +207,7 @@ Follows these when writing about Textpattern UIs, which has implications for plu
 ** Non-linked text: E.g.: "The articles table on the **Articles** panel shows article IDs, titles, dates posted, the sections they're in, and their current status.@
 ** Linked text: E.g.: @See all your articles listed in the **"Articles":#** panel.@
 * When referring to a preference label, specifically, quote the text and make it italic (double underscores each side). For example: @You can control widowed words in article titles by selecting "Yes" on the "__Prevent widowed words in article titles?__" preference.@
-* When referring to a form control options (e.g, select-menu options, radio button options, etc) or any other non-header UI dialogue, quote the text and leave it in normal format. E.g.: @When you're ready to publish your draft, change status to "Live" and click the *Save* button*.@
+* When referring to a form control options (e.g, select-menu options, radio button options, etc) or any other non-header UI dialogue, quote the text and leave it in normal format. E.g.: @When you're ready to publish your draft, change status to "Live" and select the *Save* button*.@
 * When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.[^2]
 * When referring to file names, make them italic (double underscores) and include the extension. E.g.: __.htaccess__ and __index.php__. (Do not make them appear as code, unless they are part of a code snippet.)
 

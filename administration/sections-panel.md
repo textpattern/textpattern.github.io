@@ -88,7 +88,7 @@ The Search function has two components:
 
 Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
-After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of links which meet the criteria.
+After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of links which meet the criteria.
 
 As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
@@ -104,7 +104,7 @@ TODO
 
 In the first column you will find a checkbox for each section. Here you can select sections you want to change in a bulk manner. You can mark sections by checking the checkbox or you can use the checkbox in the head bar of the list to mark all sections on that page.
 
-In order to quickly select ranges of sections click the checkbox of the first section you want to mark, press and hold the shift key, then click the checkbox of the last section in the range. All sections between will be checked too. You can add ranges to your selection by repeating these steps.
+In order to quickly select ranges of sections select the checkbox of the first section you want to mark, press and hold the shift key, then select the checkbox of the last section in the range. All sections between will be checked too. You can add ranges to your selection by repeating these steps.
 
 For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 

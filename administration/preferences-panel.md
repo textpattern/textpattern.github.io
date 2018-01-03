@@ -334,7 +334,7 @@ If you are experiencing duplicate display of comments in an article, then chance
 
 If 'current window' is selected (recommended) the current window will be refreshed to display only the current article, with comments beneath.
 
-If 'popup window' is selected, a new browser window will open when the comments link is clicked (this uses the `popup_comments` Form template).
+If 'popup window' is selected, a new browser window will open when the comments link is selected (this uses the `popup_comments` Form template).
 
 ### Comments date format
 

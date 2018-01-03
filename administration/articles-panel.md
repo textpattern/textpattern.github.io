@@ -41,7 +41,7 @@ Query text entered in the textarea will be treated as a *complete phrase* (e.g. 
 
 You don't need to wildcard query text at the beginning or the end (e.g. "time" will find "parttime", "times", "timestamp" as well). But you can use wildcard ? within a query.
 
-After entering your search criteria you start searching by clicking the search button. As a result you will be given a new list of articles which meet the criteria.
+After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of articles which meet the criteria.
 
 As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
@@ -51,7 +51,7 @@ As a default the search will find matches for all criteria. But you can do more 
 
 Okay, back to the list of articles! Each row is one article.
 
-To explain the *columns* going across the top: If you click the header of a column, it will sort the list of articles according to that column. Click again to reverse sort direction.
+To explain the *columns* going across the top: If you select the header of a column, it will sort the list of articles according to that column. Select again to reverse sort direction.
 
 ### Columns
 
@@ -61,7 +61,7 @@ The default view shows these columns:
 
 **Posted:** this is the date/time that the article was (or will be) published. If it shows on the live site depends on your forms. Articles to be published in the future (where you entered a timestamp manually) are shown gray instead of black.
 
-**Title:** the title of the article. Click this to edit the article.
+**Title:** the title of the article. Select this to edit the article.
 
 **Section:** the section that the article belongs to.
 
@@ -71,7 +71,7 @@ The default view shows these columns:
 
 At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
 
-In the ID column, two links will be added for each article: **Edit:** click this (or the title of the article) to edit the article. **View:** click this to view the particular article on the live site.
+In the ID column, two links will be added for each article: **Edit:** select this (or the title of the article) to edit the article. **View:** select this to view the particular article on the live site.
 
 **Modified:** tells when the article has recently been modified.
 
@@ -87,7 +87,7 @@ In the ID column, two links will be added for each article: **Edit:** click this
 
 In the first column you will find a checkbox for each article. Here you can select articles you want to change in a bulk manner. You can mark articles by checking the checkbox or you can use the checkbox in the head bar of the list to mark all articles on that page.
 
-In order to quickly select ranges of articles click the checkbox of the first article you want to mark, press and hold the shift key, then click the checkbox of the last article in the range. All articles between will be checked too. You can add ranges to your selection by repeating these steps.
+In order to quickly select ranges of articles select the checkbox of the first article you want to mark, press and hold the shift key, then select the checkbox of the last article in the range. All articles between will be checked too. You can add ranges to your selection by repeating these steps.
 
 For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 

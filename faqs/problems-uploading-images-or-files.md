@@ -14,7 +14,7 @@ To force Textpattern to search for a new temporary directory:
 
 2. Find the "Temp folder" setting, under "Admin"
 
-3. Delete the contents of the Temp folder setting, and click the Save button.
+3. Delete the contents of the Temp folder setting, and select the Save button.
 
 If Textpattern is able to find a suitable temporary directory, it will automatically fill in the new setting.  If the Temp folder setting stays blank, you'll need to set it manually:
 

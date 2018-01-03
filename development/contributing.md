@@ -41,7 +41,7 @@ The general steps for Pull Requests:
 * Make a new branch for your work.
 * Hack along.
 * Push your changes to your fork on GitHub.
-* Visit your repository's page on GitHub and click the 'Pull Request' button.
+* Visit your repository's page on GitHub and select the 'Pull Request' button.
 * Label the pull request with a clear title and description.
 
 ### Coding standard

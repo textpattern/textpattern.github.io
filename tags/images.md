@@ -90,7 +90,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0` (only effective if `limit` is set).
 
 `pageby="integer" (or "limit")"`
-: The number of images to jump forward or back when an [older](older) or [newer](newer) link is clicked. Without this attribute, pagination is not available; you will simply see `limit` images. You may specify `pageby="limit"` to allow pagination to automatically follow the value of the `limit` attribute. Note: [newer](newer) and [older](older) will paginate all content types at once.
+: The number of images to jump forward or back when an [older](older) or [newer](newer) link is selected. Without this attribute, pagination is not available; you will simply see `limit` images. You may specify `pageby="limit"` to allow pagination to automatically follow the value of the `limit` attribute. Note: [newer](newer) and [older](older) will paginate all content types at once.
 : **Default:** unset.
 
 `realname="author name"`
@@ -301,7 +301,7 @@ Other tags used: [if_different](if_different), [image_info](image_info), [thumbn
 ~~~ html
 <txp:images limit="6" category="gallery">
     <p>
-        <a href="<txp:image_url />" title="Click to view original">
+        <a href="<txp:image_url />" title="View original">
             <img src="<txp:site_url />timthumb.php?src=<txp:image_url />&amp;w=160" alt="<txp:image_info type='alt' />">
         </a>
     </p>

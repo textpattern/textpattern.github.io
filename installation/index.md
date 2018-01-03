@@ -128,7 +128,7 @@ Now you'll walk through the setup process, which is a series of screens. Have yo
 
 You should now be looking at the default installation screen, which shows the Textpattern logo, a language selection menu, and a **Submit** button.[^3] The language you select will be used for the setup process, and become the default for your Textpattern UI.[^4]
 
-Choose the language you want and click the **Submit** button.
+Choose the language you want and select the **Submit** button.
 
 [^3]: If you don't see this screen, check your URL path. Should it be `https` or `www.`? Did you install in a sub-directory? Is there a typo?
 
@@ -158,7 +158,7 @@ The screen will say you don't need to provide a *table prefix* if this will be y
 
 Textpattern should have filled this in automatically by detecting where your installation files are relative to your web root. Just make sure it's correct.
 
-When ready, click the **Next** button.
+When ready, select the **Next** button.
 
 If there was a problem with your database information, you'll be notified about it now and won't advance to the next screen. You won't be told what the exact problem is either, but it will either be a typographical error in the data you entered, or there's a problem with your database setup, in which case you should submit a support ticket to your web host.
 
@@ -199,7 +199,7 @@ Proceed as follows:
 3. Paste the code into the `config-dist.php` file, completely overwriting its entire contents. 
 4. Save the file, close it, then rename it by removing `-dist` from the file name, leaving `config.php`.
 
-Return to the **Add config file** screen in your browser and click the **I did it** button.
+Return to the **Add config file** screen in your browser and select the **I did it** button.
 
 [^5]: If you want to change your character encoding, you'll need to do that at your database. But finish installing first, then change the database encoding later.
 
@@ -220,7 +220,7 @@ To create the administrator account and generate the database tables, add the fo
 
 Under this area, you're asked to select the admin-side theme you want to use. The default theme is Hive. You can change the admin-side theme choice at any time in [Preferences](https://docs.textpattern.io/administration/preferences-panel) after logging in.
 
-When ready click the **Next** button.
+When ready select the **Next** button.
 
 [^6]: The login name and password should *not* be the same login and password used for your database.
 
@@ -231,6 +231,6 @@ The final step is essentially a confirmation screen with a link to the administr
 The screen will also suggest deleting the `/setup` directory for security reasons, and troubleshooting your diagnostics. But when first logging in, Textpattern will land you at a location not mentioned in this screen, so here's the optimal course of action to take once you arrive at this confirmation step:
 
 1. Use your S/FTP client to connect to your web server. Go to the `/textpattern/setup` directory, and delete it (contents too). This eliminates one potential diagnostic warning you would otherwise see later.
-2. Return to your browser screen and click the "Main interface" link, which takes you to the administration login location. Log in using your new administrator account details (entered on the previous install screen), and check the box for remembering you, if you like. 
+2. Return to your browser screen and select the "Main interface" link, which takes you to the administration login location. Log in using your new administrator account details (entered on the previous install screen), and check the box for remembering you, if you like. 
 3. Proceed to the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel), as Textpattern suggested, to troubleshoot any warnings and errors you see.
-4. Go to the public side of your website (the homepage), easy to do by clicking its name in the navigation bar of any admin-side location. Read the tips and suggestions provided on the default article titled, 'Welcome to your site'. They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.
+4. Go to the public side of your website (the homepage), easy to do by selecting its name in the navigation bar of any admin-side location. Read the tips and suggestions provided on the default article titled, 'Welcome to your site'. They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.

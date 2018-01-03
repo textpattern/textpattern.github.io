@@ -29,7 +29,7 @@ For those installing a new package of Textpattern, the routine begins upon first
 
 Unless you change it at the initial installation screen, English is the language used by default for the installation process, and subsequently for the administration UI. You can change the default language, again (if you desire), upon first log in, go to the [Languages panel](https://docs.textpattern.io/administration/languages-panel), where the the available language packs (called Textpacks) are listed.
 
-First you load the language you need by clicking the 'Install' link for it. You can add as many as you want, but there's no point adding any you can't read. A green confirmation message will flash at bottom of your browser window after each install action.
+First you load the language you need by selecting the 'Install' link for it. You can add as many as you want, but there's no point adding any you can't read. A green confirmation message will flash at bottom of your browser window after each install action.
 
 Then you override the current default by selecting the new language you want from the 'Current active language' selection menu at top of the languages table.[^1]
 
@@ -61,4 +61,4 @@ Be aware that sometimes in course of running your site, depending on the plugins
 
 Anytime you update anything - system or plugins - verify no issues cropped up in the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel).
 
-[^1]: You'll need to click the **Save** button in Textpattern 4.5 and earlier, but in 4.6 onwards no save is necessary, the language change applies automatically.
+[^1]: You'll need to select the **Save** button in Textpattern 4.5 and earlier, but in 4.6 onwards no save is necessary, the language change applies automatically.

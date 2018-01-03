@@ -54,7 +54,7 @@ Note: It is not adequate to protect a single section. This is not due to the tag
 <txp:password_protect>
     <p>
         This content is only visible to authenticated users.
-        <a>Click here</a> for free diamonds.
+        <a>Free diamonds here</a>.
     </p>
 </txp:password_protect>
 ~~~
