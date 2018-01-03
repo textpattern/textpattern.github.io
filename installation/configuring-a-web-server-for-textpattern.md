@@ -3,7 +3,7 @@ layout: document
 category: Installation
 published: false
 title: Configuring a web server for Textpattern.
-description: [WIP, @petecooper January 2018]
+description: (WIP, @petecooper January 2018)
 ---
 
 # Configuring a web server for Textpattern
