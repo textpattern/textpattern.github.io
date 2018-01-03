@@ -2,8 +2,8 @@
 layout: document
 category: Installation
 published: false
-title: Configuring a web server for Textpattern. [WIP, @petecooper January 2018]
-description:
+title: Configuring a web server for Textpattern.
+description: [WIP, @petecooper January 2018]
 ---
 
 # Configuring a web server for Textpattern
@@ -19,11 +19,11 @@ The article's scope extends to the functional requirements of configuring Textpa
 
 ### Apache, MySQL, PHP
 
-Lorem ipsum etc.
+Textpattern runs faster on current, mainline versions of Apache, MySQL and PHP than end-of-life'd legacy versions.
 
 ### NGINX, MySQL, PHP
 
-Lorem ipsum etc.
+Textpattern runs faster on current, mainline versions of NGINX, MySQL and PHP than end-of-life'd legacy versions.
 
 ## Unsupported environments
 
