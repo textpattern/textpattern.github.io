@@ -10,7 +10,7 @@ The user-friendly version:
 # Create a new folder (_e.g._, “txp-unzipped”) on your local drive, move the zip file into it, and unpack "the file tree contents":https://github.com/textpattern/textpattern.
 # Create an FTP connection to your server (sometimes SFTP is necessary, depending on your host requirements), and move the unpacked file tree to your web domain root (or subdirectory if you plan to run it that way).
 # Create a MySQL database and the associated user and password for it.
-# Open a web browser and go to *domain.tld/textpattern/setup/index.php* (or *domain.tld/sub-directory/textpattern/setup/index.php* if you're running it from a sub directory), where “domain.tld” is your web domain (and “sub-directory” is your actual sub-directory of choice).
+# Open a web browser and go to *example.com/textpattern/setup/index.php* (or *example.com/sub-directory/textpattern/setup/index.php* if you're running it from a sub directory), where “example.com” is your web domain (and “sub-directory” is your actual sub-directory of choice).
 # Follow the instructions in the web browser.
 
 h3(sectionedit2#detailed_installation_instructions). Detailed installation instructions
@@ -68,9 +68,9 @@ The unpacked "file tree":/home/www/zendstudio/dokuwiki/bin/doku.php?id=4_5.2_fil
 
 *ROOT OR SUBDIRECTORY INSTALLATION?*
 
-Relates with step 3 in the "simple instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ftp_installation#simple_installation_instructions. If you plan to manage your entire website with Textpattern, then installing in the root domain (_e.g._, *domain.tld*) is likely how you'll do it.
+Relates with step 3 in the "simple instructions":/home/www/zendstudio/dokuwiki/bin/doku.php?id=ftp_installation#simple_installation_instructions. If you plan to manage your entire website with Textpattern, then installing in the root domain (_e.g._, *example.com*) is likely how you'll do it.
 
-On other hand, if Textpattern will only be used to run a blogâ€”alongside other systems used in website construction, for exampleâ€”then you may need to install Textpattern in a sub-directory (domain.tld/*blog*).
+On other hand, if Textpattern will only be used to run a blogâ€”alongside other systems used in website construction, for exampleâ€”then you may need to install Textpattern in a sub-directory (example.com/*blog*).
 
 *FTP or SFTP TRANSFER*
 
@@ -161,4 +161,3 @@ h3(sectionedit3#upgrading_your_installation). Upgrading your installation
 See "upgrading_downgrading_nightlies_and_bleeding_edge":/home/www/zendstudio/dokuwiki/bin/doku.php?id=upgrading_downgrading_nightlies_and_bleeding_edge.
 
 "ftp_installation_translations":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=ftp_installation_translations
-

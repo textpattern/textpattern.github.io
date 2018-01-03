@@ -24,7 +24,7 @@ On this page:
 
 ## Login location
 
-The typical admin login location for a new install of Textpattern is at `domain.tld/textpattern`.[^1] If you install Textpattern in a subdirectory, the login location would reflect that as `domain.tld/subdirectory/textpattern`.
+The typical admin login location for a new install of Textpattern is at `example.com/textpattern`.[^1] If you install Textpattern in a subdirectory, the login location would reflect that as `example.com/subdirectory/textpattern`.
 
 [^1]: See [Textpattern security](https://docs.textpattern.io/administration/security) if you're worried about the login location being common knowledge.
 
@@ -77,7 +77,7 @@ The **Content** region of the administration side has seven panels out-of-the-bo
     </table>
 </div>
 
-From Textpattern 4.6 onwards, when the "Accept comments?" preference is set to "No" in the **Preferences** panel, all comments functionality throughout the administration side will be hidden in the UI and the **Comments** panel link will be removed from the list of panel options in the **Content** region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to "Yes". 
+From Textpattern 4.6 onwards, when the "Accept comments?" preference is set to "No" in the **Preferences** panel, all comments functionality throughout the administration side will be hidden in the UI and the **Comments** panel link will be removed from the list of panel options in the **Content** region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to "Yes".
 
 ### Presentation
 
@@ -153,7 +153,7 @@ The **Admin** region of the administration side has seven panels out-of-the-box,
     </table>
 </div>
 
-From Textpattern 4.6 onwards, when the "Logging" preference is set to "None" in the **Preferences** panel, all logging functionality throughout the administration side will be hidden in the UI and the **Visitor logs** panel link will be removed from the list of panel options in the **Admin** region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to "Yes". 
+From Textpattern 4.6 onwards, when the "Logging" preference is set to "None" in the **Preferences** panel, all logging functionality throughout the administration side will be hidden in the UI and the **Visitor logs** panel link will be removed from the list of panel options in the **Admin** region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to "Yes".
 
 Examples of plugins that add additional panel options to the **Admin** region include `smd_faux_role` and `wet_snitch`.
 

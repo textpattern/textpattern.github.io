@@ -17,7 +17,7 @@ On this page:
 
 ## Moving between directories on the same server
 
-Textpattern users have been known to install Textpattern in a subdirectory of a web domain (e.g. `domain.tld/subdirectory`) and later decide to relocate the installation to the domain root (i.e. `domain.tld`).
+Textpattern users have been known to install Textpattern in a subdirectory of a web domain (e.g. `example.com/subdirectory`) and later decide to relocate the installation to the domain root (i.e. `example.com`).
 
 Here's the process in detail:
 

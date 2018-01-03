@@ -54,7 +54,7 @@ Temporary directory path
 : The path of your `/tmp` directory relative to document root.
 
 Site URL
-: Your domain name and top-level domain (i.e. `domain.tld`). Corresponds with 'Site URL' setting in the 'Site' section of the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#site-url).
+: Your domain name and top-level domain (i.e. `example.com`). Corresponds with 'Site URL' setting in the 'Site' section of the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#site-url).
 
 PHP version
 : The version number of your PHP install.</td>
@@ -233,7 +233,7 @@ Warnings are not critical, per se, and sometimes can even be cascading[^2] or fa
 DNS lookup failed: {site URL}.
 {: .alert-block .warning}
 
-This means the 'Site URL' preference value in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) is probably incorrect; possibly the wrong name, a spelling mistake, or missing altogether. Check the value and make sure it's entered exactly like this, `domain.tld`, replacing your domain name and TLD extension.
+This means the 'Site URL' preference value in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) is probably incorrect; possibly the wrong name, a spelling mistake, or missing altogether. Check the value and make sure it's entered exactly like this, `example.com`, replacing your domain name and TLD extension.
 
 Site URL preference might be incorrect: {site URL}.
 {: .alert-block .warning}
@@ -248,7 +248,7 @@ This could appear for different reasons and may not be a problem, per se. Troubl
 Site URL has a trailing slash.
 {: .alert-block .warning}
 
-This means your 'Site URL' preference value in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) has an ending forward slash on it like this, `domain.tld/`. Tsk-tsk. Remove the slash.
+This means your 'Site URL' preference value in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) has an ending forward slash on it like this, `example.com/`. Tsk-tsk. Remove the slash.
 
 {path} still exists.
 {: .alert-block .warning}

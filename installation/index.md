@@ -24,7 +24,7 @@ On this page:
 
 ## Create your database
 
-Before you can install Textpattern, you will need a MySQL database ready, and a user account with 'write' privileges to go with it. It's a hurdle you jump on your web host's side of things, but now is a good time to take care of it so it's not holding up the Textpattern install/setup process later. 
+Before you can install Textpattern, you will need a MySQL database ready, and a user account with 'write' privileges to go with it. It's a hurdle you jump on your web host's side of things, but now is a good time to take care of it so it's not holding up the Textpattern install/setup process later.
 
 Record this information when you create the database and keep it handy. It will be used later in the setup process:
 
@@ -32,16 +32,16 @@ Record this information when you create the database and keep it handy. It will 
 * database password
 * database name
 
-Depending on your web host, your web host account username (or ID, whatever) may be prefixed on the database name and database login. If this is the case for you, it will be evident when creating the database with your web host. 
+Depending on your web host, your web host account username (or ID, whatever) may be prefixed on the database name and database login. If this is the case for you, it will be evident when creating the database with your web host.
 
-For example, if your web host ID was your last name (`lname`) and you named your database `oceans` and chose `me` as a database login, then your actual database name and login to use in [Step 1](#step-1-set-database-details) would be `lname_oceans` and `lname_me`, respectively. 
+For example, if your web host ID was your last name (`lname`) and you named your database `oceans` and chose `me` as a database login, then your actual database name and login to use in [Step 1](#step-1-set-database-details) would be `lname_oceans` and `lname_me`, respectively.
 
 ## Download and unpack Textpattern
 
 Now we begin the Textpattern part of the deal:
 
-1. Create a folder on your local drive and name it something recognizable (e.g. `txp-new`). 
-2. [Download](https://textpattern.com/download) the latest release package (either `.zip` or `.tar.gz`, as you prefer). 
+1. Create a folder on your local drive and name it something recognizable (e.g. `txp-new`).
+2. [Download](https://textpattern.com/download) the latest release package (either `.zip` or `.tar.gz`, as you prefer).
 3. Move the zip package to the folder you created.
 4. Unzip the package.
 
@@ -65,7 +65,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `sites`
 : **Type:** directory.
 : **Removable?:** yes.
-: **What it's for:** Supports multi-site installations managed by one administration side. It contains a template and instructions (a README.txt) for doing so. You can safely remove this directory if not wanted.
+: **What it's for:** Supports multi-site installations managed by one administration side. It contains a template and instructions (`README.txt`) for doing so. You can safely remove this directory if not wanted.
 
 `textpattern`
 : **Type:** directory.
@@ -74,8 +74,8 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 
 `.htaccess`
 : **Type:** file.
-: **Removable?:** no.
-: **What it's for:** Important for handling many things, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should never alter or remove the default content, which Textpattern relies on.
+: **Removable?:** yes/no.
+: **What it's for:** Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should not alter or remove the default content, which Textpattern relies on. `.htaccess` can be safely removed if you run Textpattern a non-Apache web server, e.g. NGINX.
 
 `index.php`
 : **Type:** file.
@@ -108,7 +108,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 
 ## Upload package to web server
 
-If you intend to use Textpattern to manage the entire website, you'll upload the install package to your web root (i.e. the root of your web domain). For many hosts, the path to the root looks like this: */users/home/{username}/web/public/*, where {username} is your user account name. You would upload the Textpattern package to the `/public` directory (equal to `yourdomain.tld`). 
+If you intend to use Textpattern to manage the entire website, you'll upload the install package to your web root (i.e. the root of your web domain). For many hosts, the path to the root looks like this: */users/home/{username}/web/public/*, where {username} is your user account name. You would upload the Textpattern package to the `/public` directory (equal to `yourexample.com`).
 
 You may, of course, install it in a sub-directory if you're only using Textpattern to run a blog, for example, as part of a larger site (generally people who do that end up [moving the installation](https://docs.textpattern.io/installation/moving-textpattern) later).
 
@@ -122,7 +122,7 @@ When ready:
 
 ## Setup and configuration
 
-Now you'll walk through the setup process, which is a series of screens. Have you're "database information":#sec1 ready. Assuming you uploaded the install file tree to your web root, open a browser and go to *http://domain.tld/textpattern/setup/*. (If you installed Textpattern in a subdirectory, the path would reflect that.)
+Now you'll walk through the setup process, which is a series of screens. Have you're "database information":#sec1 ready. Assuming you uploaded the install file tree to your web root, open a browser and go to *http://example.com/textpattern/setup/*. (If you installed Textpattern in a subdirectory, the path would reflect that.)
 
 ### Select language
 
@@ -196,7 +196,7 @@ Proceed as follows:
 
 1. Use your S/FTP client to connect to your web host, navigate to the installation directory, and open `/textpattern/config-dist.php` in your text editor of choice.
 2. Copy the code that Textpattern generated for you in the current screen.
-3. Paste the code into the `config-dist.php` file, completely overwriting its entire contents. 
+3. Paste the code into the `config-dist.php` file, completely overwriting its entire contents.
 4. Save the file, close it, then rename it by removing `-dist` from the file name, leaving `config.php`.
 
 Return to the **Add config file** screen in your browser and select the **I did it** button.
@@ -231,6 +231,6 @@ The final step is essentially a confirmation screen with a link to the administr
 The screen will also suggest deleting the `/setup` directory for security reasons, and troubleshooting your diagnostics. But when first logging in, Textpattern will land you at a location not mentioned in this screen, so here's the optimal course of action to take once you arrive at this confirmation step:
 
 1. Use your S/FTP client to connect to your web server. Go to the `/textpattern/setup` directory, and delete it (contents too). This eliminates one potential diagnostic warning you would otherwise see later.
-2. Return to your browser screen and select the "Main interface" link, which takes you to the administration login location. Log in using your new administrator account details (entered on the previous install screen), and check the box for remembering you, if you like. 
+2. Return to your browser screen and select the "Main interface" link, which takes you to the administration login location. Log in using your new administrator account details (entered on the previous install screen), and check the box for remembering you, if you like.
 3. Proceed to the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel), as Textpattern suggested, to troubleshoot any warnings and errors you see.
 4. Go to the public side of your website (the homepage), easy to do by selecting its name in the navigation bar of any admin-side location. Read the tips and suggestions provided on the default article titled, 'Welcome to your site'. They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.
