@@ -29,7 +29,7 @@ Modifications to an Apache virtual host file are typically not needed, especiall
 <?php phpinfo(); ?>
 ```
 
-Save the file as `preflight.php` or similar, and view it in a browser. If PHP is configured correctly, the resulting page will list details about PHP's configuration, including active extensions to check against the system requirements above.
+Save the file as `preflight.php` or similar, and view it in a browser. If PHP is configured correctly, the resulting page will list details about PHP's configuration, including active extensions to check against the system requirements above. Delete this `preflight.php` file when you've confirmed system requirements are reached and, ideally, exceeded.
 
 Textpattern-specific directives are provided by `.htaccess` in the root directory and other locations within the file tree. It is important to upload this file if your web server runs Apache as it's essentially direct instructions for the web server to work in a specific way. The root `.htaccess` file controls, among other things, clean URLs.
 
