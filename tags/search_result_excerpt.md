@@ -29,13 +29,9 @@ The **search_result_excerpt** tag is a *single* tag that will show the occurrenc
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`break="tag"` <span class="footnote warning">v4.0.6+</span>
+`break="tag"` <span class="footnote error">deprecated v4.7.0</span>
 : Trailing string.
 : **Default:** `...` (ellipsis).
-
-`breakby="integer"` <span class="footnote warning">v4.7.0+</span>
-: Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
-: **Default:** `1` (actually unset).
 
 `hilight="tag"`
 : HTML tag to be used for search term matches in excerpt text, without brackets.
@@ -44,6 +40,10 @@ Tag will accept the following attributes (**case-sensitive**):
 `limit="integer"`
 : Maximum number of search match excerpts per search result.
 : **Default:** `5`.
+
+`separator="tag"` <span class="footnote warning">v4.7.0+</span>
+: Trailing string.
+: **Default:** `...` (ellipsis).
 
 ## Examples
 
@@ -70,7 +70,7 @@ Other tags used: [permlink](permlink), [posted](posted), [title](title).
 
 ### Version 4.7.0
 
-`breakby` attribute added.
+`break` attribute deprecated in favour of `separator`.
 
 ### Version 4.0.6
 
