@@ -41,7 +41,7 @@ The method of enabling PHP-FPM extensions varies between versions of PHP-FPM and
 
 Modifications to the NGINX server block are needed as directives in `.htaccess` are ignore and not processed by NGINX. Take the following barebones example NGINX server block:
 
-```
+```nginxconf
 server {
   listen [::]:80;
   listen 80;
