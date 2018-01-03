@@ -19,14 +19,18 @@ The article's scope extends to the functional requirements of configuring Textpa
 
 ### Apache, MySQL, PHP
 
-Textpattern runs faster on current, mainline versions of Apache, MySQL and PHP than end-of-life'd legacy versions.
+Textpattern runs faster on current mainline versions of Apache, MySQL and PHP than end-of-life'd legacy versions. Typically, an existing production Apache web server with MySQL (or equivalent drop-in replacement) and PHP with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
+
+The method of enabling PHP extensions varies between versions of PHP and Apache, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
+
+Textpattern-specific directives are provided by `.htaccess` in the root directory and other locations within the file tree. It is important to upload this file if your web server runs Apache as it's essentially direct instructions for the web server to work in a specific way. The root `.htaccess` file controls, among other things, clean URLs.
 
 ### NGINX, MySQL, PHP
 
-Textpattern runs faster on current, mainline versions of NGINX, MySQL and PHP than end-of-life'd legacy versions.
+Textpattern runs faster on current mainline versions of NGINX, MySQL and PHP than end-of-life'd legacy versions.
 
 ## Unsupported environments
 
-* {WIP}
-* {WIP}
-* {WIP}
+* (WIP)
+* (WIP)
+* (WIP)
