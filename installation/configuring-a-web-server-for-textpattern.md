@@ -39,7 +39,7 @@ Textpattern runs faster on current mainline versions of NGINX, MySQL and PHP tha
 
 The method of enabling PHP-FPM extensions varies between versions of PHP-FPM and NGINX, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
 
-Modifications to the NGINX server block are needed as directives in `.htaccess` are ignore and not processed by NGINX. Take the following example NGINX server block with PHP-FPM:
+Modifications to the NGINX server block may be required as directives in `.htaccess` are ignored and not processed by NGINX. Take the following example NGINX server block with PHP-FPM:
 
 ```nginxconf
 upstream php-fpm {
