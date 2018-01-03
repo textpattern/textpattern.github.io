@@ -37,6 +37,8 @@ Textpattern-specific directives are provided by `.htaccess` in the root director
 
 Textpattern runs faster on current mainline versions of NGINX, MySQL and PHP than end-of-life'd legacy versions.
 
+(WIP)
+
 ## Unsupported environments
 
 * (WIP)
