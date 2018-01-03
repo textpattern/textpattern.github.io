@@ -288,7 +288,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [search input](search_input)
 * [search result count](search_result_count)
 * [search result date](search_result_date)
-* [search result excerpt](search_result_excerpt)
+* [search result excerpt](search_result_excerpt) <span class="footnote warning">**Modified v4.7.0**</span>
 * [search result title](search_result_title)
 * [search result url](search_result_url)
 * [search term](search_term)
