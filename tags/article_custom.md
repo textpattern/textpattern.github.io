@@ -158,7 +158,7 @@ Each field in the `textpattern` database table can be used as a sort key.
 
 `time="time"` <span class="footnote warning">v4.7.0+</span>
 : Restrict to articles posted within specified timeframe.
-: **Values:** `past`, `future`, `any` (both `past` and `future`) or a specific date. In the latter case, `time` will be considered as the end date of the interval started by `month` or `expired` attribute.
+: **Values:** `past`, `future`, `any` (both `past` and `future`) or a [PHP-compatible date format](https://secure.php.net/manual/en/datetime.formats.php). In the latter case, `time` will be considered as the end date of the interval started by `month` or `expired` attribute.
 : **Default:** `past`.
 
 ### Common presentational attributes
