@@ -17,11 +17,11 @@ The article's scope extends to the functional requirements of configuring Textpa
 * [Apache, MySQL, PHP](#apache-mysql-php)
 * [NGINX, MySQL, PHP](#nginx-mysql-php)
 
-### Apache, MySQL and PHP
+### Apache, MySQL, PHP
 
 Lorem ipsum etc.
 
-### NGINX, MySQL and PHP
+### NGINX, MySQL, PHP
 
 Lorem ipsum etc.
 
