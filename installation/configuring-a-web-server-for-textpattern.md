@@ -73,4 +73,4 @@ server {
 }
 ```
 
-This `server` block recreates the directives set in `.htaccess` in an NGINX-native format and can be used as a base for your Textpattern site.
+This `server` block includes a basic web hosting setup and translates the Apache-specific directives in `.htaccess` to an NGINX-native format. It can be used as a base for your Textpattern site.
