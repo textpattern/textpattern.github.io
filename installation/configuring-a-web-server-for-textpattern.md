@@ -56,7 +56,7 @@ server {
     deny all;
   }
   location / {
-    index index.html index.htm index.php;
+    index index.php;
     try_files $uri $uri/ /index.php?$args;
   }
   location ~ \.php$ {
