@@ -58,7 +58,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `name="image name"`
 : Specifies which image thumbnail to display by its image name as shown on the Textpattern [Images panel](https://docs.textpattern.io/administration/images-panel).
 
-`poplink="boolean"`
+`poplink="boolean"` (Deprecated from version 4.7.0)
 : If set, the image will be rendered in a popup window.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
@@ -103,6 +103,10 @@ Displays the image thumbnail for the image uploaded as ID #23.
 Displays thumbnails for all images found by the [images](images) tag.
 
 ## Genealogy
+
+### Version 4.7.0
+
+`poplink` attribute deprecated.
 
 ### Version 4.3.0
 
