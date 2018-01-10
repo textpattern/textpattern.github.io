@@ -80,7 +80,7 @@ function getData(indexVar) {
         this.field('author');
         loaded_data.forEach(function (doc, index) {
           if ( doc.search_omit != 'true' ) {
-            console.log('adding to index: ' + doc.title);
+//            console.log('adding to index: ' + doc.title);
             this.add($.extend({ 'id': index }, doc));
           }
         }, this)
@@ -109,7 +109,7 @@ function getData(indexVar) {
  */
 function getResults(q) {
   var savedIndexData = JSON.parse(sessionStorage.getItem('lunrIndex'));
-  console.log('Indexed var from sessionStorage: ' + savedIndexData);
+//  console.log('Indexed var from sessionStorage: ' + savedIndexData);
   return lunr.Index.load(savedIndexData).search(q);
 }
 
@@ -143,7 +143,7 @@ function toggleLoadingClass() {
 function processResultData(searchResults) {
   $results = [];
 
-  console.log('Search Results: ' + searchResults);
+//  console.log('Search Results: ' + searchResults);
   var resultsCount = 0,
       results = '';
 
@@ -203,6 +203,10 @@ function populateResultContent(html, item) {
  * @return null
  */
 function populateResultsString(count) {
+  if (typeof window.history.replaceState == 'function') {
+      history.replaceState({}, '', '?q='+encodeURIComponent(q));
+  }
+
   $foundTerm.text(q);
   $foundCount.text(count);
   $foundContainer.show();

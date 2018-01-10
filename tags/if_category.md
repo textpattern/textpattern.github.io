@@ -125,7 +125,7 @@ Shows a category list and, underneath it, a list of related articles in the curr
 
 Other tags used: [category_list](category_list), [recent_articles](recent_articles).
 
-### Example 6: Check if `cat` is descendant of `animal`
+### Example 5: Check if `cat` is descendant of `animal`
 
 ~~~ html
 <txp:if_category category="cat" parent="animal">
@@ -133,7 +133,7 @@ Other tags used: [category_list](category_list), [recent_articles](recent_articl
 </txp:if_category>
 ~~~
 
-### Example 7: Check if 'anakin' is the father of 'luke'
+### Example 6: Check if 'anakin' is the father of 'luke'
 
 ~~~ html
 <txp:if_category category="luke" parent="1" name="anakin">
