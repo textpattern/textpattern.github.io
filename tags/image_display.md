@@ -41,3 +41,9 @@ This tag has no attributes.
 ~~~
 
 See the [image_index](image_index) tag documentation for details on how to populate this tag with content.
+
+## Genealogy
+
+### Version 4.7.0
+
+Tag support removed - use [image](image) tag instead.

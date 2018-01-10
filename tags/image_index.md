@@ -112,6 +112,7 @@ Other tags used: [image_display](image_display).
 ### Version 4.7.0
 
 `breakby` attribute added.
+Tag support removed - use [images](images) tag instead.
 
 ### Version 4.3.0
 
