@@ -15,6 +15,7 @@ On this page:
 * [Syntax](#syntax)
 * [Attributes](#attributes)
 * [Examples](#examples)
+* [Genealogy](#genealogy)
 
 ## Syntax
 

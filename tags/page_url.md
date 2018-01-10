@@ -33,24 +33,24 @@ Tag will accept the following attributes (**case-sensitive**):
 : The default value if no component of the current page's URL matches the `type` attribute.
 : **Default:** unset.
 
-`type="type"`
+`type="type"` <span class="footnote warning">v4.7.0+</span>
 : Specifies which component of the current page's URL will be returned.
 : **Values:** \\
-`request_uri`: current article's URL-title including any query string. \\
-`id`: current article's id on a single article page. \\
-`s`: current page's section. \\
-`c`: current page's category. \\
-`q`: search query string. \\
-`pg`: current page number in article list mode. \\
-`month`: current page's month on time based article lists. \\
 `author`: current page's author on article lists filtered by author. \\
-`status`: HTTP error response (200, 404). \\
+`c`: current page's category. \\
 `css`: current style sheet name. \\
-`page`: current page template name.\\
-`images_root`: images directory URL.\\
-`themes_root`: themes directory URL.\\
-`theme_path`: current theme directory URL.\\
-`theme`: current theme name.\\
+`id`: current article's id on a single article page. \\
+`images_root`: images directory URL. \\
+`month`: current page's month on time based article lists. \\
+`page`: current page template name. \\
+`pg`: current page number in article list mode. \\
+`q`: search query string. \\
+`request_uri`: current article's URL-title including any query string. \\
+`s`: current page's section. \\
+`status`: HTTP error response (200, 404). \\
+`theme`: current theme name. \\
+`theme_path`: current theme directory URL. \\
+`themes_root`: themes directory URL.
 : **Default:** `request_uri`.
 
 Any other `type` value will return the matching URL component or the `default` value that will always be **sanitized**. <span class="footnote warning">v4.7.0+</span>
@@ -124,4 +124,5 @@ This would result in the following, for example:
 ### Version 4.7.0
 
 `type` attribute behaviour changes (value will always be sanitized). \\
+`images_root`, `theme`, `theme_path` and `themes_root` values allowed for `type` attribute. \\
 `default` attribute added.
