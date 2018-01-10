@@ -81,7 +81,39 @@ This would result in the following, for example:
 </p>
 ~~~
 
-### Example 2: Return the sanitized value of some URL component
+### Example 2: Show the current theme's name and path
+
+~~~ html
+<p>
+    Using theme '<txp:page_url type="theme" />' located in <code><txp:page_url type="theme_path" /></code>
+</p>
+~~~
+
+This would result in the following, for example:
+
+~~~ html
+<p>
+    Using theme 'four-point-seven' located in <code>https://example.com/themes/four-point-seven</code>
+</p>
+~~~
+
+### Example 3: Show the website's image and themes directories
+
+~~~ html
+<p>
+    Site images are located in <code><txp:page_url type="images_root" /></code> and themes are located in <code><txp:page_url type="themes_root" /></code>.
+</p>
+~~~
+
+This would result in the following, for example:
+
+~~~ html
+<p>
+    Site images are located in <code>https://example.com/images</code> and themes are located in <code>https://example.com/themes/</code>.
+</p>
+~~~
+
+### Example 4: Return the sanitized value of some URL component
 
 ~~~ html
 <txp:page_url type="lang" default="en" />
