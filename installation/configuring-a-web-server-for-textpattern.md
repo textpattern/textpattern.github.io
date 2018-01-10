@@ -1,9 +1,9 @@
 ---
 layout: document
 category: Installation
-published: false
+published: true
 title: Configuring a web server for Textpattern.
-description: (WIP, @petecooper January 2018)
+description: This article offers guidance and tips for administrators wishing to install Textpattern to both supported web server platforms and other, unsupported web servers.
 ---
 
 # Configuring a web server for Textpattern
