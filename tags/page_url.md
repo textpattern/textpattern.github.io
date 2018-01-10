@@ -46,7 +46,11 @@ Tag will accept the following attributes (**case-sensitive**):
 `author`: current page's author on article lists filtered by author. \\
 `status`: HTTP error response (200, 404). \\
 `css`: current style sheet name. \\
-`page`: current page template name.
+`page`: current page template name.\\
+`images_root`: images directory URL.\\
+`themes_root`: themes directory URL.\\
+`theme_path`: current theme directory URL.\\
+`theme`: current theme name.\\
 : **Default:** `request_uri`.
 
 Any other `type` value will return the matching URL component or the `default` value that will always be **sanitized**. <span class="footnote warning">v4.7.0+</span>
