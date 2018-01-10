@@ -2,8 +2,8 @@
 layout: document
 category: Tags
 published: true
-title: Image display
-description: Tag that is intended to be used in tandem with 'image_index' to produce image-based lists.
+title: Image display (Deprecated)
+description: The 'image_display' tag is deprecated - use 'image' tag instead.
 tags:
   - Image tags
 ---
