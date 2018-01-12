@@ -91,7 +91,7 @@ Create a 'misc' type form template with the name `media_video`:
 
 ~~~ html
 <div itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-    <video controls width="<txp:yield name="width" />" height="<txp:yield name="height" />"<txp:if_yield name="poster-url"> poster="<txp:yield name="poster-url" />"</txp:if_yield>>
+    <video controls width="<txp:yield name="width" default="640" />" height="<txp:yield name="height" default="480" />"<txp:if_yield name="poster-url"> poster="<txp:yield name="poster-url" />"</txp:if_yield>>
         <source itemprop="contentUrl" type="video/mp4" src="<txp:yield name="mp4-url" />">
         <source itemprop="contentUrl" type="video/webm" src="<txp:yield name="webm-url" />">
     </video>
@@ -106,7 +106,7 @@ Create a 'misc' type form template with the name `media_video`:
 This can now be called from within an article using the shortcode format:
 
 ~~~ html
-<txp::media_video width="" height="" mp4-url="" webm-url="" poster-url="" name="" description="" duration-seconds=""/>
+<txp::media_video width="" height="" mp4-url="" webm-url="" poster-url="" name="" description="" duration-seconds="" />
 ~~~
 
 `poster-url`, `name`, `description` and `duration-seconds` are optional for users, but if provided display valid Schema.org microdata.
@@ -114,10 +114,32 @@ This can now be called from within an article using the shortcode format:
 For example:
 
 ~~~ html
-<txp::media_video width="640" height="480" mp4-url="/video/example.mp4" webm-url="/video/example.webm" poster-url="/video/example.png" name="Cat video" description="My great video of cats." duration-seconds="20" />
+<txp::media_video width="720" mp4-url="/video/example.mp4" webm-url="/video/example.webm" poster-url="/video/example.png" name="Cat video" description="My great video of cats." duration-seconds="20" />
 ~~~
 
 Other tags used: [if_yield](if_yield), [posted](posted), [yield](yield).
+
+### Example 4: Using yield attribute
+
+Suppose that the form of Example 3 is called `media video`. Then it can not be called using the shortcode format:
+
+~~~ html
+<txp::media video width="" height="" ... />
+~~~
+
+because the parser will see it as `<txp:output_form form="media" />`. And if you call
+
+~~~ html
+<txp:output_form form="media video" width="" height="" ... />
+~~~
+
+the parser will complain (mainly for backward compatibility reasons) about unknown attributes `width`, `height` etc.
+
+The solution consists to call `<txp:output_form />` with `yield` attribute:
+
+~~~ html
+<txp:output_form yield form="media video" width="" height="" ... />
+~~~
 
 ## Genealogy
 
