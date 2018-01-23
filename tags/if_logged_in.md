@@ -58,7 +58,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:if_individual_article>
 ~~~
 
-Other tags used: [if_individual_article](if_individual_article), [site_url](site_url), [article_id](article_id).
+Other tags used: [article_id](article_id), [if_individual_article](if_individual_article), [site_url](site_url).
 
 ## Genealogy
 

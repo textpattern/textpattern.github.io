@@ -413,6 +413,7 @@ Used to format content for display. See [Form templates](https://docs.textpatter
 <div class="layout-text4col">
 
 * [authors](authors)
+* [if_logged_in](if_logged_in)
 
 </div>
 
@@ -715,6 +716,7 @@ See [Form templates](https://docs.textpattern.io/themes/form-templates-explained
 * [if_author](if_author)
 * [if_category](if_category)
 * [if_custom_field](if_custom_field)
+* [if_logged_in](if_logged_in)
 * [if_plugin](if_plugin)
 * [if_section](if_section)
 * [if_variable](if_variable)

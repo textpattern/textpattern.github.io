@@ -41,12 +41,12 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [article](article) <span class="footnote warning">**Modified v4.7.0**</span>
-* [article custom](article_custom) <span class="footnote warning">**Modified v4.7.0**</span>
-* [article id](article_id)
-* [article image](article_image)
-* [article url title](article_url_title)
+* [article_custom](article_custom) <span class="footnote warning">**Modified v4.7.0**</span>
+* [article_id](article_id)
+* [article_image](article_image)
+* [article_url_title](article_url_title)
 * [author](author)
-* [author email](author_email)
+* [author_email](author_email)
 * [authors](authors)
 
 </div>
@@ -65,33 +65,33 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [category](category)
-* [category list](category_list) <span class="footnote warning">**Modified v4.7.0**</span>
+* [category_list](category_list) <span class="footnote warning">**Modified v4.7.0**</span>
 * [category1](category1)
 * [category2](category2)
-* [comment anchor](comment_anchor)
-* [comment email](comment_email)
-* [comment email input](comment_email_input)
-* [comment id](comment_id)
-* [comment message](comment_message)
-* [comment message input](comment_message_input)
-* [comment name](comment_name)
-* [comment name input](comment_name_input)
-* [comment permlink](comment_permlink)
-* [comment preview](comment_preview)
-* [comment remember](comment_remember)
-* [comment submit](comment_submit)
-* [comment time](comment_time)
-* [comment web](comment_web)
-* [comment web input](comment_web_input)
+* [comment_anchor](comment_anchor)
+* [comment_email](comment_email)
+* [comment_email_input](comment_email_input)
+* [comment_id](comment_id)
+* [comment_message](comment_message)
+* [comment_message_input](comment_message_input)
+* [comment_name](comment_name)
+* [comment_name_input](comment_name_input)
+* [comment_permlink](comment_permlink)
+* [comment_preview](comment_preview)
+* [comment_remember](comment_remember)
+* [comment_submit](comment_submit)
+* [comment_time](comment_time)
+* [comment_web](comment_web)
+* [comment_web_input](comment_web_input)
 * [comments](comments)
-* [comments count](comments_count)
-* [comments error](comments_error)
-* [comments form](comments_form)
-* [comments help](comments_help)
-* [comments invite](comments_invite)
-* [comments preview](comments_preview)
+* [comments_count](comments_count)
+* [comments_error](comments_error)
+* [comments_form](comments_form)
+* [comments_help](comments_help)
+* [comments_invite](comments_invite)
+* [comments_preview](comments_preview)
 * [css](css)
-* [custom field](custom_field)
+* [custom_field](custom_field)
 
 </div>
 
@@ -101,8 +101,8 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 * [else](else)
 * [email](email)
-* [error message](error_message)
-* [error status](error_status)
+* [error_message](error_message)
+* [error_status](error_status)
 * [evaluate](evaluate) <span class="footnote warning">**New v4.7.0**</span>
 * [excerpt](excerpt)
 * [expires](expires)
@@ -113,19 +113,19 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [feed link](feed_link)
-* [file download](file_download)
-* [file download author](file_download_author)
-* [file download category](file_download_category)
-* [file download created](file_download_created)
-* [file download description](file_download_description)
-* [file download downloads](file_download_downloads)
-* [file download id](file_download_id)
-* [file download link](file_download_link)
-* [file download list](file_download_list)
-* [file download modified](file_download_modified)
-* [file download name](file_download_name)
-* [file download size](file_download_size)
+* [feed_link](feed_link)
+* [file_download](file_download)
+* [file_download_author](file_download_author)
+* [file_download_category](file_download_category)
+* [file_download_created](file_download_created)
+* [file_download_description](file_download_description)
+* [file_download_downloads](file_download_downloads)
+* [file_download_id](file_download_id)
+* [file_download_link](file_download_link)
+* [file_download_list](file_download_list)
+* [file_download_modified](file_download_modified)
+* [file_download_name](file_download_name)
+* [file_download_size](file_download_size)
 
 </div>
 
@@ -142,55 +142,56 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [if article author](if_article_author)
-* [if article category](if_article_category)
-* [if article id](if_article_id)
-* [if article image](if_article_image)
-* [if article list](if_article_list)
-* [if article section](if_article_section)
-* [if author](if_author)
-* [if category](if_category) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if comments](if_comments)
-* [if comments allowed](if_comments_allowed)
-* [if comments disallowed](if_comments_disallowed)
-* [if comments error](if_comments_error)
-* [if comments preview](if_comments_preview)
-* [if custom field](if_custom_field)
-* [if description](if_description)
-* [if different](if_different)
-* [if excerpt](if_excerpt)
-* [if expired](if_expired)
-* [if expires](if_expires)
-* [if first article](if_first_article)
-* [if first category](if_first_category)
-* [if first file](if_first_file)
-* [if first image](if_first_image)
-* [if first link](if_first_link)
-* [if first section](if_first_section)
-* [if individual article](if_individual_article)
-* [if keywords](if_keywords)
-* [if last article](if_last_article)
-* [if last category](if_last_category)
-* [if last file](if_last_file)
-* [if last image](if_last_image)
-* [if last link](if_last_link)
-* [if last section](if_last_section)
-* [if plugin](if_plugin)
-* [if search](if_search)
-* [if search results](if_search_results)
-* [if section](if_section)
-* [if status](if_status)
-* [if thumbnail](if_thumbnail)
-* [if variable](if_variable)
-* [if yield](if_yield) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_article_author](if_article_author)
+* [if_article_category](if_article_category)
+* [if_article_id](if_article_id)
+* [if_article_image](if_article_image)
+* [if_article_list](if_article_list)
+* [if_article_section](if_article_section)
+* [if_author](if_author)
+* [if_category](if_category) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_comments](if_comments)
+* [if_comments_allowed](if_comments_allowed)
+* [if_comments_disallowed](if_comments_disallowed)
+* [if_comments_error](if_comments_error)
+* [if_comments_preview](if_comments_preview)
+* [if_custom_field](if_custom_field)
+* [if_description](if_description)
+* [if_different](if_different)
+* [if_excerpt](if_excerpt)
+* [if_expired](if_expired)
+* [if_expires](if_expires)
+* [if_first_article](if_first_article)
+* [if_first_category](if_first_category)
+* [if_first_file](if_first_file)
+* [if_first_image](if_first_image)
+* [if_first_link](if_first_link)
+* [if_first_section](if_first_section)
+* [if_individual_article](if_individual_article)
+* [if_keywords](if_keywords)
+* [if_last_article](if_last_article)
+* [if_last_category](if_last_category)
+* [if_last_file](if_last_file)
+* [if_last_image](if_last_image)
+* [if_last_link](if_last_link)
+* [if_last_section](if_last_section)
+* [if_logged_in](if_logged_in) <span class="footnote warning">**New v4.7.0**</span>
+* [if_plugin](if_plugin)
+* [if_search](if_search)
+* [if_search_results](if_search_results)
+* [if_section](if_section)
+* [if_status](if_status)
+* [if_thumbnail](if_thumbnail)
+* [if_variable](if_variable)
+* [if_yield](if_yield) <span class="footnote warning">**Modified v4.7.0**</span>
 * [image](image)
-* [image author](image_author)
-* [image date](image_date)
-* [image display](image_display)
-* [image index](image_index)
-* [image info](image_info)
-* [image list](image_list) <span class="footnote error">**Deprecated**</span>
-* [image url](image_url)
+* [image_author](image_author)
+* [image_date](image_date)
+* [image_display](image_display)
+* [image_index](image_index)
+* [image_info](image_info)
+* [image_list](image_list) <span class="footnote error">**Deprecated**</span>
+* [image_url](image_url)
 * [images](images)
 
 </div>
@@ -209,17 +210,17 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 * [lang](lang)
 * [link](link)
-* [link author](link_author)
-* [link category](link_category)
-* [link date](link_date)
-* [link description](link_description)
-* [link feed link](link_feed_link)
-* [link id](link_id)
-* [link name](link_name)
-* [link to home](link_to_home)
-* [link to next](link_to_next)
-* [link to prev](link_to_prev)
-* [link url](link_url)
+* [link_author](link_author)
+* [link_category](link_category)
+* [link_date](link_date)
+* [link_description](link_description)
+* [link_feed_link](link_feed_link)
+* [link_id](link_id)
+* [link_name](link_name)
+* [link_to_home](link_to_home)
+* [link_to_next](link_to_next)
+* [link_to_prev](link_to_prev)
+* [link_url](link_url)
 * [linkdesctitle](linkdesctitle)
 * [linklist](linklist)
 
@@ -229,9 +230,9 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [meta author](meta_author)
-* [meta description](meta_description)
-* [meta keywords](meta_keywords)
+* [meta_author](meta_author)
+* [meta_description](meta_description)
+* [meta_keywords](meta_keywords)
 * [modified](modified)
 
 </div>
@@ -241,7 +242,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [newer](newer)
-* [next title](next_title)
+* [next_title](next_title)
 
 </div>
 
@@ -250,7 +251,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [older](older)
-* [output form](output_form) <span class="footnote warning">**Modified v4.7.0**</span>
+* [output_form](output_form) <span class="footnote warning">**Modified v4.7.0**</span>
 
 </div>
 
@@ -258,15 +259,15 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [page title](page_title)
-* [page url](page_url) <span class="footnote warning">**Modified v4.7.0**</span>
-* [password protect](password_protect)
+* [page_title](page_title)
+* [page_url](page_url) <span class="footnote warning">**Modified v4.7.0**</span>
+* [password_protect](password_protect)
 * [permlink](permlink)
 * [php](php)
 * [popup](popup)
 * [popup_comments](popup_comments)
 * [posted](posted)
-* [prev title](prev_title)
+* [prev_title](prev_title)
 
 </div>
 
@@ -274,9 +275,9 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [recent articles](recent_articles)
-* [recent comments](recent_comments)
-* [related articles](related_articles)
+* [recent_articles](recent_articles)
+* [recent_comments](recent_comments)
+* [related_articles](related_articles)
 * [rsd](rsd) <span class="footnote error">**Deprecated**</span>
 
 </div>
@@ -285,18 +286,18 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [search input](search_input)
-* [search result count](search_result_count)
-* [search result date](search_result_date)
-* [search result excerpt](search_result_excerpt) <span class="footnote warning">**Modified v4.7.0**</span>
-* [search result title](search_result_title)
-* [search result url](search_result_url)
-* [search term](search_term)
+* [search_input](search_input)
+* [search_result_count](search_result_count)
+* [search_result_date](search_result_date)
+* [search_result_excerpt](search_result_excerpt) <span class="footnote warning">**Modified v4.7.0**</span>
+* [search_result_title](search_result_title)
+* [search_result_url](search_result_url)
+* [search_term](search_term)
 * [section](section)
-* [section list](section_list)
-* [site name](site_name)
-* [site slogan](site_slogan)
-* [site url](site_url) <span class="footnote warning">**Modified v4.7.0**</span>
+* [section_list](section_list)
+* [site_name](site_name)
+* [site_slogan](site_slogan)
+* [site_url](site_url) <span class="footnote warning">**Modified v4.7.0**</span>
 
 </div>
 
@@ -307,7 +308,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [text](text)
 * [thumbnail](thumbnail)
 * [title](title)
-* [txp die](txp_die)
+* [txp_die](txp_die)
 
 </div>
 

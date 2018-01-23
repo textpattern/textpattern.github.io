@@ -19,5 +19,6 @@ If you wish to write the documentation for new tags in preparation for the next 
 
 ## New tags
 
-* [evaluate](evaluate).
-* [header](header).
+* [evaluate](evaluate)
+* [header](header)
+* [if_logged_in](if_logged_in)
