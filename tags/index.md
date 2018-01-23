@@ -296,7 +296,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [section list](section_list)
 * [site name](site_name)
 * [site slogan](site_slogan)
-* [site url](site_url)
+* [site url](site_url) <span class="footnote warning">**Modified v4.7.0**</span>
 
 </div>
 
