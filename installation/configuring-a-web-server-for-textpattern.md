@@ -8,14 +8,14 @@ description: This article offers guidance and tips for administrators wishing to
 
 # Configuring a web server for Textpattern
 
-Textpattern CMS is supported on any web server that supports PHP, MySQL and either Apache or NGINX. While other web server platforms are suitable for housing a Textpattern instance, additional considerations should be made for the web hosting server environment. This article offers guidance and tips for administrators wishing to install Textpattern to both supported web server platforms and other, unsupported web servers.
+Textpattern CMS is supported on any web server that supports PHP, MySQL and either Apache or Nginx. While other web server platforms are suitable for housing a Textpattern instance, additional considerations should be made for the web hosting server environment. This article offers guidance and tips for administrators wishing to install Textpattern to both supported web server platforms and other, unsupported web servers.
 
 The article's scope extends to the functional requirements of installing Textpattern on a existing production web server. It does not focus on installation of the web server software itself, security procedures for a production server or performance optimisations.
 
 ## Supported environments
 
 * [Apache, MySQL, PHP](#apache-mysql-php)
-* [NGINX, MySQL, PHP-FPM](#nginx-mysql-php-fpm)
+* [Nginx, MySQL, PHP-FPM](#nginx-mysql-php-fpm)
 
 ### Apache, MySQL, PHP
 
@@ -35,11 +35,11 @@ Textpattern-specific directives are provided by `.htaccess` in the root director
 
 ### NGINX, MySQL, PHP-FPM
 
-Textpattern runs faster on current mainline versions of NGINX, MySQL and PHP than end-of-life'd legacy versions. Typically, an existing production NGINX web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
+Textpattern runs faster on current mainline versions of Nginx, MySQL and PHP than end-of-life'd legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
 
-The method of enabling PHP-FPM extensions varies between versions of PHP-FPM and NGINX, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
+The method of enabling PHP-FPM extensions varies between versions of PHP-FPM and Nginx, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
 
-Modifications to the NGINX server block may be required as directives in `.htaccess` are ignored and not processed by NGINX. Take the following example NGINX `server` configuration with `upstream`'d' PHP-FPM:
+Modifications to the Nginx server block may be required as directives in `.htaccess` are ignored and not processed by Nginx. Take the following example NGINX `server` configuration with `upstream`'d' PHP-FPM:
 
 ```nginxconf
 upstream php-fpm {
@@ -73,4 +73,4 @@ server {
 }
 ```
 
-This `server` block includes a basic web hosting setup and translates the Apache-specific directives in `.htaccess` to an NGINX-native format. It can be used as a base for your Textpattern site.
+This `server` block includes a basic web hosting setup and translates the Apache-specific directives in `.htaccess` to an Nginx-native format. It can be used as a base for your Textpattern site.
