@@ -26,7 +26,11 @@ The **site_url** tag is a *single* tag which returns the full URL of the site (a
 
 ## Attributes
 
-This tag has no attributes.
+Tag will accept the following attribute (**case-sensitive**):
+
+`type="admin"` <span class="footnote warning">v4.7.0+</span>
+: Specify this if you wish to return the URL to the admin-side instead of the public site.
+: **Default:** unset.
 
 ## Examples
 
@@ -60,3 +64,15 @@ In the `<head>` section of your HTML pages you might have a variety of links to 
 ~~~ html
 <a href="<txp:site_url />download.zip">Download</a>
 ~~~
+
+### Example 4: Link to the admin side
+
+~~~ html
+<a href="<txp:site_url type="admin" />">Login to Textpattern here</a>
+~~~
+
+## Genealogy
+
+### Version 4.7.0
+
+`type` attribute added.
