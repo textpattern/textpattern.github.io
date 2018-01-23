@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: If logged in
-description: The if_logged_in tag will execute the contained statements if TODO.
+description: The if_logged_in tag will execute the contained statements if the current or given user is logged in and optionally a member of the given role.
 tags:
   - Conditional tags
 ---
@@ -27,30 +27,38 @@ The **if_logged_in** tag is a *conditional* tag and always used as an opening an
 
 ~~~ html
 <txp:if_logged_in>
-    ...conditional statement...
+    ...content to show if logged in...
 </txp:if_logged_in>
 ~~~
 
-The tag will execute the contained statements if TODO.
+The tag will execute the contained statements if the current or given user is logged in and optionally a member of the given role.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
 `group="user group"`
-: Comma-separated list of user groups (publishing roles that the authors belong to).
-: **Values:** `publisher`, `managing_editor`, `copy_editor`, `staff_writer`, `freelancer`, `designer`, `privs_none` or integer(s).
-: **Default:** unset, retrieves from all groups.
+: Comma-separated list of user groups (publishing roles that the author belongs to).
+: **Values:** `publisher`, `managing_editor`, `copy_editor`, `staff_writer`, `freelancer`, `designer`, `privs_none` or corresponding integer(s).
+: **Default:** unset, the user may be assigned to any group.
 
 `name="author"`
-: Comma-separated list of author names.
+: Author name to test.
 : **Default:** current user (i.e. if *anyone* is logged in).
 
 ## Examples
 
-### Example 1: TODO
+### Example 1: Display an 'Edit this article' link for logged-in users
 
-TODO
+~~~ html
+<txp:if_individual_article>
+    <txp:if_logged_in>
+        <a href="<txp:site_url type="admin" />?event=article&step=edit&ID=<txp:article_id />">Edit this article</a>
+    </txp:if_logged_in>
+</txp:if_individual_article>
+~~~
+
+Other tags used: [if_individual_article](if_individual_article), [site_url](site_url), [article_id](article_id).
 
 ## Genealogy
 
