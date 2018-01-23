@@ -36,6 +36,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `type="type"` <span class="footnote warning">v4.7.0+</span>
 : Specifies which component of the current page's URL will be returned.
 : **Values:** \\
+`admin_root`: current site's admin URL. \\
 `author`: current page's author on article lists filtered by author. \\
 `c`: current page's category. \\
 `css`: current style sheet name. \\
