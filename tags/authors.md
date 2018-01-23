@@ -43,8 +43,8 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `group="user group"`
-: Comma-separated list of user groups (publishing roles that the authors belong to.
-: **Values:** `publisher`, `managing_editor`, `copy_editor`, `staff_writer`, `freelancer`, `designer` or `privs_none`.
+: Comma-separated list of user groups (publishing roles that the authors belong to).
+: **Values:** `publisher`, `managing_editor`, `copy_editor`, `staff_writer`, `freelancer`, `designer`, `privs_none` or integer(s).
 : **Default:** unset, retrieves from all groups.
 
 `limit="integer"`
