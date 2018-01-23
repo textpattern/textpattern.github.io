@@ -33,7 +33,7 @@ Save the file as `preflight.php` or similar, and view it in a browser. If PHP is
 
 Textpattern-specific directives are provided by `.htaccess` in the root directory and other locations within the file tree. It is important to upload this file if your web server runs Apache as it's essentially direct instructions for the web server to work in a specific way. The root `.htaccess` file controls, among other things, clean URLs. Without `.htaccess`, clean URLs will not work.
 
-### NGINX, MySQL, PHP-FPM
+### Nginx, MySQL, PHP-FPM
 
 Textpattern runs faster on current mainline versions of Nginx, MySQL and PHP than end-of-life'd legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
 
