@@ -103,7 +103,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [email](email)
 * [error_message](error_message)
 * [error_status](error_status)
-* [evaluate](evaluate) <span class="footnote warning">**New v4.7.0**</span>
+* [evaluate](evaluate) <span class="footnote success">**New v4.7.0**</span>
 * [excerpt](excerpt)
 * [expires](expires)
 
@@ -133,7 +133,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [header](header) <span class="footnote warning">**New v4.7.0**</span>
+* [header](header) <span class="footnote success">**New v4.7.0**</span>
 * [hide](hide) <span class="footnote warning">**Modified v4.7.0**</span>
 
 </div>
@@ -175,7 +175,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [if_last_image](if_last_image)
 * [if_last_link](if_last_link)
 * [if_last_section](if_last_section)
-* [if_logged_in](if_logged_in) <span class="footnote warning">**New v4.7.0**</span>
+* [if_logged_in](if_logged_in) <span class="footnote success">**New v4.7.0**</span>
 * [if_plugin](if_plugin)
 * [if_search](if_search)
 * [if_search_results](if_search_results)
