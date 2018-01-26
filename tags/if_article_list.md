@@ -16,6 +16,7 @@ On this page:
 * [Syntax](#syntax)
 * [Attributes](#attributes)
 * [Examples](#examples)
+* [Genealogy](#genealogy)
 
 ## Syntax
 
@@ -38,7 +39,7 @@ The tag will execute the contained statement if an article list is being display
 Tag will accept the following attributes (**case-sensitive**):
 
 `type="list"` <span class="footnote warning">v4.7.0+</span>
-: Check whether some of Textpattern filters are set.
+: Check whether some of Textpattern’s filters are set.
 : **Values:** a comma-separated list of `author, c, context, month, pg, q, s`.
 : **Default:** unset.
 
@@ -89,3 +90,9 @@ Other tags used: [link_to_prev](link_to_prev), [link_to_next](link_to_next), [pr
 This example shows the if_article_list in combination with [else](else) to display a site's [site_name](site_name) or logo when an article list is displayed or not, respectively.
 
 Other tags used: [else](else), [site_name](site_name).
+
+## Genealogy
+
+### Version 4.7.0
+
+`type` attribute added.

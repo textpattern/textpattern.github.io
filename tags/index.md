@@ -146,7 +146,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [if_article_category](if_article_category)
 * [if_article_id](if_article_id)
 * [if_article_image](if_article_image)
-* [if_article_list](if_article_list)
+* [if_article_list](if_article_list) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_article_section](if_article_section)
 * [if_author](if_author)
 * [if_category](if_category) <span class="footnote warning">**Modified v4.7.0**</span>
