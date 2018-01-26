@@ -65,6 +65,9 @@ server {
     include fastcgi_params;
     fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 	}
+  location ^~ /themes/\.txp$ {
+    return 403;
+  }
   types {
     image/svg+xml svg svgz;
   }
