@@ -782,6 +782,7 @@ Used to invert the `true/false` parts of conditional and other tags. <span class
 <div class="layout-text4col">
 
 * [article](article)
+* [article_custom](article_custom)
 * [file_download_list](file_download_list)
 * [images](images)
 * [linklist](linklist)
@@ -812,6 +813,7 @@ Used to return pagination statistics without rendering the article list. Care mu
 <div class="layout-text4col">
 
 * [article](article)
+* [article_custom](article_custom)
 
 </div>
 
