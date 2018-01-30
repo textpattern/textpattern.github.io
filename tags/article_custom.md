@@ -312,7 +312,7 @@ Outputs articles specified by list of IDs, in the order given in the `sort` fiel
 
 ### Version 4.7.0
 
-`breakby` attribute added. \\
+`breakby`, `pageby` and `pgonly` attributes added. \\
 `exclude`, `expired`, `month` and `time` attributes modified.
 
 ### Version 4.6.0
