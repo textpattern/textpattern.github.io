@@ -123,6 +123,15 @@ Tag will accept the following attributes (**case-sensitive**):
 : The number of articles to skip.
 : **Default:** `0`.
 
+`pageby="integer"` <span class="footnote warning">v4.7.0+</span>
+: The number of articles to output per page.
+: **Default:** value matches the value assigned to `limit`.
+
+`pgonly="boolean"`
+: Output the article count.
+: **Values:** `0` (no) or `1` (yes).
+: **Default:** `0`.
+
 `section="section name"`
 : Restrict to articles from specified section(s).
 : **Values:** (comma separated list of) section name(s).
