@@ -127,8 +127,8 @@ Tag will accept the following attributes (**case-sensitive**):
 : The number of articles to output per page.
 : **Default:** value matches the value assigned to `limit`.
 
-`pgonly="boolean"`
-: Output the article count.
+`pgonly="boolean"` <span class="footnote warning">v4.7.0+</span>
+: Output the number of pages.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
 
