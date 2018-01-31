@@ -29,10 +29,18 @@ The **image_author** tag is a *single* tag that Textpattern will replace with th
 
 Tag will accept the following attributes (**case-sensitive**):
 
+`id="integer"`
+: Specifies which image to query by its image `id` as shown on the [Images panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
+: **Default:** unset.
+
 `link="link type (boolean)"`
 : Whether to hyperlink the author or not.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
+
+`name="image name"`
+: Specifies which image to query by its image `name` as shown on the [Images panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
+: **Default:** unset.
 
 `section="section name"`
 : Direct any linked author name to the nominated section instead of to the default (front) page.
