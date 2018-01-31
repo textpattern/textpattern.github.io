@@ -104,6 +104,10 @@ Other tags used: [images](images), [thumbnail](thumbnail).
 
 ## Genealogy
 
+### Version 4.7.0
+
+Added `id` and `name` attributes.
+
 ### Version 4.3.0
 
 Tag support added.
