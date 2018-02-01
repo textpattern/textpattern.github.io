@@ -185,7 +185,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [if_variable](if_variable)
 * [if_yield](if_yield) <span class="footnote warning">**Modified v4.7.0**</span>
 * [image](image)
-* [image_author](image_author)
+* [image_author](image_author) <span class="footnote warning">**Modified v4.7.0**</span>
 * [image_date](image_date)
 * [image_display](image_display)
 * [image_index](image_index)

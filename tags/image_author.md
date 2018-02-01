@@ -29,7 +29,7 @@ The **image_author** tag is a *single* tag that Textpattern will replace with th
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`id="integer"`
+`id="integer"` <span class="footnote warning">v4.7.0+</span>
 : Specifies which image to query by its image `id` as shown on the [Images panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
 : **Default:** unset.
 
@@ -38,7 +38,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
 
-`name="image name"`
+`name="image name"` <span class="footnote warning">v4.7.0+</span>
 : Specifies which image to query by its image `name` as shown on the [Images panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
 : **Default:** unset.
 
@@ -106,7 +106,7 @@ Other tags used: [images](images), [thumbnail](thumbnail).
 
 ### Version 4.7.0
 
-Added `id` and `name` attributes.
+`id` and `name` attributes added.
 
 ### Version 4.3.0
 
