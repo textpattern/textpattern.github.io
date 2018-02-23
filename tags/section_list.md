@@ -137,7 +137,7 @@ Adds the label 'Sections' and wraps the output in a paragraph with each section 
 
 ~~~ html
 <txp:section_list wraptag="ul" break="">
-    <li<txp:if_section name='<txp:section />'> class="active"></txp:if_section>>
+    <li<txp:if_section name='<txp:section />'> class="active"</txp:if_section>>
         <txp:section title="1" link="1" />
     </li>
 </txp:section_list>
