@@ -27,7 +27,7 @@ On this panel you perform two main actions:
 1. Create a new theme, import it from an uploaded folder and edit existing ones.
 2. List and manage your existing themes
 
-## How do sections apply to Textpattern?
+## How do themes apply to Textpattern?
 
 Themes essentially provide the ability to group pages, forms and styles.
 A theme is in use as a soon as one of its page and stylesheet are associated with a section.
@@ -79,7 +79,7 @@ Beneath the 'Create section' button and search area there is the table, or list,
 
 TODO
 
-### Perform changes on selected links
+### Perform changes on selected themes
 
 In the first column you will find a checkbox for each theme. Here you can select sections you want to change in a bulk manner. You can mark sections by checking the checkbox or you can use the checkbox in the head bar of the list to mark all sections on that page.
 
