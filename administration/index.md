@@ -81,7 +81,7 @@ From Textpattern 4.6 onwards, when the "Accept comments?" preference is set to "
 
 ### Presentation
 
-The **Presentation** region of the administration side has four panels out-of-the-box, of which the **Pages** panel is the default.
+The **Presentation** region of the administration side has five panels out-of-the-box, of which the **Pages** panel is the default.
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
@@ -92,6 +92,10 @@ The **Presentation** region of the administration side has four panels out-of-th
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <th scope="row"><a href="https://docs.textpattern.io/administration/themes-panel"><strong>Themes (from v4.7)</strong></a></th>
+                <td>A table listing of themes and functionality to create and manage them.</td>
+            </tr>
             <tr>
                 <th scope="row"><a href="https://docs.textpattern.io/administration/sections-panel"><strong>Sections</strong></a></th>
                 <td>A table listing of sections and functionality to create and manage them.</td>
