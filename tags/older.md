@@ -43,6 +43,10 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `html` or unset.
 : **Default:** `html`.
 
+`rel="text"` <span class="footnote warning">v4.7.0+</span>
+: [HTML rel attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) to be applied to link.
+: **Default:** unset.
+
 `showalways="boolean"`
 : Show wrapped value even when no older page exists.
 : **Values:** `0` (no) or `1` (yes).
@@ -57,7 +61,7 @@ Tag will accept the following attributes (**case-sensitive**):
 ### Example 1: Container tag - link with text
 
 ~~~ html
-<txp:older>Older</txp:older>
+<txp:older rel="next">Older</txp:older>
 ~~~
 
 ### Example 2: Single tag - link with image
@@ -83,6 +87,10 @@ The difference between examples 2 and 3 is that the tags in example 2 will displ
 Other tags used: [image](image).
 
 ## Genealogy
+
+### Version 4.7.0
+
+`rel` attribute added.
 
 ### Version 4.3.0
 
