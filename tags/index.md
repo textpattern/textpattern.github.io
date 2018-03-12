@@ -241,7 +241,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [newer](newer)
+* [newer](newer) <span class="footnote warning">**Modified v4.7.0**</span>
 * [next_title](next_title)
 
 </div>
@@ -250,7 +250,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [older](older)
+* [older](older) <span class="footnote warning">**Modified v4.7.0**</span>
 * [output_form](output_form) <span class="footnote warning">**Modified v4.7.0**</span>
 
 </div>
