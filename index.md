@@ -52,8 +52,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 ### Themes
 
 * [Getting started with themes](https://docs.textpattern.io/themes/index.html)
-* Front-end themes
-* Admin-side themes
+* [Front-end themes](https://docs.textpattern.io/themes/front-end-themes)
+* [Admin-side themes](https://docs.textpattern.io/themes/admin-side-themes)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
 
 </div>
