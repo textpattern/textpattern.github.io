@@ -49,11 +49,12 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 <div class="layout-3col">
 <img width="200" height="200" alt="Design" src="/img/index-build.jpg" srcset="/img/index-build@2x.jpg 2x, /img/index-build.jpg 1x">
 
-### Design
+### Themes
 
-* [Theme design](https://docs.textpattern.io/themes/)
+* [Getting started with themes](https://docs.textpattern.io/themes/index.html)
 * Front-end themes
 * Admin-side themes
+* [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
 
 </div>
 <div class="layout-3col">
