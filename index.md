@@ -64,6 +64,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 * [Plugin development](https://docs.textpattern.io/development/)
 * [Textpattern source code repositories](https://docs.textpattern.io/development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
+* [Plugins website](https://github.com/textpattern/textpattern-plugins-website) (in development)
+
 
 </div>
 <div class="layout-3col">
