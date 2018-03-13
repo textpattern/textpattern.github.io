@@ -6,7 +6,7 @@ title: Admin-side themes
 description: Admin-side themes allow Textpattern administrators (and publishers) to choose a specific theme for the admin-side presentation and panels.
 ---
 
-# Admin-side themes (In progress)
+# Admin-side themes
 
 The steps for creating and using admin-side themes is still the same as they were prior to Textpattern 4.7.
 
