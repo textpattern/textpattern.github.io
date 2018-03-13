@@ -68,7 +68,7 @@ Also, by keeping everything contained in the theme folder, you can easily switch
 
 ## Future admin-side themes
 
-In the future, if you create a another admin-side theme, you can  then duplicate your own theme, or really start from scratch (a blank slate), whatever, but you’ll be better informed to succeed having initially understood the process from a core example. 
+In the future, if you create another admin-side theme, you can  duplicate your own initial theme, or really start from scratch (a blank slate). Either way, you’ll be better informed to succeed having initially understood the process from a core example. 
 
 ## Resources for the deep-divers
 
