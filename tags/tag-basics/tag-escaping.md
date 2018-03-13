@@ -24,7 +24,7 @@ Will output:
 <p>Hello, <em>world</em>!</p>
 ~~~
 
-## Available escape values TODO
+## Available escape values
 
 `escape="html"` (default)
 : Encode special HTML characters (`"'&<>`).
@@ -141,3 +141,5 @@ Create valid [JSON-LD](https://json-ld.org) for the `<head>` section of an [AMP]
   }
 </script>
 ~~~
+
+[Next: Short tags (shortcodes)](shortcodes)

@@ -15,7 +15,6 @@ On this page:
 * [Create a new article](#create-a-new-article)
 * [Search function](#search-function)
 * [List of articles](#list-of-articles)
-  * [Columns](#columns)
   * [Perform changes on selected articles](#perform-changes-on-selected-articles)
 * [Pages and articles listed per page](#pages-and-articles-listed-per-page)
 
@@ -49,39 +48,7 @@ As a default the search will find matches for all criteria. But you can do more 
 
 ## List of articles
 
-Okay, back to the list of articles! Each row is one article.
-
-To explain the *columns* going across the top: If you select the header of a column, it will sort the list of articles according to that column. Select again to reverse sort direction.
-
-### Columns
-
-The default view shows these columns:
-
-**ID:** a unique ID number is automatically assigned to each article. This is what identifies it and calls it on the live site.
-
-**Posted:** this is the date/time that the article was (or will be) published. If it shows on the live site depends on your forms. Articles to be published in the future (where you entered a timestamp manually) are shown gray instead of black.
-
-**Title:** the title of the article. Select this to edit the article.
-
-**Section:** the section that the article belongs to.
-
-**Status:** this is the status of the article. if set to Live, then this article is viewable on your live site (except if it has expired, see the [expired](https://docs.textpattern.io/tags/expires) tag. Might otherwise be set to 'Draft', 'Pending', etc.
-
-**Author:** this is the name of the person who posted the article (only if more than one author exists in the [Users panel](https://docs.textpattern.io/administration/users-panel)).
-
-At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
-
-In the ID column, two links will be added for each article: **Edit:** select this (or the title of the article) to edit the article. **View:** select this to view the particular article on the live site.
-
-**Modified:** tells when the article has recently been modified.
-
-**Expires:** if an expire date/time has been entered for an article it will be shown here.
-
-**Category 1:** if the article was assigned a category, then it will reflect that here.
-
-**Category 2:** if the article was assigned a second category, it will reflect that here.
-
-**Comments:** this will show if the article has comments turned on or off, and how many comments have been made to this article. Hidden if the commenting features are turned off globally in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
+Beneath the search area there is the table, or list, of existing articles. Each row is one article. If you select the header of a column, it will sort the list according to that column. Select again to reverse sort direction.
 
 ### Perform changes on selected articles
 

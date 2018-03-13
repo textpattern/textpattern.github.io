@@ -6,7 +6,7 @@ title: Sections panel
 description: Sections are the principle content organization mechanism in Textpattern, and the Sections panel is where you manage them.
 ---
 
-# Sections panel TODO
+# Sections panel
 
 Sections are the principle content organization mechanism in Textpattern, and the Sections panel is where you manage them.
 
@@ -19,7 +19,6 @@ On this page:
   * [Section names to avoid](#section-names-to-avoid)
 * [Search function](#search-function)
 * [List of existing sections](#list-of-existing-sections)
-  * [Columns](#columns)
   * [Perform changes on selected sections](#perform-changes-on-selected-sections)
 * [Pages and articles listed per page](#pages-and-articles-listed-per-page)
 
@@ -94,11 +93,7 @@ As a default the search will find matches for all criteria. But you can do more 
 
 ## List of existing sections
 
-Beneath the 'Create section' button and search area there is the table, or list, of existing sections. Each row is one section.
-
-### Columns
-
-TODO
+Beneath the 'Create section' button and search area there is the table, or list, of existing sections. Each row is one section. If you select the header of a column, it will sort the list according to that column. Select again to reverse sort direction.
 
 ### Perform changes on selected links
 

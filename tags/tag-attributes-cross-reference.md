@@ -264,7 +264,7 @@ In your tag, replace `customfieldname` with the actual name of the desired custo
 
 ### escape
 
-Escape HTML entities. <span class="footnote warning">**Global v4.7.0**</span>
+Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity). <span class="footnote warning">**Global v4.7.0**</span>
 
 <div class="layout-text4col">
 

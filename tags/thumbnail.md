@@ -32,7 +32,7 @@ By default, the tag is context-sensitive: if an `id` or `name` attribute is not 
 Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"` <span class="footnote warning">v4.0.4+</span>
-: Escape HTML entities such as `<`, `>` and `&` for the image's `alt` and `title` attributes.
+: Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` for the image's `alt` and `title` attributes.
 : **Values:** `html` or unset.
 : **Default:** `html`.
 

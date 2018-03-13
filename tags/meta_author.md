@@ -35,7 +35,7 @@ The **meta_author** tag is a *single* tag, used in the head of an individual art
 Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"` <span class="footnote warning">v4.6.0+</span>
-: Escape HTML entities such as `<`, `>` and `&`.
+: Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&`.
 : **Values:** `html` or unset.
 : **Default:** `html`.
 

@@ -19,7 +19,6 @@ On this page:
   * [Create thumbnail](#create-thumbnail)
 * [Search function](#search-function)
 * [List of existing images](#list-of-existing-images)
-  * [Columns](#columns)
   * [Perform changes on selected images](#perform-changes-on-selected-images)
 * [Pages and articles listed per page](#pages-and-articles-listed-per-page)
 * [Image tag builder](#image-tag-builder)
@@ -90,35 +89,7 @@ As a default the search will find matches for all criteria. But you can do more 
 
 ## List of existing images
 
-Beneath the upload and search area there is the table, or list, of existing images. Each row is one image.
-
-### Columns
-
-The default view shows these columns:
-
-**ID:** an ID number is automatically assigned to each image. This is what identifies it and calls it on the live site. Select this ID to edit the image properties.
-
-**Name:** the filename of the image. Select this to edit the images properties.
-
-**Thumbnail:** shows a thumbnail of the image, if any exists (for a better visual overview in this table it is recommended to always generate a thumbnail).
-
-**Category:** if the image was assigned a category, then it will reflect that here.
-
-**Author:** the author who created the image record (only if more than one author exists in the [Users panel](https://docs.textpattern.io/administration/users-panel)).
-
-At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
-
-In the ID column, a link will be added for each image: **View:** select this to view the actual image in a new browser window.
-
-**Date:** the date when the image record was created (normally when the image was initially uploaded).
-
-**Tags:** here you have a choice of *three ways* to include the image in your article content or Form templates:
-
-1. as a Textile(d) text
-2. as a Textpattern image tag
-3. as plain HTML
-
-Each link will open a pop-up window with a 'tag builder' ([see below](#image-tag-builder) for further details). You can choose the elements you need and an appropriate tag in Textile, Textpattern or HTML will be created. This tag you can copy and place where needed.
+Beneath the upload and search area there is the table, or list, of existing images. Each row is one image. If you select the header of a column, it will sort the list according to that column. Select again to reverse sort direction.
 
 ### Perform changes on selected images
 
@@ -132,9 +103,11 @@ At the very bottom of the list you will find a pagination and links for next and
 
 ## Image tag builder
 
-The image tag builder has several options:
+The image tag builder, selected from the **Tags** table column, has several options:
 
-**Escape HTML:** escape any HTML entities encountered in the form.
+**Type:** choose what markup type you want to build the tag in. Either Textile format, Textpattern tags or standard HTML tags.
+
+**Escape HTML:** escape any [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) encountered in the form.
 
 **HTML id attribute:** for example `gallery1`. The `id` attribute you'd like to assign to the image. In HTML this is rendered as `id="my_id"` inside the `<img>` tag.
 

@@ -19,7 +19,6 @@ On this page:
   * [Link sorting rules](#link-sorting-rules)
 * [Search function](#search-function)
 * [List of existing links](#list-of-existing-links)
-  * [Columns](#columns)
   * [Perform changes on selected links](#perform-changes-on-selected-links)
 * [Pages and links listed per page](#pages-and-links-listed-per-page)
 
@@ -93,27 +92,7 @@ As a default the search will find matches for all criteria. But you can do more 
 
 ## List of existing links
 
-Beneath the 'Create link' button and search area there is the table, or list, of existing links. Each row is one link.
-
-### Columns
-
-The default view shows these columns:
-
-**ID:** the unique ID number of the link.
-
-**Name:** the title of the link - select this to edit the link.
-
-**Category:** if the link was assigned a category, then it will reflect that here.
-
-**URL:** the actual hyperlink value of the link - select this to open the target destination in a new browser window.
-
-**Author:** the author who created the link record (only if more than one author exists in the [Users panel](https://docs.textpattern.io/administration/users-panel)).
-
-At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
-
-**Description:** what has been told about the link, its character, any recommendations.
-
-**Date:** the day and time of when this link was created.
+Beneath the 'Create link' button and search area there is the table, or list, of existing links. Each row is one link. If you select the header of a column, it will sort the list according to that column. Select again to reverse sort direction.
 
 ### Perform changes on selected links
 

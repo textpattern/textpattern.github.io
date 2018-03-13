@@ -39,7 +39,7 @@ Note: This tag is context-sensitive, meaning it will only fetch content from the
 Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"` <span class="footnote warning">v4.3.0+</span>
-: Escape HTML entities such as `<`, `>` and `&`.
+: Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&`.
 : **Values:** `html` or unset.
 : **Default:** `html`.
 

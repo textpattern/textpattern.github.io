@@ -39,7 +39,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : Default value to use when field is empty.
 
 `escape="html"`
-: Escape HTML entities such as `<`, `>` and `&` prior to echoing the field contents.
+: Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` prior to echoing the field contents.
 : **Values:** `html` or unset.
 : **Default:** `html`.
 

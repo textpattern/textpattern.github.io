@@ -33,7 +33,7 @@ Note: only language strings designated with a type of `common` or `public` are a
 Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"` <span class="footnote warning">v4.6.0+</span>
-: Escape HTML entities such as `<`, `>` and `&` within text.
+: Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` within text.
 : **Values:** `html` or unset.
 : **Default:** `html`.
 

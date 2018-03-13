@@ -19,7 +19,6 @@ On this page:
   * [File details](#file-details)
 * [Search function](#search-function)
 * [List of existing files](#list-of-existing-files)
-  * [Columns](#columns)
   * [Perform changes on selected files](#perform-changes-on-selected-files)
 * [Pages and files listed per page](#pages-and-files-listed-per-page)
 
@@ -90,41 +89,7 @@ As a default the search will find matches for all criteria. But you can do more 
 
 ## List of existing files
 
-Beneath the upload and search area there is the table, or list, of existing files. Each row is one file.
-
-### Columns
-
-The default view shows these columns:
-
-**ID:** an ID number is automatically assigned to each file. This is what identifies it and calls it on the live site. Select this ID to edit the file properties.
-
-**Name:** the filename of the image. Select this to edit the file properties.
-
-**Title:** if the file was given a title, then it will reflect that here.
-
-**Category:** if the file was assigned a category, then it will reflect that here.
-
-**Status:** the current status of the file ('Hidden', 'Pending' or 'Live').
-
-**Condition:** "OK" tells that the file is in the files folder, or "Missing".
-
-**Downloads:** an indicator of how many downloads of this file have taken place.
-
-**Author:** the author who created the file record (only if more than one author exists in the [Users panel](https://docs.textpattern.io/administration/users-panel)).
-
-At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
-
-In the ID column, a link will be added for each file: **Download:** select this to download the file to your computer.
-
-**Description:** what has to be told about the file - you needn't specify file size here (file size can be shown automatically by tags if you like).
-
-**Tags:** here you have a choice of *three ways* to include the file in your article content or Form templates:
-
-1. as a Textile(d) text
-2. as a Textpattern file tag
-3. as plain HTML
-
-Each link will open a pop-up window with a 'tag builder'. You can choose the elements you need and an appropriate tag in Textile, Textpattern or HTML will be created. This tag you can copy and place where needed.
+Beneath the upload and search area there is the table, or list, of existing files. Each row is one file. If you select the header of a column, it will sort the list according to that column. Select again to reverse sort direction.
 
 ### Perform changes on selected files
 
@@ -135,5 +100,19 @@ For performing changes now you go to the drop-down list 'With selected...' and c
 ## Pages and files listed per page
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of files listed per page by selecting another value from the number range.
+
+## File tag builder
+
+The file tag builder, selected from the **Tags** table column, has several options:
+
+**Type:** choose what markup type you want to build the tag in. Either Textile format, Textpattern tags or standard HTML tags.
+
+**Escape HTML:** escape any [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) encountered in the form.
+
+**ID#:** the `id` number of the file (as displayed in the ID# column of the files list).
+
+**Link text:** the text to be used on the link to this file - if this field is left blank, the link text will use the filename instead.
+
+**Description**: an optional short summary of the file contents.
 
 [Next: Links panel](https://docs.textpattern.io/administration/links-panel)

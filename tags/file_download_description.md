@@ -30,7 +30,7 @@ The **file_download_description** tag is a *single* tag which Textpattern will r
 Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"`
-: Escape HTML entities such as `<`, `>` and `&` for the file's `description` attributes.
+: Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` for the file's `description` attributes.
 : **Values:** `html` or unset.
 : **Default:** `html`.
 

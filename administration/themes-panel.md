@@ -6,19 +6,18 @@ title: Themes panel
 description: Themes are the principle way to group pages, forms and stylesheets.
 ---
 
-# Themes panel TODO
+# Themes panel
 
 Themes are the principle way to group pages, forms and stylesheets.
 
 On this page:
 
 * [How do themes apply to Textpattern?](#how-do-themes-apply-to-textpattern)
-* [Create a new theme](#create-a-new-theme)
-* [Import an uploaded theme](#import-an-uploaded-theme)
+* [Creating themes](#creating-themes)
+* [Importing themes](#importing-themes)
 * [Editing themes](#editing-themes)
 * [Search function](#search-function)
 * [List of existing themes](#list-of-existing-themes)
-  * [Columns](#columns)
   * [Perform changes on selected themes](#perform-changes-on-selected-themes)
 * [Pages and articles listed per page](#pages-and-themes-listed-per-page)
 
@@ -29,14 +28,13 @@ On this panel you perform two main actions:
 
 ## How do themes apply to Textpattern?
 
-Themes essentially provide the ability to group pages, forms and styles.
-A theme is in use as a soon as one of its page and stylesheet are associated with a section.
+Themes essentially provide the ability to group pages, forms and styles. A theme is in use as a soon as one of its page and stylesheet are associated with a section.
 
-## Create a new theme
+## Creating themes
 
 This button will take you to the Theme property editor where you can generate a new theme along with its properties and essential pages, forms and styles. Read the [Editing themes](#editing-themes) part for more informations about the themes properties.
 
-## Import an uploaded theme
+## Importing themes
 
 Themes import is available as far as at least one valid theme as been uploaded into the dedicated directory.
 This directory is defined through the _themes directory_ preference and is set to the site root related _themes_ directory by default.
@@ -46,7 +44,7 @@ To be valid and displayed in the themes import form, a theme must contains at le
 
 You open the Theme property editor when creating a new theme or choosing to edit an existing one. Each theme has various pieces of information associated with it, as described here:
 
-**Theme name:** the first control in the section editor panel is a text box where you type a new section name and create it. A theme renaming will also rename its related directory if it exists.
+**Theme name:** the first control in the theme editor panel is a text box where you type a new theme name and create it. A theme renaming will also rename its related directory if it exists.
 
 **Theme title:** if empty, the theme title will be set from the theme name.
 
@@ -73,22 +71,18 @@ As a default the search will find matches for all criteria. But you can do more 
 
 ## List of existing themes
 
-Beneath the 'Create section' button and search area there is the table, or list, of existing themes. Each row is one theme.
-
-### Columns
-
-TODO
+Beneath the 'Create theme' button and search area there is the table, or list, of existing themes. Each row is one theme. If you select the header of a column, it will sort the list according to that column. Select again to reverse sort direction.
 
 ### Perform changes on selected themes
 
-In the first column you will find a checkbox for each theme. Here you can select sections you want to change in a bulk manner. You can mark sections by checking the checkbox or you can use the checkbox in the head bar of the list to mark all sections on that page.
+In the first column you will find a checkbox for each theme. Here you can select themes you want to change in a bulk manner. You can mark themes by checking the checkbox or you can use the checkbox in the head bar of the list to mark all themes on that page.
 
-In order to quickly select ranges of themes select the checkbox of the first section you want to mark, press and hold the shift key, then select the checkbox of the last section in the range. All sections between will be checked too. You can add ranges to your selection by repeating these steps.
+In order to quickly select ranges of themes select the checkbox of the first theme you want to mark, press and hold the shift key, then select the checkbox of the last theme in the range. All themes between will be checked too. You can add ranges to your selection by repeating these steps.
 
 For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 
 ## Pages and themes listed per page
 
-At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of sections listed per page by selecting another value from the number range.
+At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of themes listed per page by selecting another value from the number range.
 
-[Next: Pages panel](https://docs.textpattern.io/administration/sections-panel)
+[Next: Sections panel](https://docs.textpattern.io/administration/sections-panel)

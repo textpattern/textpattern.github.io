@@ -30,7 +30,7 @@ The **author_email** tag is a *single* tag that is used to return the email addr
 Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"`
-: Escape HTML entities such as `<`, `>` and `&`.
+: Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&`.
 : **Values:** `html` or unset.
 : **Default:** `html`.
 

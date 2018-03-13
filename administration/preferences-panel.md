@@ -128,6 +128,10 @@ This is a global setting for whether or not you want to allow your articles to a
 
 The root-relative URI (without opening or closing slashes) of the directory (folder) that holds images uploaded through the [Images panel](https://docs.textpattern.io/administration/images-panel). By default this is `images`, and you only need to change this if you have renamed and/or moved this directory.
 
+### Theme directory <span class="footnote success">**New v4.7.0**</span>
+
+The relative path (file path, not URI) to the directory (folder) that holds themes uploaded through the [Themes panel](https://docs.textpattern.io/administration/themes-panel). By default this is `themes`, and you only need to change this if you have renamed and/or moved this directory.
+
 ### File directory path
 
 The full path (file path, not URI) to the directory (folder) for files uploaded via the [Files panel](https://docs.textpattern.io/administration/files-panel). By default it is named `files` and is in the root directory of the website. As with the Image directory, you only need to change this if you have renamed and/or moved this directory.
@@ -177,6 +181,10 @@ The Textpattern administration interface panel that will appear first when anybo
 ### Admin-side theme
 
 The default admin-side theme that will be used when anybody logs into Textpattern. A number of pre-installed admin themes are included with Textpattern, and you can also add custom theme packages to the `textpattern/admin-themes` directory to make them available for use.
+
+### Display admin-side inline help links? <span class="footnote success">**New v4.7.0**</span>
+
+If you wish to hide admin-side inline help links (Textpattern help pop-up windows) throughout the system, switch this setting to 'None'.
 
 ## Publish preferences
 
@@ -238,10 +246,6 @@ When set to 'Yes', expired articles will continue to show on your site after the
 
 When set to 'No', expired articles will be removed from the public site and return a "410 Gone" HTTP status instead. Visitors hitting an expired article will be shown a custom page template named "error_410" if it's present.
 
-### Ping pingomatic.com?
-
-This will send a [ping](https://en.wikipedia.org/wiki/Ping_(blogging)) to [Ping-O-Matic](http://pingomatic.com/) whenever you publish a new article. Ping-O-Matic is a aggregation service to notify listed websites that your website has been updated.
-
 ### Use Textile
 
 Textile is a utility intended to simplify the conversion of plain text to HTML. When enabled, Textile will process the body text of articles and return structurally sound HTML.
@@ -253,6 +257,12 @@ The setting you choose here becomes the default for excerpt and body markup on t
 ### Use DNS lookup in visitor logs?
 
 This setting only has an effect when [Logging](#logging) is turned on. Using DNS will, where possible, translate IP addresses in your logs to hostnames. In some instances this might slow down your site, in which case you might want to set this to 'No'.
+
+### Enable short tag support? <span class="footnote success">**New v4.7.0**</span>
+
+Textpattern tags take the form `<txp:tag_name attribute1="value" ... />`. It is possible to reduce the amount of typing involved by enabling a shorthand notation whereby the `txp:` may be omitted by following a few simple guidelines. See @@TODO: short tags@@ for more information.
+
+**Note** that setting this preference in no way affects the ability to use `<txp:output_form />` short codes to render form snippets. You can still use `<txp::shortcode />`, which will be interpreted as `<txp:output_form form="shortcode" />`.
 
 ### Use plugins?
 

@@ -14,7 +14,6 @@ On this page:
 
 * [Search function](#search-function)
 * [List of existing visitor logs](#list-of-existing-visitor-logs)
-  * [Columns](#columns)
   * [Perform changes on selected visitor logs](#perform-changes-on-selected-visitor-logs)
 * [Pages and visitor logs listed per page](#pages-and-visitor-logs-listed-per-page)
 
@@ -35,17 +34,7 @@ As a default the search will find matches for all criteria. But you can do more 
 
 ## List of existing visitor logs
 
-Beneath the search area there is the table, or list, of existing visitor logs. Each row is one visit.
-
-### Columns
-
-* **Time:** The time your web page was visited. The time is shifted by the time preferences set in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
-* **IP:** The IP address of the visitor.
-* **Host:** The published hostname associated with the IP address.
-* **Page:** The page in your Textpattern website that is first visited. If it is **bold** it shows an attempt to leave a comment. If no comment has been left, it is probably a script that unsuccessfully tried to leave some spam.
-* **Referrer:** The location from which the visitor came; in other words, an external location where a link existed to your respective web page. This may be another website, a search results list in Google, a bookmark, and so forth. Be aware that this information can be - and often is - forged or blocked. One reason for this, of course, is spam. A current tactic of spambots is to hit pages in the hopes that the referrer address is published on the page somehow, and when Google indexes the page, their page will incrementally be promoted.
-* **Method:** Usually GET, sometimes POST.
-* **Status:** HTTP status code. 200 is successful.
+Beneath the search area there is the table, or list, of existing visitor logs. Each row is one visit. If you select the header of a column, it will sort the list according to that column. Select again to reverse sort direction.
 
 ### Perform changes on selected visitor logs
 

@@ -17,7 +17,6 @@ On this page:
 * [Search function](#search-function)
 * [List of existing comments](#list-of-existing-comments)
   * [Show spam](#show-spam)
-  * [Columns](#columns)
   * [Perform changes on selected comments](#perform-changes-on-selected-comments)
 * [Pages and links listed per page](#pages-and-comments-listed-per-page)
 
@@ -65,35 +64,11 @@ As a default the search will find matches for all criteria. But you can do more 
 
 ## List of existing comments
 
-Beneath the search area there is the table, or list, of existing comments. Each row is one comment.
+Beneath the search area there is the table, or list, of existing comments. Each row is one comment. If you select the header of a column, it will sort the list according to that column. Select again to reverse sort direction.
 
 ### Show spam
 
 By default Textpattern will hide comments which are automatically identified and marked as [spam](https://en.wikipedia.org/wiki/Spamming). By marking the 'Show spam' checkbox, spam comments will be visible in the listing.
-
-### Columns
-
-The default view shows these columns:
-
-**ID:** the unique ID number of the comment. Select in this to open the comment edit panel (see above).
-
-**Date:** when the comment was created.
-
-**Name:** given name of the commentator.
-
-**Message:** the first words of the message (cropped).
-
-**Parent:** the title of the article the comment was written to. If you select the provided link, the article will open in the [Write panel](https://docs.textpattern.io/administration/write-panel).
-
-At the top of the list there is an option 'Show detail'. When marked additional columns (and additional info) will be presented:
-
-**Email:** given email address of the commentator.
-
-**Website:** given website of the commentator.
-
-**IP:** the IP address of the commentator.
-
-**Status:** whether the comment is currently shown in the parent article or hidden (unmoderated/spam).
 
 ### Perform changes on selected comments
 
@@ -107,4 +82,4 @@ For performing changes now you go to the drop-down list 'With selected...' and c
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of comments listed per page by selecting another value from the number range.
 
-[Next: Sections panel](https://docs.textpattern.io/administration/sections-panel)
+[Next: Themes panel](https://docs.textpattern.io/administration/themes-panel)
