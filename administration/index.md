@@ -93,7 +93,7 @@ The **Presentation** region of the administration side has five panels out-of-th
         </thead>
         <tbody>
             <tr>
-                <th scope="row"><a href="https://docs.textpattern.io/administration/themes-panel"><strong>Themes (from v4.7)</strong></a></th>
+                <th scope="row"><a href="https://docs.textpattern.io/administration/themes-panel"><strong>Themes</strong></a> <span class="footnote success"><strong>New v4.7.0</strong></span></th>
                 <td>A table listing of themes and functionality to create and manage them.</td>
             </tr>
             <tr>
