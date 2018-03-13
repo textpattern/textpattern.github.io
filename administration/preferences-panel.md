@@ -128,9 +128,9 @@ This is a global setting for whether or not you want to allow your articles to a
 
 The root-relative URI (without opening or closing slashes) of the directory (folder) that holds images uploaded through the [Images panel](https://docs.textpattern.io/administration/images-panel). By default this is `images`, and you only need to change this if you have renamed and/or moved this directory.
 
-### Theme directory <span class="footnote success">**New v4.7.0**</span>
+### Theme directory
 
-The relative path (file path, not URI) to the directory (folder) that holds themes uploaded through the [Themes panel](https://docs.textpattern.io/administration/themes-panel). By default this is `themes`, and you only need to change this if you have renamed and/or moved this directory.
+<span class="success">**New v4.7.0**</span>. The relative path (file path, not URI) to the directory (folder) that holds themes uploaded through the [Themes panel](https://docs.textpattern.io/administration/themes-panel). By default this is `themes`, and you only need to change this if you have renamed and/or moved this directory.
 
 ### File directory path
 
@@ -182,9 +182,9 @@ The Textpattern administration interface panel that will appear first when anybo
 
 The default admin-side theme that will be used when anybody logs into Textpattern. A number of pre-installed admin themes are included with Textpattern, and you can also add custom theme packages to the `textpattern/admin-themes` directory to make them available for use.
 
-### Display admin-side inline help links? <span class="footnote success">**New v4.7.0**</span>
+### Display admin-side inline help links?
 
-If you wish to hide admin-side inline help links (Textpattern help pop-up windows) throughout the system, switch this setting to 'None'.
+<span class="success">**New v4.7.0**</span>. If you wish to hide admin-side inline help links (Textpattern help pop-up windows) throughout the system, switch this setting to 'None'.
 
 ## Publish preferences
 
@@ -258,9 +258,9 @@ The setting you choose here becomes the default for excerpt and body markup on t
 
 This setting only has an effect when [Logging](#logging) is turned on. Using DNS will, where possible, translate IP addresses in your logs to hostnames. In some instances this might slow down your site, in which case you might want to set this to 'No'.
 
-### Enable short tag support? <span class="footnote success">**New v4.7.0**</span>
+### Enable short tag support?
 
-Textpattern tags take the form `<txp:tag_name attribute1="value" ... />`. It is possible to reduce the amount of typing involved by enabling a shorthand notation whereby the `txp:` may be omitted by following a few simple guidelines. See [Short tags (shortcodes)](https://docs.textpattern.io/tags/tag-basics/shortcodes) for more information.
+<span class="success">**New v4.7.0**</span>. Textpattern tags take the form `<txp:tag_name attribute1="value" ... />`. It is possible to reduce the amount of typing involved by enabling a shorthand notation whereby the `txp:` may be omitted by following a few simple guidelines. See [Short tags (shortcodes)](https://docs.textpattern.io/tags/tag-basics/shortcodes) for more information.
 
 **Note** that setting this preference in no way affects the ability to use `<txp:output_form />` short codes to render form snippets. You can still use `<txp::shortcode />`, which will be interpreted as `<txp:output_form form="shortcode" />`.
 
