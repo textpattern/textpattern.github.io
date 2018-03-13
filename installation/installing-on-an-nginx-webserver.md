@@ -25,7 +25,7 @@ To ease the installation you can use pre-built packages in the [EPEL](https://fe
 
 You need to have Nginx as well as PHP-FPM running. If you installed them via [yum](http://yum.baseurl.org) you will most likely be able to configure them to start at boot time using:
 
-~~~ ShellSession
+~~~ bash
 $ chkconfig nginx on
 $ chkconfig php-fpm on
 ~~~
@@ -47,7 +47,7 @@ There are several configuration files for Nginx (path names may vary between Lin
 
 This is what an example `nginx.conf` could look like:
 
-~~~
+~~~ nginx
 user  nginx;
 worker_processes  2;
 worker_rlimit_nofile  100000;
@@ -128,7 +128,7 @@ For each virtual host (i.e. each URL under which your Textpattern site should be
 
 Since nginx does not make use of `.htaccess` files or offer `mod_rewrite`, you will need to use an alternative approach to allow clean URLs. The `try_files` directive is responsible for clean URLs in this example.
 
-~~~
+~~~ nginx
 server {
     listen 80;  #could also be 1.2.3.4:80
 
@@ -171,7 +171,7 @@ server {
 
 These are example settings for `fastcgi_params`:
 
-~~~
+~~~ nginx
 fastcgi_param  QUERY_STRING       $query_string;
 fastcgi_param  REQUEST_METHOD     $request_method;
 fastcgi_param  CONTENT_TYPE       $content_type;

@@ -92,17 +92,13 @@ transferred your DNS entry to point to the new server, so you are
 accessing your site with a URL such as
 &lt;_yamdwe_nowiki&gt;0&lt;/_yamdwe_nowiki&gt;.
 
-In this case you would add the following RewriteBase rule to the
-.htaccess file:
+In this case you would add the following RewriteBase rule to the .htaccess file:
 
-    RewriteBase /~mysite
+~~~ apacheconf
+RewriteBase /~mysite
+~~~
 
-Note that there should be no trailing slash on the directory name. This
-line goes immediately after
-
-    RewriteEngine On
-
-.
+Note that there should be no trailing slash on the directory name. This line goes immediately after `RewriteEngine On`.
 
 Don't forget to remove it before you get the DNS entry updated.
 

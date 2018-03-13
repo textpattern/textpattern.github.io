@@ -84,7 +84,7 @@ Locale
 : The language and character set you have configured.
 
 Server
-: Your web server type (e.g. Apache, NGINX).
+: Your web server type (e.g. Apache, Nginx).
 
 PHP server API
 : todo:explanation
@@ -103,7 +103,7 @@ Admin-side theme
 
 The installation and server data is followed by the contents of your `.htaccess` file (from the installation directory). For purposes here we show the [file contents from the current version code](https://github.com/textpattern/textpattern/blob/master/.htaccess) below:
 
-~~~
+~~~ apacheconf
 # BEGIN Textpattern
 #DirectoryIndex index.php index.html
 

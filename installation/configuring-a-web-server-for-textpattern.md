@@ -25,9 +25,9 @@ The method of enabling PHP extensions varies between versions of PHP and Apache,
 
 Modifications to an Apache virtual host file are typically not needed, especially if PHP is already enabled. A `phpinfo()` pre-flight check is useful to confirm PHP and MySQL are functional correctly. Create and edit a new file in the intended Textpattern location with the following contents:
 
-```php
+~~~ php
 <?php phpinfo(); ?>
-```
+~~~
 
 Save the file as `preflight.php` or similar, and view it in a browser. If PHP is configured correctly, the resulting page will list details about PHP's configuration, including active extensions to check against the system requirements above. Delete this `preflight.php` file when you've confirmed system requirements are reached and, ideally, exceeded.
 
@@ -41,7 +41,7 @@ The method of enabling PHP-FPM extensions varies between versions of PHP-FPM and
 
 Modifications to the Nginx server block may be required as directives in `.htaccess` are ignored and not processed by Nginx. Take the following example Nginx `server` configuration with `upstream`'d PHP-FPM:
 
-```nginxconf
+~~~ nginx
 upstream php-fpm {
   server 127.0.0.1:9000;
 }
@@ -74,6 +74,6 @@ server {
   gzip on;
   gzip_types image/svg+xml;
 }
-```
+~~~
 
 This `server` block includes a basic web hosting setup and translates the Apache-specific directives in `.htaccess` to an Nginx-native format. It can be used as a base for your Textpattern site.

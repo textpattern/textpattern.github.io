@@ -75,7 +75,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `.htaccess`
 : **Type:** file.
 : **Removable?:** yes/no.
-: **What it's for:** Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should not alter or remove the default content, which Textpattern relies on. `.htaccess` can be safely removed if you run Textpattern a non-Apache web server, e.g. NGINX.
+: **What it's for:** Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should not alter or remove the default content, which Textpattern relies on. `.htaccess` can be safely removed if you run Textpattern a non-Apache web server, e.g. Nginx.
 
 `index.php`
 : **Type:** file.

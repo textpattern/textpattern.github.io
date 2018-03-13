@@ -20,31 +20,31 @@ If your web server is Apache, and supports `mod_rewrite` in `.htaccess`, you can
 
 On servers that support `mod_rewrite`, the most common solution is to uncomment (remove the leading `#` from) this line in `.htaccess`:
 
-~~~
+~~~ apacheconf
 #RewriteBase /relative/web/path/
 ~~~
 
 ..and change the path as appropriate. If Textpattern is installed in your website root (i.e. the front Textpattern page is at `http://example.com/`), you should use this:
 
-~~~
+~~~ apacheconf
 RewriteBase /
 ~~~
 
 If Textpattern is installed in a subdirectory (the front Textpattern page is at `http://example.com/mydir/`):
 
-~~~
+~~~ apacheconf
 RewriteBase /mydir/
 ~~~
 
 Other changes required on some hosts include:
 
-~~~
+~~~ apacheconf
 DirectoryIndex index.php index.html
 ~~~
 
 Or:
 
-~~~
+~~~ apacheconf
 Options +FollowSymLinks
 ~~~
 
@@ -52,7 +52,7 @@ Both of these lines are included in the default `.htaccess` file, so you can sim
 
 If you are configuring your own Apache server, or using a hosting arrangement that lets you modify your own Apache configuration settings, you might need to add the following to the appropriate place in `httpd.conf`:
 
-~~~
+~~~ apacheconf
 AllowOverride FileInfo
 ~~~
 

@@ -75,7 +75,7 @@ The command-line also requires a client, the [git command-line client](https://g
 
 Use the following command to clone the Textpattern dev branch repository to your local drive:
 
-~~~ ShellSession
+~~~ bash
 $ git clone https://github.com/textpattern/textpattern.git
 ~~~
 
@@ -83,7 +83,7 @@ You can use [git config](https://www.kernel.org/pub/software/scm/git/docs/git-co
 
 The experimental branches mentioned earlier can be explored using this command:
 
-~~~ ShellSession
+~~~ bash
 $ git checkout name-of-branch
 ~~~
 
