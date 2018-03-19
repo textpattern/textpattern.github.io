@@ -120,6 +120,13 @@ This would result in the following, for example:
 <txp:page_url type="lang" default="en" />
 ~~~
 
+### Example 5: Link to a theme's file assets directly
+
+~~~ html
+<link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/default.css">
+<script src="<txp:page_url type="theme_path" />/scripts/main.js"></script>
+~~~
+
 ## Genealogy
 
 ### Version 4.7.0
