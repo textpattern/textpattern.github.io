@@ -30,7 +30,7 @@ The following contexts are recognised by Textpattern:
 | -------- | -------- |
 | Article | Any individual article |
 | Author | Any URL of the type `example.org/author/Author+Name` |
-| Category | Any URL of the type `example.org/categeory/category-name` or inside a `<txp:category_list>...</txp:category_list>` container |
+| Category | Any URL of the type `example.org/category/category-name` or inside a `<txp:category_list>...</txp:category_list>` container |
 | Category asset | Any URL of the type: <br> `   example.org/category/article/category-name` <br> `   example.org/category/image/category-name` <br> `   example.org/category/file/category-name` <br> `   example.org/category/link/category-name` |
 | Comment | Comments areas within an article |
 | Image | Any individual image when using an `id` attribute, or inside a `<txp:images>...</txp:images>` container |
