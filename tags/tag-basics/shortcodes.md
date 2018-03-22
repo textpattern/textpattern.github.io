@@ -40,7 +40,7 @@ To demonstrate this, let's choose a simple, common example: outputting an image 
 
 Writing that structure each time you want to output an image is a pain. And if you want to change it in future, you'd need to do it everywhere. Using the power of `<txp:yield>` and shortcodes, you can centralise this effort. Proceed as follows:
 
-Create a new form (of any type) and paste the following code in:
+Create a new Form (of any type) and paste the following code in:
 
 ```html
 <figure<txp:if_yield name="class"> class="<txp:yield name="class" />"</txp:if_yield>>
