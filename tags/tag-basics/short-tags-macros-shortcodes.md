@@ -62,7 +62,7 @@ Create a new Form template (of any type) and paste the following code in:
 </figure>
 ```
 
-Save it as `figure`. Now you have a custom tag that can be accessed as `<txp::figure />`, or without short tags enabled, `<txp:output_form yield name="figure" />` (the `yield` is necessary to process the custom attributes). Alternatively, the attributes can be defined explicitly: `<txp:output_form yield="id, caption" name="figure" />`. In the latter case, omitting the `class` attribute means it will be considered as a global attribute and processed accordingly.
+Save it as `figure`. Now you have a custom tag that can be accessed as `<txp::figure />`, or without short tags enabled, `<txp:output_form yield form="figure" />` (the `yield` is necessary to process the custom attributes). Alternatively, the attributes can be defined explicitly: `<txp:output_form yield="id, caption" form="figure" />`. In the latter case, omitting the `class` attribute means it will be considered as a global attribute and processed accordingly.
 
 This new tag takes up to three attributes:
 
