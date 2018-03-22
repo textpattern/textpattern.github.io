@@ -26,16 +26,53 @@ Similarly, 'Comment' form tags may only be used in the form that is used to disp
 
 The following contexts are recognised by Textpattern:
 
-| Context  | Notes |
-| -------- | -------- |
-| Article | Any individual article |
-| Author | Any URL of the type `example.org/author/Author+Name` |
-| Category | Any URL of the type `example.org/category/category-name` or inside a `<txp:category_list>...</txp:category_list>` container |
-| Category asset | Any URL of the type: <br> `example.org/category/article/category-name` <br> `example.org/category/image/category-name` <br> `example.org/category/file/category-name` <br> `example.org/category/link/category-name` |
-| Comment | Comments areas within an article |
-| Image | Any individual image when using an `id` attribute, or inside a `<txp:images>...</txp:images>` container |
-| File | Any individual file when using an `id` attribute, or inside a `<txp:file_download_list>...</txp:file_download_list>` container |
-| Link | Any individual link when using an `id` attribute, or inside a `<txp:linklist>...</txp:linklist>` container |
-| Section | Any individual section when using a `name` attribute, or inside a `<txp:section_list>...</txp:section_list>` container |
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+    <table>
+        <thead>
+            <tr>
+                <th class="t25" scope="col">Context</th>
+                <th scope="col">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Article</th>
+                <td>Any individual article.</td>
+            </tr>
+            <tr>
+                <th scope="row">Author</th>
+                <td>Any URL of the type <code>example.org/author/Author+Name</code>.</td>
+            </tr>
+            <tr>
+                <th scope="row">Category</th>
+                <td>Any URL of the type <code>example.org/category/category-name</code> or inside a <code>&lt;txp:category_list&gt;...&lt;/txp:category_list&gt;</code> container.</td>
+            </tr>
+            <tr>
+                <th scope="row">Category asset</th>
+                <td>Any URL of the type: <code>example.org/category/article/category-name</code>, <code>example.org/category/image/category-name</code>, <code>example.org/category/file/category-name</code>, <code>example.org/category/link/category-name</code>.</td>
+            </tr>
+            <tr>
+                <th scope="row">Comment</th>
+                <td>Comments areas within an article.</td>
+            </tr>
+            <tr>
+                <th scope="row">Image</th>
+                <td>Any individual image when using an <code>id</code> attribute, or inside a <code>&lt;txp:images&gt;...&lt;/txp:images&gt;</code> container.</td>
+            </tr>
+            <tr>
+                <th scope="row">File</th>
+                <td>Any individual file when using an <code>id</code> attribute, or inside a <code>&lt;txp:file_download_list&gt;...&lt;/txp:file_download_list&gt;</code> container.</td>
+            </tr>
+            <tr>
+                <th scope="row">Link</th>
+                <td>Any individual link when using an <code>id</code> attribute, or inside a <code>&lt;txp:linklist&gt;...&lt;/txp:linklist&gt;</code> container.</td>
+            </tr>
+            <tr>
+                <th scope="row">Section</th>
+                <td>Any individual section when using a <code>name</code> attribute, or inside a <code>&lt;txp:section_list&gt;...&lt;/txp:section_list&gt;</code> container.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 [Next: Short-form versus long-form usage](shortform-vs-longform-usage)
