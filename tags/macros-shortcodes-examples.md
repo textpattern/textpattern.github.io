@@ -14,7 +14,7 @@ Below are a collection of example macros/shortcodes that you may find useful for
 
 On this page:
 
-* [File download macro](#file-macro)
+* [File download macro](#file-download-macro)
 * [Video macro](#video-macro)
 
 ## File download macro
