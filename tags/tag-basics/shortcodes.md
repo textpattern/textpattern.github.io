@@ -64,7 +64,7 @@ Some notes:
 * The `<txp:yield name="your-attribute" />` tag can be used to process attributes inside your custom tag. Add the `default` attribute to it if you want to set a default value.
 * The `<txp:if_yield name="your-attribute">` container tag can be used to determine if the attribute has been supplied. Works with `<txp:else />`.
 
-So you can use this new tag anywhere you like:
+So you can use this new tag any way you like:
 
 ```html
 <txp::figure id="130" />
@@ -83,4 +83,21 @@ Or as part of a grid of images:
 
 ## Shortening tag attributes
 
-TODO
+From Textpattern 4.7.0 you can also shortcut "boolean" (1 or 0) attributes just like you can in HTML. So these two tags are equivalent:
+
+```html
+<txp:section link="1" />
+<txp:section link />
+```
+
+## Shortening tag constructs using negation
+
+Also from Textpattern 4.7.0, is the ability to negate a tag using `not`.
+
+```html
+<txp:if_section not name="contact, articles">
+   <!-- Do something if we're not in the contact or articles section -->
+</txp:if_section>
+```
+
+This feature also extends to all plugins, natively without any need to do anything by the plugin author.
