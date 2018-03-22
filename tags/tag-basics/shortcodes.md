@@ -29,16 +29,16 @@ If a tag contains an underscore `_` and you enable short tags, the basic concept
 
 There's one important exception to the rule above: the `<txp:output_form>` tag. From Textpattern 4.7.0, it is possible to use Forms to build your own tags and use them as shortcodes. Yes, that's right: create custom tags to do whatever you want.
 
-To demonstrate this, let's choose a simple, common example: outputting an image in a figure with its caption. The HTML structure you wish to create is:
+To demonstrate this, let's choose a simple, common example: outputting an image in a figure with its caption. The kind of HTML structure you wish to create is:
 
 ```html
 <figure class="some-class">
-   <img src="https:?/example.org/images/130.jpg" alt="The throne of Zeus" />
+   <img src="https://example.org/images/130.jpg" alt="The throne of Zeus" />
    <figcaption>A view from Mount Olympus</figcaption>
 </figure>
 ```
 
-Writing that structure each time you want to output an image is a pain. Using the power of `<txp:yield>` and shortcodes, you can proceed as follows:
+Writing that structure each time you want to output an image is a pain. And if you want to change it in future, you'd need to do it everywhere. Using the power of `<txp:yield>` and shortcodes, you can centralise this effort. Proceed as follows:
 
 Create a new form (of any type) and paste the following code in:
 
