@@ -11,7 +11,7 @@ description: Since Textpattern 4.7, short tags and also the shortcodes concept a
 On this page:
 
 * [Short tags](#short-tags)
-* [Form templates as custom tags (a.k.a. macros or shortcodes)](#forms-as-custom-tags-a-k-a-macros-or-shortcodes)
+* [Form templates as custom tags (a.k.a. macros or shortcodes)](#form-templates-as-custom-tags-aka-macros-or-shortcodes)
 * [Shortening tag attributes](#shortening-tag-attributes)
 * [Shortening tag constructs using negation](#shortening-tag-constructs-using-negation)
 
