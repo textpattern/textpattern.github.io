@@ -10,7 +10,7 @@ description: Examples of ways you can utilize tag macros/shortcodes within Textp
 
 From Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to build your own tags and use them as macros/shortcodes. For more information on the basic concept see [Short tags and macros/shortcodes](https://docs.textpattern.io/tags/tag-basics/short-tags-macros-shortcodes).
 
-Below are a collection of example macros/shortcodes that you may find useful for use within your own Textpattern-powered wesbites.
+Below are a collection of example macros/shortcodes that you may find useful for use within your own Textpattern-powered websites. **Note:** remember to also add `notextile.` before shortcodes when using them within Textile content.
 
 On this page:
 
@@ -57,7 +57,7 @@ Create a `misc` type Form template and name it `media_file`, with the following 
 </txp:if_yield>
 ~~~
 
-#### Usage
+#### Shortcode
 
 The shortcode tag uses following syntax:
 
@@ -67,7 +67,7 @@ The shortcode tag uses following syntax:
 
 `category` and `filename` are interchangeable (use one or the other, where appropriate) - if both are provided then `category` is used in preference and `filename` is ignored. `sha256` (SHA256 checksum hash) is optional, but should be provided if possible. If not used, remove this attribute from your shortcode.
 
-#### Example
+#### Example usage
 
 ~~~ html
 <txp::media_file category="current-release-zip" sha256="a868c05fc37108f2bb5e878cfbcdc61a82ce2646c4676cccb8105a6c6277be7a" />
@@ -95,7 +95,7 @@ Create a `misc` type Form template and name it `media_video`, with the following
 </div>
 ~~~
 
-#### Usage
+#### Shortcode
 
 The shortcode tag uses following syntax:
 
@@ -105,7 +105,7 @@ The shortcode tag uses following syntax:
 
 `poster-url`, `name`, `description` and `duration-seconds` are optional, but should be provided if possible to provide valid Schema.org microdata. If not used, remove those attributes from your shortcode.
 
-#### Example
+#### Example usage
 
 ~~~ html
 <txp::media_video width="640" height="480" mp4-url="/video/video1.mp4" webm-url="/video/video1.webm" poster-url="/video/video1-poster.png" name="Cat video" description="My great video of cats." duration-seconds="20" />
