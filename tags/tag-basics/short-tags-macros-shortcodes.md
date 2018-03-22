@@ -36,7 +36,7 @@ If a tag contains an underscore `_` and you enable short tags, the basic concept
 
 ## Form templates as custom tags (a.k.a. macros or shortcodes)
 
-There's one important exception to the rule above: the `<txp:output_form>` tag. From Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to build your own tags and use them as shortcodes. Yes, that's right: create custom tags to do whatever you want.
+There's one important exception to the rule above: the `<txp:output_form>` tag. From Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to build your own tags and use them as macros/shortcodes. Yes, that's right: create custom tags to do whatever you want.
 
 To demonstrate this, let's choose a simple, common example: outputting an image in a figure with its caption. The kind of HTML structure you wish to create is:
 
@@ -79,7 +79,6 @@ So you can use this new tag any way you like:
 <txp::figure id="130" />
 <txp::figure id="130" class="photo" />
 <txp::figure id="130" class="photo" caption="The throne of Zeus at Mount Olympus." />
-
 ```
 
 Or as part of a grid of images:
@@ -89,6 +88,8 @@ Or as part of a grid of images:
    <txp::figure id='<txp:image_info type="id" />' />
 </txp:images>
 ```
+
+For more usage examples of macros/shortcodes, please see [Macros/shortcodes examples](https://docs.textpattern.io/tags/macros-shortcodes-examples).
 
 ## Shortening tag attributes
 
