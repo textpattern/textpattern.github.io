@@ -62,11 +62,7 @@ Create a `misc` type Form template and name it `media_file`, with the following 
 The shortcode tag uses following syntax:
 
 ~~~ html
-<txp::media_file
-    category=""
-    filename=""
-    sha256=""
-    />
+<txp::media_file category="" filename="" sha256="" />
 ~~~
 
 `category` and `filename` are interchangeable (use one or the other, where appropriate) - if both are provided then `category` is used in preference and `filename` is ignored. `sha256` (SHA256 checksum hash) is optional, but should be provided if possible. If not used, remove this attribute from your shortcode.
@@ -74,10 +70,7 @@ The shortcode tag uses following syntax:
 #### Example
 
 ~~~ html
-<txp::media_file
-    category="current-release-zip"
-    sha256="a868c05fc37108f2bb5e878cfbcdc61a82ce2646c4676cccb8105a6c6277be7a"
-    />
+<txp::media_file category="current-release-zip" sha256="a868c05fc37108f2bb5e878cfbcdc61a82ce2646c4676cccb8105a6c6277be7a" />
 ~~~
 
 ## Video macro
@@ -107,16 +100,7 @@ Create a `misc` type Form template and name it `media_video`, with the following
 The shortcode tag uses following syntax:
 
 ~~~ html
-<txp::media_video
-    width=""
-    height=""
-    mp4-url=""
-    webm-url=""
-    poster-url="" 
-    name=""
-    description=""
-    duration-seconds=""
-    />
+<txp::media_video width="" height="" mp4-url="" webm-url="" poster-url="" name="" description="" duration-seconds=""/>
 ~~~
 
 `poster-url`, `name`, `description` and `duration-seconds` are optional, but should be provided if possible to provide valid Schema.org microdata. If not used, remove those attributes from your shortcode.
@@ -124,14 +108,5 @@ The shortcode tag uses following syntax:
 #### Example
 
 ~~~ html
-<txp::media_video
-    width="640"
-    height="480"
-    mp4-url="/video/video1.mp4"
-    webm-url="/video/video1.webm"
-    poster-url="/video/video1-poster.png"
-    name="Cat video"
-    description="My great video of cats."
-    duration-seconds="20"
-    />
+<txp::media_video width="640" height="480" mp4-url="/video/video1.mp4" webm-url="/video/video1.webm" poster-url="/video/video1-poster.png" name="Cat video" description="My great video of cats." duration-seconds="20" />
 ~~~
