@@ -41,13 +41,12 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### Core tags
 
-* [Tags reference](https://docs.textpattern.io/tags/) (the complete book of magic)
+* [Tags reference](https://docs.textpattern.io/tags/)
 * [Tag use basics](https://docs.textpattern.io/tags/tag-basics/). A series of short preparatory docs to facilitate tag learning, including:
-  * [Self-closed vs container tags](https://docs.textpattern.io/tags/tag-basics/self-closed-versus-container-tags) (base ingredients)
-  * [Conditional tags](https://docs.textpattern.io/tags/tag-basics/conditional-tags) (decisions, decisions)
-  * [Tag nesting](https://docs.textpattern.io/tags/tag-basics/tag-nesting) (recipes in recipes)
-  * [Parsing tag attributes](https://docs.textpattern.io/tags/tag-basics/parsing-tag-attributes) (sorcery)
-* [Tags in development](https://docs.textpattern.io/tags/tags-in-development) (incantations to come)
+  * [Self-closed vs container tags](https://docs.textpattern.io/tags/tag-basics/self-closed-versus-container-tags)
+  * [Conditional tags](https://docs.textpattern.io/tags/tag-basics/conditional-tags)
+  * [Parsing tag attributes](https://docs.textpattern.io/tags/tag-basics/parsing-tag-attributes)
+* [Tags in development](https://docs.textpattern.io/tags/tags-in-development)
 
 </div>
 <div class="layout-3col">
