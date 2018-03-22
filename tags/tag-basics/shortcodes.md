@@ -81,7 +81,7 @@ Or as part of a grid of images:
 </txp:images>
 ```
 
-## Shortening tag attributes
+# Shortening tag attributes
 
 From Textpattern 4.7.0 you can also shortcut "boolean" (1 or 0) attributes just like you can in HTML. So these two tags are equivalent:
 
@@ -90,7 +90,7 @@ From Textpattern 4.7.0 you can also shortcut "boolean" (1 or 0) attributes just 
 <txp:section link />
 ```
 
-## Shortening tag constructs using negation
+# Shortening tag constructs using negation
 
 Also from Textpattern 4.7.0, is the ability to negate a tag using `not`.
 
