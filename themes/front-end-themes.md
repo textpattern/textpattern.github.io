@@ -81,13 +81,17 @@ The following default value will be used on import for the missing fields or val
 #### The _pages_ directory
 
 The _pages_ optional directory should contains Textpattern pages as `.txp` files.
+
 Two essential pages should be created: `default` and `error_default`; they will be created as empty pages on import if missing.
+
 If this directory is missing, empty essential pages will be created on the first import, while on update, pages import will be skipped.
 
 #### The _forms_ directory
 
 The _forms_ optional directory should contains Textpattern forms as `.txp` files.
+
 While forms should be grouped by types into dedicated subdirectories, they all need to use different names.
+
 Six essential pages should be created:
 - article:
     - _article_listing_;
@@ -103,12 +107,15 @@ Six essential pages should be created:
     - _plainlinks_;
 
 They will be created as empty forms on import if missing.
+
 If this directory is missing, empty essential forms will be created on the first import while on update, stylesheets import will be skipped.
 
 #### The _styles_ directory
 
 The _styles_ optional directory should contains stylesheets as `.css` files.
+
 A `default` essential stylesheet should be created; it will be created as an empty stylesheet on import if missing.
+
 If this directory is missing, an empty essential stylesheet (`default`) will be created on the first import while on update, styles import will be skipped.
 
 ## Exporting/importing (sharing) front-end themes  (Work in progress)
