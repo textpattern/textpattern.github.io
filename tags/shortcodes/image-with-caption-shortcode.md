@@ -15,12 +15,13 @@ On this page:
 * [Scenario](scenario)
 * [Form to use](form-to-use)
 * [Short-tag to use](short-tag-to-use)
+* [Tag attributes](tag-attributes)
 * [Notes](notes)
 * [Example usage](example-usage)
 
-## Secenrio
+## Scenario
 
-Consider the following example of an image marked up as a figure with caption:
+Consider the following raw HTML example:
 
 ```html
 <figure class="some-class">
@@ -29,13 +30,13 @@ Consider the following example of an image marked up as a figure with caption:
 </figure>
 ```
 
-Writing that block of nested markup each time you want a figure is tedious, and a messy distraction in your article copy when editing. It’s also a pain to find and edit such markup when you need to later.
+Writing that block of nested markup each time you want a figure is tedious, and a messy distraction in your article copy when editing. It’s also a pain to find and edit such markup when you need to later, notably the caption.
 
 Let’s do better.
 
 ## Form to use
 
-Create a new Form template (of any type), name it **figure** (or “image_figure” if you want the specificity), paste the following code in, and save the template:
+Create a new Form template (of any type), name it **figure** (or “image_figure” if you want the specificity to create other types of figure shortcodes later), paste the following code in, and save the template:
 
 ```html
 <figure<txp:if_yield name="class"> class="<txp:yield name="class" />"</txp:if_yield>>
@@ -48,13 +49,17 @@ Create a new Form template (of any type), name it **figure** (or “image_figure
 </figure>
 ```
 
-Now you have a custom shortcode. By create that code, you automatically create a corresponding short-tag too.
+Now you have a custom shortcode. By creating that code, you automatically create a corresponding short-tag too.
 
 ## Short-tag to use
 
-In fact, you can use either of the following to output your figure:
+The corresponding short-tag reflects the name of your shortcode form. In this example: `<txp::figure />`. 
 
-* `<txp::figure />` (with short-tags enabled)
+(If you named your form `image_figure` for specificity reasons, your tag would be `<txp::image_figure />`. But let’s stick with `figure` for purposes of this example.)
+
+In fact, you can use either of the following tags to output your figure:
+
+* `<txp::figure />` (with short-tags enabled; the actual “short-tag”)
 * `<txp:output_form yield form="figure" />` (without short-tags enabled; the `yield` is necessary to process the custom attributes)
 
 Alternatively, the attributes can be defined explicitly in the tag: 
@@ -62,6 +67,8 @@ Alternatively, the attributes can be defined explicitly in the tag:
 * `<txp:output_form yield="id, caption" form="figure" />`
 
 In the latter case, omitting the `class` attribute means it will be considered as a global attribute and processed accordingly.
+
+## Tag attributes
 
 This new tag takes up to three attributes:
 
@@ -77,7 +84,7 @@ This new tag takes up to three attributes:
 
 ## Example usage
 
-You can use this custom Textpattern `figure` tag (or `image_figure` if that’s how you named it for specificity) any way you like:
+You can use the custom short-tag any way you like:
 
 * `<txp::figure id="130" />`
 * `<txp::figure id="130" class="photo" />`
@@ -89,6 +96,6 @@ Or as part of a grid of images:
 <txp:images category="travel" wraptag="div" class="grid">
    <txp::figure id='<txp:image_info type="id" />' />
 </txp:images>
-```
+``` 
 
 See more [Shortcode examples](https://docs.textpattern.io/tags/tag-basics/shortcode-examples).
