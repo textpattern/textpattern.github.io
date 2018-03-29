@@ -6,7 +6,7 @@ title: Video embed shortcode
 description: The shortcode to create a HTML5-compliant video snippet and including Schema.org microdata.
 ---
 
-# Video embed shortcode video-embed-shortcode.md
+# Video embed shortcode
 
 The shortcode to create a HTML5-compliant video snippet and including [Schema.org](https://schema.org) microdata.
 
