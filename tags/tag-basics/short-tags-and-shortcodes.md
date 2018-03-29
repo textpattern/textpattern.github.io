@@ -36,7 +36,7 @@ If a tag contains an underscore `_` and you enable short tags, the basic concept
 
 ## Shortcode forms
 
-There’s one exception to the rule above regarding the `<txp:output_form>` tag. Beginning with Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to create custom shortcode tags (similar to macros with the smd_macro plugin, which core shortcode functionality now makes obsolete).
+There’s one exception to the rule above regarding the `<txp:output_form>` tag. Beginning with Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to create custom shortcodes for use with specific short-tags. (The concept is similar to macros with the smd_macro plugin, which core shortcode functionality now makes obsolete).
 
 Consider an image figure, which is a common need in web publishing:
 
