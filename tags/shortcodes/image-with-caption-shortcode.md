@@ -98,4 +98,4 @@ Or as part of a grid of images:
 </txp:images>
 ``` 
 
-See more [Shortcode examples](https://docs.textpattern.io/tags/tag-basics/shortcode-examples).
+See more [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/).
