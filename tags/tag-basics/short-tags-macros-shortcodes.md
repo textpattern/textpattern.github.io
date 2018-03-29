@@ -34,11 +34,11 @@ If a tag contains an underscore `_` and you enable short tags, the basic concept
 1. Remove the `txp:` prefix.
 2. Swap the first occurrence of the underscore for `::`.
 
-## Form templates as custom tags (a.k.a. macros or shortcodes)
+## Form templates for custom shortcode tags (a.k.a. macros)
 
-There's one important exception to the rule above: the `<txp:output_form>` tag. From Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to build your own tags and use them as macros/shortcodes. Yes, that's right: create custom tags to do whatever you want.
+There’s one exception to the rule above regarding the `<txp:output_form>` tag. Beginning with Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to create custom shortcode tags (similar to macros with the smd_macro plugin, which core shortcode functionality now makes obsolete).
 
-To demonstrate this, let's choose a simple, common example: outputting an image in a figure with its caption. The kind of HTML structure you wish to create is:
+Consdier an image figure, which is a common need in web publishing these days:
 
 ```html
 <figure class="some-class">
@@ -47,35 +47,49 @@ To demonstrate this, let's choose a simple, common example: outputting an image 
 </figure>
 ```
 
-Writing that structure each time you want to output an image is a pain. And if you want to change it in future, you'd need to do it everywhere. Using the power of `<txp:yield>` and shortcodes, you can centralise this effort. Proceed as follows:
+Writing that block of nested markup each time you want to output an image with a caption is tedious, and a messy distraction in your article copy when editing. It’s also a pain to find and edit such markup when you need to. That’s not a good use of a CMS.
 
-Create a new Form template (of any type) and paste the following code in:
+Instead, using the power of the `<txp:yield>` tag, Form template shortcodes, and the new short-tags functionality, you can create the nested markup block once, output it anywhere needed, and only make the specific data attributes dynamic, namely `id`, `class`, and `caption`.
+
+Here’s how to do figures:
+
+Create a new Form template (of any type), name it **figure**, paste the following code in, and save the template:
 
 ```html
 <figure<txp:if_yield name="class"> class="<txp:yield name="class" />"</txp:if_yield>>
    <txp:image id='<txp:yield name="id" />' />
    <txp:if_yield name="caption">
-      <figcaption><txp:yield name="caption" /></figcaption>
+      <figcaption><txp:yield name="caption" escape="tidy,textile" /></figcaption>
    <txp:else />
-      <txp:image_info id='<txp:yield name="id" />' wraptag="figcaption" />
+      <txp:image_info id='<txp:yield name="id" />' wraptag="figcaption" escape="tidy,textile" />
    </txp:if_yield>
 </figure>
 ```
 
-Save it as `figure`. Now you have a custom tag that can be accessed as `<txp::figure />`, or without short tags enabled, `<txp:output_form yield form="figure" />` (the `yield` is necessary to process the custom attributes). Alternatively, the attributes can be defined explicitly: `<txp:output_form yield="id, caption" form="figure" />`. In the latter case, omitting the `class` attribute means it will be considered as a global attribute and processed accordingly.
+Now you have a custom tag that can be used by either of the following constructions:
+
+* `<txp::figure />` (with short-tags enabled)
+* `<txp:output_form yield form="figure" />` (without short-tags enabled; the `yield` is necessary to process the custom attributes)
+
+Alternatively, the attributes can be defined explicitly in the tag: 
+
+* `<txp:output_form yield="id, caption" form="figure" />`
+
+In the latter case, omitting the `class` attribute means it will be considered as a global attribute and processed accordingly.
 
 This new tag takes up to three attributes:
 
-* `id` (mandatory) The id of the image you wish to display.
-* `class` (optional) A CSS class to apply to the `<figure>` tag.
-* `caption` (optional) The caption to apply to the image. If omitted, it will use the one associated with the image itself.
+* `id` (mandatory) — The id of the image you wish to display.
+* `class` (optional) — A CSS class to apply to the HTML `figure` element (i.e. `<figure class=“”>`.
+* `caption` (optional) — The caption to apply to the image. If omitted, it will use the one associated with the image itself.
 
-Some notes:
+Notes:
 
 * The `<txp:yield name="your-attribute" />` tag can be used to process attributes inside your custom tag. Add the `default` attribute to it if you want to set a default value.
 * The `<txp:if_yield name="your-attribute">` container tag can be used to determine if the attribute has been supplied. Works with `<txp:else />`.
+* The Textile attribute (and values), `escape="tidy,textile"`, used in the example above is optional. It enables rendering any Textile you may want to use in your image captions (e.g. a source link). See [Escaping tags](https://docs.textpattern.io/tags/tag-basics/tag-escaping) for more about this new attribute functionality, which works on every Textpattern tag.
 
-So you can use this new tag any way you like:
+So you can use this custom Textpattern `figure` tag now any way you like:
 
 ```html
 <txp::figure id="130" />
