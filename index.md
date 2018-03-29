@@ -48,7 +48,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 **Custom tags**
 * [Short-tags and shortcodes](https://docs.textpattern.io/tags/shortcodes/short-tags-and-shortcodes)
-* [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/shortcode-examples)
+* [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/)
 
 </div>
 <div class="layout-3col">
