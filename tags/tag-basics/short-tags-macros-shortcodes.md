@@ -38,7 +38,7 @@ If a tag contains an underscore `_` and you enable short tags, the basic concept
 
 There’s one exception to the rule above regarding the `<txp:output_form>` tag. Beginning with Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to create custom shortcode tags (similar to macros with the smd_macro plugin, which core shortcode functionality now makes obsolete).
 
-Consdier an image figure, which is a common need in web publishing these days:
+Consider an image figure, which is a common need in web publishing:
 
 ```html
 <figure class="some-class">
@@ -47,7 +47,7 @@ Consdier an image figure, which is a common need in web publishing these days:
 </figure>
 ```
 
-Writing that block of nested markup each time you want to output an image with a caption is tedious, and a messy distraction in your article copy when editing. It’s also a pain to find and edit such markup when you need to. That’s not a good use of a CMS.
+Writing that block of nested markup each time you want a figure is tedious, and a messy distraction in your article copy when editing. It’s also a pain to find and edit such markup when you need to later.
 
 Instead, using the power of the `<txp:yield>` tag, Form template shortcodes, and the new short-tags functionality, you can create the nested markup block once, output it anywhere needed, and only make the specific data attributes dynamic, namely `id`, `class`, and `caption`.
 
