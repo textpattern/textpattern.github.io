@@ -39,7 +39,7 @@ But, if you opt to disable short-tag functionality in the Preferences panel, you
 <txp:output_form yield form="figure" />
 ```
 
-In this case the `yield` is necessary to process the custom attributes.
+In this case the `yield` is necessary to process the custom attributes. (See [Image with caption shortcode](image-with-caption-shortcode) for example of attributes used in a `figure` shortcode.)
 
 Alternatively, the attributes can be defined explicitly in the tag: 
 
@@ -63,5 +63,7 @@ The `if_yield` container tag (and the `else` tag) can be used to determine if th
 <txp:if_yield name="your-attribute”> … `</txp:if_yield>
 ```
 
-Now, the best way to get started is look at some [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/) for more possibilities and familiarity.
+That’s it!
+
+The best way to get started is look at some [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/) for more possibilities and familiarity.
 
