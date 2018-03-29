@@ -47,7 +47,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Tags in development](https://docs.textpattern.io/tags/tags-in-development)
 
 **Custom tags**
-* [Short-tags and shortcodes](https://docs.textpattern.io/tags/shortcodes/short-tags-and-shortcodes)
+* [Custom short-tags and shortcodes](https://docs.textpattern.io/tags/shortcodes/custom-short-tags-and-shortcodes)
 * [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/)
 
 </div>
