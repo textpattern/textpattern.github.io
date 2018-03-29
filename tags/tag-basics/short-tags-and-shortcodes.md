@@ -105,7 +105,7 @@ Or as part of a grid of images:
 </txp:images>
 ```
 
-For more usage examples of macros/shortcodes, please see [Macros/shortcodes examples](https://docs.textpattern.io/tags/macros-shortcodes-examples).
+See [Shortcode examples](https://docs.textpattern.io/tags/tag-basics/shortcode-examples) for more possibilities.
 
 ## Shortening tag attributes
 

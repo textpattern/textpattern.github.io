@@ -2,24 +2,24 @@
 layout: document
 category: Tags
 published: true
-title: Macros/shortcodes examples
-description: Examples of ways you can utilize tag macros/shortcodes within Textpattern 4.7 onwards
+title: Shortcode examples
+description: Examples of ways you can utilize short-tags with shortcodes (Form partials) within Textpattern 4.7 onwards
 ---
 
-# Macros/shortcodes examples
+# Shortcodes examples
 
-From Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to build your own tags and use them as macros/shortcodes. For more information on the basic concept see [Short tags and macros/shortcodes](https://docs.textpattern.io/tags/tag-basics/short-tags-macros-shortcodes).
+From Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to build your own tags and use them as shortcodes. For more information on the basic concept see [Short-tags and shortcodes](https://docs.textpattern.io/tags/tag-basics/short-tags-and-shortcodes).
 
-Below are a collection of example macros/shortcodes that you may find useful for use within your own Textpattern-powered websites. **Note:** remember to also add `notextile.` before shortcodes when using them within Textile content.
+Below are a collection of example shortcodes that you may find useful for use within your own Textpattern-powered websites. **Note:** remember to also add `notextile.` before shortcodes when using them within Textile content.
 
 On this page:
 
 * [File download macro](#file-download-macro)
 * [Video macro](#video-macro)
 
-## File download macro
+## File download shortcode
 
-Macro and shortcode to create a file download snippet with optional SHA256 checksum and including [Schema.org](https://schema.org) microdata.
+Shortcode for a file download snippet with optional SHA256 checksum and including [Schema.org](https://schema.org) microdata.
 
 #### Form templates
 
@@ -57,9 +57,9 @@ Create a `misc` type Form template and name it `media_file`, with the following 
 </txp:if_yield>
 ~~~
 
-#### Shortcode
+#### The short-tag
 
-The shortcode tag uses following syntax:
+The short-tag to use is:
 
 ~~~ html
 <txp::media_file category="" filename="" sha256="" />
@@ -73,9 +73,9 @@ The shortcode tag uses following syntax:
 <txp::media_file category="current-release-zip" sha256="a868c05fc37108f2bb5e878cfbcdc61a82ce2646c4676cccb8105a6c6277be7a" />
 ~~~
 
-## Video macro
+## Video shortcode
 
-Macro and shortcode to create a HTML5-compliant video snippet and including [Schema.org](https://schema.org) microdata.
+The shortcode to create a HTML5-compliant video snippet and including [Schema.org](https://schema.org) microdata.
 
 #### Form template
 
@@ -95,9 +95,9 @@ Create a `misc` type Form template and name it `media_video`, with the following
 </div>
 ~~~
 
-#### Shortcode
+#### The short-tag
 
-The shortcode tag uses following syntax:
+The short-tag to use:
 
 ~~~ html
 <txp::media_video width="" height="" mp4-url="" webm-url="" poster-url="" name="" description="" duration-seconds=""/>
