@@ -3,10 +3,10 @@ layout: document
 category: Tags
 published: true
 title: Shortcode examples
-description: Examples of ways you can utilize short-tags with shortcodes (Form partials) within Textpattern 4.7 onwards
+description: Examples of ways you can utilize short-tags with particular Form partials of your creation (shortcodes) within Textpattern 4.7 onwards
 ---
 
-# Shortcodes examples
+# Shortcode examples
 
 From Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to build your own tags and use them as shortcodes. For more information on the basic concept see [Short-tags and shortcodes](https://docs.textpattern.io/tags/tag-basics/short-tags-and-shortcodes).
 
@@ -14,8 +14,8 @@ Below are a collection of example shortcodes that you may find useful for use wi
 
 On this page:
 
-* [File download macro](#file-download-macro)
-* [Video macro](#video-macro)
+* [File download shortcode](#file-download-shortcode)
+* [Video shortcode](#video-shortcode)
 
 ## File download shortcode
 
@@ -57,7 +57,7 @@ Create a `misc` type Form template and name it `media_file`, with the following 
 </txp:if_yield>
 ~~~
 
-#### The short-tag
+#### The _media_file_ short-tag
 
 The short-tag to use is:
 
@@ -95,7 +95,7 @@ Create a `misc` type Form template and name it `media_video`, with the following
 </div>
 ~~~
 
-#### The short-tag
+#### The _media_video_ short-tag
 
 The short-tag to use:
 
