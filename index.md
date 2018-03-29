@@ -39,15 +39,16 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 <div class="layout-3col">
 <img width="200" height="200" alt="Core tags" src="/img/index-tags.jpg" srcset="/img/index-tags@2x.jpg 2x, /img/index-tags.jpg 1x">
 
-### Core tags
+### Tags
 
+#### Core tags
 * [Tags reference](https://docs.textpattern.io/tags/)
-* [Tag use basics](https://docs.textpattern.io/tags/tag-basics/). A series of short preparatory docs to facilitate tag learning, including:
-  * [Self-closed vs container tags](https://docs.textpattern.io/tags/tag-basics/self-closed-versus-container-tags)
-  * [Conditional tags](https://docs.textpattern.io/tags/tag-basics/conditional-tags)
-  * [Parsing tag attributes](https://docs.textpattern.io/tags/tag-basics/parsing-tag-attributes)
-* [Short-tags and shortcodes](https://docs.textpattern.io/tags/tag-basics/short-tags-and-shortcodes)
+* [Tag use basics](https://docs.textpattern.io/tags/tag-basics/). A series of docs to facilitate tag learning.
 * [Tags in development](https://docs.textpattern.io/tags/tags-in-development)
+
+#### Custom tags
+* [Short-tags and shortcodes](https://docs.textpattern.io/tags/shortcodes/short-tags-and-shortcodes)
+* [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/shortcode-examples)
 
 </div>
 <div class="layout-3col">
