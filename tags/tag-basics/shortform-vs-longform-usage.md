@@ -162,4 +162,4 @@ More important than character count is your understanding of the resulting marku
 
 In summary, long-form notation is generally easier for new Textpattern users to get up to speed with, until they've become more familiar with the scope of Textpattern tag functionality. Advanced users of Textpattern generally prefer the short-form notation because it saves character space. But it doesn't matter either way, as long as the markup is constructed correctly in relation to how Textpattern functions.
 
-7. [Next: Tag escaping](tag-escaping)
+[Next: Tag escaping](tag-escaping)
