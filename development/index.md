@@ -6,7 +6,7 @@ title: Textpattern plugin development
 description: This information is for those who are thinking about developing Textpattern plugins.
 ---
 
-# Textpattern plugin development TODO
+# Textpattern plugin development
 
 This information is for those who are thinking about developing Textpattern plugins.
 
@@ -42,7 +42,7 @@ More like four strong recommendations, to help ensure you're producing plugins t
 
 ### 1. Avoid reinventing the wheel
 
-While reinventing the wheel is a good way to learn, it's not so good for making useful or popular plugins. If you're plugin does what another plugin already does, few users will take the time to install and try it unless it's *extremely* innovative in some way. We recommend that before you start developing, spend some time researching what plugins exist, what functionality they provide, and how well they're working for people (often indicated by how popular they are).
+While reinventing the wheel is a good way to learn, it's not so good for making useful or popular plugins. If your plugin does what another plugin already does, few users will take the time to install and try it unless it's *extremely* innovative in some way. We recommend that before you start developing, spend some time researching what plugins exist, what functionality they provide, and how well they're working for people (often indicated by how popular they are).
 
 Here's the visible approach to plugin conception that can help you make a good choice...
 
@@ -114,65 +114,42 @@ All hopeful plugin developers must [register a plugin developer prefix](https://
 Plugins are loaded very early during script execution. It happens in `textpattern/publish.php` (public-side) and in `textpattern/index.php` (admin-side). Look out for `load_plugins` to see where it is happening.
 
 `public`
-: **Load order:** 0
+: **Type:** 0
 : Will only load on the public side.
 
-`admin + client`
-: **Load order:** 1
+`admin + public`
+: **Type:** 1
 : Will load on the public *and* administration sides.
 
 `library`
-: **Load order:** 2
+: **Type:** 2
 : Will not automatically load, rather it loads when included/required by other plugins.
 
-`admin`
-: **Load order:** 3
+`admin-only`
+: **Type:** 3
 : Will only load on the administration side and may **not** make asynchronous calls.
 
-`admin + AJAX`
-: **Load order:** 4
+`admin + Ajax`
+: **Type:** 4
 : Will only load on the administration side and may make asynchronous calls.
 
-`admin + public + AJAX`
-: **Load order:** 5
+`admin + public + Ajax`
+: **Type:** 5
 : Will load on the administration and public sides and may make asynchronous calls.
 
-The code of the plugin is then `eval()` 'ed (or included) within that
-`load_plugins()` function, *not* in the global scope. This means if you
-need to use global variables, you have to explicitly set them to be
-global. Functions and classes are always in the “global scope”, so there
-is no problem with that.
+The code of the plugin is then `eval()` 'ed (or included) within that `load_plugins()` function, *not* in the global scope. This means if you need to use global variables, you have to explicitly set them to be global. Functions and classes are always in the “global scope”, so there is no problem with that.
 
-Understanding how plugins are loaded, also shows how you can write “on
-demand” and “up front” plugins, which were mentioned earlier. Defining a
-function will make it available as a tag in Textpattern Page templates and
-Form templates. Whereas any code that is outside of any function/class
-definition will be executed right away. You can check for
-Request-Variables and initiate some action and `exit;` the execution of
-the script (for example to serve images or other binary data from within
-a plugin).
+Understanding how plugins are loaded, also shows how you can write “on demand” and “up front” plugins, which were mentioned earlier. Defining a function will make it available as a tag in Textpattern Page templates and Form templates. Whereas any code that is outside of any function/class definition will be executed right away. You can check for Request-Variables and initiate some action and `exit;` the execution of the script (for example to serve images or other binary data from within a plugin).
 
 ## Callbacks
 
-A callback is essentially an instruction (written as a function) that
-your plugin follows to execute some *events* (and *steps*) - either
-`$event` by itself or combined with a `$step`. You hook into these known
-points to choose where and when your plugins run.
+A callback is essentially an instruction (written as a function) that your plugin follows to execute some *events* (and *steps*) - either `$event` by itself or combined with a `$step`. You hook into these known points to choose where and when your plugins run.
 
-The [Core callbacks
-reference](https://docs.textpattern.io/development/core-callbacks-reference)
-provides complete details for all callback actions used in Textpattern,
-organized by public-side, admin-side, plugin, and function- and
-tag-based callbacks.[^2]
+The [Core callbacks reference](https://docs.textpattern.io/development/core-callbacks-reference) provides complete details for all callback actions used in Textpattern, organized by public-side, admin-side, plugin, and function- and tag-based callbacks.[^2]
 
 ### Function: register_callback()
 
-There are many [functions used in
-Textpattern](http://phpcrossref.com/xref/textpattern/_functions/) that
-may be relevant to your plugin development aims.[^3] In particular, the
-`register_callback()` function is important for writing
-[callbacks](#sec7) (especially admin-side callbacks).[^4] This is the
-full function definition:
+There are many [functions used in Textpattern](http://phpcrossref.com/xref/textpattern/_functions/) that may be relevant to your plugin development aims.[^3] In particular, the `register_callback()` function is important for writing [callbacks](#sec7) (especially admin-side callbacks).[^4] This is the full function definition:
 
 ~~~ php
 function register_callback($func, $event, $step, $pre=0)
@@ -182,87 +159,63 @@ function register_callback($func, $event, $step, $pre=0)
 
 Argument 1
 : **Parameter:** `$func`
-: Name of the function you add to a callback event.
+: Name of your function that will be executed when the callback is raised.
 
 Argument 2
 : **Parameter:** `$event`
-: Name of the core *event*.
+: Name of the core *event* you wish to hook into. For the administration side, this is usually the `?event` name found in the URL.
 
 Argument 3
 : **Parameter:** `$step` (admin-side only)
-: Name of the associated core step. Not always required.
+: Name of the associated core step, or action (such as `save`, `create`, `copy`, `duplicate`, etc). Not always required.
 
 Argument 4
 : **Parameter:** `$pre=` (admin-side only)
-: Designates when `$func` is called. Values are `0` (default) or `1`. Not always required.
+: Designates when `$func` is called. Values are `0` (default, after the core action has completed) or `1` (before the core action does its job). Not always required, and not all callbacks have both.
 
-**Argument \#3:** In admin-side situations, the `$event` (argument \#2)
-is (disjunctively) divided into *steps*, with each `$step` pinpointing a
-particular action or DOM location (e.g. a panel widget or one of its
-controls).
+**Argument \#3:** In admin-side situations, the `$event` (argument \#2) is (disjunctively) divided into *steps*, with each `$step` pinpointing a particular action or DOM location (e.g. a panel widget or one of its controls).
 
-**Argument \#4:** In admin-side situations, this argument determines
-when the function is called, with implications for what you can do:
+**Argument \#4:** In admin-side situations, this argument determines when the function is called, with implications for what you can do:
 
--   If `$pre=0` (default), the function is called *after* the main part
-    of the page is executed and rendered, allowing your function to add
-    things below it, or to manipulate the DOM.
--   If `$pre=1`, the function is called *before* any part of the page is
-    rendered or executed, allowing you to replace existing panels on
-    the admin-side.
+-   If `$pre=0` (default), the function is called *after* the main part of the page is executed and rendered, allowing your function to add things below it, or to manipulate the DOM.
+-   If `$pre=1`, the function is called *before* any part of the page is rendered or executed, allowing you to replace existing panels on the admin-side or manipulate variables or content before core code does its part.
 
 Let's look a few `register_callback()` examples.
 
 ### Adding your own admin-side panel elements
 
-Elements can be added to admin-side panels in two ways: as *new*
-elements, or as modifications to existing elements. Each panel has its
-own set of core callback parameters to work with, which are detailed in
-the [Admin-side user-interface
-callbacks](core-callbacks-reference#sec2-4) section of the [Core
-callbacks
-reference](https://docs.textpattern.io/development/core-callbacks-reference).
+Elements can be added to admin-side panels in two ways: as *new* elements, or as modifications to existing elements. Each panel has its
+own set of core callback parameters to work with, which are detailed in the [Admin-side user-interface
+callbacks](core-callbacks-reference#sec2-4) section of the [Core callbacks reference](https://docs.textpattern.io/development/core-callbacks-reference).
 
 #### Adding new elements (without altering existing markup)
 
-In this example, we use the `register_callback` function to add some
-text - "Textile, the humane web text generator." - in the **Write**
-panel's **Textile help** widget. The text is added immediately below the
-widget header link, which is where the `extend_col_1` step happens to
-output its markup:
+In this example, we use the `register_callback` function to add some text - "Textpattern rocks!" - in the **Write**
+panel, between the **Advanced** and **Recent articles** blocks. The text is added directly there, in the place where the `extend_col_1` step happens to output its markup:
 
 ~~~ php
 register_callback('abc_add_text', 'article_ui', 'extend_col_1');
 
 function abc_add_text($event, $step, $data, $rs) {
-    return 'Textile, the humane web text generator.';
+    return 'Textpattern rocks!';
 }
 ~~~
 
-From the `register_callback` definition provided earlier, we see the
-first line is giving these arguments:
+From the `register_callback` definition provided earlier, we see the first line is giving these arguments:
 
-* `$func` = `abc_add_text` (hypothetical)
+* `$func` = `abc_add_text`
 * `$event` = `article_ui`
 * `$step` = `extend_col_1`
 
-So `abc_add_text` is the named custom function in this case, and
-`article_ui` and `extend_col_1` are the actual *event* and *step* in
-core that define the callback action. The event value (`article_ui`)
-makes clear the callback action is made to the
-*include/txp_article.php* file, which is where all **Write** panel UI
-modification callbacks are made to.
+So `abc_add_text` is the named custom function in this case, and `article_ui` and `extend_col_1` are the actual *event* and *step* in
+core that define the callback action. The event value (`article_ui`) makes clear the callback action is made to the *include/txp_article.php* file, which is where all **Write** panel UI modification callbacks are made.
 
-The next line of code is the actual callback function, namely
-`abc_add_text()`. The particular `$event`/@\$step@ combination passed to
-the function only outputs new content (we're not modifying anything), so
-`$data` and `$rs` are ignored and the content is returned (output) as
-defined.
+The next line of code is the actual callback function, namely `abc_add_text()`. The particular `$event`/`$step` combination passed to
+the function only outputs new content (we're not modifying anything), so `$data` and `$rs` are ignored and the content is returned (output) as defined.
 
 #### Adding new elements to existing panel markup
 
-Another way to add elements is to existing markup. For example, to add
-the `url_title` below the article's **Title** field, you could do this:
+Another way to add elements is to existing markup. For example, to add the `url_title` below the article's **Title** field, you could do this:
 
 ~~~ php
 register_callback('abc_append_item', 'article_ui', 'title');
@@ -274,20 +227,14 @@ function abc_append_item($event, $step, $data, $rs) {
 }
 ~~~
 
-Here we return the default markup (`$data`) and tack on our own markup
-which we read from the record set (`$rs`) that was passed to our
+Here we return the default markup (`$data`) and tack on our own markup which we read from the record set (`$rs`) that was passed to our
 function.
 
 ### Altering admin-side panel elements
 
-Most of the UI elements in the admin-side panels can be altered or
-removed, depending on how you write your functions. In this let's alter
-something by looking in the default markup for particular items to
-change. This is the least robust mechanism but it can be very useful at
-times.
+Most of the UI elements in the admin-side panels can be altered or removed, depending on how you write your functions. In this example, let's alter something by looking in the default markup for particular items to change. This is the least robust mechanism but it can be very useful at times.
 
-Consider this example, which adds a radio button to the existing button
-series in the **Write** panel's **Status** widget:
+Consider this example, which adds a radio button to the existing button series in the **Write** panel's **Status** widget:
 
 ~~~ php
 register_callback('abc_altered_status', 'article_ui', 'status');
@@ -302,16 +249,11 @@ function abc_altered_status($event, $step, $data, $rs) {
 }
 ~~~
 
-Again we've used `register_callback()` to define our callback function,
-and in this case we've employed the `$event`/@\$step@ combination for
-targeting the **Status** widget in the **Write** panel. The function
-then pulls the default record set, defines a new status button option
-for inclusion, and returns (outputs) the resulting altered list.
+Again we've used `register_callback()` to define our callback function, and in this case we've employed the `$event`/`$step` combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, and returns (outputs) the resulting altered list.
 
 ### Removing admin-side panel elements
 
-In this case, let's say you wanted to remove the **Keywords** field.[^5]
-You could hook into the `keywords` step and return a space character:
+In this case, let's say you wanted to remove the **Keywords** field.[^5] You could hook into the `keywords` step and return a single space character:
 
 ~~~ php
 register_callback('abc_remove_keywords', 'article_ui', 'keywords');
@@ -321,24 +263,19 @@ function abc_remove_keywords($event, $step, $data, $rs) {
 }
 ~~~
 
-That's it! The returned space character (`return ' '`) replaces the
-keywords field, effectively removing it.
+That's it! The returned space character (`return ' '`) replaces the keywords field, effectively removing it.
 
 ## Plugin lifecycle management and preferences
 
-Plugins can opt into receiving `plugin_prefs` and `plugin_lifecycle`
-events. The opt-in is signalled to core by flagging your intention using
-`$plugin['flags']`.
+Plugins can opt into receiving `plugin_prefs` and `plugin_lifecycle` events. The opt-in is signalled to core by flagging your intention using `$plugin['flags']`.
 
-`PLUGIN_LIFECYCLE_NOTIFY` and `PLUGIN_HAS_PREFS` are defined bit masks
-(human-readable) that you can use in any appropriate combination
+`PLUGIN_LIFECYCLE_NOTIFY` and `PLUGIN_HAS_PREFS` are defined bit masks (human-readable) that you can use in any appropriate combination
 (`PLUGIN_LIFECYCLE_NOTIFY | PLUGIN_HAS_PREFS`, etc).
 
-Once you flag your intention to use the events, `register_callback()`
-can define where the event fires:
+Once you flag your intention to use the events, `register_callback()` can define where the event fires:
 
 ~~~ php
-register_callback('abc_plugin_prefs_panel', 'plugin_prefs.abc_plugin');
+register_callback('abc_plugin_my_prefs_panel', 'plugin_prefs.abc_plugin');
 ~~~
 
 Or:
@@ -357,11 +294,7 @@ register_callback('my_disable_routine',
     'plugin_lifecycle.abc_plugin', 'disabled');
 ~~~
 
-Textpattern reserves the lower twelve bits of `$plugin['flags']` for its
-own use, plugin developers may take advantage of the remaining four
-(`~PLUGIN_RESERVED_FLAGS`). These might come in handy to trigger some
-one-time actions, as these bits are copied into the *txp_plugin* table
-row for any particular plugin whenever it is uploaded.
+Textpattern reserves the lower twelve bits of `$plugin['flags']` for its own use, plugin developers may take advantage of the remaining four (`~PLUGIN_RESERVED_FLAGS`). These might come in handy to trigger some one-time actions, as these bits are copied into the *txp_plugin* table row for any particular plugin whenever it is uploaded.
 
 ## Variables, classes and constants
 
@@ -382,7 +315,7 @@ Two basic plugin tutorials to put it all in perspective:
 
 ## Implementation resources
 
-Now you know what plugins are and you're ready to kick plugin ass! You'll probably need some combination of these to see the job through:
+Now you know what plugins are, you're ready to kick plugin ass! You'll probably need some combination of these to see the job through:
 
 **Plugin code template:**
 
@@ -395,19 +328,11 @@ Always use a template when one is available, and there is:
 
 **Plugin composer:**
 
-Namely, the
-[ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer)
-plugin, as mentioned before. A plugin to build plugins. Ironic, eh?
-Truth is, this plugin is *extremely* useful: It allows you to create,
-code, and document plugins, then publish them in either conventional
-text format, compressed text format, or exported in the standard
-template format for sharing with developers or using in the plugin cache
-directory. This plugin also lets you directly edit plugins that are in
-the plugin cache directory.
+Namely, the [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer) plugin, as mentioned before. A plugin to build plugins. Ironic, eh? Truth is, this plugin is *extremely* useful: It allows you to create, code, and document plugins, then publish them in either conventional text format, compressed text format, or exported in the standard template format for sharing with developers or using in the plugin cache directory. This plugin also lets you directly edit plugins that are in the plugin cache directory.
 
 **Plugin user-help template and guidelines:**
 
-One of the [Developer rules of the road](#developer-rules-of-the-road). When you're plugin is done (or as you code it), it's time to write that tight and useful plugin help documentation. There's a template for that:
+One of the [Developer rules of the road](#developer-rules-of-the-road). When your plugin is done (or as you code it), it's time to write that tight and useful plugin help documentation. There's a template for that:
 
 -   [Plugin user-help
     guidelines](https://docs.textpattern.io/development/plugin-user-help-guidelines)
@@ -424,15 +349,9 @@ Get your repos here; something for everyone. A few git commands included.
 
 These may be useful depending on the kind of plugin you're building.
 
--   [User role types and
-    privileges](https://docs.textpattern.io/administration/user-roles-and-privileges)
-    (If your plugin will interact with user accounts.)
--   [Database schema
-    reference](https://docs.textpattern.io/development/database-schema-reference)
-    (If your plugin will need a database table.)
--   [**Extensions**](https://docs.textpattern.io/administration/extensions-region)
-    (If your admin-side plugin will provide *Publisher* controls in it's
-    own panel under **Extensions**.)
+-   [User role types and privileges](https://docs.textpattern.io/administration/user-roles-and-privileges) (If your plugin will interact with user accounts.)
+-   [Database schema reference](https://docs.textpattern.io/development/database-schema-reference) (If your plugin will need a database table.)
+-   [**Extensions**](https://docs.textpattern.io/administration/extensions-region) (If your admin-side plugin will provide *Publisher* controls in its own panel under **Extensions**.)
 
 **Miscellaneous tools:**
 
@@ -440,11 +359,8 @@ These are
 [questionable](https://github.com/textpattern/textpattern.github.io/issues/34)
 until further notice.
 
--   [Generate a list of tags and
-    attributes](https://forum.textpattern.io/viewtopic.php?id=12299)
-    \[???\]
--   [Command-line plugin
-    decoder](https://forum.textpattern.io/viewtopic.php?id=4252) \[???\]
+-   [Generate a list of tags and attributes](https://forum.textpattern.io/viewtopic.php?id=12299)
+-   [Command-line plugin decoder](https://forum.textpattern.io/viewtopic.php?id=4252)
 
 ## Getting help
 
