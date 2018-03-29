@@ -12,9 +12,9 @@ Shortcode for a file download snippet with optional SHA256 checksum and includin
 
 On this page:
 
-* [Forms to create](forms-to-create)
-* [Short-tag to use](short-tag-to-use)
-* [Example usage](example-usage)
+* [Forms to create](#forms-to-create)
+* [Short-tag to use](#short-tag-to-use)
+* [Example usage](#example-usage)
 
 ## Forms to create
 

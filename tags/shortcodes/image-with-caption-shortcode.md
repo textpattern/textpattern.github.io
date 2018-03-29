@@ -12,12 +12,12 @@ Adding an image as a figure with caption is a common desire with web publishers.
 
 On this page:
 
-* [Scenario](scenario)
-* [Form to use](form-to-use)
-* [Short-tag to use](short-tag-to-use)
-* [Tag attributes](tag-attributes)
-* [Notes](notes)
-* [Example usage](example-usage)
+* [Scenario](#scenario)
+* [Form to use](#form-to-use)
+* [Short-tag to use](#short-tag-to-use)
+* [Tag attributes](#tag-attributes)
+* [Notes](#notes)
+* [Example usage](#example-usage)
 
 ## Scenario
 

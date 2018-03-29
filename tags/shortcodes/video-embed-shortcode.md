@@ -12,9 +12,9 @@ The shortcode to create a HTML5-compliant video snippet and including [Schema.or
 
 On this page:
 
-* [Form to create](form-to-create)
-* [Short-tag to use](short-tag-to-use)
-* [Example usage](example-usage)
+* [Form to create](#form-to-create)
+* [Short-tag to use](#short-tag-to-use)
+* [Example usage](#example-usage)
 
 ## Form to create
 
