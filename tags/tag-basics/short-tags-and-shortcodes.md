@@ -2,16 +2,16 @@
 layout: document
 category: Tag basics
 published: true
-title: Short tags and macros/shortcodes
-description: Since Textpattern 4.7, short tags and also the shortcodes concept are supported.
+title: Short-tags and shortcodes
+description: Since Textpattern 4.7, short-tags and also the shortcodes concept are supported.
 ---
 
-# Short tags and macros/shortcodes
+# Short-tags and shortcodes
 
 On this page:
 
 * [Short tags](#short-tags)
-* [Form templates as custom tags (a.k.a. macros or shortcodes)](#form-templates-as-custom-tags-aka-macros-or-shortcodes)
+* [Shortcode Forms)](#shortcode-forms)
 * [Shortening tag attributes](#shortening-tag-attributes)
 * [Shortening tag constructs using negation](#shortening-tag-constructs-using-negation)
 
@@ -34,7 +34,7 @@ If a tag contains an underscore `_` and you enable short tags, the basic concept
 1. Remove the `txp:` prefix.
 2. Swap the first occurrence of the underscore for `::`.
 
-## Form templates for custom shortcode tags (a.k.a. macros)
+## Shortcode forms
 
 There’s one exception to the rule above regarding the `<txp:output_form>` tag. Beginning with Textpattern 4.7.0, it is possible to use [Form templates](https://docs.textpattern.io/themes/form-templates-explained) to create custom shortcode tags (similar to macros with the smd_macro plugin, which core shortcode functionality now makes obsolete).
 
