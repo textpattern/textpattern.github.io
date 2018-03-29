@@ -13,7 +13,7 @@ In addition to the [core short-tags]() functionality introduced in Textpattern 4
 On this page:
 
 * [Core short-tags](#core-short-tags)
-* [Custom short-tags)](#custom-short-tags)
+* [Custom short-tags](#custom-short-tags)
 * [Shortcodes](#shortcodes)
 
 ## Core short-tags
@@ -37,6 +37,20 @@ If you named your shortcode Form, _image_figure_, the tag would be usable as:
 ``` 
 
 And so on.
+
+But, if you opt to disable short-tag functionality in the Preferences panel, you can still use the shortcode Form via an `output_form` tag like this:
+
+```
+<txp:output_form yield form="figure" />
+```
+
+In this case the `yield` is necessary to process the custom attributes.
+
+Alternatively, the attributes can be defined explicitly in the tag: 
+
+```
+<txp:output_form yield="id, caption" form="figure" />
+```
 
 ## Shortcodes
 
