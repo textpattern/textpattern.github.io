@@ -11,7 +11,7 @@ description: Since Textpattern 4.7, short-tags and also the shortcodes concept a
 On this page:
 
 * [Short tags](#short-tags)
-* [Shortcode Forms)](#shortcode-forms)
+* [Shortcode Forms](#shortcode-forms)
 * [Shortening tag attributes](#shortening-tag-attributes)
 * [Shortening tag constructs using negation](#shortening-tag-constructs-using-negation)
 
