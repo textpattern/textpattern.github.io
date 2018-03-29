@@ -142,4 +142,4 @@ Create valid [JSON-LD](https://json-ld.org) for the `<head>` section of an [AMP]
 </script>
 ~~~
 
-[Next: Short tags (shortcodes)](shortcodes)
+[Next: Short-tags and shortcodes](https://docs.textpattern.io/tags/shortcodes/short-tags-and-shortcodes)
