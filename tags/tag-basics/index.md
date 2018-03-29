@@ -23,4 +23,4 @@ Below are a series of tag fundamentals, which will get you up and running with T
 5. [Incorrect tag contexts](incorrect-tag-contexts)
 6. [Short-form versus long-form usage](shortform-vs-longform-usage)
 7. [Tag escaping](tag-escaping)
-8. [Short-tags and shortcodes](short-tags-and-shortcodes) (and see [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/))
+8. [https://docs.textpattern.io/tags/shortcodes/short-tags-and-shortcodes](short-tags-and-shortcodes) (and see [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/))
