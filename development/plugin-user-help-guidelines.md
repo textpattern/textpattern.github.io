@@ -14,10 +14,10 @@ Equally important to help file structure is writing concisely (without sacrifici
 
 On this page:
 
--   [Suggested help sections](#sec1)
--   [The template](#sec2)
--   [Template guidelines](#sec3)
--   [Textile formatting](#sec4)
+-   [Suggested help sections](#suggested-sections)
+-   [The template](#the-template)
+-   [Template guidelines](#template-guidelines)
+-   [Textile formatting](#textile-formatting)
 
 ## Suggested sections
 
