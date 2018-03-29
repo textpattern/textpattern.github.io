@@ -152,25 +152,41 @@ The `file-category` form returns some markup (in this case, just a series of lin
 
 The upshot is that this variable can be tested with [if_variable](https://docs.textpattern.io/tags/if_variable) to see if it contains anything at all and - if it does, the file list can be displayed. Conversely, if there are no files for that language then the [else](https://docs.textpattern.io/tags/else) part of the conditional statement is displayed.
 
-## Valueless attributes (since 4.7)
+## Valueless attributes (since 4.7.0)
 
-Some tags interprete in a special way attributes without any value set. For example, suppose that you need to display something if `<txp:variable name="test" />` is not empty. Before 4.7, you would do it this way:
+Tags interpret attributes without any value set in a special way. For example, suppose that you need to display something if `<txp:variable name="test" />` contains any information, i.e. is not empty. Before Textpattern 4.7.0, you would do it this way:
 
 ~~~ html
 <txp:if_variable name="test" value="">
 <txp:else />
-    display something
+    display something if variable has content
 </txp:if_variable>
 ~~~
 
-Starting with 4.7 this is more straightforward:
+Starting with 4.7.0 this is more straightforward:
 
 ~~~ html
 <txp:if_variable name="test" value>
-    display something
+    display something if variable has content
 </txp:if_variable>
 ~~~
 
-In this case, the valueless `value` attribute is interpreted as "some not empty value". For other tags, the meaning of valueless attributes may be different. Generally, they are interpreted in the most "natural" or "useful" way, as above. Plugin developpers wishing to treat valueless attributes should just note that internally their parsed value is the Boolean `true`.
+In this case, the valueless `value` attribute is interpreted as "some not empty value". For other tags, the meaning of valueless attributes may be different. Generally, they are interpreted in the most "natural" or "useful" way, as above. Plugin developers wishing to treat valueless attributes should just note that internally their parsed value is the Boolean `true`.
+
+Additionally, there are now two ways to establish if something is _not set_:
+
+~~~ html
+<txp:if_variable name="test" value="">
+    display something if variable is empty
+</txp:if_variable>
+~~~
+
+or using the new `not` attribute:
+
+~~~ html
+<txp:if_variable name="test" not value>
+    display something if variable is empty
+</txp:if_variable>
+~~~
 
 [Next: Incorrect tag contexts](incorrect-tag-contexts)
