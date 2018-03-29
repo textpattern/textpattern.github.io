@@ -8,7 +8,7 @@ description: A collection of useful shortcodes that are ready to  use
 
 # Shortcode examples
 
-Beginning in Textpattern 4.7.0, you can use the new short-tags functionality in combination with specific Form templates of your own creation (aka “shortcodes”) to more easily add content elements, widgets, and so forth within your articles without need for complex blocks of raw HTML.
+Beginning in Textpattern 4.7.0, you can use the new [short-tags and shortcodes](short-tags-and-shortcodes) functionality to create reusable partials of markup that define things like content elements, widgets, and so forth, then make use of them by adding a simple, custom tag in your articles instead of lengthy, complex blocks of raw HTML.
 
 (The idea is similar to functionality previously provided by the smd_macro plugin, which this new core functionality now makes obsolete.)
 
