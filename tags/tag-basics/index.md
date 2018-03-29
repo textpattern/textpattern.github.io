@@ -24,4 +24,10 @@ Below are a series of tag fundamentals, which will get you up and running with T
 6. [Short-form versus long-form usage](shortform-vs-longform-usage)
 7. [Tag escaping](tag-escaping)
 8. [Short-tags and shortcodes](short-tags-and-shortcodes)
-9. [Shortcode examples](shortcode-examples)
+
+### [Shortcode examples](shortcode-examples)
+
+* Image with caption shortcode (one possible use of HTML `figure` element; pulls data from a Textpattern image)
+* Aside-quote shortcode (one possible use of HTML `aside` element; similar to a pullquote, but pulls data from a Textpattern link)
+* File download shortcode (a download link/widget)
+* Video shortcode (to embed a video)
