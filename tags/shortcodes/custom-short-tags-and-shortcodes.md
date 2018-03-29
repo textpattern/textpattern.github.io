@@ -19,7 +19,7 @@ On this page:
 
 The one difference between the [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags) and custom short-tags is in relation to the `<txp:output_form>` tag. Whenever you create a Textpattern Form intended as a shortcode form (see below), it automatically makes a custom short-tag available for use having the same name as the form.
 
-For example, a shortcode form might be designed to output an image with caption, wrapped up nicely as an HTML `figure`. It just so happens this is explained in the [Image and caption shortcode](image-and-caption-shortcode) doc. You might even name the Form, _figure_, if you never needed another type of figure shortcode form. Buy doing that, you now have a custom short-tag available for use as:
+For example, a shortcode form might be designed to output an image with caption, wrapped up nicely as an HTML `figure`. It just so happens this is explained in the [Image with caption shortcode](image-with-caption-shortcode) doc. You might even name the Form, _figure_, if you never needed another type of figure shortcode form. Buy doing that, you now have a custom short-tag available for use as:
 
 ```
 <txp::figure />
@@ -63,7 +63,5 @@ The `if_yield` container tag (and the `else` tag) can be used to determine if th
 <txp:if_yield name="your-attribute”> … `</txp:if_yield>
 ```
 
-Now, the best way to get started is look at some example shortcodes and tags. Start with the explanatory doc, [Image with caption shortcode](https://docs.textpattern.io/tags/shortcodes/image-with-caption-shortcode).
-
-Then checkout [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/) for more possibilities.
+Now, the best way to get started is look at some [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/) for more possibilities and familiarity.
 
