@@ -49,7 +49,7 @@ Consider an image figure, which is a common need in web publishing:
 
 Writing that block of nested markup each time you want a figure is tedious, and a messy distraction in your article copy when editing. It’s also a pain to find and edit such markup when you need to later.
 
-Instead, using the power of the `<txp:yield>` tag, Form template shortcodes, and the new short-tags functionality, you can create the nested markup block once, output it anywhere needed, and only make the specific data attributes dynamic, namely `id`, `class`, and `caption`.
+Instead, using the power of the `<txp:yield>` tag, Form template shortcodes, and the new short-tags functionality, you can create the nested markup block once, output it anywhere needed, and only change the specific data attributes (namely `id`, `class`, and `caption`).
 
 Here’s how to do figures:
 
