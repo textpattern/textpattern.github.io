@@ -41,12 +41,12 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### Tags
 
-#### Core tags
+**Core tags**
 * [Tags reference](https://docs.textpattern.io/tags/)
-* [Tag use basics](https://docs.textpattern.io/tags/tag-basics/). A series of docs to facilitate tag learning.
+* [Tag use basics](https://docs.textpattern.io/tags/tag-basics/)
 * [Tags in development](https://docs.textpattern.io/tags/tags-in-development)
 
-#### Custom tags
+**Custom tags**
 * [Short-tags and shortcodes](https://docs.textpattern.io/tags/shortcodes/short-tags-and-shortcodes)
 * [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/shortcode-examples)
 
