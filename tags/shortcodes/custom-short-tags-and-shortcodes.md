@@ -8,21 +8,16 @@ description: Since Textpattern 4.7.0, Textpattern provides the ability to create
 
 # Custom short-tags and shortcodes
 
-In addition to the [core short-tags]() functionality introduced in Textpattern 4.7.0, you can also generate custom short-tags by creating specific reusable Form templates, which we are dubbing “shortcodes”. A shortcode is like any other partial of code you may develop in a Textpattern Form, but it’s designed with the intention of using in relation to an associated custom short-tag. This new functionality is similar in concept to what the smd_macro plugin provided, which is now obsolete against this new custom short-tags/shortcode functionality. 
+In addition to the [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags) functionality introduced in Textpattern 4.7.0, which you should read for background, you can also generate custom short-tags by creating specific reusable Form templates, which we are dubbing “shortcodes”. A shortcode is like any other partial of code you may develop in a Textpattern Form, but it’s designed with the intention of using in relation to an associated custom short-tag. This new functionality is similar in concept to what the smd_macro plugin provided, which is now obsolete against this new custom short-tags/shortcode functionality. 
 
 On this page:
 
-* [Core short-tags](#core-short-tags)
 * [Custom short-tags](#custom-short-tags)
 * [Shortcodes](#shortcodes)
 
-## Core short-tags
-
-The concept of custom short-tags is the same as for [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags), so read that doc for background.
-
 ## Custom short-tags
 
-The one difference between the core short-tags and custom short-tags is in relation to the `<txp:output_form>` tag. Whenever you create a Textpattern Form intended as a shortcode form (see below), it automatically makes a custom short-tag available for use having the same name as the form.
+The one difference between the [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags) and custom short-tags is in relation to the `<txp:output_form>` tag. Whenever you create a Textpattern Form intended as a shortcode form (see below), it automatically makes a custom short-tag available for use having the same name as the form.
 
 For example, a shortcode form might be designed to output an image with caption, wrapped up nicely as an HTML `figure`. It just so happens this is explained in the [Image and caption shortcode](image-and-caption-shortcode) doc. You might even name the Form, _figure_, if you never needed another type of figure shortcode form. Buy doing that, you now have a custom short-tag available for use as:
 
@@ -51,6 +46,8 @@ Alternatively, the attributes can be defined explicitly in the tag:
 ```
 <txp:output_form yield="id, caption" form="figure" />
 ```
+
+In this latter case, omitting the `class` attribute means it will be considered as a global attribute and processed accordingly.
 
 ## Shortcodes
 
