@@ -46,6 +46,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
   * [Self-closed vs container tags](https://docs.textpattern.io/tags/tag-basics/self-closed-versus-container-tags)
   * [Conditional tags](https://docs.textpattern.io/tags/tag-basics/conditional-tags)
   * [Parsing tag attributes](https://docs.textpattern.io/tags/tag-basics/parsing-tag-attributes)
+* [Short-tags and shortcodes](https://docs.textpattern.io/tags/tag-basics/short-tags-and-shortcodes)
 * [Tags in development](https://docs.textpattern.io/tags/tags-in-development)
 
 </div>
