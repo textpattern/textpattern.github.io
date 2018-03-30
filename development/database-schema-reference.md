@@ -95,7 +95,7 @@ Contains all the categories you create on the [Categories panel](https://docs.te
 Column | Type | Description
 ---|---|---
 id          |INT          |Unique auto-incremented ID of this category
-name        |VARCHAR(64)  |Category name, used in URLs. Dumbed-down from the Title. The category `root` is reserved (and invisible)
+name        |VARCHAR(64)  |Category name, used in URLs. Sanitised from the Title. The category `root` is reserved (and invisible)
 type        |VARCHAR(64)  |Type of media this category is used for: `article`, `image`, `file` or `link`)
 parent      |VARCHAR(64)  |Parent category name. Determines the hierarchical place of this category compared to other categories. By default it's set to 'root' to indicate that it's a top level category
 lft         |INT          |Left pointer. Used to maintain category hierarchy using the modified preorder tree traversal algorithm
@@ -146,7 +146,7 @@ visible   |TINYINT         |Publication status (-1 = Spam, 0 = waiting for moder
 
 Index type | Name | Definition
 ---|---|---
-PRIMARY KEY |- |   (discussid)
+PRIMARY KEY |-  |(discussid)
 INDEX |parentid |(parentid)
 
 ## txp_discuss_nonce
@@ -199,7 +199,7 @@ The `txp_form` table contains all the forms, which are created on the [Forms pan
 
 Column | Type | Description
 ---|---|---
-name    |VARCHAR(255) |Form name, dumbed down to only contain alphanumeric characters, underscores or hyphens
+name    |VARCHAR(255) |Form name, sanitised to only contain alphanumeric characters, underscores or hyphens
 type    |VARCHAR(28)  |Form type: `article`, `category`, `comment`, `file`, `link`, `misc` or `section`
 Form    |TEXT         |Contents of the form: HTML, Textpattern tags and text (max 64KB)
 skin    |VARCHAR(63)  |The theme to which this style is associated
@@ -354,39 +354,68 @@ INDEX  |status_type_idx |(status, type)
 
 ## txp_prefs
 
-The `txp_prefs` table contains all the administration preferences.
+Contains all the administration preferences. Both global (admin-defined) and per-user settings are stored. Plugins may also use this table to store their own settings.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column       Type           Description
-  ------------ -------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  prefs_id    integer        Unknown (always set to 1?)
-  name         varchar(255)   Name that identifies this preference
-  val          text           Contents/setting of this preference (max 64kB)
-  type         integer        Where is it shown on the Preferences tab? (0 = basic, 1 = advanced, 2 = hidden)
-  event        varchar(12)    Event to which this preference applies. Allows related preferences to be shown together on the Preferences tab
-  html         varchar(64)    Type of HTML code used for display when editing this preference: yesnoradio, text_input, gmtoffset_select, logging, permlinkmodes, commentmode, weeks, languages, dateformats, prod_levels or pref_text
-  position     integer        Display position of this preference among others within the same event on the Preferences tab
-  user_name   varchar(64)    login name of the user to whom this preference applies (by default set to an empty string to indicate that the preference is not bound to a specific user)
+Column | Type | Description
+---|---|---
+name      |VARCHAR(255)      |Unique name that identifies this preference. Used as a key
+val       |TEXT              |Contents/setting of this preference (max 64KB)
+type      |SMALLINT UNSIGNED |Preference type / visibility (0 = core, shown on preferences panel; 1 = plugin; 2 = hidden)
+event     |VARCHAR(255)      |Event to which this preference applies. Allows related preferences to be shown together on the Preferences panel
+html      |VARCHAR(255)      |Type of HTML code used to render this setting on the preferences panel. For example, `yesnoradio`, `text_input` (default), or a custom function. For hidden preferences, use text_input
+position  |SMALLINT UNSIGNED |Display position of this preference among others within the same event on the Preferences panel
+user_name |VARCHAR(64)       |Login name of the user to whom this preference applies. Global preferences that are not specific to any particular user are denoted by an empty string here
 
-</div>
+### Indexes
+
+Index type | Name | Definition
+---|---|---
+UNIQUE |prefs_idx |(name(185), user_name)
+INDEX  |name      |(name(250))
+INDEX  |user_name |(user_name)
 
 ## txp_section
 
-The `txp_section` table contains all the sections you create on the [Sections panel](https://docs.textpattern.io/administration/sections-panel).
+Contains all the sections you create on the [Sections panel](https://docs.textpattern.io/administration/sections-panel).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column          Type           Description
-  --------------- -------------- ---------------------------------------------------------------------------------------------
-  name            varchar(128)   Section name (used in URL)
-  page            varchar(128)   Page template used for this section
-  css             varchar(128)   Style sheet used for this section
-  is_default     integer        Default section for new articles? (0 = no, 1 = yes). Only one section can be set as default
-  in_rss         integer        Include articles in this section in the site's RSS or Atom XML feeds? (0 = no, 1 = yes)
-  on_frontpage   integer        Show articles in this section on the front page (0 = no, 1 = yes)
-  searchable      integer        Are articles in this section searchable? (0 = no, 1 = yes)
-  title           varchar(255)   Section title
+Column | Type | Description
+---|---|---
+name         |VARCHAR(255) |Section name (used in URL)
+skin         |VARCHAR(63)  |Theme associated with this section
+page         |VARCHAR(255) |Page template used for this section
+css          |VARCHAR(255) |Style sheet used for this section
+description  |VARCHAR(255) |Section description. Can be used for outputting meta data or section details on landing pages
+in_rss       |INT          |Whether to include articles in this section in the site's RSS or Atom XML feeds (0 = no, 1 = yes)
+on_frontpage |INT          |Whether to display articles in this section on the front page (0 = no, 1 = yes)
+searchable   |INT          |Whether articles in this section are searchable (0 = no, 1 = yes)
+title        |VARCHAR(255) |Human-friendly section title
 
-</div>
+### Indexes
+
+Index type | Name | Definition
+---|---|---
+INDEX |page_skin |(page(50), skin(63))
+INDEX |css_skin  |(css(50), skin(63))
+
+## txp_skin
+
+Contains public theme information as defined on the [Themes panel](https://docs.textpattern.io/administration/themes-panel). A theme is a collection of Pages, Forms and style sheets. It is referred to as a 'skin' internally because 'theme' was already taken by admin-themes. May be optionally exported to the file system and imported.
+
+Column | Type | Description
+---|---|---
+name        |VARCHAR(63)    |Theme name. Sanitised to only contain filesystem-friendly characters
+title       |VARCHAR(255)   |Human-friendly theme name
+version     |VARCHAR(255)   |Version in [semver](https://semver.org/) dotted format
+description |VARCHAR(10240) |Short description of theme's purpose (should try to limit to 255 chars)
+author      |VARCHAR(255)   |Theme author name
+author_uri  |VARCHAR(255)   |URL of the theme author's website
+lastmod     |DATETIME       |Modification date and time of the theme
+
+### Indexes
+
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY |- |(name(63))
 
 ## txp_users
 
