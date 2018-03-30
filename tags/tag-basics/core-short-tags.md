@@ -8,35 +8,70 @@ description: Since Textpattern 4.7.0, all Textpattern tags can be written and us
 
 # Core short-tags
 
-It is now possible to even further reduce the amount of typing involved when writing Textpattern tags, by enabling a shorthand notation.
+Beginning with Textpattern release 4.7.0, it’s possible to further reduce — on top of [integrated notation](integrated-tag-notation) — the amount of typing involved when writing Textpattern tags.
 
 On this page:
 
-* [Short-tag example usage](#short-tag-examaple-usage)
+* [Short-tag structure](#short-tag-structure)
 * [Shortening tag attributes](#shortening-tag-attributes)
 * [Shortening tag constructs using negation](#shortening-tag-constructs-using-negation)
 * [Custom short-tags](#custom-short-tags)
 
-## Short-tag example usage
+## Short-tag structure
 
-Textpattern tags take the form:
+First let’s review some Textpattern tag basics, which includes how plugin tags are too. Textpattern tag names can be single words (i.e. `name`), or compound names with underscores (i.e. `compound_name`). Tags can also be either [self-closing or container tags](self-closed-versus-container-tags).
 
-```
-<txp:tag_name attribute1="value" ... />
-```
+Short-tag structure only concerns tags (including plugin tags) with compound names, whether self-closing or used as containers.
 
-When short-tags are enabled in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#enable-short-tag-support), which the are by default, the `txp:` part of the tag may be omitted by following a few simple guidelines:
-
-* `<txp:article_id />` becomes `<article::id />`.
-* `<txp:recent_articles/>` becomes `<recent::articles />`.
-* `<txp:file_download_list />` becomes `<file::download_list />`.
-* `<txp:smd_if />` becomes `<smd::if />`.
-* `<txp:smd_if> ... <txp:else /> ... </txp:smd_if>` becomes `<smd::if> ... <smd::else /> ... </smd::if>` (note that the plugin prefix can be used for the `else` tag).
-
-If a tag contains an underscore `_` and you enable short tags, the basic concept is:
+**Here’s the general rule:** 
+If the short-tag functionality is enabled in [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#enable-short-tag-support), which it is by default, and the tag has a compound name, you can:
 
 1. Remove the `txp:` prefix.
-2. Swap the first occurrence of the underscore for `::`.
+2. Swap the first instance of underscore with `::`.
+
+A self-closing tag like `<txp:article_id />` becomes `<article::id />`.
+
+Container tags like:
+
+```
+<txp:if_article_id> 
+   … 
+ <txp:else /> 
+   … 
+</txp:if_article_id>
+``` 
+
+Become:
+
+```
+<if::article_id>
+   … 
+ <txp:else /> 
+   …
+</if::article_id>
+```
+
+The same applies to plugin tags too of both kind. For example this one:
+
+```
+<txp:smd_if>
+   ...
+ <txp:else /> 
+   ...
+</txp:smd_if>
+```
+
+Becomes:
+
+```
+<smd::if> 
+   ...
+ <smd::else /> 
+   ...
+</smd::if>
+```
+
+Note in the latter example, the plugin prefix can be used for the `else` tag, which is only relevant to plugin tags used as containers.
 
 ## Shortening tag attributes
 
