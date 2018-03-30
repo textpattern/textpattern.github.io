@@ -70,7 +70,7 @@ The admin side has many places where plugins and themes can inject or replace co
 In this section:
 
 * [Header block](#header-block)
-* [Footer block](#footer block)
+* [Footer block](#footer-block)
 * [General UI widgets](#widgets)
 * [Write panel](#write-panel)
 * [Category panel](#category-panel)
@@ -350,7 +350,44 @@ In this section:
 
 ### Preferences panel
 
-TBD
+`prefs_ui > gmtoffset`
+* **When it occurs:** The timezone selector on the Preferences panel.
+* **What it allows:** Addition or alteration of the timezone selector.
+* **Argument \#3:** The HTML of the select input.
+* **Argument \#4:** The name of the HTML element being drawn.
+* **Argument \#5:** The current value of the HTML element being drawn.
+
+`prefs_ui > is_dst`
+* **When it occurs:** The Daylight Savings Time radio option on the Preferences panel.
+* **What it allows:** Addition or alteration of the DST option.
+* **Argument \#3:** The HTML of the radio button and its associated JavaScript.
+* **Argument \#4:** The name of the HTML element being drawn.
+* **Argument \#5:** The current value of the HTML element being drawn.
+
+`prefs_ui > weeks`
+* **When it occurs:** The log retention select list on the Preferences panel.
+* **What it allows:** Addition or alteration of the list of log retention periods.
+* **Argument \#3:** The HTML of the select list.
+* **Argument \#4:** The name of the HTML element being drawn.
+* **Argument \#5:** The current value of the HTML element being drawn.
+
+`prefs_ui > dateformats`
+* **When it occurs:** The date format select list on the Preferences panel.
+* **What it allows:** Addition or alteration of the list of permitted date formats.
+* **Argument \#3:** The HTML of the select list.
+* **Argument \#4:** The array of available values, the current selected value, the HTML element name and the current system timestamp.
+
+`prefs_ui > custom_set`
+* **When it occurs:** An individual custom field on the Preferences panel.
+* **What it allows:** Addition or alteration of the given custom field.
+* **Argument \#3:** The HTML of the custom field control.
+* **Argument \#4:** The name of the HTML element being drawn.
+* **Argument \#5:** The current value of the HTML element being drawn.
+
+`prefs_ui > theme_name`
+* **When it occurs:** The list of available admin themes on the Preferences panel.
+* **What it allows:** Addition or alteration of the list of available admin themes.
+* **Argument \#3:** The HTML of the select list.
 
 ### Users panel
 
