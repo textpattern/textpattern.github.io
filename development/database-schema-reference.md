@@ -27,6 +27,7 @@ On this page:
 * [txp_plugin](#txp_plugin)
 * [txp_prefs](#txp_prefs)
 * [txp_section](#txp_section)
+* [txp_skin](#txp_skin)
 * [txp_token](#txp_token)
 * [txp_users](#txp_users)
 
@@ -417,23 +418,47 @@ Index type | Name | Definition
 ---|---|---
 PRIMARY KEY |- |(name(63))
 
+## txp_token
+
+Contains cryptographically-secure keys for password resets and user registration. Plugins may use this to store security-based token information.
+
+Column | Type | Description
+---|---|---
+id           |INT          |Unique auto-incremented ID of this token
+reference_id |INT          |The row in another table to which this token refers. For users, this is the user_id of the account to which the token belongs
+type         |VARCHAR(255) |Arbitrary classification of this token. Core uses `password_reset` and `account_activation`
+selector     |VARCHAR(12)  |Part of the hash used as an identifier to refer to this token. Usually passed from the URL. This is a safe way to refer to this token without leaking the internal reference_id to the outside world
+token        |VARCHAR(255) |The cryptographically-secure token itself
+expires      |DATETIME     |The date and time at which the token expires
+
+### Indexes
+
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY |- |(id)
+UNIQUE |ref_type |(reference_id, type(50))
+
 ## txp_users
 
-The `txp_users` table contains information for all users, as displayed on the [Users panel](https://docs.textpattern.io/administration/users-panel).
+Contains information for all users, as displayed on the [Users panel](https://docs.textpattern.io/administration/users-panel).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column         Type           Description
-  -------------- -------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  user_id       integer        Unique auto-incremented ID of this user
-  name           varchar(64)    Login name
-  pass           varchar(128)   Password
-  RealName       varchar(64)    Real name
-  email          varchar(100)   Email address (used for sending passwords and comment notifications
-  privs          integer        Privilege level (0 = none, 1 = publisher, 2 = managing editor, 3 = copy editor, 4 = staff writer, 5 = freelancer, 6 = designer). Indicates what the user is allowed to do, once logged in on the admin side
-  last_access   datetime       Date and time when the user last logged in by entering a valid username and password combination
-  nonce          varchar(64)    Unique identifier used for cookie authentication (do NOT touch this in plugins!)
+Column | Type | Description
+---|---|---
+user_id     |INT          |Unique auto-incremented ID of this user
+name        |VARCHAR(64)  |Login name
+pass        |VARCHAR(128) |Password
+RealName    |VARCHAR(255) |Real name
+email       |VARCHAR(254) |Email address (used for sending passwords and comment notifications)
+privs       |TINYINT      |Privilege level (0 = none, 1 = publisher, 2 = managing editor, 3 = copy editor, 4 = staff writer, 5 = freelancer, 6 = designer). Indicates what the user is allowed to do, once logged in on the admin side
+last_access |DATETIME     |Date and time when the user last logged in by entering a valid username and password combination
+nonce       |VARCHAR(64)  |Unique identifier used for cookie authentication (do NOT touch this in plugins!)
 
-</div>
+### Indexes
+
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY |- |(user_id)
+UNIQUE |name |(name)
 
 [^1]: The size limits shown in the *Description* for various table columns (e.g. the `Body` column of the `textpattern` table) may differ slightly from the actual size limits found in the tables created by Textpattern during installation (when a column is used in multiple tables, the smallest size is used). You should consider the limits indicated here as authoritative. When in doubt, ask a developer on the forum.
 
