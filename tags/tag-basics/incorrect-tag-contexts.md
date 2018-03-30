@@ -75,4 +75,4 @@ The following contexts are recognised by Textpattern:
     </table>
 </div>
 
-[Next: Short-form versus long-form usage](shortform-vs-longform-usage)
+[Next: Integrated tag notation](integrated-tag-notation)
