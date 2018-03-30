@@ -65,13 +65,6 @@ The associated steps are:
 * `pour`
 * `css_skin_change`
 
-## 'diag' event
-
-The associated steps are:
-
-* `low`
-* `high`
-
 ## 'discuss' event
 
 The associated steps are:
