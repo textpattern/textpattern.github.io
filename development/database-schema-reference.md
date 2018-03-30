@@ -32,7 +32,7 @@ On this page:
 
 ## textpattern
 
-The `textpattern` table contains the articles you create on the [Write panel](https://docs.textpattern.io/administration/write-panel).
+Contains the articles you create on the [Write panel](https://docs.textpattern.io/administration/write-panel).
 
 Column | Type | Description
 ---|---|---
@@ -86,67 +86,24 @@ INDEX    section_status_idx |(Section(249), Status)
 INDEX    url_title_idx      |(url_title(250))
 FULLTEXT searching          |(Title, Body)
 
-
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  
-  ------------------ -------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ID                 integer        Unique, auto incremented numerical ID of the article
-  Posted             datetime       
-  Expires            datetime       
-  AuthorID           varchar(64)    
-  LastMod            datetime       
-  LastModID          varchar(64)    
-  Title              varchar(255)   
-  Title_html        varchar(255)   
-  Body               mediumtext     
-  Excerpt            text           
-  Body_html         mediumtext     
-  Excerpt_html      mediumtext     
-  Image              varchar(255)   
-  Category1          varchar(64)    
-  Category2          varchar(64)    
-  Annotate           integer        
-  AnnotateInvite     varchar(255)   
-  comments_count    integer        
-  Status             integer        
-  textile_body      integer        
-  textile_excerpt   integer        Excerpt markup (0 = raw HTML and text, 1 = textile, 2 = only convert line breaks. Default = 1)
-  Section            varchar(64)    
-  override_form     varchar(64)    
-  Keywords           varchar(255)   
-  url_title         varchar(255)   
-  custom_1          varchar(255)   
-  custom_2          varchar(255)   2nd Custom field (plain text)
-  custom_3          varchar(255)   3rd Custom field (plain text)
-  custom_4          varchar(255)   4th Custom field (plain text)
-  custom_5          varchar(255)   5th Custom field (plain text)
-  custom_6          varchar(255)   6th Custom field (plain text)
-  custom_7          varchar(255)   7th Custom field (plain text)
-  custom_8          varchar(255)   8th Custom field (plain text)
-  custom_9          varchar(255)   9th Custom field (plain text)
-  custom_10         varchar(255)   10th Custom field (plain text)
-  uid                varchar(32)    
-  feed_time         date           
-
-</div>
-
 ## txp_category
 
-The `txp_category` table contains all the categories you create on the [Categories panel](https://docs.textpattern.io/administration/categories-panel).
+Contains all the categories you create on the [Categories panel](https://docs.textpattern.io/administration/categories-panel).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column   Type           Description
-  -------- -------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  id       integer        Unique auto-incremented ID of this category
-  name     varchar(64)    Category name, used in URLs. The category 'root' is reserved (and invisible)
-  title    varchar(255)   Category title
-  type     varchar(64)    Type of media this category is used for: article, image, file or link)
-  parent   varchar(64)    Parent category name. Determines the hierarchical place of this category compared to other categories. By default it's set to 'root' to indicate that it's a top level category.
-  lft      integer        Used to maintain category hierarchy using the modified preorder tree traversal algorithm
-  rgt      integer        Used to maintain category hierarchy using the modified preorder tree traversal algorithm
+Column | Type | Description
+---|---|---
+id          |INT          |Unique auto-incremented ID of this category
+name        |VARCHAR(64)  |Category name, used in URLs. Dumbed-down from the Title. The category 'root' is reserved (and invisible)
+type        |VARCHAR(64)  |Type of media this category is used for: article, image, file or link)
+parent      |VARCHAR(64)  |Parent category name. Determines the hierarchical place of this category compared to other categories. By default it's set to 'root' to indicate that it's a top level category
+lft         |INT          |Left pointer. Used to maintain category hierarchy using the modified preorder tree traversal algorithm
+rgt         |INT          |Right pointer. Used to maintain category hierarchy using the modified preorder tree traversal algorithm
+title       |VARCHAR(255) |Human-friendly category title
+description |VARCHAR(255) |Category description. Can be used for outputting meta data or category details on landing pages
 
-</div>
+Index | Definition
+---|---
+PRIMARY KEY |(id)
 
 ## txp_css
 
