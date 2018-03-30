@@ -65,13 +65,34 @@ If no other plugin overrides the content by registering a callback on the `abc_h
 
 ## Events and steps reference
 
-The admin side has many places where plugins and themes can inject or replace content on a block-by-block basis. These are all listed here.
+The admin side has many places where plugins and themes can inject or replace content on a block-by-block basis. These are all listed here as _event > step_ and are grouped by panel or functional area for convenience.
+
+In this section:
+
+* [Header block](#header-block)
+* [Footer block](#footer block)
+* [General UI widgets](#widgets)
+* [Write panel](#write-panel)
+* [Category panel](#category-panel)
+* [Images panel](#images-panel)
+* [Files panel](#files-panel)
+* [Links panel](#links-panel)
+* [Themes panel](#themes-panel)
+* [Sections panel](#sections-panel)
+* [Preferences panel](#preferences-panel)
+* [Users panel](#users-panel)
 
 ### Header block
 
 `admin_side > header`
 * **When it occurs:** When the theme's navigation bar is rendered.
 * **What it allows:** Alteration of the main panel navigation area. Theme authors do this by writing a `header()` function in their theme's PHP file.
+
+`admin_side > html_title`
+* **When it occurs:** Every admin-side panel.
+* **What it allows:** Altering the HTML `<title>` tag contents for an admin-side page.
+* **Argument \#3:** The default title markup.
+* **Argument \#4:** The raw title passed in as arguments to the function: `pagetitle`.
 
 `admin_side > theme_name`
 * **When it occurs:** When the theme's name is set.
@@ -109,3 +130,68 @@ The admin side has many places where plugins and themes can inject or replace co
 * **Argument \#3:** The default markup.
 * **Argument \#4:** The value of `help_var` passed into the function.
 
+### Write panel
+
+TBD
+
+### Category panel
+
+`category_ui > extend_detail_form`
+* **When it occurs:**  On the Category edit panel, after the core fields have been drawn.
+* **What it allows:** Addition of any fields when editing a category.
+* **Argument \#3:** (not used)
+* **Argument \#4:** The record row that pertains to the current category being edited.
+
+### Images panel
+
+`image_ui > extend_detail_form`
+* **When it occurs:**  On the Image edit panel, after the core fields have been drawn.
+* **What it allows:** Addition of any fields when editing image metadata.
+* **Argument \#3:** (not used)
+* **Argument \#4:** The record row that pertains to the current image being edited.
+
+More...
+
+### Files panel
+
+`file_ui > extend_detail_form`
+* **When it occurs:**  On the File edit panel, after the core fields have been drawn.
+* **What it allows:** Addition of any fields when editing file metadata.
+* **Argument \#3:** (not used)
+* **Argument \#4:** The record row that pertains to the current file being edited.
+
+### Links panel
+
+`link_ui > extend_detail_form`
+* **When it occurs:**  On the Link edit panel, after the core fields have been drawn.
+* **What it allows:** Addition of any fields when editing a link.
+* **Argument \#3:** (not used)
+* **Argument \#4:** The record row that pertains to the current link being edited.
+
+### Themes panel
+
+`skin_ui > extend_detail_form`
+* **When it occurs:**  On the Theme edit panel, after the core fields have been drawn.
+* **What it allows:** Addition of any fields when editing a theme.
+* **Argument \#3:** (not used)
+* **Argument \#4:** The record row that pertains to the current theme being edited.
+
+### Sections panel
+
+`section_ui > extend_detail_form`
+* **When it occurs:**  On the Section edit panel, after the core fields have been drawn.
+* **What it allows:** Addition of any fields when editing a section.
+* **Argument \#3:** (not used)
+* **Argument \#4:** The record row that pertains to the current section being edited.
+
+### Preferences panel
+
+TBD
+
+### Users panel
+
+`author_ui > extend_detail_form`
+* **When it occurs:**  On the Users edit panel, after the core fields have been drawn.
+* **What it allows:** Addition of any fields when editing a user account.
+* **Argument \#3:** (not used)
+* **Argument \#4:** The record set that pertains to the current user account being edited.
