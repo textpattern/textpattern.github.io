@@ -245,51 +245,59 @@ INDEX  |owner  |(owner)
 
 ## txp_link
 
-The `txp_link` table contains all the links and related information created on the [Links panel](https://docs.textpattern.io/administration//links-panel).
+Contains all the links and related information created on the [Links panel](https://docs.textpattern.io/administration//links-panel).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column        Type           Description
-  ------------- -------------- ------------------------------------------------------------
-  id            integer        Unique auto-incremented ID of this link
-  date          datetime       Creation date and time
-  category      varchar(64)    Name of the category associated with this link
-  url           text           Link URL
-  linkname      varchar(255)   Link text (plain text)
-  linksort      varchar(128)   String of text which can be used to customize link sorting
-  description   text           Description of the link (typically plain text)
-  author        varchar(255)   Login name of the author that created this link
+Column | Type | Description
+---|---|---
+id          |INT          |Unique auto-incremented ID of this link
+date        |DATETIME     |Creation date and time of the link
+category    |VARCHAR(64)  |Name of the category associated with this link
+url         |TEXT         |Link destination URL
+linkname    |VARCHAR(255) |Link text (plain text)
+linksort    |VARCHAR(128) |String of text that can be used to customize link sorting
+description |TEXT         |Description of the link (typically plain text)
+author      |VARCHAR(64)  |Login name of the author that created this link
 
-</div>
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY |-    |(id)
+INDEX |author_idx |(author)
 
 ## txp_log
 
-The `txp_log` table contains log entries of page requests (visits) to your website, which are output on the [Visitor logs panel](https://docs.textpattern.io/administration/visitor-logs-panel). Depending on your preferences, nothing is logged, just referrers or all requests. Old log entries are removed automatically.
+Contains log entries of page requests (visits) to your website, which are output on the [Visitor logs panel](https://docs.textpattern.io/administration/visitor-logs-panel). Depending on your preferences, you can either log nothing, just referrers, or all requests. Old log entries are removed automatically every time you display the visitor logs panel.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column   Type           Description
-  -------- -------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  id       integer        Unique auto-incremented ID of this log entry
-  time     datetime       Date and time
-  host     varchar(255)   hostname of the computer that requested the page. If DNS lookups are disabled in the preferences or if the reverse DNS lookup of the IP-number failed, the IP-number is stored instead
-  page     varchar(255)   URI of the requested page
-  refer    mediumtext     Whence the visitor came (Referer URL)
-  status   integer        HTTP Status response code. Only status 200 (OK) is logged
-  method   varchar(16)    HTTP Request method: typically POST or GET
-  ip       varchar(16)    IP-number of the computer that requested the page
+Column | Type | Description
+---|---|---
+id     |INT          |Unique auto-incremented ID of this log entry
+time   |DATETIME     |Date and time of the visitor
+host   |VARCHAR(255) |Hostname of the computer that requested the page. If DNS lookups are disabled in the preferences or if the reverse DNS lookup of the IP address failed, the IP address is stored instead
+page   |VARCHAR(255) |URI of the requested page
+refer  |MEDIUMTEXT   |Page from which the visitor came (Referer URL) if available
+status |INT          |HTTP Status response code. Only status 200 (OK) is logged
+method |VARCHAR(16)  |HTTP Request method: typically POST or GET
+ip     |VARCHAR(45)  |IP address of the computer that requested the page
 
-</div>
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY|- |(id)
+INDEX |time   |(time)
+INDEX |ip     |(ip)
 
 ## txp_page
 
-The `txp_page` table contains all the page templates you create on the [Pages panel](https://docs.textpattern.io/administration/pages-panel).
+Contains all the Page templates you create on the [Pages panel](https://docs.textpattern.io/administration/pages-panel).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column       Type           Description
-  ------------ -------------- -------------------------------------------------------
-  name         varchar(128)   Name of the template
-  user_html   text           Template contents: HTML / Textpattern tags (max 64kB)
+Column | Type | Description
+---|---|---
+name      |VARCHAR(255) |Name of the template
+user_html |TEXT         |Template contents: HTML, Textpattern tags and text (max 64kB)
+skin      |VARCHAR(63)  |The theme to which this style is associated
+lastmod   |DATETIME     |Modification date and time of the template
 
-</div>
+Index type | Name | Definition
+---|---|---
+UNIQUE |name_skin |(name(63), skin(63))
 
 ## txp_plugin
 
