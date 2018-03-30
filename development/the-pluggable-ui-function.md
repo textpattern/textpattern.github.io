@@ -34,6 +34,7 @@ Argument | Parameters | What it does | Usage
 5 | `(value)`| The value of a named element (e.g. preference setting), indicated by argument 4. | If applicable, this is a special case (e.g. when dealing with preference settings) where argument #4 becomes the preference name and argument #5 holds its value.
 
 ## Examples
+### Example 1: Raising a pluggable_ui callback in your plugin
 
 In this example we have a basic admin-side plugin called "abc_hello". The plugin creates a new **ABC Hello** panel under the [Extensions administration region](https://docs.textpattern.io/administration/extensions-region), which is accessible to administrators and publishers (i.e. privs 1 and 2 users):
 
@@ -62,6 +63,28 @@ register_callback('xyz_hello_world', 'abc_hello', '');
 ~~~
 
 If no other plugin overrides the content by registering a callback on the `abc_hello` event, `<p>Hello, World!</p>` is rendered.
+
+### Example 2: Altering the Status widget's radio button list
+
+In this example we'll alter the **Status** widget's radio button list by adding a new option to it:
+
+~~~ php
+register_callback('abc_altered_status', 'article_ui', 'status');
+
+/**
+ * Append status 6 to the Status widget.
+ */
+function abc_altered_status($evt, $stp, $data, $rs)
+{
+    $stat = isset($rs['Status']) ? $rs['Status'] : '';
+    $new_status = n.t.'<li>'.radio('Status', 6, ($stat == 6) ? 1 : 0, 'status-6').'<label for="status-6">Velcro</label></li>';
+    $data = str_replace('</ul>', $new_status.'</ul>', $data);
+
+    return $data;
+}
+~~~
+
+We've used `register_callback()` to define our callback function, and in this case we've employed the `$event`/`$step` combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, tacks it on the end and returns (outputs) the resulting altered list.
 
 ## Events and steps reference
 
