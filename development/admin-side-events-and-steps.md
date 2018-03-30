@@ -12,7 +12,7 @@ These are the main events and steps that Textpattern uses as you interact with t
 
 Although they are not direct [callbacks](https://docs.textpattern.io/development/core-callbacks-reference), you may hook into these events and steps from a plugin to perform an action.
 
-When raising callbacks of this nature, they are normally run in what is referred to as *post* mode, i.e. after Textpattern has serviced the routine. You may elect to run it in *pre* mode so you can intercept the callback before Textpattern services it. This is handy for manipulating submitted data before Textpattern receives it. To do this, set the fourth argument to `register_callback()` true.
+When raising callbacks of this nature, they are normally run in what is referred to as *post* mode, i.e. after Textpattern has serviced the routine. You may elect to run it in *pre* mode so you can intercept the callback before Textpattern services it. This is handy for manipulating submitted data before Textpattern receives it. To do this, set the fourth argument to `register_callback()` as `true`.
 
 ## 'admin' event
 
@@ -24,8 +24,6 @@ The associated steps are:
 * `author_list`
 * `author_save`
 * `author_save_new`
-* `change_email`
-* `change_email_form`
 * `change_pass`
 * `new_pass_form`
 
@@ -37,7 +35,6 @@ The associated steps are:
 * `edit`
 * `publish`
 * `save`
-* `save_pane_state`
 
 ## 'category' event
 
@@ -62,26 +59,28 @@ The associated steps are:
 
 The associated steps are:
 
-* `css_copy`
 * `css_edit`
-* `css_edit_raw`
 * `css_delete`
 * `css_save`
 * `pour`
+* `css_skin_change`
+
+## 'diag' event
+
+The associated steps are:
+
+* `low`
+* `high`
 
 ## 'discuss' event
 
 The associated steps are:
 
 * `discuss_change_pageby`
-* `discuss_delete`
 * `discuss_edit`
 * `discuss_list`
 * `discuss_multi_edit`
 * `discuss_save`
-* `ipban_add`
-* `ipban_list`
-* `ipban_unban`
 
 ## 'file' event
 
@@ -103,10 +102,10 @@ The associated steps are:
 * `form_create`
 * `form_edit`
 * `form_delete`
-* `form_list`
 * `form_multi_edit`
 * `form_save`
-* `save_pane_state`
+* `form_skin_change`
+* `tagbuild`
 
 ## 'image' event
 
@@ -123,12 +122,16 @@ The associated steps are:
 * `thumbnail_delete`
 * `thumbnail_insert`
 
-## 'import' event
+## 'lang' event
 
 The associated steps are:
 
-* `start_import`
-* `switch_tool`
+* `list_languages`
+* `get_language`
+* `remove_language`
+* `save_language`
+* `save_language_ui`
+* `get_textpack`
 
 ## 'link' event
 
@@ -162,9 +165,9 @@ The associated steps are:
 
 * `page_edit`
 * `page_delete`
-* `page_new`
 * `page_save`
-* `page_list`
+* `page_skin_change`
+* `tagbuild`
 
 ## 'plugin' event
 
@@ -177,6 +180,7 @@ The associated steps are:
 * `plugin_install`
 * `plugin_list`
 * `plugin_multi_edit`
+* `plugin_change_pageby`
 * `plugin_save`
 * `plugin_verify`
 * `switch_status`
@@ -185,14 +189,8 @@ The associated steps are:
 
 The associated steps are:
 
-* `advanced_prefs`
-* `advanced_prefs_save`
-* `get_language`
-* `get_textpack`
-* `list_languages`
 * `prefs_list`
 * `prefs_save`
-* `remove_language`
 
 ## 'section' event
 
@@ -207,8 +205,19 @@ The associated steps are:
 * `section_set_default`
 * `section_toggle_option`
 
-## 'tag' event
+## 'skin' event
 
 The associated steps are:
+
+* `skin_change_pageby`
+* `list`
+* `edit`
+* `save`
+* `import`
+* `multi_edit`
+
+## 'tag' event
+
+The associated step is:
 
 * `build`
