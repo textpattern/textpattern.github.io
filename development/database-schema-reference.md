@@ -40,7 +40,7 @@ ID              |INT          |Unique, auto incremented numerical ID of the arti
 Posted          |DATETIME     |Publication date and time
 Expires         |DATETIME     |Expiration date and time (defaults to null, which indicates that the article never expires)
 AuthorID        |VARCHAR(64)  |Login name of the author that created the article
-LastMod         |DATETIME     |Modification date and time
+LastMod         |DATETIME     |Modification date and time of the article
 LastModID       |VARCHAR(64)  |Login name of the author that modified the article
 Title           |VARCHAR(255) |Article Title
 Title_html      |VARCHAR(255) |(reserved for future use)
@@ -75,16 +75,16 @@ custom_10       |VARCHAR(255) |10th Custom field content
 uid             |VARCHAR(32)  |Random string used to uniquely identify this article in an RSS/Atom feed. Textpattern uses md5(uniqid(rand(),true)) to create the uid
 feed_time       |DATE         |Creation date of the article (when you first save the article, regardless of Status)
 
-Index | Definition
----|---
-PRIMARY KEY                 |(ID)
-INDEX    categories_idx     |(Category1(10), Category2(10))
-INDEX    Posted             |(Posted)
-INDEX    Expires_idx        |(Expires)
-INDEX    author_idx         |(AuthorID)
-INDEX    section_status_idx |(Section(249), Status)
-INDEX    url_title_idx      |(url_title(250))
-FULLTEXT searching          |(Title, Body)
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY |-                  |(ID)
+INDEX       |categories_idx     |(Category1(10), Category2(10))
+INDEX       |Posted             |(Posted)
+INDEX       |Expires_idx        |(Expires)
+INDEX       |author_idx         |(AuthorID)
+INDEX       |section_status_idx |(Section(249), Status)
+INDEX       |url_title_idx      |(url_title(250))
+FULLTEXT    |searching          |(Title, Body)
 
 ## txp_category
 
@@ -101,68 +101,61 @@ rgt         |INT          |Right pointer. Used to maintain category hierarchy us
 title       |VARCHAR(255) |Human-friendly category title
 description |VARCHAR(255) |Category description. Can be used for outputting meta data or category details on landing pages
 
-Index | Definition
----|---
-PRIMARY KEY |(id)
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY | - |(id)
 
 ## txp_css
 
-The `txp_css` table contains the style sheets created on the [Styles panel](https://docs.textpattern.io/administration/styles-panel).
+Contains the style sheets created on the [Styles panel](https://docs.textpattern.io/administration/styles-panel).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column   Type           Description
-  -------- -------------- ------------------------------------------------------------------------
-  name     varchar(128)   Name of the style sheet
-  css      text           Style sheet contents, base64 encoded for historical reasons (max 64kB)
+Column | Type | Description
+---|---|---
+name    |VARCHAR(255) |Name of the style sheet
+css     |MEDIUMTEXT   |Style sheet contents
+skin    |VARCHAR(63)  |The theme to which this style is associated
+lastmod |DATETIME     |Modification date and time of the stylesheet
 
-</div>
+Index type | Name | Definition
+---|---|---
+UNIQUE |name_skin |(name(63), skin(63))
+
 
 ## txp_discuss
 
-The `txp_discuss` table contains all the article comments output on the [Comments panel](https://docs.textpattern.io/administration/comments-panel).
+Contains all the article comments output on the [Comments panel](https://docs.textpattern.io/administration/comments-panel).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column      Type           Description
-  ----------- -------------- -------------------------------------------------------------
-  discussid   integer        Unique auto-incremented ID of this comment
-  parentid    integer        ID of the article to which this comment belongs
-  name        varchar(255)   Name of the person who commented
-  email       varchar(50)    Email address of the person who commented
-  web         varchar(255)   Website of the person who commented
-  ip          varchar(100)   IP-number of the computer used to submit this comment
-  posted      datetime       Date and time when this comment was submitted
-  message     text           Comment message in HTML markup (max 64kB)
-  visible     integer        Status (-1 = Spam, 0 = waiting for moderation, 1 = visible)
+Column | Type | Description
+---|---|---
+discussid |INT(6) ZEROFILL |Unique auto-incremented ID of this comment
+parentid  |INT             |ID of the article to which this comment belongs
+name      |VARCHAR(255)    |Name of the person who commented
+email     |VARCHAR(254)    |Email address of the person who commented
+web       |VARCHAR(255)    |Website of the person who commented
+ip        |VARCHAR(100)    |IP address of the computer used to submit this comment
+posted    |DATETIME        |Date and time when this comment was submitted
+message   |TEXT            |Comment message in HTML markup (max 64kB)
+visible   |TINYINT         |Publication status (-1 = Spam, 0 = waiting for moderation, 1 = visible)
 
-</div>
-
-## txp_discuss_ipban
-
-The `txp_discuss_ipban` table contains a list of all IP-numbers that have been banned from commenting by the person who moderates [Comments](https://docs.textpattern.io/administration/comments-panel).
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column                Type           Description
-  --------------------- -------------- ----------------------------------------------------------------------------------
-  ip                    varchar(255)   IP-number
-  name_used            varchar(255)   Name used by the commenter to submit the comment that cause him/her to be banned
-  date_banned          datetime       Date when the ban was imposed
-  banned_on_message   integer        ID of the comment that caused the ban
-
-</div>
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY |- |   (discussid)
+INDEX |parentid |(parentid)
 
 ## txp_discuss_nonce
 
-The `txp_discuss_nonce` table is an important part of the spam protection in the commenting system. When the comment form is shown to the user, it contains a hidden variable (nonce) with a unique code. This code is valid for 10 minutes. If the comment form is submitted, the nonce is looked up in this table and must exist unused with a valid timestamp for the comment to be accepted.
+An important part of the spam protection in the commenting system. When the comment form is shown to the user, it contains a hidden variable (nonce) with a unique code. This code is valid for 10 minutes. If the comment form is submitted, the nonce is looked up in this table and must exist, unused with a valid timestamp, for the comment to be accepted.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column        Type          Description
-  ------------- ------------- --------------------------------------------------------------------------------------------------------------------------------------------------------
-  issue_time   datetime      Date and time when the 'nonce' was created
-  nonce         varchar(32)   Random alphanumeric string of text (md5)
-  used          integer       Has the nonce been used for submitting a comment (0 = no, 1 = yes). A nonce cannot be used twice.
-  secret        varchar(32)   Random alphanumeric string of text (md5) used to vary the name of the comment message textarea field, making it harder for spammers to submit comments
+Column | Type | Description
+---|---|---
+issue_time |DATETIME     |Date and time when the 'nonce' was created
+nonce      |VARCHAR(255) |Random alphanumeric string of text (md5)
+used       |TINYINT      |Whether the nonce has been used for submitting a comment (0 = no, 1 = yes). A nonce cannot be used twice
+secret     |VARCHAR(255) |Random alphanumeric string of text (md5) used to vary the name of the comment message textarea field, making it harder for spammers to submit comments
 
-</div>
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY |- | (nonce(250))
 
 ## txp_file
 
