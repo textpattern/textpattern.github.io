@@ -21,6 +21,6 @@ Below are a series of tag fundamentals, which will get you up and running with T
 3. [Tag nesting](tag-nesting)
 4. [Parsing tag attributes](parsing-tag-attributes)
 5. [Incorrect tag contexts](incorrect-tag-contexts)
-6. [Short-form versus long-form usage](shortform-vs-longform-usage)
+6. [Integrated tag notation](integrated-tag-notation)
 7. [Tag escaping](tag-escaping)
 8. [Core short-tags](core-short-tags)
