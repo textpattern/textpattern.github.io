@@ -34,6 +34,8 @@ On this page:
 
 Contains the articles you create on the [Write panel](https://docs.textpattern.io/administration/write-panel).
 
+### Table definition
+
 Column | Type | Description
 ---|---|---
 ID              |INT          |Unique, auto incremented numerical ID of the article
@@ -74,6 +76,8 @@ custom_9        |VARCHAR(255) |9th Custom field content
 custom_10       |VARCHAR(255) |10th Custom field content
 uid             |VARCHAR(32)  |Random string used to uniquely identify this article in an RSS/Atom feed. Textpattern uses `md5(uniqid(rand(),true))` to create the uid
 feed_time       |DATE         |Creation date of the article (when you first save the article, regardless of Status)
+
+### Indexes
 
 Index type | Name | Definition
 ---|---|---
