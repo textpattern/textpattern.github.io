@@ -14,14 +14,13 @@ You might also like to see the [Public-side plugin tutorial](https://docs.textpa
 
 On this page:
 
--   [Tutorial objective](#sec1)
--   [Targeting the admin side](#sec2)
--   [Creating an Extensions panel](#sec3)
--   [Adding events and steps](#sec4)
--   [Respond to a plugin step](#sec5)
+-   [Tutorial objective](#tutorial-objective)
+-   [Targeting the admin side](#targeting-the-admin-side)
+-   [Creating an Extensions panel](#creating-an-extensions-panel)
+-   [Adding events and steps](#adding-events-and-steps)
+-   [Responding to a plugin step](#responding-to-a-plugin-step)
 
-Tutorial objective {#sec1}
-------------------
+## Tutorial objective
 
 This tutorial assumes you have a working knowledge of [PHP](http://php.net), a Textpattern website ready for use, and the [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer) plugin installed.
 
@@ -34,8 +33,7 @@ The plugin in this tutorial will:
 Since all plugins must use a three-character alphanumeric [prefix](https://docs.textpattern.io/development/plugin-developer-prefixes),
 we're using **abc** in this tutorial, which is reserved for documentation purposes.
 
-Targeting the admin side {#sec2}
-------------------------
+## Targeting the admin side
 
 Log into Textpattern and open the [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer) plugin. Start a new plugin, give it a name, ensure its type is set to *Admin* and open the code panel.
 
@@ -50,8 +48,7 @@ Put that code in your plugin, double check the plugin is set to type *Admin*, an
 
 Nothing will happen yet, of course, so let's create your plugin's panel under **Extensions**.[^1]
 
-Creating an Extensions panel {#sec3}
-----------------------------
+## Creating an Extensions panel
 
 ~~~ php
 if (txpinterface === 'admin') {
@@ -64,8 +61,7 @@ The `add_privs()` function is a necessary step to tell Textpattern who can see t
 
 If you visit the **Extensions** region, you'll see your plugin panel link, **My plugin**.[^2] But if you select it nothing much will happen, or you'll probably get some un-styled default content on the screen. Time to give your plugin's panel some content.
 
-Adding events and steps {#sec4}
------------------------
+## Adding events and steps
 
 You've created a new **Extensions** sub-panel for your plugin, but now you need to give the plugin a function to execute when that sub-panel is selected. To understand what goes on here let's take some time out to reveal Textpattern *events* and *steps*.
 
@@ -96,8 +92,7 @@ abc_admin_hello_world sub-panel (what users will see labeled as "My plugin").
 
 The `pagetop()` function is another Textpattern function that renders the primary regions (**Content**, **Presentation**, **Admin**, etc.) of the admin-side interface. The function's mandatory first argument is the name to display in the browser's `<title>` tag. After that, you can display anything you like; draw buttons, widgets, text, whatever. The trick then is to make it do something.
 
-Respond to a plugin step {#sec5}
-------------------------
+## Responding to a plugin step
 
 In the code so far you have done one thing when you plugin's panel -- your event - is executed. In reality you should take any number of
 actions as people interact with your panel. For example, maybe you want to allow users to save some settings (the **save** step), or **edit** something, or simply **list** some stuff.
