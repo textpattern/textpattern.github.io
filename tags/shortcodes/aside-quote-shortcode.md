@@ -136,7 +136,7 @@ In the [Links panel](https://docs.textpattern.io/administration/links-panel), cr
 
 Now you’re all set to add tweets (in this case) as aside-quotes in your articles.
 
-Open your article draft in the Write panel, and use the short-tag between two paragraph, where desired as follows:
+Open your article draft in the Write panel, and use the short-tag between two paragraphs, where desired, as follows:
 
 ```
 …end of a paragraph.
