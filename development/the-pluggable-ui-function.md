@@ -261,25 +261,65 @@ In this section:
 ### Category panel
 
 `category_ui > extend_detail_form`
-* **When it occurs:**  On the Category edit panel, after the core fields have been drawn.
+* **When it occurs:** On the Category edit panel, after the core fields have been drawn.
 * **What it allows:** Addition of any fields when editing a category.
 * **Argument \#3:** (not used)
 * **Argument \#4:** The record row that pertains to the current category being edited.
 
 ### Images panel
 
+`image_ui > extend_controls`
+* **When it occurs:** On the Image list panel, after the control panel form upload input controls have been drawn.
+* **What it allows:** Addition of any content to the Control Panel area above the main table of images.
+* **Argument \#3:** (not used)
+* **Argument \#4:** The entire set of images being displayed on the list panel.
+
+`image_ui > thumbnail`
+* **When it occurs:** The thumbnail of each row in the table on the Image list panel.
+* **What it allows:** Addition or alteration to the thumbnail in each row.
+* **Argument \#3:** The thumbnail and its anchor (if editable), or just the thumbnail if not.
+* **Argument \#4:** The record row of the current image in the table.
+
+`image_ui > image_edit`
+* **When it occurs:** The image upload form on the Image edit panel. Not called if the user has no edit privileges.
+* **What it allows:** Addition or alteration of the 'Image replace' form.
+* **Argument \#3:** HTML of the image upload form.
+* **Argument \#4:** The record row that pertains to the current image being edited.
+
+`image_ui > fullsize_image`
+* **When it occurs:** The main image on the Image edit panel.
+* **What it allows:** Addition or alteration to the main image.
+* **Argument \#3:** HTML tag of the image.
+* **Argument \#4:** The record row that pertains to the current image being edited.
+
+`image_ui > thumbnail_edit`
+* **When it occurs:** The thumbnail upload form on the Image edit panel. Not called if the user has no edit privileges.
+* **What it allows:** Addition or alteration of the 'Thumbnail replace' form.
+* **Argument \#3:** HTML of the thumbnail upload form.
+* **Argument \#4:** The record row that pertains to the current image being edited.
+
+`image_ui > thumbnail_create`
+* **When it occurs:** The thumbnail creation block on the Image edit panel. Not called if the user has no edit privileges.
+* **What it allows:** Addition or alteration of the 'Thumbnail create' form, including the width, height, crop checkbox and submit button.
+* **Argument \#3:** HTML of the thumbnail create form.
+* **Argument \#4:** The record row that pertains to the current image being edited.
+
+`image_ui > thumbnail_image`
+* **When it occurs:** The thumbnail image on the Image edit panel.
+* **What it allows:** Addition or alteration to the thumbnail image.
+* **Argument \#3:** HTML tag of the thumbnail.
+* **Argument \#4:** The record row that pertains to the current image being edited.
+
 `image_ui > extend_detail_form`
-* **When it occurs:**  On the Image edit panel, after the core fields have been drawn.
+* **When it occurs:** On the Image edit panel, after the core fields have been drawn.
 * **What it allows:** Addition of any fields when editing image metadata.
 * **Argument \#3:** (not used)
 * **Argument \#4:** The record row that pertains to the current image being edited.
 
-More...
-
 ### Files panel
 
 `file_ui > extend_detail_form`
-* **When it occurs:**  On the File edit panel, after the core fields have been drawn.
+* **When it occurs:** On the File edit panel, after the core fields have been drawn.
 * **What it allows:** Addition of any fields when editing file metadata.
 * **Argument \#3:** (not used)
 * **Argument \#4:** The record row that pertains to the current file being edited.
@@ -287,7 +327,7 @@ More...
 ### Links panel
 
 `link_ui > extend_detail_form`
-* **When it occurs:**  On the Link edit panel, after the core fields have been drawn.
+* **When it occurs:** On the Link edit panel, after the core fields have been drawn.
 * **What it allows:** Addition of any fields when editing a link.
 * **Argument \#3:** (not used)
 * **Argument \#4:** The record row that pertains to the current link being edited.
@@ -295,7 +335,7 @@ More...
 ### Themes panel
 
 `skin_ui > extend_detail_form`
-* **When it occurs:**  On the Theme edit panel, after the core fields have been drawn.
+* **When it occurs:** On the Theme edit panel, after the core fields have been drawn.
 * **What it allows:** Addition of any fields when editing a theme.
 * **Argument \#3:** (not used)
 * **Argument \#4:** The record row that pertains to the current theme being edited.
@@ -303,7 +343,7 @@ More...
 ### Sections panel
 
 `section_ui > extend_detail_form`
-* **When it occurs:**  On the Section edit panel, after the core fields have been drawn.
+* **When it occurs:** On the Section edit panel, after the core fields have been drawn.
 * **What it allows:** Addition of any fields when editing a section.
 * **Argument \#3:** (not used)
 * **Argument \#4:** The record row that pertains to the current section being edited.
@@ -315,7 +355,7 @@ TBD
 ### Users panel
 
 `author_ui > extend_detail_form`
-* **When it occurs:**  On the Users edit panel, after the core fields have been drawn.
+* **When it occurs:** On the Users edit panel, after the core fields have been drawn.
 * **What it allows:** Addition of any fields when editing a user account.
 * **Argument \#3:** (not used)
 * **Argument \#4:** The record set that pertains to the current user account being edited.
