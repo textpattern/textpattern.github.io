@@ -34,8 +34,6 @@ On this page:
 
 Contains the articles you create on the [Write panel](https://docs.textpattern.io/administration/write-panel).
 
-### Table definition
-
 Column | Type | Description
 ---|---|---
 ID              |INT          |Unique, auto incremented numerical ID of the article
@@ -105,6 +103,8 @@ rgt         |INT          |Right pointer. Used to maintain category hierarchy us
 title       |VARCHAR(255) |Human-friendly category title
 description |VARCHAR(255) |Category description. Can be used for outputting meta data or category details on landing pages
 
+### Indexes
+
 Index type | Name | Definition
 ---|---|---
 PRIMARY KEY | - |(id)
@@ -119,6 +119,8 @@ name    |VARCHAR(255) |Name of the style sheet
 css     |MEDIUMTEXT   |Style sheet contents
 skin    |VARCHAR(63)  |The theme to which this style is associated
 lastmod |DATETIME     |Modification date and time of the stylesheet
+
+### Indexes
 
 Index type | Name | Definition
 ---|---|---
@@ -140,6 +142,8 @@ posted    |DATETIME        |Date and time when this comment was submitted
 message   |TEXT            |Comment message in HTML markup (max 64KB)
 visible   |TINYINT         |Publication status (-1 = Spam, 0 = waiting for moderation, 1 = visible)
 
+### Indexes
+
 Index type | Name | Definition
 ---|---|---
 PRIMARY KEY |- |   (discussid)
@@ -155,6 +159,8 @@ issue_time |DATETIME     |Date and time when the 'nonce' was created
 nonce      |VARCHAR(255) |Random alphanumeric string of text (md5)
 used       |TINYINT      |Whether the nonce has been used for submitting a comment (0 = no, 1 = yes). A nonce cannot be used twice
 secret     |VARCHAR(255) |Random alphanumeric string of text (md5) used to vary the name of the comment message textarea field, making it harder for spammers to submit comments
+
+### Indexes
 
 Index type | Name | Definition
 ---|---|---
@@ -179,6 +185,8 @@ created     |DATETIME     |Date and time the file was uploaded to Textpattern
 size        |BIGINT       |File size in bytes
 author      |VARCHAR(64)  |Login name of the author that added this file
 
+### Indexes
+
 Index type | Name | Definition
 ---|---|---
 PRIMARY KEY |-     |(id)
@@ -196,6 +204,8 @@ type    |VARCHAR(28)  |Form type: `article`, `category`, `comment`, `file`, `lin
 Form    |TEXT         |Contents of the form: HTML, Textpattern tags and text (max 64KB)
 skin    |VARCHAR(63)  |The theme to which this style is associated
 lastmod |DATETIME     |Modification date and time of the stylesheet
+
+### Indexes
 
 Index type | Name | Definition
 ---|---|---
@@ -221,6 +231,8 @@ thumbnail |INT          |Thumbnail available? (0 = no, 1 = yes)
 thumb_w   |INT          |Thumbnail width in pixels
 thumb_h   |INT          |Thumbnail height in pixels
 
+### Indexes
+
 Index type | Name | Definition
 ---|---|---
 PRIMARY KEY |-     |(id)
@@ -239,6 +251,8 @@ event   |VARCHAR(64) |The part of Textpattern where this piece of text is used. 
 owner   |VARCHAR(64) |Mandatory for non-core strings to group language strings for ease of management (e.g. deletion when a plugin is uninstalled). Core strings have no owner set. Every other string is given the designated owner, or `site` if omitted
 data    |TEXT        |Translation of the language string
 lastmod |TIMESTAMP   |Modification data and time of the language string
+
+### Indexes
 
 Index type | Name | Definition
 ---|---|---
@@ -262,6 +276,8 @@ linksort    |VARCHAR(128) |String of text that can be used to customize link sor
 description |TEXT         |Description of the link (typically plain text)
 author      |VARCHAR(64)  |Login name of the author that created this link
 
+### Indexes
+
 Index type | Name | Definition
 ---|---|---
 PRIMARY KEY |-    |(id)
@@ -282,6 +298,8 @@ status |INT          |HTTP Status response code. Only status 200 (OK) is logged
 method |VARCHAR(16)  |HTTP Request method: typically POST or GET
 ip     |VARCHAR(45)  |IP address of the computer that requested the page
 
+### Indexes
+
 Index type | Name | Definition
 ---|---|---
 PRIMARY KEY|- |(id)
@@ -298,6 +316,8 @@ name      |VARCHAR(255) |Name of the template
 user_html |TEXT         |Template contents: HTML, Textpattern tags and text (max 64KB)
 skin      |VARCHAR(63)  |The theme to which this style is associated
 lastmod   |DATETIME     |Modification date and time of the template
+
+### Indexes
 
 Index type | Name | Definition
 ---|---|---
@@ -324,6 +344,8 @@ data         |MEDIUMTEXT        |Plugin-specific data store. Overwritten when pl
 type         |INT               |Where the plugin is loaded (0 = public, 1 = public + admin, 2 = library (when called), 3 = admin-only, 4 = admin-only + Ajax, 5 = public + admin + Ajax)
 load_order   |TINYINT  UNSIGNED |Order in which this plugin will be loaded (1 = first, 9 = last). By default set to 5, which should not be changed unless you know what you're doing
 flags        |SMALLINT UNSIGNED |16-bit value which signals the presence of optional capabilities to the core plugin loader. The four high-order bits 0xf000 are available for private use.[^2]
+
+### Indexes
 
 Index type | Name | Definition
 ---|---|---
