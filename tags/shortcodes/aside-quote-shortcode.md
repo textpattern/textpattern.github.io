@@ -24,7 +24,7 @@ As the W3C recommendation for the [`aside` element](https://www.w3.org/TR/html52
 
 > The element can be used for typographical effects like **pull quotes** or sidebars, for advertising, for groups of nav elements, and for other content that is considered separate from the main content **of the nearest ancestor sectioning content**.
 
-The bold is used here to emphasize how this shorcode was conceived for use, as a kind of pullquote in a long-form article structure, where the nearest ancestor sectioning content is a section chapter in the article. However, you can easily use it for any scenario you like.
+The bold is used here to emphasize how this shortcode was conceived for use, as a kind of pullquote in a long-form article structure, where the nearest ancestor sectioning content is a section chapter in the article. However, you can easily use it for any scenario you like.
 
 In this case, the following article structure was in mind, where an `aside` is an offspring of a given `section` it relates with:
 
