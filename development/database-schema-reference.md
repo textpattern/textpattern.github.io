@@ -159,38 +159,44 @@ PRIMARY KEY |- | (nonce(250))
 
 ## txp_file
 
-The `txp_file` table contains information on all the files uploaded through Textpattern. The files themselves are stored as normal files on disk instead of in the database.
+Contains meta information on all the files uploaded through Textpattern. The files themselves are stored as normal files on disk instead of in the database.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column        Type           Description
-  ------------- -------------- ------------------------------------------------
-  id            integer        Unique auto-incremented ID of this file
-  filename      varchar(255)   Name of the file as stored on the hard disk
-  title         varchar(255)   Title given to this file for display purposes
-  category      varchar(64)    Name of the category associated with this file
-  permissions   varchar(32)    (reserved for future use)
-  description   text           File description (max 64kB)
-  downloads     integer        Number of times this file has been downloaded
-  status        integer        Status (2 = hidden, 3 = pending, 4 = live)
-  created       datetime       Creation date and time
-  modified      datetime       Modification date and time
-  size          integer        File size in bytes
-  author        varchar(255)   Login name of the author that added this file
+Column | Type | Description
+---|---|---
+id          |INT          |Unique auto-incremented ID of this file
+filename    |VARCHAR(255) |Name of the file as stored in the file system
+title       |VARCHAR(255) |Title given to this file for display purposes
+category    |VARCHAR(64)  |Name of the category associated with this file
+permissions |VARCHAR(32)  |(reserved for future use)
+description |TEXT         |File description (max 64kB)
+downloads   |INT UNSIGNED |Number of times this file has been downloaded
+status      |SMALLINT     |Publication status (2 = hidden, 3 = pending, 4 = live)
+modified    |DATETIME     |Date and time when the file meta information was updated
+created     |DATETIME     |Date and time the file was uploaded to Textpattern
+size        |BIGINT       |File size in bytes
+author      |VARCHAR(64)  |Login name of the author that added this file
 
-</div>
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY |-     |(id)
+UNIQUE |filename   |(filename(250))
+INDEX  |author_idx |(author)
 
 ## txp_form
 
 The `txp_form` table contains all the forms, which are created on the [Forms panel](https://docs.textpattern.io/administration/forms-panel).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column   Type          Description
-  -------- ------------- --------------------------------------------------------------------
-  name     varchar(64)   Form name
-  type     varchar(28)   Form type: article, category, comment, file, link, misc or section
-  Form     text          Contents of the form: HTML / Textpattern tags (max 64kB)
+Column | Type | Description
+---|---|---
+name    |VARCHAR(255) |Form name, dumbed down to only contain alphanumeric characters, underscores or hyphens
+type    |VARCHAR(28)  |Form type: article, category, comment, file, link, misc or section
+Form    |TEXT         |Contents of the form: HTML, Textpattern tags and text (max 64kB)
+skin    |VARCHAR(63)  |The theme to which this style is associated
+lastmod |DATETIME     |Modification date and time of the stylesheet
 
-</div>
+Index type | Name | Definition
+---|---|---
+UNIQUE |name_skin |(name(63), skin(63))
 
 ## txp_image
 
