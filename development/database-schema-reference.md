@@ -35,7 +35,7 @@ On this page:
 The `textpattern` table contains the articles you create on the [Write panel](https://docs.textpattern.io/administration/write-panel).
 
 Column | Type | Description
----|---
+---|---|---
 ID              |INT          |Unique, auto incremented numerical ID of the article
 Posted          |DATETIME     |Publication date and time
 Expires         |DATETIME     |Expiration date and time (defaults to null, which indicates that the article never expires)
@@ -77,13 +77,13 @@ feed_time       |DATE         |Creation date of the article (when you first save
 
 Index | Definition
 ---|---
-PRIMARY KEY                 |(ID),
-INDEX    categories_idx     |(Category1(10), Category2(10)),
-INDEX    Posted             |(Posted),
-INDEX    Expires_idx        |(Expires),
-INDEX    author_idx         |(AuthorID),
-INDEX    section_status_idx |(Section(249), Status),
-INDEX    url_title_idx      |(url_title(250)),
+PRIMARY KEY                 |(ID)
+INDEX    categories_idx     |(Category1(10), Category2(10))
+INDEX    Posted             |(Posted)
+INDEX    Expires_idx        |(Expires)
+INDEX    author_idx         |(AuthorID)
+INDEX    section_status_idx |(Section(249), Status)
+INDEX    url_title_idx      |(url_title(250))
 FULLTEXT searching          |(Title, Body)
 
 
