@@ -20,13 +20,13 @@ On this page:
 * [txp_file](#txp_file)
 * [txp_form](#txp_form)
 * [txp_image](#txp_image)
-* [txp_lang](#txp_lang0)
+* [txp_lang](#txp_lang)
 * [txp_link](#txp_link)
 * [txp_log](#txp_log)
 * [txp_page](#txp_page)
 * [txp_plugin](#txp_plugin)
 * [txp_prefs](#txp_prefs)
-* [txp_section](#txp_sections)
+* [txp_section](#txp_section)
 * [txp_token](#txp_token)
 * [txp_users](#txp_users)
 
@@ -46,7 +46,7 @@ Title           |VARCHAR(255) |Article Title
 Title_html      |VARCHAR(255) |(reserved for future use)
 Body            |MEDIUMTEXT   |Main article text (max 16MB), stored raw as typed. See also `textile_body`
 Body_html       |MEDIUMTEXT   |HTML version of main article text, converted from Body field
-Excerpt         |TEXT         |Article excerpt (max 64kB), stored raw as typed. See also `textile_excerpt`
+Excerpt         |TEXT         |Article excerpt (max 64KB), stored raw as typed. See also `textile_excerpt`
 Excerpt_html    |MEDIUMTEXT   |HTML version of article excerpt, converted from Excerpt field
 Image           |VARCHAR(255) |Numerical ID(s) associated with this article of images managed by Textpattern, or a URL of any other image
 Category1       |VARCHAR(64)  |Name of the 1st category associated with this article
@@ -133,7 +133,7 @@ email     |VARCHAR(254)    |Email address of the person who commented
 web       |VARCHAR(255)    |Website of the person who commented
 ip        |VARCHAR(100)    |IP address of the computer used to submit this comment
 posted    |DATETIME        |Date and time when this comment was submitted
-message   |TEXT            |Comment message in HTML markup (max 64kB)
+message   |TEXT            |Comment message in HTML markup (max 64KB)
 visible   |TINYINT         |Publication status (-1 = Spam, 0 = waiting for moderation, 1 = visible)
 
 Index type | Name | Definition
@@ -167,7 +167,7 @@ filename    |VARCHAR(255) |Name of the file as stored in the file system
 title       |VARCHAR(255) |Title given to this file for display purposes
 category    |VARCHAR(64)  |Name of the category associated with this file
 permissions |VARCHAR(32)  |(reserved for future use)
-description |TEXT         |File description (max 64kB)
+description |TEXT         |File description (max 64KB)
 downloads   |INT UNSIGNED |Number of times this file has been downloaded
 status      |SMALLINT     |Publication status (2 = hidden, 3 = pending, 4 = live)
 modified    |DATETIME     |Date and time when the file meta information was updated
@@ -189,7 +189,7 @@ Column | Type | Description
 ---|---|---
 name    |VARCHAR(255) |Form name, dumbed down to only contain alphanumeric characters, underscores or hyphens
 type    |VARCHAR(28)  |Form type: `article`, `category`, `comment`, `file`, `link`, `misc` or `section`
-Form    |TEXT         |Contents of the form: HTML, Textpattern tags and text (max 64kB)
+Form    |TEXT         |Contents of the form: HTML, Textpattern tags and text (max 64KB)
 skin    |VARCHAR(63)  |The theme to which this style is associated
 lastmod |DATETIME     |Modification date and time of the stylesheet
 
@@ -291,7 +291,7 @@ Contains all the Page templates you create on the [Pages panel](https://docs.tex
 Column | Type | Description
 ---|---|---
 name      |VARCHAR(255) |Name of the template
-user_html |TEXT         |Template contents: HTML, Textpattern tags and text (max 64kB)
+user_html |TEXT         |Template contents: HTML, Textpattern tags and text (max 64KB)
 skin      |VARCHAR(63)  |The theme to which this style is associated
 lastmod   |DATETIME     |Modification date and time of the template
 
@@ -301,26 +301,30 @@ UNIQUE |name_skin |(name(63), skin(63))
 
 ## txp_plugin
 
-The `txp_plugin` table contains all the plugins you have installed, displayed on the [Plugins panel](https://docs.textpattern.io/administration/plugins-panel).
+Contains all the plugins you have installed, that are displayed on the [Plugins panel](https://docs.textpattern.io/administration/plugins-panel).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column          Type                  Description
-  --------------- --------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-  name            varchar(64)           Plugin name
-  status          integer               Status (0 = disabled, 1 = enabled)
-  author          varchar(128)          Plugin author name
-  author_uri     varchar(128)          URL of the plugin author website
-  version         varchar(10)           Version in dotted format
-  description     text                  Short (!) description of plugin purpose (should be limited to 255 chars)
-  help            text                  Documentation in XHTML format (max 64kB)
-  code            mediumtext            Plugin code (PHP), sometimes modified by user on Plugin tab (max 16MB)
-  code_restore   mediumtext            Original plugin code (PHP) (max 16MB)
-  code_md5       varchar(32)           Checksum of the original plugin code
-  type            integer               Where is the plugin loaded (0 = public, 1 = always, 2 = never, 3 = admin)
-  load_order     integer               Order in which this plugin will be loaded (1 = first, 9 = last). By default set to 5, which should not be changed unless you know what you're doing
-  flags           smallint (unsigned)   16-bit value which signals the presence of optional capabilities to the core plugin loader. The four high-order bits 0xf000 are available for private use.[^2]
+Column | Type | Description
+---|---|---
+name         |VARCHAR(64)       |Plugin name
+status       |INT               |Activation status (0 = disabled, 1 = enabled)
+author       |VARCHAR(128)      |Plugin author name
+author_uri   |VARCHAR(128)      |URL of the plugin author website
+version      |VARCHAR(255)      |Version in [semver](https://semver.org/) dotted format
+description  |TEXT              |Short description of plugin purpose (should be limited to 255 chars)
+help         |MEDIUMTEXT        |Documentation in HTML or markup (Textile) format (max 64KB)
+code         |MEDIUMTEXT        |Plugin code (PHP), sometimes modified by user on Plugin tab (max 16MB)
+code_restore |MEDIUMTEXT        |Original plugin code (PHP) used for restoring to last-installed state (max 16MB)
+code_md5     |VARCHAR(32)       |Checksum of the original plugin code, to detect if changes have been made
+textpack     |MEDIUMTEXT        |Contents of any language starings the plugin uses, in all languages. When languages are installed or updated, this information is scanned and language strings automatically installed
+data         |MEDIUMTEXT        |Plugin-specific data store. Overwritten when plugin is updated
+type         |INT               |Where the plugin is loaded (0 = public, 1 = public + admin, 2 = library (when called), 3 = admin-only, 4 = admin-only + Ajax, 5 = public + admin + Ajax)
+load_order   |TINYINT  UNSIGNED |Order in which this plugin will be loaded (1 = first, 9 = last). By default set to 5, which should not be changed unless you know what you're doing
+flags        |SMALLINT UNSIGNED |16-bit value which signals the presence of optional capabilities to the core plugin loader. The four high-order bits 0xf000 are available for private use.[^2]
 
-</div>
+Index type | Name | Definition
+---|---|---
+UNIQUE |name            |(name)
+INDEX  |status_type_idx |(status, type)
 
 ## txp_prefs
 
