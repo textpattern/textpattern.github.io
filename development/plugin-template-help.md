@@ -10,31 +10,25 @@ description: Textpattern plugins are perhaps best thought of as functions supple
 
 Textpattern plugins are perhaps best thought of as functions supplementary to those found in Textpattern core.
 
-Functions residing in this file respond to `<txp:foo />` and `<txp:foo>bar</txp:foo>` tags found in [Page templates](https://docs.textpattern.io/themes/page-templates-explained), [Form templates](https://docs.textpattern.io/themes/form-templates-explained), @@Articles@@ and other dynamic content containers in Textpattern. A [Textpattern plugin template is available on GitHub](https://github.com/textpattern/textpattern-plugin-template) for plugin distribution.
+Functions residing in your plugin can respond to `<txp:abc_your_tag />` and `<txp:abc_your_tag>bar</txp:abc_your_tag>` tags found in [Page templates](https://docs.textpattern.io/themes/page-templates-explained), [Form templates](https://docs.textpattern.io/themes/form-templates-explained), Articles and other dynamic content containers in Textpattern. A [Textpattern plugin template is available on GitHub](https://github.com/textpattern/textpattern-plugin-template) for plugin distribution.
 
 On this page:
 
--   [Template package contents](#sec1)
--   [Typical template use](#sec2)
--   [Helpful notes](#sec3)
--   [Speedy development](#sec4)
+-   [Template package contents](#template-package-contents)
+-   [Typical template use](#typical-template-use)
+-   [Helpful notes](#helpful-notes)
+-   [Speedy development](#speedy-development)
 
-Template package contents {#sec1}
--------------------------
+## Template package contents
 
-In addition to the LICENSE and README files, the [plugin
-template](https://github.com/textpattern/textpattern-plugin-template)
+In addition to the LICENSE and README files, the [plugin template](https://github.com/textpattern/textpattern-plugin-template)
 contains the following:
 
--   *zem_tpl.php* - Contains the code to compile plugins into the
-    format required by the Textpattern plugin installer.
--   *zem_plugin.php* - Is the template itself. Make a copy of this
-    file and edit it to write your plugin.
--   *zem_example.php* - Is an example plugin that demonstrates both
-    public-side tags and admin-side user interface features.
+-   *zem_tpl.php* - Contains the code to compile plugins into the format required by the Textpattern plugin installer.
+-   *zem_plugin.php* - Is the template itself. Make a copy of this file and edit it to write your plugin.
+-   *zem_example.php* - Is an example plugin that demonstrates both public-side tags and admin-side user interface features.
 
-Typical template use {#sec2}
---------------------
+## Typical template use
 
 Typical commands (via command-line) that you'll probably use:
 
@@ -44,38 +38,23 @@ Typical commands (via command-line) that you'll probably use:
 
 `abc_myplugin-0.1.txt` is the finished plugin, ready to install.
 
-Helpful notes {#sec3}
--------------
+## Helpful notes
 
 Important and helpful notes:
 
-1.  Whatever is returned by the plugin function will be output by the
-    corresponding `<txp:plugin_name />` tag.
-2.  Plugin functions have access to all the functions available to
-    *publish.php*, including everything in *textpattern/lib*. (Further
-    reference on these resources is forthcoming.)
-3.  If you would like to pass variables to the plugin function(s) via
-    paramaters in the `<txp:plugin_name />` tag, these will be passed as
-    the first argument to the function as an associative array
-    (`$varname => $value`).
-4.  If you would like to pass a variable to the plugin function by
-    enclosing it in `<txp:foo>bar</txp:foo>`, this will be passed as the
-    second argument to the function as a string.
+1.  For public tags, whatever is returned by the plugin function will be output by the corresponding `<txp:function_name />` tag.
+2.  Plugin functions have access to all the functions available to *publish.php*, including everything in *textpattern/lib* and the entire class loader library.
+3.  If you would like to pass capture attributes in the `<txp:plugin_name />` tag, these will be passed as the first argument to the function as an associative array (`$varname => $value`). Use the `lAtts()` function to parse them and set defaults.
+4.  If you would like to capture content between a pari of open-closing container tags such as `<txp:abc_your_tag>bar</txp:abc_your_tag>`, this will be passed as the second argument to the function as a string.
 5.  Do not use `<?php ?>` tags within the plugin source.
 
-Speedy development {#sect4}
-------------------
+## Speedy development
 
 It speeds up development tremendously if you do the following:
 
-1.  Make sure plugin name and plugin filename correspond; e.g.
-    **zem_test** should be in *zem_test.php*.
-2.  Create a directory, */full/path/dev/plugins*.
-3.  Drop your uncompiled plugins in that directory. Do not put
-    *zem_tpl.php* in the same directory.
-4.  In the **Advanced preferences** panel of the admin-side, set plugin
-    cache directory to */full/path/dev/plugins*.
+1.  Make sure plugin name and plugin filename correspond; e.g. **zem_test** should be in *zem_test.php*.
+2.  Create a directory, `/full/path/to/dev/plugins`.
+3.  Drop your uncompiled plugins in that directory. Do not put *zem_tpl.php* in the same directory.
+4.  In the **Preferences** panel, set the plugin cache directory to `/full/path/to/dev/plugins`.
 
-Now during development you can skip the compile, upload, activate steps
-(and you're not confined to editing in the admin panel or copy/paste).
-Simply edit the file in the tmp dir, it will be included on each run.
+Now during development you can skip the compile, upload, and activate steps (and you're not confined to editing in the admin panel or copy/paste). Simply edit the file directly in the cache directory, and it will be immediately available on page refresh.
