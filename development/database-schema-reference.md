@@ -13,22 +13,22 @@ Textpattern stores all data in a database. Within that database, there are the f
 On this page:
 
 * [textpattern](#textpattern)
-* [txp_category](#sec2)
-* [txp_css](#sec3)
-* [txp_discuss](#sec4)
-* [txp_discuss_ipban](#sec5)
-* [txp_discuss_nonce](#sec6)
-* [txp_file](#sec7)
-* [txp_form](#sec8)
-* [txp_image](#sec9)
-* [txp_lang](#sec10)
-* [txp_link](#sec11)
-* [txp_log](#sec12)
-* [txp_page](#sec13)
-* [txp_plugin](#sec14)
-* [txp_prefs](#sec15)
-* [txp_section](#sec16)
-* [txp_users](#sec17)
+* [txp_category](#txp_category)
+* [txp_css](#txp_css)
+* [txp_discuss](#txp_discuss)
+* [txp_discuss_nonce](#txp_discuss_nonce)
+* [txp_file](#txp_file)
+* [txp_form](#txp_form)
+* [txp_image](#txp_image)
+* [txp_lang](#txp_lang0)
+* [txp_link](#txp_link)
+* [txp_log](#txp_log)
+* [txp_page](#txp_page)
+* [txp_plugin](#txp_plugin)
+* [txp_prefs](#txp_prefs)
+* [txp_section](#txp_sections)
+* [txp_token](#txp_token)
+* [txp_users](#txp_users)
 
 ## textpattern
 
@@ -44,9 +44,9 @@ LastMod         |DATETIME     |Modification date and time of the article
 LastModID       |VARCHAR(64)  |Login name of the author that modified the article
 Title           |VARCHAR(255) |Article Title
 Title_html      |VARCHAR(255) |(reserved for future use)
-Body            |MEDIUMTEXT   |Main article text (max 16MB), stored raw as typed. See also 'textile_body'
+Body            |MEDIUMTEXT   |Main article text (max 16MB), stored raw as typed. See also `textile_body`
 Body_html       |MEDIUMTEXT   |HTML version of main article text, converted from Body field
-Excerpt         |TEXT         |Article excerpt (max 64kB), stored raw as typed. See also 'textile_excerpt'
+Excerpt         |TEXT         |Article excerpt (max 64kB), stored raw as typed. See also `textile_excerpt`
 Excerpt_html    |MEDIUMTEXT   |HTML version of article excerpt, converted from Excerpt field
 Image           |VARCHAR(255) |Numerical ID(s) associated with this article of images managed by Textpattern, or a URL of any other image
 Category1       |VARCHAR(64)  |Name of the 1st category associated with this article
@@ -72,7 +72,7 @@ custom_7        |VARCHAR(255) |7th Custom field content
 custom_8        |VARCHAR(255) |8th Custom field content
 custom_9        |VARCHAR(255) |9th Custom field content
 custom_10       |VARCHAR(255) |10th Custom field content
-uid             |VARCHAR(32)  |Random string used to uniquely identify this article in an RSS/Atom feed. Textpattern uses md5(uniqid(rand(),true)) to create the uid
+uid             |VARCHAR(32)  |Random string used to uniquely identify this article in an RSS/Atom feed. Textpattern uses `md5(uniqid(rand(),true))` to create the uid
 feed_time       |DATE         |Creation date of the article (when you first save the article, regardless of Status)
 
 Index type | Name | Definition
@@ -93,8 +93,8 @@ Contains all the categories you create on the [Categories panel](https://docs.te
 Column | Type | Description
 ---|---|---
 id          |INT          |Unique auto-incremented ID of this category
-name        |VARCHAR(64)  |Category name, used in URLs. Dumbed-down from the Title. The category 'root' is reserved (and invisible)
-type        |VARCHAR(64)  |Type of media this category is used for: article, image, file or link)
+name        |VARCHAR(64)  |Category name, used in URLs. Dumbed-down from the Title. The category `root` is reserved (and invisible)
+type        |VARCHAR(64)  |Type of media this category is used for: `article`, `image`, `file` or `link`)
 parent      |VARCHAR(64)  |Parent category name. Determines the hierarchical place of this category compared to other categories. By default it's set to 'root' to indicate that it's a top level category
 lft         |INT          |Left pointer. Used to maintain category hierarchy using the modified preorder tree traversal algorithm
 rgt         |INT          |Right pointer. Used to maintain category hierarchy using the modified preorder tree traversal algorithm
@@ -119,7 +119,6 @@ lastmod |DATETIME     |Modification date and time of the stylesheet
 Index type | Name | Definition
 ---|---|---
 UNIQUE |name_skin |(name(63), skin(63))
-
 
 ## txp_discuss
 
@@ -189,7 +188,7 @@ The `txp_form` table contains all the forms, which are created on the [Forms pan
 Column | Type | Description
 ---|---|---
 name    |VARCHAR(255) |Form name, dumbed down to only contain alphanumeric characters, underscores or hyphens
-type    |VARCHAR(28)  |Form type: article, category, comment, file, link, misc or section
+type    |VARCHAR(28)  |Form type: `article`, `category`, `comment`, `file`, `link`, `misc` or `section`
 Form    |TEXT         |Contents of the form: HTML, Textpattern tags and text (max 64kB)
 skin    |VARCHAR(63)  |The theme to which this style is associated
 lastmod |DATETIME     |Modification date and time of the stylesheet
@@ -200,42 +199,49 @@ UNIQUE |name_skin |(name(63), skin(63))
 
 ## txp_image
 
-The `txp_image` table contains information on all the images uploaded and managed in the [Images panel](https://docs.textpattern.io/administration/images-panel). The image files are not actually stored in the database, they're stored as normal files on the web server in the `/images` folder using the image ID as the filename (i.e. `1.png` for the main image or `1t.png` for the corresponding thumbnail).
+Contains meta information on all the images uploaded and managed in the [Images panel](https://docs.textpattern.io/administration/images-panel). The image files are not actually stored in the database, they're stored as normal files on the web server in the `/images` folder using the image ID as the filename (i.e. `1.png` for the main image and `1t.png` for the corresponding thumbnail).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column      Type           Description
-  ----------- -------------- --------------------------------------------------------------------------------------
-  id          integer        Unique auto-incremented ID of this image
-  name        varchar(255)   Name of the image file as it was uploaded
-  category    varchar(64)    Name of the category associated with this image
-  ext         varchar(20)    file extension: .jpg, .gif, .png or .swf
-  w           integer        Width in pixels
-  h           integer        Height in pixels
-  alt         varchar(255)   Alternative text for use in the ALT attribute in the HTML image tag
-  caption     text           Caption for the image, used in the TITLE attribute for the HTML image tag (max 64kB)
-  date        datetime       Creation date
-  author      varchar(64)    Login name of the author that uploaded the image
-  thumbnail   integer        Thumbnail available? (0 = no, 1 = yes)
-  thumb_w    integer        Thumbnail width in pixels
-  thumb_h    integer        Thumbnail height in pixels
+Column | Type | Description
+---|---|---
+id        |INT          |Unique auto-incremented ID of this image
+name      |VARCHAR(255) |Name of the image file as it was uploaded
+category  |VARCHAR(64)  |Name of the category associated with this image
+ext       |VARCHAR(20)  |File extension: `.jpg`, `.gif` or `.png`
+w         |INT          |Image width in pixels
+h         |INT          |Image height in pixels
+alt       |VARCHAR(255) |Descriptive text used as the `alt` attribute in the HTML `<img>` tag
+caption   |TEXT         |Caption for the image (max 64kB)
+date      |DATETIME     |Date and time when the image was uploaded to Textpattern
+author    |VARCHAR(64)  |Login name of the author that uploaded the image
+thumbnail |INT          |Thumbnail available? (0 = no, 1 = yes)
+thumb_w   |INT          |Thumbnail width in pixels
+thumb_h   |INT          |Thumbnail height in pixels
 
-</div>
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY |-     |(id)
+INDEX |author_idx  |(author)
 
 ## txp_lang
 
-The `txp_lang` table contains translations for the various built-in strings of text used on the public and administration sides of Textpattern.
+Contains translations for the various core and plugin strings of text used throughout the public and administration sides of Textpattern. Language strings are grouped into `events` which indicate where they are used in the system.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column    Type          Description
-  --------- ------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  id        integer       Unique auto-incremented ID of this language string
-  lang      varchar(16)   Language code (for example: en-gb for British English)
-  name      varchar(64)   Unique name which identifies the language string
-  event     varchar(64)   Part of Textpattern where this piece of text is typically used. This helps to keep the language strings organized for the translators. On the public side only the language strings with event 'public' and 'common' are loaded.
-  data      tinytext      Translation of the language string
-  lastmod   timestamp     Modification data and time of the language string
+Column | Type | Description
+---|---|---
+id      |INT         |Unique auto-incremented ID of this language string
+lang    |VARCHAR(16) |Language code (for example: fr for French, en-gb for British English, and so on)
+name    |VARCHAR(64) |Unique name that identifies the language string. This acts as a key that ties strings together across languages
+event   |VARCHAR(64) |The part of Textpattern where this piece of text is used. This not only helps to keep the language strings organized for the translators, it also means only the required strings are loaded where they are needed. On the public side only the language strings with event `public` and `common` are loaded. On the administration side, the events `admin-side`, `common`, plus the panel-specific event are loaded on any given panel
+owner   |VARCHAR(64) |Mandatory for non-core strings to group language strings for ease of management (e.g. deletion when a plugin is uninstalled). Core strings have no owner set. Every other string is given the designated owner, or `site` if omitted
+data    |TEXT        |Translation of the language string
+lastmod |TIMESTAMP   |Modification data and time of the language string
 
-</div>
+Index type | Name | Definition
+---|---|---
+PRIMARY KEY |- |(id)
+UNIQUE |lang   |(lang, name)
+INDEX  |lang_2 |(lang, event)
+INDEX  |owner  |(owner)
 
 ## txp_link
 
