@@ -95,7 +95,7 @@ Change your tag to read `<txp:abc_hello_world name="Fred" />` and notice the dif
 
 You can also use the `text` attribute. If you do, notice the default value you set up is replaced with whatever is used in the plugin's tag.
 
-## Creating conditional output
+## Creating conditional output
 
 To finish off this little tutorial, we'll alter the plugin to work as a conditional tag and take action based on the name given.
 
