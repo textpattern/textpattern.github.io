@@ -3,14 +3,12 @@ layout: document
 category: Development
 published: true
 title: Database schema reference
-description: Textpattern stores all data in a database. Within that database, there are 17 tables, each containing a different collection of information.
+description: Textpattern stores all data in a database. Within that database, each table contains a different collection of information.
 ---
 
-# Database schema reference TODO
+# Database schema reference
 
-Textpattern stores all data in a database. Within that database, there are 17 tables, each containing a different collection of information.[^1]
-
-Here we describe each table and the information it contains, effective version 4.4.1 and later (since the columns can be used to influence sorting in various list tags, non-developers may find their descriptions useful too).
+Textpattern stores all data in a database. Within that database, there are the following tables, each containing a different collection of information.[^1]
 
 On this page:
 
@@ -36,35 +34,89 @@ On this page:
 
 The `textpattern` table contains the articles you create on the [Write panel](https://docs.textpattern.io/administration/write-panel).
 
+Column | Type | Description
+---|---
+ID              |INT          |Unique, auto incremented numerical ID of the article
+Posted          |DATETIME     |Publication date and time
+Expires         |DATETIME     |Expiration date and time (defaults to null, which indicates that the article never expires)
+AuthorID        |VARCHAR(64)  |Login name of the author that created the article
+LastMod         |DATETIME     |Modification date and time
+LastModID       |VARCHAR(64)  |Login name of the author that modified the article
+Title           |VARCHAR(255) |Article Title
+Title_html      |VARCHAR(255) |(reserved for future use)
+Body            |MEDIUMTEXT   |Main article text (max 16MB), stored raw as typed. See also 'textile_body'
+Body_html       |MEDIUMTEXT   |HTML version of main article text, converted from Body field
+Excerpt         |TEXT         |Article excerpt (max 64kB), stored raw as typed. See also 'textile_excerpt'
+Excerpt_html    |MEDIUMTEXT   |HTML version of article excerpt, converted from Excerpt field
+Image           |VARCHAR(255) |Numerical ID(s) associated with this article of images managed by Textpattern, or a URL of any other image
+Category1       |VARCHAR(64)  |Name of the 1st category associated with this article
+Category2       |VARCHAR(64)  |Name of the 2nd category associated with this article
+Annotate        |INT          |Comments enabled? (0 = no, 1 = yes)
+AnnotateInvite  |VARCHAR(255) |Text used for inviting people to comment on the article
+comments_count  |INT          |Number of visible comments associated with this article
+Status          |INT          |Article publication status (1 = draft, 2 = hidden, 3 = pending, 4 = live, 5 = sticky)
+textile_body    |VARCHAR(32)  |Markup system used for this article's Body (0 = raw, 1 = textile, 2 = convert line breaks. Default = 1)
+textile_excerpt |VARCHAR(32)  |Markup system used for this article's Excerpt (0 = raw, 1 = textile, 2 = convert line breaks. Default = 1)
+Section         |VARCHAR(255) |Name of the section in which this article belongs
+override_form   |VARCHAR(255) |Textpattern 'Form' containing layout used for displaying this specific article, overriding the Form which is normally used to display articles. If left empty, the default layout form is used
+Keywords        |VARCHAR(255) |Comma separated list of keywords (often called 'tags') that describe this article
+description     |VARCHAR(255) |Meta description content for the article
+url_title       |VARCHAR(255) |Title of the article as used in the URL for the permalinked article page
+custom_1        |VARCHAR(255) |1st Custom field content
+custom_2        |VARCHAR(255) |2nd Custom field content
+custom_3        |VARCHAR(255) |3rd Custom field content
+custom_4        |VARCHAR(255) |4th Custom field content
+custom_5        |VARCHAR(255) |5th Custom field content
+custom_6        |VARCHAR(255) |6th Custom field content
+custom_7        |VARCHAR(255) |7th Custom field content
+custom_8        |VARCHAR(255) |8th Custom field content
+custom_9        |VARCHAR(255) |9th Custom field content
+custom_10       |VARCHAR(255) |10th Custom field content
+uid             |VARCHAR(32)  |Random string used to uniquely identify this article in an RSS/Atom feed. Textpattern uses md5(uniqid(rand(),true)) to create the uid
+feed_time       |DATE         |Creation date of the article (when you first save the article, regardless of Status)
+
+Index | Definition
+---|---
+PRIMARY KEY                 |(ID),
+INDEX    categories_idx     |(Category1(10), Category2(10)),
+INDEX    Posted             |(Posted),
+INDEX    Expires_idx        |(Expires),
+INDEX    author_idx         |(AuthorID),
+INDEX    section_status_idx |(Section(249), Status),
+INDEX    url_title_idx      |(url_title(250)),
+FULLTEXT searching          |(Title, Body)
+
+
+
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Column             Type           Description
+  
   ------------------ -------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   ID                 integer        Unique, auto incremented numerical ID of the article
-  Posted             datetime       Publication date and time
-  Expires            datetime       Expiration date and time (defaults to 0000-00-00 00:00:00, which indicates that the article never expires)
-  AuthorID           varchar(64)    Login name of the author that created the article
-  LastMod            datetime       Modification date and time
-  LastModID          varchar(64)    Login name of the author that modified the article
-  Title              varchar(255)   Article Title
-  Title_html        varchar(255)   (reserved for future use)
-  Body               mediumtext     Main article text (max 16MB), see also 'textile_body'
-  Excerpt            text           Article excerpt (max 64kB), see also 'textile_excerpt'
-  Body_html         mediumtext     HTML version of Body
-  Excerpt_html      mediumtext     HTML version of Excerpt
-  Image              varchar(255)   numerical ID of an image managed by Textpattern or URL of other image
-  Category1          varchar(64)    Name of the 1th category associated with this article
-  Category2          varchar(64)    Name of the 2nd category associated with this article
-  Annotate           integer        Comments enabled? (0 = no, 1 = yes)
-  AnnotateInvite     varchar(255)   Text used for inviting people to comment on the article
-  comments_count    integer        Number of visible comments associated with this article
-  Status             integer        Status (1 = draft, 2 = hidden, 3 = pending, 4 = live, 5 = sticky)
-  textile_body      integer        Body markup (0 = raw HTML and text, 1 = textile, 2 = only convert line breaks. Default = 1)
+  Posted             datetime       
+  Expires            datetime       
+  AuthorID           varchar(64)    
+  LastMod            datetime       
+  LastModID          varchar(64)    
+  Title              varchar(255)   
+  Title_html        varchar(255)   
+  Body               mediumtext     
+  Excerpt            text           
+  Body_html         mediumtext     
+  Excerpt_html      mediumtext     
+  Image              varchar(255)   
+  Category1          varchar(64)    
+  Category2          varchar(64)    
+  Annotate           integer        
+  AnnotateInvite     varchar(255)   
+  comments_count    integer        
+  Status             integer        
+  textile_body      integer        
   textile_excerpt   integer        Excerpt markup (0 = raw HTML and text, 1 = textile, 2 = only convert line breaks. Default = 1)
-  Section            varchar(64)    Name of the section in which this article belongs
-  override_form     varchar(64)    Textpattern 'form' containing layout used for displaying this specific article, overriding the form which is normally used to display articles. If left empty, the default layout form is used
-  Keywords           varchar(255)   Comma separated list of keywords (often called 'tags') that describe this article
-  url_title         varchar(255)   Title of the article as used in the URL for the permalinked article page
-  custom_1          varchar(255)   1th Custom field (plain text)
+  Section            varchar(64)    
+  override_form     varchar(64)    
+  Keywords           varchar(255)   
+  url_title         varchar(255)   
+  custom_1          varchar(255)   
   custom_2          varchar(255)   2nd Custom field (plain text)
   custom_3          varchar(255)   3rd Custom field (plain text)
   custom_4          varchar(255)   4th Custom field (plain text)
@@ -74,8 +126,8 @@ The `textpattern` table contains the articles you create on the [Write panel](ht
   custom_8          varchar(255)   8th Custom field (plain text)
   custom_9          varchar(255)   9th Custom field (plain text)
   custom_10         varchar(255)   10th Custom field (plain text)
-  uid                varchar(32)    Random string used to uniquely identify this article in an RSS/Atom feed. Textpattern uses md5(uniqid(rand(),true)) to create the uid
-  feed_time         date           Creation date of the article (when you first save the article, regardless of status)
+  uid                varchar(32)    
+  feed_time         date           
 
 </div>
 
