@@ -8,7 +8,7 @@ description: Intergrating HTML markup into Textpattern tags has the benefit of b
 
 # Integrated tag notation
 
-Textpattern and HTML tags can be used separately but mixed together to achieve various objectives. When used separately like this, we might call it “long-form” use of markup, because while the distinction makes it easier to see the two tag types, it can make for more verbose markup over all in your templates. As you get more famililar with Textpattern tags, you may like to write them so they _integrate_ HTML as Textpattern tag attributes, instead of as separate tags. This page describes the general idea. 
+Textpattern and HTML tags can be used mixed together to achieve various objectives. While the distinction makes it easier to see the two tag types, it can make for more verbose markup. As you get more famililar with Textpattern tags, you can choose to write markup in a more _integrated_ way, where HTML is defined in Textpattern tag attributes instead of used as separate tags. This page describes the general idea. 
 
 On this page:
 
