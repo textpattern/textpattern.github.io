@@ -16,12 +16,12 @@ On this page:
 * [Admin-side callbacks](#admin-side-callbacks)
   * [Major block-level callbacks](#major-block-level-callbacks)
   * [Widget callbacks](#widget-callbacks)
-  * [Admin-side criteria callbacks](#sec2-2)
-  * [Admin-side validation callbacks](#sec2-3)
-  * [Admin-side user-interface callbacks](#sec2-4)
-  * [Admin-side theme callbacks](#sec2-5)
-* [Plugin callbacks](#sec3)
-* [Function- and tag-based callbacks](#sec4)
+  * [Panel-level callbacks](#panel-level-callbacks)
+  * [Admin-side criteria callbacks](#admin-side-criteria-callbacks)
+  * [Admin-side validation callbacks](#admin-side-validation-callbacks)
+  * [Admin-side theme callbacks](#admin-side-theme-callbacks)
+* [Plugin callbacks](#plugin-callbacks)
+* [Function- and tag-based callbacks](#function-and-tag-based-callbacks)
 
 ## Public-side callbacks
 
@@ -149,15 +149,18 @@ These callbacks are raised when input elements or constructs are rendered. They 
 * **What it allows:** Alteration or augmentation of the steps in which pagination may occur, i.e. how many 'rows' of data are shown per page.
 * **Argument \#3:** The array of sizes, passed by reference so it may be altered directly.
 
-### include/txp_article.php
+### Panel-level callbacks
+#### Write panel
 
 `article_posted`
 * **When it occurs:** Immediately after article creation.
 * **What it allows:** Interception of the article create process to append or prepend content to the record, or to perform some additional processing.
+* **Additional parameter:** The posted contents as an array.
 
 `article_saved`
 * **When it occurs:** Immediately after article update/save.
 * **What it allows:** Interception of the article save process to append or prepend content to the record, or to perform some additional processing.
+* **Additional parameter:** The posted contents as an array.
 
 `ping`
 * **When it occurs:** Just before a ping notification is sent upon publication of an article.
@@ -174,172 +177,100 @@ These callbacks are raised when input elements or constructs are rendered. They 
     * **callback** The callback function to utilize to update the nominated part of the interface
     * **html** An optional return value of the callback function
 
-#### include/txp_diag.php
+#### Articles panel
 
-TODO: intro para about what this callback is concerned with
+`articles_deleted`
+* **When it occurs:** After one or more articles have been deleted and any associated comments have had their visibility removed.
+* **What it allows:** To do any additional cleanup after one or more articles are removed from Textpattern.
+* **Additional parameter:** An array of deleted article IDs.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`         `$step`           When it occurs                                  What it allows/does
-  ---------------- ----------------- ----------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  `diag_results`   `high` or `low`   At the end of the `doDiagnostics()` function.   Renders the content of the ****[Diagnostics](https://docs.textpattern.io/administration/diagnostics-panel) panel. Allows you to add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low).
+#### Categories panel
 
-</div>
+`categories_deleted`
+* **When it occurs:** After one or more categories have been deleted and the tree has been rebuilt.
+* **What it allows:** To do any additional cleanup after one or more categories are removed from Textpattern.
+* **Additional parameter:** An array of deleted category IDs.
 
-#### include/txp_admin.php
+#### Images panel
 
-\[todo:intro para about what this callback is concerned with\]
+`image_deleted`
+* **When it occurs:** Before an image and its thumbnail are deleted.
+* **What it allows:** To do any additional cleanup after one or more images are removed from Textpattern.
+* **Additional parameter:** The ID of the deleted image.
 
-notextile.
+`thumbnail_deleted`
+* **When it occurs:** Before a thumbnail is deleted.
+* **What it allows:** To do any additional cleanup after a thumbnail is removed from Textpattern.
+* **Additional parameter:** The ID of the deleted thumbnail.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`            `$step`   When it occurs                                                         What it allows/does
-  ------------------- --------- ---------------------------------------------------------------------- -------------------------------------------------------
-  `authors_deleted`   -         After user(s) have been deleted and all assets have been reassigned.   Passes an array of deleted user names as a parameter.
+`image_uploaded`
+* **When it occurs:** After an image has been uploaded or replaced by another image.
+* **What it allows:** To do any additional processing after an image is added or replaced from Textpattern.
+* **Additional parameter:** The ID of the image.
 
-notextile.
+#### Files panel
 
-</div>
-#### *include/txp_category.php*
+`file_deleted`
+* **When it occurs:** Before each file is deleted.
+* **What it allows:** To do any additional cleanup after one or more files are removed from Textpattern.
+* **First additional parameter:** The file ID of the deleted file.
+* **Second additional parameter:** The full path to the deleted file.
 
-\[todo:intro para about what this callback is concerned with\]
+#### Links panel
 
-notextile.
+`links_deleted`
+* **When it occurs:** After one or more links have been deleted.
+* **What it allows:** To do any additional cleanup after one or more links are removed from Textpattern.
+* **Additional parameter:** An array of deleted link IDs.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`               `$step`   When it occurs                                                                  What it allows/does
-  ---------------------- --------- ------------------------------------------------------------------------------- ---------------------------------------------------------
-  `categories_deleted`   -         After one or more categories have been deleted and the tree has been rebuilt.   Passes an array of deleted category IDs as a parameter.
+#### Comments panel
 
-notextile.
+`discuss_deleted`
+* **When it occurs:** After one or more comments have been deleted, but _before_ the comment counts have been updated in the affected articles.
+* **What it allows:** To do any additional cleanup after one or more comments are removed from Textpattern.
+* **Additional parameter:** An array of deleted comment IDs.
 
-</div>
-#### *include/txp_css.php*
+#### Sections panel
 
-\[todo:intro para about what this callback is concerned with\]
+`sections_deleted`
+* **When it occurs:** After one or more sections have been deleted.
+* **What it allows:** To do any additional cleanup after one or more sections are removed from Textpattern.
+* **Additional parameter:** An array of deleted section names.
 
-notextile.
+#### Pages panel
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`        `$step`   When it occurs                         What it allows/does
-  --------------- --------- -------------------------------------- -----------------------------------------------------------
-  `css_deleted`   -         After a stylesheet has been deleted.   Passes the name of the deleted stylesheet as a parameter.
+`page_deleted`
+* **When it occurs:** After a page template has been deleted.
+* **What it allows:** To do any additional cleanup after a page template is removed from Textpattern.
+* **Additional parameter:** The name of the deleted page.
 
-notextile.
+#### Forms panel
 
-</div>
-#### *include/txp_discuss.php*
+`forms_deleted`
+* **When it occurs:** After one or more forms have been deleted.
+* **What it allows:** To do any additional cleanup after one or more forms are removed from Textpattern.
+* **Additional parameter:** An array of deleted form names.
 
-\[todo:intro para about what this callback is concerned with\]
+#### Styles panel
 
-notextile.
+`css_deleted`
+* **When it occurs:** After a stylesheet has been deleted.
+* **What it allows:** To do any additional cleanup after a stylesheet is removed from Textpattern.
+* **Additional parameter:** The name of the deleted stylesheet.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`            `$step`   When it occurs                                                                                                              What it allows/does
-  ------------------- --------- --------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------
-  `discuss_deleted`   -         After one or more comments have been deleted, but *before* the comment counts have been updated in the affected articles.   Passes an array of the deleted comment IDs as a parameter.
+#### Diagnostics panel
 
-notextile.
+`diag_results > low` or `> high`
+* **When it occurs:** At the end of the `doDiagnostics()` function that renders the content of the [Diagnostics](https://docs.textpattern.io/administration/diagnostics-panel) panel.
+* **What it allows:** To add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low).
 
-</div>
-#### *include/txp_file.php*
+#### Users panel
 
-\[todo:intro para about what this callback is concerned with\]
+`authors_deleted`
+* **When it occurs:** After user(s) have been deleted and all assets have been reassigned.
+* **What it allows:** To do any additional cleanup after a user is removed from Textpattern.
+* **Additional parameter:** An array of deleted user names.
 
-notextile.
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`         `$step`   When it occurs                 What it allows/does
-  ---------------- --------- ------------------------------ --------------------------------------------------------------------------------------------------------
-  `file_deleted`   -         Before each file is deleted.   First additional parameter is the file's ID. Second additional parameter is the full path to the file.
-
-notextile.
-
-</div>
-#### *include/txp_form.php*
-
-\[todo:intro para about what this callback is concerned with\]
-
-notextile.
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`          `$step`   When it occurs                               What it allows/does
-  ----------------- --------- -------------------------------------------- -------------------------------------------------------
-  `forms_deleted`   -         After one or more forms have been deleted.   Passes an array of deleted form names as a parameter.
-
-notextile.
-
-</div>
-#### *include/txp_image.php*
-
-\[todo:intro para about what this callback is concerned with\]
-
-notextile.
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`           `$step`   When it occurs                                                   What it allows/does
-  ------------------ --------- ---------------------------------------------------------------- -------------------------------------
-  `image_deleted`    `image`   Before an image and its thumbnail are deleted.                   Passes the image ID as a parameter
-  `image_uploaded`   `image`   After an image has been uploaded or replaced by another image.   Passes the image ID as a parameter.
-
-notextile.
-
-</div>
-#### *include/txp_link.php*
-
-\[todo:intro para about what this callback is concerned with\]
-
-notextile.
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`          `$step`   When it occurs                               What it allows/does
-  ----------------- --------- -------------------------------------------- -----------------------------------------------------
-  `links_deleted`   -         After one or more links have been deleted.   Passes an array of deleted link IDs as a parameter.
-
-notextile.
-
-</div>
-#### *include/txp_list.php*
-
-\[todo:intro para about what this callback is concerned with\]
-
-notextile.
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`             `$step`   When it occurs                                                                                                What it allows/does
-  -------------------- --------- ------------------------------------------------------------------------------------------------------------- --------------------------------------------------------
-  `articles_deleted`   -         After one or more articles have been deleted and any associated comments have had their visibility removed.   Passes an array of deleted article IDs as a parameter.
-
-notextile.
-
-</div>
-#### *include/txp_page.php*
-
-\[todo:intro para about what this callback is concerned with\]
-
-notextile.
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`         `$step`   When it occurs                            What it allows/does
-  ---------------- --------- ----------------------------------------- -----------------------------------------------------
-  `page_deleted`   -         After a page template has been deleted.   Passes the name of the deleted page as a parameter.
-
-notextile.
-
-</div>
-#### *include/txp_section.php*
-
-\[todo:intro para about what this callback is concerned with\]
-
-notextile.
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`             `$step`   When it occurs                                  What it allows/does
-  -------------------- --------- ----------------------------------------------- ----------------------------------------------------------
-  `sections_deleted`   -         After one or more sections have been deleted.   Passes an array of deleted section names as a parameter.
-
-notextile.
-
-</div>
 ### Admin-side criteria callbacks {#sec2-2}
 
 These callbacks allow you to alter the criteria used in the various
