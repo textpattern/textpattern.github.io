@@ -92,7 +92,7 @@ Also from Textpattern 4.7.0, is the ability to negate a tag using `not`.
 </txp:if_section>
 ```
 
-This feature also extends to all plugins, natively without any need to do anything by the plugin author.
+Using `not` negates the result of the entire tag including any combination of attributes it may have. It does not negate individual attributes. This feature also extends to all plugins, natively without any need to do anything by the plugin author.
 
 ## Custom short-tags
 
