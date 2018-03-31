@@ -160,7 +160,7 @@ The `escape="tidy,textile,ltrim"` attribute used in the link description tag (no
 
 The `p` element and it’s two `span` children enable styling the name and date output however you want, together or separately. For example, you could use pseudo rules to add punctuation around the name: `– Drunk Hulk,`. Or use `display:block;` on the `span` elements to put the date under the name instead of using punctuation. Note there is also a hard `class="sig"` set on the `p` element, but you can remove or change that as desired in your own shortcode form.
 
-By writing in a value for the `name=""` attribute, you can choose to use a person’s twitter name, like in this case: “Drunk Hulk”. Or their tweet handle: “@drunkhulk”. Or leave out the dumb `@` symbol: “drunkhulk”. Or anything else you want, which makes this attribute flexible for other source types too. 
+By writing in a value for the `name=""` attribute, you can choose to use a person’s twitter name, like in this case: “Drunk Hulk”. Or their tweet handle: “@drunkhulk”. Or leave out the dumb `@` symbol: “drunkhulk”. Or anything else you want, which makes this attribute flexible for other quote source types besides tweets. 
 
 Because the `name=""` attribute is optional, no name will appear under the quoted tweet if you leave it out of the short-tag. The date will still appear as a link to the actual tweet location because that’s hard-coded in the shortcode (unless you modify it).
 
@@ -190,3 +190,32 @@ Where:
 The only advantage to that in this particular shortcode is a savings of **10 characters**. Other shortcodes may be different. 
 
 Also, it only works if the short-tags feature is enabled in the **Site preferences** under the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#site-preferences). So if you have that preference disabled, don’t use this version of the shortcode.
+
+## The shortcode using tag integration concept
+
+As described in the [Integated tag notation](https://docs.textpattern.io/tags/tag-basics/integrated-tag-notation) doc, you can even use the concept of markup _integration_ (making the HTML as global Textpattern tag attributes) to reduce overall markup volume of the shortcode, though you may think it’s a trade-off with the resulting short-tag used.
+
+For example, the following is yet another way to build the aside-quote form:
+
+```html
+<txp:linklist id='<txp:yield name="id" />'>
+    <q><txp:link_description escape="tidy,textile,ltrim" /></q> 
+    <p class="sig"><txp:yield name="name" /><span class="sourcelink"><a href="<txp:link_url />"><txp:link /></a></span></p>
+</txp:linklist>
+```
+
+(Note we’re not using core short-tags in this case, as described previously, but you could just as readily.)
+
+That block of markup is noticably shorter (fewer characters of markup overall). In this case we’ve used a different combination of Textpattern tags to target the data values we want from the links, and we’ve removed the HTML `aside` container tags. 
+
+But we need those HTML tags, so we need to use the concept of markup integration on the associated output tag like this:
+
+```html
+<txp::linkquote yield="id,name" id="19" wraptag="aside" class="classname" />
+```
+
+In short, we’ve made a trade-off: less markup in the shortcode, but more markup in your article, and probably a more complex short-tag to have to remember (and a bit more of an eye-sore in your article body text).
+
+Whether that is easier to grasp than earlier examples is subjective to the individual. And if you’re working on a collaborative site, you have even mare opinions to take into account.
+
+Options are good.
