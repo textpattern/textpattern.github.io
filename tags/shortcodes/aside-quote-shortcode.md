@@ -99,11 +99,9 @@ Following how [custom short-tags and shortcodes]() work, the associated short-ta
 
 There are three attributes defined:
 
-* Required: `id=“”` (the ID number of the link used)
-* Optional: `name=“”` (a name of your choosing if needed)
-* Optional: `class=“”` (CSS selector used on the `aside` element; idea here is to set different widths as desired)
-
-Note there is also a hard `class=“sig”` set on the `p` element, but you can remove or change that as desired in your own shortcode form.
+* Required: `id=""` (the ID number of the link used)
+* Optional: `name=""` (a name of your choosing if needed)
+* Optional: `class=""` (CSS selector used on the `aside` element; idea here is to set different widths as desired)
 
 ## Links setup
 
@@ -143,7 +141,7 @@ Open your article draft in the Write panel, and use the short-tag between two pa
 ```
 …end of a paragraph.
 
-  <txp::linkquote id=“19” name=“Drunk Hulk” class=“xxl” />
+  <txp::linkquote id=“19” name="Drunk Hulk" class="xxl" />
   
 Start of new paragraph…
 ``` 
@@ -154,17 +152,19 @@ So the above hypothetical tag might output a tweet like this, depending how you 
 >
 >Drunk Hulk [23 August 2009](#)
 
+**Attention:** See notes in [Core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags) about the correct tag to use if the core shor-tag preference is disabled in the Preferences panel. 
+
 ## Notes and explainers
 
 The `escape="tidy,textile,ltrim"` attribute used in the link description tag (notably the `tidy,textile` values) allows using Textile formatting in your link descriptions. For example, to get the bold formatting on the word “SMASHED”, the description Could be written as: `Hulk *SMASHED!*` Or you could write it with a Textile span like this, `Hulk %(impact)smashed!%`, then style the CSS rule for `.impact` using a text transform for uppercase, and a niftier typeface for extra visual _oomph_. (The `ltrim` attribute value clips white characters left. You may not need this. See [Tag escaping](https://docs.textpattern.io/tags/tag-basics/tag-escaping) doc to learn about all `escape=“”` attribute uses.)
 
-The `p` element and it’s two `span` children enable styling the name and date output however you want, together or separately. For example, you could use pseudo rules to add punctuation around the name: `– Drunk Hulk,`. Or use `display:block;` on the `span` elements to put the date under the name instead of using punctuation.
+The `p` element and it’s two `span` children enable styling the name and date output however you want, together or separately. For example, you could use pseudo rules to add punctuation around the name: `– Drunk Hulk,`. Or use `display:block;` on the `span` elements to put the date under the name instead of using punctuation. Note there is also a hard `class="sig"` set on the `p` element, but you can remove or change that as desired in your own shortcode form.
 
-By writing in a value for the `name=“”` attribute, you can choose to use a person’s twitter name, like in this case: “Drunk Hulk”. Or their tweet handle: “@drunkhulk”. Or leave out the dumb `@` symbol: “drunkhulk”. Or anything else you want. 
+By writing in a value for the `name=""` attribute, you can choose to use a person’s twitter name, like in this case: “Drunk Hulk”. Or their tweet handle: “@drunkhulk”. Or leave out the dumb `@` symbol: “drunkhulk”. Or anything else you want, which makes this attribute flexible for other source types too. 
 
-Because the `name=“”` attribute is optional, no name will appear under the quoted tweet if you leave it out of the short-tag. The date will still appear as a link to the actual tweet location because that’s hard-coded in the shortcode (unless you modify it).
+Because the `name=""` attribute is optional, no name will appear under the quoted tweet if you leave it out of the short-tag. The date will still appear as a link to the actual tweet location because that’s hard-coded in the shortcode (unless you modify it).
 
-The `class=“”` attribute can take multiple values, as you would expect (e.g. `class=“value1 value2 etc”`).
+The `class=""` attribute can take multiple values, as you would expect (e.g. `class="value1 value2 etc"`).
 
 Of course, you can modify this shortcode to any other need you want to create. Have fun.
 
@@ -184,7 +184,9 @@ The shortcode above was described using regular Textpattern tags. But you could,
 Where:
 
 * `txp:if_yield` becomes `if::yield`
-* `txp:link_description` becomes `link::descrption`
+* `txp:link_description` becomes `link::description`
 * `txp:link_url` becomes `link::url`
 
-There’s no major advantage to that in this shortcode except a savings of **10 characters**. Other shortcodes may be different. And it only works if the short-tags feature is enabled in the **Site preferences** under the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#site-preferences).
+The only advantage to that in this particular shortcode is a savings of **10 characters**. Other shortcodes may be different. 
+
+Also, it only works if the short-tags feature is enabled in the **Site preferences** under the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#site-preferences). So if you have that preference disabled, don’t use this version of the shortcode.

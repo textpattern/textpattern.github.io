@@ -63,7 +63,7 @@ See [Custom short-tags and shortcodes](custom-short-tags-and-shortcodes) doc for
 This new tag, as designed, takes up to three attributes:
 
 * `id` (mandatory) — The id of the image you wish to display.
-* `class` (optional) — A CSS class to apply to the HTML `figure` element (i.e. `<figure class=“”>`.
+* `class` (optional) — A CSS class to apply to the HTML `figure` element (i.e. `<figure class="">`.
 * `caption` (optional) — The caption to apply to the image. If omitted, it will use the one associated with the image itself.
 
 ## Example usage
