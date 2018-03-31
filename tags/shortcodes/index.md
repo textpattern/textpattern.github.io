@@ -17,6 +17,6 @@ Following are shortcodes you can put to use immediately in a 4.7.0 installation 
 ### Available shortcodes
 
 * [Image with caption shortcode](image-with-caption-shortcode) (one possible use of HTML `figure` element; pulls data from a Textpattern image)
-* [Aside-quote shortcode](aside-quote-shortcode) (one possible use of HTML `aside` element; similar to a pullquote, but pulls data from a Textpattern link)
+* [Aside-quote shortcode](aside-quote-shortcode) (one possible use of HTML `aside` element; pulls data from a Textpattern link)
 * [Download link shortcode](download-link-shortcode) (a file download link/widget)
 * [Video embed shortcode](video-embed-shortcode) (to embed a video in article)
