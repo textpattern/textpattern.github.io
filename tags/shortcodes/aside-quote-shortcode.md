@@ -55,13 +55,11 @@ The `aside` block itself is structured similar to what the W3C specification rec
 ```html
 <aside class="">
 	<q> … </q> 
-  <p class="">
-    <span>Name</span>
-    <span>Title</span>
+	<p class=""><span>Name</span> <span>Title</span>
 </aside>
 ```
 
-The variation is made here because this shortcode is _not_ a pullquote. The quotes are indeed relevant to the main content, but **they do not come from the main content**, they come from external sources and are used in relation to the content as relevant asides. 
+The `p` addition is made here because this shortcode is _not_ a pullquote. The quotes are indeed relevant to the main content, but **they do not come from the main content**, they come from external sources and are used in relation to the content as relevant asides. 
 
 Thus the name of this shortcode: “aside-quote”. Or if you like, “linkquote”, because the quoted content and related source information will be structured as a Textpattern link.
 
@@ -88,7 +86,7 @@ Create a new Form of type _Miscellaneous_ called **linkquote**, paste the follow
 </aside>
 ```
 
-You can remove the top comment hidden with `<txp:hide> … </txp:hide>` if you want to, but it’s useful as a reminder about how to use the shortcode when needed.
+You can remove the top comment hidden with `<txp:hide> … </txp:hide>` if you want to, but it’s useful as a reminder about how to use the associated short-tag when needed.
 
 ## Short-tag and attributes
 
@@ -102,7 +100,7 @@ There are three attributes defined:
 
 * Required: `id=""` (the ID number of the link used)
 * Optional: `name=""` (a name of your choosing if needed)
-* Optional: `class=""` (CSS selector used on the `aside` element; idea here is to set different widths as desired)
+* Optional: `class=""` (CSS selector used on the `aside` element; idea here is to set different float directions and widths as desired)
 
 ## Links setup
 
