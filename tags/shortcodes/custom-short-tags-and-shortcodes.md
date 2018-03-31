@@ -44,7 +44,7 @@ If you opt to disable short-tag functionality in the Preferences panel, you can 
 
 In this case the `yield` is necessary to process the custom attributes. (See [Image with caption shortcode](image-with-caption-shortcode) for example of attributes used in a `figure` shortcode.)
 
-Alternatively, the attributes can be defined explicitly in the tag as values of the `yield=“”` attribute: 
+Alternatively, the attributes can be defined explicitly in the tag as values of the `yield=""` attribute: 
 
 ```
 <txp:output_form yield="id, caption" form="figure" />
@@ -63,7 +63,7 @@ The `yield` tag is used to create attributes to process inside  your custom tag:
 The `if_yield` container tag (and the `else` tag) can be used to determine if the attribute has been supplied:
 
 ```
-<txp:if_yield name="your-attribute”> … </txp:if_yield>
+<txp:if_yield name="your-attribute"> … </txp:if_yield>
 ```
 
 That’s it!
