@@ -13,6 +13,7 @@ In addition to the [core short-tags](https://docs.textpattern.io/tags/tag-basics
 On this page:
 
 * [Custom short-tags](#custom-short-tags)
+* [When short-tag preference is diabled](when-short-tag-preference-is-disabled)
 * [Shortcodes](#shortcodes)
 
 ## Custom short-tags
@@ -33,7 +34,9 @@ If you named your shortcode Form, _image_figure_, the tag would be usable as:
 
 And so on.
 
-But, if you opt to disable short-tag functionality in the Preferences panel, you can still use the shortcode Form via an `output_form` tag like this:
+## When short-tag preference is disabled
+
+If you opt to disable short-tag functionality in the Preferences panel, you can still use the shortcode Form via an `output_form` tag like this:
 
 ```
 <txp:output_form yield form="figure" />
@@ -41,13 +44,13 @@ But, if you opt to disable short-tag functionality in the Preferences panel, you
 
 In this case the `yield` is necessary to process the custom attributes. (See [Image with caption shortcode](image-with-caption-shortcode) for example of attributes used in a `figure` shortcode.)
 
-Alternatively, the attributes can be defined explicitly in the tag: 
+Alternatively, the attributes can be defined explicitly in the tag as values of the `yield=“”` attribute: 
 
 ```
 <txp:output_form yield="id, caption" form="figure" />
 ```
 
-In this latter case, omitting the `class` attribute means it will be considered as a global attribute and processed accordingly.
+Note that omitting the `class` attribute means it will be considered as a global attribute and processed accordingly.
 
 ## Shortcodes
 
