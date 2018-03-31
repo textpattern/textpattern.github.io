@@ -19,6 +19,7 @@ On this page:
 * [Usage](#usage)
 * [Notes and explainers](#notes-and-explainers)
 * [The shortcode using core short-tags](#the-shortcode-using-core-short-tags)
+* [The shortcode using tag integration concept](#the-shortcode-using-tag-integration-concept)
 
 ## Scenario
 
