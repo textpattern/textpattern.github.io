@@ -60,7 +60,7 @@ The `yield` tag is used to create attributes to process inside  your custom tag:
 The `if_yield` container tag (and the `else` tag) can be used to determine if the attribute has been supplied:
 
 ```
-<txp:if_yield name="your-attribute”> … `</txp:if_yield>
+<txp:if_yield name="your-attribute”> … </txp:if_yield>
 ```
 
 That’s it!
