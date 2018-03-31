@@ -170,7 +170,7 @@ Of course, you can modify this shortcode to any other need you want to create. H
 
 ## The shortcode using core short-tags
 
-The shortcode above was described using regular Textpattern tags, but you could, for kicks, use the same shortcode with the compound-name tags rewritten as [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags), where possible. In other words, this would also work:
+The shortcode above was described using regular Textpattern tags. But you could, for kicks, rewrite the shortcode usng [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags). In other words, this would also work:
 
 ```html
 <aside<if::yield name="class"> class="<txp:yield name="class" />"</if::yield>>
@@ -186,3 +186,5 @@ Where:
 * `txp:if_yield` becomes `if::yield`
 * `txp:link_description` becomes `link::descrption`
 * `txp:link_url` becomes `link::url`
+
+There’s no major advantage to that in this shortcode except a savings of **10 characters**. Other shortcodes may be different. And it only works if the short-tags feature is enabled in the **Site preferences** under the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#site-preferences).
