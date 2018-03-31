@@ -17,6 +17,8 @@ On this page:
 * [Short-tag and attributes](#short-tag-and-attributes)
 * [Links setup](#links-setup)
 * [Usage](#usage)
+* [Notes and explainers](#notes-and-explainers)
+* [The shortcode using core short-tags](#the-shortcode-using-core-short-tags)
 
 ## Scenario
 
@@ -148,11 +150,13 @@ Start of new paragraph…
 
 So the above hypothetical tag might output a tweet like this, depending how you style everything:
 
->”**Hulk SMASHED!**”
+>”Hulk **SMASHED!**”
 >
 >Drunk Hulk [23 August 2009](#)
 
-**Notes:**
+## Notes and explainers
+
+The `escape="tidy,textile,ltrim"` attribute used in the link description tag (notably the `tidy,textile` values) allows using Textile formatting in your link descriptions. For example, to get the bold formatting on the word “SMASHED”, the description Could be written as: `Hulk *SMASHED!*` Or you could write it with a Textile span like this, `Hulk %(impact)smashed!%`, then style the CSS rule for `.impact` using a text transform for uppercase, and a niftier typeface for extra visual _oomph_. (The `ltrim` attribute value clips white characters left. You may not need this. See [Tag escaping](https://docs.textpattern.io/tags/tag-basics/tag-escaping) doc to learn about all `escape=“”` attribute uses.)
 
 The `p` element and it’s two `span` children enable styling the name and date output however you want, together or separately. For example, you could use pseudo rules to add punctuation around the name: `– Drunk Hulk,`. Or use `display:block;` on the `span` elements to put the date under the name instead of using punctuation.
 
@@ -163,3 +167,22 @@ Because the `name=“”` attribute is optional, no name will appear under the q
 The `class=“”` attribute can take multiple values, as you would expect (e.g. `class=“value1 value2 etc”`).
 
 Of course, you can modify this shortcode to any other need you want to create. Have fun.
+
+## The shortcode using core short-tags
+
+The shortcode above was described using regular Textpattern tags, but you could, for kicks, use the same shortcode with the compound-name tags rewritten as [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags), where possible. In other words, this would also work:
+
+```html
+<aside<if::yield name="class"> class="<txp:yield name="class" />"</if::yield>>
+      <txp:linklist id='<txp:yield name="id" />'>
+         <q><link::description escape="tidy,textile,ltrim" /></q> 
+         <p class="sig"><if::yield name="name"><txp:yield name="name" /><txp:else /></if::yield><span class="sourcelink"><a href="<link::url />"><txp:link /></a></span></p>
+      </txp:linklist>
+</aside>
+```
+
+Where:
+
+* `txp:if_yield` becomes `if::yield`
+* `txp:link_description` becomes `link::descrption`
+* `txp:link_url` becomes `link::url`
