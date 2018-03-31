@@ -13,7 +13,7 @@ In addition to the [core short-tags](https://docs.textpattern.io/tags/tag-basics
 On this page:
 
 * [Custom short-tags](#custom-short-tags)
-* [When short-tag preference is diabled](when-short-tag-preference-is-disabled)
+* [When short-tag preference is disabled](when-short-tag-preference-is-disabled)
 * [Shortcodes](#shortcodes)
 
 ## Custom short-tags
