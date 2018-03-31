@@ -106,11 +106,11 @@ There are three attributes defined:
 
 ## Links setup
 
-The shortcode was conceived to be flexible enough for adding various types of quotations, or, rather, from various sources. The idea is that they are not directly part of the main content, or else they would be more appropriate as `blockquote`s, not asides.
+The shortcode was conceived to be flexible enough for adding various types of quotations, or, rather, from various sources. The idea is they are not directly part of the main content, or else they would be more appropriate as blockquotes, not asides.
 
 The only similarity with pullquotes, perhaps, is how you might style them to appear; floating left or right in relation to surrounding content. But there is no rule that asides styled this way _have_ to be “pullquotes” by definition. Pullquotes are stupidly redundant, in fact. Aside-quotes, as described here, are where it’s at!
 
-The process is described here using tweets, but as long as whatever you’re quoting can be structured as a Textpattern link, the sky’s the limit — other social media posts, blog comments, platform bios, taglines, those reviewer quotes you find at the front of books, and so. 
+The process is described using tweets, but as long as whatever you’re quoting can be structured as a Textpattern link, the sky’s the limit — other social media posts, blog comments, platform bios, taglines, those reviewer quotes you find at the front of books, and so forth. 
 
 ### Tweet links
 
