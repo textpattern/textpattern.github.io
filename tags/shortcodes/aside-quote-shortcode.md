@@ -147,17 +147,17 @@ Open your article draft in the Write panel, and use the short-tag between two pa
 Start of new paragraph…
 ``` 
 
-So the above hypothetical tag might output a tweet like this, depending how you style everything:
+The above hypothetical tag might output a tweet as follows, depending on how you style everything:
 
 >”Hulk **SMASHED!**”
 >
 >Drunk Hulk [23 August 2009](#)
 
-**Attention:** See notes in [Core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags) about the correct tag to use if the core shor-tag preference is disabled in the Preferences panel. 
+**Attention:** See notes in [Core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags) about the correct tag to use if the core short-tag preference is disabled in the Preferences panel. 
 
 ## Notes and explainers
 
-The `escape="tidy,textile,ltrim"` attribute used in the link description tag (notably the `tidy,textile` values) allows using Textile formatting in your link descriptions. For example, to get the bold formatting on the word “SMASHED”, the description Could be written as: `Hulk *SMASHED!*` Or you could write it with a Textile span like this, `Hulk %(impact)smashed!%`, then style the CSS rule for `.impact` using a text transform for uppercase, and a niftier typeface for extra visual _oomph_. (The `ltrim` attribute value clips white characters left. You may not need this. See [Tag escaping](https://docs.textpattern.io/tags/tag-basics/tag-escaping) doc to learn about all `escape=“”` attribute uses.)
+The `escape="tidy,textile,ltrim"` attribute used in the link description tag allows using Textile formatting in your link descriptions (notably the `tidy,textile` values). For example, to get the bold formatting on the word “SMASHED,” as depicted above, the description could be written as `Hulk *SMASHED!*` Or you could write it with a Textile span like this, `Hulk %(impact)smashed!%`, then style the CSS rule for `.impact` using a text transform for uppercase, and a niftier typeface for extra visual _oomph_. (The `ltrim` attribute value clips white characters left. You may not need this. See [Tag escaping](https://docs.textpattern.io/tags/tag-basics/tag-escaping) doc to learn about all `escape=“”` attribute uses.)
 
 The `p` element and it’s two `span` children enable styling the name and date output however you want, together or separately. For example, you could use pseudo rules to add punctuation around the name: `– Drunk Hulk,`. Or use `display:block;` on the `span` elements to put the date under the name instead of using punctuation. Note there is also a hard `class="sig"` set on the `p` element, but you can remove or change that as desired in your own shortcode form.
 
@@ -171,7 +171,7 @@ Of course, you can modify this shortcode to any other need you want to create. H
 
 ## The shortcode using core short-tags
 
-The shortcode above was described using regular Textpattern tags. But you could, for kicks, rewrite the shortcode usng [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags). In other words, this would also work:
+The shortcode above was described using regular Textpattern tags. But you could, for kicks, rewrite the shortcode using [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags). In other words, this would also work:
 
 ```html
 <aside<if::yield name="class"> class="<txp:yield name="class" />"</if::yield>>
@@ -194,7 +194,7 @@ Also, it only works if the short-tags feature is enabled in the **Site preferenc
 
 ## The shortcode using tag integration concept
 
-As described in the [Integated tag notation](https://docs.textpattern.io/tags/tag-basics/integrated-tag-notation) doc, you can even use the concept of markup _integration_ (making the HTML as global Textpattern tag attributes) to reduce overall markup volume of the shortcode, though you may think it’s a trade-off with the resulting short-tag used.
+As described in the [Integrated tag notation](https://docs.textpattern.io/tags/tag-basics/integrated-tag-notation) doc, you can even use the concept of markup _integration_ (making the HTML as global Textpattern tag attributes) to reduce overall markup volume of the shortcode.
 
 For example, the following is yet another way to build the aside-quote form:
 
@@ -215,7 +215,11 @@ But we need those HTML tags, so we need to use the concept of markup integration
 <txp::linkquote yield="id,name" id="19" wraptag="aside" class="classname" />
 ```
 
-In short, we’ve made a trade-off: less markup in the shortcode, but more markup in your article, and probably a more complex short-tag to have to remember (and a bit more of an eye-sore in your article body text).
+In short, we’ve made a trade-off. There’s less markup in the shortcode, but there’s:
+
+* more markup in your article (i.e. more of an eye-sore)
+* a more complex short-tag to remember, and
+* a bigger hit on PHP processing.
 
 Whether that is easier to grasp than earlier examples is subjective to the individual. And if you’re working on a collaborative site, you have even more opinions to take into account.
 
