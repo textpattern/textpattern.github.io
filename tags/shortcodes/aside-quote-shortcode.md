@@ -171,7 +171,7 @@ Of course, you can modify this shortcode to any other need you want to create. H
 
 ## The shortcode using core short-tags
 
-The shortcode above was described using regular Textpattern tags. But you could, for kicks, rewrite the shortcode usng [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags). In other words, this would also work:
+The shortcode above was described using regular Textpattern tags. But you could, for kicks, rewrite the shortcode using [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags). In other words, this would also work:
 
 ```html
 <aside<if::yield name="class"> class="<txp:yield name="class" />"</if::yield>>
@@ -188,7 +188,7 @@ Where:
 * `txp:link_description` becomes `link::description`
 * `txp:link_url` becomes `link::url`
 
-The only advantage to that in this particular shortcode is a savings of **10 characters**. Other shortcodes may be different. 
+The only advantage in this particular shortcode is a savings of **10 characters**. Other shortcodes may be different. 
 
 Also, it only works if the short-tags feature is enabled in the **Site preferences** under the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#site-preferences). So if you have that preference disabled, don’t use this version of the shortcode.
 
@@ -215,7 +215,7 @@ But we need those HTML tags, so we need to use the concept of markup integration
 <txp::linkquote yield="id,name" id="19" wraptag="aside" class="classname" />
 ```
 
-In short, we’ve made a trade-off: less markup in the shortcode, but more markup in your article, and probably a more complex short-tag to have to remember (and a bit more of an eye-sore in your article body text).
+In short, we’ve made a trade-off: less markup in the shortcode, but more markup in your article (thus more of an eye-sore), and probably a harder short-tag to remember.
 
 Whether that is easier to grasp than earlier examples is subjective to the individual. And if you’re working on a collaborative site, you have even mare opinions to take into account.
 
