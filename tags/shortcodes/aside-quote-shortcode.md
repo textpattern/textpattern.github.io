@@ -217,7 +217,7 @@ Also, using the `linklist` tag in the shortcode above, you can define more than 
 
 In summary, we’ve made a trade-off. There’s less markup in the shortcode, but there’s:
 
-* more markup in your article (maybe more of an eye-sore too)
+* more markup in your article due to the larger longer short-tag (maybe more of an eye-sore too)
 * a more complex short-tag to remember, and
 * a bigger hit on PHP processing because of the markup integration with global HTML attribute.
 
