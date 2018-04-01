@@ -198,26 +198,30 @@ For example, the following is yet another way to build the aside-quote form:
 
 ```html
 <txp:linklist id='<txp:yield name="id" />'>
-    <q><txp:link_description escape="tidy,textile,ltrim" /></q> 
+    <q><txp:link_description escape="tidy, textile" /></q> 
     <p class="sig"><txp:yield name="name" /><span class="sourcelink"><a href="<txp:link_url />"><txp:link /></a></span></p>
 </txp:linklist>
 ```
 
 (Note we’re not using core short-tags in this case, as described previously, but you could just as readily.)
 
-That block of markup is noticably shorter (fewer characters of markup overall). In this case we’ve used a different combination of Textpattern tags to target the data values we want from the links, and we’ve removed the HTML `aside` container tags. 
+That block of markup is noticably shorter (fewer characters of markup overall). In this case we’ve used a different combination of Textpattern tags to target the data values we want from the links, notably the `linklist` container tag. we’ve also removed the HTML `aside` container tags.
 
-But we need those HTML tags, so we need to use the concept of markup integration on the associated output tag like this:
+But we need those wrapping HTML tags, so we need to use the concept of markup integration on the associated output tag like this:
 
 ```html
-<txp::linkquote yield="id,name" id="19" wraptag="aside" class="classname" />
+<txp::linkquote id="number" name="whatever" wraptag="aside" class="value" />
 ```
 
-In short, we’ve made a trade-off. There’s less markup in the shortcode, but there’s:
+The shortcode tag now uses the concept of integration to define the wrapping `aside` tag as a global tag attribute (i.e. `wraptag="aside"`).
+
+Also, using the `linklist` tag in the shortcode above, you can define 1 or more links to output by their ID numbers (i.e. `id="1, 2, etc”`). You would have to explore how to modify the shortcode, and change how the `name=""` attribute works, perhaps, but it’s possible.
+
+But here’s the thing to note: we’ve made a trade-off. There’s less markup in the shortcode, but there’s:
 
 * more markup in your article (i.e. more of an eye-sore)
 * a more complex short-tag to remember, and
-* a bigger hit on PHP processing.
+* a bigger hit on PHP processing because of the markup integration with global HTML attributes.
 
 Whether that is easier to grasp than earlier examples is subjective to the individual. And if you’re working on a collaborative site, you have even more opinions to take into account.
 
