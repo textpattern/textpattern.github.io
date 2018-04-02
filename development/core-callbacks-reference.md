@@ -273,41 +273,31 @@ These callbacks are raised when input elements or constructs are rendered. They 
 
 ### Admin-side criteria callbacks {#sec2-2}
 
-These callbacks allow you to alter the criteria used in the various
-panels. You can append SQL to the criteria to apply additional
+These callbacks allow you to alter the criteria used in the various panels. You can append SQL to the criteria to apply additional
 filtering.
 
-Note the criteria is *appended*, so existing search parameters are
-honoured. Therefore your returned statement should begin with
-`" AND ..."`. If you wish to ignore any previous filtering, begin
-`" AND 1 AND ..."`.
+Note the criteria is *appended*, so existing search parameters are honoured. Therefore your returned statement should begin with
+`" AND ..."`. If you wish to ignore any previous filtering, begin `" AND 1 AND ..."`.
 
-The third argument to your callback function contains the current
-criteria used so you may make decisions based on its contents (e.g. you
-may not want to filter the results if a search has been performed).
+The third argument to your callback function contains the current criteria used, so you may make decisions based on its contents (e.g. you may not want to filter the results if a search has been performed).
 
-These callbacks all have the same `$event` (= `admin_criteria`).
+These callbacks all have the same `$event` called `admin_criteria`.
 
-notextile.
+Panel | `$step`
+---|---
+[Articles](https://docs.textpattern.io/administration/articles-panel) | `list_list`
+[Comments](https://docs.textpattern.io/administration/comments-panel) | `discuss_list`
+[Files](https://docs.textpattern.io/administration/files-panel) | `file_list`
+[Forms](https://docs.textpattern.io/administration/forms-panel) | `form_list`
+[Images](https://docs.textpattern.io/administration/images-panel) | `image_list`
+[Links](https://docs.textpattern.io/administration/links-panel) | `link_list`
+[Pages](https://docs.textpattern.io/administration/pages-panel) | `page_list`
+[Sections](https://docs.textpattern.io/administration/sections-panel) | `section_list`
+[Styles](https://docs.textpattern.io/administration/styles-panel) | `css_list`
+[Themes](https://docs.textpattern.io/administration/themes-panel) | `skin_list`
+[Users](https://docs.textpattern.io/administration/users-panel) | `author_list`
+[Visitor logs](https://docs.textpattern.io/administration/visitor-logs-panel) | `log_list`
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Panel                                                                               `$event`           `$step`
-  ----------------------------------------------------------------------------------- ------------------ ----------------
-  "Articles":https://docs.textpattern.io/administration/articles-panel         `admin_criteria`   `list_list`
-  "Comments":https://docs.textpattern.io/administration/comments-panel         "                  discuss_list
-  "Files":https://docs.textpattern.io/administration/files-panel               "                  `file_list`
-  "Forms":https://docs.textpattern.io/administration/forms-panel          "                  `form_list`
-  "Images":https://docs.textpattern.io/administration/images-panel             "                  `image_list`
-  "Links":https://docs.textpattern.io/administration/links-panel               "                  link_list
-  "Pages":https://docs.textpattern.io/administration/pages-panel          "                  `page_list`
-  "Sections":https://docs.textpattern.io/administration/sections-panel    `admin_criteria`   `section_list`
-  "Styles":https://docs.textpattern.io/administration/styles-panel        "                  `css_list`
-  "Users":https://docs.textpattern.io/administration/users-panel                 "                  `author_list`
-  "Visitor logs":https://docs.textpattern.io/administration/visitor-logs-panel   "                  `log_list`
-
-notextile.
-
-</div>
 ### Admin-side validation callbacks {#sec2-3}
 
 These callbacks allow you to alter or append to the constraints imposed
