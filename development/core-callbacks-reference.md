@@ -21,7 +21,7 @@ On this page:
   * [Admin-side validation callbacks](#admin-side-validation-callbacks)
   * [Admin-side theme callbacks](#admin-side-theme-callbacks)
 * [Plugin callbacks](#plugin-callbacks)
-* [Function- and tag-based callbacks](#function-and-tag-based-callbacks)
+* [Function- and tag-based callbacks](#function--and-tag-based-callbacks)
 
 ## Public-side callbacks
 
