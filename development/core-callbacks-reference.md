@@ -323,7 +323,8 @@ Panel | `$event` | `$step`
 In order to process these callbacks, your plugin must raise the `PLUGIN_LIFECYCLE_NOTIFY` flag to register its intent. In addition, if
 you wish to offer a link to your plugin's preferences from the [Plugins](http:docs.textpattern.io/administration/plugins-panel) panel, you must raise the `PLUGIN_HAS_PREFS` flag.
 
-`$event` | `$step` | When it occurs                                                                                                                                                                                               ---|---|---
+`$event` | `$step` | When it occurs
+---|---|---
 `plugin_lifecycle.abc_your_plugin` | `enabled`   | When somebody switches abc_your_plugin to "Enabled" (Yes) from the **Plugins** panel.
 `plugin_lifecycle.abc_your_plugin` | `disabled`  | When somebody switches abc_your_plugin to "Disabled" (No) on the **Plugins** panel.
 `plugin_lifecycle.abc_your_plugin` | `installed` | When abc_your_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and selecting **Install** button on the next screen.
