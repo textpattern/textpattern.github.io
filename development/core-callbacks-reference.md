@@ -20,6 +20,8 @@ On this page:
   * [Admin-side criteria callbacks](#admin-side-criteria-callbacks)
   * [Admin-side validation callbacks](#admin-side-validation-callbacks)
   * [Admin-side theme callbacks](#admin-side-theme-callbacks)
+* [Modification callbacks](#modification-callbacks)
+* [API callbacks](#api-callbacks)
 * [Plugin callbacks](#plugin-callbacks)
 * [Function- and tag-based callbacks](#function--and-tag-based-callbacks)
 
@@ -251,6 +253,11 @@ These callbacks are raised when input elements or constructs are rendered. They 
 * **What it allows:** To do any additional cleanup after one or more forms are removed from Textpattern.
 * **Additional parameter:** An array of deleted form names.
 
+`form.create` > `done`
+* **When it occurs:** After a form has been created from the UI.
+* **What it allows:** To do any additional processing when a form is created in Textpattern.
+* **Additional parameter:** An array comprising the new Form `name`, its `type` and its `Form` contents.
+
 #### Styles panel
 
 `css_deleted`
@@ -270,6 +277,45 @@ These callbacks are raised when input elements or constructs are rendered. They 
 * **When it occurs:** After user(s) have been deleted and all assets have been reassigned.
 * **What it allows:** To do any additional cleanup after a user is removed from Textpattern.
 * **Additional parameter:** An array of deleted user names.
+
+`user.assign_assets` > `done`
+* **When it occurs:** After user(s) have been deleted and all assets have been reassigned. Only runs if the existing user and new owner accounts both exist.
+* **What it allows:** To do any additional cleanup after a user is removed from Textpattern.
+* **Additional parameter:** An array containing the existing `owner`, the `new_owner` and a list of columns that have been affected by the reassignment.
+
+See also `user.assign_assets` > `columns`.
+
+`user.create` > `done`
+* **When it occurs:** After a user has been successfully created.
+* **What it allows:** To do any additional processing after a user has been created.
+* **Additional parameter:** An array containing the entire set of columns and their data about the new user.
+
+`user.update` > `done`
+* **When it occurs:** After an existing user account has been successfully altered.
+* **What it allows:** To do any additional processing after user metadata has been modified.
+* **Additional parameter:** An array containing the `name`, `email`, `realname` and any additional metadata.
+
+`user.password_change` > `done`
+* **When it occurs:** After an existing user has successfully changed their password.
+* **What it allows:** To do any additional processing after user metadata has been modified.
+* **Additional parameter:** An array containing the `user` name, `password`, and `hash`.
+
+`user.remove` > `done`
+* **When it occurs:** After an existing user account has been successfully deleted.
+* **What it allows:** To do any additional processing after user removal.
+* **Additional parameter:** An array containing the list of deleted `user` names, and the `new_owner` of the deleted authors' assets.
+
+See also `authors_deleted`.
+
+`user.rename` > `done`
+* **When it occurs:** After an existing user login name has been changed.
+* **What it allows:** To do any additional processing after user metadata has been modified.
+* **Additional parameter:** An array containing the original `user` name, and the `newname`.
+
+`user.change_group` > `done`
+* **When it occurs:** After privileges of an existing user account has been successfully altered.
+* **What it allows:** To do any additional processing after user metadata has been modified.
+* **Additional parameter:** An array containing a list of the `user` names affected and new privilege level they have been assigned.
 
 ### Admin-side criteria callbacks
 
@@ -340,6 +386,72 @@ When performing theme operations such as import and export, you can intercept or
 `txp.css`, `txp.form`, `txp.page` | `import` | 0 | Theme name, the list of its assets to be processed, and the name of each successfully imported asset | Perform additional content, database or file manipulation on completion of the import process from the file system
 `txp.css`, `txp.form`, `txp.page` | `export` | 1 | Theme name and a list of its assets to be processed | Prepare or check content prior to asset export to the file system
 `txp.css`, `txp.form`, `txp.page` | `export` | 0 | Theme name, the list of its assets to be processed, and the name of each successfully imported asset | Perform additional content, database or file manipulation on completion of the export process to the file system
+
+## Modification callbacks
+
+This type of callback is performed 'pass by reference' and allows you to directly alter the passed content by importing it by reference and manipulating it directly in your function. Use an ampersand in front of the data attribute to do so, like this which adds a new status level after the existing core set:
+
+``` php
+register_callback('abc_my_function', 'status.types', 'types');
+
+function abc_my_function($evt, $stp, &$data)
+{
+    $data[6] = 'supersticky';
+    return $data;
+}
+```
+
+`form.types` > `types`
+* **When it occurs:** When the list of Form types are first retrieved on a panel.
+* **What it allows:** To alter or extend the available list of Form types.
+* **Additional parameter:** An array containing a list of the current form types, which you can directly alter if you wish and return.
+
+`form.essential `> `forms`
+* **When it occurs:** When the list of 'essential' (fixed) Forms are first retrieved on a panel.
+* **What it allows:** To alter or extend the available list of essential Forms.
+* **Additional parameter:** An array containing a list of the current essential forms. The array key is the form name, and the array value is its group.
+
+`user.assign_assets` > `columns`
+* **When it occurs:** The first time user assets are reassigned on a panel call.
+* **What it allows:** To alter or extend the available list of asset types that are affected when a user is deleted.
+* **Additional parameter:** An array containing a list of the currently affected columns. The aray key is the table name, and value is the name of the author column in that table.
+
+`status.types` > `types`
+* **When it occurs:** When the list of Article publication status values are first retrieved on a panel.
+* **What it allows:** To alter or extend the available list of Status values.
+* **Additional parameter:** An array containing a list of the current statuses. The key is its numeric value (usually a constant) and the _value_ (language key) is its name. Note the value is not its _label_ as that is fetched from the `txp_lang` table for the current languauge.
+
+## API callbacks
+
+`form.fetch`
+* **When it occurs:** The first time any Form is read from the database. Anything returned from your custom handler is used as Form contents for the named form.
+* **What it allows:** To alter where the Form contents is read.
+* **Additional parameter:** An array containing the `name` of the Form being fetched and the theme (`skin`) to which it is assigned. Note the `skin` may be the _working theme_ if the site is being previewed.
+
+`page.fetch`
+* **When it occurs:** The first time any Page is read from the database. Anything returned from your custom handler is used as Page contents for the named page.
+* **What it allows:** To alter where the Page contents is read.
+* **Additional parameter:** An array containing the `name` of the Page being fetched and the theme (`skin`) to which it is assigned. Note the `skin` may be the _working theme_ if the site is being previewed.
+
+`site.updated` > `{event}`
+* **When it occurs:** Every time the site's hidden `lastmod` value is updated in the preferences.
+* **What it allows:** To perform additional processing (e.g. caching) after one or more events have triggered the site modification datastamp to change.
+* **Additional parameter:** An array containing the `whenStamp` (time now) and `whenDate` (database-friendly timestamp of time now).
+
+`preference.create` > `done`
+* **When it occurs:** After a preference value has been successfully created.
+* **What it allows:** To do any additional processing after a preference value has been created.
+* **Additional parameter:** An array containing the entire set of columns and their data about the new preference.
+
+`preference.update` > `done`
+* **When it occurs:** After a preference value has been successfully altered.
+* **What it allows:** To do any additional processing after a preference value has been changed.
+* **Additional parameter:** An array containing the entire set of columns and the new data that defines the preference.
+
+`preference.rename` > `done`
+* **When it occurs:** After a preference value has been successfully renamed.
+* **What it allows:** To do any additional processing after a preference name has been changed.
+* **Additional parameter:** An array containing the preference's original `name`, its `newname` and `user_name` to whom it is assigned. The `user_name` will be `null` if it's a core preference value.
 
 ## Plugin callbacks
 
