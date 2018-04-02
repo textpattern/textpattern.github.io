@@ -336,6 +336,10 @@ When performing theme operations such as import and export, you can intercept or
 `txp.skin` | `export` | 0 | List of theme names scheduled for exporting, and the name of each successfully exported theme | Perform additional content, database or file manipulation on completion of the export process to the file system
 `txp.skin` | `delete` | 1 | List of theme names to be deleted | Prepare or check content prior to theme deletion
 `txp.skin` | `delete` | 0 | List of theme names scheduled for deletion, and the name of each successfully deleted theme | Perform additional content, database or file manipulation on completion of the deletion process
+`txp.css`, `txp.form`, `txp.page` | `import` | 1 | Theme name and a list of its assets to be processed | Prepare or check content prior to asset import from the file system
+`txp.css`, `txp.form`, `txp.page` | `import` | 0 | Theme name, the list of its assets to be processed, and the name of each successfully imported asset | Perform additional content, database or file manipulation on completion of the import process from the file system
+`txp.css`, `txp.form`, `txp.page` | `export` | 1 | Theme name and a list of its assets to be processed | Prepare or check content prior to asset export to the file system
+`txp.css`, `txp.form`, `txp.page` | `export` | 0 | Theme name, the list of its assets to be processed, and the name of each successfully imported asset | Perform additional content, database or file manipulation on completion of the export process to the file system
 
 ## Plugin callbacks
 
