@@ -389,7 +389,7 @@ When performing theme operations such as import and export, you can intercept or
 
 ## Modification callbacks
 
-Like [pluggable_ui()](the-pluggable-ui-function) callbacks, this type of callback is performed 'pass by reference' and allows you to directly alter the passed content by importing it by reference and manipulating it directly in your function. Use an ampersand in front of the data attribute to do so, like this which adds a new status level after the existing core set:
+Like [pluggable_ui()](https://docs.textpattern.io/development/the-pluggable-ui-function) callbacks, this type of callback is performed 'pass by reference' and allows you to directly alter the passed content by importing it by reference and manipulating it directly in your function. Use an ampersand in front of the data attribute to do so, like this which adds a new status level after the existing core set:
 
 ``` php
 register_callback('abc_my_function', 'status.types', 'types');
