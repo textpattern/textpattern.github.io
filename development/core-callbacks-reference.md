@@ -323,7 +323,7 @@ Panel | `$event` | `$step`
 When performing theme operations such as import and export, you can intercept or alter the content. These allow you to do additional processing or file system operations, such as importing prefs and additional content when a theme is updated or installed.
 
 `$event` | `$step` | `$pre` | Argument \#4 | What it allows / does
----|---|---|---
+---|---|---|---|---
 `txp.skin` | `create` | 1 | Theme metadata and theme name | Prepare or check content prior to theme creation
 `txp.skin` | `create` | 0 | Theme metadata, theme name, and result of creation (false, or the name of the theme that was successfully created) | Perform additional content, database or file manipulation on completion of the create process
 `txp.skin` | `update` | 1 | Theme metadata and theme name | Prepare or check content prior to theme update/resynchronisation with the file system
