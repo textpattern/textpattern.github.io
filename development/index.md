@@ -149,7 +149,7 @@ The [Core callbacks reference](https://docs.textpattern.io/development/core-call
 
 ### Function: register_callback()
 
-There are many [functions used in Textpattern](http://phpcrossref.com/xref/textpattern/_functions/) that may be relevant to your plugin development aims.[^3] In particular, the `register_callback()` function is important for writing [callbacks](#sec7) (especially admin-side callbacks).[^4] This is the full function definition:
+There are many [functions used in Textpattern](http://phpcrossref.com/xref/textpattern/_functions/) that may be relevant to your plugin development aims.[^3] In particular, the `register_callback()` function is important for writing [callbacks](#callbacks) (especially admin-side callbacks).[^4] This is the full function definition:
 
 ~~~ php
 function register_callback($func, $event, $step, $pre=0)
@@ -186,7 +186,7 @@ Let's look a few `register_callback()` examples.
 
 Elements can be added to admin-side panels in two ways: as *new* elements, or as modifications to existing elements. Each panel has its
 own set of core callback parameters to work with, which are detailed in the [Admin-side user-interface
-callbacks](core-callbacks-reference#sec2-4) section of the [Core callbacks reference](https://docs.textpattern.io/development/core-callbacks-reference).
+callbacks](core-callbacks-reference#admin-side-callbacks) section of the [Core callbacks reference](https://docs.textpattern.io/development/core-callbacks-reference).
 
 #### Adding new elements (without altering existing markup)
 
