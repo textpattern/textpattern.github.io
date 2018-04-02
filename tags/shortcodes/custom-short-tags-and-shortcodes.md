@@ -36,7 +36,7 @@ And so on.
 
 ## When short-tag preference is disabled
 
-If you opt to disable short-tag functionality in the Preferences panel, you can still use the shortcode Form via an `output_form` tag like this:
+Whether or not you opt to disable short-tag functionality in the Preferences panel, you can still use the shortcode Form via an `output_form` tag like this:
 
 ```
 <txp:output_form yield form="figure" />
