@@ -318,7 +318,26 @@ Panel | `$event` | `$step`
 [Images](https://docs.textpattern.io/administration/content/images-panel)     | `image_ui`   | `validate_save`
 [Links](https://docs.textpattern.io/administration/content/links-panel)       | `link_ui`    | `validate_save`
 
-### Plugin callbacks
+### Admin-side theme callbacks
+
+When performing theme operations such as import and export, you can intercept or alter the content. These allow you to do additional processing or file system operations, such as importing prefs and additional content when a theme is updated or installed.
+
+`$event` | `$step` | `$pre` | Argument \#4 | What it allows / does
+---|---|---|---
+`txp.skin` | `create` | 1 | Theme metadata and theme name | Prepare or check content prior to theme creation
+`txp.skin` | `create` | 0 | Theme metadata, theme name, and result of creation (false, or the name of the theme that was successfully created) | Perform additional content, database or file manipulation on completion of the create process
+`txp.skin` | `update` | 1 | Theme metadata and theme name | Prepare or check content prior to theme update/resynchronisation with the file system
+`txp.skin` | `update` | 0 | Theme metadata, theme name, and result of update  (false, or the name of the theme that was successfully updated) | Perform additional content, database or file manipulation on completion of the update/resynchronisation process
+`txp.skin` | `duplicate` | 1 | List of theme names to be processed | Prepare or check content prior to theme duplication
+`txp.skin` | `duplicate` | 0 | List of theme names scheduled for duplication, and the name of each successfully duplicated theme | Perform additional content, database or file manipulation on completion of the duplication process
+`txp.skin` | `import` | 1 | List of theme names to be processed | Prepare or check content prior to theme import from the file system
+`txp.skin` | `import` | 0 | List of theme names scheduled for importing, and the name of each successfully imported theme | Perform additional content, database or file manipulation on completion of the import process from the file system
+`txp.skin` | `export` | 1 | List of theme names to be processed | Prepare or check content prior to theme export to the file system
+`txp.skin` | `export` | 0 | List of theme names scheduled for exporting, and the name of each successfully exported theme | Perform additional content, database or file manipulation on completion of the export process to the file system
+`txp.skin` | `delete` | 1 | List of theme names to be deleted | Prepare or check content prior to theme deletion
+`txp.skin` | `delete` | 0 | List of theme names scheduled for deletion, and the name of each successfully deleted theme | Perform additional content, database or file manipulation on completion of the deletion process
+
+## Plugin callbacks
 
 In order to process these callbacks, your plugin must raise the `PLUGIN_LIFECYCLE_NOTIFY` flag to register its intent. In addition, if
 you wish to offer a link to your plugin's preferences from the [Plugins](http:docs.textpattern.io/administration/plugins-panel) panel, you must raise the `PLUGIN_HAS_PREFS` flag.
@@ -330,7 +349,7 @@ you wish to offer a link to your plugin's preferences from the [Plugins](http:do
 `plugin_lifecycle.abc_your_plugin` | `installed` | When abc_your_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and selecting **Install** button on the next screen.
 `plugin_lifecycle.abc_your_plugin` | `deleted`   | When abc_your_plugin has been removed by the act of a user selecting it and deleting it from the **Plugins** panel (note that the `plugin_lifecycle.abc_your_plugin` / `disabled` callback fires first).
 
-### Function- and tag-based callbacks
+## Function- and tag-based callbacks
 
 In `lib/txplib_misc.php` there are some callbacks that allow you to modify the default behaviour of some of the core functions. These are listed below:
 
