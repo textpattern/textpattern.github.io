@@ -6,7 +6,7 @@ title: Core callbacks reference
 description: This comprehensive reference provides detailed information about all callbacks used in Textpattern.
 ---
 
-# Core callbacks reference TODO
+# Core callbacks reference
 
 This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](https://docs.textpattern.io/development/admin-side-events-and-steps).
 
@@ -271,7 +271,7 @@ These callbacks are raised when input elements or constructs are rendered. They 
 * **What it allows:** To do any additional cleanup after a user is removed from Textpattern.
 * **Additional parameter:** An array of deleted user names.
 
-### Admin-side criteria callbacks {#sec2-2}
+### Admin-side criteria callbacks
 
 These callbacks allow you to alter the criteria used in the various panels. You can append SQL to the criteria to apply additional
 filtering.
@@ -298,80 +298,44 @@ Panel | `$step`
 [Users](https://docs.textpattern.io/administration/users-panel) | `author_list`
 [Visitor logs](https://docs.textpattern.io/administration/visitor-logs-panel) | `log_list`
 
-### Admin-side validation callbacks {#sec2-3}
+### Admin-side validation callbacks
 
-These callbacks allow you to alter or append to the constraints imposed
-by the core when saving data. Textpattern will check that the passed
-values for things like categories, sections, and so forth actually exist
-in the database to avoid new ones being introduced at unexpected places.
+These callbacks allow you to alter or append to the constraints imposed by the core when saving data. Textpattern will check that the passed values for things like categories, sections, and so forth actually exist in the database to avoid new ones being introduced at unexpected places.
 
-If you're developing plugins, you may wish to open up or restrict data
-in certain types of actions, or create entirely new constraints and take
-advantage of the built-in validator. If so, these callbacks are the ones
-to use.
+If you're developing plugins, you may wish to open up or restrict data in certain types of actions, or create entirely new constraints and take advantage of the built-in validator. If so, these callbacks are the ones to use.
 
-These additional arguments are all passed by reference to your
-application, so you can alter them directly:
+These additional arguments are all passed by reference to your application, so you can alter them directly:
 
--   Argument \#3 is the incoming array of values posted from the save
-    operation, unsanitized.
+-   Argument \#3 is the incoming array of values posted from the save operation, unsanitized.
 -   Argument \#4 is the array of constraints.
 
-notextile.
+Panel | `$event` | `$step`
+---|---|---
+[Articles](https://docs.textpattern.io/administration/content/articles-panel) | `article_ui` | `validate_save`
+[Articles](https://docs.textpattern.io/administration/content/articles-panel) | `article_ui` | `validate_publish`
+[Comments](https://docs.textpattern.io/administration/content/comments-panel) | `discuss_ui` | `validate_save`
+[Files](https://docs.textpattern.io/administration/content/files-panel)       | `file_ui`    | `validate_save`
+[Images](https://docs.textpattern.io/administration/content/images-panel)     | `image_ui`   | `validate_save`
+[Links](https://docs.textpattern.io/administration/content/links-panel)       | `link_ui`    | `validate_save`
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  Panel                                                                         `$event`       `$step`
-  ----------------------------------------------------------------------------- -------------- --------------------
-  "Articles":https://docs.textpattern.io/administration/content/articles-panel   `article_ui`   `validate_save`
-  "Articles":https://docs.textpattern.io/administration/content/articles-panel   `article_ui`   `validate_publish`
-  "Comments":https://docs.textpattern.io/administration/content/comments-panel   `discuss_ui`   `validate_save`
-  "Files":https://docs.textpattern.io/administration/content/files-panel         `file_ui`      `validate_save`
-  "Images":https://docs.textpattern.io/administration/content/images-panel       `image_ui`     `validate_save`
-  "Links":https://docs.textpattern.io/administration/content/links-panel         `link_ui`      `validate_save`
+### Plugin callbacks
 
-notextile.
+In order to process these callbacks, your plugin must raise the `PLUGIN_LIFECYCLE_NOTIFY` flag to register its intent. In addition, if
+you wish to offer a link to your plugin's preferences from the [Plugins](http:docs.textpattern.io/administration/plugins-panel) panel, you must raise the `PLUGIN_HAS_PREFS` flag.
 
-</div>
+`$event` | `$step` | When it occurs                                                                                                                                                                                               ---|---|---
+`plugin_lifecycle.abc_your_plugin` | `enabled`   | When somebody switches abc_your_plugin to "Enabled" (Yes) from the **Plugins** panel.
+`plugin_lifecycle.abc_your_plugin` | `disabled`  | When somebody switches abc_your_plugin to "Disabled" (No) on the **Plugins** panel.
+`plugin_lifecycle.abc_your_plugin` | `installed` | When abc_your_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and selecting **Install** button on the next screen.
+`plugin_lifecycle.abc_your_plugin` | `deleted`   | When abc_your_plugin has been removed by the act of a user selecting it and deleting it from the **Plugins** panel (note that the `plugin_lifecycle.abc_your_plugin` / `disabled` callback fires first).
 
-Plugin callbacks {#sec3}
-----------------
+### Function- and tag-based callbacks
 
-TODO: intro para about plugin callbacks in general
+In `lib/txplib_misc.php` there are some callbacks that allow you to modify the default behaviour of some of the core functions. These are listed below:
 
-#### *include/txp_plugin.php*
-
-In order to process these callbacks, your plugin must raise the
-`PLUGIN_LIFECYCLE_NOTIFY` flag to register its intent. In addition, if
-you wish to offer a link to your plugin's preferences from the
-****[Plugins](http:docs.textpattern.io/administration/plugins-panel)
-panel, you must raise the `PLUGIN_HAS_PREFS` flag.
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`                             `$step`       When it occurs                                                                                                                                                                                               What it allows/does
-  ------------------------------------ ------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------
-  `plugin_lifecycle.abc_your_plugin`   `enabled`     When somebody switches abc_your_plugin to "Enabled" (Yes) from the **Plugins** panel.                                                                                                                      -
-  `plugin_lifecycle.abc_your_plugin`   `disabled`    When somebody switches abc_your_plugin to "Disabled" (No) on the **Plugins** panel.                                                                                                                        -
-  `plugin_lifecycle.abc_your_plugin`   `installed`   When abc_your_plugin has been installed by the act of the user pasting its code in the **Plugins** panel and selecting **Install** button on the next screen.                                               -
-  `plugin_lifecycle.abc_your_plugin`   `deleted`     When abc_your_plugin has been removed by the act of a user selecting it and deleting it from the **Plugins** panel (note that the `plugin_lifecycle.abc_your_plugin` / `disabled` callback fires first).   -
-
-</div>
-
-Function- and tag-based callbacks {#sec4}
----------------------------------
-
-TODO: intro para about function- and tag-based callbacks in general
-
-#### *lib/txplib_misc.php*
-
-TODO: intro para about what this callback is concerned with
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-  `$event`              `$step`              When/where it occurs                               What it allows/does
-  --------------------- -------------------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------
-  `sanitize_for_url`    -                    At start of the `sanitizeForUrl()` function.       Apply your own URL sanitization rules; passes the text to be sanitized as the callback's 4th argument.
-  `sanitize_for_file`   -                    At start of the `sanitizeForUrl()` function.       Apply your own filename sanitization rules; passes the text to be sanitized as the callback's 4th argument.
-  `sanitize_for_page`   -                    At start of the `sanitizeForUrl()` function.       Apply your own page name sanitization rules; passes the text to be sanitized as the callback's 4th argument.
-  `txp_die`             `http_status_code`   Once the page's HTTP status has been determined.   Passes the numerical HTTP status code as the callback's *step* (e.g. `410`, `301`, etc) allowing you to target particular status codes and take action.
-
-</div>
-
+`$event` | `$step` | When/where it occurs | What it allows/does
+---|---|---|---
+`sanitize_for_url`  | - | At start of the `sanitizeForUrl()` function. | Apply your own URL sanitization rules; passes the text to be sanitized as the callback's 4th argument.
+`sanitize_for_file` | - | At start of the `sanitizeForUrl()` function. | Apply your own filename sanitization rules; passes the text to be sanitized as the callback's 4th argument.
+`sanitize_for_page` | - | At start of the `sanitizeForPage()` function | Apply your own page name sanitization rules; passes the text to be sanitized as the callback's 4th argument.
+`txp_die` |`http_status_code` | Once the page's HTTP status has been determined. | Passes the numerical HTTP status code as the callback's *step* (e.g. `410`, `301`, etc) allowing you to target particular status codes and take action.
