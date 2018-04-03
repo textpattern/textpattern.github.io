@@ -108,7 +108,7 @@ The shortcode was conceived to be flexible enough for adding various types of qu
 
 The only similarity with pullquotes, perhaps, is how you might style them to appear; floating left or right in relation to surrounding content. But there is no rule that asides styled this way _have_ to be “pullquotes” by definition. Pullquotes are stupidly redundant, in fact. Aside-quotes, as described here, are where it’s at!
 
-The process is described using tweets, but as long as whatever you’re quoting can be structured as a Textpattern link, the sky’s the limit — other social media posts, blog comments, platform bios, taglines, those reviewer quotes you find at the front of books, and so forth. 
+The process is described using Tweets, but as long as whatever you’re quoting can be structured as a Textpattern link, the sky’s the limit — other social media posts, blog comments, platform bios, taglines, those reviewer quotes you find at the front of books, and so forth. 
 
 ### Tweet links
 
@@ -119,33 +119,58 @@ Create the link categories:
 1. In the [Categories panel](https://docs.textpattern.io/administration/categories-panel), create a new link category called “Asides”. This will become the parent category for all types of aside-quote links.
 2. Create a second link category called “Tweets” and assign the “Asides” category as the parent.
 
-Create the tweet links:
+Create the Tweet links:
 
-In the [Links panel](https://docs.textpattern.io/administration/links-panel), create your tweets using this association to the Textpattern link fields:
+In the [Links panel](https://docs.textpattern.io/administration/links-panel), create your Tweets using this association to the Textpattern link fields:
 
-| Link field | Tweet element |
-|:--|:--|
-| Title | date of tweet (e.g. “23 August 2009”) |
-| Sort value | leave blank |
-| URL | link to tweet |
-| Category | Select “Tweets” |
-| Description | the actual tweet text |
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+    <table>
+        <thead>
+            <tr>
+                <th class="t25" scope="col">Link field</th>
+                <th scope="col">Tweet element</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Title</th>
+                <td>Date of Tweet (e.g. ‘23 August 2009’)</td>
+            </tr>
+            <tr>
+                <th scope="row">Sort value</th>
+                <td>Leave blank</td>
+            </tr>
+            <tr>
+                <th scope="row">URL</th>
+                <td>Link to Tweet</td>
+            </tr>
+            <tr>
+                <th scope="row">Category</th>
+                <td>Select ‘Tweets’</td>
+            </tr>
+            <tr>
+                <th scope="row">Description</th>
+                <td>The actual Tweet text</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 ## Usage
 
-Now you’re all set to add tweets (in this case) as aside-quotes in your articles.
+Now you’re all set to add Tweets (in this case) as aside-quotes in your articles.
 
 Open your article draft in the Write panel, and use the short-tag between two paragraphs, where desired, as follows:
 
 ~~~ html
-…end of a paragraph.
+...end of a paragraph.
 
-  <txp::linkquote id=“19” name="Drunk Hulk" class="xxl" />
+<txp::linkquote id=“19” name="Drunk Hulk" class="xxl" />
   
-Start of new paragraph…
+Start of new paragraph...
 ~~~
 
-The above hypothetical tag might output a tweet as follows, depending on how you style everything:
+The above hypothetical tag might output a Tweet as follows, depending on how you style everything:
 
 >”Hulk **SMASHED!**”
 >
@@ -159,9 +184,9 @@ The `escape="tidy,textile,ltrim"` attribute used in the link description tag all
 
 The `p` element and it’s two `span` children enable styling the name and date output however you want, together or separately. For example, you could use pseudo rules to add punctuation around the name: `– Drunk Hulk,`. Or use `display:block;` on the `span` elements to put the date under the name instead of using punctuation. Note there is also a hard `class="sig"` set on the `p` element, but you can remove or change that as desired in your own shortcode form.
 
-By writing in a value for the `name=""` attribute, you can choose to use a person’s twitter name, like in this case: “Drunk Hulk”. Or their tweet handle: “@drunkhulk”. Or leave out the dumb `@` symbol: “drunkhulk”. Or anything else you want, which makes this attribute flexible for other quote source types besides tweets. 
+By writing in a value for the `name=""` attribute, you can choose to use a person’s twitter name, like in this case: “Drunk Hulk”. Or their Tweet handle: “@drunkhulk”. Or leave out the dumb `@` symbol: “drunkhulk”. Or anything else you want, which makes this attribute flexible for other quote source types besides Tweets. 
 
-Because the `name=""` attribute is optional, no name will appear under the quoted tweet if you leave it out of the short-tag. The date will still appear as a link to the actual tweet location because that’s hard-coded in the shortcode (unless you modify it).
+Because the `name=""` attribute is optional, no name will appear under the quoted Tweet if you leave it out of the short-tag. The date will still appear as a link to the actual Tweet location because that’s hard-coded in the shortcode (unless you modify it).
 
 The `class=""` attribute can take multiple values, as you would expect (e.g. `class="value1 value2 etc"`).
 
