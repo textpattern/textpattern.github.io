@@ -79,7 +79,7 @@ Section | Reason to avoid
 `index` | Clashes with `index.php`
 `images` | Clashes with the default directory used to serve images.
 `rss` | Used by Textpattern to serve RSS feed content
-`section` (or the equivalent in the site's set language) | Used internally by Textpattern
+`section` (or the equivalent in the site's public-wide language) | Used internally by Textpattern
 
 Section names matching physical directories in your site's root directory will not work either.
 
