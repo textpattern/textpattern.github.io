@@ -31,80 +31,87 @@ On this panel you can do two things:
 
 Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#article-url-pattern).
 
-In the Sections panel, you're able to define what [Pages](https://docs.textpattern.io/administration/pages-panel) and [Styles](https://docs.textpattern.io/administration/styles-panel) will be used for the [Articles](https://docs.textpattern.io/administration/articles-panel) published in context to a given section. You can also control if articles posted in that section will be seen on the front page of the site, and whether or not the articles will be included in site searches.
+In the Sections panel, you're able to define what [Pages](https://docs.textpattern.io/administration/pages-panel) and [Styles](https://docs.textpattern.io/administration/styles-panel) will be used for the [Articles](https://docs.textpattern.io/administration/articles-panel) published in a given section. You can also control if articles posted in that section will be seen on the front page of the site, and whether or not the articles will be included in site searches and feeds.
 
-Textpattern includes one sections by default: 'Articles'.
+In a fresh installation of Textpattern one dedicated section is included: 'Articles'.
 
-## Create a new section
+## Creating a section
 
 This button will take you to the Section property editor (see below) where you can generate a new section along with its properties.
 
-## Default publishing section
+## List of existing sections
 
-Here you can select what section you'd like to be the default choice when starting to write a new article. This can be overrode of course in the Write panel per article.
+Beneath the 'Create section' button and search area there is a table containing a list of existing sections. Each row corresponds to one section. If you select the header of a column, it will sort the list according to that column. Select again to reverse sort direction.
+
+Selecting the name of a section will open the Section property editor (see below) that will allow you to set or amend any of its properties. The **On front page**, **Syndicate articles** and **Searchable** properties can be altered directly from the list without having to visit the Section property editor. Simply click the Yes or No links in the corresponding row to toggle its status.
 
 ## Editing sections
 
-You open the Section property editor when creating a new section or choosing to edit an existing one. Each section has various pieces of information associated with it, as described here:
+You open the Section property editor when creating a new section or by tapping the name of an existing one to edit it. Each section has various pieces of information associated with it, as described here:
 
-**Section name:** The first control in the section editor panel is a text box where you type a new section name and create it. This name is used in URLs and by various Textpattern tags. See [Section names to avoid](#section-names-to-avoid) below for a list of unsafe names.
+**Section name:** The name of your section that is used in URLs and as a reference by various Textpattern tags. It must be unique across the site (no two sections can be named the same), and you should try to avoid non-alphanumeric characters besides hyphens and underscores. Further restrictions apply: see [Section names to avoid](#section-names-to-avoid) below for a list of unsafe names.
 
-**Section title:** a title for the section, which can be harnessed by tags (such as [section](https://docs.textpattern.io/tags/section)).
+**Section title:** A title for the section, which can be harnessed by tags (such as [section](https://docs.textpattern.io/tags/section)) to display a more human-friendly name for your section.
 
-**Uses page:** Textpattern assigns its default page template automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Pages](https://docs.textpattern.io/administration/pages-panel) already created; You can reassign sections to pages at any time.
+**Uses page:** Textpattern assigns its default page template automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Pages](https://docs.textpattern.io/administration/pages-panel) already created. You can reassign sections to pages at any time.
 
-**Uses style:** Textpattern assigns its default style (CSS) automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Styles](https://docs.textpattern.io/administration/styles-panel) already created; You can reassign sections to styles at any time.
+**Uses style:** Textpattern assigns its default style (CSS) automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Styles](https://docs.textpattern.io/administration/styles-panel) already created. You can reassign sections to styles at any time.
 
-**On front page?:** This is an extremely important option and should be considered with respect to the overall design of the site. Remember that section content only shows up when that section is called, except for the front page. This is the control that permits or denies content from showing up when the base `index.php` is called with no arguments.
+**On front page?:** This is an extremely important option and should be considered with respect to the overall design of the site. Remember that section content only shows up when that section is viewed, except for the front page. This control permits or denies content from the section showing up when the "front page" (the base `index.php` with no arguments) is served.
 
-**Syndicate articles?:** Textpattern creates RSS and Atom feeds for those who like to run news aggregators. If this selection is turned on, the feed will display article content from this section.
+**Syndicate articles?:** Textpattern creates RSS and Atom feeds for those who like to run news aggregators. If this is turned on, the feed will display article content from this section.
 
-**Searchable?:** Textpattern provides a search function. It may be desirable to segregate some content and not make it available via the search function. This controls permits or denies the search from finding this content per section.
+**Searchable?:** Textpattern provides an article search function. It may be desirable to segregate some content and not make it available via the search. This control permits or denies the search from finding this content per section.
 
-**Description:** The section description can be harnessed, for example, as meta data when you display an section article listing page.
+**Description:** The section description can be harnessed, for example, as meta data when you display a section article listing page.
 
 ### Section names to avoid
 
-Sections can be given any arbitrary name, except for a few labels already reserved for Textpattern's special functions. Avoid the following or undesirable results will likely occur:
+Sections can be given any arbitrary name, except for a few labels already reserved for Textpattern's special functions. Avoid the following, or undesirable results will likely occur:
 
-* `atom`
-* `author` (or the equivalent in the site's set language)
-* `category` (or the equivalent in the site's set language)
-* `file_download`
-* `rss`
-* `section` (or the equivalent in the site's set language)
+Section | Reason to avoid
+---|---
+`atom` | Used by Textpattern to serve Atom feed content
+`author` (or the equivalent in the site's public-wide language) | Used to generate per-author landing pages containing articles from a the given author
+`category` (or the equivalent in the site's public-wide language) | Used to generate category landing pages containing articles from a the given category
+`file_download` | Used by Textpattern to serve file downloads
+`files` | Clashes with the default directory used to hold files available for download. If you have moved this via chnages to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#file-directory-path then you may use this section name
+`index` | Clashes with `index.php`
+`images` | Clashes with the default directory used to serve images.
+`rss` | Used by Textpattern to serve RSS feed content
+`section` (or the equivalent in the site's set language) | Used internally by Textpattern
 
-Section names already assigned to physical directories (and of course vice versa) will not work either.
+Section names matching physical directories in your site's root directory will not work either.
 
-## Search function
+## Setting the default publishing section
 
-Because the links list can get pretty long, a search function is available at the top of the list. You can use the search function to locate a link directly by a search phrase or to filter the view on your links by particular criteria, thus reducing the number of links in the resulting list.
+Here you can select what section you'd like to be the default choice when starting to write a new article. This can be overriden of course in the Write panel per article.
+
+## Searching sections
+
+You can use the search function above the section list to locate sections directly by a search phrase or to filter the view by particular criteria, thus reducing the number of rows in the resulting list.
 
 The Search function has two components:
 
 1. A text field for entering the search query
-2. A drop-down-list to specify which area is to be searched
+2. An adjacent drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+Anything entered in the text field will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
 
-After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of links which meet the criteria.
+After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list if any rows meet the criteria.
 
-As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
+By default, the search will find matches for all fields in a row. You can perform more refined searches by selecting or deselcting areas to search via the drop-down-list in the search tool.
 
-## List of existing sections
-
-Beneath the 'Create section' button and search area there is the table, or list, of existing sections. Each row is one section. If you select the header of a column, it will sort the list according to that column. Select again to reverse sort direction.
-
-### Perform changes on selected links
+### Perform changes on many sections
 
 In the first column you will find a checkbox for each section. Here you can select sections you want to change in a bulk manner. You can mark sections by checking the checkbox or you can use the checkbox in the head bar of the list to mark all sections on that page.
 
 In order to quickly select ranges of sections select the checkbox of the first section you want to mark, press and hold the shift key, then select the checkbox of the last section in the range. All sections between will be checked too. You can add ranges to your selection by repeating these steps.
 
-For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
+For performing changes, go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to apply the changes.
 
 ## Pages and sections listed per page
 
-At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of sections listed per page by selecting another value from the number range.
+At the very bottom of the list you will find a pagination tool. You can change the number of sections listed per page by selecting another value from the number range. If there are more rows available on subsequent pages, you will see the current page number that you can edit and press Enter to jump to that page, along with links to visit the next and previous pages.
 
 [Next: Pages panel](https://docs.textpattern.io/administration/pages-panel)
