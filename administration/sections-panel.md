@@ -53,6 +53,8 @@ You open the Section property editor when creating a new section or by tapping t
 
 **Section title:** A title for the section, which can be harnessed by tags (such as [section](https://docs.textpattern.io/tags/section)) to display a more human-friendly name for your section.
 
+**Uses theme:** From Textpattern 4.7.0, pages and styles are grouped into __themes__. Selecting the theme you wish to use will alter the available pages and styles in the following two select lists.
+
 **Uses page:** Textpattern assigns its default page template automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Pages](https://docs.textpattern.io/administration/pages-panel) already created. You can reassign sections to pages at any time.
 
 **Uses style:** Textpattern assigns its default style (CSS) automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Styles](https://docs.textpattern.io/administration/styles-panel) already created. You can reassign sections to styles at any time.
@@ -77,7 +79,7 @@ Section | Reason to avoid
 `file_download` | Used by Textpattern to serve file downloads
 `files` | Clashes with the default directory used to hold files available for download. If you have moved this via chnages to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#file-directory-path) then you may use this section name
 `index` | Clashes with `index.php`
-`images` | Clashes with the default directory used to serve images.
+`images` | Clashes with the default directory used to serve images
 `rss` | Used by Textpattern to serve RSS feed content
 `section` (or the equivalent in the site's public-wide language) | Used internally by Textpattern
 
