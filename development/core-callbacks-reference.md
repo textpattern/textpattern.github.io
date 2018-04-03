@@ -391,7 +391,7 @@ When performing theme operations such as import and export, you can intercept or
 
 Like [pluggable_ui()](https://docs.textpattern.io/development/the-pluggable-ui-function) callbacks, this type of callback is performed 'pass by reference' and allows you to directly alter the passed content by importing it by reference and manipulating it directly in your function. Use an ampersand in front of the data attribute to do so, like this which adds a new status level after the existing core set:
 
-``` php
+~~~ php
 register_callback('abc_my_function', 'status.types', 'types');
 
 function abc_my_function($evt, $stp, &$data)
@@ -399,7 +399,7 @@ function abc_my_function($evt, $stp, &$data)
     $data[6] = 'supersticky';
     return $data;
 }
-```
+~~~
 
 `form.types` > `types`
 * **When it occurs:** When the list of Form types are first retrieved on a panel.

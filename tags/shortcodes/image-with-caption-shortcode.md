@@ -22,12 +22,12 @@ On this page:
 
 Consider the following raw HTML example:
 
-```html
+~~~ html
 <figure class="some-class">
-   <img src="https://example.org/images/130.jpg" alt="The throne of Zeus" />
-   <figcaption>A view from Mount Olympus</figcaption>
+    <img src="https://example.org/images/130.jpg" alt="The throne of Zeus" />
+    <figcaption>A view from Mount Olympus</figcaption>
 </figure>
-```
+~~~
 
 Writing that block of nested markup each time you want a figure is tedious, and a messy distraction in your article copy when editing. It’s also a pain to find and edit such markup when you need to later, notably the caption.
 
@@ -37,16 +37,16 @@ Let’s do better.
 
 Create a new Form template (of any type), name it **figure**, paste the following code in, and save the template:
 
-```html
+~~~ html
 <figure<txp:if_yield name="class"> class="<txp:yield name="class" />"</txp:if_yield>>
-   <txp:image id='<txp:yield name="id" />' />
-   <txp:if_yield name="caption">
-      <figcaption><txp:yield name="caption" escape="tidy,textile" /></figcaption>
-   <txp:else />
-      <txp:image_info id='<txp:yield name="id" />' wraptag="figcaption" escape="tidy,textile" />
-   </txp:if_yield>
+    <txp:image id='<txp:yield name="id" />' />
+    <txp:if_yield name="caption">
+        <figcaption><txp:yield name="caption" escape="tidy,textile" /></figcaption>
+    <txp:else />
+        <txp:image_info id='<txp:yield name="id" />' wraptag="figcaption" escape="tidy,textile" />
+    </txp:if_yield>
 </figure>
-```
+~~~
 
 Now you have a custom shortcode. By creating that code, you automatically create a corresponding short-tag too.
 
@@ -76,10 +76,10 @@ You can use the custom short-tag any way you like:
 
 Or as part of a grid of images:
 
-```html
+~~~ html
 <txp:images category="travel" wraptag="div" class="grid">
-   <txp::figure id='<txp:image_info type="id" />' />
+    <txp::figure id='<txp:image_info type="id" />' />
 </txp:images>
-``` 
+~~~
 
 See more [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/).

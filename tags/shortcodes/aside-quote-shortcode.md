@@ -31,33 +31,33 @@ The bold is used here to emphasize how this shortcode was conceived for use, as 
 
 In this case, the following article structure was in mind, where an `aside` is an offspring of a given `section` it relates with:
 
-```html
+~~~ html
 <article>
 	<header>
 		<h1>Hed</h1>
 		<h2>Dek</h2>
-		<p class=“publine”> … 
+		<p class=“publine”> ...
 	<header>
-	<section class="chapter"> … </section>
+	<section class="chapter"> ... </section>
 	<section class="chapter">
-		<p>…
-		<aside> … </aside>
-		<p>…
+		<p>...
+		<aside> ... </aside>
+		<p>...
 	</section>
-	<section class="chapter"> … </section>
+	<section class="chapter"> ... </section>
 </article>
-```
+~~~
 
 (Note: Closing `p` tags are not obligatory in HTML 5.)
 
 The `aside` block itself is structured similar to what the W3C specification recommends for pullquotes, but with a variation — an additional `p` element to include additional information about source of quote:
 
-```html
+~~~ html
 <aside class="">
-	<q> … </q> 
+	<q> ... </q> 
 	<p class=""><span>Name</span> <span>Title</span>
 </aside>
-```
+~~~
 
 The `p` addition is made here because this shortcode is _not_ a pullquote. The quotes are indeed relevant to the main content, but **they do not come from the main content**, they come from external sources and are used in relation to the content as relevant asides. 
 
@@ -67,24 +67,24 @@ Thus the name of this shortcode: “aside-quote”. Or if you like, “linkquote
 
 Create a new Form of type _Miscellaneous_ called **linkquote**, paste the following markup into it, and Save the form:
 
-```html
+~~~ html
 <txp:hide>  ASIDE-QUOTE SHORT-TAG
-   Use this in an article as:
-     <txp::linkquote />
+    Use this in an article as:
+    <txp::linkquote />
 
-   Attributes are:
-     id=""
-     class="" (on <aside> element)
-     name=""
+    Attributes are:
+    id=""
+    class="" (on <aside> element)
+    name=""
 </txp:hide>
 
 <aside<txp:if_yield name="class"> class="<txp:yield name="class" />"</txp:if_yield>>
-      <txp:linklist id='<txp:yield name="id" />'>
-         <q><txp:link_description escape="tidy,textile,ltrim" /></q> 
-         <p class="sig"><txp:if_yield name="name"><txp:yield name="name" /><txp:else /></txp:if_yield><span class="sourcelink"><a href="<txp:link_url />"><txp:link /></a></span></p>
-      </txp:linklist>
+    <txp:linklist id='<txp:yield name="id" />'>
+        <q><txp:link_description escape="tidy,textile,ltrim" /></q> 
+        <p class="sig"><txp:if_yield name="name"><txp:yield name="name" /><txp:else /></txp:if_yield><span class="sourcelink"><a href="<txp:link_url />"><txp:link /></a></span></p>
+    </txp:linklist>
 </aside>
-```
+~~~
 
 You can remove the top comment hidden with `<txp:hide> … </txp:hide>` if you want to, but it’s useful as a reminder about how to use the associated short-tag when needed.
 
@@ -92,9 +92,9 @@ You can remove the top comment hidden with `<txp:hide> … </txp:hide>` if you w
 
 Following how [custom short-tags and shortcodes]() work, the associated short-tag for use is:
 
-```
+~~~ html
 <txp::linkquote />
-```
+~~~
 
 There are three attributes defined:
 
@@ -137,13 +137,13 @@ Now you’re all set to add tweets (in this case) as aside-quotes in your articl
 
 Open your article draft in the Write panel, and use the short-tag between two paragraphs, where desired, as follows:
 
-```
+~~~ html
 …end of a paragraph.
 
   <txp::linkquote id=“19” name="Drunk Hulk" class="xxl" />
   
 Start of new paragraph…
-``` 
+~~~
 
 The above hypothetical tag might output a tweet as follows, depending on how you style everything:
 
@@ -171,14 +171,14 @@ Of course, you can modify this shortcode to any other need you want to create. H
 
 The shortcode above was described using regular Textpattern tags. But you could, for kicks, rewrite the shortcode using [core short-tags](https://docs.textpattern.io/tags/tag-basics/core-short-tags). In other words, this would also work:
 
-```html
+~~~ html
 <aside<if::yield name="class"> class="<txp:yield name="class" />"</if::yield>>
-      <txp:linklist id='<txp:yield name="id" />'>
-         <q><link::description escape="tidy,textile,ltrim" /></q> 
-         <p class="sig"><if::yield name="name"><txp:yield name="name" /><txp:else /></if::yield><span class="sourcelink"><a href="<link::url />"><txp:link /></a></span></p>
-      </txp:linklist>
+    <txp:linklist id='<txp:yield name="id" />'>
+        <q><link::description escape="tidy,textile,ltrim" /></q> 
+        <p class="sig"><if::yield name="name"><txp:yield name="name" /><txp:else /></if::yield><span class="sourcelink"><a href="<link::url />"><txp:link /></a></span></p>
+    </txp:linklist>
 </aside>
-```
+~~~
 
 Where:
 
@@ -196,12 +196,12 @@ As described in the [Integrated tag notation](https://docs.textpattern.io/tags/t
 
 For example, the following is yet another way to build the aside-quote form:
 
-```html
+~~~ html
 <txp:linklist id='<txp:yield name="id" />'>
     <q><txp:link_description escape="tidy, textile" /></q> 
     <p class="sig"><txp:yield name="name" /><span class="sourcelink"><a href="<txp:link_url />"><txp:link /></a></span></p>
 </txp:linklist>
-```
+~~~
 
 (Note we’re not using core short-tags in this case, as described previously, but you could just as readily.)
 
@@ -209,9 +209,9 @@ That block of markup is fewer characters overall. In this case we’ve used a di
 
 But we need those wrapping HTML tags, so we need to use the concept of markup integration on the associated output tag to define the HTML as a global attribute (i.e. `wraptag="aside"`):
 
-```html
+~~~ html
 <txp::linkquote id="" name="" wraptag="aside" class="" />
-```
+~~~
 
 On advantage of this shortcode/tag variation: if you forget to  add a link ID, or add one that doesn’t exist by accident, no output will occur at all, not even an empty `aside` container, which is what you’d get with earlier examples. 
 

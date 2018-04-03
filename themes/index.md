@@ -29,4 +29,3 @@ With the arrival of Textpattern 4.7 comes new core theming functionality for the
 Admin-side themes are a created as prior to 4.7:
 
 * [Admin-side themes](https://docs.textpattern.io/themes/admin-side-themes)
-

@@ -33,64 +33,64 @@ A self-closing tag like `<txp:article_id />` becomes `<article::id />`.
 
 Container tags like:
 
-```
+~~~ html
 <txp:if_article_id> 
-   … 
- <txp:else /> 
-   … 
+    ...
+<txp:else /> 
+    ...
 </txp:if_article_id>
-``` 
+~~~
 
 Become:
 
-```
+~~~ html
 <if::article_id>
-   … 
- <txp:else /> 
-   …
+    ...
+<txp:else /> 
+    ...
 </if::article_id>
-```
+~~~
 
 The same applies to plugin tags too of both kind. For example this one:
 
-```
+~~~ html
 <txp:smd_if>
-   ...
- <txp:else /> 
-   ...
+    ...
+<txp:else /> 
+    ...
 </txp:smd_if>
-```
+~~~
 
 Becomes:
 
-```
+~~~ html
 <smd::if> 
-   ...
- <smd::else /> 
-   ...
+    ...
+<smd::else /> 
+    ...
 </smd::if>
-```
+~~~
 
 Note in the latter example, the plugin prefix can be used for the `else` tag, which is only relevant to plugin tags used as containers.
 
 ## Shortening tag attributes
 
-From Textpattern 4.7.0 you can also shortcut ‘boolean’ (1 or 0) attributes just like you can in HTML. So these two tags are equivalent:
+From Textpattern 4.7.0 you can also shortcut 'boolean' (1 or 0) attributes just like you can in HTML. So these two tags are equivalent:
 
-```html
+~~~ html
 <txp:section link="1" />
 <txp:section link />
-```
+~~~
 
 ## Shortening tag constructs using negation
 
 Also from Textpattern 4.7.0, is the ability to negate a tag using `not`.
 
-```html
+~~~ html
 <txp:if_section not name="contact, articles">
-   <!-- Do something if we're not in the contact or articles section -->
+    <!-- Do something if we're not in the contact or articles section -->
 </txp:if_section>
-```
+~~~
 
 Using `not` negates the result of the entire tag including any combination of attributes it may have. It does not negate individual attributes. This feature also extends to all plugins, natively without any need to do anything by the plugin author.
 

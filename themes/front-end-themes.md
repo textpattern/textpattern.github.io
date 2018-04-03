@@ -23,7 +23,7 @@ Themes files must be grouped into a top parent directory named as the theme and 
 
 ##### Overview
 
-```
+~~~
 abc_theme
 ├── manifest.json
 ├── pages
@@ -50,7 +50,7 @@ abc_theme
 |       └── …
 └── styles
     └── default.css
-```
+~~~
 
 #### The _manifest.json_ file
 
@@ -65,16 +65,16 @@ The following default value will be used on import for the missing fields or val
 
 ##### Example
 
-```
+~~~ json
 {
-    "title": "Four Point Seven",
-    "version": "4.7.0-beta.2",
-    "description": "The default theme shipped with Textpattern CMS 4.7.",
-    "author": "Team Textpattern",
-    "author_uri": "https://github.com/textpattern/textpattern-default-theme"
-    "txp-type": "textpattern-theme",
+  "title": "Four Point Seven",
+  "version": "4.7.0-beta.2",
+  "description": "The default theme shipped with Textpattern CMS 4.7.",
+  "author": "Team Textpattern",
+  "author_uri": "https://github.com/textpattern/textpattern-default-theme"
+  "txp-type": "textpattern-theme",
 }
-```
+~~~
 
 #### The _pages_ directory
 
@@ -87,6 +87,7 @@ If this directory is missing, empty essential pages will be created on the first
 The _forms_ optional directory should contains Textpattern forms as `.txp` files.  
 While forms should be grouped by types into dedicated subdirectories, they all need to use different names.  
 Six essential pages should be created:
+
 - article:
     - _article_listing_;
     - _default_;

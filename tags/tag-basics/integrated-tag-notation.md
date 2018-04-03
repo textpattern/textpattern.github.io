@@ -47,30 +47,30 @@ That’s great, but the reason your using Textpattern is to automate content out
 
 Let’s walk through the markup for clarity. Immediately within the HTML `<figure>` tags are containing Textpattern [images](https://docs.textpattern.io/tags/images) tags:
 
-```
+~~~ html
 ...
     <txp:images id="9">
         ...
     </txp:images>
 ...
-```
+~~~
 
 We need to add this extra tag container to make use of the corresponding [image_info](https://docs.textpattern.io/tags/image_info) tag functionality. That’s the only reason. A lot of Textpattern tags work in relation to one another like that, where a containing parent tag allows child tags to do their thing.
 
 We first see the `<txp:image_info />` tag used in this line multiple times:
 
-```
+~~~ html
 ...
     ...
         <img src="/path/<txp:image_info type="id" /><txp:image_info type="ext" />">
         ...
     ...
 ...
-```
+~~~
 
 And again in the line after:
 
-```
+~~~ html
 ...
     ...
         ...
@@ -79,7 +79,7 @@ And again in the line after:
         </figcaption>
     ...
 ...
-```
+~~~
 
 In each instance of `<txp:image_info />`, the tag is pulling a specific data value for the image in context. The first line pulls the image’s ID number and file extension. Note there’s no `.` added between the ID and extension values because the `ext` value for the `type=""` attribute already includes the required period.
 

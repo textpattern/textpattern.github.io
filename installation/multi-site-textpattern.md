@@ -143,7 +143,7 @@ To reconnect the symlinks of a multi-site to a different textpattern directory, 
 * Copy the `setup` folder from your Textpattern `sites/site1/admin/setup` directory into your respective site’s `mydomain/admin` directory.
 * In the `mydomain/admin` directory, delete the `vendors` symlink.
 * Open a web browser and go to `admin.mydomain.com/setup/`.
-* The installer will tell you it cannot find Textpattern and ask you to specify your *Textpattern root directory*. Enter the path to the (new) version of Textpattern you want and click ‘Proceed’. The installer will recreate the correct symlinks and your site will be linked to the respective version of Textpattern.
+* The installer will tell you it cannot find Textpattern and ask you to specify your *Textpattern root directory*. Enter the path to the (new) version of Textpattern you want and click 'Proceed'. The installer will recreate the correct symlinks and your site will be linked to the respective version of Textpattern.
 * Abort the installation process at this point and delete the `admin/setup` directory.
 * Visit your site to update your site to the other version of Textpattern.
 
@@ -175,6 +175,6 @@ If you wish to have a central store of all your themes, you can replace the `the
 
 **Note:** With this setup, any changes you make to a theme in a site and then export back to disk will be saved centrally, overwriting the theme for all other sites. Changes to other sites will, however, only come into effect once you reimport that theme in the other sites.
 
-Other theme setups are also possible, for example, a hybrid setup with ‘base themes’ stored centrally in the Textpattern root directory and site-specific variants in each `/public/themes` directory. For this you need to manually create symlinks from within the site’s `/public/themes` directory to your respective ‘base theme’ folder in the Textpattern root directory.
+Other theme setups are also possible, for example, a hybrid setup with 'base themes' stored centrally in the Textpattern root directory and site-specific variants in each `/public/themes` directory. For this you need to manually create symlinks from within the site’s `/public/themes` directory to your respective 'base theme' folder in the Textpattern root directory.
 
 All of the above can also be applied to admin themes in the `admin` directory.

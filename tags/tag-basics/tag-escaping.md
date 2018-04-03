@@ -54,7 +54,7 @@ Will output:
 : Textile the content.
 
 `escape="tidy, textile"`
-: Remove spaces/newlines, prepend a single space to remove the surrounding ‘p’ tag, then Textile the content.
+: Remove spaces/newlines, prepend a single space to remove the surrounding `<p>` tag, then Textile the content.
 
 `escape="some-tag"`
 : Strip any self-closing `<some-tag />`, or unwrap any container `<some-tag>...</some-tag>` in the content.
