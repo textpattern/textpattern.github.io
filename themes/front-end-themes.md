@@ -57,11 +57,12 @@ abc_theme
 The _manifest.json_ file contains a theme related data.  
 The only required field is `txp-type` which need to be set to `textpattern-theme`.  
 The following default value will be used on import for the missing fields or values:
-- title: theme name;
-- version: _Unknown_;
-- description: none;
-- author: _Unknown_;
-- author_uri: none;
+
+* title: theme name;
+* version: _Unknown_;
+* description: none;
+* author: _Unknown_;
+* author_uri: none;
 
 ##### Example
 
@@ -88,18 +89,18 @@ The _forms_ optional directory should contains Textpattern forms as `.txp` files
 While forms should be grouped by types into dedicated subdirectories, they all need to use different names.  
 Six essential pages should be created:
 
-- article:
-    - _article_listing_;
-    - _default_;
-    - _search_results_;
-- comment:
-    - _comments_;
-    - _comments_display_;
-    - _comment_form_;
-- file:
-    - _files_;
-- link:
-    - _plainlinks_;
+* article:
+  * _article_listing_;
+  * _default_;
+  * _search_results_;
+* comment:
+  * _comments_;
+  * _comments_display_;
+  * _comment_form_;
+* file:
+  * _files_;
+* link:
+  * _plainlinks_;
 
 They will be created as empty forms on import if missing.  
 If this directory is missing, empty essential forms will be created on the first import while on update, stylesheets import will be skipped.
