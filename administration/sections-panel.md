@@ -75,7 +75,7 @@ Section | Reason to avoid
 `author` (or the equivalent in the site's public-wide language) | Used to generate per-author landing pages containing articles from a the given author
 `category` (or the equivalent in the site's public-wide language) | Used to generate category landing pages containing articles from a the given category
 `file_download` | Used by Textpattern to serve file downloads
-`files` | Clashes with the default directory used to hold files available for download. If you have moved this via chnages to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#file-directory-path then you may use this section name
+`files` | Clashes with the default directory used to hold files available for download. If you have moved this via chnages to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#file-directory-path) then you may use this section name
 `index` | Clashes with `index.php`
 `images` | Clashes with the default directory used to serve images.
 `rss` | Used by Textpattern to serve RSS feed content
