@@ -13,14 +13,14 @@ Sections are the principle content organization mechanism in Textpattern, and th
 On this page:
 
 * [How do sections apply to Textpattern?](#how-do-sections-apply-to-textpattern)
-* [Create a new section](#create-a-new-section)
-* [Default publishing section](#default publishing section)
+* [Creating a section](#creating-a-section)
+* [List of existing sections](#list-of-existing-sections)
 * [Editing sections](#editing-sections)
   * [Section names to avoid](#section-names-to-avoid)
-* [Search function](#search-function)
-* [List of existing sections](#list-of-existing-sections)
-  * [Perform changes on selected sections](#perform-changes-on-selected-sections)
-* [Pages and articles listed per page](#pages-and-articles-listed-per-page)
+* [Setting the default publishing section](#setting-the-default-publishing-section)
+* [Searching sections](#searching-sections)
+  * [Performing changes on selected sections](#performing-changes-on-selected-sections)
+* [Pagination](#pagination)
 
 On this panel you can do two things:
 
@@ -102,7 +102,7 @@ After entering your search criteria you start searching by selecting the search 
 
 By default, the search will find matches for all fields in a row. You can perform more refined searches by selecting or deselcting areas to search via the drop-down-list in the search tool.
 
-### Perform changes on many sections
+### Performing changes on many sections
 
 In the first column you will find a checkbox for each section. Here you can select sections you want to change in a bulk manner. You can mark sections by checking the checkbox or you can use the checkbox in the head bar of the list to mark all sections on that page.
 
@@ -110,7 +110,7 @@ In order to quickly select ranges of sections select the checkbox of the first s
 
 For performing changes, go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to apply the changes.
 
-## Pages and sections listed per page
+## Pagination
 
 At the very bottom of the list you will find a pagination tool. You can change the number of sections listed per page by selecting another value from the number range. If there are more rows available on subsequent pages, you will see the current page number that you can edit and press Enter to jump to that page, along with links to visit the next and previous pages.
 
