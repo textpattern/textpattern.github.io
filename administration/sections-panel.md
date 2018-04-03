@@ -19,7 +19,7 @@ On this page:
   * [Section names to avoid](#section-names-to-avoid)
 * [Setting the default publishing section](#setting-the-default-publishing-section)
 * [Searching sections](#searching-sections)
-  * [Performing changes on selected sections](#performing-changes-on-selected-sections)
+  * [Performing changes on many sections](#performing-changes-on-many-sections)
 * [Pagination](#pagination)
 
 On this panel you can do two things:
