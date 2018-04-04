@@ -36,21 +36,25 @@ And so on.
 
 ## When short-tag preference is disabled
 
-Whether or not you opt to disable short-tag functionality in the Preferences panel, you can still use the shortcode Form via an `output_form` tag like this:
+Whether or not you opt to disable short-tag functionality in the Preferences panel, you can still use the shortcode Form. If its name is not purely alphanumeric, proceed via an `output_form` tag like this:
 
 ~~~ html
-<txp:output_form yield form="figure" />
+<txp:output_form form="my figure" />
 ~~~
 
-In this case the `yield` is necessary to process the custom attributes. (See [Image with caption shortcode](image-with-caption-shortcode) for example of attributes used in a `figure` shortcode.)
+## Using yield attribute
 
-Alternatively, the attributes can be defined explicitly in the tag as values of the `yield=""` attribute: 
+If needed, the attributes can be defined explicitly in the tag as values of the `yield=""` attribute: 
 
 ~~~ html
-<txp:output_form yield="id, caption" form="figure" />
+<txp::figure yield="id, caption" />
 ~~~
 
-Note that omitting the `class` attribute means it will be considered as a global attribute and processed accordingly.
+Note that omitting the `class` and `wraptag` attributes in the following example means they will be considered as global attributes and processed accordingly:
+
+~~~ html
+<txp::figure yield="id, caption" id="123" wraptag="div" class="picture" />
+~~~
 
 ## Shortcodes
 
