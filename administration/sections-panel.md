@@ -75,7 +75,7 @@ Sections can be given any arbitrary name, except for a few labels already reserv
     <table>
         <thead>
             <tr>
-                <th class="t50" scope="col">Section</th>
+                <th class="t33" scope="col">Section</th>
                 <th scope="col">Reason to avoid</th>
             </tr>
         </thead>
