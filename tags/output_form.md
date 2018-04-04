@@ -27,7 +27,7 @@ The **output_form** tag can be used as a *single* or a *container* tag. Textpatt
 
 The basic function of **output_form** is to take a particular form that defines a given set of scripting or HTML functions and output that set of functions anywhere in a particular web page. Think about your pages; many of them will use different article or link forms to display content unique to the particular page, but they'll also have a lot of things in common, like the opening `DOCTYPE` declaration, calls to CSS, navigation menus, etc. Using **output_form** it's possible to write these page elements once and use them anywhere.
 
-From Textpattern CMS version 4.7.0 onwards, `<txp:output_form form="my_form" />` can be invoked as 'shortcode' `<txp::my_form />`.
+From Textpattern CMS version 4.7.0 onwards, `<txp:output_form form="my_form" />` can be invoked as 'shortcode' `<txp::my_form />` if its name contains only alphanumeric characters.
 
 For the container tag and/or shortcode usage, see the [yield](yield) tag.
 
@@ -41,7 +41,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `yield="boolean or list of names"` <span class="footnote warning">v4.7.0+</span>
 : Populate `<txp:yield />` tags inside the form with the corresponding attributes.
-: **Default:** unset in the standard form, `1` if used as shortcode.
+: **Default:** `1`, for "populate all attributes".
 
 ## Examples
 
@@ -77,6 +77,12 @@ Then in each of your pages, you insert the header using...
 
 ~~~ html
 <txp:output_form form="head" />
+~~~
+
+or simply
+
+~~~
+<txp::head />
 ~~~
 
 ...which will add this `<head>` to all the pages automatically.
@@ -119,7 +125,7 @@ For example:
 
 Other tags used: [if_yield](if_yield), [posted](posted), [yield](yield).
 
-### Example 4: Using yield attribute
+### Example 4: Longcode format
 
 Suppose that the form of Example 3 is called `media video`. Then it can not be called using the shortcode format:
 
@@ -127,18 +133,59 @@ Suppose that the form of Example 3 is called `media video`. Then it can not be c
 <txp::media video width="" height="" ... />
 ~~~
 
-because the parser will see it as `<txp:output_form form="media" />`. And if you call
+because the parser will see it as `<txp:output_form form="media" />`. The solution consists to call `<txp:output_form />` as usual:
 
 ~~~ html
 <txp:output_form form="media video" width="" height="" ... />
 ~~~
 
-the parser will complain (mainly for backward compatibility reasons) about unknown attributes `width`, `height` etc.
+### Example 5: Using yield attribute
 
-The solution consists to call `<txp:output_form />` with `yield` attribute:
+Textpattern tries to distinguish between local and global form attributes, but sometimes it needs your help. Suppose that some `hello` form just outputs a greeting:
 
 ~~~ html
-<txp:output_form yield form="media video" width="" height="" ... />
+Hello, <txp:yield name="who" default="world" />!
+~~~
+
+If we call
+
+~~~ html
+<txp::hello who="guest" wraptag="p" class="greeting" />
+~~~
+
+three `<txp:yield />` stacks (i.e. `class, who, wraptag`) will be populated and ready for use inside the form. But the parser will detect that `<txp:yield name="class" />` and `<txp:yield name="wraptag" />` are not used and consider these attributes as global, wrapping the form output in `<p class="greeting">...</p>` HTML tag. This is fine, but suppose that later we decide to append to the greeting some `contact` form that uses `class` as local attribute:
+
+~~~ html
+<label class="<txp:yield name="class" />">Contact us</label>
+...
+~~~
+
+The new `hello` form is thus
+
+~~~ html
+Hello, <txp:yield name="who" default="world" />!
+<txp::contact />
+~~~
+
+If we call now
+
+~~~ html
+<txp::hello who="guest" wraptag="p" class="greeting" />
+~~~
+
+the parser will detect the presence of `<txp:yield name="class" />` inside and unset the global `class` (but not `wraptag`) attribute, resulting in
+
+~~~ html
+<p>
+    Hello, guest!
+    <label class="greeting">Contact us</label>
+</p>    
+~~~
+
+This can be fine, but if you want to keep `greeting` class on the wrapping `p`, just indicate explicitly which attributes should be local:
+
+~~~ html
+<txp::hello yield="who" who="guest" wraptag="p" class="greeting" />
 ~~~
 
 ## Genealogy
