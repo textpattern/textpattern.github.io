@@ -41,7 +41,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `yield="boolean or list of names"` <span class="footnote warning">v4.7.0+</span>
 : Populate `<txp:yield />` tags inside the form with the corresponding attributes.
-: **Default:** `1`, for "populate all attributes".
+: **Default:** `1` (populate all attributes).
 
 ## Examples
 
