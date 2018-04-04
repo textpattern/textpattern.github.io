@@ -53,7 +53,7 @@ You open the Section property editor when creating a new section or by tapping t
 
 **Section title:** A title for the section, which can be harnessed by tags (such as [section](https://docs.textpattern.io/tags/section)) to display a more human-friendly name for your section.
 
-**Uses theme:** From Textpattern 4.7.0, pages and styles are grouped into __themes__. Selecting the theme you wish to use will alter the available pages and styles in the following two select lists.
+**Uses theme:** From Textpattern 4.7.0, pages and styles are grouped into *themes*. Selecting the theme you wish to use will alter the available pages and styles in the following two select lists.
 
 **Uses page:** Textpattern assigns its default page template automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Pages](https://docs.textpattern.io/administration/pages-panel) already created. You can reassign sections to pages at any time.
 
@@ -71,17 +71,54 @@ You open the Section property editor when creating a new section or by tapping t
 
 Sections can be given any arbitrary name, except for a few labels already reserved for Textpattern's special functions. Avoid the following, or undesirable results will likely occur:
 
-Section | Reason to avoid
----|---
-`atom` | Used by Textpattern to serve Atom feed content
-`author` (or the equivalent in the site's public-wide language) | Used to generate per-author landing pages containing articles from a the given author
-`category` (or the equivalent in the site's public-wide language) | Used to generate category landing pages containing articles from a the given category
-`file_download` | Used by Textpattern to serve file downloads
-`files` | Clashes with the default directory used to hold files available for download. If you have moved this via chnages to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#file-directory-path) then you may use this section name
-`index` | Clashes with `index.php`
-`images` | Clashes with the default directory used to serve images
-`rss` | Used by Textpattern to serve RSS feed content
-`section` (or the equivalent in the site's public-wide language) | Used internally by Textpattern
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+    <table>
+        <thead>
+            <tr>
+                <th class="t50" scope="col">Section</th>
+                <th scope="col">Reason to avoid</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><code>atom</code></th>
+                <td>Used by Textpattern to serve Atom feed content</td>
+            </tr>
+            <tr>
+                <th scope="row"><code>author</code> (or the equivalent in the site’s public-wide language)</th>
+                <td>Used to generate per-author landing pages containing articles from a the given author</td>
+            </tr>
+            <tr>
+                <th scope="row"><code>category</code> (or the equivalent in the site’s public-wide language)</th>
+                <td>Used to generate category landing pages containing articles from a the given category</td>
+            </tr>
+            <tr>
+                <th scope="row"><code>file_download</code></th>
+                <td>Used by Textpattern to serve file downloads</td>
+            </tr>
+            <tr>
+                <th scope="row"><code>files</code></th>
+                <td>Clashes with the default directory used to hold files available for download. If you have moved this via chnages to the <a href="https://docs.textpattern.io/administration/preferences-panel#file-directory-path">Preferences panel</a> then you may use this section name</td>
+            </tr>
+            <tr>
+                <th scope="row"><code>index</code></th>
+                <td>Clashes with <code>index.php</code></td>
+            </tr>
+            <tr>
+                <th scope="row"><code>images</code></th>
+                <td>Clashes with the default directory used to serve images</td>
+            </tr>
+            <tr>
+                <th scope="row"><code>rss</code></th>
+                <td>Used by Textpattern to serve RSS feed content</td>
+            </tr>
+            <tr>
+                <th scope="row"><code>section</code> (or the equivalent in the site’s public-wide language)</th>
+                <td>Used internally by Textpattern</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 Section names matching physical directories in your site's root directory will not work either.
 

@@ -147,7 +147,7 @@ Textpattern tries to distinguish between local and global form attributes, but s
 Hello, <txp:yield name="who" default="world" />!
 ~~~
 
-If we call
+If we call:
 
 ~~~ html
 <txp::hello who="guest" wraptag="p" class="greeting" />
@@ -160,20 +160,20 @@ three `<txp:yield />` stacks (i.e. `class, who, wraptag`) will be populated and 
 ...
 ~~~
 
-The new `hello` form is thus
+The new `hello` form is thus:
 
 ~~~ html
 Hello, <txp:yield name="who" default="world" />!
 <txp::contact />
 ~~~
 
-If we call now
+If we call now:
 
 ~~~ html
 <txp::hello who="guest" wraptag="p" class="greeting" />
 ~~~
 
-the parser will detect the presence of `<txp:yield name="class" />` inside and unset the global `class` (but not `wraptag`) attribute, resulting in
+the parser will detect the presence of `<txp:yield name="class" />` inside and unset the global `class` (but not `wraptag`) attribute, resulting in:
 
 ~~~ html
 <p>
@@ -187,6 +187,8 @@ This can be fine, but if you want to keep `greeting` class on the wrapping `p`, 
 ~~~ html
 <txp::hello yield="who" who="guest" wraptag="p" class="greeting" />
 ~~~
+
+Other tags used: [yield](yield).
 
 ## Genealogy
 
