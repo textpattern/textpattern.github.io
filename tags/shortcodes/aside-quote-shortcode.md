@@ -238,7 +238,7 @@ But we need those wrapping HTML tags, so we need to use the concept of markup in
 <txp::linkquote id="" name="" wraptag="aside" class="" />
 ~~~
 
-On advantage of this shortcode/tag variation: if you forget to  add a link ID, or add one that doesn’t exist by accident, no output will occur at all, not even an empty `aside` container, which is what you’d get with earlier examples. 
+One advantage of this shortcode/tag variation: if you forget to  add a link ID, or add one that doesn’t exist by accident, no output will occur at all, not even an empty `aside` container, which is what you’d get with earlier examples. 
 
 Of course, you should always verify your front-end result whenever adding output tags like this, and there would never be an issue. You’d see the problem and fix it.
 
