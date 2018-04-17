@@ -76,14 +76,13 @@ Tag will accept the following attributes (**case-sensitive**):
 `sort="sort value(s)"`
 : How to sort the resulting section list. Specify a value from the ones below, followed by a space and then add either `asc` or `desc` to sort in ascending or descending order, respectively.
 : **Values:** \\
-`css`. \\
-`in_rss`. \\
-`is_default`. \\
+`css` (order by the Stylesheet in use by the Sections). \\
+`in_rss` (order by whether the Sections are syndicatable or not). \\
 `name`. \\
-`on_frontpage`. \\
-`page`. \\
+`on_frontpage` (order by whether the Section allows articles on the front page or not). \\
+`page` (order by the Page in use by the Sections). \\
 `rand()` ([random](https://dev.mysql.com/doc/refman/5.7/en/mathematical-functions.html#function_rand)). \\
-`searchable`. \\
+`searchable` (order by whether the Sections are searchable or not). \\
 `title`. \\
 Each field in the `textpattern` database table can be used as a sort key. \\
 When viewing a search results list, `score` (how well the search terms match the article) is available as an additional value.
