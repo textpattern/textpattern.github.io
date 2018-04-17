@@ -80,7 +80,7 @@ Textpattern's displayed time should typically be set to your local or target aud
 
 The standard time system for all Internet-related synchronizations is UTC ([Coordinated Universal Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)). A numeric value in parentheses refers to the time offset in seconds when compared to UTC. Textpattern uses GMT notation instead of UTC, but they are identical.
 
-### Automatically adjust Daylight Saving Time setting?
+### Automatically adjust Daylight Saving Time?
 
 This setting allows Textpattern to alter when Daylight Savings Time occurs in your locale. If this is set to 'No', you will be able to change the 'DST enabled' preference below manually.
 
@@ -234,7 +234,7 @@ When the 'Permalink title URL pattern' option is set to 'Intercapped (TitleLikeT
 http://example.com/AnnandBobeatcake
 ~~~
 
-### Send Last-Modified header?
+### Send &quot;Last-Modified&quot; header?
 
 When set, Textpattern will read a visitor's HTTP `If-Modified-Since` header (if one exists) and compare it to the last site update. If nothing has changed since the visitor last loaded the page (i.e. if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor's browser to use its cached version of the page.
 
@@ -300,11 +300,11 @@ A low value, such as `5` through `15` is recommended.
 
 When set to 'Yes', this setting will append the number of comments to your article titles in RSS/Atom feeds.
 
-### Include email in Atom feeds?
+### Include email address in Atom feeds?
 
 This allows you to include the email address of the author (as set in their user account) of an article in the *author* part of your Atom feeds.
 
-### Use email address to construct feed ids (default is site URL)?
+### Use email address to construct feed IDs (default is site URL)?
 
 Feed items in Atom, require a unique ID. To generate IDs unique to your site, Textpattern allows you to choose between either an email address or your domain name to include in these IDs. The email address will be the first one used when creating the site. Unless you are likely going to be changing your domain name, it is probably safe to set this to 'No'.
 
@@ -372,19 +372,19 @@ If set to 'Yes', people that want to comment on your article will have to enter 
 
 If set to 'Yes', people that want to comment on your article will have to enter an email address in the comment write form. They will be unable to post a comment if they do not supply an email address.
 
-### Hide commenter email address?
+### Hide commenter's email address?
 
 This setting controls whether the email address of a commenter should be shown publicly.
 
 It's recommended that email addresses should not be shown, as courtesy to your users, but there may be certain situations when showing commenter email addresses is desirable.
 
-### Apply rel=nofollow to comments?
+### Apply rel=&quot;nofollow&quot; to comments?
 
 If set to 'Yes', this will add an additional attribute to the links made in comments. It is intended to be a measure that takes away the incentive for comment spammers and was initiated by a range of search engines and software developers. You can find out more by reading [Google's announcement](https://googleblog.blogspot.com/2005/01/preventing-comment-spam.html).
 
 **Note:** This setting does not influence the functionality of your site. It may prevent or diminish the influence of your comments when some search engines rank sites linked to from those comments.
 
-### Strip commenter images from comments?
+### Strip commenter's images from comments?
 
 With this option set to 'Yes', any images included in comments will be stripped out.
 
