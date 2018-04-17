@@ -52,7 +52,7 @@ You now have a full backup of your files and database. If things don't work out 
 
 ## Install the new Textpattern files
 
-It is strongly advised to log out of the Textpattern admin interface before upgrading.
+It is strongly advised to log out of the Textpattern admin interface and clear the browser cache before upgrading. If you use a service such as [Cloudflare](https://www.cloudflare.com) to cache your domain assets, remember to clear any caching services there too.
 
 Using FTP/SFTP again, navigate to the folder you created in **Step 1** and copy the following files from there to your server, overwriting any previous files:
 

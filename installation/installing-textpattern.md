@@ -32,7 +32,7 @@ In the root directory of every Textpattern archive is a `README.txt` file with u
 1. Ensure your web server meets the Textpattern CMS system requirements.
 2. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` archive.
 3. Create a new directory (e.g. `textpattern-upgrade`) on your local drive, move the downloaded archive file from step 2. into it, and unpack [the file tree contents](https://github.com/textpattern/textpattern).
-3. Log out of the Textpattern admin-side and clear the browser cache for your existing Textpattern site.
+3. Log out of the Textpattern admin-side and clear the browser cache for your existing Textpattern site. If you use a service such as [Cloudflare](https://www.cloudflare.com) to cache your domain assets, remember to clear any caching services there too.
 4. Verify the existence of a working database and file backup of your existing Textpattern site. You may find it useful to copy your existing, known-good `textpattern/config.php` file to an easily accessible location on your local drive as it will be required shortly.
 5. Open a file transfer connection to your destination server and upload the new `css.php`, and `index.php` files to your web server, overwriting the existing files. Upload the new `textpattern` directory, overwriting the existing directory. The new `.htaccess` file is required if your web server is Apache httpd or a derivative and has an existing file. The new `sites` subdirectory is only required if optional multi-site functionality is enabled and the new `rpc` directory is only required if optional XML-RPC functionality is enabled.
 6. Copy your known-good `textpattern/config.php` into `textpattern`. Delete the `textpattern/setup` directory.
