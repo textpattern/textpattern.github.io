@@ -12,6 +12,7 @@ Upgrading is an essential part of maintaining good site security. Whenever a new
 
 On this page:
 
+* [Upgrading from very old versions](#upgrading-from-very-old-versions)
 * [Download latest stable release](#download-latest-stable-release)
 * [Backup](#backup)
 * [Install the new Textpattern files](#install-the-new-textpattern-files)
@@ -22,6 +23,10 @@ On this page:
 * [Explore the bleeding edge development](#explore-the-bleeding-edge-development)
 
 You may find abbreviated upgrade instructions in the `README.txt` file of every Textpattern release package. The instructions here are more detailed. In brief, you'll backup your current installation, overwrite your existing installation with new package files (with a few key exceptions), update your language preference(s), and address any problems indicated in the [Diagnostics](https://docs.textpattern.io/administration/diagnostics-panel) panel.
+
+## Upgrading from very old versions
+
+Due to the nature of Textpattern's evolution, upgrading a Textpattern instance older than version 4.2.0 (released 17 September 2009) requires a two-stage upgrade process to avoid loss of functionality and availability issues. Upgrade to version 4.2.0 first, ensuring all admin functionality is working as expected, and then upgrade to the latest stable release.
 
 ## Download latest stable release
 
