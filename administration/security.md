@@ -57,7 +57,7 @@ Textpattern developers, current and past, tell us (e.g. [here](https://forum.tex
 
 If you ever suspect there's a security problem in Textpattern, **do not publish any sensitive information about it**. [Report the security incident to core developers](https://textpattern.com/security) immediately and give them a chance to respond to the issue.
 
-[^1]: **Tip:** Subscribe to all the plugin author support threads for the plugins you use so you're informed when new versions are released. This is subject to the plugin authors making announcements in those threads, of course, so not an guarantee you will be notified, but better than nothing.
+[^1]: **Tip:** Subscribe to all the plugin author support threads for the plugins you use so you're informed when new versions are released. This is subject to the plugin authors making announcements in those threads, of course, so not a guarantee you will be notified, but better than nothing.
 
 [^2]: **Tip:** Odds are generally better that hosted third-party services like Disqus, Twitter, Google Maps, and so on are safer to integrate than dubious scripts you might find on the internet.
 
