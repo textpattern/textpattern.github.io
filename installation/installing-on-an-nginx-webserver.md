@@ -122,7 +122,7 @@ http {
 }
 ~~~
 
-### /etc/nginx/conf.d/example.con.conf
+### /etc/nginx/conf.d/example.com.conf
 
 For each virtual host (i.e. each URL under which your Textpattern site should be accessible) you need to define one 'server' block. It is good practice to create one file per domain so you can better keep track of all settings.
 
