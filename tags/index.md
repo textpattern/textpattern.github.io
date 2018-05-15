@@ -187,8 +187,8 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [image](image)
 * [image_author](image_author) <span class="footnote warning">**Modified v4.7.0**</span>
 * [image_date](image_date)
-* [image_display](image_display)
-* [image_index](image_index)
+* [image_display](image_display) <span class="footnote error">**Deprecated**</span>
+* [image_index](image_index) <span class="footnote error">**Deprecated**</span>
 * [image_info](image_info)
 * [image_list](image_list) <span class="footnote error">**Deprecated**</span>
 * [image_url](image_url)
