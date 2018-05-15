@@ -5,11 +5,13 @@ published: true
 title: Image index (Deprecated)
 description: The 'image_index' tag is deprecated - use 'images' tag instead.
 tags:
-  - Image tags
-  - List tags
+  - Deprecated tags
 ---
 
 # Image index
+
+**Deprecated in Textpattern 4.7.0** (use the [images](images) tag instead)
+{: .alert-block .error}
 
 On this page:
 
