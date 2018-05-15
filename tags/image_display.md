@@ -5,10 +5,13 @@ published: true
 title: Image display (Deprecated)
 description: The 'image_display' tag is deprecated - use 'image' tag instead.
 tags:
-  - Image tags
+  - Deprecated tags
 ---
 
 # Image display
+
+**Deprecated in Textpattern 4.7.0** (use the [image](image) tag instead)
+{: .alert-block .error}
 
 On this page:
 
