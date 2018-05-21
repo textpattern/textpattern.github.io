@@ -8,7 +8,7 @@ description: Although it is not officially supported, running Textpattern CMS on
 
 # Installing on an Nginx web server
 
-Although it is not officially supported, running Textpattern CMS on an Nginx web server works just fine - given the correct configuration. This article outlines the requirements for a successful installation of Textpattern using Nginx on a CentOS 5.6 system.
+Running Textpattern CMS on an Nginx web server works just fine - given the correct configuration. This article outlines the requirements for a successful installation of Textpattern using Nginx on a CentOS 5.6 system.
 
 On this page:
 
