@@ -65,26 +65,26 @@ There are numerous applications to transfer (upload or download) files and direc
 ## Viewing hidden files in Cyberduck
 
 * Open Cyberduck from Applications.
-* From the View menu, select Show Hidden Files.
+* From the _View_ menu, select _Show Hidden Files_.
 
-A checkmark appears next to the Show Hidden Files menu entry indicating that hidden files will be shown on both the local computer and remote server.
+A checkmark appears next to the _Show Hidden Files_ menu entry indicating that hidden files will be shown on both the local computer and remote server.
 
 To re-hide hidden files, repeat the above process. The checkmark will disappear and hidden files will not be shown.
 
 ## Viewing hidden files in FileZilla
 
 * Open FileZilla from Applications.
-* From the Server menu, select Force showing hidden files.
+* From the _Server_ menu, select _Force showing hidden files_.
 
-You may see an explanatory message appear in a dialog. This is expected. A checkmark appears next to the Force showing hidden files menu entry indicating that hidden files will be shown on both the local computer and remote server.
+You may see an explanatory message appear in a dialog. This is expected. A checkmark appears next to the _Force showing hidden files_ menu entry indicating that hidden files will be shown on both the local computer and remote server.
 
 To re-hide hidden files, repeat the above process. The checkmark will disappear and hidden files will not be shown.
 
 ## Viewing hidden files in Transmit
 
 * Open Transmit from Applications.
-* From the View menu, select Show Hidden Files.
+* From the _View_ menu, select _Show Hidden Files_.
 
-The Show Hidden Files menu entry changes to Hide Hidden Files. Hidden files will be shown on both the local computer and remote server.
+The _Show Hidden Files_ menu entry changes to _Hide Hidden Files_. Hidden files will be shown on both the local computer and remote server.
 
-To re-hide hidden files, repeat the above process and select the Hide Hidden Files menu entry. Hidden files will not be shown.
+To re-hide hidden files, repeat the above process and select the _Hide Hidden Files_ menu entry. Hidden files will not be shown.
