@@ -16,9 +16,9 @@ On this page:
   * [Enabling viewing of hidden files in macOS Finder](#enabling-viewing-of-hidden-files-in-macos-finder)
   * [Disabling viewing of hidden files in macOS Finder](#disabling-viewing-of-hidden-files-in-macos-finder)
 * [Viewing hidden files in macOS file transfer applications](#viewing-hidden-files-in-macos-file-transfer-applications)
-* [Viewing hidden files in Cyberduck](#viewing-hidden-files-in-cyberduck)
-* [Viewing hidden files in FileZilla](#viewing-hidden-files-in-filezilla)
-* [Viewing hidden files in Transmit](#viewing-hidden-files-in-transmit)
+  * [Viewing hidden files in Cyberduck](#viewing-hidden-files-in-cyberduck)
+  * [Viewing hidden files in FileZilla](#viewing-hidden-files-in-filezilla)
+  * [Viewing hidden files in Transmit](#viewing-hidden-files-in-transmit)
 
 # Overview
 
