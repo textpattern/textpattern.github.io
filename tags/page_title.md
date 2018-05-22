@@ -58,4 +58,4 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ### Version 4.7.0
 
-`separator` attribute changed to a pipe (was colon). \\
+`separator` attribute changed to a pipe (was colon).
