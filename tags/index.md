@@ -259,7 +259,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [page_title](page_title)
+* [page_title](page_title) <span class="footnote warning">**Modified v4.7.0**</span>
 * [page_url](page_url) <span class="footnote warning">**Modified v4.7.0**</span>
 * [password_protect](password_protect)
 * [permlink](permlink)
