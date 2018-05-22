@@ -72,6 +72,11 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 : **Removable?:** no.
 : **What it's for:** Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side.
 
+`themes`
+: **Type:** directory.
+: **Removable?:** no.
+: **What it's for:** Empty by default. It's where themes will go if you choose to export them to disk from the [Themes panel](https://docs.textpattern.io/administration/themes-panel) as a backup or for sharing them with others. Each theme has its own subdirectory inside. Note that you may see a warning about the directory's `chmod` status (editing rights) at the top of the Themes panel if the web server does not have sufficient write permissions.
+
 `.htaccess`
 : **Type:** file.
 : **Removable?:** yes/no.
