@@ -63,6 +63,7 @@ Using FTP/SFTP again, navigate to the folder you created in **Step 1** and copy 
 
 * Copy the files `.htaccess`, `css.php`, and `index.php` (the `README.txt`, `HISTORY.txt` and `LICENSE` files are optional).
 * Copy any folders you are using, for example `rpc` and `sites`. You do not usually need to copy `files` and `images` unless otherwise directed because you will already have done so when installing a prior release.
+* Copy the (empty) `themes` folder if you do not have one already. If you do, you can omit this step.
 * Copy the contents of the `textpattern` folder to the server's `textpattern` folder. You should exclude the `setup` directory, since it is only used for first-time installations. The [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) will inform you if the `setup` directory is still available, and whether you have uploaded all files completely.
 
 It is important that you make sure all three `index.php`, `css.php` and `.htaccess` files transfer over. This shouldn't be a problem, but sometimes in the case of the `.htaccess` file it does not show up in certain FTP clients (it's usually there but just not visible). In the case of the `.htaccess` file or `/lib/admin_config.php`, if you had any customizations (such as `mod_rewrite` changes or custom permissions), be sure to add them back so you don't lose that functionality. When in doubt, compare your backed-up copy of the file against the new one.
