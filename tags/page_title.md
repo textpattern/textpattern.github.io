@@ -15,6 +15,8 @@ On this page:
 * [Syntax](#syntax)
 * [Attributes](#attributes)
 * [Examples](#examples)
+* [Genealogy](#genealogy)
+
 
 ## Syntax
 
@@ -51,3 +53,9 @@ Tag will accept the following attributes (**case-sensitive**):
     <txp:page_title separator=" &raquo; " />
 </title>
 ~~~
+
+## Genealogy
+
+### Version 4.7.0
+
+`separator` attribute changed to a pipe (was colon). \\
