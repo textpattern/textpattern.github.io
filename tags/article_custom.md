@@ -308,6 +308,14 @@ Outputs articles specified by list of IDs, in this example that would be article
 
 Outputs articles specified by list of IDs, in the order given in the `sort` field.
 
+### Example 8: Count articles
+
+~~~ html
+<txp:article_custom section='<txp:section />' pageby="1" pgonly />
+~~~
+
+Outputs the number of live articles belonging to the current section.
+
 ## Genealogy
 
 ### Version 4.7.0
