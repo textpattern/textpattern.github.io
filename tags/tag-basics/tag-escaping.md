@@ -56,6 +56,9 @@ Will output:
 `escape="tidy, textile"`
 : Remove spaces/newlines, prepend a single space to remove the surrounding `<p>` tag, then Textile the content.
 
+`escape="tags"`
+: Strips all HTML tags and comments from the content leaving you with just the text/data of the content.
+
 `escape="some-tag"`
 : Strip any self-closing `<some-tag />`, or unwrap any container `<some-tag>...</some-tag>` in the content.
 
