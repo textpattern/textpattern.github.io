@@ -19,7 +19,7 @@ On this page:
   * [Repairing symlinks](#repairing-symlinks)
 * [The multi-site folder structure](#the-multi-site-folder-structure)
 * [Alternative multi-site scenarios](#alternative-multi-site-scenarios)
-  * [Separate sites and textpattern directories](#separate-sites-and-textpattern-directories)
+  * [Separate sites and Textpattern directories](#separate-sites-and-textpattern-directories)
   * [Working with several versions of Textpattern](#working-with-several-versions-of-textpattern)
   * [Alternative theme setups](#alternative-theme-setups)
 
