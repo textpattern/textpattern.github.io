@@ -26,21 +26,21 @@ This is a simple lightweight theme; developed for use on a [blog](http://jkg3.co
 
 ## Admin-side themes
 
-[Textpattern Hive admin theme](http://github.com/philwareham/txp-hive-admin-theme*)\
+[Textpattern Hive admin theme](https://github.com/philwareham/txp-hive-admin-theme*)\
 This is an official admin-side theme shipping with v4.5 onwards.
 Maintained by [Phil Wareham](http://twitter.com/philwareham).
 
 \*[Textpattern
-Moderne](http://github.com/weightshift/textpattern-moderne*)\
+Moderne](https://github.com/weightshift/textpattern-moderne*)\
 A clean and fresh Textpattern admin theme [from Naz
 Hamid](http://weightshift.com/memo/textpattern-moderne). Also turned
 into an installable [theme package
-version](http://github.com/jstubbs/textpattern-moderne) by TXP Builders.
+version](https://github.com/jstubbs/textpattern-moderne) by TXP Builders.
 
-\*[Textpattern Khaki](http://github.com/jstubbs/Textpattern-Khaki*)\
+\*[Textpattern Khaki](https://github.com/jstubbs/Textpattern-Khaki*)\
 Khaki is an admin theme from [TXP Builders](http://txpbuilders.com/)
 based on the Remora theme.
 
-\*[Steel](http://github.com/redbot/Steel*)\
+\*[Steel](https://github.com/redbot/Steel*)\
 Steel admin-side theme by
 [redbot](http://www.redbot.it/txp/steel-theme).
