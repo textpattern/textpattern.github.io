@@ -19,7 +19,7 @@ On this page:
 
 ### Nginx and PHP-FPM
 
-In order to run any PHP application on Nginx you will have to have [PHP-FPM](https://php-fpm.org) available and running on your system. It is part of the PHP core since PHP 5.3.3. For previous versions you might need to compile it yourself.
+In order to run any PHP application on Nginx you will have to have [PHP-FPM](https://php-fpm.org) available and running on your system.
 
 To ease the installation you can use pre-built packages in the [EPEL](https://fedoraproject.org/wiki/EPEL), [Remi](http://rpms.famillecollet.com), or [Atomic](http://wiki.atomicorp.com/wiki/index.php/Atomic) repositories.
 
@@ -32,7 +32,7 @@ $ chkconfig php-fpm on
 
 ### Textpattern
 
-1. [Download](https://textpattern.com/download) the latest release package from the Textpattern download page. Select either `.gzip` or `.zip`, as you prefer.
+1. [Download](https://textpattern.com/download) the latest release package from the Textpattern download page. Select either `.tar.gz` or `.zip`, as you prefer.
 2. It is assumed for this tutorial that the unzipped contents of the file are available in `/var/www/html/textpattern`.
 
 ## Setting up Nginx
@@ -49,7 +49,7 @@ This is what an example `nginx.conf` could look like:
 
 ~~~ nginx
 user  nginx;
-worker_processes  2;
+worker_processes  auto;
 worker_rlimit_nofile  100000;
 
 error_log   /var/log/nginx/error.log;
