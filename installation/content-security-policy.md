@@ -18,17 +18,6 @@ CSP rules for a Textpattern CMS instance will vary according to its content, HTM
 
 These rules relate to Textpattern core and should be used as a starting point for production sites, paying particular attention to existing content as outlined in the paragraph above.
 
-
-| CSP header | Textpattern 4.7.1 | Notes |
-|------------|-------------------|-------|
-|`default-src`|||
-|`font-src`|| Front side theme uses Google-hosted font and associated CSS. |
-|`img-src`|| Images are served locally as SVG. |
-|`media-src`|||
-|`object-src`|||
-|`script-src`|| Some scripts are inline, some are served as files. |
-|`style-src`|| Front side theme uses Google-hosted font and associated CSS. |
-
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
         <thead>
@@ -62,7 +51,7 @@ These rules relate to Textpattern core and should be used as a starting point fo
             <tr>
                 <th scope="row">object-src</th>
                 <td></td>
-                <td>Shockwave Flash (SWF) files can still exist in Images, though uploads are deprecated.</td>
+                <td>Shockwave Flash (SWF) files can still exist as Images, though new uploads are deprecated.</td>
             </tr>
             <tr>
                 <th scope="row">script-src</th>
