@@ -85,6 +85,5 @@ bc. itms://
 h4(#resources). Resources
 
 * "itune podcast specs from Apple":http://www.apple.com/itunes/podcasts/techspecs.html
-* "podcasting with textpattern":http://couchfort.net/article/49/podcasting-with-textpattern
-* "pÎ¿dcasting plugin":http://textpattern.org/plugins/739/tru_podcast
-
+* "podcasting with Textpattern":http://couchfort.net/article/49/podcasting-with-textpattern
+* "podcasting plugin":http://textpattern.org/plugins/739/tru_podcast
