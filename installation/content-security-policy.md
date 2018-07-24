@@ -23,8 +23,8 @@ These rules relate to Textpattern core and should be used as a starting point fo
 |------------|-------------------|-------|
 |`default-src`|||
 |`font-src`|| Front side theme uses Google-hosted font and associated CSS. |
-|`img-src`|||
+|`img-src`|| Images are served locally as SVG. |
 |`media-src`|||
 |`object-src`|||
-|`script-src`|||
+|`script-src`|| Some scripts are inline, some are served as files. |
 |`style-src`|| Front side theme uses Google-hosted font and associated CSS. |
