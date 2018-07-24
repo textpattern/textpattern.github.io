@@ -40,39 +40,39 @@ These rules relate to Textpattern core and should be used as a starting point fo
         </thead>
         <tbody>
             <tr>
-                <th scope="row">`default-src`</th>
-                <td>data</td>
-                <td>data</td>
+                <th scope="row">default-src</th>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <th scope="row">`font-src`</th>
-                <td>etc</td>
-                <td>etc</td>
+                <th scope="row">font-src</th>
+                <td></td>
+                <td>Front side theme uses Google-hosted font and associated CSS.</td>
             </tr>
             <tr>
-                <th scope="row">`img-src`</th>
-                <td>data</td>
-                <td>data</td>
+                <th scope="row">img-src</th>
+                <td></td>
+                <td>UI images are served locally as SVG, author images are JPG, PNG or GIF.</td>
             </tr>
             <tr>
-                <th scope="row">`media-src`</th>
-                <td>etc</td>
-                <td>etc</td>
+                <th scope="row">media-src</th>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <th scope="row">`object-src`</th>
-                <td>data</td>
-                <td>data</td>
+                <th scope="row">object-src</th>
+                <td></td>
+                <td>Shockwave Flash (SWF) files can still exist in Images, though uploads are deprecated.</td>
             </tr>
             <tr>
-                <th scope="row">`script-src`</th>
-                <td>etc</td>
-                <td>etc</td>
+                <th scope="row">script-src</th>
+                <td></td>
+                <td>Some scripts are inline, some are served as files.</td>
             </tr>
             <tr>
-                <th scope="row">`style-src`</th>
-                <td>data</td>
-                <td>data</td>
+                <th scope="row">style-src</th>
+                <td></td>
+                <td>Front side theme uses Google-hosted font and associated CSS.</td>
             </tr>
         </tbody>
     </table>
