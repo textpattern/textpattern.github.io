@@ -47,11 +47,11 @@ Write in the first-person *and* second-person. The perspective in this case is T
 
 Do not write in first-person, regardless of whether the pronouns are normative, objective, or possessive. You should never be using these: I/we, me/us, my, mine, our, ours.
 
-Likewise, do not use the third-person in your copy. So don't use these words: he, she, they ... him, her, them ... his, her, hers, their, theirs ... it. They're indirect and totally unnecessary.
+Likewise, do not use the third-person in your copy. So don't use these words: he, she, they … him, her, them … his, her, hers, their, theirs … it. They're indirect and totally unnecessary.
 
 ## Language (Oxford English conventions)
 
-Textpattern's default language is English, and follows the conventions provided by Oxford University Press resources, notably the __New Oxford Style Manual__, 2nd Edition, and the __"Oxford English Dictionary":http://www.oed.com__ (OED). All Textpattern platforms designate this choice of English usage in the language tags of website templates:
+Textpattern's default language is English, and follows the conventions provided by Oxford University Press resources, notably the __New Oxford Style Manual__, 2nd Edition, and the __"Oxford English Dictionary":https://www.oed.com__ (OED). All Textpattern platforms designate this choice of English usage in the language tags of website templates:
 
 ~~~ html
 <html lang="en-GB-oxendict">
@@ -71,7 +71,7 @@ Concepts and word forms are listed alphabetically.
 
 ### American or British English?
 
-There are many differences between British and American English with regard to spelling. Textpattern handles this decisively by using the "Oxford English Dictionary":http://www.oed.com (OED), as described in the "Languages":#lang section of these guidelines.
+There are many differences between British and American English with regard to spelling. Textpattern handles this decisively by using the "Oxford English Dictionary":https://www.oed.com (OED), as described in the "Languages":#lang section of these guidelines.
 
 The following table compares conventional patterns of spelling between North American regions, Great Britain, and the OED.[^2] The words shown are simply representative of all possible words having those patterns. Use the OED conventions (*en-GB-oxendict*) when writing Textpattern content.
 
@@ -95,7 +95,7 @@ Also note that "program" (not "programme") is the correct spelling when used in 
 
 Use "cannot" (or "can't") in the context that someone absolutely can *not* do something. The only time you shouldn't use "cannot" is when you're emphasizing "not", just like demonstrated in the previous sentence.[^3]
 
-[^3]: See [Cannot vs. can not](http://www.dailywritingtips.com/cannot-or-can-not/)
+[^3]: See [Cannot vs. can not](https://www.dailywritingtips.com/cannot-or-can-not/)
 
 ## Punctuation
 
@@ -304,4 +304,3 @@ References
 2. Cohen, Georgy (2010). Mandy Brown and Erin Kissane at Content Strategy New England: A Pragmatic Approach to Editorial Style. Georgy Cohen: Writing and Web Communications. 15 Dec 2010.
 3. Gruber, John (2010). Title Junk. Daring Fireball. 21 December 2010
 4. Saloka, Elizabeth (2009). 5 Tips on Working with a Style Guide. Brain Traffic Blog. 18 Dec 2010
-
