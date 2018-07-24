@@ -19,9 +19,9 @@ Work is underway to clarify minimum requirements for Textpattern 4.8 onwards, an
 | CSP header | Textpattern 4.7.1 | Notes |
 |------------|-------------------|-------|
 |`default-src`|||
-|`font-src`|||
+|`font-src`|| Front side theme uses Google-hosted font and associated CSS. |
 |`img-src`|||
 |`media-src`|||
 |`object-src`|||
 |`script-src`|||
-|`style-src`|||
+|`style-src`|| Front side theme uses Google-hosted font and associated CSS. |
