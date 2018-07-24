@@ -8,6 +8,8 @@ description: These and similar problems happen when you use 'clean' URL mode on 
 
 # FAQ: Clean URLs don't work
 
+## Apache web server
+
 These and similar problems happen when you use 'clean' URL mode on a server that doesn't support `mod_rewrite` in `.htaccess`, or requires additional configuration in order to work. The `.htaccess` file supplied with Textpattern is designed to work on most Apache servers, but there is no universal solution.
 
 The Textpattern [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) will attempt to warn you if it can determine that clean URLs are not supported on your system. However, it doesn't detect all incompatible servers - the absence of a warning does **not** mean that your server supports clean URLs.
@@ -16,7 +18,7 @@ The simplest solution is to use 'messy' URLs instead (see [Article URL pattern](
 
 Some servers support `mod_rewrite`, but require some additional configuration in order to make it work properly.
 
-If your web server is Apache, and supports `mod_rewrite` in `.htaccess`, you can find some suggestions for specific web hosts [in this forum thread](https://forum.textpattern.io/viewtopic.php?id=7702).
+If your Apache web server supports `mod_rewrite` in `.htaccess`, you can find some suggestions for specific web hosts [in this forum thread](https://forum.textpattern.io/viewtopic.php?id=7702).
 
 On servers that support `mod_rewrite`, the most common solution is to uncomment (remove the leading `#` from) this line in `.htaccess`:
 
@@ -24,13 +26,13 @@ On servers that support `mod_rewrite`, the most common solution is to uncomment 
 #RewriteBase /relative/web/path/
 ~~~
 
-..and change the path as appropriate. If Textpattern is installed in your website root (i.e. the front Textpattern page is at `http://example.com/`), you should use this:
+..and change the path as appropriate. If Textpattern is installed in your website root (i.e. the front Textpattern page is at `https://example.com/`), you should use this:
 
 ~~~ apacheconf
 RewriteBase /
 ~~~
 
-If Textpattern is installed in a subdirectory (the front Textpattern page is at `http://example.com/mydir/`):
+If Textpattern is installed in a subdirectory (the front Textpattern page is at `https://example.com/mydir/`):
 
 ~~~ apacheconf
 RewriteBase /mydir/
