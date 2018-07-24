@@ -41,7 +41,7 @@ These rules relate to Textpattern core and should be used as a starting point fo
             <tr>
                 <th scope="row">img-src</th>
                 <td></td>
-                <td>UI images are served locally as SVG, author images are JPG, PNG or GIF.</td>
+                <td>Core images are served locally as SVG and PNG, author images are JPG, PNG and GIF.</td>
             </tr>
             <tr>
                 <th scope="row">media-src</th>
