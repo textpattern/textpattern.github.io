@@ -321,7 +321,7 @@ You can use the `offset` attribute to slice up your [article_image](article_imag
 
 ~~~ html
 <txp:images limit="1">
-    <txp:article_image />
+    <txp:image />
 </txp:images>
 ~~~
 
