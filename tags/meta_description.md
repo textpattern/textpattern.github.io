@@ -45,7 +45,7 @@ Note: The corresponding description field has a 255 character limit by default, 
 
 `escape="html"`
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&`.
-: **Values:** `html` or unset.
+: **Values:** See the [tag escaping](https://docs.textpattern.io/tags/tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
 `format="value"`

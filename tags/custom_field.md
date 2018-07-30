@@ -40,7 +40,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"`
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` prior to echoing the field contents.
-: **Values:** `html` or unset.
+: **Values:** See the [tag escaping](https://docs.textpattern.io/tags/tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
 `name="fieldname"`

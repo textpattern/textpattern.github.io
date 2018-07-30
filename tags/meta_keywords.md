@@ -45,7 +45,7 @@ Note: The corresponding keywords field has a 255 character limit by default, whi
 
 `escape="html"` <span class="footnote warning">v4.6.0+</span>
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&`.
-: **Values:** `html` or unset.
+: **Values:** See the [tag escaping](https://docs.textpattern.io/tags/tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
 `format="value"` <span class="footnote warning">v4.6.0+</span>
