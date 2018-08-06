@@ -35,9 +35,9 @@ On this page:
 
 ## Ready, set... go!
 
-Start from a new Textpattern installation. If you just want to test things out, you could even use [the online Textpattern demo](https://textpattern.com/demo), keeping in mind that you might be sharing it with other users, and that the demo gets wiped clean every few hours.
+Start from a new Textpattern installation. If you just want to test things out, you could even use [the Textpattern demo](https://textpattern.com/demo), keeping in mind that you might be sharing it with other users, and that the demo gets wiped clean every few hours.
 
-Log in to the Textpattern control panel. If this is a truly brand-new installation you should look at the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) first and deal with any warnings or error messages. If you see "All checks passed!", great! If not, please consult the [pre-flight checks documentation](https://docs.textpattern.io/administration/diagnostics-panel#pre-flight-checks).
+Log in to the Textpattern administration area. If this is a truly brand-new installation you should look at the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) first and deal with any warnings or error messages. If you see "All checks passed!", great! If not, please consult the [pre-flight checks documentation](https://docs.textpattern.io/administration/diagnostics-panel#pre-flight-checks).
 
 Then go to the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) and set your initial preferences. Don't worry about setting every preference correct first time, you can change preference options at any time. There are plenty of help tips alongside most of the preferences to assist.
 
@@ -303,7 +303,7 @@ Most Textpattern tags allow you to set options through [tag attributes](https://
 The template should now look something like this:
 
 ~~~ html
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
 	<title><txp:page_title /></title>
@@ -345,7 +345,7 @@ The template should now look something like this:
 
 Sections are the framework of a Textpattern site. We started the tutorial by naming a new section `Page 2`, but as we've seen, a section is much more than a page. On a real site you'll name your sections according to the primary level of site structure; generally this is the same as your top-level menu items.
 
-Textpattern does not have native support for subsections, so is not well suited to building hierachical site structures. This may seem like a serious limitation, but the beauty of a dynamic site is how easy it is to cross-link related content, making it easier for users to find what they need without delving through multiple layers of site structure. Traditional, hierarchical sites are perhaps more convenient for their designers than their users.
+Textpattern does not have native support for subsections, so is not well suited to building hierarchical site structures. This may seem like a serious limitation, but the beauty of a dynamic site is how easy it is to cross-link related content, making it easier for users to find what they need without delving through multiple layers of site structure. Traditional, hierarchical sites are perhaps more convenient for their designers than their users.
 
 In designing your Textpattern site, explore how to use search and category linking to make it easy for users to jump straight to the content they want.
 
