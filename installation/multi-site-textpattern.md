@@ -39,7 +39,7 @@ If none of the above apply, follow the instructions for installing a regular [Te
 
 In addition to the regular [Textpattern CMS system requirements](https://textpattern.com/about/119/system-requirements), your web host must support:
 
-- **the creation of subdomains**, e.g. `www.mydomain.com` and `admin.mydomain.com` and point them to directories. Most web hosts provide a means of managing domains and subdomains through their control panel. For self-managed hosts that offer root access, you can create your own virtual hosts (see @@creating virtual hosts@@).
+- **the creation of subdomains**, e.g. `www.example.com` and `admin.example.com` and point them to directories. Most web hosts provide a means of managing domains and subdomains through their control panel. For self-managed hosts that offer root access, you can create your own virtual hosts (see @@creating virtual hosts@@).
 - **symbolic links** (soft links). Symbolic links, also called symlinks, cannot be transferred via FTP, however even if your host doesn’t provide an SSH connection, the multi-site installer will attempt to (re)create the symbolic links. If this fails, you may still be able to create the symlinks manually via your host’s control panel. Consult your host as necessary.
 
 ## Installing Textpattern
@@ -57,14 +57,14 @@ Follow these instructions for each new site in your multi-site installation:
 
 1. Go into the `sites` directory and duplicate the entire `site1` directory. Rename the copy to match your site, e.g. `mydomain` (avoid spaces or special characters).
 2. Create a new MySQL database as per your web host’s instructions and note its associated username and password credentials. If you are using a single MySQL database for several sites, choose an unused prefix for this site.
-3. In your web host’s control panel, setup a subdomain `www.mydomain.com` and set its document root to the `/sites/mydomain/public/` directory. If you prefer, you can use another subdomain instead of www, e.g. `dev`, `beta`, `v2`, etc. This will be the URL your website visitors will use.
-4. In your web host’s control panel, setup the subdomain `admin.mydomain.com` and set its document root to the `/sites/mydomain/admin/` directory. If you prefer, you can use another subdomain instead of admin, e.g. `edit`, `login`, `manage`, etc. This will be the URL your website content managers or editors will use and replaces the regular */textpattern* login address.
-5. Open a web browser and go to `admin.mydomain.com/setup/`. If you chose another subdomain in step 4, enter that manually in place of *admin* in the web address.
+3. In your web host’s control panel, setup a subdomain `www.example.com` and set its document root to the `/sites/mydomain/public/` directory. If you prefer, you can use another subdomain instead of www, e.g. `dev`, `beta`, `v2`, etc. This will be the URL your website visitors will use.
+4. In your web host’s control panel, setup the subdomain `admin.example.com` and set its document root to the `/sites/mydomain/admin/` directory. If you prefer, you can use another subdomain instead of admin, e.g. `edit`, `login`, `manage`, etc. This will be the URL your website content managers or editors will use and replaces the regular */textpattern* login address.
+5. Open a web browser and go to `admin.example.com/setup/`. If you chose another subdomain in step 4, enter that manually in place of *admin* in the web address.
 6. Follow the instructions in the web browser. The setup routine follows the same procedure as a [regular Textpattern installation](https://docs.textpattern.io/installation/#setup-and-configuration) but asks for two pieces of additional information:
-  * **Admin subdomain**: This should be the subdomain you chose above in step 4, e.g. `admin.mydomain.com`.
-  * **Cookie domain**: This is usually the main domain name, e.g. `mydomain.com`.
+  * **Admin subdomain**: This should be the subdomain you chose above in step 4, e.g. `admin.example.com`.
+  * **Cookie domain**: This is usually the main domain name, e.g. `example.com`.
   * Reminder: If you chose a database prefix and are using one database for several Textpattern installations, remember to enter it during configuration.
-  * On Stage 3 of the configuration, enter the URL of your site, which is the subdomain you chose above in step 3, e.g. `www.mydomain.com`.
+  * On Stage 3 of the configuration, enter the URL of your site, which is the subdomain you chose above in step 3, e.g. `www.example.com`.
 
 ### Repairing symlinks
 
@@ -142,7 +142,7 @@ To reconnect the symlinks of a multi-site to a different textpattern directory, 
 
 * Copy the `setup` folder from your Textpattern `sites/site1/admin/setup` directory into your respective site’s `mydomain/admin` directory.
 * In the `mydomain/admin` directory, delete the `vendors` symlink.
-* Open a web browser and go to `admin.mydomain.com/setup/`.
+* Open a web browser and go to `admin.example.com/setup/`.
 * The installer will tell you it cannot find Textpattern and ask you to specify your *Textpattern root directory*. Enter the path to the (new) version of Textpattern you want and click 'Proceed'. The installer will recreate the correct symlinks and your site will be linked to the respective version of Textpattern.
 * Abort the installation process at this point and delete the `admin/setup` directory.
 * Visit your site to update your site to the other version of Textpattern.
