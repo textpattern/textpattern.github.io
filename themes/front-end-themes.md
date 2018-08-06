@@ -111,6 +111,11 @@ The _styles_ optional directory should contain stylesheets as `.css` files.
 A `default` essential stylesheet should be created; it will be created as an empty stylesheet on import if missing.  
 If this directory is missing, an empty essential stylesheet (`default`) will be created on the first import while on update, styles import will be skipped.
 
-## Exporting/importing (sharing) front-end themes  (Work in progress)
+## Exporting/importing (sharing) front-end themes (work in progress)
 
 (A forthcoming explanation or links to external community tutorials)
+
+## Removing/deleting front-end themes
+
+Themes can be removed from the themes panel, and the associated files can be deleted as needed.  
+Note that if a theme is selected for deletion and the files are to be removed, theme directories with non-standard subdirectories(e.g. `styles/sass`) will require manual deletion. This is intended as a safety precaution.
