@@ -10,7 +10,7 @@ description: Admin-side themes allow Textpattern administrators (and publishers)
 
 The steps for creating and using admin-side themes is still the same as they were prior to Textpattern 4.7.
 
-You could create an admin-side theme from scratch, but we strongly recommend you create one by duplicating an existing core theme instead then modifiy your copy as desired, especially  if it’s your first admin-side theme attempt. 
+You could create an admin-side theme from scratch, but we strongly recommend you create one by duplicating an existing core theme instead then modifiy your copy as desired, especially  if it’s your first admin-side theme attempt.
 
 Core themes are maintained and reflect the latest markup per stable release of Textpattern, thus by duplicating a core theme you ensure your own theme markup is current too.
 
@@ -18,39 +18,39 @@ Core themes are maintained and reflect the latest markup per stable release of T
 
 **Step 1:**
 
-In your Textpattern installation, browse the the _/textpattern/admin-themes_ directory. You’ll see three core theme folders already there:
+In your Textpattern installation, browse the _/textpattern/admin-themes_ directory. You’ll see three core theme directories already there:
 
 * classic
 * hive
 * hiveneutral
 
-A given admin-side theme folder has the following contents:
+A given admin-side theme directory has the following contents:
 
-* _assets_ (folder)
-	* _css_ (folder for stylesheet files)
-	* _img_ (folder for image files)
-	* _js_ (folder for JavaScript files)
-* _themename.php_ (where file name is the theme folder name)
+* _assets_ (directory)
+	* _css_ (directory for stylesheet files)
+	* _img_ (directory for image files)
+	* _js_ (directory for JavaScript files)
+* _themename.php_ (where file name is the theme directory name)
 * _manifest.json_
 * _ReadMe.txt_
 * _screenshot.png_ (screenshot of the theme)
 
-The child folders of the _assets_ folder may vary, but it will likely include the _css_ and _img_ folders at the very least. You may not even use images in your own theme, in which case you cold remove that folder too.
+The child directories of the _assets_ directory may vary, but it will likely include the _css_ and _img_ directories at the very least. You may not even use images in your own theme, in which case you could remove that directory too.
 
 **Step 2:**
 
-Pick one of the core theme folders and duplicate it by whatever method you prefer. Often there is a *Duplicate* feature in your file manager’s right menu options. Using that will provide you with a duplicate folder called _theme copy_. So if you duplicated the _classic_ theme folder, you’d have _classic copy_.
+Pick one of the core theme directories and duplicate it by whatever method you prefer. Often there is a *Duplicate* feature in your file manager’s right menu options. Using that will provide you with a duplicate directory called _theme copy_. So if you duplicated the _classic_ theme directory, you’d have _classic copy_.
 
 **Step 3:**
 
-Rename your copy folder to whatever theme name you want, but don’t try to be overly clever. The name must not have any blank spaces, and hyphens should be the only non-alphanumeric character. For example:
+Rename your copy directory to whatever theme name you want, but don’t try to be overly clever. The name must not have any blank spaces, and hyphens should be the only non-alphanumeric character. For example:
 
 * _mytheme_
 * _my-theme_
 
-Whatever you rename your duplicated folder, use the same name to rename the .php file inside of it (e.g. _mytheme.php_).
+Whatever you rename your duplicated directory, use the same name to rename the .php file inside of it (e.g. _mytheme.php_).
 
-Leave all other folder and file names alone. You will simply edit their contents, if necessary, not their names.
+Leave all other directory and file names alone. You will simply edit their contents, if necessary, not their names.
 
 You can delete the _screenshot.png_ file or replace it with your own theme image later. Whatever.
 
@@ -64,11 +64,11 @@ Now, as you normally would when designing a website presentation, edit your new 
 
 By having selected the theme in step 4, you easily see the changes reflected in the admin-side as you work.
 
-Also, by keeping everything contained in the theme folder, you can easily switch back to one of the core themes should you need a break from your own lovely work. ;)
+Also, by keeping everything contained in the theme directory, you can easily switch back to one of the core themes should you need a break from your own lovely work. ;)
 
 ## Future admin-side themes
 
-In the future, if you create another admin-side theme, you can  duplicate your own initial theme, or really start from scratch (a blank slate). Either way, you’ll be better informed to succeed having initially understood the process from a core example. 
+In the future, if you create another admin-side theme, you can  duplicate your own initial theme, or really start from scratch (a blank slate). Either way, you’ll be better informed to succeed having initially understood the process from a core example.
 
 ## Resources for the deep-divers
 
