@@ -197,7 +197,7 @@ To improve the ability to scan pages as described above, write as concisely as y
 
 ## User-interface content
 
-Follows these when writing about Textpattern UIs, which has implications for plugin authors too.[^1]
+Follow these when writing about Textpattern UIs, which has implications for plugin authors too.[^1]
 
 * Use "*administration side*" correctly when used as an _adjective_ versus a _noun_:
 ** *noun* form (no hyphen is used): E.g.: "The login to the administration side is located at __/textpattern__." (Write "administration" out fully to distinguish the place from a person ("admin")
@@ -214,6 +214,10 @@ Follows these when writing about Textpattern UIs, which has implications for plu
 fn1. Plugin authors must follow the same editorial rules in their "plugin help files":https://docs.textpattern.io/development/plugin-template-help.
 
 fn2. There are four CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type: %(information)information%, %(success)success%, %(warning)warning%, and %(error)error%.
+
+## Other considerations
+
+* All links within the documentation should be full URLs, for example http://docs.textpattern.io/tags/article-custom. This will allow for easier reuse of documentation text within other projects (such as an e-book or pophelp files).
 
 ## Style and tone
 
