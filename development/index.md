@@ -27,8 +27,6 @@ On this page:
   * [Removing admin-side panel elements](#removing-admin-side-panel-elements)
 * [Plugin lifecycle management and preferences](#plugin-lifecycle-management-and-preferences)
 * [Variables, classes and constants](#variables-classes-and-constants)
-* [Full plugin tutorials](#full-plugin-tutorials)
-* [Implementation resources](#implementation-resources)
 * [Getting help](#getting-help)
 * [External reading](#external-reading)
 
