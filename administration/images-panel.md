@@ -35,7 +35,7 @@ So the Images panel in a way combines what for articles is divided in two panels
 
 ## Upload images
 
-The first tool at the top of the panel is the *upload* area. Labeled 'Upload image' you will find a field for entering a path to the image. On its right side there is a 'Browse...'-button which (as well as selecting the field itself) will open a pop-up-window containing your file manager's tools to locate an image file for upload.
+The first tool at the top of the panel is the *upload* area. Labeled 'Upload image' you will find a field for entering a path to the image. On its right side there is a 'Browse…'-button which (as well as selecting the field itself) will open a pop-up-window containing your file manager's tools to locate an image file for upload.
 
 When you have marked an image and put its path into the upload field by selecting 'open' (or 'OK'), you can start uploading by selecting 'Upload'.
 
@@ -95,7 +95,7 @@ Beneath the upload and search area there is the table, or list, of existing imag
 
 In the first column you will find a checkbox for each image. Here you can select images you want to change in a bulk manner. You can mark images by checking the checkbox or you can use the checkbox in the head bar of the list to mark all images on that page.
 
-For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
+For performing changes now you go to the drop-down list 'With selected…' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 
 ## Pages and images listed per page
 

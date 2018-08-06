@@ -29,7 +29,7 @@ If used as a *container* tag, the result of the contained statements are assigne
 
 ~~~ html
 <txp:variable>
-    ...contained statements...
+    …contained statements…
 </txp:variable>
 ~~~
 
@@ -77,7 +77,7 @@ Later down the Page template or in a separate Form template you can read the att
 
 ~~~ html
 <txp:if_variable name="homepage" value="1">
-    ...homepage content...
+    …homepage content…
 </txp:if_variable>
 ~~~
 
@@ -85,7 +85,7 @@ Other tags used: [else](else), [if_category](if_category), [if_search](if_search
 
 ### Example 2: Use any tag's value as a conditional expression
 
-There are two parts to making this work. First a variable is created that stores the output of any tag as the `value` (the `name` is arbitrary)...
+There are two parts to making this work. First a variable is created that stores the output of any tag as the `value` (the `name` is arbitrary)…
 
 ~~~ html
 <txp:variable name="foo" value='<txp:permlink />' />
@@ -98,7 +98,7 @@ The variable 'foo' can then be used as a conditional later in the code.
 
 ~~~ html
 <txp:if_variable name="foo" value="example.com/bar/baz">
-    ...do this...
+    …do this…
 </txp:if_variable>
 ~~~
 

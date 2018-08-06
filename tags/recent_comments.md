@@ -31,7 +31,7 @@ If used as a container, the tag must be specified as an opening and closing pair
 
 ~~~ html
 <txp:recent_comments>
-    ...contained statements...
+    …contained statements…
 </txp:recent_comments>
 ~~~
 

@@ -60,10 +60,10 @@ Will output:
 : Strips all HTML tags and comments from the content leaving you with just the text/data of the content.
 
 `escape="some-tag"`
-: Strip any self-closing `<some-tag />`, or unwrap any container `<some-tag>...</some-tag>` in the content.
+: Strip any self-closing `<some-tag />`, or unwrap any container `<some-tag>…</some-tag>` in the content.
 
 `escape="tidy, some-tag"`
-: Remove spaces/newlines, escape any regex characters, then strip any self-closing `<some-tag />`, or unwrap any container `<some-tag>...</some-tag>` in the content.
+: Remove spaces/newlines, escape any regex characters, then strip any self-closing `<some-tag />`, or unwrap any container `<some-tag>…</some-tag>` in the content.
 
 ## Examples
 

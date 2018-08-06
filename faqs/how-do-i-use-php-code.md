@@ -4,7 +4,7 @@ You can use PHP code in a Textpattern page template or form like this:
 
 bc. <txp:php>echo 'Hello world'; </txp:php>
 
-Make sure you use @<txp:php>@ ... @</txp:php>@ instead of @<?php ... ?>@ or @<? ... ?>@.
+Make sure you use @<txp:php>@ … @</txp:php>@ instead of @<?php … ?>@ or @<? … ?>@.
 
 There is an Advanced Preference that can be used to disable PHP code.
 
@@ -45,7 +45,7 @@ echo $foo;
 
 h4. Escaping to XHTML
 
-While you can use multiple PHP blocks on a single page, each @<txp:php>...</txp:php>@ block must be a valid block of code by itself. This means you can't escape from PHP to HTML and back like you can with @<?php ... ?>@. This *will not work*:
+While you can use multiple PHP blocks on a single page, each @<txp:php>…</txp:php>@ block must be a valid block of code by itself. This means you can't escape from PHP to HTML and back like you can with @<?php … ?>@. This *will not work*:
 
 bc. <txp:php>if ($something) {</txp:php>
 foo
@@ -67,7 +67,7 @@ If you've followed the recommendations above and set *Production Status* to *Deb
 
 For other problems, the most effective debugging technique is also the simplest: good old fashioned debug printing. Use PHP functions like @print()@, @var_dump()@ and @var_export()@ to display important data at key points in your code.
 
-Textpattern provides a handy function called @dmp()@ that will display a message or array surrounded by @<pre>...</pre>@ tags for easy viewing. For example:
+Textpattern provides a handy function called @dmp()@ that will display a message or array surrounded by @<pre>…</pre>@ tags for easy viewing. For example:
 
 bc.. <txp:php>
 dmp('My php code');

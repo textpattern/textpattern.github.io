@@ -29,7 +29,7 @@ If used as a *container* tag, it must be specified as an opening and closing pai
 
 ~~~ html
 <txp:images>
-    ...contained statements...
+    …contained statements…
 </txp:images>
 ~~~
 
@@ -325,7 +325,7 @@ You can use the `offset` attribute to slice up your [article_image](article_imag
 </txp:images>
 ~~~
 
-And then later on you could drop in...
+And then later on you could drop in…
 
 ~~~ html
 <txp:images offset="1" limit="3" wraptag="div" class="gallery">
@@ -333,7 +333,7 @@ And then later on you could drop in...
 </txp:images>
 ~~~
 
-...to display the three remaining supporting images as thumbnails in a gallery, all taken from the Article Image field.
+…to display the three remaining supporting images as thumbnails in a gallery, all taken from the Article Image field.
 
 Other tags used: [article_image](article_image), [thumbnail](thumbnail).
 

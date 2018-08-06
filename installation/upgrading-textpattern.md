@@ -84,7 +84,7 @@ Open a web browser and visit the admin-side location (usually `example.org/textp
 
 When Textpattern updates, you will be taken by default to the [Languages panel](https://docs.textpattern.io/administration/languages-panel). Once there, update your chosen language files as necessary (highlighted). Then go to the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) and troubleshoot any noted issues.
 
-Some notices are not always problems, *per se*, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) to see if it's documented, if that doesn't help, ask in the ['How do I...? and other questions' forum](https://forum.textpattern.io/).
+Some notices are not always problems, *per se*, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) to see if it's documented, if that doesn't help, ask in the ['How do I…? and other questions' forum](https://forum.textpattern.io/).
 
 ## Remove unnecessary files
 

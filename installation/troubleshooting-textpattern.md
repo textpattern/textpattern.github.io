@@ -47,9 +47,9 @@ Memory (*): 7644 kB
      16.28 |     0.41 | 	[Load: 'vendors/Txp.php']
      16.55 |     0.10 | 		[Load: 'vendors/Textpattern/Container/FactoryInterface.php']
      16.69 |          | 		[Class loaded: 'Txp']
-...
+…
      46.85 |   123.46 | [Loading plugins]
-...
+…
     176.02 |     0.40 | [SQL: SELECT page, css FROM txp_section WHERE name = 'default' LIMIT 1 ]
     176.43 |          | [Rows: 1]
     176.59 |     0.02 | [Callback_event: 'pretext_end', step='', pre='0']
@@ -68,7 +68,7 @@ Memory (*): 7644 kB
     178.76 |     0.21 | 	[SQL: SELECT css FROM txp_section WHERE name='default' ]
     178.98 |          | 	[Rows: 1]
     179.01 |     0.01 | 	[Callback_event: 'sanitize_for_url', step='', pre='0']
-...
+…
     195.21 |     0.02 | 	<txp:if_first_article>
     195.22 |          | 		[false]
     195.23 |          | 	</txp:if_first_article>
@@ -76,7 +76,7 @@ Memory (*): 7644 kB
 *   195.28 |     0.10 | 		<txp:title />
     195.41 |          | 	</txp:permlink>
     195.41 |     0.05 | 	<txp:posted format="%Y-%m-%d" />
-...
+…
     198.59 |          | [ ~~~ secondpass ~~~ ]
     198.65 |     0.02 | [Callback_event: 'textpattern_end', step='', pre='0']
 -->
@@ -94,7 +94,7 @@ Duration | Query
     1.62 | [SQL: SELECT COUNT(*) FROM textpattern WHERE 1 = 1 AND Status = 4 AND Posted <= from_unixtime(1591515914) ]
     0.74 | [SQL: SELECT *, UNIX_TIMESTAMP(Posted) AS uPosted, UNIX_TIMESTAMP(Expires) AS uExpires, UNIX_TIMESTAMP(LastMod) AS uLastMod FROM textpattern WHERE 1 = 1 AND Status = 4 AND Posted <= from_unixtime(1591515914) ORDER BY Posted DESC LIMIT 0, 10 ]
     0.47 | [SQL: SELECT Form FROM txp_form WHERE name = 'article_listing' ]
-...
+…
 -->
 ~~~
 
@@ -168,7 +168,7 @@ If you see a completely white screen when viewing a website page, it usually mea
 
 It's always a good idea to use Testing mode when editing templates and forms. Switch to Live mode only when you're certain everything works. Debugging mode is intended only for developers; it's normal to see some spurious messages in this mode, but it ma also be useful to diagnose particularly troublesome aspects of your page layout.
 
-If you're still seeing a blank page even in Testing mode, the most likely cause is a syntax error in one of your `<txp:...>` tags. In Debugging mode, the Textpattern parser will try to inform you of any such misconfiguration to help you quickly find the problem.
+If you're still seeing a blank page even in Testing mode, the most likely cause is a syntax error in one of your `<txp:…>` tags. In Debugging mode, the Textpattern parser will try to inform you of any such misconfiguration to help you quickly find the problem.
 
 ## Feed issues
 

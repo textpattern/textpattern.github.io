@@ -95,10 +95,10 @@ function getData(indexVar) {
       }
     })
     .fail( function() {
-      console.log('get json failed...');
+      console.log('get json failed…');
     })
     .always( function() {
-      console.log('finally...');
+      console.log('finally…');
     });
 }
 

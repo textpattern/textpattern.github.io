@@ -14,7 +14,7 @@ The approach outlined below starts from a blank slate and adds pieces one at a t
 
 On this page:
 
-* [Ready, set... go!](#ready-set-go)
+* [Ready, set… go!](#ready-set-go)
 * [Site pages and page templates](#site-pages-and-page-templates)
 * [Textpattern tags](#textpattern-tags)
 * [Articles and sections](#articles-and-sections)
@@ -33,7 +33,7 @@ On this page:
 * [Extending the structure](#extending-the-structure)
 * [Learning more](#learning-more)
 
-## Ready, set... go!
+## Ready, set… go!
 
 Start from a new Textpattern installation. If you just want to test things out, you could even use [the Textpattern demo](https://textpattern.com/demo), keeping in mind that you might be sharing it with other users, and that the demo gets wiped clean every few hours.
 
@@ -51,19 +51,19 @@ Close the HTML source view; then get a new, clean, HTML file from your HTML edit
 
 Clearly the home page of our new Textpattern site is simply the page template `default` (plus status info). Let's add another page to the site.
 
-Back in the [Pages panel](https://docs.textpattern.io/administration/pages-panel), enter a page name `page2` and use the 'Duplicate' link again. You now have two identical page templates: `default` and `page2`. Add links to each page: in the “page2” template add...
+Back in the [Pages panel](https://docs.textpattern.io/administration/pages-panel), enter a page name `page2` and use the 'Duplicate' link again. You now have two identical page templates: `default` and `page2`. Add links to each page: in the “page2” template add…
 
 ~~~ html
 <a href="./">Home</a>
 ~~~
 
-...somewhere in the `<body>` and save. Now open the `default` page template by selecting its link in the list, and add...
+…somewhere in the `<body>` and save. Now open the `default` page template by selecting its link in the list, and add…
 
 ~~~ html
 <a href="./?s=page2">Page 2</a>
 ~~~
 
-...somewhere in the `<body>` and save.
+…somewhere in the `<body>` and save.
 
 There's one more task before we can see the new page. Switch to the [Sections panel](https://docs.textpattern.io/administration/sections-panel), and create and edit a new section called `page2`. In the 'Uses page' dropdown for this section, select `page2` and then press 'Save'.
 
@@ -77,13 +77,13 @@ In a traditional, static website, there's an HTML file for every page. You might
 
 We turn our static page templates into functional ones by adding [Textpattern tags](https://docs.textpattern.io/tags/tag-basics/), which are placeholders for dynamic content.
 
-Return to the [Pages panel](https://docs.textpattern.io/administration/pages-panel) and to the `default` template. Delete the anchor to Page 2 we added earlier; in its place enter...
+Return to the [Pages panel](https://docs.textpattern.io/administration/pages-panel) and to the `default` template. Delete the anchor to Page 2 we added earlier; in its place enter…
 
 ~~~ html
 <txp:section_list />
 ~~~
 
-...and resave the template.
+…and resave the template.
 
 Before looking at the results, go to the [Sections panel](https://docs.textpattern.io/administration/sections-panel). Find the `articles` section, edit it and change its 'Uses page' setting to `default`, then press the 'Save' button for this section. Do the same for your `page2` section: change its 'Uses page' setting to `default`. While you're here, change its 'Section title' to `Page 2`. Save your changes.
 
@@ -103,7 +103,7 @@ Our three pages are still identical, other than the URL, so let's add some conte
 </txp:article>
 ~~~
 
-Look at the results on the live site. Check all three links. Note how the home and Articles pages now have 'Welcome to Your Site!' below the section links. Look at the page source; the new line is in `<h2>...</h2>` tags. That is, the `<txp:title />` tag you added to the template has been replaced by an article title ('Welcome to your site' is a sample article included in the initial installation).
+Look at the results on the live site. Check all three links. Note how the home and Articles pages now have 'Welcome to Your Site!' below the section links. Look at the page source; the new line is in `<h2>…</h2>` tags. That is, the `<txp:title />` tag you added to the template has been replaced by an article title ('Welcome to your site' is a sample article included in the initial installation).
 
 ## Articles and sections
 
@@ -193,21 +193,21 @@ Textpattern forms (see [Form templates](https://docs.textpattern.io/themes/form-
 
 ### Article forms
 
-A special Textpattern form type is the **article form**. In our template we have been using `<txp:article>` as a container tag (see [self-closed versus container tags](https://docs.textpattern.io/tags/tag-basics/self-closed-versus-container-tags)), and it's starting to get unwieldy. We would gain a lot of flexibility (and also tidy up the default template) by putting the tags in our...
+A special Textpattern form type is the **article form**. In our template we have been using `<txp:article>` as a container tag (see [self-closed versus container tags](https://docs.textpattern.io/tags/tag-basics/self-closed-versus-container-tags)), and it's starting to get unwieldy. We would gain a lot of flexibility (and also tidy up the default template) by putting the tags in our…
 
 ~~~ html
 <txp:article>
-   ...contained code...
+   …contained code…
 </txp:article>
 ~~~
 
-...container into a form template instead. Then we use...
+…container into a form template instead. Then we use…
 
 ~~~ html
 <txp:article />
 ~~~
 
-...as a self-closing tag and call the form. If you don't specify an attribute `form` when using `<txp:article />` this way, it generally uses the 'default' article form. The exception is search results, in which context `<txp:article />` looks for a form called 'search_results'.
+…as a self-closing tag and call the form. If you don't specify an attribute `form` when using `<txp:article />` this way, it generally uses the 'default' article form. The exception is search results, in which context `<txp:article />` looks for a form called 'search_results'.
 
 Go to the [Forms panel](https://docs.textpattern.io/administration/forms-panel). We're going to overwrite the 'default' and 'search_results' form templates, so if you want to keep the originals copy each of them and make new form templates to hold the backups.
 
@@ -260,13 +260,13 @@ Remove the `include_default` attribute from `<txp:section_list />` tag, because 
 
 ### CSS
 
-Add...
+Add…
 
 ~~~ html
 `<txp:css format="link" />`
 ~~~
 
-...to the `<head>` region. Your site now has CSS. See the [Styles panel](https://docs.textpattern.io/administration/styles-panel) to edit the stylesheet. In the [Sections panel](https://docs.textpattern.io/administration/sections-panel), note that each section is associated with one of these name stylesheets, allowing you to set section-specific styles.
+…to the `<head>` region. Your site now has CSS. See the [Styles panel](https://docs.textpattern.io/administration/styles-panel) to edit the stylesheet. In the [Sections panel](https://docs.textpattern.io/administration/sections-panel), note that each section is associated with one of these name stylesheets, allowing you to set section-specific styles.
 
 ### Conditional headers
 

@@ -220,7 +220,7 @@ This setting only has an effect when 'Attach titles to permalinks?' above is set
 
 When an article is published, its URL is generated from the article title unless a specific URL is provided in in the 'URL-only title' field on the [Write panel](https://docs.textpattern.io/administration/write-panel#url-only-title).
 
-Take the following example article title: "Ann and Bob eat cake"...
+Take the following example article title: "Ann and Bob eat cake"…
 
 When the 'Permalink title URL pattern' option is set to 'Hyphenated (title-like-this)', the URL for the article would be:
 
@@ -260,7 +260,7 @@ This setting only has an effect when [Logging](#logging) is turned on. Using DNS
 
 ### Enable short tag support?
 
-<span class="success">**New v4.7.0**</span>. Textpattern tags take the form `<txp:tag_name attribute1="value" ... />`. It is possible to reduce the amount of typing involved by enabling a shorthand notation whereby the `txp:` may be omitted by following a few simple guidelines. See [Short tags and macros/shortcodes](https://docs.textpattern.io/tags/tag-basics/short-tags-macros-shortcodes) for more information.
+<span class="success">**New v4.7.0**</span>. Textpattern tags take the form `<txp:tag_name attribute1="value" … />`. It is possible to reduce the amount of typing involved by enabling a shorthand notation whereby the `txp:` may be omitted by following a few simple guidelines. See [Short tags and macros/shortcodes](https://docs.textpattern.io/tags/tag-basics/short-tags-macros-shortcodes) for more information.
 
 **Note** that setting this preference in no way affects the ability to use `<txp:output_form />` short codes to render form snippets. You can still use `<txp::shortcode />`, which will be interpreted as `<txp:output_form form="shortcode" />`.
 

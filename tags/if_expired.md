@@ -24,11 +24,11 @@ On this page:
 <txp:if_expired>
 ~~~
 
-The **if_expired** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_expired** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_expired>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_expired>
 ~~~
 

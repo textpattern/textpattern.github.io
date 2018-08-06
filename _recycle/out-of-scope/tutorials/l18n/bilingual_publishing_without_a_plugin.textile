@@ -137,11 +137,11 @@ tags. LANGCODE is one of the ISO languages codes like de, en, fr.
 &lt;txp:output_form form=&quot;accept-language&quot; /&gt;
 &lt;txp:if_variable name=&quot;accept-language&quot; value=&quot;de&quot;&gt;
 
-German content goes here...
+German content goes here…
 
 &lt;txp:else /&gt;
 
-Non-german content goes here...
+Non-german content goes here…
 
 &lt;/txp:if_variable&gt;
 </pre>

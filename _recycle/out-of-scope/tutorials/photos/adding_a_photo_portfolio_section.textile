@@ -6,11 +6,11 @@ h3(sectionedit1#the_process). The Process
 
 h4(#step_1). Step 1
 
-The first step is to create a Portfolio section in the admin area..._presentation &gt; sections_. You may name the section whatever you'd like, but for our purposes here we'll simply call it “portfolio”. Be sure to add the appropriate files to your server and edit your .htaccess file if using clean URLs.
+The first step is to create a Portfolio section in the admin area…_presentation &gt; sections_. You may name the section whatever you'd like, but for our purposes here we'll simply call it “portfolio”. Be sure to add the appropriate files to your server and edit your .htaccess file if using clean URLs.
 
 h4(#step_2). Step 2
 
-The second step is to create a page template for the Portfolio in the admin area..._presentation &gt; pages_. You may copy an existing page template if you wish, or start from scratch. Save the page as “folio”. You should see it added to the list of pages to the right of the editing window.
+The second step is to create a page template for the Portfolio in the admin area…_presentation &gt; pages_. You may copy an existing page template if you wish, or start from scratch. Save the page as “folio”. You should see it added to the list of pages to the right of the editing window.
 
 Before continuing, go back to the sections tab, _presentation &gt; sections_, and find the option for the “portfolio” section labeled “uses page”. Use the dropdown menu to select “folio” and hit SAVE.
 
@@ -20,7 +20,7 @@ The third step is to create thumbnails for all of the artwork or photos that wil
 
 h4(#step_4). Step 4
 
-The fourth step is to write the articles for the Portfolio section in the admin area..._content &gt; write_. The article body field may have an
+The fourth step is to write the articles for the Portfolio section in the admin area…_content &gt; write_. The article body field may have an
 
 bc. <img src="" />
 

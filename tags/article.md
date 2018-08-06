@@ -29,7 +29,7 @@ It may be used as a *container* tag, in which case it must be specified as an op
 
 ~~~ html
 <txp:article>
-    ...contained statements...
+    …contained statements…
 </txp:article>
 ~~~
 

@@ -79,7 +79,7 @@ In the first column you will find a checkbox for each theme. Here you can select
 
 In order to quickly select ranges of themes select the checkbox of the first theme you want to mark, press and hold the shift key, then select the checkbox of the last theme in the range. All themes between will be checked too. You can add ranges to your selection by repeating these steps.
 
-For performing changes now you go to the drop-down list 'With selected...' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
+For performing changes now you go to the drop-down list 'With selected…' and choose the function you want to perform. After selecting the options you want to perform press 'Go' to start the changes.
 
 ## Pages and themes listed per page
 

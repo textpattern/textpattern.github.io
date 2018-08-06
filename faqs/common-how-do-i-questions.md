@@ -4,7 +4,7 @@ Here are some quick answers to common "How Do I?" questions.
 
 h3. How Do I..
 
-h4. ...display something only on an individual article page?
+h4. …display something only on an individual article page?
 
 Surround it with an "txp:if_individual_article":http://textbook.textpattern.net/wiki/index.php?title=if_individual_article tag:
 
@@ -13,7 +13,7 @@ bc. <txp:if_individual_article>
 </txp:if_individual_article>
 
 
-h4. ...display something only on list (section/front) pages?
+h4. …display something only on list (section/front) pages?
 
 Surround it with an "txp:if_article_list":http://textbook.textpattern.net/wiki/index.php?title=if_article_list tag:
 
@@ -22,19 +22,19 @@ bc. <txp:if_article_list>
 </txp:if_article_list>
 
 
-h4. ...make an "About" page?
+h4. …make an "About" page?
 
 FAQ: "Managing Static Pages":https://textpattern.com/faq/31/how-do-i-manage-static-pages
 
 
-h4. ...make a reusable sidebar, header or footer?
+h4. …make a reusable sidebar, header or footer?
 
 With the "txp:output_form":http://textbook.textpattern.net/wiki/index.php?title=output_form tag.
 
 FAQ: "How do I reuse chunks of HTML?":https://textpattern.com/faq/32/how-do-i-reuse-chunks-of-html
 
 
-h4. ...show a list of recent articles or comments in a sidebar?
+h4. …show a list of recent articles or comments in a sidebar?
 
 With the "txp:recent_articles":http://textbook.textpattern.net/wiki/index.php?title=recent_articles or "txp:recent_comments":http://textbook.textpattern.net/wiki/index.php?title=recent_comments tags.
 
@@ -43,7 +43,7 @@ For more control over a list of recent articles, use "txp:article_custom":http:/
 FAQ: "How do I change the output of txp:recent_articles?":https://textpattern.com/faq/26/change-the-output-of-txp%3Arecent_articles
 
 
-h4. ...show a short list of articles or article links in a sidebar?
+h4. …show a short list of articles or article links in a sidebar?
 
 For simple lists, the recent_articles tag might do what you want (see above).
 
@@ -56,7 +56,7 @@ bc.. <h4><txp:permlink><txp:title /></txp:permlink></h4>
 p. Then use a tag like @<txp:article_custom limit="5" form="myformname" />@ in your sidebar.
 
 
-h4. ...show a short version of articles with a "read more.." link?
+h4. …show a short version of articles with a "read more.." link?
 
 Use something like this in your article form:
 
@@ -74,7 +74,7 @@ p. FAQ: "How do I show only an excerpt in article lists?":https://textpattern.co
 Excerpts automatically generated from the article body are possible through "plugins (Textpattern Resources: excerpts)":http://textpattern.org/categoryarchive/?c=excerpts.
 
 
-h4. ...break an article list into columns, or insert ads between certain articles in a list?
+h4. …break an article list into columns, or insert ads between certain articles in a list?
 
 Use the @limit@, @offset@ and @pageby@ attributes of "txp:article":http://textbook.textpattern.net/wiki/index.php?title=article:
 
@@ -87,7 +87,7 @@ bc.. <txp:article limit="3" pageby="10" />
 p. Textpattern CMS support forum: "txp:article pageby attribute":https://forum.textpattern.io/viewtopic.php?id=12481
 
 
-h4. ...supply a special layout to the first article on a page?
+h4. …supply a special layout to the first article on a page?
 
 Use the "txp:if_first_article":http://textbook.textpattern.net/wiki/index.php?title=if_first_article tag in your article form:
 
@@ -100,7 +100,7 @@ bc. <txp:if_first_article>
 </txp_if_first_article>
 
 
-h4. ...apply a special layout to articles from a particular section when shown on the front page?
+h4. …apply a special layout to articles from a particular section when shown on the front page?
 
 Use the "txp:if_article_section":http://textbook.textpattern.net/wiki/index.php?title=if_article_section tag in your article form:
 
@@ -115,7 +115,7 @@ bc.. <txp:if_article_section name="linklog">
 </txp:if_article_section>
 
 
-h4. ...apply a special layout to articles from a particular category?
+h4. …apply a special layout to articles from a particular category?
 
 Use the "txp:if_article_category":http://textbook.textpattern.net/wiki/index.php?title=if_article_category tag in your article form:
 
@@ -129,21 +129,21 @@ bc. <txp:if_article_category name="national">
 </txp:if_article_category>
 
 
-h4. ...show a unique intro paragraph on each section page?
+h4. …show a unique intro paragraph on each section page?
 
 Post a "Sticky" article in each section containing the paragraph for that section, and display it with a @<txp:article status="sticky" />@ tag.
 
 FAQ: "How do I keep a post at the top of the page?":https://textpattern.com/faq/84/how-do-i-keep-a-post-at-the-top-of-the-page
 
 
-h4. ...show the same intro paragraph on more than one section page?
+h4. …show the same intro paragraph on more than one section page?
 
 Post a "Sticky" article containing the text, and display it with the tag @<txp:article_custom id="123" />@, where @123@ is the ID number of the sticky article.  Enclose it with the @<txp:if_article_list>@ tag if necessary.
 
 FAQ: "How do I keep a post at the top of the page?":https://textpattern.com/faq/84/how-do-i-keep-a-post-at-the-top-of-the-page
 
 
-h4. ...show a unique banner image or similar on a particular section page?
+h4. …show a unique banner image or similar on a particular section page?
 
 If the page layout for each section is to be identical except for a small element, you should probably share the same page template between all sections, and use the "txp:if_section":http://textbook.textpattern.net/wiki/index.php?title=if_section tag to selectively display variations:
 
@@ -158,14 +158,14 @@ bc.. <txp:if_section name="weather">
 <!-- etc -->
 
 
-h4. ...add a stylesheet for printing?
+h4. …add a stylesheet for printing?
 
 Create a new style named "print", and add this to the @<head>@ portion of your page template:
 
 bc. <txp:css format="link" media="print" n="print" />
 
 
-h4. ...display a random article, or a link to a random article?
+h4. …display a random article, or a link to a random article?
 
 Put this in your page template:
 
@@ -178,7 +178,7 @@ bc.. <txp:permlink><txp:title /></txp:permlink>
 <txp:excerpt />
 
 
-h4. ...display articles in a different order?
+h4. …display articles in a different order?
 
 To sort by title in ascending alphabetical order:
 
@@ -197,7 +197,7 @@ To sort by a custom field[1]:
 bc. <txp:article sort="custom_3 asc" />
 
 
-h4. ...display "Top Stories" first, then regular articles?
+h4. …display "Top Stories" first, then regular articles?
 
 Use a custom field to identify your top stories, and use this tag in your page template:
 

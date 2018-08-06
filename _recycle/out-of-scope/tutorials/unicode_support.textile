@@ -55,17 +55,17 @@ bc. Charset (default/config)
 
 gives us two pieces of information - the first one *(default)* tells us which character-encoding the mysql-connection *would* use as a default. For some mysql-versions this will report the collation that is used for the connection, so if you see something like 'latin1_swedish_ci' don't be confused (swedish is the default collation of MySQL for latin1 character sets).
 
-The second one *config* reflects the configured charset in _config.php_. It is important to understand that this _config_ value will only set the encoding of the *connection* (using the mysql-command SET NAMES ...), therefore it must reflect the encoding of the tables in the database. You should *never* have to set or change this value manually (unless you are downgrading from post MySQL 4.1.x to MySQL 4.0 or older, which is described in its own section below) - this value is set automatically by Textpattern during initial installation according to the tables that are created. If the _config_ value is empty this likely means your initial installation of Textpattern was pre-1.0rc4, and you are using an upgraded version. In this case Textpattern falls back to using whichever defaults your system is set up to - For table creation as well as for the connection.
+The second one *config* reflects the configured charset in _config.php_. It is important to understand that this _config_ value will only set the encoding of the *connection* (using the mysql-command SET NAMES …), therefore it must reflect the encoding of the tables in the database. You should *never* have to set or change this value manually (unless you are downgrading from post MySQL 4.1.x to MySQL 4.0 or older, which is described in its own section below) - this value is set automatically by Textpattern during initial installation according to the tables that are created. If the _config_ value is empty this likely means your initial installation of Textpattern was pre-1.0rc4, and you are using an upgraded version. In this case Textpattern falls back to using whichever defaults your system is set up to - For table creation as well as for the connection.
 
-If you are using MySQL 4.0.x or 3.x, the lines will look like the following...
+If you are using MySQL 4.0.x or 3.x, the lines will look like the following…
 
 bc. character_set: latin1
-character_sets: latin1 big5 [...] win1251ukr win1251
+character_sets: latin1 big5 […] win1251ukr win1251
 
 
 Not much to see here. As explained Textpattern should be using _latin1_ for the database. Unicode is not available.
 
-For MySQL 4.1.x and above you should see something like...
+For MySQL 4.1.x and above you should see something like…
 
 bc. character_set_client: utf8
 character_set_connection: utf8

@@ -7,7 +7,7 @@ Outside of expensive enterprise content management systems, the ability to easil
 It's expected that the concept of multilingual publishing will have different interpretations; hence, there are two main objectives here:
 
 # Clearly define what multilingual publishing means.
-# Establish a clear plan of an ideal workflow in Textpattern, which might include such aids of reference as...
+# Establish a clear plan of an ideal workflow in Textpattern, which might include such aids of reference as…
 #* a written walkthrough,
 #* screenshots of the percieved admin interface (where applicable),
 #* and so forth.
@@ -29,7 +29,7 @@ Some requirements need to be settled. For starters:
 ** Throw an error “404 Not Found”
 ** Fall back on an alternate representation in a default languge with a status “302 Moved Temporarily” response
 
-* Is there a need for alternate versions of files and images, too? Consider pdf downloads, watermarks on images and the like...
+* Is there a need for alternate versions of files and images, too? Consider pdf downloads, watermarks on images and the like…
 
 h3(sectionedit4#scenario). Scenario
 

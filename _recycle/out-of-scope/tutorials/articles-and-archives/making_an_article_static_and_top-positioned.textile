@@ -103,7 +103,7 @@ bc. Admin panel > content > articles
 
 
 <p>). Each article you write in Textpattern is assigned an *id* number. If you go to your article list, and hover your mouse on one of the article titles, you will see the *id* number for that article in the status bar of your browser (</p>
-bc. ...mydomain.com/textpattern/index.php?event=article&step=edit&ID=3
+bc. …mydomain.com/textpattern/index.php?event=article&step=edit&ID=3
 
 
 <p>). Make a note of each article's *ID* number. In our example, the ID number is 3.</p></li>

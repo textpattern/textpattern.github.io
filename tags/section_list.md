@@ -29,7 +29,7 @@ The **section_list** tag is a *single* or *container* tag which is used to produ
 
 ~~~ html
 <txp:section_list>
-    ...contained statements...
+    …contained statements…
 </txp:section_list>
 ~~~
 

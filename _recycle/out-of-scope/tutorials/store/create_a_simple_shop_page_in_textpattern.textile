@@ -16,5 +16,5 @@ In the second example, you can click to see details/shop online which takes you 
 
 I will be using the first example as a basis for the tutorial.
 
-_Read the "full article":http://fuelyourcoding.com/create-a-simple-shop-page-in-textpattern/ ..._
+_Read the "full article":http://fuelyourcoding.com/create-a-simple-shop-page-in-textpattern/ …_
 

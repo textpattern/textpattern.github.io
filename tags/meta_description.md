@@ -105,7 +105,7 @@ Other tags used: [section_list](section_list), [section](section).
 <head>
     <txp:meta_description />
 </head>
-...
+…
 <h1>
     Section:
     <txp:section title="1" />

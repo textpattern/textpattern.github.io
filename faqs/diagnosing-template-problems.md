@@ -10,13 +10,13 @@ Set your Production Status to _Testing_ in *textpattern > admin > prefs*.  _Live
 
 If there is an error associated with a tag, the message should identify that tag.
 
-One common error to check for is @Warning: Missing argument 2 for ...@.  This usually indicates a @<txp:...>@ tag that hasn't been "closed properly":https://textpattern.com/faq/72/warning-missing-argument-2-for.
+One common error to check for is @Warning: Missing argument 2 for …@.  This usually indicates a @<txp:…>@ tag that hasn't been "closed properly":https://textpattern.com/faq/72/warning-missing-argument-2-for.
 
 If you see some other error message, search the "FAQ":/faq/ and "forum":https://forum.textpattern.io/ for more information, using the main keywords from the error message.
 
 h4(#syntaxerrors). Check for template syntax errors
 
-Some types of syntax errors in @<txp:...>@ tags will cause a silent error.  If your page is completely blank, or a large portion of it is empty, examine your template for XML syntax errors like the ones listed in "this FAQ entry":https://textpattern.com/faq/74/blank-page-after-editing-a-page-template
+Some types of syntax errors in @<txp:…>@ tags will cause a silent error.  If your page is completely blank, or a large portion of it is empty, examine your template for XML syntax errors like the ones listed in "this FAQ entry":https://textpattern.com/faq/74/blank-page-after-editing-a-page-template
 
 h4(#disable-plugins). Disable plugins
 
@@ -63,10 +63,10 @@ bq. @[Page: default]@
 @	[SQL (0.000112): select Form from `txp_form` where name` = 'plainlinks' limit 1]@
 @	[Form: plainlinks]@
 @	[SQL (0.000153): select * from txp_link where 1 order by linksort ]@
-@...@
+@…@
 
 Some things to check:
 
 * The lines @[Page: default]@ and @[Form: plainlinks]@ indicate that a particular _page template_ or _form_ has been loaded.  Make sure it's the right one.
-* Is the code in question shown in the tag trace at all?  If not, it might have been excluded by a conditional tag (@<txp:if_...>@).
+* Is the code in question shown in the tag trace at all?  If not, it might have been excluded by a conditional tag (@<txp:if_…>@).
 * If the problem code is in an _article form_, _link form_ or _comment form_, is it being loaded?  There might not be any articles/links/comments to display at all.  The SQL query for the preceeding tag might give you a hint.

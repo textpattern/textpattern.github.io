@@ -285,7 +285,7 @@ You are running a development version of Textpattern on a live server.
 
 Means you're installation version is a future development version, not the latest stable release. This would be okay for local testing, but not recommended for a live production site online.
 
-The following PHP functions (which may be necessary to run Textpattern) are disabled on your server...
+The following PHP functions (which may be necessary to run Textpattern) are disabled on your server…
 {: .alert-block .warning}
 
 If you see this message, it will be followed by a number of PHP functions that are disabled on your web server. Textpattern needs certain functions enabled to work correctly, while other functions, if disabled, can be ignored. See section below, [Diagnostic reporting on PHP functions](#diagnostic-reporting-on-php-functions), for more about which function are needed or not.
@@ -367,7 +367,7 @@ Textpattern requires certain PHP functions to be enabled for your website to wor
 
 Diagnostics can tell you if any of these necessary functions are disabled. You'll see this pre-flight check warning:
 
-The following PHP functions (which may be necessary to run Textpattern) are disabled on your server...
+The following PHP functions (which may be necessary to run Textpattern) are disabled on your server…
 {: .alert-block .warning}
 
 If so, compare the indicated functions with those in the table below to see if any match and thus need to be enabled.
@@ -442,7 +442,7 @@ These functions are *not* used by Textpattern.[^4] If diagnostics reports one or
 * `set_socket_blocking`
 * `shell_exec`
 * `show_source`
-* `socket_...` (i.e. `socket_bind`)
+* `socket_…` (i.e. `socket_bind`)
 * `symlink`
 * `syslog`
 * `system`

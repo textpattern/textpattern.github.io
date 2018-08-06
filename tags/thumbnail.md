@@ -23,9 +23,9 @@ On this page:
 <txp:thumbnail />
 ~~~
 
-The **thumbnail** tag is a *single* tag that Textpattern will replace with the `<img src="...">` HTML tag matching the thumbnail image of the numeric `id` assigned by Textpattern when the parent image was uploaded via the Textpattern [Images panel](https://docs.textpattern.io/administration/images-panel).
+The **thumbnail** tag is a *single* tag that Textpattern will replace with the `<img src="…">` HTML tag matching the thumbnail image of the numeric `id` assigned by Textpattern when the parent image was uploaded via the Textpattern [Images panel](https://docs.textpattern.io/administration/images-panel).
 
-By default, the tag is context-sensitive: if an `id` or `name` attribute is not specified, it can be used inside an [images](images) tag or form to output an `<img src="...">` HTML tag matching the thumbnail of the current image.
+By default, the tag is context-sensitive: if an `id` or `name` attribute is not specified, it can be used inside an [images](images) tag or form to output an `<img src="…">` HTML tag matching the thumbnail of the current image.
 
 ## Attributes
 

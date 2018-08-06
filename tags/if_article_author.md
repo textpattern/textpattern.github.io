@@ -23,11 +23,11 @@ On this page:
 <txp:if_article_author>
 ~~~
 
-The **if_article_author** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_article_author** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_article_author>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_article_author>
 ~~~
 

@@ -10,7 +10,7 @@ To display articles using a different form, change the @<txp:article />@ tag to 
 
 bq. @<txp:article form="myform" />@
 
-If no @form="..."@ attribute is specified, @<txp:article />@ will look for an article from named "default".
+If no @form="…"@ attribute is specified, @<txp:article />@ will look for an article from named "default".
 
 You can specify separate forms for list pages and individual article pages like this:
 

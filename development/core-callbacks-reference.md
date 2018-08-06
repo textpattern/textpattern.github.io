@@ -323,7 +323,7 @@ These callbacks allow you to alter the criteria used in the various panels. You 
 filtering.
 
 Note the criteria is *appended*, so existing search parameters are honoured. Therefore your returned statement should begin with
-`" AND ..."`. If you wish to ignore any previous filtering, begin `" AND 1 AND ..."`.
+`" AND …"`. If you wish to ignore any previous filtering, begin `" AND 1 AND …"`.
 
 The third argument to your callback function contains the current criteria used, so you may make decisions based on its contents (e.g. you may not want to filter the results if a search has been performed).
 

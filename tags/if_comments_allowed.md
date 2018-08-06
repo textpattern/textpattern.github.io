@@ -23,11 +23,11 @@ On this page:
 <txp:if_comments_allowed>
 ~~~
 
-The **if_comments_allowed** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_comments_allowed** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_comments_allowed>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_comments_allowed>
 ~~~
 

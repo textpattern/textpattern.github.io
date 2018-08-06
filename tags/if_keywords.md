@@ -23,11 +23,11 @@ On this page:
 <txp:if_keywords>
 ~~~
 
-The **if_keywords** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_keywords** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_keywords>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_keywords>
 ~~~
 
@@ -47,7 +47,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ~~~ html
 <head>
-    ....
+    ….
     <txp:if_individual_article>
         <txp:if_keywords>
             <txp:meta_keywords />
@@ -58,7 +58,7 @@ Tag will accept the following attributes (**case-sensitive**):
     <txp:else />
         <meta name="keywords" content="Apple, Orange, Pear, Foo, Bar" />
     </txp:if_individual_article>
-    ....
+    ….
 </head>
 ~~~
 

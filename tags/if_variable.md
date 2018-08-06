@@ -24,11 +24,11 @@ On this page:
 <txp:if_variable>
 ~~~
 
-The **if_variable** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_variable** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_variable>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_variable>
 ~~~
 

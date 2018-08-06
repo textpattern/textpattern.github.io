@@ -39,7 +39,7 @@ Installing a standard text (`.txt`) plugin goes something like this:
 5. Select the 'Install' button to finish installation and add plugin to the plugin list table.
 6. When ready, activate the plugin in the **Active** column in the plugin list table.
 
-Most of that is pretty straight forward, but let's touch upon steps 1, 2, and 4 a bit more...
+Most of that is pretty straight forward, but let's touch upon steps 1, 2, and 4 a bit more…
 
 ### Finding plugins
 
@@ -63,15 +63,15 @@ The plugin itself is a text (`.txt`) file. It usually has a header stating the n
 # URL: http://example.com/
 # Recommended load order: 5
 
-# .....................................................................
+# ……………………………………………………………
 # This is a plugin for Textpattern - https://textpattern.com/
 # To install: textpattern > admin > plugins
 # Paste the following text into the 'Install plugin' box:
-# .....................................................................
+# ……………………………………………………………
 
 YTo5OntzOjQ6Im5hbWUiO3M6Njoic21kX2lmIjtzOjY6ImF1dGhvciI7czoxMToiU3RlZiBE
 YXdzb24iO3M6MTA6ImF1dGhvcl91cmkiO3M6MjI6Imh0dHA6Ly9zdGVmZGF3c29uLmNvbS8i
-O3M6NzoidmVyc2lvbiI7czo0OiIw...
+O3M6NzoidmVyc2lvbiI7czo0OiIw…
 ~~~
 
 The Base-64 part on the bottom would normally be much longer, so be sure to copy the **entire** file when you really do go after one.
@@ -87,7 +87,7 @@ This will add the plugin record to the table, where you can then manage it.
 ### Plugin installation errors
 
 Sometimes large plugins can cause problems when you select the **Install
-button**, you might see the following error...
+button**, you might see the following error…
 
 Badly formed or empty plugin code.
 {: .alert-block .error}
@@ -97,7 +97,7 @@ This is usually resolved by obtaining and installing a compressed version of the
 ~~~
 H4sIAAAAAAAAA919a3PbRrbg56Rq/kOH8UTkDiWKkh+xJCtXsWWPZxXHa8meeyvjUoFEk8QY
 BGgAlKz1+L/vefULACk6dvZO3amJRTYa53SfPn3e3YwOHh58LA/uHnSyaK47h+XB/YNOOY8v
-k4l8iZbVLC/wy3B40Dmv9EQ9...
+k4l8iZbVLC/wy3B40Dmv9EQ9…
 ~~~
 
 You'll need gzip on your web server in order to install compressed plugins, but most web servers have it.

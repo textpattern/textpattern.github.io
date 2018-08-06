@@ -165,13 +165,13 @@ The template already includes the necessary [Textile](http://txstyle.org/). We a
 
 **Lists:**
 
-Ordered...
+Ordered…
 
     # A number list example
     # Item 2
     # Item 3
 
-Numbered...
+Numbered…
 
     * A bullet list example
     * Item 2
@@ -179,7 +179,7 @@ Numbered...
 
 **Code:**
 
-Inline code is noted by surrounding the code with 'commercial ats'...
+Inline code is noted by surrounding the code with 'commercial ats'…
 
     @<txp:tag_name />@
 
@@ -198,7 +198,7 @@ Or with `bc..` (note the double full-stops) if blank lines exist:
 
         }
 
-    # Yes, this...
+    # Yes, this…
     code_has('$some', '$bad', 'bugs=1')
 
 [^1]: Derived from [this forum discussion](https://forum.textpattern.io/viewtopic.php?id=25327).

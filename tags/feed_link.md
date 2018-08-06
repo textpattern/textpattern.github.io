@@ -138,7 +138,7 @@ li.ss-icon a {
 .twit:hover {
     /** design as you want **/
 }
-... etc ...
+… etc …
 li.email a:hover {
     /** design as you want **/
 }

@@ -73,7 +73,7 @@ Suppose you want to manage the `<head>` section of your page template as a singl
 </head>
 ~~~
 
-Then in each of your pages, you insert the header using...
+Then in each of your pages, you insert the header using…
 
 ~~~ html
 <txp:output_form form="head" />
@@ -85,7 +85,7 @@ or simply
 <txp::head />
 ~~~
 
-...which will add this `<head>` to all the pages automatically.
+…which will add this `<head>` to all the pages automatically.
 
 The advantage of this is that when you edit your page header, you can do so once in the form template and it will update all instances of use in your different pages at the same time.
 
@@ -130,13 +130,13 @@ Other tags used: [if_yield](if_yield), [posted](posted), [yield](yield).
 Suppose that the form of Example 3 is called `media video`. Then it can not be called using the shortcode format:
 
 ~~~ html
-<txp::media video width="" height="" ... />
+<txp::media video width="" height="" … />
 ~~~
 
 because the parser will see it as `<txp:output_form form="media" />`. The solution consists to call `<txp:output_form />` as usual:
 
 ~~~ html
-<txp:output_form form="media video" width="" height="" ... />
+<txp:output_form form="media video" width="" height="" … />
 ~~~
 
 ### Example 5: Using yield attribute
@@ -153,11 +153,11 @@ If we call:
 <txp::hello who="guest" wraptag="p" class="greeting" />
 ~~~
 
-three `<txp:yield />` stacks (i.e. `class, who, wraptag`) will be populated and ready for use inside the form. But the parser will detect that `<txp:yield name="class" />` and `<txp:yield name="wraptag" />` are not used and consider these attributes as global, wrapping the form output in `<p class="greeting">...</p>` HTML tag. This is fine, but suppose that later we decide to append to the greeting some `contact` form that uses `class` as local attribute:
+three `<txp:yield />` stacks (i.e. `class, who, wraptag`) will be populated and ready for use inside the form. But the parser will detect that `<txp:yield name="class" />` and `<txp:yield name="wraptag" />` are not used and consider these attributes as global, wrapping the form output in `<p class="greeting">…</p>` HTML tag. This is fine, but suppose that later we decide to append to the greeting some `contact` form that uses `class` as local attribute:
 
 ~~~ html
 <label class="<txp:yield name="class" />">Contact us</label>
-...
+…
 ~~~
 
 The new `hello` form is thus:

@@ -132,7 +132,7 @@ Attribute value parsing has no real limitations. Within a parsed attribute value
 * Use container tags (yes, even `<txp:php>`), self-closing tags and if/else constructs.
 * Even parse the attributes of tags inside an attribute to unlimited depth, provided you use proper attribute value quoting and escaping.
 
-## Nesting quotes in quotes in...
+## Nesting quotes in quotes in…
 
 Referring to the last point above, things can become 'a little hairy' if you want to insert a tag into an attribute of a tag that's already an attribute! But keep your wits about you and you can do things like this:
 

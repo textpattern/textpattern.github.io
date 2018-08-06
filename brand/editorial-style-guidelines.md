@@ -35,7 +35,7 @@ The perspective of documentation is that of an anonymous expert writing to the f
 
 bq. Manage your account data in the **Users** panel.
 
-Never use the first-person (I/we, me/us, my/our...).It's easy to forget and start using "we" and "us" as if you and the reader are labouring together. But don't do that. Take the second person stance and empower the reader. Make them feel like their doing it alone, because they are. You're just an impartial messenger delivering the instructions. Change "we" to "you", or "our" to "your".
+Never use the first-person (I/we, me/us, my/our…).It's easy to forget and start using "we" and "us" as if you and the reader are labouring together. But don't do that. Take the second person stance and empower the reader. Make them feel like their doing it alone, because they are. You're just an impartial messenger delivering the instructions. Change "we" to "you", or "our" to "your".
 
 For the most part you shouldn't need the third-person either (his, her, them, they). But there may be exceptions, such as when talking about the "roles and privileges":https://docs.textpattern.io/administration/user-roles-and-prvileges of other website users besides the administrator (who you're addressing).
 
@@ -141,7 +141,7 @@ In short, don't use them, with exception to the __Latin__ notes below. Stick wit
 
 **Latin:**
 
-You're not writing an academic paper, so don't use __Latin__, whether abbreviations or full words, except as follows...
+You're not writing an academic paper, so don't use __Latin__, whether abbreviations or full words, except as follows…
 
 You may use use "via" and "versus", which are now universally common, and you don't have to italicise them.
 
@@ -191,7 +191,7 @@ To improve the ability to scan pages as described above, write as concisely as y
 # Avoid passive 'to be' and 'to have' verb structures (e.g. could be/have, should be/have, might be/have). Passive writing is not only miserable to read, it bloats copy with unnecessary words. Find a more direct/active way of wording the phrase. For example, instead of "The widget should be at the top of the sidebar." say "Put the widget at top of the sidebar."
 # Avoid useless adverbs like "very", "really", "only" and many others. For example, "If you really want to do that." is better as "If you want to do that." A person either wants to or doesn't, adding "really" does't change anything.
 # Question every use of "that" and "just" in your copy. It's easy to abuse both words. Every time you use "that" or "just" in a sentence, read the sentence and see if it still makes sense without the word. Most of the time it will. If it does, it's probably correct to leave the words out.
-# Avoid over use of adverbs, idioms, and other partial clauses at the beginning of sentences: "Meanwhile, ...", "On the other hand, ...", "However, ...", "In other words, ...", "Nevertheless, ..." and so forth. This doesn't mean never use them, but if you're using them regularly, or more than once in a paragraph, then it's too much. Rewrite the sentences more concisely without the clause breaks.
+# Avoid over use of adverbs, idioms, and other partial clauses at the beginning of sentences: "Meanwhile, …", "On the other hand, …", "However, …", "In other words, …", "Nevertheless, …" and so forth. This doesn't mean never use them, but if you're using them regularly, or more than once in a paragraph, then it's too much. Rewrite the sentences more concisely without the clause breaks.
 # Remove words from your sentences until you can't remove anymore for the meaning to remain clear.
 # Break long, multi-clause sentences into shorter sentences. (Careful here, though, sometimes a single longer sentence can read more smoothly if it's free of needless word bloat. Multiple shorter sentences doesn't mean result in choppy stilted reading. Use your best judgement.)
 

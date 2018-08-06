@@ -25,11 +25,11 @@ On this page:
 <txp:if_first_link>
 ~~~
 
-The **if_first_link** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_first_link** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_first_link>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_first_link>
 ~~~
 

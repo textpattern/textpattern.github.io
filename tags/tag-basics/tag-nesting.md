@@ -33,7 +33,7 @@ Since Textpattern 4.0.7, there are no limits on nesting depth and you can nest t
     <txp:if_section name="about">
         About this website
     <txp:else />
-        Erm... something else!
+        Erm… something else!
     </txp:if_section>
 </txp:if_section>
 ~~~

@@ -42,7 +42,7 @@ More like four strong recommendations, to help ensure you're producing plugins t
 
 While reinventing the wheel is a good way to learn, it's not so good for making useful or popular plugins. If your plugin does what another plugin already does, few users will take the time to install and try it unless it's *extremely* innovative in some way. We recommend that before you start developing, spend some time researching what plugins exist, what functionality they provide, and how well they're working for people (often indicated by how popular they are).
 
-Here's the visible approach to plugin conception that can help you make a good choice...
+Here's the visible approach to plugin conception that can help you make a good choice…
 
 When plugin ideas aren't conceived quietly in the minds of individuals and built to fruition without a lot of fanfare (a path usually taken when a developer needs the functionality regardless of whether the community does or not), they often begin as a core [feature idea](https://forum.textpattern.io/viewforum.php?id=2) ([a shunned one](https://docs.textpattern.io/development/plugin-vs-core)), or [plugin discussion](https://forum.textpattern.io/viewforum.php?id=13). Bouncing plugin ideas off the community first is a good way to gauge whether a plugin idea has merit - the more interest and constructive feedback you get, the more likely the plugin is worth building.
 
@@ -335,7 +335,7 @@ One of the [Developer rules of the road](#developer-rules-of-the-road). When you
 -   [Plugin user-help
     guidelines](https://docs.textpattern.io/development/plugin-user-help-guidelines)
 -   [sed_plugin_help_viewer](http://textpattern.org/plugins/612/sed_plugin_help_viewer)
-    (A help viewer plugin that you might find... helpful.)
+    (A help viewer plugin that you might find… helpful.)
 
 **Code repositories:**
 

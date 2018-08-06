@@ -2,7 +2,7 @@
 
 h3(sectionedit1#overview). Overview
 
-Needs written...
+Needs written…
 
 h3(sectionedit2#working_with_cascading_style_sheets_css_in_textpattern). Working with Cascading Style Sheets (CSS) in Textpattern
 

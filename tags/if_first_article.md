@@ -23,11 +23,11 @@ On this page:
 <txp:if_first_article>
 ~~~
 
-The **if_first_article** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_first_article** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_first_article>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_first_article>
 ~~~
 

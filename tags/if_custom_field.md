@@ -24,11 +24,11 @@ On this page:
 <txp:if_custom_field>
 ~~~
 
-The **if_custom_field** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_custom_field** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_custom_field>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_custom_field>
 ~~~
 

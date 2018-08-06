@@ -10,5 +10,5 @@ h3(sectionedit1#galleriffic). Galleriffic
 
 This gallery is based on Galleriffic, a jQuery plugin for rendering fast-performing photo galleries. This is adapted from "$":http://www.twospy.com/galleriffic/ to work with textpattern so you (and your clients!) can easily update the gallery. In a nutshell, the gallery works by associating image id #s with a specific article. The article form gallery and article_image_form work together to render the article in the form of all of the associated images (in their thumbnail format) to appear as an unordered list on the left, while the full version of the current image appears on the right. All that is necessary to add or change images, is to change the numbered list appearing in the advanced options on the left of the article containing the images. So easy once implemented, even a client that doesn't speak nerd can add, subtract or change their own images.
 
-_Read the "full article":http://fuelyourcoding.com/easy-to-update-thumbnail-gallery-using-textpattern-and-galleriffic/ ..._
+_Read the "full article":http://fuelyourcoding.com/easy-to-update-thumbnail-gallery-using-textpattern-and-galleriffic/ …_
 

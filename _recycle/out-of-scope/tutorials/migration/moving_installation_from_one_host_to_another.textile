@@ -134,11 +134,11 @@ h4(#step_3reconfiguring_your_configphp_file). Step 3: Reconfiguring Your config.
 
 h4(#step_4troubleshooting_problems_after_moving). Step 4: Troubleshooting Problems After Moving
 
-Probably the number one thing that gets people hung-up when physically moving an installation from one server to another is the odd inclusion of white space in the _config.php_ file during the move (most likely during the reinstallation of the file). When this happens three problems are usually to be the result...
+Probably the number one thing that gets people hung-up when physically moving an installation from one server to another is the odd inclusion of white space in the _config.php_ file during the move (most likely during the reinstallation of the file). When this happens three problems are usually to be the result…
 
 * your home page will likely appear to be missing any CSS styling,
 * when you log in to the textpattern admin panel, you will not be able to access some of your tabs (except perhaps the *_Content_* tab),
-* and the following error message, or something similar to it, will appear at the top of the page...
+* and the following error message, or something similar to it, will appear at the top of the page…
 
 “Warning: Cannot modify header information - headers already sent by (output started at _/home/user/public_html/textpattern/config.php:13)_ in _/home/user/public_html/textpattern/publish.php_ on line 170”
 

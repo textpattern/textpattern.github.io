@@ -10,5 +10,5 @@ h3(sectionedit2#getting_started). Getting started
 
 This tutorial assumes that you have a fairly strong understanding of HTML and CSS, however I am using an adapted version of Google Blueprint CSS to keep things extra simple. We will be building a very simple portfolio website with a blog component. I will continue to add articles which will build on textpattern's functionality, but for now I am stripping a lot of Textpattern's defaults, which can be quite confusing if you're not sure about the syntax.
 
-_Read the "full article":http://fuelyourcoding.com/create-a-simple-portfolio-website-and-blog-with-textpattern/ ..._
+_Read the "full article":http://fuelyourcoding.com/create-a-simple-portfolio-website-and-blog-with-textpattern/ …_
 

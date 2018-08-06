@@ -27,7 +27,7 @@ The **file_download_link** tag is both a *single* tag and a *container* tag. Thu
 
 ~~~ html
 <txp:file_download_link>
-    ...containing statements...
+    …containing statements…
 </txp:file_download_link>
 ~~~
 

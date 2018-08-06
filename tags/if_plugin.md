@@ -23,11 +23,11 @@ On this page:
 <txp:if_plugin>
 ~~~
 
-The **if_plugin** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_plugin** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_plugin>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_plugin>
 ~~~
 
@@ -54,13 +54,13 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:if_plugin>
 ~~~
 
-Applies the tag `<txp:com_connect />` if the 'com_connect' plugin is installed, activated, and the version number is equal to or greater than 4.6. Version numbering supports [semantic versioning](http://semver.org), for example...
+Applies the tag `<txp:com_connect />` if the 'com_connect' plugin is installed, activated, and the version number is equal to or greater than 4.6. Version numbering supports [semantic versioning](http://semver.org), for example…
 
 ~~~
 version="4.6"
 ~~~
 
-...means equal to or greater than version @4.6@ (i.e. @4.6.1@, @4.7@, @5@).
+…means equal to or greater than version @4.6@ (i.e. @4.6.1@, @4.7@, @5@).
 
 ## Genealogy
 

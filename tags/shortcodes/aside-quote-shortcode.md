@@ -36,15 +36,15 @@ In this case, the following article structure was in mind, where an `aside` is a
 	<header>
 		<h1>Hed</h1>
 		<h2>Dek</h2>
-		<p class=“publine”> ...
+		<p class=“publine”> …
 	<header>
-	<section class="chapter"> ... </section>
+	<section class="chapter"> … </section>
 	<section class="chapter">
-		<p>...
-		<aside> ... </aside>
-		<p>...
+		<p>…
+		<aside> … </aside>
+		<p>…
 	</section>
-	<section class="chapter"> ... </section>
+	<section class="chapter"> … </section>
 </article>
 ~~~
 
@@ -54,7 +54,7 @@ The `aside` block itself is structured similar to what the W3C specification rec
 
 ~~~ html
 <aside class="">
-	<q> ... </q> 
+	<q> … </q> 
 	<p class=""><span>Name</span> <span>Title</span>
 </aside>
 ~~~
@@ -163,11 +163,11 @@ Now you’re all set to add Tweets (in this case) as aside-quotes in your articl
 Open your article draft in the Write panel, and use the short-tag between two paragraphs, where desired, as follows:
 
 ~~~ html
-...end of a paragraph.
+…end of a paragraph.
 
 <txp::linkquote id=“19” name="Drunk Hulk" class="xxl" />
   
-Start of new paragraph...
+Start of new paragraph…
 ~~~
 
 The above hypothetical tag might output a Tweet as follows, depending on how you style everything:

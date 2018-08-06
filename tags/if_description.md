@@ -24,11 +24,11 @@ On this page:
 <txp:if_description>
 ~~~
 
-The **if_description** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_description** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_description>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_description>
 ~~~
 
@@ -52,13 +52,13 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ~~~ html
 <head>
-    ....
+    ….
     <txp:if_description>
         <txp:meta_description />
     <txp:else />
         <meta name="description" content="A generic description fallback, possibly about bacon." />
     </txp:if_description>
-    ....
+    ….
 </head>
 ~~~
 

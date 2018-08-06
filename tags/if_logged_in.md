@@ -23,11 +23,11 @@ On this page:
 <txp:if_logged_in>
 ~~~
 
-The **if_logged_in** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_logged_in** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_logged_in>
-    ...content to show if logged in...
+    …content to show if logged in…
 </txp:if_logged_in>
 ~~~
 

@@ -30,7 +30,7 @@ If used as a *container* tag, it must be specified as an opening and closing pai
 
 ~~~ html
 <txp:authors>
-    ...contained statements...
+    …contained statements…
 </txp:authors>
 ~~~
 

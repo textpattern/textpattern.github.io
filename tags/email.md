@@ -55,7 +55,7 @@ Tag will accept the following attributes (**case-sensitive**):
 ### Example 2: Pre-populate message subject and body
 
 ~~~ html
-<txp:email email="donald.swain@example.com?subject=Lorem ipsum&body=Sit amet..." />
+<txp:email email="donald.swain@example.com?subject=Lorem ipsum&body=Sit amet…" />
 ~~~
 
 ### Example 3: Container example
@@ -100,7 +100,7 @@ li.ss-icon a {
 .twit:hover {
     /** design as you want **/
 }
-... etc ...
+… etc …
 li.email a:hover {
     /** design as you want **/
 }

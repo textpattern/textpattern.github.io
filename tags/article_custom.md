@@ -29,7 +29,7 @@ If used as a container, it must be specified as an opening and closing pair of t
 
 ~~~ html
 <txp:article_custom>
-    ...contained statements...
+    …contained statements…
 </txp:article_custom>
 ~~~
 

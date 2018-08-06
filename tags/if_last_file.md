@@ -25,11 +25,11 @@ On this page:
 <txp:if_last_file>
 ~~~
 
-The **if_last_file** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_last_file** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_last_file>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_last_file>
 ~~~
 

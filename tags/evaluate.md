@@ -47,7 +47,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 <txp:article>
     <txp:variable name="counter" value='<txp:evaluate query=''<txp:variable name="counter" /> + 1'' />' />
-    ...
+    …
 </txp:article>
 ~~~
 

@@ -24,7 +24,7 @@ On this page:
 <txp:article_image />
 ~~~
 
-The **article_image** tag is a *single* tag. Textpattern will replace this tag with the `<img src="...">` HTML tag matching the numeric ID or URL assigned when the article is posted.
+The **article_image** tag is a *single* tag. Textpattern will replace this tag with the `<img src="…">` HTML tag matching the numeric ID or URL assigned when the article is posted.
 
 The image to be associated with the tag is set in the [Write panel](https://docs.textpattern.io/administration/write-panel). In the 'Article image' field enter either the URL of the image, or the Textpattern ID (a number set by Textpattern at upload) - most of the time you will use the image ID here. Note that although the 'Article image' field can accept a comma separated list of image IDs, you can only assign a single image to each article using this tag (the [images](images) tag allows greater flexibility for multiple article images).
 
@@ -82,7 +82,7 @@ This will wrap the image in paragraph tags, applying the `class` to the paragrap
 
 ~~~ html
 <p class="article_image">
-    <img src="...">
+    <img src="…">
 </p>
 ~~~
 

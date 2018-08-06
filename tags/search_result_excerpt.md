@@ -31,7 +31,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `break="tag"` <span class="footnote error">Deprecated v4.7.0</span>
 : Trailing string.
-: **Default:** `...` (ellipsis).
+: **Default:** `…` (ellipsis).
 
 `hilight="tag"`
 : HTML tag to be used for search term matches in excerpt text, without brackets.
@@ -43,7 +43,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `separator="tag"` <span class="footnote warning">v4.7.0+</span>
 : Trailing string.
-: **Default:** `...` (ellipsis).
+: **Default:** `…` (ellipsis).
 
 ## Examples
 

@@ -55,9 +55,9 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ~~~ html
 <head>
-    <!-- ...tags... -->
+    <!-- …tags… -->
     <link rel="stylesheet" href="<txp:css />" media="screen, projector">
-    <!-- ...more tags... -->
+    <!-- …more tags… -->
 </head>
 ~~~
 
@@ -65,9 +65,9 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ~~~ html
 <head>
-    <!-- ...tags... -->
+    <!-- …tags… -->
     <txp:css format="link" />
-    <!-- ...more tags... -->
+    <!-- …more tags… -->
 </head>
 ~~~
 
@@ -75,9 +75,9 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ~~~ html
 <head>
-    <!-- ...tags... -->
+    <!-- …tags… -->
     <txp:css format="link" name="style_name" />
-    <!-- ...more tags... -->
+    <!-- …more tags… -->
 </head>
 ~~~
 
@@ -85,11 +85,11 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ~~~ html
 <head>
-    <!-- ...tags... -->
+    <!-- …tags… -->
     <txp:css format="link" name="plain" rel="alternate" title="Plain and simple style" />
     <txp:css format="link" name="glossy" rel="alternate" title="Glossy style" />
     <txp:css format="link" name="print" media="print" />
-    <!-- ...more tags... -->
+    <!-- …more tags… -->
 </head>
 ~~~
 

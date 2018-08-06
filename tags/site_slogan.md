@@ -42,13 +42,13 @@ This tag has no attributes.
 
 ### Example 2: Slogan as content filler
 
-The slogan could be used for the content attribute of the `description` metadata element. Either whole...
+The slogan could be used for the content attribute of the `description` metadata element. Either whole…
 
 ~~~ html
 <meta name="description" content="<txp:site_slogan />">
 ~~~
 
-or partial...
+or partial…
 
 ~~~ html
 <meta name="description" content="<txp:site_slogan />. And the rest of your pithy description would go here.">

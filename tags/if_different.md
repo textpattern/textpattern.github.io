@@ -22,11 +22,11 @@ On this page:
 <txp:if_different>
 ~~~
 
-The **if_different** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_different** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_different>
-    ...contained statements...
+    …contained statements…
 </txp:if_different>
 ~~~
 
@@ -68,15 +68,15 @@ Desired result:
 * about (section title)
 * 1st Article from about section
 * 2nd Article from about section
-* ...another article
+* …another article
 * family (section title)
 * 1st Article from family section
 * 2nd Article from family section
-* ...another article
+* …another article
 * people (section title)
 * 1st Article from people section
 * 2nd Article from people section
-* ...another article
+* …another article
 
 In Textpattern [Page templates](https://docs.textpattern.io/themes/page-templates-explained), add this tag to loop through all articles from all sections:
 

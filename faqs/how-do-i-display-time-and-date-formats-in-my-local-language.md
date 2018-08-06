@@ -4,7 +4,7 @@ The date and time functions used by Textpattern will automatically translate mon
 
 If you've selected the appropriate language in textpattern > admin > preferences and are still not seeing dates in your language, it most probably means that your web server's operating system has limited support for your language. You should ask your hosting company to upgrade their locale support.
 
-To use a different format for article dates, use the @<txp:posted format="..." />@ attribute. See "here":http://textpattern.net/wiki/index.php?title=posted for more details.
+To use a different format for article dates, use the @<txp:posted format="…" />@ attribute. See "here":http://textpattern.net/wiki/index.php?title=posted for more details.
 
 To display an article date using a different language to the main Textpattern language, the following code will work on _some_ systems:
 

@@ -23,11 +23,11 @@ On this page:
 <txp:if_category>
 ~~~
 
-The **if_category** tag is a *conditional* tag and always used as an opening and closing pair, like this...
+The **if_category** tag is a *conditional* tag and always used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_category>
-    ...conditional statement...
+    …conditional statement…
 </txp:if_category>
 ~~~
 

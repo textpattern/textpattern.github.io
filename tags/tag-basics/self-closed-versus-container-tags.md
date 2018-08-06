@@ -40,7 +40,7 @@ Container tags are composed of both an opening and closing tag element, giving t
 
 ~~~ html
 <txp:tag_name>
-    ...content...
+    …content…
 </txp:tag_name>
 ~~~
 
@@ -54,9 +54,9 @@ A link is a good example: you have a text string (or a title tag) around which y
 <txp:permlink>
     <txp:title />
 </txp:permlink>
-...content...
+…content…
 <txp:permlink>
-    Read more...
+    Read more…
 </txp:permlink>
 ~~~
 
@@ -64,8 +64,8 @@ The example above would be rendered into something like so:
 
 ~~~ html
 <a href="/articles/this-article-title">This article title</a>
-...content...
-<a href="/articles/this-article-title">Read more...</a>
+…content…
+<a href="/articles/this-article-title">Read more…</a>
 ~~~
 
 ## Closing tags correctly
@@ -74,7 +74,7 @@ Textpattern tags behave like XML tags insofar as they must be **closed** correct
 
 ~~~ html
 <txp:some_tag>
-    ...content...
+    …content…
 </txp:some_tag>
 ~~~
 
@@ -84,9 +84,9 @@ If the tag is a conditional tag, check to make sure that any [else](https://docs
 
 ~~~ html
 <txp:if_some_condition>
-  ...true branch...
+  …true branch…
 <txp:else />
-  ...false branch...
+  …false branch…
 </txp:if_some_condition>
 ~~~
 

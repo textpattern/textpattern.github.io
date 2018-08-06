@@ -30,7 +30,7 @@ If used as a container, it must be specified as an opening and closing pair of t
 
 ~~~ html
 <txp:linklist>
-    ...contained statements...
+    …contained statements…
 </txp:linklist>
 ~~~
 

@@ -26,7 +26,7 @@ The **comment_web** tag can be used as either a *single* or a *container* tag. T
 
 ~~~ html
 <txp:comment_web>
-    ...containing statements...
+    …containing statements…
 </txp:comment_web>
 ~~~
 

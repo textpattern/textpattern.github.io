@@ -97,7 +97,7 @@ You're now ready to log back in to your Textpattern interface.
 
 ### Step 3: Troubleshooting problems after moving
 
-Probably the number one thing that gets people hung-up when physically moving an installation from one server to another is the odd inclusion of white space in the `config.php` file during the move (most likely during the reinstallation of the file). When this happens three problems are usually to be the result...
+Probably the number one thing that gets people hung-up when physically moving an installation from one server to another is the odd inclusion of white space in the `config.php` file during the move (most likely during the reinstallation of the file). When this happens three problems are usually to be the result…
 
 1. Your home page will likely appear to be missing any CSS styling.
 2. When you log in to the Textpattern admin panel, you will not be able to access some of your tabs (except perhaps the 'Content' page).

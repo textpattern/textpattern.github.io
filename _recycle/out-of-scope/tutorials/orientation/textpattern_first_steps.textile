@@ -285,7 +285,7 @@ bc.
 </li>
 </ul>
 
-&lt;txp:link_to_prev&gt;...&lt;/txp:link_to_next&gt; (If there was more than one article in the fun section this would create a link there, so let's delete it)
+&lt;txp:link_to_prev&gt;…&lt;/txp:link_to_next&gt; (If there was more than one article in the fun section this would create a link there, so let's delete it)
 
 * *_SAVE_*
 

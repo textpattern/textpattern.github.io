@@ -44,7 +44,7 @@ Pages and Styles (described next) are associated to Sections to provide an HTML 
 
 ## Theoretical example for blackcheese.tld
 
-Let's walkthrough the creation and assembly of the building blocks for a hypothetical website called 'Black Cheese' (`blackcheese.tld`)...
+Let's walkthrough the creation and assembly of the building blocks for a hypothetical website called 'Black Cheese' (`blackcheese.tld`)…
 
 All building block panels are accessed in your [admin-side](https://docs.textpattern.io/administration/). For purposes of this example, we are only focusing on [Sections](https://docs.textpattern.io/administration/sections-panel), [Pages](https://docs.textpattern.io/administration/pages-panel), [Styles](https://docs.textpattern.io/administration/styles-panel), [Forms](https://docs.textpattern.io/administration/pages-panel), and [Categories](https://docs.textpattern.io/administration/categories-panel). The Tags don't have their own panel; rather you simply type them up like you would HTML markup, or use one of the contextual Tag builders located at the top of the left column in the Forms and Pages panels.
 

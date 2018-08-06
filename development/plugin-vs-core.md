@@ -87,7 +87,7 @@ In rare cases, when there's enough value and desire from a large portion of the 
 
 Plugins provide specialized code that users can pick and choose based on their website objectives. As these plugins are not as commonly used as the core code itself, they tend to be buggier (lower code quality). Plugins also have a tendency to be abandoned over time, thus they become greater risks for use if not maintained.
 
-So there's a couple of messages here to wrap up depending on who you are...
+So there's a couple of messages here to wrap up depending on who you are…
 
 **Plugin users:**
 
