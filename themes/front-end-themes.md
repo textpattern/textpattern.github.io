@@ -69,11 +69,11 @@ The following default value will be used on import for the missing fields or val
 ~~~ json
 {
   "title": "Four Point Seven",
-  "version": "4.7.0-beta.2",
+  "version": "4.7.1",
   "description": "The default theme shipped with Textpattern CMS 4.7.",
   "author": "Team Textpattern",
-  "author_uri": "https://github.com/textpattern/textpattern-default-theme"
-  "txp-type": "textpattern-theme",
+  "author_uri": "https://github.com/textpattern/textpattern-default-theme",
+  "txp-type": "textpattern-theme"
 }
 ~~~
 
@@ -107,7 +107,7 @@ If this directory is missing, empty essential forms will be created on the first
 
 #### The 'styles' directory
 
-The _styles_ optional directory should contains stylesheets as `.css` files.  
+The _styles_ optional directory should contain stylesheets as `.css` files.  
 A `default` essential stylesheet should be created; it will be created as an empty stylesheet on import if missing.  
 If this directory is missing, an empty essential stylesheet (`default`) will be created on the first import while on update, styles import will be skipped.
 
