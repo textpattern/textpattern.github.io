@@ -23,7 +23,7 @@ Textpattern runs faster on current mainline versions of Apache, MySQL and PHP th
 
 The method of enabling PHP extensions varies between versions of PHP and Apache, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
 
-Modifications to an Apache virtual host file are typically not needed, especially if PHP is already enabled. A `phpinfo()` pre-flight check is useful to confirm PHP and MySQL are functional correctly. Create and edit a new file in the intended Textpattern location with the following contents:
+Modifications to an Apache virtual host file are typically not needed, especially if PHP is already enabled. A `phpinfo()` pre-flight check is useful to confirm PHP and MySQL are functioning correctly. Create a `.php` file in the intended Textpattern location with the following contents:
 
 ~~~ php
 <?php phpinfo(); ?>

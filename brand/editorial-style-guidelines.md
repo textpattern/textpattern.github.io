@@ -51,7 +51,7 @@ Likewise, do not use the third-person in your copy. So don't use these words: he
 
 ## Language (Oxford English conventions)
 
-Textpattern's default language is English, and follows the conventions provided by Oxford University Press resources, notably the __New Oxford Style Manual__, 2nd Edition, and the __"Oxford English Dictionary":https://www.oed.com__ (OED). All Textpattern platforms designate this choice of English usage in the language tags of website templates:
+Textpattern's default language is English, and follows the conventions provided by Oxford University Press resources, notably the _New Oxford Style Manual, 2nd Edition_, and the [_Oxford English Dictionary_](https://www.oed.com). All Textpattern platforms designate this choice of English usage in the language tags of website templates:
 
 ~~~ html
 <html lang="en-GB-oxendict">
@@ -71,7 +71,7 @@ Concepts and word forms are listed alphabetically.
 
 ### American or British English?
 
-There are many differences between British and American English with regard to spelling. Textpattern handles this decisively by using the "Oxford English Dictionary":https://www.oed.com (OED), as described in the "Languages":#lang section of these guidelines.
+There are many differences between British and American English with regard to spelling. Textpattern handles this decisively by using the [_Oxford English Dictionary_](https://www.oed.com), as described in the "Languages":#lang section of these guidelines.
 
 The following table compares conventional patterns of spelling between North American regions, Great Britain, and the OED.[^2] The words shown are simply representative of all possible words having those patterns. Use the OED conventions (*en-GB-oxendict*) when writing Textpattern content.
 
