@@ -35,7 +35,7 @@ The perspective of documentation is that of an anonymous expert writing to the f
 
 bq. Manage your account data in the **Users** panel.
 
-Never use the first-person (I/we, me/us, my/our…).It's easy to forget and start using "we" and "us" as if you and the reader are labouring together. But don't do that. Take the second person stance and empower the reader. Make them feel like their doing it alone, because they are. You're just an impartial messenger delivering the instructions. Change "we" to "you", or "our" to "your".
+Never use the first-person (I/we, me/us, my/our…).It's easy to forget and start using "we" and "us" as if you and the reader are labouring together. But don't do that. Take the second person stance and empower the reader. Make them feel like they're doing it alone, because they are. You're just an impartial messenger delivering the instructions. Change "we" to "you", or "our" to "your".
 
 For the most part you shouldn't need the third-person either (his, her, them, they). But there may be exceptions, such as when talking about the "roles and privileges":https://docs.textpattern.io/administration/user-roles-and-prvileges of other website users besides the administrator (who you're addressing).
 
@@ -85,7 +85,7 @@ notextile. <div class="tabular-data" itemscope itemtype="https://schema.org/Tabl
 
 notextile. </div>
 
-The main thing to note is there's little difference between British English and the Oxford English Dictionary, except for words ending in “-ize/-ise” and their related grammatical forms. In other words, use "z" in all such forms (e.g. organize, organizer, organization, organizational).
+The main thing to note is there's little difference between British English and the Oxford English Dictionary, except for words ending in "-ize/-ise" and their related grammatical forms. In other words, use "z" in all such forms (e.g. organize, organizer, organization, organizational).
 
 Also note that "program" (not "programme") is the correct spelling when used in context of software only. Likewise you would never use "centre" where "center" was required in code (e.g, @text-align:center;@). And it would be "data modelling", according to the -ler/-ller convention, not 'data modeling'.
 
@@ -131,7 +131,7 @@ bq. The instruction says, "Put your domain name in 'Site URL'."
 
 **Straight vs. curly quotation marks:**
 
-Be mindful when writing Textile links that your text editor is using straight quotation marks, not curly quotation marks. While the latter are attractive for regular text copy, they won't work for links. Thus straight quotations marks may prove best for documentation portability over the long-term. This means you'll have quote marks looking like "this" instead of “this”.
+Be mindful when writing Textile links that your text editor is using straight quotation marks, not curly quotation marks. While the latter are attractive for regular text copy, they won't work for links. Thus straight quotations marks may prove best for documentation portability over the long-term. This means you'll have quote marks looking like "this" instead of "this".
 
 [^3] See section on __User-interface content__ for UI text formatting conventions.
 
@@ -167,7 +167,7 @@ Use the Textpattern name fully and correctly.
 
 Textpattern is spelled "*Textpattern*". Look at that closely. That's not two words, and there's no capital "p". This isn't WordPress, and "Text" isn't used as an adjective. Nope. Textpattern is proudly all one word with one capital letter - a proper noun.
 
-Always spell “Textpattern” out fully in official copy. Never abbreviate the name, like Txp, TXP, TxP, txP, or txp (unless your writing Textpattern tags in code examples). While these invented pet uses are convenient in the forum, they lend confusion to brand awareness in official copy. The world is still confused between “Textpattern” vs. “TextPattern”, after all.
+Always spell "Textpattern" out fully in official copy. Never abbreviate the name, like Txp, TXP, TxP, txP, or txp (unless your writing Textpattern tags in code examples). While these invented pet uses are convenient in the forum, they lend confusion to brand awareness in official copy. The world is still confused between "Textpattern" vs. "TextPattern", after all.
 
 Good news! Writing the name out fully has the added benefit of helping you see when you're using the name too repetitively, which is a sentence bloat problem.
 
@@ -226,7 +226,7 @@ Be human and relaxed, but get straight to the point and out of the way. Leave yo
 * Use "log in" and "log out" when it's a verb (e.g. "after you log in" or "after logging in").
 * Do not use "tab" - use "panel" - when talking about the admin-side panels.[^3] The only exception is you're specifically referring to a UI text element where the word is encoded (e.g. in Basic preferences, the preference "Default admin tab").[^4]
 
-fn3. The presentational theme of the admin-side was originally conceived as a set of manilla file folders, with each region label depicted as a folder “tab”. This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as “tabs” even though they may use an admin theme that does not depict the file folder concept. New docs should not perpetuate that false concept and terminology, particularly as the file folder concept is not depicted in the admin-side navigation of the official admin-side theme - Hive. The use of “tab” in the admin-side UI, such as in preferences, help dialogue, and so forth, is probably only clear to veteran Textpattern users. When/if the admin-side UI is cleaned of all use of the word "tab", then docs can be fully cleaned of the use as well, but we can get most of the way there by only using "tab" when it's in direct reference of an UI element label.
+fn3. The presentational theme of the admin-side was originally conceived as a set of manilla file folders, with each region label depicted as a folder "tab". This presentational concept has left an impact on the mental models of long-time users, who will frequently refer to panels as "tabs" even though they may use an admin theme that does not depict the file folder concept. New docs should not perpetuate that false concept and terminology, particularly as the file folder concept is not depicted in the admin-side navigation of the official admin-side theme - Hive. The use of "tab" in the admin-side UI, such as in preferences, help dialogue, and so forth, is probably only clear to veteran Textpattern users. When/if the admin-side UI is cleaned of all use of the word "tab", then docs can be fully cleaned of the use as well, but we can get most of the way there by only using "tab" when it's in direct reference of an UI element label.
 
 fn4. These uses of "tab" in the admin-side UI preferences, for example, should be treated as bugs that need fixed, and issues written for them.
 
