@@ -239,6 +239,8 @@ There are two ways to assign an image to an article:
 1. By ID (as it appears in the [Images panel](https://docs.textpattern.io/administration/images-panel); this only works for images managed through the Textpattern Images panel).
 2. By an absolute URL to the image, such as `/images/imagefile.png`.
 
+**Note:** to harness the additional features provided by Textpattern tags such as `<txp:images />`, it is recommended to use image IDs to call article images.
+
 Once the image is associated with an article, [article_image](https://docs.textpattern.io/tags/article_image) is used to display it by placing this tag within 'article' type [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
 
 #### Tip: Using the article image field in relation with captioned figures
