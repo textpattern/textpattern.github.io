@@ -1,7 +1,7 @@
 ---
 layout: document
 category: Installation
-published: false
+published: true
 title: Viewing hidden files in macOS Finder
 description: This article explains how to enable and disable visibility of hidden files in macOS Finder and file transfer applications.
 ---
