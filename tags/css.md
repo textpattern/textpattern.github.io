@@ -8,7 +8,7 @@ tags:
   - Markup tags
 ---
 
-# Css
+# CSS
 
 On this page:
 
