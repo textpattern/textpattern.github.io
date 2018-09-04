@@ -50,7 +50,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ### Example 1: Store site-wide constants
 
-Allows you to define constants at a single location (e.g. [Form templates](https://docs.textpattern.io/themes/form-templates-explained), or even at the top of [Page templates](https://docs.textpattern.io/themes/page-templates-explained)) and use them elsewhere later on.
+Allows you to define constants at a single location (e.g. [Form templates](https://docs.textpattern.com/themes/form-templates-explained), or even at the top of [Page templates](https://docs.textpattern.com/themes/page-templates-explained)) and use them elsewhere later on.
 
 Somewhere at the very beginning of a template you would define names and values, just like you do on your desktop calculator's 'memory' keys:
 

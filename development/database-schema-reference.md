@@ -33,7 +33,7 @@ On this page:
 
 ## textpattern
 
-Contains the articles you create on the [Write panel](https://docs.textpattern.io/administration/write-panel).
+Contains the articles you create on the [Write panel](https://docs.textpattern.com/administration/write-panel).
 
 Column | Type | Description
 ---|---|---
@@ -91,7 +91,7 @@ FULLTEXT    |searching          |(Title, Body)
 
 ## txp_category
 
-Contains all the categories you create on the [Categories panel](https://docs.textpattern.io/administration/categories-panel).
+Contains all the categories you create on the [Categories panel](https://docs.textpattern.com/administration/categories-panel).
 
 Column | Type | Description
 ---|---|---
@@ -112,7 +112,7 @@ PRIMARY KEY | - |(id)
 
 ## txp_css
 
-Contains the style sheets created on the [Styles panel](https://docs.textpattern.io/administration/styles-panel).
+Contains the style sheets created on the [Styles panel](https://docs.textpattern.com/administration/styles-panel).
 
 Column | Type | Description
 ---|---|---
@@ -129,7 +129,7 @@ UNIQUE |name_skin |(name(63), skin(63))
 
 ## txp_discuss
 
-Contains all the article comments output on the [Comments panel](https://docs.textpattern.io/administration/comments-panel).
+Contains all the article comments output on the [Comments panel](https://docs.textpattern.com/administration/comments-panel).
 
 Column | Type | Description
 ---|---|---
@@ -196,7 +196,7 @@ INDEX  |author_idx |(author)
 
 ## txp_form
 
-The `txp_form` table contains all the forms, which are created on the [Forms panel](https://docs.textpattern.io/administration/forms-panel).
+The `txp_form` table contains all the forms, which are created on the [Forms panel](https://docs.textpattern.com/administration/forms-panel).
 
 Column | Type | Description
 ---|---|---
@@ -214,7 +214,7 @@ UNIQUE |name_skin |(name(63), skin(63))
 
 ## txp_image
 
-Contains meta information on all the images uploaded and managed in the [Images panel](https://docs.textpattern.io/administration/images-panel). The image files are not actually stored in the database, they're stored as normal files on the web server in the `/images` folder using the image ID as the filename (i.e. `1.png` for the main image and `1t.png` for the corresponding thumbnail).
+Contains meta information on all the images uploaded and managed in the [Images panel](https://docs.textpattern.com/administration/images-panel). The image files are not actually stored in the database, they're stored as normal files on the web server in the `/images` folder using the image ID as the filename (i.e. `1.png` for the main image and `1t.png` for the corresponding thumbnail).
 
 Column | Type | Description
 ---|---|---
@@ -264,7 +264,7 @@ INDEX  |owner  |(owner)
 
 ## txp_link
 
-Contains all the links and related information created on the [Links panel](https://docs.textpattern.io/administration//links-panel).
+Contains all the links and related information created on the [Links panel](https://docs.textpattern.com/administration//links-panel).
 
 Column | Type | Description
 ---|---|---
@@ -286,7 +286,7 @@ INDEX |author_idx |(author)
 
 ## txp_log
 
-Contains log entries of page requests (visits) to your website, which are output on the [Visitor logs panel](https://docs.textpattern.io/administration/visitor-logs-panel). Depending on your preferences, you can either log nothing, just referrers, or all requests. Old log entries are removed automatically every time you display the visitor logs panel.
+Contains log entries of page requests (visits) to your website, which are output on the [Visitor logs panel](https://docs.textpattern.com/administration/visitor-logs-panel). Depending on your preferences, you can either log nothing, just referrers, or all requests. Old log entries are removed automatically every time you display the visitor logs panel.
 
 Column | Type | Description
 ---|---|---
@@ -309,7 +309,7 @@ INDEX |ip     |(ip)
 
 ## txp_page
 
-Contains all the Page templates you create on the [Pages panel](https://docs.textpattern.io/administration/pages-panel).
+Contains all the Page templates you create on the [Pages panel](https://docs.textpattern.com/administration/pages-panel).
 
 Column | Type | Description
 ---|---|---
@@ -326,7 +326,7 @@ UNIQUE |name_skin |(name(63), skin(63))
 
 ## txp_plugin
 
-Contains all the plugins you have installed, that are displayed on the [Plugins panel](https://docs.textpattern.io/administration/plugins-panel).
+Contains all the plugins you have installed, that are displayed on the [Plugins panel](https://docs.textpattern.com/administration/plugins-panel).
 
 Column | Type | Description
 ---|---|---
@@ -377,7 +377,7 @@ INDEX  |user_name |(user_name)
 
 ## txp_section
 
-Contains all the sections you create on the [Sections panel](https://docs.textpattern.io/administration/sections-panel).
+Contains all the sections you create on the [Sections panel](https://docs.textpattern.com/administration/sections-panel).
 
 Column | Type | Description
 ---|---|---
@@ -400,7 +400,7 @@ INDEX |css_skin  |(css(50), skin(63))
 
 ## txp_skin
 
-Contains public theme information as defined on the [Themes panel](https://docs.textpattern.io/administration/themes-panel). A theme is a collection of Pages, Forms and style sheets. It is referred to as a 'skin' internally because 'theme' was already taken by admin-themes. May be optionally exported to the file system and imported.
+Contains public theme information as defined on the [Themes panel](https://docs.textpattern.com/administration/themes-panel). A theme is a collection of Pages, Forms and style sheets. It is referred to as a 'skin' internally because 'theme' was already taken by admin-themes. May be optionally exported to the file system and imported.
 
 Column | Type | Description
 ---|---|---
@@ -440,7 +440,7 @@ UNIQUE |ref_type |(reference_id, type(50))
 
 ## txp_users
 
-Contains information for all users, as displayed on the [Users panel](https://docs.textpattern.io/administration/users-panel).
+Contains information for all users, as displayed on the [Users panel](https://docs.textpattern.com/administration/users-panel).
 
 Column | Type | Description
 ---|---|---
@@ -462,4 +462,4 @@ UNIQUE |name |(name)
 
 [^1]: The size limits shown in the *Description* for various table columns (e.g. the `Body` column of the `textpattern` table) may differ slightly from the actual size limits found in the tables created by Textpattern during installation (when a column is used in multiple tables, the smallest size is used). You should consider the limits indicated here as authoritative. When in doubt, ask a developer on the forum.
 
-[^2]: See [Plugin lifecycle management and preferences](https://docs.textpattern.io/development/) for more info.
+[^2]: See [Plugin lifecycle management and preferences](https://docs.textpattern.com/development/) for more info.

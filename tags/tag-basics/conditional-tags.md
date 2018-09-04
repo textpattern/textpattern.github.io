@@ -38,13 +38,13 @@ On your default article page you might see something like this:
 </txp:if_category>
 ~~~
 
-Taking this block by block we see that the conditional [if_category"](https://docs.textpattern.io/tags/if_category) determines if the visitor has selected a category hyperlink. If they have, we are in the **list** view. If they have not, the [else](https://docs.textpattern.io/tags/else) portion is executed.
+Taking this block by block we see that the conditional [if_category"](https://docs.textpattern.com/tags/if_category) determines if the visitor has selected a category hyperlink. If they have, we are in the **list** view. If they have not, the [else](https://docs.textpattern.com/tags/else) portion is executed.
 
-In this example, the [article](https://docs.textpattern.io/tags/article) in the *else* portion is treated as an individual article, by virtue of it not being a category list. In more complex pages it may be part of a larger nested structure and therefore could be a different type of list (e.g. search results), but for now we'll take it at face value and assume it is an individual article.
+In this example, the [article](https://docs.textpattern.com/tags/article) in the *else* portion is treated as an individual article, by virtue of it not being a category list. In more complex pages it may be part of a larger nested structure and therefore could be a different type of list (e.g. search results), but for now we'll take it at face value and assume it is an individual article.
 
 Since the only attribute in use in this `<txp:article />` tag is `wraptag`, the tag will use the *default* form to render the article, and wrap the entire contents in HTML `<div>` tags. If you had specified your own `form` attribute, the article contents would be rendered by your chosen form instead.
 
-The interesting part is if the visitor is viewing a list. In this case, the first thing that happens is to display the [category](https://docs.textpattern.io/tags/category) title inside HTML `<h2>` tags.
+The interesting part is if the visitor is viewing a list. In this case, the first thing that happens is to display the [category](https://docs.textpattern.com/tags/category) title inside HTML `<h2>` tags.
 
 Next, we call the standard article tag but instead of using the **default** form to render its contents, we use the tag as a container.
 
@@ -60,6 +60,6 @@ In just a few simple tags you have automatically rendered a list of articles. Th
 
 That is the fundamental building block of how container and conditional tags can make building lists of things easy.
 
-One thing to note: containers are great for simple content like this but if you find yourself repeating the same contained content over and over in [Page templates](https://docs.textpattern.io/themes/page-templates-explained) or across a series of pages, you can make it easier on yourself by using [Form templates](https://docs.textpattern.io/themes/form-templates-explained) instead. You then just write the container content once and use the `form="my-contained-stuff"` attribute in self-closing [article](https://docs.textpattern.io/tags/article) tags to use it.
+One thing to note: containers are great for simple content like this but if you find yourself repeating the same contained content over and over in [Page templates](https://docs.textpattern.com/themes/page-templates-explained) or across a series of pages, you can make it easier on yourself by using [Form templates](https://docs.textpattern.com/themes/form-templates-explained) instead. You then just write the container content once and use the `form="my-contained-stuff"` attribute in self-closing [article](https://docs.textpattern.com/tags/article) tags to use it.
 
 [Next: Tag nesting](tag-nesting)

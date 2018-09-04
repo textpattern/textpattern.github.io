@@ -8,7 +8,7 @@ description: The Preferences panel is where you configure the everyday operation
 
 # Preferences panel
 
-The Preferences panel is where you configure the everyday operation of your Textpattern site. Along with the [Languages panel](https://docs.textpattern.io/administration/languages-panel), most of Textpattern's site-wide settings can be configured and fine-tuned. Preferences are grouped for convenience.
+The Preferences panel is where you configure the everyday operation of your Textpattern site. Along with the [Languages panel](https://docs.textpattern.com/administration/languages-panel), most of Textpattern's site-wide settings can be configured and fine-tuned. Preferences are grouped for convenience.
 
 On this page:
 
@@ -108,7 +108,7 @@ Select which HTML [doctype](https://www.w3.org/wiki/Doctypes_and_markup_styles) 
 
 ### Logging
 
-The 'Logging' preference allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [Visitor logs panel](https://docs.textpattern.io/administration/visitor-logs-panel) for you to review. This Logging control is a drop-down menu with three options.
+The 'Logging' preference allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [Visitor logs panel](https://docs.textpattern.com/administration/visitor-logs-panel) for you to review. This Logging control is a drop-down menu with three options.
 
 1. **None:** By default Textpattern will not log any visitor information at all.
 2. **All hits:** Textpattern will collect information for all site visits.
@@ -126,19 +126,19 @@ This is a global setting for whether or not you want to allow your articles to a
 
 ### Image directory
 
-The root-relative URI (without opening or closing slashes) of the directory (folder) that holds images uploaded through the [Images panel](https://docs.textpattern.io/administration/images-panel). By default this is `images`, and you only need to change this if you have renamed and/or moved this directory.
+The root-relative URI (without opening or closing slashes) of the directory (folder) that holds images uploaded through the [Images panel](https://docs.textpattern.com/administration/images-panel). By default this is `images`, and you only need to change this if you have renamed and/or moved this directory.
 
 ### Theme directory
 
-<span class="success">**New v4.7.0**</span>. The relative path (file path, not URI) to the directory (folder) that holds themes uploaded through the [Themes panel](https://docs.textpattern.io/administration/themes-panel). By default this is `themes`, and you only need to change this if you have renamed and/or moved this directory.
+<span class="success">**New v4.7.0**</span>. The relative path (file path, not URI) to the directory (folder) that holds themes uploaded through the [Themes panel](https://docs.textpattern.com/administration/themes-panel). By default this is `themes`, and you only need to change this if you have renamed and/or moved this directory.
 
 ### File directory path
 
-The full path (file path, not URI) to the directory (folder) for files uploaded via the [Files panel](https://docs.textpattern.io/administration/files-panel). By default it is named `files` and is in the root directory of the website. As with the Image directory, you only need to change this if you have renamed and/or moved this directory.
+The full path (file path, not URI) to the directory (folder) for files uploaded via the [Files panel](https://docs.textpattern.com/administration/files-panel). By default it is named `files` and is in the root directory of the website. As with the Image directory, you only need to change this if you have renamed and/or moved this directory.
 
 ### Maximum file size of uploads (in bytes)
 
-Maximum size for file uploads via the [Files panel](https://docs.textpattern.io/administration/files-panel). Note that this value is also limited by the configuration of PHP on your web server; if Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host (the relevant values in `php.ini` are `post_max_size`, `upload_max_filesize` and `memory_limit`).
+Maximum size for file uploads via the [Files panel](https://docs.textpattern.com/administration/files-panel). Note that this value is also limited by the configuration of PHP on your web server; if Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host (the relevant values in `php.ini` are `post_max_size`, `upload_max_filesize` and `memory_limit`).
 
 Image uploads are not restricted by this value. The maximum allowed size for images is always ~1MB (unless restricted by PHP as explained above).
 
@@ -150,7 +150,7 @@ Full path (absolute file path, not URI) for this directory, which is required by
 
 This setting is mainly used for plugin developers. When specified, you can put the plugin source file (not compiled) in this directory and Textpattern will load it automatically, so you can easily edit the plugin and immediately see the effect it has without having to install/activate the plugin. **Beware** though that by using this method, a broken plugin (which fails to compile) may also break Textpattern!
 
-It is recommended that you load plugins through the standard [Plugins panel](https://docs.textpattern.io/administration/plugins-panel) on a production site, rather than using the plugin cache directory.
+It is recommended that you load plugins through the standard [Plugins panel](https://docs.textpattern.com/administration/plugins-panel) on a production site, rather than using the plugin cache directory.
 
 **Note:** Do not specify the same directory for both 'Temporary directory path' and 'Plugin cache directory path', as this will cause problems (Textpattern would try to run the contents of temporary log files as plugins).
 
@@ -190,7 +190,7 @@ The default admin-side theme that will be used when anybody logs into Textpatter
 
 ### Default publishing status
 
-Defines the [publishing visibility status](https://docs.textpattern.io/administration/write-panel#status) of newly-created Textpattern articles.
+Defines the [publishing visibility status](https://docs.textpattern.com/administration/write-panel#status) of newly-created Textpattern articles.
 
 Note this preference setting does not affect the status or articles created or edited prior to any change.
 
@@ -202,15 +202,15 @@ Note this preference setting does not affect the status or articles created or e
 
 ### Use excerpts on articles?
 
-By choosing 'No' the excerpt field will not be shown to authors on the [Write panel](https://docs.textpattern.io/administration/write-panel#excerpt).
+By choosing 'No' the excerpt field will not be shown to authors on the [Write panel](https://docs.textpattern.com/administration/write-panel#excerpt).
 
 ### Allow form override?
 
-This setting allows article authors to override the Form template to be used when their article is rendered. If enabled, an 'Override form' dropdown will be available under 'Advanced options' on the [Write panel](https://docs.textpattern.io/administration/write-panel#override-form).
+This setting allows article authors to override the Form template to be used when their article is rendered. If enabled, an 'Override form' dropdown will be available under 'Advanced options' on the [Write panel](https://docs.textpattern.com/administration/write-panel#override-form).
 
 ### Attach titles to permalinks?
 
-This setting will attach a automatically-generated version of the article title to the URL. It is either generated automatically or can be manually overridden in 'URL-only title' when editing an article on the [Write panel](https://docs.textpattern.io/administration/write-panel#url-only-title).
+This setting will attach a automatically-generated version of the article title to the URL. It is either generated automatically or can be manually overridden in 'URL-only title' when editing an article on the [Write panel](https://docs.textpattern.com/administration/write-panel#url-only-title).
 
 The setting will only have an effect when you are using clean URLs. For certain languages this may result in long and ugly URLs, in which case you probably want to set this to 'No'.
 
@@ -218,7 +218,7 @@ The setting will only have an effect when you are using clean URLs. For certain 
 
 This setting only has an effect when 'Attach titles to permalinks?' above is set to 'Yes', and defines the method by which article URLs are constructed and assigned when a non-messy [Article URL pattern](#article-url-pattern) is used.
 
-When an article is published, its URL is generated from the article title unless a specific URL is provided in in the 'URL-only title' field on the [Write panel](https://docs.textpattern.io/administration/write-panel#url-only-title).
+When an article is published, its URL is generated from the article title unless a specific URL is provided in in the 'URL-only title' field on the [Write panel](https://docs.textpattern.com/administration/write-panel#url-only-title).
 
 Take the following example article title: "Ann and Bob eat cake"…
 
@@ -242,7 +242,7 @@ This can reduce bandwidth consumption, page load times, and web server load.
 
 ### Publish expired articles?
 
-When set to 'Yes', expired articles will continue to show on your site after their expiry date has elapsed. You can use [if_expired](https://docs.textpattern.io/tags/if_expired) to show alternate content or markup for expired articles.
+When set to 'Yes', expired articles will continue to show on your site after their expiry date has elapsed. You can use [if_expired](https://docs.textpattern.com/tags/if_expired) to show alternate content or markup for expired articles.
 
 When set to 'No', expired articles will be removed from the public site and return a "410 Gone" HTTP status instead. Visitors hitting an expired article will be shown a custom page template named "error_410" if it's present.
 
@@ -252,7 +252,7 @@ Textile is a utility intended to simplify the conversion of plain text to HTML. 
 
 Textile also offers a powerful but easy-to-learn set of commands with which to format text, define structures such as lists, headers and blockquotes, and insert links and images.
 
-The setting you choose here becomes the default for excerpt and body markup on the [Write panel](https://docs.textpattern.io/administration/write-panel#url-only-title). You can choose to allow complete Textile processing, to convert line breaks into HTML paragraph markers or not convert any text at all.
+The setting you choose here becomes the default for excerpt and body markup on the [Write panel](https://docs.textpattern.com/administration/write-panel#url-only-title). You can choose to allow complete Textile processing, to convert line breaks into HTML paragraph markers or not convert any text at all.
 
 ### Use DNS lookup in visitor logs?
 
@@ -260,7 +260,7 @@ This setting only has an effect when [Logging](#logging) is turned on. Using DNS
 
 ### Enable short tag support?
 
-<span class="success">**New v4.7.0**</span>. Textpattern tags take the form `<txp:tag_name attribute1="value" … />`. It is possible to reduce the amount of typing involved by enabling a shorthand notation whereby the `txp:` may be omitted by following a few simple guidelines. See [Short tags and macros/shortcodes](https://docs.textpattern.io/tags/tag-basics/short-tags-macros-shortcodes) for more information.
+<span class="success">**New v4.7.0**</span>. Textpattern tags take the form `<txp:tag_name attribute1="value" … />`. It is possible to reduce the amount of typing involved by enabling a shorthand notation whereby the `txp:` may be omitted by following a few simple guidelines. See [Short tags and macros/shortcodes](https://docs.textpattern.com/tags/tag-basics/short-tags-macros-shortcodes) for more information.
 
 **Note** that setting this preference in no way affects the ability to use `<txp:output_form />` short codes to render form snippets. You can still use `<txp::shortcode />`, which will be interpreted as `<txp:output_form form="shortcode" />`.
 
@@ -274,11 +274,11 @@ Admin-side plugins can change the operation of the administration interface. The
 
 ### Allow PHP in pages?
 
-When enabled, this setting allows PHP code within Page templates and Form templates. PHP code must have opening and closing PHP tags omitted, and also be enclosed within Textpattern [php](https://docs.textpattern.io/tags/php) tags.
+When enabled, this setting allows PHP code within Page templates and Form templates. PHP code must have opening and closing PHP tags omitted, and also be enclosed within Textpattern [php](https://docs.textpattern.com/tags/php) tags.
 
 ### Allow PHP in articles?
 
-When enabled, this setting will allow use of PHP within articles. The author must have sufficient privileges to do so (by default, only @@Publishers@@ and @@Managing Editors@@ can). PHP code must have opening and closing PHP tags omitted, and also be enclosed within Textpattern [php](https://docs.textpattern.io/tags/php) tags.
+When enabled, this setting will allow use of PHP within articles. The author must have sufficient privileges to do so (by default, only @@Publishers@@ and @@Managing Editors@@ can). PHP code must have opening and closing PHP tags omitted, and also be enclosed within Textpattern [php](https://docs.textpattern.com/tags/php) tags.
 
 ### Maximum URL length (in characters)
 
@@ -314,13 +314,13 @@ If you set [Accept comments?](#accept-comments) to 'Yes', this region of the Pre
 
 ### Comments on by default?
 
-If this is set to 'Yes', comments will be automatically enabled for every article published. If set to 'No', you must enable comments on the [Write panel](https://docs.textpattern.io/administration/write-panel#onoff) each time you want to accept comments.
+If this is set to 'Yes', comments will be automatically enabled for every article published. If set to 'No', you must enable comments on the [Write panel](https://docs.textpattern.com/administration/write-panel#onoff) each time you want to accept comments.
 
 Note that allowing comments can be turned on or off at any time, on a per-article basis.
 
 ### Default comments invite
 
-The text in this edit field will be automatically set in the comment invitation field on the [Write panel](https://docs.textpattern.io/administration/write-panel#invitation) for new articles. The comment invitation may also be controlled on a per-article basis.
+The text in this edit field will be automatically set in the comment invitation field on the [Write panel](https://docs.textpattern.com/administration/write-panel#invitation) for new articles. The comment invitation may also be controlled on a per-article basis.
 
 ### Moderate comments?
 
@@ -336,9 +336,9 @@ This is a selection of time periods during which comments will be accepted for a
 
 This setting determines whether comments and the comment form are automatically appended to all individual articles (by automatically including the contents of the `comments_display` Form template).
 
-The majority of the time, you will want this set to 'No', as this allows greater flexibility to the positioning of your comments in your site design. You will need to add the [comments](https://docs.textpattern.io/tags/comments) tag manually in any article-based templates where you want comments to appear.
+The majority of the time, you will want this set to 'No', as this allows greater flexibility to the positioning of your comments in your site design. You will need to add the [comments](https://docs.textpattern.com/tags/comments) tag manually in any article-based templates where you want comments to appear.
 
-If you are experiencing duplicate display of comments in an article, then chances are your templates have the [comments](https://docs.textpattern.io/tags/comments) tag in a template but also have 'Automatically append comments to articles?' set to 'Yes' too.
+If you are experiencing duplicate display of comments in an article, then chances are your templates have the [comments](https://docs.textpattern.com/tags/comments) tag in a template but also have 'Automatically append comments to articles?' set to 'Yes' too.
 
 ### Comments mode
 
@@ -358,7 +358,7 @@ If set to 'Yes', whenever a new comment is received on an article, a copy will b
 
 Determines whether article comments will be wrapped with the HTML `<ol>` tag and individual comments will be wrapped in the `<li>` tag (causing comments to be presented as a numbered list), or whether individual comments will be wrapped with the `<div>` tag instead.
 
-With either value, you can override the tags used on an individual Form template basis by modifying the [comments](https://docs.textpattern.io/tags/comments) tag, found in the `comments_display` Form template.
+With either value, you can override the tags used on an individual Form template basis by modifying the [comments](https://docs.textpattern.com/tags/comments) tag, found in the `comments_display` Form template.
 
 ### New comment means site updated?
 
@@ -411,7 +411,7 @@ You can enter a list of domain names here, separated by commas. Please note that
 
 ## Custom fields preferences
 
-This region is where custom fields can be defined (new installations of Textpattern define two custom fields for demonstration purposes: `custom1` and `custom2`). These in turn appear under the 'Custom fields' section of the [Write panel](https://docs.textpattern.io/administration/write-panel#custom-fields) so you can make use of them, as needed, in context of a given article.
+This region is where custom fields can be defined (new installations of Textpattern define two custom fields for demonstration purposes: `custom1` and `custom2`). These in turn appear under the 'Custom fields' section of the [Write panel](https://docs.textpattern.com/administration/write-panel#custom-fields) so you can make use of them, as needed, in context of a given article.
 
 **Important notes on creating custom field names:** Custom field names may include letters (uppercase or lowercase), numbers, and under scores, but no spaces or other special characters should be used. For example, `custom1`, `Custom1`, and `Custom_1` are all valid name constructs, while `custom 1` and `custom !` are not.
 
@@ -438,7 +438,7 @@ Also, there are certain names **reserved** by Textpattern, which should *not* be
 * `thisid`
 * `title`
 * `url_title`
-* Any other [tag attribute](https://docs.textpattern.io/tags/tag-attributes-cross-reference), just in case!
+* Any other [tag attribute](https://docs.textpattern.com/tags/tag-attributes-cross-reference), just in case!
 
 A symptom of a name clash is when you go to check or display the contents of a custom field and receive unexpected (or no) output. In this case, make sure your custom field names are not any of the reserved names listed above.
 
@@ -446,4 +446,4 @@ To remove a custom field, simply clear its name.
 
 **Don't forget to save changes made in the panel.**
 
-[Next: Languages panel](https://docs.textpattern.io/administration/languages-panel)
+[Next: Languages panel](https://docs.textpattern.com/administration/languages-panel)

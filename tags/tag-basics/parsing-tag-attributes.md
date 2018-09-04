@@ -148,9 +148,9 @@ Referring to the last point above, things can become 'a little hairy' if you wan
 
 In the first statement, notice the pairs of single apostrophes inside the category attribute? They are necessary to **escape** the single quotes so the parser does not see them as the end of the **value** attribute in the `<txp:variable />` tag. At each nested level, the number of single quotes surrounding a tag is usually doubled to maintain the integrity of the statements; this can get mighty interesting unless you keep your wits about you!
 
-The `file-category` form returns some markup (in this case, just a series of links to the relevant files) which is all assigned to the **value** of the [variable](https://docs.textpattern.io/tags/variable) named 'file-count'.
+The `file-category` form returns some markup (in this case, just a series of links to the relevant files) which is all assigned to the **value** of the [variable](https://docs.textpattern.com/tags/variable) named 'file-count'.
 
-The upshot is that this variable can be tested with [if_variable](https://docs.textpattern.io/tags/if_variable) to see if it contains anything at all and - if it does, the file list can be displayed. Conversely, if there are no files for that language then the [else](https://docs.textpattern.io/tags/else) part of the conditional statement is displayed.
+The upshot is that this variable can be tested with [if_variable](https://docs.textpattern.com/tags/if_variable) to see if it contains anything at all and - if it does, the file list can be displayed. Conversely, if there are no files for that language then the [else](https://docs.textpattern.com/tags/else) part of the conditional statement is displayed.
 
 ## Valueless attributes (since 4.7.0)
 

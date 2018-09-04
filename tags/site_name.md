@@ -22,7 +22,7 @@ On this page:
 <txp:site_name />
 ~~~
 
-The **site_name** tag is a *single* tag that returns the site's name as defined within the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
+The **site_name** tag is a *single* tag that returns the site's name as defined within the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel).
 
 ## Attributes
 

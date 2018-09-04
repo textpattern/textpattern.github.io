@@ -25,7 +25,7 @@ On this panel you can do two things:
 
 ## Create a new article
 
-This button will take you directly to the [Write panel](https://docs.textpattern.io/administration/write-panel).
+This button will take you directly to the [Write panel](https://docs.textpattern.com/administration/write-panel).
 
 ## Search function
 
@@ -62,4 +62,4 @@ For performing changes now you go to the drop-down list 'With selected…' and c
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of articles listed per page by selecting another value from the number range.
 
-[Next: Images panel](https://docs.textpattern.io/administration/images-panel)
+[Next: Images panel](https://docs.textpattern.com/administration/images-panel)

@@ -8,7 +8,7 @@ description: The Write panel reveals the various features for managing articles 
 
 # Write panel
 
-The Write panel is the default panel of the administration side of Textpattern; it opens when you log in to the admin-side (see Figure 1). The exceptions are when 1) you log in after a new update of your Textpattern installation, in which case you're initially routed to the [Languages panel](https://docs.textpattern.io/administration/languages-panel), or 2) if you change the default panel to something else via the preference for it in the **Admin** section of the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel). (The Languages and Preferences panels are both under the main Admin menu.) 
+The Write panel is the default panel of the administration side of Textpattern; it opens when you log in to the admin-side (see Figure 1). The exceptions are when 1) you log in after a new update of your Textpattern installation, in which case you're initially routed to the [Languages panel](https://docs.textpattern.com/administration/languages-panel), or 2) if you change the default panel to something else via the preference for it in the **Admin** section of the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel). (The Languages and Preferences panels are both under the main Admin menu.) 
 
 The Write panel reveals the editing fields for article content, and various controls for managing content display and publication, such as content organization, date and time, associated images, how you want to format your text, and so on.
 
@@ -41,13 +41,13 @@ The first column of the Write panel is where the main creating, drafting and edi
 
 ### Title
 
-This field is simply where you type the *title* (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e. HTML or Textile, formatting will be added by an article form (see [Form templates](https://docs.textpattern.io/themes/form-templates-explained)). The Textpattern tag that is used to output the title of articles is:
+This field is simply where you type the *title* (for the most parts the main heading, but other heading systems are possible) of your article. You cannot use any formatting in this field (i.e. HTML or Textile, formatting will be added by an article form (see [Form templates](https://docs.textpattern.com/themes/form-templates-explained)). The Textpattern tag that is used to output the title of articles is:
 
 ~~~ html
 <txp:title />
 ~~~
 
-See the [title tag](https://docs.textpattern.io/tags/title) documentation for usage.
+See the [title tag](https://docs.textpattern.com/tags/title) documentation for usage.
 
 ### Body
 
@@ -57,7 +57,7 @@ This large field is where the article is actually written (or pasted, if you pre
 <txp:body />
 ~~~
 
-See the [article tag](https://docs.textpattern.io/tags/article) documentation for usage.
+See the [article tag](https://docs.textpattern.com/tags/article) documentation for usage.
 
 ### Excerpt
 
@@ -69,7 +69,7 @@ In Textpattern, the excerpt is not part of the article body but rather is a disc
 <txp:excerpt />
 ~~~
 
-See the [excerpt tag](https://docs.textpattern.io/tags/excerpt) documentation for usage.
+See the [excerpt tag](https://docs.textpattern.com/tags/excerpt) documentation for usage.
 
 ### Article view
 
@@ -170,7 +170,7 @@ Sections basically control in what area of your website your article will be dis
 
 #### Category
 
-This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an 'Edit' link. Assigning categories of course only works if *there is* at least one article category in the [Categories panel](https://docs.textpattern.io/administration/categories-panel) (there are three sample ones in a default install). The 'Edit' link will open the Categories panel, where you can create or edit categories.
+This control - provided for assigning categories - is composed of two drop-down menus (empty by default) and an 'Edit' link. Assigning categories of course only works if *there is* at least one article category in the [Categories panel](https://docs.textpattern.com/administration/categories-panel) (there are three sample ones in a default install). The 'Edit' link will open the Categories panel, where you can create or edit categories.
 
 The drop-down menus will both list *all* categories by their *title*. This basically allows you to put an article in up to two different categories, which you can then manipulate later according to your planned site architecture and content presentation (such level of discussion is out of scope here). For saved articles this control will show existing category assignments.
 
@@ -184,9 +184,9 @@ By default, at the moment of *opening the Write panel* Textpattern adds the curr
 
 To change your article's date and time value to something other than the current time_, leave the aforementioned box unchecked and type in the date and time you want in the 'Publish date' and 'Publish time' fields provided. If the time is in the future and the Status is 'Live', the article will automatically be published at the given time.
 
-If you are interested in documenting the time when an article has been originally published (whether by its true creating time or by an arbitrary time of first publishing), you shouldn't update the timestamp to 'now' when modifying. The timestamp defines the order of articles when an article list is created by publishing time - a change thus will reflect in the sequence of articles. If you nevertheless want to indicate a 'last modified' date, you can use the [modified](https://docs.textpattern.io/tags/modified) tag in your Article type [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
+If you are interested in documenting the time when an article has been originally published (whether by its true creating time or by an arbitrary time of first publishing), you shouldn't update the timestamp to 'now' when modifying. The timestamp defines the order of articles when an article list is created by publishing time - a change thus will reflect in the sequence of articles. If you nevertheless want to indicate a 'last modified' date, you can use the [modified](https://docs.textpattern.com/tags/modified) tag in your Article type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
 
-If you need the timestamp for publishing schedules apart from marking an origin, you need to indicate the origin otherwise: If you do *not* modify after your 'origin' date, you could use the [modified](https://docs.textpattern.io/tags/modified) tag as an indicator. Else you could provide a custom field (e.g. 'first_published') for that task.
+If you need the timestamp for publishing schedules apart from marking an origin, you need to indicate the origin otherwise: If you do *not* modify after your 'origin' date, you could use the [modified](https://docs.textpattern.com/tags/modified) tag as an indicator. Else you could provide a custom field (e.g. 'first_published') for that task.
 
 #### Expire date/time
 
@@ -204,15 +204,15 @@ For interdependencies between article status and URL-only title see the [Pending
 
 #### Description
 
-The Description text area allows you to provide a concise description of the article. This might be used to display an SEO-friendly meta description for search engines (using the [meta_description](https://docs.textpattern.io/tags/meta_description) tag) or for providing a shorthand explanation of the article content in search results perhaps (in a similar fashion to using the [Excerpt](#excerpt) text area if you are already utilising that field for another purpose).
+The Description text area allows you to provide a concise description of the article. This might be used to display an SEO-friendly meta description for search engines (using the [meta_description](https://docs.textpattern.com/tags/meta_description) tag) or for providing a shorthand explanation of the article content in search results perhaps (in a similar fashion to using the [Excerpt](#excerpt) text area if you are already utilising that field for another purpose).
 
 #### Keywords
 
-The Keywords text area allows you to specify a comma-separated list of words that relate to your article. This list might be used to generate a list of keywords for search engines (using the [meta_keywords](https://docs.textpattern.io/tags/meta_keywords) tag). You may also use keywords to help locate articles later by essentially 'tagging' your articles with related words so that - when searching within Textpattern - you can more easily find what you are looking for. To add keywords, simply type them into the text field provided and separate them with a comma.
+The Keywords text area allows you to specify a comma-separated list of words that relate to your article. This list might be used to generate a list of keywords for search engines (using the [meta_keywords](https://docs.textpattern.com/tags/meta_keywords) tag). You may also use keywords to help locate articles later by essentially 'tagging' your articles with related words so that - when searching within Textpattern - you can more easily find what you are looking for. To add keywords, simply type them into the text field provided and separate them with a comma.
 
 ### Comment options
 
-**Note:** The Comment options region in the Write panel is actually a second-level setting for managing comments at *per article* level; you should have already configured your settings for first-level (site-level) comment management, which is handled in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) at 'Publish' and 'Comments'. There you will find different Comments settings that need your consideration about how to handle comments for all articles in your site by default. If the preference 'Accept comments?' is set to 'No', then  the Comment options section will not appear in the Write panel. Two of the settings - 'On by default?' and 'Default invite' - will determine the defaults in the Comments control at article level. Here, as described below, you can adjust the behaviour as you desire for a particular article.
+**Note:** The Comment options region in the Write panel is actually a second-level setting for managing comments at *per article* level; you should have already configured your settings for first-level (site-level) comment management, which is handled in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel) at 'Publish' and 'Comments'. There you will find different Comments settings that need your consideration about how to handle comments for all articles in your site by default. If the preference 'Accept comments?' is set to 'No', then  the Comment options section will not appear in the Write panel. Two of the settings - 'On by default?' and 'Default invite' - will determine the defaults in the Comments control at article level. Here, as described below, you can adjust the behaviour as you desire for a particular article.
 
 #### On/Off
 
@@ -222,30 +222,30 @@ With a pair of on/off radio buttons you either accept or deny comments for the g
 
 The Invitation field that allows you to customize the text for the link that users will see if comments are 'on'.
 
-The comment link itself will lead to the location in your site where a visitor can actually add a comment to your article. By default the link text is "Comment", but other possibilities might include: "Leave a comment…", "Speak up!", "Respond", etc. - whatever you want. If you choose to have a single invitation for use with all of your articles then it is easiest to just set that value in your site-level Comments settings in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
+The comment link itself will lead to the location in your site where a visitor can actually add a comment to your article. By default the link text is "Comment", but other possibilities might include: "Leave a comment…", "Speak up!", "Respond", etc. - whatever you want. If you choose to have a single invitation for use with all of your articles then it is easiest to just set that value in your site-level Comments settings in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel).
 
 ### Article image
 
-The Article image option enables associating one or more images with an article, as opposed to entering the image into the article itself, and is commonly used in conjunction with the [article_image](https://docs.textpattern.io/tags/article_image) tag. This allows images to appear in the same place across many articles, yet still be easily changed later.
+The Article image option enables associating one or more images with an article, as opposed to entering the image into the article itself, and is commonly used in conjunction with the [article_image](https://docs.textpattern.com/tags/article_image) tag. This allows images to appear in the same place across many articles, yet still be easily changed later.
 
 This feature could be used to power:
 
 * A photoblog, where a photo or gallery of shots is associated with an article, which might contain details about where the images were taken, or what kind of equipment was used to take it.
 * A portfolio, where an illustration or a screenshot of a website is associated with an article, which contains details about the project or the client involved.
-* A news site, where each article has, optionally, one main image that is always placed at the top of the article, and maybe other images used throughout the text (you can use the `offset` attribute of the [images](https://docs.textpattern.io/tags/images) tag to skip images you have already displayed).
+* A news site, where each article has, optionally, one main image that is always placed at the top of the article, and maybe other images used throughout the text (you can use the `offset` attribute of the [images](https://docs.textpattern.com/tags/images) tag to skip images you have already displayed).
 
 There are two ways to assign an image to an article:
 
-1. By ID (as it appears in the [Images panel](https://docs.textpattern.io/administration/images-panel); this only works for images managed through the Textpattern Images panel).
+1. By ID (as it appears in the [Images panel](https://docs.textpattern.com/administration/images-panel); this only works for images managed through the Textpattern Images panel).
 2. By an absolute URL to the image, such as `/images/imagefile.png`.
 
 **Note:** to harness the additional features provided by Textpattern tags such as `<txp:images />`, it is recommended to use image IDs to call article images.
 
-Once the image is associated with an article, [article_image](https://docs.textpattern.io/tags/article_image) is used to display it by placing this tag within 'article' type [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
+Once the image is associated with an article, [article_image](https://docs.textpattern.com/tags/article_image) is used to display it by placing this tag within 'article' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
 
 #### Tip: Using the article image field in relation with captioned figures
 
-You are not limited to the `article_image` tag. As long as the image is in _context of the article_ (aka _article context_), which it is when adding the ID value to this field, then you can use the [images](https://docs.textpattern.io/tags/images) tag too. This could be useful if you wanted to pull individual data values from the image's details (see [Images panel](https://docs.textpattern.io/administration/images-panel) documentation). 
+You are not limited to the `article_image` tag. As long as the image is in _context of the article_ (aka _article context_), which it is when adding the ID value to this field, then you can use the [images](https://docs.textpattern.com/tags/images) tag too. This could be useful if you wanted to pull individual data values from the image's details (see [Images panel](https://docs.textpattern.com/administration/images-panel) documentation). 
 
 For example, here we take advantage of _article context_ by using the `images` and `image_info` tags (and their attributes), along with HTML tags, to display the image as a figure with caption:
 
@@ -258,9 +258,9 @@ For example, here we take advantage of _article context_ by using the `images` a
 </figure>
 ~~~ 
 
-That block of markup (with the middle lines written in [short-form tag notation](https://docs.textpattern.io/tags/tag-basics/shortform-vs-longform-usage)) could be used in an article form, as mentioned, or directly in an article's **Body** or **Excerpt** fields. 
+That block of markup (with the middle lines written in [short-form tag notation](https://docs.textpattern.com/tags/tag-basics/shortform-vs-longform-usage)) could be used in an article form, as mentioned, or directly in an article's **Body** or **Excerpt** fields. 
 
-If you're adding the markup directly to an article content field, and the Write panel editor is set for using Textile (as described in the _Advanced options_ section below), then you would want to perhaps compact the new-line breaks and indents, and begin the block with the `notextile. ` escape element so Textile doesn't apply additional HTML markup erroneously. The idea being you never have to touch the markup again once added to the article. The image itself and all associated parameters would be managed in the [Images panel](https://docs.textpattern.io/administration/images-panel) editor.:
+If you're adding the markup directly to an article content field, and the Write panel editor is set for using Textile (as described in the _Advanced options_ section below), then you would want to perhaps compact the new-line breaks and indents, and begin the block with the `notextile. ` escape element so Textile doesn't apply additional HTML markup erroneously. The idea being you never have to touch the markup again once added to the article. The image itself and all associated parameters would be managed in the [Images panel](https://docs.textpattern.com/administration/images-panel) editor.:
 
 ~~~ html
 notextile. <figure><txp:images><img src="/images/<txp:image_info type="id, ext" />" /><txp:image_info type="caption" wraptag="figcaption" /></txp:images></figure>
@@ -270,11 +270,11 @@ notextile. <figure><txp:images><img src="/images/<txp:image_info type="id, ext" 
 
 This example can only be done for _one_ image in context. You cannot use the **Article image** field to indicate three image IDs and expect Textpattern to know how to parse them into three different blocks of markup. You can still use different blocks of markup to create different figures in an article, but you would have to declare the IDs for the additional images in the opening `images` tag (i.e. `<txp:images id="n">`, where “n” is the ID value). In fact, you could do all the figures this way and not use the **Article image** field at all. But if you only have one image per article, using the field is a good way to go.
 
-See the [article_image](https://docs.textpattern.io/tags/article_image) tag documentation for other ideas about using the **Article image** field with _multiple_ image IDs.
+See the [article_image](https://docs.textpattern.com/tags/article_image) tag documentation for other ideas about using the **Article image** field with _multiple_ image IDs.
 
 ### Custom fields
 
-Custom fields are defined in the **Custom fields** section of the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel), which then makes them available for use here in the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever constructs you create using the [custom_field](https://docs.textpattern.io/tags/custom_field) tag, and possibly the [if_custom_field](https://docs.textpattern.io/tags/if_custom_field) tag.
+Custom fields are defined in the **Custom fields** section of the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel), which then makes them available for use here in the Write panel. The data you enter is *limited to 255 characters*, and is output by whatever constructs you create using the [custom_field](https://docs.textpattern.com/tags/custom_field) tag, and possibly the [if_custom_field](https://docs.textpattern.com/tags/if_custom_field) tag.
 
 ### Advanced options
 
@@ -288,7 +288,7 @@ There are two options regarding markup: 'Article markup' (for the *Body* text ar
 
 The option 'Override form' offers the possibility that single articles may use a different Form template than the overall Form template specified. Let's look at an example for a possible use of this…
 
-In your blog, you normally publish articles which are pure text. So your default form contains only the tags for title, body, etc. On every first day of the month however, you publish a photo of your garden. For this, you need the [article_image](https://docs.textpattern.io/tags/article_image) tag in your form. So you create a form called `garden_image` which, among other tags, contains [article_image](https://docs.textpattern.io/tags/article_image). Whenever you want to publish a photo along with your text, you choose 'Override form' and then `garden_image` from the dropdown list. This way, just this article will use the form `garden_image` for being displayed whereas all other articles will continue to use the default form.
+In your blog, you normally publish articles which are pure text. So your default form contains only the tags for title, body, etc. On every first day of the month however, you publish a photo of your garden. For this, you need the [article_image](https://docs.textpattern.com/tags/article_image) tag in your form. So you create a form called `garden_image` which, among other tags, contains [article_image](https://docs.textpattern.com/tags/article_image). Whenever you want to publish a photo along with your text, you choose 'Override form' and then `garden_image` from the dropdown list. This way, just this article will use the form `garden_image` for being displayed whereas all other articles will continue to use the default form.
 
 ### Text formatting help
 
@@ -296,12 +296,12 @@ Depending on the text filters you have installed (i.e. Textile (the default), Ma
 
 ### Recent articles
 
-The last option is 'Recent articles', and there's not much to say about this option other than it toggles a list of titles for the last ten *most recently modified* articles (new or edited). This makes it easier to move between articles you might want to work on without actually having to jump between the Write panel and the [Articles panel](https://docs.textpattern.io/administration/articles-panel).
+The last option is 'Recent articles', and there's not much to say about this option other than it toggles a list of titles for the last ten *most recently modified* articles (new or edited). This makes it easier to move between articles you might want to work on without actually having to jump between the Write panel and the [Articles panel](https://docs.textpattern.com/administration/articles-panel).
 
 ## Final notes to be aware of
 
-Especially if you like to save your work from time to time while not yet finished, you should take care of the article's *Status*: By default it is 'Live' (although you can change that setting in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel)) - so using 'Save' (or 'Publish') in an unfinished state without altering its status to 'Draft' (recommended) or 'Hidden' will make an article **public** before its time. Pay attention!
+Especially if you like to save your work from time to time while not yet finished, you should take care of the article's *Status*: By default it is 'Live' (although you can change that setting in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel)) - so using 'Save' (or 'Publish') in an unfinished state without altering its status to 'Draft' (recommended) or 'Hidden' will make an article **public** before its time. Pay attention!
 
 When you are done with writing or editing an article, particularly if it's a new article, you will want to make sure you have the various controls on the secondary column of the Write panel configured appropriately. These regard *publishing* an article (or keep it unpublished) in various ways. They come in two portions: Controls you always need statically at the top and a portion of optional controls which you can use for further fine-tuning.
 
-[Next: Articles panel](https://docs.textpattern.io/administration/articles-panel)
+[Next: Articles panel](https://docs.textpattern.com/administration/articles-panel)

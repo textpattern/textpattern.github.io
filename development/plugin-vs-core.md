@@ -67,7 +67,7 @@ Plugins don't usually have hundreds of lines of code, thus are easier (and often
 
 ### Plugin lifespan
 
-Unlike core code, which is maintained in a centralized [Textpattern repository](https://docs.textpattern.io/development/textpattern-source-code-repositories) as core developers come and go, plugins tend to have short lifespans and fall out of use. This is usually due to one of three situations:
+Unlike core code, which is maintained in a centralized [Textpattern repository](https://docs.textpattern.com/development/textpattern-source-code-repositories) as core developers come and go, plugins tend to have short lifespans and fall out of use. This is usually due to one of three situations:
 
 1. The plugin developer abandons the community (for any number of personal reasons), leaving their existing plugins 'orphaned'.[^4]
 2. The plugin becomes obsolete (and subsequently abandoned) by the introduction of a new and innovative plugin from someone else that provides the same capabilities, and then some.[^5]
@@ -91,20 +91,20 @@ So there's a couple of messages here to wrap up depending on who you are…
 
 **Plugin users:**
 
-If you're [using plugins](https://docs.textpattern.io/administration/plugins-panel), make sure you're using plugins from reliable sources and developers. Do the background checking before you install anything.
+If you're [using plugins](https://docs.textpattern.com/administration/plugins-panel), make sure you're using plugins from reliable sources and developers. Do the background checking before you install anything.
 
 If have feature requests, don't direct them to core, direct them to improve the plugins you use, or to the creation of a new plugin that provides that specialized function.
 
 **Plugin developers:**
 
-If you're [developing plugins](https://docs.textpattern.io/development/), make sure you're not reinventing the wheel, and your code is good (following Textpattern best practices). And when time comes to abandon them, make it clear at all your plugin source locations that they are no longer supported - a common courtesy for the community.
+If you're [developing plugins](https://docs.textpattern.com/development/), make sure you're not reinventing the wheel, and your code is good (following Textpattern best practices). And when time comes to abandon them, make it clear at all your plugin source locations that they are no longer supported - a common courtesy for the community.
 
-[^1]: If you're developing plugins, make sure you understand the related [Disclaimer](https://docs.textpattern.io/development/#disclaimer).
+[^1]: If you're developing plugins, make sure you understand the related [Disclaimer](https://docs.textpattern.com/development/#disclaimer).
 
 [^2]: Opposing opinions about the utility of any one feature always exist, of course, and Textpattern is not immune to this. For a long time, multi-lingual functionality was considered best handled through a plugin, and was, but Textpattern's large multi-lingual user base has lead to the effort to make multi-lingual handling core functionality. Similar situations are in progress for improved image handling, custom fields, and maybe one or two others that will appear in future versions; features that were handled by plugins alone for a long time. So it's not impossible to see features added to core, but it does take time, and a significant number of community members showing a keen desire for the changes - patch contributions also help.
 
 [^3]: A fascinating reversal of feature/extension development is in the case of article commments. Comments are a core feature from legacy code. But as years have gone by and the nature of blogging has evolved against social media, the fashion for using comments on the web has waned. An increasing number of Textpattern users would like to see the [comments functionality removed from core](https://forum.textpattern.io/viewtopic.php?id=45956) entirely, rather than have to turn comments off and hide related elements from the UI if they don't want the distraction. The idea, rather, would be to turn this core feature into a plugin extension that users may install if they still value comments. There is no plan to remove core comments functionality at this time, nor would it likely be removed until a robust plugin replaced it, and patches were made to clean up the legacy code. Certainly a monster plugin idea to consider, and one that would be popular for users and non-users alike.
 
-[^4]: 'Orphaned' and 'adopted' plugins are talked about in [plugin prefixes](https://docs.textpattern.io/development/plugin-developer-prefixes).
+[^4]: 'Orphaned' and 'adopted' plugins are talked about in [plugin prefixes](https://docs.textpattern.com/development/plugin-developer-prefixes).
 
 [^5]: This is the worst situation for expiring plugins, because their developers - bested and heartbroken - usually won't make it clear that a plugin of theirs has been made obsolete. They don't officially retire the plugin and tell the community it shouldn't be used. Thus there's often a certain percentage of 'detritus' plugins in the plugin pool, which are not safe to use, but which the unsuspecting user might use anyway because the plugin is still floating around and unmarked as hazardous.

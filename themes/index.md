@@ -20,12 +20,12 @@ There is a new themes site coming. Few details are available at this point, but 
 
 With the arrival of Textpattern 4.7 comes new core theming functionality for the front-end:
 
-* [Front-end themes](https://docs.textpattern.io/themes/front-end-themes)
-* [Themes panel](https://docs.textpattern.io/administration/themes-panel) (administration doc)
+* [Front-end themes](https://docs.textpattern.com/themes/front-end-themes)
+* [Themes panel](https://docs.textpattern.com/administration/themes-panel) (administration doc)
 * [Textpattern gains Themes support](https://textpattern.com/weblog/403/textpattern-cms-gains-themes-support) (developer overview on theme functionality)
 
 ## Admin-side themes
 
 Admin-side themes are handled differently to front-side themes and were created prior to Textpattern 4.7:
 
-* [Admin-side themes](https://docs.textpattern.io/themes/admin-side-themes)
+* [Admin-side themes](https://docs.textpattern.com/themes/admin-side-themes)

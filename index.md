@@ -18,12 +18,12 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### Installation handling
 
-* [Installing Textpattern](https://docs.textpattern.io/installation/) (detailed instructions)
-* [Upgrading Textpattern](https://docs.textpattern.io/installation/upgrading-textpattern)
-* [Moving a Textpattern installation](https://docs.textpattern.io/installation/moving-textpattern)
-* [Post install and upgrade routines](https://docs.textpattern.io/installation/post-install-and-upgrade-routines)
-* [Multi-site Textpattern installations](https://docs.textpattern.io/installation/multi-site-textpattern)
-* [Troubleshooting a Textpattern installation/upgrade](https://docs.textpattern.io/installation/troubleshooting-textpattern)
+* [Installing Textpattern](https://docs.textpattern.com/installation/) (detailed instructions)
+* [Upgrading Textpattern](https://docs.textpattern.com/installation/upgrading-textpattern)
+* [Moving a Textpattern installation](https://docs.textpattern.com/installation/moving-textpattern)
+* [Post install and upgrade routines](https://docs.textpattern.com/installation/post-install-and-upgrade-routines)
+* [Multi-site Textpattern installations](https://docs.textpattern.com/installation/multi-site-textpattern)
+* [Troubleshooting a Textpattern installation/upgrade](https://docs.textpattern.com/installation/troubleshooting-textpattern)
 
 </div>
 <div class="layout-3col">
@@ -31,9 +31,9 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### Site administration
 
-* [Textpattern administration](https://docs.textpattern.io/administration/) (admin-side structure and functionality)
-* [Administration fast-track](https://docs.textpattern.io/administration/admin-fast-track) (workflow insights to get up to speed quick)
-* [Textpattern security](https://docs.textpattern.io/administration/security) (read before you worry or hack the core)
+* [Textpattern administration](https://docs.textpattern.com/administration/) (admin-side structure and functionality)
+* [Administration fast-track](https://docs.textpattern.com/administration/admin-fast-track) (workflow insights to get up to speed quick)
+* [Textpattern security](https://docs.textpattern.com/administration/security) (read before you worry or hack the core)
 
 </div>
 <div class="layout-3col">
@@ -42,13 +42,13 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 ### Tags
 
 **Core tags**
-* [Tags reference](https://docs.textpattern.io/tags/)
-* [Tag use basics](https://docs.textpattern.io/tags/tag-basics/)
-* [Tags in development](https://docs.textpattern.io/tags/tags-in-development)
+* [Tags reference](https://docs.textpattern.com/tags/)
+* [Tag use basics](https://docs.textpattern.com/tags/tag-basics/)
+* [Tags in development](https://docs.textpattern.com/tags/tags-in-development)
 
 **Custom tags**
-* [Custom short-tags and shortcodes](https://docs.textpattern.io/tags/shortcodes/custom-short-tags-and-shortcodes)
-* [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/)
+* [Custom short-tags and shortcodes](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes)
+* [Shortcode examples](https://docs.textpattern.com/tags/shortcodes/)
 
 </div>
 <div class="layout-3col">
@@ -56,9 +56,9 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### Themes
 
-* [Getting started with themes](https://docs.textpattern.io/themes/index.html)
-* [Front-end themes](https://docs.textpattern.io/themes/front-end-themes)
-* [Admin-side themes](https://docs.textpattern.io/themes/admin-side-themes)
+* [Getting started with themes](https://docs.textpattern.com/themes/index.html)
+* [Front-end themes](https://docs.textpattern.com/themes/front-end-themes)
+* [Admin-side themes](https://docs.textpattern.com/themes/admin-side-themes)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
 
 </div>
@@ -67,8 +67,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### Development
 
-* [Plugin development](https://docs.textpattern.io/development/)
-* [Textpattern source code repositories](https://docs.textpattern.io/development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
+* [Plugin development](https://docs.textpattern.com/development/)
+* [Textpattern source code repositories](https://docs.textpattern.com/development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
 * [Plugins website](https://github.com/textpattern/textpattern-plugins-website) (in development)
 
 
@@ -78,8 +78,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 ### FAQs
 
-* [Textpattern basic tutorial](https://docs.textpattern.io/faqs/textpattern-basic-tutorial)
-* [Complete list of Textpattern FAQs](https://docs.textpattern.io/faqs/) (the most commonly-asked Textpattern questions)
+* [Textpattern basic tutorial](https://docs.textpattern.com/faqs/textpattern-basic-tutorial)
+* [Complete list of Textpattern FAQs](https://docs.textpattern.com/faqs/) (the most commonly-asked Textpattern questions)
 
 </div>
 </div>

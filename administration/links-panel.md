@@ -8,7 +8,7 @@ description: The Links panel provides a way of keeping track of links and lists 
 
 # Links panel
 
-The Links panel provides a way of keeping track of links and lists of resources (often external to the site) so they may be included in article content or [Form templates](https://docs.textpattern.io/themes/form-templates-explained) in a convenient way.
+The Links panel provides a way of keeping track of links and lists of resources (often external to the site) so they may be included in article content or [Form templates](https://docs.textpattern.com/themes/form-templates-explained) in a convenient way.
 
 On this page:
 
@@ -33,7 +33,7 @@ So the Links panel in a way combines what for articles is divided in two panels 
 
 While you could place links to external resources (or internal pages) directly into any article, this would mean a lot of work keeping track and maintaining links and lists of resources. Textpattern provides a better way: manage your links (and lists of links) *in a central place* and then include them in article content or Form templates with Textpattern tags. This way changes will take effect at every occurrence of a link and - for example - additions to a topic list of resource links will automatically be included wherever you placed the list.
 
-The [linklist](https://docs.textpattern.io/tags/linklist) tag will output links from the link repository, with filter criteria and presentation settings applied.
+The [linklist](https://docs.textpattern.com/tags/linklist) tag will output links from the link repository, with filter criteria and presentation settings applied.
 
 ## Create a new link
 
@@ -45,15 +45,15 @@ This button will take you to the Link property editor (see below) where you can 
 
 Each link has various pieces of information associated with it, as described here:
 
-**Title:** a title for the link, which can be harnessed by tags (such as [linkdesctitle](https://docs.textpattern.io/tags/linkdesctitle)).
+**Title:** a title for the link, which can be harnessed by tags (such as [linkdesctitle](https://docs.textpattern.com/tags/linkdesctitle)).
 
 **Sort Value:** assigns listing priorities by number or letter to your links. See [Link sorting rules](#link-sorting-rules) below for a full explanation.
 
 **URL:** the hyperlink value assigned to the link.
 
-**Category:** a category for the link. [Categories](https://docs.textpattern.io/administration/categories-panel) are used to generate lists of links.
+**Category:** a category for the link. [Categories](https://docs.textpattern.com/administration/categories-panel) are used to generate lists of links.
 
-**Description:** Text that tells something about the link, and can be harnessed by tags (such as [link_description](https://docs.textpattern.io/tags/link_description)).
+**Description:** Text that tells something about the link, and can be harnessed by tags (such as [link_description](https://docs.textpattern.com/tags/link_description)).
 
 After editing, you have to **Save** your edits.
 
@@ -84,7 +84,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.com/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of links which meet the criteria.
 
@@ -106,4 +106,4 @@ For performing changes now you go to the drop-down list 'With selected…' and c
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of links listed per page by selecting another value from the number range.
 
-[Next: Categories panel](https://docs.textpattern.io/administration/categories-panel)
+[Next: Categories panel](https://docs.textpattern.com/administration/categories-panel)

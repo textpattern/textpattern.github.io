@@ -16,11 +16,11 @@ Certain Textpattern tags are only intended for use in particular places. If you 
 
 'Article' form tags only work in an **article context**. They refer to one single article, so they can only be used in a context that identifies one particular article. Specifically, they may be used:
 
-* On individual article [Page templates](https://docs.textpattern.io/themes/page-templates-explained).
-* In 'article' type [Form templates](https://docs.textpattern.io/themes/form-templates-explained) that have been displayed using a `<txp:article … />` or `<txp:article_custom … />` tag.
-* On list [Page templates](https://docs.textpattern.io/themes/page-templates-explained) if the tags are wrapped in `<txp:if_individual_article>…</txp:if_individual_article>`.
+* On individual article [Page templates](https://docs.textpattern.com/themes/page-templates-explained).
+* In 'article' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained) that have been displayed using a `<txp:article … />` or `<txp:article_custom … />` tag.
+* On list [Page templates](https://docs.textpattern.com/themes/page-templates-explained) if the tags are wrapped in `<txp:if_individual_article>…</txp:if_individual_article>`.
 
-Article context tags will not work directly in article list [Page templates](https://docs.textpattern.io/themes/page-templates-explained), because list pages are not associated with any single article.
+Article context tags will not work directly in article list [Page templates](https://docs.textpattern.com/themes/page-templates-explained), because list pages are not associated with any single article.
 
 Similarly, 'Comment' form tags may only be used in the form that is used to display each individual comment (usually named `comments`); 'File' form and 'Link' form tags operate likewise.
 

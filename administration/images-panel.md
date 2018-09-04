@@ -8,7 +8,7 @@ description: The Images panel lets you manage everything you need to include ima
 
 # Images panel
 
-The Images panel lets you manage everything you need to include images (and galleries) in your content. From this panel you can upload images, create thumbnails, add captions (and alternate text), build groups of images (using categories) and generate tags to place images in your article content or [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
+The Images panel lets you manage everything you need to include images (and galleries) in your content. From this panel you can upload images, create thumbnails, add captions (and alternate text), build groups of images (using categories) and generate tags to place images in your article content or [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
 
 On this page:
 
@@ -51,7 +51,7 @@ The image details panel shows the unique ID number of the image. In addition the
 
 **Image name:** here by default the images *filename* will be entered automatically. If you'd like to rename the image you can do so here.
 
-**Category:** a category for the image. [Categories](https://docs.textpattern.io/administration/categories-panel) are used to generate lists of images and galleries.
+**Category:** a category for the image. [Categories](https://docs.textpattern.com/administration/categories-panel) are used to generate lists of images and galleries.
 
 **Alternate text:** text which will replace the image when it's broken or images will not be downloaded. Very important for SEO, web standards and accessibility.
 
@@ -81,7 +81,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.com/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of images which meet the criteria.
 
@@ -117,4 +117,4 @@ The image tag builder, selected from the **Tags** table column, has several opti
 
 **Wrap tag**: For example `p`. Tells Textpattern to surround the image with this HTML tag when rendered. Output would be `<p><img src="etc" /></p>` in this example.
 
-[Next: Files panel](https://docs.textpattern.io/administration/files-panel)
+[Next: Files panel](https://docs.textpattern.com/administration/files-panel)

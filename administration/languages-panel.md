@@ -39,4 +39,4 @@ You can also install a new language strings manually here at any time, such as f
 
 The strings will often come in the form of a downloadable Textpack, distributed with a plugin to permit the plugin’s language strings to be used natively within Textpattern. International authors may then translate these packs as necessary and redistribute the localized content to the community.
 
-[Next: Users panel](https://docs.textpattern.io/administration/users-panel)
+[Next: Users panel](https://docs.textpattern.com/administration/users-panel)

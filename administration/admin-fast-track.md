@@ -11,8 +11,8 @@ description: This is a fast-track orientation to help you build your first publi
 This will integrate the FAQ: ive-installed-textpattern-now-what
 
 This is a fast-track orientation to help you build your first publishing architecture in Textpattern. It assumes you've [installed, configured,
-and diagnosed a new instance of Textpattern](https://docs.textpattern.io/installation/installing-textpattern)
-on your web server and looked over the [administration](https://docs.textpattern.io/administration/)
+and diagnosed a new instance of Textpattern](https://docs.textpattern.com/installation/installing-textpattern)
+on your web server and looked over the [administration](https://docs.textpattern.com/administration/)
 docs. If you've done that but nothing more, you're now in a good place.
 This orientation will map out the administration process and associated
 locations in the administration side for building a single-author blog
@@ -53,7 +53,7 @@ below this line still needs editing
 ### System security and troubleshooting {#system-security-and-troubleshooting .sectionedit2#system_security_and_troubleshooting}
 
 The next step is to go the
-[Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel) where you'll see a few items in red that need clearing up
+[Diagnostics panel](https://docs.textpattern.com/administration/diagnostics-panel) where you'll see a few items in red that need clearing up
 following a new install. New install errors are standard procedure to
 let you know to delete the setup folder (if you haven't already), and to
 create write permissions on the *tmp* and *files* folders in the [file
@@ -65,10 +65,10 @@ each case.
 
 Since user accounts are rather important for being able to do anything
 at all, it makes sense to go have a look at the
-[Users panel](https://docs.textpattern.io/administration/users-panel) next.
+[Users panel](https://docs.textpattern.com/administration/users-panel) next.
 Here is where you change your password and email address. And if other
 users will have access to the admin-side, this is where you'll create
-and edit their account details too, including [User roles and privileges](https://docs.textpattern.io/administration/user-roles-and-privileges).
+and edit their account details too, including [User roles and privileges](https://docs.textpattern.com/administration/user-roles-and-privileges).
 
 **Recommended reading:**
 
@@ -88,11 +88,11 @@ and edit their account details too, including [User roles and privileges](https:
 
 ### Site identity and default configurations {#site-identity-and-default-configurations .sectionedit4#site_identity_and_default_configurations}
 
-With your installation secure, and your password in place, you should set a few defaults that will influence the website's identity and base-line publishing behaviour. You do this in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel) and [Languages panel](https://docs.textpattern.io/administration/languages-panel), the latter you've already been to.
+With your installation secure, and your password in place, you should set a few defaults that will influence the website's identity and base-line publishing behaviour. You do this in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel) and [Languages panel](https://docs.textpattern.com/administration/languages-panel), the latter you've already been to.
 
 **Recommended reading:**
 
-* [Preferences panel](https://docs.textpattern.io/administration/preferences-panel)
+* [Preferences panel](https://docs.textpattern.com/administration/preferences-panel)
 
 ### Establishing site structure and design {#establishing-site-structure-and-design .sectionedit5#establishing_site_structure_and_design}
 
@@ -126,4 +126,4 @@ smd_bio/smd_user_manager in relation of user accounts)
 
 ### Similar reading
 
-* [Textpattern installation quickstart](https://docs.textpattern.io/installation/installing-textpattern)
+* [Textpattern installation quickstart](https://docs.textpattern.com/installation/installing-textpattern)

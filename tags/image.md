@@ -23,7 +23,7 @@ On this page:
 <txp:image />
 ~~~
 
-The **image** tag is a *single* tag that Textpattern will replace with the `<img src="…">` HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern [Images panel](https://docs.textpattern.io/administration/images-panel).
+The **image** tag is a *single* tag that Textpattern will replace with the `<img src="…">` HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern [Images panel](https://docs.textpattern.com/administration/images-panel).
 
 The tag outputs the `alt`, `width`, and `height` attributes by default. If you don't need to set image dimensions (e.g. if you use `width: 100%` in your CSS), you can 'turn off' the effect of the `width` and `height` attributes by using `width="0" height="0"`.
 
@@ -35,7 +35,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"` <span class="footnote warning">v4.0.4+</span>
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` for the image's `alt` and `title` attributes.
-: **Values:** See the [tag escaping](https://docs.textpattern.io/tags/tag-basics/tag-escaping) documentation for all possible values.
+: **Values:** See the [tag escaping](https://docs.textpattern.com/tags/tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
 `height="integer"` <span class="footnote warning">v4.3.0+</span>
@@ -47,10 +47,10 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `id="integer"`
-: Specifies the `id`, assigned at upload of the image, to display. Can be found on the [Images panel](https://docs.textpattern.io/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](images) tag or form.
+: Specifies the `id`, assigned at upload of the image, to display. Can be found on the [Images panel](https://docs.textpattern.com/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](images) tag or form.
 
 `name="image name"`
-: Specifies which image to display by its image `name` as shown on the [Images panel](https://docs.textpattern.io/administration/images-panel).
+: Specifies which image to display by its image `name` as shown on the [Images panel](https://docs.textpattern.com/administration/images-panel).
 
 `width="integer"` <span class="footnote warning">v4.3.0+</span>
 : Specify an image `width` which overrides the value stored in the database. Use `width="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the width if a height is used).
@@ -62,7 +62,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value, if set, otherwise to the `<img>` tag.
-: **Default:** unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** unset (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
 
 `style="style rule"`
 : Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.
@@ -70,7 +70,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `wraptag="element"` <span class="footnote warning">v4.0.4+</span>
 : HTML tag to be used to wrap the `<img>` tag, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

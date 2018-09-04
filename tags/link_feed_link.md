@@ -30,7 +30,7 @@ The **link_feed_link** tag is a *single* tag. Textpattern will replace this tag 
 Tag will accept the following attributes (**case-sensitive**):
 
 `category="category name"`
-: Restrict to specified category. Note: the category name may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories panel](https://docs.textpattern.io/administration/categories-panel) to ensure you are using the correct name.
+: Restrict to specified category. Note: the category name may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories panel](https://docs.textpattern.com/administration/categories-panel) to ensure you are using the correct name.
 : **Values:** category name.
 : **Default:** current category.
 
@@ -54,15 +54,15 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"` <span class="footnote warning">v4.3.0+</span>
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
 
 `label="text"`
 : Label prepended to item.
-: **Default:** unset (but see [label cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#label) for exceptions).
+: **Default:** unset (but see [label cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#label) for exceptions).
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 Note: `label` and `wraptag` attributes are applicable only when using `format` of `a` (`label` used as link text).
 {: .alert-block .information}

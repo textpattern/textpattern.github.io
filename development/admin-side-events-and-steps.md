@@ -10,7 +10,7 @@ description: These are the main events and steps that Textpattern uses as you in
 
 These are the main events and steps that Textpattern uses as you interact with the admin-side interface. An *event* is usually the panel or plugin name, e.g. `prefs` or `image`. A *step* is Textpattern terminology for an action that occurs on that panel, for example `save` or `image_edit`.
 
-Although they are not direct [callbacks](https://docs.textpattern.io/development/core-callbacks-reference), you may hook into these events and steps from a plugin to perform an action.
+Although they are not direct [callbacks](https://docs.textpattern.com/development/core-callbacks-reference), you may hook into these events and steps from a plugin to perform an action.
 
 When raising callbacks of this nature, they are normally run in what is referred to as *post* mode, i.e. after Textpattern has serviced the routine. You may elect to run it in *pre* mode so you can intercept the callback before Textpattern services it. This is handy for manipulating submitted data before Textpattern receives it. To do this, set the fourth argument to `register_callback()` as `true`.
 

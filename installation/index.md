@@ -8,7 +8,7 @@ description: These are detailed instructions for installing Textpattern.
 
 # Installing Textpattern
 
-These are detailed instructions for installing Textpattern. The instructions follow a process of using a (S)FTP client, which you presumably have ([Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, and [WinSCP](https://winscp.net/eng/index.php/) is for Windows). If you're familiar with installing CMS software and prefer the quick notes, see the [README.txt](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. If you're more of a command-line jockey, the bits in [working with the development branch](https://docs.textpattern.io/development/textpattern-source-code-repositories) should suit you.
+These are detailed instructions for installing Textpattern. The instructions follow a process of using a (S)FTP client, which you presumably have ([Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, and [WinSCP](https://winscp.net/eng/index.php/) is for Windows). If you're familiar with installing CMS software and prefer the quick notes, see the [README.txt](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. If you're more of a command-line jockey, the bits in [working with the development branch](https://docs.textpattern.com/development/textpattern-source-code-repositories) should suit you.
 
 On this page:
 
@@ -50,17 +50,17 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `files`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it's for:** Empty by default. It's where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files panel](https://docs.textpattern.io/administration/files-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel).
+: **What it's for:** Empty by default. It's where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files panel](https://docs.textpattern.com/administration/files-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](https://docs.textpattern.com/administration/diagnostics-panel).
 
 `images`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it's for:** Empty by default. It's where images will go when you upload them in the [Images panel](https://docs.textpattern.io/administration/images-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel).
+: **What it's for:** Empty by default. It's where images will go when you upload them in the [Images panel](https://docs.textpattern.com/administration/images-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](https://docs.textpattern.com/administration/diagnostics-panel).
 
 `rpc`
 : **Type:** directory.
 : **Removable?:** yes.
-: **What it's for:** Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#enable-xml-rpc-server).
+: **What it's for:** Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel#enable-xml-rpc-server).
 
 `sites`
 : **Type:** directory.
@@ -75,12 +75,12 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `themes`
 : **Type:** directory.
 : **Removable?:** no.
-: **What it's for:** Empty by default. It's where themes will go if you choose to export them to disk from the [Themes panel](https://docs.textpattern.io/administration/themes-panel) as a backup or for sharing them with others. Each theme has its own subdirectory inside. Note that you may see a warning about the directory's `chmod` status (editing rights) at the top of the Themes panel if the web server does not have sufficient write permissions.
+: **What it's for:** Empty by default. It's where themes will go if you choose to export them to disk from the [Themes panel](https://docs.textpattern.com/administration/themes-panel) as a backup or for sharing them with others. Each theme has its own subdirectory inside. Note that you may see a warning about the directory's `chmod` status (editing rights) at the top of the Themes panel if the web server does not have sufficient write permissions.
 
 `.htaccess`
 : **Type:** file.
 : **Removable?:** yes/no.
-: **What it's for:** Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should not alter or remove the default content, which Textpattern relies on. `.htaccess` can be safely removed if you run Textpattern a non-Apache web server, e.g. [Nginx](https://docs.textpattern.io/installation/configuring-a-web-server-for-textpattern).
+: **What it's for:** Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should not alter or remove the default content, which Textpattern relies on. `.htaccess` can be safely removed if you run Textpattern a non-Apache web server, e.g. [Nginx](https://docs.textpattern.com/installation/configuring-a-web-server-for-textpattern).
 
 `index.php`
 : **Type:** file.
@@ -90,7 +90,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `css.php`
 : **Type:** file.
 : **Removable?:** yes/no.
-: **What it's for:** Negotiates the front-end stylesheets you create in the [Styles panel](https://docs.textpattern.io/administration/styles-panel). If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
+: **What it's for:** Negotiates the front-end stylesheets you create in the [Styles panel](https://docs.textpattern.com/administration/styles-panel). If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
 
 `README.txt`
 : **Type:** file.
@@ -115,7 +115,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 
 If you intend to use Textpattern to manage the entire website, you'll upload the install package to your web root (i.e. the root of your web domain). For many hosts, the path to the root looks like this: */users/home/{username}/web/public/*, where {username} is your user account name. You would upload the Textpattern package to the `/public` directory (equal to `yourexample.com`).
 
-You may, of course, install it in a sub-directory if you're only using Textpattern to run a blog, for example, as part of a larger site (generally people who do that end up [moving the installation](https://docs.textpattern.io/installation/moving-textpattern) later).
+You may, of course, install it in a sub-directory if you're only using Textpattern to run a blog, for example, as part of a larger site (generally people who do that end up [moving the installation](https://docs.textpattern.com/installation/moving-textpattern) later).
 
 You will use FTP, or Secure-FTP (SFTP) if your web host requires it, to upload the package to your desired web server location. Two capable clients are WinSCP for Windows and Transmit for Mac.
 
@@ -137,7 +137,7 @@ Choose the language you want and select the **Submit** button.
 
 [^3]: If you don't see this screen, check your URL path. Should it be `https` or `www.`? Did you install in a sub-directory? Is there a typo?
 
-[^4]: You can change the UI language any time after setup in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
+[^4]: You can change the UI language any time after setup in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel).
 
 ### Step 1: Set database details
 
@@ -223,7 +223,7 @@ To create the administrator account and generate the database tables, add the fo
 
 #### Site configuration
 
-Under this area, you're asked to select the admin-side theme you want to use. The default theme is Hive. You can change the admin-side theme choice at any time in [Preferences](https://docs.textpattern.io/administration/preferences-panel) after logging in.
+Under this area, you're asked to select the admin-side theme you want to use. The default theme is Hive. You can change the admin-side theme choice at any time in [Preferences](https://docs.textpattern.com/administration/preferences-panel) after logging in.
 
 When ready select the **Next** button.
 
@@ -237,5 +237,5 @@ The screen will also suggest deleting the `/setup` directory for security reason
 
 1. Use your S/FTP client to connect to your web server. Go to the `/textpattern/setup` directory, and delete it (contents too). This eliminates one potential diagnostic warning you would otherwise see later.
 2. Return to your browser screen and select the "Main interface" link, which takes you to the administration login location. Log in using your new administrator account details (entered on the previous install screen), and check the box for remembering you, if you like.
-3. Proceed to the [Diagnostics panel](https://docs.textpattern.io/administration/diagnostics-panel), as Textpattern suggested, to troubleshoot any warnings and errors you see.
+3. Proceed to the [Diagnostics panel](https://docs.textpattern.com/administration/diagnostics-panel), as Textpattern suggested, to troubleshoot any warnings and errors you see.
 4. Go to the public side of your website (the homepage), easy to do by selecting its name in the navigation bar of any admin-side location. Read the tips and suggestions provided on the default article titled, 'Welcome to your site'. They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.

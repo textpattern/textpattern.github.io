@@ -24,7 +24,7 @@ On this page:
 <txp:section />
 ~~~
 
-The **section** tag can be used as either a *single* tag or *container* tag. It will display information about the section as defined by either the `name` attribute, the section currently being viewed, or the section of the article being displayed (if used within 'article' type [Form templates](https://docs.textpattern.io/themes/form-templates-explained), or an [if_individual_article](if_individual_article) conditional tag).
+The **section** tag can be used as either a *single* tag or *container* tag. It will display information about the section as defined by either the `name` attribute, the section currently being viewed, or the section of the article being displayed (if used within 'article' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained), or an [if_individual_article](if_individual_article) conditional tag).
 
 When used as a containing tag, it will turn the contents into a link to that section. Otherwise, it will return plain text.
 
@@ -57,11 +57,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value. If no wraptag is supplied (and `link="1"`), the class is applied to the anchor instead.
-: **Default:** unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** unset (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

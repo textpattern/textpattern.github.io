@@ -8,7 +8,7 @@ description: The Pages panel is where the Page templates used within a Textpatte
 
 # Pages panel
 
-The Pages panel contains an edit field, a list of existing [Page templates](https://docs.textpattern.io/themes/page-templates-explained), and a tag builder to help you construct page content. It's important to note that, like everything else, the Page templates are stored in the database - there is no physical file on the server that contains this Page template.
+The Pages panel contains an edit field, a list of existing [Page templates](https://docs.textpattern.com/themes/page-templates-explained), and a tag builder to help you construct page content. It's important to note that, like everything else, the Page templates are stored in the database - there is no physical file on the server that contains this Page template.
 
 On this page:
 
@@ -17,7 +17,7 @@ On this page:
 
 A list of current Page templates are displayed. To select a template for editing, select its name and Textpattern will fill the 'Page code' edit field with the selected template. You may then edit the Page template code and save it back into the Textpattern database using the Save button, located below the edit field. Controls for creating a brand new Page template or creating a copy of an existing Page template are also available.
 
-Note that the database can only store a maximum of 64KB of data in each Page template. Be aware of this limitation if you are pasting templates in from third party sites: check that the content has not been truncated after you Save it. If the content is too large to fit in the field, you can break it up into chunks and store them in [Forms](https://docs.textpattern.io/administration/forms-panel) - reusable snippets of template content. See the [output_form tag](https://docs.textpattern.io/tags/output_form) for more information.
+Note that the database can only store a maximum of 64KB of data in each Page template. Be aware of this limitation if you are pasting templates in from third party sites: check that the content has not been truncated after you Save it. If the content is too large to fit in the field, you can break it up into chunks and store them in [Forms](https://docs.textpattern.com/administration/forms-panel) - reusable snippets of template content. See the [output_form tag](https://docs.textpattern.com/tags/output_form) for more information.
 
 ## Creating a new Page template
 
@@ -33,4 +33,4 @@ If you have already altered the 'Page name' field before duplication, the new Pa
 
 Your new Page template is then immediately available for editing.
 
-[Next: Forms panel](https://docs.textpattern.io/administration/forms-panel)
+[Next: Forms panel](https://docs.textpattern.com/administration/forms-panel)

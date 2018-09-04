@@ -8,7 +8,7 @@ description: The Visitor logs panel is where you can monitor who, and what, visi
 
 # Visitor logs panel
 
-The Visitor logs panel is where you can monitor who (web surfers) and what (spambots, search engine spiders, etc.) visits your site. Although the information is not all-encompassing, it is detailed enough for keeping an eye on traffic behaviour. **Note:** This panel is only available if you have turned on logging functionality in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel#logging).
+The Visitor logs panel is where you can monitor who (web surfers) and what (spambots, search engine spiders, etc.) visits your site. Although the information is not all-encompassing, it is detailed enough for keeping an eye on traffic behaviour. **Note:** This panel is only available if you have turned on logging functionality in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel#logging).
 
 On this page:
 
@@ -26,7 +26,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.io/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.com/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of visitor logs which meet the criteria.
 

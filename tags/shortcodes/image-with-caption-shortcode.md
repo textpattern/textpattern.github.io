@@ -50,7 +50,7 @@ Create a new Form template (of any type), name it **figure**, paste the followin
 
 Now you have a custom shortcode. By creating that code, you automatically create a corresponding short-tag too.
 
-The Textile attribute (and values), `escape="tidy,textile"`, used in the example above is optional. It enables rendering any Textile you may want to use in your image captions (e.g. a source link). See [Escaping tags](https://docs.textpattern.io/tags/tag-basics/tag-escaping) for more about this new attribute functionality, which works on every Textpattern tag.
+The Textile attribute (and values), `escape="tidy,textile"`, used in the example above is optional. It enables rendering any Textile you may want to use in your image captions (e.g. a source link). See [Escaping tags](https://docs.textpattern.com/tags/tag-basics/tag-escaping) for more about this new attribute functionality, which works on every Textpattern tag.
 
 ## Short-tag to use
 
@@ -82,4 +82,4 @@ Or as part of a grid of images:
 </txp:images>
 ~~~
 
-See more [Shortcode examples](https://docs.textpattern.io/tags/shortcodes/).
+See more [Shortcode examples](https://docs.textpattern.com/tags/shortcodes/).

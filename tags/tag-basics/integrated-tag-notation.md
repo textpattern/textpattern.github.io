@@ -45,7 +45,7 @@ That’s great, but the reason your using Textpattern is to automate content out
 </figure>
 ~~~
 
-Let’s walk through the markup for clarity. Immediately within the HTML `<figure>` tags are containing Textpattern [images](https://docs.textpattern.io/tags/images) tags:
+Let’s walk through the markup for clarity. Immediately within the HTML `<figure>` tags are containing Textpattern [images](https://docs.textpattern.com/tags/images) tags:
 
 ~~~ html
 …
@@ -55,7 +55,7 @@ Let’s walk through the markup for clarity. Immediately within the HTML `<figur
 …
 ~~~
 
-We need to add this extra tag container to make use of the corresponding [image_info](https://docs.textpattern.io/tags/image_info) tag functionality. That’s the only reason. A lot of Textpattern tags work in relation to one another like that, where a containing parent tag allows child tags to do their thing.
+We need to add this extra tag container to make use of the corresponding [image_info](https://docs.textpattern.com/tags/image_info) tag functionality. That’s the only reason. A lot of Textpattern tags work in relation to one another like that, where a containing parent tag allows child tags to do their thing.
 
 We first see the `<txp:image_info />` tag used in this line multiple times:
 
@@ -83,7 +83,7 @@ And again in the line after:
 
 In each instance of `<txp:image_info />`, the tag is pulling a specific data value for the image in context. The first line pulls the image’s ID number and file extension. Note there’s no `.` added between the ID and extension values because the `ext` value for the `type=""` attribute already includes the required period.
 
-In the second line, `<txp:image_info />` is pulling the image’s caption value, which you should _always_ include in the [Image edit panel](https://docs.textpattern.io/administration/images-panel) area for the image.
+In the second line, `<txp:image_info />` is pulling the image’s caption value, which you should _always_ include in the [Image edit panel](https://docs.textpattern.com/administration/images-panel) area for the image.
 
 While the mixed markup is more functionally dynamic, it’s also a bigger block of markup overall because there’s no integration of HTML with Textpattern tags. As a frame of reference, the entire block of mixed markup is 182 characters long, not including line-breaks and indentations.  
 
@@ -113,7 +113,7 @@ First, we've removed the image ID attribute from the `<txp:images>` tag:
 …
 ~~~
 
-This is not a reflection of integrated notation so much as it's taking advantage of what we call 'article context'. In this case, we can assume the markup block is used in context of an article, and the image ID number has been added to the [Article image](https://docs.textpattern.io/administration/write-panel#article-image) field for the article in which it's applied. By doing that much, we eliminate having to declare the ID value as an attribute in the `<txp:images>` tag.
+This is not a reflection of integrated notation so much as it's taking advantage of what we call 'article context'. In this case, we can assume the markup block is used in context of an article, and the image ID number has been added to the [Article image](https://docs.textpattern.com/administration/write-panel#article-image) field for the article in which it's applied. By doing that much, we eliminate having to declare the ID value as an attribute in the `<txp:images>` tag.
 
 Next, which *is* an example of integrated notation, we've reduced the image file path to a single instance of `<txp:image_info />` by declaring the image ID and file extension attribute values to the sole instance of the tag. You can't do this arbitrarily with all tag attribute parameters, but in this case it is possible, and the shortening result is obvious:
 

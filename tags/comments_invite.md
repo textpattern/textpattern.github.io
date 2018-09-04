@@ -22,9 +22,9 @@ On this page:
 <txp:comments_invite />
 ~~~
 
-The **comments_invite** tag is a *single* tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern [Write panel](https://docs.textpattern.io/administration/write-panel).
+The **comments_invite** tag is a *single* tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern [Write panel](https://docs.textpattern.com/administration/write-panel).
 
-This tag can be used in both Textpattern [Page templates](https://docs.textpattern.io/themes/page-templates-explained) and [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
+This tag can be used in both Textpattern [Page templates](https://docs.textpattern.com/themes/page-templates-explained) and [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
 
 ## Attributes
 
@@ -51,11 +51,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** `comments_invite` (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** `comments_invite` (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="tag"`
 : HTML tag to wrap around invite text, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

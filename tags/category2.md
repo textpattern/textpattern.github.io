@@ -58,11 +58,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"` <span class="footnote warning">v4.0.4+</span>
 : HTML `class attribute` to be applied to `wraptag`.
-: **Default:** unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** unset (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="tag"` <span class="footnote warning">v4.0.4+</span>
 : HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

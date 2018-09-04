@@ -23,7 +23,7 @@ On this page:
 6. Open a web browser and go to `example.com/textpattern/setup/index.php` to start the setup process. If you're running Textpattern from a subdomain or subdirectory, go to `subdomain.example.com/textpattern/setup/index.php` or `example.com/subdirectory/textpattern/setup/index.php` as appropriate.
 7. Follow the instructions in the web browser.
 
-If you require more information, please refer to the [Detailed installation instructions](https://docs.textpattern.io/installation/).
+If you require more information, please refer to the [Detailed installation instructions](https://docs.textpattern.com/installation/).
 
 ## Upgrade to the newest stable release
 
@@ -39,7 +39,7 @@ In the root directory of every Textpattern archive is a `README.txt` file with u
 7. Log in to the Textpattern admin-side. The relevant upgrade scripts are run automatically. Please take a look into diagnostics to confirm the upgraded version number is identified and whether there are any issues.
 9. Verify all preference settings.
 
-If you require more information, please refer to the [Detailed upgrading instructions](https://docs.textpattern.io/installation/upgrading-textpattern).
+If you require more information, please refer to the [Detailed upgrading instructions](https://docs.textpattern.com/installation/upgrading-textpattern).
 
 Upgrades from versions below 4.2.0 will present this warning upon your very first login to the admin-side:
 

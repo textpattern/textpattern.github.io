@@ -8,8 +8,8 @@ description: Page templates can contain standard HTML, Textpattern Tags and nest
 
 # Page templates explained TODO
 
-Textpattern **Page templates** can contain standard HTML, Textpattern Tags and nested Textpattern [Form templates](https://docs.textpattern.io/themes/form-templates-explained) which all come together to render a website, section or individual page.
+Textpattern **Page templates** can contain standard HTML, Textpattern Tags and nested Textpattern [Form templates](https://docs.textpattern.com/themes/form-templates-explained) which all come together to render a website, section or individual page.
 
 TODO
 
-[Next: Form templates explained](https://docs.textpattern.io/themes/form-templates-explained)
+[Next: Form templates explained](https://docs.textpattern.com/themes/form-templates-explained)

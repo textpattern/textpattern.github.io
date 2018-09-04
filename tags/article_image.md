@@ -26,7 +26,7 @@ On this page:
 
 The **article_image** tag is a *single* tag. Textpattern will replace this tag with the `<img src="…">` HTML tag matching the numeric ID or URL assigned when the article is posted.
 
-The image to be associated with the tag is set in the [Write panel](https://docs.textpattern.io/administration/write-panel). In the 'Article image' field enter either the URL of the image, or the Textpattern ID (a number set by Textpattern at upload) - most of the time you will use the image ID here. Note that although the 'Article image' field can accept a comma separated list of image IDs, you can only assign a single image to each article using this tag (the [images](images) tag allows greater flexibility for multiple article images).
+The image to be associated with the tag is set in the [Write panel](https://docs.textpattern.com/administration/write-panel). In the 'Article image' field enter either the URL of the image, or the Textpattern ID (a number set by Textpattern at upload) - most of the time you will use the image ID here. Note that although the 'Article image' field can accept a comma separated list of image IDs, you can only assign a single image to each article using this tag (the [images](images) tag allows greater flexibility for multiple article images).
 
 ## Attributes
 
@@ -34,7 +34,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"` <span class="footnote warning">v4.0.4+</span>
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` for the image's `alt` and `title` attributes.
-: **Values:** See the [tag escaping](https://docs.textpattern.io/tags/tag-basics/tag-escaping) documentation for all possible values.
+: **Values:** See the [tag escaping](https://docs.textpattern.com/tags/tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
 `height="integer"` <span class="footnote warning">v4.3.0+</span>
@@ -60,7 +60,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"` <span class="footnote warning">v4.0.4+</span>
 : CSS `class` attribute to apply to the image (or to the `wraptag`, if set).
-: **Default:** unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** unset (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
 
 `style="style rule"`
 : Inline CSS `style` rule. It's recommended that you assign CSS rules via `class` attribute instead.
@@ -68,7 +68,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `wraptag="tag"` <span class="footnote warning">v4.0.4+</span>
 : HTML tag to be used to wrap the `<img>` tag, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

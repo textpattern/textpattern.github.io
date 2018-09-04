@@ -24,7 +24,7 @@ On this page:
 
 The **comment_name** tag is a *single* tag which is used to display a link using the commenter's name as text. If an email address is supplied and allowed to be viewed, an email link is created. Otherwise, if a website is entered, the website URL is used. If neither is supplied, the name displays as plain text.
 
-Commenter's name and/or email address can be set as a requirement. Should be used in Textpattern 'comment' type [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
+Commenter's name and/or email address can be set as a requirement. Should be used in Textpattern 'comment' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
 
 ## Attributes
 

@@ -65,9 +65,9 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `category1,category2`.
 
 `no_widow="boolean"` <span class="footnote warning">v4.0.7+</span>
-: Control [widows](https://en.wikipedia.org/wiki/Widows_and_orphans) and overrule 'widows' setting in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
+: Control [widows](https://en.wikipedia.org/wiki/Widows_and_orphans) and overrule 'widows' setting in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel).
 : **Values:** `0` allow the last word in the title to appear on its own line, i.e. the title content is rendered unchanged, `1` ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
-: **Default:** as set in the [Preferences panel](https://docs.textpattern.io/administration/preferences-panel).
+: **Default:** as set in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel).
 
 `offset="integer"` <span class="footnote warning">v4.6.0+</span>
 : The number of articles to skip.
@@ -105,7 +105,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `break="value"`
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: **Default:** `br` (but see [break cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#break) for exceptions).
+: **Default:** `br` (but see [break cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#break) for exceptions).
 
 `breakby="integer"` <span class="footnote warning">v4.7.0+</span>
 : Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
@@ -113,11 +113,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#class)).
+: **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
 
 `label="text"`
 : Label prepended to item.
-: **Default:** unset (but see [label cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#label) for exceptions).
+: **Default:** unset (but see [label cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#label) for exceptions).
 
 `labeltag="element"`
 : HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
@@ -125,7 +125,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `wraptag="element"`
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.io/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

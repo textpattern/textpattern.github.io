@@ -22,7 +22,7 @@ On this page:
 <txp:file_download_id />
 ~~~
 
-The **file_download_id** tag is a *single* tag that Textpattern will replace with the internal ID number of the file to be downloaded. Should be used in Textpattern 'file' type [Form templates](https://docs.textpattern.io/themes/form-templates-explained).
+The **file_download_id** tag is a *single* tag that Textpattern will replace with the internal ID number of the file to be downloaded. Should be used in Textpattern 'file' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
 
 ## Attributes
 

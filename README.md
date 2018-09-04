@@ -1,6 +1,6 @@
 # Textpattern CMS user documentation
 
-See the [built website](https://docs.textpattern.io). This is the new user documentation, and it's a work in progress.
+See the [built website](https://docs.textpattern.com). This is the new user documentation, and it's a work in progress.
 
 On this page are guidelines for doc authors:
 
@@ -47,13 +47,13 @@ file-download-description.md
 Make doc pages **scannable** with a **consistent structure** across them, as much as possible. These guidelines can help:
 
 1. Start page with an `h1` (`#` in Markdown) header that serves as the document's title.
-2. Where it's reasonable to do so, follow the title with a brief introductory paragraph that sums up the page or it's purpose ([intro paragraph example](https://docs.textpattern.io/administration/)).
-3. If you have more than three `h2` (`##` in Markdown) sections on the page (or three that are kind of long), follow the `h1` title (or intro paragraph, see previous example) with an in-page ToC ([ToC example without intro paragraph](https://docs.textpattern.io/administration/security)). Do this by:
+2. Where it's reasonable to do so, follow the title with a brief introductory paragraph that sums up the page or it's purpose ([intro paragraph example](https://docs.textpattern.com/administration/)).
+3. If you have more than three `h2` (`##` in Markdown) sections on the page (or three that are kind of long), follow the `h1` title (or intro paragraph, see previous example) with an in-page ToC ([ToC example without intro paragraph](https://docs.textpattern.com/administration/security)). Do this by:
   * adding "On this page:" in normal text, followed by
   * an unordered list of links to the `h2` headers only (e.g. `[Header label](#xxx)`), and
   * use `#xxx` as the anchors, where `xxx` is the heading text in lowercase with hyphens (i.e. for linking to `## Example heading` the anchor would be `(#example-heading)`).
 4. Avoid using `h4`-`h6` header levels, if possible, especially `h5`-`h6`. Deep structuring means the copy is too complex for new-user docs. Try and structure content with `h2`-`h3` only (and `h4` if really necessary).
-5. Use [kramdown footnotes](http://kramdown.gettalong.org/syntax.html#footnotes) in a given section for any 'tips' or side details not needing said in the primary paragraph. Use a subsequent number for each new footnote on the page, even if they're not in the same section. ([Footnote examples](https://docs.textpattern.io/administration/security))
+5. Use [kramdown footnotes](http://kramdown.gettalong.org/syntax.html#footnotes) in a given section for any 'tips' or side details not needing said in the primary paragraph. Use a subsequent number for each new footnote on the page, even if they're not in the same section. ([Footnote examples](https://docs.textpattern.com/administration/security))
 
 ## Concise copywriting tips
 
@@ -84,7 +84,7 @@ Important rules for consistency, which also has implications for plugin authors.
 * When referring to system feedback dialogue (green, yellow, red), format the text exactly as it appears in the UI messages.<sup>2</sup>
 * When referring to file names, make them italic and include the extension. e.g. *.htaccess* and *index.php* (do not make them appear as code, unless they are part of a code snippet).
 
-**Note 1:** Plugin authors must follow same editorial rules in their [plugin help files](https://docs.textpattern.io/development/plugin-template-help).</small></p>
+**Note 1:** Plugin authors must follow same editorial rules in their [plugin help files](https://docs.textpattern.com/development/plugin-template-help).</small></p>
 
 **Note 2:** There should be three CSS class selectors to use in the Jekyll site that makes this easy, one for each feedback color type, even providing the background colour.</small>
 
