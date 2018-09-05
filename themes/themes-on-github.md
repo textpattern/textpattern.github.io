@@ -14,7 +14,7 @@ With the popularity of [GitHub](https://github.com), comes a natural tendency fo
 
 [Textpattern CMS default theme](https://github.com/textpattern/textpattern-default-theme)
 
-Latest version of the official default Textpattern front-side theme, including the Sass files used for development of the theme. [Demo here](http://default-theme.textpattern.io).
+Latest version of the official default Textpattern front-side theme, including the Sass files used for development of the theme. [Demo here](http://default-theme.textpattern.com).
 
 [Yoko theme](https://github.com/perlmonkey/txp-yoko-theme)
 
