@@ -75,6 +75,6 @@ In the future, if you create another admin-side theme, you can  duplicate your o
 If you’d like to really study the _Classic_ or _Hive_ themes, the following resources are available:
 
 * [Hive admin-side theme source](https://github.com/philwareham/textpattern-hive-admin-theme)
-* [Hive admin-side theme design patterns](http://design-patterns.textpattern.io/)
+* [Hive admin-side theme design patterns](http://design-patterns.textpattern.com/)
 * [Classic admin-side theme source](https://github.com/philwareham/textpattern-classic-admin-theme)
-* [Classic admin-side theme design patterns](http://design-patterns-classic.textpattern.io/)
+* [Classic admin-side theme design patterns](http://design-patterns-classic.textpattern.com/)
