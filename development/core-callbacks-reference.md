@@ -433,10 +433,10 @@ function abc_my_function($evt, $stp, &$data)
 * **What it allows:** To alter where the Page contents is read.
 * **Additional parameter:** An array containing the `name` of the Page being fetched and the theme (`skin`) to which it is assigned. Note the `skin` may be the _working theme_ if the site is being previewed.
 
-`site.updated` > `{event}`
+`site.update` > `{event}`
 * **When it occurs:** Every time the site's hidden `lastmod` value is updated in the preferences.
 * **What it allows:** To perform additional processing (e.g. caching) after one or more events have triggered the site modification datastamp to change.
-* **Additional parameter:** An array containing the `whenStamp` (time now) and `whenDate` (database-friendly timestamp of time now).
+* **Additional parameter:** An array containing some details (like `id` etc) of the affected rows, plus an array containing the `whenStamp` (time now) and `whenDate` (database-friendly timestamp of time now).
 
 `preference.create` > `done`
 * **When it occurs:** After a preference value has been successfully created.
