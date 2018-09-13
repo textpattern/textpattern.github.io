@@ -8,7 +8,7 @@ search_omit: true
 
 # Textpattern user documentation
 
-Welcome to the new user documentation, which replaces the old wiki at textpattern.net. This is a construction zone for a while, but any viewable page is ready for use, albeit subject to further editing. Occasional progress updates and feedback requests will be made in the [sites forum](https://forum.textpattern.io/viewforum.php?id=60).
+Welcome to the new user documentation, which replaces the old wiki at textpattern.net. This is a construction zone for a while, but any viewable page is ready for use, albeit subject to further editing. Occasional progress updates and feedback requests will be made in the [sites forum](https://forum.textpattern.com/viewforum.php?id=60).
 
 {::options parse_block_html="true" /}
 

@@ -12,4 +12,4 @@ Meta keywords can be set per-article, and page titles are unique.  There is a bu
 
 Textpattern's basic organisation tends to suit a flat, broad site structure, which is generally regarded as search-engine-friendly, rather than deep nesting, which can be harder for both users and spiders to navigate.
 
-More advanced techniques can be implemented using "custom fields":https://textpattern.com/faq/111/how-do-i-use-custom-fields and "plugins":https://forum.textpattern.io/viewtopic.php?id=2193.
+More advanced techniques can be implemented using "custom fields":https://textpattern.com/faq/111/how-do-i-use-custom-fields and "plugins":https://forum.textpattern.com/viewtopic.php?id=2193.

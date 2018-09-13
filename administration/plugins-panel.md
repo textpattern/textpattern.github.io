@@ -49,7 +49,7 @@ At this time, the Textpattern project doesn't have a centralized repository for 
 
 **GitHub:** Plugin developers are increasingly using [GitHub](https://github.com) to maintain and release their Textpattern plugins. A curated list of Textpattern plugins available via GitHub is at [Awesome Textpattern](https://github.com/drmonkeyninja/awesome-textpattern).
 
-**Plugin author support forum:** Plugin developers initially announce their plugins by creating a plugin support thread for each one in the [Plugin author support forum](https://forum.textpattern.io/viewforum.php?id=79). This provides a vector for finding plugins by monitoring the forum activity or using the forum's search. Plugin threads are also where you ask questions about using a given plugin, find developer notes about changes, or share ideas for plugin improvement. Whenever you install a plugin, you should always *subscribe* to it's associated support thread to keep up with any changes.[^1]
+**Plugin author support forum:** Plugin developers initially announce their plugins by creating a plugin support thread for each one in the [Plugin author support forum](https://forum.textpattern.com/viewforum.php?id=79). This provides a vector for finding plugins by monitoring the forum activity or using the forum's search. Plugin threads are also where you ask questions about using a given plugin, find developer notes about changes, or share ideas for plugin improvement. Whenever you install a plugin, you should always *subscribe* to it's associated support thread to keep up with any changes.[^1]
 
 ### Plugin file anatomy
 
@@ -166,7 +166,7 @@ Some plugins may also provide an 'Options' link next to the 'Help' link, which o
 
 If you read the plugin's Help information and find yourself still having
 trouble, that's the time to go to the plugin's [support
-thread](https://forum.textpattern.io/viewforum.php?id=79). Known issues
+thread](https://forum.textpattern.com/viewforum.php?id=79). Known issues
 are often highlighted in the threads (tip: use Google to search long
 threads), or you can post with questions or issues you have.
 
@@ -231,6 +231,6 @@ You're in the wrong place! Please see [the suite of plugin develop aides](https:
 
 [^3]: You could also install and used [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer), which not only allows you to edit plugins, but to compile and export them too as entirely new plugins, assuming you make enough custom changes to warrant doing so (etiquette tip: Always give credit to the developers whose code you expand from).
 
-[^4]: In the event you need to update a plugin you've edited, you may like to install [rvm_plugin_diff](https://forum.textpattern.io/viewtopic.php?id=19909) first, a plugin that helps you track down the lines of code you edited in other plugins so you don't lose track of them and can make the edits again if necessary. Keeping your own edited versions of plugins on GitHub is another way you could maintain your customized versions separate from the plugin developer's latest releases.
+[^4]: In the event you need to update a plugin you've edited, you may like to install [rvm_plugin_diff](https://forum.textpattern.com/viewtopic.php?id=19909) first, a plugin that helps you track down the lines of code you edited in other plugins so you don't lose track of them and can make the edits again if necessary. Keeping your own edited versions of plugins on GitHub is another way you could maintain your customized versions separate from the plugin developer's latest releases.
 
-[^5]: Good places to look and learn about building sophisticated publishing architectures with core functionality include: [Tags reference](https://docs.textpattern.com/tags/) (notably the examples provided on each tag page), [Textpattern Tips](http://textpattern.tips/), all throughout the support forum, but notably in the [How? area](https://forum.textpattern.io/viewforum.php?id=5).
+[^5]: Good places to look and learn about building sophisticated publishing architectures with core functionality include: [Tags reference](https://docs.textpattern.com/tags/) (notably the examples provided on each tag page), [Textpattern Tips](http://textpattern.tips/), all throughout the support forum, but notably in the [How? area](https://forum.textpattern.com/viewforum.php?id=5).

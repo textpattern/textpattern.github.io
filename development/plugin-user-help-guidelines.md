@@ -201,6 +201,6 @@ Or with `bc..` (note the double full-stops) if blank lines exist:
     # Yes, this…
     code_has('$some', '$bad', 'bugs=1')
 
-[^1]: Derived from [this forum discussion](https://forum.textpattern.io/viewtopic.php?id=25327).
+[^1]: Derived from [this forum discussion](https://forum.textpattern.com/viewtopic.php?id=25327).
 
 [^2]: All Textile formatting is provided already. All you have to do is fill in your content in the right locations. **Do not** use inline CSS styling of your own in help information. Allow the presentation provided in the admin-side theme to work on its own. All you need to do is use the indicated Textile as clarified.

@@ -18,7 +18,7 @@ The simplest solution is to use 'messy' URLs instead (see [Article URL pattern](
 
 Some servers support `mod_rewrite`, but require some additional configuration in order to make it work properly.
 
-If your Apache web server supports `mod_rewrite` in `.htaccess`, you can find some suggestions for specific web hosts [in this forum thread](https://forum.textpattern.io/viewtopic.php?id=7702).
+If your Apache web server supports `mod_rewrite` in `.htaccess`, you can find some suggestions for specific web hosts [in this forum thread](https://forum.textpattern.com/viewtopic.php?id=7702).
 
 On servers that support `mod_rewrite`, the most common solution is to uncomment (remove the leading `#` from) this line in `.htaccess`:
 

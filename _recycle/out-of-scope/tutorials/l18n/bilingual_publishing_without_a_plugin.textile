@@ -1,6 +1,6 @@
 \n"mininav_tutorials":/home/www/zendstudio/dokuwiki/bin/lib/exe/fetch.php?id=&media=mininav_tutorials
 
-Note: the following examples can, in theory, be applied for *tri*lingualism and, indeed, *multi*lingualism. Actually, they would involve geometrically growing levels of operational complication. Rather, the proper way to tackle the task of building a site with more than two languages points to "this feature request":/home/www/zendstudio/dokuwiki/bin/doku.php?id=multilingual_publishing, with the "Multilingual Publishing Pack":http://txpforge.org/projects/show/mlp as an elaborated and usable - although not flawless and 4.0.5 updated - answer. Stay tuned "here":https://forum.textpattern.io/viewtopic.php?id=20692 for the latest discussions on it.
+Note: the following examples can, in theory, be applied for *tri*lingualism and, indeed, *multi*lingualism. Actually, they would involve geometrically growing levels of operational complication. Rather, the proper way to tackle the task of building a site with more than two languages points to "this feature request":/home/www/zendstudio/dokuwiki/bin/doku.php?id=multilingual_publishing, with the "Multilingual Publishing Pack":http://txpforge.org/projects/show/mlp as an elaborated and usable - although not flawless and 4.0.5 updated - answer. Stay tuned "here":https://forum.textpattern.com/viewtopic.php?id=20692 for the latest discussions on it.
 
 The following examples both point to what is called _mirroring_ i.e. using pairs of articles pointing to each other. Please note that this solves only the core of the bilingual problem as there are many other important details (related to category and section titles, date and time formats and so on) not yet discussed here.
 
@@ -12,7 +12,7 @@ Minutely explained "here":http://wion.com/articles/core-txp-technique-for-i18n-i
 
 h3(sectionedit2#solution_no_2). Solution no. 2
 
-It is explained "here":https://forum.textpattern.io/viewtopic.php?pid=152240#p152240 and more explicitly below:
+It is explained "here":https://forum.textpattern.com/viewtopic.php?pid=152240#p152240 and more explicitly below:
 
 It uses one custom field and two forms. Basically one has two articles: first has the id=1 and is written in English and the other has the id=2 and is written in Romanian. The purpose is to post on the website a link to the other article.
 
