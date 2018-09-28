@@ -12,11 +12,11 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 {::options parse_block_html="true" /}
 
-<div class="layout-container">
+<div class="layout-container index-docs">
 <div class="layout-3col">
-<img width="200" height="200" alt="Installation handling" src="/img/index-introduction.jpg" srcset="/img/index-introduction@2x.jpg 2x, /img/index-introduction.jpg 1x">
 
 ### Installation handling
+{: .index-docs-start}
 
 * [Installing Textpattern](https://docs.textpattern.com/installation/) (detailed instructions)
 * [Upgrading Textpattern](https://docs.textpattern.com/installation/upgrading-textpattern)
@@ -27,9 +27,9 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img width="200" height="200" alt="Site administration" src="/img/index-administration.jpg" srcset="/img/index-administration@2x.jpg 2x, /img/index-administration.jpg 1x">
 
 ### Site administration
+{: .index-docs-admin}
 
 * [Textpattern administration](https://docs.textpattern.com/administration/) (admin-side structure and functionality)
 * [Administration fast-track](https://docs.textpattern.com/administration/admin-fast-track) (workflow insights to get up to speed quick)
@@ -37,9 +37,9 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img width="200" height="200" alt="Core tags" src="/img/index-tags.jpg" srcset="/img/index-tags@2x.jpg 2x, /img/index-tags.jpg 1x">
 
 ### Tags
+{: .index-docs-tags}
 
 **Core tags**
 * [Tags reference](https://docs.textpattern.com/tags/)
@@ -52,9 +52,9 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img width="200" height="200" alt="Design" src="/img/index-build.jpg" srcset="/img/index-build@2x.jpg 2x, /img/index-build.jpg 1x">
 
 ### Themes
+{: .index-docs-theme}
 
 * [Getting started with themes](https://docs.textpattern.com/themes/index.html)
 * [Front-end themes](https://docs.textpattern.com/themes/front-end-themes)
@@ -63,9 +63,9 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img width="200" height="200" alt="Development" src="/img/index-development.jpg" srcset="/img/index-development@2x.jpg 2x, /img/index-development.jpg 1x">
 
 ### Development
+{: .index-docs-dev}
 
 * [Plugin development](https://docs.textpattern.com/development/)
 * [Textpattern source code repositories](https://docs.textpattern.com/development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
@@ -74,9 +74,9 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 </div>
 <div class="layout-3col">
-<img width="200" height="200" alt="FAQs" src="/img/index-faqs.jpg" srcset="/img/index-faqs@2x.jpg 2x, /img/index-faqs.jpg 1x">
 
 ### FAQs
+{: .index-docs-faqs}
 
 * [Textpattern basic tutorial](https://docs.textpattern.com/faqs/textpattern-basic-tutorial)
 * [Complete list of Textpattern FAQs](https://docs.textpattern.com/faqs/) (the most commonly-asked Textpattern questions)
