@@ -23,7 +23,7 @@ These rules relate to Textpattern core and should be used as a starting point fo
         <thead>
             <tr>
                 <th scope="col">CSP header</th>
-                <th scope="col">Textpattern 4.7.1</th>
+                <th scope="col">Textpattern 4.7</th>
                 <th scope="col">Notes</th>
             </tr>
         </thead>
