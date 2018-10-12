@@ -16,7 +16,7 @@ On this page:
 * [User language](#user-language)
 * [List of available languages](#list-of-available-languages)
 * [Adding Textpacks manually](#adding-textpacks-manually)
-* [Known Issues](known-issues)
+* [Known Issues](#known-issues)
 
 ## Site language
 
