@@ -23,7 +23,7 @@ On this page:
 <txp:search_input />
 ~~~
 
-The **search_input** tag is a *single* tag. This tag will provide a text entry field for search parameters and an optional button to initiate the search.
+The **search_input** tag can be used as either a *single* or *container* tag. This tag will provide a text entry field for search parameters and an optional button to initiate the search.
 
 ## Attributes
 
@@ -39,7 +39,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `form="form name"`
 : Use specified form template to build a customized HTML form.
-: **Default:** `search_input`.
+: **Default:** `search_input` (if no form template is specified and no other attributes are used), otherwise unset (uses a built-in HTML `<form>`).
 
 `html_id="id"` <span class="footnote warning">v4.0.7+</span>
 : The HTML `id` attribute assigned to the search form.
@@ -121,6 +121,7 @@ Note: Textpattern will use a user defined form named `search_results`, or an int
 
 ### Version 4.7.2
 
+Can be used as a container tag. \\
 `aria_label` and `placeholder` attributes added.
 
 ### Version 4.3.0
