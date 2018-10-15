@@ -29,7 +29,7 @@ The **search_input** tag is a *single* tag. This tag will provide a text entry f
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`aria-label="text"` <span class="footnote warning">v4.7.2+</span>
+`aria_label="text"` <span class="footnote warning">v4.7.2+</span>
 : HTML `aria-label` attribute to be applied to search `input` field.
 : **Default:** unset.
 
@@ -114,14 +114,14 @@ Note: Textpattern will use a user defined form named `search_results`, or an int
 ### Example 3: Minimal search input form without label or button (but still accessible)
 
 ~~~ html
-<txp:search_input aria-label="Search" placeholder="Search…" />
+<txp:search_input aria_label="Search" placeholder="Search…" />
 ~~~
 
 ## Genealogy
 
 ### Version 4.7.2
 
-`aria-label` and `placeholder` attributes added.
+`aria_label` and `placeholder` attributes added.
 
 ### Version 4.3.0
 

@@ -29,7 +29,7 @@ The **comment_web_input** tag is a *single* tag which is used to display a text 
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`aria-label="text"` <span class="footnote warning">v4.7.2+</span>
+`aria_label="text"` <span class="footnote warning">v4.7.2+</span>
 : HTML `aria-label` attribute to be applied to HTML form text `input` field.
 : **Default:** unset.
 
@@ -78,16 +78,16 @@ Other tags used: [comment_email_input](comment_email_input), [comments_help](com
 
 ~~~ html
 <p>
-    <txp:comment_name_input aria-label="Your name" placeholder="Name"/>
+    <txp:comment_name_input aria_label="Your name" placeholder="Name"/>
 </p>
 <p>
-    <txp:comment_email_input aria-label="Your email address" placeholder="Email"/>
+    <txp:comment_email_input aria_label="Your email address" placeholder="Email"/>
 </p>
 <p>
-    <txp:comment_web_input aria-label="Your website URL" placeholder="Website (http(s)://)"/>
+    <txp:comment_web_input aria_label="Your website URL" placeholder="Website (http(s)://)"/>
 </p>
 <p>
-    <txp:comment_message_input aria-label="Your message" placeholder="Your message"/>
+    <txp:comment_message_input aria_label="Your message" placeholder="Your message"/>
 </p>
 <p>
     <txp:comment_preview />
@@ -101,7 +101,7 @@ Other tags used: [comment_email_input](comment_email_input), [comment_message_in
 
 ### Version 4.7.2
 
-`aria-label` and `placeholder` attributes added.
+`aria_label` and `placeholder` attributes added.
 
 ### Version 4.6.0
 

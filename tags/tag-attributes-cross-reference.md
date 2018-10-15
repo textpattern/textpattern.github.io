@@ -44,7 +44,7 @@ Used to disable assigned override forms. Works within article lists and single a
 
 </div>
 
-### aria-label
+### aria_label
 
 <div class="layout-text4col">
 
