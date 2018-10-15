@@ -29,6 +29,14 @@ The **comment_email_input** tag is a *single* tag which is used to display a tex
 
 Tag will accept the following attributes (**case-sensitive**):
 
+`aria-label="text"` <span class="footnote warning">v4.7.2+</span>
+: HTML `aria-label` attribute to be applied to HTML form text `input` field.
+: **Default:** unset.
+
+`placeholder="text"` <span class="footnote warning">v4.7.2+</span>
+: HTML `placeholder` attribute to be applied to HTML form text `input` field.
+: **Default:** unset.
+
 `size="integer"` <span class="footnote warning">v4.6.0+</span>
 : HTML `size` attribute to be applied to the HTML form text `input` field.
 : **Default:** `25`.
@@ -66,7 +74,34 @@ Tag will accept the following attributes (**case-sensitive**):
 
 Other tags used: [comments_help](comments_help), [comment_message_input](comment_message_input), [comment_name_input](comment_name_input), [comment_preview](comment_preview), [comment_remember](comment_remember), [comment_submit](comment_submit), [comment_web_input](comment_web_input).
 
+### Example 2: Minimal comment form without labels (but still accessible)
+
+~~~ html
+<p>
+    <txp:comment_name_input aria-label="Your name" placeholder="Name"/>
+</p>
+<p>
+    <txp:comment_email_input aria-label="Your email address" placeholder="Email"/>
+</p>
+<p>
+    <txp:comment_web_input aria-label="Your website URL" placeholder="Website (http(s)://)"/>
+</p>
+<p>
+    <txp:comment_message_input aria-label="Your message" placeholder="Your message"/>
+</p>
+<p>
+    <txp:comment_preview />
+    <txp:comment_submit />
+</p>
+~~~
+
+Other tags used: [comment_message_input](comment_message_input), [comment_name_input](comment_name_input), [comment_preview](comment_preview), [comment_submit](comment_submit), [comment_web_input](comment_web_input).
+
 ## Genealogy
+
+### Version 4.7.2
+
+`aria-label` and `placeholder` attributes added.
 
 ### Version 4.6.0
 

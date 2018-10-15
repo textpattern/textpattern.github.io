@@ -29,6 +29,10 @@ The **search_input** tag is a *single* tag. This tag will provide a text entry f
 
 Tag will accept the following attributes (**case-sensitive**):
 
+`aria-label="text"` <span class="footnote warning">v4.7.2+</span>
+: HTML `aria-label` attribute to be applied to search `input` field.
+: **Default:** unset.
+
 `button="text"`
 : Creates and labels a button to initiate the search.
 : **Default:** unset (no button is created).
@@ -47,6 +51,10 @@ Tag will accept the following attributes (**case-sensitive**):
 `any`: any of the search terms in an article will cause it to show up in the results. \\
 `all`: all of the search terms in the article must exist (in any order) for the article to be included in the results.
 : Default `exact`.
+
+`placeholder="text"` <span class="footnote warning">v4.7.2+</span>
+: HTML `placeholder` attribute to be applied to search `input` field.
+: **Default:** unset.
 
 `section="section name"`
 : Use the specified section as the destination page that will display the search results.
@@ -103,7 +111,17 @@ Other tags used: [site_url](site_url).
 Note: Textpattern will use a user defined form named `search_results`, or an internally defined default form if no search result form is defined by you.
 {: .alert-block .information}
 
+### Example 3: Minimal search input form without label or button (but still accessible)
+
+~~~ html
+<txp:search_input aria-label="Search" placeholder="Search…" />
+~~~
+
 ## Genealogy
+
+### Version 4.7.2
+
+`aria-label` and `placeholder` attributes added.
 
 ### Version 4.3.0
 

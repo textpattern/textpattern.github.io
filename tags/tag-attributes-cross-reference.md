@@ -44,6 +44,18 @@ Used to disable assigned override forms. Works within article lists and single a
 
 </div>
 
+### aria-label
+
+<div class="layout-text4col">
+
+* [comment_email_input](comment_email_input)
+* [comment_message_input](comment_message_input)
+* [comment_name_input](comment_name_input)
+* [comment_web_input](comment_web_input)
+* [search_input](search_input)
+
+</div>
+
 ### author
 
 <div class="layout-text4col">
@@ -816,6 +828,18 @@ Used to return pagination statistics without rendering the article list. Care mu
 
 * [article](article)
 * [article_custom](article_custom)
+
+</div>
+
+### placeholder
+
+<div class="layout-text4col">
+
+* [comment_email_input](comment_email_input)
+* [comment_message_input](comment_message_input)
+* [comment_name_input](comment_name_input)
+* [comment_web_input](comment_web_input)
+* [search_input](search_input)
 
 </div>
 

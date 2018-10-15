@@ -70,19 +70,19 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [category2](category2)
 * [comment_anchor](comment_anchor)
 * [comment_email](comment_email)
-* [comment_email_input](comment_email_input)
+* [comment_email_input](comment_email_input) <span class="footnote warning">**Modified v4.7.2**</span>
 * [comment_id](comment_id)
 * [comment_message](comment_message)
-* [comment_message_input](comment_message_input)
+* [comment_message_input](comment_message_input) <span class="footnote warning">**Modified v4.7.2**</span>
 * [comment_name](comment_name)
-* [comment_name_input](comment_name_input)
+* [comment_name_input](comment_name_input) <span class="footnote warning">**Modified v4.7.2**</span>
 * [comment_permlink](comment_permlink)
 * [comment_preview](comment_preview)
 * [comment_remember](comment_remember)
 * [comment_submit](comment_submit)
 * [comment_time](comment_time)
 * [comment_web](comment_web)
-* [comment_web_input](comment_web_input)
+* [comment_web_input](comment_web_input) <span class="footnote warning">**Modified v4.7.2**</span>
 * [comments](comments)
 * [comments_count](comments_count)
 * [comments_error](comments_error)
@@ -286,7 +286,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [search_input](search_input)
+* [search_input](search_input) <span class="footnote warning">**Modified v4.7.2**</span>
 * [search_result_count](search_result_count)
 * [search_result_date](search_result_date)
 * [search_result_excerpt](search_result_excerpt) <span class="footnote warning">**Modified v4.7.0**</span>
