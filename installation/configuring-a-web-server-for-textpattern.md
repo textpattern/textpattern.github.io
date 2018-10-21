@@ -52,11 +52,11 @@ VirtualHost {
 }
 ~~~
 
-Replace my-website.com to your own domain name and correct the path where neeeded. Type PHP5 instead of PHP7 if ypur host still do not support PHP7. Uncomment TLSsertFile line if you want to support secure connection. To forbid open access and switch HTTP to HTTPS only, uncomment also the directive RequireTLS = yes. Hiawatha has support for SNI, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt certificates, according to your virtual host configuration.
+Replace my-website.com to your own domain name and correct the path where neeeded. Type PHP5 instead of PHP7 if your host still do not support PHP7. Uncomment TLSsertFile line if you want to support secure connection. To forbid open access and switch HTTP to HTTPS only, uncomment also the directive RequireTLS = yes. Hiawatha has support for SNI, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt certificates, according to your virtual host configuration.
 
 Hiawatha does not need .htaccess file. Instead, paste the following [URL Toolkit](//www.hiawatha-webserver.org/howto/url_toolkit) for [Textpattern](//www.hiawatha-webserver.org/howto/url_rewrite_rules) in the beginning of our include file for the virtual host or in the general hiawatha.conf file itself:
 
-~~~ urltoolkit
+~~~
 UrlToolkit {
 	ToolkitID = textpattern
 	RequestURI exists Return
@@ -68,7 +68,7 @@ UrlToolkit {
 
 URL Toolkit could also be adopted for many other tasks, e. g. for URL 301 HTTP redirection:
 
-~~~ urlredirect
+~~~
 UrlToolkit {
 	ToolkitID = my-website
 	Match ^/my-former-url-title Redirect /my-new-url-title
@@ -77,9 +77,9 @@ UrlToolkit {
 }
 ~~~
 
-You can add several domain aliases to name the same website — simply add them in the same line of the virtual host section, separated by coma. Uncomment an	[EnforceFirstHostname](//www.hiawatha-webserver.org/manpages/hiawatha) = yes diretive to return for visitors by only the first domain in your list (redirected 301):
+You can name your website by several domain aliases — simply add them in the same line of the virtual host section, separated by coma. Uncomment an	[EnforceFirstHostname](//www.hiawatha-webserver.org/manpages/hiawatha) = yes diretive if wanted to return for visitors by only the first domain in your list (redirected 301):
 
-~~~ aliases
+~~~
 VirtualHost {
 	Hostname = www.my-website.com, my-website.com, our.org
 #	EnforceFirstHostname = yes
