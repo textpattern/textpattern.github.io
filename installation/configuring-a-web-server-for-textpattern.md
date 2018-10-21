@@ -47,7 +47,7 @@ VirtualHost {
 	WebsiteRoot = /var/www/my-website/public
 	AccessLogfile = /var/log/hiawatha/my-website/access.log
 	ErrorLogfile = /var/log/hiawatha/my-website/errors.log
-#	TLScertFile = my-website.com.pem
+#	TLScertFile = my-website.pem
 #	RequireTLS = yes
 }
 ~~~
