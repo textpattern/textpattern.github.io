@@ -34,7 +34,7 @@ Save the file as `preflight.php` or similar, and view it in a browser. If PHP is
 
 Textpattern-specific directives are provided by `.htaccess` in the root directory and other locations within the file tree. It is important to upload this file if your web server runs Apache as it's essentially direct instructions for the web server to work in a specific way. The root `.htaccess` file controls, among other things, clean URLs. Without `.htaccess`, clean URLs will not work.
 
-### Hiawatha, MariaDB, PHP
+### Hiawatha, MariaDB, PHP-FPM
 
 Textpattern runs smootly on a human-friendly Hiawatha web-server. Only a few of semantic data are required in [virtual host section](//www.hiawatha-webserver.org/howto/websites) of a separate include or in the main /etc/hiawatha/hiawatha.conf:
 
