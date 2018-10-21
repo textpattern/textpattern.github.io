@@ -15,7 +15,7 @@ The article's scope extends to the functional requirements of installing Textpat
 ## Supported environments
 
 * [Apache, MySQL, PHP](#apache-mysql-php)
-* [Hiawatha, MariaDB, PHP](#hiawatha-mariadb-php-fpm)
+* [Hiawatha, MariaDB, PHP-FPM](#hiawatha-mariadb-php-fpm)
 * [Nginx, MySQL, PHP-FPM](#nginx-mysql-php-fpm)
 
 ### Apache, MySQL, PHP
