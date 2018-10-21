@@ -77,7 +77,7 @@ UrlToolkit {
 }
 ~~~
 
-You can name your website by several domain aliases — simply add them in the same line of the virtual host section, separated by coma: 
+You can name your website by several domain aliases — simply add them in the same line of the virtual host section, separated by comma: 
 
 ~~~
 VirtualHost {
