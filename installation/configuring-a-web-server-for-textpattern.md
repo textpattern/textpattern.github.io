@@ -77,7 +77,7 @@ UrlToolkit {
 }
 ~~~
 
-You can name your website by several domain aliases — simply add them in the same line of the virtual host section, separated by coma. Uncomment an	[EnforceFirstHostname](//www.hiawatha-webserver.org/manpages/hiawatha) = yes diretive if wanted to return for visitors by only the first domain in your list (redirected 301):
+You can name your website by several domain aliases — simply add them in the same line of the virtual host section, separated by coma: 
 
 ~~~
 VirtualHost {
@@ -86,6 +86,8 @@ VirtualHost {
 	...
 }
 ~~~
+
+Uncomment an [EnforceFirstHostname](//www.hiawatha-webserver.org/manpages/hiawatha) = yes diretive if wanted to return webpages for visitors by only the first domain in your list (redirected 301).
 
 ### Nginx, MySQL, PHP-FPM
 
