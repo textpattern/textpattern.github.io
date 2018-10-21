@@ -36,7 +36,7 @@ Textpattern-specific directives are provided by `.htaccess` in the root director
 
 ### Hiawatha, MariaDB, PHP-FPM
 
-Textpattern runs smootly on a human-friendly Hiawatha web-server. Only a few of semantic data are required in [virtual host section](//www.hiawatha-webserver.org/howto/websites) of a separate include or in the main /etc/hiawatha/hiawatha.conf:
+Textpattern runs smootly on a human-friendly Hiawatha web-server. Only a few of semantic data are required in [virtual host section](//www.hiawatha-webserver.org/howto/websites) of a separate include or in the main `/etc/hiawatha/hiawatha.conf`:
 
 ~~~ hiawatha
 VirtualHost {
@@ -52,9 +52,9 @@ VirtualHost {
 }
 ~~~
 
-Replace my-website.com to your own domain name and correct the path where neeeded. Type PHP5 instead of PHP7 if your host still do not support PHP7. Uncomment TLSsertFile line if you want to support secure connection. To forbid open access and switch HTTP to HTTPS only, uncomment also the directive RequireTLS = yes. Hiawatha has support for SNI, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt certificates, according to your virtual host configuration.
+Replace my-website.com to your own domain name and correct the path where neeeded. Type PHP5 instead of PHP7 if your host still do not support PHP7. Uncomment `TLSsertFile` line if you want to support secure connection. To forbid open access and switch HTTP to HTTPS only, uncomment also the directive `RequireTLS = yes`. Hiawatha has support for SNI, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt certificates, according to your virtual host configuration.
 
-Hiawatha does not need .htaccess file. If you wish clean semantic URLs, paste instead the following [URL Toolkit](//www.hiawatha-webserver.org/howto/url_toolkit) for [Textpattern](//www.hiawatha-webserver.org/howto/url_rewrite_rules) in the beginning of our include file for the virtual host or in the general hiawatha.conf file itself:
+Hiawatha does not need `.htaccess` file. If you wish clean semantic URLs, paste instead the following [URL Toolkit](//www.hiawatha-webserver.org/howto/url_toolkit) for [Textpattern](//www.hiawatha-webserver.org/howto/url_rewrite_rules) in the beginning of our include file for the virtual host or in the general hiawatha.conf file itself:
 
 ~~~
 UrlToolkit {
@@ -87,7 +87,7 @@ VirtualHost {
 }
 ~~~
 
-Uncomment an [EnforceFirstHostname](//www.hiawatha-webserver.org/manpages/hiawatha) = yes diretive if wanted to return webpages for visitors by only the first domain in your list (redirected 301).
+Uncomment an `[EnforceFirstHostname](//www.hiawatha-webserver.org/manpages/hiawatha) = yes` diretive if wanted to return webpages for visitors by only the first domain in your list (redirected 301).
 
 ### Nginx, MySQL, PHP-FPM
 
