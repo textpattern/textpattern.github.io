@@ -109,7 +109,7 @@ VirtualHost {
 }
 ~~~
 
-More options and possibilities — on the [manual](//www.hiawatha-webserver.org/manpages/hiawatha), [how-tos](//www.hiawatha-webserver.org/howto), [FAQs](//www.hiawatha-webserver.org/faq), [forum](//www.hiawatha-webserver.org/forum) (and also in [Lithuanian](//on.lt/hiawatha) language).
+About more options and possibilities — on the [manual](//www.hiawatha-webserver.org/manpages/hiawatha), [how-tos](//www.hiawatha-webserver.org/howto), [FAQs](//www.hiawatha-webserver.org/faq), [forum](//www.hiawatha-webserver.org/forum) (and also in [Lithuanian](//on.lt/hiawatha) language).
 
 ### Nginx, MySQL, PHP-FPM
 
