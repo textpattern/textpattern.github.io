@@ -99,7 +99,7 @@ Directory {
 }
 ~~~
 
-You can name your website by several domain aliases — simply append them in the same line of the virtual host section, separated by comma: 
+You can name your website by several domains — simply append its aliases in the same line of the virtual host section, separated by comma. Uncomment the `EnforceFirstHostname` directive if wanted to return webpages for visitors by only the first domain in your list (redirected 301):
 
 ~~~
 VirtualHost {
@@ -109,7 +109,7 @@ VirtualHost {
 }
 ~~~
 
-Uncomment an [EnforceFirstHostname](//www.hiawatha-webserver.org/manpages/hiawatha) = yes directive if wanted to return webpages for visitors by only the first domain in your list (redirected 301).
+More options and possibilities — on the [manual](//www.hiawatha-webserver.org/manpages/hiawatha), [how-tos](//www.hiawatha-webserver.org/howto), [FAQs](//www.hiawatha-webserver.org/faq), [forum](//www.hiawatha-webserver.org/forum) (and also in [Lithuanian](//on.lt/hiawatha) language).
 
 ### Nginx, MySQL, PHP-FPM
 
