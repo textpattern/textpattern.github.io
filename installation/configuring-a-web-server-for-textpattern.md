@@ -85,25 +85,25 @@ This `server` block includes a basic web hosting setup and translates the Apache
 
 ### Hiawatha, MariaDB, PHP-FPM
 
-Textpattern runs faster on current mainline versions of Hiawatha, MariaDB and PHP than end-of-life'd legacy versions. Only a few of semantic data are required in your Hiawatha [virtual host section](//www.hiawatha-webserver.org/howto/websites) of a separate include or in the main `/etc/hiawatha/hiawatha.conf`:
+Textpattern runs faster on current mainline versions of Hiawatha, MariaDB and PHP than end-of-life'd legacy versions. Only a few settings are required in your Hiawatha [virtual host section](https://www.hiawatha-webserver.org/howto/websites), as a separate include file or in the main `/etc/hiawatha/hiawatha.conf` file itself:
 
 ~~~
 VirtualHost {
-  Hostname = www.my-website.com
+  Hostname = example.com
   StartFile = index.php
   UseFastCGI = PHP7
   UseToolkit = textpattern
-  WebsiteRoot = /var/www/my-website/public
-  AccessLogfile = /var/log/hiawatha/my-website/access.log
-  ErrorLogfile = /var/log/hiawatha/my-website/errors.log
-  #TLScertFile = my-website.pem
+  WebsiteRoot = /var/www/example.com/public
+  AccessLogfile = /var/log/hiawatha/example-site/access.log
+  ErrorLogfile = /var/log/hiawatha/example-site/errors.log
+  #TLScertFile = example-site.pem
   #RequireTLS = yes
 }
 ~~~
 
-Replace my-website.com to your own domain name and correct the path where needed. Type PHP5 instead of PHP7 if your host still does not support PHP7. Uncomment `TLSsertFile` line if you want to support secure connection. To forbid open access and switch HTTP to HTTPS only, uncomment also the directive `RequireTLS = yes`. Hiawatha has support for SNI, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt certificates, according to your virtual host configuration.
+Replace `example.com` to your own domain name and correct the server paths where appropriate. Use `PHP5` instead of `PHP7` if your host still does not support PHP v7.x. Uncomment the `TLSsertFile` line if you want to support secure connections. To forbid open access and switch HTTP to HTTPS only, uncomment the directive `RequireTLS = yes`. Hiawatha has support for SNI, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt certificates, according to your virtual host configuration.
 
-Hiawatha does not need `.htaccess` file. If you wish clean semantic URLs, paste instead the following [URL Toolkit](//www.hiawatha-webserver.org/howto/url_toolkit) for [Textpattern](//www.hiawatha-webserver.org/howto/url_rewrite_rules) in the beginning of our include file for the virtual host or in the general `hiawatha.conf` file itself:
+Hiawatha does not require a `.htaccess` file. If you wish to use clean semantic URLs, paste the following [URL Toolkit](https://www.hiawatha-webserver.org/howto/url_toolkit) for [Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main `hiawatha.conf` file itself:
 
 ~~~
 UrlToolkit {
@@ -115,18 +115,18 @@ UrlToolkit {
 }
 ~~~
 
-URL Toolkit could also be adopted for many other tasks, e. g. for URL 301 HTTP redirection:
+URL Toolkit can also be adopted for many other tasks, For example for URL 301 HTTP redirection:
 
 ~~~
 UrlToolkit {
   ToolkitID = my-website
   Match ^/my-former-url-title Redirect /my-new-url-title
-  Match ^/some-url Redirect //www.another-website.com/url-title
-  Match ^/textpattern/ Redirect https://txp.my-website.com/textpattern/
+  Match ^/some-url Redirect //www.another-example.com/url-title
+  Match ^/textpattern/ Redirect https://txp.example.com/textpattern/
 }
 ~~~
 
-Of course, we should point to this ToolkitID from our vhost section. You can also set some HTTP `CustomHeaderBackend` or `CustomHeaderClient` there for better performance, for example:
+Of course, we should point to this ToolkitID from our vhost section. You can also set some HTTP `CustomHeaderBackend` or `CustomHeaderClient` details there for better performance, for example:
 
 ~~~
 VirtualHost {
@@ -148,14 +148,14 @@ Directory {
 }
 ~~~
 
-You can name your website by several domains — simply append its aliases in the same line of the virtual host section, separated by comma. Uncomment the `EnforceFirstHostname` directive if wanted to return webpages for visitors by only the first domain in your list (redirected 301):
+You can point to your website via multiple domains — simply append its aliases in the same line of the virtual host section, comma separated. Uncomment the `EnforceFirstHostname` directive if desired, to return web pages for visitors by only the first (primary) domain in your list (301 redirected):
 
 ~~~
 VirtualHost {
-  Hostname = www.my-website.com, my-website.com, our.org
+  Hostname = www.example.com, example.com, example.org
   #EnforceFirstHostname = yes
   ...
 }
 ~~~
 
-About more options and possibilities — on the [manual](//www.hiawatha-webserver.org/manpages/hiawatha), [how-tos](//www.hiawatha-webserver.org/howto), [FAQs](//www.hiawatha-webserver.org/faq), [forum](//www.hiawatha-webserver.org/forum) (and also in [Lithuanian](//on.lt/hiawatha) language).
+More options and further information can be found in the Hiawatha [manual](https://www.hiawatha-webserver.org/manpages/hiawatha), [how-tos](https://www.hiawatha-webserver.org/howto), [FAQs](https://www.hiawatha-webserver.org/faq) and [forum](https://www.hiawatha-webserver.org/forum).
