@@ -87,7 +87,7 @@ This `server` block includes a basic web hosting setup and translates the Apache
 
 Textpattern runs faster on current mainline versions of Hiawatha, MariaDB and PHP than end-of-life'd legacy versions. Only a few settings are required in your Hiawatha [virtual host section](https://www.hiawatha-webserver.org/howto/websites), as a separate include file or in the main `/etc/hiawatha/hiawatha.conf` file itself:
 
-~~~
+~~~ apacheconf
 VirtualHost {
   Hostname = example.com
   StartFile = index.php
@@ -105,7 +105,7 @@ Replace `example.com` to your own domain name and correct the server paths where
 
 Hiawatha does not require a `.htaccess` file. If you wish to use clean semantic URLs, paste the following [URL Toolkit](https://www.hiawatha-webserver.org/howto/url_toolkit) for [Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main `hiawatha.conf` file itself:
 
-~~~
+~~~ apacheconf
 UrlToolkit {
   ToolkitID = textpattern
   RequestURI exists Return
@@ -117,7 +117,7 @@ UrlToolkit {
 
 URL Toolkit can also be adopted for many other tasks, For example for URL 301 HTTP redirection:
 
-~~~
+~~~ apacheconf
 UrlToolkit {
   ToolkitID = my-website
   Match ^/my-former-url-title Redirect /my-new-url-title
@@ -128,7 +128,7 @@ UrlToolkit {
 
 Of course, we should point to this ToolkitID from our vhost section. You can also set some HTTP `CustomHeaderBackend` or `CustomHeaderClient` details there for better performance, for example:
 
-~~~
+~~~ apacheconf
 VirtualHost {
   ...
   UseToolkit = my-website, textpattern
@@ -140,7 +140,7 @@ VirtualHost {
 
 Where `static` would include cache directives for your static assets:
 
-~~~
+~~~ apacheconf
 Directory {
   DirectoryID = static
   Path = /css, /files, /images
@@ -150,7 +150,7 @@ Directory {
 
 You can point to your website via multiple domains — simply append its aliases in the same line of the virtual host section, comma separated. Uncomment the `EnforceFirstHostname` directive if desired, to return web pages for visitors by only the first (primary) domain in your list (301 redirected):
 
-~~~
+~~~ apacheconf
 VirtualHost {
   Hostname = www.example.com, example.com, example.org
   #EnforceFirstHostname = yes
