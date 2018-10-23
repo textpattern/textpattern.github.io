@@ -15,6 +15,7 @@ The article's scope extends to the functional requirements of installing Textpat
 ## Supported environments
 
 * [Apache, MySQL, PHP](#apache-mysql-php)
+* [Hiawatha, MariaDB, PHP-FPM](#hiawatha-mariadb-php-fpm)
 * [Nginx, MySQL, PHP-FPM](#nginx-mysql-php-fpm)
 
 ### Apache, MySQL, PHP
@@ -32,6 +33,83 @@ Modifications to an Apache virtual host file are typically not needed, especiall
 Save the file as `preflight.php` or similar, and view it in a browser. If PHP is configured correctly, the resulting page will list details about PHP's configuration, including active extensions to check against the system requirements above. Delete this `preflight.php` file when you've confirmed system requirements are reached and, ideally, exceeded.
 
 Textpattern-specific directives are provided by `.htaccess` in the root directory and other locations within the file tree. It is important to upload this file if your web server runs Apache as it's essentially direct instructions for the web server to work in a specific way. The root `.htaccess` file controls, among other things, clean URLs. Without `.htaccess`, clean URLs will not work.
+
+### Hiawatha, MariaDB, PHP-FPM
+
+Textpattern runs smoothly on a human-friendly Hiawatha web-server. Only a few of semantic data are required in your [virtual host section](//www.hiawatha-webserver.org/howto/websites) of a separate include or in the main `/etc/hiawatha/hiawatha.conf`:
+
+~~~
+VirtualHost {
+	Hostname = www.my-website.com
+	StartFile = index.php
+	UseFastCGI = PHP7
+	UseToolkit = textpattern
+	WebsiteRoot = /var/www/my-website/public
+	AccessLogfile = /var/log/hiawatha/my-website/access.log
+	ErrorLogfile = /var/log/hiawatha/my-website/errors.log
+#	TLScertFile = my-website.pem
+#	RequireTLS = yes
+}
+~~~
+
+Replace my-website.com to your own domain name and correct the path where needed. Type PHP5 instead of PHP7 if your host still does not support PHP7. Uncomment `TLSsertFile` line if you want to support secure connection. To forbid open access and switch HTTP to HTTPS only, uncomment also the directive `RequireTLS = yes`. Hiawatha has support for SNI, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt certificates, according to your virtual host configuration.
+
+Hiawatha does not need `.htaccess` file. If you wish clean semantic URLs, paste instead the following [URL Toolkit](//www.hiawatha-webserver.org/howto/url_toolkit) for [Textpattern](//www.hiawatha-webserver.org/howto/url_rewrite_rules) in the beginning of our include file for the virtual host or in the general `hiawatha.conf` file itself:
+
+~~~
+UrlToolkit {
+	ToolkitID = textpattern
+	RequestURI exists Return
+	Match ^/(css|files|images)(/|$) Return
+	Match ^/(favicon.ico|robots.txt|sitemap.xml)$ Return
+	Match [^?]*(\?.*)? Rewrite /index.php$1
+}
+~~~
+
+URL Toolkit could also be adopted for many other tasks, e. g. for URL 301 HTTP redirection:
+
+~~~
+UrlToolkit {
+	ToolkitID = my-website
+	Match ^/my-former-url-title Redirect /my-new-url-title
+	Match ^/some-url Redirect //www.another-website.com/url-title
+	Match ^/textpattern/ Redirect https://txp.my-website.com/textpattern/
+}
+~~~
+
+Of course, we should point to this ToolkitID from our vhost section. You can also set some HTTP `CustomHeaderBackend` or `CustomHeaderClient` there for better performance, for example:
+
+~~~
+VirtualHost {
+	...
+	UseToolkit = my-website, textpattern
+	UseDirectory = static
+	CustomHeaderClient = Vary: accept-encoding
+	...
+}
+~~~
+
+Where `static` would include cache directives for your static assets:
+
+~~~
+Directory {
+	DirectoryID = static
+	Path = /css, /files, /images
+	ExpirePeriod = 2 months, public
+}
+~~~
+
+You can name your website by several domains — simply append its aliases in the same line of the virtual host section, separated by comma. Uncomment the `EnforceFirstHostname` directive if wanted to return webpages for visitors by only the first domain in your list (redirected 301):
+
+~~~
+VirtualHost {
+	Hostname = www.my-website.com, my-website.com, our.org
+#	EnforceFirstHostname = yes
+	...
+}
+~~~
+
+About more options and possibilities — on the [manual](//www.hiawatha-webserver.org/manpages/hiawatha), [how-tos](//www.hiawatha-webserver.org/howto), [FAQs](//www.hiawatha-webserver.org/faq), [forum](//www.hiawatha-webserver.org/forum) (and also in [Lithuanian](//on.lt/hiawatha) language).
 
 ### Nginx, MySQL, PHP-FPM
 
