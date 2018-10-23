@@ -36,9 +36,9 @@ Textpattern-specific directives are provided by `.htaccess` in the root director
 
 ### Hiawatha, MariaDB, PHP-FPM
 
-Textpattern runs smoothly on a human-friendly Hiawatha web-server. Only a few of semantic data are required in [virtual host section](//www.hiawatha-webserver.org/howto/websites) of a separate include or in the main `/etc/hiawatha/hiawatha.conf`:
+Textpattern runs smoothly on a human-friendly Hiawatha web-server. Only a few of semantic data are required in your [virtual host section](//www.hiawatha-webserver.org/howto/websites) of a separate include or in the main `/etc/hiawatha/hiawatha.conf`:
 
-~~~ hiawatha
+~~~
 VirtualHost {
 	Hostname = www.my-website.com
 	StartFile = index.php
@@ -77,7 +77,7 @@ UrlToolkit {
 }
 ~~~
 
-Of course, we should point to this ToolkitID from our vhost section. You can also set some `CustomHeaderBackend` or `CustomHeaderClient` there for better performance, for example:
+Of course, we should point to this ToolkitID from our vhost section. You can also set some HTTP `CustomHeaderBackend` or `CustomHeaderClient` there for better performance, for example:
 
 ~~~
 VirtualHost {
