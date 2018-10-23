@@ -3,14 +3,14 @@ layout: document
 category: Installation
 published: true
 title: Configuring a web server for Textpattern.
-description: This article offers guidance and tips for administrators wishing to install Textpattern to both supported web server platforms and other, unsupported web servers.
+description: This article offers guidance and tips for administrators wishing to install Textpattern to various web server platforms.
 ---
 
 # Configuring a web server for Textpattern
 
-Textpattern CMS is supported on any web server that supports PHP, MySQL and either Apache or Nginx. While other web server platforms are suitable for housing a Textpattern instance, additional considerations should be made for the web hosting server environment. This article offers guidance and tips for administrators wishing to install Textpattern to both supported web server platforms and other, unsupported web servers.
+Textpattern CMS runs on servers that run PHP, MySQL and an appropriate HTTP (web) server. This article offers guidance and tips for administrators wishing to configure a web server for Textpattern.
 
-The article's scope extends to the functional requirements of installing Textpattern on a existing production web server. It does not focus on installation of the web server software itself, security procedures for a production server or performance optimisations.
+The article's scope extends to the functional requirements of installing Textpattern on a existing production web server. It does not focus on installation of the web server software itself, security procedures for a production server or considerations toward optimising performance.
 
 ## In this document
 
