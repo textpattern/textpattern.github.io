@@ -89,15 +89,15 @@ Textpattern runs faster on current mainline versions of Hiawatha, MariaDB and PH
 
 ~~~
 VirtualHost {
-	Hostname = www.my-website.com
-	StartFile = index.php
-	UseFastCGI = PHP7
-	UseToolkit = textpattern
-	WebsiteRoot = /var/www/my-website/public
-	AccessLogfile = /var/log/hiawatha/my-website/access.log
-	ErrorLogfile = /var/log/hiawatha/my-website/errors.log
-#	TLScertFile = my-website.pem
-#	RequireTLS = yes
+  Hostname = www.my-website.com
+  StartFile = index.php
+  UseFastCGI = PHP7
+  UseToolkit = textpattern
+  WebsiteRoot = /var/www/my-website/public
+  AccessLogfile = /var/log/hiawatha/my-website/access.log
+  ErrorLogfile = /var/log/hiawatha/my-website/errors.log
+  #TLScertFile = my-website.pem
+  #RequireTLS = yes
 }
 ~~~
 
@@ -107,11 +107,11 @@ Hiawatha does not need `.htaccess` file. If you wish clean semantic URLs, paste 
 
 ~~~
 UrlToolkit {
-	ToolkitID = textpattern
-	RequestURI exists Return
-	Match ^/(css|files|images)(/|$) Return
-	Match ^/(favicon.ico|robots.txt|sitemap.xml)$ Return
-	Match [^?]*(\?.*)? Rewrite /index.php$1
+  ToolkitID = textpattern
+  RequestURI exists Return
+  Match ^/(css|files|images)(/|$) Return
+  Match ^/(favicon.ico|robots.txt|sitemap.xml)$ Return
+  Match [^?]*(\?.*)? Rewrite /index.php$1
 }
 ~~~
 
@@ -119,10 +119,10 @@ URL Toolkit could also be adopted for many other tasks, e. g. for URL 301 HTTP r
 
 ~~~
 UrlToolkit {
-	ToolkitID = my-website
-	Match ^/my-former-url-title Redirect /my-new-url-title
-	Match ^/some-url Redirect //www.another-website.com/url-title
-	Match ^/textpattern/ Redirect https://txp.my-website.com/textpattern/
+  ToolkitID = my-website
+  Match ^/my-former-url-title Redirect /my-new-url-title
+  Match ^/some-url Redirect //www.another-website.com/url-title
+  Match ^/textpattern/ Redirect https://txp.my-website.com/textpattern/
 }
 ~~~
 
@@ -130,11 +130,11 @@ Of course, we should point to this ToolkitID from our vhost section. You can als
 
 ~~~
 VirtualHost {
-	...
-	UseToolkit = my-website, textpattern
-	UseDirectory = static
-	CustomHeaderClient = Vary: accept-encoding
-	...
+  ...
+  UseToolkit = my-website, textpattern
+  UseDirectory = static
+  CustomHeaderClient = Vary: accept-encoding
+  ...
 }
 ~~~
 
@@ -142,9 +142,9 @@ Where `static` would include cache directives for your static assets:
 
 ~~~
 Directory {
-	DirectoryID = static
-	Path = /css, /files, /images
-	ExpirePeriod = 2 months, public
+  DirectoryID = static
+  Path = /css, /files, /images
+  ExpirePeriod = 2 months, public
 }
 ~~~
 
@@ -152,9 +152,9 @@ You can name your website by several domains — simply append its aliases in th
 
 ~~~
 VirtualHost {
-	Hostname = www.my-website.com, my-website.com, our.org
-#	EnforceFirstHostname = yes
-	...
+  Hostname = www.my-website.com, my-website.com, our.org
+  #EnforceFirstHostname = yes
+  ...
 }
 ~~~
 
