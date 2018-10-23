@@ -20,6 +20,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 * [Installing Textpattern](https://docs.textpattern.com/installation/) (detailed instructions)
 * [Upgrading Textpattern](https://docs.textpattern.com/installation/upgrading-textpattern)
+* [Configuring a web server for Textpattern](https://docs.textpattern.com/installation/configuring-a-web-server-for-textpattern)
 * [Moving a Textpattern installation](https://docs.textpattern.com/installation/moving-textpattern)
 * [Post install and upgrade routines](https://docs.textpattern.com/installation/post-install-and-upgrade-routines)
 * [Multi-site Textpattern installations](https://docs.textpattern.com/installation/multi-site-textpattern)
