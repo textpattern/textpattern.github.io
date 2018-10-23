@@ -15,8 +15,8 @@ The article's scope extends to the functional requirements of installing Textpat
 ## Supported environments
 
 * [Apache, MySQL, PHP](#apache-mysql-php)
-* [Hiawatha, MariaDB, PHP-FPM](#hiawatha-mariadb-php-fpm)
 * [Nginx, MySQL, PHP-FPM](#nginx-mysql-php-fpm)
+* [Hiawatha, MariaDB, PHP-FPM](#hiawatha-mariadb-php-fpm)
 
 ### Apache, MySQL, PHP
 
@@ -34,9 +34,58 @@ Save the file as `preflight.php` or similar, and view it in a browser. If PHP is
 
 Textpattern-specific directives are provided by `.htaccess` in the root directory and other locations within the file tree. It is important to upload this file if your web server runs Apache as it's essentially direct instructions for the web server to work in a specific way. The root `.htaccess` file controls, among other things, clean URLs. Without `.htaccess`, clean URLs will not work.
 
+### Nginx, MySQL, PHP-FPM
+
+Textpattern runs faster on current mainline versions of Nginx, MySQL and PHP than end-of-life'd legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
+
+The method of enabling PHP-FPM extensions varies between versions of PHP-FPM and Nginx, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
+
+Modifications to the Nginx server block may be required as directives in `.htaccess` are ignored and not processed by Nginx. Take the following example Nginx `server` configuration with `upstream`'d PHP-FPM:
+
+~~~ nginx
+upstream php-fpm {
+  server 127.0.0.1:9000;
+}
+
+server {
+  listen [::]:80;
+  listen 80;
+  server_name example.com;
+  root /sites/example.com/public;
+  charset utf-8;
+  location ~ /\. {
+    deny all;
+  }
+  location / {
+    index index.php;
+    try_files $uri $uri/ /index.php?$args;
+  }
+  location ~ \.php$ {
+    fastcgi_pass php-fpm;
+    fastcgi_index index.php;
+    include fastcgi_params;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+  }
+  #Inhibits direct file downloads
+  #location ^~ /files/\.*$ {
+  #  return 403;
+  #}
+  location ^~ /themes/\.txp$ {
+    return 403;
+  }
+  types {
+    image/svg+xml svg svgz;
+  }
+  gzip on;
+  gzip_types image/svg+xml;
+}
+~~~
+
+This `server` block includes a basic web hosting setup and translates the Apache-specific directives in `.htaccess` to an Nginx-native format. It can be used as a base for your Textpattern site.
+
 ### Hiawatha, MariaDB, PHP-FPM
 
-Textpattern runs smoothly on a human-friendly Hiawatha web-server. Only a few of semantic data are required in your [virtual host section](//www.hiawatha-webserver.org/howto/websites) of a separate include or in the main `/etc/hiawatha/hiawatha.conf`:
+Textpattern runs faster on current mainline versions of Hiawatha, MariaDB and PHP than end-of-life'd legacy versions. Only a few of semantic data are required in your Hiawatha [virtual host section](//www.hiawatha-webserver.org/howto/websites) of a separate include or in the main `/etc/hiawatha/hiawatha.conf`:
 
 ~~~
 VirtualHost {
@@ -110,52 +159,3 @@ VirtualHost {
 ~~~
 
 About more options and possibilities — on the [manual](//www.hiawatha-webserver.org/manpages/hiawatha), [how-tos](//www.hiawatha-webserver.org/howto), [FAQs](//www.hiawatha-webserver.org/faq), [forum](//www.hiawatha-webserver.org/forum) (and also in [Lithuanian](//on.lt/hiawatha) language).
-
-### Nginx, MySQL, PHP-FPM
-
-Textpattern runs faster on current mainline versions of Nginx, MySQL and PHP than end-of-life'd legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
-
-The method of enabling PHP-FPM extensions varies between versions of PHP-FPM and Nginx, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
-
-Modifications to the Nginx server block may be required as directives in `.htaccess` are ignored and not processed by Nginx. Take the following example Nginx `server` configuration with `upstream`'d PHP-FPM:
-
-~~~ nginx
-upstream php-fpm {
-  server 127.0.0.1:9000;
-}
-
-server {
-  listen [::]:80;
-  listen 80;
-  server_name example.com;
-  root /sites/example.com/public;
-  charset utf-8;
-  location ~ /\. {
-    deny all;
-  }
-  location / {
-    index index.php;
-    try_files $uri $uri/ /index.php?$args;
-  }
-  location ~ \.php$ {
-    fastcgi_pass php-fpm;
-    fastcgi_index index.php;
-    include fastcgi_params;
-    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-  }
-  #Inhibits direct file downloads
-  #location ^~ /files/\.*$ {
-  #  return 403;
-  #}
-  location ^~ /themes/\.txp$ {
-    return 403;
-  }
-  types {
-    image/svg+xml svg svgz;
-  }
-  gzip on;
-  gzip_types image/svg+xml;
-}
-~~~
-
-This `server` block includes a basic web hosting setup and translates the Apache-specific directives in `.htaccess` to an Nginx-native format. It can be used as a base for your Textpattern site.
