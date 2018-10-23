@@ -12,7 +12,7 @@ Textpattern CMS is supported on any web server that supports PHP, MySQL and eith
 
 The article's scope extends to the functional requirements of installing Textpattern on a existing production web server. It does not focus on installation of the web server software itself, security procedures for a production server or performance optimisations.
 
-## Supported environments
+## In this document
 
 * [Apache, MySQL, PHP](#apache-mysql-php)
 * [Nginx, MySQL, PHP-FPM](#nginx-mysql-php-fpm)
@@ -94,16 +94,16 @@ VirtualHost {
   UseFastCGI = PHP7
   UseToolkit = textpattern
   WebsiteRoot = /var/www/example.com/public
-  AccessLogfile = /var/log/hiawatha/example-site/access.log
-  ErrorLogfile = /var/log/hiawatha/example-site/errors.log
-  #TLScertFile = example-site.pem
+  AccessLogfile = /var/log/hiawatha/example.com/access.log
+  ErrorLogfile = /var/log/hiawatha/example.com/errors.log
+  #TLSCertFile = example-site.pem
   #RequireTLS = yes
 }
 ~~~
 
-Replace `example.com` to your own domain name and correct the server paths where appropriate. Use `PHP5` instead of `PHP7` if your host still does not support PHP v7.x. Uncomment the `TLSsertFile` line if you want to support secure connections. To forbid open access and switch HTTP to HTTPS only, uncomment the directive `RequireTLS = yes`. Hiawatha has support for SNI, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt certificates, according to your virtual host configuration.
+Replace `example.com` with your domain name and modify the server paths where appropriate. Use `PHP5` instead of `PHP7` if your host still does not support PHP v7.x. Uncomment the `TLSCertFile` line if you want to support secure connections. To forbid open access and switch HTTP to HTTPS only, uncomment the directive `RequireTLS = yes`. Hiawatha has support for Server Name Indication, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt! certificates, according to your virtual host configuration.
 
-Hiawatha does not require a `.htaccess` file. If you wish to use clean semantic URLs, paste the following [URL Toolkit](https://www.hiawatha-webserver.org/howto/url_toolkit) for [Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main `hiawatha.conf` file itself:
+Hiawatha does not use `.htaccess` file. If you wish to use clean semantic URLs, paste the following [URL Toolkit](https://www.hiawatha-webserver.org/howto/url_toolkit) for [Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main `hiawatha.conf` file itself:
 
 ~~~ nginx
 UrlToolkit {
@@ -115,14 +115,14 @@ UrlToolkit {
 }
 ~~~
 
-URL Toolkit can also be adopted for many other tasks, For example for URL 301 HTTP redirection:
+URL Toolkit can also be adapted for many other tasks, for example HTTP 301 redirection:
 
 ~~~ nginx
 UrlToolkit {
   ToolkitID = my-website
   Match ^/my-former-url-title Redirect /my-new-url-title
-  Match ^/some-url Redirect //www.another-example.com/url-title
-  Match ^/textpattern/ Redirect https://txp.example.com/textpattern/
+  Match ^/some-url Redirect //www.example.org/url-title
+  Match ^/textpattern/ Redirect https://www.example.net/textpattern/
 }
 ~~~
 
@@ -158,4 +158,4 @@ VirtualHost {
 }
 ~~~
 
-More options and further information can be found in the Hiawatha [manual](https://www.hiawatha-webserver.org/manpages/hiawatha), [how-tos](https://www.hiawatha-webserver.org/howto), [FAQs](https://www.hiawatha-webserver.org/faq) and [forum](https://www.hiawatha-webserver.org/forum).
+More options and further information can be found in the [Hiawatha manual](https://www.hiawatha-webserver.org/manpages/hiawatha), [Hiawatha how-to guides](https://www.hiawatha-webserver.org/howto), [Hiawatha FAQs](https://www.hiawatha-webserver.org/faq) and the [Hiawatha user forum](https://www.hiawatha-webserver.org/forum).
