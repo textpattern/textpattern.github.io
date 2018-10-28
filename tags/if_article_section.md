@@ -37,8 +37,9 @@ The tag will execute the contained statements if the section name associated wit
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`name="section"`
-: Comma-separated list of section names.
+`name=""`
+: One or more section names separated by a comma.
+: Example : `name="section,section2,etc"`
 
 ## Examples
 
