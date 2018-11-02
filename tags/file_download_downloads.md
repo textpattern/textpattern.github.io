@@ -38,3 +38,11 @@ This tag has no attributes.
     <txp:file_download_downloads />
 </p>
 ~~~
+
+### Example 2: Display the number of downloads of a particular article
+
+<txp:file_download_list id="#">
+<p><txp:file_download_name /> downloaded <txp:file_download_downloads /> times.</p>
+</txp:file_download_list>
+
+Other tags used: [file_download_downloads](file_download_downloads), [file_download_name](file_download_name)
