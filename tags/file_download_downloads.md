@@ -47,4 +47,4 @@ This tag has no attributes.
 </txp:file_download_list>
 ~~~
 
-Other tags used: [file_download_downloads](file_download_downloads), [file_download_name](file_download_name)
+Other tags used: [file_download_downloads](file_download_downloads), [file_download_name](file_download_name), [file_download_list](file_download_list).
