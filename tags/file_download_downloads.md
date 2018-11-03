@@ -39,7 +39,7 @@ This tag has no attributes.
 </p>
 ~~~
 
-### Example 2: Display the number of downloads of a particular article
+### Example 2: Display the number of downloads of a particular file
 
 ~~~ html
 <txp:file_download_list id="#">
