@@ -42,9 +42,14 @@ This tag has no attributes.
 ### Example 2: Display the number of downloads of a particular file
 
 ~~~ html
-<txp:file_download_list id="#">
-<p><txp:file_download_name /> downloaded <txp:file_download_downloads /> times.</p>
+<txp:file_download_list id="1">
+    <p>
+        <txp:file_download_name />
+        downloaded
+        <txp:file_download_downloads />
+        times.
+    </p>
 </txp:file_download_list>
 ~~~
 
-Other tags used: [file_download_downloads](file_download_downloads), [file_download_name](file_download_name), [file_download_list](file_download_list).
+Other tags used: [file_download_list](file_download_list), [file_download_name](file_download_name).
