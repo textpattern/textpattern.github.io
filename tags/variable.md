@@ -117,7 +117,7 @@ Other tags used: [if_variable](if_variable).
 </txp:if_variable>
 ~~~
 
-Other tags used: [if_variable](if_variable), [page_url](page_url).
+Other tags used: [else](else), [if_variable](if_variable), [page_url](page_url).
 
 ## Genealogy
 
