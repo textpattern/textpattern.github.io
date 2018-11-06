@@ -106,6 +106,19 @@ The conditional is saying if there is a variable named 'foo' having a specific v
 
 Other tags used: [if_variable](if_variable).
 
+### Example 3: Check if this is the first page of a page group
+
+~~~ html
+<txp:variable name="page" value='<txp:page_url type="pg" />' />
+<txp:if_variable name="page" value="1">
+    This is the first page.
+<txp:else />
+    This is page number <txp:variable name="page" />.
+</txp:if_variable>
+~~~
+
+Other tags used: [if_variable](if_variable), [page_url](page_url).
+
 ## Genealogy
 
 ### Version 4.0.7

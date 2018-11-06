@@ -49,7 +49,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ## Examples
 
-See the [variable](variable) page for examples.
+See the [variable](variable) tag page for examples.
 
 ## Genealogy
 
