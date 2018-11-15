@@ -32,23 +32,35 @@ Will output:
 `escape="json"`
 : JSON-encode, without the surrounding `""` quotes.
 
+`escape="quote"`
+: Surround the content with `''` apostrophes.
+
 `escape="trim"` (`ltrim`, `rtrim`)
 : Remove surrounding (left, right) spaces/newlines from the content.
 
 `escape="tidy"`
 : Remove extra spaces/newlines from the content and trigger a more thorough processing mode.
 
-`escape="number"`
-: Format the content as a number.
+```
+escape="number"
+escape="integer"
+escape="float"
+```
+: Format the content as a number of the designated type.
 
 `escape="tidy, number"`
 : Remove spaces/newlines and format the content as a stricter number (force to float or fraction first).
 
-`escape="integer"`
-: Format the content as an integer.
 
 `escape="tidy, integer"`
 : Remove spaces/newlines and format the content as a stricter integer (ensure it adheres to an integer first).
+
+```
+escape="upper"
+escape="lower"
+escape="title"
+```
+: Convert the content to upper case, lower case, or sentence (Title) case.
 
 `escape="textile"`
 : Textile the content.
