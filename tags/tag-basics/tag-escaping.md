@@ -41,25 +41,16 @@ Will output:
 `escape="tidy"`
 : Remove extra spaces/newlines from the content and trigger a more thorough processing mode.
 
-```
-escape="number"
-escape="integer"
-escape="float"
-```
+`escape="number"` (`integer`, `float`)
 : Format the content as a number of the designated type.
 
 `escape="tidy, number"`
 : Remove spaces/newlines and format the content as a stricter number (force to float or fraction first).
 
-
 `escape="tidy, integer"`
 : Remove spaces/newlines and format the content as a stricter integer (ensure it adheres to an integer first).
 
-```
-escape="upper"
-escape="lower"
-escape="title"
-```
+`escape="upper"` (`lower`, `title`)
 : Convert the content to upper case, lower case, or sentence (Title) case.
 
 `escape="textile"`
