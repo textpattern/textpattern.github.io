@@ -60,7 +60,7 @@ The plugin itself is a text (`.txt`) file. It usually has a header stating the n
 # Type: Client side plugin
 # Brief Description of the plugin
 # Author: Author name
-# URL: http://example.com/
+# URL: https://example.com/
 # Recommended load order: 5
 
 # ……………………………………………………………

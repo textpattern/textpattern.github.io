@@ -61,7 +61,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 This would result in something like:
 
-bc. http://example.com/index.php?id=2
+bc. https://example.com/index.php?id=2
 
 ### Example 2: Container tag
 
@@ -74,7 +74,7 @@ bc. http://example.com/index.php?id=2
 This would result in the following:
 
 ~~~ html
-<a rel="bookmark" href="http://example.com/index.php?id=2">Article title</a>
+<a rel="bookmark" href="https://example.com/index.php?id=2">Article title</a>
 ~~~
 
 Other tags used: [title](title).

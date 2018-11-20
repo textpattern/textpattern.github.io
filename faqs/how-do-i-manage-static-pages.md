@@ -2,7 +2,7 @@ h1. How do I manage static pages? [todo]
 
 The short answer: create a section, use an article form that doesn't include posted dates or permlinks, and post a single article in that section.
 
-The long answer: when you view a URL like @http://example.com/contact/@, Textpattern will display the _section_ named *contact*, using the _page template_ selected for the *contact* section. (This assumes your Textpattern front page is @http://example.com/@).
+The long answer: when you view a URL like @https://example.com/contact/@, Textpattern will display the _section_ named *contact*, using the _page template_ selected for the *contact* section. (This assumes your Textpattern front page is @https://example.com/@).
 
 The usual way to manage content on a "static" (single, stand-alone) page like this is as follows:
 
@@ -24,7 +24,7 @@ This template will be used to display your static page.
 
 4. Post a new *article* in the @contact@ section, with the article status set to *Sticky* instead of Live.
 
-The most recent Sticky article will be displayed as the page contents when you view the URL @http://example.com/contact/@.
+The most recent Sticky article will be displayed as the page contents when you view the URL @https://example.com/contact/@.
 
 To create additional static pages, you can skip steps 1 and 2, and reuse the same @static_page@ template.
 

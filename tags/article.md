@@ -166,7 +166,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 ### Note on 'article list' vs. 'individual article' context
 
-The **article** tag is context-sensitive. It will produce different results depending on whether the page being viewed is an article list or an individual article. Article-list context includes the default (home) page, section front pages, and category pages. Individual-article context applies on an article page (i.e. a page with a URL like `http://example.com/archives/24/my-article`).
+The **article** tag is context-sensitive. It will produce different results depending on whether the page being viewed is an article list or an individual article. Article-list context includes the default (home) page, section front pages, and category pages. Individual-article context applies on an article page (i.e. a page with a URL like `https://example.com/archives/24/my-article`).
 
 ## Examples
 
@@ -192,7 +192,7 @@ Expanding on **Example 1**, here is the `article` tag responsible for showing li
 
 In article list context, the form named `article_listing` will be processed and displayed for each article in the list. In individual article context, the `default` form would be used.
 
-To see this in action, on a new Textpattern install, from the home page select one of the category links near the bottom (right above the Comment link). Note the URL, similar to `http://example.com/category/meaningful-labor`. The `category` in the URL means this is a listing of articles by category. Here you see only the article title, posting date and article information (not the full article itself), because that is what is contained in the form named `article_listing`. Now select the article title. Note the URL, similar to `http://example.com/articles/1/welcome-to-your-site`. This is an individual article page. Once again you can see the full article, this time with comments showing (if comments are enabled).
+To see this in action, on a new Textpattern install, from the home page select one of the category links near the bottom (right above the Comment link). Note the URL, similar to `https://example.com/category/meaningful-labor`. The `category` in the URL means this is a listing of articles by category. Here you see only the article title, posting date and article information (not the full article itself), because that is what is contained in the form named `article_listing`. Now select the article title. Note the URL, similar to `https://example.com/articles/1/welcome-to-your-site`. This is an individual article page. Once again you can see the full article, this time with comments showing (if comments are enabled).
 
 ### Example 3: Offsetting article display
 

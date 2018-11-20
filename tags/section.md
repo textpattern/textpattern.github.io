@@ -98,13 +98,13 @@ Displays a hyperlink to the 'archive' section home page, wrapped in `<p>` tags, 
 Displays the text 'My Archive' as a hyperlink to the 'archive' section home page. HTML output for clean URLs:
 
 ~~~ html
-<a href="http://example.com/archive/">My Archive</a>
+<a href="https://example.com/archive/">My Archive</a>
 ~~~
 
 And for messy URLs:
 
 ~~~ html
-<a href="http://example.com/index.php?s=archive">My Archive</a>
+<a href="https://example.com/index.php?s=archive">My Archive</a>
 ~~~
 
 ### Example 5: Single tag example
@@ -118,13 +118,13 @@ And for messy URLs:
 Displays the section title 'About' as a hyperlink to the 'about' section home page. HTML output for clean URLs:
 
 ~~~ html
-<a href="http://example.com/about/">About</a>
+<a href="https://example.com/about/">About</a>
 ~~~
 
 And for messy URLs:
 
 ~~~ html
-<a href="http://example.com/index.php?s=about">About</a>
+<a href="https://example.com/index.php?s=about">About</a>
 ~~~
 
 ## Genealogy

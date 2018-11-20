@@ -55,7 +55,7 @@ This tag has no attributes.
 <txp:comments_invite wraptag="p" />
 
 <txp:if_last_article>
-    <img src="http://example.com/footer.jpg" alt="Footer">
+    <img src="https://example.com/footer.jpg" alt="Footer">
 </txp:if_last_article>
 ~~~
 

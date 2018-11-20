@@ -36,9 +36,9 @@ Sometimes a page template can be working perfectly, but appear to be incorrect d
 
 If the stylesheet isn't being applied to the document at all, or isn't working in some browsers, view the HTML source of your page and find the CSS URL.  Typically it looks like this:
 
-bq. @<link rel="stylesheet" href="http://example.com/textpattern/css.php?s=default" type="text/css" media="screen" />@
+bq. @<link rel="stylesheet" href="https://example.com/textpattern/css.php?s=default" type="text/css" media="screen" />@
 
-Open that URL (@http://example.com/textpattern/css.php?s=default@) in your browser and check for obvious problems - a 404 Not Found error, or error messages or other junk at the top or bottom of the stylesheet.
+Open that URL (@https://example.com/textpattern/css.php?s=default@) in your browser and check for obvious problems - a 404 Not Found error, or error messages or other junk at the top or bottom of the stylesheet.
 
 h4(#isolate). Isolate the problem code
 

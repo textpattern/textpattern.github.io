@@ -55,7 +55,7 @@ Tag will accept the following attributes (**case-sensitive**):
 ### Example 2: Issue a permanent redirect
 
 ~~~ html
-<txp:txp_die status="301" url="http://example.com/new/location" />
+<txp:txp_die status="301" url="https://example.com/new/location" />
 ~~~
 
 ## Genealogy

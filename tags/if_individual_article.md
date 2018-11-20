@@ -82,7 +82,7 @@ Other tags used: [link_to_prev](link_to_prev), [link_to_next](link_to_next), [ne
     </p>
 <txp:else />
     <p>
-        <img src="http://example.com/logo.png" alt="Logo">
+        <img src="https://example.com/logo.png" alt="Logo">
     </p>
 </txp:if_individual_article>
 ~~~

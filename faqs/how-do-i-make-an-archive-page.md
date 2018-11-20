@@ -24,7 +24,7 @@ bq. @<!-- show the year -->@
 
 bq. @<txp:article_custom limit=99999 form="monthly_article" />@
 
-4. Create a section named *archive*, *list*, or similar.  The section page (http://example.com/archive/ or http://example.com/?s=archive) will be used to display the list of articles.  Select *archive_list* as the page template ("Uses page:").
+4. Create a section named *archive*, *list*, or similar.  The section page (https://example.com/archive/ or https://example.com/?s=archive) will be used to display the list of articles.  Select *archive_list* as the page template ("Uses page:").
 
 *Variations*
 

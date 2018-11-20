@@ -225,13 +225,13 @@ Take the following example article title: "Ann and Bob eat cake"…
 When the 'Permalink title URL pattern' option is set to 'Hyphenated (title-like-this)', the URL for the article would be:
 
 ~~~
-http://example.com/ann-and-bob-eat-cake
+https://example.com/ann-and-bob-eat-cake
 ~~~
 
 When the 'Permalink title URL pattern' option is set to 'Intercapped (TitleLikeThis)', the URL for the article would be:
 
 ~~~
-http://example.com/AnnandBobeatcake
+https://example.com/AnnandBobeatcake
 ~~~
 
 ### Send &quot;Last-Modified&quot; header?

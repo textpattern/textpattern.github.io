@@ -127,7 +127,7 @@ When ready:
 
 ## Setup and configuration
 
-Now you'll walk through the setup process, which is a series of screens. Have you're "database information":#sec1 ready. Assuming you uploaded the install file tree to your web root, open a browser and go to *http://example.com/textpattern/setup/*. (If you installed Textpattern in a subdirectory, the path would reflect that.)
+Now you'll walk through the setup process, which is a series of screens. Have you're "database information":#sec1 ready. Assuming you uploaded the install file tree to your web root, open a browser and go to *https://example.com/textpattern/setup/*. (If you installed Textpattern in a subdirectory, the path would reflect that.)
 
 ### Select language
 
