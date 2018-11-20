@@ -22,7 +22,7 @@ On this page:
 <txp:file_download_size />
 ~~~
 
-The **file_download_size** tag is a *single* tag which Textpattern will replace with the formatted file size of the file to be downloaded. Should be used in Textpattern 'file' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
+The **file_download_size** tag is a *single* tag which Textpattern will replace with the formatted file size of the file to be downloaded. Should be used in Textpattern 'file' type [Form templates](../themes/form-templates-explained).
 
 ## Attributes
 

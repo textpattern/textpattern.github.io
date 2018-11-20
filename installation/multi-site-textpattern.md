@@ -33,7 +33,7 @@ A multi-site installation can be suitable if:
 * You work with theme templates as files and want to keep your templates and assets for each site separate from the Textpattern installation, for example to manage your sites as separate repositories using a versioning system (see [Alternative multi-site scenarios](#alternative-multi-site-scenarios)).
 * You run multiple sites with different versions of Textpattern, or experiment with several versions of Textpattern (see [Alternative multi-site scenarios](#alternative-multi-site-scenarios)).
 
-If none of the above apply, follow the instructions for installing a regular [Textpattern installation](https://docs.textpattern.com/installation/).
+If none of the above apply, follow the instructions for installing a regular [Textpattern installation](installation).
 
 ## Additional system requirements
 
@@ -60,7 +60,7 @@ Follow these instructions for each new site in your multi-site installation:
 3. In your web host’s control panel, setup a subdomain `www.example.com` and set its document root to the `/sites/mydomain/public/` directory. If you prefer, you can use another subdomain instead of www, e.g. `dev`, `beta`, `v2`, etc. This will be the URL your website visitors will use.
 4. In your web host’s control panel, setup the subdomain `admin.example.com` and set its document root to the `/sites/mydomain/admin/` directory. If you prefer, you can use another subdomain instead of admin, e.g. `edit`, `login`, `manage`, etc. This will be the URL your website content managers or editors will use and replaces the regular */textpattern* login address.
 5. Open a web browser and go to `admin.example.com/setup/`. If you chose another subdomain in step 4, enter that manually in place of *admin* in the web address.
-6. Follow the instructions in the web browser. The setup routine follows the same procedure as a [regular Textpattern installation](https://docs.textpattern.com/installation/#setup-and-configuration) but asks for two pieces of additional information:
+6. Follow the instructions in the web browser. The setup routine follows the same procedure as a [regular Textpattern installation](installation#setup-and-configuration) but asks for two pieces of additional information:
   * **Admin subdomain**: This should be the subdomain you chose above in step 4, e.g. `admin.example.com`.
   * **Cookie domain**: This is usually the main domain name, e.g. `example.com`.
   * Reminder: If you chose a database prefix and are using one database for several Textpattern installations, remember to enter it during configuration.

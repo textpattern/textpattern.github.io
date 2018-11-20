@@ -31,7 +31,7 @@ The **if_first_article** tag is a *conditional* tag and always used as an openin
 </txp:if_first_article>
 ~~~
 
-The tag will execute the contained statements if the displayed article is the first in the currently displayed list. It will display in both single article and article list modes. Should be used in Textpattern 'article' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
+The tag will execute the contained statements if the displayed article is the first in the currently displayed list. It will display in both single article and article list modes. Should be used in Textpattern 'article' type [Form templates](../themes/form-templates-explained).
 
 ## Attributes
 

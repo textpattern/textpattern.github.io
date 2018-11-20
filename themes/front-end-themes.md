@@ -11,7 +11,7 @@ description: Front-end themes allow creating and sharing website front-end desig
 With the arrival of Textpattern CMS 4.7 comes new core theming functionality for the front-end. You may get up to speed with current reading so far with the following resources:
 
 * [Textpattern gains Themes support](https://textpattern.com/weblog/403/textpattern-cms-gains-themes-support) (developer overview on theme functionality)
-* [Themes panel](https://docs.textpattern.com/administration/themes-panel) (administration doc)
+* [Themes panel](../administration/themes-panel) (administration doc)
 
 ## Creating new front-end themes (work in progress)
 

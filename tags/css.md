@@ -23,7 +23,7 @@ On this page:
 <txp:css />
 ~~~
 
-The basic **css** tag is a *single* tag used to output the URL of the stylesheet assigned in the Textpattern [Sections panel](https://docs.textpattern.com/administration/sections-panel).
+The basic **css** tag is a *single* tag used to output the URL of the stylesheet assigned in the Textpattern [Sections panel](../administration/sections-panel).
 
 ## Attributes
 

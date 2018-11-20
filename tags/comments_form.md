@@ -39,11 +39,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="CSS class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** `comments_form` (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
+: **Default:** `comments_form` (see [class cross-reference](tag-attributes-cross-reference#class)).
 
 `wraptag="tag"`
 : HTML tag to wrap around output, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

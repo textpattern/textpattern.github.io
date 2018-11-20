@@ -36,7 +36,7 @@ The other is to output raw description text anywhere else:
 {your description}
 ~~~
 
-The tag is context aware, in that it will use article descriptions (if available) on individual article pages, and use section and category descriptions (again, if available) on listing pages. The tag can be added directly in [Page templates](https://docs.textpattern.com/themes/page-templates-explained) or as part of 'article' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained). Either way, you may also use it in a given article tag.
+The tag is context aware, in that it will use article descriptions (if available) on individual article pages, and use section and category descriptions (again, if available) on listing pages. The tag can be added directly in [Page templates](../themes/page-templates-explained) or as part of 'article' type [Form templates](../themes/form-templates-explained). Either way, you may also use it in a given article tag.
 
 Note: The corresponding description field has a 255 character limit by default, which includes spaces and punctuation. This is the MySQL database default. You can edit the default using [phpMyAdmin](https://www.phpmyadmin.net), for example.
 {: .alert-block .information}
@@ -45,7 +45,7 @@ Note: The corresponding description field has a 255 character limit by default, 
 
 `escape="html"`
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&`.
-: **Values:** See the [tag escaping](https://docs.textpattern.com/tags/tag-basics/tag-escaping) documentation for all possible values.
+: **Values:** See the [tag escaping](tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
 `format="value"`

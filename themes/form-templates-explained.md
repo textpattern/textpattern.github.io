@@ -38,7 +38,7 @@ The contents of 'single-article-template':
 </article>
 ~~~
 
-As you can see, this 'article' type Form template is composed of three different tags: [title](https://docs.textpattern.com/tags/title), [posted](https://docs.textpattern.com/tags/posted) and [body](https://docs.textpattern.com/tags/body). If this Form template was used to output an article, it would result in something like the following HTML:
+As you can see, this 'article' type Form template is composed of three different tags: [title](../tags/title), [posted](../tags/posted) and [body](../tags/body). If this Form template was used to output an article, it would result in something like the following HTML:
 
 ~~~ html
 <article>
@@ -54,7 +54,7 @@ When creating a form, it must be assigned to a 'Type', which is available via a 
 
 Form template types have almost no inherent semantic meaning, but aid solely as a means of organization for the designer/user. One notable exception: *article* type forms are the only ones listed in the [Override form](https://docs.textpattern.com/administraiton/write-panel#override-form) dropdown on the Write panel.
 
-The category and section types are intended to be used in conjunction with [category_list](https://docs.textpattern.com/tags/category_list) and [section_list](https://docs.textpattern.com/tags/section_list), respectively, as a value to the `form` attribute, along the lines of `<txp:section_list form="foo" />`. They serve the same use case as the `form` attributes for articles do.
+The category and section types are intended to be used in conjunction with [category_list](../tags/category_list) and [section_list](../tags/section_list), respectively, as a value to the `form` attribute, along the lines of `<txp:section_list form="foo" />`. They serve the same use case as the `form` attributes for articles do.
 
 ## Out-of-the-box forms
 

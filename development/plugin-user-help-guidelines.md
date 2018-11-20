@@ -134,7 +134,7 @@ The following code block is the plugin help template, which takes into account t
 
 Clarifying notes about using the template:
 
-**Prefix**. In the first line, `h1. prefix_plugin_name`, "prefix" will be your [plugin developer prefix](https://docs.textpattern.com/development/plugin-developer-prefixes).
+**Prefix**. In the first line, `h1. prefix_plugin_name`, "prefix" will be your [plugin developer prefix](plugin-developer-prefixes).
 
 **Features list**. If your plugin isn't complex (doesn't have a lot of features), you may merge the "Features list" section into your summary by simply saying in the summary what your plugin will do, rather than making an unnecessary list.
 

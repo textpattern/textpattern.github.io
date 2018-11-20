@@ -22,7 +22,7 @@ On this page:
 <txp:error_message />
 ~~~
 
-The **error_message** tag is a *single* tag that Textpattern will replace with the error message text for the error status as set by the server. Should be used in `error_xxx` or `error_default` Textpattern [Page templates](https://docs.textpattern.com/themes/page-templates-explained).
+The **error_message** tag is a *single* tag that Textpattern will replace with the error message text for the error status as set by the server. Should be used in `error_xxx` or `error_default` Textpattern [Page templates](../themes/page-templates-explained).
 
 ## Attributes
 

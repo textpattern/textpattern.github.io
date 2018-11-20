@@ -10,7 +10,7 @@ description: This tutorial walks you through the basics of creating and admin-si
 
 This tutorial walks you through the basics of creating an admin-side plugin; it covers functions, callbacks, and the concept of *events* and *steps*.
 
-You might also like to see the [Public-side plugin tutorial](https://docs.textpattern.com/development/public-side-plugin-tutorial).
+You might also like to see the [Public-side plugin tutorial](public-side-plugin-tutorial).
 
 On this page:
 
@@ -30,7 +30,7 @@ The plugin in this tutorial will:
 2. Output some text on that panel
 3. Respond to a plugin *step*
 
-Since all plugins must use a three-character alphanumeric [prefix](https://docs.textpattern.com/development/plugin-developer-prefixes),
+Since all plugins must use a three-character alphanumeric [prefix](plugin-developer-prefixes),
 we're using **abc** in this tutorial, which is reserved for documentation purposes.
 
 ## Targeting the admin side

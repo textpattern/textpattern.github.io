@@ -23,7 +23,7 @@ On this page:
 <txp:popup_comments />
 ~~~
 
-The **popup_comments** tag can be used as a *single* tag or a *container* tag. This tag opens a new page using the `popup_comments` form template as a container if you have set 'Comments mode' to 'popup window' in your [Preferences panel](https://docs.textpattern.com/administration/preferences-panel#comments-mode) (instead of displaying comments directly on the article page itself).
+The **popup_comments** tag can be used as a *single* tag or a *container* tag. This tag opens a new page using the `popup_comments` form template as a container if you have set 'Comments mode' to 'popup window' in your [Preferences panel](../administration/preferences-panel#comments-mode) (instead of displaying comments directly on the article page itself).
 
 ## Attributes
 
