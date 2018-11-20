@@ -36,11 +36,11 @@ Textpattern-specific directives are provided by `.htaccess` in the root director
 
 ### Nginx, MySQL, PHP-FPM
 
-Textpattern runs faster on current mainline versions of Nginx, MySQL and PHP than end-of-life'd legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
+Textpattern runs faster on current mainline versions of Nginx, MySQL and PHP than legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
 
 The method of enabling PHP-FPM extensions varies between versions of PHP-FPM and Nginx, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
 
-Modifications to the Nginx server block may be required as directives in `.htaccess` are ignored and not processed by Nginx. Take the following example Nginx `server` configuration with `upstream`'d PHP-FPM:
+Modifications to the Nginx server block may be required as directives in `.htaccess` are ignored and not processed by Nginx. Take the following example Nginx `server` configuration with `upstream`ed PHP-FPM:
 
 ~~~ nginx
 upstream php-fpm {
@@ -85,7 +85,7 @@ This `server` block includes a basic web hosting setup and translates the Apache
 
 ### Hiawatha, MariaDB, PHP-FPM
 
-Textpattern runs faster on current mainline versions of Hiawatha, MariaDB and PHP than end-of-life'd legacy versions. Only a few settings are required in your Hiawatha [virtual host section](https://www.hiawatha-webserver.org/howto/websites), as a separate include file or in the main `/etc/hiawatha/hiawatha.conf` file itself:
+Textpattern runs faster on current mainline versions of Hiawatha, MariaDB and PHP legacy versions. Only a few settings are required in your Hiawatha [virtual host section](https://www.hiawatha-webserver.org/howto/websites), as a separate include file or in the main `/etc/hiawatha/hiawatha.conf` file itself:
 
 ~~~ nginx
 VirtualHost {
@@ -101,9 +101,9 @@ VirtualHost {
 }
 ~~~
 
-Replace `example.com` with your domain name and modify the server paths where appropriate. Use `PHP5` instead of `PHP7` if your host still does not support PHP v7.x. Uncomment the `TLSCertFile` line if you want to support secure connections. To forbid open access and switch HTTP to HTTPS only, uncomment the directive `RequireTLS = yes`. Hiawatha has support for Server Name Indication, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt! certificates, according to your virtual host configuration.
+Replace `example.com` with your domain name and modify the server paths where appropriate. Use `PHP5` instead of `PHP7` if your host does not support PHP v7. Uncomment the `TLSCertFile` line if you want to support secure connections. To forbid open access and switch HTTP to HTTPS only, uncomment the directive `RequireTLS = yes`. Hiawatha has support for Server Name Indication, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt! certificates, according to your virtual host configuration.
 
-Hiawatha does not use `.htaccess` file. If you wish to use clean semantic URLs, paste the following [URL Toolkit](https://www.hiawatha-webserver.org/howto/url_toolkit) for [Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main `hiawatha.conf` file itself:
+Hiawatha does not use `.htaccess` file. If you wish to use clean URLs, paste the following [URL Toolkit for Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main `hiawatha.conf` file itself:
 
 ~~~ nginx
 UrlToolkit {
@@ -115,7 +115,7 @@ UrlToolkit {
 }
 ~~~
 
-URL Toolkit can also be adapted for many other tasks, for example HTTP 301 redirection:
+[URL Toolkit](https://www.hiawatha-webserver.org/howto/url_toolkit)) can also be adapted for many other tasks, for example HTTP 301 redirection:
 
 ~~~ nginx
 UrlToolkit {
@@ -126,7 +126,7 @@ UrlToolkit {
 }
 ~~~
 
-Of course, we should point to this ToolkitID from our vhost section. You can also set some HTTP `CustomHeaderBackend` or `CustomHeaderClient` details there for better performance, for example:
+This ToolkitID should be referenced from the virtual host section. You can also set some HTTP `CustomHeaderBackend` or `CustomHeaderClient` details there for better performance, for example:
 
 ~~~ nginx
 VirtualHost {
