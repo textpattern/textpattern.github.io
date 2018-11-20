@@ -35,7 +35,7 @@ To ensure SEO friendly URL patterns, and for consistency, all directory names/fi
 
 1. All text in lowercase.
 2. Use hyphens, *not* underscores, to separate words within the URL.
-3. Use Markdown formatting, **not** Textile. Jekyll uses the [kramdown syntax](http://kramdown.gettalong.org/syntax.html) of Markdown.
+3. Use Markdown formatting, **not** Textile. Jekyll uses the [kramdown syntax](https://kramdown.gettalong.org/syntax.html) of Markdown.
 4. Ensure filenames have `.md` extension.
 
 ~~~
@@ -53,7 +53,7 @@ Make doc pages **scannable** with a **consistent structure** across them, as muc
   * an unordered list of links to the `h2` headers only (e.g. `[Header label](#xxx)`), and
   * use `#xxx` as the anchors, where `xxx` is the heading text in lowercase with hyphens (i.e. for linking to `## Example heading` the anchor would be `(#example-heading)`).
 4. Avoid using `h4`-`h6` header levels, if possible, especially `h5`-`h6`. Deep structuring means the copy is too complex for new-user docs. Try and structure content with `h2`-`h3` only (and `h4` if really necessary).
-5. Use [kramdown footnotes](http://kramdown.gettalong.org/syntax.html#footnotes) in a given section for any 'tips' or side details not needing said in the primary paragraph. Use a subsequent number for each new footnote on the page, even if they're not in the same section. ([Footnote examples](https://docs.textpattern.com/administration/security))
+5. Use [kramdown footnotes](https://kramdown.gettalong.org/syntax.html#footnotes) in a given section for any 'tips' or side details not needing said in the primary paragraph. Use a subsequent number for each new footnote on the page, even if they're not in the same section. ([Footnote examples](https://docs.textpattern.com/administration/security))
 
 ## Concise copywriting tips
 
