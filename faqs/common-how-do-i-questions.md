@@ -71,7 +71,7 @@ bc.. <txp:if_article_list>
 
 p. FAQ: "How do I show only an excerpt in article lists?":https://textpattern.com/faq/24/how-do-i-show-only-an-excerpt-in-article-lists
 
-Excerpts automatically generated from the article body are possible through "plugins (Textpattern Resources: excerpts)":http://textpattern.org/categoryarchive/?c=excerpts.
+Excerpts automatically generated from the article body are possible through "plugins (Textpattern Resources: excerpts)":https://textpattern.org/categoryarchive/?c=excerpts.
 
 
 h4. …break an article list into columns, or insert ads between certain articles in a list?

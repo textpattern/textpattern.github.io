@@ -342,7 +342,7 @@ Those are two ways of inserting images. If you use a lot of images on your site,
 
 h4(#task_9_-_installing_a_plugin). Task 9 - Installing A Plugin
 
-# Go to "$":http://textpattern.org/plugins/332/upm_savenew (Textpattern Resources is where you will find most plugins)
+# Go to "$":https://textpattern.org/plugins/332/upm_savenew (Textpattern Resources is where you will find most plugins)
 # Click *Download File* (on the left) and *Copy* all the text and code that you see
 # Go to the *Plugins* tab and *Paste* it into the *Install plugin* field.
 # Click *_Upload_*. You will see the Plugin Preview and Help and at the bottom:

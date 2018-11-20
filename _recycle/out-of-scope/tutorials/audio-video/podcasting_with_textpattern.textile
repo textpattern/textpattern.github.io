@@ -86,4 +86,4 @@ h4(#resources). Resources
 
 * "itune podcast specs from Apple":http://www.apple.com/itunes/podcasts/techspecs.html
 * "podcasting with Textpattern":http://couchfort.net/article/49/podcasting-with-textpattern
-* "podcasting plugin":http://textpattern.org/plugins/739/tru_podcast
+* "podcasting plugin":https://textpattern.org/plugins/739/tru_podcast

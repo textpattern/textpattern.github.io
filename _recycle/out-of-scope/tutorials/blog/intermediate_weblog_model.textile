@@ -8,7 +8,7 @@ h3(sectionedit2#working_with_cascading_style_sheets_css_in_textpattern). Working
 
 h3(sectionedit3#adding_plugins_to_your_textpattern_installation). Adding Plugins to Your Textpattern Installation
 
-Plugins are a way to easily extend Textpattern's base functionality by adding tags that are then useable in website templates, much like Textpattern's base tags. New in 1.0 is also the ability to use plugins that modify the admin area. The first step in installation is to locate a plugin that you wish to use. Many can be found through the "Textpattern forums":https://forum.textpattern.com/viewtopic.php?id=2193 and "Textpattern.org":http://textpattern.org/plugins, among other sources.
+Plugins are a way to easily extend Textpattern's base functionality by adding tags that are then useable in website templates, much like Textpattern's base tags. New in 1.0 is also the ability to use plugins that modify the admin area. The first step in installation is to locate a plugin that you wish to use. Many can be found through the "Textpattern forums":https://forum.textpattern.com/viewtopic.php?id=2193 and "Textpattern.org":https://textpattern.org/plugins, among other sources.
 
 h4(#installation). Installation
 

@@ -72,17 +72,17 @@ and edit their account details too, including [User roles and privileges](https:
 
 **Recommended reading:**
 
--   [smd_faux_role](http://textpattern.org/plugins/1159/smd_faux_role)
+-   [smd_faux_role](https://textpattern.org/plugins/1159/smd_faux_role)
     (Plugin for testing which user roles grant or restrict permission to
     which parts of the Textpattern administration, without needing to
     create roles and logging out and back in.)
 -   [rah_change_passwords](http://rahforum.biz/plugins/rah_change_passwords)
     (Plugin allowing direct password management. Avoids the system
     generating random passwords and sending them by email.)
--   [smd_bio](http://textpattern.org/plugins/1116/smd_bio) (Plugin that
+-   [smd_bio](https://textpattern.org/plugins/1116/smd_bio) (Plugin that
     extends user account data collected and stored for custom output.
     *E.g.*, team profiles.)
--   [smd_user_manager](http://textpattern.org/plugins/1229/smd_user_manager)
+-   [smd_user_manager](https://textpattern.org/plugins/1229/smd_user_manager)
     (Plugin providing user, group, and privilege
     management capabilities. Integrates with smd_bio.)
 
