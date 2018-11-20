@@ -28,7 +28,7 @@ This is a simple lightweight theme; developed for use on a [blog](http://jkg3.co
 
 [Textpattern Hive admin theme](https://github.com/philwareham/txp-hive-admin-theme*)\
 This is an official admin-side theme shipping with v4.5 onwards.
-Maintained by [Phil Wareham](http://twitter.com/philwareham).
+Maintained by [Phil Wareham](https://twitter.com/philwareham).
 
 \*[Textpattern
 Moderne](https://github.com/weightshift/textpattern-moderne*)\

@@ -29,8 +29,8 @@ Presentation&gt;Pages: default â€“ the default page is used for the homepag
 
 <pre class="code">
 &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
-    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
-&lt;html lang=&quot;en&quot; xml:lang=&quot;en&quot; xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+    &quot;https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html lang=&quot;en&quot; xml:lang=&quot;en&quot; xmlns=&quot;https://www.w3.org/1999/xhtml&quot;&gt;
 &lt;head&gt;
     &lt;txp:css format=&quot;link&quot;/&gt;
     &lt;title&gt;
