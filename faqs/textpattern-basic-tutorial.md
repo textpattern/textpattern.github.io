@@ -351,4 +351,4 @@ In designing your Textpattern site, explore how to use search and category linki
 
 ## Learning more
 
-This is just a bare outline of how to build a Textpattern-powered site. To continue your learning path, participate in the [Textpattern CMS support forum](https://forum.textpattern.com/), read tutorials and [Textpattern tips](http://textpattern.tips/), and study the [Tag reference](https://docs.textpattern.com/tags/).
+This is just a bare outline of how to build a Textpattern-powered site. To continue your learning path, participate in the [Textpattern CMS support forum](https://forum.textpattern.com/), read tutorials and [Textpattern tips](https://textpattern.tips/), and study the [Tag reference](https://docs.textpattern.com/tags/).
