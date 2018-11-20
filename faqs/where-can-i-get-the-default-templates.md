@@ -17,9 +17,9 @@ To restore or build on the default theme, refer to the respective repository for
         <tbody>
             <tr>
                 <th scope="row">Textpattern default theme</th>
-                <td>[Repository](https://github.com/textpattern/textpattern-default-theme)</td>
-                <td>[4.7.0](https://github.com/textpattern/textpattern-default-theme/releases/tag/4.7.0)<br>[4.7.1](https://github.com/textpattern/textpattern-default-theme/releases/tag/4.7.1)</td>
-                <td>[Preview](https://default-theme.textpattern.com/)</td>
+                <td><a href="https://github.com/textpattern/textpattern-default-theme">Repository</a></td>
+                <td><a href="https://github.com/textpattern/textpattern-default-theme/releases/tag/4.7.0>4.7.0</a><br><a href="https://github.com/textpattern/textpattern-default-theme/releases/tag/4.7.1">4.7.1</a></td>
+                <td><a href="https://default-theme.textpattern.com/">Preview</a></td>
             </tr>
             <tr>
                 <th scope="row">Zero</th>
