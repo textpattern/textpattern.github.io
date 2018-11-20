@@ -1,4 +1,4 @@
-h1. Where can I get the default templates?
+# Where can I get the default templates?
 
 Textpattern 4.7.0 introduced front-side theme support. The pages, forms and styles for the Textpattern default theme are maintained in a repository.
 
