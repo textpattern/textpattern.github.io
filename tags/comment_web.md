@@ -30,7 +30,7 @@ The **comment_web** tag can be used as either a *single* or a *container* tag. T
 </txp:comment_web>
 ~~~
 
-It is used to display (a link to) the commenter's web address, if entered at the time of posting. When used as a container tag, it will turn the contents into a link to that web address. Otherwise, it will return the web address. Should be used in Textpattern 'comment' type [Form templates](../themes/form-templates-explained).
+It is used to display (a link to) the commenter's web address, if entered at the time of posting. When used as a container tag, it will turn the contents into a link to that web address. Otherwise, it will return the web address. Should be used in Textpattern 'comment' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
 
 ## Attributes
 

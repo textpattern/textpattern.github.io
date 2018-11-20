@@ -8,7 +8,7 @@ description: All plugin developers must have a prefix to name their plugins and 
 
 # Plugin developer prefixes
 
-All plugin developers must have a prefix to name their plugins and [use in plugin development](plugin-user-help-guidelines).
+All plugin developers must have a prefix to name their plugins and [use in plugin development](https://docs.textpattern.com/development/plugin-user-help-guidelines).
 
 A prefix is a three-character (alphanumeric) indication of who the plugin developer is, and precedes a plugin name with an underscore. For example, **wet_haystack** is one of several plugins by Robert Wetzlmayr. The prefix in this case is 'wet', which precedes the specific plugin name ('haystack') with an underscore. All together it forms the unique and complete name of the plugin. An underscore is used for each additional word in a compound name, for example **smd_user_manager**. Plugin names are entirely lowercase.
 

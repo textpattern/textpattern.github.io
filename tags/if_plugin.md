@@ -38,7 +38,7 @@ The tag will execute the contained statements if the name attribute matches a cu
 Tag will accept the following attributes (**case-sensitive**):
 
 `name="text"`
-: Plugin name as defined on the [Plugins panel](../administration/plugins-panel).
+: Plugin name as defined on the [Plugins panel](https://docs.textpattern.com/administration/plugins-panel).
 
 `version="number"`
 : Minimum plugin version number.

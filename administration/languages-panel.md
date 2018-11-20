@@ -50,4 +50,4 @@ A bug has been identified that affects legacy Textpattern instance (pre-4.7 only
 
 If you encounter this issue, please check in the Diagnostics panel whether your PHP and MySQL server times are identical. There are some situations where the times do not match. If the times match, and you are interested in assisting with debugging of this particular issue, please leave a reply in [this forum thread](https://forum.textpattern.io/viewtopic.php?id=49156) and we'll get back to you.
 
-[Next: Users panel](users-panel)
+[Next: Users panel](https://docs.textpattern.com/administration/users-panel)

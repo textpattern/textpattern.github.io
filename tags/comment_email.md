@@ -22,7 +22,7 @@ On this page:
 <txp:comment_email />
 ~~~
 
-The **comment_email** tag is a *single* tag which is used to display the commenter's email address, if entered at the time of posting. Should be used in Textpattern 'comment' type [Form templates](../themes/form-templates-explained).
+The **comment_email** tag is a *single* tag which is used to display the commenter's email address, if entered at the time of posting. Should be used in Textpattern 'comment' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
 
 ## Attributes
 

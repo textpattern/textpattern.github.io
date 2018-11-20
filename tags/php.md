@@ -30,7 +30,7 @@ Textpattern's **php** tag is a *container* tag that provides the same output abi
 </txp:php>
 ~~~
 
-Control over where this tag is allowed to appear (i.e. the privileges required to allow it to appear in pages and forms) are governed by settings in the [Preferences panel](../administration/preferences-panel).
+Control over where this tag is allowed to appear (i.e. the privileges required to allow it to appear in pages and forms) are governed by settings in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel).
 
 ## Attributes
 

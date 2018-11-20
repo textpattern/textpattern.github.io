@@ -23,7 +23,7 @@ On this page:
 <txp:images />
 ~~~
 
-The **images** tag is a *single* or *container* tag that Textpattern will use to gather a list of matching images uploaded via the [Images panel](../administration/images-panel). Utilising the other image tags in the suite [image_info](image_info), [image_url](image_url), [image_date](image_date) and [if_thumbnail](if_thumbnail)) you can display simple image galleries from this list.
+The **images** tag is a *single* or *container* tag that Textpattern will use to gather a list of matching images uploaded via the [Images panel](https://docs.textpattern.com/administration/images-panel). Utilising the other image tags in the suite [image_info](image_info), [image_url](image_url), [image_date](image_date) and [if_thumbnail](if_thumbnail)) you can display simple image galleries from this list.
 
 If used as a *container* tag, it must be specified as an opening and closing pair of tags, like this:
 
