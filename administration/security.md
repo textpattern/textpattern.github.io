@@ -27,7 +27,7 @@ Textpattern developers do their part to keep core code as secure as they can. It
 
 **With regard to Textpattern installation:**
 
-* Update your installation to the [latest stable release version](http:/textpattern.com/download) whenever new releases are available.
+* Update your installation to the [latest stable release version](https://textpattern.com/download) whenever new releases are available.
 * Check the [Diagnostics panel](https://docs.textpattern.com/administration/diagnostics-panel) for security warnings. @@todo:add warning examples on diagnostics page@@
 * Ensure you use a very strong password for *all* accounts.
 * Only create Textpattern user accounts for people who require them, and ensure their access level is set to only the functionality they require. Don't just create admin-level accounts because it is easier! Each one is a potential avenue of attack if a password is compromised.
