@@ -167,7 +167,7 @@ Use the Textpattern name fully and correctly.
 
 Textpattern is spelled "*Textpattern*". Look at that closely. That's not two words, and there's no capital "p". This isn't WordPress, and "Text" isn't used as an adjective. Nope. Textpattern is proudly all one word with one capital letter - a proper noun.
 
-Always spell "Textpattern" out fully in official copy. Never abbreviate the name, like Txp, TXP, TxP, txP, or txp (unless your writing Textpattern tags in code examples). While these invented pet uses are convenient in the forum, they lend confusion to brand awareness in official copy. The world is still confused between "Textpattern" vs. "TextPattern", after all.
+Always spell "Textpattern" out fully in official copy. Never abbreviate the name, like Txp, TXP, TxP, txP, or txp (unless you're writing Textpattern tags in code examples). While these invented pet uses are convenient in the forum, they lend confusion to brand awareness in official copy. The world is still confused between "Textpattern" vs. "TextPattern", after all.
 
 Good news! Writing the name out fully has the added benefit of helping you see when you're using the name too repetitively, which is a sentence bloat problem.
 
