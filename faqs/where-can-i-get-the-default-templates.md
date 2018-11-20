@@ -1,3 +1,11 @@
+---
+layout: document
+category: FAQs
+published: false
+title: Where Can I Get The Default Templates?
+description: Directions on where to locate the source code for the Textpattern default front-side theme.
+---
+
 # Where can I get the default templates?
 
 Textpattern 4.7.0 introduced front-side theme support. The pages, forms and styles for the Textpattern default theme are maintained in a repository.
