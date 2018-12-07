@@ -48,7 +48,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : The variable name for which you wish to assign a value. Valid variable names must not contain any single or double quotes.
 
 `output="boolean"` <span class="footnote warning">v4.7.2+</span>
-: Force the variable output, e.g. `<txp:variable name="name' value="value" output />`.
+: Force the variable output, e.g. `<txp:variable name="name" value="value" output />`.
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
 
