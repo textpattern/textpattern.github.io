@@ -47,7 +47,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : (Optionally) define the value to which you wish to set the variable. Without this attribute, the tag returns the current value assigned to the named variable.
 
 `reset="value"` <span class="footnote warning">v4.7.2+</span>
-: A shortcut for `<txp:variable name="name' /><txp:variable name="name' value="value" />`. Outputs the old value and assigns the new one.
+: A shortcut for `<txp:variable name="name" /><txp:variable name="name" value="value" />`. Outputs the old value and assigns the new one.
 
 `add="value"` <span class="footnote warning">v4.7.2+</span>
 : Adds `value` to the current variable value. If both are numeric and `separator` is not set, the result is their sum. Otherwise, `value` is appended as string, optionally separated by `separator`, see below.
@@ -131,8 +131,22 @@ Other tags used: [if_variable](if_variable).
 
 Other tags used: [else](else), [if_variable](if_variable), [page_url](page_url).
 
+### Example 4: Output a counter in an article list
+
+~~~ html
+<txp:article wraptag="p" break="br" />
+    Article <txp:variable name="counter" add="1" output />: <txp:title />
+</txp:article>
+~~~
+
+Other tags used: [article](article), [title](title).
+
 ## Genealogy
 
 ### Version 4.0.7
 
 Tag support added.
+
+### Version 4.7.2
+
+`add`, `output`, `reset` and `separator` attributes added.
