@@ -40,23 +40,28 @@ Note: Avoid entering white space characters for better code readability between 
 
 Tag will accept the following attributes (**case-sensitive**):
 
+`add="value"` <span class="footnote warning">v4.7.2+</span>
+: Adds `value` to the current variable value. If both are numeric and `separator` is not set, the result is their sum. Otherwise, `value` is appended as a string, optionally separated by `separator` (see below).
+: **Default:** unset.
+
 `name="text"`
 : The variable name for which you wish to assign a value. Valid variable names must not contain any single or double quotes.
 
-`value="value"`
-: (Optionally) define the value to which you wish to set the variable. Without this attribute, the tag returns the current value assigned to the named variable.
-
-`reset="value"` <span class="footnote warning">v4.7.2+</span>
-: A shortcut for `<txp:variable name="name" /><txp:variable name="name" value="value" />`. Outputs the old value and assigns the new one.
-
-`add="value"` <span class="footnote warning">v4.7.2+</span>
-: Adds `value` to the current variable value. If both are numeric and `separator` is not set, the result is their sum. Otherwise, `value` is appended as string, optionally separated by `separator`, see below.
-
-`separator="string"` <span class="footnote warning">v4.7.2+</span>
-: A symbol or a string used to separate values appended via `add` attribute, see above.
-
 `output="boolean"` <span class="footnote warning">v4.7.2+</span>
 : Force the variable output, e.g. `<txp:variable name="name' value="value" output />`.
+: **Values:** `0` (no) or `1` (yes).
+: **Default:** `0`.
+
+`reset="value"` <span class="footnote warning">v4.7.2+</span>
+: A shortcut for `<txp:variable name="name" /><txp:variable name="name" value="value" />`. Outputs the old value and then assigns the new one.
+: **Default:** unset.
+
+`separator="string"` <span class="footnote warning">v4.7.2+</span>
+: A symbol or a string used to separate values appended via `add` attribute (see above).
+: **Default:** unset.
+
+`value="value"`
+: (Optionally) define the value to which you wish to set the variable. Without this attribute, the tag outputs the current value assigned to the named variable.
 
 ## Examples
 
@@ -143,10 +148,10 @@ Other tags used: [article](article), [title](title).
 
 ## Genealogy
 
-### Version 4.0.7
-
-Tag support added.
-
 ### Version 4.7.2
 
 `add`, `output`, `reset` and `separator` attributes added.
+
+### Version 4.0.7
+
+Tag support added.
