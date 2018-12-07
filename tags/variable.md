@@ -139,7 +139,7 @@ Other tags used: [else](else), [if_variable](if_variable), [page_url](page_url).
 ### Example 4: Output a counter in an article list
 
 ~~~ html
-<txp:article wraptag="p" break="br" />
+<txp:article wraptag="p" break="br">
     Article <txp:variable name="counter" add="1" output />: <txp:title />
 </txp:article>
 ~~~
