@@ -64,6 +64,10 @@ If you wish to alter atom feeds, these callbacks will help.
 * **When it occurs:** As soon as the article's data has been populated.
 * **What it allows:** Injection of extra markup after the standard Atom feed items have been generated.
 
+`feed_filter`
+* **When it occurs:** Before the articles list is generated.
+* **What it allows:** Injection of extra filtering criteria (e.g. `status="sticky"`) when generating the feed's entries.
+
 ### publish/rss.php
 
 If you wish to alter rss feeds, these callbacks will help.
@@ -75,6 +79,10 @@ If you wish to alter rss feeds, these callbacks will help.
 `rss_entry`
 * **When it occurs:** As soon as the article's data has been populated.
 * **What it allows:** Injection of extra markup after the standard RSS feed items have been generated.
+
+`feed_filter`
+* **When it occurs:** Before the articles list is generated.
+* **What it allows:** Injection of extra filtering criteria (e.g. `status="sticky"`) when generating the feed's entries.
 
 ### publish/comment.php
 
