@@ -29,6 +29,9 @@ Will output:
 `escape="html"` (default)
 : Encode special HTML characters (`"'&<>`).
 
+`escape="url"`
+: URL-encode all characters except `.-_`.
+
 `escape="json"`
 : JSON-encode, without the surrounding `""` quotes.
 
@@ -49,6 +52,15 @@ Will output:
 
 `escape="tidy, integer"`
 : Remove spaces/newlines and format the content as a stricter integer (ensure it adheres to an integer first).
+
+`escape="trim, integer"`
+: Remove zero and invalid values from an integers list.
+
+`escape="spell"`
+: Spell out the numeric content (requires `NumberFormatter` PHP extension).
+
+`escape="ordinal"`
+: Format the content as ordinal number (requires `NumberFormatter` PHP extension).
 
 `escape="upper"` (`lower`, `title`)
 : Convert the content to upper case, lower case, or sentence (Title) case.
