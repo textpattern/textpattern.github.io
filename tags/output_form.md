@@ -39,6 +39,13 @@ Tag will accept the following attributes (**case-sensitive**):
 : Use specified form.
 : **Default:** unset (no output).
 
+` format="format.attribute"`
+: Options: `url`, `flat.url`, `flat.image`, `script`, `flat.script`.
+: **Default:** `0`
+
+`context="id"`
+: **Default:** `0`
+
 `yield="boolean or list of names"` <span class="footnote warning">v4.7.0+</span>
 : Populate `<txp:yield />` tags inside the form with the corresponding attributes.
 : **Default:** `1` (populate all attributes).
