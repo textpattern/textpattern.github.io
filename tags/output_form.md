@@ -43,7 +43,8 @@ Tag will accept the following attributes (**case-sensitive**):
 : Options: `url`, `flat.url`, `flat.image`, `script`, `flat.script`.
 : **Default:** `0`
 
-`context="id"`
+`context="attribute name"`
+: Options: `id`, `s`, `c`, `context`, `q`, `m`, `pg`, `p`, `month`, `author`.
 : **Default:** `0`
 
 `yield="boolean or list of names"` <span class="footnote warning">v4.7.0+</span>
