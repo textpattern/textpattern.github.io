@@ -93,14 +93,14 @@ Tag will accept the following attributes (**case-sensitive**):
 </head>
 ~~~
 
-### Example 5: Output print and alternate stylesheets using flat files (txp 4.7.2+)
+### Example 5: Output print and alternate stylesheets calling flat files (txp 4.7.2+)
 
 ~~~ html
 <head>
     <!-- …tags… -->
     <link rel="stylesheet" media="all" rel="alternate" title="Plain and simple style" href="<txp:css format="url" name="plain" />" />
     <link rel="stylesheet" media="screen" rel="alternate" title="Glossy style" href="<txp:css format="url" name="glossy" />" />
-    <link rel="stylesheet" media="print" rel="alternate" title="print styles" href="<txp:css format="url" name="print" />" />
+    <link rel="stylesheet" media="print" rel="alternate" title="Print style" href="<txp:css format="url" name="print" />" />
     <!-- …more tags… -->
 </head>
 ~~~
