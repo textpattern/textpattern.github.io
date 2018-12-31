@@ -50,7 +50,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `this_section="boolean"` <span class="footnote warning">v4.0.4+</span>
 : Whether to only link to articles from the section containing the current article.
 : **Values:** `0` (no, allow from any section) or `1` (yes).
-: **Default:** `0`
+: **Default:** `0`.
 
 ### Common presentational attributes
 

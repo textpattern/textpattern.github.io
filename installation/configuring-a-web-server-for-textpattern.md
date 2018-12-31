@@ -130,11 +130,11 @@ This ToolkitID should be referenced from the virtual host section. You can also 
 
 ~~~ nginx
 VirtualHost {
-  ...
+  …
   UseToolkit = my-website, textpattern
   UseDirectory = static
   CustomHeaderClient = Vary: accept-encoding
-  ...
+  …
 }
 ~~~
 
@@ -154,7 +154,7 @@ You can point to your website via multiple domains — simply append its aliases
 VirtualHost {
   Hostname = www.example.com, example.com, example.org
   #EnforceFirstHostname = yes
-  ...
+  …
 }
 ~~~
 

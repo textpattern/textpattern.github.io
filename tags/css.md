@@ -93,7 +93,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </head>
 ~~~
 
-### Example 5: Output print and alternate stylesheets calling flat files (txp 4.7.2+)
+### Example 5: Output print and alternate stylesheets calling flat files (v4.7.2+)
 
 ~~~ html
 <head>
@@ -104,9 +104,6 @@ Tag will accept the following attributes (**case-sensitive**):
     <!-- …more tags… -->
 </head>
 ~~~
-
-
-
 
 ## Genealogy
 
