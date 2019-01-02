@@ -40,11 +40,21 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset (no output).
 
 `format="format.attribute"` <span class="footnote warning">v4.7.2+</span>
-: Options: `url`, `flat.url`, `flat.image`, `script`, `flat.script`.
+: **Values:** `url`, `flat.url`, `flat.image`, `script` or `flat.script`.
 : **Default:** unset.
 
 `context="attribute name"` <span class="footnote warning">v4.7.2+</span>
-: Options: `id`, `s`, `c`, `context`, `q`, `m`, `pg`, `p`, `month`, `author`.
+: **Values:** \\
+`author`. \\
+`c`. \\
+`context`. \\
+`id`. \\
+`m`. \\
+`month`. \\
+`p`. \\
+`pg`. \\
+`q`. \\
+`s`.
 : **Default:** unset.
 
 `yield="boolean or list of names"` <span class="footnote warning">v4.7.0+</span>
@@ -199,6 +209,10 @@ This can be fine, but if you want to keep `greeting` class on the wrapping `p`, 
 Other tags used: [yield](yield).
 
 ## Genealogy
+
+### Version 4.7.2
+
+`context` and `format` attributes added.
 
 ### Version 4.7.0
 

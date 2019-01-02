@@ -30,8 +30,8 @@ The basic **css** tag is a *single* tag used to output the URL of the stylesheet
 Tag will accept the following attributes (**case-sensitive**):
 
 `format="value"` <span class="footnote warning">v4.0.4+</span>
-: How to format output: either return complete [HTML link tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) with necessary HTML attributes, or only the stylesheet's URL.
-: **Values:** `link` or `url`.
+: How to format output: either return complete [HTML link tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) with necessary HTML attributes, or only the stylesheet's URL. As of Textpattern 4.7.2 you can specify using physical (flat) files.
+: **Values:** `link`, `flat.link`, `url` or `flat.url`.
 : **Default:** `url`.
 
 `media="value"` <span class="footnote warning">v4.0.4+</span>
@@ -106,6 +106,10 @@ Tag will accept the following attributes (**case-sensitive**):
 ~~~
 
 ## Genealogy
+
+### Version 4.7.2
+
+`flat.link` and `flat.url` values added to `format` attribute.
 
 ### Version 4.3.0
 
