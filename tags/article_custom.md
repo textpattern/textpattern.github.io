@@ -318,6 +318,10 @@ Outputs the number of live articles belonging to the current section.
 
 ## Genealogy
 
+### Version 4.7.2
+
+`breakform` attribute added.
+
 ### Version 4.7.0
 
 `breakby`, `pageby` and `pgonly` attributes added. \\

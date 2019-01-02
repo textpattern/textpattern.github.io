@@ -96,3 +96,9 @@ In Textpattern [Page templates](https://docs.textpattern.com/themes/page-templat
 The snippet above lists all article titles and renders an intermittent heading element whenever a **different** section is encountered while the articles loop through.
 
 Other tags used: [article_custom](article_custom), [section](section), [title](title).
+
+## Genealogy
+
+### Version 4.7.2
+
+`test` attribute added.

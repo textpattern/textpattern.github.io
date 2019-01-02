@@ -40,8 +40,8 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [article](article) <span class="footnote warning">**Modified v4.7.0**</span>
-* [article_custom](article_custom) <span class="footnote warning">**Modified v4.7.0**</span>
+* [article](article) <span class="footnote warning">**Modified v4.7.2**</span>
+* [article_custom](article_custom) <span class="footnote warning">**Modified v4.7.2**</span>
 * [article_id](article_id)
 * [article_image](article_image)
 * [article_url_title](article_url_title)
@@ -90,7 +90,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [comments_help](comments_help)
 * [comments_invite](comments_invite)
 * [comments_preview](comments_preview)
-* [css](css)
+* [css](css) <span class="footnote warning">**Modified v4.7.2**</span>
 * [custom_field](custom_field)
 
 </div>
@@ -157,7 +157,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [if_comments_preview](if_comments_preview)
 * [if_custom_field](if_custom_field)
 * [if_description](if_description)
-* [if_different](if_different)
+* [if_different](if_different) <span class="footnote warning">**Modified v4.7.2**</span>
 * [if_excerpt](if_excerpt)
 * [if_expired](if_expired)
 * [if_expires](if_expires)

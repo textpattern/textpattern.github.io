@@ -250,6 +250,10 @@ Why might you do it? Sorting is a powerful way to group articles (e.g. by author
 
 ## Genealogy
 
+### Version 4.7.2
+
+`breakform` attribute added.
+
 ### Version 4.7.0
 
 `breakby` attribute added.
