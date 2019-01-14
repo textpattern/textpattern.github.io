@@ -24,7 +24,7 @@ On this page:
 <txp:if_custom_field>
 ~~~
 
-The **if_custom_field** tag is a *single* or *conditional* tag used as an opening and closing pair, like this…
+The **if_custom_field** tag may be used as a *single* or *conditional* tag. For conditional use, it is used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_custom_field>
