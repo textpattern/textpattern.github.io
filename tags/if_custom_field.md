@@ -164,7 +164,7 @@ Other tags used: [else](else).
 <txp:variable name="counter" add='<txp:if_custom_field name="Type" value="info" />' />
 ~~~
 
-Increments the `counter` variable if the custom field named `Type` contains the value `info`. If it does, the `<txp:if_custom_field />` tag returns `1` which is then added to the current value of the counter.
+When placed withing an `article` tag, it increments the `counter` variable if the custom field named `Type` contains the value `info`. If it does, the `<txp:if_custom_field />` tag returns `1` which is then added to the current value of the counter.
 
 Other tags used: [variable](variable).
 
