@@ -24,7 +24,7 @@ On this page:
 <txp:if_custom_field>
 ~~~
 
-The **if_custom_field** tag is a *conditional* tag and always used as an opening and closing pair, like this…
+The **if_custom_field** tag is a *single* or *conditional* tag used as an opening and closing pair, like this…
 
 ~~~ html
 <txp:if_custom_field>
@@ -33,6 +33,8 @@ The **if_custom_field** tag is a *conditional* tag and always used as an opening
 ~~~
 
 The tag will execute the contained statements if one or more custom fields for a given article have content. The contents of a custom field can be displayed with the [custom_field](custom_field) tag.
+
+If used a *single* tag, the tag will return `1` if the named custom field contains any content. It will return nothing otherwise. See Example 5.
 
 ## Attributes
 
@@ -155,6 +157,16 @@ Other tags used: [custom_field](custom_field), [else](else).
 Checks the content of the custom field named `animals` which has a comma separated list of animals. It checks if it contains the text `monkeys`, and displays a conditional statement if it does.
 
 Other tags used: [else](else).
+
+### Example 5: Use as a single tag to increment a counter
+
+~~~ html
+<txp:variable name="counter" add='<txp:if_custom_field name="Type" value="info" />' />
+~~~
+
+Increments the `counter` variable if the custom field named `Type` contains the value `info`. If it does, the `<txp:if_custom_field />` tag returns `1` which is then added to the current value of the counter.
+
+Other tags used: [variable](variable).
 
 ## Genealogy
 
