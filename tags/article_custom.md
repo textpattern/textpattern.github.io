@@ -314,7 +314,7 @@ Outputs articles specified by list of IDs, in the order given in the `sort` fiel
 <txp:article_custom section='<txp:section />' pageby="1" pgonly />
 ~~~
 
-Outputs the number of live articles belonging to the current section.
+When placed within an `article` tag, it outputs the number of live articles belonging to the current section.
 
 ## Genealogy
 
