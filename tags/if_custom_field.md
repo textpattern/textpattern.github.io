@@ -172,6 +172,10 @@ Other tags used: [variable](variable), [if_individual_article](if_individual_art
 
 ## Genealogy
 
+### Version 4.7.0
+
+May be used as a *single* tag.
+
 ### Version 4.3.0
 
 `val` attribute deprecated and renamed to `value`. \\
