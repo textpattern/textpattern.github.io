@@ -142,46 +142,46 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [if_article_author](if_article_author)
-* [if_article_category](if_article_category)
-* [if_article_id](if_article_id)
-* [if_article_image](if_article_image)
+* [if_article_author](if_article_author) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_article_category](if_article_category) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_article_id](if_article_id) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_article_image](if_article_image) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_article_list](if_article_list) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_article_section](if_article_section)
-* [if_author](if_author)
+* [if_article_section](if_article_section) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_author](if_author) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_category](if_category) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_comments](if_comments)
-* [if_comments_allowed](if_comments_allowed)
-* [if_comments_disallowed](if_comments_disallowed)
-* [if_comments_error](if_comments_error)
-* [if_comments_preview](if_comments_preview)
-* [if_custom_field](if_custom_field)
+* [if_comments](if_comments) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_comments_allowed](if_comments_allowed) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_comments_disallowed](if_comments_disallowed) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_comments_error](if_comments_error) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_comments_preview](if_comments_preview) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_custom_field](if_custom_field) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_description](if_description)
 * [if_different](if_different) <span class="footnote warning">**Modified v4.7.2**</span>
-* [if_excerpt](if_excerpt)
-* [if_expired](if_expired)
-* [if_expires](if_expires)
-* [if_first_article](if_first_article)
-* [if_first_category](if_first_category)
+* [if_excerpt](if_excerpt) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_expired](if_expired) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_expires](if_expires) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_first_article](if_first_article) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_first_category](if_first_category) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_first_file](if_first_file)
 * [if_first_image](if_first_image)
 * [if_first_link](if_first_link)
-* [if_first_section](if_first_section)
-* [if_individual_article](if_individual_article)
+* [if_first_section](if_first_section) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_individual_article](if_individual_article) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_keywords](if_keywords)
-* [if_last_article](if_last_article)
-* [if_last_category](if_last_category)
+* [if_last_article](if_last_article) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_last_category](if_last_category) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_last_file](if_last_file)
 * [if_last_image](if_last_image)
 * [if_last_link](if_last_link)
-* [if_last_section](if_last_section)
+* [if_last_section](if_last_section) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_logged_in](if_logged_in) <span class="footnote success">**New v4.7.0**</span>
-* [if_plugin](if_plugin)
-* [if_search](if_search)
-* [if_search_results](if_search_results)
-* [if_section](if_section)
-* [if_status](if_status)
-* [if_thumbnail](if_thumbnail)
+* [if_plugin](if_plugin) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_search](if_search) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_search_results](if_search_results) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_section](if_section) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_status](if_status) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_thumbnail](if_thumbnail) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_variable](if_variable)
 * [if_yield](if_yield) <span class="footnote warning">**Modified v4.7.0**</span>
 * [image](image)
