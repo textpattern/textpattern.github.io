@@ -168,7 +168,7 @@ Other tags used: [else](else).
 
 When placed within an `article` context, it increments the `counter` variable if the custom field named `Type` contains the value `info`. If it does, the `<txp:if_custom_field />` tag returns `1` which is then added to the current value of the counter.
 
-Other tags used: [variable](variable), [if_indivudal_article](if_individual_article).
+Other tags used: [variable](variable), [if_individual_article](if_individual_article).
 
 ## Genealogy
 
