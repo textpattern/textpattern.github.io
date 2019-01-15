@@ -39,8 +39,8 @@ Tag will accept the following attributes (**case-sensitive**):
 : Use specified form.
 : **Default:** unset (no output).
 
-`format="format.attribute"` <span class="footnote warning">v4.7.2+</span>
-: **Values:** `url`, `flat.url`, `flat.image`, `script` or `flat.script`.
+`format="value"` <span class="footnote warning">v4.7.2+</span>
+: **Values:** `url`, `flat.url`, `image`, `flat.image`, `link`, `flat.link`, `script` or `flat.script` (prepend values with `flat.` to fetch the form template from disk instead of from the database).
 : **Default:** unset.
 
 `context="attribute name"` <span class="footnote warning">v4.7.2+</span>
