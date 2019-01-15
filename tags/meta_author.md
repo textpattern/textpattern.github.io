@@ -39,7 +39,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** See the [tag escaping](https://docs.textpattern.com/tags/tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
-`format="boolean"` <span class="footnote warning">v4.6.0+</span>
+`format="value"` <span class="footnote warning">v4.6.0+</span>
 : Display as `<meta>` tag or as raw value.
 : **Values:** `meta` or unset.
 : **Default:** `meta` (display as a `<meta>` tag).

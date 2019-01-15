@@ -34,7 +34,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** See the [tag escaping](https://docs.textpattern.com/tags/tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
-`format="boolean"` <span class="footnote warning">v4.6.0+</span>
+`format="value"` <span class="footnote warning">v4.6.0+</span>
 : Display plain URL or full link.
 : **Values:** `link`, `url` or unset.
 : **Default:** unset (display title or full link, depending on `link`).
