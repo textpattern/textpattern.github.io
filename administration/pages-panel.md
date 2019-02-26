@@ -8,6 +8,8 @@ description: The Pages panel is where the Page templates used within a Textpatte
 
 # Pages panel
 
+<img class="img--bordered" alt="Figure 1" src="/img/47x/admin-panel-pages.png">
+
 The Pages panel contains an edit field, a list of existing [Page templates](https://docs.textpattern.com/themes/page-templates-explained), and a tag builder to help you construct page content. It's important to note that, like everything else, the Page templates are stored in the database - there is no physical file on the server that contains this Page template.
 
 On this page:
