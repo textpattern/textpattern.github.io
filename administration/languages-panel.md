@@ -8,7 +8,7 @@ description: The Languages panel is where you update your chosen language pack a
 
 # Languages panel
 
-<img class="img--bordered" alt="Figure 1" src="/img/47x/admin-panel-languages.png">
+<img class="img--bordered" alt="Figure 2" src="/img/47x/admin-panel-languages.png" srcset="/img/47x/admin-panel-languages.png 1x, /img/47x/admin-panel-languages@2x.png 2x">
 
 The Languages panel is where you update your chosen language pack (also called a "Textpack") after installing and updating Textpattern.
 

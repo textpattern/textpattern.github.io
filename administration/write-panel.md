@@ -8,7 +8,7 @@ description: The Write panel reveals the various features for managing articles 
 
 # Write panel
 
-<img class="img--bordered" alt="Figure 1" src="/img/47x/admin-panel-write.png">
+<img class="img--bordered" alt="Figure 2" src="/img/47x/admin-panel-write.png" srcset="/img/47x/admin-panel-write.png 1x, /img/47x/admin-panel-write@2x.png 2x">
 
 The Write panel is the default panel of the administration side of Textpattern; it opens when you log in to the admin-side (see Figure 1). The exceptions are when 1) you log in after a new update of your Textpattern installation, in which case you're initially routed to the [Languages panel](https://docs.textpattern.com/administration/languages-panel), or 2) if you change the default panel to something else via the preference for it in the **Admin** section of the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel). (The Languages and Preferences panels are both under the main Admin menu.) 
 
