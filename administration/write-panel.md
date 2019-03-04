@@ -8,7 +8,7 @@ description: The Write panel reveals the various features for managing articles 
 
 # Write panel
 
-<img class="img--bordered" alt="Figure 2" src="/img/47x/admin-panel-write.png" srcset="/img/47x/admin-panel-write.png 1x, /img/47x/admin-panel-write@2x.png 2x">
+<img class="img--bordered" width="680" height="422" alt="Figure 2" src="/img/47x/admin-panel-write.png" srcset="/img/47x/admin-panel-write.png 1x, /img/47x/admin-panel-write@2x.png 2x">
 
 The Write panel is the default panel of the administration side of Textpattern; it opens when you log in to the admin-side (see Figure 1). The exceptions are when 1) you log in after a new update of your Textpattern installation, in which case you're initially routed to the [Languages panel](https://docs.textpattern.com/administration/languages-panel), or 2) if you change the default panel to something else via the preference for it in the **Admin** section of the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel). (The Languages and Preferences panels are both under the main Admin menu.) 
 
@@ -77,7 +77,7 @@ See the [excerpt tag](https://docs.textpattern.com/tags/excerpt) documentation f
 
 At the top of the main editing area are three vertical tabs labeled 'Text', 'HTML', and 'Preview'; these provide three different views of your article-in-progress, as described below:
 
-<img alt="Figure 2" src="/img/47x/admin-panel-write-article-view.png" srcset="/img/47x/admin-panel-write-article-view.png 1x, /img/47x/admin-panel-write-article-view@2x.png 2x">
+<img width="200" height="29" alt="Figure 2" src="/img/47x/admin-panel-write-article-view.png" srcset="/img/47x/admin-panel-write-article-view.png 1x, /img/47x/admin-panel-write-article-view@2x.png 2x">
 
 * **Text**: This tab is active by default and is the one you actually draft your article in. The Text view works just like a regular text editor (not a word processor). To give your text formatting, you will have to know either Hypertext Markup Language (HTML), or use a text filter such as (the default) Textile. Textile is a remarkably simple text editing syntax that allows you to format text for the web without having to know HTML (more about using text filters is provided in the section [Text formatting help](#text-formatting-help) below).
 * **HTML**: This tab will show you what your article looks like in HTML format, assuming you have used HTML or Textile to do any formatting. If you have, you will see the resulting HTML syntax incorporated in your text. You cannot do any editing in this view, it is for previewing your HTML work-in-progress only.
