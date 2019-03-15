@@ -3,12 +3,12 @@ layout: document
 category: Tag basics
 published: true
 title: Integrated tag notation
-description: Intergrating HTML markup into Textpattern tags has the benefit of being less verbose in your templates.
+description: Integrating HTML markup into Textpattern tags has the benefit of being less verbose in your templates.
 ---
 
 # Integrated tag notation
 
-Textpattern and HTML tags can be used mixed together to achieve various objectives. While the distinction makes it easier to see the two tag types, it can make for more verbose markup. As you get more famililar with Textpattern tags, you can choose to write markup in a more _integrated_ way, where HTML is defined in Textpattern tag attributes instead of used as separate tags. This page describes the general idea. 
+Textpattern and HTML tags can be mixed together to achieve various objectives. While the distinction makes it easier to see the two tag types, it can make for more verbose markup. As you get more famililar with Textpattern tags, you can choose to write markup in a more _integrated_ way, where HTML is defined in Textpattern tag attributes instead of used as separate tags. This page describes the general idea. 
 
 On this page:
 
@@ -21,7 +21,7 @@ On this page:
 
 Mixed markup notation means using HTML tags and Texpattern tags together but distinctly. You can readily see each tag type, thus the role it’s playing in the markup. Add plugin tags to the mix and markup can get lengthy and complex, even if you can see the different tag types. 
 
-Despite the lengthier result, character-wise, writing markup this way can be easier for new users of Textpattern, and especially if already familiar with HTML. In fact, this is often how people write their markup without giving it much thought.
+Despite the lengthier result, character-wise, writing markup this way can be easier for new users of Textpattern, and especially those already familiar with HTML. In fact, this is often how people write their markup without giving it much thought.
 
 Consider the following block of standard HTML markup, which defines displaying an image as a figure and caption:
 
@@ -32,7 +32,7 @@ Consider the following block of standard HTML markup, which defines displaying a
 </figure>
 ~~~  
 
-That’s great, but the reason your using Textpattern is to automate content output and make things more dynamic. So let’s add in some relevant Textpattern tags in a mixed way:
+That’s great, but the reason you're using Textpattern is to automate content output and make things more dynamic. So let’s add in some relevant Textpattern tags in a mixed way:
 
 ~~~ html
 <figure>
@@ -126,7 +126,7 @@ Next, which *is* an example of integrated notation, we've reduced the image file
 …
 ~~~
 
-Finally, we eliminate the explicite use of the HTML `<figcaption>` tags by using Textpattern’s presentational `wraptag` attribute in `image_info`. The attribute is one of several common presentational attributes of many Textpattern tags. It allows you to declare any HTML element you want, Textpattern style:
+Finally, we eliminate the explicit use of the HTML `<figcaption>` tags by using Textpattern’s presentational `wraptag` attribute in `image_info`. The attribute is one of several common presentational attributes of many Textpattern tags. It allows you to declare any HTML element you want, Textpattern style:
 
 ~~~ html
 …
