@@ -189,4 +189,67 @@ or using the new `not` attribute:
 </txp:if_variable>
 ~~~
 
+## Global attributes (since 4.7.0)
+
+Starting with 4.7.0 some of commonly-used attributes are _global_: they are available to _any_ (core or plugin) tag. It is important to know that global attributes can not intervene in tags internal processing and are applied only to the tags _output_. For example,
+
+~~~ html
+<txp:variable name="test" value="   " />
+
+<txp:if_variable name="test" escape="trim" value="">
+    the variable is "blank"
+<txp:else />
+    there is something to see
+</txp:if_variable>
+~~~
+
+will not work as one would expect, because the global `escape="trim"` will be applied to `<txp:if_variable name="test" value="" />` output, which is (since `"   " != ""`)
+```
+
+    there is something to see
+
+```
+
+and finally give `there is something to see`.
+
+Note that if a tag already _has_ an attribute with the same name as a global one, the tags _own_ attribute will be processed and the global one will be discarded.
+
+### Global attributes list (all unset by default)
+
+`default="value"`
+: The value to display if the tags output is blank.
+: **Values:** any.
+
+`escape="list, of, transforms"`
+: The transforms to apply to the output.
+: **Values:** `html, js, json, url, float, integer, number, ordinal, spell, lower, upper, title, [r|l]trim, quote, tags, textile`.
+
+`trim="string|regex"`
+: Remove the matching patterns from the output.
+: **Values:** any.
+
+`not="boolean"`
+: Switch `<txp:else />` parts.
+: **Values:** `0` (no) or `1` (yes).
+
+`label="string"`
+: The label to display before the output.
+: **Values:** any.
+
+`labeltag="tag"`
+: The tag to wrap the label.
+: **Values:** HTML tag.
+
+`wraptag="tag or pattern"`
+: The tag to wrap the output.
+: **Values:** HTML tag or a string containing `<+>` pattern that will be replaced by the output.
+
+`wrapform="form name"`
+: The form to be used as `wraptag`. Handy if `wraptag` pattern is too long or reusable.
+: **Values:** HTML tag.
+
+`class, html_id`
+: HTML `class` and `id` attributes of the wrapper tag.
+: **Values:** any valid string.
+
 [Next: Incorrect tag contexts](incorrect-tag-contexts)
