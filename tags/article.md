@@ -52,7 +52,7 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 : **Default:** `1`.
 
 `breakby="integer or string"` <span class="footnote warning">v4.7.2+</span>
-: If its value is a list of integers, used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
+: Used to group list items when separating by `break`. If its value is a list of integers, they will be used as groups size. For example, `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
 : Otherwise, the value is evaluated on each loop and `break` happens as soon as it changes. Note that `string` must be enclosed in *double* quotes (see Example 7).
 : **Default:** `1` (actually unset).
 
