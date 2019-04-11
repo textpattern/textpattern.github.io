@@ -51,6 +51,15 @@ Tag will accept content/behaviour and presentation attributes (**case-sensitive*
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `1`.
 
+`breakby="integer or string"` <span class="footnote warning">v4.7.2+</span>
+: If its value is a list of integers, used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
+: Otherwise, the value is evaluated on each loop and `break` happens as soon as it changes. Note that `string` must be enclosed in *double* quotes (see Example 7).
+: **Default:** `1` (actually unset).
+
+`breakform="form name"` <span class="footnote warning">v4.7.2+</span>
+: A form to be used as `break`, generally jointly with `breakby` attribute. The special `<+>` pattern in this form will be replaced with the list "chunk" accumulated when break happens (see Example 7).
+: **Default:** unset.
+
 `customfieldname="value"`
 : Restrict to articles with specified value for specified custom field name. Replace `customfieldname` with the actual name of the custom field.
 : Important: Using dashes `-` or spaces may cause errors or render this feature ineffectual. Underscores in both custom field names and values are confirmed to work.
@@ -143,10 +152,6 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 `break="value"` <span class="footnote warning">v4.0.7+</span>
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
 : **Default:** `br` (but see [break cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#break) for exceptions).
-
-`breakby="integer"` <span class="footnote warning">v4.7.0+</span>
-: Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
-: **Default:** `1` (actually unset).
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
@@ -248,11 +253,52 @@ Uses the `sort` attribute to define values by which to order article output. In 
 
 Why might you do it? Sorting is a powerful way to group articles (e.g. by author), and/or give priority to articles most recently published (typically better for your website visitors).
 
+### Example 7: Build a `<section />`-separated list of article titles grouped by section
+
+Desired result:
+
+* `<section id="about (section name)">`
+* About (section title)
+* 1st Article from about section
+* 2nd Article from about section
+* …another article
+* `</section>`
+* `<section id="family (section name)">`
+* Family (section title)
+* 1st Article from family section
+* 2nd Article from family section
+* …another article
+* `</txp:section>`
+* …and so on
+
+Create the following Form named `sections`:
+
+~~~ html
+<section id='<txp:section />'>
+    <h2>
+        <txp:section title />
+    </h2>
+    <+>
+</section>
+~~~
+
+In Textpattern [Page templates](https://docs.textpattern.com/themes/page-templates-explained), add this tag to loop through all articles from all sections:
+
+~~~ html
+<txp:article sort="Section asc, Title asc" breakby="<txp:section />" breakform="sections">
+    <h3>
+        <txp:title />
+    </h3>
+</txp:article>
+~~~
+
+Other tags used: [section](section), [title](title).
+
 ## Genealogy
 
 ### Version 4.7.2
 
-`breakform` attribute added.
+`breakform` attribute added, `breakby` attribute modified.
 
 ### Version 4.7.0
 
