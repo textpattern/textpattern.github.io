@@ -30,15 +30,17 @@ The **if_different** tag is a *conditional* tag and always used as an opening an
 </txp:if_different>
 ~~~
 
-The tag will execute the contained statement when the value of the contained statement differs from the preceding value for that contained statement. Can be used in Textpattern 'article', 'link', 'comment', and 'file' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
+The tag will output the contained statement when the value of the contained statement differs from the preceding value for that contained statement. Can be used in Textpattern 'article', 'link', 'comment', and 'file' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
 
-Note: `if_different` can contain several HTML tags but only **one** Textpattern tag.
+Note: `if_different` can contain several HTML and Textpattern tag.
 {: .alert-block .information}
 
 ## Attributes
 
-This tag has no attributes.
-
+`test="string"` <span class="footnote warning">v4.7.2+</span>
+: If set, the contained statement will be output when the value of `test` changes.
+: **Values:** generally a combination of Textpattern tags.
+: **Default:** unset (watch for changes the contained statement itself).
 ## Examples
 
 ### Example 1: Display posting time per article once per day
@@ -96,6 +98,39 @@ In Textpattern [Page templates](https://docs.textpattern.com/themes/page-templat
 The snippet above lists all article titles and renders an intermittent heading element whenever a **different** section is encountered while the articles loop through.
 
 Other tags used: [article_custom](article_custom), [section](section), [title](title).
+
+### Example 3: Build a `<hr />`-separated list of article titles grouped by section
+
+Desired result:
+
+* 1st Article from 1rst section
+* 2nd Article from 1rst section
+* …another article
+* Horizontal rule
+* 1st Article from 2nd section
+* 2nd Article from 2nd section
+* …another article
+* Horizontal rule
+* 1st Article from 3rd section
+* 2nd Article from 3rd section
+* …another article
+
+In Textpattern [Page templates](https://docs.textpattern.com/themes/page-templates-explained), add this tag to loop through all articles from all sections:
+
+~~~ html
+<txp:article_custom sort="Section asc, Title asc">
+    <txp:if_different test='<txp:section />'>
+        <txp:if_first_article not>
+            <hr />
+        </txp:if_first_article>
+    </txp:if_different>
+    <h3>
+        <txp:title />
+    </h3>
+</txp:article_custom>
+~~~
+
+Other tags used: [article_custom](article_custom), [if_first_article](if_first_article), [section](section), [title](title).
 
 ## Genealogy
 
