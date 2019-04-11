@@ -41,6 +41,7 @@ Note: `if_different` can contain several HTML and Textpattern tag.
 : If set, the contained statement will be output when the value of `test` changes.
 : **Values:** generally a combination of Textpattern tags.
 : **Default:** unset (watch for changes the contained statement itself).
+
 ## Examples
 
 ### Example 1: Display posting time per article once per day
