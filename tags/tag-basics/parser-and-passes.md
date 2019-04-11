@@ -60,7 +60,7 @@ If you supply an integer to the `process` attribute, the content will only be ex
 
 After the first pass, the `<txp:article>` tag will have been established so Textpattern knows which article this is. Thus on the second pass, the previously hidden content can safely be executed and the link rendered on the screen _above_ the article content, even though the content was determined afterwards.
 
-Actually, `<txp:link_to_next />` "knows" it needs the current article data, so it "hides" itself until the next pass if these data are missing. Hence you don't need to complicate the construction in _this_ case, but altering the parsing order might be necessary in more complex cases.
+Actually, `<txp:link_to_next />` tag "knows" it needs the current article data, so it postpones itself to the next pass if these data are not yet available. Hence you don't need to manually hide it in _this_ case, but altering the parsing order might be necessary in more complex cases.
 
 ## PHP in templates
 
