@@ -65,6 +65,15 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** (comma separated list of) author login name(s).
 : **Default:** unset, retrieves from all authors.
 
+`breakby="integer or string"` <span class="footnote warning">v4.7.2+</span>
+: If its value is a list of integers, used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
+: Otherwise, the value is evaluated on each loop and `break` happens as soon as it changes. Note that `string` must be enclosed in *double* quotes (see Example 7 of [article](article) tag).
+: **Default:** `1` (actually unset).
+
+`breakform="form name"` <span class="footnote warning">v4.7.2+</span>
+: A form to be used as `break`, generally jointly with `breakby` attribute. The special `<+>` pattern in this form will be replaced with the list "chunk" accumulated when break happens (see Example 7 of [article](article) tag).
+: **Default:** unset.
+
 `category="category name"`
 : Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories panel](https://docs.textpattern.com/administration/categories-panel) to ensure you are using the correct names.
 : **Values:** (comma separated list of) category name(s).
@@ -177,10 +186,6 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 `break="value"` <span class="footnote warning">v4.0.7+</span>
 : Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
 : **Default:** `br` (but see [break cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#break) for exceptions).
-
-`breakby="integer"` <span class="footnote warning">v4.7.0+</span>
-: Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
-: **Default:** `1` (actually unset).
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
