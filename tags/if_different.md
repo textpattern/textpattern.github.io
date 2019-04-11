@@ -37,7 +37,7 @@ Note: `if_different` can contain several HTML and Textpattern tag.
 
 ## Attributes
 
-`test="string"` <span class="footnote warning">v4.7.2+</span>
+`test="value"` <span class="footnote warning">v4.7.2+</span>
 : If set, the contained statement will be output when the value of `test` changes.
 : **Values:** generally a combination of Textpattern tags.
 : **Default:** unset (watch for changes the contained statement itself).
