@@ -8,7 +8,7 @@ description: These are detailed instructions for installing Textpattern.
 
 # Installing Textpattern
 
-These are detailed instructions for installing Textpattern. The instructions follow a process of using a (S)FTP client, which you presumably have ([Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, and [WinSCP](https://winscp.net/eng/index.php/) is for Windows). If you're familiar with installing CMS software and prefer the quick notes, see the [README.txt](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. If you're more of a command-line jockey, the bits in [working with the development branch](https://docs.textpattern.com/development/textpattern-source-code-repositories) should suit you.
+These are detailed instructions for installing Textpattern. The instructions follow a process of using an (S)FTP application, which you presumably have ([Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, and [WinSCP](https://winscp.net/eng/index.php/) is for Windows). If you're familiar with installing CMS software and prefer the quick notes, see the [README.txt](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. If you're more of a command line jockey, the bits in [working with the development branch](https://docs.textpattern.com/development/textpattern-source-code-repositories) should suit you.
 
 On this page:
 
@@ -42,10 +42,10 @@ Now we begin the Textpattern part of the deal:
 
 1. Create a folder on your local drive and name it something recognizable (e.g. `txp-new`).
 2. [Download](https://textpattern.com/download) the latest release package (either `.zip` or `.tar.gz`, as you prefer).
-3. Move the zip package to the folder you created.
-4. Unzip the package.
+3. Move the package to the folder you created.
+4. Expand the package.
 
-The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see, pay particular attention the to `.htaccess` file.[^2]
+The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see, pay particular attention the to `.htaccess`[^2] file if you intend to install Textpattern to an Apache web server.
 
 `files`
 : **Type:** directory.
@@ -60,7 +60,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 `rpc`
 : **Type:** directory.
 : **Removable?:** yes.
-: **What it's for:** Contains the XML-RPC functionality, which is vestigial code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel#enable-xml-rpc-server).
+: **What it's for:** Contains the XML-RPC functionality, which is legacy code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel#enable-xml-rpc-server).
 
 `sites`
 : **Type:** directory.
@@ -109,7 +109,7 @@ The zip package will have a folder/file tree matching that in the [Textpattern r
 
 [^1]: Do not move files in the tree or change their names. Doing so will render Textpattern useless.
 
-[^2]: This type of file is a 'hidden' server file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you setup local development on your Mac laptop, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which hide these files until you change settings to show them.
+[^2]: This type of file is a 'hidden' file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you undertake local development on a macOS, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which typically hide these files until you change settings to show them.
 
 ## Upload package to web server
 
