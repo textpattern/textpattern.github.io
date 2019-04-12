@@ -203,7 +203,7 @@ Starting with 4.7.0 some of commonly-used attributes are _global_: they are avai
 </txp:if_variable>
 ~~~
 
-will not work as one would expect, because the global `trim` will be applied to `<txp:if_variable name="test" value="" />` output, which is (since `"   "` is not empty)
+will not work as one would expect, because the global `trim` will be applied to `<txp:if_variable name="test" value />` output, which is (since `"   "` is not empty)
 ```
 
     there is something to test
