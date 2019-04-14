@@ -61,3 +61,31 @@ The category and section types are intended to be used in conjunction with [cate
 Several forms come with Textpattern out-of-the-box, only enough to provide the minimal publishing functionality needed in the default installation. The default Form templates, and presumably those you end up creating, are organized by type to help keep them straight.[^1] The type groupings used to organize forms are: **Article**, **Miscellaneous**, **Comment**, **Category**, **File**, **Links**, and **Section**. You'll only see a given type in the panel when there's at least one Form template assigned to it.
 
 [^1]: The form naming convention you adopt will also help with form organization within a given form type list.
+
+## Custom form template types
+
+In addition to the standard form template types (article, file, misc, etc.), Publishers can define custom types. The purpose of custom form template types is twofold: easier form template classification and custom asset definitions.
+
+The format of the preference is [INI](https://en.wikipedia.org/wiki/INI_file), with each section corresponding to a form template type.
+
+To define a custom form type (e.g. `js`) one must append (on a separate line) a `[js]` section. A default title can be set via a `title="Javascript"` entry in the corresponding section. If needed, localized titles can be appended too (e.g. `ru="Скрипт"`).
+
+Additionally, a form template media type (formerly known as a MIME type) can be specified, e.g. `mediatype="application/javascript"`. This turns form templates of this type into custom assets that can be served as the set media type, either from the database or from disk (flat files) via the `<txp:output_form />` tag. For example, a form template named `myscript.js` of `[js]` type with a media type of `application/javascript` can be included in your code like so:
+
+~~~ html
+<txp:output_form form="myscript.js" format="flat.script" />
+~~~
+
+This will generate the following HTML `<script>` tag:
+
+~~~ html
+<script src="path/to/flat/myscript.js"></script>
+~~~
+
+Only form templates with the name extension corresponding to some media type (e.g. `myscript.js`) can be served as flat files. In this case, they will not be processed by Textpattern at all and are accessible via their URL.
+
+If a form template needs processing (if it contains Textpattern tags), you must serve it from the database. In this case you shouldn't add the extension to the form name - call it just `myscript` (without `.js`) to make it inaccessible via a standard URL - and include it like so:
+
+~~~ html
+<txp::myscript format="script" />
+~~~
