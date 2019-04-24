@@ -26,7 +26,7 @@ The **custom_field** tag is a *single* tag and used to display the contents of a
 
 Custom fields are useful when you need to output content having a consistent structure, usually in context to a particular type of article. Custom fields are defined in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel), and used in the [Write panel](https://docs.textpattern.com/administration/write-panel). There are conditions to be aware of in each case, so be sure to read the following sections, respectively:
 
-1. @@Defining custom fields@@
+1. [Defining custom fields](https://docs.textpattern.com/administration/preferences-panel#custom-fields-preferences)
 2. @@Adding custom field data@@
 
 Also see the [if_custom_field](if_custom_field) conditional tag, which provides more flexibility and power using custom fields.
