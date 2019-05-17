@@ -115,7 +115,7 @@ UrlToolkit {
 }
 ~~~
 
-[URL Toolkit](https://www.hiawatha-webserver.org/howto/url_toolkit)) can also be adapted for many other tasks, for example HTTP 301 redirection:
+[URL Toolkit](https://www.hiawatha-webserver.org/howto/url_toolkit) can also be adapted for many other tasks, for example HTTP 301 redirection:
 
 ~~~ nginx
 UrlToolkit {
