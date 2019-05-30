@@ -31,6 +31,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [Programmer tags](programmer-tags)
 * [Search tags](search-tags)
 * [Structural tags](structural-tags)
+{: .list--no-bullets}
 
 </div>
 
