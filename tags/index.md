@@ -49,6 +49,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [author](author)
 * [author_email](author_email)
 * [authors](authors)
+{: .list--no-bullets}
 
 </div>
 
@@ -58,6 +59,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 * [body](body)
 * [breadcrumb](breadcrumb) <span class="footnote warning">**Modified v4.7.0**</span>
+{: .list--no-bullets}
 
 </div>
 
@@ -93,6 +95,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [comments_preview](comments_preview)
 * [css](css) <span class="footnote warning">**Modified v4.7.2**</span>
 * [custom_field](custom_field)
+{: .list--no-bullets}
 
 </div>
 
@@ -107,6 +110,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [evaluate](evaluate) <span class="footnote success">**New v4.7.0**</span>
 * [excerpt](excerpt)
 * [expires](expires)
+{: .list--no-bullets}
 
 </div>
 
@@ -127,6 +131,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [file_download_modified](file_download_modified)
 * [file_download_name](file_download_name)
 * [file_download_size](file_download_size)
+{: .list--no-bullets}
 
 </div>
 
@@ -136,6 +141,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 * [header](header) <span class="footnote success">**New v4.7.0**</span>
 * [hide](hide) <span class="footnote warning">**Modified v4.7.0**</span>
+{: .list--no-bullets}
 
 </div>
 
@@ -194,6 +200,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [image_list](image_list) <span class="footnote error">**Deprecated**</span>
 * [image_url](image_url)
 * [images](images)
+{: .list--no-bullets}
 
 </div>
 
@@ -202,6 +209,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [keywords](keywords) <span class="footnote warning">**Modified v4.7.0**</span>
+{: .list--no-bullets}
 
 </div>
 
@@ -224,6 +232,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [link_url](link_url)
 * [linkdesctitle](linkdesctitle)
 * [linklist](linklist)
+{: .list--no-bullets}
 
 </div>
 
@@ -235,6 +244,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [meta_description](meta_description)
 * [meta_keywords](meta_keywords)
 * [modified](modified)
+{: .list--no-bullets}
 
 </div>
 
@@ -244,6 +254,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 * [newer](newer) <span class="footnote warning">**Modified v4.7.0**</span>
 * [next_title](next_title)
+{: .list--no-bullets}
 
 </div>
 
@@ -253,6 +264,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 * [older](older) <span class="footnote warning">**Modified v4.7.0**</span>
 * [output_form](output_form) <span class="footnote warning">**Modified v4.7.2**</span>
+{: .list--no-bullets}
 
 </div>
 
@@ -269,6 +281,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [popup_comments](popup_comments)
 * [posted](posted)
 * [prev_title](prev_title)
+{: .list--no-bullets}
 
 </div>
 
@@ -280,6 +293,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [recent_comments](recent_comments)
 * [related_articles](related_articles)
 * [rsd](rsd) <span class="footnote error">**Deprecated**</span>
+{: .list--no-bullets}
 
 </div>
 
@@ -299,6 +313,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [site_name](site_name)
 * [site_slogan](site_slogan)
 * [site_url](site_url) <span class="footnote warning">**Modified v4.7.0**</span>
+{: .list--no-bullets}
 
 </div>
 
@@ -310,6 +325,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [thumbnail](thumbnail)
 * [title](title)
 * [txp_die](txp_die)
+{: .list--no-bullets}
 
 </div>
 
@@ -318,6 +334,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [variable](variable)
+{: .list--no-bullets}
 
 </div>
 
@@ -326,5 +343,6 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [yield](yield) <span class="footnote warning">**Modified v4.7.0**</span>
+{: .list--no-bullets}
 
 </div>

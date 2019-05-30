@@ -25,6 +25,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Post install and upgrade routines](https://docs.textpattern.com/installation/post-install-and-upgrade-routines)
 * [Multi-site Textpattern installations](https://docs.textpattern.com/installation/multi-site-textpattern)
 * [Troubleshooting a Textpattern installation/upgrade](https://docs.textpattern.com/installation/troubleshooting-textpattern)
+{: .list--no-bullets}
 
 </div>
 <div class="layout-3col">
@@ -35,6 +36,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Textpattern administration](https://docs.textpattern.com/administration/) (admin-side structure and functionality)
 * [Administration fast-track](https://docs.textpattern.com/administration/admin-fast-track) (workflow insights to get up to speed quick)
 * [Textpattern security](https://docs.textpattern.com/administration/security) (read before you worry or hack the core)
+{: .list--no-bullets}
 
 </div>
 <div class="layout-3col">
@@ -43,13 +45,17 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 {: .index-docs-tags}
 
 **Core tags**
+
 * [Tags reference](https://docs.textpattern.com/tags/)
 * [Tag use basics](https://docs.textpattern.com/tags/tag-basics/)
 * [Tags in development](https://docs.textpattern.com/tags/tags-in-development)
+{: .list--no-bullets}
 
 **Custom tags**
+
 * [Custom short-tags and shortcodes](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes)
 * [Shortcode examples](https://docs.textpattern.com/tags/shortcodes/)
+{: .list--no-bullets}
 
 </div>
 <div class="layout-3col">
@@ -61,6 +67,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Front-end themes](https://docs.textpattern.com/themes/front-end-themes)
 * [Admin-side themes](https://docs.textpattern.com/themes/admin-side-themes)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
+{: .list--no-bullets}
 
 </div>
 <div class="layout-3col">
@@ -71,7 +78,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Plugin development](https://docs.textpattern.com/development/)
 * [Textpattern source code repositories](https://docs.textpattern.com/development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
 * [Plugins website](https://github.com/textpattern/textpattern-plugins-website) (in development)
-
+{: .list--no-bullets}
 
 </div>
 <div class="layout-3col">
@@ -81,6 +88,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 * [Textpattern basic tutorial](https://docs.textpattern.com/faqs/textpattern-basic-tutorial)
 * [Complete list of Textpattern FAQs](https://docs.textpattern.com/faqs/) (the most commonly-asked Textpattern questions)
+{: .list--no-bullets}
 
 </div>
 </div>
