@@ -43,7 +43,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <section>
 
-###A
+### A
 
 <div class="layout-text4col">
 
@@ -61,7 +61,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###B
+### B
 
 <div class="layout-text4col">
 
@@ -73,7 +73,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###C
+### C
 
 <div class="layout-text4col">
 
@@ -111,7 +111,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###E
+### E
 
 <div class="layout-text4col">
 
@@ -128,7 +128,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###F
+### F
 
 <div class="layout-text4col">
 
@@ -151,7 +151,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###H
+### H
 
 <div class="layout-text4col">
 
@@ -163,7 +163,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###I
+### I
 
 <div class="layout-text4col">
 
@@ -224,7 +224,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###K
+### K
 
 <div class="layout-text4col">
 
@@ -235,7 +235,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###L
+### L
 
 <div class="layout-text4col">
 
@@ -260,7 +260,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###M
+### M
 
 <div class="layout-text4col">
 
@@ -274,7 +274,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###N
+### N
 
 <div class="layout-text4col">
 
@@ -286,7 +286,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###O
+### O
 
 <div class="layout-text4col">
 
@@ -298,7 +298,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###P
+### P
 
 <div class="layout-text4col">
 
@@ -317,7 +317,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###R
+### R
 
 <div class="layout-text4col">
 
@@ -331,7 +331,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###S
+### S
 
 <div class="layout-text4col">
 
@@ -353,7 +353,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###T
+### T
 
 <div class="layout-text4col">
 
@@ -367,7 +367,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###V
+### V
 
 <div class="layout-text4col">
 
@@ -378,7 +378,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 </section>
 <section>
 
-###Y
+### Y
 
 <div class="layout-text4col">
 
