@@ -46,7 +46,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 
 <section>
 
-##### Core tags
+#### Core tags
 
 * [Tags reference](https://docs.textpattern.com/tags/)
 * [Tag use basics](https://docs.textpattern.com/tags/tag-basics/)
@@ -56,7 +56,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 </section>
 <section>
 
-##### Custom tags
+#### Custom tags
 
 * [Custom short-tags and shortcodes](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes)
 * [Shortcode examples](https://docs.textpattern.com/tags/shortcodes/)
