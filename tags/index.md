@@ -10,9 +10,11 @@ description: A complete list of all the Textpattern tags available to use.
 
 Each Textpattern tag is described in detail on its respective reference page. See [Tag basics](https://docs.textpattern.com/tags/tag-basics/) for overview of tag types and modes of use. For a complete list of tag attributes see [Tag attributes cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference).
 
-## Subcategories
-
 {::options parse_block_html="true" /}
+
+<section>
+
+## Subcategories
 
 <div class="layout-text4col">
 
@@ -34,10 +36,14 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
 ## Complete list of Textpattern tags
 
-### A
+<section>
+
+###A
 
 <div class="layout-text4col">
 
@@ -52,8 +58,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### B
+###B
 
 <div class="layout-text4col">
 
@@ -62,8 +70,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### C
+###C
 
 <div class="layout-text4col">
 
@@ -98,8 +108,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### E
+###E
 
 <div class="layout-text4col">
 
@@ -113,8 +125,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### F
+###F
 
 <div class="layout-text4col">
 
@@ -134,8 +148,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### H
+###H
 
 <div class="layout-text4col">
 
@@ -144,8 +160,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### I
+###I
 
 <div class="layout-text4col">
 
@@ -203,8 +221,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### K
+###K
 
 <div class="layout-text4col">
 
@@ -212,8 +232,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### L
+###L
 
 <div class="layout-text4col">
 
@@ -235,8 +257,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### M
+###M
 
 <div class="layout-text4col">
 
@@ -247,8 +271,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### N
+###N
 
 <div class="layout-text4col">
 
@@ -257,8 +283,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### O
+###O
 
 <div class="layout-text4col">
 
@@ -267,8 +295,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### P
+###P
 
 <div class="layout-text4col">
 
@@ -284,8 +314,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### R
+###R
 
 <div class="layout-text4col">
 
@@ -296,8 +328,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### S
+###S
 
 <div class="layout-text4col">
 
@@ -316,8 +350,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### T
+###T
 
 <div class="layout-text4col">
 
@@ -328,8 +364,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### V
+###V
 
 <div class="layout-text4col">
 
@@ -337,8 +375,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+<section>
 
-### Y
+###Y
 
 <div class="layout-text4col">
 
@@ -346,3 +386,5 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 {: .list--no-bullets}
 
 </div>
+</section>
+</section>
