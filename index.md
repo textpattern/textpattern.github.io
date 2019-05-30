@@ -13,7 +13,7 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 {::options parse_block_html="true" /}
 
 <div class="layout-container index-docs">
-<div class="layout-3col">
+<section class="layout-3col">
 
 ### Installation handling
 {: .index-docs-start}
@@ -27,8 +27,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Troubleshooting a Textpattern installation/upgrade](https://docs.textpattern.com/installation/troubleshooting-textpattern)
 {: .list--no-bullets}
 
-</div>
-<div class="layout-3col">
+</section>
+<section class="layout-3col">
 
 ### Site administration
 {: .index-docs-admin}
@@ -38,8 +38,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Textpattern security](https://docs.textpattern.com/administration/security) (read before you worry or hack the core)
 {: .list--no-bullets}
 
-</div>
-<div class="layout-3col">
+</section>
+<section class="layout-3col">
 
 ### Tags
 {: .index-docs-tags}
@@ -57,8 +57,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Shortcode examples](https://docs.textpattern.com/tags/shortcodes/)
 {: .list--no-bullets}
 
-</div>
-<div class="layout-3col">
+</section>
+<section class="layout-3col">
 
 ### Themes
 {: .index-docs-theme}
@@ -69,8 +69,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
 {: .list--no-bullets}
 
-</div>
-<div class="layout-3col">
+</section>
+<section class="layout-3col">
 
 ### Development
 {: .index-docs-dev}
@@ -80,8 +80,8 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Plugins website](https://github.com/textpattern/textpattern-plugins-website) (in development)
 {: .list--no-bullets}
 
-</div>
-<div class="layout-3col">
+</section>
+<section class="layout-3col">
 
 ### FAQs
 {: .index-docs-faqs}
@@ -90,5 +90,5 @@ Welcome to the new user documentation, which replaces the old wiki at textpatter
 * [Complete list of Textpattern FAQs](https://docs.textpattern.com/faqs/) (the most commonly-asked Textpattern questions)
 {: .list--no-bullets}
 
-</div>
+</section>
 </div>
