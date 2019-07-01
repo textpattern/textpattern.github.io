@@ -343,6 +343,10 @@ Other tags used: [article_image](article_image), [thumbnail](thumbnail).
 
 `breakby` attribute added.
 
+### Version 4.6.0
+
+`breakclass` attribute deprecated.
+
 ### Version 4.5.0
 
 Sort order of `id` attribute maintained, unless overridden with `sort` attribute.
