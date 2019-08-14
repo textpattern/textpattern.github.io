@@ -151,6 +151,10 @@ Other tags used: [category](category), [if_category](if_category).
 
 ## Genealogy
 
+### Version 4.7.2
+
+`sort` attribute behaviour defaults to `name asc` to bypass some database server specific ordering. NOTE this introduced an unexpected backwards-compatibility bug with the `categories` attribute. When using this attribute, you *must* set `sort=""` for the list to remain in the order specified in the `categories` attribute. This has been fixed _after_ (not in) Textpattern 4.7.3.
+
 ### Version 4.7.0
 
 `children` attribute behaviour extended (accepts integer instead of boolean values). \\
