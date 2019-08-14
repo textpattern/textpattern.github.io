@@ -36,7 +36,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `categories="category name(s)"` <span class="footnote warning">v4.0.4+</span>
-: Comma-separated list of categories to include, displayed in the order specified (unless overridden by `sort` attribute). Use category names **not** titles here - note that Textpattern automatically converts the names to lowercase and converts spaces to hyphens when they are created.
+: Comma-separated list of categories to include, displayed in the order specified (unless overridden by `sort` attribute - see Genealogy section for caveat). Use category names **not** titles here - note that Textpattern automatically converts the names to lowercase and converts spaces to hyphens when they are created.
 : **Default:** unset (all categories).
 
 `children="integer"` <span class="footnote warning">v4.7.0+</span>
