@@ -29,6 +29,10 @@ The **page_url** tag is a *single* tag that is used to return a particular compo
 
 Tag will accept the following attributes (**case-sensitive**):
 
+`context="list"` <span class="footnote warning">v4.7.2+</span>
+: Specifies which Textpattern URL parameters must be retained. For example, `<txp:page_url />` without `context` will produce something like `index.php?s=somesec&c=somecat&pg=2` on the corresponding page, while `<txp:page_url context="c, s" />` will result in `index.php?s=somesec&c=somecat`.
+: **Default:** unset (retain everything).
+
 `default="value"` <span class="footnote warning">v4.7.0+</span>
 : The default value if no component of the current page's URL matches the `type` attribute.
 : **Default:** unset.
