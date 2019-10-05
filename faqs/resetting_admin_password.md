@@ -21,7 +21,7 @@ Most web hosting accounts provide direct MySQL access using a program called _ph
 Within phpMyAdmin, or at the MySQL command prompt, run the following query if you're using any version of MySQL below v8.0:
 
 ``` sql
-update txp_users set pass=PASSWORD(LOWER('my_pass')) where name='user';
+update txp_users set pass=PASSWORD('my_pass') where name='user';
 ```
 
 where `my_pass` is the new password, and `user` is the login username of the account you wish to change.
