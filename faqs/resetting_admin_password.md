@@ -21,7 +21,7 @@ Most web hosting accounts provide direct MySQL access using a program called _ph
 Within phpMyAdmin, or at the MySQL command prompt, run the following query if you're using any version of MySQL below v8.0:
 
 ``` sql
-update txp_users set pass=PASSWORD('my_pass') where name='user';
+UPDATE txp_users SET pass=PASSWORD('my_pass') WHERE name='user';
 ```
 
 where `my_pass` is the new password, and `user` is the login username of the account you wish to change.
@@ -29,7 +29,7 @@ where `my_pass` is the new password, and `user` is the login username of the acc
 If your host is running MySQL v8.0 or higher, you will not be able to use the `PASSWORD()` function. Use the following query instead:
 
 ``` sql
-update txp_users set pass=CONCAT('*', SHA1(UNHEX(SHA1('my_pass')))) where name='user';
+UPDATE txp_users SET pass=CONCAT('*', SHA1(UNHEX(SHA1('my_pass')))) WHERE name='user';
 ```
 
 Once you have executed one of the above statements, you will be able to login to Textpattern with your username and new password.
