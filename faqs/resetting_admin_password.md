@@ -1,80 +1,35 @@
-@@todo Merge https://github.com/textpattern/textpattern.github.io/blob/master/faqs/help-i-forgot-my-password.md if required, then move this to a HowTo section?@@
+---
+layout: document
+category: FAQs
+published: true
+title: "FAQ: How to reset an admin password"
+description: Resetting an administrator password stored in the database via SQL.
+---
 
-Resetting the administrators password (or any user password) is fairly
-straight forward. This presumes you have access to phpMyAdmin which is
-commonly installed on my webservers that use MySQL.
+# FAQ: How to reset an admin password
 
-### The Process {#the-process .sectionedit1#the_process}
+There are a few ways to reset a Textpattern password:
 
-<ol>
-<li>
-Start phpMyAdmin. This may be done from shell or your control panel.
+* Visit the admin-side login page and click _Forgot password?_ then submit your username. Instructions for resetting it will be sent to the email address stored in your Textpattern user account.
+* If you cannot remember your login name or do not have access to the email address any more, a Publisher can reset any user's password. Provided there's at least one publisher who can log in, ask them to reset your password for you and/or change your email address details.
+* If you're the only user with Publisher privileges (or the only Textpattern user at all), and need to change your password, you'll need to access the database directly. This guide is for you.
 
-</li>
-<li>
-At the opening screen, select the database for your Textpattern install
-(eg userid_textpattern).
+## Resetting the password via SQL
 
-</li>
-<li>
-From the list of tables select **txp_users**. This should present a
-table structure and a selection of tabbed options.
+Most web hosting accounts provide direct MySQL access using a program called _phpMyAdmin_ (or an equivalent). Some provide command line access to an SQL environment. If you're not sure how to access MySQL, ask your hosting company's tech support.
 
-</li>
-<li>
-Select the **Browse** tab. This will display a query field and a list of
-users.
+Within phpMyAdmin, or at the MySQL command prompt, run the following query if you're using any version of MySQL below v8.0:
 
-</li>
-<li>
-Select the **small pencil (edit) icon** next to the **user ID** entry
-you wish to edit. This will display a table for the record showing the
-fields and their current values. *Note that only the password hash is
-displayed, not the plain text.*
+```
+update txp_users set pass=PASSWORD(LOWER('my_pass')) where name='user';
+```
 
-</li>
-<li>
-<p>
-In the function column for the **pass** field, select **PASSWORD** from
-the drop down box. You may then delete the hash and enter a plaintext
-password in the corresponding value field. Letters in this field should
-be all lowercase. Make sure the box at the lower left says **'save**'
-and select the **GO** button. You will be returned to the previous
-screen which will display the SQL query you just created. The hash
-displayed opposite the user ID you selected should have changed (unless
-you used the exact same password). Alternatively you can select the
-*Edit* link for the SQL query field visible in step 5 and enter the
-following substituting the desired password for *newpassword* and the
-appropriate userID **number** :
+where `my_pass` is the new password, and `user` is the login username of the account you wish to change.
 
-</p>
-    UPDATE `txp_users` SET `pass` = PASSWORD( ' **newpassword** ' ) WHERE `user_id` = **number** LIMIT 1;
+If your host is running MySQL v8.0 or higher, you will not be able to use the `PASSWORD()` function. Use the following query instead:
 
-<p>
-.
+```
+update txp_users set pass=CONCAT('*', SHA1(UNHEX(SHA1('my pass')))) where name='user';
+```
 
-</p>
-</li>
-<li>
-Exit phpMyAdmin and login to Textpattern with your username and new
-password.
-
-</li>
-</ol>
-### Changing to Higher Permission Status if Accidentally Set Incorrectly {#changing-to-higher-permission-status-if-accidentally-set-incorrectly .sectionedit2#changing_to_higher_permission_status_if_accidentally_set_incorrectly}
-
-It has happened to people before that while learning the nature of
-different permission settings in the xxx panel they accidentally set
-themselves at a lower permissions level than what they indended to have;
-for example as Managing Editor instead of Publisher.
-
-You can fix this situation, but you have to have access to a database
-management program like phpMyAdmin for the database involved. Following
-is what you do:
-
-1.  Open phpMyAdmin, select the appropriate database, and browse to the
-    **txp_users** table.
-2.  Look for the row with your Textpattern account username, and find
-    the column named “**privs**”.
-3.  Change it to the number “**1**”.
-
+Once you have executed one of the above statements, you will be able to login to Textpattern with your username and new password.
