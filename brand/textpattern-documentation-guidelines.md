@@ -14,26 +14,26 @@ These guidelines concern the editorial upkeep of the [Textpattern CMS user docum
 
 * [Audience and scope of documentation](#audience-and-scope-of-documentation)
 * [Collaborative editing process](#collaborative-editing-process)
-  ** [Scope and depth of material](#scope-and-depth-of-material)
-  ** [New documentation pages](#new-documentation-pages)
-     *** [Using repository Issues](#using-repository-issues)
-     *** [Determining new topics](#determining-new-topics)
-  ** [Revising existing pages](#revising-existing-pages)
-  ** [Cross-linking](#cross-linking)
+  * [Scope and depth of material](#scope-and-depth-of-material)
+  * [New documentation pages](#new-documentation-pages)
+     * [Using repository Issues](#using-repository-issues)
+     * [Determining new topics](#determining-new-topics)
+  * [Revising existing pages](#revising-existing-pages)
+  * [Cross-linking](#cross-linking)
 * [Writing and editing](#writing-and-editing)
-  ** [Author perspective](#author-perspective)
-  ** [Concise writing tips](#concise-writing-tips)
-  ** [Typos and grammar gotchas](#typos-and-grammar-gotchas)
-  ** [Brand usage](#brand-usage)
-     *** [Administration panels context](#administration-panels-context)
-         **** [Admin vs. administration vs. administrator](#admin-vs-administration-vs-administrator) 
-         **** [Administration side vs. Administration-side](#administration-side-vs-administration-side)
-         **** [Formatting interface strings](#formatting-interface-strings)
+  * [Author perspective](#author-perspective)
+  * [Concise writing tips](#concise-writing-tips)
+  * [Typos and grammar gotchas](#typos-and-grammar-gotchas)
+  * [Brand usage](#brand-usage)
+     * [Administration panels context](#administration-panels-context)
+         * [Admin vs. administration vs. administrator](#admin-vs-administration-vs-administrator) 
+         * [Administration side vs. Administration-side](#administration-side-vs-administration-side)
+         * [Formatting interface strings](#formatting-interface-strings)
 * [Markup](#markup)
-  ** [Tables (HTML only](#tables-html-only)
-  ** [Using notes](#using-notes)
-     *** [Notes in tables](#notes-in-tables)
-     *** [Notes in main text](#notes-in-main-text)
+  * [Tables (HTML only](#tables-html-only)
+  * [Using notes](#using-notes)
+     * [Notes in tables](#notes-in-tables)
+     * [Notes in main text](#notes-in-main-text)
 
 ## Audience and scope of documentation
 
@@ -278,15 +278,43 @@ Textpattern documentation tries to find a clear balance with seven formatting ru
 			<th scope="row">Textpattern Form names</th>
 			<td>Bold-italic (e.g. <b><i>default</i></b>, <b><i>files</i></b>, <b><i>comments_display</i></b>).</td>
 		</tr>
-			<tr>
-			<th scope="row">Coloured system feedback messages (green, yellow, red)</th>
-			<td>Format as messages appear, and use respective class selector (i.e. `class=""`, `class=""`, or `class=""`).</td>
-		</tr>
-		<tr>
-			<th scope="row">URLs, file paths, and file names</th>
-			<td>Italic, and make sure file extensions are included (e.g. <i>.htaccess</i>, <i>index.php</i>, <i>domain.tld/textpattern</i>, etc.)</td>
-		</tr>
 </table></div>
+
+Two other possible interface strings include system messages and file paths/names.
+
+System messages will appear to users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages (e.g. when saving changings). A system message can be one of four different colours: green, blue, yellow, or red. When documenting system messages, format them as they appear in the interface using the following codes.
+
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
+<thead><tr>
+<th scope="col”>Message type</th>
+<th scope="col">Colour</th>
+<th scope="col">Markup</th>
+</tr></thead>
+<tbody>
+<tr>
+<th scope="row">Success</th>
+<td>green</td>
+<td><code>Message string. {: .alert-block .success}</code></td>
+</tr>
+<tr>
+<th scope="row">Warning</th>
+<td>yellow</td>
+<td><code>Message string. {: .alert-block .warning}</code></td>
+</tr>
+<tr>
+<th scope="row">Error</th>
+<td>red</td>
+<td><code>Message string. {: .alert-block .error}</code></td>
+</tr>
+<tr>
+<th scope="row">Information</th>
+<td>blue</td>
+<td><code>Message string. {: .alert-block .information}</code></td>
+</tr>
+</tbody>
+</table></div>
+
+Finally, you may sometimes need to document URLs, file paths, and file names. In these cases, use italic text, and make sure file extensions are included on any file names (e.g. *domain.tld/textpattern*, *.htaccess*, *index.php*, etc.)
 
 Do not format URLs and file paths as code unless they are part of an actual code snippet.
 
