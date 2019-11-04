@@ -1,12 +1,12 @@
 ---
 layout: document
 category: Brand
-published: true
+published: false
 title: Textpattern editorial style guide
-description: These guidelines concern all text content published on Textpattern platforms, and any outbound content for marketing reasons.
+description: Editorial guidelines for content published on Textpattern platforms.
 ---
 
-# Textpattern editorial style guide TODO
+# Textpattern editorial style guide
 
 These guidelines concern all text content published on Textpattern platforms, and any outbound content for marketing reasons. Following these guidelines will help you produce accurate, clear, and concise copy that Textpattern audiences will find easier to read, translate, understand, and use.
 
