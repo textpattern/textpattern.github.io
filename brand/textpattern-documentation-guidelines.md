@@ -428,46 +428,46 @@ Textpattern documentation provides CSS styles to make reference mark lists in a 
 <thead>
 <tr>
 <th scope="col">Name</th>
-<th scope="col">Mark&#x002a;</th>
-<th scope="col">Entity</th>
+<th scope="col">Mark</th>
+<th scope="col">Entity&#x002a;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">Asterisk</th>
 <td>*</td>
-<td><code>&#x002a;</code></td>
+<td><code>002a</code></td>
 </tr>
 <tr>
 <th scope="row">Dagger</th>
 <td>†</td>
-<td><code>&#x2020;</code></td>
+<td><code>2020</code></td>
 </tr>
 <tr>
 <th scope="row">Double Dagger</th>
 <td>‡</td>
-<td><code>&#x2021;</code></td>
+<td><code>2021</code></td>
 </tr>
 <tr>
 <th scope="row">Section Sign</th>
 <td>§</td>
-<td><code>&#x00a7;</code></td>
+<td><code>00a7</code></td>
 </tr>
 <tr>
 <th scope="row">Pilcrow&#x2020;</th>
 <td>¶</td>
-<td><code>&#x00b6;</code></td>
+<td><code>00b6</code></td>
 </tr>
 <tr>
 <th scope="row">Double Vertical Line</th>
 <td>‖</td>
-<td><code>&#x2016;</code>&#x2021;</td>
+<td><code>2016</code>&#x2021;</td>
 </tr>
 </tbody>
 <tfoot><tr><td colspan="3">
 <ol>
-<li>Notes can be used to clarify headers, or indicate units.</li>
-<li>Can elaborate data items (e.g. also known as the ‘paragraph sign’).</li>
+<li>Unicode values for character glyphs. These can be used as ASCII characters by prefixing values with <code>&#x</code> and adding a `;` at the end.</li>
+<li>Also known as the ‘paragraph sign’ in layman’s terms.</li>
 <li>And so on.</li>
 </ol>
 </td></tr></tfoot>
