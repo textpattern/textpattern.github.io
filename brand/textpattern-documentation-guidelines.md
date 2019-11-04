@@ -197,13 +197,17 @@ For example, ‘the really large code block’ or ‘only copy the lines between
 
 ### Typos and grammar gotchas
 
-As per the [Textpattern editorial style guide](https://docs.textpattern.com/brand/textpattern-editorial-style-guide) user documentation is written using British-English spelling and punctuation conventions, notably those adopted by the *Oxford English Dictionary* and the *Oxford Style Manual*.
+As per the [editorial style guide](https://docs.textpattern.com/brand/textpattern-editorial-style-guide) user documentation is written using British-English spelling and punctuation conventions, notably those adopted by the *Oxford English Dictionary* and the *Oxford Style Manual*.
 
 A few examples, as it may help with documentation are mentioned here:
 
-**Login vs. log in**. Use 'login' when it's a noun (e.g. ‘the login location’), but use 'log in' when it's a verb (e.g. ‘after you log in’ or ‘after logging in’). Likewise handling of ‘logout’ (noun) and ‘log out’ (verb).
+#### Login vs. log in
 
-**Panel vs. tab**. Do not use 'tab' (a depracated term) to refer to an administration-side panel, use 'panel’.[^’Tabs’ was the common reference used years ago when the administration side’s visual design looked like manilla file folders with tabs. The refence was obsolete and confusing when the new Hive design was adopted.]
+Use 'login' when it's a noun (e.g. ‘the login location’), but use 'log in' when it's a verb (e.g. ‘after you log in’ or ‘after logging in’). Likewise handling of ‘logout’ (noun) and ‘log out’ (verb).
+
+#### Panel vs. tab
+
+Do not use 'tab' (a depracated term) to refer to an administration-side panel, use 'panel’.[^tabs]
 
 The sole exception, of course, is in the case of [developer documentation](https://docs.textpattern.com/development/), where one might need to document, for plugin development reasons, the underlying code of the administration-pages. For example, this snippet from the Preferences panel involves a lot of use of `tab`, `tabs`, `tablist`, and `tabindex`:
 
@@ -216,6 +220,8 @@ The sole exception, of course, is in the case of [developer documentation](https
 </ul>
 </div>
 ```
+
+[^tabs]: ’Tabs’ was the common reference used years ago when the administration side’s visual design looked like manilla file folders with tabs. The refence was obsolete and confusing when the new Hive design was adopted.
 
 ### Brand usage
 
@@ -498,9 +504,51 @@ If you ever need more than six notes, then use `<ol class="nolistitem">`, for a 
 
 #### Notes in main text
 
-GitHub doesn’t use ‘footnotes’ as designed in regular Markdown (whatever that is anymore). Instead, it uses [Kramdown footnotes](https://kramdown.gettalong.org/syntax.html#footnotes) for any side details not immediately needed in the main text.[^kramnotes] Use a subsequent number for each new note on the page, even if they're not in the same section. ([Footnote examples](https://docs.textpattern.com/administration/security))
+Remember that notes, which are, technically speaking, a part of notes and bibliography referencing systems, are used to cite sources (e.g. the source of a quotation used), or enable authors to briefly expand on ideas, for example, without bloating the main text.
 
-[^kramnotes]: Although markup languages like Markdown, Textile, and so forth use ‘footnotes’ as the semantic name of their notes feature, we just call them notes,  like most editorial style guides do when describing footnotes and endnotes in general terms. In this case, ‘endnotes’ also works. Footnotes are a specific type of notes usage in print publishing only, where pages have a physical set dimension and word limit. In web publishing, documents have no such contraint and notes always appear at the very end of the document (excepting PDFs and ebooks that mimic print layouts). It is therefore more logical to call such markup features ‘endnotes’, because that’s what they really are when appearing at the end of the document. The _foot_ and _end_ prefixes simply indicate the placement of notes in published material.
+User documentation is unlikely to need much of either type of annotation, nor should you annotate text for the sake of it. Fewer notes are better in documentation because it’s less overhead for readers wanting to get something done. That said, notes as author expansion are likely more valuable in documentation than as citations. Authors may have experience and insight with various Textpattern situations, and can occasionally expand on topics as notes to help interested users with deeper learning.  
+
+As far as applying notes, GitHub does not use regular Markdown footnotes, so the syntax for notes that you may have learned at Daring Fireball, or by using iAWriter, whatever, will not work here. Instead, GitHub uses Kramdown footnotes, which are somewhat closer in method to how Textile footnotes work, so that’s a step in the right direction for we Textile lovers.
+
+Before continuing, recognize that all those markup languages, and the different flavours of them calling the functionality ‘footnotes’, is doing the web-publishing world a disservice.[^footnotes] We do not perpetuate the fallacy in this documentation. From hereon, we refer to them simply as *notes*, as all leading references like the *New Oxford Style Manual* and the *Chicago Manual of Style* do when speaking of notes and bibliography systems. Or, if you really must be specific, call them endnotes, because that is far more accurate in web documents.
+
+Now, you may or not be aware that Kramdown notes function the same way whether you write inline markers as numerals in sequence (i.e. `[^1]`, `[^2]`, `[^3]`, . . .) or as unique text-like tags, whatever you choose to use (e.g. `[^dope]`, `[^dongle]`, `[^dingo]`, . . .). Either way, the resulting notes list is an ordered list of arabic numerals.
+
+Thus, using text as inline markers is a better way to go, because:
+
+1. Text markers can be created relevant to the topic being annotated (i.e. they’re intuitive if used right), and you don’t  have to worry about what order their in.
+2. Numbered markers can be needlessly distracting if you’re trying to keep them in order, and confusing if you have many of them and they get out of order.
+
+Skip the madness and use text markers only. It’s easier.
+
+This document uses two notes. We’ll use them here as demonstration. The first note comes way up in the [**Panel vs. tab**](#panel-vs-tab) section. The second note comes in the fourth paragraph of this section. In each case you will see the inline marker as a superscript ‘1’ and ‘2’, respectively, at the end of sentences.
+
+Here are the actual markers used in the markup at those locations: `[^tabs]` and `[^footnotes]`. Appropriate, eh? Every time you use a marker, use text that’s intuitive to the topic of the sentence, or if you’re citing a source, use the source author’s name, for example.
+
+The notes themselves are added at the bottoms of the sections they appear in. Each not begins with the same inline marker used, followed by a colon, namely:
+
+```
+[^tabs]: ’Tabs’ was the common reference used years ago . . .
+```
+
+And:
+
+```
+[^footnotes]: Although markup languages like Markdown . . .
+```
+
+You could have notes spread out through the document like that. By putting them at the ends of the sections they belong to, it’s easy to find and edit them without jumping all over the place.
+
+The resulting notes list, however, appears at the bottom of the page (ergo, endnotes), because that’s how Kramdown notes are designed to function:
+
+> 1. ’Tabs’ was the common reference used years ago . . .
+> 2. Although markup languages like Markdown . . .
+
+See it down there at bottom?
+
+And that’s why we add a `## Notes` header in the [new page template](https://docs.textpattern.com/brand/textpattern-documentation-template), in case people want to use notes; they will automatically appear under that last section.
+
+[^footnotes]: Although markup languages like Markdown, Textile, and so forth use ‘footnotes’ as the semantic name of their notes feature, we just call them notes,  like most editorial style guides do when describing footnotes and endnotes in general terms. In this case, ‘endnotes’ also works. Footnotes are a specific type of notes usage in print publishing only, where pages have a physical set dimension and word limit. In web publishing, documents have no such contraint and notes always appear at the very end of the document (excepting PDFs and ebooks that mimic print layouts). It is therefore more logical to call such markup features ‘endnotes’, because that’s what they really are when appearing at the end of the document. The _foot_ and _end_ prefixes simply indicate the placement of notes in published material.
 
 ## Notes
 
