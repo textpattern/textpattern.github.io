@@ -14,11 +14,18 @@ For more insights about template authoring and editing, see the  [documentation 
 
 ## Template markup
 
-1. Create a new Markdown page (having file extension, *.md*).
-2. Save it in the appropriate folder location of the documentation tree using one of these file-name patterns accordingly:
-		* If it’s a page for a Textpattern tag, use this underscore pattern: *file_name_for_page.md*.
-		* For any other page, use this hyphenated pattern: *file-name-for-page.md*.
-3. Copy the following block of code (the minimum template markup) and paste it in your new blank page. The template elements are described after the block.
+To use the templage:
+
+1) Create a new Markdown page (having file extension, *.md*).
+
+2) Save it in the appropriate directory location of the documentation tree using one of these file-name patterns, as required:
+
+* If it’s a page for a Textpattern tag, use this underscore pattern: *file_name_for_page.md*.
+* For any other page in the documentation website, use this hyphenated pattern: *file-name-for-page.md*.
+
+3) Copy the following block of code (the minimum template markup) and paste it in your new blank page. Edit accordingly.
+
+The template elements are described after the block.
 
 ```
 ---
