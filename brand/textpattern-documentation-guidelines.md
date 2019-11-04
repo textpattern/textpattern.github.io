@@ -13,27 +13,27 @@ These guidelines concern the editorial upkeep of the [Textpattern CMS user docum
 **On this page:**
 
 * [Audience and scope of documentation](#audience-and-scope-of-documentation)
-* [Collaborative editing process](#collaborative-process)
-** [Scope and depth of material](#scope-and-depth-of-material)
-** [New documentation pages](#new-documentation-pages)
-*** [Using repository Issues](#using-repository-issues)
-*** [Determining new topics](#determining-new-topics)
-** [Revising existing pages](#revising-existing-pages)
-** [Cross-linking](#cross-linking)
+* [Collaborative editing process](#collaborative-editing-process)
+	** [Scope and depth of material](#scope-and-depth-of-material)
+	** [New documentation pages](#new-documentation-pages)
+		*** [Using repository Issues](#using-repository-issues)
+		*** [Determining new topics](#determining-new-topics)
+	** [Revising existing pages](#revising-existing-pages)
+	** [Cross-linking](#cross-linking)
 * [Writing and editing](#writing-and-editing)
-** [Author perspective](#author-perspective)
-** [Concise writing tips](#concise-writing-tips)
-** [Typos and grammar gotchas](#typos-and-grammar-gotchas)
-** [Brand usage](#brand-usage)
-*** [Administration panels context](#administration-panels-context)
-**** [Admin vs. administration vs. administrator](#admin-vs-administration-vs-administrator) 
-**** [Administration side vs. Administration-side](#administration-side-vs-administration-side)
-**** [Formatting interface strings](#formatting-interface-strings)
+	** [Author perspective](#author-perspective)
+	** [Concise writing tips](#concise-writing-tips)
+	** [Typos and grammar gotchas](#typos-and-grammar-gotchas)
+	** [Brand usage](#brand-usage)
+		*** [Administration panels context](#administration-panels-context)
+			**** [Admin vs. administration vs. administrator](#admin-vs-administration-vs-administrator) 
+			**** [Administration side vs. Administration-side](#administration-side-vs-administration-side)
+			**** [Formatting interface strings](#formatting-interface-strings)
 * [Markup](#markup)
-** [Tables (HTML only](#tables-html-only)
-** [Using notes](#using-notes)
-*** [Notes in tables](#notes-in-tables)
-*** [Notes in main text](#notes-in-main-text)
+	** [Tables (HTML only](#tables-html-only)
+	** [Using notes](#using-notes)
+		*** [Notes in tables](#notes-in-tables)
+		*** [Notes in main text](#notes-in-main-text)
 
 ## Audience and scope of documentation
 
@@ -263,12 +263,12 @@ Textpattern documentation tries to find a clear balance with seven formatting ru
 		</tr>
 		<tr>
 			<th scope="row">Multiple-words, no terminal punctuation</th>
-			<td>Bold (e.g. ‘the **Date format** setting’)</td>
+			<td>Bold (e.g. ‘the <b>Date format</b> setting’)</td>
 		</tr>
 	</tbody>
 			<tr>
 			<th scope="row">Full-sentence strings with terminal punctuation</th>
-			<td>Italic (e.g. ‘the *Prevent widowed words in article titles?* setting’)</td>
+			<td>Italic (e.g. ‘the <i>Prevent widowed words in article titles?</i> setting’)</td>
 		</tr>
 		<tr>
 			<th scope="row">Form control options</th>
@@ -276,15 +276,15 @@ Textpattern documentation tries to find a clear balance with seven formatting ru
 		</tr>
 		<tr>
 			<th scope="row">Textpattern Form names</th>
-			<td>***Bold-talic*** (e.g. ***default***, ***files***, ***comments_display***).</td>
+			<td>Bold-italic (e.g. <b><i>default</i></b>, <b><i>files</i></b>, <b><i>comments_display</i></b>).</td>
 		</tr>
 			<tr>
-			<th scope="row”>Coloured system feedback messages (green, yellow, red)</th>
-			<td>Format as messages appear, and use respective class selector (i.e. `class=“”`, `class=“”`, or `class=“”`).</td>
+			<th scope="row">Coloured system feedback messages (green, yellow, red)</th>
+			<td>Format as messages appear, and use respective class selector (i.e. `class=""`, `class=""`, or `class=""`).</td>
 		</tr>
 		<tr>
 			<th scope="row">URLs, file paths, and file names</th>
-			<td>*Italic*, and make sure file extensions are included (e.g. *.htaccess*, *index.php*, *domain.tld/textpattern*, etc.)</td>
+			<td>Italic, and make sure file extensions are included (e.g. <i>.htaccess</i>, <i>index.php</i>, <i>domain.tld/textpattern</i>, etc.)</td>
 		</tr>
 </table></div>
 
@@ -356,6 +356,13 @@ When using tables, please don’t use Markdown. Copy/paste the following markup.
 			<td>data</td>
 		</tr>
 	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2">
+			  text
+			</td>
+		</tr>
+	</tfoot>
 </table></div>
 ```
 
@@ -384,32 +391,32 @@ Textpattern documentation provides CSS styles to make reference mark lists in a 
 		<tr>
 			<th scope="row">Asterisk</th>
 			<td>*</td>
-			<td>`&#x002a;`</td>
+			<td><code>&#x002a;</code></td>
 		</tr>
 		<tr>
 			<th scope="row">Dagger</th>
 			<td>†</td>
-			<td>`&#x2020;`</td>
+			<td><code>&#x2020;</code></td>
 		</tr>
 		<tr>
 			<th scope="row">Double Dagger</th>
 			<td>‡</td>
-			<td>`&#x2021;`</td>
+			<td><code>&#x2021;</code></td>
 		</tr>
 		<tr>
 			<th scope="row">Section Sign</th>
 			<td>§</td>
-			<td>`&#x00a7;`</td>
+			<td><code>&#x00a7;</code></td>
 		</tr>
 		<tr>
 			<th scope="row">Pilcrow&#x2020;</th>
 			<td>¶</td>
-			<td>`&#x00b6;`</td>
+			<td><code>&#x00b6;</code></td>
 		</tr>
 		<tr>
 			<th scope="row">Double Vertical Line</th>
 			<td>‖</td>
-			<td>`&#x2016;`&#x2021;</td>
+			<td><code>&#x2016;</code>&#x2021;</td>
 		</tr>
 	</tbody>
 	<tfoot>
@@ -456,7 +463,7 @@ If you ever need more than six notes, then use `<ol class="nolistitem">`, for a 
 
 #### Notes in main text
 
-(To be added.)
+(To revise.)
 
 Use [kramdown notes](https://kramdown.gettalong.org/syntax.html#footnotes) for any side details not immediately needed in the main text.[^1] Use a subsequent number for each new note on the page, even if they're not in the same section. ([Footnote examples](https://docs.textpattern.com/administration/security))
 
