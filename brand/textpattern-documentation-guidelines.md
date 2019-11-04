@@ -143,7 +143,9 @@ Finally, cross-links between documentation pages should also use absolute URLs, 
 
 But anchor links within a given page can be relative URLs, for example:
 
-> . . . the `[Writing and editing](#writing-and-editing)` section.
+> (See `[**Writing and editing**](#writing-and-editing)` section.)
+
+Note it’s okay to make in-page anchor links bold, which helps distinguish them from external links.
 
 ## Writing and editing
 

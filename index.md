@@ -8,7 +8,7 @@ search_omit: true
 
 # Textpattern user documentation
 
-Welcome to the new user documentation, which replaces the old wiki at textpattern.net. This is a construction zone for a while, but any viewable page is ready for use, albeit subject to further editing. Occasional progress updates and feedback requests will be made in the [sites forum](https://forum.textpattern.com/viewforum.php?id=60).
+The scope of this documentation is primarily on *core* functionality (i.e. how things work out-of-the-box). A few editors help structure and revise documentation, but the overall effort greatly relies on the community bringing problems to light. Editing contributions are welcome and appreciated. See the documenation repository’s [*ReadMe.md*](https://github.com/textpattern/textpattern.github.io/blob/master/README.md) file for everything you need to get up to speed on.
 
 {::options parse_block_html="true" /}
 
