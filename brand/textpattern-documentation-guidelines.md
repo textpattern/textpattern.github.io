@@ -252,32 +252,32 @@ Textpattern documentation tries to find a clear balance with seven formatting ru
 **Formatting rules:** 
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
-	<thead><tr>
-		<th scope="col">String type</th>
-		<th scope="col">Formatting</th>
-	</tr></thead>
-	<tbody>
-		<tr>
-			<th scope="row">Capitalized single words</th>
-			<td>Normal (e.g. ‘the Write panel’)</td>
-		</tr>
-		<tr>
-			<th scope="row">Multiple-words, no terminal punctuation</th>
-			<td>Bold (e.g. ‘the <b>Date format</b> setting’)</td>
-		</tr>
-	</tbody>
-			<tr>
-			<th scope="row">Full-sentence strings with terminal punctuation</th>
-			<td>Italic (e.g. ‘the <i>Prevent widowed words in article titles?</i> setting’)</td>
-		</tr>
-		<tr>
-			<th scope="row">Form control options</th>
-			<td>Single quote marks (e.g. ‘select ‘Yes’ from the drop-down options’).</td>
-		</tr>
-		<tr>
-			<th scope="row">Textpattern Form names</th>
-			<td>Bold-italic (e.g. <b><i>default</i></b>, <b><i>files</i></b>, <b><i>comments_display</i></b>).</td>
-		</tr>
+<thead><tr>
+<th scope="col">String type</th>
+<th scope="col">Formatting</th>
+</tr></thead>
+<tbody>
+<tr>
+<th scope="row">Capitalized single words</th>
+<td>Normal (e.g. ‘the Write panel’)</td>
+</tr>
+<tr>
+<th scope="row">Multiple-words, no terminal punctuation</th>
+<td>Bold (e.g. ‘the <b>Date format</b> setting’)</td>
+</tr>
+<tr>
+<th scope="row">Full-sentence strings with terminal punctuation</th>
+<td>Italic (e.g. ‘the <i>Prevent widowed words in article titles?</i> setting’)</td>
+</tr>
+<tr>
+<th scope="row">Form control options</th>
+<td>Single quote marks (e.g. ‘select ‘Yes’ from the drop-down options’).</td>
+</tr>
+<tr>
+<th scope="row">Textpattern Form names</th>
+<td>Bold-italic (e.g. <b><i>default</i></b>, <b><i>files</i></b>, <b><i>comments_display</i></b>).</td>
+</tr>
+</tbody>
 </table></div>
 
 Two other possible interface strings include system messages and file paths/names.
@@ -286,7 +286,7 @@ System messages will appear to users as feedback dialogue in the Diagnostics pan
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
 <thead><tr>
-<th scope="col”>Message type</th>
+<th scope="col">Message type</th>
 <th scope="col">Colour</th>
 <th scope="col">Markup</th>
 </tr></thead>
@@ -366,33 +366,34 @@ The final rule concerns strings that don’t follow the sentence-case convention
 
 Use tables sparingly (they can be problematic to read on small screen devices), and only when the content is definitely tabular data. If the content can semantically be called a definition list, then structure the material as a definition list instead.
 
-When using tables, please don’t use Markdown. Copy/paste the following markup. Ensure the surrounding `div` tags are included:
+When using tables, don’t use Markdown. Copy/paste the following markup, and ensure the surrounding `div` tags are included:
 
 ``` html
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
-	<thead><tr>
-		<th scope="col">Header</th>
-		<th scope="col">Header</th>
-	</tr></thead>
-	<tbody>
-		<tr>
-			<th scope="row">data</th>
-			<td>data</td>
-		</tr>
-		<tr>
-			<th scope="row">data</th>
-			<td>data</td>
-		</tr>
-	</tbody>
-	<tfoot>
-		<tr>
-			<td colspan="2">
-			  text
-			</td>
-		</tr>
-	</tfoot>
+<thead><tr>
+<th scope="col">Header</th>
+<th scope="col">Header</th>
+</tr></thead>
+<tbody>
+<tr>
+<th scope="row">data</th>
+<td>data</td>
+</tr>
+<tr>
+<th scope="row">data</th>
+<td>data</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan="2">
+<ol>
+<li>note item</li>
+<li>note item</li>
+</ol>
+</td></tr></tfoot>
 </table></div>
 ```
+
+If you don’t use any [notes in your tables](#notes-in-tables), remove the entire `<tfoot>…</tfoot>` region of the table.
 
 ### Using notes
 
@@ -408,56 +409,52 @@ Textpattern documentation provides CSS styles to make reference mark lists in a 
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
 <table>
-	<thead>
-	 <tr>
-		<th scope="col">Name</th>
-		<th scope="col">Mark&#x002a;</th>
-		<th scope="col">Entity</th>
-	 </tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th scope="row">Asterisk</th>
-			<td>*</td>
-			<td><code>&#x002a;</code></td>
-		</tr>
-		<tr>
-			<th scope="row">Dagger</th>
-			<td>†</td>
-			<td><code>&#x2020;</code></td>
-		</tr>
-		<tr>
-			<th scope="row">Double Dagger</th>
-			<td>‡</td>
-			<td><code>&#x2021;</code></td>
-		</tr>
-		<tr>
-			<th scope="row">Section Sign</th>
-			<td>§</td>
-			<td><code>&#x00a7;</code></td>
-		</tr>
-		<tr>
-			<th scope="row">Pilcrow&#x2020;</th>
-			<td>¶</td>
-			<td><code>&#x00b6;</code></td>
-		</tr>
-		<tr>
-			<th scope="row">Double Vertical Line</th>
-			<td>‖</td>
-			<td><code>&#x2016;</code>&#x2021;</td>
-		</tr>
-	</tbody>
-	<tfoot>
-		<tr>
-			<td colspan="3">
-			  <ol>
-				  <li>Notes can be used to clarify headers, or indicate units.</li>
-					<li>Can elaborate data items (e.g. also known as the ‘paragraph sign’).</li>
-					<li>And so on.</li>
-				</ol>
-			</td>
-		</tr>
-	</tfoot>
+<thead>
+<tr>
+<th scope="col">Name</th>
+<th scope="col">Mark&#x002a;</th>
+<th scope="col">Entity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Asterisk</th>
+<td>*</td>
+<td><code>&#x002a;</code></td>
+</tr>
+<tr>
+<th scope="row">Dagger</th>
+<td>†</td>
+<td><code>&#x2020;</code></td>
+</tr>
+<tr>
+<th scope="row">Double Dagger</th>
+<td>‡</td>
+<td><code>&#x2021;</code></td>
+</tr>
+<tr>
+<th scope="row">Section Sign</th>
+<td>§</td>
+<td><code>&#x00a7;</code></td>
+</tr>
+<tr>
+<th scope="row">Pilcrow&#x2020;</th>
+<td>¶</td>
+<td><code>&#x00b6;</code></td>
+</tr>
+<tr>
+<th scope="row">Double Vertical Line</th>
+<td>‖</td>
+<td><code>&#x2016;</code>&#x2021;</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan="3">
+<ol>
+<li>Notes can be used to clarify headers, or indicate units.</li>
+<li>Can elaborate data items (e.g. also known as the ‘paragraph sign’).</li>
+<li>And so on.</li>
+</ol>
+</td></tr></tfoot>
 </table>
 </div>
 
