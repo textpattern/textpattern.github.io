@@ -474,18 +474,19 @@ Textpattern documentation provides CSS styles to make reference mark lists in a 
 </table>
 </div>
 
-The author must add the correct entity values on the table headers or data items they want to annotate, for example:
+The author must add the correct entity values on the table headers or data items that they want to annotate, for example:
 
 ```
-<th scope="col">Mark&#x002a;</th>
+<th scope="col">Entity&#x002a;</th>
 ```
 
 Then simply add the corresponding notes in the appropriate `li` in the tables footer, for example:
 
 ```
 <ol>
-	<li>Notes can be used to clarify headers, or indicate units.</li>
-	. . .
+. . .
+<li>Also known as the ‘paragraph sign’ in layman’s terms.</li>
+. . .
 </ol>
 ```
 
