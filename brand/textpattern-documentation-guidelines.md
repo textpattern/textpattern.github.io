@@ -32,7 +32,7 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
          * [Administration side vs. Administration-side](#administration-side-vs-administration-side)
          * [Formatting interface strings](#formatting-interface-strings)
 * [Markup](#markup)
-  * [Tables (HTML only](#tables-html-only)
+  * [Tables (HTML only)](#tables-html-only)
   * [Using notes](#using-notes)
      * [Notes in tables](#notes-in-tables)
      * [Notes in main text](#notes-in-main-text)
@@ -487,24 +487,20 @@ Documentation CSS will provide the appropriate reference mark as the list item�
 
 If you ever need more than six notes, then use `<ol class="nolistitem">`, for a list without any list style at all, then add the reference marks manually:
 
-```
+```html
 <ol class="nolistitem">
-	<li>. . .</li>
-	<li>&#x2016; . . .</li>
-	<li>&#x002a;&#x002a; . . .</li>
-	<li>. . .</li>
+<li>. . .</li>
+<li>&#x2016; . . .</li>
+<li>&#x002a;&#x002a; . . .</li>
+<li>. . .</li>
 </ol>
 ``` 
 
 #### Notes in main text
 
-(To revise.)
+GitHub doesn’t use ‘footnotes’ as designed in regular Markdown (whatever that is anymore). Instead, it uses [Kramdown footnotes](https://kramdown.gettalong.org/syntax.html#footnotes) for any side details not immediately needed in the main text.[^kramnotes] Use a subsequent number for each new note on the page, even if they're not in the same section. ([Footnote examples](https://docs.textpattern.com/administration/security))
 
-Use [kramdown notes](https://kramdown.gettalong.org/syntax.html#footnotes) for any side details not immediately needed in the main text.[^1] Use a subsequent number for each new note on the page, even if they're not in the same section. ([Footnote examples](https://docs.textpattern.com/administration/security))
-
-Although markup languages like Markdown, Textile, and so forth use ‘footnotes’ as the semantic name of their notes feature, we just call them notes,  like most editorial style guides do when describing footnotes and endnotes in general terms. In this case, ‘endnotes’ also works. Footnotes are a specific type of notes usage in print publishing only, where pages have a physical set dimension and word limit. In web publishing, documents have no such contraint and notes always appear at the very end of the document (excepting PDFs and ebooks that mimic print layouts). It is therefore more logical to call such markup features ‘endnotes’, because that’s what they really are when appearing at the end of the document. The _foot_ and _end_ prefixes simply indicate the placement of notes in published material.
-
-[^1]: Tangential elaboration or parenthetical notation makes documentation harder to wade through.
+[^kramnotes]: Although markup languages like Markdown, Textile, and so forth use ‘footnotes’ as the semantic name of their notes feature, we just call them notes,  like most editorial style guides do when describing footnotes and endnotes in general terms. In this case, ‘endnotes’ also works. Footnotes are a specific type of notes usage in print publishing only, where pages have a physical set dimension and word limit. In web publishing, documents have no such contraint and notes always appear at the very end of the document (excepting PDFs and ebooks that mimic print layouts). It is therefore more logical to call such markup features ‘endnotes’, because that’s what they really are when appearing at the end of the document. The _foot_ and _end_ prefixes simply indicate the placement of notes in published material.
 
 ## Notes
 
