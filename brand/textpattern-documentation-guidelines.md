@@ -8,13 +8,15 @@ description: Guidelines for contributions to Textpattern CMS user documentation.
 
 # Textpattern documentation guidelines
 
-These guidelines concern the editorial upkeep of the [Textpattern CMS user documentation](https://docs.textpattern.com/). Therefore, they specifically concern documentation editors, authors, and all interested contributors. These guidelines are an extension of Textpattern’s baseline [editorial style guide](https://docs.textpattern.com/brand/textpattern-editorial-style-guide). Be sure to read and use that one too if you write or edit Textpattern documentation.
+These guidelines, an extension of Textpattern’s [editorial style guide](https://docs.textpattern.com/brand/textpattern-editorial-guide), are specifically for the editorial upkeep of the [Textpattern CMS user documentation](https://docs.textpattern.com/). Documentation editors, authors, and all interested contributors will want to read up here.
 
 **On this page:**
 
-* [Audience and scope of documentation](#audience-and-scope-of-documentation)
+* [Target audience](#target-audience)
+* [Scope and depth of material](#scope-and-depth-of-material)
+	* [Scope of documentation](#scope-of-documentation)
+	* [Depth of page content](#depth-of-page-content)
 * [Collaborative editing process](#collaborative-editing-process)
-  * [Scope and depth of material](#scope-and-depth-of-material)
   * [New documentation pages](#new-documentation-pages)
      * [Using repository Issues](#using-repository-issues)
      * [Determining new topics](#determining-new-topics)
@@ -35,41 +37,27 @@ These guidelines concern the editorial upkeep of the [Textpattern CMS user docum
      * [Notes in tables](#notes-in-tables)
      * [Notes in main text](#notes-in-main-text)
 
-## Audience and scope of documentation
+## Target audience
 
-The target audience of user documentation is primarily new users of [Textpattern CMS](https:/textpattern.com), and notably _administrators_, since installing Textpattern requires having that role automatically.
+The target audience of user documentation is primarily new users of [Textpattern CMS](https:/textpattern.com), notably _administrators_, since that role is automatically adopted when installing Textpattern software.
 
-The scope of the documentation is primarily on the software’s core functionality (i.e. the out-of-the-box features and capabilities).
-
-That is _primarily_, not entirely, because the documentation site also harbours [development documentation](https://docs.textpattern.com/development/) for plugin authors, [theme development](https://docs.textpattern.com/themes) documentation, and Textpattern [brand identity information](https://docs.textpattern.com/brand/), in which these guidelines and other materials fall for community collaboration.
-
-## Collaborative editing process
-
-Anyone can help with Textpattern documentation. But it’s not a free-for-all wiki. We maintain a tight set of documentation pages by topic need and editorial consideration. This needs-based approach is not meant to be selective or to controll what gets produced; rather, it makes the best documentation when quality is valued but time and help resources are limited.
-
-History has shown there’s little need for a lot of user documentation, though it’s still a matter of pinpointing what hits the mark. History has also shown that few people want to write documentation anyway. Since demand for documentation is low, the dirth of fly-by-night authors is balanced by a committed few editors, including core developers as technical reviewers. This fellowship of expositionists is sufficient for upkeeping the resource, if not always timely.
-
-The good editors are volunteers like anyone else; busy with thier own lives labours. They’re not making ends meet by proofing the documentation suite on an endless cycle. They are, rather, more like volunteer firefighters who dutifully arrive with pale and water when a flame is spied. Happy to set things safe and right when the community sounds the alarm. 
-
-And there it is, editors rely on the community to help bring documentation inaccuracies and deficiencies to attention as they are found. The more often this happens, the better the state of the documentation at any given time. The process for addressing issues is revealed through the following sections.
-
-### Scope and depth of material
+## Scope and depth of material
 
 The scope and depth of user documentation should be what is needed and not more.
 
-#### Scope
+### Scope of documentation
 
-Once upon a time, the Textpattern website had over a hundred FAQs. Ludicrous. At that point, _frequently asked questions_ had long become a misnomer. The material was as much ROT (redundant, outdated, trivial) as good, and the good was buried. Hidden and non-discoverable. The story ended on a positive note, however. Core developers worked with community editors to audit the sea of FAQs along with community documentation. Now there are only four [FAQs](https://docs.textpattern.com/faqs/) (with room for adjustment), and a well-groomed documentation suite. Just as it should be.
+The scope of the documentation is primarily on the software’s core functionality, the out-of-the-box features and capabilities.
 
-That experience left collaborators with some takeaways.
+To a lessere degree, and needing less focus, the documentation also harbours [plugin development resources](https://docs.textpattern.com/development/) and Textpattern [brand identity and collaboration information](https://docs.textpattern.com/brand/), including these guidelines.
 
-First, it’s better to add new pages when needed than to cover every possible topic in advance without knowing it’s warranted. That’s an important point to keep in mind through editorial upkeep.
+With regard to the primary user documentation, it’s better to add new pages when needed than to cover every possible topic in advance without knowing it’s warranted.
 
-Also, if a page already exists, it should be kept current with the latest software release, as well reduced and simplified anywhere it can be.
+If a page already exists, it should be kept current with the latest software release, as well reduced and simplified anywhere it can be.
 
 Else, a page can be removed, upon editor review, if the effort to revise it is not worth the return it provides by doing so. More likely, any material of value on such a page can be extracted and edited into another relevant location.
 
-#### Depth
+### Depth of page content
 
 A given page should only be as explanatory as necessary. Thorough, but not belabouring every possible granule of consideration. (See [**Revising existing pages**](#revising-existing-pages).)
 
@@ -81,7 +69,17 @@ Before writing or revising documentation on the administration-side functionalit
 
 When fine-grain descriptions are warranted on a page, but the page starts feeling overly dense, or you are inclined to use a lot of parenthetical notes in sentences, consider [using notes](#using-notes) instead.
 
-No matter what, main text or notes, ensure you’re not using more words than necessary to convey a useful fact. (See [**Concise writing tips**](#concise-writing-tips). 
+No matter what, main text or notes, ensure you’re not using more words than necessary to convey a useful fact. (See [**Concise writing tips**](#concise-writing-tips).
+
+## Collaborative editing process
+
+Anyone can help with Textpattern documentation. We maintain a tight set of documentation pages by topic need and editorial consideration. The needs-based approach is not meant to be overprotective of the information; rather, it makes the best documentation when quality is important but time and help resources are limited.
+
+History has shown there’s little need for a lot of user documentation, anyway, though it’s still a matter of pinpointing what hits the mark. History has also shown that few people want to write documentation. Since demand for documentation is low, the dirth of fly-by-night authors is balanced by a committed few editors, including core developers as technical reviewers. This fellowship of expositionists is sufficient for upkeeping the resource, if not always timely.
+
+The good editors are volunteers like anyone else; busy with their own lives and labours. They are much like volunteer firefighters who dutifully arrive with pale and water when a flame is spied. Happy to set things safe and right when the community sounds the alarm. 
+
+And there it is, editors rely on the community to help bring documentation inaccuracies and deficiencies to attention as they are found. The more often this happens, the better the state of the documentation at any given time. The process for addressing issues is revealed through the following sections. 
 
 ### New documentation pages
 
@@ -133,9 +131,19 @@ Again, documentation is a community effort, and even editors must work together 
 
 ### Cross-linking
 
-(To be added.)
+Cross-linking between documentation pages and within a given page (i.e. anchor links) is important to link related topics in context. Try to find logical opportunities for cross-linking topics across pages.
 
-All links within the documentation should be full URLs, for example http://docs.textpattern.com/tags/article-custom. This will allow for easier reuse of documentation text within other projects (such as an e-book or pophelp files).## Contributing
+However, don’t get overzealous about it. Documentation that is too full of links is distracting.
+
+Also, it’s best to refrain from cross-linking until it’s certain the concerned pages are pretty well past the _frequent revisions_ stage of editing, otherwise you likely have to correct a lot of broken cross links.  
+
+Finally, cross-links between documentation pages should also use absolute URLs, for example:
+
+> . . . the `[article_custom](https://docs.textpattern.com/tags/article_custom)` tag.
+
+But anchor links within a given page can be relative URLs, for example:
+
+> . . . the `[Writing and editing](#writing-and-editing)` section.
 
 ## Writing and editing
 
