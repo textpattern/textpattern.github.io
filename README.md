@@ -16,14 +16,14 @@ Proceed by reviewing — or doing, depending on the item — the following, pres
 If you have a GitHub account and would like to contribute some authoring or editing, but would rather not fork or clone around, you can do the following:
 
 1. Log into GitHub and return to this respository.
-3. Go to the page you would like to revise in the [document tree](https://github.com/textpattern/textpattern.github.io). Pages are within sub-directories. Likely locations are [*/administration*](https://github.com/textpattern/textpattern.github.io/tree/master/administration), [*/development*](https://github.com/textpattern/textpattern.github.io/tree/master/development), [*/faqs*](https://github.com/textpattern/textpattern.github.io/tree/master/faqs), [*/tags*](https://github.com/textpattern/textpattern.github.io/tree/master/tags), or [*/themes*](https://github.com/textpattern/textpattern.github.io/tree/master/themes). (The [*/brand*](https://github.com/textpattern/textpattern.github.io/tree/master/brand) directory is for editors only.)
-4. Click the pencil icon at top-right of the document (the hover text will read, ‘Edit this file’). You’ll then be in document edit mode.
-5. Make your revisions using Markdown, except where HTML is required (e.g. [working with tables](https://docs.textpattern.com/brand/textpattern-documentation-guidelines#tables-html-only)).
-6. Hit the **Commit changes** button when finished.
+2. Go to the page you would like to revise in the [document tree](https://github.com/textpattern/textpattern.github.io). Pages are within sub-directories. Likely locations are [*/administration*](https://github.com/textpattern/textpattern.github.io/tree/master/administration), [*/development*](https://github.com/textpattern/textpattern.github.io/tree/master/development), [*/faqs*](https://github.com/textpattern/textpattern.github.io/tree/master/faqs), [*/tags*](https://github.com/textpattern/textpattern.github.io/tree/master/tags), or [*/themes*](https://github.com/textpattern/textpattern.github.io/tree/master/themes). (The [*/brand*](https://github.com/textpattern/textpattern.github.io/tree/master/brand) directory is for editors only.)
+3. Click the pencil icon at top-right of the document (the hover text will read, ‘Edit this file’). You’ll then be in document edit mode.
+4. Make your revisions using Markdown, except where HTML is required (e.g. [working with tables](https://docs.textpattern.com/brand/textpattern-documentation-guidelines#tables-html-only)).
+5. Hit the **Commit changes** button when finished.
 
-Step six will initiate a pull request. A member of the documentation team will then review your change request and act accordingly.
+Step five will initiate a pull request. A member of the documentation team will then review your change request and act accordingly.
 
-**However…**
+**One more thing…**
 
 Decisions around the maintenance of documentation rely heavily on use of [Issues](https://github.com/textpattern/textpattern.github.io/issues), as described in the [documentation guidelines](https://docs.textpattern.com/brand/textpattern-documentation-guidelines).
 
