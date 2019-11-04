@@ -466,7 +466,7 @@ Textpattern documentation provides CSS styles to make reference mark lists in a 
 </tbody>
 <tfoot><tr><td colspan="3">
 <ol>
-<li>Unicode values for character glyphs. These can be used as ASCII characters by prefixing values with <code>&#x</code> and adding a `;` at the end.</li>
+<li>Unicode values for character glyphs. These can be used as ASCII characters by prefixing values with <code>&#x</code> and adding a <code>;</code> at the end.</li>
 <li>Also known as the ‘paragraph sign’ in layman’s terms.</li>
 <li>And so on.</li>
 </ol>
