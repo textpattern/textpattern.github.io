@@ -175,10 +175,10 @@ character_sets_dir
 : {n} being the number of custom fields; value also indicates name of all counted fields.
 
 PHP extensions
-: List of extension names/versions your web host has enabled.</td>
+: List of extension names/versions your web host has enabled.
 
 pretext_data
-: Value is a piece of code; useful for developers to evaluate.</td>
+: Value is a piece of code; useful for developers to evaluate.
 
 {/textpattern files, not shown here}
 : List of Textpattern configuration files from the `/textpattern` directory; indicates file path, revision number, and MD5 Checksum hash number.
