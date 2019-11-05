@@ -29,8 +29,8 @@ These resources are extensions of the baseline resources. Use these in addition 
 ### User documentation
  
 * [User documentation guidelines](https://docs.textpattern.com/brand/textpattern-documentation-guidelines)
-	* [Documentation collaboration](https://docs.textpattern.com/brand/user-documentation-collaboration)
-	* [Documentation page template](https://docs.textpattern.com/brand/textpattern-documentation-template)
+  * [Documentation collaboration](https://docs.textpattern.com/brand/user-documentation-collaboration)
+  * [Documentation page template](https://docs.textpattern.com/brand/textpattern-documentation-template)
 * [Plugin user-help guidelines](https://docs.textpattern.com/development/plugin-user-help-guidelines)
 
 ### Plugins
