@@ -362,19 +362,47 @@ The final rule concerns strings that don’t follow the sentence-case convention
 
 Another type of interface string that needs documented are system alerts. Alerts appear to users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages (e.g. when saving changings).
 
-Alerts can be one of four types: success, information, warning, or error. When documenting system alerts, format them as they appear in the interface. Do this buy using the appropriate class selectors in Kramdown notation (see [**Selectors and attributes](#selectors-and-attributes)), as shown in Table 2. 
+Alerts can be one of four types: success, information, warning, or error. Style alerts as they appear in the interface buy using the appropriate class attributes. (You will need to add the selectors via Kramdown syntax. See [**Selectors and attributes**](#selectors-and-attributes).)
+
+Success alerts
+: `class=".alert-block .success"`
+: Example:
+
+Message string.
+{: .alert-block .success}
+
+Information alerts
+: `class=".alert-block .information"`
+: Example:
+
+Message string.
+{: .alert-block .information}
+
+Warning alerts
+: `class=".alert-block .warning"`
+: Example:
+
+Message string.
+{: .alert-block .warning}
+
+Error alerts
+: `class=".alert-block .error"`
+: Example:
+
+Message string.
+{: .alert-block .error} 
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
 <caption>Table 2. Alert message strings</caption>
 <thead><tr>
 <th scope="col">Alert type</th>
-<th scope="col">Kramdown</th>
+<th scope="col">Class attributes</th>
 <th scope="col">Example</th>
 </tr></thead>
 <tbody>
 <tr>
 <th scope="row">Success</th>
-<td><code>{: .alert-block .success}</td>
+<td><code>{: .alert-block .success}</code></td>
 <td>Message string. {: .alert-block .success}</td>
 </tr>
 <tr>
