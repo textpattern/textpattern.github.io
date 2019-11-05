@@ -43,9 +43,9 @@ A single paragraph to overview the page's subject goes here. It can be multiple 
 **On this page:**
 
 * [First section header](#first-section-header)
-** [Subsection 1 header](#subsection-1-header)
-** [Subsection 2 header](#subsection-2-header)
-** [Etc](#etc)
+  * [Subsection 1 header](#subsection-1-header)
+  * [Subsection 2 header](#subsection-2-header)
+  * [Etc](#etc)
 * [Second section header](#second-section-header)
 * [Third section header](#third-section-header)
 * [Etc](#etc)
@@ -72,7 +72,7 @@ Normal text.
 
 ## Etc
 
-## Notes
+## Endnotes
 ```
 
  
@@ -113,7 +113,7 @@ category: brand
 published: true
 title: Textpattern documentation guidelines
 description: Guidelines for contributions to Textpattern CMS user documentation.
---- 
+---
 ```
 
 ### Title of page
@@ -144,11 +144,30 @@ The contents list begins with a consistent lead line
 
 The lead line is followed by the contents list itself. For the time being, the list must be manually created.
 
-A contents list item is a Markdown link that corresponds with a given section header in your document. The headers must be unique in all cases. Link paths must begin with an octothorpe (`#`), followed by the header text, all lower-case and hyphenated.
+You can create nested lists to represent heading levels, but ensure the nested lines are aligned correctly or they may not render properly. Basically, the list bullet of a given nested item must begin under the text of the parent list item (i.e. two additional spaces right from the parent bullet), for example:
 
-Customize the default list markup as needed.
+```
+* A second-level heading
+  * A third-level heading
+  * Etc
+    * A fourth-level heading
+    * Etc
+* Another second-level heading
+``` 
 
-Avoid using `h4`-`h6` header levels, if possible, and especially anything after `h4`. Deep structuring means documentation is becoming too complex on the page.
+A contents list item is a Markdown link that corresponds with a given section header in your document:
+
+```
+[Heading text](#heading-text)
+```
+
+The headers must be unique in all cases. Link paths must begin with an octothorpe (`#`), followed by the header text, all lower-case and hyphenated.
+
+Adjust the default contents list as needed.
+
+Avoid using `h5` and `h6` header levels, if possible, in the contents list. You may use them in the document body, but consider if they are really needed in the contents too. Sometimes it’s enough to simply point to the parent section and let readers go from there.
+
+And remember, deep structuring of any documentation could mean documentation is getting too complex.  
 
 ### Section headers
 
@@ -172,12 +191,12 @@ Every section of your page, regardless of header-level, must be followed by at l
 
 Also, do not use a deeper heading level if you only need one such level under a higher heading. Figure out a different way to write the text. Only use lower-heading levels when you have two or more instances of them under a given parent heading. 
 
-### Notes
+### Endnotes
 
 At the very bottom of the template is a heading for notes:
 
 ```
-## Notes
+## Endnotes
 ```
 
 Delete this line if you don’t use any endnotes in your documentation. 
