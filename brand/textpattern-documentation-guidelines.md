@@ -34,7 +34,7 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
 * [Markup](#markup)
 	* [Selectors and attributes](#selectors-and-attributes)
 	* [Definition lists](#definition-lists)
-  * [Tables)](#tables)
+  * [Tables](#tables)
   * [Notes](#notes)
      * [Notes in tables](#notes-in-tables)
      * [Notes in main text](#notes-in-main-text)
