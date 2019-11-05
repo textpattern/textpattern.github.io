@@ -366,7 +366,7 @@ Alerts appear to users as feedback dialogue in the Diagnostics panel, or in othe
 
 Use Kramdown’s ‘inline attributes list’ syntax (see [**Selectors and attributes**](#selectors-and-attributes)) to style alerts as they appear in the interface. All alert blocks uses a common class, `.alert-block`, plus a unique one, as demonstrated in these hypothetical examples.
 
-Success alerts:
+**Success alerts:**
 
 ```
 Success alert.
@@ -378,7 +378,7 @@ Example:
 You did good.
 {: .alert-block .success}
 
-Information alerts:
+**Information alerts:**
 
 ```
 Information alert.
@@ -390,7 +390,7 @@ Example:
 New version available.
 {: .alert-block .information}
 
-Warning alerts:
+**Warning alerts:**
 
 ```
 Warning alert.
@@ -402,7 +402,7 @@ Example:
 Uh, that’s a cliff, dude…
 {: .alert-block .warning}
 
-Error alerts:
+**Error alerts:**
 
 ```
 Error alert.
@@ -412,75 +412,38 @@ Error alert.
 Example:
 
 OMFG, _no!_
-{: .alert-block .error} 
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
-<caption>Table 2. Alert message strings</caption>
-<thead><tr>
-<th scope="col">Alert type</th>
-<th scope="col">Class attributes</th>
-<th scope="col">Example</th>
-</tr></thead>
-<tbody>
-<tr>
-<th scope="row">Success</th>
-<td><code>Success message. {: .alert-block .success}</code></td>
-<td>
-You did good.
-{: .alert-block .success}
-</td>
-</tr>
-<tr>
-<th scope="row">Information</th>
-<td><code>Information message. {: .alert-block .information}</code></td>
-<td>
-New version available.
-{: .alert-block .information}
-</td>
-</tr>
-<tr>
-<th scope="row">Warning</th>
-<td><code>Warning message. {: .alert-block .warning}</code></td>
-<td>
-Uh, that’s a cliff, dude…
-{: .alert-block .warning}
-</td>
-</tr>
-<tr>
-<th scope="row">Error</th>
-<td><code>Error message {: .alert-block .error}</code></td>
-<td>
-OMFG, _no!_
 {: .alert-block .error}
-</td>
-</tr>
-</tbody>
-</table></div>
 
 ## Markup
 
-Documentation uses a mixture of HTML, regular Markdown, and Kramdown. Whenever possible, we use regular Markdown syntax for formatting text elements (italic, bold, links, basic lists, blockuotes…). For other block elements, we either need to use straight HTML, because of certain styling needs, or Kramdown notation (e.g. block spans, notes, definition lists…). The following sections explain the most common situations needing HTML or Kramdown.
+Due to certain platform constraints, documentation uses a mixture of HTML, regular Markdown, and Kramdown (unfortunately), depending on what you need.
+
+Whenever possible, use regular Markdown syntax for formatting text elements (font style and weight, links, basic lists, blockquotes…). 
+
+For certain block elements, you either need to use straight HTML, because of certain presentational needs (namely tables), or Kramdown syntax (e.g. block spans, notes, definition lists…). The following sections explain the situations you may need to accomodate.
 
 ### Selectors and attributes
 
-Applying HTML selectors and attributes inline (e.g. using `span`) or on a block level element requires Kramdown syntax.
+Applying HTML selectors and attributes requires Kramdown syntax.
 
-Kramdown calls the syntax an ‘inline attributes list’.[^selectors] But it’s not called ‘inline’ to imply use on inline HTML elements; rather, it’s referring to the way attributes are lined up in curly brackets. The structure looks like this:
+Kramdown calls the syntax an ‘inline attributes list’.[^selectors] But it’s not called ‘inline’ to imply use on inline HTML elements (e.g. `span`); rather, it’s referring to the way attributes are lined up in the curly-bracket notation. The structure looks like this:
 
 ```
 {: #id .class}
 ```
 
-If you use an `id` selector, as shown, the space must exist between the `:` and `#`. If no `id` selector is needed (i.e. on block elements), then no space is needed either, and you can use as many class selectors as you want:
+If you use an `id` selector, as shown, the space must exist between the `:` and `#`. If no `id` selector is needed (i.e. on block elements), then no space is needed either, but you can leave it, and you can use as many class selectors as you want:
 
 ```
 {:.class1 .class2 .class3 .etc}
 ```
 
-**The bottom line on using selectors and attributes is:** You do not use them unless the documentation has already provided them for a specific formatting/styling reason. This means you will:
+**The good news on using inline attributes lists:**
 
-1. Never need inline selectors, _thank goodness!_, since Markdown can apply **bold**, *italic*, and ***bold-italic*** formatting when needed (and only when needed). Ergo, you will never need to use `span` on anything.
-2. Only worry about block element styling when these guidelines define such selectors for use. Such selectors will be indicated in the relevant section of these guidelines where applicable (e.g. [**Alert message strings**](#alert-message-strings)). 
+You will:
+
+1. Never need inline selectors, _thank goodness!_, since Markdown can apply **bold**, *italic*, and ***bold-italic*** formatting when needed. Ergo, you will never use a `span` on anything.
+2. Only worry about block element styling when these guidelines define such selectors for use. Such selectors will be indicated in the relevant section of this document where use is explained in context (e.g. [**Alert message strings**](#alert-message-strings)). 
 
 **Block element styling:**   
 
@@ -488,20 +451,10 @@ When using a Kramdown attributes list on a block element (e.g. `p`), position th
 
 ```
 This is a regular paragraph.
-{:.class}
+{: .class}
 ```
 
-For a working example, recall the formatting rules for [**Alert message strings**](#alert-message-strings). Such strings are documented in the Diagnostics panel documentation, under the [Pre-flight checks](https://docs.textpattern.com/administration/diagnostics-panel#pre-flight-checks) section, among other possible places in documentation. Here’s an alert string all users like to see:
-
-All checks passed!
-{: .alert-block .success}
-
-And this is how to structure it in markup:
-
-```
-All checks passed!
-{: .alert-block .success}
-```
+See the [**Alert message strings**](#alert-message-strings) section for examples.   
 
 **Inline spans:**
 
@@ -601,7 +554,7 @@ Consider the following table, which is an example of the notes in effect (as is 
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
 <table>
-<caption>Table 3. Reference-mark entities as table notes.</caption>
+<caption>Table 2. Reference-mark entities as table notes.</caption>
 <thead>
 <tr>
 <th scope="col">Name</th>
