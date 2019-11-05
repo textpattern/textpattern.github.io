@@ -10,7 +10,7 @@ description: The brand identity resources for Textpattern. Use these resources w
 
 The following resources (more are in development) are used by the Textpattern project for all of its platforms and associated content. We are grateful if you use these resources too, where reasonable, whenever you write, speak, or present about Textpattern.
 
-## General resources
+## Project-wide resources
 
 These baseline resources are used across all Textpattern platforms and project initiatives. Thus must be followed in all cases.
 
@@ -24,14 +24,16 @@ These baseline resources are used across all Textpattern platforms and project i
 
 ## Platform-specific resources
 
-These resources are extensions of the baseline resources. You must use these in addition to the baselines, respective to the platform or project you are working on.
+These resources are extensions of the baseline resources. Use these in addition to the baselines, respective to the platform or project you are working on.
 
-**Documentation guidelines for software users**
+### User documentation
  
 * [User documentation guidelines](https://docs.textpattern.com/brand/textpattern-documentation-guidelines)
+	* [Documentation collaboration](https://docs.textpattern.com/brand/user-documentation-collaboration)
+	* [Documentation page template](https://docs.textpattern.com/brand/textpattern-documentation-template)
 * [Plugin user-help guidelines](https://docs.textpattern.com/development/plugin-user-help-guidelines)
 
-**Documentation guidelines for software developers**
+### Plugins
 
 * [Plugin user-help guidelines](https://docs.textpattern.com/development/plugin-user-help-guidelines)
 
