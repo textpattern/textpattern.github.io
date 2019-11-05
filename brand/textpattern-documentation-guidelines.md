@@ -32,7 +32,7 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
          * [Administration side vs. Administration-side](#administration-side-vs-administration-side)
          * [Formatting interface strings](#formatting-interface-strings)
 * [Markup](#markup)
-	* [Span blocks](#span-blocks)
+	* [Selectors and attributes](#selectors-and-attributes)
 	* [Definition lists](#definition-lists)
   * [Tables)](#tables)
   * [Notes](#notes)
@@ -364,7 +364,7 @@ The final rule concerns strings that don’t follow the sentence-case convention
 
 Another type of interface string that needs documented are system alerts. Alerts appear to users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages (e.g. when saving changings).
 
-Alerts can be one of four types: success, information, warning, or error. When documenting system alerts, format them as they appear in the interface. Do this buy using the appropriate class selectors in Kramdown notation, as shown in Table 2. (See [Spans](#spans) for an explanation on Kramdown markup for block spans.) 
+Alerts can be one of four types: success, information, warning, or error. When documenting system alerts, format them as they appear in the interface. Do this buy using the appropriate class selectors in Kramdown notation (see [**Selectors and attributes](#selectors-and-attributes)), as shown in Table 2. 
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
 <caption>Table 2. Alert message strings</caption>
@@ -401,47 +401,61 @@ Alerts can be one of four types: success, information, warning, or error. When d
 
 Documentation uses a mixture of HTML, regular Markdown, and Kramdown. Whenever possible, we use regular Markdown syntax for formatting text elements (italic, bold, links, basic lists, blockuotes…). For other block elements, we either need to use straight HTML, because of certain styling needs, or Kramdown notation (e.g. block spans, notes, definition lists…). The following sections explain the most common situations needing HTML or Kramdown.
 
-### Span blocks
+### Selectors and attributes
 
-Spans around block elements, which are typically used to apply class selectors, require Kramdown syntax.
+Applying HTML selectors and attributes inline (e.g. using `span`) or on a block level element requires Kramdown syntax.
 
-Recall the interface [**Alert message strings**](#alert-message-strings), which make a good example to use. Under the [Pre-flight checks](https://docs.textpattern.com/administration/diagnostics-panel#pre-flight-checks) section of the Diagnostics documentation, for example, there are many instances of such strings noted, all with their respective colour-codings.
-
-In each instance, there is a block of text to format, followed by the Kramdown syntax for the span, which contains the needed class selectors.
-
-You can either keep the syntax trailing the text:
+Kramdown calls the syntax an ‘inline attributes list’.[^ial] But it’s not called ‘inline’ to imply use on inline HTML elements; rather, it’s referring to the way attributes are lined up in curly brackets. The structure looks like this:
 
 ```
-All checks passed! {: .alert-block .success}
+{: #id .class}
 ```
 
-Or put it immediately under, which might help with readability:
+If you use an `id` selector, as shown, the space must exist between the `:` and `#`. If no `id` selector is needed (i.e. on block elements), then no space is needed either, and you can use as many class selectors as you want:
+
+```
+{:.class1 .class2 .class3 .etc}
+```
+
+**The bottom line on using selectors and attributes is:** You do not use them unless the documentation has already provided them for a specific formatting/styling reason. This means you will:
+
+1. Never need inline selectors, _thank goodness!_, since Markdown can apply **bold**, *italic*, and ***bold-italic*** formatting when needed (and only when needed). Ergo, you will never need to use `span` on anything.
+2. Only worry about block element styling when these guidelines define such selectors for use. Such selectors will be indicated in the relevant section of these guidelines where applicable (e.g. [**Alert message strings**](#alert-message-strings)). 
+
+[^ial]: See https://kramdown.gettalong.org/syntax.html#inline-attribute-lists.
+
+**Block element styling:**   
+
+When using a Kramdown attributes list on a block element (e.g. `p`), position the syntax on a new line immediately after the element text:
+
+```
+This is a regular paragraph.
+{:.class}
+```
+
+For a working example, recall the formatting rules for [**Alert message strings**](#alert-message-strings). Such strings are documented in the Diagnostics panel documentation, under the [Pre-flight checks](https://docs.textpattern.com/administration/diagnostics-panel#pre-flight-checks) section, among other possible places in documentation. Here’s an alert string all users like to see:
+
+All checks passed!
+{: .alert-block .success}
+
+And this is how to structure it in markup:
 
 ```
 All checks passed!
 {: .alert-block .success}
 ```
 
-Either way, it’s the equivalent of writing this (much less readable):
+**Inline spans:**
 
-```
-<span class="alert-block success">All checks passed!</span>
-```
-
-In this case, the result is:
-
-All checks passed!
-{: .alert-block .success}
-
-Naturally, using spans are pointless if you don’t know the class selectors to apply. As these are known, they will be written into this documenation (e.g. [**Alert message strings**](#alert-message-strings)).
+Ha! Again, you don’t use inline spans in documentation for any reason.
 
 ### Defintion lists
 
 Definition lists are added using Kramdown syntax.
 
-There is no particular type of content element you need to know about; just use a list if/when it’s better to.
+There is no particular type of documentation content you need to know about; just use a list if/when it’s better to.
 
-The stucture is simply:
+The stucture is:
 
 ```
 Definition title
