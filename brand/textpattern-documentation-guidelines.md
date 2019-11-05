@@ -360,36 +360,54 @@ The final rule concerns strings that don’t follow the sentence-case convention
 
 ##### Alert message strings
 
-Another type of interface string that needs documented are system alerts. Alerts appear to users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages (e.g. when saving changings).
+Another type of interface string that needs documented are block element system alerts, of which there are four types: success, information, warning, or error.
 
-Alerts can be one of four types: success, information, warning, or error. Style alerts as they appear in the interface buy using the appropriate class attributes. (You will need to add the selectors via Kramdown syntax. See [**Selectors and attributes**](#selectors-and-attributes).)
+Alerts appear to users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages (e.g. when saving changings).
 
-Success alerts
-: `class=".alert-block .success"`
+Use Kramdown’s ‘inline attributes list’ syntax (see [**Selectors and attributes**](#selectors-and-attributes)) to style alerts as they appear in the interface. All alert blocks uses a common class, `.alert-block`, plus a unique one, as demonstrated in these hypothetical examples.
+
+Success alerts:
+
+```
+Success alert.
+{: .alert-block .success}
+```
 
 Example:
 
 You did good.
 {: .alert-block .success}
 
-Information alerts
-: `class=".alert-block .information"`
+Information alerts:
+
+```
+Information alert.
+{: .alert-block .information}
+```
 
 Example:
 
 New version available.
 {: .alert-block .information}
 
-Warning alerts
-: `class=".alert-block .warning"`
+Warning alerts:
+
+```
+Warning alert.
+{: .alert-block .warning}
+```
 
 Example:
 
 Uh, that’s a cliff, dude…
 {: .alert-block .warning}
 
-Error alerts
-: `class=".alert-block .error"`
+Error alerts:
+
+```
+Error alert.
+{: .alert-block .error}
+```
 
 Example:
 
