@@ -26,11 +26,11 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
   * [Author perspective](#author-perspective)
   * [Concise writing tips](#concise-writing-tips)
   * [Typos and grammar gotchas](#typos-and-grammar-gotchas)
-  * [Brand usage](#brand-usage)
-     * [Administration panels context](#administration-panels-context)
-         * [Admin vs. administration vs. administrator](#admin-vs-administration-vs-administrator) 
-         * [Administration side vs. Administration-side](#administration-side-vs-administration-side)
-         * [Formatting interface strings](#formatting-interface-strings)
+  * [Brand name usage](#brand-name-usage)
+  * [Administration panels context](#administration-panels-context)
+    * [Admin vs. administration vs. administrator](#admin-vs-administration-vs-administrator) 
+    * [Administration side vs. Administration-side](#administration-side-vs-administration-side)
+    * [Formatting interface strings](#formatting-interface-strings)
 * [Markup](#markup)
 	* [Selectors and attributes](#selectors-and-attributes)
 	* [Definition lists](#definition-lists)
@@ -225,15 +225,13 @@ The sole exception, of course, is in the case of [developer documentation](https
 
 [^tabs]: ’Tabs’ was the common reference used years ago when the administration side’s visual design looked like manilla file folders with tabs. The refence was obsolete and confusing when the new Hive design was adopted.
 
-### Brand usage
+### Brand name usage
 
-Do not use Textpattern brand acronyms like ‘Txp’ and ‘TXP’ in documentation. Always spell ‘Textpattern’ out fully.
+Do not use Textpattern brand acronyms like ‘Txp’ and ‘TXP’ in documentation. Always spell ‘Textpattern’ out fully, when it’s even needed at all. You might be surprised how much you can drop it.
 
-These pet abbreviations of the brand name are convenient for use in the support forum, but they are inconsistent and non-intuitive to the outside world. Needless brand abbreviations like these muddy documentation when so many abbreviations are already used in code examples, for instance.
+These pet abbreviations of the brand name are convenient for use in the support forum, but they are inconsistent and non-intuitive to the outside world, as well needless. And history has shown that most people can’t spell ‘Textpattern’ correctly, so don’t make it worse by using abbreviations.
 
-History has shown that the world still can’t spell ‘Textpattern’ correctly on a reliable basis, so don’t make it worse by using abbreviations.
-
-At the same time, do not overuse the brand name in documentation, even if it’s part of a title. Too much repetition of ‘Textpattern’ becomes monotonous and distracting. It’s a context that is already clear to readers by fact the are using the software.
+At the same time, do not overuse the brand name in documentation (or in any project), even if it’s part of a document title. Too much repetition of ‘Textpattern’ becomes monotonous and distracting. It’s a context that is already clear to readers by fact the are using the software.
 
 ### Administration panels context
 
@@ -405,7 +403,7 @@ Documentation uses a mixture of HTML, regular Markdown, and Kramdown. Whenever p
 
 Applying HTML selectors and attributes inline (e.g. using `span`) or on a block level element requires Kramdown syntax.
 
-Kramdown calls the syntax an ‘inline attributes list’.[^ial] But it’s not called ‘inline’ to imply use on inline HTML elements; rather, it’s referring to the way attributes are lined up in curly brackets. The structure looks like this:
+Kramdown calls the syntax an ‘inline attributes list’.[^selectors] But it’s not called ‘inline’ to imply use on inline HTML elements; rather, it’s referring to the way attributes are lined up in curly brackets. The structure looks like this:
 
 ```
 {: #id .class}
@@ -421,8 +419,6 @@ If you use an `id` selector, as shown, the space must exist between the `:` and 
 
 1. Never need inline selectors, _thank goodness!_, since Markdown can apply **bold**, *italic*, and ***bold-italic*** formatting when needed (and only when needed). Ergo, you will never need to use `span` on anything.
 2. Only worry about block element styling when these guidelines define such selectors for use. Such selectors will be indicated in the relevant section of these guidelines where applicable (e.g. [**Alert message strings**](#alert-message-strings)). 
-
-[^ial]: See https://kramdown.gettalong.org/syntax.html#inline-attribute-lists.
 
 **Block element styling:**   
 
@@ -448,6 +444,8 @@ All checks passed!
 **Inline spans:**
 
 Ha! Again, you don’t use inline spans in documentation for any reason.
+
+[^selectors]: See https://kramdown.gettalong.org/syntax.html#inline-attribute-lists.
 
 ### Defintion lists
 
@@ -620,49 +618,54 @@ If you ever need more than six notes, then use `<ol class="noliststyle">`, for a
 
 Remember that notes, which are, technically speaking, a part of notes and bibliography referencing systems, are used to cite sources (e.g. the source of a quotation used), or enable authors to briefly expand on ideas, for example, without bloating the main text.
 
-User documentation is unlikely to need much of either type of annotation, nor should you annotate text for the sake of it. Fewer notes are better in documentation because it’s less overhead for readers wanting to get something done. That said, notes as author expansion are likely more valuable in documentation than as citations. Authors may have experience and insight with various Textpattern situations, and can occasionally expand on topics as notes to help interested users with deeper learning.  
+**Use notes sparingly:**
 
-As far as applying notes, GitHub does not use regular Markdown footnotes, so the syntax for notes that you may have learned at Daring Fireball, or by using iAWriter, whatever, will not work here. Instead, GitHub uses Kramdown footnotes, which are somewhat closer in method to how Textile footnotes work, so that’s a step in the right direction for we Textile lovers.
+Do not annotate text for the sake of it. Fewer notes are better in documentation because it’s less overhead for readers wanting to get something done. However, using a few notes for references (citing external sources) and/or expanding on insights the author may have on a given situation in context, can be useful.
 
-Before continuing, recognize that all those markup languages, and the different flavours of them calling the functionality ‘footnotes’, is doing the web-publishing world a disservice.[^footnotes] We do not perpetuate the fallacy in this documentation. From hereon, we refer to them simply as *notes*, as all leading references like the *New Oxford Style Manual* and the *Chicago Manual of Style* do when speaking of notes and bibliography systems. Or, if you really must be specific, call them endnotes, because that is far more accurate in web documents.
+**Call them what they really:**  
 
-Now, you may or not be aware that Kramdown notes function the same way whether you write inline markers as numerals in sequence (i.e. `[^1]`, `[^2]`, `[^3]`, . . .) or as unique text-like tags, whatever you choose to use (e.g. `[^dope]`, `[^dongle]`, `[^dingo]`, . . .). Either way, the resulting notes list is an ordered list of arabic numerals.
+As for applying notes, GitHub does not use regular Markdown footnotes, so the syntax for notes that you may have learned at Daring Fireball, or by using iAWriter, whatever, will not work here. Instead, GitHub uses Kramdown footnotes, which are somewhat closer in method to how Textile footnotes work, so that’s a step in the right direction for Textile lovers.
+
+From hereon, we refer to them simply as _notes_, as all leading references like the *New Oxford Style Manual* and the *Chicago Manual of Style* do when speaking of footnotes and endnotes in general terms, and _endnotes_, when referring to the notes list at end of the document.[^notes]
+
+**Adding the syntax:**
+
+You may or not be aware that Kramdown notes function the same way whether you write inline markers as numerals in sequence (i.e. `[^1]`, `[^2]`, `[^3]`, . . .) or as unique text-like tags, whatever you choose to use (e.g. `[^dope]`, `[^dongle]`, `[^dingo]`, . . .). Either way, the resulting endnotes list is an ordered list of arabic numerals.
 
 Thus, using text as inline markers is a better way to go, because:
 
-1. Text markers can be created relevant to the topic being annotated (i.e. they’re intuitive if used right), and you don’t  have to worry about what order their in.
-2. Numbered markers can be needlessly distracting if you’re trying to keep them in order, and confusing if you have many of them and they get out of order.
+1. Text markers can be created relevant to the topic being annotated (i.e. they’re intuitive if used right), and you don’t have to worry about what order they are in.
+2. Numbered markers can be needlessly distracting if you are trying to keep them in order; and confusing if you have many of them and they get out of order.
 
 Skip the madness and use text markers only. It’s easier.
 
-This document uses two notes. We’ll use them here as demonstration. The first note comes way up in the [**Panel vs. tab**](#panel-vs-tab) section. The second note comes in the fourth paragraph of this section. In each case you will see the inline marker as a superscript ‘1’ and ‘2’, respectively, at the end of sentences.
+**Example of notes usage:**
 
-Here are the actual markers used in the markup at those locations: `[^tabs]` and `[^footnotes]`. Appropriate, eh? Every time you use a marker, use text that’s intuitive to the topic of the sentence, or if you’re citing a source, use the source author’s name, for example.
+This document uses three notes. The first comes way up in the [**Panel vs. tab**](#panel-vs-tab) section. The second comes in the [**Selectors and attributes**](#selectors-and-attributes) section. And the third in this section on notes. In each case, you will see the inline marker as a superscript ‘1’, ‘2’, and ‘3’, respectively, at the end of sentences.
 
-The notes themselves are added at the bottoms of the sections they appear in. Each not begins with the same inline marker used, followed by a colon, namely:
+The actual markers used in the markup are: `[^tabs]`, `[^selectors]`, and `[^notes]`. Each note marker uses a word relevant to the topic. Logical.
+
+The notes themselves are added at the bottoms of the sections they appear in. Sure, you could have notes spread out through the document like that. But by putting them at the ends of the sections they belong to, it’s easy to find and edit them in context, instead of jumping up and down in the document.
+
+Each note begins with the same marker used inline, followed by a `:`
 
 ```
 [^tabs]: ’Tabs’ was the common reference used years ago . . .
 ```
 
-And:
-
 ```
-[^footnotes]: Although markup languages like Markdown . . .
+[^selectors]: See https://kramdown.gettalong.org/syntax.html#inline-attribute-lists.
 ```
 
-You could have notes spread out through the document like that. By putting them at the ends of the sections they belong to, it’s easy to find and edit them without jumping all over the place.
+```
+[^notes]: Recognize that all those markup languages, . . .
+```
 
-The resulting notes list, however, appears at the bottom of the page (ergo, endnotes), because that’s how Kramdown notes are designed to function:
+The resulting endnotes list, however, appears at the bottom of the page (ergo, endnotes), because that’s how Kramdown notes are designed to function. See it down there at bottom?
 
-> 1. ’Tabs’ was the common reference used years ago . . .
-> 2. Although markup languages like Markdown . . .
+And that’s why we add a `## Endnotes` header in the [new page template](https://docs.textpattern.com/brand/textpattern-documentation-template), in case people want to use notes; they will automatically appear under that last section.
 
-See it down there at bottom?
-
-And that’s why we add a `## Notes` header in the [new page template](https://docs.textpattern.com/brand/textpattern-documentation-template), in case people want to use notes; they will automatically appear under that last section.
-
-[^footnotes]: Although markup languages like Markdown, Textile, and so forth use ‘footnotes’ as the semantic name of their notes feature, we just call them notes,  like most editorial style guides do when describing footnotes and endnotes in general terms. In this case, ‘endnotes’ also works. Footnotes are a specific type of notes usage in print publishing only, where pages have a physical set dimension and word limit. In web publishing, documents have no such contraint and notes always appear at the very end of the document (excepting PDFs and ebooks that mimic print layouts). It is therefore more logical to call such markup features ‘endnotes’, because that’s what they really are when appearing at the end of the document. The _foot_ and _end_ prefixes simply indicate the placement of notes in published material.
+[^notes]: Recognize that all those markup languages, and the different flavours of them, calling the functionality ‘footnotes’, is doing the web-publishing world a disservice. We do not perpetuate the fallacy in this documentation. Footnotes are a specific type of notes usage in print publishing only, where pages have a physical set dimension and word limit. In web publishing, documents have no such contraint and notes always appear at the end of the document (excepting PDFs and ebooks that mimic print layouts). It is, therefore, more logical to call such markup features ‘endnotes’, because that’s what they are when appearing at the end of the document. The _foot_ and _end_ prefixes merely indicate the placement of notes in published material.
 
 ## Endnotes
 
