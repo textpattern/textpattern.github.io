@@ -3,55 +3,40 @@ layout: landing
 category: Brand
 published: true
 title: Textpattern brand and voice
-description: We ask you to consider using these resources too when writing your own blog articles, speaking at conferences, giving work/client presentations, etc.
+description: The brand identity resources for Textpattern. Use these resources when producing any written or visual product concerning the software.
 ---
 
 # Textpattern brand and voice
 
-The project uses these resources for all its platforms and associated content. We ask you to consider using these resources too when writing your own blog articles, speaking at conferences, giving work/client presentations, or any other scenario where you're communicating to audiences about Textpattern CMS.
+The following resources (more are in development) are used by the Textpattern project for all of its platforms and associated content. We are grateful if you use these resources too, where reasonable, whenever you write, speak, or present about Textpattern.
 
-On this page:
+## General resources
 
-* [Audiences](#audiences)
-* [Brand](#brand)
-  * [Identity](#identity)
-  * [Assets](#assets)
-* [Guidelines](#guidelines)
-  * [Content](#content)
-  * [Presentation](#presentation)
+These baseline resources are used across all Textpattern platforms and project initiatives. Thus must be followed in all cases.
 
-## Audiences
+**Writing and editorial guidelines**
 
-Learn about Textpattern's primary audiences and how to design information products for them.
+* [Editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide): Baseline guidelines for all written content.
 
-[todo]
+**Visual identity**
 
-## Brand
+* [Brand logomark and logotext](https://docs.textpattern.com/brand/textpattern-logopack.zip) (Zip file) 
 
-Learn about the elements that make up the Textpattern brand and how to use them.
+## Platform-specific resources
 
-### Identity
+These resources are extensions of the baseline resources. You must use these in addition to the baselines, respective to the platform or project you are working on.
 
-Building the next Textpattern fan site? Learn how to use Textpattern's brand harmoniously without misrepresenting project identity.
-
-* Visual brand identity [todo]
-
-### Assets
-
-Resources and how to use them.
-
-* Textpattern logo [todo:link]
-
-## Guidelines
-
-Learn how to write and design information that's consistent, clear, and professionally representable.
-
-### Content
-
-* [Editorial style guidelines](https://docs.textpattern.com/brand/editorial-style-guidelines)
+**Documentation guidelines for software users**
+ 
+* [User documentation guidelines](https://docs.textpattern.com/brand/textpattern-documentation-guidelines)
 * [Plugin user-help guidelines](https://docs.textpattern.com/development/plugin-user-help-guidelines)
 
-### Presentation
+**Documentation guidelines for software developers**
 
-* Administration UI guidelines [todo]
-* Web presentation guidelines [todo]
+* [Plugin user-help guidelines](https://docs.textpattern.com/development/plugin-user-help-guidelines)
+
+
+
+
+
+
