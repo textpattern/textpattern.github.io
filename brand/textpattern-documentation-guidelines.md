@@ -402,23 +402,35 @@ Message string.
 <tbody>
 <tr>
 <th scope="row">Success</th>
-<td><code>{: .alert-block .success}</code></td>
-<td>Message string. {: .alert-block .success}</td>
+<td><code>Success message. {: .alert-block .success}</code></td>
+<td>
+You did good.
+{: .alert-block .success}
+</td>
 </tr>
 <tr>
 <th scope="row">Information</th>
-<td><code>{: .alert-block .information}</code></td>
-<td>Message string. {: .alert-block .information}</td>
+<td><code>Information message. {: .alert-block .information}</code></td>
+<td>
+New version available.
+{: .alert-block .information}
+</td>
 </tr>
 <tr>
 <th scope="row">Warning</th>
-<td><code>Message string. {: .alert-block .warning}</code></td>
-<td>Message string. {: .alert-block .warning}</td>
+<td><code>Warning message. {: .alert-block .warning}</code></td>
+<td>
+Uh, that’s a cliff, dude…
+{: .alert-block .warning}
+</td>
 </tr>
 <tr>
 <th scope="row">Error</th>
-<td><code>Message string. {: .alert-block .error}</code></td>
-<td>Message string. {: .alert-block .error}</td>
+<td><code>Error message {: .alert-block .error}</code></td>
+<td>
+OMFG, _no!_
+{: .alert-block .error}
+</td>
 </tr>
 </tbody>
 </table></div>
