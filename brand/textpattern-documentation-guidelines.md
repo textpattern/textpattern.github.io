@@ -8,7 +8,7 @@ description: Guidelines for contributions to Textpattern CMS user documentation.
 
 # Textpattern documentation guidelines
 
-These guidelines, an extension of Textpattern’s [editorial style guide](https://docs.textpattern.com/brand/textpattern-editorial-guide), are specifically for the editorial upkeep of the [Textpattern CMS user documentation](https://docs.textpattern.com/). Documentation editors, authors, and all interested contributors will want to read up here.
+These guidelines, an extension of Textpattern’s [editorial style guide](https://docs.textpattern.com/brand/textpattern-editorial-guide), are specifically for the editorial upkeep of the [Textpattern user documentation](https://docs.textpattern.com/). Documentation editors, authors, and all interested contributors will want to read up here.
 
 **On this page:**
 
@@ -32,8 +32,10 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
          * [Administration side vs. Administration-side](#administration-side-vs-administration-side)
          * [Formatting interface strings](#formatting-interface-strings)
 * [Markup](#markup)
-  * [Tables (HTML only)](#tables-html-only)
-  * [Using notes](#using-notes)
+	* [Span blocks](#span-blocks)
+	* [Definition lists](#definition-lists)
+  * [Tables)](#tables)
+  * [Notes](#notes)
      * [Notes in tables](#notes-in-tables)
      * [Notes in main text](#notes-in-main-text)
 
@@ -261,80 +263,62 @@ An adjective form example:
 
 #### Formatting interface strings
 
-Interface strings are the text elements a user reads in the administration interface. Their consideration is critical to good software usability. Likewise, referring to them consistently yet unobtrusively in documentation is also critical. The balance between consistency and unobtrusiveness, however, can be challenging when many types of strings exist.
+Interface strings are the text elements a user reads in the administration interface, from headers to form control labels to system feedback messages. Their consideration is critical to good software usability.
 
-Textpattern documentation tries to find a clear balance with seven formatting rules, summarized in the following table. Seven sounds like a lot, but they will make sense when you review them. An explanation of how and why the rules were derived follows the table.
+Referring to them consistently yet unobtrusively in documentation is also critical. The balance between consistency and unobtrusiveness, however, can be challenging when many types of strings exist.
 
-**Formatting rules:** 
+Textpattern documentation aims for a clear and logical balance with seven formatting rules, summarized in the next two tables. Seven sounds like a lot, but they will make sense when you review them.
+
+##### Interface headers, labels, and file paths
+
+Most of the types of interface strings are summarized in Table 1. An explanation of how and why the rules were derived follows the table. 
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
+<caption>Table 1. Header, label, and file path strings</caption>
 <thead><tr>
 <th scope="col">String type</th>
 <th scope="col">Formatting</th>
+<th scope="col">Example</th>
 </tr></thead>
 <tbody>
 <tr>
 <th scope="row">Capitalized single words</th>
-<td>Normal (e.g. ‘the Write panel’)</td>
+<td>Normal</td>
+<td>The Write panel.</td>
 </tr>
 <tr>
-<th scope="row">Multiple-words, no terminal punctuation</th>
-<td>Bold (e.g. ‘the <b>Date format</b> setting’)</td>
+<th scope="row">Multiple words, no terminal punctuation</th>
+<td>Bold</td>
+<td>The <b>Date format</b> setting.</td>
 </tr>
 <tr>
 <th scope="row">Full-sentence strings with terminal punctuation</th>
-<td>Italic (e.g. ‘the <i>Prevent widowed words in article titles?</i> setting’)</td>
+<td>Italic</td>
+<td>The <i>Prevent widowed words in article titles?</i> preference.</td>
 </tr>
 <tr>
 <th scope="row">Form control options</th>
-<td>Single quote marks (e.g. ‘select ‘Yes’ from the drop-down options’).</td>
+<td>Single quote marks</td>
+<td>Select ‘Yes’ from the drop-down options.</td>
 </tr>
 <tr>
 <th scope="row">Textpattern Form names</th>
-<td>Bold-italic (e.g. <b><i>default</i></b>, <b><i>files</i></b>, <b><i>comments_display</i></b>).</td>
+<td>Bold-italic</td>
+<td>The <b><i>comments_display</i></b> form.</td>
+</tr>
+<tr>
+<th scope="row">File paths and names&#x002a;</th>
+<td>Italic&#x2020;</td>
+<td><i>domain.tld/textpattern</i><br><i>.htaccess</i><br><i>index.php</i></td>
 </tr>
 </tbody>
+<tfoot><tr><td colspan="3"><ol>
+<li>Always show file extensions on file names!</li>
+<li>Do not format URLs and file paths as code unless they are part of an actual code snippet.</li>
+</ol></td></tr></tfoot>
 </table></div>
 
-Two other possible interface strings include system messages and file paths/names.
-
-System messages will appear to users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages (e.g. when saving changings). A system message can be one of four different colours: green, blue, yellow, or red. When documenting system messages, format them as they appear in the interface using the following codes.
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
-<thead><tr>
-<th scope="col">Message type</th>
-<th scope="col">Colour</th>
-<th scope="col">Markup</th>
-</tr></thead>
-<tbody>
-<tr>
-<th scope="row">Success</th>
-<td>green</td>
-<td><code>Message string. {: .alert-block .success}</code></td>
-</tr>
-<tr>
-<th scope="row">Warning</th>
-<td>yellow</td>
-<td><code>Message string. {: .alert-block .warning}</code></td>
-</tr>
-<tr>
-<th scope="row">Error</th>
-<td>red</td>
-<td><code>Message string. {: .alert-block .error}</code></td>
-</tr>
-<tr>
-<th scope="row">Information</th>
-<td>blue</td>
-<td><code>Message string. {: .alert-block .information}</code></td>
-</tr>
-</tbody>
-</table></div>
-
-Finally, you may sometimes need to document URLs, file paths, and file names. In these cases, use italic text, and make sure file extensions are included on any file names (e.g. *domain.tld/textpattern*, *.htaccess*, *index.php*, etc.)
-
-Do not format URLs and file paths as code unless they are part of an actual code snippet.
-
-**Explanation of rules:**
+**Explanation of Table 1 rules:**
 
 The following explains how the first five rules were derived.
 
@@ -376,16 +360,130 @@ Now we have two more of our five needed rules:
 
 The final rule concerns strings that don’t follow the sentence-case convention, notably with respect to default form names (and other possible strings) that are not capitalized and use underscores when compound. They are not code, exactly, so code formatting is not approriate either. Since these will not be discussed frequently in documetation, we can format them as ***bold-italic*** (e.g. ‘the ***comments_display*** form’)
 
+##### Alert message strings
+
+Another type of interface string that needs documented are system alerts. Alerts appear to users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages (e.g. when saving changings).
+
+Alerts can be one of four types: success, information, warning, or error. When documenting system alerts, format them as they appear in the interface. Do this buy using the appropriate class selectors in Kramdown notation, as shown in Table 2. (See [Spans](#spans) for an explanation on Kramdown markup for block spans.) 
+
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
+<caption>Table 2. Alert message strings</caption>
+<thead><tr>
+<th scope="col">Alert type</th>
+<th scope="col">Kramdown</th>
+<th scope="col">Example</th>
+</tr></thead>
+<tbody>
+<tr>
+<th scope="row">Success</th>
+<td><code>{: .alert-block .success}</td>
+<td>Message string. {: .alert-block .success}</td>
+</tr>
+<tr>
+<th scope="row">Information</th>
+<td><code>{: .alert-block .information}</code></td>
+<td>Message string. {: .alert-block .information}</td>
+</tr>
+<tr>
+<th scope="row">Warning</th>
+<td><code>Message string. {: .alert-block .warning}</code></td>
+<td>Message string. {: .alert-block .warning}</td>
+</tr>
+<tr>
+<th scope="row">Error</th>
+<td><code>Message string. {: .alert-block .error}</code></td>
+<td>Message string. {: .alert-block .error}</td>
+</tr>
+</tbody>
+</table></div>
+
 ## Markup
 
-### Tables (HTML only)
+Documentation uses a mixture of HTML, regular Markdown, and Kramdown. Whenever possible, we use regular Markdown syntax for formatting text elements (italic, bold, links, basic lists, blockuotes…). For other block elements, we either need to use straight HTML, because of certain styling needs, or Kramdown notation (e.g. block spans, notes, definition lists…). The following sections explain the most common situations needing HTML or Kramdown.
 
-Use tables sparingly (they can be problematic to read on small screen devices), and only when the content is definitely tabular data. If the content can semantically be called a definition list, then structure the material as a definition list instead.
+### Span blocks
 
-When using tables, don’t use Markdown. Copy/paste the following markup, and ensure the surrounding `div` tags are included:
+Spans around block elements, which are typically used to apply class selectors, require Kramdown syntax.
+
+Recall the interface [**Alert message strings**](#alert-message-strings), which make a good example to use. Under the [Pre-flight checks](https://docs.textpattern.com/administration/diagnostics-panel#pre-flight-checks) section of the Diagnostics documentation, for example, there are many instances of such strings noted, all with their respective colour-codings.
+
+In each instance, there is a block of text to format, followed by the Kramdown syntax for the span, which contains the needed class selectors.
+
+You can either keep the syntax trailing the text:
+
+```
+All checks passed! {: .alert-block .success}
+```
+
+Or put it immediately under, which might help with readability:
+
+```
+All checks passed!
+{: .alert-block .success}
+```
+
+Either way, it’s the equivalent of writing this (much less readable):
+
+```
+<span class="alert-block success">All checks passed!</span>
+```
+
+In this case, the result is:
+
+All checks passed!
+{: .alert-block .success}
+
+Naturally, using spans are pointless if you don’t know the class selectors to apply. As these are known, they will be written into this documenation (e.g. [**Alert message strings**](#alert-message-strings)).
+
+### Defintion lists
+
+Definition lists are added using Kramdown syntax.
+
+There is no particular type of content element you need to know about; just use a list if/when it’s better to.
+
+The stucture is simply:
+
+```
+Definition title
+: Definition data
+```
+
+That will render a definition list as:
+
+```
+<dl>
+<dt>Definition title</dt>
+<dd>Definition data</dd>
+</dl>
+```
+
+Add more data items via additional lines preceded by `:`
+
+```
+Definition title
+: Definition data item one
+: Definition data item two
+: etc.
+```  
+
+### Tables
+
+Tables must be in straight HTML.
+
+Tables are very effective at presenting tabular data and other dense sets of information suited to grid display. They also make nice presentation breaks when a page is otherwise a lot of text. But wide tables can also be problematic to read on small screen devices.
+
+So, use the following guidelines with respect to tables:
+
+1. Use them as much as appropriate for tabular data sets.
+2. Avoid tables if data is mostly long strings of text, like sentences, paragraphs, or entire lists. In such cases, try and structure the information as [definition lists](#definition-lists) instead.
+3. Ensure the table is complete, which includes the surrounding `div` plus `caption`, `thead`, `tbody`, `tfoot`. (See number 6). To make it easy, copy/paste the markup from the code block below.
+4. Understand that a table’s `caption` is really its title. (Table captions are different from an HTML figure’s `figcaption`, which is used as a description.) While it’s called ‘caption’ in HTML, it’s function is to number and title the table so that it can be referred to easily in main text.
+5. If multiple tables are used on a given documentation page, ensure they are appropriately numbered. Do this at the beginning of the caption (e.g. ‘Table 1. Caption text . . .’, ‘Table 2. Caption text. . .’, and so on). If a page only uses one table, the number reference can be left out of the caption.
+6. Table notes are optional, but can be used effectively to communicate information in clear and concise ways. See [**Notes in tables**](#notes-in-tables)). But if you don’t need notes, or do not otherwise need a table footer at all, then remove the `tfoot` region.
 
 ``` html
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
+<caption>Table n. Title of table</caption>
 <thead><tr>
 <th scope="col">Header</th>
 <th scope="col">Header</th>
@@ -400,31 +498,36 @@ When using tables, don’t use Markdown. Copy/paste the following markup, and en
 <td>data</td>
 </tr>
 </tbody>
-<tfoot><tr><td colspan="2">
+<tfoot>
+<tr><td colspan="2">
 <ol>
 <li>note item</li>
 <li>note item</li>
 </ol>
-</td></tr></tfoot>
+</td></tr>
+</tfoot>
 </table></div>
 ```
 
-If you don’t use any [notes in your tables](#notes-in-tables), remove the entire `<tfoot>…</tfoot>` region of the table.
+If you don’t use any [notes in your tables](#notes-in-tables), remove the entire `<tfoot>…</tfoot>` region of the table, or change it to use the footer a different way, as needed.
 
-### Using notes
+### Notes
 
 Notes are used sparingly and in limited cases in Textpattern documentation; either as reference notes in tables, using a reference-mark system, or as general notes in main text, producing short _endnotes_ lists.
 
 #### Notes in tables
 
+Since these notes are in HTML tables, they are also structured with straight HTML. Style rules are added to documentation to make reference-mark lists work in the table footer. 
+
 Reference-mark notes are a common annotation device in information design, and are specifically used in tables. The standard reference-mark system cycles through six marks, in this order: *, †, ‡, §, ¶, ‖.
 
 If a table ever needs more than six notes, which should be rare to never, the pattern repeats in duplicate (**, ††, ‡‡, §§, ¶¶, ‖‖), then triplicate, and so on. Try not to go that far.
 
-Textpattern documentation provides CSS styles to make reference mark lists in a table’s `tfoot` element. Consider the following table, which is an example of the notes in effect.
+Consider the following table, which is an example of the notes in effect (as is [Table 1](#interface-headers-labels-and-file-paths)).
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
 <table>
+<caption>Table 3. Reference-mark entities as table notes.</caption>
 <thead>
 <tr>
 <th scope="col">Name</th>
@@ -464,23 +567,21 @@ Textpattern documentation provides CSS styles to make reference mark lists in a 
 <td><code>2016</code>&#x2021;</td>
 </tr>
 </tbody>
-<tfoot><tr><td colspan="3">
-<ol>
+<tfoot><tr><td colspan="3"><ol>
 <li>Unicode values for character glyphs. These can be used as ASCII characters by prefixing values with <code>&#x</code> and adding a <code>;</code> at the end.</li>
 <li>Also known as the ‘paragraph sign’ in layman’s terms.</li>
 <li>And so on.</li>
-</ol>
-</td></tr></tfoot>
+</ol></td></tr></tfoot>
 </table>
 </div>
 
-The author must add the correct entity values on the table headers or data items that they want to annotate, for example:
+You must add the entity values in the table where needed, in the correct order, for example:
 
 ```
 <th scope="col">Entity&#x002a;</th>
 ```
 
-Then simply add the corresponding notes in the appropriate `li` in the tables footer, for example:
+Then write the corresponding note in the footer `li`, in the same order. The entities are added automatically (up to the first six single glyphs) to list items, so don’t add them manually here, for example:
 
 ```
 <ol>
@@ -490,12 +591,10 @@ Then simply add the corresponding notes in the appropriate `li` in the tables fo
 </ol>
 ```
 
-Documentation CSS will provide the appropriate reference mark as the list item’s style up to the first six marks.
-
-If you ever need more than six notes, then use `<ol class="nolistitem">`, for a list without any list style at all, then add the reference marks manually:
+If you ever need more than six notes, then use `<ol class="noliststyle">`, for a list without any list style at all, then add the reference marks manually:
 
 ```html
-<ol class="nolistitem">
+<ol class="noliststyle">
 <li>. . .</li>
 <li>&#x2016; . . .</li>
 <li>&#x002a;&#x002a; . . .</li>
@@ -551,5 +650,5 @@ And that’s why we add a `## Notes` header in the [new page template](https://d
 
 [^footnotes]: Although markup languages like Markdown, Textile, and so forth use ‘footnotes’ as the semantic name of their notes feature, we just call them notes,  like most editorial style guides do when describing footnotes and endnotes in general terms. In this case, ‘endnotes’ also works. Footnotes are a specific type of notes usage in print publishing only, where pages have a physical set dimension and word limit. In web publishing, documents have no such contraint and notes always appear at the very end of the document (excepting PDFs and ebooks that mimic print layouts). It is therefore more logical to call such markup features ‘endnotes’, because that’s what they really are when appearing at the end of the document. The _foot_ and _end_ prefixes simply indicate the placement of notes in published material.
 
-## Notes
+## Endnotes
 
