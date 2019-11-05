@@ -366,30 +366,34 @@ Alerts can be one of four types: success, information, warning, or error. Style 
 
 Success alerts
 : `class=".alert-block .success"`
-: Example:
 
-Message string.
+Example:
+
+You did good.
 {: .alert-block .success}
 
 Information alerts
 : `class=".alert-block .information"`
-: Example:
 
-Message string.
+Example:
+
+New version available.
 {: .alert-block .information}
 
 Warning alerts
 : `class=".alert-block .warning"`
-: Example:
 
-Message string.
+Example:
+
+Uh, that’s a cliff, dude…
 {: .alert-block .warning}
 
 Error alerts
 : `class=".alert-block .error"`
-: Example:
 
-Message string.
+Example:
+
+OMFG, _no!_
 {: .alert-block .error} 
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
