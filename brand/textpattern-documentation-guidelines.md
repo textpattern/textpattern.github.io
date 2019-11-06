@@ -195,7 +195,7 @@ Another exception is with regard to the type of documentation it is. Again, _use
 
 To improve the readability of documentation, write as concisely as you can. There are several effective ways to achieve this.
 
-**Use the appropriate [author perspective](#author-perspective)**. When you don't centre the writing around your own experience, point of view, and wit, you say a lot less. It's magic.
+**Use the appropriate [author perspective](#author-perspective)**. When you don't centre the writing around your own point of view and wit, you say a lot less. It's magic.
 
 **Avoid passive verb structures**. Verb structures like _to be/have_, _could be/have_, _should be/have_, _might be/have_, and so forth are not only miserable to read, but they bloat copy with unnecessary words. You are the expert giving the sound advice, so assume the role. Find a more direct and active way of word phrases. Using a generic structure as example: ‘put this thing there’ is far cleaner and direct than either ‘you should put this thing there’ or ‘that thing should be put there’. Both are lousy. If a reader doesn’t want to put something somewhere, they won’t, but they’ll appreciate you weren’t wishy-washy about the instruction. Kill the passive verb structures.
 
@@ -203,13 +203,13 @@ To improve the readability of documentation, write as concisely as you can. Ther
 
 For example, ‘the really large code block’ or ‘only copy the lines between x and y’ are bloated ways of writing ‘the large code block’ and ‘copy the lines between x and y’. There’s no loss of meaning or  instruction by dropping the needless adverbs, and it reads a lot better too.
 
-**Question every use of "that" and "just”**. It's easy to abuse both words. Every time you use ‘that’ or ‘just’ in a sentence, read the sentence without using the words and see if it still makes sense. Most of the time it will. If it does, leave the words out. (A lot of teachers of English as a second language have lead too many minds astray here, unfortunately. It’s time to reabilitate.)
+**Question every use of "that" and "just”**. It's easy to abuse both words. Every time you use ‘that’ or ‘just’ in a sentence, read the sentence without using the words and see if it still makes sense. Most of the time it will. If it does, leave the words out.
 
-**Avoid over use of adverbs, idioms, and other partial clauses at the beginnings or endings of sentences**. The excessive use of things like ’meanwhile’, ’on the other hand’, ‘however’, ’in other words’, ‘nevertheless’, and so forth can get bore a reader quickly. This doesn't mean never use them, but if you're using them regularly in every paragraph, then it's too much. Rewrite the sentences more concisely without need for the clause breaks.
+**Avoid overuse of adverbs, idioms, and other partial clauses at the beginnings or endings of sentences**. Excessive use of ’meanwhile’, ’on the other hand’, ‘however’, ’in other words’, ‘nevertheless’, and so forth can bore a reader quickly. This doesn't mean never use them, but if you're using them regularly, in every paragraph, it's too much. Rewrite the sentences more concisely without the clauses.
 
 **Cut any words until you can’t**. This is not always the best advice for descriptive, persuasive, and narrative writing, but it’s absolutely solid advice for expository writing, and that’s what typ of writing documentation is. Every word provides value and clarity, or delete it out.
 
-**Break long, multi-clause sentences into multiple shorter sentences**. Again, not always good advice for other types of writing, but for expository like documentation, it’s generally a good idea. Careful, though, sometimes a single longer sentence can read more smoothly if it's free of needless word bloat. Multiple shorter sentences doesn't mean result in choppy stilted reading. Use your best judgement.
+**Break long, multi-clause sentences into multiple shorter sentences**. Again, not always good advice for other types of writing, but for expository like documentation, it’s generally a good idea. Careful, though, sometimes a single longer sentence can read more smoothly if it's free of needless word bloat. Having multiple shorter sentences does not mean end up having choppy, stilted reading. Use your best judgement.
 
 ### Grammar and spelling traps
 
@@ -223,15 +223,15 @@ Following are some things to watch out for in user documentation specifically.
 
 #### Adjective forms vs. noun forms
 
-**Administration side vs. Administration-side**. When referring to the administration side, make sure you are doing so correctly between noun (no hyphen) and adjective (hyphenated) forms.
+**Administration-side vs. Administration side**. When referring to the administration side, make sure you are doing so correctly between noun (no hyphen) and adjective (hyphenated) forms.
 
-A noun form example:
-
-> ’The login to the administration side is located at . . .’
-
-An adjective form example: 
+Adjective form example: 
 
 > ’The default top-level administration-side navigation links are Content, Presentation, and Admin.’
+
+Noun form example:
+
+> ’The login to the administration side is located at . . .’
 
 ### Abbreviations
 
@@ -241,17 +241,17 @@ Specific examples:
 
 **Admin**. Never use this abbreviation in writing unless you are specifically referring to the Admin navigation label in the administration side. Any other use of ‘admin’ can lead to confusion about what is meant. Whether you mean ‘administration’ or ‘administrator’, write it out fully every time so the meaning and context is perfectly clear. This includes writing ‘administration side’ (noun form) and ‘administration-side’ (adjective form) with regard to the administration side of the software.
 
-**TXP, Txp, TxP, tXP, txp**. Do not use these pet abbreviations for Textpattern in documentation. Always spell ‘Textpattern’ out fully, when needed at all (see [**Bran name**](#brand-name)). Such abbreviations are convenient for informal exchange in the support forum, or whatever, but they are inconsistent and non-intuitive to the outside world, as well needless. And history has shown that most people can’t spell ‘Textpattern’ correctly as it is, so don’t make it worse by using cartoon abbreviations. There are only two exceptions to this rule: 1) If you’re writing tag notation (e.g. `<txp:love />`. 2) If you’re referring to ‘TXP Magazine’, which is unlikely in documentation.  
+**TXP, Txp, TxP, tXP, txp**. Do not use these pet abbreviations for Textpattern in documentation. Always spell ‘Textpattern’ out fully, when needed at all (see [**Brand name**](#brand-name)). Such abbreviations are convenient for informal exchange in the support forum, or whatever, but they are inconsistent and non-intuitive to the outside world, as well needless. And history has shown that most people can’t spell ‘Textpattern’ correctly as it is, so don’t make it worse by using cartoon abbreviations. There are only two exceptions to this rule: 1) If you’re writing tag notation (e.g. `<txp:love />`. 2) If you’re referring to ‘TXP Magazine’, which is unlikely in documentation.  
 
 ### Brand name
 
 Do not overuse the brand name, ‘Textpattern’, in documentation (or in any project), even if it’s part of a document title. For example, ‘Textpattern editorial style guide’ can easily be written and understood in context without adding the brand. Too much repetition of ‘Textpattern’ becomes monotonous, distracting, and sounding desperate. It’s a context that is already clear to readers by fact they are in the domain and using the software.
 
-Similarly, do not tack ‘CMS’ on the brand name at every opportunity. It looks like a bloated tick on a skinny dog’s ass. If your only reason for doing so is ‘SEO juice’, then you’ve already lost. People don’t care if it’s a content management system, a content publishing system, a blog engine, or magic website creator. If they can easily setup and publish to a website, that’s all that matters. Only use ’Textpattern’, when necessary at all.
+Similarly, do not tack ‘CMS’ on the brand name at every opportunity. It looks like a bloated tick on a skinny dog’s arse. If your only reason for doing so is ‘SEO juice’, then you’ve already lost. People don’t care anymore if it’s a content management system, a content publishing system, a blog engine, or a wizard’s wand. If they can easily setup and publish to a website, that’s all that matters.
 
 ## Formatting interface strings
 
-Interface strings are the text elements a user reads in the administration interface, from headers to form control labels to system feedback messages. Their consideration is critical to good software usability.
+Interface strings are the text elements a user reads in the administration interface; from headers to form control labels to system feedback messages. Consideration of these strings is critical for good software usability.
 
 Referring to them consistently yet unobtrusively in documentation is also critical. The balance between consistency and unobtrusiveness, however, can be challenging when many types of strings exist.
 
