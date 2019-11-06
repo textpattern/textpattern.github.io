@@ -259,7 +259,7 @@ Textpattern documentation aims for a clear and logical balance with seven format
 
 ### Headers, labels, and paths
 
-Most types of interface strings are summarized below. An explanation of why and how the rules were derived follows the examples.
+Most types of interface strings are demonstrated below. An explanation of why and how the rules were derived follows the examples. 
 
 Capitalized single words
 : Normal
@@ -285,54 +285,7 @@ File paths and names
 : Italic
 : Example 1: The login is found at *domain.tld/textpattern*.
 : Example 2: *.htaccess*, *index.php*
-
-Note that file paths and names should not be marked up as code unless they appear in an actual code snippet. Also, file extensions should always be added to file names.
-
-
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
-<caption>Table 1. Header, label, and file path strings</caption>
-<thead><tr>
-<th scope="col">String type</th>
-<th scope="col">Formatting</th>
-<th scope="col">Example</th>
-</tr></thead>
-<tbody>
-<tr>
-<th scope="row">Capitalized single words</th>
-<td>Normal</td>
-<td>The Write panel.</td>
-</tr>
-<tr>
-<th scope="row">Multiple words, no terminal punctuation</th>
-<td>Bold</td>
-<td>The <b>Date format</b> setting.</td>
-</tr>
-<tr>
-<th scope="row">Full-sentence strings with terminal punctuation</th>
-<td>Italic</td>
-<td>The <i>Prevent widowed words in article titles?</i> preference.</td>
-</tr>
-<tr>
-<th scope="row">Form control options</th>
-<td>Single quote marks</td>
-<td>Select ‘Yes’ from the drop-down options.</td>
-</tr>
-<tr>
-<th scope="row">Textpattern Form names</th>
-<td>Bold-italic</td>
-<td>The <b><i>comments_display</i></b> form.</td>
-</tr>
-<tr>
-<th scope="row">File paths and names&#x002a;</th>
-<td>Italic&#x2020;</td>
-<td><i>domain.tld/textpattern</i><br><i>.htaccess</i><br><i>index.php</i></td>
-</tr>
-</tbody>
-<tfoot><tr><td colspan="3"><ol>
-<li>Always show file extensions on file names!</li>
-<li>Do not format URLs and file paths as code unless they are part of an actual code snippet.</li>
-</ol></td></tr></tfoot>
-</table></div>
+: Notes: File paths and names should not be marked up as code unless they appear in an actual code snippet. Also, file extensions should always be added to file names.
 
 **Explanation of Table 1 rules:**
 
