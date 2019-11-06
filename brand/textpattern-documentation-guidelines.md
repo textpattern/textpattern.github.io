@@ -287,9 +287,7 @@ File paths and names
 : Example 2: *.htaccess*, *index.php*
 : Notes: File paths and names should not be marked up as code unless they appear in an actual code snippet. Also, file extensions should always be added to file names.
 
-**Explanation of Table 1 rules:**
-
-The following explains how the first five rules were derived.
+**Explanation of above rules:**
 
 Consider this hypothetical example:
 
@@ -297,18 +295,18 @@ Consider this hypothetical example:
 
 That’s a lot of distracting bold text, so, obviously, a single rule to make all interface strings bold is not ideal for documentation.
 
-However, not using bold is also problematic as strings containing multiple words in sentence-case (standard for the adminstration interface) get confused with normal text:
+However, not using bold is also problematic because strings containing multiple words in sentence-case (standard for the adminstration interface) get confused with normal text:
 
 > Set the Date format and Time zone in the Site section of Preferences.
 
 A readers eyes can easily distinguish the capital words, but not the additional words in the two strings using sentence-case (i.e. **Date format** and **Time zone**). So normal weight alone is also not going to work.
 
-Thus we can sensibly derive two of five rules for formatting interface strings in documentation: 
+Thus two rules are derived so far: 
 
 * Leave single-word strings in normal weight and let the capitalizations distinguish them from normal text (e.g. ‘the Site section of the Preferences panel’).
 * If multiple-word strings in sentence-case have no terminal punctuation, make them bold (e.g. ‘the **Date format** and **Time zone** settings in the Site section of the Preferences panel). 
 
-There are also many instances where strings can be full sentences with terminal punction, notably some of the settings in the Site section of Preferences. Consider this example: 
+There are also many instances where strings can be full sentences with terminal punction, notably some of the settings in the Site section of Preferences. Consider this hypothetical instruction example: 
 
 > You can control widowed words by selecting Yes for the Prevent widowed words in article titles? preference in the Site section of the Preferences panel.
 
@@ -318,16 +316,16 @@ On the other hand, bold seems a little overkill on full sentence labels, and pot
 
 > **Prevent widowed words in article titles?** Select ‘Yes’.
 
-But if we use italic (and proper sentence structure), it provides clear enough distinction without overbearing the text. And form control values like select box options can be single-quoted to easily distinguish them as well:
+But if italicized, with proper sentence structure, it provides clear enough distinction without overbearing the text. And form control values like select box options can be single-quoted to easily distinguish them as well:
 
 > Select 'Yes' on the *Prevent widowed words in article titles?* preference in the Site section of the Preferences panel to prevent widowed words. 
 
-Now we have two more of our five needed rules:
+That derives two more of the rules:
 
 * For full-sentence strings having terminal punctutation, make them italic (e.g. ‘the *Prevent widowed words in article titles?* setting’).
 * For form control options (i.e. select box values), make sure they are spelled and capitalized exactly as they appear in the interface and surround them with single quotes (e.g. ‘Yes’). 
 
-The final rule concerns strings that don’t follow the sentence-case convention, notably with respect to default form names (and other possible strings) that are not capitalized and use underscores when compound. They are not code, exactly, so code formatting is not approriate either. Since these will not be discussed frequently in documetation, we can format them as ***bold-italic*** (e.g. ‘the ***comments_display*** form’)
+Finally, there are strings that don’t follow the sentence-case convention, notably with respect to default form names (and other possible strings) that are not capitalized and use underscores when compound. They are not code, exactly, so code formatting is not approriate either. Since these will not be discussed frequently in documetation, we can format them as ***bold-italic*** (e.g. ‘the ***comments_display*** form’)
 
 ### Alert messages
 
