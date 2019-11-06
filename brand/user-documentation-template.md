@@ -10,7 +10,7 @@ description: A quick-start template for quickly structuring a new page in user d
 
 This page provides a quick-start markup template for new documentation pages, and description of the various elements. 
 
-For more insights about template authoring and editing, see the  [documentation guidelines](https://docs.textpattern.com/brand/textpattern-documentation-guidelines).
+For more insights about template authoring and editing, see the  [user documentation guidelines](https://docs.textpattern.com/brand/user-documentation-guidelines).
 
 ## Template markup
 
@@ -104,14 +104,14 @@ The `title` value will be the same as what you use in the `h1` header of the pag
 
 The `description` value should be a short description of the page’s topic and/or scope.
 
-As example, the metadata block for the [documentation guidelines](https://docs.textpattern.com/brand/textpattern-documentation-guidelines) page:
+As example, the metadata block for the [documentation guidelines](https://docs.textpattern.com/brand/user-documentation-guidelines) page:
 
 ```
 ---
 layout: document
 category: brand
 published: true
-title: Textpattern documentation guidelines
+title: Textpattern user documentation guidelines
 description: Guidelines for contributions to Textpattern CMS user documentation.
 ---
 ```
@@ -201,12 +201,12 @@ At the very bottom of the template is a heading for notes:
 
 Delete this line if you don’t use any endnotes in your documentation. 
 
-But if you _do_ use notes (see [Notes in main text](https://docs.textpattern.com/brand/textpattern-documentation-guidelines#notes-in-main-text) in the documentation guidelines), then leave this section header and the notes will appear under it automatically as endnotes.
+But if you _do_ use notes (see [Notes in main text](https://docs.textpattern.com/brand/user-documentation-guidelines#notes-in-main-text) in the documentation guidelines), then leave this section header and the notes will appear under it automatically as endnotes.
 
 ## Other content elements
 
 For the most part, using Markdown for various content elements like lists, blockquotes, code snippets, and inline formatting works just fine.
 
-Whenever Markdown can’t be used for adding a given content element, such elements will be described in the documentation guidelines. One example right now is tables, which must be added as regular HTML, and contained inside a special `div` wrapper. See [Tables (HTML only)](https://docs.textpattern.com/brand/textpattern-documentation-guidelines#tables-html-only).
+Whenever Markdown can’t be used for adding a given content element, such elements will be described in the documentation guidelines. One example right now is tables, which must be added as regular HTML, and contained inside a special `div` wrapper. See [Tables (HTML only)](https://docs.textpattern.com/brand/user-documentation-guidelines#tables).
 
 When in doubt about structuring a page or using a given content element, look at the structure for a page already in the folder you’re expecting to add to.
