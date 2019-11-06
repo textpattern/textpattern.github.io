@@ -259,7 +259,35 @@ Textpattern documentation aims for a clear and logical balance with seven format
 
 ### Headers, labels, and paths
 
-Most of the types of interface strings are summarized in Table 1. An explanation of how and why the rules were derived follows the table. 
+Most types of interface strings are summarized below. An explanation of why and how the rules were derived follows the examples.
+
+Capitalized single words
+: Normal
+: Example: ‘The Write panel.’
+
+Multiple words, no terminal punctuation
+: Bold
+: Example: The **Date format** setting.
+
+Full-sentence strings with terminal punctuation
+: Italic
+: Example: The *Prevent widowed words in article titles?* preference.
+
+Form control options
+: Single quote marks
+: Example: Select ‘Yes’ from the drop-down options.
+
+Textpattern Form names
+: Bold-italic
+: Example: The ***comments_display*** form.
+
+File paths and names
+: Italic
+: Example 1: The login is found at *domain.tld/textpattern*.
+: Example 2: *.htaccess*, *index.php*
+
+Note that file paths and names should not be marked up as code unless they appear in an actual code snippet. Also, file extensions should always be added to file names.
+
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
 <caption>Table 1. Header, label, and file path strings</caption>
@@ -354,7 +382,7 @@ Another type of interface string that needs documented are block element system 
 
 Alerts appear to users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages (e.g. when saving changings).
 
-Use Kramdown’s ‘inline attributes list’ syntax (see [**Selectors and attributes**](#selectors-and-attributes)) to style alerts as they appear in the interface. All alert blocks uses a common class, `.alert-block`, plus a unique one, as demonstrated in these hypothetical examples.
+Use Kramdown’s ‘inline attributes list’ syntax (see [**Selectors and attributes**](#selectors-and-attributes)) to style alerts as they appear in the interface. All alert blocks use a common class, `.alert-block`, plus a unique one, as demonstrated in these hypothetical examples.
 
 **Success alerts:**
 
@@ -540,11 +568,11 @@ Reference-mark notes are a common annotation device in information design, and a
 
 If a table ever needs more than six notes, which should be rare to never, the pattern repeats in duplicate (**, ††, ‡‡, §§, ¶¶, ‖‖), then triplicate, and so on. Try not to go that far.
 
-Consider the following table, which is an example of the notes in effect (as is [Table 1](#interface-headers-labels-and-file-paths)).
+Consider the following table, which is an example of the notes in effect.
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
 <table>
-<caption>Table 2. Reference-mark entities as table notes.</caption>
+<caption>Table 1. Reference-mark entities as table notes.</caption>
 <thead>
 <tr>
 <th scope="col">Name</th>
