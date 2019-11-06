@@ -289,10 +289,17 @@ Textpattern Form names
 
 File paths and names
 : Italic
-: Example 1: The login is found at *domain.tld/textpattern*.
-: Example 2: The contents of your *.htaccess* file will appear in the Diagnostics panel.
-: Example 3: The magic happens in the root *index.php* file, though you don’t see it.
-: Notes: Always include file extensions to file names. Do not mark up paths and file names as code unless they appear in an actual code snippet. Do not prefix directory names with a foreslash (e.g. */textpattern*) unless describing an actual URI path. Do not italicize these elements when used in a block list that represents a file tree structure (every item would be needlessly italicized). 
+: Example: Temporary directory path: */Users/name/Sites/sitename/textpattern/tmp*
+: Note: Ignore using italic if the path or name is part of a code block.
+
+**More on file paths and names**:  
+
+Quite often you may want or need to write file paths and file names in documentation that are not directly reflected in the administration interface (e.g. ‘The login is found at *domain.tld/textpattern*.’). Use italic in these cases too, in addition to the following:
+
+1. Always include file extensions on file names when the file name is used by itself (e.g. ‘The contents of your *.htaccess* file will appear in the Diagnostics panel.’).
+2. Do not mark up paths and file names as `code` unless they actually reflect lines from a code file.
+3. Do not prefix a directory name with a foreslash (e.g. */textpattern*) when referring to the name by itself.
+4. Do not italicize directory and file names when used in a list to show file tree structure; otherwise, every item would be needlessly italicized.
 
 **Explanation of above rules:**
 
