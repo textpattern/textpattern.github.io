@@ -21,16 +21,22 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
      * [Using repository Issues](#using-repository-issues)
      * [Determining new topics](#determining-new-topics)
   * [Revising existing pages](#revising-existing-pages)
-  * [Cross-linking](#cross-linking)
+* [Linking strategy](#linking-strategy)
+  * [Cross-links](#cross-links)
+  * [Anchor links](#anchor-links)
 * [Writing and editing](#writing-and-editing)
   * [Author perspective](#author-perspective)
   * [Concise writing tips](#concise-writing-tips)
-  * [Typos and grammar gotchas](#typos-and-grammar-gotchas)
-  * [Brand name usage](#brand-name-usage)
-  * [Administration panels context](#administration-panels-context)
-    * [Admin vs. administration vs. administrator](#admin-vs-administration-vs-administrator) 
+  * [Grammar and spelling traps](#grammar-and-spelling-traps)
+    * [Verb forms vs. noun forms](#verb-forms-vs-noun-forms)
+    * [Verb forms vs. noun forms](#verb-forms-vs-noun-forms)
+  * [Abbreviations](#abbreviations)
+  * [Brand name](#brand-name)
+  * [Administration panels context](#administration-panels-context) 
     * [Administration side vs. Administration-side](#administration-side-vs-administration-side)
-    * [Formatting interface strings](#formatting-interface-strings)
+* [Formatting interface strings](#formatting-interface-strings)
+  * [Headers, labels, and paths](#headers-labels-and-paths)
+  * [Alert messages](#alert-messages)
 * [Markup](#markup)
 	* [Selectors and attributes](#selectors-and-attributes)
 	* [Definition lists](#definition-lists)
@@ -131,23 +137,31 @@ Again, documentation is a community effort, and even editors must work together 
 
 > See something wrong in this document? Outdated info, a broken link, faulty code example, or whatever? Please [open an issue](https://github.com/textpattern/textpattern.github.io/issues) and we’ll investigate.
 
-### Cross-linking
+## Linking strategy
 
-Cross-linking between documentation pages and within a given page (i.e. anchor links) is important to link related topics in context. Try to find logical opportunities for cross-linking topics across pages.
+Try to keep a big-picture perspective on documentation and add logical bridges between related, helpful topics. This can be done by cross-linking between documentation pages and anchor-linking within a given page.
 
-However, don’t get overzealous about it. Documentation that is too full of links is distracting.
+There’s a side benefit from this too: as one becomes familiar with the big-picture, it gets easier to identify ROT (redundancy, outdated, trivial) material, thus ways to revise and refine documentation as a whole.
 
-Also, it’s best to refrain from cross-linking until it’s certain the concerned pages are pretty well past the _frequent revisions_ stage of editing, otherwise you likely have to correct a lot of broken cross links.  
+That said, there’s a point where too much linking can be distracting, so don’t fill a page up with a lot of links like a Wikipedia page. Likewise, refrain from adding bridge links too soon after creating new material. It never fails that several rounds of page editing are needed, and in-page anchor links, especially, are repeatedly broken before the content stabilizes.
 
-Finally, cross-links between documentation pages should also use absolute URLs, for example:
+### Cross-links
 
-> . . . the `[article_custom](https://docs.textpattern.com/tags/article_custom)` tag.
+Cross-links between documentation pages should use Markdown  link syntax and absolute URLs:
 
-But anchor links within a given page can be relative URLs, for example:
+```
+[link text](https://docs.textpattern.com/directory/page-title)
+```
 
-> (See `[**Writing and editing**](#writing-and-editing)` section.)
+### Anchor links
 
-Note it’s okay to make in-page anchor links bold, which helps distinguish them from external links.
+Anchor links within a given page will always point to a section header; the section where the relevant factoid is located:
+
+```
+[**Writing and editing**](#writing-and-editing)
+```
+
+Note it’s okay and recommended to make in-page anchor links bold, as indicated in the example, which readers will quickly distinguish (and understand) from external links.
 
 ## Writing and editing
 
@@ -155,7 +169,7 @@ In addition to the helpful guidelines below for writing and editing documentatio
 
 ### Author perspective
 
-The documentation is written from the perspective of an _anonymous_ expert to the first-time administrator. Therefore, documentation authors and editors must write in the _second-person_ point of view. Pronouns are ‘you’, ‘your’, and ‘yours’ when referring to the reader, the assumed administrator of a new Textpattern installation.
+Documentation is written from the perspective of an _anonymous_ expert to the first-time administrator. Therefore, documentation authors and editors must write in the _second-person_ point of view. Pronouns are ‘you’, ‘your’, and ‘yours’ when referring to the reader; the assumed administrator of a new Textpattern installation.
 
 For example:
 
@@ -163,19 +177,19 @@ For example:
 
 Never use the first-person singular or plural in regular user documentation. It's easy to slip into first-person plural mode with an official Textpattern voice (i.e. ‘we’ and ‘us’), but it’s unnecesary, and inappropriate for the targeted user documentation.
 
-Likewise, _never_ make it personal with pronouns like ‘I’, ‘me’, and ‘my’ no matter what type of documentation it is. Collaborative documentation is never about you, and the reader doesn’t care about you either. Take the second person stance and empower the reader. Make them feel like they're doing it alone, because they are. You're just an impartial voice over their shoulder guiding them along.
+Likewise, _never_ make it personal with pronouns like ‘I’, ‘me’, and ‘my’ no matter what type of documentation it is. Collaborative documentation is never about you, and the reader doesn’t care about you either. Sorry. Take the second person stance and empower the reader. Make them feel like they're doing it alone, because they are. You're just an impartial voice over their shoulder guiding them along.
 
 **Exceptions to the rule**
 
 The key is paying attention to the type of documentation you’re writing, or special contexts within the user documentation.
 
-For example, the above rules apply to _user_ documentation as described, so first-person should never be used, but it’s possible third-person could be in specific contexts, like when needing to guide the administrator with respect to other user accounts. For example:
+The above rules apply to _user_ documentation as described, so first-person should never be used, but it’s possible third-person could be in specific contexts, like when needing to guide the administrator with respect to other user accounts:
 
-> To change a user’s role, find and click their name in the Users panel . . .
+> To change a user’s role, find and click their name in the Users panel, the . . .
 
-The word to note there being ‘their’, a third-person plural pronoun. It could just as well be ‘his’ or ‘her’, too, third-person singular. But for the vast majority of documentation, you will never need these.
+The word ‘their’ is a third-person plural pronoun. It could just as well be ‘his’ or ‘her’, too, third-person singular. But for the vast majority of documentation, you will never need these.
 
-The other exception is with the type of documentation it is. Again, _user_ documentation abides by the above rules, but in materials like your reading now, written by editors for community collaboration. _We_ are speaking to eachother so use of ‘we’, a first-person plural pronoun, can be appropriate.
+Another exception is with regard to the type of documentation it is. Again, _user_ documentation abides by the above rules on perspective, but in materials like your reading now, written by editors for other editirial collaborators. _We_ are speaking to eachother so use of ‘we’, a first-person plural pronoun, can be appropriate at times.
 
 ### Concise writing tips
 
@@ -197,77 +211,53 @@ For example, ‘the really large code block’ or ‘only copy the lines between
 
 **Break long, multi-clause sentences into multiple shorter sentences**. Again, not always good advice for other types of writing, but for expository like documentation, it’s generally a good idea. Careful, though, sometimes a single longer sentence can read more smoothly if it's free of needless word bloat. Multiple shorter sentences doesn't mean result in choppy stilted reading. Use your best judgement.
 
-### Typos and grammar gotchas
+### Grammar and spelling traps
 
-As per the [editorial style guide](https://docs.textpattern.com/brand/textpattern-editorial-style-guide) user documentation is written using British-English spelling and punctuation conventions, notably those adopted by the *Oxford English Dictionary* and the *Oxford Style Manual*.
+As per the [editorial style guide](https://docs.textpattern.com/brand/textpattern-editorial-style-guide) user documentation uses British-English spelling and punctuation conventions, notably those recognized by the *Oxford English Dictionary* and the *Oxford Style Manual*.
 
-A few examples, as it may help with documentation are mentioned here:
+Following are some things to watch out for in user documentation specifically.
 
-#### Login vs. log in
+#### Verb forms vs. noun forms
 
-Use 'login' when it's a noun (e.g. ‘the login location’), but use 'log in' when it's a verb (e.g. ‘after you log in’ or ‘after logging in’). Likewise handling of ‘logout’ (noun) and ‘log out’ (verb).
+**Log in vs. login**. Use 'log in' when it's a verb (e.g. ‘after you log in’ or ‘after logging in’), but use ‘login' when it's a noun (e.g. ‘the login location’). Same handling for ‘logout’ (noun) and ‘log out’ (verb).
 
-#### Panel vs. tab
+#### Adjective forms vs. noun forms
 
-Do not use 'tab' (a depracated term) to refer to an administration-side panel, use 'panel’.[^tabs]
-
-The sole exception, of course, is in the case of [developer documentation](https://docs.textpattern.com/development/), where one might need to document, for plugin development reasons, the underlying code of the administration-pages. For example, this snippet from the Preferences panel involves a lot of use of `tab`, `tabs`, `tablist`, and `tabindex`:
-
-```
-<div role="group">
-<ul class="switcher-list ui-tabs-nav" role="tablist">
-<li role="tab" tabindex="0" class="ui-tabs-tab ui-tab ui-tabs-active ui-state-active" aria-controls="prefs_group_site" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true"><a data-txp-pane="site" data-txp-token="a95e6b7ac5f4e49261bbca40e4c20e52" href="#prefs_group_site" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Site</a></li>
-<li role="tab" tabindex="-1" class="ui-tabs-tab ui-tab" aria-controls="prefs_group_admin" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a data-txp-pane="admin" data-txp-token="b779d31464114db7dcd3aeb3cac06643" href="#prefs_group_admin" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">Admin</a></li>
-. . .
-</ul>
-</div>
-```
-
-[^tabs]: ’Tabs’ was the common reference used years ago when the administration side’s visual design looked like manilla file folders with tabs. The refence was obsolete and confusing when the new Hive design was adopted.
-
-### Brand name usage
-
-Do not use Textpattern brand acronyms like ‘Txp’ and ‘TXP’ in documentation. Always spell ‘Textpattern’ out fully, when it’s even needed at all. You might be surprised how much you can drop it.
-
-These pet abbreviations of the brand name are convenient for use in the support forum, but they are inconsistent and non-intuitive to the outside world, as well needless. And history has shown that most people can’t spell ‘Textpattern’ correctly, so don’t make it worse by using abbreviations.
-
-At the same time, do not overuse the brand name in documentation (or in any project), even if it’s part of a document title. Too much repetition of ‘Textpattern’ becomes monotonous and distracting. It’s a context that is already clear to readers by fact the are using the software.
-
-### Administration panels context
-
-These guidelines are important for writing about the adminstration side in a clear and consistent manner throughout documentation. They also have important implications for plugin authors, who should follow the same editorial guidelines in their [plugin help files](https://docs.textpattern.com/development/plugin-template-help).
-
-#### Admin vs. administration vs. administrator
-
-Using ‘admin’ as an abbreviation can lead to confusion about what is meant.
-
-**Admin** is a top-level panel in the administration side, and it’s the _only_ time when the abbreviation should be used in user documentation.
-
-Do not use ‘admin’ to mean an administrator, and do not use ‘admin side’ (or ‘admin-side’) to mean the administration side of the software. In both cases it’s lazy writing. Always write ‘adminstration’ when meaning the administration side, and always write ‘administrator’ when meaning the Textpattern site administrator.
-
-This also helps avoid mistakes between noun and adjective usage, as explained next.
-
-#### Administration side vs. Administration-side
-
-When referring to the administration side, make sure you are doing so correctly between noun (no hyphen) and adjective (hyphenated) forms.
+**Administration side vs. Administration-side**. When referring to the administration side, make sure you are doing so correctly between noun (no hyphen) and adjective (hyphenated) forms.
 
 A noun form example:
 
-> The login to the administration side is located at . . .
+> ’The login to the administration side is located at . . .’
 
-An adjective form example:
+An adjective form example: 
 
-> The default top-level administration-side panels are Content, Presentation, and Admin. 
+> ’The default top-level administration-side navigation links are Content, Presentation, and Admin.’
 
-#### Formatting interface strings
+### Abbreviations
+
+Do not be lazy and abbreviate words that are not either common proper nouns (e.g. HTML, CSS, and so on) or Latin used in parentheses (n.b., i.e., e.g., etc.).
+
+Specific examples:
+
+**Admin**. Never use this abbreviation in writing unless you are specifically referring to the Admin navigation label in the administration side. Any other use of ‘admin’ can lead to confusion about what is meant. Whether you mean ‘administration’ or ‘administrator’, write it out fully every time so the meaning and context is perfectly clear. This includes writing ‘administration side’ (noun form) and ‘administration-side’ (adjective form) with regard to the administration side of the software.
+
+**TXP, Txp, TxP, tXP, txp**. Do not use these pet abbreviations for Textpattern in documentation. Always spell ‘Textpattern’ out fully, when needed at all (see [**Bran name**](#brand-name)). Such abbreviations are convenient for informal exchange in the support forum, or whatever, but they are inconsistent and non-intuitive to the outside world, as well needless. And history has shown that most people can’t spell ‘Textpattern’ correctly as it is, so don’t make it worse by using cartoon abbreviations. There are only two exceptions to this rule: 1) If you’re writing tag notation (e.g. `<txp:love />`. 2) If you’re referring to ‘TXP Magazine’, which is unlikely in documentation.  
+
+### Brand name
+
+Do not overuse the brand name, ‘Textpattern’, in documentation (or in any project), even if it’s part of a document title. For example, ‘Textpattern editorial style guide’ can easily be written and understood in context without adding the brand. Too much repetition of ‘Textpattern’ becomes monotonous, distracting, and sounding desperate. It’s a context that is already clear to readers by fact they are in the domain and using the software.
+
+Similarly, do not tack ‘CMS’ on the brand name at every opportunity. It looks like a bloated tick on a skinny dog’s ass. If your only reason for doing so is ‘SEO juice’, then you’ve already lost. People don’t care if it’s a content management system, a content publishing system, a blog engine, or magic website creator. If they can easily setup and publish to a website, that’s all that matters. Only use ’Textpattern’, when necessary at all.
+
+## Formatting interface strings
 
 Interface strings are the text elements a user reads in the administration interface, from headers to form control labels to system feedback messages. Their consideration is critical to good software usability.
 
 Referring to them consistently yet unobtrusively in documentation is also critical. The balance between consistency and unobtrusiveness, however, can be challenging when many types of strings exist.
 
-Textpattern documentation aims for a clear and logical balance with seven formatting rules, summarized in the next two tables. Seven sounds like a lot, but they will make sense when you review them.
+Textpattern documentation aims for a clear and logical balance with seven formatting rules, detailed in the rest of this section. Seven sounds like a lot, but they will make sense when you consider them.
 
-##### Interface headers, labels, and file paths
+### Headers, labels, and paths
 
 Most of the types of interface strings are summarized in Table 1. An explanation of how and why the rules were derived follows the table. 
 
@@ -358,7 +348,7 @@ Now we have two more of our five needed rules:
 
 The final rule concerns strings that don’t follow the sentence-case convention, notably with respect to default form names (and other possible strings) that are not capitalized and use underscores when compound. They are not code, exactly, so code formatting is not approriate either. Since these will not be discussed frequently in documetation, we can format them as ***bold-italic*** (e.g. ‘the ***comments_display*** form’)
 
-##### Alert message strings
+### Alert messages
 
 Another type of interface string that needs documented are block element system alerts, of which there are four types: success, information, warning, or error.
 
@@ -645,7 +635,7 @@ From hereon, we refer to them simply as _notes_, as all leading references like 
 
 **Adding the syntax:**
 
-You may or not be aware that Kramdown notes function the same way whether you write inline markers as numerals in sequence (i.e. `[^1]`, `[^2]`, `[^3]`, . . .) or as unique text-like tags, whatever you choose to use (e.g. `[^dope]`, `[^dongle]`, `[^dingo]`, . . .). Either way, the resulting endnotes list is an ordered list of arabic numerals.
+You may or not be aware that Kramdown notes function the same way whether you write inline markers as numerals in sequence (`[^1]`, `[^2]`, etc.) or as unique terms, whatever you choose to use (e.g. `[^dope]`, `[^dongle]`, `[^dingo]`, . . .). Either way, the resulting endnotes list is an ordered list of arabic numerals.
 
 Thus, using text as inline markers is a better way to go, because:
 
@@ -656,17 +646,13 @@ Skip the madness and use text markers only. It’s easier.
 
 **Example of notes usage:**
 
-This document uses three notes. The first comes way up in the [**Panel vs. tab**](#panel-vs-tab) section. The second comes in the [**Selectors and attributes**](#selectors-and-attributes) section. And the third in this section on notes. In each case, you will see the inline marker as a superscript ‘1’, ‘2’, and ‘3’, respectively, at the end of sentences.
+This document uses two notes. One comes in the [**Selectors and attributes**](#selectors-and-attributes) section, and the other in this section on notes. In each case, you will see the inline marker as a superscript ‘1’ and ‘2’, respectively, at the end of sentences.
 
-The actual markers used in the markup are: `[^tabs]`, `[^selectors]`, and `[^notes]`. Each note marker uses a word relevant to the topic. Logical.
+The actual markers used in the markup are: `[^selectors]` and `[^notes]`. Each note marker uses a word relevant to the topic. Logical.
 
-The notes themselves are added at the bottoms of the sections they appear in. Sure, you could have notes spread out through the document like that. But by putting them at the ends of the sections they belong to, it’s easy to find and edit them in context, instead of jumping up and down in the document.
+The notes themselves are added at the bottoms of the sections they appear in. Sure, you could end up having notes spread out through the document this way. But by putting them at the ends of the sections they belong to, it’s easy to find and edit them in context, instead of jumping up and down in the document.
 
 Each note begins with the same marker used inline, followed by a `:`
-
-```
-[^tabs]: ’Tabs’ was the common reference used years ago . . .
-```
 
 ```
 [^selectors]: See https://kramdown.gettalong.org/syntax.html#inline-attribute-lists.
