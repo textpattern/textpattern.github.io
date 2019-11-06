@@ -235,19 +235,25 @@ Noun form example:
 
 ### Abbreviations
 
-Do not be lazy and abbreviate words that are not either common proper nouns (e.g. HTML, CSS, and so on) or Latin used in parentheses (n.b., i.e., e.g., etc.).
+Except for common proper nouns of well-recognized technologies (HTML, CSS, PHP, and so on), or Latin used in parenthetical notation (n.b., i.e., e.g., etc.), do not abbreviate any words or proper nouns.
 
-Specific examples:
+Specific examples follow.
 
-**Admin**. Never use this abbreviation in writing unless you are specifically referring to the Admin navigation label in the administration side. Any other use of ‘admin’ can lead to confusion about what is meant. Whether you mean ‘administration’ or ‘administrator’, write it out fully every time so the meaning and context is perfectly clear. This includes writing ‘administration side’ (noun form) and ‘administration-side’ (adjective form) with regard to the administration side of the software.
+**Admin**:
+Never use this abbreviation unless you are specifically referring to the Admin section or navigation label in the administration side of the software. Any other use of ‘admin’ can lead to confusion about what is meant. Whether you mean ‘administration’ or ‘administrator’, write it out fully every time so the meaning and context is perfectly clear. This includes writing ‘administration side’ (noun form) and ‘administration-side’ (adjective form).
 
-**TXP, Txp, TxP, tXP, txp**. Do not use these pet abbreviations for Textpattern in documentation. Always spell ‘Textpattern’ out fully, when needed at all (see [**Brand name**](#brand-name)). Such abbreviations are convenient for informal exchange in the support forum, or whatever, but they are inconsistent and non-intuitive to the outside world, as well needless. And history has shown that most people can’t spell ‘Textpattern’ correctly as it is, so don’t make it worse by using cartoon abbreviations. There are only two exceptions to this rule: 1) If you’re writing tag notation (e.g. `<txp:love />`. 2) If you’re referring to ‘TXP Magazine’, which is unlikely in documentation.  
+**TXP, Txp, TxP, tXP, txp**:
+Do not use these pet abbreviations for Textpattern in documentation. Always spell ‘Textpattern’ out fully, when needing to use the brand name at all (see [**Brand name**](#brand-name)). Abbreviations like these are convenient for informal exchange in the support forum, but they are inconsistent and non-intuitive to the outside world, and needless in documentation. Besides, history has shown that most people still can’t spell ‘Textpattern’ correctly, so don’t make it worse by using cartoon abbreviations. There are two exceptions: 1) If you’re writing tag notation (e.g. `<txp:love />`. 2) If you’re referring to ‘TXP Magazine’, which is unlikely in documentation.  
 
 ### Brand name
 
-Do not overuse the brand name, ‘Textpattern’, in documentation (or in any project), even if it’s part of a document title. For example, ‘Textpattern editorial style guide’ can easily be written and understood in context without adding the brand. Too much repetition of ‘Textpattern’ becomes monotonous, distracting, and sounding desperate. It’s a context that is already clear to readers by fact they are in the domain and using the software.
+When you need to use the brand name, just use ’Textpattern’. Do not tack on ‘CMS’ (i.e. ‘Textpattern CMS’); it looks like a bloated tick on a skinny dog’s arse. If that was really meant as part of the name, you would write it more seriously as ’Textpattern Content Management System’, and who wants to write that every time? Nobody.
 
-Similarly, do not tack ‘CMS’ on the brand name at every opportunity. It looks like a bloated tick on a skinny dog’s arse. If your only reason for doing so is ‘SEO juice’, then you’ve already lost. People don’t care anymore if it’s a content management system, a content publishing system, a blog engine, or a wizard’s wand. If they can easily setup and publish to a website, that’s all that matters.
+The world has moved on and nobody cares anymore if software is a content management system, a content publishing system, a blog engine, or a wizard’s wand. If they can easily set up the software and publish content to a website, that’s all that matters.
+
+When distinguishing between the software and the project, the name becomes an proper adjective: ’Textpattern software’ or the ‘Textpattern project’.
+
+No matter what, do not overuse the brand name in user documentation (or in any project). Too much repetition of ‘Textpattern’ becomes monotonous, distracting, and a little desperate sounding. The context of being a Textpattern resource is already clear to readers by fact they are in the domain and using the software.
 
 ## Formatting interface strings
 
@@ -284,8 +290,9 @@ Textpattern Form names
 File paths and names
 : Italic
 : Example 1: The login is found at *domain.tld/textpattern*.
-: Example 2: *.htaccess*, *index.php*
-: Notes: File paths and names should not be marked up as code unless they appear in an actual code snippet. Also, file extensions should always be added to file names.
+: Example 2: The contents of your *.htaccess* file will appear in the Diagnostics panel.
+: Example 3: The magic happens in the root *index.php* file, though you don’t see it.
+: Notes: Always include file extensions to file names. Do not mark up paths and file names as code unless they appear in an actual code snippet. Do not prefix directory names with a foreslash (e.g. */textpattern*) unless describing an actual URI path. Do not italicize these elements when used in a block list that represents a file tree structure (every item would be needlessly italicized). 
 
 **Explanation of above rules:**
 
@@ -368,7 +375,7 @@ Warning alert.
 
 Example:
 
-Uh, that’s a cliff, dude…
+Watch your step.
 {: .alert-block .warning}
 
 **Error alerts:**
