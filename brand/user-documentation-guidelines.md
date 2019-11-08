@@ -2,13 +2,13 @@
 layout: document
 category: Brand
 published: true
-title: Textpattern documentation guidelines
+title: Textpattern user documentation guidelines
 description: Guidelines for contributions to Textpattern CMS user documentation.
 ---
 
-# Textpattern documentation guidelines
+# Textpattern user documentation guidelines
 
-These guidelines, an extension of Textpattern’s [editorial style guide](https://docs.textpattern.com/brand/textpattern-editorial-guide), are specifically for the editorial upkeep of the [Textpattern user documentation](https://docs.textpattern.com/). Documentation editors, authors, and all interested contributors will want to read up here.
+These guidelines, an extension of Textpattern’s [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide), are specifically for the editorial upkeep of the [Textpattern user documentation](https://docs.textpattern.com/). Documentation editors, authors, and all interested contributors will want to read up here.
 
 **On this page:**
 
@@ -26,16 +26,10 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
   * [Anchor links](#anchor-links)
 * [Writing and editing](#writing-and-editing)
   * [Author perspective](#author-perspective)
-  * [Concise writing tips](#concise-writing-tips)
-  * [Grammar and spelling traps](#grammar-and-spelling-traps)
-    * [Verb forms vs. noun forms](#verb-forms-vs-noun-forms)
-    * [Verb forms vs. noun forms](#verb-forms-vs-noun-forms)
   * [Abbreviations](#abbreviations)
   * [Brand name](#brand-name)
-  * [Administration panels context](#administration-panels-context) 
-    * [Administration side vs. Administration-side](#administration-side-vs-administration-side)
 * [Formatting interface strings](#formatting-interface-strings)
-  * [Headers, labels, and paths](#headers-labels-and-paths)
+  * [Headers, labels, and paths](#headers-labels-options-and-paths)
   * [Alert messages](#alert-messages)
 * [Markup](#markup)
 	* [Selectors and attributes](#selectors-and-attributes)
@@ -47,7 +41,7 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
 
 ## Target audience
 
-The target audience of user documentation is primarily new users of [Textpattern CMS](https:/textpattern.com), notably _administrators_, since that role is automatically adopted when installing Textpattern software.
+The target audience of user documentation is primarily new users of [Textpattern](https:/textpattern.com), notably _administrators_, since that role is automatically adopted when installing Textpattern software.
 
 ## Scope and depth of material
 
@@ -67,9 +61,9 @@ Else, a page can be removed, upon editor review, if the effort to revise it is n
 
 ### Depth of page content
 
-A given page should only be as explanatory as necessary. Thorough, but not belabouring every possible granule of consideration. (See [**Revising existing pages**](#revising-existing-pages).)
+A given page should only be as explanatory as necessary. Thorough, but not belabouring every possible factoid. (See [Revising existing pages](#revising-existing-pages) section.)
 
-Rely on the usability of Textpattern’s interface, and leave some benefit of doubt to the user. Only fill out topic minutiae when it may help clear up questions repeatedly raised about it in the [community forum](https://forum.textpattern.com/). (See [**Determining new topics**](#determining-new-topics).)
+Rely on the usability of Textpattern’s interface, and leave some benefit of doubt to the user. Only fill out topic minutiae when it may help clear up questions repeatedly raised about it in the [community forum](https://forum.textpattern.com/). (See [Determining new topics](#determining-new-topics) section.)
 
 For example, administration-side panels strive to be as intuitive as possible by design. Perhaps not perfect but always improving. Therefore, it’s probably not necessary to meticulously document panel functionality in minute detail, especially as the panels provide help tips in context of a given function or widget.
 
@@ -77,7 +71,7 @@ Before writing or revising documentation on the administration-side functionalit
 
 When fine-grain descriptions are warranted on a page, but the page starts feeling overly dense, or you are inclined to use a lot of parenthetical notes in sentences, consider [using notes](#using-notes) instead.
 
-No matter what, main text or notes, ensure you’re not using more words than necessary to convey a useful fact. (See [**Concise writing tips**](#concise-writing-tips).
+No matter what, main text or notes, ensure you’re not using more words than necessary to convey a useful fact. (See [Concise writing tips](#concise-writing-tips) section.)
 
 ## Collaborative editing process
 
@@ -95,7 +89,7 @@ Creation of new pages is managed through repository issues, and determined by mo
 
 #### Using repository Issues 
 
-When editors anticipate the need for a new page but do not yet create them for whatever reason, they will create an [Issue](https://github.com/textpattern/textpattern.github.io/issues) for the page and flag it with the ‘**New page needed**’ label. The issue should make it clear the nature of the page, where it might go in the documentation tree, and how it should be [cross-linked](#cross-linking) with other pages in context.
+When editors anticipate the need for a new page but do not yet create them for whatever reason, they will create an [Issue](https://github.com/textpattern/textpattern.github.io/issues) for the page and flag it with the ‘**New page needed**’ label. The issue should make it clear the nature of the page, where it might go in the documentation tree, and how it should be [cross-linked](#cross-links) with other pages in context.
 
 If you think a documentation page is needed but an issue doesn’t exist for it, create the issue so that editors may help decide how and where to integrate the material. Perhaps you’ve really found a gap in useful information, but it’s better to add it somewhere existing than to start a new page. Editors help figure these things out.
 
@@ -155,17 +149,19 @@ Cross-links between documentation pages should use Markdown  link syntax and abs
 
 ### Anchor links
 
-Anchor links within a given page will always point to a section header; the section where the relevant factoid is located:
+Anchor links are links within a given page, pointing from one section location to another, to bridge related information in context.
+
+The links are relative links, and ideally applied at the ends of relevant paragraphs as a parenthetical with the following simple pattern:
 
 ```
-[**Writing and editing**](#writing-and-editing)
+. . . end of paragraph. (See [Target section](#target-section) section.)
 ```
 
-Note it’s okay and recommended to make in-page anchor links bold, as indicated in the example, which readers will quickly distinguish (and understand) from external links.
+The consistent placement and parenthetical pattern of anchor links makes them clear to readers that they are in-page links. 
 
 ## Writing and editing
 
-In addition to the helpful guidelines below for writing and editing documentation, see the baseline [editorial style guide](https://docs.textpattern.com/brand/textpattern-editorial-style-guide) for style conventions in general. 
+In addition to the helpful guidelines below for writing and editing documentation, see the baseline [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide) for style conventions in general. 
 
 ### Author perspective
 
@@ -175,85 +171,29 @@ For example:
 
 > Click your name in the Users panel to change your email.
 
-Never use the first-person singular or plural in regular user documentation. It's easy to slip into first-person plural mode with an official Textpattern voice (i.e. ‘we’ and ‘us’), but it’s unnecesary, and inappropriate for the targeted user documentation.
+Never use the first-person singular or plural in regular user documentation. It's easy to slip into first-person plural mode with an official Textpattern voice (i.e. ‘we’ and ‘us’), but it’s unnecesary, and inappropriate for the targeted user documentation.[^we]
 
 Likewise, _never_ make it personal with pronouns like ‘I’, ‘me’, and ‘my’ no matter what type of documentation it is. Collaborative documentation is never about you, and the reader doesn’t care about you either. Sorry. Take the second person stance and empower the reader. Make them feel like they're doing it alone, because they are. You're just an impartial voice over their shoulder guiding them along.
 
-**Exceptions to the rule**
+**Exception to the rule**:
 
-The key is paying attention to the type of documentation you’re writing, or special contexts within the user documentation.
+There is at least one exception to the perspective rule. It’s possible third-person could be used in specific contexts, like when guiding the administrator on user accounts:
 
-The above rules apply to _user_ documentation as described, so first-person should never be used, but it’s possible third-person could be in specific contexts, like when needing to guide the administrator with respect to other user accounts:
+> To change a user’s role, find and click their name in the Users panel . . .
 
-> To change a user’s role, find and click their name in the Users panel, the . . .
+‘Their’ is a third-person plural pronoun. It could just as well be third-person singular (his/her). But for the vast majority of documentation, you will never need to do this.
 
-The word ‘their’ is a third-person plural pronoun. It could just as well be ‘his’ or ‘her’, too, third-person singular. But for the vast majority of documentation, you will never need these.
+Another exception is with regard to materials like you are reading now, written by editors for other editorial collaborators. _We_ are speaking to each other, so use of ‘we’, a first-person plural pronoun, can be appropriate at times.
 
-Another exception is with regard to the type of documentation it is. Again, _user_ documentation abides by the above rules on perspective, but in materials like your reading now, written by editors for other editirial collaborators. _We_ are speaking to eachother so use of ‘we’, a first-person plural pronoun, can be appropriate at times.
-
-### Concise writing tips
-
-To improve the readability of documentation, write as concisely as you can. There are several effective ways to achieve this.
-
-**Use the appropriate [author perspective](#author-perspective)**. When you don't centre the writing around your own point of view and wit, you say a lot less. It's magic.
-
-**Avoid passive verb structures**. Verb structures like _to be/have_, _could be/have_, _should be/have_, _might be/have_, and so forth are not only miserable to read, but they bloat copy with unnecessary words. You are the expert giving the sound advice, so assume the role. Find a more direct and active way of word phrases. Using a generic structure as example: ‘put this thing there’ is far cleaner and direct than either ‘you should put this thing there’ or ‘that thing should be put there’. Both are lousy. If a reader doesn’t want to put something somewhere, they won’t, but they’ll appreciate you weren’t wishy-washy about the instruction. Kill the passive verb structures.
-
-**Avoid useless adverbs**. Adverbs like _very_, _really_, _only_, and others are commonly used in speech when we talk to each other, and in that context are easily overlooked, but they look and read terrible in writing, and add considerable bloat to documents when all tallied up.
-
-For example, ‘the really large code block’ or ‘only copy the lines between x and y’ are bloated ways of writing ‘the large code block’ and ‘copy the lines between x and y’. There’s no loss of meaning or  instruction by dropping the needless adverbs, and it reads a lot better too.
-
-**Question every use of "that" and "just”**. It's easy to abuse both words. Every time you use ‘that’ or ‘just’ in a sentence, read the sentence without using the words and see if it still makes sense. Most of the time it will. If it does, leave the words out.
-
-**Avoid overuse of adverbs, idioms, and other partial clauses at the beginnings or endings of sentences**. Excessive use of ’meanwhile’, ’on the other hand’, ‘however’, ’in other words’, ‘nevertheless’, and so forth can bore a reader quickly. This doesn't mean never use them, but if you're using them regularly, in every paragraph, it's too much. Rewrite the sentences more concisely without the clauses.
-
-**Cut any words until you can’t**. This is not always the best advice for descriptive, persuasive, and narrative writing, but it’s absolutely solid advice for expository writing, and that’s what typ of writing documentation is. Every word provides value and clarity, or delete it out.
-
-**Break long, multi-clause sentences into multiple shorter sentences**. Again, not always good advice for other types of writing, but for expository like documentation, it’s generally a good idea. Careful, though, sometimes a single longer sentence can read more smoothly if it's free of needless word bloat. Having multiple shorter sentences does not mean end up having choppy, stilted reading. Use your best judgement.
-
-### Grammar and spelling traps
-
-As per the [editorial style guide](https://docs.textpattern.com/brand/textpattern-editorial-style-guide) user documentation uses British-English spelling and punctuation conventions, notably those recognized by the *Oxford English Dictionary* and the *Oxford Style Manual*.
-
-Following are some things to watch out for in user documentation specifically.
-
-#### Verb forms vs. noun forms
-
-**Log in vs. login**. Use 'log in' when it's a verb (e.g. ‘after you log in’ or ‘after logging in’), but use ‘login' when it's a noun (e.g. ‘the login location’). Same handling for ‘logout’ (noun) and ‘log out’ (verb).
-
-#### Adjective forms vs. noun forms
-
-**Administration-side vs. Administration side**. When referring to the administration side, make sure you are doing so correctly between noun (no hyphen) and adjective (hyphenated) forms.
-
-Adjective form example: 
-
-> ’The default top-level administration-side navigation links are Content, Presentation, and Admin.’
-
-Noun form example:
-
-> ’The login to the administration side is located at . . .’
+[^we]: It’s okay to use first-person plural (i.e. *we*, *us*) in editor [collaboration](user-documentation-collaboration) materials because *we* are speaking among ourselves.
 
 ### Abbreviations
 
-Except for common proper nouns of well-recognized technologies (HTML, CSS, PHP, and so on), or Latin used in parenthetical notation (n.b., i.e., e.g., etc.), do not abbreviate any words or proper nouns.
-
-Specific examples follow.
-
-**Admin**:
-Never use this abbreviation unless you are specifically referring to the Admin section or navigation label in the administration side of the software. Any other use of ‘admin’ can lead to confusion about what is meant. Whether you mean ‘administration’ or ‘administrator’, write it out fully every time so the meaning and context is perfectly clear. This includes writing ‘administration side’ (noun form) and ‘administration-side’ (adjective form).
-
-**TXP, Txp, TxP, tXP, txp**:
-Do not use these pet abbreviations for Textpattern in documentation. Always spell ‘Textpattern’ out fully, when needing to use the brand name at all (see [**Brand name**](#brand-name)). Abbreviations like these are convenient for informal exchange in the support forum, but they are inconsistent and non-intuitive to the outside world, and needless in documentation. Besides, history has shown that most people still can’t spell ‘Textpattern’ correctly, so don’t make it worse by using cartoon abbreviations. There are two exceptions: 1) If you’re writing tag notation (e.g. `<txp:love />`. 2) If you’re referring to ‘TXP Magazine’, which is unlikely in documentation.  
+See baselines in the similarly-named section of the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide#abbreviations). With respect to user documentation, two topics there are especialy important to review: the avoidance of common-word abbreviations (e.g. ‘admin’), and the recommended use of Latin idioms as abbreviations in parenthetical notes.
 
 ### Brand name
 
-When you need to use the brand name, just use ’Textpattern’. Do not tack on ‘CMS’ (i.e. ‘Textpattern CMS’); it looks like a bloated tick on a skinny dog’s arse. If that was really meant as part of the name, you would write it more seriously as ’Textpattern Content Management System’, and who wants to write that every time? Nobody.
-
-The world has moved on and nobody cares anymore if software is a content management system, a content publishing system, a blog engine, or a wizard’s wand. If they can easily set up the software and publish content to a website, that’s all that matters.
-
-When distinguishing between the software and the project, the name becomes an proper adjective: ’Textpattern software’ or the ‘Textpattern project’.
-
-No matter what, do not overuse the brand name in user documentation (or in any project). Too much repetition of ‘Textpattern’ becomes monotonous, distracting, and a little desperate sounding. The context of being a Textpattern resource is already clear to readers by fact they are in the domain and using the software.
+See baselines in the similarly-named section of the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide#brand-name). Particularly in documentation, do not overuse the brand name. The context of being a Textpattern resource is already clear to readers by fact they are using the software and in the documentation domain.
 
 ## Formatting interface strings
 
@@ -263,7 +203,7 @@ Referring to them consistently yet unobtrusively in documentation is also critic
 
 Textpattern documentation aims for a clear and logical balance with seven formatting rules, detailed in the rest of this section. Seven sounds like a lot, but they will make sense when you consider them.
 
-### Headers, labels, and paths
+### Headers, labels, options, and paths
 
 Most types of interface strings are demonstrated below. An explanation of why and how the rules were derived follows the examples. 
 
@@ -300,46 +240,6 @@ Quite often you may want or need to write file paths and file names in documenta
 2. Do not mark up paths and file names as `code` unless they actually reflect lines from a code file.
 3. Do not prefix a directory name with a foreslash (e.g. */textpattern*) when referring to the name by itself.
 4. Do not italicize directory and file names when used in a list to show file tree structure; otherwise, every item would be needlessly italicized.
-
-**Explanation of above rules:**
-
-Consider this hypothetical example:
-
-> Set the **Date format** and **Time zone** in the **Site** section of **Preferences**.
-
-That’s a lot of distracting bold text, so, obviously, a single rule to make all interface strings bold is not ideal for documentation.
-
-However, not using bold is also problematic because strings containing multiple words in sentence-case (standard for the adminstration interface) get confused with normal text:
-
-> Set the Date format and Time zone in the Site section of Preferences.
-
-A readers eyes can easily distinguish the capital words, but not the additional words in the two strings using sentence-case (i.e. **Date format** and **Time zone**). So normal weight alone is also not going to work.
-
-Thus two rules are derived so far: 
-
-* Leave single-word strings in normal weight and let the capitalizations distinguish them from normal text (e.g. ‘the Site section of the Preferences panel’).
-* If multiple-word strings in sentence-case have no terminal punctuation, make them bold (e.g. ‘the **Date format** and **Time zone** settings in the Site section of the Preferences panel). 
-
-There are also many instances where strings can be full sentences with terminal punction, notably some of the settings in the Site section of Preferences. Consider this hypothetical instruction example: 
-
-> You can control widowed words by selecting Yes for the Prevent widowed words in article titles? preference in the Site section of the Preferences panel.
-
-The setting label is practically invisible in normal weight. Easily overlooked. And that mysterious ‘Yes’ is an option value, not a label, so it’s breaking our first rule.
-
-On the other hand, bold seems a little overkill on full sentence labels, and potentially confusing if the sentence is written lazy (’Is this something the author is asking me?’):
-
-> **Prevent widowed words in article titles?** Select ‘Yes’.
-
-But if italicized, with proper sentence structure, it provides clear enough distinction without overbearing the text. And form control values like select box options can be single-quoted to easily distinguish them as well:
-
-> Select 'Yes' on the *Prevent widowed words in article titles?* preference in the Site section of the Preferences panel to prevent widowed words. 
-
-That derives two more of the rules:
-
-* For full-sentence strings having terminal punctutation, make them italic (e.g. ‘the *Prevent widowed words in article titles?* setting’).
-* For form control options (i.e. select box values), make sure they are spelled and capitalized exactly as they appear in the interface and surround them with single quotes (e.g. ‘Yes’). 
-
-Finally, there are strings that don’t follow the sentence-case convention, notably with respect to default form names (and other possible strings) that are not capitalized and use underscores when compound. They are not code, exactly, so code formatting is not approriate either. Since these will not be discussed frequently in documetation, we can format them as ***bold-italic*** (e.g. ‘the ***comments_display*** form’)
 
 ### Alert messages
 
