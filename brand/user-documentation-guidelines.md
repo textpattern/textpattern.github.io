@@ -29,7 +29,7 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
   * [Abbreviations](#abbreviations)
   * [Brand name](#brand-name)
 * [Formatting interface strings](#formatting-interface-strings)
-  * [Headers, labels, and paths](#headers-labels-options-and-paths)
+  * [Headers, labels, options, and paths](#headers-labels-options-and-paths)
   * [Alert messages](#alert-messages)
 * [Markup](#markup)
 	* [Selectors and attributes](#selectors-and-attributes)
@@ -49,9 +49,9 @@ The scope and depth of user documentation should be what is needed and not more.
 
 ### Scope of documentation
 
-The scope of the documentation is primarily on the software’s core functionality, the out-of-the-box features and capabilities.
+The scope of the documentation is primarily on the software’s core functionality. The out-of-the-box features and capabilities.
 
-To a lessere degree, and needing less focus, the documentation also harbours [plugin development resources](https://docs.textpattern.com/development/) and Textpattern [brand identity and collaboration information](https://docs.textpattern.com/brand/), including these guidelines.
+Until further notice, and to a lessere degree, the user documentation site also harbours [plugin development resources](https://docs.textpattern.com/development/) and Textpattern [brand identity and collaboration information](https://docs.textpattern.com/brand/), including these guidelines.
 
 With regard to the primary user documentation, it’s better to add new pages when needed than to cover every possible topic in advance without knowing it’s warranted.
 
