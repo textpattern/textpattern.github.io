@@ -14,8 +14,13 @@ This page serves as preliminary information gathering and development for the up
 
 **On this page:**
 
-* [Textpattern gains Themes support (developer overview on theme functionality)
-* Themes panel (administration doc)
+* [Default file-tree structure](#default-file-tree-structure)
+  * [The *manifest.json* file](#the-manifest-json-file)
+  * [The *pages* directory](#the-pages-directory)
+  * [The *forms* directory](#the-forms-directory)
+  * [The *styles* directory](#the-styles-directory)
+  * [Sharing front-end themes](#sharing-front-end-themes)
+  * [Removing front-end themes](#removing-front-end-themes)
 
 ## Default file-tree structure 
 
