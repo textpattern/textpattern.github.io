@@ -252,7 +252,7 @@ If the list items were adulterated with normal text, the formatting would have t
 
 That would be sloppy list construction anyway, so it should never be needed.
 
-[^examples]: Note to documentation team: This is a good example of where a new class selector (e.g. `.text-example`) is needed for offsetting text examples, that should not otherwise be formatted as a `blockquot`, from regular documentation copy.
+[^examples]: Note to documentation team: This is a good example of where a new class selector (e.g. `.text-example`) is needed for distinguishing examples from normal text, that should not otherwise be formatted as a `blockquot`.
 
 ### Alert messages
 
@@ -341,7 +341,7 @@ Finally, do not italicize directory and file names when used in a list to show f
 
 It should also not be necessary to put file tree examples in code.[^trees]
 
-[^trees]: Ideally a new class selector (i.e. `.file-tree`) is made available for presenting file tree examples like above in documentation using Kramdown notation.
+[^trees]: Note to documentation team: Ideally a new class selector (e.g.. `.file-tree`) is made available for presenting file tree examples like above in documentation using Kramdown notation.
 
 ### Normal text
 
