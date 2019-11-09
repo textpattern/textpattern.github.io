@@ -15,7 +15,7 @@ This page serves as preliminary information gathering and development for the up
 **On this page:**
 
 * [Default file-tree structure](#default-file-tree-structure)
-  * [The *manifest.json* file](#the-manifest-json-file)
+  * [The *manifest.json* file](#the-manifestjson-file)
   * [The *pages* directory](#the-pages-directory)
   * [The *forms* directory](#the-forms-directory)
   * [The *styles* directory](#the-styles-directory)
