@@ -54,7 +54,7 @@ The basic directory structure will look like the following tree:
 
 ### The *manifest.json* file
 
-The _manifest.json_ file contains all theme related data. The following default fields and values will be used on first import when any such fields and their values are missing. The only required field is `txp-type`, and the value must equal `textpattern-theme`.:
+The _manifest.json_ file contains all theme related data. The following default fields and values will be used on first import when any such fields and their values are missing. The only required field is `txp-type`, and the value must equal `textpattern-theme`:
 
 ```json
 {
