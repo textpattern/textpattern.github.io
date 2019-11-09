@@ -29,8 +29,11 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
   * [Abbreviations](#abbreviations)
   * [Brand name](#brand-name)
 * [Formatting interface strings](#formatting-interface-strings)
-  * [Headers, labels, options, and paths](#headers-labels-options-and-paths)
+  * [Headers, labels, and options](#headers-labels-and-options)
+  * [Presentation element names](#presentation-element-names)
   * [Alert messages](#alert-messages)
+  * [File paths and names](#file-paths-and-names)
+  * [Normal text](#normal-text)
 * [Markup](#markup)
 	* [Selectors and attributes](#selectors-and-attributes)
 	* [Definition lists](#definition-lists)
@@ -197,15 +200,15 @@ See baselines in the similarly-named section of the [editorial style guide](http
 
 ## Formatting interface strings
 
-Interface strings are the text elements a user reads in the administration interface; from headers to form control labels to system feedback messages. Consideration of these strings is critical for good software usability.
+Interface strings are the text elements a user reads in the administration interface; from headers to form control labels to system feedback messages. Thoughtful development of these strings is critical for good software usability. So is referring to them consistently yet unobtrusively in documentation.
 
-Referring to them consistently yet unobtrusively in documentation is also critical. The balance between consistency and unobtrusiveness, however, can be challenging when many types of strings exist.
+The balance between consistency and unobtrusiveness when documentating interface strings, can be challenging when many types of strings exist. Textpattern documentation aims for a clear and logical balance, whether referring directly to back-end locations or identifying such elements in general terms.
 
-Textpattern documentation aims for a clear and logical balance with seven formatting rules, detailed in the rest of this section. Seven sounds like a lot, but they will make sense when you consider them.
+The various possible strings are detailed in the following sections.
 
-### Headers, labels, options, and paths
+### Headers, labels, and options
 
-Most types of interface strings are demonstrated below. An explanation of why and how the rules were derived follows the examples. 
+The documentation of panel and widget headers, and form control labels and options, would be difficult and confusing to readers if a single formatting convention were used. Part of the problem is the sentence-case convention used in interface strings and in editorial style. To account for this, a minimum of necessarily different formatting rules are needed here and against the other types of interface strings. It is the aforementioned balance between consistency and unobtrusiveness in writing.   
 
 Capitalized single words
 : Normal
@@ -223,23 +226,33 @@ Form control options
 : Single quote marks
 : Example: Select ‘Yes’ from the drop-down options.
 
-Textpattern Form names
-: Bold-italic
-: Example: The ***comments_display*** form.
+### Presentation element names
 
-File paths and names
-: Italic
-: Example: Temporary directory path: */Users/name/Sites/sitename/textpattern/tmp*
-: Note: Ignore using italic if the path or name is part of a code block.
+The names of default and custom semantic elements, found on their respective panels (Themes, Sections, Pages, Forms, and Styles) under the Presentation section of the back end should always be formatted as bold-italic, for example:  
 
-**More on file paths and names**:  
+The ***comments_display*** form.
 
-Quite often you may want or need to write file paths and file names in documentation that are not directly reflected in the administration interface (e.g. ‘The login is found at *domain.tld/textpattern*.’). Use italic in these cases too, in addition to the following:
+Because some of these core elements have the name ***default***, you must be careful to use formatting in the proper context. Consider this example of doing it correctly:[^examples]
 
-1. Always include file extensions on file names when the file name is used by itself (e.g. ‘The contents of your *.htaccess* file will appear in the Diagnostics panel.’).
-2. Do not mark up paths and file names as `code` unless they actually reflect lines from a code file.
-3. Do not prefix a directory name with a foreslash (e.g. */textpattern*) when referring to the name by itself.
-4. Do not italicize directory and file names when used in a list to show file tree structure; otherwise, every item would be needlessly italicized.
+A default stylesheet, named ***default***, must exist. It will be created as an empty stylesheet on import if missing in the *styles* directory of a theme package. 
+
+In the *rare* case that you need to document lists of these things (sometimes needed in plugin and theme development documentation), leave the formatting out (i.e. use normal text), but *only* if the items in a given list are all strings of a single type and no other text.
+
+For example, the following is one of several actual lists of form names used in a themes documentation page. Everything is formatted correctly, from lead in setence, which provides the necessary context, to list items:[^examples]
+
+Article forms:
+
+  * article_listing
+  * default
+  * search_results
+
+If the list items were adulterated with normal text, the formatting would have to be used, for example:
+
+* the ***default*** form
+
+That would be sloppy list construction anyway, so it should never be needed.
+
+[^examples]: Note to documentation team: This is a good example of where a new class selector (e.g. `.text-example`) is needed for offsetting text examples, that should not otherwise be formatted as a `blockquot`, from regular documentation copy.
 
 ### Alert messages
 
@@ -296,6 +309,53 @@ Example:
 
 OMFG, _no!_
 {: .alert-block .error}
+
+### File paths and names
+
+Absolute or relative file paths, directory names, and file names, whether appearing as strings in back-end panels or being used in general context should always be italicized only, for example:
+
+*/Users/name/Sites/sitename/textpattern/tmp*
+
+Ignore using italic if the path or name is part of a code block (e.g in the Diagnostics panel for *.htaccess* file display); just use normal text as it appears in the code, for example:
+
+`/Users/name/Sites/sitename/textpattern/tmp`
+
+You may often want or need to write file paths and file names in documentation that are not directly reflected in the administration interface. Use italic in these cases too, for example: *domain.tld/textpattern*. Or *index.php*, *index.md*, or what have you.
+
+Be mindful of these conditions:
+
+1. Do not use quotation marks to distinguish paths and file names.
+2. Do not mark up paths and file names as `code`, unless they actually reflect lines from a code file.
+3. When using a file name by itself, always include file extensions to distinguish it from a directory name (i.e. *index.php* is correct, but *index* is not).  
+4. Do not prefix a directory name with a foreslash (e.g. */textpattern*) when referring to the name by itself. (File name extensions will distinguish file names from director names.)
+
+Finally, do not italicize directory and file names when used in a list to show file tree structure; otherwise, every item would be needlessly italicized. The context of being a file tree structure should be clear. Use normal text in these cases, for example:
+
+* . . .
+* directory
+  * file.ext 
+  * file.ext
+* directory
+* directory
+* . . .
+
+It should also not be necessary to put file tree examples in code.[^trees]
+
+[^trees]: Ideally a new class selector (i.e. `.file-tree`) is made available for presenting file tree examples like above in documentation using Kramdown notation.
+
+### Normal text
+
+Normal text strings are any other type outside of those already described (outside of any functional control or interface widget). A notably example are the possible types of text that appear at the bottoms of back-end panels, like software versions numbers.
+
+Normal text strings should be offset from regular documentation copy by single quotation marks, for exmaple:
+
+‘[Textpattern CMS](#) (v4.7.3)’
+
+And:
+
+‘[Back to top](#)’
+
+This is the same formatting used on form control options, so make sure the differing contexts are clear in writing.
 
 ## Markup
 
