@@ -10,8 +10,8 @@ assignees: ''
 How to use this template:
 
 1. In subject field, use: 'proposed: Title of new documentation page'
-1. In the issue body, respond to the sections below.
-1. Delete all of these instruction lines when done, and before submitting the issue.
+2. In the issue body, respond to the sections below.
+3. Delete all of these instruction lines when done, and before submitting the issue.
 
 ### Proposed page topic
 
