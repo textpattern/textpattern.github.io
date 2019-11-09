@@ -8,65 +8,63 @@ description: Front-end themes allow creating and sharing website front-end desig
 
 # Front-end themes
 
-With the arrival of Textpattern CMS 4.7 comes new core theming functionality for the front-end. You may get up to speed with current reading so far with the following resources:
+The ability to create your own front-end [Themes](https://docs.textpattern.com/administration/themes-panel) was [introduced in Textpattern CMS 4.7](https://textpattern.com/weblog/403/textpattern-cms-gains-themes-support). An official [Textpattern Themes](https://github.com/textpattern/textpattern-themes-website) website is also in development.
 
-* [Textpattern gains Themes support](https://textpattern.com/weblog/403/textpattern-cms-gains-themes-support) (developer overview on theme functionality)
-* [Themes panel](https://docs.textpattern.com/administration/themes-panel) (administration doc)
+This page serves as preliminary information gathering and development for the upcoming themes website, including whatever community themes and tutorials may be available.
 
-## Creating new front-end themes (work in progress)
+**On this page:**
 
-### Creating a theme as flat files
+* [Textpattern gains Themes support (developer overview on theme functionality)
+* Themes panel (administration doc)
 
-#### General structure
+## Default file-tree structure 
 
-Themes files must be grouped into a top parent directory named as the theme and should follow the structure above.
+Themes files must be grouped into a top parent directory named as you want the theme named (e.g. *abc_theme*). All form files are in Textpattern file format (e.g. *default.txp*).
 
-##### Overview
+The basic directory structure will look like the following tree:
 
-~~~
-abc_theme
-├── manifest.json
-├── pages
-|   ├── default.txp
-|   └── error_default.txp
-├── forms
-|   ├── article
-|   |   ├── article_listing.txp
-|   |   ├── default.txp
-|   |   └── search_results.txp
-|   ├── category
-|   |   └── …
-|   ├── comment
-|   |   ├── comments.txp
-|   |   ├── comments_display.txp
-|   |   └── comment_form.txp
-|   ├── file
-|   |   └── files.txp
-|   ├── link
-|   |   └── plainlinks.txp
-|   ├── misc
-|   |   └── …
-|   └── section
-|       └── …
-└── styles
-    └── default.css
-~~~
+* abc_theme
+  * manifest.json
+  * pages
+    * default.txp
+    * error_default.txp
+  * forms
+    * article
+      * article_listing.txp
+      * default.txp
+      * search_results.txp
+    * category (empty)
+    * comment
+      * comments.txp
+      * comments_display.txp
+      * comment_form.txp
+    * file
+      * files.txp
+    * link
+      * plainlinks.txp
+    * misc (empty)
+    * section (empty) 
+  * styles
+    * default.css 
 
-#### The 'manifest.json' file
+### The *manifest.json* file
 
-The _manifest.json_ file contains a theme related data.  
-The only required field is `txp-type` which need to be set to `textpattern-theme`.  
-The following default value will be used on import for the missing fields or values:
+The _manifest.json_ file contains all theme related data. The following default fields and values will be used on first import when any such fields and their values are missing. The only required field is `txp-type`, and the value must equal `textpattern-theme`.:
 
-* title: theme name;
-* version: _Unknown_;
-* description: none;
-* author: _Unknown_;
-* author_uri: none;
+```json
+{
+"title": "theme name",
+  "version": "unknown",
+  "description": "none",
+  "author": "unknown",
+  "author_uri": "non",
+  "txp-type": "textpattern-theme"
+  }
+```
 
-##### Example
+For example:
 
-~~~ json
+``` json
 {
   "title": "Four Point Seven",
   "version": "4.7.1",
@@ -75,47 +73,60 @@ The following default value will be used on import for the missing fields or val
   "author_uri": "https://github.com/textpattern/textpattern-default-theme",
   "txp-type": "textpattern-theme"
 }
-~~~
+``` 
 
-#### The 'pages' directory
+### The *pages* directory
 
-The _pages_ optional directory should contains Textpattern pages as `.txp` files.  
-Two essential pages should be created: `default` and `error_default`; they will be created as empty pages on import if missing.  
-If this directory is missing, empty essential pages will be created on the first import, while on update, pages import will be skipped.
+The *pages* directory is required. Two essential pages must exist in the *pages* directory: *default.txp* and *error_default.txp*. These two pages will be created as empty pages on import if they are missing.  
 
-#### The 'forms' directory
+If the entire directory is missing in a theme package, it will be created on the first import, and the essential pages will be added with their default contents. Updates thereafter will not overwrite the existing pages.
 
-The _forms_ optional directory should contains Textpattern forms as `.txp` files.  
-While forms should be grouped by types into dedicated subdirectories, they all need to use different names.  
-Six essential pages should be created:
+### The *forms* directory
 
-* article:
-  * _article_listing_;
-  * _default_;
-  * _search_results_;
-* comment:
-  * _comments_;
-  * _comments_display_;
-  * _comment_form_;
-* file:
-  * _files_;
-* link:
-  * _plainlinks_;
+The optional *forms* directory contains form subdirectories to organize form files by type, as indicated in the [file-tree structure](#default-file-tree-structure) at top.
 
-They will be created as empty forms on import if missing.  
-If this directory is missing, empty essential forms will be created on the first import while on update, stylesheets import will be skipped.
+All form files must have unique names, both those that come in core and any custom files you create. Compound form names should use underscores between words.  
 
-#### The 'styles' directory
+When the *forms* directory is used in custom theme design, eight form pages must exist in their appopriate form subdirectories. Here they are again by type:
 
-The _styles_ optional directory should contain stylesheets as `.css` files.  
-A `default` essential stylesheet should be created; it will be created as an empty stylesheet on import if missing.  
-If this directory is missing, an empty essential stylesheet (`default`) will be created on the first import while on update, styles import will be skipped.
+Article forms:
 
-## Exporting/importing (sharing) front-end themes (work in progress)
+  * article_listing
+  * default
+  * search_results
 
-(A forthcoming explanation or links to external community tutorials)
+Comment forms:
 
-## Removing/deleting front-end themes
+  * comments
+  * comments_display
+  * comment_form
 
-Themes can be removed from the themes panel, and the associated files can be deleted as needed.  
-Note that if a theme is selected for deletion and the files are to be removed, theme directories with non-standard subdirectories(e.g. `styles/sass`) will require manual deletion. This is intended as a safety precaution.
+File forms:
+
+  * files
+
+Link forms:
+
+  * plainlinks
+
+These form files are created as empty files on import if missing in a theme package. If the entire *forms* directory is missing, the core form files are created on the first import. Updates thereafter will not overwrite the existing files.
+
+### The *styles* directory
+
+The optional _styles_ directory contains stylesheets as `.css` files.  
+
+A default stylesheet, named ***default***, must exist. It will be created as an empty stylesheet on import if missing in the *styles* directory of a theme package.  
+
+If the *styles* directory is missing in a themes package, an empty directory with a blank default stylesheet will be created on the first import; thereafter it will not be overwritten in future updates.
+
+##  Sharing front-end themes
+
+Sharing themes means exporting and importing themes once they are created. This is how the community will thrive around themes development. A website is coming to host existing themes, and  perhaps even design competitions too.
+
+(Explanation, or links to external community tutorials, is forthcoming.)
+
+## Removing front-end themes
+
+Themes can be removed (deleted) from the themes panel, and the associated files can be deleted as needed.  
+
+As a safety precaution, theme directories with non-standard subdirectories (e.g. *styles/sass*) will require manual deletion after the directories and files recognized by core functionality are deleted.
