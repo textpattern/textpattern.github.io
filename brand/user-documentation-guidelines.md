@@ -341,7 +341,7 @@ Finally, do not italicize directory and file names when used in a list to show f
 
 It should also not be necessary to put file tree examples in code.[^trees]
 
-[^trees]: Note to documentation team: Ideally a new class selector (e.g.. `.file-tree`) is made available for presenting file tree examples like above in documentation using Kramdown notation.
+[^trees]: Note to documentation team: This is a good example where a new class selector (e.g.. `.file-tree`) is made available to offset representations of file trees, which are neither code, blockquotes, nor, as another proposed/needed selector, `.examples`.
 
 ### Normal text
 
