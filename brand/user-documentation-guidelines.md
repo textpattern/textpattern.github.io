@@ -135,7 +135,7 @@ Again, documentation is a community effort, and even editors must work together 
 At the bottom of every documentation page is the following way point to get you there faster:
 
 See something wrong in this document? Outdated info, a broken link, faulty code example, or whatever? Please [open an issue](https://github.com/textpattern/textpattern.github.io/issues) and we’ll investigate.
-{: .alert-block .information}
+{: .alert-block .information .report-issues}
 
 ## Linking strategy
 
@@ -352,13 +352,13 @@ It should also not be necessary to mark up file tree examples as code.
 
 Normal text strings are any other type outside of those already described (outside of any functional control or interface widget). A notably example are the possible types of text that appear at the bottoms of back-end panels, like software versions numbers.
 
-Normal text strings should be offset from regular documentation copy by single quotation marks, for exmaple:[^examples]
+Normal text strings should be offset from regular documentation copy by single quotation marks, for example (links are part of the actual interface text):[^examples]
 
-‘[Textpattern CMS](#) (v4.7.3)’
+‘[Textpattern CMS]() (v4.7.3)’
 
 And:[^examples]
 
-‘[Back to top](#)’
+‘[Back to top]()’
 
 This is the same formatting used on form control options, so make sure the differing contexts are clear in writing.
 
