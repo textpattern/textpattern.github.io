@@ -54,7 +54,7 @@ The basic directory structure will look like the following tree:
 
 ### The *manifest.json* file
 
-The _manifest.json_ file contains all theme related data. The following default fields and values will be used on first import when any such fields and their values are missing. The only required field is `txp-type`, and the value must equal `textpattern-theme`:
+The _manifest.json_ file contains all theme related data. The following default fields and values will be used on first import when any such fields and their values are missing:
 
 ```json
 {
@@ -67,12 +67,14 @@ The _manifest.json_ file contains all theme related data. The following default 
   }
 ```
 
-For example:
+The last field and value, `"txp-type": "textpattern-theme"` must always exist and never change.
+
+An example using Textpattern’s default theme:
 
 ``` json
 {
   "title": "Four Point Seven",
-  "version": "4.7.1",
+  "version": "4.7.3",
   "description": "The default theme shipped with Textpattern CMS 4.7.",
   "author": "Team Textpattern",
   "author_uri": "https://github.com/textpattern/textpattern-default-theme",
