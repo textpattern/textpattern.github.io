@@ -130,9 +130,12 @@ While our approach is to document when needed, we strive to keep existing pages 
 
 If you find a page _is_ outdated, it’s not because nobody cares, it’s because the problem has not been brought to anyone’s attention by way of an [Issue](https://github.com/textpattern/textpattern.github.io/issues), thus it is slipping through the cracks.
 
-Again, documentation is a community effort, and even editors must work together efficiently. This can often just mean starting [Issues](https://github.com/textpattern/textpattern.github.io/issues) so problems are recognized and addressed. At the bottom of every documentation page is the following way point to help make it easier:
+Again, documentation is a community effort, and even editors must work together efficiently. This can often just mean starting [Issues](https://github.com/textpattern/textpattern.github.io/issues) so problems are recognized and addressed.
 
-> See something wrong in this document? Outdated info, a broken link, faulty code example, or whatever? Please [open an issue](https://github.com/textpattern/textpattern.github.io/issues) and we’ll investigate.
+At the bottom of every documentation page is the following way point to get you there faster:
+
+See something wrong in this document? Outdated info, a broken link, faulty code example, or whatever? Please [open an issue](https://github.com/textpattern/textpattern.github.io/issues) and we’ll investigate.
+{: .alert-block .information}
 
 ## Linking strategy
 
@@ -170,7 +173,7 @@ In addition to the helpful guidelines below for writing and editing documentatio
 
 Documentation is written from the perspective of an _anonymous_ expert to the first-time administrator. Therefore, documentation authors and editors must write in the _second-person_ point of view. Pronouns are ‘you’, ‘your’, and ‘yours’ when referring to the reader; the assumed administrator of a new Textpattern installation.
 
-For example:
+For example:[^examples]
 
 > Click your name in the Users panel to change your email.
 
@@ -178,9 +181,11 @@ Never use the first-person singular or plural in regular user documentation. It'
 
 Likewise, _never_ make it personal with pronouns like ‘I’, ‘me’, and ‘my’ no matter what type of documentation it is. Collaborative documentation is never about you, and the reader doesn’t care about you either. Sorry. Take the second person stance and empower the reader. Make them feel like they're doing it alone, because they are. You're just an impartial voice over their shoulder guiding them along.
 
+[^examples]: Note to documentation team: This is a good example of where a new class selector (e.g. `.text-example`) is needed for distinguishing examples from normal text, but which are different from interface alert message styling, and are not appropriate as `blockquote`.
+
 **Exception to the rule**:
 
-There is at least one exception to the perspective rule. It’s possible third-person could be used in specific contexts, like when guiding the administrator on user accounts:
+There is at least one exception to the perspective rule. It’s possible third-person could be used in specific contexts, like when guiding the administrator on user accounts:[^examples]
 
 > To change a user’s role, find and click their name in the Users panel . . .
 
@@ -252,8 +257,6 @@ If the list items were adulterated with normal text, the formatting would have t
 
 That would be sloppy list construction anyway, so it should never be needed.
 
-[^examples]: Note to documentation team: This is a good example of where a new class selector (e.g. `.text-example`) is needed for distinguishing examples from normal text, that should not otherwise be formatted as a `blockquot`.
-
 ### Alert messages
 
 Another type of interface string that needs documented are block element system alerts, of which there are four types: success, information, warning, or error.
@@ -312,13 +315,15 @@ OMFG, _no!_
 
 ### File paths and names
 
-Absolute or relative file paths, directory names, and file names, whether appearing as strings in back-end panels or being used in general context should always be italicized only, for example:
+Absolute or relative file paths, directory names, and file names, whether appearing as strings in back-end panels or being used in general context should always be italicized only, for example:[^examples]
 
 */Users/name/Sites/sitename/textpattern/tmp*
 
 Ignore using italic if the path or name is part of a code block (e.g in the Diagnostics panel for *.htaccess* file display); just use normal text as it appears in the code, for example:
 
-`/Users/name/Sites/sitename/textpattern/tmp`
+```
+/Users/name/Sites/sitename/textpattern/tmp
+```
 
 You may often want or need to write file paths and file names in documentation that are not directly reflected in the administration interface. Use italic in these cases too, for example: *domain.tld/textpattern*. Or *index.php*, *index.md*, or what have you.
 
@@ -329,7 +334,7 @@ Be mindful of these conditions:
 3. When using a file name by itself, always include file extensions to distinguish it from a directory name (i.e. *index.php* is correct, but *index* is not).  
 4. Do not prefix a directory name with a foreslash (e.g. */textpattern*) when referring to the name by itself. (File name extensions will distinguish file names from director names.)
 
-Finally, do not italicize directory and file names when used in a list to show file tree structure; otherwise, every item would be needlessly italicized. The context of being a file tree structure should be clear. Use normal text in these cases, for example:
+Finally, do not italicize directory and file names when used in a list to show file tree structure; otherwise, every item would be needlessly italicized. The context of being a file tree structure should be clear. Use normal text in these cases, for example:[^trees]
 
 * . . .
 * directory
@@ -339,19 +344,19 @@ Finally, do not italicize directory and file names when used in a list to show f
 * directory
 * . . .
 
-It should also not be necessary to put file tree examples in code.[^trees]
+It should also not be necessary to mark up file tree examples as code.
 
-[^trees]: Note to documentation team: This is a good example where a new class selector (e.g.. `.file-tree`) is made available to offset representations of file trees, which are neither code, blockquotes, nor, as another proposed/needed selector, `.examples`.
+[^trees]: Note to documentation team: This is a good example where a new class selector (e.g.. `.file-tree`) is made available to offset representations of file trees, which are not semantically suitable as `code` or `blockquote`, and should probably be different from regular text `.examples`.
 
 ### Normal text
 
 Normal text strings are any other type outside of those already described (outside of any functional control or interface widget). A notably example are the possible types of text that appear at the bottoms of back-end panels, like software versions numbers.
 
-Normal text strings should be offset from regular documentation copy by single quotation marks, for exmaple:
+Normal text strings should be offset from regular documentation copy by single quotation marks, for exmaple:[^examples]
 
 ‘[Textpattern CMS](#) (v4.7.3)’
 
-And:
+And:[^examples]
 
 ‘[Back to top](#)’
 
@@ -487,7 +492,7 @@ Notes are used sparingly and in limited cases in Textpattern documentation; eith
 
 #### Notes in tables
 
-Since these notes are in HTML tables, they are also structured with straight HTML. Style rules are added to documentation to make reference-mark lists work in the table footer. 
+Since these notes are in HTML tables, they are also structured with straight HTML. Style rules are added to documentation to make reference-mark lists work in the table footer.[^refmarks] 
 
 Reference-mark notes are a common annotation device in information design, and are specifically used in tables. The standard reference-mark system cycles through six marks, in this order: *, †, ‡, §, ¶, ‖.
 
@@ -570,7 +575,9 @@ If you ever need more than six notes, then use `<ol class="noliststyle">`, for a
 <li>&#x002a;&#x002a; . . .</li>
 <li>. . .</li>
 </ol>
-``` 
+```
+
+[^refmarks]: Note to documentation team: CSS rules need provided in documentation to make the reference-mark lists in `tfoot` work. See [workable CSS](https://github.com/textpattern/textpattern.github.io/issues/123#issue-516949203).
 
 #### Notes in main text
 
