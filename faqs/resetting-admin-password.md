@@ -8,28 +8,58 @@ description: Resetting an administrator password stored in the database via SQL.
 
 # FAQ: How to reset an admin password
 
-There are a few ways to reset a Textpattern password:
+Your options for resetting a forgotten Textpattern account password.
 
-* Visit the admin-side login page and click _Forgot password?_ then submit your username. Instructions for resetting it will be sent to the email address stored in your Textpattern user account.
-* If you cannot remember your login name or do not have access to the email address any more, a Publisher can reset any user's password. Provided there's at least one publisher who can log in, ask them to reset your password for you and/or change your email address details.
-* If you're the only user with Publisher privileges (or the only Textpattern user at all), and need to change your password, you'll need to access the database directly. This guide is for you.
+**On this page:**
 
-## Resetting the password via SQL
+* [Simple reset procedure](#simple-reset-procedure)
+* [If you forgot your login name](#if-you-fogot-your-login-name)
+* [If you do not have access to account email address](#if-you-do-not-have-access-to-account-email-address)
+* [Reset procedure for administrators](#reset-procedure-for-administrators)
+  * [For MySQL versions under 8.0](#for-mysql-versions-under-8)
+  * [For MySQL versions 8 and higher](#for-mysql-versions-8-and-higher)
 
-Most web hosting accounts provide direct MySQL access using a program called _phpMyAdmin_ (or an equivalent). Some provide command line access to an SQL environment. If you're not sure how to access MySQL, ask your hosting company's tech support.
+## Simple reset procedure
 
-Within phpMyAdmin, or at the MySQL command prompt, run the following query if you're using any version of MySQL below v8.0:
+1. Go to the login page of the website’s back-end; usually located at *domain.tld/textpattern* (unless the site administrator changed the default location).
+2. Click the ‘Forgot password?’ link.
+3. Enter your login name (username) in the resulting Name field.
+4. Hit the **Reset password** button.
+
+Instructions for resetting the password will be sent to the email address on record for the login name provided.
+
+Administrators can not use this method. See last section.
+
+## If you forgot your login name
+
+If you cannot remember your login name, the website’s administrator, or any other account holder with Publisher rights, can reset your password for you. This requires knowing who those people are and how to contact them, however.
+
+## If you do not have access to account email address
+
+See above for forgotten login name.
+
+## Reset procedure for administrators
+
+If you are the website’s administrator and forgot your password, you'll need to access the database and change the password there.
+
+Most web hosting accounts provide direct access to a MySQL database via phpMyAdmin (or an equivalent). Some provide command line access to an SQL environment. If you're not sure how to access MySQL, ask your hosting company's tech support.
+
+### For MySQL versions under 8.0
+
+Within phpMyAdmin, or at the MySQL command prompt, run the following query, where `my_pass` is the new password, and `user` is the login name of the account you wish to change:
 
 ``` sql
 UPDATE txp_users SET pass=PASSWORD('my_pass') WHERE name='user';
 ```
 
-where `my_pass` is the new password, and `user` is the login username of the account you wish to change.
+If your host is running MySQL v8.0 or higher, you will not be able to use the `PASSWORD()` function.
 
-If your host is running MySQL v8.0 or higher, you will not be able to use the `PASSWORD()` function. Use the following query instead:
+### For MySQL versions 8.0 and higher
+
+Within phpMyAdmin, or at the MySQL command prompt, run the following query, where `my_pass` is the new password, and `user` is the login name of the account you wish to change:
 
 ``` sql
 UPDATE txp_users SET pass=CONCAT('*', SHA1(UNHEX(SHA1('my_pass')))) WHERE name='user';
 ```
 
-Once you have executed one of the above statements, you will be able to login to Textpattern with your username and new password.
+Once you have executed the appropriate statement for the database version you have, you will be able to login to Textpattern with your login username and new password.
