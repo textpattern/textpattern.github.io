@@ -7,14 +7,10 @@ assignees: ''
 
 ---
 
-How to use this template:
+### Absolute URL of front-end page
 
-1. In subject field use: 'page: Title of documentation page'
-2. In the issue body:
-a. Paste the page's absolute URL to the front-end location at top of issue for quick reference and link.
-b. State your question, or perceived problem with page, under provided section below .
-c. Delete all of these instruction lines when done, and before submitting the issue.
+{URL here}
 
 ### The question/problem
 
-{Please write here}
+{Put it here}

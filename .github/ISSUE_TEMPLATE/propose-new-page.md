@@ -7,20 +7,14 @@ assignees: ''
 
 ---
 
-How to use this template:
-
-1. In subject field, use: 'proposed: Title of new documentation page'
-2. In the issue body, respond to the sections below.
-3. Delete all of these instruction lines when done, and before submitting the issue.
-
 ### Proposed page topic
 
-{Please write here}
+{Propose here}
 
 ### Reason page is needed
 
-{Please write here}
+{Explain here}
 
 ### Perceived doc-tree location and cross-links
 
-{Please write here}
+{Suggest here}
