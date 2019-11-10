@@ -89,11 +89,12 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 </section>
 <section class="layout-3col">
 
-### FAQs
+### Tutorials and FAQs
 {: .index-docs-faqs}
 
 * [Textpattern basic tutorial](https://docs.textpattern.com/faqs/textpattern-basic-tutorial)
-* [Complete list of Textpattern FAQs](https://docs.textpattern.com/faqs/) (the most commonly-asked Textpattern questions)
+* [Shortcode examples](https://docs.textpattern.com/tags/shortcodes/)
+* [FAQs](https://docs.textpattern.com/faqs/) (commonly-asked technical questions)
 {: .list--no-bullets}
 
 </section>
