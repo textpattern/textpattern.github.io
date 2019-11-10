@@ -19,8 +19,8 @@ This page serves as preliminary information gathering and development for the up
   * [The *pages* directory](#the-pages-directory)
   * [The *forms* directory](#the-forms-directory)
   * [The *styles* directory](#the-styles-directory)
-  * [Sharing front-end themes](#sharing-front-end-themes)
-  * [Removing front-end themes](#removing-front-end-themes)
+* [Sharing front-end themes](#sharing-front-end-themes)
+* [Removing front-end themes](#removing-front-end-themes)
 
 ## Default file-tree structure 
 
@@ -126,13 +126,13 @@ A default stylesheet, named ***default***, must exist. It will be created as an 
 
 If the *styles* directory is missing in a themes package, an empty directory with a blank default stylesheet will be created on the first import; thereafter it will not be overwritten in future updates.
 
-##  Sharing front-end themes
+#  Sharing front-end themes
 
 Sharing themes means exporting and importing themes once they are created. This is how the community will thrive around themes development. A website is coming to host existing themes, and  perhaps even design competitions too.
 
 (Explanation, or links to external community tutorials, is forthcoming.)
 
-## Removing front-end themes
+# Removing front-end themes
 
 Themes can be removed (deleted) from the themes panel, and the associated files can be deleted as needed.  
 
