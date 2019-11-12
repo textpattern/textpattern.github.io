@@ -10,6 +10,9 @@ description: Guidelines for contributions to Textpattern CMS user documentation.
 
 These guidelines, an extension of Textpattern’s [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide), are specifically for the editorial upkeep of the [Textpattern user documentation](https://docs.textpattern.com/). Documentation editors, authors, and all interested contributors will want to read up here.
 
+* Table of contents
+{:toc}
+
 **On this page:**
 
 * [Target audience](#target-audience)
