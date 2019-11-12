@@ -10,44 +10,10 @@ description: Guidelines for contributions to Textpattern CMS user documentation.
 
 These guidelines, an extension of Textpattern’s [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide), are specifically for the editorial upkeep of the [Textpattern user documentation](https://docs.textpattern.com/). Documentation editors, authors, and all interested contributors will want to read up here.
 
+**On this page**:
+
 * Table of contents
 {:toc}
-
-**On this page:**
-
-* [Target audience](#target-audience)
-* [Scope and depth of material](#scope-and-depth-of-material)
-	* [Scope of documentation](#scope-of-documentation)
-	* [Depth of page content](#depth-of-page-content)
-* [Collaborative editing process](#collaborative-editing-process)
-  * [New documentation pages](#new-documentation-pages)
-     * [Using repository Issues](#using-repository-issues)
-     * [Determining new topics](#determining-new-topics)
-  * [Revising existing pages](#revising-existing-pages)
-* [Linking strategy](#linking-strategy)
-  * [Cross-links](#cross-links)
-  * [Anchor links](#anchor-links)
-* [Writing and editing](#writing-and-editing)
-  * [Author perspective](#author-perspective)
-  * [Abbreviations](#abbreviations)
-  * [Brand name](#brand-name)
-* [Formatting interface strings](#formatting-interface-strings)
-  * [Headers, labels, and options](#headers-labels-and-options)
-  * [Presentation element names](#presentation-element-names)
-  * [Alert messages](#alert-messages)
-  * [File paths and names](#file-paths-and-names)
-  * [Normal text](#normal-text)
-* [Markup](#markup)
-  * [Styling](#styling)
-    * [Inline text styling](#inline-text-styling)
-    * [Inline selectors](#inline-selectors)
-    * [Block element styling](#block-element-styling)
-	  * [Custom block-element selectors](#custom-block-element-selectors)
-	* [Definition lists](#definition-lists)
-  * [Tables](#tables)
-  * [Notes](#notes)
-     * [Notes in tables](#notes-in-tables)
-     * [Notes in main text](#notes-in-main-text)
 
 ## Target audience
 
@@ -184,7 +150,7 @@ For example:[^examples]
 
 > Click your name in the Users panel to change your email.
 
-Never use the first-person singular or plural in regular user documentation. It's easy to slip into first-person plural mode with an official Textpattern voice (i.e. ‘we’ and ‘us’), but it’s unnecesary, and inappropriate for the targeted user documentation.[^we]
+Never use the first-person singular or plural in regular user documentation. It's easy to slip into first-person plural mode with an official Textpattern voice (i.e. ‘we’ and ‘us’), but it’s unnecesary, and inappropriate for user documentation.[^we]
 
 Likewise, _never_ make it personal with pronouns like ‘I’, ‘me’, and ‘my’ no matter what type of documentation it is. Collaborative documentation is never about you, and the reader doesn’t care about you either. Sorry. Take the second person stance and empower the reader. Make them feel like they're doing it alone, because they are. You're just an impartial voice over their shoulder guiding them along.
 
@@ -422,14 +388,6 @@ This is a text example as a regular paragraph.
 
 Only worry about block element styling if any such block elements are defined in the sections below, or elsewhere noted (e.g. [**Alert message strings**](#alert-message-strings)).
 
-#### Custom block-element selectors
-
-The following content types have custom selectors to make the styling happen.
-
-Text examples:
-
-File tree structures:
-
 ### Defintion lists
 
 Definition lists are added using Kramdown syntax.
@@ -452,7 +410,7 @@ That will render a definition list as:
 </dl>
 ```
 
-Add more data items via additional lines preceded by `:`
+Add more data items as needed via additional lines preceded by a colon and space:
 
 ```
 Definition title
@@ -482,20 +440,25 @@ So, use the following guidelines with respect to tables:
 <thead><tr>
 <th scope="col">Header</th>
 <th scope="col">Header</th>
+<th scope="col">Header</th>
 </tr></thead>
+<td>data</td>
 <tbody>
 <tr>
 <th scope="row">data</th>
 <td>data</td>
+<td>data</td>
 </tr>
 <tr>
 <th scope="row">data</th>
 <td>data</td>
+<td>data</td>
 </tr>
 </tbody>
 <tfoot>
-<tr><td colspan="2">
+<tr><td colspan="3">
 <ol>
+<li>note item</li>
 <li>note item</li>
 <li>note item</li>
 </ol>
@@ -601,52 +564,50 @@ If you ever need more than six notes, then use `<ol class="noliststyle">`, for a
 
 #### Notes in main text
 
-Remember that notes, which are, technically speaking, a part of notes and bibliography referencing systems, are used to cite sources (e.g. the source of a quotation used), or enable authors to briefly expand on ideas, for example, without bloating the main text.
+Notes are, technically speaking, half of notes and bibliography referencing systems and are used to cite sources (e.g. the source of a quotation used), or enable authors to expand on ideas without over-bloating the main text. With this in mind…
 
-**Use notes sparingly:**
+**Use notes sparingly**:
 
-Do not annotate text for the sake of it. Fewer notes are better in documentation because it’s less overhead for readers wanting to get something done. However, using a few notes for references (citing external sources) and/or expanding on insights the author may have on a given situation in context, can be useful.
+User notes sparingly in user documentation. We’re not recording history, only providing how-to information. Fewer notes are less overhead for readers wanting to get something done. However, a few notes won’t hurt if the information is relevant and brief.
 
-**Call them what they really:**  
+**Refer to them correctly**:  
 
-As for applying notes, GitHub does not use regular Markdown footnotes, so the syntax for notes that you may have learned at Daring Fireball, or by using iAWriter, whatever, will not work here. Instead, GitHub uses Kramdown footnotes, which are somewhat closer in method to how Textile footnotes work, so that’s a step in the right direction for Textile lovers.
+Many markup languages, like Markdown, Kramdown, Textile, and so on, call their notes functionality ‘footnotes’. But that’s not correct, a misnomer, because footnotes are not what these extensions actually create. ‘Footnotes’ means notes that are positioned in immediate visual context of their inline reference markers, notably at bottoms of pages in print publications (or digital formats that mimic the set page dimensions of print media). A reader should not have to flip pages by finger or thumbswipe, or jump long distances by link or scrollbar, to read footnotes; otherwise they are not really footnotes. When notes all come at the end of a publication in a single list, whether print or web document, they are called ‘endnotes’, and every English style manual that matters, including *Oxford* and *Chicago*, will say so. The *foot-* and *end-* prefixes merely indicate _where_ the notes are placed in published material. They same style manuals refer to both types more generally as just ‘notes’. So if you can’t get it right specifically, at least get it right generally.[^notes]
 
-From hereon, we refer to them simply as _notes_, as all leading references like the *New Oxford Style Manual* and the *Chicago Manual of Style* do when speaking of footnotes and endnotes in general terms, and _endnotes_, when referring to the notes list at end of the document.[^notes]
+**Adding the notes syntax**:
 
-**Adding the syntax:**
+Notes are added using Kramdown notation, and they function the same way whether you write inline markers as numerals in sequence (`[^1]`, `[^2]`, etc.) or as unique text (e.g. `[^dope]`, `[^dongle]`, `[^dingo]`, . . .), whatever you choose to use. Either way, the resulting endnotes list is an ordered list of arabic numerals at the bottom of the page, inside a preformatted `div`.
 
-You may or not be aware that Kramdown notes function the same way whether you write inline markers as numerals in sequence (`[^1]`, `[^2]`, etc.) or as unique terms, whatever you choose to use (e.g. `[^dope]`, `[^dongle]`, `[^dingo]`, . . .). Either way, the resulting endnotes list is an ordered list of arabic numerals.
+Using text as inline markers is a better for a couple of reasons:
 
-Thus, using text as inline markers is a better way to go, because:
-
-1. Text markers can be created relevant to the topic being annotated (i.e. they’re intuitive if used right), and you don’t have to worry about what order they are in.
-2. Numbered markers can be needlessly distracting if you are trying to keep them in order; and confusing if you have many of them and they get out of order.
+1. Text markers can be created relevant to the topic being annotated, thus they’re immeditately intuitive and easier to spot when editing.
+2. Numbered markers are needlessly distracting if you are trying to keep them in order; and confusing if you have many of them and they get out of order.
 
 Skip the madness and use text markers only. It’s easier.
 
 **Example of notes usage:**
 
-This document uses two notes. One comes in the [**Selectors and attributes**](#selectors-and-attributes) section, and the other in this section on notes. In each case, you will see the inline marker as a superscript ‘1’ and ‘2’, respectively, at the end of sentences.
+At the time this section was written, this document used two notes: one in the [**Author perspective**](#author-perspective) section, and the other in this section on notes. In each case, you will see the inline marker as a sequential superscript numeral.
 
-The actual markers used in the markup are: `[^selectors]` and `[^notes]`. Each note marker uses a word relevant to the topic. Logical.
+The actual markers used in the markup are: `[^we]` and `[^notes]`. Each note marker uses a word relevant to the topic. Logical.
 
 The notes themselves are added at the bottoms of the sections they appear in. Sure, you could end up having notes spread out through the document this way. But by putting them at the ends of the sections they belong to, it’s easy to find and edit them in context, instead of jumping up and down in the document.
 
-Each note begins with the same marker used inline, followed by a `:`
+Each note begins with the same syntax and marker used inline, followed by a colon:
 
 ```
-[^selectors]: See https://kramdown.gettalong.org/syntax.html#inline-attribute-lists.
+[^we]: It’s okay to use first-person plural (i.e. we, us) in editor collaboration materials . . .
 ```
 
 ```
 [^notes]: Recognize that all those markup languages, . . .
 ```
 
-The resulting endnotes list, however, appears at the bottom of the page (ergo, endnotes), because that’s how Kramdown notes are designed to function. See it down there at bottom?
+As already mentioned, the resulting notes list appears at bottom of the page (ergo, endnotes), because that’s how Kramdown notes are designed to function. Seek down and you shall find them.
 
-And that’s why we add a `## Endnotes` header in the [new page template](https://docs.textpattern.com/brand/textpattern-documentation-template), in case people want to use notes; they will automatically appear under that last section.
+Custom styles are used to provide a faux header in the endnotes list container. This provides proper visual heading of the back matter section, while keeping it out of the contents list (i.e. the table of contents) at top of page, which automatically targets headers.[^backmatter]
 
-[^notes]: Recognize that all those markup languages, and the different flavours of them, calling the functionality ‘footnotes’, is doing the web-publishing world a disservice. We do not perpetuate the fallacy in this documentation. Footnotes are a specific type of notes usage in print publishing only, where pages have a physical set dimension and word limit. In web publishing, documents have no such contraint and notes always appear at the end of the document (excepting PDFs and ebooks that mimic print layouts). It is, therefore, more logical to call such markup features ‘endnotes’, because that’s what they are when appearing at the end of the document. The _foot_ and _end_ prefixes merely indicate the placement of notes in published material.
+[^notes]: So, if you’re thinking of developing yet another notes extension for web documents, call it _notes_, or _endnotes_ specifically.
 
-## Endnotes
+[^backmatter]: Note to documentation team: This should be simple to add and endlessly useful.  
 
