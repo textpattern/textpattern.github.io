@@ -9,3 +9,5 @@ exclude:
   - Gemfile
   - LICENSE.txt
   - README.md
+kramdown:
+  toc_levels: 2..4
