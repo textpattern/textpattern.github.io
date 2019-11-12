@@ -40,15 +40,10 @@ description:
 
 A single paragraph to overview the page's subject goes here. It can be multiple sentences, of course.
 
-**On this page:**
+**On this page**:
 
-* [First section header](#first-section-header)
-  * [Subsection 1 header](#subsection-1-header)
-  * [Subsection 2 header](#subsection-2-header)
-  * [Etc](#etc)
-* [Second section header](#second-section-header)
-* [Third section header](#third-section-header)
-* [Etc](#etc)
+* Table of contents
+{:toc}
 
 ## First section header
 
@@ -71,8 +66,6 @@ Normal text.
 Normal text.
 
 ## Etc
-
-## Endnotes
 ```
 
  
@@ -136,77 +129,33 @@ Every tag page has an overview paragraph, as example, which uses a fairly consis
 
 The contents list (aka table of contents) comes under any overview paragraph, or directly under the title if no overview. 
 
-The contents list begins with a consistent lead line
+The contents list begins with a consistent lead line, followed by the Kramdown syntax for outputting a customized content list
 
 ```
 **On this page:**
+
+* Table of contents
+{:toc}
 ```
 
-The lead line is followed by the contents list itself. For the time being, the list must be manually created.
+The contents list will display the page’s structure by automatically generating a ToC out of the existing `h2` through `h4` headings only.
 
-You can create nested lists to represent heading levels, but ensure the nested lines are aligned correctly or they may not render properly. Basically, the list bullet of a given nested item must begin under the text of the parent list item (i.e. two additional spaces right from the parent bullet), for example:
+The `h1` heading is not displayed because that’s already the title of the page.
 
-```
-* A second-level heading
-  * A third-level heading
-  * Etc
-    * A fourth-level heading
-    * Etc
-* Another second-level heading
-``` 
-
-A contents list item is a Markdown link that corresponds with a given section header in your document:
-
-```
-[Heading text](#heading-text)
-```
-
-The headers must be unique in all cases. Link paths must begin with an octothorpe (`#`), followed by the header text, all lower-case and hyphenated.
-
-Adjust the default contents list as needed.
-
-Avoid using `h5` and `h6` header levels, if possible, in the contents list. You may use them in the document body, but consider if they are really needed in the contents too. Sometimes it’s enough to simply point to the parent section and let readers go from there.
-
-And remember, deep structuring of any documentation could mean documentation is getting too complex.  
+The `h5` and `h6` headings are not displayed because: 1) You should try to avoid using that deep of structure, if possible, for page usability reasons. 2) Even if you do use those headings in documentation, we don’t want an overly complex contents list. We rely on the `h4` headings to get readers closer to any deeper sections in context.  
 
 ### Section headers
 
-Because the page title is the only first-level header in the document, the first-level items in the contents list will equal second-level headers; second-level list items will equal third-level headers, and so on.
+Because the page title is the only first-level header (`h1`) in the document, the first-level items in the contents list will equal second-level headers (`h2`); second-level list items will equal third-level headers (`h3`), and third-level list items will equal fourth-level headers (`h4`).
 
-For example, this first-level list item in the contents:
+Do not leave two headers in series without any normal text between them; it’s weak information design. Every section in your page, regardless of header-level, must be followed by at least one paragraph of normal text (remember: a paragraph means at least one sentence, and a sentence means at least one word).
 
-```
-* [First section header](#first-section-header)
-```
-
-Equals the first second-level header in your document:
-
-```
-## First section header
-```
-
-And so on.
-
-Every section of your page, regardless of header-level, must be followed by at least one paragraph of normal text. Do not add two headers in a row; it’s weak information design.
-
-Also, do not use a deeper heading level if you only need one such level under a higher heading. Figure out a different way to write the text. Only use lower-heading levels when you have two or more instances of them under a given parent heading. 
-
-### Endnotes
-
-At the very bottom of the template is a heading for notes:
-
-```
-## Endnotes
-```
-
-Delete this line if you don’t use any endnotes in your documentation. 
-
-But if you _do_ use notes (see [Notes in main text](https://docs.textpattern.com/brand/user-docs-guide#notes-in-main-text) in the documentation guidelines), then leave this section header and the notes will appear under it automatically as endnotes.
+Also, make sure you use at least two headings at a given level, or not at all. Using a single child heading is also sloppy information design. Figure out a different way to write the text without the heading if you don’t need more than one heading under a parent.
 
 ## Other content elements
 
-For the most part, using Markdown for various content elements like lists, blockquotes, code snippets, and inline formatting works just fine.
+For all other content types you may need, and are appropriate for use, see [Markup](https://docs.textpattern.com/brand/user-docs-guide#tables) in the user documentation guidelines.
 
-Whenever Markdown can’t be used for adding a given content element, such elements will be described in the documentation guidelines. One example right now is tables, which must be added as regular HTML, and contained inside a special `div` wrapper (see [Tables](https://docs.textpattern.com/brand/user-docs-guide#tables) in the documentation guidelines).
+When in doubt about structuring a page or using a given content element, re-open the page’s [existing issue](https://github.com/textpattern/textpattern.github.io/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed), or start a new issue if one doesn’t already exist, using the [Discuss existing page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=discuss-existing-page.md&title=page%3A+) issue template.
 
-When in doubt about structuring a page or using a given content element, look at the structure for a page already in the folder you’re expecting to add to.
+See the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-collaboration-procedures) for more on that process.
