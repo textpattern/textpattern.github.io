@@ -154,7 +154,7 @@ Never use the first-person singular or plural in regular user documentation. It'
 
 Likewise, _never_ make it personal with pronouns like ‘I’, ‘me’, and ‘my’ no matter what type of documentation it is. Collaborative documentation is never about you, and the reader doesn’t care about you either. Sorry. Take the second person stance and empower the reader. Make them feel like they're doing it alone, because they are. You're just an impartial voice over their shoulder guiding them along.
 
-[^examples]: Note to documentation team: This is a good example of where a new class selector (e.g. `.text-example`) is needed for distinguishing examples from normal text, but which are different from interface alert message styling, and are not appropriate as `blockquote`.
+[^examples]: Note to documentation team: This is a good example of where a new selector (e.g. `.examples`) could help distinguish _examples_ text from normal text, without marking them as blockquotes, which is wrong.
 
 **Exception to the rule**:
 
