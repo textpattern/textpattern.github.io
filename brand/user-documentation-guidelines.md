@@ -10,6 +10,9 @@ description: Guidelines for contributions to Textpattern CMS user documentation.
 
 These guidelines, an extension of Textpattern’s [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide), are specifically for the editorial upkeep of the [Textpattern user documentation](https://docs.textpattern.com/). Documentation editors, authors, and all interested contributors will want to read up here.
 
+* Table of contents
+{:toc}
+
 **On this page:**
 
 * [Target audience](#target-audience)
@@ -35,7 +38,11 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
   * [File paths and names](#file-paths-and-names)
   * [Normal text](#normal-text)
 * [Markup](#markup)
-	* [Selectors and attributes](#selectors-and-attributes)
+  * [Styling](#styling)
+    * [Inline text styling](#inline-text-styling)
+    * [Inline selectors](#inline-selectors)
+    * [Block element styling](#block-element-styling)
+	  * [Custom block-element selectors](#custom-block-element-selectors)
 	* [Definition lists](#definition-lists)
   * [Tables](#tables)
   * [Notes](#notes)
@@ -370,45 +377,58 @@ Whenever possible, use regular Markdown syntax for formatting text elements (fon
 
 For certain block elements, you either need to use straight HTML, because of certain presentational needs (namely tables), or Kramdown syntax (e.g. block spans, notes, definition lists…). The following sections explain the situations you may need to accomodate.
 
-### Selectors and attributes
+### Styling
 
-Applying HTML selectors and attributes requires Kramdown syntax.
+Styling content, whether inline text or block elements, can be done using HTML, Kramdown.
 
-Kramdown calls the syntax an ‘inline attributes list’.[^selectors] But it’s not called ‘inline’ to imply use on inline HTML elements (e.g. `span`); rather, it’s referring to the way attributes are lined up in the curly-bracket notation. The structure looks like this:
+#### Inline text styling
 
-```
-{: #id .class}
-```
+You will rarely-to-never need to format inline text beyond __strong__, **bold**, _emphasis_, *italic*, or ***bold-italic***, which is easily done by using regular Markdown syntax.
 
-If you use an `id` selector, as shown, the space must exist between the `:` and `#`. If no `id` selector is needed (i.e. on block elements), then no space is needed either, but you can leave it, and you can use as many class selectors as you want:
+In the rare cases you do need to format inline text, you can use the `style` attribute with a regular HTML `span` element, for example:
 
 ```
-{:.class1 .class2 .class3 .etc}
+<span style="color:red;">Stop!</span>
 ```
 
-**The good news on using inline attributes lists:**
-
-You will:
-
-1. Never need inline selectors, _thank goodness!_, since Markdown can apply **bold**, *italic*, and ***bold-italic*** formatting when needed. Ergo, you will never use a `span` on anything.
-2. Only worry about block element styling when these guidelines define such selectors for use. Such selectors will be indicated in the relevant section of this document where use is explained in context (e.g. [**Alert message strings**](#alert-message-strings)). 
-
-**Block element styling:**   
-
-When using a Kramdown attributes list on a block element (e.g. `p`), position the syntax on a new line immediately after the element text:
+Or apply the style using Kramdown’s ‘inline attribute list’ notation on a `strong`, `b`, `em`, or `i` element applied by Markdown, for example:
 
 ```
-This is a regular paragraph.
-{: .class}
+**Stop!**{: style="color: red"}
 ```
 
-See the [**Alert message strings**](#alert-message-strings) section for examples.   
+In the above example, the `style` color is applied to the `b` element on ’Stop!’ (i.e. `<b>Stop!</b>`).
 
-**Inline spans:**
+#### Inline selectors
 
-Ha! Again, you don’t use inline spans in documentation for any reason.
+You will never need to use selectors for inline styling, but if any are created for use in user documentation, they will be clarified here.
 
-[^selectors]: See https://kramdown.gettalong.org/syntax.html#inline-attribute-lists.
+The Kramdown syntax is again the ‘inline attribute list’ notation on a `b`, `strong`, `i`, or `em` element, as decribed previously, but using a custom `class` name value instead of the `style` attribute/value pair, for example:
+
+```
+**All systems go.**{:.blastoff}
+```  
+
+#### Block element styling
+
+Block element styling can be done with HTML or Kramdown. Use the cleaner Kramdown notation whenever possible ([tables](#tables) are one exception requiring HTML in user documentation).
+
+The Kramdown notation for block element styling is similar to that used for inline styling, except the syntax goes on its own line immediately after the block element content, for example:
+
+```
+This is a text example as a regular paragraph.
+{: .examples}
+```
+
+Only worry about block element styling if any such block elements are defined in the sections below, or elsewhere noted (e.g. [**Alert message strings**](#alert-message-strings)).
+
+#### Custom block-element selectors
+
+The following content types have custom selectors to make the styling happen.
+
+Text examples:
+
+File tree structures:
 
 ### Defintion lists
 
