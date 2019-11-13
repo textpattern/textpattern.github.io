@@ -53,7 +53,7 @@ No matter what, main text or notes, ensure you’re not using more words than ne
 
 Anyone can help with Textpattern documentation. We maintain a tight set of documentation pages by topic need and editorial consideration. The needs-based approach is not meant to be overprotective of the information; rather, it makes the best documentation when quality is important but time and help resources are limited.
 
-History has shown there’s little need for a lot of user documentation, anyway, though it’s still a matter of pinpointing what hits the mark. History has also shown that few people want to write documentation. Since demand for documentation is low, the dirth of fly-by-night authors is balanced by a committed few editors, including core developers as technical reviewers. This fellowship of expositionists is sufficient for upkeeping the resource, if not always timely.
+History has shown there’s little need for a lot of user documentation, anyway, though it’s still a matter of pinpointing what hits the mark. History has also shown that few people want to write documentation. Since demand for documentation is low, the dearth of one-off authors is balanced by a committed few editors, including core developers as technical reviewers. This fellowship of 'expositionists' is sufficient to upkeep the resource, if not always timely.
 
 The good editors are volunteers like anyone else; busy with their own lives and labours. They are much like volunteer firefighters who dutifully arrive with pale and water when a flame is spied. Happy to set things safe and right when the community sounds the alarm. 
 
@@ -95,7 +95,7 @@ And more possibilities still, some of which may require new folders in the docum
 * [shortcode examples](https://docs.textpattern.com/tags/shortcodes/)
 * tutorials around core capabilities that replace what used to require one or more plugins (plus indication of said plugins so a user may easier identify what might be eliminated) 
 * [theme development documentation](https://docs.textpattern.com/themes/), and design competition materials (though this may be restricted to a different, dedicated site)
-* [brand and community collaboraton information](https://docs.textpattern.com/brand/) (like the document you are reading now).
+* [brand and community collaboration information](https://docs.textpattern.com/brand/) (like the document you are reading now).
 
 ### Revising existing pages
 
@@ -108,7 +108,7 @@ Again, documentation is a community effort, and even editors must work together 
 At the bottom of every documentation page is the following way point to get you there faster:
 
 See something wrong in this document? Outdated info, a broken link, faulty code example, or whatever? Please [open an issue](https://github.com/textpattern/textpattern.github.io/issues) and we’ll investigate.
-{: .alert-block .information .report-issues}
+{: .alert-block .information .footnote .report-issues}
 
 ## Linking strategy
 
@@ -148,19 +148,21 @@ Documentation is written from the perspective of an _anonymous_ expert to the fi
 
 For example:[^examples]
 
-> Click your name in the Users panel to change your email.
+Click your name in the Users panel to change your email.
+{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
-Never use the first-person singular or plural in regular user documentation. It's easy to slip into first-person plural mode with an official Textpattern voice (i.e. ‘we’ and ‘us’), but it’s unnecesary, and inappropriate for user documentation.[^we]
+Never use the first-person singular or plural in regular user documentation. It's easy to slip into first-person plural mode with an official Textpattern voice (i.e. ‘we’ and ‘us’), but it’s unnecessary, and inappropriate for user documentation.[^we]
 
 Likewise, _never_ make it personal with pronouns like ‘I’, ‘me’, and ‘my’ no matter what type of documentation it is. Collaborative documentation is never about you, and the reader doesn’t care about you either. Sorry. Take the second person stance and empower the reader. Make them feel like they're doing it alone, because they are. You're just an impartial voice over their shoulder guiding them along.
 
-[^examples]: Note to documentation team: This is a good example of where a new selector (e.g. `.examples`) could help distinguish _examples_ text from normal text, without marking them as blockquotes, which is wrong.
+[^examples]: Note to documentation team: This is a good example of where a new selector (e.g. `.examples`) could help distinguish _examples_ text from normal text, without marking them up as `blockquote`, which is wrong.
 
 **Exception to the rule**:
 
 There is at least one exception to the perspective rule. It’s possible third-person could be used in specific contexts, like when guiding the administrator on user accounts:[^examples]
 
-> To change a user’s role, find and click their name in the Users panel . . .
+To change a user’s role, find and click their name in the Users panel . . .
+{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
 ‘Their’ is a third-person plural pronoun. It could just as well be third-person singular (his/her). But for the vast majority of documentation, you will never need to do this.
 
@@ -170,7 +172,7 @@ Another exception is with regard to materials like you are reading now, written 
 
 ### Abbreviations
 
-See baselines in the similarly-named section of the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide#abbreviations). With respect to user documentation, two topics there are especialy important to review: the avoidance of common-word abbreviations (e.g. ‘admin’), and the recommended use of Latin idioms as abbreviations in parenthetical notes.
+See baselines in the similarly-named section of the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide#abbreviations). With respect to user documentation, two topics there are especially important to review: the avoidance of common-word abbreviations (e.g. ‘admin’), and the recommended use of Latin idioms as abbreviations in parenthetical notes.
 
 ### Brand name
 
@@ -180,7 +182,7 @@ See baselines in the similarly-named section of the [editorial style guide](http
 
 Interface strings are the text elements a user reads in the administration interface; from headers to form control labels to system feedback messages. Thoughtful development of these strings is critical for good software usability. So is referring to them consistently yet unobtrusively in documentation.
 
-The balance between consistency and unobtrusiveness when documentating interface strings, can be challenging when many types of strings exist. Textpattern documentation aims for a clear and logical balance, whether referring directly to back-end locations or identifying such elements in general terms.
+The balance between consistency and unobtrusiveness when documenting interface strings, can be challenging when many types of strings exist. Textpattern documentation aims for a clear and logical balance, whether referring directly to back-end locations or identifying such elements in general terms.
 
 The various possible strings are detailed in the following sections.
 
@@ -206,13 +208,15 @@ Form control options
 
 ### Presentation element names
 
-The names of default and custom semantic elements, found on their respective panels (Themes, Sections, Pages, Forms, and Styles) under the Presentation section of the back end should always be formatted as bold-italic, for example:  
+The names of default and custom semantic elements, found on their respective panels (Themes, Sections, Pages, Forms, and Styles) under the Presentation section of the back end should always be formatted as bold-italic, for example:[^examples]  
 
 The ***comments_display*** form.
+{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
 Because some of these core elements have the name ***default***, you must be careful to use formatting in the proper context. Consider this example of doing it correctly:[^examples]
 
-A default stylesheet, named ***default***, must exist. It will be created as an empty stylesheet on import if missing in the *styles* directory of a theme package. 
+A default stylesheet, named ***default***, must exist. It will be created as an empty stylesheet on import if missing in the *styles* directory of a theme package.
+{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
 In the *rare* case that you need to document lists of these things (sometimes needed in plugin and theme development documentation), leave the formatting out (i.e. use normal text), but *only* if the items in a given list are all strings of a single type and no other text.
 
@@ -316,6 +320,7 @@ Finally, do not italicize directory and file names when used in a list to show f
 * directory
 * directory
 * . . .
+{: .no-bullets style="font-family:monospace;"}
 
 It should also not be necessary to mark up file tree examples as code.
 
@@ -327,11 +332,13 @@ Normal text strings are any other type outside of those already described (outsi
 
 Normal text strings should be offset from regular documentation copy by single quotation marks, for example (links are part of the actual interface text):[^examples]
 
-‘[Textpattern CMS]() (v4.7.3)’
+[Textpattern CMS]() (v4.7.3)
+{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
 And:[^examples]
 
-‘[Back to top]()’
+[Back to top]()
+{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
 This is the same formatting used on form control options, so make sure the differing contexts are clear in writing.
 
@@ -341,7 +348,7 @@ Due to certain platform constraints, documentation uses a mixture of HTML, regul
 
 Whenever possible, use regular Markdown syntax for formatting text elements (font style and weight, links, basic lists, blockquotes…). 
 
-For certain block elements, you either need to use straight HTML, because of certain presentational needs (namely tables), or Kramdown syntax (e.g. block spans, notes, definition lists…). The following sections explain the situations you may need to accomodate.
+For certain block elements, you either need to use straight HTML, because of certain presentational needs (namely tables), or Kramdown syntax (e.g. block spans, notes, definition lists…). The following sections explain the situations you may need to acommodate.
 
 ### Styling
 
@@ -382,19 +389,73 @@ Block element styling can be done with HTML or Kramdown. Use the cleaner Kramdow
 The Kramdown notation for block element styling is similar to that used for inline styling, except the syntax goes on its own line immediately after the block element content, for example:
 
 ```
-This is a text example as a regular paragraph.
+This is a paragraph styled as an example.
 {: .examples}
 ```
 
-Only worry about block element styling if any such block elements are defined in the sections below, or elsewhere noted (e.g. [**Alert message strings**](#alert-message-strings)).
+Only worry about block element styling if any such block elements are defined in the sections below, or elsewhere in context of a topic (e.g. [**Alert message strings**](#alert-message-strings)).
 
-### Defintion lists
+#### Custom block-element selectors
+
+Knowing how to use Kramdown's inline attribute list notation allows designing specific content types by way of one or more existing class selectors and/or by adding specific HTML attributes. The selectors should be used for their intended purposes and for the indicated context types *only*.
+
+**Text alignment**:
+
+If you ever need to align a paragraph left, right, centre, or justified, use one of the following.
+
+Left-align text:
+
+```
+A paragraph.
+{: .align-left}
+```
+
+Right-aligned text:
+
+```
+A paragraph.
+{: .align-right}
+```
+
+Centred text:
+
+```
+A paragraph.
+{: .align-center}
+```
+
+Justified text:
+
+```
+A paragraph.
+{: .align-justify}
+```
+
+**Text examples**:
+
+Text examples are paragraphs of hypothetical text used to show examples in documentation, such as when needing to demonstrate how text strings are formatted. These paragraphs need to be offset from the main text or it will appear confusing to readers. In these cases, using a `blockquote` is not appropriate because it's not the right semantic element; not the correct content type. It could be that these are only needed in the document you are reading (and they are used in several places on this page), but here's how:
+
+```
+A paragraph used to show a text example in user documentation.
+{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+```
+
+Since there is no custom selector available for examples, inline styles are used via Kramdown notation to reduce the example's width, center the block, and put low-contrast top and bottom borders on it, for example:
+
+A paragraph used to show a text example in user documentation.
+{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+
+**File tree structures**:
+
+
+
+### Definition lists
 
 Definition lists are added using Kramdown syntax.
 
 There is no particular type of documentation content you need to know about; just use a list if/when it’s better to.
 
-The stucture is:
+The structure is:
 
 ```
 Definition title
