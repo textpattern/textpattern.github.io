@@ -382,24 +382,22 @@ You will rarely-to-never need to format inline text beyond **strong**, *emphasis
 <td><code><strong>Strong</strong></code></td>
 <td><strong>Strong</strong></td>
 </tr>
+<tr>
 <th scope="row">Italic</th>
 <td>–&#x002a;</td>
 <td><code><i>Italic</i></code></td>
 <td><i>Italic</i></td>
 </tr>
+<tr>
 <th scope="row">Bold</th>
 <td>–</td>
 <td><code><b>Bold</b></code></td>
 <td><b>Bold</b></td>
 </tr>
 </tbody>
-<tfoot>
-<tr><td colspan="3">
-<ol>
+<tfoot><tr><td colspan="3"><ol>
 <li>There is no Markdown syntax for true (semantic) italic and bold formatting.</li>
-</ol>
-</td></tr>
-</tfoot>
+</ol></td></tr></tfoot>
 </table></div>
 
 Unlike in Textile (which can not be used in user docs), Markdown does not have syntax for rendering `i` (italic) and `b` (bold) elements. HTML must be used when these specific inline elements are needed for formatting words or text strings without the implied strength and emphasis that is otherwise detected by screen-readers for the visually impaired.[^emphasis]
