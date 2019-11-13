@@ -445,12 +445,12 @@ Custom selectors for inline styling do not exist at this time, but you would use
 
 #### Block element styling
 
-Block element styling can be done with HTML or Kramdown. Use the cleaner Kramdown notation whenever possible ([tables](#tables) are one exception requiring HTML).
+Block element styling can be done with HTML or Kramdown. Use the cleaner Kramdown notation whenever HTML is not required (e.g. [tables](#tables) do require HTML at this point).
 
-The Kramdown notation for block element styling is similar to that used for inline styling, except the syntax goes on its own line immediately after the block element, for example:
+The Kramdown notation for block element styling is similar to that used for inline styling, except the syntax goes on its own line immediately after the block element content:
 
 ```
-This is a paragraph styled as an example.
+This is a paragraph styled as a hypothetical example.
 {: .class-name}
 ```
 
@@ -458,20 +458,18 @@ Only worry about styling block element content if the following sections describ
 
 ### Text alignment
 
-You can align a block element left, right, centre, or justified with one of these class selectors, respectively:
+Align text (or a block element) left, right, centre, or justified with one of these class selectors, respectively:
 
 * `.align-left`
 * `.align-right`
 * `.align-center`
 * `.align-justify`
 
-However, you will unlikely need to use such overrides on existing presentation rules.
+You should not have a need to do this against existing presentation rules, however.
 
 ### Non-bulleted lists
 
-Lists are useful and frequently used in documentation, but not every content type is suited to using a generic list.
-
-To remove list bullets, use:
+It's possible to use the `list--no-bullets` class to remove bullets from list items in first-level lists:
 
 ```
 * list item 1
@@ -480,24 +478,19 @@ To remove list bullets, use:
 {: .list--no-bullets}
 ```
 
+But you probably won't use this selector by itself; it becomes more handy when combined with other styling rules (e.g. see see [File tree examples](#file-tree-examples)). 
+
 ### Example blocks
 
-Example blocks are block level elements (mainly paragraphs or lists) of hypothetical text used as examples in documentation. The styling helps set these blocks from regular text so there's no confusion for the reader. Use these whenever the content is not appropriately code or a displayed quotation.
+Example blocks are block level elements (mainly paragraphs or lists) of hypothetical text used as examples in documentation. The styling helps distinguish these blocks from regular text so there's no confusion for the reader. Use these whenever the content is not appropriately code or a displayed quotation.
 
-All example blocks use the following Kramdown 'inline attributes list' for base styling (the inline `style` rules are needed until a custom selector is provided to simply the syntax):
+All example blocks use the following Kramdown 'inline attributes list' for base styling. The inline `style` rules are needed until a custom class selector is provided to simply the syntax:
 
 ```
 {: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 ```
 
-The base rules work splendidly on a regular paragraph:
-
-```
-A paragraph used to show a text example in user documentation.
-{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
-```
-
-Like so:
+The base rules work splendidly on a regular paragraph, for example:
 
 A paragraph used to show a text example in user documentation.
 {: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
@@ -517,7 +510,7 @@ If you want to use the bullets, add a rule to position them inside the `ul` cont
 {: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 ```
 
-If you'd rather not show as many bullets, add the custom selector for removing the first-level: (see actual use in the [Paths, directories, and file paths in lists](#paths-directories-and-file-paths-in-lists) section):
+If you'd rather not show as many bullets, add the custom selector for removing the first-level:
 
 ```
 * . . .
