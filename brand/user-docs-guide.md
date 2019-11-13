@@ -209,28 +209,30 @@ Select box option strings
 Presentation elements refer to the names of default and custom semantic elements found under the Presentation section of Textpattern's back end; specifically Themes, Sections, Pages, Forms, and Styles. Presentation element names should always be formatted as bold-italic, for example:[^examples]  
 
 The ***comments_display*** form.
-{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
 Because some of these core elements use the same name for defaults, namely ***default*** (and mind that it's not capitalized when used as the proper noun), you must be careful to use formatting in the proper context.
 
 Consider this example of doing it correctly, where the first instance of 'default' is just an adjective, thus not formatted to distinguish it as an element name:[^examples]
 
 A default stylesheet, named ***default***, must exist. It will be created as an empty stylesheet on import if missing in the *styles* directory of a theme package.
-{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
 In the *rare* case you need to use lists of Presentation element names (sometimes needed in plugin and theme development documentation), leave the formatting out (i.e. use normal text), but *only* if the items in a given list are all strings of a single type and no other text.
 
 For example, the following is one of several actual lists of form names used in a themes documentation page. Everything is formatted correctly, from lead-in sentence (providing the necessary context) to list items:[^examples]
 
 Article forms:
-{: style="margin-left:5%; border-left:3px dotted #e0e0e0; padding-left:.5em;"}
+{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
 * article_listing
 * default
 * search_results
-{: style="margin-left:5%; border-left:3px dotted #e0e0e0; padding-left:.5em;"}
+{: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
-If the list items were adulterated with normal text, the formatting would have to be used, for example:
+The example is not reflecting actual `code`, so is not marked up that way. Nor should it be styled as a component of a file tree file (see [File tree structures](#file-tree-structure)).
+
+If the list items were adulterated with normal text, the expected formatting would have to be used, for example:
 
 * the ***default*** form
 
@@ -294,26 +296,41 @@ OMFG, _no!_
 
 ### File paths and names
 
-Absolute or relative file paths, directory names, and file names, whether appearing as strings in back-end panels or being used in general context should always be italicized only, for example:[^examples]
+Absolute or relative file paths and URLs, and directory and file names, whether being described as strings appearing in back-end panels or being used in main text, should be formatted as `<i>italic</i>`.
 
-*/Users/name/Sites/sitename/textpattern/tmp*
+Examples:[^examples]
+: Absolute URL: <i>https://textpattern.com</i>
+: Relative file path: <i>/Users/name/Sites/sitename/textpattern/tmp</i>
+: Directory name: textpattern
+: File name: <i>.htaccess</i>, <i>index.php</i>, <i>default.txp</i>, <i>front-end-themes.md</i>, and so on.
 
-Ignore using italic if the path or name is part of a code block (e.g in the Diagnostics panel for *.htaccess* file display); just use normal text as it appears in the code, for example:
+And mind these conditions:
+
+1. Do not use quotation marks to distinguish paths and file names for any reason.
+2. When using a file name by itself, always include the file extension. This is the convention to distinguish file names from directory names (i.e. *index.php* is correct, but *index* is not).  
+3. Do not prefix a directory name with a foreslash (e.g. */textpattern*) when referring to the name by itself. Again, file name extensions will distinguish file names from directory names.)
+4. Do not format paths, directories, or file names used inline as code (unless the context is actual code). Always italic!
+
+Specific situations of use…
+
+#### Paths, directories, and file paths in code
+
+Ignore italic formatting, of course, if the path or name is reflecting actual code, such as from the Diagnostics panel, for example:
 
 ```
-/Users/name/Sites/sitename/textpattern/tmp
+Textpattern version: 4.7.3 (7c46d1f4c8ac79e62a7d5e54a9ddac53)
+Last update: 2019-03-11 07:38:57/2019-02-25 22:22:30
+Textpattern path: __TXP-ROOT/textpattern
+Article URL pattern: title_only
+Production status: live
+Temporary directory path: __TXP-ROOT/textpattern/tmp
 ```
 
-You may often want or need to write file paths and file names in documentation that are not directly reflected in the administration interface. Use italic in these cases too, for example: *domain.tld/textpattern*. Or *index.php*, *index.md*, or what have you.
+#### Paths, directories, and file paths in lists
 
-Be mindful of these conditions:
+Do not italicize these when used in a list, where each list item is solely path, directory, or file name, no other sentence text; otherwise, every item would be needlessly italicized.
 
-1. Do not use quotation marks to distinguish paths and file names.
-2. Do not mark up paths and file names as `code`, unless they actually reflect lines from a code file.
-3. When using a file name by itself, always include file extensions to distinguish it from a directory name (i.e. *index.php* is correct, but *index* is not).  
-4. Do not prefix a directory name with a foreslash (e.g. */textpattern*) when referring to the name by itself. (File name extensions will distinguish file names from director names.)
-
-Finally, do not italicize directory and file names when used in a list to show file tree structure; otherwise, every item would be needlessly italicized. The context of being a file tree structure should be clear. Use normal text in these cases, for example:[^trees]
+For example, when showing a file tree, or the contents of a directory, use an unordered list with no bullets, styled as an example, with items in normal font weight:
 
 * . . .
 * directory
@@ -322,11 +339,9 @@ Finally, do not italicize directory and file names when used in a list to show f
 * directory
 * directory
 * . . .
-{: .no-bullets style="font-family:monospace;"}
+{: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
 It should also not be necessary to mark up file tree examples as code.
-
-[^trees]: Note to documentation team: This is a good example where a new class selector (e.g.. `.file-tree`) is made available to offset representations of file trees, which are not semantically suitable as `code` or `blockquote`, and should probably be different from regular text `.examples`.
 
 ### Normal text
 
@@ -335,12 +350,12 @@ Normal text strings are any other type outside of those already described (outsi
 Normal text strings should be offset from regular documentation copy by single quotation marks, for example (links are part of the actual interface text):[^examples]
 
 [Textpattern CMS]() (v4.7.3)
-{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
 And:[^examples]
 
 [Back to top]()
-{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
 This is the same formatting used on form control options, so make sure the differing contexts are clear in writing.
 
@@ -348,7 +363,7 @@ This is the same formatting used on form control options, so make sure the diffe
 
 Due to certain platform constraints, documentation uses a mixture of HTML, regular Markdown, and Kramdown (unfortunately), depending on what you need.
 
-Whenever possible, use regular Markdown syntax for formatting text elements (font style and weight, links, basic lists, blockquotes…). 
+Whenever possible, use regular Markdown syntax for formatting inline text (strong, emphasis) and adding content types (lists, blockquotes, etc.). 
 
 For certain block elements, you either need to use straight HTML, because of certain presentational needs (namely tables), or Kramdown syntax (e.g. block spans, notes, definition lists…). The following sections explain the situations you may need to accommodate.
 
@@ -390,7 +405,7 @@ You will rarely-to-never need to format inline text beyond **strong**, *emphasis
 </tr>
 <tr>
 <th scope="row">Bold</th>
-<td>–</td>
+<td>–&#x002a;</td>
 <td><code><b>Bold</b></code></td>
 <td><b>Bold</b></td>
 </tr>
@@ -415,18 +430,20 @@ In the rare cases you need more than **strong** or *emphasis* to style inline te
 Or apply the style using Kramdown’s ‘inline attribute list’ notation on a `strong` or `em` element already applied by Markdown. This, for example:
 
 ```
-**Stop!**{: style="color: red"}
+**Stop!**{: style="color:red"}
 ```
 
-Will tell you: **Stop!**{: style="color: red"}.
+Will tell you: **Stop!**{: style="color:red"}
 
-The `style` color is applied to the `strong` element on ’Stop!’ (i.e. `<strong>Stop!</strong>`).
+The color style is applied to the `strong` element on ’Stop!’ (i.e. `<strong style="color: red">Stop!</strong>`).
 
 #### Inline selectors
 
 You will never need to use selectors for inline styling, but if any are created for use in user documentation, they will be clarified here.
 
-The Kramdown syntax is again the ‘inline attribute list’ notation on a `b`, `strong`, `i`, or `em` element, as decribed previously, but using a custom `class` name value instead of the `style` attribute/value pair, for example:
+The Kramdown syntax is again the ‘inline attribute list’ notation on a `strong` or `em` element, as described previously, but using a custom class selector instead of the `style`.
+
+For example:
 
 ```
 **All systems go.**{:.blastoff}
@@ -434,24 +451,24 @@ The Kramdown syntax is again the ‘inline attribute list’ notation on a `b`, 
 
 #### Block element styling
 
-Block element styling can be done with HTML or Kramdown. Use the cleaner Kramdown notation whenever possible ([tables](#tables) are one exception requiring HTML in user documentation).
+Block element styling can be done with HTML or Kramdown. Use the cleaner Kramdown notation whenever possible ([tables](#tables) are one exception requiring HTML).
 
 The Kramdown notation for block element styling is similar to that used for inline styling, except the syntax goes on its own line immediately after the block element content, for example:
 
 ```
 This is a paragraph styled as an example.
-{: .examples}
+{: .class-name}
 ```
 
 Only worry about block element styling if any such block elements are defined in the sections below, or elsewhere in context of a topic (e.g. [**Alert message strings**](#alert-message-strings)).
 
 #### Custom block-element selectors
 
-Knowing how to use Kramdown's inline attribute list notation allows designing specific content types by way of one or more existing class selectors and/or by adding specific HTML attributes. The selectors should be used for their intended purposes and for the indicated context types *only*.
+Knowing how to use Kramdown's inline attribute list notation allows designing specific content types by way of one or more existing class selectors and/or by adding specific HTML attributes. The selectors should be used for their intended purposes and only for the indicated context types below.
 
-**Text alignment**:
+##### Text alignment
 
-If you ever need to align a paragraph left, right, centre, or justified, use one of the following.
+To align a paragraph left, right, centre, or justified, use one of the following.
 
 Left-align text:
 
@@ -481,23 +498,89 @@ A paragraph.
 {: .align-justify}
 ```
 
-**Text examples**:
+##### List style types
 
-Text examples are paragraphs of hypothetical text used to show examples in documentation, such as when needing to demonstrate how text strings are formatted. These paragraphs need to be offset from the main text or it will appear confusing to readers. In these cases, using a `blockquote` is not appropriate because it's not the right semantic element; not the correct content type. It could be that these are only needed in the document you are reading (and they are used in several places on this page), but here's how:
+To remove list styles.
+
+Use:
+
+```
+* list item 1
+* list item 2
+* etc
+{: .list--no-bullets}
+```
+
+Giving:
+
+* list item 1
+* list item 2
+* etc
+{: .list--no-bullets}
+
+To use an ordered list decimal numbers
+
+Use:
+
+```
+1. list item 1
+2. list item 2
+3. etc
+{: .list--numbered}
+```
+
+Giving:
+
+1. list item 1
+2. list item 2
+3. etc
+{: .list--numbered}
+
+##### Offset examples
+
+Offset examples are paragraphs of hypothetical text used as examples in documentation, for any reason other than an actual displayed quotation (in which case use a `blockquote`). Example  text needs offset from the main copy or will appear confusing. 
+
+Offset examples might only be needed in the document you are reading (and they are used in several places on this page), but here is an example:
 
 ```
 A paragraph used to show a text example in user documentation.
-{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 ```
 
-Since there is no custom selector available for examples, inline styles are used via Kramdown notation to reduce the example's width, center the block, and put low-contrast top and bottom borders on it, for example:
+Since there is no custom selector available for this currently, inline styles are used to add a left margin and border, giving the examples obvious distinction, for example:
 
 A paragraph used to show a text example in user documentation.
-{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
-**File tree structures**:
+##### File tree structures
 
+Sometimes you may need to show a file tree, or the contents of a folder, or just a sample set of a directory's contents. It's appropriate to use an unordered list, not `code`, to distinguish these from regular text.
 
+You may show the contents of a directory, or a sample of the files, using bullets (see actual use in [Presentation element names](#presentation-element-names) section):
+
+```
+* . . .
+* file0.css
+* file1.index 
+* file.md
+* . . .
+{: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+```
+
+Or you may need to show more of the file tree, thus sensible not show the bullets (see actual use in [Paths, directories, and file paths in lists](#paths-directories-and-file-paths-in-lists) section):
+
+```
+* . . .
+* directory
+  * file.ext 
+  * file.ext
+* directory
+* directory
+* . . .
+{: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+```
+
+Either way, the lists follow the 'examples' display to set them off from regular text, and they are _not_ marked up as code, because they are not; they're just lists.  
 
 ### Definition lists
 
