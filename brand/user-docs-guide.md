@@ -180,21 +180,19 @@ See baselines in the similarly-named section of the [editorial style guide](http
 
 ## Formatting interface strings
 
-Interface strings are the text elements a user reads in the administration interface; from headers to form control labels to system feedback messages. Thoughtful development of these strings is critical for good software usability. So is referring to them consistently yet unobtrusively in documentation.
+Interface strings are the text elements a user reads in the back end interface; from headers to form control labels to system feedback messages. Thoughtful development of these strings is critical for good software usability, but so is referring to them consistently yet unobtrusively in documentation. A clear but minimum set of formatting rules are needed to distinguish the different types of strings from regular documentation text. A single format style (e.g. bold, italic, quotation marks, or whatever) is little more effective than no formatting at all. Thus a balance needs struck: On one hand a minimum number of formatting styles used. And on the other hand, clear distinction between string types, and between string types and normal documentation text.
 
-The balance between consistency and unobtrusiveness when documenting interface strings, can be challenging when many types of strings exist. Textpattern documentation aims for a clear and logical balance, whether referring directly to back-end locations or identifying such elements in general terms.
-
-The various possible strings are detailed in the following sections.
+Various possible strings are detailed in the following sections, in many cases using `strong` and `em` (emphasis) via Markdown for [inline formatting](#inline-text-formatting). Markdown does not provide syntax for true `i` (italic) and `b` (bold) element formatting, but in this case it's okay; you want screen-reading technology to catch the distinguished (**strengthened** or *emphasized*) interface strings, in addition to those distinguished by capitalization or quotation marks. 
 
 ### Headers, labels, and options
 
 The documentation of panel and widget headers, and form control labels and options, would be difficult and confusing to readers if a single formatting convention were used. Part of the problem is the sentence-case convention used in interface strings and in editorial style. To account for this, a minimum of necessarily different formatting rules are needed here and against the other types of interface strings. It is the aforementioned balance between consistency and unobtrusiveness in writing.   
 
-Single words, capitalized
+Single-word strings, capitalized
 : Formatting: Normal font weight
 : Example: The Write panel.
 
-Multiple words, no terminal punctuation
+Multiple-word strings, no terminal punctuation
 : Formatting: `**Bold**` font weight
 : Example: The **Date format** setting.
 
@@ -202,7 +200,7 @@ Full-sentence strings with terminal punctuation
 : Formatting: `*Italic*` font style
 : Example: The *Prevent widowed words in article titles?* preference.
 
-Form control options
+Select box option strings
 : Formatting: Single quote marks
 : Example: Select ‘Yes’ from the drop-down options.
 
@@ -225,10 +223,12 @@ In the *rare* case you need to use lists of Presentation element names (sometime
 For example, the following is one of several actual lists of form names used in a themes documentation page. Everything is formatted correctly, from lead-in sentence (providing the necessary context) to list items:[^examples]
 
 Article forms:
+{: style="margin-left:5%; border-left:3px dotted #e0e0e0; padding-left:.5em;"}
+
 * article_listing
 * default
 * search_results
-{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="margin-left:5%; border-left:3px dotted #e0e0e0; padding-left:.5em;"}
 
 If the list items were adulterated with normal text, the formatting would have to be used, for example:
 
@@ -350,15 +350,63 @@ Due to certain platform constraints, documentation uses a mixture of HTML, regul
 
 Whenever possible, use regular Markdown syntax for formatting text elements (font style and weight, links, basic lists, blockquotes…). 
 
-For certain block elements, you either need to use straight HTML, because of certain presentational needs (namely tables), or Kramdown syntax (e.g. block spans, notes, definition lists…). The following sections explain the situations you may need to acommodate.
+For certain block elements, you either need to use straight HTML, because of certain presentational needs (namely tables), or Kramdown syntax (e.g. block spans, notes, definition lists…). The following sections explain the situations you may need to accommodate.
 
 ### Styling
 
-Styling content, whether inline text or block elements, can be done using HTML, Kramdown.
+Styling content, whether on inline text or block elements, can be done using basic Markdown, Kramdown (an augmented version of Markdown), or regular HTML, if all else fails.
+
+#### Inline text formatting
+
+You will rarely-to-never need to format inline text beyond **strong**, *emphasis*, or ***strong-emphasis***, which is easily done by using regular Markdown syntax (Table 1).
+
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
+<caption>Table 1. Markdown syntax for inline formatting.</caption>
+<thead><tr>
+<th scope="col">Style</th>
+<th scope="col">Markdown</th>
+<th scope="col">HTML</th>
+<th scope="col">Effect</th>
+</tr></thead>
+<td>data</td>
+<tbody>
+<tr>
+<th scope="row">Emphasis</th>
+<td><code>*Emphasis*</code><br><code>_Emphasis_</code></td>
+<td><code><em>Emphasis</em></code></td>
+<td><em>Emphasis</em></td>
+</tr>
+<tr>
+<th scope="row">Strong</th>
+<td><code>**Strong**</code><br><code>__Strong__</code></td>
+<td><code><strong>Strong</strong></code></td>
+<td><strong>Strong</strong></td>
+</tr>
+<th scope="row">Italic</th>
+<td>–&#x002a;</td>
+<td><code><i>Italic</i></code></td>
+<td><i>Italic</i></td>
+</tr>
+<th scope="row">Bold</th>
+<td>–</td>
+<td><code><b>Bold</b></code></td>
+<td><b>Bold</b></td>
+</tr>
+</tbody>
+<tfoot>
+<tr><td colspan="3">
+<ol>
+<li>There is no Markdown syntax for true (semantic) italic and bold formatting.</li>
+</ol>
+</td></tr>
+</tfoot>
+</table></div>
+
+Unlike in Textile (which can not be used in user docs), Markdown does not have syntax for rendering `i` (italic) and `b` (bold) elements. HTML must be used when these specific inline elements are needed for formatting words or text strings without the implied strength and emphasis that is otherwise detected by screen-readers for the visually impaired.[^emphasis]
+
+[^emphasis]: As an example, it's appropriate to italicize the titles of major works, always in capital-case, as you might do in main text or endnotes like this when citing a reference or source, but not by using `em` elements that would emphasize the text unnecessarily to anyone using a screen-reader.
 
 #### Inline text styling
-
-You will rarely-to-never need to format inline text beyond __strong__, **bold**, _emphasis_, *italic*, or ***bold-italic***, which is easily done by using regular Markdown syntax.
 
 In the rare cases you do need to format inline text, you can use the `style` attribute with a regular HTML `span` element, for example:
 
