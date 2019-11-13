@@ -27,7 +27,7 @@ The scope and depth of user documentation should be what is needed and not more.
 
 The scope of the documentation is primarily on the software’s core functionality. The out-of-the-box features and capabilities.
 
-Until further notice, and to a lessere degree, the user documentation site also harbours [plugin development resources](https://docs.textpattern.com/development/) and Textpattern [brand identity and collaboration information](https://docs.textpattern.com/brand/), including these guidelines.
+Until further notice, and to a lesser degree, the user documentation site also harbours [plugin development resources](https://docs.textpattern.com/development/) and Textpattern [brand identity and collaboration information](https://docs.textpattern.com/brand/), including these guidelines.
 
 With regard to the primary user documentation, it’s better to add new pages when needed than to cover every possible topic in advance without knowing it’s warranted.
 
@@ -49,95 +49,6 @@ When fine-grain descriptions are warranted on a page, but the page starts feelin
 
 No matter what, main text or notes, ensure you’re not using more words than necessary to convey a useful fact. (See [Concise writing tips](#concise-writing-tips) section.)
 
-## Collaborative editing process
-
-Anyone can help with Textpattern documentation. We maintain a tight set of documentation pages by topic need and editorial consideration. The needs-based approach is not meant to be overprotective of the information; rather, it makes the best documentation when quality is important but time and help resources are limited.
-
-History has shown there’s little need for a lot of user documentation, anyway, though it’s still a matter of pinpointing what hits the mark. History has also shown that few people want to write documentation. Since demand for documentation is low, the dearth of one-off authors is balanced by a committed few editors, including core developers as technical reviewers. This fellowship of 'expositionists' is sufficient to upkeep the resource, if not always timely.
-
-The good editors are volunteers like anyone else; busy with their own lives and labours. They are much like volunteer firefighters who dutifully arrive with pale and water when a flame is spied. Happy to set things safe and right when the community sounds the alarm. 
-
-And there it is, editors rely on the community to help bring documentation inaccuracies and deficiencies to attention as they are found. The more often this happens, the better the state of the documentation at any given time. The process for addressing issues is revealed through the following sections. 
-
-### New documentation pages
-
-Creation of new pages is managed through repository issues, and determined by monitoring community needs and knowing what is coming in future Textpattern releases.
-
-#### Using repository Issues 
-
-When editors anticipate the need for a new page but do not yet create them for whatever reason, they will create an [Issue](https://github.com/textpattern/textpattern.github.io/issues) for the page and flag it with the ‘**New page needed**’ label. The issue should make it clear the nature of the page, where it might go in the documentation tree, and how it should be [cross-linked](#cross-links) with other pages in context.
-
-If you think a documentation page is needed but an issue doesn’t exist for it, create the issue so that editors may help decide how and where to integrate the material. Perhaps you’ve really found a gap in useful information, but it’s better to add it somewhere existing than to start a new page. Editors help figure these things out.
-
-Anyone is free to claim (or be assigned) the role to draft a needed document, indicated by an issue. No one else will bother with the draft unless it’s otherwise published or the author transfers it to someone else to finish. This way collaborators don’t step on each others’ toes.
-
-#### Determining new topics
-
-The need for new documentation — which may or not lead to an actual new page — is typcially recognized by two main vectors:
-
-1. the kinds of questions repeatedly raised in the community forum
-2. the new functionality or capabilities expected in a future version of the software.
-
-The first case reflects what _good_ documentation development is about: identify the problems people commonly have with the software, then provide written solutions to point to, so explanations aren’t needlessly repeated. Self-help is the best help when time is short, and good documentation enables that.
-
-In the first case, anyone is welcome and encouraged, especially editors, to monitor the community forum and identify potential documentation topics that can address questions and problems repeatedly raised and discussed there. When such topics are recognized, an [Issue](https://github.com/textpattern/textpattern.github.io/issues) can be made to bring the subject to attention.
-
-In the second case, technical editors (i.e. Textpattern’s core developers) will likely identify what upcoming features will need documented and make [Issues](https://github.com/textpattern/textpattern.github.io/issues) for them.
-
-Anyone following along with Textpattern development, by maintaining a local installation to test new features, can help identify topics, propose them in [Issues](https://github.com/textpattern/textpattern.github.io/issues), and draft the documentation. 
-
-For example, a common area for new page needs recognized in advance is with regard to [Textpattern tags](https://docs.textpattern.com/tags/) or their attributes, existing or [in development](https://docs.textpattern.com/tags/tags-in-development).
-
-Another example of future documentation needs are with respect to the more abstract administration-side functionalities anticipated, such as the extended functionality for images handling and unlimited custom fields.
-
-And more possibilities still, some of which may require new folders in the documentation tree, include:
-
-* [shortcode examples](https://docs.textpattern.com/tags/shortcodes/)
-* tutorials around core capabilities that replace what used to require one or more plugins (plus indication of said plugins so a user may easier identify what might be eliminated) 
-* [theme development documentation](https://docs.textpattern.com/themes/), and design competition materials (though this may be restricted to a different, dedicated site)
-* [brand and community collaboration information](https://docs.textpattern.com/brand/) (like the document you are reading now).
-
-### Revising existing pages
-
-While our approach is to document when needed, we strive to keep existing pages current and optimal. If a given page is outdated against current functionality, it should be corrected as soon as possible. Or, as mentioned earlier, evaluated for recycling and removal.
-
-If you find a page _is_ outdated, it’s not because nobody cares, it’s because the problem has not been brought to anyone’s attention by way of an [Issue](https://github.com/textpattern/textpattern.github.io/issues), thus it is slipping through the cracks.
-
-Again, documentation is a community effort, and even editors must work together efficiently. This can often just mean starting [Issues](https://github.com/textpattern/textpattern.github.io/issues) so problems are recognized and addressed.
-
-At the bottom of every documentation page is the following way point to get you there faster:
-
-See something wrong in this document? Outdated info, a broken link, faulty code example, or whatever? Please [open an issue](https://github.com/textpattern/textpattern.github.io/issues) and we’ll investigate.
-{: .alert-block .information .footnote .report-issues}
-
-## Linking strategy
-
-Try to keep a big-picture perspective on documentation and add logical bridges between related, helpful topics. This can be done by cross-linking between documentation pages and anchor-linking within a given page.
-
-There’s a side benefit from this too: as one becomes familiar with the big-picture, it gets easier to identify ROT (redundancy, outdated, trivial) material, thus ways to revise and refine documentation as a whole.
-
-That said, there’s a point where too much linking can be distracting, so don’t fill a page up with a lot of links like a Wikipedia page. Likewise, refrain from adding bridge links too soon after creating new material. It never fails that several rounds of page editing are needed, and in-page anchor links, especially, are repeatedly broken before the content stabilizes.
-
-### Cross-links
-
-Cross-links between documentation pages should use Markdown  link syntax and absolute URLs:
-
-```
-[link text](https://docs.textpattern.com/directory/page-title)
-```
-
-### Anchor links
-
-Anchor links are links within a given page, pointing from one section location to another, to bridge related information in context.
-
-The links are relative links, and ideally applied at the ends of relevant paragraphs as a parenthetical with the following simple pattern:
-
-```
-. . . end of paragraph. (See [Target section](#target-section) section.)
-```
-
-The consistent placement and parenthetical pattern of anchor links makes them clear to readers that they are in-page links. 
-
 ## Writing and editing
 
 In addition to the helpful guidelines below for writing and editing documentation, see the baseline [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide) for style conventions in general. 
@@ -157,7 +68,7 @@ The second-person stance empowers the reader on their solo adventure. You're jus
 
 Never use first-person singular (*I*, *me*, *my*) or plural (*we* and *us*) in user documentation. The documentation isn't about you, and the voice of Textpattern is unnecessary and inappropriate. See the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide#author-perspective) for other platform perspectives.
 
-### Exceptions to the rule
+#### Exceptions to the rule
 
 There is at least one exception to the 'second-person' rule. The third-person could be used in specific contexts, like when guiding the administrator on user accounts. Consider this hypothetical example:
 
@@ -302,7 +213,7 @@ OMFG, _no!_
 
 ### File paths and names
 
-Absolute or relative file paths and URLs, and directory and file names, whether being described as strings appearing in back-end panels or being used in main text, should be formatted as `<i>italic</i>`.
+Uniform resource identifiers (e.g. URLs), absolute or relative file paths, and directory and file names, whether described as strings in back-end panels or being used in regular documentation text, should be formatted as italic, preferably using HTML tags (i.e. `<i>italic</i>`), though most will undoubtedly ignore that recommendation. See the [Inline text formatting](#inline-text-formatting) section for why HTML is recommended in this case (and blame it on Markdown). 
 
 Examples:[^examples]
 : Absolute URL: <i>https://textpattern.com</i>
@@ -360,6 +271,34 @@ And:[^examples]
 {: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
 This is the same formatting used on form control options, so make sure the differing contexts are clear in writing.
+
+## Linking strategy
+
+Try to keep a big-picture perspective on documentation and add logical bridges between related, helpful topics. This can be done by cross-linking between documentation pages and anchor-linking within a given page.
+
+There’s a side benefit from this too: as one becomes familiar with the big-picture, it gets easier to identify ROT (redundancy, outdated, trivial) material, thus ways to revise and refine documentation as a whole.
+
+That said, there’s a point where too much linking can be distracting, so don’t fill a page up with a lot of links like a Wikipedia page. Likewise, refrain from adding bridge links too soon after creating new material. It never fails that several rounds of page editing are needed, and in-page anchor links, especially, are repeatedly broken before the content stabilizes.
+
+### Cross-links
+
+Cross-links between documentation pages should use Markdown  link syntax and absolute URLs:
+
+```
+[link text](https://docs.textpattern.com/directory/page-title)
+```
+
+### Anchor links
+
+Anchor links are links within a given page, pointing from one section location to another, to bridge related information in context.
+
+The links are relative links, and ideally applied at the ends of relevant paragraphs as a parenthetical with the following simple pattern:
+
+```
+. . . end of paragraph. (See [Target section](#target-section) section.)
+```
+
+The consistent placement and parenthetical pattern of anchor links makes them clear to readers that they are in-page links.
 
 ## Markup
 
