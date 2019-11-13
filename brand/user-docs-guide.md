@@ -242,54 +242,63 @@ That would be sloppy list construction anyway, so it should never be needed.
 
 Alert messages appear to software users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages when doing a task (e.g. when saving edits to a Textpattern draft article).
 
-Four kinds of messages exist: success, information, warning, or error.
+Four kinds of alert messages exist (Table 1).
 
-Use Kramdown’s ‘inline attributes list’ syntax (see [**Selectors and attributes**](#selectors-and-attributes)) to style alerts as they appear in the interface. All alert blocks use a common class, `.alert-block`, plus a unique one, as demonstrated in these hypothetical examples.
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
+<caption>Table 1. Class selectors for alert messages.</caption>
+<thead><tr>
+<th scope="col">Alert type</th>
+<th scope="col">Color</th>
+<th scope="col">Selectors&#x002a;</th>
+</tr></thead>
+<tbody>
+<tr>
+<th scope="row">Success</th>
+<td>Green</td>
+<td><code>.success</code></td>
+</tr>
+<tr>
+<th scope="row">Information</th>
+<td>Blue</td>
+<td><code>.information</code></td>
+</tr>
+<tr>
+<th scope="row">Warning</th>
+<td>Yellow</td>
+<td><code>.warning</code></td>
+</tr>
+<tr>
+<th scope="row">Error</th>
+<td>Red</td>
+<td><code>.erroer</code></td>
+</tr>
+</tbody>
+<tfoot>
+<tr><td colspan="2">
+<ol>
+<li>Each alert uses two class selectors: a common one (<code>.alert-block</code>), plus the unique one shown in table. </li>
+</ol>
+</td></tr>
+</tfoot>
+</table></div>
 
-**Success alerts:**
+Use Kramdown’s [block element styling](#block-element-styling) syntax on a paragraph to apply the needed selectors, for example:
 
 ```
 Success alert.
 {: .alert-block .success}
 ```
 
-Example:
+The full scope of alerts are detailed in the [Pre-flight checks](https://docs.textpattern.com/administration/diagnostics-panel#pre-flight-checks) section of the Diagnostics panel. Following are hypothetical examples of each presentation:
 
 You did good.
 {: .alert-block .success}
 
-**Information alerts:**
-
-```
-Information alert.
-{: .alert-block .information}
-```
-
-Example:
-
 New version available.
 {: .alert-block .information}
 
-**Warning alerts:**
-
-```
-Warning alert.
-{: .alert-block .warning}
-```
-
-Example:
-
 Watch your step.
 {: .alert-block .warning}
-
-**Error alerts:**
-
-```
-Error alert.
-{: .alert-block .error}
-```
-
-Example:
 
 OMFG, _no!_
 {: .alert-block .error}
@@ -372,14 +381,13 @@ Styling content, whether on inline text or block elements, can be done using bas
 You will rarely-to-never need to format inline text beyond **strong**, *emphasis*, or ***strong-emphasis***, which is easily done by using regular Markdown syntax (Table 1).
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
-<caption>Table 1. Markdown syntax for inline formatting.</caption>
+<caption>Table 2. Markdown syntax for inline formatting.</caption>
 <thead><tr>
 <th scope="col">Style</th>
 <th scope="col">Markdown</th>
 <th scope="col">HTML element</th>
 <th scope="col">Effect</th>
 </tr></thead>
-<td>data</td>
 <tbody>
 <tr>
 <th scope="row">Emphasis</th>
@@ -579,7 +587,6 @@ So, use the following guidelines with respect to tables:
 <th scope="col">Header</th>
 <th scope="col">Header</th>
 </tr></thead>
-<td>data</td>
 <tbody>
 <tr>
 <th scope="row">data</th>
@@ -592,15 +599,11 @@ So, use the following guidelines with respect to tables:
 <td>data</td>
 </tr>
 </tbody>
-<tfoot>
-<tr><td colspan="3">
-<ol>
+<tfoot><tr><td colspan="3"><ol>
 <li>note item</li>
 <li>note item</li>
 <li>note item</li>
-</ol>
-</td></tr>
-</tfoot>
+</ol></td></tr></tfoot>
 </table></div>
 ```
 
@@ -622,7 +625,7 @@ Consider the following table, which is an example of the notes in effect.
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
 <table>
-<caption>Table 1. Reference-mark entities as table notes.</caption>
+<caption>Table 3. Reference-mark entities as table notes.</caption>
 <thead>
 <tr>
 <th scope="col">Name</th>
