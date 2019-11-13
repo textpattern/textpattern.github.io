@@ -144,12 +144,12 @@ In addition to the helpful guidelines below for writing and editing documentatio
 
 ### Author perspective
 
-Documentation is written from the perspective of an _anonymous_ expert to the first-time administrator. Therefore, documentation authors and editors must write in the _second-person_ point of view. Pronouns are ‘you’, ‘your’, and ‘yours’ when referring to the reader; the assumed administrator of a new Textpattern installation.
+Documentation is written from the perspective of an *anonymous* expert to the first-time administrator. Therefore, documentation authors and editors must write in the second-person point of view. Pronouns are *you*, *your*, and *yours* when referring to the reader; the assumed administrator of a new Textpattern installation.
 
 For example:[^examples]
 
 Click your name in the Users panel to change your email.
-{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
 Never use the first-person singular or plural in regular user documentation. It's easy to slip into first-person plural mode with an official Textpattern voice (i.e. ‘we’ and ‘us’), but it’s unnecessary, and inappropriate for user documentation.[^we]
 
@@ -162,7 +162,7 @@ Likewise, _never_ make it personal with pronouns like ‘I’, ‘me’, and ‘
 There is at least one exception to the perspective rule. It’s possible third-person could be used in specific contexts, like when guiding the administrator on user accounts:[^examples]
 
 To change a user’s role, find and click their name in the Users panel . . .
-{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
 ‘Their’ is a third-person plural pronoun. It could just as well be third-person singular (his/her). But for the vast majority of documentation, you will never need to do this.
 
@@ -190,43 +190,45 @@ The various possible strings are detailed in the following sections.
 
 The documentation of panel and widget headers, and form control labels and options, would be difficult and confusing to readers if a single formatting convention were used. Part of the problem is the sentence-case convention used in interface strings and in editorial style. To account for this, a minimum of necessarily different formatting rules are needed here and against the other types of interface strings. It is the aforementioned balance between consistency and unobtrusiveness in writing.   
 
-Capitalized single words
-: Normal
-: Example: ‘The Write panel.’
+Single words, capitalized
+: Formatting: Normal font weight
+: Example: The Write panel.
 
 Multiple words, no terminal punctuation
-: Bold
+: Formatting: `**Bold**` font weight
 : Example: The **Date format** setting.
 
 Full-sentence strings with terminal punctuation
-: Italic
+: Formatting: `*Italic*` font style
 : Example: The *Prevent widowed words in article titles?* preference.
 
 Form control options
-: Single quote marks
+: Formatting: Single quote marks
 : Example: Select ‘Yes’ from the drop-down options.
 
 ### Presentation element names
 
-The names of default and custom semantic elements, found on their respective panels (Themes, Sections, Pages, Forms, and Styles) under the Presentation section of the back end should always be formatted as bold-italic, for example:[^examples]  
+Presentation elements refer to the names of default and custom semantic elements found under the Presentation section of Textpattern's back end; specifically Themes, Sections, Pages, Forms, and Styles. Presentation element names should always be formatted as bold-italic, for example:[^examples]  
 
 The ***comments_display*** form.
-{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
-Because some of these core elements have the name ***default***, you must be careful to use formatting in the proper context. Consider this example of doing it correctly:[^examples]
+Because some of these core elements use the same name for defaults, namely ***default*** (and mind that it's not capitalized when used as the proper noun), you must be careful to use formatting in the proper context.
+
+Consider this example of doing it correctly, where the first instance of 'default' is just an adjective, thus not formatted to distinguish it as an element name:[^examples]
 
 A default stylesheet, named ***default***, must exist. It will be created as an empty stylesheet on import if missing in the *styles* directory of a theme package.
-{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
-In the *rare* case that you need to document lists of these things (sometimes needed in plugin and theme development documentation), leave the formatting out (i.e. use normal text), but *only* if the items in a given list are all strings of a single type and no other text.
+In the *rare* case you need to use lists of Presentation element names (sometimes needed in plugin and theme development documentation), leave the formatting out (i.e. use normal text), but *only* if the items in a given list are all strings of a single type and no other text.
 
-For example, the following is one of several actual lists of form names used in a themes documentation page. Everything is formatted correctly, from lead in setence, which provides the necessary context, to list items:[^examples]
+For example, the following is one of several actual lists of form names used in a themes documentation page. Everything is formatted correctly, from lead-in sentence (providing the necessary context) to list items:[^examples]
 
 Article forms:
-
-  * article_listing
-  * default
-  * search_results
+* article_listing
+* default
+* search_results
+{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
 If the list items were adulterated with normal text, the formatting would have to be used, for example:
 
@@ -333,12 +335,12 @@ Normal text strings are any other type outside of those already described (outsi
 Normal text strings should be offset from regular documentation copy by single quotation marks, for example (links are part of the actual interface text):[^examples]
 
 [Textpattern CMS]() (v4.7.3)
-{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
 And:[^examples]
 
 [Back to top]()
-{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
 This is the same formatting used on form control options, so make sure the differing contexts are clear in writing.
 
@@ -437,13 +439,13 @@ Text examples are paragraphs of hypothetical text used to show examples in docum
 
 ```
 A paragraph used to show a text example in user documentation.
-{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 ```
 
 Since there is no custom selector available for examples, inline styles are used via Kramdown notation to reduce the example's width, center the block, and put low-contrast top and bottom borders on it, for example:
 
 A paragraph used to show a text example in user documentation.
-{: style="width:80%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:1px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
 
 **File tree structures**:
 
