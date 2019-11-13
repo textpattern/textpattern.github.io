@@ -240,9 +240,9 @@ That would be sloppy list construction anyway, so it should never be needed.
 
 ### Alert messages
 
-Another type of interface string that needs documented are block element system alerts, of which there are four types: success, information, warning, or error.
+Alert messages appear to software users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages when doing a task (e.g. when saving edits to a Textpattern draft article).
 
-Alerts appear to users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages (e.g. when saving changings).
+Four kinds of messages exist: success, information, warning, or error.
 
 Use Kramdown’s ‘inline attributes list’ syntax (see [**Selectors and attributes**](#selectors-and-attributes)) to style alerts as they appear in the interface. All alert blocks use a common class, `.alert-block`, plus a unique one, as demonstrated in these hypothetical examples.
 
@@ -328,9 +328,7 @@ Temporary directory path: __TXP-ROOT/textpattern/tmp
 
 #### Paths, directories, and file paths in lists
 
-Do not italicize these when used in a list, where each list item is solely path, directory, or file name, no other sentence text; otherwise, every item would be needlessly italicized.
-
-For example, when showing a file tree, or the contents of a directory, use an unordered list with no bullets, styled as an example, with items in normal font weight:
+Do not italicize these strings when used in a list, such as reflecting a file tree, directory contents, or what have, for example:
 
 * . . .
 * directory
@@ -340,8 +338,6 @@ For example, when showing a file tree, or the contents of a directory, use an un
 * directory
 * . . .
 {: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
-
-It should also not be necessary to mark up file tree examples as code.
 
 ### Normal text
 
@@ -380,7 +376,7 @@ You will rarely-to-never need to format inline text beyond **strong**, *emphasis
 <thead><tr>
 <th scope="col">Style</th>
 <th scope="col">Markdown</th>
-<th scope="col">HTML</th>
+<th scope="col">HTML element</th>
 <th scope="col">Effect</th>
 </tr></thead>
 <td>data</td>
@@ -388,46 +384,48 @@ You will rarely-to-never need to format inline text beyond **strong**, *emphasis
 <tr>
 <th scope="row">Emphasis</th>
 <td><code>*Emphasis*</code><br><code>_Emphasis_</code></td>
-<td><code><em>Emphasis</em></code></td>
+<td><code>em</code></td>
 <td><em>Emphasis</em></td>
 </tr>
 <tr>
 <th scope="row">Strong</th>
 <td><code>**Strong**</code><br><code>__Strong__</code></td>
-<td><code><strong>Strong</strong></code></td>
+<td><code>strong</code></td>
 <td><strong>Strong</strong></td>
 </tr>
 <tr>
 <th scope="row">Italic</th>
 <td>–&#x002a;</td>
-<td><code><i>Italic</i></code></td>
+<td><code>i</code></td>
 <td><i>Italic</i></td>
 </tr>
 <tr>
 <th scope="row">Bold</th>
 <td>–&#x002a;</td>
-<td><code><b>Bold</b></code></td>
+<td><code>b</code></td>
 <td><b>Bold</b></td>
 </tr>
 </tbody>
-<tfoot><tr><td colspan="3"><ol>
+<tfoot><tr><td colspan="4"><ol>
 <li>There is no Markdown syntax for true (semantic) italic and bold formatting.</li>
 </ol></td></tr></tfoot>
 </table></div>
 
 Unlike in Textile (which can not be used in user docs), Markdown does not have syntax for rendering `i` (italic) and `b` (bold) elements. HTML must be used when these specific inline elements are needed for formatting words or text strings without the implied strength and emphasis that is otherwise detected by screen-readers for the visually impaired.[^emphasis]
 
-[^emphasis]: As an example, it's appropriate to italicize the titles of major works, always in capital-case, as you might do in main text or endnotes like this when citing a reference or source, but not by using `em` elements that would emphasize the text unnecessarily to anyone using a screen-reader.
+[^emphasis]: As an example, it's appropriate to italicize the titles of major works, always in capital-case, as you might do in main text or endnotes like this. But not by using `em`, which would emphasize the text unnecessarily when read by a screen-reader.
 
 #### Inline text styling
 
-In the rare cases you need more than **strong** or *emphasis* to style inline text, you can use a regular `span` with inline styles, for example:
+In the rare cases you need more than **strong** or *emphasis* formatting, you can use a HTML `span` to apply inline styles, for example:
 
 ```
 <span style="color:red;">Stop!</span>
 ```
 
-Or apply the style using Kramdown’s ‘inline attribute list’ notation on a `strong` or `em` element already applied by Markdown. This, for example:
+Or apply the style using Kramdown’s ‘inline attribute list’ notation on a `strong` or `em` element applied by Markdown. 
+
+For example, this:
 
 ```
 **Stop!**{: style="color:red"}
@@ -439,11 +437,7 @@ The color style is applied to the `strong` element on ’Stop!’ (i.e. `<strong
 
 #### Inline selectors
 
-You will never need to use selectors for inline styling, but if any are created for use in user documentation, they will be clarified here.
-
-The Kramdown syntax is again the ‘inline attribute list’ notation on a `strong` or `em` element, as described previously, but using a custom class selector instead of the `style`.
-
-For example:
+Custom selectors for inline styling do not exist at this time, but you would use them the same way as before:
 
 ```
 **All systems go.**{:.blastoff}
@@ -453,56 +447,31 @@ For example:
 
 Block element styling can be done with HTML or Kramdown. Use the cleaner Kramdown notation whenever possible ([tables](#tables) are one exception requiring HTML).
 
-The Kramdown notation for block element styling is similar to that used for inline styling, except the syntax goes on its own line immediately after the block element content, for example:
+The Kramdown notation for block element styling is similar to that used for inline styling, except the syntax goes on its own line immediately after the block element, for example:
 
 ```
 This is a paragraph styled as an example.
 {: .class-name}
 ```
 
-Only worry about block element styling if any such block elements are defined in the sections below, or elsewhere in context of a topic (e.g. [**Alert message strings**](#alert-message-strings)).
+Only worry about styling block element content if the following sections describe a means for it.
 
-#### Custom block-element selectors
+### Text alignment
 
-Knowing how to use Kramdown's inline attribute list notation allows designing specific content types by way of one or more existing class selectors and/or by adding specific HTML attributes. The selectors should be used for their intended purposes and only for the indicated context types below.
+You can align a block element left, right, centre, or justified with one of these class selectors, respectively:
 
-##### Text alignment
+* `.align-left`
+* `.align-right`
+* `.align-center`
+* `.align-justify`
 
-To align a paragraph left, right, centre, or justified, use one of the following.
+However, you will unlikely need to use such overrides on existing presentation rules.
 
-Left-align text:
+### Non-bulleted lists
 
-```
-A paragraph.
-{: .align-left}
-```
+Lists are useful and frequently used in documentation, but not every content type is suited to using a generic list.
 
-Right-aligned text:
-
-```
-A paragraph.
-{: .align-right}
-```
-
-Centred text:
-
-```
-A paragraph.
-{: .align-center}
-```
-
-Justified text:
-
-```
-A paragraph.
-{: .align-justify}
-```
-
-##### List style types
-
-To remove list styles.
-
-Use:
+To remove list bullets, use:
 
 ```
 * list item 1
@@ -511,52 +480,33 @@ Use:
 {: .list--no-bullets}
 ```
 
-Giving:
+### Example blocks
 
-* list item 1
-* list item 2
-* etc
-{: .list--no-bullets}
+Example blocks are block level elements (mainly paragraphs or lists) of hypothetical text used as examples in documentation. The styling helps set these blocks from regular text so there's no confusion for the reader. Use these whenever the content is not appropriately code or a displayed quotation.
 
-To use an ordered list decimal numbers
-
-Use:
+All example blocks use the following Kramdown 'inline attributes list' for base styling (the inline `style` rules are needed until a custom selector is provided to simply the syntax):
 
 ```
-1. list item 1
-2. list item 2
-3. etc
-{: .list--numbered}
+{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 ```
 
-Giving:
-
-1. list item 1
-2. list item 2
-3. etc
-{: .list--numbered}
-
-##### Offset examples
-
-Offset examples are paragraphs of hypothetical text used as examples in documentation, for any reason other than an actual displayed quotation (in which case use a `blockquote`). Example  text needs offset from the main copy or will appear confusing. 
-
-Offset examples might only be needed in the document you are reading (and they are used in several places on this page), but here is an example:
+The base rules work splendidly on a regular paragraph:
 
 ```
 A paragraph used to show a text example in user documentation.
 {: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 ```
 
-Since there is no custom selector available for this currently, inline styles are used to add a left margin and border, giving the examples obvious distinction, for example:
+Like so:
 
 A paragraph used to show a text example in user documentation.
 {: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
-##### File tree structures
+#### File-tree examples
 
-Sometimes you may need to show a file tree, or the contents of a folder, or just a sample set of a directory's contents. It's appropriate to use an unordered list, not `code`, to distinguish these from regular text.
+Sometimes you may need to show a file tree, or the contents of a folder, or just a sample set of a directory's contents. This kind of content should not be marked up as a `code` block; rather, use an unordered list with the baseline example styling, but adjusted for list display.
 
-You may show the contents of a directory, or a sample of the files, using bullets (see actual use in [Presentation element names](#presentation-element-names) section):
+If you want to use the bullets, add a rule to position them inside the `ul` container (see actual use in the [Presentation element names](#presentation-element-names) section):
 
 ```
 * . . .
@@ -567,7 +517,7 @@ You may show the contents of a directory, or a sample of the files, using bullet
 {: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 ```
 
-Or you may need to show more of the file tree, thus sensible not show the bullets (see actual use in [Paths, directories, and file paths in lists](#paths-directories-and-file-paths-in-lists) section):
+If you'd rather not show as many bullets, add the custom selector for removing the first-level: (see actual use in the [Paths, directories, and file paths in lists](#paths-directories-and-file-paths-in-lists) section):
 
 ```
 * . . .
@@ -580,7 +530,7 @@ Or you may need to show more of the file tree, thus sensible not show the bullet
 {: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 ```
 
-Either way, the lists follow the 'examples' display to set them off from regular text, and they are _not_ marked up as code, because they are not; they're just lists.  
+Either way, the lists are distinguished from regular lists, and they're not inappropriately marked up as `code`, because they are not code in this context; they're just lists.  
 
 ### Definition lists
 
