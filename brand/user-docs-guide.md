@@ -144,31 +144,29 @@ In addition to the helpful guidelines below for writing and editing documentatio
 
 ### Author perspective
 
-Documentation is written from the perspective of an *anonymous* expert to the first-time administrator. Therefore, documentation authors and editors must write in the second-person point of view. Pronouns are *you*, *your*, and *yours* when referring to the reader; the assumed administrator of a new Textpattern installation.
+Documentation is written from the perspective of an impersonal expert to the first-time user of the software; in this case, a Textpattern administrator, who is likely developer, designer, and author, too, in that order.
 
-For example:[^examples]
+#### Second-person
+
+Therefore, documentation authors and editors should write in the second-person point of view, using the pronouns *you*, *your*, and *yours* when referring to the reader; the assumed administrator of a new Textpattern installation:
 
 Click your name in the Users panel to change your email.
-{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
-Never use the first-person singular or plural in regular user documentation. It's easy to slip into first-person plural mode with an official Textpattern voice (i.e. ‘we’ and ‘us’), but it’s unnecessary, and inappropriate for user documentation.[^we]
+The second-person stance empowers the reader on their solo adventure. You're just an impartial voice over their shoulder guiding them along. But don't go overboard on the pronouns. If you're addressing the reader in every other sentence, you have revising to do.  
 
-Likewise, _never_ make it personal with pronouns like ‘I’, ‘me’, and ‘my’ no matter what type of documentation it is. Collaborative documentation is never about you, and the reader doesn’t care about you either. Sorry. Take the second person stance and empower the reader. Make them feel like they're doing it alone, because they are. You're just an impartial voice over their shoulder guiding them along.
+Never use first-person singular (*I*, *me*, *my*) or plural (*we* and *us*) in user documentation. The documentation isn't about you, and the voice of Textpattern is unnecessary and inappropriate. See the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide#author-perspective) for other platform perspectives.
 
-[^examples]: Note to documentation team: This is a good example of where a new selector (e.g. `.examples`) could help distinguish _examples_ text from normal text, without marking them up as `blockquote`, which is wrong.
+### Exceptions to the rule
 
-**Exception to the rule**:
-
-There is at least one exception to the perspective rule. It’s possible third-person could be used in specific contexts, like when guiding the administrator on user accounts:[^examples]
+There is at least one exception to the 'second-person' rule. The third-person could be used in specific contexts, like when guiding the administrator on user accounts. Consider this hypothetical example:
 
 To change a user’s role, find and click their name in the Users panel . . .
-{: style="width:90%; margin-left:auto; margin-right:auto; padding-top:.75em; padding-bottom:.75em; border-top:2px dotted #e0e0e0; border-bottom:2px dotted #e0e0e0;"}
+{: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
-‘Their’ is a third-person plural pronoun. It could just as well be third-person singular (his/her). But for the vast majority of documentation, you will never need to do this.
+You are still in second-person mode, but you've introduced a third-party, the potential future collaborators of the reader. It could just as well be third-person singular (*his*, *her*). But for the vast majority of documentation, you will never need to do this.
 
-Another exception is with regard to materials like you are reading now, written by editors for other editorial collaborators. _We_ are speaking to each other, so use of ‘we’, a first-person plural pronoun, can be appropriate at times.
-
-[^we]: It’s okay to use first-person plural (i.e. *we*, *us*) in editor [collaboration](user-documentation-collaboration) materials because *we* are speaking among ourselves.
+Another exception is with regard to materials like you are reading now, materials written by editors for other editorial collaborators. _We_ are speaking to each other, so use of ‘we’ (first-person plural) can be appropriate in pages like this.
 
 ### Abbreviations
 
@@ -230,19 +228,18 @@ Article forms:
 * search_results
 {: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
-The example is not reflecting actual `code`, so is not marked up that way. Nor should it be styled as a component of a file tree file (see [File tree structures](#file-tree-structure)).
+The example is not reflecting actual `code`, so is not marked up that way. Nor should it be styled as a component of a file tree file (see [File tree examples](#file-tree-examples)).
 
 If the list items were adulterated with normal text, the expected formatting would have to be used, for example:
 
 * the ***default*** form
+{: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
 That would be sloppy list construction anyway, so it should never be needed.
 
 ### Alert messages
 
-Alert messages appear to software users as feedback dialogue in the Diagnostics panel, or in other panels as success/failure messages when doing a task (e.g. when saving edits to a Textpattern draft article).
-
-Four kinds of alert messages exist (Table 1).
+Alert messages appear to software users as feedback dialogue in the Diagnostics panel, or in other panels as a software user proceeds through certain tasks (e.g. when saving draft changes). Four kinds of alert messages exist (Table 1). The full set of alert messages in core are detailed in [Diagnostics](https://docs.textpattern.com/administration/diagnostics-panel).
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
 <caption>Table 1. Class selectors for alert messages.</caption>
@@ -274,7 +271,7 @@ Four kinds of alert messages exist (Table 1).
 </tr>
 </tbody>
 <tfoot>
-<tr><td colspan="2">
+<tr><td colspan="3">
 <ol>
 <li>Each alert uses two class selectors: a common one (<code>.alert-block</code>), plus the unique one shown in table. </li>
 </ol>
@@ -289,7 +286,7 @@ Success alert.
 {: .alert-block .success}
 ```
 
-The full scope of alerts are detailed in the [Pre-flight checks](https://docs.textpattern.com/administration/diagnostics-panel#pre-flight-checks) section of the Diagnostics panel. Following are hypothetical examples of each presentation:
+Hypothetical examples of each alert's presentation:
 
 You did good.
 {: .alert-block .success}
