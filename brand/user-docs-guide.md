@@ -408,19 +408,21 @@ Unlike in Textile (which can not be used in user docs), Markdown does not have s
 
 #### Inline text styling
 
-In the rare cases you do need to format inline text, you can use the `style` attribute with a regular HTML `span` element, for example:
+In the rare cases you need more than **strong** or *emphasis* to style inline text, you can use a regular `span` with inline styles, for example:
 
 ```
 <span style="color:red;">Stop!</span>
 ```
 
-Or apply the style using Kramdown’s ‘inline attribute list’ notation on a `strong`, `b`, `em`, or `i` element applied by Markdown, for example:
+Or apply the style using Kramdown’s ‘inline attribute list’ notation on a `strong` or `em` element already applied by Markdown. This, for example:
 
 ```
 **Stop!**{: style="color: red"}
 ```
 
-In the above example, the `style` color is applied to the `b` element on ’Stop!’ (i.e. `<b>Stop!</b>`).
+Will tell you: **Stop!**{: style="color: red"}.
+
+The `style` color is applied to the `strong` element on ’Stop!’ (i.e. `<strong>Stop!</strong>`).
 
 #### Inline selectors
 
