@@ -37,9 +37,9 @@ Else, a page can be removed, upon editor review, if the effort to revise it is n
 
 ### Depth of page content
 
-A given page should only be as explanatory as necessary. Thorough, but not belabouring every possible factoid. (See [Revising existing pages](#revising-existing-pages) section.)
+A given page should only be as explanatory as necessary; thorough, but not belabouring every possible factoid (see [Revising existing pages](#revising-existing-pages)).
 
-Rely on the usability of Textpattern’s interface, and leave some benefit of doubt to the user. Only fill out topic minutiae when it may help clear up questions repeatedly raised about it in the [community forum](https://forum.textpattern.com/). (See [Determining new topics](#determining-new-topics) section.)
+Rely on the usability of Textpattern’s interface, and leave some benefit of doubt to the user to connect the dots. Only expand on subject minutiae when it helps clear up questions repeatedly raised in the [community forum](https://forum.textpattern.com/). See the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures) for more on that notion and others. 
 
 For example, administration-side panels strive to be as intuitive as possible by design. Perhaps not perfect but always improving. Therefore, it’s probably not necessary to meticulously document panel functionality in minute detail, especially as the panels provide help tips in context of a given function or widget.
 
@@ -47,7 +47,7 @@ Before writing or revising documentation on the administration-side functionalit
 
 When fine-grain descriptions are warranted on a page, but the page starts feeling overly dense, or you are inclined to use a lot of parenthetical notes in sentences, consider [using notes](#using-notes) instead.
 
-No matter what, main text or notes, ensure you’re not using more words than necessary to convey a useful fact. (See [Concise writing tips](#concise-writing-tips) section.)
+Whether main text or notes, ensure you’re not using more words than necessary to convey a useful fact (see [Concise writing tips](#concise-writing-tips)).
 
 ## Writing and editing
 
@@ -81,17 +81,19 @@ Another exception is with regard to materials like you are reading now, material
 
 ### Abbreviations
 
-See baselines in the similarly-named section of the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide#abbreviations). With respect to user documentation, two topics there are especially important to review: the avoidance of common-word abbreviations (e.g. ‘admin’), and the recommended use of Latin idioms as abbreviations in parenthetical notes.
+Regarding user documentation, two topics are especially important to review in the [Abbreviations](https://docs.textpattern.com/brand/editorial-style-guide#abbreviations) section of the editorial style guide: the avoidance of common-word abbreviations like ‘admin’, and the recommended use of Latin idioms as abbreviations in parenthetical notes over English equivalents in regular text.
 
 ### Brand name
 
-See baselines in the similarly-named section of the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide#brand-name). Particularly in documentation, do not overuse the brand name. The context of being a Textpattern resource is already clear to readers by fact they are using the software and in the documentation domain.
+Particularly in documentation, do not overuse the brand name. The context of being a Textpattern resource is already clear to readers by fact they are using the software and in the documentation domain. See more in [Brand name](https://docs.textpattern.com/brand/editorial-style-guide#brand-name) guidelines of editorial style guide. 
 
 ## Formatting interface strings
 
-Interface strings are the text elements a user reads in the back end interface; from headers to form control labels to system feedback messages. Thoughtful development of these strings is critical for good software usability, but so is referring to them consistently yet unobtrusively in documentation. A clear but minimum set of formatting rules are needed to distinguish the different types of strings from regular documentation text. A single format style (e.g. bold, italic, quotation marks, or whatever) is little more effective than no formatting at all. Thus a balance needs struck: On one hand a minimum number of formatting styles used. And on the other hand, clear distinction between string types, and between string types and normal documentation text.
+Interface strings are the text elements a user reads in the back-end panels of the software; from headers to form control labels to system feedback messages. Thoughtful development of these strings is critical for good software usability, but so is referring to them consistently yet unobtrusively in documentation.
 
-Various possible strings are detailed in the following sections, in many cases using `strong` and `em` (emphasis) via Markdown for [inline formatting](#inline-text-formatting). Markdown does not provide syntax for true `i` (italic) and `b` (bold) element formatting, but in this case it's okay; you want screen-reading technology to catch the distinguished (**strengthened** or *emphasized*) interface strings, in addition to those distinguished by capitalization or quotation marks. 
+A clear but minimum set of formatting rules are needed to distinguish the different types of strings from regular documentation text. A single format style (e.g. bold, italic, quotation marks, or whatever) is little more effective than no formatting at all. Thus a balance needs struck: On one hand a minimum number of formatting styles used; on the other, clear distinction between string types, and across types and normal documentation text.
+
+Various strings in the software's back end, that you may need to document, are detailed in the following sections. Some of these strings use `strong` and `em` (emphasis) via Markdown for [inline formatting](#inline-text-formatting). Be cognizant of the fact that Markdown does not provide syntax for true `i` (italic) and `b` (bold) element formatting. In this case, however, it's okay; you want screen-reading technology to catch the distinguished (**strengthened** or *emphasized*) interface strings, in addition to those solely distinguished by capitalization or quotation marks. 
 
 ### Headers, labels, and options
 
@@ -215,7 +217,7 @@ OMFG, _no!_
 
 Uniform resource identifiers (e.g. URLs), absolute or relative file paths, and directory and file names, whether described as strings in back-end panels or being used in regular documentation text, should be formatted as italic, preferably using HTML tags (i.e. `<i>italic</i>`), though most will undoubtedly ignore that recommendation. See the [Inline text formatting](#inline-text-formatting) section for why HTML is recommended in this case (and blame it on Markdown). 
 
-Examples:[^examples]
+Examples:
 : Absolute URL: <i>https://textpattern.com</i>
 : Relative file path: <i>/Users/name/Sites/sitename/textpattern/tmp</i>
 : Directory name: textpattern
@@ -260,7 +262,7 @@ Do not italicize these strings when used in a list, such as reflecting a file tr
 
 Normal text strings are any other type outside of those already described (outside of any functional control or interface widget). A notably example are the possible types of text that appear at the bottoms of back-end panels, like software versions numbers.
 
-Normal text strings should be offset from regular documentation copy by single quotation marks, for example (links are part of the actual interface text):[^examples]
+Normal text strings should be offset from regular documentation copy by single quotation marks, for example (links are part of the actual interface text):
 
 [Textpattern CMS]() (v4.7.3)
 {: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
@@ -314,7 +316,7 @@ Styling content, whether on inline text or block elements, can be done using bas
 
 #### Inline text formatting
 
-You will rarely-to-never need to format inline text beyond **strong**, *emphasis*, or ***strong-emphasis***, which is easily done by using regular Markdown syntax (Table 1).
+You will rarely-to-never need to format inline text beyond **strong**, *emphasis*, or ***strong-emphasis***, which is easily done by using regular Markdown syntax (Table 2).
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
 <caption>Table 2. Markdown syntax for inline formatting.</caption>
