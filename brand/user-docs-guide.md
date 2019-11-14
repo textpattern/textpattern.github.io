@@ -345,25 +345,23 @@ Only use inline formatting like *emphasis*, **strong**, or ***emphasis-strong***
 </tr>
 <tr>
 <th scope="row">Italic</th>
-<td>–&#x002a;</td>
+<td>None&#x002a;</td>
 <td><code>i</code></td>
 <td><i>Italic</i></td>
 </tr>
 <tr>
 <th scope="row">Bold</th>
-<td>–&#x002a;</td>
+<td>None&#x002a;</td>
 <td><code>b</code></td>
 <td><b>Bold</b></td>
 </tr>
 </tbody>
 <tfoot><tr><td colspan="4"><ol>
-<li>There is no Markdown syntax for true (semantic) italic and bold formatting.</li>
+<li>This isn’t Textile, and never will be on GitHub.</li>
 </ol></td></tr></tfoot>
 </table></div>
 
-Unlike with Textile (not usable in GitHub), Markdown does not have syntax for rendering `i` (italic) and `b` (bold) elements. HTML must be used when these specific inline elements are needed, without the inherent strength and emphasis that is otherwise detected by screen-readers for the visually impaired.[^emphasis]
-
-[^emphasis]: As an example, it's appropriate to italicize the titles of major works, always in title case, as you might do in main text or endnotes like this. But not by using `em`, which would emphasize the text unnecessarily when read by a screen-reader.
+Markdown does not have syntax for rendering `i` (italic) and `b` (bold) elements. HTML must be used when the presentation of these elements is needed without the inherent emphasis and strength otherwise added by `em` and `strong`. This is ideally the case for [directory paths and file name names](#path-and-file-name), or if ever citing the title of a major work, as two examples. Such text is already distinguished (visually) from regular text by italic alone, or title-case capitalization, or both. The added emphasis from `em` on screen-readers is an unnecessary hit to the few who might fancy these docs that way.
 
 ### Block-level content and styling
 
