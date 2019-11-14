@@ -51,7 +51,7 @@ The basic directory structure will look like the following tree:
     * section (empty) 
   * styles
     * default.css
-{: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+{: .list-directory}
 
 ### The *manifest.json* file
 
@@ -90,7 +90,7 @@ The *pages* directory is required, and two essential pages must exist:
 * pages
   * default.txp
   * error_default.txp
-{: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+{: .list-directory}
 
 If these pages are missing in a theme package, Textpattern will create them automatically as empty pages on import.  
 
@@ -121,7 +121,7 @@ When the *forms* directory is used in custom theme design, eight form templates 
   * link
     * plainlinks.txp
   * . . .
-{: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+{: .list-directory}
 
 If the files are missing in a theme package, Textpattern will automatically create them as empty files on first theme import.
 
