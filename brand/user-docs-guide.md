@@ -602,22 +602,18 @@ Having notes spread out through the document this way might seem strange at firs
 
 Custom styles are used to provide a faux header in the endnotes `div` container. This provides proper visual heading of the back matter section, while keeping it out of the contents list (a.k.a. table of contents) that automatically targets `h2` through `h4` headers.
 
-[^notes]: Many markup languages, like Markdown, Kramdown, Textile, and so on, call their notes functionality ‘footnotes’. But that’s incorrect, a misnomer, because footnotes are not what these extensions actually create. ‘Footnotes’ are a specific type of notes positioned in immediate visual context of their inline reference markers on printed pages having set dimensions (or digital formats that mimic the set page dimensions of print media). A reader should not have to flip pages by finger or thumb-swipe, or jump long distances by link or scrollbar, to read footnotes; otherwise they are not really footnotes. When notes all come at the end of a publication in a single list, whether print or web document, they are called ‘endnotes’, and every English style manual that matters, including *Oxford* and *Chicago*, will say so. The *foot-* and *end-* prefixes merely indicate _where_ the notes are placed in published material, regardless of medium. They same style manuals refer to both types more generally as just ‘notes’. So if you can’t get it right specifically, at least get it right generally. And if you’re thinking of developing a notes extension for a cool, new markup language (e.g. Textup), don’t make the same mistake as other markup languages. Call the functionality Endnotes, or Notes in general, but not ‘Footnotes’.
+[^notes]: Many markup languages, like Markdown, Kramdown, Textile, and so on, call their notes functionality ‘footnotes’. But that’s incorrect, a misnomer, because footnotes are not what these extensions actually create. ‘Footnotes’ are a specific type of notes positioned in immediate visual context of their inline reference markers on printed pages having set dimensions (or digital formats that mimic the set page dimensions of print media). A reader should not have to flip pages by finger or thumb-swipe, or jump long distances by link or scrollbar, to read footnotes; otherwise they are not really footnotes. When notes all come at the end of a publication in a single list, whether print or web publication, they are called ‘endnotes’, and every English style manual that matters, including *Oxford* and *Chicago*, will say so. The *foot-* and *end-* prefixes merely indicate _where_ the notes are placed in published material, regardless of medium. They same style manuals refer to both types more generally as just ‘notes’. If you can’t be specific about it, be general.
 
 ### Tables
 
-Tables must be in straight HTML.
+Tables are very effective at presenting tabular data and other dense sets of information suited to grid display. They also make nice presentation breaks when a page is otherwise a lot of text. But tables can be problematic if designed poorly or too wide for mobile screens.
 
-Tables are very effective at presenting tabular data and other dense sets of information suited to grid display. They also make nice presentation breaks when a page is otherwise a lot of text. But wide tables can also be problematic to read on small screen devices.
+Use the following guidelines with respect to tables:
 
-So, use the following guidelines with respect to tables:
-
-1. Use them as much as appropriate for tabular data sets.
-2. Avoid tables if data is mostly long strings of text, like sentences, paragraphs, or entire lists. In such cases, try and structure the information as [definition lists](#definition-lists) instead.
-3. Ensure the table is complete, which includes the surrounding `div` plus `caption`, `thead`, `tbody`, `tfoot`. (See number 6). To make it easy, copy/paste the markup from the code block below.
-4. Understand that a table’s `caption` is really its title. (Table captions are different from an HTML figure’s `figcaption`, which is used as a description.) While it’s called ‘caption’ in HTML, it’s function is to number and title the table so that it can be referred to easily in main text.
-5. If multiple tables are used on a given documentation page, ensure they are appropriately numbered. Do this at the beginning of the caption (e.g. ‘Table 1. Caption text . . .’, ‘Table 2. Caption text. . .’, and so on). If a page only uses one table, the number reference can be left out of the caption.
-6. Table notes are optional, but can be used effectively to communicate information in clear and concise ways. See [**Notes in tables**](#notes-in-tables)). But if you don’t need notes, or do not otherwise need a table footer at all, then remove the `tfoot` region.
+1. **HTML only**. Tables must be marked up with HTML in user docs. Ensure the markup is complete with `caption`, `thead`, `tbody`, `tfoot` (see #4), including the `div` container. Copy/paste the markup below to make it easier.
+2. **Tabular data**. Use tables as much as appropriate for tabular data sets. Avoid tables if data is mostly long strings of text (sentences, paragraphs, lists), in which case one or more [definition lists](#definition-lists) will work better.
+3. **Captions**. Unlike figure captions, which function more like descriptions, a table’s `caption` is really its title. Use it to Number and title tables, even if only one on a page (e.g. ‘Table 1. Caption of table.’, ‘Table 2. Caption of table.’, and so on). This makes it easy to refer to tables in the main text.
+4. **Notes**. Table notes are optional, but can be used effectively to communicate information in clear and concise ways (see [**Notes in tables**](#notes-in-tables)). If notes are not needed, or a table footer at all, remove the `tfoot` region.
 
 ``` html
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
@@ -645,7 +641,4 @@ So, use the following guidelines with respect to tables:
 <li>note item</li>
 </ol></td></tr></tfoot>
 </table></div>
-```
-
-If you don’t use any [notes in your tables](#notes-in-tables), remove the entire `<tfoot>…</tfoot>` region of the table, or change it to use the footer a different way, as needed.  
-
+```  
