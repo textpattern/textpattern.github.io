@@ -24,7 +24,7 @@ This page serves as preliminary information gathering and development for the up
 
 ## Default file-tree structure 
 
-Themes files must be grouped into a top parent directory named as you want the theme named (e.g. *abc_theme*). All form files are in Textpattern file format (e.g. *default.txp*).
+Theme files must be grouped into a top parent directory named as you want the theme named (e.g. *abc_theme*). All form files (a.k.a. templates) are in Textpattern file format (i.e.  *.txp*).
 
 The basic directory structure will look like the following tree:
 
@@ -50,7 +50,8 @@ The basic directory structure will look like the following tree:
     * misc (empty)
     * section (empty) 
   * styles
-    * default.css 
+    * default.css
+{: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
 ### The *manifest.json* file
 
@@ -84,47 +85,59 @@ An example using Textpattern’s default theme:
 
 ### The *pages* directory
 
-The *pages* directory is required. Two essential pages must exist in the *pages* directory: *default.txp* and *error_default.txp*. These two pages will be created as empty pages on import if they are missing.  
+The *pages* directory is required, and two essential pages must exist: 
 
-If the entire directory is missing in a theme package, it will be created on the first import, and the essential pages will be added with their default contents. Updates thereafter will not overwrite the existing pages.
+* pages
+  * default.txp
+  * error_default.txp
+{: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+
+If these pages are missing in a theme package, Textpattern will create them automatically as empty pages on import.  
+
+If the entire directory is missing, it will also be created on the first import, and the essential pages will be added with their default contents.
+
+Theme updates thereafter will not overwrite the existing essential pages.
 
 ### The *forms* directory
 
-The optional *forms* directory contains form subdirectories to organize form files by type, as indicated in the [file-tree structure](#default-file-tree-structure) at top.
+The optional *forms* directory contains seven subdirectories to organize form files by type, as shown in the file tree at top.
 
-All form files must have unique names, both those that come in core and any custom files you create. Compound form names should use underscores between words.  
+All form files must have unique names, both those that come in core and any custom files you create. Compound form names should use underscores between words.
 
-When the *forms* directory is used in custom theme design, eight form pages must exist in their appopriate form subdirectories. Here they are again by type:
+When the *forms* directory is used in custom theme design, eight form templates must exist in their appropriate form subdirectories. Here are the specific eight files:
 
-Article forms:
+* forms
+  * article
+    * article_listing.txp
+    * default.txp
+    * search_results.txp
+  * . . .
+  * comment
+    * comments.txp
+    * comments_display.txp
+    * comment_form.txp
+  * file
+    * files.txp
+  * link
+    * plainlinks.txp
+  * . . .
+{: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
 
-  * article_listing
-  * default
-  * search_results
+If the files are missing in a theme package, Textpattern will automatically create them as empty files on first theme import.
 
-Comment forms:
-
-  * comments
-  * comments_display
-  * comment_form
-
-File forms:
-
-  * files
-
-Link forms:
-
-  * plainlinks
-
-These form files are created as empty files on import if missing in a theme package. If the entire *forms* directory is missing, the core form files are created on the first import. Updates thereafter will not overwrite the existing files.
+If the entire *forms* directory is missing, it will be created on the first import, including subdirectories and the eight theme files with default template contents. Updates thereafter will not overwrite the existing files.
 
 ### The *styles* directory
 
-The optional _styles_ directory contains stylesheets as `.css` files.  
+The optional *styles* directory contains stylesheets as *.css* files.  
 
-A default stylesheet, named ***default***, must exist. It will be created as an empty stylesheet on import if missing in the *styles* directory of a theme package.  
+A default stylesheet, *default.css*, must exist.
 
-If the *styles* directory is missing in a themes package, an empty directory with a blank default stylesheet will be created on the first import; thereafter it will not be overwritten in future updates.
+If the file is missing in the *styles* directory of a theme package, Textpattern will automatically create it as an empty stylesheet on first import of the theme.  
+
+If the *styles* directory is missing in a themes package, an empty directory with a blank *default.css* file will be created on the first import.
+
+The files will not be overwritten in future software updates.
 
 #  Sharing front-end themes
 
