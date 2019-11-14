@@ -10,7 +10,7 @@ tags:
 
 # Tags in development
 
-This page represents tags added in development versions of Textpattern since the the latest, stable release (4.6), whether completely new tags or existing tags that are undergoing modifications.
+This page represents tags added in development versions of Textpattern since the the latest, stable release (4.7), whether completely new tags or existing tags that are undergoing modifications.
 
 **Warning:** Because we are talking about development, the information here is subject to change.
 {: .alert-block .warning}
@@ -19,6 +19,4 @@ If you wish to write the documentation for new tags in preparation for the next 
 
 ## New tags
 
-* [evaluate](evaluate)
-* [header](header)
-* [if_logged_in](if_logged_in)
+* [item](item)
