@@ -10,13 +10,10 @@ description: Using a shortcode and short-tag to add image figures with captions.
 
 Adding an image as a figure with caption is a common desire with web publishers. With a flexible short-tag and shortcode combination, this is easy and reusable.
 
-On this page:
+**On this page**:
 
-* [Scenario](#scenario)
-* [Form to use](#form-to-use)
-* [Short-tag to use](#short-tag-to-use)
-* [Tag attributes](#tag-attributes)
-* [Example usage](#example-usage)
+* Table of contents
+{:toc}
 
 ## Scenario
 

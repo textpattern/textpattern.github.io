@@ -8,11 +8,10 @@ description: A self-closed tag is the most basic form of a Textpattern tag.
 
 # Self-closed versus container tags
 
-On this page:
+**On this page**:
 
-* [Self-closed tags](#self-closed-tags)
-* [Container tags](#container-tags)
-* [Closing tags correctly](#closing-tags-correctly)
+* Table of contents
+{:toc}
 
 ## Self-closed tags
 

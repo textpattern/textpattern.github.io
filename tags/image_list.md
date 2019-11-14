@@ -13,10 +13,10 @@ tags:
 **Deprecated in Textpattern 4.4.0** (it was renamed to [images](images) tag)
 {: .alert-block .error}
 
-On this page:
+**On this page**:
 
-* [Syntax](#syntax)
-* [Genealogy](#genealogy)
+* Table of contents
+{:toc}
 
 ## Syntax
 

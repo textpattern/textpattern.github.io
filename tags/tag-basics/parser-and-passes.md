@@ -10,11 +10,10 @@ description: The Textpattern parser does its job in stages, which permits extra 
 
 Textpattern's parser does its job in stages, which permits extra control over output.
 
-On this page:
+**On this page**:
 
-* [Multiple passes](#multiple-passes)
-* [Deferred or delayed output](#deferred-or-delayed-output)
-* [PHP in templates](#php-in-templates)
+* Table of contents
+{:toc}
 
 ## Multiple passes
 

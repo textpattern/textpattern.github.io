@@ -11,12 +11,10 @@ tags:
 
 # If custom field
 
-On this page:
+**On this page**:
 
-* [Syntax](#syntax)
-* [Attributes](#attributes)
-* [Examples](#examples)
-* [Genealogy](#genealogy)
+* Table of contents
+{:toc}
 
 ## Syntax
 

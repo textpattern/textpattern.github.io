@@ -8,6 +8,11 @@ description: Most Textpattern tags allow you to specify attributes as key/value 
 
 # Parsing tag attributes
 
+**On this page**:
+
+* Table of contents
+{:toc}
+
 ## Conventions for attributes
 
 Most Textpattern tags allow you to specify attributes as key/value pairs to override default behaviour. For example:

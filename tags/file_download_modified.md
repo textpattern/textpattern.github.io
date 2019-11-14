@@ -10,11 +10,10 @@ tags:
 
 # File download modified
 
-On this page:
+**On this page**:
 
-* [Syntax](#syntax)
-* [Attributes](#attributes)
-* [Examples](#examples)
+* Table of contents
+{:toc}
 
 ## Syntax
 

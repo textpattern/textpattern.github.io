@@ -13,10 +13,10 @@ tags:
 **Deprecated in Textpattern 4.6.0**
 {: .alert-block .error}
 
-On this page:
+**On this page**:
 
-* [Syntax](#syntax)
-* [Genealogy](#genealogy)
+* Table of contents
+{:toc}
 
 ## Syntax
 

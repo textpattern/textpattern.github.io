@@ -10,16 +10,10 @@ description: A flexible shortcode and short-tag combo to add quotations as aside
 
 A flexible shortcode and short-tag combo to add various quotations as asides in your articles, which pull data from Textpattern links.
 
-On this page:
+**On this page**:
 
-* [Scenario](#scenario)
-* [Shortcode to use](#shortcode-to-use)
-* [Short-tag and attributes](#short-tag-and-attributes)
-* [Links setup](#links-setup)
-* [Usage](#usage)
-* [Notes and explainers](#notes-and-explainers)
-* [The shortcode using core short-tags](#the-shortcode-using-core-short-tags)
-* [The shortcode using tag integration concept](#the-shortcode-using-tag-integration-concept)
+* Table of contents
+{:toc}
 
 ## Scenario
 
