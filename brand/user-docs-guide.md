@@ -27,13 +27,13 @@ The scope and depth of user documentation should be what is needed and not more.
 
 The scope of the documentation is primarily on the software’s core functionality. The out-of-the-box features and capabilities.
 
-Until further notice, and to a lesser degree, the user documentation site also harbours [plugin development resources](https://docs.textpattern.com/development/) and Textpattern [brand identity and collaboration information](https://docs.textpattern.com/brand/), including these guidelines.
+To a lesser degree (and until further notice), the documentation site also harbours [plugin development resources](https://docs.textpattern.com/development/) and Textpattern [brand and collaboration information](https://docs.textpattern.com/brand/), including these guidelines.
 
-With regard to the primary user documentation, it’s better to add new pages when needed than to cover every possible topic in advance without knowing it’s warranted.
+With regard to the primary user documentation, it’s better to write and add new pages when needed than to anticipate every possible topic in advance without knowing it’s warranted.
 
-If a page already exists, it should be kept current with the latest software release, as well reduced and simplified anywhere it can be.
+If a page already exists, it should be kept current with the latest software release, as well reviewed for refinement on a feasibly regular basis.
 
-Else, a page can be removed, upon editor review, if the effort to revise it is not worth the return it provides by doing so. More likely, any material of value on such a page can be extracted and edited into another relevant location.
+Else, a page can be removed, upon editor review, if the effort to revise it is not worth the return it provides by doing so. More likely, any material of value on such a page can be recycled into another relevant location.
 
 ### Depth of page content
 
@@ -380,6 +380,20 @@ Only worry about styling block element content if such selectors are described i
 
 [^custom]: Avoid using Kramdown and HTML’s `style` attribute to create non-standard presentation on inline or block-level content. If you think a new style is needed, follow the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures) to propose one so a custom selector may be created for it.
 
+### Blockquotes
+
+Do not use block quotes in documentation (i.e. the `blockquote` element). There is simply no need, despite how easy it is to hit the `>` key to add one via Markdown. This may not be true in other Textpattern platforms (e.g. the Forum), but documentation has no need of them, and especially if used incorrectly.
+
+Block quotes are for ‘displayed quotations’ only (i.e. quotations that are not embedded inline).[^disquotes] The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
+
+Displayed quotations are for when you need to quote large amounts of matter, and that works against the [scope and depth objective](#scope-and-depth-of-material) for documentation; to be clear, concise, and actionable. Conversely, inline quotations, using `<q cite="">. . .</q>`, are perfectly fine, as demonstrated in the previous paragraph, as long as they’re not overused.
+
+Block quotes are specifically not used as example boxes, or for any other miscellaneous need. Don’t be fooled by their neat orange presentation, though it grabs your attention. See options for custom content needs, such as offset examples, in the following sections.
+
+[^disquotes]: <i>New Oxford Style Manual</i>, ed. Anne Waddingham (3rd edn, Oxford, 2016), p 162.
+
+[^blockquotes]: HTML 5.2: W3C Recommendation, World Wide Consortium, 14 December 2017, [w3.org/TR/html52/grouping-content.html#the-blockquote-element](https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element), accessed 14 November 2019.
+
 ### Example blocks
 
 Example blocks are paragraphs, or more rarely lists, of hypothetical text used for showing examples in documentation. The styling helps distinguish these blocks from regular text so there's no confusion for the reader. Use these whenever the example content is not code, a displayed quotation, or a file tree example (see [File tree examples](#file-tree-examples)).
@@ -404,7 +418,7 @@ This will indent the example and add a dotted blue-grey left border to distingui
 
 #### Example list
 
-If you want to employ a general list for example reasons, use this IAL instead:
+Though you should rarely need it, if ever, you can employ a general list for example reasons, use this IAL instead:
 
 ```
 * item one
@@ -413,7 +427,7 @@ If you want to employ a general list for example reasons, use this IAL instead:
 {: .example-list}
 ```
 
-The example list styling looks like the paragraph version except the bullets need positioned inside the list container, thus the need for it’s own selector. 
+The example list styling looks like the example text styling except the bullets are changed to hyphens and positioned inside the list container, thus the need for it’s own selector. 
 
 ### File-tree components
 
