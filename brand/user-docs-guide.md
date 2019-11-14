@@ -41,7 +41,7 @@ A given page should only be as explanatory as necessary; thorough, but not belab
 
 Rely on the usability of Textpattern’s interface, and leave some benefit of doubt to the user to connect the dots. Only expand on subject minutiae when it helps clear up questions repeatedly raised in the [community forum](https://forum.textpattern.com/). See the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures) for more on that notion and others. 
 
-For example, administration-side panels strive to be as intuitive as possible by design. Perhaps not perfect but always improving. Therefore, it’s probably not necessary to meticulously document panel functionality in minute detail, especially as the panels provide help tips in context of a given function or widget.
+Administration-side panels strive to be as intuitive as possible by design. Perhaps not perfect but always improving. Therefore, it’s probably not necessary to meticulously document panel functionality in minute detail, especially as the panels provide help tips in context of a given function or widget.
 
 Before writing or revising documentation on the administration-side functionality, see that interface panels themselves are written and designed better, including the associated help tips; ensure they are as meaningful and clear as possible. If a UI tip doesn’t make sense to you, [start an Issue](https://github.com/textpattern/textpattern.github.io/issues) to bring it to attention and suggest how it can be improved.
 
@@ -62,7 +62,7 @@ Documentation is written from the perspective of an impersonal expert to the fir
 Therefore, documentation authors and editors should write in the second-person point of view, using the pronouns *you*, *your*, and *yours* when referring to the reader; the assumed administrator of a new Textpattern installation:
 
 Click your name in the Users panel to change your email.
-{: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+{: .example-text}
 
 The second-person stance empowers the reader on their solo adventure. You're just an impartial voice over their shoulder guiding them along. But don't go overboard on the pronouns. If you're addressing the reader in every other sentence, you have revising to do.  
 
@@ -73,7 +73,7 @@ Never use first-person singular (*I*, *me*, *my*) or plural (*we* and *us*) in u
 There is at least one exception to the 'second-person' rule. The third-person could be used in specific contexts, like when guiding the administrator on user accounts. Consider this hypothetical example:
 
 To change a user’s role, find and click their name in the Users panel . . .
-{: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+{: .example-text}
 
 You are still in second-person mode, but you've introduced a third-party, the potential future collaborators of the reader. It could just as well be third-person singular (*his*, *her*). But for the vast majority of documentation, you will never need to do this.
 
@@ -93,11 +93,11 @@ Interface strings are the text elements a user reads in the back-end panels of t
 
 A clear but minimum set of formatting rules are needed to distinguish the different types of strings from regular documentation text. A single format style (e.g. bold, italic, quotation marks, or whatever) is little more effective than no formatting at all. Thus a balance needs struck: On one hand a minimum number of formatting styles used; on the other, clear distinction between string types, and across types and normal documentation text.
 
-Various strings in the software's back end, that you may need to document, are detailed in the following sections. Some of these strings use `strong` and `em` (emphasis) via Markdown for [inline formatting](#inline-text-formatting). Be cognizant of the fact that Markdown does not provide syntax for true `i` (italic) and `b` (bold) element formatting. In this case, however, it's okay; you want screen-reading technology to catch the distinguished (**strengthened** or *emphasized*) interface strings, in addition to those solely distinguished by capitalization or quotation marks. 
+Various strings in the software's back end, that you may need to document, are detailed in the following sections. Some of these strings use `strong` and `em` (emphasis) via Markdown for [inline formatting](#inline-text-formatting). Be cognizant of the fact that Markdown does not provide syntax for true `i` (italic) and `b` (bold) element formatting. In this case, however, it's okay; you want screen-reading technology to catch the distinguished (**strengthened** or *emphasized*) interface strings, in addition to those solely distinguished by capitalization or quotation marks. The noted exception is with regard to [path and file names](#paths-and-file-names).
 
 ### Headers, labels, and options
 
-The documentation of panel and widget headers, and form control labels and options, would be difficult and confusing to readers if a single formatting convention were used. Part of the problem is the sentence-case convention used in interface strings and in editorial style. To account for this, a minimum of necessarily different formatting rules are needed here and against the other types of interface strings. It is the aforementioned balance between consistency and unobtrusiveness in writing.   
+One reason multiple formatting styles are needed to document interface strings like headers, labels, and control options: sentence case is used for writing them. This prevents relying on capitalizations alone to denote where a string ends in regular text. On the other hand, some strings are indeed sentences with terminal punctuation, so even if title case was the convention for strings, there'd still be some needing more distinction than what capitalization alone could provide. Thus a maximum of four formatting styles are defined as balance between distinction and presentation.   
 
 Single-word strings, capitalized
 : Formatting: Normal font weight
@@ -115,40 +115,59 @@ Select box option strings
 : Formatting: Single quote marks
 : Example: Select ‘Yes’ from the drop-down options.
 
-### Presentation element names
+Note that panel names and headers under the Presentation section of the back end (i.e. Themes, Sections, Pages, Forms, and Styles) are different from the names of templates created in those respective panels.
 
-Presentation elements refer to the names of default and custom semantic elements found under the Presentation section of Textpattern's back end; specifically Themes, Sections, Pages, Forms, and Styles. Presentation element names should always be formatted as bold-italic, for example:[^examples]  
+### Presentation template names
 
-The ***comments_display*** form.
-{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+Template names are the names of Textpattern's default and custom presentation templates created and accessed via their respective Presentation panels. The names, notably the core names, are not capitalized, and compound names are separated by underscores. This makes it difficult to discern these strings, especially the single-word names, from regular text without additional formatting. But do not confuse these strings with other strings by using the wrong formatting.
 
-Because some of these core elements use the same name for defaults, namely ***default*** (and mind that it's not capitalized when used as the proper noun), you must be careful to use formatting in the proper context.
+#### General use
 
-Consider this example of doing it correctly, where the first instance of 'default' is just an adjective, thus not formatted to distinguish it as an element name:[^examples]
+The formatting to use, preferably, is <i>**italic-strong**</i> (i.e. `<i>**italic-strong**</i>`), but ***emphasis-strong***  (i.e. `***emphasis-strong***`) is acceptable, despite the double emphasis made to screen-readers, since Markdown does not provide for non-emphasized italic formatting and most writers won't bother with the preferable syntax (see [Inline text formatting](#inline-text-formatting) section for more explanation).
 
-A default stylesheet, named ***default***, must exist. It will be created as an empty stylesheet on import if missing in the *styles* directory of a theme package.
-{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+An example:
 
-In the *rare* case you need to use lists of Presentation element names (sometimes needed in plugin and theme development documentation), leave the formatting out (i.e. use normal text), but *only* if the items in a given list are all strings of a single type and no other text.
+The default page is aptly named <i>**default**</i>.
+{: .example-text}
 
-For example, the following is one of several actual lists of form names used in a themes documentation page. Everything is formatted correctly, from lead-in sentence (providing the necessary context) to list items:[^examples]
+Note how the word 'default' is used twice in that sentence, but only one context is correctly a template name. The first instance is used as an adjective. Ensure to format only the proper nouns in this case; the actual string names.
+
+Another example:
+
+The markup controlling how comments are displayed is found in the <i>**comments_display**</i> form in the Forms panel.
+{: .example-text}
+
+Note the underscore on core compound names. Also note that 'Forms' is a single-word header string denoting the name of the panel; used here as a proper adjective, and correctly distinguished from regular text by the capitalization. The word 'form`, however, is just a common noun, thus not formatted.
+
+One more example with default again:
+
+A default stylesheet, named ***default***, must exist in the *styles* directory of a theme package. If it's missing, it will be created as an empty stylesheet upon importing the theme.
+{: .example-text}
+
+#### Used in lists
+
+In the rare case you need to use a list of template names for a given template type (sometimes needed in plugin and theme development documentation), leave the formatting out (i.e. use normal text), but only if the items in a given list are all strings of a single type and no other text.
+
+For example, the following is one of several actual lists of form names used in the [Front-end themes](https://docs.textpattern.com/themes/front-end-themes) page of documentation. Everything is formatted correctly, from lead-in sentence (providing the necessary context) to list items:
 
 Article forms:
-{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+{: .example-text}
 
 * article_listing
 * default
 * search_results
-{: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+{: .example-list}
 
-The example is not reflecting actual `code`, so is not marked up that way. Nor should it be styled as a component of a file tree file (see [File tree examples](#file-tree-examples)).
+Ignore the fact the list is styled as a documentation example here. The three things to note are: 1) template names are not formatted. Formatting them is unnecessary in this case because the list is purely template names and the lead-in sentence makes that perfectly clear. 2) The list is not `code`, so should not be marked up as a code block. It's just a simple list. 3) Nor should it be styled as a file tree component, because it's not representing the contents of a specific directory (see [File tree examples](#file-tree-examples)).
 
 If the list items were adulterated with normal text, the expected formatting would have to be used, for example:
 
-* the ***default*** form
-{: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+* the <i>**article_listing**</i> form
+* the <i>**default**</i> form
+* the <i>**search_results**</i> form
+{: .example-list}
 
-That would be sloppy list construction anyway, so it should never be needed.
+But that would be sloppy list construction anyway, so it should never be needed.
 
 ### Alert messages
 
@@ -213,7 +232,7 @@ Watch your step.
 OMFG, _no!_
 {: .alert-block .error}
 
-### File paths and names
+### Paths and file names
 
 Uniform resource identifiers (e.g. URLs), absolute or relative file paths, and directory and file names, whether described as strings in back-end panels or being used in regular documentation text, should be formatted as italic, preferably using HTML tags (i.e. `<i>italic</i>`), though most will undoubtedly ignore that recommendation. See the [Inline text formatting](#inline-text-formatting) section for why HTML is recommended in this case (and blame it on Markdown). 
 
@@ -247,16 +266,7 @@ Temporary directory path: __TXP-ROOT/textpattern/tmp
 
 #### Paths, directories, and file paths in lists
 
-Do not italicize these strings when used in a list, such as reflecting a file tree, directory contents, or what have, for example:
-
-* . . .
-* directory
-  * file.ext 
-  * file.ext
-* directory
-* directory
-* . . .
-{: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+Do not italicize these strings when used in a list, such as reflecting a file tree, directory contents, or what have. See the appropriate styling for these unique cases in the [File-tree components](#file-tree-components) section.
 
 ### Normal text
 
@@ -265,12 +275,12 @@ Normal text strings are any other type outside of those already described (outsi
 Normal text strings should be offset from regular documentation copy by single quotation marks, for example (links are part of the actual interface text):
 
 [Textpattern CMS]() (v4.7.3)
-{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+{: .example-text}
 
 And:[^examples]
 
 [Back to top]()
-{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+{: .example-text}
 
 This is the same formatting used on form control options, so make sure the differing contexts are clear in writing.
 
@@ -302,21 +312,15 @@ The links are relative links, and ideally applied at the ends of relevant paragr
 
 The consistent placement and parenthetical pattern of anchor links makes them clear to readers that they are in-page links.
 
-## Markup
+## Markup and styling
 
-Due to certain platform constraints, documentation uses a mixture of HTML, regular Markdown, and Kramdown (unfortunately), depending on what you need.
+Due to certain platform constraints, documentation uses a mixture of HTML, regular Markdown, and Kramdown, depending on what you need. Markdown is used to add the usual content types (lists, blockquotes, code). Kramdown is used to add and/or style specific block-level content types (definition lists, notes, example, file trees). HTML is used solely to add [tables](#tables).
 
-Whenever possible, use regular Markdown syntax for formatting inline text (strong, emphasis) and adding content types (lists, blockquotes, etc.). 
+Before getting to those neat block-level content types, a few important words need said about formatting inline text.  
 
-For certain block elements, you either need to use straight HTML, because of certain presentational needs (namely tables), or Kramdown syntax (e.g. block spans, notes, definition lists…). The following sections explain the situations you may need to accommodate.
+### Formatting inline text
 
-### Styling
-
-Styling content, whether on inline text or block elements, can be done using basic Markdown, Kramdown (an augmented version of Markdown), or regular HTML, if all else fails.
-
-#### Inline text formatting
-
-You will rarely-to-never need to format inline text beyond **strong**, *emphasis*, or ***strong-emphasis***, which is easily done by using regular Markdown syntax (Table 2).
+Only use inline formatting like *emphasis*, **strong**, or ***emphasis-strong*** when [documenting interface strings](#formatting-interface-strings). The sole exception is when emphasizing a word as a part of regular text (e.g. ‘You *really* don’t want to do that.’), and this should rarely be necessary. Never use such inline formatting at any other time in regular copy unless it’s to distinguish an interface string, otherwise you add confusion. For the sake of formatting interface strings, consider Table 2.
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
 <caption>Table 2. Markdown syntax for inline formatting.</caption>
@@ -357,127 +361,114 @@ You will rarely-to-never need to format inline text beyond **strong**, *emphasis
 </ol></td></tr></tfoot>
 </table></div>
 
-Unlike in Textile (which can not be used in user docs), Markdown does not have syntax for rendering `i` (italic) and `b` (bold) elements. HTML must be used when these specific inline elements are needed for formatting words or text strings without the implied strength and emphasis that is otherwise detected by screen-readers for the visually impaired.[^emphasis]
+Unlike with Textile (not usable in GitHub), Markdown does not have syntax for rendering `i` (italic) and `b` (bold) elements. HTML must be used when these specific inline elements are needed, without the inherent strength and emphasis that is otherwise detected by screen-readers for the visually impaired.[^emphasis]
 
-[^emphasis]: As an example, it's appropriate to italicize the titles of major works, always in capital-case, as you might do in main text or endnotes like this. But not by using `em`, which would emphasize the text unnecessarily when read by a screen-reader.
+[^emphasis]: As an example, it's appropriate to italicize the titles of major works, always in title case, as you might do in main text or endnotes like this. But not by using `em`, which would emphasize the text unnecessarily when read by a screen-reader.
 
-#### Inline text styling
+### Block-level content and styling
 
-In the rare cases you need more than **strong** or *emphasis* formatting, you can use a HTML `span` to apply inline styles, for example:
+Aside from the usual Markdown to add common block-level content types (lists, blockquotes, code), Kramdown can be used to add other block level types (definition lists and notes), or to style common types to create new specific types of content (documentation examples, file tree components).
 
-```
-<span style="color:red;">Stop!</span>
-```
-
-Or apply the style using Kramdown’s ‘inline attribute list’ notation on a `strong` or `em` element applied by Markdown. 
-
-For example, this:
-
-```
-**Stop!**{: style="color:red"}
-```
-
-Will tell you: **Stop!**{: style="color:red"}
-
-The color style is applied to the `strong` element on ’Stop!’ (i.e. `<strong style="color: red">Stop!</strong>`).
-
-#### Inline selectors
-
-Custom selectors for inline styling do not exist at this time, but you would use them the same way as before:
-
-```
-**All systems go.**{:.blastoff}
-```  
-
-#### Block element styling
-
-Block element styling can be done with HTML or Kramdown. Use the cleaner Kramdown notation whenever HTML is not required (e.g. [tables](#tables) do require HTML at this point).
-
-The Kramdown notation for block element styling is similar to that used for inline styling, except the syntax goes on its own line immediately after the block element content:
+In the latter case, Kramdown’s ‘[inline attributes list](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists)’ (IAL) notation is used to apply a custom class selector. It’s done easily by placing the IAL syntax on a new line immediately under the block element to be styled, for example:
 
 ```
 This is a paragraph styled as a hypothetical example.
-{: .class-name}
+{:.class-name}
 ```
 
-Only worry about styling block element content if the following sections describe a means for it.
+Only worry about styling block element content if such selectors are described in the following sections.[^custom]
 
-### Text alignment
-
-Align text (or a block element) left, right, centre, or justified with one of these class selectors, respectively:
-
-* `.align-left`
-* `.align-right`
-* `.align-center`
-* `.align-justify`
-
-You should not have a need to do this against existing presentation rules, however.
-
-### Non-bulleted lists
-
-It's possible to use the `list--no-bullets` class to remove bullets from list items in first-level lists:
-
-```
-* list item 1
-* list item 2
-* etc
-{: .list--no-bullets}
-```
-
-But you probably won't use this selector by itself; it becomes more handy when combined with other styling rules (e.g. see see [File tree examples](#file-tree-examples)). 
+[^custom]: Avoid using Kramdown and HTML’s `style` attribute to create non-standard presentation on inline or block-level content. If you think a new style is needed, follow the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures) to propose one so a custom selector may be created for it.
 
 ### Example blocks
 
-Example blocks are block level elements (mainly paragraphs or lists) of hypothetical text used as examples in documentation. The styling helps distinguish these blocks from regular text so there's no confusion for the reader. Use these whenever the content is not appropriately code or a displayed quotation.
+Example blocks are paragraphs, or more rarely lists, of hypothetical text used for showing examples in documentation. The styling helps distinguish these blocks from regular text so there's no confusion for the reader. Use these whenever the example content is not code, a displayed quotation, or a file tree example (see [File tree examples](#file-tree-examples)).
 
-All example blocks use the following Kramdown 'inline attributes list' for base styling. The inline `style` rules are needed until a custom class selector is provided to simply the syntax:
+#### Example text
 
-```
-{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
-```
-
-The base rules work splendidly on a regular paragraph, for example:
-
-A paragraph used to show a text example in user documentation.
-{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
-
-#### File-tree examples
-
-Sometimes you may need to show a file tree, or the contents of a folder, or just a sample set of a directory's contents. This kind of content should not be marked up as a `code` block; rather, use an unordered list with the baseline example styling, but adjusted for list display.
-
-If you want to use the bullets, add a rule to position them inside the `ul` container (see actual use in the [Presentation element names](#presentation-element-names) section):
+Examples of regular text (i.e. paragraph blocks) should use the following Kramdown IAL:
 
 ```
+Add paragraph text here.
+{: .example-text}
+```
+
+Or:
+
+```
+Add paragraph text here.
+{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #c3edfa;"}
+```
+
+This will indent the example and add a dotted blue-grey left border to distinguish the example from normal documentation copy.
+
+#### Example list
+
+If you want to employ a general list for example reasons, use this IAL instead:
+
+```
+* item one
+* item two
+* etc
+{: .example-list}
+```
+
+The example list styling looks like the paragraph version except the bullets need positioned inside the list container, thus the need for it’s own selector. 
+
+### File-tree components
+
+Sometimes you may need to show a file tree, or the contents of a folder, or just a sample set of a directory's contents. This kind of content should not be be shown as regular text lists, nor marked up as a `code` block; rather, use one of the two available class selectors, depending on scope of list. 
+
+*Always* add file extensions on file names, and *never* add inline formatting on list items. When the tree stylings are used, the inline formatting (e.g. making paths and files italic in regular text) is unnecessary. 
+
+#### Full tree scope
+
+If you need to show an entire tree, or a directory with its subdirectories expanded as well, for example:
+
+* parent_directory
+  * child_directory1
+  * . . .
+  * child_directory4
+    * file1.ext
+    * file2.ext 
+    * file3.ext
+  * . . .
+{: .list-tree}
+
+Use this Kramdown IAL:
+
+```
+{: .list-tree}
+```
+
+This will present the nested lists as a file tree structure. The top-post parent will be indicated by a right-facing arrow, and folder association lines will replace bullets on all child items. The font size will be slightly smaller than regular text. 
+
+#### Single directory contents scope
+
+If you want to just show the contents of a single directory, without including the parent directory or showing expanded subdirectories (i.e. a non-nested list), for example:
+
 * . . .
-* file0.css
-* file1.index 
-* file.md
+* subdirectory2
+* subdirectory3
 * . . .
-{: style="list-style-position:inside; margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
+* directory5
+* . . .
+* file1.ext 
+* file2.ext
+* . . .
+{: .list-directory}
+
+Use this Kramdown IAL:
+
+```
+{: .list-directory}
 ```
 
-If you'd rather not show as many bullets, add the custom selector for removing the first-level:
-
-```
-* . . .
-* directory
-  * file.ext 
-  * file.ext
-* directory
-* directory
-* . . .
-{: .list--no-bullets style="margin-left:3%; padding-left:.5em; border-left:2px dotted #e0e0e0;"}
-```
-
-Either way, the lists are distinguished from regular lists, and they're not inappropriately marked up as `code`, because they are not code in this context; they're just lists.  
+This has the same font styling as a full tree display, but there are no association lines or bullets otherwise on items.  
 
 ### Definition lists
 
-Definition lists are added using Kramdown syntax.
-
-There is no particular type of documentation content you need to know about; just use a list if/when it’s better to.
-
-The structure is:
+Definition lists are added using regular Kramdown; no custom selector is need:
 
 ```
 Definition title
@@ -493,59 +484,7 @@ That will render a definition list as:
 </dl>
 ```
 
-Add more data items as needed via additional lines preceded by a colon and space:
-
-```
-Definition title
-: Definition data item one
-: Definition data item two
-: etc.
-```  
-
-### Tables
-
-Tables must be in straight HTML.
-
-Tables are very effective at presenting tabular data and other dense sets of information suited to grid display. They also make nice presentation breaks when a page is otherwise a lot of text. But wide tables can also be problematic to read on small screen devices.
-
-So, use the following guidelines with respect to tables:
-
-1. Use them as much as appropriate for tabular data sets.
-2. Avoid tables if data is mostly long strings of text, like sentences, paragraphs, or entire lists. In such cases, try and structure the information as [definition lists](#definition-lists) instead.
-3. Ensure the table is complete, which includes the surrounding `div` plus `caption`, `thead`, `tbody`, `tfoot`. (See number 6). To make it easy, copy/paste the markup from the code block below.
-4. Understand that a table’s `caption` is really its title. (Table captions are different from an HTML figure’s `figcaption`, which is used as a description.) While it’s called ‘caption’ in HTML, it’s function is to number and title the table so that it can be referred to easily in main text.
-5. If multiple tables are used on a given documentation page, ensure they are appropriately numbered. Do this at the beginning of the caption (e.g. ‘Table 1. Caption text . . .’, ‘Table 2. Caption text. . .’, and so on). If a page only uses one table, the number reference can be left out of the caption.
-6. Table notes are optional, but can be used effectively to communicate information in clear and concise ways. See [**Notes in tables**](#notes-in-tables)). But if you don’t need notes, or do not otherwise need a table footer at all, then remove the `tfoot` region.
-
-``` html
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
-<caption>Table n. Title of table</caption>
-<thead><tr>
-<th scope="col">Header</th>
-<th scope="col">Header</th>
-<th scope="col">Header</th>
-</tr></thead>
-<tbody>
-<tr>
-<th scope="row">data</th>
-<td>data</td>
-<td>data</td>
-</tr>
-<tr>
-<th scope="row">data</th>
-<td>data</td>
-<td>data</td>
-</tr>
-</tbody>
-<tfoot><tr><td colspan="3"><ol>
-<li>note item</li>
-<li>note item</li>
-<li>note item</li>
-</ol></td></tr></tfoot>
-</table></div>
-```
-
-If you don’t use any [notes in your tables](#notes-in-tables), remove the entire `<tfoot>…</tfoot>` region of the table, or change it to use the footer a different way, as needed.
+Add more data items as needed.
 
 ### Notes
 
@@ -553,11 +492,9 @@ Notes are used sparingly and in limited cases in Textpattern documentation; eith
 
 #### Notes in tables
 
-Since these notes are in HTML tables, they are also structured with straight HTML. Style rules are added to documentation to make reference-mark lists work in the table footer.[^refmarks] 
-
 Reference-mark notes are a common annotation device in information design, and are specifically used in tables. The standard reference-mark system cycles through six marks, in this order: *, †, ‡, §, ¶, ‖.
 
-If a table ever needs more than six notes, which should be rare to never, the pattern repeats in duplicate (**, ††, ‡‡, §§, ¶¶, ‖‖), then triplicate, and so on. Try not to go that far.
+If a table ever needs more than six notes, which should be rare to never, the pattern repeats in duplicate (**, ††, ‡‡, §§, ¶¶, ‖‖), then triplicate, and so on. Only the first six single marks are provided for in CSS. Since these notes are in [HTML tables](#tables), they must also be structured with HTML. 
 
 Consider the following table, which is an example of the notes in effect.
 
@@ -617,17 +554,9 @@ You must add the entity values in the table where needed, in the correct order, 
 <th scope="col">Entity&#x002a;</th>
 ```
 
-Then write the corresponding note in the footer `li`, in the same order. The entities are added automatically (up to the first six single glyphs) to list items, so don’t add them manually here, for example:
+Then write the corresponding note in the footer `li`, in the same order. The entities are added to list items automatically. Don’t add them manually in list items.
 
-```
-<ol>
-. . .
-<li>Also known as the ‘paragraph sign’ in layman’s terms.</li>
-. . .
-</ol>
-```
-
-If you ever need more than six notes, then use `<ol class="noliststyle">`, for a list without any list style at all, then add the reference marks manually:
+If you ever need more than six notes, then use `<ol class="list--no-numbers">`, for a list without any list style at all, then add the reference marks manually:
 
 ```html
 <ol class="noliststyle">
@@ -638,54 +567,73 @@ If you ever need more than six notes, then use `<ol class="noliststyle">`, for a
 </ol>
 ```
 
-[^refmarks]: Note to documentation team: CSS rules need provided in documentation to make the reference-mark lists in `tfoot` work. See [workable CSS](https://github.com/textpattern/textpattern.github.io/issues/123#issue-516949203).
-
 #### Notes in main text
 
-Notes are, technically speaking, half of notes and bibliography referencing systems and are used to cite sources (e.g. the source of a quotation used), or enable authors to expand on ideas without over-bloating the main text. With this in mind…
+Notes, technically speaking, are half of notes and bibliography referencing systems. The notes part are meant to cite sources discussed in text (e.g. the source of a quotation used), or enable authors to expand on ideas without over-bloating the article. We can use notes in documentation without bibliographies too.
 
-**Use notes sparingly**:
+But use notes sparingly in user documentation. We’re not recording history, only providing how-to information. Fewer notes are less overhead for readers wanting to get something done.
 
-User notes sparingly in user documentation. We’re not recording history, only providing how-to information. Fewer notes are less overhead for readers wanting to get something done. However, a few notes won’t hurt if the information is relevant and brief.
+Notes are employed using Kramdown.[^notes] A note marker is first added to the end of a sentence (or clause), in context of the applicable topic, for example:
 
-**Refer to them correctly**:  
+. . . end of a sentence.[^marker]
+{: .example-text}
 
-Many markup languages, like Markdown, Kramdown, Textile, and so on, call their notes functionality ‘footnotes’. But that’s not correct, a misnomer, because footnotes are not what these extensions actually create. ‘Footnotes’ means notes that are positioned in immediate visual context of their inline reference markers, notably at bottoms of pages in print publications (or digital formats that mimic the set page dimensions of print media). A reader should not have to flip pages by finger or thumbswipe, or jump long distances by link or scrollbar, to read footnotes; otherwise they are not really footnotes. When notes all come at the end of a publication in a single list, whether print or web document, they are called ‘endnotes’, and every English style manual that matters, including *Oxford* and *Chicago*, will say so. The *foot-* and *end-* prefixes merely indicate _where_ the notes are placed in published material. They same style manuals refer to both types more generally as just ‘notes’. So if you can’t get it right specifically, at least get it right generally.[^notes]
-
-**Adding the notes syntax**:
-
-Notes are added using Kramdown notation, and they function the same way whether you write inline markers as numerals in sequence (`[^1]`, `[^2]`, etc.) or as unique text (e.g. `[^dope]`, `[^dongle]`, `[^dingo]`, . . .), whatever you choose to use. Either way, the resulting endnotes list is an ordered list of arabic numerals at the bottom of the page, inside a preformatted `div`.
-
-Using text as inline markers is a better for a couple of reasons:
-
-1. Text markers can be created relevant to the topic being annotated, thus they’re immeditately intuitive and easier to spot when editing.
-2. Numbered markers are needlessly distracting if you are trying to keep them in order; and confusing if you have many of them and they get out of order.
-
-Skip the madness and use text markers only. It’s easier.
-
-**Example of notes usage:**
-
-At the time this section was written, this document used two notes: one in the [**Author perspective**](#author-perspective) section, and the other in this section on notes. In each case, you will see the inline marker as a sequential superscript numeral.
-
-The actual markers used in the markup are: `[^we]` and `[^notes]`. Each note marker uses a word relevant to the topic. Logical.
-
-The notes themselves are added at the bottoms of the sections they appear in. Sure, you could end up having notes spread out through the document this way. But by putting them at the ends of the sections they belong to, it’s easy to find and edit them in context, instead of jumping up and down in the document.
-
-Each note begins with the same syntax and marker used inline, followed by a colon:
+Then, at the bottom of that section (i.e. just before the next document header), add the corresponding note, which begins with the same marker notation plus a colon `:`, for example:
 
 ```
-[^we]: It’s okay to use first-person plural (i.e. we, us) in editor collaboration materials . . .
+[^marker]: Start of corresponding note . . .
 ```
 
+If you have multiple notes in a given section, continue the same way, making sure notes are in the order as they are marked in main text. Not because they have to be that way, Kramdown will render the correct order automatically, but because it’s just logical.
+
+Having notes spread out through the document this way might seem strange at first, but it’s easier to find and edit them in context. By contrast, if notes are listed together at the end of a document (as needing done with Textile), you must jump up and down in the document (i.e. out of context) whenever revising them. Either way the resulting endnotes list is rendered at the end of the page (inside a pre-formatted `div`), but use the process described above, which is a collaboration standard for Textpattern documentation.
+
+Custom styles are used to provide a faux header in the endnotes `div` container. This provides proper visual heading of the back matter section, while keeping it out of the contents list (a.k.a. table of contents) that automatically targets `h2` through `h4` headers.
+
+[^notes]: Many markup languages, like Markdown, Kramdown, Textile, and so on, call their notes functionality ‘footnotes’. But that’s incorrect, a misnomer, because footnotes are not what these extensions actually create. ‘Footnotes’ are a specific type of notes positioned in immediate visual context of their inline reference markers on printed pages having set dimensions (or digital formats that mimic the set page dimensions of print media). A reader should not have to flip pages by finger or thumb-swipe, or jump long distances by link or scrollbar, to read footnotes; otherwise they are not really footnotes. When notes all come at the end of a publication in a single list, whether print or web document, they are called ‘endnotes’, and every English style manual that matters, including *Oxford* and *Chicago*, will say so. The *foot-* and *end-* prefixes merely indicate _where_ the notes are placed in published material, regardless of medium. They same style manuals refer to both types more generally as just ‘notes’. So if you can’t get it right specifically, at least get it right generally. And if you’re thinking of developing a notes extension for a cool, new markup language (e.g. Textup), don’t make the same mistake as other markup languages. Call the functionality Endnotes, or Notes in general, but not ‘Footnotes’.
+
+### Tables
+
+Tables must be in straight HTML.
+
+Tables are very effective at presenting tabular data and other dense sets of information suited to grid display. They also make nice presentation breaks when a page is otherwise a lot of text. But wide tables can also be problematic to read on small screen devices.
+
+So, use the following guidelines with respect to tables:
+
+1. Use them as much as appropriate for tabular data sets.
+2. Avoid tables if data is mostly long strings of text, like sentences, paragraphs, or entire lists. In such cases, try and structure the information as [definition lists](#definition-lists) instead.
+3. Ensure the table is complete, which includes the surrounding `div` plus `caption`, `thead`, `tbody`, `tfoot`. (See number 6). To make it easy, copy/paste the markup from the code block below.
+4. Understand that a table’s `caption` is really its title. (Table captions are different from an HTML figure’s `figcaption`, which is used as a description.) While it’s called ‘caption’ in HTML, it’s function is to number and title the table so that it can be referred to easily in main text.
+5. If multiple tables are used on a given documentation page, ensure they are appropriately numbered. Do this at the beginning of the caption (e.g. ‘Table 1. Caption text . . .’, ‘Table 2. Caption text. . .’, and so on). If a page only uses one table, the number reference can be left out of the caption.
+6. Table notes are optional, but can be used effectively to communicate information in clear and concise ways. See [**Notes in tables**](#notes-in-tables)). But if you don’t need notes, or do not otherwise need a table footer at all, then remove the `tfoot` region.
+
+``` html
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
+<caption>Table n. Title of table</caption>
+<thead><tr>
+<th scope="col">Header</th>
+<th scope="col">Header</th>
+<th scope="col">Header</th>
+</tr></thead>
+<tbody>
+<tr>
+<th scope="row">data</th>
+<td>data</td>
+<td>data</td>
+</tr>
+<tr>
+<th scope="row">data</th>
+<td>data</td>
+<td>data</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan="3"><ol>
+<li>note item</li>
+<li>note item</li>
+<li>note item</li>
+</ol></td></tr></tfoot>
+</table></div>
 ```
-[^notes]: Recognize that all those markup languages, . . .
-```
 
-As already mentioned, the resulting notes list appears at bottom of the page (ergo, endnotes), because that’s how Kramdown notes are designed to function. Seek down and you shall find them.
-
-Custom styles are used to provide a faux header in the endnotes list container. This provides proper visual heading of the back matter section, while keeping it out of the contents list (i.e. the table of contents) at top of page, which automatically targets headers.[^backmatter]
-
-[^notes]: So, if you’re thinking of developing yet another notes extension for web documents, call it _notes_, or _endnotes_ specifically.
-
-[^backmatter]: Note to documentation team: This should be simple to add and endlessly useful.  
+If you don’t use any [notes in your tables](#notes-in-tables), remove the entire `<tfoot>…</tfoot>` region of the table, or change it to use the footer a different way, as needed.  
 
