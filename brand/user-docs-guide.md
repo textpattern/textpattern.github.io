@@ -17,7 +17,7 @@ These guidelines, an extension of Textpattern’s [editorial style guide](https:
 
 ## Target audience
 
-The target audience of user documentation is primarily new users of [Textpattern](https:/textpattern.com), notably _administrators_, since that role is automatically adopted when installing Textpattern software.
+The target audience of user documentation is primarily new users of [Textpattern](https:/textpattern.com), and notably the administrator (or ‘Publisher’), since that role is automatically adopted when installing Textpattern software.
 
 ## Scope and depth of material
 
@@ -25,7 +25,7 @@ The scope and depth of user documentation should be what is needed and not more.
 
 ### Scope of documentation
 
-The scope of the documentation is primarily on the software’s core functionality. The out-of-the-box features and capabilities.
+The scope of the documentation is primarily on the software’s core functionality; the out-of-the-box features and capabilities.
 
 To a lesser degree (and until further notice), the documentation site also harbours [plugin development resources](https://docs.textpattern.com/development/) and Textpattern [brand and collaboration information](https://docs.textpattern.com/brand/), including these guidelines.
 
@@ -380,7 +380,7 @@ Only worry about styling block element content if such selectors are described i
 
 [^custom]: Avoid using Kramdown and HTML’s `style` attribute to create non-standard presentation on inline or block-level content. If you think a new style is needed, follow the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures) to propose one so a custom selector may be created for it.
 
-### Blockquotes
+### Block quotes
 
 Do not use block quotes in documentation (i.e. the `blockquote` element). There is simply no need, despite how easy it is to hit the `>` key to add one via Markdown. This may not be true in other Textpattern platforms (e.g. the Forum), but documentation has no need of them, and especially if used incorrectly.
 
