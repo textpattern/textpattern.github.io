@@ -138,27 +138,27 @@ As in earlier examples, additional strings are used (correctly) and lots of cont
 
 ### Option strings
 
-Options strings can be thought of as two types: select box options and radio button choices. The latter is not really an option, technically speaking, but a label. Regardless, we distinguish them the same way because it probably better fits a users mental model that these are choices to make for a given setting. The treatment to use, picked up by screen-readers, is single quotation marks, for example: 
+Options strings can be thought of as two types: select box options and radio button choices. The latter is not really an option, technically speaking, but a label. Regardless, we distinguish them the same way because it probably fits a users mental model better: that these are choices to make for a given setting. The treatment to use, picked up by screen-readers, is single quotation marks, for example: 
 
-If you want URL titles to be hyphenated, select ‘Hyphenated (title-like-this)’ from the drop-down options for the **Permalink title URL pattern** preference in the Publish section of the Preferences panel.
+If you want URL titles to be hyphenated, select ‘Hyphenated (title-like-this)’ from the select-box options for the preference, **Permalink title URL pattern**, in the Publish section of the Preferences panel.
 {: .example-text}
 
-Again, this example uses other string types and lots of context for demonstration, but in actual documentation, when writing instructions for a given page, some of the context will already be clear and not needing to be spelled out so exhaustively. Ensure that it is clear, but only as much as needed.
+Again, this exaggerated example uses other string types and lots of context for demonstration. In actual documentation, much of the context will be clear, thus the exhausting specificity won’t be necessary. Ensure that it is clear, but only as much as needed.
 
 ### Template name strings
 
-Template names are the names of Textpattern's default and custom presentation templates created and accessed via their respective Presentation panels. The names, notably the core names, are not capitalized, and compound names are separated by underscores. This makes it difficult to discern these strings, especially the single-word names, from regular text without additional formatting. But do not confuse these strings with other strings by using the wrong formatting.
+Template names are the names of Textpattern's default and custom presentation templates created and accessed via their respective panels under the Presentation section. The names, notably those provided in an out-of-box installation, are not capitalized, and compound names are separated by underscores. This makes it difficult to discern these strings, especially the single-word names, from regular text without additional formatting, described in the next two sections. But do not confuse these strings with other strings by using the wrong formatting.
 
-#### General use
+#### General template name use
 
-The formatting to use, preferably, is <i>**italic-strong**</i> (i.e. `<i>**italic-strong**</i>`), but ***emphasis-strong***  (i.e. `***emphasis-strong***`) is acceptable, despite the double emphasis made to screen-readers, since Markdown does not provide for non-emphasized italic formatting and most writers won't bother with the preferable syntax (see [Inline text formatting](#inline-text-formatting) section for more explanation).
+The formatting to use is, preferably, <i>**italic-strong**</i> (`<i>**italic-strong**</i>`) or *<b>emphasis-bold</b>* (`*<b>emphasis-bold</b>*`). The `i` or `b` must be added with HTML because Markdown does not provide italic or bold syntax (see [Formatting inline text](#formatting-inline-text)). This ensures screen-readers pick up on the name without getting the double emphasized hit that using `***emphasis-strong***` would otherwise give. Let your conscience be your guide.
 
 An example:
 
 The default page is aptly named <i>**default**</i>.
 {: .example-text}
 
-Note how the word 'default' is used twice in that sentence, but only one context is correctly a template name. The first instance is used as an adjective. Ensure to format only the proper nouns in this case; the actual string names.
+Note how the word 'default' is used twice, but only one instance is correctly formatted as a template name.
 
 Another example:
 
@@ -167,34 +167,34 @@ The markup controlling how comments are displayed is found in the <i>**comments_
 
 Note the underscore on core compound names. Also note that 'Forms' is a single-word header string denoting the name of the panel; used here as a proper adjective, and correctly distinguished from regular text by the capitalization. The word 'form`, however, is just a common noun, thus not formatted.
 
-One more example with default again:
+One more example combining another string type, an [inline directory name](#paths-directories-and-files-inline):
 
 A default stylesheet, named ***default***, must exist in the *styles* directory of a theme package. If it's missing, it will be created as an empty stylesheet upon importing the theme.
 {: .example-text}
 
-#### Used in lists
+#### Template names in lists
 
-In the rare case you need to use a list of template names for a given template type (sometimes needed in plugin and theme development documentation), leave the formatting out (i.e. use normal text), but only if the items in a given list are all strings of a single type and no other text, for example:
+In the rare case you need a list of specific template names (sometimes needed in plugin and theme development documentation), leave the formatting off and use normal text, for example:
 
 * article_listing
 * default
 * search_results
 {: .example-list}
 
-Ignore the overall presentation of this list. The three things to note are:
+The three things to note in this example are:
 
-1. Template names are not formatted. The formatting is unnecessary in this case because the list is purely template names.
-2. The list is not `code`, so should not be marked up as a code block. It's just a simple list.
-3. Nor should it be styled as a file tree component, because it's not representing the contents of a specific directory (see [File tree examples](#file-tree-examples)).
+1. **No formatting**. Template names are not formatted. The formatting is unnecessary in this case because the list is purely template names.
+2. **No code**. The list is not `code`, so should not be marked up as a code block. It's just a simple list.
+3. **No special styling**. In this case, the list is not representing the contents of a directory, so it should not be styled with one of the custom selectors for file tree components (see [File tree examples](#file-tree-examples)).
 
 If the list items were adulterated with normal text, the expected formatting would have to be used, for example:
 
-* the <i><b>article_listing</b></i> form
-* the <i><b>default</b></i> form
-* the <i><b>search_results</b></i> form
+* the <i>**article_listing**</i> form
+* the <i>**default**</i> form
+* the <i>**search_results**</i> form
 {: .example-list}
 
-But that would be sloppy list construction anyway, so it should never be needed.
+But that would be sloppy list construction to avoid.
 
 ### Alert message strings
 
@@ -278,7 +278,7 @@ The above block quote is the _only_ time anywhere in user documentation that a `
 
 This scope includes uniform resource identifiers (e.g. URLs), absolute or relative file paths, and individual directory or file names. The formatting conventions are the same whether you are describing them as strings in back-end panels or using them as regular paragraph text.
 
-#### Paths and files inline
+#### Paths, directories, and files inline
 
 When embedded (inline) in regular documentation text, these elements are italicized (i.e. `i`, not `em`) using HTML, since Markdown does not provide for `i` formatting. Screen-readers do not need to pick up unnecessary emphasis on these elements.
 
@@ -299,7 +299,7 @@ Also mind these important conventions for distinguishing these elements:
 * **File names**. Always include the file extension, whether used in a path or by itself (e.g. use <i>index.php</i>, never <i>index</i> only). This is what distinguishes file names from directory names, or anything else.  
 * **Single directory names**. Do not prefix directory names with a fore-slash (e.g. <i>/textpattern</i>) when referring to the name by itself. Again, file name extensions will distinguish file names from directory names, and a directory name is sufficiently distinguished from regular text by italic formatting and proper description of context.  
 
-#### Paths and files in code
+#### Paths, directories, and files in code
 
 When, and only when, these elements are reflecting actual code, display them as block-level code examples in the actual code they come from and ignore any other formatting convention, for example:
 
@@ -314,7 +314,7 @@ Temporary directory path: __TXP-ROOT/textpattern/tmp
 
 Never style paths, directories, or file names inline as `code`.
 
-#### Paths and files in lists
+#### Paths, directories, and files in lists
 
 In the rare case it’s necessary or convenient to use paths, directories, or file names in a list, unique to one of those types of elements (i.e. a list of paths only, or a list of file names only, etc.), do not use italic formatting since the list itself is distinguishing these items from regular text.
 
