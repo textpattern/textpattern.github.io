@@ -95,29 +95,55 @@ A clear but minimum set of formatting rules are needed to distinguish the differ
 
 Various strings in the software's back end, that you may need to document, are detailed in the following sections. Some of these strings use `strong` and `em` (emphasis) via Markdown for [inline formatting](#inline-text-formatting). Be cognizant of the fact that Markdown does not provide syntax for true `i` (italic) and `b` (bold) element formatting. In this case, however, it's okay; you want screen-reading technology to catch the distinguished (**strengthened** or *emphasized*) interface strings, in addition to those solely distinguished by capitalization or quotation marks. The noted exception is with regard to [path and file names](#paths-and-file-names).
 
-### Headers, labels, and options
+### Header and label strings
 
 One reason multiple formatting styles are needed to document interface strings like headers, labels, and control options: sentence case is used for writing them. This prevents relying on capitalizations alone to denote where a string ends in regular text. On the other hand, some strings are indeed sentences with terminal punctuation, so even if title case was the convention for strings, there'd still be some needing more distinction than what capitalization alone could provide. Thus a maximum of four formatting styles are defined as balance between distinction and presentation.   
 
-Single-word strings, capitalized
-: Formatting: Normal font weight
-: Example: The Write panel.
+#### Single-words, capitalized
 
-Multiple-word strings, no terminal punctuation
-: Formatting: `**Bold**` font weight
-: Example: The **Date format** setting.
+Capitalized single-word strings representing interface headers or labels require no additional formatting. The capitalization alone, which screen-readers also recognize, is sufficient for distinguishing these strings, as long as the context is made clear, for example:
 
-Full-sentence strings with terminal punctuation
-: Formatting: `*Italic*` font style
-: Example: The *Prevent widowed words in article titles?* preference.
+The Write panel.
+{: .example-text}
 
-Select box option strings
-: Formatting: Single quote marks
-: Example: Select ‘Yes’ from the drop-down options.
+In this common-use example, the string is a proper adjective (i.e., a name being used as a adjective), which is always capitalized. The word ‘panel’, a subject noun, is not part of the string; rather, it provides the general *what* and *where* context of ‘Write’.
 
-Note that panel names and headers under the Presentation section of the back end (i.e. Themes, Sections, Pages, Forms, and Styles) are different from the names of templates created in those respective panels.
+Another example, albeit exaggerated, with all kinds of *what* and *where* context:
 
-### Presentation template names
+Under the Presentation section of the back-end’s main navigation are five presentation panel links: Themes, Sections, Pages, Forms, and Styles.
+{: .example-text}
+
+In this example we have six single-word strings being named, easily identified by their capitalization. ‘Presentation’ (a link label) is used as another proper adjective; in this case, modifying ’section’, a part of the main navigation. But the second instance of the word, ‘presentation’, is just a regular adjective modifying ‘panel links’. No specific presentation panel exists, anyway, so capitalizing it would be confusing. In that hypothetical case, you would write: ‘. . . are five panel links in the Presentation panel’. The remaining five strings are used as proper nouns of link labels.
+
+Note that panel names and headers under the Presentation section of the back end are different from the names of templates created in those respective panels. The latter is dealt with in [Presentation template names](#presentation-template-names).
+
+#### Multiple-words, no terminal punctuation
+
+Multiple-word strings lacking terminal punctuation also represent interface headers and labels. But because of the sentence-case capitalization on interface strings, we can’t rely on capitalization alone to distinguish the entire string from regular text. To account for this, we `**Strong**` formatting on the string, which screen-readers also pick up, for example:
+
+The **Date format** setting.
+{: .example-text}
+
+
+#### Full sentences
+
+These types of strings are uniquely found as preferences (a.k.a. settings) in the Site, Admin, Publish, and Feeds panels under the Preferences section. Specifically, they are the settings with labels posed as questions. For these particular labels terminal punctuation, `emphasis` is used to distinguish them easier from regular text, which screen-readers also pick up on, for example:
+
+Widowed words happen when the last word of a title wraps to a new line by itself, and you may not like it. Prevent widowed words from happening by selecting ‘Yes’ for the *Prevent widowed words in article titles?* preference in the Publish panel of the Preferences section.
+{: .example-text}
+
+As in earlier examples, additional strings are used (correctly) and lots of context is involved to make them clear. The string were concerned with now is the preference label posed as a question, distinguished by emphasized text. Imagine how much harder it would be to distinguish and understand that string if we did not use emphasis on it.
+
+### Option strings
+
+Options strings can be thought of as two types: select box options and radio button choices. The latter is not really an option, technically speaking, but a label. Regardless, we distinguish them the same way because it probably better fits a users mental model that these are choices to make for a given setting. The treatment to use, picked up by screen-readers, is single quotation marks, for example: 
+
+If you want URL titles to be hyphenated, select ‘Hyphenated (title-like-this)’ from the drop-down options for the **Permalink title URL pattern** preference in the Publish section of the Preferences panel.
+{: .example-text}
+
+Again, this example uses other string types and lots of context for demonstration, but in actual documentation, when writing instructions for a given page, some of the context will already be clear and not needing to be spelled out so exhaustively. Ensure that it is clear, but only as much as needed.
+
+### Template name strings
 
 Template names are the names of Textpattern's default and custom presentation templates created and accessed via their respective Presentation panels. The names, notably the core names, are not capitalized, and compound names are separated by underscores. This makes it difficult to discern these strings, especially the single-word names, from regular text without additional formatting. But do not confuse these strings with other strings by using the wrong formatting.
 
@@ -168,7 +194,7 @@ If the list items were adulterated with normal text, the expected formatting wou
 
 But that would be sloppy list construction anyway, so it should never be needed.
 
-### Alert messages
+### Alert message strings
 
 Alert messages appear to software users as feedback dialogue in the Diagnostics panel, or in other panels as a software user proceeds through certain tasks (e.g. when saving draft changes). Four kinds of alert messages exist (Table 1). The full set of alert messages in core are detailed in [Diagnostics](https://docs.textpattern.com/administration/diagnostics-panel).
 
@@ -231,57 +257,66 @@ Watch your step.
 OMFG, _no!_
 {: .alert-block .error}
 
-### Paths and file names
+### Free text strings
 
-Uniform resource identifiers (e.g. URLs), absolute or relative file paths, and directory and file names, whether described as strings in back-end panels or being used in regular documentation text, are preferably formatted as italic (i.e. `i`, not `em`) using HTML, since Markdown doesn’t provide for `i` formatting. You will not be penalized or berated for using `em`, however. 
+Free-text strings are any other type of text in back-end panels not already described. These strings refer to words or paragraphs outside of navigation, forms, tables, widgets, and so on. Because free text strings can be short (a few words) or long (a full paragraph) it’s most appropriate to treat them as embedded (inline) quotations or displayed (block quote) quotations, accordingly.
 
-Examples:
-: Absolute URL: <i>https://textpattern.com</i>
-: Relative file path: <i>/Users/name/Sites/sitename/textpattern/tmp</i>
-: Directory name: <i>textpattern</i>
-: File name: <i>.htaccess</i>, <i>index.php</i>, <i>default.txp</i>, <i>front-end-themes.md</i>, and so on.
+An embedded quotation of short strings might look like this (links are part of the actual interface text but not functional here):
 
-And mind these conditions:
+At bottom of every back-end panel are two lines. One indicates the software version used, ‘[Textpattern CMS]() (v4.7.3)’, and the other provides a link back to top of the given panel, ‘[Back to top]()’.
+{: .example-text}
 
-1. Do not use quotation marks to distinguish paths and file names for any reason.
-2. When using a file name by itself, always include the file extension. This is the convention to distinguish file names from directory names (i.e. <i>index.php</i> is correct, but <i>index</i> is not).  
-3. Do not prefix a directory name with a foreslash (e.g. <i>/textpattern</i>) when referring to the name by itself. Again, file name extensions will distinguish file names from directory names.
-4. Do not format paths, directories, or file names used inline as code (unless the context is actual code). Always italic!
+When a free-text string is long enough to warrant being a displayed quotation, mark it up as a `blockquote`. Only one instance of text in the back end is long enough to warrant this markup; in the Languages panel under the panel header, the following paragraph is found:
+ 
+> **You can help us improve Textpattern!** We welcome additional translations (and corrections to current translations) by our user community. Please visit Textpattern language translations (opens an external link in a new window) for further details.
 
-Specific situations of use…
+The above block quote is the _only_ time anywhere in user documentation that a `blockquote` would be used (see explanation in [Block quotes](#block-quotes)).
 
-#### Paths, directories, and file paths in code
+### Paths, directories, and file names
 
-Ignore italic formatting, of course, if the path or name is reflecting actual code, such as from the Diagnostics panel, for example:
+This scope includes uniform resource identifiers (e.g. URLs), absolute or relative file paths, and individual directory or file names. The formatting conventions are the same whether you are describing them as strings in back-end panels or using them as regular paragraph text.
+
+#### Paths and files inline
+
+When embedded (inline) in regular documentation text, these elements are italicized (i.e. `i`, not `em`) using HTML, since Markdown does not provide for `i` formatting. Screen-readers do not need to pick up unnecessary emphasis on these elements.
+
+A long hypothetical example for demonstration of various qualifying strings:
+
+The log in location for the software’s back end is located at <i>domain.tld/textpattern</i>. The front end is dynamically generated via the <i>index.php</i> file, though you don’t see it in the URL of your website. An <i>.htaccess</i> file is installed with the core software package in the same directory, whether a root directory, often <i>public_html</i> when provided by web hosts, or a subdirectory of your choosing. Many Apple users who setup local development will install Textpattern in their <i>Sites</i> directory (i.e. <i>/Users/name/Sites</i>), in which case the path to use for the <i>tmp</i> directory will be at <i>/Users/name/Sites/sitename/textpattern/tmp</i>.
+{: .example-text}
+
+If you ever feel a particular path, directory, or file name needs to stand out more than others, don’t mark it up as `code`, which is inappropriate; instead, make it strong, too, for example:
+
+It’s called the <i>**tmp**</i> directory, not the ‘temp’ directory’, and you find it at <i>…/textpattern/tmp</i>.
+{: .example-text}
+
+But, obviously, don’t do this on every path, directory, or file name inline.
+
+Also mind these important conventions for distinguishing these elements:
+
+* **File names**. Always include the file extension, whether used in a path or by itself (e.g. use <i>index.php</i>, never <i>index</i> only). This is what distinguishes file names from directory names, or anything else.  
+* **Single directory names**. Do not prefix directory names with a fore-slash (e.g. <i>/textpattern</i>) when referring to the name by itself. Again, file name extensions will distinguish file names from directory names, and a directory name is sufficiently distinguished from regular text by italic formatting and proper description of context.  
+
+#### Paths and files in code
+
+When, and only when, these elements are reflecting actual code, display them as block-level code examples in the actual code they come from and ignore any other formatting convention, for example:
 
 ```
 Textpattern version: 4.7.3 (7c46d1f4c8ac79e62a7d5e54a9ddac53)
-Last update: 2019-03-11 07:38:57/2019-02-25 22:22:30
+. . .
 Textpattern path: __TXP-ROOT/textpattern
 Article URL pattern: title_only
-Production status: live
+. . .
 Temporary directory path: __TXP-ROOT/textpattern/tmp
 ```
 
-#### Paths, directories, and file paths in lists
+Never style paths, directories, or file names inline as `code`.
 
-Do not italicize these strings when used in a list, such as reflecting a file tree, directory contents, or what have you. See the appropriate styling for these unique cases in the [File-tree components](#file-tree-components) section.
+#### Paths and files in lists
 
-### Normal text
+In the rare case it’s necessary or convenient to use paths, directories, or file names in a list, unique to one of those types of elements (i.e. a list of paths only, or a list of file names only, etc.), do not use italic formatting since the list itself is distinguishing these items from regular text.
 
-Normal text strings are any other type outside of those already described (i.e. outside of any functional control or interface widget). The possible types of text that appear at the bottoms of back-end panels, like software version numbers, are one example.
-
-Normal text strings should be offset from regular documentation copy by single quotation marks, for example (links are part of the actual interface text):
-
-[Textpattern CMS]() (v4.7.3)
-{: .example-text}
-
-And:[^examples]
-
-[Back to top]()
-{: .example-text}
-
-This is the same formatting used on form control options, so make sure the differing contexts are clear in writing.
+If such a list is reflecting a file tree or directory contents, ensure the list is styled correctly using an appropriate selector. See more on this in [File-tree components](#file-tree-components).
 
 ## Linking strategy
 
