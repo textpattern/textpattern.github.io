@@ -289,7 +289,7 @@ The log in location for the software’s back end is located at <i>domain.tld/te
 
 If you ever feel a particular path, directory, or file name needs to stand out more than others, don’t mark it up as `code`, which is inappropriate; instead, make it strong, too, for example:
 
-It’s called the <i>**tmp**</i> directory, not the ‘temp’ directory’, and you find it at <i>…/textpattern/tmp</i>.
+It’s called the <i>**tmp**</i> directory, not the ‘temp’ directory, and you find it at <i>…/textpattern/tmp</i>.
 {: .example-text}
 
 But, obviously, don’t do this on every path, directory, or file name inline.
@@ -426,15 +426,15 @@ Only worry about styling block element content if such selectors are described i
 
 ### Block quotes
 
-Do not use block quotes in documentation (i.e. the `blockquote` element). There is simply no need, despite how easy it is to hit the `>` key to add one via Markdown. This may not be true in other Textpattern platforms, where `blockquotes` are essential (e.g. the Forum, or TXP Magazine), but documentation has no need of them, and especially if used incorrectly.
+Do not use block quotes in documentation (i.e. the `blockquote` element). There is simply no need, despite how easy it is to hit the `>` key to add one via Markdown. In other Textpattern platforms (e.g. the Forum, TXP Magazine…) `blockquotes` are essential, but documentation has no need of them, and especially if used incorrectly.
 
 Block quotes are for ‘displayed quotations’ only (i.e. quotations that are not embedded inline).[^disquotes] The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
 
-Displayed quotations are for when you need to quote matter too lengthy for use inline, and that works against the [scope and depth objective](#scope-and-depth-of-material) for documentation; to be clear, concise, and actionable. Conversely, inline quotations, using `<q cite="">. . .</q>`, as demonstrated in the previous paragraph, are perfectly fine, as long as they’re not overused.
+Displayed quotations are only appropriate when quoted matter is too lengthy for inline use. Lengthy matter, quoted or otherwise, works against the [scope and depth objective](#scope-and-depth-of-material) for documentation; to be clear, concise, and actionable. Conversely, inline quotations, using `<q cite="">. . .</q>`, as demonstrated in the previous paragraph, are perfectly fine, as long as they’re not overused.
 
 Block quotes are specifically not used as example boxes, or for any other miscellaneous need. Don’t be fooled by their neat orange presentation, though it grabs your attention. See options for custom content needs in the following sections, such as example blocks for offsetting example text from regular copy.
 
-In fact, only one situation exists where using `blockquote` is appropriate, and it’s done in this page, under the [Free text strings](#free-text-strings) section. In no other situation should a block quote be used, unless there’s another paragraph floating about in the software’s back end. 
+Only one situation exists where using `blockquote` is appropriate, and it’s done in this page, under the [Free text strings](#free-text-strings) section. It’s used there as an opportunity to discuss it here too. In no other situation should a block quote be used, unless there’s another paragraph floating about in the software’s back end. 
 
 [^disquotes]: <i>New Oxford Style Manual</i>, ed. Anne Waddingham (3rd edn, Oxford, 2016), p 162.
 
@@ -464,7 +464,7 @@ This will indent the example and add a dotted blue-grey left border to distingui
 
 #### Example list
 
-Though you should rarely need it, if ever, you can employ a general list for example reasons, use this IAL instead:
+Though rarely needed, if ever, a general list can be employed for example reasons, use this IAL instead:
 
 ```
 * item one
@@ -477,9 +477,9 @@ The example list styling looks like the example text styling except the bullets 
 
 ### File-tree components
 
-Sometimes you may need to show a file tree, or the contents of a folder, or just a sample set of a directory's contents. This kind of content should not be be shown as regular text lists, nor marked up as a `code` block; rather, use one of the two available class selectors, depending on scope of list. 
+Sometimes you may need to show the contents of a folder, or just a sample set of a directory's child materials. Marking it up as a regular list misses an opportunity to visually communicate what type of list it is. Nor is marking it up as a `code` block appropriate. Instead, use one of the two available class selectors described in the next sections, depending on scope of list. 
 
-*Always* add file extensions on file names, and *never* add inline formatting on list items. When the tree stylings are used, the inline formatting (e.g. making paths and files italic in regular text) is unnecessary. 
+And remember, *always* add file extensions on file names, and *never* add inline formatting on list items. When the tree stylings are used, the inline formatting (e.g. making paths and files italic in regular text) is unnecessary. 
 
 #### Full tree scope
 
