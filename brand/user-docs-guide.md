@@ -146,25 +146,24 @@ A default stylesheet, named ***default***, must exist in the *styles* directory 
 
 #### Used in lists
 
-In the rare case you need to use a list of template names for a given template type (sometimes needed in plugin and theme development documentation), leave the formatting out (i.e. use normal text), but only if the items in a given list are all strings of a single type and no other text.
-
-For example, the following is one of several actual lists of form names used in the [Front-end themes](https://docs.textpattern.com/themes/front-end-themes) page of documentation. Everything is formatted correctly, from lead-in sentence (providing the necessary context) to list items:
-
-Article forms:
-{: .example-text}
+In the rare case you need to use a list of template names for a given template type (sometimes needed in plugin and theme development documentation), leave the formatting out (i.e. use normal text), but only if the items in a given list are all strings of a single type and no other text, for example:
 
 * article_listing
 * default
 * search_results
 {: .example-list}
 
-Ignore the fact the list is styled as a documentation example here. The three things to note are: 1) template names are not formatted. Formatting them is unnecessary in this case because the list is purely template names and the lead-in sentence makes that perfectly clear. 2) The list is not `code`, so should not be marked up as a code block. It's just a simple list. 3) Nor should it be styled as a file tree component, because it's not representing the contents of a specific directory (see [File tree examples](#file-tree-examples)).
+Ignore the overall presentation of this list. The three things to note are:
+
+1. Template names are not formatted. The formatting is unnecessary in this case because the list is purely template names.
+2. The list is not `code`, so should not be marked up as a code block. It's just a simple list.
+3. Nor should it be styled as a file tree component, because it's not representing the contents of a specific directory (see [File tree examples](#file-tree-examples)).
 
 If the list items were adulterated with normal text, the expected formatting would have to be used, for example:
 
-* the <i>**article_listing**</i> form
-* the <i>**default**</i> form
-* the <i>**search_results**</i> form
+* the <i><b>article_listing</b></i> form
+* the <i><b>default</b></i> form
+* the <i><b>search_results</b></i> form
 {: .example-list}
 
 But that would be sloppy list construction anyway, so it should never be needed.
@@ -234,19 +233,19 @@ OMFG, _no!_
 
 ### Paths and file names
 
-Uniform resource identifiers (e.g. URLs), absolute or relative file paths, and directory and file names, whether described as strings in back-end panels or being used in regular documentation text, should be formatted as italic, preferably using HTML tags (i.e. `<i>italic</i>`), though most will undoubtedly ignore that recommendation. See the [Inline text formatting](#inline-text-formatting) section for why HTML is recommended in this case (and blame it on Markdown). 
+Uniform resource identifiers (e.g. URLs), absolute or relative file paths, and directory and file names, whether described as strings in back-end panels or being used in regular documentation text, are preferably formatted as italic (i.e. `i`, not `em`) using HTML, since Markdown doesn’t provide for `i` formatting. You will not be penalized or berated for using `em`, however. 
 
 Examples:
 : Absolute URL: <i>https://textpattern.com</i>
 : Relative file path: <i>/Users/name/Sites/sitename/textpattern/tmp</i>
-: Directory name: textpattern
+: Directory name: <i>textpattern</i>
 : File name: <i>.htaccess</i>, <i>index.php</i>, <i>default.txp</i>, <i>front-end-themes.md</i>, and so on.
 
 And mind these conditions:
 
 1. Do not use quotation marks to distinguish paths and file names for any reason.
-2. When using a file name by itself, always include the file extension. This is the convention to distinguish file names from directory names (i.e. *index.php* is correct, but *index* is not).  
-3. Do not prefix a directory name with a foreslash (e.g. */textpattern*) when referring to the name by itself. Again, file name extensions will distinguish file names from directory names.)
+2. When using a file name by itself, always include the file extension. This is the convention to distinguish file names from directory names (i.e. <i>index.php</i> is correct, but <i>index</i> is not).  
+3. Do not prefix a directory name with a foreslash (e.g. <i>/textpattern</i>) when referring to the name by itself. Again, file name extensions will distinguish file names from directory names.
 4. Do not format paths, directories, or file names used inline as code (unless the context is actual code). Always italic!
 
 Specific situations of use…
@@ -266,11 +265,11 @@ Temporary directory path: __TXP-ROOT/textpattern/tmp
 
 #### Paths, directories, and file paths in lists
 
-Do not italicize these strings when used in a list, such as reflecting a file tree, directory contents, or what have. See the appropriate styling for these unique cases in the [File-tree components](#file-tree-components) section.
+Do not italicize these strings when used in a list, such as reflecting a file tree, directory contents, or what have you. See the appropriate styling for these unique cases in the [File-tree components](#file-tree-components) section.
 
 ### Normal text
 
-Normal text strings are any other type outside of those already described (outside of any functional control or interface widget). A notably example are the possible types of text that appear at the bottoms of back-end panels, like software versions numbers.
+Normal text strings are any other type outside of those already described (i.e. outside of any functional control or interface widget). The possible types of text that appear at the bottoms of back-end panels, like software version numbers, are one example.
 
 Normal text strings should be offset from regular documentation copy by single quotation marks, for example (links are part of the actual interface text):
 
@@ -288,7 +287,7 @@ This is the same formatting used on form control options, so make sure the diffe
 
 Try to keep a big-picture perspective on documentation and add logical bridges between related, helpful topics. This can be done by cross-linking between documentation pages and anchor-linking within a given page.
 
-There’s a side benefit from this too: as one becomes familiar with the big-picture, it gets easier to identify ROT (redundancy, outdated, trivial) material, thus ways to revise and refine documentation as a whole.
+There’s a side benefit from this too: as one becomes familiar with the big-picture, it gets easier to spot ROT (redundancy, outdated, trivial) material, and easier to see how to revise and refine documentation as a whole.
 
 That said, there’s a point where too much linking can be distracting, so don’t fill a page up with a lot of links like a Wikipedia page. Likewise, refrain from adding bridge links too soon after creating new material. It never fails that several rounds of page editing are needed, and in-page anchor links, especially, are repeatedly broken before the content stabilizes.
 
@@ -320,7 +319,7 @@ Before getting to those neat block-level content types, a few important words ne
 
 ### Formatting inline text
 
-Only use inline formatting like *emphasis*, **strong**, or ***emphasis-strong*** when [documenting interface strings](#formatting-interface-strings). The sole exception is when emphasizing a word as a part of regular text (e.g. ‘You *really* don’t want to do that.’), and this should rarely be necessary. Never use such inline formatting at any other time in regular copy unless it’s to distinguish an interface string, otherwise you add confusion. For the sake of formatting interface strings, consider Table 2.
+Table 2 shows what Markdown syntax provides for inline formatting; either emphasis (`em`), strong (`strong`), or a combination of both. There is no syntax for italic (`i`) or bold (`b`), unfortunately, which must be added with regular HTML if needed.
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
 <caption>Table 2. Markdown syntax for inline formatting.</caption>
@@ -361,7 +360,17 @@ Only use inline formatting like *emphasis*, **strong**, or ***emphasis-strong***
 </ol></td></tr></tfoot>
 </table></div>
 
-Markdown does not have syntax for rendering `i` (italic) and `b` (bold) elements. HTML must be used when the presentation of these elements is needed without the inherent emphasis and strength otherwise added by `em` and `strong`. This is ideally the case for [directory paths and file name names](#path-and-file-name), or if ever citing the title of a major work, as two examples. Such text is already distinguished (visually) from regular text by italic alone, or title-case capitalization, or both. The added emphasis from `em` on screen-readers is an unnecessary hit to the few who might fancy these docs that way.
+But the lack of true (semantic) italic and bold formatting in Markdown is only unfortunate if we care about screen-readers and people who rely on them, because the inherent emphasis/strength of text marked up with `em` and `strong` is picked up by this technology.
+
+Recall in the guidelines for [paths and file names](#paths-and-file-names) that such text elements, whether representing back end strings or not, should be formatted as italic. But if we easily rely on Markdown, which only adds `em`, rather than take the extra two seconds to type `i` tags, then such strings appear italic but deliver the emphasized punch, too, to anyone *listening* via a screen-reader. That would be pretty annoying for a lot of paths and file names. That’s why the guideline there suggests adding the HTML instead of using Markdown, if one can be bothered.
+
+Similarly, the guideline for formatting [presentation template names](#presentation-template-names) defines using italic and bold formatting together on these strings. That gives screen-reading technology a needless double-hit of emphasis if HTML is not used instead of Markdown for both styles (i.e. `<i><b>name</b></i>`). You don’t have to do it that way — it’s definitely quicker to hit Cmd+I and Cmd+B in succession — but you should, if you care.
+
+The strong formatting for [multiple-word strings with no terminal punctuation](#headers-labels-and-options), however, is appropriate for screen-readers, or listeners would not know where the multi-word string ends.
+
+So this business with inline formatting is tricky, and why the golden rule of thumb is: don’t use inline formatting unless you  are documenting [interface strings](#formatting-interface-strings), and the necessary like.
+
+The sole exception is when emphasizing a word as a part of regular text (e.g. ‘You *really* don’t want to do that.’), But this should rarely be necessary, though it’s done fairly regularly throughout this page.
 
 ### Block-level content and styling
 
@@ -386,7 +395,7 @@ Block quotes are for ‘displayed quotations’ only (i.e. quotations that are n
 
 Displayed quotations are for when you need to quote large amounts of matter, and that works against the [scope and depth objective](#scope-and-depth-of-material) for documentation; to be clear, concise, and actionable. Conversely, inline quotations, using `<q cite="">. . .</q>`, are perfectly fine, as demonstrated in the previous paragraph, as long as they’re not overused.
 
-Block quotes are specifically not used as example boxes, or for any other miscellaneous need. Don’t be fooled by their neat orange presentation, though it grabs your attention. See options for custom content needs, such as offset examples, in the following sections.
+Block quotes are specifically not used as example boxes, or for any other miscellaneous need. Don’t be fooled by their neat orange presentation, though it grabs your attention. See options for custom content needs in the following sections, such as example blocks for offsetting example text from regular copy.
 
 [^disquotes]: <i>New Oxford Style Manual</i>, ed. Anne Waddingham (3rd edn, Oxford, 2016), p 162.
 
@@ -506,7 +515,7 @@ Notes are used sparingly and in limited cases in Textpattern documentation; eith
 
 Reference-mark notes are a common annotation device in information design, and are specifically used in tables. The standard reference-mark system cycles through six marks, in this order: *, †, ‡, §, ¶, ‖.
 
-If a table ever needs more than six notes, which should be rare to never, the pattern repeats in duplicate (**, ††, ‡‡, §§, ¶¶, ‖‖), then triplicate, and so on. Only the first six single marks are provided for in CSS. Since these notes are in [HTML tables](#tables), they must also be structured with HTML. 
+When more than six notes are needed, and we assume here they never will be, the pattern repeats in duplicate (**, ††, ‡‡, §§, ¶¶, ‖‖), then triplicate, and so on. Only the first six single marks are provided for in CSS. Since these notes are in [HTML tables](#tables), they must also be structured with HTML. 
 
 Consider the following table, which is an example of the notes in effect.
 
@@ -568,22 +577,11 @@ You must add the entity values in the table where needed, in the correct order, 
 
 Then write the corresponding note in the footer `li`, in the same order. The entities are added to list items automatically. Don’t add them manually in list items.
 
-If you ever need more than six notes, then use `<ol class="list--no-numbers">`, for a list without any list style at all, then add the reference marks manually:
-
-```html
-<ol class="noliststyle">
-<li>. . .</li>
-<li>&#x2016; . . .</li>
-<li>&#x002a;&#x002a; . . .</li>
-<li>. . .</li>
-</ol>
-```
-
 #### Notes in main text
 
-Notes, technically speaking, are half of notes and bibliography referencing systems. The notes part are meant to cite sources discussed in text (e.g. the source of a quotation used), or enable authors to expand on ideas without over-bloating the article. We can use notes in documentation without bibliographies too.
+Notes, technically speaking, are half of notes and bibliography referencing systems. The notes part enable citing sources in context of a topic or quotation, or enable authors to expand on ideas without over-bloating the article. Notes can also be used without bibliographies, like here.
 
-But use notes sparingly in user documentation. We’re not recording history, only providing how-to information. Fewer notes are less overhead for readers wanting to get something done.
+But use notes sparingly. We’re not recording history, only providing how-to information. Fewer notes are less overhead for readers wanting to get something done.
 
 Notes are employed using Kramdown.[^notes] A note marker is first added to the end of a sentence (or clause), in context of the applicable topic, for example:
 
@@ -596,13 +594,13 @@ Then, at the bottom of that section (i.e. just before the next document header),
 [^marker]: Start of corresponding note . . .
 ```
 
-If you have multiple notes in a given section, continue the same way, making sure notes are in the order as they are marked in main text. Not because they have to be that way, Kramdown will render the correct order automatically, but because it’s just logical.
+If you have multiple notes in a given section, continue the same way, making sure notes are in the order as they are marked in main text. Not because they have to be that way (Kramdown will render the correct order automatically), but because it’s logical.
 
 Having notes spread out through the document this way might seem strange at first, but it’s easier to find and edit them in context. By contrast, if notes are listed together at the end of a document (as needing done with Textile), you must jump up and down in the document (i.e. out of context) whenever revising them. Either way the resulting endnotes list is rendered at the end of the page (inside a pre-formatted `div`), but use the process described above, which is a collaboration standard for Textpattern documentation.
 
 Custom styles are used to provide a faux header in the endnotes `div` container. This provides proper visual heading of the back matter section, while keeping it out of the contents list (a.k.a. table of contents) that automatically targets `h2` through `h4` headers.
 
-[^notes]: Many markup languages, like Markdown, Kramdown, Textile, and so on, call their notes functionality ‘footnotes’. But that’s incorrect, a misnomer, because footnotes are not what these extensions actually create. ‘Footnotes’ are a specific type of notes positioned in immediate visual context of their inline reference markers on printed pages having set dimensions (or digital formats that mimic the set page dimensions of print media). A reader should not have to flip pages by finger or thumb-swipe, or jump long distances by link or scrollbar, to read footnotes; otherwise they are not really footnotes. When notes all come at the end of a publication in a single list, whether print or web publication, they are called ‘endnotes’, and every English style manual that matters, including *Oxford* and *Chicago*, will say so. The *foot-* and *end-* prefixes merely indicate _where_ the notes are placed in published material, regardless of medium. They same style manuals refer to both types more generally as just ‘notes’. If you can’t be specific about it, be general.
+[^notes]: Many markup languages, like Markdown, Kramdown, Textile, and so on, call their notes functionality ‘footnotes’. But that’s incorrect, a misnomer, because footnotes are not what these extensions actually create. ‘Footnotes’ are a specific type of notes positioned in immediate visual context of their inline reference markers on printed pages having set dimensions (or digital formats that mimic the set page dimensions of print media). A reader should not have to flip pages by finger or thumb-swipe, or jump long distances by link or scrollbar, to read footnotes; otherwise, they are not really footnotes. When notes all come at the end of a publication in a single list, whether print or web publication, they are called ‘endnotes’, and every English style manual that matters, including *Oxford* and *Chicago*, will say so. The *foot-* and *end-* prefixes merely indicate _where_ the notes are placed in published material, regardless of medium. The same style manuals refer to both types more generally as just ‘notes’. If you can’t be specific about it, be general.
 
 ### Tables
 
@@ -612,8 +610,8 @@ Use the following guidelines with respect to tables:
 
 1. **HTML only**. Tables must be marked up with HTML in user docs. Ensure the markup is complete with `caption`, `thead`, `tbody`, `tfoot` (see #4), including the `div` container. Copy/paste the markup below to make it easier.
 2. **Tabular data**. Use tables as much as appropriate for tabular data sets. Avoid tables if data is mostly long strings of text (sentences, paragraphs, lists), in which case one or more [definition lists](#definition-lists) will work better.
-3. **Captions**. Unlike figure captions, which function more like descriptions, a table’s `caption` is really its title. Use it to Number and title tables, even if only one on a page (e.g. ‘Table 1. Caption of table.’, ‘Table 2. Caption of table.’, and so on). This makes it easy to refer to tables in the main text.
-4. **Notes**. Table notes are optional, but can be used effectively to communicate information in clear and concise ways (see [**Notes in tables**](#notes-in-tables)). If notes are not needed, or a table footer at all, remove the `tfoot` region.
+3. **Captions**. Unlike figure captions, which function more like descriptions, a table’s `caption` is really its title. Use it to number and title tables (e.g. ‘Table 1. Caption of table.’, ‘Table 2. Caption of table.’, and so on) even if only one table is used. This makes it easy to refer to tables in the main text.
+4. **Notes**. Table notes are optional (see [Notes in tables](#notes-in-tables)), but can help convey meaning and understanding from table headers and data. If notes are not needed, or a table footer at all, remove the `tfoot` region.
 
 ``` html
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
