@@ -93,17 +93,15 @@ Interface strings are the text elements a user reads in the back-end panels of t
 
 A clear but minimum set of formatting rules are needed to distinguish the different types of strings from regular documentation text. A single format or style (e.g. bold, italic, quotation marks, or whatever) is little more effective than no formatting at all. Thus a balance needs struck between having: a minimum number of distinguishing features, and clear distinction between string types and across types and regular documentation text.
 
-Various strings in the software's back end, that you may need to document, are detailed in the following sections. Some of these strings define using `em` (emphasis) or `strong` formatting, easily added via Markdown. Others define using `i` (italic) because the otherwise emphasis from `em` is not appropriate for screen-readers. The latter situation requires  adding `i` as HTML, since Markdown does not provide syntax for true `i` (or `b`, bold) element formatting.
-
-The following sections address their style and formatting issues individually. See the [inline formatting](#inline-text-formatting) section for more on that issue specifically. 
+The conventions for formatting or marking interface strings, and other types, are detailed in the following sections. Some of these strings define using `em` (emphasis) or `strong` formatting, easily added via Markdown. Others define using `i` (italic) because the emphasis from using `em` is not appropriate for screen-readers in those cases. The latter situation requires  adding `i` as HTML, since Markdown does not provide syntax for true `i` (or `b`, bold) element formatting. See the [inline formatting](#inline-text-formatting) section for more on that issue specifically. Specific style and formatting issues are addressed individually per string type. 
 
 ### Header and label strings
 
-One reason multiple formatting styles are needed to document interface strings like headers, labels, and control options: sentence case is used for writing them. This prevents relying on capitalizations alone to denote where a string ends in regular text. On the other hand, some strings are indeed sentences with terminal punctuation, so even if title case was the convention for strings, there'd still be some needing more distinction than what capitalization alone could provide. Thus a maximum of four formatting styles are defined as balance between distinction and presentation.   
+The use of sentence-case for writing strings is one reason no single style or format, or reliance on capitalizations alone, will work to address the different interface headers and labels. And in any case, some strings are sentences with terminal punctuation. To address the various combinations of headers and labels, four style conventions are needed across them all: capitalization, strong formatting, italic formatting, and single quotation marks.   
 
 #### Single-words, capitalized
 
-Capitalized single-word strings representing interface headers or labels require no additional formatting. The capitalization alone, which screen-readers also recognize, is sufficient for distinguishing these strings, as long as the context is made clear, for example:
+Headers and labels that are single-word strings require no additional formatting. Their capitalization alone, recognized by screen-readers, is sufficient for distinguishing these strings, as long as the context is made clear, for example:
 
 The Write panel.
 {: .example-text}
@@ -115,26 +113,28 @@ Another example, albeit exaggerated, with all kinds of *what* and *where* contex
 Under the Presentation section of the back-end’s main navigation are five presentation panel links: Themes, Sections, Pages, Forms, and Styles.
 {: .example-text}
 
-In this example we have six single-word strings being named, easily identified by their capitalization. ‘Presentation’ (a link label) is used as another proper adjective; in this case, modifying ’section’, a part of the main navigation. But the second instance of the word, ‘presentation’, is just a regular adjective modifying ‘panel links’. No specific presentation panel exists, anyway, so capitalizing it would be confusing. In that hypothetical case, you would write: ‘. . . are five panel links in the Presentation panel’. The remaining five strings are used as proper nouns of link labels.
+In this example we have six single-word strings being named, easily identified by their capitalization. ‘Presentation’ (a link label) is used as another proper adjective; in this case, modifying ’section’, a part of the main navigation. But the second instance of the word, ‘presentation’, is just a regular adjective modifying ‘panel links’. No capitalization is necessary there. And no specific presentation panel exists, anyway, so capitalizing it would be confusing. The remaining five strings are used as proper nouns of link labels.
 
 Note that panel names and headers under the Presentation section of the back end are different from the names of templates created in those respective panels. The latter is dealt with in [Presentation template names](#presentation-template-names).
 
 #### Multiple-words, no terminal punctuation
 
-Multiple-word strings lacking terminal punctuation also represent interface headers and labels. But because of the sentence-case capitalization on interface strings, we can’t rely on capitalization alone to distinguish the entire string from regular text. To account for this, we `**Strong**` formatting on the string, which screen-readers also pick up, for example:
+Headers and labels also exist as multiple-word strings lacking terminal punctuation. But because of the sentence-case capitalization on interface strings, we can’t rely on capitalization alone to distinguish the entire string from regular text. To account for this, `**strong**` formatting is used, for example:
 
 The **Date format** setting.
 {: .example-text}
 
+Screen-readers will also pick up the strong format, which is appropriate here because the lack of title-case on such strings would otherwise make the extent of them undetectable to screen-readers without the added strength. 
+
 
 #### Full sentences
 
-These types of strings are uniquely found as preferences (a.k.a. settings) in the Site, Admin, Publish, and Feeds panels under the Preferences section. Specifically, they are the settings with labels posed as questions. For these particular labels terminal punctuation, `emphasis` is used to distinguish them easier from regular text, which screen-readers also pick up on, for example:
+These types of strings are uniquely preferences labels (a.k.a. settings) in the Site, Admin, Publish, and Feeds sections of the Preferences panel. Specifically, they are the settings with labels posed as questions. For these labels, `emphasis` is used to distinguish them easier from regular text, which screen-readers also pick up on, for example:
 
-Widowed words happen when the last word of a title wraps to a new line by itself, and you may not like it. Prevent widowed words from happening by selecting ‘Yes’ for the *Prevent widowed words in article titles?* preference in the Publish panel of the Preferences section.
+Widowed words happen when the last word of a title wraps to a new line by itself. You may not like it. Prevent widowed words from happening by selecting ‘Yes’ for the *Prevent widowed words in article titles?* preference in the Publish section of the Preferences panel.
 {: .example-text}
 
-As in earlier examples, additional strings are used (correctly) and lots of context is involved to make them clear. The string were concerned with now is the preference label posed as a question, distinguished by emphasized text. Imagine how much harder it would be to distinguish and understand that string if we did not use emphasis on it.
+As in earlier examples, additional strings are used (correctly) and lots of context is involved to make them clear. The string were concerned with here is the preference label posed as a question, distinguished by emphasized text. Without the emphasis, the string would be much harder to see and understand.
 
 ### Option strings
 
@@ -426,13 +426,15 @@ Only worry about styling block element content if such selectors are described i
 
 ### Block quotes
 
-Do not use block quotes in documentation (i.e. the `blockquote` element). There is simply no need, despite how easy it is to hit the `>` key to add one via Markdown. This may not be true in other Textpattern platforms (e.g. the Forum), but documentation has no need of them, and especially if used incorrectly.
+Do not use block quotes in documentation (i.e. the `blockquote` element). There is simply no need, despite how easy it is to hit the `>` key to add one via Markdown. This may not be true in other Textpattern platforms, where `blockquotes` are essential (e.g. the Forum, or TXP Magazine), but documentation has no need of them, and especially if used incorrectly.
 
 Block quotes are for ‘displayed quotations’ only (i.e. quotations that are not embedded inline).[^disquotes] The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
 
-Displayed quotations are for when you need to quote large amounts of matter, and that works against the [scope and depth objective](#scope-and-depth-of-material) for documentation; to be clear, concise, and actionable. Conversely, inline quotations, using `<q cite="">. . .</q>`, are perfectly fine, as demonstrated in the previous paragraph, as long as they’re not overused.
+Displayed quotations are for when you need to quote matter too lengthy for use inline, and that works against the [scope and depth objective](#scope-and-depth-of-material) for documentation; to be clear, concise, and actionable. Conversely, inline quotations, using `<q cite="">. . .</q>`, as demonstrated in the previous paragraph, are perfectly fine, as long as they’re not overused.
 
 Block quotes are specifically not used as example boxes, or for any other miscellaneous need. Don’t be fooled by their neat orange presentation, though it grabs your attention. See options for custom content needs in the following sections, such as example blocks for offsetting example text from regular copy.
+
+In fact, only one situation exists where using `blockquote` is appropriate, and it’s done in this page, under the [Free text strings](#free-text-strings) section. In no other situation should a block quote be used, unless there’s another paragraph floating about in the software’s back end. 
 
 [^disquotes]: <i>New Oxford Style Manual</i>, ed. Anne Waddingham (3rd edn, Oxford, 2016), p 162.
 
