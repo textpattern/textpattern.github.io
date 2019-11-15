@@ -91,9 +91,11 @@ Particularly in documentation, do not overuse the brand name. The context of bei
 
 Interface strings are the text elements a user reads in the back-end panels of the software; from headers to form control labels to system feedback messages. Thoughtful development of these strings is critical for good software usability, but so is referring to them consistently yet unobtrusively in documentation.
 
-A clear but minimum set of formatting rules are needed to distinguish the different types of strings from regular documentation text. A single format style (e.g. bold, italic, quotation marks, or whatever) is little more effective than no formatting at all. Thus a balance needs struck: On one hand a minimum number of formatting styles used; on the other, clear distinction between string types, and across types and normal documentation text.
+A clear but minimum set of formatting rules are needed to distinguish the different types of strings from regular documentation text. A single format or style (e.g. bold, italic, quotation marks, or whatever) is little more effective than no formatting at all. Thus a balance needs struck between having: a minimum number of distinguishing features, and clear distinction between string types and across types and regular documentation text.
 
-Various strings in the software's back end, that you may need to document, are detailed in the following sections. Some of these strings use `strong` and `em` (emphasis) via Markdown for [inline formatting](#inline-text-formatting). Be cognizant of the fact that Markdown does not provide syntax for true `i` (italic) and `b` (bold) element formatting. In this case, however, it's okay; you want screen-reading technology to catch the distinguished (**strengthened** or *emphasized*) interface strings, in addition to those solely distinguished by capitalization or quotation marks. The noted exception is with regard to [path and file names](#paths-and-file-names).
+Various strings in the software's back end, that you may need to document, are detailed in the following sections. Some of these strings define using `em` (emphasis) or `strong` formatting, easily added via Markdown. Others define using `i` (italic) because the otherwise emphasis from `em` is not appropriate for screen-readers. The latter situation requires  adding `i` as HTML, since Markdown does not provide syntax for true `i` (or `b`, bold) element formatting.
+
+The following sections address their style and formatting issues individually. See the [inline formatting](#inline-text-formatting) section for more on that issue specifically. 
 
 ### Header and label strings
 
