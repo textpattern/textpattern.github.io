@@ -37,17 +37,15 @@ Else, a page can be removed, upon editor review, if the effort to revise it is n
 
 ### Depth of page content
 
-A given page should only be as explanatory as necessary; thorough, but not belabouring every possible factoid (see [Revising existing pages](#revising-existing-pages)).
+A given page should only be as explanatory as necessary; thorough, but not belabouring every possible factoid. Rely on the usability of Textpattern’s interface, and leave some benefit of doubt to the user to connect the dots. Only expand on subject minutiae when it helps clear up questions repeatedly raised in the [community forum](https://forum.textpattern.com/). (The subject of identifying needed documentation is covered in the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures).) 
 
-Rely on the usability of Textpattern’s interface, and leave some benefit of doubt to the user to connect the dots. Only expand on subject minutiae when it helps clear up questions repeatedly raised in the [community forum](https://forum.textpattern.com/). See the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures) for more on that notion and others. 
+Textpattern developers strive to make the back-end panels as intuitive as possible by design. Perhaps not perfect but always improving. It’s probably not necessary to document panel functionality in fine-grained detail, especially as the panels provide help tips in context of a given function or widget.
 
-Administration-side panels strive to be as intuitive as possible by design. Perhaps not perfect but always improving. Therefore, it’s probably not necessary to meticulously document panel functionality in minute detail, especially as the panels provide help tips in context of a given function or widget.
-
-Before writing or revising documentation on the administration-side functionality, see that interface panels themselves are written and designed better, including the associated help tips; ensure they are as meaningful and clear as possible. If a UI tip doesn’t make sense to you, [start an Issue](https://github.com/textpattern/textpattern.github.io/issues) to bring it to attention and suggest how it can be improved.
+Before writing or revising documentation on panel functionality, see that the panels themselves are designed and written better, including the associated help tips. Ensure they are as meaningful and clear as possible. If a UI tip doesn’t make sense, start an Issue in the [Textpattern repository](https://github.com/textpattern/textpattern.github.io/issues) to bring it to attention and suggest how it can be improved.
 
 When fine-grain descriptions are warranted on a page, but the page starts feeling overly dense, or you are inclined to use a lot of parenthetical notes in sentences, consider [using notes](#using-notes) instead.
 
-Whether main text or notes, ensure you’re not using more words than necessary to convey a useful fact (see [Concise writing tips](#concise-writing-tips)).
+Whether main text or notes, ensure you’re not using more words than necessary to convey a useful fact.
 
 ## Writing and editing
 
@@ -292,7 +290,7 @@ If you ever feel a particular path, directory, or file name needs to stand out m
 It’s called the <i>**tmp**</i> directory, not the ‘temp’ directory, and you find it at <i>…/textpattern/tmp</i>.
 {: .example-text}
 
-But, obviously, don’t do this on every path, directory, or file name inline.
+But, obviously, don’t do this on every inline path, directory, or file name or it’s confused with the formatting of other string types.
 
 Also mind these important conventions for distinguishing these elements:
 
@@ -399,15 +397,15 @@ Table 2 shows what Markdown syntax provides for inline formatting; either emphas
 
 But the lack of true (semantic) italic and bold formatting in Markdown is only unfortunate if we care about screen-readers and people who rely on them, because the inherent emphasis/strength of text marked up with `em` and `strong` is picked up by this technology.
 
-Recall in the guidelines for [paths and file names](#paths-and-file-names) that such text elements, whether representing back end strings or not, should be formatted as italic. But if we easily rely on Markdown, which only adds `em`, rather than take the extra two seconds to type `i` tags, then such strings appear italic but deliver the emphasized punch, too, to anyone *listening* via a screen-reader. That would be pretty annoying for a lot of paths and file names. That’s why the guideline there suggests adding the HTML instead of using Markdown, if one can be bothered.
+Recall from the [paths, directories and file names](#paths-directories-and-file-names) guidelines that such text elements, whether representing back end strings or not, should be formatted as italic. But if we easily rely on Markdown, which only adds `em`, rather than take the extra two seconds to type `i` tags, then such strings appear italic but deliver the emphasized punch, too, to anyone *listening* via a screen-reader. That would be pretty annoying for a lot of paths and file names. That’s why the guideline there suggests adding the HTML instead of using Markdown, if one can be bothered.
 
-Similarly, the guideline for formatting [presentation template names](#presentation-template-names) defines using italic and bold formatting together on these strings. That gives screen-reading technology a needless double-hit of emphasis if HTML is not used instead of Markdown for both styles (i.e. `<i><b>name</b></i>`). You don’t have to do it that way — it’s definitely quicker to hit Cmd+I and Cmd+B in succession — but you should, if you care.
+Similarly, the [template names strings](#template-name-strings) section counsels using italic-strong or emphasis-bold, but not emphasis-strong, which otherwise gives screen-reading technology a needless double-hit. It’s definitely quicker to hit your italic and bold keys in succession, of course, which Markdown will add as `***emphasis-strong***` — but you should not, if you care.
 
-The strong formatting for [multiple-word strings with no terminal punctuation](#headers-labels-and-options), however, is appropriate for screen-readers, or listeners would not know where the multi-word string ends.
+The strong formatting for [multiple-word strings with no terminal punctuation](#multiple-words-no-terminal-punctuation), however, is appropriate for screen-readers, or listeners would not know where the multi-word string ends in regular text.
 
 So this business with inline formatting is tricky, and why the golden rule of thumb is: don’t use inline formatting unless you  are documenting [interface strings](#formatting-interface-strings), and the necessary like.
 
-The sole exception is when emphasizing a word as a part of regular text (e.g. ‘You *really* don’t want to do that.’), But this should rarely be necessary, though it’s done fairly regularly throughout this page.
+The sole exception is when emphasizing a word as a part of regular text (e.g. ‘You *really* don’t want to do that.’), But this should rarely be necessary.
 
 ### Block-level content and styling
 
