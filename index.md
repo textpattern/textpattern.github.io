@@ -24,7 +24,7 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 * [Moving a Textpattern installation](https://docs.textpattern.com/installation/moving-textpattern)
 * [Post install and upgrade routines](https://docs.textpattern.com/installation/post-install-and-upgrade-routines)
 * [Multi-site Textpattern installations](https://docs.textpattern.com/installation/multi-site-textpattern)
-* [Troubleshooting a Textpattern installation/upgrade](https://docs.textpattern.com/installation/troubleshooting-textpattern)
+* [Troubleshooting a Textpattern installation or upgrade](https://docs.textpattern.com/installation/troubleshooting-textpattern)
 {: .list--no-bullets}
 
 </section>
@@ -33,7 +33,7 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 ### Site administration
 {: .index-docs-admin}
 
-* [Textpattern administration](https://docs.textpattern.com/administration/) (admin-side structure and functionality)
+* [Textpattern administration](https://docs.textpattern.com/administration/) (back-end structure and functionality)
 * [Administration fast-track](https://docs.textpattern.com/administration/admin-fast-track) (workflow insights to get up to speed quick)
 * [Textpattern security](https://docs.textpattern.com/administration/security) (read before you worry or hack the core)
 {: .list--no-bullets}
@@ -71,7 +71,7 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 
 * [Getting started with themes](https://docs.textpattern.com/themes/index.html)
 * [Front-end themes](https://docs.textpattern.com/themes/front-end-themes)
-* [Admin-side themes](https://docs.textpattern.com/themes/admin-side-themes)
+* [Back-end themes](https://docs.textpattern.com/themes/admin-side-themes)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
 {: .list--no-bullets}
 
@@ -82,8 +82,8 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 {: .index-docs-dev}
 
 * [Plugin development](https://docs.textpattern.com/development/)
-* [Textpattern source code repositories](https://docs.textpattern.com/development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
 * [Plugins website](https://github.com/textpattern/textpattern-plugins-website) (in development)
+* [All source code repositories](https://docs.textpattern.com/development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
 {: .list--no-bullets}
 
 </section>
