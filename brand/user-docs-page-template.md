@@ -8,9 +8,12 @@ description: A quick-start template for quickly structuring a new page in user d
 
 # Textpattern documentation template
 
-This page provides a quick-start markup template for new documentation pages, and description of the various elements. 
+This page provides a quick-start template for new documentation pages. Be sure to review the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures) and the [user documentation guidelines](https://docs.textpattern.com/brand/user-docs-guide) before creating any new pages.
 
-For more insights about template authoring and editing, see the  [user documentation guidelines](https://docs.textpattern.com/brand/user-docs-guide).
+**On this page**:
+
+* Table of contents
+{:toc}
 
 ## Template markup
 
