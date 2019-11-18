@@ -8,7 +8,7 @@ description: Guidelines for contributions to Textpattern CMS user documentation.
 
 # Textpattern user documentation guidelines
 
-These guidelines are an extension of Textpattern’s [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide), and specifically written for the upkeep of [user documentation](https://docs.textpattern.com/). Documentation authors, editors, and other interested contributors will want to read up here, as well review the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures).
+These guidelines, an extension of Textpattern’s baseline [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide), are specifically for the upkeep of [user documentation](https://docs.textpattern.com/). Documentation authors, editors, and other interested contributors will want to read up here, as well review the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures).
 
 **On this page**:
 
@@ -17,31 +17,31 @@ These guidelines are an extension of Textpattern’s [editorial style guide](htt
 
 ## Target audiences
 
-User documentation is currently maintained with two audience types in mind.
+User documentation is currently maintained with primary and secondary audiences in mind.
 
-### Primary target audience
+### Primary audience: New users of software
 
-The primary target audience of the user documentation website is new users of Textpattern; notably the administrator (or ‘Publisher’), since that role is automatically adopted when installing Textpattern software. We assume that administrators will write their own user instructions if setting up a Textpattern installation for third-party use.
+The primary target audience of user documentation is new users of Textpattern, and notably the administrator (or ‘Publisher’), since that role is assumed when installing Textpattern software. We also assume that administrators will write their own user instructions if setting up a Textpattern installation for third-party use, so no presumptions are made about what administrators need for their own communities.
 
-### Secondary target audience
+### Secondary audiences: Experienced users of software
 
-The secondary target audience of the user documentation website is experienced users of Textpattern, including active members in the [community forum](https://forum.textpattern.com/).
-
-The majority of user documentation is _not_ for this audience.
+Secondary audiences are experienced users and active [community](https://forum.textpattern.com/) participants having various project interests, including plugins development and themes design.
 
 ## Breadth of documentation
 
-In relation to the primary and secondary audiences are specific breadths, or scopes, of documentation.
+In relation to the primary and secondary audiences are specific breadths, or scopes, of documentation. The majority of existing user documentation is for the primary audience.
 
-### Scope of primary-audience documentation 
+### Scope of primary documentation 
 
-The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern CMS. This includes  [administration](https://docs.textpattern.com/administration) features and capabilities, [Textpattern tags](https://docs.textpattern.com/tags) and [tag attributes](https://docs.textpattern.com/tags/tag-basics), and the front-end [themes functionality](https://docs.textpattern.com/themes). Related, but to a lesser degree, is information to initially [install Textpattern](https://docs.textpattern.com/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](https://docs.textpattern.com/faqs).
+The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes  [administration](https://docs.textpattern.com/administration) features and capabilities, and [Textpattern tags](https://docs.textpattern.com/tags) and [tag attributes](https://docs.textpattern.com/tags/tag-basics) information To a lesser degree is information to initially [install Textpattern](https://docs.textpattern.com/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](https://docs.textpattern.com/faqs).
 
 Excepting the following section, the remainder of these guidelines are written with the primary audience and scope in mind.
 
-### Scope of secondary-audience documentation 
+### Scope of secondary documentation 
 
-The scope of secondary-audience documentation includes [plugin development](https://docs.textpattern.com/development/) resources, a smattering of [back-end themes](https://docs.textpattern.com/themes) instructions, a miscellaneous handful of shortcake examples and tutorials, and Textpattern [brand and collaboration](https://docs.textpattern.com/brand/)  information, including these guidelines.
+The scope of secondary-audience documentation includes [plugin development](https://docs.textpattern.com/development/) resources, a smattering of [back-end themes](https://docs.textpattern.com/themes) instructions, a miscellaneous handful of shortcode (custom Textpattern forms and tags) examples and tutorials, and Textpattern [brand and collaboration](https://docs.textpattern.com/brand/)  information, including these guidelines.
+
+This information is piecemeal and not ideally suited for where it exists. Other network platforms like [Textpattern Tips](https://textpattern.tips/), and the forthcoming Plugins and Themes websites are better repositories for secondary documentation types (see [A single documentation type](#a-single-documentation-type)). 
 
 ### Depth of documentation
 
