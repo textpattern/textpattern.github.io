@@ -2,11 +2,11 @@
 layout: document
 category: Brand
 published: true
-title: Textpattern user documentation guidelines
-description: Guidelines for contributions to Textpattern CMS user documentation.
+title: User documentation guidelines
+description: Guidelines for author and editor changes to Textpattern’s user documentation.
 ---
 
-# Textpattern user documentation guidelines
+# User documentation guidelines
 
 These guidelines, an extension of Textpattern’s baseline [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide), are specifically for the upkeep of [user documentation](https://docs.textpattern.com/). Documentation authors, editors, and other interested contributors will want to read up here, as well review the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures).
 
