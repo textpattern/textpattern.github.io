@@ -27,19 +27,19 @@ The primary target audience of user documentation is new users of Textpattern, a
 
 Secondary audiences are experienced users and active [community](https://forum.textpattern.com/) participants having various project interests, including plugins development and themes design.
 
-## Breadth of documentation
+## Scope of documentation
 
-In relation to the primary and secondary audiences are specific breadths, or scopes, of documentation. The majority of existing user documentation is for the primary audience.
+In relation to the primary and secondary audiences are specific breadths and depths of documentation. The majority of existing user documentation is for the primary audience.
 
-### Scope of primary documentation 
+### Breadth of primary documentation 
 
 The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes  [administration](https://docs.textpattern.com/administration) features and capabilities, and [Textpattern tags](https://docs.textpattern.com/tags) and [tag attributes](https://docs.textpattern.com/tags/tag-basics) information To a lesser degree is information to initially [install Textpattern](https://docs.textpattern.com/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](https://docs.textpattern.com/faqs).
 
 Excepting the following section, the remainder of these guidelines are written with the primary audience and scope in mind.
 
-### Scope of secondary documentation 
+### Breadth of secondary documentation 
 
-The scope of secondary-audience documentation includes [plugin development](https://docs.textpattern.com/development/) resources, a smattering of [back-end themes](https://docs.textpattern.com/themes) instructions, a miscellaneous handful of shortcode (custom Textpattern forms and tags) examples and tutorials, and Textpattern [brand and collaboration](https://docs.textpattern.com/brand/)  information, including these guidelines.
+The breadth of secondary-audience documentation includes [plugin development](https://docs.textpattern.com/development/) resources, a smattering of [back-end themes](https://docs.textpattern.com/themes) instructions, a miscellaneous handful of shortcode (custom Textpattern forms and tags) examples and tutorials, and Textpattern [brand and collaboration](https://docs.textpattern.com/brand/)  information, including these guidelines.
 
 This information is piecemeal and not ideally suited for where it exists. Other network platforms like [Textpattern Tips](https://textpattern.tips/), and the forthcoming Plugins and Themes websites are better repositories for secondary documentation types (see [A single documentation type](#a-single-documentation-type)). 
 
