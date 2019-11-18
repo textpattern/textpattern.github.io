@@ -47,7 +47,7 @@ The scope of secondary-audience documentation includes [plugin development](http
 
 Depth of documentation can be thought of in terms of a layering system to determine what documentation is really needed. There’s a maximum number of layers, but the fewer layers a user must descend, the better it is for everyone: Users are more independent and get tasks done quicker. Volunteer editors have less overhead to maintain.
 
-#### Software usability
+#### Rely on software usability
 
 Textpattern developers strive to make the software usable, intuitive, memorable, and enjoyable (a classic definition of software having good usability) by listening to [user feedback](https://forum.textpattern.com/viewforum.php?id=2), considering [issues for development](https://github.com/textpattern/textpattern/issues), and avoiding needless feature creep. So while some documentation is needed, the goal is to maintain only the minimum necessary suite of information, relying on the software’s usability to speak for itself.
 
@@ -55,7 +55,7 @@ A high usability of Textpattern — from finding and accessing the package, thro
 
 Sparse documentation is the best kind when the reason is that more is unnecessary.
 
-#### Embedded help tips
+#### Rely on embedded help tips
 
 Embedded help tips in the back-end interface panels are an important component between overall software usability and end-user documentation. They are meant to quickly and _sufficiently_ explain a feature when the organization, design, and/or labeling of the functionality is not otherwise clear. So not only are embedded help tips an interface usability concern for developers, but they are a documentation concern for editors. Embedded help must get the same attention and care the documentation website receives.
 
@@ -73,7 +73,7 @@ Other types of documentation are better used and managed in context of the platf
 
 User documentation is fairly well filled _out_ at this point. Maybe too much in some places and not enough in others. But it’s far better to write and add new pages when needed than to anticipate every possible topic without knowing it’s warranted.
 
-If you consider [software usability](#software-usability) and [embedded help tips](#embedded-help-tips), the two main layers in this conceptual layering system, you begin to recognize where pages may or may not be needed at all.
+If you consider [software usability](#rely-on-software-usability) and [embedded help tips](#rely-on-embedded-help-tips), the two main layers in this conceptual layering system, you begin to recognize where pages may or may not be needed at all.
 
 Important exceptions exist, of course. Textpattern tags and tag attributes, for example, need a fair bit of explanation. And the Themes panel, relatively new functionality, is still [a rough spot](https://forum.textpattern.com/viewtopic.php?id=50466) for even experienced users and designers. And the functionality anticipated in near-future releases, like new image handling and unlimited custom fields, will certainly need some fundamental documentation, at least.
 
@@ -83,9 +83,9 @@ If a page already exists in the repository, _and_ is public-readable, its inform
 
 The scope and depth of a page’s subject matter can be what is needed and not necessarily more, even if more could be said for the sake of thoroughness, or repetition in context.
 
-Again, consider [software usability](#software-usability) and [embedded help tips](#embedded-help-tips). If a documentation page for a given back-end panel meticulously annotates every panel feature, including what is obvious or made clear by a help tip, then users must wade through needless content as they scan for elaboration on features that do need it.
+Again, consider [software usability](#rely-on-software-usability) and [embedded help tips](#rely-on-embedded-help-tips). If a documentation page for a given back-end panel meticulously annotates every panel feature, including what is obvious or made clear by a help tip, then users wade through needless detail in search of what does need elaboration.
 
-So structure pages as they reflect a given panel’s organization, but only bother writing sections for features that are not already clear by the interface or help tips. In all other regions, add a simple statement, for example:
+So, structure pages as they reflect a given panel’s organization, but only bother writing sections for features that are not already clear by software design or help tips. In all other regions, add a simple statement, for example:
 
 See obvious feature [or help tip] in software.
 {: .example-text}
