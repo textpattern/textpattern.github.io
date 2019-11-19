@@ -33,15 +33,15 @@ In relation to the primary and secondary audiences are specific breadths and dep
 
 ### Breadth of primary documentation 
 
-The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes  [administration](https://docs.textpattern.com/administration) features and capabilities, and [Textpattern tags](https://docs.textpattern.com/tags) and [tag attributes](https://docs.textpattern.com/tags/tag-basics) information To a lesser degree is information to initially [install Textpattern](https://docs.textpattern.com/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](https://docs.textpattern.com/faqs).
+The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes  [administration](https://docs.textpattern.com/administration) features and capabilities, and [Textpattern tags](https://docs.textpattern.com/tags) and [tag attributes](https://docs.textpattern.com/tags/tag-basics) information. To a lesser degree is information about initially [installing Textpattern](https://docs.textpattern.com/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](https://docs.textpattern.com/faqs). Also new, in reflection of new core functionality, are a handful of [shortcode](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes) examples as tutorials. 
 
 Excepting the following section, the remainder of these guidelines are written with the primary audience and scope in mind.
 
 ### Breadth of secondary documentation 
 
-The breadth of secondary-audience documentation includes [plugin development](https://docs.textpattern.com/development/) resources, a smattering of [back-end themes](https://docs.textpattern.com/themes) instructions, a miscellaneous handful of shortcode (custom Textpattern forms and tags) examples and tutorials, and Textpattern [brand and collaboration](https://docs.textpattern.com/brand/)  information, including these guidelines.
+The breadth of secondary-audience documentation includes [plugin development](https://docs.textpattern.com/development/) resources, a smattering of [back-end themes](https://docs.textpattern.com/themes) instructions (or not), and Textpattern [brand and collaboration](https://docs.textpattern.com/brand/)  information, including these guidelines.
 
-This information is piecemeal and not ideally suited for where it exists. Other network platforms like [Textpattern Tips](https://textpattern.tips/), and the forthcoming Plugins and Themes websites are better repositories for secondary documentation types (see [A single documentation type](#a-single-documentation-type)). 
+This information is piecemeal and may not be ideally suited for this repository. Other network platforms like [Textpattern Tips](https://textpattern.tips/), and the forthcoming Plugins and Themes websites may help serve secondary documentation types better (see [A single documentation type](#a-single-documentation-type)). 
 
 ### Depth of documentation
 
