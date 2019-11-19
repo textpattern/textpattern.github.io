@@ -35,7 +35,7 @@ In relation to the primary and secondary audiences are specific breadths and dep
 
 The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes  [administration](https://docs.textpattern.com/administration) features and capabilities, and [Textpattern tags](https://docs.textpattern.com/tags) and [tag attributes](https://docs.textpattern.com/tags/tag-basics) information. To a lesser degree is information about initially [installing Textpattern](https://docs.textpattern.com/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](https://docs.textpattern.com/faqs). Also new, in reflection of new core functionality, are a handful of [shortcode](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes) examples as tutorials. 
 
-Excepting the following section, the remainder of these guidelines are written with the primary audience and scope in mind.
+Excepting the following section, the remainder of these guidelines are written with the primary audience and documentation scope in mind.
 
 ### Breadth of secondary documentation 
 
@@ -65,34 +65,47 @@ But the two information sources have vastly different contexts of use. Embedded 
 
 The more kinds of documentation in a single repository, the harder it is for primary audiences to navigate and find targeted information, and the harder it is for editors to optimally organize and maintain the repository over time. Ideally the end-user documentation repository has a [primary audience breadth of scope](#scope-of-primary-audience-documentation)), and nothing more.
 
-Other types of documentation are better used and managed in context of the platforms they concern. When a third-party developer decides to develop a Textpattern plugin, the first place they will go to learn how to proceed is the bar with the neon marquee flashing [Plugins](https://github.com/textpattern/textpattern-plugins-website). Information at source of inspiration. No mucking about in general-user documentation, which is outside and below developer interest. Likewise for designers wanting to try their hand at a new front- or back-end theme, the head to the [themes](https://github.com/textpattern/textpattern-themes-website) bazaar, where a cornucopia of ‘skin’ inspiration and documentation is at their disposal in context of interest.
+Other types of documentation are better used and managed in context of the platforms they concern. When a third-party developer decides to develop a Textpattern plugin, the first place they will go to learn how to proceed is the bar with the neon marquee flashing [Plugins](https://github.com/textpattern/textpattern-plugins-website). Information at source of inspiration. No mucking about in core functionality documentation, which is outside and below developer interest. Likewise for designers wanting to try their hand at a new front- or back-end theme; they head to the [Themes](https://github.com/textpattern/textpattern-themes-website) bazaar, where a cornucopia of ‘skin’ inspiration and documentation is at their disposal in context of interest.
 
-(Brand and collaboration information like this document may logically stay where it’s at.)  
+This information need not be written in technical documentation style; rather, it may be written as regular web page content, with screenshots or videos or whatever documentation type or format a platform needs to use. Whatever the case, context with platform is what’s important.
+
+(Brand and collaboration information like the document you are reading may logically stay where it’s at for common project reference.)  
 
 #### Necessary pages and nothing more
 
-User documentation is fairly well filled _out_ at this point. Maybe too much in some places and not enough in others. But it’s far better to write and add new pages when needed than to anticipate every possible topic without knowing it’s warranted.
+User documentation is in a fairly well filled-out state at this point. Maybe too much in some places and not enough in others. When [docs collaboration procedures](https://docs.textpattern.com/brand/#user-docs-procedures) are not throwing a 404 error, they will guide how to identify where attention is needed either way.
+
+In general, however, it’s better to write and add new pages when needed than to anticipate new material or documentation changes without knowing it’s warranted. Let community demand make immediate needs clear. 
 
 If you consider [software usability](#rely-on-software-usability) and [embedded help tips](#rely-on-embedded-help-tips), the two main layers in this conceptual layering system, you begin to recognize where pages may or may not be needed at all.
 
-Important exceptions exist, of course. Textpattern tags and tag attributes, for example, need a fair bit of explanation. And the Themes panel, relatively new functionality, is still [a rough spot](https://forum.textpattern.com/viewtopic.php?id=50466) for even experienced users and designers. And the functionality anticipated in near-future releases, like new image handling and unlimited custom fields, will certainly need some fundamental documentation, at least.
+Important exceptions exist, of course. Textpattern tags and tag attributes, for example, need a fair bit of explanation. And the Themes panel, relatively new functionality, is still [a rough spot](https://forum.textpattern.com/viewtopic.php?id=50466) for even experienced users and designers. And the functionality coming in near-future releases, like new image handling and unlimited custom fields, will certainly require out-of-the-box documentation, at least.
 
-If a page already exists in the repository, _and_ is public-readable, its information must remain accurate against the latest software release, as well be reviewed for need or refinement on a semi-regular basis. Else, an editor may propose to remove a page if it becomes a pointless outlier to a logical documentation set. Often a little content recycling to  a better location is enough to clip a needless page.
+If a page already exists in the repository _and_ is public-readable, its information must remain accurate against the latest software release, as well be reviewed for need or refinement on a semi-regular basis. Else, an editor may propose to remove a page if it becomes a pointless outlier to a logical documentation set. Often a little content recycling to  a better location is enough to clip a needless page.
 
 #### Scope and depth of a page
 
 The scope and depth of a page’s subject matter can be what is needed and not necessarily more, even if more could be said for the sake of thoroughness, or repetition in context.
 
-Again, consider [software usability](#rely-on-software-usability) and [embedded help tips](#rely-on-embedded-help-tips). If a documentation page for a given back-end panel meticulously annotates every panel feature, including what is obvious or made clear by a help tip, then users wade through needless detail in search of what does need elaboration.
+Again, consider [software usability](#rely-on-software-usability) and [embedded help tips](#rely-on-embedded-help-tips) in relation to documenting back-end panel features. If the features of an otherwise intuitive panel, including what is revealed in panel help tips, are meticulously annotated in user documentation for the sake of doing it, then users wade through needless detail in search of what little may, in fact, need elaboration.
 
-So, structure pages as they reflect a given panel’s organization, but only bother writing sections for features that are not already clear by software design or help tips. In all other regions, add a simple statement, for example:
+One way to start downsizing needless content in administration panel documentation is to maintain their structure, but replace  redundant or obvious descriptions with simple referral statements.
 
-See obvious feature [or help tip] in software.
+An example referral statement to see the software itself:
+
+See intuitive feature in software.
 {: .example-text}
 
-The features that do need documentation then stand out on the page, as the ones explained. Users quickly zero-in on them.
+It’s safe to assume that anyone reading that particular line will have installed the software, and thus can refer to it. And if not, the documentation wouldn’t matter to them anyway.
 
-Where needed, user documentation should augment embedded help information, not repeat it redundantly.
+Here’s another useful referral statement. Use this one if a given feature is only clear from the additional information conveyed via a help tip:
+
+See help tip for this feature.
+{: .example-text}
+
+Buy using statements like above in feature sections of page documentation, where the software or embedded help tips already make the feature’s purpose and function clear, we reduce needless information load on the page. This makes it easier for documentation users to scan pages for the instances when more elaboration is needed and provided.
+
+And when such elaboration is needed, it should augment embedded help information, not repeat it redundantly.
 
 ## Writing and editing
 
