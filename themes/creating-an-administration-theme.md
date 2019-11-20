@@ -41,7 +41,7 @@ A given subdirectory has the following contents:
 
 The child directories of the *assets* directory may vary, but it will likely include the *css* and *img* directories at the very least. The *js* directory is for JavaScript, should you need it. You may not even use images or JavaScript in your own theme, in which case you could remove these directories.
 
-The name on *themename.php* should be the name of the theme’s top directory too.
+The filename of the *themename.php* MUST be identical to the name of the theme’s directory.
 
 **Step 2:**
 
@@ -49,12 +49,12 @@ Pick one of the core theme directories and duplicate it by whatever method you p
 
 **Step 3:**
 
-Rename your copy directory to whatever theme name you want, but don’t try to be overly clever. The name must not have any blank spaces, and hyphens are the only non-alphanumeric character allowed. For example, these are acceptable:
+Rename your copy directory to whatever theme name you want, but don’t try to be overly clever. The name must not have any blank spaces, and hyphens and underscores are the only non-alphanumeric character allowed. In addition, your theme may not start with a number. For example, these are acceptable:
 
 * _mytheme_
 * _my-theme_
 
-Whatever name you put on the directory, use it for the *.php* file name inside the directory too (i.e. *mytheme.php*).
+Whatever name you use for the directory, use it for the *.php* file name inside the directory too (i.e. *mytheme.php*). We recommend you adopt the naming convention of _three-letter-prefix_theme-name_ where the [three letter prefix](https://docs.textpattern.com/development/plugin-developer-prefixes) is one that uniquely identifies your 'brand'. 
 
 Leave all other directory and file names alone. You will simply edit their contents, if necessary, not their names.
 
