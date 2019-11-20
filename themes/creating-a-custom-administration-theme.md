@@ -2,13 +2,13 @@
 layout: document
 category: Themes
 published: true
-title: Administration themes
+title: Creating a custom administration theme
 description: Administration themes allow Textpattern administrators (and publishers) to choose a specific theme for the presentation and layout of back-end panels.
 ---
 
-# Administration themes
+# Creating a custom administration theme
 
-The steps for creating and using back-end themes is still the same as they were prior to Textpattern 4.7. You could create a back-end theme from scratch, but we strongly recommend you create one by duplicating an existing core theme, then modify your duplicated copy as desired, especially if it’s your first attempt at an administration theme.
+The recommended procedure for creating custom back-end themes is the same as it was prior to Textpattern 4.7. You can create a back-end theme from scratch, if you really like the hard way, but we strongly recommend the approach documented here, especially if it’s your first attempt at an administration theme.
 
 **On this page**:
 
