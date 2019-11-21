@@ -567,12 +567,12 @@ If you need to show an entire tree, or a directory with its subdirectories expan
     * file2.ext 
     * file3.ext
   * . . .
-{: .list-tree}
+{: .list--tree}
 
 Use this Kramdown IAL:
 
 ``` markdown
-{: .list-tree}
+{: .list--tree}
 ```
 
 This will present the nested lists as a file tree structure. The top-post parent will be indicated by a right-facing arrow, and folder association lines will replace bullets on all child items. The font size will be slightly smaller than regular text. 
@@ -590,12 +590,12 @@ If you want to just show the contents of a single directory, without including t
 * file1.ext 
 * file2.ext
 * . . .
-{: .list-directory}
+{: .list--directory}
 
 Use this Kramdown IAL:
 
 ``` markdown
-{: .list-directory}
+{: .list--directory}
 ```
 
 This has the same font styling as a full tree display, but there are no association lines or bullets otherwise on items.  
