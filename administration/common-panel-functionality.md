@@ -67,9 +67,9 @@ In the first column of every table you will find a checkbox for each listed item
 
 The first checkbox in the column header will toggle all check boxes on or off, which can be used strategically if you need to get most records but not all, or you want to uncheck everything in case you made faulty selections.
 
-You can also quickly select ranges of items by checking the box of the first item in a range, then press and hold the Shift key, then check the box of the last item in the range. All items between will then check themselves to. You can add checked ranges to your selection by repeating these steps.
+You can also quickly select ranges of items by checking the box of the first item in a range, then press and hold the Shift key, then check the box of the last item in the range. All items between will then check themselves. You can add checked ranges to your selection by repeating these steps.
 
-By default, when no boxes are checked, the associated drop-menu menu under the table reads: ‘With 0 selected…’. When one or more boxes are check, the menu reads: ‘With selected…’.
+By default, when no boxes are checked, the associated drop-down menu under the table reads: ‘With 0 selected…’. When one or more boxes are check, the menu reads: ‘With selected…’.
 
 The options you see in the menu reflect possible actions you can take, one at a time. The options are dependent on a given panel; or rather, the type of items a panel is concerned with.
 
@@ -89,6 +89,6 @@ At that point, if you clicked ‘Yes’, whatever action you initiated will happ
 
 At the bottom of these items-oriented panels are two controls that work in relation to one another.
 
-One the left is a control for displaying a set volume of table records (list items); either 12, 24, 48, or 96 records at a time.
+On the left is a control for displaying a set volume of table records (list items); either 12, 24, 48, or 96 records at a time.
 
 On the right is a pagination control with backward and forward direction links to page through items at the volume you set in the left-side control. Pagination also provides a text field to indicate a specific page. Type in a page number and hit the Enter key.
