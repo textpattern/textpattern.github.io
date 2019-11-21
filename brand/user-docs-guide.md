@@ -611,10 +611,10 @@ Definition title
 
 That will render a definition list as:
 
-```
+``` html
 <dl>
-<dt>Definition title</dt>
-<dd>Definition data</dd>
+    <dt>Definition title</dt>
+    <dd>Definition data</dd>
 </dl>
 ```
 
@@ -690,7 +690,7 @@ Consider the following table, which is an example of the notes in effect.
 
 You must add the entity values in the table where needed, in the correct order, for example:
 
-```
+``` html
 <th scope="col">Entity&#x002a;</th>
 ```
 
