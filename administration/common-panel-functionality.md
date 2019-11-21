@@ -8,13 +8,13 @@ description: Descriptions of secondary functionality common to many panels. Once
 
 # Common panel functionality
 
-Functionality described on this page is common across many back-end panels where tables are used to list a panel’s given type items. The relevant panels are:
+Functionality described on this page is common across many back-end panels where tables are used to list a panel’s given type items. This common functionality is secondary to the primary, unique features described on respective panel pages. The relevant panels are:
 
 * Content section: [Articles](https://docs.textpattern.com/administration/articles-panel), [Images](https://docs.textpattern.com/administration/images-panel), [Files](https://docs.textpattern.com/administration/files-panel), [Links](https://docs.textpattern.com/administration/links-panel), [Comments](https://docs.textpattern.com/administration/comments-panel)
 * Presentation section: [Themes](https://docs.textpattern.com/administration/themes-panel), [Sections](https://docs.textpattern.com/administration/sections-panel)
 * Admin section: [Users](https://docs.textpattern.com/administration/users-panel), [Plugins](https://docs.textpattern.com/administration/plugins-panel) 
 
-This common functionality is secondary to the primary features unique to a given panel. Once you learn these secondary features — described here in the order they are found on panels, top to bottom — you don’t forget them. Thus it’s pointless to expose you to their explanations, repeatedly, when a simple link to them from a relevant panel is enough.
+ Once you learn these secondary features — described here in the order they are found on panels, top to bottom — you don’t forget them, so it’s pointless to expose you to their explanations, repeatedly across panels.
 
 **On this page**:
 
