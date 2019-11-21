@@ -71,7 +71,7 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 
 * [Getting started with themes](https://docs.textpattern.com/themes/index.html)
 * [Front-end themes](https://docs.textpattern.com/themes/front-end-themes)
-* [Back-end themes](https://docs.textpattern.com/themes/admin-side-themes)
+* [Creating a custom administration theme](https://docs.textpattern.com/themes/creating-a-custom-administration-theme)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
 {: .list--no-bullets}
 
