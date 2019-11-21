@@ -258,43 +258,49 @@ But that would be sloppy list construction to avoid.
 
 Alert messages appear to software users as feedback dialogue in the Diagnostics panel, or in other panels as a software user proceeds through certain tasks (e.g. when saving draft changes). Four kinds of alert messages exist (Table 1). The full set of alert messages in core are detailed in [Diagnostics](https://docs.textpattern.com/administration/diagnostics-panel).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
-<caption>Table 1. Class selectors for alert messages.</caption>
-<thead><tr>
-<th scope="col">Alert type</th>
-<th scope="col">Color</th>
-<th scope="col">Selectors&#x002a;</th>
-</tr></thead>
-<tbody>
-<tr>
-<th scope="row">Success</th>
-<td>Green</td>
-<td><code>.success</code></td>
-</tr>
-<tr>
-<th scope="row">Information</th>
-<td>Blue</td>
-<td><code>.information</code></td>
-</tr>
-<tr>
-<th scope="row">Warning</th>
-<td>Yellow</td>
-<td><code>.warning</code></td>
-</tr>
-<tr>
-<th scope="row">Error</th>
-<td>Red</td>
-<td><code>.erroer</code></td>
-</tr>
-</tbody>
-<tfoot>
-<tr><td colspan="3">
-<ol>
-<li>Each alert uses two class selectors: a common one (<code>.alert-block</code>), plus the unique one shown in table. </li>
-</ol>
-</td></tr>
-</tfoot>
-</table></div>
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+    <table>
+        <caption>Table 1. Class selectors for alert messages.</caption>
+        <thead>
+            <tr>
+                <th scope="col">Alert type</th>
+                <th scope="col">Color</th>
+                <th scope="col">Selectors&#x002a;</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Success</th>
+                <td>Green</td>
+                <td><code>.success</code></td>
+            </tr>
+            <tr>
+                <th scope="row">Information</th>
+                <td>Blue</td>
+                <td><code>.information</code></td>
+            </tr>
+            <tr>
+                <th scope="row">Warning</th>
+                <td>Yellow</td>
+                <td><code>.warning</code></td>
+            </tr>
+            <tr>
+                <th scope="row">Error</th>
+                <td>Red</td>
+                <td><code>.erroer</code></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <ol class="list--no-bullets">
+                        <li>Each alert uses two class selectors: a common one (<code>.alert-block</code>), plus the unique one shown in table.</li>
+                    </ol>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
 
 Use Kramdown’s [block element styling](#block-element-styling) syntax on a paragraph to apply the needed selectors, for example:
 
@@ -416,44 +422,54 @@ Before getting to those neat block-level content types, a few important words ne
 
 Table 2 shows what Markdown syntax provides for inline formatting; either emphasis (`em`), strong (`strong`), or a combination of both. There is no syntax for italic (`i`) or bold (`b`), unfortunately, which must be added with regular HTML if needed.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
-<caption>Table 2. Markdown syntax for inline formatting.</caption>
-<thead><tr>
-<th scope="col">Style</th>
-<th scope="col">Markdown</th>
-<th scope="col">HTML element</th>
-<th scope="col">Effect</th>
-</tr></thead>
-<tbody>
-<tr>
-<th scope="row">Emphasis</th>
-<td><code>*Emphasis*</code><br><code>_Emphasis_</code></td>
-<td><code>em</code></td>
-<td><em>Emphasis</em></td>
-</tr>
-<tr>
-<th scope="row">Strong</th>
-<td><code>**Strong**</code><br><code>__Strong__</code></td>
-<td><code>strong</code></td>
-<td><strong>Strong</strong></td>
-</tr>
-<tr>
-<th scope="row">Italic</th>
-<td>None&#x002a;</td>
-<td><code>i</code></td>
-<td><i>Italic</i></td>
-</tr>
-<tr>
-<th scope="row">Bold</th>
-<td>None&#x002a;</td>
-<td><code>b</code></td>
-<td><b>Bold</b></td>
-</tr>
-</tbody>
-<tfoot><tr><td colspan="4"><ol>
-<li>This isn’t Textile, and never will be on GitHub.</li>
-</ol></td></tr></tfoot>
-</table></div>
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+    <table>
+        <caption>Table 2. Markdown syntax for inline formatting.</caption>
+        <thead>
+            <tr>
+                <th scope="col">Style</th>
+                <th scope="col">Markdown</th>
+                <th scope="col">HTML element</th>
+                <th scope="col">Effect</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Emphasis</th>
+                <td><code>*Emphasis*</code><br><code>_Emphasis_</code></td>
+                <td><code>em</code></td>
+                <td><em>Emphasis</em></td>
+            </tr>
+            <tr>
+                <th scope="row">Strong</th>
+                <td><code>**Strong**</code><br><code>__Strong__</code></td>
+                <td><code>strong</code></td>
+                <td><strong>Strong</strong></td>
+            </tr>
+            <tr>
+                <th scope="row">Italic</th>
+                <td>None&#x002a;</td>
+                <td><code>i</code></td>
+                <td><i>Italic</i></td>
+            </tr>
+            <tr>
+                <th scope="row">Bold</th>
+                <td>None&#x002a;</td>
+                <td><code>b</code></td>
+                <td><b>Bold</b></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    <ol class="list--no-bullets">
+                        <li>This isn’t Textile, and never will be on GitHub.</li>
+                    </ol>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
 
 But the lack of true (semantic) italic and bold formatting in Markdown is only unfortunate if we care about screen-readers and people who rely on them, because the inherent emphasis/strength of text marked up with `em` and `strong` is picked up by this technology.
 
@@ -617,53 +633,59 @@ When more than six notes are needed, and we assume here they never will be, the 
 Consider the following table, which is an example of the notes in effect.
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-<table>
-<caption>Table 3. Reference-mark entities as table notes.</caption>
-<thead>
-<tr>
-<th scope="col">Name</th>
-<th scope="col">Mark</th>
-<th scope="col">Entity&#x002a;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">Asterisk</th>
-<td>*</td>
-<td><code>002a</code></td>
-</tr>
-<tr>
-<th scope="row">Dagger</th>
-<td>†</td>
-<td><code>2020</code></td>
-</tr>
-<tr>
-<th scope="row">Double Dagger</th>
-<td>‡</td>
-<td><code>2021</code></td>
-</tr>
-<tr>
-<th scope="row">Section Sign</th>
-<td>§</td>
-<td><code>00a7</code></td>
-</tr>
-<tr>
-<th scope="row">Pilcrow&#x2020;</th>
-<td>¶</td>
-<td><code>00b6</code></td>
-</tr>
-<tr>
-<th scope="row">Double Vertical Line</th>
-<td>‖</td>
-<td><code>2016</code>&#x2021;</td>
-</tr>
-</tbody>
-<tfoot><tr><td colspan="3"><ol>
-<li>Unicode values for character glyphs. These can be used as ASCII characters by prefixing values with <code>&#x</code> and adding a <code>;</code> at the end.</li>
-<li>Also known as the ‘paragraph sign’ in layman’s terms.</li>
-<li>And so on.</li>
-</ol></td></tr></tfoot>
-</table>
+    <table>
+        <caption>Table 3. Reference-mark entities as table notes.</caption>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Mark</th>
+                <th scope="col">Entity&#x002a;</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Asterisk</th>
+                <td>*</td>
+                <td><code>002a</code></td>
+            </tr>
+            <tr>
+                <th scope="row">Dagger</th>
+                <td>†</td>
+                <td><code>2020</code></td>
+            </tr>
+            <tr>
+                <th scope="row">Double Dagger</th>
+                <td>‡</td>
+                <td><code>2021</code></td>
+            </tr>
+            <tr>
+                <th scope="row">Section Sign</th>
+                <td>§</td>
+                <td><code>00a7</code></td>
+            </tr>
+            <tr>
+                <th scope="row">Pilcrow&#x2020;</th>
+                <td>¶</td>
+                <td><code>00b6</code></td>
+            </tr>
+            <tr>
+                <th scope="row">Double Vertical Line</th>
+                <td>‖</td>
+                <td><code>2016</code>&#x2021;</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <ol class="list--no-bullets">
+                        <li>Unicode values for character glyphs. These can be used as ASCII characters by prefixing values with <code>&#x</code> and adding a <code>;</code> at the end.</li>
+                        <li>Also known as the ‘paragraph sign’ in layman’s terms.</li>
+                        <li>And so on.</li>
+                    </ol>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
 </div>
 
 You must add the entity values in the table where needed, in the correct order, for example:
@@ -711,29 +733,39 @@ Use the following guidelines with respect to tables:
 4. **Notes**. Table notes are optional (see [Notes in tables](#notes-in-tables)), but can help convey meaning and understanding from table headers and data. If notes are not needed, or a table footer at all, remove the `tfoot` region.
 
 ``` html
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
-<caption>Table n. Title of table</caption>
-<thead><tr>
-<th scope="col">Header</th>
-<th scope="col">Header</th>
-<th scope="col">Header</th>
-</tr></thead>
-<tbody>
-<tr>
-<th scope="row">data</th>
-<td>data</td>
-<td>data</td>
-</tr>
-<tr>
-<th scope="row">data</th>
-<td>data</td>
-<td>data</td>
-</tr>
-</tbody>
-<tfoot><tr><td colspan="3"><ol>
-<li>note item</li>
-<li>note item</li>
-<li>note item</li>
-</ol></td></tr></tfoot>
-</table></div>
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+    <table>
+        <caption>Table n. Title of table</caption>
+        <thead>
+            <tr>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">data</th>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <th scope="row">data</th>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <ol class="list--no-bullets">
+                        <li>note item</li>
+                        <li>note item</li>
+                        <li>note item</li>
+                    </ol>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
 ```  
