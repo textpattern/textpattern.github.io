@@ -223,7 +223,7 @@ Another example:
 The markup controlling how comments are displayed is found in the <i>**comments_display**</i> form in the Forms panel.
 {: .example-text}
 
-Note the underscore on core compound names. Also note that 'Forms' is a single-word header string denoting the name of the panel; used here as a proper adjective, and correctly distinguished from regular text by the capitalization. The word 'form`, however, is just a common noun, thus not formatted.
+Note the underscore on core compound names. Also note that 'Forms' is a single-word header string denoting the name of the panel; used here as a proper adjective, and correctly distinguished from regular text by the capitalization. The word 'form', however, is just a common noun, thus not formatted.
 
 One more example combining another string type, an [inline directory name](#paths-directories-and-files-inline):
 
