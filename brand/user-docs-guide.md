@@ -567,7 +567,7 @@ If you need to show an entire tree, or a directory with its subdirectories expan
     * <span class="ui-icon ui-icon-document-b">File:</span> file2.ext 
     * <span class="ui-icon ui-icon-document-b">File:</span> file3.ext
   * . . .
-{: .list--no-bullets}
+{: .list--tree}
 
 Use this Kramdown IAL:
 
