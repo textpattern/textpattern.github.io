@@ -10,39 +10,53 @@ description: In addition to the administrator, several pre-defined user roles ar
 
 In addition to the administrator (the most powerful type of Textpattern account), several pre-defined user roles are provided for in Textpattern out-of-the-box. Each role has an associated set of administration privileges that are meant to help with leveraging the different responsibilities in a collaborative publishing workflow. If you're building a Textpattern website for yourself (single user), you wouldn't be concerned with these roles. But if you're building a platform to support multi-user contributions, user roles and privileges are likely important factors in your publishing architecture design.
 
-On this page:
+**On this page**:
 
-* [Account types versus publishing roles](#account-types-versus-publishing-roles)
-* [Panels access per publishing role](#panels-access-per-publishing-role)
-  * [Core panels access](#core-panels-access)
-  * [Extended panels access](#extended panels access)
-* [Limited access specifications](#limited-access-specifications)
-  * [Publisher limitations](#publisher-limitations)
-  * [Managing Editor limitations](#managing-editor-limitations)
-  * [Copy Editor limitations](#copy-editor-limitations)
-  * [Staff Writer limitations](#staff-writer-limitations)
-  * [Freelancer limitations](#freelancer-limitations)
-  * [Designer limitations](#designer-limitations)
-* [Modifying user roles and privileges](#modifying-user-roles-and-privileges)
-* [Multi-contributor security](#multi-contributor-security)
+* Table of contents
+{:toc}
 
-## Account types versus publishing roles
+## Account types
 
-It's helpful to classify user accounts in three ways.
+There are three general types of user accounts in Textpattern, conceptually speaking:
 
-**Administrator account:** Only one person has this account; the person who installed Textpattern (presumably you). Though an 'Administrator' can certainly serve in a publishing role (and is labeled 'Publisher' in the [Users panel](https://docs.textpattern.com/administration/users-panel)), an administrator isn't necessarily part of collaborative publishing workflow. Site administrators typically handle all server-side issues, update the system when new releases are made, backup the database on a regular schedule, and make decisions about website [security](https://docs.textpattern.com/administration/security). If a website is only a single-user site, this is the only account you need.
+1. administrator account (sole, all-powerful)
+2. publishing accounts (the range of roles and privileges)
+3. frozen accounts (no rights at all)
 
-**Publishing accounts:** These are represented by the six *roles* defined in Textpattern - from Publisher down to Designer. The roles are primarily what this page is concerned with. Publishing roles are taken into consideration when planning a collaborative publishing architecture around the day-to-day activities of producing content (and evolving the presentation).[^1]
+More on these in the next sections.
 
-**Frozen accounts:** Frozen accounts are those potentially having the status of 'None', meaning the accounts are preserved but the account holders are denied access to the administration side. This is useful for when collaborators that published content at one point (e.g. 'Copy Editor', 'Staff Writer') are no longer doing so; they've left the editorial team. Content from such accounts will remain safely on the public side of the website under the account names, but those users no longer have administration access to change or delete the content.
+### Administrator account
 
-## Panels access per publishing role
+Only one person has this account; the person who installs Textpattern (presumably you). Though an 'Administrator' can certainly serve in a publishing role, and is labeled 'Publisher' in the [Users panel](https://docs.textpattern.com/administration/users-panel), an administrator isn't necessarily part of collaborative publishing workflow. Site administrators typically handle all server-side issues, update the system when new releases are made, backup the database on a regular schedule, and make decisions about website [security](https://docs.textpattern.com/administration/security). If a website is only a single-user site, this is the only account you need.
 
-The tables in the following sections show all account types versus access to the panels and functionality, with emphasis on the six publishing roles (from 'Publisher' to 'Designer').[^2]
+### Publishing accounts
 
-### Core panels access
+These are represented by the six roles defined in Textpattern, which are:
 
-Table 1 focuses specifically on the core (out-of-the-box) administration regions (**Content**, **Presentation** and **Admin**) and their respective panels.
+* Publisher
+* Managing Editor
+* Copy Editor
+* Staff Writer
+* Freelancer
+* Designer
+
+The roles are primarily what this page is concerned with. Publishing roles are taken into consideration when planning a collaborative publishing architecture around the day-to-day activities of producing content (and evolving the presentation).[^users]
+
+[^users]: The [smd_user_manager](https://github.com/Bloke/smd_user_manager) and [smd_bio](https://github.com/Bloke/smd_bio) plugins can be installed and used to expand user account data and produce published bios or user profiles generated from the expanded data.
+
+### Frozen accounts
+
+Frozen accounts are those potentially having the status of 'None', meaning the accounts are preserved but the account holders are denied access to the administration side. This is useful for when collaborators that published content at one point (e.g. 'Copy Editor', 'Staff Writer') are no longer doing so; they've left the editorial team. Content from such accounts will remain safely on the public side of the website under the account names, but those users no longer have administration access to change or delete the content.
+
+## Access to panels per role type
+
+The tables in the following sections show all account types versus access to the panels and functionality, with emphasis on the six publishing roles (from 'Publisher' to 'Designer').[^access]
+
+[^access]: Use of the [smd_faux_role](https://forum.textpattern.com/viewtopic.php?id=33462&p=2) plugin allows easier visualization of what a given role can see and do in the administration side. It's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
+
+### Default panels access
+
+Default panels represent all existing panels in a fresh install of the software (Table 1).
 
 **Legend:**
 
@@ -242,7 +256,14 @@ Table 1 focuses specifically on the core (out-of-the-box) administration regions
 
 ### Extended panels access
 
-Table 2 represents the two *extended* regions - **Home** and **Extensions** - that you may see when installing certain admin-side plugins. Unlike with core regions and panels, the panels of the extended regions are generally not treated individually, rather roles are treated at the region level, which is why individual panels are not show here.[^3] A given role will either have access to the regions (thus all their panels) or won't see them all. The respective panels one might see in these regions depend on which plugins are installed that make use of them. Most likely anyone with Publisher and Managing Editor roles will see the [Extensions administration region](https://docs.textpattern.com/administration/extensions-region) eventually because so many useful admin-side plugins make use of it.
+When certain administration plugins are installed, they will use — and cause the appearance of — one or both of two extended sections in the back-end:
+
+* Home
+* Extensions
+
+These regions will appear in the navigation alongside Content, Presentation, and Admin. The administration plugin itself will add its associated functionality to a panel under these regions accordingly. The respective panels one might see in these regions depend on which plugins are installed that make use of them. 
+
+Table 2 represents the two extended regions. Unlike with default panels, the extended panels are generally not treated individually; rather, roles are treated at the section level, thus why individual panels are not show here. A given role will either have access to the regions (thus all their panels) or won't see them at all.
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
@@ -283,6 +304,10 @@ Table 2 represents the two *extended* regions - **Home** and **Extensions** - th
         </tbody>
     </table>
 </div>
+
+Most likely anyone with Publisher and Managing Editor roles will see the [Extensions administration region](https://docs.textpattern.com/administration/extensions-region) eventually because so many useful administration plugins make use of it.
+
+It is possible that a given administration plugin may introduce finer rights control, which would alter the access pattern suggested in Table 2. For example, a developer may design an administration plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a panel under Extensions, those two lower user roles will see the [Extensions region](https://docs.textpattern.com/administration/extensions-region)  and only the associated plugin’s panel.
 
 ## Limited access specifications
 
@@ -350,9 +375,3 @@ It goes without saying that when granting roles to site contributors, be sure th
 For example, the Designer role is restricted to those areas of the administration side that may play a role in presentation, including Page templates and Form templates. Such restrictions may seem sufficiently secure on the surface, but if the 'Allow PHP in pages?' preference is set to 'Yes' in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel#allow-php-in-pages) panel, then a Designer *could* use PHP in Page templates and/or Form templates in a malicious way to gain administrator-like power and cause problems. Setting the preference to 'No' would prevent such a possibility.
 
 When it comes down to it, security is a governance concern, relying just as much on smart human decisions as code lockdown. Don't give roles to people you can't trust and make sure your editorial workflows are documented so each contributor knows what's expected of them by role assignment.
-
-[^1]: The [smd_user_manager](https://github.com/Bloke/smd_user_manager) and [smd_bio](https://github.com/Bloke/smd_bio) plugins can be installed and used to expand user account data and produce published bios or user profiles generated from the expanded data.
-
-[^2]: You may also install and use the [smd_faux_role](https://forum.textpattern.com/viewtopic.php?id=33462&p=2) plugin to more easily visualize what a given role can see and do in the administration side. It's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
-
-[^3]: While these rights of access per role are indicated at the region level here, it is possible that a given plugin introduces finer rights control, which would alter the access pattern suggested in table 2 (see above). For example, a developer may design an admin-side plugin that allows a Copy Editor or Staff Writer to have limited rights to the plugin's configuration functionality. If that plugin has a panel under Extensions, then those two lower user roles will see the [Extensions administration region](https://docs.textpattern.com/administration/extensions-region) and that particular plugin panel only.
