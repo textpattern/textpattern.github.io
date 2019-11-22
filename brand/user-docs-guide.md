@@ -559,13 +559,13 @@ And remember, *always* add file extensions on file names, and *never* add inline
 
 If you need to show an entire tree, or a directory with its subdirectories expanded as well, for example:
 
-* <span class="ui-icon ui-icon-folder-collapsed">Directory:</span> parent_directory
-  * <span class="ui-icon ui-icon-folder-collapsed">Directory:</span> child_directory1
+* parent_directory
+  * child_directory1
   * . . .
-  * <span class="ui-icon ui-icon-folder-collapsed">Directory:</span> child_directory4
-    * <span class="ui-icon ui-icon-document-b">File:</span> file1.ext
-    * <span class="ui-icon ui-icon-document-b">File:</span> file2.ext 
-    * <span class="ui-icon ui-icon-document-b">File:</span> file3.ext
+  * child_directory4
+    * file1.ext
+    * file2.ext 
+    * file3.ext
   * . . .
 {: .list--tree}
 
