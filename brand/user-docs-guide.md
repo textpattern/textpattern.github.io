@@ -652,9 +652,9 @@ Custom styles are used to provide a faux header in the endnotes `div` container.
 
 ### Tables
 
-Tables are very effective at presenting tabular data and other dense sets of information suited to grid display. They also make nice presentation breaks when a page is otherwise a lot of text. But tables can be problematic if designed poorly or too wide for mobile screens.
+Tables are very effective at presenting tabular data and other dense sets of information suited to grid display. And they make nice presentation breaks when a page is otherwise a lot of regular text. But tables can be problematic if designed poorly, such as being too wide for mobile screens.
 
-Use the following guidelines with respect to tables:
+Use the following guidelines to make tables well-structured and useful:
 
 1. **HTML only**. Tables must be marked up with HTML in user docs. Ensure the markup is complete with `caption`, `thead`, `tbody`, `tfoot` (see #4), including the `div` container. Copy/paste the markup below to make it easier.
 2. **Tabular data**. Use tables as much as appropriate for tabular data sets. Avoid tables if data is mostly long strings of text (sentences, paragraphs, lists), in which case one or more [definition lists](#definition-lists) will work better.
@@ -778,7 +778,7 @@ If you want to just show the contents of a single directory, without including t
 * {: .directory} subdirectory2
 * {: .directory} subdirectory3
 * . . .
-* {: .directory} directory5
+* {: .directory} subdirectory5
 * . . .
 * {: .document} file1.ext 
 * {: .document} file2.ext
