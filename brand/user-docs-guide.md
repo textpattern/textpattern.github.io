@@ -494,13 +494,15 @@ In contrast to simple Markdown and HTML formatting using `*emphasis*`, `**strong
 For example we can use the predefined selectors for alert colours (`.success`, `.information`, `.warning`, or `.error`) to style text as:
 
 * **green**{: .success} = `**green**{: .success}`
-* **blue**{: .information} = `**blue**{: .information}`
+* **blue**{: .information} = `**blue**{: .information}` (avoid using this)
 * **yellow**{: .warning} = `**yellow**{: .warning}`
 * **red**{: .error} = `**red**{: .error}`
 
 The class selector notation only works if it has an element to apply to. The `strong` element is used in this case because it’s easily added via Markdown and, unlike `em`, it makes the colours easier to see (*for example*{: .warning}).
 
-If no predefined class is available, you can use an inline style attribute instead, like **grey**{: style="font-color:#e0e0e0;”} (i.e. `**grey**{: style="font-color:#e0e0e0;"}`).
+Either way, avoid using blue because it looks to much like a link and could be confusing.
+
+And you should avoid using the notation with an inline style attribute, even though **it is possible**{: style="font-color:purple;"} (i.e. `**it is possible**{: style="font-color:purple;"}`).
 
 ### Block-content styling
 
