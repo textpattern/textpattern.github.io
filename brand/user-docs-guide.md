@@ -590,20 +590,29 @@ This will present the nested lists as a file tree structure. The top-post parent
 If you want to just show the contents of a single directory, without including the parent directory or showing expanded subdirectories (i.e. a non-nested list), for example:
 
 * . . .
-* subdirectory2
-* subdirectory3
+* {: .directory} subdirectory2
+* {: .directory} subdirectory3
 * . . .
-* directory5
+* {: .directory} directory5
 * . . .
-* file1.ext 
-* file2.ext
+* {: .document} file1.ext 
+* {: .document} file2.ext
 * . . .
-{: .list--directory}
+{: .list--tree .flat}
 
 Use this Kramdown IAL:
 
 ```
-{: .list--directory}
+* . . .
+* {: .directory} subdirectory2
+* {: .directory} subdirectory3
+* . . .
+* {: .directory} directory5
+* . . .
+* {: .document} file1.ext 
+* {: .document} file2.ext
+* . . .
+{: .list--tree .flat}
 ```
 
 This has the same font styling as a full tree display, but there are no association lines or bullets otherwise on items.  
