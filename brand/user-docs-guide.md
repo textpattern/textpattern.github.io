@@ -327,16 +327,20 @@ OMFG, _no!_
 
 Free-text strings are any other type of text in back-end panels not already described. These strings refer to words or paragraphs outside of navigation, forms, tables, widgets, and so on. Because free text strings can be short (a few words) or long (a full paragraph) it’s most appropriate to treat them as embedded (inline) quotations or displayed (block quote) quotations, accordingly.
 
+#### Embedded use of free text
+
 An embedded quotation of short strings might look like this (links are part of the actual interface text but not functional here):
 
 At bottom of every back-end panel are two lines. One indicates the software version used, ‘[Textpattern CMS]() (v4.7.3)’, and the other provides a link back to top of the given panel, ‘[Back to top]()’.
 {: .example-text}
 
+#### Displayed use of free text
+
 When a free-text string is long enough to warrant being a displayed quotation, mark it up as a `blockquote`. Only one instance of text in the back end is long enough to warrant this markup; in the Languages panel under the panel header, the following paragraph is found:
  
 > **You can help us improve Textpattern!** We welcome additional translations (and corrections to current translations) by our user community. Please visit Textpattern language translations (opens an external link in a new window) for further details.
 
-The above block quote is the _only_ time anywhere in user documentation that a `blockquote` would be used (see explanation in [Block quotes](#block-quotes)).
+That example represents the *only* time, anywhere in user documentation, that a `blockquote` would be used (see explanation in [Block quotes](#block-quotes)).
 
 ### Paths, directories, and file names
 
@@ -418,7 +422,7 @@ Due to certain platform constraints, documentation uses a mixture of HTML, regul
 
 Before getting to those neat block-level content types, a few important words need said about formatting inline text.  
 
-### Formatting inline text
+### Inline-text formatting
 
 Table 2 shows what Markdown syntax provides for inline formatting; either emphasis (`em`), strong (`strong`), or a combination of both. There is no syntax for italic (`i`) or bold (`b`), unfortunately, which must be added with regular HTML if needed.
 
@@ -483,11 +487,21 @@ So this business with inline formatting is tricky, and why the golden rule of th
 
 The sole exception is when emphasizing a word as a part of regular text (e.g. ‘You *really* don’t want to do that.’), But this should rarely be necessary.
 
-### Block-level content and styling
+### Inline-text styling
 
-Aside from the usual Markdown to add common block-level content types (lists, blockquotes, code), Kramdown can be used to add other block level types (definition lists and notes), or to style common types to create new specific types of content (documentation examples, file tree components).
+In contrast to simple Markdown and HTML formatting using `*emphasis*`, `**strong**`, `<i>italic</i>`, and `<b>bold</b>`, Kramdown enables specific styling using its ‘[inline attributes list](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists)’ (IAL) notation.
 
-In the latter case, Kramdown’s ‘[inline attributes list](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists)’ (IAL) notation is used to apply a custom class selector. It’s done easily by placing the IAL syntax on a new line immediately under the block element to be styled, for example:
+For example we can use the predefined selectors for alert colours (`.success`, `.information`, `.warning`, or `.error`) to style text **green**{: .success}, **blue**{: .information}, **yellow**{: .warning}, and **red**{: .error}, respectively.
+
+But note that it much be **strong** in this case, or *italic*{: .information}. That’s because the Kramdown needs more than just plain text to apply the class style to, and in this case we use either strong (e.g. `**green**{: .success}`) or emphasis (e.g. `*italic*{: .information}`).
+
+If no predefined class is available, you can use an inline style attribute instead, like **purple**{: style="font-color:purple;"} (i.e. `**purple**{: style="font-color:purple;"}`).
+
+### Block-content styling
+
+Aside from the usual Markdown to add common block-level content types (lists, blockquotes, code), Kramdown can be used to add other block level types (definition lists and notes), or to style common types to create new specific types of content, such as paragraph examples or file tree lists.
+
+In the latter case, Kramdown’s ‘[inline attributes list](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists)’ (IAL) notation is used to apply one or more custom class selectors. It’s done easily by placing the IAL syntax on a new line immediately under the block element to be styled, for example:
 
 ```
 This is a paragraph styled as a hypothetical example.
@@ -508,7 +522,7 @@ Displayed quotations are only appropriate when quoted matter is too lengthy for 
 
 Block quotes are specifically not used as example boxes, or for any other miscellaneous need. Don’t be fooled by their neat orange presentation, though it grabs your attention. See options for custom content needs in the following sections, such as example blocks for offsetting example text from regular copy.
 
-Only one situation exists where using `blockquote` is appropriate, and it’s done in this page, under the [Free text strings](#free-text-strings) section. It’s used there as an opportunity to discuss it here too. In no other situation should a block quote be used, unless there’s another paragraph floating about in the software’s back end. 
+Only one situation exists where using `blockquote` is appropriate; done in this page (see [Displayed use of free text](#displayed-use-of-free-text) section. It’s used there as an opportunity to discuss it here. In no other situation in user documentation should text be marked up with `blockquote`. 
 
 [^disquotes]: <i>New Oxford Style Manual</i>, ed. Anne Waddingham (3rd edn, Oxford, 2016), p 162.
 
