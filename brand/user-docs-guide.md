@@ -560,12 +560,18 @@ And remember, *always* add file extensions on file names, and *never* add inline
 If you need to show an entire tree, or a directory with its subdirectories expanded as well, for example:
 
 * <span class="ui-icon ui-icon-folder-collapsed">Directory:</span> parent_directory
+{: .directory}
   * <span class="ui-icon ui-icon-folder-collapsed">Directory:</span> child_directory1
+  {: .directory}
   * . . .
   * <span class="ui-icon ui-icon-folder-collapsed">Directory:</span> child_directory4
+  {: .directory}
     * <span class="ui-icon ui-icon-document-b">File:</span> file1.ext
-    * <span class="ui-icon ui-icon-document-b">File:</span> file2.ext 
+    {: .document}
+    * <span class="ui-icon ui-icon-document-b">File:</span> file2.ext
+    {: .document}
     * <span class="ui-icon ui-icon-document-b">File:</span> file3.ext
+    {: .document}
   * . . .
 {: .list--tree}
 
