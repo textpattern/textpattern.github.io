@@ -498,145 +498,36 @@ For example we can use the predefined selectors for alert colours (`.success`, `
 * **yellow**{: .warning} = `**yellow**{: .warning}`
 * **red**{: .error} = `**red**{: .error}`
 
-The class selector notation only works if it has an element to apply to. The `strong` element is used in this case because it’s easily added via Markdown and, unlike `em`, it makes the colours easier to see (*for example*{: .warning}).
+The class selector notation only works if it has an element to apply to. The `strong` element is used in this case because it’s easily added via Markdown and, unlike `em`, which also works, `strong` makes the colours easier to see *in comparison*{: .warning}). Regardless of what element, though, avoid using blue (`.information`) as a font colour style; it looks too much like a link and could be confusing.
 
-Either way, avoid using blue because it looks to much like a link and could be confusing.
+### Block-level content and styling
 
-And you should avoid using the notation with an inline style attribute, even though **it is possible**{: style="font-color:#b8127f;"} (i.e. `**it is possible**{: style="font-color:#b8127f;"}`).
+A small variety of block-level elements and specialized content types are employed in documentation, and different syntaxes and/or class selectors are used:
 
-### Block-content styling
+* Markdown enables easy addition of paragraphs and (un)ordered lists. No demonstration is needed. You know them.
+* Kramdown enables easy use of [definition lists](#definition-lists) and [notes](#notes) (i.e. endnotes).
+* HTML must be used for [tables](#tables), due to a specialized wrapper requirement. 
+* Predefined class selectors, applied using Kramdown’s ‘inline attributes list’ notation,[^ial] enable turning regular paragraphs and lists into [example blocks](#example-blocks), and [file tree components](#file-tree-components).
 
-Aside from the usual Markdown to add common block-level content types (lists, blockquotes, code), Kramdown can be used to add other block level types (definition lists and notes), or to style common types to create new specific types of content, such as paragraph examples or file tree lists.
+This small set of block elements and content types is enough for Textpattern user documentation.
 
-In the latter case, Kramdown’s ‘[inline attributes list](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists)’ (IAL) notation is used to apply one or more custom class selectors. It’s done easily by placing the IAL syntax on a new line immediately under the block element to be styled, for example:
-
-```
-This is a paragraph styled as a hypothetical example.
-{:.class-name}
-```
-
-Only worry about styling block element content if such selectors are described in the following sections.[^custom]
-
-[^custom]: Avoid using Kramdown and HTML’s `style` attribute to create non-standard presentation on inline or block-level content. If you think a new style is needed, follow the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures) to propose one so a custom selector may be created for it.
+One element you will *never* use is block quotes, and that deserves and explanation.  
 
 ### Block quotes
 
-Do not use block quotes in documentation (i.e. the `blockquote` element). There is simply no need, despite how easy it is to hit the `>` key to add one via Markdown. In other Textpattern platforms (e.g. the Forum, TXP Magazine…) `blockquotes` are essential, but documentation has no need of them, and especially if used incorrectly.
+Do not use block quotes (i.e. the `blockquote` element), despite how easy it is to hit the `>` key to add one. Other platforms like Forums, blogs, and magazines use them extensively, but there is no need for block quotes in user documentation. None. Especially if used incorrectly.
 
 Block quotes are for ‘displayed quotations’ only (i.e. quotations that are not embedded inline).[^disquotes] The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
 
-Displayed quotations are only appropriate when quoted matter is too lengthy for inline use. Lengthy matter, quoted or otherwise, works against the [scope and depth objective](#scope-and-depth-of-material) for documentation; to be clear, concise, and actionable. Conversely, inline quotations, using `<q cite="">. . .</q>`, as demonstrated in the previous paragraph, are perfectly fine, as long as they’re not overused.
+Displayed quotations are only appropriate when quoted matter is too lengthy for inline use. Lengthy matter, quoted or otherwise, works against the [scope and depth objective](#scope-and-depth-of-material) for documentation to be clear, concise, and actionable. Conversely, inline quotations, using `<q cite="">. . .</q>`, as demonstrated in the previous paragraph, are perfectly fine, as long as they’re relevant and not overused.
 
-Block quotes are specifically not used as example boxes, or for any other miscellaneous need. Don’t be fooled by their neat orange presentation, though it grabs your attention. See options for custom content needs in the following sections, such as example blocks for offsetting example text from regular copy.
+Block quotes are specifically not used as example boxes, or for any other miscellaneous need. Don’t be fooled by their neat orange presentation, though it grabs your attention.
 
-Only one situation exists where using `blockquote` is appropriate; done in this page (see [Displayed use of free text](#displayed-use-of-free-text) section. It’s used there as an opportunity to discuss it here. In no other situation in user documentation should text be marked up with `blockquote`. 
+Only one situation exists where using `blockquote` is appropriate, and it’s demonstrated in this page, in the [Displayed use of free text](#displayed-use-of-free-text) section. It’s used there as an opportunity to discuss it here. In no other situation in user documentation should text be marked up with `blockquote`. 
 
 [^disquotes]: <i>New Oxford Style Manual</i>, ed. Anne Waddingham (3rd edn, Oxford, 2016), p 162.
 
 [^blockquotes]: HTML 5.2: W3C Recommendation, World Wide Consortium, 14 December 2017, [w3.org/TR/html52/grouping-content.html#the-blockquote-element](https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element), accessed 14 November 2019.
-
-### Example blocks
-
-Example blocks are paragraphs, or more rarely lists, of hypothetical text used for showing examples in documentation. The styling helps distinguish these blocks from regular text so there's no confusion for the reader. Use these whenever the example content is not code, a displayed quotation, or a file tree example (see [File tree examples](#file-tree-examples)).
-
-#### Example text
-
-Examples of regular text (i.e. paragraph blocks) should use the following Kramdown IAL:
-
-```
-Add paragraph text here.
-{: .example-text}
-```
-
-Or:
-
-```
-Add paragraph text here.
-{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #c3edfa;"}
-```
-
-This will indent the example and add a dotted blue-grey left border to distinguish the example from normal documentation copy.
-
-#### Example list
-
-Though rarely needed, if ever, a general list can be employed for example reasons, use this IAL instead:
-
-```
-* item one
-* item two
-* etc
-{: .example-list}
-```
-
-The example list styling looks like the example text styling except the bullets are changed to hyphens and positioned inside the list container, thus the need for it’s own selector. 
-
-### File-tree components
-
-Sometimes you may need to show the contents of a folder, or just a sample set of a directory's child materials. Marking it up as a regular list misses an opportunity to visually communicate what type of list it is. Nor is marking it up as a `code` block appropriate. Instead, use one of the two available class selectors described in the next sections, depending on scope of list. 
-
-And remember, *always* add file extensions on file names, and *never* add inline formatting on list items. When the tree stylings are used, the inline formatting (e.g. making paths and files italic in regular text) is unnecessary. 
-
-#### Full tree scope
-
-If you need to show an entire tree, or a directory with its subdirectories expanded as well, for example:
-
-* {: .directory--open} parent_directory
-  * {: .directory} child_directory1
-  * . . .
-  * {: .directory--open} child_directory4
-    * {: .document} file1.ext
-    * {: .document} file2.ext
-    * {: .document} file3.ext
-  * . . .
-{: .list--tree}
-
-Use this Kramdown IAL:
-
-```
-* {: .directory--open} parent_directory
-  * {: .directory} child_directory1
-  * . . .
-  * {: .directory--open} child_directory4
-    * {: .document} file1.ext
-    * {: .document} file2.ext
-    * {: .document} file3.ext
-  * . . .
-{: .list--tree}
-```
-
-This will present the nested lists as a file tree structure. The top-post parent will be indicated by a right-facing arrow, and folder association lines will replace bullets on all child items. The font size will be slightly smaller than regular text. 
-
-#### Single directory contents scope
-
-If you want to just show the contents of a single directory, without including the parent directory or showing expanded subdirectories (i.e. a non-nested list), for example:
-
-* . . .
-* {: .directory} subdirectory2
-* {: .directory} subdirectory3
-* . . .
-* {: .directory} directory5
-* . . .
-* {: .document} file1.ext 
-* {: .document} file2.ext
-* . . .
-{: .list--tree}
-
-Use this Kramdown IAL:
-
-```
-* . . .
-* {: .directory} subdirectory2
-* {: .directory} subdirectory3
-* . . .
-* {: .directory} directory5
-* . . .
-* {: .document} file1.ext 
-* {: .document} file2.ext
-* . . .
-{: .list--tree}
-```
-
-This has the same font styling as a full tree display, but there are no association lines or bullets otherwise on items.  
 
 ### Definition lists
 
@@ -677,7 +568,7 @@ Consider the following table, which is an example of the notes in effect.
             <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Mark</th>
-                <th scope="col">Entity&#x002a;</th>
+                <th scope="col">Entity<sup>&#x002a;</sup></th>
             </tr>
         </thead>
         <tbody>
@@ -702,7 +593,7 @@ Consider the following table, which is an example of the notes in effect.
                 <td><code>00a7</code></td>
             </tr>
             <tr>
-                <th scope="row">Pilcrow&#x2020;</th>
+                <th scope="row">Pilcrow<sup>&#x2020;</sup></th>
                 <td>¶</td>
                 <td><code>00b6</code></td>
             </tr>
@@ -806,4 +697,107 @@ Use the following guidelines with respect to tables:
         </tfoot>
     </table>
 </div>
-```  
+```
+
+### Example blocks
+
+Example blocks are paragraphs, or more rarely lists, of hypothetical text used for showing examples in documentation. The styling helps distinguish these blocks from regular text so there's no confusion for the reader. Use these whenever the example content is not code, a displayed quotation, or a file tree example (see [File tree examples](#file-tree-examples)).
+
+#### Example text
+
+Examples of regular text (i.e. paragraph blocks) should use the following Kramdown IAL:
+
+```
+Add paragraph text here.
+{: .example-text}
+```
+
+Or:
+
+```
+Add paragraph text here.
+{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #c3edfa;"}
+```
+
+This will indent the example and add a dotted blue-grey left border to distinguish the example from normal documentation copy.
+
+#### Example list
+
+Though rarely needed, if ever, a general list can be employed for example reasons, use this IAL instead:
+
+```
+* item one
+* item two
+* etc
+{: .example-list}
+```
+
+The example list styling looks like the example text styling except the bullets are changed to hyphens and positioned inside the list container, thus the need for it’s own selector. 
+
+### File-tree components
+
+Sometimes you may need to show the contents of a folder, or just a sample set of a directory's child materials. Marking it up as a regular list misses an opportunity to visually communicate what type of list it is. Nor is marking it up as a `code` block appropriate. Instead, use one of the two available class selectors described in the next sections, depending on scope of list. 
+
+And remember, *always* add file extensions on file names, and *never* add inline formatting on list items. When the tree stylings are used, the inline formatting (e.g. making paths and files italic in regular text) is unnecessary. 
+
+#### Full tree scope
+
+If you need to show an entire tree, or a directory with its subdirectories expanded as well, for example:
+
+* {: .directory--open} parent_directory
+  * {: .directory} child_directory1
+  * . . .
+  * {: .directory--open} child_directory4
+    * {: .document} file1.ext
+    * {: .document} file2.ext
+    * {: .document} file3.ext
+  * . . .
+{: .list--tree}
+
+Use this Kramdown IAL:
+
+```
+* {: .directory--open} parent_directory
+  * {: .directory} child_directory1
+  * . . .
+  * {: .directory--open} child_directory4
+    * {: .document} file1.ext
+    * {: .document} file2.ext
+    * {: .document} file3.ext
+  * . . .
+{: .list--tree}
+```
+
+This will present the nested lists as a file tree structure. The top-post parent will be indicated by a right-facing arrow, and folder association lines will replace bullets on all child items. The font size will be slightly smaller than regular text. 
+
+#### Single directory scope
+
+If you want to just show the contents of a single directory, without including the parent directory or showing expanded subdirectories (i.e. a non-nested list), for example:
+
+* . . .
+* {: .directory} subdirectory2
+* {: .directory} subdirectory3
+* . . .
+* {: .directory} directory5
+* . . .
+* {: .document} file1.ext 
+* {: .document} file2.ext
+* . . .
+{: .list--tree}
+
+Use this Kramdown IAL:
+
+```
+* . . .
+* {: .directory} subdirectory2
+* {: .directory} subdirectory3
+* . . .
+* {: .directory} directory5
+* . . .
+* {: .document} file1.ext 
+* {: .document} file2.ext
+* . . .
+{: .list--tree}
+```
+
+This has the same font styling as a full tree display, but there are no association lines or bullets otherwise on items.
