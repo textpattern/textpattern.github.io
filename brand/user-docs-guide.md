@@ -293,7 +293,7 @@ Alert messages appear to software users as feedback dialogue in the Diagnostics 
         <tfoot>
             <tr>
                 <td colspan="3">
-                    <ol class="list--no-bullets">
+                    <ol class="list--refmarks">
                         <li>Each alert uses two class selectors: a common one (<code>.alert-block</code>), plus the unique one shown in table.</li>
                     </ol>
                 </td>
@@ -462,7 +462,7 @@ Table 2 shows what Markdown syntax provides for inline formatting; either emphas
         <tfoot>
             <tr>
                 <td colspan="4">
-                    <ol class="list--no-bullets">
+                    <ol class="list--refmarks">
                         <li>This isn’t Textile, and never will be on GitHub.</li>
                     </ol>
                 </td>
@@ -685,7 +685,7 @@ Consider the following table, which is an example of the notes in effect.
         <tfoot>
             <tr>
                 <td colspan="3">
-                    <ol class="list--no-bullets">
+                    <ol class="list--refmarks">
                         <li>Unicode values for character glyphs. These can be used as ASCII characters by prefixing values with <code>&#x</code> and adding a <code>;</code> at the end.</li>
                         <li>Also known as the ‘paragraph sign’ in layman’s terms.</li>
                         <li>And so on.</li>
@@ -766,7 +766,7 @@ Use the following guidelines with respect to tables:
         <tfoot>
             <tr>
                 <td colspan="3">
-                    <ol class="list--no-bullets">
+                    <ol class="list--refmarks">
                         <li>note item</li>
                         <li>note item</li>
                         <li>note item</li>
