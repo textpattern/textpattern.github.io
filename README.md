@@ -28,7 +28,6 @@ Proceed as follows:
    2. If no issue already exists for the page, open a new one using the [Discuss existing page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=discuss-existing-page.md&title=page%3A+) template.
 3. When clear how to best make revisions, go to the page in the documentation tree, organized in subdirectories, and likely at one of the following: [*administration*](https://github.com/textpattern/textpattern.github.io/tree/master/administration), [*development*](https://github.com/textpattern/textpattern.github.io/tree/master/development), [*faqs*](https://github.com/textpattern/textpattern.github.io/tree/master/faqs), [*tags*](https://github.com/textpattern/textpattern.github.io/tree/master/tags), or [*themes*](https://github.com/textpattern/textpattern.github.io/tree/master/themes). (The [*brand*](https://github.com/textpattern/textpattern.github.io/tree/master/brand) directory is for editors only.)
 4. Click the pencil icon at top-right of the document (the hover text will read, ‘Edit this file’). You’ll then be in document edit mode.
-5. Make your revisions using Markdown, except where HTML is required (e.g. working with [tables](https://docs.textpattern.com/brand/user-documentation-guidelines#tables)).
-6. Hit the **Commit changes** button when finished.
-
-Step six will initiate a pull request. A member of the documentation team will then review your request and act accordingly, and probably favourably if you followed through with steps 2 and 3.
+5. Make your revisions. Ensure you’re following conventions for [strings formatting](https://docs.textpattern.com/brand/user-docs-guide#formatting-interface-strings) and [marking up pre-defined content](https://docs.textpattern.com/brand/user-docs-guide#markup-and-styling) elements.
+6. Hit the **Commit changes** button when finished. This will initiate a pull request. Your request will be reviewed (and likely merged if you followed steps 2 and 3) by a repository owner.
+7. Check your changes in the front-end of the document to ensure any formatting or styles used were applied correctly.
