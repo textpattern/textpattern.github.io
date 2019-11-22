@@ -304,7 +304,7 @@ Alert messages appear to software users as feedback dialogue in the Diagnostics 
 
 Use Kramdown’s [block element styling](#block-element-styling) syntax on a paragraph to apply the needed selectors, for example:
 
-``` markdown
+```
 Success alert.
 {: .alert-block .success}
 ```
@@ -396,7 +396,7 @@ That said, there’s a point where too much linking can be distracting, so don�
 
 Cross-links between documentation pages should use Markdown  link syntax and absolute URLs:
 
-``` markdown
+```
 [link text](https://docs.textpattern.com/directory/page-title)
 ```
 
@@ -406,7 +406,7 @@ Anchor links are links within a given page, pointing from one section location t
 
 The links are relative links, and ideally applied at the ends of relevant paragraphs as a parenthetical with the following simple pattern:
 
-``` markdown
+```
 . . . end of paragraph. (See [Target section](#target-section) section.)
 ```
 
@@ -489,7 +489,7 @@ Aside from the usual Markdown to add common block-level content types (lists, bl
 
 In the latter case, Kramdown’s ‘[inline attributes list](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists)’ (IAL) notation is used to apply a custom class selector. It’s done easily by placing the IAL syntax on a new line immediately under the block element to be styled, for example:
 
-``` markdown
+```
 This is a paragraph styled as a hypothetical example.
 {:.class-name}
 ```
@@ -522,14 +522,14 @@ Example blocks are paragraphs, or more rarely lists, of hypothetical text used f
 
 Examples of regular text (i.e. paragraph blocks) should use the following Kramdown IAL:
 
-``` markdown
+```
 Add paragraph text here.
 {: .example-text}
 ```
 
 Or:
 
-``` markdown
+```
 Add paragraph text here.
 {: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #c3edfa;"}
 ```
@@ -540,7 +540,7 @@ This will indent the example and add a dotted blue-grey left border to distingui
 
 Though rarely needed, if ever, a general list can be employed for example reasons, use this IAL instead:
 
-``` markdown
+```
 * item one
 * item two
 * etc
@@ -571,7 +571,7 @@ If you need to show an entire tree, or a directory with its subdirectories expan
 
 Use this Kramdown IAL:
 
-``` markdown
+```
 * {: .directory--open} parent_directory
   * {: .directory} child_directory1
   * . . .
@@ -602,7 +602,7 @@ If you want to just show the contents of a single directory, without including t
 
 Use this Kramdown IAL:
 
-``` markdown
+```
 {: .list--directory}
 ```
 
@@ -612,7 +612,7 @@ This has the same font styling as a full tree display, but there are no associat
 
 Definition lists are added using regular Kramdown; no custom selector is need:
 
-``` markdown
+```
 Definition title
 : Definition data
 ```
@@ -717,7 +717,7 @@ Notes are employed using Kramdown.[^notes] A note marker is first added to the e
 
 Then, at the bottom of that section (i.e. just before the next document header), add the corresponding note, which begins with the same marker notation plus a colon `:`, for example:
 
-``` markdown
+```
 [^marker]: Start of corresponding note . . .
 ```
 
