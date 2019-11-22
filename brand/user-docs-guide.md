@@ -489,7 +489,7 @@ The sole exception is when emphasizing a word as a part of regular text (e.g. �
 
 ### Inline-text styling
 
-In contrast to simple Markdown and HTML formatting using `*emphasis*`, `**strong**`, `<i>italic</i>`, and `<b>bold</b>`, Kramdown enables specific styling using its ‘[inline attributes list](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists)’ (IAL) notation.
+In contrast to simple [inline-text formatting](#inline-text-formatting), Kramdown enables specific styling using its ‘[inline attributes list](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists)’ (IAL) notation.
 
 For example we can use the predefined selectors for alert colours (`.success`, `.information`, `.warning`, or `.error`) to style text as:
 
@@ -502,7 +502,7 @@ The class selector notation only works if it has an element to apply to. The `st
 
 Either way, avoid using blue because it looks to much like a link and could be confusing.
 
-And you should avoid using the notation with an inline style attribute, even though **it is possible**{: style="font-color:purple;"} (i.e. `**it is possible**{: style="font-color:purple;"}`).
+And you should avoid using the notation with an inline style attribute, even though **it is possible**{: style="font-color:#b8127f;"} (i.e. `**it is possible**{: style="font-color:#b8127f;"}`).
 
 ### Block-content styling
 
