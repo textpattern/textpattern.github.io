@@ -491,11 +491,16 @@ The sole exception is when emphasizing a word as a part of regular text (e.g. �
 
 In contrast to simple Markdown and HTML formatting using `*emphasis*`, `**strong**`, `<i>italic</i>`, and `<b>bold</b>`, Kramdown enables specific styling using its ‘[inline attributes list](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists)’ (IAL) notation.
 
-For example we can use the predefined selectors for alert colours (`.success`, `.information`, `.warning`, or `.error`) to style text **green**{: .success}, **blue**{: .information}, **yellow**{: .warning}, and **red**{: .error}, respectively.
+For example we can use the predefined selectors for alert colours (`.success`, `.information`, `.warning`, or `.error`) to style text as:
 
-But note that it much be **strong** in this case, or *italic*{: .information}. That’s because the Kramdown needs more than just plain text to apply the class style to, and in this case we use either strong (e.g. `**green**{: .success}`) or emphasis (e.g. `*italic*{: .information}`).
+* **green**{: .success} = `**green**{: .success}`
+* **blue**{: .information} = `**blue**{: .information}`
+* **yellow**{: .warning} = `**yellow**{: .warning}`
+* **red**{: .error} = `**red**{: .error}`
 
-If no predefined class is available, you can use an inline style attribute instead, like **purple**{: style="font-color:purple;"} (i.e. `**purple**{: style="font-color:purple;"}`).
+The class selector notation only works if it has an element to apply to. The `strong` element is used in this case because it’s easily added via Markdown and, unlike `em`, it makes the colours easier to see (*for example*{: .warning}).
+
+If no predefined class is available, you can use an inline style attribute instead, like **grey**{: style="font-color:#e0e0e0;”} (i.e. `**grey**{: style="font-color:#e0e0e0;"}`).
 
 ### Block-content styling
 
