@@ -572,6 +572,14 @@ If you need to show an entire tree, or a directory with its subdirectories expan
 Use this Kramdown IAL:
 
 ``` markdown
+* {: .directory--open} parent_directory
+  * {: .directory} child_directory1
+  * . . .
+  * {: .directory--open} child_directory4
+    * {: .document} file1.ext
+    * {: .document} file2.ext
+    * {: .document} file3.ext
+  * . . .
 {: .list--tree}
 ```
 
