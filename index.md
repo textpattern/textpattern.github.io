@@ -33,8 +33,9 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 ### Site administration
 {: .index-docs-admin}
 
-* [Textpattern administration](https://docs.textpattern.com/administration/) (back-end structure and functionality)
-* [Administration fast-track](https://docs.textpattern.com/administration/admin-fast-track) (workflow insights to get up to speed quick)
+* [Administration fast-track](https://docs.textpattern.com/administration/admin-fast-track) (workflow insights to get up to speed quickly)
+* [Textpattern administration](https://docs.textpattern.com/administration/) (explanations of principle functionality)
+* [User roles and privileges](https://docs.textpattern.com/administration/#user-roles-and-privileges) (default publishing roles and associated panel access rights)
 * [Textpattern security](https://docs.textpattern.com/administration/security) (read before you worry or hack the core)
 {: .list--no-bullets}
 
