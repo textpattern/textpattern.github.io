@@ -598,7 +598,7 @@ If you want to just show the contents of a single directory, without including t
 * {: .document} file1.ext 
 * {: .document} file2.ext
 * . . .
-{: .list--tree .flat}
+{: .list--tree}
 
 Use this Kramdown IAL:
 
@@ -612,7 +612,7 @@ Use this Kramdown IAL:
 * {: .document} file1.ext 
 * {: .document} file2.ext
 * . . .
-{: .list--tree .flat}
+{: .list--tree}
 ```
 
 This has the same font styling as a full tree display, but there are no association lines or bullets otherwise on items.  
