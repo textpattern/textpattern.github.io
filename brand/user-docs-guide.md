@@ -707,10 +707,10 @@ Use these when block code, [displayed quotations](#displayed-quotations), or [fi
 
 #### Example text
 
-Examples of text (words, sentences, or paragraphs) are styled using the selector, `.example--text`, and appear as follows:
+Examples of text (words, sentences, or paragraphs) are styled using the selector, `.example--text`, and are distinguished from regular text by the light-blue, left border and the lighter tone of font colour:
 
-This is an example paragraph for demonstration purposes. Notice the styling that sets it apart from regular block-level copy.
-{: style="font-color:#444; margin-left:0; padding:.5em 0 .5em .5em; border-left:4px solid #c3edfa;"}
+An example paragraph for demonstration purposes. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{: style="color:#888; margin-left:0; padding:.5em 0 .5em .5em; border-left:4px solid #c3edfa;"}
 
 Add the selector using Kramdown notation on a new line directly under the example paragraph.
 
@@ -721,12 +721,12 @@ The example paragraph text here.
 
 #### Example list
 
-Less frequently needed are example lists, using the selector, ‘.example--text`. Example list styling looks like example text styling except list style types are changed to hyphens and positioned inside the list container, thus the need for a unique selector:
+Less frequently needed are example lists, and these have their own selector, `.example--list`. Example list styling looks like example text styling plus list style types are changed to circles and positioned inside the list container, thus the need for a unique selector:
 
 * item one
 * item two
 * etc
-{: style="font-color:#444; margin-left:0; padding:.5em 0 .5em .5em; border-left:4px solid #c3edfa; list-style:circle inside;"}
+{: style="color:#888; margin-left:0; padding:.5em 0 .5em .5em; border-left:4px solid #c3edfa; list-style:circle inside;"}
 
 As before, simply add the notation on a new line directly under  the list block:
 
@@ -739,68 +739,75 @@ As before, simply add the notation on a new line directly under  the list block:
 
 ### File-tree components
 
-Sometimes you may need to show the contents of a folder, or just a sample set of a directory's child materials. Marking it up as a regular list misses an opportunity to visually communicate what type of list it is. Nor is marking it up as a `code` block appropriate. Instead, use one of the two available class selectors described in the next sections, depending on scope of list. 
+There may be times you want to show the contents of a directory, or more of the package tree itself. Marking up content like this as `code` is inappropriate. And when marked up as regular lists, it’s hard to know for sure how to format the lists or their child items. And regular lists are a lost opportunity to add distinction.
 
-And remember, *always* add file extensions on file names, and *never* add inline formatting on list items. When the tree stylings are used, the inline formatting (e.g. making paths and files italic in regular text) is unnecessary. 
+You now can style such lists using specific selectors:
+
+* `{:.directory--open}` on parent directories
+* `{:.directory}` on child directories
+* `{:.document}` on files
+* `{:.list--tree}` for the list block
+
+These selectors are demonstrated in the next two sections for the two kinds of file-tree examples you may want to show.
+
+Remember: *always* add file extensions on file names, and *never* add inline formatting on list items when items are not a mix of text types.  
 
 #### Full tree scope
 
-If you need to show an entire tree, or a directory with its subdirectories expanded as well, for example:
+File tree scope implies showing one or more open directories and all or some of their child items, for example:
 
-* {: .directory--open} parent_directory
-  * {: .directory} child_directory1
+* {:.directory--open} parent_directory
+  * {:.directory} child_directory1
   * . . .
-  * {: .directory--open} child_directory4
-    * {: .document} file1.ext
-    * {: .document} file2.ext
-    * {: .document} file3.ext
+  * {:.directory--open} child_directory4
+    * {:.document} file1.ext
+    * {:.document} file2.ext
+    * {:.document} file3.ext
   * . . .
-{: .list--tree}
+{:.list--tree}
 
-Use this Kramdown IAL:
+Using the selectors provided for this type of content, apply them using Kramdown’s inline attributes notation like this:
 
 ```
-* {: .directory--open} parent_directory
-  * {: .directory} child_directory1
+* {:.directory--open} parent_directory
+  * {:.directory} child_directory1
   * . . .
-  * {: .directory--open} child_directory4
-    * {: .document} file1.ext
-    * {: .document} file2.ext
-    * {: .document} file3.ext
+  * {:.directory--open} child_directory4
+    * {:.document} file1.ext
+    * {:.document} file2.ext
+    * {:.document} file3.ext
   * . . .
-{: .list--tree}
+{:.list--tree}
 ```
 
-This will present the nested lists as a file tree structure. The top-post parent will be indicated by a right-facing arrow, and folder association lines will replace bullets on all child items. The font size will be slightly smaller than regular text. 
+Again, make sure file names include their type extensions, and do not add formatting inline. 
 
 #### Single directory scope
 
-If you want to just show the contents of a single directory, without including the parent directory or showing expanded subdirectories (i.e. a non-nested list), for example:
+Single directory scope implies all or some of the contents of one directory only. While you could include the parent directory at the top, as demonstrated in the previous example, it’s easier to exclude it in this case to avoid needing a nested list, thus the parent-child relationship lines are dropped as well:
 
 * . . .
-* {: .directory} subdirectory2
-* {: .directory} subdirectory3
+* {:.directory} subdirectory2
+* {:.directory} subdirectory3
 * . . .
-* {: .directory} subdirectory5
+* {:.directory} subdirectory5
 * . . .
-* {: .document} file1.ext 
-* {: .document} file2.ext
+* {:.document} file1.ext 
+* {:.document} file2.ext
 * . . .
-{: .list--tree}
+{:.list--tree}
 
-Use this Kramdown IAL:
+The code to copy and modify is:
 
 ```
 * . . .
-* {: .directory} subdirectory2
-* {: .directory} subdirectory3
+* {:.directory} subdirectory2
+* {:.directory} subdirectory3
 * . . .
-* {: .directory} directory5
+* {:.directory} subdirectory5
 * . . .
-* {: .document} file1.ext 
-* {: .document} file2.ext
+* {:.document} file1.ext 
+* {:.document} file2.ext
 * . . .
 {: .list--tree}
 ```
-
-This has the same font styling as a full tree display, but there are no association lines or bullets otherwise on items.
