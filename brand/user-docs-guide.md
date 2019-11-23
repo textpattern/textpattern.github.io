@@ -723,10 +723,10 @@ The example paragraph text here.
 
 Less frequently needed are example lists, using the selector, ‘.example--text`. Example list styling looks like example text styling except list style types are changed to hyphens and positioned inside the list container, thus the need for a unique selector:
 
-* {. style="list-style-position:inside; list-style-type:'-'"} item one
-* {. style="list-style-position:inside; list-style-type:'-'"} item two
-* {. style="list-style-position:inside; list-style-type:'-'"} etc
-{. style="margin-left:3%; padding-left:.5em; border-left:3px dotted #c3edfa;"}
+* item one
+* item two
+* etc
+{. style="margin-left:3%; padding-left:.5em; border-left:3px dotted #c3edfa; list-style:circle inside;"}
 
 As before, simply add the notation on a new line directly under  the list block:
 
