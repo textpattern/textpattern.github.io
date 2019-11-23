@@ -726,7 +726,7 @@ Less frequently needed are example lists, using the selector, ‘.example--text`
 * item one
 * item two
 * etc
-{. style="margin-left:3%; padding-left:.5em; border-left:2px dotted #c3edfa; list-style-type:'-'; list-style-position:inside;"}
+{. style="margin-left:3%; padding-left:.5em; border-left:2px dotted #c3edfa; list-style-position:inside;"}
 
 As before, simply add the notation on a new line directly under  the list block:
 
