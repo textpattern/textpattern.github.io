@@ -323,20 +323,38 @@ OMFG, _no!_
 
 Free-text strings are any other type of text in back-end panels not already described. These strings refer to words or paragraphs outside of navigation, forms, tables, widgets, and so on. Because free text strings can be short (a few words) or long (a full paragraph) it’s most appropriate to treat them as embedded (inline) quotations or displayed (block quote) quotations, accordingly.
 
-#### Embedded use of free text
+#### Embedded quotations
 
-An embedded quotation of short strings might look like this (links are part of the actual interface text but not functional here):
+Embedded quotations are short strings of text from another source quoted inline. *Short* being the key word, because the strings are not long enough to warrant being [displayed quotations](#displayed-quotations).
 
-At bottom of every back-end panel are two lines. One indicates the software version used, ‘[Textpattern CMS]() (v4.7.3)’, and the other provides a link back to top of the given panel, ‘[Back to top]()’.
+A few such strings are scattered around the administration side of the software. Following is a hypothetical documentation example that points out two such strings (links are part of the actual interface strings but not functional here):
+
+At bottom of every back-end panel are two short strings. One informs you of the software version used: <q>[Textpattern CMS]() (v4.7.3)</q>. The other provides a link to the top of the panel: <q>[Back to top]()</q>.
 {: .example-text}
 
-#### Displayed use of free text
+It’s appropriate to mark up the embedded quotations using a `q` element, which adds the quotation marks automatically, for example:
 
-When a free-text string is long enough to warrant being a displayed quotation, mark it up as a `blockquote`. Only one instance of text in the back end is long enough to warrant this markup; in the Languages panel under the panel header, the following paragraph is found:
+```
+<q>Textpattern CMS (v4.7.3)</q>
+```
+
+Do not bother adding a `cite` attribute to the `q` element when  quoting short, free-text strings because every back-end panel includes the strings. Pointing to one panel in particular is needlessly arbitrary. A `cite` element would be appropriate, however, if using an embedded quotation for any other reason, like used in the next paragraph to cite the W3C.
+
+#### Displayed quotations
+
+When, and only when, a free-text string is long enough to warrant being a ‘displayed quotation’ (i.e. quotations that are not embedded inline).[^disquotes], mark it up as a block quote using a `blockquote` element via Markdown’s `>` notation). The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
+
+There’s only one instance of a free-text string in the back-end interface that’s long enough to warrant this markup. It’s a paragraph in the [Languages panel](https://docs.textpattern.com/administration/languages-panel), under the panel header, and reads:
  
 > **You can help us improve Textpattern!** We welcome additional translations (and corrections to current translations) by our user community. Please visit Textpattern language translations (opens an external link in a new window) for further details.
 
-That example represents the *only* time, anywhere in user documentation, that a `blockquote` would be used (see explanation in [Block quotes](#block-quotes)).
+Right here, right now, is the only time that paragraph ever needs quoted in user documentation, and it’s only done so to demonstrate what you will never have to use, a `blockquote`. Other platforms like Forums, blogs, and magazines use them extensively, but block quotes are not necessary in Textpattern user documentation, and especially if used incorrectly.
+
+For example, block quotes are *never* used as example boxes, note boxes, or any other miscellaneous excuse for making text stand apart from regular copy. Don’t be fooled by their neat orange presentation, though it grabs your attention.
+
+[^disquotes]: <i>New Oxford Style Manual</i>, ed. Anne Waddingham (3rd edn, Oxford, 2016), p 162.
+
+[^blockquotes]: HTML 5.2: W3C Recommendation, World Wide Consortium, 14 December 2017, [w3.org/TR/html52/grouping-content.html#the-blockquote-element](https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element), accessed 14 November 2019.
 
 ### Paths, directories, and file names
 
@@ -507,23 +525,7 @@ A small variety of block-level elements and specialized content types are employ
 
 This small set of block elements and content types is enough for Textpattern user documentation.
 
-One element you will *never* use is block quotes, and that deserves and explanation.  
-
-### Block quotes
-
-Do not use block quotes (i.e. the `blockquote` element), despite how easy it is to hit the `>` key to add one. Other platforms like Forums, blogs, and magazines use them extensively, but there is no need for block quotes in user documentation. None. Especially if used incorrectly.
-
-Block quotes are for ‘displayed quotations’ only (i.e. quotations that are not embedded inline).[^disquotes] The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
-
-Displayed quotations are only appropriate when quoted matter is too lengthy for inline use. Lengthy matter, quoted or otherwise, works against the [scope and depth objective](#scope-and-depth-of-material) for documentation to be clear, concise, and actionable. Conversely, inline quotations, using `<q cite="">. . .</q>`, as demonstrated in the previous paragraph, are perfectly fine, as long as they’re relevant and not overused.
-
-Block quotes are specifically not used as example boxes, or for any other miscellaneous need. Don’t be fooled by their neat orange presentation, though it grabs your attention.
-
-Only one situation exists where using `blockquote` is appropriate, and it’s demonstrated in this page, in the [Displayed use of free text](#displayed-use-of-free-text) section. It’s used there as an opportunity to discuss it here. In no other situation in user documentation should text be marked up with `blockquote`. 
-
-[^disquotes]: <i>New Oxford Style Manual</i>, ed. Anne Waddingham (3rd edn, Oxford, 2016), p 162.
-
-[^blockquotes]: HTML 5.2: W3C Recommendation, World Wide Consortium, 14 December 2017, [w3.org/TR/html52/grouping-content.html#the-blockquote-element](https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element), accessed 14 November 2019.
+One element you will rarely to *never* use is [displayed quotations](#displayed-quotations) (i.e. block quotes using `blockquote`).
 
 ### Definition lists
 
