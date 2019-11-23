@@ -452,7 +452,7 @@ Table 2 shows what Markdown syntax provides for inline formatting; either emphas
             </tr>
             <tr>
                 <th scope="row">Bold</th>
-                <td>None&#x002a;</td>
+                <td>None</td>
                 <td><code>b</code></td>
                 <td><b>Bold</b></td>
             </tr>
@@ -596,15 +596,15 @@ Consider the following table, which is an example of the notes in effect.
             <tr>
                 <th scope="row">Double Vertical Line</th>
                 <td>‖</td>
-                <td><code>2016</code>&#x2021;</td>
+                <td><code>2016</code><sup>&#x2021;</sup></td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <td colspan="3">
                     <ol class="list--refmarks">
-                        <li>Unicode values for character glyphs. These can be used as ASCII characters by prefixing values with <code>&#x</code> and adding a <code>;</code> at the end.</li>
-                        <li>Also known as the ‘paragraph sign’ in layman’s terms.</li>
+                        <li>Unicode entities may be used as ASCII characters by prefixing values with <code>&#x</code> and adding a <code>;</code> at the end.</li>
+                        <li>Known as the ‘paragraph sign’ in layman’s terms.</li>
                         <li>And so on.</li>
                     </ol>
                 </td>
