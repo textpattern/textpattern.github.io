@@ -261,7 +261,7 @@ Alert messages appear to software users as feedback dialogue in the Diagnostics 
             <tr>
                 <th scope="col">Alert type</th>
                 <th scope="col">Color</th>
-                <th scope="col">Selectors&#x002a;</th>
+                <th scope="col">Selectors<sup>&#x002a;</sup></th>
             </tr>
         </thead>
         <tbody>
@@ -414,9 +414,7 @@ The consistent placement and parenthetical pattern of anchor links makes them cl
 
 ## Markup and styling
 
-Due to certain platform constraints, documentation uses a mixture of HTML, regular Markdown, and Kramdown, depending on what you need. Markdown is used to add the usual content types (lists, blockquotes, code). Kramdown is used to add and/or style specific block-level content types (definition lists, notes, example, file trees). HTML is used solely to add [tables](#tables).
-
-Before getting to those neat block-level content types, a few important words need said about formatting inline text.  
+Due to certain platform constraints and necessities, documentation uses a mixture of Markdown, Kramdown, and regular HTML, depending on what you need.  
 
 ### Inline-text formatting
 
@@ -448,7 +446,7 @@ Table 2 shows what Markdown syntax provides for inline formatting; either emphas
             </tr>
             <tr>
                 <th scope="row">Italic</th>
-                <td>None&#x002a;</td>
+                <td>None<sup>&#x002a;</sup></td>
                 <td><code>i</code></td>
                 <td><i>Italic</i></td>
             </tr>
@@ -485,7 +483,7 @@ The sole exception is when emphasizing a word as a part of regular text (e.g. �
 
 ### Inline-text styling
 
-In contrast to simple [inline-text formatting](#inline-text-formatting), Kramdown enables specific styling using its ‘[inline attributes list](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists)’ (IAL) notation.
+In contrast to simple [inline-text formatting](#inline-text-formatting), Kramdown enables specific styling using its ‘inline attributes list’ (IAL) notation.[^ial]
 
 For example we can use the predefined selectors for alert colours (`.success`, `.information`, `.warning`, or `.error`) to style text as:
 
@@ -494,7 +492,9 @@ For example we can use the predefined selectors for alert colours (`.success`, `
 * **yellow**{: .warning} = `**yellow**{: .warning}`
 * **red**{: .error} = `**red**{: .error}`
 
-The class selector notation only works if it has an element to apply to. The `strong` element is used in this case because it’s easily added via Markdown and, unlike `em`, which also works, `strong` makes the colours easier to see *in comparison*{: .warning}). Regardless of what element, though, avoid using blue (`.information`) as a font colour style; it looks too much like a link and could be confusing.
+The IAL notation only works if it has an element to apply to. In this case the `strong` element is used because it’s easily added with Markdown and makes the colours **stand out more**{: .warning}, *compared to emphasis*{: .warning}. Regardless of what format, though, avoid using blue (`.information`); it looks too much like a link and could be confusing.
+
+[^ial]: https://kramdown.gettalong.org/syntax.html#inline-attribute-lists
 
 ### Block-level content and styling
 
@@ -503,7 +503,7 @@ A small variety of block-level elements and specialized content types are employ
 * Markdown enables easy addition of paragraphs and (un)ordered lists. No demonstration is needed. You know them.
 * Kramdown enables easy use of [definition lists](#definition-lists) and [notes](#notes) (i.e. endnotes).
 * HTML must be used for [tables](#tables), due to a specialized wrapper requirement. 
-* Predefined class selectors, applied using Kramdown’s ‘inline attributes list’ notation,[^ial] enable turning regular paragraphs and lists into [example blocks](#example-blocks), and [file tree components](#file-tree-components).
+* Predefined class selectors, applied using Kramdown’s ‘inline attributes list’ notation, enable turning regular paragraphs and lists into [example blocks](#example-blocks), and [file tree components](#file-tree-components).
 
 This small set of block elements and content types is enough for Textpattern user documentation.
 
