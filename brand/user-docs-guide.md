@@ -572,32 +572,32 @@ Consider the following table, which is an example of the notes in effect.
         <tbody>
             <tr>
                 <th scope="row">Asterisk</th>
-                <td>*</td>
+                <td>&#x002a;</td>
                 <td><code>002a</code></td>
             </tr>
             <tr>
                 <th scope="row">Dagger</th>
-                <td>†</td>
+                <td>&#x2020;</td>
                 <td><code>2020</code></td>
             </tr>
             <tr>
                 <th scope="row">Double Dagger</th>
-                <td>‡</td>
+                <td>&#x2021;</td>
                 <td><code>2021</code></td>
             </tr>
             <tr>
                 <th scope="row">Section Sign</th>
-                <td>§</td>
+                <td>&#x00a7;</td>
                 <td><code>00a7</code></td>
             </tr>
             <tr>
                 <th scope="row">Pilcrow<sup>&#x2020;</sup></th>
-                <td>¶</td>
+                <td>&#x00b6;</td>
                 <td><code>00b6</code></td>
             </tr>
             <tr>
                 <th scope="row">Double Vertical Line</th>
-                <td>‖</td>
+                <td>&#x2016;</td>
                 <td><code>2016</code><sup>&#x2021;</sup></td>
             </tr>
         </tbody>
@@ -657,7 +657,7 @@ Use the following guidelines to make tables well-structured and useful:
 1. **HTML only**. Tables must be marked up with HTML in user docs. Ensure the markup is complete with `caption`, `thead`, `tbody`, `tfoot` (see #4), including the `div` container. Copy/paste the markup below to make it easier.
 2. **Tabular data**. Use tables as much as appropriate for tabular data sets. Avoid tables if data is mostly long strings of text (sentences, paragraphs, lists), in which case one or more [definition lists](#definition-lists) will work better.
 3. **Captions**. Unlike figure captions, which function more like descriptions, a table’s `caption` is really its title. Use it to number and title tables (e.g. ‘Table 1. Caption of table.’, ‘Table 2. Caption of table.’, and so on) even if only one table is used. This makes it easy to refer to tables in the main text.
-4. **Notes**. Table notes are optional (see [Notes in tables](#notes-in-tables)), but can help convey meaning and understanding from table headers and data. If notes are not needed, or a table footer at all, remove the `tfoot` region.
+4. **Notes**. Table notes are optional (see [Notes in tables](#notes-in-tables)), but can help convey meaning and understanding from table headers and data. If notes are not needed, or a table footer at all, remove the entire `tfoot` region and ensure the three example reference marks in the HTML below (added as `sup` elements) are removed from table cells.
 
 ``` html
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
@@ -666,29 +666,29 @@ Use the following guidelines to make tables well-structured and useful:
         <thead>
             <tr>
                 <th scope="col">Header</th>
-                <th scope="col">Header</th>
+                <th scope="col">Header<sup>&#x002a;</sup></th>
                 <th scope="col">Header</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row">data</th>
+                <th scope="row">data<sup>&#x2020;</sup></th>
                 <td>data</td>
                 <td>data</td>
             </tr>
             <tr>
                 <th scope="row">data</th>
                 <td>data</td>
-                <td>data</td>
+                <td>data<sup>&#x2021;</sup></td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <td colspan="3">
                     <ol class="list--refmarks">
-                        <li>note item</li>
-                        <li>note item</li>
-                        <li>note item</li>
+                        <li>Example notes list</li>
+                        <li>Remove the list if not needed</li>
+                        <li>And remove the <code>sup</code> marks from table cells</li>
                     </ol>
                 </td>
             </tr>
