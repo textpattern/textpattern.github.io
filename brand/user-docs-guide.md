@@ -646,7 +646,7 @@ Having notes spread out through the document this way might seem strange at firs
 
 Custom styles are used to provide a faux header in the endnotes `div` container. This provides proper visual heading of the back matter section, while keeping it out of the contents list (a.k.a. table of contents) that automatically targets `h2` through `h4` headers.
 
-[^notes]: Many markup languages, like Markdown, Kramdown, Textile, and so on, call their notes functionality ‘footnotes’. But that’s incorrect, a misnomer, because footnotes are not what these extensions actually create. ‘Footnotes’ are a specific type of notes positioned in immediate visual context of their inline reference markers on printed pages having set dimensions (or digital formats that mimic the set page dimensions of print media). A reader should not have to flip pages by finger or thumb-swipe, or jump long distances by link or scrollbar, to read footnotes; otherwise, they are not really footnotes. When notes all come at the end of a publication in a single list, whether print or web publication, they are called ‘endnotes’, and every English style manual that matters, including *Oxford* and *Chicago*, will say so. The *foot-* and *end-* prefixes merely indicate _where_ the notes are placed in published material, regardless of medium. The same style manuals refer to both types more generally as just ‘notes’. If you can’t be specific about it, be general.
+[^notes]: While many markup languages, like Markdown, Kramdown, Textile, and so on call their notes functionality ‘footnotes’, it’s a misnomer, because what they really create are *endnotes*. Every good English style manual, like the <i>Oxford</i> and <i>Chicago</i> manuals, explain it to you, if not already obvious. The *foot-* and *end-* prefixes merely indicate *where* the notes are placed in published material, regardless of medium. The same style manuals refer to both types more generally as ‘notes’. So if you can’t be specific about it, be general.
 
 ### Tables
 
@@ -716,7 +716,7 @@ Add the selector using Kramdown notation on a new line directly under the exampl
 
 ```
 The example paragraph text here.
-{: .example--text}
+{:.example--text}
 ```
 
 #### Example list
@@ -734,7 +734,7 @@ As before, simply add the notation on a new line directly under  the list block:
 * item one
 * item two
 * etc
-{: .example--list}
+{:.example--list}
 ``` 
 
 ### File-tree components
