@@ -699,38 +699,43 @@ Use the following guidelines to make tables well-structured and useful:
 
 ### Example blocks
 
-Example blocks are paragraphs, or more rarely lists, of hypothetical text used for showing examples in documentation. The styling helps distinguish these blocks from regular text so there's no confusion for the reader. Use these whenever the example content is not code, a displayed quotation, or a file tree example (see [File tree examples](#file-tree-examples)).
+Example blocks are paragraphs and, more rarely, lists, of hypothetical text used for showing examples in documentation. They are especially useful for the kind of documentation you are reading now, where examples need made about writing examples.
+
+The styling, added via Kramdown’s ‘inline attributes list’ notation, helps distinguish these blocks so there's no confusion to the reader about what is regular text and what is example material.
+
+Use these when block code, [displayed quotations](#displayed-quotations), or [file tree components](#file-tree-components)) are not appropriate for distinguishing example text.
 
 #### Example text
 
-Examples of regular text (i.e. paragraph blocks) should use the following Kramdown IAL:
+Examples of text (words, sentences, or paragraphs) are styled using the selector, `.example--text`, and appear as follows:
 
-```
-Add paragraph text here.
-{: .example-text}
-```
-
-Or:
-
-```
-Add paragraph text here.
+This is an example paragraph for demonstration purposes. Notice the styling that sets it apart from regular block-level copy.
 {: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #c3edfa;"}
-```
 
-This will indent the example and add a dotted blue-grey left border to distinguish the example from normal documentation copy.
+Add the selector using Kramdown notation on a new line directly under the example paragraph.
+
+```
+The example paragraph text here.
+{: .example--text}
+```
 
 #### Example list
 
-Though rarely needed, if ever, a general list can be employed for example reasons, use this IAL instead:
+Less frequently needed are example lists, using the selector, ‘.example--text`. Example list styling looks like example text styling except list style types are changed to hyphens and positioned inside the list container, thus the need for a unique selector:
+
+* item one
+* item two
+* etc
+{. style="margin-left:3%; padding-left:.5em; border-left:2px dotted #c3edfa; list-style-type:'-'; list-style-position:inside;"}
+
+As before, simply add the notation on a new line directly under  the list block:
 
 ```
 * item one
 * item two
 * etc
-{: .example-list}
-```
-
-The example list styling looks like the example text styling except the bullets are changed to hyphens and positioned inside the list container, thus the need for it’s own selector. 
+{: .example--list}
+``` 
 
 ### File-tree components
 
