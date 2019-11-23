@@ -710,7 +710,7 @@ Use these when block code, [displayed quotations](#displayed-quotations), or [fi
 Examples of text (words, sentences, or paragraphs) are styled using the selector, `.example--text`, and appear as follows:
 
 This is an example paragraph for demonstration purposes. Notice the styling that sets it apart from regular block-level copy.
-{: style="margin-left:3%; padding-left:.5em; border-left:2px dotted #c3edfa;"}
+{: style="margin-left:3%; padding-left:.5em; border-left:3px dotted #c3edfa;"}
 
 Add the selector using Kramdown notation on a new line directly under the example paragraph.
 
@@ -723,10 +723,10 @@ The example paragraph text here.
 
 Less frequently needed are example lists, using the selector, ‘.example--text`. Example list styling looks like example text styling except list style types are changed to hyphens and positioned inside the list container, thus the need for a unique selector:
 
-* item one
-* item two
-* etc
-{. style="margin-left:3%; padding-left:.5em; border-left:2px dotted #c3edfa; list-style-position:inside;"}
+* {. style="list-style-position:inside; list-style-type:'-'"} item one
+* {. style="list-style-position:inside; list-style-type:'-'"} item two
+* {. style="list-style-position:inside; list-style-type:'-'"} etc
+{. style="margin-left:3%; padding-left:.5em; border-left:3px dotted #c3edfa;"}
 
 As before, simply add the notation on a new line directly under  the list block:
 
