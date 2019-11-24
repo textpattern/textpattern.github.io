@@ -50,7 +50,7 @@ You open the Theme property editor when creating a new theme or choosing to edit
 
 **Version:** on creation, the theme version will be set to `0.0.1` if empty, while on import, it would be set to `unknown`.
 
-**Author:** on creation the theme author name will be set the current username if empty, while on import, it would be set to  `unknown`.
+**Author:** on creation the theme author name will be set the current username if empty, while on import, it would be set to `unknown`.
 
 **Author website:** the theme author website URL is optional and allow to display the author name as a link on the themes list page.
 

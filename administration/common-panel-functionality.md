@@ -12,7 +12,7 @@ Functionality described on this page is common across the following back-end pan
 
 * Content section: [Articles](https://docs.textpattern.com/administration/articles-panel), [Images](https://docs.textpattern.com/administration/images-panel), [Files](https://docs.textpattern.com/administration/files-panel), [Links](https://docs.textpattern.com/administration/links-panel), [Comments](https://docs.textpattern.com/administration/comments-panel)
 * Presentation section: [Themes](https://docs.textpattern.com/administration/themes-panel), [Sections](https://docs.textpattern.com/administration/sections-panel)
-* Admin section: [Users](https://docs.textpattern.com/administration/users-panel), [Plugins](https://docs.textpattern.com/administration/plugins-panel) 
+* Admin section: [Users](https://docs.textpattern.com/administration/users-panel), [Plugins](https://docs.textpattern.com/administration/plugins-panel)
 
  This common functionality is secondary to the principle features for creating and using a panel’s given type elements. Once you learn these secondary features — described here in the order they are found on panels, top to bottom — you don’t forget them, so explaining them repeatedly across panel documentation is pointless.
 
@@ -43,7 +43,7 @@ After entering search criteria, click the Search button. The main table display 
 
 The relevant panels describe this functionality in relation to main item lists, but the lists are actually structured with tables, so understand that ‘lists’ and ‘tables’ means the same thing here.
 
-Tables represent the main content areas of default panel displays. They are used to _list_ panel items, whatever item type is relevant in context (i.e. articles, images, themes, users, and so on). 
+Tables represent the main content areas of default panel displays. They are used to _list_ panel items, whatever item type is relevant in context (i.e. articles, images, themes, users, and so on).
 
 Besides the links in many table cells — allowing you direct access to, and interaction with, the data of a specific item — tables have three useful features for manipulating table records (i.e. list items), described in the next three sections.
 
@@ -51,7 +51,7 @@ Besides the links in many table cells — allowing you direct access to, and int
 
 The **List options** control is immediately above and at right of the table with a little gear icon on it. Click the link and a menu will drop down showing you a list of table column headers. The headers all have checkboxes on them so you can select (show) or unselect (not show) which columns will appear in the main table display. One column will always be greyed out, which you can not uncheck, as at least one column must always appear.
 
-### List sorting  
+### List sorting
 
 Table sorting functionality is available on the same panels where the search function appears. It involves clicking (toggling) the column headers in the main display table to sort the records by a given data type.
 

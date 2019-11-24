@@ -99,7 +99,7 @@ The Presentation region has five panels out-of-the-box. The Pages panel is the d
             </tr>
             <tr>
                 <th scope="row"><a href="https://docs.textpattern.com/administration/forms-panel">Forms</a></th>
-                <td>A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The <i><strong>default</strong></i> form in the  Article type is displayed by default.</td>
+                <td>A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The <i><strong>default</strong></i> form in the Article type is displayed by default.</td>
             </tr>
             <tr>
                 <th scope="row"><a href="https://docs.textpattern.com/administration/styles-panel">Styles</a></th>
@@ -160,7 +160,7 @@ There are also two extended regions (not out-of-the-box), Home and Extensions, w
 
 ### Home (Start)
 
-The [Home](https://docs.textpattern.com/administration/home-region) region is associated with dashboard development for multi-user websites. If you're not building a multi-user website, you will not be concerned with this, and even then you may not need the plugins that make this region appear.   
+The [Home](https://docs.textpattern.com/administration/home-region) region is associated with dashboard development for multi-user websites. If you're not building a multi-user website, you will not be concerned with this, and even then you may not need the plugins that make this region appear.
 
 ### Extensions
 

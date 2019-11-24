@@ -3,7 +3,7 @@ layout: document
 category: Administration
 published: true
 title: Home region
-description:  The Home administration region appears to the higher user roles if any of the admin-side plugins that employ it are installed.
+description: The Home administration region appears to the higher user roles if any of the admin-side plugins that employ it are installed.
 ---
 
 # Home region

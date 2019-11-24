@@ -122,7 +122,7 @@ The installation and server data is followed by the contents of your `.htaccess`
     RewriteCond %{REQUEST_URI} !=/favicon.ico
     RewriteRule ^(.*) index.php
 
-    RewriteCond %{HTTP:Authorization}  !^$
+    RewriteCond %{HTTP:Authorization} !^$
     RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
 </IfModule>
 
