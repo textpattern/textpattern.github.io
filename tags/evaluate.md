@@ -28,7 +28,7 @@ The **evaluate** tag can be used as either a *single* or *container* tag. When u
 Tag will accept the following attributes (**case-sensitive**):
 
 `query="expression"`
-: A numerical, logical or string [XPath](http://www.edankert.com/xpathfunctions.html) expression to evaluate.
+: A numerical, logical or string [XPath](https://www.edankert.com/xpathfunctions.html) expression to evaluate.
 : **Values:** `2 * 2`, `string-length("Textpattern") < 10`, and so on.
 : **Default:** unset.
 
