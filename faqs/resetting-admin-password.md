@@ -42,7 +42,7 @@ See above for forgotten login name.
 
 If you are the website’s administrator and forgot your password, you'll need to access the database and change the password there.
 
-Most web hosting accounts provide direct access to a MySQL database via phpMyAdmin (or an equivalent). Some provide command line access to an SQL environment. If you're not sure how to access MySQL, ask your hosting company's tech support.
+Most web hosting accounts provide direct access to a MySQL database via phpMyAdmin (or an equivalent). Some provide command line access to an SQL environment. If you're not sure how to access MySQL, ask your hosting provider's tech support.
 
 ### For MySQL versions under 8.0
 

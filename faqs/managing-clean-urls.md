@@ -108,7 +108,7 @@ If you don't get Clean URLs to work the first time around, double-check
 everything you can think of. If that still does not work, then remember
 this…
 
-“*Most likely your hosting company has done something to disable or
+“*Most likely your hosting provider has done something to disable or
 limit &lt;code&gt;.htaccess&lt;/code&gt;. We…\[Textpattern Developers\]…have
 done our best to make clean URLs work on as many hosts as possible;
 unfortunately, there are many ways to configure Apache such that

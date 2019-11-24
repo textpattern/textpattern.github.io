@@ -20,9 +20,9 @@ If Textpattern is able to find a suitable temporary directory, it will automatic
 
 1. On the *admin > diagnostics* page, make a note of the _Textpattern path_ setting.  Typically it looks something like @/home/foo/public_html/textpattern@.
 
-1. On your web server, using an FTP client, shell access or a file manager provided by your hosting company, find the @tmp@ folder located inside the _Textpattern path_ directory.
+1. On your web server, using an FTP client, shell access or a file manager provided by your hosting provider, find the @tmp@ folder located inside the _Textpattern path_ directory.
 
-2. Change the permissions on this @tmp@ folder to make it writable by the web server process.  Your hosting company may provide specific instructions on this.  On a Unix server, you may have to make the directory "world writable" by setting its permissions to @777@, but before you do this, always consult your webhost, because @777@ permissions are a serious security risk on shared webhosts and frowned upon in other hosting setups, so it's safer to first try @700@ or (if that fails) @711@ or @755@ permissions.
+2. Change the permissions on this @tmp@ folder to make it writable by the web server process.  Your hosting provider may provide specific instructions on this.  On a Unix server, you may have to make the directory "world writable" by setting its permissions to @777@, but before you do this, always consult your webhost, because @777@ permissions are a serious security risk on shared webhosts and frowned upon in other hosting setups, so it's safer to first try @700@ or (if that fails) @711@ or @755@ permissions.
 
 3. On the *admin > preferences > advanced* page, change the _Temp folder_ setting to the full path to this _tmp_ folder.  If your _Textpattern path_ is @/home/foo/public_html/textpattern@, that means your _Temp folder_ setting should be @/home/foo/public_html/textpattern/tmp@.
 

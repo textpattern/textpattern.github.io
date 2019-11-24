@@ -2,7 +2,7 @@ h1. How do I display time and date formats in my local language? [todo]
 
 The date and time functions used by Textpattern will automatically translate month and day names, provided the locale is set correctly, and provided your server supports it.
 
-If you've selected the appropriate language in textpattern > admin > preferences and are still not seeing dates in your language, it most probably means that your web server's operating system has limited support for your language. You should ask your hosting company to upgrade their locale support.
+If you've selected the appropriate language in textpattern > admin > preferences and are still not seeing dates in your language, it most probably means that your web server's operating system has limited support for your language. You should ask your hosting provider to upgrade their locale support.
 
 To use a different format for article dates, use the @<txp:posted format="…" />@ attribute. See "here":http://textpattern.net/wiki/index.php?title=posted for more details.
 

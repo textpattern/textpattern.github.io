@@ -8,7 +8,7 @@ It's possible for Textpattern's database to become corrupted.  There are several
 
 It should not be possible for a user application like Textpattern to damage a MySQL table.  (It might be possible for Textpattern to trigger a bug in MySQL, but the fault in that case lies with MySQL).
 
-Occasional database corruption is a risk on shared hosting services, but should be rare.  If you're experiencing frequent corruption problems you should talk to your hosting company, and consider moving to a more reliable service.
+Occasional database corruption is a risk on shared hosting services, but should be rare.  If you're experiencing frequent corruption problems you should talk to your hosting provider, and consider moving to a more reliable service.
 
 In most cases a corrupt table can be repaired easily with little or no permanent damage.  Many hosting companies and "web hosting":/hosting control panels provide a quick method of checking and repairing MySQL tables, so check their knowledge base and documentation.
 

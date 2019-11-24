@@ -44,7 +44,7 @@ Textpattern developers do their part to keep core code as secure as they can. It
 
 **With regard to your web host or web server:**
 
-* Pay attention to security announcements from your hosting company or server admin. Likewise, if you find your host is slow to update its provided software, contact the host admins and remind them to do it.
+* Pay attention to security announcements from your hosting provider or server admin. Likewise, if you find your host is slow to update its provided software, contact the host admins and remind them to do it.
 * If you maintain your own web server, keep it updated with security patches (if you maintain your own server, you should know that already).
 
 Core developers have no control over the quality or security of community plugins, third-party add-ons, or modifications you might make to the core system. It's up to you to evaluate the security of third-party code, and to make smart judgement calls about code modification.
