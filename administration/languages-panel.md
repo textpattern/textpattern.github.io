@@ -50,6 +50,6 @@ Legacy versions of Textpattern released before 4.7.0 use [RPC](https://en.wikipe
 
 A bug has been identified that affects legacy Textpattern instance (pre-4.7 only) where language packs may erroneously indicate an update is available. Triggering the update using the Update button will download the translations held on the central server, but the Update button may still be active after the language pack has been successfully updated. The Update notification can be safely ignored. It does not represent a security risk or affect functionality in any way.
 
-If you encounter this issue, please check in the Diagnostics panel whether your PHP and MySQL server times are identical. There are some situations where the times do not match. If the times match, and you are interested in assisting with debugging of this particular issue, please leave a reply in [this forum thread](https://forum.textpattern.io/viewtopic.php?id=49156) and we'll get back to you.
+If you encounter this issue, please check in the Diagnostics panel whether your PHP and MySQL server times are identical. There are some situations where the times do not match. If the times match, and you are interested in assisting with debugging of this particular issue, please leave a reply in [this forum thread](https://forum.textpattern.com/viewtopic.php?id=49156) and we'll get back to you.
 
 [Next: Users panel](https://docs.textpattern.com/administration/users-panel)
