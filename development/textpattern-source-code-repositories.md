@@ -3,12 +3,12 @@ layout: document
 category: Development
 published: true
 title: Textpattern source code repositories
-description: All Textpattern code reposistories are now maintained at GitHub and collectively detailed here for documentation convenience.
+description: All Textpattern code repositories are maintained at GitHub and collectively detailed here for documentation convenience.
 ---
 
 # Textpattern source code repositories
 
-All Textpattern code repositories are now maintained at GitHub and collectively detailed here for documentation convenience.
+All Textpattern code repositories are maintained at GitHub and collectively detailed here for documentation convenience.
 
 On this page:
 
@@ -28,12 +28,12 @@ The current stable release, the latest bleeding-edge development code, and the o
 
 The production release - or *latest stable release* - is for the average user who wants the most secure version of Textpattern available. They are terminal branches (or 'snapshots') from the master repo at particular development milestones. When new production releases are available, the previous release becomes obsolete in terms of developer support, so always update your Textpattern installations to the latest stable release when they're available.
 
-* [Zip file download](https://textpattern.com/latest.zip) (an immediate .zip package download from textpattern.com, no messing around) 
-* [Zip package options](https://textpattern.com/start) (choose either `.zip` or `.tar.gz`, as you prefer) 
+* [Zip file download](https://textpattern.com/latest.zip) (an immediate .zip package download from textpattern.com, no messing around)
+* [Zip package options](https://textpattern.com/start) (choose either `.zip` or `.tar.gz`, as you prefer)
 
 ### Development branch
 
-The *dev branch* is where core developers work toward each new stable release. In other words, it's work-in-progress![^1]. As such, this branch is ideal for plugin developers and feature testers, though it does draw a few *risk takers* too (people who throw caution to the wind and use development code for a production website). 
+The *dev branch* is where core developers work toward each new stable release. In other words, it's work-in-progress![^1]. As such, this branch is ideal for plugin developers and feature testers, though it does draw a few *risk takers* too (people who throw caution to the wind and use development code for a production website).
 
 The dev branch can be worked with as it exists at any given moment:
 
@@ -43,7 +43,7 @@ The dev branch can be worked with as it exists at any given moment:
 
 ### Experimental branches
 
-There are a number of *experimental branches*, each a separate tinkering on a particular new feature or three. The branches are not ready to merge into the dev branch yet, which is why they're experimental. 
+There are a number of *experimental branches*, each a separate tinkering on a particular new feature or three. The branches are not ready to merge into the dev branch yet, which is why they're experimental.
 
 Experimental branches are a moving target, so they're not listed here to lower overhead, but you can find these branches by going to the [dev branch](https://github.com/textpattern/textpattern) in GitHub, selecting the **Branch** menu button (which will appear as "Branch: dev"), and choosing one of the other branch options in the dropdown list.
 
@@ -65,7 +65,7 @@ In context of Textpattern, it's assumed you're going to clone if contributing to
 
 ### GitHub Desktop
 
-The GitHub Desktop GUI client may not be as flexible as the command-line client, but unless you're a command-line Jedi master, the desktop client is easy to use. 
+The GitHub Desktop GUI client may not be as flexible as the command-line client, but unless you're a command-line Jedi master, the desktop client is easy to use.
 
 First you'll need to [install the client](https://desktop.github.com/). Then fire it up and add your GitHub account details so GitHub and the client can 'communicate' with one another. Full usage instructions can be found within the [GitHub Desktop documentation](https://help.github.com/desktop/).
 
