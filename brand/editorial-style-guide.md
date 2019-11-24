@@ -67,7 +67,7 @@ Promotional content
 Blog posts and magazine articles
 : Content on which the author is identified.
 : Audience: Public
-: Author voice is: their own, personal 
+: Author voice is: their own, personal
 : Perspective to use: first-person singular and/or second person.
 
 User documentation
@@ -182,7 +182,7 @@ When distinguishing between the software and the project, the name becomes a pro
 
 ### Project platforms
 
-When referring to one of the Textpattern platforms, use the proper name once the first time to establish a clear context (e.g. ‘Textpattern user documentation’), thereafter feel free to simply write ‘user documentation’. Readers will thank you. 
+When referring to one of the Textpattern platforms, use the proper name once the first time to establish a clear context (e.g. ‘Textpattern user documentation’), thereafter feel free to simply write ‘user documentation’. Readers will thank you.
 
 Never refer to any of the project websites by their domain (e.g. ‘textpattern.com’). Keep that in hyperlinks where it belongs.
 
@@ -190,7 +190,7 @@ Never refer to any of the project websites by their domain (e.g. ‘textpattern.
 
 Except for common proper nouns of well-recognized technologies and organizations (HTML, CSS, PHP, W3C, and so on), or Latin idioms used as abbreviations in parenthetical notation (n.b., i.e., e.g., etc.), do not abbreviate any words or proper nouns in regular copy. Specific examples follow.
 
-### Normal word abbreviations 
+### Normal word abbreviations
 
 Never abbreviate normal words as shortcut reference for people, places, or things. Example:
 
@@ -252,22 +252,22 @@ Common Latin idioms, notably those below, are also recommended for use, but _onl
 Also…
 
 * Do not bother italicizing the Latin abbreviations.
-* Do not follow the leading abbreviations with a comma. 
+* Do not follow the leading abbreviations with a comma.
 * Do not use two abbreviations in the same parenthetical note. Either change ‘etc.’ to an ellypsis (…), or use an English text equivalent, or, best of all, refine the note to avoid the problem entirely.
 
 This example is wrong by all three of the points above:
 
-> . . . (*i.e.*, [this], [that], *etc.*). 
+> . . . (*i.e.*, [this], [that], *etc.*).
 
 These are correct alternatives:
 
 > . . . (i.e. [this], [that]…).
-> 
+>
 > . . . (i.e. [this], [that], and so on).
 >
-> . . . (i.e. [a more specific thing]). 
+> . . . (i.e. [a more specific thing]).
 
-Finally, never use the Latin abbreviations in the main part of sentences, outside of a parenthetical note. Instead, write English equivalents like ‘for example’, ‘in other words’, ‘and so on’, ‘and so forth’… But the whole point of using parenthetical notes is to be less word-bloaty when needing such idioms. 
+Finally, never use the Latin abbreviations in the main part of sentences, outside of a parenthetical note. Instead, write English equivalents like ‘for example’, ‘in other words’, ‘and so on’, ‘and so forth’… But the whole point of using parenthetical notes is to be less word-bloaty when needing such idioms.
 
 ## Punctuation
 
@@ -281,7 +281,7 @@ A serial comma is one that comes between the last two items in a series, and bef
 
 > Separating content, presentation, and behaviour is always a smart thing to do.
 
-That sentence still makes sense if you forget the serial comma. But consider this one: 
+That sentence still makes sense if you forget the serial comma. But consider this one:
 
 > I saw Bob's uncle, a boozer and a cruiser in the park, climb into that cardboard hut.
 
@@ -291,7 +291,7 @@ The point is, more important than consistency, is ensuring your sentences are gr
 
 ### Quotations marks
 
-The *Oxford Style Manual* (remember, [we use that](#baseline-references)) defines a ‘modern British practice’ of enclosing quoted text inside single quotation marks, and to use double quotation marks for a quotation within a quotation.[^quotes] 
+The *Oxford Style Manual* (remember, [we use that](#baseline-references)) defines a ‘modern British practice’ of enclosing quoted text inside single quotation marks, and to use double quotation marks for a quotation within a quotation.[^quotes]
 
 Textpattern also uses this convention for public-facing material in official projects. The convention may not be what most of the English-speaking world uses when it writes (including British news media), but Oxford is not wrong on the clarity and logic of its choice.
 
@@ -300,26 +300,24 @@ Consider this curious and purely hypothetical example:
 ‘Select “‘Testing’” for the **Production status** preference to put your site in testing mode.’
 {: .example-text}
 
-The good news is, you are unlikely to need quotations inside quotations, because all Textpattern material is boring ol’ expository, not narrative. You are not a story narrator conveying complex dialogue between characters, so there’s no need to use nested quotations, or to remember the associated punctuation rules, most logical as they are, that go along with the British quotation system. 
+The good news is, you are unlikely to need quotations inside quotations, because all Textpattern material is boring ol’ expository, not narrative. You are not a story narrator conveying complex dialogue between characters, so there’s no need to use nested quotations, or to remember the associated punctuation rules, most logical as they are, that go along with the British quotation system.
 
 If the example above was a line in user documentation and not being quoted here, it would look like this instead:
 
 Select ‘Testing’ for the **Production status** preference to put your site in testing mode.
 {: .example-text}
 
-Now ‘Testing’ is properly formatted (normal weight and single quotations marks) following the interface-strings rule for select-box options (see [Headers, labels, and options](https://docs.textpattern.com/brand/user-docs-guide#headers-labels-and-options) in the user documentation guidelines). That’s why it appears as “‘Testing’” when being quoted in the first example. 
+Now ‘Testing’ is properly formatted (normal weight and single quotations marks) following the interface-strings rule for select-box options (see [Headers, labels, and options](https://docs.textpattern.com/brand/user-docs-guide#headers-labels-and-options) in the user documentation guidelines). That’s why it appears as “‘Testing’” when being quoted in the first example.
 
 Should the marketing team want to get fancy in prose… Punctuation rules for the British quotation system are straight forward: the quotation marks go inside sentence punctuation unless the punctuation is part of the quoted text. In the first example, the full point is part of the text being quoted.
 
-[^quotes]: *New Oxford Style Manual*, ed. Anne Waddingham (3rd edn, Oxford, 2016), p 162. 
+[^quotes]: *New Oxford Style Manual*, ed. Anne Waddingham (3rd edn, Oxford, 2016), p 162.
 
 ## Writing tips
 
 Writing is a wonderfully varied craft. Doing it well hinges on knowing the audience, and the genre and type of writing needed; having a knack for syntax and diction, to say nothing of grammar; and having a set of guidelines like these at hand to spot check one’s progress.
 
-Good use of syntax (sentence structure) and diction (word choice) will make even the dryest topics and eye-glazing expository more pleasant to read. Improve the readability of text by mixing sentence structures to break repetitive patterns and cutting needless words. 
-
-  
+Good use of syntax (sentence structure) and diction (word choice) will make even the dryest topics and eye-glazing expository more pleasant to read. Improve the readability of text by mixing sentence structures to break repetitive patterns and cutting needless words.
 
 ### Compound sentences
 
@@ -336,7 +334,7 @@ Adverbs, like *however*, *meanwhile*, and so on can load paragraphs down quick i
 > ‘However, if you click this one . . .’ Or, ‘Don’t use that one, however.’
 
 **Idioms** like *in other words*, *in any case*, *on the other hand*, and so on can also overburden paragraphs if used too frequently at ends of sentences, for example:
- 
+
  > In other words, don’t do this.
 
 One idiom that you will need a lot when writing documentation is _for example_ (as the two previous paragraphs might suggest). Because documentation rely heavily on this particular idiom, it’s especially important to subdue it as much as possible. Using the idiom at the end of a paragraph, as used above, just before an actual example, is one good way to employ it.
@@ -355,7 +353,7 @@ Conjunctions like _but_ and _and_ are fine to use infrequently at beginnings of 
 
 Adverbs like _very_, _really_, _only_, and others are commonly used in speech when we talk to each other, and in that context are easily overlooked, but they look and read terrible in writing, and add considerable bloat to documents when all tallied up.
 
-For example, ‘the really large code block’ or ‘only copy the lines between x and y’ are bloated ways of writing ‘the large code block’ and ‘copy the lines between x and y’. There’s no loss of meaning or  instruction by dropping the needless adverbs, and it reads a lot better too.
+For example, ‘the really large code block’ or ‘only copy the lines between x and y’ are bloated ways of writing ‘the large code block’ and ‘copy the lines between x and y’. There’s no loss of meaning or instruction by dropping the needless adverbs, and it reads a lot better too.
 
 **Avoid passive verb structures**. Verb structures like _to be/have_, _could be/have_, _should be/have_, _might be/have_, and so forth are not only miserable to read, but they bloat copy with unnecessary words. You are the expert giving the sound advice, so assume the role. Find a more direct and active way of word phrases. Using a generic structure as example: ‘put this thing there’ is far cleaner and direct than either ‘you should put this thing there’ or ‘that thing should be put there’. Both are lousy. If a reader doesn’t want to put something somewhere, they won’t, but they’ll appreciate you weren’t wishy-washy about the instruction. Kill the passive verb structures.
 
@@ -453,7 +451,7 @@ Incomplete → <meta name="description" content="The Textpattern homepage">
 Incomplete → <meta name="keywords" content="Textpattern, homepage">
 
 ## References
-1. Clarke, Andy (2008).  A client-focused copy style guide. For a Beautiful Web. 15 Dec 2010.
+1. Clarke, Andy (2008). A client-focused copy style guide. For a Beautiful Web. 15 Dec 2010.
 2. Cohen, Georgy (2010). Mandy Brown and Erin Kissane at Content Strategy New England: A Pragmatic Approach to Editorial Style. Georgy Cohen: Writing and Web Communications. 15 Dec 2010.
 3. Gruber, John (2010). Title Junk. Daring Fireball. 21 December 2010
 4. Saloka, Elizabeth (2009). 5 Tips on Working with a Style Guide. Brain Traffic Blog. 18 Dec 2010
