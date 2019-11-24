@@ -31,17 +31,17 @@ Secondary audiences are experienced users and active [community](https://forum.t
 
 In relation to the primary and secondary audiences are specific breadths and depths of documentation. The majority of existing user documentation is for the primary audience.
 
-### Breadth of primary documentation 
+### Breadth of primary documentation
 
-The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes  [administration](https://docs.textpattern.com/administration) features and capabilities, and [Textpattern tags](https://docs.textpattern.com/tags) and [tag attributes](https://docs.textpattern.com/tags/tag-basics) information. To a lesser degree is information about initially [installing Textpattern](https://docs.textpattern.com/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](https://docs.textpattern.com/faqs). Also new, in reflection of new core functionality, are a handful of [shortcode](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes) examples as tutorials. 
+The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes [administration](https://docs.textpattern.com/administration) features and capabilities, and [Textpattern tags](https://docs.textpattern.com/tags) and [tag attributes](https://docs.textpattern.com/tags/tag-basics) information. To a lesser degree is information about initially [installing Textpattern](https://docs.textpattern.com/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](https://docs.textpattern.com/faqs). Also new, in reflection of new core functionality, are a handful of [shortcode](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes) examples as tutorials.
 
 Excepting the following section, the remainder of these guidelines are written with the primary audience and documentation scope in mind.
 
-### Breadth of secondary documentation 
+### Breadth of secondary documentation
 
-The breadth of secondary-audience documentation includes [plugin development](https://docs.textpattern.com/development/) resources, a smattering of [back-end themes](https://docs.textpattern.com/themes) instructions (or not), and Textpattern [brand and collaboration](https://docs.textpattern.com/brand/)  information, including these guidelines.
+The breadth of secondary-audience documentation includes [plugin development](https://docs.textpattern.com/development/) resources, a smattering of [back-end themes](https://docs.textpattern.com/themes) instructions (or not), and Textpattern [brand and collaboration](https://docs.textpattern.com/brand/) information, including these guidelines.
 
-This information is piecemeal and may not be ideally suited for this repository. Other network platforms like [Textpattern Tips](https://textpattern.tips/), and the forthcoming Plugins and Themes websites may help serve secondary documentation types better (see [A single documentation type](#a-single-documentation-type)). 
+This information is piecemeal and may not be ideally suited for this repository. Other network platforms like [Textpattern Tips](https://textpattern.tips/), and the forthcoming Plugins and Themes websites may help serve secondary documentation types better (see [A single documentation type](#a-single-documentation-type)).
 
 ### Depth of documentation
 
@@ -69,7 +69,7 @@ Other types of documentation are better used and managed in context of the platf
 
 This information does not need written in technical documentation style, but as regular web page content, with screenshots or videos or whatever other format is appropriate for a platform.
 
-Brand and collaboration information like the document you are reading may logically stay where it is for common project reference.  
+Brand and collaboration information like the document you are reading may logically stay where it is for common project reference.
 
 #### Necessary pages and nothing more
 
@@ -85,7 +85,7 @@ The scope and depth of a page’s subject matter can be what is needed and not n
 
 Again, consider [software usability](#rely-on-software-usability) and [embedded help tips](#rely-on-embedded-help-tips) in relation to documenting back-end panel features. If the features of an otherwise intuitive panel, including what is revealed in panel help tips, are meticulously annotated in user documentation for the sake of doing it, then users wade through needless detail in search of what little may, in fact, need elaboration.
 
-One way to start downsizing needless content in administration panel documentation is to maintain their structure, but replace  redundant or obvious descriptions with simple referral statements.
+One way to start downsizing needless content in administration panel documentation is to maintain their structure, but replace redundant or obvious descriptions with simple referral statements.
 
 An example referral statement to see the software itself:
 
@@ -105,7 +105,7 @@ And when such elaboration is needed, it should augment embedded help information
 
 ## Writing and editing
 
-In addition to the helpful guidelines below for writing and editing documentation, see the baseline [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide) for style conventions in general. 
+In addition to the helpful guidelines below for writing and editing documentation, see the baseline [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide) for style conventions in general.
 
 ### Author perspective
 
@@ -118,7 +118,7 @@ Therefore, documentation authors and editors should write in the second-person p
 Click your name in the Users panel to change your email.
 {: .example-text}
 
-The second-person stance empowers the reader on their solo adventure. You're just an impartial voice over their shoulder guiding them along. But don't go overboard on the pronouns. If you're addressing the reader in every other sentence, you have revising to do.  
+The second-person stance empowers the reader on their solo adventure. You're just an impartial voice over their shoulder guiding them along. But don't go overboard on the pronouns. If you're addressing the reader in every other sentence, you have revising to do.
 
 Never use first-person singular (*I*, *me*, *my*) or plural (*we* and *us*) in user documentation. The documentation isn't about you, and the voice of Textpattern is unnecessary and inappropriate. See the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide#author-perspective) for other platform perspectives.
 
@@ -139,7 +139,7 @@ Regarding user documentation, two topics are especially important to review in t
 
 ### Brand name
 
-Particularly in documentation, do not overuse the brand name. The context of being a Textpattern resource is already clear to readers by fact they are using the software and in the documentation domain. See more in [Brand name](https://docs.textpattern.com/brand/editorial-style-guide#brand-name) guidelines of editorial style guide. 
+Particularly in documentation, do not overuse the brand name. The context of being a Textpattern resource is already clear to readers by fact they are using the software and in the documentation domain. See more in [Brand name](https://docs.textpattern.com/brand/editorial-style-guide#brand-name) guidelines of editorial style guide.
 
 ## Formatting interface strings
 
@@ -147,11 +147,11 @@ Interface strings are the text elements a user reads in the back-end panels of t
 
 A clear but minimum set of formatting rules are needed to distinguish the different types of strings from regular documentation text. A single format or style (e.g. bold, italic, quotation marks, or whatever) is little more effective than no formatting at all. Thus a balance needs struck between having: a minimum number of distinguishing features, and clear distinction between string types and across types and regular documentation text.
 
-The conventions for formatting or marking interface strings, and other types, are detailed in the following sections. Some of these strings define using `em` (emphasis) or `strong` formatting, easily added via Markdown. Others define using `i` (italic) because the emphasis from using `em` is not appropriate for screen-readers in those cases. The latter situation requires  adding `i` as HTML, since Markdown does not provide syntax for true `i` (or `b`, bold) element formatting. See the [inline formatting](#inline-text-formatting) section for more on that issue specifically. Specific style and formatting issues are addressed individually per string type. 
+The conventions for formatting or marking interface strings, and other types, are detailed in the following sections. Some of these strings define using `em` (emphasis) or `strong` formatting, easily added via Markdown. Others define using `i` (italic) because the emphasis from using `em` is not appropriate for screen-readers in those cases. The latter situation requires adding `i` as HTML, since Markdown does not provide syntax for true `i` (or `b`, bold) element formatting. See the [inline formatting](#inline-text-formatting) section for more on that issue specifically. Specific style and formatting issues are addressed individually per string type.
 
 ### Header and label strings
 
-The use of sentence-case for writing strings is one reason no single style or format, or reliance on capitalizations alone, will work to address the different interface headers and labels. And in any case, some strings are sentences with terminal punctuation. To address the various combinations of headers and labels, four style conventions are needed across them all: capitalization, strong formatting, italic formatting, and single quotation marks.   
+The use of sentence-case for writing strings is one reason no single style or format, or reliance on capitalizations alone, will work to address the different interface headers and labels. And in any case, some strings are sentences with terminal punctuation. To address the various combinations of headers and labels, four style conventions are needed across them all: capitalization, strong formatting, italic formatting, and single quotation marks.
 
 #### Single-words, capitalized
 
@@ -178,7 +178,7 @@ Headers and labels also exist as multiple-word strings lacking terminal punctuat
 The **Date format** setting.
 {: .example-text}
 
-Screen-readers will also pick up the strong format, which is appropriate here because the lack of title-case on such strings would otherwise make the extent of them undetectable to screen-readers without the added strength. 
+Screen-readers will also pick up the strong format, which is appropriate here because the lack of title-case on such strings would otherwise make the extent of them undetectable to screen-readers without the added strength.
 
 
 #### Full sentences
@@ -192,7 +192,7 @@ As in earlier examples, additional strings are used (correctly) and lots of cont
 
 ### Option strings
 
-Options strings can be thought of as two types: select box options and radio button choices. The latter is not really an option, technically speaking, but a label. Regardless, we distinguish them the same way because it probably fits a users mental model better: that these are choices to make for a given setting. The treatment to use, picked up by screen-readers, is single quotation marks, for example: 
+Options strings can be thought of as two types: select box options and radio button choices. The latter is not really an option, technically speaking, but a label. Regardless, we distinguish them the same way because it probably fits a users mental model better: that these are choices to make for a given setting. The treatment to use, picked up by screen-readers, is single quotation marks, for example:
 
 If you want URL titles to be hyphenated, select ‘Hyphenated (title-like-this)’ from the select-box options for the preference, **Permalink title URL pattern**, in the Publish section of the Preferences panel.
 {: .example-text}
@@ -283,7 +283,7 @@ Alert messages appear to software users as feedback dialogue in the Diagnostics 
             <tr>
                 <th scope="row">Error</th>
                 <td>Red</td>
-                <td><code>.erroer</code></td>
+                <td><code>.error</code></td>
             </tr>
         </tbody>
         <tfoot>
@@ -338,14 +338,14 @@ It’s appropriate to mark up the embedded quotations using a `q` element, which
 <q>Textpattern CMS (v4.7.3)</q>
 ```
 
-Do not bother adding a `cite` attribute to the `q` element when  quoting short, free-text strings because every back-end panel includes the strings. Pointing to one panel in particular is needlessly arbitrary. A `cite` element would be appropriate, however, if using an embedded quotation for any other reason, like used in the next paragraph to cite the W3C.
+Do not bother adding a `cite` attribute to the `q` element when quoting short, free-text strings because every back-end panel includes the strings. Pointing to one panel in particular is needlessly arbitrary. A `cite` element would be appropriate, however, if using an embedded quotation for any other reason, like used in the next paragraph to cite the W3C.
 
 #### Displayed quotations
 
 When, and only when, a free-text string is long enough to warrant being a ‘displayed quotation’ (i.e. quotations that are not embedded inline).[^disquotes], mark it up as a block quote using a `blockquote` element via Markdown’s `>` notation). The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
 
 There’s only one instance of a free-text string in the back-end interface that’s long enough to warrant this markup. It’s a paragraph in the [Languages panel](https://docs.textpattern.com/administration/languages-panel), under the panel header, and reads:
- 
+
 > **You can help us improve Textpattern!** We welcome additional translations (and corrections to current translations) by our user community. Please visit Textpattern language translations (opens an external link in a new window) for further details.
 
 Right here, right now, is the only time that paragraph ever needs quoted in user documentation, and it’s only done so to demonstrate what you will never have to use, a `blockquote`. Other platforms like Forums, blogs, and magazines use them extensively, but block quotes are not necessary in Textpattern user documentation, and especially if used incorrectly.
@@ -378,8 +378,8 @@ But, obviously, don’t do this on every inline path, directory, or file name or
 
 Also mind these important conventions for distinguishing these elements:
 
-* **File names**. Always include the file extension, whether used in a path or by itself (e.g. use <i>index.php</i>, never <i>index</i> only). This is what distinguishes file names from directory names, or anything else.  
-* **Single directory names**. Do not prefix directory names with a fore-slash (e.g. <i>/textpattern</i>) when referring to the name by itself. Again, file name extensions will distinguish file names from directory names, and a directory name is sufficiently distinguished from regular text by italic formatting and proper description of context.  
+* **File names**. Always include the file extension, whether used in a path or by itself (e.g. use <i>index.php</i>, never <i>index</i> only). This is what distinguishes file names from directory names, or anything else.
+* **Single directory names**. Do not prefix directory names with a fore-slash (e.g. <i>/textpattern</i>) when referring to the name by itself. Again, file name extensions will distinguish file names from directory names, and a directory name is sufficiently distinguished from regular text by italic formatting and proper description of context.
 
 #### Paths, directories, and files in code
 
@@ -412,7 +412,7 @@ That said, there’s a point where too much linking can be distracting, so don�
 
 ### Cross-links
 
-Cross-links between documentation pages should use Markdown  link syntax and absolute URLs:
+Cross-links between documentation pages should use Markdown link syntax and absolute URLs:
 
 ```
 [link text](https://docs.textpattern.com/directory/page-title)
@@ -432,7 +432,7 @@ The consistent placement and parenthetical pattern of anchor links makes them cl
 
 ## Markup and styling
 
-Due to certain platform constraints and necessities, documentation uses a mixture of Markdown, Kramdown, and regular HTML, depending on what you need.  
+Due to certain platform constraints and necessities, documentation uses a mixture of Markdown, Kramdown, and regular HTML, depending on what you need.
 
 ### Inline-text formatting
 
@@ -495,7 +495,7 @@ Similarly, the [template names strings](#template-name-strings) section counsels
 
 The strong formatting for [multiple-word strings with no terminal punctuation](#multiple-words-no-terminal-punctuation), however, is appropriate for screen-readers, or listeners would not know where the multi-word string ends in regular text.
 
-So this business with inline formatting is tricky, and why the golden rule of thumb is: don’t use inline formatting unless you  are documenting [interface strings](#formatting-interface-strings), and the necessary like.
+So this business with inline formatting is tricky, and why the golden rule of thumb is: don’t use inline formatting unless you are documenting [interface strings](#formatting-interface-strings), and the necessary like.
 
 The sole exception is when emphasizing a word as a part of regular text (e.g. ‘You *really* don’t want to do that.’), But this should rarely be necessary.
 
@@ -520,7 +520,7 @@ A small variety of block-level elements and specialized content types are employ
 
 * Markdown enables easy addition of paragraphs and (un)ordered lists. No demonstration is needed. You know them.
 * Kramdown enables easy use of [definition lists](#definition-lists) and [notes](#notes) (i.e. endnotes).
-* HTML must be used for [tables](#tables), due to a specialized wrapper requirement. 
+* HTML must be used for [tables](#tables), due to a specialized wrapper requirement.
 * Predefined class selectors, applied using Kramdown’s ‘inline attributes list’ notation, enable turning regular paragraphs and lists into [example blocks](#example-blocks), and [file tree components](#file-tree-components).
 
 This small set of block elements and content types is enough for Textpattern user documentation.
@@ -555,7 +555,7 @@ Notes are used sparingly and in limited cases in Textpattern documentation; eith
 
 Reference-mark notes are a common annotation device in information design, and are specifically used in tables. The standard reference-mark system cycles through six marks, in this order: *, †, ‡, §, ¶, ‖.
 
-When more than six notes are needed, and we assume here they never will be, the pattern repeats in duplicate (**, ††, ‡‡, §§, ¶¶, ‖‖), then triplicate, and so on. Only the first six single marks are provided for in CSS. Since these notes are in [HTML tables](#tables), they must also be structured with HTML. 
+When more than six notes are needed, and we assume here they never will be, the pattern repeats in duplicate (**, ††, ‡‡, §§, ¶¶, ‖‖), then triplicate, and so on. Only the first six single marks are provided for in CSS. Since these notes are in [HTML tables](#tables), they must also be structured with HTML.
 
 Consider the following table, which is an example of the notes in effect.
 
@@ -728,14 +728,14 @@ Less frequently needed are example lists, and these have their own selector, `.e
 * etc
 {: style="color:#888; margin-left:0; padding:.5em 0 .5em .5em; border-left:4px solid #c3edfa; list-style:circle inside;"}
 
-As before, simply add the notation on a new line directly under  the list block:
+As before, simply add the notation on a new line directly under the list block:
 
 ```
 * item one
 * item two
 * etc
 {:.example--list}
-``` 
+```
 
 ### File-tree components
 
@@ -750,7 +750,7 @@ You now can style such lists using specific selectors:
 
 These selectors are demonstrated in the next two sections for the two kinds of file-tree examples you may want to show.
 
-Remember: *always* add file extensions on file names, and *never* add inline formatting on list items when items are not a mix of text types.  
+Remember: *always* add file extensions on file names, and *never* add inline formatting on list items when items are not a mix of text types.
 
 #### Full tree scope
 
@@ -780,7 +780,7 @@ Using the selectors provided for this type of content, apply them using Kramdown
 {:.list--tree}
 ```
 
-Again, make sure file names include their type extensions, and do not add formatting inline. 
+Again, make sure file names include their type extensions, and do not add formatting inline.
 
 #### Single directory scope
 
@@ -792,7 +792,7 @@ Single directory scope implies all or some of the contents of one directory only
 * . . .
 * {:.directory} subdirectory5
 * . . .
-* {:.document} file1.ext 
+* {:.document} file1.ext
 * {:.document} file2.ext
 * . . .
 {:.list--tree}
@@ -806,7 +806,7 @@ The code to copy and modify is:
 * . . .
 * {:.directory} subdirectory5
 * . . .
-* {:.document} file1.ext 
+* {:.document} file1.ext
 * {:.document} file2.ext
 * . . .
 {: .list--tree}
