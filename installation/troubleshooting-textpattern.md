@@ -140,7 +140,7 @@ A runtime figure that regularly measures 1 second or more usually indicates one 
 
 * DNS issues: a slow or misconfigured DNS server at your web hosting company can cause high page runtimes. Usually this occurs in the Textpattern logging code. In the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel), set 'Use DNS?' to 'No', and see if that makes a difference. If not, try disabling logging altogether.
 * Plugins: plugins aren't necessarily as efficient as Textpattern itself. If your performance problems coincide with the installation of a plugin, or occur only on a particular page template that invokes a plugin, try disabling it and see if there's a difference. If your page won't display properly without the plugin, try temporarily reverting to the default Textpattern Page template and Form template.
-* PHP code: if you've included any PHP code in your page templates, whether directly in the template or indirectly via an `include()` call or similar, try disabling it. In particular, check for any code that might try to fetch a file from an external server, e.g. by using a `http://..` URL in an `fopen()` or `include()` call.
+* PHP code: if you've included any PHP code in your page templates, whether directly in the template or indirectly via an `include()` call or similar, try disabling it. In particular, check for any code that might try to fetch a file from an external server, e.g. by using a `https://..` URL in an `fopen()` or `include()` call.
 * MySQL issues: MySQL doesn't have to run on the same physical machine as your web server. Some hosting companies run these on separate servers connected by a fast LAN connection, which is fine. However, if Textpattern and MySQL are on entirely different networks, performance will be unavoidably slow, since all MySQL queries and results must travel back and forth over a comparatively slow internet connection every time a Textpattern page is viewed. Other MySQL performance problems can be harder to diagnose. An overloaded MySQL server can slow down Textpattern - ask your hosting company if this could be the case.
 * Spam blocklist: sometimes the built-in blocklist checking causes page slowdowns. Go to the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel) and remove `sbl.spamhaus.org` from the 'Spam blocklists' preference if it is there.
 
@@ -172,7 +172,7 @@ If you're still seeing a blank page even in Testing mode, the most likely cause 
 
 ## Feed issues
 
-Use a [feed validator](http://www.feedvalidator.org/) if you suspect a feed problem. If the validator indicates that your feed is invalid, then please post its messages verbatim in your support request. Also, the URL you submit to the feed validator is your feed URL, not your homepage URL - the feed validator does not auto-detect feeds.
+Use a [feed validator](https://www.feedvalidator.org/) if you suspect a feed problem. If the validator indicates that your feed is invalid, then please post its messages verbatim in your support request. Also, the URL you submit to the feed validator is your feed URL, not your homepage URL - the feed validator does not auto-detect feeds.
 
 Some other avenues of exploration:
 
