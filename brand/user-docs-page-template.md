@@ -71,7 +71,7 @@ Normal text.
 ## Etc
 ```
 
- 
+
 ## Template explanation
 
 A quick breakdown of the markup elements.
@@ -94,7 +94,7 @@ The `layout:` value will always be `document`. Make sure this line is present, b
 
 The `category` value will be the folder name in which the file will go (e.g. `tags`).
 
-The `published` value will either be `true` (meaning appearing live in the documentation site) or `false` (not yet appearing in the documentation site). The latter is good when you’ve commited a draft file but have not yet finished the draft.
+The `published` value will either be `true` (meaning appearing live in the documentation site) or `false` (not yet appearing in the documentation site). The latter is good when you’ve committed a draft file but have not yet finished the draft.
 
 The `title` value will be the same as what you use in the `h1` header of the page.
 
@@ -130,7 +130,7 @@ Every tag page has an overview paragraph, as example, which uses a fairly consis
 
 ### Contents
 
-The contents list (aka table of contents) comes under any overview paragraph, or directly under the title if no overview. 
+The contents list (aka table of contents) comes under any overview paragraph, or directly under the title if no overview.
 
 The contents list begins with a consistent lead line, followed by the Kramdown syntax for outputting a customized content list
 

@@ -317,7 +317,7 @@ Should the marketing team want to get fancy in prose… Punctuation rules for th
 
 Writing is a wonderfully varied craft. Doing it well hinges on knowing the audience, and the genre and type of writing needed; having a knack for syntax and diction, to say nothing of grammar; and having a set of guidelines like these at hand to spot check one’s progress.
 
-Good use of syntax (sentence structure) and diction (word choice) will make even the dryest topics and eye-glazing expository more pleasant to read. Improve the readability of text by mixing sentence structures to break repetitive patterns and cutting needless words.
+Good use of syntax (sentence structure) and diction (word choice) will make even the driest topics and eye-glazing expository more pleasant to read. Improve the readability of text by mixing sentence structures to break repetitive patterns and cutting needless words.
 
 ### Compound sentences
 
