@@ -103,7 +103,7 @@ VirtualHost {
 
 Replace `example.com` with your domain name and modify the server paths where appropriate. Use `PHP5` instead of `PHP7` if your host does not support PHP v7. Uncomment the `TLSCertFile` line if you want to support secure connections. To forbid open access and switch HTTP to HTTPS only, uncomment the directive `RequireTLS = yes`. Hiawatha has support for Server Name Indication, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt! certificates, according to your virtual host configuration.
 
-Hiawatha does not use `.htaccess` file. If you wish to use clean URLs, paste the following [URL Toolkit for Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main `hiawatha.conf` file itself:
+Hiawatha does not use `.htaccess` files. If you wish to use clean URLs, paste the following [URL Toolkit for Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main `hiawatha.conf` file itself:
 
 ~~~ nginx
 UrlToolkit {

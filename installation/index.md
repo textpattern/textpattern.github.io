@@ -28,9 +28,10 @@ Before you can install Textpattern, you will need a MySQL database ready, and a 
 
 Record this information when you create the database and keep it handy. It will be used later in the setup process:
 
-* database login
+* database username
 * database password
 * database name
+* database server address and port
 
 Depending on your web host, your web host account username (or ID, whatever) may be prefixed on the database name and database login. If this is the case for you, it will be evident when creating the database with your web host.
 

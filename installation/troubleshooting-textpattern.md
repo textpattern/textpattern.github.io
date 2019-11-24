@@ -154,7 +154,7 @@ If your Runtime, Queries and Memory figures are all in or near the normal limits
 
 * JavaScript - does your page include JavaScript code? Try disabling it, it might be slow.
 * Counters and external stats - are you using an image or JavaScript link to an offsite 'hit counter', stats service, or a local stats application like Shortstat? Try removing the link to see if it makes a difference.
-* Links to off-site objects - does your page link to images, JavaScript, CSS or other objects on another web server? Do your pages include content from external sources such as Gravatars, del.icio.us or similar? Any of these could be the culprit.
+* Links to off-site objects - does your page link to images, JavaScript, CSS or other objects on another web server? Do your pages include content from external sources? Any of these could be the culprit.
 * Advertisements - banner, popup and text ads all work by loading content from another server. Try disabling them and measure the difference.
 * CSS - certain CSS techniques can cause choppy page loading and scrolling. In particular, 'fixed' background images and blocks can cause loading and scrolling problems. These problems are all on the browser side, and are unrelated to Textpattern or the server.
 

@@ -8,7 +8,7 @@ description: This article explains how to enable and disable visibility of hidde
 
 # Viewing hidden files in macOS Finder and file transfer applications
 
-Textpattern CMS releases include some files that have a `.` as the first character of the filename. These files are typically hidden in macOS Finder natively, though conversely many file transfer applications have a view option for showing these invisible files and some show all files by default.
+Textpattern CMS releases include some files that have a `.` as the first character of the filename. These files are typically hidden in macOS Finder natively. Many file transfer applications have a view option for showing these invisible files and some show all files by default.
 
 On this page:
 
