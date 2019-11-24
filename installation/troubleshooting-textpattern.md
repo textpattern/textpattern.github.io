@@ -216,13 +216,13 @@ You'll find some other pointers in @@TODO: link to Clean URLs don't work in Diag
 
 ### 404 Page Not Found
 
-If you see this, but the site works if you use `index.php` in the URL, uncomment (remove the # from) the following line in your `.htaccess` file:
+If you see this, but the site works if you use `index.php` in the URL, uncomment (remove the `#` from) the following line in your `.htaccess` file:
 
 ~~~
 #DirectoryIndex index.php index.html
 ~~~
 
-Restart your web server and, if that doesn't help or causes a 500 Internal Server error, contact your web host tech support and ask them about enabling `DirectoryIndex` for PHP files.
+If that doesn't help or causes a 500 Internal Server error, contact your web host tech support and ask them about enabling `DirectoryIndex` for PHP files.
 
 ### Database unavailable
 
@@ -236,4 +236,4 @@ Textpattern's memory usage is quite low - usually no more than a couple of megab
 
 Unless your server admin has set the PHP memory limit far too low (unlikely, but not impossible) the cause is probably a plugin. Some older archive page plugins work by loading all articles into memory at once. This could easily exhaust the available memory if you have a large number of articles.
 
-Disable your plugins one by one, until you find the culprit. If the cause is indeed a plugin, we suggest contacting its author about the problem. In some cases, the plugin's functionality could be replced with core [Textpattern tags](https://docs.textpattern.com/tags) which may be more memory efficient.
+Disable your plugins one by one, until you find the culprit. If the cause is indeed a plugin, we suggest contacting its author about the problem. In some cases, the plugin's functionality could be replaced with core [Textpattern tags](https://docs.textpattern.com/tags) which may be more memory efficient.

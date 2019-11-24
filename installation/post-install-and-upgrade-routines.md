@@ -55,7 +55,7 @@ A couple of the post-install routines apply to upgrading too.
 
 Chances are you don't need to change your default language at this point, or install new ones, but you will need to update the Textpacks you have installed. You'll see an "Update" link next to your installed language packs. Evidence of this link means you need to do what it says - update them. That's because Textpacks may have been modified since Textpattern's last version release, and you want to implement any such modifications or you may experience problems with the presentation of UI content elements. When updated you'll see the link change to a non-linked 'Up-to-date', and you're done.
 
-Be aware that sometimes in course of running your site, depending on the plugins you have installed, you may need the occasional Textpack update (or upload) independent of normal Textpattern releases. Thus get in the habit of checking the [Languages panel](https://docs.textpattern.com/administration/languages-panel) panel after installing plugins too, and/or verify with their developers if Textpack uploads are needed.
+Be aware that sometimes in the course of running your site, depending on the plugins you have installed, you may need the occasional Textpack update (or upload) independent of normal Textpattern releases. Thus get in the habit of checking the [Languages panel](https://docs.textpattern.com/administration/languages-panel) panel after installing plugins too, and/or verify with their developers if Textpack uploads are needed.
 
 ### Check diagnostics, again
 

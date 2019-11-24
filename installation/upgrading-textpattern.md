@@ -8,7 +8,7 @@ description: Upgrading is an essential part of maintaining good site security. W
 
 # Upgrading Textpattern
 
-Upgrading is an essential part of maintaining good site security. Whenever a new version of Textpattern is released, upgrade!
+Upgrading is an essential part of maintaining good site security and new Textpattern releases often bring performance & functionality enhancements. Whenever a new version of Textpattern is released, upgrade!
 
 On this page:
 
@@ -30,7 +30,7 @@ Due to the nature of Textpattern's evolution, upgrading a Textpattern instance o
 
 ## Download latest stable release
 
-Go to [textpattern.com/download](https://textpattern.com/download) and download the zip package of the latest version to your local machine. Unzip the package into a folder on your local drive. Give the folder a meaningful name like `textpattern-4.6.0`, for example.
+Go to [textpattern.com/download](https://textpattern.com/download) and download the archive of the latest version to your local machine. Unpack the package into a folder on your local drive. Give the folder a meaningful name like `textpattern-4.7.3`, for example.
 
 ## Backup
 
