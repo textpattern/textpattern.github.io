@@ -3,7 +3,7 @@ layout: document
 category: FAQs
 published: true
 title: "FAQ: Clean URLs don't work"
-description: These and similar problems happen when you use 'clean' URL mode on a server that doesn't support mod_rewrite in .htaccess.
+description: These and similar problems happen when you use 'clean' URL mode on a server that doesn't support `mod_rewrite` in .htaccess.
 ---
 
 # FAQ: Clean URLs don't work
@@ -16,11 +16,11 @@ The Textpattern [Diagnostics](https://docs.textpattern.com/administration/diagno
 
 The simplest solution is to select ‘?=messy’ for the [Article URL pattern](https://docs.textpattern.com/administration/preferences-panel#article-url-pattern) preference, and remove or move aside the *.htaccess* file.
 
-Some servers support mod_rewrite, but require some additional configuration in order to make it work properly.
+Some servers support `mod_rewrite`, but require some additional configuration in order to make it work properly.
 
-If your Apache web server supports mod_rewrite in *.htaccess*, you can find some suggestions for specific web hosts [in this forum thread](https://forum.textpattern.com/viewtopic.php?id=7702).
+If your Apache web server supports `mod_rewrite` in *.htaccess*, you can find some suggestions for specific web hosts [in this forum thread](https://forum.textpattern.com/viewtopic.php?id=7702).
 
-On servers that support mod_rewrite, the most common solution is to uncomment (remove the leading `#` from) this line in the *.htaccess* file:
+On servers that support `mod_rewrite`, the most common solution is to uncomment (remove the leading `#` from) this line in the *.htaccess* file:
 
 ``` apacheconf
 #RewriteBase /relative/web/path/
@@ -58,4 +58,4 @@ If you are configuring your own Apache server, or using a hosting arrangement th
 AllowOverride FileInfo
 ```
 
-If none of those changes work, or if they cause a [500 server error](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500), you will need to use ‘?=messy’ URLs as described earlier, or ask your hosting company for help.
+If none of those changes work, or if they cause a [500 server error](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500), you will need to use ‘?=messy’ URLs as described earlier, or ask your hosting provider for help.
