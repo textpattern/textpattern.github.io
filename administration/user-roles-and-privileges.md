@@ -261,7 +261,7 @@ When certain administration plugins are installed, they will use — and cause t
 * Home
 * Extensions
 
-These regions will appear in the navigation alongside Content, Presentation, and Admin. The administration plugin itself will add its associated functionality to a panel under these regions accordingly. The respective panels one might see in these regions depend on which plugins are installed that make use of them. 
+These regions will appear in the navigation alongside Content, Presentation, and Admin. The administration plugin itself will add its associated functionality to a panel under these regions accordingly. The respective panels one might see in these regions depend on which plugins are installed that make use of them.
 
 Table 2 represents the two extended regions. Unlike with default panels, the extended panels are generally not treated individually; rather, roles are treated at the section level, thus why individual panels are not show here. A given role will either have access to the regions (thus all their panels) or won't see them at all.
 
@@ -345,7 +345,7 @@ The Staff Writer is one of two roles primarily concerned with writing articles (
 
 * On the [Write panel](https://docs.textpattern.com/administration/write-panel): They can create, edit, publish, and delete their own articles. They can see the full articles of other user accounts, but not edit them in any way.
 * On the [Images panel](https://docs.textpattern.com/administration/images-panel): They can upload images and edit the ones they upload. They can see the images uploaded by other user accounts, but they cannot edit or delete those images.
-* On the [Files panel](https://docs.textpattern.com/administration/files-panel):  They can upload files and edit the ones they upload. They can see the names of files uploaded by other user accounts, but they cannot edit or delete those files.
+* On the [Files panel](https://docs.textpattern.com/administration/files-panel): They can upload files and edit the ones they upload. They can see the names of files uploaded by other user accounts, but they cannot edit or delete those files.
 * On the [Users panel](https://docs.textpattern.com/administration/users-panel): They can edit their own user account details, but not see anyone else's account information.
 
 ### Freelancer limitations
