@@ -2,11 +2,11 @@
 
 This repository drives the [Textpattern user documentation](https://docs.textpattern.com) website. Contributions are welcome and encouraged!
 
-## How to proceed 
+## How to proceed
 
 As follows:
 
-1. Review the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures). The who, what, when, where, (you know why), and how of it all. (If you get a 404, the initial draft is not finished. Skip to next item and please come back later.) 
+1. Review the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures). The who, what, when, where, (you know why), and how of it all. (If you get a 404, the initial draft is not finished. Skip to next item and please come back later.)
 2. Review the [user documentation guidelines](https://docs.textpattern.com/brand/user-docs-guide). These provide near everything you need to know for writing and editing documentation, specifically.
 3. Review the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide). This is Textpattern’s baseline editorial guidelines across all project sites and written material. Here will be high-level rules about orthographical style, spelling, punctuation, brand name usage, and so on. (If you get a 404, the document is still under major revision. Skip to next item and please come back later.)
 4. Continue according to skill level or interest…
@@ -14,7 +14,7 @@ As follows:
    * If editing existing pages only: Clone repository or use GitHub’s web interface, explained in next section.
 
 Whether you clone the repository or use the web interface to make changes, a pull request will be initiated and reviewed by repository owners.
- 
+
 ## Editing via GitHub’s web interface
 
 If you want to help *edit existing pages*, and have a GitHub account but would rather not fork or clone around, you can work directly via GitHub’s web interface.
