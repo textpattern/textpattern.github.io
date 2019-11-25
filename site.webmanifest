@@ -1,7 +1,7 @@
 {
   "short_name": "Textpattern Docs",
   "name": "Textpattern CMS Documentation",
-  "start_url": "./?utm_source=web_app_manifest",
+  "start_url": "https://docs.textpattern.com",
   "icons": [
     {
       "src": "/favicon-192x192.png",
