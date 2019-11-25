@@ -706,10 +706,10 @@ Use these when block code, [displayed quotations](#displayed-quotations), or [fi
 
 #### Example text
 
-Examples of text (words, sentences, or paragraphs) are styled using the selector, `.example--text`, and are distinguished from regular text by the light-blue, left border and the lighter tone of font colour:
+Examples of text (words, sentences, or paragraphs) are styled using the selector, `.example`, and are distinguished from regular text by the light-blue, left border and the lighter tone of font colour:
 
 An example paragraph for demonstration purposes. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-{: style="color:#888; margin-left:0; padding:.5em 0 .5em .5em; border-left:4px solid #c3edfa;"}
+{:.example}
 
 Add the selector using Kramdown notation on a new line directly under the example paragraph.
 
@@ -720,7 +720,7 @@ The example paragraph text here.
 
 #### Example list
 
-Less frequently needed are example lists, and these have their own selector, `.example--list`. Example list styling looks like example text styling plus list style types are changed to circles and positioned inside the list container, thus the need for a unique selector:
+Less frequently needed are example lists, and these have their own selector, `.list--example`. Example list styling looks like example text styling plus list style types are changed to circles and positioned inside the list container, thus the need for a unique selector:
 
 * item one
 * item two
