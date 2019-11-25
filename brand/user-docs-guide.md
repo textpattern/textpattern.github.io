@@ -720,7 +720,7 @@ The example paragraph text here.
 
 #### Example list
 
-Less frequently needed are example lists. Example list styling looks like example text styling plus list style types are changed to circles and positioned inside the list container, thus the need for a unique selector:
+Less frequently needed are example lists. Example list styling looks like example text styling plus unordered list style types are changed to circles:
 
 * item one
 * item two
