@@ -180,7 +180,6 @@ The **Date format** setting.
 
 Screen-readers will also pick up the strong format, which is appropriate here because the lack of title-case on such strings would otherwise make the extent of them undetectable to screen-readers without the added strength.
 
-
 #### Full sentences
 
 These types of strings are uniquely preferences labels (a.k.a. settings) in the Site, Admin, Publish, and Feeds sections of the Preferences panel. Specifically, they are the settings with labels posed as questions. For these labels, `emphasis` is used to distinguish them easier from regular text, which screen-readers also pick up on, for example:
@@ -747,7 +746,7 @@ You now can style such lists using specific selectors:
 * `{:.directory}` on child directories
 * `{:.document}` on files
 * `{:.image}` on images
-* `{:.list--tree}` for the list block
+* `{:.list--files}` for the list block
 
 These selectors are demonstrated in the next two sections for the two kinds of file-tree examples you may want to show.
 
@@ -766,7 +765,7 @@ File tree scope implies showing one or more open directories and all or some of 
     * {:.document} file3.ext
     * {:.image} image1.png
   * . . .
-{:.list--tree}
+{:.list--files}
 
 Using the selectors provided for this type of content, apply them using Kramdown’s inline attributes notation like this:
 
@@ -780,7 +779,7 @@ Using the selectors provided for this type of content, apply them using Kramdown
     * {:.document} file3.ext
     * {:.image} image1.png
   * . . .
-{:.list--tree}
+{:.list--files}
 ```
 
 Again, make sure file names include their type extensions, and do not add formatting inline.
@@ -799,7 +798,7 @@ Single directory scope implies all or some of the contents of one directory only
 * {:.document} file2.ext
 * {:.image} image1.png
 * . . .
-{:.list--tree}
+{:.list--files}
 
 The code to copy and modify is:
 
@@ -814,5 +813,5 @@ The code to copy and modify is:
 * {:.document} file2.ext
 * {:.image} image1.png
 * . . .
-{: .list--tree}
+{: .list--files}
 ```
