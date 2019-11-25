@@ -720,7 +720,7 @@ The example paragraph text here.
 
 #### Example list
 
-Less frequently needed are example lists, and these have their own selector, `.list--example`. Example list styling looks like example text styling plus list style types are changed to circles and positioned inside the list container, thus the need for a unique selector:
+Less frequently needed are example lists. Example list styling looks like example text styling plus list style types are changed to circles and positioned inside the list container, thus the need for a unique selector:
 
 * item one
 * item two
@@ -728,7 +728,7 @@ Less frequently needed are example lists, and these have their own selector, `.l
   * nested item two
 * item three
 * etc
-{:.list--example}
+{:.example}
 
 As before, simply add the notation on a new line directly under the list block:
 
@@ -739,7 +739,7 @@ As before, simply add the notation on a new line directly under the list block:
   * nested item two
 * item three
 * etc
-{:.list--example}
+{:.example}
 ```
 
 ### File-tree components
