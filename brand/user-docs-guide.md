@@ -746,6 +746,7 @@ You now can style such lists using specific selectors:
 * `{:.directory--open}` on parent directories
 * `{:.directory}` on child directories
 * `{:.document}` on files
+* `{:.image}` on images
 * `{:.list--tree}` for the list block
 
 These selectors are demonstrated in the next two sections for the two kinds of file-tree examples you may want to show.
@@ -763,6 +764,7 @@ File tree scope implies showing one or more open directories and all or some of 
     * {:.document} file1.ext
     * {:.document} file2.ext
     * {:.document} file3.ext
+    * {:.image} image1.png
   * . . .
 {:.list--tree}
 
@@ -776,6 +778,7 @@ Using the selectors provided for this type of content, apply them using Kramdown
     * {:.document} file1.ext
     * {:.document} file2.ext
     * {:.document} file3.ext
+    * {:.image} image1.png
   * . . .
 {:.list--tree}
 ```
@@ -794,6 +797,7 @@ Single directory scope implies all or some of the contents of one directory only
 * . . .
 * {:.document} file1.ext
 * {:.document} file2.ext
+* {:.image} image1.png
 * . . .
 {:.list--tree}
 
@@ -808,6 +812,7 @@ The code to copy and modify is:
 * . . .
 * {:.document} file1.ext
 * {:.document} file2.ext
+* {:.image} image1.png
 * . . .
 {: .list--tree}
 ```
