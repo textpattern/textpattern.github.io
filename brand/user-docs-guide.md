@@ -724,14 +724,20 @@ Less frequently needed are example lists, and these have their own selector, `.l
 
 * item one
 * item two
+  * nested item one
+  * nested item two
+* item three
 * etc
-{: style="color:#888; margin-left:0; padding:.5em 0 .5em .5em; border-left:4px solid #c3edfa; list-style:circle inside;"}
+{:.list--example}
 
 As before, simply add the notation on a new line directly under the list block:
 
 ```
 * item one
 * item two
+  * nested item one
+  * nested item two
+* item three
 * etc
 {:.list--example}
 ```
