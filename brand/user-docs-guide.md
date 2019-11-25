@@ -715,7 +715,7 @@ Add the selector using Kramdown notation on a new line directly under the exampl
 
 ```
 The example paragraph text here.
-{:.example--text}
+{:.example}
 ```
 
 #### Example list
@@ -733,7 +733,7 @@ As before, simply add the notation on a new line directly under the list block:
 * item one
 * item two
 * etc
-{:.example--list}
+{:.list--example}
 ```
 
 ### File-tree components
