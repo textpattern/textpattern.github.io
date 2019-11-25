@@ -42,9 +42,9 @@ register_callback('abc_myfunction','comment.save');
 
 // This will call your function and add the output (use return $mystuff) to the
 // comment-form, right after the msg-textarea. This is optional and basically a
-// way to immediately have the plugin working. You should offer tags for the user 
-// to add to his form, and then check for them, before returning anything from this 
-// callback
+// way to immediately have the plugin working. You should offer tags for the user
+// to add to their form, and then check for them, before returning anything from
+// this callback
 register_callback('abc_myotherfunction2','comment.form');
 
 
@@ -52,21 +52,21 @@ register_callback('abc_myotherfunction2','comment.form');
 // Use this rather than accessing $_POST/$_REQUEST directly.
 $form_array = getComment();
 
-// With the following two lines you can tell textpattern if you your 
+// With the following two lines you can tell textpattern if you your
 // plugin found out something noteworthy about comment
 $evaluator =&amp; get_comment_evaluator();
 $evaluator -&gt; add_estimate(SPAM, 0.6);
 
 // add_estimate() takes two values, the first must be one of the following constants:
 // SPAM, MODERATE, VISIBLE, RELOAD
-// the second value is a number between 0 and 1 which expresses the 
+// the second value is a number between 0 and 1 which expresses the
 // probability/certainty of your estimate. Further examples:
 
 $evaluator-&gt;add_estimate(SPAM, 0.3);
 $evaluator-&gt;add_estimate(VISIBLE, 1);
 
-// If you want to use key-pairs, hidden values etc. you can use the nonce-value and the 
-// corresponding secret value. The nonce is passed in the form, the secret is only in 
+// If you want to use key-pairs, hidden values etc. you can use the nonce-value and the
+// corresponding secret value. The nonce is passed in the form, the secret is only in
 // the DB. When checking a submitted form, use the values returned from getComment()
 $nonce = getNextNonce();
 $secret = getNextSecret();
@@ -79,7 +79,7 @@ Multiple plugins can be active at the same time and each will add their estimate
 * mark as spam ⇒ comment will be saved, but marked as spam
 * reload the preview page ⇒ give the user another try
 
-The administrator is later free to correct the comment-status from the comment-tab. Note, that the commenter will see a notification, that his comment is pending moderation for both unmoderated and spam. (The reason is not to leak information to spammers about what's happening.)
+The administrator is later free to correct the comment-status from the comment-tab. Note, that the commenter will see a notification, that their comment is pending moderation for both unmoderated and spam. (The reason is not to leak information to spammers about what's happening.)
 
 In some cases you may be absolutely sure that the comment is undeniably spam or otherwise unwanted. In that case, you can “kill” off the page-request right away and display an error message like this:
 
@@ -88,4 +88,3 @@ bc. txp_die('Unable to record the comment. Please contact the publisher of this 
 
 
 Execution of the whole script will stop immediately after showing the message. (The error-page can be customized by the user by creating a 412 error-page).
-

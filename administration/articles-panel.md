@@ -44,7 +44,7 @@ After entering your search criteria you start searching by selecting the search 
 
 As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
 
-**Examples:** You can search (or list) an article by its ID number or date posted. You can list all articles of an author, you even don't need the full author ID. Choose 'Author' and typing "adm" possibly is enough for the admin (provided no other author has "adm" in his ID). You can list all 'Drafts' (choose 'Status' and type "dr").
+**Examples:** You can search (or list) an article by its ID number or date posted. You can list all articles of an author, you even don't need the full author ID. Choose 'Author' and typing "adm" possibly is enough for the admin (provided no other author has "adm" in their ID). You can list all 'Drafts' (choose 'Status' and type "dr").
 
 ## List of articles
 
