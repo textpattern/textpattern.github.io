@@ -90,14 +90,14 @@ One way to start downsizing needless content in administration panel documentati
 An example referral statement to see the software itself:
 
 See intuitive feature in software.
-{: .example-text}
+{:.example}
 
 It’s safe to assume that anyone reading that particular line will have installed the software, and thus can refer to it. And if not, the documentation wouldn’t matter to them anyway.
 
 Here’s another useful referral statement. Use this one if a given feature is only clear from the additional information conveyed via a help tip:
 
 See help tip for this feature.
-{: .example-text}
+{:.example}
 
 Buy using statements like above in feature sections of page documentation, where the software or embedded help tips already make the feature’s purpose and function clear, we reduce needless information load on the page. This makes it easier for documentation users to scan pages for the instances when more elaboration is needed and provided.
 
@@ -116,7 +116,7 @@ Documentation is written from the perspective of an impersonal expert to the fir
 Therefore, documentation authors and editors should write in the second-person point of view, using the pronouns *you*, *your*, and *yours* when referring to the reader; the assumed administrator of a new Textpattern installation:
 
 Click your name in the Users panel to change your email.
-{: .example-text}
+{:.example}
 
 The second-person stance empowers the reader on their solo adventure. You're just an impartial voice over their shoulder guiding them along. But don't go overboard on the pronouns. If you're addressing the reader in every other sentence, you have revising to do.
 
@@ -127,7 +127,7 @@ Never use first-person singular (*I*, *me*, *my*) or plural (*we* and *us*) in u
 There is at least one exception to the 'second-person' rule. The third-person could be used in specific contexts, like when guiding the administrator on user accounts. Consider this hypothetical example:
 
 To change a user’s role, find and click their name in the Users panel . . .
-{: .example-text}
+{:.example}
 
 You are still in second-person mode, but you've introduced a third-party, the potential future collaborators of the reader. It could just as well be third-person singular (*his*, *her*). But for the vast majority of documentation, you will never need to do this.
 
@@ -158,14 +158,14 @@ The use of sentence-case for writing strings is one reason no single style or fo
 Headers and labels that are single-word strings require no additional formatting. Their capitalization alone, recognized by screen-readers, is sufficient for distinguishing these strings, as long as the context is made clear, for example:
 
 The Write panel.
-{: .example-text}
+{:.example}
 
 In this common-use example, the string is a proper adjective (i.e., a name being used as a adjective), which is always capitalized. The word ‘panel’, a subject noun, is not part of the string; rather, it provides the general *what* and *where* context of ‘Write’.
 
 Another example, albeit exaggerated, with all kinds of *what* and *where* context:
 
 Under the Presentation section of the back-end’s main navigation are five presentation panel links: Themes, Sections, Pages, Forms, and Styles.
-{: .example-text}
+{:.example}
 
 In this example we have six single-word strings being named, easily identified by their capitalization. ‘Presentation’ (a link label) is used as another proper adjective; in this case, modifying ’section’, a part of the main navigation. But the second instance of the word, ‘presentation’, is just a regular adjective modifying ‘panel links’. No capitalization is necessary there. And no specific presentation panel exists, anyway, so capitalizing it would be confusing. The remaining five strings are used as proper nouns of link labels.
 
@@ -176,7 +176,7 @@ Note that panel names and headers under the Presentation section of the back end
 Headers and labels also exist as multiple-word strings lacking terminal punctuation. But because of the sentence-case capitalization on interface strings, we can’t rely on capitalization alone to distinguish the entire string from regular text. To account for this, `**strong**` formatting is used, for example:
 
 The **Date format** setting.
-{: .example-text}
+{:.example}
 
 Screen-readers will also pick up the strong format, which is appropriate here because the lack of title-case on such strings would otherwise make the extent of them undetectable to screen-readers without the added strength.
 
@@ -185,7 +185,7 @@ Screen-readers will also pick up the strong format, which is appropriate here be
 These types of strings are uniquely preferences labels (a.k.a. settings) in the Site, Admin, Publish, and Feeds sections of the Preferences panel. Specifically, they are the settings with labels posed as questions. For these labels, `emphasis` is used to distinguish them easier from regular text, which screen-readers also pick up on, for example:
 
 Widowed words happen when the last word of a title wraps to a new line by itself. You may not like it. Prevent widowed words from happening by selecting ‘Yes’ for the *Prevent widowed words in article titles?* preference in the Publish section of the Preferences panel.
-{: .example-text}
+{:.example}
 
 As in earlier examples, additional strings are used (correctly) and lots of context is involved to make them clear. The string were concerned with here is the preference label posed as a question, distinguished by emphasized text. Without the emphasis, the string would be much harder to see and understand.
 
@@ -194,7 +194,7 @@ As in earlier examples, additional strings are used (correctly) and lots of cont
 Options strings can be thought of as two types: select box options and radio button choices. The latter is not really an option, technically speaking, but a label. Regardless, we distinguish them the same way because it probably fits a users mental model better: that these are choices to make for a given setting. The treatment to use, picked up by screen-readers, is single quotation marks, for example:
 
 If you want URL titles to be hyphenated, select ‘Hyphenated (title-like-this)’ from the select-box options for the preference, **Permalink title URL pattern**, in the Publish section of the Preferences panel.
-{: .example-text}
+{:.example}
 
 Again, this exaggerated example uses other string types and lots of context for demonstration. In actual documentation, much of the context will be clear, thus the exhausting specificity won’t be necessary. Ensure that it is clear, but only as much as needed.
 
@@ -209,21 +209,21 @@ The formatting to use is, preferably, <i>**italic-strong**</i> (`<i>**italic-str
 An example:
 
 The default page is aptly named <i>**default**</i>.
-{: .example-text}
+{:.example}
 
 Note how the word 'default' is used twice, but only one instance is correctly formatted as a template name.
 
 Another example:
 
 The markup controlling how comments are displayed is found in the <i>**comments_display**</i> form in the Forms panel.
-{: .example-text}
+{:.example}
 
 Note the underscore on core compound names. Also note that 'Forms' is a single-word header string denoting the name of the panel; used here as a proper adjective, and correctly distinguished from regular text by the capitalization. The word 'form', however, is just a common noun, thus not formatted.
 
 One more example combining another string type, an [inline directory name](#paths-directories-and-files-inline):
 
 A default stylesheet, named ***default***, must exist in the *styles* directory of a theme package. If it's missing, it will be created as an empty stylesheet upon importing the theme.
-{: .example-text}
+{:.example}
 
 #### Template names in lists
 
@@ -232,7 +232,7 @@ In the rare case you need a list of specific template names (sometimes needed in
 * article_listing
 * default
 * search_results
-{: .example-list}
+{:.example}
 
 The three things to note in this example are:
 
@@ -245,7 +245,7 @@ If the list items were adulterated with normal text, the expected formatting wou
 * the <i>**article_listing**</i> form
 * the <i>**default**</i> form
 * the <i>**search_results**</i> form
-{: .example-list}
+{:.example}
 
 But that would be sloppy list construction to avoid.
 
@@ -329,7 +329,7 @@ Embedded quotations are short strings of text from another source quoted inline.
 A few such strings are scattered around the administration side of the software. Following is a hypothetical documentation example that points out two such strings (links are part of the actual interface strings but not functional here):
 
 At bottom of every back-end panel are two short strings. One informs you of the software version used: <q>[Textpattern CMS]() (v4.7.3)</q>. The other provides a link to the top of the panel: <q>[Back to top]()</q>.
-{: .example-text}
+{:.example}
 
 It’s appropriate to mark up the embedded quotations using a `q` element, which adds the quotation marks automatically, for example:
 
@@ -366,12 +366,12 @@ When embedded (inline) in regular documentation text, these elements are italici
 A long hypothetical example for demonstration of various qualifying strings:
 
 The log in location for the software’s back end is located at <i>domain.tld/textpattern</i>. The front end is dynamically generated via the <i>index.php</i> file, though you don’t see it in the URL of your website. An <i>.htaccess</i> file is installed with the core software package in the same directory, whether a root directory, often <i>public_html</i> when provided by web hosts, or a subdirectory of your choosing. Many Apple users who setup local development will install Textpattern in their <i>Sites</i> directory (i.e. <i>/Users/name/Sites</i>), in which case the path to use for the <i>tmp</i> directory will be at <i>/Users/name/Sites/sitename/textpattern/tmp</i>.
-{: .example-text}
+{:.example}
 
 If you ever feel a particular path, directory, or file name needs to stand out more than others, don’t mark it up as `code`, which is inappropriate; instead, make it strong, too, for example:
 
 It’s called the <i>**tmp**</i> directory, not the ‘temp’ directory, and you find it at <i>…/textpattern/tmp</i>.
-{: .example-text}
+{:.example}
 
 But, obviously, don’t do this on every inline path, directory, or file name or it’s confused with the formatting of other string types.
 
@@ -548,15 +548,28 @@ Add more data items as needed.
 
 ### Notes
 
-Notes are used sparingly and in limited cases in Textpattern documentation; either as reference notes in tables, using a reference-mark system, or as general notes in main text, producing short _endnotes_ lists.
+Two kinds of notes are used in Textpattern documentation:
+
+* Table notes, using a reference-mark system.
+* Article notes, as part of a notes/bibliography system, producing an endnotes list.
 
 #### Notes in tables
 
-Reference-mark notes are a common annotation device in information design, and are specifically used in tables. The standard reference-mark system cycles through six marks, in this order: *, †, ‡, §, ¶, ‖.
+Table notes use a reference-mark system; a common annotation device in information design, and are specifically used in tables. The standard reference-mark system cycles through six marks — *, †, ‡, §, ¶, ‖ — in that order.
 
-When more than six notes are needed, and we assume here they never will be, the pattern repeats in duplicate (**, ††, ‡‡, §§, ¶¶, ‖‖), then triplicate, and so on. Only the first six single marks are provided for in CSS. Since these notes are in [HTML tables](#tables), they must also be structured with HTML.
+Add the entity values in ASCII notation as superscripts on the headers or data you want to notate, for example:
 
-Consider the following table, which is an example of the notes in effect.
+``` html
+<th scope="col">Entity&#x002a;</th>
+```
+
+Then add your corresponding note as a list item in the footer of the tables (i.e. in the `tfoot`), for example:
+
+```html
+<li>Unicode entities may be used as ASCII characters by prefixing values with <code>&#x</code> and adding a <code>;</code> at the end.</li>
+```
+
+Table 3 presents the entities to use, and demonstrates the notes as well, from which the above examples are taken.
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
@@ -614,38 +627,28 @@ Consider the following table, which is an example of the notes in effect.
     </table>
 </div>
 
-You must add the entity values in the table where needed, in the correct order, for example:
+The footer notes will appear with the appropriate reference marks automatically via CSS. Ensure the reference marks you add table headers or data match the correct order.
 
-``` html
-<th scope="col">Entity&#x002a;</th>
-```
-
-Then write the corresponding note in the footer `li`, in the same order. The entities are added to list items automatically. Don’t add them manually in list items.
+When more than six notes are needed, the pattern repeats in duplicate (**, ††, ‡‡, §§, ¶¶, ‖‖), then triplicate, and so on. However, only the first six single marks are provided for. Needing more would suggest your tables are too complex.
 
 #### Notes in main text
 
-Notes, technically speaking, are half of notes and bibliography referencing systems. The notes part enable citing sources in context of a topic or quotation, or enable authors to expand on ideas without over-bloating the article. Notes can also be used without bibliographies, like here.
+Notes used in main text are, technically speaking, half of notes and bibliography referencing systems. The notes part enable citing sources in context of a topic or quotation, or enable authors to expand on ideas without bloating the article. Notes can also be used without bibliographies, as we employ them in user documentation. But use notes sparingly. More than five or six to a page might be over doing it. Fewer notes are less distractions.
 
-But use notes sparingly. We’re not recording history, only providing how-to information. Fewer notes are less overhead for readers wanting to get something done.
-
-Notes are employed using Kramdown.[^notes] A note marker is first added to the end of a sentence (or clause), in context of the applicable topic, for example:
+Notes are employed using Kramdown.[^notes] First, a note marker is added to the end of a sentence (or clause), for example:
 
 . . . end of a sentence.[^marker]
-{: .example-text}
+{: .example}
 
-Then, at the bottom of that section (i.e. just before the next document header), add the corresponding note, which begins with the same marker notation plus a colon `:`, for example:
+Then, at bottom of that section, just before the next document header, add the corresponding note, beginning with the same marker notation plus a colon `:`, for example:
 
 ```
 [^marker]: Start of corresponding note . . .
 ```
 
-If you have multiple notes in a given section, continue the same way, making sure notes are in the order as they are marked in main text. Not because they have to be that way (Kramdown will render the correct order automatically), but because it’s logical.
+If you have multiple notes in a given section, continue the same way, making sure notes are in the order as they are first marked in text. Not because they have to be that way (Kramdown will render the correct order automatically), but because it’s logical convention, and it makes it easier for collaborators to follow.
 
-Having notes spread out through the document this way might seem strange at first, but it’s easier to find and edit them in context. By contrast, if notes are listed together at the end of a document (as needing done with Textile), you must jump up and down in the document (i.e. out of context) whenever revising them. Either way the resulting endnotes list is rendered at the end of the page (inside a pre-formatted `div`), but use the process described above, which is a collaboration standard for Textpattern documentation.
-
-Custom styles are used to provide a faux header in the endnotes `div` container. This provides proper visual heading of the back matter section, while keeping it out of the contents list (a.k.a. table of contents) that automatically targets `h2` through `h4` headers.
-
-[^notes]: While many markup languages, like Markdown, Kramdown, Textile, and so on call their notes functionality ‘footnotes’, it’s a misnomer, because what they really create are *endnotes*. Every good English style manual, like the <i>Oxford</i> and <i>Chicago</i> manuals, explain it to you, if not already obvious. The *foot-* and *end-* prefixes merely indicate *where* the notes are placed in published material, regardless of medium. The same style manuals refer to both types more generally as ‘notes’. So if you can’t be specific about it, be general.
+[^notes]: While many markup languages, like Markdown, Kramdown, Textile, and so on call their notes functionality ‘footnotes’, it’s a misnomer, because what they really create are *endnotes*. Every English style manual, like the one we use, will explain it. The *foot-* and *end-* prefixes merely indicate *where* the notes are placed in published material, regardless of medium. The style manuals also refer to both types more generally as ‘notes’. So if you can’t be specific, be general.
 
 ### Tables
 
