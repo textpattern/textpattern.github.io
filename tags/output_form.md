@@ -84,7 +84,7 @@ Suppose you want to manage the `<head>` section of your page template as a singl
     </title>
     <txp:css format="link" media="" />
     <meta name="generator" content="Textpattern CMS">
-    <meta name="robots" content="index, follow, noodp, noydir">
+    <meta name="robots" content="index, follow">
     <txp:feed_link flavor="rss" format="link" label="RSS" />
 </head>
 ~~~

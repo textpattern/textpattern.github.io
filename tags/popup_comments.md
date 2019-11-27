@@ -45,7 +45,7 @@ Tag will accept the following attributes (**case-sensitive**):
     </title>
     <meta name="generator" content="Textpattern CMS">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="robots" content="noindex, follow, noodp, noydir">
+    <meta name="robots" content="noindex, follow">
     <txp:css format="link" media="" />
 </head>
 <body class="popup-page">
