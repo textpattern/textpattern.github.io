@@ -149,6 +149,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * <span class="warning">dom</span>
 * dow/dow
 * dru/Drew
+* dry/[Destry](https://forum.textpattern.com/profile.php?id=1979)
 * dub/jamiew
 * dzd/Dragondz
 
