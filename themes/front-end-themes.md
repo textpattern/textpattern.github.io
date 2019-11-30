@@ -59,15 +59,13 @@ And your plugin names, if you developed any, would look like this:
 
 A Textpattern theme is a collection of *page* templates, *form* markup, stylesheets, and a manifest file with a little metadata; all packaged together in a single directory bearing the theme’s name. The single directory can be thought of as a ‘package’ and its contents can be thought of ‘assets’ organized in subdirectories by type. The [*manifest.json*](#the-manifest-json-file) file is talked about later, but let’s be clear on what the other assets are and what their function is.
 
-[Pages](https://docs.textpattern.com/administration/pages-panel) are your web page templates, primarily built with HTML and [Textpattern tags](https://docs.textpattern.com/tags). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](https://docs.textpattern.com/tags/output_form) tags), or as a combination of embedded markup and form includes.
-
-Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* get to know Textpattern tags! 
+[Pages](https://docs.textpattern.com/administration/pages-panel) are your web page templates, primarily built with HTML and [Textpattern tags](https://docs.textpattern.com/tags). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](https://docs.textpattern.com/tags/output_form) tags), or as a combination of embedded markup and form includes. Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* learn Textpattern tags! 
 
 [Forms](https://docs.textpattern.com/administration/forms-panel) are the named containers of markup components (conceptually the same as partials, snippets, or includes) for *inclusion* into page templates, or for nesting into other forms. Such ‘Russian doll’ construction of your website’s architecture using pages and forms enables building sophisticated website structures that are, again, easier to manage and maintain.
 
 [Styles](https://docs.textpattern.com/administration/styles-panel) are stylesheets that hold your CSS and need no further explanation; except to emphasize that, like pages, they must be associated to one or more sections of your website in order to rule the presentation of them.
 
-All assets are required in a theme package, even if not all types are used in a given theme. That seeming discrepancy is better understood after reading the [Theme package defaults](#theme-package-defaults) section later. And, again, pages and styles are assigned to website [sections](https://docs.textpattern.com/administration/sections-panel), while forms are simply components of markup to be pieced together however you want in pages or other forms.
+All assets are required in a theme package, even if not all types are used in a given theme. That seeming discrepancy is better understood after reading the [Theme package defaults](#theme-package-defaults) section later. Again, pages and styles are assigned to website [sections](https://docs.textpattern.com/administration/sections-panel), while forms are simply components of markup to be pieced together however you want in pages or other forms.
 
 ### Scope of possibilities
 
@@ -78,7 +76,7 @@ Textpattern has always allowed you to create a different *presentation* for your
 * Used to create different site structures, to a certain degree
 * Shared with the community, so others can benefit from your savvy design sense.
 
-Now we descend the ladder and get closer to the action! Everything from here on is framed in context of a fresh (out-of-the-box) install of the software, but the principles are the same whether your installation is brand new or you’ve been maintaining a site for years. As long as you’re using the [latest release](https://textpattern.com/start) of the software, it will make sense. Any exceptions to this rule are made clear in context.
+Now we descend the ladder and get closer to the action! Everything from here on is framed in context of a fresh (out-of-the-box) install of the software, but the principles are the same whether your installation is brand new or an old workhorse that’s up to date. As long as you’re using the [latest release](https://textpattern.com/start) of the software, it will make sense. Any exceptions to this rule are made clear in context.
 
 ## New themes
 
@@ -231,11 +229,11 @@ You will remain in that different theme context as you browse between the assets
 
 (Forthcoming)
 
-## Assigning themes to sections
+## Applying themes
 
 When you are ready to apply your theme and see how it looks on the front-side, you need to assign it to one or more [sections](https://docs.textpattern.com/administration/sections-panel) that are setup and ready to go. It’s assumed here that your sections *are* ready to go, so focus is on the assigning part. How you do this might depend on what your theme objectives are.
 
-### Same structure; different theme
+### Switching themes
 
 If you are using version 4.8 of the software, and you simply want to swap one theme for another across your website as it’s currently designed, return to the Themes panel and click the blue ‘Active’ link found at right of the desired theme’s name.
 
@@ -247,7 +245,7 @@ In situations where you have created the themes and know how your website is con
 
 Obviously you don’t want to use this feature if your own new theme is not ready, or not being developed locally or on a staging server. And you might need to fiddle a bit with themes imported from somewhere else. But the ‘Active’ link still makes it easier to switch from one theme to another across your entire site.
 
-### Same structure; different theme per section
+### Assigning multiple themes
 
 In this case you might keep the same general structure of your website but want to have a different layout and presentation for each section. But you can’t simply use the ‘Active’ links as before because that only switches one theme to the whole website.
 
@@ -263,19 +261,44 @@ Then select the appropriate theme, and the relevant page and style from the them
 
 In version 4.8, the controls are more integrated. After selecting the theme you want, the page and style options automatically change to reflect what is available in the selected theme package. Thus, whatever pages and styles are listed in the selection controls; they are tied to the right theme.
 
-### Different structure; different theme
+## Sharing themes
 
-(Forthcoming.)
+Sharing is about exporting and importing themes, and the software’s handling of shared themes when package contents are inconsistent with default requirements. In relation is the <i>themes</i> staging directory, found in your software’s installation location:
 
-## Theme portability and handling
+* {:.directory--open} {root}
+  * {:.directory} files
+  * {:.directory} . . .
+  * {:.directory} **themes** 	
+  * {:.document} . . .
+  * {:.document} index.php
+  * {:.document} . . .
+{:.list--files}
 
-Portability and handling refers to exporting and importing themes, and how Textpattern behaves in the latter case to ensure themes have the necessary minimum elements for operation.
-
-You have learned how to create and manage themes at this point, so take it to the next logical step and export one of your creations.   
+The **With selected** control in the Themes panel, highlighted in the following sections, refers to the <i>themes</i> directory location as ‘disk’.    
 
 ### Exporting themes
 
+You have learned how to create and manage themes at this point, so take it to the next logical step and export one for other people to use. Fame and fortune awaits!
 
+When your theme is tweaked to perfection and ready to be shared, go to the Themes panel, check the theme’s box in the table, and use the **With selected** controls to select ‘Export to disk’.
+
+![Select export to disk](https://docs.textpattern.com/img/select-export-to-disk.png)
+
+The selection will trigger another option to respond to by way of a checkbox: *Delete unused templates from disk on export*.
+
+![Select export option](https://docs.textpattern.com/img/select-export-option.png)
+
+If you read the help tip for that option, it says:
+
+> If checked, each template file in the selected theme(s) that does not have a corresponding item in the database will be permanently deleted from the disk-based theme. The result after completion of the action will be that your file system templates will reflect exactly what is in the database.
+
+In other words, Textpattern is making a comparison between the theme package you want to export from the Themes panel (i.e. the theme ‘in the database’) and any similarly named theme that might be sitting in the themes directory (i.e. the ‘disk-based’ theme). So it’s asking, if any asset files in the disk-based version do not have similarly named files in the database version (the one you are exporting), do you want those files deleted as part of the exportation action?
+
+This is generally a good idea, and the check box is ticked by default. This ensures that after exportation, there is a direct match between the database version (in the Themes panel) and the version on disk (in the <i>themes</i> directory).
+
+Click the Go button and confirm when asked if you are sure.
+
+You can now move or copy the exported theme (the one on disk) to a new location where others may download it for use. Whatever location you anticipate making it available from, is the URL that you should have entered in the Website field of the theme’s metadata.
 
 ### Importing themes
 
