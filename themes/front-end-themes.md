@@ -303,17 +303,17 @@ Unlike with exporting themes that you create, where the theme being exported is 
 * No external themes exist in the <i>themes</i> directory
 * No external themes exist in the <i>themes</i> directory that are not already listed in the Themes panel table.
 
-When an external theme has been added to the <i>themes</i> directory to defy the conditions above, you’ll see the contextual menu appear at top of the Themes panel, enabling you to ‘import’ the new external theme(s) that are sitting there.
+When an external theme has been added to the <i>themes</i> directory, defying the conditions above, you’ll see the contextual menu appear at top of the Themes panel, enabling you to ‘import’ the new external theme(s) that are sitting there.
 
 ![Import theme menu](https://docs.textpattern.com/img/import-theme-menu.png)
 
-You can then use the menu to select the theme you’re after and initially Import it to the themes table.
+You can then use the menu to select the theme you are after and initially ‘Import’ it to the themes table.
 
 ![Import theme menu select](https://docs.textpattern.com/img/import-theme-menu-select.png)
 
-At this point the theme is available to use and edit as you would normally do with any theme in your Themes panel.
+At this point the theme is available to use and/or modify as you would any theme in your Themes panel.
 
-If you later delete the theme from the Themes panel and not the package sitting in the <i>themes</i> directory the contextual menu at top of the Themes panel appears again with the external theme appearing in the drop-down menu, ready to be imported again if you so desire, or not. Only when all external themes sitting in the <i>themes</i> directory are in the Themes panel table too, will the dropdown not be present.
+If you later delete the theme from the Themes panel and not the equivalent package sitting in the <i>themes</i> directory, the contextual menu at top of the Themes panel appears again with the external theme appearing in the drop-down menu, ready to be imported again if you so desire, or not. Only when all external themes sitting in the <i>themes</i> directory are in the Themes panel table, too, will the dropdown not be present.
 
 ## Textpattern handling of imported themes
 
