@@ -135,7 +135,7 @@ Using an existing theme package as a guide for your efforts is a good way to get
 
 This does not mean start working directly on the default theme, or you will be doing development on an active (live) theme and changing its nature. Instead, duplicate the default theme and turn it into a new one.
 
-While these instructions describe using the default theme (the only theme available in an out-of-the-box context of the software), you could duplicate any existing theme in the Themes panel; one that might have the kind of website structure you want to work closer with.
+While these instructions describe using the default theme (the only theme available in an out-of-the-box context of the software), you could duplicate any existing theme in the Themes panel; such as one that might have the kind of website structure you want to work closer with.
 
 The following two approaches to duplication are the same regardless of what theme you duplicate.
 
@@ -185,19 +185,17 @@ There is no confirmation dialogue asking if you are sure. You are simply taken b
 
 ## Active versus non-active themes
 
-You can tell from a glance in the Themes panel if a given theme is active or not.
-
-In software versions 4.7 and 4.8, look under the Sections column of the themes table. Any theme with ‘0’ section associations is not active.
+You can tell from a glance in the Themes panel if a given theme is active or not. Look under the Sections column of the themes table. Any theme with ‘0’ section associations is not active (i.e. not live on the front-end).
 
 ![Sections column](https://docs.textpattern.com/img/sections-column.png)
 
-When a theme is not active, you can work on the associated assets without concern for problems on your website.
+When a theme is not active, you can work on the associated assets without concern for it impacting website visitors or any other problems.
 
-In version 4.8 a new feature is introduced. Look under the Name column of the themes table. Any theme with a blue ‘Active’ link is not active (i.e. not live on the front-end). But when the link is green, the theme is active.
+In version 4.8, soon, a new feature is introduced. Under the Name column of the themes table at right of the name will be an ‘Active’. When the link is blue, the theme is not active. When the link is green, the theme is active.
 
 ![Active theme indicator](https://docs.textpattern.com/img/active-theme-indicator.png)
 
-A little more is happening behind the scenes, however, that you must be aware of. See [Same structure; different theme](#same-structure-different-theme) for more on the ‘Active’ feature’s abilities and limits.
+More about using this feature and what is happening behind the scenes is presented in [Same structure; different theme](#same-structure-different-theme).
 
 ## Assets association to themes
 
