@@ -313,7 +313,7 @@ You can then use the menu to select the theme you are after and initially ‘Imp
 
 At this point the theme is available to use and/or modify as you would any theme in your Themes panel.
 
-If you later delete the theme from the Themes panel and not the equivalent package sitting in the <i>themes</i> directory, the contextual menu at top of the Themes panel appears again with the external theme appearing in the drop-down menu, ready to be imported again if you so desire, or not. Only when all external themes sitting in the <i>themes</i> directory are in the Themes panel table, too, will the dropdown not be present.
+If you later delete the theme from the Themes panel and not the equivalent package sitting in the directory, breaking the second condition above, the theme important menu appears again at top of the Themes panel with the external theme appearing in the drop-down menu. You can then import the theme again, if so desired, or use the appearance of the menu as a reminder that the package in the themes directory also needs deleted. Only when all external themes sitting in the <i>themes</i> directory are in the Themes panel table, too, will the dropdown not be present.
 
 ### Updating imported themes
 
