@@ -141,11 +141,7 @@ The following two approaches to duplication are the same regardless of what them
 
 One way to duplicate the default theme is via the **With selected** controls that work in combination with the check boxes in the themes table.
 
-Proceed as follows:
-
-1. Check the box next to the default theme in the themes table.
-2. Click the **With 1 selected**… menu just below the table and select the ‘Duplicate’ option.
-3. Click ‘OK’ when asked if you are sure. 
+Proceed by checking the box next to the default theme in the themes table, then selecting the ‘Duplicate’ option from the **With 1 selected**… menu just below the table, and, finally, clicking ‘OK’ when asked if you are sure. 
 
 ![Duplicate via with selected controls](https://docs.textpattern.com/img/duplicate-via-with-selected-controls.png)
 
@@ -179,7 +175,7 @@ When done editing the form, click the ‘Duplicate’ link under the form, at ri
 
 There is no confirmation dialogue asking if you are sure. You are simply taken back to the default panel view where your new (revised) theme is added to the themes table.
 
-![Revised theme name](https://docs.textpattern.com/img/revised-theme-name.png)
+![New theme created](https://docs.textpattern.com/img/new-theme-created.png)
 
 ## Contexts and associations
 
@@ -207,7 +203,7 @@ Under the Pages, Forms, and Styles columns of the themes table are linked number
 
 When you duplicate the default theme (as the next image depicts), or any other theme, the existing assets in the source theme are cloned as well, logically, thus why the duplicated themes have the same number.
 
-![Sections and assets columns](https://docs.textpattern.com/img/sectioins-and-assets-columns.png)
+![Sections and assets columns](https://docs.textpattern.com/img/sections-and-assets-columns.png)
 
 Click any of these links and you are taken to the respective panels with the indicated number of assets in context. For example, clicking a ‘3’ under the Pages column for the duplicated theme lands you on the Pages panel with the associated three pages listed:
 
@@ -282,7 +278,7 @@ You have learned how to create and manage themes at this point, so take it to th
 
 When your theme is tweaked to perfection and ready to be shared, go to the Themes panel, check the theme’s box in the table, and use the **With selected** controls to select ‘Export to disk’ (i.e. to the <i>themes</i> directory).
 
-![Select export to disk](https://docs.textpattern.com/img/select-export-to-disk.png)
+![Select export](https://docs.textpattern.com/img/select-export.png)
 
 The selection will trigger another option to respond to by way of a checkbox: *Delete unused templates from disk on export*.
 
@@ -292,13 +288,13 @@ If you read the help tip for that option, it says:
 
 > If checked, each template file in the selected theme(s) that does not have a corresponding item in the database will be permanently deleted from the disk-based theme. The result after completion of the action will be that your file system templates will reflect exactly what is in the database.
 
-In other words, Textpattern is making a comparison between the theme package you want to export from the Themes panel and any similarly named theme that might be sitting in the themes directory. So it’s asking, if any asset files in the directory version do not have similarly named files in the panel version (the one you are exporting), do you want those files deleted as part of the exportation action?
+In other words, Textpattern is making a comparison between the theme package you want to export from the Themes panel and any similarly named theme that might be sitting in the themes directory. So it’s asking, if there is such a theme there, and any asset files in it do not have similarly named files in the panel version (the one you are exporting), do you want those files deleted as part of the exportation action?
 
 This is generally a good idea, and the check box is ticked by default. This ensures that after exportation, there is a direct match between the database version (in the Themes panel) and the version on disk (in the <i>themes</i> directory).
 
 Click the Go button and confirm when asked if you are sure.
 
-You can now move or copy the exported theme (the one on disk) to a new location where others may download it for use. Whatever location that is, make sure the URL has been entered in the Website field of the theme’s metadata.
+You can now move or copy the exported theme (the one on disk) to a new location where others may download it for use. Whatever location that is, make sure the URL has been entered in the Website field of the theme’s metadata (refer to [duplicating a theme](#duplicate-via-the-with-selected-control)).
 
 ### Importing themes
 
