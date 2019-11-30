@@ -321,24 +321,22 @@ If you later delete the theme from the Themes panel and not the equivalent packa
 
 ## System handling of imported themes
 
-To ensure a theme imported into your installation does not break your front-end, Textpattern fluffs imported theme packages with any missing essential elements otherwise needed by the default system. This is useful, say, when theme designers choose the hack-from-scratch approach, instead of the sensible create-via-Textpattern approachs, and distribute themes that lack subdirectories or default files.    
+To ensure a theme imported into your installation does not break your front-end, Textpattern augments imported theme packages with any missing essential elements otherwise needed by the default system. This is useful, say, when theme designers choose the hack-from-scratch approach, instead of the sensible create-via-Textpattern approaches described in this document, and distribute themes that lack subdirectories or default files that Textpattern expects. 
 
-The following sections describe the various assets of a default theme package, and what Textpattern does when any imported theme strays from the norm. But don’t worry, package augmentation is a relatively soft process, ensuring theme’s mostly work as intended, and allowing manual tweaking thereafter to bring them into better alignment with your own site structure.
+The following sections describe the various assets of a default theme package, and what Textpattern does when any imported theme strays from the norm. But don’t worry, package augmentation is a relatively soft process, ensuring theme’s mostly work as intended, and allowing manual tweaking thereafter, if needed, to bring them into better alignment with your website’s structure.
 
 ### The *manifest.json* file
 
 Theme packages will include the essential <i>manifest.json</i> file, in which the following six metadata items are found:
 
-* `title`
-* `version`
-* `description`
-* `author`
-* `author_uri`
-* `txp-type`
+* title
+* version
+* description
+* author
+* author_uri
+* txp-type
 
-The first five items reflect the last five fields in the **New theme** and **Edit theme** form described in earlier sections (n.b. the `author_uri` data item equals the Website field). So if you provide data for all six fields when creating a theme, these five metadata items will be filled in the <i>manifest.json</i> file with the same data values.
-
-Here is the <i>manifest.json</i> file for the default Textpattern theme, for example:
+The first five items reflect the last five fields in the **New theme** and **Edit theme** form described in earlier sections (n.b. the `author_uri` data item equals the Website field). So if you provide data for all six fields when creating a theme, these five metadata items will be filled in the <i>manifest.json</i> file with the same data values. Following is the <i>manifest.json</i> file for the default Textpattern theme, for example:
 
 ``` json
 {
@@ -351,7 +349,7 @@ Here is the <i>manifest.json</i> file for the default Textpattern theme, for exa
 }
 ```
 
-Again, as detailed earlier in this document, only two fields are mandatory (Name and Title), and only two more (Version and Author) will receive default data if the remaining four fields are ignored. So if the four optional fields are skipped at time of creating the theme, the manifest file will look similar to this:   
+Again, as detailed earlier in this document, only two fields are mandatory (Name and Title), and only two more (Version and Author) will be filled automatically with default data if the remaining four fields are ignored. So if the four optional fields are skipped at time of creating the theme, the manifest file will look similar to this:   
 
 ```json
 {
@@ -364,7 +362,7 @@ Again, as detailed earlier in this document, only two fields are mandatory (Name
   }
 ```
 
-The last item (`txp-type`) and it’s associated value is a constant; it must always exist and never change. The other five  items can be changed anytime via the Themes panel. As already described earlier, click the theme’s name in the Name column of the themes table to bring up the form and its fields for editing.
+The last item (`txp-type`) and it’s associated value is a constant; it must always exist and never change. The other five  items can be changed anytime via the Themes panel, as already described earlier. Click the theme’s name in the Name column of the themes table to bring up the **Edit theme** form.
 
 ![Click theme name](https://docs.textpattern.com/img/click-theme-name.png)
 
