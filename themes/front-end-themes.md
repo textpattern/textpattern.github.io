@@ -315,15 +315,19 @@ At this point the theme is available to use and/or modify as you would any theme
 
 If you later delete the theme from the Themes panel and not the equivalent package sitting in the <i>themes</i> directory, the contextual menu at top of the Themes panel appears again with the external theme appearing in the drop-down menu, ready to be imported again if you so desire, or not. Only when all external themes sitting in the <i>themes</i> directory are in the Themes panel table, too, will the dropdown not be present.
 
-## Textpattern handling of imported themes
+### Updating imported themes
 
-To ensure a given theme imported into your installation does not literally break everything, Textpattern uses a few safeguards when importing themes. It’s all centred around an expected default structure. Any theme package that does not have a minimum default structure will be ‘augmented’ by Textpattern automatically upon importation. This is useful, say, when theme designers choose the hack-from-scratch approach versus the sensible create-via-Textpattern approach.    
+(Forthcoming)
 
-The following sections describe the various assets of a default theme package, and describe what Textpattern does when any imported theme strays from the norm. But don’t worry, Textpattern is relatively forgiving of differences in structure and that’s the whole point of augmenting at the import stage, to ensure something exists when it doesn’t so the theme works as intended.
+## System handling of imported themes
+
+To ensure a theme imported into your installation does not literally break your front-end, Textpattern uses a few safeguards when importing. It’s centred around a default package structure that matches the minimum essential assets needed by Textpattern to function correctly. Any theme package that does not have the minimum essential structure will be ‘augmented’ by Textpattern automatically upon importation. This is useful, say, when theme designers choose the hack-from-scratch approach, instead of the sensible create-via-Textpattern approach, and distribute themes that lack essential files or the expected package organization.    
+
+The following sections describe the various assets of a default theme package, and what Textpattern does when any imported theme strays from the norm. But don’t worry, Textpattern is relatively forgiving of differences in package contents and organization. That’s the whole point of augmenting imported packages at the import state; to ensure theme’s mostly work as intended, and can be manually tweaked thereafter to bring them into better alignment with your own site structure.
 
 ### The *manifest.json* file
 
-The initial theme directory will include a <i>manifest.json</i> file, in which the following six metadata items are found:
+Theme packages will include the essential <i>manifest.json</i> file, in which the following six metadata items are found:
 
 * `title`
 * `version`
@@ -332,9 +336,9 @@ The initial theme directory will include a <i>manifest.json</i> file, in which t
 * `author_uri`
 * `txp-type`
 
-Note that the first five of these metadata items reflect the last five fields in the **New theme** creation form mentioned above. (N.b. The **Theme website** field equals the `author_uri` data item.) So if you provide data for all six fields when creating a theme, these metadata items will be filled in the <i>manifest.json</i> file with the same data values.
+The first five items reflect the last five fields in the **New theme** and **Edit theme** form described in earlier sections (n.b. the `author_uri` data item equals the Website field). So if you provide data for all six fields when creating a theme, these five metadata items will be filled in the <i>manifest.json</i> file with the same data values.
 
-For example, here’s the <i>manifest.json</i> file for the default Textpattern theme:
+Here is the <i>manifest.json</i> file for the default Textpattern theme, for example:
 
 ``` json
 {
@@ -347,34 +351,28 @@ For example, here’s the <i>manifest.json</i> file for the default Textpattern 
 }
 ```
 
-As mentioned earlier, only two fields of the six offered in the **New theme** creation form are mandatory. If the remaining four fields are skipped when creating the theme, then only two metadata items — `title` and `txp-type` — will have values, and the file will look similar to this:   
+Again, as detailed earlier in this document, only two fields are mandatory (Name and Title), and only two more (Version and Author) will receive default data if the remaining four fields are ignored. So if the four optional fields are skipped at time of creating the theme, the manifest file will look similar to this:   
 
 ```json
 {
-"title": "The Human-friendly Title",
-  "version": "unknown",
+"title": "My New Theme",
+  "version": "0.0.1",
   "description": "none",
-  "author": "unknown",
+  "author": "username",
   "author_uri": "none",
   "txp-type": "textpattern-theme"
   }
 ```
 
-The last item (`txp-type`) and it’s associated value is a constant; it must always exist and never change. The other five  items, however, you can change anytime by editing the field values in the Themes panel. Simply click the theme’s name in the Name column of the table to bring up the form and it’s fields.
+The last item (`txp-type`) and it’s associated value is a constant; it must always exist and never change. The other five  items can be changed anytime via the Themes panel. As already described earlier, click the theme’s name in the Name column of the themes table to bring up the form and its fields for editing.
 
 ![Click theme name](https://docs.textpattern.com/img/click-theme-name.png)
 
-The form will now be headed as **Edit theme** (instead of **New theme**), and the existing field values will be presented for editing.
-
-![Edit theme fields](https://docs.textpattern.com/img/edit-theme-fields.png)
-
-At this point it’s assumed you have just created a new theme and are now ready to add some page, form, and style templates to it. Before presenting how to do that, consider the default structure of a theme package.
-
 ### Structure of default theme
 
-Within the theme directory is the <i>manifest.json</i> file, as already mentioned, and all the templates. The templates are organized into subdirectories reflecting default Textpattern structure. Form templates, especially, have greater subdirectory division, reflecting the different form types in the [Forms panel](https://docs.textpattern.com/administration/forms-panel). All page and form template files are Textpattern file format (i.e. *.txp*), while styles templates are, of course, cascading stylesheets format (i.e. *.css*).
+In addition to the manifest file are the page and form templates and the styles, all organized into subdirectories reflecting default Textpattern structure. Form templates, especially, have greater subdirectory division, reflecting the different form types in the [Forms panel](https://docs.textpattern.com/administration/forms-panel). All page and form template files are Textpattern file format (i.e. *.txp*), while styles are, of course, cascading stylesheets format (i.e. *.css*).
 
-Following is the default theme package structure as of version 4.7. (You may also inspect the [latest package distribution](https://github.com/textpattern/textpattern-default-theme/tree/master/dist) in the repository):
+Following is the default theme package structure that Textpattern expects and accounts for, whether or not a given element is actually needed in a theme:
 
 * {:.directory--open} abc_theme_name
   * {:.directory--open} pages
@@ -402,7 +400,7 @@ Following is the default theme package structure as of version 4.7. (You may als
   * {:.document} manifest.json
 {:.list--files}
 
-You should understand the default package structure, and how Textpattern functions when *importing* a theme that does not include all of the default elements.
+Each asset type and Textpattern’s behaviour in relation upon importing themes is described in the remaining sections.
 
 [^archive]: The <i>archive.txp</i> page, though included in the default theme package, is not a required page template, nor is it used (i.e. associated with a section) in the [default website structure](https://dev-demo.textpattern.co/), which is why you don’t see an Archive page in the main navigation. This page is subject to being removed in a future release of the default theme, but you may freely use or remove it in your own theme package, no problem. 
 
@@ -417,29 +415,13 @@ The *pages* directory is required in a theme package because two essential pages
   * . . .
 {:.list--files}
 
-If the above two pages are missing in a theme when imported into Textpattern, the software will create them automatically as empty pages.  
+If the above two pages are missing at importation, the software will create them automatically as empty pages. If the entire *pages* directory is missing, Textpattern will create it, and the two essential pages will be included with their default contents.
 
-If the entire *pages* directory is missing, it will also be created, and the two essential pages will be included with their default contents. (See the [latest package distribution](https://github.com/textpattern/textpattern-default-theme/tree/master/dist) if you ever need to know what the default page contents are).
-
-Future version updates of the theme package (i.e. importation of the theme again after the theme author releases a new version) will not overwrite the existing essential pages initially created.
+Future updates of the imported theme (i.e. after the theme author releases a new version) will not overwrite the elements Textpattern added unless the new theme version provides new elements since missing.
 
 #### The *forms* directory
 
-The *forms* directory contains seven subdirectories to organize form files by the same form types built into core Textpattern:
-
-* article
-* category
-* comment
-* file
-* link
-* misc
-* section
-
-The *forms* directory is optional. If this is missing in a theme package, it’s presumed the theme author did not use any forms in their site structure design.
-
-When used, however, all form files must have unique names — across core forms and any custom forms you create — and core form names will never be changed from their defaults. Compound form names should use underscores between words (e.g. <i>**custom_form_name**</i>) and the resulting template file name too (i.e. <i>custom_form_name.txp</i>).
-
-When the *forms* directory is included in a theme package, four subdirectory types and eight form templates must exist, as follows:
+The optional *forms* directory contains seven subdirectories, the names of which match the form type names built into core Textpattern:
 
 * {:.directory--open} forms
   * {:.directory--open} article
@@ -458,23 +440,15 @@ When the *forms* directory is included in a theme package, four subdirectory typ
   * . . .
 {:.list--files}
 
-If any of the form template files are missing in a theme package, Textpattern will automatically create them as empty files on first import of the theme.
+When forms are used in a theme, all form files must have unique names — across core forms and any custom forms created — and core form names will never be changed from their defaults. Compound form names use underscores between words (e.g. <i>**custom_form_name**</i>) and the resulting template file name should match (i.e. <i>custom_form_name.txp</i>).
 
-If the entire *forms* directory is missing, it will be created on the first import, including the form type subdirectories and the eight form template files indicated above with default template contents.
+If any of the form template files are missing in a theme package at import, Textpattern will automatically create them as empty files on first import of the theme. If the entire *forms* directory is missing, the full forms tree above will be created, and the eight form files will contain default Textpattern markup.
 
-Future version updates of the theme will not overwrite the added directories and form templates.
+Future version updates of the theme will not overwrite the added directories and form templates unless the updated theme provides these elements as changes.
 
 #### The *styles* directory
 
-The *styles* directory contains the stylesheet templates in the format of *.css* files. While using styles served from Textpattern’s database is optional,[^css] a theme package nevertheless must have the *styles* directory and the contained *default.css* file present.
-
-If the file is missing in the *styles* directory of a theme package, Textpattern will automatically create it as an empty stylesheet on first import of the theme.  
-
-If the *styles* directory is missing in a themes package, an empty directory with a blank *default.css* file will be created on the first import.
-
-The files will not be overwritten in future software updates.
-
-[^css]: For example, you could simply add a <link> in your `head` markup to a static stylesheet file on your server.
+The optional *styles* directory contains the stylesheet file. If the file is missing in the *styles* directory of a theme package, Textpattern will automatically create it as an empty stylesheet on first import of the theme. If the *styles* directory is missing, an empty directory with a blank *default.css* file will be created on the first import. The default files will not be overwritten in future updates of the theme unless the new theme version provides files by the same name.
 
 ## Removing themes
 
