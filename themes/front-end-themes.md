@@ -321,9 +321,9 @@ If you later delete the theme from the Themes panel and not the equivalent packa
 
 ## System handling of imported themes
 
-To ensure a theme imported into your installation does not literally break your front-end, Textpattern uses a few safeguards when importing. It’s centred around a default package structure that matches the minimum essential assets needed by Textpattern to function correctly. Any theme package that does not have the minimum essential structure will be ‘augmented’ by Textpattern automatically upon importation. This is useful, say, when theme designers choose the hack-from-scratch approach, instead of the sensible create-via-Textpattern approach, and distribute themes that lack essential files or the expected package organization.    
+To ensure a theme imported into your installation does not break your front-end, Textpattern fluffs imported theme packages with any missing essential elements otherwise needed by the default system. This is useful, say, when theme designers choose the hack-from-scratch approach, instead of the sensible create-via-Textpattern approachs, and distribute themes that lack subdirectories or default files.    
 
-The following sections describe the various assets of a default theme package, and what Textpattern does when any imported theme strays from the norm. But don’t worry, Textpattern is relatively forgiving of differences in package contents and organization. That’s the whole point of augmenting imported packages at the import state; to ensure theme’s mostly work as intended, and can be manually tweaked thereafter to bring them into better alignment with your own site structure.
+The following sections describe the various assets of a default theme package, and what Textpattern does when any imported theme strays from the norm. But don’t worry, package augmentation is a relatively soft process, ensuring theme’s mostly work as intended, and allowing manual tweaking thereafter to bring them into better alignment with your own site structure.
 
 ### The *manifest.json* file
 
