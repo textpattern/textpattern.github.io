@@ -259,7 +259,7 @@ In version 4.8, the controls are more integrated. After selecting the theme you 
 
 ## Sharing themes
 
-Sharing is about exporting and importing themes, and the software’s handling of shared themes when package contents are inconsistent with default requirements. In relation is the <i>themes</i> staging directory, found in your software’s installation location:
+Sharing is about exporting and importing themes, and the software’s handling of shared themes when package contents are inconsistent with default requirements. In relation to it all is the staging directory, <i>themes</i>, in the root of your software’s installation location:
 
 * {:.directory--open} {root}
   * {:.directory} files
@@ -270,7 +270,7 @@ Sharing is about exporting and importing themes, and the software’s handling o
   * {:.document} . . .
 {:.list--files}
 
-When talking about themes between the Themes panel and the <i>themes</i> directory, Textpattern interface strings and pophelp will refer to them as ‘themes in the database’ (Themes panel) and ‘themes on the disk’ or ‘disk-based themes’ (<i>themes</i> directory).     
+**A point of clarification**: When talking about themes between the Themes panel and the <i>themes</i> directory, Textpattern interface strings and pophelp will sometimes use technical terms like ‘database themes’ and ‘disk themes’. Understand that any reference to a ‘theme in the database’, or ‘database theme’, or what have you is meaning themes already created in — or imported into — the Themes panel. Likewise, any reference to ’themes on the disk’ or ‘disk-based themes’, and so on is meaning theme packages sitting inside the <i>themes</i> directory highlighted above. Just so you know.     
 
 ### Exporting themes
 
@@ -298,7 +298,7 @@ You can now move or copy the exported theme (the one on disk) to a new location 
 
 ### Importing themes
 
-Unlike with exporting themes that you create, where the theme being exported is ‘already in play’, as they say, in the Themes panel (i.e. in the database), importing requires first getting the external theme — whatever cool theme you find from the [Themes website](https://themes.textpattern.com), or other community source — into play to begin with. What that means is, if you have no external themes transferred to the themes directory (i.e. on disk), you won’t find any way to import a theme no matter how hard you look. That’s because the initial import theme menu is contextual to the <i>themes</i> directory. If either of the following two conditions are true, you won’t see the menu in the Themes panel:
+Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database. What that means is, if you have no external themes transferred to the <i>themes</i> directory (i.e. on disk), or none there are different from what are already tabled in the Themes panel, you won’t find any way to import a theme no matter how hard you look. That’s because the initial import theme menu is contextual to the <i>themes</i> directory. If either of the following two conditions are true, you won’t see the menu in the Themes panel:
 
 * No external themes exist in the <i>themes</i> directory
 * No external themes exist in the <i>themes</i> directory that are not already listed in the Themes panel table.
@@ -313,11 +313,11 @@ You can then use the menu to select the theme you are after and initially ‘Imp
 
 At this point the theme is available to use and/or modify as you would any theme in your Themes panel.
 
-If you later delete the theme from the Themes panel and not the equivalent package sitting in the directory, breaking the second condition above, the theme important menu appears again at top of the Themes panel with the external theme appearing in the drop-down menu. You can then import the theme again, if so desired, or use the appearance of the menu as a reminder that the package in the themes directory also needs deleted. Only when all external themes sitting in the <i>themes</i> directory are in the Themes panel table, too, will the dropdown not be present.
+If you later delete the theme from the Themes panel and not the equivalent package sitting in the directory, breaking the second condition above, the theme import control appears at top of the themes table again with the external theme appearing in the control’s selection menu. You can then re-import the theme, if so desired (but then why delete to begin with), or use the appearance of the control as a reminder that the package in the <i>themes</i> directory also needs deleted. Only when all external themes sitting in the <i>themes</i> directory are in the themes table, too, will the import control not be present. 
 
 ### Updating imported themes
 
-(Forthcoming)
+If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer has revised the source theme and distributed a new and improved version. Not wanting to miss out on the cutting edge, you dutifully update your version with the latest release, as follows
 
 ## System handling of imported themes
 
@@ -398,7 +398,7 @@ Following is the default theme package structure that Textpattern expects and ac
   * {:.document} manifest.json
 {:.list--files}
 
-Each asset type and Textpattern’s behaviour in relation upon importing themes is described in the remaining sections.
+Each asset type, and Textpattern’s handling of them when importing themes, is described in the remaining sections.
 
 [^archive]: The <i>archive.txp</i> page, though included in the default theme package, is not a required page template, nor is it used (i.e. associated with a section) in the [default website structure](https://dev-demo.textpattern.co/), which is why you don’t see an Archive page in the main navigation. This page is subject to being removed in a future release of the default theme, but you may freely use or remove it in your own theme package, no problem. 
 
