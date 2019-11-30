@@ -23,13 +23,13 @@ Textpattern users and theme designers in general, new and old, will find Textpat
 
 ### A theme development ‘studio’
 
-The addition of the [Themes](https://docs.textpattern.com/administration/themes-panel) panel has essentially transformed how to think about building website architectures with Textpattern’s semantic building blocks. Textpattern designers will likely find the Themes panel is now the centre stage of the administration side. Indeed, the back-end is like a theme development studio where you can work on many themes at a time, for employing on your website or sharing with the community. But don’t worry, writers and editors, Textpattern is still the same system to do what its creator envisioned. ‘Just write.’
+The addition of the [Themes](https://docs.textpattern.com/administration/themes-panel) panel has essentially transformed how to think about building website architectures with Textpattern’s semantic building blocks. Textpattern designers will likely find the Themes panel is now the centre stage of the administration side. Indeed, the back-end is like a theme development studio, where you can work on many themes simultaneously, for employing on your website or sharing with the community. But don’t worry, writers and editors, Textpattern is still the same system to do what its creator envisioned. ‘Just write.’
 
-Theoretically speaking, you could hack a theme package together from scratch and by hand directly on your web server. We know you masochistic types are out there. And, sure, it can be a learning experience to sit on the cold garage floor with grease and gears. For you folks, the last sections about default theme structure and importing themes may be useful reference.
+Theoretically speaking, you could hack a theme package together, from scratch and by hand, directly on your web server. We know you masochistic types are out there. And, sure, it can be a learning experience to sit on the cold garage floor with grease and gears. For you folks, the last sections about default theme structure and importing themes may be useful reference.
 
 Most of this document, however, describes the sensible approach of using the new theming functionality in the back-end. Be at ease knowing that creating a new theme has no impact on a website’s operation or presentation if the pages and styles of the theme are not yet associated to the website’s functioning sections (easy to tell at a glance). If not, you can freely modify any [theme package assets](#theme-assets) without worry.
 
-### Handy default system references
+### Default system references
 
 Make note of the following resources. In addition to the document you are reading, and your own installation of the software, these resources make handy references to default system conditions:
 
@@ -43,14 +43,14 @@ The front- and back-end demos are routinely updated. The back-end demo offers a 
 
 ### Author prefix and registration
 
-If you intend to create themes to share with the community, you must register and use an author prefix. See [Author prefixes and registration](https://docs.textpattern.com/brand/author-prefixes-and-registration) for prefix availability and instructions for registering your own. Your chosen prefix must not already be taken, as indicated by the prefix lists. Having and using a personal prefix ensures no two themes will ever be created with the same *name*, thus tripping Textpattern up.
+If you intend to create themes to share with the community, you must [register and use an author prefix](https://docs.textpattern.com/brand/author-prefixes-and-registration). Your chosen prefix must not already be taken, as indicated by the prefix lists. Having and using a personal prefix ensures no two themes will ever be created with the same *name*, thus tripping Textpattern up.
 
 While prefixes are the same whether you create themes or develop plugins, the naming convention is different in each case to make it clear at a glance what product a name is representing. Basically, theme names use hyphens, and plugin names use underscores. If your prefix is *abc*, for example, your theme names would look like this: 
 
 * {:.directory} **abc-theme-name**
 {:.list--files}
 
-And your plugin names, if you ever developed any, would look like this:
+And your plugin names, if you developed any, would look like this:
 
 * {:.directory} **abc_plugin_name**
 {:.list--files}
@@ -78,7 +78,7 @@ Textpattern has always allowed you to create a different *presentation* for your
 * Used to create different site structures, to a certain degree
 * Shared with the community, so others can benefit from your savvy design sense.
 
-Now we descend the ladder and get closer to the action! Everything from here on is framed in context of a fresh (out-of-the-box) install of the software. 
+Now we descend the ladder and get closer to the action! Everything from here on is framed in context of a fresh (out-of-the-box) install of the software, but the principles are the same whether your installation is brand new or you’ve been maintaining a site for years. As long as you’re using the [latest release](https://textpattern.com/start) of the software, it will make sense. Any exceptions to this rule are made clear in context.
 
 ## New themes
 
@@ -187,7 +187,7 @@ There is no confirmation dialogue asking if you are sure. You are simply taken b
 
 The administration panels provide features and cues that make it easy to see what theme context you are in from any relevant panel. This includes: whether a theme is active or not, what assets are associated to which themes, what themes are assigned to sections, and contextual navigation between it all. 
 
-### Active versus non-active themes
+### Active / Non-active
 
 You can tell from a glance in the Themes panel if a given theme is active or not. Look under the Sections column of the themes table. Any theme with ‘0’ section associations is not active (i.e. not live on the front-end).
 
@@ -201,7 +201,7 @@ In version 4.8, soon, a new feature is introduced. Under the Name column of the 
 
 More about using this feature and what is happening behind the scenes is presented in [Same structure; different theme](#same-structure-different-theme).
 
-### Association of assets to themes
+### Assets association
 
 Under the Pages, Forms, and Styles columns of the themes table are linked numbers indicating how many assets of each type are associated to a given theme.
 
@@ -227,7 +227,7 @@ You will remain in that different theme context as you browse between the assets
 
 [^themebox]: The box does not appear in assets panels when the Themes panel only has one theme.
 
-### Themes to sections preview
+### Sections preview
 
 (Forthcoming)
 
