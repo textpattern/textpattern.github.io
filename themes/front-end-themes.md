@@ -274,13 +274,13 @@ Sharing is about exporting and importing themes, and the software’s handling o
   * {:.document} . . .
 {:.list--files}
 
-The **With selected** control in the Themes panel, highlighted in the following sections, refers to the <i>themes</i> directory location as ‘disk’.    
+When talking about themes between the Themes panel and the <i>themes</i> directory, Textpattern interface strings and pophelp will refer to them as ‘themes in the database’ (Themes panel) and ‘themes on the disk’ or ‘disk-based themes’ (<i>themes</i> directory).     
 
 ### Exporting themes
 
 You have learned how to create and manage themes at this point, so take it to the next logical step and export one for other people to use. Fame and fortune awaits!
 
-When your theme is tweaked to perfection and ready to be shared, go to the Themes panel, check the theme’s box in the table, and use the **With selected** controls to select ‘Export to disk’.
+When your theme is tweaked to perfection and ready to be shared, go to the Themes panel, check the theme’s box in the table, and use the **With selected** controls to select ‘Export to disk’ (i.e. to the <i>themes</i> directory).
 
 ![Select export to disk](https://docs.textpattern.com/img/select-export-to-disk.png)
 
@@ -292,13 +292,13 @@ If you read the help tip for that option, it says:
 
 > If checked, each template file in the selected theme(s) that does not have a corresponding item in the database will be permanently deleted from the disk-based theme. The result after completion of the action will be that your file system templates will reflect exactly what is in the database.
 
-In other words, Textpattern is making a comparison between the theme package you want to export from the Themes panel (i.e. the theme ‘in the database’) and any similarly named theme that might be sitting in the themes directory (i.e. the ‘disk-based’ theme). So it’s asking, if any asset files in the disk-based version do not have similarly named files in the database version (the one you are exporting), do you want those files deleted as part of the exportation action?
+In other words, Textpattern is making a comparison between the theme package you want to export from the Themes panel and any similarly named theme that might be sitting in the themes directory. So it’s asking, if any asset files in the directory version do not have similarly named files in the panel version (the one you are exporting), do you want those files deleted as part of the exportation action?
 
 This is generally a good idea, and the check box is ticked by default. This ensures that after exportation, there is a direct match between the database version (in the Themes panel) and the version on disk (in the <i>themes</i> directory).
 
 Click the Go button and confirm when asked if you are sure.
 
-You can now move or copy the exported theme (the one on disk) to a new location where others may download it for use. Whatever location you anticipate making it available from, is the URL that you should have entered in the Website field of the theme’s metadata.
+You can now move or copy the exported theme (the one on disk) to a new location where others may download it for use. Whatever location that is, make sure the URL has been entered in the Website field of the theme’s metadata.
 
 ### Importing themes
 
