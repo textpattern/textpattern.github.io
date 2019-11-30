@@ -183,7 +183,11 @@ There is no confirmation dialogue asking if you are sure. You are simply taken b
 
 ![Revised theme name](https://docs.textpattern.com/img/revised-theme-name.png)
 
-## Active versus non-active themes
+## Contexts and associations
+
+The administration panels provide features and cues that make it easy to see what theme context you are in from any relevant panel. This includes: whether a theme is active or not, what assets are associated to which themes, what themes are assigned to sections, and contextual navigation between it all. 
+
+### Active versus non-active themes
 
 You can tell from a glance in the Themes panel if a given theme is active or not. Look under the Sections column of the themes table. Any theme with ‘0’ section associations is not active (i.e. not live on the front-end).
 
@@ -191,23 +195,23 @@ You can tell from a glance in the Themes panel if a given theme is active or not
 
 When a theme is not active, you can work on the associated assets without concern for it impacting website visitors or any other problems.
 
-In version 4.8, soon, a new feature is introduced. Under the Name column of the themes table at right of the name will be an ‘Active’. When the link is blue, the theme is not active. When the link is green, the theme is active.
+In version 4.8, soon, a new feature is introduced. Under the Name column of the themes table, at right of the name, will be an ‘Active’ link. When the link is blue, the theme is not active. When the link is green, the theme is active.
 
 ![Active theme indicator](https://docs.textpattern.com/img/active-theme-indicator.png)
 
 More about using this feature and what is happening behind the scenes is presented in [Same structure; different theme](#same-structure-different-theme).
 
-## Assets association to themes
+### Association of assets to themes
 
 Under the Pages, Forms, and Styles columns of the themes table are linked numbers indicating how many assets of each type are associated to a given theme.
 
 ![Theme-assets-links](https://docs.textpattern.com/img/assets-columns.png)
 
-When you duplicate the default theme (as the next image depicts), or any other theme, the assets are duplicated as well, logically, thus why they have the same number.
+When you duplicate the default theme (as the next image depicts), or any other theme, the existing assets in the source theme are cloned as well, logically, thus why the duplicated themes have the same number.
 
 ![Sections and assets columns](https://docs.textpattern.com/img/sectioins-and-assets-columns.png)
 
-Click these links and you are taken to the respective panels with the indicated number of assets in context. For example, clicking a ‘3’ under the Pages column for the duplicated theme lands you on the Pages panel with the associated three pages listed:
+Click any of these links and you are taken to the respective panels with the indicated number of assets in context. For example, clicking a ‘3’ under the Pages column for the duplicated theme lands you on the Pages panel with the associated three pages listed:
 
 ![Pages assets](https://docs.textpattern.com/img/pages-assets.png)
 
@@ -219,13 +223,17 @@ You can use the Theme selection menu to change theme context from any assets pan
 
 ![Theme menu selection](https://docs.textpattern.com/img/theme-menu-selection.png)
 
-You will remain in that different theme context as you browse between the assets panels. You can switch context like that at any time via any assets panel, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
+You will remain in that different theme context as you browse between the assets panels. You can switch theme context again at any time from any assets panel by using the Themes menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
 
 [^themebox]: The box does not appear in assets panels when the Themes panel only has one theme.
 
-## Sections association to themes
+### Themes to sections preview
 
-When you are ready to apply your theme and see how it looks on the front-side, you need to associate it to sections that are setup and ready to go. How you do this might depend on what your theme objectives are.
+(Forthcoming)
+
+## Assigning themes to sections
+
+When you are ready to apply your theme and see how it looks on the front-side, you need to assign it to one or more [sections](https://docs.textpattern.com/administration/sections-panel) that are setup and ready to go. It’s assumed here that your sections *are* ready to go, so focus is on the assigning part. How you do this might depend on what your theme objectives are.
 
 ### Same structure; different theme
 
