@@ -8,7 +8,7 @@ description: Themes are a package of necessary markup and style  templates for c
 
 # Front-end themes
 
-This document is a complete journey through creating, managing, using, exporting, importing, and deleting Textpattern themes, all in context of default installation conditions.
+This document is a complete journey through creating, managing, using, exporting, importing, and deleting Textpattern themes, all in context of default installation conditions, but kindly extrapolated to situations that aren’t. It just happens to be that default can go a long way.
 
 Notice: Sections on portability and handling are still work-in-progress, and document overall is still being refined.
 
@@ -298,11 +298,7 @@ You can now move or copy the exported theme (the one on disk) to a new location 
 
 ### Importing themes
 
-When importing a custom theme that has not used one or more of the default subdirectories or files, Textpattern will initially add them automatically upon importation. This will not interfere with the function of the theme, and the added, missing defaults will not be renewed or added again on any later update of the theme.
-
-When all done with theme creation, the directory will contain all of the templates organized into subdirectories that match the default construction of Textpattern. Textpattern does this for you behind the scenes as you create and add the associated templates via the Pages, Forms, and Styles panels.
-
-This behaviour is elaborated on in the following sections.
+/ Hang on, being revised /
 
 ## Theme package contents
 
