@@ -298,11 +298,28 @@ You can now move or copy the exported theme (the one on disk) to a new location 
 
 ### Importing themes
 
-/ Hang on, being revised /
+Unlike with exporting themes that you create, where the theme being exported is ‘already in play’, as they say, in the Themes panel (i.e. in the database), importing requires first getting the external theme — whatever cool theme you find from the [Themes website](https://themes.textpattern.com), or other community source — into play to begin with. What that means is, if you have no external themes transferred to the themes directory (i.e. on disk), you won’t find any way to import a theme no matter how hard you look. That’s because the initial import theme menu is contextual to the <i>themes</i> directory. If either of the following two conditions are true, you won’t see the menu in the Themes panel:
 
-## Theme package contents
+* No external themes exist in the <i>themes</i> directory
+* No external themes exist in the <i>themes</i> directory that are not already listed in the Themes panel table.
 
-The contents of a theme package, including all the component templates and the <i>manifest.json</i> file, is contained in a single directory bearing the name you give your theme at time of creating it.
+When an external theme has been added to the <i>themes</i> directory to defy the conditions above, you’ll see the contextual menu appear at top of the Themes panel, enabling you to ‘import’ the new external theme(s) that are sitting there.
+
+![Import theme menu](https://docs.textpattern.com/img/import-theme-menu.png)
+
+You can then use the menu to select the theme you’re after and initially Import it to the themes table.
+
+![Import theme menu select](https://docs.textpattern.com/img/import-theme-menu-select.png)
+
+At this point the theme is available to use and edit as you would normally do with any theme in your Themes panel.
+
+If you later delete the theme from the Themes panel and not the package sitting in the <i>themes</i> directory the contextual menu at top of the Themes panel appears again with the external theme appearing in the drop-down menu, ready to be imported again if you so desire, or not. Only when all external themes sitting in the <i>themes</i> directory are in the Themes panel table too, will the dropdown not be present.
+
+## Textpattern handling of imported themes
+
+To ensure a given theme imported into your installation does not literally break everything, Textpattern uses a few safeguards when importing themes. It’s all centred around an expected default structure. Any theme package that does not have a minimum default structure will be ‘augmented’ by Textpattern automatically upon importation. This is useful, say, when theme designers choose the hack-from-scratch approach versus the sensible create-via-Textpattern approach.    
+
+The following sections describe the various assets of a default theme package, and describe what Textpattern does when any imported theme strays from the norm. But don’t worry, Textpattern is relatively forgiving of differences in structure and that’s the whole point of augmenting at the import stage, to ensure something exists when it doesn’t so the theme works as intended.
 
 ### The *manifest.json* file
 
@@ -460,6 +477,8 @@ The files will not be overwritten in future software updates.
 [^css]: For example, you could simply add a <link> in your `head` markup to a static stylesheet file on your server.
 
 ## Removing themes
+
+/ Hang tight, to be revised /
 
 Themes can be removed (deleted) from the themes panel, and the associated files can be deleted as needed.  
 
