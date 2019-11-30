@@ -10,11 +10,11 @@ description: Themes are a package of necessary markup and style  templates for c
 
 This document is a complete journey through creating, managing, using, exporting, importing, and deleting Textpattern themes, all in context of default installation conditions.
 
-Notice: Still work in progress on portability and handling section and subsections.
+Notice: Sections on portability and handling are still work-in-progress, and document overall is still being refined.
 
 **On this page**:
 
-Table of contents
+* Table of contents
 {:toc}
 
 ## The big picture
@@ -57,7 +57,7 @@ And your plugin names, if you ever developed any, would look like this:
 
 ### Theme assets
 
-A Textpattern theme is a collection of *page* templates, *form* markup, stylesheets, and a manifest file with a little metadata; all packaged together in a single directory bearing the theme’s name. The single directory can be thought of as a ‘package’ and its contents can be thought of ‘assets’ organized in subdirectories by type. The [*manifest.json* file](#the-manifest-json-file) is talked about later, but let’s be clear on what the other assets are and what their function is.
+A Textpattern theme is a collection of *page* templates, *form* markup, stylesheets, and a manifest file with a little metadata; all packaged together in a single directory bearing the theme’s name. The single directory can be thought of as a ‘package’ and its contents can be thought of ‘assets’ organized in subdirectories by type. The [*manifest.json*](#the-manifest-json-file) file is talked about later, but let’s be clear on what the other assets are and what their function is.
 
 [Pages](https://docs.textpattern.com/administration/pages-panel) are your web page templates, primarily built with HTML and [Textpattern tags](https://docs.textpattern.com/tags). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](https://docs.textpattern.com/tags/output_form) tags), or as a combination of embedded markup and form includes.
 
@@ -82,23 +82,23 @@ Now we descend the ladder and get closer to the action! Everything from here on 
 
 ## New themes
 
-Multiple options are available to you for creating a new theme via the [Themes](https://docs.textpattern.com/administration/themes-panel) panel. You can:
+Multiple options are available for creating a new theme via the [Themes](https://docs.textpattern.com/administration/themes-panel) panel. You can:
 
 * Create a new theme directly via the **New theme** form
-* Duplicate the default theme via the **With selected** controls
-* Duplicate the default theme via the **Edit theme** form.
+* Duplicate a theme via the **With selected** controls
+* Duplicate a theme via the **Edit theme** form.
 
-All approaches accomplish the same thing: initially establish a new theme to start working on. The approaches also use the same functionality, but just in different order and contexts (e.g. the **New theme** form and **Edit theme** form are the same, but accessed differently). 
+All the approaches accomplish the same thing, which is establish a new theme to start working on. The approaches also use the same functionality, but just in different order and contexts (e.g. the **New theme** form and **Edit theme** form are the same, but accessed differently). 
 
-Let’s look at each one.
+Let’s look at each one in default system context.
 
 ### Create via the ‘New theme’ form
 
-Creating a theme via the **New theme** form is the most called-out way due to the associated button bearing the same name right at top of the Themes panel.
+Creating a theme via the **New theme** form is the most called-out way to get started by evidence of the prominent button bearing the same label right at top of the Themes panel.
 
 ![Click New theme button](https://docs.textpattern.com/img/click-new-theme-button.png)
 
-The **New theme** form (again, same as the **Edit theme** form) is composed of six metadata fields, the first two of which are required:
+The **New theme** button opens the associated form. The form is composed of six metadata fields, the first two of which are required:
 
 * Theme name (required) 
 * Theme title (required)
@@ -107,9 +107,9 @@ The **New theme** form (again, same as the **Edit theme** form) is composed of s
 * Theme author
 * Theme website 
 
-The six fields you see in the editing form correspond to four columns in the theme’s table on the main panel (Name, Title, Version, Author), and five of the metadata values in [the <i>manifest.json</i> file](#the-manifest-json-file) discussed later. The more complete the form, the more informative the manifest file will be.
+The six fields you see in the editing form correspond to four columns in the theme’s table on the main panel (Name, Title, Version, Author), and five of the metadata values in [the <i>manifest.json</i> file](#the-manifest-json-file).
 
-Note that the theme’s name and title are not the same thing. If you registered an [author prefix](#author-prefixes-and-registration), you should use that as the first part of the theme’s name (e.g. ‘abc-my-new-theme’). The title, on the other hand, like for a book, is the proper, ‘human-readable’ name and should be entered in capital case with no hyphens (i.e. ‘Title Like This’). You do not have to use your prefix in the title, only for the name; so you could have this pairing, for example:
+The theme’s name and title are not the same. If you registered an [author prefix](#author-prefixes-and-registration), you should use that as the first part of the theme’s name (e.g. ‘abc-my-new-theme’). The title, on the other hand, like for a book, is the proper, ‘human-readable’ name and should be entered in capital case with no hyphens (i.e. ‘Title Like This’). You do not have to use your prefix in the title, only for the name; so you could have this pairing, for example:
 
 * Theme name: abc-my-new-theme
 * Theme title: My New Theme
@@ -119,21 +119,25 @@ If you decide to skip the optional fields for whatever reason, Textpattern will 
 * Theme version: 0.0.1
 * Theme author: {username} (i.e. the name you log in with)
 
-The remaining description and website fields will simply remain empty. The website field would be used to add a URL if your theme is available online somewhere for people to download.
+The remaining description and website fields will stay empty if not used. The website field is for adding a URL to where your theme can be downloaded online.
 
-In any case, you should fill out the form as completely as possible, without relying on Textpattern’s defaults. Anything you can’t give at this time can always be added later.
+In any case, you should fill out the form as completely as possible, without relying on Textpattern’s defaults. The more complete the form, the more informative the manifest file will be. Any fields you can’t fill immediately, such as the website URL, can always be filled in later.
 
 When the **New theme** form is saved, the resulting theme appears in the themes table.
 
-It’s useful to consider the other two approaches that get to this point, by way of theme duplication. Both are described next. Or jump to the [Active versus non-active themes](#active-versus-non-active-themes) section to continue on the current journey.   
+![Active theme indicator](https://docs.textpattern.com/img/active-theme-indicator.png)
+
+The two other approaches that get to this point, both by way of theme duplication, are described next. Or jump to the [Active versus non-active themes](#active-versus-non-active-themes) section to continue on the current journey.   
 
 ### Duplicating themes
 
-It is common knowledge that using an existing theme package as a guide for your efforts is a good way to get started. There’s no better package to use in this case than the default theme that comes with Textpattern, already shown and functioning in the Themes panel upon installing the software.
+Using an existing theme package as a guide for your efforts is a good way to get started with making themes. There’s no better package to use in this case than the default theme that comes with Textpattern, already shown and functioning in the Themes panel upon installing the software.
 
 This does not mean start working directly on the default theme, or you will be doing development on an active (live) theme and changing its nature. Instead, duplicate the default theme and turn it into a new one.
 
-Note, however, that while the instructions here describe using the default theme (the only theme available in an out-of-the-box context of the software), you could duplicate any existing theme in the Themes panel; any one of which might have the kind of website structure you want to work closer with. But the following two approaches to duplication are the same regardless which theme you duplicate.
+While these instructions describe using the default theme (the only theme available in an out-of-the-box context of the software), you could duplicate any existing theme in the Themes panel; one that might have the kind of website structure you want to work closer with.
+
+The following two approaches to duplication are the same regardless of what theme you duplicate.
 
 #### Duplicate via the ‘With selected’ control
 
