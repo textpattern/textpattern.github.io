@@ -2,15 +2,13 @@
 layout: document
 category: Themes
 published: true
-title: Front-end themes
-description: Themes are a package of necessary markup and style  templates for changing the presentation and layout of a given website. This document walks through the process of creating a theme.
+title: Themes: A complete walk-through
+description: A complete journey through creating, managing, using, exporting, importing, and deleting Textpattern themes. Join the expedition.
 ---
 
-# Front-end themes
+# Themes: A complete walk-through
 
 This document is a complete journey through creating, managing, using, exporting, importing, and deleting Textpattern themes, all in context of default installation conditions, but kindly extrapolated to situations that aren’t. It just happens to be that default can go a long way.
-
-Notice: Sections on portability and handling are still work-in-progress, and document overall is still being refined.
 
 **On this page**:
 
