@@ -10,25 +10,10 @@ description: This information is for those who are thinking about developing Tex
 
 This information is for those who are thinking about developing Textpattern plugins.
 
-On this page:
+**On this page**:
 
-* [Disclaimer](#disclaimer)
-* [Developer rules of the road](#developer-rules-of-the-road)
-* [What is a plugin?](#what-is-a-plugin)
-  * [Functional categories](#functional-categories)
-  * [Public-side plugins](#public-side-plugins)
-  * [Admin-side plugins](#admin-side-plugins)
-* [Register your plugin developer prefix](#register-your-plugin-developer-prefix)
-* [How plugins are loaded](#how-plugins-are-loaded)
-* [Callbacks](#callbacks)
-  * [Function: register_callback()](#function-registercallback)
-  * [Adding admin-side panel elements](#adding-admin-side-panel-elements)
-  * [Altering admin-side panel elements](#altering-admin-side-panel-elements)
-  * [Removing admin-side panel elements](#removing-admin-side-panel-elements)
-* [Plugin lifecycle management and preferences](#plugin-lifecycle-management-and-preferences)
-* [Variables, classes and constants](#variables-classes-and-constants)
-* [Getting help](#getting-help)
-* [External reading](#external-reading)
+* Table of contents
+{:toc}
 
 ## Disclaimer
 
@@ -46,7 +31,7 @@ Here's the visible approach to plugin conception that can help you make a good c
 
 When plugin ideas aren't conceived quietly in the minds of individuals and built to fruition without a lot of fanfare (a path usually taken when a developer needs the functionality regardless of whether the community does or not), they often begin as a core [feature idea](https://forum.textpattern.com/viewforum.php?id=2) ([a shunned one](https://docs.textpattern.com/development/plugin-vs-core)), or [plugin discussion](https://forum.textpattern.com/viewforum.php?id=13). Bouncing plugin ideas off the community first is a good way to gauge whether a plugin idea has merit - the more interest and constructive feedback you get, the more likely the plugin is worth building.
 
-If you do throw caution to the wind and reinvent the wheel anyway, make sure you're ready to raise the bar. Somebody has to eventually.
+If you do throw caution to the wind and reinvent the wheel anyway, make sure you are ready to raise the bar. Somebody has to eventually.
 
 ### 2. Do it the Textpattern way
 
@@ -89,13 +74,13 @@ The most practical (and most popular) plugins fall into more than one category, 
 
 Plugins can also be public-side or admin-side, or be one of several types that correspond to all of the above (see [How plugins are loaded](#how-plugins-are-loaded)).
 
-### Public-side plugins
+### Front-end plugins
 
 Public-side (aka 'client-side' or 'front-side') plugins are those that enable content output on the front-side of a website, often through specialized tags, which a website designer can use interchangeably with Textpattern's core tags and HTML. These kinds of plugins don't have much in the way of requirements, thus are great plugins to try building when getting started with Textpattern plugin development.
 
 * [Public-side plugin tutorial](https://docs.textpattern.com/development/public-side-plugin-tutorial) - A basic tutorial to learn the ropes of the easiest kind of plugin to build.
 
-### Admin-side plugins
+### Back-end plugins
 
 Admin-side plugins provide site administrators and designers the ability to alter the [administration](https://docs.textpattern.com/administration/) UI and/or functionality in some way.
 
@@ -105,7 +90,7 @@ Admin-side plugins often make use of the [Extensions administration region](http
 
 ## Register your plugin developer prefix
 
-All hopeful plugin developers must [register a plugin developer prefix](https://docs.textpattern.com/development/plugin-developer-prefixes), and use it in the appropriate locations.
+All hopeful plugin developers must [register an ‘author’ prefix](https://docs.textpattern.com/brand/author-prefixes-and-registration), and use it in the appropriate locations.
 
 ## How plugins are loaded
 
@@ -180,7 +165,7 @@ Argument 4
 
 Let's look a few `register_callback()` examples.
 
-### Adding your own admin-side panel elements
+### Adding your own administration panel elements
 
 Elements can be added to admin-side panels in two ways: as *new* elements, or as modifications to existing elements. Each panel has its
 own set of core callback parameters to work with, which are detailed in the [Admin-side user-interface
@@ -313,7 +298,7 @@ Two basic plugin tutorials to put it all in perspective:
 
 ## Implementation resources
 
-Now you know what plugins are, you're ready to kick plugin ass! You'll probably need some combination of these to see the job through:
+Now you know what plugins are, you are ready to kick plugin ass! You'll probably need some combination of these to see the job through:
 
 **Plugin code template:**
 
