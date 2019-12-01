@@ -17,9 +17,7 @@ The back end of Textpattern is where administrators, and other [users](https://d
 
 ## Login location
 
-The usual back-end login location for a new install of Textpattern is at <i>domain.tld/textpattern</i>.[^login] If you install Textpattern in a subdirectory, the login location would reflect that extra level (e.g. <i>example.com/subdirectory/textpattern</i>).
-
-[^login]: See [Textpattern security](https://docs.textpattern.com/administration/security) if you're worried about the login location being common knowledge.
+The usual back-end login location for a new install of Textpattern is at <i>domain.tld/textpattern</i>. If you install Textpattern in a subdirectory, the login location would reflect that extra level (e.g. <i>example.com/subdirectory/textpattern</i>). See [Textpattern security](https://docs.textpattern.com/administration/security) if you're worried about the login location being common knowledge.
 
 ## Core administration regions and panels
 
@@ -69,8 +67,6 @@ The Content region of the administration side has seven panels out-of-the-box. T
         </tbody>
     </table>
 </div>
-
-From Textpattern 4.6 onwards, when the **Accept comments?** preference in the Site section of the Preferences panel is set to ‘No’, all comments functionality throughout the administration side will be hidden in the interface and the Comments panel link will be removed from the list of panel options in the Content region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to ‘Yes’.
 
 ### Presentation
 
@@ -149,8 +145,6 @@ The Admin region of the administration side has seven panels out-of-the-box, of 
         </tbody>
     </table>
 </div>
-
-From Textpattern 4.6 onwards, when the Logging preference is set to ‘None’ in the Site section of the Preferences panel, all logging functionality throughout the back end will be hidden in the interface and the **Visitor logs** panel link will be removed from the list of panel options in the Admin region. This helps keep unwanted functionality from being a distraction. The logging functionality all comes back again if the preference is changed to ‘Yes’.
 
 Examples of plugins that add additional panel options to the Admin region include smd_faux_role and wet_snitch.
 
