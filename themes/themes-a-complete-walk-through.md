@@ -57,7 +57,7 @@ And your plugin names, if you developed any, would look like this:
 
 A Textpattern theme is a collection of *page* templates, *form* markup, stylesheets, and a manifest file with a little metadata; all packaged together in a single directory bearing the theme’s name. The single directory can be thought of as a ‘package’ and its contents can be thought of ‘assets’ organized in subdirectories by type.
 
-A theme package’s organization, and how Textpattern handles it on importing and updating, is presented later. For now, out of the gate, be clear on what pages and forms and how they come together.
+A theme package’s organization, and how Textpattern handles it on importing and updating, is presented later. For now, out of the gate, be clear on what pages and forms are and how they come together.
 
 [Pages](https://docs.textpattern.com/administration/pages-panel) are your web page templates, primarily built with HTML and [Textpattern tags](https://docs.textpattern.com/tags). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](https://docs.textpattern.com/tags/output_form) tags), or as a combination of embedded markup and form includes. Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* learn Textpattern tags! 
 
@@ -65,7 +65,7 @@ A theme package’s organization, and how Textpattern handles it on importing an
 
 Of course you know what stylesheets are; they need no further explanation except to emphasize that, like pages, they must be associated to one or more sections of your website in order to rule the presentation of them.
 
-All assets are required in a theme package, even if not all types are used in a given theme. That seeming discrepancy is better understood after reading the [Default package and handling](#default-package-and-handling) section later. Again, pages and styles are assigned to website [sections](https://docs.textpattern.com/administration/sections-panel), while forms are simply components of markup to be pieced together however you want in pages or other forms.
+All assets, including the <i>manifest.json</i> file supplying the metadata, are required in a theme package, even if not all types are used in a given theme. That seeming discrepancy is better understood after reading the [Default package and handling](#default-package-and-handling) section later. Again, pages and styles are assigned to website [sections](https://docs.textpattern.com/administration/sections-panel), while forms are simply components of markup to be pieced together however you want in pages or other forms.
 
 ### Scope of possibilities
 
@@ -76,7 +76,7 @@ Textpattern has always allowed you to create a different *presentation* for your
 * Used to create different site structures, to a certain degree
 * Shared with the community, so others can benefit from your savvy design sense.
 
-Now we descend the ladder and get closer to the action! Everything from here on is framed in context of a fresh (out-of-the-box) install of the software, but the principles are the same whether your installation is brand new or an old workhorse that’s up to date. As long as you’re using the [latest release](https://textpattern.com/start) of the software, it will make sense. Any exceptions to this rule are made clear in context.
+Now we descend the ladder and get closer to the action! Everything from here on is framed in context of a fresh (out-of-the-box) install of the software, but the principles are the same whether your installation is brand new or an old workhorse that’s up to date. As long as you’re using the [latest release](https://textpattern.com/start) of the software, at least, it will make sense. Any exceptions to this rule are made clear in context of instructions.
 
 ## New themes
 
