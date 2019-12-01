@@ -2,19 +2,26 @@
 layout: document
 category: Themes
 published: true
-title: Form templates explained
-description: Textpattern Form templates define discrete packages of information that can be inserted into Page templates.
+title: Form templates
+description: Textpattern form templates define discrete packages of information that can be inserted into page templates and other forms.
 ---
 
-# Form templates explained
+# Form templates
 
-Textpattern **Form templates** are akin to snippets, includes, partials, and the like that define discrete *packages* of information that can be inserted into [Page templates](https://docs.textpattern.com/themes/page-templates-explained), or nested into other forms that are in turn *pulled* into Page templates. They are not files, *per se*, but similar in concept to files, having their own name (ID) and content. The content in a form can be any combination of text, HTML markup, Textpattern tags, or tags for third-party [Plugins](https://docs.textpattern.com/administration/plugins-panel) you might use.
+Textpattern **Form templates** are akin to snippets, includes, partials, and the like that define discrete *packages* of information that can be inserted into page templates, or nested into other forms that are in turn *pulled* into page templates. They are not files, *per se*, but similar in concept to files, having their own name (ID) and content. The content in a form can be any combination of text, HTML markup, Textpattern tags, or tags for third-party [Plugins](https://docs.textpattern.com/administration/plugins-panel) you might use.
+
+**On this page**:
+
+* Table of contents
+{:toc}
+
+## Content and scope of use
 
 The content can be a single word, to the HTML framework of an entire web page template, to everything in between or something different altogether. But forms are generally most practical when scoped to repeatable, semantic regions of a page template (header, main area, side column, footer, etc.) or to functional blocks within those regions (navigation menu, sign-up form, widget, footer list, etc.). There's no right or wrong way to design forms, but as you get more familiar with Textpattern, you'll discover the optimal patterns to use, as well as how to name forms so they aren't confusing when you have many. Don't be surprised to adjust your architecture over time as you learn.
 
-Form templates are one of the six 'building blocks' described in the [Textpattern semantic model](https://docs.textpattern.com/faqs/textpattern-semantic-model). Textpattern Form templates are predefined portions of text, Textpattern Tags and/or HTML which collectively define how content should be formatted and displayed. Textpattern Form templates are easily created in the Forms panel and are used by the Textpattern Tags that call them, via the `form=""` attribute.
+Form templates are one of the six 'building blocks' described in the [Textpattern semantic model](https://docs.textpattern.com/faqs/textpattern-semantic-model). Form templates are predefined portions of text, Textpattern Tags and/or HTML which collectively define how content should be formatted and displayed. Textpattern Form templates are easily created in the Forms panel and are used by the Textpattern Tags that call them, via the `form=""` attribute.
 
-Once you have a good grasp of Textpattern Tags, Form templates, and the relationship between, you'll begin to realize the seeming endless possibilities of how to customize your website's architecture and content.
+Once you have a good grasp of Textpattern Tags, form templates, and the relationship between, you'll begin to realize the seeming endless possibilities of how to customize your website's architecture and content.
 
 ## An Example
 
@@ -48,7 +55,7 @@ As you can see, this 'article' type Form template is composed of three different
 </article>
 ~~~
 
-## Form template types explained
+## Form types
 
 When creating a form, it must be assigned to a 'Type', which is available via a dropdown selection box alongside the 'Name' field. There are currently seven form types: *article*, *category*, *comment*, *file*, *link*, *misc* (miscellaneous), and *section*.
 
@@ -62,7 +69,7 @@ Several forms come with Textpattern out-of-the-box, only enough to provide the m
 
 [^1]: The form naming convention you adopt will also help with form organization within a given form type list.
 
-## Custom form template types
+## Custom form types
 
 In addition to the standard form template types (article, file, misc, etc.), Publishers can define custom types. The purpose of custom form template types is twofold: easier form template classification and custom asset definitions.
 
