@@ -151,7 +151,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 <div class="layout-text4col">
 
 * dak: Kaiser
-* <span class="error">dca</span>: Dean (founder’s prefix; never available)
+* <span class="error">dca</span>: Dean (founder, R.I.P.)
 * dds: nemoorange
 * dem: [demoncleaner](https://forum.textpattern.com/profile.php?id=15280)
 * dfc: domfucssion
