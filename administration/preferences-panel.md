@@ -25,7 +25,7 @@ Site preferences are global settings for your Textpattern site. They include set
 
 A travel-centric website, for example, might be:
 
-Around The World In 80 Stays
+Around The World In 80 Days
 {:.example}
 
 And a coffee shop website might be
@@ -35,25 +35,22 @@ Brewster's Java Joint
 
 ### Site URL
 
-**Site URL** is the homepage address where your Textpattern site is viewed. This should be set to your domain or hostname without the *http(s)://* protocol and without the trailing forward slash (*/*).
+**Site URL** is the homepage address where your Textpattern site is viewed. This should be set to your domain or hostname without the <i>http(s)://</i> protocol and without the trailing forward slash (<i>/</i>).
 
-If you use ‘*www*’, then use this pattern:
+If you use ‘<i>www</i>’, then use this pattern:
 
-~~~
 www.domain.tld
-~~~
+{:.example}
 
-If you enforce dropping the ‘*www*’ by way of a rewrite rule, use this pattern:
+If you enforce dropping the ‘<i>www</i>’ by way of a rewrite rule, use this pattern:
 
-~~~
 domain.tld
-~~~
+{:.example}
 
 If you run Textpattern in a site subdirectory, append the directory name:
 
-~~~
 domain.tld/subdirectory
-~~~
+{:.example}
 
 ### Site slogan
 
@@ -94,7 +91,9 @@ It is normal to see some PHP notices in 'Debugging' mode. A lone PHP notice is n
 
 Textpattern's displayed time should typically be set to your local or target audience time zone. Textpattern defaults to the localized time as indicated by the server time zone (i.e. the time set by the server Textpattern is installed to).
 
-The standard time system for all Internet-related synchronizations is UTC ([Coordinated Universal Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)). A numeric value in parentheses refers to the time offset in seconds when compared to UTC. Textpattern uses GMT notation instead of UTC, but they are identical.
+The standard time system for all Internet-related synchronizations is UTC ([Coordinated Universal Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)).
+
+A numeric value in parentheses refers to the time offset in seconds when compared to UTC. Textpattern uses GMT notation instead of UTC, but they are identical.
 
 ### Automatically adjust Daylight Saving Time?
 
@@ -106,11 +105,11 @@ If the time zone selected above is subject to [Daylight Saving Time](https://en.
 
 ### Date format
 
-The 'Date format' control allows you to select how you want your date and time formats to appear in your articles by default from a variety of options. Dates are output in your written articles via the `<txp:posted />` and `<txp:modified />` tags.
+**Date format** allows you to select how you want your date and time formats to appear in your articles by default from a variety of options. Dates are output in your written articles via the `<txp:posted />` and `<txp:modified />` tags.
 
 ### Archive date format
 
-The 'Archive date format' is a drop-down menu that provides the same options as the 'Date format' menu, but applies to articles viewed away from the front page. As before, the dates are output in your written articles (in this case in your archival section) via the `<txp:posted />` and `<txp:modified />` tags.
+**Archive date format** is a drop-down menu that provides the same options as the 'Date format' menu, but applies to articles viewed away from the front page. As before, the dates are output in your written articles (in this case in your archival section) via the `<txp:posted />` and `<txp:modified />` tags.
 
 ### Article URL pattern
 
@@ -124,7 +123,7 @@ Select which HTML [doctype](https://www.w3.org/wiki/Doctypes_and_markup_styles) 
 
 ### Logging
 
-The 'Logging' preference allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [Visitor logs panel](https://docs.textpattern.com/administration/visitor-logs-panel) for you to review. The selection menu has three options.
+The Logging preference allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [Visitor logs panel](https://docs.textpattern.com/administration/visitor-logs-panel) for you to review. The selection menu has three options.
 
 Select ‘None’ if you don’t want Textpattern to log visitor information at all. This is the default selection. When ‘None’ is selected, all logging functionality throughout the back end will be hidden in the interface and the **Visitor logs** panel link will be removed from the list of panel options in the Admin region. This helps keep unwanted functionality from being a distraction. The logging functionality all comes back again if the preference is changed to ‘Yes’.
 
@@ -148,7 +147,7 @@ The root-relative URI (without opening or closing slashes) of the directory (fol
 
 ### Theme directory
 
-<span class="success">**New v4.7.0**</span>. The relative path (file path, not URI) to the directory (folder) that holds themes uploaded through the [Themes panel](https://docs.textpattern.com/administration/themes-panel). By default this is `themes`, and you only need to change this if you have renamed and/or moved this directory.
+The relative path (file path, not URI) to the directory (folder) that holds themes uploaded through the [Themes panel](https://docs.textpattern.com/administration/themes-panel). By default this is `themes`, and you only need to change this if you have renamed and/or moved this directory.
 
 ### File directory path
 
@@ -186,7 +185,7 @@ If this preference is left blank or contains an invalid email address, Textpatte
 
 Textpattern uses UTF-8 encoding wherever possible by default, including for outgoing emails. However, some older email clients (including some versions of Microsoft Outlook) do not have proper UTF-8 support. If you encounter garbled characters in emails, this setting will convert text to ISO-8859-1 encoding before sending them.
 
-**Note:** If you are using a language the characters of which cannot be represented in ISO-8859-1, this setting will unfortunately not help you. You should try finding a UTF-8 (or Unicode) compatible email client.
+If you are using a language the characters of which cannot be represented in ISO-8859-1, this setting will unfortunately not help you. You should try finding a UTF-8 (or Unicode) compatible email client.
 
 ### Enable XML-RPC server?
 
@@ -202,55 +201,59 @@ The default admin-side theme that will be used when anybody logs into Textpatter
 
 ### Display admin-side inline help links?
 
-<span class="success">**New v4.7.0**</span>. If you wish to hide admin-side inline help links (Textpattern help pop-up windows) throughout the system, switch this setting to 'None'.
+If you wish to hide admin-side inline help links (Textpattern help pop-up windows) throughout the system, switch this setting to 'None'.
 
 ## Publish preferences
 
 ### Default publishing status
 
-Defines the [publishing visibility status](https://docs.textpattern.com/administration/write-panel#status) of newly-created Textpattern articles.
+Defines the [status](https://docs.textpattern.com/administration/write-panel#status) of new draft articles.
 
-Note this preference setting does not affect the status or articles created or edited prior to any change.
+This preference setting does not affect the status or articles created or edited prior to any change.
 
 ### Prevent widowed words in article titles?
 
-'Widowed word' refers to the final word of a sentence shown on a new line when the sentence is too long to fit on one line. In printed works, widowed words are considered sloppy typography and should be avoided. Setting this preference to 'Yes' will ensure that long article titles lines never have only the last word on a new line. Instead, the two last words will appear on a new line.
+'Widowed word' refers to the final word of a sentence shown on a new line when the sentence is too long to fit on one line. In printed works, widowed words are considered sloppy typography and should be avoided.
 
-**Note:** This setting can prove problematic in responsive pages at smaller page widths, because the non-breaking space character between the last two words may cause titles to overspill their parent container. In that case, set this preference to 'No'.
+Setting this preference to 'Yes' will ensure that long article titles lines never have only the last word on a new line. Instead, the two last words will appear on a new line.
+
+This setting can prove problematic in responsive pages at smaller page widths, because the non-breaking space character between the last two words may cause titles to overspill their parent container. In that case, set this preference to ‘No’.
+{:.footnotes .information}
 
 ### Use excerpts on articles?
 
-By choosing 'No' the excerpt field will not be shown to authors on the [Write panel](https://docs.textpattern.com/administration/write-panel#excerpt).
+By choosing ‘No’ the excerpt field will not be shown to authors on the [Write panel](https://docs.textpattern.com/administration/write-panel#excerpt).
 
 ### Allow form override?
 
-This setting allows article authors to override the Form template to be used when their article is rendered. If enabled, an 'Override form' dropdown will be available under 'Advanced options' on the [Write panel](https://docs.textpattern.com/administration/write-panel#override-form).
+This setting allows article authors to override the Form template to be used when their article is rendered. If enabled, an **Override form** selection menu will appear under **Advanced options** on the [Write panel](https://docs.textpattern.com/administration/write-panel#override-form).
 
 ### Attach titles to permalinks?
 
-This setting will attach a automatically-generated version of the article title to the URL. It is either generated automatically or can be manually overridden in 'URL-only title' when editing an article on the [Write panel](https://docs.textpattern.com/administration/write-panel#url-only-title).
+This setting will attach the article title to the URL. It can be manually overridden in **URL-only title** when editing an article on the [Write panel](https://docs.textpattern.com/administration/write-panel#url-only-title).
 
 The setting will only have an effect when you are using clean URLs. For certain languages this may result in long and ugly URLs, in which case you probably want to set this to 'No'.
 
 ### Permalink title URL pattern
 
-This setting only has an effect when 'Attach titles to permalinks?' above is set to 'Yes', and defines the method by which article URLs are constructed and assigned when a non-messy [Article URL pattern](#article-url-pattern) is used.
+This setting only has an effect when <i>Attach titles to permalinks?</i> above is set to 'Yes', and defines the method by which article URLs are constructed and assigned when a non-messy [Article URL pattern](#article-url-pattern) is used.
 
-When an article is published, its URL is generated from the article title unless a specific URL is provided in in the 'URL-only title' field on the [Write panel](https://docs.textpattern.com/administration/write-panel#url-only-title).
+When an article is published, its URL is generated from the article title unless a specific URL is provided in the **URL-only title** field on the [Write panel](https://docs.textpattern.com/administration/write-panel#url-only-title).
 
-Take the following example article title: "Ann and Bob eat cake"…
+Consider the following example title: 
 
-When the 'Permalink title URL pattern' option is set to 'Hyphenated (title-like-this)', the URL for the article would be:
+Ann and Bob eat cake
+{:.example}
 
-~~~
+When the **Permalink title URL pattern** option is set to 'Hyphenated (title-like-this)', the URL for the article would be:
+
 https://example.com/ann-and-bob-eat-cake
-~~~
+{:.example}
 
-When the 'Permalink title URL pattern' option is set to 'Intercapped (TitleLikeThis)', the URL for the article would be:
+When the **Permalink title URL pattern** option is set to 'Intercapped (TitleLikeThis)', the URL for the article would be:
 
-~~~
 https://example.com/AnnandBobeatcake
-~~~
+{:.example}
 
 ### Send &quot;Last-Modified&quot; header?
 
@@ -262,13 +265,13 @@ This can reduce bandwidth consumption, page load times, and web server load.
 
 When set to 'Yes', expired articles will continue to show on your site after their expiry date has elapsed. You can use [if_expired](https://docs.textpattern.com/tags/if_expired) to show alternate content or markup for expired articles.
 
-When set to 'No', expired articles will be removed from the public site and return a "410 Gone" HTTP status instead. Visitors hitting an expired article will be shown a custom page template named "error_410" if it's present.
+When set to 'No', expired articles will be removed from the public site and return a `410 Gone` HTTP status instead. Visitors hitting an expired article will be shown a custom page template named <i>**error_410**</i> if it is present.
 
 ### Use Textile
 
-Textile is a utility intended to simplify the conversion of plain text to HTML. When enabled, Textile will process the body text of articles and return structurally sound HTML.
+[Textile](https://textile-lang.com/) is a utility intended to simplify the conversion of plain text to HTML. When enabled, Textile will process the body text of articles and return structurally sound HTML.
 
-Textile also offers a powerful but easy-to-learn set of commands with which to format text, define structures such as lists, headers and blockquotes, and insert links and images.
+Textile also offers a powerful but easy-to-learn set of commands with which to format text, define structures such as lists, headers and block quotes, and insert links and images.
 
 The setting you choose here becomes the default for excerpt and body markup on the [Write panel](https://docs.textpattern.com/administration/write-panel#url-only-title). You can choose to allow complete Textile processing, to convert line breaks into HTML paragraph markers or not convert any text at all.
 
@@ -278,9 +281,9 @@ This setting only has an effect when [Logging](#logging) is turned on. Using DNS
 
 ### Enable short tag support?
 
-<span class="success">**New v4.7.0**</span>. Textpattern tags take the form `<txp:tag_name attribute1="value" … />`. It is possible to reduce the amount of typing involved by enabling a shorthand notation whereby the `txp:` may be omitted by following a few simple guidelines. See [Short tags and macros/shortcodes](https://docs.textpattern.com/tags/tag-basics/short-tags-macros-shortcodes) for more information.
+Textpattern tags take the form `<txp:tag_name attribute1="value" … />`. It is possible to reduce the amount of typing involved by enabling a shorthand notation whereby the `txp:` may be omitted by following a few simple guidelines. See [Short tags and macros/shortcodes](https://docs.textpattern.com/tags/tag-basics/short-tags-macros-shortcodes) for more information.
 
-**Note** that setting this preference in no way affects the ability to use `<txp:output_form />` short codes to render form snippets. You can still use `<txp::shortcode />`, which will be interpreted as `<txp:output_form form="shortcode" />`.
+Setting this preference in no way affects the ability to use `<txp:output_form />` short codes to render form snippets. You can still use `<txp::shortcode />`, which will be interpreted as `<txp:output_form form="shortcode" />`.
 
 ### Use plugins?
 
@@ -417,7 +420,7 @@ When set to 'Yes', comments may contain Textile elements which would otherwise b
 * code
 * extended block syntax (`bc..`, `bq..`, etc.)
 
-**Note:** For security reasons, raw HTML is transformed into regular text.
+For security reasons, raw HTML is transformed into regular text.
 
 ### Spam blocklists (comma-separated)
 
@@ -433,35 +436,31 @@ This region is where custom fields can be defined (new installations of Textpatt
 
 **Important notes on creating custom field names:** Custom field names may include letters (uppercase or lowercase), numbers, and under scores, but no spaces or other special characters should be used. For example, `custom1`, `Custom1`, and `Custom_1` are all valid name constructs, while `custom 1` and `custom !` are not.
 
-Also, there are certain names **reserved** by Textpattern, which should *not* be used to name custom fields, or it could cause your code to not work as expected. **Do not use the following for custom field names:**
+Also, there are certain names **reserved** by Textpattern, which should *not* be used to name custom fields, or it could cause your code to not work as expected. **Do not use the following for custom field names**:
 
-* `annotate`
-* `article_image`
-* `authorid`
-* `body`
-* `category`
-* `category1`
-* `category2`
-* `comments_count`
-* `comments_invite`
-* `excerpt`
-* `form`
-* `keywords`
-* `limit`
-* `offset`
-* `posted`
-* `section`
-* `sort`
-* `status`
-* `thisid`
-* `title`
-* `url_title`
-* Any other [tag attribute](https://docs.textpattern.com/tags/tag-attributes-cross-reference), just in case!
+* annotate
+* article_image
+* authorid
+* body
+* category
+* category1
+* category2
+* comments_count
+* comments_invite
+* excerpt
+* form
+* keywords
+* limit
+* offset
+* posted
+* section
+* sort
+* status
+* thisid
+* title
+* url_title
+* Or any other [tag attribute](https://docs.textpattern.com/tags/tag-attributes-cross-reference), just in case!
 
 A symptom of a name clash is when you go to check or display the contents of a custom field and receive unexpected (or no) output. In this case, make sure your custom field names are not any of the reserved names listed above.
 
 To remove a custom field, simply clear its name.
-
-**Don't forget to save changes made in the panel.**
-
-[Next: Languages panel](https://docs.textpattern.com/administration/languages-panel)
