@@ -55,15 +55,17 @@ And your plugin names, if you developed any, would look like this:
 
 ### Theme assets
 
-A Textpattern theme is a collection of *page* templates, *form* markup, stylesheets, and a manifest file with a little metadata; all packaged together in a single directory bearing the theme’s name. The single directory can be thought of as a ‘package’ and its contents can be thought of ‘assets’ organized in subdirectories by type. The [*manifest.json*](#the-manifest-json-file) file is talked about later, but let’s be clear on what the other assets are and what their function is.
+A Textpattern theme is a collection of *page* templates, *form* markup, stylesheets, and a manifest file with a little metadata; all packaged together in a single directory bearing the theme’s name. The single directory can be thought of as a ‘package’ and its contents can be thought of ‘assets’ organized in subdirectories by type.
+
+A theme package’s organization, and how Textpattern handles it on importing and updating, is presented later. For now, out of the gate, be clear on what pages and forms and how they come together.
 
 [Pages](https://docs.textpattern.com/administration/pages-panel) are your web page templates, primarily built with HTML and [Textpattern tags](https://docs.textpattern.com/tags). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](https://docs.textpattern.com/tags/output_form) tags), or as a combination of embedded markup and form includes. Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* learn Textpattern tags! 
 
-[Forms](https://docs.textpattern.com/administration/forms-panel) are the named containers of markup components (conceptually the same as partials, snippets, or includes) for *inclusion* into page templates, or for nesting into other forms. Such ‘Russian doll’ construction of your website’s architecture using pages and forms enables building sophisticated website structures that are, again, easier to manage and maintain.
+[Forms](https://docs.textpattern.com/administration/forms-panel) are the named containers of markup components (conceptually the same as partials, snippets, or includes) for *inclusion* into page templates, or for nesting into other forms. Such ‘Russian doll’ construction of your website’s architecture using pages and forms enables building sophisticated website structures that are, again, easier to manage and maintain. See [Form templates explained](https://docs.textpattern.com/themes/form-templates-explained.md) if you need a deeper dive into forms.
 
-[Styles](https://docs.textpattern.com/administration/styles-panel) are stylesheets that hold your CSS and need no further explanation; except to emphasize that, like pages, they must be associated to one or more sections of your website in order to rule the presentation of them.
+Of course you know what stylesheets are; they need no further explanation except to emphasize that, like pages, they must be associated to one or more sections of your website in order to rule the presentation of them.
 
-All assets are required in a theme package, even if not all types are used in a given theme. That seeming discrepancy is better understood after reading the [Theme package defaults](#theme-package-defaults) section later. Again, pages and styles are assigned to website [sections](https://docs.textpattern.com/administration/sections-panel), while forms are simply components of markup to be pieced together however you want in pages or other forms.
+All assets are required in a theme package, even if not all types are used in a given theme. That seeming discrepancy is better understood after reading the [Default package and handling](#default-package-and-handling) section later. Again, pages and styles are assigned to website [sections](https://docs.textpattern.com/administration/sections-panel), while forms are simply components of markup to be pieced together however you want in pages or other forms.
 
 ### Scope of possibilities
 
@@ -294,7 +296,7 @@ Click the Go button and confirm when asked if you are sure.
 
 You can now move or copy the exported theme (the one on disk) to a new location where others may download it for use. Whatever location that is, make sure the URL has been entered in the Website field of the theme’s metadata (refer to [duplicating a theme](#duplicate-via-the-with-selected-control)).
 
-### Default handling of imported themes
+### Default package and handling
 
 To ensure a theme imported into your installation does not break your front-end, Textpattern augments imported theme packages with any missing essential elements otherwise needed by the default system. This is useful, say, when theme designers choose the hack-from-scratch approach instead of the guided create-via-Textpattern approaches described in earlier sections. Or when the package organization that Textpattern expects is missing.
 
