@@ -10,6 +10,11 @@ description: The brand identity resources for Textpattern. Use these resources w
 
 The following resources (more are in development) are used by the Textpattern project for all of its platforms and associated content. We are grateful if you use these resources too, where reasonable, whenever you write, speak, or present about Textpattern.
 
+**On this page**:
+
+* Table of contents
+{:toc}
+
 ## Project-wide resources
 
 These baseline resources are used across all Textpattern platforms and project initiatives. Thus must be followed in all cases.
