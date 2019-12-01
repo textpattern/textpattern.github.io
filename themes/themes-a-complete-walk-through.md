@@ -294,81 +294,11 @@ Click the Go button and confirm when asked if you are sure.
 
 You can now move or copy the exported theme (the one on disk) to a new location where others may download it for use. Whatever location that is, make sure the URL has been entered in the Website field of the theme’s metadata (refer to [duplicating a theme](#duplicate-via-the-with-selected-control)).
 
-### Importing themes
+### Default handling of imported themes
 
-Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database. What that means is, if you have no external themes transferred to the <i>themes</i> directory (i.e. on disk), or none there are different from what are already tabled in the Themes panel, you won’t find any way to import a theme no matter how hard you look. That’s because the initial import theme menu is contextual to the <i>themes</i> directory. If either of the following two conditions are true, you won’t see the menu in the Themes panel:
+To ensure a theme imported into your installation does not break your front-end, Textpattern augments imported theme packages with any missing essential elements otherwise needed by the default system. This is useful, say, when theme designers choose the hack-from-scratch approach instead of the guided create-via-Textpattern approaches described in earlier sections. Or when the package organization that Textpattern expects is missing.
 
-* No external themes exist in the <i>themes</i> directory
-* No external themes exist in the <i>themes</i> directory that are not already listed in the Themes panel table.
-
-When an external theme has been added to the <i>themes</i> directory, defying the conditions above, you’ll see the contextual menu appear at top of the Themes panel, enabling you to ‘import’ the new external theme(s) that are sitting there.
-
-![Import theme menu](https://docs.textpattern.com/img/import-theme-menu.png)
-
-You can then use the menu to select the theme you are after and initially ‘Import’ it to the themes table.
-
-![Import theme menu select](https://docs.textpattern.com/img/import-theme-menu-select.png)
-
-At this point the theme is available to use and/or modify as you would any theme in your Themes panel.
-
-If you later delete the theme from the Themes panel and not the equivalent package sitting in the directory, breaking the second condition above, the theme import control appears at top of the themes table again with the external theme appearing in the control’s selection menu. You can then re-import the theme, if so desired (but then why delete to begin with), or use the appearance of the control as a reminder that the package in the <i>themes</i> directory also needs deleted. Only when all external themes sitting in the <i>themes</i> directory are in the themes table, too, will the import control not be present. 
-
-### Updating imported themes
-
-If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer has revised the source theme and distributed a new and improved version. Not wanting to miss out on the cutting edge, you dutifully update your version with the latest release, as follows
-
-## System handling of imported themes
-
-To ensure a theme imported into your installation does not break your front-end, Textpattern augments imported theme packages with any missing essential elements otherwise needed by the default system. This is useful, say, when theme designers choose the hack-from-scratch approach, instead of the sensible create-via-Textpattern approaches described in this document, and distribute themes that lack subdirectories or default files that Textpattern expects. 
-
-The following sections describe the various assets of a default theme package, and what Textpattern does when any imported theme strays from the norm. But don’t worry, package augmentation is a relatively soft process, ensuring theme’s mostly work as intended, and allowing manual tweaking thereafter, if needed, to bring them into better alignment with your website’s structure.
-
-### The *manifest.json* file
-
-Theme packages will include the essential <i>manifest.json</i> file, in which the following six metadata items are found:
-
-* title
-* version
-* description
-* author
-* author_uri
-* txp-type
-
-The first five items reflect the last five fields in the **New theme** and **Edit theme** form described in earlier sections (n.b. the `author_uri` data item equals the Website field). So if you provide data for all six fields when creating a theme, these five metadata items will be filled in the <i>manifest.json</i> file with the same data values. Following is the <i>manifest.json</i> file for the default Textpattern theme, for example:
-
-``` json
-{
-  "title": "Four Point Seven",
-  "version": "4.7.3",
-  "description": "The default theme shipped with Textpattern CMS 4.7.",
-  "author": "Team Textpattern",
-  "author_uri": "https://github.com/textpattern/textpattern-default-theme",
-  "txp-type": "textpattern-theme"
-}
-```
-
-Again, as detailed earlier in this document, only two fields are mandatory (Name and Title), and only two more (Version and Author) will be filled automatically with default data if the remaining four fields are ignored. So if the four optional fields are skipped at time of creating the theme, the manifest file will look similar to this:   
-
-```json
-{
-"title": "My New Theme",
-  "version": "0.0.1",
-  "description": "none",
-  "author": "username",
-  "author_uri": "none",
-  "txp-type": "textpattern-theme"
-  }
-```
-
-The last item (`txp-type`) and it’s associated value is a constant; it must always exist and never change. The other five  items can be changed anytime via the Themes panel, as already described earlier. Click the theme’s name in the Name column of the themes table to bring up the **Edit theme** form.
-
-![Click theme name](https://docs.textpattern.com/img/click-theme-name.png)
-
-### Structure of default theme
-
-In addition to the manifest file are the page and form templates and the styles, all organized into subdirectories reflecting default Textpattern structure. Form templates, especially, have greater subdirectory division, reflecting the different form types in the [Forms panel](https://docs.textpattern.com/administration/forms-panel). All page and form template files are Textpattern file format (i.e. *.txp*), while styles are, of course, cascading stylesheets format (i.e. *.css*).
-
-Following is the default theme package structure that Textpattern expects and accounts for, whether or not a given element is actually needed in a theme:
+The following expanded directory is the default theme package structure that Textpattern expects and accounts for, whether or not a given element is actually needed in a theme:
 
 * {:.directory--open} abc_theme_name
   * {:.directory--open} pages
@@ -396,13 +326,43 @@ Following is the default theme package structure that Textpattern expects and ac
   * {:.document} manifest.json
 {:.list--files}
 
-Each asset type, and Textpattern’s handling of them when importing themes, is described in the remaining sections.
+Each asset type, and Textpattern’s handling of them when importing themes, is described in the next sections, beginning with the metadata file
 
-[^archive]: The <i>archive.txp</i> page, though included in the default theme package, is not a required page template, nor is it used (i.e. associated with a section) in the [default website structure](https://dev-demo.textpattern.co/), which is why you don’t see an Archive page in the main navigation. This page is subject to being removed in a future release of the default theme, but you may freely use or remove it in your own theme package, no problem. 
+[^archive]: The <i>archive.txp</i> page, though included in the default theme package, is not a required page template, nor is it used (i.e. associated with a section) in the [default website structure](https://dev-demo.textpattern.co/), which is why you don’t see an Archive page in the main navigation. This page is subject to being removed in a future release of the default theme, but you may freely use or remove it in your own theme package, no problem.
+
+#### The *manifest.json* file
+
+Theme packages will include the essential <i>manifest.json</i> file, in which the following six metadata items are found:
+
+* title
+* version
+* description
+* author
+* author_uri
+* txp-type
+
+The first five items reflect the last five fields in the **New theme** and **Edit theme** form described in earlier sections (the `author_uri` data item equals the Website field). If you provide data for all six fields when creating a theme, these five metadata items will be filled in the <i>manifest.json</i> file with the same data values.
+
+Again, as detailed earlier in this document, only two fields are mandatory (Name and Title), and only two more (Version and Author) will be filled automatically with default data if the remaining four fields are ignored. So if the four optional fields are skipped at time of creating the theme, and the theme designer doesn’t update the metadata any time before exporting the theme, the manifest file will look similar to this:   
+
+```json
+{
+"title": "My New Theme",
+  "version": "0.0.1",
+  "description": "none",
+  "author": "username",
+  "author_uri": "none",
+  "txp-type": "textpattern-theme"
+  }
+```
+
+The last item (`txp-type`) and it’s associated value is a constant; it must always exist and never change. The other five  items can be changed anytime via the Themes panel, as already described earlier. But here’s a reminder: Click the theme’s name in the Name column of the themes table to bring up the **Edit theme** form.
+
+![Click theme name](https://docs.textpattern.com/img/click-theme-name.png)
 
 #### The *pages* directory
 
-The *pages* directory is required in a theme package because two essential pages must exist (though you can add more in your own theme): 
+The *pages* directory is required in a theme package because at least two essential pages must exist (though you can add more): 
 
 * {:.directory--open} pages
   * . . .
@@ -445,6 +405,29 @@ Future version updates of the theme will not overwrite the added directories and
 #### The *styles* directory
 
 The optional *styles* directory contains the stylesheet file. If the file is missing in the *styles* directory of a theme package, Textpattern will automatically create it as an empty stylesheet on first import of the theme. If the *styles* directory is missing, an empty directory with a blank *default.css* file will be created on the first import. The default files will not be overwritten in future updates of the theme unless the new theme version provides files by the same name.
+
+### Importing themes
+
+Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database. What that means is, if you have no external themes transferred to the <i>themes</i> directory (i.e. on disk), or none there are different from what are already tabled in the Themes panel, you won’t find any way to import a theme no matter how hard you look. That’s because the initial import theme menu is contextual to the <i>themes</i> directory. If either of the following two conditions are true, you won’t see the menu in the Themes panel:
+
+* No external themes exist in the <i>themes</i> directory
+* No external themes exist in the <i>themes</i> directory that are not already listed in the Themes panel table.
+
+When an external theme has been added to the <i>themes</i> directory, defying the conditions above, you’ll see the contextual menu appear at top of the Themes panel, enabling you to ‘import’ the new external theme(s) that are sitting there.
+
+![Import theme menu](https://docs.textpattern.com/img/import-theme-menu.png)
+
+You can then use the menu to select the theme you are after and initially ‘Import’ it to the themes table.
+
+![Import theme menu select](https://docs.textpattern.com/img/import-theme-menu-select.png)
+
+At this point the theme is available to use and/or modify as you would any theme in your Themes panel.
+
+If you later delete the theme from the Themes panel and not the equivalent package sitting in the directory, breaking the second condition above, the theme import control appears at top of the themes table again with the external theme appearing in the control’s selection menu. You can then re-import the theme, if so desired (but then why delete to begin with), or use the appearance of the control as a reminder that the package in the <i>themes</i> directory also needs deleted. Only when all external themes sitting in the <i>themes</i> directory are in the themes table, too, will the import control not be present. 
+
+### Updating imported themes
+
+If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer has revised the source theme and distributed a new and improved version. Not wanting to miss out on the cutting edge, you dutifully update your version with the latest release, as follows
 
 ## Removing themes
 
