@@ -2,30 +2,24 @@
 layout: landing
 category: Themes
 published: true
-title: Themes index
-description: Getting started with Textpattern themes.
+title: Textpattern themes
+description: Links to all the information about Textpattern themes.
 ---
 
-# Textpattern themes
+# Themes
 
-Front-side and admin-side themes are available in Textpattern. This page is your waypoint for getting started.
+This is the index for Textpattern themes.
+Get your theme on!
 
-## Themes website
+## Links
 
-There is a new themes site coming. Few details are available at this point, but presumably it will be a mecca for finding and sharing front-side and admin-side Textpattern themes.
+Front-end themes
+: [Themes: A complete walk-through](https://docs.textpattern.com/themes/themes-a-complete-walk-through) (maybe all you need)
+: [Themes panel](https://docs.textpattern.com/administration/themes-panel) (primary features and functionality)
 
-[Follow along with site development](https://github.com/textpattern/textpattern-themes-website).
+Back-end themes
+: [Creating a custom administration theme](https://docs.textpattern.com/themes/admin-side-themes)
 
-## Front-end themes
-
-With the arrival of Textpattern 4.7 comes new core theming functionality for the front-end:
-
-* [Front-end themes](https://docs.textpattern.com/themes/front-end-themes)
-* [Themes panel](https://docs.textpattern.com/administration/themes-panel) (administration doc)
-* [Textpattern gains Themes support](https://textpattern.com/weblog/403/textpattern-cms-gains-themes-support) (developer overview on theme functionality)
-
-## Admin-side themes
-
-Admin-side themes are handled differently to front-side themes and were created prior to Textpattern 4.7:
-
-* [Admin-side themes](https://docs.textpattern.com/themes/admin-side-themes)
+Themes website
+: [Under development](https://github.com/textpattern/textpattern-themes-website)
+: themes.textpattern.com (eventual location)
