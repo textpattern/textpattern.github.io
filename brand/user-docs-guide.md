@@ -33,7 +33,7 @@ In relation to the primary and secondary audiences are specific breadths and dep
 
 ### Breadth of primary documentation
 
-The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes [administration](https://docs.textpattern.com/administration) features and capabilities, and [Textpattern tags](https://docs.textpattern.com/tags) and [tag attributes](https://docs.textpattern.com/tags/tag-basics) information. To a lesser degree is information about initially [installing Textpattern](https://docs.textpattern.com/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](https://docs.textpattern.com/faqs). Also new, in reflection of new core functionality, are a handful of [shortcode](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes) examples as tutorials.
+The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes [administration](https://docs.textpattern.com/administration) features and capabilities, and [Textpattern tags](https://docs.textpattern.com/tags) and [tag attributes](https://docs.textpattern.com/tags/tag-basics) information. To a lesser degree is information about initially [installing Textpattern](https://docs.textpattern.com/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](https://docs.textpattern.com/faqs). Also new, in reflection of new core functionality, is a handful of [shortcode](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes) examples as tutorials.
 
 Excepting the following section, the remainder of these guidelines are written with the primary audience and documentation scope in mind.
 
@@ -57,7 +57,7 @@ Sparse documentation is the best kind when the reason is that more is unnecessar
 
 #### Rely on embedded help tips
 
-Embedded help tips in the back-end interface panels are an important component between overall software usability and end-user documentation. They are meant to quickly and _sufficiently_ explain a feature when the organization, design, and/or labeling of the functionality is not otherwise clear. So not only are embedded help tips an interface usability concern for developers, but they are a documentation concern for editors. Embedded help must get the same attention and care the documentation website receives.
+Embedded help tips in the back-end interface panels are an important component between overall software usability and end-user documentation. They are meant to quickly and _sufficiently_ explain a feature when the organization, design, and/or labeling of the functionality is not otherwise clear. Embedded help tips an interface usability concern for developers and a documentation concern for editors. Embedded help must get the same attention and care the documentation website receives.
 
 But the two information sources have vastly different contexts of use. Embedded tips are immediate to the user doing tasks in the software, while user documentation is external to software and represents methodic study. The two types of help must be written with those different contexts in mind. Embedded tips are not simply extracts of what is found on documentation pages. Nor should user documentation wax redundantly what embedded tips already explain.
 
@@ -65,7 +65,7 @@ But the two information sources have vastly different contexts of use. Embedded 
 
 The more kinds of documentation in a single repository, the harder it is for primary audiences to navigate and find targeted information, and the harder it is for editors to optimally organize and maintain the repository over time. Ideally the end-user documentation repository has a [primary audience breadth of scope](#scope-of-primary-audience-documentation)), and nothing more.
 
-Other types of documentation are better used and managed in context of the platforms they concern. When a third-party developer decides to develop a Textpattern plugin, the first place they will go to learn how to proceed is the bar with the neon marquee flashing [Plugins](https://github.com/textpattern/textpattern-plugins-website). Information at source of inspiration. No mucking about in core functionality documentation, which is outside and below developer interest. Likewise for designers wanting to try their hand at a new front- or back-end theme; they head to the [Themes](https://github.com/textpattern/textpattern-themes-website) bazaar, where a cornucopia of ‘skin’ inspiration and documentation is at their disposal in context.
+Other types of documentation are better used and managed in context of the platforms they concern. When a third-party developer decides to develop a Textpattern plugin, the first place they will go to learn how to proceed is the bar with the neon marquee flashing [Plugins](https://github.com/textpattern/textpattern-plugins-website). Information at the source of inspiration. No mucking about in core functionality documentation, which is outside and below developer interest. Likewise for designers wanting to try their hand at a new front-end or back-end theme; they head to the [Themes](https://github.com/textpattern/textpattern-themes-website) bazaar, where a cornucopia of ‘skin’ inspiration and documentation is at their disposal in context.
 
 This information does not need written in technical documentation style, but as regular web page content, with screenshots or videos or whatever other format is appropriate for a platform.
 
@@ -77,7 +77,7 @@ The user documentation is fairly well filled-out. Maybe too much in some places 
 
 If you pour over [software usability](#rely-on-software-usability) and the [embedded help tips](#rely-on-embedded-help-tips), the two main layers in this conceptual layering system, you gain a sense of where some material is needed or needs revised. And review of pages against new software releases is important, as well regular refinement of material when opportunities arise. Else, an editor may propose removing a page if it becomes a pointless outlier. A little content recycling across high-traffic locations is enough to trim a needless page.
 
-When [docs collaboration procedures](https://docs.textpattern.com/brand/#user-docs-procedures) are not throwing a 404, they will guide where to focus and on what. But for immediate purposes, it’s better to draft documentation when there’s an obvious need for a topic or type genre (specification, tutorial, FAQ, etc.), than to produce material without knowing it’s warranted. Let the writing be dictated by the community’s demand, or its struggle around a pernicious problem, one prioritized piece at a time. Monitor the forum for repeating gripes and you’ll identify the _what_ part. Collaboration between author, editors, and doc-tree architects will take care of the _how_.
+When [docs collaboration procedures](https://docs.textpattern.com/brand/#user-docs-procedures) are not throwing a 404, they will guide where to focus and on what. But for immediate purposes, it is better to draft documentation when there’s an obvious need for a topic or type genre (specification, tutorial, FAQ, etc.), than to produce material without knowing it’s warranted. Let the writing be dictated by the community’s demand, or its struggle around a pernicious problem, one prioritized piece at a time. Monitor the forum for repeating gripes and you’ll identify the _what_ part. Collaboration between author, editors, and doc-tree architects will take care of the _how_.
 
 #### Scope and depth of a page
 
@@ -94,7 +94,7 @@ See intuitive feature in software.
 
 It’s safe to assume that anyone reading that particular line will have installed the software, and thus can refer to it. And if not, the documentation wouldn’t matter to them anyway.
 
-Here’s another useful referral statement. Use this one if a given feature is only clear from the additional information conveyed via a help tip:
+Here’s another example of a referral statement. Use this one if a given feature is only clear from the additional information conveyed via a help tip:
 
 See help tip for this feature.
 {:.example}
@@ -218,7 +218,7 @@ Another example:
 The markup controlling how comments are displayed is found in the <i>**comments_display**</i> form in the Forms panel.
 {:.example}
 
-Note the underscore on core compound names. Also note that 'Forms' is a single-word header string denoting the name of the panel; used here as a proper adjective, and correctly distinguished from regular text by the capitalization. The word 'form', however, is just a common noun, thus not formatted.
+Note the underscore on core compound names, and that 'Forms' is a single-word header string denoting the name of the panel; used here as a proper adjective, and correctly distinguished from regular text by the capitalization. The word 'form', however, is just a common noun, thus not formatted.
 
 One more example combining another string type, an [inline directory name](#paths-directories-and-files-inline):
 
@@ -328,7 +328,7 @@ Embedded quotations are short strings of text from another source quoted inline.
 
 A few such strings are scattered around the administration side of the software. Following is a hypothetical documentation example that points out two such strings (links are part of the actual interface strings but not functional here):
 
-At bottom of every back-end panel are two short strings. One informs you of the software version used: <q>[Textpattern CMS]() (v4.7.3)</q>. The other provides a link to the top of the panel: <q>[Back to top]()</q>.
+At bottom of every back-end panel are two short strings. One informs you of the software version used: <q>[Textpattern CMS](#embedded-quotations) (v4.7.3)</q>. The other provides a link to the top of the panel: <q>[Back to top](#embedded-quotations)</q>.
 {:.example}
 
 It’s appropriate to mark up the embedded quotations using a `q` element, which adds the quotation marks automatically, for example:
@@ -343,13 +343,11 @@ Do not bother adding a `cite` attribute to the `q` element when quoting short, f
 
 When, and only when, a free-text string is long enough to warrant being a ‘displayed quotation’ (i.e. quotations that are not embedded inline).[^disquotes], mark it up as a block quote using a `blockquote` element via Markdown’s `>` notation). The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
 
-There’s only one instance of a free-text string in the back-end interface that’s long enough to warrant this markup. It’s a paragraph in the [Languages panel](https://docs.textpattern.com/administration/languages-panel), under the panel header, and reads:
+There are only two situations that you might ever use a block quote; if quoting a popup help tip, or if quoting the only free-text string in the back-end interface that’s long enough to warrant this markup. It’s a paragraph in the [Languages panel](https://docs.textpattern.com/administration/languages-panel), under the panel header, and reads:
 
 > **You can help us improve Textpattern!** We welcome additional translations (and corrections to current translations) by our user community. Please visit Textpattern language translations (opens an external link in a new window) for further details.
 
-Right here, right now, is the only time that paragraph ever needs quoted in user documentation, and it’s only done so to demonstrate what you will never have to use, a `blockquote`. Other platforms like Forums, blogs, and magazines use them extensively, but block quotes are not necessary in Textpattern user documentation, and especially if used incorrectly.
-
-For example, block quotes are *never* used as example boxes, note boxes, or any other miscellaneous excuse for making text stand apart from regular copy. Don’t be fooled by their neat orange presentation, though it grabs your attention.
+Never use `blockquote` to mark up example boxes, note boxes, or any other miscellaneous block elements simply to make text stand apart from regular copy. Specific selectors are available for such situations and described later.
 
 [^disquotes]: <i>New Oxford Style Manual</i>, ed. Anne Waddingham (3rd edn, Oxford, 2016), p 162.
 
@@ -385,7 +383,6 @@ Also mind these important conventions for distinguishing these elements:
 When, and only when, these elements are reflecting actual code, display them as block-level code examples in the actual code they come from and ignore any other formatting convention, for example:
 
 ```
-Textpattern version: 4.7.3 (7c46d1f4c8ac79e62a7d5e54a9ddac53)
 . . .
 Textpattern path: __TXP-ROOT/textpattern
 Article URL pattern: title_only
@@ -397,7 +394,7 @@ Never style paths, directories, or file names inline as `code`.
 
 #### Paths, directories, and files in lists
 
-In the rare case it’s necessary or convenient to use paths, directories, or file names in a list, unique to one of those types of elements (i.e. a list of paths only, or a list of file names only, etc.), do not use italic formatting since the list itself is distinguishing these items from regular text.
+In the rare case it is necessary or convenient to use paths, directories, or file names in a list, unique to one of those types of elements (i.e. a list of paths only, or a list of file names only, etc.), do not use italic formatting since the list itself is distinguishing these items from regular text.
 
 If such a list is reflecting a file tree or directory contents, ensure the list is styled correctly using an appropriate selector. See more on this in [File-tree components](#file-tree-components).
 
@@ -733,7 +730,7 @@ Less frequently needed are example lists. Example list styling looks like exampl
 * etc
 {:.example}
 
-As before, simply add the notation on a new line directly under the list block:
+As before, add the notation on a new line directly under the list block:
 
 ```
 * item one
