@@ -15,7 +15,7 @@ Anyone in the Textpattern community who wants to build and share themes and/or p
 * Table of contents
 {:toc}
 
-## Choosing a prefix
+## Prefix registration rules
 
 Guidelines, courtesies, and points of fact about choosing and registering an author prefix:
 
@@ -23,19 +23,17 @@ Guidelines, courtesies, and points of fact about choosing and registering an aut
 
 **You must have a [Textpattern community forum](https://forum.textpattern.com/) account**. Provide the link to your forum profile when registering a prefix.
 
-**You can only have one prefix.** But, sometimes an author will adopt the themes or plugins of another author if the latter has abandoned or ‘retired’ from the community and their products are still considered useful. Adoption means the adopter is willing to maintain the themes or plugins, as appropriate, for community use.
-
-This is the preferred practice against simply changing plugin names. For example, username *wet* also used the prefix ‘wet’ to make plugins, and thus is ‘wet/wet’ in the prefix lists at bottom, but he's adopted the orphaned plugins with prefix ‘djw’, too, thus you will see ‘djw/wet’ as well.
+**You can only have one prefix.** But, sometimes an author will adopt the themes or plugins of another author if the latter has abandoned or ‘retired’ from the community and their products are still considered useful. Adoption means the adopter is willing to maintain the themes or plugins, as appropriate, for community use. This is the preferred practice against simply changing plugin names.
 
 **Your prefix should be three alphanumeric characters.** No less and no more. (Ignore any you see in the lists that defy this convention.)
 
-**Squatters can be challenged.** Unused prefixes go to the first person who has a theme or plugin to share. So, only register a prefix when you have a theme or plugin ready to go (or can show you are near ready to share one). Conversely, don't register a prefix and squat on it indefinitely without ever producing anything.
+**First to market wins the prefix.** Unused prefixes go to the first person who has a theme or plugin to share, regardless if the prefix has already been registered. So, only register a prefix when you have a theme or plugin ready to go (or can show you are near ready to share one). 
 
-Prefix ownership may be challenged if it is found that an author has not created a theme or plugin yet and is squatting on the prefix. In this case, you (the challenger) must produce the first theme or plugin to earn ownership of the prefix in question. At that time, bring the issue to light in the appropriate [Theme discussion](https://forum.textpattern.com/viewforum.php?id=8) or [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13) forum with proof of your product ready to share, and others can help recognize and validate the challenge.
+**Prefix ownership may be challenged.** Prefix ownership may be challenged if it is found that an author has not created a theme or plugin yet and is squatting on the prefix. In this case, you (the challenger) must produce the first theme or plugin to earn ownership of the prefix in question. At that time, bring the issue to light in the appropriate [Theme discussion](https://forum.textpattern.com/viewforum.php?id=8) or [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13) forum with proof of your product ready to share, and others can help recognize and validate the challenge.
 
 See additional notes in the [Registered prefixes](#registered-prefixes) Legend.
 
-## Registering a prefix
+## How to register
 
 When ready to register a prefix, open a new ‘Prefix registration’ [Issue](https://github.com/textpattern/textpattern.github.io/issues/new/choose) in the user documentation repository and respond to the pre-filled headings.
 
