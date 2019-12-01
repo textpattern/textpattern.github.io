@@ -70,8 +70,8 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 ### Themes
 {: .index-docs-theme}
 
-* [Getting started with themes](https://docs.textpattern.com/themes/index.html)
-* [Front-end themes](https://docs.textpattern.com/themes/front-end-themes)
+* [Themes index](https://docs.textpattern.com/themes/index.html)
+* [Themes: A complete walk-through](https://docs.textpattern.com/themes/themes-a-complete-walk-through)
 * [Creating a custom administration theme](https://docs.textpattern.com/themes/creating-a-custom-administration-theme)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
 {: .list--no-bullets}
