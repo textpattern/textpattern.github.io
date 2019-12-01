@@ -23,11 +23,11 @@ Guidelines, courtesies, and points of fact about choosing and registering an aut
 
 **You must have a [Textpattern community forum](https://forum.textpattern.com/) account**. Provide the link to your forum profile when registering a prefix.
 
-**You can only have one prefix.** *One*. But, sometimes an author will adopt the themes or plugins of another author if the latter has abandoned or ‘retired’ from the community and their products are still considered useful. Adoption means the adopter is willing to maintain the themes or plugins, as appropriate, for community use. This is the preferred, respectful practice against simply changing plugin names.
+**You can only have one prefix.** *One*. (You may see two or three people in the lists having multiple prefixes. Ignore it. Housecleaning is coming eventually.) In other cases, an author will adopt the themes or plugins of another that has abandoned or ‘retired’ from the community and their products are still considered useful. Adoption means the adopter is willing to maintain the themes or plugins, as appropriate, for community use. This is the preferred, respectful practice against simply changing plugin names.
 
 **Your prefix should be three alphanumeric characters.** Not less and not more. (Ignore any you see in the lists that defy this convention.)
 
-**First to market wins the prefix.** Unused prefixes go to the first person who has a theme or plugin to share, regardless if the prefix has already been registered. So, only register a prefix when you have a theme or plugin ready to go (or can show you are near ready to share one). 
+**First to market wins the prefix.** Prefixes go to the first person who has a theme or plugin to share, regardless if the prefix has already been registered. So, only register a prefix when you have a theme or plugin ready to go (or can show you are near ready to share one). 
 
 **Prefix ownership may be challenged.** Prefix ownership may be challenged if it is found that an author has not created a theme or plugin yet and is squatting on the prefix. In this case, you (the challenger) must produce the first theme or plugin to earn ownership of the prefix in question. At that time, bring the issue to light in the appropriate [Theme discussion](https://forum.textpattern.com/viewforum.php?id=8) or [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13) forum with proof of your product ready to share, and others can help recognize and validate the challenge.
 
@@ -39,18 +39,23 @@ When ready to register a prefix, open a new ‘Prefix registration’ [Issue](ht
 
 If you do not have a GitHub account and do not want to create one, make your prefix request in the [Theme discussion](https://forum.textpattern.com/viewforum.php?id=8) or [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13) forum accordingly. Point out your anti-GitHub position so it is understood why you are breaking normal procedure. Totally fine. 
 
-**Attention prefix owners**: If your username is not linked with your forum profile and you would like it to be, get in touch as described and indicate your forum profile link. It will be added for you.
-
 ## Registered prefixes
 
-The prefixes in the following alphabetical lists have been registered, meaning they are not available. But see [Choosing a prefix](#choosing-a-prefix) about challenging for the right to use an unused registered prefix, and note the legend entry below about green (abandoned) prefixes, which are available.
+The prefixes in the following alphabetical lists have been registered, meaning they are not available. But see [Choosing a prefix](#choosing-a-prefix) about challenging for the right to use an unused/squatted prefix, and note the legend entry below about other potentially available prefixes in the lists.
 
-Prefixes are noted in relation to their owners as: prefix/username. Owners are identified by their Textpattern community forum usernames. Usernames link to forum profiles, not personal websites.
+Prefixes are noted in relation to their owners as:
+
+abc: username
+{:.example}
+
+Owners are identified by their Textpattern community forum usernames. Usernames link to forum profiles, not personal websites.
+
+**Attention prefix owners**: If your username is not linked with your forum profile and you would like it to be, get in touch as described in the previous section and indicate your forum profile link. It will be added for you. (While someone could spend precious hours looking profiles up for everyone on the list and add them without prompting, they won’t.)
 
 **Legend:**
 
-* A (?) next to a username means no forum profile is found and the status of the prefix is questionable. If an external link is known, it will be on the '?'. **These prefixes can be challenged for new ownership.**
-* A (!) next to a username means the indicated author has adopted all the original authors’ abandoned/orphaned themes and/or plugins, whichever the adopter is qualified to maintain.
+* A **(?)** next to a username means no forum profile is found and the status of the prefix is questionable. If an external link is known, it will be on the '?'. **These prefixes can be challenged for new ownership.**
+* A **(!)** next to a username means the indicated author has adopted all the original authors’ abandoned/orphaned themes and/or plugins, whichever the adopter is qualified to maintain.
 * <span class="success">Green</span> prefixes mean the author has long since left the community *and* no themes or plugins remain usable or adopted with that prefix anymore. **These prefixes can be claimed by a new author.**
 * <span class="error">Red</span> prefixes are off limits until further notice (notably ‘foo’ and ‘dca’).
 * <span class="warning">Yellow</span> prefixes are used internally by Textpattern and are off limits.
