@@ -565,7 +565,7 @@ abc-my-new-theme
 abc_my_new_plugin
 {:.example}
 
-## Where to use the prefix
+## Where else to use the prefix
 
 For themes there is only one place: the Name value of the theme package, created using the **New theme** form via the Themes panel in Textpattern’s back end.
 
