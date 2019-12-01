@@ -169,7 +169,7 @@ This setting is mainly used for plugin developers. When specified, you can put t
 
 It is recommended that you load plugins through the standard [Plugins panel](https://docs.textpattern.com/administration/plugins-panel) on a production site, rather than using the plugin cache directory.
 
-**Note:** Do not specify the same directory for both 'Temporary directory path' and 'Plugin cache directory path', as this will cause problems (Textpattern would try to run the contents of temporary log files as plugins).
+Do not specify the same directory for both 'Temporary directory path' and 'Plugin cache directory path', as this will cause problems (Textpattern would try to run the contents of temporary log files as plugins).
 
 ### SMTP envelope sender address
 
@@ -218,7 +218,6 @@ This preference setting does not affect the status or articles created or edited
 Setting this preference to 'Yes' will ensure that long article titles lines never have only the last word on a new line. Instead, the two last words will appear on a new line.
 
 This setting can prove problematic in responsive pages at smaller page widths, because the non-breaking space character between the last two words may cause titles to overspill their parent container. In that case, set this preference to ‘No’.
-{:.footnotes .information}
 
 ### Use excerpts on articles?
 
