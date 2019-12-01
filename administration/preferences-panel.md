@@ -10,14 +10,10 @@ description: The Preferences panel is where you configure the everyday operation
 
 The Preferences panel is where you configure the everyday operation of your Textpattern site. Along with the [Languages panel](https://docs.textpattern.com/administration/languages-panel), most of Textpattern's site-wide settings can be configured and fine-tuned. Preferences are grouped for convenience.
 
-On this page:
+**On this page**:
 
-* [Site preferences](#site-preferences)
-* [Admin preferences](#admin-preferences)
-* [Publish preferences](#publish-preferences)
-* [Feeds preferences](#feeds-preferences)
-* [Comments preferences](#comments-preferences)
-* [Custom fields preferences](#custom-fields-preferences)
+* Table of contents
+{:toc}
 
 ## Site preferences
 
@@ -25,54 +21,74 @@ Site preferences are global settings for your Textpattern site. They include set
 
 ### Site name
 
-The 'Site name' is the title of your website. By default, Textpattern fills this field with "My site", though it can be changed to your preference. An example for a travel-centric website might be "Around The World In 80 Stays", and a coffee shop might have a website called "Brewster's Java Joint".
+**Site name** is the title of your website. By default, Textpattern fills this field with ‘My Site’, though it can be changed to your preference.
+
+A travel-centric website, for example, might be:
+
+Around The World In 80 Stays
+{:.example}
+
+And a coffee shop website might be
+
+Brewster's Java Joint
+{:.example}
 
 ### Site URL
 
-The 'Site URL' is the homepage address where your Textpattern site is viewed. This should be set to your domain or hostname, omitting both the `https://` or `http://` protocol and the trailing forward slash (`/`). For example:
+**Site URL** is the homepage address where your Textpattern site is viewed. This should be set to your domain or hostname without the *http(s)://* protocol and without the trailing forward slash (*/*).
+
+If you use ‘*www*’, then use this pattern:
 
 ~~~
-www.example.com
+www.domain.tld
 ~~~
 
-If you enforce dropping the `www` by way of a rewrite rule, use
+If you enforce dropping the ‘*www*’ by way of a rewrite rule, use this pattern:
 
 ~~~
-example.com
+domain.tld
 ~~~
 
-If you run Textpattern in a site subdirectory, append the directory name
+If you run Textpattern in a site subdirectory, append the directory name:
 
 ~~~
-example.com/subdirectory
+domain.tld/subdirectory
 ~~~
 
 ### Site slogan
 
-The 'Site slogan' is an optional site subheading, motto, or other quote for your site. Considering the examples for Site URL above, "Around The World In 80 Stays"; a slogan of "Adventures Of A Global Explorer" would be relevant here. Likewise, the coffee shop might choose a slogan of "The Best Morning Brew, Since 2002!". The Site slogan should be plain text (i.e. no markup) as it is HTML-escaped before output.
+**Site slogan** is an optional site subheading, motto, or other quote for your site. Considering the examples for **Site name** above
+
+Around The World In 80 Stays<br>Adventures Of A Global Explorer
+{:.example}
+
+Likewise:
+
+Brewster's Java Joint<br>The Best Morning Brew, Since 2002!
+{:.example}
+
+Use plain text only (i.e. no markup), as it is HTML-escaped before output.
 
 ### Production status
 
-The 'Production status' choice defines the level of error reporting and diagnostic information provided by Textpattern. There are three options, as described below.
+The **Production status** choice defines the level of error reporting and diagnostic information provided by Textpattern. There are three options:
 
-**Live:** This mode is best suited production (live) Textpattern sites (i.e. your site is ready to serve pages to visitors) and uses fewest server resources. In 'Live' mode, no errors or diagnostics will be displayed to your visitors.
+‘Live’ is best suited for production (live) websites and uses fewest server resources. In 'Live' mode, no errors or diagnostics will be displayed to your visitors.
 
-**Testing:** This mode is best suited for the initial setup and design of a stable release of Textpattern. Any PHP errors and selected Textpattern warnings will be displayed on public pages. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page, including:
+‘Testing’ is best suited for the initial setup and design of a stable release of Textpattern. Any PHP errors and selected Textpattern warnings will be displayed on public pages. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page, including:
 
 * the time it took the server to build the page ("Runtime")
 * the number of database queries executed
 * approximate peak memory usage
 
-**Debugging:** This mode is best suited for diagnosing problems in Textpattern Pages, Forms, plugins and PHP code. PHP notices will be displayed, in addition to the errors and warnings shown in 'Testing' mode. Browser caching is disabled.
-
-Performance information will be included in HTML comments at the end of every Textpattern page, including:
+‘Debugging’ is best suited for diagnosing problems in Textpattern pages, forms, plugins and PHP code. PHP notices will be displayed, in addition to the errors and warnings shown in 'Testing' mode. Browser caching is disabled. Performance information will be included in HTML comments at the end of every Textpattern page, including:
 
 * the time it took the server to build the page ("Runtime")
 * the number of database queries executed
 * approximate peak memory usage
 * a Textpattern tag trace (i.e. all Textpattern tags processed while building the page)
 
-It's normal to see some PHP notices in 'Debugging' mode. A lone PHP notice is not necessarily an indicator that something is wrong, it's there to aid troubleshooting if a problem arises.
+It is normal to see some PHP notices in 'Debugging' mode. A lone PHP notice is not necessarily an indicator that something is wrong, it's there to aid troubleshooting if a problem arises.
 
 ### Time zone
 
@@ -98,9 +114,9 @@ The 'Archive date format' is a drop-down menu that provides the same options as 
 
 ### Article URL pattern
 
-The 'Article URL pattern' drop-down list is intended to make it easier to establish flexible (or 'Clean' URLs) in your site, which in turn is a nice usability feature for your website visitors. The drop-down list provides different options, one for 'messy' URLs (which is the option for **not** having clean URLs), and various patterns for clean URLs; each having a specific path format.
+The **Article URL pattern** selection control is intended to make it easier to establish flexible (or 'Clean' URLs) in your site, which in turn is a nice usability feature for your website visitors. The drop-down list provides different options, one for 'messy' URLs (which is the option for **not** having clean URLs), and various patterns for clean URLs; each having a specific path format.
 
-Getting clean URLs to work may take a combination of further steps, addressed in @@TODO: managing clean URLs@@.
+Getting clean URLs to work may take a combination of further steps. See [Clean URLs do not work](https://docs.textpattern.com/faqs/clean-urls-do-not-work) for the best we can help you with.
 
 ### Doctype
 
@@ -108,11 +124,13 @@ Select which HTML [doctype](https://www.w3.org/wiki/Doctypes_and_markup_styles) 
 
 ### Logging
 
-The 'Logging' preference allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [Visitor logs panel](https://docs.textpattern.com/administration/visitor-logs-panel) for you to review. This Logging control is a drop-down menu with three options.
+The 'Logging' preference allows you to select what kinds of visiting activity Textpattern should record when such activity occurs. The recorded information is displayed in the [Visitor logs panel](https://docs.textpattern.com/administration/visitor-logs-panel) for you to review. The selection menu has three options.
 
-1. **None:** By default Textpattern will not log any visitor information at all.
-2. **All hits:** Textpattern will collect information for all site visits.
-3. **Referrers only:** Only record information about visitors from another location. This option allows you to see what kind of traffic your site is getting, while at the same time eliminating any log entries that might result from your own access to the site while, for example, making any site updates (generally you do not need to see your own activity on your site).
+Select ‘None’ if you don’t want Textpattern to log visitor information at all. This is the default selection. When ‘None’ is selected, all logging functionality throughout the back end will be hidden in the interface and the **Visitor logs** panel link will be removed from the list of panel options in the Admin region. This helps keep unwanted functionality from being a distraction. The logging functionality all comes back again if the preference is changed to ‘Yes’.
+
+Select ‘All hits’ if you want the logger to collect information for all site visits.
+
+Select ‘Referrers only’ if you only want to log information about visitors from another location. This option allows you to see what kind of traffic your site is getting, while at the same time eliminating any log entries that might result from your own access to the site (e.g. while making any site updates; generally you do not need to see your own activity on your site).
 
 ### Logs expire after how many days?
 
@@ -120,7 +138,7 @@ When you are using Textpattern for logging (see above), you can set how long (in
 
 ### Accept comments?
 
-This is a global setting for whether or not you want to allow your articles to accept comments. Effectively turns of all comment-related functionality within the website and panels.
+This is a global setting for whether or not you want to allow your articles to accept comments. When set to ‘No’, all comments functionality throughout the administration side will be hidden from view in the interface, and the Comments panel link will be removed from the list of panel options in the Content region. This helps keep unwanted functionality from being a distraction. The comments functionality all comes back again if the preference is changed to ‘Yes’. 
 
 ## Admin preferences
 
