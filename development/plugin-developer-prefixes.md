@@ -2,52 +2,60 @@
 layout: document
 category: Development
 published: true
-title: Plugin developer prefixes
-description: All plugin developers must have a prefix to name their plugins and use in plugin development.
+title: Author prefixes and registration
+description: Anyone in the community wanting to build and share themes and/or plugins must register and use an prefix.
 ---
 
-# Plugin developer prefixes
+# Author prefixes and registration
 
-All plugin developers must have a prefix to name their plugins and [use in plugin development](https://docs.textpattern.com/development/plugin-user-help-guidelines).
+Anyone in the Textpattern community who wants to build and share themes and/or plugins must register and use an ‘author’ prefix. A prefix is a three-character (alphanumeric) indication of who the author is, and precedes a theme or plugin name as an assurance that no two themes or plugins will have the same Name value and trip up the software.
 
-A prefix is a three-character (alphanumeric) indication of who the plugin developer is, and precedes a plugin name with an underscore. For example, **wet_haystack** is one of several plugins by Robert Wetzlmayr. The prefix in this case is 'wet', which precedes the specific plugin name ('haystack') with an underscore. All together it forms the unique and complete name of the plugin. An underscore is used for each additional word in a compound name, for example **smd_user_manager**. Plugin names are entirely lowercase.
+**On this page**:
 
-On this page:
+* Table of contents
+{:toc}
 
-* [Guidelines for choosing and using a prefix](#guidelines-for-choosing-and-using-a-prefix)
-* [How to register a prefix](#how-to-register-a-prefix)
-* [Registered prefixes](#registered-prefixes)
-* [Where to use the prefix](#where-to-use-the-prefix)
+## Choosing a prefix
 
-## Guidelines for choosing and using a prefix
+Guidelines, courtesies, and points of fact about choosing and registering an author prefix:
 
-There are some courtesies to keep in mind when registering a plugin prefix:
+**You cannot use a prefix already in use.** Prefixes are valid for as long as the themes or plugins of an author are still in circulation, with a generous grace period.
 
-1. You must have a [Textpattern CMS support forum](https://forum.textpattern.com/) account, and you should provide the link to your forum profile when registering a prefix.
-2. You can only have **one** prefix.[^1]
-3. Your prefix should be **three** alphanumeric characters. No less and no more. (Ignore any you see that defy this convention.)
-4. Register a prefix when you have a plugin ready for publication. Or to put it another way, don't register a prefix and sit on it indefinitely without ever creating a plugin. This is just squatting, and it's not fair to someone else who might like that prefix and have their first plugin ready. Unused prefixes go to the person who first has a plugin to share.
-5. You cannot use a prefix already used by another developer, even if that developer is no longer active in the community.[^2]
+**You must have a [Textpattern community forum](https://forum.textpattern.com/) account**. Provide the link to your forum profile when registering a prefix.
 
-## How to register a prefix
+**You can only have one prefix.** But, sometimes an author will adopt the themes or plugins of another author if the latter has abandoned or ‘retired’ from the community and their products are still considered useful. Adoption means the adopter is willing to maintain the themes or plugins, as appropriate, for community use.
 
-When you're ready to register a prefix, create an 'issue' in the [Textpattern user documentation repo on GitHub](https://github.com/textpattern/textpattern.github.io/issues) and an editor will add it to the plugin developer prefix list.
+This is the preferred practice against simply changing plugin names. For example, username *wet* also used the prefix ‘wet’ to make plugins, and thus is ‘wet/wet’ in the prefix lists at bottom, but he's adopted the orphaned plugins with prefix ‘djw’, too, thus you will see ‘djw/wet’ as well.
 
-**Prefix owners**, if you're username is not linked with your forum profile and you would like it to be, create an issue as described indicating your forum profile link and it will be added.
+**Your prefix should be three alphanumeric characters.** No less and no more. (Ignore any you see in the lists that defy this convention.)
+
+**Squatters can be challenged.** Unused prefixes go to the first person who has a theme or plugin to share. So, only register a prefix when you have a theme or plugin ready to go (or can show you are near ready to share one). Conversely, don't register a prefix and squat on it indefinitely without ever producing anything.
+
+Prefix ownership may be challenged if it is found that an author has not created a theme or plugin yet and is squatting on the prefix. In this case, you (the challenger) must produce the first theme or plugin to earn ownership of the prefix in question. At that time, bring the issue to light in the appropriate [Theme discussion](https://forum.textpattern.com/viewforum.php?id=8) or [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13) forum with proof of your product ready to share, and others can help recognize and validate the challenge.
+
+See additional notes in the [Registered prefixes](#registered-prefixes) Legend.
+
+## Registering a prefix
+
+When ready to register a prefix, open a new ‘Prefix registration’ [Issue](https://github.com/textpattern/textpattern.github.io/issues/new/choose) in the user documentation repository and respond to the pre-filled headings.
+
+If you do not have a GitHub account and do not want to create one, make your prefix request in the [Theme discussion](https://forum.textpattern.com/viewforum.php?id=8) or [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13) forum accordingly. Point out your anti-GitHub position so it is understood why you are breaking normal procedure. Totally fine. 
+
+**Attention prefix owners**: If your username is not linked with your forum profile and you would like it to be, get in touch as described and indicate your forum profile link. It will be added for you.
 
 ## Registered prefixes
 
-The prefixes in the following table are registered, but see the guidelines above.
+The prefixes in the following alphabetical lists have been registered, meaning they are not available. But see [Choosing a prefix](#choosing-a-prefix) about challenging for the right to use an unused registered prefix, and note the legend entry below about green (abandoned) prefixes, which are available.
 
-Prefixes are noted in relation to their owners (prefix/username). Owners are identified by their Textpattern CMS support forum usernames. Usernames link to forum profiles, not personal websites (which should be indicated in the profiles anyway).
+Prefixes are noted in relation to their owners as: prefix/username. Owners are identified by their Textpattern community forum usernames. Usernames link to forum profiles, not personal websites.
 
 **Legend:**
 
-* <span class="error">Red</span> prefixes are off limits until further notice (notably "foo").
+* <span class="error">Red</span> prefixes are off limits until further notice (notably ‘foo’).
 * <span class="warning">Yellow</span> prefixes are used internally by Textpattern and are off limits.
-* <span class="success">Green</span> prefixes mean the developer has left the community and no plugins remain with that prefix anymore. These prefixes can be claimed by a new developer.
-* (?) next to a username means no forum profile is found and the status of the prefix is questionable. If an external link is known, it will be on the '?'. These prefixes could certainly be challenged for new ownership (see guidelines above).
-* (!) next to a username means the indicated developer has adopted all the original developer's plugins, which were abandoned (orphaned).
+* <span class="success">Green</span> prefixes mean the author has left the community and no themes or plugins remain with that prefix anymore. These prefixes can be claimed by a new author.
+* A (?) next to a username means no forum profile is found and the status of the prefix is questionable. If an external link is known, it will be on the '?'. These prefixes could certainly be challenged for new ownership (see guidelines above).
+* A (!) next to a username means the indicated author has adopted all the original authors’ abandoned/orphaned themes and/or plugins, whichever the adopter is qualified to maintain.
 
 {::options parse_block_html="true" /}
 
@@ -140,7 +148,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 <div class="layout-text4col">
 
 * dak/Kaiser
-* dca/Dean
+* dca/Dean (founder’s prefix; never available)
 * dds/nemoorange
 * dem/[demoncleaner](https://forum.textpattern.com/profile.php?id=15280)
 * dfc/domfucssion
@@ -381,7 +389,7 @@ Prefixes are noted in relation to their owners (prefix/username). Owners are ide
 * prad/fpradignac
 * pro/hilaryaq
 * <span class="warning">psa</span>
-* pub ('public'; used for plugins resulting from community collaboration)
+* pub ('public'; for use on products resulting from community collaboration)
 * ptv/Borisch
 * pzc/[prizmcloud](https://forum.textpattern.com/profile.php?id=183307)
 
@@ -540,19 +548,31 @@ None at this time.
 
 </div>
 
+## Using the prefix as Name value
+
+When using the prefix for a theme or plugin Name value, the conventions are the same, except themes use hyphens between words and plugins use underscores. This is to ensure when talking about one type or the other in the community forum, for example, it’s clear from the name what type of product it is.
+
+This is the pattern for theme names:
+
+abc-my-new-theme
+{:.example}
+
+This is the pattern for plugin names:
+
+abc_my_new_plugin
+{:.example}
+
 ## Where to use the prefix
 
-In addition to plugin names, you'll apply your prefix in the following locations:
+For themes there is only one place: the Name value of the theme package, created using the **New theme** form via the Themes panel in Textpattern’s back end.
+
+For plugins, including a plugin’s name, all of the following apply:
 
 * The names of PHP classes, functions, and global variables in the plugin's code.
 * The database table and indices names.
 * The names of stored preferences in the `_txp_prefs_` table and/or the `$prefs array;`.
 * Any global JavaScript variables or function names you use for modifying the backend or adding features to the front-end.
-* IDs, and to some extent, classes of HTML elements that you add to the backend interface.[^3]
+* IDs, and to some extent, classes of HTML elements that you add to the backend interface.[^selectors]
 * URL parameter names. Replace `?foo=bar&baz=1` with `?abc_foo=bar&abc_baz=1`, where "`abc`" would be your own prefix.
 
-[^1]: Sometimes a plugin developer will *assume* the prefix of a retired plugin developer when the former 'adopts' the latter's 'orphaned' plugins. This is the preferred practice against simply changing plugin names. For example, username 'wet' has his own plugins (wet/wet), as indicated in the prefix table at bottom, but he's adopted the orphaned plugins with prefix 'djw' too (djw/wet).
-
-[^2]: Prefix ownership may be challenged if it's found that a developer has not created a plugin yet and is squatting on the prefix. In this case, you (the challenger) must produce the first plugin to earn ownership of the prefix in question. To challenge prefix ownership, bring the issue to light in the [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13) forum, where others can help determine if the challenge is reasonable.
-
-[^3]: The exception to this is if an element of your markup is logically similar to an already existing core element and you wish it to be styled in the same way by themes. Doing this saves theme designers from having to write specific rules to target your plugin's markup.
+[^selectors]: The exception to this is if an element of your markup is logically similar to an already existing core element and you wish it to be styled in the same way by themes. Doing this saves theme designers from having to write specific rules to target your plugin's markup.
