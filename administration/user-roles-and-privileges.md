@@ -132,7 +132,7 @@ Default panels represent all existing panels in a fresh install of the software.
             </tr>
             <tr>
                 <th scope="row">Designer</th>
-                <td><span class="warning">Limited</span></td>
+                <td><span class="warning"><a href="#designer"><span class="warning">Limited</span></a></span></td>
                 <td><span class="success">Full</span></td>
                 <td><span class="success">Full</span></td>
                 <td><span class="error">Blocked</span></td>
@@ -315,7 +315,7 @@ Default panels represent all existing panels in a fresh install of the software.
                 <td><span class="error">Blocked</span></td>
                 <td><span class="error">Blocked</span></td>
                 <td><span class="error">Blocked</span></td>
-                <td><span class="warning">Limited</span></td>
+                <td><a href="#designer"><span class="warning">Limited</span></a></td>
                 <td><span class="error">Blocked</span></td>
 								<td><span class="error">Blocked</span></td>
             </tr>
@@ -405,7 +405,7 @@ Table 4 represents the two extended regions. Unlike with default panels, the ext
 							<li>Full rights -- The role has access to panel and no restrictions to functionality. See associated panel documentation via column headers.</li>
 							<li>Limited rights -- The role has access to panel but can only see or use some of the panel's functionality. See the 'limited access' descriptions in following sections.</li>
 							<li>Blocked -- The role has no panel access, thus cannot see the panel link in the back-end navigation. Accounts having the status of 'None' cannot be used at all.</li>
-							<li>These roles will likely see the [Extensions administration region](https://docs.textpattern.com/administration/extensions-region), too, which is used by many administration plugins.</li>
+							<li>These roles will likely see the <a href="https://docs.textpattern.com/administration/extensions-region">Extensions administration region</a>), too, which is used by many administration plugins.</li>
 						</ol>
 					</td></tr>
 				</tfoot>
@@ -418,7 +418,7 @@ It is possible that a given administration plugin may introduce finer rights con
 
 For each publishing role having <span class="warning">Limited</span> access to a panel, the specific rights and restrictions for that panel are clarified in the following sections.
 
-### Publisher limitations
+### Publisher
 
 Publishers have the same scope of rights as the administrator (an account type described earlier), except a Publisher cannot delete the administrator's account, whereas an administrator can certainly delete the publisher's.
 
@@ -426,7 +426,7 @@ But the Administrator and Publisher don't compete. Unlike administrators, Publis
 
 There should only be one Publisher, functionally speaking. Anyone who needed similar rights, but not the absolute same rights, should be a 'Managing Editor'.
 
-### Managing Editor limitations
+### Managing Editor
 
 Managing Editors are essentially the Publisher's right hand, a transition role from process governance to content production. A given website project might define specific responsibilities for the Managing Editor outside of the CMS, like recruiting freelance writers, maintaining the editorial calendar, and so on.
 
@@ -436,7 +436,7 @@ Managing Editors have the same privileges as Publishers throughout the administr
 
 In addition to the noted panel limitation, Managing Editors don't have as much detailed debugging info available to them either when the production status is higher.
 
-### Copy Editor limitations
+### Copy Editor
 
 Copy Editors aren't concerned with governance activities like the higher roles are. The Copy Editor's focus is specifically on editing the content produced by writers and making final preparations and/or checks before publishing. Such preps and checks might include formatting copy and adding images (or verifying that it's been done correctly), assigning output designators (the section and categories fields), adding custom field data and metadata, setting publishing date, and so forth.
 
@@ -444,7 +444,7 @@ Copy Editor privileges are pretty straight forward, either having full access to
 
 * On the [Users panel](https://docs.textpattern.com/administration/users-panel): They can see basic data types for all user accounts, but they can only edit their own account data.
 
-### Staff Writer limitations
+### Staff Writer
 
 The Staff Writer is one of two roles primarily concerned with writing articles (the other being Freelancer). They don't need access to much of the administration side except those panels concerned with content, with a few limitations:
 
@@ -453,14 +453,14 @@ The Staff Writer is one of two roles primarily concerned with writing articles (
 * On the [Files panel](https://docs.textpattern.com/administration/files-panel): They can upload files and edit the ones they upload. They can see the names of files uploaded by other user accounts, but they cannot edit or delete those files.
 * On the [Users panel](https://docs.textpattern.com/administration/users-panel): They can edit their own user account details, but not see anyone else's account information.
 
-### Freelancer limitations
+### Freelancer
 
 Freelancers are external to the website's editorial team. You can think of them as 'guest authors'. Like Staff Writers, Freelancers write articles, but that's mostly it due to their external status. Limitations are:
 
 * On the [Write panel](https://docs.textpattern.com/administration/write-panel): They can create new 'Draft' articles and switch their status to 'Pending', but not publish them 'Live'. They can see the full articles of other user accounts, but not edit them in any way.
 * On the [Users panel](https://docs.textpattern.com/administration/users-panel): Same as Staff Writer.
 
-### Designer limitations
+### Designer
 
 A Designer's focus is uniquely on site structure and presentation, but a Designer can see some content too to help inform presentational decisions. Limitations are:
 
