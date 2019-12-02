@@ -132,7 +132,7 @@ Default panels represent all existing panels in a fresh install of the software.
             </tr>
             <tr>
                 <th scope="row">Designer</th>
-                <td><span class="warning"><a href="#designer"><span class="warning">Limited</span></a></span></td>
+                <td><span class="warning">Limited</span></td>
                 <td><span class="success">Full</span></td>
                 <td><span class="success">Full</span></td>
                 <td><span class="error">Blocked</span></td>
@@ -155,7 +155,7 @@ Default panels represent all existing panels in a fresh install of the software.
 					<tr><td colspan="8">
 						<ol class="list--refmarks">
 							<li>Full rights -- The role has access to panel and no restrictions to functionality. See associated panel documentation via column headers.</li>
-							<li>Limited rights -- The role has access to panel but can only see or use some of the panel's functionality. See [Limited access specifications](#limited-access-specifications).</li>
+							<li>Limited rights -- The role has access to panel but can only see or use some of the panel's functionality. See <a href="#limited-access-specifications">Limited access specifications</a>.</li>
 							<li>Blocked -- The role has no panel access, thus cannot see the panel link in the back-end navigation. Accounts having the status of 'None' cannot be used at all.</li>
 						</ol>
 					</td></tr>
@@ -240,7 +240,7 @@ Default panels represent all existing panels in a fresh install of the software.
 					<tr><td colspan="6">
 						<ol class="list--refmarks">
 							<li>Full rights -- The role has access to panel and no restrictions to functionality. See associated panel documentation via column headers.</li>
-							<li>Limited rights -- The role has access to panel but can only see or use some of the panel's functionality. See [Limited access specifications](#limited-access-specifications).</li>
+							<li>Limited rights -- The role has access to panel but can only see or use some of the panel's functionality. See <a href="#limited-access-specifications">Limited access specifications</a>.</li>
 							<li>Blocked -- The role has no panel access, thus cannot see the panel link in the back-end navigation. Accounts having the status of 'None' cannot be used at all.</li>
 						</ol>
 					</td></tr>
@@ -315,7 +315,7 @@ Default panels represent all existing panels in a fresh install of the software.
                 <td><span class="error">Blocked</span></td>
                 <td><span class="error">Blocked</span></td>
                 <td><span class="error">Blocked</span></td>
-                <td><a href="#designer"><span class="warning">Limited</span></a></td>
+                <td><span class="warning">Limited</span></td>
                 <td><span class="error">Blocked</span></td>
 								<td><span class="error">Blocked</span></td>
             </tr>
@@ -333,7 +333,7 @@ Default panels represent all existing panels in a fresh install of the software.
 					<tr><td colspan="7">
 						<ol class="list--refmarks">
 							<li>Full rights -- The role has access to panel and no restrictions to functionality. See associated panel documentation via column headers.</li>
-							<li>Limited rights -- The role has access to panel but can only see or use some of the panel's functionality. See [Limited access specifications](#limited-access-specifications).</li>
+							<li>Limited rights -- The role has access to panel but can only see or use some of the panel's functionality. See <a href="#limited-access-specifications">Limited access specifications</a>.</li>
 							<li>Blocked -- The role has no panel access, thus cannot see the panel link in the back-end navigation. Accounts having the status of 'None' cannot be used at all.</li>
 						</ol>
 					</td></tr>
@@ -403,7 +403,7 @@ Table 4 represents the two extended regions. Unlike with default panels, the ext
 					<tr><td colspan="3">
 						<ol class="list--refmarks">
 							<li>Full rights -- The role has access to panel and no restrictions to functionality. See associated panel documentation via column headers.</li>
-							<li>Limited rights -- The role has access to panel but can only see or use some of the panel's functionality. See the 'limited access' descriptions in following sections.</li>
+							<li>Limited rights -- The role has access to panel but can only see or use some of the panel's functionality. See <a href="#limited-access-specifications">Limited access specifications</a>.</li>
 							<li>Blocked -- The role has no panel access, thus cannot see the panel link in the back-end navigation. Accounts having the status of 'None' cannot be used at all.</li>
 							<li>These roles will likely see the <a href="https://docs.textpattern.com/administration/extensions-region">Extensions administration region</a>), too, which is used by many administration plugins.</li>
 						</ol>
