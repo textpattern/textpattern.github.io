@@ -391,7 +391,7 @@ You can now move or copy the exported theme (now on disk) to a new location wher
 
 ## Importing themes
 
-Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database; <i>themes</i> directory to the rescue!
+Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database — <i>themes</i> directory to the rescue!
 
 First, use your (S)FTP software of choice to transfer the external theme (presumably downloaded from a shard location) to your <i>themes</i> directory on the server. A theme import control will appear in the Themes panel, above the themes table.
 
@@ -411,7 +411,21 @@ The theme is now in your themes table to use as desired, and if the themes in th
 
 ### Updating themes
 
-If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer has revised the source theme and distributed a new and improved version. Not wanting to miss out on the cutting edge, you dutifully update your version with the latest release, as follows
+If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer has revised the source theme and distributed a new and improved version. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
+
+As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your <i>themes</i> directory.
+
+Then it is on to the Themes panel, where, like [described earlier](#duplicate-via-the-with-selected-control) you do the checkbox-and-select dance, but this time opting for ‘Update from disk’.
+
+![Select update from disk](https://docs.textpattern.com/img/select-update-from-disk.png)
+
+This selection has an accompanying checkbox option: <q><i>Delete unused templates from database on import?</i></q>[^update]
+
+![Select update from disk option](https://docs.textpattern.com/img/select-update-from-disk-option.png)
+
+It is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting any odd database asset files that might exist. This is generally a good idea, to keep versions consistent, and the checkbox is ticked by default. But you might have your reasons for want variability. Hard to say. Either way, confirm when asked if you are sure.
+
+[^update]: Should read ‘. . . on update?’ to be consistent with the initial selection action.
 
 ## Deleting themes
 
