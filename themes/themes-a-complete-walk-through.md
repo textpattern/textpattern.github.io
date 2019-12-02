@@ -373,7 +373,7 @@ When your theme is tweaked to perfection and ready to be shared, go to the Theme
 
 ![Select export](https://docs.textpattern.com/img/select-export.png)
 
-The selection will trigger another option to respond to by way of a checkbox: *Delete unused templates from disk on export*.
+The selection will trigger another option to respond to by way of a checkbox: <q><i>Delete unused templates from disk on export</i></q>.
 
 ![Select export option](https://docs.textpattern.com/img/select-export-option.png)
 
@@ -381,7 +381,7 @@ If you read the help tip for that option, it says:
 
 > If checked, each template file in the selected theme(s) that does not have a corresponding item in the database will be permanently deleted from the disk-based theme. The result after completion of the action will be that your file system templates will reflect exactly what is in the database.
 
-In other words, Textpattern is making a comparison between the theme package you want to export from the Themes panel and any similarly named theme that might be sitting in the themes directory. So it’s asking, if there is such a theme there, and any asset files in it do not have similarly named files in the panel version (the one you are exporting), do you want those files deleted as part of the exportation action?
+In other words, Textpattern is making a comparison between the theme package you want to export from the Themes panel, presumably the package designed as it should be, and any similarly named theme that might be sitting in the <i>themes</i> directory but not so well put together. So it’s asking, if there is such a theme there in the directory, and any asset files in it do not have similarly named files in the panel version (the one you are exporting), do you want those files deleted as part of the exportation action?
 
 This is generally a good idea, and the check box is ticked by default. This ensures that after exportation, there is a direct match between the database version (in the Themes panel) and the version on disk (in the <i>themes</i> directory).
 
@@ -423,16 +423,28 @@ This selection has an accompanying checkbox option, presented to you after makin
 
 ![Select update from disk option](https://docs.textpattern.com/img/select-update-from-disk-option.png)
 
-The option is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting files that might be different (in terms of existing) in the database version. This is generally a good idea, to keep versions consistent, and the checkbox is ticked by default. But you might have your reasons for want variability, like customization of the sourced theme. Hard to say. Either way, confirm when asked if you are sure.
+The option is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting files that might be different (in terms of existing) in the database version. This is generally a good idea, to keep versions consistent, and the checkbox is ticked by default. But you might have your reasons for want variability, like customization of the sourced theme. Hard to say.
+
+Either way, click the ‘Go’ button and confirm when asked if you are sure.
 
 [^update]: Should read ‘. . . on update?’ to be consistent with the initial selection action.
 
 ## Deleting themes
 
-/ Hang tight, to be revised /
+Themes can be deleted from the Themes panel, and the associated version in the <i>themes</i> directory as well, all in one go. Or you can opt to keep the disk version while just deleting the one from the database.
 
-Themes can be removed (deleted) from the themes panel, and the associated files can be deleted as needed.  
+Deletion requires the **With selected** menu again, which you surely know by heart at this point. Check the box by the theme to be deleted from the themes table, then select the ‘Delete’ option from the menu.
 
-As a safety precaution, theme directories with non-standard subdirectories (e.g. *styles/sass*) will require manual deletion after the directories and files recognized by core functionality are deleted.
+![Select delete](https://docs.textpattern.com/img/select-delete.png)
 
-If you later delete the theme from the Themes panel and not the equivalent package sitting in the directory, breaking the second condition above, the theme import control appears at top of the themes table again with the external theme appearing in the control’s selection menu. You can then re-import the theme, if so desired (but then why delete to begin with), or use the appearance of the control as a reminder that the package in the <i>themes</i> directory also needs deleted. Only when all external themes sitting in the <i>themes</i> directory are in the themes table, too, will the import control not be present.
+The selection triggers another option to respond to: <q><i>Delete theme templates from disk too</i></q>.[^delete]
+
+![Select delete option](https://docs.textpattern.com/img/select-delete-option.png)
+
+Again, ‘disk’ is referring to the <i>themes</i> directory, and you are confirming to delete the package that may be sitting there. The box for this option is checked by default. Proceed with ‘Go’ if you want to clean house entirely, and confirm ‘OK’ when asked if you are sure.
+
+As a safety precaution, if theme packages on disk contain standard theme directories having non-standard subdirectories (e.g. <i>styles/sass</i>), they will not be deleted by Textpattern; rather, the package container will remain with the non-standard subdirectories and files inside them. These non-standard elements will need deleted manually since the software does not recognize them. And don’t forget, because keeping such broken packages in your <i>themes</i> directory is not a good idea.
+
+If you choose to delete the theme from the database but not from disk (i.e. unchecking the option box), the theme import control discussed in [Importing themes](#importing-themes) appears again at top of the themes table in the Themes panel with the theme package still sitting on disk showing in the selection menu. You can then re-import the theme at any time (but then why delete it to begin with), or use the appearance of the theme in the import control as a reminder that the package in the <i>themes</i> directory also needs deleted.
+
+[^delete]: The check-box option text is not phrased well, and missing punctuation. Should be: ‘And delete theme assets from disk?’
