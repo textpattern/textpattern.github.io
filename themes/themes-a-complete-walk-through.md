@@ -17,27 +17,27 @@ This document is a complete journey through creating, managing, using, exporting
 
 ## The big picture
 
-Textpattern users and theme designers in general, new and old, will find Textpattern theming exciting. Being that Textpattern is unlike any other content management system, so is the theming functionality and workflow it provides. Before diving in with how to do things, which you’ll have mastered by the end of this document, consider it all from higher up the ladder.
+Textpattern users, and theme designers in general, new and old, will find Textpattern theming exciting. Being that Textpattern is unlike any other content management system, so is the theming functionality and workflow it provides. Before diving in with how to do things, which you’ll have mastered by the end of this document, consider it all from higher up the ladder.
 
 ### A theme development ‘studio’
 
 The addition of the [Themes](https://docs.textpattern.com/administration/themes-panel) panel has essentially transformed how to think about building website architectures with Textpattern’s semantic building blocks. Textpattern designers will likely find the Themes panel is now the centre stage of the administration side. Indeed, the back-end is like a theme development studio, where you can work on many themes simultaneously, for employing on your website or sharing with the community. But don’t worry, writers and editors, Textpattern is still the same system to do what its creator envisioned. ‘Just write.’
 
-Theoretically speaking, you could hack a theme package together, from scratch and by hand, directly on your web server. We know you masochistic types are out there. And, sure, it can be a learning experience to sit on the cold garage floor with grease and gears. For you folks, the last sections about default theme structure and importing themes may be useful reference.
+Theoretically speaking, you could hack a theme package together, from scratch and by hand, directly on your web server. We know you masochistic types are out there. And, sure, it can be a learning experience to sit on the cold garage floor with grease and gears.
 
-Most of this document, however, describes the sensible approach of using the new theming functionality in the back-end. Be at ease knowing that creating a new theme has no impact on a website’s operation or presentation if the pages and styles of the theme are not yet associated to the website’s functioning sections (easy to tell at a glance). If not, you can freely modify any [theme package assets](#theme-assets) without worry.
+Most of this document, however, describes the sensible approach of using the new theming functionality in the back-end. Be at ease knowing that creating a new theme has no impact on a website’s operation or presentation if the pages and styles of the theme are not yet associated to the website’s functioning sections (easy to tell at a glance, as you will see). If not, you can freely modify any [theme package assets](#theme-assets) without worry.
 
 ### Default system references
 
-Make note of the following resources. In addition to the document you are reading, and your own installation of the software, these resources make handy references to default system conditions:
+In addition to the document you are reading, and your own installation of the software, the following resources make for handy references to default system conditions in case you go astray, or in the event you do not have an install of your own yet, in fact. Make note of these:
 
 * Front-end demo of default theme:
-  * [Current stable release](https://release-demo.textpattern.co/)
-  * [Next release in development](https://dev-demo.textpattern.co/)
+  * [Current stable release of theme](https://release-demo.textpattern.co/)
+  * [Upcoming release of theme](https://dev-demo.textpattern.co/)  (in development)
 * [Back-end demo of fresh software install](https://www.textpattern.co/demo) (first copy the username/password detail, then proceed to the ‘Admin’ version of choice)
 * [Package assets: pages, forms, styles, metadata](https://github.com/textpattern/textpattern-default-theme) (go to *dist/{name-of-them}*)
 
-The front- and back-end demos are routinely updated. The back-end demo offers a choice between the current version release and the next one under development.
+The front-end and back-end demos are routinely updated. The back-end demo offers a choice between the current version release and the next one under development.
 
 ### Author prefix and registration
 
@@ -48,24 +48,106 @@ While prefixes are the same whether you create themes or develop plugins, the na
 * {:.directory} **abc-theme-name**
 {:.list--files}
 
-And your plugin names, if you developed any, would look like this:
+And your plugin names, if you developed any, would look like this, as always:
 
 * {:.directory} **abc_plugin_name**
 {:.list--files}
 
-### Theme assets
+### Theme package
 
 A Textpattern theme is a collection of *page* templates, *form* markup, stylesheets, and a manifest file with a little metadata; all packaged together in a single directory bearing the theme’s name. The single directory can be thought of as a ‘package’ and its contents can be thought of ‘assets’ organized in subdirectories by type.
 
-A theme package’s organization, and how Textpattern handles it on importing and updating, is presented later. For now, out of the gate, be clear on what pages and forms are and how they come together.
+To ensure a theme imported into your installation does not break your front-end, Textpattern augments imported themes with any missing assets needed by the default system, and provides empty placeholders where non-essential assets are missing. This is useful, say, when the grease-monkeys build from scratch and the integrity of a given theme’s structure is questionable.
 
-[Pages](https://docs.textpattern.com/administration/pages-panel) are your web page templates, primarily built with HTML and [Textpattern tags](https://docs.textpattern.com/tags). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](https://docs.textpattern.com/tags/output_form) tags), or as a combination of embedded markup and form includes. Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* learn Textpattern tags! 
+Following is the expanded tree of a default package structure:
+
+* {:.directory--open} abc-theme-name
+  * {:.directory--open} pages
+    * {:.document} archive.txp
+    * {:.document} default.txp
+    * {:.document} error_default.txp
+  * {:.directory} forms
+    * {:.directory--open} article
+      * {:.document} article_listing.txp
+      * {:.document} default.txp
+      * {:.document} search_results.txp
+    * {:.directory} category (empty)
+    * {:.directory--open} comment
+      * {:.document} comments.txp
+      * {:.document} comments_display.txp
+      * {:.document} comment_form.txp
+    * {:.directory--open} file
+      * {:.document} files.txp
+    * {:.directory--open} link
+      * {:.document} plainlinks.txp
+    * {:.directory} misc (empty)
+    * {:.directory} section (empty) 
+  * {:.directory--open} styles
+    * {:.document} default.css
+  * {:.document} manifest.json
+{:.list--files}
+
+Of the entire package, only two page templates and the metadata file are ‘essential’:
+
+* {:.directory--open} abc-theme-name
+  * . . .
+    * . . .
+    * {:.document} default.txp
+    * {:.document} error_default.txp
+  * . . .
+  * {:.document} manifest.json
+{:.list--files}
+
+Theme designers would doubtfully ever share such a worthless theme, but if one did, and you actually wanted to use it, here’s how Textpattern would treat it at time of [importing](#importing-themes):
+
+1. **Pages**. If the essential page templates were missing, they would be created as empty pages. If the entire *pages* directory was missing, it would be created, and the two essential pages included with their default contents.
+2. **Forms**. If non-essential form files are missing, they are added in place as empty files. If any form subdirectories are missing, or the entire *forms* directory, the full *forms* directory from the tree above will be created, and the eight form files will contain default Textpattern markup.
+3. **Styles**. If the file is missing, it is added as an empty file. If the *styles* directory is missing, the directory plus a blank *default.css* file will be created.
+4. **Metadata**. The metadata file is handled more simply; the focus is on any missing metadata values. See [Metadata](#metadataa).
+
+When [updating](#updating-themes) such an augmented theme, such as when another theme author releases a new version of a theme you’ve already imported, and the theme’s file composition has not changed from the original imported version, Textpattern will ignore the missing files because it has already added them in your database. If, however, the theme author *does* add new files to their theme that were missing originally, they will replace the placeholders Textpattern originally added, and the theme is one step better to being a real functioning theme.
+
+If, after importing or updating a sparse theme as described, you later delete any of the augmented files, and that's your prerogative, and exported it that way for sharing, those files will remain missing in the exported theme. In other words, you would be sharing a worthless theme just like what was shared with you. But that’s fine, because it would not break anything when someone else imported it; their install of Textpattern would augment the theme with defaults and placeholders again just like described.
+
+#### Page assets
+
+[Pages](https://docs.textpattern.com/administration/pages-panel) are your web page templates, primarily built with HTML and [Textpattern tags](https://docs.textpattern.com/tags). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](https://docs.textpattern.com/tags/output_form) tags), or as a combination of embedded markup and form includes. Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* learn Textpattern tags!
+
+#### Form assets 
 
 [Forms](https://docs.textpattern.com/administration/forms-panel) are the named containers of markup components (conceptually the same as partials, snippets, or includes) for *inclusion* into page templates, or for nesting into other forms. Such ‘Russian doll’ construction of your website’s architecture using pages and forms enables building sophisticated website structures that are, again, easier to manage and maintain. See [Form templates explained](https://docs.textpattern.com/themes/form-templates-explained.md) if you need a deeper dive into forms.
 
+All form files must have unique names — across core forms and any custom forms created — and core form names will never be changed from their defaults. Compound form names use underscores between words (e.g. <i>**custom_form_name**</i>) and the resulting template file name should match (i.e. <i>custom_form_name.txp</i>).
+
+#### Style assets
+
 Of course you know what stylesheets are; they need no further explanation except to emphasize that, like pages, they must be associated to one or more sections of your website in order to rule the presentation of them.
 
-All assets, including the <i>manifest.json</i> file supplying the metadata, are required in a theme package, even if not all types are used in a given theme. That seeming discrepancy is better understood after reading the [Default package and handling](#default-package-and-handling) section later. Again, pages and styles are assigned to website [sections](https://docs.textpattern.com/administration/sections-panel), while forms are simply components of markup to be pieced together however you want in pages or other forms.
+#### Metadata
+
+The essential metadata rides with the package as a <i>manifest.json</i> file, in which the following six metadata items are found:
+
+* title
+* version
+* description
+* author
+* author_uri
+* txp-type
+
+The first five items reflect data pull from the [New themes](#new-themes) functionality in the Themes panel. The `title` is always required so a value will always be present in a theme package. The `txp-type` and its associated value is a constant; it must always exist and never change. The remaining four items reflect optional metadata fields, which nevertheless should be filled in by theme authors at time of creation when the data is known. If skipped, however, Textpattern will provide default values for the `version` and `author` items at time of theme creation; so these values will pass with an imported theme if not changed by the author, and the `description` and `author_uri` (i.e. the Website field in the creation form) items are treated as `none` values in imported themes.
+
+Altogether, a minimum-filled set of metadata for a theme would look like follows, where ‘username’ would be the theme author’s log in username for their Textpattern installation:   
+
+```json
+{
+"title": "My New Theme",
+  "version": "0.0.1",
+  "description": "none",
+  "author": "username",
+  "author_uri": "none",
+  "txp-type": "textpattern-theme"
+  }
+```
 
 ### Scope of possibilities
 
@@ -243,23 +325,34 @@ Obviously you don’t want to use this feature if your own new theme is not read
 
 ### Assigning multiple themes
 
-In this case you might keep the same general structure of your website but want to have a different layout and presentation for each section. But you can’t simply use the ‘Active’ links as before because that only switches one theme to the whole website.
+In this case you might like keeping the same general structure of your website but want to have a different layout and presentation for each section.
 
-For this situation, you must manually assign themes, and the relevant page and style in the theme package, to each section, one at a time, using the **Edit section** controls via the [Sections](https://docs.textpattern.com/administration/sections-panel) panel.
+The blue ‘Activate’ links described previously will not work in this case because that only switches one theme to the whole website — a easy and quick theme switcher.
 
-First click the name of a section to open.
+Applying multiple themes is done manually by assigning themes to each section individually using the **Edit section** controls via the [Sections](https://docs.textpattern.com/administration/sections-panel) panel. First click the name of a section to open.
 
 ![Click section name](https://docs.textpattern.com/img/click-section-name.png)
 
-Then select the appropriate theme, and the relevant page and style from the theme package, using the three provided controls, respectively.
+You then must assign the new them, and re-assign the associated page and style too.
 
 ![Edit section assignments](https://docs.textpattern.com/img/edit-section-assignments.png)
 
-In version 4.8, the controls are more integrated. After selecting the theme you want, the page and style options automatically change to reflect what is available in the selected theme package. Thus, whatever pages and styles are listed in the selection controls; they are tied to the right theme.
+Start with the theme assignment first. After selecting the theme you want, the page and style options automatically change to reflect what is available in the selected theme package. This ensures you only have to choose from pages and styles that are in the theme package; no mistaking it. If the page and/or style in the new theme showing by default shares the same name as was in the previous theme, no re-assignment of these assets is necessary since their names and context are already correct.
 
-## Sharing themes
+## ‘Database’ themes versus ‘disk’ themes
 
-Sharing is about exporting and importing themes, and the software’s handling of shared themes when package contents are inconsistent with default requirements. In relation to it all is the staging directory, <i>themes</i>, in the root of your software’s installation location:
+In the remaining sections, the exporting, importing, updating, and deleting processes are explained. Before getting there, a concept needs laid out for understanding.
+
+Textpattern interface strings, pophelp, and this documentation in relation — and probably even developers themselves, and you, eventually, when exchanging in the community forum — will occasionally use terms that refer to themes as either ‘database’ or ‘disk’. These distinguishing terms are in reference to themes at specific locations and contexts in the [importing](#importing-themes) and [deleting](#deleting-themes) scenarios, particularly.
+
+As far as the location terminology goes: 
+
+* **Themes panel = database theme**. When a theme is in the themes table of the Themes panel, it is in the database and thus can be referred to as a ‘database theme’.
+* **<i>themes</i> directory = disk theme**. When the theme package is sitting in the <i>themes</i> directory, it is on the web server’s disk and thus referred to as a ‘disk theme’, ‘disk-based’ theme, or what have you.
+
+When a theme is in both locations, as may often be the case in your workflows, remember to distinguish a given theme between the two locations, which is also useful when seeking help.
+
+It all centres around the <i>themes</i> directory located in your software’s root installation location, which is best thought of as a checkpoint for incoming (imported) and outgoing (exported) themes:
 
 * {:.directory--open} {root}
   * {:.directory} files
@@ -270,9 +363,9 @@ Sharing is about exporting and importing themes, and the software’s handling o
   * {:.document} . . .
 {:.list--files}
 
-**A point of clarification**: When talking about themes between the Themes panel and the <i>themes</i> directory, Textpattern interface strings and pophelp will sometimes use technical terms like ‘database themes’ and ‘disk themes’. Understand that any reference to a ‘theme in the database’, or ‘database theme’, or what have you is meaning themes already created in — or imported into — the Themes panel. Likewise, any reference to ’themes on the disk’ or ‘disk-based themes’, and so on is meaning theme packages sitting inside the <i>themes</i> directory highlighted above. Just so you know.     
+Some of you may snort at the obviousness of it all. Others may be grateful to have it explained.
 
-### Exporting themes
+## Exporting themes
 
 You have learned how to create and manage themes at this point, so take it to the next logical step and export one for other people to use. Fame and fortune awaits!
 
@@ -294,147 +387,38 @@ This is generally a good idea, and the check box is ticked by default. This ensu
 
 Click the Go button and confirm when asked if you are sure.
 
-You can now move or copy the exported theme (the one on disk) to a new location where others may download it for use. Whatever location that is, make sure the URL has been entered in the Website field of the theme’s metadata (refer to [duplicating a theme](#duplicate-via-the-with-selected-control)).
+You can now move or copy the exported theme (now on disk) to a new location where others may download it for use. Whatever location that is, make sure the URL has been entered in the Website field of the theme’s metadata (refer to [duplicating a theme](#duplicate-via-the-with-selected-control)).
 
-### Default package and handling
+## Importing themes
 
-To ensure a theme imported into your installation does not break your front-end, Textpattern augments imported theme packages with any missing essential elements otherwise needed by the default system. This is useful, say, when theme designers choose the hack-from-scratch approach instead of the guided create-via-Textpattern approaches described in earlier sections. Or when the package organization that Textpattern expects is missing.
+Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database; <i>themes</i> directory to the rescue!
 
-The following expanded directory is the default theme package structure that Textpattern expects and accounts for, whether or not a given element is actually needed in a theme:
-
-* {:.directory--open} abc_theme_name
-  * {:.directory--open} pages
-    * {:.document} archive.txp[^archive]
-    * {:.document} default.txp
-    * {:.document} error_default.txp
-  * {:.directory} forms
-    * {:.directory--open} article
-      * {:.document} article_listing.txp
-      * {:.document} default.txp
-      * {:.document} search_results.txp
-    * {:.directory} category (empty)
-    * {:.directory--open} comment
-      * {:.document} comments.txp
-      * {:.document} comments_display.txp
-      * {:.document} comment_form.txp
-    * {:.directory--open} file
-      * {:.document} files.txp
-    * {:.directory--open} link
-      * {:.document} plainlinks.txp
-    * {:.directory} misc (empty)
-    * {:.directory} section (empty) 
-  * {:.directory--open} styles
-    * {:.document} default.css
-  * {:.document} manifest.json
-{:.list--files}
-
-Each asset type, and Textpattern’s handling of them when importing themes, is described in the next sections, beginning with the metadata file
-
-[^archive]: The <i>archive.txp</i> page, though included in the default theme package, is not a required page template, nor is it used (i.e. associated with a section) in the [default website structure](https://dev-demo.textpattern.co/), which is why you don’t see an Archive page in the main navigation. This page is subject to being removed in a future release of the default theme, but you may freely use or remove it in your own theme package, no problem.
-
-#### The *manifest.json* file
-
-Theme packages will include the essential <i>manifest.json</i> file, in which the following six metadata items are found:
-
-* title
-* version
-* description
-* author
-* author_uri
-* txp-type
-
-The first five items reflect the last five fields in the **New theme** and **Edit theme** form described in earlier sections (the `author_uri` data item equals the Website field). If you provide data for all six fields when creating a theme, these five metadata items will be filled in the <i>manifest.json</i> file with the same data values.
-
-Again, as detailed earlier in this document, only two fields are mandatory (Name and Title), and only two more (Version and Author) will be filled automatically with default data if the remaining four fields are ignored. So if the four optional fields are skipped at time of creating the theme, and the theme designer doesn’t update the metadata any time before exporting the theme, the manifest file will look similar to this:   
-
-```json
-{
-"title": "My New Theme",
-  "version": "0.0.1",
-  "description": "none",
-  "author": "username",
-  "author_uri": "none",
-  "txp-type": "textpattern-theme"
-  }
-```
-
-The last item (`txp-type`) and it’s associated value is a constant; it must always exist and never change. The other five  items can be changed anytime via the Themes panel, as already described earlier. But here’s a reminder: Click the theme’s name in the Name column of the themes table to bring up the **Edit theme** form.
-
-![Click theme name](https://docs.textpattern.com/img/click-theme-name.png)
-
-#### The *pages* directory
-
-The *pages* directory is required in a theme package because at least two essential pages must exist (though you can add more): 
-
-* {:.directory--open} pages
-  * . . .
-  * {:.document} default.txp
-  * {:.document} error_default.txp
-  * . . .
-{:.list--files}
-
-If the above two pages are missing at importation, the software will create them automatically as empty pages. If the entire *pages* directory is missing, Textpattern will create it, and the two essential pages will be included with their default contents.
-
-Future updates of the imported theme (i.e. after the theme author releases a new version) will not overwrite the elements Textpattern added unless the new theme version provides new elements since missing.
-
-#### The *forms* directory
-
-The optional *forms* directory contains seven subdirectories, the names of which match the form type names built into core Textpattern:
-
-* {:.directory--open} forms
-  * {:.directory--open} article
-    * {:.document} article_listing.txp
-    * {:.document} default.txp
-    * {:.document} search_results.txp
-  * . . .
-  * {:.directory--open} comment
-    * {:.document} comments.txp
-    * {:.document} comments_display.txp
-    * {:.document} comment_form.txp
-  * {:.directory--open} file
-    * {:.document} files.txp
-  * {:.directory--open} link
-    * {:.document} plainlinks.txp
-  * . . .
-{:.list--files}
-
-When forms are used in a theme, all form files must have unique names — across core forms and any custom forms created — and core form names will never be changed from their defaults. Compound form names use underscores between words (e.g. <i>**custom_form_name**</i>) and the resulting template file name should match (i.e. <i>custom_form_name.txp</i>).
-
-If any of the form template files are missing in a theme package at import, Textpattern will automatically create them as empty files on first import of the theme. If the entire *forms* directory is missing, the full forms tree above will be created, and the eight form files will contain default Textpattern markup.
-
-Future version updates of the theme will not overwrite the added directories and form templates unless the updated theme provides these elements as changes.
-
-#### The *styles* directory
-
-The optional *styles* directory contains the stylesheet file. If the file is missing in the *styles* directory of a theme package, Textpattern will automatically create it as an empty stylesheet on first import of the theme. If the *styles* directory is missing, an empty directory with a blank *default.css* file will be created on the first import. The default files will not be overwritten in future updates of the theme unless the new theme version provides files by the same name.
-
-### Importing themes
-
-Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database. What that means is, if you have no external themes transferred to the <i>themes</i> directory (i.e. on disk), or none there are different from what are already tabled in the Themes panel, you won’t find any way to import a theme no matter how hard you look. That’s because the initial import theme menu is contextual to the <i>themes</i> directory. If either of the following two conditions are true, you won’t see the menu in the Themes panel:
-
-* No external themes exist in the <i>themes</i> directory
-* No external themes exist in the <i>themes</i> directory that are not already listed in the Themes panel table.
-
-When an external theme has been added to the <i>themes</i> directory, defying the conditions above, you’ll see the contextual menu appear at top of the Themes panel, enabling you to ‘import’ the new external theme(s) that are sitting there.
+First, use your (S)FTP software of choice to transfer the external theme (presumably downloaded from a shard location) to your <i>themes</i> directory on the server. A theme import control will appear in the Themes panel, above the themes table.
 
 ![Import theme menu](https://docs.textpattern.com/img/import-theme-menu.png)
 
-You can then use the menu to select the theme you are after and initially ‘Import’ it to the themes table.
+If you didn’t see the menu before, it is because it works in context with the <i>themes</i> directory, as follows:
+
+1. **One or more disk themes; no database equivalents.** When one or more themes are sitting in the <i>themes</i> directory that are not also existing in the themes table, they will cause the selection menu to appear at top of the themes table with those themes appearing as an options for importation (i.e. to become themes in the database). The menu is not visible if this condition is not true.
+2. **Disk themes equal database themes.** When themes are equally in the database and on disk, the contextual menu is hidden, since there is nothing to potentially import.
+3. **Database theme deleted; back to condition 1**. If/when you delete a theme from the database but not the disk-based version (assuming the previous condition), the theme import menu will appear again because the first condition is true again.
+
+You can then use the import menu to select the theme and initially import it into the database, to appear in the themes table.
 
 ![Import theme menu select](https://docs.textpattern.com/img/import-theme-menu-select.png)
 
-At this point the theme is available to use and/or modify as you would any theme in your Themes panel.
+The theme is now in your themes table to use as desired, and if the themes in the table match the themes in your directory, the import control will disappear again from the Themes panel.  
 
-If you later delete the theme from the Themes panel and not the equivalent package sitting in the directory, breaking the second condition above, the theme import control appears at top of the themes table again with the external theme appearing in the control’s selection menu. You can then re-import the theme, if so desired (but then why delete to begin with), or use the appearance of the control as a reminder that the package in the <i>themes</i> directory also needs deleted. Only when all external themes sitting in the <i>themes</i> directory are in the themes table, too, will the import control not be present. 
-
-### Updating imported themes
+### Updating themes
 
 If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer has revised the source theme and distributed a new and improved version. Not wanting to miss out on the cutting edge, you dutifully update your version with the latest release, as follows
 
-## Removing themes
+## Deleting themes
 
 / Hang tight, to be revised /
 
 Themes can be removed (deleted) from the themes panel, and the associated files can be deleted as needed.  
 
 As a safety precaution, theme directories with non-standard subdirectories (e.g. *styles/sass*) will require manual deletion after the directories and files recognized by core functionality are deleted.
+
+If you later delete the theme from the Themes panel and not the equivalent package sitting in the directory, breaking the second condition above, the theme import control appears at top of the themes table again with the external theme appearing in the control’s selection menu. You can then re-import the theme, if so desired (but then why delete to begin with), or use the appearance of the control as a reminder that the package in the <i>themes</i> directory also needs deleted. Only when all external themes sitting in the <i>themes</i> directory are in the themes table, too, will the import control not be present.
