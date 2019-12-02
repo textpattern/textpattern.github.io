@@ -8,7 +8,7 @@ description: In addition to the administrator, several pre-defined user roles ar
 
 # User roles and privileges
 
-In addition to the administrator (the most powerful type of Textpattern account), several pre-defined user roles are provided for in Textpattern out-of-the-box. Each role has an associated set of administration privileges that are meant to help with leveraging the different responsibilities in a collaborative publishing workflow. If you're building a Textpattern website for yourself (single user), you wouldn't be concerned with these roles. But if you're building a platform to support multi-user contributions, user roles and privileges are likely important factors in your publishing architecture design.
+In addition to the administrator (the most powerful type of Textpattern account), several pre-defined user roles are provided for in Textpattern out-of-the-box. Each role has an associated set of administration privileges that are meant to help with leveraging the different responsibilities in a collaborative publishing workflow. If you are building a website for yourself (single user), you wouldn't be concerned with these roles. But if you are building a platform to support multi-user contributions, user roles and privileges are likely important factors to consider in your collaborative process.
 
 **On this page**:
 
@@ -17,7 +17,7 @@ In addition to the administrator (the most powerful type of Textpattern account)
 
 ## Account types
 
-There are three general types of user accounts in Textpattern, conceptually speaking:
+Three general types of user accounts exist in Textpattern, conceptually speaking:
 
 1. administrator account (sole, all-powerful)
 2. publishing accounts (the range of roles and privileges)
@@ -25,13 +25,15 @@ There are three general types of user accounts in Textpattern, conceptually spea
 
 More on these in the next sections.
 
-### Administrator account
+### Administration account
 
-Only one person has this account; the person who installs Textpattern (presumably you). Though an 'Administrator' can certainly serve in a publishing role, and is labeled 'Publisher' in the [Users panel](https://docs.textpattern.com/administration/users-panel), an administrator isn't necessarily part of collaborative publishing workflow. Site administrators typically handle all server-side issues, update the system when new releases are made, backup the database on a regular schedule, and make decisions about website [security](https://docs.textpattern.com/administration/security). If a website is only a single-user site, this is the only account you need.
+Only one person has this account; the person who installs Textpattern (presumably you). Though an 'Administrator' can certainly serve in a publishing role, and is labeled 'Publisher' in the [Users panel](https://docs.textpattern.com/administration/users-panel), an administrator isn't necessarily part of collaborative publishing workflow. Website administrators typically handle all server-side issues, update the system when new releases are made, backup the database on a regular schedule, and make decisions about website [security](https://docs.textpattern.com/administration/security). If a website is a single-user site only, this is the only account you need.
 
 ### Publishing accounts
 
-These are represented by the six roles defined in Textpattern, which are:
+Publishing roles are taken into consideration when planning a collaborative publishing architecture around the day-to-day activities of producing content, evolving the presentation of the website, and so forth.[^users]
+
+The six roles defined in Textpattern by default:[^custom]
 
 * Publisher
 * Managing Editor
@@ -40,9 +42,11 @@ These are represented by the six roles defined in Textpattern, which are:
 * Freelancer
 * Designer
 
-The roles are primarily what this page is concerned with. Publishing roles are taken into consideration when planning a collaborative publishing architecture around the day-to-day activities of producing content (and evolving the presentation).[^users]
+The rest of this document is primarily concerned with these roles.
 
 [^users]: The [smd_user_manager](https://github.com/Bloke/smd_user_manager) and [smd_bio](https://github.com/Bloke/smd_bio) plugins can be installed and used to expand user account data and produce published bios or user profiles generated from the expanded data.
+
+[^custom]: The administrator can use a plugin like [rah_privileges](https://github.com/jools-r/rah_privileges/releases/tag/0.1.3) ([background](https://forum.textpattern.com/viewtopic.php?pid=310537#p310537)) to change what a core role’s privileges are. Or, if really necessary, the administrator can hack the core file that controls privileges to create custom roles and access rights of any kind. The latter approach is usually not a good idea if the installation is not kept under version control.
 
 ### Frozen accounts
 
@@ -52,17 +56,120 @@ Frozen accounts are those potentially having the status of 'None', meaning the a
 
 The tables in the following sections show all account types versus access to the panels and functionality, with emphasis on the six publishing roles (from 'Publisher' to 'Designer').[^access]
 
-[^access]: Use of the [smd_faux_role](https://forum.textpattern.com/viewtopic.php?id=33462&p=2) plugin allows easier visualization of what a given role can see and do in the administration side. It's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare against. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (can see all functionality) at any time, even between logged-out sessions.
+[^access]: Use of the [smd_faux_role](https://forum.textpattern.com/viewtopic.php?id=33462&p=2) plugin allows easier visualization of what a given role can see and do in the administration side. It's most effective when multiple user accounts exist and they have varying kinds of content contribution histories to compare with. The plugin ensures the administrator's status is not lost and can easily switch back to a Publisher's perspective (i.e. can see all functionality) at any time, even between logged-out sessions.
 
 ### Default panels access
 
-Default panels represent all existing panels in a fresh install of the software (Table 1).
+Default panels represent all existing panels in a fresh install of the software.
+
+#### Content panels
+
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+    <table>
+        <caption itemprop="about">Table 1: Privileges (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Content panels.</caption>
+        <thead>
+            <tr>
+                <th scope="col">Role</th>
+                <th scope="col"><a href="https://docs.textpattern.com/administration/write-panel">Write</a></th>
+                <th scope="col"><a href="https://docs.textpattern.com/administration/articles-panel">Articles</a></th>
+                <th scope="col"><a href="https://docs.textpattern.com/administration/images-panel">Images</a></th>
+                <th scope="col"><a href="https://docs.textpattern.com/administration/files-panel">Files</a></th>
+                <th scope="col"><a href="https://docs.textpattern.com/administration/links-panel">Links</a></th>
+                <th scope="col"><a href="https://docs.textpattern.com/administration/categories-panel">Categories</a></th>
+                <th scope="col"><a href="https://docs.textpattern.com/administration/comments-panel">Comments</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Publisher</th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+            </tr>
+            <tr>
+                <th scope="row">Managing Editor</th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+            </tr>
+            <tr>
+                <th scope="row">Copy Editor</th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+            </tr>
+            <tr>
+                <th scope="row">Staff Writer</th>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row">Freelancer</th>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row">Designer</th>
+                <td><span class="warning">Limited</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="success">Full</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+            <tr>
+                <th scope="row">None</th>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+                <td><span class="error">Blocked</span></td>
+            </tr>
+        </tbody>
+				<tfoot>
+					<ol>
+						<li>Full rights means the role has access to panel and no restrictions to functionality. See associated panel documentation via column headers.</li>
+						<li>Limited rights means the role has access to panel but can only see or use some of the panel's functionality. See the 'limited access' descriptions in following sections.</li>
+						<li>Blocked means the role has no panel access, thus cannot see the panel link in the back-end navigation. Accounts having the status of 'None' cannot be used at all.</li>
+					</ol>
+				</tfoot>
+    </table>
+</div>
+
+#### Presentation panels
+
+#### Admin panels
 
 **Legend:**
 
 * <span class="success">Full</span> means the account or role can access the panel and has no restrictions to functionality. See associated panel documentation in that case by selecting the panel name.
 * <span class="warning">Limited</span> means the account or role can access the panel but does not have full read or write access to all functionality. See the 'limited access' descriptions in following sections.
-* <span class="error">Blocked</span> means the account or role has no panel access and can not see the panel link in the administration UI (for accounts with 'None' status, the account cannot be used at all).
+* <span class="error">Blocked</span> means the account or role has no panel access and cannot see the panel link in the administration UI (for accounts with 'None' status, the account cannot be used at all).
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
