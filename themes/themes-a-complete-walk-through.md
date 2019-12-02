@@ -409,7 +409,7 @@ You can then use the import menu to select the theme and initially import it int
 
 The theme is now in your themes table to use as desired, and if the themes in the table match the themes in your directory, the import control will disappear again from the Themes panel.  
 
-### Updating themes
+## Updating themes
 
 If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer has revised the source theme and distributed a new and improved version. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
 
@@ -419,11 +419,11 @@ Then it is on to the Themes panel, where, like [described earlier](#duplicate-vi
 
 ![Select update from disk](https://docs.textpattern.com/img/select-update-from-disk.png)
 
-This selection has an accompanying checkbox option: <q><i>Delete unused templates from database on import?</i></q>[^update]
+This selection has an accompanying checkbox option, presented to you after making the selection: <q><i>Delete unused templates from database on import?</i></q>[^update]
 
 ![Select update from disk option](https://docs.textpattern.com/img/select-update-from-disk-option.png)
 
-It is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting any odd database asset files that might exist. This is generally a good idea, to keep versions consistent, and the checkbox is ticked by default. But you might have your reasons for want variability. Hard to say. Either way, confirm when asked if you are sure.
+The option is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting files that might be different (in terms of existing) in the database version. This is generally a good idea, to keep versions consistent, and the checkbox is ticked by default. But you might have your reasons for want variability, like customization of the sourced theme. Hard to say. Either way, confirm when asked if you are sure.
 
 [^update]: Should read ‘. . . on update?’ to be consistent with the initial selection action.
 
