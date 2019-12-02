@@ -152,11 +152,13 @@ Default panels represent all existing panels in a fresh install of the software.
             </tr>
         </tbody>
 				<tfoot>
-					<ol>
-						<li>Full rights means the role has access to panel and no restrictions to functionality. See associated panel documentation via column headers.</li>
-						<li>Limited rights means the role has access to panel but can only see or use some of the panel's functionality. See the 'limited access' descriptions in following sections.</li>
-						<li>Blocked means the role has no panel access, thus cannot see the panel link in the back-end navigation. Accounts having the status of 'None' cannot be used at all.</li>
-					</ol>
+					<tr><td colspan="8">
+						<ol class="list--refmarks">
+							<li>Full rights means the role has access to panel and no restrictions to functionality. See associated panel documentation via column headers.</li>
+							<li>Limited rights means the role has access to panel but can only see or use some of the panel's functionality. See the 'limited access' descriptions in following sections.</li>
+							<li>Blocked means the role has no panel access, thus cannot see the panel link in the back-end navigation. Accounts having the status of 'None' cannot be used at all.</li>
+						</ol>
+					</td></tr>
 				</tfoot>
     </table>
 </div>
