@@ -434,7 +434,7 @@ The theme is now in your themes table to use as desired, and if the themes in th
 
 ## Updating themes
 
-If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer has revised the source theme and distributed a new and improved version. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
+If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer (other than you) has released a newly-improved version of a theme you may have imported once. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
 
 When you update a theme from disk, Textpattern creates an *exact* copy in the database from the disk version you are updating from, merging new elements and overwriting existing ones having the same file name.
 
@@ -446,7 +446,7 @@ When selected, another checkbox option is presented: <q><i>Delete unused templat
 
 ![Select update from disk option](https://docs.textpattern.com/img/select-update-from-disk-option.png)
 
-This second option is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting files that might be different (in terms of existing) in the database version. This is generally a good idea, to keep versions consistent, and the checkbox is ticked by default. But you might have your reasons for wanting variability, like wanting to customize the sourced theme. Hard to say.
+This second option is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting files that might be different (in terms of existing) in the database version. This is generally a good idea, which is why the box is ticked by default, to keep versions consistent. But you might have your reasons for wanting variability, like wanting to customize the sourced theme. Hard to say.
 
 Either way, click the ‘Go’ button and confirm when asked if you are sure.
 
@@ -464,7 +464,7 @@ The selection triggers another option to respond to: <q><i>Delete theme template
 
 ![Select delete option](https://docs.textpattern.com/img/select-delete-option.png)
 
-Again, ‘disk’ is referring to the <i>themes</i> directory, and you are confirming to delete the package that may be sitting there. The box for this option is checked by default. Proceed with ‘Go’ if you want to clean house entirely, and confirm ‘OK’ when asked if you are sure.
+Again, ‘disk’ is referring to the <i>themes</i> directory, and you are confirming to delete the package that may be sitting there. The box for this option is checked by default; a sign of the right choice most of the time. Proceed with ‘Go’ if you want to clean house entirely, and confirm ‘OK’ when asked if you are sure.
 
 As a safety precaution, if theme packages on disk contain standard theme directories having non-standard subdirectories (e.g. <i>styles/sass</i>), they will not be deleted by Textpattern; rather, the package container will remain, along with the non-standard subdirectories and files inside them. This shell of a theme and its non-standard elements will need deleted manually since the software does not recognize such elements.
 
