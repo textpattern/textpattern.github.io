@@ -235,7 +235,7 @@ One way to duplicate the default theme is via the **With selected** controls tha
 
 Proceed by checking the box next to the default theme in the themes table, then selecting the ‘Duplicate’ option from the **With 1 selected…** menu just below the table. 
 
-![Duplicate via with selected controls](https://docs.textpattern.com/img/duplicate-via-with-selected-controls.png)
+![Duplicate via with selected controls](https://docs.textpattern.com/img/select-duplicate.png)
 
 Finally, clicking ‘OK’ when asked if you are sure.
 
