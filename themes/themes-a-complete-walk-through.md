@@ -424,9 +424,9 @@ First, use your (S)FTP software of choice to transfer the external theme (presum
 
 If you didn’t see the menu before, it is because it works in context with the <i>themes</i> directory, as follows:
 
-1. **One or more disk themes; no database equivalents.** When one or more themes are sitting in the <i>themes</i> directory that are not also existing in the themes table, they will cause the selection menu to appear at top of the themes table with those themes appearing as options for importation (i.e. to become themes in the database). The menu is not visible if this condition is false.
-2. **Disk themes equal database themes.** When the same themes are equally in the database and on disk, or only in the database and none on disk, the contextual menu is hidden, since there is nothing to potentially import.
-3. **Database theme deleted; back to condition 1**. If/when you delete a theme from the database but not the disk-based version (assuming there is one), the theme import menu will appear again because the first condition is true again.
+1. **One or more disk themes with no database equivalents**. When one or more themes reside in the themes directory that are not in the database, the selection menu appears above the themes table, permitting the unrepresented themes to be imported to the database. The menu is not visible if this condition is false.
+2. **Disk themes match database themes**. When the same themes are equally represented in the database and on disk, or only in the database and none on disk, the contextual menu is hidden, since there is nothing to potentially import.
+3. **Database theme deleted**. If/when you delete a theme from the database but not the disk-based version (assuming there is one), the theme import menu will appear again, as described in condition 1 above, because that first condition becomes true.
 
 You can then use the import menu to select the theme and initially import it into the database.
 
