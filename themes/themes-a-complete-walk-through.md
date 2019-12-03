@@ -438,7 +438,7 @@ If you are more into importing than exporting, you will eventually come to the p
 
 When you update a theme from disk, Textpattern creates an *exact* copy in the database from the disk version you are updating from, merging new elements and overwriting existing ones having the same file name.
 
-As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your <i>themes</i> directory. Then it is on to the Themes panel, where, like [described earlier](#duplicate-via-the-with-selected-control) you do the checkbox-and-select dance, but this time opting for ‘Update from disk’.
+As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your <i>themes</i> directory. Then it is on to the Themes panel, where, like [described initially](#duplicate-via-the-with-selected-controls) you do the checkbox-and-select dance, but this time opting for ‘Update from disk’.
 
 ![Select update from disk](https://docs.textpattern.com/img/select-update-from-disk.png)
 
