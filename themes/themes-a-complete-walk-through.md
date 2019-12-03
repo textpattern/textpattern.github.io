@@ -25,7 +25,7 @@ The addition of the [Themes](https://docs.textpattern.com/administration/themes-
 
 Theoretically speaking, you could hack a theme package together, from scratch and by hand, directly on your web server. We know you masochistic types are out there. And, sure, it can be a learning experience to sit on the cold garage floor with grease and gears.
 
-Most of this document, however, describes the sensible approach of using the new theming functionality in the back-end. Be at ease knowing that creating a new theme has no impact on a website’s operation or presentation if the pages and styles of the theme are not yet associated to the website’s functioning sections (easy to tell at a glance, as you will see). If not, you can freely modify any [theme package assets](#theme-assets) without worry.
+Most of this document, however, describes the sensible approach of using the new theming functionality in the back-end. Be at ease knowing that creating a new theme has no impact on a website’s operation or presentation if the pages and styles of the theme are not yet associated to the website’s functioning sections (easy to tell at a glance, as you will see). If not, you can freely modify any [theme package assets](#theme-package) without worry.
 
 ### Default system references
 
@@ -55,7 +55,7 @@ And your plugin names, if you developed any, would look like this, as always:
 
 ### Theme package
 
-A Textpattern theme is a collection of *page* templates, *form* markup, stylesheets, and a manifest file with a little metadata; all packaged together in a single directory bearing the theme’s name. The single directory can be thought of as a ‘package’ and its contents can be thought of ‘assets’ organized in subdirectories by type.
+A Textpattern theme is a collection of *page* templates, *form* markup, stylesheets, and a manifest file with a little metadata; all packaged together in a single directory bearing the theme’s name. The single directory can be thought of as a ‘package’ and its contents can be thought of as ‘assets’ organized in subdirectories by type.
 
 To ensure a theme imported into your installation does not break your front-end, Textpattern augments imported themes with any missing assets needed by the default system, and provides empty placeholders where non-essential assets are missing. This is useful, say, when the grease-monkeys build from scratch and the integrity of a given theme’s structure is questionable.
 
@@ -299,7 +299,7 @@ You can use the Theme selection menu to change theme context from any assets pan
 
 ![Theme menu selection](https://docs.textpattern.com/img/theme-menu-selection.png)
 
-You will remain in that different theme context as you browse between the assets panels. You can switch theme context again at any time from any assets panel by using the Themes menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
+You will remain in that different theme context as you browse between the assets panels. You can switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
 
 [^themebox]: The box does not appear in assets panels when the Themes panel only has one theme.
 
@@ -321,27 +321,37 @@ Confirm ‘OK’ when asked if you are sure. The theme’s ‘Active’ link the
 
 In situations where you have created the themes and know how your website is constructed (i.e. assets between the different themes are paired will and using similar names), this switching process should work fairly smoothly. If switching between themes that you have imported, however, where the variability of theme package contents is potentially greater between themes, Textpattern will switch those parts that are compatible (similarly named, etc.) and ignore the others. 
 
-Obviously you don’t want to use this feature if your own new theme is not ready, or not being developed locally or on a staging server. And you might need to fiddle a bit with themes imported from somewhere else. But the ‘Active’ link still makes it easier to switch from one theme to another across your entire site.
+Obviously you do not want to use this feature if your own new theme is not ready, or not being developed locally or on a staging server. And you might need to fiddle a bit with themes imported from somewhere else. But the ‘Active’ link still makes it easier to switch from one theme to another across your entire site.
 
 ### Assigning multiple themes
 
-In this case you might like keeping the same general structure of your website but want to have a different layout and presentation for each section.
+In this case you might like keeping the same general structure of your website but want to have a different layout and presentation for each section. The blue ‘Activate’ links described previously will not work in this case because that only switches one theme to the whole website — an easy and quick theme switcher.
 
-The blue ‘Activate’ links described previously will not work in this case because that only switches one theme to the whole website — a easy and quick theme switcher.
+If you want a 1:1 assignment of a different theme to every website section, you will have to assign each theme and its associated page and style assets to the section individually. There are two approaches to this process, which is a one-section-at-a-time process no matter what since you want all sections looking different, but one approach is a little more direct than the other. 
 
-Applying multiple themes is done manually by assigning themes to each section individually using the **Edit section** controls via the [Sections](https://docs.textpattern.com/administration/sections-panel) panel. First click the name of a section to open.
+Use the **With selected** controls introduced earlier in the duplicating themes sections, but this time from the context of the [Sections](https://docs.textpattern.com/administration/sections-panel) panel, where assigning assets to templates is done, and where the select options are different.
 
-![Click section name](https://docs.textpattern.com/img/click-section-name.png)
+So, hop into the Sections panel, check the box by the name of a section to assign a theme too, and select ‘Change theme/page/style’ from the **With 1 selected…** menu.  
 
-You then must assign the new them, and re-assign the associated page and style too.
+![Select ‘Change theme…’](https://docs.textpattern.com/img/select-change-theme.png)
 
-![Edit section assignments](https://docs.textpattern.com/img/edit-section-assignments.png)
+Yes, you can select more than one section at a time and thereby assign a given theme to multiple sections at once. This would be the ideal middle road to take when the ‘Activate’ theme switcher was too much (all or nothing) and a 1:1 pairing is too tedious. Alas, you’re on a tedious mission here because each website section must look like an Alphonse Mucha season, so push forth with one section assignment at a time.
 
-Start with the theme assignment first. After selecting the theme you want, the page and style options automatically change to reflect what is available in the selected theme package. This ensures you only have to choose from pages and styles that are in the theme package; no mistaking it. If the page and/or style in the new theme showing by default shares the same name as was in the previous theme, no re-assignment of these assets is necessary since their names and context are already correct.
+The selection will reveal an associated and uncharacteristically rich set of controls for completely defining the assignment action.
+
+![Select ‘Change theme…’ option](https://docs.textpattern.com/img/select-change-theme-option.png)
+
+First is not one but _two_ checkboxes: ‘Development’ and ‘Live’. The labels are clear, undoubtedly. ‘Development will keep the theme assignment offline until you say different another day.[^sect] ‘Live’ will make it public immediately. The former and safer option is checked by default, or you might be brave and switch to ‘Live’. Still, you could check both at once and see what happens. You won’t know until you try!
+
+The check boxes are accompanied by three select menus for Theme, Page, and Style. The current theme assignment will show by default. When you change that menu first, the Page and Style menu options adjust in relation. This ensures you only choose from page and style assets in the theme package; no mistaking it.
+
+Repeat the above process for each theme-to-section assignment. When done with all sections, return to the Themes panel to find that the blue ‘Activate’ links on the assigned themes have magically turned to shamrock green and beam ’**Active**{:.success}’. Luck of the Irish!  
+
+[^sect]: A column now exists in the `txp_section` table for the development theme assets.
 
 ## ‘Database’ themes versus ‘disk’ themes
 
-In the remaining sections, the exporting, importing, updating, and deleting processes are explained. Before getting there, a concept needs laid out for understanding.
+In the remaining sections, the exporting, importing, updating, and deleting processes are explained. Before getting there, a concept needs laid out for understanding. Some may snort at the obviousness of it. Others might appreciate it being made clear.
 
 Textpattern interface strings, pophelp, and this documentation in relation — and probably even developers themselves, and you, eventually, when exchanging in the community forum — will occasionally use terms that refer to themes as either ‘database’ or ‘disk’. These distinguishing terms are in reference to themes at specific locations and contexts in the [importing](#importing-themes) and [deleting](#deleting-themes) scenarios, particularly.
 
@@ -363,8 +373,6 @@ It all centres around the <i>themes</i> directory located in your software’s r
   * {:.document} . . .
 {:.list--files}
 
-Some of you may snort at the obviousness of it all. Others may be grateful to have it explained.
-
 ## Exporting themes
 
 You have learned how to create and manage themes at this point, so take it to the next logical step and export one for other people to use. Fame and fortune awaits!
@@ -385,9 +393,11 @@ In other words, Textpattern is making a comparison between the theme package you
 
 This is generally a good idea, and the check box is ticked by default. This ensures that after exportation, there is a direct match between the database version (in the Themes panel) and the version on disk (in the <i>themes</i> directory).
 
-Click the Go button and confirm when asked if you are sure.
+Click the ‘Go’ button and confirm when asked if you are sure.
 
-You can now move or copy the exported theme (now on disk) to a new location where others may download it for use. Whatever location that is, make sure the URL has been entered in the Website field of the theme’s metadata (refer to [duplicating a theme](#duplicate-via-the-with-selected-control)).
+Now you are almost famous, but not quite yet. Still one more thing to do if you want your theme added to the new Themes website repository, coming soon. *Zip it up!* Textpattern will only host one file per theme package, and it must be compressed. So transfer the exported theme from the <i>themes</i> directory to an external location and make it a single, compressed <i>.gzip</i> or <i>.zip</i> file.
+
+How you store the theme file anywhere else for sharing is up to you. But, no matter what location, Themes website or your own, make sure the expected URL has been entered in the Website field of the theme’s metadata. Add that by clicking the name of the theme in the themes table and using the **Edit theme** form.
 
 ## Importing themes
 
@@ -413,17 +423,17 @@ The theme is now in your themes table to use as desired, and if the themes in th
 
 If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer has revised the source theme and distributed a new and improved version. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
 
-As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your <i>themes</i> directory.
+When you update a theme from disk, Textpattern creates an *exact* copy in the database from the disk version you are updating from, merging new elements and overwriting existing ones having the same file name.
 
-Then it is on to the Themes panel, where, like [described earlier](#duplicate-via-the-with-selected-control) you do the checkbox-and-select dance, but this time opting for ‘Update from disk’.
+As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your <i>themes</i> directory. Then it is on to the Themes panel, where, like [described earlier](#duplicate-via-the-with-selected-control) you do the checkbox-and-select dance, but this time opting for ‘Update from disk’.
 
 ![Select update from disk](https://docs.textpattern.com/img/select-update-from-disk.png)
 
-This selection has an accompanying checkbox option, presented to you after making the selection: <q><i>Delete unused templates from database on import?</i></q>[^update]
+When selected, another checkbox option is presented: <q><i>Delete unused templates from database on import?</i></q>[^update]
 
 ![Select update from disk option](https://docs.textpattern.com/img/select-update-from-disk-option.png)
 
-The option is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting files that might be different (in terms of existing) in the database version. This is generally a good idea, to keep versions consistent, and the checkbox is ticked by default. But you might have your reasons for want variability, like customization of the sourced theme. Hard to say.
+This second option is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting files that might be different (in terms of existing) in the database version. This is generally a good idea, to keep versions consistent, and the checkbox is ticked by default. But you might have your reasons for wanting variability, like wanting to customize the sourced theme. Hard to say.
 
 Either way, click the ‘Go’ button and confirm when asked if you are sure.
 
