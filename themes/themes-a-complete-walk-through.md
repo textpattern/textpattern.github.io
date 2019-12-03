@@ -271,11 +271,14 @@ You can tell from a glance in the Themes panel if a given theme is active or not
 
 When a theme is not active, you can work on the associated assets without concern for it impacting website visitors or any other problems.
 
-In version 4.8, soon, a new feature is introduced. Under the Name column of the themes table, at right of the name, will be an ‘Active’ link. When the link is blue, the theme is not active. When the link is green, the theme is active.
+In the upcoming release, a new feature is introduced. Under the Name column of the themes table, at right of the name, will be a contextual theme-switching link that works as follows:
+
+* <span class="information">Activate</span>. When a theme is blue and reads ‘Activate’, it is ready to be used to switch themes.
+* <span class="success">Active</span>When the link is green and reads ‘Active’, it is currently applied to the website front-end presentation.
 
 ![Active theme indicator](https://docs.textpattern.com/img/active-theme-indicator.png)
 
-More about using this feature and what is happening behind the scenes is presented in [Same structure; different theme](#same-structure-different-theme).
+See [Same structure; different theme](#same-structure-different-theme) for more about using this feature and what is happening behind the scenes.
 
 ### Assets association
 
@@ -317,15 +320,15 @@ If you are using version 4.8 of the software, and you simply want to swap one th
 
 ![Click blue active link](https://docs.textpattern.com/img/click-blue-active-link.png)
 
-Confirm ‘OK’ when asked if you are sure. The theme’s ‘Active’ link then becomes green and the previously active theme’s link turns blue.
+Confirm ‘OK’ when asked if you are sure. The theme’s blue ‘Activate’ link then becomes a green ‘Active’ link and the previously active theme’s link reverts the other way.
 
-In situations where you have created the themes and know how your website is constructed (i.e. assets between the different themes are paired will and using similar names), this switching process should work fairly smoothly. If switching between themes that you have imported, however, where the variability of theme package contents is potentially greater between themes, Textpattern will switch those parts that are compatible (similarly named, etc.) and ignore the others. 
+In situations where you have created the themes and know how your website is constructed (i.e. assets between the different themes are paired well and using similar names), this switching process should work fairly smoothly. If switching between themes that you have imported, however, where the variability of theme package contents is potentially greater between sourced theme and your own website’s design, Textpattern will switch those parts that are compatible (similarly named, etc.) and ignore the others. 
 
 Obviously you do not want to use this feature if your own new theme is not ready, or not being developed locally or on a staging server. And you might need to fiddle a bit with themes imported from somewhere else. But the ‘Active’ link still makes it easier to switch from one theme to another across your entire site.
 
 ### Assigning multiple themes
 
-In this case you might like keeping the same general structure of your website but want to have a different layout and presentation for each section. The blue ‘Activate’ links described previously will not work in this case because that only switches one theme to the whole website — an easy and quick theme switcher.
+In this case you might like keeping the same general structure of your website but want to have a different layout and presentation for each section. The blue ‘Activate’ links described previously will not work in this case because that only switches one theme to the whole website — an easy theme switcher.
 
 If you want a 1:1 assignment of a different theme to every website section, you will have to assign each theme and its associated page and style assets to the section individually. There are two approaches to this process, which is a one-section-at-a-time process no matter what since you want all sections looking different, but one approach is a little more direct than the other. 
 
@@ -397,7 +400,7 @@ Click the ‘Go’ button and confirm when asked if you are sure.
 
 Now you are almost famous, but not quite yet. Still one more thing to do if you want your theme added to the new Themes website repository, coming soon. *Zip it up!* Textpattern will only host one file per theme package, and it must be compressed. So transfer the exported theme from the <i>themes</i> directory to an external location and make it a single, compressed <i>.gzip</i> or <i>.zip</i> file.
 
-How you store the theme file anywhere else for sharing is up to you. But, no matter what location, Themes website or your own, make sure the expected URL has been entered in the Website field of the theme’s metadata. Add that by clicking the name of the theme in the themes table and using the **Edit theme** form.
+How you store the theme file anywhere else is up to you. But whatever the location, Themes website or your own, make sure the expected URL has been entered in the Website field of the theme’s metadata. Add that by clicking the name of the theme in the themes table and using the **Edit theme** form.
 
 ## Importing themes
 
