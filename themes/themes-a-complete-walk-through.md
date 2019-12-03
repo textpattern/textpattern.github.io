@@ -352,7 +352,7 @@ The selection will reveal an associated and uncharacteristically rich set of con
 
 ![Select ‘Change theme…’ option](https://docs.textpattern.com/img/select-change-theme-option.png)
 
-Notice there is not one, but *two* checkboxes: ‘Development’ and ‘Live’. The labels are clear, undoubtedly. But here it is: ‘Development will keep the theme assignment offline until you say different another day.[^sect] ‘Live’ will make it public immediately. The former and safer option is checked by default, or you might be brave and switch to ‘Live’. Still, you could check both at once and see what happens. You only *live* once!
+Notice not one, but *two* checkboxes: ‘Development’ and ‘Live’. The labels are clear, undoubtedly. But here it is: ‘Development will keep the theme assignment offline until you say different another day.[^sect] ‘Live’ will make it public immediately. The former and safer option is checked by default, or you might be brave and switch to ‘Live’. Still, you could check both at once and see what happens. You only *live* once!
 
 The check boxes are accompanied by three select menus for Theme, Page, and Style. The current theme assignment will show by default. When you change that menu first, the Page and Style menu options adjust in relation. This ensures you only choose from page and style assets in the theme package; no mistaking it.
 
