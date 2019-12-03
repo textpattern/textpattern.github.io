@@ -253,7 +253,7 @@ Change the metadata in the six fields as thoroughly as possible. See [Create via
 
 The duplicated theme will be added to the themes table in the main panel view. Once the default theme is duplicated and the metadata changed, the duplicated theme is, for all practical purposes, a *new* theme, and you should call it by its lovely new name.
 
-#### Duplicate via the ‘Edit theme’ form
+#### Duplicate via the ‘Edit theme’ editor
 
 The last way to create a theme is the most direct (fewer clicks in the interface) yet least obvious way to create by duplication.
 
@@ -261,9 +261,9 @@ As before, click the name of the default theme under the Name column of the tabl
 
 ![Click default theme name](https://docs.textpattern.com/img/click-default-theme-name.png)
 
-The **Edit theme** form will open up, as you know, and show the default theme’s metadata so you can change it accordingly. See the process described in the previous section.
+The **Edit theme** editor will open up, as you know, and show the default theme’s metadata so you can change it accordingly. See the process described in the previous section.
 
-When done editing the form, click the ‘Duplicate’ link under the form, at right of the Cancel button.
+When done editing the data, click the ‘Duplicate’ link at bottom of the editor, at right of the Cancel button.
 
 ![Click duplicate link](https://docs.textpattern.com/img/click-duplicate-link.png)
 
@@ -271,30 +271,38 @@ There is no confirmation dialogue asking if you are sure. You are simply taken b
 
 ![New theme created](https://docs.textpattern.com/img/new-theme-created.png)
 
-## Contexts and associations
+You are now a master at creating initial non-live packages. Proceed with learning all the useful contexts between development and live themes.
 
-The administration panels provide features and cues that make it easy to see what theme context you are in from any relevant panel. This includes: whether a theme is active or not, what assets are associated to which themes, what themes are assigned to sections, and contextual navigation between it all. 
+## Development versus live contexts
 
-### Active versus inactive themes
+The administration panels provide features and cues that make it easy to see what context a theme is in, or what context you are in when browsing about the relevant panels. This includes: whether a theme is active or not, what assets are associated to which themes, what themes are assigned to sections, and contextual navigation between it all.
 
-You can tell from a glance in the Themes panel if a given theme is active or not. Look under the Sections column of the themes table. Any theme with ‘0’ section associations is not active (i.e. not live on the front-end).
+To begin, a theme is either in development (not live) or live (visible to the world on your website’s front-end). Since the normal order of things is to develop themes before making them live, start there.
 
-![Sections column](https://docs.textpattern.com/img/sections-column.png)
+### Previewing (development) themes
 
-When a theme is not active, you can work on the associated assets without concern for it impacting website visitors or any other problems.
+Being able to preview themes as you develop them is rather important. Textpattern provides a feature to do exactly that. It’s a way to preview what change look like without affecting the front-end presentation.[^careful] Potential collaborators on your website having the necessary [roles and privileges](https://docs.textpattern.com/administration/user-roles-and-privileges) will be able to see the links too, but not every role can.
 
-In the upcoming release, a new feature is introduced. Under the Name column of the themes table, at right of the name, will be a contextual theme-switching link that works as follows:
+So bring your attention to the ‘Preview’ link next to the name of any theme in the themes table; preferably not one that is ’Active’ (those are covered soon enough), like one [created through duplication](#duplicate-via-the-edit-theme-editor). 
 
-* <span class="information">Activate</span>. When a theme is blue and reads ‘Activate’, it is ready to be used to switch themes.
-* <span class="success">**Active**</span>. When the link is green and reads ‘Active’, it is currently applied to the website front-end presentation.
+![Preview theme link](https://docs.textpattern.com/img/preview-theme-link.png)
 
-![Active theme indicator](https://docs.textpattern.com/img/active-theme-indicator.png)
+Click the link and you are taken to the Sections panel with the development theme in context showing some useful information and more useful links.
 
-See [Switching themes](#switching-themes) for more about using this feature and what is happening behind the scenes.
+![Preview theme sections](https://docs.textpattern.com/img/preview-theme-sections.png)
 
-### Assets association
+In particular, notice the following two things and use the information to your advantage and understanding:
 
-Under the Pages, Forms, and Styles columns of the themes table are linked numbers indicating how many assets of each type are associated to a given theme.
+1. The sections the theme is associated with, and what theme assets (pages and styles) are being used in each case, which you can jump to individually by their available links.
+2. The two links under the Name column of the table; the first being a link to the section’s properties, and the other, ‘View’, being a link to preview what the section looks like (offline but in full HTML glory) using the current theme assignment.
+
+And that’s pretty much it, but useful. As you develop your pages and styles, you can jump into context with the theme’s sections and look at how each one appears via the ‘View’ links. The page and style assignments to sections have always been standard, required Textpattern procedure, but now they are done in context of themes. 
+ 
+[^careful]: As long as you're careful and don't start deleting plugins or changing preferences, or whatever.
+
+### Context of assets
+
+Return to the Themes panel. Under the Pages, Forms, and Styles columns of the themes table are linked numbers indicating how many assets of each type are associated to a given theme.
 
 ![Theme-assets-links](https://docs.textpattern.com/img/assets-columns.png)
 
@@ -316,9 +324,23 @@ You can use the Theme selection menu to change theme context from any assets pan
 
 You will remain in that different theme context as you browse between the assets panels. You can switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
 
-### Sections preview
+At this point you should have a pretty good idea of contexts and cues as it concerns themes and their assets in relation to relevant panels. And these contexts are useful whether working on themes in development or browsing themes that are live. 
 
-(Forthcoming)
+### Active (live) themes
+
+You can tell from a glance in the Themes panel if a given theme is live (active) or not. Two glances, actually.
+
+First, look under the Sections column of the themes table. Any theme with ‘0’ section associations is not active (i.e. not live on the front-end).
+
+![Sections column](https://docs.textpattern.com/img/sections-column.png)
+
+When a theme is not active, you can work on the associated assets, and [preview the progress](#previewing-development-themes), without concern for it impacting website visitors or any other problems.
+
+Another way to tell, in the upcoming release of the software, is by way of a new feature: the green ‘Active’ and blue ‘Activate’ links under the Name column of the themes table. If a theme is noted as ‘Active’, it is live.
+
+![Active theme indicator](https://docs.textpattern.com/img/active-theme-indicator.png)
+
+The two links function as a theme switcher, too. See [Switching themes](#switching-themes) just ahead for more about that and what is happening behind the scenes.
 
 ## Applying themes
 
@@ -352,11 +374,11 @@ The selection will reveal an associated and uncharacteristically rich set of con
 
 ![Select ‘Change theme…’ option](https://docs.textpattern.com/img/select-change-theme-option.png)
 
-Notice not one, but *two* checkboxes: ‘Development’ and ‘Live’. The labels are clear, undoubtedly. But here it is: ‘Development will keep the theme assignment offline until you say different another day.[^sect] ‘Live’ will make it public immediately. The former and safer option is checked by default, or you might be brave and switch to ‘Live’. Still, you could check both at once and see what happens. You only *live* once!
+Notice not one, but *two* checkboxes: ‘Development’ and ‘Live’. The ‘Development’ option, checked by default, works in relation to the [sections previewing](#sections-preview) functionality described earlier.[^sect] Assigning themes to sections allows logged-in collaborators (if any, and who have the necessary [roles and privileges](https://docs.textpattern.com/administration/user-roles-and-privileges)) to *preview* the changes. The ‘Live’ option, on the other hand, does what it implies; makes the themes-to-sections assignment immediately visible on the front-end of your website. You _can_, select both options, if not often needed. One example for doing so might be to synchronize development and live conditions in one easy step; as a starting point, say, for diverged development later. Go ahead, try it. You only *live* once!
 
-The check boxes are accompanied by three select menus for Theme, Page, and Style. The current theme assignment will show by default. When you change that menu first, the Page and Style menu options adjust in relation. This ensures you only choose from page and style assets in the theme package; no mistaking it.
+After the checkboxes come three select menus for Theme, Page, and Style. The Theme menu will show the current theme assignment by default. When you change that menu first, the Page and Style menu options adjust in relation. This ensures you only choose from page and style assets in the theme package; no mistaking it. Proceed with making the page and style selections accordingly.
 
-Repeat the above process for each theme-to-section assignment. When done with all sections, return to the Themes panel to find that the blue ‘Activate’ links on the assigned themes have turned green and beam ’**Active**{:.success}’.  
+Repeat the above process for each theme-to-section assignment. When done with all sections, return to the Themes panel to find that the blue ‘Activate’ links on the assigned themes have turned green and beam ’**Active**{:.success}’. Success!
 
 [^sect]: A column now exists in the `txp_section` table for the development theme assets.
 
@@ -424,9 +446,9 @@ First, use your (S)FTP software of choice to transfer the external theme (presum
 
 If you didn’t see the menu before, it is because it works in context with the <i>themes</i> directory, as follows:
 
-1. **One or more disk themes with no database equivalents**. When one or more themes reside in the themes directory that are not in the database, the selection menu appears above the themes table, permitting the unrepresented themes to be imported to the database. The menu is not visible if this condition is false.
-2. **Disk themes match database themes**. When the same themes are equally represented in the database and on disk, or only in the database and none on disk, the contextual menu is hidden, since there is nothing to potentially import.
-3. **Database theme deleted**. If/when you delete a theme from the database but not the disk-based version (assuming there is one), the theme import menu will appear again, as described in condition 1 above, because that first condition becomes true.
+1. **One or more disk themes with no database equivalents**. When one or more themes reside in the themes directory that are not in the database, the selection menu appears above the themes table with those themes listed, enabling their importation into the database. The menu is not visible if this condition is false.
+2. **Disk themes match database themes**. When the same themes are equally represented in the database and on disk, or only in the database and not on disk, the contextual menu is hidden, since there is nothing to potentially import.
+3. **Database theme deleted**. If/when you delete a theme from the database but not the disk-based version (assuming there is one), the Theme import menu will reappear, as described in condition 1, since that condition is true again.
 
 You can then use the import menu to select the theme and initially import it into the database.
 
