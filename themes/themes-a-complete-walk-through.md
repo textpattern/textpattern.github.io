@@ -286,11 +286,11 @@ When a theme is not active, you can work on the associated assets without concer
 In the upcoming release, a new feature is introduced. Under the Name column of the themes table, at right of the name, will be a contextual theme-switching link that works as follows:
 
 * <span class="information">Activate</span>. When a theme is blue and reads ‘Activate’, it is ready to be used to switch themes.
-* <span class="success">Active</span>When the link is green and reads ‘Active’, it is currently applied to the website front-end presentation.
+* <span class="success">**Active**</span>. When the link is green and reads ‘Active’, it is currently applied to the website front-end presentation.
 
 ![Active theme indicator](https://docs.textpattern.com/img/active-theme-indicator.png)
 
-See [Same structure; different theme](#same-structure-different-theme) for more about using this feature and what is happening behind the scenes.
+See [Switching themes](#switching-themes) for more about using this feature and what is happening behind the scenes.
 
 ### Assets association
 
@@ -306,7 +306,7 @@ Click any of these links and you are taken to the respective panels with the ind
 
 ![Pages assets](https://docs.textpattern.com/img/pages-assets.png)
 
-You can tell which theme the panel assets are in context with by the appearance of the Theme selection menu above the assets list, showing the title of the relevant theme.[^themebox]
+You can tell which theme the panel assets are in context with by the appearance of the Theme selection menu above the assets list, showing the title of the relevant theme. (The Theme selection menu does not appear in assets panels when the Themes panel only has one theme.)
 
 ![Theme menu context](https://docs.textpattern.com/img/theme-menu-context.png)
 
@@ -315,8 +315,6 @@ You can use the Theme selection menu to change theme context from any assets pan
 ![Theme menu selection](https://docs.textpattern.com/img/theme-menu-selection.png)
 
 You will remain in that different theme context as you browse between the assets panels. You can switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
-
-[^themebox]: The box does not appear in assets panels when the Themes panel only has one theme.
 
 ### Sections preview
 
@@ -328,9 +326,9 @@ When you are ready to apply your theme and see how it looks on the front-side, y
 
 ### Switching themes
 
-If you are using version 4.8 of the software, and you simply want to swap one theme for another across your website as it’s currently designed, return to the Themes panel and click the blue ‘Active’ link found at right of the desired theme’s name.
+If you are using version 4.8 of the software, and you simply want to swap one theme for another across your website as it’s currently designed, return to the Themes panel and click the blue ‘Activate’ link found at right of the desired theme’s name.
 
-![Click blue active link](https://docs.textpattern.com/img/click-blue-active-link.png)
+![Click blue activate link](https://docs.textpattern.com/img/click-blue-activate-link.png) [image needed]
 
 Confirm ‘OK’ when asked if you are sure. The theme’s blue ‘Activate’ link then becomes a green ‘Active’ link and the previously active theme’s link reverts the other way.
 
@@ -342,21 +340,19 @@ Obviously you do not want to use this feature if your own new theme is not ready
 
 In this case you might like keeping the same general structure of your website but want to have a different layout and presentation for each section. The blue ‘Activate’ links described previously will not work in this case because that only switches one theme to the whole website — an easy theme switcher.
 
-If you want a 1:1 assignment of a different theme to every website section, you will have to assign each theme and its associated page and style assets to the section individually. There are two approaches to this process, which is a one-section-at-a-time process no matter what since you want all sections looking different, but one approach is a little more direct than the other. 
+If you want a 1:1 assignment of a different theme to every website section, you will have to assign each theme and its associated page and style assets to the section individually. There are two approaches to this process — a one-section-at-a-time process if you want all sections looking different — but one approach is a little more direct than the other, thus the one presented here. 
 
-Use the **With selected** controls introduced earlier in the duplicating themes sections, but this time from the context of the [Sections](https://docs.textpattern.com/administration/sections-panel) panel, where assigning assets to templates is done, and where the select options are different.
-
-So, hop into the Sections panel, check the box by the name of a section to assign a theme too, and select ‘Change theme/page/style’ from the **With 1 selected…** menu.  
+Use the **With selected** controls again, but this time in the [Sections](https://docs.textpattern.com/administration/sections-panel) panel, where assigning assets to templates is done, and where the select options are different. So, hop into the Sections panel, check the box by the name of a section to assign a theme to, and select ‘Change theme/page/style’ from the menu underneath.  
 
 ![Select ‘Change theme…’](https://docs.textpattern.com/img/select-change-theme.png)
 
-Yes, you can select more than one section at a time and thereby assign a given theme to multiple sections at once. This would be the ideal middle road to take when the ‘Activate’ theme switcher was too much (all or nothing) and a 1:1 pairing is too tedious. Alas, you’re on a tedious mission here because each website section must look like an Alphonse Mucha season, so push forth with one section assignment at a time.
+Yes, you can select more than one section at a time and thereby assign a given theme to multiple sections at once. This would be the ideal middle road when the ‘Activate’ theme switcher was too much (all or nothing) and a 1:1 pairing is too tedious. Alas, you’re on a tedious mission here because each website section must look like an Alphonse Mucha season, so push forth with one section assignment at a time.
 
 The selection will reveal an associated and uncharacteristically rich set of controls for completely defining the assignment action.
 
 ![Select ‘Change theme…’ option](https://docs.textpattern.com/img/select-change-theme-option.png)
 
-First is not one but _two_ checkboxes: ‘Development’ and ‘Live’. The labels are clear, undoubtedly. ‘Development will keep the theme assignment offline until you say different another day.[^sect] ‘Live’ will make it public immediately. The former and safer option is checked by default, or you might be brave and switch to ‘Live’. Still, you could check both at once and see what happens. You won’t know until you try!
+Notice there is not one, but *two* checkboxes: ‘Development’ and ‘Live’. The labels are clear, undoubtedly. But here it is: ‘Development will keep the theme assignment offline until you say different another day.[^sect] ‘Live’ will make it public immediately. The former and safer option is checked by default, or you might be brave and switch to ‘Live’. Still, you could check both at once and see what happens. You only *live* once!
 
 The check boxes are accompanied by three select menus for Theme, Page, and Style. The current theme assignment will show by default. When you change that menu first, the Page and Style menu options adjust in relation. This ensures you only choose from page and style assets in the theme package; no mistaking it.
 
