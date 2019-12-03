@@ -100,14 +100,12 @@ Of the entire package, only two page templates and the metadata file are ‘esse
 
 Theme designers would doubtfully ever share such a worthless theme, but if one did, and you actually wanted to use it, here’s how Textpattern would treat it at time of [importing](#importing-themes):
 
-1. **Pages**. If the essential page templates were missing, they would be created as empty pages. If the entire *pages* directory was missing, it would be created, and the two essential pages included with their default contents.
+1. **Pages**. If the essential page templates were missing, they would be created as empty pages. If the entire *pages* directory was missing, it would be created, as well the two essential pages with their default contents.
 2. **Forms**. If non-essential form files are missing, they are added in place as empty files. If any form subdirectories are missing, or the entire *forms* directory, the full *forms* directory from the tree above will be created, and the eight form files will contain default Textpattern markup.
 3. **Styles**. If the file is missing, it is added as an empty file. If the *styles* directory is missing, the directory plus a blank *default.css* file will be created.
 4. **Metadata**. The metadata file is handled more simply; the focus is on any missing metadata values. See [Metadata](#metadataa).
 
-When [updating](#updating-themes) such an augmented theme, such as when another theme author releases a new version of a theme you’ve already imported, and the theme’s file composition has not changed from the original imported version, Textpattern will ignore the missing files because it has already added them in your database. If, however, the theme author *does* add new files to their theme that were missing originally, they will replace the placeholders Textpattern originally added, and the theme is one step better to being a real functioning theme.
-
-If, after importing or updating a sparse theme as described, you later delete any of the augmented files, and that's your prerogative, and exported it that way for sharing, those files will remain missing in the exported theme. In other words, you would be sharing a worthless theme just like what was shared with you. But that’s fine, because it would not break anything when someone else imported it; their install of Textpattern would augment the theme with defaults and placeholders again just like described.
+Textpattern will always augment a theme this way when importing or updating one, and any of the default package assets are missing. If, after importing or updating such a sparse theme, you later delete any of the augmented files, and that's your prerogative, and exported it that way for sharing, those files will remain missing in the exported theme. In other words, you would be sharing a worthless theme, just like the one shared with you. But that’s fine, because it would not break anything when someone else imported it at their end. Their install of Textpattern would augment the theme with defaults and placeholders again just like described.
 
 #### Page assets
 
