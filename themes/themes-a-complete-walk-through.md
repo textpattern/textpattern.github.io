@@ -371,7 +371,7 @@ As far as the location terminology goes:
 * **Themes panel = database theme**. When a theme is in the themes table of the Themes panel, it is in the database and thus can be referred to as a ‘database theme’.
 * **<i>themes</i> directory = disk theme**. When the theme package is sitting in the <i>themes</i> directory, it is on the web server’s disk and thus referred to as a ‘disk theme’, ‘disk-based’ theme, or what have you.
 
-When a theme is in both locations, as may often be the case in your workflows, remember to distinguish a given theme between the two locations, which is also useful when seeking help.
+When a theme is in both locations, as may often be the case in your workflows, remember to distinguish a given theme between the two locations, because the outbound and inbound shuffling of themes involves making choices about how to treat database and disk themes in the process. And, of course, knowing the difference can be useful when seeking help.
 
 It all centres around the <i>themes</i> directory located in your software’s root installation location, which is best thought of as a checkpoint for incoming (imported) and outgoing (exported) themes:
 
@@ -383,6 +383,8 @@ It all centres around the <i>themes</i> directory located in your software’s r
   * {:.document} index.php
   * {:.document} . . .
 {:.list--files}
+
+This will be more clear as you stroll through the remaining sections of the garden.
 
 ## Exporting themes
 
