@@ -356,7 +356,7 @@ Notice not one, but *two* checkboxes: ‘Development’ and ‘Live’. The labe
 
 The check boxes are accompanied by three select menus for Theme, Page, and Style. The current theme assignment will show by default. When you change that menu first, the Page and Style menu options adjust in relation. This ensures you only choose from page and style assets in the theme package; no mistaking it.
 
-Repeat the above process for each theme-to-section assignment. When done with all sections, return to the Themes panel to find that the blue ‘Activate’ links on the assigned themes have magically turned to shamrock green and beam ’**Active**{:.success}’. Luck of the Irish!  
+Repeat the above process for each theme-to-section assignment. When done with all sections, return to the Themes panel to find that the blue ‘Activate’ links on the assigned themes have turned green and beam ’**Active**{:.success}’.  
 
 [^sect]: A column now exists in the `txp_section` table for the development theme assets.
 
@@ -371,7 +371,7 @@ As far as the location terminology goes:
 * **Themes panel = database theme**. When a theme is in the themes table of the Themes panel, it is in the database and thus can be referred to as a ‘database theme’.
 * **<i>themes</i> directory = disk theme**. When the theme package is sitting in the <i>themes</i> directory, it is on the web server’s disk and thus referred to as a ‘disk theme’, ‘disk-based’ theme, or what have you.
 
-When a theme is in both locations, as may often be the case in your workflows, remember to distinguish a given theme between the two locations, because the outbound and inbound shuffling of themes involves making choices about how to treat database and disk themes in the process. And, of course, knowing the difference can be useful when seeking help.
+When a theme is in both locations, as may often be the case in your workflows (though use of the <i>themes</i> directory is entirely optional[^diskoptional]), remember to distinguish a given theme between the two locations, because the outbound and inbound shuffling of themes involves making choices about how to treat database and disk themes in the process. And, of course, knowing the difference can be useful when seeking help.
 
 It all centres around the <i>themes</i> directory located in your software’s root installation location, which is best thought of as a checkpoint for incoming (imported) and outgoing (exported) themes:
 
@@ -385,6 +385,8 @@ It all centres around the <i>themes</i> directory located in your software’s r
 {:.list--files}
 
 This will be more clear as you stroll through the remaining sections of the garden.
+
+[^diskoptional]: You do not have to use the <i>themes</i> directory (on disk) to build your own themes. The directory is only needed if you want to share themes, back them up, or put theme assets under version control.
 
 ## Exporting themes
 
@@ -404,19 +406,19 @@ If you read the help tip for that option, it says:
 
 In other words, Textpattern is making a comparison between the theme package you want to export from the Themes panel, presumably the package designed as it should be, and any similarly named theme that might be sitting in the <i>themes</i> directory but not so well put together. So it’s asking, if there is such a theme there in the directory, and any asset files in it do not have similarly named files in the panel version (the one you are exporting), do you want those files deleted as part of the exportation action?
 
-This is generally a good idea, and the check box is ticked by default. This ensures that after exportation, there is a direct match between the database version (in the Themes panel) and the version on disk (in the <i>themes</i> directory).
+This is generally a good idea, and the check box is ticked by default to make that clear. This ensures that after exportation, there is a direct match between the database version (in the Themes panel) and the version on disk (in the <i>themes</i> directory).
 
 Click the ‘Go’ button and confirm when asked if you are sure.
 
 Now you are almost famous, but not quite yet. Still one more thing to do if you want your theme added to the new Themes website repository, coming soon. *Zip it up!* Textpattern will only host one file per theme package, and it must be compressed. So transfer the exported theme from the <i>themes</i> directory to an external location and make it a single, compressed <i>.gzip</i> or <i>.zip</i> file.
 
-How you store the theme file anywhere else is up to you. But whatever the location, Themes website or your own, make sure the expected URL has been entered in the Website field of the theme’s metadata. Add that by clicking the name of the theme in the themes table to pull up the **Edit theme** editor.
+How you store the theme file anywhere else is up to you. But whatever the location, whether Themes website or your own, make sure the expected URL has been entered in the Website field of the theme’s metadata. Add that by clicking the name of the theme in the themes table to pull up the **Edit theme** editor.
 
 ## Importing themes
 
 Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database — <i>themes</i> directory to the rescue!
 
-First, use your (S)FTP software of choice to transfer the external theme (presumably downloaded from a shard location) to your <i>themes</i> directory on the server. A theme import control will appear in the Themes panel, above the themes table.
+First, use your (S)FTP software of choice to transfer the external theme (presumably downloaded from a shared location) to your <i>themes</i> directory on the server. A theme import control will appear in the Themes panel, above the themes table.
 
 ![Import theme menu](https://docs.textpattern.com/img/import-theme-menu.png)
 
@@ -436,7 +438,7 @@ The theme is now in your themes table to use as desired, and if the themes in th
 
 If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer (other than you) has released a newly-improved version of a theme you may have imported once. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
 
-When you update a theme from disk, Textpattern creates an *exact* copy in the database from the disk version you are updating from, merging new elements and overwriting existing ones having the same file name.
+When you update a theme from disk, Textpattern creates an *exact* copy in the database from the disk version you are updating from, merging new elements and overwriting existing ones having the same asset name.
 
 As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your <i>themes</i> directory. Then it is on to the Themes panel, where, like [described initially](#duplicate-via-the-with-selected-controls) you do the checkbox-and-select dance, but this time opting for ‘Update from disk’.
 
