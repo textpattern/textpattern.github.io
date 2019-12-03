@@ -410,7 +410,7 @@ Click the ‘Go’ button and confirm when asked if you are sure.
 
 Now you are almost famous, but not quite yet. Still one more thing to do if you want your theme added to the new Themes website repository, coming soon. *Zip it up!* Textpattern will only host one file per theme package, and it must be compressed. So transfer the exported theme from the <i>themes</i> directory to an external location and make it a single, compressed <i>.gzip</i> or <i>.zip</i> file.
 
-How you store the theme file anywhere else is up to you. But whatever the location, Themes website or your own, make sure the expected URL has been entered in the Website field of the theme’s metadata. Add that by clicking the name of the theme in the themes table and using the **Edit theme** form.
+How you store the theme file anywhere else is up to you. But whatever the location, Themes website or your own, make sure the expected URL has been entered in the Website field of the theme’s metadata. Add that by clicking the name of the theme in the themes table to pull up the **Edit theme** editor.
 
 ## Importing themes
 
@@ -422,15 +422,15 @@ First, use your (S)FTP software of choice to transfer the external theme (presum
 
 If you didn’t see the menu before, it is because it works in context with the <i>themes</i> directory, as follows:
 
-1. **One or more disk themes; no database equivalents.** When one or more themes are sitting in the <i>themes</i> directory that are not also existing in the themes table, they will cause the selection menu to appear at top of the themes table with those themes appearing as an options for importation (i.e. to become themes in the database). The menu is not visible if this condition is not true.
-2. **Disk themes equal database themes.** When themes are equally in the database and on disk, the contextual menu is hidden, since there is nothing to potentially import.
-3. **Database theme deleted; back to condition 1**. If/when you delete a theme from the database but not the disk-based version (assuming the previous condition), the theme import menu will appear again because the first condition is true again.
+1. **One or more disk themes; no database equivalents.** When one or more themes are sitting in the <i>themes</i> directory that are not also existing in the themes table, they will cause the selection menu to appear at top of the themes table with those themes appearing as options for importation (i.e. to become themes in the database). The menu is not visible if this condition is false.
+2. **Disk themes equal database themes.** When the same themes are equally in the database and on disk, or only in the database and none on disk, the contextual menu is hidden, since there is nothing to potentially import.
+3. **Database theme deleted; back to condition 1**. If/when you delete a theme from the database but not the disk-based version (assuming there is one), the theme import menu will appear again because the first condition is true again.
 
-You can then use the import menu to select the theme and initially import it into the database, to appear in the themes table.
+You can then use the import menu to select the theme and initially import it into the database.
 
 ![Import theme menu select](https://docs.textpattern.com/img/import-theme-menu-select.png)
 
-The theme is now in your themes table to use as desired, and if the themes in the table match the themes in your directory, the import control will disappear again from the Themes panel.  
+The theme is now in your themes table to use as desired, and if the themes in the table match the themes in your directory, the import control will disappear again from the Themes panel.   *Poof!*
 
 ## Updating themes
 
