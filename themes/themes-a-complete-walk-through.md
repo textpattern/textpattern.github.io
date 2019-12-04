@@ -271,7 +271,7 @@ There is no confirmation dialogue asking if you are sure. You are simply taken b
 
 ![New theme created](https://docs.textpattern.com/img/new-theme-created.png)
 
-You are now a master at creating initial non-live packages. Proceed with learning all the useful contexts between development and live themes.
+You are now a master at creating development theme packages. Proceed with learning all the useful contexts between development and live themes.
 
 ## Developing themes
 
@@ -279,9 +279,7 @@ The administration panels provide features and cues that make it easy to see wha
 
 ### Previewing themes
 
-The ability to preview theme composition and its relationship with website architecture, as well see how it looks on the front-end as you make changes, is rather important. Textpattern provides features to do it all in one place without affecting the *live* conditions.[^careful]
-
-[^careful]: As long as you're careful and don't start deleting plugins or changing preferences, or whatever.
+The ability to preview theme composition and its relationship with website architecture, as well see how it looks on the front-end as you make changes, is rather important. Textpattern provides features to do it all in one place without affecting the *live* conditions (being careful not to disrupt things by changing system preferences and/or plugins along the way).
 
 #### Preview link
 
@@ -289,55 +287,59 @@ The Preview link is a convenient way to get into the context of a single theme, 
 
 ![Dev preview theme link](https://docs.textpattern.com/img/dev-preview-theme-link.png)
 
-Click such a link and you are taken to the Sections panel with the theme in context of the table. The tables shows useful information and links; including the relationship of the theme’s component pages and styles to the sections composing your website’s structure. The first five columns are particularly noteworthy.
+Click such a link and you are taken to the Sections panel with the theme in context of the section’s table. The table shows useful information and links; including the relationship of the theme’s component pages and styles to the sections of your website, reflecting the structure of your website. The first five columns of the table are particularly noteworthy.
 
 ![Dev preview theme sections](https://docs.textpattern.com/img/dev-preview-theme-sections.png)
 
-The first two columns show the names and titles of the sections. The titles are what show up in your front-end navigation labels, but merit no further reflection here. The names, however, are links to the section editor, where you can edit a section’s properties, including what assets are assigned from the *live* themes. If you want to edit the themes assets as appearing in the table, you use the ‘Change theme/page/style’ function via the selection controls under the table, but more on that in a minute. (Yes, the nuances are tricky if you’re not careful.)
+Section names are links to the sections editor, where you can edit a section’s properties. Be aware that the page and style templates you see assigned in the editor are to the *live* theme, not the development theme in context. If you want to edit the development theme’s page and style associations to sections, use the ‘Change theme/page/style’ function via the selection controls under the table, but more on that in a minute. (Yes, the nuances are tricky if you are not careful.) 
 
-The Theme column is showing something useful as well; the *names* of two themes.
+Section titles are what show up in your front-end navigation labels, but merit no further reflection here. 
+
+The Theme column shows two theme *names* for each section. The first, greyed-out name is the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here!
 
 ![Dev preview theme names](https://docs.textpattern.com/img/dev-preview-theme-names.png)
 
-The first, greyed-out name is the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here! The second, non-greyed theme is the ‘development’ theme you are currently in context with. In this example, it is ‘abc-my-new-theme’, overriding Textpattern’s live (default) theme, four-point-eight.
+The second theme name in the Theme column, not greyed out, is the ‘development’ theme you are currently in context with. In the image above, it is ‘abc-my-new-theme’, overriding Textpattern’s live (default) theme, ‘four-point-eight’.
 
-Finally, the Page and Style columns make clear exactly which template aligns with which style. Making such assignments has always been a standard/required Textpattern procedure. But now it is done in context of theme packages; really tying the building blocks together.
+Finally, the Page and Style columns make clear exactly which asset type aligns with which section.
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links.png)
 
-If you ever see an asset name indicated in red with a greyed-out name in front of it. It means the theme version of that asset has been deleted or otherwise not present in the theme. The greyed-out name reflects the live template that is working underneath the development theme’s overriding context.
+Making such assignments has always been a standard procedure in Textpattern. But now it is done in context of theme packages; really tying the building blocks together.
+
+If you ever see an asset name indicated in red, it is a warning telling you that the theme version of that asset has been deleted, or otherwise not present in the theme.
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links-red.png)
 
-The red link (it is a link) is a warning: If you deployed the theme at this point to live status (e.g. using the ‘Developer preview’ function from the selection controls, and opting for ‘Deploy to live’)...
+The greyed-out name before the red link (it is a link) reflects the live template that is working underneath the development theme’s overriding context.
 
-![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-deploy-live.png)
+If you deployed a theme like that, with a red asset indication,  to live status, your front-end presentation would break because you do not have the missing asset in place as assigned. There are options for dealing with a situation like this, and you might discover what works best for you.
 
-Your front-end presentation would break because you do not have the missing asset in place as assigned.
+The most direct and intuitive fix is to click the red link, which puts you in direct context of a new template for the missing asset, and save the template with the expected name, even if you leave the template empty at first. You can always fill in the markup later. Return to the theme preview again and the red warning indication is gone. Don’t forget to fill in the template, though, because an empty one is little better than none at all.
 
-There are options for dealing with a situation like this. First, you can click the red link for the asset, taking you directly to the asset panel with a new blank template in context ready to be created upon Save. Thereafter return to the theme preview again and you will see the red indication is gone.
+Or you could assign a different asset template to the section. It has to already exist, of course, so if not, browse to the appropriate panel (Pages or Styles) and create the template in the first place. Then return to the theme’s preview table and:
 
-Or you could assign a different asset template to the section. It has to already exist, of course, so if not, browse to the appropriate panel (Pages or Styles) and create the template in the first place. Then return to the theme’s preview, select the ‘Change theme/page/style’ function with the ‘Development’ option checked, and re-assign the new template, starting with the theme assignment first.
+1. Check the box for the appropriate section
+2. Select the ‘Change theme/page/style’ function from the selection controls under the table.
+3. Ensure the the ‘Development’ option is checked.
+4. Select the correct theme (the context you are in).
+5. Select the associated page and style. These menus will only reflect assets in the selected theme package.
 
 ![Dev preview change assets](https://docs.textpattern.com/img/dev-preview-change-assets.png) 
 
-Or, if you really did not want that missing asset, nor any alternative from the current theme, you could use the live theme’s overridden asset there for both themes. Do this via the other option, ‘Reset to live’, for the ‘Developer preview’ function mentioned earlier to bring the live template to surface, into the development preview context. 
-
-![Dev preview reset to live](https://docs.textpattern.com/img/dev-preview-reset-to-live.png)
-
-The last option would be fine in your own site, and you could always change that again by way of the other options already presented. But you would not want to share a theme like this; it would not be what the user of such a theme would expect (i.e. a complete theme package). 
-
-But the real prize of previewing a theme in development is the View link.
+The real prize of previewing a theme in development, however, is the View link.
 
 #### View link (front-end perspective)
 
-In preview context of a theme, in the Sections panel, you see View links at right of section names. These are likely the real  reason you will often jump into preview mode on a theme.
+‘View’ links are found under the Name column.
 
 ![Dev preview view link](https://docs.textpattern.com/img/dev-preview-view-link.png)
 
-The View links allow you to see the front-end rendering of your presentation, the fireworks of your labours, using the development theme as it is so far developed.
+Clicking one allows you to see the front-end rendering of your theme’s presentation for that given section. It’s the moment of fireworks. You’ll probably use it a lot if you develop themes in the back-end of Textpattern.
 
-And that’s pretty much it, but useful. You can use the links under the Page and Style columns, mentioned previously, to go and work on a template directly, then return to this context, click the View links on a section, and see how the presentation is shaping up.
+And that’s pretty much it, but useful.
+
+You can use the links under the Page and Style columns, mentioned previously, to directly access and work on the assigned template at the other end, then return to this context, click the View link on a section, and see how the presentation is shaping up.
 
 ### Context of assets
 
