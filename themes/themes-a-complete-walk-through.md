@@ -281,13 +281,13 @@ To begin, a theme is either in development (not live) or live (visible to the wo
 
 ### Previewing (development) themes
 
-Being able to preview themes as you develop them is rather important. Textpattern provides a feature to do exactly that; a way to preview what theme development changes look like without affecting the front-end presentation.[^careful] Potential collaborators on your website having the necessary [roles and privileges](https://docs.textpattern.com/administration/user-roles-and-privileges) can see the links too, but not every role.
+Being able to preview theme construction and view what it looks like rendered on the front-end as you develop them is rather important. Textpattern provides features to do exactly that without affecting the *live* conditions.[^careful]
 
 [^careful]: As long as you're careful and don't start deleting plugins or changing preferences, or whatever.
 
-#### Preview link (environment switch)
+#### Preview link
 
-Textpattern essentially has two ‘environments’ now: live and development. The Preview links next to a theme’s name on the Themes panel are the gateway from a global live context to a development context focused on a single theme.  
+Textpattern essentially has two ‘environments’ now: live and development. The Preview link is a way to get into the development context of a single theme. The link is found next to a theme’s name on the Themes panel.  
 
 ![Dev preview theme link](https://docs.textpattern.com/img/dev-preview-theme-link.png)
 
@@ -335,17 +335,17 @@ Or, if you really didn’t want that missing asset, nor any alternative from the
 
 This would be fine in your own site; it would mean you are choosing to use the current live theme’s assets for that section. And you could always change that again by way of the other options already presented. But you would not want to share a theme like this; it would not be what the user of such a theme would expect — a complete theme package. 
 
-But the real prize of developmental theme preview is the View link.
+But the real prize of previewing a theme in development is the View link.
 
-#### View link (development presentation)
+#### View link (front-end perspective)
 
-In development context of a theme, in the Sections panel, you see View links at right of section names. These are the end goal of being in development context of a theme.
+In preview context of a theme, in the Sections panel, you see View links at right of section names. These are likely the real  reason you will often jump into preview mode on a theme.
 
 ![Dev preview view link](https://docs.textpattern.com/img/dev-preview-view-link.png)
 
-They allow you to see — offline but in full HTML glory — what that section looks like using the development theme as it is so far developed.
+The View links allow you to see the front-end rendering of your presentation, the fireworks of your labours, using the development theme as it is so far developed.
 
-And that’s pretty much it, but useful. You can use the links under the Page and Style columns, mentioned previously, to go and work on a template directly, then return to this developmental context of the theme, via Preview in the Themes panel, and see how things are going via the View links.
+And that’s pretty much it, but useful. You can use the links under the Page and Style columns, mentioned previously, to go and work on a template directly, then return to this context, click the View links on a section, and see how the presentation is shaping up.
 
 ### Context of assets
 
