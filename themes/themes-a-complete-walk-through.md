@@ -281,7 +281,7 @@ To begin, a theme is either in development (not live) or live (visible to the wo
 
 ### Previewing (development) themes
 
-Being able to preview theme construction and view what it looks like rendered on the front-end as you develop them is rather important. Textpattern provides features to do exactly that without affecting the *live* conditions.[^careful]
+The ability to preview theme composition and its relationship with website architecture, as well see how it looks on the front-end as you make changes, is rather important. Textpattern provides features to do it all in one place without affecting the *live* conditions.[^careful]
 
 [^careful]: As long as you're careful and don't start deleting plugins or changing preferences, or whatever.
 
@@ -291,11 +291,9 @@ The Preview link is a convenient way to get into the context of a single theme, 
 
 ![Dev preview theme link](https://docs.textpattern.com/img/dev-preview-theme-link.png)
 
-Click such a link and you are taken to the Sections panel with the development theme in context showing some useful information and links. 
+Click such a link and you are taken to the Sections panel with the development theme in context showing some useful information and links. The table information shows the relationship of the theme’s component assets (pages and styles) to the sections of your websit’s structure. In particular, notice the first five columns of the table and their contents.
 
 ![Dev preview theme sections](https://docs.textpattern.com/img/dev-preview-theme-sections.png)
-
-The view is contextual to the development theme and its component assets (pages and styles) in relation to the sections the theme package is associated with. In particular, notice the first five columns of the table and their contents.
 
 The first two columns reflect the names and titles of sections. The titles are what show up in your front-end navigation labels, but have no more concern here. The names, however, are links to the properties of a given section, where you can edit them.
 
