@@ -307,13 +307,35 @@ The first, greyed-out name is the theme currently *active* on that section (i.e.
 
 In the image above, for example, we see the development theme, abc-my-new-theme, overriding the default Textpattern theme, four-point-eight. That is because we clicked the Preview link of that development theme when in the Themes panel.
 
-The theme’s relevant assigned assets (pages and styles) are also clear, and accessible via links under the respective columns of the development environment.
+Page and style assignments to sections have always been standard, required Textpattern procedure, but now they are done in context of theme packages; really tying the building blocks together. Here you can see what they are and access the templates via the development environment.
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links.png)
 
-Page and style assignments to sections have always been standard, required Textpattern procedure, but now they are done in context of theme packages, which really ties the building blocks together.
+If you ever see an asset name indicated in red with a greyed-out name in front of it. It means the theme version of that asset has been deleted or otherwise not present in the theme.
 
-But the real prize of developmental theme preview are the View links.
+![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links-red.png)
+
+The red is a warning: If you deployed the theme at this point to live status (e.g. using the **With selected** controls, selecting ‘Developer preview’, and choosing the ‘Deploy to live’ option)…
+
+![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-deploy-live.png)
+
+Your front-end presentation would break because you do not have the missing asset in place as assigned.
+
+The greyed-out name reflects the live template that is working underneath the development context override.
+
+There are options for dealing with a situation like this. First, you browse back to the Pages panel (or Styles panel, if that were the case), where you will already be in context of the current theme (because Textpattern keeps you in context as you browse throughout the back-end panels until you change out of that context), and re-create the missing template. If  you return to the preview context again via the Themes panel, you’ll see the red indication is gone.
+
+Or you could assign a different asset template to the section. It has to already exist, of course, so create the template, if necessary, in the appropriate asset panel as in the first option’s case, then return to the preview context as described, and select ‘Change theme/page/style’ function with the ‘Development’ option checked, and re-assign the new template, starting with the theme assignment first.
+
+![Dev preview change assets](https://docs.textpattern.com/img/dev-preview-change-assets.png) 
+
+Or, if you really didn’t want that missing asset, nor any alternative from the current theme, you could use the other option on the ‘Developer preview’ selection — ‘Reset to live’ — to bring the live template to surface, into the development preview context.
+
+![Dev preview reset to live](https://docs.textpattern.com/img/dev-preview-reset-to-live.png)
+
+This would be fine in your own site; it would mean you are choosing to use the current live theme’s assets for that section. And you could always change that again by way of the other options already presented. But you would not want to share a theme like this; it would not be what the user of such a theme would expect — a complete theme package. 
+
+But the real prize of developmental theme preview is the View link.
 
 #### View link (development presentation)
 
