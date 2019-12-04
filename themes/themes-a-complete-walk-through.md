@@ -323,9 +323,11 @@ Or you could assign a different asset template to the section. It has to already
 2. Select the ‘Change theme/page/style’ function from the selection controls under the table.
 3. Ensure the the ‘Development’ option is checked.
 4. Select the correct theme (the context you are in).
-5. Select the associated page and style. These menus will only reflect assets in the selected theme package.
+5. Select the associated page and style; these will be in context of the theme you chose.
 
-![Dev preview change assets](https://docs.textpattern.com/img/dev-preview-change-assets.png) 
+![Dev preview change assets](https://docs.textpattern.com/img/dev-preview-change-assets.png)
+
+Click the ‘Go’ button when done and confirm when asked if you are sure.
 
 The real prize of previewing a theme in development, however, is the View link.
 
