@@ -289,19 +289,19 @@ The Preview link is a convenient way to get into the context of a single theme, 
 
 ![Dev preview theme link](https://docs.textpattern.com/img/dev-preview-theme-link.png)
 
-Click such a link and you are taken to the Sections panel with the development theme in context showing some useful information and links. The table shows the relationship of the theme’s component pages and styles to the sections of your website’s structure. In particular, notice the first five columns of the table and their contents.
+Click such a link and you are taken to the Sections panel with the theme in context of the table. The tables shows useful information and links; including the relationship of the theme’s component pages and styles to the sections composing your website’s structure. The first five columns are particularly noteworthy.
 
 ![Dev preview theme sections](https://docs.textpattern.com/img/dev-preview-theme-sections.png)
 
-The first two columns reflect the names and titles of sections. The titles are what show up in your front-end navigation labels, but have no more concern here. The names, however, are links to the properties of a given section, where you can edit them.
+The first two columns show the names and titles of the sections. The titles are what show up in your front-end navigation labels, but merit no further reflection here. The names, however, are links to the section editor, where you can edit a section’s properties, including what assets are assigned from the *live* themes. If you want to edit the themes assets as appearing in the table, you use the ‘Change theme/page/style’ function via the selection controls under the table, but more on that in a minute. (Yes, the nuances are tricky if you’re not careful.)
 
 The Theme column is showing something useful as well; the *names* of two themes.
 
 ![Dev preview theme names](https://docs.textpattern.com/img/dev-preview-theme-names.png)
 
-The first, greyed-out name is the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here! The second, non-greyed theme is the development theme you are currently in context with; in this example, ‘abc-my-new-theme’, overriding the default Textpattern theme, four-point-eight.
+The first, greyed-out name is the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here! The second, non-greyed theme is the development theme you are currently in context with. In this example, it is ‘abc-my-new-theme’, overriding the default Textpattern theme, four-point-eight.
 
-Page and style assignments to sections have always been standard, required Textpattern procedure, but now they are done in context of theme packages; really tying the building blocks together. Here you can see what they are and access the templates via the development environment.
+Making page and style assignments to sections has always been a standard/required Textpattern procedure. But now it is done in context of theme packages; really tying the building blocks together. Here you can see what they are and access the templates via the development environment.
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links.png)
 
@@ -309,7 +309,7 @@ If you ever see an asset name indicated in red with a greyed-out name in front o
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links-red.png)
 
-The red is a warning: If you deployed the theme at this point to live status (e.g. using the ‘Developer preview’ function from the selection controls, and option for ‘Deploy to live’)...
+The red link (it is a link) is a warning: If you deployed the theme at this point to live status (e.g. using the ‘Developer preview’ function from the selection controls, and opting for ‘Deploy to live’)...
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-deploy-live.png)
 
