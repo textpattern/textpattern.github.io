@@ -287,7 +287,7 @@ Being able to preview theme construction and view what it looks like rendered on
 
 #### Preview link
 
-Textpattern essentially has two ‘environments’ now: live and development. The Preview link is a way to get into the development context of a single theme. The link is found next to a theme’s name on the Themes panel.  
+The Preview link is a convenient way to get into the context of a single theme, whether live or in development. Here the focus is on the latter. The link is found next to a theme’s name on the Themes panel.  
 
 ![Dev preview theme link](https://docs.textpattern.com/img/dev-preview-theme-link.png)
 
