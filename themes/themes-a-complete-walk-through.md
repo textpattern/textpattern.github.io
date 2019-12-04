@@ -168,7 +168,7 @@ Textpattern has always allowed you to create a different *presentation* for your
 
 And that’s it for the big picture. Now we descend the ladder and get closer to the action! Everything from here on is framed in context of a fresh (out-of-the-box) install of the software, but the principles are the same whether your installation is brand new or an old workhorse that’s up to date. As long as you’re using the [latest release](https://textpattern.com/start) of the software, at least, it will make sense. Any exceptions to this rule are made clear in context of instructions.
 
-## New themes
+## Creating themes
 
 Multiple options are available for creating a new theme via the [Themes](https://docs.textpattern.com/administration/themes-panel) panel. You can:
 
@@ -180,9 +180,9 @@ All the approaches accomplish the same thing: establish a new theme to start wor
 
 Let’s look at each one in default system context.
 
-### Create via the ‘New theme’ editor
+### Create from scratch
 
-Creating a theme via the **New theme** editor is the most called-out way to get started by evidence of the prominent button bearing the same label right at top of the Themes panel.
+That is to say, via the **New theme** editor; it is the most called-out way to get started by evidence of the prominent button bearing the same label right at top of the Themes panel.
 
 ![Click New theme button](https://docs.textpattern.com/img/click-new-theme-button.png)
 
@@ -219,7 +219,7 @@ When the **New theme** metadata are saved, the resulting theme appears in the th
 
 The two other approaches that get to this point, both by way of theme duplication, are described next. Or jump to the [Active versus inactive themes](#active-versus-inactive-themes) section to continue on the current journey.   
 
-### Duplicating themes
+### Create from duplication
 
 Using an existing theme package as a guide for your efforts is a good way to get started with making themes. There’s no better package to use in this case than the default theme that comes with Textpattern, already shown and functioning in the Themes panel upon installing the software.
 
@@ -229,9 +229,9 @@ While these instructions describe using the default theme (the only theme availa
 
 The following two approaches to duplication are the same regardless of what theme you duplicate.
 
-#### Duplicate via the ‘With selected’ controls
+#### Duplicate via selection controls
 
-One way to duplicate the default theme is via the **With selected** controls that work in combination with the check boxes in the themes table.
+One way to duplicate the default theme is via the selection controls that work in combination with the check boxes in front of each theme record.
 
 Proceed by checking the box next to the default theme in the themes table, then selecting the ‘Duplicate’ option from the **With 1 selected…** menu just below the table. 
 
@@ -239,9 +239,9 @@ Proceed by checking the box next to the default theme in the themes table, then 
 
 Finally, clicking ‘OK’ when asked if you are sure.
 
-The duplicated theme is added to the themes table and the name appears with ‘-copy’ on it. You can now uncheck the default theme’s box in the table.
+The duplicated theme is added to the themes table and the name appears with ‘-copy’ on it. You can now uncheck the default theme’s box in the table, then proceed with changing the name, title, and other metadata values on the duplicated theme.
 
-Now is also a good time to change the name, title, and other metadata values on the duplicated theme. Do this by clicking the theme’s name in the Name column of the themes table to open the **Edit theme** editor (again, same as the **New theme** editor but in different context).
+Do this by clicking the theme’s name in the Name column of the themes table to open the **Edit theme** editor (again, same as the **New theme** editor but in different context).
 
 ![Click default theme name](https://docs.textpattern.com/img/click-default-theme-name.png)
 
@@ -253,7 +253,7 @@ Change the metadata in the six fields as thoroughly as possible. See [Create via
 
 The duplicated theme will be added to the themes table in the main panel view. Once the default theme is duplicated and the metadata changed, the duplicated theme is, for all practical purposes, a *new* theme, and you should call it by its lovely new name.
 
-#### Duplicate via the ‘Edit theme’ editor
+#### Duplicate via theme editor
 
 The last way to create a theme is the most direct (fewer clicks in the interface) yet least obvious way to create by duplication.
 
@@ -273,13 +273,11 @@ There is no confirmation dialogue asking if you are sure. You are simply taken b
 
 You are now a master at creating initial non-live packages. Proceed with learning all the useful contexts between development and live themes.
 
-## Development versus live contexts
+## Developing themes
 
-The administration panels provide features and cues that make it easy to see what context a theme is in, or what context you are in when browsing about the relevant panels. This includes: whether a theme is active or not, what assets are associated to which themes, what themes are assigned to sections, and contextual navigation between it all.
+The administration panels provide features and cues that make it easy to see what context a theme is in, or what context you are in when browsing about the relevant panels. This includes: whether a theme is active or not, what assets are associated to which themes, what themes are assigned to sections, and contextual navigation between it all, including direct access to the templates needing edited.
 
-To begin, a theme is either in development (not live) or live (visible to the world on your website’s front-end). Since the normal order of things is to develop themes before making them live, start there.
-
-### Previewing (development) themes
+### Previewing themes
 
 The ability to preview theme composition and its relationship with website architecture, as well see how it looks on the front-end as you make changes, is rather important. Textpattern provides features to do it all in one place without affecting the *live* conditions.[^careful]
 
@@ -291,7 +289,7 @@ The Preview link is a convenient way to get into the context of a single theme, 
 
 ![Dev preview theme link](https://docs.textpattern.com/img/dev-preview-theme-link.png)
 
-Click such a link and you are taken to the Sections panel with the development theme in context showing some useful information and links. The table information shows the relationship of the theme’s component assets (pages and styles) to the sections of your websit’s structure. In particular, notice the first five columns of the table and their contents.
+Click such a link and you are taken to the Sections panel with the development theme in context showing some useful information and links. The table shows the relationship of the theme’s component pages and styles to the sections of your website’s structure. In particular, notice the first five columns of the table and their contents.
 
 ![Dev preview theme sections](https://docs.textpattern.com/img/dev-preview-theme-sections.png)
 
@@ -301,33 +299,27 @@ The Theme column is showing something useful as well; the *names* of two themes.
 
 ![Dev preview theme names](https://docs.textpattern.com/img/dev-preview-theme-names.png)
 
-The first, greyed-out name is the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here! The second, non-greyed theme is the development theme you are currently in context with.
-
-In the image above, for example, we see the development theme, abc-my-new-theme, overriding the default Textpattern theme, four-point-eight. That is because we clicked the Preview link of that development theme when in the Themes panel.
+The first, greyed-out name is the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here! The second, non-greyed theme is the development theme you are currently in context with; in this example, ‘abc-my-new-theme’, overriding the default Textpattern theme, four-point-eight.
 
 Page and style assignments to sections have always been standard, required Textpattern procedure, but now they are done in context of theme packages; really tying the building blocks together. Here you can see what they are and access the templates via the development environment.
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links.png)
 
-If you ever see an asset name indicated in red with a greyed-out name in front of it. It means the theme version of that asset has been deleted or otherwise not present in the theme.
+If you ever see an asset name indicated in red with a greyed-out name in front of it. It means the theme version of that asset has been deleted or otherwise not present in the theme. The greyed-out name reflects the live template that is working underneath the development theme’s overriding context.
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links-red.png)
 
-The red is a warning: If you deployed the theme at this point to live status (e.g. using the **With selected** controls, selecting ‘Developer preview’, and choosing the ‘Deploy to live’ option)…
+The red is a warning: If you deployed the theme at this point to live status (e.g. using the ‘Developer preview’ function from the **With selected** menu), your front-end presentation would break because you do not have the missing asset in place as assigned.
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-deploy-live.png)
 
-Your front-end presentation would break because you do not have the missing asset in place as assigned.
+There are options for dealing with a situation like this. First, you can click the red link for the asset, taking you directly to the asset panel with a new blank template in context ready to be created upon Save. Return to the theme preview again and you will see the red indication is gone.
 
-The greyed-out name reflects the live template that is working underneath the development context override.
-
-There are options for dealing with a situation like this. First, you browse back to the Pages panel (or Styles panel, if that were the case), where you will already be in context of the current theme (because Textpattern keeps you in context as you browse throughout the back-end panels until you change out of that context), and re-create the missing template. If  you return to the preview context again via the Themes panel, you’ll see the red indication is gone.
-
-Or you could assign a different asset template to the section. It has to already exist, of course, so create the template, if necessary, in the appropriate asset panel as in the first option’s case, then return to the preview context as described, and select ‘Change theme/page/style’ function with the ‘Development’ option checked, and re-assign the new template, starting with the theme assignment first.
+Or you could assign a different asset template to the section. It has to already exist, of course, so browse to the appropriate panel (Pages or Styles), if necessary, and create the template or style in the first place. Then return to the theme’s preview, select the ‘Change theme/page/style’ function with the ‘Development’ option checked, and re-assign the new template, starting with the theme assignment first.
 
 ![Dev preview change assets](https://docs.textpattern.com/img/dev-preview-change-assets.png) 
 
-Or, if you really didn’t want that missing asset, nor any alternative from the current theme, you could use the other option on the ‘Developer preview’ selection — ‘Reset to live’ — to bring the live template to surface, into the development preview context.
+Or, if you really did not want that missing asset, nor any alternative from the current theme, you could use the other option, ‘Reset to live’, via the ‘Developer preview’ function mentioned earlier to bring the live template to surface, into the development preview context.
 
 ![Dev preview reset to live](https://docs.textpattern.com/img/dev-preview-reset-to-live.png)
 
@@ -379,7 +371,7 @@ First, look under the Sections column of the themes table. Any theme with ‘0�
 
 ![Sections column](https://docs.textpattern.com/img/sections-column.png)
 
-When a theme is not active, you can work on the associated assets, and [preview the progress](#previewing-development-themes), without concern for it impacting website visitors or any other problems.
+When a theme is not active, you can work on the associated assets, and [preview the progress](#previewing-themes), without concern for it impacting website visitors or any other problems.
 
 Another way to tell, in the upcoming release of the software, is by way of a new feature: the green ‘Active’ and blue ‘Activate’ links under the Name column of the themes table. If a theme is noted as ‘Active’, it is live.
 
@@ -409,7 +401,7 @@ In this case you might like keeping the same general structure of your website b
 
 If you want a 1:1 assignment of a different theme to every website section, you will have to assign each theme and its associated page and style assets to the section individually. There are two approaches to this process — a one-section-at-a-time process if you want all sections looking different — but one approach is a little more direct than the other, thus the one presented here. 
 
-Use the **With selected** controls again, but this time in the [Sections](https://docs.textpattern.com/administration/sections-panel) panel, where assigning assets to templates is done, and where the select options are different. So, hop into the Sections panel, check the box by the name of a section to assign a theme to, and select ‘Change theme/page/style’ from the menu underneath.  
+Use the selection controls again, but this time in the [Sections](https://docs.textpattern.com/administration/sections-panel) panel, where assigning assets to templates is done, and where the select options are different. Hop into the Sections panel, check the box by the name of a section to assign a theme to, and select ‘Change theme/page/style’ from the menu underneath.  
 
 ![Select ‘Change theme…’](https://docs.textpattern.com/img/select-change-theme.png)
 
