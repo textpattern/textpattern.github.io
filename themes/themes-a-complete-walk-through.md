@@ -321,11 +321,11 @@ Or you could assign a different asset template to the section. It has to already
 
 ![Dev preview change assets](https://docs.textpattern.com/img/dev-preview-change-assets.png) 
 
-Or, if you really did not want that missing asset, nor any alternative from the current theme, you could use the other option, ‘Reset to live’, via the ‘Developer preview’ function mentioned earlier to bring the live template to surface, into the development preview context.
+Or, if you really did not want that missing asset, nor any alternative from the current theme, you could use the live theme’s overridden asset there for both themes. Do this via the other option, ‘Reset to live’, for the ‘Developer preview’ function mentioned earlier to bring the live template to surface, into the development preview context. 
 
 ![Dev preview reset to live](https://docs.textpattern.com/img/dev-preview-reset-to-live.png)
 
-This would be fine in your own site; it would mean you are choosing to use the current live theme’s assets for that section. And you could always change that again by way of the other options already presented. But you would not want to share a theme like this; it would not be what the user of such a theme would expect — a complete theme package. 
+The last option would be fine in your own site, and you could always change that again by way of the other options already presented. But you would not want to share a theme like this; it would not be what the user of such a theme would expect (i.e. a complete theme package). 
 
 But the real prize of previewing a theme in development is the View link.
 
