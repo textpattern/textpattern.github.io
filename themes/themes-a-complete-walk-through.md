@@ -309,13 +309,15 @@ If you ever see an asset name indicated in red with a greyed-out name in front o
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links-red.png)
 
-The red is a warning: If you deployed the theme at this point to live status (e.g. using the ‘Developer preview’ function from the **With selected** menu), your front-end presentation would break because you do not have the missing asset in place as assigned.
+The red is a warning: If you deployed the theme at this point to live status (e.g. using the ‘Developer preview’ function from the selection controls, and option for ‘Deploy to live’)...
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-deploy-live.png)
 
-There are options for dealing with a situation like this. First, you can click the red link for the asset, taking you directly to the asset panel with a new blank template in context ready to be created upon Save. Return to the theme preview again and you will see the red indication is gone.
+Your front-end presentation would break because you do not have the missing asset in place as assigned.
 
-Or you could assign a different asset template to the section. It has to already exist, of course, so browse to the appropriate panel (Pages or Styles), if necessary, and create the template or style in the first place. Then return to the theme’s preview, select the ‘Change theme/page/style’ function with the ‘Development’ option checked, and re-assign the new template, starting with the theme assignment first.
+There are options for dealing with a situation like this. First, you can click the red link for the asset, taking you directly to the asset panel with a new blank template in context ready to be created upon Save. Thereafter return to the theme preview again and you will see the red indication is gone.
+
+Or you could assign a different asset template to the section. It has to already exist, of course, so if not, browse to the appropriate panel (Pages or Styles) and create the template in the first place. Then return to the theme’s preview, select the ‘Change theme/page/style’ function with the ‘Development’ option checked, and re-assign the new template, starting with the theme assignment first.
 
 ![Dev preview change assets](https://docs.textpattern.com/img/dev-preview-change-assets.png) 
 
