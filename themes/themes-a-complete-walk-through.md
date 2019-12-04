@@ -281,24 +281,49 @@ To begin, a theme is either in development (not live) or live (visible to the wo
 
 ### Previewing (development) themes
 
-Being able to preview themes as you develop them is rather important. Textpattern provides a feature to do exactly that. It’s a way to preview what change look like without affecting the front-end presentation.[^careful] Potential collaborators on your website having the necessary [roles and privileges](https://docs.textpattern.com/administration/user-roles-and-privileges) will be able to see the links too, but not every role can.
+Being able to preview themes as you develop them is rather important. Textpattern provides a feature to do exactly that; a way to preview what theme development changes look like without affecting the front-end presentation.[^careful] Potential collaborators on your website having the necessary [roles and privileges](https://docs.textpattern.com/administration/user-roles-and-privileges) can see the links too, but not every role.
 
-So bring your attention to the ‘Preview’ link next to the name of any theme in the themes table; preferably not one that is ’Active’ (those are covered soon enough), like one [created through duplication](#duplicate-via-the-edit-theme-editor). 
-
-![Preview theme link](https://docs.textpattern.com/img/preview-theme-link.png)
-
-Click the link and you are taken to the Sections panel with the development theme in context showing some useful information and more useful links.
-
-![Preview theme sections](https://docs.textpattern.com/img/preview-theme-sections.png)
-
-In particular, notice the following two things and use the information to your advantage and understanding:
-
-1. The sections the theme is associated with, and what theme assets (pages and styles) are being used in each case, which you can jump to individually by their available links.
-2. The two links under the Name column of the table; the first being a link to the section’s properties, and the other, ‘View’, being a link to preview what the section looks like (offline but in full HTML glory) using the current theme assignment.
-
-And that’s pretty much it, but useful. As you develop your pages and styles, you can jump into context with the theme’s sections and look at how each one appears via the ‘View’ links. The page and style assignments to sections have always been standard, required Textpattern procedure, but now they are done in context of themes. 
- 
 [^careful]: As long as you're careful and don't start deleting plugins or changing preferences, or whatever.
+
+#### Preview link (environment switch)
+
+Textpattern essentially has two ‘environments’ now: live and development. The Preview links next to a theme’s name on the Themes panel are the gateway from a global live context to a development context focused on a single theme.  
+
+![Dev preview theme link](https://docs.textpattern.com/img/dev-preview-theme-link.png)
+
+Click such a link and you are taken to the Sections panel with the development theme in context showing some useful information and links. 
+
+![Dev preview theme sections](https://docs.textpattern.com/img/dev-preview-theme-sections.png)
+
+The view is contextual to the development theme and its component assets (pages and styles) in relation to the sections the theme package is associated with. In particular, notice the first five columns of the table and their contents.
+
+The first two columns reflect the names and titles of sections. The titles are what show up in your front-end navigation labels, but have no more concern here. The names, however, are links to the properties of a given section, where you can edit them.
+
+The Theme column is showing something useful as well; the *names* of two themes.
+
+![Dev preview theme names](https://docs.textpattern.com/img/dev-preview-theme-names.png)
+
+The first, greyed-out name is the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here! The second, non-greyed theme is the development theme you are currently in context with.
+
+In the image above, for example, we see the development theme, abc-my-new-theme, overriding the default Textpattern theme, four-point-eight. That is because we clicked the Preview link of that development theme when in the Themes panel.
+
+The theme’s relevant assigned assets (pages and styles) are also clear, and accessible via links under the respective columns of the development environment.
+
+![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links.png)
+
+Page and style assignments to sections have always been standard, required Textpattern procedure, but now they are done in context of theme packages, which really ties the building blocks together.
+
+But the real prize of developmental theme preview are the View links.
+
+#### View link (development presentation)
+
+In development context of a theme, in the Sections panel, you see View links at right of section names. These are the end goal of being in development context of a theme.
+
+![Dev preview view link](https://docs.textpattern.com/img/dev-preview-view-link.png)
+
+They allow you to see — offline but in full HTML glory — what that section looks like using the development theme as it is so far developed.
+
+And that’s pretty much it, but useful. You can use the links under the Page and Style columns, mentioned previously, to go and work on a template directly, then return to this developmental context of the theme, via Preview in the Themes panel, and see how things are going via the View links.
 
 ### Context of assets
 
@@ -374,7 +399,9 @@ The selection will reveal an associated and uncharacteristically rich set of con
 
 ![Select ‘Change theme…’ option](https://docs.textpattern.com/img/select-change-theme-option.png)
 
-Notice not one, but *two* checkboxes: ‘Development’ and ‘Live’. The ‘Development’ option, checked by default, works in relation to the [sections previewing](#sections-preview) functionality described earlier.[^sect] Assigning themes to sections allows logged-in collaborators (if any, and who have the necessary [roles and privileges](https://docs.textpattern.com/administration/user-roles-and-privileges)) to *preview* the changes. The ‘Live’ option, on the other hand, does what it implies; makes the themes-to-sections assignment immediately visible on the front-end of your website. You _can_, select both options, if not often needed. One example for doing so might be to synchronize development and live conditions in one easy step; as a starting point, say, for diverged development later. Go ahead, try it. You only *live* once!
+Notice not one, but *two* checkboxes: ‘Development’ and ‘Live’. The ‘Development’ option, checked by default, works in relation to the [development previewing](#previewing-development-themes) functionality described earlier.[^sect] Assigning themes to sections allows *previewing* the changes. The ‘Live’ option, on the other hand, does what it implies; makes the themes-to-sections assignment immediately visible on the front-end of your website.
+
+You _can_, select both options, if not often needed. One example for doing so might be to synchronize development and live conditions in one easy step; as a starting point, say, for diverged development later. Go ahead, try it. You only *live* once!
 
 After the checkboxes come three select menus for Theme, Page, and Style. The Theme menu will show the current theme assignment by default. When you change that menu first, the Page and Style menu options adjust in relation. This ensures you only choose from page and style assets in the theme package; no mistaking it. Proceed with making the page and style selections accordingly.
 
