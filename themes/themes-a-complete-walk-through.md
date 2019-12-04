@@ -299,9 +299,9 @@ The Theme column is showing something useful as well; the *names* of two themes.
 
 ![Dev preview theme names](https://docs.textpattern.com/img/dev-preview-theme-names.png)
 
-The first, greyed-out name is the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here! The second, non-greyed theme is the development theme you are currently in context with. In this example, it is ‘abc-my-new-theme’, overriding the default Textpattern theme, four-point-eight.
+The first, greyed-out name is the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here! The second, non-greyed theme is the ‘development’ theme you are currently in context with. In this example, it is ‘abc-my-new-theme’, overriding Textpattern’s live (default) theme, four-point-eight.
 
-Making page and style assignments to sections has always been a standard/required Textpattern procedure. But now it is done in context of theme packages; really tying the building blocks together. Here you can see what they are and access the templates via the development environment.
+Finally, the Page and Style columns make clear exactly which template aligns with which style. Making such assignments has always been a standard/required Textpattern procedure. But now it is done in context of theme packages; really tying the building blocks together.
 
 ![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links.png)
 
