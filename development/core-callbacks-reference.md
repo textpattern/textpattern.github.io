@@ -247,45 +247,7 @@ These callbacks are raised when input elements or constructs are rendered. They 
 
 #### Themes panel
 
-`txp.{event} > import`
-* **When it occurs:** Before (`pre=1`) and after (`pre=0`) one or more theme assets of the given `$event` type have been imported from disk to database.
-* **What it allows:** To trigger any additional functionality when theme assets are updated in the Textpattern database.
-* **Additional parameter:** An array comprising the theme name, the list of affected assets, and a boolean indicating if the assets are synced with disk. The post-event callback also contains a list of assets that were affected, so it may be compared with the set attempted, to see if any failed.
-
-`txp.{event} > export`
-* **When it occurs:** Before (`pre=1`) and after (`pre=0`) one or more theme assets of the given `$event` type are pushed from database to disk.
-* **What it allows:** To trigger any additional functionality when theme assets are updated in the filesystem.
-* **Additional parameter:** An array comprising the theme name, the list of affected assets, and a boolean indicating if the assets are synced with the database. The post-event callback also contains a list of assets that were affected, so it may be compared with the set attempted, to see if any failed.
-
-`txp.{event} > create` (event = usually 'skin')
-* **When it occurs:** Before (`pre=1`) and after (`pre=0`) a theme is created.
-* **What it allows:** To trigger any additional functionality when a new theme is established in the database.
-* **Additional parameter:** An array comprising the theme properties (name, title, version, description, author, author website URL) and the theme name being operated upon. The post-event callback also contains the name of the theme if the operation succeeded.
-
-`txp.{event} > update` (event = usually 'skin')
-* **When it occurs:** Before (`pre=1`) and after (`pre=0`) a theme is updated from disk.
-* **What it allows:** To trigger any additional functionality when a theme is updated in the database.
-* **Additional parameter:** An array comprising the theme properties (name, title, version, description, author, author website URL) and the theme name being operated upon. The post-event callback also contains the name of the theme if the operation succeeded.
-
-`txp.{event} > duplicate` (event = usually 'skin')
-* **When it occurs:** Before (`pre=1`) and after (`pre=0`) a theme is duplicated.
-* **What it allows:** To trigger any additional functionality when a theme is cloned.
-* **Additional parameter:** An array comprising the list of theme names being cloned. The post-event callback also contains the names of the themes that were successfully cloned.
-
-`txp.{event} > import` (event = usually 'skin')
-* **When it occurs:** Before (`pre=1`) and after (`pre=0`) a theme is imported from disk to database.
-* **What it allows:** To trigger any additional functionality when a theme is updated in the Textpattern database.
-* **Additional parameter:** An array comprising the theme names being imported, and a boolean indicating if the assets are synced with disk. The post-event callback also contains a list of themes that were successfully imported.
-
-`txp.{event} > export` (event = usually 'skin')
-* **When it occurs:** Before (`pre=1`) and after (`pre=0`) a theme is pushed from database to disk.
-* **What it allows:** To trigger any additional functionality when a theme is updated in the filesystem.
-* **Additional parameter:** An array comprising the theme names being exported, and a boolean indicating if the assets are synced with the database. The post-event callback also contains a list of themes that were successfully exported.
-
-`txp.{event} > delete` (event = usually 'skin')
-* **When it occurs:** Before (`pre=1`) and after (`pre=0`) a theme is deleted.
-* **What it allows:** To trigger any additional functionality when a theme is removed.
-* **Additional parameter:** An array comprising the list of theme names being deleted, and a boolean indicating if the disk-based assets are deleted as well. The post-event callback also contains the names of the themes that were successfully delet    ed.
+See [Admin-side theme callbacks](#admin-side-theme-callbacks).
 
 #### Sections panel
 
