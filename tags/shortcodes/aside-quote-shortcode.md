@@ -110,12 +110,12 @@ Tweets are essentially short quotations from people that can be brought into con
 
 Create the link categories:
 
-1. In the [Categories panel](https://docs.textpattern.com/administration/categories-panel), create a new link category called “Asides”. This will become the parent category for all types of aside-quote links.
+1. In the [Categories panel](/administration/categories-panel), create a new link category called “Asides”. This will become the parent category for all types of aside-quote links.
 2. Create a second link category called “Tweets” and assign the “Asides” category as the parent.
 
 Create the Tweet links:
 
-In the [Links panel](https://docs.textpattern.com/administration/links-panel), create your Tweets using this association to the Textpattern link fields:
+In the [Links panel](/administration/links-panel), create your Tweets using this association to the Textpattern link fields:
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
@@ -170,11 +170,11 @@ The above hypothetical tag might output a Tweet as follows, depending on how you
 >
 >Drunk Hulk [23 August 2009](#)
 
-**Attention:** See notes in [Core short-tags](https://docs.textpattern.com/tags/tag-basics/core-short-tags) about the correct tag to use if the core short-tag preference is disabled in the Preferences panel. 
+**Attention:** See notes in [Core short-tags](/tags/tag-basics/core-short-tags) about the correct tag to use if the core short-tag preference is disabled in the Preferences panel. 
 
 ## Notes and explainers
 
-The `escape="tidy,textile,ltrim"` attribute used in the link description tag allows using Textile formatting in your link descriptions (notably the `tidy,textile` values). For example, to get the bold formatting on the word “SMASHED,” as depicted above, the description could be written as `Hulk *SMASHED!*` Or you could write it with a Textile span like this, `Hulk %(impact)smashed!%`, then style the CSS rule for `.impact` using a text transform for uppercase, and a niftier typeface for extra visual _oomph_. (The `ltrim` attribute value clips white characters left. You may not need this. See [Tag escaping](https://docs.textpattern.com/tags/tag-basics/tag-escaping) doc to learn about all `escape=“”` attribute uses.)
+The `escape="tidy,textile,ltrim"` attribute used in the link description tag allows using Textile formatting in your link descriptions (notably the `tidy,textile` values). For example, to get the bold formatting on the word “SMASHED,” as depicted above, the description could be written as `Hulk *SMASHED!*` Or you could write it with a Textile span like this, `Hulk %(impact)smashed!%`, then style the CSS rule for `.impact` using a text transform for uppercase, and a niftier typeface for extra visual _oomph_. (The `ltrim` attribute value clips white characters left. You may not need this. See [Tag escaping](/tags/tag-basics/tag-escaping) doc to learn about all `escape=“”` attribute uses.)
 
 The `p` element and it’s two `span` children enable styling the name and date output however you want, together or separately. For example, you could use pseudo rules to add punctuation around the name: `– Drunk Hulk,`. Or use `display:block;` on the `span` elements to put the date under the name instead of using punctuation. Note there is also a hard `class="sig"` set on the `p` element, but you can remove or change that as desired in your own shortcode form.
 
@@ -188,7 +188,7 @@ Of course, you can modify this shortcode to any other need you want to create. H
 
 ## The shortcode using core short-tags
 
-The shortcode above was described using regular Textpattern tags. But you could, for kicks, rewrite the shortcode using [core short-tags](https://docs.textpattern.com/tags/tag-basics/core-short-tags). In other words, this would also work:
+The shortcode above was described using regular Textpattern tags. But you could, for kicks, rewrite the shortcode using [core short-tags](/tags/tag-basics/core-short-tags). In other words, this would also work:
 
 ~~~ html
 <aside<if::yield name="class"> class="<txp:yield name="class" />"</if::yield>>
@@ -207,11 +207,11 @@ Where:
 
 The only advantage to that in this particular shortcode is a savings of **10 characters**. Other shortcodes may be different. 
 
-Also, it only works if the short-tags feature is enabled in the **Site preferences** under the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel#site-preferences). So if you have that preference disabled, don’t use this version of the shortcode.
+Also, it only works if the short-tags feature is enabled in the **Site preferences** under the [Preferences panel](/administration/preferences-panel#site-preferences). So if you have that preference disabled, don’t use this version of the shortcode.
 
 ## The shortcode using tag integration concept
 
-As described in the [Integrated tag notation](https://docs.textpattern.com/tags/tag-basics/integrated-tag-notation) doc, you can even use the concept of markup _integration_ (making the HTML as global Textpattern tag attributes) to reduce overall markup volume of the shortcode.
+As described in the [Integrated tag notation](/tags/tag-basics/integrated-tag-notation) doc, you can even use the concept of markup _integration_ (making the HTML as global Textpattern tag attributes) to reduce overall markup volume of the shortcode.
 
 For example, the following is yet another way to build the aside-quote form:
 

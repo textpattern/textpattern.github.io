@@ -41,11 +41,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** `comments_preview` (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
+: **Default:** `comments_preview` (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="tag"`
 : HTML tag to wrap around the list, specified without brackets (e.g. `wraptag="div"`).
-: **Default:** depends upon 'Present Comments as a Numbered List?' preference setting - either `ol` or unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** depends upon 'Present Comments as a Numbered List?' preference setting - either `ol` or unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

@@ -21,7 +21,7 @@ tags:
 <txp:file_download />
 ~~~
 
-The **file_download** tag is a *single* tag which Textpattern will replace with Textpattern 'file' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained). Inside that form go the other [file tags](https://docs.textpattern.com/tags/file-tags).
+The **file_download** tag is a *single* tag which Textpattern will replace with Textpattern 'file' type [Form templates](/themes/form-templates-explained). Inside that form go the other [file tags](/tags/file-tags).
 
 ## Attributes
 

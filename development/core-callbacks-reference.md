@@ -8,7 +8,7 @@ description: This comprehensive reference provides detailed information about al
 
 # Core callbacks reference
 
-This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](https://docs.textpattern.com/development/admin-side-events-and-steps).
+This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](/development/admin-side-events-and-steps).
 
 On this page:
 
@@ -102,7 +102,7 @@ Any time a comment form is rendered or a comment is posted on an article, the fo
 
 ### publish/log.php
 
-As long as *Logging* is switched on from the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel), whenever a visitor requests a web page from Textpattern, a hit is registered. Use the callback here to intercept it.
+As long as *Logging* is switched on from the [Preferences panel](/administration/preferences-panel), whenever a visitor requests a web page from Textpattern, a hit is registered. Use the callback here to intercept it.
 
 `log_hit`
 * **When it occurs:** Just before a log message is recorded in the 'txp_log' table.
@@ -110,13 +110,13 @@ As long as *Logging* is switched on from the [Preferences panel](https://docs.te
 
 ## Admin-side callbacks
 
-Admin-side callbacks are split into three flavours. The first are easy to recognize from the address bar of your browser. If you select any admin-side panel link, you'll see the URL contains `?event=panelname`, and if you select any link in that panel that performs an action, you'll see `?event=panelname&step=action`. Those values correspond to the `$event` and `$step` parameters you can use during [plugin or theme development](https://docs.textpattern.com/development/). In fact, they will call any user-defined function that is registered for said `$event` and `$step`, allowing you to add your own *events* and *steps* as you need them.
+Admin-side callbacks are split into three flavours. The first are easy to recognize from the address bar of your browser. If you select any admin-side panel link, you'll see the URL contains `?event=panelname`, and if you select any link in that panel that performs an action, you'll see `?event=panelname&step=action`. Those values correspond to the `$event` and `$step` parameters you can use during [plugin or theme development](/development/). In fact, they will call any user-defined function that is registered for said `$event` and `$step`, allowing you to add your own *events* and *steps* as you need them.
 
-If you wish to utilise such core hooks, consult the [admin-side events and steps](https://docs.textpattern.com/development/admin-side-events-and-steps) document, which lists them all.
+If you wish to utilise such core hooks, consult the [admin-side events and steps](/development/admin-side-events-and-steps) document, which lists them all.
 
 The second type of callback relate to actions that occur in response to various page-level signals. These could be when certain parts of the administration interface are rendered or when actions (such as deletion) complete, and are listed below.
 
-The final type of callback is `pluggable_ui()`. These deal with specific chunks of content that appear on the page and allow direct manipulation of individual elements or blocks. They are listed in the [pluggable_ui](https://docs.textpattern.com/development/the-pluggable-ui-function) document.
+The final type of callback is `pluggable_ui()`. These deal with specific chunks of content that appear on the page and allow direct manipulation of individual elements or blocks. They are listed in the [pluggable_ui](/development/the-pluggable-ui-function) document.
 
 ### Major block-level callbacks
 
@@ -276,7 +276,7 @@ These callbacks are raised when input elements or constructs are rendered. They 
 #### Diagnostics panel
 
 `diag_results > low` or `> high`
-* **When it occurs:** At the end of the `doDiagnostics()` function that renders the content of the [Diagnostics](https://docs.textpattern.com/administration/diagnostics-panel) panel.
+* **When it occurs:** At the end of the `doDiagnostics()` function that renders the content of the [Diagnostics](/administration/diagnostics-panel) panel.
 * **What it allows:** To add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low).
 
 #### Users panel
@@ -339,18 +339,18 @@ These callbacks all have the same `$event` called `admin_criteria`.
 
 Panel | `$step`
 ---|---
-[Articles](https://docs.textpattern.com/administration/articles-panel) | `list_list`
-[Comments](https://docs.textpattern.com/administration/comments-panel) | `discuss_list`
-[Files](https://docs.textpattern.com/administration/files-panel) | `file_list`
-[Forms](https://docs.textpattern.com/administration/forms-panel) | `form_list`
-[Images](https://docs.textpattern.com/administration/images-panel) | `image_list`
-[Links](https://docs.textpattern.com/administration/links-panel) | `link_list`
-[Pages](https://docs.textpattern.com/administration/pages-panel) | `page_list`
-[Sections](https://docs.textpattern.com/administration/sections-panel) | `section_list`
-[Styles](https://docs.textpattern.com/administration/styles-panel) | `css_list`
-[Themes](https://docs.textpattern.com/administration/themes-panel) | `skin_list`
-[Users](https://docs.textpattern.com/administration/users-panel) | `author_list`
-[Visitor logs](https://docs.textpattern.com/administration/visitor-logs-panel) | `log_list`
+[Articles](/administration/articles-panel) | `list_list`
+[Comments](/administration/comments-panel) | `discuss_list`
+[Files](/administration/files-panel) | `file_list`
+[Forms](/administration/forms-panel) | `form_list`
+[Images](/administration/images-panel) | `image_list`
+[Links](/administration/links-panel) | `link_list`
+[Pages](/administration/pages-panel) | `page_list`
+[Sections](/administration/sections-panel) | `section_list`
+[Styles](/administration/styles-panel) | `css_list`
+[Themes](/administration/themes-panel) | `skin_list`
+[Users](/administration/users-panel) | `author_list`
+[Visitor logs](/administration/visitor-logs-panel) | `log_list`
 
 ### Admin-side validation callbacks
 
@@ -365,12 +365,12 @@ These additional arguments are all passed by reference to your application, so y
 
 Panel | `$event` | `$step`
 ---|---|---
-[Articles](https://docs.textpattern.com/administration/content/articles-panel) | `article_ui` | `validate_save`
-[Articles](https://docs.textpattern.com/administration/content/articles-panel) | `article_ui` | `validate_publish`
-[Comments](https://docs.textpattern.com/administration/content/comments-panel) | `discuss_ui` | `validate_save`
-[Files](https://docs.textpattern.com/administration/content/files-panel)       | `file_ui`    | `validate_save`
-[Images](https://docs.textpattern.com/administration/content/images-panel)     | `image_ui`   | `validate_save`
-[Links](https://docs.textpattern.com/administration/content/links-panel)       | `link_ui`    | `validate_save`
+[Articles](/administration/content/articles-panel) | `article_ui` | `validate_save`
+[Articles](/administration/content/articles-panel) | `article_ui` | `validate_publish`
+[Comments](/administration/content/comments-panel) | `discuss_ui` | `validate_save`
+[Files](/administration/content/files-panel)       | `file_ui`    | `validate_save`
+[Images](/administration/content/images-panel)     | `image_ui`   | `validate_save`
+[Links](/administration/content/links-panel)       | `link_ui`    | `validate_save`
 
 ### Admin-side theme callbacks
 
@@ -397,7 +397,7 @@ When performing theme operations such as import and export, you can intercept or
 
 ## Modification callbacks
 
-Like [pluggable_ui()](https://docs.textpattern.com/development/the-pluggable-ui-function) callbacks, this type of callback is performed 'pass by reference' and allows you to directly alter the passed content by importing it by reference and manipulating it directly in your function. Use an ampersand in front of the data attribute to do so, like this which adds a new status level after the existing core set:
+Like [pluggable_ui()](/development/the-pluggable-ui-function) callbacks, this type of callback is performed 'pass by reference' and allows you to directly alter the passed content by importing it by reference and manipulating it directly in your function. Use an ampersand in front of the data attribute to do so, like this which adds a new status level after the existing core set:
 
 ~~~ php
 register_callback('abc_my_function', 'status.types', 'types');

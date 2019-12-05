@@ -23,9 +23,9 @@ tags:
 
 The **custom_field** tag is a *single* tag and used to display the contents of a custom field.
 
-Custom fields are useful when you need to output content having a consistent structure, usually in context to a particular type of article. Custom fields are defined in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel), and used in the [Write panel](https://docs.textpattern.com/administration/write-panel). There are conditions to be aware of in each case, so be sure to read the following sections, respectively:
+Custom fields are useful when you need to output content having a consistent structure, usually in context to a particular type of article. Custom fields are defined in the [Preferences panel](/administration/preferences-panel), and used in the [Write panel](/administration/write-panel). There are conditions to be aware of in each case, so be sure to read the following sections, respectively:
 
-1. [Defining custom fields](https://docs.textpattern.com/administration/preferences-panel#custom-fields-preferences)
+1. [Defining custom fields](/administration/preferences-panel#custom-fields-preferences)
 2. @@Adding custom field data@@
 
 Also see the [if_custom_field](if_custom_field) conditional tag, which provides more flexibility and power using custom fields.
@@ -39,7 +39,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"`
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` prior to echoing the field contents.
-: **Values:** See the [tag escaping](https://docs.textpattern.com/tags/tag-basics/tag-escaping) documentation for all possible values.
+: **Values:** See the [tag escaping](/tags/tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
 `name="fieldname"`

@@ -43,7 +43,7 @@ Select a category name from the list of existing categories and you get to a new
 
 **Category description:** can be harnessed, for example, as meta data when you display an article category listing page.
 
-These fields exist for all four kinds of content (articles, images, files and links). However, the tags mentioned above (`<txp:category1 />`, `<txp:category2 />` and `<txp:category_list />`) are only for article categories. For images, files and links there are other tags or tag attributes. See the [Tag reference index](https://docs.textpattern.com/tags) for further details on tag usage.
+These fields exist for all four kinds of content (articles, images, files and links). However, the tags mentioned above (`<txp:category1 />`, `<txp:category2 />` and `<txp:category_list />`) are only for article categories. For images, files and links there are other tags or tag attributes. See the [Tag reference index](/tags) for further details on tag usage.
 
 Once you have finished editng your category details, press 'Save' to store the changes and return to the main Categories panel.
 
@@ -51,4 +51,4 @@ Once you have finished editng your category details, press 'Save' to store the c
 
 You can select one or more categories within a context list using the checkbox next to it, and with the widget at the bottom of each context list you can then 'Delete' the category/categories or 'Change parent'.
 
-[Next: Comments panel](https://docs.textpattern.com/administration/comments-panel)
+[Next: Comments panel](/administration/comments-panel)

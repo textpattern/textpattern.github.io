@@ -10,7 +10,7 @@ description: Textpattern plugins are perhaps best thought of as functions supple
 
 Textpattern plugins are perhaps best thought of as functions supplementary to those found in Textpattern core.
 
-Functions residing in your plugin can respond to `<txp:abc_your_tag />` and `<txp:abc_your_tag>bar</txp:abc_your_tag>` tags found in [Page templates](https://docs.textpattern.com/themes/page-templates-explained), [Form templates](https://docs.textpattern.com/themes/form-templates-explained), Articles and other dynamic content containers in Textpattern. A [Textpattern plugin template is available on GitHub](https://github.com/textpattern/textpattern-plugin-template) for plugin distribution.
+Functions residing in your plugin can respond to `<txp:abc_your_tag />` and `<txp:abc_your_tag>bar</txp:abc_your_tag>` tags found in [Page templates](/themes/page-templates-explained), [Form templates](/themes/form-templates-explained), Articles and other dynamic content containers in Textpattern. A [Textpattern plugin template is available on GitHub](https://github.com/textpattern/textpattern-plugin-template) for plugin distribution.
 
 On this page:
 

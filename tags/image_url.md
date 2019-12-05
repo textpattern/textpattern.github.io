@@ -36,7 +36,7 @@ If used as a container, it must be specified as an opening and closing pair of t
 Tag will accept the following attributes (**case-sensitive**):
 
 `id="integer"`
-: An `id` assigned at upload of an image to display. The IDs can be found on the [Images panel](https://docs.textpattern.com/administration/images-panel).
+: An `id` assigned at upload of an image to display. The IDs can be found on the [Images panel](/administration/images-panel).
 : **Default:** unset.
 
 `link="link type"`
@@ -48,7 +48,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `auto`.
 
 `name="image name"`
-: An image to display, given by its image name as shown on the [Images panel](https://docs.textpattern.com/administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
+: An image to display, given by its image name as shown on the [Images panel](/administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
 : **Default:** unset.
 
 `thumbnail="boolean"`

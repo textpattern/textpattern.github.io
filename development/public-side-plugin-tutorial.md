@@ -10,7 +10,7 @@ description: This tutorial will walk you through the basics of creating a simple
 
 This tutorial will walk you through the basics of creating a simple public-side plugin; not to be used, exactly, but so you understand what's involved.
 
-You might also like to see the [Admin-side plugin tutorial](https://docs.textpattern.com/development/admin-side-plugin-tutorial).
+You might also like to see the [Admin-side plugin tutorial](/development/admin-side-plugin-tutorial).
 
 On this page:
 
@@ -28,9 +28,9 @@ The plugin in this tutorial will:
 1.  Create a Textpattern tag
 2.  Read some optional attributes
 3.  Output some text when that tag is called
-4.  Use Textpattern's [else](https://docs.textpattern.com/tags/else) tag
+4.  Use Textpattern's [else](/tags/else) tag
 
-Since all plugins must use a [three-character alphanumeric prefix](https://docs.textpattern.com/development/plugin-developer-prefixes), we're going to use **abc** in this tutorial, which is reserved for documentation purposes.
+Since all plugins must use a [three-character alphanumeric prefix](/development/plugin-developer-prefixes), we're going to use **abc** in this tutorial, which is reserved for documentation purposes.
 
 ## Your first plugin and tag
 
@@ -54,7 +54,7 @@ function abc_hello_world($atts, $thing = null)
 
 Save the code and enable the plugin. There you go, your first plugin.
 
-Your new Textpattern tag is now ready for use. Give it a try. Add `<txp:abc_hello_world />` in a Textpattern *page*, *form*, or even in an *article*. If you have enabled [short-tags](https://docs.textpattern.com/tags/tag-basics/core-short-tags) you can use the shorthand `<abc::hello_world />` instead.
+Your new Textpattern tag is now ready for use. Give it a try. Add `<txp:abc_hello_world />` in a Textpattern *page*, *form*, or even in an *article*. If you have enabled [short-tags](/tags/tag-basics/core-short-tags) you can use the shorthand `<abc::hello_world />` instead.
 
 Cool, but not very useful yet, admittedly.
 
@@ -124,6 +124,6 @@ It's a stupid example, but change your Textpattern tag to the following:
 </txp:abc_hello_world>
 ~~~
 
-What we're doing here is checking if the tag's `name` attribute is equal to "**Admin**". If it is, the conditional branch will execute. If not, the [else](https://docs.textpattern.com/tags/else) branch will run.
+What we're doing here is checking if the tag's `name` attribute is equal to "**Admin**". If it is, the conditional branch will execute. If not, the [else](/tags/else) branch will run.
 
 The Textpattern function `parse()` (which calls the tag parser) does the magic for us by fetching and parsing the relevant part of `$thing` (the container) depending on whether the value of `$result` is true or false.

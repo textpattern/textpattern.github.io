@@ -12,9 +12,9 @@ This is usually an Apache web server issue.
 
 These and similar problems happen when you use an **Article URL pattern**, as set in the Site section of the Preferences panel, as anything other than ‘?=messy’ on a web server that does not support `mod_rewrite` rules in the *.htaccess* file, or requires additional configuration in order to work. The *.htaccess* file supplied with Textpattern is designed to work on most Apache servers, but there is no universal solution.
 
-The Textpattern [Diagnostics](https://docs.textpattern.com/administration/diagnostics-panel) panel will attempt to warn you if it can determine that clean URLs are not supported on your system. However, it doesn't detect all incompatible servers. The absence of a warning does *not* mean that your server supports clean URLs.
+The Textpattern [Diagnostics](/administration/diagnostics-panel) panel will attempt to warn you if it can determine that clean URLs are not supported on your system. However, it doesn't detect all incompatible servers. The absence of a warning does *not* mean that your server supports clean URLs.
 
-The simplest solution is to select ‘?=messy’ for the [Article URL pattern](https://docs.textpattern.com/administration/preferences-panel#article-url-pattern) preference, and remove or move aside the *.htaccess* file.
+The simplest solution is to select ‘?=messy’ for the [Article URL pattern](/administration/preferences-panel#article-url-pattern) preference, and remove or move aside the *.htaccess* file.
 
 Some servers support `mod_rewrite`, but require some additional configuration in order to make it work properly.
 

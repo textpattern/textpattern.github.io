@@ -21,7 +21,7 @@ tags:
 <txp:file_download_category />
 ~~~
 
-The **file_download_category** tag is a *single* tag that Textpattern will replace with the category of the file to download. Should be used in Textpattern 'file' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
+The **file_download_category** tag is a *single* tag that Textpattern will replace with the category of the file to download. Should be used in Textpattern 'file' type [Form templates](/themes/form-templates-explained).
 
 ## Attributes
 
@@ -38,7 +38,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** unset (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
+: **Default:** unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="element"`
 : HTML tag to wrap around category text, specified without brackets (e.g. `wraptag="p"`).

@@ -21,7 +21,7 @@ Textpattern users, and theme designers in general, new and old, will find Textpa
 
 ### A theme development ‘studio’
 
-The addition of the [Themes](https://docs.textpattern.com/administration/themes-panel) panel has essentially transformed how to think about building website architectures with Textpattern’s semantic building blocks. Textpattern designers will likely find the Themes panel is now the centre stage of the administration side. Indeed, the back-end is like a theme development studio, where you can work on many themes simultaneously, for employing on your website or sharing with the community. But don’t worry, writers and editors, Textpattern is still the same system to do what its creator envisioned. ‘Just write.’
+The addition of the [Themes](/administration/themes-panel) panel has essentially transformed how to think about building website architectures with Textpattern’s semantic building blocks. Textpattern designers will likely find the Themes panel is now the centre stage of the administration side. Indeed, the back-end is like a theme development studio, where you can work on many themes simultaneously, for employing on your website or sharing with the community. But don’t worry, writers and editors, Textpattern is still the same system to do what its creator envisioned. ‘Just write.’
 
 Theoretically speaking, you could hack a theme package together, from scratch and by hand, directly on your web server. We know you masochistic types are out there. And, sure, it can be a learning experience to sit on the cold garage floor with grease and gears.
 
@@ -41,7 +41,7 @@ The front-end and back-end demos are routinely updated. The back-end demo offers
 
 ### Author prefix and registration
 
-If you intend to create themes to share with the community, you must [register and use an author prefix](https://docs.textpattern.com/brand/author-prefixes-and-registration). Your chosen prefix must not already be taken, as indicated by the prefix lists. Having and using a personal prefix ensures no two themes will ever be created with the same *name*, thus tripping Textpattern up.
+If you intend to create themes to share with the community, you must [register and use an author prefix](/brand/author-prefixes-and-registration). Your chosen prefix must not already be taken, as indicated by the prefix lists. Having and using a personal prefix ensures no two themes will ever be created with the same *name*, thus tripping Textpattern up.
 
 While prefixes are the same whether you create themes or develop plugins, the naming convention is different in each case to make it clear at a glance what product a name is representing. Basically, theme names use hyphens, and plugin names use underscores. If your prefix is *abc*, for example, your theme names would look like this: 
 
@@ -111,11 +111,11 @@ In the event you are new to Textpattern, a brief recap of what assets are might 
 
 #### Page assets
 
-[Pages](https://docs.textpattern.com/administration/pages-panel) are your web page templates, primarily built with HTML and [Textpattern tags](https://docs.textpattern.com/tags). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](https://docs.textpattern.com/tags/output_form) tags), or as a combination of embedded markup and form includes. Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* learn Textpattern tags!
+[Pages](/administration/pages-panel) are your web page templates, primarily built with HTML and [Textpattern tags](/tags). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](/tags/output_form) tags), or as a combination of embedded markup and form includes. Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* learn Textpattern tags!
 
 #### Form assets 
 
-[Forms](https://docs.textpattern.com/administration/forms-panel) are the named containers of markup components (conceptually the same as partials, snippets, or includes) for *inclusion* into page templates, or for nesting into other forms. Such ‘Russian doll’ construction of your website’s architecture using pages and forms enables building sophisticated website structures that are, again, easier to manage and maintain. See [Form templates explained](https://docs.textpattern.com/themes/form-templates-explained.md) if you need a deeper dive into forms.
+[Forms](/administration/forms-panel) are the named containers of markup components (conceptually the same as partials, snippets, or includes) for *inclusion* into page templates, or for nesting into other forms. Such ‘Russian doll’ construction of your website’s architecture using pages and forms enables building sophisticated website structures that are, again, easier to manage and maintain. See [Form templates explained](/themes/form-templates-explained.md) if you need a deeper dive into forms.
 
 All form files must have unique names — across core forms and any custom forms created — and core form names will never be changed from their defaults. Compound form names use underscores between words (e.g. <i>**custom_form_name**</i>) and the resulting template file name should match (i.e. <i>custom_form_name.txp</i>).
 
@@ -170,7 +170,7 @@ And that’s it for the big picture. Now we descend the ladder and get closer to
 
 ## Creating themes
 
-Multiple options are available for creating a new theme via the [Themes](https://docs.textpattern.com/administration/themes-panel) panel. You can:
+Multiple options are available for creating a new theme via the [Themes](/administration/themes-panel) panel. You can:
 
 * Create a new theme directly via the **New theme** editor
 * Duplicate a theme via the **With selected** controls
@@ -184,7 +184,7 @@ Let’s look at each one in default system context.
 
 That is to say, via the **New theme** editor; it is the most called-out way to get started by evidence of the prominent button bearing the same label right at top of the Themes panel.
 
-![Click New theme button](https://docs.textpattern.com/img/click-new-theme-button.png)
+![Click New theme button](/img/click-new-theme-button.png)
 
 The **New theme** button opens the associated editor, which is simply a regular web form with six fields, the first two of which are required:
 
@@ -215,7 +215,7 @@ In any case, you should fill out the theme editing form as completely as possibl
 
 When the **New theme** metadata are saved, the resulting theme appears in the themes table.
 
-![Active theme indicator](https://docs.textpattern.com/img/active-theme-indicator.png)
+![Active theme indicator](/img/active-theme-indicator.png)
 
 The two other approaches that get to this point, both by way of theme duplication, are described next. Or jump to the [Active versus inactive themes](#active-versus-inactive-themes) section to continue on the current journey.   
 
@@ -235,7 +235,7 @@ One way to duplicate the default theme is via the selection controls that work i
 
 Proceed by checking the box next to the default theme in the themes table, then selecting the ‘Duplicate’ option from the **With 1 selected…** menu just below the table. 
 
-![Duplicate via with selected controls](https://docs.textpattern.com/img/select-duplicate.png)
+![Duplicate via with selected controls](/img/select-duplicate.png)
 
 Finally, clicking ‘OK’ when asked if you are sure.
 
@@ -243,11 +243,11 @@ The duplicated theme is added to the themes table and the name appears with ‘-
 
 Do this by clicking the theme’s name in the Name column of the themes table to open the **Edit theme** editor (again, same as the **New theme** editor but in different context).
 
-![Click default theme name](https://docs.textpattern.com/img/click-default-theme-name.png)
+![Click default theme name](/img/click-default-theme-name.png)
 
 Change the metadata in the six fields as thoroughly as possible. See [Create via the ‘New theme’ editor](#create-via-the-new-theme-editor) for explanation of the fields. If you don’t have a value to give for an optional field, clear the field’s value so it is entirely blank. You can always fill it in later. When finished with changing all the metadata on your duplicated theme, save and close the form.
 
-![Save edit theme form changes](https://docs.textpattern.com/img/save-edit-theme-form-changes.png)
+![Save edit theme form changes](/img/save-edit-theme-form-changes.png)
 
 (The ‘Duplicate’ link you see in the image above is a hint to the next section.)
 
@@ -259,17 +259,17 @@ The last way to create a theme is the most direct (fewer clicks in the interface
 
 As before, click the name of the default theme under the Name column of the table.
 
-![Click default theme name](https://docs.textpattern.com/img/click-default-theme-name.png)
+![Click default theme name](/img/click-default-theme-name.png)
 
 The **Edit theme** editor will open up, as you know, and show the default theme’s metadata so you can change it accordingly. See the process described in the previous section.
 
 When done editing the data, click the ‘Duplicate’ link at bottom of the editor, at right of the Cancel button.
 
-![Click duplicate link](https://docs.textpattern.com/img/click-duplicate-link.png)
+![Click duplicate link](/img/click-duplicate-link.png)
 
 There is no confirmation dialogue asking if you are sure. You are simply taken back to the default panel view where your new theme is added to the themes table.
 
-![New theme created](https://docs.textpattern.com/img/new-theme-created.png)
+![New theme created](/img/new-theme-created.png)
 
 You are now a master at creating development theme packages. Proceed with learning all the useful contexts between development and live themes.
 
@@ -285,11 +285,11 @@ The ability to preview theme composition and its relationship with website archi
 
 The Preview link is a convenient way to get into the context of a single theme, whether live or in development. Here the focus is on the latter. The link is found next to a theme’s name on the Themes panel.  
 
-![Dev preview theme link](https://docs.textpattern.com/img/dev-preview-theme-link.png)
+![Dev preview theme link](/img/dev-preview-theme-link.png)
 
 Click such a link and you are taken to the Sections panel with the theme in context of the section’s table. The table shows useful information and links; including the relationship of the theme’s component pages and styles to the sections of your website, reflecting the structure of your website. The first five columns of the table are particularly noteworthy.
 
-![Dev preview theme sections](https://docs.textpattern.com/img/dev-preview-theme-sections.png)
+![Dev preview theme sections](/img/dev-preview-theme-sections.png)
 
 Section names are links to the sections editor, where you can edit a section’s properties. Be aware that the page and style templates you see assigned in the editor are to the *live* theme, not the development theme in context. If you want to edit the development theme’s page and style associations to sections, use the ‘Change theme/page/style’ function via the selection controls under the table, but more on that in a minute. (Yes, the nuances are tricky if you are not careful.) 
 
@@ -297,19 +297,19 @@ Section titles are what show up in your front-end navigation labels, but merit n
 
 The Theme column shows two theme *names* for each section. The first, greyed-out name is the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here!
 
-![Dev preview theme names](https://docs.textpattern.com/img/dev-preview-theme-names.png)
+![Dev preview theme names](/img/dev-preview-theme-names.png)
 
 The second theme name in the Theme column, not greyed out, is the ‘development’ theme you are currently in context with. In the image above, it is ‘abc-my-new-theme’, overriding Textpattern’s live (default) theme, ‘four-point-eight’.
 
 Finally, the Page and Style columns make clear exactly which asset type aligns with which section.
 
-![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links.png)
+![Dev preview assets links](/img/dev-preview-assets-links.png)
 
 Making such assignments has always been a standard procedure in Textpattern. But now it is done in context of theme packages; really tying the building blocks together.
 
 If you ever see an asset name indicated in red, it is a warning telling you that the theme version of that asset has been deleted, or otherwise not present in the theme.
 
-![Dev preview assets links](https://docs.textpattern.com/img/dev-preview-assets-links-red.png)
+![Dev preview assets links](/img/dev-preview-assets-links-red.png)
 
 The greyed-out name before the red link (it is a link) reflects the live template that is working underneath the development theme’s overriding context.
 
@@ -325,7 +325,7 @@ Or you could assign a different asset template to the section. It has to already
 4. Select the correct theme (the context you are in).
 5. Select the associated page and style; these will be in context of the theme you chose.
 
-![Dev preview change assets](https://docs.textpattern.com/img/dev-preview-change-assets.png)
+![Dev preview change assets](/img/dev-preview-change-assets.png)
 
 Click the ‘Go’ button when done and confirm when asked if you are sure.
 
@@ -335,7 +335,7 @@ The real prize of previewing a theme in development, however, is the View link.
 
 ‘View’ links are found under the Name column.
 
-![Dev preview view link](https://docs.textpattern.com/img/dev-preview-view-link.png)
+![Dev preview view link](/img/dev-preview-view-link.png)
 
 Clicking one allows you to see the front-end rendering of your theme’s presentation for that given section. It’s the moment of fireworks. You’ll probably use it a lot if you develop themes in the back-end of Textpattern.
 
@@ -347,23 +347,23 @@ You can use the links under the Page and Style columns, mentioned previously, to
 
 Return to the Themes panel. Under the Pages, Forms, and Styles columns of the themes table are linked numbers indicating how many assets of each type are associated to a given theme.
 
-![Theme-assets-links](https://docs.textpattern.com/img/assets-columns.png)
+![Theme-assets-links](/img/assets-columns.png)
 
 When you duplicate the default theme (as the next image depicts), or any other theme, the existing assets in the source theme are cloned as well, logically, thus why the duplicated themes have the same number.
 
-![Sections and assets columns](https://docs.textpattern.com/img/sections-and-assets-columns.png)
+![Sections and assets columns](/img/sections-and-assets-columns.png)
 
 Click any of these links and you are taken to the respective panels with the indicated number of assets in context. For example, clicking a ‘3’ under the Pages column for the duplicated theme lands you on the Pages panel with the associated three pages listed:
 
-![Pages assets](https://docs.textpattern.com/img/pages-assets.png)
+![Pages assets](/img/pages-assets.png)
 
 You can tell which theme the panel assets are in context with by the appearance of the Theme selection menu above the assets list, showing the title of the relevant theme. (The Theme selection menu does not appear in assets panels when the Themes panel only has one theme.)
 
-![Theme menu context](https://docs.textpattern.com/img/theme-menu-context.png)
+![Theme menu context](/img/theme-menu-context.png)
 
 You can use the Theme selection menu to change theme context from any assets panel.
 
-![Theme menu selection](https://docs.textpattern.com/img/theme-menu-selection.png)
+![Theme menu selection](/img/theme-menu-selection.png)
 
 You will remain in that different theme context as you browse between the assets panels. You can switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
 
@@ -375,25 +375,25 @@ You can tell from a glance in the Themes panel if a given theme is live (active)
 
 First, look under the Sections column of the themes table. Any theme with ‘0’ section associations is not active (i.e. not live on the front-end).
 
-![Sections column](https://docs.textpattern.com/img/sections-column.png)
+![Sections column](/img/sections-column.png)
 
 When a theme is not active, you can work on the associated assets, and [preview the progress](#previewing-themes), without concern for it impacting website visitors or any other problems.
 
 Another way to tell, in the upcoming release of the software, is by way of a new feature: the green ‘Active’ and blue ‘Activate’ links under the Name column of the themes table. If a theme is noted as ‘Active’, it is live.
 
-![Active theme indicator](https://docs.textpattern.com/img/active-theme-indicator.png)
+![Active theme indicator](/img/active-theme-indicator.png)
 
 The two links function as a theme switcher, too. See [Switching themes](#switching-themes) just ahead for more about that and what is happening behind the scenes.
 
 ## Applying themes
 
-When you are ready to apply your theme and see how it looks on the front-side, you need to assign it to one or more [sections](https://docs.textpattern.com/administration/sections-panel) that are setup and ready to go. It’s assumed here that your sections *are* ready to go, so focus is on the assigning part. How you do this might depend on what your theme objectives are.
+When you are ready to apply your theme and see how it looks on the front-side, you need to assign it to one or more [sections](/administration/sections-panel) that are setup and ready to go. It’s assumed here that your sections *are* ready to go, so focus is on the assigning part. How you do this might depend on what your theme objectives are.
 
 ### Switching themes
 
 If you are using version 4.8 of the software, and you simply want to swap one theme for another across your website as it’s currently designed, return to the Themes panel and click the blue ‘Activate’ link found at right of the desired theme’s name.
 
-![Click blue activate link](https://docs.textpattern.com/img/click-blue-activate-link.png) [image needed]
+![Click blue activate link](/img/click-blue-activate-link.png) [image needed]
 
 Confirm ‘OK’ when asked if you are sure. The theme’s blue ‘Activate’ link then becomes a green ‘Active’ link and the previously active theme’s link reverts the other way.
 
@@ -407,15 +407,15 @@ In this case you might like keeping the same general structure of your website b
 
 If you want a 1:1 assignment of a different theme to every website section, you will have to assign each theme and its associated page and style assets to the section individually. There are two approaches to this process — a one-section-at-a-time process if you want all sections looking different — but one approach is a little more direct than the other, thus the one presented here. 
 
-Use the selection controls again, but this time in the [Sections](https://docs.textpattern.com/administration/sections-panel) panel, where assigning assets to templates is done, and where the select options are different. Hop into the Sections panel, check the box by the name of a section to assign a theme to, and select ‘Change theme/page/style’ from the menu underneath.  
+Use the selection controls again, but this time in the [Sections](/administration/sections-panel) panel, where assigning assets to templates is done, and where the select options are different. Hop into the Sections panel, check the box by the name of a section to assign a theme to, and select ‘Change theme/page/style’ from the menu underneath.  
 
-![Select ‘Change theme…’](https://docs.textpattern.com/img/select-change-theme.png)
+![Select ‘Change theme…’](/img/select-change-theme.png)
 
 Yes, you can select more than one section at a time and thereby assign a given theme to multiple sections at once. This would be the ideal middle road when the ‘Activate’ theme switcher was too much (all or nothing) and a 1:1 pairing is too tedious. Alas, you’re on a tedious mission here because each website section must look like an Alphonse Mucha season, so push forth with one section assignment at a time.
 
 The selection will reveal an associated and uncharacteristically rich set of controls for completely defining the assignment action.
 
-![Select ‘Change theme…’ option](https://docs.textpattern.com/img/select-change-theme-option.png)
+![Select ‘Change theme…’ option](/img/select-change-theme-option.png)
 
 Notice not one, but *two* checkboxes: ‘Development’ and ‘Live’. The ‘Development’ option, checked by default, works in relation to the [development previewing](#previewing-development-themes) functionality described earlier.[^sect] Assigning themes to sections allows *previewing* the changes. The ‘Live’ option, on the other hand, does what it implies; makes the themes-to-sections assignment immediately visible on the front-end of your website.
 
@@ -461,11 +461,11 @@ You have learned how to create and manage themes at this point, so take it to th
 
 When your theme is tweaked to perfection and ready to be shared, go to the Themes panel, check the theme’s box in the table, and use the **With selected** controls to select ‘Export to disk’ (i.e. to the <i>themes</i> directory).
 
-![Select export](https://docs.textpattern.com/img/select-export.png)
+![Select export](/img/select-export.png)
 
 The selection will trigger another option to respond to by way of a checkbox: <q><i>Delete unused templates from disk on export</i></q>.
 
-![Select export option](https://docs.textpattern.com/img/select-export-option.png)
+![Select export option](/img/select-export-option.png)
 
 If you read the help tip for that option, it says:
 
@@ -487,7 +487,7 @@ Unlike with exporting themes that you create, where the theme is already tabled 
 
 First, use your (S)FTP software of choice to transfer the external theme (presumably downloaded from a shared location) to your <i>themes</i> directory on the server. A theme import control will appear in the Themes panel, above the themes table.
 
-![Import theme menu](https://docs.textpattern.com/img/import-theme-menu.png)
+![Import theme menu](/img/import-theme-menu.png)
 
 If you didn’t see the menu before, it is because it works in context with the <i>themes</i> directory, as follows:
 
@@ -497,7 +497,7 @@ If you didn’t see the menu before, it is because it works in context with the 
 
 You can then use the import menu to select the theme and initially import it into the database.
 
-![Import theme menu select](https://docs.textpattern.com/img/import-theme-menu-select.png)
+![Import theme menu select](/img/import-theme-menu-select.png)
 
 The theme is now in your themes table to use as desired, and if the themes in the table match the themes in your directory, the import control will disappear again from the Themes panel.   *Poof!*
 
@@ -509,11 +509,11 @@ When you update a theme from disk, Textpattern creates an *exact* copy in the da
 
 As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your <i>themes</i> directory. Then it is on to the Themes panel, where, like [described initially](#duplicate-via-the-with-selected-controls) you do the checkbox-and-select dance, but this time opting for ‘Update from disk’.
 
-![Select update from disk](https://docs.textpattern.com/img/select-update-from-disk.png)
+![Select update from disk](/img/select-update-from-disk.png)
 
 When selected, another checkbox option is presented: <q><i>Delete unused templates from database on import?</i></q>[^update]
 
-![Select update from disk option](https://docs.textpattern.com/img/select-update-from-disk-option.png)
+![Select update from disk option](/img/select-update-from-disk-option.png)
 
 This second option is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting files that might be different (in terms of existing) in the database version. This is generally a good idea, which is why the box is ticked by default, to keep versions consistent. But you might have your reasons for wanting variability, like wanting to customize the sourced theme. Hard to say.
 
@@ -527,11 +527,11 @@ Themes can be deleted from the Themes panel, and the associated version in the <
 
 Deletion requires the **With selected** menu again, which you surely know by heart at this point. Check the box by the theme to be deleted from the themes table, then select the ‘Delete’ option from the menu.
 
-![Select delete](https://docs.textpattern.com/img/select-delete.png)
+![Select delete](/img/select-delete.png)
 
 The selection triggers another option to respond to: <q><i>Delete theme templates from disk too</i></q>.[^delete]
 
-![Select delete option](https://docs.textpattern.com/img/select-delete-option.png)
+![Select delete option](/img/select-delete-option.png)
 
 Again, ‘disk’ is referring to the <i>themes</i> directory, and you are confirming to delete the package that may be sitting there. The box for this option is checked by default; a sign of the right choice most of the time. Proceed with ‘Go’ if you want to clean house entirely, and confirm ‘OK’ when asked if you are sure.
 

@@ -63,7 +63,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.com/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of themes which meet the criteria.
 
@@ -85,4 +85,4 @@ For performing changes now you go to the drop-down list 'With selected…' and c
 
 At the very bottom of the list you will find a pagination and links for next and previous pages if there are more pages. You can also change the number of themes listed per page by selecting another value from the number range.
 
-[Next: Sections panel](https://docs.textpattern.com/administration/sections-panel)
+[Next: Sections panel](/administration/sections-panel)

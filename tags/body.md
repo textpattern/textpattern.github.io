@@ -21,7 +21,7 @@ tags:
 <txp:body />
 ~~~
 
-The **body** tag is a *single* tag which is used to return the text, or content, of the article being displayed (the article itself). The tag can be used in Textpattern 'article' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained), or within [Page templates](https://docs.textpattern.com/themes/page-templates-explained), either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list).
+The **body** tag is a *single* tag which is used to return the text, or content, of the article being displayed (the article itself). The tag can be used in Textpattern 'article' type [Form templates](/themes/form-templates-explained), or within [Page templates](/themes/page-templates-explained), either wrapped within a given article tag, or directly in the template itself so long as the context is with a single article (as opposed to an article list).
 
 ## Attributes
 

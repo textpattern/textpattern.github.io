@@ -8,7 +8,7 @@ description: The Files panel provides central management tools for download file
 
 # Files panel
 
-The Files panel provides central management tools for download files you want to include in your website. It keeps the file, it's description, and automatic information of file size together, as well as organizing file lists and other functions. So you can place download links and lists of downloads in your article content or [Form templates](https://docs.textpattern.com/themes/form-templates-explained) in a very convenient way. If you need to update a file, you can do it once in a central place and don't need to bother where you already have placed a link to it.
+The Files panel provides central management tools for download files you want to include in your website. It keeps the file, it's description, and automatic information of file size together, as well as organizing file lists and other functions. So you can place download links and lists of downloads in your article content or [Form templates](/themes/form-templates-explained) in a very convenient way. If you need to update a file, you can do it once in a central place and don't need to bother where you already have placed a link to it.
 
 On this page:
 
@@ -56,19 +56,19 @@ If you need to **replace a file** (for if there is a corrected or optimized file
 
 **ID:** the unique ID number of the file.
 
-**Name:** for information only, but can be harnessed by tags (such as [file_download_name](https://docs.textpattern.com/tags/file_download_name)). You can select the linked name and thus test the download (which will also increase the download count).
+**Name:** for information only, but can be harnessed by tags (such as [file_download_name](/tags/file_download_name)). You can select the linked name and thus test the download (which will also increase the download count).
 
-**Download count:** for information only, but can be harnessed by tags (such as [file_download_downloads](https://docs.textpattern.com/tags/file_download_downloads)).
+**Download count:** for information only, but can be harnessed by tags (such as [file_download_downloads](/tags/file_download_downloads)).
 
 **File status:** there are three different status modes, which are equal to the articles' status: 'Hidden', 'Pending' or 'Live' (as default).
 
 **Publish date:** the same handling as articles' timestamp - you can set a file to publish at some point in the future (or now, via the 'Set timestamp to now' checkbox).
 
-**Title:** a title for the file, which can be harnessed by tags (such as [file_download_name](https://docs.textpattern.com/tags/file_download_name)).
+**Title:** a title for the file, which can be harnessed by tags (such as [file_download_name](/tags/file_download_name)).
 
-**Category:** a category for the file. [Categories](https://docs.textpattern.com/administration/categories-panel) are used to generate lists of files.
+**Category:** a category for the file. [Categories](/administration/categories-panel) are used to generate lists of files.
 
-**Description:** Text that tells something about the file, and can be harnessed by tags (such as [file_download_description](https://docs.textpattern.com/tags/file_download_description)).
+**Description:** Text that tells something about the file, and can be harnessed by tags (such as [file_download_description](/tags/file_download_description)).
 
 After editing, you have to **Save** your edits.
 
@@ -81,7 +81,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. A drop-down-list to specify which area is to be searched
 
-Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.com/administration/articles-panel) documentation for full details on this).
+Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of files which meet the criteria.
 
@@ -115,4 +115,4 @@ The file tag builder, selected from the **Tags** table column, has several optio
 
 **Description**: an optional short summary of the file contents.
 
-[Next: Links panel](https://docs.textpattern.com/administration/links-panel)
+[Next: Links panel](/administration/links-panel)

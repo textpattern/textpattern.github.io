@@ -22,7 +22,7 @@ First let’s review some Textpattern tag basics, which includes how plugin tags
 Short-tag structure only concerns tags (including plugin tags) with compound names, whether self-closing or used as containers.
 
 **Here’s the general rule:** 
-If the short-tag functionality is enabled in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel#enable-short-tag-support), which it is by default, and the tag has a compound name, you can:
+If the short-tag functionality is enabled in the [Preferences panel](/administration/preferences-panel#enable-short-tag-support), which it is by default, and the tag has a compound name, you can:
 
 1. Remove the `txp:` prefix.
 2. Swap the first instance of underscore with `::`.
@@ -94,4 +94,4 @@ Using `not` negates the result of the entire tag including any combination of at
 
 ## Custom short-tags
 
-See [Custom short-tags and shortcodes](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes).
+See [Custom short-tags and shortcodes](/tags/shortcodes/custom-short-tags-and-shortcodes).

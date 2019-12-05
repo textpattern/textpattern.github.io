@@ -30,14 +30,14 @@ The **if_article_category** tag is a *conditional* tag and always used as an ope
 </txp:if_article_category>
 ~~~
 
-It will execute the contained statement if the category name associated with a particular article (Category1 or Category2) matches the values of the name and number attributes. Should be used in 'article' type Textpattern [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
+It will execute the contained statement if the category name associated with a particular article (Category1 or Category2) matches the values of the name and number attributes. Should be used in 'article' type Textpattern [Form templates](/themes/form-templates-explained).
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
 `name="category"`
-: Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the [Categories panel](https://docs.textpattern.com/administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes `my-category-name` when used in tags.
+: Comma-separated list of category names (not titles) to match. Note the category name is specified in lower case regardless of how you typed its title in the [Categories panel](/administration/categories-panel). Also note that if you had called your category 'My Category Name' it becomes `my-category-name` when used in tags.
 : **Default:** unset.
 
 `number="number"`

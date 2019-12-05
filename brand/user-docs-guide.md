@@ -8,7 +8,7 @@ description: Guidelines for author and editor changes to Textpattern’s user do
 
 # User documentation guidelines
 
-These guidelines, an extension of Textpattern’s baseline [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide), are specifically for the upkeep of [user documentation](https://docs.textpattern.com/). Documentation authors, editors, and other interested contributors will want to read up here, as well review the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures).
+These guidelines, an extension of Textpattern’s baseline [editorial style guide](/brand/editorial-style-guide), are specifically for the upkeep of [user documentation](/). Documentation authors, editors, and other interested contributors will want to read up here, as well review the [documentation collaboration procedures](/brand/user-docs-procedures).
 
 **On this page**:
 
@@ -33,13 +33,13 @@ In relation to the primary and secondary audiences are specific breadths and dep
 
 ### Breadth of primary documentation
 
-The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes [administration](https://docs.textpattern.com/administration) features and capabilities, and [Textpattern tags](https://docs.textpattern.com/tags) and [tag attributes](https://docs.textpattern.com/tags/tag-basics) information. To a lesser degree is information about initially [installing Textpattern](https://docs.textpattern.com/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](https://docs.textpattern.com/faqs). Also new, in reflection of new core functionality, is a handful of [shortcode](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes) examples as tutorials.
+The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes [administration](/administration) features and capabilities, and [Textpattern tags](/tags) and [tag attributes](/tags/tag-basics) information. To a lesser degree is information about initially [installing Textpattern](/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](/faqs). Also new, in reflection of new core functionality, is a handful of [shortcode](/tags/shortcodes/custom-short-tags-and-shortcodes) examples as tutorials.
 
 Excepting the following section, the remainder of these guidelines are written with the primary audience and documentation scope in mind.
 
 ### Breadth of secondary documentation
 
-The breadth of secondary-audience documentation includes [plugin development](https://docs.textpattern.com/development/) resources, a smattering of [back-end themes](https://docs.textpattern.com/themes) instructions (or not), and Textpattern [brand and collaboration](https://docs.textpattern.com/brand/) information, including these guidelines.
+The breadth of secondary-audience documentation includes [plugin development](/development/) resources, a smattering of [back-end themes](/themes) instructions (or not), and Textpattern [brand and collaboration](/brand/) information, including these guidelines.
 
 This information is piecemeal and may not be ideally suited for this repository. Other network platforms like [Textpattern Tips](https://textpattern.tips/), and the forthcoming Plugins and Themes websites may help serve secondary documentation types better (see [A single documentation type](#a-single-documentation-type)).
 
@@ -77,7 +77,7 @@ The user documentation is fairly well filled-out. Maybe too much in some places 
 
 If you pour over [software usability](#rely-on-software-usability) and the [embedded help tips](#rely-on-embedded-help-tips), the two main layers in this conceptual layering system, you gain a sense of where some material is needed or needs revised. And review of pages against new software releases is important, as well regular refinement of material when opportunities arise. Else, an editor may propose removing a page if it becomes a pointless outlier. A little content recycling across high-traffic locations is enough to trim a needless page.
 
-When [docs collaboration procedures](https://docs.textpattern.com/brand/#user-docs-procedures) are not throwing a 404, they will guide where to focus and on what. But for immediate purposes, it is better to draft documentation when there’s an obvious need for a topic or type genre (specification, tutorial, FAQ, etc.), than to produce material without knowing it’s warranted. Let the writing be dictated by the community’s demand, or its struggle around a pernicious problem, one prioritized piece at a time. Monitor the forum for repeating gripes and you’ll identify the _what_ part. Collaboration between author, editors, and doc-tree architects will take care of the _how_.
+When [docs collaboration procedures](/brand/#user-docs-procedures) are not throwing a 404, they will guide where to focus and on what. But for immediate purposes, it is better to draft documentation when there’s an obvious need for a topic or type genre (specification, tutorial, FAQ, etc.), than to produce material without knowing it’s warranted. Let the writing be dictated by the community’s demand, or its struggle around a pernicious problem, one prioritized piece at a time. Monitor the forum for repeating gripes and you’ll identify the _what_ part. Collaboration between author, editors, and doc-tree architects will take care of the _how_.
 
 #### Scope and depth of a page
 
@@ -105,7 +105,7 @@ And when such elaboration is needed, it should augment embedded help information
 
 ## Writing and editing
 
-In addition to the helpful guidelines below for writing and editing documentation, see the baseline [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide) for style conventions in general.
+In addition to the helpful guidelines below for writing and editing documentation, see the baseline [editorial style guide](/brand/editorial-style-guide) for style conventions in general.
 
 ### Author perspective
 
@@ -120,7 +120,7 @@ Click your name in the Users panel to change your email.
 
 The second-person stance empowers the reader on their solo adventure. You're just an impartial voice over their shoulder guiding them along. But don't go overboard on the pronouns. If you're addressing the reader in every other sentence, you have revising to do.
 
-Never use first-person singular (*I*, *me*, *my*) or plural (*we* and *us*) in user documentation. The documentation isn't about you, and the voice of Textpattern is unnecessary and inappropriate. See the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide#author-perspective) for other platform perspectives.
+Never use first-person singular (*I*, *me*, *my*) or plural (*we* and *us*) in user documentation. The documentation isn't about you, and the voice of Textpattern is unnecessary and inappropriate. See the [editorial style guide](/brand/editorial-style-guide#author-perspective) for other platform perspectives.
 
 #### Exceptions to the rule
 
@@ -135,11 +135,11 @@ Another exception is with regard to materials like you are reading now, material
 
 ### Abbreviations
 
-Regarding user documentation, two topics are especially important to review in the [Abbreviations](https://docs.textpattern.com/brand/editorial-style-guide#abbreviations) section of the editorial style guide: the avoidance of common-word abbreviations like ‘admin’, and the recommended use of Latin idioms as abbreviations in parenthetical notes over English equivalents in regular text.
+Regarding user documentation, two topics are especially important to review in the [Abbreviations](/brand/editorial-style-guide#abbreviations) section of the editorial style guide: the avoidance of common-word abbreviations like ‘admin’, and the recommended use of Latin idioms as abbreviations in parenthetical notes over English equivalents in regular text.
 
 ### Brand name
 
-Particularly in documentation, do not overuse the brand name. The context of being a Textpattern resource is already clear to readers by fact they are using the software and in the documentation domain. See more in [Brand name](https://docs.textpattern.com/brand/editorial-style-guide#brand-name) guidelines of editorial style guide.
+Particularly in documentation, do not overuse the brand name. The context of being a Textpattern resource is already clear to readers by fact they are using the software and in the documentation domain. See more in [Brand name](/brand/editorial-style-guide#brand-name) guidelines of editorial style guide.
 
 ## Formatting interface strings
 
@@ -251,7 +251,7 @@ But that would be sloppy list construction to avoid.
 
 ### Alert message strings
 
-Alert messages appear to software users as feedback dialogue in the Diagnostics panel, or in other panels as a software user proceeds through certain tasks (e.g. when saving draft changes). Four kinds of alert messages exist (Table 1). The full set of alert messages in core are detailed in [Diagnostics](https://docs.textpattern.com/administration/diagnostics-panel).
+Alert messages appear to software users as feedback dialogue in the Diagnostics panel, or in other panels as a software user proceeds through certain tasks (e.g. when saving draft changes). Four kinds of alert messages exist (Table 1). The full set of alert messages in core are detailed in [Diagnostics](/administration/diagnostics-panel).
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
     <table>
@@ -343,7 +343,7 @@ Do not bother adding a `cite` attribute to the `q` element when quoting short, f
 
 When, and only when, a free-text string is long enough to warrant being a ‘displayed quotation’ (i.e. quotations that are not embedded inline).[^disquotes], mark it up as a block quote using a `blockquote` element via Markdown’s `>` notation). The W3C specification says the same thing: <q cite="https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element">the `blockquote` element represents content that is quoted from another source</q>.[^blockquotes]
 
-There are only two situations that you might ever use a block quote; if quoting a popup help tip, or if quoting the only free-text string in the back-end interface that’s long enough to warrant this markup. It’s a paragraph in the [Languages panel](https://docs.textpattern.com/administration/languages-panel), under the panel header, and reads:
+There are only two situations that you might ever use a block quote; if quoting a popup help tip, or if quoting the only free-text string in the back-end interface that’s long enough to warrant this markup. It’s a paragraph in the [Languages panel](/administration/languages-panel), under the panel header, and reads:
 
 > **You can help us improve Textpattern!** We welcome additional translations (and corrections to current translations) by our user community. Please visit Textpattern language translations (opens an external link in a new window) for further details.
 
@@ -411,7 +411,7 @@ That said, there’s a point where too much linking can be distracting, so don�
 Cross-links between documentation pages should use Markdown link syntax and absolute URLs:
 
 ```
-[link text](https://docs.textpattern.com/directory/page-title)
+[link text](/directory/page-title)
 ```
 
 ### Anchor links

@@ -34,7 +34,7 @@ The other is to output raw keyword text anywhere else:
 {your article keywords}
 ~~~
 
-Context of use must be within a single article (as opposed to an article list). The tag can be added directly in [Page templates](https://docs.textpattern.com/themes/page-templates-explained) or as part of 'article' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained). Either way, you may also place it in a given article tag.
+Context of use must be within a single article (as opposed to an article list). The tag can be added directly in [Page templates](/themes/page-templates-explained) or as part of 'article' type [Form templates](/themes/form-templates-explained). Either way, you may also place it in a given article tag.
 
 Note: The corresponding keywords field has a 255 character limit by default, which includes spaces and commas. This is the MySQL database default. You can edit the default using [phpMyAdmin](https://www.phpmyadmin.net), for example.
 {: .alert-block .information}
@@ -43,7 +43,7 @@ Note: The corresponding keywords field has a 255 character limit by default, whi
 
 `escape="html"` <span class="footnote warning">v4.6.0+</span>
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&`.
-: **Values:** See the [tag escaping](https://docs.textpattern.com/tags/tag-basics/tag-escaping) documentation for all possible values.
+: **Values:** See the [tag escaping](/tags/tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
 `format="value"` <span class="footnote warning">v4.6.0+</span>

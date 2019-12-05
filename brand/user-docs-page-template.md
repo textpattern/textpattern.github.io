@@ -8,7 +8,7 @@ description: A quick-start template for quickly structuring a new page in user d
 
 # Textpattern documentation template
 
-This page provides a quick-start template for new documentation pages. Be sure to review the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures) and the [user documentation guidelines](https://docs.textpattern.com/brand/user-docs-guide) before creating any new pages.
+This page provides a quick-start template for new documentation pages. Be sure to review the [documentation collaboration procedures](/brand/user-docs-procedures) and the [user documentation guidelines](/brand/user-docs-guide) before creating any new pages.
 
 **On this page**:
 
@@ -157,8 +157,8 @@ Also, make sure you use at least two headings at a given level, or not at all. U
 
 ## Other content elements
 
-For all other content types you may need, and are appropriate for use, see [Markup](https://docs.textpattern.com/brand/user-docs-guide#tables) in the user documentation guidelines.
+For all other content types you may need, and are appropriate for use, see [Markup](/brand/user-docs-guide#tables) in the user documentation guidelines.
 
 When in doubt about structuring a page or using a given content element, re-open the page’s [existing issue](https://github.com/textpattern/textpattern.github.io/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed), or start a new issue if one doesn’t already exist, using the [Discuss existing page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=discuss-existing-page.md&title=page%3A+) issue template.
 
-See the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-collaboration-procedures) for more on that process.
+See the [documentation collaboration procedures](/brand/user-docs-collaboration-procedures) for more on that process.

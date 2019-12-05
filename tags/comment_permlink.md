@@ -21,7 +21,7 @@ tags:
 <txp:comment_permlink>
 ~~~
 
-The **comment_permlink** tag is a *container* tag which is used to return the permanent link of the article comment being displayed. The container tag wraps the text assigned to the link. Should be used in Textpattern 'comment' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
+The **comment_permlink** tag is a *container* tag which is used to return the permanent link of the article comment being displayed. The container tag wraps the text assigned to the link. Should be used in Textpattern 'comment' type [Form templates](/themes/form-templates-explained).
 
 ## Attributes
 

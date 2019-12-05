@@ -14,11 +14,11 @@ Get your theme on!
 ## Links
 
 Front-end themes
-: [Themes: A complete walk-through](https://docs.textpattern.com/themes/themes-a-complete-walk-through) (maybe all you need)
-: [Themes panel](https://docs.textpattern.com/administration/themes-panel) (primary features and functionality)
+: [Themes: A complete walk-through](/themes/themes-a-complete-walk-through) (maybe all you need)
+: [Themes panel](/administration/themes-panel) (primary features and functionality)
 
 Back-end themes
-: [Creating a custom administration theme](https://docs.textpattern.com/themes/admin-side-themes)
+: [Creating a custom administration theme](/themes/admin-side-themes)
 
 Themes website
 : [Under development](https://github.com/textpattern/textpattern-themes-website)

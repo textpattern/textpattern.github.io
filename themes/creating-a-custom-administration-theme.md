@@ -54,7 +54,7 @@ Rename your copy directory to whatever theme name you want, but don’t try to b
 * _mytheme_
 * _my-theme_
 
-Whatever name you use for the directory, use it for the *.php* file name inside the directory too (i.e. *mytheme.php*). We recommend you adopt the naming convention of _three-letter-prefix_theme-name_ where the [three letter prefix](https://docs.textpattern.com/development/plugin-developer-prefixes) is one that uniquely identifies your 'brand'. 
+Whatever name you use for the directory, use it for the *.php* file name inside the directory too (i.e. *mytheme.php*). We recommend you adopt the naming convention of _three-letter-prefix_theme-name_ where the [three letter prefix](/development/plugin-developer-prefixes) is one that uniquely identifies your 'brand'. 
 
 Leave all other directory and file names alone. You will simply edit their contents, if necessary, not their names.
 

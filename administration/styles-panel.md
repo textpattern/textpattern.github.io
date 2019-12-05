@@ -8,7 +8,7 @@ description: The Styles panel is where the CSS (Cascading Style Sheets) used wit
 
 # Styles panel
 
-The Styles panel is used to edit CSS (Cascading Style Sheets) for your website, and has a similar layout to the [Pages panel](https://docs.textpattern.com/administration/pages-panel).
+The Styles panel is used to edit CSS (Cascading Style Sheets) for your website, and has a similar layout to the [Pages panel](/administration/pages-panel).
 
 On this page:
 
@@ -36,4 +36,4 @@ If you have already altered the 'Style name' field before duplication, the new C
 
 Your new CSS file is then immediately available for editing.
 
-[Next: Diagnostics panel](https://docs.textpattern.com/administration/diagnostics-panel)
+[Next: Diagnostics panel](/administration/diagnostics-panel)

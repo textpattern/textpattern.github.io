@@ -13,7 +13,7 @@ visitors if you do because they provide them with more orientation cues
 while browsing (navigating) your site. If you do not care about site
 usability then you can go with [Messy
 URLs](/home/www/zendstudio/dokuwiki/bin/doku.php?id=glossary#messy_urls),
-simply select the 'Messy' option in the [Article URL pattern](https://docs.textpattern.com/administration/preferences-panel#article-url-pattern) preference and forget about the rest of these instructions.
+simply select the 'Messy' option in the [Article URL pattern](/administration/preferences-panel#article-url-pattern) preference and forget about the rest of these instructions.
 
 ### The Process {#the-process .sectionedit1#the_process}
 
@@ -59,9 +59,9 @@ to have clean URLs using plugins like
 It is assumed at this point that you have already set your site
 preferences as you want them to be in the [Basic Preferences\] panel,
 and you have probably even tried fixing any diagnostics issues in the
-[Diagnostics panel](https://docs.textpattern.com/administration/diagnostics-panel).
+[Diagnostics panel](/administration/diagnostics-panel).
 
-However, what you should do now is go back and make sure you have selected the 'Messy' option in the [Article URL pattern](https://docs.textpattern.com/administration/preferences-panel#article-url-pattern) section of the Preferences panel (this enables you to establish some site structure and troubleshoot diagnostics easier, which are the next things to take care of).
+However, what you should do now is go back and make sure you have selected the 'Messy' option in the [Article URL pattern](/administration/preferences-panel#article-url-pattern) section of the Preferences panel (this enables you to establish some site structure and troubleshoot diagnostics easier, which are the next things to take care of).
 
 If you have not set your preferences and handled your diagnostics, make
 sure you do so before continuing.
@@ -80,7 +80,7 @@ site finished (though if you do, that's fine), but you should have at
 least a couple of Sections setup with one or more Articles associated
 with each section.
 
-If you do have some structure and content to your site, then what you need to think about now is how you want your clean URLs to look, and again we refer you to the [Article URL pattern](https://docs.textpattern.com/administration/preferences-panel#article-url-pattern) options in the Preferences panel where you set this.
+If you do have some structure and content to your site, then what you need to think about now is how you want your clean URLs to look, and again we refer you to the [Article URL pattern](/administration/preferences-panel#article-url-pattern) options in the Preferences panel where you set this.
 
 #### Step 4: Addressing Your .htaccess File mod_rewrite Rules {#step_4addressing_your_htaccess_file_mod_rewrite_rules}
 

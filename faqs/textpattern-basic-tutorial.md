@@ -37,11 +37,11 @@ On this page:
 
 Start from a new Textpattern installation. If you just want to test things out, you could even use [the Textpattern demo](https://textpattern.com/demo), keeping in mind that you might be sharing it with other users, and that the demo gets wiped clean every few hours.
 
-Log in to the Textpattern administration area. If this is a truly brand-new installation you should look at the [Diagnostics panel](https://docs.textpattern.com/administration/diagnostics-panel) first and deal with any warnings or error messages. If you see "All checks passed!", great! If not, please consult the [pre-flight checks documentation](https://docs.textpattern.com/administration/diagnostics-panel#pre-flight-checks).
+Log in to the Textpattern administration area. If this is a truly brand-new installation you should look at the [Diagnostics panel](/administration/diagnostics-panel) first and deal with any warnings or error messages. If you see "All checks passed!", great! If not, please consult the [pre-flight checks documentation](/administration/diagnostics-panel#pre-flight-checks).
 
-Then go to the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel) and set your initial preferences. Don't worry about setting every preference correct first time, you can change preference options at any time. There are plenty of help tips alongside most of the preferences to assist.
+Then go to the [Preferences panel](/administration/preferences-panel) and set your initial preferences. Don't worry about setting every preference correct first time, you can change preference options at any time. There are plenty of help tips alongside most of the preferences to assist.
 
-Go to the [Pages panel](https://docs.textpattern.com/administration/pages-panel). We're about to overwrite the default page template; if you want to keep a copy of the original, enter a new name for your backup, then use the 'Duplicate' link. This is optional; if you did so select the 'default' link in the list on the right to return to the default page template.
+Go to the [Pages panel](/administration/pages-panel). We're about to overwrite the default page template; if you want to keep a copy of the original, enter a new name for your backup, then use the 'Duplicate' link. This is optional; if you did so select the 'default' link in the list on the right to return to the default page template.
 
 The 'Page name' above the large code editing area should be `default`. Replace the entire contents with `Hello, World!` and press 'Save'. Use the 'View site' link in the top menu, to open your site's home page in a new window. Great looking site, isn't it?! Look at the HTML page source: it is literally `Hello, World!`, followed by some status information - certainly not a valid HTML page!
 
@@ -51,7 +51,7 @@ Close the HTML source view; then get a new, clean, HTML file from your HTML edit
 
 Clearly the home page of our new Textpattern site is simply the page template `default` (plus status info). Let's add another page to the site.
 
-Back in the [Pages panel](https://docs.textpattern.com/administration/pages-panel), enter a page name `page2` and use the 'Duplicate' link again. You now have two identical page templates: `default` and `page2`. Add links to each page: in the “page2” template add…
+Back in the [Pages panel](/administration/pages-panel), enter a page name `page2` and use the 'Duplicate' link again. You now have two identical page templates: `default` and `page2`. Add links to each page: in the “page2” template add…
 
 ~~~ html
 <a href="./">Home</a>
@@ -65,7 +65,7 @@ Back in the [Pages panel](https://docs.textpattern.com/administration/pages-pane
 
 …somewhere in the `<body>` and save.
 
-There's one more task before we can see the new page. Switch to the [Sections panel](https://docs.textpattern.com/administration/sections-panel), and create and edit a new section called `page2`. In the 'Uses page' dropdown for this section, select `page2` and then press 'Save'.
+There's one more task before we can see the new page. Switch to the [Sections panel](/administration/sections-panel), and create and edit a new section called `page2`. In the 'Uses page' dropdown for this section, select `page2` and then press 'Save'.
 
 Return to the live site and reload the page. Now you have a two-page site and can link back and forth: note the URLs as you do so. Look at the HTML source for Page 2; once again you can see it is simply the contents of your new page template.
 
@@ -75,9 +75,9 @@ In a traditional, static website, there's an HTML file for every page. You might
 
 ## Textpattern tags
 
-We turn our static page templates into functional ones by adding [Textpattern tags](https://docs.textpattern.com/tags/tag-basics/), which are placeholders for dynamic content.
+We turn our static page templates into functional ones by adding [Textpattern tags](/tags/tag-basics/), which are placeholders for dynamic content.
 
-Return to the [Pages panel](https://docs.textpattern.com/administration/pages-panel) and to the `default` template. Delete the anchor to Page 2 we added earlier; in its place enter…
+Return to the [Pages panel](/administration/pages-panel) and to the `default` template. Delete the anchor to Page 2 we added earlier; in its place enter…
 
 ~~~ html
 <txp:section_list />
@@ -85,7 +85,7 @@ Return to the [Pages panel](https://docs.textpattern.com/administration/pages-pa
 
 …and resave the template.
 
-Before looking at the results, go to the [Sections panel](https://docs.textpattern.com/administration/sections-panel). Find the `articles` section, edit it and change its 'Uses page' setting to `default`, then press the 'Save' button for this section. Do the same for your `page2` section: change its 'Uses page' setting to `default`. While you're here, change its 'Section title' to `Page 2`. Save your changes.
+Before looking at the results, go to the [Sections panel](/administration/sections-panel). Find the `articles` section, edit it and change its 'Uses page' setting to `default`, then press the 'Save' button for this section. Do the same for your `page2` section: change its 'Uses page' setting to `default`. While you're here, change its 'Section title' to `Page 2`. Save your changes.
 
 Go to the live site and re-load the home page. Now there are two links: 'Articles' and 'Page 2'. Select each link and observe the URL: the URL for 'Articles' will have your base URL followed by `?s=articles` (in messy URL mode) or `articles` (in clean URL mode), and the URL for 'Page 2' will end in either `?s=page2` (or `page2`). Otherwise the pages are identical. We no longer have a link to the home page, though, so let's add that in: return to the template and edit the `<txp:section_list />` tag we added earlier so it looks like this:
 
@@ -107,11 +107,11 @@ Look at the results on the live site. Check all three links. Note how the home a
 
 ## Articles and sections
 
-'Page 2' is empty but for the section links, so let's add an article to it. Go to the [Write panel](https://docs.textpattern.com/administration/write-panel). Enter 'My second article' in the 'Title' field at top. Look for the 'Section' in the side panel and select `page2`. Press 'Publish' and return to the live site. Look at each page again: 'Page 2' shows the article title we just added in the Write panel, 'Articles' is unchanged, and the home page shows both articles.
+'Page 2' is empty but for the section links, so let's add an article to it. Go to the [Write panel](/administration/write-panel). Enter 'My second article' in the 'Title' field at top. Look for the 'Section' in the side panel and select `page2`. Press 'Publish' and return to the live site. Look at each page again: 'Page 2' shows the article title we just added in the Write panel, 'Articles' is unchanged, and the home page shows both articles.
 
 The new article appears on 'Page 2' because we assigned it to that section (in Textpattern an article must belong to a section). The 'Default' section is a special case: no articles are directly assigned to it, but it displays articles from all sections. That's why 'Page 2' and 'Articles' only show what's in their associated sections, while the home page shows both: the home page represents the 'Default' section.
 
-Add another article: go to the [Write panel](https://docs.textpattern.com/administration/write-panel), enter 'My third article' as the title, and press 'Publish'. What happens on the live site? The new article appears on the 'Articles' page, because that is the section it was assigned to by default, and also appears on the home page; 'Page 2' remains unchanged.
+Add another article: go to the [Write panel](/administration/write-panel), enter 'My third article' as the title, and press 'Publish'. What happens on the live site? The new article appears on the 'Articles' page, because that is the section it was assigned to by default, and also appears on the home page; 'Page 2' remains unchanged.
 
 ## Pages and context
 
@@ -133,7 +133,7 @@ The next most important facet of context is whether the page shows a single arti
 </txp:article>
 ~~~
 
-Go to the [Articles panel](https://docs.textpattern.com/administration/articles-panel) and a list of the articles you added will appear: select and edit 'My third article' again. In the 'Body' editing area enter 'Third article: body' and in the 'Excerpt' area enter 'Third article: excerpt'; press 'Save'. Now do the same for 'My second article', putting relevant text in the 'Body' and 'Excerpt' fields.
+Go to the [Articles panel](/administration/articles-panel) and a list of the articles you added will appear: select and edit 'My third article' again. In the 'Body' editing area enter 'Third article: body' and in the 'Excerpt' area enter 'Third article: excerpt'; press 'Save'. Now do the same for 'My second article', putting relevant text in the 'Body' and 'Excerpt' fields.
 
 Return to the live site and reload the home page (or simply select the 'My site' link). The article excerpts you just added appear in this list. You'll also see the excerpts on the 'Articles' and 'Page 2' pages.
 
@@ -181,11 +181,11 @@ Add this to your `default` template, below the `<txp:section_list />`:
 
 A list of three linked items now appears below the section list. Try selecting them: as usual, note both the URL and what appears on the page. The three categories, with their absurd names, are included in the default installation, and the 'Welcome to your site' article is assigned to two of them.
 
-Create some new article categories inthe [Categories panel](https://docs.textpattern.com/administration/categories-panel), then go to the [Article panel](https://docs.textpattern.com/administration/articles-panel) and edit and give your new articles some categories, by selecting them from the pull-down boxes on the 'Category 1' and 'Category 2' items in the Write panel sidebar. Return to the live site and see how this changes the category links and the resulting lists.
+Create some new article categories inthe [Categories panel](/administration/categories-panel), then go to the [Article panel](/administration/articles-panel) and edit and give your new articles some categories, by selecting them from the pull-down boxes on the 'Category 1' and 'Category 2' items in the Write panel sidebar. Return to the live site and see how this changes the category links and the resulting lists.
 
 ## Form templates
 
-Textpattern forms (see [Form templates](https://docs.textpattern.com/themes/form-templates-explained), not to be confused with [HTML forms](https://www.w3.org/TR/html401/interact/forms.html)) are reusable template chunks, a convenient way to keep your templates tidy and also to share code and markup among templates. For example, on my Textpattern sites I nearly always have a form called 'head', which contains any common site-wide code between opening `<head>` and closing `</head>` tags. Then at the top of each template I call the form via a `<txp:output_form />` tag thusly:
+Textpattern forms (see [Form templates](/themes/form-templates-explained), not to be confused with [HTML forms](https://www.w3.org/TR/html401/interact/forms.html)) are reusable template chunks, a convenient way to keep your templates tidy and also to share code and markup among templates. For example, on my Textpattern sites I nearly always have a form called 'head', which contains any common site-wide code between opening `<head>` and closing `</head>` tags. Then at the top of each template I call the form via a `<txp:output_form />` tag thusly:
 
 ~~~ html
 <txp:output_form form="head" />
@@ -193,7 +193,7 @@ Textpattern forms (see [Form templates](https://docs.textpattern.com/themes/form
 
 ### Article forms
 
-A special Textpattern form type is the **article form**. In our template we have been using `<txp:article>` as a container tag (see [self-closed versus container tags](https://docs.textpattern.com/tags/tag-basics/self-closed-versus-container-tags)), and it's starting to get unwieldy. We would gain a lot of flexibility (and also tidy up the default template) by putting the tags in our…
+A special Textpattern form type is the **article form**. In our template we have been using `<txp:article>` as a container tag (see [self-closed versus container tags](/tags/tag-basics/self-closed-versus-container-tags)), and it's starting to get unwieldy. We would gain a lot of flexibility (and also tidy up the default template) by putting the tags in our…
 
 ~~~ html
 <txp:article>
@@ -209,7 +209,7 @@ A special Textpattern form type is the **article form**. In our template we have
 
 …as a self-closing tag and call the form. If you don't specify an attribute `form` when using `<txp:article />` this way, it generally uses the 'default' article form. The exception is search results, in which context `<txp:article />` looks for a form called 'search_results'.
 
-Go to the [Forms panel](https://docs.textpattern.com/administration/forms-panel). We're going to overwrite the 'default' and 'search_results' form templates, so if you want to keep the originals copy each of them and make new form templates to hold the backups.
+Go to the [Forms panel](/administration/forms-panel). We're going to overwrite the 'default' and 'search_results' form templates, so if you want to keep the originals copy each of them and make new form templates to hold the backups.
 
 Load the 'default' form into the editor by selecting its link in the sidebar list. Replace the entire contents of the form with:
 
@@ -229,13 +229,13 @@ Save the change. Now select 'search_results' for editing and replace its content
 <txp:search_result_excerpt />
 ~~~
 
-Save the change. Return to the [Pages panel](https://docs.textpattern.com/administration/pages-panel) and in the default template replace the entire `<txp:article>` container tag with this: `<txp:article />`.
+Save the change. Return to the [Pages panel](/administration/pages-panel) and in the default template replace the entire `<txp:article>` container tag with this: `<txp:article />`.
 
 The live site will work exactly as before, but now the default template is much cleaner, and by splitting search results into its own form we've made the article display logic much simpler.
 
 ## Adding details
 
-There's a myriad of available Textpattern tags (see the [Tag reference](https://docs.textpattern.com/tags/)) for adding dynamic content and control logic. We've only scratched the surface, so let's add a few details to our rudimentary site.
+There's a myriad of available Textpattern tags (see the [Tag reference](/tags/)) for adding dynamic content and control logic. We've only scratched the surface, so let's add a few details to our rudimentary site.
 
 ### Page title and site name
 
@@ -245,7 +245,7 @@ Add a `<title>` element to the default template's `<head>` region (or replace th
 <title><txp:page_title /></title>
 ~~~
 
-Note how each page on the live site now shows an appropriate title. If you want to change the base title to something other than 'My site', you can do so in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel); 'Site name' is the first item in the 'Site' preferences section. While you're here, change 'Site slogan'. Back to the default template, add this above the `<txp:search_input />`:
+Note how each page on the live site now shows an appropriate title. If you want to change the base title to something other than 'My site', you can do so in the [Preferences panel](/administration/preferences-panel); 'Site name' is the first item in the 'Site' preferences section. While you're here, change 'Site slogan'. Back to the default template, add this above the `<txp:search_input />`:
 
 ~~~ html
 <h1>
@@ -266,7 +266,7 @@ Add…
 `<txp:css format="link" />`
 ~~~
 
-…to the `<head>` region. Your site now has CSS. See the [Styles panel](https://docs.textpattern.com/administration/styles-panel) to edit the stylesheet. In the [Sections panel](https://docs.textpattern.com/administration/sections-panel), note that each section is associated with one of these name stylesheets, allowing you to set section-specific styles.
+…to the `<head>` region. Your site now has CSS. See the [Styles panel](/administration/styles-panel) to edit the stylesheet. In the [Sections panel](/administration/sections-panel), note that each section is associated with one of these name stylesheets, allowing you to set section-specific styles.
 
 ### Conditional headers
 
@@ -292,7 +292,7 @@ Enter some searches and select the category links to see how this gives you appr
 
 ### Textpattern tag attributes
 
-Most Textpattern tags allow you to set options through [tag attributes](https://docs.textpattern.com/tags/tag-attributes-cross-reference). We've seen a few of these in action above. For our `<txp:category_list />` we used the `wraptag` and `break` attributes to format the list as an HTML `<ul>` element. Let's do the same with our section list:
+Most Textpattern tags allow you to set options through [tag attributes](/tags/tag-attributes-cross-reference). We've seen a few of these in action above. For our `<txp:category_list />` we used the `wraptag` and `break` attributes to format the list as an HTML `<ul>` element. Let's do the same with our section list:
 
 ~~~ html
 <txp:section_list wraptag="ul" break="li" />
@@ -351,4 +351,4 @@ In designing your Textpattern site, explore how to use search and category linki
 
 ## Learning more
 
-This is just a bare outline of how to build a Textpattern-powered site. To continue your learning path, participate in the [Textpattern CMS support forum](https://forum.textpattern.com/), read tutorials and [Textpattern tips](https://textpattern.tips/), and study the [Tag reference](https://docs.textpattern.com/tags/).
+This is just a bare outline of how to build a Textpattern-powered site. To continue your learning path, participate in the [Textpattern CMS support forum](https://forum.textpattern.com/), read tutorials and [Textpattern tips](https://textpattern.tips/), and study the [Tag reference](/tags/).

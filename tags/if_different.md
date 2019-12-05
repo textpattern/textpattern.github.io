@@ -29,7 +29,7 @@ The **if_different** tag is a *conditional* tag and always used as an opening an
 </txp:if_different>
 ~~~
 
-The tag will output the contained statement when the value of the contained statement differs from the preceding value for that contained statement. Can be used in Textpattern 'article', 'link', 'comment', and 'file' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained).
+The tag will output the contained statement when the value of the contained statement differs from the preceding value for that contained statement. Can be used in Textpattern 'article', 'link', 'comment', and 'file' type [Form templates](/themes/form-templates-explained).
 
 Note: `if_different` can contain several HTML and Textpattern tag.
 {: .alert-block .information}
@@ -53,7 +53,7 @@ Note: `if_different` can contain several HTML and Textpattern tag.
 </txp:if_different>
 ~~~
 
-To be used inside Textpattern 'article' type [Form templates](https://docs.textpattern.com/themes/form-templates-explained) or an article tag container (such as [article](article) or [article_custom](article_custom)).
+To be used inside Textpattern 'article' type [Form templates](/themes/form-templates-explained) or an article tag container (such as [article](article) or [article_custom](article_custom)).
 
 Other tags used: [posted](posted).
 
@@ -80,7 +80,7 @@ Desired result:
 * 2nd Article from people section
 * …another article
 
-In Textpattern [Page templates](https://docs.textpattern.com/themes/page-templates-explained), add this tag to loop through all articles from all sections:
+In Textpattern [Page templates](/themes/page-templates-explained), add this tag to loop through all articles from all sections:
 
 ~~~ html
 <txp:article_custom sort="Section asc, Title asc">
@@ -115,7 +115,7 @@ Desired result:
 * 2nd Article from 3rd section
 * …another article
 
-In Textpattern [Page templates](https://docs.textpattern.com/themes/page-templates-explained), add this tag to loop through all articles from all sections:
+In Textpattern [Page templates](/themes/page-templates-explained), add this tag to loop through all articles from all sections:
 
 ~~~ html
 <txp:article_custom sort="Section asc, Title asc">

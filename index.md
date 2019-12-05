@@ -18,13 +18,13 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 ### Installation handling
 {: .index-docs-start}
 
-* [Installing Textpattern](https://docs.textpattern.com/installation/) (detailed instructions)
-* [Upgrading Textpattern](https://docs.textpattern.com/installation/upgrading-textpattern)
-* [Configuring a web server for Textpattern](https://docs.textpattern.com/installation/configuring-a-web-server-for-textpattern)
-* [Moving a Textpattern installation](https://docs.textpattern.com/installation/moving-textpattern)
-* [Post install and upgrade routines](https://docs.textpattern.com/installation/post-install-and-upgrade-routines)
-* [Multi-site Textpattern installations](https://docs.textpattern.com/installation/multi-site-textpattern)
-* [Troubleshooting a Textpattern installation or upgrade](https://docs.textpattern.com/installation/troubleshooting-textpattern)
+* [Installing Textpattern](/installation/) (detailed instructions)
+* [Upgrading Textpattern](/installation/upgrading-textpattern)
+* [Configuring a web server for Textpattern](/installation/configuring-a-web-server-for-textpattern)
+* [Moving a Textpattern installation](/installation/moving-textpattern)
+* [Post install and upgrade routines](/installation/post-install-and-upgrade-routines)
+* [Multi-site Textpattern installations](/installation/multi-site-textpattern)
+* [Troubleshooting a Textpattern installation or upgrade](/installation/troubleshooting-textpattern)
 {: .list--no-bullets}
 
 </section>
@@ -33,10 +33,10 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 ### Site administration
 {: .index-docs-admin}
 
-* [Administration fast-track](https://docs.textpattern.com/administration/admin-fast-track) (workflow insights to get up to speed quickly)
-* [Textpattern administration](https://docs.textpattern.com/administration/) (explanations of principle functionality)
-* [User roles and privileges](https://docs.textpattern.com/administration/user-roles-and-privileges) (default publishing roles and associated panel access rights)
-* [Textpattern security](https://docs.textpattern.com/administration/security) (read before you worry or hack the core)
+* [Administration fast-track](/administration/admin-fast-track) (workflow insights to get up to speed quickly)
+* [Textpattern administration](/administration/) (explanations of principle functionality)
+* [User roles and privileges](/administration/user-roles-and-privileges) (default publishing roles and associated panel access rights)
+* [Textpattern security](/administration/security) (read before you worry or hack the core)
 {: .list--no-bullets}
 
 </section>
@@ -49,9 +49,9 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 
 #### Core tags
 
-* [Tags reference](https://docs.textpattern.com/tags/)
-* [Tag use basics](https://docs.textpattern.com/tags/tag-basics/)
-* [Tags in development](https://docs.textpattern.com/tags/tags-in-development)
+* [Tags reference](/tags/)
+* [Tag use basics](/tags/tag-basics/)
+* [Tags in development](/tags/tags-in-development)
 {: .list--no-bullets}
 
 </section>
@@ -59,8 +59,8 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 
 #### Custom tags
 
-* [Custom short-tags and shortcodes](https://docs.textpattern.com/tags/shortcodes/custom-short-tags-and-shortcodes)
-* [Shortcode examples](https://docs.textpattern.com/tags/shortcodes/)
+* [Custom short-tags and shortcodes](/tags/shortcodes/custom-short-tags-and-shortcodes)
+* [Shortcode examples](/tags/shortcodes/)
 {: .list--no-bullets}
 
 </section>
@@ -70,9 +70,9 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 ### Themes
 {: .index-docs-theme}
 
-* [Themes index](https://docs.textpattern.com/themes/index.html)
-* [Themes: A complete walk-through](https://docs.textpattern.com/themes/themes-a-complete-walk-through)
-* [Creating a custom administration theme](https://docs.textpattern.com/themes/creating-a-custom-administration-theme)
+* [Themes index](/themes/index.html)
+* [Themes: A complete walk-through](/themes/themes-a-complete-walk-through)
+* [Creating a custom administration theme](/themes/creating-a-custom-administration-theme)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
 {: .list--no-bullets}
 
@@ -82,9 +82,9 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 ### Development
 {: .index-docs-dev}
 
-* [Plugin development](https://docs.textpattern.com/development/)
+* [Plugin development](/development/)
 * [Plugins website](https://github.com/textpattern/textpattern-plugins-website) (in development)
-* [All source code repositories](https://docs.textpattern.com/development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
+* [All source code repositories](/development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
 {: .list--no-bullets}
 
 </section>
@@ -93,9 +93,9 @@ The scope of this documentation is primarily on *core* functionality (i.e. how t
 ### Tutorials and FAQs
 {: .index-docs-faqs}
 
-* [Textpattern basic tutorial](https://docs.textpattern.com/faqs/textpattern-basic-tutorial)
-* [Shortcode examples](https://docs.textpattern.com/tags/shortcodes/)
-* [FAQs](https://docs.textpattern.com/faqs/) (commonly-asked technical questions)
+* [Textpattern basic tutorial](/faqs/textpattern-basic-tutorial)
+* [Shortcode examples](/tags/shortcodes/)
+* [FAQs](/faqs/) (commonly-asked technical questions)
 {: .list--no-bullets}
 
 </section>

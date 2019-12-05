@@ -8,7 +8,7 @@ description: The pluggable_ui function's main purpose is to provide additional e
 
 # The pluggable_ui function
 
-The main purpose of the `pluggable_ui` function is to provide additional event/step hooks to modify or extend the administration side user interface. Whereas [core callbacks](https://docs.textpattern.com/development/core-callbacks-reference) and [admin-side events and steps](https://docs.textpattern.com/development/admin-side-events-and-steps) are more general hooks that allow you to intercept the entire form submission process or to rewrite an entire page using search/replace, `pluggable_ui()` is far more granular. Each callback point allows the developer or theme designer to tweak a single or block-based visual element of the user interface.
+The main purpose of the `pluggable_ui` function is to provide additional event/step hooks to modify or extend the administration side user interface. Whereas [core callbacks](/development/core-callbacks-reference) and [admin-side events and steps](/development/admin-side-events-and-steps) are more general hooks that allow you to intercept the entire form submission process or to rewrite an entire page using search/replace, `pluggable_ui()` is far more granular. Each callback point allows the developer or theme designer to tweak a single or block-based visual element of the user interface.
 
 On this page:
 
@@ -36,7 +36,7 @@ Argument | Parameters | What it does | Usage
 ## Examples
 ### Example 1: Raising a pluggable_ui callback in your plugin
 
-In this example we have a basic admin-side plugin called "abc_hello". The plugin creates a new **ABC Hello** panel under the [Extensions administration region](https://docs.textpattern.com/administration/extensions-region), which is accessible to administrators and publishers (i.e. privs 1 and 2 users):
+In this example we have a basic admin-side plugin called "abc_hello". The plugin creates a new **ABC Hello** panel under the [Extensions administration region](/administration/extensions-region), which is accessible to administrators and publishers (i.e. privs 1 and 2 users):
 
 ~~~ php
 add_privs('abc_hello', '1,2');
@@ -48,7 +48,7 @@ function abc_hello_world($evt, $stp) {
     echo '<p>Hello, World!</p>';
 ~~~
 
-So far `pluggable_ui()` is not used at all in the plugin. Instead, `register_callback()` has been used to add the plugin's preferences under the [Extensions administration region](https://docs.textpattern.com/administration/extensions-region), like we could use it to do most everything else to admin-side panels.
+So far `pluggable_ui()` is not used at all in the plugin. Instead, `register_callback()` has been used to add the plugin's preferences under the [Extensions administration region](/administration/extensions-region), like we could use it to do most everything else to admin-side panels.
 
 But if you wished to allow other plugins to alter the output of abc_hello, you could replace `echo '<p>Hello, World!</p>';` part with:
 

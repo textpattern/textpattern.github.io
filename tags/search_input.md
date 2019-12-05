@@ -68,15 +68,15 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
+: **Default:** tag name or unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
 
 `label="text"`
 : Label prepended to item.
-: **Default:** unset (but see [label cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#label) for exceptions).
+: **Default:** unset (but see [label cross-reference](/tags/tag-attributes-cross-reference#label) for exceptions).
 
 `wraptag="element"`
 : HTML element to wrap markup, specified without brackets (e.g. `wraptag="div"`).
-: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

@@ -25,7 +25,7 @@ The Textpattern project uses British-English conventions for English writing and
 
 You are not expected to pay for these resources in order to contribute to Textpattern material. But if you already have the *OSM* on hand,[^osm] or even an abridged version of the *OED*,[^oed] all the better.
 
-This guide will make clear what topics to especially focus on. If you don’t find something addressed here, see if it’s addressed in an extension reference for the platform content you are working on. All reference aides for Textpattern platforms and products are listed in the the [brand index](https://docs.textpattern.com/brand/).
+This guide will make clear what topics to especially focus on. If you don’t find something addressed here, see if it’s addressed in an extension reference for the platform content you are working on. All reference aides for Textpattern platforms and products are listed in the the [brand index](/brand/).
 
 If a topic is not addressed in an extension document either, the *OSM* is the assumed reference. You may contact the [editing team](https://github.com/orgs/textpattern/teams/documentation-team)) with any questions about style or spelling conventions. At least one editor there has these Oxford references on hand.
 
@@ -75,7 +75,7 @@ User documentation
 : Audience: public
 : Author voice is: anonymous and impersonal but friendly
 : Perspective to use: second person, primarily; third-person plural in rare contexts
-: (See [Author perspective](https://docs.textpattern.com/brand/user-documentation-guidelines#author-perspective) in the user documentation guidelines.)
+: (See [Author perspective](/brand/user-documentation-guidelines#author-perspective) in the user documentation guidelines.)
 
 Community guidelines
 : Explanations.
@@ -307,7 +307,7 @@ If the example above was a line in user documentation and not being quoted here,
 Select ‘Testing’ for the **Production status** preference to put your site in testing mode.
 {: .example-text}
 
-Now ‘Testing’ is properly formatted (normal weight and single quotations marks) following the interface-strings rule for select-box options (see [Headers, labels, and options](https://docs.textpattern.com/brand/user-docs-guide#headers-labels-and-options) in the user documentation guidelines). That’s why it appears as “‘Testing’” when being quoted in the first example.
+Now ‘Testing’ is properly formatted (normal weight and single quotations marks) following the interface-strings rule for select-box options (see [Headers, labels, and options](/brand/user-docs-guide#headers-labels-and-options) in the user documentation guidelines). That’s why it appears as “‘Testing’” when being quoted in the first example.
 
 Should the marketing team want to get fancy in prose… Punctuation rules for the British quotation system are straight forward: the quotation marks go inside sentence punctuation unless the punctuation is part of the quoted text. In the first example, the full point is part of the text being quoted.
 

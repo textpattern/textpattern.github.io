@@ -8,7 +8,7 @@ description: Textpattern form templates define discrete packages of information 
 
 # Form templates
 
-Textpattern **Form templates** are akin to snippets, includes, partials, and the like that define discrete *packages* of information that can be inserted into page templates, or nested into other forms that are in turn *pulled* into page templates. They are not files, *per se*, but similar in concept to files, having their own name (ID) and content. The content in a form can be any combination of text, HTML markup, Textpattern tags, or tags for third-party [Plugins](https://docs.textpattern.com/administration/plugins-panel) you might use.
+Textpattern **Form templates** are akin to snippets, includes, partials, and the like that define discrete *packages* of information that can be inserted into page templates, or nested into other forms that are in turn *pulled* into page templates. They are not files, *per se*, but similar in concept to files, having their own name (ID) and content. The content in a form can be any combination of text, HTML markup, Textpattern tags, or tags for third-party [Plugins](/administration/plugins-panel) you might use.
 
 **On this page**:
 
@@ -19,7 +19,7 @@ Textpattern **Form templates** are akin to snippets, includes, partials, and the
 
 The content can be a single word, to the HTML framework of an entire web page template, to everything in between or something different altogether. But forms are generally most practical when scoped to repeatable, semantic regions of a page template (header, main area, side column, footer, etc.) or to functional blocks within those regions (navigation menu, sign-up form, widget, footer list, etc.). There's no right or wrong way to design forms, but as you get more familiar with Textpattern, you'll discover the optimal patterns to use, as well as how to name forms so they aren't confusing when you have many. Don't be surprised to adjust your architecture over time as you learn.
 
-Form templates are one of the six 'building blocks' described in the [Textpattern semantic model](https://docs.textpattern.com/faqs/textpattern-semantic-model). Form templates are predefined portions of text, Textpattern Tags and/or HTML which collectively define how content should be formatted and displayed. Textpattern Form templates are easily created in the Forms panel and are used by the Textpattern Tags that call them, via the `form=""` attribute.
+Form templates are one of the six 'building blocks' described in the [Textpattern semantic model](/faqs/textpattern-semantic-model). Form templates are predefined portions of text, Textpattern Tags and/or HTML which collectively define how content should be formatted and displayed. Textpattern Form templates are easily created in the Forms panel and are used by the Textpattern Tags that call them, via the `form=""` attribute.
 
 Once you have a good grasp of Textpattern Tags, form templates, and the relationship between, you'll begin to realize the seeming endless possibilities of how to customize your website's architecture and content.
 
@@ -45,7 +45,7 @@ The contents of 'single-article-template':
 </article>
 ~~~
 
-As you can see, this 'article' type Form template is composed of three different tags: [title](https://docs.textpattern.com/tags/title), [posted](https://docs.textpattern.com/tags/posted) and [body](https://docs.textpattern.com/tags/body). If this Form template was used to output an article, it would result in something like the following HTML:
+As you can see, this 'article' type Form template is composed of three different tags: [title](/tags/title), [posted](/tags/posted) and [body](/tags/body). If this Form template was used to output an article, it would result in something like the following HTML:
 
 ~~~ html
 <article>
@@ -59,9 +59,9 @@ As you can see, this 'article' type Form template is composed of three different
 
 When creating a form, it must be assigned to a 'Type', which is available via a dropdown selection box alongside the 'Name' field. There are currently seven form types: *article*, *category*, *comment*, *file*, *link*, *misc* (miscellaneous), and *section*.
 
-Form template types have almost no inherent semantic meaning, but aid solely as a means of organization for the designer/user. One notable exception: *article* type forms are the only ones listed in the [Override form](https://docs.textpattern.com/administraiton/write-panel#override-form) dropdown on the Write panel.
+Form template types have almost no inherent semantic meaning, but aid solely as a means of organization for the designer/user. One notable exception: *article* type forms are the only ones listed in the [Override form](/administraiton/write-panel#override-form) dropdown on the Write panel.
 
-The category and section types are intended to be used in conjunction with [category_list](https://docs.textpattern.com/tags/category_list) and [section_list](https://docs.textpattern.com/tags/section_list), respectively, as a value to the `form` attribute, along the lines of `<txp:section_list form="foo" />`. They serve the same use case as the `form` attributes for articles do.
+The category and section types are intended to be used in conjunction with [category_list](/tags/category_list) and [section_list](/tags/section_list), respectively, as a value to the `form` attribute, along the lines of `<txp:section_list form="foo" />`. They serve the same use case as the `form` attributes for articles do.
 
 ## Out-of-the-box forms
 

@@ -361,7 +361,7 @@ Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
 
 ### form
 
-Used to format content for display. See [Form templates](https://docs.textpattern.com/themes/form-templates-explained) for further explanation.
+Used to format content for display. See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
@@ -647,7 +647,7 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset. <s
 
 ### listform
 
-See [Form templates](https://docs.textpattern.com/themes/form-templates-explained) for further explanation.
+See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
@@ -927,7 +927,7 @@ HTML [rows attribute](https://www.w3.org/TR/html5/forms.html#attr-textarea-rows)
 
 ### searchform
 
-See [Form templates](https://docs.textpattern.com/themes/form-templates-explained) for further explanation.
+See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 

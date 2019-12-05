@@ -28,7 +28,7 @@ The **image_author** tag is a *single* tag that Textpattern will replace with th
 Tag will accept the following attributes (**case-sensitive**):
 
 `id="integer"` <span class="footnote warning">v4.7.0+</span>
-: Specifies which image to query by its image `id` as shown on the [Images panel](https://docs.textpattern.com/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
+: Specifies which image to query by its image `id` as shown on the [Images panel](/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
 : **Default:** unset.
 
 `link="link type (boolean)"`
@@ -37,7 +37,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0`.
 
 `name="image name"` <span class="footnote warning">v4.7.0+</span>
-: Specifies which image to query by its image `name` as shown on the [Images panel](https://docs.textpattern.com/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
+: Specifies which image to query by its image `name` as shown on the [Images panel](/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored.
 : **Default:** unset.
 
 `section="section name"`
@@ -60,11 +60,11 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"`
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** unset (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
+: **Default:** unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
 
 `wraptag="element"`
 : HTML element to wrap around the author name, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 ## Examples
 

@@ -8,7 +8,7 @@ description: When your needs cannot be met by core ingenuity alone, you can exte
 
 # Plugins panel TODO
 
-Textpattern by itself is capable of doing a lot, especially as you learn to use [Page templates](https://docs.textpattern.com/themes/page-templates-explained), [Form templates](https://docs.textpattern.com/themes/form-templates-explained) and [core tags](https://docs.textpattern.com/tags/) in increasingly sophisticated ways. But when your needs cannot be met (or met easily) by core ingenuity alone, you can extend functionality with plugins, whether to produce content and behaviour, enhance configurability or usability, and more.
+Textpattern by itself is capable of doing a lot, especially as you learn to use [Page templates](/themes/page-templates-explained), [Form templates](/themes/form-templates-explained) and [core tags](/tags/) in increasingly sophisticated ways. But when your needs cannot be met (or met easily) by core ingenuity alone, you can extend functionality with plugins, whether to produce content and behaviour, enhance configurability or usability, and more.
 
 On this page:
 
@@ -106,7 +106,7 @@ You'll need gzip on your web server in order to install compressed plugins, but 
 
 Plugins that you install via the Plugins panel are inserted into the database. There is another method of installing a plugin that involves obtaining the plugin as a file in the standard template format.
 
-Visit the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel) and enter a folder path/name to use as your plugin cache directory. Make sure it exists on your server!
+Visit the [Preferences panel](/administration/preferences-panel) and enter a folder path/name to use as your plugin cache directory. Make sure it exists on your server!
 
 When you have saved the changes, you may upload (via FTP) plugins in the standard template format (not the Base-64 method outlined above)into this nominated directory. Once uploaded, they will be available automatically and are “always on”, but otherwise behave in the same manner as regular plugins.
 
@@ -162,7 +162,7 @@ of those tags, and any other constructs the plugin may require, that the
 plugin will jump to life. To learn how a plugin is supposed to be used,
 select the "Help" link in the **Manage** column of the table.
 
-Some plugins may also provide an 'Options' link next to the 'Help' link, which opens a special view. These options are neither an [Extensions region](https://docs.textpattern.com/administration/extensions-region) nor preferences, exactly, but are nevertheless important for helping to make the plugin function as you may need it to.
+Some plugins may also provide an 'Options' link next to the 'Help' link, which opens a special view. These options are neither an [Extensions region](/administration/extensions-region) nor preferences, exactly, but are nevertheless important for helping to make the plugin function as you may need it to.
 
 If you read the plugin's Help information and find yourself still having
 trouble, that's the time to go to the plugin's [support
@@ -221,9 +221,9 @@ Here are a few tips for achieving plugin zen:
 
 ## Plugin development?
 
-You're in the wrong place! Please see [the suite of plugin develop aides](https://docs.textpattern.com/development/) for aspiring plugin developers.
+You're in the wrong place! Please see [the suite of plugin develop aides](/development/) for aspiring plugin developers.
 
-[Next: Visitor logs panel](https://docs.textpattern.com/administration/visitor-logs-panel)
+[Next: Visitor logs panel](/administration/visitor-logs-panel)
 
 [^1]: As time goes by some plugin authors move on to other pastures - they may abandon their Textpattern plugins, which fall out of repair, or disappear altogether. We call these plugins 'orphans', and you'll see them labeled this way in their respective support forum threads. Sometimes other developers will 'adopt' the plugins and maintain them, keeping the original plugin name. If you see a plugin indicated as 'orphan', avoid it, and ask in the forum if something else is better.
 
@@ -233,4 +233,4 @@ You're in the wrong place! Please see [the suite of plugin develop aides](https:
 
 [^4]: In the event you need to update a plugin you've edited, you may like to install [rvm_plugin_diff](https://forum.textpattern.com/viewtopic.php?id=19909) first, a plugin that helps you track down the lines of code you edited in other plugins so you don't lose track of them and can make the edits again if necessary. Keeping your own edited versions of plugins on GitHub is another way you could maintain your customized versions separate from the plugin developer's latest releases.
 
-[^5]: Good places to look and learn about building sophisticated publishing architectures with core functionality include: [Tags reference](https://docs.textpattern.com/tags/) (notably the examples provided on each tag page), [Textpattern Tips](https://textpattern.tips/), all throughout the support forum, but notably in the [How? area](https://forum.textpattern.com/viewforum.php?id=5).
+[^5]: Good places to look and learn about building sophisticated publishing architectures with core functionality include: [Tags reference](/tags/) (notably the examples provided on each tag page), [Textpattern Tips](https://textpattern.tips/), all throughout the support forum, but notably in the [How? area](https://forum.textpattern.com/viewforum.php?id=5).

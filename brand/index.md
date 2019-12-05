@@ -21,11 +21,11 @@ These baseline resources are used across all Textpattern platforms and project i
 
 ### Editorial style
 
-* [Editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide): Baseline guidelines for all written content.
+* [Editorial style guide](/brand/editorial-style-guide): Baseline guidelines for all written content.
 
 ### Visual identity and style
 
-* [Brand logomark and logotext](https://docs.textpattern.com/brand/textpattern-logopack.zip) (Zip file)
+* [Brand logomark and logotext](/brand/textpattern-logopack.zip) (Zip file)
 * [Textpattern design patterns](https://textpattern.com/design-patterns.html)
 * [Default theme design patterns](https://default-theme.textpattern.com/) 
 
@@ -35,20 +35,20 @@ These resources are extensions of the baseline resources, or otherwise relevant 
 
 ### Plugins
 
-* [Author prefixes and registration](https://docs.textpattern.com/brand/author-prefixes-and-registration)
-* [Plugin user-help guidelines](https://docs.textpattern.com/development/plugin-user-help-guidelines)
+* [Author prefixes and registration](/brand/author-prefixes-and-registration)
+* [Plugin user-help guidelines](/development/plugin-user-help-guidelines)
 
 ### Themes
 
-* [Author prefixes and registration](https://docs.textpattern.com/brand/author-prefixes-and-registration)
+* [Author prefixes and registration](/brand/author-prefixes-and-registration)
 * [Default theme design patterns](https://default-theme.textpattern.com/)
 
 ### User documentation
  
-* [User documentation guidelines](https://docs.textpattern.com/brand/user-docs-guide)
-  * [Documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures)
-  * [Documentation page template](https://docs.textpattern.com/brand/user-docs-page-template)
-* [Plugin user-help guidelines](https://docs.textpattern.com/development/plugin-user-help-guidelines)
+* [User documentation guidelines](/brand/user-docs-guide)
+  * [Documentation collaboration procedures](/brand/user-docs-procedures)
+  * [Documentation page template](/brand/user-docs-page-template)
+* [Plugin user-help guidelines](/development/plugin-user-help-guidelines)
 
 
 

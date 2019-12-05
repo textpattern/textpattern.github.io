@@ -29,9 +29,9 @@ On this panel you can do two things:
 
 ## How do sections apply to Textpattern?
 
-Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences panel](https://docs.textpattern.com/administration/preferences-panel#article-url-pattern).
+Sections essentially provide the ability to create lateral structure in your site, thus each section has its own unique URL if the site is configured to use clean URLs in the [Preferences panel](/administration/preferences-panel#article-url-pattern).
 
-In the Sections panel, you're able to define what [Pages](https://docs.textpattern.com/administration/pages-panel) and [Styles](https://docs.textpattern.com/administration/styles-panel) will be used for the [Articles](https://docs.textpattern.com/administration/articles-panel) published in a given section. You can also control if articles posted in that section will be seen on the front page of the site, and whether or not the articles will be included in site searches and feeds.
+In the Sections panel, you're able to define what [Pages](/administration/pages-panel) and [Styles](/administration/styles-panel) will be used for the [Articles](/administration/articles-panel) published in a given section. You can also control if articles posted in that section will be seen on the front page of the site, and whether or not the articles will be included in site searches and feeds.
 
 In a fresh installation of Textpattern one dedicated section is included: 'Articles'.
 
@@ -51,13 +51,13 @@ You open the Section property editor when creating a new section or by tapping t
 
 **Section name:** The name of your section that is used in URLs and as a reference by various Textpattern tags. It must be unique across the site (no two sections can be named the same), and you should try to avoid non-alphanumeric characters besides hyphens and underscores. Further restrictions apply: see [Section names to avoid](#section-names-to-avoid) below for a list of unsafe names.
 
-**Section title:** A title for the section, which can be harnessed by tags (such as [section](https://docs.textpattern.com/tags/section)) to display a more human-friendly name for your section.
+**Section title:** A title for the section, which can be harnessed by tags (such as [section](/tags/section)) to display a more human-friendly name for your section.
 
 **Uses theme:** From Textpattern 4.7.0, pages and styles are grouped into *themes*. Selecting the theme you wish to use will alter the available pages and styles in the following two select lists.
 
-**Uses page:** Textpattern assigns its default page template automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Pages](https://docs.textpattern.com/administration/pages-panel) already created. You can reassign sections to pages at any time.
+**Uses page:** Textpattern assigns its default page template automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Pages](/administration/pages-panel) already created. You can reassign sections to pages at any time.
 
-**Uses style:** Textpattern assigns its default style (CSS) automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Styles](https://docs.textpattern.com/administration/styles-panel) already created. You can reassign sections to styles at any time.
+**Uses style:** Textpattern assigns its default style (CSS) automatically (to ensure baseline publishing capabilities) but you can select differently if you have additional [Styles](/administration/styles-panel) already created. You can reassign sections to styles at any time.
 
 **On front page?:** This is an extremely important option and should be considered with respect to the overall design of the site. Remember that section content only shows up when that section is viewed, except for the front page. This control permits or denies content from the section showing up when the "front page" (the base `index.php` with no arguments) is served.
 
@@ -98,7 +98,7 @@ Sections can be given any arbitrary name, except for a few labels already reserv
             </tr>
             <tr>
                 <th scope="row"><code>files</code></th>
-                <td>Clashes with the default directory used to hold files available for download. If you have moved this via chnages to the <a href="https://docs.textpattern.com/administration/preferences-panel#file-directory-path">Preferences panel</a> then you may use this section name</td>
+                <td>Clashes with the default directory used to hold files available for download. If you have moved this via changes to the <a href="/administration/preferences-panel#file-directory-path">Preferences panel</a> then you may use this section name</td>
             </tr>
             <tr>
                 <th scope="row"><code>index</code></th>
@@ -135,7 +135,7 @@ The Search function has two components:
 1. A text field for entering the search query
 2. An adjacent drop-down-list to specify which area is to be searched
 
-Anything entered in the text field will be treated as a complete phrase (see the [Articles panel](https://docs.textpattern.com/administration/articles-panel) documentation for full details on this).
+Anything entered in the text field will be treated as a complete phrase (see the [Articles panel](/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list if any rows meet the criteria.
 
@@ -153,4 +153,4 @@ For performing changes, go to the drop-down list 'With selected…' and choose t
 
 At the very bottom of the list you will find a pagination tool. You can change the number of sections listed per page by selecting another value from the number range. If there are more rows available on subsequent pages, you will see the current page number that you can edit and press Enter to jump to that page, along with links to visit the next and previous pages.
 
-[Next: Pages panel](https://docs.textpattern.com/administration/pages-panel)
+[Next: Pages panel](/administration/pages-panel)

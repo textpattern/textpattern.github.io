@@ -21,14 +21,14 @@ tags:
 <txp:feed_link>
 ~~~
 
-The **feed_link** tag can be used as either a *single* or *container* tag and is used to output a link to the site's 'articles' RSS feed. When used as a container tag, it will turn the contents into a link to the feed, otherwise the value of `label` attribute will be used as link text. Should be used in Textpattern [Page templates](https://docs.textpattern.com/themes/page-templates-explained).
+The **feed_link** tag can be used as either a *single* or *container* tag and is used to output a link to the site's 'articles' RSS feed. When used as a container tag, it will turn the contents into a link to the feed, otherwise the value of `label` attribute will be used as link text. Should be used in Textpattern [Page templates](/themes/page-templates-explained).
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
 `category="category name"`
-: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories panel](https://docs.textpattern.com/administration/categories-panel) to ensure you are using the correct names.
+: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories panel](/administration/categories-panel) to ensure you are using the correct names.
 : **Values:** (comma separated list of) category name(s).
 : **Default:** current category.
 
@@ -44,7 +44,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `limit="integer"`
 : Number of articles to display in the feed.
-: **Default:** depends upon [Preferences panel](https://docs.textpattern.com/administration/preferences-panel) setting.
+: **Default:** depends upon [Preferences panel](/administration/preferences-panel) setting.
 
 `section="section name"`
 : Restrict to articles from specified section(s).
@@ -61,15 +61,15 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 `class="class name"` <span class="footnote warning">v4.3.0+</span>
 : HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** tag name or unset (see [class cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#class)).
+: **Default:** tag name or unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
 
 `label="text"`
 : Label prepended to item.
-: **Default:** unset (but see [label cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#label) for exceptions).
+: **Default:** unset (but see [label cross-reference](/tags/tag-attributes-cross-reference#label) for exceptions).
 
 `wraptag="element"`
 : HTML element to wrap feed link, specified without brackets (e.g. `wraptag="p"`).
-: **Default:** unset (but see [wraptag cross-reference](https://docs.textpattern.com/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
 Note: `wraptag` is applicable only when using `format` of `a`.
 {: .alert-block .information}
