@@ -21,7 +21,7 @@ On this page:
 
 In order to run any PHP application on Nginx you will have to have [PHP-FPM](https://php-fpm.org) available and running on your system.
 
-To ease the installation you can use pre-built packages in the [EPEL](https://fedoraproject.org/wiki/EPEL), [Remi](http://rpms.famillecollet.com), or [Atomic](http://wiki.atomicorp.com/wiki/index.php/Atomic) repositories.
+To ease the installation you can use pre-built packages in the [EPEL](https://fedoraproject.org/wiki/EPEL), [Remi](https://rpms.remirepo.net), or [Atomic](https://wiki.atomicorp.com/wiki/index.php/Atomic) repositories.
 
 You need to have Nginx as well as PHP-FPM running. If you installed them via [yum](http://yum.baseurl.org) you will most likely be able to configure them to start at boot time using:
 

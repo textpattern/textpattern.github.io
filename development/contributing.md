@@ -54,7 +54,7 @@ $ ./vendor/bin/phpcs --standard=phpcs.xml *.php textpattern
 
 ### Versioning
 
-The project follows [Semantic Versioning](http://semver.org/) and the `major.minor.patch` format.
+The project follows [Semantic Versioning](https://semver.org/) and the `major.minor.patch` format.
 
 ## Increasing the likelihood of code being accepted
 

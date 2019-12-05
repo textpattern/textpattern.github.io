@@ -149,7 +149,7 @@ Clarifying notes about using the template:
 
 ## Textile formatting
 
-The template already includes the necessary [Textile](http://txstyle.org/). We assume you know what Textile is if you're using Textpattern (if not, you should get on that), but following are the basic things to look for in the template.
+The template already includes the necessary [Textile](https://textile-lang.com/). We assume you know what Textile is if you're using Textpattern (if not, you should get on that), but following are the basic things to look for in the template.
 
 **Headers h1-h3:**
 

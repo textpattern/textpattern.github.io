@@ -464,7 +464,7 @@ function abc_my_function($evt, $stp, &$data)
 ## Plugin callbacks
 
 In order to process these callbacks, your plugin must raise the `PLUGIN_LIFECYCLE_NOTIFY` flag to register its intent. In addition, if
-you wish to offer a link to your plugin's preferences from the [Plugins](http:docs.textpattern.com/administration/plugins-panel) panel, you must raise the `PLUGIN_HAS_PREFS` flag.
+you wish to offer a link to your plugin's preferences from the [Plugins](/administration/plugins-panel) panel, you must raise the `PLUGIN_HAS_PREFS` flag.
 
 `$event` | `$step` | When it occurs
 ---|---|---

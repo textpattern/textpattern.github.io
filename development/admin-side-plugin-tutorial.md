@@ -22,7 +22,7 @@ On this page:
 
 ## Tutorial objective
 
-This tutorial assumes you have a working knowledge of [PHP](http://php.net), a Textpattern website ready for use, and the [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer) plugin installed.
+This tutorial assumes you have a working knowledge of [PHP](https://php.net), a Textpattern website ready for use, and the [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer) plugin installed.
 
 The plugin in this tutorial will:
 

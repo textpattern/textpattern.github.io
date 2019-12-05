@@ -347,8 +347,6 @@ until further notice.
 
 ## Getting help
 
-If you need a warm shoulder to lean on, subscribe to the [plugin development mailing list](http://lists.textpattern.com/), which might be rather quiet unless you use it.
-
 The Textpattern CMS support forum, notably the [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13) area, is a good place to post questions too.
 
 ## External reading
