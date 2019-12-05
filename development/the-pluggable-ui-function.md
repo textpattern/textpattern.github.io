@@ -28,7 +28,7 @@ Callbacks written with `pluggable_ui` have a different signature than those writ
 Argument | Parameters | What it does | Usage
 ---|---|---|---
 1 | `$event`| Name of the core _event_ for the panel you’re targeting. | Most of the time, these begin with the event name plus the `_ui` (for 'user interface') suffix. For example, on the Write panel the event is `article_ui`, and on the Files panel the event is `file_ui`.
-2 | `$step`| Name of the core _step_ for the specific DOM element targeted. | Usually the part of the panel that contains the widget or any of its controls you wish to change. For example, on the Write panel, the Article image control has a `$step` called `article_image` and the Custom fields widget has one called `custom_fields`, and so on.
+2 | `$step`| Name of the core _step_ for the specific DOM element targeted. | Usually the part of the panel that contains the element or any of its controls you wish to change. For example, on the Write panel, the Article image control has a `$step` called `article_image` and the Custom fields element has one called `custom_fields`, and so on.
 3 | `$data`| The default data (content and/or markup); it's rendered as-is if not modified. | If applicable, this contains the default data (text, markup, both…). It will be used as-is if you don't modify it. Parsing this argument allows you to alter what was originally going to be displayed, and then return it. Or you may discard this markup and return your own instead.
 4 | `$rs`| The returned 'record set' from the database. | If applicable, this is the *record set* returned from the database table that pertains to the named *event*.
 5 | `(value)`| The value of a named element (e.g. preference setting), indicated by argument 4. | If applicable, this is a special case (e.g. when dealing with preference settings) where argument #4 becomes the preference name and argument #5 holds its value.
@@ -64,15 +64,15 @@ register_callback('xyz_hello_world', 'abc_hello', '');
 
 If no other plugin overrides the content by registering a callback on the `abc_hello` event, `<p>Hello, World!</p>` is rendered.
 
-### Example 2: Altering the Status widget's radio button list
+### Example 2: Altering the Status element's radio button list
 
-In this example we'll alter the **Status** widget's radio button list by adding a new option to it:
+In this example we'll alter the **Status** element's radio button list by adding a new option to it:
 
 ~~~ php
 register_callback('abc_altered_status', 'article_ui', 'status');
 
 /**
- * Append status 6 to the Status widget.
+ * Append status 6 to the Status element.
  */
 function abc_altered_status($evt, $stp, $data, $rs)
 {
@@ -84,7 +84,7 @@ function abc_altered_status($evt, $stp, $data, $rs)
 }
 ~~~
 
-We've used `register_callback()` to define our callback function, and in this case we've employed the `$event`/`$step` combination for targeting the **Status** widget in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, tacks it on the end and returns (outputs) the resulting altered list.
+We've used `register_callback()` to define our callback function, and in this case we've employed the `$event`/`$step` combination for targeting the **Status** element in the **Write** panel. The function then pulls the default record set, defines a new status button option for inclusion, tacks it on the end and returns (outputs) the resulting altered list.
 
 ## Events and steps reference
 
@@ -94,7 +94,7 @@ In this section:
 
 * [Header block](#header-block)
 * [Footer block](#footer-block)
-* [General UI widgets](#widgets)
+* [General UI elements](#ui-elements)
 * [Write panel](#write-panel)
 * [Category panel](#category-panel)
 * [Images panel](#images-panel)
@@ -127,10 +127,10 @@ In this section:
 * **When it occurs:** When the theme's footer bar is rendered.
 * **What it allows:** Alteration of the footer area of each panel. Theme authors do this by writing a `footer()` function in their theme's PHP file. 
 
-### Widgets
+### UI elements
 
 `{event}_ui > inputlabel.{name}`
-* **When it occurs:** Whenever a label plus its associated input control are rendered together. The `{event}` is the panel on which the widget appears. The `{name}` is the control's `name` attribute.
+* **When it occurs:** Whenever a label plus its associated input control are rendered together. The `{event}` is the panel on which the element appears. The `{name}` is the control's `name` attribute.
 * **What it allows:** Alteration of any label and input control, such as those found on the Preferences panel or the File Edit panel.
 * **Argument \#3:** The default markup.
 * **Argument \#4:** The values passed in as arguments to the function: `name`, `input`, `label`, `help`, `atts`, `wraptag_val`.
