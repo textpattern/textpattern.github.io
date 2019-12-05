@@ -21,7 +21,7 @@ tags:
 <txp:file_download_name />
 ~~~
 
-The **file_download_name** tag is a *single* tag that Textpattern will replace with the name of the file to download. Should be used in Textpattern 'file' type [Form templates](/themes/form-templates-explained) or within a [file_download_link](file_download_link) tag.
+The **file_download_name** tag is a *single* tag that Textpattern will replace with the name of the file to download. Should be used in Textpattern 'file' type [Form templates](/themes/form-templates-explained) or within a [file_download_link](/tags/file_download_link) tag.
 
 ## Attributes
 
@@ -43,7 +43,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:file_download_link>
 ~~~
 
-Other tags used: [file_download_link](file_download_link), [file_download_size](file_download_size).
+Other tags used: [file_download_link](/tags/file_download_link), [file_download_size](/tags/file_download_size).
 
 ## Genealogy
 

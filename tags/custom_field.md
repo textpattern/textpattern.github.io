@@ -28,7 +28,7 @@ Custom fields are useful when you need to output content having a consistent str
 1. [Defining custom fields](/administration/preferences-panel#custom-fields-preferences)
 2. @@Adding custom field data@@
 
-Also see the [if_custom_field](if_custom_field) conditional tag, which provides more flexibility and power using custom fields.
+Also see the [if_custom_field](/tags/if_custom_field) conditional tag, which provides more flexibility and power using custom fields.
 
 ## Attributes
 
@@ -106,7 +106,7 @@ HTML returned would be:
 </article>
 ~~~
 
-Other tags used: [title](title), [posted](posted), [excerpt](excerpt).
+Other tags used: [title](/tags/title), [posted](/tags/posted), [excerpt](/tags/excerpt).
 
 ### Example 3: Unescaping HTML output
 

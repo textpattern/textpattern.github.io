@@ -139,7 +139,7 @@ The resulting character count of this block of markup, which is functionally ide
 
 ## Further shortening with short-tags
 
-Beginning with Textpattern 4.7.0, you can use [core short-tag structure](core-short-tags) too, which can further reduce volume, though maybe increase learning.
+Beginning with Textpattern 4.7.0, you can use [core short-tag structure](/tags/tag-basics/core-short-tags) too, which can further reduce volume, though maybe increase learning.
 
 ## Option, options… What do I do?
 
@@ -147,10 +147,10 @@ This doc might make it seem you must learn more advanced ways of working with Te
 
 The natural tendency for people is to start with a mixed markup approach, then tighten up the their markup over time by leaning more on Textpattern tags. The result is often less markup overall. This can help offset the additional markup from plugin tags, when such functionality is used.
 
-But that’s not a hard-fast given. Sometimes more characters are needed to get really sophisticated things done — real Textpattern wizardry. So take the integrated advantages with a grain of salt. Two grains if you use [short-tags](core-short-tags) too.
+But that’s not a hard-fast given. Sometimes more characters are needed to get really sophisticated things done — real Textpattern wizardry. So take the integrated advantages with a grain of salt. Two grains if you use [short-tags](/tags/tag-basics/core-short-tags) too.
 
 More important than character count is your understanding of the resulting markup — or that of your client's, if you're building a website and handing it over to a different administrator — regardless of how markup is written. As long as the markup separates content from static constructs and you (or the client) understands it, you're doing well.
 
 In summary, mixed markup is generally easier for new Textpattern users to get up to speed with, until they've become more familiar with the scope of Textpattern tag functionality. Advanced users of Textpattern generally prefer the integrated notation because it saves character space. But it doesn't matter either way, as long as the markup is constructed correctly in relation to how Textpattern functions.
 
-[Next: Tag escaping](tag-escaping)
+[Next: Tag escaping](/tags/tag-basics/tag-escaping)

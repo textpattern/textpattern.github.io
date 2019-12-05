@@ -41,4 +41,4 @@ This tag has no attributes.
 </p>
 ~~~
 
-Other tags used: [comment_id](comment_id), [comment_message](comment_message), [comment_permlink](comment_permlink).
+Other tags used: [comment_id](/tags/comment_id), [comment_message](/tags/comment_message), [comment_permlink](/tags/comment_permlink).

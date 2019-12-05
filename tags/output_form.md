@@ -27,7 +27,7 @@ The basic function of **output_form** is to take a particular form that defines 
 
 From Textpattern CMS version 4.7.0 onwards, `<txp:output_form form="my_form" />` can be invoked as 'shortcode' `<txp::my_form />` if its name contains only alphanumeric characters.
 
-For the container tag and/or shortcode usage, see the [yield](yield) tag.
+For the container tag and/or shortcode usage, see the [yield](/tags/yield) tag.
 
 ## Attributes
 
@@ -105,7 +105,7 @@ or simply
 
 The advantage of this is that when you edit your page header, you can do so once in the form template and it will update all instances of use in your different pages at the same time.
 
-Other tags used: [css](css), [feed_link](feed_link), [page_title](page_title).
+Other tags used: [css](/tags/css), [feed_link](/tags/feed_link), [page_title](/tags/page_title).
 
 ### Example 3: Shortcode to create HTML5 video code
 
@@ -139,7 +139,7 @@ For example:
 <txp::media_video width="720" mp4-url="/video/example.mp4" webm-url="/video/example.webm" poster-url="/video/example.png" name="Cat video" description="My great video of cats." duration-seconds="20" />
 ~~~
 
-Other tags used: [if_yield](if_yield), [posted](posted), [yield](yield).
+Other tags used: [if_yield](/tags/if_yield), [posted](/tags/posted), [yield](/tags/yield).
 
 ### Example 4: Longcode format
 
@@ -204,7 +204,7 @@ This can be fine, but if you want to keep `greeting` class on the wrapping `p`, 
 <txp::hello yield="who" who="guest" wraptag="p" class="greeting" />
 ~~~
 
-Other tags used: [yield](yield).
+Other tags used: [yield](/tags/yield).
 
 ## Genealogy
 

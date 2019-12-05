@@ -31,7 +31,7 @@ The **if_first_file** tag is a *conditional* tag and always used as an opening a
 </txp:if_first_file>
 ~~~
 
-The tag will execute the contained statements if the displayed file is the first in the currently displayed [file_download_list](file_download_list). The tag supports [else](else).
+The tag will execute the contained statements if the displayed file is the first in the currently displayed [file_download_list](/tags/file_download_list). The tag supports [else](/tags/else).
 
 ## Attributes
 
@@ -59,7 +59,7 @@ This tag has no attributes.
 </txp:file_download_list>
 ~~~
 
-Other tags used: [else](else), [file_download_link](file_download_link), [file_download_list](file_download_list), [file_download_name](file_download_name).
+Other tags used: [else](/tags/else), [file_download_link](/tags/file_download_link), [file_download_list](/tags/file_download_list), [file_download_name](/tags/file_download_name).
 
 ## Genealogy
 

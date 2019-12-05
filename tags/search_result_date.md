@@ -47,4 +47,4 @@ The **search_result_date** tag is a *single* tag. This tag will provide the arti
 
 Used in a search results form, this offers a search result entry comprising a hyperlinked article title, and the date that article was posted.
 
-Other tags used: [title](title), [permlink](permlink), [posted](posted).
+Other tags used: [title](/tags/title), [permlink](/tags/permlink), [posted](/tags/posted).

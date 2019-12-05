@@ -21,7 +21,7 @@ tags:
 <txp:file_download_author />
 ~~~
 
-The **file_download_author** tag is a *single* tag that Textpattern will replace with the author's name associated with the current download in a [file_download](file_download). Can **only** be used inside `<txp:file_download />`.
+The **file_download_author** tag is a *single* tag that Textpattern will replace with the author's name associated with the current download in a [file_download](/tags/file_download). Can **only** be used inside `<txp:file_download />`.
 
 ## Attributes
 

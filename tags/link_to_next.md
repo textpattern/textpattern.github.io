@@ -44,7 +44,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:link_to_next>
 ~~~
 
-Other tags used: [next_title](next_title).
+Other tags used: [next_title](/tags/next_title).
 
 ### Example 2: Link to next article using static text
 
@@ -56,7 +56,7 @@ Other tags used: [next_title](next_title).
 
 This will always display the text 'Next', even when there is no next article.
 
-Note: While `showalways` will enable this tag to display what is wrapped inside it, [next_title](next_title) returns nothing if there is no next title, so nothing is displayed. Use text, or the returned value, that you need displayed.
+Note: While `showalways` will enable this tag to display what is wrapped inside it, [next_title](/tags/next_title) returns nothing if there is no next title, so nothing is displayed. Use text, or the returned value, that you need displayed.
 {: .alert-block .information}
 
 ### Example 3: Customising links
@@ -71,4 +71,4 @@ For example, to give the link an HTML `title` attribute of the next article's ti
 </a>
 ~~~
 
-Other tags used: [next_title](next_title).
+Other tags used: [next_title](/tags/next_title).

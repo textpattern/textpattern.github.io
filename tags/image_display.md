@@ -10,7 +10,7 @@ tags:
 
 # Image display
 
-**Deprecated in Textpattern 4.7.0** (use the [image](image) tag instead)
+**Deprecated in Textpattern 4.7.0** (use the [image](/tags/image) tag instead)
 {: .alert-block .error}
 
 **On this page**:
@@ -24,9 +24,9 @@ tags:
 <txp:image_display />
 ~~~
 
-The **image_display** tag is a *single* tag that is intended to be used in tandem with [image_index](image_index).
+The **image_display** tag is a *single* tag that is intended to be used in tandem with [image_index](/tags/image_index).
 
-The **image_display** tag displays an image specified by the page URL which in turn is built by its tandem tag [image_index](image_index). To use this tag successfully, it has to be placed either inside an article which shares a common category with the images to display (thereby linking article and image categories), or in a location at the page template which is displayed without any special article context.
+The **image_display** tag displays an image specified by the page URL which in turn is built by its tandem tag [image_index](/tags/image_index). To use this tag successfully, it has to be placed either inside an article which shares a common category with the images to display (thereby linking article and image categories), or in a location at the page template which is displayed without any special article context.
 
 If this tag seems to display no image at all, it probably resides inside an article which is never rendered as it does not belong to the currently active category.
 
@@ -42,10 +42,10 @@ This tag has no attributes.
 <txp:image_display />
 ~~~
 
-See the [image_index](image_index) tag documentation for details on how to populate this tag with content.
+See the [image_index](/tags/image_index) tag documentation for details on how to populate this tag with content.
 
 ## Genealogy
 
 ### Version 4.7.0
 
-Tag support removed - use [image](image) tag instead.
+Tag support removed - use [image](/tags/image) tag instead.

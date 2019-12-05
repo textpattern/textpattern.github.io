@@ -30,7 +30,7 @@ The **if_custom_field** tag may be used as a *single* or *conditional* tag. For 
 </txp:if_custom_field>
 ~~~
 
-The tag will execute the contained statements if one or more custom fields for a given article have content. The contents of a custom field can be displayed with the [custom_field](custom_field) tag.
+The tag will execute the contained statements if one or more custom fields for a given article have content. The contents of a custom field can be displayed with the [custom_field](/tags/custom_field) tag.
 
 If used a *single* tag, the tag will return `1` if the named custom field contains any content. It will return nothing otherwise. See Example 5.
 
@@ -104,7 +104,7 @@ For a **book without a subtitle*, this might be shown:
 <p>Published by HarperCollins in 2004.</p>
 ~~~
 
-Other tags used: [custom_field](custom_field).
+Other tags used: [custom_field](/tags/custom_field).
 
 ### Example 2: Check custom field value
 
@@ -140,7 +140,7 @@ If the custom field named 'website' has some content, display it, otherwise disp
 
 Why might you do it? If you publish music reviews and you've set up some custom fields for the band name, the album title and the band's website. But not all bands have a website and you want to display a standard message if a band hasn't got one.
 
-Other tags used: [custom_field](custom_field), [else](else).
+Other tags used: [custom_field](/tags/custom_field), [else](/tags/else).
 
 ### Example 4: Display a conditional statement based on a comma separated value
 
@@ -154,7 +154,7 @@ Other tags used: [custom_field](custom_field), [else](else).
 
 Checks the content of the custom field named `animals` which has a comma separated list of animals. It checks if it contains the text `monkeys`, and displays a conditional statement if it does.
 
-Other tags used: [else](else).
+Other tags used: [else](/tags/else).
 
 ### Example 5: Use as a single tag to increment a counter
 
@@ -166,7 +166,7 @@ Other tags used: [else](else).
 
 When placed within an `article` context, it increments the `counter` variable if the custom field named `Type` contains the value `info`. If it does, the `<txp:if_custom_field />` tag returns `1` which is then added to the current value of the counter.
 
-Other tags used: [variable](variable), [if_individual_article](if_individual_article).
+Other tags used: [variable](/tags/variable), [if_individual_article](/tags/if_individual_article).
 
 ## Genealogy
 

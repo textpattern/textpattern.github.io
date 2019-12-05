@@ -36,7 +36,7 @@ This is equivalent to putting the contained statements into a form named 'my_for
 
 Related matches are selected as follows:
 
-If a match to category 1 ([category1](category1)) or category 2 ([category2](category2)) of the individual article being displayed is found in either category 1 or category 2 of any other article in the database, it will cause that article to be listed as related.
+If a match to category 1 ([category1](/tags/category1)) or category 2 ([category2](/tags/category2)) of the individual article being displayed is found in either category 1 or category 2 of any other article in the database, it will cause that article to be listed as related.
 
 If category 1 of the individual article being displayed is left blank and category 2 is not blank, then all other articles are selected as being related. If both categories are left blank, then no articles are selected.
 
@@ -151,7 +151,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 </txp:related_articles>
 ~~~
 
-Other tags used: [permlink](permlink), [title](title), [author](author).
+Other tags used: [permlink](/tags/permlink), [title](/tags/title), [author](/tags/author).
 
 ## Genealogy
 

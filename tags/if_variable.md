@@ -30,9 +30,9 @@ The **if_variable** tag is a *conditional* tag and always used as an opening and
 </txp:if_variable>
 ~~~
 
-It tests the existence and/or value of a global variable set with the [variable](variable) tag.
+It tests the existence and/or value of a global variable set with the [variable](/tags/variable) tag.
 
-Note: In case you are getting unexpected results in an **if_variable** evaluation, check whether you have entered additional white space or invisible characters in your [variable](variable) declarations and remove those.
+Note: In case you are getting unexpected results in an **if_variable** evaluation, check whether you have entered additional white space or invisible characters in your [variable](/tags/variable) declarations and remove those.
 {: .alert-block .information}
 
 ## Attributes
@@ -47,7 +47,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ## Examples
 
-See the [variable](variable) tag page for examples.
+See the [variable](/tags/variable) tag page for examples.
 
 ## Genealogy
 

@@ -37,7 +37,7 @@ This tag has no attributes.
 </txp:permlink>
 ~~~
 
-Other tags used: [permlink](permlink).
+Other tags used: [permlink](/tags/permlink).
 
 ### Example 2: Conditional use
 
@@ -52,4 +52,4 @@ This will only display the hyperlinked article ID when on an individual article 
 </txp:if_individual_article>
 ~~~
 
-Other tags used: [if_individual_article](if_individual_article), [permlink](permlink).
+Other tags used: [if_individual_article](/tags/if_individual_article), [permlink](/tags/permlink).

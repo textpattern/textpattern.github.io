@@ -62,7 +62,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </p>
 ~~~
 
-Other tags used: [permlink](permlink), [posted](posted), [title](title).
+Other tags used: [permlink](/tags/permlink), [posted](/tags/posted), [title](/tags/title).
 
 ## Genealogy
 

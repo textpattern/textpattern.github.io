@@ -21,7 +21,7 @@ tags:
 <txp:image_url />
 ~~~
 
-The **image_url** tag is a *single* or a *container* tag that Textpattern will replace with the URL of the current image in an [images](images) list, or the specific image if given an `id` or `name`.
+The **image_url** tag is a *single* or a *container* tag that Textpattern will replace with the URL of the current image in an [images](/tags/images) list, or the specific image if given an `id` or `name`.
 
 If used as a container, it must be specified as an opening and closing pair of tags, like this:
 
@@ -80,7 +80,7 @@ Used as a container:
 </txp:images>
 ~~~
 
-Other tags used: [images](images), [thumbnail](thumbnail).
+Other tags used: [images](/tags/images), [thumbnail](/tags/thumbnail).
 
 ### Example 2: Usage outside of image list context (directly via image ID)
 
@@ -91,7 +91,7 @@ Other tags used: [images](images), [thumbnail](thumbnail).
             <txp:image_url id="21" link="0" /> 1x">
 ~~~
 
-Other tags used: [image_info](image_info).
+Other tags used: [image_info](/tags/image_info).
 
 ## Genealogy
 

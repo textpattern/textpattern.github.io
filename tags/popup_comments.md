@@ -56,7 +56,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </html>
 ~~~
 
-Other tags used: [css](css), [page_title](page_title).
+Other tags used: [css](/tags/css), [page_title](/tags/page_title).
 
 ## Genealogy
 

@@ -53,7 +53,7 @@ The Textile attribute (and values), `escape="tidy,textile"`, used in the example
 
 The corresponding short-tag reflects the name of your shortcode form: `<txp::figure />`.
 
-See [Custom short-tags and shortcodes](custom-short-tags-and-shortcodes) doc for tag usage when short-tag functionality is disabled in Preferences.
+See [Custom short-tags and shortcodes](/tags/shortcodes/custom-short-tags-and-shortcodes) doc for tag usage when short-tag functionality is disabled in Preferences.
 
 ## Tag attributes
 

@@ -61,14 +61,14 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 </txp:if_comments_preview>
 ~~~
 
-Other tags used: [comments](comments), [if_comments_preview](if_comments_preview).
+Other tags used: [comments](/tags/comments), [if_comments_preview](/tags/if_comments_preview).
 
 ## Genealogy
 
 ### Version 4.6.0
 
 Can be used as a container tag. \\
-`label` attribute added (replaces functionality of deprecated `previewlabel` attribute in [comments_form](comments_form) tag).
+`label` attribute added (replaces functionality of deprecated `previewlabel` attribute in [comments_form](/tags/comments_form) tag).
 
 ### Version 4.0.4
 

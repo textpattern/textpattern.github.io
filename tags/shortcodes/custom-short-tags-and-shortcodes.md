@@ -19,7 +19,7 @@ In addition to the [core short-tags](/tags/tag-basics/core-short-tags) functiona
 
 The one difference between the [core short-tags](/tags/tag-basics/core-short-tags) and custom short-tags is in relation to the `<txp:output_form>` tag. Whenever you create a Textpattern Form intended as a shortcode form (see below), it automatically makes a custom short-tag available for use having the same name as the form.
 
-For example, a shortcode form might be designed to output an image with caption, wrapped up nicely as an HTML `figure`. It just so happens this is explained in the [Image with caption shortcode](image-with-caption-shortcode) doc. You might even name the Form, _figure_, if you never needed another type of figure shortcode form. By doing that, you now have a custom short-tag available for use as:
+For example, a shortcode form might be designed to output an image with caption, wrapped up nicely as an HTML `figure`. It just so happens this is explained in the [Image with caption shortcode](/tags/shortcodes/image-with-caption-shortcode) doc. You might even name the Form, _figure_, if you never needed another type of figure shortcode form. By doing that, you now have a custom short-tag available for use as:
 
 ~~~ html
 <txp::figure />

@@ -20,8 +20,8 @@ For each attribute, the associated tags are listed underneath it.
 
 <div class="layout-text4col">
 
-* [category_list](category_list)
-* [section_list](section_list)
+* [category_list](/tags/category_list)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -31,8 +31,8 @@ Used to disable assigned override forms. Works within article lists and single a
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
 
 </div>
 
@@ -40,7 +40,7 @@ Used to disable assigned override forms. Works within article lists and single a
 
 <div class="layout-text4col">
 
-* [comment_permlink](comment_permlink)
+* [comment_permlink](/tags/comment_permlink)
 
 </div>
 
@@ -48,11 +48,11 @@ Used to disable assigned override forms. Works within article lists and single a
 
 <div class="layout-text4col">
 
-* [comment_email_input](comment_email_input)
-* [comment_message_input](comment_message_input)
-* [comment_name_input](comment_name_input)
-* [comment_web_input](comment_web_input)
-* [search_input](search_input)
+* [comment_email_input](/tags/comment_email_input)
+* [comment_message_input](/tags/comment_message_input)
+* [comment_name_input](/tags/comment_name_input)
+* [comment_web_input](/tags/comment_web_input)
+* [search_input](/tags/search_input)
 
 </div>
 
@@ -60,10 +60,10 @@ Used to disable assigned override forms. Works within article lists and single a
 
 <div class="layout-text4col">
 
-* [article_custom](article_custom)
-* [file_download_list](file_download_list)
-* [images](images)
-* [linklist](linklist)
+* [article_custom](/tags/article_custom)
+* [file_download_list](/tags/file_download_list)
+* [images](/tags/images)
+* [linklist](/tags/linklist)
 
 </div>
 
@@ -71,9 +71,9 @@ Used to disable assigned override forms. Works within article lists and single a
 
 <div class="layout-text4col">
 
-* [file_download_list](file_download_list)
-* [images](images)
-* [linklist](linklist)
+* [file_download_list](/tags/file_download_list)
+* [images](/tags/images)
+* [linklist](/tags/linklist)
 
 </div>
 
@@ -83,22 +83,22 @@ HTML tag (without brackets) or string used to separate list items. Suggested val
 
 <div class="layout-text4col">
 
-* [article](article) <span class="warning">●</span>
-* [article_custom](article_custom) <span class="warning">●</span>
-* [authors](authors)
-* [category_list](category_list)
-* [comments](comments)
-* [comments_error](comments_error)
-* [file_download_list](file_download_list)
-* [image_index](image_index)
-* [image_info](image_info)
-* [images](images)
-* [keywords](keywords)
-* [linklist](linklist) <span class="warning">●</span>
-* [recent_articles](recent_articles)
-* [recent_comments](recent_comments)
-* [related_articles](related_articles)
-* [section_list](section_list)
+* [article](/tags/article) <span class="warning">●</span>
+* [article_custom](/tags/article_custom) <span class="warning">●</span>
+* [authors](/tags/authors)
+* [category_list](/tags/category_list)
+* [comments](/tags/comments)
+* [comments_error](/tags/comments_error)
+* [file_download_list](/tags/file_download_list)
+* [image_index](/tags/image_index)
+* [image_info](/tags/image_info)
+* [images](/tags/images)
+* [keywords](/tags/keywords)
+* [linklist](/tags/linklist) <span class="warning">●</span>
+* [recent_articles](/tags/recent_articles)
+* [recent_comments](/tags/recent_comments)
+* [related_articles](/tags/related_articles)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -108,22 +108,22 @@ Used to group list items when separating by `break`. Possible values are lists o
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [authors](authors)
-* [category_list](category_list)
-* [comments](comments)
-* [comments_error](comments_error)
-* [file_download_list](file_download_list)
-* [image_index](image_index)
-* [image_info](image_info)
-* [images](images)
-* [keywords](keywords)
-* [linklist](linklist)
-* [recent_articles](recent_articles)
-* [recent_comments](recent_comments)
-* [related_articles](related_articles)
-* [section_list](section_list)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [authors](/tags/authors)
+* [category_list](/tags/category_list)
+* [comments](/tags/comments)
+* [comments_error](/tags/comments_error)
+* [file_download_list](/tags/file_download_list)
+* [image_index](/tags/image_index)
+* [image_info](/tags/image_info)
+* [images](/tags/images)
+* [keywords](/tags/keywords)
+* [linklist](/tags/linklist)
+* [recent_articles](/tags/recent_articles)
+* [recent_comments](/tags/recent_comments)
+* [related_articles](/tags/related_articles)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -131,7 +131,7 @@ Used to group list items when separating by `break`. Possible values are lists o
 
 <div class="layout-text4col">
 
-* [search_input](search_input)
+* [search_input](/tags/search_input)
 
 </div>
 
@@ -139,7 +139,7 @@ Used to group list items when separating by `break`. Possible values are lists o
 
 <div class="layout-text4col">
 
-* [category_list](category_list)
+* [category_list](/tags/category_list)
 
 </div>
 
@@ -147,16 +147,16 @@ Used to group list items when separating by `break`. Possible values are lists o
 
 <div class="layout-text4col">
 
-* [article_custom](article_custom)
-* [breadcrumb](breadcrumb)
-* [feed_link](feed_link)
-* [file_download_list](file_download_list)
-* [if_category](if_category)
-* [image_index](image_index)
-* [images](images)
-* [link_feed_link](link_feed_link)
-* [linklist](linklist)
-* [recent_articles](recent_articles)
+* [article_custom](/tags/article_custom)
+* [breadcrumb](/tags/breadcrumb)
+* [feed_link](/tags/feed_link)
+* [file_download_list](/tags/file_download_list)
+* [if_category](/tags/if_category)
+* [image_index](/tags/image_index)
+* [images](/tags/images)
+* [link_feed_link](/tags/link_feed_link)
+* [linklist](/tags/linklist)
+* [recent_articles](/tags/recent_articles)
 
 </div>
 
@@ -164,7 +164,7 @@ Used to group list items when separating by `break`. Possible values are lists o
 
 <div class="layout-text4col">
 
-* [category_list](category_list)
+* [category_list](/tags/category_list)
 
 </div>
 
@@ -174,48 +174,48 @@ Used to group list items when separating by `break`. Possible values are lists o
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [article_image](article_image)
-* [authors](authors)
-* [breadcrumb](breadcrumb)
-* [category](category)
-* [category1](category1)
-* [category2](category2)
-* [category_list](category_list) <span class="warning">●</span>
-* [comments](comments) <span class="warning">●</span>
-* [comments_error](comments_error) <span class="warning">●</span>
-* [comments_form](comments_form) <span class="warning">●</span>
-* [comments_invite](comments_invite) <span class="warning">●</span>
-* [comments_preview](comments_preview) <span class="warning">●</span>
-* [expires](expires)
-* [feed_link](feed_link)
-* [file_download_author](file_download_author)
-* [file_download_category](file_download_category)
-* [file_download_description](file_download_description)
-* [file_download_list](file_download_list) <span class="warning">●</span>
-* [image](image)
-* [image_author](image_author)
-* [image_index](image_index)
-* [image_info](image_info)
-* [images](images) <span class="warning">●</span>
-* [keywords](keywords)
-* [link_author](link_author)
-* [link_category](link_category)
-* [link_description](link_description)
-* [link_feed_link](link_feed_link) <span class="warning">●</span>
-* [linklist](linklist) <span class="warning">●</span>
-* [modified](modified)
-* [permlink](permlink)
-* [popup](popup)
-* [posted](posted)
-* [recent_articles](recent_articles) <span class="warning">●</span>
-* [recent_comments](recent_comments) <span class="warning">●</span>
-* [related_articles](related_articles) <span class="warning">●</span>
-* [search_input](search_input)
-* [section](section)
-* [section_list](section_list) <span class="warning">●</span>
-* [thumbnail](thumbnail)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [article_image](/tags/article_image)
+* [authors](/tags/authors)
+* [breadcrumb](/tags/breadcrumb)
+* [category](/tags/category)
+* [category1](/tags/category1)
+* [category2](/tags/category2)
+* [category_list](/tags/category_list) <span class="warning">●</span>
+* [comments](/tags/comments) <span class="warning">●</span>
+* [comments_error](/tags/comments_error) <span class="warning">●</span>
+* [comments_form](/tags/comments_form) <span class="warning">●</span>
+* [comments_invite](/tags/comments_invite) <span class="warning">●</span>
+* [comments_preview](/tags/comments_preview) <span class="warning">●</span>
+* [expires](/tags/expires)
+* [feed_link](/tags/feed_link)
+* [file_download_author](/tags/file_download_author)
+* [file_download_category](/tags/file_download_category)
+* [file_download_description](/tags/file_download_description)
+* [file_download_list](/tags/file_download_list) <span class="warning">●</span>
+* [image](/tags/image)
+* [image_author](/tags/image_author)
+* [image_index](/tags/image_index)
+* [image_info](/tags/image_info)
+* [images](/tags/images) <span class="warning">●</span>
+* [keywords](/tags/keywords)
+* [link_author](/tags/link_author)
+* [link_category](/tags/link_category)
+* [link_description](/tags/link_description)
+* [link_feed_link](/tags/link_feed_link) <span class="warning">●</span>
+* [linklist](/tags/linklist) <span class="warning">●</span>
+* [modified](/tags/modified)
+* [permlink](/tags/permlink)
+* [popup](/tags/popup)
+* [posted](/tags/posted)
+* [recent_articles](/tags/recent_articles) <span class="warning">●</span>
+* [recent_comments](/tags/recent_comments) <span class="warning">●</span>
+* [related_articles](/tags/related_articles) <span class="warning">●</span>
+* [search_input](/tags/search_input)
+* [section](/tags/section)
+* [section_list](/tags/section_list) <span class="warning">●</span>
+* [thumbnail](/tags/thumbnail)
 
 </div>
 
@@ -225,7 +225,7 @@ HTML [cols attribute](https://www.w3.org/TR/html5/forms.html#attr-textarea-cols)
 
 <div class="layout-text4col">
 
-* [comment_message_input](comment_message_input)
+* [comment_message_input](/tags/comment_message_input)
 
 </div>
 
@@ -235,8 +235,8 @@ In your tag, replace `customfieldname` with the actual name of the desired custo
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
 
 </div>
 
@@ -244,7 +244,7 @@ In your tag, replace `customfieldname` with the actual name of the desired custo
 
 <div class="layout-text4col">
 
-* [file_download_size](file_download_size)
+* [file_download_size](/tags/file_download_size)
 
 </div>
 
@@ -252,9 +252,9 @@ In your tag, replace `customfieldname` with the actual name of the desired custo
 
 <div class="layout-text4col">
 
-* [custom_field](custom_field)
-* [page_url](page_url)
-* [yield](yield)
+* [custom_field](/tags/custom_field)
+* [page_url](/tags/page_url)
+* [yield](/tags/yield)
 
 </div>
 
@@ -262,7 +262,7 @@ In your tag, replace `customfieldname` with the actual name of the desired custo
 
 <div class="layout-text4col">
 
-* [section_list](section_list)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -270,7 +270,7 @@ In your tag, replace `customfieldname` with the actual name of the desired custo
 
 <div class="layout-text4col">
 
-* [email](email)
+* [email](/tags/email)
 
 </div>
 
@@ -280,22 +280,22 @@ Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
 
 <div class="layout-text4col">
 
-* [article_image](article_image)
-* [author](author)
-* [author_email](author_email)
-* [custom_field](custom_field)
-* [file_download_description](file_download_description)
-* [image](image)
-* [image_info](image_info)
-* [link_description](link_description)
-* [link_name](link_name)
-* [meta_author](meta_author)
-* [meta_description](meta_description)
-* [meta_keywords](meta_keywords)
-* [newer](newer)
-* [older](older)
-* [text](text)
-* [thumbnail](thumbnail)
+* [article_image](/tags/article_image)
+* [author](/tags/author)
+* [author_email](/tags/author_email)
+* [custom_field](/tags/custom_field)
+* [file_download_description](/tags/file_download_description)
+* [image](/tags/image)
+* [image_info](/tags/image_info)
+* [link_description](/tags/link_description)
+* [link_name](/tags/link_name)
+* [meta_author](/tags/meta_author)
+* [meta_description](/tags/meta_description)
+* [meta_keywords](/tags/meta_keywords)
+* [newer](/tags/newer)
+* [older](/tags/older)
+* [text](/tags/text)
+* [thumbnail](/tags/thumbnail)
 
 </div>
 
@@ -303,7 +303,7 @@ Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
 
 <div class="layout-text4col">
 
-* [article_custom](article_custom)
+* [article_custom](/tags/article_custom)
 
 </div>
 
@@ -311,9 +311,9 @@ Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
 
 <div class="layout-text4col">
 
-* [article_custom](article_custom)
-* [category_list](category_list)
-* [section_list](section_list)
+* [article_custom](/tags/article_custom)
+* [category_list](/tags/category_list)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -321,7 +321,7 @@ Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
 
 <div class="layout-text4col">
 
-* [article_custom](article_custom)
+* [article_custom](/tags/article_custom)
 
 </div>
 
@@ -329,7 +329,7 @@ Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
 
 <div class="layout-text4col">
 
-* [images](images)
+* [images](/tags/images)
 
 </div>
 
@@ -337,8 +337,8 @@ Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
 
 <div class="layout-text4col">
 
-* [file_download](file_download)
-* [file_download_link](file_download_link)
+* [file_download](/tags/file_download)
+* [file_download_link](/tags/file_download_link)
 
 </div>
 
@@ -346,8 +346,8 @@ Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
 
 <div class="layout-text4col">
 
-* [feed_link](feed_link)
-* [link_feed_link](link_feed_link)
+* [feed_link](/tags/feed_link)
+* [link_feed_link](/tags/link_feed_link)
 
 </div>
 
@@ -355,7 +355,7 @@ Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
 
 <div class="layout-text4col">
 
-* [comment_remember](comment_remember)
+* [comment_remember](/tags/comment_remember)
 
 </div>
 
@@ -365,22 +365,22 @@ Used to format content for display. See [Form templates](/themes/form-templates-
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [authors](authors)
-* [category_list](category_list)
-* [comments](comments)
-* [comments_form](comments_form)
-* [comments_preview](comments_preview)
-* [file_download](file_download)
-* [file_download_list](file_download_list)
-* [images](images)
-* [linklist](linklist)
-* [output_form](output_form)
-* [recent_comments](recent_comments)
-* [related_articles](related_articles)
-* [search_input](search_input)
-* [section_list](section_list)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [authors](/tags/authors)
+* [category_list](/tags/category_list)
+* [comments](/tags/comments)
+* [comments_form](/tags/comments_form)
+* [comments_preview](/tags/comments_preview)
+* [file_download](/tags/file_download)
+* [file_download_list](/tags/file_download_list)
+* [images](/tags/images)
+* [linklist](/tags/linklist)
+* [output_form](/tags/output_form)
+* [recent_comments](/tags/recent_comments)
+* [related_articles](/tags/related_articles)
+* [search_input](/tags/search_input)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -388,23 +388,23 @@ Used to format content for display. See [Form templates](/themes/form-templates-
 
 <div class="layout-text4col">
 
-* [author](author)
-* [comment_time](comment_time)
-* [css](css)
-* [expires](expires)
-* [feed_link](feed_link)
-* [file_download_created](file_download_created)
-* [file_download_modified](file_download_modified)
-* [file_download_size](file_download_size)
-* [image_date](image_date)
-* [link_date](link_date)
-* [link_feed_link](link_feed_link)
-* [meta_author](meta_author)
-* [meta_description](meta_description)
-* [meta_keywords](meta_keywords)
-* [modified](modified)
-* [posted](posted)
-* [search_result_date](search_result_date)
+* [author](/tags/author)
+* [comment_time](/tags/comment_time)
+* [css](/tags/css)
+* [expires](/tags/expires)
+* [feed_link](/tags/feed_link)
+* [file_download_created](/tags/file_download_created)
+* [file_download_modified](/tags/file_download_modified)
+* [file_download_size](/tags/file_download_size)
+* [image_date](/tags/image_date)
+* [link_date](/tags/link_date)
+* [link_feed_link](/tags/link_feed_link)
+* [meta_author](/tags/meta_author)
+* [meta_description](/tags/meta_description)
+* [meta_keywords](/tags/meta_keywords)
+* [modified](/tags/modified)
+* [posted](/tags/posted)
+* [search_result_date](/tags/search_result_date)
 
 </div>
 
@@ -412,11 +412,11 @@ Used to format content for display. See [Form templates](/themes/form-templates-
 
 <div class="layout-text4col">
 
-* [comment_time](comment_time)
-* [expires](expires)
-* [link_date](link_date)
-* [modified](modified)
-* [posted](posted)
+* [comment_time](/tags/comment_time)
+* [expires](/tags/expires)
+* [link_date](/tags/link_date)
+* [modified](/tags/modified)
+* [posted](/tags/posted)
 
 </div>
 
@@ -424,8 +424,8 @@ Used to format content for display. See [Form templates](/themes/form-templates-
 
 <div class="layout-text4col">
 
-* [authors](authors)
-* [if_logged_in](if_logged_in)
+* [authors](/tags/authors)
+* [if_logged_in](/tags/if_logged_in)
 
 </div>
 
@@ -433,9 +433,9 @@ Used to format content for display. See [Form templates](/themes/form-templates-
 
 <div class="layout-text4col">
 
-* [article_image](article_image)
-* [image](image)
-* [thumbnail](thumbnail)
+* [article_image](/tags/article_image)
+* [image](/tags/image)
+* [thumbnail](/tags/thumbnail)
 
 </div>
 
@@ -443,7 +443,7 @@ Used to format content for display. See [Form templates](/themes/form-templates-
 
 <div class="layout-text4col">
 
-* [search_result_excerpt](search_result_excerpt)
+* [search_result_excerpt](/tags/search_result_excerpt)
 
 </div>
 
@@ -453,13 +453,13 @@ Used to format content for display. See [Form templates](/themes/form-templates-
 
 <div class="layout-text4col">
 
-* [article_image](article_image)
-* [category_list](category_list)
-* [image](image)
-* [images](images)
-* [search_input](search_input)
-* [section_list](section_list)
-* [thumbnail](thumbnail)
+* [article_image](/tags/article_image)
+* [category_list](/tags/category_list)
+* [image](/tags/image)
+* [images](/tags/images)
+* [search_input](/tags/search_input)
+* [section_list](/tags/section_list)
+* [thumbnail](/tags/thumbnail)
 
 </div>
 
@@ -467,21 +467,21 @@ Used to format content for display. See [Form templates](/themes/form-templates-
 
 <div class="layout-text4col">
 
-* [article_custom](article_custom)
-* [file_download](file_download)
-* [file_download_link](file_download_link)
-* [file_download_list](file_download_list)
-* [if_article_id](if_article_id)
-* [image](image)
-* [image_author](image_author)
-* [image_date](image_date)
-* [image_info](image_info)
-* [image_url](image_url)
-* [images](images)
-* [link](link)
-* [linklist](linklist)
-* [permlink](permlink)
-* [thumbnail](thumbnail)
+* [article_custom](/tags/article_custom)
+* [file_download](/tags/file_download)
+* [file_download_link](/tags/file_download_link)
+* [file_download_list](/tags/file_download_list)
+* [if_article_id](/tags/if_article_id)
+* [image](/tags/image)
+* [image_author](/tags/image_author)
+* [image_date](/tags/image_date)
+* [image_info](/tags/image_info)
+* [image_url](/tags/image_url)
+* [images](/tags/images)
+* [link](/tags/link)
+* [linklist](/tags/linklist)
+* [permlink](/tags/permlink)
+* [thumbnail](/tags/thumbnail)
 
 </div>
 
@@ -489,7 +489,7 @@ Used to format content for display. See [Form templates](/themes/form-templates-
 
 <div class="layout-text4col">
 
-* [section_list](section_list)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -497,7 +497,7 @@ Used to format content for display. See [Form templates](/themes/form-templates-
 
 <div class="layout-text4col">
 
-* [text](text)
+* [text](/tags/text)
 
 </div>
 
@@ -505,9 +505,9 @@ Used to format content for display. See [Form templates](/themes/form-templates-
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [if_keywords](if_keywords)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [if_keywords](/tags/if_keywords)
 
 </div>
 
@@ -517,27 +517,27 @@ This string will be prepended to the output. When using a [wraptag](#wraptag) va
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [authors](authors)
-* [breadcrumb](breadcrumb) (Site name)
-* [category_list](category_list)
-* [comment_submit](comment_submit)
-* [comments_preview](comments_preview)
-* [feed_link](feed_link)
-* [file_download_list](file_download_list)
-* [image_index](image_index)
-* [images](images)
-* [link_category](link_category)
-* [link_description](link_description)
-* [link_feed_link](link_feed_link)
-* [linklist](linklist)
-* [popup](popup) (Browse)
-* [recent_articles](recent_articles) (Recent articles)
-* [recent_comments](recent_comments)
-* [related_articles](related_articles)
-* [search_input](search_input) (Search)
-* [section_list](section_list)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [authors](/tags/authors)
+* [breadcrumb](/tags/breadcrumb) (Site name)
+* [category_list](/tags/category_list)
+* [comment_submit](/tags/comment_submit)
+* [comments_preview](/tags/comments_preview)
+* [feed_link](/tags/feed_link)
+* [file_download_list](/tags/file_download_list)
+* [image_index](/tags/image_index)
+* [images](/tags/images)
+* [link_category](/tags/link_category)
+* [link_description](/tags/link_description)
+* [link_feed_link](/tags/link_feed_link)
+* [linklist](/tags/linklist)
+* [popup](/tags/popup) (Browse)
+* [recent_articles](/tags/recent_articles) (Recent articles)
+* [recent_comments](/tags/recent_comments)
+* [related_articles](/tags/related_articles)
+* [search_input](/tags/search_input) (Search)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -547,20 +547,20 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset. <s
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [authors](authors)
-* [category_list](category_list)
-* [file_download_list](file_download_list)
-* [image_index](image_index)
-* [images](images)
-* [link_category](link_category)
-* [link_description](link_description)
-* [linklist](linklist)
-* [recent_articles](recent_articles)
-* [recent_comments](recent_comments)
-* [related_articles](related_articles)
-* [section_list](section_list)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [authors](/tags/authors)
+* [category_list](/tags/category_list)
+* [file_download_list](/tags/file_download_list)
+* [image_index](/tags/image_index)
+* [images](/tags/images)
+* [link_category](/tags/link_category)
+* [link_description](/tags/link_description)
+* [linklist](/tags/linklist)
+* [recent_articles](/tags/recent_articles)
+* [recent_comments](/tags/recent_comments)
+* [related_articles](/tags/related_articles)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -568,11 +568,11 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset. <s
 
 <div class="layout-text4col">
 
-* [comment_time](comment_time)
-* [expires](expires)
-* [link_date](link_date)
-* [modified](modified)
-* [posted](posted)
+* [comment_time](/tags/comment_time)
+* [expires](/tags/expires)
+* [link_date](/tags/link_date)
+* [modified](/tags/modified)
+* [posted](/tags/posted)
 
 </div>
 
@@ -580,22 +580,22 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset. <s
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [breadcrumb](breadcrumb)
-* [authors](authors)
-* [category_list](category_list)
-* [comments](comments)
-* [feed_link](feed_link)
-* [file_download_list](file_download_list)
-* [image_index](image_index)
-* [images](images)
-* [linklist](linklist)
-* [recent_articles](recent_articles)
-* [recent_comments](recent_comments)
-* [related_articles](related_articles)
-* [search_result_excerpt](search_result_excerpt)
-* [section_list](section_list)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [breadcrumb](/tags/breadcrumb)
+* [authors](/tags/authors)
+* [category_list](/tags/category_list)
+* [comments](/tags/comments)
+* [feed_link](/tags/feed_link)
+* [file_download_list](/tags/file_download_list)
+* [image_index](/tags/image_index)
+* [images](/tags/images)
+* [linklist](/tags/linklist)
+* [recent_articles](/tags/recent_articles)
+* [recent_comments](/tags/recent_comments)
+* [related_articles](/tags/related_articles)
+* [search_result_excerpt](/tags/search_result_excerpt)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -603,19 +603,19 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset. <s
 
 <div class="layout-text4col">
 
-* [author](author)
-* [author_email](author_email)
-* [breadcrumb](breadcrumb)
-* [category](category)
-* [category1](category1)
-* [category2](category2)
-* [comment_name](comment_name)
-* [file_download_author](file_download_author)
-* [image_author](image_author)
-* [image_url](image_url)
-* [link_author](link_author)
-* [section](section)
-* [thumbnail](thumbnail)
+* [author](/tags/author)
+* [author_email](/tags/author_email)
+* [breadcrumb](/tags/breadcrumb)
+* [category](/tags/category)
+* [category1](/tags/category1)
+* [category2](/tags/category2)
+* [comment_name](/tags/comment_name)
+* [file_download_author](/tags/file_download_author)
+* [image_author](/tags/image_author)
+* [image_url](/tags/image_url)
+* [link_author](/tags/link_author)
+* [section](/tags/section)
+* [thumbnail](/tags/thumbnail)
 
 </div>
 
@@ -623,7 +623,7 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset. <s
 
 <div class="layout-text4col">
 
-* [thumbnail](thumbnail)
+* [thumbnail](/tags/thumbnail)
 
 </div>
 
@@ -633,7 +633,7 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset. <s
 
 <div class="layout-text4col">
 
-* [breadcrumb](breadcrumb)
+* [breadcrumb](/tags/breadcrumb)
 
 </div>
 
@@ -641,7 +641,7 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset. <s
 
 <div class="layout-text4col">
 
-* [email](email)
+* [email](/tags/email)
 
 </div>
 
@@ -651,7 +651,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [article](article)
+* [article](/tags/article)
 
 </div>
 
@@ -659,7 +659,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [password_protect](password_protect)
+* [password_protect](/tags/password_protect)
 
 </div>
 
@@ -667,10 +667,10 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [article_custom](article_custom)
-* [if_custom_field](if_custom_field)
-* [related_articles](related_articles)
-* [search_input](search_input)
+* [article_custom](/tags/article_custom)
+* [if_custom_field](/tags/if_custom_field)
+* [related_articles](/tags/related_articles)
+* [search_input](/tags/search_input)
 
 </div>
 
@@ -678,7 +678,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [if_search_results](if_search_results)
+* [if_search_results](/tags/if_search_results)
 
 </div>
 
@@ -686,7 +686,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [css](css)
+* [css](/tags/css)
 
 </div>
 
@@ -694,7 +694,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [if_search_results](if_search_results)
+* [if_search_results](/tags/if_search_results)
 
 </div>
 
@@ -702,7 +702,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [article_custom](article_custom)
+* [article_custom](/tags/article_custom)
 
 </div>
 
@@ -710,7 +710,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [txp_die](txp_die)
+* [txp_die](/tags/txp_die)
 
 </div>
 
@@ -718,33 +718,33 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [authors](authors)
-* [category](category)
-* [css](css)
-* [custom_field](custom_field)
-* [header](header)
-* [if_article_author](if_article_author)
-* [if_article_category](if_article_category)
-* [if_article_section](if_article_section)
-* [if_author](if_author)
-* [if_category](if_category)
-* [if_custom_field](if_custom_field)
-* [if_logged_in](if_logged_in)
-* [if_plugin](if_plugin)
-* [if_section](if_section)
-* [if_variable](if_variable)
-* [if_yield](if_yield)
-* [image](image)
-* [image_author](image_author)
-* [image_date](image_date)
-* [image_info](image_info)
-* [image_url](image_url)
-* [images](images)
-* [link](link)
-* [section](section)
-* [thumbnail](thumbnail)
-* [variable](variable)
-* [yield](yield)
+* [authors](/tags/authors)
+* [category](/tags/category)
+* [css](/tags/css)
+* [custom_field](/tags/custom_field)
+* [header](/tags/header)
+* [if_article_author](/tags/if_article_author)
+* [if_article_category](/tags/if_article_category)
+* [if_article_section](/tags/if_article_section)
+* [if_author](/tags/if_author)
+* [if_category](/tags/if_category)
+* [if_custom_field](/tags/if_custom_field)
+* [if_logged_in](/tags/if_logged_in)
+* [if_plugin](/tags/if_plugin)
+* [if_section](/tags/if_section)
+* [if_variable](/tags/if_variable)
+* [if_yield](/tags/if_yield)
+* [image](/tags/image)
+* [image_author](/tags/image_author)
+* [image_date](/tags/image_date)
+* [image_info](/tags/image_info)
+* [image_url](/tags/image_url)
+* [images](/tags/images)
+* [link](/tags/link)
+* [section](/tags/section)
+* [thumbnail](/tags/thumbnail)
+* [variable](/tags/variable)
+* [yield](/tags/yield)
 
 </div>
 
@@ -752,9 +752,9 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [recent_articles](recent_articles)
-* [related_articles](related_articles)
-* [title](title)
+* [recent_articles](/tags/recent_articles)
+* [related_articles](/tags/related_articles)
+* [title](/tags/title)
 
 </div>
 
@@ -766,7 +766,7 @@ Used to invert the `true/false` parts of conditional and other tags. <span class
 
 <div class="layout-text4col">
 
-* [if_article_category](if_article_category)
+* [if_article_category](/tags/if_article_category)
 
 </div>
 
@@ -774,20 +774,20 @@ Used to invert the `true/false` parts of conditional and other tags. <span class
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [authors](authors)
-* [breadcrumb](breadcrumb)
-* [category_list](category_list)
-* [comments](comments)
-* [file_download_list](file_download_list)
-* [image_index](image_index)
-* [images](images)
-* [linklist](linklist)
-* [recent_articles](recent_articles)
-* [recent_comments](recent_comments)
-* [related_articles](related_articles)
-* [section_list](section_list)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [authors](/tags/authors)
+* [breadcrumb](/tags/breadcrumb)
+* [category_list](/tags/category_list)
+* [comments](/tags/comments)
+* [file_download_list](/tags/file_download_list)
+* [image_index](/tags/image_index)
+* [images](/tags/images)
+* [linklist](/tags/linklist)
+* [recent_articles](/tags/recent_articles)
+* [recent_comments](/tags/recent_comments)
+* [related_articles](/tags/related_articles)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -795,11 +795,11 @@ Used to invert the `true/false` parts of conditional and other tags. <span class
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [file_download_list](file_download_list)
-* [images](images)
-* [linklist](linklist)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [file_download_list](/tags/file_download_list)
+* [images](/tags/images)
+* [linklist](/tags/linklist)
 
 </div>
 
@@ -807,8 +807,8 @@ Used to invert the `true/false` parts of conditional and other tags. <span class
 
 <div class="layout-text4col">
 
-* [category_list](category_list)
-* [if_category](if_category)
+* [category_list](/tags/category_list)
+* [if_category](/tags/if_category)
 
 </div>
 
@@ -816,7 +816,7 @@ Used to invert the `true/false` parts of conditional and other tags. <span class
 
 <div class="layout-text4col">
 
-* [password_protect](password_protect)
+* [password_protect](/tags/password_protect)
 
 </div>
 
@@ -826,8 +826,8 @@ Used to return pagination statistics without rendering the article list. Care mu
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
 
 </div>
 
@@ -835,11 +835,11 @@ Used to return pagination statistics without rendering the article list. Care mu
 
 <div class="layout-text4col">
 
-* [comment_email_input](comment_email_input)
-* [comment_message_input](comment_message_input)
-* [comment_name_input](comment_name_input)
-* [comment_web_input](comment_web_input)
-* [search_input](search_input)
+* [comment_email_input](/tags/comment_email_input)
+* [comment_message_input](/tags/comment_message_input)
+* [comment_name_input](/tags/comment_name_input)
+* [comment_web_input](/tags/comment_web_input)
+* [search_input](/tags/search_input)
 
 </div>
 
@@ -847,7 +847,7 @@ Used to return pagination statistics without rendering the article list. Care mu
 
 <div class="layout-text4col">
 
-* [thumbnail](thumbnail)
+* [thumbnail](/tags/thumbnail)
 
 </div>
 
@@ -855,7 +855,7 @@ Used to return pagination statistics without rendering the article list. Care mu
 
 <div class="layout-text4col">
 
-* [hide](hide)
+* [hide](/tags/hide)
 
 </div>
 
@@ -863,7 +863,7 @@ Used to return pagination statistics without rendering the article list. Care mu
 
 <div class="layout-text4col">
 
-* [evaluate](evaluate)
+* [evaluate](/tags/evaluate)
 
 </div>
 
@@ -871,9 +871,9 @@ Used to return pagination statistics without rendering the article list. Care mu
 
 <div class="layout-text4col">
 
-* [file_download_list](file_download_list)
-* [images](images)
-* [linklist](linklist)
+* [file_download_list](/tags/file_download_list)
+* [images](/tags/images)
+* [linklist](/tags/linklist)
 
 </div>
 
@@ -883,11 +883,11 @@ HTML [rel attribute](https://www.w3.org/TR/html5/document-metadata.html#attr-lin
 
 <div class="layout-text4col">
 
-* [css](css)
-* [link](link)
-* [linkdesctitle](linkdesctitle)
-* [newer](newer)
-* [older](older)
+* [css](/tags/css)
+* [link](/tags/link)
+* [linkdesctitle](/tags/linkdesctitle)
+* [newer](/tags/newer)
+* [older](/tags/older)
 
 </div>
 
@@ -895,7 +895,7 @@ HTML [rel attribute](https://www.w3.org/TR/html5/document-metadata.html#attr-lin
 
 <div class="layout-text4col">
 
-* [comment_remember](comment_remember)
+* [comment_remember](/tags/comment_remember)
 
 </div>
 
@@ -903,7 +903,7 @@ HTML [rel attribute](https://www.w3.org/TR/html5/document-metadata.html#attr-lin
 
 <div class="layout-text4col">
 
-* [header](header)
+* [header](/tags/header)
 
 </div>
 
@@ -913,7 +913,7 @@ HTML [rows attribute](https://www.w3.org/TR/html5/forms.html#attr-textarea-rows)
 
 <div class="layout-text4col">
 
-* [comment_message_input](comment_message_input)
+* [comment_message_input](/tags/comment_message_input)
 
 </div>
 
@@ -921,7 +921,7 @@ HTML [rows attribute](https://www.w3.org/TR/html5/forms.html#attr-textarea-rows)
 
 <div class="layout-text4col">
 
-* [article](article)
+* [article](/tags/article)
 
 </div>
 
@@ -931,7 +931,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [article](article)
+* [article](/tags/article)
 
 </div>
 
@@ -939,7 +939,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [article](article)
+* [article](/tags/article)
 
 </div>
 
@@ -947,20 +947,20 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [article_custom](article_custom)
-* [author](author)
-* [category](category)
-* [category1](category1)
-* [category2](category2)
-* [category_list](category_list)
-* [feed_link](feed_link)
-* [file_download_author](file_download_author)
-* [image_author](image_author)
-* [link_author](link_author)
-* [popup](popup)
-* [recent_articles](recent_articles)
-* [related_articles](related_articles)
-* [search_input](search_input)
+* [article_custom](/tags/article_custom)
+* [author](/tags/author)
+* [category](/tags/category)
+* [category1](/tags/category1)
+* [category2](/tags/category2)
+* [category_list](/tags/category_list)
+* [feed_link](/tags/feed_link)
+* [file_download_author](/tags/file_download_author)
+* [image_author](/tags/image_author)
+* [link_author](/tags/link_author)
+* [popup](/tags/popup)
+* [recent_articles](/tags/recent_articles)
+* [related_articles](/tags/related_articles)
+* [search_input](/tags/search_input)
 
 </div>
 
@@ -968,7 +968,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [section_list](section_list)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -976,11 +976,11 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [breadcrumb](breadcrumb)
-* [if_custom_field](if_custom_field)
-* [meta_keywords](meta_keywords)
-* [page_title](page_title)
-* [search_result_excerpt](search_result_excerpt)
+* [breadcrumb](/tags/breadcrumb)
+* [if_custom_field](/tags/if_custom_field)
+* [meta_keywords](/tags/meta_keywords)
+* [page_title](/tags/page_title)
+* [search_result_excerpt](/tags/search_result_excerpt)
 
 </div>
 
@@ -988,11 +988,11 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [comments_invite](comments_invite)
-* [link_to_next](link_to_next)
-* [link_to_prev](link_to_prev)
-* [newer](newer)
-* [older](older)
+* [comments_invite](/tags/comments_invite)
+* [link_to_next](/tags/link_to_next)
+* [link_to_prev](/tags/link_to_prev)
+* [newer](/tags/newer)
+* [older](/tags/older)
 
 </div>
 
@@ -1000,7 +1000,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 <div class="layout-text4col">
 
-* [comments_invite](comments_invite)
+* [comments_invite](/tags/comments_invite)
 
 </div>
 
@@ -1010,10 +1010,10 @@ HTML [size attribute](https://www.w3.org/TR/html5/forms.html#the-size-attribute)
 
 <div class="layout-text4col">
 
-* [comment_email_input](comment_email_input)
-* [comment_name_input](comment_name_input)
-* [comment_web_input](comment_web_input)
-* [search_input](search_input)
+* [comment_email_input](/tags/comment_email_input)
+* [comment_name_input](/tags/comment_name_input)
+* [comment_web_input](/tags/comment_web_input)
+* [search_input](/tags/search_input)
 
 </div>
 
@@ -1023,19 +1023,19 @@ How to sort the resulting list. Available and default values vary by tag, but mu
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [authors](authors)
-* [category_list](category_list)
-* [comments](comments)
-* [file_download_list](file_download_list)
-* [image_index](image_index)
-* [images](images)
-* [linklist](linklist)
-* [recent_articles](recent_articles)
-* [recent_comments](recent_comments)
-* [related_articles](related_articles)
-* [section_list](section_list)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [authors](/tags/authors)
+* [category_list](/tags/category_list)
+* [comments](/tags/comments)
+* [file_download_list](/tags/file_download_list)
+* [image_index](/tags/image_index)
+* [images](/tags/images)
+* [linklist](/tags/linklist)
+* [recent_articles](/tags/recent_articles)
+* [recent_comments](/tags/recent_comments)
+* [related_articles](/tags/related_articles)
+* [section_list](/tags/section_list)
 
 </div>
 
@@ -1043,11 +1043,11 @@ How to sort the resulting list. Available and default values vary by tag, but mu
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [file_download_list](file_download_list)
-* [if_status](if_status)
-* [txp_die](txp_die)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [file_download_list](/tags/file_download_list)
+* [if_status](/tags/if_status)
+* [txp_die](/tags/txp_die)
 
 </div>
 
@@ -1057,10 +1057,10 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [article_image](article_image)
-* [image](image)
-* [permlink](permlink)
-* [thumbnail](thumbnail)
+* [article_image](/tags/article_image)
+* [image](/tags/image)
+* [permlink](/tags/permlink)
+* [thumbnail](/tags/thumbnail)
 
 </div>
 
@@ -1068,7 +1068,7 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [evaluate](evaluate)
+* [evaluate](/tags/evaluate)
 
 </div>
 
@@ -1076,7 +1076,7 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [search_result_count](search_result_count)
+* [search_result_count](/tags/search_result_count)
 
 </div>
 
@@ -1084,7 +1084,7 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [comments_invite](comments_invite)
+* [comments_invite](/tags/comments_invite)
 
 </div>
 
@@ -1092,15 +1092,15 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [author](author)
-* [category](category)
-* [category1](category1)
-* [category2](category2)
-* [category_list](category_list)
-* [file_download_author](file_download_author)
-* [image_author](image_author)
-* [link_author](link_author)
-* [popup](popup)
+* [author](/tags/author)
+* [category](/tags/category)
+* [category1](/tags/category1)
+* [category2](/tags/category2)
+* [category_list](/tags/category_list)
+* [file_download_author](/tags/file_download_author)
+* [image_author](/tags/image_author)
+* [link_author](/tags/link_author)
+* [popup](/tags/popup)
 
 </div>
 
@@ -1108,9 +1108,9 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [article_image](article_image)
-* [image_url](image_url)
-* [images](images)
+* [article_image](/tags/article_image)
+* [image_url](/tags/image_url)
+* [images](/tags/images)
 
 </div>
 
@@ -1118,8 +1118,8 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
 
 </div>
 
@@ -1127,26 +1127,26 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [author](author)
-* [breadcrumb](breadcrumb)
-* [category](category)
-* [category1](category1)
-* [category2](category2)
-* [css](css)
-* [email](email)
-* [feed_link](feed_link)
-* [file_download_author](file_download_author)
-* [file_download_category](file_download_category)
-* [file_download_name](file_download_name)
-* [image_author](image_author)
-* [link_author](link_author)
-* [link_category](link_category)
-* [link_feed_link](link_feed_link)
-* [meta_author](meta_author)
-* [newer](newer)
-* [older](older)
-* [permlink](permlink)
-* [section](section)
+* [author](/tags/author)
+* [breadcrumb](/tags/breadcrumb)
+* [category](/tags/category)
+* [category1](/tags/category1)
+* [category2](/tags/category2)
+* [css](/tags/css)
+* [email](/tags/email)
+* [feed_link](/tags/feed_link)
+* [file_download_author](/tags/file_download_author)
+* [file_download_category](/tags/file_download_category)
+* [file_download_name](/tags/file_download_name)
+* [image_author](/tags/image_author)
+* [link_author](/tags/link_author)
+* [link_category](/tags/link_category)
+* [link_feed_link](/tags/link_feed_link)
+* [meta_author](/tags/meta_author)
+* [newer](/tags/newer)
+* [older](/tags/older)
+* [permlink](/tags/permlink)
+* [section](/tags/section)
 
 </div>
 
@@ -1154,18 +1154,18 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [breadcrumb](breadcrumb)
-* [category](category)
-* [category_list](category_list)
-* [if_article_list](if_article_list)
-* [if_author](if_author)
-* [if_category](if_category)
-* [if_description](if_description)
-* [image_info](image_info)
-* [meta_description](meta_description)
-* [page_url](page_url)
-* [popup](popup)
-* [site_url](site_url)
+* [breadcrumb](/tags/breadcrumb)
+* [category](/tags/category)
+* [category_list](/tags/category_list)
+* [if_article_list](/tags/if_article_list)
+* [if_author](/tags/if_author)
+* [if_category](/tags/if_category)
+* [if_description](/tags/if_description)
+* [image_info](/tags/image_info)
+* [meta_description](/tags/meta_description)
+* [page_url](/tags/page_url)
+* [popup](/tags/popup)
+* [site_url](/tags/site_url)
 
 </div>
 
@@ -1173,9 +1173,9 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [category](category)
-* [section](section)
-* [txp_die](txp_die)
+* [category](/tags/category)
+* [section](/tags/section)
+* [txp_die](/tags/txp_die)
 
 </div>
 
@@ -1183,11 +1183,11 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [header](header)
-* [if_custom_field](if_custom_field)
-* [if_variable](if_variable)
-* [if_yield](if_yield)
-* [variable](variable)
+* [header](/tags/header)
+* [if_custom_field](/tags/if_custom_field)
+* [if_variable](/tags/if_variable)
+* [if_yield](/tags/if_yield)
+* [variable](/tags/variable)
 
 </div>
 
@@ -1195,7 +1195,7 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [if_plugin](if_plugin)
+* [if_plugin](/tags/if_plugin)
 
 </div>
 
@@ -1203,9 +1203,9 @@ HTML [style attribute](https://www.w3.org/TR/html5/dom.html#the-style-attribute)
 
 <div class="layout-text4col">
 
-* [article_image](article_image)
-* [image](image)
-* [thumbnail](thumbnail)
+* [article_image](/tags/article_image)
+* [image](/tags/image)
+* [thumbnail](/tags/thumbnail)
 
 </div>
 
@@ -1215,47 +1215,47 @@ HTML tag (without brackets) to wrap around output. Default value is unset, excep
 
 <div class="layout-text4col">
 
-* [article](article)
-* [article_custom](article_custom)
-* [article_image](article_image)
-* [authors](authors)
-* [breadcrumb](breadcrumb) (`p`)
-* [category](category)
-* [category1](category1)
-* [category2](category2)
-* [category_list](category_list)
-* [comments](comments)
-* [comments_error](comments_error) (`div`)
-* [comments_form](comments_form)
-* [comments_invite](comments_invite)
-* [comments_preview](comments_preview)
-* [expires](expires)
-* [feed_link](feed_link)
-* [file_download_author](file_download_author)
-* [file_download_category](file_download_category)
-* [file_download_description](file_download_description)
-* [file_download_list](file_download_list)
-* [image](image)
-* [image_author](image_author)
-* [image_index](image_index)
-* [image_info](image_info)
-* [images](images)
-* [keywords](keywords)
-* [link_author](link_author)
-* [link_category](link_category)
-* [link_description](link_description)
-* [link_feed_link](link_feed_link)
-* [linklist](linklist)
-* [modified](modified)
-* [popup](popup)
-* [posted](posted)
-* [recent_articles](recent_articles)
-* [recent_comments](recent_comments)
-* [related_articles](related_articles)
-* [search_input](search_input) (`p`)
-* [section](section)
-* [section_list](section_list)
-* [thumbnail](thumbnail)
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
+* [article_image](/tags/article_image)
+* [authors](/tags/authors)
+* [breadcrumb](/tags/breadcrumb) (`p`)
+* [category](/tags/category)
+* [category1](/tags/category1)
+* [category2](/tags/category2)
+* [category_list](/tags/category_list)
+* [comments](/tags/comments)
+* [comments_error](/tags/comments_error) (`div`)
+* [comments_form](/tags/comments_form)
+* [comments_invite](/tags/comments_invite)
+* [comments_preview](/tags/comments_preview)
+* [expires](/tags/expires)
+* [feed_link](/tags/feed_link)
+* [file_download_author](/tags/file_download_author)
+* [file_download_category](/tags/file_download_category)
+* [file_download_description](/tags/file_download_description)
+* [file_download_list](/tags/file_download_list)
+* [image](/tags/image)
+* [image_author](/tags/image_author)
+* [image_index](/tags/image_index)
+* [image_info](/tags/image_info)
+* [images](/tags/images)
+* [keywords](/tags/keywords)
+* [link_author](/tags/link_author)
+* [link_category](/tags/link_category)
+* [link_description](/tags/link_description)
+* [link_feed_link](/tags/link_feed_link)
+* [linklist](/tags/linklist)
+* [modified](/tags/modified)
+* [popup](/tags/popup)
+* [posted](/tags/posted)
+* [recent_articles](/tags/recent_articles)
+* [recent_comments](/tags/recent_comments)
+* [related_articles](/tags/related_articles)
+* [search_input](/tags/search_input) (`p`)
+* [section](/tags/section)
+* [section_list](/tags/section_list)
+* [thumbnail](/tags/thumbnail)
 
 </div>
 
@@ -1263,6 +1263,6 @@ HTML tag (without brackets) to wrap around output. Default value is unset, excep
 
 <div class="layout-text4col">
 
-* [output_form](output_form)
+* [output_form](/tags/output_form)
 
 </div>

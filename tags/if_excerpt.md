@@ -46,4 +46,4 @@ This tag has no attributes.
 </txp:if_excerpt>
 ~~~
 
-Other tags used: [excerpt](excerpt).
+Other tags used: [excerpt](/tags/excerpt).

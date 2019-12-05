@@ -58,4 +58,4 @@ This tag has no attributes.
 </txp:if_last_article>
 ~~~
 
-Other tags used: [permlink](permlink), [title](title), [posted](posted), [author](author), [body](body), [comments_invite](comments_invite).
+Other tags used: [permlink](/tags/permlink), [title](/tags/title), [posted](/tags/posted), [author](/tags/author), [body](/tags/body), [comments_invite](/tags/comments_invite).

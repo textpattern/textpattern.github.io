@@ -160,4 +160,4 @@ Create valid [JSON-LD](https://json-ld.org) for the `<head>` section of an [AMP]
 </script>
 ~~~
 
-[Next: Core short-tags](core-short-tags)
+[Next: Core short-tags](/tags/tag-basics/core-short-tags)

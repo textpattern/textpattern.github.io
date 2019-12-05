@@ -53,4 +53,4 @@ This tag has no attributes.
 
 Displays the number of comments written against the current article, otherwise display text to indicate there are no comments.
 
-Other tags used: [comments_count](comments_count), [else](else).
+Other tags used: [comments_count](/tags/comments_count), [else](/tags/else).

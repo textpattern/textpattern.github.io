@@ -21,7 +21,7 @@ tags:
 <txp:link_url />
 ~~~
 
-The **link_url** tag is a *single* tag which returns the URL of the link as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to show information about the current link in the list.
+The **link_url** tag is a *single* tag which returns the URL of the link as text. This tag is used in a 'links' type form or inside the [linklist](/tags/linklist) container tag to show information about the current link in the list.
 
 ## Attributes
 
@@ -37,4 +37,4 @@ This tag has no attributes.
 </a>
 ~~~
 
-Other tags used: [link_name](link_name).
+Other tags used: [link_name](/tags/link_name).

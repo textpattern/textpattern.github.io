@@ -67,9 +67,9 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:if_article_list>
 ~~~
 
-This example shows how to setup article navigation so that [link_to_prev](link_to_prev) and [link_to_next](link_to_next) are used at the individual article level *or* [older](older) and [newer](newer) with article lists.
+This example shows how to setup article navigation so that [link_to_prev](/tags/link_to_prev) and [link_to_next](/tags/link_to_next) are used at the individual article level *or* [older](/tags/older) and [newer](/tags/newer) with article lists.
 
-Other tags used: [link_to_prev](link_to_prev), [link_to_next](link_to_next), [prev_title](prev_title), [next_title](next_title), [if_individual_article](if_individual_article), [older](older), [newer](newer).
+Other tags used: [link_to_prev](/tags/link_to_prev), [link_to_next](/tags/link_to_next), [prev_title](/tags/prev_title), [next_title](/tags/next_title), [if_individual_article](/tags/if_individual_article), [older](/tags/older), [newer](/tags/newer).
 
 ### Example 2: In combination with the 'else' tag
 
@@ -85,9 +85,9 @@ Other tags used: [link_to_prev](link_to_prev), [link_to_next](link_to_next), [pr
 </txp:if_article_list>
 ~~~
 
-This example shows the if_article_list in combination with [else](else) to display a site's [site_name](site_name) or logo when an article list is displayed or not, respectively.
+This example shows the if_article_list in combination with [else](/tags/else) to display a site's [site_name](/tags/site_name) or logo when an article list is displayed or not, respectively.
 
-Other tags used: [else](else), [site_name](site_name).
+Other tags used: [else](/tags/else), [site_name](/tags/site_name).
 
 ## Genealogy
 

@@ -30,7 +30,7 @@ The **if_thumbnail** tag is a *conditional* tag and always used as an opening an
 </txp:if_thumbnail>
 ~~~
 
-The tag will execute the contained statements **if** the current image (from an [images](images) tag) has a thumbnail assigned to it. Must always be used in an image context.
+The tag will execute the contained statements **if** the current image (from an [images](/tags/images) tag) has a thumbnail assigned to it. Must always be used in an image context.
 
 ## Attributes
 
@@ -51,9 +51,9 @@ This tag has no attributes.
 </txp:images>
 ~~~
 
-For each image uploaded by author 'neo', display its thumbnail if it has one, or the text 'No thumbnail' if it doesn't. Add a caption beneath the thumbnail using [image_info](image_info).
+For each image uploaded by author 'neo', display its thumbnail if it has one, or the text 'No thumbnail' if it doesn't. Add a caption beneath the thumbnail using [image_info](/tags/image_info).
 
-Other tags used: [images](images), [else](else), [image_info](image_info), [thumbnail](thumbnail).
+Other tags used: [images](/tags/images), [else](/tags/else), [image_info](/tags/image_info), [thumbnail](/tags/thumbnail).
 
 ## Genealogy
 

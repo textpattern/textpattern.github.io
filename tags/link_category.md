@@ -21,7 +21,7 @@ tags:
 <txp:link_category />
 ~~~
 
-The **link_category** tag is a *single* tag which returns the link category as text. This tag is used in Textpattern 'link' type [Form templates](/themes/form-templates-explained) or inside the [linklist](linklist) container tag to return information about the current link in a list of links.
+The **link_category** tag is a *single* tag which returns the link category as text. This tag is used in Textpattern 'link' type [Form templates](/themes/form-templates-explained) or inside the [linklist](/tags/linklist) container tag to return information about the current link in a list of links.
 
 ## Attributes
 
@@ -62,4 +62,4 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 </a> | <txp:link_category title="1" />
 ~~~
 
-Other tags used: [link_url](link_url), [link_name](link_name).
+Other tags used: [link_url](/tags/link_url), [link_name](/tags/link_name).

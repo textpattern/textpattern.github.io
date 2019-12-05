@@ -54,7 +54,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 Displays the article title if the id of the current article is 33.
 
-Other tags used: [title](title).
+Other tags used: [title](/tags/title).
 
 ### Example 2: Display a list of articles omitting current article
 
@@ -73,7 +73,7 @@ Other tags used: [title](title).
 
 Displays an unordered linked list of articles from the same section omitting the article currently viewed.
 
-Other tags used: [article_custom](article_custom), [section](section), [else](else), [permlink](permlink), [title](title).
+Other tags used: [article_custom](/tags/article_custom), [section](/tags/section), [else](/tags/else), [permlink](/tags/permlink), [title](/tags/title).
 
 ## Genealogy
 

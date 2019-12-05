@@ -31,7 +31,7 @@ The **if_first_image** tag is a *conditional* tag and always used as an opening 
 </txp:if_first_image>
 ~~~
 
-The tag will execute the contained statements if the displayed image is the first in the currently displayed [images](images) list. The tag supports [else](else).
+The tag will execute the contained statements if the displayed image is the first in the currently displayed [images](/tags/images) list. The tag supports [else](/tags/else).
 
 ## Attributes
 
@@ -55,7 +55,7 @@ This tag has no attributes.
 </txp:images>
 ~~~
 
-Other tags used: [else](else), [image](image), [images](images).
+Other tags used: [else](/tags/else), [image](/tags/image), [images](/tags/images).
 
 ## Genealogy
 

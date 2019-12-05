@@ -31,7 +31,7 @@ If used as a container tag, the HTML required to output a hyperlink is returned;
 Tag will accept the following attributes (**case-sensitive**):
 
 `context="list"`
-: Specifies Textpattern parameters that must be "inherited" by the article URL. For example, when used in a list article form on a category page `index.php?c=somecat`, `<txp:permlink />` without `context` attribute will produce canonical `.../title` links, while `<txp:permlink context />` produces `.../title?c=somecat` links. Useful jointly with [link_to_next/prev](link_to_next) tags in individual article forms when one needs to restrain navigation to the current article category (author, month, ...).
+: Specifies Textpattern parameters that must be "inherited" by the article URL. For example, when used in a list article form on a category page `index.php?c=somecat`, `<txp:permlink />` without `context` attribute will produce canonical `.../title` links, while `<txp:permlink context />` produces `.../title?c=somecat` links. Useful jointly with [link_to_next/prev](/tags/link_to_next) tags in individual article forms when one needs to restrain navigation to the current article category (author, month, ...).
 : **Default:** unset.
 
 `id="integer"`
@@ -80,7 +80,7 @@ This would result in the following:
 <a rel="bookmark" href="https://example.com/index.php?id=2">Article title</a>
 ~~~
 
-Other tags used: [title](title).
+Other tags used: [title](/tags/title).
 
 ### Example 3: Customising permanent links
 
@@ -100,4 +100,4 @@ For example, to give the permanent link an HTML `title` attribute of the article
 </a>
 ~~~
 
-Other tags used: [title](title).
+Other tags used: [title](/tags/title).

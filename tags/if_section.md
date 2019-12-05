@@ -50,7 +50,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:if_section>
 ~~~
 
-Other tags used: [else](else).
+Other tags used: [else](/tags/else).
 
 ### Example 2: Add a special class to mark the currently active section
 
@@ -70,6 +70,6 @@ Other tags used: [else](else).
 </nav>
 ~~~
 
-A different way of marking the active section can be accomplished by using [section_list](section_list) and its attribute `active_class`. While the above snippet will mark the list item, [section_list](section_list) will mark solely the link.
+A different way of marking the active section can be accomplished by using [section_list](/tags/section_list) and its attribute `active_class`. While the above snippet will mark the list item, [section_list](/tags/section_list) will mark solely the link.
 
-Other tags used: [section](section).
+Other tags used: [section](/tags/section).

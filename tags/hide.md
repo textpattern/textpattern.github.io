@@ -42,7 +42,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:hide>
 ~~~
 
-Other tags used: [output_form](output_form), [variable](variable).
+Other tags used: [output_form](/tags/output_form), [variable](/tags/variable).
 
 ### Example 2: Comment out part of a form for testing
 
@@ -64,7 +64,7 @@ If you want to try something out to see how it affects the layout without actual
 
 Renders the body text inside the `<div class="entry-content">` but skips the `<address>` and `<txp:comments_invite />` tags.
 
-Other tags used: [author](author), [body](body), [comments_invite](comments_invite), [output_form](output_form), [variable](variable).
+Other tags used: [author](/tags/author), [body](/tags/body), [comments_invite](/tags/comments_invite), [output_form](/tags/output_form), [variable](/tags/variable).
 
 ## Genealogy
 

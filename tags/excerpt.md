@@ -23,7 +23,7 @@ tags:
 
 The **excerpt** tag is a *single* tag which is used to return the excerpt text, if any, associated with the article being displayed.
 
-The conditional tag [if_excerpt](if_excerpt) can be used to check if there is an excerpt.
+The conditional tag [if_excerpt](/tags/if_excerpt) can be used to check if there is an excerpt.
 
 ## Attributes
 
@@ -55,7 +55,7 @@ This example explains how you could display the excerpt in an article list, and 
 </txp:if_article_list>
 ~~~
 
-Other tags used: [body](body), [else](else), [if_article_list](if_article_list), [if_excerpt](if_excerpt), [permlink](permlink), [title](title).
+Other tags used: [body](/tags/body), [else](/tags/else), [if_article_list](/tags/if_article_list), [if_excerpt](/tags/if_excerpt), [permlink](/tags/permlink), [title](/tags/title).
 
 ### Example 2: Display the excerpt text or a default link
 
@@ -72,4 +72,4 @@ Use the following within an article form:
 </txp:if_excerpt>
 ~~~
 
-Other tags used: [else](else), [if_excerpt](if_excerpt), [section](section).
+Other tags used: [else](/tags/else), [if_excerpt](/tags/if_excerpt), [section](/tags/section).

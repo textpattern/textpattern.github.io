@@ -21,7 +21,7 @@ tags:
 <txp:image_author />
 ~~~
 
-The **image_author** tag is a *single* tag that Textpattern will replace with the author's name associated with the current image in an [images](images) list. It can **only** be used inside `<txp:images />`.
+The **image_author** tag is a *single* tag that Textpattern will replace with the author's name associated with the current image in an [images](/tags/images) list. It can **only** be used inside `<txp:images />`.
 
 ## Attributes
 
@@ -81,7 +81,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 </txp:images>
 ~~~
 
-Other tags used: [images](images), [thumbnail](thumbnail).
+Other tags used: [images](/tags/images), [thumbnail](/tags/thumbnail).
 
 ### Example 2: Link to author list
 
@@ -98,7 +98,7 @@ Other tags used: [images](images), [thumbnail](thumbnail).
 
 Displays thumbnails and author info for each image in the `fish` category. The authors' names are hyperlinked to `example.com/author/image/User+Name`.
 
-Other tags used: [images](images), [thumbnail](thumbnail).
+Other tags used: [images](/tags/images), [thumbnail](/tags/thumbnail).
 
 ## Genealogy
 

@@ -52,7 +52,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 Displays the author name if the current article belongs to the section named `poetry`.
 
-Other tags used: [author](author).
+Other tags used: [author](/tags/author).
 
 ### Example 2: Using the tag with else
 
@@ -66,4 +66,4 @@ Other tags used: [author](author).
 
 Display the welcome text if the article's section matches `poetry`, or shows a default link otherwise.
 
-Other tags used: [else](else).
+Other tags used: [else](/tags/else).

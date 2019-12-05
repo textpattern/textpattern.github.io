@@ -93,7 +93,7 @@ The above will output keywords metadata with `content="` populated with the list
 
 In this example, keywords are used in a Textpattern 'article' type Form template along with other article components. The keywords themselves are used like a list of topical 'tags', e.g. like you would use for more granular searching. The keywords would be presented above the article's excerpt.
 
-Other tags used: [permlink](permlink), [title](title), [posted](posted), [excerpt](excerpt), [body](body).
+Other tags used: [permlink](/tags/permlink), [title](/tags/title), [posted](/tags/posted), [excerpt](/tags/excerpt), [body](/tags/body).
 
 ## Genealogy
 

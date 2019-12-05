@@ -73,7 +73,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 The author's name in this article form is a hyperlink to a list of articles by this author.
 
-Other tags used: [posted](posted), [title](title), [body](body).
+Other tags used: [posted](/tags/posted), [title](/tags/title), [body](/tags/body).
 
 ### Example 2: Author landing page
 
@@ -88,7 +88,7 @@ Other tags used: [posted](posted), [title](title), [body](body).
 
 Display the author's name above a list of articles by that author when visiting `example.com/author/Author+Name` URLs.
 
-Other tags used: [if_author](if_author), [article](article).
+Other tags used: [if_author](/tags/if_author), [article](/tags/article).
 
 ## Genealogy
 

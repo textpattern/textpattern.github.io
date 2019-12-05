@@ -21,7 +21,7 @@ tags:
 <txp:link_name />
 ~~~
 
-The **link_name** tag is a *single* tag which returns the name of the link as assigned on the links pane as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to display information about the current link.
+The **link_name** tag is a *single* tag which returns the name of the link as assigned on the links pane as text. This tag is used in a 'links' type form or inside the [linklist](/tags/linklist) container tag to display information about the current link.
 
 ## Attributes
 
@@ -42,7 +42,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </a>
 ~~~
 
-Other tags used: [link_url](link_url).
+Other tags used: [link_url](/tags/link_url).
 
 ## Genealogy
 

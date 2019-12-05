@@ -49,7 +49,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:article>
 ~~~
 
-Other tags used: [article](article), [variable](variable).
+Other tags used: [article](/tags/article), [variable](/tags/variable).
 
 ### Example 2: If links exist, renders a links list
 
@@ -64,7 +64,7 @@ Other tags used: [article](article), [variable](variable).
 </txp:evaluate>
 ~~~
 
-Other tags used: [else](else), [linklist](linklist).
+Other tags used: [else](/tags/else), [linklist](/tags/linklist).
 
 ## Genealogy
 

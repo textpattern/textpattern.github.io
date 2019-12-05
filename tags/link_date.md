@@ -21,7 +21,7 @@ tags:
 <txp:link_date />
 ~~~
 
-The **link_date** tag is a *single* tag which returns the date the link was created as text. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to display information about the current link.
+The **link_date** tag is a *single* tag which returns the date the link was created as text. This tag is used in a 'links' type form or inside the [linklist](/tags/linklist) container tag to display information about the current link.
 
 ## Attributes
 
@@ -53,4 +53,4 @@ Tag will accept the following attributes (**case-sensitive**):
 (<txp:link_date />)
 ~~~
 
-Other tags used: [link_name](link_name), [link_url](link_url).
+Other tags used: [link_name](/tags/link_name), [link_url](/tags/link_url).

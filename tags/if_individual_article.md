@@ -31,7 +31,7 @@ The **if_individual_article** tag is a *conditional* tag and always used as an o
 
 The tag will execute the contained statements if an individual article is being displayed (i.e. not an article list).
 
-Note: [article_custom](article_custom) always displays an article list, even when you set it to display only one article. Thus the **if_individual_article** tag will not work with article_custom, you'll have to use the [article](article) tag instead.
+Note: [article_custom](/tags/article_custom) always displays an article list, even when you set it to display only one article. Thus the **if_individual_article** tag will not work with article_custom, you'll have to use the [article](/tags/article) tag instead.
 {: .alert-block .information}
 
 ## Attributes
@@ -70,7 +70,7 @@ This tag has no attributes.
 
 Shows links to the next/previous article if the current page is an article, or shows links to the next/previous page of results if the current page is an article list.
 
-Other tags used: [link_to_prev](link_to_prev), [link_to_next](link_to_next), [next_title](next_title), [prev_title](prev_title), [if_article_list](if_article_list), [older](older), [newer](newer).
+Other tags used: [link_to_prev](/tags/link_to_prev), [link_to_next](/tags/link_to_next), [next_title](/tags/next_title), [prev_title](/tags/prev_title), [if_article_list](/tags/if_article_list), [older](/tags/older), [newer](/tags/newer).
 
 ### Example 2: Use the tag with else
 
@@ -88,4 +88,4 @@ Other tags used: [link_to_prev](link_to_prev), [link_to_next](link_to_next), [ne
 
 Displays the site's name when showing a single article, and a logo when **not** displaying a single article.
 
-Other tags used: [else](else), [site_name](site_name).
+Other tags used: [else](/tags/else), [site_name](/tags/site_name).

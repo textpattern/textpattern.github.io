@@ -42,4 +42,4 @@ This tag has no attributes.
 
 With the tags arranged like this (as they are in the `error_default` page template), they display the error status code as a header and the relevant server message beneath it, usually to indicate to the visitor that something went wrong.
 
-Other tags used: [error_message](error_message).
+Other tags used: [error_message](/tags/error_message).

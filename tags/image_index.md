@@ -10,7 +10,7 @@ tags:
 
 # Image index
 
-**Deprecated in Textpattern 4.7.0** (use the [images](images) tag instead)
+**Deprecated in Textpattern 4.7.0** (use the [images](/tags/images) tag instead)
 {: .alert-block .error}
 
 **On this page**:
@@ -24,11 +24,11 @@ tags:
 <txp:image_index />
 ~~~
 
-The **image_index** tag is a *single* tag that is intended to be used in tandem with [image_display](image_display). It renders thumbnails of all images contained in an image category. This category can be specified as an attribute to the tag and defaults to the current site category as given in the page's URL.
+The **image_index** tag is a *single* tag that is intended to be used in tandem with [image_display](/tags/image_display). It renders thumbnails of all images contained in an image category. This category can be specified as an attribute to the tag and defaults to the current site category as given in the page's URL.
 
-The thumbnail images are linked to an address which will pass the image ID plus the active category on to the tandem [image_display](image_display) tag. It is up to the user to include this tandem tag at an appropriate place inside the page template.
+The thumbnail images are linked to an address which will pass the image ID plus the active category on to the tandem [image_display](/tags/image_display) tag. It is up to the user to include this tandem tag at an appropriate place inside the page template.
 
-Note: As the image category is passed into [image_display](image_display), it requires to either place the 'receiving' image_display on an article independent portion of the page (i.e. outside of the article form), or otherwise both the article used for display and the images have to share a 'common' category.
+Note: As the image category is passed into [image_display](/tags/image_display), it requires to either place the 'receiving' image_display on an article independent portion of the page (i.e. outside of the article form), or otherwise both the article used for display and the images have to share a 'common' category.
 {: .alert-block .information}
 
 ## Attributes
@@ -105,14 +105,14 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 Shows the thumbnail images from the category 'personal'.
 
-Other tags used: [image_display](image_display).
+Other tags used: [image_display](/tags/image_display).
 
 ## Genealogy
 
 ### Version 4.7.0
 
 `breakby` attribute added. \\
-Tag support removed - use [images](images) tag instead.
+Tag support removed - use [images](/tags/images) tag instead.
 
 ### Version 4.3.0
 

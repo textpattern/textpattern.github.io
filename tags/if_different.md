@@ -53,9 +53,9 @@ Note: `if_different` can contain several HTML and Textpattern tag.
 </txp:if_different>
 ~~~
 
-To be used inside Textpattern 'article' type [Form templates](/themes/form-templates-explained) or an article tag container (such as [article](article) or [article_custom](article_custom)).
+To be used inside Textpattern 'article' type [Form templates](/themes/form-templates-explained) or an article tag container (such as [article](/tags/article) or [article_custom](/tags/article_custom)).
 
-Other tags used: [posted](posted).
+Other tags used: [posted](/tags/posted).
 
 ### Example 2: Build an indented list of article titles grouped by section
 
@@ -97,7 +97,7 @@ In Textpattern [Page templates](/themes/page-templates-explained), add this tag 
 
 The snippet above lists all article titles and renders an intermittent heading element whenever a **different** section is encountered while the articles loop through.
 
-Other tags used: [article_custom](article_custom), [section](section), [title](title).
+Other tags used: [article_custom](/tags/article_custom), [section](/tags/section), [title](/tags/title).
 
 ### Example 3: Build a `<hr />`-separated list of article titles grouped by section
 
@@ -130,7 +130,7 @@ In Textpattern [Page templates](/themes/page-templates-explained), add this tag 
 </txp:article_custom>
 ~~~
 
-Other tags used: [article_custom](article_custom), [if_first_article](if_first_article), [section](section), [title](title).
+Other tags used: [article_custom](/tags/article_custom), [if_first_article](/tags/if_first_article), [section](/tags/section), [title](/tags/title).
 
 ## Genealogy
 

@@ -53,7 +53,7 @@ This tag has no attributes.
 </txp:if_article_image>
 ~~~
 
-Other tags used: [article_image](article_image), [else](else), [image](image).
+Other tags used: [article_image](/tags/article_image), [else](/tags/else), [image](/tags/image).
 
 ### Example 2: Integration with third-party PHP resizing script (TimThumb)
 
@@ -71,7 +71,7 @@ Other tags used: [article_image](article_image), [else](else), [image](image).
 
 Checks an article image exists, then uses `<txp:images>` with `limit="1"` to display that image (because the `<txp:images>` tag takes the article image as a first priority). Uses the TimThumb script to proportionately resize a 640px wide version of the image automatically, and keep a cached version of the resized image for future visitors.
 
-Other tags used: [images](images), [image_info](image_info), [image_url](image_url), [site_url](site_url).
+Other tags used: [images](/tags/images), [image_info](/tags/image_info), [image_url](/tags/image_url), [site_url](/tags/site_url).
 
 ## Genealogy
 

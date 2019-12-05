@@ -21,7 +21,7 @@ tags:
 <txp:link_id />
 ~~~
 
-The **link_id** tag is a *single* tag which returns the numerical ID of the link. This tag is used in a 'links' type form or inside the [linklist](linklist) container tag to show information about the current link in the list.
+The **link_id** tag is a *single* tag which returns the numerical ID of the link. This tag is used in a 'links' type form or inside the [linklist](/tags/linklist) container tag to show information about the current link in the list.
 
 ## Attributes
 
@@ -41,7 +41,7 @@ This tag has no attributes.
 </txp:linklist>
 ~~~
 
-Other tags used: [linklist](linklist), [link_name](link_name), [link_category](link_category).
+Other tags used: [linklist](/tags/linklist), [link_name](/tags/link_name), [link_category](/tags/link_category).
 
 ## Genealogy
 

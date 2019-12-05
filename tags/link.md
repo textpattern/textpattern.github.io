@@ -23,7 +23,7 @@ tags:
 
 The **link** tag is a *single* tag which is used to return an HTML hyperlink defined in the [Links panel](/administration/links-panel). It uses the 'Title' field as the link's text.
 
-This tag is used in 'links' type forms or inside the [linklist](linklist) container tag.
+This tag is used in 'links' type forms or inside the [linklist](/tags/linklist) container tag.
 
 ## Attributes
 
@@ -50,7 +50,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </p>
 ~~~
 
-Other tags used: [link_description](link_description).
+Other tags used: [link_description](/tags/link_description).
 
 ## Genealogy
 

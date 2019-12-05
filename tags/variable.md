@@ -31,7 +31,7 @@ If used as a *container* tag, the result of the contained statements are assigne
 </txp:variable>
 ~~~
 
-Note: Avoid entering white space characters for better code readability between the opening and closing *variable* tags, they will lead to falsified results in the [if_variable](if_variable) evaluation.
+Note: Avoid entering white space characters for better code readability between the opening and closing *variable* tags, they will lead to falsified results in the [if_variable](/tags/if_variable) evaluation.
 {: .alert-block .information}
 
 ## Attributes
@@ -96,7 +96,7 @@ Later down the Page template or in a separate Form template you can read the att
 </txp:if_variable>
 ~~~
 
-Other tags used: [else](else), [if_category](if_category), [if_search](if_search), [if_variable](if_variable), [search_term](search_term).
+Other tags used: [else](/tags/else), [if_category](/tags/if_category), [if_search](/tags/if_search), [if_variable](/tags/if_variable), [search_term](/tags/search_term).
 
 ### Example 2: Use any tag's value as a conditional expression
 
@@ -119,7 +119,7 @@ The variable 'foo' can then be used as a conditional later in the code.
 
 The conditional is saying if there is a variable named 'foo' having a specific value of 'example.com/bar/baz', then output what is defined, i.e. 'do this'.
 
-Other tags used: [if_variable](if_variable).
+Other tags used: [if_variable](/tags/if_variable).
 
 ### Example 3: Check if this is the first page of a page group
 
@@ -132,7 +132,7 @@ Other tags used: [if_variable](if_variable).
 </txp:if_variable>
 ~~~
 
-Other tags used: [else](else), [if_variable](if_variable), [page_url](page_url).
+Other tags used: [else](/tags/else), [if_variable](/tags/if_variable), [page_url](/tags/page_url).
 
 ### Example 4: Output a counter in an article list
 
@@ -142,7 +142,7 @@ Other tags used: [else](else), [if_variable](if_variable), [page_url](page_url).
 </txp:article>
 ~~~
 
-Other tags used: [article](article), [title](title).
+Other tags used: [article](/tags/article), [title](/tags/title).
 
 ## Genealogy
 

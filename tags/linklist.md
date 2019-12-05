@@ -67,7 +67,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0`.
 
 `pageby="integer or limit"` <span class="footnote warning">v4.3.0+</span>
-: Number of links to jump each page. Without this attribute, you cannot navigate using the [newer](newer) and [older](older) tags. Usually you will want to track the `limit` attribute. Use `pageby="limit"` to do this, which means you will not have to amend two values if you subsequently decide to alter the `limit`.
+: Number of links to jump each page. Without this attribute, you cannot navigate using the [newer](/tags/newer) and [older](/tags/older) tags. Usually you will want to track the `limit` attribute. Use `pageby="limit"` to do this, which means you will not have to amend two values if you subsequently decide to alter the `limit`.
 : **Default:** unset
 
 `realname="author real name"` <span class="footnote warning">v4.3.0+</span>
@@ -136,7 +136,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 This example uses the displayed page's category as the criterion for choosing the linklist's category.
 
-Other tags used: [if_category](if_category).
+Other tags used: [if_category](/tags/if_category).
 
 ### Example 3: Used as a container tag
 
@@ -150,7 +150,7 @@ Other tags used: [if_category](if_category).
 
 The tags within the container are repeated for each link provided by the linklist tag.
 
-Other tags used: [link](link), [linkdesctitle](linkdesctitle), [link_description](link_description).
+Other tags used: [link](/tags/link), [linkdesctitle](/tags/linkdesctitle), [link_description](/tags/link_description).
 
 ## Genealogy
 
@@ -166,4 +166,4 @@ Other tags used: [link](link), [linkdesctitle](linkdesctitle), [link_description
 
 `author` and `realname` attributes added. \\
 `auto_detect` attribute added to allow automatic (URL-based) contextual listings. \\
-`pageby` attribute added to enable paging via [newer](newer) and [older](older) tags.
+`pageby` attribute added to enable paging via [newer](/tags/newer) and [older](/tags/older) tags.

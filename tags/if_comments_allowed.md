@@ -34,9 +34,9 @@ The tag will execute the contained statements if comments are allowed for a give
 
 This tag can be used in pages, or in article or comment forms; though it will allow you to use an `id` attribute in a comment form, the default behaviour (no attribute) will ensure consistency in comment/article matching when viewing an individual article.
 
-When used in a page template, it will test the article identified by the attribute for status and act, or not, according to that status. It will not pass the `id` attribute to the contained statement, such as [comments](comments) or [comments_form](comments_form), they must be added as attributes to the contained tag.
+When used in a page template, it will test the article identified by the attribute for status and act, or not, according to that status. It will not pass the `id` attribute to the contained statement, such as [comments](/tags/comments) or [comments_form](/tags/comments_form), they must be added as attributes to the contained tag.
 
-This tag is mainly used in combination with [if_comments_disallowed](if_comments_disallowed).
+This tag is mainly used in combination with [if_comments_disallowed](/tags/if_comments_disallowed).
 
 ## Attributes
 
@@ -58,7 +58,7 @@ This tag has no attributes.
 
 Comments for articles can be turned off or on at the author's discretion for any article that is published; by using the following scheme in an article form, you can still have the on/off control over comments while also giving an indication of the comment status.
 
-Other tags used: [comments_form](comments_form), [if_comments_disallowed](if_comments_disallowed).
+Other tags used: [comments_form](/tags/comments_form), [if_comments_disallowed](/tags/if_comments_disallowed).
 
 ### Example 2: Display a list of IDs
 
@@ -78,4 +78,4 @@ And the form 'lineitem' (type: comment):
 
 Displays a list of id numbers for comments on the current article, if comments are currently allowed.
 
-Other tags used: [comments](comments), [else](else), [comment_id](comment_id).
+Other tags used: [comments](/tags/comments), [else](/tags/else), [comment_id](/tags/comment_id).

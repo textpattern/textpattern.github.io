@@ -10,7 +10,7 @@ tags:
 
 # Conditional tags
 
-[Container tags](self-closed-versus-container-tags) in Textpattern are great for making lists and you use **conditional tags** to get there.
+[Container tags](/tags/tag-basics/self-closed-versus-container-tags) in Textpattern are great for making lists and you use **conditional tags** to get there.
 
 In Textpattern your visitors are in one of two *views_; either an **individual** (article) view or a **list** view. You don't need to worry about managing which is which, because Textpattern takes care of that for you, but you can decide what action you are going to take when a visitor views your site in either state.
 
@@ -62,4 +62,4 @@ That is the fundamental building block of how container and conditional tags can
 
 One thing to note: containers are great for simple content like this but if you find yourself repeating the same contained content over and over in [Page templates](/themes/page-templates-explained) or across a series of pages, you can make it easier on yourself by using [Form templates](/themes/form-templates-explained) instead. You then just write the container content once and use the `form="my-contained-stuff"` attribute in self-closing [article](/tags/article) tags to use it.
 
-[Next: Tag nesting](tag-nesting)
+[Next: Tag nesting](/tags/tag-basics/tag-nesting)

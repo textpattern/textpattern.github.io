@@ -52,7 +52,7 @@ This tag has no attributes.
 </txp:if_expired>
 ~~~
 
-Other tags used: [else](else), [expires](expires), [if_expires](if_expires).
+Other tags used: [else](/tags/else), [expires](/tags/expires), [if_expires](/tags/if_expires).
 
 ## Genealogy
 

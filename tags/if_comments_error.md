@@ -46,4 +46,4 @@ This tag has no attributes.
 </txp:if_comments_error>
 ~~~
 
-Other tags used: [comments_error](comments_error).
+Other tags used: [comments_error](/tags/comments_error).

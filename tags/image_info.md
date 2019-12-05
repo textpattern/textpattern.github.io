@@ -44,11 +44,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : One or more of the following values to display the particular pieces of information from the current image.
 : **Values:** \\
 `alt`: image `alt` content. \\
-`author`: image author's login name (see [image_author](image_author) to display the author's real name). \\
+`author`: image author's login name (see [image_author](/tags/image_author) to display the author's real name). \\
 `caption`: image `caption` content. \\
 `category`: image category name. \\
 `category_title`: image category title. \\
-`date`: timestamp of image upload (this is not very useful, so consult [image_date](image_date) for a better alternative). \\
+`date`: timestamp of image upload (this is not very useful, so consult [image_date](/tags/image_date) for a better alternative). \\
 `ext`: image extension. \\
 `h`: image height. \\
 `id`: image id. \\
@@ -91,7 +91,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 Grabs all images from the 'mammals' category and displays the image thumbnail itself along with the image caption surrounded with HTML `<div>` tags. Note that the image IDs/names are not specified inside the container because they are automatically assigned from the `<txp:images>` tag for each image in the given category.
 
-Other tags used: [images](images), [thumbnail](thumbnail).
+Other tags used: [images](/tags/images), [thumbnail](/tags/thumbnail).
 
 ### Example 2: Multiple pieces of information at once
 
@@ -111,7 +111,7 @@ Other tags used: [images](images), [thumbnail](thumbnail).
 
 Shows the thumbnail of each image that has an assigned thumbnail image from the 'mammals' and 'birds' categories and, beneath each, show its dimensions 'width' x 'height' along with the author of the image. Since the list has been sorted by category, the `<txp:if_different>` conditional can be used to output the category title at the top of the list of images each time it changes.
 
-Other tags used: [images](images), [thumbnail](thumbnail), [if_different](if_different).
+Other tags used: [images](/tags/images), [thumbnail](/tags/thumbnail), [if_different](/tags/if_different).
 
 ### Example 3: Specific image information
 

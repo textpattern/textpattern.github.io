@@ -21,7 +21,7 @@ tags:
 <txp:link_author />
 ~~~
 
-The **link_author** tag is a *single* tag that Textpattern will replace with the author's name associated with the current link in a [linklist](linklist). It can **only** be used inside `<txp:linklist />`.
+The **link_author** tag is a *single* tag that Textpattern will replace with the author's name associated with the current link in a [linklist](/tags/linklist). It can **only** be used inside `<txp:linklist />`.
 
 ## Attributes
 
@@ -70,7 +70,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 </p>
 ~~~
 
-Other tags used: [link](link).
+Other tags used: [link](/tags/link).
 
 ## Genealogy
 

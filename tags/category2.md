@@ -24,7 +24,7 @@ tags:
 
 The **category2** tag can be used as either a *single* tag or *container* tag. It will display information of the category as defined by **Category 2** of the article being displayed. When used as a containing tag, it will turn the contents into a link to that category. Otherwise, it will return plain text.
 
-This tag may be used within either an article form, or in a page, wrapped in an [if_individual_article](if_individual_article) conditional tag.
+This tag may be used within either an article form, or in a page, wrapped in an [if_individual_article](/tags/if_individual_article) conditional tag.
 
 ## Attributes
 
@@ -104,7 +104,7 @@ If **category2** is 'Specific stuff', this tag will display the words 'Specific 
 
 Shows a hyperlinked category 1, and also hyperlinked category 2 but only if it is used.
 
-Other tags used: [category1](category1), [if_article_category](if_article_category).
+Other tags used: [category1](/tags/category1), [if_article_category](/tags/if_article_category).
 
 ## Genealogy
 

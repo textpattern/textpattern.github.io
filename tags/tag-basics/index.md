@@ -16,12 +16,12 @@ Below are a series of tag fundamentals, which will get you up and running with T
 
 ## Tag basics topics
 
-1. [Self-closed versus container tags](self-closed-versus-container-tags)
-2. [Conditional tags](conditional-tags)
-3. [Tag nesting](tag-nesting)
-4. [Parsing tag attributes](parsing-tag-attributes)
-5. [Parser and passes](parser-and-passes)
-6. [Incorrect tag contexts](incorrect-tag-contexts)
-7. [Integrated tag notation](integrated-tag-notation)
-8. [Tag escaping](tag-escaping)
-9. [Core short-tags](core-short-tags)
+1. [Self-closed versus container tags](/tags/tag-basics/self-closed-versus-container-tags)
+2. [Conditional tags](/tags/tag-basics/conditional-tags)
+3. [Tag nesting](/tags/tag-basics/tag-nesting)
+4. [Parsing tag attributes](/tags/tag-basics/parsing-tag-attributes)
+5. [Parser and passes](/tags/tag-basics/parser-and-passes)
+6. [Incorrect tag contexts](/tags/tag-basics/incorrect-tag-contexts)
+7. [Integrated tag notation](/tags/tag-basics/integrated-tag-notation)
+8. [Tag escaping](/tags/tag-basics/tag-escaping)
+9. [Core short-tags](/tags/tag-basics/core-short-tags)

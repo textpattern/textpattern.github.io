@@ -43,4 +43,4 @@ This tag has no attributes.
 
 When used as part of your article form, this displays the article title, author and posted date, then the body text beneath that.
 
-Other tags used: [author](author), [posted](posted), [title](title).
+Other tags used: [author](/tags/author), [posted](/tags/posted), [title](/tags/title).

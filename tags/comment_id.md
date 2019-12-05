@@ -43,4 +43,4 @@ This tag has no attributes.
 <txp:comment_message />
 ~~~
 
-Other tags used: [comment_message](comment_message), [comment_name](comment_name), [comment_permlink](comment_permlink), [comment_time](comment_time).
+Other tags used: [comment_message](/tags/comment_message), [comment_name](/tags/comment_name), [comment_permlink](/tags/comment_permlink), [comment_time](/tags/comment_time).

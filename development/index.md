@@ -169,7 +169,7 @@ Let's look a few `register_callback()` examples.
 
 Elements can be added to admin-side panels in two ways: as *new* elements, or as modifications to existing elements. Each panel has its
 own set of core callback parameters to work with, which are detailed in the [Admin-side user-interface
-callbacks](core-callbacks-reference#admin-side-callbacks) section of the [Core callbacks reference](/development/core-callbacks-reference).
+callbacks](/development/core-callbacks-reference#admin-side-callbacks) section of the [Core callbacks reference](/development/core-callbacks-reference).
 
 #### Adding new elements (without altering existing markup)
 

@@ -10,7 +10,7 @@ tags:
 
 # Image list
 
-**Deprecated in Textpattern 4.4.0** (it was renamed to [images](images) tag)
+**Deprecated in Textpattern 4.4.0** (it was renamed to [images](/tags/images) tag)
 {: .alert-block .error}
 
 **On this page**:
@@ -42,7 +42,7 @@ By default, the tag is context-sensitive, which means that in the absence of any
 
 ### Version 4.4.0
 
-Tag support removed (it was renamed to [images](images) tag).
+Tag support removed (it was renamed to [images](/tags/images) tag).
 
 ### Version 4.3.0
 

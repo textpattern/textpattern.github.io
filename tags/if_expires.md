@@ -46,7 +46,7 @@ This tag has no attributes.
 </txp:if_expires>
 ~~~
 
-Other tags used: [expires](expires).
+Other tags used: [expires](/tags/expires).
 
 ## Genealogy
 

@@ -19,4 +19,4 @@ If you wish to write the documentation for new tags in preparation for the next 
 
 ## New tags
 
-* [item](item)
+* [item](/tags/item)

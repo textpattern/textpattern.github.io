@@ -31,7 +31,7 @@ The **if_category** tag is a *conditional* tag and always used as an opening and
 
 The tag will execute the contained statements if the `name` attribute matches a category search value, or the list is an article list by category.
 
-Should be used in a page template; if checking the category in an article form, use [if_article_category](if_article_category).
+Should be used in a page template; if checking the category in an article form, use [if_article_category](/tags/if_article_category).
 
 ## Attributes
 
@@ -69,7 +69,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 Displays the author's name if the article list is of category `prose`.
 
-Other tags used: [author](author).
+Other tags used: [author](/tags/author).
 
 ### Example 2: Use tag with else
 
@@ -83,7 +83,7 @@ Other tags used: [author](author).
 
 Displays the category name if the article list is of category `prose`, otherwise show the site's name.
 
-Other tags used: [category](category), [else](else), [site_name](site_name).
+Other tags used: [category](/tags/category), [else](/tags/else), [site_name](/tags/site_name).
 
 ### Example 3: Display an appropriate heading
 
@@ -97,7 +97,7 @@ Other tags used: [category](category), [else](else), [site_name](site_name).
 
 Displays an appropriate heading for both category and non-category pages.
 
-Other tags used: [category](category), [else](else).
+Other tags used: [category](/tags/category), [else](/tags/else).
 
 ### Example 4: Display a category/article list
 
@@ -121,7 +121,7 @@ Given the defined article categories: `prose`, `poetry`, and `opinions`.
 
 Shows a category list and, underneath it, a list of related articles in the currently selected category. Changing the category using the list changes the related articles underneath.
 
-Other tags used: [category_list](category_list), [recent_articles](recent_articles).
+Other tags used: [category_list](/tags/category_list), [recent_articles](/tags/recent_articles).
 
 ### Example 5: Check if `cat` is descendant of `animal`
 

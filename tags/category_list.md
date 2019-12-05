@@ -145,7 +145,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 
 This code will add `class="active"` to the `<li>` element around the current viewed category in the list, allowing your to style it with CSS as desired.
 
-Other tags used: [category](category), [if_category](if_category).
+Other tags used: [category](/tags/category), [if_category](/tags/if_category).
 
 ## Genealogy
 

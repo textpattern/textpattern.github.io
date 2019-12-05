@@ -114,7 +114,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 </txp:authors>
 ~~~
 
-Other tags used: [author](author), [[author_email](author_email).
+Other tags used: [author](/tags/author), [[author_email](/tags/author_email).
 
 ### Example 3: Render a drop-down list of authors
 
@@ -126,7 +126,7 @@ Other tags used: [author](author), [[author_email](author_email).
 </select>
 ~~~
 
-Other tags used: [author](author).
+Other tags used: [author](/tags/author).
 
 ## Genealogy
 

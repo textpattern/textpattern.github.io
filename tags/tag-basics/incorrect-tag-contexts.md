@@ -75,4 +75,4 @@ The following contexts are recognised by Textpattern:
     </table>
 </div>
 
-[Next: Integrated tag notation](integrated-tag-notation)
+[Next: Integrated tag notation](/tags/tag-basics/integrated-tag-notation)

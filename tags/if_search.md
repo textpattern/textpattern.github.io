@@ -50,4 +50,4 @@ This tag has no attributes.
 
 Selects a stylesheet named 'search' when search results are being displayed, or a stylesheet determined by the active section for normal page display.
 
-Other tags used: [else](else), [css](css).
+Other tags used: [else](/tags/else), [css](/tags/css).

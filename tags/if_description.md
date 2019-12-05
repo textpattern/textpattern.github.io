@@ -60,7 +60,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </head>
 ~~~
 
-Other tags used: [else](else), [meta_description](meta_description).
+Other tags used: [else](/tags/else), [meta_description](/tags/meta_description).
 
 ## Genealogy
 

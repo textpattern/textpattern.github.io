@@ -142,7 +142,7 @@ li.email a:hover {
 }
 ~~~
 
-See the [email](email) tag for a similar solution for Symbolset's 'email' glyph.
+See the [email](/tags/email) tag for a similar solution for Symbolset's 'email' glyph.
 
 ## Genealogy
 

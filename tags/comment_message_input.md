@@ -74,7 +74,7 @@ Tag will accept the following attributes (**case-sensitive**):
 </p>
 ~~~
 
-Other tags used: [comment_email_input](comment_email_input), [comments_help](comments_help), [comment_name_input](comment_name_input), [comment_preview](comment_preview), [comment_remember](comment_remember), [comment_submit](comment_submit), [comment_web_input](comment_web_input).
+Other tags used: [comment_email_input](/tags/comment_email_input), [comments_help](/tags/comments_help), [comment_name_input](/tags/comment_name_input), [comment_preview](/tags/comment_preview), [comment_remember](/tags/comment_remember), [comment_submit](/tags/comment_submit), [comment_web_input](/tags/comment_web_input).
 
 ### Example 2: Text area changes in preview
 
@@ -96,7 +96,7 @@ Using some conditional tags, the size of the comment form `textarea` can be chan
 </txp:if_comments_preview>
 ~~~
 
-Other tags used: [comments_preview](comments_preview), [if_comments_preview](if_comments_preview), [else](else).
+Other tags used: [comments_preview](/tags/comments_preview), [if_comments_preview](/tags/if_comments_preview), [else](/tags/else).
 
 ### Example 3: Minimal comment form without labels (but still accessible)
 
@@ -119,7 +119,7 @@ Other tags used: [comments_preview](comments_preview), [if_comments_preview](if_
 </p>
 ~~~
 
-Other tags used: [comment_email_input](comment_email_input), [comment_name_input](comment_name_input), [comment_preview](comment_preview), [comment_submit](comment_submit), [comment_web_input](comment_web_input).
+Other tags used: [comment_email_input](/tags/comment_email_input), [comment_name_input](/tags/comment_name_input), [comment_preview](/tags/comment_preview), [comment_submit](/tags/comment_submit), [comment_web_input](/tags/comment_web_input).
 
 ## Genealogy
 
@@ -129,4 +129,4 @@ Other tags used: [comment_email_input](comment_email_input), [comment_name_input
 
 ### Version 4.6.0
 
-`cols` and `rows` attributes added (replaces functionality of deprecated `msgcols` and `msgrows` attributes in [comments_form](comments_form) tag).
+`cols` and `rows` attributes added (replaces functionality of deprecated `msgcols` and `msgrows` attributes in [comments_form](/tags/comments_form) tag).

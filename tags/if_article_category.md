@@ -59,7 +59,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 If the Category1 assigned to the article is 'Prose', the category is displayed. Note that the category **name** is used in this tag, which may be different to its displayed category **Title**. When categories are created, Textpattern converts them to lowercase and replaces spaces with hyphens. So, for example, 'My Category' has a name `my-category`.
 
-Other tags used: [category1](category1).
+Other tags used: [category1](/tags/category1).
 
 ### Example 2: Using the tag with else
 
@@ -75,7 +75,7 @@ Other tags used: [category1](category1).
 
 Displays the welcome text if the category and category number match the given values, or shows a default link otherwise.
 
-Other tags used: [else](else).
+Other tags used: [else](/tags/else).
 
 ### Example 3: Display a list of matching links
 
@@ -93,4 +93,4 @@ In an article form, put the following set of conditionals for each category you 
 
 Lists articles of the same category as the current article's Category1.
 
-Other tags used: [article_custom](article_custom), [else](else), [title](title), [permlink](permlink).
+Other tags used: [article_custom](/tags/article_custom), [else](/tags/else), [title](/tags/title), [permlink](/tags/permlink).

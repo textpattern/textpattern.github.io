@@ -31,7 +31,7 @@ The **if_first_link** tag is a *conditional* tag and always used as an opening a
 </txp:if_first_link>
 ~~~
 
-The tag will execute the contained statements if the displayed link is the first in the currently displayed [linklist](linklist). The tag supports [else](else).
+The tag will execute the contained statements if the displayed link is the first in the currently displayed [linklist](/tags/linklist). The tag supports [else](/tags/else).
 
 ## Attributes
 
@@ -55,7 +55,7 @@ This tag has no attributes.
 </txp:linklist>
 ~~~
 
-Other tags used: [else](else), [link](link), [linklist](linklist).
+Other tags used: [else](/tags/else), [link](/tags/link), [linklist](/tags/linklist).
 
 ## Genealogy
 

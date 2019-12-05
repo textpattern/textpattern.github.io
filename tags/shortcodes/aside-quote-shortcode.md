@@ -84,7 +84,7 @@ You can remove the top comment hidden with `<txp:hide> … </txp:hide>` if you w
 
 ## Short-tag and attributes
 
-Following how [custom short-tags and shortcodes]() work, the associated short-tag for use is:
+Following how [custom short-tags and shortcodes](/tags/shortcodes/custom-short-tags-and-shortcodes) work, the associated short-tag for use is:
 
 ~~~ html
 <txp::linkquote />

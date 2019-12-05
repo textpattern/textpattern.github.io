@@ -55,7 +55,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 </p>
 ~~~
 
-Other tags used: [text](text).
+Other tags used: [text](/tags/text).
 
 ## Genealogy
 

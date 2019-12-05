@@ -69,7 +69,7 @@ If you need to output the articles from a section as a JSON document, the corres
 
 The served page will be interpreted by browsers as a JSON application.
 
-Other tags used: [article](article), [title](title).
+Other tags used: [article](/tags/article), [title](/tags/title).
 
 ## Genealogy
 

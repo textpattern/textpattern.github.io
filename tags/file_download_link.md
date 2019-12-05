@@ -58,4 +58,4 @@ Note: `id` takes precedence over `filename`. If neither is defined and the tag i
 
 Makes a link to the given file (#4) comprising its file name and size.
 
-Other tags used: [file_download_name](file_download_name), [file_download_size](file_download_size).
+Other tags used: [file_download_name](/tags/file_download_name), [file_download_size](/tags/file_download_size).

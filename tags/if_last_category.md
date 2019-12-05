@@ -30,7 +30,7 @@ The **if_last_category** tag is a *conditional* tag and always used as an openin
 </txp:if_last_category>
 ~~~
 
-The tag will execute the contained statements if the current category (usually one inside the container or form of a [category_list](category_list)) is the last in the currently displayed list.
+The tag will execute the contained statements if the current category (usually one inside the container or form of a [category_list](/tags/category_list)) is the last in the currently displayed list.
 
 ## Attributes
 
@@ -54,7 +54,7 @@ This tag has no attributes.
 
 Prevents the last category in the list from being hyperlinked to a category page. Why you might do it? If you nest categories under a 'header' category you might want to show the header of the group but not allow people to link to its category page.
 
-Other tags used: [category](category), [category_list](category_list), [else](else).
+Other tags used: [category](/tags/category), [category_list](/tags/category_list), [else](/tags/else).
 
 ## Genealogy
 
