@@ -155,10 +155,16 @@ In this section:
 
 ### Write panel
 
-`article_ui > title`
-* **When it occurs:** The _Title_ area of the Write panel.
-* **What it allows:** Additions or replacements to the article title input field.
-* **Argument \#3:** HTML of the `inputLabel()` title field area.
+`article_ui > annotate_invite`
+* **When it occurs:** The entire comments invite block on the Write panel.
+* **What it allows:** Additions or replacements to the entire Comments area, including the on/off radio and comments invite message.
+* **Argument \#3:** Combined HTML of the input field in the Comments block.
+* **Argument \#4:** The record row that pertains to the current article being edited.
+
+`article_ui > article_image`
+* **When it occurs:** The _Article image_ field on the Write panel.
+* **What it allows:** Additions or replacements to the article's image input field.
+* **Argument \#3:** HTML of the `inputLabel()` image field area.
 * **Argument \#4:** The record row that pertains to the current article being edited.
 
 `article_ui > author`
@@ -173,82 +179,10 @@ In this section:
 * **Argument \#3:** HTML of the `inputLabel()` body field area.
 * **Argument \#4:** The record row that pertains to the current article being edited.
 
-`article_ui > excerpt`
-* **When it occurs:** The _Excerpt_ area of the Write panel.
-* **What it allows:** Additions or replacements to the article excerpt input field, including markup options.
-* **Argument \#3:** HTML of the `inputLabel()` excerpt field area.
-* **Argument \#4:** The record row that pertains to the current article being edited.
-
-`article_ui > status`
-* **When it occurs:** On the Write panel, in the _Sort & display_ area.
-* **What it allows:** Additions or replacements to the Status input field.
-* **Argument \#3:** HTML of the `inputLabel()` for the Status select list.
-* **Argument \#4:** The record row that pertains to the current article being edited.
-
-`article_ui > section`
-* **When it occurs:** On the Write panel, in the _Sort & display_ area.
-* **What it allows:** Additions or replacements to the Section input field.
-* **Argument \#3:** HTML of the `inputLabel()` for the Section select list.
-* **Argument \#4:** The record row that pertains to the current article being edited.
-
-`article_ui > override`
-* **When it occurs:** On the Write panel, in the _Sort & display_ area.
-* **What it allows:** Additions or replacements to the Override form input field.
-* **Argument \#3:** HTML of the `inputLabel()` for the select list.
-* **Argument \#4:** The record row that pertains to the current article being edited.
-
-`article_ui > sort_display`
-* **When it occurs:** The entire _Sort & display_ area on the Write panel.
-* **What it allows:** Additions or replacements to the entire Sort and display block, comprising the Status, Section and Override form.
-* **Argument \#3:** Combined HTML of the separate components in the Sort and display block.
-* **Argument \#4:** The record row that pertains to the current article being edited.
-
-`article_ui > annotate_invite`
-* **When it occurs:** The entire comments invite block on the Write panel.
-* **What it allows:** Additions or replacements to the entire Comments area, including the on/off radio and comments invite message.
-* **Argument \#3:** Combined HTML of the input field in the Comments block.
-* **Argument \#4:** The record row that pertains to the current article being edited.
-
-`article_ui > timestamp`
-* **When it occurs:** The _Publish date and time_ area of the Write panel.
-* **What it allows:** Additions or replacements to the publish date/time input fields and 'publish now' checkbox.
-* **Argument \#3:** HTML of the two `inputLabel()` calls - one for the date, one for the time - and the checkbox beneath.
-* **Argument \#4:** The record row that pertains to the current article being edited, plus `sPosted` (the persistent timestamp).
-
-`article_ui > expires`
-* **When it occurs:** The _Expiry date and time_ area of the Write panel.
-* **What it allows:** Additions or replacements to the article expiry date/time input fields and 'expire now' checkbox.
-* **Argument \#3:** HTML of the two `inputLabel()` calls - one for the date, one for the time - and the checkbox beneath.
-* **Argument \#4:** The record row that pertains to the current article being edited.
-
 `article_ui > categories`
 * **When it occurs:** The _Categories_ area of the Write panel.
 * **What it allows:** Additions or replacements to the article category selectors.
 * **Argument \#3:** HTML of the two category selectors.
-* **Argument \#4:** The record row that pertains to the current article being edited.
-
-`article_ui > url_title`
-* **When it occurs:** The _URL-only title_ field on the Write panel.
-* **What it allows:** Additions or replacements to the article's permalink URL input field.
-* **Argument \#3:** HTML of the `inputLabel()` URL title field area.
-* **Argument \#4:** The record row that pertains to the current article being edited.
-
-`article_ui > description`
-* **When it occurs:** The _Meta description_ field on the Write panel.
-* **What it allows:** Additions or replacements to the article's meta description input field.
-* **Argument \#3:** HTML of the `inputLabel()` description field area.
-* **Argument \#4:** The record row that pertains to the current article being edited.
-
-`article_ui > keywords`
-* **When it occurs:** The _Keywords_ field on the Write panel.
-* **What it allows:** Additions or replacements to the article's keywords input field.
-* **Argument \#3:** HTML of the `inputLabel()` keywords field area.
-* **Argument \#4:** The record row that pertains to the current article being edited.
-
-`article_ui > article_image`
-* **When it occurs:** The _Article image_ field on the Write panel.
-* **What it allows:** Additions or replacements to the article's image input field.
-* **Argument \#3:** HTML of the `inputLabel()` image field area.
 * **Argument \#4:** The record row that pertains to the current article being edited.
 
 `article_ui > custom_fields`
@@ -257,10 +191,22 @@ In this section:
 * **Argument \#3:** HTML of the `inputLabel()` custom fields block.
 * **Argument \#4:** The record row that pertains to the current article being edited.
 
-`article_ui > markup`
-* **When it occurs:** The old 'Advanced options' area of the Write panel, now removed.
-* **What it allows:** Additions or replacements to the area that used to house the so-called 'advanced options' before they were moved elsewhere. Only retained for backwards compatibility with plugins.
-* **Argument \#3:** (not used)
+`article_ui > description`
+* **When it occurs:** The _Meta description_ field on the Write panel.
+* **What it allows:** Additions or replacements to the article's meta description input field.
+* **Argument \#3:** HTML of the `inputLabel()` description field area.
+* **Argument \#4:** The record row that pertains to the current article being edited.
+
+`article_ui > excerpt`
+* **When it occurs:** The _Excerpt_ area of the Write panel.
+* **What it allows:** Additions or replacements to the article excerpt input field, including markup options.
+* **Argument \#3:** HTML of the `inputLabel()` excerpt field area.
+* **Argument \#4:** The record row that pertains to the current article being edited.
+
+`article_ui > expires`
+* **When it occurs:** The _Expiry date and time_ area of the Write panel.
+* **What it allows:** Additions or replacements to the article expiry date/time input fields and 'expire now' checkbox.
+* **Argument \#3:** HTML of the two `inputLabel()` calls - one for the date, one for the time - and the checkbox beneath.
 * **Argument \#4:** The record row that pertains to the current article being edited.
 
 `article_ui > extend_col_1`
@@ -269,10 +215,64 @@ In this section:
 * **Argument \#3:** (not used)
 * **Argument \#4:** The record row that pertains to the current article being edited.
 
+`article_ui > keywords`
+* **When it occurs:** The _Keywords_ field on the Write panel.
+* **What it allows:** Additions or replacements to the article's keywords input field.
+* **Argument \#3:** HTML of the `inputLabel()` keywords field area.
+* **Argument \#4:** The record row that pertains to the current article being edited.
+
+`article_ui > markup`
+* **When it occurs:** The old 'Advanced options' area of the Write panel, now removed.
+* **What it allows:** Additions or replacements to the area that used to house the so-called 'advanced options' before they were moved elsewhere. Only retained for backwards compatibility with plugins.
+* **Argument \#3:** (not used)
+* **Argument \#4:** The record row that pertains to the current article being edited.
+
+`article_ui > override`
+* **When it occurs:** On the Write panel, in the _Sort & display_ area.
+* **What it allows:** Additions or replacements to the Override form input field.
+* **Argument \#3:** HTML of the `inputLabel()` for the select list.
+* **Argument \#4:** The record row that pertains to the current article being edited.
+
 `article_ui > recent_articles`
 * **When it occurs:** The _Recent articles_ block of the Write panel.
 * **What it allows:** Additions or replacements to the block displaying recent articles that have been edited.
 * **Argument \#3:** HTML of the entire 'recent articles' block.
+* **Argument \#4:** The record row that pertains to the current article being edited.
+
+`article_ui > section`
+* **When it occurs:** On the Write panel, in the _Sort & display_ area.
+* **What it allows:** Additions or replacements to the Section input field.
+* **Argument \#3:** HTML of the `inputLabel()` for the Section select list.
+* **Argument \#4:** The record row that pertains to the current article being edited.
+
+`article_ui > sort_display`
+* **When it occurs:** The entire _Sort & display_ area on the Write panel.
+* **What it allows:** Additions or replacements to the entire Sort and display block, comprising the Status, Section and Override form.
+* **Argument \#3:** Combined HTML of the separate components in the Sort and display block.
+* **Argument \#4:** The record row that pertains to the current article being edited.
+
+`article_ui > status`
+* **When it occurs:** On the Write panel, in the _Sort & display_ area.
+* **What it allows:** Additions or replacements to the Status input field.
+* **Argument \#3:** HTML of the `inputLabel()` for the Status select list.
+* **Argument \#4:** The record row that pertains to the current article being edited.
+
+`article_ui > timestamp`
+* **When it occurs:** The _Publish date and time_ area of the Write panel.
+* **What it allows:** Additions or replacements to the publish date/time input fields and 'publish now' checkbox.
+* **Argument \#3:** HTML of the two `inputLabel()` calls - one for the date, one for the time - and the checkbox beneath.
+* **Argument \#4:** The record row that pertains to the current article being edited, plus `sPosted` (the persistent timestamp).
+
+`article_ui > title`
+* **When it occurs:** The _Title_ area of the Write panel.
+* **What it allows:** Additions or replacements to the article title input field.
+* **Argument \#3:** HTML of the `inputLabel()` title field area.
+* **Argument \#4:** The record row that pertains to the current article being edited.
+
+`article_ui > url_title`
+* **When it occurs:** The _URL-only title_ field on the Write panel.
+* **What it allows:** Additions or replacements to the article's permalink URL input field.
+* **Argument \#3:** HTML of the `inputLabel()` URL title field area.
 * **Argument \#4:** The record row that pertains to the current article being edited.
 
 `article_ui > view`
