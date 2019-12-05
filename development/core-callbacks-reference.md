@@ -194,6 +194,11 @@ These callbacks are raised when input elements or constructs are rendered. They 
 * **What it allows:** To do any additional cleanup after one or more articles are removed from Textpattern.
 * **Additional parameter:** An array of deleted article IDs.
 
+`multi_edited.articles > {action}` (where `action` is `delete`, `changeauthor`, `changecategory1`, `changecategory2`, `changecomments`, `changesection`, or `changestatus`)
+* **When it occurs:** After one or more articles have been altered via the multi-edit tool.
+* **What it allows:** To perform any additional functionality after one or more articles are changed via the multi-edit tool.
+* **Additional parameter:** An array of affected article IDs, the database field affected, and the new value assigned.
+
 #### Categories panel
 
 `categories_deleted`
@@ -411,6 +416,18 @@ See also `authors_deleted`.
 * **When it occurs:** After privileges of an existing user account has been successfully altered.
 * **What it allows:** To do any additional processing after user metadata has been modified.
 * **Additional parameter:** An array containing a list of the `user` names affected and new privilege level they have been assigned.
+
+### Plugins panel
+
+`txp.plugin > data.fetch`
+* **When it occurs:** As a plugin's internal Textpack is fetched from the database.
+* **What it allows:** To fetch the Textpack from somewhere other than the database column.
+* **Additional parameter:** The name of the plugin.
+
+`txp.plugin > textpack.fetch`
+* **When it occurs:** As a plugin's internal data is fetched from the database.
+* **What it allows:** To fetch the data from somewhere other than the database column.
+* **Additional parameter:** The name of the plugin.
 
 ### Admin-side criteria callbacks
 
