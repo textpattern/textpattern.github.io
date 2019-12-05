@@ -587,3 +587,5 @@ In `lib/txplib_misc.php` there are some callbacks that allow you to modify the d
 `sanitize_for_file` | - | At start of the `sanitizeForUrl()` function. | Apply your own filename sanitization rules; passes the text to be sanitized as the callback's 4th argument.
 `sanitize_for_page` | - | At start of the `sanitizeForPage()` function | Apply your own page name sanitization rules; passes the text to be sanitized as the callback's 4th argument.
 `txp_die` |`http_status_code` | Once the page's HTTP status has been determined. | Passes the numerical HTTP status code as the callback's *step* (e.g. `410`, `301`, etc) allowing you to target particular status codes and take action.
+`textfilter` | `register` | When a Textfilter (e.g. Markdown) is added to Textpattern. | To intercept filter creation and perform some additional actions.
+`textfilter` | `filter` | Before (`pre=0`) and after (`pre=1`) a Textfilter is used. | To operate upon the pre-filtered or post-filtered content, which is passed as the 3rd parameter. The context in which the filter is used is sent as the 4th parameter.
