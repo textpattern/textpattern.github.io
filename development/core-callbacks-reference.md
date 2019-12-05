@@ -15,7 +15,7 @@ On this page:
 * [Public-side callbacks](#public-side-callbacks)
 * [Admin-side callbacks](#admin-side-callbacks)
   * [Major block-level callbacks](#major-block-level-callbacks)
-  * [Widget callbacks](#widget-callbacks)
+  * [UI element callbacks](#ui-element-callbacks)
   * [Panel-level callbacks](#panel-level-callbacks)
   * [Admin-side criteria callbacks](#admin-side-criteria-callbacks)
   * [Admin-side validation callbacks](#admin-side-validation-callbacks)
