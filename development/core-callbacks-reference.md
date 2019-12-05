@@ -291,29 +291,74 @@ These callbacks are raised when input elements or constructs are rendered. They 
 
 #### Pages panel
 
+`page_created` / `page_duplicated`
+* **When it occurs:** After a new page has been created/duplicated.
+* **What it allows:** To do any additional cleanup after a page is instantiated or cloned in the database.
+* **Additional parameter:** The name of the page and its new name (which will be the same during creation, and may differ on duplication).
+
+`page_updated`
+* **When it occurs:** After a new page has been updated.
+* **What it allows:** To do any additional cleanup after a page is altered in the database.
+* **Additional parameter:** The name of the page and its new name (in case it was renamed).
+
+`page_saved`
+* **When it occurs:** After a new page has been stored.
+* **What it allows:** To do any additional cleanup after a page is altered in the database.
+* **Additional parameter:** The name of the page and its new name (in case it was renamed).
+
 `page_deleted`
 * **When it occurs:** After a page template has been deleted.
 * **What it allows:** To do any additional cleanup after a page template is removed from Textpattern.
-* **Additional parameter:** The name of the deleted page.
+* **Additional parameter:** The name of the deleted page and the theme in which it resided.
 
 #### Forms panel
 
-`forms_deleted`
-* **When it occurs:** After one or more forms have been deleted.
-* **What it allows:** To do any additional cleanup after one or more forms are removed from Textpattern.
-* **Additional parameter:** An array of deleted form names.
+`form_created` / `form_duplicated`
+* **When it occurs:** After a new form has been created/duplicated.
+* **What it allows:** To do any additional cleanup after a form is instantiated or cloned in the database.
+* **Additional parameter:** The name of the form and its new name (which will be the same during creation, and may differ on duplication).
 
 `form.create` > `done`
 * **When it occurs:** After a form has been created from the UI.
 * **What it allows:** To do any additional processing when a form is created in Textpattern.
 * **Additional parameter:** An array comprising the new Form `name`, its `type` and its `Form` contents.
 
+`form_updated`
+* **When it occurs:** After a new form has been updated.
+* **What it allows:** To do any additional cleanup after a form is altered in the database.
+* **Additional parameter:** The name of the form and its new name (in case it was renamed).
+
+`form_saved`
+* **When it occurs:** After a new form has been stored.
+* **What it allows:** To do any additional cleanup after a form is altered in the database.
+* **Additional parameter:** The name of the form and its new name (in case it was renamed).
+
+`forms_deleted`
+* **When it occurs:** After one or more forms have been deleted.
+* **What it allows:** To do any additional cleanup after one or more forms are removed from Textpattern.
+* **Additional parameter:** An array of deleted form names and the theme in which they resided.
+
 #### Styles panel
+
+`css_created` / `css_duplicated`
+* **When it occurs:** After a new stylesheet has been created/duplicated.
+* **What it allows:** To do any additional cleanup after a stylesheet is instantiated or cloned in the database.
+* **Additional parameter:** The name of the stylesheet and its new name (which will be the same during creation, and may differ on duplication).
+
+`css_updated`
+* **When it occurs:** After a new stylesheet has been updated.
+* **What it allows:** To do any additional cleanup after a stylesheet is altered in the database.
+* **Additional parameter:** The name of the stylesheet and its new name (in case it was renamed).
+
+`css_saved`
+* **When it occurs:** After a new stylesheet has been stored.
+* **What it allows:** To do any additional cleanup after a stylesheet is altered in the database.
+* **Additional parameter:** The name of the stylesheet and its new name (in case it was renamed).
 
 `css_deleted`
 * **When it occurs:** After a stylesheet has been deleted.
 * **What it allows:** To do any additional cleanup after a stylesheet is removed from Textpattern.
-* **Additional parameter:** The name of the deleted stylesheet.
+* **Additional parameter:** The name of the deleted stylesheet and the theme in which it resided.
 
 #### Diagnostics panel
 
