@@ -333,6 +333,18 @@ See [Admin-side theme callbacks](#admin-side-theme-callbacks).
 * **When it occurs:** At the end of the `doDiagnostics()` function that renders the content of the [Diagnostics](/administration/diagnostics-panel) panel.
 * **What it allows:** To add any extra information to the diagnostic output depending on the level of output the user has chosen (high or low).
 
+#### Languages panel
+
+`lang_installed`
+* **When it occurs:** When a language is added to the database.
+* **What it allows:** To perform any additional functionality when a language is installed into Textpattern.
+* **Additional parameter:** The language short code (e.g. 'en').
+
+`lang_deleted`
+* **When it occurs:** When a language is deleted from the database.
+* **What it allows:** To perform any additional functionality when a language is removed from Textpattern.
+* **Additional parameter:** The language short code (e.g. 'en').
+
 #### Users panel
 
 `authors_deleted`
