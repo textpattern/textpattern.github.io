@@ -3,7 +3,7 @@ layout: document
 category: Setup and configuration
 published: true
 title: Installation and upgrading
-description: From download to first log in: a complete guide to installing or updating Textpattern.
+description: From download to log in: a complete guide to installing or updating Textpattern.
 ---
 
 # Installation and upgrading
