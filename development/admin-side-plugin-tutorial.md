@@ -52,7 +52,7 @@ if (txpinterface === 'admin') {
 class abc_admin_hello_world
 {
     /**
-     * The plugin's event as registered in Txp.
+     * The plugin's event as registered in Textpattern.
      *
      * @var string
      */
@@ -138,7 +138,7 @@ public function hw_panel($evt, $stp)
         'save' => false, // Should use 'true' in real code
     );
 
-    // bouncer() checks CRSF tokens and if the step is permitted.
+    // bouncer() checks CSRF tokens and if the step is permitted.
     // If not, the default 'list' step is used.
     if (!$stp or !bouncer($stp, $available_steps)) {
         $stp = 'list';
@@ -200,7 +200,7 @@ if (txpinterface === 'admin') {
 class abc_admin_hello_world
 {
     /**
-     * The plugin's event as registered in Txp.
+     * The plugin's event as registered in Textpattern.
      *
      * @var string
      */
@@ -232,7 +232,7 @@ class abc_admin_hello_world
             'save' => false, // Should use 'true' in real code
         );
 
-        // bouncer() checks CRSF tokens and if the step is permitted.
+        // bouncer() checks CSRF tokens and if the step is permitted.
         // If not, the default 'list' step is used.
         if (!$stp or !bouncer($stp, $available_steps)) {
             $stp = 'list';
