@@ -282,3 +282,50 @@ AllowOverride FileInfo
 ```
 
 If none of those changes work, or if they cause a [500 server error](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500), you will need to use ‘?=messy’ URLs as described earlier, or ask your hosting provider for help.
+
+## How to reset an admin password
+
+Your options for resetting a forgotten Textpattern account password.
+
+### Simple reset procedure
+
+1. Go to the login page of the website’s back-end; usually located at *example.com/textpattern*.
+2. Click the ‘Forgot password?’ link.
+3. Enter your login name (username) in the resulting Name field.
+4. Hit the **Reset password** button.
+
+Instructions for resetting the password will be sent to the email address on record for the login name provided.
+
+### If you forgot your login name
+
+If you cannot remember your login name, the website’s administrator, or any other account holder with Publisher rights, can reset your password for you. This requires knowing who those people are and how to contact them.
+
+### If you do not have access to the account email address
+
+See above for forgotten login name.
+
+### Reset procedure for administrators
+
+If you are the website’s administrator and forgot your password or login, you'll need to access the database and change things there.
+
+Most web hosting accounts provide direct access to a MySQL database via phpMyAdmin (or an equivalent). Some provide command line access to an SQL environment. If you're not sure how to access MySQL, ask your hosting provider's tech support.
+
+Once you have executed the appropriate statement below, for the database version you have, you will be able to login to Textpattern with your login username and new password.
+
+#### For MySQL versions under 8.0
+
+Within phpMyAdmin, or at the MySQL command prompt, run the following query, where `my_pass` is the new password, and `user` is the login name of the account you wish to change:
+
+``` sql
+UPDATE txp_users SET pass=PASSWORD('my_pass') WHERE name='user';
+```
+
+#### For MySQL versions 8.0 and higher
+
+If your host is running MySQL v8.0 or higher, you will not be able to use the `PASSWORD()` function.
+
+Within phpMyAdmin, or at the MySQL command prompt, run the following query, where `my_pass` is the new password, and `user` is the login name of the account you wish to change:
+
+``` sql
+UPDATE txp_users SET pass=CONCAT('*', SHA1(UNHEX(SHA1('my_pass')))) WHERE name='user';
+```
