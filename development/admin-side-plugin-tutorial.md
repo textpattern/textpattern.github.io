@@ -184,6 +184,8 @@ public function edit()
 
 When you select a link you'll see (above pagetop) that the relevant function is being called. That's how you differentiate between steps and do things. In this example, we might do something (e.g. update a database table) when you save, and then show the list again. You could use the different steps to display completely different interface elements on your new tab. The limit is your imagination.
 
+## Final plugin code
+
 Here's the final code for the admin side example:
 
 ~~~ php
