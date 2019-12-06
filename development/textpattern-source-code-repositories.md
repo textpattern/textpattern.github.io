@@ -10,15 +10,10 @@ description: All Textpattern code repositories are maintained at GitHub and coll
 
 All Textpattern code repositories are maintained at GitHub and collectively detailed here for documentation convenience.
 
-On this page:
+**On this page**:
 
-* [Source code options](#source-code-options)
-  * [Production release](#production-release)
-  * [Development branch](#development-branch)
-  * [Legacy packages](#legacy-packages)
-* [Working with GitHub](#working-with-github)
-  * [GitHub Desktop](#github-desktop)
-  * [Git command-line client](#git-command-line-client)
+* Table of contents
+{:toc}
 
 ## Source code options
 
