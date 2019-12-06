@@ -21,10 +21,10 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 Installation, settings, security, troubleshooting, collaboration, servers...
 
 
-* [Installation and update instructions](/articles/#installation-and-update-instructions)
-* [*Site configuration essentials*](/articles/site-configuration-essentials){: style="color:red;"} (wraps most of the preferences stuff with languages and diagnostics)
-* [*Collaborative websites: An overview of roles and rights*](/articles/roles-and-rights-in-collaborative-websites){: style="color:red;"} (introduces notion of collaboration, ties in user, roles, etc)
-* [*Troubleshooting the common things*](/articles/troubleshooting-the-common-things){: style="color:red;"} (single doc built from faqs)
+* [Installation and updating the software](/articles/installating-and-updating-the-software){: style="color:red;"} (rename and move file)
+* [Site configuration essentials](/articles/site-configuration-essentials){: style="color:red;"} (wraps most of the preferences stuff with languages and diagnostics)
+* [Roles and rights in collaborative websites](/articles/roles-and-rights-in-collaborative-websites){: style="color:red;"} (introduces notion of collaboration, ties in user, roles, etc)
+* [Troubleshooting the common problems](/articles/troubleshooting-the-common-problems){: style="color:red;"} (single doc built from faqs)
 * [Textpattern security](/articles/security){: style="color:red;"} (read before you worry or hack the core)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
@@ -35,14 +35,14 @@ Installation, settings, security, troubleshooting, collaboration, servers...
 ### Construction and Presentation
 {: .index-docs-start}
 
-Content types, template architecture, semantic building blocks, themes, site structure…
+Content types, templates, semantic building blocks, themes, site structure…
 
 <section>
 
 #### Construction
 
-* *Content types: Existing and custom*{: style="color:red;"} (wraps up all the content panels and custom fields together, touches on forms)
-* *Site structures: The building blocks explained*{: style="color:red;"} (wraps together sections, pages, forms, styles)
+* [Content types: Existing and custom](articles/content-types-existing-and-custom){: style="color:red;"} (wraps up all the content panels and custom fields together, touches on forms)
+* [Site structures and building blocks](articles/site-structures-and-building-blocks){: style="color:red;"} (wraps together sections, pages, forms, styles)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
@@ -50,8 +50,8 @@ Content types, template architecture, semantic building blocks, themes, site str
 
 #### Presentation
 
-* [Themes: A complete walk-through](/themes/themes-a-complete-walk-through)
-* [Creating administration themes](/themes/creating-administration-themes)
+* [Themes: A complete walk-through](/articles/themes-a-complete-walk-through)
+* [Creating administration themes](/articles/creating-administration-themes)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 And watch for the forthcoming[Themes website](https://github.com/textpattern/textpattern-themes-website).
