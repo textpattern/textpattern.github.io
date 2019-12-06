@@ -12,12 +12,10 @@ This tutorial will walk you through the basics of creating a simple public-side 
 
 You might also like to see the [Admin-side plugin tutorial](/development/admin-side-plugin-tutorial).
 
-On this page:
+**On this page**:
 
--   [Overview](#overview)
--   [Your first plugin and tag](#your-first-plugin-and-tag)
--   [Adding plugin attributes](#adding-plugin-attributes)
--   [Creating conditional output](#creating-conditional-output)
+* Table of contents
+{:toc}
 
 ## Overview
 
@@ -25,16 +23,16 @@ This tutorial assumes you have a working knowledge of [PHP](https://php.net), a 
 
 The plugin in this tutorial will:
 
-1.  Create a Textpattern tag
+1.  Create and register a Textpattern tag
 2.  Read some optional attributes
 3.  Output some text when that tag is called
 4.  Use Textpattern's [else](/tags/else) tag
 
-Since all plugins must use a [three-character alphanumeric prefix](/development/plugin-developer-prefixes), we're going to use **abc** in this tutorial, which is reserved for documentation purposes.
+Since all plugins must use a [three-character alphanumeric prefix](/branch/author-prefixes-and-registration), we're going to use **abc** in this tutorial, which is reserved for documentation purposes.
 
 ## Your first plugin and tag
 
-Log into Textpattern's admin side, and open [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer).
+Log into Textpattern's back-end, and open [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer).
 
 Create a new plugin called **abc_hello_world** and put this code in:
 
@@ -52,7 +50,7 @@ function abc_hello_world($atts, $thing = null)
 }
 ~~~
 
-Save the code and enable the plugin. There you go, your first plugin.
+Save the code and enable the plugin. There you go, your first plugin tag.
 
 Your new Textpattern tag is now ready for use. Give it a try. Add `<txp:abc_hello_world />` in a Textpattern *page*, *form*, or even in an *article*. If you have enabled [short-tags](/tags/tag-basics/core-short-tags) you can use the shorthand `<abc::hello_world />` instead.
 
