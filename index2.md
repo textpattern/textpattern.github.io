@@ -20,16 +20,12 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 
 Installation, settings, security, troubleshooting, collaboration, servers...
 
-* [Installing Textpattern](/installation/) (detailed instructions)
-* [Upgrading Textpattern](/installation/upgrading-textpattern)
-* [Configuring a web server for Textpattern](/installation/configuring-a-web-server-for-textpattern)
-* [Moving a Textpattern installation](/installation/moving-textpattern)
-* [Post install and upgrade routines](/installation/post-install-and-upgrade-routines)
-* [Multi-site Textpattern installations](/installation/multi-site-textpattern)
-* [Troubleshooting a Textpattern installation or upgrade](/installation/troubleshooting-textpattern)
-* [User roles and privileges](/administration/user-roles-and-privileges) (default publishing roles and associated panel access rights)
-* [Textpattern security](/administration/security) (read before you worry or hack the core)
-* [Troubleshooting a Textpattern installation or upgrade](/installation/troubleshooting-textpattern)
+
+* [Installation and update instructions](/articles/#installation-and-update-instructions)
+* [*Site configuration essentials*](/articles/site-configuration-essentials){: style="color:red;"} (wraps most of the preferences stuff with languages and diagnostics)
+* [*Collaborative websites: An overview of roles and rights*](/articles/roles-and-rights-in-collaborative-websites){: style="color:red;"} (introduces notion of collaboration, ties in user, roles, etc)
+* [*Troubleshooting the common things*](/articles/troubleshooting-the-common-things){: style="color:red;"} (single doc built from faqs)
+* [Textpattern security](/articles/security){: style="color:red;"} (read before you worry or hack the core)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
@@ -39,14 +35,14 @@ Installation, settings, security, troubleshooting, collaboration, servers...
 ### Construction and Presentation
 {: .index-docs-start}
 
-Site structures, template architecture, building blocks, themes…
+Content types, template architecture, semantic building blocks, themes, site structure…
 
 <section>
 
 #### Construction
 
-* . . .
-* . . .
+* *Content types: Existing and custom*{: style="color:red;"} (wraps up all the content panels and custom fields together, touches on forms)
+* *Site structures: The building blocks explained*{: style="color:red;"} (wraps together sections, pages, forms, styles)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
@@ -55,9 +51,10 @@ Site structures, template architecture, building blocks, themes…
 #### Presentation
 
 * [Themes: A complete walk-through](/themes/themes-a-complete-walk-through)
-* [Creating a custom administration theme](/themes/creating-a-custom-administration-theme)
-* [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
+* [Creating administration themes](/themes/creating-administration-themes)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
+
+And watch for the forthcoming[Themes website](https://github.com/textpattern/textpattern-themes-website).
 
 </section>
 </section>
@@ -67,7 +64,7 @@ Site structures, template architecture, building blocks, themes…
 ### Tags Reference
 {: .index-docs-tags}
 
-You know HTML markup; but try Textpattern’s *hyper*-markup, and be amazed. 
+There are standard HTML tags, and there are Textpattern’s *super-tags!* Feel the power. 
 
 <section>
 
