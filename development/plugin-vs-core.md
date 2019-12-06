@@ -12,16 +12,10 @@ A common discussion point raised in the Textpattern CMS support forum - again an
 
 Developers have followed that philosophical standpoint for over ten years by not integrating every function or feature that someone says *should* be in core. We attempt to break that idea down here. Of all the plugin development documentation, this page is more about perspective than how-to.
 
-On this page:
+**On this page**:
 
-* [A functional idea is born](#a-functional-idea-is-born)
-* [Core code](#core-code)
-  * [Core code advantages](#core-code-advantages)
-  * [New core feature caveats](#new-core-feature-caveats)
-* [Plugin code](#plugin code)
-  * [Plugin lifespan](#plugin-lifespan)
-  * [Plugin choice and risks](#plugin-choice-and-risks)
-* [Conclusion](#conclusion)
+* Table of contents
+{:toc}
 
 ## A functional idea is born
 
@@ -43,9 +37,7 @@ Core features have some advantages over a plugin:
 
 **Ascendant/descendant compatibility:** Textpattern's core developers extensively test new features, when added, to ensure they won't break older ones, and that old features won't stop working in the future.[^1]
 
-**Debugging:** By fact that everyone installs Textpattern but not the
-same plugins, the odds of bugs being discovered in a core feature, or
-that might affect other core features, are far greater and thus code is generally much better (i.e. code quality, again).
+**Debugging:** By fact that everyone installs Textpattern but not the same plugins, the odds of bugs being discovered in a core feature, or that might affect other core features, are far greater and thus code is generally much better (i.e. code quality, again).
 
 ### New core feature caveats
 
@@ -91,7 +83,7 @@ So there's a couple of messages here to wrap up depending on who you are…
 
 **Plugin users:**
 
-If you're [using plugins](/administration/plugins-panel), make sure you're using plugins from reliable sources and developers. Do the background checking before you install anything.
+If you're using plugins, make sure you're using plugins from reliable sources and developers. Do the background checking before you install anything.
 
 If have feature requests, don't direct them to core, direct them to improve the plugins you use, or to the creation of a new plugin that provides that specialized function.
 
@@ -105,6 +97,6 @@ If you're [developing plugins](/development/), make sure you're not reinventing 
 
 [^3]: A fascinating reversal of feature/extension development is in the case of article commments. Comments are a core feature from legacy code. But as years have gone by and the nature of blogging has evolved against social media, the fashion for using comments on the web has waned. An increasing number of Textpattern users would like to see the [comments functionality removed from core](https://forum.textpattern.com/viewtopic.php?id=45956) entirely, rather than have to turn comments off and hide related elements from the UI if they don't want the distraction. The idea, rather, would be to turn this core feature into a plugin extension that users may install if they still value comments. There is no plan to remove core comments functionality at this time, nor would it likely be removed until a robust plugin replaced it, and patches were made to clean up the legacy code. Certainly a monster plugin idea to consider, and one that would be popular for users and non-users alike.
 
-[^4]: 'Orphaned' and 'adopted' plugins are talked about in [plugin prefixes](/development/plugin-developer-prefixes).
+[^4]: 'Orphaned' and 'adopted' plugins are talked about in [plugin prefixes](/brand/author-prefixes-and-registration).
 
 [^5]: This is the worst situation for expiring plugins, because their developers - bested and heartbroken - usually won't make it clear that a plugin of theirs has been made obsolete. They don't officially retire the plugin and tell the community it shouldn't be used. Thus there's often a certain percentage of 'detritus' plugins in the plugin pool, which are not safe to use, but which the unsuspecting user might use anyway because the plugin is still floating around and unmarked as hazardous.
