@@ -31,7 +31,7 @@ A short introductory line.
 * [Post install and upgrade routines](/installation/post-install-and-upgrade-routines)
 * [Multi-site Textpattern installations](/installation/multi-site-textpattern)
 * [Troubleshooting a Textpattern installation or upgrade](/installation/troubleshooting-textpattern)
-{: .list--no-bullets}
+{:.list--no-bullets style="list-style-type:'- '"}
 
 </section>
 <section>
@@ -41,7 +41,7 @@ A short introductory line.
 * [User roles and privileges](/administration/user-roles-and-privileges) (default publishing roles and associated panel access rights)
 * [Textpattern security](/administration/security) (read before you worry or hack the core)
 * [Troubleshooting a Textpattern installation or upgrade](/installation/troubleshooting-textpattern)
-{: .list--no-bullets}
+{:.list--no-bullets style="list-style-type:'- '"}
 
 </section>
 </section>
@@ -59,7 +59,7 @@ A short introductory line.
 
 * . . .
 * . . .
-{: .list--no-bullets}
+{:.list--no-bullets style="list-style-type:'- '"}
 
 </section>
 <section>
@@ -69,7 +69,7 @@ A short introductory line.
 * [Themes: A complete walk-through](/themes/themes-a-complete-walk-through)
 * [Creating a custom administration theme](/themes/creating-a-custom-administration-theme)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
-{: style="list-style-type:'-'"}
+{:.list--no-bullets style="list-style-type:'- '"}
 
 </section>
 </section>
@@ -88,7 +88,7 @@ A short introductory line.
 * [Tags reference](/tags/)
 * [Tag use basics](/tags/tag-basics/)
 * [Tags in development](/tags/tags-in-development)
-{: .list--no-bullets}
+{:.list--no-bullets style="list-style-type:'- '"}
 
 </section>
 <section>
@@ -97,7 +97,7 @@ A short introductory line.
 
 * [Custom short-tags and shortcodes](/tags/shortcodes/custom-short-tags-and-shortcodes)
 * [Shortcode examples](/tags/shortcodes/)
-{: .list--no-bullets}
+{:.list--no-bullets style="list-style-type:'- '"}
 
 </section>
 </section>
