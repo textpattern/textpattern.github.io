@@ -10,20 +10,10 @@ description: This comprehensive reference provides detailed information about al
 
 This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](/development/admin-side-events-and-steps).
 
-On this page:
+**On this page**:
 
-* [Public-side callbacks](#public-side-callbacks)
-* [Admin-side callbacks](#admin-side-callbacks)
-  * [Major block-level callbacks](#major-block-level-callbacks)
-  * [UI element callbacks](#ui-element-callbacks)
-  * [Panel-level callbacks](#panel-level-callbacks)
-  * [Admin-side criteria callbacks](#admin-side-criteria-callbacks)
-  * [Admin-side validation callbacks](#admin-side-validation-callbacks)
-  * [Admin-side theme callbacks](#admin-side-theme-callbacks)
-* [Modification callbacks](#modification-callbacks)
-* [API callbacks](#api-callbacks)
-* [Plugin callbacks](#plugin-callbacks)
-* [Function- and tag-based callbacks](#function--and-tag-based-callbacks)
+* Table of contents
+{:toc}
 
 ## Public-side callbacks
 
