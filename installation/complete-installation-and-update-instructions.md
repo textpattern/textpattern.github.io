@@ -21,31 +21,39 @@ If you are comfortable with SFTP, file and database administration on server env
 
 ## Installing the software for the first time
 
-1. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` archive.
-2. Ensure your web server meets the [Textpattern CMS system requirements](https://textpattern.com/about/119/system-requirements) for the version you have downloaded.
+1. Ensure your web server meets the [Textpattern system requirements](https://textpattern.com/about/119/system-requirements) for the version you intend to download.
+2. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` archive.
 3. Unpack [the file tree contents](https://github.com/textpattern/textpattern) from the downloaded package into a new directory on your local drive.
-4. Connect to your destination server using your SFTP client or command line and upload the unpacked file tree to your web root, a subdomain or subdirectory. This destination directory should contain `css.php`, `index.php`, plus the `files`, `images`, `themes` and `textpattern` directories as a minimum. The `.htaccess` file is required if your web server is Apache httpd or a derivative. The `sites` subdirectory is only required for optional multi-site functionality, and the `rpc` directory is only required for optional XML-RPC functionality. `README.txt` and `HISTORY.txt` are optional.
+4. Connect to your destination server using an (S)FTP client or the command line and upload the unpacked file tree to your web root, a subdomain or subdirectory. This destination directory should contain `css.php`, `index.php`, plus the `files`, `images`, `themes` and `textpattern` directories as a minimum. The `.htaccess` file is required if your web server is Apache httpd or a derivative. The `sites` subdirectory is only required for optional multi-site functionality, and the `rpc` directory is only required for optional XML-RPC functionality. `README.txt` and `HISTORY.txt` are optional.
 5. Establish a known-good MySQL database, either for exclusive Textpattern use or shared, and note its associated username and password credentials.
 6. Open a web browser and visit `example.com/textpattern/setup/index.php` to start the setup process. If you're running Textpattern from a subdomain or subdirectory, use `subdomain.example.com/textpattern/setup/index.php` or `example.com/subdirectory/textpattern/setup/index.php` as appropriate.
 7. Follow the installation steps provided on-screen.
 
-If you require more information, please refer to the [Detailed installation instructions](#TODO).
+If you require more information, please refer to the [Step-by-step installation instructions](#TODO-install).
 
 ## Upgrading to the newest stable release
 
 In the root directory of every Textpattern archive is a `README.txt` file with upgrading instructions relevant to that release.
 
-1. Ensure your web server meets the Textpattern CMS system requirements.
+1. Ensure your web server meets the [Textpattern system requirements](https://textpattern.com/about/119/system-requirements) for the version you are downloading.
 2. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` archive.
-3. Create a new directory (e.g. `textpattern-upgrade`) on your local drive, move the downloaded archive file from step 2. into it, and unpack [the file tree contents](https://github.com/textpattern/textpattern).
-3. Log out of the Textpattern admin-side and clear the browser cache for your existing Textpattern site. If you use a service such as [Cloudflare](https://www.cloudflare.com) to cache your domain assets, remember to clear any caching services there too.
-4. Verify the existence of a working database and file backup of your existing Textpattern site. You may find it useful to copy your existing, known-good `textpattern/config.php` file to an easily accessible location on your local drive as it will be required shortly.
-5. Open a file transfer connection to your destination server and upload the new `css.php`, and `index.php` files to your web server, overwriting the existing files. Upload the new `textpattern` directory, overwriting the existing directory. If you do not have a `themes` directory, copy that too, otherwise leave it as-is. The new `.htaccess` file is required if your web server is Apache httpd or a derivative and has an existing file. The new `sites` subdirectory is only required if optional multi-site functionality is enabled and the new `rpc` directory is only required if optional XML-RPC functionality is enabled.
-6. Copy your known-good `textpattern/config.php` into `textpattern`. Delete the `textpattern/setup` directory.
-7. Log in to the Textpattern admin-side. The relevant upgrade scripts are run automatically. Please take a look into diagnostics to confirm the upgraded version number is identified and whether there are any issues.
-9. Verify all preference settings.
+3. Unpack [the file tree contents](https://github.com/textpattern/textpattern) from the downloaded package into a new directory on your local drive.
+4. Log out of the Textpattern back-end and clear the browser cache for your existing Textpattern site. If you use a service such as [Cloudflare](https://www.cloudflare.com) to cache your domain assets, remember to clear any caching services there too.
+5. Verify the existence of a working database and file backup of your existing Textpattern site. You may find it useful to copy your existing, known-good `textpattern/config.php` file to an easily accessible location on your local drive, as it may be required shortly.
+6. Connect to your destination server using an (S)FTP client or the command line and upload the following files to your web root:
+6.1 The new `css.php` and `index.php` files, overwriting the existing files.
+6.2 The new `textpattern` directory, overwriting the existing directory.
+6.3 If you do not have a `themes` directory, copy that too, otherwise leave it as-is.
+6.4 The new `.htaccess` file is required if your web server is Apache httpd or a derivative and has an existing file. Remember, if you have customised it, you will need to reapply your changes.
+6.5 The new `sites` subdirectory is only required if optional multi-site functionality is enabled.
+6.6 The new `rpc` directory is only required if optional XML-RPC functionality is enabled.
+7. Copy your known-good `textpattern/config.php` into the `textpattern` directory if it's not already there.
+8. Delete the `textpattern/setup` directory on your server if it is present.
+9. Log in to the Textpattern back-end. The relevant upgrade scripts are run automatically. A notification will appear on the screen indicating the upgrade has been applied.
+10. Look at the Diagnostics panel to confirm the upgraded version number is identified and whether there are any issues.
+11. Verify all preference settings.
 
-If you require more information, please refer to the [Detailed upgrading instructions](/installation/upgrading-textpattern).
+If you require more information, please refer to the [Step-by-step upgrading instructions](#TODO-upgrade).
 
 Upgrades from versions below 4.2.0 will present this warning upon your very first login to the admin-side:
 
@@ -55,8 +63,7 @@ Warning: Unknown column 'user_name' in 'where clause' select name, val from txp_
 
 This is expected behaviour for the very first login after the upgrade. Further navigation within the admin-side will continue without issue.
 
-
-## Thorough walk-through for installing Textpattern
+## Step-by-step Textpattern installion instructions
 
 These instructions follow a process of using an (S)FTP application, which you presumably have ([Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, and [WinSCP](https://winscp.net/eng/index.php/) is for Windows). If you're familiar with installing CMS software and prefer the quick notes, see the [README.txt](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. If you're more of a command line jockey, the bits in [working with the development branch](/development/textpattern-source-code-repositories) should suit you.
 
@@ -278,3 +285,99 @@ The screen will also suggest deleting the `/setup` directory for security reason
 2. Return to your browser screen and select the "Main interface" link, which takes you to the administration login location. Log in using your new administrator account details (entered on the previous install screen), and check the box for remembering you, if you like.
 3. Proceed to the [Diagnostics panel](/administration/diagnostics-panel), as Textpattern suggested, to troubleshoot any warnings and errors you see.
 4. Go to the public side of your website (the homepage), easy to do by selecting its name in the navigation bar of any admin-side location. Read the tips and suggestions provided on the default article titled, 'Welcome to your site'. They're based on the experience of veteran users and intended to fast-track your efforts at building your first Textpattern website.
+
+
+
+
+
+
+
+## Upgrading Textpattern
+
+Upgrading is an essential part of maintaining good site security, and new Textpattern releases often bring performance & functionality enhancements. Whenever a new version of Textpattern is released, upgrade!
+
+You may find abbreviated upgrade instructions in the `README.txt` file of every Textpattern release package. The instructions here are more detailed. In brief, you'll backup your current installation, overwrite your existing installation with new package files (with a few key exceptions), update your language preference(s), and address any problems indicated in the [Diagnostics](/administration/diagnostics-panel) panel.
+
+### Upgrading from very old versions
+
+Due to the nature of Textpattern's evolution, upgrading a Textpattern instance older than version 4.2.0 (released 17 September 2009) requires a two-stage upgrade process to avoid loss of functionality and availability issues. Upgrade to version 4.2.0 first, ensuring all admin functionality is working as expected, and then upgrade to the latest stable release.
+
+### Download latest stable release
+
+Go to [textpattern.com/download](https://textpattern.com/download) and download the archive of the latest version to your local machine. Unpack the package into a folder on your local drive. Give the folder a meaningful name like `textpattern-4.7.3`, for example.
+
+### Backup
+
+As with any system upgrade, you'll want to be sure you can fall back on your existing install should there ever be a problem; thus, you should back up your server files and create a database dump file (`.sql`) before upgrading.
+
+#### Duplicate the existing Textpattern file tree
+
+You must make a copy of your `config.php` file as a minimum.
+
+Make a copy of the current system (folders and files of the Textpattern installation). The easiest way to do this is to log onto the server using FTP or SFTP, create a new folder called `txp-current`, for example, and copy the existing system file tree into this new folder (leave the file tree structure the same). Alternatively, simply duplicate your existing Textpattern dir and name it `Textpattern_OLD`. Upload the new Textpattern dir and then copy your `config.php` file from the `Textpattern_OLD` **prior** to running the update.
+
+#### Create a database dump file (an .sql export)
+
+Log in to the `phpMyAdmin` database panel for your site (different web hosts have different access routes), and then follow these steps:
+
+1. Select the database running the current Textpattern site.
+2. In the resulting main content area, select **'Export'** at the top of the screen.
+3. You should be able to use the defaults as they already are, just make sure you tick the **'Save as file'** box at the bottom of the screen.
+4. Select the **'Go'** button.
+
+The .sql dump file will mostly likely be saved to your desktop. Using FTP/SFTP again, you could optionally copy the file into the backup folder you just created to keep everything together.
+
+You now have a full backup of your files and database. If things don't work out in the upgrade process, you can simply replace the server files and, if necessary, re-import the old database dump file in phpMyAdmin again (using 'Import' instead of 'Export'). If you do have problems, you might consider running a development (sister) site of your main site and try upgrading there first.
+
+### Install the new Textpattern files
+
+It is strongly advised to log out of the Textpattern admin interface and clear the browser cache before upgrading. If you use a service such as [Cloudflare](https://www.cloudflare.com) to cache your domain assets, remember to clear any caching services there too.
+
+Using FTP/SFTP again, navigate to the folder you created in **Step 1** and copy the following files from there to your server, overwriting any previous files:
+
+* Copy the files `.htaccess`, `css.php`, and `index.php` (the `README.txt`, `HISTORY.txt` and `LICENSE` files are optional).
+* Copy any folders you are using, for example `rpc` and `sites`. You do not usually need to copy `files` and `images` unless otherwise directed because you will already have done so when installing a prior release.
+* Copy the (empty) `themes` folder if you do not have one already. If you do, you can omit this step.
+* Copy the contents of the `textpattern` folder to the server's `textpattern` folder. You should exclude the `setup` directory, since it is only used for first-time installations. The [Diagnostics panel](/administration/diagnostics-panel) will inform you if the `setup` directory is still available, and whether you have uploaded all files completely.
+
+It is important that you make sure all three `index.php`, `css.php` and `.htaccess` files transfer over. This shouldn't be a problem, but sometimes in the case of the `.htaccess` file it does not show up in certain FTP clients (it's usually there but just not visible). In the case of the `.htaccess` file or `/lib/admin_config.php`, if you had any customizations (such as `mod_rewrite` changes or custom permissions), be sure to add them back so you don't lose that functionality. When in doubt, compare your backed-up copy of the file against the new one.
+
+Ensure your existing `config.php` file is still inside your `textpattern` folder on the server. This rarely changes between releases; if any changes are required or options become available they are documented in the `README.txt` file.
+
+Note that some operating systems (such as macOS) do not always merge the contents of directories when they are overwritten: they delete the entire directory contents first and then copy the new files in. There are ways to merge duing a file copy, and instructions for doing so vary from version to version and OS to OS, but the simplest solution is to ensure you have taken a backup copy first.
+
+If you are running an Apache web server and wish to prohibit direct access to your downloadable files (i.e. by someone manually entering `http://site.com/files/name_of_file`) you may rename the `/files/.htaccess-dist` file to `/files/.htaccess`.
+
+For better security, however, we recommend moving the entire folder and its contents **outside** your web-accessible root folder. Once you have relocated it, you can inform Textpattern of its location via the 'File directory path' Preference when you log back into the admin side. The same advice stands for the `tmp` directory.
+
+### Update
+
+Open a web browser and visit the admin-side location (usually `example.org/textpattern`). Log in. That's it! Easy, huh? There are no update scripts to run or anything else; by simply going to the normal admin-side location, Textpattern will recognize the need to update and do so automatically.
+
+### Fine-tune
+
+When Textpattern updates, you will be taken by default to the [Languages panel](/administration/languages-panel). Once there, update your chosen language files as necessary (highlighted). Then go to the [Diagnostics panel](/administration/diagnostics-panel) and troubleshoot any noted issues.
+
+Some notices are not always problems, *per se*, but may only appear to indicate some difference in the system since your upgrade. When in doubt about an error message, first check the [Diagnostics panel](/administration/diagnostics-panel) to see if it's documented, if that doesn't help, ask in the ['How do I…? and other questions' forum](https://forum.textpattern.com/).
+
+### Remove unnecessary files
+
+After installing or upgrading Textpattern, you only need to delete the `setup` folder (`/textpattern/setup`). This folder and its contained files are not used once Textpattern is installed. If you do not do this before checking the [Diagnostics panel](/administration/diagnostics-panel) in **Step 5**, you'll see a diagnostic warning reminding you to do it (the error will disappear when the folder is removed).
+
+The `setup` folder is only used for **new** installations, not upgrades, thus it's technically not necessary to add this folder from the latest, stable package. However, don't go out of your way to be clinical, simply upgrade using the full package and then delete the folder afterwards - it's easier all-around.
+
+### Debugging check
+
+This step is highly recommended, but optional. It is best to do this on a development server to avoid showing your users error messages.
+
+Change your site's 'Production status' in the [Preferences panel](/administration/preferences-panel) to 'debugging'. Go through the live site (every page, if possible), looking for error messages. Any such messages will be clearly visible at the top of the page. The upgrade may result in notices or errors relating to deprecated tags or attributes (these should be easy to correct).
+
+If you do need to update tag or attribute names, the [smd_where_used plugin](https://forum.textpattern.com/viewtopic.php?id=27493) is a great help for quickly finding all instances of a given tag or attribute.
+
+### Explore the bleeding edge development
+
+For advanced users only!
+
+The latest, **potentially unstable**, bleeding-edge code is available at [the GitHub repository](https://github.com/textpattern/textpattern).
+
+If you're thinking about testing this code, then we shouldn't have to tell you what [git](https://git-scm.com) is or how to use it. If you don't know, then you don't really want to be messing about here!
