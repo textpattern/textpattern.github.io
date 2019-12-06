@@ -16,6 +16,11 @@ When raising callbacks of this nature, they are normally run in what is referred
 
 Note that all steps require a CSRF token to be submitted (see the `form_token()` and `tInput()` functions) unless denoted with an asterisk (*) below.
 
+**On this page**:
+
+* Table of contents
+{:toc}
+
 ## 'admin' event
 
 The associated steps are:
