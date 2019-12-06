@@ -96,33 +96,18 @@ All hopeful plugin developers must [register an ‘author’ prefix](/brand/auth
 
 Plugins are loaded very early during script execution. It happens in `textpattern/publish.php` (public-side) and in `textpattern/index.php` (admin-side). Look out for `load_plugins` to see where it is happening.
 
-`public`
-: **Type:** 0
-: Will only load on the public side.
+Type value | Type name | What it means
+---|---|---
+0 |`public` |Will only load on the public-facing (front-end) site.
+1 |`admin + public` |Will load on the front- *and* back-end sides. May **not** make asynchronous calls.
+2 |`library` |Will not automatically load, rather it loads when included/required by other plugins.
+3 |`admin-only` |Will only load on the back-end, and may **not** make asynchronous calls.
+4 |`admin + Ajax` |Will only load on the back-end, and may make asynchronous calls.
+5 |`admin + public + Ajax` |Will load on the front- and back-end, and may make asynchronous calls.
 
-`admin + public`
-: **Type:** 1
-: Will load on the public *and* administration sides.
+The code of the plugin is then included within that `load_plugins()` function, *not* in the global scope. This means if you need to use global variables, you have to explicitly set them to be global. Functions and classes are always in the “global scope”, so there is no problem with that.
 
-`library`
-: **Type:** 2
-: Will not automatically load, rather it loads when included/required by other plugins.
-
-`admin-only`
-: **Type:** 3
-: Will only load on the administration side and may **not** make asynchronous calls.
-
-`admin + Ajax`
-: **Type:** 4
-: Will only load on the administration side and may make asynchronous calls.
-
-`admin + public + Ajax`
-: **Type:** 5
-: Will load on the administration and public sides and may make asynchronous calls.
-
-The code of the plugin is then `eval()` 'ed (or included) within that `load_plugins()` function, *not* in the global scope. This means if you need to use global variables, you have to explicitly set them to be global. Functions and classes are always in the “global scope”, so there is no problem with that.
-
-Understanding how plugins are loaded, also shows how you can write “on demand” and “up front” plugins, which were mentioned earlier. Defining a function will make it available as a tag in Textpattern Page templates and Form templates. Whereas any code that is outside of any function/class definition will be executed right away. You can check for Request-Variables and initiate some action and `exit;` the execution of the script (for example to serve images or other binary data from within a plugin).
+Understanding how plugins are loaded, also shows how you can write “on demand” and “up front” plugins, which were mentioned earlier. Defining a function and registering it will make it available as a tag in Textpattern Page templates and Form templates. Any code that is outside of any function/class definition will be executed right away. You can check for Request-Variables and initiate some action and `exit;` the execution of the script (for example to serve images or other binary data from within a plugin).
 
 ## Callbacks
 
@@ -174,7 +159,7 @@ callbacks](/development/core-callbacks-reference#admin-side-callbacks) section o
 #### Adding new elements (without altering existing markup)
 
 In this example, we use the `register_callback` function to add some text - "Textpattern rocks!" - in the **Write**
-panel, between the **Advanced** and **Recent articles** blocks. The text is added directly there, in the place where the `extend_col_1` step happens to output its markup:
+panel, before the **Recent articles** block. The text is added directly there, in the place where the `extend_col_1` step happens to output its markup:
 
 ~~~ php
 register_callback('abc_add_text', 'article_ui', 'extend_col_1');
@@ -355,7 +340,7 @@ Additional third-party reading you may find insightful. The information may be o
 
 * [How to build a Textpattern plugin](https://textpattern.tips/how-to-build-a-textpattern-plugin)
 
-[^1]: You can see the code for any installed plugin by selecting its name in the table on the [Plugins panel](/administration/plugins-panel), or by installing and using [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer).
+[^1]: You can see the code for any installed plugin by selecting its name in the table on the Plugins panel, or by installing and using [ied_plugin_composer](https://github.com/Bloke/ied_plugin_composer).
 
 [^2]: There's also the [Admin-side events and steps](/development/admin-side-events-and-steps) listing for admin-side plugins specifically. This would correspond with the various [admin-side callbacks](/development/core-callbacks-reference#admin-side-callbacks) in the **Core callbacks reference**, but it doesn't provide the explanatory details like the callbacks reference does.
 
