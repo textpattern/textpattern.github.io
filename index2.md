@@ -16,7 +16,7 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 <section class="layout-3col">
 
 ### Setup and Configuration
-{: .index-docs-start}
+{: .index-docs-admin}
 
 A short introductory line.
 
@@ -49,7 +49,7 @@ A short introductory line.
 <section class="layout-3col">
 
 ### Construction and Presentation
-{: .index-docs-admin}
+{: .index-docs-start}
 
 A short introductory line.
 
