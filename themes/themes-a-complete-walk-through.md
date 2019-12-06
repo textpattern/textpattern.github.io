@@ -281,7 +281,11 @@ After starting a new theme, have a look at the themes table on the Themes panel 
 
 ### Preview link
 
-Immediately right of a theme’s name, under the Name column, are two links. The first link is ‘Preview’. When clicked, it puts you in a development context for that theme. [Previewing themes](#previewing-themes) is described more later. You will use this link a lot.
+Immediately right of a theme’s name, under the Name column, are two links. The first link is ‘Preview’.
+
+![Dev preview theme link](/img/dev-preview-theme-link.png)
+
+When clicked, you are taken to the Sections panel and put in a development context for that theme. You will use this link a lot. [Previewing themes](#previewing-themes) is described more later.
 
 ### Active / Activate links
 
@@ -325,33 +329,23 @@ You will remain in that different theme context as you browse between the assets
 
 At this point you should have a pretty good idea of contexts and cues as it concerns themes and their assets in relation to relevant panels. And these contexts are useful whether working on themes in development or browsing themes that are live.
 
-## Development themes
+## Previewing themes in development
 
-In a sense, the administration side of Textpattern now has two environments: development and production (live). A useful feature geared to the former is theme previewing.
+The ability to preview theme composition and its relationship with website architecture, as well see how it looks on the front-end as you make changes, is rather important. Textpattern provides features to do it all in one place — in a sense, a development environment — without affecting the *live* conditions (though being careful not to disrupt things by changing system preferences and/or plugins along the way).
 
-### Previewing themes
+The door to it all is the [Preview link](#preview-link) found in the Themes panel; a convenient way to get into the development context of a single theme. You can preview an active theme as well, in which case you are in the production environment, working on a live theme, but here the focus is on development (i.e. non-active themes).
 
-The ability to preview theme composition and its relationship with website architecture, as well see how it looks on the front-end as you make changes, is rather important. Textpattern provides features to do it all in one place without affecting the *live* conditions (being careful not to disrupt things by changing system preferences and/or plugins along the way).
-
-The door to it all is the Preview link; a convenient way to get into the context of a single theme, whether live or in development. Here the focus is on the latter. The link is found next to a theme’s name on the Themes panel.  
-
-![Dev preview theme link](/img/dev-preview-theme-link.png)
-
-Click such a link and you are taken to the Sections panel with the theme in context of the section’s table.
-
-#### Sections preview
-
-The sections table in theme preview context shows the theme’s component pages and styles in relation to the sections of your website’s structure. The first five columns of the table are particularly noteworthy.
+The preview context is in the Sections panel, where the table shows the theme’s component pages and styles in relation to the sections of your website’s structure. The first five columns of the table are particularly noteworthy.
 
 ![Dev preview theme sections](/img/dev-preview-theme-sections.png)
 
-##### Edit default section
+### Edit default section
 
 Section names are links to the section editor, where you can edit which theme and assets serve as the active (live) theme. ’Default’ means live here; the production theme underlying the development preview context you are in.
 
 If you want to edit the development theme’s page and style associations to sections, use the [selection controls from the preview context](#missing-assets-warning).
 
-##### View theme presentation
+### View theme presentation
 
 The other link you see in the Name column is perhaps the real prize of previewing a theme in development, the ‘View’ link. View links are found at right of section names. 
 
@@ -359,7 +353,7 @@ The other link you see in the Name column is perhaps the real prize of previewin
 
 Clicking a View link allows you to see the front-end rendering of your theme’s presentation for that particular section; the moment of fireworks. You’ll probably use the View links a lot if you develop themes in the back-end of Textpattern.
 
-##### Underlying active theme indication
+### Underlying active theme indication
 
 The Theme column shows two theme *names* for each section. The first is a greyed-out name indicating the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here!
 
@@ -367,7 +361,7 @@ The Theme column shows two theme *names* for each section. The first is a greyed
 
 The second theme name in the Theme column, not greyed out, is the ‘development’ theme you are currently in context with. In the image above, it is ‘abc-my-new-theme’, overriding Textpattern’s live (default) theme, ‘four-point-eight’.
 
-##### Assets association
+### Assets association
 
 The Page and Style columns make clear which page and style from the theme package aligns with which section.
 
@@ -375,7 +369,7 @@ The Page and Style columns make clear which page and style from the theme packag
 
 Making page and style assignments to sections has always been a standard procedure in Textpattern. But now it is done in context of theme packages; really tying the building blocks together.
 
-##### Missing assets warning
+### Missing assets warning
 
 If you ever see an asset name indicated in red, it is a warning telling you that the theme version of that asset has been deleted, or otherwise missing in the theme.
 
