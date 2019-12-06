@@ -10,23 +10,14 @@ description: Have you found an issue during a Textpattern install/upgrade?
 
 If things don't go as expected when installing or upgrading Textpattern, or you're faced with an error message that you cannot figure, this page should help.
 
-On this page:
+**On this page**:
 
-* [The Tag Trace](#the-tag-trace)
-* [Performance issues](#performance-issues)
-  * [Slow website](#slow-website)
-  * [Slow administration side](#slow-administration-side)
-* [Blank page output](#blank-page-output)
-* [Feed issues](#feed-issues)
-* [Error messages and codes](#error-messages-and-codes)
-  * [500 Internal server error](#internal-server-error)
-  * [404 Page not found](#page-not-found)
-  * [Database unavailable](#database-unavailable)
-  * [Allowed memory exhausted](#allowed-memory-size-exhausted)
+* Table of contents
+{:toc}
 
 ## The Tag Trace
 
-Whether you're experiencing site slowdowns, bugs in your site templates, or looking for misbehaving plugins, the Tag Trace is an essential diagnostics tool. To switch it on, set the [Production Status](/administration/preferences-panel#site-preferences) on the Preferences panel to 'Debugging'. Whenever this mode is on, Textpattern appends a Tag Trace to the HTML output of each page - both on the admin side and public website. This is your key to working out which Textpattern tags are being executed and their outcome.
+Whether you're experiencing site slowdowns, bugs in your site templates, or looking for misbehaving plugins, the Tag Trace is an essential diagnostics tool. To switch it on, set the Production Status on the Preferences panel to 'Debugging'. Whenever this mode is on, Textpattern appends a Tag Trace to the HTML output of each page - both on the back-end and front-end public website. This is your key to working out which Textpattern tags are being executed and their outcome.
 
 View the HTML source of the page, and scroll to the bottom. The trace looks something like this:
 
@@ -112,7 +103,7 @@ Normally, Textpattern is one of the fastest CMS platforms around. There are, how
 
 ### Slow website
 
-From the [Preferences panel](/administration/preferences-panel) set the 'Production status' to 'Testing' and load a page. Textpattern records the time it takes to generate and send each page. View the HTML source and scroll to the bottom. You can check the runtime figure to distinguish between slowdowns during page generation, and those that occur afterwards (i.e. during page rendering).
+From the Preferences panel set the 'Production status' to 'Testing' and load a page. Textpattern records the time it takes to generate and send each page. View the HTML source and scroll to the bottom. You can check the runtime figure to distinguish between slowdowns during page generation, and those that occur afterwards (i.e. during page rendering).
 
 On a properly configured web server with a normal load and typical Textpattern templates and content, expected ranges are:
 
@@ -138,11 +129,11 @@ If you're experiencing consistently high numbers for Runtime, Query and Memory c
 
 A runtime figure that regularly measures 1 second or more usually indicates one of a few things:
 
-* DNS issues: a slow or misconfigured DNS server at your web hosting provider can cause high page runtimes. Usually this occurs in the Textpattern logging code. In the [Preferences panel](/administration/preferences-panel), set 'Use DNS?' to 'No', and see if that makes a difference. If not, try disabling logging altogether.
-* Plugins: plugins aren't necessarily as efficient as Textpattern itself. If your performance problems coincide with the installation of a plugin, or occur only on a particular page template that invokes a plugin, try disabling it and see if there's a difference. If your page won't display properly without the plugin, try temporarily reverting to the default Textpattern Page template and Form template.
+* DNS issues: a slow or misconfigured DNS server at your web hosting provider can cause high page runtimes. Usually this occurs in the Textpattern logging code. In the Preferences panel, set 'Use DNS?' to 'No', and see if that makes a difference. If not, try disabling logging altogether.
+* Plugins: plugins aren't necessarily as efficient as Textpattern itself. If your performance problems coincide with the installation of a plugin, or occur only on a particular page template that invokes a plugin, try disabling it and see if there's a difference. If your page won't display properly without the plugin, try temporarily reverting to the default Textpattern Page and Form templates.
 * PHP code: if you've included any PHP code in your page templates, whether directly in the template or indirectly via an `include()` call or similar, try disabling it. In particular, check for any code that might try to fetch a file from an external server, e.g. by using a `https://..` URL in an `fopen()` or `include()` call.
 * MySQL issues: MySQL doesn't have to run on the same physical machine as your web server. Some hosting companies run these on separate servers connected by a fast LAN connection, which is fine. However, if Textpattern and MySQL are on entirely different networks, performance will be unavoidably slow, since all MySQL queries and results must travel back and forth over a comparatively slow internet connection every time a Textpattern page is viewed. Other MySQL performance problems can be harder to diagnose. An overloaded MySQL server can slow down Textpattern - ask your hosting provider if this could be the case.
-* Spam blocklist: sometimes the built-in blocklist checking causes page slowdowns. Go to the [Preferences panel](/administration/preferences-panel) and remove `sbl.spamhaus.org` from the 'Spam blocklists' preference if it is there.
+* Spam blocklist: sometimes the built-in blocklist checking causes page slowdowns. Go to the Preferences panel and remove `sbl.spamhaus.org` from the 'Spam blocklists' preference if it is there.
 
 #### Queries and Memory
 
@@ -160,13 +151,13 @@ If your Runtime, Queries and Memory figures are all in or near the normal limits
 
 ### Slow administration side
 
-This is almost always due to a plugin. Try turning them off one by one and testing any troublesome admin panels. If you can narrow it down a single plugin, try contacting the author to see if there's a newer version available, or if the issue can be fixed.
+This is almost always due to a plugin. Try turning them off one by one and testing any troublesome admin panels. If you can narrow it down to a single plugin, try contacting the author to see if there's a newer version available, or if the issue can be fixed.
 
 ## Blank page output
 
-If you see a completely white screen when viewing a website page, it usually means an error has occured but is not displayed because you're running in Live mode. Setting the [Production Status preference](/administration/preferences-panel#site-preferences) to 'Live' suppresses all error messages. Instead, set the Production Status to 'Testing', then view the problem page again. You should see a more informative error message this time.
+If you see a completely white screen when viewing a website page, it usually means an error has occured but is not displayed because you're running in Live mode. Setting the Production Status preference to 'Live' suppresses all error messages. Instead, set the Production Status to 'Testing', then view the problem page again. You should see a more informative error message this time.
 
-It's always a good idea to use Testing mode when editing templates and forms. Switch to Live mode only when you're certain everything works. Debugging mode is intended only for developers; it's normal to see some spurious messages in this mode, but it ma also be useful to diagnose particularly troublesome aspects of your page layout.
+It's always a good idea to use Testing mode when editing templates and forms. Switch to Live mode only when you're certain everything works. Debugging mode is intended only for developers; it's normal to see some spurious messages in this mode, but it may also be useful to diagnose particularly troublesome aspects of your page layout.
 
 If you're still seeing a blank page even in Testing mode, the most likely cause is a syntax error in one of your `<txp:…>` tags. In Debugging mode, the Textpattern parser will try to inform you of any such misconfiguration to help you quickly find the problem.
 
@@ -176,8 +167,8 @@ Use a [feed validator](https://www.feedvalidator.org/) if you suspect a feed pro
 
 Some other avenues of exploration:
 
-* If the feed validator reports you have a missing description element, make sure there's something entered in the 'Site slogan' field in your [Preferences panel](/administration/preferences-panel).
-* If your feeds are empty or don't contain the right articles, check the 'Syndicate?' option, found on the [Sections panel](/administration/sections-panel). Sections that have the 'Syndicate?' option turned off will not show up in your feeds. Your articles must also have their status set to 'Live' (not 'Sticky').
+* If the feed validator reports you have a missing description element, make sure there's something entered in the 'Site slogan' field in your Preferences panel.
+* If your feeds are empty or don't contain the right articles, check the 'Syndicate?' option, found on the Sections panel. Sections that have the 'Syndicate?' option turned off will not show up in your feeds. Your articles must also have their status set to 'Live' (not 'Sticky').
 * If your browser tries to download the feed when the feed's link is selected, then - depending on your browser - this is the correct behaviour. More likely than not, your browser is not capable of displaying XML. As the feeds are sent with the correct MIME type, your browser offers to download the file, rather than just displaying the raw content. This is the correct behaviour, and your feed should work in a proper feed aggregator.
 * If you want to set up feed autodetection, you'll need to add tags like the following to the `<head>` of your main page:
 
@@ -188,7 +179,7 @@ Some other avenues of exploration:
 
 ## Error messages and codes
 
-Notices when your [Production status](/administration/preferences-panel#production-status) is set to 'Debugging' mode are not unusual, and by themselves aren't an indicator of something wrong. If messages such as `Undefined index`, `Unregistered tag` or other warnings/notices are the only symptom you have when this mode is active, then there's likely nothing wrong, and you can safely ignore them.
+Notices when your Production status is set to 'Debugging' mode are not unusual, and by themselves aren't an indicator of something wrong. If messages such as `Undefined index`, `Unregistered tag` or other warnings/notices are the only symptom you have when this mode is active, then there's likely nothing wrong, and you can safely ignore them.
 
 Errors such as `Unexpected end of file`, `Call to undefined function` or `Failed to read stream` are usually a symptom that the files you uploaded to the web server didn't transfer properly or that the information in your `config.php` is incorrect. Uploading all the Textpattern system files again often remedies this, ensuring that the `.php` and `.js` files are uploaded as ASCII, not binary.
 
@@ -210,9 +201,9 @@ https://example.com/index.php?id=123
 
 While we've done our best to ensure the `.htaccess` file supplied with Textpattern will work with as many web server configurations as possible, some servers are configured to restrict this. A `500 Internal Server Error` or `403 Forbidden` response is usually the result of a `.htaccess` file that tries to exceed these restrictions.
 
-The simplest thing you can do to fix the problem is simply delete or rename `.htaccess`, and switch to 'Messy' URL mode (see [Article URL pattern](/administration/preferences-panel#article-url-pattern)).
+The simplest thing you can do to fix the problem is simply delete or rename `.htaccess`, and switch to 'Messy' URL mode (see the 'Article URL pattern' setting on the Preferences panel).
 
-You'll find some other pointers in @@TODO: link to Clean URLs don't work in Diagnostics panel@@.
+You'll find some other pointers in [Clean URLs don't work](#clean-urls-do-not-work).
 
 ### 404 Page Not Found
 
@@ -237,3 +228,57 @@ Textpattern's memory usage is quite low - usually no more than a couple of megab
 Unless your server admin has set the PHP memory limit far too low (unlikely, but not impossible) the cause is probably a plugin. Some older archive page plugins work by loading all articles into memory at once. This could easily exhaust the available memory if you have a large number of articles.
 
 Disable your plugins one by one, until you find the culprit. If the cause is indeed a plugin, we suggest contacting its author about the problem. In some cases, the plugin's functionality could be replaced with core [Textpattern tags](/tags) which may be more memory efficient.
+
+## Clean URLs do not work
+
+This is usually an Apache web server issue.
+
+These and similar problems happen when you use an **Article URL pattern**, as set in the Site section of the Preferences panel, as anything other than ‘?=messy’ on a web server that does not support `mod_rewrite` rules in the *.htaccess* file, or requires additional configuration in order to work. The *.htaccess* file supplied with Textpattern is designed to work on most Apache servers, but there is no universal solution.
+
+The Textpattern [Diagnostics](/administration/diagnostics-panel) panel will attempt to warn you if it can determine that clean URLs are not supported on your system. However, it doesn't detect all incompatible servers. The absence of a warning does *not* mean that your server supports clean URLs.
+
+The simplest solution is to select ‘?=messy’ for the 'Article URL pattern' preference, and remove or move aside the *.htaccess* file.
+
+Some servers support `mod_rewrite`, but require some additional configuration in order to make it work properly.
+
+If your Apache web server supports `mod_rewrite` in *.htaccess*, you can find some suggestions for specific web hosts [in this forum thread](https://forum.textpattern.com/viewtopic.php?id=7702).
+
+On servers that support `mod_rewrite`, the most common solution is to uncomment (remove the leading `#` from) this line in the *.htaccess* file:
+
+``` apacheconf
+#RewriteBase /relative/web/path/
+```
+
+And change the path as appropriate. If Textpattern is installed in your website root (i.e. the front Textpattern page is at `https://example.com/`), you should use this:
+
+``` apacheconf
+RewriteBase /
+```
+
+If Textpattern is installed in a subdirectory (i.e the front Textpattern page is at `https://example.com/mydir/`), then use:
+
+``` apacheconf
+RewriteBase /mydir/
+```
+
+Other changes required on some hosts include:
+
+``` apacheconf
+DirectoryIndex index.php index.html
+```
+
+Or:
+
+``` apacheconf
+Options +FollowSymLinks
+```
+
+Both of these lines are included in the default *.htaccess* file, so you can simply uncomment them (remove the leading `#`).
+
+If you are configuring your own Apache server, or using a hosting arrangement that lets you modify your own Apache configuration settings, you might need to add the following to the appropriate place in the *httpd.conf* file:
+
+``` apacheconf
+AllowOverride FileInfo
+```
+
+If none of those changes work, or if they cause a [500 server error](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500), you will need to use ‘?=messy’ URLs as described earlier, or ask your hosting provider for help.
