@@ -20,7 +20,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 
 * [Installing Textpattern](/installation/) (detailed instructions)
 * [Upgrading Textpattern](/installation/upgrading-textpattern)
-* [Configuring a web server for Textpattern](/installation/configuring-a-web-server-for-textpattern)
+* [Configuring a web server for Textpattern](/setup/configuring-a-web-server-for-textpattern)
 * [Moving a Textpattern installation](/installation/moving-textpattern)
 * [Post install and upgrade routines](/installation/post-install-and-upgrade-routines)
 * [Multi-site Textpattern installations](/installation/multi-site-textpattern)
