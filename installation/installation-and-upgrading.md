@@ -2,20 +2,20 @@
 layout: document
 category: Installation
 published: false
-title: Complete installation and update instructions
+title: Installation and upgrading
 description: From download to first log in: a complete guide to installing or updating Textpattern.
 ---
 
-# Complete installation and update instructions
+# Installation and upgrading
 
-Whether you are new or experienced with Textpattern, this is your go-to page for installing or upgrading your Textpattern installation.
+Whether you are new or experienced with Textpattern, this is the go-to place for installing or upgrading your Textpattern installation.
 
 **On this page**:
 
 * Table of contents
 {:toc}
 
-## Quick guide: installing Textpattern for the first time
+## Quick guide: installing for the first time
 
 If you are comfortable with (S)FTP, file and database administration on server environments, this is for you.
 
@@ -29,7 +29,7 @@ If you are comfortable with (S)FTP, file and database administration on server e
 
 Congratulations! You have upgraded Textpattern. We hope you enjoy it. If you require more information, please refer to the [Step-by-step installation instructions](#TODO-install).
 
-## Quick guide: upgrading to the newest stable Textpattern release
+## Quick guide: upgrading to the newest stable release
 
 If you are comfortable with (S)FTP, file and database administration on server environments, this is for you. In the root directory of every Textpattern archive is a `README.txt` file with upgrading instructions and any special notes relevant to that release.
 
@@ -62,13 +62,13 @@ This is expected behaviour for the very first login after the upgrade. Further n
 
 Congratulations! You have upgraded Textpattern. We hope you enjoy it. If you require more information, please refer to the [Step-by-step upgrading instructions](#TODO-upgrade).
 
-## Step-by-step Textpattern installation instructions
+## Step-by-step installation instructions
 
 These instructions follow a process of using an (S)FTP application, which you presumably have (for example [[Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, [WinSCP](https://winscp.net/eng/index.php/) for Windows, or FileZilla](https://filezilla-project.org/) for all platforms).
 
 If you're familiar with installing CMS software and prefer the quick guide, see the [README.txt](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. Or try the [Quick installation guide](#quick-guide-installing-textpattern-for-the-first-time).
 
-### Create your database
+### Create a database
 
 Before you can install Textpattern, you need a MySQL database ready, and a user account with 'write' privileges granted. Your hosting environment will have an administration tool to do this from their control panel toolset.
 
@@ -83,94 +83,22 @@ Depending on your web host, your web host account username or ID may be prefixed
 
 ### Download and unpack Textpattern
 
-1. Create a folder on your local drive and name it something recognizable (e.g. `txp-new`).
-2. [Download](https://textpattern.com/download) the latest release package (either `.zip` or `.tar.gz`, as you prefer).
-3. Move the package to the folder you created.
-4. Expand the package.
+1. [Download](https://textpattern.com/download) the latest release package (either `.zip` or `.tar.gz`, as you prefer).
+2. Unpack the package into a new directory so the files are contained neatly and are easy to see.
 
-The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see, pay particular attention to the `.htaccess`[^2] file if you intend to install Textpattern to an Apache web server.
-
-`files`
-: **Type:** directory.
-: **Removable?:** no.
-: **What it's for:** Empty by default. It's where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the [Files panel](/administration/files-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](/administration/diagnostics-panel).
-
-`images`
-: **Type:** directory.
-: **Removable?:** no.
-: **What it's for:** Empty by default. It's where images will go when you upload them in the [Images panel](/administration/images-panel). You may see a warning about the directory's `chmod` status (editing rights) in the [Diagnostics panel](/administration/diagnostics-panel).
-
-`rpc`
-: **Type:** directory.
-: **Removable?:** yes.
-: **What it's for:** Contains the XML-RPC functionality, which is legacy code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the [Preferences panel](/administration/preferences-panel#enable-xml-rpc-server).
-
-`sites`
-: **Type:** directory.
-: **Removable?:** yes.
-: **What it's for:** Supports multi-site installations managed by one administration side. It contains a template and instructions (`README.txt`) for doing so. You can safely remove this directory if not wanted.
-
-`textpattern`
-: **Type:** directory.
-: **Removable?:** no.
-: **What it's for:** Essential. Contains all the core scripting and functionality. Also where users log into site administration from the front side.
-
-`themes`
-: **Type:** directory.
-: **Removable?:** no.
-: **What it's for:** Empty by default. It's where themes will go if you choose to export them to disk from the [Themes panel](/administration/themes-panel) as a backup or for sharing them with others. Each theme has its own subdirectory inside. Note that you may see a warning about the directory's `chmod` status (editing rights) at the top of the Themes panel if the web server does not have sufficient write permissions.
-
-`.htaccess`
-: **Type:** file.
-: **Removable?:** yes/no.
-: **What it's for:** Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should not alter or remove the default content, which Textpattern relies on. `.htaccess` can be safely removed if you run Textpattern a non-Apache web server, e.g. [Nginx](/installation/configuring-a-web-server-for-textpattern).
-
-`index.php`
-: **Type:** file.
-: **Removable?:** no.
-: **What it's for:** Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing.
-
-`css.php`
-: **Type:** file.
-: **Removable?:** yes/no.
-: **What it's for:** Negotiates the front-end stylesheets you create in the [Styles panel](/administration/styles-panel). If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
-
-`README.txt`
-: **Type:** file.
-: **Removable?:** yes.
-: **What it's for:** The file providing brief instructions for installing and upgrading Textpattern.
-
-`HISTORY.txt`
-: **Type:** file.
-: **Removable?:** yes.
-: **What it's for:** The file showing the package release Changelog.
-
-`LICENSE.txt`
-: **Type:** file.
-: **Removable?:** no.
-: **What it's for:** The GNU GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone.
-
-[^1]: Do not move files in the tree or change their names. Doing so will render Textpattern useless.
-
-[^2]: This type of file is a 'hidden' file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you undertake local development on a macOS, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain FTP clients, which typically hide these files until you change settings to show them.
+See the [package file structure](#package-file-structure) for details on what files and directories are contained within it.
 
 ### Upload package to web server
 
-If you intend to use Textpattern to manage the entire website, you'll upload the install package to your web root (i.e. the root of your web domain). For many hosts, the path to the root looks like this: */users/home/{username}/web/public/*, where {username} is your user account name. You would upload the Textpattern package to the `/public` directory (equal to `yourexample.com`).
+If you intend to use Textpattern to manage the entire website, you'll upload the install package to your web root (i.e. the root of your web domain). For many hosts, the path to the root looks like this: */users/home/{username}/web/public/*, where {username} is your user account name. You would upload the package to the `/public` directory (equal to `yourexample.com`).
 
 You may, of course, install it in a sub-directory if you're only using Textpattern to run a blog, for example, as part of a larger site (generally people who do that end up [moving the installation](/installation/moving-textpattern) later).
 
-You will use FTP, or Secure-FTP (SFTP) if your web host requires it, to upload the package to your desired web server location. Two capable clients are WinSCP for Windows and Transmit for Mac.
-
-When ready:
-
-1. Connect to your web server via the FTP/SFTP client and navigate down to the directory where you intend to install Textpattern.
-2. If not done automatically by the FTP/SFTP client, make a second connection to your local drive and navigate to where you have the unzipped Textpattern install package waiting.
-3. Select the package file tree (the folders and files *inside* the unzipped version number folder) on your local drive and drag/drop them to your web server directory.
+Connect to your web server via the (S)FTP client and navigate down to the directory where you intend to install Textpattern and upload the relevant files, as indicated in the [package file structure](#package-file-structure).
 
 ### Setup and configuration
 
-Now you'll walk through the setup process, which is a series of screens. Have you're "database information":#sec1 ready. Assuming you uploaded the install file tree to your web root, open a browser and go to *https://example.com/textpattern/setup/*. (If you installed Textpattern in a subdirectory, the path would reflect that.)
+Now you'll walk through the setup process, which is a series of screens. Assuming you uploaded the install file tree to your web root, open a browser and go to *https://example.com/textpattern/setup/*. (If you installed Textpattern in a subdirectory, the path would reflect that).
 
 #### Select language
 
@@ -378,3 +306,28 @@ For advanced users only!
 The latest, **potentially unstable**, bleeding-edge code is available at [the GitHub repository](https://github.com/textpattern/textpattern).
 
 If you're thinking about testing this code, then we shouldn't have to tell you what [git](https://git-scm.com) is or how to use it. If you don't know, then you don't really want to be messing about here!
+
+## Package file structure
+
+The zip package will have a folder/file tree matching the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see inside the Textpattern download package. Pay particular attention to the `.htaccess`[^2] file if you intend to install Textpattern to an Apache web server.
+
+Use this table as a guide when installing or upgrading to determine which files and directories are essential and which are optional during the process.
+
+File | Type | Optional? | Replace on upgrade? | What it's for
+---|---|---|---
+`files` | directory | no | no | Empty by default. It's where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the Files panel. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
+`images` | directory | no | no | Empty by default. It's where images will go when you upload them in the Images panel. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
+`rpc` | directory | yes | yes (if using it) | Contains the XML-RPC functionality, which is legacy code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the Preferences panel.
+`sites` | directory | yes | not usually |Supports multi-site installations managed by one set of core files. It contains a template and instructions (`README.txt`) for doing so. You can safely remove this directory if you're not using this functionality.
+`textpattern` | directory | no | yes | Essential. Contains all the core scripting and functionality. Also where users log into the back-end to administer the site.
+`themes` | directory | no | no | Empty by default. It's where themes will go if you choose to export them to disk from the Themes panel as a backup or for sharing them with others. Each theme has its own subdirectory inside. Note that you may see a warning about the directory's `chmod` status (editing rights) at the top of the Themes panel if the web server does not have sufficient write permissions.
+`.htaccess` | file | yes if not using Apache | yes (but reapply any customization) | Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should not alter or remove the default content, which Textpattern relies on. `.htaccess` can be safely removed if you run Textpattern a non-Apache web server, e.g. [Nginx](/setup/configuring-a-web-server-for-textpattern).
+`index.php` | file | no | Essential. It functions as the front end of your Textpattern site. It's where web users arrive and and interact with the dynamic publishing.
+`css.php` | file | yes/no | yes (if using it) | Negotiates the front-end stylesheets you create in the Styles panel. If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
+`README.txt` | file | yes | no | The file providing brief instructions for installing and upgrading Textpattern.
+`HISTORY.txt` | file | yes | no | The file showing the package release Changelog.
+`LICENSE.txt` | file | no | no | The GNU GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone.
+
+[^1]: Do not move files in the tree or change their names. Doing so will render Textpattern useless.
+
+[^2]: This type of file is a 'hidden' file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you undertake local development on macOS, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain (S)FTP clients, which typically hide these files until you change settings to show them.
