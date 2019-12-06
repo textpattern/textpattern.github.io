@@ -10,26 +10,10 @@ description: Textpattern stores all data in a database. Within that database, ea
 
 Textpattern stores all data in a database. Within that database, there are the following tables, each containing a different collection of information.[^1]
 
-On this page:
+**On this page**:
 
-* [textpattern](#textpattern)
-* [txp_category](#txp_category)
-* [txp_css](#txp_css)
-* [txp_discuss](#txp_discuss)
-* [txp_discuss_nonce](#txp_discuss_nonce)
-* [txp_file](#txp_file)
-* [txp_form](#txp_form)
-* [txp_image](#txp_image)
-* [txp_lang](#txp_lang)
-* [txp_link](#txp_link)
-* [txp_log](#txp_log)
-* [txp_page](#txp_page)
-* [txp_plugin](#txp_plugin)
-* [txp_prefs](#txp_prefs)
-* [txp_section](#txp_section)
-* [txp_skin](#txp_skin)
-* [txp_token](#txp_token)
-* [txp_users](#txp_users)
+* Table of contents
+{:toc}
 
 ## textpattern
 
