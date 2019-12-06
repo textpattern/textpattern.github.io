@@ -8,7 +8,7 @@ description: A complete journey through creating, managing, using, exporting, im
 
 # Themes: A complete walk-through
 
-This document is a complete journey through creating, managing, using, exporting, importing, and deleting Textpattern themes, all in context of default installation conditions, but kindly extrapolated to situations that aren’t. It just happens to be that default can go a long way.
+This document is a complete journey through creating, managing, using, exporting, importing, and deleting Textpattern themes, all in context of default installation conditions, but kindly extrapolated to situations that aren’t. It just happens to be that default can go a long way. What you will not learn here is how to construct site architectures or design themes.
 
 **On this page**:
 
@@ -21,7 +21,7 @@ Textpattern users, and theme designers in general, new and old, will find Textpa
 
 ### A theme development ‘studio’
 
-The addition of the [Themes](/administration/themes-panel) panel has essentially transformed how to think about building website architectures with Textpattern’s semantic building blocks. Textpattern designers will likely find the Themes panel is now the centre stage of the administration side. Indeed, the back-end is like a theme development studio, where you can work on many themes simultaneously, for employing on your website or sharing with the community. But don’t worry, writers and editors, Textpattern is still the same system to do what its creator envisioned. ‘Just write.’
+The addition of the Themes panel has essentially transformed how to think about building website architectures with Textpattern’s semantic building blocks. Textpattern designers will likely find the Themes panel is now the centre stage of the administration side. Indeed, the back-end is like a theme development studio, where you can work on many themes simultaneously, for employing on your website or sharing with the community. But don’t worry, writers and editors, Textpattern is still the same system to do what its creator envisioned. ‘Just write.’
 
 Theoretically speaking, you could hack a theme package together, from scratch and by hand, directly on your web server. We know you masochistic types are out there. And, sure, it can be a learning experience to sit on the cold garage floor with grease and gears.
 
@@ -285,7 +285,7 @@ Immediately right of a theme’s name, under the Name column, are two links. The
 
 ![Dev preview theme link](/img/dev-preview-theme-link.png)
 
-When clicked, you are taken to the Sections panel and put in a development context for that theme. You will use this link a lot. [Previewing themes](#previewing-themes) is described more later.
+When clicked, you are taken to the Sections panel and put in a development context for that theme. You will use this link a lot. [Previewing themes](#previewing-themes-in-development) is described more later.
 
 ### Active / Activate links
 
