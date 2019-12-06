@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Installation
+category: Setup and configuration
 published: true
 title: Configuring a web server for Textpattern.
 description: This article offers guidance and tips for administrators wishing to install Textpattern to various web server platforms.
