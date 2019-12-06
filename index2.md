@@ -50,7 +50,7 @@ Content types, templates, semantic building blocks, themes, site structure…
 
 #### Presentation
 
-* [Themes: A complete walk-through](/articles/themes-a-complete-walk-through)
+* [Themes: Creating, using, and sharing](/articles/themes-creating-using-and-sharing)
 * [Creating administration themes](/articles/creating-administration-themes)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 

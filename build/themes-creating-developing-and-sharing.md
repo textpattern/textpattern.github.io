@@ -2,11 +2,11 @@
 layout: document
 category: Themes
 published: true
-title: Themes: A complete walk-through
+title: Themes: Creating, using, and sharing
 description: A complete journey through creating, managing, using, exporting, importing, and deleting Textpattern themes. Join the expedition.
 ---
 
-# Themes: A complete walk-through
+# Themes: Creating, using, and sharing
 
 This document is a complete journey through creating, managing, using, exporting, importing, and deleting Textpattern themes, all in context of default installation conditions, but kindly extrapolated to situations that aren’t. It just happens to be that default can go a long way. What you will not learn here is how to use Textpattern tags, HTML, or CSS; the fundamental composition of your theme templates.
 
