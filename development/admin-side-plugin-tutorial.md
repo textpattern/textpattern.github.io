@@ -12,13 +12,10 @@ This tutorial walks you through the basics of creating an admin-side plugin; it 
 
 You might also like to see the [Public-side plugin tutorial](/development/public-side-plugin-tutorial).
 
-On this page:
+**On this page**:
 
--   [Tutorial objective](#tutorial-objective)
--   [Targeting the admin side](#targeting-the-admin-side)
--   [Creating an Extensions panel](#creating-an-extensions-panel)
--   [Adding events and steps](#adding-events-and-steps)
--   [Responding to a plugin step](#responding-to-a-plugin-step)
+* Table of contents
+{:toc}
 
 ## Tutorial objective
 
