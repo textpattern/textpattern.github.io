@@ -33,7 +33,7 @@ On this page:
 
 ## textpattern
 
-Contains the articles you create on the [Write panel](/administration/write-panel).
+Contains the articles you create on the Write panel.
 
 Column | Type | Description
 ---|---|---
@@ -91,7 +91,7 @@ FULLTEXT    |searching          |(Title, Body)
 
 ## txp_category
 
-Contains all the categories you create on the [Categories panel](/administration/categories-panel).
+Contains all the categories you create on the Categories panel.
 
 Column | Type | Description
 ---|---|---
@@ -112,7 +112,7 @@ PRIMARY KEY | - |(id)
 
 ## txp_css
 
-Contains the style sheets created on the [Styles panel](/administration/styles-panel).
+Contains the style sheets created on the Styles panel.
 
 Column | Type | Description
 ---|---|---
@@ -129,7 +129,7 @@ UNIQUE |name_skin |(name(63), skin(63))
 
 ## txp_discuss
 
-Contains all the article comments output on the [Comments panel](/administration/comments-panel).
+Contains all the article comments output on the Comments panel.
 
 Column | Type | Description
 ---|---|---
@@ -196,7 +196,7 @@ INDEX  |author_idx |(author)
 
 ## txp_form
 
-The `txp_form` table contains all the forms, which are created on the [Forms panel](/administration/forms-panel).
+The `txp_form` table contains all the forms, which are created on the Forms panel.
 
 Column | Type | Description
 ---|---|---
@@ -214,7 +214,7 @@ UNIQUE |name_skin |(name(63), skin(63))
 
 ## txp_image
 
-Contains meta information on all the images uploaded and managed in the [Images panel](/administration/images-panel). The image files are not actually stored in the database, they're stored as normal files on the web server in the `/images` folder using the image ID as the filename (i.e. `1.png` for the main image and `1t.png` for the corresponding thumbnail).
+Contains meta information on all the images uploaded and managed in the Images panel. The image files are not actually stored in the database, they're stored as normal files on the web server in the `/images` folder using the image ID as the filename (i.e. `1.png` for the main image and `1t.png` for the corresponding thumbnail).
 
 Column | Type | Description
 ---|---|---
@@ -248,7 +248,7 @@ Column | Type | Description
 id      |INT         |Unique auto-incremented ID of this language string
 lang    |VARCHAR(16) |Language code (for example: fr for French, en-gb for British English, and so on)
 name    |VARCHAR(64) |Unique name that identifies the language string. This acts as a key that ties strings together across languages
-event   |VARCHAR(64) |The part of Textpattern where this piece of text is used. This not only helps to keep the language strings organized for the translators, it also means only the required strings are loaded where they are needed. On the public side only the language strings with event `public` and `common` are loaded. On the administration side, the events `admin-side`, `common`, plus the panel-specific event are loaded on any given panel
+event   |VARCHAR(64) |The part of Textpattern where this piece of text is used. This not only helps to keep the language strings organized for the translators, it also means only the required strings are loaded where they are needed. On the front-end only the language strings with event `public` and `common` are loaded. On the back-end, the events `admin-side`, `common`, plus the panel-specific event are loaded on any given panel
 owner   |VARCHAR(64) |Mandatory for non-core strings to group language strings for ease of management (e.g. deletion when a plugin is uninstalled). Core strings have no owner set. Every other string is given the designated owner, or `site` if omitted
 data    |TEXT        |Translation of the language string
 lastmod |TIMESTAMP   |Modification data and time of the language string
@@ -264,7 +264,7 @@ INDEX  |owner  |(owner)
 
 ## txp_link
 
-Contains all the links and related information created on the [Links panel](/administration//links-panel).
+Contains all the links and related information created on the Links panel.
 
 Column | Type | Description
 ---|---|---
@@ -286,7 +286,7 @@ INDEX |author_idx |(author)
 
 ## txp_log
 
-Contains log entries of page requests (visits) to your website, which are output on the [Visitor logs panel](/administration/visitor-logs-panel). Depending on your preferences, you can either log nothing, just referrers, or all requests. Old log entries are removed automatically every time you display the visitor logs panel.
+Contains log entries of page requests (visits) to your website, which are output on the optional Visitor logs panel. Depending on your preferences, you can either log nothing, just referrers, or all requests. Old log entries are removed automatically every time you display the visitor logs panel.
 
 Column | Type | Description
 ---|---|---
@@ -309,7 +309,7 @@ INDEX |ip     |(ip)
 
 ## txp_page
 
-Contains all the Page templates you create on the [Pages panel](/administration/pages-panel).
+Contains all the Page templates you create on the Pages panel.
 
 Column | Type | Description
 ---|---|---
@@ -326,7 +326,7 @@ UNIQUE |name_skin |(name(63), skin(63))
 
 ## txp_plugin
 
-Contains all the plugins you have installed, that are displayed on the [Plugins panel](/administration/plugins-panel).
+Contains all the plugins you have installed, that are displayed on the Plugins panel.
 
 Column | Type | Description
 ---|---|---
@@ -377,19 +377,23 @@ INDEX  |user_name |(user_name)
 
 ## txp_section
 
-Contains all the sections you create on the [Sections panel](/administration/sections-panel).
+Contains all the sections you create on the Sections panel.
 
 Column | Type | Description
 ---|---|---
-name         |VARCHAR(255) |Section name (used in URL)
-skin         |VARCHAR(63)  |Theme associated with this section
-page         |VARCHAR(255) |Page template used for this section
-css          |VARCHAR(255) |Style sheet used for this section
-description  |VARCHAR(255) |Section description. Can be used for outputting meta data or section details on landing pages
-in_rss       |INT          |Whether to include articles in this section in the site's RSS or Atom XML feeds (0 = no, 1 = yes)
-on_frontpage |INT          |Whether to display articles in this section on the front page (0 = no, 1 = yes)
-searchable   |INT          |Whether articles in this section are searchable (0 = no, 1 = yes)
-title        |VARCHAR(255) |Human-friendly section title
+name          |VARCHAR(255) |Section name (used in URL)
+skin          |VARCHAR(63)  |Theme associated with this section
+page          |VARCHAR(255) |Page template used for this section
+css           |VARCHAR(255) |Style sheet used for this section
+permlink_mode |VARCHAR(63)  |The permanent link URL scheme to use for this section
+description   |VARCHAR(255) |Section description. Can be used for outputting meta data or section details on landing pages
+in_rss        |INT          |Whether to include articles in this section in the site's RSS or Atom XML feeds (0 = no, 1 = yes)
+on_frontpage  |INT          |Whether to display articles in this section on the front page (0 = no, 1 = yes)
+searchable    |INT          |Whether articles in this section are searchable (0 = no, 1 = yes)
+title         |VARCHAR(255) |Human-friendly section title
+dev_skin      |VARCHAR(63)  |In-development theme associated with this section
+dev_page      |VARCHAR(255) |In-development page template used for this section
+dev_css       |VARCHAR(255) |In-development style sheet used for this section
 
 ### Indexes
 
@@ -400,7 +404,7 @@ INDEX |css_skin  |(css(50), skin(63))
 
 ## txp_skin
 
-Contains public theme information as defined on the [Themes panel](/administration/themes-panel). A theme is a collection of Pages, Forms and style sheets. It is referred to as a 'skin' internally because 'theme' was already taken by admin-themes. May be optionally exported to the file system and imported.
+Contains public and development theme information as defined on the Themes panel. A theme is a collection of Pages, Forms and style sheets. It is referred to as a 'skin' internally because 'theme' was already taken by admin-themes. May be optionally exported to the file system, and imported from there to the database.
 
 Column | Type | Description
 ---|---|---
@@ -440,7 +444,7 @@ UNIQUE |ref_type |(reference_id, type(50))
 
 ## txp_users
 
-Contains information for all users, as displayed on the [Users panel](/administration/users-panel).
+Contains information for all users, as displayed on the Users panel.
 
 Column | Type | Description
 ---|---|---
@@ -462,4 +466,4 @@ UNIQUE |name |(name)
 
 [^1]: The size limits shown in the *Description* for various table columns (e.g. the `Body` column of the `textpattern` table) may differ slightly from the actual size limits found in the tables created by Textpattern during installation (when a column is used in multiple tables, the smallest size is used). You should consider the limits indicated here as authoritative. When in doubt, ask a developer on the forum.
 
-[^2]: See [Plugin lifecycle management and preferences](/development/) for more info.
+[^2]: See [Plugin lifecycle callbacks](development/core-callbacks-reference.md#plugin-callbacks) for more info.
