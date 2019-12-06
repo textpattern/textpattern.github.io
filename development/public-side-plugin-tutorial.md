@@ -28,7 +28,7 @@ The plugin in this tutorial will:
 3.  Output some text when that tag is called
 4.  Use Textpattern's [else](/tags/else) tag
 
-Since all plugins must use a [three-character alphanumeric prefix](/branch/author-prefixes-and-registration), we're going to use **abc** in this tutorial, which is reserved for documentation purposes.
+Since all plugins must use a [three-character alphanumeric prefix](/brand/author-prefixes-and-registration), we're going to use **abc** in this tutorial, which is reserved for documentation purposes.
 
 ## Your first plugin and tag
 
