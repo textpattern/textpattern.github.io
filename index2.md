@@ -18,11 +18,7 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 ### Setup and Configuration
 {: .index-docs-admin}
 
-A short introductory line.
-
-<section>
-
-#### Setup
+Installation, settings, security, troubleshooting, collaboration, servers...
 
 * [Installing Textpattern](/installation/) (detailed instructions)
 * [Upgrading Textpattern](/installation/upgrading-textpattern)
@@ -31,19 +27,11 @@ A short introductory line.
 * [Post install and upgrade routines](/installation/post-install-and-upgrade-routines)
 * [Multi-site Textpattern installations](/installation/multi-site-textpattern)
 * [Troubleshooting a Textpattern installation or upgrade](/installation/troubleshooting-textpattern)
-{:.list--no-bullets style="list-style-type:'- '"}
-
-</section>
-<section>
-
-#### Configuration
-
 * [User roles and privileges](/administration/user-roles-and-privileges) (default publishing roles and associated panel access rights)
 * [Textpattern security](/administration/security) (read before you worry or hack the core)
 * [Troubleshooting a Textpattern installation or upgrade](/installation/troubleshooting-textpattern)
-{:.list--no-bullets style="list-style-type:'- '"}
+{:.list--no-bullets style=“list-style-position:inside; list-style-type:'- '"}
 
-</section>
 </section>
 
 <section class="layout-3col">
@@ -51,7 +39,7 @@ A short introductory line.
 ### Construction and Presentation
 {: .index-docs-start}
 
-A short introductory line.
+Site structures, template architecture, building blocks, themes…
 
 <section>
 
@@ -59,7 +47,7 @@ A short introductory line.
 
 * . . .
 * . . .
-{:.list--no-bullets style="list-style-type:'- '"}
+{:.list--no-bullets style=“list-style-position:inside; list-style-type:'- '"}
 
 </section>
 <section>
@@ -69,7 +57,7 @@ A short introductory line.
 * [Themes: A complete walk-through](/themes/themes-a-complete-walk-through)
 * [Creating a custom administration theme](/themes/creating-a-custom-administration-theme)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
-{:.list--no-bullets style="list-style-type:'- '"}
+{:.list--no-bullets style=“list-style-position:inside; list-style-type:'- '"}
 
 </section>
 </section>
@@ -79,7 +67,7 @@ A short introductory line.
 ### Tags Reference
 {: .index-docs-tags}
 
-A short introductory line.
+You know HTML markup; but try Textpattern’s *hyper*-markup, and be amazed. 
 
 <section>
 
@@ -88,7 +76,7 @@ A short introductory line.
 * [Tags reference](/tags/)
 * [Tag use basics](/tags/tag-basics/)
 * [Tags in development](/tags/tags-in-development)
-{:.list--no-bullets style="list-style-type:'- '"}
+{:.list--no-bullets style=“list-style-position:inside; list-style-type:'- '"}
 
 </section>
 <section>
@@ -97,7 +85,7 @@ A short introductory line.
 
 * [Custom short-tags and shortcodes](/tags/shortcodes/custom-short-tags-and-shortcodes)
 * [Shortcode examples](/tags/shortcodes/)
-{:.list--no-bullets style="list-style-type:'- '"}
+{:.list--no-bullets style=“list-style-position:inside; list-style-type:'- '"}
 
 </section>
 </section>
