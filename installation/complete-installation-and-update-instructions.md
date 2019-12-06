@@ -15,11 +15,9 @@ Whether you are new or experienced with Textpattern, this is your go-to page for
 * Table of contents
 {:toc}
 
-# Quick installation guide
+## Quick guide: installing Textpattern for the first time
 
-If you are comfortable with SFTP, file and database administration on server environments, then this section is for you.
-
-## Installing the software for the first time
+If you are comfortable with (S)FTP, file and database administration on server environments, this is for you.
 
 1. Ensure your web server meets the [Textpattern system requirements](https://textpattern.com/about/119/system-requirements) for the version you intend to download.
 2. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` archive.
@@ -29,17 +27,18 @@ If you are comfortable with SFTP, file and database administration on server env
 6. Open a web browser and visit `example.com/textpattern/setup/index.php` to start the setup process. If you're running Textpattern from a subdomain or subdirectory, use `subdomain.example.com/textpattern/setup/index.php` or `example.com/subdirectory/textpattern/setup/index.php` as appropriate.
 7. Follow the installation steps provided on-screen.
 
-If you require more information, please refer to the [Step-by-step installation instructions](#TODO-install).
+Congratulations! You have upgraded Textpattern. We hope you enjoy it. If you require more information, please refer to the [Step-by-step installation instructions](#TODO-install).
 
-## Upgrading to the newest stable release
+## Quick guide: upgrading to the newest stable Textpattern release
 
-In the root directory of every Textpattern archive is a `README.txt` file with upgrading instructions relevant to that release.
+If you are comfortable with (S)FTP, file and database administration on server environments, this is for you. In the root directory of every Textpattern archive is a `README.txt` file with upgrading instructions and any special notes relevant to that release.
 
 1. Ensure your web server meets the [Textpattern system requirements](https://textpattern.com/about/119/system-requirements) for the version you are downloading.
 2. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` archive.
 3. Unpack [the file tree contents](https://github.com/textpattern/textpattern) from the downloaded package into a new directory on your local drive.
 4. Log out of the Textpattern back-end and clear the browser cache for your existing Textpattern site. If you use a service such as [Cloudflare](https://www.cloudflare.com) to cache your domain assets, remember to clear any caching services there too.
-5. Verify the existence of a working database and file backup of your existing Textpattern site. You may find it useful to copy your existing, known-good `textpattern/config.php` file to an easily accessible location on your local drive, as it may be required shortly.
+5. Verify the existence of a working database and file backup of your existing Textpattern site.
+5.1 Copy your existing, known-good `textpattern/config.php` file to an easily accessible location on your local drive as a backup.
 6. Connect to your destination server using an (S)FTP client or the command line and upload the following files to your web root:
 6.1 The new `css.php` and `index.php` files, overwriting the existing files.
 6.2 The new `textpattern` directory, overwriting the existing directory.
@@ -53,45 +52,43 @@ In the root directory of every Textpattern archive is a `README.txt` file with u
 10. Look at the Diagnostics panel to confirm the upgraded version number is identified and whether there are any issues.
 11. Verify all preference settings.
 
-If you require more information, please refer to the [Step-by-step upgrading instructions](#TODO-upgrade).
-
-Upgrades from versions below 4.2.0 will present this warning upon your very first login to the admin-side:
+Note that upgrades from versions below 4.2.0 will present this warning upon your very first login to the back-end:
 
 ~~~
 Warning: Unknown column 'user_name' in 'where clause' select name, val from txp_prefs where prefs_id=1 AND user_name='' in /path/to/your/site/textpattern/lib/txplib_db.php on line xx
 ~~~
 
-This is expected behaviour for the very first login after the upgrade. Further navigation within the admin-side will continue without issue.
+This is expected behaviour for the very first login after the upgrade. Further navigation within the back-end will continue without issue.
 
-## Step-by-step Textpattern installion instructions
+Congratulations! You have upgraded Textpattern. We hope you enjoy it. If you require more information, please refer to the [Step-by-step upgrading instructions](#TODO-upgrade).
 
-These instructions follow a process of using an (S)FTP application, which you presumably have ([Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, and [WinSCP](https://winscp.net/eng/index.php/) is for Windows). If you're familiar with installing CMS software and prefer the quick notes, see the [README.txt](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. If you're more of a command line jockey, the bits in [working with the development branch](/development/textpattern-source-code-repositories) should suit you.
+## Step-by-step Textpattern installation instructions
+
+These instructions follow a process of using an (S)FTP application, which you presumably have (for example [[Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, [WinSCP](https://winscp.net/eng/index.php/) for Windows, or FileZilla](https://filezilla-project.org/) for all platforms).
+
+If you're familiar with installing CMS software and prefer the quick guide, see the [README.txt](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. Or try the [Quick installation guide](#quick-guide-installing-textpattern-for-the-first-time).
 
 ### Create your database
 
-Before you can install Textpattern, you will need a MySQL database ready, and a user account with 'write' privileges to go with it. It's a hurdle you jump on your web host's side of things, but now is a good time to take care of it so it's not holding up the Textpattern install/setup process later.
+Before you can install Textpattern, you need a MySQL database ready, and a user account with 'write' privileges granted. Your hosting environment will have an administration tool to do this from their control panel toolset.
 
-Record this information when you create the database and keep it handy. It will be used later in the setup process:
+Record the following information when you create the database and keep it handy for later in the setup process:
 
 * database username
 * database password
 * database name
 * database server address and port
 
-Depending on your web host, your web host account username (or ID, whatever) may be prefixed on the database name and database login. If this is the case for you, it will be evident when creating the database with your web host.
-
-For example, if your web host ID was your last name (`lname`) and you named your database `oceans` and chose `me` as a database login, then your actual database name and login to use in [Step 1](#step-1-set-database-details) would be `lname_oceans` and `lname_me`, respectively.
+Depending on your web host, your web host account username or ID may be prefixed on the database name and database login. If this is the case for you, it will be evident when creating the database with your web host.
 
 ### Download and unpack Textpattern
-
-Now we begin the Textpattern part of the deal:
 
 1. Create a folder on your local drive and name it something recognizable (e.g. `txp-new`).
 2. [Download](https://textpattern.com/download) the latest release package (either `.zip` or `.tar.gz`, as you prefer).
 3. Move the package to the folder you created.
 4. Expand the package.
 
-The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see, pay particular attention the to `.htaccess`[^2] file if you intend to install Textpattern to an Apache web server.
+The zip package will have a folder/file tree matching that in the [Textpattern repo](https://github.com/textpattern/textpattern).[^1] Following are the folders and files you'll see, pay particular attention to the `.htaccess`[^2] file if you intend to install Textpattern to an Apache web server.
 
 `files`
 : **Type:** directory.
