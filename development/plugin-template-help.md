@@ -10,14 +10,12 @@ description: Textpattern plugins are perhaps best thought of as functions supple
 
 Textpattern plugins are perhaps best thought of as functions supplementary to those found in Textpattern core.
 
-Functions residing in your plugin can respond to `<txp:abc_your_tag />` and `<txp:abc_your_tag>bar</txp:abc_your_tag>` tags found in [Page templates](/themes/page-templates-explained), [Form templates](/themes/form-templates-explained), Articles and other dynamic content containers in Textpattern. A [Textpattern plugin template is available on GitHub](https://github.com/textpattern/textpattern-plugin-template) for plugin distribution.
+Functions residing in your plugin can respond to `<txp:abc_your_tag />` and `<txp:abc_your_tag>bar</txp:abc_your_tag>` tags found in Page templates, Form templates, Articles and other dynamic content containers in Textpattern. A [Textpattern plugin template is available on GitHub](https://github.com/textpattern/textpattern-plugin-template) for plugin distribution.
 
-On this page:
+**On this page**:
 
--   [Template package contents](#template-package-contents)
--   [Typical template use](#typical-template-use)
--   [Helpful notes](#helpful-notes)
--   [Speedy development](#speedy-development)
+* Table of contents
+{:toc}
 
 ## Template package contents
 
@@ -42,11 +40,12 @@ Typical commands (via command-line) that you'll probably use:
 
 Important and helpful notes:
 
-1.  For public tags, whatever is returned by the plugin function will be output by the corresponding `<txp:function_name />` tag.
-2.  Plugin functions have access to all the functions available to *publish.php*, including everything in *textpattern/lib* and the entire class loader library.
-3.  If you would like to pass capture attributes in the `<txp:plugin_name />` tag, these will be passed as the first argument to the function as an associative array (`$varname => $value`). Use the `lAtts()` function to parse them and set defaults.
-4.  If you would like to capture content between a pari of open-closing container tags such as `<txp:abc_your_tag>bar</txp:abc_your_tag>`, this will be passed as the second argument to the function as a string.
-5.  Do not use `<?php ?>` tags within the plugin source.
+1. For public tags, whatever is returned by the plugin function will be output by the corresponding `<txp:function_name />` tag.
+2. Public tags **must** be registered or they will not be available.
+3. Plugin functions have access to all the functions available to *publish.php*, including everything in *textpattern/lib* and the entire class loader library.
+4. If you would like to pass capture attributes in the `<txp:plugin_name />` tag, these will be passed as the first argument to the function as an associative array (`$varname => $value`). Use the `lAtts()` function to parse them and set defaults.
+5. If you would like to capture content between a pari of open-closing container tags such as `<txp:abc_your_tag>bar</txp:abc_your_tag>`, this will be passed as the second argument to the function as a string.
+6. Do not use `<?php ?>` tags within the plugin source.
 
 ## Speedy development
 
