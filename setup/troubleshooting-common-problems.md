@@ -1,12 +1,12 @@
 ---
 layout: document
-category: Installation
+category: Setup and configuration
 published: true
-title: Troubleshooting a Textpattern installation
+title: Troubleshooting common problems
 description: Have you found an issue during a Textpattern install/upgrade?
 ---
 
-# Troubleshooting a Textpattern installation
+# Troubleshooting common problems
 
 If things don't go as expected when installing or upgrading Textpattern, or you're faced with an error message that you cannot figure, this page should help.
 
