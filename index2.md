@@ -30,7 +30,7 @@ Installation, settings, security, troubleshooting, collaboration, servers...
 * [User roles and privileges](/administration/user-roles-and-privileges) (default publishing roles and associated panel access rights)
 * [Textpattern security](/administration/security) (read before you worry or hack the core)
 * [Troubleshooting a Textpattern installation or upgrade](/installation/troubleshooting-textpattern)
-{:.list--no-bullets style=“list-style-position:inside; list-style-type:'- '"}
+{:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
 
@@ -47,7 +47,7 @@ Site structures, template architecture, building blocks, themes…
 
 * . . .
 * . . .
-{:.list--no-bullets style=“list-style-position:inside; list-style-type:'- '"}
+{:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
 <section>
@@ -57,7 +57,7 @@ Site structures, template architecture, building blocks, themes…
 * [Themes: A complete walk-through](/themes/themes-a-complete-walk-through)
 * [Creating a custom administration theme](/themes/creating-a-custom-administration-theme)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
-{:.list--no-bullets style=“list-style-position:inside; list-style-type:'- '"}
+{:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
 </section>
@@ -76,7 +76,7 @@ You know HTML markup; but try Textpattern’s *hyper*-markup, and be amazed.
 * [Tags reference](/tags/)
 * [Tag use basics](/tags/tag-basics/)
 * [Tags in development](/tags/tags-in-development)
-{:.list--no-bullets style=“list-style-position:inside; list-style-type:'- '"}
+{:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
 <section>
@@ -85,7 +85,7 @@ You know HTML markup; but try Textpattern’s *hyper*-markup, and be amazed.
 
 * [Custom short-tags and shortcodes](/tags/shortcodes/custom-short-tags-and-shortcodes)
 * [Shortcode examples](/tags/shortcodes/)
-{:.list--no-bullets style=“list-style-position:inside; list-style-type:'- '"}
+{:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
 </section>
