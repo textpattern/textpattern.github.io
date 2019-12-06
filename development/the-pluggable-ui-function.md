@@ -10,12 +10,10 @@ description: The pluggable_ui function's main purpose is to provide additional e
 
 The main purpose of the `pluggable_ui` function is to provide additional event/step hooks to modify or extend the administration side user interface. Whereas [core callbacks](/development/core-callbacks-reference) and [admin-side events and steps](/development/admin-side-events-and-steps) are more general hooks that allow you to intercept the entire form submission process or to rewrite an entire page using search/replace, `pluggable_ui()` is far more granular. Each callback point allows the developer or theme designer to tweak a single or block-based visual element of the user interface.
 
-On this page:
+**On this page**:
 
-* [Caution](#caution)
-* [Function definition](#function-definition)
-* [Examples](#examples)
-* [Events and steps reference](#events-and-steps-reference)
+* Table of contents
+{:toc}
 
 ## Caution
 
