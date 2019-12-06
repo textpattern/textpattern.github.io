@@ -21,7 +21,7 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 Installation, settings, security, troubleshooting, collaboration, servers...
 
 
-* [Installation and updating the software](/articles/installating-and-updating-the-software){: style="color:red;"} (rename and move file)
+* [Installation and updating](/setup/installation-and-upgrading)
 * [Site configuration essentials](/articles/site-configuration-essentials){: style="color:red;"} (wraps most of the preferences stuff with languages and diagnostics)
 * [Roles and rights in collaborative websites](/articles/roles-and-rights-in-collaborative-websites){: style="color:red;"} (introduces notion of collaboration, ties in user, roles, etc)
 * [Troubleshooting the common problems](/articles/troubleshooting-the-common-problems){: style="color:red;"} (single doc built from faqs)
