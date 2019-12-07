@@ -10,7 +10,7 @@ description: This article offers guidance and tips for administrators wishing to
 
 Textpattern CMS runs on servers that run PHP, MySQL and an appropriate HTTP (web) server. This article offers guidance and tips for administrators wishing to configure a web server for Textpattern.
 
-The article's scope extends to the functional requirements of installing Textpattern on a existing production web server. It does not focus on installation of the web server software itself, security procedures for a production server or considerations toward optimising performance.
+The article's scope extends to the functional requirements of installing Textpattern on a existing production web server. It does not focus on installation or configuration of the web server software itself, security procedures for a production server or considerations toward optimising performance.
 
 ## In this document
 
@@ -18,7 +18,7 @@ The article's scope extends to the functional requirements of installing Textpat
 * [Nginx, MySQL, PHP-FPM](#nginx-mysql-php-fpm)
 * [Hiawatha, MariaDB, PHP-FPM](#hiawatha-mariadb-php-fpm)
 
-### Apache, MySQL, PHP
+### Apache, MySQL, PHP (AMP)
 
 Textpattern runs faster on current mainline versions of Apache, MySQL and PHP than end-of-life'd legacy versions. Typically, an existing production Apache web server with MySQL (or equivalent drop-in replacement) and PHP with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
 
@@ -34,7 +34,7 @@ Save the file as `preflight.php` or similar, and view it in a browser. If PHP is
 
 Textpattern-specific directives are provided by `.htaccess` in the root directory and other locations within the file tree. It is important to upload this file if your web server runs Apache as it's essentially direct instructions for the web server to work in a specific way. The root `.htaccess` file controls, among other things, clean URLs. Without `.htaccess`, clean URLs will not work.
 
-### Nginx, MySQL, PHP-FPM
+### Nginx, MySQL, PHP-FPM (EMP)
 
 Textpattern runs faster on current mainline versions of Nginx, MySQL and PHP than legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
 
