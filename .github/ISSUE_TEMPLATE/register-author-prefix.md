@@ -1,3 +1,12 @@
+---
+name: Register author prefix
+about: Make a claim for a uniqe author prefix.
+title: 'prefix request: '
+labels: ''
+assignees: 'Bloke'
+
+---
+
 ## What prefix do you want to register?
 
 add prefix here
