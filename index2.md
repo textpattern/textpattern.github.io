@@ -25,7 +25,7 @@ Installing, configuring, securing, troubleshooting, collaborating, and the like.
 * [Configuration essentials](/setup/configuration-essentials){: style="color:red;"} [wraps most of the preferences stuff with languages and diagnostics]
 * [Collaborative roles and rights](/setup/collaborative-roles-and-rights){: style="color:red;"} [introduces notion of collaboration, ties in users panel, roles, etc]
 * [Troubleshooting common problems](/setup/troubleshooting-common-problems)
-* [System security](/setup/system-security){: style="color:red;"}
+* [System security](/setup/system-security)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
