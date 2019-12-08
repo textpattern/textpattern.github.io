@@ -41,8 +41,8 @@ Content types, templates, semantic building blocks, themes, site structure…
 
 #### Construction
 
-* [Content types: Existing and custom](/build/content-types-existing-and-custom){: style="color:red;"} (wraps up all the content panels and custom fields together, touches on forms)
-* [Site structures and building blocks](/build/site-structures-and-building-blocks){: style="color:red;"} (wraps together sections, pages, forms, styles)
+* [Content types: Existing and custom](/build/content-types-existing-and-custom){: style="color:red;"} [wraps up all the content panels and custom fields together, touches on forms]
+* [Site structures and building blocks](/build/site-structures-and-building-blocks){: style="color:red;"} [wraps together sections, pages, forms, styles]
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
@@ -64,7 +64,7 @@ And watch for the forthcoming[Themes website](https://github.com/textpattern/tex
 ### Tags Reference
 {: .index-docs-tags}
 
-There are standard HTML tags, and there are Textpattern’s *super-tags!* Feel the power. 
+There are standard HTML tags, and there are Textpattern’s *super tags!* Feel the power. 
 
 <section>
 
