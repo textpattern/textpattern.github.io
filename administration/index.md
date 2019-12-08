@@ -37,31 +37,31 @@ The Content region of the administration side has seven panels out-of-the-box. T
         </thead>
         <tbody>
             <tr>
-                <th scope="row"><a /administration/write-panel">Write</a> (default)</th>
+                <th scope="row"><a href="/administration/write-panel">Write</a> (default)</th>
                 <td>Article editing fields and controls.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/articles-panel">Articles</a></th>
+                <th scope="row"><a href="/administration/articles-panel">Articles</a></th>
                 <td>A table listing of all articles, and the ability to open one in full-edit mode in context of the Write panel.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/images-panel">Images</a></th>
+                <th scope="row"><a href="/administration/images-panel">Images</a></th>
                 <td>A table listing of all images uploaded and functionality to manage them.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/files-panel">Files</a></th>
+                <th scope="row"><a href="/administration/files-panel">Files</a></th>
                 <td>A table listing of all files uploaded and functionality to manage them.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/links-panel">Links</a></th>
+                <th scope="row"><a href="/administration/links-panel">Links</a></th>
                 <td>A table listing of all links uploaded and functionality to manage them.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/categories-panel">Categories</a></th>
+                <th scope="row"><a href="/administration/categories-panel">Categories</a></th>
                 <td>Functionality to create and manage topic categories for articles, images, links, and files.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/comments-panel">Comments</a></th>
+                <th scope="row"><a href="/administration/comments-panel">Comments</a></th>
                 <td>A table of all article comments received and functionality to manage them.</td>
             </tr>
         </tbody>
@@ -82,23 +82,23 @@ The Presentation region has five panels out-of-the-box. The Pages panel is the d
         </thead>
         <tbody>
             <tr>
-                <th scope="row"><a /administration/themes-panel">Themes</a> <span class="footnote success"><strong>New v4.7.0</strong></span></th>
-                <td>A table listing of themes and functionality to create and manage them.</td>
+                <th scope="row"><a href=“/build/themes-creating-using-and-sharing”>Themes</a></th>
+                <td>A table of existing themes and functionality to create, use, and share them.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/sections-panel">Sections</a></th>
+                <th scope="row"><a href="/administration/sections-panel">Sections</a></th>
                 <td>A table listing of sections and functionality to create and manage them.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/pages-panel">Pages</a></th>
+                <th scope="row"><a href="/administration/pages-panel">Pages</a></th>
                 <td>A list of HTML page templates and functionality to create and manage them. The <i><strong>default</strong></i> page displays by default.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/forms-panel">Forms</a></th>
+                <th scope="row"><a href="/administration/forms-panel">Forms</a></th>
                 <td>A list of forms by type (Textpattern forms, not web forms for submitting data) and functionality to create and manage them. The <i><strong>default</strong></i> form in the Article type is displayed by default.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/styles-panel">Styles</a></th>
+                <th scope="row"><a href="/administration/styles-panel">Styles</a></th>
                 <td>A list of CSS style files and functionality to create and manage them. The <i><strong>default</strong></i> style displays by default.</td>
             </tr>
         </tbody>
@@ -119,27 +119,27 @@ The Admin region of the administration side has seven panels out-of-the-box, of 
         </thead>
         <tbody>
             <tr>
-                <th scope="row"><a /administration/diagnostics-panel">Diagnostics</a></th>
+                <th scope="row"><a href="/administration/diagnostics-panel">Diagnostics</a></th>
                 <td>Feedback messages and data displays to troubleshoot system problems.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/preferences-panel">Preferences</a></th>
+                <th scope="row"><a href="/administration/preferences-panel">Preferences</a></th>
                 <td>All configurable settings to make your site function correctly and as desired.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/languages-panel">Languages</a></th>
+                <th scope="row"><a href="/administration/languages-panel">Languages</a></th>
                 <td>A list of language packs and the ability to update them.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/users-panel">Users</a></th>
+                <th scope="row"><a href="/administration/users-panel">Users</a></th>
                 <td>A table listing of all user accounts and the functionality to manage them.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/plugins-panel">Plugins</a></th>
+                <th scope="row"><a href="/administration/plugins-panel">Plugins</a></th>
                 <td>A table listing of installed plugins, and functionality to manage them.</td>
             </tr>
             <tr>
-                <th scope="row"><a /administration/visitor-logs-panel">Visitor logs</a></th>
+                <th scope="row"><a href="/administration/visitor-logs-panel">Visitor logs</a></th>
                 <td>A display of all site traffic.</td>
             </tr>
         </tbody>
