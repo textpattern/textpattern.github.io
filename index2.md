@@ -18,7 +18,7 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 ### Setup and Configuration
 {: .index-docs-admin}
 
-Installation, settings, security, troubleshooting, collaboration, servers...
+Installing, configuring, securing, troubleshooting, collaborating, and the like.
 
 
 * [Installing and upgrading](/setup/installing-and-upgrading)
@@ -35,7 +35,7 @@ Installation, settings, security, troubleshooting, collaboration, servers...
 ### Construction and Presentation
 {: .index-docs-start}
 
-Content types, templates, semantic building blocks, themes, site structure…
+Content types, templates, semantic building blocks, themes, site structure, and so on.
 
 <section>
 
