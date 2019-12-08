@@ -82,7 +82,7 @@ The Presentation region has five panels out-of-the-box. The Pages panel is the d
         </thead>
         <tbody>
             <tr>
-                <th scope="row"><a href=“/build/themes-creating-using-and-sharing”>Themes</a></th>
+                <th scope="row"><a href="/build/themes-creating-using-and-sharing">Themes</a></th>
                 <td>A table of existing themes and functionality to create, use, and share them.</td>
             </tr>
             <tr>
