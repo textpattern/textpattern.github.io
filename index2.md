@@ -22,10 +22,10 @@ Installation, settings, security, troubleshooting, collaboration, servers...
 
 
 * [Installing and upgrading](/setup/installing-and-upgrading)
-* [Site configuration essentials](/setup/site-configuration-essentials){: style="color:red;"} (wraps most of the preferences stuff with languages and diagnostics)
-* [Roles and rights in collaborative websites](/setup/roles-and-rights-in-collaborative-websites){: style="color:red;"} (introduces notion of collaboration, ties in user, roles, etc)
+* [Configuration essentials](/setup/configuration-essentials){: style="color:red;"} [wraps most of the preferences stuff with languages and diagnostics]
+* [Collaborative roles and rights](/setup/collaborative-roles-and-rights){: style="color:red;"} [introduces notion of collaboration, ties in users panel, roles, etc]
 * [Troubleshooting common problems](/setup/troubleshooting-common-problems)
-* [System security](/setup/system-security){: style="color:red;"} (read before you worry or hack the core)
+* [System security](/setup/system-security){: style="color:red;"}
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
