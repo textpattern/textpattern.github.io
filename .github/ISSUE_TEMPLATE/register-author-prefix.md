@@ -1,15 +1,15 @@
 ---
 name: Register author prefix
 about: Make a claim for a uniqe author prefix.
-title: 'prefix request: '
-labels: ''
-assignees: 'Bloke'
+title: 'Request for prefix: add prefix here'
+laels: ''
+assignees: ''
 
 ---
 
 ## What prefix do you want to register?
 
-add prefix here
+add prefix here or in issue title
 
 ## Provide link to your Textpattern forum account profile.
 
