@@ -25,7 +25,7 @@ Installation, settings, security, troubleshooting, collaboration, servers...
 * [Site configuration essentials](/setup/site-configuration-essentials){: style="color:red;"} (wraps most of the preferences stuff with languages and diagnostics)
 * [Roles and rights in collaborative websites](/setup/roles-and-rights-in-collaborative-websites){: style="color:red;"} (introduces notion of collaboration, ties in user, roles, etc)
 * [Troubleshooting common problems](/setup/troubleshooting-common-problems)
-* [Textpattern security](/setup/security){: style="color:red;"} (read before you worry or hack the core)
+* [System security](/setup/system-security){: style="color:red;"} (read before you worry or hack the core)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
