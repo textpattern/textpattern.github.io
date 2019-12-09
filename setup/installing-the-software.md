@@ -45,36 +45,55 @@ If you intend to use Textpattern to manage the entire website, you'll upload the
 
 You may, of course, install it in a sub-directory if you're only using Textpattern to run a blog, for example, as part of a larger site (generally people who do that end up [moving the installation](/setup/moving-textpattern) later).
 
-Using your (S)FTP client, navigate to your textpattern root directory and upload the files and directories indicated in the tree below. Pay particular attention to the `.htaccess`[^2] file if you intend to install Textpattern to an Apache web server.
+Using your (S)FTP client, navigate to your textpattern root directory and upload the mandatory files and directories indicated in the tree below. Do not move files in the tree or change their names. Doing so will render Textpattern useless.
 
+* {:.directory--open} /
+  * {:.directory} files
+  * {:.directory} images
+  * {:.directory} textpattern
+  * {:.directory} themes
+  * {:.document} index.php
+  * {:.document} css.php
 
+The following directories are optional depending on whether you use the features or not. Pay particular attention to the `.htaccess`[^1] file if you intend to install Textpattern to an Apache web server. You may omit this file if not.
 
+* {:.directory--open} /
+  * {:.document} .htaccess
+  * {:.directory} rpc
+  * {:.directory} sites
 
+All other files in the package are considered optional, and are provided for information only.
 
-File | Type | Mandatory? | Replace on upgrade? | What it's for
----|---|---|---
-`files` | directory | yes | no | Empty by default. It's where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the Files panel. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
-`images` | directory | yes | no | Empty by default. It's where images will go when you upload them in the Images panel. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
-`rpc` | directory | no | yes (if using it) | Contains the XML-RPC functionality, which is legacy code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the Preferences panel.
-`sites` | directory | no | not usually | Supports multi-site installations managed by one set of core files. It contains a template and instructions (`README.txt`) for doing so. You can safely remove this directory if you're not using this functionality.
-`textpattern` | directory | yes | yes | Essential. Contains all the core scripting and functionality. Also where users log into the back-end to administer the site.
-`textpattern/setup` | directory | yes for installations, no for upgrades | no, omit it | Essential for installing from scratch, not required for upgrades. Either way it must be removed after installation/upgrade is complete, for security reasons.
-`themes` | directory | yes | no, if it already exists | Empty by default. It's where themes will go if you choose to export them to disk from the Themes panel as a backup or for sharing them with others. Each theme has its own subdirectory inside. Note that you may see a warning about the directory's `chmod` status (permissions) at the top of the Themes panel if the web server does not have sufficient write permissions.
-`.htaccess` | file | yes, if using Apache | yes, but reapply any customization | Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should not alter or remove the default content, which Textpattern relies on. `.htaccess` can be safely removed if you run Textpattern a non-Apache web server, e.g. [Nginx](/setup/configuring-a-web-server-for-textpattern).
-`index.php` | file | yes | yes | Essential. It functions as the front end of your Textpattern site. It's where web users arrive and interact with the dynamic publishing.
-`css.php` | file | yes/no | yes (if using it) | Negotiates the front-end stylesheets you create in the Styles panel. If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
-`README.txt` | file | no | no | The file providing brief instructions for installing and upgrading Textpattern.
-`HISTORY.txt` | file | no | no | The file showing the package release Changelog.
-`LICENSE.txt` | file | no | no | The GNU GENERAL PUBLIC LICENSE agreement. It doesn't impact functionality, but leave it alone.
+[^1]: This type of file is a 'hidden' file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you undertake local development on macOS, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain (S)FTP clients, which typically hide these files until you change settings to show them.
 
+### File system notes
 
-[^1]: Do not move files in the tree or change their names. Doing so will render Textpattern useless.
+files
+: Empty by default. It's where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the Files panel. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
 
-[^2]: This type of file is a 'hidden' file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you undertake local development on macOS, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain (S)FTP clients, which typically hide these files until you change settings to show them.
+images
+: Empty by default. It's where images will go when you upload them in the Images panel. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
 
+rpc
+: Contains the XML-RPC functionality, which is legacy code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the Preferences panel.
 
+sites
+: Supports multi-site installations managed by one set of core files. It contains a template and instructions (`README.txt`) for doing so. You can safely remove this directory if you're not using this functionality.
 
+textpattern
+: Contains all the core scripting and functionality. Also where users log into the back-end to administer the site.
 
+themes
+: Empty by default. It's where themes will go if you choose to export them to disk from the Themes panel as a backup or for sharing them with others. Each theme has its own subdirectory inside. Note that you may see a warning about the directory's `chmod` status (permissions) at the top of the Themes panel if the web server does not have sufficient write permissions.
+
+.htaccess
+: Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should not alter or remove the default content, which Textpattern relies on. `.htaccess` can be safely removed if you run Textpattern a non-Apache web server, e.g. [Nginx](/setup/configuring-a-web-server-for-textpattern).
+
+index.php
+: It functions as the front end of your Textpattern site. It's where web users arrive and interact with the dynamic publishing.
+
+css.php
+: Negotiates the front-end stylesheets you create in the Styles panel. If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
 
 ## Setup via browser
 
