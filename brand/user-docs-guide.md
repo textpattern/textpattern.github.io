@@ -3,83 +3,58 @@ layout: document
 category: Brand
 published: true
 title: User documentation guidelines
-description: Guidelines for author and editor changes to Textpattern’s user documentation.
+description: Guidelines for authors and editors of Textpattern’s user documentation.
 ---
 
 # User documentation guidelines
 
-These guidelines, an extension of Textpattern’s baseline [editorial style guide](/brand/editorial-style-guide), are specifically for the upkeep of [user documentation](/). Documentation authors, editors, and other interested contributors will want to read up here, as well review the [documentation collaboration procedures](/brand/user-docs-procedures).
+These guidelines, an extension of Textpattern’s baseline [editorial style guide](/brand/editorial-style-guide), are specifically for the upkeep of [user documentation](/). Documentation authors, editors, and other interested contributors will want to read up here, as well review the [documentation collaboration procedures](https://github.com/textpattern/textpattern.github.io/issues/149).
 
 **On this page**:
 
 * Table of contents
 {:toc}
 
-## Target audiences
+## Audience
 
-User documentation is currently maintained with primary and secondary audiences in mind.
+The primary target audience of user documentation is new users of Textpattern, and notably the administrator (or ‘Publisher’) role, since that role is acquired when installing Textpattern software for the first time.
 
-### Primary audience: New users of software
+Secondary audiences are, to a lesser degree, experienced users and active [community](https://forum.textpattern.com/) participants using specific resources like the [Tags reference](/tags) or [developer documentation](/development).
 
-The primary target audience of user documentation is new users of Textpattern, and notably the administrator (or ‘Publisher’), since that role is assumed when installing Textpattern software. We also assume that administrators will write their own user instructions if setting up a Textpattern installation for third-party use, so no presumptions are made about what administrators need for their own communities.
+## Breadth of documentation
 
-### Secondary audiences: Experienced users of software
+The breadth of documentation spans the out-of-the-box functionality of Textpattern. This includes key administration features and capabilities, and using Textpattern tags.
 
-Secondary audiences are experienced users and active [community](https://forum.textpattern.com/) participants having various project interests, including plugins development and themes design.
+## Depth of documentation
 
-## Scope of documentation
+Here is where collaborating authors and editors must be aware and aligned. Depth of documentation can be thought of in terms of a layered information system. There’s a maximum number of layers, but the fewer layers a user must descend, the better it is for everyone. Thus is the goal for maintaining user documentation over time: produce only what is needed and not more.
 
-In relation to the primary and secondary audiences are specific breadths and depths of documentation. The majority of existing user documentation is for the primary audience.
+Achieving this goal means users are more capable of helping themselves (versus asking questions in the forum) and tasks done quicker (by being independent), while volunteer editors have less overhead to maintain.
 
-### Breadth of primary documentation
+The first point of contact in this layered support system is the usability of the software.
 
-The breadth of primary-audience documentation is the core (out-of-the-box) functionality of Textpattern. This includes [administration](/administration) features and capabilities, and [Textpattern tags](/tags) and [tag attributes](/tags/tag-basics) information. To a lesser degree is information about initially [installing Textpattern](/installation), including tips on web server and database configuration, and post-installation troubleshooting information in the form of [FAQs](/faqs). Also new, in reflection of new core functionality, is a handful of [shortcode](/tags/shortcodes/custom-short-tags-and-shortcodes) examples as tutorials.
+### Rely on software usability
 
-Excepting the following section, the remainder of these guidelines are written with the primary audience and documentation scope in mind.
+Textpattern developers strive to make the software usable, intuitive, memorable, and enjoyable (a classic definition of software having good usability) by listening to [user feedback](https://forum.textpattern.com/viewforum.php?id=2), considering [issues for development](https://github.com/textpattern/textpattern/issues), and avoiding needless feature creep.
 
-### Breadth of secondary documentation
+So while some documentation is needed, we only need to explain what isn’t already clear from the software’s interface design, and that includes embedded interface help.
 
-The breadth of secondary-audience documentation includes [plugin development](/development/) resources, a smattering of [back-end themes](/themes) instructions (or not), and Textpattern [brand and collaboration](/brand/) information, including these guidelines.
+### Rely on embedded help tips
 
-This information is piecemeal and may not be ideally suited for this repository. Other network platforms like [Textpattern Tips](https://textpattern.tips/), and the forthcoming Plugins and Themes websites may help serve secondary documentation types better (see [A single documentation type](#a-single-documentation-type)).
+Embedded help tips (a.k.a. pophelp) in the back-end interface panels are the second layer in the layered support system. They are a bridge between overall software usability and end-user documentation.[^pophelp] They are meant to quickly and _sufficiently_ explain a feature when the organization, design, and/or labeling of the functionality is not otherwise clear. Thus Embedded help tips are an interface usability concern for developers and a documentation concern for editors.
 
-### Depth of documentation
+Though embedded help and user docs are both written for users of the software, they have different contexts of use and must be written with those different contexts in mind. Embedded tips are not simply extracts of what is found on documentation pages. Nor should user documentation wax redundantly what embedded tips already explain.
 
-Depth of documentation can be thought of in terms of a layering system to determine what documentation is really needed. There’s a maximum number of layers, but the fewer layers a user must descend, the better it is for everyone: Users are more independent and get tasks done quicker. Volunteer editors have less overhead to maintain.
+[^pophelp]: Embedded help tips might better bridge software and user documentation by including links at ends of pophelp items for elaborated explanations in the user docs.
 
-#### Rely on software usability
+### A single documentation page
 
-Textpattern developers strive to make the software usable, intuitive, memorable, and enjoyable (a classic definition of software having good usability) by listening to [user feedback](https://forum.textpattern.com/viewforum.php?id=2), considering [issues for development](https://github.com/textpattern/textpattern/issues), and avoiding needless feature creep. So while some documentation is needed, the goal is to maintain only the minimum necessary suite of information, relying on the software’s usability to speak for itself.
+The third layer of the support system is the single documentation page that best expands on a given back-end panel concept or scenario. A given page may concern many pophelp items, and that’s okay; the need for fewer documentation pages, not more, is the goal.
 
-A high usability of Textpattern — from finding and accessing the package, through installation and configuration, through architecture development, to publishing content — is the first and most important layer of documentation, because the more usable the software is, the less additional written documentation is needed.
 
-Sparse documentation is the best kind when the reason is that more is unnecessary.
+When [docs collaboration procedures](/brand/#user-docs-procedures) are not throwing a 404, they will guide where to focus editorial attention. But for immediate purposes, it is better to draft new documentation only when there’s a clear need for the material. Let the writing needed be dictated by the community’s demand for specific information, or its struggle around a pernicious problem. Monitor the forum for repeating gripes and you’ll identify the _what_ part. Collaboration between author, editors, and doc-tree architects will take care of the _how_.
 
-#### Rely on embedded help tips
-
-Embedded help tips in the back-end interface panels are an important component between overall software usability and end-user documentation. They are meant to quickly and _sufficiently_ explain a feature when the organization, design, and/or labeling of the functionality is not otherwise clear. Embedded help tips an interface usability concern for developers and a documentation concern for editors. Embedded help must get the same attention and care the documentation website receives.
-
-But the two information sources have vastly different contexts of use. Embedded tips are immediate to the user doing tasks in the software, while user documentation is external to software and represents methodic study. The two types of help must be written with those different contexts in mind. Embedded tips are not simply extracts of what is found on documentation pages. Nor should user documentation wax redundantly what embedded tips already explain.
-
-#### A single documentation type
-
-The more kinds of documentation in a single repository, the harder it is for primary audiences to navigate and find targeted information, and the harder it is for editors to optimally organize and maintain the repository over time. Ideally the end-user documentation repository has a [primary audience breadth of scope](#scope-of-primary-audience-documentation)), and nothing more.
-
-Other types of documentation are better used and managed in context of the platforms they concern. When a third-party developer decides to develop a Textpattern plugin, the first place they will go to learn how to proceed is the bar with the neon marquee flashing [Plugins](https://github.com/textpattern/textpattern-plugins-website). Information at the source of inspiration. No mucking about in core functionality documentation, which is outside and below developer interest. Likewise for designers wanting to try their hand at a new front-end or back-end theme; they head to the [Themes](https://github.com/textpattern/textpattern-themes-website) bazaar, where a cornucopia of ‘skin’ inspiration and documentation is at their disposal in context.
-
-This information does not need written in technical documentation style, but as regular web page content, with screenshots or videos or whatever other format is appropriate for a platform.
-
-Brand and collaboration information like the document you are reading may logically stay where it is for common project reference.
-
-#### Necessary pages and nothing more
-
-The user documentation is fairly well filled-out. Maybe too much in some places and not enough in others. Important exceptions exist, of course. Textpattern tags and tag attributes, for example, need a fair bit of explanation. And new and future features like themes, image handling, and unlimited custom fields will certainly require revisions and new material.
-
-If you pour over [software usability](#rely-on-software-usability) and the [embedded help tips](#rely-on-embedded-help-tips), the two main layers in this conceptual layering system, you gain a sense of where some material is needed or needs revised. And review of pages against new software releases is important, as well regular refinement of material when opportunities arise. Else, an editor may propose removing a page if it becomes a pointless outlier. A little content recycling across high-traffic locations is enough to trim a needless page.
-
-When [docs collaboration procedures](/brand/#user-docs-procedures) are not throwing a 404, they will guide where to focus and on what. But for immediate purposes, it is better to draft documentation when there’s an obvious need for a topic or type genre (specification, tutorial, FAQ, etc.), than to produce material without knowing it’s warranted. Let the writing be dictated by the community’s demand, or its struggle around a pernicious problem, one prioritized piece at a time. Monitor the forum for repeating gripes and you’ll identify the _what_ part. Collaboration between author, editors, and doc-tree architects will take care of the _how_.
-
-#### Scope and depth of a page
+### Scope and depth of a page
 
 The scope and depth of a page’s subject matter can be what is needed and not necessarily more, even if more could be said for the sake of thoroughness, or repetition in context.
 
@@ -92,9 +67,9 @@ An example referral statement to see the software itself:
 See intuitive feature in software.
 {:.example}
 
-It’s safe to assume that anyone reading that particular line will have installed the software, and thus can refer to it. And if not, the documentation wouldn’t matter to them anyway.
+It is safe to assume that anyone reading that particular line will have installed the software, and thus can refer to it. And if not, the documentation wouldn’t matter to them anyway.
 
-Here’s another example of a referral statement. Use this one if a given feature is only clear from the additional information conveyed via a help tip:
+Following is another example of a referral statement. Use this one if a given feature is only clear from the additional information conveyed via a help tip:
 
 See help tip for this feature.
 {:.example}
