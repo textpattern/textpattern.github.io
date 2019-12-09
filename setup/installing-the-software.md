@@ -8,7 +8,7 @@ description: From download to log in: a complete guide to installing Textpattern
 
 # Installing Textpattern
 
-These instructions follow a process of using an (S)FTP application, which you presumably have (for example [[Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, [WinSCP](https://winscp.net/eng/index.php/) for Windows, or FileZilla](https://filezilla-project.org/) for all platforms).
+These instructions follow a process of using an (S)FTP application, which you presumably have (for example [Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, [WinSCP](https://winscp.net/eng/index.php/) for Windows, or [FileZilla](https://filezilla-project.org/) for all platforms).
 
 If you're familiar with installing CMS software and prefer a quick guide, see the [README.txt](https://github.com/textpattern/textpattern/blob/dev/README.md#install-textpattern) file that's included in the download package.
 
