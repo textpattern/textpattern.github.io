@@ -8,7 +8,7 @@ search_omit: true
 
 # Textpattern user documentation
 
-Documentation for Textpattern’s out-of-the-box functionality. [Editorial contributions](https://github.com/textpattern/textpattern.github.io/blob/master/README.md) are welcome.
+Documentation for Textpattern’s out-of-the-box functionality. [Editorial contributions](https://github.com/textpattern/textpattern.github.io/blob/master/README.md) appreciated.
 
 {::options parse_block_html="true" /}
 
@@ -18,13 +18,13 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 ### Installation handling
 {: .index-docs-start}
 
-* [Installing Textpattern](/installation/) (detailed instructions)
-* [Upgrading Textpattern](/installation/upgrading-textpattern)
+* [Installing the software](/setup/installing-the-software)
+* [Upgrading the installation](/setup/upgrading-the-installation)
 * [Configuring a web server for Textpattern](/setup/configuring-a-web-server-for-textpattern)
-* [Moving a Textpattern installation](/installation/moving-textpattern)
+* [Moving an installation](/setup/moving-an-installation)
 * [Post install and upgrade routines](/installation/post-install-and-upgrade-routines)
-* [Multi-site Textpattern installations](/installation/multi-site-textpattern)
-* [Troubleshooting a Textpattern installation or upgrade](/installation/troubleshooting-textpattern)
+* [Multi-site installations](/setup/multi-site-installations)
+* [Troubleshooting common problems](/setup/troubleshooting-common-problems)
 {: .list--no-bullets}
 
 </section>

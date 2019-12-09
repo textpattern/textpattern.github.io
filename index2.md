@@ -2,13 +2,13 @@
 layout: default
 published: true
 title: Textpattern CMS user documentation
-description: Everything you need to use Textpattern out-of-the-box and make website management easy.
+description: Everything you need to install, configure, and use Textpattern out-of-the-box; build flexible and powerful websites; and make website management easy.
 search_omit: true
 ---
 
 # Textpattern user documentation
 
-Everything you need to use Textpattern out-of-the-box and make website management easy. [Editorial contributions](https://github.com/textpattern/textpattern.github.io/blob/master/README.md) are welcome.
+Everything you need to use Textpattern out-of-the-box and make website management easy. [Editorial contributions](https://github.com/textpattern/textpattern.github.io/blob/master/README.md) appreciated.
 
 {::options parse_block_html="true" /}
 
@@ -20,15 +20,29 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 
 Installing, configuring, securing, troubleshooting, collaborating, and the like.
 
+<section>
+
+#### Basics
 
 * [Installing the software](/setup/installing-the-software)
 * [Upgrading the installation](/setup/upgrading-the-installation)
-* [Configuration essentials](/setup/configuration-essentials){: style="color:red;"} [wraps most of the preferences stuff with languages and diagnostics]
-* [Collaborative roles and rights](/setup/collaborative-roles-and-rights){: style="color:red;"} [introduces notion of collaboration, ties in users panel, roles, etc]
+* [Essential settings](/setup/essential-settings){: style="color:red;"} [wraps most of the preferences stuff with languages and diagnostics]
 * [Troubleshooting common problems](/setup/troubleshooting-common-problems)
+{:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
+
+</section>
+<section>
+
+#### More
+
+* [Collaborative roles and rights](/setup/collaborative-roles-and-rights){: style="color:red;"} [introduces notion of collaboration, ties in users panel, roles, etc]
+* [Moving an installation](/setup/moving-an-installation)
+* [Multi-site installations](/setup/multi-site-installations)
+* [Web server configuration](/setup/configuring-a-web-server-for-textpattern)
 * [System security](/setup/system-security)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
+</section>
 </section>
 
 <section class="layout-3col">
