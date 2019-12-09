@@ -12,7 +12,7 @@ Upgrading is an essential part of maintaining good site security, and new Textpa
 
 You will find abbreviated upgrade instructions in the `README.txt` file of every Textpattern release package. The instructions here are more detailed. In brief, you'll backup your current installation, overwrite your existing installation with new package files (with a few key exceptions), and address any problems indicated in the Diagnostics panel.
 
-These instructions follow a process of using an (S)FTP application, which you presumably have (for example [[Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, [WinSCP](https://winscp.net/eng/index.php/) for Windows, or FileZilla](https://filezilla-project.org/) for all platforms).
+These instructions follow a process of using an (S)FTP application, which you presumably have (for example [Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, [WinSCP](https://winscp.net/eng/index.php/) for Windows, or [FileZilla](https://filezilla-project.org/) for all platforms).
 
 Before you begin, ensure your web server meets the [Textpattern system requirements](https://textpattern.com/about/119/system-requirements) for the version you are installing.
 
