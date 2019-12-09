@@ -22,9 +22,7 @@ Installing, configuring, securing, troubleshooting, collaborating, and the like.
 
 
 * [Installing the software](/setup/installing-the-software)
-  * [Quick guide for installing](https://github.com/textpattern/textpattern/blob/dev/README.md#install-textpattern)
 * [Upgrading the installation](/setup/upgrading-the-installation)
-  * [Quick guide for upgrading](https://github.com/textpattern/textpattern/blob/dev/README.md#upgrade-textpattern)
 * [Configuration essentials](/setup/configuration-essentials){: style="color:red;"} [wraps most of the preferences stuff with languages and diagnostics]
 * [Collaborative roles and rights](/setup/collaborative-roles-and-rights){: style="color:red;"} [introduces notion of collaboration, ties in users panel, roles, etc]
 * [Troubleshooting common problems](/setup/troubleshooting-common-problems)
