@@ -2,11 +2,11 @@
 layout: document
 category: Setup and configuration
 published: true
-title: Installation and upgrading
-description: From download to log in: a complete guide to installing or updating Textpattern.
+title: Installing the software
+description: From download to log in: a complete guide to installing Textpattern.
 ---
 
-# Installation and upgrading
+# Installing Textpattern
 
 Whether you are new or experienced with Textpattern, this is the go-to place for installing or upgrading your Textpattern installation.
 
@@ -33,7 +33,6 @@ Congratulations! You have upgraded Textpattern. We hope you enjoy it. If you req
 
 If you are comfortable with (S)FTP, file and database administration on server environments, this is for you. In the root directory of every Textpattern archive is a `README.txt` file with upgrading instructions and any special notes relevant to that release.
 
-1. Ensure your web server meets the [Textpattern system requirements](https://textpattern.com/about/119/system-requirements) for the version you are downloading.
 2. [Download](https://textpattern.com/download) the latest `.zip` or `.tar.gz` archive.
 3. Unpack [the file tree contents](https://github.com/textpattern/textpattern) from the downloaded package into a new directory on your local drive.
 4. Log out of the Textpattern back-end and clear the browser cache for your existing Textpattern site. If you use a service such as [Cloudflare](https://www.cloudflare.com) to cache your domain assets, remember to clear any caching services there too.
@@ -67,6 +66,8 @@ Congratulations! You have upgraded Textpattern. We hope you enjoy it. If you req
 These instructions follow a process of using an (S)FTP application, which you presumably have (for example [[Transmit](https://www.panic.com/transmit/) is a popular choice for Mac, [WinSCP](https://winscp.net/eng/index.php/) for Windows, or FileZilla](https://filezilla-project.org/) for all platforms).
 
 If you're familiar with installing CMS software and prefer the quick guide, see the [README.txt](https://github.com/textpattern/textpattern/blob/master/README.txt) file that's included in the install package. Or try the [Quick installation guide](#quick-guide-installing-textpattern-for-the-first-time).
+
+Before you begin, ensure your web server meets the [Textpattern system requirements](https://textpattern.com/about/119/system-requirements) for the version you are installing.
 
 ### Create a database
 
