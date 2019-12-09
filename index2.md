@@ -26,8 +26,9 @@ Installing, configuring, securing, troubleshooting, collaborating, and the like.
 
 * [Installing the software](/setup/installing-the-software)
 * [Upgrading the installation](/setup/upgrading-the-installation)
-* [Essential settings](/setup/essential-settings){: style="color:red;"} [wraps most of the preferences stuff with languages and diagnostics]
-* [Troubleshooting common problems](/setup/troubleshooting-common-problems)
+* [Moving an installation](/setup/moving-an-installation)
+* [Multi-site installations](/setup/multi-site-installations)
+* [Collaborative roles and rights](/setup/collaborative-roles-and-rights){: style="color:red;"} [ties together users panel, roles…]
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
@@ -35,10 +36,8 @@ Installing, configuring, securing, troubleshooting, collaborating, and the like.
 
 #### More
 
-* [Collaborative roles and rights](/setup/collaborative-roles-and-rights){: style="color:red;"} [introduces notion of collaboration, ties in users panel, roles, etc]
-* [Moving an installation](/setup/moving-an-installation)
-* [Multi-site installations](/setup/multi-site-installations)
 * [Web server configuration](/setup/configuring-a-web-server-for-textpattern)
+* [Troubleshooting common problems](/setup/troubleshooting-common-problems)
 * [System security](/setup/system-security)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
