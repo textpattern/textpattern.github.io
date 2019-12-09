@@ -58,6 +58,7 @@ Using your (S)FTP client, navigate to your textpattern root directory and upload
   * {:.directory} themes
   * {:.document} index.php
   * {:.document} css.php
+{:.list--files}
 
 Note that you can omit the 'textpattern/setup' directory entirely when uploading. If you upload it, please remember to delete it if your Diagnostics panel indicates it is still present after logging back in.
 
@@ -67,6 +68,7 @@ The following directories must be uploaded _if they do not already exist on your
   * {:.directory} files
   * {:.directory} images
   * {:.directory} themes
+{:.list--files}
 
 The following files and directories are optional depending on whether you use the features or not. Pay particular attention to the `.htaccess`[^1] file if you intend to install Textpattern to an Apache web server. You may omit this file if not.
 
@@ -74,6 +76,7 @@ The following files and directories are optional depending on whether you use th
   * {:.document} .htaccess
   * {:.directory} rpc
   * {:.directory} sites
+{:.list--files}
 
 All other files in the package are considered optional, and are provided for information only.
 
