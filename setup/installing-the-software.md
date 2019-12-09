@@ -52,8 +52,8 @@ Using your (S)FTP client, navigate to your textpattern root directory and upload
   * {:.directory} images
   * {:.directory} textpattern
   * {:.directory} themes
-  * {:.document} index.php
   * {:.document} css.php
+  * {:.document} index.php
 {:.list--files}
 
 The following directories are optional depending on whether you use the features or not. Pay particular attention to the `.htaccess`[^1] file if you intend to install Textpattern to an Apache web server. You may omit this file if not.
@@ -91,11 +91,11 @@ themes
 .htaccess
 : Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should not alter or remove the default content, which Textpattern relies on. `.htaccess` can be safely removed if you run Textpattern a non-Apache web server, e.g. [Nginx](/setup/configuring-a-web-server-for-textpattern).
 
-index.php
-: It functions as the front end of your Textpattern site. It's where web users arrive and interact with the dynamic publishing.
-
 css.php
 : Negotiates the front-end stylesheets you create in the Styles panel. If you plan on hosting your CSS as flat files then this can be removed - if you store CSS in the database then this file is required.
+
+index.php
+: Functions as the front end of your Textpattern site. It's where web users arrive and interact with the dynamic publishing.
 
 ## Setup via browser
 
