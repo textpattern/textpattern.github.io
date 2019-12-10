@@ -7,14 +7,25 @@ assignees: ''
 
 ---
 
-### Proposed page topic
+Existing page...
+{add full url here if a page should be revised for proposal, otherwise remove}
+
+Proposed title and location of new page...
+{add full url here}
+
+## Situation/Scenario for proposal
 
 {Propose here}
 
-### Reason page is needed
+## Value
 
-{Explain here}
+{Justify here}
 
-### Perceived doc-tree location and cross-links
+## Resources to consider for draft
+Add information text and link
 
-{Suggest here}
+- [ ] link
+- [ ] link
+- [ ] link
+- [ ] link
+etc
