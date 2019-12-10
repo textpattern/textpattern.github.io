@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Setup and configuration
+category: Setup and Configuration
 published: true
 title: Upgrading the installation
 description: A complete guide to updating a previously installed version of Textpattern.

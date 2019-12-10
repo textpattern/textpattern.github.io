@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Setup and configuration
+category: Setup and Configuration
 published: true
 title: Troubleshooting common problems
 description: Have you found an issue during a Textpattern install/upgrade?

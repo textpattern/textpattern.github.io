@@ -1,14 +1,14 @@
 ---
 layout: document
-category: Installation
+category: Setup and Configuration
 published: true
 title: Multi-site installation guide
 description: Installing Textpattern CMS as a multi-site installation.
 ---
 
-A multi-site installation allows you to use a single Textpattern CMS installation to run multiple websites. Each site has its own website design and separate admin login, but you have only one copy of Textpattern to maintain and update.
-
 # Multi-site installation guide
+
+A multi-site installation allows you to use a single Textpattern CMS installation to run multiple websites. Each site has its own website design and separate admin login, but you have only one copy of Textpattern to maintain and update.
 
 On this page:
 

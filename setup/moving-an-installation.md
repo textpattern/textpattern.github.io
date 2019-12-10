@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Installation
+category: Setup and Configuration
 published: true
 title: Moving a Textpattern installation
 description: How to move a Textpattern installation between two server locations.

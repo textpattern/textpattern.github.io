@@ -1,12 +1,12 @@
 ---
 layout: landing
-category: setup
+category: Setup and Configuration
 published: true
-title: Installing and Configuring index
-description: All of the articles in the Installing and Configuring category.
+title: Setup and Configuration index
+description: All of the articles in the Setup and Configuration category.
 ---
 
-# Installing and Configuring index
+# Setup and Configuration index
 
 {::options parse_block_html="true" /}
 

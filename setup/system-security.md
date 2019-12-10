@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Administration
+category: Setup and Configuration
 published: true
 title: System security
 description: Textpattern security has a very good track record and developers aim to keep it that way.
