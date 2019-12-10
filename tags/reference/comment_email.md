@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Comment email
 description: The comment_email tag is used to display the commenter's email address, if entered at the time of posting.

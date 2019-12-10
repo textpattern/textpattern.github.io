@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Meta description
 description: The meta_description tag is a single tag used in a variety of ways to display meta description content.

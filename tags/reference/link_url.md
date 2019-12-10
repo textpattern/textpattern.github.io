@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Link url
 description: The link_url tag is a single tag which returns the URL of the link as text.

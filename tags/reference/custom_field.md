@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Custom field
 description: The custom_field tag is used to display the contents of a custom field.

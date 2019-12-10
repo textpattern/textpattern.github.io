@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Author email
 description: The author_email tag is used to return the email address of the author of the currently displayed article.

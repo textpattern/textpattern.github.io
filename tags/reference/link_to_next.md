@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Link to next
 description: The link_to_next tag can be used as a single tag or a container tag to return the permanent URL of the next article by posting date.

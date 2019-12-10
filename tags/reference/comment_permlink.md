@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Comment permlink
 description: The comment_permlink tag is used to return the permanent link of the article comment being displayed.

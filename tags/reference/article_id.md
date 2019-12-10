@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Article id
 description: The article_id tag returns the numeric ID of the article being displayed.

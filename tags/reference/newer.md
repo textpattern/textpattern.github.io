@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Newer
 description: Textpattern will replace this tag with a link to the next list of articles in the sort order.

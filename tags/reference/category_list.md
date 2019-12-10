@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Category list
 description: The category_list tag is a single/container tag which is used to produce a list of linked categories.

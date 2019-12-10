@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Search input
 description: This tag will provide a text entry field for search parameters and an optional button to initiate the search.

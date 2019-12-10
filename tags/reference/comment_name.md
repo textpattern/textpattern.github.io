@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Comment name
 description: The comment_name tag is used to display a link using the commenter's name as text.

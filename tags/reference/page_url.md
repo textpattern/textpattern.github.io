@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Page url
 description: The page_url tag is a single tag that is used to return a particular component of the URL from the current page being displayed.

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Popup comments
 description: This tag opens a new page using the popup_comments form template as a container if you set 'Comments mode' to 'popup window' in Preferences.

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: If article list
 description: The if_article_list tag will execute the contained statement if an article list is being displayed.

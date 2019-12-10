@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Link description
 description: The link_description tag is used to return the text from the 'Description' field as defined within the Links panel.

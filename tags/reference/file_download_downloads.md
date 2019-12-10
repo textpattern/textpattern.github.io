@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: File download downloads
 description: The file_download_downloads tag will replace with the number of times the current file has been downloaded.

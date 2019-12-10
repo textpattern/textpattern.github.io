@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Yield
 description: The yield tag is a single/container tag which is used to return the inner content of the enclosing output_form tag.

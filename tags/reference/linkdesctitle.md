@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Linkdesctitle
 description: The linkdesctitle tag is a single tag which is used to return an HTML hyperlink, defined within the Links panel.

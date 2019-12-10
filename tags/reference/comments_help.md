@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Comments help
 description: The comments_help tag is used to display a markup language (textfilter) help link.

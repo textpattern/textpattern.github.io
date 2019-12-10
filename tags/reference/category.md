@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Category
 description: The category tag will display information of the category as defined by the name attribute, or the one currently being viewed.

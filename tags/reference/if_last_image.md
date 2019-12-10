@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: If last image
 description: The if_last_image tag will execute the contained statements if the displayed image is the last in the currently displayed images list.

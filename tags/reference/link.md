@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Link
 description: The link tag is a single tag which is used to return an HTML hyperlink defined in the Links panel.

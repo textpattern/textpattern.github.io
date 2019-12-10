@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Linklist
 description: The linklist tag is used to produce a list of links from the predefined list created on the Links panel.

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: If thumbnail
 description: The if_thumbnail tag will execute the contained statements if the current image has a thumbnail assigned to it.

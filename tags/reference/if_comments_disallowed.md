@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: If comments disallowed
 description: The if_comments_disallowed tag will execute the contained statements if comments are disallowed for a given article.

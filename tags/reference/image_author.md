@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Image author
 description: Tag that Textpattern will replace with the author's name associated with the current image in an images list.

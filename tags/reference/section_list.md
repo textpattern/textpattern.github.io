@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Section list
 description: The section_list tag is a single or container tag which is used to produce a list of linked sections.

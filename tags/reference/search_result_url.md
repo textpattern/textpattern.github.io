@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Search result url
 description: The search_result_url tag will provide a hyperlinked URL to an article as returned by the search function.

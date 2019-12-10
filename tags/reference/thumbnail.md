@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Thumbnail
 description: Tag that Textpattern will replace with an 'img' HTML tag matching an image thumbnail set via the Images panel.

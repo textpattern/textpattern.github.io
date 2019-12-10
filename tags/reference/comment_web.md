@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Comment web
 description: The comment_web tag cis used to display (a link to) the commenter's web address.

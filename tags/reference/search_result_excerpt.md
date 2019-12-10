@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Search result excerpt
 description: The search_result_excerpt tag will show the occurrence of the search term with some surrounding context.

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Article url title
 description: The article_url_title tag returns the dumbed-down 'URL title' of the article being displayed.

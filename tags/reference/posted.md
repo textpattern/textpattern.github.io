@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Posted
 description: The posted tag is a single tag which is used to return the publish date of the article being displayed.

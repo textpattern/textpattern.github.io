@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Comments invite
 description: The comments_invite tag is used to display a link to an article comment form.

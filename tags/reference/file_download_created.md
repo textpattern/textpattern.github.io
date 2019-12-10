@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: File download created
 description: The file_download_created tag will replace with the upload date of the file to download.

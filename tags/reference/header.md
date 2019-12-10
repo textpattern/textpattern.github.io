@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Header
 description: The header tag is a single tag that is used to set HTTP headers.

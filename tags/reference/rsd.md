@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Rsd (Deprecated)
 description: The rsd tag is deprecated - do not use.

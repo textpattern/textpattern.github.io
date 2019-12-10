@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Images
 description: Tag that Textpattern will use to gather a list of matching images uploaded via the Images panel.

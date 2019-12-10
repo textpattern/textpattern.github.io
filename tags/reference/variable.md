@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Variable
 description: The variable tag is both a single and a container tag which sets or returns a user-defined global variable.

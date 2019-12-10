@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Image date
 description: Tag that Textpattern will replace with the uploaded date of the current (or given) image.

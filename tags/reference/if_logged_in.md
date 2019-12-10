@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: If logged in
 description: The if_logged_in tag will execute the contained statements if the current or given user is logged in and optionally a member of the given role.

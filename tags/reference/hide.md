@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Hide
 description: The hide tag is used to suppress the interpretation of all enclosed contents.

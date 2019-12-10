@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: If last section
 description: The if_last_section tag will execute the contained statements if the current section is the last in the list.

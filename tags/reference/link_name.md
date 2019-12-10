@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Link name
 description: The link_name tag is a single tag which returns the name of the link as assigned on the links pane as text.

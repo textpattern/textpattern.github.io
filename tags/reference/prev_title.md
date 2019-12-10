@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Prev title
 description: The prev_title tag is a single tag which Textpattern will replace with the title of the previous article in the sort order.

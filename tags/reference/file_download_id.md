@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: File download id
 description: The file_download_id tag will replace with the internal ID number of the file to be downloaded.

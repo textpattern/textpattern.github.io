@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: If first file
 description: The if_first_file tag will execute the contained statements if the displayed file is the first in the currently displayed file download list.

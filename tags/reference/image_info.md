@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Image info
 description: Tag that Textpattern will replace with the relevant image data from the current image.

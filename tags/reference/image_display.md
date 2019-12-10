@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Image display (Deprecated)
 description: The 'image_display' tag is deprecated - use 'image' tag instead.

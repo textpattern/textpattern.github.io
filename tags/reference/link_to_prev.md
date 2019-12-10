@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Link to prev
 description: The link_to_prev tag can be used as a single tag or a container tag to return the permanent URL of the previous article by posting date.

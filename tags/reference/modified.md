@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Modified
 description: The modified tag is a single tag which is used to return the modification date of the article being displayed.

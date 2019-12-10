@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: File download description
 description: The file_download_description tag will replace with the description of the file to download, as defined when the file was uploaded.

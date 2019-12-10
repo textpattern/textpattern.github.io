@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Output form
 description: Textpattern will replace this tag with the content resulting from the form template called by the tag.

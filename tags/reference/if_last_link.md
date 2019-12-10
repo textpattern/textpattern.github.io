@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: If last link
 description: The if_last_link tag will execute the contained statements if the displayed link is the last in the currently displayed link list.

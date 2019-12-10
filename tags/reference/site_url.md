@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Site url
 description: The site_url tag is a single tag which returns the full URL of the site.

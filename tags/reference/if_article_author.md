@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: If article author
 description: The if_article_author tag will execute the contained statement if the author name associated with a particular article matches.

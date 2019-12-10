@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: If article category
 description: The if_article_category tag will execute the contained statement if the category name associated with a particular article matches.

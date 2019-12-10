@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Link date
 description: The link_date tag is a single tag which returns the date the link was created as text.

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Css
 description: The basic css tag is used to output the URL of the stylesheet assigned in the Textpattern Sections panel.

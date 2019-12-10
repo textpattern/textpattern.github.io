@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Lang
 description: Textpattern will replace this tag with the 2-letter code of the language which is set as the site's language preference.

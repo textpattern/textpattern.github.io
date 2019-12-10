@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: If expires
 description: The if_expires tag will execute the contained statements, if a particular article has an expiry date set.

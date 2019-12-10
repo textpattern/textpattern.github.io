@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: File download size
 description: The file_download_size tag will replace with the formatted file size of the file to be downloaded.

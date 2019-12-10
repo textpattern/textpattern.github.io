@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Comments
 description: The comments tag is used to display the comments associated with a particular article.

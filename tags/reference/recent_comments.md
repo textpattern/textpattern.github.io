@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Recent comments
 description: Textpattern will replace this tag with a list of permanent links to recent comments.

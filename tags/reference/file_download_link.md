@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: File download link
 description: The file_download_link tag will replace the tag with a download link to the file being downloaded, or assign the link to the given text or tag.

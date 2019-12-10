@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Site name
 description: The site_name tag is a single tag that returns the site's name as defined within the Preferences panel.

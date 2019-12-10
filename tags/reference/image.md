@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Image
 description: Tag that Textpattern will replace with an 'img' HTML tag matching an image uploaded via the Images panel.

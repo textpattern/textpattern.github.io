@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Password protect
 description: When Textpattern encounters the password_protect tag it causes the user to be prompted for a username and password.

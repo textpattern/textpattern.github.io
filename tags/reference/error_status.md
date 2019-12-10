@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Error status
 description: The error_status tag shows the error status as set by the server.

@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Image list (Deprecated)
 description: The 'image_list' tag is deprecated - use 'images' tag instead.

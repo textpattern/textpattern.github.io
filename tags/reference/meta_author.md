@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Meta author
 description: The meta_author tag is a single tag, used in the head of an individual article page template.

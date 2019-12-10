@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Page title
 description: The page_title tag is a single tag that displays title text depending on the context it is used.

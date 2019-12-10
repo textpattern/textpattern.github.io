@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Txp die
 description: The txp_die tag will terminate normal page rendition and return the given status to the user agent.

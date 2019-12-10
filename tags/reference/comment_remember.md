@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Comment remember
 description: The comment_remember tag is used to display a check box input field.

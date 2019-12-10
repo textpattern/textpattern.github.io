@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Image index (Deprecated)
 description: The 'image_index' tag is deprecated - use 'images' tag instead.

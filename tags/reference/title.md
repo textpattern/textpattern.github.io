@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Title
 description: The title tag is a single tag which is used to return the title of the article being displayed.

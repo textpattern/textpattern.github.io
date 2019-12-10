@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Excerpt
 description: The excerpt tag is used to return the excerpt text, if any, associated with the article being displayed.

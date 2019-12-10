@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Tags
+category: Tags reference
 published: true
 title: Comment web input
 description: The comment_web_input tag is used to display a text entry field to accept the commenter's domain name.
