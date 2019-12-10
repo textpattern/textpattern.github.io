@@ -28,7 +28,7 @@ Installing, configuring, securing, troubleshooting, collaborating, and the like.
 * [Upgrading the installation](/setup/upgrading-the-installation)
 * [Moving an installation](/setup/moving-an-installation)
 * [Multi-site installations](/setup/multi-site-installations)
-* [Collaborative publishing](/setup/collaborative-publishing){: style="color:red;"} [ties together users panel, roles…]
+* [Collaborative publishing](/setup/collaborative-publishing){: style="color:red;"} (see [issue 150](https://github.com/textpattern/textpattern.github.io/issues/150))
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
@@ -55,8 +55,8 @@ Content types, templates, semantic building blocks, themes, site structure, and 
 
 #### Basics
 
-* [Content types: Existing and custom](/build/content-types-existing-and-custom){: style="color:red;"} [wraps up all the content panels and custom fields together, touches on forms]
-* [Site structures and building blocks](/build/site-structures-and-building-blocks){: style="color:red;"} [wraps together sections, pages, forms, styles]
+* [Content types: core and custom](/build/content-types){: style="color:red;"} (see [issue 151](https://github.com/textpattern/textpattern.github.io/issues/151))
+* [Building site structures](/build/site-structures){: style="color:red;"} (see [issue 152](https://github.com/textpattern/textpattern.github.io/issues/152))
 * [Themes: Creating, using, and sharing](/build/themes-creating-using-and-sharing)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
