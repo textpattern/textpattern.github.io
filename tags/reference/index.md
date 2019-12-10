@@ -1,6 +1,6 @@
 ---
 layout: landing
-category: Reference
+category: Tags Reference
 published: true
 title: Tag reference index
 description: A complete list of all the Textpattern tags available to use.
