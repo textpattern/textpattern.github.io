@@ -6,63 +6,111 @@ title: Moving a Textpattern installation
 description: How to move a Textpattern installation between two server locations.
 ---
 
-# Moving a Textpattern installation
+# Moving an installation
 
-Moving Textpattern means relocating the installation between two directories; either on the same server or between two servers. The process is the same either way except with database handling. This page walks through it.
+Moving Textpattern means relocating the installation between two directories; either on the same server (local or hosted) or between two servers, such as when changing web hosts. Each scenario is described here.
 
 **On this page**:
 
 * Table of contents
 {:toc}
 
-## Moving from subdirectory to root
+## Moving installation to a different directory
 
-New users often install Textpattern in a subdirectory (i.e. <i>domain.tld/subdirectory</i>) as a blog, then later decide to move it to root (<i>domain.tld</i>) when they realize the software can run the entire website. If you find yourself in this scenario, here is how to move it.
+A common scenario here is when a new user of Textpattern initially installs the software as a blog in a subdirectory (i.e. <i>domain.tld/subdirectory</i>) at side of the person’s existing website, then later decides to move it to root (<i>domain.tld</i>) when they realize Textpattern can run the entire thing.
 
-### Change preferences paths
+Moving to a new directory is easy; it involves correcting important paths in relation to the new location then physically moving the installation files. Proceed in the following order.
 
-First, log into the back end of your website, navigate to the Preferences panel, and change your **Site URL** entry to reflect the new root install location. This should simply be a matter of removing the subdirectory from the path. You will also need to update the file upload path. Again, it should simply be a matter of removing the subdirectory.
+### 1. Change paths in Preferences
 
-### Correct paths in configuration file
+Log into the back end of your website, navigate to the Preferences panel under the Admin section, and change the following two path references to reflect the new location.
 
-Next, (S)FTP to your web server, navigate to <i>/textpattern/config.php</i>, open the file, and change your database path so it reflects a link to the database respective of the domain root instead of the former subdirectory. Again, this should simply be a matter of remove the subdirectory from the path.
+#### Site URL
 
-### Move the installation files
+On the default Site view of Preferences, change **Site URL** entry to reflect the new root install directory. This should simply be a matter of removing the subdirectory from the path. 
 
-Transfer your entire Textpattern installation to the domain root level (this is not the time to be suddenly changing your site's structure; leave the folder and file structure exactly as it is). Don't forget the <i>.htaccess</i> file!
+Change from this:
 
-If you have any 'internal' hard-coded links (e.g. image path links) in any of your page templates that are set as absolute paths, you will need to go to any such pages and change those links. You should use Textpattern tags for such links, though, so you never have to worry about it again.
+domain.tld/subdirectory
+{:.example}
 
-If all goes well, you should then be able to access your Textpattern home page, or the site admin page, via the new domain root location with everything in working order.
+To this:
 
-This process is also valid for moving installations in the other direction (from root to a subdirectory), or when working on a local installation via XAMPP, MAMP, etc.
+domain.tld
+{:.example}
+
+Save changes.
+
+#### File and Temporary directory paths
+
+Switch to the Admin view of Preferences and change the two paths for **File directory path** and **Temporary directory path**. Again, this is simply a matter of removing the subdirectory from the paths already existing. Don’t change anything else about the paths.
+
+For example, this hypothetical file directory path:
+
+/path/to/your/domain.tld/subdirectory/live/files
+{:.example}
+
+Becomes this:
+
+/path/to/your/domain.tld/live/files
+{:.example}
+
+Do the same for the temporary directory path, then save the changes and log out of Textpattern.
+
+### 2. Change database reference path in configuration file
+
+This path is the most important one to change, though it doesn’t matter if you do it before the move or after. If this one is not right you won’t be able to log in. But again, it’s easy.
+
+Use an (S)FTP client to access your web server. Navigate to <i>/textpattern/config.php</i> and open the file. Look for the following line:
+
+```
+$txpcfg ['txpath'] = /path/to/your/root/subdirectory/textpattern
+```
+
+Change the path to reflect the new root installation location so the database can find the <i>textpattern</i> directory. Again, this should simply be a matter of removing the subdirectory from the path.
+
+```
+$txpcfg ['txpath'] = /path/to/your/root/textpattern
+```
+
+Save changes to file and close.
+
+### 3. Move the installation files
+
+Now transfer the entire Textpattern installation to the domain root. Don't forget the <i>.htaccess</i> file — a hidden file in your installation directory — which is also critical for making your site work. 
+
+You should now be able to log in to your site as before, but at the new root location.
+
+This process is also valid for moving installations in the other direction, from root to a subdirectory, or when moving either way on a local installation.
 
 ## Moving between two servers
 
-Sometimes it is necessary (whether for better service, a cheaper deal, etc.) to move your website from one web hosting service to another. This is a relatively easy matter that mainly just involves backing up your current Textpattern installation and database, reinstalling them on the new server location, and adjusting the files to make sure everything is all working properly.
+Inevitably you will change web hosts; it is a fact of owning a website. Moving your installation to a new host is just like changing directories described above, but involves the additional steps of migrating your database, which is critical.  
 
-Do not make any version upgrades or downgrades of Textpattern or your MySQL during this move. It’s better to move the installation first then do whatever upgrades you need to do once everything is working properly.
+In short, you will backup your installation files and database export file from your old host to your local machine; then transfer everything back up again to your new web host’s servers, reinstalling, correcting paths in the configuration file, etc.
 
-### Step 1: Back up your existing Textpattern resources
+### System requirements
 
-This means exporting a dump file of your existing database, and moving a copy of your Textpattern installation from your hosted web server to your local machine.
+The instructions that follow assume your installation of Textpattern is up-to-date, including the recommended minimum requirements for MySQL and PHP. If not, and especially if more than two versions outdated, it may be better to upgrade these software packages on the current host and ensure everything works properly before migrating to a new host. (Unless they are truly terrible hosts and you really need to leave them ASAP, then do it.)
 
-#### Exporting the existing database tables
+See Textpattern’s current recommended [system requirements](https://textpattern.com/about/119/system-requirements). If your web host is not running the minimum versions of MySQL and PHP, contact the host and ask them to upgrade these resources. After they do, upgrade Textpattern to the current stable release. If your site ‘breaks’ after upgrading, it likely means you have to adjust some things in relation to the new PHP and/or MySQL versions. In that case, see [Troubleshooting common problems](/setup/troubleshooting-common-problems).
+
+If your current installation of Textpattern is up-to-date, proceed with the following migration process.
+
+### 1. Export the database
 
 1. Log into phpMyAdmin.
 2. Select **'Export'** in the option menu.
 3. At this point you will have a lot of choices for the export schema. One note, if you need a smaller file size you can exclude your logs files. You can choose to export a plain <i>.sql</i> file (.txt) or a variety of zipped files. There may be more specific export needs for you host - if these settings do not work you may need to contact you host for specific needs for your server.
 
-#### Move Textpattern folder/file tree to local machine
+### 2. Create copy of installation files on local machine
 
 Use FTP or SFTP (whichever is appropriate) to move the Textpattern tree from the root folder of your site to your local machine. You will use this copy to upload the tree later to the new web server location.
 
 As a matter of practicality, it is highly recommended to set up your new account and fully testing your migration before closing down the old hosting account (for that matter, you might not tell your old host you are leaving until you have everything working at the new location). If something goes wrong somewhere along the way you have a working copy to refer back to, to make any adjustments or re-export if necessary.
 {: .alert-block .warning}
 
-### Step 2: Installing your resources on the new web host servers
-
-#### Setting up database
+### 3. Set up new database
 
 1. At your new host, use phpMyAdmin (or a similar tool) to create a 'database name' and 'database user' (your new database name can be different from the name previously used by Textpattern).
 2. Select the database you just created, if it's not already selected by default.
@@ -70,7 +118,7 @@ As a matter of practicality, it is highly recommended to set up your new account
 4. Browse for the text file backup of your database you made at *Step 1*.
 5. Upload it!
 
-#### Configuring Textpattern to interface with the new database
+### 4. Upload installation and reconnect with database
 
 1. Upload your entire Textpattern tree (<i>domain.tld/textpattern</i>) and the default <i>index.php</i> and <i>.htaccess</i> files to your new server via FTP.
 2. Open <i>textpattern/config.php</i> in a text editor.
@@ -83,12 +131,12 @@ $txpcfg['txpath'] = '/home/.some_name/site_username/example.com/textpattern';
 $txpcfg['doc_root'] = '/home/.some_name/site_username/example.com/';
 ~~~
 
-#### Handling the password
+### 5. Change password
 
-Changing your password after migrating your installation or upgrading MySQL.
+Changing your password after migrating your installation or upgrading MySQL is optional, but never a bad idea. And if you forgot your administrator password, then you’ll need to do this anyway.
 
 1. When in phpMyAdmin, from the drop down menu on the left select your `txp_` database. A list of tables in that database will appear directly below the drop down menu. Near the bottom of that list you should see your `txp_user` table. Select that table. All the information for that table will now occupy the main content area of your screen.
-2. There are a row of tabs at the top. Select the **'Structure'** tab.
+2. There are a row of tabs at the top. Select the **’Structure'** tab.
 3. In the main content area look for the row called `pass`, and select the little pencil to the far right.
 4. At the top of the main content area you will see 'Field', 'Type', 'Length/Values', 'Collation', etc. Retype the 128 in the 'Length/Values' box with 128 then select **'Save'**.
 5. Select the **'Browse'** tab
@@ -99,7 +147,7 @@ Changing your password after migrating your installation or upgrading MySQL.
 
 You're now ready to log back in to your Textpattern interface.
 
-### Step 3: Troubleshooting problems after moving
+## Troubleshooting after migration
 
 Probably the number one thing that gets people hung-up when physically moving an installation from one server to another is the odd inclusion of white space in the <i>config.php</i> file during the move (most likely during the reinstallation of the file). When this happens three problems are usually to be the result…
 
