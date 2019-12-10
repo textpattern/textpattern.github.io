@@ -28,7 +28,7 @@ Installing, configuring, securing, troubleshooting, collaborating, and the like.
 * [Upgrading the installation](/setup/upgrading-the-installation)
 * [Moving an installation](/setup/moving-an-installation)
 * [Multi-site installations](/setup/multi-site-installations)
-* [Collaborative roles and rights](/setup/collaborative-roles-and-rights){: style="color:red;"} [ties together users panel, roles…]
+* [Collaborative publishing](/setup/collaborative-publishing){: style="color:red;"} [ties together users panel, roles…]
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
