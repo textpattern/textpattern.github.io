@@ -34,27 +34,7 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 ### Tags and Attributes
 {: .index-docs-tags}
 
-There are standard HTML tags, and there are Textpattern’s *super tags!* Feel the power. 
-
-<section>
-
-#### Basics
-
-* [Tags reference](/tags/)
-* [Tag use basics](/tags/tag-basics/)
-{:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
-
-</section>
-<section>
-
-#### More
-
-* [Custom short-tags and shortcodes](/tags/shortcodes/custom-short-tags-and-shortcodes)
-* [Shortcode examples](/tags/shortcodes/)
-* [Tags in development](/tags/tags-in-development)
-{:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
-
-</section>
+{% include index-lists-tags.html %}
 
 </section>
 </div>
