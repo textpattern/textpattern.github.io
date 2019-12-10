@@ -3,7 +3,7 @@ layout: landing
 category: build
 published: true
 title: Construction and Presentation index
-description: All the articles in the Construction and Presentation category. 
+description: All of the articles in the Construction and Presentation category. 
 ---
 
 # Construction and Presentation index
