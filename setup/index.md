@@ -10,8 +10,4 @@ description: All the articles in the Installing and Configuring category.
 
 {::options parse_block_html="true" /}
 
-<div class="layout-container index-docs">
-
 {% include setup-lists.html %}
-
-</div>
