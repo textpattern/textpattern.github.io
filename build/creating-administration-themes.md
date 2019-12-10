@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Themes
+category: Construction and Presentation
 published: true
 title: Creating a custom administration theme
 description: Administration themes allow Textpattern administrators (and publishers) to choose a specific theme for the presentation and layout of back-end panels.

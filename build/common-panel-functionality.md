@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Administration
+category: Construction and Presentation
 published: true
 title: Common panel functionality
 description: Descriptions of secondary functionality common to many panels. Once you learn it, you don’t forget it.

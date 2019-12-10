@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Themes
+category: Construction and Presentation
 published: true
 title: Themes: Creating, using, and sharing
 description: A complete journey through creating, managing, using, exporting, importing, and deleting Textpattern themes. Join the expedition.
