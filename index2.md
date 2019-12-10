@@ -20,7 +20,7 @@ Everything you need to use Textpattern out-of-the-box and make website managemen
 
 Installing, configuring, securing, troubleshooting, collaborating, and the like.
 
-{% include setup-lists.html %}
+{% include index-lists-setup.html %}
 
 </section>
 <section class="layout-3col">
@@ -30,24 +30,7 @@ Installing, configuring, securing, troubleshooting, collaborating, and the like.
 
 Content types, templates, semantic building blocks, themes, site structure, and so on.
 
-<section>
-
-#### Basics
-
-* [Content types: core and custom](/build/content-types){: style="color:red;"} (see [issue 151](https://github.com/textpattern/textpattern.github.io/issues/151))
-* [Building site structures](/build/site-structures){: style="color:red;"} (see [issue 152](https://github.com/textpattern/textpattern.github.io/issues/152))
-* [Themes: Creating, using, and sharing](/build/themes-creating-using-and-sharing)
-{:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
-
-</section>
-<section>
-
-#### More
-
-* [Creating administration themes](/build/creating-administration-themes)
-{:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
-
-</section>
+{% include index-lists-build.html %}
 
 </section>
 <section class="layout-3col">

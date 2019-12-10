@@ -6,8 +6,8 @@ title: Installing and Configuring Textpattern
 description: All the articles in the Installing and Configuring category. 
 ---
 
-# Installing and Configuring documentation
+# Installing and Configuring index
 
 {::options parse_block_html="true" /}
 
-{% include setup-lists.html %}
+{% include index-lists-setup.html %}
