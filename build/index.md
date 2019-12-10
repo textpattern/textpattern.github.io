@@ -1,6 +1,6 @@
 ---
 layout: landing
-category: build
+category: Build
 published: true
 title: Construction and Presentation index
 description: All of the articles in the Construction and Presentation category. 
