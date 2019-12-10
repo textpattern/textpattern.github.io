@@ -42,8 +42,8 @@ Installing, configuring, securing, troubleshooting, collaborating, and the like.
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
-</section>
 
+</section>
 <section class="layout-3col">
 
 ### Construction and Presentation
@@ -71,8 +71,8 @@ Content types, templates, semantic building blocks, themes, site structure, and 
 And watch for the forthcoming[Themes website](https://github.com/textpattern/textpattern-themes-website).
 
 </section>
-</section>
 
+</section>
 <section class="layout-3col">
 
 ### Tags Reference
@@ -99,5 +99,6 @@ There are standard HTML tags, and there are Textpattern’s *super tags!* Feel t
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
+
 </section>
 </div>
