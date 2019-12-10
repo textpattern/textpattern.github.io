@@ -53,49 +53,47 @@ Content types, templates, semantic building blocks, themes, site structure, and 
 
 <section>
 
-#### Construction
+#### Basics
 
 * [Content types: Existing and custom](/build/content-types-existing-and-custom){: style="color:red;"} [wraps up all the content panels and custom fields together, touches on forms]
 * [Site structures and building blocks](/build/site-structures-and-building-blocks){: style="color:red;"} [wraps together sections, pages, forms, styles]
+* [Themes: Creating, using, and sharing](/build/themes-creating-using-and-sharing)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
 <section>
 
-#### Presentation
+#### More
 
-* [Themes: Creating, using, and sharing](/build/themes-creating-using-and-sharing)
 * [Creating administration themes](/build/creating-administration-themes)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
-
-And watch for the forthcoming[Themes website](https://github.com/textpattern/textpattern-themes-website).
 
 </section>
 
 </section>
 <section class="layout-3col">
 
-### Tags Reference
+### Tags and Attributes
 {: .index-docs-tags}
 
 There are standard HTML tags, and there are Textpattern’s *super tags!* Feel the power. 
 
 <section>
 
-#### Core tags
+#### Basics
 
 * [Tags reference](/tags/)
 * [Tag use basics](/tags/tag-basics/)
-* [Tags in development](/tags/tags-in-development)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
 <section>
 
-#### Custom tags
+#### More
 
 * [Custom short-tags and shortcodes](/tags/shortcodes/custom-short-tags-and-shortcodes)
 * [Shortcode examples](/tags/shortcodes/)
+* [Tags in development](/tags/tags-in-development)
 {:.list--no-bullets style="list-style-position:inside; list-style-type:'- '"}
 
 </section>
