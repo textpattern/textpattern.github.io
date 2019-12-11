@@ -83,19 +83,19 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [category2](/tags/category2)
 * [comment_anchor](/tags/comment_anchor)
 * [comment_email](/tags/comment_email)
-* [comment_email_input](/tags/comment_email_input) <span class="footnote warning">**Modified v4.7.2**</span>
+* [comment_email_input](/tags/comment_email_input) <span class="footnote warning">**Modified v4.8.0**</span>
 * [comment_id](/tags/comment_id)
 * [comment_message](/tags/comment_message)
-* [comment_message_input](/tags/comment_message_input) <span class="footnote warning">**Modified v4.7.2**</span>
+* [comment_message_input](/tags/comment_message_input) <span class="footnote warning">**Modified v4.8.0**</span>
 * [comment_name](/tags/comment_name)
-* [comment_name_input](/tags/comment_name_input) <span class="footnote warning">**Modified v4.7.2**</span>
+* [comment_name_input](/tags/comment_name_input) <span class="footnote warning">**Modified v4.8.0**</span>
 * [comment_permlink](/tags/comment_permlink)
-* [comment_preview](/tags/comment_preview)
-* [comment_remember](/tags/comment_remember)
-* [comment_submit](/tags/comment_submit)
+* [comment_preview](/tags/comment_preview) <span class="footnote warning">**Modified v4.8.0**</span>
+* [comment_remember](/tags/comment_remember) <span class="footnote warning">**Modified v4.8.0**</span>
+* [comment_submit](/tags/comment_submit) <span class="footnote warning">**Modified v4.8.0**</span>
 * [comment_time](/tags/comment_time)
 * [comment_web](/tags/comment_web)
-* [comment_web_input](/tags/comment_web_input) <span class="footnote warning">**Modified v4.7.2**</span>
+* [comment_web_input](/tags/comment_web_input) <span class="footnote warning">**Modified v4.8.0**</span>
 * [comments](/tags/comments)
 * [comments_count](/tags/comments_count)
 * [comments_error](/tags/comments_error)
@@ -209,7 +209,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [if_thumbnail](/tags/if_thumbnail) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_variable](/tags/if_variable)
 * [if_yield](/tags/if_yield) <span class="footnote warning">**Modified v4.7.0**</span>
-* [image](/tags/image)
+* [image](/tags/image) <span class="footnote warning">**Modified v4.8.0**</span>
 * [image_author](/tags/image_author) <span class="footnote warning">**Modified v4.7.0**</span>
 * [image_date](/tags/image_date)
 * [image_display](/tags/image_display) <span class="footnote error">**Deprecated**</span>
@@ -278,7 +278,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [newer](/tags/newer) <span class="footnote warning">**Modified v4.7.0**</span>
+* [newer](/tags/newer) <span class="footnote warning">**Modified v4.8.0**</span>
 * [next_title](/tags/next_title)
 {: .list--no-bullets}
 
@@ -290,7 +290,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [older](/tags/older) <span class="footnote warning">**Modified v4.7.0**</span>
+* [older](/tags/older) <span class="footnote warning">**Modified v4.8.0**</span>
 * [output_form](/tags/output_form) <span class="footnote warning">**Modified v4.7.2**</span>
 {: .list--no-bullets}
 
@@ -303,7 +303,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [page_title](/tags/page_title) <span class="footnote warning">**Modified v4.7.0**</span>
-* [page_url](/tags/page_url) <span class="footnote warning">**Modified v4.7.0**</span>
+* [page_url](/tags/page_url) <span class="footnote warning">**Modified v4.8.0**</span>
 * [password_protect](/tags/password_protect)
 * [permlink](/tags/permlink)
 * [php](/tags/php)
@@ -343,7 +343,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [search_result_url](/tags/search_result_url)
 * [search_term](/tags/search_term)
 * [section](/tags/section)
-* [section_list](/tags/section_list)
+* [section_list](/tags/section_list) <span class="footnote warning">**Modified v4.8.0**</span>
 * [site_name](/tags/site_name)
 * [site_slogan](/tags/site_slogan)
 * [site_url](/tags/site_url) <span class="footnote warning">**Modified v4.7.0**</span>
@@ -382,7 +382,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [yield](/tags/yield) <span class="footnote warning">**Modified v4.7.0**</span>
+* [yield](/tags/yield) <span class="footnote warning">**Modified v4.8.0**</span>
 {: .list--no-bullets}
 
 </div>
