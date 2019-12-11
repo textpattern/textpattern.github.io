@@ -103,7 +103,7 @@ Theme designers would doubtfully ever share such a worthless theme, but if one d
 1. **Pages**. If the essential page templates were missing, they would be created as empty pages. If the entire *pages* directory was missing, it would be created, as well the two essential pages with their default contents.
 2. **Forms**. If non-essential form files are missing, they are added in place as empty files. If any form subdirectories are missing, or the entire *forms* directory, the full *forms* directory from the tree above will be created, and the eight form files will contain default Textpattern markup.
 3. **Styles**. If the file is missing, it is added as an empty file. If the *styles* directory is missing, the directory plus a blank *default.css* file will be created.
-4. **Metadata**. The metadata file is handled more simply; the focus is on any missing metadata values. See [Metadata](#metadataa).
+4. **Metadata**. The [metadata](#metadata) file is handled more simply; the focus is on any missing metadata values.
 
 Textpattern will always augment a theme this way when importing or updating one, and any of the default package assets are missing. If, after importing or updating such a sparse theme, you later delete any of the augmented files, and that's your prerogative, and exported it that way for sharing, those files will remain missing in the exported theme. In other words, you would be sharing a worthless theme, just like the one shared with you. But that’s fine, because it would not break anything when someone else imported it at their end. Their installation of Textpattern would augment the theme with defaults and placeholders again just like described.
 
@@ -111,7 +111,7 @@ In the event you are new to Textpattern, a brief recap of what assets are might 
 
 #### Page assets
 
-Pages are your web page templates, primarily built with HTML and [Textpattern tags](/tags/reference). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](/tags/reference/output_form) tags), or as a combination of embedded markup and form includes. Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* learn Textpattern tags!
+Pages are your web page templates, primarily built with HTML and [Textpattern tags](/tags/). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](/tags/output_form) tags), or as a combination of embedded markup and form includes. Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* learn Textpattern tags!
 
 #### Form assets 
 
@@ -136,9 +136,9 @@ The essential metadata rides with the package as a <i>manifest.json</i> file, in
 * author_uri
 * txp-type
 
-The first five items reflect data pulled from the theme editor, which is accessed via the [New theme](#create-via-the-new-theme-editor) button, or via [an existing theme’s name](#duplicate-via-the-edit-theme-editor) in the themes tables.
+The first five items reflect data pulled from the theme editor, which is accessed via the [New theme](#create-from-scratch) button, or via [an existing theme’s name](#create-from-duplication) in the themes tables.
 
-The `title` is always required so a value will always be present in a manifest file. The `title` is not the same thing as the theme *name*, but that’s cleared up in the forthcoming section on [creating new themes](#create-via-the-new-theme-editor). 
+The `title` is always required so a value will always be present in a manifest file. The `title` is not the same thing as the theme *name*, but that’s cleared up in the forthcoming section on [creating new themes](#create-from-scratch). 
 
 The `txp-type` and its associated value is a constant; it must always exist and never change.
 
@@ -172,7 +172,7 @@ And that’s it for the big picture. Now we descend the ladder and get closer to
 
 Multiple options are available for creating a new theme via the Themes panel. You can:
 
-* Create a new theme directly via the **New theme** editor
+* Create a new theme from scratch directly via the **New theme** editor
 * Duplicate a theme via the **With selected** controls
 * Duplicate a theme via the **Edit theme** editor.
 
@@ -195,9 +195,9 @@ The **New theme** button opens the associated editor, which is simply a regular 
 * Theme author
 * Theme website 
 
-The six fields you see in the editing form correspond to four columns in the theme’s table on the main panel (Name, Title, Version, Author), and five of the metadata values in [the <i>manifest.json</i> file](#the-manifest-json-file).
+The six fields you see in the editing form correspond to four columns in the theme’s table on the main panel (Name, Title, Version, Author), and five of the metadata values in [the <i>manifest.json</i> file](#metadata).
 
-The theme’s name and title are not the same. If you registered an [author prefix](#author-prefixes-and-registration), you should use that as the first part of the theme’s name (e.g. ‘abc-my-new-theme’). The title, on the other hand, like for a book, is the proper, ‘human-readable’ name and should be entered in capital case with no hyphens (i.e. ‘Title Like This’). You do not have to use your prefix in the title, only for the name; so you could have this pairing, for example:
+The theme’s name and title are not the same. If you registered an [author prefix](#author-prefix-and-registration), you should use that as the first part of the theme’s name (e.g. ‘abc-my-new-theme’). The title, on the other hand, like for a book, is the proper, ‘human-readable’ name and should be entered in capital case with no hyphens (i.e. ‘Title Like This’). You do not have to use your prefix in the title, only for the name; so you could have this pairing, for example:
 
 * Theme name: abc-my-new-theme
 * Theme title: My New Theme
@@ -209,7 +209,7 @@ As explained in the Metadata section earlier, if you decide to skip the optional
 * Theme author: username
 {:.example}
 
-The remaining description and website fields will stay empty if not used. The website field is for adding a URL to where your theme can be downloaded online, whether at your own website, on version control site, or, ideally, in Textpattern’s upcoming community [Themes website](https://themes.textpattern.com) ([repository](https://github.com/textpattern/textpattern-themes-website)). Options galore!
+The remaining description and website fields will stay empty if not used. The website field is for a URL to where your theme can be downloaded online; whether at your own website, at a version control site, or, ideally, in Textpattern’s upcoming community [Themes website](https://themes.textpattern.com) ([repository](https://github.com/textpattern/textpattern-themes-website)). Options galore!
 
 In any case, you should fill out the theme editing form as completely as possible, without relying on Textpattern’s defaults. The more complete the form, the more informative the manifest file will be. Any fields you can’t fill immediately, such as the website URL, can always be filled in later.
 
@@ -217,7 +217,7 @@ When the **New theme** metadata are saved, the resulting theme appears in the th
 
 ![Active theme indicator](/img/active-theme-indicator.png)
 
-The two other approaches that get to this point, both by way of theme duplication, are described next. Or jump to the [Active versus inactive themes](#active-versus-inactive-themes) section to continue on the current journey.   
+The two other approaches that get to this point, both by way of theme duplication, are described next. Or jump to the [Active versus inactive themes](#active--activate-links) section to continue on the current journey.   
 
 ### Create from duplication
 
@@ -245,13 +245,13 @@ Do this by clicking the theme’s name in the Name column of the themes table to
 
 ![Click default theme name](/img/click-default-theme-name.png)
 
-Change the metadata in the six fields as thoroughly as possible. See [Create via the ‘New theme’ editor](#create-via-the-new-theme-editor) for explanation of the fields. If you don’t have a value to give for an optional field, clear the field’s value so it is entirely blank. You can always fill it in later. When finished with changing all the metadata on your duplicated theme, save and close the form.
+Change the metadata in the six fields as thoroughly as possible. See, again, [Create from scratch](#create-from-scratch) for explanation of the fields. If you don’t have a value to give for an optional field, clear the field’s value so it is entirely blank. You can always fill it in later. When finished with changing all the metadata on your duplicated theme, save and close the form.
 
 ![Save edit theme form changes](/img/save-edit-theme-form-changes.png)
 
 (The ‘Duplicate’ link you see in the image above is a hint to the next section.)
 
-The duplicated theme will be added to the themes table in the main panel view. Once the default theme is duplicated and the metadata changed, the duplicated theme is, for all practical purposes, a *new* theme, and you should call it by its lovely new name.
+The duplicated theme will be added to the themes table in the main panel view. Once the default theme is duplicated and the metadata changed, the duplicated theme is, for all practical purposes, a *new* theme, just not visually unique yet.
 
 #### Duplicate via theme editor
 
@@ -301,13 +301,13 @@ Another way to tell if a theme is active or not is to look under the Sections co
 
 ![Sections column](/img/sections-column.png)
 
-When a theme is not active, you can safely work on its associated assets without concern for it impacting website visitors. You can access a given theme’s assets either via the [preview context](#previewing-themes), or directly from the assets links in the themes table.
+When a theme is not active, you can safely work on its associated assets without concern for it impacting website visitors. You can access a given theme’s assets either via the [preview context](#previewing-themes-in-development), or directly from the assets links in the themes table.
 
-### Assets links
+### Asset links
 
 Under the Pages, Forms, and Styles columns of the themes table are linked numbers indicating how many assets of each type are associated to a given theme.
 
-![Theme-assets-links](/img/assets-columns.png)
+![Assets columns](/img/assets-columns.png)
 
 When you duplicate the default theme (as the next image depicts), or any other theme, the existing assets in the source theme are cloned as well, logically, thus why the duplicated themes have the same number.
 
@@ -427,7 +427,7 @@ The selection will reveal an associated and uncharacteristically rich set of con
 
 ![Select ‘Change theme…’ option](/img/select-change-theme-option.png)
 
-Notice not one, but *two* checkboxes: ‘Development’ and ‘Live’. The ‘Development’ option, checked by default, works in relation to the [development previewing](#previewing-development-themes) functionality described earlier.[^sect] Assigning themes to sections allows *previewing* the changes. The ‘Live’ option, on the other hand, does what it implies; makes the themes-to-sections assignment immediately visible on the front-end of your website.
+Notice not one, but *two* checkboxes: ‘Development’ and ‘Live’. The ‘Development’ option, checked by default, works in relation to the [development previewing](#previewing-themes-in-development) functionality described earlier.[^sect] Assigning themes to sections allows *previewing* the changes. The ‘Live’ option, on the other hand, does what it implies; makes the themes-to-sections assignment immediately visible on the front-end of your website.
 
 You _can_, select both options, if not often needed. One example for doing so might be to synchronize development and live conditions in one easy step; as a starting point, say, for diverged development later. Go ahead, try it. You only *live* once!
 
@@ -517,7 +517,7 @@ If you are more into importing than exporting, you will eventually come to the p
 
 When you update a theme from disk, Textpattern creates an *exact* copy in the database from the disk version you are updating from, merging new elements and overwriting existing ones having the same asset name.
 
-As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your <i>themes</i> directory. Then it is on to the Themes panel, where, like [described initially](#duplicate-via-the-with-selected-controls) you do the checkbox-and-select dance, but this time opting for ‘Update from disk’.
+As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your <i>themes</i> directory. Then it is on to the Themes panel, where, like [described initially](#duplicate-via-selection-controls) you do the checkbox-and-select dance, but this time opting for ‘Update from disk’.
 
 ![Select update from disk](/img/select-update-from-disk.png)
 
