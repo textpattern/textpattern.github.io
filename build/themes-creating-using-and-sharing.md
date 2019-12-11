@@ -29,7 +29,7 @@ Most of this document, however, describes the sensible approach of using the new
 
 ### Default system references
 
-In addition to the document you are reading, and your own installation of the software, the following resources make for handy references to default system conditions in case you go astray, or in the event you do not have an install of your own yet, in fact. Make note of these:
+In addition to the document you are reading, and your own installation of the software, the following resources make for handy references to default system conditions in case you go astray, or in the event you do not have an installation of your own yet, in fact. Make note of these:
 
 * Front-end demo of default theme:
   * [Current stable release of theme](https://release-demo.textpattern.co/)
@@ -111,11 +111,11 @@ In the event you are new to Textpattern, a brief recap of what assets are might 
 
 #### Page assets
 
-[Pages](/administration/pages-panel) are your web page templates, primarily built with HTML and [Textpattern tags](/tags). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](/tags/output_form) tags), or as a combination of embedded markup and form includes. Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* learn Textpattern tags!
+Pages are your web page templates, primarily built with HTML and [Textpattern tags](/tags/reference). Pages may be constructed solely with embedded markup, or by interchanging markup with form ‘includes’ (using [output_form](/tags/reference/output_form) tags), or as a combination of embedded markup and form includes. Pages are assigned to one or more of your website’s sections. A one-to-many relationship between pages and sections, achieved with forms and conditional tag logic, can result in a site architecture that’s easier to manage and maintain. *Definitely* learn Textpattern tags!
 
 #### Form assets 
 
-[Forms](/administration/forms-panel) are the named containers of markup components (conceptually the same as partials, snippets, or includes) for *inclusion* into page templates, or for nesting into other forms. Such ‘Russian doll’ construction of your website’s architecture using pages and forms enables building sophisticated website structures that are, again, easier to manage and maintain. See [Form templates explained](/themes/form-templates-explained.md) if you need a deeper dive into forms.
+[Forms](/build/form-templates-explained.md) are the named containers of markup components (conceptually the same as partials, snippets, or includes) for *inclusion* into page templates, or for nesting into other forms. Such ‘Russian doll’ construction of your website’s architecture using pages and forms enables building sophisticated website structures that are, again, easier to manage and maintain.
 
 All form files must have unique names — across core forms and any custom forms created — and core form names will never be changed from their defaults. Compound form names use underscores between words (e.g. <i>**custom_form_name**</i>) and the resulting template file name should match (i.e. <i>custom_form_name.txp</i>).
 
@@ -170,7 +170,7 @@ And that’s it for the big picture. Now we descend the ladder and get closer to
 
 ## Creating themes
 
-Multiple options are available for creating a new theme via the [Themes](/administration/themes-panel) panel. You can:
+Multiple options are available for creating a new theme via the Themes panel. You can:
 
 * Create a new theme directly via the **New theme** editor
 * Duplicate a theme via the **With selected** controls
@@ -397,7 +397,7 @@ You can use the links under the Page and Style columns to directly access and wo
 
 ## Production (live) themes
 
-When you are ready to apply your theme and see how it looks on the front-side, you need to assign it to one or more [sections](/administration/sections-panel) that are setup and ready to go. It’s assumed here that your sections *are* ready to go, so focus is on the assigning part. How you do this might depend on what your theme objectives are.
+When you are ready to apply your theme and see how it looks on the front-side, you need to assign it to one or more sections that are setup and ready to go. It’s assumed here that your sections *are* ready to go, so focus is on the assigning part. How you do this might depend on what your theme objectives are.
 
 ### Switching themes
 
@@ -417,7 +417,7 @@ In this case you might like keeping the same general structure of your website b
 
 If you want a 1:1 assignment of a different theme to every website section, you will have to assign each theme and its associated page and style assets to the section individually. There are two approaches to this process — a one-section-at-a-time process if you want all sections looking different — but one approach is a little more direct than the other, thus the one presented here. 
 
-Use the selection controls again, but this time in the [Sections](/administration/sections-panel) panel, where assigning assets to templates is done, and where the select options are different. Hop into the Sections panel, check the box by the name of a section to assign a theme to, and select ‘Change theme/page/style’ from the menu underneath.  
+Use the selection controls again, but this time in the Sections panel, where assigning assets to templates is done, and where the select options are different. Hop into the Sections panel, check the box by the name of a section to assign a theme to, and select ‘Change theme/page/style’ from the menu underneath.  
 
 ![Select ‘Change theme…’](/img/select-change-theme.png)
 
@@ -513,7 +513,7 @@ The theme is now in your themes table to use as desired, and if the themes in th
 
 ## Updating themes
 
-If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer (other than you) has released a newly-improved version of a theme you may have imported once. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
+If you are more into importing than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer (other than you) has released a newly improved version of a theme you may have imported once. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
 
 When you update a theme from disk, Textpattern creates an *exact* copy in the database from the disk version you are updating from, merging new elements and overwriting existing ones having the same asset name.
 
