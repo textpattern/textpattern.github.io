@@ -21,11 +21,11 @@ tags:
 <txp:image />
 ~~~
 
-The **image** tag is a *single* tag that Textpattern will replace with the `<img src="…">` HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern [Images panel](/administration/images-panel).
+The **image** tag is a *single* tag that Textpattern will replace with the `<img src="…">` HTML tag matching the image of the numeric `id` assigned by Textpattern when the image was uploaded via the Textpattern Images panel.
 
 The tag outputs the `alt`, `width`, and `height` attributes by default. If you don't need to set image dimensions (e.g. if you use `width: 100%` in your CSS), you can 'turn off' the effect of the `width` and `height` attributes by using `width="0" height="0"`.
 
-The tag is also context-sensitive: if an `id` or `name` attribute is not specified, it can be used inside an [images](/tags/images) tag or form to output an `<img src="…">` HTML tag matching the current image.
+The tag is also context-sensitive: if an `id` or `name` attribute is not specified, it can be used inside an [images](/tags/reference/images) tag or form to output an `<img src="…">` HTML tag matching the current image.
 
 ## Attributes
 
@@ -45,10 +45,17 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `id="integer"`
-: Specifies the `id`, assigned at upload of the image, to display. Can be found on the [Images panel](/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](/tags/images) tag or form.
+: Specifies the `id`, assigned at upload of the image, to display. Can be found on the Images panel. If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](/tags/reference/images) tag or form.
 
 `name="image name"`
-: Specifies which image to display by its image `name` as shown on the [Images panel](/administration/images-panel).
+: Specifies which image to display by its image `name` as shown on the Images panel.
+
+`thumbnail="boolean"` <span class="footnote warning">v4.8.0+</span>
+: Whether to display the full-size (0) or thumbnail-size (1) image.
+: **Default:** 0.
+
+`title="boolean|title text"` <span class="footnote warning">v4.8.0+</span>
+: Adds the given text as an HTML 'title' attribute to the image. If used as a valueless attribute, will use the caption as text.
 
 `width="integer"` <span class="footnote warning">v4.3.0+</span>
 : Specify an image `width` which overrides the value stored in the database. Use `width="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the width if a height is used).
@@ -98,14 +105,19 @@ Had the `wraptag` attribute been used, the `class="promoted"` attribute/value wo
 </txp:images>
 ~~~
 
-Displays full-size images for all images found by the [images](/tags/images) tag.
+Displays full-size images for all images found by the [images](/tags/reference/images) tag.
 
 ## Genealogy
+
+### Version 4.8.0
+
+`title` attribute added. \\
+`thumbnail` attribute may be used instead of the dedicated [thumbnail](/tags/reference/thumbnail) tag.
 
 ### Version 4.3.0
 
 `height` and `width` attributes added. \\
-Added context sensitivity within [images](/tags/images) tag.
+Added context sensitivity within [images](/tags/reference/images) tag.
 
 ### Version 4.2.0
 
