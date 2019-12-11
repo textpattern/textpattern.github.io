@@ -47,14 +47,14 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [article](/tags/article) <span class="footnote warning">**Modified v4.7.2**</span>
-* [article_custom](/tags/article_custom) <span class="footnote warning">**Modified v4.7.2**</span>
-* [article_id](/tags/article_id)
-* [article_image](/tags/article_image)
-* [article_url_title](/tags/article_url_title)
-* [author](/tags/author)
-* [author_email](/tags/author_email)
-* [authors](/tags/authors)
+* [article](/tags/reference/article) <span class="footnote warning">**Modified v4.7.2**</span>
+* [article_custom](/tags/reference/article_custom) <span class="footnote warning">**Modified v4.7.2**</span>
+* [article_id](/tags/reference/article_id)
+* [article_image](/tags/reference/article_image)
+* [article_url_title](/tags/reference/article_url_title)
+* [author](/tags/reference/author)
+* [author_email](/tags/reference/author_email)
+* [authors](/tags/reference/authors)
 {: .list--no-bullets}
 
 </div>
@@ -65,8 +65,8 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [body](/tags/body)
-* [breadcrumb](/tags/breadcrumb) <span class="footnote warning">**Modified v4.7.0**</span>
+* [body](/tags/reference/body)
+* [breadcrumb](/tags/reference/breadcrumb) <span class="footnote warning">**Modified v4.7.0**</span>
 {: .list--no-bullets}
 
 </div>
@@ -77,34 +77,34 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [category](/tags/category)
-* [category_list](/tags/category_list) <span class="footnote warning">**Modified v4.7.0**</span>
-* [category1](/tags/category1)
-* [category2](/tags/category2)
-* [comment_anchor](/tags/comment_anchor)
-* [comment_email](/tags/comment_email)
-* [comment_email_input](/tags/comment_email_input) <span class="footnote warning">**Modified v4.7.2**</span>
-* [comment_id](/tags/comment_id)
-* [comment_message](/tags/comment_message)
-* [comment_message_input](/tags/comment_message_input) <span class="footnote warning">**Modified v4.7.2**</span>
-* [comment_name](/tags/comment_name)
-* [comment_name_input](/tags/comment_name_input) <span class="footnote warning">**Modified v4.7.2**</span>
-* [comment_permlink](/tags/comment_permlink)
-* [comment_preview](/tags/comment_preview)
-* [comment_remember](/tags/comment_remember)
-* [comment_submit](/tags/comment_submit)
-* [comment_time](/tags/comment_time)
-* [comment_web](/tags/comment_web)
-* [comment_web_input](/tags/comment_web_input) <span class="footnote warning">**Modified v4.7.2**</span>
-* [comments](/tags/comments)
-* [comments_count](/tags/comments_count)
-* [comments_error](/tags/comments_error)
-* [comments_form](/tags/comments_form)
-* [comments_help](/tags/comments_help)
-* [comments_invite](/tags/comments_invite)
-* [comments_preview](/tags/comments_preview)
+* [category](/tags/reference/category)
+* [category_list](/tags/reference/category_list) <span class="footnote warning">**Modified v4.7.0**</span>
+* [category1](/tags/reference/category1)
+* [category2](/tags/reference/category2)
+* [comment_anchor](/tags/reference/comment_anchor)
+* [comment_email](/tags/reference/comment_email)
+* [comment_email_input](/tags/reference/comment_email_input) <span class="footnote warning">**Modified v4.7.2**</span>
+* [comment_id](/tags/reference/comment_id)
+* [comment_message](/tags/reference/comment_message)
+* [comment_message_input](/tags/reference/comment_message_input) <span class="footnote warning">**Modified v4.7.2**</span>
+* [comment_name](/tags/reference/comment_name)
+* [comment_name_input](/tags/reference/comment_name_input) <span class="footnote warning">**Modified v4.7.2**</span>
+* [comment_permlink](/tags/reference/comment_permlink)
+* [comment_preview](/tags/reference/comment_preview)
+* [comment_remember](/tags/reference/comment_remember)
+* [comment_submit](/tags/reference/comment_submit)
+* [comment_time](/tags/reference/comment_time)
+* [comment_web](/tags/reference/comment_web)
+* [comment_web_input](/tags/reference/comment_web_input) <span class="footnote warning">**Modified v4.7.2**</span>
+* [comments](/tags/reference/comments)
+* [comments_count](/tags/reference/comments_count)
+* [comments_error](/tags/reference/comments_error)
+* [comments_form](/tags/reference/comments_form)
+* [comments_help](/tags/reference/comments_help)
+* [comments_invite](/tags/reference/comments_invite)
+* [comments_preview](/tags/reference/comments_preview)
 * [css](/tags/css) <span class="footnote warning">**Modified v4.7.2**</span>
-* [custom_field](/tags/custom_field)
+* [custom_field](/tags/reference/custom_field)
 {: .list--no-bullets}
 
 </div>
@@ -115,13 +115,13 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [else](/tags/else)
-* [email](/tags/email)
-* [error_message](/tags/error_message)
-* [error_status](/tags/error_status)
-* [evaluate](/tags/evaluate) <span class="footnote success">**New v4.7.0**</span>
-* [excerpt](/tags/excerpt)
-* [expires](/tags/expires)
+* [else](/tags/reference/else)
+* [email](/tags/reference/email)
+* [error_message](/tags/reference/error_message)
+* [error_status](/tags/reference/error_status)
+* [evaluate](/tags/reference/evaluate) <span class="footnote success">**New v4.7.0**</span>
+* [excerpt](/tags/reference/excerpt)
+* [expires](/tags/reference/expires)
 {: .list--no-bullets}
 
 </div>
@@ -132,19 +132,19 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [feed_link](/tags/feed_link)
-* [file_download](/tags/file_download)
-* [file_download_author](/tags/file_download_author)
-* [file_download_category](/tags/file_download_category)
-* [file_download_created](/tags/file_download_created)
-* [file_download_description](/tags/file_download_description)
-* [file_download_downloads](/tags/file_download_downloads)
-* [file_download_id](/tags/file_download_id)
-* [file_download_link](/tags/file_download_link)
-* [file_download_list](/tags/file_download_list)
-* [file_download_modified](/tags/file_download_modified)
-* [file_download_name](/tags/file_download_name)
-* [file_download_size](/tags/file_download_size)
+* [feed_link](/tags/reference/feed_link)
+* [file_download](/tags/reference/file_download)
+* [file_download_author](/tags/reference/file_download_author)
+* [file_download_category](/tags/reference/file_download_category)
+* [file_download_created](/tags/reference/file_download_created)
+* [file_download_description](/tags/reference/file_download_description)
+* [file_download_downloads](/tags/reference/file_download_downloads)
+* [file_download_id](/tags/reference/file_download_id)
+* [file_download_link](/tags/reference/file_download_link)
+* [file_download_list](/tags/reference/file_download_list)
+* [file_download_modified](/tags/reference/file_download_modified)
+* [file_download_name](/tags/reference/file_download_name)
+* [file_download_size](/tags/reference/file_download_size)
 {: .list--no-bullets}
 
 </div>
@@ -155,8 +155,8 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [header](/tags/header) <span class="footnote success">**New v4.7.0**</span>
-* [hide](/tags/hide) <span class="footnote warning">**Modified v4.7.0**</span>
+* [header](/tags/reference/header) <span class="footnote success">**New v4.7.0**</span>
+* [hide](/tags/reference/hide) <span class="footnote warning">**Modified v4.7.0**</span>
 {: .list--no-bullets}
 
 </div>
@@ -167,57 +167,57 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [if_article_author](/tags/if_article_author) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_article_category](/tags/if_article_category) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_article_id](/tags/if_article_id) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_article_image](/tags/if_article_image) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_article_list](/tags/if_article_list) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_article_section](/tags/if_article_section) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_author](/tags/if_author) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_category](/tags/if_category) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_comments](/tags/if_comments) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_comments_allowed](/tags/if_comments_allowed) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_comments_disallowed](/tags/if_comments_disallowed) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_comments_error](/tags/if_comments_error) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_comments_preview](/tags/if_comments_preview) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_custom_field](/tags/if_custom_field) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_description](/tags/if_description)
-* [if_different](/tags/if_different) <span class="footnote warning">**Modified v4.7.2**</span>
-* [if_excerpt](/tags/if_excerpt) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_expired](/tags/if_expired) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_expires](/tags/if_expires) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_first_article](/tags/if_first_article) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_first_category](/tags/if_first_category) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_first_file](/tags/if_first_file)
-* [if_first_image](/tags/if_first_image)
-* [if_first_link](/tags/if_first_link)
-* [if_first_section](/tags/if_first_section) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_individual_article](/tags/if_individual_article) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_keywords](/tags/if_keywords)
-* [if_last_article](/tags/if_last_article) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_last_category](/tags/if_last_category) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_last_file](/tags/if_last_file)
-* [if_last_image](/tags/if_last_image)
-* [if_last_link](/tags/if_last_link)
-* [if_last_section](/tags/if_last_section) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_logged_in](/tags/if_logged_in) <span class="footnote success">**New v4.7.0**</span>
-* [if_plugin](/tags/if_plugin) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_search](/tags/if_search) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_search_results](/tags/if_search_results) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_section](/tags/if_section) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_status](/tags/if_status) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_thumbnail](/tags/if_thumbnail) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_variable](/tags/if_variable)
-* [if_yield](/tags/if_yield) <span class="footnote warning">**Modified v4.7.0**</span>
-* [image](/tags/image)
-* [image_author](/tags/image_author) <span class="footnote warning">**Modified v4.7.0**</span>
-* [image_date](/tags/image_date)
-* [image_display](/tags/image_display) <span class="footnote error">**Deprecated**</span>
-* [image_index](/tags/image_index) <span class="footnote error">**Deprecated**</span>
-* [image_info](/tags/image_info)
-* [image_list](/tags/image_list) <span class="footnote error">**Deprecated**</span>
-* [image_url](/tags/image_url)
-* [images](/tags/images)
+* [if_article_author](/tags/reference/if_article_author) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_article_category](/tags/reference/if_article_category) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_article_id](/tags/reference/if_article_id) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_article_image](/tags/reference/if_article_image) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_article_list](/tags/reference/if_article_list) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_article_section](/tags/reference/if_article_section) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_author](/tags/reference/if_author) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_category](/tags/reference/if_category) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_comments](/tags/reference/if_comments) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_comments_allowed](/tags/reference/if_comments_allowed) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_comments_disallowed](/tags/reference/if_comments_disallowed) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_comments_error](/tags/reference/if_comments_error) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_comments_preview](/tags/reference/if_comments_preview) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_custom_field](/tags/reference/if_custom_field) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_description](/tags/reference/if_description)
+* [if_different](/tags/reference/if_different) <span class="footnote warning">**Modified v4.7.2**</span>
+* [if_excerpt](/tags/reference/if_excerpt) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_expired](/tags/reference/if_expired) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_expires](/tags/reference/if_expires) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_first_article](/tags/reference/if_first_article) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_first_category](/tags/reference/if_first_category) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_first_file](/tags/reference/if_first_file)
+* [if_first_image](/tags/reference/if_first_image)
+* [if_first_link](/tags/reference/if_first_link)
+* [if_first_section](/tags/reference/if_first_section) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_individual_article](/tags/reference/if_individual_article) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_keywords](/tags/reference/if_keywords)
+* [if_last_article](/tags/reference/if_last_article) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_last_category](/tags/reference/if_last_category) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_last_file](/tags/reference/if_last_file)
+* [if_last_image](/tags/reference/if_last_image)
+* [if_last_link](/tags/reference/if_last_link)
+* [if_last_section](/tags/reference/if_last_section) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_logged_in](/tags/reference/if_logged_in) <span class="footnote success">**New v4.7.0**</span>
+* [if_plugin](/tags/reference/if_plugin) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_search](/tags/reference/if_search) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_search_results](/tags/reference/if_search_results) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_section](/tags/reference/if_section) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_status](/tags/reference/if_status) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_thumbnail](/tags/reference/if_thumbnail) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_variable](/tags/reference/if_variable)
+* [if_yield](/tags/reference/if_yield) <span class="footnote warning">**Modified v4.7.0**</span>
+* [image](/tags/reference/image)
+* [image_author](/tags/reference/image_author) <span class="footnote warning">**Modified v4.7.0**</span>
+* [image_date](/tags/reference/image_date)
+* [image_display](/tags/reference/image_display) <span class="footnote error">**Deprecated**</span>
+* [image_index](/tags/reference/image_index) <span class="footnote error">**Deprecated**</span>
+* [image_info](/tags/reference/image_info)
+* [image_list](/tags/reference/image_list) <span class="footnote error">**Deprecated**</span>
+* [image_url](/tags/reference/image_url)
+* [images](/tags/reference/images)
 {: .list--no-bullets}
 
 </div>
@@ -228,7 +228,7 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [keywords](/tags/keywords) <span class="footnote warning">**Modified v4.7.0**</span>
+* [keywords](/tags/reference/keywords) <span class="footnote warning">**Modified v4.7.0**</span>
 {: .list--no-bullets}
 
 </div>
@@ -239,21 +239,21 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [lang](/tags/lang)
-* [link](/tags/link)
-* [link_author](/tags/link_author)
-* [link_category](/tags/link_category)
-* [link_date](/tags/link_date)
-* [link_description](/tags/link_description)
-* [link_feed_link](/tags/link_feed_link)
-* [link_id](/tags/link_id)
-* [link_name](/tags/link_name)
-* [link_to_home](/tags/link_to_home)
-* [link_to_next](/tags/link_to_next)
-* [link_to_prev](/tags/link_to_prev)
-* [link_url](/tags/link_url)
-* [linkdesctitle](/tags/linkdesctitle)
-* [linklist](/tags/linklist)
+* [lang](/tags/reference/lang)
+* [link](/tags/reference/link)
+* [link_author](/tags/reference/link_author)
+* [link_category](/tags/reference/link_category)
+* [link_date](/tags/reference/link_date)
+* [link_description](/tags/reference/link_description)
+* [link_feed_link](/tags/reference/link_feed_link)
+* [link_id](/tags/reference/link_id)
+* [link_name](/tags/reference/link_name)
+* [link_to_home](/tags/reference/link_to_home)
+* [link_to_next](/tags/reference/link_to_next)
+* [link_to_prev](/tags/reference/link_to_prev)
+* [link_url](/tags/reference/link_url)
+* [linkdesctitle](/tags/reference/linkdesctitle)
+* [linklist](/tags/reference/linklist)
 {: .list--no-bullets}
 
 </div>
@@ -264,10 +264,10 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [meta_author](/tags/meta_author)
-* [meta_description](/tags/meta_description)
-* [meta_keywords](/tags/meta_keywords)
-* [modified](/tags/modified)
+* [meta_author](/tags/reference/meta_author)
+* [meta_description](/tags/reference/meta_description)
+* [meta_keywords](/tags/reference/meta_keywords)
+* [modified](/tags/reference/modified)
 {: .list--no-bullets}
 
 </div>
@@ -278,8 +278,8 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [newer](/tags/newer) <span class="footnote warning">**Modified v4.7.0**</span>
-* [next_title](/tags/next_title)
+* [newer](/tags/reference/newer) <span class="footnote warning">**Modified v4.7.0**</span>
+* [next_title](/tags/reference/next_title)
 {: .list--no-bullets}
 
 </div>
@@ -290,8 +290,8 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [older](/tags/older) <span class="footnote warning">**Modified v4.7.0**</span>
-* [output_form](/tags/output_form) <span class="footnote warning">**Modified v4.7.2**</span>
+* [older](/tags/reference/older) <span class="footnote warning">**Modified v4.7.0**</span>
+* [output_form](/tags/reference/output_form) <span class="footnote warning">**Modified v4.7.2**</span>
 {: .list--no-bullets}
 
 </div>
@@ -302,15 +302,15 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [page_title](/tags/page_title) <span class="footnote warning">**Modified v4.7.0**</span>
-* [page_url](/tags/page_url) <span class="footnote warning">**Modified v4.7.0**</span>
-* [password_protect](/tags/password_protect)
-* [permlink](/tags/permlink)
-* [php](/tags/php)
-* [popup](/tags/popup)
-* [popup_comments](/tags/popup_comments)
-* [posted](/tags/posted)
-* [prev_title](/tags/prev_title)
+* [page_title](/tags/reference/page_title) <span class="footnote warning">**Modified v4.7.0**</span>
+* [page_url](/tags/reference/page_url) <span class="footnote warning">**Modified v4.7.0**</span>
+* [password_protect](/tags/reference/password_protect)
+* [permlink](/tags/reference/permlink)
+* [php](/tags/reference/php)
+* [popup](/tags/reference/popup)
+* [popup_comments](/tags/reference/popup_comments)
+* [posted](/tags/reference/posted)
+* [prev_title](/tags/reference/prev_title)
 {: .list--no-bullets}
 
 </div>
@@ -321,9 +321,9 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [recent_articles](/tags/recent_articles)
-* [recent_comments](/tags/recent_comments)
-* [related_articles](/tags/related_articles)
+* [recent_articles](/tags/reference/recent_articles)
+* [recent_comments](/tags/reference/recent_comments)
+* [related_articles](/tags/reference/related_articles)
 * [rsd](/tags/rsd) <span class="footnote error">**Deprecated**</span>
 {: .list--no-bullets}
 
@@ -335,18 +335,18 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [search_input](/tags/search_input) <span class="footnote warning">**Modified v4.7.2**</span>
-* [search_result_count](/tags/search_result_count)
-* [search_result_date](/tags/search_result_date)
-* [search_result_excerpt](/tags/search_result_excerpt) <span class="footnote warning">**Modified v4.7.0**</span>
-* [search_result_title](/tags/search_result_title)
-* [search_result_url](/tags/search_result_url)
-* [search_term](/tags/search_term)
-* [section](/tags/section)
-* [section_list](/tags/section_list)
-* [site_name](/tags/site_name)
-* [site_slogan](/tags/site_slogan)
-* [site_url](/tags/site_url) <span class="footnote warning">**Modified v4.7.0**</span>
+* [search_input](/tags/reference/search_input) <span class="footnote warning">**Modified v4.7.2**</span>
+* [search_result_count](/tags/reference/search_result_count)
+* [search_result_date](/tags/reference/search_result_date)
+* [search_result_excerpt](/tags/reference/search_result_excerpt) <span class="footnote warning">**Modified v4.7.0**</span>
+* [search_result_title](/tags/reference/search_result_title)
+* [search_result_url](/tags/reference/search_result_url)
+* [search_term](/tags/reference/search_term)
+* [section](/tags/reference/section)
+* [section_list](/tags/reference/section_list)
+* [site_name](/tags/reference/site_name)
+* [site_slogan](/tags/reference/site_slogan)
+* [site_url](/tags/reference/site_url) <span class="footnote warning">**Modified v4.7.0**</span>
 {: .list--no-bullets}
 
 </div>
@@ -357,10 +357,10 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [text](/tags/text)
-* [thumbnail](/tags/thumbnail)
-* [title](/tags/title)
-* [txp_die](/tags/txp_die)
+* [text](/tags/reference/text)
+* [thumbnail](/tags/reference/thumbnail)
+* [title](/tags/reference/title)
+* [txp_die](/tags/reference/txp_die)
 {: .list--no-bullets}
 
 </div>
@@ -371,7 +371,7 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [variable](/tags/variable)
+* [variable](/tags/reference/variable)
 {: .list--no-bullets}
 
 </div>
@@ -382,7 +382,7 @@ Each Textpattern tag is described in detail on its respective reference page. If
 
 <div class="layout-text4col">
 
-* [yield](/tags/yield) <span class="footnote warning">**Modified v4.7.0**</span>
+* [yield](/tags/reference/yield) <span class="footnote warning">**Modified v4.7.0**</span>
 {: .list--no-bullets}
 
 </div>
