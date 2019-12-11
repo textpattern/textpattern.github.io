@@ -49,7 +49,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 
 #### Core tags
 
-* [Tags reference](/tags/)
+* [Tags reference](/tags/reference/)
 * [Tag use basics](/tags/tag-basics/)
 * [Tags in development](/tags/tags-in-development)
 {: .list--no-bullets}
