@@ -3,14 +3,14 @@ layout: document
 category: Tag basics
 published: true
 title: Textpattern conditional tags
-description: Container tag in Textpattern are great for making lists and you use conditional tags to get there.
+description: Container tags are great for making lists, and you can use conditional tags to get there.
 tags:
   - Conditional tags
 ---
 
 # Conditional tags
 
-[Container tags](/tags/tag-basics/self-closed-versus-container-tags) in Textpattern are great for making lists and you use **conditional tags** to get there.
+[Container tags](/tags/tag-basics/self-closed-versus-container-tags) are great for making lists and you use conditional tags to get there.
 
 In Textpattern your visitors are in one of two *views_; either an **individual** (article) view or a **list** view. You don't need to worry about managing which is which, because Textpattern takes care of that for you, but you can decide what action you are going to take when a visitor views your site in either state.
 
