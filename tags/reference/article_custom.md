@@ -33,7 +33,7 @@ If used as a container, it must be specified as an opening and closing pair of t
 
 This is equivalent to putting the contained statements into a form named 'my_form' and using `<txp:article_custom form="my_form" />`.
 
-Unlike the [article](/tags/article) tag, `<txp:article_custom>` will always return an article list and **is not context-sensitive**. This means while the [article](/tags/article) tag can only see posts within the currently viewed section/category/author and so forth, `<txp:article_custom />` can see all posts from all sections, categories and authors unless you restrict it via attributes (see below), thus context-sensitive navigation tags, such as [older](/tags/older) and [newer](/tags/newer), will not work.
+Unlike the [article](/tags/reference/article) tag, `<txp:article_custom>` will always return an article list and **is not context-sensitive**. This means while the [article](/tags/article) tag can only see posts within the currently viewed section/category/author and so forth, `<txp:article_custom />` can see all posts from all sections, categories and authors unless you restrict it via attributes (see below), thus context-sensitive navigation tags, such as [older](/tags/older) and [newer](/tags/newer), will not work.
 
 `<txp:article_custom />` offers many additional attributes that `<txp:article />` does not.. but only `<txp:article />` will produce the full single article page. If you have only `<txp:article_custom />` on a page, rather than `<txp:article />`, then you will never reach the permalinked article page - you'll always get an article list page.
 
@@ -65,11 +65,11 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `breakby="integer or string"` <span class="footnote warning">v4.7.2+</span>
 : Used to group list items when separating by `break`. If its value is a list of integers, they will be used as groups size. For example, `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
-: Otherwise, the value is evaluated on each loop and `break` happens as soon as it changes. Note that `string` must be enclosed in *double* quotes (see Example 7 of [article](/tags/article) tag).
+: Otherwise, the value is evaluated on each loop and `break` happens as soon as it changes. Note that `string` must be enclosed in *double* quotes (see Example 7 of [article](/tags/reference/article) tag).
 : **Default:** `1` (actually unset).
 
 `breakform="form name"` <span class="footnote warning">v4.7.2+</span>
-: A form to be used as `break`, generally jointly with `breakby` attribute. The special `<+>` pattern in this form will be replaced with the list "chunk" accumulated when break happens (see Example 7 of [article](/tags/article) tag).
+: A form to be used as `break`, generally jointly with `breakby` attribute. The special `<+>` pattern in this form will be replaced with the list "chunk" accumulated when break happens (see Example 7 of [article](/tags/reference/article) tag).
 : **Default:** unset.
 
 `category="category name"`
@@ -227,7 +227,7 @@ Then create an 'article' type form template called `homepage_articles`, containi
 </article>
 ~~~
 
-Other tags used: [article_image](/tags/article_image), [body](/tags/body), [if_article_image](/tags/if_article_image), [title](/tags/title).
+Other tags used: [article_image](/tags/reference/article_image), [body](/tags/reference/body), [if_article_image](/tags/reference/if_article_image), [title](/tags/title).
 
 ### Example 2: List articles published in specified month
 
@@ -261,7 +261,7 @@ This code will display articles that have a authored by author with login name o
 </p>
 ~~~
 
-Other tags used: [permlink](/tags/permlink), [title](/tags/title).
+Other tags used: [permlink](/tags/reference/permlink), [title](/tags/title).
 
 ### Example 4b: Select by author (using container tag)
 
@@ -277,7 +277,7 @@ Other tags used: [permlink](/tags/permlink), [title](/tags/title).
 
 This is exactly equivalent to **Example 3a**, just using a container tag instead of a single tag with referenced form.
 
-Other tags used: [permlink](/tags/permlink), [title](/tags/title).
+Other tags used: [permlink](/tags/reference/permlink), [title](/tags/reference/title)./reference
 
 ### Example 5: Combined with custom fields
 
