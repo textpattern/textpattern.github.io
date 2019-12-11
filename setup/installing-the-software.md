@@ -3,7 +3,7 @@ layout: document
 category: Setup and Configuration
 published: true
 title: Installing the software
-description: From download to log in: a complete guide to installing Textpattern.
+description: From download to log in — a complete guide to installing Textpattern.
 ---
 
 # Installing Textpattern
