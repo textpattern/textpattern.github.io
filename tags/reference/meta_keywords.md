@@ -34,7 +34,7 @@ The other is to output raw keyword text anywhere else:
 {your article keywords}
 ~~~
 
-Context of use must be within a single article (as opposed to an article list). The tag can be added directly in [Page templates](/themes/page-templates-explained) or as part of 'article' type [Form templates](/themes/form-templates-explained). Either way, you may also place it in a given article tag.
+Context of use must be within a single article (as opposed to an article list). The tag can be added directly in [page templates](/build/site-structures#page-templates), or as part of 'article' type [form templates](/build/site-structures#form-templates). Either way, you may also place it in a given article tag.
 
 Note: The corresponding keywords field has a 255 character limit by default, which includes spaces and commas. This is the MySQL database default. You can edit the default using [phpMyAdmin](https://www.phpmyadmin.net), for example.
 {: .alert-block .information}
