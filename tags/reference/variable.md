@@ -31,7 +31,7 @@ If used as a *container* tag, the result of the contained statements are assigne
 </txp:variable>
 ~~~
 
-Note: Avoid entering white space characters for better code readability between the opening and closing *variable* tags, they will lead to falsified results in the [if_variable](/tags/if_variable) evaluation.
+Note: Avoid entering white space characters for better code readability between the opening and closing *variable* tags, they will lead to falsified results in the [if_variable](/tags/reference/if_variable) evaluation.
 {: .alert-block .information}
 
 ## Attributes
@@ -65,7 +65,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ### Example 1: Store site-wide constants
 
-Allows you to define constants at a single location (e.g. [Form templates](/build/form-templates-explained), or even at the top of page templates, and use them elsewhere later on.
+Allows you to define constants at a single location (e.g. in form templates, or even at tops of page templates) and use them elsewhere later on.
 
 Somewhere at the very beginning of a template you would define names and values, just like you do on your desktop calculator's 'memory' keys:
 
