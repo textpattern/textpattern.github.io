@@ -50,7 +50,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 Outputs the text 'older' inside the `<txp:older />` tag, respecting the current Textpattern language, instead of using the tag like this: `<txp:older>older</txp:older>` which would always render the English text 'older', it replaces the contents with the value assigned to the name 'older' in the current language. So you would see a link with the word 'älter' if you were using German `de` as the Textpattern site language.
 
-Other tags used: [older](/tags/reference/older).
+Other tags used: [older](/tags/older).
 
 ## Genealogy
 

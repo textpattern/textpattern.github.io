@@ -48,7 +48,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 Shows the current article title as the page heading, a few other pieces of information such as the article's author and posted date, then the article body itself.
 
-Other tags used: [author](/tags/reference/author), [posted](/tags/reference/posted), [body](/tags/reference/body).
+Other tags used: [author](/tags/author), [posted](/tags/posted), [body](/tags/body).
 
 ### Example 2: Display a hyperlinked title
 
@@ -60,4 +60,4 @@ Other tags used: [author](/tags/reference/author), [posted](/tags/reference/post
 
 Wraps a permanent link to the current article around its title.
 
-Other tags used: [permlink](/tags/reference/permlink).
+Other tags used: [permlink](/tags/permlink).
