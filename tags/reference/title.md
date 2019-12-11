@@ -28,9 +28,9 @@ The **title** tag is a *single* tag which is used to return the title of the art
 Tag will accept the following attributes (**case-sensitive**):
 
 `no_widow="boolean"`
-: Control [widows](https://en.wikipedia.org/wiki/Widows_and_orphans) and overrule 'widows' setting in the [Preferences panel](/administration/preferences-panel).
+: Control [widows](https://en.wikipedia.org/wiki/Widows_and_orphans) and overrule 'widows' setting in the Preferences panel.
 : **Values:** `0` allow the last word in the title to appear on its own line, i.e. the title content is rendered unchanged, `1` ensure the last word is not left on its own line - Textpattern inserts an invisible code (a non-breaking space) between the last two words.
-: **Default:** as set in the [Preferences panel](/administration/preferences-panel).
+: **Default:** as set in the Preferences panel.
 
 ## Examples
 
@@ -48,7 +48,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 Shows the current article title as the page heading, a few other pieces of information such as the article's author and posted date, then the article body itself.
 
-Other tags used: [author](/tags/author), [posted](/tags/posted), [body](/tags/body).
+Other tags used: [author](/tags/reference/author), [posted](/tags/reference/posted), [body](/tags/reference/body).
 
 ### Example 2: Display a hyperlinked title
 
@@ -60,4 +60,4 @@ Other tags used: [author](/tags/author), [posted](/tags/posted), [body](/tags/bo
 
 Wraps a permanent link to the current article around its title.
 
-Other tags used: [permlink](/tags/permlink).
+Other tags used: [permlink](/tags/reference/permlink).

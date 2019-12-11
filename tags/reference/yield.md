@@ -74,7 +74,7 @@ And the result will be:
 </div>
 ~~~
 
-Other tags used: [output_form](/tags/output_form).
+Other tags used: [output_form](/tags/reference/output_form).
 
 ## Genealogy
 

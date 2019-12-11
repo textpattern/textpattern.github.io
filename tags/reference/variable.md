@@ -65,7 +65,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ### Example 1: Store site-wide constants
 
-Allows you to define constants at a single location (e.g. [Form templates](/themes/form-templates-explained), or even at the top of [Page templates](/themes/page-templates-explained)) and use them elsewhere later on.
+Allows you to define constants at a single location (e.g. [Form templates](/build/form-templates-explained), or even at the top of page templates, and use them elsewhere later on.
 
 Somewhere at the very beginning of a template you would define names and values, just like you do on your desktop calculator's 'memory' keys:
 
@@ -96,7 +96,7 @@ Later down the Page template or in a separate Form template you can read the att
 </txp:if_variable>
 ~~~
 
-Other tags used: [else](/tags/else), [if_category](/tags/if_category), [if_search](/tags/if_search), [if_variable](/tags/if_variable), [search_term](/tags/search_term).
+Other tags used: [else](/tags/reference/else), [if_category](/tags/reference/if_category), [if_search](/tags/reference/if_search), [if_variable](/tags/reference/if_variable), [search_term](/tags/reference/search_term).
 
 ### Example 2: Use any tag's value as a conditional expression
 
@@ -119,7 +119,7 @@ The variable 'foo' can then be used as a conditional later in the code.
 
 The conditional is saying if there is a variable named 'foo' having a specific value of 'example.com/bar/baz', then output what is defined, i.e. 'do this'.
 
-Other tags used: [if_variable](/tags/if_variable).
+Other tags used: [if_variable](/tags/reference/if_variable).
 
 ### Example 3: Check if this is the first page of a page group
 
@@ -132,7 +132,7 @@ Other tags used: [if_variable](/tags/if_variable).
 </txp:if_variable>
 ~~~
 
-Other tags used: [else](/tags/else), [if_variable](/tags/if_variable), [page_url](/tags/page_url).
+Other tags used: [else](/tags/reference/else), [if_variable](/tags/reference/if_variable), [page_url](/tags/reference/page_url).
 
 ### Example 4: Output a counter in an article list
 
@@ -142,7 +142,7 @@ Other tags used: [else](/tags/else), [if_variable](/tags/if_variable), [page_url
 </txp:article>
 ~~~
 
-Other tags used: [article](/tags/article), [title](/tags/title).
+Other tags used: [article](/tags/reference/article), [title](/tags/reference/title).
 
 ## Genealogy
 

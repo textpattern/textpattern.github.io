@@ -21,9 +21,9 @@ tags:
 <txp:thumbnail />
 ~~~
 
-The **thumbnail** tag is a *single* tag that Textpattern will replace with the `<img src="…">` HTML tag matching the thumbnail image of the numeric `id` assigned by Textpattern when the parent image was uploaded via the Textpattern [Images panel](/administration/images-panel).
+The **thumbnail** tag is a *single* tag that Textpattern will replace with the `<img src="…">` HTML tag matching the thumbnail image of the numeric `id` assigned by Textpattern when the parent image was uploaded via the Textpattern Images panel.
 
-By default, the tag is context-sensitive: if an `id` or `name` attribute is not specified, it can be used inside an [images](/tags/images) tag or form to output an `<img src="…">` HTML tag matching the thumbnail of the current image.
+By default, the tag is context-sensitive: if an `id` or `name` attribute is not specified, it can be used inside an [images](/tags/reference/images) tag or form to output an `<img src="…">` HTML tag matching the thumbnail of the current image.
 
 ## Attributes
 
@@ -42,7 +42,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `id="integer"`
-: Specifies the `id` assigned at upload of the image to display. Can be found on the Textpattern [Images panel](/administration/images-panel). If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](/tags/images) tag or form.
+: Specifies the `id` assigned at upload of the image to display. Can be found on the Textpattern Images panel. If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](/tags/reference/images) tag or form.
 
 `link="boolean"` <span class="footnote warning">v4.0.6+</span>
 : If set, the thumbnail will be rendered as a (non-Javascript) URL link to the full-size image.
@@ -54,7 +54,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** unset.
 
 `name="image name"`
-: Specifies which image thumbnail to display by its image name as shown on the Textpattern [Images panel](/administration/images-panel).
+: Specifies which image thumbnail to display by its image name as shown on the Textpattern Images panel.
 
 `poplink="boolean"` (Deprecated from version 4.7.0)
 : If set, the image will be rendered in a popup window.
@@ -98,7 +98,7 @@ Displays the image thumbnail for the image uploaded as ID #23.
 </txp:images>
 ~~~
 
-Displays thumbnails for all images found by the [images](/tags/images) tag.
+Displays thumbnails for all images found by the [images](/tags/reference/images) tag.
 
 ## Genealogy
 
@@ -108,7 +108,7 @@ Displays thumbnails for all images found by the [images](/tags/images) tag.
 
 ### Version 4.3.0
 
-Added context sensitivity within [images](/tags/images) tag.
+Added context sensitivity within [images](/tags/reference/images) tag.
 
 ### Version 4.2.0
 
