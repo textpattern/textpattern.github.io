@@ -21,14 +21,14 @@ tags:
 <txp:modified />
 ~~~
 
-The **modified** tag is a *single* tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the [Preferences panel](/administration/preferences-panel).
+The **modified** tag is a *single* tag which is used to return the modification date of the article being displayed. The format is determined by the settings specified in the Date Format, or Archive Date Format, fields in the Preferences panel.
 
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
 
 `format="format string"`
-: Override the default date format set in the [Preferences panel](/administration/preferences-panel).
+: Override the default date format set in the Preferences panel.
 : **Values:** any valid [strftime](https://secure.php.net/strftime) string values.
 : **Default:** the 'Archive date format' set in preferences.
 
@@ -40,7 +40,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `lang="ISO language code"`
 : Format time string suitable for the specified language (locale).
 : **Values:** locales adhere to [ISO-639](https://en.wikipedia.org/wiki/ISO_639-2).
-: **Default:** unset (time format set in the [Preferences panel](/administration/preferences-panel).
+: **Default:** unset (time format set in the Preferences panel.
 
 ### Common presentational attributes
 
