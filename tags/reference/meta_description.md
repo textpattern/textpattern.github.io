@@ -83,7 +83,7 @@ The above will output description metadata with `content="` populated with the t
 
 The above will output the description as a raw value (not enclosed in a `<meta>` tag) populated with the text set in the article's 'Description' field.
 
-Other tags used: [if_individual_article](/tags/if_individual_article).
+Other tags used: [if_individual_article](/tags/reference/if_individual_article).
 
 ### Example 3: Display section meta description as tooltip in section list
 
@@ -95,7 +95,7 @@ Other tags used: [if_individual_article](/tags/if_individual_article).
 </txp:section_list>
 ~~~
 
-Other tags used: [section_list](/tags/section_list), [section](/tags/section).
+Other tags used: [section_list](/tags/reference/section_list), [section](/tags/reference/section).
 
 ### Example 4: Override automatic type
 
@@ -121,7 +121,7 @@ The first time the tag is used in the `<head>`, the section meta description wil
 
 The second instance is only shown if on a landing page, and will force the display of the section meta description as an introductory paragraph.
 
-Other tags used: [section](/tags/section), [if_article_list](/tags/if_article_list), [article](/tags/article).
+Other tags used: [section](/tags/reference/section), [if_article_list](/tags/reference/if_article_list), [article](/tags/reference/article).
 
 ## Genealogy
 
