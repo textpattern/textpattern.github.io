@@ -407,18 +407,18 @@ These callbacks all have the same `$event` called `admin_criteria`.
 
 Panel | `$step`
 ---|---
-[Articles](/administration/articles-panel) | `list_list`
-[Comments](/administration/comments-panel) | `discuss_list`
-[Files](/administration/files-panel) | `file_list`
-[Forms](/administration/forms-panel) | `form_list`
-[Images](/administration/images-panel) | `image_list`
-[Links](/administration/links-panel) | `link_list`
-[Pages](/administration/pages-panel) | `page_list`
-[Sections](/administration/sections-panel) | `section_list`
-[Styles](/administration/styles-panel) | `css_list`
-[Themes](/administration/themes-panel) | `skin_list`
-[Users](/administration/users-panel) | `author_list`
-[Visitor logs](/administration/visitor-logs-panel) | `log_list`
+Articles | `list_list`
+Comments | `discuss_list`
+Files | `file_list`
+Forms | `form_list`
+Images | `image_list`
+Links | `link_list`
+Pages | `page_list`
+Sections | `section_list`
+Styles | `css_list`
+Themes | `skin_list`
+Users | `author_list`
+Visitor logs | `log_list`
 
 ### Admin-side validation callbacks
 
@@ -433,12 +433,12 @@ These additional arguments are all passed by reference to your application, so y
 
 Panel | `$event` | `$step`
 ---|---|---
-[Articles](/administration/content/articles-panel) | `article_ui` | `validate_save`
-[Articles](/administration/content/articles-panel) | `article_ui` | `validate_publish`
-[Comments](/administration/content/comments-panel) | `discuss_ui` | `validate_save`
-[Files](/administration/content/files-panel)       | `file_ui`    | `validate_save`
-[Images](/administration/content/images-panel)     | `image_ui`   | `validate_save`
-[Links](/administration/content/links-panel)       | `link_ui`    | `validate_save`
+Articles | `article_ui` | `validate_save`
+Articles | `article_ui` | `validate_publish`
+Comments | `discuss_ui` | `validate_save`
+Files    | `file_ui`    | `validate_save`
+Images   | `image_ui`   | `validate_save`
+Links    | `link_ui`    | `validate_save`
 
 ### Admin-side theme callbacks
 
@@ -528,6 +528,11 @@ function abc_my_function($evt, $stp, &$data)
 * **When it occurs:** After a preference value has been successfully renamed.
 * **What it allows:** To do any additional processing after a preference name has been changed.
 * **Additional parameter:** An array containing the preference's original `name`, its `newname` and `user_name` to whom it is assigned. The `user_name` will be `null` if it's a core preference value.
+
+`txp.article` > `neighbour.criteria`
+* **When it occurs:** Before the next/prev article button is rendered in the Write panel.
+* **What it allows:** To append a clause to the SQL that determines which article comes before or after the current one.
+* **Additional parameter:** An array containing the current article's `ID`, `whichway` (the direction in which the button is being rendered: 'next' or 'prev') and the timestamp of the current article `sPosted`.
 
 ## Plugin callbacks
 
