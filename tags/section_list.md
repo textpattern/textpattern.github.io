@@ -114,7 +114,7 @@ These attributes, which affect presentation, are shared by many tags. Note that 
 : HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
 : **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
 
-{{ include common-atts.html class="tag name or unset" }}
+{% include common-atts.html class="tag name or unset" %}
 
 ## Examples
 
