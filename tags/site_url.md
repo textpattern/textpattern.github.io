@@ -31,6 +31,10 @@ Tag will accept the following attribute (**case-sensitive**):
 : Specify this if you wish to return the URL to the admin-side instead of the public site.
 : **Default:** unset.
 
+`trim="/"` <span class="footnote warning">v4.7.0+</span>
+: Specify this if you wish to return the URL without the trailing slash on the public site.
+: **Default:** unset.
+
 ## Examples
 
 ### Example 1: Maintain accurate domain paths
