@@ -70,8 +70,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 ### Themes
 {: .index-docs-theme}
 
-* [Themes index](/themes/index.html)
-* [Themes: A complete walk-through](/themes/themes-a-complete-walk-through)
+* [Themes: Creating, using, and sharing](/build/themes-creating-using-and-sharing)
 * [Creating a custom administration theme](/themes/creating-a-custom-administration-theme)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
 {: .list--no-bullets}
