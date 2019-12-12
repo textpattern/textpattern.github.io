@@ -1,0 +1,18 @@
+<h3 id="common-presentational-attributes">Common presentational attributes</h3>
+
+<p>These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.</p>
+
+<dl>
+{% for att in include.atts %}
+   {% if {{att}} == "class" %}
+      <dt><code class="highlighter-rouge language-plaintext">class="class name"</code></dt>
+      <dd>HTML <code class="highlighter-rouge language-plaintext">class</code> to apply to the <code class="highlighter-rouge language-plaintext">wraptag</code> attribute value, if set, otherwise to the <code class="highlighter-rouge language-plaintext">&lt;img&gt;</code> tag.</dd>
+      <dd><strong>Default:</strong> unset (see <a href="/tags/tag-attributes-cross-reference#class">class cross-reference</a>).</dd>
+   {% endif %}
+   {% if {{att}} == "style" %}
+      <dt><code class="highlighter-rouge language-plaintext">style="style rule"</code></dt>
+      <dd>Inline CSS <code class="highlighter-rouge language-plaintext">style</code> rule. It’s recommended that you assign CSS rules via <code class="highlighter-rouge language-plaintext">class</code> attribute instead.</dd>
+      <dd><strong>Default:</strong> unset.</dd>
+   {% endif %}
+{% endfor %}
+</dl>
