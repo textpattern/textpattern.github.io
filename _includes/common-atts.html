@@ -24,7 +24,7 @@
 {% if include.escape %}
     <dt><code class="highlighter-rouge language-plaintext">escape"entities"</code> <span class="footnote warning"><strong>Global v4.7.0+</strong></span></dt>
     <dd>Escape <a href="https://developer.mozilla.org/en-US/docs/Glossary/Entity">HTML entities</a> or other tags.</dd>
-    <dd><strong>Default:</strong> {{ include.escape}} (see <a href="/tags/tag-attributes-cross-reference#escape">escape cross-reference</a> and <a href="/tags/tag-basics/tag-escaping">tag escaping</a> for details).</dd>
+    <dd><strong>Default:</strong> {% if include.escape == "" %}html{% else %}{{ include.escape }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#escape">escape cross-reference</a> and <a href="/tags/tag-basics/tag-escaping">tag escaping</a> for details).</dd>
 {% endif %}
 
 {% if include.label %}
