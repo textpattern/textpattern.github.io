@@ -86,7 +86,7 @@ Each field in the `textpattern` database table can be used as a sort key. \\
 When viewing a search results list, `score` (how well the search terms match the article) is available as an additional value.
 : **Default:** `name asc`.
 
-{% include common-atts.html break="br" breakby="unset" class="tag name or unset" escape="html" label="unset" labeltag="unset" wraptag="unset" %}
+{% include common-atts.html break="br" breakby="unset" class="tag name or unset" escape label="unset" labeltag="unset" wraptag="unset" %}
 
 ## Examples
 
