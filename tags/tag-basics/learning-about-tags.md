@@ -462,11 +462,49 @@ More important than character count is your understanding of the resulting marku
 
 In summary, mixed markup is generally easier for new Textpattern users to grasp, until they've become more familiar with the scope of Textpattern tag functionality. Advanced users of Textpattern generally prefer the integrated notation because it saves character space and often delivers more powerful constructs with fewer conditionals. But it doesn't matter either way, as long as the markup is constructed correctly in relation to how Textpattern functions.
 
+## Incorrect tag contexts
+
+Contexts have been touched upon earlier: Textpattern automatically switches context based on the type of URL to which a visitor navigates as they browse your site. Conditional tags may respond to this context to perform actions, but certain Textpattern tags are only intended for use in particular places. What if you use a tag in an incorrect context? In this case, when your site is in *Testing* or *Debugging* mode, Textpattern will usually warn you with a message similar to this:
+
+> "Article tags cannot be used outside an article context."
+
+That tells you that you shouldn't use the named tag where you have placed it.
+
+'Article' form tags only work in an **article context**. They refer to one single article, so they can only be used in a context that identifies one particular article. Specifically, they may be used:
+
+* On individual article page templates.
+* In form templates of type 'article' that have been displayed using a `<txp:article … />` or `<txp:article_custom … />` tag.
+* On list page templates if the tags are wrapped in `<txp:if_individual_article>…</txp:if_individual_article>`.
+
+Article context tags will not work directly in article list page templates, because list pages are not associated with any single article.
+
+Similarly, 'Comment' form tags may only be used in the form that is used to display each individual comment (usually named `comments`); 'File' form and 'Link' form tags operate likewise.
+
+The following contexts are recognised by Textpattern:
+
+; Article
+: Any individual article
+; Author
+: Any URL of the type <code>example.org/author/Author+Name</code>
+; Category
+: Any URL of the type <code>example.org/category/category-name</code> or inside a <code>&lt;txp:category_list&gt;…&lt;/txp:category_list&gt;</code> container.
+; Category asset
+: Any URL of the type: <code>example.org/category/article/category-name</code>, <code>example.org/category/image/category-name</code>, <code>example.org/category/file/category-name</code>, <code>example.org/category/link/category-name</code>
+; Comment
+: Comments areas within an article.
+; Image
+: Any individual image when using an <code>id</code> attribute, or inside a <code>&lt;txp:images&gt;…&lt;/txp:images&gt;</code> container.
+; File
+: Any individual file when using an <code>id</code> attribute, or inside a <code>&lt;txp:file_download_list&gt;…&lt;/txp:file_download_list&gt;</code> container
+; Link
+: Any individual link when using an <code>id</code> attribute, or inside a <code>&lt;txp:linklist&gt;…&lt;/txp:linklist&gt;</code> container.
+; Section
+: Any individual section when using a <code>name</code> attribute, or inside a <code>&lt;txp:section_list&gt;…&lt;/txp:section_list&gt;</code> container.
+
 TODO:
 
 
 3. [Tag nesting](/tags/tag-basics/tag-nesting)
 4. [Parsing tag attributes](/tags/tag-basics/parsing-tag-attributes)
 5. [Parser and passes](/tags/tag-basics/parser-and-passes)
-6. [Incorrect tag contexts](/tags/tag-basics/incorrect-tag-contexts)
 8. [Tag escaping](/tags/tag-basics/tag-escaping)
