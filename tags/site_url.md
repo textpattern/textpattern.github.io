@@ -31,10 +31,6 @@ Tag will accept the following attribute (**case-sensitive**):
 : Specify this if you wish to return the URL to the admin-side instead of the public site.
 : **Default:** unset.
 
-`trim="/"` <span class="footnote warning">v4.7.0+</span>
-: Specify this if you wish to return the URL without the trailing slash on the public site.
-: **Default:** unset.
-
 ## Examples
 
 ### Example 1: Maintain accurate domain paths
@@ -72,6 +68,12 @@ In the `<head>` section of your HTML pages you might have a variety of links to 
 
 ~~~ html
 <a href="<txp:site_url type="admin" />">Login to Textpattern here</a>
+~~~
+
+### Example 5: Parse site url without the trailing slash
+
+~~~ html
+<a href="<txp:site_url trim="/" />">Login to Textpattern here</a>
 ~~~
 
 ## Genealogy
