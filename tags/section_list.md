@@ -86,33 +86,7 @@ Each field in the `textpattern` database table can be used as a sort key. \\
 When viewing a search results list, `score` (how well the search terms match the article) is available as an additional value.
 : **Default:** `name asc`.
 
-### Common presentational attributes
-
-These attributes, which affect presentation, are shared by many tags. Note that default values can vary among tags.
-
-`break="value"`
-: Where value is an HTML element, specified without brackets (e.g. `break="li"`) or some string to separate list items.
-: **Default:** `br` (but see [break cross-reference](/tags/tag-attributes-cross-reference#break) for exceptions).
-
-`breakby="integer"` <span class="footnote warning">v4.7.0+</span>
-: Used to group list items when separating by `break`. Possible values are lists of integers, like `2` (groups of 2 items) or `1,2` (alternate groups of 1 and 2 items).
-: **Default:** `1` (actually unset).
-
-`class="class name"`
-: HTML `class` to apply to the `wraptag` attribute value.
-: **Default:** tag name or unset (see [class cross-reference](/tags/tag-attributes-cross-reference#class)).
-
-`label="text"`
-: Label prepended to item.
-: **Default:** unset (but see [label cross-reference](/tags/tag-attributes-cross-reference#label) for exceptions).
-
-`labeltag="element"`
-: HTML element to wrap (markup) label, specified without brackets (e.g. `labeltag="h3"`).
-: **Default:** unset.
-
-`wraptag="element"`
-: HTML element to wrap (markup) list block, specified without brackets (e.g. `wraptag="ul"`).
-: **Default:** unset (but see [wraptag cross-reference](/tags/tag-attributes-cross-reference#wraptag) for exceptions).
+{% include common-atts.html break="br" breakby="unset" class="tag name or unset" escape="html" label="unset" labeltag="unset" wraptag="unset" %}
 
 ## Examples
 
