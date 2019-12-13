@@ -2,9 +2,11 @@
 
 Textpattern documentation grouped by '{{ include.group }}':
 
+{% capture match_term %}{{ include.group }}{% endcapture %}
+
 <ol class="list--no-bullets">
     {% for page in site.pages %}
-        {% if page.tags contains "{{ include.group }}" %}
+        {% if page.tags contains '{{ match_term }}' %}
             {% include article-listing.html %}
         {% endif %}
     {% endfor %}
