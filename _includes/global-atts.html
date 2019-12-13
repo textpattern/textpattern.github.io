@@ -6,12 +6,12 @@
     <dt><code class="highlighter-rouge language-plaintext">class="class name"</code></dt>
     <dd>HTML <code class="highlighter-rouge language-plaintext">class</code> to apply to the wrapper.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
-    <dd><strong>Default:</strong> {% if include.class == "" %}unset{% else %}{{ include.class }}{% endif %}.</dd>
+    <dd><strong>Default:</strong> {% if include.class == null %}unset{% else %}{{ include.class }}{% endif %}.</dd>
 
     <dt><code class="highlighter-rouge language-plaintext">default="value"</code></dt>
     <dd>The value to display if the tag’s output is blank.</dd>
     <dd><strong>Values:</strong> Any.</dd>
-    <dd><strong>Default:</strong> {% if include.default != null %}{{ include.default }}{% else %}unset{% endif %}.</dd>
+    <dd><strong>Default:</strong> {% if include.default == null %}unset{% else %}{{ include.default }}{% endif %}.</dd>
 
     <dt><code class="highlighter-rouge language-plaintext">escape="list, of, transforms"</code></dt>
     <dd>The transforms to apply to the output. See <a href="/tags/tag-basics/learning-about-tags#tag-escaping">tag escaping</a> for details).</dd>
@@ -32,40 +32,40 @@
         <code class="highlighter-rouge language-plaintext">quote</code>,
         tags,
         <code class="highlighter-rouge language-plaintext">textile</code>.</dd>
-    <dd><strong>Default:</strong> {% if include.escape == "" %}html{% else %}{{ include.escape }}{% endif %}.</dd>
+    <dd><strong>Default:</strong> {% if include.escape == null %}html{% else %}{{ include.escape }}{% endif %}.</dd>
 
     <dt><code class="highlighter-rouge language-plaintext">html_id="value"</code></dt>
     <dd>HTML <code class="highlighter-rouge language-plaintext">id</code> to apply to the wrapper.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
-    <dd><strong>Default:</strong> {% if include.html_id == "" %}unset{% else %}{{ include.html_id }}{% endif %}.</dd>
+    <dd><strong>Default:</strong> {% if include.html_id == null %}unset{% else %}{{ include.html_id }}{% endif %}.</dd>
 
     <dt><code class="highlighter-rouge language-plaintext">label="value"</code></dt>
     <dd>The label to display before the output.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
-    <dd><strong>Default:</strong> {% if include.label == "" %}unset{% else %}{{ include.label }}{% endif %}.</dd>
+    <dd><strong>Default:</strong> {% if include.label == null %}unset{% else %}{{ include.label }}{% endif %}.</dd>
 
     <dt><code class="highlighter-rouge language-plaintext">labeltag="tag"</code></dt>
     <dd>The tag (without angle brackets) to wrap the label.</dd>
     <dd><strong>Values:</strong> Any valid HTML tag, e.g. <code class="highlighter-rouge language-plaintext">h3</code> or <code class="highlighter-rouge language-plaintext">div</code>.</dd>
-    <dd><strong>Default:</strong> {% if include.labeltag == "" %}unset{% else %}{{ include.labeltag }}{% endif %}.</dd>
+    <dd><strong>Default:</strong> {% if include.labeltag == null %}unset{% else %}{{ include.labeltag }}{% endif %}.</dd>
 
     <dt><code class="highlighter-rouge language-plaintext">not="boolean"</code></dt>
     <dd>Switch <code class="highlighter-rouge language-plaintext"><txp:else /></code> parts.</dd>
     <dd><strong>Values:</strong> 0 (no) or 1 (yes).</dd>
-    <dd><strong>Default:</strong> {% if include.not == "" %}unset (0){% else %}{{ include.not }}{% endif %}.</dd>
+    <dd><strong>Default:</strong> {% if include.not == null %}unset (0){% else %}{{ include.not }}{% endif %}.</dd>
 
     <dt><code class="highlighter-rouge language-plaintext">trim="string or regex"</code></dt>
     <dd>Remove the matching patterns from the output.</dd>
     <dd><strong>Values:</strong> Any.</dd>
-    <dd><strong>Default:</strong> {% if include.trim == "" %}unset{% else %}{{ include.trim }}{% endif %}.</dd>
+    <dd><strong>Default:</strong> {% if include.trim == null %}unset{% else %}{{ include.trim }}{% endif %}.</dd>
 
     <dt><code class="highlighter-rouge language-plaintext">wrapform="form name"</code></dt>
     <dd>The form to be used as <code class="highlighter-rouge language-plaintext">wraptag</code>. Handy if the wraptag pattern is too long, or is reused.</dd>
     <dd><strong>Values:</strong> Any defined form name.</dd>
-    <dd><strong>Default:</strong> {% if include.wrapform == "" %}unset{% else %}{{ include.wrapform }}{% endif %}.</dd>
+    <dd><strong>Default:</strong> {% if include.wrapform == null %}unset{% else %}{{ include.wrapform }}{% endif %}.</dd>
 
     <dt><code class="highlighter-rouge language-plaintext">wraptag="tag or pattern"</code></dt>
     <dd>The tag (without angle brackets) to wrap the output.</dd>
     <dd><strong>Values:</strong> HTML tag or a string containing <code class="highlighter-rouge language-plaintext"><+></code> pattern that will be replaced by the output.</dd>
-    <dd><strong>Default:</strong> {% if include.wraptag == "" %}unset{% else %}{{ include.wraptag }}{% endif %}.</dd>
+    <dd><strong>Default:</strong> {% if include.wraptag == null %}unset{% else %}{{ include.wraptag }}{% endif %}.</dd>
 </dl>
