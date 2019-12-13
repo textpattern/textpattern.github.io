@@ -1,0 +1,7 @@
+<ol class="list--no-bullets">
+    {% for page in site.pages %}
+        {% if page.tags contains '{{ include.group }}' %}
+            {% include article-listing.html %}
+        {% endif %}
+    {% endfor %}
+</ol>
