@@ -251,23 +251,31 @@ Similarly, 'Comment' form tags may only be used in the form that is used to disp
 
 The following contexts are recognised by Textpattern:
 
-; Article
+Article
 : Any individual article
-; Author
+
+Author
 : Any URL of the type <code>example.org/author/Author+Name</code>
-; Category
+
+Category
 : Any URL of the type <code>example.org/category/category-name</code> or inside a <code>&lt;txp:category_list&gt;…&lt;/txp:category_list&gt;</code> container.
-; Category asset
+
+Category asset
 : Any URL of the type: <code>example.org/category/article/category-name</code>, <code>example.org/category/image/category-name</code>, <code>example.org/category/file/category-name</code>, <code>example.org/category/link/category-name</code>
-; Comment
+
+Comment
 : Comments areas within an article.
-; Image
+
+Image
 : Any individual image when using an <code>id</code> attribute, or inside a <code>&lt;txp:images&gt;…&lt;/txp:images&gt;</code> container.
-; File
+
+File
 : Any individual file when using an <code>id</code> attribute, or inside a <code>&lt;txp:file_download_list&gt;…&lt;/txp:file_download_list&gt;</code> container
-; Link
+
+Link
 : Any individual link when using an <code>id</code> attribute, or inside a <code>&lt;txp:linklist&gt;…&lt;/txp:linklist&gt;</code> container.
-; Section
+
+Section
 : Any individual section when using a <code>name</code> attribute, or inside a <code>&lt;txp:section_list&gt;…&lt;/txp:section_list&gt;</code> container.
 
 ## Attributes
