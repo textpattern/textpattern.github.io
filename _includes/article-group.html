@@ -3,7 +3,6 @@
 Textpattern documentation grouped by '{{ include.group }}':
 
 <ol class="list--no-bullets">
-{{site.pages}}
     {% for page in site.pages %}
         {% if page.tags contains {{ include.group }} %}
             {% include article-listing.html %}
