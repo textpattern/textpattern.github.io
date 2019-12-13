@@ -957,28 +957,6 @@ After the first pass, the `<txp:article>` tag will have been established so Text
 
 Actually, `<txp:link_to_next />` tag "knows" it needs the current article data, so it automatically postpones itself to the next pass if these data are not yet available. Hence you don't need to manually "hide" it in _this_ case, but altering the parsing order might be necessary in more complex structures.
 
-### PHP in templates
-
-Multiple passes do have one major restriction: Textpattern will only render PHP (`<txp:php>` tags) in the first pass. If it encounters any such tags or content in later passes, it rejects them and throws the 'PHP is not permitted in Pages' warning.
-
-This is a security measure to prevent PHP code from being injected by malicious content (e.g. if the first pass returned some dodgy PHP that was read from some user input, it would otherwise get executed in pass 2 or higher).
-
-Since PHP is outlawed in passes higher than 2, you may see the error message about it being forbidden, regardless of the setting of your 'Allow PHP in Pages' preference. This can be a head-scratcher, but it's simply a by-product of this security feature.
-
-If you need a PHP code to be used in a tag processed on the second pass, assign its output, if possible, to a variable processed on the _first_ pass:
-
-```
-<txp:variable name="the_year" escape="trim">
-<txp:php>
-echo date('Y');
-</txp:php>
-</txp:variable>
-```
-
-Putting that somewhere near the top of the Page template will run the PHP and assign its content to the variable named `the_year`. Then in your deferred block you can display the contents of this pre-computed variable instead of running the PHP directly:
-
-`<txp:variable name="the_year" />`
-
 ## Options, options… What do I do?
 
 With what's been discussed, it may seem you must learn more advanced ways of working with Textpattern tags. That’s not true. There is no right or wrong way, only the way that makes it easier for you to understand. There’s nothing wrong with writing mixed markup if that’s what makes sense.
