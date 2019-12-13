@@ -21,7 +21,7 @@ The tag fundamentals presented on this page will get you up and running with Tex
 
 ## Anatomy of a tag
 
-Like their HTML/XML counterparts, Textpattern tags come in two main flavours: **self-closed** and **container**. Some may act as both, depending on how you wish to use them. A third type, related to the container, is a **conditional** which allows you to take action if certain conditions are met or not.
+Like their HTML/XML counterparts, Textpattern tags come in two main flavours: **self-closed** and **container**. Some may act as both, depending on how you wish to use them. A third type, related to the container, is a **conditional** that allows you to take action if certain conditions are met or not.
 
 ### Self-closed tags
 
