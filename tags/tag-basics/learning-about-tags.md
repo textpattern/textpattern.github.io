@@ -270,7 +270,7 @@ The following contexts are recognised by Textpattern:
 ; Section
 : Any individual section when using a <code>name</code> attribute, or inside a <code>&lt;txp:section_list&gt;…&lt;/txp:section_list&gt;</code> container.
 
-## Parsing tag attributes
+## Attributes
 
 Most Textpattern tags allow you to specify attributes as key/value pairs to override default behaviour. For example:
 
@@ -467,9 +467,9 @@ The following lists all global attributes that Textpattern can process. All of t
 : HTML `class` and `id` attributes of the wrapper tag.
 : **Values:** any valid string.
 
-## Tag escaping
+### Tag escaping
 
-From Textpattern 4.7.0 onwards, a global `escape` attribute is available which applies to all tags (core tags and plugin tags) that don't treat it natively. Its value is a comma-separated list of 'transforms' that will be applied to the content in the given order. For example:
+A global `escape` attribute is available which applies to all tags (core tags and plugin tags) that don't treat it natively. Its value is a comma-separated list of 'transforms' that will be applied to the content in the given order. For example:
 
 ~~~ html
 <txp:variable name="hello" escape="trim, textile">
@@ -485,7 +485,7 @@ Will output:
 <p>Hello, <em>world</em>!</p>
 ~~~
 
-### Available escape values
+#### Available escape values
 
 `escape="html"` (default)
 : Encode special HTML characters (`"'&<>`).
@@ -541,7 +541,7 @@ Will output:
 `escape="tidy, some-tag"`
 : Remove spaces/newlines, escape any regex characters, then strip any self-closing `<some-tag />`, or unwrap any container `<some-tag>…</some-tag>` in the content.
 
-### Example: Extract a number from a variable
+#### Example: Extract a number from a variable
 
 ~~~ html
 <txp:variable name="amount" value="Price: £1 234.78" />
@@ -552,7 +552,7 @@ Will output:
 
 Outputs `0` without `tidy` (the variable is not a number) and `1234.78` with `tidy`.
 
-### Example: Format a variable with Textile
+#### Example: Format a variable with Textile
 
 ~~~ html
 <txp:variable name="test">
@@ -575,13 +575,13 @@ Without `tidy` it outputs:
 
 With `tidy` it outputs `<strong>This</strong> is a <em>test</em>`.
 
-### Example: Remove all images from Excerpt
+#### Example: Remove all images from Excerpt
 
 ~~~ html
 <txp:excerpt escape="img" />
 ~~~
 
-### Example: Required JSON-LD to validate AMP
+#### Example: Required JSON-LD to validate AMP
 
 Create valid [JSON-LD](https://json-ld.org) for the `<head>` section of an [AMP](https://www.ampproject.org) page, by using `escape="json"` on various tags along with the [smd_thumbnail](https://github.com/Bloke/smd_thumbnail) plugin.
 
