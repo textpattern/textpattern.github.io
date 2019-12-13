@@ -7,6 +7,8 @@ description: A list of Textpattern documentation within the category 'Article ta
 search_omit: true
 ---
 
+# Category: Article tags
+
 Textpattern documentation within the category 'Article tags':
 
 <ol class="list--no-bullets">
