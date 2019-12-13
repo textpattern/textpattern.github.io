@@ -88,7 +88,7 @@ When viewing a search results list, `score` (how well the search terms match the
 
 {% include common-atts.html break="" breakby="" %}
 
-{% include global-atts.html class="tag name or unset" %}
+{% include global-atts.html class="tag name or unset" default="Unset" %}
 
 ## Examples
 
