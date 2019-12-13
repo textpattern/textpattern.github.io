@@ -18,3 +18,7 @@ Textpattern documentation within the category 'Search tags':
         {% endif %}
     {% endfor %}
 </ol>
+
+<!--
+{% include article-group.html group="Search tags" %}
+-->
