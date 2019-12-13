@@ -10,9 +10,9 @@ description: Textpattern tags are shorthand method for calling functions defined
 
 Textpattern tags are an indispensible feature of Textpattern. They provide a markup-like approach to working with Textpattern's core functionality without having to know any PHP. The functions themselves represent content components, their sources, and a means of displaying them.
 
-The tags may be added to Page and/or Form templates in a variety of ways, depending on what you are trying to achieve. The tags act as placeholders for content, which is replaced with the dynamic content output they fetch, as users move from one page to another in your site.
+The tags may be added to page and/or form templates in a variety of ways, depending on what you are trying to achieve. The tags act as placeholders for content, which is replaced with the dynamic content output they fetch, as users move from one page to another in your site.
 
-Below are a series of tag fundamentals, which will get you up and running with Textpattern tags. The entire list of current tags, syntax and examples can be in the [tags reference](/tags/).
+The tag fundamentals presented on this page will get you up and running with Textpattern tags. If all you're after is a reference, the entire list of current tags, syntax and examples can be found in the [tags reference](/tags/).
 
 **On this page**:
 
