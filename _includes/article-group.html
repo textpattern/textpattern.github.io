@@ -1,3 +1,7 @@
+# Group: {{ include.group }}
+
+Textpattern documentation grouped by '{{ include.group }}':
+
 <ol class="list--no-bullets">
     {% for page in site.pages %}
         {% if page.tags contains '{{ include.group }}' %}
