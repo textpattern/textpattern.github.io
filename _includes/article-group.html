@@ -4,6 +4,7 @@ Textpattern documentation grouped by '{{ include.group }}':
 
 <ol class="list--no-bullets">
     {% for page in site.pages %}
+{{page}}
         {% if page.tags contains {{ include.group }} %}
             {% include article-listing.html %}
         {% endif %}
