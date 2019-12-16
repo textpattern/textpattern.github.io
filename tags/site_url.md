@@ -70,7 +70,7 @@ In the `<head>` section of your HTML pages you might have a variety of links to 
 <a href="<txp:site_url type="admin" />">Login to Textpattern here</a>
 ~~~
 
-### Example 5: Parse site url without the trailing slash
+### Example 5: Parse site URL without the trailing slash
 
 ~~~ html
 <a href="<txp:site_url trim="/" />">Login to Textpattern here</a>
