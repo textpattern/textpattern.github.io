@@ -65,15 +65,15 @@ Using your (S)FTP client of choice, connect to your web host’s server, navigat
 
 Again, do not rearrange files in the tree or change their names. Doing so will render Textpattern useless.
 
-If you are *not* using an Apache web server (e.g. you are using [Nginx](/setup/configuring-a-web-server-for-textpattern)), you may exclude the .htaccess file; otherwise, it will be needed.[^htaccess] The .htaccess file is important for handling many things on Apache web servers, such as default URL formatting, 301 redirects, specific use (or not) of ‘www.’, and so forth. You can add additional content to the file, but you should not alter or remove what is there, which Textpattern relies on. The .htaccess file can be safely removed if you run Textpattern a non-Apache web server.[^htaccess]
+If you are *not* using an Apache web server (e.g. you are using [Nginx](/setup/configuring-a-web-server-for-textpattern)), you may exclude the .htaccess file; otherwise, it will be needed.[^htaccess] The .htaccess file is important for handling many things on Apache web servers, such as default URL formatting, 301 redirects, specific use (or not) of ‘www.’, and so forth. You can add additional content to the file, but you should not alter or remove what is there, which Textpattern relies on.
 
-The /files directory is empty by default. It's where content files (.pdf, .docx, .rtf, .epub, .txt, etc.) will go when/if you upload them in the Files panel. Later, when logging in for the first time, you may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel. This is normal, and you will fix that when the time comes. See [Pre-flight checks](#pre-flight-checks).
+The /files directory is empty by default. It's where content files (.pdf, .docx, .rtf, .epub, .txt, etc.) will go if you upload them in the Files panel. Later, when logging in for the first time, you may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel. This is normal, and you will fix that when the time comes. See [Pre-flight checks](#pre-flight-checks).
 
 The /images directory is also empty by default. It's where images will go when you upload them in the Images panel. Again, you may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel when first logging in. See [Pre-flight checks](#pre-flight-checks).
 
 The /textpattern directory contains all the core scripting and functionality. Also where users log into the back-end to administer the site.
 
-The /themes directory is empty by default, but it’s an essential directory if you intend to [export or import themes](/build/themes-creating-using-and-sharing). Each theme will have its own subdirectory inside. You may see a warning about the /themes directory’s `chmod` status (editing rights) at the top of the Themes panel when first logging in. Not this is a different location from the warnings for the /files and /images directories, which appear in the Diagnostics panel. See [Pre-flight checks](#pre-flight-checks).
+The /themes directory is empty by default, but it’s an essential directory if you intend to [export or import themes](/build/themes-creating-using-and-sharing). Each theme will have its own subdirectory inside. You may see a warning about the /themes directory’s `chmod` status (editing rights) at the top of the Themes panel when first logging in. Note this warning is in a different location from those for the /files and /images directories, which appear in the Diagnostics panel. See [Pre-flight checks](#pre-flight-checks).
 
 The css.php file negotiates the front-end stylesheets you create in the Styles panel. If you plan on hosting your CSS as flat files, then this file can be removed. If you store CSS in the database then this file is required.
 
@@ -148,11 +148,11 @@ Beneath the connection verification is a text box containing the contents needed
 
 You need a config.php file in your /textpattern directory with that generated contents pasted into it and saved. It makes no difference how you do this, but there are two common ways.
 
-One way is to use the Download button beneath the textbox to download the pre-filled config.php to your local computer. You would then use your (S)FTP client to upload it to your web server and into the /textpattern directory.
+One way is to use the Download button beneath the textbox in the browser screen to download the pre-filled config.php. You would then use your (S)FTP client to upload it to your web server and into the /textpattern directory.
 
-The other common way is to use the config-dist.php file already in the /textpattern directory (which is otherwise not used). Change the file’s name to config.php, open it, paste in the contents generated from above, making sure to replace *everything* in the file, and save the file.
+The other common way is to use the config-dist.php file (which is otherwise needless). The file is already in the /textpattern directory. Open this file, paste the contents generated from above into it, making sure to replace *everything* in the file, then save and close the file. Then rename it to config.php (i.e. remove the ‘-dist’ part from the name).
 
-Once done, return to the **Add config file** screen in your browser and select the **I did it** button.
+Once done, either way, return to the **Add config file** screen in your browser and select the **I did it** button.
 
 ### Populate database
 
@@ -167,7 +167,7 @@ Supply the following information, and remember the login name and password; you 
 * Password
 * Email address
 
-Underneath this area, you're asked to select the administration side theme you want to use, and the public theme you would like. If you have put any custom or community front-end themes in the /themes directory, they will appear here as options, but you can always [import and use new themes](/build/themes-creating-using-and-sharing) later from the Themes panel. Likewise, administration themes can be changed at any time via the Preferences panel after logging in.
+Underneath this area, you're asked to select the administration theme you want to use, and the public theme you would like. If you have put any custom or community front-end themes in the /themes directory, they will appear here as options, but you can always [import and use new themes](/build/themes-creating-using-and-sharing) later from the Themes panel. Likewise, administration themes can be changed at any time via the Preferences panel after logging in.
 
 When ready, select the Next button to populate the database and get going.
 
