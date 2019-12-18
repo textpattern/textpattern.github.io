@@ -30,27 +30,31 @@ Record the following information when you create the database and keep it handy.
 
 Depending on your web host, your web host account username or ID may be prefixed on the database name and database login. If this is the case for you, it will be evident when creating the database with your web host.
 
-## Download and unpack Textpattern
+## Download and unpack
 
-1. [Download](https://textpattern.com/download) the latest release package (either .zip or .tar.gz, as you prefer).
-2. Unpack the package into a new directory so the files are contained neatly and are easy to see.
+[Download](https://textpattern.com/download) the latest release package (either .zip or .tar.gz, as you prefer).
 
-See the [package file structure](#package-file-structure) for details on what files and directories are contained within it.
+Then unpack it (double-clicking on the compressed file will often do). An uncompressed directory will spring out ready for inspection and use.
 
-## Upload package to web server
+Do not rearrange or rename any directories or files! 
 
-If you intend to use Textpattern to manage the entire website, as most people eventually do, upload the installation package to the root of your web domain, equal to domain.tld. For many hosts, the path to the root looks like this: 
+## Upload to web server
+
+First, decide where you will install Textpattern; either in your web root (e.g. to domain.tld) or in a subdirectory (i.e. domain.tld/subdirectory). The web root is the most common location and a good choice. Textpattern is capable of running your entire website, so why not use it to do so. A subdirectory works just as well, though people generally end up [moving the installation](/setup/moving-textpattern) to the web root later when realizing Textpattern can do more than post blog articles.
+
+For many web hosts, the root path looks like this: 
 
 /users/home/{username}/web/public
 {:.example}
 
-Sometimes the ../public directory is ../public_html. The {username} implies your actual user account name.
+Sometimes the /public directory is /public_html. The {username} implies your actual user account name.
 
-You may, of course, install it in a subdirectory. Some people do this, for example, when first thinking Textpattern should be run as a blog for a larger site, though they generally end up [moving the installation](/setup/moving-textpattern) later when realizing Textpattern can manage everything.
+### Essential package elements 
 
-Using the (S)FTP client, connect to your web host’s server, navigate to your root directory, and upload the following mandatory directories and files from the Textpattern installation package:
+Using your (S)FTP client of choice, connect to your web host’s server, navigate to your web root directory, and upload at least the following directories and files from the Textpattern installation package:
 
 * {:.directory--open} /
+  * {:.document} .htaccess
   * {:.directory} files
   * {:.directory} images
   * {:.directory} textpattern
@@ -59,50 +63,36 @@ Using the (S)FTP client, connect to your web host’s server, navigate to your r
   * {:.document} index.php
 {:.list--files}
 
-Do not rearrange files in the tree or change their names. Doing so will render Textpattern useless.
+Again, do not rearrange files in the tree or change their names. Doing so will render Textpattern useless.
 
-These other directories and files are optional depending on whether you use the features or not:
+If you are *not* using an Apache web server (e.g. you are using [Nginx](/setup/configuring-a-web-server-for-textpattern)), you may exclude the .htaccess file; otherwise, it will be needed.[^htaccess] The .htaccess file is important for handling many things on Apache web servers, such as default URL formatting, 301 redirects, specific use (or not) of ‘www.’, and so forth. You can add additional content to the file, but you should not alter or remove what is there, which Textpattern relies on. The .htaccess file can be safely removed if you run Textpattern a non-Apache web server.[^htaccess]
+
+The /files directory is empty by default. It's where content files (.pdf, .docx, .rtf, .epub, .txt, etc.) will go when/if you upload them in the Files panel. Later, when logging in for the first time, you may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel. This is normal, and you will fix that when the time comes. See [Pre-flight checks](#pre-flight-checks).
+
+The /images directory is also empty by default. It's where images will go when you upload them in the Images panel. Again, you may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel when first logging in. See [Pre-flight checks](#pre-flight-checks).
+
+The /textpattern directory contains all the core scripting and functionality. Also where users log into the back-end to administer the site.
+
+The /themes directory is empty by default, but it’s an essential directory if you intend to [export or import themes](/build/themes-creating-using-and-sharing). Each theme will have its own subdirectory inside. You may see a warning about the /themes directory’s `chmod` status (editing rights) at the top of the Themes panel when first logging in. Not this is a different location from the warnings for the /files and /images directories, which appear in the Diagnostics panel. See [Pre-flight checks](#pre-flight-checks).
+
+The css.php file negotiates the front-end stylesheets you create in the Styles panel. If you plan on hosting your CSS as flat files, then this file can be removed. If you store CSS in the database then this file is required.
+
+The index.php file functions as the front end of your Textpattern site. It's where web users arrive and interact with the dynamic publishing.
+
+[^htaccess]: This type of file is a 'hidden' file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you undertake local development on macOS, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain (S)FTP clients, which typically hide these files until you change settings to show them.
+
+### Non-essential package elements
+
+The remaining directories and files are optional depending on whether you use the features or not:
 
 * {:.directory--open} /
-  * {:.document} .htaccess
   * {:.directory} rpc
   * {:.directory} sites
 {:.list--files}
 
-Pay special attention to the .htaccess[^htaccess] file, which is necessary if you intend to install Textpattern to an Apache web server. You may omit this file if not.
+The /rpc directory contains the XML-RPC functionality; the legacy code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' after first logging in. See [Pre-flight checks](#pre-flight-checks).
 
-All other files in the package are considered optional, and are provided for information only.
-
-[^htaccess]: This type of file is a 'hidden' file, meaning it won't appear in certain file managers unless the file manager is configured to show them. For example, if you undertake local development on macOS, this file won't appear in Finder unless you turn hidden file functionality on. The same goes for certain (S)FTP clients, which typically hide these files until you change settings to show them.
-
-### File system notes
-
-files
-: Empty by default. It's where content files (.pdf, .docx, .rtf, .epub, .txt, etc.) will go when/if you upload them in the Files panel. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
-
-images
-: Empty by default. It's where images will go when you upload them in the Images panel. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
-
-rpc
-: Contains the XML-RPC functionality, which is legacy code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the Preferences panel.
-
-sites
-: Supports multi-site installations managed by one set of core files. It contains a template and instructions (`README.txt`) for doing so. You can safely remove this directory if you're not using this functionality.
-
-textpattern
-: Contains all the core scripting and functionality. Also where users log into the back-end to administer the site.
-
-themes
-: Empty by default. It's where themes will go if you choose to export them to disk from the Themes panel as a backup or for sharing them with others. Each theme has its own subdirectory inside. Note that you may see a warning about the directory's `chmod` status (permissions) at the top of the Themes panel if the web server does not have sufficient write permissions.
-
-.htaccess
-: Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of ‘www.’, and so forth. You can add additional content to the file, but you should not alter or remove the default content, which Textpattern relies on. The .htaccess file can be safely removed if you run Textpattern a non-Apache web server, e.g. [Nginx](/setup/configuring-a-web-server-for-textpattern).
-
-css.php
-: Negotiates the front-end stylesheets you create in the Styles panel. If you plan on hosting your CSS as flat files then this can be removed. If you store CSS in the database then this file is required.
-
-index.php
-: Functions as the front end of your Textpattern site. It's where web users arrive and interact with the dynamic publishing.
+The /sites directory supports multi-site installations managed by one set of core files. It contains a template and instructions (README.txt) for doing so. You can safely remove this directory if you're not using this functionality.
 
 ## Setup via browser
 
@@ -128,7 +118,7 @@ The next screen requests your MySQL database details and site URL. The MySQL det
 
 If you are using the same database for more than one Textpattern site, you will require a unique table prefix for each to avoid table collisions with other instances. If this is the only instance of Textpattern in this database, you may leave this blank.
 
-Textpattern will have automatically filled the *Site URL* field by detecting where your installation files are relative to your web root. Just make sure it's correct and alter it if not. When ready, select the **Next** button.
+Textpattern will have automatically filled the *Site URL* field by detecting where your installation files are relative to your web root. Just make sure it's correct and alter it if not. When ready, select the Next button.
 
 The credentials are checked by establishing a connection to the database. If a problem is detected, you'll be notified and won't advance to the next screen. Check the supplied information carefully and re-enter it until it is correct and you are allowed to proceed.
 
@@ -188,3 +178,24 @@ The final step is a confirmation screen with a link to the administration login 
 The screen will also suggest deleting the /setup directory for security reasons, and to verify in the Diagnostics panel that your installation and configured accurately after logging in.
 
 Congratulations! You've installed one of the best open source CMS systems available.
+
+Now, address those diagnostics.
+
+## Pre-flight checks
+
+As indicated earlier, you may need to correct a couple of things upon first logging in to the back end. The checks are normal and any warnings or errors are easily addressed here.
+
+First, go to the Diagnostics panel (Admin > Diagnostics). Chances are, you will see at least the following two red lines at top of the panel:
+
+<span class=".error">Image directory is not writable: /the/path/to/your/images</span>
+<span class=".error">File directory path is not writable: /the/path/to/your/files</span>
+
+Textpattern is simply letting you know to change the `chmod` permissions on those two directories so you can add content to them.
+
+Next, browse to the Themes panel (Presentation > Themes) and look for a similar warning as noted above, but this time for the /themes directory. Again, the directory just needs a `chmod` adjustment to make the warning go away.
+
+Finally, if you do no intend to use the /rpc directory, go to Admin > Preferences > Admin and ensure you have ‘No’ selected for ‘Enable XML-RPC server?’.
+
+If you happen to have any other kinds of warnings in your Diagnostics panel, see [Troubleshooting diagnostics](/setup/troubleshooting-diagnostics). Otherwise, you should be seeing a satisfying green message saying <span class=".success">All checks pass!</span>
+
+ 
