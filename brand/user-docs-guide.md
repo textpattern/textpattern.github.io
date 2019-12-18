@@ -328,32 +328,36 @@ Never use `blockquote` to mark up example boxes, note boxes, or any other miscel
 
 [^blockquotes]: HTML 5.2: W3C Recommendation, World Wide Consortium, 14 December 2017, [w3.org/TR/html52/grouping-content.html#the-blockquote-element](https://www.w3.org/TR/html52/grouping-content.html#the-blockquote-element), accessed 14 November 2019.
 
-### Paths, directories, and file names
+### URIs, directory paths, and file names
 
-This scope includes uniform resource identifiers (e.g. URLs), absolute or relative file paths, and individual directory or file names. The formatting conventions are the same whether you are describing them as strings in back-end panels or using them as regular paragraph text.
+This scope includes uniform resource identifiers (e.g. URLs), relative directory paths (e.g. /textpattern), and file names (e.g. index.php, .htaccess, and so on). The formatting conventions are the same whether you are describing them as strings in back-end panels or using them as regular paragraph text.
 
-#### Paths, directories, and files inline
+#### URIs, paths, and file names inline
 
-When embedded (inline) in regular documentation text, these elements are italicized (i.e. `i`, not `em`) using HTML, since Markdown does not provide for `i` formatting. Screen-readers do not need to pick up unnecessary emphasis on these elements.
+URIs, directory paths, and file names used inline are not formatted with italic or bold, nor marked up as inline code, nor set apart with quotation marks.
 
-A long hypothetical example for demonstration of various qualifying strings:
+Wrong:
+: *domain.tld*
+: The ‘Sites’ directory.
+: */Users/name/Sites*
+: `~/Sites`
+: **index.php**
+: `.htaccess`
 
-The log in location for the software’s back end is located at <i>domain.tld/textpattern</i>. The front end is dynamically generated via the <i>index.php</i> file, though you don’t see it in the URL of your website. An <i>.htaccess</i> file is installed with the core software package in the same directory, whether a root directory, often <i>public_html</i> when provided by web hosts, or a subdirectory of your choosing. Many Apple users who setup local development will install Textpattern in their <i>Sites</i> directory (i.e. <i>/Users/name/Sites</i>), in which case the path to use for the <i>tmp</i> directory will be at <i>/Users/name/Sites/sitename/textpattern/tmp</i>.
-{:.example}
+Correct:
+: https://domain.tld/textpattern
+: domain.tld
+: The Sites directory.
+: /Users/name/Sites
+: ~/Sites
+: index.php
+: .htaccess
 
-If you ever feel a particular path, directory, or file name needs to stand out more than others, don’t mark it up as `code`, which is inappropriate; instead, make it strong, too, for example:
+Always include the file extensions on file names (e.g. index.php) and make sure it’s the correct extension for the file you mean.
 
-It’s called the <i>**tmp**</i> directory, not the ‘temp’ directory, and you find it at <i>…/textpattern/tmp</i>.
-{:.example}
+Do not prefix directory names with a fore-slash (e.g. /textpattern) unless you are meaning to show an actual path.
 
-But, obviously, don’t do this on every inline path, directory, or file name or it’s confused with the formatting of other string types.
-
-Also mind these important conventions for distinguishing these elements:
-
-* **File names**. Always include the file extension, whether used in a path or by itself (e.g. use <i>index.php</i>, never <i>index</i> only). This is what distinguishes file names from directory names, or anything else.
-* **Single directory names**. Do not prefix directory names with a fore-slash (e.g. <i>/textpattern</i>) when referring to the name by itself. Again, file name extensions will distinguish file names from directory names, and a directory name is sufficiently distinguished from regular text by italic formatting and proper description of context.
-
-#### Paths, directories, and files in code
+#### URIs, paths, and file names in code
 
 When, and only when, these elements are reflecting actual code, display them as block-level code examples in the actual code they come from and ignore any other formatting convention, for example:
 
@@ -365,13 +369,7 @@ Article URL pattern: title_only
 Temporary directory path: __TXP-ROOT/textpattern/tmp
 ```
 
-Never style paths, directories, or file names inline as `code`.
-
-#### Paths, directories, and files in lists
-
-In the rare case it is necessary or convenient to use paths, directories, or file names in a list, unique to one of those types of elements (i.e. a list of paths only, or a list of file names only, etc.), do not use italic formatting since the list itself is distinguishing these items from regular text.
-
-If such a list is reflecting a file tree or directory contents, ensure the list is styled correctly using an appropriate selector. See more on this in [File-tree components](#file-tree-components).
+Again, never style URIs, directory paths, or file names inline as `code`.
 
 ## Linking strategy
 
