@@ -8,7 +8,7 @@ description: Guidelines for authors and editors of Textpattern’s user document
 
 # User documentation guidelines
 
-These guidelines, an extension of Textpattern’s baseline [editorial style guide](/brand/editorial-style-guide), are specifically for the upkeep of [user documentation](/). Documentation authors, editors, and other interested contributors will want to read up here, as well review the [documentation collaboration procedures](https://github.com/textpattern/textpattern.github.io/issues/149).
+These guidelines, an extension of Textpattern’s baseline [editorial style guide](/brand/editorial-style-guide), are specifically for the upkeep of user documentation. Documentation authors, editors, and other interested contributors will want to read up here (as well review the [documentation collaboration procedures](https://github.com/textpattern/textpattern.github.io/issues/149)).
 
 **On this page**:
 
@@ -115,6 +115,12 @@ Regarding user documentation, two topics are especially important to review in t
 ### Brand name
 
 Particularly in documentation, do not overuse the brand name. The context of being a Textpattern resource is already clear to readers by fact they are using the software and in the documentation domain. See more in [Brand name](/brand/editorial-style-guide#brand-name) guidelines of editorial style guide.
+
+### Version numbers
+
+Do not make reference to past or future Textpattern version numbers. This only makes it harder to maintain documentation as new versions are released. Write about the functionality of the current version without indicating in what versions the functionality changed. Totally unnecessary.
+
+The sole exception is in tag pages where ‘Genealogy’ sections are maintained.
 
 ## Formatting interface strings
 
@@ -353,9 +359,12 @@ Correct:
 : index.php
 : .htaccess
 
-Always include the file extensions on file names (e.g. index.php) and make sure it’s the correct extension for the file you mean.
+Always include the file extensions on file names and make sure it’s the correct extension for the file you mean (i.e. index.php, index.html, index.md…).
 
-Do not prefix directory names with a fore-slash (e.g. /textpattern) unless you are meaning to show an actual path.
+Always use a true root-relative path when referring to file tree locations. For example:
+
+* Correct: /textpattern/setup
+* Wrong: /setup.
 
 #### URIs, paths, and file names in code
 
