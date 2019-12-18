@@ -187,8 +187,8 @@ As indicated earlier, you may need to correct a couple of things upon first logg
 
 First, go to the Diagnostics panel (Admin > Diagnostics). Chances are, you will see at least the following two red lines at top of the panel:
 
-<span class=".error">Image directory is not writable: /the/path/to/your/images</span>
-<span class=".error">File directory path is not writable: /the/path/to/your/files</span>
+* <span class="error">Image directory is not writable: /the/path/to/your/images</span>
+* <span class="error">File directory path is not writable: /the/path/to/your/files</span>
 
 Textpattern is simply letting you know to change the `chmod` permissions on those two directories so you can add content to them.
 
@@ -196,6 +196,6 @@ Next, browse to the Themes panel (Presentation > Themes) and look for a similar 
 
 Finally, if you do no intend to use the /rpc directory, go to Admin > Preferences > Admin and ensure you have ‘No’ selected for ‘Enable XML-RPC server?’.
 
-If you happen to have any other kinds of warnings in your Diagnostics panel, see [Troubleshooting diagnostics](/setup/troubleshooting-diagnostics). Otherwise, you should be seeing a satisfying green message saying <span class=".success">All checks pass!</span>
+If you happen to have any other kinds of warnings in your Diagnostics panel, see [Troubleshooting diagnostics](/setup/troubleshooting-diagnostics). Otherwise, you should be seeing a satisfying green message saying <span class="success">All checks pass!</span>
 
  
