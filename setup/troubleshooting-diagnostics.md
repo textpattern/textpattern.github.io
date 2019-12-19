@@ -167,19 +167,19 @@ Document root
 : The path to the web server's public (document root) directory, specifically.
 
 $path_to_site
-: The path to wherever your installation is (e.g. in document root or in a sub-directory thereof).
+: The path to wherever your installation is (e.g. in document root or in a subdirectory thereof).
 
 Textpattern path
-: The path to your installation's `/textpattern` directory.
+: The path to your installation's /textpattern directory.
 
 Article URL pattern
-: The pattern of URL type you set. Corresponds with the 'Article URL pattern' setting in the 'Site' section of the [Preferences panel](/administration/preferences-panel#article-url-pattern).
+: The pattern of URL type you set. Corresponds with the **Article URL pattern** preference (Admin > Preferences > Site).
 
 Temporary directory path
-: The path of your `/tmp` directory relative to document root.
+: The path of your /tmp directory relative to document root.
 
 Site URL
-: Your domain name and top-level domain (i.e. `example.com`). Corresponds with 'Site URL' setting in the 'Site' section of the [Preferences panel](/administration/preferences-panel#site-url).
+: Your domain name and top-level domain (i.e. domain.tld). Corresponds with **Site URL** preference (Admin > Preferences > Site).
 
 PHP version
 : The version number of your PHP install.</td>
@@ -200,7 +200,7 @@ Daylight Savings Time enabled?
 : Whether Daylight Savings Time is enabled (`0`=no, `1`=yes). Corresponds with the 'Daylight Savings Time enabled?' setting in the 'Site' section of the [Preferences panel](/administration/preferences-panel#daylight-savings-time-enabled).
 
 Time zone
-: Your time zone relative to Greenwich Mean Time (GMT). Corresponds with the 'Time zone' setting in the 'Site' section of the [Preferences panel](/administration/preferences-panel#time-zone). The output includes an offset value in parentheses, which helps developers determine if time-specific problems might stem from a wrong or outdated [tz database](https://en.wikipedia.org/wiki/Tz_database).
+: Your time zone relative to Greenwich Mean Time (GMT). Corresponds with the **Time zone** preference (Admin > Preferences > Site). The output includes an offset value in parentheses, which helps developers determine if time-specific problems might stem from a wrong or outdated [tz database](https://en.wikipedia.org/wiki/Tz_database).
 
 MySQL
 : The version number and build of your MySQL database server.
@@ -221,12 +221,12 @@ Server OS
 : The name and version number of the server's operating system.
 
 Active plugins
-: A comma-separated list of all plugins (with version numbers) that are installed *and<* turned on.
+: A comma-separated list of all plugins (with version numbers) that are installed *and* turned on.
 
 Admin-side theme
 : The name and version number of the active administration side theme. The default is 'Hive'.
 
-The installation and server data is followed by the contents of your `.htaccess` file (from the installation directory). For purposes here we show the [file contents from the current version code](https://github.com/textpattern/textpattern/blob/master/.htaccess) below:
+The installation and server data is followed by the contents of your .htaccess file (from the installation directory). For purposes here we show the [file contents from the current version code](https://github.com/textpattern/textpattern/blob/master/.htaccess) below:
 
 ~~~ apacheconf
 # BEGIN Textpattern
@@ -260,7 +260,7 @@ The installation and server data is followed by the contents of your `.htaccess`
 # END Textpattern
 ~~~
 
-Over time your .htaccess file will change as you add your own `mod_rewrite` rules, or whatever, and the changes will reflect in the diagnostics info display.
+Over time your .htaccess file will change as you add your own `mod_rewrite` rules, redirects, or what have you, and the changes will reflect in the diagnostics info display.
 
 ### High detail
 
@@ -314,8 +314,7 @@ Textpattern requires certain PHP functions to be enabled for your website to wor
 
 Diagnostics can tell you if any of these necessary functions are disabled. You'll see this pre-flight check warning:
 
-The following PHP functions (which may be necessary to run Textpattern) are disabled on your server…
-{: .alert-block .warning}
+<span class="warning">The following PHP functions (which may be necessary to run Textpattern) are disabled on your server…</span>
 
 If so, compare the indicated functions with those in the table below to see if any match and thus need to be enabled.
 
