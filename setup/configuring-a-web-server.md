@@ -8,39 +8,36 @@ description: This article offers guidance and tips for administrators wishing to
 
 # Configuring a web server for Textpattern
 
-Textpattern CMS runs on servers that run PHP, MySQL and an appropriate HTTP (web) server. This article offers guidance and tips for administrators wishing to configure a web server for Textpattern.
+Textpattern will function with any appropriate HTTP (web) server running PHP and MySQL. This article offers guidance and tips for configuring such a web server. This article does *not* address the installation of web server software, the security procedures for a production server, or any considerations toward performance optimization.
 
-The article's scope extends to the functional requirements of installing Textpattern on a existing production web server. It does not focus on installation or configuration of the web server software itself, security procedures for a production server or considerations toward optimizing performance.
+**On this page**:
 
-## In this document
-
-* [Apache, MySQL, PHP](#apache-mysql-php)
-* [Nginx, MySQL, PHP-FPM](#nginx-mysql-php-fpm)
-* [Hiawatha, MariaDB, PHP-FPM](#hiawatha-mariadb-php-fpm)
+* Table of contents
+{:toc}
 
 ### Apache, MySQL, PHP (AMP)
 
-Textpattern runs faster on current mainline versions of Apache, MySQL and PHP than end-of-life legacy versions. Typically, an existing production Apache web server with MySQL (or equivalent drop-in replacement) and PHP with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
+Textpattern runs faster on current mainline versions of Apache, MySQL, and PHP than end-of-life legacy versions. Typically, an existing production Apache web server with MySQL (or equivalent drop-in replacement) and PHP with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
 
-The method of enabling PHP extensions varies between versions of PHP and Apache, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
+The method of enabling PHP extensions varies between versions of PHP and Apache, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have questions.
 
-Modifications to an Apache virtual host file are typically not needed, especially if PHP is already enabled. A `phpinfo()` pre-flight check is useful to confirm PHP and MySQL are functioning correctly. Create a `.php` file in the intended Textpattern location with the following contents:
+Modifications to an Apache virtual host file are typically not needed, especially if PHP is already enabled. A `phpinfo()` pre-flight check is useful to confirm PHP and MySQL are functioning correctly. Create a .php file in the intended Textpattern location with the following contents:
 
 ~~~ php
 <?php phpinfo(); ?>
 ~~~
 
-Save the file as `preflight.php` or similar, and view it in a browser. If PHP is configured correctly, the resulting page will list details about PHP's configuration, including active extensions to check against the system requirements above. Delete this `preflight.php` file when you've confirmed system requirements are reached and, ideally, exceeded.
+Save the file as preflight.php or similar, and view it in a browser. If PHP is configured correctly, the resulting page will list details about PHP's configuration, including active extensions to check against the system requirements above. Delete the preflight.php file when you've confirmed system requirements are reached and, ideally, exceeded.
 
-Textpattern-specific directives are provided by `.htaccess` in the root directory and other locations within the file tree. It is important to upload this file if your web server runs Apache as it's essentially direct instructions for the web server to work in a specific way. The root `.htaccess` file controls, among other things, clean URLs. Without `.htaccess`, clean URLs will not work.
+Textpattern-specific directives are provided by the .htaccess file in the root directory and other locations within the file tree. It is important to upload this file if your web server runs Apache; it provides instructions for the web server to work in a specific way. The root .htaccess file controls, among other things, clean URLs. Without the .htaccess file, clean URLs will not work.
 
 ### Nginx, MySQL, PHP-FPM (EMP)
 
-Textpattern runs faster on current mainline versions of Nginx, MySQL and PHP than legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
+Textpattern runs faster on current mainline versions of Nginx, MySQL, and PHP than legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
 
 The method of enabling PHP-FPM extensions varies between versions of PHP-FPM and Nginx, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
 
-Modifications to the Nginx server block may be required as directives in `.htaccess` are ignored and not processed by Nginx. Take the following example Nginx `server` configuration with `upstream`ed PHP-FPM:
+Modifications to the Nginx server block may be required as directives in the .htaccess file are ignored and not processed by Nginx. Take the following example Nginx `server` configuration with `upstream`ed PHP-FPM:
 
 ~~~ nginx
 upstream php-fpm {
@@ -101,9 +98,9 @@ VirtualHost {
 }
 ~~~
 
-Replace `example.com` with your domain name and modify the server paths where appropriate. Use `PHP5` instead of `PHP7` if your host does not support PHP v7. Uncomment the `TLSCertFile` line if you want to support secure connections. To forbid open access and switch HTTP to HTTPS only, uncomment the directive `RequireTLS = yes`. Hiawatha has support for Server Name Indication, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt! certificates according to your virtual host configuration.
+Replace `example.com` with your domain name and modify the server paths where appropriate. Use `PHP5` instead of `PHP7` if your host does not support PHP v7. Uncomment the `TLSCertFile` line if you want to support secure connections. To forbid open access and switch HTTP to HTTPS only, uncomment the directive `RequireTLS = yes`. Hiawatha has support for Server Name Indication, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain, and automate renewing, Let's Encrypt! certificates according to your virtual host configuration.
 
-Hiawatha does not use `.htaccess` files. If you wish to use clean URLs, paste the following [URL Toolkit for Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main `hiawatha.conf` file itself:
+Hiawatha does not use .htaccess files. If you wish to use clean URLs, paste the following [URL Toolkit for Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main `hiawatha.conf` file itself:
 
 ~~~ nginx
 UrlToolkit {
@@ -121,7 +118,7 @@ UrlToolkit {
 UrlToolkit {
   ToolkitID = my-website
   Match ^/my-former-url-title Redirect /my-new-url-title
-  Match ^/some-url Redirect //www.example.org/url-title
+  Match ^/some-url Redirect //www.example.com/url-title
   Match ^/textpattern/ Redirect https://www.example.net/textpattern/
 }
 ~~~
