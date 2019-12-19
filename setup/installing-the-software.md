@@ -193,7 +193,7 @@ First, go to the Diagnostics panel (Admin > Diagnostics). Chances are, you will 
 
 Textpattern is simply letting you know to change the `chmod` permissions on those directories so you can add content to them.
 
-Finally, if you do no intend to use the /rpc directory, go to Admin > Preferences > Admin and ensure you have ‘No’ selected for ‘Enable XML-RPC server?’.
+Finally, if you do not intend to use the /rpc directory, go to Admin > Preferences > Admin and ensure you have ‘No’ selected for ‘Enable XML-RPC server?’.
 
 If you happen to have any other kinds of warnings in your Diagnostics panel, see [Troubleshooting diagnostics](/setup/troubleshooting-diagnostics). Otherwise, you should be seeing a satisfying green message saying <span class="success">All checks pass!</span>
 
