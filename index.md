@@ -33,7 +33,6 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 ### Site administration
 {: .index-docs-admin}
 
-* [Administration fast-track](/administration/admin-fast-track) (workflow insights to get up to speed quickly)
 * [Textpattern administration](/administration/) (explanations of principle functionality)
 * [User roles and privileges](/administration/user-roles-and-privileges) (default publishing roles and associated panel access rights)
 * [System security](/setup/system-security) (read before you worry or hack the core)
