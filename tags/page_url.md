@@ -56,7 +56,7 @@ Tag will accept the following attributes (**case-sensitive**):
 `themes_root`: themes directory URL.
 : **Default:** `request_uri`.
 
-Any other `type` value will return the matching URL component or the `default` value that will always be **sanitized**. <span class="footnote warning">v4.7.0+</span>
+Any other `type` value will return the matching URL parameter or the `default` value that will always be **sanitized**. <span class="footnote warning">v4.7.0+</span>
 
 ## Examples
 
@@ -123,7 +123,7 @@ This would result in the following, for example:
 <script async src="<txp:page_url type="theme_path" />/scripts/main.js"></script>
 ~~~
 
-### Example 5: Return the sanitized value of some URL component
+### Example 5: Return the sanitized value of some URL query parameter
 
 ~~~ html
 <txp:page_url type="lang" default="en" />
