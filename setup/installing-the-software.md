@@ -40,7 +40,7 @@ Do not rearrange or rename any directories or files!
 
 ## Upload to web server
 
-First, decide where you will install Textpattern; either in your web root (e.g. to domain.tld) or in a subdirectory (i.e. domain.tld/subdirectory). The web root is the most common location and a good choice. Textpattern is capable of running your entire website, so why not use it to do so. A subdirectory works just as well, though people generally end up [moving the installation](/setup/moving-textpattern) to the web root later when realizing Textpattern can do more than post blog articles.
+Decide where you will install Textpattern; either in your web root (e.g. to domain.tld) or in a subdirectory (i.e. domain.tld/subdirectory). The web root is the most common location and a good choice. Textpattern is capable of running your entire website, so why not use it to do so. A subdirectory works just as well, though people generally end up [moving the installation](/setup/moving-textpattern) to the web root later when realizing Textpattern can do more than post blog articles.
 
 For many web hosts, the root path looks like this: 
 
@@ -49,9 +49,9 @@ For many web hosts, the root path looks like this:
 
 Sometimes the /public directory is /public_html. The {username} implies your actual user account name.
 
-### Essential package elements 
+### Essential installation elements 
 
-Using your (S)FTP client of choice, connect to your web host’s server, navigate to your web root directory, and upload at least the following directories and files from the Textpattern installation package:
+Using your (S)FTP client to connect to your web host’s server. Navigate to your web root directory and upload at least the following directories and files from the Textpattern installation package:
 
 * {:.directory--open} /
   * {:.document} .htaccess
@@ -65,15 +65,15 @@ Using your (S)FTP client of choice, connect to your web host’s server, navigat
 
 Again, do not rearrange files in the tree or change their names. Doing so will render Textpattern useless.
 
-If you are *not* using an Apache web server (e.g. you are using [Nginx](/setup/configuring-a-web-server-for-textpattern)), you may exclude the .htaccess file; otherwise, it will be needed.[^htaccess] The .htaccess file is important for handling many things on Apache web servers, such as default URL formatting, 301 redirects, specific use (or not) of ‘www.’, and so forth. You can add additional content to the file, but you should not alter or remove what is there, which Textpattern relies on.
+If you are *not* using an Apache web server (e.g. you are using [Nginx](/setup/configuring-a-web-server)), you may exclude the .htaccess file; otherwise, it will be needed.[^htaccess] The .htaccess file is important for handling many things on Apache web servers, such as default URL formatting, 301 redirects, specific use (or not) of ‘www.’, and so forth. You can add additional content to the file, but you should not alter or remove what is there; Textpattern relies on it.
 
-The /files directory is empty by default. It's where content files (.pdf, .docx, .rtf, .epub, .txt, etc.) will go if you upload them in the Files panel. Later, when logging in for the first time, you may see a warning about the directory's `chmod` status (editing rights) in the Files or Diagnostics panels. This is normal, and you will fix that when the time comes. See [Pre-flight checks](#pre-flight-checks).
+The /files directory is empty by default. It's where content files (.pdf, .docx, .rtf, .epub, .txt, etc.) will go if you upload them in the Files panel. Later, when logging in for the first time, you may see a warning about the directory's `chmod` status (editing rights) in the Files or Diagnostics panels. This is normal, and you will fix that when the time comes. [First log in checks](#first-log-in-checks).
 
-The /images directory is also empty by default. It's where images will go when you upload them in the Images panel. Again, you may see a warning about the directory's `chmod` status (editing rights) in the Images or Diagnostics panels when first logging in. See [Pre-flight checks](#pre-flight-checks).
+The /images directory is also empty by default. It's where images will go when you upload them in the Images panel. Again, you may see a warning about the directory's `chmod` status (editing rights) in the Images or Diagnostics panels when first logging in. [First log in checks](#first-log-in-checks).
 
 The /textpattern directory contains all the core scripting and functionality. Also where users log into the back-end to administer the site.
 
-The /themes directory is empty by default, but it’s an essential directory if you intend to [export or import themes](/build/themes-creating-using-and-sharing). Each theme will have its own subdirectory inside. You may see a warning about the /themes directory’s `chmod` status (editing rights) in the Themes or Diagnostics panels when first logging in. See [Pre-flight checks](#pre-flight-checks).
+The /themes directory is empty by default, but it’s an essential directory if you intend to [export or import themes](/build/themes-creating-using-and-sharing). Each theme will have its own subdirectory inside. You may see a warning about the /themes directory’s `chmod` status (editing rights) in the Themes or Diagnostics panels when first logging in. See [First log in checks](#first-log-in-checks).
 
 The css.php file negotiates the front-end stylesheets you create in the Styles panel. If you plan on hosting your CSS as flat files, then this file can be removed. If you store CSS in the database then this file is required.
 
@@ -90,7 +90,7 @@ The remaining directories and files are optional depending on whether you use th
   * {:.directory} sites
 {:.list--files}
 
-The /rpc directory contains the XML-RPC functionality; the legacy code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' after first logging in. See [Pre-flight checks](#pre-flight-checks).
+The /rpc directory contains the XML-RPC functionality; the legacy code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' after first logging in. See [First log in checks](#first-log-in-checks).
 
 The /sites directory supports multi-site installations managed by one set of core files. It contains a template and instructions (README.txt) for doing so. You can safely remove this directory if you're not using this functionality.
 
@@ -179,9 +179,9 @@ The screen will also suggest deleting the /setup directory for security reasons,
 
 Congratulations! You've installed one of the best open source CMS systems available.
 
-Now, address those diagnostics.
+Now, address those first log in check.
 
-## Pre-flight checks
+## First log in checks
 
 As indicated earlier, you may need to correct a couple of things upon first logging in to the back end. The checks are normal and any warnings or errors are easily addressed here.
 
@@ -191,10 +191,10 @@ First, go to the Diagnostics panel (Admin > Diagnostics). Chances are, you will 
 * <span class="error">File directory path is not writable: /the/path/to/your/files</span>
 * <span class="error">Themes directory path is not writable: /the/path/to/your/themes</span>
 
-Textpattern is simply letting you know to change the `chmod` permissions on those directories so you can add content to them.
+Textpattern is simply letting you know to change the `chmod` permissions on those directories so you can add content to them. A chmod setting of 755 or 711 should work to make a folder writable *and is secure*.[^chmod]
+
+When done, reload the Diagnostics panel. You should then see a satisfying green message saying <span class="success">All checks pass!</span> If you happen to have any other warnings — blue, yellow, or red — see [Troubleshooting diagnostics](/setup/troubleshooting-diagnostics).
 
 Finally, if you do not intend to use the /rpc directory, go to Admin > Preferences > Admin and ensure you have ‘No’ selected for ‘Enable XML-RPC server?’.
 
-If you happen to have any other kinds of warnings in your Diagnostics panel, see [Troubleshooting diagnostics](/setup/troubleshooting-diagnostics). Otherwise, you should be seeing a satisfying green message saying <span class="success">All checks pass!</span>
-
- 
+[^chmod]: {% include component-chmod.html %}
