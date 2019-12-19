@@ -26,15 +26,14 @@ No matter the case, Textpattern diagnostics are the first stop to determining wh
 The Diagnostics panel has two main regions. At top is a **Pre-flight check** region where system alert messages appear. The one everybody likes to see is the green (success) alert:
 
 <span class="success ui-icon-check">All checks passed!</span>
-{: .example}
 
-It is the only green alert message in diagnostics. When you see that, your Textpattern website is running correctly and you can go on your merry way.
+That is the only green alert message in diagnostics. When you see that, your Textpattern website is running perfectly and you can go on your merry way.
 
 There are other coloured alerts to be aware of: blue (information), yellow (warning), and red (error).
 
 ### Blue information alerts
 
-In certain situations it may not be possible to get the green confirmation message, but it doesn’t mean your site is not configured correctly. There are a handful of possible blue (information) messages, for example. If they appear by themselves, you have nothing to worry about.
+In certain situations it may not be possible to get the green confirmation message, but it does not mean your site is not configured correctly. The following blue (information) alert messages, for example, are nothing to worry about if they appear by themselves.
 
 <span class="information">There was a problem connecting to the Textpattern update server. Please try again later.</span>
 : This alert means your Textpattern installation cannot connect with Textpattern’s servers (e.g. a web connection was lost), thus cannot check if a new stable release of the software is available. This message would persist until your installation could connect and make the check. At that time, if there were no updates available, the message would disappear and you’d see the green ‘All checks pass!’.
@@ -46,151 +45,101 @@ In certain situations it may not be possible to get the green confirmation messa
 : This blue alert is similar to the first one; your connection to Textpattern’s servers is broken for whatever reason. But in this case your system is trying to ping Textpattern’s RPC server. If you are *not* using RPC, which would be set in preferences (Admin > Preferences > Admin), this alert will never appear, even if the connection is broken.
 
 <span class="information">File uploads are disabled.</span>
-: This alert appears if the permissions you have set on your /files folder is read only. The assumption is, you have made this choice, so you can ignore this message. If you make the files folder writable, the alert will go away.[^files]
+: This alert appears if the permissions you have set on your /files folder is read only. The assumption is, you have made this choice, so you can ignore this message. If you make the files folder writable, the alert will go away.[^chmod]
 
 <span class="information">Clean URLs are only supported on Apache, use at your own risk.</span>
 : This alert is acknowledging that you are *not* using an Apache web server. The assumption is that you know what you're doing so you can ignore this message. It goes away if you ever switch to Apache.
 
-Where blue alerts are informative only, yellow and red alerts begin demanding action on your part.
+Where blue alerts are informative only, red and yellow alerts begin demanding action on your part.
 
-[^files]: **Folder permissions:** A chmod setting of 755 or 711 should work to make a folder writable *and* is secure. A lot of people have trouble setting these values, however, and need to use a chmod of 777, which has [security implications](https://forum.textpattern.com/viewtopic.php?id=26613). The discrepancy is due to how Apache directives are configured on the web server, which means you may have to ask your server administrator or web host to change the directives. If they won't do it, it might be time to find a new web host, because no web host should force you to operate your site insecurely.
-
-### Yellow warning alerts
-
-Warnings are not critical, per se, and sometimes can even be cascading[^2] or false.[^3] But when warnings are accurate, something needs resolved in order to work correctly, reliably, or securely.
-
-**Several warning messages are possible:**
-
-DNS lookup failed: {site URL}.
-{: .alert-block .warning}
-
-This means the 'Site URL' preference value in the [Preferences panel](/administration/preferences-panel) is probably incorrect; possibly the wrong name, a spelling mistake, or missing altogether. Check the value and make sure it's entered exactly like this, `example.com`, replacing your domain name and TLD extension.
-
-Site URL preference might be incorrect: {site URL}.
-{: .alert-block .warning}
-
-Similar to the previous message, this is suggesting the 'Site URL' as set [Preferences panel](/administration/preferences-panel) does not match the actual URL you use to visit your website.
-
-Clean URL test failed.
-{: .alert-block .warning}
-
-This could appear for different reasons and may not be a problem, per se. Troubleshoot other messages first and it may go away too. If not, it might be caused by the PHP configuration setting of `allow_url_fopen`, or some other hosting issue.
-
-Site URL has a trailing slash.
-{: .alert-block .warning}
-
-This means your 'Site URL' preference value in the [Preferences panel](/administration/preferences-panel) has an ending forward slash on it like this, `example.com/`. Tsk-tsk. Remove the slash.
-
-{path} still exists.
-{: .alert-block .warning}
-
-This means you need to remove the `/textpattern/setup` folder from the web server; {path} will be replaced with the actual folder path respective to your installation.
-
-Image directory is read-only.
-{: .alert-block .warning}
-
-This means permissions on your `/images` folder needs changed before you can add any images to it; change permissions to chmod 755 or 711.[^1]
-
-No temporary directory defined.
-{: .alert-block .warning}
-
-todo:explanation
-
-Your PHP installation is missing the <code>mail()</code> function. Therefore no emails can be sent from Textpattern, which limits certain functionality.
-{: .alert-block .warning}
-
-todo:explanation
-
-Your version of PHP has known security vulnerabilities. Please turn <code>register_globals</code> off or update to a newer PHP version.
-{: .alert-block .warning}
-
-todo:explanation
-
-Some Textpattern files have been modified.
-{: .alert-block .warning}
-
-todo:explanation
-
-You are running a development version of Textpattern on a live server.
-{: .alert-block .warning}
-
-Means you're installation version is a future development version, not the latest stable release. This would be okay for local testing, but not recommended for a live production site online.
-
-The following PHP functions (which may be necessary to run Textpattern) are disabled on your server…
-{: .alert-block .warning}
-
-If you see this message, it will be followed by a number of PHP functions that are disabled on your web server. Textpattern needs certain functions enabled to work correctly, while other functions, if disabled, can be ignored. See section below, [Diagnostic reporting on PHP functions](#diagnostic-reporting-on-php-functions), for more about which function are needed or not.
-
-Site URL preference might be incorrect.
-{: .alert-block .warning}
-
-This could either mean you do not have the right 'Site URL' path set in [Preferences panel](/administration/preferences-panel), or, in the case of upgrading, you still need to update your `index.php` and/or `.htaccess` files (see next message). This could also be a false error. For example, symlinks cannot be correctly recognized, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Understandably that is not satisfying advice.
-
-Clean URL data test failed.
-{: .alert-block .warning}
-
-todo:explanation
-
-Clean URL test failed.
-{: .alert-block .warning}
-
-todo:explanation
+[^chmod]: {% include component-chmod.html %}
 
 ### Red error alerts
 
-Red messages mean something critical appears to be wrong and you need to troubleshoot it immediately.
+Red messages mean something critical appears to be wrong and you need to troubleshoot it immediately. Several red alerts are possible.
 
-**Possible red messages include:**
+<span class="error">Textpattern requires at least version {number} of PHP to be installed on your server.</span>
+: This alert is clearly telling you what minimum version of PHP must working on your web server. The actual version number will appear in place of {number}. 
 
-Textpattern requires at least version {version} of PHP to be installed on your server
-{: .alert-block .error}
+<span class="error">index.php is inaccessible.</span>
+: This alert suggests your index.php file is not available, is not the right version, or that your **Site URL** is set wrong in Preferences (Admin > Preferences > Site). It could also mean the index.php file was not updated for whatever reason during a recent upgrade. Update the file using the one from the [current Textpattern release](https://github.com/textpattern/textpattern/releases) and refresh diagnostics.
 
-todo:explanation
+<span class="error">.htaccess file is missing.</span>
+: This alert concerns the .htaccess file, but doesn't necessarily mean the file is missing. The message usually appears if you are trying to use one of the clean URL patterns, as set in Preferences (Admin > Preferences > Site), and you have one of the previous diagnostic issues with the wrong path in **Site URL**, or have a missing index.php file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an .htaccess file. If the file is there, then either replace it from the [current Textpattern release](https://github.com/textpattern/textpattern/releases), or select the help link next to this particular message and replace the contents of your existing .htaccess file with the indicated rewrite rules in the help dialog.
 
-index.php is inaccessible.
-{: .alert-block .error}
+<span class="error">`$path_to_site` is inaccessible.</span>
+: This alert means either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
 
-This suggests your `index.php` file is not available, is not the right version, or that your 'Site URL' is set wrong in [Preferences panel](/administration/preferences-panel). It could also mean the `index.php` file was not updated for whatever reason during a recent upgrade. Update the file using the one from the [current Textpattern release](https://github.com/textpattern/textpattern/releases) and refresh diagnostics.
+<span class="error">{dirtype} is not writable.</span>
+: (Description needed.) [^chmod]
 
-.htaccess file is missing.
-{: .alert-block .error}
+<span class="error">Apache module mod_rewrite is not installed.</span>
+: This alert means the mod_rewrite module is not readable, possibly because it has not been uncommented in the php.ini file working on your website. You’ll need access to your web server to track this down and see, or contact your web host. 
 
-This concerns the `.htaccess` file, but doesn't necessarily mean the file is missing; the message usually appears if you are trying to use one of the “clean” URL settings, and you have one of the previous diagnostic issues with the wrong path or have a missing `index.php` file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an *.htaccess* file. If the file is there, then either replace it from the [current Textpattern release](https://github.com/textpattern/textpattern/releases), or select the help link next to this particular message and replace the contents of your existing `.htaccess` file with the indicated rewrite rules in the help dialog.
+<span class="error">Old placeholder file is in the way.</span>
+: This alert likely means you have created an actual folder in your server file tree that shares a name with a section you created in the Sections panel (Presentation > Sections), or vice versa. This can break your site. You need to rename or remove one or the other.
 
-`$path_to_site` is inaccessible.
-{: .alert-block .error}
+<span class="error">Missing files</span>
+: (Description needed.)
 
-This means either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
+<span class="error">The following errors were detected in your MySQL tables</span>
+: (Description needed.)
 
-{dirtype} is not writable.
-{: .alert-block .error}
+<span class="error">Temporary directory path and Plugin cache directory path should **not** match.</span>
+: This alert means paths to your plugin cache and /textpattern/tmp directory locations are the same. Neither should be web accessible, but if you set them to the same location, a temp file could overwrite a plugin, and that would be bad. Create a different folder location for your plugin cache.
 
-todo:explanation
+### Yellow warning alerts
 
-Apache module mod_rewrite is not installed.
-{: .alert-block .error}
+Yellow warning alerts are not critical, per se, and sometimes can even be cascading[^cascading] or false.[^false] But when warnings are accurate, something needs resolved in order to work correctly, reliably, or securely. The only way to know when the alert is false or true, is to start fixing the reported problems one-by-one, from top to bottom, as you see them in your diagnostics. Several yellow alerts are possible.
 
-todo:explanation
+<span class="warning">DNS lookup failed: {site URL}.</span>
+: This alert means the **Site URL** preference (Admin > Preferences > Site) is probably incorrect; possibly the wrong name, a spelling mistake, or missing altogether. Check the value and make sure it's entered correctly. If you installed in the root web domain, use: domain.tld. If you installed in a subdirectory, use: domain.tld/subdirectory. If you installed in a subdomain as a separate website, use the pattern subdomain.domain.tld. Nothing else!
 
-Old placeholder file is in the way
-{: .alert-block .error}
+<span class="warning">Site URL has a trailing slash.</span>
+: This alert means your **Site URL** preference value (Admin > Preferences > Site) has an ending forward slash on it like this, domain.tld/. Remove the slash.
 
-This likely means you have created an actual folder in your server file tree that shares a name with a *section* you created in the [Sections panel](/administration/sections-panel), or vice versa. This can break your site. You need to rename or remove one or the other.
+<span class="warning">Site URL preference might be incorrect: {site URL}.</span>
+: Similar to the first yellow alert, this is suggesting the **Site URL** as set in Preferences (Admin > Preferences > Site) does not match the actual URL you use to visit your website.
 
-Missing files
-{: .alert-block .error}
+<span class="warning">Clean URL test failed.</span>
+: This alert could appear for different reasons and may not be a problem, per se. Troubleshoot other red and yellow alerts first and it may go away. If not, it might be caused by the PHP configuration setting of `allow_url_fopen`, or some other issue with your web host server’s configuration.
 
-todo:explanation
+<span class="warning">{path} still exists.</span>
+: This alert means you need to remove the /textpattern/setup folder from the web server. The alert will show the actual folder path respective to your installation in place of {path}.
 
-The following errors were detected in your MySQL tables
-{: .alert-block .error}
+<span class="warning">Image directory is read-only.</span>
+: This alert means permissions on your /images folder needs changed before you can add any images to it. Change permissions to chmod 755 or 711.[^chmod]
 
-todo:explanation
+<span class="warning">No temporary directory defined.</span>
+: This alert means you have no path set to the /textpattern/tmp directory in the **Temporary directory path** preference (Admin > Preferences > Admin) relative to the web server, or it is unrecognized (e.g. incorrect path). Add or correct the path.
 
-Temporary directory path and Plugin cache directory path should **not** match.
-{: .alert-block .error}
+<span class="warning">Your PHP installation is missing the <code>mail()</code> function. Therefore no emails can be sent from Textpattern, which limits certain functionality.</span>
+: (Description needed.)
 
-This means paths to your plugin cache and `tmp` directory locations are the same. Neither should be web accessible, but if you set them to the same location, a temp file could overwrite a plugin, and that would be bad. Create a different folder location for your plugin cache.
+<span class="warning">Your version of PHP has known security vulnerabilities. Please turn <code>register_globals</code> off or update to a newer PHP version.</span>
+: (Description needed.)
+
+<span class="warning">Some Textpattern files have been modified.</span>
+: This alert is pointing out that you, or someone else with access to your installation files, has modified one or more files from their default status. This could be an important alert if you know for a fact it was not you who modified the files. But if it was you, and the changes were intentional, ignore this alert. The alert will not go away unless the core files have been returned to default conditions for the software version they represent. For this reason, it is generally not a good idea to *hack* core files. Modifying plugin files will not trigger this alert; rather, those changes are indicated on the given plugin in the Plugins panel (Admin > Plugins).
+
+<span class="warning">You are running a development version of Textpattern on a live server.</span>
+: This alert means you have installed a future version of the software, not the latest stable release. This would be okay for local testing, but not recommended for a live production site online.
+
+<span class="warning">The following PHP functions (which may be necessary to run Textpattern) are disabled on your server…</span>
+: This alert will be followed by a number of PHP functions that are disabled on your web server. Textpattern needs certain functions enabled to work correctly, while other functions, if disabled, can be ignored. See [Diagnostic reporting on PHP functions](#diagnostic-reporting-on-php-functions) for more about which function are needed or not.
+
+<span class="warning">Site URL preference might be incorrect.</span>
+: This alert could either mean you do not have the right **Site URL** path set in Preferences (Admin > Preferences > Site), or, in the case of upgrading, you still need to update your index.php and/or .htaccess files (see next message). This could also be a false error. For example, symlinks cannot be correctly recognized, so you might get this error even if there's no true problem. Unless you are experiencing real technical issues, you shouldn't worry too much about this feedback message if it doesn't go away. Understandably that is not satisfying advice.
+
+<span class="warning">Clean URL data test failed.</span>
+: (Description needed.)
+
+<span class="warning">Clean URL test failed.</span>
+: (Description needed.)
+
+[^cascading]: **Cascading problems:** Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
+
+[^false]: **False problems:** On rare occasions, yellow and red messages have been known to appear but not go away when addressed as instructed by their help information. Textpattern developers have indicated this can happen in odd situations, and it's a false reading nearly every time, meaning there isn't anything to worry about. If you ever have this problem and can't seem to resolve it, post about it in the [Textpattern Forum Troubleshooting section](https://forum.textpattern.com/viewforum.php?id=67) and someone will try to help.
 
 ##  Diagnostics info
 
@@ -394,7 +343,7 @@ The following functions are used by Textpattern. If your diagnostics reports any
 
 ### Functions not used by Textpattern
 
-These functions are *not* used by Textpattern.[^4] If diagnostics reports one or more of these functions as disabled, you may safely ignore the message, because they do not affect Textpattern's operation in any way.
+These functions are *not* used by Textpattern.[^notused] If diagnostics reports one or more of these functions as disabled, you may safely ignore the message, because they do not affect Textpattern's operation in any way.
 
 * `apache_child_terminate`
 * `apache_getenv`
@@ -448,9 +397,4 @@ These functions are *not* used by Textpattern.[^4] If diagnostics reports one or
 * `virtual`
 * `wget`
 
-
-[^2]: **Cascading problems:** Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
-
-[^3]: **False problems:** On rare occasions, yellow and red messages have been known to appear but not go away when addressed as instructed by their help information. Textpattern developers have indicated this can happen in odd situations, and it's a false reading nearly every time, meaning there isn't anything to worry about. If you ever have this problem and can't seem to resolve it, post about it in the [Textpattern Forum Troubleshooting section](https://forum.textpattern.com/viewforum.php?id=67) and someone will try to help.
-
-[^4]: If you discover any functions named in your feedback message that are not listed above, create a new topic in the [Textpattern Forum Troubleshooting section](https://forum.textpattern.com/viewforum.php?id=67) and post the 'High' diagnostics info so someone can help you determine if the function is necessary or not.
+[^notused]: If you discover any functions named in your feedback message that are not listed above, create a new topic in the [Textpattern Forum Troubleshooting section](https://forum.textpattern.com/viewforum.php?id=67) and post the 'High' diagnostics info so someone can help you determine if the function is necessary or not.
