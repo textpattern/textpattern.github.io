@@ -137,7 +137,7 @@ This would result in the following, for example:
 <txp:if_variable name="is_latest" value="1">
     <txp:article limit="1" />
 </txp:else>
-   <txp:article />
+    <txp:article />
 </txp:if_variable>
 ~~~
 
