@@ -185,14 +185,13 @@ Now, address those diagnostics.
 
 As indicated earlier, you may need to correct a couple of things upon first logging in to the back end. The checks are normal and any warnings or errors are easily addressed here.
 
-First, go to the Diagnostics panel (Admin > Diagnostics). Chances are, you will see at least the following two red lines at top of the panel:
+First, go to the Diagnostics panel (Admin > Diagnostics). Chances are, you will see at least the following red lines at top of the panel:
 
 * <span class="error">Image directory is not writable: /the/path/to/your/images</span>
 * <span class="error">File directory path is not writable: /the/path/to/your/files</span>
+* <span class="error">Themes directory path is not writable: /the/path/to/your/themes</span>
 
-Textpattern is simply letting you know to change the `chmod` permissions on those two directories so you can add content to them.
-
-Next, browse to the Themes panel (Presentation > Themes) and look for a similar warning as noted above, but this time for the /themes directory. Again, the directory just needs a `chmod` adjustment to make the warning go away.
+Textpattern is simply letting you know to change the `chmod` permissions on those directories so you can add content to them.
 
 Finally, if you do no intend to use the /rpc directory, go to Admin > Preferences > Admin and ensure you have ‘No’ selected for ‘Enable XML-RPC server?’.
 
