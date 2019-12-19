@@ -20,11 +20,11 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 
 * [Installing the software](/setup/installing-the-software)
 * [Upgrading the installation](/setup/upgrading-the-installation)
-* [Configuring a web server for Textpattern](/setup/configuring-a-web-server-for-textpattern)
 * [Moving an installation](/setup/moving-an-installation)
 * [Post install and upgrade routines](/installation/post-install-and-upgrade-routines)
 * [Multi-site installation](/setup/multi-site-installation)
 * [Troubleshooting common problems](/setup/troubleshooting-common-problems)
+* [Configuring a web server](/setup/configuring-a-web-server)
 {: .list--no-bullets}
 
 </section>

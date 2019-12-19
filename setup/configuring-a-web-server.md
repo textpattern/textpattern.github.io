@@ -2,7 +2,7 @@
 layout: document
 category: Setup and Configuration
 published: true
-title: Configuring a web server for Textpattern.
+title: Web server configuration.
 description: This article offers guidance and tips for administrators wishing to install Textpattern to various web server platforms.
 ---
 
@@ -10,7 +10,7 @@ description: This article offers guidance and tips for administrators wishing to
 
 Textpattern CMS runs on servers that run PHP, MySQL and an appropriate HTTP (web) server. This article offers guidance and tips for administrators wishing to configure a web server for Textpattern.
 
-The article's scope extends to the functional requirements of installing Textpattern on a existing production web server. It does not focus on installation or configuration of the web server software itself, security procedures for a production server or considerations toward optimising performance.
+The article's scope extends to the functional requirements of installing Textpattern on a existing production web server. It does not focus on installation or configuration of the web server software itself, security procedures for a production server or considerations toward optimizing performance.
 
 ## In this document
 
@@ -20,7 +20,7 @@ The article's scope extends to the functional requirements of installing Textpat
 
 ### Apache, MySQL, PHP (AMP)
 
-Textpattern runs faster on current mainline versions of Apache, MySQL and PHP than end-of-life'd legacy versions. Typically, an existing production Apache web server with MySQL (or equivalent drop-in replacement) and PHP with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
+Textpattern runs faster on current mainline versions of Apache, MySQL and PHP than end-of-life legacy versions. Typically, an existing production Apache web server with MySQL (or equivalent drop-in replacement) and PHP with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
 
 The method of enabling PHP extensions varies between versions of PHP and Apache, and also across operating systems. Refer to the system requirements above and contact your web hosting provider if you have queries.
 
@@ -81,7 +81,7 @@ server {
 }
 ~~~
 
-This `server` block includes a basic web hosting setup and translates the Apache-specific directives in `.htaccess` to an Nginx-native format. It can be used as a base for your Textpattern site.
+This `server` block includes a basic web hosting setup and translates the Apache-specific directives in .htaccess to an Nginx format. It can be used as a base for your Textpattern site.
 
 ### Hiawatha, MariaDB, PHP-FPM
 
@@ -101,7 +101,7 @@ VirtualHost {
 }
 ~~~
 
-Replace `example.com` with your domain name and modify the server paths where appropriate. Use `PHP5` instead of `PHP7` if your host does not support PHP v7. Uncomment the `TLSCertFile` line if you want to support secure connections. To forbid open access and switch HTTP to HTTPS only, uncomment the directive `RequireTLS = yes`. Hiawatha has support for Server Name Indication, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt! certificates, according to your virtual host configuration.
+Replace `example.com` with your domain name and modify the server paths where appropriate. Use `PHP5` instead of `PHP7` if your host does not support PHP v7. Uncomment the `TLSCertFile` line if you want to support secure connections. To forbid open access and switch HTTP to HTTPS only, uncomment the directive `RequireTLS = yes`. Hiawatha has support for Server Name Indication, which allows us to serve multiple TLS websites via one IP address. Hiawatha also comes with a script to easily obtain and to automate renewing free Let's Encrypt! certificates according to your virtual host configuration.
 
 Hiawatha does not use `.htaccess` files. If you wish to use clean URLs, paste the following [URL Toolkit for Textpattern CMS](https://www.hiawatha-webserver.org/howto/url_rewrite_rules) at the beginning of your include file for the virtual host, or in the main `hiawatha.conf` file itself:
 
@@ -148,7 +148,7 @@ Directory {
 }
 ~~~
 
-You can point to your website via multiple domains — simply append its aliases in the same line of the virtual host section, comma separated. Uncomment the `EnforceFirstHostname` directive if desired, to return web pages for visitors by only the first (primary) domain in your list (301 redirected):
+You can point to your website via multiple domains by adding aliases, comma separated, in the same line of the virtual host section. Uncomment the `EnforceFirstHostname` directive, if desired, to return web pages for visitors by only the first (primary) domain in your list (301 redirected):
 
 ~~~ nginx
 VirtualHost {
