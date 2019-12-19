@@ -17,7 +17,7 @@ Troubleshooting web technology is an inherent fact of being online, and especial
 
 ## Overview of diagnostics
 
-Problems that might arise with a Textpattern website are generally due to misconfigurations in Textpattern, incompatible [server configurations](/setup/configuring-a-web-server), and so on. Some of these problems are minor, expected, and easily fixed; for example, file path permissions after [installing the software](/setup/installing-the-software) (see ‘Pre-flight checks’ section). Other problems could have been introduced after customizing or extending the software; these may require a bit more sleuthing, perhaps with [community help](https://forum.textpattern.com/viewforum.php?id=67). Still, other problems may require the intervention of your web host to upgrade software to minimum [system requirements](https://textpattern.com/about/119/system-requirements), or to add that _one_ missing PHP module, whatever.
+Problems that might arise with a Textpattern website are generally due to misconfigurations in Textpattern, incompatible [server configurations](/setup/configuring-a-web-server), and so on. Some of these problems are minor, expected, and easily fixed, like file path permissions after [installing the software](/setup/installing-the-software).[^chmod] Other problems could be introduced through customizing or extending the software; these may require a bit more sleuthing, perhaps with [community help](https://forum.textpattern.com/viewforum.php?id=67). Still, other problems may require the intervention of your web host to upgrade software to minimum [system requirements](https://textpattern.com/about/119/system-requirements), or to add that _one_ missing PHP module, whatever.
 
 No matter the case, Textpattern diagnostics are the first stop to determining what the problems are and where they need fixed. If you are experienced with troubleshooting web technology, you will quickly realize how useful the Diagnostics panel is. If you are less experienced, no problem, many of the easily fixed issues are flagged in the Diagnostics panel by way of system feedback (alert) messages, indicating what to do. These are described in following sections.
 
@@ -30,6 +30,8 @@ The Diagnostics panel has two main regions. At top is a **Pre-flight check** reg
 That is the only green alert message in diagnostics. When you see that, your Textpattern website is running perfectly and you can go on your merry way.
 
 There are other coloured alerts to be aware of: blue (information), yellow (warning), and red (error).
+
+[^chmod]: {% include component-chmod.html %}
 
 ### Blue information alerts
 
@@ -51,8 +53,6 @@ In certain situations it may not be possible to get the green confirmation messa
 : This alert is acknowledging that you are *not* using an Apache web server. The assumption is that you know what you're doing so you can ignore this message. It goes away if you ever switch to Apache.
 
 Where blue alerts are informative only, red and yellow alerts begin demanding action on your part.
-
-[^chmod]: {% include component-chmod.html %}
 
 ### Red error alerts
 
