@@ -137,9 +137,9 @@ Yellow warning alerts are not critical, per se, and sometimes can even be cascad
 <span class="warning">Clean URL test failed.</span>
 : (Description needed.)
 
-[^cascading]: **Cascading problems:** Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
+[^cascading]: **Cascading problems**: Sometimes the existence of one yellow or red issue can be the cause of another, so be sure to reload the Diagnostics panel as you resolve each yellow or red issue; you might find it eliminates another in the process.
 
-[^false]: **False problems:** On rare occasions, yellow and red messages have been known to appear but not go away when addressed as instructed by their help information. Textpattern developers have indicated this can happen in odd situations, and it's a false reading nearly every time, meaning there isn't anything to worry about. If you ever have this problem and can't seem to resolve it, post about it in the [Textpattern Forum Troubleshooting section](https://forum.textpattern.com/viewforum.php?id=67) and someone will try to help.
+[^false]: **False problems**: On rare occasions, yellow and red messages have been known to appear but not go away when addressed as instructed by their help information. Textpattern developers have indicated this can happen in odd situations, and it's a false reading nearly every time, meaning there isn't anything to worry about. If you ever have this problem and can't seem to resolve it, post about it in the [Textpattern Forum Troubleshooting section](https://forum.textpattern.com/viewforum.php?id=67) and someone will try to help.
 
 ##  Diagnostics info
 
@@ -343,7 +343,7 @@ The following functions are used by Textpattern. If your diagnostics reports any
 
 ### Functions not used by Textpattern
 
-These functions are *not* used by Textpattern.[^notused] If diagnostics reports one or more of these functions as disabled, you may safely ignore the message, because they do not affect Textpattern's operation in any way.
+These functions are *not* used by Textpattern.[^functions] If diagnostics reports one or more of these functions as disabled, you may safely ignore the message, because they do not affect Textpattern's operation in any way.
 
 * `apache_child_terminate`
 * `apache_getenv`
@@ -397,4 +397,4 @@ These functions are *not* used by Textpattern.[^notused] If diagnostics reports 
 * `virtual`
 * `wget`
 
-[^notused]: If you discover any functions named in your feedback message that are not listed above, create a new topic in the [Textpattern Forum Troubleshooting section](https://forum.textpattern.com/viewforum.php?id=67) and post the 'High' diagnostics info so someone can help you determine if the function is necessary or not.
+[^functions]: If you discover any functions named in your feedback message that are not listed above, create a new topic in the [Textpattern Forum Troubleshooting section](https://forum.textpattern.com/viewforum.php?id=67) and post the 'High' diagnostics info so someone can help you determine if the function is necessary or not.
