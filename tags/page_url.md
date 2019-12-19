@@ -116,18 +116,34 @@ This would result in the following, for example:
 </p>
 ~~~
 
-### Example 4: Return the sanitized value of some URL component
-
-~~~ html
-<txp:page_url type="lang" default="en" />
-~~~
-
-### Example 5: Link to a theme's file assets directly
+### Example 4: Link to a theme's file assets directly
 
 ~~~ html
 <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/default.css">
 <script async src="<txp:page_url type="theme_path" />/scripts/main.js"></script>
 ~~~
+
+### Example 5: Return the sanitized value of some URL component
+
+~~~ html
+<txp:page_url type="lang" default="en" />
+~~~
+
+### Example 6: Link to the latest article
+
+~~~ html
+<txp:variable name="is_latest"><txp:page_url type="latest" /></txp:variable>
+...
+<txp:if_variable name="is_latest" value="1">
+    <txp:article limit="1" />
+</txp:else>
+   <txp:article />
+</txp:if_variable>
+~~~
+
+Using the above code in a page template would permit you to use example.org/articles?latest=1 as a URL and have Textpattern capture the 'latest' parameter and take action to display just the most recent article in that section.
+
+Other tags used: [variable](/tags/variable), [if_variable](/tags/if_variable), [else](/tags/else), [article](/tags/article).
 
 ## Genealogy
 
