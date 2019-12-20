@@ -38,7 +38,7 @@ There are other coloured alerts to be aware of: blue (information), yellow (warn
 In certain situations it may not be possible to get the green confirmation message, but it does not mean your site is not configured correctly. The following blue (information) alert messages, for example, are nothing to worry about if they appear by themselves.
 
 <span class="information">There was a problem connecting to the Textpattern update server. Please try again later.</span>
-: This alert means your Textpattern installation cannot connect with Textpattern’s servers (e.g. a web connection was lost), thus cannot check if a new stable release of the software is available. This message would persist until your installation could connect and make the check. At that time, if there were no updates available, the message would disappear and you’d see the green ‘All checks pass!’.
+: This alert means your Textpattern installation cannot connect with Textpattern’s servers (e.g. a web connection was lost), thus cannot check if a new stable release of the software is available. This message will persist until your installation attempts the connection again. At that time (at most, once an hour) if there were no updates available, the message would disappear and you’d see the green ‘All checks pass!’.
 
 <span class="information">New Textpattern version {number} available for download.</span>
 : If there was a new stable release, as described in the previous alert, you’d see this message instead, which would persist until you updated your installation with the new release (always recommended).
@@ -65,13 +65,13 @@ Red messages mean something critical appears to be wrong and you need to trouble
 : This alert suggests your index.php file is not available, is not the right version, or that your **Site URL** is set wrong in Preferences (Admin > Preferences > Site). It could also mean the index.php file was not updated for whatever reason during a recent upgrade. Update the file using the one from the [current Textpattern release](https://github.com/textpattern/textpattern/releases) and refresh diagnostics.
 
 <span class="error">.htaccess file is missing.</span>
-: This alert concerns the .htaccess file, but doesn't necessarily mean the file is missing. The message usually appears if you are trying to use one of the clean URL patterns, as set in Preferences (Admin > Preferences > Site), and you have one of the previous diagnostic issues with the wrong path in **Site URL**, or have a missing index.php file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an .htaccess file. If the file is there, then either replace it from the [current Textpattern release](https://github.com/textpattern/textpattern/releases), or select the help link next to this particular message and replace the contents of your existing .htaccess file with the indicated rewrite rules in the help dialog.
+: While this alert concerns the .htaccess file, it doesn't necessarily mean the file is missing. The message usually appears if you are trying to use one of the clean URL patterns, as set in Preferences (Admin > Preferences > Site), and you have one of the previous diagnostic issues with the wrong path in **Site URL**, or have a missing index.php file. Take care of those issues first and this message may disappear. If that does not work, then definitely check to see if you even have an .htaccess file. If the file is there, then either replace it from the [current Textpattern release](https://github.com/textpattern/textpattern/releases), or select the help link next to this particular message and replace the contents of your existing .htaccess file with the indicated rewrite rules in the help dialog.
 
 <span class="error">`$path_to_site` is inaccessible.</span>
-: This alert means either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
+: If you see this, either one or both of the previous diagnostics are a problem. Follow the troubleshooting procedures for them accordingly, and this problem will likely go away.
 
 <span class="error">{dirtype} is not writable.</span>
-: (Description needed.) [^chmod]
+: If any of the directories in which Textpattern stores your images, downloadable files, themes or temporary files have their permissions set incorrectly, this alert will appear. {dirtype} will indicate which directory needs attention. [^chmod]
 
 <span class="error">Apache module mod_rewrite is not installed.</span>
 : This alert means the mod_rewrite module is not readable, possibly because it has not been uncommented in the php.ini file working on your website. You’ll need access to your web server to track this down and see, or contact your web host. 
@@ -80,10 +80,10 @@ Red messages mean something critical appears to be wrong and you need to trouble
 : This alert likely means you have created an actual folder in your server file tree that shares a name with a section you created in the Sections panel (Presentation > Sections), or vice versa. This can break your site. You need to rename or remove one or the other.
 
 <span class="error">Missing files</span>
-: (Description needed.)
+: A list of core system files that Textpattern expects to be a) available, b) readable. If any are missing or have their permissions set incorrectly, they will be listed here for you to correct. [^chmod]
 
 <span class="error">The following errors were detected in your MySQL tables</span>
-: (Description needed.)
+: If any of the database tables are corrupt or need repairing, they will be listed here. Connect to your MySQl administrative interface (usually phpMyAdmin or an equivalent) and repair the tables in question.
 
 <span class="error">Temporary directory path and Plugin cache directory path should **not** match.</span>
 : This alert means paths to your plugin cache and /textpattern/tmp directory locations are the same. Neither should be web accessible, but if you set them to the same location, a temp file could overwrite a plugin, and that would be bad. Create a different folder location for your plugin cache.
@@ -114,10 +114,7 @@ Yellow warning alerts are not critical, per se, and sometimes can even be cascad
 : This alert means you have no path set to the /textpattern/tmp directory in the **Temporary directory path** preference (Admin > Preferences > Admin) relative to the web server, or it is unrecognized (e.g. incorrect path). Add or correct the path.
 
 <span class="warning">Your PHP installation is missing the <code>mail()</code> function. Therefore no emails can be sent from Textpattern, which limits certain functionality.</span>
-: (Description needed.)
-
-<span class="warning">Your version of PHP has known security vulnerabilities. Please turn <code>register_globals</code> off or update to a newer PHP version.</span>
-: (Description needed.)
+: If your web host have disabled or removed the <code>mail()</code> function, you will not be able to send out new user notifications or password change instructions. Contact them to understand their reasons for restricting this functionality.
 
 <span class="warning">Some Textpattern files have been modified.</span>
 : This alert is pointing out that you, or someone else with access to your installation files, has modified one or more files from their default status. This could be an important alert if you know for a fact it was not you who modified the files. But if it was you, and the changes were intentional, ignore this alert. The alert will not go away unless the core files have been returned to default conditions for the software version they represent. For this reason, it is generally not a good idea to *hack* core files. Modifying plugin files will not trigger this alert; rather, those changes are indicated on the given plugin in the Plugins panel (Admin > Plugins).
