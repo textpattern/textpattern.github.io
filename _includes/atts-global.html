@@ -1,7 +1,8 @@
+{% if include.preamble == null or include.preamble == "1" %}
 <h3 id="common-global-attributes">Common global attributes</h3>
 
 <p>These attributes are shared by all tags - and plugins, provided they do not override the functionality.</p>
-
+{% endif %}
 <dl>
     <dt><code class="highlighter-rouge language-plaintext">class="class name"</code></dt>
     <dd>HTML <code class="highlighter-rouge language-plaintext">class</code> to apply to the wrapper.</dd>
