@@ -100,7 +100,7 @@ If you require to take action if the condition is _not met_ you use the `<txp:el
 </txp:if_condition>
 ~~~~
 
-There are a host of [conditional tags](/tags/conditional-tags) that help you take action on many different types of situation or context your visitors may find themselves as they navigate your site.
+There are a host of [conditional tags](/tags/types/conditional-tags) that help you take action on many different types of situation or context your visitors may find themselves as they navigate your site.
 
 ### Tag example: displaying category lists
 
