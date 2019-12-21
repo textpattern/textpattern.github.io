@@ -11,7 +11,7 @@ description: A global escape attribute is available which applies to all tags - 
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex, follow">
-    <meta http-equiv="refresh" content="0;url=THE_NEW_URL">
+    <meta http-equiv="refresh" content="0;url=https://docs.textpattern.com/tags/learning/#tag-escaping">
     <link rel="canonical" href="https://docs.textpattern.com/tags/learning/#tag-escaping">
 </head>
 <body>
