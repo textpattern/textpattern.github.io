@@ -44,22 +44,10 @@ If you are the website’s administrator and forgot your password, you'll need t
 
 Most web hosting accounts provide direct access to a MySQL database via phpMyAdmin (or an equivalent). Some provide command line access to an SQL environment. If you're not sure how to access MySQL, ask your hosting provider's tech support.
 
-### For MySQL versions under 8.0
-
-Within phpMyAdmin, or at the MySQL command prompt, run the following query, where `my_pass` is the new password, and `user` is the login name of the account you wish to change:
+When you gain MySQL query access, run the following query, where `my password` is the new password, and `user` is the login name of the account you wish to change:
 
 ``` sql
-UPDATE txp_users SET pass=PASSWORD('my_pass') WHERE name='user';
+UPDATE txp_users SET pass=CONCAT('*', SHA1(UNHEX(SHA1('my password')))) WHERE name='user';
 ```
 
-If your host is running MySQL v8.0 or higher, you will not be able to use the `PASSWORD()` function.
-
-### For MySQL versions 8.0 and higher
-
-Within phpMyAdmin, or at the MySQL command prompt, run the following query, where `my_pass` is the new password, and `user` is the login name of the account you wish to change:
-
-``` sql
-UPDATE txp_users SET pass=CONCAT('*', SHA1(UNHEX(SHA1('my_pass')))) WHERE name='user';
-```
-
-Once you have executed the appropriate statement for the database version you have, you will be able to login to Textpattern with your login username and new password.
+You will then be able to login to Textpattern with your login username and new password.
