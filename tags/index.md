@@ -18,7 +18,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [Article tags](/tags/article-tags)
+* [Article tags](/tags/types/article-tags)
 * [Comment tags](/tags/comment-tags)
 * [Conditional tags](/tags/conditional-tags)
 * [Deprecated tags](/tags/deprecated-tags)
