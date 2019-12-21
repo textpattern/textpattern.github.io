@@ -437,7 +437,7 @@ Note that if a tag already _has_ an attribute with the same name as a global one
 
 ### Global attributes list
 
-The following lists all global attributes that Textpattern can process. All of them are unset by default.
+The following lists all global attributes that Textpattern can process.
 
 {% include atts-global.html preamble="0" %}
 
