@@ -12,12 +12,8 @@ Your options for resetting a forgotten Textpattern account password.
 
 **On this page:**
 
-* [Simple reset procedure](#simple-reset-procedure)
-* [If you forgot your login name](#if-you-fogot-your-login-name)
-* [If you do not have access to account email address](#if-you-do-not-have-access-to-account-email-address)
-* [Reset procedure for administrators](#reset-procedure-for-administrators)
-  * [For MySQL versions under 8.0](#for-mysql-versions-under-8)
-  * [For MySQL versions 8 and higher](#for-mysql-versions-8-and-higher)
+* Table of contents
+{:toc}
 
 ## Simple reset procedure
 
