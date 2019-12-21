@@ -1,7 +1,8 @@
+{% if include.preamble == null or include.preamble == "1" %}
 <h3 id="common-presentational-attributes">Common presentational attributes</h3>
 
 <p>These attributes, which affect presentation, are shared by many tags.</p>
-
+{% endif %}
 <dl>
 {% if include.break %}
     <dt><code class="highlighter-rouge language-plaintext">break="value"</code></dt>
