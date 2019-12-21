@@ -439,41 +439,7 @@ Note that if a tag already _has_ an attribute with the same name as a global one
 
 The following lists all global attributes that Textpattern can process. All of them are unset by default.
 
-`default="value"`
-: The value to display if the tag's output is blank.
-: **Values:** any.
-
-`escape="list, of, transforms"`
-: The transforms to apply to the output. See [tag escaping](#tag-escaping) for more details.
-: **Values:** `html, js, json, url, float, integer, number, ordinal, spell, lower, upper, title, [r|l]trim, quote, tags, textile`.
-
-`trim="string|regex"`
-: Remove the matching patterns from the output.
-: **Values:** any.
-
-`not="boolean"`
-: Switch `<txp:else />` parts.
-: **Values:** `0` (no) or `1` (yes).
-
-`label="string"`
-: The label to display before the output.
-: **Values:** any.
-
-`labeltag="tag"`
-: The tag (without angle brackets) to wrap the label.
-: **Values:** HTML tag, e.g. `h2` or `div`.
-
-`wraptag="tag or pattern"`
-: The tag (without angle brackets) to wrap the output.
-: **Values:** HTML tag or a string containing `<+>` pattern that will be replaced by the output.
-
-`wrapform="form name"`
-: The form to be used as `wraptag`. Handy if `wraptag` pattern is too long or reusable.
-: **Values:** Any defined form name.
-
-`class, html_id`
-: HTML `class` and `id` attributes of the wrapper tag.
-: **Values:** any valid string.
+{% include atts-global.html preamble="0" %}
 
 ### Tag escaping
 
