@@ -20,7 +20,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 * [Article tags](/tags/types/article-tags)
 * [Comment tags](/tags/types/comment-tags)
-* [Conditional tags](/types/tags/conditional-tags)
+* [Conditional tags](/tags/types/conditional-tags)
 * [Deprecated tags](/tags/types/deprecated-tags)
 * [Error handling tags](/tags/types/error-handling-tags)
 * [File tags](/tags/types/file-tags)
