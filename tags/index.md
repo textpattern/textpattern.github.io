@@ -26,6 +26,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [File tags](/tags/types/file-tags)
 * [Future tags](/tags/types/future-tags)
 * [Image tags](/tags/types/image-tags)
+* [Language tags](/tags/types/language-tags)
 * [Link tags](/tags/types/link-tags)
 * [List tags](/tags/types/list-tags)
 * [Markup tags](/tags/types/markup-tags)
