@@ -21,7 +21,7 @@ tags:
 <txp:file_download />
 ~~~
 
-The **file_download** tag is a *single* tag which Textpattern will replace with Textpattern 'file' type [Form templates](/themes/form-templates-explained). Inside that form go the other [file tags](/tags/file-tags).
+The **file_download** tag is a *single* tag which Textpattern will replace with Textpattern 'file' type Form templates. Inside that form go the other [file tags](/tags/types/file-tags).
 
 ## Attributes
 
@@ -38,6 +38,8 @@ Tag will accept the following attributes (**case-sensitive**):
 `id="integer"`
 : File `id` of the file to link to.
 : **Default:** unset (nothing is returned).
+
+{% include atts-global.html %}
 
 ## Examples
 
