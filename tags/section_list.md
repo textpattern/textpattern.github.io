@@ -44,7 +44,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** site name.
 
 `exclude="section name(s)"`
-: Comma-separated list of section names to exclude from the list. `sections` takes precedence over `exclude`.
+: Comma-separated list of section names to exclude from the list. `sections` takes precedence over `exclude`. Using this attribute without any value omits non-searchable sections from its output.
 : **Default:** unset (none).
 
 `form="form name"` <span class="footnote warning">v4.0.7+</span>
