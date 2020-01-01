@@ -100,15 +100,15 @@ Creates a link to the site's feed for articles in all sections and categories. I
 
 ### Example 4: With Symbolset's 'rss' glyph
 
-If you happen to use the 'rss' glyph in the social media set of [Symbolset](https://symbolset.com), you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first three list items show below. For the RSS glyph you need to put the selectors in the `<li>` since you can't put them in the `<a>`, as the last list item shows:
+If you happen to use the 'rss' glyph in the social media set of [Symbolset](https://symbolset.com), you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first two list items show below. For the RSS glyph you need to put the selectors in the `<li>` since you can't put them in the `<a>`, as the last list item shows:
 
 ~~~ html
 <ul class="socbar">
     <li>
-        <a href"https://twitter.com/xxx" class="ss-icon twit">twitter</a>
+        <a href="https://twitter.com/" class="ss-icon twit">Twitter</a>
     </li>
     <li>
-        <a href="https://www.linkedin.com/xxx" class="ss-icon in">linkedin</a>
+        <a href="https://www.linkedin.com/" class="ss-icon in">linkedin</a>
     </li>
     <li class="ss-icon rss">
         <txp:feed_link flavor="rss" section="articles" category="" label="rss" />
