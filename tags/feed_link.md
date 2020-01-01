@@ -108,9 +108,6 @@ If you happen to use the 'rss' glyph in the social media set of [Symbolset](http
         <a href"https://twitter.com/xxx" class="ss-icon twit">twitter</a>
     </li>
     <li>
-        <a href="https://plus.google.com/xxx" class="ss-icon gplus">googleplus</a>
-    </li>
-    <li>
         <a href="https://www.linkedin.com/xxx" class="ss-icon in">linkedin</a>
     </li>
     <li class="ss-icon rss">
