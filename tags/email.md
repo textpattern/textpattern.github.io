@@ -64,45 +64,6 @@ Tag will accept the following attributes (**case-sensitive**):
 </txp:email>
 ~~~
 
-### Example 4: With Symbolset's 'email' glyph
-
-If you happen to use the 'rss' glyph in the social media set of [Symbolset](https://symbolset.com), you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first two list items show below. For the RSS glyph you need to put the selectors in the `<li>` since you can't put them in the `<a>`, as the last list item shows:
-
-~~~ html
-<ul class="socbar">
-    <li>
-        <a href="https://twitter.com/" class="ss-icon twit">Twitter</a>
-    </li>
-    <li>
-        <a href="https://www.linkedin.com/" class="ss-icon in">LinkedIn</a>
-    </li>
-    <li class="ss-icon email">
-        <txp:email email="donald.swain@example.com" linktext="email" />
-    </li>
-</ul>
-~~~
-
-If you're using Symbolset, then you'll know that the `linktext="` attribute value in the last list item above **has** to be `email` for the glyph to work. Then the CSS must be like follows to target both instances of Symbolset glyph use:
-
-~~~ css
-/** Common rules **/
-a.ss-icon,
-li.ss-icon a {
-    /** design as you want **/
-}
-
-/** Target each one if specific hover effect is wanted **/
-.twit:hover {
-    /** design as you want **/
-}
-… etc …
-li.email a:hover {
-    /** design as you want **/
-}
-~~~
-
-See the [feed_link](/tags/feed_link) tag for a similar solution for Symbolset's 'rss' glyph.
-
 ## Genealogy
 
 ### Version 4.0.5

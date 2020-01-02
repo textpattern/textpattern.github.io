@@ -98,49 +98,6 @@ Note: `wraptag` is applicable only when using `format` of `a`.
 
 Creates a link to the site's feed for articles in all sections and categories. If you omit the `category` and `section` attributes, the feed will default to the current section/category.
 
-### Example 4: With Symbolset's 'rss' glyph
-
-If you happen to use the 'rss' glyph in the social media set of [Symbolset](https://symbolset.com), you can still use this tag. Let's say you're creating a social button bar using Symbolset glyphs in a list. The normal way to do this would be to set up your selectors on the individual anchor elements, like the first two list items show below. For the RSS glyph you need to put the selectors in the `<li>` since you can't put them in the `<a>`, as the last list item shows:
-
-~~~ html
-<ul class="socbar">
-    <li>
-        <a href="https://twitter.com/" class="ss-icon twit">Twitter</a>
-    </li>
-    <li>
-        <a href="https://www.linkedin.com/" class="ss-icon in">LinkedIn</a>
-    </li>
-    <li class="ss-icon rss">
-        <txp:feed_link flavor="rss" section="articles" category="" label="rss" />
-    </li>
-</ul>
-~~~
-
-If you're using Symbolset, then you'll know that the `label="` attribute value in the last list item above **has** to be `rss` for the glyph to work. If you try and put the two Symbolset `class` attribute values in the **feed_link** tag using its `class` attribute, it won't work, unfortunately. But putting them in the `<li>` element, like shown above, does work.
-
-There is no `atom` trigger word in Symbolset! So while you can use `flavor="atom"` and create an Atom feed just fine, you still need to use `label="rss"` for the link label to call the Symbolset glyph. This shouldn't be a problem because the glyph replaces the link text. You can then use `title="` to provide a custom hover text, or leave it out for the default display: 'Atom feed'.
-
-Then the CSS must be like follows to target both instances of Symbolset glyph use:
-
-~~~ css
-/** Common rules **/
-a.ss-icon,
-li.ss-icon a {
-    /** design as you want **/
-}
-
-/** Target each one if specific hover effect is wanted **/
-.twit:hover {
-    /** design as you want **/
-}
-… etc …
-li.email a:hover {
-    /** design as you want **/
-}
-~~~
-
-See the [email](/tags/email) tag for a similar solution for Symbolset's 'email' glyph.
-
 ## Genealogy
 
 ### Version 4.3.0
