@@ -111,7 +111,7 @@ If you happen to use the 'rss' glyph in the social media set of [Symbolset](http
         <a href="https://www.linkedin.com/" class="ss-icon in">LinkedIn</a>
     </li>
     <li class="ss-icon rss">
-        <txp:feed_link flavor="rss" section="articles" category="" label="RSS" />
+        <txp:feed_link flavor="rss" section="articles" category="" label="rss" />
     </li>
 </ul>
 ~~~
