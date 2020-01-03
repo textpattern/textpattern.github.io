@@ -123,7 +123,7 @@ Shows a category list and, underneath it, a list of related articles in the curr
 
 Other tags used: [category_list](/tags/category_list), [recent_articles](/tags/recent_articles).
 
-### Example 5: Check if `cat` is descendant of `animal`
+### Example 5: Check if 'cat' is descendant of 'animal'
 
 ~~~ html
 <txp:if_category category="cat" parent="animal">
