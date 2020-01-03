@@ -46,7 +46,7 @@
         <footer class="article-footer">
             <span class="ui-icon ui-icon-tag">Tags:</span>
             {% for tag in page.tags %}
-            <a rel="category tag" href="{{ tag | slugify }}" title="View documentation in this category">{{ tag }}</a>
+            <a rel="category tag" href="types/{{ tag | slugify }}" title="View documentation in this category">{{ tag }}</a>
             {% endfor %}
         </footer>
         {% endif %}
