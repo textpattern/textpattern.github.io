@@ -372,7 +372,9 @@ When you duplicate the default theme (as the next image depicts), or any other t
 
 ![Themes panel sections and assets](/img/themes-panel-sections-and-assets.png)
 
-Click any of these links and you are taken to the respective panels with the indicated number of assets in context. For example, clicking a ‘3’ under the Pages column for the duplicated theme lands you on the Pages panel with the associated three pages listed:
+These numbers can, of course, change between themes as you add or remove assets in a given theme.
+
+Click any of these numbered links and you are taken to the respective panels with the indicated number of assets in context. For example, clicking a ‘3’ under the Pages column for the duplicated theme lands you on the Pages panel with the associated three pages listed:
 
 ![Themes pages panel assets](/img/themes-pages-panel-assets.png)
 
