@@ -281,7 +281,7 @@ Begin by clicking the name of the default theme under the Name column of the tab
 
 The **Edit theme** editor will open up and show the theme’s metadata. Change all the metadata as described in the previous section. When done editing, click the ‘Duplicate’ link at bottom of the editor, at right of the Cancel button.
 
-![Click duplicate link](/img/click-duplicate-link.png)
+![Themes click duplicate link](/img/themes-click-duplicate-link.png)
 
 There is no confirmation dialogue asking if you are sure. You are simply taken back to the default panel view where your new theme is added to the themes table.
 
@@ -291,33 +291,76 @@ You are now a master at creating development theme packages. Proceed with learni
 
 ## Key features of Themes panel
 
-The Themes panel — as well associated assets panels and the Sections panel in relation — provide features and cues that make it easy to see what context a theme is in, or what context you are in when browsing about the relevant panels. This includes: whether a theme is active (live) or not, what assets are associated to which themes, what themes are assigned to sections, and contextual navigation between it all, including direct access to the templates needing edited.
+The Themes panel — as well associated assets panels and the Sections panel in relation — provide features and cues that make it easy to see what context a theme is in, or what context you are in when browsing about the relevant panels of the back end. This includes:
 
-After starting a new theme, have a look at the themes table on the Themes panel and note the useful features detailed in the following four sections. The first two of which, the Preview and Active/Activate links, are available version 4.8 of the software.
+* Whether a theme is in use (live) or not
+* What assets are associated to which themes
+* What themes are assigned to sections
+* The contextual navigation between it all, including direct access to the templates needing edited.
 
-### Preview link
+After starting a new development theme, as described in the previous sections, have a look at the themes table on the Themes panel and note the useful features detailed in the following four sections. The first two of which, the Preview and Active/Activate links, are available version 4.8 of the software.
 
-Immediately right of a theme’s name, under the Name column, are two links. The first link is ‘Preview’.
+### Assign sections link
 
-![Dev preview theme link](/img/dev-preview-theme-link.png)
+Immediately after a theme’s name, under the Name column, is a link, ‘Assign sections’.
 
-When clicked, you are taken to the Sections panel and put in a development context for that theme. You will use this link a lot. [Previewing themes](#previewing-themes-in-development) is described more later.
+![Themes assign sections link](/img/themes-assign-sections-link.png)
 
-### Active / Activate links
+As the link text suggests, you would click this link if you wanted to assign a given theme’s assets to existing sections. What is less clear, however, is that you can do this for both live and development environments at the same time, or just one or the other, and the default context sets you up to do both at once.   
 
-The other links under the Name column, working in tandem, are both status indicators and a [switching function](#switching-themes). As indicators, they enable you to tell from a glance if a given theme is live (active) or not. If a theme is noted with a green ‘Active’ link, it is live.
+![Themes assign sections context](/img/themes-assign-sections-context.png)
 
-![Active theme indicator](/img/active-theme-indicator.png)
+There is a lot going on here, so let’s walk through it. First the image above is showing a Sections panel table with several columns turned off for simplicity. (You will see all columns by default, but you can turn them off to follow along.)
 
-If the link is blue and reads ‘Activate’, the theme is not live, regardless of whether it’s still under development or just sitting ready and waiting to be used.
+![Themes sections panel columns off](/img/themes-sections-panel-columns-off.png)
+
+The remaining columns show:
+
+* Name of existing sections
+* Theme(s) applied on a given section
+* Page and Style assets of the indicated theme assigned in each case. 
+
+Note that all section records will be checked by default, and the selection controls under the table will be pre-selected with the ‘Change theme/page/style’ option…
+
+![Themes change theme/page/style](/img/themes-change-theme-page-style-option.png)
+
+In relation, both ‘Development’ and ‘Live’ environment check boxes will be checked…
+
+![Themes dev and live boxes](/img/themes-dev-and-live-boxes.png)
+
+If you leave both boxes checked, the theme you assign will become both the new live theme and a working development theme, separately. On the other hand, if you only select the ‘Development’ check box, the existing live theme will remain live and the theme you assign here will become a working development theme on the same sections but safely in development status.
+
+The theme that you clicked the ‘Assign sections’ link for will be selected as the theme to be assigned…
+
+![Themes selection menu in sections](/img/themes-selection-menu-in-sections.png)
+
+You can change the theme selection at this point if you want to, but the default assumption is you clicked the ‘Assign sections’ link on this theme in the Themes panel for the reason of using it now.
+
+The last menus for Page and Style do require manual selection. In other words, you are picking the page template and stylesheet for this theme that you want applied to the existing sections…
+
+![Themes page and style menus in sections](/img/themes-page-and-style-menus-in-sections.png)
+
+Again, note that all sections in the table are checked by default. This means if you go through with assigning a page and style, every section will have the same page and style assignment. This might be fine for the style assignment, if you use a single stylesheet for your entire website, but it might not be what you want for your page assignments, depending on how you have your page templates designed.
+
+The default assumption is that the majority of your sections use a single common page that is constructed with conditional logic such that regardless of what section it is assigned to, the page will output the necessary content as expected. This is what’s known as a one-to-many page assignment to sections. By contrast, a one-to-one assignment is where every section has a unique page template.
+
+It makes no difference how you match pages with sections, whether one-to-many or one-to-one. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme, in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if pages are assigned with the wrong template logic, your front end presentation will break.
+
+### ‘In use’ indicator
+
+As mentioned in the [Default theme](#default-theme) section, any themes that are live on the front end will be indicated by a green ‘In use’ pill.
+
+While most of the time you are likely to use a single theme on your front end, thus only see a single ‘In use’ pill in the Themes panel, it is possible to use a different them on each section of your website, in which case each theme in use will appear with the ‘In use’ pill indicator.
+
+Assigning a unique theme to each section in your website is easily done using the selection controls described in the previous section.
 
 ### Sections indicator
 
-Another way to tell if a theme is active or not is to look under the Sections column of the themes table and note if any sections for a given theme are yet assigned. Any theme with ‘0’ section associations is not active (i.e. not live on the front-end).
+Another way to tell if a theme is live (in use) or not is to look under the Sections column of the themes table in the Themes panel and note if any sections for a given theme are yet assigned. Any theme with ‘0’ section associations is not in use (i.e. not live on the front-end).
 
-![Sections column](/img/sections-column.png)
+![Themes panel sections column](/img/themes-panel-sections-column.png)
 
-When a theme is not active, you can safely work on its associated assets without concern for it impacting website visitors. You can access a given theme’s assets either via the [preview context](#previewing-themes-in-development), or directly from the assets links in the themes table.
+When a theme is not in use, you can safely work on its associated assets without concern for it impacting website visitors.
 
 ### Asset links
 
