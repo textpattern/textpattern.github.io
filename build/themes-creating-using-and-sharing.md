@@ -298,9 +298,9 @@ The Themes panel — as well associated assets panels and the Sections panel in 
 * What themes are assigned to sections
 * The contextual navigation between it all, including direct access to the templates needing edited.
 
-After starting a new development theme, as described in the previous sections, have a look at the themes table on the Themes panel and note the useful features detailed in the following four sections. The first two of which, the Preview and Active/Activate links, are available version 4.8 of the software.
+After starting a new development theme, as described in the previous sections, have a look at the themes table on the Themes panel and note the useful features detailed in the following four sections.
 
-### Assign sections link
+### ‘Assign sections’ link
 
 Immediately after a theme’s name, under the Name column, is a link, ‘Assign sections’.
 
@@ -330,7 +330,7 @@ In relation, both ‘Development’ and ‘Live’ environment check boxes will 
 
 If you leave both boxes checked, the theme you assign will become both the new live theme and a working development theme, separately. On the other hand, if you only select the ‘Development’ check box, the existing live theme will remain live and the theme you assign here will become a working development theme on the same sections but safely in development status.
 
-The theme that you clicked the ‘Assign sections’ link for will be selected as the theme to be assigned…
+The theme that you clicked the ‘Assign sections’ link for will be selected as the theme to be assigned, indicated by the theme’s title, not the theme’s name…
 
 ![Themes selection menu in sections](/img/themes-selection-menu-in-sections.png)
 
@@ -342,7 +342,7 @@ The last menus for Page and Style do require manual selection. In other words, y
 
 Again, note that all sections in the table are checked by default. This means if you go through with assigning a page and style, every section will have the same page and style assignment. This might be fine for the style assignment, if you use a single stylesheet for your entire website, but it might not be what you want for your page assignments, depending on how you have your page templates designed.
 
-The default assumption is that the majority of your sections use a single common page that is constructed with conditional logic such that regardless of what section it is assigned to, the page will output the necessary content as expected. This is what’s known as a one-to-many page assignment to sections. By contrast, a one-to-one assignment is where every section has a unique page template.
+The assumption made for having all sections in the table checked is that the majority of sections, if not all, use a common page that is constructed with conditional logic such that regardless of what section it is assigned to, the page will output the necessary content as expected. This is what’s known as a one-to-many page assignment to sections. By contrast, a one-to-one assignment is where every section has a unique page template.
 
 It makes no difference how you match pages with sections, whether one-to-many or one-to-one. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme, in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if pages are assigned with the wrong template logic, your front end presentation will break.
 
@@ -366,27 +366,27 @@ When a theme is not in use, you can safely work on its associated assets without
 
 Under the Pages, Forms, and Styles columns of the themes table are linked numbers indicating how many assets of each type are associated to a given theme.
 
-![Assets columns](/img/assets-columns.png)
+![Themes panel assets columns](/img/themes-panel-assets-columns.png)
 
 When you duplicate the default theme (as the next image depicts), or any other theme, the existing assets in the source theme are cloned as well, logically, thus why the duplicated themes have the same number.
 
-![Sections and assets columns](/img/sections-and-assets-columns.png)
+![Themes panel sections and assets](/img/themes-panel-sections-and-assets.png)
 
 Click any of these links and you are taken to the respective panels with the indicated number of assets in context. For example, clicking a ‘3’ under the Pages column for the duplicated theme lands you on the Pages panel with the associated three pages listed:
 
-![Pages assets](/img/pages-assets.png)
+![Themes pages panel assets](/img/themes-pages-panel-assets.png)
 
-You can tell which theme the panel assets are in context with by the appearance of the Theme selection menu above the assets list, showing the title of the relevant theme. (The Theme selection menu does not appear in assets panels when the Themes panel only has one theme.)
+You can tell which theme the panel assets are in context with by the appearance of the Theme selection menu above the assets list showing the title of the relevant theme. (The Theme selection menu does not appear in assets panels when the Themes panel only has one theme.)
 
-![Theme menu context](/img/theme-menu-context.png)
+![Themes menu context](/img/themes-menu-context.png)
 
 You can use the Theme selection menu to change theme context from any assets panel.
 
-![Theme menu selection](/img/theme-menu-selection.png)
+![Themes menu selection](/img/themes-menu-selection.png)
 
 You will remain in that different theme context as you browse between the assets panels. You can switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
 
-At this point you should have a pretty good idea of contexts and cues as it concerns themes and their assets in relation to relevant panels. And these contexts are useful whether working on themes in development or browsing themes that are live.
+At this point you should have a pretty good idea of contexts and cues as it concerns themes and their assets in relation to relevant panels. These contexts are useful whether working on themes in development or browsing themes that are live.
 
 ## Previewing themes in development
 
