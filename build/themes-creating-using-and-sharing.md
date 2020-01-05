@@ -263,11 +263,11 @@ The duplicated theme is added to the themes table and the name appears with ‘-
 
 ![Themes open edit theme editor](/img/themes-open-edit-theme-editor.png)
 
-Change the metadata in the six fields as thoroughly as possible. See, again, [Create from scratch](#create-from-scratch) for explanation of the fields. If you don’t have a value to give for an optional field, clear the field’s value so it is entirely blank. You can always fill it in later. When finished with changing all the metadata on your duplicated theme, save and close the form.
+Change the metadata in the six fields as thoroughly as possible. See, again, [Create from scratch](#create-from-scratch) for explanation of the fields. If you don’t have a value to give for an optional field, clear the field’s value so it is entirely blank. You can always fill it in later. When finished with changing all the metadata on your duplicated theme, click the yellow Save button to save changes and close the form.
 
 ![Themes save edit theme changes](/img/themes-save-edit-theme-changes.png)
 
-(The ‘Duplicate’ link you see in the image above is a hint to the next section.)
+(The ‘Duplicate’ link you see in the image above is a hint to the next section. Do not click it now.)
 
 The duplicated theme will be added to the themes table in the main panel view. Once the default theme is duplicated and the metadata changed, the duplicated theme is, for all practical purposes, a *new* non-live theme that you may further development to have a unique appearance.
 
@@ -277,7 +277,7 @@ The last way to create a theme is the most direct (fewer clicks in the interface
 
 As before, click the name of the default theme under the Name column of the table.
 
-![Click default theme name](/img/click-default-theme-name.png)
+![Themes click default name](/img/themes-click-default-name.png)
 
 The **Edit theme** editor will open up, as you know, and show the default theme’s metadata so you can change it accordingly. See the process described in the previous section.
 
