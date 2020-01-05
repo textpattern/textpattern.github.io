@@ -259,7 +259,7 @@ Proceed by checking the box next to one or more themes (in this case the default
 
 Click ‘OK’ when asked if you are sure.
 
-The duplicated theme is added to the themes table and the name appears with ‘-copy’ on it. You can now uncheck the default theme’s box in the table, then proceed with changing the name, title, and other metadata values on the duplicated theme. Do this by clicking the theme’s name in the Name column of the themes table to open the **Edit theme** editor (again, same as the **New theme** editor but in different context).
+The duplicated theme is added to the themes table and the name appears with ‘_copy’ on it. You can now uncheck the default theme’s box in the table, then proceed with changing the name, title, and other metadata values on the duplicated theme. Do this by clicking the theme’s name in the Name column of the themes table to open the **Edit theme** editor (again, same as the **New theme** editor but in different context).
 
 ![Themes open edit theme editor](/img/themes-open-edit-theme-editor.png)
 
@@ -273,21 +273,19 @@ The duplicated theme will be added to the themes table in the main panel view. O
 
 #### Duplicate via theme editor
 
-The last way to create a theme is the most direct (fewer clicks in the interface) yet least obvious way to create by duplication.
+The last way to create a theme is the most direct (fewer clicks in the interface) by duplication yet least obvious way.
 
-As before, click the name of the default theme under the Name column of the table.
+Begin by clicking the name of the default theme under the Name column of the table (or using any existing theme).
 
 ![Themes click default name](/img/themes-click-default-name.png)
 
-The **Edit theme** editor will open up, as you know, and show the default theme’s metadata so you can change it accordingly. See the process described in the previous section.
-
-When done editing the data, click the ‘Duplicate’ link at bottom of the editor, at right of the Cancel button.
+The **Edit theme** editor will open up and show the theme’s metadata. Change all the metadata as described in the previous section. When done editing, click the ‘Duplicate’ link at bottom of the editor, at right of the Cancel button.
 
 ![Click duplicate link](/img/click-duplicate-link.png)
 
 There is no confirmation dialogue asking if you are sure. You are simply taken back to the default panel view where your new theme is added to the themes table.
 
-![New theme created](/img/new-theme-created.png)
+![Themes new duplication](/img/themes-new-duplication.png)
 
 You are now a master at creating development theme packages. Proceed with learning all the useful contexts between development and live themes.
 
