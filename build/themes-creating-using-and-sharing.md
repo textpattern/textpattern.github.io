@@ -21,9 +21,9 @@ Textpattern users, and theme designers in general, new and old, will find Textpa
 
 ### A theme development ‘studio’
 
-The addition of the Themes panel has essentially transformed how to think about building website architectures with Textpattern’s semantic building blocks. Textpattern designers will likely find the Themes panel is now the centre stage of the administration side. Indeed, the back-end is like a theme development studio, where you can work on many themes simultaneously, for employing on your website or sharing with the community. But don’t worry, writers and editors, Textpattern is still the same system to do what its creator envisioned. ‘Just write.’
+The addition of the Themes panel has essentially transformed how to think about building website architectures with Textpattern’s semantic building blocks. Textpattern designers will likely find the Themes panel is now the centre stage of the administration side. Indeed, the back-end is like a theme development studio, where you can work on many themes simultaneously, for employing on your website or sharing with the community. But don’t worry, writers and editors, Textpattern is still the same system to do what its creator envisioned, just write.
 
-Theoretically speaking, you could hack a [theme package](#theme-package) together, from scratch and by hand, directly on your web server. The metadata is simple, and the files are text-based <i>.txp</i> format and familiar <i>.css</i>. And, sure, it can be a learning experience to sit on the cold garage floor with grease and gears.
+Theoretically speaking, you could hack a [theme package](#theme-package) together, from scratch and by hand, directly on your web server. The metadata is simple, and the files are text-based .txp format and familiar .css. And, sure, it can be a learning experience to sit on the cold garage floor with grease and gears.
 
 This document, however, describes the sensible approach of using the new theming functionality in the back-end to ensure everything is organized and aligned correctly. Be at ease knowing that creating a new theme has no impact on a website’s operation or presentation if the pages and styles of the theme are not yet associated to the website’s functioning sections (easy to tell at a glance, as you will see). If not, you can freely modify the assets of any theme without worry.
 
@@ -35,7 +35,7 @@ In addition to the document you are reading, and your own installation of the so
   * [Current stable release of theme](https://release-demo.textpattern.co/)
   * [Upcoming release of theme](https://dev-demo.textpattern.co/)  (in development)
 * [Back-end demo of fresh software install](https://www.textpattern.co/demo) (first copy the username/password detail, then proceed to the ‘Admin’ version of choice)
-* [Package assets: pages, forms, styles, metadata](https://github.com/textpattern/textpattern-default-theme) (go to *dist/{name-of-them}*)
+* [Package assets: pages, forms, styles, metadata](https://github.com/textpattern/textpattern-default-theme) (go to dist/{name-of-them})
 
 The front-end and back-end demos are routinely updated. The back-end demo offers a choice between the current version release and the next one under development.
 
@@ -100,9 +100,9 @@ Of the entire package, only two page templates and the metadata file are ‘esse
 
 Theme designers would doubtfully ever share such a worthless theme, but if one did, and you actually wanted to use it, here’s how Textpattern would treat it at time of [importing](#importing-themes):
 
-1. **Pages**. If the essential page templates were missing, they would be created as empty pages. If the entire *pages* directory was missing, it would be created, as well the two essential pages with their default contents.
-2. **Forms**. If non-essential form files are missing, they are added in place as empty files. If any form subdirectories are missing, or the entire *forms* directory, the full *forms* directory from the tree above will be created, and the eight form files will contain default Textpattern markup.
-3. **Styles**. If the file is missing, it is added as an empty file. If the *styles* directory is missing, the directory plus a blank *default.css* file will be created.
+1. **Pages**. If the essential page templates were missing, they would be created as empty pages. If the entire /pages directory was missing, it would be created, as well the two essential pages with their default contents.
+2. **Forms**. If non-essential form files are missing, they are added in place as empty files. If any form subdirectories are missing, or the entire /forms directory, the full /forms directory from the tree above will be created, and the eight form files will contain default Textpattern markup.
+3. **Styles**. If the file is missing, it is added as an empty file. If the /styles directory is missing, the directory plus a blank default.css file will be created.
 4. **Metadata**. The [metadata](#metadata) file is handled more simply; the focus is on any missing metadata values.
 
 Textpattern will always augment a theme this way when importing or updating one, and any of the default package assets are missing. If, after importing or updating such a sparse theme, you later delete any of the augmented files, and that's your prerogative, and exported it that way for sharing, those files will remain missing in the exported theme. In other words, you would be sharing a worthless theme, just like the one shared with you. But that’s fine, because it would not break anything when someone else imported it at their end. Their installation of Textpattern would augment the theme with defaults and placeholders again just like described.
@@ -117,7 +117,7 @@ Pages are your web page templates, primarily built with HTML and [Textpattern ta
 
 [Forms](/build/form-templates-explained.md) are the named containers of markup components (conceptually the same as partials, snippets, or includes) for *inclusion* into page templates, or for nesting into other forms. Such ‘Russian doll’ construction of your website’s architecture using pages and forms enables building sophisticated website structures that are, again, easier to manage and maintain.
 
-All form files must have unique names — across core forms and any custom forms created — and core form names will never be changed from their defaults. Compound form names use underscores between words (e.g. <i>**custom_form_name**</i>) and the resulting template file name should match (i.e. <i>custom_form_name.txp</i>).
+All form files must have unique names — across core forms and any custom forms created — and core form names will never be changed from their defaults. Compound form names use underscores between words (e.g. <i>**custom_form_name**</i>) and the resulting template file name should match (i.e. custom_form_name.txp).
 
 #### Style assets
 
@@ -127,7 +127,7 @@ Incidentally, there is a very handy combination of controls, accessed via the Se
 
 #### Metadata
 
-The essential metadata rides with the package as a <i>manifest.json</i> file, in which the following six metadata items are found:
+The essential metadata rides with the package as a manifest.json file, in which the following six metadata items are found:
 
 * title
 * version
@@ -166,25 +166,41 @@ Textpattern has always allowed you to create a different *presentation* for your
 * Used to create different site structures, to a certain degree
 * Shared with the community, so others can benefit from your savvy design sense.
 
-And that’s it for the big picture. Now we descend the ladder and get closer to the action! Everything from here on is framed in context of a fresh (out-of-the-box) install of the software, but the principles are the same whether your installation is brand new or an old workhorse that’s up to date. As long as you’re using the [latest release](https://textpattern.com/start) of the software, at least, it will make sense. Any exceptions to this rule are made clear in context of instructions.
+And that’s it for the big picture. Now we descend the ladder and get closer to the action! Everything from here on is framed in context of a fresh (out-of-the-box) install of the software, but the principles are the same whether your installation is brand new or an old workhorse that’s up to date. As long as you are using the [latest release](https://textpattern.com/start) of the software, at least, it will make sense. Any exceptions to this rule are made clear in context of instructions.
+
+## Default theme
+
+When looking at the Themes panel of a new installation of Textpattern, a single theme named ‘four-point-eight’ appears in the display table.
+
+![Themes default item](/img/themes-default-item.png)
+
+The ‘four-point-eight’ theme is live on your site in this default condition by fact it is the only existing theme.
+
+When one or more other themes exist, an ‘In use’ indicator appears on the theme(s) that are actually live.
+
+![Themes default in use](/img/themes-default-in-use.png)
+
+To establish one or more additional themes, you either need to create them, discussed in the next sections, or [import](#importing-themes) them from an external source.
 
 ## Creating themes
 
-Multiple options are available for creating a new theme via the Themes panel. You can:
+When creating a new theme, it is not immediately live; it is in development mode. One or more themes are not actually live until you make them live.
+
+Multiple options are available for creating a new development theme via the Themes panel. You can:
 
 * Create a new theme from scratch directly via the **New theme** editor
 * Duplicate a theme via the **With selected** controls
 * Duplicate a theme via the **Edit theme** editor.
 
-All the approaches accomplish the same thing: establish a new theme to start working on. The approaches also use the same functionality, but just in different order and contexts (e.g. the **New theme** editor and **Edit theme** editor are the same thing, but accessed differently). 
+These approaches are similar in the functionality they use and all accomplish the same thing: establish a development theme to start working on. The differ only by the paths taken to complete the task, and the contexts of each (e.g. the **New theme** editor and **Edit theme** editor are the same thing, but accessed differently). 
 
-Let’s look at each one in default system context.
+Let’s look at each one under default conditions.
 
 ### Create from scratch
 
-That is to say, via the **New theme** editor; it is the most called-out way to get started by evidence of the prominent button bearing the same label right at top of the Themes panel.
+Creating a development theme from scratch means via the **New theme** editor. It is the most called-out way to get started by evidence of the prominent button bearing the same label right at top of the Themes panel.
 
-![Click New theme button](/img/click-new-theme-button.png)
+![Themes new button click](/img/themes-new-button-click.png)
 
 The **New theme** button opens the associated editor, which is simply a regular web form with six fields, the first two of which are required:
 
@@ -195,7 +211,7 @@ The **New theme** button opens the associated editor, which is simply a regular 
 * Theme author
 * Theme website 
 
-The six fields you see in the editing form correspond to four columns in the theme’s table on the main panel (Name, Title, Version, Author), and five of the metadata values in [the <i>manifest.json</i> file](#metadata).
+The six fields you see in the editing form correspond to four columns in the theme’s table on the main panel (Name, Title, Version, Author), and five of the metadata values in [the manifest.json file](#metadata). Fill in as much of the data as possible.
 
 The theme’s name and title are not the same. If you registered an [author prefix](#author-prefix-and-registration), you should use that as the first part of the theme’s name (e.g. ‘abc-my-new-theme’). The title, on the other hand, like for a book, is the proper, ‘human-readable’ name and should be entered in capital case with no hyphens (i.e. ‘Title Like This’). You do not have to use your prefix in the title, only for the name; so you could have this pairing, for example:
 
