@@ -259,11 +259,7 @@ Proceed by checking the box next to one or more themes (in this case the default
 
 Click ‘OK’ when asked if you are sure.
 
-The duplicated theme is added to the themes table and the name appears with ‘-copy’ on it.
-
-![Themes duplicated via selection controls](/img/themes-duplicated-via-selection-controls.png)
-
-You can now uncheck the default theme’s box in the table, then proceed with changing the name, title, and other metadata values on the duplicated theme. Do this by clicking the theme’s name in the Name column of the themes table to open the **Edit theme** editor (again, same as the **New theme** editor but in different context).
+The duplicated theme is added to the themes table and the name appears with ‘-copy’ on it. You can now uncheck the default theme’s box in the table, then proceed with changing the name, title, and other metadata values on the duplicated theme. Do this by clicking the theme’s name in the Name column of the themes table to open the **Edit theme** editor (again, same as the **New theme** editor but in different context).
 
 ![Themes open edit theme editor](/img/themes-open-edit-theme-editor.png)
 
