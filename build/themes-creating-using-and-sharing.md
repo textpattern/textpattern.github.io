@@ -218,7 +218,7 @@ When creating a new theme, regardless of which way you do so, fill in as much of
 The theme’s name and title are not the same. If you registered an [author prefix](#author-prefix-and-registration), you should use that as the first part of the theme’s name (e.g. ‘abc-new-theme’). The title, on the other hand, like for a book, is the proper, ‘human-readable’ name and should be entered in capital case with no hyphens (i.e. ‘Title Like This’). You do not have to use your prefix in the title, only for the name; so you could have this pairing, for example:
 
 * Theme name: abc-new-theme
-* Theme title: New Theme
+* Theme title: My New Theme
 {:.example}
 
 As explained in the [Metadata](#metadata) section earlier, if you decide to skip the optional fields for whatever reason, Textpattern will automatically fill the version and author fields with the following default values, where ‘username’ is the name you log into Textpattern with:
@@ -237,13 +237,13 @@ When the **New theme** metadata are saved, the resulting theme appears in the th
 
 ![Themes default in use](/img/themes-default-in-use.png)
 
-The two other approaches that get to this point, both by way of theme duplication, are described next. Or jump to the [Active versus inactive themes](#active--activate-links) section to continue on the current journey.   
+The remaining two approaches that arrive at this point make use of theme duplication functionality. If you’re happy knowing one method to create a new development theme instead of all three methods, jump to the [Key features of Themes panel](#key-features-of-themes-panel) section to continue on the current journey.   
 
 ### Create from duplication
 
 Using an existing theme package as a guide for your efforts is a good way to get started with making themes. There’s no better package to use in this case than the default theme that comes with Textpattern, already shown and functioning in the Themes panel upon installing the software.
 
-This does not mean start working directly on the default theme, or you will be doing development on an active (live) theme and changing its nature. Instead, duplicate the default theme, thereby turning it into a new one.
+This does not mean start working directly on the default theme, or you will be doing development on an active (live) theme and changing its nature. Instead, duplicate the default theme first, thereby turning it into a new development theme to work on.
 
 While these instructions describe using the default theme (the only theme available in an out-of-the-box context of the software), you could duplicate any existing theme in the Themes panel; such as one that might have the kind of website structure you want to work closer with.
 
@@ -251,27 +251,29 @@ The following two approaches to duplication are the same regardless of what them
 
 #### Duplicate via selection controls
 
-One way to duplicate the default theme is via the selection controls that work in combination with the check boxes in front of each theme record.
+One way to duplicate a theme is via the selection controls on the Themes panel that work in combination with the check boxes in front of each theme record.
 
-Proceed by checking the box next to the default theme in the themes table, then selecting the ‘Duplicate’ option from the **With 1 selected…** menu just below the table. 
+Proceed by checking the box next to one or more themes (in this case the default theme is demonstrated), then select the ‘Duplicate’ option from the **With 1 selected…** menu just below the table. 
 
-![Duplicate via with selected controls](/img/select-duplicate.png)
+![Themes duplicate via selection controls](/img/themes-duplicate-via-selection-controls.png)
 
-Finally, clicking ‘OK’ when asked if you are sure.
+Click ‘OK’ when asked if you are sure.
 
-The duplicated theme is added to the themes table and the name appears with ‘-copy’ on it. You can now uncheck the default theme’s box in the table, then proceed with changing the name, title, and other metadata values on the duplicated theme.
+The duplicated theme is added to the themes table and the name appears with ‘-copy’ on it.
 
-Do this by clicking the theme’s name in the Name column of the themes table to open the **Edit theme** editor (again, same as the **New theme** editor but in different context).
+![Themes duplicated via selection controls](/img/themes-duplicated-via-selection-controls.png)
 
-![Click default theme name](/img/click-default-theme-name.png)
+You can now uncheck the default theme’s box in the table, then proceed with changing the name, title, and other metadata values on the duplicated theme. Do this by clicking the theme’s name in the Name column of the themes table to open the **Edit theme** editor (again, same as the **New theme** editor but in different context).
+
+![Themes open edit theme editor](/img/themes-open-edit-theme-editor.png)
 
 Change the metadata in the six fields as thoroughly as possible. See, again, [Create from scratch](#create-from-scratch) for explanation of the fields. If you don’t have a value to give for an optional field, clear the field’s value so it is entirely blank. You can always fill it in later. When finished with changing all the metadata on your duplicated theme, save and close the form.
 
-![Save edit theme form changes](/img/save-edit-theme-form-changes.png)
+![Themes save edit theme changes](/img/themes-save-edit-theme-changes.png)
 
 (The ‘Duplicate’ link you see in the image above is a hint to the next section.)
 
-The duplicated theme will be added to the themes table in the main panel view. Once the default theme is duplicated and the metadata changed, the duplicated theme is, for all practical purposes, a *new* theme, just not visually unique yet.
+The duplicated theme will be added to the themes table in the main panel view. Once the default theme is duplicated and the metadata changed, the duplicated theme is, for all practical purposes, a *new* non-live theme that you may further development to have a unique appearance.
 
 #### Duplicate via theme editor
 
