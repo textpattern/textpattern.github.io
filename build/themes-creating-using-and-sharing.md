@@ -192,7 +192,7 @@ Multiple options are available for creating a new development theme via the Them
 * Duplicate a theme via the **With selected** controls
 * Duplicate a theme via the **Edit theme** editor.
 
-These approaches are similar in the functionality they use and all accomplish the same thing: establish a development theme to start working on. The differ only by the paths taken to complete the task, and the contexts of each (e.g. the **New theme** editor and **Edit theme** editor are the same thing, but accessed differently). 
+These approaches are similar in the functionality they use and all accomplish the same thing: establish a development theme to start working on. They differ only by the paths taken to complete the task, and the contexts of each (e.g. the **New theme** editor and **Edit theme** editor are the same thing, but accessed differently). 
 
 Let’s look at each one under default conditions.
 
@@ -211,27 +211,31 @@ The **New theme** button opens the associated editor, which is simply a regular 
 * Theme author
 * Theme website 
 
-The six fields you see in the editing form correspond to four columns in the theme’s table on the main panel (Name, Title, Version, Author), and five of the metadata values in [the manifest.json file](#metadata). Fill in as much of the data as possible.
+The six fields you see in the editing form correspond to four columns in the theme’s table on the main panel (Name, Title, Version, Author), and five of the metadata values in [the manifest.json file](#metadata).
 
-The theme’s name and title are not the same. If you registered an [author prefix](#author-prefix-and-registration), you should use that as the first part of the theme’s name (e.g. ‘abc-my-new-theme’). The title, on the other hand, like for a book, is the proper, ‘human-readable’ name and should be entered in capital case with no hyphens (i.e. ‘Title Like This’). You do not have to use your prefix in the title, only for the name; so you could have this pairing, for example:
+When creating a new theme, regardless of which way you do so, fill in as much of the data as possible.
 
-* Theme name: abc-my-new-theme
-* Theme title: My New Theme
+The theme’s name and title are not the same. If you registered an [author prefix](#author-prefix-and-registration), you should use that as the first part of the theme’s name (e.g. ‘abc-new-theme’). The title, on the other hand, like for a book, is the proper, ‘human-readable’ name and should be entered in capital case with no hyphens (i.e. ‘Title Like This’). You do not have to use your prefix in the title, only for the name; so you could have this pairing, for example:
+
+* Theme name: abc-new-theme
+* Theme title: New Theme
 {:.example}
 
-As explained in the Metadata section earlier, if you decide to skip the optional fields for whatever reason, Textpattern will automatically fill the version and author fields with the following default values, where ‘username’ is the name you log into Textpattern with, which is not ideal but better than nothing:
+As explained in the [Metadata](#metadata) section earlier, if you decide to skip the optional fields for whatever reason, Textpattern will automatically fill the version and author fields with the following default values, where ‘username’ is the name you log into Textpattern with:
 
 * Theme version: 0.0.1
 * Theme author: username
 {:.example}
 
+These automatic defaults are better than nothing, but not ideal. Again, take the time to add the metadata as completely as possible.
+
 The remaining description and website fields will stay empty if not used. The website field is for a URL to where your theme can be downloaded online; whether at your own website, at a version control site, or, ideally, in Textpattern’s upcoming community [Themes website](https://themes.textpattern.com) ([repository](https://github.com/textpattern/textpattern-themes-website)). Options galore!
 
-In any case, you should fill out the theme editing form as completely as possible, without relying on Textpattern’s defaults. The more complete the form, the more informative the manifest file will be. Any fields you can’t fill immediately, such as the website URL, can always be filled in later.
+Again, fill out the form fields as completely as possible without relying on Textpattern’s defaults. The more complete the form, the more informative the manifest file will be. Any fields you can’t fill immediately, such as the website URL, can always be filled in later if you ever intend to share your theme(s).
 
 When the **New theme** metadata are saved, the resulting theme appears in the themes table.
 
-![Active theme indicator](/img/active-theme-indicator.png)
+![Themes default in use](/img/themes-default-in-use.png)
 
 The two other approaches that get to this point, both by way of theme duplication, are described next. Or jump to the [Active versus inactive themes](#active--activate-links) section to continue on the current journey.   
 
