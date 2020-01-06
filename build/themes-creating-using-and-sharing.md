@@ -350,9 +350,7 @@ It makes no difference how you match pages with sections, whether one-to-many or
 
 As mentioned in the [Default theme](#default-theme) section, any themes that are live on the front end will be indicated by a green ‘In use’ pill.
 
-While most of the time you are likely to use a single theme on your front end, thus only see a single ‘In use’ pill in the Themes panel, it is possible to use a different them on each section of your website, in which case each theme in use will appear with the ‘In use’ pill indicator.
-
-Assigning a unique theme to each section in your website is easily done using the selection controls described in the previous section.
+While you are likely to use a single theme most of the time, thus only see a single ‘In use’ pill in the Themes panel, it is possible to [assign multiple themes](#assigning-multiple-themes) to the front end (i.e. use a different theme on each section of your website). Should you ever do that, each theme used will appear with the ‘In use’ pill indicator.
 
 ### Sections indicator
 
@@ -382,13 +380,13 @@ You can tell which theme the panel assets are in context with by the appearance 
 
 ![Themes menu context](/img/themes-menu-context.png)
 
-You can use the Theme selection menu to change theme context from any assets panel.
+The Theme selection menu can be used to change theme context from any assets panel.
 
 ![Themes menu selection](/img/themes-menu-selection.png)
 
-You will remain in that different theme context as you browse between the assets panels. You can switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
+You remain in that different theme context as you browse around the back end. You can switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
 
-At this point you should have a pretty good idea of contexts and cues as it concerns themes and their assets in relation to relevant panels. These contexts are useful whether working on themes in development or browsing themes that are live.
+You now have a good idea of contexts and cues as it concerns themes and their assets in relation to relevant panels. These contexts are useful whether working on themes in development or browsing themes that are live.
 
 ## Previewing themes in development
 
