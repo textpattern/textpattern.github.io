@@ -302,15 +302,17 @@ After starting a new development theme, as described in the previous sections, h
 
 ### ‘Assign sections’ link
 
-Immediately after a theme’s name, under the Name column, is a link, ‘Assign sections’.
+Immediately after a theme’s name, under the Name column of the themes table, is a link, ‘Assign sections’. As the link text suggests, you would click this link if you wanted to assign a given theme’s assets to existing sections.
 
 ![Themes assign sections link](/img/themes-assign-sections-link.png)
 
-As the link text suggests, you would click this link if you wanted to assign a given theme’s assets to existing sections. What is less clear, however, is that you can do this for both live and development environments at the same time, or just one or the other, and the default context sets you up to do both at once.   
+In fact, you can assign a theme’s assets to existing sections for both live and development environments at the same time (or just one or the other), and the default context sets you up to do both at once.
+
+When the link shown above is clicked, it takes you to the Sections panel with the live theme in context. Note that all sections in the table are checked, and the selection controls under the table are preconfigured for changing theme assignments.   
 
 ![Themes assign sections context](/img/themes-assign-sections-context.png)
 
-There is a lot going on here, so let’s walk through it. First the image above is showing a Sections panel table with several columns turned off for simplicity. (You will see all columns by default, but you can turn them off to follow along.)
+There is a lot going on here, so let’s walk through it. First the image above is showing a Sections panel table with several irrelevant columns turned off for simplicity. (You will see all columns by default, but you can turn them off to follow along.)
 
 ![Themes sections panel columns off](/img/themes-sections-panel-columns-off.png)
 
@@ -320,23 +322,23 @@ The remaining columns show:
 * Theme(s) applied on a given section
 * Page and Style assets of the indicated theme assigned in each case. 
 
-Note that all section records will be checked by default, and the selection controls under the table will be pre-selected with the ‘Change theme/page/style’ option…
+The selection menu under the table is pre-selected with the ‘Change theme/page/style’ option…
 
 ![Themes change theme/page/style](/img/themes-change-theme-page-style-option.png)
 
-In relation, both ‘Development’ and ‘Live’ environment check boxes will be checked…
+In relation, both ‘Development’ and ‘Live’ environment check boxes are checked by default…
 
 ![Themes dev and live boxes](/img/themes-dev-and-live-boxes.png)
 
 If you leave both boxes checked, the theme you assign will become both the new live theme and a working development theme, separately. On the other hand, if you only select the ‘Development’ check box, the existing live theme will remain live and the theme you assign here will become a working development theme on the same sections but safely in development status.
 
-The theme that you clicked the ‘Assign sections’ link for will be selected as the theme to be assigned, indicated by the theme’s title, not the theme’s name…
+The theme for which you clicked the ‘Assign sections’ link in the Themes panel is selected as the theme to be assigned, indicated by the theme’s title, not the theme’s name…
 
 ![Themes selection menu in sections](/img/themes-selection-menu-in-sections.png)
 
-You can change the theme selection at this point if you want to, but the default assumption is you clicked the ‘Assign sections’ link on this theme in the Themes panel for the reason of using it now.
+You can change the theme selection, but the assumption is you clicked the ‘Assign sections’ link for the theme you intended to use.
 
-The last menus for Page and Style do require manual selection. In other words, you are picking the page template and stylesheet for this theme that you want applied to the existing sections…
+The last menus for Page and Style require manual selection. In other words, you are picking the page template and stylesheet for this theme that you want applied to the existing sections…
 
 ![Themes page and style menus in sections](/img/themes-page-and-style-menus-in-sections.png)
 
@@ -344,7 +346,9 @@ Again, note that all sections in the table are checked by default. This means if
 
 The assumption made for having all sections in the table checked is that the majority of sections, if not all, use a common page that is constructed with conditional logic such that regardless of what section it is assigned to, the page will output the necessary content as expected. This is what’s known as a one-to-many page assignment to sections. By contrast, a one-to-one assignment is where every section has a unique page template.
 
-It makes no difference how you match pages with sections, whether one-to-many or one-to-one. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme, in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if pages are assigned with the wrong template logic, your front end presentation will break.
+For smaller/simpler sites, most people use a ‘default’ page template for the default (homepage) section, then a ‘common’ or ‘generic’ page template for the remaining sections of their website (with, perhaps, a third template used for a contact form page). The default homepage pairing (and any contact form page pairing) is a one-to-one page to section assignment, while the latter associations reflect a one-to-many page to sections assignment. In such a situation, one would have to run the selection controls twice; first for the default section alone (unchecking all other sections), then for all remaining sections (checking all sections except the default section).
+
+It makes no difference how you match pages with sections, whether one-to-many or one-to-one. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if they are assigned wrong — the templates having the wrong conditional logic — your front end presentation will break.
 
 ### ‘In use’ indicator
 
