@@ -174,17 +174,30 @@ When looking at the Themes panel of a new installation of Textpattern, a single 
 
 ![Themes default item](/img/themes-default-item.png)
 
-The ‘four-point-eight’ theme is live on your site in this default condition by fact it is the only existing theme.
+When clicking the theme’s name, the **Edit theme** form opens up showing you the default theme’s metadata properties.
 
-When one or more other themes exist, an ‘In use’ indicator appears on the theme(s) that are actually live.
+Although there is no indication at this initial default state, the ‘four-point-eight’ theme is live on your site by fact it is the only existing theme.
+
+When one or more other themes exist, two more elements appear  next to the default theme’s name:
+
+* an ‘Assign sections’ link
+* an ‘In use’ pill indicator making it clear the theme is live on the front end.
 
 ![Themes default in use](/img/themes-default-in-use.png)
 
-To establish one or more additional themes, you either need to create them, discussed in the next sections, or [import](#importing-themes) them from an external source.
+To establish one or more additional themes, you either need to create them (from development to live), discussed in the next sections, or [import](#importing-themes) them from an external source.
+
+## Development themes preference
+
+A single, important preference is associated with themes development. It is located at Admin > Preferences > Admin, second preference from bottom of screen: *Enable development theme preview?*. As the help tip for that preference says, when this is active:
+
+> Users with sufficient privileges (by default, those with Publisher and Designer roles) can safely develop and preview a new theme while all other users will still see the old theme (until the new one is deployed).
+
+Presumably you are reading this because you want to develop and preview new themes, so make sure the preference is set to ‘Yes’. The rest of this documentation assumes this setting.
 
 ## Creating themes
 
-When creating a new theme, it is not immediately live; it is in development mode. One or more themes are not actually live until you make them live.
+When creating a new theme, it is not immediately live; it is in development mode. One or more themes are not actually live until you make them live.  
 
 Multiple options are available for creating a new development theme via the Themes panel. You can:
 
@@ -192,7 +205,7 @@ Multiple options are available for creating a new development theme via the Them
 * Duplicate a theme via the **With selected** controls
 * Duplicate a theme via the **Edit theme** editor.
 
-These approaches are similar in the functionality they use and all accomplish the same thing: establish a development theme to start working on. They differ only by the paths taken to complete the task, and the contexts of each (e.g. the **New theme** editor and **Edit theme** editor are the same thing, but accessed differently). 
+These approaches use similar functionality, and all accomplish the same thing: establish a development theme to start working on. They differ only by the paths taken to complete the task, and the contexts of each (e.g. the **New theme** editor and **Edit theme** editor are the same thing, but accessed differently). 
 
 Let’s look at each one under default conditions.
 
@@ -332,7 +345,7 @@ In relation, both ‘Development’ and ‘Live’ environment check boxes are c
 
 If you leave both boxes checked, the theme you assign will become both the new live theme and a working development theme, separately. On the other hand, if you only select the ‘Development’ check box, the existing live theme will remain live and the theme you assign here will become a working development theme on the same sections but safely in development status.
 
-The theme for which you clicked the ‘Assign sections’ link in the Themes panel is selected as the theme to be assigned, indicated by the theme’s title, not the theme’s name…
+The theme for which you clicked the ‘Assign sections’ link in the Themes panel is selected as the theme to be assigned, indicated by the theme’s title, not its name…
 
 ![Themes selection menu in sections](/img/themes-selection-menu-in-sections.png)
 
@@ -348,7 +361,7 @@ The assumption made for having all sections in the table checked is that the maj
 
 For smaller/simpler sites, most people use a ‘default’ page template for the default (homepage) section, then a ‘common’ or ‘generic’ page template for the remaining sections of their website (with, perhaps, a third template used for a contact form page). The default homepage pairing (and any contact form page pairing) is a one-to-one page to section assignment, while the latter associations reflect a one-to-many page to sections assignment. In such a situation, one would have to run the selection controls twice; first for the default section alone (unchecking all other sections), then for all remaining sections (checking all sections except the default section).
 
-It makes no difference how you match pages with sections, whether one-to-many or one-to-one. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if they are assigned wrong — the templates having the wrong conditional logic — your front end presentation will break.
+It makes no difference how you match pages with sections, whether one-to-one, one-to-many, or a combination, as the example above suggests. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if they are assigned wrong — templates have the wrong conditional logic — your front end presentation will break.
 
 ### ‘In use’ indicator
 
@@ -366,7 +379,7 @@ When a theme is not in use, you can safely work on its associated assets without
 
 ### Asset links
 
-Under the Pages, Forms, and Styles columns of the themes table are linked numbers indicating how many assets of each type are associated to a given theme.
+Under the Pages, Forms, and Styles columns of the themes table in the Themes panel are linked numbers indicating how many assets of each type are associated to a given theme.
 
 ![Themes panel assets columns](/img/themes-panel-assets-columns.png)
 
@@ -374,7 +387,7 @@ When you duplicate the default theme (as the next image depicts), or any other t
 
 ![Themes panel sections and assets](/img/themes-panel-sections-and-assets.png)
 
-These numbers can, of course, change between themes as you add or remove assets in a given theme.
+These numbers can change between themes, of course, as you add or remove assets in a given theme.
 
 Click any of these numbered links and you are taken to the respective panels with the indicated number of assets in context. For example, clicking a ‘3’ under the Pages column for the duplicated theme lands you on the Pages panel with the associated three pages listed:
 
@@ -388,7 +401,7 @@ The Theme selection menu can be used to change theme context from any assets pan
 
 ![Themes menu selection](/img/themes-menu-selection.png)
 
-You remain in that different theme context as you browse around the back end. You can switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
+You remain in that different theme context as you browse around the back end. Switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
 
 You now have a good idea of contexts and cues as it concerns themes and their assets in relation to relevant panels. These contexts are useful whether working on themes in development or browsing themes that are live.
 
