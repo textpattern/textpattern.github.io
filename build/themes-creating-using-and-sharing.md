@@ -138,11 +138,11 @@ The essential metadata rides with the package as a manifest.json file, in which 
 
 The first five items reflect data pulled from the theme editor, which is accessed via the [New theme](#create-from-scratch) button, or via [an existing theme’s name](#create-from-duplication) in the themes tables.
 
-The `title` is always required so a value will always be present in a manifest file. The `title` is not the same thing as the theme *name*, but that’s cleared up in the forthcoming section on [creating new themes](#create-from-scratch). 
+The `title` is always required by Textpattern, but it’s not a required field in the form editor when creating a theme. If you don’t provide a custom title, Textpattern will generate one based on the required theme name (explained more in the [Create from scratch](#create-from-scratch) section later). Either way, a `title` will always be present in a manifest file, but it’s better if you create a custom value rather than rely on Textpattern to generate one for you. 
 
 The `txp-type` and its associated value is a constant; it must always exist and never change.
 
-The remaining four items reflect optional metadata fields, which nevertheless should be filled in by theme authors at time of creation when the data is known. If skipped, however, Textpattern will provide default values for the `version` and `author` items at time of theme creation; so these values will pass with an imported theme if not changed by the author. The `description` and `author_uri` (i.e. the Website field in the theme editor) items are treated as `none` values in metadata.
+The remaining four items reflect more optional metadata fields, which nevertheless should be filled in when the data is known. If skipped, Textpattern will provide default values for the `version` and `author` items at time of theme creation; so these values will pass with an imported theme if not changed by the author. The `description` and `author_uri` (i.e. the Website field in the theme editor) items are treated as `none` values in metadata.
 
 Altogether, a minimum-filled set of metadata for a theme would look like follows, where ‘username’ would be the theme author’s log in username for their Textpattern installation:   
 
@@ -174,7 +174,7 @@ When looking at the Themes panel of a new installation of Textpattern, a single 
 
 ![Themes default item](/img/themes-default-item.png)
 
-When clicking the theme’s name, the **Edit theme** form opens up showing you the default theme’s metadata properties.
+When clicking the theme’s name, the **Edit theme** form opens up showing you the default theme’s metadata properties. See the [Create from scratch](#create-from-scratch) section for more about these fields.
 
 Although there is no indication at this initial default state, the ‘four-point-eight’ theme is live on your site by fact it is the only existing theme.
 
@@ -189,9 +189,9 @@ To establish one or more additional themes, you either need to create them (from
 
 ## Development themes preference
 
-A single, important preference is associated with themes development. It is located at Admin > Preferences > Admin, second preference from bottom of screen: *Enable development theme preview?*. As the help tip for that preference says, when this is active:
+A single, important preference is associated with themes development. It is located at Admin > Preferences > Admin, second preference from bottom of screen: *Enable development theme preview?*.
 
-> Users with sufficient privileges (by default, those with Publisher and Designer roles) can safely develop and preview a new theme while all other users will still see the old theme (until the new one is deployed).
+As the help tip for that preference says, when this is active, <q>Users with sufficient privileges (by default, those with Publisher and Designer roles) can safely develop and preview a new theme while all other users will still see the old theme (until the new one is deployed).</q>
 
 Presumably you are reading this because you want to develop and preview new themes, so make sure the preference is set to ‘Yes’. The rest of this documentation assumes this setting.
 
@@ -215,16 +215,16 @@ Creating a development theme from scratch means via the **New theme** editor. It
 
 ![Themes new button click](/img/themes-new-button-click.png)
 
-The **New theme** button opens the associated editor, which is simply a regular web form with six fields, the first two of which are required:
+The **New theme** button opens the associated editor; a regular web form with six fields, the first of which is required:
 
 * Theme name (required) 
-* Theme title (required)
+* Theme title
 * Theme version
 * Theme description
 * Theme author
 * Theme website 
 
-The six fields you see in the editing form correspond to four columns in the theme’s table on the main panel (Name, Title, Version, Author), and five of the metadata values in [the manifest.json file](#metadata).
+The six fields you see correspond to four columns in the theme’s table on the main panel (Name, Title, Version, Author), and five of the metadata values in [the manifest.json file](#metadata).
 
 When creating a new theme, regardless of which way you do so, fill in as much of the data as possible.
 
@@ -234,8 +234,9 @@ The theme’s name and title are not the same. If you registered an [author pref
 * Theme title: My New Theme
 {:.example}
 
-As explained in the [Metadata](#metadata) section earlier, if you decide to skip the optional fields for whatever reason, Textpattern will automatically fill the version and author fields with the following default values, where ‘username’ is the name you log into Textpattern with:
+As explained in the [Metadata](#metadata) section earlier, if you decide to skip the optional fields for whatever reason, Textpattern will automatically fill the title, version, and author fields with the following default values, where ‘username’ is the name you log into Textpattern with:
 
+* Theme title: ABC New Theme
 * Theme version: 0.0.1
 * Theme author: username
 {:.example}
@@ -369,7 +370,7 @@ As mentioned in the [Default theme](#default-theme) section, any themes that are
 
 While you are likely to use a single theme most of the time, thus only see a single ‘In use’ pill in the Themes panel, it is possible to [assign multiple themes](#assigning-multiple-themes) to the front end (i.e. use a different theme on each section of your website). Should you ever do that, each theme used will appear with the ‘In use’ pill indicator.
 
-### Sections indicator
+### Sections indication
 
 Another way to tell if a theme is live (in use) or not is to look under the Sections column of the themes table in the Themes panel and note if any sections for a given theme are yet assigned. Any theme with ‘0’ section associations is not in use (i.e. not live on the front-end).
 
