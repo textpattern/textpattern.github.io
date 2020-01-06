@@ -138,7 +138,7 @@ The essential metadata rides with the package as a manifest.json file, in which 
 
 The first five items reflect data pulled from the theme editor, which is accessed via the [New theme](#create-from-scratch) button, or via [an existing theme’s name](#create-from-duplication) in the themes tables.
 
-The `title` is always required by Textpattern, but it’s not a required field in the form editor when creating a theme. If you don’t provide a custom title, Textpattern will generate one based on the required theme name (explained more in the [Create from scratch](#create-from-scratch) section later). Either way, a `title` will always be present in a manifest file, but it’s better if you create a custom value rather than rely on Textpattern to generate one for you. 
+The `title` is always required by Textpattern, but it’s not a required field in the form editor when creating a theme. If you don’t provide a custom title, Textpattern will generate one based on the required theme name (explained more later in the [Create from scratch](#create-from-scratch) section). Either way, a `title` will always be present in a manifest file, but it is better if you create a custom value rather than rely on Textpattern to generate one for you. 
 
 The `txp-type` and its associated value is a constant; it must always exist and never change.
 
@@ -185,15 +185,15 @@ When one or more other themes exist, two more elements appear  next to the defau
 
 ![Themes default in use](/img/themes-default-in-use.png)
 
-To establish one or more additional themes, you either need to create them (from development to live), discussed in the next sections, or [import](#importing-themes) them from an external source.
+To establish one or more additional themes, you either need to create them, discussed in the next sections, or [import](#importing-themes) them from an external source.
 
 ## Development themes preference
 
 A single, important preference is associated with themes development. It is located at Admin > Preferences > Admin, second preference from bottom of screen: *Enable development theme preview?*.
 
-As the help tip for that preference says, when this is active, <q>Users with sufficient privileges (by default, those with Publisher and Designer roles) can safely develop and preview a new theme while all other users will still see the old theme (until the new one is deployed).</q>
+As the help tip for that preference says, when this is active, and it is by default, <q>users with sufficient privileges [initially Publisher and Designer roles] can safely develop and preview a new theme while all other users will still see the old theme (until the new one is deployed).</q>
 
-Presumably you are reading this because you want to develop and preview new themes, so make sure the preference is set to ‘Yes’. The rest of this documentation assumes this setting.
+Presumably you are reading this because you want to develop and preview new themes, so make ensure the preference is set to ‘Yes’. The rest of this documentation assumes this setting.
 
 ## Creating themes
 
@@ -228,24 +228,24 @@ The six fields you see correspond to four columns in the theme’s table on the 
 
 When creating a new theme, regardless of which way you do so, fill in as much of the data as possible.
 
-The theme’s name and title are not the same. If you registered an [author prefix](#author-prefix-and-registration), you should use that as the first part of the theme’s name (e.g. ‘abc-new-theme’). The title, on the other hand, like for a book, is the proper, ‘human-readable’ name and should be entered in capital case with no hyphens (i.e. ‘Title Like This’). You do not have to use your prefix in the title, only for the name; so you could have this pairing, for example:
+The theme’s name and title are not the same. If you registered an [author prefix](#author-prefix-and-registration), you should use that as the first part of the theme’s name (e.g. ‘abc-new-theme’). The title, on the other hand, is the proper, human-readable name and is ideally capital case with no hyphens (i.e. ‘Title Like This’). You should not use your prefix in the title, only for the name; so you could have this pairing, for example:
 
 * Theme name: abc-new-theme
 * Theme title: My New Theme
 {:.example}
 
-As explained in the [Metadata](#metadata) section earlier, if you decide to skip the optional fields for whatever reason, Textpattern will automatically fill the title, version, and author fields with the following default values, where ‘username’ is the name you log into Textpattern with:
+If you decide to skip the optional fields for whatever reason, Textpattern will automatically fill the title, version, and author fields with the following default values, where ‘username’ is the name you log into Textpattern with:
 
-* Theme title: ABC New Theme
+* Theme title: Abc-new-theme
 * Theme version: 0.0.1
 * Theme author: username
 {:.example}
 
-These automatic defaults are better than nothing, but not ideal. Again, take the time to add the metadata as completely as possible.
+These automatic defaults are better than nothing, but not ideal. The title, for example, does not need an [author prefix](#author-prefix-and-registration) (indeed it does not make any sense), nor should it be hyphenated, but that’s how Textpattern will use the name value if you do not add your own custom title.
 
-The remaining description and website fields will stay empty if not used. The website field is for a URL to where your theme can be downloaded online; whether at your own website, at a version control site, or, ideally, in Textpattern’s upcoming community [Themes website](https://themes.textpattern.com) ([repository](https://github.com/textpattern/textpattern-themes-website)). Options galore!
+The remaining description and website fields will stay empty if not used. The website field is meant for a URL to where your theme can be downloaded from online; whether your own website, a version control site, or, ideally, in Textpattern’s upcoming community [Themes website](https://themes.textpattern.com) ([repository](https://github.com/textpattern/textpattern-themes-website)).
 
-Again, fill out the form fields as completely as possible without relying on Textpattern’s defaults. The more complete the form, the more informative the manifest file will be. Any fields you can’t fill immediately, such as the website URL, can always be filled in later if you ever intend to share your theme(s).
+Again, fill out the form fields as completely as possible without relying on Textpattern’s defaults. The more complete the form, the more informative the manifest file will be. Any fields you can’t fill immediately, such as the website URL, can always be filled in later when available.
 
 When the **New theme** metadata are saved, the resulting theme appears in the themes table.
 
@@ -257,7 +257,7 @@ The remaining two approaches that arrive at this point make use of theme duplica
 
 Using an existing theme package as a guide for your efforts is a good way to get started with making themes. There’s no better package to use in this case than the default theme that comes with Textpattern, already shown and functioning in the Themes panel upon installing the software.
 
-This does not mean start working directly on the default theme, or you will be doing development on an active (live) theme and changing its nature. Instead, duplicate the default theme first, thereby turning it into a new development theme to work on.
+This does not mean start working directly on the default theme, or you will be changing a live theme. Instead, duplicate the default theme first, thereby turning it into a new development theme to work on.
 
 While these instructions describe using the default theme (the only theme available in an out-of-the-box context of the software), you could duplicate any existing theme in the Themes panel; such as one that might have the kind of website structure you want to work closer with.
 
@@ -265,7 +265,7 @@ The following two approaches to duplication are the same regardless of what them
 
 #### Duplicate via selection controls
 
-One way to duplicate a theme is via the selection controls on the Themes panel that work in combination with the check boxes in front of each theme record.
+One way to duplicate a theme is via the selection controls on the Themes panel. They work in combination with the check boxes in front of each theme record.
 
 Proceed by checking the box next to one or more themes (in this case the default theme is demonstrated), then select the ‘Duplicate’ option from the **With 1 selected…** menu just below the table. 
 
@@ -287,25 +287,25 @@ The duplicated theme will be added to the themes table in the main panel view. O
 
 #### Duplicate via theme editor
 
-The last way to create a theme is the most direct (fewer clicks in the interface) by duplication yet least obvious way.
+The last way to create a theme by duplication is the most direct way (fewer clicks in the interface) yet least obvious.
 
-Begin by clicking the name of the default theme under the Name column of the table (or using any existing theme).
+Begin by clicking the name of the default theme under the Name column of the table (or using any existing theme) to bring up the **Edit theme** editor.
 
-![Themes click default name](/img/themes-click-default-name.png)
+![Themes default item](/img/themes-default-item.png)
 
-The **Edit theme** editor will open up and show the theme’s metadata. Change all the metadata as described in the previous section. When done editing, click the ‘Duplicate’ link at bottom of the editor, at right of the Cancel button.
+The editor will show the theme’s metadata as expected. Change all the metadata as described in the previous section. When done, click the ‘Duplicate’ link at bottom of the editor, at right of the Cancel button. Do not click the Save button or you will overwrite the metadata for the source theme!
 
 ![Themes click duplicate link](/img/themes-click-duplicate-link.png)
 
-There is no confirmation dialogue asking if you are sure. You are simply taken back to the default panel view where your new theme is added to the themes table.
+There is no confirmation dialogue asking if you are sure when clicking the ‘Duplicate’ link. You are simply taken back to the default panel view where your new theme is added to the themes table.
 
 ![Themes new duplication](/img/themes-new-duplication.png)
 
-You are now a master at creating development theme packages. Proceed with learning all the useful contexts between development and live themes.
+You are now a master at creating development theme packages. Proceed with learning about useful contexts and cues.
 
 ## Key features of Themes panel
 
-The Themes panel — as well associated assets panels and the Sections panel in relation — provide features and cues that make it easy to see what context a theme is in, or what context you are in when browsing about the relevant panels of the back end. This includes:
+The Themes panel — as well associated assets panels and the Sections panel in relation — provide features and cues that make it easy to see what context a theme is in, or what context you are in when browsing about the relevant panels of the back end. These include:
 
 * Whether a theme is in use (live) or not
 * What assets are associated to which themes
@@ -320,49 +320,7 @@ Immediately after a theme’s name, under the Name column of the themes table, i
 
 ![Themes assign sections link](/img/themes-assign-sections-link.png)
 
-In fact, you can assign a theme’s assets to existing sections for both live and development environments at the same time (or just one or the other), and the default context sets you up to do both at once.
-
-When the link shown above is clicked, it takes you to the Sections panel with the live theme in context. Note that all sections in the table are checked, and the selection controls under the table are preconfigured for changing theme assignments.   
-
-![Themes assign sections context](/img/themes-assign-sections-context.png)
-
-There is a lot going on here, so let’s walk through it. First the image above is showing a Sections panel table with several irrelevant columns turned off for simplicity. (You will see all columns by default, but you can turn them off to follow along.)
-
-![Themes sections panel columns off](/img/themes-sections-panel-columns-off.png)
-
-The remaining columns show:
-
-* Name of existing sections
-* Theme(s) applied on a given section
-* Page and Style assets of the indicated theme assigned in each case. 
-
-The selection menu under the table is pre-selected with the ‘Change theme/page/style’ option…
-
-![Themes change theme/page/style](/img/themes-change-theme-page-style-option.png)
-
-In relation, both ‘Development’ and ‘Live’ environment check boxes are checked by default…
-
-![Themes dev and live boxes](/img/themes-dev-and-live-boxes.png)
-
-If you leave both boxes checked, the theme you assign will become both the new live theme and a working development theme, separately. On the other hand, if you only select the ‘Development’ check box, the existing live theme will remain live and the theme you assign here will become a working development theme on the same sections but safely in development status.
-
-The theme for which you clicked the ‘Assign sections’ link in the Themes panel is selected as the theme to be assigned, indicated by the theme’s title, not its name…
-
-![Themes selection menu in sections](/img/themes-selection-menu-in-sections.png)
-
-You can change the theme selection, but the assumption is you clicked the ‘Assign sections’ link for the theme you intended to use.
-
-The last menus for Page and Style require manual selection. In other words, you are picking the page template and stylesheet for this theme that you want applied to the existing sections…
-
-![Themes page and style menus in sections](/img/themes-page-and-style-menus-in-sections.png)
-
-Again, note that all sections in the table are checked by default. This means if you go through with assigning a page and style, every section will have the same page and style assignment. This might be fine for the style assignment, if you use a single stylesheet for your entire website, but it might not be what you want for your page assignments, depending on how you have your page templates designed.
-
-The assumption made for having all sections in the table checked is that the majority of sections, if not all, use a common page that is constructed with conditional logic such that regardless of what section it is assigned to, the page will output the necessary content as expected. This is what’s known as a one-to-many page assignment to sections. By contrast, a one-to-one assignment is where every section has a unique page template.
-
-For smaller/simpler sites, most people use a ‘default’ page template for the default (homepage) section, then a ‘common’ or ‘generic’ page template for the remaining sections of their website (with, perhaps, a third template used for a contact form page). The default homepage pairing (and any contact form page pairing) is a one-to-one page to section assignment, while the latter associations reflect a one-to-many page to sections assignment. In such a situation, one would have to run the selection controls twice; first for the default section alone (unchecking all other sections), then for all remaining sections (checking all sections except the default section).
-
-It makes no difference how you match pages with sections, whether one-to-one, one-to-many, or a combination, as the example above suggests. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if they are assigned wrong — templates have the wrong conditional logic — your front end presentation will break.
+In fact, you can assign a theme’s assets to existing sections for both live and development environments at the same time (or just one or the other), and the default context sets you up to do both at once. See the [Assigning sections](#assigning-sections) section for much more on this functionality.
 
 ### ‘In use’ indicator
 
@@ -405,6 +363,50 @@ The Theme selection menu can be used to change theme context from any assets pan
 You remain in that different theme context as you browse around the back end. Switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
 
 You now have a good idea of contexts and cues as it concerns themes and their assets in relation to relevant panels. These contexts are useful whether working on themes in development or browsing themes that are live.
+
+## Assigning sections
+
+When you click an [‘Assign sections’ link](#assign-sections-link), introduced earlier, it takes you to the Sections panel with the live theme in context. Note that all sections in the table are checked, and the selection controls under the table are preconfigured for changing theme assignments.   
+
+![Themes assign sections context](/img/themes-assign-sections-context.png)
+
+There is a lot going on here, so let’s walk through it. First the image above is showing a Sections panel table with several irrelevant columns turned off for simplicity. (You will see all columns by default, but you can turn them off to follow along.)
+
+![Themes sections panel columns off](/img/themes-sections-panel-columns-off.png)
+
+The remaining columns show:
+
+* Name of existing sections
+* Theme(s) applied on a given section
+* Page and Style assets of the indicated theme assigned in each case. 
+
+The selection menu under the table is pre-selected with the ‘Change theme/page/style’ option…
+
+![Themes change theme/page/style](/img/themes-change-theme-page-style-option.png)
+
+In relation, both ‘Development’ and ‘Live’ environment check boxes are checked by default…
+
+![Themes dev and live boxes](/img/themes-dev-and-live-boxes.png)
+
+If you leave both boxes checked, the theme you assign will become both the new live theme and a working development theme, separately. On the other hand, if you only select the ‘Development’ check box, the existing live theme will remain live and the theme you assign here will become a working development theme on the same sections but safely in development status.
+
+The theme for which you clicked the ‘Assign sections’ link in the Themes panel is selected as the theme to be assigned, indicated by the theme’s title, not its name…
+
+![Themes selection menu in sections](/img/themes-selection-menu-in-sections.png)
+
+You can change the theme selection, but the assumption is you clicked the ‘Assign sections’ link for the theme you intended to use.
+
+The last menus for Page and Style require manual selection. In other words, you are picking the page template and stylesheet for this theme that you want applied to the existing sections…
+
+![Themes page and style menus in sections](/img/themes-page-and-style-menus-in-sections.png)
+
+Again, note that all sections in the table are checked by default. This means if you go through with assigning a page and style, every section will have the same page and style assignment. This might be fine for the style assignment, if you use a single stylesheet for your entire website, but it might not be what you want for your page assignments, depending on how you have your page templates designed.
+
+The assumption made for having all sections in the table checked is that the majority of sections, if not all, use a common page that is constructed with conditional logic such that regardless of what section it is assigned to, the page will output the necessary content as expected. This is what’s known as a one-to-many page assignment to sections. By contrast, a one-to-one assignment is where every section has a unique page template.
+
+For smaller/simpler sites, most people use a ‘default’ page template for the default (homepage) section, then a ‘common’ or ‘generic’ page template for the remaining sections of their website (with, perhaps, a third template used for a contact form page). The default homepage pairing (and any contact form page pairing) is a one-to-one page to section assignment, while the latter associations reflect a one-to-many page to sections assignment. In such a situation, one would have to run the selection controls twice; first for the default section alone (unchecking all other sections), then for all remaining sections (checking all sections except the default section).
+
+It makes no difference how you match pages with sections, whether one-to-one, one-to-many, or a combination, as the example above suggests. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if they are assigned wrong — templates have the wrong conditional logic — your front end presentation will break.
 
 ## Previewing themes in development
 
