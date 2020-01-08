@@ -58,7 +58,7 @@
 
     <dt><code class="highlighter-rouge language-plaintext">trim="string or regex"</code></dt>
     <dd>Remove the matching patterns from the output.</dd>
-    <dd><strong>Values:</strong> Any.</dd>
+    <dd><strong>Values:</strong> Any. Use <code class="highlighter-rouge language-plaintext">/value/</code> to trigger regular expression matching, otherwise the value will be treated verbatim as a set of characters to trim.</dd>
     <dd><strong>Default:</strong> {% if include.trim == null %}unset{% else %}{{ include.trim }}{% endif %}.</dd>
 
     <dt><code class="highlighter-rouge language-plaintext">wrapform="form name"</code></dt>
