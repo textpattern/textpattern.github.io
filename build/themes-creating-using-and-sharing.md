@@ -519,18 +519,18 @@ A single theme switch all at once is achieved by checking all section records at
 
 ## ‘Database’ themes versus ‘disk’ themes
 
-In the remaining sections, the exporting, importing, updating, and deleting processes are explained. Before getting there, a concept needs laid out for understanding. Some may snort at the obviousness of it. Others might appreciate it being made clear.
+In the remaining sections, the [exporting](#exporting-themes), [importing](#importing-themes), [updating](#updating-themes), and [deleting](#deleting-themes) processes are explained. Before getting there, a concept needs laid out for understanding. This may be obviousness to some people. Others might appreciate it being made clear.
 
-Textpattern interface strings, pophelp, and this documentation in relation — and probably even developers themselves, and you, eventually, when exchanging in the community forum — will occasionally use terms that refer to themes as either ‘database’ or ‘disk’. These distinguishing terms are in reference to themes at specific locations and contexts in the [importing](#importing-themes) and [deleting](#deleting-themes) scenarios, particularly.
+Textpattern interface strings, pophelp, and this documentation in relation — and probably even developers themselves, and you, eventually, when exchanging in the community forum — will occasionally use terms that refer to themes as either ‘database’ or ‘disk’. These distinguishing terms are in reference to themes at specific locations and contexts in the importing and deleting scenarios, particularly.
 
 As far as the location terminology goes: 
 
 * **Themes panel = database theme**. When a theme is in the themes table of the Themes panel, it is in the database and thus can be referred to as a ‘database theme’.
-* **<i>themes</i> directory = disk theme**. When the theme package is sitting in the <i>themes</i> directory, it is on the web server’s disk and thus referred to as a ‘disk theme’, ‘disk-based’ theme, or what have you.
+* **/themes directory = disk theme**. When the theme package is sitting in the /themes directory, it is on the web server’s disk and thus referred to as a ‘disk theme’, ‘disk-based’ theme, or what have you.
 
-When a theme is in both locations, as may often be the case in your workflows (though use of the <i>themes</i> directory is entirely optional[^diskoptional]), remember to distinguish a given theme between the two locations, because the outbound and inbound shuffling of themes involves making choices about how to treat database and disk themes in the process. And, of course, knowing the difference can be useful when seeking help.
+When a theme is in both locations, as may often be the case in your workflows (though use of the /themes directory is entirely optional[^diskoptional]), remember to distinguish a given theme between the two locations, because the outbound and inbound shuffling of themes involves making choices about how to treat database and disk themes in the process. And, of course, knowing the difference can be useful when seeking help.
 
-It all centres around the <i>themes</i> directory located in your software’s root installation location, which is best thought of as a checkpoint for incoming (imported) and outgoing (exported) themes:
+It all centres around the /themes directory located in your software’s root installation location, which is best thought of as a checkpoint for incoming (imported) and outgoing (exported) themes:
 
 * {:.directory--open} {root}
   * {:.directory} files
@@ -543,43 +543,43 @@ It all centres around the <i>themes</i> directory located in your software’s r
 
 This will be more clear as you stroll through the remaining sections of the garden.
 
-[^diskoptional]: You do not have to use the <i>themes</i> directory (on disk) to build your own themes. The directory is only needed if you want to share themes, back them up, or put theme assets under version control.
+[^diskoptional]: You do not have to use the /themes directory (on disk) to build your own themes. The directory is only needed if you want to share themes, back them up, or put theme assets under version control.
 
 ## Exporting themes
 
 You have learned how to create and manage themes at this point, so take it to the next logical step and export one for other people to use. Fame and fortune awaits!
 
-When your theme is tweaked to perfection and ready to be shared, go to the Themes panel, check the theme’s box in the table, and use the **With selected** controls to select ‘Export to disk’ (i.e. to the <i>themes</i> directory).
+When your theme is tweaked to perfection and ready to be shared, go to the Themes panel, check the theme’s box in the table, and use the **With selected** controls to select ‘Export to disk’ (i.e. to the /themes directory).
 
-![Select export](/img/select-export.png)
+![Themes select export](/img/themes-select-export.png)
 
 The selection will trigger another option to respond to by way of a checkbox: <q><i>Delete unused templates from disk on export</i></q>.
 
-![Select export option](/img/select-export-option.png)
+![Themes select export option](/img/themes-select-export-option.png)
 
 If you read the help tip for that option, it says:
 
 > If checked, each template file in the selected theme(s) that does not have a corresponding item in the database will be permanently deleted from the disk-based theme. The result after completion of the action will be that your file system templates will reflect exactly what is in the database.
 
-In other words, Textpattern is making a comparison between the theme package you want to export from the Themes panel, presumably the package designed as it should be, and any similarly named theme that might be sitting in the <i>themes</i> directory but not so well put together. So it’s asking, if there is such a theme there in the directory, and any asset files in it do not have similarly named files in the panel version (the one you are exporting), do you want those files deleted as part of the exportation action?
+In other words, Textpattern is making a comparison between the theme package you want to export from the Themes panel, presumably the package designed as it should be, and any similarly named theme that might be sitting in the /themes directory but not so well put together. So it’s asking, if there is such a theme there in the directory, and any asset files in it do not have similarly named files in the panel version (the one you are exporting), do you want those files deleted as part of the exportation action?
 
-This is generally a good idea, and the check box is ticked by default to make that clear. This ensures that after exportation, there is a direct match between the database version (in the Themes panel) and the version on disk (in the <i>themes</i> directory).
+This is generally a good idea, and the check box is ticked by default to make that clear. This ensures that after exportation, there is a direct match between the database version (in the Themes panel) and the version on disk (in the /themes directory).
 
 Click the ‘Go’ button and confirm when asked if you are sure.
 
-Now you are almost famous, but not quite yet. Still one more thing to do if you want your theme added to the new Themes website repository, coming soon. *Zip it up!* Textpattern will only host one file per theme package, and it must be compressed. So transfer the exported theme from the <i>themes</i> directory to an external location and make it a single, compressed <i>.gzip</i> or <i>.zip</i> file.
+Now you are almost famous, but not quite yet. Still one more thing to do if you want your theme added to the new Themes website repository, coming soon. *Zip it up!* Textpattern will only host one file per theme package, and it must be compressed. So transfer the exported theme from the /themes directory to an external location and make it a single, compressed .gzip or .zip file.
 
-How you store the theme file anywhere else is up to you. But whatever the location, whether Themes website or your own, make sure the expected URL has been entered in the Website field of the theme’s metadata. Add that by clicking the name of the theme in the themes table to pull up the **Edit theme** editor.
+Where you store the theme file for others to access is up to you. But whatever the location, whether Themes website or your own, make sure the expected URL has been entered in the **Theme website** field of the theme’s metadata. Add that by clicking the name of the theme in the themes table to pull up the theme editor.
 
 ## Importing themes
 
-Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database — <i>themes</i> directory to the rescue!
+Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database. The /themes directory to the rescue!
 
-First, use your (S)FTP software of choice to transfer the external theme (presumably downloaded from a shared location) to your <i>themes</i> directory on the server. A theme import control will appear in the Themes panel, above the themes table.
+First, use your (S)FTP software of choice to transfer the external theme (presumably downloaded from a shared location) to your /themes directory on the server. A theme import control will appear in the Themes panel, above the themes table.
 
-![Import theme menu](/img/import-theme-menu.png)
+![Themes import theme menu](/img/themes-import-theme-menu.png)
 
-If you didn’t see the menu before, it is because it works in context with the <i>themes</i> directory, as follows:
+If you didn’t see the menu before, it is because it works in context with the /themes directory, as follows:
 
 1. **One or more disk themes with no database equivalents**. When one or more themes reside in the themes directory that are not in the database, the selection menu appears above the themes table with those themes listed, enabling their importation into the database. The menu is not visible if this condition is false.
 2. **Disk themes match database themes**. When the same themes are equally represented in the database and on disk, or only in the database and not on disk, the contextual menu is hidden, since there is nothing to potentially import.
@@ -587,9 +587,9 @@ If you didn’t see the menu before, it is because it works in context with the 
 
 You can then use the import menu to select the theme and initially import it into the database.
 
-![Import theme menu select](/img/import-theme-menu-select.png)
+![Themes import theme menu select](/img/themes-import-theme-menu-select.png)
 
-The theme is now in your themes table to use as desired, and if the themes in the table match the themes in your directory, the import control will disappear again from the Themes panel.   *Poof!*
+The theme is now in your themes table to use as desired. If the themes in the table match the themes in your directory, the import control will disappear again from the Themes panel.   *Poof!*
 
 ## Updating themes
 
@@ -597,13 +597,13 @@ If you are more into importing than exporting, you will eventually come to the p
 
 When you update a theme from disk, Textpattern creates an *exact* copy in the database from the disk version you are updating from, merging new elements and overwriting existing ones having the same asset name.
 
-As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your <i>themes</i> directory. Then it is on to the Themes panel, where, like [described initially](#duplicate-via-selection-controls) you do the checkbox-and-select dance, but this time opting for ‘Update from disk’.
+As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your /themes directory. Then it is on to the Themes panel where you do the checkbox-and-select dance, but this time opting for ‘Update from disk’.
 
-![Select update from disk](/img/select-update-from-disk.png)
+![Themes select update from disk](/img/themes-select-update-from-disk.png)
 
 When selected, another checkbox option is presented: <q><i>Delete unused templates from database on import?</i></q>[^update]
 
-![Select update from disk option](/img/select-update-from-disk-option.png)
+![Themes select update from disk option](/img/themes-select-update-from-disk-option.png)
 
 This second option is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting files that might be different (in terms of existing) in the database version. This is generally a good idea, which is why the box is ticked by default, to keep versions consistent. But you might have your reasons for wanting variability, like wanting to customize the sourced theme. Hard to say.
 
@@ -613,20 +613,20 @@ Either way, click the ‘Go’ button and confirm when asked if you are sure.
 
 ## Deleting themes
 
-Themes can be deleted from the Themes panel, and the associated version in the <i>themes</i> directory as well, all in one go. Or you can opt to keep the disk version while just deleting the one from the database.
+Themes can be deleted from the Themes panel, and the associated version in the /themes directory as well, all in one go. Or you can opt to keep the disk version while just deleting the one from the database.
 
 Deletion requires the **With selected** menu again, which you surely know by heart at this point. Check the box by the theme to be deleted from the themes table, then select the ‘Delete’ option from the menu.
 
-![Select delete](/img/select-delete.png)
+![Themes select delete](/img/themes-select-delete.png)
 
 The selection triggers another option to respond to: <q><i>Delete theme templates from disk too</i></q>.[^delete]
 
-![Select delete option](/img/select-delete-option.png)
+![Themes select delete option](/img/themes-select-delete-option.png)
 
-Again, ‘disk’ is referring to the <i>themes</i> directory, and you are confirming to delete the package that may be sitting there. The box for this option is checked by default; a sign of the right choice most of the time. Proceed with ‘Go’ if you want to clean house entirely, and confirm ‘OK’ when asked if you are sure.
+Again, ‘disk’ is referring to the /themes directory, and you are confirming to delete the package that may be sitting there. The box for this option is checked by default; a sign of the right choice most of the time. Proceed with ‘Go’ if you want to clean house entirely, and confirm ‘OK’ when asked if you are sure.
 
-As a safety precaution, if theme packages on disk contain standard theme directories having non-standard subdirectories (e.g. <i>styles/sass</i>), they will not be deleted by Textpattern; rather, the package container will remain, along with the non-standard subdirectories and files inside the directory. This shell of a theme and its non-standard elements will need deleted manually since the software does not recognize such elements.
+As a safety precaution, if theme packages on disk contain standard theme directories having non-standard subdirectories (e.g. styles/sass), they will not be deleted by Textpattern; rather, the package container will remain, along with the non-standard subdirectories and files inside the directory. This shell of a theme and its non-standard elements will need deleted manually since the software does not recognize such elements.
 
-If you choose to delete the theme from the database but not from disk (i.e. unchecking the option box), the theme import control discussed in [Importing themes](#importing-themes) appears again at top of the themes table with the theme package still sitting on disk showing in the selection menu. You can then re-import the theme at any time (but then why delete it to begin with), or use the appearance of the theme in the import control as a reminder that the package in the <i>themes</i> directory also needs deleted.
+If you choose to delete the theme from the database but not from disk (i.e. unchecking the option box), the theme import control discussed in [Importing themes](#importing-themes) appears again at top of the themes table with the theme package still sitting on disk showing in the selection menu. You can then re-import the theme at any time (but then why delete it to begin with), or use the appearance of the theme in the import control as a reminder that the package in the /themes directory also needs deleted.
 
 [^delete]: The check-box option text is not phrased well, and missing punctuation. Should be: ‘And delete theme assets from disk?’
