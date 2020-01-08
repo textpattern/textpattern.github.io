@@ -421,9 +421,9 @@ Both are important in theme development and require initial establishment of a t
 
 [Assigning sections](#assigning-sections) (i.e. assigning theme page and style assets to sections), as described earlier, is the first step, and essentially what establishes the development environment. By doing that, you map the composition of your theme to your site structure and the Sections panel context makes it all clear at a glance. From there you can view development themes on the front end. But let’s walk through the setup scenario to see what it looks like. If you read the earlier sections of this document, the following will make sense.
 
-Imagine the default Textpattern theme has been [duplicated](#create-from-duplication) on the Themes panel, producing a new theme for development called ‘abc-new-theme’. The ‘Assign sections’ link for that theme was then clicked, bringing you to the Sections panel as described earlier. All recap so far.
+Imagine the default Textpattern theme has been [duplicated](#create-from-duplication) on the Themes panel, producing a new theme for development titled ‘My New Theme’. The ‘Assign sections’ link for that theme was then clicked, bringing you to the Sections panel as described earlier. All recap so far.
 
-Now it is time to assign sections for the new theme, but only as a ‘Development’ theme here for demonstration; we are not replacing the ‘Live’ theme too.[#assignboth] Neither will we change site structure, so the same asset assignments will be used. But it is necessary to run through the selection process twice, once for each page assignment. We arbitrarily begin with the ‘default’ section, therefore *uncheck* the ‘articles’ section. The ‘Live’ check box in the selection controls is also unchecked, and the ‘default’ page and the ‘default’ style are manually assigned.
+Now it is time to assign sections for the new theme, but only as a ‘Development’ theme here for demonstration; we are not replacing the ‘Live’ theme too.[^assignboth] Neither will we change site structure, so the same asset assignments will be used. But it is necessary to run through the selection process twice, once for each page assignment. We arbitrarily begin with the ‘default’ section, therefore *uncheck* the ‘articles’ section. The ‘Live’ check box in the selection controls is also unchecked, and the ‘default’ page and the ‘default’ style are manually assigned.
 
 ![Themes section assign default page](/img/themes-section-assign-default-page.png)
 
@@ -446,7 +446,7 @@ Click Go and confirm as before and you complete the setup of a development theme
 
 ![Themes sections assign result](/img/themes-sections-assign-result.png)
 
-[#assignboth]: You can assign both if you want, of course, and it would not matter for a new installation of Textpattern because we are working with a duplicated theme, and you could always switch back to the default theme, if desired. Nor would it matter if you were working on a local installation (i.e. a non-live website) since nobody would see your live work-in-progress anyway.
+[^assignboth]: You can assign both if you want, of course, and it would not matter for a new installation of Textpattern because we are working with a duplicated theme, and you could always switch back to the default theme, if desired. Nor would it matter if you were working on a local installation (i.e. a non-live website) since nobody would see your live work-in-progress anyway.
 
 ### Preview theme presentation
 
