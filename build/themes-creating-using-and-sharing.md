@@ -195,6 +195,8 @@ As the help tip for that preference says, when this is active, and it is by defa
 
 Presumably you are reading this because you want to develop and preview new themes, so make ensure the preference is set to ‘Yes’. The rest of this documentation assumes this setting.
 
+See more about the active behaviour of this preference in the [Preview theme presentation](#preview-theme-presentation) section.
+
 ## Creating themes
 
 When creating a new theme, it is not immediately live; it is in development mode. One or more themes are not actually live until you make them live.  
@@ -408,6 +410,8 @@ It’s actually rare that anyone uses a single page template for the entire webs
 
 It makes no difference how you match pages with sections, whether one-to-one, one-to-many, or a combination, as the example above suggests. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if they are assigned wrong (i.e. templates have the wrong conditional logic) your front end presentation will break.
 
+See [Preview theme composition](#preview-theme-composition) below for further demonstration of assigning development theme assets.
+
 ## Theme development environment
 
 Previewing themes in development means two things in combination; the ability to:
@@ -431,22 +435,65 @@ When clicking the Go button and confirming when asked, the new  development them
 
 ![Themes section assign default page result](/img/themes-section-assign-default-page-result.png)
 
-The process is repeated, by unchecking the ‘default’ section record and checking the ‘articles’ section record. Note the selection controls do not pre-fill as before because you are not arriving from the ‘Assign sections’ link on the Themes panel, so you must manually select everything beginning with the initial ‘Change theme/page/style’ option.
+The process is repeated by unchecking the ‘default’ section record and checking the ‘articles’ section record. Note the selection controls do not pre-fill as before because you are not arriving from the ‘Assign sections’ link via the Themes panel; hence, you must manually select everything beginning with the initial ‘Change theme/page/style’ option.
 
 ![Themes section assign articles page](/img/themes-section-assign-articles-page.png)
 
 Then do as before:
 
 1. check only the ‘Development’ check box
-2. ensure the ‘My New Theme’ (in this example) theme is selected
-3. select the ‘archive’ (in this example) page
-4. select the ‘default’ style; it’s the only style but it still needs manually selected.
+2. ensure the ‘My New Theme’ theme is selected (this example only)
+3. select the ‘archive’ page (this example only); note this is a different page and why the selection process has to be run a second time
+4. select the ‘default’ style (in this example it’s the only style but it still needs manually selected).
 
 Click Go and confirm as before and you complete the setup of a development theme environment.
 
 ![Themes sections assign result](/img/themes-sections-assign-result.png)
 
+You now see two theme *names* under the Themes column for each section. This reflects a development environment and a live environment.
+
+Return to the Themes panel and you also see the development theme status with an orange ‘In use’ pill, while the live theme’s pill remains green.
+
+![Themes panel in-use environments](/img/themes-panel-in-use-environments.png)
+
 [^assignboth]: You can assign both if you want, of course, and it would not matter for a new installation of Textpattern because we are working with a duplicated theme, and you could always switch back to the default theme, if desired. Nor would it matter if you were working on a local installation (i.e. a non-live website) since nobody would see your live work-in-progress anyway.
+
+#### Assets association
+
+Back to the Sections panel again for our new development theme…
+
+The Page and Style columns make clear which page and style from the theme package aligns with which section.
+
+![Dev preview assets links](/img/dev-preview-assets-links.png)
+
+Making page and style assignments to sections has always been a standard procedure in Textpattern. But now it is done in context of theme packages, really tying the building blocks together.
+
+#### Edit live sections
+
+Section names are links to the section editor, where you can edit which theme and assets serve as the *live* theme (i.e. apply to the live section). You can see this is true by clicking any section name and looking at what theme is selected in the **Uses theme** field; it will always show the live theme on that section.
+
+If you want to edit the *development* theme’s page and style associations, return to the Section panel and use the selection controls as already described in the [Preview theme composition](#preview-theme-composition) section.
+
+#### ‘Missing’ assets warning
+
+If you ever see an asset name flagged with a red ‘Missing’ pill, it is a warning telling you that the theme version of that asset has been deleted, or otherwise missing in the theme package.
+
+![Dev preview assets links](/img/themes-missing-assets-warning.png)
+
+If you tried to view the presentation of this page, you would get the 404 error page instead. If you deployed a development theme to live status when an assigned asset was missing like this, your front-end presentation would break.
+
+There are options for dealing with a situation like this. The most direct and intuitive fix is to click the name of the missing asset. This puts you in direct context of a new template (whether page or style) with the missing assets name added. Simply save the template, even if empty, and the ‘Missing’ warning will go away. Don’t forget to fill in the template, though, because an empty one is little better than none at all.
+
+Alternatively, you could assign a different template to the section. It must already exist, of course, so if not, use the solution described above. If another template does already exist, assign it using the selection controls, which you a re familiar with at this point:
+
+1. Check the box for the appropriate section in the sections table.
+2. Select ‘Change theme/page/style’ from the selection controls under the table.
+3. Ensure the ‘Development’ option is checked (not the ‘Live’ option).
+4. Select the correct theme.
+5. Select the associated page and style (you always have to do both).
+6. Click the ‘Go’ button and confirm.
+
+You can use the links under the Page and Style columns to directly access and work on the assigned template at the other end, then return to the Sections panel context to *view* how the presentation is shaping up.
 
 ### Preview theme presentation
 
@@ -454,59 +501,9 @@ Previewing theme presentation is a much simpler matter. Once you have the develo
 
 ![Themes preview presentation](/img/themes-preview-presentation.png)
 
-As long as the [development themes preference](#development-themes-preference) is set to ‘Yes’ (and a user has the appropriate rights), the presented view will always be the development theme view.
+As long as the [development themes preference](#development-themes-preference) is set to ‘Yes’ (and a user has the appropriate rights, and has not opted out of this preference in their own settings), the presented view will always be the development theme view. This does not change even if you go back to the Themes panel and return to the Sections panel again via the ‘Assign sections’ link on the live theme. Nor can you see the live presentation by following the front end link in the administration side’s main navigation bar. 
 
-(continue editing here)
-
-### Edit default section
-
-Section names are links to the section editor, where you can edit which theme and assets serve as the active (live) theme. ’Default’ means live here; the production theme underlying the development preview context you are in.
-
-If you want to edit the development theme’s page and style associations to sections, use the [selection controls from the preview context](#missing-assets-warning).
-
-
-
-### Underlying active theme indication
-
-The Theme column shows two theme *names* for each section. The first is a greyed-out name indicating the theme currently *active* on that section (i.e. live in the front-end of your website). But it’s *greyed out*; making clear you are not in live/active context here!
-
-![Dev preview theme names](/img/dev-preview-theme-names.png)
-
-The second theme name in the Theme column, not greyed out, is the ‘development’ theme you are currently in context with. In the image above, it is ‘abc-my-new-theme’, overriding Textpattern’s live (default) theme, ‘four-point-eight’.
-
-### Assets association
-
-The Page and Style columns make clear which page and style from the theme package aligns with which section.
-
-![Dev preview assets links](/img/dev-preview-assets-links.png)
-
-Making page and style assignments to sections has always been a standard procedure in Textpattern. But now it is done in context of theme packages; really tying the building blocks together.
-
-### Missing assets warning
-
-If you ever see an asset name indicated in red, it is a warning telling you that the theme version of that asset has been deleted, or otherwise missing in the theme.
-
-![Dev preview assets links](/img/dev-preview-assets-links-red.png)
-
-The greyed-out name before the red link (it is a link) reflects the live template that is working underneath the development theme’s overriding context. You can verify this in the [section editor](#edit-default-section).
-
-If you deployed a development theme to live status when an assigned asset was missing, as indicated in red, your front-end presentation would break.
-
-There are options for dealing with a situation like this, and you might discover what works best for you. The most direct and intuitive fix is to click the red link, which puts you in direct context of a new template for the missing asset, and save the template with the expected name, even if you leave the template empty at first. You can always fill in the markup later. Return to the theme preview again and the red warning indication is gone. Don’t forget to fill in the template, though, because an empty one is little better than none at all.
-
-Or you could assign a different template to the section. It must already exist, of course, so if not, just use the previous approach. Otherwise, do this:
-
-1. Check the box for the appropriate section in the table.
-2. Select ‘Change theme/page/style’ from the selection controls under the table.
-3. Ensure the ‘Development’ option is checked.
-4. Select the correct theme (the context you are in).
-5. Select the associated page and style (in context of the chosen theme).
-
-![Dev preview change assets](/img/dev-preview-change-assets.png)
-
-Click the ‘Go’ button when done and confirm when asked if you are sure.
-
-You can use the links under the Page and Style columns to directly access and work on the assigned template at the other end, then return to preview context, click the [View links](#view-theme-presentation) on a section, and see how the presentation is shaping up.
+If the *development themes* preference is on, but you want to quickly see the live presentation of your site, you must either turn the global preference off, or turn it off in your own account settings.
 
 ## Production (live) themes
 
