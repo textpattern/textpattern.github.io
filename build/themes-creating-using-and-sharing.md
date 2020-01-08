@@ -376,7 +376,7 @@ There is a lot going on here, so let’s walk through it. First the image above 
 
 The remaining columns show:
 
-* Name of existing sections
+* Names of existing sections
 * Theme(s) applied on a given section
 * Page and Style assets of the indicated theme assigned in each case. 
 
@@ -400,23 +400,63 @@ The last menus for Page and Style require manual selection. In other words, you 
 
 ![Themes page and style menus in sections](/img/themes-page-and-style-menus-in-sections.png)
 
-Again, note that all sections in the table are checked by default. This means if you go through with assigning a page and style, every section will have the same page and style assignment. This might be fine for the style assignment, if you use a single stylesheet for your entire website, but it might not be what you want for your page assignments, depending on how you have your page templates designed.
+Again, note that all sections in the table are checked by default. This means if you go through with assigning a page and style as is, every section will have the same page and style assignment. This might be fine for the style assignment, if you use a single stylesheet for your entire website, but it might not be what you want for your page assignments, depending on how you have your page templates designed.
 
-The assumption made for having all sections in the table checked is that the majority of sections, if not all, use a common page that is constructed with conditional logic such that regardless of what section it is assigned to, the page will output the necessary content as expected. This is what’s known as a one-to-many page assignment to sections. By contrast, a one-to-one assignment is where every section has a unique page template.
+The assumption made for having all sections in the table checked by default is that the majority of sections, if not all, use a common page that is constructed with conditional logic such that regardless of what section it is assigned to, the page will output the necessary content as expected. This is what’s known as a one-to-many page assignment to sections. By contrast, a one-to-one assignment is where every section has a unique page template.
 
-For smaller/simpler sites, most people use a ‘default’ page template for the default (homepage) section, then a ‘common’ or ‘generic’ page template for the remaining sections of their website (with, perhaps, a third template used for a contact form page). The default homepage pairing (and any contact form page pairing) is a one-to-one page to section assignment, while the latter associations reflect a one-to-many page to sections assignment. In such a situation, one would have to run the selection controls twice; first for the default section alone (unchecking all other sections), then for all remaining sections (checking all sections except the default section).
+It’s actually rare that anyone uses a single page template for the entire website, though it can be done for simple sites like blogs. A more typical situation, however, is to use a ‘default’ page template for the default (homepage) section, then a ‘common’ or ‘generic’ page template for most of the remaining sections, with, perhaps, a third template used for a contact form page, or what have you. The default homepage pairing (and any contact form page pairing) is a one-to-one page to section assignment, while the other page associations reflect a one-to-many page to sections assignment. In such a situation, one would have to run the selection controls thrice; first for the default section alone (unchecking all other sections), ditto for the contact section, if used, then a third time for all remaining sections (checking all sections except the default and contact sections).
 
-It makes no difference how you match pages with sections, whether one-to-one, one-to-many, or a combination, as the example above suggests. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if they are assigned wrong — templates have the wrong conditional logic — your front end presentation will break.
+It makes no difference how you match pages with sections, whether one-to-one, one-to-many, or a combination, as the example above suggests. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if they are assigned wrong (i.e. templates have the wrong conditional logic) your front end presentation will break.
 
-## Previewing themes in development
+## Theme development environment
 
-The ability to preview theme composition and its relationship with website architecture, as well see how it looks on the front-end as you make changes, is rather important. Textpattern provides features to do it all in one place — in a sense, a development environment — without affecting the *live* conditions (though being careful not to disrupt things by changing system preferences and/or plugins along the way).
+Previewing themes in development means two things in combination; the ability to:
 
-The door to it all is the [Preview link](#preview-link) found in the Themes panel; a convenient way to get into the development context of a single theme. You can preview an active theme as well, in which case you are in the production environment, working on a live theme, but here the focus is on development (i.e. non-active themes).
+* **preview theme composition** and its relationship with website structure
+* **preview theme presentation** on the front end (section-by-section) as you make changes to theme asset files.  
 
-The preview context is in the Sections panel, where the table shows the theme’s component pages and styles in relation to the sections of your website’s structure. The first five columns of the table are particularly noteworthy.
+Both are important in theme development and require initial establishment of a theme development ‘environment’, of a sort.
 
-![Dev preview theme sections](/img/dev-preview-theme-sections.png)
+### Preview theme composition
+
+[Assigning sections](#assigning-sections) (i.e. assigning theme page and style assets to sections), as described earlier, is the first step, and essentially what establishes the development environment. By doing that, you map the composition of your theme to your site structure and the Sections panel context makes it all clear at a glance. From there you can view development themes on the front end. But let’s walk through the setup scenario to see what it looks like. If you read the earlier sections of this document, the following will make sense.
+
+Imagine the default Textpattern theme has been [duplicated](#create-from-duplication) on the Themes panel, producing a new theme for development called ‘abc-new-theme’. The ‘Assign sections’ link for that theme was then clicked, bringing you to the Sections panel as described earlier. All recap so far.
+
+Now it is time to assign sections for the new theme, but only as a ‘Development’ theme here for demonstration; we are not replacing the ‘Live’ theme too.[#assignboth] Neither will we change site structure, so the same asset assignments will be used. But it is necessary to run through the selection process twice, once for each page assignment. We arbitrarily begin with the ‘default’ section, therefore *uncheck* the ‘articles’ section. The ‘Live’ check box in the selection controls is also unchecked, and the ‘default’ page and the ‘default’ style are manually assigned.
+
+![Themes section assign default page](/img/themes-section-assign-default-page.png)
+
+When clicking the Go button and confirming when asked, the new  development theme assignment appears in the Theme column of the Sections panel with an orange ‘Development’ pill indicator.
+
+![Themes section assign default page result](/img/themes-section-assign-default-page-result.png)
+
+The process is repeated, by unchecking the ‘default’ section record and checking the ‘articles’ section record. Note the selection controls do not pre-fill as before because you are not arriving from the ‘Assign sections’ link on the Themes panel, so you must manually select everything beginning with the initial ‘Change theme/page/style’ option.
+
+![Themes section assign articles page](/img/themes-section-assign-articles-page.png)
+
+Then do as before:
+
+1. check only the ‘Development’ check box
+2. ensure the ‘My New Theme’ (in this example) theme is selected
+3. select the ‘archive’ (in this example) page
+4. select the ‘default’ style; it’s the only style but it still needs manually selected.
+
+Click Go and confirm as before and you complete the setup of a development theme environment.
+
+![Themes sections assign result](/img/themes-sections-assign-result.png)
+
+[#assignboth]: You can assign both if you want, of course, and it would not matter for a new installation of Textpattern because we are working with a duplicated theme, and you could always switch back to the default theme, if desired. Nor would it matter if you were working on a local installation (i.e. a non-live website) since nobody would see your live work-in-progress anyway.
+
+### Preview theme presentation
+
+Previewing theme presentation is a much simpler matter. Once you have the development environment for a theme setup as described above, click the ‘View’ link next to a given section’s name to view that theme’s presentation on the front end.
+
+![Themes preview presentation](/img/themes-preview-presentation.png)
+
+As long as the [development themes preference](#development-themes-preference) is set to ‘Yes’ (and a user has the appropriate rights), the presented view will always be the development theme view.
+
+(continue editing here)
 
 ### Edit default section
 
@@ -424,13 +464,7 @@ Section names are links to the section editor, where you can edit which theme an
 
 If you want to edit the development theme’s page and style associations to sections, use the [selection controls from the preview context](#missing-assets-warning).
 
-### View theme presentation
 
-The other link you see in the Name column is perhaps the real prize of previewing a theme in development, the ‘View’ link. View links are found at right of section names. 
-
-![Dev preview view link](/img/dev-preview-view-link.png)
-
-Clicking a View link allows you to see the front-end rendering of your theme’s presentation for that particular section; the moment of fireworks. You’ll probably use the View links a lot if you develop themes in the back-end of Textpattern.
 
 ### Underlying active theme indication
 
