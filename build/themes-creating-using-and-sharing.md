@@ -468,12 +468,6 @@ The Page and Style columns make clear which page and style from the theme packag
 
 Making page and style assignments to sections has always been a standard procedure in Textpattern. But now it is done in context of theme packages, really tying the building blocks together.
 
-#### Edit live sections
-
-Section names are links to the section editor, where you can edit which theme and assets serve as the *live* theme (i.e. apply to the live section). You can see this is true by clicking any section name and looking at what theme is selected in the **Uses theme** field; it will always show the live theme on that section.
-
-If you want to edit the *development* theme’s page and style associations, return to the Section panel and use the selection controls as already described in the [Preview theme composition](#preview-theme-composition) section.
-
 #### ‘Missing’ assets warning
 
 If you ever see an asset name flagged with a red ‘Missing’ pill, it is a warning telling you that the theme version of that asset has been deleted, or otherwise missing in the theme package.
@@ -507,45 +501,21 @@ If the *development themes* preference is on, but you want to quickly see the li
 
 ## Production (live) themes
 
-When you are ready to apply your theme and see how it looks on the front-side, you need to assign it to one or more sections that are setup and ready to go. It’s assumed here that your sections *are* ready to go, so focus is on the assigning part. How you do this might depend on what your theme objectives are.
+When you are ready to apply your theme and see how it looks on the front-side, you need to assign it to one or more sections that are setup and ready to go.
 
-### Switching themes
+### Edit live sections
 
-If you are using version 4.8 of the software, and you simply want to swap one theme for another across your website as it’s currently designed, return to the Themes panel and click the blue ‘Activate’ link found at right of the desired theme’s name.
+If you first need to create or edit website sections, do this in the Sections panel, as always. To create a new section, use the New section button to open the editor and create one from scratch. To edit an existing section, click a section’s name under the Name column of the sections table. The section editor will open.
 
-![Click blue activate link](/img/click-blue-activate-link.png) [image needed]
+In both cases, whether a new or edited section, the theme assignment made in the sections editor will apply as the *live* theme assignment, even if you assign what is otherwise a development theme. Be aware of that. If you don’t want a development theme’s assets to be live, do not assign a development theme in this location.
 
-Confirm ‘OK’ when asked if you are sure. The theme’s blue ‘Activate’ link then becomes a green ‘Active’ link and the previously active theme’s link reverts the other way.
+### Switching themes from development to live
 
-In situations where you have created the themes and know how your website is constructed (i.e. assets between the different themes are paired well and using similar names), this switching process should work fairly smoothly. If switching between themes that you have imported, however, where the variability of theme package contents is potentially greater between sourced theme and your own website’s design, Textpattern will switch those parts that are compatible (similarly named, etc.) and ignore the others. 
+If you have been reading this document from the top, you’ve already learned how to make a development theme live. It’s the same process as described in the [Assigning sections](#assigning-sections) and [Preview theme composition](#preview theme-composition) sections, but instead of using the ‘Development’ check box in the selections controls, you now check the ‘Live’ check box instead.
 
-Obviously you do not want to use this feature if your own new theme is not ready, or not being developed locally or on a staging server. And you might need to fiddle a bit with themes imported from somewhere else. But the ‘Active’ link still makes it easier to switch from one theme to another across your entire site.
+This is the same if you use a single theme across your entire site or use a different theme for each section; either way, you still use the same controls.
 
-### Assigning multiple themes
-
-In this case you might like keeping the same general structure of your website but want to have a different layout and presentation for each section. The blue ‘Activate’ links described previously will not work in this case because that only switches one theme to the whole website — an easy theme switcher.
-
-If you want a 1:1 assignment of a different theme to every website section, you will have to assign each theme and its associated page and style assets to the section individually. There are two approaches to this process — a one-section-at-a-time process if you want all sections looking different — but one approach is a little more direct than the other, thus the one presented here. 
-
-Use the selection controls again, but this time in the Sections panel, where assigning assets to templates is done, and where the select options are different. Hop into the Sections panel, check the box by the name of a section to assign a theme to, and select ‘Change theme/page/style’ from the menu underneath.  
-
-![Select ‘Change theme…’](/img/select-change-theme.png)
-
-Yes, you can select more than one section at a time and thereby assign a given theme to multiple sections at once. This would be the ideal middle road when the ‘Activate’ theme switcher was too much (all or nothing) and a 1:1 pairing is too tedious. Alas, you’re on a tedious mission here because each website section must look like an Alphonse Mucha season, so push forth with one section assignment at a time.
-
-The selection will reveal an associated and uncharacteristically rich set of controls for completely defining the assignment action.
-
-![Select ‘Change theme…’ option](/img/select-change-theme-option.png)
-
-Notice not one, but *two* checkboxes: ‘Development’ and ‘Live’. The ‘Development’ option, checked by default, works in relation to the [development previewing](#previewing-themes-in-development) functionality described earlier.[^sect] Assigning themes to sections allows *previewing* the changes. The ‘Live’ option, on the other hand, does what it implies; makes the themes-to-sections assignment immediately visible on the front-end of your website.
-
-You _can_, select both options, if not often needed. One example for doing so might be to synchronize development and live conditions in one easy step; as a starting point, say, for diverged development later. Go ahead, try it. You only *live* once!
-
-After the checkboxes come three select menus for Theme, Page, and Style. The Theme menu will show the current theme assignment by default. When you change that menu first, the Page and Style menu options adjust in relation. This ensures you only choose from page and style assets in the theme package; no mistaking it. Proceed with making the page and style selections accordingly.
-
-Repeat the above process for each theme-to-section assignment. When done with all sections, return to the Themes panel to find that the blue ‘Activate’ links on the assigned themes have turned green and beam ’**Active**{:.success}’. Success!
-
-[^sect]: A column now exists in the `txp_section` table for the development theme assets.
+A single theme switch all at once is achieved by checking all section records at once. But, as already explained earlier, it’s rare that your site structure is setup for such a simple maneuver. More likely you need to make multiple assignments with the selection controls, ensuring you have the right theme assets assigned to the right sections, whether one-to-one associations, one-to-many, or likely a combination of both.
 
 ## ‘Database’ themes versus ‘disk’ themes
 
