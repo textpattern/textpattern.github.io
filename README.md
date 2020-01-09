@@ -11,9 +11,11 @@ As follows:
 3. Review the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide). This is Textpattern’s baseline editorial guidelines across all project sites and written material. Here will be high-level rules about orthographical style, spelling, punctuation, brand name usage, and so on. (If you get a 404, the document is still under major revision. Skip to next item and please come back later.)
 4. Continue according to skill level or interest…
    * If drafting new pages (and/or editing existing pages): Clone this repository (we assume you know how). If aiming to draft something new, ensure you have already [proposed the page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=propose-new-page.md&title=proposed%3A+) and got consensus. And use the [documentation page template](https://docs.textpattern.com/brand/user-docs-page-template) to start easier.
-   * If editing existing pages only: Clone repository or use GitHub’s web interface, explained in next section.
+   * If editing existing pages only: Clone repository or use GitHub’s web interface, explained in next section. 
 
 Whether you clone the repository or use the web interface to make changes, a pull request will be initiated and reviewed by repository owners.
+
+**Important!** Before making any changes to documentation pages, look at the [open issues](https://github.com/textpattern/textpattern.github.io/issues) list to see if anyone else is already assigned on the page *and* the issue appears with a ‘drafting’ or ‘editing’ [label](https://github.com/textpattern/textpattern.github.io/labels) on it, or any other label that suggest someone is actively focused on the document. If so, do not touch those pages until such labels are removed. At that point, if you’re still inclined, contact the assignee(s), if any remain indicated on the issue, and enquire about the document’s status. Version control is a wonderful thing, but there is a collaborative editorial workflow in place too. We don’t want to make roll-backs unnecessarily.
 
 ## Editing via GitHub’s web interface
 
