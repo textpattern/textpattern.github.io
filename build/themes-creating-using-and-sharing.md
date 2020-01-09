@@ -577,7 +577,7 @@ Unlike with exporting themes that you create, where the theme is already tabled 
 
 First, use your (S)FTP software of choice to transfer the external theme (presumably downloaded from a shared location) to your /themes directory on the server. A theme import control will appear in the Themes panel, above the themes table.
 
-![Themes import theme menu](/img/themes-import-theme-menu.png)
+![Themes import menu](/img/themes-import-menu.png)
 
 If you didn’t see the menu before, it is because it works in context with the /themes directory, as follows:
 
@@ -587,9 +587,9 @@ If you didn’t see the menu before, it is because it works in context with the 
 
 You can then use the import menu to select the theme and initially import it into the database.
 
-![Themes import theme menu select](/img/themes-import-theme-menu-select.png)
+![Themes import menu select](/img/themes-import-menu-select.png)
 
-The theme is now in your themes table to use as desired. If the themes in the table match the themes in your directory, the import control will disappear again from the Themes panel.   *Poof!*
+The theme is now in your themes table to use as desired. If the themes in the table match the themes in your directory, the import control will disappear from the Themes panel again.   *Poof!* 
 
 ## Updating themes
 
