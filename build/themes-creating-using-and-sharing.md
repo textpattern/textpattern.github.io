@@ -410,24 +410,24 @@ It’s actually rare that anyone uses a single page template for the entire webs
 
 It makes no difference how you match pages with sections, whether one-to-one, one-to-many, or a combination, as the example above suggests. Just be aware that you may have to uncheck section records when assigning page or style assets for a given theme in order to get the right assignments per section. Textpattern will not know how you have your page templates designed, so if they are assigned wrong (i.e. templates have the wrong conditional logic) your front end presentation will break.
 
-See [Preview theme composition](#preview-theme-composition) below for further demonstration of assigning development theme assets.
+See [Assess theme composition](#assess-theme-composition) below for further demonstration of assigning development theme assets.
 
-## Theme development environment
+## Development themes
 
-Previewing themes in development means two things in combination; the ability to:
+Assigning ’Development’ themes, as described above, more or less establishes the initial development environment. Multiple development themes can be setup at a time. Once established, you can:
 
-* **preview theme composition** and its relationship with website structure
+* **assess theme composition** at a glance, and its relationship with website structure
 * **preview theme presentation** on the front end (section-by-section) as you make changes to theme asset files.  
 
-Both are important in theme development and require initial establishment of a theme development ‘environment’, of a sort.
+### Assess theme composition
 
-### Preview theme composition
-
-[Assigning sections](#assigning-sections) (i.e. assigning theme page and style assets to sections), as described earlier, is the first step, and essentially what establishes the development environment. By doing that, you map the composition of your theme to your site structure and the Sections panel context makes it all clear at a glance. From there you can view development themes on the front end. But let’s walk through the setup scenario to see what it looks like. If you read the earlier sections of this document, the following will make sense.
+In the [Assigning sections](#assigning-sections) section we said what to do, but didn’t actually walk through the process of doing that for a development theme. We’ll do that now to see what it looks like.
 
 Imagine the default Textpattern theme has been [duplicated](#create-from-duplication) on the Themes panel, producing a new theme for development titled ‘My New Theme’. The ‘Assign sections’ link for that theme was then clicked, bringing you to the Sections panel as described earlier. All recap so far.
 
-Now it is time to assign sections for the new theme, but only as a ‘Development’ theme here for demonstration; we are not replacing the ‘Live’ theme too.[^assignboth] Neither will we change site structure, so the same asset assignments will be used. But it is necessary to run through the selection process twice, once for each page assignment. We arbitrarily begin with the ‘default’ section, therefore *uncheck* the ‘articles’ section. The ‘Live’ check box in the selection controls is also unchecked, and the ‘default’ page and the ‘default’ style are manually assigned.
+Now it is time to assign sections for the new theme, but only as a ‘Development’ theme here for demonstration; we are not replacing the ‘Live’ theme too.[^assignboth] Neither will we change site structure, so the same asset assignments will be used.
+
+But it is necessary to run through the selection process twice, once for each page assignment. We arbitrarily begin with the ‘default’ section, therefore *uncheck* the ‘articles’ section. The ‘Live’ check box in the selection controls is also unchecked, and the ‘default’ page and the ‘default’ style are manually assigned.
 
 ![Themes section assign default page](/img/themes-section-assign-default-page.png)
 
