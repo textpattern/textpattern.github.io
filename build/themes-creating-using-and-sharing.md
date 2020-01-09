@@ -549,11 +549,15 @@ This will be more clear as you stroll through the remaining sections of the gard
 
 You have learned how to create and manage themes at this point, so take it to the next logical step and export one for other people to use. Fame and fortune awaits!
 
-When your theme is tweaked to perfection and ready to be shared, go to the Themes panel, check the theme’s box in the table, and use the **With selected** controls to select ‘Export to disk’ (i.e. to the /themes directory).
+When your theme is tweaked to perfection and ready to be shared:
+
+1. Go to the Themes panel
+2. Check the theme’s box in the table
+3. Use the multi-selection controls to select ‘Export to disk’ (i.e. to the /themes directory).
 
 ![Themes select export](/img/themes-select-export.png)
 
-The selection will trigger another option to respond to by way of a checkbox: <q><i>Delete unused templates from disk on export</i></q>.
+The selection will trigger another option to respond to by way of a checkbox: ‘<i>Delete unused templates from disk on export</i>’.
 
 ![Themes select export option](/img/themes-select-export-option.png)
 
@@ -573,21 +577,23 @@ Where you store the theme file for others to access is up to you. But whatever t
 
 ## Importing themes
 
-Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database. The /themes directory to the rescue!
+Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database.
+
+The /themes directory to the rescue again!
 
 First, use your (S)FTP software of choice to transfer the external theme (presumably downloaded from a shared location) to your /themes directory on the server. A theme import control will appear in the Themes panel, above the themes table.
 
-![Themes import menu](/img/themes-import-menu.png)
+![Themes import controls](/img/themes-import-controls.png)
 
 If you didn’t see the menu before, it is because it works in context with the /themes directory, as follows:
 
-1. **One or more disk themes with no database equivalents**. When one or more themes reside in the themes directory that are not in the database, the selection menu appears above the themes table with those themes listed, enabling their importation into the database. The menu is not visible if this condition is false.
-2. **Disk themes match database themes**. When the same themes are equally represented in the database and on disk, or only in the database and not on disk, the contextual menu is hidden, since there is nothing to potentially import.
+1. **One or more disk themes with no database equivalents**. When one or more themes reside in the themes directory that are not in the database (i.e. in the themes table), the selection menu appears above the themes table with those themes listed, enabling their importation into the database. The menu is not visible if this condition is false.
+2. **Disk themes match database themes**. When the same themes are equally represented in the database and on disk, or only in the database and not on disk, the contextual menu is hidden, since there is nothing unique to import.
 3. **Database theme deleted**. If/when you delete a theme from the database but not the disk-based version (assuming there is one), the Theme import menu will reappear, as described in condition 1, since that condition is true again.
 
-You can then use the import menu to select the theme and initially import it into the database.
+You can then use the import controls to select the theme and initially import it into the database. In the image above, there is only one theme, ‘Imported Theme’, so it’s already selected. When the Import button is clicked, the theme is added to the themes table.
 
-![Themes import menu select](/img/themes-import-menu-select.png)
+![Themes imported theme](/img/themes-imported-theme.png)
 
 The theme is now in your themes table to use as desired. If the themes in the table match the themes in your directory, the import control will disappear from the Themes panel again.   *Poof!* 
 
