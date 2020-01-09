@@ -599,15 +599,11 @@ The theme is now in your themes table to use as desired. If the themes in the ta
 
 If you end up importing more than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer (other than you) has released a newly improved version of a theme you may have already imported once. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
 
-As with initially importing a theme, you begin by downloading and transferring the new version of the sourced theme to your /themes directory. Then it is on to the Themes panel where you use the multi-selection controls, again, but this time you check the box on the theme you are updating, then select the ‘Update from disk’ option.
+As with initially importing a theme, you begin by downloading the sourced theme and transferring it to your /themes directory via (S)FTP. Then it is on to the Themes panel where you use the multi-selection controls, again, but this time checking the box on the theme you are updating, then selecting the ‘Update from disk’ option, and leaving the ‘<i>Delete unused templates from database on import?</i>’ option checked.
 
-![Themes select update from disk](/img/themes-select-update-from-disk.png)
+![Themes update from disk](/img/themes-update-from-disk.png)
 
-When selected, another checkbox option is presented: <q><i>Delete unused templates from database on import?</i></q>[^update]
-
-![Themes select update from disk option](/img/themes-select-update-from-disk-option.png)
-
-This second option is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting files that might be different (in terms of existing) in the database version. This is generally a good idea, which is why the box is ticked by default, to keep versions consistent. But you might have your reasons for wanting variability, like wanting to customize the sourced theme. Hard to say.
+This second option is asking if you want to make your theme in the themes table (database version) the same as the one in the <i>themes</i> directory (disk version) by deleting files that might be different (in terms of existing) in the database version. This is generally a good idea, and presumably why you’re updating the theme to begin with. The box is ticked by default with that in mind, to keep versions consistent. But you might have your reasons for wanting variability, like wanting to customize the database version and keep the original sourced them at hand on disk. Hard to say.
 
 Either way, click the ‘Go’ button and confirm when asked if you are sure.
 
