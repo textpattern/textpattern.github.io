@@ -613,7 +613,7 @@ Either way, click the ‘Go’ button and confirm when asked if you are sure.
 
 Themes can be deleted from the themes table (database), and the associated version in the /themes directory (disk) as well, all in one go.
 
-Again, this is done using the multi-selection controls. Check the box for the theme you want to delete from the table, select the ‘Delete’ option from the selection menu, and ensure the option for ‘’ is checked.
+Again, this is done using the multi-selection controls. Check the box for the theme you want to delete from the table, select the ‘Delete’ option from the selection menu, and ensure the option for ‘<i>Delete theme templates from disk too</i>’ is checked.
 
 ![Themes select delete](/img/themes-select-delete.png)
 
@@ -621,4 +621,4 @@ Click Go and confirm when asked.
 
 As a safety precaution, if theme packages on disk contain standard theme directories having non-standard subdirectories (e.g. styles/sass, or JavaScript files, whatever), they will not be deleted by Textpattern; rather, the theme package container will remain, along with the non-standard subdirectories and files inside the directory. This shell of a theme and its non-standard elements will need deleted manually from the server since the software does not recognize such elements.
 
-If you choose to delete the theme from the database but not from disk (i.e. unchecking the option box), the theme import control discussed in [Importing themes](#importing-themes) appears again at top of the themes table with the theme package still sitting on disk showing in the selection menu. You can then re-import the theme at any time, if necessary, or use the appearance of the theme in the import control as a reminder that the package in the /themes directory also needs deleted.
+If you choose not to delete the theme from disk (i.e. unchecking the option box), the theme import control discussed in [Importing themes](#importing-themes) appears again at top of the themes table with the theme package still sitting on disk showing in the selection menu. You can then re-import the theme at any time, if necessary, or use the appearance of the theme in the import control as a reminder that the package in the /themes directory also needs deleted.
