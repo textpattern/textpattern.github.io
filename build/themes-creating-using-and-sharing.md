@@ -511,26 +511,26 @@ In both cases, whether a new or edited section, the theme assignment made in the
 
 ### Switching themes from development to live
 
-If you have been reading this document from the top, you’ve already learned how to make a development theme live. It’s the same process as described in the [Assigning sections](#assigning-sections) and [Preview theme composition](#preview theme-composition) sections, but instead of using the ‘Development’ check box in the selections controls, you now check the ‘Live’ check box instead.
+If you have been reading this document from the top, you’ve already learned how to make a development theme live. It’s the same process as described in the [Assigning sections](#assigning-sections) and [Assess theme composition](#assess-theme-composition) sections, but instead of using the ‘Development’ check box in the selections controls, you now check the ‘Live’ check box instead.
 
 This is the same if you use a single theme across your entire site or use a different theme for each section; either way, you still use the same controls.
 
-A single theme switch all at once is achieved by checking all section records at once. But, as already explained earlier, it’s rare that your site structure is setup for such a simple maneuver. More likely you need to make multiple assignments with the selection controls, ensuring you have the right theme assets assigned to the right sections, whether one-to-one associations, one-to-many, or likely a combination of both.
+A single theme switch all at once is achieved by checking all section records at once. But, as already explained earlier, it’s rare that your site structure is setup for such a simple maneuver. More likely you need to make multiple assignments with the selection controls, ensuring you have the right theme assets assigned to the right sections, whether multiple one-to-one associations, a single one-to-many association, or, likely, a combination of both.
 
 ## ‘Database’ themes versus ‘disk’ themes
 
-In the remaining sections, the [exporting](#exporting-themes), [importing](#importing-themes), [updating](#updating-themes), and [deleting](#deleting-themes) processes are explained. Before getting there, a concept needs laid out for understanding. This may be obviousness to some people. Others might appreciate it being made clear.
+In the remaining sections, the [exporting](#exporting-themes), [importing](#importing-themes), [updating](#updating-themes), and [deleting](#deleting-themes) processes are explained. Before getting there, a detail needs explained. This may be obviousness to some people. Others might appreciate it being made clear.
 
-Textpattern interface strings, pophelp, and this documentation in relation — and probably even developers themselves, and you, eventually, when exchanging in the community forum — will occasionally use terms that refer to themes as either ‘database’ or ‘disk’. These distinguishing terms are in reference to themes at specific locations and contexts in the importing and deleting scenarios, particularly.
+Textpattern interface strings, pophelp, and this documentation in relation — and probably even developers themselves, and you, too, after reading this — will occasionally use terms that refer to themes as either ‘database’ or ‘disk’. These distinguishing terms reflect theme packages at specific locations in the aforementioned processes.
 
 As far as the location terminology goes: 
 
-* **Themes panel = database theme**. When a theme is in the themes table of the Themes panel, it is in the database and thus can be referred to as a ‘database theme’.
+* **Themes panel = database theme**. When a theme is in the themes table of the Themes panel, it is in the database and thus can (and will at times) be referred to as a ‘database theme’.
 * **/themes directory = disk theme**. When the theme package is sitting in the /themes directory, it is on the web server’s disk and thus referred to as a ‘disk theme’, ‘disk-based’ theme, or what have you.
 
-When a theme is in both locations, as may often be the case in your workflows (though use of the /themes directory is entirely optional[^diskoptional]), remember to distinguish a given theme between the two locations, because the outbound and inbound shuffling of themes involves making choices about how to treat database and disk themes in the process. And, of course, knowing the difference can be useful when seeking help.
+When a theme is in both locations, as may often be the case in your workflows, remember to distinguish between them. The outbound and inbound shuffling of themes involves making choices about how to treat database and disk themes in the process.
 
-It all centres around the /themes directory located in your software’s root installation location, which is best thought of as a checkpoint for incoming (imported) and outgoing (exported) themes:
+It all centres around the /themes directory located in your software’s root location. The directory can be thought of as a checkpoint for incoming (imported) and outgoing (exported) themes:
 
 * {:.directory--open} {root}
   * {:.directory} files
@@ -541,9 +541,7 @@ It all centres around the /themes directory located in your software’s root in
   * {:.document} . . .
 {:.list--files}
 
-This will be more clear as you stroll through the remaining sections of the garden.
-
-[^diskoptional]: You do not have to use the /themes directory (on disk) to build your own themes. The directory is only needed if you want to share themes, back them up, or put theme assets under version control.
+With that out of the way, the remaining sections will make more sense.
 
 ## Exporting themes
 
