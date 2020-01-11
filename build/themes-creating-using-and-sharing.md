@@ -595,7 +595,7 @@ The theme is now in your themes table to use as desired. If the themes in the ta
 
 ## Updating themes
 
-If you end up importing more than exporting, you will eventually come to the point where one or more of the themes you have imported needs updated. This is the case when a theme designer (other than you) has released a newly improved version of a theme you may have already imported once. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
+If you end up importing more than exporting, you will eventually come to the point where one or more of the themes you have imported need to be updated. This is the case when a theme designer (other than you) has released a newly improved version of a theme you may have already imported once. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
 
 As with initially importing a theme, you begin by downloading the sourced theme and transferring it to your /themes directory via (S)FTP. Then it is on to the Themes panel where you use the multi-selection controls, again, but this time checking the box on the theme you are updating, then selecting the ‘Update from disk’ option, and leaving the ‘<i>Delete unused templates from database on import?</i>’ option checked.
 
@@ -617,6 +617,6 @@ Again, this is done using the multi-selection controls. Check the box for the th
 
 Click Go and confirm when asked.
 
-As a safety precaution, if theme packages on disk contain standard theme directories having non-standard subdirectories (e.g. styles/sass, or JavaScript files, whatever), they will not be deleted by Textpattern; rather, the theme package container will remain, along with the non-standard subdirectories and files inside the directory. This shell of a theme and its non-standard elements will need deleted manually from the server since the software does not recognize such elements.
+As a safety precaution, if theme packages on disk contain standard theme directories having non-standard subdirectories (e.g. styles/sass, or JavaScript files, whatever), they will not be deleted by Textpattern; rather, the theme package container will remain, along with the non-standard subdirectories and files inside the directory. This shell of a theme and its non-standard elements will need to be deleted manually from the server since the software does not recognize such elements.
 
-If you choose not to delete the theme from disk (i.e. unchecking the option box), the theme import control discussed in [Importing themes](#importing-themes) appears again at top of the themes table with the theme package still sitting on disk showing in the selection menu. You can then re-import the theme at any time, if necessary, or use the appearance of the theme in the import control as a reminder that the package in the /themes directory also needs deleted.
+If you choose not to delete the theme from disk (i.e. unchecking the option box), the theme import control discussed in [Importing themes](#importing-themes) appears again at top of the themes table with the theme package still sitting on disk showing in the selection menu. You can then re-import the theme at any time, if necessary, or use the appearance of the theme in the import control as a reminder that the package in the /themes directory also needs to be deleted.
