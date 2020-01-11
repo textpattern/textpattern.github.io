@@ -123,7 +123,7 @@ All form files must have unique names — across core forms and any custom forms
 
 Of course, you know what stylesheets are. Styles need no further explanation except to emphasize that, like pages, they must be associated to one or more sections of your website in order to rule the presentation of them.
 
-Incidentally, there is a very handy combination of controls, accessed via the Sections panel, for assigning pages and styles to a section in context of a theme, all in shot. That’s described later in the [Assigning multiple themes](#assigning-multiple-themes) section.
+Incidentally, there is a very handy combination of controls, accessed via the Sections panel, for assigning pages and styles to a section in context of a theme, all in one shot. That’s described later in the [Assigning multiple themes](#assigning-multiple-themes) section.
 
 #### Metadata
 
