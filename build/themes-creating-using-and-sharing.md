@@ -307,12 +307,12 @@ You are now a master at creating development theme packages. Proceed with learni
 
 ## Key features of Themes panel
 
-The Themes panel — as well associated assets panels and the Sections panel in relation — provide features and cues that make it easy to see what context a theme is in, or what context you are in when browsing about the relevant panels of the back end. These include:
+The Themes panel — as well as associated assets panels and the Sections panel — provide features and cues that make it easy to see what context a theme is in, or what context you are in when browsing about the relevant panels of the back end. These include:
 
 * Whether a theme is in use (live) or not
 * What assets are associated to which themes
 * What themes are assigned to sections
-* The contextual navigation between it all, including direct access to the templates needing edited.
+* The contextual navigation between it all, including direct access to the templates that need editing.
 
 After starting a new development theme, as described in the previous sections, have a look at the themes table on the Themes panel and note the useful features detailed in the following four sections.
 
@@ -328,7 +328,7 @@ In fact, you can assign a theme’s assets to existing sections for both live an
 
 As mentioned in the [Default theme](#default-theme) section, any themes that are live on the front end will be indicated by a green ‘In use’ pill.
 
-While you are likely to use a single theme most of the time, thus only see a single ‘In use’ pill in the Themes panel, it is possible to [assign multiple themes](#assigning-multiple-themes) to the front end (i.e. use a different theme on each section of your website). Should you ever do that, each theme used will appear with the ‘In use’ pill indicator.
+While you are likely to use a single theme most of the time, thus only see a single ‘In use’ pill in the Themes panel, it is possible to [assign multiple themes](#assigning-multiple-themes) to the front end (i.e. use a different theme on various sections of your website). Should you ever do that, each theme used will appear with the ‘In use’ pill indicator.
 
 ### Sections indication
 
