@@ -497,7 +497,7 @@ Previewing theme presentation is a much simpler matter. Once you have the develo
 
 As long as the [development themes preference](#development-themes-preference) is set to ‘Yes’ (and a user has the appropriate rights, and has not opted out of this preference in their own settings), the presented view will always be the development theme view. This does not change even if you go back to the Themes panel and return to the Sections panel again via the ‘Assign sections’ link on the live theme. Nor can you see the live presentation by following the front end link in the administration side’s main navigation bar. 
 
-If the *development themes* preference is on, but you want to quickly see the live presentation of your site, you must either turn the global preference off, or turn it off in your own account settings.
+If the *development themes* preference is on, but you want to quickly see the live presentation of your site, you must either turn the preference off, or use your browser's private browsing (incognito) mode to simulate being logged out.
 
 ## Production (live) themes
 
