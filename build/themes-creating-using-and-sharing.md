@@ -426,17 +426,19 @@ Similar indication is provided on the Themes panel. Once a theme has been assign
 
 ![Themes panel in-use environments](/img/themes-panel-in-use-environments.png)
 
-## Composition of development environment
+## Development environment
 
-Assigning ’Development’ themes, as described in the previous two sections, establishes the initial development environment. Multiple development themes can be setup at a time. Once setup, you are left with a contextual view of your Sections panel where it is easy to assess theme composition at a glance and take various actions accordingly. The contextual view of your Sections panel will show:
+Assigning ’Development’ themes, as described across the three previous sections, establishes the initial development environment. Multiple development themes can be setup at any given time to work how and when you want.
 
-* the section composition of your website’s structure
-* the themes and their related assets assigned to sections
-* whether any assigned assets are missing
-* links directly do existing or missing assets to edit or add them, as the case may be
-* links to view the front-end presentation of assigned themes per section
+Once a development theme is setup, and you follow its [‘Assign sections’ link](#assigned-sections-link) again from the Themes panel, you are in a contextual view of your Sections panel where it is easy to assess theme composition at a glance and take various actions accordingly. The contextual view of your Sections panel will show:
 
-The first two items should be clear to you by now, but we’ll walk through the actual assigning steps, as introduced earlier, to make that workflow clear. The last three and their actionable steps are described in sections therefter.
+* The section composition of your website’s structure
+* The themes and their related assets assigned to sections
+* Whether any assigned assets are missing
+* Links directly to existing or missing assets in order to edit or add them, as necessary
+* Links to view the front-end presentation of assigned themes per section.
+
+Site structure and themes assignment to sections should be clear to you by now, but we’ll walk through the actual assigning steps next to make that workflow clear. Missing assets, assets editing, and themes viewing are described thereafter.
 
 ### Development environment setup
 
