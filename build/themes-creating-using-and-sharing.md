@@ -545,17 +545,21 @@ The same logic and workflow applies to assigning different themes to different s
 
 * four-point-eight theme to default section
 * abc-new-theme theme to articles section
-* ghi-another-theme theme to error-404 section
+* ghi-new-theme theme to error-404 section
 
-We first need to [create a new section](#add-or-edit-live-sections) since that will be needed. Then a new theme needs created as well, either [from scratch](#create-from-scratch) or [by duplication](#create-from-duplication). We then use the [multi-selection controls](#multi-selection-controls) to assign the new theme as a development theme on the new section. At this point the situation looks something like follows, enabling further development on the themes, if necessary, before making them live:
-
-![Themes three different section assignments](/img/themes-three-different-section-assignments.png)
-
-When the three development themes are ready for live status, the multi-selection controls are used again, three more times, to switch each theme to live on a given section.
+First, [create a new section](#add-or-edit-live-sections), since that will be needed. Then create the new development theme, either [from scratch](#create-from-scratch) or [by duplication](#create-from-duplication). Then use the [multi-selection controls](#multi-selection-controls) to assign the new theme as a development theme on the new section. At this point the situation looks something like follows, enabling further development on the three themes, if necessary, before making them live:
 
 ![Themes three different section assignments](/img/themes-three-different-section-assignments.png)
 
-And that’s what it looks like to have a different theme applied to each section of your website.
+When the three development themes are ready for live status, the multi-selection controls are used yet again, three more times, to switch each theme to live on a given section. When using the controls, you can check only the ‘Live’ box, or both ‘Development’ and ‘Live’ at the same time. The result will be the same either way, leaving the sections table looking like this: 
+
+![Themes three different live themes](/img/themes-three-different-live-themes.png)
+
+If you go to the Themes panel now, the three themes will all appear with a green ‘In use’ pill.
+
+![Themes three different themes in use](/img/themes-three-different-themes-in-use.png)
+
+In summary, whether you use one theme across your entire website or multiple themes, one per each section, you will likely need to use the multi-selection controls several times to ensure you have the right theme assets assigned to a given section.
 
 ## ‘Database’ themes versus ‘disk’ themes
 
