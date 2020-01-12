@@ -418,13 +418,21 @@ It makes no difference how you match pages and styles with sections, whether one
 
 ## Assigned sections indication
 
-Once a theme has been assigned as a *development* theme to a website section, the Themes column of the sections table will appear with two theme names in it. The theme name with an orange ‘Development’ pill next to it is the theme in development. The theme name with no pill indication is the one working live on that section in the front end of your website.
+Once a theme has been assigned as a *development* theme to a website section, the Theme column of the sections table will appear with two theme names in it. The theme name with an orange ‘Development’ pill next to it is the theme in development. The theme name with no pill indication is the one working live on that section in the front end of your website.
 
 ![Themes sections assign result](/img/themes-sections-assign-result.png)
 
-Similar indication is provided on the Themes panel. Once a theme has been assigned, using the [multi-selection controls](#multi-selection-controls), as either a development theme, live theme, or both, a coloured ‘In use’ pill will appear next to its name. A green ‘In use’ pill means the theme is live. An orange ‘In use’ pill means the theme is in development. 
+Similar colour indication for development themes is provided on the Themes panel. Once a theme has been assigned as ‘Development’ using the [multi-selection controls](#multi-selection-controls), the development theme name will appear with an orange ‘In use’ pill by it, while prevailing live themes (one or multiple) will appear with a green ‘In use’ pill. 
 
 ![Themes panel in-use environments](/img/themes-panel-in-use-environments.png)
+
+When you [switch a development theme to live](#switch-development-theme-to-live), replacing the former live status theme, the theme names under the Theme column of the Sections panel reduce to the single live theme (since there are no *different* themes in development now).
+
+![Themes switch to live status in sections](/img/themes-switch-to-live-status-in-sections.png)
+
+And the orange ‘In use’ pill in the Themes panel table goes away, replaced by the green pill on the new live theme.
+
+![Themes switch to live status in themes](/img/themes-switch-to-live-status-in-themes.png) 
 
 ## Development environment
 
@@ -499,13 +507,7 @@ If the *development themes* preference is on, but you want to quickly see the li
 
 When you are ready to apply a development theme to live status, you need to assign it to one or more sections that are setup and ready to go.
 
-### Switching themes from development to live
-
-If you have been reading this document from the top, you already know how to make a development theme live. Use the [multi-selection controls](#multi-selection-controls) to  [assign themes to sections](#assigning-sections), but instead of using the ‘Development’ check box only, you now check the ‘Live’ check box instead (or both at the same time).
-
-This is the same if you use a single theme across your entire site or use a different theme for each section; either way, you still use the same controls.
-
-A single theme switch all at once is achieved by checking all section records at once. But as already explained in [Assigning sections](#assigning-sections), it’s rare that your site structure is setup for such a simple maneuver, unless you’ve specifically made it that way. More likely you need to use the selection controls multiple times to ensure theme-to-section assignments are correct.
+If you need to create a new section, do that first.
 
 ### Add or edit live sections
 
@@ -524,6 +526,36 @@ To edit an existing section, click a section’s name under the Name column of t
 ![Themes section edit live theme](/img/themes-section-edit-live-theme.png)
 
 Be aware of that. If you do not want a development theme’s assets to be live, do not assign a development theme in this location. Use the [multi-selection controls](#multi-selection-controls) instead when working in development environments.
+
+### Switch development theme to live
+
+Switching a development theme to live makes use of the [multi-selection controls](#multi-selection-controls) again, as you should now expect. A single theme switch all at once is achieved by checking all section records at once. But as already explained in [Assigning sections](#assigning-sections), it’s rare that your site structure is setup for such a simple action unless you’ve specifically made it so that your website sections all use the same page template and stylesheet. More likely, you need to use the selection controls multiple times to ensure theme assets are aligned correctly to sections.
+
+It’s the same process as [assigning themes to sections](#assigning-sections), but instead of using the ‘Development’ check box only, you now check the ‘Live’ check box instead (or both at the same time).
+
+![Themes switch dev theme to live on section](/img/themes-switch-dev-to-live-on-section.png)
+
+As hinted to in [Assigned sections indication](#assigned-sections-indication), the development theme then becomes the new live theme on that section (having no orange pill) and no other theme name appears anymore for that section since there’s no longer a theme assigned as a different ‘Development’ theme.
+
+![Themes switch dev to live on section result](/img/themes-switch-dev-to-live-on-section-result.png)
+
+### Different themes on different sections
+
+The same logic and workflow applies to assigning different themes to different sections. Continuing with our image examples above, say we want three sections with the following example theme assignments:
+
+* four-point-eight theme to default section
+* abc-new-theme theme to articles section
+* ghi-another-theme theme to error-404 section
+
+We first need to [create a new section](#add-or-edit-live-sections) since that will be needed. Then a new theme needs created as well, either [from scratch](#create-from-scratch) or [by duplication](#create-from-duplication). We then use the [multi-selection controls](#multi-selection-controls) to assign the new theme as a development theme on the new section. At this point the situation looks something like follows, enabling further development on the themes, if necessary, before making them live:
+
+![Themes three different section assignments](/img/themes-three-different-section-assignments.png)
+
+When the three development themes are ready for live status, the multi-selection controls are used again, three more times, to switch each theme to live on a given section.
+
+![Themes three different section assignments](/img/themes-three-different-section-assignments.png)
+
+And that’s what it looks like to have a different theme applied to each section of your website.
 
 ## ‘Database’ themes versus ‘disk’ themes
 
