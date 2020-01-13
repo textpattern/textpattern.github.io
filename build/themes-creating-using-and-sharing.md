@@ -392,6 +392,24 @@ The last menus are for selecting the page and style assets in context of the ind
 
 ![Themes page and style menus in sections](/img/themes-page-and-style-menus-in-sections.png)
 
+## Add a new website section
+
+If you want or need to create or edit website sections before setting up a theme(s) development project, now is a good time. Do this in the Sections panel, as always.
+
+To create a new section, use the **New section** button to open the section editor and create one from scratch.
+
+![Themes create new section](/img/themes-create-new-section.png)
+
+To edit an existing section, click a section’s name under the Name column of the sections table.
+
+![Themes edit existing section](/img/themes-edit-existing-section.png)
+
+In both scenarios above, the section editor will open. The theme assignment made in the sections editor will apply as the *live* theme assignment, even if you assign what is otherwise a development theme.
+
+![Themes section edit live theme](/img/themes-section-edit-live-theme.png)
+
+Be aware of that. If you do not want the assets of an intended development theme to be live, do not assign a development theme in this location. Use the [multi-selection controls](#multi-selection-controls) instead when working in development environments.
+
 ## Assigning sections
 
 The mere existence of a new theme in the Themes panel does not mean it is already in a development or live state. They are in your database, yes, but just sitting their innocuous and unusable. You have to actually make a theme usable one way or the other by using the ’Change theme/page/style’ controls as described in the previous section.
@@ -503,63 +521,56 @@ As long as the [development themes preference](#development-themes-preference) i
 
 If the *development themes* preference is on, but you want to quickly see the live presentation of your site, you must either turn the preference off, or use your browser's private browsing (incognito) mode to simulate being logged out.
 
-## Production (live) themes
+## Deploy development themes to live
 
-When you are ready to apply a development theme to live status, you need to assign it to one or more sections that are setup and ready to go.
+Two options are available to you via the multi-selection controls in the Sections panel when ready to apply one or more development themes to live status. One is the ‘Change theme/page/style’ option already covered in previous sections, but this time you would make sure the ‘Live’ checkbox option was checked each time instead of ‘Development’. 
 
-If you need to create a new section, do that first.
+Much easier, however, especially when you have a greater number of sections, and regardless of how many different themes you want, or how many one-to-one assets associations are assigned, is to use the contextual ’Developer preview’ option to deploy every development theme to live all in one shot.
 
-### Add a new live section
+This option only appears in the multi-selection menu when you have one or more themes assigned to sections as development themes.
 
-If you need to create or edit website sections before making a development theme live, do this in the Sections panel, as always.
+![Themes developer preview option](/img/themes-developer-preview-option.png)
 
-To create a new section, use the **New section** button to open the section editor and create one from scratch.
+When using this option, it is best to ensure all sections have assigned development themes, and that each one is ready to deploy live; otherwise, this feature is perhaps overkill. If you are just working with one or two sections, the ‘Change theme/page/style’ option with the ‘Live’ checkbox would do just as well. It simply depends on how many development sections you have setup and ready to go. But options are available to you. Do it as you please.
 
-![Themes create new section](/img/themes-create-new-section.png)
-
-To edit an existing section, click a section’s name under the Name column of the sections table.
-
-![Themes edit existing section](/img/themes-edit-existing-section.png)
-
-In both scenarios above, whether a new or edited section, the section editor will open. The theme assignment made in the sections editor will apply as the *live* theme assignment, even if you assign what is otherwise a development theme.
-
-![Themes section edit live theme](/img/themes-section-edit-live-theme.png)
-
-Be aware of that. If you do not want a development theme’s assets to be live, do not assign a development theme in this location. Use the [multi-selection controls](#multi-selection-controls) instead when working in development environments.
-
-### Switch development theme to live
-
-Switching a development theme to live makes use of the [multi-selection controls](#multi-selection-controls) again, as you should now expect. A single theme switch all at once is achieved by checking all section records at once. But as already explained in [Assigning sections](#assigning-sections), it’s rare that your site structure is setup for such a simple action unless you’ve specifically made it so that your website sections all use the same page template and stylesheet. More likely, you need to use the selection controls multiple times to ensure theme assets are aligned correctly to sections.
-
-It’s the same process as [assigning themes to sections](#assigning-sections), but instead of using the ‘Development’ check box only, you now check the ‘Live’ check box instead (or both at the same time).
-
+<!-- these can be removed from /img folder
 ![Themes switch dev theme to live on section](/img/themes-switch-dev-to-live-on-section.png)
-
-As hinted to in [Assigned sections indication](#assigned-sections-indication), the development theme then becomes the new live theme on that section (having no orange pill) and no other theme name appears anymore for that section since there’s no longer a theme assigned as a different ‘Development’ theme.
 
 ![Themes switch dev to live on section result](/img/themes-switch-dev-to-live-on-section-result.png)
 
-### Different themes on different sections
-
-The same logic and workflow applies to assigning different themes to different sections. Continuing with our image examples above, say we want three sections with the following example theme assignments:
-
-* four-point-eight theme to default section
-* abc-new-theme theme to articles section
-* ghi-new-theme theme to error-404 section
-
-First, [create a new section](#add-or-edit-live-sections), since that will be needed. Then create the new development theme, either [from scratch](#create-from-scratch) or [by duplication](#create-from-duplication). Then use the [multi-selection controls](#multi-selection-controls) to assign the new theme as a development theme on the new section. At this point the situation looks something like follows, enabling further development on the three themes, if necessary, before making them live:
-
 ![Themes three different section assignments](/img/themes-three-different-section-assignments.png)
-
-When the three development themes are ready for live status, the multi-selection controls are used yet again, three more times, to switch each theme to live on a given section. When using the controls, you can check only the ‘Live’ box, or both ‘Development’ and ‘Live’ at the same time. The result will be the same either way, leaving the sections table looking like this: 
 
 ![Themes three different live themes](/img/themes-three-different-live-themes.png)
 
-If you go to the Themes panel now, the three themes will all appear with a green ‘In use’ pill.
-
 ![Themes three different themes in use](/img/themes-three-different-themes-in-use.png)
+-->
 
-In summary, whether you use one theme across your entire website or multiple themes, one per each section, you will likely need to use the multi-selection controls several times to ensure you have the right theme assets assigned to a given section.
+## Different themes on different sections
+
+Here is another example of using the ‘Developer preview’ option that better demonstrates its power, if rare in actuality.
+
+Say we have a gardener’s website and the owner wants a different vegetable theme on each of the website’s six main vegetable sections, plus a general theme on the homepage and auxiliary pages using different page templates.
+
+We walk through the development using what has already been learned:
+
+1. [Create any needed sections](#add-or-edit-live-sections).
+2. Created all the needed themes, either [from scratch](#create-from-scratch) or [by duplication](#create-from-duplication).
+3. [Assign theme assets to sections](#assign-sections) according to your website structure blueprints.
+4. Develop templates and stylesheets for each theme to completion, ensuring [no assets are missing](#missing-assets-warning) and [themes looks good on the front end](#view-theme-presentation).
+
+At this point our development environment looks something like follows:
+
+![Themes multi-themes website](/img/themes-multi-themes-website.png)
+
+Deploying it all at once to live is now easy. Select all checkboxes at once, then select the ‘Developer preview’ options from the selections menu, and choose the ‘Deploy to live’ radio button.
+
+![Themes multi-themes website live](/img/themes-multi-themes-website-live.png)
+
+All the development themes turn to live and no more development statuses remain, easy-peasy.
+
+If this were an actual project, every theme used would appear with a green ‘In use’ pill by its name in the Themes panel table.
+
+![Themes multiple themes in use](/img/themes-three-different-themes-in-use.png)
 
 ## ‘Database’ themes versus ‘disk’ themes
 
