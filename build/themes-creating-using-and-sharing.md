@@ -324,9 +324,9 @@ In fact, you can assign a theme’s assets to existing sections for both live an
 
 ### ‘In use’ indicator
 
-As mentioned in the [Default theme](#default-theme) section, any themes that are live on the front end will be indicated by a green ‘In use’ pill.
+As mentioned in the [Default theme](#default-theme) section, any themes that are live on the front end will be indicated by a green ‘In use’ pill. But, as also pointed out later in [Assigned sections indication](#assigned-sections-indication), any themes in development will appear with an orange ‘In use’ pill.
 
-While you are likely to use a single theme most of the time, thus only see a single ‘In use’ pill in the Themes panel, it is possible to [assign multiple themes](#assigning-multiple-themes) to the front end (i.e. use a different theme on various sections of your website). Should you ever do that, each theme used will appear with the ‘In use’ pill indicator.
+While you are likely to use a single theme most of the time, thus only see a single ‘In use’ pill in the Themes panel, it is possible to [assign different themes on different sections](#different-themes-on-different-sections) to the front end, in which case each theme used will appear with an orange or green ‘In use’ pill indicator, accordingly.
 
 ### Sections indication
 
@@ -364,14 +364,26 @@ You remain in that different theme context as you browse around the back end. Sw
 
 You now have a good idea of contexts and cues as it concerns themes and their assets in relation to relevant panels. These contexts are useful whether working on themes in development or browsing themes that are live.
 
-## Multi-selection controls
+## With-selected controls
 
-The multi-selection controls are a long-time and important functionality in Textpattern. Users of Textpattern are familiar with these; checkboxes on table records that work in combination with a menu of functional options to apply on whatever records are checked. Several new selection options are available between the Themes and Sections panels.
+The with-selected controls are a long-time and important functionality in Textpattern. Users of Textpattern are familiar with these; a combination of checkboxes on table records that work in relation to a selection menu where options can be selected and applied to checked items. Several new selection options are available for Themes functionality between the Themes and Sections panels.
 
-Most of the new selection options appear in the Themes panel menu, and are described in relevant parts of this document (e.g. themes duplication, exporting, and so on).
+### Themes panel selection options
 
-The Section panel menu has just one new option, ’Change theme/page/style’, but it’s the most important one for working with themes. This option enables you to establish development themes, or change themes from development status to live.
+Some of the new selection options appear in the Themes panel menu, and are described in relevant parts of this document:
 
+* Themes duplication
+* Themes exporting
+* Themes updating.
+
+### Sections panel selection options
+
+The Sections panel menu has two new options:
+
+* Change theme/page/style
+* Developer preview.
+
+<!-- to fix
 ![Themes change option in menu](/img/themes-change-option-in-menu.png)
 
 When the ’Change theme/page/style’ option is selected, the full range of controls is presented to you for completion.
@@ -391,6 +403,7 @@ The next control is the Theme selection menu to indicate which theme should be a
 The last menus are for selecting the page and style assets in context of the indicated theme, so you need to ensure the theme selection is correct first. The page and style assets you select are what get assigned to the section(s) that are checked.
 
 ![Themes page and style menus in sections](/img/themes-page-and-style-menus-in-sections.png)
+-->
 
 ## Add a new website section
 
