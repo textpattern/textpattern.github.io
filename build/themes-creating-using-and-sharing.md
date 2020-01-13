@@ -366,23 +366,23 @@ You now have a good idea of contexts and cues as it concerns themes and their as
 
 ## Multi-selection controls
 
-The multi-selection controls are a long-time and important functionality in Textpattern. Users of Textpattern are familiar with these; a combination of checkboxes for table records in association with an options menu to apply different actions on whatever records are checked.
+The multi-selection controls are a long-time and important functionality in Textpattern. Users of Textpattern are familiar with these; checkboxes on table records that work in combination with a menu of functional options to apply on whatever records are checked. Several new selection options are available between the Themes and Sections panels.
 
-With the introduction of themes functionality comes a new selection menu option for the Sections panel: ’Change theme/page/style’.
+Most of the new selection options appear in the Themes panel menu, and are described in relevant parts of this document (e.g. themes duplication, exporting, and so on).
+
+The Section panel menu has just one new option, ’Change theme/page/style’, but it’s the most important one for working with themes. This option enables you to establish development themes, or change themes from development status to live.
 
 ![Themes change option in menu](/img/themes-change-option-in-menu.png)
 
-This option is an important feature for establishing development themes and applying theme assets to your website’s sections; whether development, live, or both at once. These different possible contexts are described in the next several sections. Due to the common need for this selection option, we’ll cover the functionality here in a general way and refer back to it to avoid needless redundancy later.
-
-Again, this functionality is in the Sections panel only. The scenario in all cases is, you are choosing one or more sections to apply theme assignments to, whether as development themes, live themes, or both. When the ’Change theme/page/style’ option as shown above is selected, the full range of controls is presented to you for completion.
+When the ’Change theme/page/style’ option is selected, the full range of controls is presented to you for completion.
 
 ![Themes change set of controls](/img/themes-change-set-of-controls.png)
 
-First are the ‘Development’ and ‘Live’ environment checkbox options, at least one of which must be checked when using these controls.
+The first of these associated controls are the ‘Development’ and ‘Live’ environment checkbox options. At least one of these boxes must be checked when using these controls.
 
 ![Themes dev and live boxes](/img/themes-dev-and-live-boxes.png)
 
-The concept is simple. If you want a theme to be a development theme to work on, use the ‘Development’ check box. Likewise, if your theme is done with development and you want it to be live on the front-end for all the world to see, use the ’Live’ check box. More rarely, if you want a theme to be in both development and live environments (i.e. the theme is finished enough to function as a live theme, but you want to improve on it behind the scenes, as it were), check both boxes, as the image above shows.
+If you want a theme to be a development theme to work on, use the ‘Development’ check box. Likewise, if your theme is done with development and you want it to be live on the front-end for all the world to see, use the ’Live’ check box. Leaving both boxes checked is the equivalent of only checking live.  
 
 The next control is the Theme selection menu to indicate which theme should be applied. Note that it uses the theme’s title, not its name. Textpattern will try to anticipate the correct theme context, depending on how you arrive to this menu, and show it selected by default.
 
@@ -394,13 +394,13 @@ The last menus are for selecting the page and style assets in context of the ind
 
 ## Assigning sections
 
-The mere existence of a theme in the Themes panel does not mean it is already in a development or live state. They are in your database, yes, but just sitting their innocuous and unusable. You have to actually make themes usable one way or the other (beyond the default theme’s live assignment) by first assigning the theme to sections using the multi-selection controls described previously.
+The mere existence of a theme in the Themes panel does not mean it is already in a development or live state. They are in your database, yes, but just sitting their innocuous and unusable. You have to actually make a theme usable one way or the other by using the ’Change theme/page/style’ controls as described in the previous section.
 
-The [‘Assign sections’ link](#assign-sections-link) appears in context of the Themes panel, next to a theme’s name. You would use the link for a given theme when wanting to put the theme into a development environment, or make it live. The link offers a convenient way to do that. Once clicked, it puts you in the Sections panel with the appropriate theme in context, so you can easily assign theme assets to sections.
+The [‘Assign sections’ link](#assign-sections-link) appears in context of the Themes panel, next to a theme’s name. The link is a convenience for when wanting to put a given theme into a development environment, or make it live. Once clicked, it puts you in the Sections panel with the appropriate theme in context, so you can easily assign the theme’s assets to sections.
 
 ![Themes assign sections context](/img/themes-assign-sections-context.png)
 
-Note in the image above that all sections in the table are checked by default. This will be the case when arriving to the Sections panel via the ‘Assign sections’ link.
+As the image shows, all sections in the table are checked by default. This will be the case when arriving to the Sections panel via the ‘Assign sections’ link.
 
 In case you are following along on your own Sections panel, the image above is showing a Sections panel table with several irrelevant columns turned off for simplicity, just so you understand.
 
