@@ -540,7 +540,7 @@ Two options are available to you via the multi-selection controls in the Section
 
 Much easier, however, especially when you have a greater number of sections, and regardless of how many different themes you want, or how many one-to-one assets associations are assigned, is to use the contextual ’Developer preview’ option to deploy every development theme to live all in one shot.
 
-This option only appears in the multi-selection menu when you have one or more themes assigned to sections as development themes.
+This option only appears in the selection menu when you have one or more themes assigned to sections as development themes.
 
 ![Themes developer preview option](/img/themes-developer-preview-option.png)
 
@@ -560,7 +560,7 @@ When using this option, it is best to ensure all sections have assigned developm
 
 ## Different themes on different sections
 
-Here is another example of using the ‘Developer preview’ option that better demonstrates its power, if rare in actuality.
+Here is another example, albeit a rare situation, of using the ‘Developer preview’ option to better demonstrate its power.
 
 Say we have a gardener’s website and the owner wants a different vegetable theme on each of the website’s six main vegetable sections, plus a general theme on the homepage and auxiliary pages using different page templates.
 
@@ -575,13 +575,20 @@ At this point our development environment looks something like follows:
 
 ![Themes multi-themes website](/img/themes-multi-themes-website.png)
 
-Deploying it all at once to live is now easy. Select all checkboxes at once, then select the ‘Developer preview’ options from the selections menu, and choose the ‘Deploy to live’ radio button.
+And the assigned themes in development would also be indicated in the Themes panel with [the orange ‘In use’ pill](#assigned-sections-indication) by their names.
+
+Deploying it all at once to live is now easy:
+
+1. Select all checkboxes at once in the sections table
+2. Select the ‘Developer preview’ option from the selection menu
+3. Choose the ‘Deploy to live’ radio button
+4. Click the Go button and confirm when asked.
 
 ![Themes multi-themes website live](/img/themes-multi-themes-website-live.png)
 
-All the development themes turn to live and no more development statuses remain, easy-peasy.
+All the development themes turn to live and no more orange ‘Development’ theme assignments remain, easy-peasy.
 
-If this were an actual project, every theme used would appear with a green ‘In use’ pill by its name in the Themes panel table.
+If this were an actual project, all the orange ‘In use’ pills for these themes in the Themes panel table would turn to green pills, indicating their live status.
 
 ![Themes multiple themes in use](/img/themes-three-different-themes-in-use.png)
 
