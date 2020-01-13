@@ -394,7 +394,7 @@ The last menus are for selecting the page and style assets in context of the ind
 
 ## Assigning sections
 
-The mere existence of a theme in the Themes panel does not mean it is already in a development or live state. They are in your database, yes, but just sitting their innocuous and unusable. You have to actually make a theme usable one way or the other by using the ’Change theme/page/style’ controls as described in the previous section.
+The mere existence of a new theme in the Themes panel does not mean it is already in a development or live state. They are in your database, yes, but just sitting their innocuous and unusable. You have to actually make a theme usable one way or the other by using the ’Change theme/page/style’ controls as described in the previous section.
 
 The [‘Assign sections’ link](#assign-sections-link) appears in context of the Themes panel, next to a theme’s name. The link is a convenience for when wanting to put a given theme into a development environment, or make it live. Once clicked, it puts you in the Sections panel with the appropriate theme in context, so you can easily assign the theme’s assets to sections.
 
@@ -509,7 +509,7 @@ When you are ready to apply a development theme to live status, you need to assi
 
 If you need to create a new section, do that first.
 
-### Add or edit live sections
+### Add a new live section
 
 If you need to create or edit website sections before making a development theme live, do this in the Sections panel, as always.
 
@@ -517,11 +517,11 @@ To create a new section, use the **New section** button to open the section edit
 
 ![Themes create new section](/img/themes-create-new-section.png)
 
-To edit an existing section, click a section’s name under the Name column of the sections table. The section editor will open with the existing section’s properties showing.
+To edit an existing section, click a section’s name under the Name column of the sections table.
 
 ![Themes edit existing section](/img/themes-edit-existing-section.png)
 
-**Attention!** In both scenarios above, whether a new or edited section, the theme assignment made in the sections editor will apply as the *live* theme assignment, even if you assign what is otherwise a development theme.
+In both scenarios above, whether a new or edited section, the section editor will open. The theme assignment made in the sections editor will apply as the *live* theme assignment, even if you assign what is otherwise a development theme.
 
 ![Themes section edit live theme](/img/themes-section-edit-live-theme.png)
 
