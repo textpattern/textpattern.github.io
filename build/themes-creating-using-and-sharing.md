@@ -535,31 +535,57 @@ Here is another example of using the ‘Developer preview’ option to better de
 
 Say we have a gardener’s website and the owner wants a different vegetable theme on each of the website’s six main vegetable sections, plus a general theme on the homepage and auxiliary pages using different page templates.
 
-We walk through the development using what has already been learned:
+This could be structured in any number of ways, but one example blueprint for this mapping, and certainly not the most concise, is…
 
-1. [Create any needed sections](#add-or-edit-live-sections).
-2. Created all the needed themes, either [from scratch](#create-from-scratch) or [by duplication](#create-from-duplication).
-3. [Assign theme assets to sections](#assign-sections) using the ‘Change theme/page/style’ controls according to your website’s blueprints.
-4. Develop templates and stylesheets for each theme to completion, ensuring [no assets are missing](#missing-assets-warning) and [themes looks good on the front end](#view-theme-presentation).
+Theme/page/style to sections mapping:
+: abc-garden/default/default to default
+: abc-garden/generic/default to about
+: abc-garden/generic/default to contact
+: abc-carrots/hothouse/veggies to carrots
+: abc-peppers/hothouse/veggies to peppers
+: abc-tomatoes/hothouse/veggies to tomatoes
+: abc-zucchini/hothouse/veggies to zucchini
+: abc-cabbage/hothouse/veggies to cabbage
+: abc-broccoli/hothouse/veggies to broccoli
+
+Remember that we use a developer prefix on theme names if ever expecting to share theme, which is what the example ‘abc-‘ is reflecting here. As for the section assignments in the above mapping, page assets reflect a single one-to-one pairing (homepage defaults) and two one-to-many pairings, and there two one-to-many pairings for styles.
+
+Now set up the structure and development using what has already been learned, but do it in the following order for the least jumping around in the back-end panels:
+
+First, [create or edit any needed sections](#add-or-edit-live-sections) and delete the ones you don’t need.
+
+Then determine what will be the original theme (i.e. abc-garden) and make sure all possible page and style assets across all needed themes are created for the original theme first, even if not needed later.
+
+You might also make the same consideration for any needed form assets that will be common across a given number of themes; but in this case, choose the more appropriate theme if different from the original (e.g. all the vegetable themes in this example will probably share common forms.)
+
+Then clone the original theme [by duplication](#create-from-duplication) for all other needed themes. Or at least start with the original theme having all pages and styles, then switch to duplicating a cloned theme if it has a different set of forms you need, explained above. Either way, this ensures you have all possible page and style assets (and possibly forms) in each theme right from the start, rather than having to go back later to each respective new theme and create them manually one-by-one. These assets to not have to be developed correctly yet, they only need to exist. They can even be empty. All you’re doing at this point is getting the development environment set up in the least laborious way possible.
+
+Then [assign theme assets to sections](#assign-sections) using the ‘Change theme/page/style’ controls according to the  blueprint above. This is where you will appreciate having cloned the original theme having all possible page and style assets. (Once you have the desired assets assigned to sections per theme, you can go back to a given theme’s assets any time later to delete the templates you don’t need.)
+ 
+Now develop templates, stylesheets, and forms for each theme to completion. You can directly access page and style templates via their names in the Sections panel; or indirectly access pages, styles, and forms in context of a theme by their linked numbers in the Themes panel. 
 
 At this point our development environment looks something like follows:
 
-![Themes multi-themes website](/img/themes-multi-themes-website.png)
+![Themes multi-themes website](/img/themes-multi-themes-development.png)
 
-And the assigned themes in development would also be indicated in the Themes panel with [the orange ‘In use’ pill](#assigned-sections-indication) by their names.
+Note that anywhere a development or underlying live theme uses an asset different from the underlying live asset, it will appear in that sections Page or Style columns accordingly.
 
-Deploying it all at once to live is now easy:
+If you looked in the Themes panel at this point, you would see that all the assigned development themes having [the orange ‘In use’ pill](#assigned-sections-indication) by their names. 
+
+Now, back in the Sections panel again, we can deploy the entire development setup — all the assets to sections assignments we made — in one easy go with the ‘Developer preview’ option:
 
 1. Select all checkboxes at once in the sections table
 2. Select the ‘Developer preview’ option from the selection menu
 3. Choose the ‘Deploy to live’ radio button
 4. Click the Go button and confirm when asked.
 
-![Themes multi-themes website live](/img/themes-multi-themes-website-live.png)
+![Themes deploy live controls](/img/themes-deploy-live-controls.png)
 
-All the development themes turn to live and no more orange ‘Development’ theme assignments remain, easy-peasy.
+All the development themes turn to live, assets too, and no more orange ‘Development’ remain visible, easy-peasy.
 
-If this were an actual project, all the orange ‘In use’ pills for these themes in the Themes panel table would turn to green pills, indicating their live status.
+![Themes multi-themes live](/img/themes-multi-themes-live.png)
+
+If this were an actual project, all the orange ‘In use’ pills in the Themes panel table would turn to green pills, indicating their new live status.
 
 ![Themes multiple themes in use](/img/themes-multiple-themes-in-use.png)
 
@@ -651,8 +677,6 @@ This second option is asking if you want to make your theme in the themes table 
 
 Either way, click the ‘Go’ button and confirm when asked if you are sure.
 
-[^update]: Note to help tip editors: The option should read ‘. . . on update?’ to be consistent with the initial selection action.
-
 ## Deleting themes
 
 Themes can be deleted from the themes table (database), and the associated version in the /themes directory (disk) as well, all in one go.
@@ -666,23 +690,3 @@ Click Go and confirm when asked.
 As a safety precaution, if theme packages on disk contain standard theme directories having non-standard subdirectories (e.g. styles/sass, or JavaScript files, whatever), they will not be deleted by Textpattern; rather, the theme package container will remain, along with the non-standard subdirectories and files inside the directory. This shell of a theme and its non-standard elements will need to be deleted manually from the server since the software does not recognize such elements.
 
 If you choose not to delete the theme from disk (i.e. unchecking the option box), the theme import control discussed in [Importing themes](#importing-themes) appears again at top of the themes table with the theme package still sitting on disk showing in the selection menu. You can then re-import the theme at any time, if necessary, or use the appearance of the theme in the import control as a reminder that the package in the /themes directory also needs to be deleted.
-
-<!-- these can be removed from /img folder
-![Themes switch dev theme to live on section](/img/themes-switch-dev-to-live-on-section.png)
-
-![Themes switch dev to live on section result](/img/themes-switch-dev-to-live-on-section-result.png)
-
-![Themes three different section assignments](/img/themes-three-different-section-assignments.png)
-
-![Themes three different live themes](/img/themes-three-different-live-themes.png)
-
-![Themes three different themes in use](/img/themes-three-different-themes-in-use.png)
-
-![Themes section assign default page](/img/themes-section-assign-default-page.png)
-
-![Themes section assign default page result](/img/themes-section-assign-default-page-result.png)
-
-![Themes section assign articles page](/img/themes-section-assign-articles-page.png)
-
-![Themes sections assign result](/img/themes-sections-assign-result.png)
--->
