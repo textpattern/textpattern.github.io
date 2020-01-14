@@ -587,7 +587,7 @@ All the development themes turn to live, assets too, and no more orange ‘Devel
 
 If this were an actual project, all the orange ‘In use’ pills in the Themes panel table would turn to green pills, indicating their new live status.
 
-![Themes multiple themes in use](/img/themes-multiple-themes-in-use.png)
+![Themes multiple green pills](/img/themes-multiple-green-pills.png)
 
 ## ‘Database’ themes versus ‘disk’ themes
 
