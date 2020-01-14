@@ -678,8 +678,6 @@ If you choose not to delete the theme from disk (i.e. unchecking the option box)
 
 ![Themes three different themes in use](/img/themes-three-different-themes-in-use.png)
 
-![Themes change set of controls](/img/themes-change-set-of-controls.png)
-
 ![Themes section assign default page](/img/themes-section-assign-default-page.png)
 
 ![Themes section assign default page result](/img/themes-section-assign-default-page-result.png)
