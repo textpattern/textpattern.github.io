@@ -494,9 +494,11 @@ As long as the [development themes preference](#development-themes-preference) i
 
 If the *development themes* preference is on, but you want to quickly see the live presentation of your site, you must either turn the preference off, or use your browser's private browsing (incognito) mode to simulate being logged out.
 
-## Deploy development themes to live
+## Deploy development to live
 
-Two options are available to you via the multi-selection controls in the Sections panel when ready to apply one or more development themes to live status. One is the ‘Change theme/page/style’ option already covered in previous sections, but this time you would make sure the ‘Live’ checkbox option was checked each time instead of ‘Development’. 
+Two options are available to you to apply one or more development themes to live status. You can use the ‘Change theme/page/style’ option already covered in previous sections, making sure to use the ‘Live’ checkbox option this time instead of the ‘Development’ checkbox. Or you can do it easier with the  ‘Developer preview’ option.
+
+### ‘Developer preview’ controls
 
 Much easier, however, especially when you have a greater number of sections, and regardless of how many different themes you want, or how many one-to-one assets associations are assigned, is to use the contextual ’Developer preview’ option to deploy every development theme to live all in one shot.
 
@@ -506,7 +508,7 @@ This option only appears in the selection menu when you have one or more themes 
 
 When using this option, it is best to ensure all sections have assigned development themes, and that each one is ready to deploy live; otherwise, this feature is perhaps overkill. If you are just working with one or two sections, the ‘Change theme/page/style’ option with the ‘Live’ checkbox would do just as well. It simply depends on how many development sections you have setup and ready to go. But options are available to you. Do it as you please.
 
-## Different themes on different sections
+### Different themes on different sections
 
 Here is another example of using the ‘Developer preview’ option to better demonstrate its power, albeit a rare situation.
 
@@ -568,9 +570,13 @@ If this were an actual project, all the orange ‘In use’ pills in the Themes 
 
 You have now learned everything there is to know about creating, developing, and deploying themes on your own website. We now turn attention to the functionality for sharing themes in the community.
 
-## ‘Database’ themes versus ‘disk’ themes
+## Sharing themes in the community
 
-In the remaining sections, the [exporting](#exporting-themes), [importing](#importing-themes), [updating](#updating-themes), and [deleting](#deleting-themes) processes are explained. Before getting there, a detail needs explained. This may be obviousness to some people. Others might appreciate it being made clear.
+In the remaining sections, the [exporting](#exporting-themes), [importing](#importing-themes), [updating](#updating-themes), and [deleting](#deleting-themes) processes are explained. 
+
+But first a clarification needs made about ‘database’ themes versus ‘disk’ themes. This may be obviousness to some people. Others might appreciate it being made clear.
+
+### ‘Database’ themes versus ‘disk’ themes
 
 Textpattern interface strings, pophelp, and this documentation in relation — and probably even developers themselves, and you, too, after reading this — will occasionally use terms that refer to themes as either ‘database’ or ‘disk’. These distinguishing terms reflect theme packages at specific locations in the aforementioned processes.
 
@@ -594,7 +600,7 @@ It all centres around the /themes directory located in your software’s root lo
 
 With that out of the way, the remaining sections will make more sense.
 
-## Exporting themes
+### Exporting themes
 
 You have learned how to create and manage themes at this point, so take it to the next logical step and export one for other people to use. Fame and fortune awaits!
 
@@ -624,7 +630,7 @@ Now you are almost famous, but not quite yet. Still one more thing to do if you 
 
 Where you store the theme file for others to access is up to you. But whatever the location, whether Themes website or your own, make sure the expected URL has been entered in the **Theme website** field of the theme’s metadata. Add that by clicking the name of the theme in the themes table to pull up the theme editor.
 
-## Importing themes
+### Importing themes
 
 Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database. The /themes directory to the rescue, again.
 
@@ -644,7 +650,7 @@ You can then use the import controls to select the theme and initially import it
 
 The theme is now in your themes table to use as desired. If the themes in the table match the themes in your directory, the import control will disappear from the Themes panel again.   *Poof!* 
 
-## Updating themes
+### Updating themes
 
 If you end up importing more than exporting, you will eventually come to the point where one or more of the themes you have imported need to be updated. This is the case when a theme designer (other than you) has released a newly improved version of a theme you may have already imported once. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
 
@@ -656,7 +662,7 @@ This second option is asking if you want to make your theme in the themes table 
 
 Either way, click the ‘Go’ button and confirm when asked if you are sure.
 
-## Deleting themes
+### Deleting themes
 
 Themes can be deleted from the themes table (database), and the associated version in the /themes directory (disk) as well, all in one go.
 
@@ -669,11 +675,3 @@ Click Go and confirm when asked.
 As a safety precaution, if theme packages on disk contain standard theme directories having non-standard subdirectories (e.g. styles/sass, or JavaScript files, whatever), they will not be deleted by Textpattern; rather, the theme package container will remain, along with the non-standard subdirectories and files inside the directory. This shell of a theme and its non-standard elements will need to be deleted manually from the server since the software does not recognize such elements.
 
 If you choose not to delete the theme from disk (i.e. unchecking the option box), the theme import control discussed in [Importing themes](#importing-themes) appears again at top of the themes table with the theme package still sitting on disk showing in the selection menu. You can then re-import the theme at any time, if necessary, or use the appearance of the theme in the import control as a reminder that the package in the /themes directory also needs to be deleted.
-
-<!- - images to remove
-
-![Themes switch to live status in sections](/img/themes-switch-to-live-status-in-sections.png)
-
-![Themes switch to live status in themes](/img/themes-switch-to-live-status-in-themes.png)
-
--->
