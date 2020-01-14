@@ -568,9 +568,9 @@ At this point our development environment looks something like follows:
 
 ![Themes multi-themes website](/img/themes-multi-themes-development.png)
 
-Note that any section record that is assigned an asset different from the underlying live asset, regardless of whether the section was assigned a development theme or not (e.g. the contact and about sections use the live theme but were assigned different pages), the assigned asset name will appear in Page or Style columns, respectively. When these assets correspond to a development theme, they will appear aligned with the development theme’s orange ’Development’ pill (e.g. all the vegetable sections).
+Note that any section record that is assigned an asset different from the underlying live asset, whether or not the section was assigned a development theme (e.g. the contact and about sections use the live theme but were assigned different pages), the assigned asset name will appear in the Page and/or Style columns, accordingly. When these assets correspond to a development theme, they will appear aligned with the development theme’s orange ’Development’ pill (e.g. all the vegetable sections).
 
-If you peeked into the Themes panel at this point, you would see that all themes assigned as development would have the [orange ‘In use’ pill](#assigned-sections-indication) by their names. 
+If you peeked into the Themes panel at this point, all of the development themes would have an [orange ‘In use’ pill](#assigned-sections-indication) by their names. 
 
 Now, back in the Sections panel again, we can deploy the entire development setup — all the assets to sections assignments we made — in one pass with the ‘Developer preview’ option:
 
