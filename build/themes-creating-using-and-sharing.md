@@ -195,175 +195,6 @@ Presumably you are reading this because you want to develop and preview new them
 
 See more about the active behaviour of this preference in the [Preview theme presentation](#preview-theme-presentation) section.
 
-## Creating themes
-
-When creating a new theme, it is not immediately live; it is in development mode. One or more themes are not actually live until you [make them live](#production-live-themes).  
-
-Multiple options are available for creating a new development theme via the Themes panel. You can:
-
-* Create a new theme from scratch directly via the **New theme** editor
-* Duplicate a theme via the multi-selection controls
-* Duplicate a theme via the **Edit theme** editor.
-
-The **New theme** editor and **Edit theme** editor are the same thing, but accessed differently. 
-
-Let’s look at each one under default conditions.
-
-### Create from scratch
-
-Creating a development theme from scratch means via the **New theme** editor. It is the most called-out way to get started by evidence of the prominent button bearing the same label right at top of the Themes panel.
-
-![Themes new button click](/img/themes-new-button-click.png)
-
-The **New theme** button opens the associated editor; a regular web form with six fields, the first of which is required:
-
-* Theme name (required) 
-* Theme title
-* Theme version
-* Theme description
-* Theme author
-* Theme website 
-
-The six fields you see correspond to four columns in the theme’s table on the main panel (Name, Title, Version, Author), and five of the metadata values in [the manifest.json file](#metadata).
-
-When creating a new theme, regardless of which way you do so, fill in as much of the data as possible.
-
-The theme’s name and title are not the same. If you registered an [author prefix](#author-prefix-and-registration), you should use that as the first part of the theme’s name (e.g. ‘abc-new-theme’). The title, on the other hand, is the proper, human-readable name and is ideally capital case with no hyphens (i.e. ‘Title Like This’). You should not use your prefix in the title, only for the name; so you could have this pairing, for example:
-
-* Theme name: abc-new-theme
-* Theme title: My New Theme
-{:.example}
-
-If you decide to skip the optional fields for whatever reason, Textpattern will automatically fill the title, version, and author fields with the following default values, where ‘username’ is the name you log into Textpattern with:
-
-* Theme title: Abc-new-theme
-* Theme version: 0.0.1
-* Theme author: username
-{:.example}
-
-These automatic defaults are better than nothing, but not ideal. The title, for example, does not need an [author prefix](#author-prefix-and-registration) (indeed it does not make any sense), nor should it be hyphenated, but that’s how Textpattern will use the name value if you do not add your own custom title.
-
-The remaining description and website fields will stay empty if not used. The website field is meant for a URL to where your theme can be downloaded from online; whether your own website, a version control site, or, ideally, in Textpattern’s upcoming community [Themes website](https://themes.textpattern.com) ([repository](https://github.com/textpattern/textpattern-themes-website)).
-
-Again, fill out the form fields as completely as possible without relying on Textpattern’s defaults. The more complete the form, the more informative the manifest file will be. Any fields you can’t fill immediately, such as the website URL, can always be filled in later when available.
-
-When the **New theme** metadata are saved, the resulting theme appears in the themes table.
-
-![Themes default in use](/img/themes-default-in-use.png)
-
-The remaining two approaches that arrive at this point make use of theme duplication functionality. If you’re happy knowing one method to create a new development theme instead of all three methods, jump to the [Key features of Themes panel](#key-features-of-themes-panel) section to continue on the current journey.   
-
-### Create from duplication
-
-Using an existing theme package as a guide for your efforts is a good way to get started with making themes. There’s no better package to use in this case than the default theme that comes with Textpattern, already shown and functioning in the Themes panel upon installing the software.
-
-This does not mean start working directly on the default theme, or you will be changing a live theme. Instead, duplicate the default theme first, thereby turning it into a new development theme to work on.
-
-While these instructions describe using the default theme (the only theme available in an out-of-the-box context of the software), you could duplicate any existing theme in the Themes panel; such as one that might have the kind of website structure you want to work closer with.
-
-The following two approaches to duplication are the same regardless of what theme you duplicate.
-
-#### Duplicate via selection controls
-
-One way to duplicate a theme is via the selection controls on the Themes panel. They work in combination with the check boxes in front of each theme record.
-
-Proceed by checking the box next to one or more themes (in this case the default theme is demonstrated), then select the ‘Duplicate’ option from the **With 1 selected…** menu just below the table. 
-
-![Themes duplicate via selection controls](/img/themes-duplicate-via-selection-controls.png)
-
-Click ‘OK’ when asked if you are sure.
-
-The duplicated theme is added to the themes table and the name appears with ‘_copy’ on it. You can now uncheck the default theme’s box in the table, then proceed with changing the name, title, and other metadata values on the duplicated theme. Do this by clicking the theme’s name in the Name column of the themes table to open the **Edit theme** editor (again, same as the **New theme** editor but in different context).
-
-![Themes open edit theme editor](/img/themes-open-edit-theme-editor.png)
-
-Change the metadata in the six fields as thoroughly as possible. See, again, [Create from scratch](#create-from-scratch) for explanation of the fields. If you don’t have a value to give for an optional field, clear the field’s value so it is entirely blank. You can always fill it in later. When finished with changing all the metadata on your duplicated theme, click the yellow Save button to save changes and close the form.
-
-![Themes save edit theme changes](/img/themes-save-edit-theme-changes.png)
-
-(The ‘Duplicate’ link you see in the image above is a hint to the next section. Do not click it now.)
-
-The duplicated theme will be added to the themes table in the main panel view. Once the default theme is duplicated and the metadata changed, the duplicated theme is, for all practical purposes, a *new* non-live theme that you may further development to have a unique appearance.
-
-#### Duplicate via theme editor
-
-The last way to create a theme by duplication is the most direct way (fewer clicks in the interface) yet least obvious.
-
-Begin by clicking the name of the default theme under the Name column of the table (or using any existing theme) to bring up the **Edit theme** editor.
-
-![Themes default item](/img/themes-default-item.png)
-
-The editor will show the theme’s metadata as expected. Change all the metadata as described in the previous section. When done, click the ‘Duplicate’ link at bottom of the editor, at right of the Cancel button. Do not click the Save button or you will overwrite the metadata for the source theme!
-
-![Themes click duplicate link](/img/themes-click-duplicate-link.png)
-
-There is no confirmation dialogue asking if you are sure when clicking the ‘Duplicate’ link. You are simply taken back to the default panel view where your new theme is added to the themes table.
-
-![Themes new duplication](/img/themes-new-duplication.png)
-
-You are now a master at creating development theme packages. Proceed with learning about useful contexts and cues.
-
-## Key features of Themes panel
-
-The Themes panel — as well as associated assets panels and the Sections panel — provide features and cues that make it easy to see what context a theme is in, or what context you are in when browsing about the relevant panels of the back end. These include:
-
-* Whether a theme is in use (live) or not
-* What assets are associated to which themes
-* What themes are assigned to sections
-* The contextual navigation between it all, including direct access to the templates that need editing.
-
-After starting a new development theme, as described in the previous sections, have a look at the themes table on the Themes panel and note the useful features detailed in the following four sections.
-
-### ‘Assign sections’ link
-
-Immediately after a theme’s name, under the Name column of the themes table, is a link, ‘Assign sections’. As the link text suggests, you would click this link if you wanted to assign a given theme’s assets to existing sections.
-
-![Themes assign sections link](/img/themes-assign-sections-link.png)
-
-In fact, you can assign a theme’s assets to existing sections for both live and development environments at the same time (or just one or the other), and the default context sets you up to do both at once. See the [Assigning sections](#assigning-sections) section for much more on this functionality.
-
-### ‘In use’ indicator
-
-As mentioned in the [Default theme](#default-theme) section, any themes that are live on the front end will be indicated by a green ‘In use’ pill. But, as also pointed out later in [Assigned sections indication](#assigned-sections-indication), any themes in development will appear with an orange ‘In use’ pill.
-
-While you are likely to use a single theme most of the time, thus only see a single ‘In use’ pill in the Themes panel, it is possible to [assign different themes on different sections](#different-themes-on-different-sections) to the front end, in which case each theme used will appear with an orange or green ‘In use’ pill indicator, accordingly.
-
-### Sections indication
-
-Another way to tell if a theme is live (in use) or not is to look under the Sections column of the themes table in the Themes panel and note if any sections for a given theme are yet assigned. Any theme with ‘0’ section associations is not in use (i.e. not live on the front-end).
-
-![Themes panel sections column](/img/themes-panel-sections-column.png)
-
-When a theme is not in use, you can safely work on its associated assets without concern for it impacting website visitors.
-
-### Asset links
-
-Under the Pages, Forms, and Styles columns of the themes table in the Themes panel are linked numbers indicating how many assets of each type are associated to a given theme.
-
-![Themes panel assets columns](/img/themes-panel-assets-columns.png)
-
-When you duplicate the default theme (as the next image depicts), or any other theme, the existing assets in the source theme are cloned as well, logically, thus why the duplicated themes have the same number.
-
-![Themes panel sections and assets](/img/themes-panel-sections-and-assets.png)
-
-These numbers can change between themes, of course, as you add or remove assets in a given theme.
-
-Click any of these numbered links and you are taken to the respective panels with the indicated number of assets in context. For example, clicking a ‘3’ under the Pages column for the duplicated theme lands you on the Pages panel with the associated three pages listed:
-
-![Themes pages panel assets](/img/themes-pages-panel-assets.png)
-
-You can tell which theme the panel assets are in context with by the appearance of the Theme selection menu above the assets list showing the title of the relevant theme. (The Theme selection menu does not appear in assets panels when the Themes panel only has one theme.)
-
-![Themes menu context](/img/themes-menu-context.png)
-
-The Theme selection menu can be used to change theme context from any assets panel.
-
-![Themes menu selection](/img/themes-menu-selection.png)
-
-You remain in that different theme context as you browse around the back end. Switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a given theme’s assets, as described above.
-
-You now have a good idea of contexts and cues as it concerns themes and their assets in relation to relevant panels. These contexts are useful whether working on themes in development or browsing themes that are live.
-
 ## With-selected controls
 
 The with-selected controls are a long-time and important functionality in Textpattern. Users of Textpattern are familiar with these; a combination of checkboxes on table records that work in relation to a selection menu where options can be selected and applied to checked items.
@@ -378,7 +209,7 @@ Themes panel selection options:
 
 Sections panel selection options:
 
-* [Change theme/page/style](#assigning-sections)
+* [Change theme/page/style](#change-theme-page-style-controls)
 * [Developer preview](#deploy-development-themes-to-live)
 
 ## Add a new website section
@@ -399,17 +230,103 @@ In both cases, the section editor will open. The theme assignment made in the se
 
 Be aware of that. If you do not want the assets of an intended development theme to be live, do not assign a development theme in this location. Use the ‘Change theme/page/style’ controls instead when working in development environments.
 
-## Assigning sections
+## Development set up
 
-The mere existence of a new theme in the Themes panel does not mean it is already in a development or live state. They are in your database, yes, but just sitting their innocuous and unusable. You have to actually make a theme usable one way or the other, first by assigning it as a development theme to work on, using the ‘Change theme/page/style’ selection controls described presently, then [deploying it as a live theme](#deploy-development-themes-to-live) thereafter.
+Development set up means walking through a series of actions to establish a working themes development environment. The birds-eye view of the development set up process is:
 
-The ‘Change theme/page/style’ controls are found in the selection menu on the Sections panel.
+1. Create or duplicate your starter theme package(s) and get the assets in order
+2. Assign one or more assets of the newly established theme package(s) to website sections
+3. Ensure everything is aligned as desired.
+
+It’s important to understand that the first step above does not mean develop your themes to completion; on the contrary, it simply means establishing the initial theme package(s) and their expected asset placeholders (pages, styles, forms). At this point the assets can be blank files, duplicated markup from the default theme, or something else entirely, it doesn’t matter.
+
+Once the above three steps are completed, you are ready to proceed with HTML and Textpattern tag development in pages and forms, and likewise with CSS in styles, but not before.   
+
+### Creating theme packages
+
+Multiple options are available for establishing new theme packages for development. You can:
+
+* Use the **New theme** button to create from scratch
+* Duplicate an existing theme via the ‘With selected’ menu’s ‘Duplicate’ option 
+* Duplicate a theme via the theme editor.
+
+Whatever option you choose, you want to be smart and think ahead. Think about your final front-end presentation ambitions and how many different themes or assets that will require to achieve. Then pick the path that saves you the least amount of work to establish the initial development environment.
+
+If you only ever need one theme, it probably doesn’t matter a lot which way to start. But if you expect to need multiple themes and a mix of assets across them for a wild website design, you might be better off duplicating an existing theme first. You would do this to get all of it’s existing assets in your package quickly. You could then add to those assets where anything you need is missing (or needing renamed). Then you could duplicate this newly augmented theme (having all page and style possibilities) as many times as necessary to get all the themes and all the assignment possibilities you need in your final development environment.
+
+Once the environment is established as you like, you can go back and delete the obsolete assets from each respective theme in your project leaving just the assets used in each case.
+
+It might be hard to understand now why this is helpful, but you will understand when first [assigning theme assets to sections](#assigning-theme-assets-to-sections). It can save you a lot of needless jumping around in the back end later, creating assets on the fly and getting distracted from the task at hand.
+
+Also see [Different themes on different sections](#different-themes-on-different-sections) for more context on this useful notion.   
+
+#### Create from scratch
+
+Creating a development theme from scratch is the most called-out way to get started, by evidence of the prominent **New theme** button at top of the Themes panel.
+
+![Themes new button click](/img/themes-new-button-click.png)
+
+But it’s arguably not the best way to start since you would then have to create all the assets one-by-one as well. For that reason, we’ll jump to establishing theme packages by duplication, but if you want to create one by scratch, by all means do so.
+
+#### Duplicate via selection controls
+
+Using an existing theme package as a guide for your efforts is a good way to get started with making new themes. There’s no better package to use in this case than the default theme that comes with Textpattern, already shown and functioning in the Themes panel upon installing the software.
+
+One way to duplicate a theme is via the [‘With selected controls’](#with-selected-controls) on the Themes panel. Proceed by checking the box next to one or more themes (in this case the default theme is demonstrated), then select the ‘Duplicate’ option. 
+
+![Themes duplicate via selection controls](/img/themes-duplicate-via-selection-controls.png)
+
+Click ‘OK’ when asked if you are sure.
+
+The duplicated theme is added to the themes table and the name appears with ‘_copy’ on it. You can now uncheck the default theme’s box in the table, then proceed with changing the name, title, and other metadata values on the duplicated theme. Do this by clicking the theme’s name in the Name column of the themes table to open the **Edit theme** editor.
+
+![Themes open edit theme editor](/img/themes-open-edit-theme-editor.png)
+
+Change the metadata in the six fields as thoroughly as possible. If you don’t have a value to give for an optional field, clear the field’s value so it is entirely blank. You can always fill it in later. When finished with changing all the metadata on your duplicated theme, click the yellow Save button to save changes and close the form.
+
+![Themes save edit theme changes](/img/themes-save-edit-theme-changes.png)
+
+(The ‘Duplicate’ link you see in the image above is a hint to the next section. Do not click it now.)
+
+The duplicated theme will be added to the themes table in the main panel view. Once the default theme is duplicated and the metadata changed, the duplicated theme is, for all practical purposes, a *new* theme that you will further development later.
+
+#### Duplicate via theme editor
+
+The other way to create a theme by duplication is the most direct yet least obvious way (fewer clicks in the interface).
+
+Begin by clicking the name of the default theme under the Name column of the table (or using any existing theme) to bring up the **Edit theme** editor.
+
+![Themes default item](/img/themes-default-item.png)
+
+The editor will show the theme’s metadata as expected. Change all the metadata as described in the previous section. When done, click the ‘Duplicate’ link at bottom of the editor, at right of the Cancel button. Do not click the Save button or you will overwrite the metadata for the source theme!
+
+![Themes click duplicate link](/img/themes-click-duplicate-link.png)
+
+There is no confirmation dialogue asking if you are sure when clicking the ‘Duplicate’ link. You are simply taken back to the default panel view where your new theme is added to the themes table.
+
+![Themes new duplication](/img/themes-new-duplication.png)
+
+### Assigning theme assets to sections
+
+The mere existence of a new theme in the Themes panel does not mean it is already in a development or live state. They are in your database, yes, but just sitting their innocuous and unusable. You have to actually make a theme package usable, one way or the other, by first assigning one of its assets to an existing section using the ‘Change theme/page/style’ selection controls. You can do this by going directly to the Sections panel, or in context of a given theme package via the ‘Assign sections’ link.
+
+#### ‘Assign sections’ link
+
+Immediately after a theme’s name in the themes table of the Themes panel, is a link, ‘Assign sections’.
+
+![Themes assign sections link](/img/themes-assign-sections-link.png)
+
+Click this link and you are whisked off to the Sections panel in context of the theme to assign one or more of it assets to one or more existing sections.
+
+#### ‘Change theme/page/style’ controls
+
+If you arrive to the Sections panel by way of the ‘Assign sections’ link, you’ll see the ‘Change theme/page/style’ controls are open under the table, and the theme you followed is selected by default.
 
 ![Themes change option in menu](/img/themes-change-option-in-menu.png)
 
-You can go to the Sections panel by any path to use the controls, but if you know what particular theme you want applied as a development theme, you can get directly in that context by following the [‘Assign sections’ link](#assign-sections-link) that appears next to the theme’s name in the Themes panel. But it ultimately doesn’t matter; you can access the controls by any path you want. 
+Arriving this way is not necessary, however, it just offers you a convenience to get the controls open and in context quickly. You could just as well arrive via the back-end’s main navigation, in which case you make a few more clicks to pull up and use the same controls. No big deal. 
 
-When the ’Change theme/page/style’ option is clicked, its associated controls are displayed for completion. The first of these associated controls are the ‘Development’ and ‘Live’ environment checkboxes.
+However you arrive, you will see that the ’Change theme/page/style’ option has a few associated boxes and menus. The first of these are the ‘Development’ and ‘Live’ environment checkboxes.
 
 ![Themes dev and live boxes](/img/themes-dev-and-live-boxes.png)
 
@@ -435,9 +352,9 @@ Note the image above is showing a Sections panel table with several irrelevant c
 
 As already mentioned, you do not want to use the ‘Live’ checkbox option at this point unless you know the theme’s assets are ready to appear live on the front end. We assume here they are not.
 
-You probably don’t want all section checkboxes checked either, as explained next.
+You probably do not want to check all sections either, as explained next.
 
-## Templates-to-Sections relationships 
+#### Templates-to-Sections relationships 
 
 If you go through with assigning a page and style with all section records checked, as will be the case if following the [‘Assign sections’ link](#assign-sections-link), every section will have the same page and style assignment. This might be fine for the style assignment, if you use a single stylesheet for your entire website, but it probably won’t be what you want for your page assignments, depending on how you have your page templates designed.
 
@@ -461,23 +378,89 @@ Stylesheets generally have more of a one-to-many assignment because people often
 
 It makes no difference how you match pages and styles with sections, whether one-to-one, one-to-many, or a combination of both, as the example structure above suggests. Just be aware that when arriving to the Sections panel via the [‘Assign sections’ link](#assign-sections-link), you’ll probably have to do a lot of unchecking and checking of section records as you run through using the ‘Change theme/page/style’ selection controls. Textpattern will not know how you have your templates and stylesheets designed, so if they are assigned wrong, your front end presentation will break.
 
-## Assigned sections indication
+## Status indicators
 
-Once a theme has been assigned as a *development* theme to a website section, the Theme column of the sections table will appear with two theme names in it. The theme name with an orange ‘Development’ pill next to it is the theme in development. The theme name with no pill indication is the one working live on that section in the front end of your website.
+We assume at this point that you have now established all your needed themes and assigned their assets to sections accordingly. You may not have it all right yet, but before proceeding with doing more, consider the important indicators in themes functionality that are available to you. Indicators inform you of a given theme’s status, or the overall composition of a development project. These indicators are quickly introduced here, but you’ll see them come up in the images of other sections in context of workflow descriptions.
 
-![Themes sections assign result](/img/themes-sections-assign-result.png)
+### Package assets indication
 
-Similar colour indication for development themes is provided on the Themes panel. Once a theme has been assigned as ‘Development’ using the ‘Change theme/page/style’ controls, the development theme name will appear with an orange ‘In use’ pill by it, while prevailing live themes (one or multiple) will appear with a green ‘In use’ pill. 
+Under the Pages, Forms, and Styles columns of the themes table in the Themes panel are linked numbers indicating how many assets of each type are associated to a given theme; in other words, the theme packages contents (metadata excluded).
+
+![Themes panel assets columns](/img/themes-panel-assets-columns.png)
+
+When you duplicate the default theme (as the next image depicts), or any other theme, the existing assets in the source theme are cloned as well, logically, thus why the duplicated themes have the same number.
+
+![Themes panel sections and assets](/img/themes-panel-sections-and-assets.png)
+
+These numbers can change between themes, of course, as you add or remove assets in a given theme.
+
+Click any of these numbered links and you are taken to the respective panels with the indicated number of assets in context. For example, clicking a ‘3’ under the Pages column for the duplicated theme lands you on the Pages panel with the associated three pages listed:
+
+![Themes pages panel assets](/img/themes-pages-panel-assets.png)
+
+You can tell which theme the panel assets are in context with by the appearance of the Theme selection menu above the assets list showing the title of the relevant theme. (The Theme selection menu does not appear in assets panels when the Themes panel only has one theme.)
+
+![Themes menu context](/img/themes-menu-context.png)
+
+The Theme selection menu can be used to change theme context from any assets panel.
+
+![Themes menu selection](/img/themes-menu-selection.png)
+
+You remain in that different theme context as you browse around the back end. Switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a different theme’s assets.
+
+### Associated sections indication
+
+In addition to the assets columns in the Themes panel is the Sections column, showing how many sections are associated to the theme.
+
+![Themes panel sections column](/img/themes-panel-sections-column.png)
+
+Any theme with ‘0’ section associations is not in use, whether in development or live.
+
+### ‘In use’ pill indication
+
+‘In use’ pill indicators appear on the Themes panel. They make it clear when a given theme is either live (green) or in development (orange).
 
 ![Themes panel in-use environments](/img/themes-panel-in-use-environments.png)
 
-When you [switch a development theme to live](#switch-development-theme-to-live), replacing the former live status theme, the theme names under the Theme column of the Sections panel reduce to the single live theme (since there are no *different* themes in development now).
+There will always be a least one theme functioning as the live theme. When the live theme equals the only theme in the Themes panel table, the green ‘In use’ pill is hidden, since showing it would be needlessly redundant.
 
-![Themes switch to live status in sections](/img/themes-switch-to-live-status-in-sections.png)
+At all other times, when there are two or more themes in the Themes panel, at least one of those themes will appear with the green pill.
 
-And the orange ‘In use’ pill in the Themes panel table goes away, replaced by the green pill on the new live theme.
+It’s possible to see multiple green and orange pills in the Themes panel at a given time, depending on how you design your website and what you are in the middle of developing.  
 
-![Themes switch to live status in themes](/img/themes-switch-to-live-status-in-themes.png)
+### ‘Development’ pill indication
+
+Orange ’Development’ pill indicators appear in the Sections panel next to a theme’s name after you assign the assets of a non-live theme to the section.
+
+![Themes sections assign result](/img/themes-sections-assign-result.png)
+
+As the image shows, the name of the newly assigned development theme appears above the name of the working live theme, separated by a dashed line. This means to suggest the working development environment on top of the live status.
+
+Also, there’s only one page and style asset name in each case. This indicates that the names of the development assets assigned to the section have the same names as the live theme’s assets on the same section. In these situations, the common name is shown once by itself to not overload the table cell unnecessarily.
+
+### Different asset names indication
+
+In contrast to assigning assets with common names, as just explained above, you could also assign assets having different names, whether for a new development theme or an existing live theme.
+
+![Themes different asset names indication](/img/themes-different-asset-names-indication.png)
+
+As with the appearance of different theme names, the differently assigned asset names also appear above the asset names working live on the front end, separated by dashed lines. If both a new development theme and a differently-named asset are assigned, they will appear aligned across columns by their positions above the dashed lines.
+
+A theme name with no ‘Development’ pill indication is the theme working live on that section. If a differently named asset in that theme package is assigned for the section, the newly assigned asset is not yet live; it’s in development status even though no ‘Development’ pill appears on it.
+
+### ‘Missing’ pill indication
+
+If you ever see an asset name flagged with a red ‘Missing’ pill, it is a warning telling you that the asset has been deleted, or is otherwise missing in the theme package.
+
+![Dev preview assets links](/img/themes-missing-assets-warning.png)
+
+If you tried to [view the presentation](#view-theme-presentation) of this section with the missing page, you would get the 404 error page instead. If you deployed a development theme to live status when an assigned asset was missing, your front-end presentation would break.
+
+There are options for dealing with a situation like this. The most direct and intuitive fix is to click the name of the missing asset. This puts you in direct context of a new template (whether page or style) with the missing asset’s name added. Simply save the template, even if empty, and the ‘Missing’ warning will go away. Don’t forget to fill in the template, though, because an empty one is little better than none at all.
+
+Alternatively, you could assign a different page template to the section. The alternate template must already exist, of course, so if not, use the solution described above. If an alternate does exist, assign it using the ‘Change theme/page/style’ controls.
+
+You can use the links under the Page and Style columns to directly access and work on the assigned template at the other end, then return to the Sections panel context to *view* how the presentation is shaping up.
 
 ## Development environment
 
@@ -493,27 +476,31 @@ Once a development theme is setup, and you follow its [‘Assign sections’ lin
 
 Site structure and themes assignment to sections should be clear to you by now, but we’ll walk through the actual assigning steps next to make that workflow clear. Missing assets, assets editing, and themes viewing are described thereafter.
 
-### ‘Missing’ assets warning
+## Assets development
 
-If you ever see an asset name flagged with a red ‘Missing’ pill, it is a warning telling you that the asset has been deleted, or is otherwise missing in the theme package.
+(forthcoming, very surface-level)
 
-![Dev preview assets links](/img/themes-missing-assets-warning.png)
+### Page templates
 
-If you tried to [view the presentation](#view-theme-presentation) of this section with the missing page, you would get the 404 error page instead. If you deployed a development theme to live status when an assigned asset was missing, your front-end presentation would break.
+(forthcoming, something light)
 
-There are options for dealing with a situation like this. The most direct and intuitive fix is to click the name of the missing asset. This puts you in direct context of a new template (whether page or style) with the missing asset’s name added. Simply save the template, even if empty, and the ‘Missing’ warning will go away. Don’t forget to fill in the template, though, because an empty one is little better than none at all.
+### Stylesheets
 
-Alternatively, you could assign a different page template to the section. The alternate template must already exist, of course, so if not, use the solution described above. If an alternate does exist, assign it using the ‘Change theme/page/style’ controls.
+(forthcoming, something light)
 
-You can use the links under the Page and Style columns to directly access and work on the assigned template at the other end, then return to the Sections panel context to *view* how the presentation is shaping up.
+### Form snippets
+
+(forthcoming, something light)
 
 ### View theme presentation
 
-Previewing theme presentation is a much simpler matter. Once you have the development environment for a theme setup as described above, click the ‘View’ link next to a given section’s name to view that theme’s presentation on the front end.
+Once you have the development environment set up, you can easily view your development progress on pages, styles, and forms by following the ‘View’ link next to a given section’s name.
 
 ![Themes preview presentation](/img/themes-preview-presentation.png)
 
-As long as the [development themes preference](#development-themes-preference) is set to ‘Yes’ (and a user has the appropriate rights, and has not opted out of this preference in their own settings), the presented view will always be the development theme view. This does not change even if you go back to the Themes panel and return to the Sections panel again via the ‘Assign sections’ link on the live theme. Nor can you see the live presentation by following the front end link in the administration side’s main navigation bar. 
+This will open that section’s front end view, but showing you the development assets, not the those that are live.
+
+As long as the [development themes preference](#development-themes-preference) is set to ‘Yes’ (and a user is logged in with the appropriate rights), the presented view will always be the development theme view, no matter how you access the front end from the administration side. 
 
 If the *development themes* preference is on, but you want to quickly see the live presentation of your site, you must either turn the preference off, or use your browser's private browsing (incognito) mode to simulate being logged out.
 
@@ -692,3 +679,11 @@ Click Go and confirm when asked.
 As a safety precaution, if theme packages on disk contain standard theme directories having non-standard subdirectories (e.g. styles/sass, or JavaScript files, whatever), they will not be deleted by Textpattern; rather, the theme package container will remain, along with the non-standard subdirectories and files inside the directory. This shell of a theme and its non-standard elements will need to be deleted manually from the server since the software does not recognize such elements.
 
 If you choose not to delete the theme from disk (i.e. unchecking the option box), the theme import control discussed in [Importing themes](#importing-themes) appears again at top of the themes table with the theme package still sitting on disk showing in the selection menu. You can then re-import the theme at any time, if necessary, or use the appearance of the theme in the import control as a reminder that the package in the /themes directory also needs to be deleted.
+
+<!- - images to remove
+
+![Themes switch to live status in sections](/img/themes-switch-to-live-status-in-sections.png)
+
+![Themes switch to live status in themes](/img/themes-switch-to-live-status-in-themes.png)
+
+-->
