@@ -230,12 +230,12 @@ In both cases, the section editor will open. The theme assignment made in the se
 
 Be aware of that. If you do not want the assets of an intended development theme to be live, do not assign a development theme in this location. Use the ‘Change theme/page/style’ controls instead when working in development environments.
 
-## Development set up
+## Development environment set up
 
 Development set up means walking through a series of actions to establish a working themes development environment. The birds-eye view of the development set up process is:
 
-1. Create or duplicate your starter theme package(s) and get the assets in order
-2. Assign one or more assets of the newly established theme package(s) to website sections
+1. Establish your starting theme package(s) with correct metadata, and get the asset files in place and properly named
+2. Assign one or more assets of the new theme package(s) to website sections
 3. Ensure everything is aligned as desired.
 
 It’s important to understand that the first step above does not mean develop your themes to completion; on the contrary, it simply means establishing the initial theme package(s) and their expected asset placeholders (pages, styles, forms). At this point the assets can be blank files, duplicated markup from the default theme, or something else entirely, it doesn’t matter.
@@ -320,13 +320,21 @@ Click this link and you are whisked off to the Sections panel in context of the 
 
 #### ‘Change theme/page/style’ controls
 
-If you arrive to the Sections panel by way of the ‘Assign sections’ link, you’ll see the ‘Change theme/page/style’ controls are open under the table, and the theme you followed is selected by default.
+Only one development theme can be applied to a given section at a time, but [any number of themes can be applied to different sections](#different-themes-on-different-sections) in one-to-one relationships.
+
+If you arrive to the Sections panel by way of the ‘Assign sections’ link, you’ll see all the sections checked and the ‘Change theme/page/style’ controls open under the table with the theme you followed selected by default.
+
+![Themes assign sections context](/img/themes-assign-sections-context.png)
+
+Note the image above is showing a Sections panel table with several irrelevant columns turned off for simplicity, just so you understand.
+
+![Themes sections panel columns off](/img/themes-sections-panel-columns-off.png)
+
+Arriving to the Sections panel via the ‘Assign sections’ link is not necessary; it just offers you a convenient way to get the controls open and in context quickly. You could just as well arrive to the Sections panel via the main navigation and pull up the menu option on your own.
 
 ![Themes change option in menu](/img/themes-change-option-in-menu.png)
 
-Arriving this way is not necessary, however, it just offers you a convenience to get the controls open and in context quickly. You could just as well arrive via the back-end’s main navigation, in which case you make a few more clicks to pull up and use the same controls. No big deal. 
-
-However you arrive, you will see that the ’Change theme/page/style’ option has a few associated boxes and menus. The first of these are the ‘Development’ and ‘Live’ environment checkboxes.
+The option reveals a few associated boxes and menus when clicked. The first of these are the ‘Development’ and ‘Live’ environment checkboxes.
 
 ![Themes dev and live boxes](/img/themes-dev-and-live-boxes.png)
 
@@ -336,19 +344,15 @@ The next control is the Theme selection menu to indicate which theme should be a
 
 ![Themes selection menu in sections](/img/themes-selection-menu-in-sections.png)
 
-If you arrived to the Sections panel via the aforementioned [‘Assign sections’ link](#assign-sections-link), the theme for the link you clicked will appear automatically in context of the themes selection menu.
+Again, if you arrived to the Sections panel via the aforementioned ‘Assign sections’ link, the theme for the link you clicked will appear automatically in context of the themes selection menu.
 
 The last menus are for selecting the page and style assets in context of the indicated theme, so you need to ensure the theme selection is correct first, regardless of how you arrived to the Sections panel. The page and style assets you select are what get assigned to the section(s) that are checked.
 
 ![Themes page and style menus in sections](/img/themes-page-and-style-menus-in-sections.png) 
 
-If you arrived to the Sections panel via the ‘Assign sections’ link, the sections table will show all sections checked by default, both ‘Development’ and ‘Live’ checkbox controls will be checked, and the themes selection control will display the theme you chose.
+Be careful about making assets assignments to sections if you arrived to the Sections panel via the ‘Assign sections’ link. The sections table will show all sections checked by default, both ‘Development’ and ‘Live’ checkbox controls will be checked, and the themes selection control will display the theme you chose. Here is that image again…
 
 ![Themes assign sections context](/img/themes-assign-sections-context.png)
-
-Note the image above is showing a Sections panel table with several irrelevant columns turned off for simplicity, just so you understand.
-
-![Themes sections panel columns off](/img/themes-sections-panel-columns-off.png)
 
 As already mentioned, you do not want to use the ‘Live’ checkbox option at this point unless you know the theme’s assets are ready to appear live on the front end. We assume here they are not.
 
@@ -378,11 +382,11 @@ Stylesheets generally have more of a one-to-many assignment because people often
 
 It makes no difference how you match pages and styles with sections, whether one-to-one, one-to-many, or a combination of both, as the example structure above suggests. Just be aware that when arriving to the Sections panel via the [‘Assign sections’ link](#assign-sections-link), you’ll probably have to do a lot of unchecking and checking of section records as you run through using the ‘Change theme/page/style’ selection controls. Textpattern will not know how you have your templates and stylesheets designed, so if they are assigned wrong, your front end presentation will break.
 
-## Status indicators
+### Status indicators
 
 We assume at this point that you have now established all your needed themes and assigned their assets to sections accordingly. You may not have it all right yet, but before proceeding with doing more, consider the important indicators in themes functionality that are available to you. Indicators inform you of a given theme’s status, or the overall composition of a development project. These indicators are quickly introduced here, but you’ll see them come up in the images of other sections in context of workflow descriptions.
 
-### Package assets indication
+#### Package assets indication
 
 Under the Pages, Forms, and Styles columns of the themes table in the Themes panel are linked numbers indicating how many assets of each type are associated to a given theme; in other words, the theme packages contents (metadata excluded).
 
@@ -408,7 +412,7 @@ The Theme selection menu can be used to change theme context from any assets pan
 
 You remain in that different theme context as you browse around the back end. Switch theme context again at any time from any assets panel by using the Theme menu again, or by returning to the Themes panel and clicking a number link for a different theme’s assets.
 
-### Associated sections indication
+#### Associated sections indication
 
 In addition to the assets columns in the Themes panel is the Sections column, showing how many sections are associated to the theme.
 
@@ -416,7 +420,7 @@ In addition to the assets columns in the Themes panel is the Sections column, sh
 
 Any theme with ‘0’ section associations is not in use, whether in development or live.
 
-### ‘In use’ pill indication
+#### ‘In use’ pill indication
 
 ‘In use’ pill indicators appear on the Themes panel. They make it clear when a given theme is either live (green) or in development (orange).
 
@@ -428,7 +432,7 @@ At all other times, when there are two or more themes in the Themes panel, at le
 
 It’s possible to see multiple green and orange pills in the Themes panel at a given time, depending on how you design your website and what you are in the middle of developing.  
 
-### ‘Development’ pill indication
+#### ‘Development’ pill indication
 
 Orange ’Development’ pill indicators appear in the Sections panel next to a theme’s name after you assign the assets of a non-live theme to the section.
 
@@ -438,7 +442,7 @@ As the image shows, the name of the newly assigned development theme appears abo
 
 Also, there’s only one page and style asset name in each case. This indicates that the names of the development assets assigned to the section have the same names as the live theme’s assets on the same section. In these situations, the common name is shown once by itself to not overload the table cell unnecessarily.
 
-### Different asset names indication
+#### Different asset names indication
 
 In contrast to assigning assets with common names, as just explained above, you could also assign assets having different names, whether for a new development theme or an existing live theme.
 
@@ -448,7 +452,7 @@ As with the appearance of different theme names, the differently assigned asset 
 
 A theme name with no ‘Development’ pill indication is the theme working live on that section. If a differently named asset in that theme package is assigned for the section, the newly assigned asset is not yet live; it’s in development status even though no ‘Development’ pill appears on it.
 
-### ‘Missing’ pill indication
+#### ‘Missing’ pill indication
 
 If you ever see an asset name flagged with a red ‘Missing’ pill, it is a warning telling you that the asset has been deleted, or is otherwise missing in the theme package.
 
@@ -462,21 +466,7 @@ Alternatively, you could assign a different page template to the section. The al
 
 You can use the links under the Page and Style columns to directly access and work on the assigned template at the other end, then return to the Sections panel context to *view* how the presentation is shaping up.
 
-## Development environment
-
-[Assigning ’Development’ themes](#assigning-sections), as described, establishes the initial development environment. Only one development theme can be applied to a given section at a time, but [any number of themes can be applied to different sections](#different-themes-on-different-sections) in one-to-one relationships.
-
-Once a development theme is setup, and you follow its [‘Assign sections’ link](#assigned-sections-link) again from the Themes panel, you are in a contextual view of that theme’s construction, where it is easy to assess theme composition at a glance and take various actions accordingly. The contextual view of your Sections panel will show:
-
-* The section composition of your website’s structure
-* The themes and their related assets assigned to sections
-* Whether any assigned assets are missing
-* Links directly to existing or missing assets in order to edit or add them, as necessary
-* Links to view the front-end presentation of assigned themes per section.
-
-Site structure and themes assignment to sections should be clear to you by now, but we’ll walk through the actual assigning steps next to make that workflow clear. Missing assets, assets editing, and themes viewing are described thereafter.
-
-## Assets development
+## Theme assets development
 
 (forthcoming, very surface-level)
 
