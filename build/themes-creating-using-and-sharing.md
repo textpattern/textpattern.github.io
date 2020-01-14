@@ -368,7 +368,7 @@ You now have a good idea of contexts and cues as it concerns themes and their as
 
 The with-selected controls are a long-time and important functionality in Textpattern. Users of Textpattern are familiar with these; a combination of checkboxes on table records that work in relation to a selection menu where options can be selected and applied to checked items.
 
-Several new selection options are available for Themes functionality between the Themes and Sections panels. Each is described in context of use in other sections of this document.
+Several new selection options are available for Themes functionality between the Themes and Sections panels. Each is described in other sections of this document in context of use.
 
 Themes panel selection options:
 
@@ -393,7 +393,7 @@ To edit an existing section, click a section’s name under the Name column of t
 
 ![Themes edit existing section](/img/themes-edit-existing-section.png)
 
-In both scenarios, the section editor will open. The theme assignment made in the sections editor will apply as the *live* theme assignment, even if you assign what is otherwise a development theme.
+In both cases, the section editor will open. The theme assignment made in the section editor will apply as the *live* theme assignment, even if you assign what is otherwise a development theme.
 
 ![Themes section edit live theme](/img/themes-section-edit-live-theme.png)
 
@@ -401,19 +401,19 @@ Be aware of that. If you do not want the assets of an intended development theme
 
 ## Assigning sections
 
-The mere existence of a new theme in the Themes panel does not mean it is already in a development or live state. They are in your database, yes, but just sitting their innocuous and unusable. You have to actually make a theme usable one way or the other, first by assigning it as a development theme to work on, using the ‘Change theme/page/style’ selection controls described below, then [deploying it as a live theme](#deploy-development-themes-to-live) thereafter.
+The mere existence of a new theme in the Themes panel does not mean it is already in a development or live state. They are in your database, yes, but just sitting their innocuous and unusable. You have to actually make a theme usable one way or the other, first by assigning it as a development theme to work on, using the ‘Change theme/page/style’ selection controls described presently, then [deploying it as a live theme](#deploy-development-themes-to-live) thereafter.
 
 The ‘Change theme/page/style’ controls are found in the selection menu on the Sections panel.
 
 ![Themes change option in menu](/img/themes-change-option-in-menu.png)
 
-You can go to the Sections panel by any path to use the controls, but if you know you want a particular theme to be a development theme, you can open the controls with that theme in context by following the [‘Assign sections’ link](#assign-sections-link) that appears in the Themes panel, next to a theme’s name. But it ultimately doesn’t matter; you can access the controls by any path you want. 
+You can go to the Sections panel by any path to use the controls, but if you know what particular theme you want applied as a development theme, you can get directly in that context by following the [‘Assign sections’ link](#assign-sections-link) that appears next to the theme’s name in the Themes panel. But it ultimately doesn’t matter; you can access the controls by any path you want. 
 
-When the ’Change theme/page/style’ option in the menu shown above is selected, its associated controls are displayed for completion. The first of these associated controls are the ‘Development’ and ‘Live’ environment check boxs.
+When the ’Change theme/page/style’ option is clicked, its associated controls are displayed for completion. The first of these associated controls are the ‘Development’ and ‘Live’ environment checkboxes.
 
 ![Themes dev and live boxes](/img/themes-dev-and-live-boxes.png)
 
-To assign a theme’s assets as development, check the ‘Development’ check box *only*. If you select both boxes, or only the ‘Live’ box, the theme’s asset(s) assignment will become live, which is premature at this point.  
+To assign a theme’s assets as development, check the ‘Development’ checkbox *only*. If you select both boxes, or only the ‘Live’ box, the theme’s asset(s) assignment will become live, which is premature at this point.  
 
 The next control is the Theme selection menu to indicate which theme should be applied. Note that it uses the theme’s title, not its name.
 
@@ -434,6 +434,8 @@ Note the image above is showing a Sections panel table with several irrelevant c
 ![Themes sections panel columns off](/img/themes-sections-panel-columns-off.png)
 
 As already mentioned, you do not want to use the ‘Live’ checkbox option at this point unless you know the theme’s assets are ready to appear live on the front end. We assume here they are not.
+
+You probably don’t want all section checkboxes checked either, as explained next.
 
 ## Templates-to-Sections relationships 
 
