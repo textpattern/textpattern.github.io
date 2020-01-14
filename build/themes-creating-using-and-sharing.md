@@ -496,21 +496,23 @@ If the *development themes* preference is on, but you want to quickly see the li
 
 ## Deploy development to live
 
-Two options are available to you to apply one or more development themes to live status. You can use the ‘Change theme/page/style’ option already covered in previous sections, making sure to use the ‘Live’ checkbox option this time instead of the ‘Development’ checkbox. Or you can do it easier with the  ‘Developer preview’ option.
+Two options are available to you to apply one or more development themes to live status. You can use the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls already covered, making sure to use the ‘Live’ checkbox option this time instead of the ‘Development’ checkbox. Or you can do it easier with the ‘Developer preview’ controls.
 
 ### ‘Developer preview’ controls
 
-Much easier, however, especially when you have a greater number of sections, and regardless of how many different themes you want, or how many one-to-one assets associations are assigned, is to use the contextual ’Developer preview’ option to deploy every development theme to live all in one shot.
-
-This option only appears in the selection menu when you have one or more themes assigned to sections as development themes.
+The ‘Developer preview’ option only appears in the selection menu when you already have one or more themes assigned to sections as development themes.
 
 ![Themes developer preview option](/img/themes-developer-preview-option.png)
 
-When using this option, it is best to ensure all sections have assigned development themes, and that each one is ready to deploy live; otherwise, this feature is perhaps overkill. If you are just working with one or two sections, the ‘Change theme/page/style’ option with the ‘Live’ checkbox would do just as well. It simply depends on how many development sections you have setup and ready to go. But options are available to you. Do it as you please.
+The assumption here is you do  have a development project set up, and everything is now ready to be made live. You can make it all live in a single use of this option control, which can save you a lot of clicks!
+
+It is best to ensure your whole development project is ready to go, otherwise this feature is perhaps overkill. If you are just working with one or two sections, the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls with the ‘Live’ checkbox would do just as well.
+
+Options are available to you. Do it as you please.
 
 ### Different themes on different sections
 
-Here is another example of using the ‘Developer preview’ option to better demonstrate its power, albeit a rare situation.
+Here is another hypothetical example, this time using the ‘Developer preview’ option to better demonstrate its click-saving power.
 
 Say we have a gardener’s website and the owner wants a different vegetable theme on each of the website’s six main vegetable sections, plus a general theme on the homepage and auxiliary pages using different page templates.
 
