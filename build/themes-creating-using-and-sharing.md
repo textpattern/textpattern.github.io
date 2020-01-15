@@ -8,7 +8,7 @@ description: A complete journey through creating, managing, using, exporting, im
 
 # Themes: Creating, using, and sharing
 
-This document is a complete journey through creating, managing, using, exporting, importing, and deleting Textpattern themes, all in context of default installation conditions, but kindly extrapolated to situations that aren’t. It just happens to be that default can go a long way. What you will not learn here is how to use Textpattern tags, HTML, or CSS; the fundamental composition of your theme templates.
+This document is a complete journey through creating and developing themes, deploying them on your website, and, if you are so inclined, sharing them with the Textpattern community. Furthermore, it’s all in context of default installation conditions, though easy to follow along with regardless. The only thing you will *not* learn here is how to use Textpattern tags, HTML, CSS, and the like; in other words, the fundamental composition of your theme assets.
 
 **On this page**:
 
@@ -738,15 +738,11 @@ If this were an actual project, all the orange ‘In use’ pills in the Themes 
 
 ![Themes multiple green pills](/img/themes-multiple-green-pills.png)
 
-You have now learned everything there is to know about creating, developing, and deploying themes on your own website. We now turn attention to the functionality for sharing themes in the community.
+You have now learned everything there is to know about creating, developing, and deploying themes on your own website. We now turn attention to the functionalities for sharing themes in the community.
 
-## Sharing themes in the community
+## ‘Database’ themes versus ‘disk’ themes
 
-In the remaining sections, the [exporting](#exporting-themes), [importing](#importing-themes), [updating](#updating-themes), and [deleting](#deleting-themes) processes are explained. 
-
-But first a clarification needs made about ‘database’ themes versus ‘disk’ themes. This may be obviousness to some people. Others might appreciate it being made clear.
-
-### ‘Database’ themes versus ‘disk’ themes
+In relation to the remaining topics of sharing and using community themes, a clarification needs made about the difference between ‘database’ themes and ‘disk’ themes. This may be obviousness to some people. Others might appreciate the explanation.
 
 Textpattern interface strings, pophelp, and this documentation in relation — and probably even developers themselves, and you, too, after reading this — will occasionally use terms that refer to themes as either ‘database’ or ‘disk’. These distinguishing terms reflect theme packages at specific locations in the aforementioned processes.
 
@@ -770,7 +766,7 @@ It all centres around the /themes directory located in your software’s root lo
 
 With that out of the way, the remaining sections will make more sense.
 
-### Exporting themes
+## Exporting themes
 
 You have learned how to create and manage themes at this point, so take it to the next logical step and export one for other people to use. Fame and fortune awaits!
 
@@ -800,6 +796,10 @@ Now you are almost famous, but not quite yet. Still one more thing to do if you 
 
 Where you store the theme file for others to access is up to you. But whatever the location, whether Themes website or your own, make sure the expected URL has been entered in the **Theme website** field of the theme’s metadata. Add that by clicking the name of the theme in the themes table to pull up the theme editor.
 
+## Community themes
+
+(forthcoming intro)
+
 ### Importing themes
 
 Unlike with exporting themes that you create, where the theme is already tabled in the Themes panel, importing requires first getting an externally sourced theme into the database. The /themes directory to the rescue, again.
@@ -818,9 +818,13 @@ You can then use the import controls to select the theme and initially import it
 
 ![Themes imported theme](/img/themes-imported-theme.png)
 
-The theme is now in your themes table to use as desired. If the themes in the table match the themes in your directory, the import control will disappear from the Themes panel again.   *Poof!* 
+The theme is now in your themes table to use as desired. If the themes in the table match the themes in your directory, the import control will disappear from the Themes panel again.   *Poof!*
 
-### Updating themes
+### Using imported themes
+
+(forthcoming)
+
+### Updating imported themes
 
 If you end up importing more than exporting, you will eventually come to the point where one or more of the themes you have imported need to be updated. This is the case when a theme designer (other than you) has released a newly improved version of a theme you may have already imported once. Not wanting to miss out on the cutting edge or potential security improvements, you dutifully update your version with the latest release.
 
@@ -832,7 +836,7 @@ This second option is asking if you want to make your theme in the themes table 
 
 Either way, click the ‘Go’ button and confirm when asked if you are sure.
 
-### Deleting themes
+## Deleting themes
 
 Themes can be deleted from the themes table (database), and the associated version in the /themes directory (disk) as well, all in one go.
 
