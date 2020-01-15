@@ -734,7 +734,7 @@ All the development themes turn to live, assets too, and no more orange ‘Devel
 
 ![Themes multi-themes live](/img/themes-multi-themes-live.png)
 
-If this were an actual project, all the orange ‘In use’ pills in the Themes panel table would turn to green pills, indicating their new live status.
+If this were an actual project, all the orange ‘In use’ pills in the Themes panel table would turn to green pills, indicating their new live status, and the former live theme would become derelict (neither live or in development).
 
 ![Themes multiple green pills](/img/themes-multiple-green-pills.png)
 
