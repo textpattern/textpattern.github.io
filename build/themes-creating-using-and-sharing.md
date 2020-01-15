@@ -533,14 +533,17 @@ This could be structured in any number of ways, but Table 1 shows one possible b
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
 <table>
 <caption>Table 1. Example mapping of multiple themes to different website sections.</caption>
-<thead><tr>
+<thead>
+<tr>
 <th scope="col"></th>
 <th scope="col">Section</th>
 <th scope="col">Theme<sup>&#x002a;</sup></th>
 <th scope="col">Page</th>
 <th scope="col">Style</th>
-</tr></thead>
-<tbody><tr>
+</tr>
+</thead>
+<tbody>
+<tr>
 <th scope="row">1</th>
 <td>default<sup>&#x2020;</sup></td>
 <td>abc-garden</td>
@@ -609,8 +612,9 @@ This could be structured in any number of ways, but Table 1 shows one possible b
 <td>abc-zucchini</td>
 <td>hothouse</td>
 <td>veggies</td>
-</tr></tbody>
-<tfoot><tr><td colspan=“5”><ol class="list--refmarks">
+</tr>
+</tbody>
+<tfoot><tr><td colspan="5"><ol class="list--refmarks">
 <li>Theme names all begin with a developer prefix; in this case, the prefix reserved for documentation examples, ‘abc’.</li>
 <li>The website’s homepage.</li>
 </ol></td></tr></tfoot>
