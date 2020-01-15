@@ -655,11 +655,11 @@ When all needed sections for the Gardner’s Delight were in place, our Sections
 
 ![Themes newly established sections](/img/themes-newly-established-sections.png)
 
-It’s easy to see the new sections from the defaults, as they don’t have any page or style assignments yet. You could just as well have used any other page or style available in the New section editor when creating the sections, because you’re going to re-assign the templates with development versions anyway, but the blank options make a nice way to get started since it’s easier to see what is needed (or what is lacking).
+It’s easy to see the new sections from the defaults, as they don’t have any page or style assignments yet. You could have just as easily used any other page or style available in the section editor when creating the sections, because you’re going to re-assign the templates with development versions anyway. But the blank options make a nice way to get started since it is easier to see what is needed (or what is lacking) when they appear in the sections table.
 
 #### Establish all needed theme packages
 
-This does not mean develop your themes to completion. All you want to do at this point is establish the correctly named packages and ensure the component assets, especially the pages and styles (forms can come later) are in place with correctly named placeholders.
+This does not mean develop your themes to completion. All you want to do at this point is establish the correctly named packages and ensure the component assets, especially the pages and styles (forms can come later), are in place with correctly named placeholders.
 
 Start by [duplicating](#duplicate-via-theme-editor) the default Textpattern theme. You don’t want to edit the default theme. We’ll clone its assets, leave it live, and forget about it.
 
@@ -675,7 +675,7 @@ When creating your pages and styles, you can either duplicate and rename the tem
 
 ![Themes create new blank pages](/img/themes-create-new-blank-pages.png)
 
-Again, theme asset files do not have to be developed to function properly yet, they only need to exist; placeholders with correct names. They can be empty, filled with lorem ipsum, or any manner of markup; it doesn’t matter. All you’re doing at this point is getting the development environment pieces in place to be assigned and aligned together in the least laborious way possible. Once it is all properly assembled and assigned, then you’ll go back and actually work with HTML, Textpattern tags, CSS, and whatever else you desire to fold into your website’s final behaviour and presentation. This work is still ahead.
+Again, theme asset files do not have to be developed to function properly yet, they only need to exist as placeholders with the correct names you want. They can be empty, filled with lorem ipsum, or any manner of markup; it doesn’t matter. All you’re doing at this point is getting the development environment pieces in place to be assigned and aligned together in the least laborious way possible. Once it is all properly assembled and assigned, then you will go back and actually work with HTML, Textpattern tags, CSS, and whatever else you desire to fold into your website’s final behaviour and presentation. This work is still ahead.
 
 **About forms:**
 
@@ -687,17 +687,17 @@ Now it is time to [assign theme assets to sections](#assigning-theme-assets-to-s
 
 This is where you will appreciate having duplicated the original and subsequent themes in such a way that each contains the necessary range of asset options, thereby avoiding having to abandon the assigning process now to go and create them one by one when you realize a given theme doesn’t have the asset you wanted.
 
-Tip! Really pay attention to *unchecking* the ‘Live’ check box when running through the commands, which in a project like this you will have to do a lot. If overlook it, and it’s easy to do, it sets the assignment to live status and gets confusing quick. If that happens, it’s easiest at this point to just delete the section row, recreate it as before and reassign assets, paying better attention.
+**Tip!** Really pay attention to *unchecking* the ‘Live’ check box when running through the ‘Change theme/page/style’ controls, which in a project like this you will have to run through a lot. If overlooked, and it’s easy to do, it sets the assignment to live status and gets confusing quick. If that happens, it’s easiest at this point to just delete the section row (since you are in the panel already), recreate the section as new, as done before, and reassign assets, paying better attention.
 
 Once the desired assets of each theme are aligned with sections correctly, we have the following development setup for our Gardener’s Delight website.
 
 ![Themes multi-themes development](/img/themes-multi-themes-development.png)
 
-Note that our assigned assets on the new sections are now sitting over empty slots in the grid. That’s expected in this case. If we had used the default assets in section creation instead of the blanks, we’d be seeing all the blank slots filled with ‘default’ instead, and it wouldn’t make a difference.
+Note that our assigned assets on the new sections are now sitting over empty slots in the grid (i.e. dashed lines with nothing underneath them). That’s expected in this case. The sections are new; not used in the default theme. If we had used the default assets in section creation instead of the blanks, we’d be seeing all the blank slots filled with ‘default’ instead, and it would not make a difference anyway if your working in a local development installation of the software.
 
-Also note that because we assigned abc-garden assets to the two existing sections having the same asset names, there’s no dashed line division to indicate differently named assets. But as you can see by the ‘Development’ pill in the Theme column, there is a different theme assigned on those sections.
+Also note that because we assigned abc-garden assets to the two existing sections having the same asset names, there’s no dashed line division to indicate differently named assets. But by evidence of the ‘Development’ pill in the Theme column, there is a different theme assigned on those sections.
 
-If you peeked into the Themes panel at this point, all of the themes would have an orange [‘In use’ pill](#assigned-sections-indication) by their names, except where the software’s live default theme was still functioning.
+If you peeked into the Themes panel at this point, all of the themes would have an orange [‘In use’ pill](#assigned-sections-indication) by their names, except where the software’s default Four Point Eight theme was still functioning.
 
 ![Themes multiple orange in use pills](/img/themes-multiple-orange-in-use-pills.png)
 
@@ -707,19 +707,19 @@ Once you have the desired assets assigned to sections per theme, thereby setting
 
 #### HTML, CSS, Textpattern tags, etc.
 
-Now that your development environment is setup, you have clear link associations to all the assigned/necessary asset files, to easily develop page templates, stylesheets, and form snippets to completion for each theme.
+Now that your development environment is setup, you have clear link associations to all the assigned and necessary asset files in each theme, to easily develop themes to functional completion.
 
-In the Themes panel, your package assets are accessible via their [numbered indicators](#package-assets-indication), under the Pages, Styles, and Forms columns, as per the current example project (pages and styles have been adjusted, but no attention was given to forms at this point). 
+In the Themes panel, your package assets are accessible via their [numbered indicators](#package-assets-indication), under the Pages, Styles, and Forms columns (page and style counts are adjusted here, but no attention was given to forms). 
 
 ![Themes assets numbers indication 2](/img/themes-assets-numbers-indication-2.png)
 
-Likewise, in the Sections panel, you have direct links to the [assigned page and style assets by their name](#different-asset-names-indication).
+Likewise, in the Sections panel, you have direct links to the individually [named pages and styles](#different-asset-names-indication). Click these links and the asset file opens in the editor ready to be modified.
 
 ![Themes asset names indication-2](/img/themes-asset-names-indication-2.png)
 
-If it is easier for you to empty out your asset files and start from blank screens (assuming you originally duplicated them instead of creating them new), do it. If you can refactor the markup already in duplicated assets, great. Whatever way you like or prefer, now is the time to actually *develop* your templates, CSS, and Textpattern tag logic. They are already created and aligned in your architecture, you just have to make them functional and pretty.
+If it is easier for you to empty out your asset files and start from blank screens (assuming you originally duplicated them instead of creating them new), do it. If you can refactor the markup already in duplicated assets, great. Whatever way you like or prefer, now is the time to actually *develop* your templates, CSS, and Textpattern tag logic. The files are now created and aligned in your architecture, you just have to make them functional and pretty.
 
-As your mad creativity unleashes, periodically visit the Sections panel and [follow the ‘View’ links](#view-theme-presentation) to see how the presentation is shaping up on the front end. In fact, as long as the [development themes preference](#development-themes-preference) is active, you’ll see the development environment on the front end no matter what front-side link you follow from the administration side (e.g. the homepage link via the back-end navigation bar).
+As your mad creativity unleashes, periodically visit the Sections panel and [follow the ‘View’ links](#view-theme-presentation) to see how the presentation is shaping up on the front end. In fact, as long as the [development themes preference](#development-themes-preference) is active, you’ll see the development environment on the front end no matter what front-side link you follow from the administration side (e.g. the homepage link via the back-end navigation bar). It’s voodoo.
 
 #### Time to deploy
 
