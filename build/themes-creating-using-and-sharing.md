@@ -390,11 +390,11 @@ We assume at this point that you have now established all your needed themes and
 
 Under the Pages, Forms, and Styles columns of the themes table in the Themes panel are linked numbers indicating how many assets of each type are associated to a given theme; in other words, the theme packages contents (metadata excluded).
 
-![Themes panel assets columns](/img/themes-panel-assets-columns.png)
+![Themes assets numbers indication](/img/themes-assets-numbers-indication.png)
 
 When you duplicate the default theme (as the next image depicts), or any other theme, the existing assets in the source theme are cloned as well, logically, thus why the duplicated themes have the same number.
 
-![Themes panel sections and assets](/img/themes-panel-sections-and-assets.png)
+![Themes sections and assets numbers](/img/themes-sections-and-assets-numbers.png)
 
 These numbers can change between themes, of course, as you add or remove assets in a given theme.
 
@@ -446,7 +446,7 @@ Also, there’s only one page and style asset name in each case. This indicates 
 
 In contrast to assigning assets with common names, as just explained above, you could also assign assets having different names, whether for a new development theme or an existing live theme.
 
-![Themes different asset names indication](/img/themes-different-asset-names-indication.png)
+![Themes different asset names indication](/img/themes-assets-names-indication.png)
 
 As with the appearance of different theme names, the differently assigned asset names also appear above the asset names working live on the front end, separated by dashed lines. If both a new development theme and a differently-named asset are assigned, they will appear aligned across columns by their positions above the dashed lines.
 
@@ -526,13 +526,13 @@ One caveat: The assumption here is we are working in a local development locatio
 
 #### Map the desired structure
 
-Say we have a gardener’s website and the owner wants a different vegetable theme on each of the website’s six main vegetable sections, plus a general theme on the homepage and auxiliary pages using different page templates.
+Say we have a gardener’s website, The Gardener’s Delight, and the owner wants a different vegetable theme on each of the website’s six main vegetable sections, plus a general theme on the homepage and auxiliary pages, and a clever 404 error page having its own dashing design.
 
 This could be structured in any number of ways, but Table 1 shows one possible blueprint for this mapping, which is neither too exaggerated nor ideally concise.
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table">
 <table>
-<caption>Table 1. Example mapping of multiple themes to different website sections.</caption>
+<caption>Table 1. Example mapping of the Gardener’s Delight website using multiple themes and assets to different website sections.</caption>
 <thead>
 <tr>
 <th scope="col"></th>
@@ -552,9 +552,9 @@ This could be structured in any number of ways, but Table 1 shows one possible b
 </tr>
 <tr>
 <th scope="row">2</th>
-<td>blog</td>
-<td>abc-garden</td>
 <td>articles</td>
+<td>abc-garden</td>
+<td>archive</td>
 <td>default</td>
 </tr>
 <tr>
@@ -573,41 +573,48 @@ This could be structured in any number of ways, but Table 1 shows one possible b
 </tr>
 <tr>
 <th scope="row">5</th>
+<td>error</td>
+<td>abc-error</td>
+<td>error_default</td>
+<td>404</td>
+</tr>
+<tr>
+<th scope="row">6</th>
 <td>broccoli</td>
 <td>abc-broccoli</td>
 <td>hothouse</td>
 <td>veggies</td>
 </tr>
 <tr>
-<th scope="row">6</th>
+<th scope="row">7</th>
 <td>cabbage</td>
 <td>abc-cabbage</td>
 <td>hothouse</td>
 <td>veggies</td>
 </tr>
 <tr>
-<th scope="row">7</th>
+<th scope="row">8</th>
 <td>carrots</td>
 <td>abc-carrots</td>
 <td>hothouse</td>
 <td>veggies</td>
 </tr>
 <tr>
-<th scope="row">8</th>
+<th scope="row">9</th>
 <td>peppers</td>
 <td>abc-peppers</td>
 <td>hothouse</td>
 <td>veggies</td>
 </tr>
 <tr>
-<th scope="row">9</th>
+<th scope="row">11</th>
 <td>tomatoes</td>
 <td>abc-tomatoes</td>
 <td>hothouse</td>
 <td>veggies</td>
 </tr>
 <tr>
-<th scope="row">10</th>
+<th scope="row">11</th>
 <td>zucchini</td>
 <td>abc-zucchini</td>
 <td>hothouse</td>
@@ -615,7 +622,7 @@ This could be structured in any number of ways, but Table 1 shows one possible b
 </tr>
 </tbody>
 <tfoot><tr><td colspan="5"><ol class="list--refmarks">
-<li>Theme names all begin with a developer prefix; in this case, the prefix reserved for documentation examples, ‘abc’.</li>
+<li>Theme names begin with a developer prefix; in this case, the prefix reserved for documentation examples, ‘abc’.</li>
 <li>The website’s homepage.</li>
 </ol></td></tr></tfoot>
 </table>
@@ -623,61 +630,90 @@ This could be structured in any number of ways, but Table 1 shows one possible b
 
 For clarity, here are the counts and types of theme asset assignments to sections reflected in Table 1:
 
-*  two one-to-one page pairings to sections; i.e. default (1), articles (1)
-*  two one-to-many page pairings to sections; i.e. generic (2), hothouse (6)
-*  two one-to-many style pairings to sections; i.e. default (4), veggies (6).
+*  three one-to-one page pairings to sections: default (1), archive (1), error_default (1)
+*  two one-to-many page pairings to sections: generic (2), hothouse (6)
+*  one one-to-one style pairing to sections: 404 (1)
+*  two one-to-many style pairings to sections: default (4), veggies (6).
 
 The map allows setting up a Textpattern website structure and theme development environment with purpose. With the map at hand, we can use what has already been learned in earlier sections of this document. And if we proceed in a particular order, a lot of jumping around in the back end can be eliminated. (Of course, learning by trial and error is always good too.)
 
-#### Site structure recap 
+#### Site structure recap
 
-First, [create or edit the sections](#add-or-edit-live-sections) you mapped as needing in your blueprints table, and delete the ones you don’t need. It doesn’t matter what page and style you assign to sections when creating them, you will change that later after all theme packages are established. Just use the default options for the time being since you have to assign *something*.
+Remember, the context of this document is a new installation of Textpattern, so that’s where we begin. 
+
+First thing to be done is [create the sections](#add-or-edit-live-sections) you mapped as needing in your blueprints table. Don’t create any new sections if one already exists with the name you need, and don’t edit or delete any existing sections using the sections editor. Existing sections apply to Textpattern’s default theme. We’ll either use what exists or create from scratch.
+
+In this case, we use the two existing default sections: ‘default’ and ‘articles’ (rows 1 and 2 in Table 1). Nothing to do there yet.
+
+Now the remaining nine sections need created. For each one, click the **New section** button. Add the name and title of the section, leave the default theme selected (four-point-eight), and select the blank option for the page and style so no page or style is selected.
+
+![Themes new section blank assets](/img/themes-new-section-blank-assets.png)
+
+Save the new section and repeat the process for the remaining sections needed. Don’t worry about the other form controls yet when creating the sections. You can edit those any time later after the development environment is initially setup.
+
+When all needed sections for the Gardner’s Delight were in place, our Sections panel looked like this:
+
+![Themes newly established sections](/img/themes-newly-established-sections.png)
+
+It’s easy to see the new sections from the defaults, as they don’t have any page or style assignments yet. You could just as well have used any other page or style available in the New section editor when creating the sections, because you’re going to re-assign the templates with development versions anyway, but the blank options make a nice way to get started since it’s easier to see what is needed (or what is lacking).
 
 #### Establish all needed theme packages
 
-This does not mean develop your themes to completion. All you want to do at this point is establish the correctly named packages and ensure the component assets (pages, styles, and forms) are in place with correctly named placeholders.
+This does not mean develop your themes to completion. All you want to do at this point is establish the correctly named packages and ensure the component assets, especially the pages and styles (forms can come later) are in place with correctly named placeholders.
 
-Do this by first determining what will be the ‘original’ theme. In Table 1 the original theme is ‘abc-garden’. The original theme will be used as the source [theme to duplicate](#duplicate-via-theme-editor), thereby creating the other needed themes. 
+Start by [duplicating](#duplicate-via-theme-editor) the default Textpattern theme. You don’t want to edit the default theme. We’ll clone its assets, leave it live, and forget about it.
 
-But here is the important key, as originally mentioned in [Creating theme packages](#creating-theme-packages)! Make sure all possible page and style assets you anticipate needing across all other needed themes are created for the original theme first, even if not needed in a given theme later.
+Now we have our first theme package, abc-garden. The [structure blueprints](#map-the-desired-structure) say we need seven more themes: one for each of the vegetable sections and one for the fancy error page. We’ll use the new abc-garden them as the new theme to duplicate.
 
-Since you’re using this original theme to quickly establish the other themes you need, you want these assets to travel in the duplication process; otherwise, you’ll have to manually create each asset per theme before you can assign the assets to sections in a development environment, a lot of needless hopping around. It’s not a big deal if you have to do that, but why bother with needless tedious repetition.
+But here is the important key, as originally mentioned in [Creating theme packages](#creating-theme-packages)! Make sure all possible page and style assets you anticipate needing across all other needed themes are created for the source theme first, even if not needed in a given theme later. Since you’re using this original theme to quickly establish the other themes you need, you want these assets to travel in the duplication process; otherwise, you’ll have to manually create each asset per theme before you can assign the assets to sections in a development environment, a lot of needless hopping around. It’s not a big deal if you forget and have to do that, but why get waylaid with tedious repetition.
 
-Again, this is why creating a [blueprint map of your structure](#map-the-desired-structure) is useful (Table 1). All your anticipated theme, page, and style needs and names are then clear. 
+Again, this is why creating a [blueprint map of your structure](#map-the-desired-structure) is useful (Table 1). All your anticipated theme, page, and style needs and names are then clear. In this case we need to create two more pages (‘generic’ and ‘hothouse’) and two more styles (‘veggies’ and ‘404’) in the abc-garden theme so they duplicate with the theme. We do this in the Pages and Styles panel in context of the abc-garden them. Here we start with the Pages panel and change context.
 
-You might also make the same consideration for any needed form assets that will be common across a given number of themes. Admittedly, this is more challenging since form snippets are often created on the fly in Textpattern website development. But the idea is the same; except, instead of dumping every possible form in the original theme (if not ultimately needed in that theme), duplicate the original theme with all the pages and styles first, then use the duplicated theme to adjust the forms so they better match what you need in another series of themes, and further duplicate that theme instead.
+![Themes switch context to garden theme](/img/themes-switch-context-to-garden-theme.png)
 
-For example, all the vegetable themes in Table 1 will probably share common forms a little different from the original abc-garden theme (but probably some similarities too). So the original garden theme, now loaded with all possible pages and styles, is duplicated four times to create records 2 through 5. The fifth record, the abc-broccoli theme, then represents a new kind of common theme across the remaining needed themes. It already has all the page and styles from being cloned from abc-garden, but now its forms can be adjusted (if we can think that far ahead about markup needs) to better reflect what the remaining vegetable themes require. Once adjusted, the abc-broccoli theme is duplicated to create those remaining themes, which are then all closer to having what final forms composition they require. It’s not a perfect science, but it can save you a lot of copying and pasting later. At least the refining will be a few steps ahead.  
+When creating your pages and styles, you can either duplicate and rename the templates, using panel controls for such, or just create new, blank files. It doesn’t matter.
 
-Again, important! Theme package assets do not have to be developed correctly yet, they only need to exist; placeholders with correct names. They can even be empty. All you’re doing at this point is getting the development environment pieces set up and ready to be assigned in the least laborious way possible. Once it is all properly assembled and assigned, then you’ll go back and actually work with HTML, Textpattern tags, CSS, and whatever else you desire to fold into your website’s final behaviour and presentation.
+Again, theme package asset files do not have to be developed to function properly yet, they only need to exist; placeholders with correct names. They can be empty or filled with lorem ipsum; it doesn’t matter. All you’re doing at this point is getting the development environment pieces in place to be assigned and aligned together in the least laborious way possible. Once it is all properly assembled and assigned, then you’ll go back and actually work with HTML, Textpattern tags, CSS, and whatever else you desire to fold into your website’s final behaviour and presentation.
+
+**About forms:**
+
+Yes, forms will need developed too, but it’s hard, admittedly, to anticipate what forms you will need this early on. For purposes here we let the original default forms travel in the themes duplication process. As you become more experienced with Textpattern you might be able to add forms to your blueprint mapping too, but even the veterans will create forms on the fly, so don’t worry about it. Just consider forms part of your [actual development process](#html-css-textpattern-tags-etc).
 
 #### Assemble the development environment
 
-Now [assign theme assets to sections](#assigning-theme-assets-to-sections) using the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls, and according to your [blueprint mapping](#map-the-desired-structure) (Table 1). This is where you will appreciate having duplicated the original theme containing all possible page and style assets.
+Now it is time to [assign theme assets to sections](#assigning-theme-assets-to-sections) using the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls, and according to [the structural blueprints](#map-the-desired-structure), again (Table 1).
 
-Once everything is aligned, we have the following development setup for our garden website.
+This is where you will appreciate having duplicated the original and subsequent themes in such a way that each contains the necessary range of asset options, thereby avoiding having to abandon the assigning process now to go and create them one by one when you realize a given theme doesn’t have the asset you wanted.
 
-![Themes multi-themes website](/img/themes-multi-themes-development.png)
+Once the desired assets of each theme are aligned with sections correctly, we have the following development setup for our garden website.
 
-Note that any section record that is assigned an asset different from the underlying live asset, whether or not the section was assigned a development theme (e.g. the contact and about sections use the live theme but were assigned different pages), the assigned asset name will appear in the Page and/or Style columns, accordingly. When these assets correspond to a development theme, they will appear aligned with the development theme’s orange ’Development’ pill (e.g. all the vegetable sections).
+![Themes multi-themes development](/img/themes-multi-themes-development.png)
 
-If you peeked into the Themes panel at this point, all of the development themes would have an [orange ‘In use’ pill](#assigned-sections-indication) by their names.
+Note that our assigned assets on the new sections are now sitting over empty slots in the grid. That’s expected in this case. If we had used the default assets in section creation instead of the blanks, we’d be seeing all the blank slots filled with ‘default’ instead, and it wouldn’t make a difference.
 
-Once you have the desired assets assigned to sections per theme, thereby setting up your functional development environment, go back to a given theme’s assets and delete the pages, styles, and forms you don’t need. Keep things tight and tidy.
+Also not that because we assigned abc-garden assets to the two existing sections having the same asset names, there’s no dashed line division to indicate differently named assets. But as you can see by the ‘Development’ pill in the Theme column, there is a different theme assigned on those sections.
+
+If you peeked into the Themes panel at this point, all of the themes would have an orange [‘In use’ pill](#assigned-sections-indication) by their names, except where the software’s live default theme was still functioning.
+
+![Themes multiple orange in use pills](/img/themes-multiple-orange-in-use-pills.png)
+
+Once you have the desired assets assigned to sections per theme, thereby setting up your functional development environment, go back to a given theme’s assets, particularly the pages and styles at this point, and delete the non-assigned items to keep things tight and tidy. For pages and styles this means clicking the red check icon next to the obsolete templates.
+
+![Themes delete obsolete assets](/img/themes-delete-obsolete-assets.png) 
 
 #### HTML, CSS, Textpattern tags, etc.
 
 Now that your development environment is setup, you have clear link associations to all the assigned/necessary asset files, to easily develop page templates, stylesheets, and form snippets to completion for each theme.
 
-In the Themes panel, your [package assets are accessible via their numbered indicators](#package-assets-indication) under the Pages, Styles, and Forms columns.
+In the Themes panel, your package assets are accessible via their [numbered indicators](#package-assets-indication), under the Pages, Styles, and Forms columns, as per the current example project (pages and styles have been adjusted, but no attention was given to forms at this point). 
 
-![Themes panel assets columns](/img/themes-panel-assets-columns.png)
+![Themes assets numbers indication 2](/img/themes-assets-numbers-indication-2.png)
 
 Likewise, in the Sections panel, you have direct links to the [assigned page and style assets by their name](#different-asset-names-indication).
 
-![Themes different asset names indication](/img/themes-different-asset-names-indication.png)
+![Themes asset names indication-2](/img/themes-asset-names-indication-2.png)
 
-If it is easier for you to empty out your asset files and start from blank screens, do it. If you can refactor the markup already in duplicated assets, great. Whatever way you like or prefer, now is the time to actually *develop* your assets. They are already created and aligned in your architecture, you just have to make them functional and pretty.
+If it is easier for you to empty out your asset files and start from blank screens (assuming you originally duplicated them instead of creating them new), do it. If you can refactor the markup already in duplicated assets, great. Whatever way you like or prefer, now is the time to actually *develop* your templates, CSS, and Textpattern tag logic. They are already created and aligned in your architecture, you just have to make them functional and pretty.
 
 As your mad creativity unleashes, periodically visit the Sections panel and [follow the ‘View’ links](#view-theme-presentation) to see how the presentation is shaping up on the front end. In fact, as long as the [development themes preference](#development-themes-preference) is active, you’ll see the development environment on the front end no matter what front-side link you follow from the administration side (e.g. the homepage link via the back-end navigation bar).
 
