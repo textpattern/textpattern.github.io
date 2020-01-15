@@ -667,13 +667,15 @@ Now we have our first theme package, abc-garden. The [structure blueprints](#map
 
 But here is the important key, as originally mentioned in [Creating theme packages](#creating-theme-packages)! Make sure all possible page and style assets you anticipate needing across all other needed themes are created for the source theme first, even if not needed in a given theme later. Since you’re using this original theme to quickly establish the other themes you need, you want these assets to travel in the duplication process; otherwise, you’ll have to manually create each asset per theme before you can assign the assets to sections in a development environment, a lot of needless hopping around. It’s not a big deal if you forget and have to do that, but why get waylaid with tedious repetition.
 
-Again, this is why creating a [blueprint map of your structure](#map-the-desired-structure) is useful (Table 1). All your anticipated theme, page, and style needs and names are then clear. In this case we need to create two more pages (‘generic’ and ‘hothouse’) and two more styles (‘veggies’ and ‘404’) in the abc-garden theme so they duplicate with the theme. We do this in the Pages and Styles panel in context of the abc-garden them. Here we start with the Pages panel and change context.
+This is why creating a [blueprint map of your structure](#map-the-desired-structure) is useful (Table 1). All your anticipated theme, page, and style needs and names are then clear. In this case we need to create two more pages (‘generic’ and ‘hothouse’) and two more styles (‘veggies’ and ‘404’) in the abc-garden theme so they duplicate with the theme. We do this in the Pages and Styles panel in context of the abc-garden theme. Here we start with the Pages panel and change context.
 
 ![Themes switch context to garden theme](/img/themes-switch-context-to-garden-theme.png)
 
-When creating your pages and styles, you can either duplicate and rename the templates, using panel controls for such, or just create new, blank files. It doesn’t matter.
+When creating your pages and styles, you can either duplicate and rename the templates, using panel controls for such, or just create new, blank files, as done here. It doesn’t matter.
 
-Again, theme package asset files do not have to be developed to function properly yet, they only need to exist; placeholders with correct names. They can be empty or filled with lorem ipsum; it doesn’t matter. All you’re doing at this point is getting the development environment pieces in place to be assigned and aligned together in the least laborious way possible. Once it is all properly assembled and assigned, then you’ll go back and actually work with HTML, Textpattern tags, CSS, and whatever else you desire to fold into your website’s final behaviour and presentation.
+![Themes create new blank pages](/img/themes-create-new-blank-pages.png)
+
+Again, theme asset files do not have to be developed to function properly yet, they only need to exist; placeholders with correct names. They can be empty, filled with lorem ipsum, or any manner of markup; it doesn’t matter. All you’re doing at this point is getting the development environment pieces in place to be assigned and aligned together in the least laborious way possible. Once it is all properly assembled and assigned, then you’ll go back and actually work with HTML, Textpattern tags, CSS, and whatever else you desire to fold into your website’s final behaviour and presentation. This work is still ahead.
 
 **About forms:**
 
@@ -685,13 +687,15 @@ Now it is time to [assign theme assets to sections](#assigning-theme-assets-to-s
 
 This is where you will appreciate having duplicated the original and subsequent themes in such a way that each contains the necessary range of asset options, thereby avoiding having to abandon the assigning process now to go and create them one by one when you realize a given theme doesn’t have the asset you wanted.
 
-Once the desired assets of each theme are aligned with sections correctly, we have the following development setup for our garden website.
+Tip! Really pay attention to *unchecking* the ‘Live’ check box when running through the commands, which in a project like this you will have to do a lot. If overlook it, and it’s easy to do, it sets the assignment to live status and gets confusing quick. If that happens, it’s easiest at this point to just delete the section row, recreate it as before and reassign assets, paying better attention.
+
+Once the desired assets of each theme are aligned with sections correctly, we have the following development setup for our Gardener’s Delight website.
 
 ![Themes multi-themes development](/img/themes-multi-themes-development.png)
 
 Note that our assigned assets on the new sections are now sitting over empty slots in the grid. That’s expected in this case. If we had used the default assets in section creation instead of the blanks, we’d be seeing all the blank slots filled with ‘default’ instead, and it wouldn’t make a difference.
 
-Also not that because we assigned abc-garden assets to the two existing sections having the same asset names, there’s no dashed line division to indicate differently named assets. But as you can see by the ‘Development’ pill in the Theme column, there is a different theme assigned on those sections.
+Also note that because we assigned abc-garden assets to the two existing sections having the same asset names, there’s no dashed line division to indicate differently named assets. But as you can see by the ‘Development’ pill in the Theme column, there is a different theme assigned on those sections.
 
 If you peeked into the Themes panel at this point, all of the themes would have an orange [‘In use’ pill](#assigned-sections-indication) by their names, except where the software’s live default theme was still functioning.
 
