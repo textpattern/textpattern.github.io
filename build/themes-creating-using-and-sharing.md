@@ -508,7 +508,7 @@ The assumption for this behaviour is you *do* have a development project set up,
 
 ![Themes deploy development to live](/img/themes-deploy-development-to-live.png)
 
-And that’s the main value of this menu option: deploying all at once. Unlike the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls, where you work with one theme per section at a time (barring the rare situation you use a single theme, page, and style for your entire website), the ‘Developer preview’ option, in combination with its associated ‘Deploy to live’ radio button (always checked by default), will bulk change your entire development setup to live.
+And that’s the main value of this menu option: deploying all at once. Unlike the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls, where you work with one theme per section at a time (barring the rare situation you use a single theme, page, and style for your entire website), the ‘Developer preview’ option, in combination with its associated ‘Deploy to live’ radio button (always checked by default), will convert development to live all at once.
 
 The other radio button, ‘Reset to live’, offers you a way to undo, in bulk, all of your development theme assignments across sections; basically erasing your entire development environment, converting the Sections panel back to its original live theme state.
 
@@ -541,46 +541,55 @@ This could be structured in any number of ways, but Table 1 shows one possible b
 <td>default<sup>&#x002a;</sup></td>
 <td>default</td>
 </tr>
+<tr>
 <th scope="row">blog</th>
 <td>abc-garden</td>
 <td>articles</td>
 <td>default</td>
 </tr>
+<tr>
 <th scope="row">about</th>
 <td>abc-garden</td>
 <td>generic</td>
 <td>default</td>
 </tr>
+<tr>
 <th scope="row">contact</th>
 <td>abc-garden</td>
 <td>generic</td>
 <td>default</td>
 </tr>
+<tr>
 <th scope="row">broccoli</th>
 <td>abc-broccoli</td>
 <td>hothouse</td>
 <td>veggies</td>
 </tr>
+<tr>
 <th scope="row">cabbage</th>
 <td>abc-cabbage</td>
 <td>hothouse</td>
 <td>veggies</td>
 </tr>
+<tr>
 <th scope="row">carrots</th>
 <td>abc-carrots</td>
 <td>hothouse</td>
 <td>veggies</td>
 </tr>
+<tr>
 <th scope="row">peppers</th>
 <td>abc-peppers</td>
 <td>hothouse</td>
 <td>veggies</td>
 </tr>
+<tr>
 <th scope="row">tomatoes</th>
 <td>abc-tomatoes</td>
 <td>hothouse</td>
 <td>veggies</td>
 </tr>
+<tr>
 <th scope="row">zucchini</th>
 <td>abc-zucchini</td>
 <td>hothouse</td>
