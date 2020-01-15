@@ -504,11 +504,19 @@ The ‘Developer preview’ option only appears in the selection menu when you a
 
 ![Themes developer preview option](/img/themes-developer-preview-option.png)
 
-The assumption here is you do  have a development project set up, and everything is now ready to be made live. You can make it all live in a single use of this option control, which can save you a lot of clicks!
+The assumption for this behaviour is you *do* have a development project set up, with all sections aligned with new asset assignments, and everything is ready to be deployed live.
 
-It is best to ensure your whole development project is ready to go, otherwise this feature is perhaps overkill. If you are just working with one or two sections, the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls with the ‘Live’ checkbox would do just as well.
+![Themes deploy development to live](/img/themes-deploy-development-to-live.png)
 
-Options are available to you. Do it as you please.
+And that’s the main value of this menu option: deploying all at once. Unlike the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls, where you work with one theme per section at a time (barring the rare situation you use a single theme, page, and style for your entire website), the ‘Developer preview’ option, in combination with its associated ‘Deploy to live’ radio button (always checked by default), will bulk change your entire development setup to live.
+
+The other radio button, ‘Reset to live’, offers you a way to undo, in bulk, all of your development theme assignments across sections; basically erasing your entire development environment, converting the Sections panel back to its original live theme state.
+
+![Themes reset to live](/img/themes-reset-to-live.png)
+
+This does not delete themes or undo any development on theme assets, it simply clears the development assignments in the Sections panel, putting it back to its default, live condition. 
+
+It is best to ensure your whole development project *is* ready to go, otherwise the ‘Developer preview’ controls are, perhaps, overkill. If you are just working with one or two sections, the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls with the ‘Live’ checkbox option would do just as well. Options are available to you. Do it as you please.
 
 ### Different themes on different sections
 
@@ -516,10 +524,80 @@ Here is another hypothetical example, this time using the ‘Developer preview�
 
 Say we have a gardener’s website and the owner wants a different vegetable theme on each of the website’s six main vegetable sections, plus a general theme on the homepage and auxiliary pages using different page templates.
 
-This could be structured in any number of ways, but one example blueprint for this mapping, and certainly not the most concise, is…
+This could be structured in any number of ways, but Table 1 shows one possible blueprint for this mapping, and certainly not the most concise.
+
+<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<table>
+<caption>Table 1. Example mapping of multiple themes to different website sections.</caption>
+<thead><tr>
+<th scope="col">Section</th>
+<th scope="col">Theme</th>
+<th scope="col">Page</th>
+<th scope="col">Style</th>
+</tr></thead>
+<tbody><tr>
+<th scope="row">default</th>
+<td>abc-garden</td>
+<td>default<sup>&#x002a;</sup></td>
+<td>default</td>
+</tr>
+<th scope="row">blog</th>
+<td>abc-garden</td>
+<td>articles</td>
+<td>default</td>
+</tr>
+<th scope="row">about</th>
+<td>abc-garden</td>
+<td>generic</td>
+<td>default</td>
+</tr>
+<th scope="row">contact</th>
+<td>abc-garden</td>
+<td>generic</td>
+<td>default</td>
+</tr>
+<th scope="row">broccoli</th>
+<td>abc-broccoli</td>
+<td>hothouse</td>
+<td>veggies</td>
+</tr>
+<th scope="row">cabbage</th>
+<td>abc-cabbage</td>
+<td>hothouse</td>
+<td>veggies</td>
+</tr>
+<th scope="row">carrots</th>
+<td>abc-carrots</td>
+<td>hothouse</td>
+<td>veggies</td>
+</tr>
+<th scope="row">peppers</th>
+<td>abc-peppers</td>
+<td>hothouse</td>
+<td>veggies</td>
+</tr>
+<th scope="row">tomatoes</th>
+<td>abc-tomatoes</td>
+<td>hothouse</td>
+<td>veggies</td>
+</tr>
+<th scope="row">zucchini</th>
+<td>abc-zucchini</td>
+<td>hothouse</td>
+<td>veggies</td>
+</tr></tbody>
+<tfoot><tr><td colspan="3"><ol class="list--refmarks">
+<li>The website’s homepage.</li>
+<li>Remove the list if not needed</li>
+<li>And remove the <code>sup</code> marks from table cells</li>
+</ol></td></tr></tfoot>
+</table>
+</div>
+
 
 Theme/page/style to sections mapping:
 : abc-garden/default/default to default
+: abc-garden/articles/default to blog
 : abc-garden/generic/default to about
 : abc-garden/generic/default to contact
 : abc-carrots/hothouse/veggies to carrots
