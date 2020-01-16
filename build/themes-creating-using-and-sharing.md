@@ -520,9 +520,9 @@ It is best to ensure your whole development project *is* ready to go, otherwise 
 
 ### Different themes on different sections
 
-Here is another hypothetical example using the ‘Developer preview’ option to better demonstrate its click-saving power. We’ll walk through going from a new installation of the software to creating a semi-complex theme development environment to deploying the fancy new presentation live.
+Here is another hypothetical example using the ‘Developer preview’ option to better demonstrate its click-saving power. We’ll walk through going from a new installation of the software, to creating a semi-complex theme development environment, to deploying the fancy new presentation live.
 
-One caveat: The assumption here is we are working in a local development location where even live sections will not be viewable by the public until the development site is migrated to a live hosting environment. You don’t have to work this way with Textpattern, but most people doing development do.
+A caveat: The assumption here is we are working in a local development location where even live sections will not be viewable by the public until the development site is migrated to a live hosting environment. You don’t have to work this way with Textpattern, but most people doing development do.
 
 #### Map the desired structure
 
@@ -641,7 +641,7 @@ The map allows setting up a Textpattern website structure and theme development 
 
 Remember, the context of this document is a new installation of Textpattern, so that’s where we begin. 
 
-First thing to be done is [create the sections](#add-or-edit-live-sections) you mapped as needing in your blueprints table. Don’t create any new sections if one already exists with the name you need, and don’t edit or delete any existing sections using the sections editor. Existing sections apply to Textpattern’s default theme. We’ll either use what exists or create from scratch.
+First thing to be done is [create the sections](#add-or-edit-live-sections) you mapped as needing in your blueprints table. Don’t create any new sections if one already exists with the name you need, and don’t edit or delete any existing sections using the sections editor. Existing sections apply to Textpattern’s default theme. Either use what sections exist or create them from scratch.
 
 In this case, we use the two existing default sections: ‘default’ and ‘articles’ (rows 1 and 2 in Table 1). Nothing to do there yet.
 
@@ -651,7 +651,7 @@ Now the remaining nine sections need created. For each one, click the **New sect
 
 Save the new section and repeat the process for the remaining sections needed. Don’t worry about the other form controls yet when creating the sections. You can edit those any time later after the development environment is initially setup.
 
-When all needed sections for the Gardner’s Delight were in place, our Sections panel looked like this:
+When all needed sections for the Gardner’s Delight website were in place, our Sections panel looked like this:
 
 ![Themes newly established sections](/img/themes-newly-established-sections.png)
 
