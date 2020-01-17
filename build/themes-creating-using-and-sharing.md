@@ -520,7 +520,7 @@ It is best to ensure your whole development project *is* ready to go, otherwise 
 
 ## Building a new website with multiple themes
 
-Here is a hypothetical website development project that walks through the workflow of building a website — from default installation to launch of final presentation — and covers everything learned in this document so far, and then some.
+Here is a hypothetical website development project that walks through building a Textpattern website — from default installation to launch of final presentation — and covers everything learned in this document so far, and then some.
 
 The workflow from a fresh installation of the software is:
 
@@ -639,11 +639,11 @@ This could be structured in any number of ways, but Table 1 shows one possible b
 </table>
 </div>
 
-For clarity, here are the counts and types of theme asset assignments to sections reflected in Table 1:
+For clarity, here are the counts and types of theme asset pairings to sections reflected in Table 1:
 
 *  three one-to-one page pairings to sections: default (1), archive (1), error_default (1)
 *  two one-to-many page pairings to sections: generic (2), hothouse (6)
-*  one one-to-one style pairing to sections: 404 (1)
+*  one one-to-one style pairing to a section: 404 (1)
 *  two one-to-many style pairings to sections: default (4), veggies (6).
 
 The map allows setting up a Textpattern website structure and theme development environment with purpose. With the map at hand, we can use what has already been learned in earlier sections of this document. And if we proceed in a particular order, a lot of jumping around in the back end can be eliminated.
@@ -680,15 +680,17 @@ This is why creating a [blueprint map of your structure](#map-the-desired-struct
 
 ![Themes switch context to garden theme](/img/themes-switch-context-to-garden-theme.png)
 
-When creating your pages and styles, you can either duplicate and rename the templates, using panel controls for such, or just create new, blank files, as done here. It doesn’t matter.
+When creating your pages and styles, you can either duplicate and rename existing templates, as implied here.
 
 ![Themes create new blank pages](/img/themes-create-new-blank-pages.png)
+
+Or just create new, blank files. The asset creation and duplication controls are immediately available in asset panels, in context.
 
 Again, theme asset files do not have to be developed to function properly yet, they only need to exist as placeholders with the correct names you want. They can be empty, filled with lorem ipsum, or any manner of markup; it doesn’t matter. All you’re doing at this point is getting the development environment pieces in place to be assigned and aligned together in the least laborious way possible. Once it is all properly assembled and assigned, then you will go back and actually work with HTML, Textpattern tags, CSS, and whatever else you desire to fold into your website’s final behaviour and presentation. This work is still ahead.
 
 **About forms:**
 
-Yes, forms will need developed too, but it’s hard, admittedly, to anticipate what forms you will need this early on. For purposes here we let the original default forms travel in the themes duplication process. As you become more experienced with Textpattern you might be able to add forms to your blueprint mapping too, but even the veterans will create forms on the fly, so don’t worry about it. Just consider forms part of your [actual development process](#html-css-textpattern-tags-etc).
+Yes, forms will need developed too, but it’s hard, admittedly, to anticipate what forms you will need this early. For purposes here, we let the original default forms travel in the themes duplication process. As you become more experienced with Textpattern you might be able to add forms to your blueprints, but even veteran users of Textpattern will create forms on the fly, so don’t worry about forms too much at this point. Just consider forms part of your [actual development process](#html-css-textpattern-tags-etc).
 
 ### Assemble the development environment
 
