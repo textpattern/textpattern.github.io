@@ -498,17 +498,17 @@ If the *development themes* preference is on, but you want to quickly see the li
 
 Two options are available to you to apply one or more development themes to live status. You can use the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls already covered, making sure to use the ‘Live’ checkbox option this time instead of the ‘Development’ checkbox. Or you can do it easier with the ‘Developer preview’ controls.
 
-### ‘Developer preview’ controls
+### ‘Deploy to live’ option
 
-The ‘Developer preview’ option only appears in the selection menu when you already have one or more themes assigned to sections as development themes.
+The ‘Deploy to live’ option only appears in the selection menu when you already have one or more development theme assets assigned to sections.
 
 ![Themes developer preview option](/img/themes-developer-preview-option.png)
 
-The assumption for this behaviour is you *do* have a development project set up, with all sections aligned with new asset assignments, and everything is ready to be deployed live.
+The assumption for this behaviour is you *do* have a development project set up, completed, verified, and ready for launch.
 
 ![Themes deploy development to live](/img/themes-deploy-development-to-live.png)
 
-And that’s the main value of this menu option: deploying all at once. Unlike the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls, where you work with one theme per section at a time (barring the rare situation you use a single theme, page, and style for your entire website), the ‘Developer preview’ option, in combination with its associated ‘Deploy to live’ radio button (always checked by default), will convert development to live all at once.
+And that’s the main value of this menu option: deploying all at once. Unlike the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls, where you work with one theme per section at a time (barring the rare situation you use a single theme, page, and style for your entire website), the ‘Deploy to live’ will convert all of your development to live at once.
 
 The other radio button, ‘Reset to live’, offers you a way to undo, in bulk, all of your development theme assignments across sections; basically erasing your entire development environment, converting the Sections panel back to its original live theme state.
 
@@ -518,13 +518,24 @@ This does not delete themes or undo any development on theme assets, it simply c
 
 It is best to ensure your whole development project *is* ready to go, otherwise the ‘Developer preview’ controls are, perhaps, overkill. If you are just working with one or two sections, the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls with the ‘Live’ checkbox option would do just as well. Options are available to you. Do it as you please.
 
-### Different themes on different sections
+## Building a new website with multiple themes
 
-Here is another hypothetical example using the ‘Developer preview’ option to better demonstrate its click-saving power. We’ll walk through going from a new installation of the software, to creating a semi-complex theme development environment, to deploying the fancy new presentation live.
+Here is a hypothetical website development project that walks through the workflow of building a website — from default installation to launch of final presentation — and covers everything learned in this document so far, and then some.
 
-A caveat: The assumption here is we are working in a local development location where even live sections will not be viewable by the public until the development site is migrated to a live hosting environment. You don’t have to work this way with Textpattern, but most people doing development do.
+The workflow from a fresh installation of the software is:
 
-#### Map the desired structure
+1. Plan and map the new architecture and theme associations
+2. Create the needed website sections
+3. Establish the working themes and assets
+4. Assign theme assets to sections
+5. Develop theme assets to completion
+6. Launch development to live
+
+We assume in this example of project development that the Textpattern installation is on a local development server. But it does not matter, even if you are working on a production server, because the website architecture expansion and themes development described here is not visible to the public anyway until the development work is launched live. So don’t worry about whether or not you can setup a local development server. It’s a good idea for other reasons, but not required here.  
+
+### Plan and map the desired structure and theme packages
+
+Diving into a development project without any plan is never a good idea. Hopefully that does not need elaborated. The more you plan, the more efficiently you work. But it does not take a lot to make significant gains in this case.
 
 Say we have a gardener’s website, The Gardener’s Delight, and the owner wants a different vegetable theme on each of the website’s six main vegetable sections, plus a general theme on the homepage and auxiliary pages, and a clever 404 error page having its own dashing design.
 
@@ -635,29 +646,27 @@ For clarity, here are the counts and types of theme asset assignments to section
 *  one one-to-one style pairing to sections: 404 (1)
 *  two one-to-many style pairings to sections: default (4), veggies (6).
 
-The map allows setting up a Textpattern website structure and theme development environment with purpose. With the map at hand, we can use what has already been learned in earlier sections of this document. And if we proceed in a particular order, a lot of jumping around in the back end can be eliminated. (Of course, learning by trial and error is always good too.)
+The map allows setting up a Textpattern website structure and theme development environment with purpose. With the map at hand, we can use what has already been learned in earlier sections of this document. And if we proceed in a particular order, a lot of jumping around in the back end can be eliminated.
 
-#### Site structure recap
+### Create the needed sections
 
-Remember, the context of this document is a new installation of Textpattern, so that’s where we begin. 
+First thing to be done is [create the sections](#add-or-edit-live-sections) you mapped in your blueprints table that do not already exist. Only create sections that are missing from your blueprints, and do not edit or delete any sections that already exist. Existing sections apply to Textpattern’s default theme. Either use sections that exist as they are, or create new ones.
 
-First thing to be done is [create the sections](#add-or-edit-live-sections) you mapped as needing in your blueprints table. Don’t create any new sections if one already exists with the name you need, and don’t edit or delete any existing sections using the sections editor. Existing sections apply to Textpattern’s default theme. Either use what sections exist or create them from scratch.
+In this case, we use the two existing default sections: ‘default’ and ‘articles’ (rows 1 and 2 in Table 1). Nothing to do there yet. Now the remaining nine sections need created.
 
-In this case, we use the two existing default sections: ‘default’ and ‘articles’ (rows 1 and 2 in Table 1). Nothing to do there yet.
-
-Now the remaining nine sections need created. For each one, click the **New section** button. Add the name and title of the section, leave the default theme selected (four-point-eight), and select the blank option for the page and style so no page or style is selected.
+For each one, click the **New section** button. Add the name and title of the section, leave the default theme selected (four-point-eight), and select the blank option for the page and style so no page or style is selected.
 
 ![Themes new section blank assets](/img/themes-new-section-blank-assets.png)
 
-Save the new section and repeat the process for the remaining sections needed. Don’t worry about the other form controls yet when creating the sections. You can edit those any time later after the development environment is initially setup.
+Save the new section and repeat the process for the remaining sections needed. Don’t worry about the other section editor form fields and controls yet when creating the sections. You can edit those any time later after the development environment is initially setup. Right now we just want to get the sections in place quickly,
 
-When all needed sections for the Gardner’s Delight website were in place, our Sections panel looked like this:
+When all needed sections for the Gardner’s Delight website were created, our Sections panel looked like this:
 
 ![Themes newly established sections](/img/themes-newly-established-sections.png)
 
-It’s easy to see the new sections from the defaults, as they don’t have any page or style assignments yet. You could have just as easily used any other page or style available in the section editor when creating the sections, because you’re going to re-assign the templates with development versions anyway. But the blank options make a nice way to get started since it is easier to see what is needed (or what is lacking) when they appear in the sections table.
+It’s easy to see the new sections from the defaults, as they don’t have any page or style assignments yet (only ‘None’ appears). We could have easily used any other page or style options in the section editor menus, because we are going to re-assign development assets to those file locations anyway. But the blank options are a nice way to get started with new sections because the ‘None’ values stand out easy in the sections table, making it easier to see what asset assignments are needed.
 
-#### Establish all needed theme packages
+### Establish all needed theme packages
 
 This does not mean develop your themes to completion. All you want to do at this point is establish the correctly named packages and ensure the component assets, especially the pages and styles (forms can come later), are in place with correctly named placeholders.
 
@@ -681,21 +690,19 @@ Again, theme asset files do not have to be developed to function properly yet, t
 
 Yes, forms will need developed too, but it’s hard, admittedly, to anticipate what forms you will need this early on. For purposes here we let the original default forms travel in the themes duplication process. As you become more experienced with Textpattern you might be able to add forms to your blueprint mapping too, but even the veterans will create forms on the fly, so don’t worry about it. Just consider forms part of your [actual development process](#html-css-textpattern-tags-etc).
 
-#### Assemble the development environment
+### Assemble the development environment
 
 Now it is time to [assign theme assets to sections](#assigning-theme-assets-to-sections) using the ‘[Change theme/page/style](#change-themepagestyle-controls)’ controls, and according to [the structural blueprints](#map-the-desired-structure), again (Table 1).
 
-This is where you will appreciate having duplicated the original and subsequent themes in such a way that each contains the necessary range of asset options, thereby avoiding having to abandon the assigning process now to go and create them one by one when you realize a given theme doesn’t have the asset you wanted.
-
-**Tip!** Really pay attention to *unchecking* the ‘Live’ check box when running through the ‘Change theme/page/style’ controls, which in a project like this you will have to run through a lot. If overlooked, and it’s easy to do, it sets the assignment to live status and gets confusing quick. If that happens, it’s easiest at this point to just delete the section row (since you are in the panel already), recreate the section as new, as done before, and reassign assets, paying better attention.
+This is where you will appreciate having duplicated the original and subsequent themes in such a way that each contains the necessary range of asset options, thereby avoiding having to abandon the assigning process now to go and create them one by one when you realize a given theme doesn’t have the asset you need. You can’t create them on the fly using the ‘Change theme/page/style’ controls.  
 
 Once the desired assets of each theme are aligned with sections correctly, we have the following development setup for our Gardener’s Delight website.
 
 ![Themes multi-themes development](/img/themes-multi-themes-development.png)
 
-Note that our assigned assets on the new sections are now sitting over empty slots in the grid (i.e. dashed lines with nothing underneath them). That’s expected in this case. The sections are new; not used in the default theme. If we had used the default assets in section creation instead of the blanks, we’d be seeing all the blank slots filled with ‘default’ instead, and it would not make a difference anyway if your working in a local development installation of the software.
+Note that our assigned assets on the new sections are now sitting over the initial ‘None’ values in the grid. That’s expected in this case. The sections are new; not used in the default theme. If we had used the default assets in section creation instead of the blanks, we’d be seeing all the ‘None’ values filled with ‘default’ instead, and it would not make a difference.
 
-Also note that because we assigned abc-garden assets to the two existing sections having the same asset names, there’s no dashed line division to indicate differently named assets. But by evidence of the ‘Development’ pill in the Theme column, there is a different theme assigned on those sections.
+Also note that because we assigned abc-garden assets to the two existing sections (the Textpattern defaults) having the same asset names, there’s no dashed line division to indicate differently named assets. But by evidence of the ‘Development’ pill in the Theme column, we know there is a different theme assigned on those sections regardless.
 
 If you peeked into the Themes panel at this point, all of the themes would have an orange [‘In use’ pill](#assigned-sections-indication) by their names, except where the software’s default Four Point Eight theme was still functioning.
 
@@ -705,30 +712,33 @@ Once you have the desired assets assigned to sections per theme, thereby setting
 
 ![Themes delete obsolete assets](/img/themes-delete-obsolete-assets.png) 
 
-#### HTML, CSS, Textpattern tags, etc.
+### HTML, CSS, Textpattern tags, etc.
 
-Now that your development environment is setup, you have clear link associations to all the assigned and necessary asset files in each theme, to easily develop themes to functional completion.
+Now the development environment is setup. At this point in your workflow, you have effectively established your development *previewing* location. In other words, the Sections panel serves as the place where you can easily see and assess themes in development and their assets to sections assignments. Combined with features on the Themes panel, and the various indicators and links between the two panels, you have a complete development system that makes it easy to get to any theme’s assigned asset files.
 
 In the Themes panel, your package assets are accessible via their [numbered indicators](#package-assets-indication), under the Pages, Styles, and Forms columns (page and style counts are adjusted here, but no attention was given to forms). 
 
 ![Themes assets numbers indication 2](/img/themes-assets-numbers-indication-2.png)
 
-Likewise, in the Sections panel, you have direct links to the individually [named pages and styles](#different-asset-names-indication). Click these links and the asset file opens in the editor ready to be modified.
+Likewise, in the Sections panel, you have direct links to the individually [named pages and styles](#different-asset-names-indication). Click these links and the asset files open in the editor ready to be modified.
 
 ![Themes asset names indication-2](/img/themes-asset-names-indication-2.png)
 
-If it is easier for you to empty out your asset files and start from blank screens (assuming you originally duplicated them instead of creating them new), do it. If you can refactor the markup already in duplicated assets, great. Whatever way you like or prefer, now is the time to actually *develop* your templates, CSS, and Textpattern tag logic. The files are now created and aligned in your architecture, you just have to make them functional and pretty.
+If it is easier for you to empty out your asset files and start from blank screens (assuming you originally duplicated them instead of creating them new), do it. Or, if you are comfortable refactoring markup already in a duplicated asset, great. Copying and pasting… It’s all good. Whatever way you like or prefer doing it, now is the time to actually *develop* your templates, CSS, and Textpattern tag logic. The files are created and aligned in your architecture, you just have to make them functional and pretty.
 
-As your mad creativity unleashes, periodically visit the Sections panel and [follow the ‘View’ links](#view-theme-presentation) to see how the presentation is shaping up on the front end. In fact, as long as the [development themes preference](#development-themes-preference) is active, you’ll see the development environment on the front end no matter what front-side link you follow from the administration side (e.g. the homepage link via the back-end navigation bar). It’s voodoo.
+Unlike pages and styles so far, Textpattern form needs are harder to anticipate in advance. But it’s no big deal to create and delete these along the way; after all, most are just snippets of market anyway, and that’s what you are developing at this point.
 
-#### Time to deploy
+Previewing your development composition is not to be confused with [viewing the presentation](#view-theme-presentation) of your themes in development, which is done by clicking the ‘View’ links next to a given section’s name. As your mad creativity unleashes, periodically ‘View’ links to see how the presentation is shaping up on the front end.
 
-You have arrived. Your tea is hot, climate disaster has been avoided, and your glorious new website presentation is ready to fly. And that’s how you can send it, with one easy pass of the  ‘[Developer preview](#developer-preview-controls)’ controls:
+In fact, as long as the [development themes preference](#development-themes-preference) is active, you’ll see the development environment on the front end no matter what front-side link you follow from the administration side (e.g. the homepage link via the back-end navigation bar). It’s voodoo!
 
-1. Select all checkboxes at once in the sections table
-2. Select the ‘Developer preview’ option from the selection menu
-3. Choose the ‘Deploy to live’ radio button
-4. Click the Go button and confirm when asked.
+### ‘Deploy’ or ‘Reset’ to live
+
+You have arrived. Your glorious new website presentation is tweaked to perfection, ready to launch, and Climate disaster has been avoided to make it worthwhile. You can now do exactly that: launch all of your development to live with one pass of the ‘[Deploy to live](#deploy-to-live-option)’ option in the **With selected…** menu. The option only appears when one or more development assets have been assigned to sections in the Sections panel.
+
+1. Check every section in the sections table (e.g. use the ‘Toggle all’ box in top-left corner). If any sections have not been assigned development assets, they can be checked or unchecked; it makes no difference since nothing will change on them anyway
+2. Select the ‘Deploy to live’ option from the selection menu
+3. Click the Go button, and confirm when asked if you are sure.
 
 All the development themes turn to live, assets too, and no more orange ‘Development’ pills remain visible.
 
@@ -737,6 +747,18 @@ All the development themes turn to live, assets too, and no more orange ‘Devel
 If this were an actual project, all the orange ‘In use’ pills in the Themes panel table would turn to green pills, indicating their new live status, and the former live theme would become derelict (neither live or in development).
 
 ![Themes multiple green pills](/img/themes-multiple-green-pills.png)
+
+**Alternatively:**
+
+If for any reason along the way in development you decide to scratch your development assignments to start over (instead of deploying them), you can easily do this all at once, too, but this time using the ‘Reset to live’ option:
+
+1. Check every section in the sections table as before
+2. Select the ‘Reset to live’ option from the selection menu
+3. Click the Go button, and confirm when asked if you are sure.  
+
+Again, this option only appears in the selection menu if you have one or more development assets assigned to a section.
+
+The sections table will return to the original state it was in when you first [created the new sections](#create-the-needed-sections).
 
 You have now learned everything there is to know about creating, developing, and deploying themes on your own website. We now turn attention to the functionalities for sharing themes in the community.
 
