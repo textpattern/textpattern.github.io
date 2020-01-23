@@ -233,6 +233,10 @@ Note that if a tag already _has_ an attribute with the same name as a global one
 : Remove the matching patterns from the output.
 : **Values:** any.
 
+`replace="string"`
+: Replace the patterns matching `trim`.
+: **Values:** any.
+
 `not="boolean"`
 : Switch `<txp:else />` parts.
 : **Values:** `0` (no) or `1` (yes).
