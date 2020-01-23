@@ -73,3 +73,19 @@ Use the following within an article form:
 ~~~
 
 Other tags used: [else](/tags/else), [if_excerpt](/tags/if_excerpt), [section](/tags/section).
+
+## Example 3: Automatically extract the excerpt from body text
+
+From Textpattern 4.8.0, use the following within an article form to:
+
+* strip HTML tags form the body text
+* limit the excerpt to the first 35 words
+* append ellipses to the trimmed content
+
+Adjust the 35 to suit your application.
+
+~~~ html
+<txp:body escape="tags" trim="/^\W*((?:\w+\W+){35})\w.*$/s" replace="$1&hellip;" />
+~~~
+
+Other tags used: [body](/tags/body).
