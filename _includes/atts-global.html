@@ -56,6 +56,11 @@
     <dd><strong>Values:</strong> 0 (no) or 1 (yes).</dd>
     <dd><strong>Default:</strong> {% if include.not == null %}unset (0){% else %}{{ include.not }}{% endif %}.</dd>
 
+    <dt><code class="highlighter-rouge language-plaintext">replace="string"</code></dt>
+    <dd>Replace the content stripped via the <code class="highlighter-rouge language-plaintext">trim</code> attribute.</dd>
+    <dd><strong>Values:</strong> Any valid string.</dd>
+    <dd><strong>Default:</strong> {% if include.replace == null %}unset{% else %}{{ include.replace }}{% endif %}.</dd>
+
     <dt><code class="highlighter-rouge language-plaintext">trim="string or regex"</code></dt>
     <dd>Remove the matching patterns from the output.</dd>
     <dd><strong>Values:</strong> Any. Use <code class="highlighter-rouge language-plaintext">/value/</code> to trigger regular expression matching, otherwise the value will be treated verbatim as a set of characters to trim.</dd>
