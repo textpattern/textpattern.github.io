@@ -40,7 +40,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ~~~ html
 <txp:link_to_prev>
-    <txp:prev_title />
+    <txp:title />
 </txp:link_to_prev>
 ~~~
 
