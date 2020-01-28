@@ -23,8 +23,6 @@ tags:
 
 The **next_title** tag is a *single* tag which Textpattern will replace with the title of the next article in the sort order.
 
-The container tag [link_to_next](/tags/link_to_next) wraps the text or tag and assigns the link.
-
 ## Attributes
 
 This tag has no attributes.
@@ -34,9 +32,9 @@ This tag has no attributes.
 ### Example 1: Link to next article by its title
 
 ~~~ html
-<txp:link_to_next>
+<a href="<txp:link_to_next />">
     <txp:next_title />
-</txp:link_to_next>
+</a>
 ~~~
 
 Other tags used: [link_to_next](/tags/link_to_next).
