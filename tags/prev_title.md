@@ -32,7 +32,7 @@ This tag has no attributes.
 ### Example 1: Display a link to the previous article when displaying individual articles
 
 ~~~ html
-<a href="<txp:link_to_prev>">
+<a href="<txp:link_to_prev />">
     <txp:prev_title />
 </a>
 ~~~
