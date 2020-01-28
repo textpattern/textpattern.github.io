@@ -78,4 +78,4 @@ For example, to give the link an HTML `title` attribute of the previous article'
 </a>
 ~~~
 
-Other tags used: [prev_title](/tags/prev_title).
+Other tags used: [title](/tags/title).
