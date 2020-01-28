@@ -18,7 +18,7 @@ tags:
 ## Syntax
 
 ~~~ html
-<txp:link_to_prev>
+<txp:link_to_prev />
 ~~~
 
 The **link_to_prev** tag can be used as a *single* tag or a *container* tag to return the permanent URL of the previous article by posting date.
@@ -28,6 +28,15 @@ If used as a container tag, the HTML required to output a hyperlink is returned;
 ## Attributes
 
 Tag will accept the following attributes (**case-sensitive**):
+
+`form="form name"`
+: A form to parse previous article fields.
+: **Default:** unset.
+
+`link="boolean"`
+: Whether the content should be hyperlinked.
+: **Values:** `0` (no) or `1` (yes).
+: **Default:** `1`.
 
 `showalways="boolean"`
 : Show the wrapped value even when no previous article exists.
@@ -43,8 +52,6 @@ Tag will accept the following attributes (**case-sensitive**):
     <txp:title />
 </txp:link_to_prev>
 ~~~
-
-Other tags used: [prev_title](/tags/prev_title).
 
 ### Example 2: Link to previous article using static text
 
