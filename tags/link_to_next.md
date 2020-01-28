@@ -40,7 +40,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ~~~ html
 <txp:link_to_next>
-    <txp:next_title />
+    <txp:title />
 </txp:link_to_next>
 ~~~
 
