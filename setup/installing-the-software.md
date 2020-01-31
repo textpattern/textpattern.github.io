@@ -73,6 +73,8 @@ The /images directory is also empty by default. It's where images will go when y
 
 The /textpattern directory contains all the core scripting and functionality. Also where users log into the back-end to administer the site.
 
+The /textpattern/plugins directory contains all the plugin code installed. You may see a warning about the directory's `chmod` status (editing rights) in the Plugins or Diagnostics panels when first logging in. [First log in checks](#first-log-in-checks).
+
 The /themes directory is empty by default, but it’s an essential directory if you intend to [export or import themes](/build/themes-creating-using-and-sharing). Each theme will have its own subdirectory inside. You may see a warning about the /themes directory’s `chmod` status (editing rights) in the Themes or Diagnostics panels when first logging in. See [First log in checks](#first-log-in-checks).
 
 The css.php file negotiates the front-end stylesheets you create in the Styles panel. If you plan on hosting your CSS as flat files, then this file can be removed. If you store CSS in the database then this file is required.
@@ -190,6 +192,7 @@ First, go to the Diagnostics panel (Admin > Diagnostics). Chances are, you will 
 * <span class="error">Image directory is not writable: /the/path/to/your/images</span>
 * <span class="error">File directory path is not writable: /the/path/to/your/files</span>
 * <span class="error">Themes directory path is not writable: /the/path/to/your/themes</span>
+* <span class="error">Plugins directory path is not writable: /the/path/to/your/textpattern/plugins</span>
 
 Textpattern is simply letting you know to change the `chmod` permissions on those directories so you can add content to them. A chmod setting of 755 or 711 should work to make a folder writable *and is secure*.[^chmod]
 
