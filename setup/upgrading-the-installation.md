@@ -86,10 +86,10 @@ All other files in the package are considered optional, and are provided for inf
 ### File system notes
 
 files
-: Empty by default. It's where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the Files panel. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
+: Empty by default. It's where content files (`.pdf`, `.docx`, `.rtf`, `.epub`, `.txt`, etc.) will go when/if you upload them in the Files panel. You may see a warning about the directory's `chmod` status (editing rights) at the top of the Diagnostics or Files panels if the web server does not have sufficient write permissions.
 
 images
-: Empty by default. It's where images will go when you upload them in the Images panel. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
+: Empty by default. It's where images will go when you upload them in the Images panel. You may see a warning about the directory's `chmod` status (editing rights) at the top of the Diagnostics or Images panels if the web server does not have sufficient write permissions.
 
 rpc
 : Contains the XML-RPC functionality, which is legacy code from when ping-packs and such were popular with bloggers. If you don't use it, you can remove it, but make sure the 'Enable XML-RPC server?' preference is set to 'No' in the Preferences panel.
@@ -101,13 +101,13 @@ textpattern
 : Contains all the core scripting and functionality. Also where users log into the back-end to administer the site.
 
 textpattern/plugins
-: Contains plugin files that have been installed. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
+: Contains plugin files that have been installed. You may see a warning about the directory's `chmod` status (editing rights) at the top of the Diagnostics or Plugins panels if the web server does not have sufficient write permissions.
 
 textpattern/setup
 : Contains installation files. These are *not* required for upgrades and should be omitted from the upload. Textpattern's Diagnostics panel will warn you if the directory still exists, so you may remove it by hand.
 
 themes
-: Empty by default. It's where themes will go if you choose to export them to disk from the Themes panel as a backup or for sharing them with others. Each theme has its own subdirectory inside. Note that you may see a warning about the directory's `chmod` status (permissions) at the top of the Themes panel if the web server does not have sufficient write permissions.
+: Empty by default. It's where themes will go if you choose to export them to disk from the Themes panel as a backup or for sharing them with others. Each theme has its own subdirectory inside. Note that you may see a warning about the directory's `chmod` status (permissions) at the top of the Diagnostics or Themes panels if the web server does not have sufficient write permissions.
 
 .htaccess
 : Important for handling many things on Apache web servers, like default URL formatting, 301 redirects, specific use (or not) of `www.`, and so forth. You can add to the file, but you should not alter or remove the default content, which Textpattern relies on. `.htaccess` can be safely removed if you run Textpattern a non-Apache web server, e.g. [Nginx](/setup/configuring-a-web-server-for-textpattern).
