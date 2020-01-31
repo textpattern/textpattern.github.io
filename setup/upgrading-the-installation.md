@@ -68,6 +68,7 @@ The following directories must be uploaded _if they do not already exist on your
   * {:.directory} files
   * {:.directory} images
   * {:.directory} themes
+  * {:.directory} textpattern/plugins
 {:.list--files}
 
 The following files and directories are optional depending on whether you use the features or not. Pay particular attention to the `.htaccess`[^1] file if you intend to install Textpattern to an Apache web server. You may omit this file if not.
@@ -98,6 +99,9 @@ sites
 
 textpattern
 : Contains all the core scripting and functionality. Also where users log into the back-end to administer the site.
+
+textpattern/plugins
+: Contains plugin files that have been installed. You may see a warning about the directory's `chmod` status (editing rights) in the Diagnostics panel.
 
 textpattern/setup
 : Contains installation files. These are *not* required for upgrades and should be omitted from the upload. Textpattern's Diagnostics panel will warn you if the directory still exists, so you may remove it by hand.
