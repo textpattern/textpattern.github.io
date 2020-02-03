@@ -248,10 +248,10 @@ This code will display articles that have a keyword with a value `One`.
 ### Example 4a: Select by author (using single tag)
 
 ~~~ html
-<txp:article_custom form="author_list" author="Parkling" />
+<txp:article_custom form="author_list" author="donald" />
 ~~~
 
-This code will display articles that have a authored by author with login name of `Parkling`. The referenced `author_list` article form might go thus:
+This code will display articles assigned to the author with login name of `donald`. The referenced `author_list` article form might go thus:
 
 ~~~ html
 <p>
@@ -266,7 +266,7 @@ Other tags used: [permlink](/tags/permlink), [title](/tags/title).
 ### Example 4b: Select by author (using container tag)
 
 ~~~ html
-<txp:article_custom author="Parkling">
+<txp:article_custom author="donald">
     <p>
         <txp:permlink>
             <txp:title />
