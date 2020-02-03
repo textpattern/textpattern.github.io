@@ -44,7 +44,7 @@ By default, the tag is context-sensitive, which means that in the absence of any
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`author="author (login) ID"`
+`author="author name"`
 : Filter the images by this list of author IDs who uploaded the pictures to Textpattern.
 : **Default:** unset.
 

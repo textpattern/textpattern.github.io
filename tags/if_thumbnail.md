@@ -41,7 +41,7 @@ This tag has no attributes.
 ### Example 1: Only show a thumbnail if one exists
 
 ~~~ html
-<txp:images author="neo" wraptag="figure" class="author-gallery">
+<txp:images author="donald" wraptag="figure" class="author-gallery">
     <txp:if_thumbnail>
         <txp:thumbnail />
         <txp:image_info wraptag="figcaption" />
@@ -51,7 +51,7 @@ This tag has no attributes.
 </txp:images>
 ~~~
 
-For each image uploaded by author 'neo', display its thumbnail if it has one, or the text 'No thumbnail' if it doesn't. Add a caption beneath the thumbnail using [image_info](/tags/image_info).
+For each image uploaded by author 'donald', display its thumbnail if it has one, or the text 'No thumbnail' if it doesn't. Add a caption beneath the thumbnail using [image_info](/tags/image_info).
 
 Other tags used: [images](/tags/images), [else](/tags/else), [image_info](/tags/image_info), [thumbnail](/tags/thumbnail).
 

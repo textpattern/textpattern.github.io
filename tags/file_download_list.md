@@ -36,8 +36,8 @@ If used as a container, it must be specified as an opening and closing pair of t
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`author="author login name"` <span class="footnote warning">v4.3.0+</span>
-: Restrict to files with the specified author.
+`author="author name"` <span class="footnote warning">v4.3.0+</span>
+: Restrict to files with the specified author login name.
 : **Default:** unset.
 
 `auto_detect="string context"` <span class="footnote warning">v4.3.0+</span>
