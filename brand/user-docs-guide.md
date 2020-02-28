@@ -309,13 +309,13 @@ Embedded quotations are short strings of text from another source quoted inline.
 
 A few such strings are scattered around the administration side of the software. Following is a hypothetical documentation example that points out two such strings (links are part of the actual interface strings but not functional here):
 
-At bottom of every back-end panel are two short strings. One informs you of the software version used: <q>[Textpattern CMS](#embedded-quotations) (v4.7.3)</q>. The other provides a link to the top of the panel: <q>[Back to top](#embedded-quotations)</q>.
+At bottom of every back-end panel are two short strings. One informs you of the software version used: <q>[Textpattern CMS](#embedded-quotations) (v4.8.0)</q>. The other provides a link to the top of the panel: <q>[Back to top](#embedded-quotations)</q>.
 {:.example}
 
 It’s appropriate to mark up the embedded quotations using a `q` element, which adds the quotation marks automatically, for example:
 
 ```
-<q>Textpattern CMS (v4.7.3)</q>
+<q>Textpattern CMS (v4.8.0)</q>
 ```
 
 Do not bother adding a `cite` attribute to the `q` element when quoting short, free-text strings because every back-end panel includes the strings. Pointing to one panel in particular is needlessly arbitrary. A `cite` element would be appropriate, however, if using an embedded quotation for any other reason, like used in the next paragraph to cite the W3C.

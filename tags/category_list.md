@@ -155,7 +155,7 @@ Other tags used: [category](/tags/category), [if_category](/tags/if_category).
 
 ### Version 4.7.2
 
-`sort` attribute behaviour defaults to `name asc` to bypass some database server specific ordering. NOTE this introduced an unexpected backwards-compatibility bug with the `categories` attribute. When using this attribute, you *must* set `sort=""` for the list to remain in the order specified in the `categories` attribute. This has been fixed _after_ (not in) Textpattern 4.7.3.
+`sort` attribute behaviour defaults to `name asc` to bypass some database server specific ordering. NOTE this introduced an unexpected backwards-compatibility bug with the `categories` attribute. When using this attribute, you *must* set `sort=""` for the list to remain in the order specified in the `categories` attribute. This has been fixed in Textpattern 4.8.0.
 
 ### Version 4.7.0
 
