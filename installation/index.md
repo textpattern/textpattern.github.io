@@ -194,6 +194,7 @@ Then it's time to create your Textpattern configuration file in the */textpatter
     $txpcfg['table_prefix'] = '';
     $txpcfg['txpath'] = '/server/path/to/textpattern/install/directory';
     $txpcfg['dbcharset'] = 'utf8mb4';
+    $txpcfg['dbengine'] = 'InnoDB';
     $txpcfg['client_flags'] = 0;
 ?>
 ~~~
