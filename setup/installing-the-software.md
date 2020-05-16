@@ -15,7 +15,7 @@ These instructions follow a process of using an (S)FTP application, and we assum
 * Table of contents
 {:toc}
 
-[^sftp]: [Transmit](https://www.panic.com/transmit/) is a popular choice for Mac. Likewise, [WinSCP](https://winscp.net/eng/index.php/) for Windows, or [FileZilla](https://filezilla-project.org/) for all platforms. 
+[^sftp]: [Transmit](https://www.panic.com/transmit/) is a popular choice for Mac. Likewise, [WinSCP](https://winscp.net/eng/index.php/) for Windows, or [FileZilla](https://filezilla-project.org/) for all platforms.
 
 ## Create a database
 
@@ -36,20 +36,20 @@ Depending on your web host, your web host account username or ID may be prefixed
 
 Then unpack it (double-clicking on the compressed file will often do). An uncompressed directory will spring out ready for inspection and use.
 
-Do not rearrange or rename any directories or files! 
+Do not rearrange or rename any directories or files!
 
 ## Upload to web server
 
 Decide where you will install Textpattern; either in your web root (e.g. to domain.tld) or in a subdirectory (i.e. domain.tld/subdirectory). The web root is the most common location and a good choice. Textpattern is capable of running your entire website, so why not use it to do so. A subdirectory works just as well, though people generally end up [moving the installation](/setup/moving-textpattern) to the web root later when realizing Textpattern can do more than post blog articles.
 
-For many web hosts, the root path looks like this: 
+For many web hosts, the root path looks like this:
 
 /users/home/{username}/web/public
 {:.example}
 
 Sometimes the /public directory is /public_html. The {username} implies your actual user account name.
 
-### Essential installation elements 
+### Essential installation elements
 
 Using your (S)FTP client to connect to your web host’s server. Navigate to your web root directory and upload at least the following directories and files from the Textpattern installation package:
 
@@ -142,7 +142,7 @@ Beneath the connection verification is a text box containing the contents needed
     $txpcfg['pass'] = 'password';
     $txpcfg['host'] = 'localhost';
     $txpcfg['table_prefix'] = '';
-    $txpcfg['txpath'] = '/server/path/to/textpattern/install/directory';
+    $txpcfg['txpath'] = '/var/www/vhosts/example.com/httpdocs/textpattern';
     $txpcfg['dbcharset'] = 'utf8mb4';
     $txpcfg['dbengine'] = 'InnoDB';
     $txpcfg['client_flags'] = 0;
@@ -163,7 +163,7 @@ Now create your Textpattern administrator account. The login name and password s
 
 Creating the administrator account populates the database with the necessary Textpattern table data. The screen has two sections: **Creating database tables** and **Site configuration**.
 
-Supply the following information, and remember the login name and password; you will need the details later to log in. 
+Supply the following information, and remember the login name and password; you will need the details later to log in.
 
 * Full name (e.g. Jane Doe)
 * Login name

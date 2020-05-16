@@ -192,7 +192,7 @@ Then it's time to create your Textpattern configuration file in the */textpatter
     $txpcfg['pass'] = 'password';
     $txpcfg['host'] = 'localhost';
     $txpcfg['table_prefix'] = '';
-    $txpcfg['txpath'] = '/server/path/to/textpattern/install/directory';
+    $txpcfg['txpath'] = '/var/www/vhosts/example.com/httpdocs/textpattern';
     $txpcfg['dbcharset'] = 'utf8mb4';
     $txpcfg['dbengine'] = 'InnoDB';
     $txpcfg['client_flags'] = 0;
