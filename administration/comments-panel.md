@@ -54,13 +54,13 @@ Because the comments list can get pretty long, a search function is available at
 The Search function has two components:
 
 1. A text field for entering the search query
-2. A drop-down-list to specify which area is to be searched
+2. A drop-down list to specify which area is to be searched
 
 Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of comments which meet the criteria.
 
-As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down list toggle button.
 
 ## List of existing comments
 

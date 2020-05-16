@@ -34,7 +34,7 @@ Because the article list can get pretty long, a search function is available at 
 The Search function has two components:
 
 1. A text field for entering the search query
-2. A drop-down-list to specify which area is to be searched
+2. A drop-down list to specify which area is to be searched
 
 Query text entered in the textarea will be treated as a *complete phrase* (e.g. "time stamp" will find exactly that. Text containing only "time" or "stamp", "time, stamp" or "timestamp" will not be in the results).
 
@@ -42,7 +42,7 @@ You don't need to wildcard query text at the beginning or the end (e.g. "time" w
 
 After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of articles which meet the criteria.
 
-As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down list toggle button.
 
 **Examples:** You can search (or list) an article by its ID number or date posted. You can list all articles of an author, you even don't need the full author ID. Choose 'Author' and typing "adm" possibly is enough for the admin (provided no other author has "adm" in their ID). You can list all 'Drafts' (choose 'Status' and type "dr").
 

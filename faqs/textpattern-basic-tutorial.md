@@ -65,7 +65,7 @@ Back in the [Pages panel](/administration/pages-panel), enter a page name `page2
 
 …somewhere in the `<body>` and save.
 
-There's one more task before we can see the new page. Switch to the [Sections panel](/administration/sections-panel), and create and edit a new section called `page2`. In the 'Uses page' dropdown for this section, select `page2` and then press 'Save'.
+There's one more task before we can see the new page. Switch to the [Sections panel](/administration/sections-panel), and create and edit a new section called `page2`. In the 'Uses page' drop-down for this section, select `page2` and then press 'Save'.
 
 Return to the live site and reload the page. Now you have a two-page site and can link back and forth: note the URLs as you do so. Look at the HTML source for Page 2; once again you can see it is simply the contents of your new page template.
 

@@ -290,7 +290,7 @@ There are two options regarding markup: 'Article markup' (for the *Body* text ar
 
 The option 'Override form' offers the possibility that single articles may use a different Form template than the overall Form template specified. Let's look at an example for a possible use of this…
 
-In your blog, you normally publish articles which are pure text. So your default form contains only the tags for title, body, etc. On every first day of the month however, you publish a photo of your garden. For this, you need the [article_image](/tags/article_image) tag in your form. So you create a form called `garden_image` which, among other tags, contains [article_image](/tags/article_image). Whenever you want to publish a photo along with your text, you choose 'Override form' and then `garden_image` from the dropdown list. This way, just this article will use the form `garden_image` for being displayed whereas all other articles will continue to use the default form.
+In your blog, you normally publish articles which are pure text. So your default form contains only the tags for title, body, etc. On every first day of the month however, you publish a photo of your garden. For this, you need the [article_image](/tags/article_image) tag in your form. So you create a form called `garden_image` which, among other tags, contains [article_image](/tags/article_image). Whenever you want to publish a photo along with your text, you choose 'Override form' and then `garden_image` from the drop-down list. This way, just this article will use the form `garden_image` for being displayed whereas all other articles will continue to use the default form.
 
 ### Text formatting help
 

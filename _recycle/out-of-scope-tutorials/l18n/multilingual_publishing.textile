@@ -14,7 +14,7 @@ It's expected that the concept of multilingual publishing will have different in
 
 h3(sectionedit2#what_do_we_mean_by_multilingual_publishing). What do we mean by Multilingual Publishing?
 
-At the ideal end of things, we are talking about having the ability to have more than one language actively installed in Textpattern with perhaps the following workflow: a site owner goes to the "write":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write panel, selects an active language from a dropdown, drafts an article in that language, and publishes it with a click of the save button. Wouldn't that be nice? You better believe it. However, things don't have to be ideal from the get-go, much might be realized from progressive stages. Consider "this exchange":https://forum.textpattern.com/viewtopic.php?id=14610 as food for thought.
+At the ideal end of things, we are talking about having the ability to have more than one language actively installed in Textpattern with perhaps the following workflow: a site owner goes to the "write":/home/www/zendstudio/dokuwiki/bin/doku.php?id=write panel, selects an active language from a drop-down, drafts an article in that language, and publishes it with a click of the save button. Wouldn't that be nice? You better believe it. However, things don't have to be ideal from the get-go, much might be realized from progressive stages. Consider "this exchange":https://forum.textpattern.com/viewtopic.php?id=14610 as food for thought.
 
 h3(sectionedit3#requirements). Requirements
 

@@ -4,7 +4,7 @@ h3(sectionedit1#what_should_this_plugin_do). What should this plugin do
 
 * On frontend the mp3 are played with an Flashplayer.
 * In the feeds there are included as enclosure
-* On write-tab MP3 can bee selected out of a drop-down-list
+* On write-tab MP3 can bee selected out of a drop-down list
 * Even large MP3 can bee uploaded within txp-backend
 
 h3(sectionedit2#frontend). Frontend

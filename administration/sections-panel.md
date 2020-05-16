@@ -133,13 +133,13 @@ You can use the search function above the section list to locate sections direct
 The Search function has two components:
 
 1. A text field for entering the search query
-2. An adjacent drop-down-list to specify which area is to be searched
+2. An adjacent drop-down list to specify which area is to be searched
 
 Anything entered in the text field will be treated as a complete phrase (see the [Articles panel](/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list if any rows meet the criteria.
 
-By default, the search will find matches for all fields in a row. You can perform more refined searches by selecting or deselcting areas to search via the drop-down-list in the search tool.
+By default, the search will find matches for all fields in a row. You can perform more refined searches by selecting or deselcting areas to search via the drop-down list in the search tool.
 
 ### Performing changes on many sections
 

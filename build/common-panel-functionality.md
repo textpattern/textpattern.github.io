@@ -29,7 +29,7 @@ The search function appears at the top-right of a relevant panel’s default vie
 
 The search is scoped to the items specific to a given panel, presented in a table in the main content area. The columns of the table, and the data in table cells, represent criteria you can use in a given search.
 
-The whole table will be searched by default, or you can specify a given column scope using the drop-down-list button at far right of the search control, appearing with a downward black arrow on it.
+The whole table will be searched by default, or you can specify a given column scope using the drop-down list button at far right of the search control, appearing with a downward black arrow on it.
 
 ### Search phrase
 

@@ -12,7 +12,7 @@ h4(#step_2). Step 2
 
 The second step is to create a page template for the Portfolio in the admin area…_presentation &gt; pages_. You may copy an existing page template if you wish, or start from scratch. Save the page as “folio”. You should see it added to the list of pages to the right of the editing window.
 
-Before continuing, go back to the sections tab, _presentation &gt; sections_, and find the option for the “portfolio” section labeled “uses page”. Use the dropdown menu to select “folio” and hit SAVE.
+Before continuing, go back to the sections tab, _presentation &gt; sections_, and find the option for the “portfolio” section labeled “uses page”. Use the drop-down menu to select “folio” and hit SAVE.
 
 h4(#step_3). Step 3
 
@@ -34,7 +34,7 @@ bc. <img src="" />
 
 tag for the thumbnail image (i.e. _../images/small_picture1.gif_).
 
-Be sure to assign the article(s) to the “portfolio” section under the “Section” dropdown menu. Comments, on or off, is up to you.
+Be sure to assign the article(s) to the “portfolio” section under the “Section” drop-down menu. Comments, on or off, is up to you.
 
 h4(#step_5). Step 5
 

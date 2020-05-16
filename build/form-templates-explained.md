@@ -57,9 +57,9 @@ As you can see, this 'article' type Form template is composed of three different
 
 ## Form types
 
-When creating a form, it must be assigned to a 'Type', which is available via a dropdown selection box alongside the 'Name' field. There are currently seven form types: *article*, *category*, *comment*, *file*, *link*, *misc* (miscellaneous), and *section*.
+When creating a form, it must be assigned to a 'Type', which is available via a drop-down selection box alongside the 'Name' field. There are currently seven form types: *article*, *category*, *comment*, *file*, *link*, *misc* (miscellaneous), and *section*.
 
-Form template types have almost no inherent semantic meaning, but aid solely as a means of organization for the designer/user. One notable exception: *article* type forms are the only ones listed in the [Override form](/administraiton/write-panel#override-form) dropdown on the Write panel.
+Form template types have almost no inherent semantic meaning, but aid solely as a means of organization for the designer/user. One notable exception: *article* type forms are the only ones listed in the [Override form](/administraiton/write-panel#override-form) drop-down on the Write panel.
 
 The category and section types are intended to be used in conjunction with [category_list](/tags/category_list) and [section_list](/tags/section_list), respectively, as a value to the `form` attribute, along the lines of `<txp:section_list form="foo" />`. They serve the same use case as the `form` attributes for articles do.
 

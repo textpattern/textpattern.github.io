@@ -40,7 +40,7 @@ The file will be uploaded to the files folder of Textpattern (but remember the f
 
 ## Existing files
 
-Alternatively to uploading files through a web browser, you can elect to upload files manually (i.e. via FTP) to your files directory; this is especially useful of you have large files then need to be uploaded to the server. The 'Existing file' select box will be available if Textpattern detects any manual uploads to the files directory. Select the file from the dropdown list. Manually uploaded files will then be stored in the database, so you can append information to it via the file editing panel (see below).
+Alternatively to uploading files through a web browser, you can elect to upload files manually (i.e. via FTP) to your files directory; this is especially useful of you have large files then need to be uploaded to the server. The 'Existing file' select box will be available if Textpattern detects any manual uploads to the files directory. Select the file from the drop-down list. Manually uploaded files will then be stored in the database, so you can append information to it via the file editing panel (see below).
 
 ## Editing files
 
@@ -79,13 +79,13 @@ Because the files list can get pretty long, a search function is available at th
 The Search function has two components:
 
 1. A text field for entering the search query
-2. A drop-down-list to specify which area is to be searched
+2. A drop-down list to specify which area is to be searched
 
 Text entered in the textarea will be treated as a complete phrase (see the [Articles panel](/administration/articles-panel) documentation for full details on this).
 
 After entering your search criteria you start searching by selecting the search button. As a result you will be given a new list of files which meet the criteria.
 
-As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down-list toggle button.
+As a default the search will find matches for all criteria. But you can do more refined searches by selecting another area to search in via the drop-down list toggle button.
 
 ## List of existing files
 

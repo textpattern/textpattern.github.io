@@ -40,7 +40,7 @@ The dev branch can be worked with as it exists at any given moment:
 
 There are a number of *experimental branches*, each a separate tinkering on a particular new feature or three. The branches are not ready to merge into the dev branch yet, which is why they're experimental.
 
-Experimental branches are a moving target, so they're not listed here to lower overhead, but you can find these branches by going to the [dev branch](https://github.com/textpattern/textpattern) in GitHub, selecting the **Branch** menu button (which will appear as "Branch: dev"), and choosing one of the other branch options in the dropdown list.
+Experimental branches are a moving target, so they're not listed here to lower overhead, but you can find these branches by going to the [dev branch](https://github.com/textpattern/textpattern) in GitHub, selecting the **Branch** menu button (which will appear as "Branch: dev"), and choosing one of the other branch options in the drop-down list.
 
 ### Legacy packages
 
