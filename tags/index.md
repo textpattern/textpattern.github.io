@@ -203,12 +203,13 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [if_last_section](/tags/if_last_section) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_logged_in](/tags/if_logged_in) <span class="footnote success">**New v4.7.0**</span>
 * [if_plugin](/tags/if_plugin) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_request](/tags/if_status) <span class="footnote warning">**New v4.8.0**</span>
 * [if_search](/tags/if_search) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_search_results](/tags/if_search_results) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_section](/tags/if_section) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_status](/tags/if_status) <span class="footnote warning">**Modified v4.7.0**</span>
 * [if_thumbnail](/tags/if_thumbnail) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_variable](/tags/if_variable)
+* [if_variable](/tags/if_variable) <span class="footnote warning">**Modified v4.8.0**</span>
 * [if_yield](/tags/if_yield) <span class="footnote warning">**Modified v4.7.0**</span>
 * [image](/tags/image) <span class="footnote warning">**Modified v4.8.0**</span>
 * [image_author](/tags/image_author) <span class="footnote warning">**Modified v4.7.0**</span>
