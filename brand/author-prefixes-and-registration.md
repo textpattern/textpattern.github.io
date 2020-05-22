@@ -83,6 +83,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * ako: akokskis
 * aks: [makss](https://forum.textpattern.com/profile.php?id=19245)
 * akw: thekolonel
+* all: [Giz](https://forum.textpattern.com/profile.php?id=1885)
 * alt: GeertAki
 * an7: iaian7
 * anc: usonian
