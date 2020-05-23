@@ -150,7 +150,7 @@ The tags inside the *article* container dictate how we will render each article 
 So, in just a few simple tags you have automatically rendered a list of articles. The tags have:
 
 1. Determined if the visitor is browsing a category list or not.
-2. Displayed a list of 5 article titles and excerpts if they are.
+2. Displayed a list of 5 article titles and associated excerpts.
 3. Displayed a single article if they are viewing an individual article.
 
 That is the fundamental building block of how container and conditional tags can make building lists of things easy.
