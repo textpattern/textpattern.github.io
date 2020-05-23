@@ -133,7 +133,7 @@ On your default article page you might see something like this:
 </txp:if_category>
 ~~~
 
-Taking this block by block we see that the conditional [if_category"](/tags/if_category) determines if the visitor has selected a category hyperlink. If they have, we are in the **list** context. If they have not, the [else](/tags/else) portion is executed.
+Taking this block by block we see that the conditional [if_category](/tags/if_category) determines if the visitor has selected a category hyperlink. If they have, we are in the **list** context. If they have not, the [else](/tags/else) portion is executed.
 
 In this example, the [article](/tags/article) in the *else* portion is treated as an individual article, by virtue of it not being a category list. In more complex pages it may be part of a larger nested structure and therefore could be a different type of list (e.g. search results), but for now we'll take it at face value and assume it is an individual article.
 
@@ -727,9 +727,9 @@ Thus, a self-closing tag like `<txp:article_id />` becomes `<article::id />`.
 Container tags like:
 
 ~~~ html
-<txp:if_article_id> 
+<txp:if_article_id>
     …
-<txp:else /> 
+<txp:else />
     …
 </txp:if_article_id>
 ~~~
@@ -739,7 +739,7 @@ Become:
 ~~~ html
 <if::article_id>
     …
-<txp:else /> 
+<txp:else />
     …
 </if::article_id>
 ~~~
@@ -749,7 +749,7 @@ The same applies to plugin tags. For example this one:
 ~~~ html
 <txp:smd_if>
     …
-<txp:else /> 
+<txp:else />
     …
 </txp:smd_if>
 ~~~
@@ -757,9 +757,9 @@ The same applies to plugin tags. For example this one:
 Becomes:
 
 ~~~ html
-<smd::if> 
+<smd::if>
     …
-<smd::else /> 
+<smd::else />
     …
 </smd::if>
 ~~~
@@ -824,7 +824,7 @@ Using `not` negates the result of the entire tag including any combination of at
 
 When [short-tags are enabled](#reduce-typing-with-short-tags) is enabled, you can also generate custom short-tags by creating specific reusable Form templates, which we dub “shortcodes”. You can use any Form type when creating a shortcode form.
 
-A shortcode is like any other partial of code you may develop in a Textpattern Form, but it’s designed with the intention of using in relation to an associated custom short-tag. This new functionality is similar in concept to the smd_macro or rah_beacon plugins, both of which are now obsolete against this new custom short-tags/shortcode functionality. 
+A shortcode is like any other partial of code you may develop in a Textpattern Form, but it’s designed with the intention of using in relation to an associated custom short-tag. This new functionality is similar in concept to the smd_macro or rah_beacon plugins, both of which are now obsolete against this new custom short-tags/shortcode functionality.
 
 The one difference between the core short-tags and custom short-tags is in relation to the `<txp:output_form>` tag. Whenever you create a Textpattern Form intended as a shortcode form, it automatically makes a custom short-tag available having the same name as the form.
 
@@ -853,7 +853,7 @@ Whether or not you opt to disable short-tag functionality in the Preferences pan
 
 ### Using the yield attribute
 
-If needed, the attributes can be defined explicitly in the tag as values of the `yield` attribute: 
+If needed, the attributes can be defined explicitly in the tag as values of the `yield` attribute:
 
 ~~~ html
 <txp::figure yield="id, caption" />
