@@ -9,7 +9,7 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-# Jekyl files  #
+# Jekyll files #
 ######################
 _site/*
 .jekyll-metadata
