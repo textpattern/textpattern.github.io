@@ -679,7 +679,7 @@ In each instance of `<txp:image_info />`, the tag is pulling a specific data val
 
 In the second line, `<txp:image_info />` is pulling the image’s caption value, which you should _always_ include in the image edit panel area for each image.
 
-While the mixed markup is more functionally dynamic, it’s also a bigger block of markup overall because there’s no integration of HTML with Textpattern tags. As a frame of reference, the entire block of mixed markup is 182 characters long, not including line-breaks and indentations.  
+While the mixed markup is more functionally dynamic, it’s also a bigger block of markup overall because there’s no integration of HTML with Textpattern tags. As a frame of reference, the entire block of mixed markup is 182 characters long, not including line-breaks and indentations.
 
 ### Integrated markup example: image and caption
 
@@ -867,7 +867,7 @@ Note that omitting the `class` and `wraptag` attributes in the following example
 
 The key to creating shortcode Forms is using the Textpattern tags `yield`, `if_yield`, and in relation to the latter, `else`.
 
-The `yield` tag is used to create attributes to process inside  your custom tag: `<txp:yield name="your-attribute" />` Add the `default` attribute to it if you want to set a default value in case the attribute is not passed into your form.
+The `yield` tag is used to create attributes to process inside your custom tag: `<txp:yield name="your-attribute" />` Add the `default` attribute to it if you want to set a default value in case the attribute is not passed into your form.
 
 The `if_yield` container tag (and the `else` tag) can be used to determine if the attribute has been supplied:
 
