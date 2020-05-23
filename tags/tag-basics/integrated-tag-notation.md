@@ -8,7 +8,7 @@ description: Integrating HTML markup into Textpattern tags has the benefit of be
 
 # Integrated tag notation
 
-Textpattern and HTML tags can be mixed together to achieve various objectives. While the distinction makes it easier to see the two tag types, it can make for more verbose markup. As you get more famililar with Textpattern tags, you can choose to write markup in a more _integrated_ way, where HTML is defined in Textpattern tag attributes instead of used as separate tags. This page describes the general idea. 
+Textpattern and HTML tags can be mixed together to achieve various objectives. While the distinction makes it easier to see the two tag types, it can make for more verbose markup. As you get more famililar with Textpattern tags, you can choose to write markup in a more _integrated_ way, where HTML is defined in Textpattern tag attributes instead of used as separate tags. This page describes the general idea.
 
 **On this page**:
 
@@ -17,7 +17,7 @@ Textpattern and HTML tags can be mixed together to achieve various objectives. W
 
 ## Mixed markup notation
 
-Mixed markup notation means using HTML tags and Texpattern tags together but distinctly. You can readily see each tag type, thus the role it’s playing in the markup. Add plugin tags to the mix and markup can get lengthy and complex, even if you can see the different tag types. 
+Mixed markup notation means using HTML tags and Texpattern tags together but distinctly. You can readily see each tag type, thus the role it’s playing in the markup. Add plugin tags to the mix and markup can get lengthy and complex, even if you can see the different tag types.
 
 Despite the lengthier result, character-wise, writing markup this way can be easier for new users of Textpattern, and especially those already familiar with HTML. In fact, this is often how people write their markup without giving it much thought.
 
@@ -83,7 +83,7 @@ In each instance of `<txp:image_info />`, the tag is pulling a specific data val
 
 In the second line, `<txp:image_info />` is pulling the image’s caption value, which you should _always_ include in the [Image edit panel](/administration/images-panel) area for the image.
 
-While the mixed markup is more functionally dynamic, it’s also a bigger block of markup overall because there’s no integration of HTML with Textpattern tags. As a frame of reference, the entire block of mixed markup is 182 characters long, not including line-breaks and indentations.  
+While the mixed markup is more functionally dynamic, it’s also a bigger block of markup overall because there’s no integration of HTML with Textpattern tags. As a frame of reference, the entire block of mixed markup is 182 characters long, not including line-breaks and indentations.
 
 ## Integrated markup notation
 
@@ -143,7 +143,7 @@ Beginning with Textpattern 4.7.0, you can use [core short-tag structure](/tags/t
 
 ## Option, options… What do I do?
 
-This doc might make it seem you must learn more advanced ways of working with Textpattern tags. That’s not true. There is no right or wrong way, only the way that makes it easier for you to understand. There’s nothing wrong with writing mixed markup if that’s what makes sense. 
+This doc might make it seem you must learn more advanced ways of working with Textpattern tags. That’s not true. There is no right or wrong way, only the way that makes it easier for you to understand. There’s nothing wrong with writing mixed markup if that’s what makes sense.
 
 The natural tendency for people is to start with a mixed markup approach, then tighten up the their markup over time by leaning more on Textpattern tags. The result is often less markup overall. This can help offset the additional markup from plugin tags, when such functionality is used.
 
