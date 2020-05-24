@@ -51,7 +51,6 @@ Though embedded help and user docs are both written for users of the software, t
 
 The third layer of the support system is the single documentation page that best expands on a given back-end panel concept or scenario. A given page may concern many pophelp items, and that’s okay; the need for fewer documentation pages, not more, is the goal.
 
-
 When [docs collaboration procedures](/brand/#user-docs-procedures) are not throwing a 404, they will guide where to focus editorial attention. But for immediate purposes, it is better to draft new documentation only when there’s a clear need for the material. Let the writing needed be dictated by the community’s demand for specific information, or its struggle around a pernicious problem. Monitor the forum for repeating gripes and you’ll identify the _what_ part. Collaboration between author, editors, and doc-tree architects will take care of the _how_.
 
 ### Scope and depth of a page
