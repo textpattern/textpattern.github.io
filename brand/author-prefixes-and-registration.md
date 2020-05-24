@@ -27,7 +27,7 @@ Guidelines, courtesies, and points of fact about choosing and registering an aut
 
 **Your prefix should be three alphanumeric characters.** Not less and not more. (Ignore any you see in the lists that defy this convention.)
 
-**First to market wins the prefix.** Prefixes go to the first person who has a theme or plugin to share, regardless if the prefix has already been registered. So, only register a prefix when you have a theme or plugin ready to go (or can show you are near ready to share one). 
+**First to market wins the prefix.** Prefixes go to the first person who has a theme or plugin to share, regardless if the prefix has already been registered. So, only register a prefix when you have a theme or plugin ready to go (or can show you are near ready to share one).
 
 **Prefix ownership may be challenged.** Prefix ownership may be challenged if it is found that an author has not created a theme or plugin yet and is squatting on the prefix. In this case, you (the challenger) must produce the first theme or plugin to earn ownership of the prefix in question. At that time, bring the issue to light in the appropriate [Theme discussion](https://forum.textpattern.com/viewforum.php?id=8) or [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13) forum with proof of your product ready to share, and others can help recognize and validate the challenge.
 
@@ -37,7 +37,7 @@ See additional notes in the [Registered prefixes](#registered-prefixes) Legend.
 
 When ready to register a prefix, open a new Prefix registration issue](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&template=register-author-prefix.md&title=Request+for+prefix%3A+add+prefix+here) in the user documentation repository and respond to the questions accordingly.
 
-If you do not have a GitHub account and do not want to create one, make your prefix request in the [Theme discussion](https://forum.textpattern.com/viewforum.php?id=8) or [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13). Point out your anti-GitHub position so it is understood. Totally fine. 
+If you do not have a GitHub account and do not want to create one, make your prefix request in the [Theme discussion](https://forum.textpattern.com/viewforum.php?id=8) or [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13). Point out your anti-GitHub position so it is understood. Totally fine.
 
 ## Registered prefixes
 
@@ -380,7 +380,6 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 
 <div class="layout-text4col">
 
-* pac: [gaekwad](https://forum.textpattern.com/profile.php?id=7456)
 * pap: tranquillo
 * pat: [pat64](https://forum.textpattern.com/profile.php?id=7660)
 * pax: [johnstephens](https://forum.textpattern.com/profile.php?id=15144)
