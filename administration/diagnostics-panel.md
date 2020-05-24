@@ -233,7 +233,7 @@ Warnings are not critical, per se, and sometimes can even be cascading[^2] or fa
 DNS lookup failed: {site URL}.
 {: .alert-block .warning}
 
-This means the 'Site URL' preference value in the [Preferences panel](/administration/preferences-panel) is probably incorrect; possibly the wrong name, a spelling mistake, or missing altogether. Check the value and make sure it's entered exactly like this, `example.com`, replacing your domain name and TLD extension.
+This means the 'Site URL' preference value in the [Preferences panel](/administration/preferences-panel) is probably incorrect; possibly the wrong name, a spelling mistake, or missing altogether. Check the value and make sure it's entered exactly like this, `example.com`, replacing your domain name and subdirecrory where appropriate.
 
 Site URL preference might be incorrect: {site URL}.
 {: .alert-block .warning}

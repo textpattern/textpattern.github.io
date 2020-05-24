@@ -42,9 +42,9 @@ Pages and Styles (described next) are associated to Sections to provide an HTML 
 
 [Categories](/administration/categories-panel) are a method of organizing content (articles, images, files, links) by particular topics to which the content relates. The category associations with content can then be used to create various content outputs in the website.
 
-## Theoretical example for blackcheese.tld
+## Theoretical example for example.org
 
-Let's walkthrough the creation and assembly of the building blocks for a hypothetical website called 'Black Cheese' (`blackcheese.tld`)…
+Let's walkthrough the creation and assembly of the building blocks for a hypothetical website called 'Example Organization' (`example.org`)…
 
 All building block panels are accessed in your [admin-side](/administration/). For purposes of this example, we are only focusing on [Sections](/administration/sections-panel), [Pages](/administration/pages-panel), [Styles](/administration/styles-panel), [Forms](/administration/pages-panel), and [Categories](/administration/categories-panel). The Tags don't have their own panel; rather you simply type them up like you would HTML markup, or use one of the contextual Tag builders located at the top of the left column in the Forms and Pages panels.
 
@@ -52,7 +52,7 @@ All building block panels are accessed in your [admin-side](/administration/). F
 
 Unless you plan on using Textpattern's default Page template and default style sheet, you'll need to first create your new Page template and Style that you intend to associate with a new Section. That said, it is often advantageous to use default components (and edit them to your needs) as much as possible to keep things simple from a management standpoint.
 
-To this end, let's say we intend to create a 'history' section in the Black Cheese website where the legacy of Black Cheese will be shared with the world. We also decide to create a new page, 'History', specifically for this section, but we figure it's fine using a single style for the entire site's presentation and thus we'll go with the 'default' style for simplicity and customize it as necessary. Thus we first create the 'History' page, then the history section, and finally associate the Page template and Style to the Section.
+To this end, let's say we intend to create a 'history' section in the Example Organization website where the legacy of Example Organization will be shared with the world. We also decide to create a new page, 'History', specifically for this section, but we figure it's fine using a single style for the entire site's presentation and thus we'll go with the 'default' style for simplicity and customize it as necessary. Thus we first create the 'History' page, then the history section, and finally associate the Page template and Style to the Section.
 
 ### Page template uses Form templates
 
@@ -64,4 +64,4 @@ In addition to showing article(s) assigned to the Section, the structure may emp
 
 ### Section uses Stylesheet information
 
-In the Style panel you will see one stylesheet by default. All pages will use this unless another stylesheet is specified. Perhaps you want a different style for the 'cheese' section. So you create a new stylesheet with new fonts, colours, etc. Then, in the Sections panel, select it to be used by the cheese section. Other sections will still use the default stylesheet unless told otherwise.
+In the Style panel you will see one stylesheet by default. All pages will use this unless another stylesheet is specified. Perhaps you want a different style for the 'team' section. So you create a new stylesheet with new fonts, colours, etc. Then, in the Sections panel, select it to be used by the Team section. Other sections will still use the default stylesheet unless told otherwise.

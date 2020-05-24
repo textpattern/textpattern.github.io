@@ -40,7 +40,7 @@ Do not rearrange or rename any directories or files!
 
 ## Upload to web server
 
-Decide where you will install Textpattern; either in your web root (e.g. to domain.tld) or in a subdirectory (i.e. domain.tld/subdirectory). The web root is the most common location and a good choice. Textpattern is capable of running your entire website, so why not use it to do so. A subdirectory works just as well, though people generally end up [moving the installation](/setup/moving-textpattern) to the web root later when realizing Textpattern can do more than post blog articles.
+Decide where you will install Textpattern; either in your web root (e.g. to example.com) or in a subdirectory (i.e. example.com/subdirectory). The web root is the most common location and a good choice. Textpattern is capable of running your entire website, so why not use it to do so. A subdirectory works just as well, though people generally end up [moving the installation](/setup/moving-textpattern) to the web root later when realizing Textpattern can do more than post blog articles.
 
 For many web hosts, the root path looks like this:
 
@@ -98,7 +98,7 @@ The /sites directory supports multi-site installations managed by one set of cor
 
 ## Setup via browser
 
-Now you'll walk through the setup process, which is a series of screens. Assuming you uploaded the installation to your web root, open a browser and go to https://domain.tld/textpattern/setup. (If you installed Textpattern in a subdirectory, the path would reflect that.)
+Now you'll walk through the setup process, which is a series of screens. Assuming you uploaded the installation to your web root, open a browser and go to https://example.com/textpattern/setup. (If you installed Textpattern in a subdirectory, the path would reflect that.)
 
 ### Select language
 

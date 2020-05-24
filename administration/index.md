@@ -17,7 +17,7 @@ The back end of Textpattern is where administrators, and other [users](/administ
 
 ## Login location
 
-The usual back-end login location for a new install of Textpattern is at <i>domain.tld/textpattern</i>. If you install Textpattern in a subdirectory, the login location would reflect that extra level (e.g. <i>example.com/subdirectory/textpattern</i>). See [Textpattern security](/administration/security) if you're worried about the login location being common knowledge.
+The usual back-end login location for a new install of Textpattern is at <i>example.com/textpattern</i>. If you install Textpattern in a subdirectory, the login location would reflect that extra level (e.g. <i>example.com/subdirectory/textpattern</i>). See [Textpattern security](/administration/security) if you're worried about the login location being common knowledge.
 
 ## Core administration regions and panels
 

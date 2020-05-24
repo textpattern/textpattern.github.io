@@ -93,10 +93,10 @@ Red messages mean something critical appears to be wrong and you need to trouble
 Yellow warning alerts are not critical, per se, and sometimes can even be cascading[^cascading] or false.[^false] But when warnings are accurate, something needs resolved in order to work correctly, reliably, or securely. The only way to know when the alert is false or true, is to start fixing the reported problems one-by-one, from top to bottom, as you see them in your diagnostics. Several yellow alerts are possible.
 
 <span class="warning">DNS lookup failed: {site URL}.</span>
-: This alert means the **Site URL** preference (Admin > Preferences > Site) is probably incorrect; possibly the wrong name, a spelling mistake, or missing altogether. Check the value and make sure it's entered correctly. If you installed in the root web domain, use: domain.tld. If you installed in a subdirectory, use: domain.tld/subdirectory. If you installed in a subdomain as a separate website, use the pattern subdomain.domain.tld. Nothing else!
+: This alert means the **Site URL** preference (Admin > Preferences > Site) is probably incorrect; possibly the wrong name, a spelling mistake, or missing altogether. Check the value and make sure it's entered correctly. If you installed in the root web domain, use: example.com. If you installed in a subdirectory, use: example.com/subdirectory. If you installed in a subdomain as a separate website, use the pattern subdomain.example.com. Nothing else!
 
 <span class="warning">Site URL has a trailing slash.</span>
-: This alert means your **Site URL** preference value (Admin > Preferences > Site) has an ending forward slash on it like this, domain.tld/. Remove the slash.
+: This alert means your **Site URL** preference value (Admin > Preferences > Site) has an ending forward slash on it like this, example.com/. Remove the slash.
 
 <span class="warning">Site URL preference might be incorrect: {site URL}.</span>
 : Similar to the first yellow alert, this is suggesting the **Site URL** as set in Preferences (Admin > Preferences > Site) does not match the actual URL you use to visit your website.
@@ -176,7 +176,7 @@ Temporary directory path
 : The path of your /tmp directory relative to document root.
 
 Site URL
-: Your domain name and top-level domain (i.e. domain.tld). Corresponds with **Site URL** preference (Admin > Preferences > Site).
+: Your domain name and top-level domain (i.e. example.com). Corresponds with **Site URL** preference (Admin > Preferences > Site).
 
 PHP version
 : The version number of your PHP install.</td>

@@ -343,7 +343,7 @@ This scope includes uniform resource identifiers (e.g. URLs), relative directory
 URIs, directory paths, and file names used inline are not formatted with italic or bold, nor marked up as inline code, nor set apart with quotation marks.
 
 Wrong:
-: *domain.tld*
+: *example.com*
 : The ‘Sites’ directory.
 : */Users/name/Sites*
 : `~/Sites`
@@ -351,8 +351,8 @@ Wrong:
 : `.htaccess`
 
 Correct:
-: https://domain.tld/textpattern
-: domain.tld
+: https://example.com/textpattern
+: example.com
 : The Sites directory.
 : /Users/name/Sites
 : ~/Sites

@@ -39,17 +39,17 @@ Brewster's Java Joint
 
 If you use ‘<i>www</i>’, then use this pattern:
 
-www.domain.tld
+www.example.com
 {:.example}
 
 If you enforce dropping the ‘<i>www</i>’ by way of a rewrite rule, use this pattern:
 
-domain.tld
+example.com
 {:.example}
 
 If you run Textpattern in a site subdirectory, append the directory name:
 
-domain.tld/subdirectory
+example.com/subdirectory
 {:.example}
 
 ### Site slogan

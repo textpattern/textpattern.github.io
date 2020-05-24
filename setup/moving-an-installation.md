@@ -17,7 +17,7 @@ Moving Textpattern means relocating the installation between two directories; ei
 
 ## Moving installation to a different directory
 
-A common scenario here is when a new user of Textpattern initially installs the software as a blog in a subdirectory (i.e. <i>domain.tld/subdirectory</i>) at side of the person’s existing website, then later decides to move it to root (<i>domain.tld</i>) when they realize Textpattern can run the entire thing.
+A common scenario here is when a new user of Textpattern initially installs the software as a blog in a subdirectory (i.e. <i>example.com/subdirectory</i>) at side of the person’s existing website, then later decides to move it to root (<i>example.com</i>) when they realize Textpattern can run the entire thing.
 
 Moving to a new directory is easy; it involves correcting important paths in relation to the new location then physically moving the installation files. Proceed in the following order.
 
@@ -31,12 +31,12 @@ On the default Site view of Preferences, change **Site URL** entry to reflect th
 
 Change from this:
 
-domain.tld/subdirectory
+example.com/subdirectory
 {:.example}
 
 To this:
 
-domain.tld
+example.com
 {:.example}
 
 Save changes.
@@ -47,12 +47,12 @@ Switch to the Admin view of Preferences and change the two paths for **File dire
 
 For example, this hypothetical file directory path:
 
-/path/to/your/domain.tld/subdirectory/live/files
+/path/to/your/example.com/subdirectory/live/files
 {:.example}
 
 Becomes this:
 
-/path/to/your/domain.tld/live/files
+/path/to/your/example.com/live/files
 {:.example}
 
 Do the same for the temporary directory path, then save the changes and log out of Textpattern.
@@ -120,7 +120,7 @@ As a matter of practicality, it is highly recommended to set up your new account
 
 ### 4. Upload installation and reconnect with database
 
-1. Upload your entire Textpattern tree (<i>domain.tld/textpattern</i>) and the default <i>index.php</i> and <i>.htaccess</i> files to your new server via FTP.
+1. Upload your entire Textpattern tree (<i>example.com/textpattern</i>) and the default <i>index.php</i> and <i>.htaccess</i> files to your new server via FTP.
 2. Open <i>textpattern/config.php</i> in a text editor.
 3. You will need to update all of the values that have changes with your server move (database name, mySQL username, mySQL password, host and table prefix, if a prefix was used.
 
