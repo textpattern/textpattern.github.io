@@ -29,7 +29,7 @@ The database engines and versions in the following table have been reported as '
 <tbody>
 <tr>
 <th scope="row">MariaDB</th>
-<td>5.5.5</td>
+<td>10.2.31<br>5.5.5-10.3.22, 5.5.5-10.1.37</td>
 <td>--</td>
 </tr>
 <tr>
