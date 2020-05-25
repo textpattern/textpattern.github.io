@@ -29,12 +29,12 @@ The database engines and versions in the following table have been reported as '
 <tbody>
 <tr>
 <th scope="row">MariaDB</th>
-<td>10.2.31<br>5.5.5-10.3.22, 5.5.5-10.1.37</td>
+<td>10.2.31,<br>5.5.5-10.3.22,<br>5.5.5-10.2.32,<br>5.5.5-10.1.37, 5.5.5-10.1.44</td>
 <td>--</td>
 </tr>
 <tr>
 <th scope="row">Percona</th>
-<td>8.0.19,<br>5.7.3,<br>5.6.47 – 5.6.48</td>
+<td>8.0.19,<br>5.7.3,<br>5.6.47, 5.6.48</td>
 <td>--</td>
 </tr>
 </tbody>
