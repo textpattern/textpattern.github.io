@@ -1,6 +1,6 @@
 ---
 layout: document
-category: Setup and configuration
+category: Setup and Configuration
 published: true
 title: Diagnostics troubleshooting
 description: The Textpattern Diagnostics panel is an important area for troubleshooting problems with your Textpattern installation.
@@ -8,7 +8,7 @@ description: The Textpattern Diagnostics panel is an important area for troubles
 
 # Diagnostics troubleshooting
 
-Troubleshooting web technology is an inherent fact of being online, and especially if you run your own website. Textpattern’s Diagnostics panel (Admin > Diagnostics) helps make troubleshooting easier. This document describes the functionality and how to use it. 
+Troubleshooting web technology is an inherent fact of being online, and especially if you run your own website. Textpattern’s Diagnostics panel (Admin > Diagnostics) helps make troubleshooting easier. This document describes the functionality and how to use it.
 
 **On this page**:
 
@@ -59,7 +59,7 @@ Where blue alerts are informative only, red and yellow alerts begin demanding ac
 Red messages mean something critical appears to be wrong and you need to troubleshoot it immediately. Several red alerts are possible.
 
 <span class="error">Textpattern requires at least version {number} of PHP to be installed on your server.</span>
-: This alert is clearly telling you what minimum version of PHP must working on your web server. The actual version number will appear in place of {number}. 
+: This alert is clearly telling you what minimum version of PHP must working on your web server. The actual version number will appear in place of {number}.
 
 <span class="error">index.php is inaccessible.</span>
 : This alert suggests your index.php file is not available, is not the right version, or that your **Site URL** is set wrong in Preferences (Admin > Preferences > Site). It could also mean the index.php file was not updated for whatever reason during a recent upgrade. Update the file using the one from the [current Textpattern release](https://github.com/textpattern/textpattern/releases) and refresh diagnostics.
@@ -74,7 +74,7 @@ Red messages mean something critical appears to be wrong and you need to trouble
 : If any of the directories in which Textpattern stores your images, downloadable files, themes or temporary files have their permissions set incorrectly, this alert will appear. {dirtype} will indicate which directory needs attention. [^chmod]
 
 <span class="error">Apache module mod_rewrite is not installed.</span>
-: This alert means the mod_rewrite module is not readable, possibly because it has not been uncommented in the php.ini file working on your website. You’ll need access to your web server to track this down and see, or contact your web host. 
+: This alert means the mod_rewrite module is not readable, possibly because it has not been uncommented in the php.ini file working on your website. You’ll need access to your web server to track this down and see, or contact your web host.
 
 <span class="error">Old placeholder file is in the way.</span>
 : This alert likely means you have created an actual folder in your server file tree that shares a name with a section you created in the Sections panel (Presentation > Sections), or vice versa. This can break your site. You need to rename or remove one or the other.
@@ -148,7 +148,7 @@ This output is first meant to help you troubleshoot issues by showing you a plet
 
 But another reason this output is provided, is so you can quickly copy and share it in the [troubleshooting forum](https://forum.textpattern.com/viewforum.php?id=67) where Textpattern developers and other experienced users can expertly spot where things might be going astray and give you advice about what to do.
 
-In the latter case, note the two controls at top of the output display. The first is the Detail selection menu for ‘Low’ and ‘High’ output. Toggle this and you will see the output difference is quite a lot. The other control is a checkbox for hiding private information. Make sure this is checked before copying the output for sharing in the forum. Share the ‘Low’ amount of detail at first. Provide the ‘High’ detail only if developers ask you for it later. 
+In the latter case, note the two controls at top of the output display. The first is the Detail selection menu for ‘Low’ and ‘High’ output. Toggle this and you will see the output difference is quite a lot. The other control is a checkbox for hiding private information. Make sure this is checked before copying the output for sharing in the forum. Share the ‘Low’ amount of detail at first. Provide the ‘High’ detail only if developers ask you for it later.
 
 ### Low detail
 
