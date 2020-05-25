@@ -34,7 +34,7 @@ The database engines and versions in the following table have been reported as '
 </tr>
 <tr>
 <th scope="row">Percona</th>
-<td>8.0.19,<br>5.7.3,<br>5.6.47, 5.6.48</td>
+<td>8.0.19,<br>5.7.3,<br>5.6.47 – 5.6.48</td>
 <td>--</td>
 </tr>
 </tbody>
