@@ -91,7 +91,7 @@ You will find this at the head of all platform web pages:
 <html lang="en-GB-oxendict">
 ```
 
-If your rusty on spelling conventions used by the *OED* versus other British-English conventions and those of other regions, Table 1 should help. The words shown are representative examples of all possible words having those patterns. Always use the *OED* conventions when writing Textpattern content.
+If you're rusty on spelling conventions used by the *OED* versus other British-English conventions and those of other regions, Table 1 should help. The words shown are representative examples of all possible words having those patterns. Always use the *OED* conventions when writing Textpattern content.
 
 <div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
 <caption>Table 1. Quick comparison of English spelling conventions by region.</caption>
