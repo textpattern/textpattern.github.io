@@ -52,7 +52,15 @@ Tag will accept the following attributes (**case-sensitive**):
 
 Other tags used: [else](/tags/else).
 
-### Example 2: Add a special class to mark the currently active section
+### Example 2: Omit text from a section
+
+~~~ html
+<txp:if_section not name="about,cheeses">
+    <p>This text appears on every section <em>apart from</em> the 'about' and 'cheeses' sections.</p>
+</txp:if_section>
+~~~
+
+### Example 3: Add a special class to mark the currently active section
 
 ~~~ html
 <nav>
