@@ -21,7 +21,11 @@ tags:
 <txp:evaluate />
 ~~~
 
-The **evaluate** tag can be used as either a *single* or *container* tag. When used as a single tag, it will evaluate the expression given by the `query` attribute and output its value. When used as a container tag, it will first check whether the `query` expression (if set) produces an empty result and output nothing in this case. Otherwise, it will process the contained tags optionally filtered by the `test` attribute. If all of them produce empty results, nothing will be output. Otherwise, it will return the whole processed content.
+The **evaluate** tag can be used as either a *single* or *container* tag. When used as a single tag, it will evaluate the expression given by the `query` attribute and output its value. When used as a container tag, it will first check whether the `query` expression (if set) produces an empty result and output nothing in this case.
+
+Otherwise, it will process the contained tags optionally filtered by the `test` attribute. If all of them produce empty results, nothing will be output. Otherwise, it will return the whole processed content.
+
+At its most basic level when used as a container, this tag wraps content you want to be conditional so it acts as a universal `<txp:if_something>...</txp:if_something>` tag. Put 'something' in as the value of the `test` attribute. i.e. the name of the tag you want to test to see if it outputs anything. See Example 2.
 
 ## Attributes
 
