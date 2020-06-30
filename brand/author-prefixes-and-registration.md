@@ -548,6 +548,7 @@ None at this time.
 * zem: zem
 * zen: zenigy
 * zmk: maxk
+* zoo: [zero](https://forum.textpattern.com/profile.php?id=707)
 
 </div>
 
