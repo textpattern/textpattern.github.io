@@ -104,8 +104,8 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 <div class="layout-text4col">
 
 * bab: benbruce
-* bau: bauhouse
 * bas: Bastian
+* bau: bauhouse
 * beb: 1beb
 * ben: Baseline_Benny
 * bep: alice_c
@@ -141,8 +141,8 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * com (used for plugins resulting from community collaboration)
 * csb: csandberg
 * <span class="warning">css</span>
-* cxc: [cXc](https://forum.textpattern.com/profile.php?id=106730)
 * cti: Celti
+* cxc: [cXc](https://forum.textpattern.com/profile.php?id=106730)
 * czg: cziggurat
 
 </div>
@@ -300,8 +300,8 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 
 <div class="layout-text4col">
 
-* kai: kaioshin
 * kaf: [Pin007](https://forum.textpattern.com/profile.php?id=4180)
+* kai: kaioshin
 * kam: [lithium002](https://forum.textpattern.com/profile.php?id=140651)
 * kff: [Karl Francisco Fernandes](http://mesonprojekt.com/)
 * kgr: KurtRaschke
@@ -346,8 +346,8 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * mrd: mrdale
 * mrh: aesop1
 * mrs: marios
-* mrz: marz
 * mrw: nesher
+* mrz: marz
 * msd: [MattD](https://forum.textpattern.com/profile.php?id=14767)
 * msv: Martin Svihla (?)
 * mta: morgant
@@ -392,8 +392,8 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * prad: fpradignac
 * pro: hilaryaq
 * <span class="warning">psa</span>
-* pub ('public'; for use on products resulting from community collaboration)
 * ptv: Borisch
+* pub ('public'; for use on products resulting from community collaboration)
 * pzc: [prizmcloud](https://forum.textpattern.com/profile.php?id=183307)
 
 </div>
@@ -478,9 +478,9 @@ None at this time.
 * <span class="warning">the</span>
 * thg: the_ghost
 * tin: jeroen
-* tps: Tomsec
 * tok: [ToK](https://forum.textpattern.com/profile.php?id=192280)
 * tom: [Sacripant](https://forum.textpattern.com/profile.php?id=15147)
+* tps: Tomsec
 * <span class="warning">tpt</span>
 * tru: [truist](https://forum.textpattern.com/profile.php?id=2952)
 * tsw: mwaldtha
@@ -494,8 +494,8 @@ None at this time.
 <div class="layout-text4col">
 
 * uli: [uli](https://forum.textpattern.com/profile.php?id=9890)
-* uri: urizen
 * upm: Mary
+* uri: urizen
 
 </div>
 
@@ -518,8 +518,8 @@ None at this time.
 * wcz: [whocarez](https://forum.textpattern.com/profile.php?id=13728)
 * wet: [wet](https://forum.textpattern.com/profile.php?id=5463)
 * wlk: [Walker](https://forum.textpattern.com/profile.php?id=37)
-* wnp: datafirm
 * wm: watts
+* wnp: datafirm
 * wow: nighthawk
 
 </div>
