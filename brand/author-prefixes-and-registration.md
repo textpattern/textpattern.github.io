@@ -35,7 +35,7 @@ See additional notes in the [Registered prefixes](#registered-prefixes) Legend.
 
 ## How to register
 
-When ready to register a prefix, open a new Prefix registration issue](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&template=register-author-prefix.md&title=Request+for+prefix%3A+add+prefix+here) in the user documentation repository and respond to the questions accordingly.
+When ready to register a prefix, open a new [prefix registration issue](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&template=register-author-prefix.md&title=Request+for+prefix%3A+add+prefix+here) in the user documentation repository and respond to the questions accordingly.
 
 If you do not have a GitHub account and do not want to create one, make your prefix request in the [Theme discussion](https://forum.textpattern.com/viewforum.php?id=8) or [Plugin discussion](https://forum.textpattern.com/viewforum.php?id=13). Point out your anti-GitHub position so it is understood. Totally fine.
 
