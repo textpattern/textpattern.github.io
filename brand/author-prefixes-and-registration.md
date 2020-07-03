@@ -270,6 +270,7 @@ Owners are identified by their Textpattern community forum usernames. Usernames 
 * jbx: [grundgesetz](https://forum.textpattern.com/profile.php?id=34501)
 * jcb: jimb
 * jcp: JohnAJ
+* jcr: [Jakob](https://forum.textpattern.com/profile.php?id=3812)
 * jcv: grump.org
 * jdt: iioshius
 * jdw: [JanDW](https://forum.textpattern.com/profile.php?id=15409)
