@@ -143,7 +143,7 @@ This would result in the following, for example:
 
 Using the above code in a page template would permit you to use example.org/articles?latest=1 as a URL and have Textpattern capture the 'latest' parameter and take action to display just the most recent article in that section.
 
-Other tags used: [variable](/tags/variable), [if_variable](/tags/if_variable), [else](/tags/else), [article](/tags/article).
+Other tags used: [article](/tags/article), [else](/tags/else), [if_variable](/tags/if_variable), [variable](/tags/variable).
 
 As an alternative, in the Advanced options of the Preferences panel, create a custom form type 'html' of type `mediatype="text/html"`. Then in the Forms panel, create a new form called 'most-recent' of this new 'html' type and make the following its contents:
 
