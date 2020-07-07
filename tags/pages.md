@@ -5,7 +5,7 @@ published: true
 title: Pages
 description: TODO.
 tags:
-  - Markup tags
+  - Navigation tags
 ---
 
 # Page url
