@@ -157,6 +157,10 @@ Now each hit of /any-section/?f=most-recent will 302-redirect the visitor to the
 
 ## Genealogy
 
+### Version 4.7.2
+
+`context` attribute added.
+
 ### Version 4.7.0
 
 `type` attribute behaviour changes (value will always be sanitized). \\

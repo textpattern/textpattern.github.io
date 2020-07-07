@@ -29,6 +29,10 @@ If used as a container tag, the HTML required to output a hyperlink is returned;
 
 Tag will accept the following attributes (**case-sensitive**):
 
+`context="list"`
+: Specifies Textpattern parameters that must be "inherited" by the article URL. For example, when used in a list article form on a category page `index.php?c=somecat`, `<txp:permlink />` without `context` attribute will produce canonical `.../title` links, while `<txp:permlink context />` produces `.../title?c=somecat` links. Useful jointly with the [permlink](/tags/permlink) tag in individual article forms when one needs to restrain navigation to the current article category (author, month, ...).
+: **Default:** unset.
+
 `form="form name"`
 : A form to parse next article fields.
 : **Default:** unset.
@@ -79,3 +83,9 @@ For example, to give the link an HTML `title` attribute of the next article's ti
 ~~~
 
 Other tags used: [title](/tags/title).
+
+## Genealogy
+
+### Version 4.7.2
+
+`context` attribute added.
