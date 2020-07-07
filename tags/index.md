@@ -48,8 +48,8 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [article](/tags/article) <span class="footnote warning">**Modified v4.7.2**</span>
-* [article_custom](/tags/article_custom) <span class="footnote warning">**Modified v4.7.2**</span>
+* [article](/tags/article)
+* [article_custom](/tags/article_custom)
 * [article_id](/tags/article_id)
 * [article_image](/tags/article_image)
 * [article_url_title](/tags/article_url_title)
@@ -67,7 +67,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [body](/tags/body)
-* [breadcrumb](/tags/breadcrumb) <span class="footnote warning">**Modified v4.7.0**</span>
+* [breadcrumb](/tags/breadcrumb)
 {: .list--no-bullets}
 
 </div>
@@ -79,7 +79,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [category](/tags/category)
-* [category_list](/tags/category_list) <span class="footnote warning">**Modified v4.7.0**</span>
+* [category_list](/tags/category_list)
 * [category1](/tags/category1)
 * [category2](/tags/category2)
 * [comment_anchor](/tags/comment_anchor)
@@ -104,7 +104,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [comments_help](/tags/comments_help)
 * [comments_invite](/tags/comments_invite)
 * [comments_preview](/tags/comments_preview)
-* [css](/tags/css) <span class="footnote warning">**Modified v4.7.2**</span>
+* [css](/tags/css)
 * [custom_field](/tags/custom_field)
 {: .list--no-bullets}
 
@@ -120,7 +120,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [email](/tags/email)
 * [error_message](/tags/error_message)
 * [error_status](/tags/error_status)
-* [evaluate](/tags/evaluate) <span class="footnote success">**New v4.7.0**</span>
+* [evaluate](/tags/evaluate)
 * [excerpt](/tags/excerpt)
 * [expires](/tags/expires)
 {: .list--no-bullets}
@@ -156,8 +156,8 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [header](/tags/header) <span class="footnote success">**New v4.7.0**</span>
-* [hide](/tags/hide) <span class="footnote warning">**Modified v4.7.0**</span>
+* [header](/tags/header)
+* [hide](/tags/hide)
 {: .list--no-bullets}
 
 </div>
@@ -168,51 +168,51 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [if_article_author](/tags/if_article_author) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_article_category](/tags/if_article_category) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_article_id](/tags/if_article_id) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_article_image](/tags/if_article_image) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_article_list](/tags/if_article_list) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_article_section](/tags/if_article_section) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_author](/tags/if_author) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_category](/tags/if_category) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_comments](/tags/if_comments) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_comments_allowed](/tags/if_comments_allowed) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_comments_disallowed](/tags/if_comments_disallowed) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_comments_error](/tags/if_comments_error) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_comments_preview](/tags/if_comments_preview) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_custom_field](/tags/if_custom_field) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_article_author](/tags/if_article_author)
+* [if_article_category](/tags/if_article_category)
+* [if_article_id](/tags/if_article_id)
+* [if_article_image](/tags/if_article_image)
+* [if_article_list](/tags/if_article_list)
+* [if_article_section](/tags/if_article_section)
+* [if_author](/tags/if_author)
+* [if_category](/tags/if_category)
+* [if_comments](/tags/if_comments)
+* [if_comments_allowed](/tags/if_comments_allowed)
+* [if_comments_disallowed](/tags/if_comments_disallowed)
+* [if_comments_error](/tags/if_comments_error)
+* [if_comments_preview](/tags/if_comments_preview)
+* [if_custom_field](/tags/if_custom_field)
 * [if_description](/tags/if_description)
-* [if_different](/tags/if_different) <span class="footnote warning">**Modified v4.7.2**</span>
-* [if_excerpt](/tags/if_excerpt) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_expired](/tags/if_expired) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_expires](/tags/if_expires) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_first_article](/tags/if_first_article) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_first_category](/tags/if_first_category) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_different](/tags/if_different)
+* [if_excerpt](/tags/if_excerpt)
+* [if_expired](/tags/if_expired)
+* [if_expires](/tags/if_expires)
+* [if_first_article](/tags/if_first_article)
+* [if_first_category](/tags/if_first_category)
 * [if_first_file](/tags/if_first_file)
 * [if_first_image](/tags/if_first_image)
 * [if_first_link](/tags/if_first_link)
-* [if_first_section](/tags/if_first_section) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_individual_article](/tags/if_individual_article) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_first_section](/tags/if_first_section)
+* [if_individual_article](/tags/if_individual_article)
 * [if_keywords](/tags/if_keywords)
-* [if_last_article](/tags/if_last_article) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_last_category](/tags/if_last_category) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_last_article](/tags/if_last_article)
+* [if_last_category](/tags/if_last_category)
 * [if_last_file](/tags/if_last_file)
 * [if_last_image](/tags/if_last_image)
 * [if_last_link](/tags/if_last_link)
-* [if_last_section](/tags/if_last_section) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_logged_in](/tags/if_logged_in) <span class="footnote success">**New v4.7.0**</span>
-* [if_plugin](/tags/if_plugin) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_last_section](/tags/if_last_section)
+* [if_logged_in](/tags/if_logged_in)
+* [if_plugin](/tags/if_plugin)
 * [if_request](/tags/if_request) <span class="footnote warning">**New v4.8.0**</span>
-* [if_search](/tags/if_search) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_search_results](/tags/if_search_results) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_section](/tags/if_section) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_status](/tags/if_status) <span class="footnote warning">**Modified v4.7.0**</span>
-* [if_thumbnail](/tags/if_thumbnail) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_search](/tags/if_search)
+* [if_search_results](/tags/if_search_results)
+* [if_section](/tags/if_section)
+* [if_status](/tags/if_status)
+* [if_thumbnail](/tags/if_thumbnail)
 * [if_variable](/tags/if_variable) <span class="footnote warning">**Modified v4.8.0**</span>
-* [if_yield](/tags/if_yield) <span class="footnote warning">**Modified v4.7.0**</span>
+* [if_yield](/tags/if_yield)
 * [image](/tags/image) <span class="footnote warning">**Modified v4.8.0**</span>
-* [image_author](/tags/image_author) <span class="footnote warning">**Modified v4.7.0**</span>
+* [image_author](/tags/image_author)
 * [image_date](/tags/image_date)
 * [image_display](/tags/image_display) <span class="footnote error">**Deprecated**</span>
 * [image_index](/tags/image_index) <span class="footnote error">**Deprecated**</span>
@@ -230,7 +230,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [keywords](/tags/keywords) <span class="footnote warning">**Modified v4.7.0**</span>
+* [keywords](/tags/keywords)
 {: .list--no-bullets}
 
 </div>
@@ -293,7 +293,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [older](/tags/older) <span class="footnote warning">**Modified v4.8.0**</span>
-* [output_form](/tags/output_form) <span class="footnote warning">**Modified v4.7.2**</span>
+* [output_form](/tags/output_form)
 {: .list--no-bullets}
 
 </div>
@@ -304,7 +304,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [page_title](/tags/page_title) <span class="footnote warning">**Modified v4.7.0**</span>
+* [page_title](/tags/page_title)
 * [page_url](/tags/page_url) <span class="footnote warning">**Modified v4.8.0**</span>
 * [password_protect](/tags/password_protect)
 * [permlink](/tags/permlink)
@@ -337,10 +337,10 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 
 <div class="layout-text4col">
 
-* [search_input](/tags/search_input) <span class="footnote warning">**Modified v4.7.2**</span>
+* [search_input](/tags/search_input)
 * [search_result_count](/tags/search_result_count)
 * [search_result_date](/tags/search_result_date)
-* [search_result_excerpt](/tags/search_result_excerpt) <span class="footnote warning">**Modified v4.7.0**</span>
+* [search_result_excerpt](/tags/search_result_excerpt)
 * [search_result_title](/tags/search_result_title)
 * [search_result_url](/tags/search_result_url)
 * [search_term](/tags/search_term)
@@ -348,7 +348,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [section_list](/tags/section_list) <span class="footnote warning">**Modified v4.8.0**</span>
 * [site_name](/tags/site_name)
 * [site_slogan](/tags/site_slogan)
-* [site_url](/tags/site_url) <span class="footnote warning">**Modified v4.7.0**</span>
+* [site_url](/tags/site_url)
 {: .list--no-bullets}
 
 </div>
