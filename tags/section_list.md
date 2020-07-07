@@ -122,6 +122,10 @@ Other tags used: [if_section](/tags/if_section), [section](/tags/section).
 
 ## Genealogy
 
+### Version 4.8.0
+
+Accepts valueless `exclude` attribute.
+
 ### Version 4.7.0
 
 `breakby` attribute added.
