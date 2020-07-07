@@ -304,8 +304,6 @@ One of the [Developer rules of the road](#developer-rules-of-the-road). When you
 
 -   [Plugin user-help
     guidelines](/development/plugin-user-help-guidelines)
--   [sed_plugin_help_viewer](https://textpattern.org/plugins/612/sed_plugin_help_viewer)
-    (A help viewer plugin that you might find… helpful.)
 
 **Code repositories:**
 
