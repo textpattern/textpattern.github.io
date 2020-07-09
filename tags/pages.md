@@ -21,7 +21,7 @@ tags:
 <txp:pages />
 ~~~
 
-The **pages** tag is both a *single* tag and a *container* tag. The tag should be used in a page after an article tag.
+The **pages** tag is both a *single* tag and a *container* tag.
 
 Textpattern will replace this tag with links to the next/previous lists of articles in the sort order. The container tags wrap the text or tag assigned to the link. As a single tag it outputs the URL for the next/previous list page.
 
@@ -29,13 +29,25 @@ Textpattern will replace this tag with links to the next/previous lists of artic
 
 Tag will accept the following attributes (**case-sensitive**):
 
-`escape="html"` <span class="footnote warning">v4.3.0+</span>
+`escape="html"`
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&`.
 : **Values:** See the [tag escaping](/tags/tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
-`rel="text"` <span class="footnote warning">v4.7.0+</span>
+`link="boolean"`
+: Whether to enclose the output in HTML `a` tag.
+: **Default:** unset.
+
+`pg="text or valueless"`
+: Used to set the name of the pagination URL parameter.
+: **Default:** unset (`pg`).
+
+`rel="text"`
 : [HTML rel attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) to be applied to link.
+: **Default:** unset.
+
+`shift="list of numbers or valueless"`
+: Used to indicate the offset of the desired pages relatively to the current page.
 : **Default:** unset.
 
 `showalways="boolean"`
@@ -47,9 +59,13 @@ Tag will accept the following attributes (**case-sensitive**):
 : [HTML title attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#title) to be applied to link.
 : **Default:** unset.
 
+`total="number or valueless"`
+: Used to set the number of pages to take in consideration or to output its current value.
+: **Default:** unset.
+
 ### Common presentational attributes
 
-TODO.
+`break`, `limit`.
 
 ## Examples
 
