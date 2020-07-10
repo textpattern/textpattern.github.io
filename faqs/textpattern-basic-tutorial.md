@@ -263,7 +263,7 @@ Remove the `include_default` attribute from `<txp:section_list />` tag, because 
 Add…
 
 ~~~ html
-`<txp:css format="link" />`
+<txp:css format="link" />
 ~~~
 
 …to the `<head>` region. Your site now has CSS. See the [Styles panel](/administration/styles-panel) to edit the stylesheet. In the [Sections panel](/administration/sections-panel), note that each section is associated with one of these name stylesheets, allowing you to set section-specific styles.
