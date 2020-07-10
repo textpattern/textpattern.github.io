@@ -33,6 +33,8 @@ Plugins thmeselves come in a few flavours. From Textpattern 4.9, the way plugins
 
 *Important*: in Textpattern 4.8 and earlier, only .txt files go through the verification step after upload. The other types - .zip and .php - do not. So be sure to check the code before installing the latter flavours. From Textpattern 4.9 onwards, _all_ plugins display the verification step, regardless of format, and you will need to confirm installation.
 
+The following types of plugin are supported:
+
 #### A zip (`.zip`) package
 
 More complex plugins, or those that have their component elements (code, help text, language packs and supplementary library files) in separate files or directory structures may be offered in an archive packaged .zip format.
