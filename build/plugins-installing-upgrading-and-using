@@ -13,21 +13,6 @@ Textpattern by itself is capable of doing a lot, especially as you learn to use 
 * Table of contents
 {:toc}
 
-* [Installing plugins](#installing-plugins)
-  * [Finding plugins](#finding-plugins)
-  * [Plugin file anatomy](#plugin-file-anatomy)
-  * [Verifying plugin file contents](#verifying-plugin-file-contents)
-  * [Plugin installation errors](#plugin-installation-errors)
-
-* [Plugin cache directory](#plugin-cache-directory)
-* [Managing plugins](#managing-plugins)
-  * [Activating a plugin](#activating-a-plugin)
-  * [Editing a plugin](#editing-a-plugin)
-  * [Plugin help and options](#plugin-help-and-options)
-* [Updating plugins](#updating-plugins)
-* [Advice on plugin usage](#advice-on-plugin-usage)
-* [Plugin development?](#plugin-development)
-
 ## Installing plugins
 
 From your Textpattern back-end, visit the Plugins panel under the Admin menu. The top part of the panel is where you install, upload or upgrade plugins.
