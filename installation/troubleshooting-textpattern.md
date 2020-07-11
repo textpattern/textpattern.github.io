@@ -228,7 +228,7 @@ If that doesn't help or causes a 500 Internal Server error, contact your web hos
 
 This means Textpattern is unable to connect to the MySQL database. This can happen occasionally on some shared/virtual hosting servers when another user hogs all the available database resources. If it happens regularly, ask your hosting provider whether there's something they can do to fix the problem.
 
-If you're seeing "Database Unavailable" on every page view, without exception, then the problem is most likely a database server crash, or a misconfiguration. Check the settings in your Textpattern `config.php` file and make sure you can connect to the database using those settings in phpMyAdmin or similar SQL client. If the database server is working, check your `.htaccess` file and consider temporarily disabling it. If problems persist, talk to your hosting provider.
+If you're seeing "Database Unavailable" on every page view, without exception, then the problem is most likely a database server crash, or a misconfiguration. Check the settings in your Textpattern `config.php` file and make sure you can connect to the database using those settings in phpMyAdmin or similar SQL client. Check the file permissions on `config.php` to ensure the web server user is able to read and execute the file. If the database server is working, check your `.htaccess` file and consider temporarily disabling it. If problems persist, talk to your hosting provider.
 
 ### Allowed memory size of X bytes exhausted
 
