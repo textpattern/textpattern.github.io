@@ -82,7 +82,7 @@ For example, to give the link an HTML `title` attribute of the previous article'
 </a>
 ~~~
 
-Other tags used: [title](/tags/title).
+Other tags used: [prev_title](/tags/prev_title), [title](/tags/title).
 
 ## Genealogy
 
