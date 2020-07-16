@@ -12,5 +12,6 @@ Thumbs.db
 # Jekyll files #
 ######################
 _site/*
+.jekyll-cache
 .jekyll-metadata
 Gemfile.lock
