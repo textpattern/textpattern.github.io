@@ -15,7 +15,7 @@ Textpattern will function with any appropriate HTTP (web) server running PHP and
 * Table of contents
 {:toc}
 
-### Apache, MySQL, PHP (AMP)
+### Apache with PHP
 
 Textpattern runs faster on current mainline versions of Apache, MySQL, and PHP than end-of-life legacy versions. Typically, an existing production Apache web server with MySQL (or equivalent drop-in replacement) and PHP with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
 
@@ -31,7 +31,7 @@ Save the file as preflight.php or similar, and view it in a browser. If PHP is c
 
 Textpattern-specific directives are provided by the .htaccess file in the root directory and other locations within the file tree. It is important to upload this file if your web server runs Apache; it provides instructions for the web server to work in a specific way. The root .htaccess file controls, among other things, clean URLs. Without the .htaccess file, clean URLs will not work.
 
-### Nginx, MySQL, PHP-FPM (EMP)
+### Nginx with PHP-FPM
 
 Textpattern runs faster on current mainline versions of Nginx, MySQL, and PHP than legacy versions. Typically, an existing production Nginx web server with MySQL (or equivalent drop-in replacement) and PHP-FPM with appropriate extensions as listed in the [system requirements](https://textpattern.com/about/119/system-requirements) is enough to run Textpattern.
 
@@ -80,7 +80,7 @@ server {
 
 This `server` block includes a basic web hosting setup and translates the Apache-specific directives in .htaccess to an Nginx format. It can be used as a base for your Textpattern site.
 
-### Hiawatha, MariaDB, PHP-FPM
+### Hiawatha with PHP-FPM
 
 Textpattern runs faster on current mainline versions of Hiawatha, MariaDB and PHP legacy versions. Only a few settings are required in your Hiawatha [virtual host section](https://www.hiawatha-webserver.org/howto/websites), as a separate include file or in the main /etc/hiawatha/hiawatha.conf file itself:
 
