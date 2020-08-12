@@ -141,7 +141,7 @@ Other tags used: [if_category](/tags/if_category).
 ### Example 3: Used as a container tag
 
 ~~~ html
-<txp:linklist wraptrag="ol" break="li">
+<txp:linklist wraptag="ol" break="li">
     <txp:link /><br />
     <txp:link_description /><br />
     <txp:linkdesctitle />
