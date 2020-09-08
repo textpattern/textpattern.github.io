@@ -70,7 +70,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 {: .index-docs-theme}
 
 * [Themes: Creating, using, and sharing](/build/themes-creating-using-and-sharing)
-* [Creating a custom administration theme](/themes/creating-administration-themes)
+* [Creating a custom administration theme](/build/creating-administration-themes)
 * [Themes website](https://github.com/textpattern/textpattern-themes-website) (in development)
 {: .list--no-bullets}
 
@@ -81,7 +81,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 {: .index-docs-dev}
 
 * [Plugin development](/development/)
-* [Plugins website](https://github.com/textpattern/textpattern-plugins-website) (in development)
+* [Plugins website](https://plugins.textpattern.com) (in development)
 * [All source code repositories](/development/textpattern-source-code-repositories) (zip packages, GitHub repos, and git commands)
 {: .list--no-bullets}
 
