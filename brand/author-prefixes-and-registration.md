@@ -475,6 +475,7 @@ None at this time.
 * tbs: thebombsite
 * tch: Sketch
 * tcm: tmacwrig
+* tem: [gu](https://forum.textpattern.com/profile.php?id=205782)
 * <span class="warning">tda</span>
 * tfu: carton
 * <span class="warning">the</span>
