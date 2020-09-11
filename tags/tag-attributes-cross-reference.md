@@ -576,6 +576,16 @@ HTML tag (without brackets) to wrap around [label](#label). Default is unset. <s
 
 </div>
 
+### loading
+
+<div class="layout-text4col">
+
+* [article_image](/tags/article_image)
+* [image](/tags/image)
+* [thumbnail](/tags/thumbnail)
+
+</div>
+
 ### limit
 
 <div class="layout-text4col">
