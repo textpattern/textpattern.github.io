@@ -34,7 +34,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** See the [tag escaping](/tags/tag-basics/tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
-`height="integer"`
+`height="integer"` <span class="footnote warning">v4.3.0+</span>
 : Specify an image `height` which overrides the value stored in the database. Use `height="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the height if a width is used).
 
 `html_id="id"` <span class="footnote warning">v4.0.4+</span>
@@ -53,6 +53,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : Value for the HTML `rel` attribute.
 : **Default:** unset.
 
+`loading="text"` <span class="footnote warning">v4.8.3+</span>
+: [HTML loading attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading) to be applied to image. Specifies how a browser should handle loading of the image.
+: **Values:** `lazy` (defers loading the image until it reaches a calculated distance from the viewport, as defined by the browser), `eager` (loads the image immediately, regardless of whether or not the image is currently within the visible viewport).
+: **Default:** unset.
+
 `name="image name"`
 : Specifies which image thumbnail to display by its image name as shown on the Textpattern Images panel.
 
@@ -61,7 +66,10 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Values:** `0` (no) or `1` (yes).
 : **Default:** `0`.
 
-`width="integer"`
+`title="boolean|title text"` <span class="footnote warning">v4.8.0+</span>
+: Adds the given text as an HTML 'title' attribute to the image. If used as a valueless attribute, will use the caption as text.
+
+`width="integer"` <span class="footnote warning">v4.3.0+</span>
 : Specify an image `width` which overrides the value stored in the database. Use `width="0"` to turn off the output of a width attribute in the `<img>` tag (thus the browser will scale the width if a height is used).
 
 ### Common presentational attributes
@@ -102,12 +110,21 @@ Displays thumbnails for all images found by the [images](/tags/images) tag.
 
 ## Genealogy
 
+### Version 4.8.3
+
+`loading` attribute added.
+
+### Version 4.8.0
+
+`title` attribute added.
+
 ### Version 4.7.0
 
 `poplink` attribute deprecated.
 
 ### Version 4.3.0
 
+`height` and `width` attributes added. \\
 Added context sensitivity within [images](/tags/images) tag.
 
 ### Version 4.2.0

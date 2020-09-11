@@ -43,6 +43,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : The HTML `id` attribute assigned to the image (or to the `wraptag`, if set).
 : **Default:** unset.
 
+`loading="text"` <span class="footnote warning">v4.8.3+</span>
+: [HTML loading attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading) to be applied to image. Specifies how a browser should handle loading of the image.
+: **Values:** `lazy` (defers loading the image until it reaches a calculated distance from the viewport, as defined by the browser), `eager` (loads the image immediately, regardless of whether or not the image is currently within the visible viewport).
+: **Default:** unset.
+
 `thumbnail="boolean"` <span class="footnote warning">v4.0.4+</span>
 : Use the thumbnail rather than full-size image.
 : **Values:** `0` (no) or `1` (yes).
@@ -99,6 +104,10 @@ Used in an article list form, this will display an article list consisting of hy
 Other tags used: [permlink](/tags/permlink).
 
 ## Genealogy
+
+### Version 4.8.3
+
+`loading` attribute added.
 
 ### Version 4.3.0
 

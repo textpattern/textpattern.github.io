@@ -47,6 +47,11 @@ Tag will accept the following attributes (**case-sensitive**):
 `id="integer"`
 : Specifies the `id`, assigned at upload of the image, to display. Can be found on the Images panel. If both `name` and `id` are specified, `name` is used while `id` is ignored. If neither is specified, the tag must be used within an [images](/tags/images) tag or form.
 
+`loading="text"` <span class="footnote warning">v4.8.3+</span>
+: [HTML loading attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading) to be applied to image. Specifies how a browser should handle loading of the image.
+: **Values:** `lazy` (defers loading the image until it reaches a calculated distance from the viewport, as defined by the browser), `eager` (loads the image immediately, regardless of whether or not the image is currently within the visible viewport).
+: **Default:** unset.
+
 `name="image name"`
 : Specifies which image to display by its image `name` as shown on the Images panel.
 
@@ -108,6 +113,10 @@ Had the `wraptag` attribute been used, the `class="promoted"` attribute/value wo
 Displays full-size images for all images found by the [images](/tags/images) tag.
 
 ## Genealogy
+
+### Version 4.8.3
+
+`loading` attribute added.
 
 ### Version 4.8.0
 

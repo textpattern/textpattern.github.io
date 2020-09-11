@@ -51,7 +51,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [article](/tags/article)
 * [article_custom](/tags/article_custom)
 * [article_id](/tags/article_id)
-* [article_image](/tags/article_image)
+* [article_image](/tags/article_image) <span class="footnote warning">**Modified v4.8.3**</span>
 * [article_url_title](/tags/article_url_title)
 * [author](/tags/author)
 * [author_email](/tags/author_email)
@@ -211,7 +211,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 * [if_thumbnail](/tags/if_thumbnail)
 * [if_variable](/tags/if_variable) <span class="footnote warning">**Modified v4.8.0**</span>
 * [if_yield](/tags/if_yield)
-* [image](/tags/image) <span class="footnote warning">**Modified v4.8.0**</span>
+* [image](/tags/image) <span class="footnote warning">**Modified v4.8.3**</span>
 * [image_author](/tags/image_author)
 * [image_date](/tags/image_date)
 * [image_display](/tags/image_display) <span class="footnote error">**Deprecated**</span>
@@ -362,7 +362,7 @@ Each Textpattern tag is described in detail on its respective reference page. Se
 <div class="layout-text4col">
 
 * [text](/tags/text)
-* [thumbnail](/tags/thumbnail)
+* [thumbnail](/tags/thumbnail) <span class="footnote warning">**Modified v4.8.3**</span>
 * [title](/tags/title)
 * [txp_die](/tags/txp_die)
 {: .list--no-bullets}
