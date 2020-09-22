@@ -153,4 +153,4 @@ More important than character count is your understanding of the resulting marku
 
 In summary, mixed markup is generally easier for new Textpattern users to get up to speed with, until they've become more familiar with the scope of Textpattern tag functionality. Advanced users of Textpattern generally prefer the integrated notation because it saves character space. But it doesn't matter either way, as long as the markup is constructed correctly in relation to how Textpattern functions.
 
-[Next: Tag escaping](/tags/tag-basics/tag-escaping)
+[Next: Tag escaping](/tags/learning/#tag-escaping)

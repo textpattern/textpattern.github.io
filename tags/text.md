@@ -32,7 +32,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `escape="html"` <span class="footnote warning">v4.6.0+</span>
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&` within text.
-: **Values:** See the [tag escaping](/tags/tag-basics/tag-escaping) documentation for all possible values.
+: **Values:** See the [tag escaping](/tags/learning/#tag-escaping) documentation for all possible values.
 : **Default:** `html`.
 
 `item="text"`
