@@ -679,6 +679,7 @@ See [Form templates](/themes/form-templates-explained) for further explanation.
 
 * [article_custom](/tags/article_custom)
 * [if_custom_field](/tags/if_custom_field)
+* [if_variable](/tags/if_variable)
 * [related_articles](/tags/related_articles)
 * [search_input](/tags/search_input)
 
