@@ -55,7 +55,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 ### Example 1: Select a stylesheet based on author
 
-Selects a stylesheet named `author_list` when a list by author `admi` is being displayed, or a stylesheet determined by the active section for normal page display.
+Selects a stylesheet named `author_list` when a list by author `admin` is being displayed, or a stylesheet determined by the active section for normal page display.
 
 ~~~ html
 <txp:if_author name="admin">
