@@ -42,14 +42,6 @@ Tag will accept the following attributes (**case-sensitive**):
 : Adds `value` to the current variable value. If both are numeric and `separator` is not set, the result is their sum. Otherwise, `value` is appended as a string, optionally separated by `separator` (see below).
 : **Default:** unset.
 
-`match="match type"` <span class="footnote warning">v4.8.0+</span>
-: How you wish your variable's value to be tested. Choose from: \\
-`exact`: value text must exactly match the variable. \\
-`any`: checks if any of the given comma-separated list of `value`s occur anywhere in the variable. \\
-`all`: checks if all of the given comma-separated list of `value`s occur anywhere in the variable. \\
-`pattern`: allows you to specify a regular expression in your `value` attribute to match against the variable.
-: **Default:** `exact`.
-
 `name="text"`
 : The variable name for which you wish to assign a value. Valid variable names must not contain any single or double quotes.
 
@@ -230,7 +222,7 @@ The expression `^([6-9]|\d\d)` means: does the page value start with a 6, 7, 8, 
 </txp:evaluate>
 ~~~
 
-Other tags used: [else](/tags/else), [evaluate]/tags/evaluate [if_variable](/tags/if_variable), [page_url](/tags/page_url).
+Other tags used: [else](/tags/else), [evaluate]/tags/evaluate, [if_variable](/tags/if_variable), [page_url](/tags/page_url).
 
 ### Example 7: Link to the latest article in a section
 
@@ -249,10 +241,6 @@ Using the above code in a page template would permit you to use example.org/arti
 Other tags used: [article](/tags/article), [else](/tags/else), [if_variable](/tags/if_variable), [page_url](/tags/page_url).
 
 ## Genealogy
-
-### Version 4.8.0
-
-`match` attribute added.
 
 ### Version 4.7.2
 
