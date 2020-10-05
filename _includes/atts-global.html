@@ -4,75 +4,75 @@
 <p>These attributes are shared by all tags - and plugins, provided they do not override the functionality.</p>
 {% endif %}
 <dl>
-    <dt><code class="highlighter-rouge language-plaintext">class="class name"</code></dt>
-    <dd>HTML <code class="highlighter-rouge language-plaintext">class</code> to apply to the wrapper.</dd>
+    <dt><code>class="class name"</code></dt>
+    <dd>HTML <code>class</code> to apply to the wrapper.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
     <dd><strong>Default:</strong> {% if include.class == null %}unset{% else %}{{ include.class }}{% endif %}.</dd>
 
-    <dt><code class="highlighter-rouge language-plaintext">default="value"</code></dt>
+    <dt><code>default="value"</code></dt>
     <dd>The value to display if the tag’s output is blank.</dd>
     <dd><strong>Values:</strong> Any.</dd>
     <dd><strong>Default:</strong> {% if include.default == null %}unset{% else %}{{ include.default }}{% endif %}.</dd>
 
-    <dt><code class="highlighter-rouge language-plaintext">escape="list, of, transforms"</code></dt>
+    <dt><code>escape="list, of, transforms"</code></dt>
     <dd>The transforms to apply to the output. See <a href="/tags/learning/#tag-escaping">tag escaping</a> for details.</dd>
     <dd><strong>Values:</strong>
-        <code class="highlighter-rouge language-plaintext">html</code>,
-        <code class="highlighter-rouge language-plaintext">js</code>,
-        <code class="highlighter-rouge language-plaintext">json</code>,
-        <code class="highlighter-rouge language-plaintext">url</code>,
-        <code class="highlighter-rouge language-plaintext">float</code>,
-        <code class="highlighter-rouge language-plaintext">integer</code>,
-        <code class="highlighter-rouge language-plaintext">number</code>,
-        <code class="highlighter-rouge language-plaintext">ordinal</code>,
-        <code class="highlighter-rouge language-plaintext">spell</code>,
-        <code class="highlighter-rouge language-plaintext">lower</code>,
-        <code class="highlighter-rouge language-plaintext">upper</code>,
-        <code class="highlighter-rouge language-plaintext">title</code>,
-        <code class="highlighter-rouge language-plaintext">[r|l]trim</code>,
-        <code class="highlighter-rouge language-plaintext">quote</code>,
-        <code class="highlighter-rouge language-plaintext">tags</code>,
-        <code class="highlighter-rouge language-plaintext">textile</code>,
+        <code>html</code>,
+        <code>js</code>,
+        <code>json</code>,
+        <code>url</code>,
+        <code>float</code>,
+        <code>integer</code>,
+        <code>number</code>,
+        <code>ordinal</code>,
+        <code>spell</code>,
+        <code>lower</code>,
+        <code>upper</code>,
+        <code>title</code>,
+        <code>[r|l]trim</code>,
+        <code>quote</code>,
+        <code>tags</code>,
+        <code>textile</code>,
         _any tag_</dd>
     <dd><strong>Default:</strong> {% if include.escape == null %}html{% else %}{{ include.escape }}{% endif %}.</dd>
 
-    <dt><code class="highlighter-rouge language-plaintext">html_id="value"</code></dt>
-    <dd>HTML <code class="highlighter-rouge language-plaintext">id</code> to apply to the wrapper.</dd>
+    <dt><code>html_id="value"</code></dt>
+    <dd>HTML <code>id</code> to apply to the wrapper.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
     <dd><strong>Default:</strong> {% if include.html_id == null %}unset{% else %}{{ include.html_id }}{% endif %}.</dd>
 
-    <dt><code class="highlighter-rouge language-plaintext">label="value"</code></dt>
+    <dt><code>label="value"</code></dt>
     <dd>The label to display before the output.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
     <dd><strong>Default:</strong> {% if include.label == null %}unset{% else %}{{ include.label }}{% endif %}.</dd>
 
-    <dt><code class="highlighter-rouge language-plaintext">labeltag="tag"</code></dt>
+    <dt><code>labeltag="tag"</code></dt>
     <dd>The tag (without angle brackets) to wrap the label.</dd>
-    <dd><strong>Values:</strong> Any valid HTML tag, e.g. <code class="highlighter-rouge language-plaintext">h3</code> or <code class="highlighter-rouge language-plaintext">div</code>.</dd>
+    <dd><strong>Values:</strong> Any valid HTML tag, e.g. <code>h3</code> or <code>div</code>.</dd>
     <dd><strong>Default:</strong> {% if include.labeltag == null %}unset{% else %}{{ include.labeltag }}{% endif %}.</dd>
 
-    <dt><code class="highlighter-rouge language-plaintext">not="boolean"</code></dt>
-    <dd>Switch <code class="highlighter-rouge language-plaintext"><txp:else /></code> parts.</dd>
+    <dt><code>not="boolean"</code></dt>
+    <dd>Switch <code><txp:else /></code> parts.</dd>
     <dd><strong>Values:</strong> 0 (no) or 1 (yes).</dd>
     <dd><strong>Default:</strong> {% if include.not == null %}unset (0){% else %}{{ include.not }}{% endif %}.</dd>
 
-    <dt><code class="highlighter-rouge language-plaintext">replace="string"</code></dt>
-    <dd>Replace the content stripped via the <code class="highlighter-rouge language-plaintext">trim</code> attribute.</dd>
+    <dt><code>replace="string"</code></dt>
+    <dd>Replace the content stripped via the <code>trim</code> attribute.</dd>
     <dd><strong>Values:</strong> Any valid string.</dd>
     <dd><strong>Default:</strong> {% if include.replace == null %}unset{% else %}{{ include.replace }}{% endif %}.</dd>
 
-    <dt><code class="highlighter-rouge language-plaintext">trim="string or regex"</code></dt>
+    <dt><code>trim="string or regex"</code></dt>
     <dd>Remove the matching patterns from the output.</dd>
-    <dd><strong>Values:</strong> Any. Use <code class="highlighter-rouge language-plaintext">/value/</code> to trigger regular expression matching, otherwise the value will be treated verbatim as a set of characters to trim.</dd>
+    <dd><strong>Values:</strong> Any. Use <code>/value/</code> to trigger regular expression matching, otherwise the value will be treated verbatim as a set of characters to trim.</dd>
     <dd><strong>Default:</strong> {% if include.trim == null %}unset{% else %}{{ include.trim }}{% endif %}.</dd>
 
-    <dt><code class="highlighter-rouge language-plaintext">wrapform="form name"</code></dt>
-    <dd>The form to be used as <code class="highlighter-rouge language-plaintext">wraptag</code>. Handy if the wraptag pattern is too long, or is reused.</dd>
+    <dt><code>wrapform="form name"</code></dt>
+    <dd>The form to be used as <code>wraptag</code>. Handy if the wraptag pattern is too long, or is reused.</dd>
     <dd><strong>Values:</strong> Any defined form name.</dd>
     <dd><strong>Default:</strong> {% if include.wrapform == null %}unset{% else %}{{ include.wrapform }}{% endif %}.</dd>
 
-    <dt><code class="highlighter-rouge language-plaintext">wraptag="tag or pattern"</code></dt>
+    <dt><code>wraptag="tag or pattern"</code></dt>
     <dd>The tag (without angle brackets) to wrap the output.</dd>
-    <dd><strong>Values:</strong> HTML tag or a string containing <code class="highlighter-rouge language-plaintext"><+></code> pattern that will be replaced by the output.</dd>
+    <dd><strong>Values:</strong> HTML tag or a string containing <code><+></code> pattern that will be replaced by the output.</dd>
     <dd><strong>Default:</strong> {% if include.wraptag == null %}unset{% else %}{{ include.wraptag }}{% endif %}.</dd>
 </dl>

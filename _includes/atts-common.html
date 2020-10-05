@@ -5,20 +5,20 @@
 {% endif %}
 <dl>
 {% if include.break %}
-    <dt><code class="highlighter-rouge language-plaintext">break="value"</code></dt>
-    <dd>Where value is an HTML element, specified without brackets (e.g. <code class="highlighter-rouge language-plaintext">break="li"</code>) or some string to separate list items.</dd>
+    <dt><code>break="value"</code></dt>
+    <dd>Where value is an HTML element, specified without brackets (e.g. <code>break="li"</code>) or some string to separate list items.</dd>
     <dd><strong>Default:</strong> {% if include.break == "" %}br{% else %}{{ include.break }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#break">break cross-reference</a>).</dd>
 {% endif %}
 
 {% if include.breakby %}
-    <dt><code class="highlighter-rouge language-plaintext">breakby="integer(s)"</code></dt>
-    <dd>Used to group list items when separating by <code class="highlighter-rouge language-plaintext">break</code>. Possible values are lists of integers, like <code class="highlighter-rouge language-plaintext">2</code> (groups of 2 items) or <code class="highlighter-rouge language-plaintext">1,2</code> (alternate groups of 1 and 2 items).</dd>
+    <dt><code>breakby="integer(s)"</code></dt>
+    <dd>Used to group list items when separating by <code>break</code>. Possible values are lists of integers, like <code>2</code> (groups of 2 items) or <code>1,2</code> (alternate groups of 1 and 2 items).</dd>
     <dd><strong>Default:</strong> {% if include.breakby == "" %}1 (unset){% else %}{{ include.breakby }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#breakby">breakby cross-reference</a>). </dd>
 {% endif %}
 
 {% if include.style %}
-    <dt><code class="highlighter-rouge language-plaintext">style="style rule"</code></dt>
-    <dd>Inline CSS <code class="highlighter-rouge language-plaintext">style</code> rule. It’s recommended that you assign CSS rules via <code class="highlighter-rouge language-plaintext">class</code> attribute instead.</dd>
+    <dt><code>style="style rule"</code></dt>
+    <dd>Inline CSS <code>style</code> rule. It’s recommended that you assign CSS rules via <code>class</code> attribute instead.</dd>
     <dd><strong>Default:</strong> {% if include.style == "" %}unset{% else %}{{ include.style }}{% endif %} (see <a href="/tags/tag-attributes-cross-reference#style">style cross-reference</a>).</dd>
 {% endif %}
 </dl>
