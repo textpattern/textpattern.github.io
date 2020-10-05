@@ -27,7 +27,7 @@ The conditional tag [if_excerpt](/tags/if_excerpt) can be used to check if there
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes (apart from [global attributes](https://docs.textpattern.com/tags/learning/#global-attributes)).
 
 ## Examples
 
@@ -89,3 +89,11 @@ Adjust the 35 to suit your application.
 ~~~
 
 Other tags used: [body](/tags/body).
+
+## Example 4: trim paragraphs tags from the excerpt
+
+From Textpattern 4.7.0, tags can use [global attributes](/tags/learning/#global-attributes). In this example any paragraph tags within the excerpt are excluded (escaped):
+
+~~~ html
+<txp:excerpt escape="p" />
+~~~
