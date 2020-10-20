@@ -15,7 +15,6 @@ This style guide concerns all written materials published on Textpattern platfor
 * Table of contents
 {:toc}
 
-
 ## Baseline references
 
 The Textpattern project uses British-English conventions for English writing and styling of content elements. Instead of writing everything in this guide from scratch, we adopt style conventions from a notable authority on the English-language, Oxford University. Two resources in particular are used:
@@ -174,7 +173,7 @@ Software, project… It’s all the same.
 
 Textpattern is spelled "*Textpattern*". Look at that closely. That is not two words, and there is no camel-case capital P. This isn't WordPress.
 
-When you need to use the brand name at all, write ’Textpattern’. Do not tack on ‘CMS’ (i.e. ‘Textpattern CMS’); it looks like a bloated tick on a skinny dog’s arse. Should anyone insist, because they feel strongly about SEO ranking, direct them to the metadata where they can have fun for machines. Your not offending the good human readers.
+When you need to use the brand name at all, write ’Textpattern’. Do not tack on ‘CMS’ (i.e. ‘Textpattern CMS’). Should anyone insist, because they feel strongly about SEO ranking, direct them to the metadata where they can have fun for machines. You're not offending the good human readers.
 
 Do not abbreviate the brand name in copy. (See the [Brand abbreviations](#brand-abbreviations) section.)
 
@@ -435,7 +434,7 @@ Wrong → All Textpattern Sections must have a page and style associated to it.
 The proper way write the version releases of Textpattern. This is less a stylistic issue and more a Textpattern development policy; however, it's relevant to the template:Txp current version that provide this dynamic value in multiple places in documentation. Ensure the version is correct in this template against the current Textpattern release.
 
 ## Appendix A: Template metadata
-For the sake of referencing, all Textpattern sites maintained on Joyent servers in support of the Textpattern project should use "Textpattern CMS" in template header data.
+For the sake of referencing, all Textpattern sites maintained in support of the Textpattern project should use "Textpattern CMS" in template header data.
 
 Recommended use of name (arbitrary examples only):
 
