@@ -57,7 +57,7 @@ Other tags used: [author](/tags/author).
 ### Example 2: Using the tag with else
 
 ~~~ html
-<txp:if_article_section name"poetry">
+<txp:if_article_section name="poetry">
     <p>Fun With poetry</p>
 <txp:else />
     <p><a href="index.php">Home</a></p>
