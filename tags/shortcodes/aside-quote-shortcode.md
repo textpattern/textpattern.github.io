@@ -117,8 +117,9 @@ Create the Tweet links:
 
 In the [Links panel](/administration/links-panel), create your Tweets using this association to the Textpattern link fields:
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>
+        <caption id="table1-caption" itemprop="about">Link field values.</caption>
         <thead>
             <tr>
                 <th class="t25" scope="col">Link field</th>

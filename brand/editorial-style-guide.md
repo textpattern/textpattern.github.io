@@ -92,66 +92,70 @@ You will find this at the head of all platform web pages:
 
 If you're rusty on spelling conventions used by the *OED* versus other British-English conventions and those of other regions, Table 1 should help. The words shown are representative examples of all possible words having those patterns. Always use the *OED* conventions when writing Textpattern content.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table"><table>
-<caption>Table 1. Quick comparison of English spelling conventions by region.</caption>
-<thead><tr>
-<th scope="col"></th>
-<th scope="col">-ize/-ise</th>
-<th scope="col">-yze/-yse</th>
-<th scope="col">-or/-our</th>
-<th scope="col">-ler/-ller</th>
-<th scope="col">-og/-ogue</th>
-<th scope="col">-am/-amme</th>
-<th scope="col">-ense/-ence</th>
-<th scope="col">-ter/-tre</th>
-</tr></thead>
-<tbody>
-<tr>
-<th scope="row">en-GB-oxendict</th>
-<td>realize</td>
-<td>analyse</td>
-<td>behaviour</td>
-<td>traveller</td>
-<td>catalogue</td>
-<td>programme<br>program (computer code)</td>
-<td>defence</td>
-<td>centre</td>
-</tr>
-<tr>
-<th scope="row">en-GB</th>
-<td>realise,<br>realize</td>
-<td>analyse</td>
-<td>behaviour</td>
-<td>traveller</td>
-<td>catalogue</td>
-<td>programme<br>program (computer code)</td>
-<td>defence</td>
-<td>centre</td>
-</tr>
-<tr>
-<th scope="row">en-CA</th>
-<td>realize</td>
-<td>analyze,<br>analyse</td>
-<td>behaviour,<br>behavior</td>
-<td>traveller</td>
-<td>catalogue</td>
-<td>program,<br> programme</td>
-<td>defence</td>
-<td>centre</td>
-</tr>
-<tr>
-<th scope="row">en-US</th>
-<td>realize</td>
-<td>analyze</td>
-<td>behavior</td>
-<td>traveler</td>
-<td>catalog</td>
-<td>program</td>
-<td>defense</td>
-<td>center</td>
-</tr>
-</tbody>
-</table></div>
+<div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
+    <table>
+        <caption id="table1-caption" itemprop="about">Table 1. Quick comparison of English spelling conventions by region.</caption>
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">-ize/-ise</th>
+                <th scope="col">-yze/-yse</th>
+                <th scope="col">-or/-our</th>
+                <th scope="col">-ler/-ller</th>
+                <th scope="col">-og/-ogue</th>
+                <th scope="col">-am/-amme</th>
+                <th scope="col">-ense/-ence</th>
+                <th scope="col">-ter/-tre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">en-GB-oxendict</th>
+                <td>realize</td>
+                <td>analyse</td>
+                <td>behaviour</td>
+                <td>traveller</td>
+                <td>catalogue</td>
+                <td>programme<br>program (computer code)</td>
+                <td>defence</td>
+                <td>centre</td>
+            </tr>
+            <tr>
+                <th scope="row">en-GB</th>
+                <td>realise,<br>realize</td>
+                <td>analyse</td>
+                <td>behaviour</td>
+                <td>traveller</td>
+                <td>catalogue</td>
+                <td>programme<br>program (computer code)</td>
+                <td>defence</td>
+                <td>centre</td>
+            </tr>
+            <tr>
+                <th scope="row">en-CA</th>
+                <td>realize</td>
+                <td>analyze,<br>analyse</td>
+                <td>behaviour,<br>behavior</td>
+                <td>traveller</td>
+                <td>catalogue</td>
+                <td>program,<br> programme</td>
+                <td>defence</td>
+                <td>centre</td>
+            </tr>
+            <tr>
+                <th scope="row">en-US</th>
+                <td>realize</td>
+                <td>analyze</td>
+                <td>behavior</td>
+                <td>traveler</td>
+                <td>catalog</td>
+                <td>program</td>
+                <td>defense</td>
+                <td>center</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 The main thing to realize is, there's little difference between general British English (en-GB) spelling and academic Oxford spelling (en-GB-oxendict). One of the big exceptions, however, is for words ending in *-ize/-ise* and their related grammatical forms. British contributors may be inclined to type ‘organisation’, for example, but it’s _organization_ here.
 

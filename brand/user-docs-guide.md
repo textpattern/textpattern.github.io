@@ -233,9 +233,9 @@ But that would be sloppy list construction to avoid.
 
 Alert messages appear to software users as feedback dialogue in the Diagnostics panel, or in other panels as a software user proceeds through certain tasks (e.g. when saving draft changes). Four kinds of alert messages exist (Table 1). The full set of alert messages in core are detailed in [Diagnostics](/administration/diagnostics-panel).
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption>Table 1. Class selectors for alert messages.</caption>
+        <caption id="table1-caption" itemprop="about">Table 1. Class selectors for alert messages.</caption>
         <thead>
             <tr>
                 <th scope="col">Alert type</th>
@@ -415,9 +415,9 @@ Due to certain platform constraints and necessities, documentation uses a mixtur
 
 Table 2 shows what Markdown syntax provides for inline formatting; either emphasis (`em`), strong (`strong`), or a combination of both. There is no syntax for italic (`i`) or bold (`b`), unfortunately, which must be added with regular HTML if needed.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table2-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption>Table 2. Markdown syntax for inline formatting.</caption>
+        <caption id="table2-caption" itemprop="about">Table 2. Markdown syntax for inline formatting.</caption>
         <thead>
             <tr>
                 <th scope="col">Style</th>
@@ -549,9 +549,9 @@ Then add your corresponding note as a list item in the footer of the tables (i.e
 
 Table 3 presents the entities to use, and demonstrates the notes as well, from which the above examples are taken.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table3-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption>Table 3. Reference-mark entities as table notes.</caption>
+        <caption id="table3-caption" itemprop="about">Table 3. Reference-mark entities as table notes.</caption>
         <thead>
             <tr>
                 <th scope="col">Name</th>
@@ -640,9 +640,9 @@ Use the following guidelines to make tables well-structured and useful:
 4. **Notes**. Table notes are optional (see [Notes in tables](#notes-in-tables)), but can help convey meaning and understanding from table headers and data. If notes are not needed, or a table footer at all, remove the entire `tfoot` region and ensure the three example reference marks in the HTML below (added as `sup` elements) are removed from table cells.
 
 ``` html
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="tablen-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption>Table n. Title of table</caption>
+        <caption id="tablen-caption" itemprop="about">Table n. Title of table</caption>
         <thead>
             <tr>
                 <th scope="col">Header</th>

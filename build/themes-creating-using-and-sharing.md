@@ -541,102 +541,108 @@ Say we have a gardener’s website, The Gardener’s Delight, and the owner want
 
 This could be structured in any number of ways, but Table 1 shows one possible blueprint for this mapping, which is neither too exaggerated nor ideally concise.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
-<table>
-<caption>Table 1. Example mapping of the Gardener’s Delight website using multiple themes and assets to different website sections.</caption>
-<thead>
-<tr>
-<th scope="col"></th>
-<th scope="col">Section</th>
-<th scope="col">Theme<sup>&#x002a;</sup></th>
-<th scope="col">Page</th>
-<th scope="col">Style</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">1</th>
-<td>default<sup>&#x2020;</sup></td>
-<td>abc-garden</td>
-<td>default</td>
-<td>default</td>
-</tr>
-<tr>
-<th scope="row">2</th>
-<td>articles</td>
-<td>abc-garden</td>
-<td>archive</td>
-<td>default</td>
-</tr>
-<tr>
-<th scope="row">3</th>
-<td>about</td>
-<td>abc-garden</td>
-<td>generic</td>
-<td>default</td>
-</tr>
-<tr>
-<th scope="row">4</th>
-<td>contact</td>
-<td>abc-garden</td>
-<td>generic</td>
-<td>default</td>
-</tr>
-<tr>
-<th scope="row">5</th>
-<td>error</td>
-<td>abc-error</td>
-<td>error_default</td>
-<td>404</td>
-</tr>
-<tr>
-<th scope="row">6</th>
-<td>broccoli</td>
-<td>abc-broccoli</td>
-<td>hothouse</td>
-<td>veggies</td>
-</tr>
-<tr>
-<th scope="row">7</th>
-<td>cabbage</td>
-<td>abc-cabbage</td>
-<td>hothouse</td>
-<td>veggies</td>
-</tr>
-<tr>
-<th scope="row">8</th>
-<td>carrots</td>
-<td>abc-carrots</td>
-<td>hothouse</td>
-<td>veggies</td>
-</tr>
-<tr>
-<th scope="row">9</th>
-<td>peppers</td>
-<td>abc-peppers</td>
-<td>hothouse</td>
-<td>veggies</td>
-</tr>
-<tr>
-<th scope="row">11</th>
-<td>tomatoes</td>
-<td>abc-tomatoes</td>
-<td>hothouse</td>
-<td>veggies</td>
-</tr>
-<tr>
-<th scope="row">11</th>
-<td>zucchini</td>
-<td>abc-zucchini</td>
-<td>hothouse</td>
-<td>veggies</td>
-</tr>
-</tbody>
-<tfoot><tr><td colspan="5"><ol class="list--refmarks">
-<li>Theme names begin with a developer prefix; in this case, the prefix reserved for documentation examples, ‘abc’.</li>
-<li>The website’s homepage.</li>
-</ol></td></tr></tfoot>
-</table>
+<div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
+    <table>
+        <caption id="table1-caption" itemprop="about">Table 1. Example mapping of the Gardener’s Delight website using multiple themes and assets to different website sections.</caption>
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Section</th>
+                <th scope="col">Theme<sup>&#x002a;</sup></th>
+                <th scope="col">Page</th>
+                <th scope="col">Style</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>default<sup>&#x2020;</sup></td>
+                <td>abc-garden</td>
+                <td>default</td>
+                <td>default</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>articles</td>
+                <td>abc-garden</td>
+                <td>archive</td>
+                <td>default</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>about</td>
+                <td>abc-garden</td>
+                <td>generic</td>
+                <td>default</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>contact</td>
+                <td>abc-garden</td>
+                <td>generic</td>
+                <td>default</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>error</td>
+                <td>abc-error</td>
+                <td>error_default</td>
+                <td>404</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>broccoli</td>
+                <td>abc-broccoli</td>
+                <td>hothouse</td>
+                <td>veggies</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>cabbage</td>
+                <td>abc-cabbage</td>
+                <td>hothouse</td>
+                <td>veggies</td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>carrots</td>
+                <td>abc-carrots</td>
+                <td>hothouse</td>
+                <td>veggies</td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td>peppers</td>
+                <td>abc-peppers</td>
+                <td>hothouse</td>
+                <td>veggies</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td>tomatoes</td>
+                <td>abc-tomatoes</td>
+                <td>hothouse</td>
+                <td>veggies</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td>zucchini</td>
+                <td>abc-zucchini</td>
+                <td>hothouse</td>
+                <td>veggies</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">
+                    <ol class="list--refmarks">
+                        <li>Theme names begin with a developer prefix; in this case, the prefix reserved for documentation examples, ‘abc’.</li>
+                        <li>The website’s homepage.</li>
+                    </ol>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
 </div>
 
 For clarity, here are the counts and types of theme asset pairings to sections reflected in Table 1:

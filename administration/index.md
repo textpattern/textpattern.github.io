@@ -27,8 +27,9 @@ The administration side is organized into three primary regions: Content, Presen
 
 The Content region of the administration side has seven panels out-of-the-box. The Write panel is the default.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>
+        <caption id="table1-caption" itemprop="about">Table 1. Content panels list.</caption>
         <thead>
             <tr>
                 <th class="t25" scope="col">Panel name</th>
@@ -72,8 +73,9 @@ The Content region of the administration side has seven panels out-of-the-box. T
 
 The Presentation region has five panels out-of-the-box. The Pages panel is the default.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table2-caption" itemscope itemtype="https://schema.org/Table">
     <table>
+        <caption id="table2-caption" itemprop="about">Table 2. Presentation panels list.</caption>
         <thead>
             <tr>
                 <th class="t25" scope="col">Panel name</th>
@@ -109,8 +111,9 @@ The Presentation region has five panels out-of-the-box. The Pages panel is the d
 
 The Admin region of the administration side has seven panels out-of-the-box, of which the Users panel is the default.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table3-caption" itemscope itemtype="https://schema.org/Table">
     <table>
+        <caption id="table3-caption" itemprop="about">Table 3. Admin panels list.</caption>
         <thead>
             <tr>
                 <th class="t25" scope="col">Panel name</th>

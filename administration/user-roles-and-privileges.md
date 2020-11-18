@@ -64,9 +64,9 @@ Default panels represent all existing panels in a fresh install of the software.
 
 #### Content panels
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table1-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption itemprop="about">Table 1: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Content panels.</caption>
+        <caption id="table1-caption" itemprop="about">Table 1: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Content panels.</caption>
         <thead>
             <tr>
                 <th scope="col">Role</th>
@@ -165,9 +165,9 @@ Default panels represent all existing panels in a fresh install of the software.
 
 #### Presentation panels
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table2-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption itemprop="about">Table 2: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Presenation panels.</caption>
+        <caption id="table2-caption" itemprop="about">Table 2: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Presenation panels.</caption>
         <thead>
             <tr>
                 <th scope="col">Role</th>
@@ -250,9 +250,9 @@ Default panels represent all existing panels in a fresh install of the software.
 
 #### Admin panels
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table3-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption itemprop="about">Table 3: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Admin panels.</caption>
+        <caption id="table3-caption" itemprop="about">Table 3: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for Admin panels.</caption>
         <thead>
             <tr>
                 <th scope="col">Role</th>
@@ -352,9 +352,9 @@ These regions will appear in the navigation alongside Content, Presentation, and
 
 Table 4 represents the two extended regions. Unlike with default panels, the extended panels are generally not treated individually; rather, rights of access are treated at the top region level, thus why individual panels are not show here. A given role will either have access to the regions (thus all child panels) or won't see them at all.
 
-<div class="tabular-data" itemscope itemtype="https://schema.org/Table">
+<div class="tabular-data" tabindex="0" aria-labelledby="table4-caption" itemscope itemtype="https://schema.org/Table">
     <table>
-        <caption itemprop="about">Table 4: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for the extended regions, Home and Extensions.</caption>
+        <caption id="table4-caption" itemprop="about">Table 4: Rights (<span class="success">Full</span><sup>&#x002a;</sup>, <span class="warning">Limited</span><sup>&#x2020;</sup>, <span class="error">Blocked</span><sup>&#x2021;</sup>) per role for the extended regions, Home and Extensions.</caption>
         <thead>
             <tr>
                 <th scope="col">Role</th>
