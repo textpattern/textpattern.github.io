@@ -70,7 +70,7 @@ Default panels represent all existing panels in a fresh install of the software.
         <thead>
             <tr>
                 <th scope="col">Role</th>
-                <th scope="col"><a /administration/write-panel">Write</a></th>
+                <th scope="col"><a href="/administration/write-panel">Write</a></th>
                 <th scope="col"><a /administration/articles-panel">Articles</a></th>
                 <th scope="col"><a /administration/images-panel">Images</a></th>
                 <th scope="col"><a /administration/files-panel">Files</a></th>
