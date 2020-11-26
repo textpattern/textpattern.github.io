@@ -71,12 +71,12 @@ Default panels represent all existing panels in a fresh install of the software.
             <tr>
                 <th scope="col">Role</th>
                 <th scope="col"><a href="/administration/write-panel">Write</a></th>
-                <th scope="col"><a /administration/articles-panel">Articles</a></th>
-                <th scope="col"><a /administration/images-panel">Images</a></th>
-                <th scope="col"><a /administration/files-panel">Files</a></th>
-                <th scope="col"><a /administration/links-panel">Links</a></th>
-                <th scope="col"><a /administration/categories-panel">Categories</a></th>
-                <th scope="col"><a /administration/comments-panel">Comments</a></th>
+                <th scope="col"><a href="/administration/articles-panel">Articles</a></th>
+                <th scope="col"><a href="/administration/images-panel">Images</a></th>
+                <th scope="col"><a href="/administration/files-panel">Files</a></th>
+                <th scope="col"><a href="/administration/links-panel">Links</a></th>
+                <th scope="col"><a href="/administration/categories-panel">Categories</a></th>
+                <th scope="col"><a href="/administration/comments-panel">Comments</a></th>
             </tr>
         </thead>
         <tbody>
@@ -171,11 +171,11 @@ Default panels represent all existing panels in a fresh install of the software.
         <thead>
             <tr>
                 <th scope="col">Role</th>
-                <th scope="col"><a /administration/themes-panel">Themes</a></th>
-                <th scope="col"><a /administration/sections-panel">Sections</a></th>
-                <th scope="col"><a /administration/pages-panel">Pages</a></th>
-                <th scope="col"><a /administration/forms-panel">Forms</a></th>
-                <th scope="col"><a /administration/styles-panel">Styles</a></th>
+                <th scope="col"><a href="/administration/themes-panel">Themes</a></th>
+                <th scope="col"><a href="/administration/sections-panel">Sections</a></th>
+                <th scope="col"><a href="/administration/pages-panel">Pages</a></th>
+                <th scope="col"><a href="/administration/forms-panel">Forms</a></th>
+                <th scope="col"><a href="/administration/styles-panel">Styles</a></th>
             </tr>
         </thead>
         <tbody>
@@ -256,12 +256,12 @@ Default panels represent all existing panels in a fresh install of the software.
         <thead>
             <tr>
                 <th scope="col">Role</th>
-                <th scope="col"><a /administration/diagnosticss-panel">Diagnosticss</a></th>
-                <th scope="col"><a /administration/preferences-panel">Preferences</a></th>
-                <th scope="col"><a /administration/languages-panel">Languages</a></th>
-                <th scope="col"><a /administration/users-panel">Users</a></th>
-                <th scope="col"><a /administration/plugins-panel">Plugins</a></th>
-                <th scope="col"><a /administration/visitor-logs-panel">Visitor logs</a></th>
+                <th scope="col"><a href="/administration/diagnosticss-panel">Diagnosticss</a></th>
+                <th scope="col"><a href="/administration/preferences-panel">Preferences</a></th>
+                <th scope="col"><a href="/administration/languages-panel">Languages</a></th>
+                <th scope="col"><a href="/administration/users-panel">Users</a></th>
+                <th scope="col"><a href="/administration/plugins-panel">Plugins</a></th>
+                <th scope="col"><a href="/administration/visitor-logs-panel">Visitor logs</a></th>
             </tr>
         </thead>
         <tbody>
