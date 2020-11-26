@@ -358,8 +358,8 @@ Table 4 represents the two extended regions. Unlike with default panels, the ext
         <thead>
             <tr>
                 <th scope="col">Role</th>
-                <th scope="col"><a /administration/home-region">Home</a></th>
-                <th scope="col"><a /administration/extensions-region">Extensions</a></th>
+                <th scope="col"><a href="/administration/home-region">Home</a></th>
+                <th scope="col"><a href="/administration/extensions-region">Extensions</a></th>
             </tr>
         </thead>
         <tbody>
