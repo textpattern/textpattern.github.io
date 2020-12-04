@@ -7,19 +7,11 @@ assignees: ''
 
 ---
 
-Existing page...
-{add full url here if a page should be revised for proposal, otherwise remove}
+{add full/absolute url here based on proposed title}
 
-Proposed title and location of new page...
-{add full url here}
+## Explanation for proposal
 
-## Situation/Scenario for proposal
-
-{Propose here}
-
-## Value
-
-{Justify here}
+{Propose/explain here}
 
 ## Resources to consider for draft
 Add information text and link
