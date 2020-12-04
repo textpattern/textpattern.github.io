@@ -148,7 +148,7 @@ You should *never* un-assign anyone from an issue except yourself. If someone el
 
 Only un-assign yourself from an issue when you have completed the task you were assigned, or you did not start it to begin with and do not intend to. As long as you are working on an Issue, you must remain assigned to it until your immediate task is finished and you change the status of the issue.  
 
-### Using Labels
+#### Labels
 
 In the previous section there was a lot of mention of *status* and *tasks*. The terms merely reflect what the Label assignments are on an issue, which in turn make clear what is being done at any given moment for that issue and why.
 
