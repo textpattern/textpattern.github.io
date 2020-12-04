@@ -6,7 +6,7 @@ This repository drives the [Textpattern user documentation](https://docs.textpat
 
 As follows:
 
-1. Review the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-procedures). The who, what, when, where, (you know why), and how of it all. (If you get a 404, the initial draft is not finished. Skip to next item and please come back later.)
+1. Review the [documentation collaboration procedures](https://docs.textpattern.com/brand/user-docs-collaboration). The who, what, when, where, (you know why), and how of it all.
 2. Review the [user documentation guidelines](https://docs.textpattern.com/brand/user-docs-guide). These provide near everything you need to know for writing and editing documentation, specifically.
 3. Review the [editorial style guide](https://docs.textpattern.com/brand/editorial-style-guide). This is Textpattern’s baseline editorial guidelines across all project sites and written material. Here will be high-level rules about orthographical style, spelling, punctuation, brand name usage, and so on. (If you get a 404, the document is still under major revision. Skip to next item and please come back later.)
 4. Continue according to skill level or interest…
