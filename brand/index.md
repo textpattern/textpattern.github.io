@@ -46,7 +46,7 @@ These resources are extensions of the baseline resources, or otherwise relevant 
 ### User documentation
  
 * [User documentation guidelines](/brand/user-docs-guide)
-  * [Documentation collaboration procedures](/user-docs-collaboration)
+  * [Documentation collaboration procedures](/brand/user-docs-collaboration)
   * [Documentation page template](/brand/user-docs-page-template)
 * [Plugin user-help guidelines](/development/plugin-user-help-guidelines)
 
