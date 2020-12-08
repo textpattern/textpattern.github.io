@@ -7,10 +7,21 @@ assignees: ''
 
 ---
 
-### Absolute URL of front-end page
+#### URLs
 
-{URL here}
+- Back: {repo URL here (.md file)}
+- Front: {website URL here}
 
-### The question/problem
+#### Explanation of immediate task
 
-{Put it here}
+{Explain here}
+
+#### Resources to support draft
+
+(Remove this section if not needed)
+
+- [ ] url
+- [ ] url
+- [ ] url
+- [ ] url
+etc
