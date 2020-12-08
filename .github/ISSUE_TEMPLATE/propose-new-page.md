@@ -7,17 +7,19 @@ assignees: ''
 
 ---
 
-{add full/absolute url here based on proposed title}
+**URLs**:
+Back: {repo URL here (.md file)}
+Front: {website URL here}
 
-## Explanation for proposal
+## Briefly explain proposal
 
 {Propose/explain here}
 
-## Resources to consider for draft
+## Resources to support draft
 Add information text and link
 
-- [ ] link
-- [ ] link
-- [ ] link
-- [ ] link
+- [ ] url
+- [ ] url
+- [ ] url
+- [ ] url
 etc
