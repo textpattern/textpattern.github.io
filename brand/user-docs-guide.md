@@ -2,11 +2,11 @@
 layout: document
 category: Brand
 published: true
-title: User documentation guidelines
-description: Guidelines for authors and editors of Textpattern’s user documentation.
+title: Development guidelines for Textpattern documentation
+description: Guidelines for the development of Textpattern user documentation.
 ---
 
-# User documentation guidelines
+# Guidelines for documentation development
 
 These guidelines, an extension of Textpattern’s baseline [editorial style guide](/brand/editorial-style-guide), are specifically for the upkeep of user documentation. Documentation authors, editors, and other interested contributors will want to read up here (as well review the [documentation collaboration procedures](https://github.com/textpattern/textpattern.github.io/issues/149)).
 
