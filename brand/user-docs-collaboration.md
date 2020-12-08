@@ -2,8 +2,8 @@
 layout: document
 category: Brand
 published: true
-title: Collaboration procedures for Textpattern user documentation
-description: Orientation for new and active collaborators on the conception, development, and maintenance of Textpattern user documentation.
+title: Collaboration on user documentation
+description: Orientation for collaboration on Textpattern user documentation.
 ---
 
 #  Collaboration on user documentation
@@ -72,67 +72,53 @@ See an [example of this workflow](#example-for-context) at the end.
 
 ## Creating effective titles
 
-Collaborating on documentation means you will create and edit titles sooner or later, like when [creating Issues](#issues). Writing good titles for documentation is not as straight forward as most people think. Titles influence different situations that need to be considered when deciding upon them. These different situations include:
+Collaborating on documentation means you will create and edit titles sooner than later, like when [creating Issues](#issues) that say what documentation is needed.
 
-1. Making it clear to humans what a document is about
-2. Making it clear to machines what a document is about
-3. Serving as the base for establishing URL-only titles
+Writing good titles for documentation is not terribly hard, but does need attention. There are three types of titles to be aware of:
 
-The first refers to the topic title found at the top of each documentation page, marked up with an `h1` header. The second, refers to titles used in page metadata, which you will add when starting new pages. The third refers to file names that make the URL for a given document unique.
+1. Metadata title, primarily for machines
+2. `h1` title, for humans
+3. URL-only titles, mostly for humans (especially editors)
 
-The grammar rules and syntax tricks for titles and associated file-names (a.k.a. URL-only titles) are not exactly the same. Document titles must be grammatically correct, while file-name titles can be written however is needed, so long as they still suggest what document they concern. In all cases, conciseness is a virtue.
+The third is not really a title, but a file name based on the  document’s title to make the document’s URL unique.
+
+The grammar rules and syntax tricks for titles and associated file-names are not exactly the same. Document titles must be grammatically correct, while file-name titles can be written however is needed, so long as they still suggest what document they concern.
+
+Normally metadata titles and `h1` titles can be tailored to bots and humans, respectively, meaning the former can be a little more key-word loaded while the latter can be more concise for the sake of brevity and website usability. This is not recommended in Textpattern user docs, however, because the breadcrumb trails that appear at tops of documents pull the metadata titles instead of what would otherwise be more concise `h1` titles. Thus, in this website, the metadata and `h1` titles must be the same to prevent an ugly discord between breadcrumbs and `h1` titles.
+
+We thus refer to metadata titles and `h1` titles collectively as *topic titles*. 
 
 ### Topic titles
 
-As mentioned, keep titles grammatically correct and as concise as possible while still being clear about the scope of the document.
+Keep topic titles grammatically correct and as concise as possible while still being clear about document scope.
 
-Between the `h1` title and the metadata title, you can leave in the extra gratuitous word or two in the metadata title if we are really caring about SEO. Do not be gratuitous with words in the `h1` title.
+With regard to being concise, avoid needless terms that only benefit search engines. We are writing for humans, not bots.
 
-A good example to demonstrate the difference is the seeming desire or tendency to use ‘Textpattern’ (or ‘Textpattern CMS’) in some titles. There is never valid need to do this in the human readable titles because the context of the topic is already clear by other cues, including the project name, website name and design, metadata, URLs, and many other instances of the brand name visible throughout documentation. Nobody will be confused about whether a doc concerns Textpattern or not, thus using the brand name in the human-readable `h1` title is pointless and distracting. However, it is perfectly fine to use it in the metadata title, which is primarily speaking to search engine bots.
+One obvious word to avoid in titles is ‘Textpattern’ (or ‘Textpattern CMS’). The brand name is never needed in human readable topic titles because the context of Textpattern is already clear by the website’s header logo and other cues. Nobody will be confused about whether or not a doc topic concerns Textpattern, thus using the brand name in the human-readable `h1` title is pointless and distracting.
 
-Consider the current document in relation. The metadata title reads:
+Other terms not to use in titles include useless genre flags like ‘how to’, ‘tutorial’, ‘walkthrough’, ‘doc’, and so forth. These terms do nothing to convey topic and scope; rather, the bloat and confuse titles.
 
-```
-Collaboration procedures for Textpattern user documentation
-```
+An exception to the above is if one of those terms is, in fact, a subject in the topic or scope, like the current document, where the subject *is* on user documentation.
 
-Meanwhile the `h1` title for humans drops ‘Textpattern’, and a few others for an alternate simplicity:
-
-```
-Collaboration on user documentation
-```
-
-The human title is just as clear and correct, no loss of context, better for mobile usability, and so forth.
-
-Also note the front loading of the title; that is, putting the main subject at the start. That is no accident, it is smart titling to benefit human scanning. We could probably use ‘Collaboration on documentation’ and be no worse for it.  
-
-Never use things like ‘how to’, ‘tutorial’, ‘walkthrough’, ‘doc’, and so forth in titles, whether `h1` or metadata. These content marketing hacks do nothing to convey topic and scope; rather, they bloat titles and prohibit a harmony across titles in document title lists. Only use subjects that directly reflect the actual topic and scope of the content.
-
-The sole exception to the above is if one of those terms is, in fact, a subject in the topic or scope. That will never be the case in Textpattern user documentation except for documents like this one where the subject *is* on user documentation, which is why ‘on documentation’ is part of the title.
-
-Fortunately, titles can be changed anytime to improve the clarity and usability of them, even if already published. We don’t break any links by changing the the `h1` title or that in the metadata. However, these changes might make any links to the doc confusing if the text on them is significantly different. If making any title changes like this, attempt to find and edit link text in relation, wherever it exists. Likewise, titles must be updated on their dedicated Issues.
+Fortunately, topic titles can be changed anytime to improve the clarity and usability of them, even if already published. We don’t break any links by changing topic titles. If making any title changes like this, however, attempt to find and edit link text in relation, wherever it exists. Likewise, titles must be updated on their dedicated Issues.
 
 ### URL-only titles
 
-Unlike topic titles, URL-only titles (i.e. file names based on the titles of their associated documents) require more attention to get right before publishing the files live. If these file names are changed after a document has been developed and published, the links to them will break if 301 redirects are not also made in relation.
+Unlike topic titles, URL-only titles (i.e. document file names based off of topic titles) do not have to follow the same rules of grammar or satisfy search engines. This means you can drop as many words as you can and mix the remaining words around so long as what is left still hints to the document topic it belongs to. The resulting shorter file names make it a *lot* easier to work with links in copy and file tree directories.
 
-File names should reasonably convey the same info their topic titles do, but they don’t have to do it in the same way. Notably, file names do not have to follow rules of grammar or satisfy search engines. This means you can drop as many words as you can and mix the remaining words around so long as what is left still hints to the document topic it belongs to. The resulting shorter file names make it a *lot* easier to work with links in copy and file tree directories.
-
-But don’t make file names completely meaningless. The sweet spot is a short file name that still hints to a file’s topic and scope.
-
-Use your best judgement for document file names, thus their URLs, but consider the following guides as well:
+Use your best judgement for document file names, thus their URLs, but consider the following guides to help:
 
 * Cut every word that is not directly focused on the topic or scope of material (e.g. never use ‘textpattern’, ‘tutorial’, etc., for reasons explained earlier, nor any needless parts of speech like articles, conjunctions, prepositions, and so on).
 * Use fewer verbs and nouns if one or two will suffice to still make it clear what document is concerned.
 * Use abbreviations if they are commonly used in the domain (e.g. the current doc uses ‘docs’ instead of ‘documentation’)
-* Front-load main topic words (i.e. put these terms at the start of the file name)
-* Use front-loading and shortening patterns consistently for related subjects in the same directory; it groups files together alphabetically for easier file management
+* Front-load subject terms when feasible (i.e. put these terms at the start of the file name)
+* Use front-loading and shortening patterns strategically to group related files together alphabetically in shared directories
 
-It is true you could look at the file names of many existing documents and find a lot of poorly conceived examples. This very document, for instance, could have been named ‘docs-collaboration’, dropping *user*, or ‘collaboration-procedures’. But you get the idea.
+You could look at the file names of many existing docs in the file tree and find poorly conceived examples. This very document, for instance, could have been named ‘docs-collaboration’, dropping *user*, or ‘collaboration-procedures’. But it’s never to late to do better.
 
-While we generally don’t want to mess with sleeping dogs, sometimes it is necessary to improve information architecture and change a few file names, especially if they were created with no thought to being tight and right. We only do this, however, if 301 redirects can be established at the same time. 
+While we generally don’t want to mess with sleeping dogs, sometimes it is necessary to improve information architecture and change a few file names, especially if they were created with no thought to being lean. We only do this, however, if 301 redirects can be established for the changed URLs at the same time; otherwise, we risk breaking a lot of links to the document from within the documentation site, across the forum, and elsewhere. 
 
-Make URL redirect requests in the associated doc Issue and address the change request to @petecooper, Textpattern’s systems administrator. Do not push the file name changes live until Pete has a chance to coordinate the redirects relatively close to the same time.
+Make URL redirect requests in the associated doc Issue (described next) and address the change request to @petecooper, Textpattern’s systems administrator. Do not push the file name changes live until Pete has a chance to coordinate the redirects relatively close to the same time.
 
 ## Repository protocols
 
