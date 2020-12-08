@@ -2,7 +2,7 @@
 layout: document
 category: Brand
 published: true
-title: Development guidelines for Textpattern documentation
+title: Guidelines for documentation development
 description: Guidelines for the development of Textpattern user documentation.
 ---
 
