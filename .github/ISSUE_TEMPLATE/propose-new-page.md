@@ -7,15 +7,16 @@ assignees: ''
 
 ---
 
-**URLs**:
-Back: {repo URL here (.md file)}
-Front: {website URL here}
+#### URLs
 
-## Briefly explain proposal
+- Back: {repo URL here (.md file)}
+- Front: {website URL here}
+
+#### Briefly explain proposal
 
 {Propose/explain here}
 
-## Resources to support draft
+#### Resources to support draft
 Add information text and link
 
 - [ ] url
