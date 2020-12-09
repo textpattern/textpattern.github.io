@@ -10,7 +10,7 @@ description: Orientation for collaboration on Textpattern user documentation.
 
 These procedures are for anyone helping to develop user documentation for Textpattern. They cover the full extent of the collaboration process in relation to documentation workflow, including the protocols for using the repository Issues. People actually writing and editing user documentation will also be aware of the [guidelines for developing user documentation](/brand/user-docs-guide).
 
-**On this page**:
+**Contents**:
 
 * Contents
 {:toc}
@@ -284,7 +284,15 @@ On the other hand, should an existing doc ever need to go through extensive deve
    * across-pages: `[other page](/directory/file-name)`
    * in-page: `[subsection](#subsection-heading)`
 * If you change titles (not file names), update the dedicated Issue title too, and try to find and update other files that might be using the old titles as link text. (Potentially a hard task.)
-* Do not change file names (even if you changed titles), unless you also coordinate with @petecooper to establish 301 redirects to the new file names. 
+* Do not change file names (even if you changed titles), unless you also coordinate with @petecooper to establish 301 redirects to the new file names.
+
+## Document draft
+
+The fun finally begins. A topic idea was surfaced, an issue for it was created, and now it is time to _write_.
+
+Use the [new document page template](/brand/user-docs-page-template) to quickly get the draft started. Everything you need to know is explained in the template.
+
+*Nota*, in the metadata of all doc pages is a line called `published:`, the value of which should either be `false` (not live in the docs website) or `true` (live). As documents are first being drafted this value should be `false`. This enables you to start a draft (even if not completed) and commit it to the repository without it appearing in the docs website. The value is only change to `true` when the doc is ready for public use and approved for such by the editorial workflow. Once becoming live (`true`) the value should never change back to `false` unless the document is slated for permanent removal and some kind of status notice is provided to instruct search engine bots.
 
 ## Wrap-up example for context
 
@@ -323,11 +331,9 @@ Learning to build a custom blog by unpacking and understanding the default Textp
 (a list of resources to to help write the first draft, TBD)
 ```
 
-[Editorial workflow](#collaborative-editorial-workflow) begins with the person creating the new issue deciding either to take responsibility for [starting the doc draft](/brand/user-docs-page-template), at least a section or two, else leave the issue unassigned so anyone else can have the pleasure. [Assignees](#assignees) and [Labels](#labels) changes will be needed at every stage.
+[Editorial workflow](#collaborative-editorial-workflow) begins with the person creating the new issue deciding either to take responsibility for [starting the document draft](#document-draft), at least a section or two, else leave the issue unassigned so anyone else can have the pleasure. [Assignees](#assignees) and [Labels](#labels) changes will be needed at every stage.
 
 The process finishes by publishing the new doc, and the collaborative work repeats with a new topic or issue.
-
-*Nota*, in the metadata of all doc pages is a line called `published:`, the value of which should either be `false` (not live in the docs website) or `true` (live). As documents are first being drafted this value should be `false`. This enables you to start a draft and commit it to the repository, even if you do not complete the full draft, without it appearing in the docs website. The value is only change to `true` when the doc is ready for public use and approved for such by the editorial workflow. Once becoming live (`true`) the value should never change back to `false`.
 
   
 
