@@ -62,7 +62,7 @@ But anyone can provide initial discussion to the decisions and actions needing m
 * Seeing what kinds of topics are shared, which might, in turn, help with recognizing related topic ideas
 * Evaluating suggestions against what may already exist in docs but not easily found/seen (thus a spotted IA problem to fix)
 * Early discussion of listed topics by editors to evaluate architecture changes in relation
-* Prioritizing topics for development, and therefor how exactly to start a dedicated repo Issue for the document task and data gathering.
+* Prioritizing topics for development, and therefore how exactly to start a dedicated repo Issue for the document task and data gathering.
 
 Editors will need to evaluate how best to work the topics into the organization of the file tree. Sometimes, if not often, this will mean working the help information into an existing document instead of creating a new one. It just depends on what topics surface and what information already exists.
 
