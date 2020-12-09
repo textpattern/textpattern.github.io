@@ -8,16 +8,16 @@ description: Orientation for collaboration on Textpattern user documentation.
 
 #  Collaboration on user documentation
 
-These procedures are for anyone helping to develop user documentation for Textpattern. They cover the full extent of the collaboration process in relation to documentation workflow, including the protocols for using the repository Issues. People actually writing and editing user documentation will also be aware of the [user documentation guidelines](/brand/user-docs-guide) for creating new pages, and organizing and structuring content.
+These procedures are for anyone helping to develop user documentation for Textpattern. They cover the full extent of the collaboration process in relation to documentation workflow, including the protocols for using the repository Issues. People actually writing and editing user documentation will also be aware of the [guidelines for developing user documentation](/brand/user-docs-guide).
 
 **On this page**:
 
 * Contents
 {:toc}
 
-## Big picture goal and primary objective
+## Collaboration goals
 
-Besides the expected objective to help people learn and use the software, there is a more holistic goal for Textpattern project collaborators: **to reduce the time and effort spent answering *How?* and *Troubleshooting* questions in the Textpattern Forum**.
+Besides the expected objective to help people learn and use the software, there is a more holistic goal for collaborators on documentation to reduce the time and effort spent answering *How?* and *Troubleshooting* questions in the Textpattern Forum.
 
 The Forum has a history of serving many roles for the community, some more relevant than others. Waxing redundant on how to do the many various things involved with building websites with Textpattern should not be one of them when user documentation is developed for that reason.
 
@@ -26,7 +26,7 @@ The ideal relationship between the [Forum](https://forum.textpattern.com/) and [
 1. Someone has a question or problem and looks for a help doc that will address their enquiry. If the doc exists, is sufficiently detailed, and clearly written, it may be all anyone needs to troubleshoot and move on without needing to seek additional help in the Forum. **Most ideal**.
 2. If a help doc is not found, either because it does not exist in User Documentation, or is too hard to find in the website’s structure, the person will likely post in the Forum about their problem. A perfectly normal and expected course of action.
 3. A friendly veteran member of the community briefly replies to the poster’s enquiry with a link to the appropriate page in user documentation, perhaps indicating the relevant topic subsection, too. Again, the expected course of action. (Avoid adding links in the forum to document subsections. Such deep links are easily broken when user docs are edited. Point to the doc’s main URL instead and say what section to look at.)
-4. If no such user doc exists, the knowledgeable community member must provide descriptive help details in the forum thread itself — a necessary response but **not ideal**.
+4. If no such user doc exists, the knowledgeable community member must provide descriptive help details in the forum thread itself — a necessary response, and perhaps even enjoyed by some, but **least ideal** from a productivity standpoint.
 5. The topic gap in docs, realized from the previous step, is [listed for documentation development](#identifying-potential-topics) so similar questions are not repeatedly answered in the Forum in the future.
 
 The above scenario makes clear what **the theoretical end-game goal** is for collaborative documentation development: **to establish a Forum/Docs equilibrium at steps 1 through 3**. Steps 4 and 5 mean there is work to do; the equilibrium has not been reached.
