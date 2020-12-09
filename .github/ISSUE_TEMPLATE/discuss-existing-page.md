@@ -1,6 +1,6 @@
 ---
 name: Discuss existing page
-about: Raise concerns or issues with an existing doc page
+about: Update task objective for an existing doc page that does not already have a dedicated Issue
 title: 'page: '
 labels: ''
 assignees: ''
