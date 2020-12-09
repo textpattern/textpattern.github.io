@@ -149,18 +149,9 @@ Title fields of each template will be pre-filled with title prefixes. Leave the 
 
 The body fields of each template (effectively the head post of the issue once created) will indicate where and what type of information should be added to the issue.
 
-In both cases, the body field should begin with the full URLs for the expected/existing backend and front-end document locations. When you add these, it should look as follows:
+In both cases, the issue body should begin with the full URLs for the expected/existing backend and front-end document locations. Neither URL will actually work until a draft document has been pushed to the repository (backend), and later published (front-end), but it’s convenient to add the URLs at this point so it’s done. These URLs are handy later for quickly finding and accessing the document should any collaborator need or want to from context of the issue. If you ever change document file names (for any issue), update these URLs in relation so the links work correctly, as well anywhere else in documentation (at least) that linked to the files. (More on this later in the [URL-only titles](#url—only-titles) section.)
 
-```
-#### URLs
-
-Back: https://github.com/textpattern/textpattern.github.io/blob/master/brand/user-docs-collaboration.md
-Front: https://docs.textpattern.com/brand/user-docs-collaboration
-```
-
-Neither URL will actually work until a draft document has been pushed to the repository (backend), and later published (front-end), but it’s convenient to add the URLs at this point so it’s done. These URLs are handy later for quickly finding and accessing the document should any collaborator need or want to from context of the issue. Should the file names ever change, these URLs must be updated in relation so the links work correctly, as well anywhere else in documentation (at least) that linked to the files. (More on this later in the [URL-only titles](#url—only-titles) section.)
-
-One important difference to be aware of is that file names for tag pages (i.e. any page for a Textpattern tag in the [Tags Reference](/tags/)) are constructed using underscores (like_this), not hyphens. All other pages in user documentation use hyphens (like-this). 
+One important difference to be aware of is that file names for tag pages — specifically for a Textpattern tag in the [Tags Reference](/tags/) — are constructed using underscores (like_this), not hyphens. All other pages in user documentation use hyphens (like-this). 
 
 After the URLs should be *brief* commentary on what the point of the issue is. The info requested depends on which issue template is used. See next sections for template specifics.
 
@@ -184,13 +175,13 @@ The final resources section should be used to list all resources, Forum and othe
 
 Only use this template for existing doc pages **that do not already have a dedicated Issue**. So be sure to search in open and closed issues for such an issue first.
 
-The title for this issue is always prefixed with `page:`, add the document’s title after it.
+The title for this issue always has the prefix, `page:`, with the document’s title after it.
 
 The explanation section should make clear what the immediate task needs to be (presumably some kind of editing, but not solely), and provide any other info that will help guide the task. **This explanation should be revised each time the Issue is opened**.
 
 The final resources listing can be used, if warranted, or deleted to keep the head post concise.
 
-*Nota*, this template is only relevant until all existing docs have dedicated issues. Once achieved, this template will be removed from the repository and the ’New page’ template will be the only one used. (This collaboration doc will need revised in relation.)
+*Nota*, this template is only relevant until all existing docs have dedicated issues. Once achieved, if ever, this template will be removed from the repository and the ’New page’ template described previously will be the only one used. (This collaboration doc will need revised in relation.)
 
 #### Other issues
 
@@ -224,27 +215,36 @@ Labels do not do all the communicating, though, it is just as important for assi
 
 Ensuring labels on an issue are current is largely the responsibility of the last person working on the issue. As assignees come and go on issues, they are responsible for make sure to change the labels accordingly.
 
-The Labels we use are fairly self explanatory, and their descriptions help clarify their purposes, too. In the next sections we’ll go over a few as they concern editorial workflow.
+The Labels we use are fairly self explanatory, and their descriptions help clarify their purposes, too. The next sections go over a few as they concern editorial workflow.
 
 ### Collaborative editorial workflow
 
 The Assignees and Labels will expectedly change on Issues as a document proceeds through the phases of editorial development:
 
-1. researching
-2. drafting
-3. technical reviewing
-4. editing
-5. publishing (i.e. made live on docs website)
+1. proposing
+2. researching
+3. drafting
+4. technical reviewing
+5. editing
+6. publishing (i.e. made live on docs website)
 
 This isn’t a well-oiled machine and nobody is especially diligent about the workflow, but we try to fall into line for the sake of courtesy and not stepping on toes.
 
+#### Proposing
+
+This follows having created a new issue for a proposed topic. Before anyone assigns themselves to the issue, someone other than the issue creator must slap either a **DECLINED** or **APPROVED** label on it.
+
+If declined, the decliner must explain in the issue comments what the problem is, why, and what might be fixed for a green light, if anything can or should be. An additional **ON HOLD** label is added during this period and the issue is kept open. If no agreement is made to proceed with the topic, the **ON HOLD** label is removed, the **DECLINED** label remains, and the issue is closed.
+
+If approved, the prefix on the issue title is changed from `proposed:` to `page:`, making it a dedicated page issue, and the **APPROVED** label is removed. No assignee needs made at this point (anyone may then self-assign) and the issue is left open.
+
 #### Researching and drafting
 
-The person who first drafts a doc will naturally research the topic in order to know what to write and how best to organize concepts on the page. Thus, the assignee on a document for these two steps is *generally* the same person and only the labels will change as they transition from **researching** to **drafting**.
+The person who volunteers to draft a new doc (of revise an existing doc) will naturally research the topic in order to know what to write and how best to organize concepts on the page. Thus, the assignee on a document for these two steps is *generally* the same person and only the labels may change as they transition from **researching** to **drafting** to keep collaborators abreast of progress, or both labels can be applied at the same time.
 
 #### Technical reviewing
 
-Depending on the topic and scope of a document being drafted, it may need a different pair of eyes to do the technical review, namely a core developer, though anyone with the knowledge needed. This may happen during the draft process as a kind of back and forth, while keeping running commentary in the associated Issue, or it can happen after the author is done with the first draft.
+Depending on the topic and scope of a document being drafted, it may need a different pair of eyes to do the technical review, namely a core developer, though anyone with the sufficient knowledge of the functionality in question. This may happen during the draft process as a kind of back and forth, while keeping running commentary in the associated issue, or it can happen after the author is done with the first draft.
 
 If the author requests technical assistance while drafting, the reviewer’s name is added along with the authors as Assignees, and that is enough since the doc is still being drafted and the **drafting** label suffices in that case.
 
@@ -321,12 +321,12 @@ And the starting body info was:
 ```
 #### URLs
         
-* Back: **https://docs.textpattern.com/build/custom-blog**
-* Front: **https://github.com/textpattern/textpattern.github.io/blob/master/build/custom-blog**
+- Back: https://docs.textpattern.com/build/custom-blog
+- Front: https://github.com/textpattern/textpattern.github.io/blob/master/build/custom-blog
 
 #### Explanation
 
-Learning to build a custom blog by unpacking and understanding the default Textpattern theme, thereby answering other ‘how to’ type questions people often have, as well offer opportunities to segue into the topic of themes and link to that documentation.**
+A doc for learning to build a custom blog by unpacking and understanding the default Textpattern theme, addressing other ‘how to’ type questions people often have, and provide opportunities to segue into using themes and link to that documentation.
 
 #### Resources list
 
