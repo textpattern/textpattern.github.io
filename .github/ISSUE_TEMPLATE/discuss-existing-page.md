@@ -1,7 +1,7 @@
 ---
-name: Discuss existing page
-about: Update task objective for an existing doc page that does not already have a dedicated Issue
-title: 'page: '
+name: Existing pages
+about: Use to discuss or update task objective for an existing doc page that does not already have a dedicated Issue (i.e. search Issues before using this template)
+title: 'page: {doc's h1 title here}'
 labels: ''
 assignees: ''
 
