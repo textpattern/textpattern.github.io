@@ -308,7 +308,7 @@ A contributing editor then realizes [how that doc can be approached and structur
 
 Another editor gives the idea a [nod of approval](https://forum.textpattern.com/viewtopic.php?pid=327313#p327313), thus the way is clear to get an Issue started for that document.
 
-(*Nota*, not all doc topics are as easily realized and quickly scoped for an Issue as this one was. But the process — from idea, to discussion, to approval, to Issue for development — is more or less the same for any doc to be developed, regardless of how long the process might take.)
+(*Nota*, not all doc topics are as easily realized and quickly scoped for an Issue as this one was. But the process — from idea, to discussion, to issue, to final approval for development — is more or less the same for any new document, regardless of how long the process might take.)
 
 Since the first editor scoped the doc topic, they fairly take responsibility to start the dedicated Issue. They do this by opening the [New page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=propose-new-page.md&title=proposed%3A+) template for Issues in the [docs repository](https://github.com/textpattern/textpattern.github.io) and fill in the necessary data ([as described earlier](#issue-template-new-page). In this case, the starting title was:
 
