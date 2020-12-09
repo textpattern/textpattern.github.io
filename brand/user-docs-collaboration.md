@@ -39,7 +39,7 @@ Likewise, redundantly explaining the same things over and over in the Forum when
 
 You should only write documentation for which there are existing open [Issues defining documentation objectives](https://docs.textpattern.com/brand/user-docs-collaboration#documentation-repository-protocols). 
 
-However, before editors can know what Issues to create, there must be a prior assessment of what topics are needed, as reflected by scenario steps 4 and 5 in the previous section.  
+However, before editors can know what Issues to create, a prior assessment of what topics are needed must be conducted, as reflected by scenario steps 4 and 5 in the previous section.  
 
 ### Identifying potential topics
 
@@ -84,7 +84,7 @@ The third is not really a title, but a file name based on the  document’s titl
 
 The grammar rules and syntax tricks for titles and associated file-names are not exactly the same. Document titles must be grammatically correct, while file-name titles can be written however is needed, so long as they still suggest what document they concern.
 
-Normally metadata titles and `h1` titles can be tailored to bots and humans, respectively, meaning the former can be a little more key-word loaded while the latter can be more concise for the sake of brevity and website usability. This is not recommended in Textpattern user docs, however, because the breadcrumb trails that appear at tops of documents pull the metadata titles instead of what would otherwise be more concise `h1` titles. Thus, in this website, the metadata and `h1` titles must be the same to prevent an ugly discord between breadcrumbs and `h1` titles.
+Normally, metadata titles and `h1` titles can be tailored to bots and humans, respectively, meaning the former can be more key-word loaded while the latter is more concise for the sake of brevity and website usability. This separate tailoring is not recommended in Textpattern user docs, however, because the terminal end of the breadcrumb trails that appear at top of doc pages pulls from the metadata title instead of the `h1` title. If the two title locations are tailored differently, it results in a wordier breadcrumb string much out of sync with the `h1` title directly underneath it. Thus, in this website, the metadata and `h1` titles must be exactly the same to prevent an ugly discord between breadcrumbs and `h1` titles.
 
 We thus refer to metadata titles and `h1` titles collectively as *topic titles*. 
 
@@ -104,55 +104,69 @@ Fortunately, topic titles can be changed anytime to improve the clarity and usab
 
 ### URL-only titles
 
-Unlike topic titles, URL-only titles (i.e. document file names based off of topic titles) do not have to follow the same rules of grammar or satisfy search engines. This means you can drop as many words as you can and mix the remaining words around so long as what is left still hints to the document topic it belongs to. The resulting shorter file names make it a *lot* easier to work with links in copy and file tree directories.
+Unlike topic titles, URL-only titles (document file names based off of topic titles) do not have to follow the same rules of grammar or satisfy search engines. This means you can drop as many words as you can and mix the remaining words around so long as what is left still hints to the document topic it belongs to. The resulting shorter file names make it a *lot* easier to work with links in copy and file tree directories.
 
 Use your best judgement for document file names, thus their URLs, but consider the following guides to help:
 
-* Cut every word that is not directly focused on the topic or scope of material (e.g. never use ‘textpattern’, ‘tutorial’, etc., for reasons explained earlier, nor any needless parts of speech like articles, conjunctions, prepositions, and so on).
+* Cut words that are not directly focused on the topic or scope of material (e.g. never use ‘textpattern’, ‘tutorial’, etc., for reasons explained earlier, nor any needless parts of speech like articles, conjunctions, prepositions, and so on).
 * Use fewer verbs and nouns if one or two will suffice to still make it clear what document is concerned.
 * Use abbreviations if they are commonly used in the domain (e.g. the current doc uses ‘docs’ instead of ‘documentation’)
 * Front-load subject terms when feasible (i.e. put these terms at the start of the file name)
 * Use front-loading and shortening patterns strategically to group related files together alphabetically in shared directories
 
-You could look at the file names of many existing docs in the file tree and find poorly conceived examples. This very document, for instance, could have been named ‘docs-collaboration’, dropping *user*, or ‘collaboration-procedures’. But it’s never to late to do better.
+You could look at the file names of many existing docs in the file tree and find poorly conceived examples; either too long, having poor syntactic structure, or both. This very document, for instance, could have been named ‘docs-collaboration’, dropping *user*. But it’s never to late to do better with new documentation.
 
-While we generally don’t want to mess with sleeping dogs, sometimes it is necessary to improve information architecture and change a few file names, especially if they were created with no thought to being lean. We only do this, however, if 301 redirects can be established for the changed URLs at the same time; otherwise, we risk breaking a lot of links to the document from within the documentation site, across the forum, and elsewhere. 
+While we generally don’t want to mess with existing file names already indexed (and likely linked to from other documentation pages, form Forum threads, and elsewhere), sometimes it is necessary to improve information architecture, especially if file are particularly long or not clearly indicative of their document’s topic. We only do this, however, if 301 redirects can be established for the changed URLs at the same time; otherwise, we risk breaking a lot of links to the document. 
 
-Make URL redirect requests in the associated doc Issue (described next) and address the change request to @petecooper, Textpattern’s systems administrator. Do not push the file name changes live until Pete has a chance to coordinate the redirects relatively close to the same time.
+Make URL redirect requests for documents by using their dedicated repository issues (or create one if necessary) address redirect requests to @petecooper, Textpattern’s systems administrator. Do not push the file name changes live until Pete has a chance to coordinate the redirects at a relatively close point in time.
 
 ## Repository protocols
 
-Editors will be responsible for creating and editing Issues based on any provided discussion from other collaborators.
+Collaboration on documentation largely centres around using Issues in the website’s file-tree repository. The repository keeps the files under version control while dedicated documentation Issues provide a means for coordinating tasks among collaborators so they don’t step on each others’ toes. 
 
 ### Issues
 
 [Issues](https://github.com/textpattern/textpattern.github.io/issues) are a feature of most versioning repositories, though we use them differently for documentation development than how they are typically used for software code.
 
-In our case, every page in the documentation tree has its own dedicated Issue (or will, eventually, as we progress), a 1:1 relationship. That means when an issue is addressed and closed for any given task, it is not closed permanently. Should the page ever need revisions in the future, the dedicated issue will be reopened and updated to reflect what new changes are needed and who is assigned for the task.
+In our case, every page in the documentation tree has its own dedicated Issue (or will, eventually, as we progress), a 1:1 relationship. That means when an issue is addressed and closed for any given task, it is not closed permanently. Should the page ever need revisions in the future, the dedicated issue will be reopened and updated to reflect what new changes are needed and who is assigned to do them.
 
-### Creating new issues
+### Creating issues
 
-When creating new Issues, one is faced with three [template options](https://github.com/textpattern/textpattern.github.io/issues/new/choose) to choose from. Only two are relevant to documentation collaboration and described here (ignore the third).
+For purposes here, issues are created for one of two reasons only:
+
+* An existing doc page needs a revision and no dedicated issue exists for it yet to detail the problem.
+* A new doc page is needed.
+
+When creating new Issues, one is faced with three [template options](https://github.com/textpattern/textpattern.github.io/issues/new/choose) to choose from. Two are relevant to the above, and one (regarding author prefixes) should be ignored.
+
+Before setting out to use an issue template, do a search in both [open issues](https://github.com/textpattern/textpattern.github.io/issues) and [closed issues](https://github.com/textpattern/textpattern.github.io/issues?q=is%3Aissue+is%3Aclosed) for either the page you are interested in, by its title (in the case of existing pages), or any open issue that might exist having similar subject terms (in the case of new pages). In the latter case, it’s not impossible, though unlikely under these collaboration procedures, that someone else started an issue on a similar topic but by a different title; you should see what might surface just in case and proceed to communicate with them about the best way forward.
+
+#### Issue template generalities
 
 Each template provides some pre-filled data and instructions to help get it started.
 
-Title fields of each template will be pre-filled with title prefixes. Leave the prefixes in place and add titles after them.
+Title fields of each template will be pre-filled with title prefixes. Leave the prefixes in place and add doc titles after them.
 
-Body fields of each template (effectively the head post of the issue once created) will provide various cues for what type of information should be added to the issue. In both cases, the body field should begin with the full URLs for the expected backend and front-end document locations, for example:
+The body fields of each template (effectively the head post of the issue once created) will indicate where and what type of information should be added to the issue.
+
+In both cases, the body field should begin with the full URLs for the expected/existing backend and front-end document locations. When you add these, it should look as follows:
 
 ```
-URLs:
-back: https://github.com/textpattern/textpattern.github.io/blob/master/brand/user-docs-collaboration.md
-front: https://docs.textpattern.com/brand/user-docs-collaboration
+#### URLs
+
+Back: https://github.com/textpattern/textpattern.github.io/blob/master/brand/user-docs-collaboration.md
+Front: https://docs.textpattern.com/brand/user-docs-collaboration
 ```
 
-Neither URL will actually work until a draft document has been pushed to the repository (backend), and later published (front-end), but it’s convenient to add them now for use later. These URLs are handy for quickly finding and accessing the document should any collaborator need or want to from context of the Issue. Should the [file names](#url—only-titles) ever change, these links must be updated in relation, and anywhere else in documentation that linked to the files.
+Neither URL will actually work until a draft document has been pushed to the repository (backend), and later published (front-end), but it’s convenient to add the URLs at this point so it’s done. These URLs are handy later for quickly finding and accessing the document should any collaborator need or want to from context of the issue. Should the file names ever change, these URLs must be updated in relation so the links work correctly, as well anywhere else in documentation (at least) that linked to the files. (More on this later in the [URL-only titles](#url—only-titles) section.)
 
-After the URLs should be *brief* commentary on what the point of the Issue is. The info requested depends on which issue template is used. See next sections for specifics.
+One important difference to be aware of is that file names for tag pages (i.e. any page for a Textpattern tag in the [Tags Reference](/tags/)) are constructed using underscores (like_this), not hyphens. All other pages in user documentation use hyphens (like-this). 
 
-Finally, you’ll be given the start of a checkbox list to use, if  warranted, to list resources links that could help guide the task of the open issue. This is especially warranted when using  the ‘Propose new page’ template.
+After the URLs should be *brief* commentary on what the point of the issue is. The info requested depends on which issue template is used. See next sections for template specifics.
 
-#### Issue template: Propose new page
+Finally, you’ll be given the start of a checkbox list to use, if  warranted, to list resource links that could help guide the task of the open issue, especially for new documents needing developed.
+
+#### Issue template: New page
 
 Use this template if no documentation page exists for the topic needing developed. By using this template, you begin the process of creating a dedicated issue for a new documentation page.
 
@@ -166,17 +180,23 @@ The explanation section should make clear what the topic scope  is, and how it h
 
 The final resources section should be used to list all resources, Forum and otherwise, that would help an author draft the document. Add more checkbox list items as needed.
 
-#### Issue template: Discuss existing page
+#### Issue template: Existing page
 
-Only use this template when a doc page exists that does not already have a dedicated Issue. So before even looking at templates, you should do a search in both [open issues](https://github.com/textpattern/textpattern.github.io/issues) and [closed issues](https://github.com/textpattern/textpattern.github.io/issues?q=is%3Aissue+is%3Aclosed) for the page you are interested in. If such an Issue exists, open and use it for the reason you have; do not create a new one for the same page. If no Issue exists, then start one with this template.
+Only use this template for existing doc pages **that do not already have a dedicated Issue**. So be sure to search in open and closed issues for such an issue first.
 
-The title should always prefixed with `page:`, add the document’s title after it.
+The title for this issue is always prefixed with `page:`, add the document’s title after it.
 
 The explanation section should make clear what the immediate task needs to be (presumably some kind of editing, but not solely), and provide any other info that will help guide the task. **This explanation should be revised each time the Issue is opened**.
 
-The final resources listing can be used, if warranted, or deleted to keep the head post concise. 
+The final resources listing can be used, if warranted, or deleted to keep the head post concise.
 
-### Issue Assignees and labels
+*Nota*, this template is only relevant until all existing docs have dedicated issues. Once achieved, this template will be removed from the repository and the ’New page’ template will be the only one used. (This collaboration doc will need revised in relation.)
+
+#### Other issues
+
+You may happen to notice other kinds of issues created in the documentation repository that don’t reflect the above situations. Issues not easily identified by titles having `page:` or `proposed:` prefixes will undoubtedly concern systems-related tasks, or other tasks dealing with platform architecture. If you ever need to start a new issue for such concerns, you can use a [blank issue](https://github.com/textpattern/textpattern.github.io/issues/new) and fill it in as you think best.  
+
+### Assignees and labels for docs issues
 
 When creating a new Issue or editing one that already exists, you can assign who is responsible for the issue and add the appropriate task and status Labels. 
 
@@ -280,19 +300,34 @@ Another editor gives the idea a [nod of approval](https://forum.textpattern.com/
 
 (N.b. not all doc topics are as easily realized and quickly scoped for an Issue as this one was. But the process — from idea, to discussion, to approval, to Issue for development — is more or less the same for any doc to be developed, regardless of how long the process might take.)
 
-Since the first editor scoped the doc topic, he fairly takes responsibility to start the dedicated Issue. He does this by opening the [Propose new page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=propose-new-page.md&title=proposed%3A+) template for Issues in the [docs repository](https://github.com/textpattern/textpattern.github.io) and fills in the necessary data ([as described earlier](#propose-new-page-template). In this case, the starting info used was:
-     * title: **`proposed:` Build a personal blog**
-     * urls:
-        * Back: **https://docs.textpattern.com/build/custom-blog**
-        * Front: **https://github.com/textpattern/textpattern.github.io/blob/master/build/custom-blog**
-     * explanation: **Learning to build a custom blog by unpacking and understanding the default Textpattern theme, thereby answering other ‘how to’ type questions people often have, as well offer opportunities to segue into the topic of themes and link to that documentation.**
-     * resources: (a list of resources to to help write the first draft, TBD)
+Since the first editor scoped the doc topic, he fairly takes responsibility to start the dedicated Issue. He does this by opening the [Propose new page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=propose-new-page.md&title=proposed%3A+) template for Issues in the [docs repository](https://github.com/textpattern/textpattern.github.io) and fills in the necessary data ([as described earlier](#issue-template-new-page). In this case, the starting title was:
 
-The editor can also decide to take on the initial task of drafting that doc, else leave the Issue unassigned so anyone else can can have the pleasure of tackling that monster.
+```
+proposed: Build a personal blog
+```
 
-At this point [editorial workflow](#collaborative-editorial-workflow) kicks in with [Assignees](#assignees) and [Labels](#labels) changing along the way.
+And the starting body info was:
 
-The process finishes by publishing the new doc, and the collaborative work repeats on a new Issue.
+```
+#### URLs
+        
+* Back: **https://docs.textpattern.com/build/custom-blog**
+* Front: **https://github.com/textpattern/textpattern.github.io/blob/master/build/custom-blog**
+
+#### Explanation
+
+Learning to build a custom blog by unpacking and understanding the default Textpattern theme, thereby answering other ‘how to’ type questions people often have, as well offer opportunities to segue into the topic of themes and link to that documentation.**
+
+#### Resources list
+
+(a list of resources to to help write the first draft, TBD)
+```
+
+[Editorial workflow](#collaborative-editorial-workflow) begins with the person creating the new issue deciding either to take responsibility for [starting the doc draft](/brand/user-docs-page-template), at least a section or two, else leave the issue unassigned so anyone else can have the pleasure. [Assignees](#assignees) and [Labels](#labels) changes will be needed at every stage.
+
+The process finishes by publishing the new doc, and the collaborative work repeats with a new topic or issue.
+
+*Nota*, in the metadata of all doc pages is a line called `published:`, the value of which should either be `false` (not live in the docs website) or `true` (live). As documents are first being drafted this value should be `false`. This enables you to start a draft and commit it to the repository, even if you do not complete the full draft, without it appearing in the docs website. The value is only change to `true` when the doc is ready for public use and approved for such by the editorial workflow. Once becoming live (`true`) the value should never change back to `false`.
 
   
 
