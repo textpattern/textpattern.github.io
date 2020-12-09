@@ -278,13 +278,13 @@ On the other hand, should an existing doc ever need to go through extensive deve
 
 #### Editorial tips and reminders
 
-* Don’t work on more than one document at a time. If you are assigned to a task, finish the task before taking on another one for a different issue.
+* Don’t work on more than one document at a time. If you are assigned to a task, finish the task before taking on another one for a different issue
 * Consider the big picture [linking strategy](/brand/user-docs-guide#linking-strategy) for documentation as a whole.
 * Double check your link changes before pushing changes live; both links across document pages and in-page anchor links. All links within the documentation website should be relative URLs:
    * across-pages: `[other page](/directory/file-name)`
    * in-page: `[subsection](#subsection-heading)`
 * If you change titles (not file names), update the dedicated Issue title too, and try to find and update other files that might be using the old titles as link text. (Potentially a hard task.)
-* Do not change file names (even if you changed titles), unless you also coordinate with @petecooper to establish 301 redirects to the new file names.
+* Do not change file names (even if you changed titles), unless you also coordinate with @petecooper to establish 301 redirects to the new file names
 
 ## Document draft
 
