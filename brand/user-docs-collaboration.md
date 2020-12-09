@@ -280,7 +280,7 @@ On the other hand, should an existing doc ever need to go through extensive deve
 
 * Don’t work on more than one document at a time. If you are assigned to a task, finish the task before taking on another one for a different issue.
 * Consider the big picture [linking strategy](/brand/user-docs-guide#linking-strategy) for documentation as a whole.
-* Double check your link changes before pushing changes live; both links across document pages and in-page anchor links. All links within the documentation website should be relative URLs. :
+* Double check your link changes before pushing changes live; both links across document pages and in-page anchor links. All links within the documentation website should be relative URLs:
    * across-pages: `[other page](/directory/file-name)`
    * in-page: `[subsection](#subsection-heading)`
 * If you change titles (not file names), update the dedicated Issue title too, and try to find and update other files that might be using the old titles as link text. (Potentially a hard task.)
@@ -292,7 +292,9 @@ The fun finally begins. A topic idea was surfaced, an issue for it was created, 
 
 Use the [new document page template](/brand/user-docs-page-template) to quickly get the draft started. Everything you need to know is explained in the template.
 
-*Nota*, in the metadata of all doc pages is a line called `published:`, the value of which should either be `false` (not live in the docs website) or `true` (live). As documents are first being drafted this value should be `false`. This enables you to start a draft (even if not completed) and commit it to the repository without it appearing in the docs website. The value is only change to `true` when the doc is ready for public use and approved for such by the editorial workflow. Once becoming live (`true`) the value should never change back to `false` unless the document is slated for permanent removal and some kind of status notice is provided to instruct search engine bots.
+Two or more people can feasibly work on a draft (e.g. different sections), though not at the same time to avoid repository conflicts (a versioning term). Authors collaborating on drafts can work out their own strategy, using existing issue labels.  
+
+*Nota*, in the metadata of all doc pages is a line called `published:`. This takes one of two values: `false` (not live in the docs website) or `true` (live). As documents are drafted, use `false`. This enables you to start a draft (even if not completed) and commit it to the repository without it appearing in the docs website. The value is only changed to `true` when the doc is ready for public use and approved for such by editorial review. Once becoming live (`true`) the value must stay that way unless the document is slated for permanent removal, at which point some kind of server status is established by @petecooper to instruct search engine bots.
 
 ## Wrap-up example for context
 
@@ -306,9 +308,9 @@ A contributing editor then realizes [how that doc can be approached and structur
 
 Another editor gives the idea a [nod of approval](https://forum.textpattern.com/viewtopic.php?pid=327313#p327313), thus the way is clear to get an Issue started for that document.
 
-(N.b. not all doc topics are as easily realized and quickly scoped for an Issue as this one was. But the process — from idea, to discussion, to approval, to Issue for development — is more or less the same for any doc to be developed, regardless of how long the process might take.)
+(*Nota*, not all doc topics are as easily realized and quickly scoped for an Issue as this one was. But the process — from idea, to discussion, to approval, to Issue for development — is more or less the same for any doc to be developed, regardless of how long the process might take.)
 
-Since the first editor scoped the doc topic, he fairly takes responsibility to start the dedicated Issue. He does this by opening the [Propose new page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=propose-new-page.md&title=proposed%3A+) template for Issues in the [docs repository](https://github.com/textpattern/textpattern.github.io) and fills in the necessary data ([as described earlier](#issue-template-new-page). In this case, the starting title was:
+Since the first editor scoped the doc topic, he fairly takes responsibility to start the dedicated Issue. He does this by opening the [New page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=propose-new-page.md&title=proposed%3A+) template for Issues in the [docs repository](https://github.com/textpattern/textpattern.github.io) and fills in the necessary data ([as described earlier](#issue-template-new-page). In this case, the starting title was:
 
 ```
 proposed: Build a personal blog
