@@ -108,8 +108,8 @@ Unlike topic titles, URL-only titles (document file names based off of topic tit
 
 Use your best judgement for document file names, thus their URLs, but consider the following guides to help:
 
-* Cut words that are not directly focused on the topic or scope of material (e.g. never use ‘textpattern’, ‘tutorial’, etc., for reasons explained earlier, nor any needless parts of speech like articles, conjunctions, prepositions, and so on).
-* Use fewer verbs and nouns if one or two will suffice to still make it clear what document is concerned.
+* Cut words that are not directly focused on the topic or scope of material (e.g. never use ‘textpattern’, ‘tutorial’, etc., for reasons explained earlier, nor any needless parts of speech like articles, conjunctions, prepositions, and so on)
+* Use fewer verbs and nouns if one or two will suffice to still make it clear what document is concerned
 * Use abbreviations if they are commonly used in the domain (e.g. the current doc uses ‘docs’ instead of ‘documentation’)
 * Front-load subject terms when feasible (i.e. put these terms at the start of the file name)
 * Use front-loading and shortening patterns strategically to group related files together alphabetically in shared directories
