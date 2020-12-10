@@ -17,11 +17,11 @@ The following resources (more are in development) are used by the Textpattern pr
 
 ## Project-wide resources
 
-These baseline resources are used across all Textpattern platforms and project initiatives. Thus must be followed in all cases.
+These baseline resources are used across all Textpattern platforms and project initiatives. Please make use of them and [suggest how they can better](https://github.com/textpattern/textpattern.github.io/issues).
 
 ### Editorial style
 
-* [Editorial style guide](/brand/editorial-style-guide): Baseline guidelines for all written content.
+* [Editorial style guide](/brand/editorial-style-guide) (for all Textpattern project content)
 
 ### Visual identity and style
 
@@ -31,24 +31,23 @@ These baseline resources are used across all Textpattern platforms and project i
 
 ## Platform-specific resources
 
-These resources are extensions of the baseline resources, or otherwise relevant to community collaboration. Use these in addition to the baselines, respective to the platform or project you are working on.
+These are references respective to platforms. Use them in addition to the baselines.
 
 ### Plugins
 
-* [Author prefix registration](/brand/author-prefixes-and-registration)
 * [Plugin user-help guidelines](/development/plugin-user-help-guidelines)
+* [Author prefix registration](/brand/author-prefixes-and-registration)
 
 ### Themes
 
-* [Author prefix registration](/brand/author-prefixes-and-registration)
 * [Design patterns for default theme](https://default-theme.textpattern.com/)
+* [Author prefix registration](/brand/author-prefixes-and-registration)
 
 ### User documentation
  
-* [Content development guidelines](/brand/user-docs-guide)
 * [Collaboration procedures](/brand/user-docs-collaboration)
+* [Content development guidelines](/brand/user-docs-guide)
 * [Template for new pages](/brand/user-docs-page-template)
-* [Plugin user-help guidelines](/development/plugin-user-help-guidelines)
 
 
 
