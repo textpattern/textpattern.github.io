@@ -26,8 +26,8 @@ These baseline resources are used across all Textpattern platforms and project i
 ### Visual identity and style
 
 * [Brand logomark and logotext](/brand/textpattern-logopack.zip) (Zip file)
-* [Textpattern design patterns](https://textpattern.com/design-patterns.html)
-* [Default theme design patterns](https://default-theme.textpattern.com/) 
+* [Design patterns for Textpattern brand](https://textpattern.com/design-patterns.html)
+* [Design patterns for default theme](https://default-theme.textpattern.com/) 
 
 ## Platform-specific resources
 
@@ -35,19 +35,19 @@ These resources are extensions of the baseline resources, or otherwise relevant 
 
 ### Plugins
 
-* [Author prefixes and registration](/brand/author-prefixes-and-registration)
+* [Author prefix registration](/brand/author-prefixes-and-registration)
 * [Plugin user-help guidelines](/development/plugin-user-help-guidelines)
 
 ### Themes
 
-* [Author prefixes and registration](/brand/author-prefixes-and-registration)
-* [Default theme design patterns](https://default-theme.textpattern.com/)
+* [Author prefix registration](/brand/author-prefixes-and-registration)
+* [Design patterns for default theme](https://default-theme.textpattern.com/)
 
 ### User documentation
  
-* [User documentation guidelines](/brand/user-docs-guide)
-  * [Documentation collaboration procedures](/brand/user-docs-collaboration)
-  * [Documentation page template](/brand/user-docs-page-template)
+* [Content development guidelines](/brand/user-docs-guide)
+* [Collaboration procedures](/brand/user-docs-collaboration)
+* [Template for new pages](/brand/user-docs-page-template)
 * [Plugin user-help guidelines](/development/plugin-user-help-guidelines)
 
 
