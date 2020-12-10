@@ -12,13 +12,10 @@ assignees: ''
 - Back: {repo URL here (.md file)}
 - Front: {website URL here}
 
-#### Explanation of new page
+#### Resources to support effort
 
-{Propose/explain here}
+(add as a bulleted list)
 
-#### Checkbox list of resources to support draft
+#### Current to-dos
 
-- [ ] {url here} ({brief description of resource here})
-- [ ] {url here} ({brief description of resource here})
-- [ ] {url here} ({brief description of resource here})
-(copy/repeat as needed)
+(to add as a checkbox list)
