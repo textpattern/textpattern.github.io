@@ -10,7 +10,7 @@ description: Have you found an issue during a Textpattern install/upgrade?
 
 If things don't go as expected when installing or upgrading Textpattern, or you're faced with an error message that you cannot figure, this page should help.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

@@ -10,7 +10,7 @@ tags:
 
 # Image author
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

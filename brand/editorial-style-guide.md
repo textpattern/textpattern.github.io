@@ -10,7 +10,7 @@ description: Editorial guidelines for content published on Textpattern platforms
 
 This style guide concerns all written materials published on Textpattern platforms, and any outbound content for promotional reasons. The guide is effective by itself for general copy production. It will help you produce clear, concise, and interesting copy.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

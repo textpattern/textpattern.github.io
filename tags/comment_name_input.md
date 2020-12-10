@@ -10,7 +10,7 @@ tags:
 
 # Comment name input
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

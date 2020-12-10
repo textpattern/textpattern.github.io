@@ -10,9 +10,9 @@ description: A quick-start template for quickly structuring a new page in user d
 
 This page provides a quick-start template for new documentation pages. Be sure to review the [documentation collaboration procedures](/brand/user-docs-procedures) and the [user documentation guidelines](/brand/user-docs-guide) before creating any new pages.
 
-**On this page**:
+**Contents**
 
-* Contents
+* Table of contents
 {:toc}
 
 ## Using the template
@@ -43,7 +43,7 @@ description:
 
 A single paragraph to overview the page's subject goes here. It can be multiple sentences, of course.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

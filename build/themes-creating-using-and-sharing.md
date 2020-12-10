@@ -10,7 +10,7 @@ description: A complete journey through creating, managing, using, exporting, im
 
 This document is a complete journey through creating and developing themes, deploying them on your website, and, if you are so inclined, sharing them with the Textpattern community. Furthermore, it’s all in context of default installation conditions, though easy to follow along with regardless. The only thing you will *not* learn here is how to use Textpattern tags, HTML, CSS, and the like; in other words, the fundamental composition of your theme assets.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

@@ -10,7 +10,7 @@ description: The Textpattern Diagnostics panel is an important area for troubles
 
 Troubleshooting web technology is an inherent fact of being online, and especially if you run your own website. Textpattern’s Diagnostics panel (Admin > Diagnostics) helps make troubleshooting easier. This document describes the functionality and how to use it.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

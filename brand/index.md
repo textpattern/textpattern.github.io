@@ -10,7 +10,7 @@ description: The brand identity resources for Textpattern. Use these resources w
 
 The following resources (more are in development) are used by the Textpattern project for all of its platforms and associated content. We are grateful if you use these resources too, where reasonable, whenever you write, speak, or present about Textpattern.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

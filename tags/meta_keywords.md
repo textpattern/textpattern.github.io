@@ -11,7 +11,7 @@ tags:
 
 # Meta keywords
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

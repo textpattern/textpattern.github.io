@@ -12,7 +12,7 @@ This tutorial will walk you through the basics of creating a simple public-side 
 
 You might also like to see the [Admin-side plugin tutorial](/development/admin-side-plugin-tutorial).
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

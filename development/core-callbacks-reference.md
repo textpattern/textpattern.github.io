@@ -10,7 +10,7 @@ description: This comprehensive reference provides detailed information about al
 
 This comprehensive reference provides detailed information about all callbacks used in Textpattern, including their [events and steps](/development/admin-side-events-and-steps).
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

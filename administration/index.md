@@ -10,7 +10,7 @@ description: The back-end of Textpattern is where administrators build site arch
 
 The back end of Textpattern is where administrators, and other [users](/administration/users-panel) having sufficient [privileges](/administration/user-roles-and-privileges), build site architecture, configure behaviour, develop content, and create presentation (excluding what might need done via the web or database servers).
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

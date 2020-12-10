@@ -11,7 +11,7 @@ tags:
 
 # If comments disallowed
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

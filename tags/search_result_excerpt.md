@@ -10,7 +10,7 @@ tags:
 
 # Search result excerpt
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

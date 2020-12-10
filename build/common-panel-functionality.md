@@ -16,7 +16,7 @@ Functionality described on this page is common across the following back-end pan
 
  This common functionality is secondary to the principle features for creating and using a panel’s given type elements. Once you learn these secondary features — described here in the order they are found on panels, top to bottom — you don’t forget them, so explaining them repeatedly across panel documentation is pointless.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

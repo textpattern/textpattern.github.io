@@ -11,7 +11,7 @@ tags:
 
 # Category1
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

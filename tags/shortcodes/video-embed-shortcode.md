@@ -10,7 +10,7 @@ description: The shortcode to create a HTML5-compliant video snippet and includi
 
 The shortcode to create a HTML5-compliant video snippet and including [Schema.org](https://schema.org) microdata.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

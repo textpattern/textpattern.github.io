@@ -10,7 +10,7 @@ tags:
 
 # Image url
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

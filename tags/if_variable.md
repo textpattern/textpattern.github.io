@@ -11,7 +11,7 @@ tags:
 
 # If variable
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

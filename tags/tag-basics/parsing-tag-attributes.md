@@ -8,7 +8,7 @@ description: Most Textpattern tags allow you to specify attributes as key/value 
 
 # Parsing tag attributes
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

@@ -14,7 +14,7 @@ The tags may be added to page and/or form templates in a variety of ways, depend
 
 The tag fundamentals presented on this page will get you up and running with Textpattern tags. If all you're after is a reference, the entire list of current tags, syntax and examples can be found in the [tags reference](/tags/).
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

@@ -10,7 +10,7 @@ description: The Textpattern parser does its job in stages, which permits extra 
 
 Textpattern's parser does its job in stages, which permits extra control over output.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

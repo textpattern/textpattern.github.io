@@ -10,7 +10,7 @@ tags:
 
 # If category
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

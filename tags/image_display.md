@@ -13,7 +13,7 @@ tags:
 **Deprecated in Textpattern 4.7.0** (use the [image](/tags/image) tag instead)
 {: .alert-block .error}
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

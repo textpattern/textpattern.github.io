@@ -10,7 +10,7 @@ tags:
 
 # Link to next
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

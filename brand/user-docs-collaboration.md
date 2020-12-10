@@ -10,9 +10,9 @@ description: Orientation for collaboration on Textpattern user documentation.
 
 These procedures are for anyone helping to develop user documentation for Textpattern. They cover the full extent of the collaboration process in relation to documentation workflow, including the protocols for using the repository Issues. People actually writing and editing user documentation will also be aware of the [guidelines for developing user documentation](/brand/user-docs-guide).
 
-**Contents**:
+**Contents**
 
-* Contents
+* Table of contents
 {:toc}
 
 ## Collaboration goals

@@ -10,7 +10,7 @@ description: A flexible shortcode and short-tag combo to add quotations as aside
 
 A flexible shortcode and short-tag combo to add various quotations as asides in your articles, which pull data from Textpattern links.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

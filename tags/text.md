@@ -10,7 +10,7 @@ tags:
 
 # Text
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

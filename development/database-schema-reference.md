@@ -10,7 +10,7 @@ description: Textpattern stores all data in a database. Within that database, ea
 
 Textpattern stores all data in a database. Within that database, there are the following tables, each containing a different collection of information.[^1]
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

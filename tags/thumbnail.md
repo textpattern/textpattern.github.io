@@ -10,7 +10,7 @@ tags:
 
 # Thumbnail
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

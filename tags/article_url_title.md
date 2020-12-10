@@ -10,7 +10,7 @@ tags:
 
 # Article url title
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

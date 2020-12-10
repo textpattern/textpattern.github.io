@@ -10,7 +10,7 @@ tags:
 
 # Recent comments
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

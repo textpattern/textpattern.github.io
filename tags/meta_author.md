@@ -11,7 +11,7 @@ tags:
 
 # Meta author
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

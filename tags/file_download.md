@@ -10,7 +10,7 @@ tags:
 
 # File download
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

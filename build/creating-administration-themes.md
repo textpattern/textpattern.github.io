@@ -10,7 +10,7 @@ description: Administration themes allow Textpattern administrators (and publish
 
 The recommended procedure for creating custom back-end themes is the same as it was prior to Textpattern 4.7. You can create a back-end theme from scratch, if you really like the hard way, but we strongly recommend the approach documented here, especially if it’s your first attempt at an administration theme.
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

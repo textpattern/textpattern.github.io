@@ -12,7 +12,7 @@ tags:
 
 # If first link
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

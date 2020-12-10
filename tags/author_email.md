@@ -10,7 +10,7 @@ tags:
 
 # Author email
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

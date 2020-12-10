@@ -10,7 +10,7 @@ tags:
 
 # Comment submit
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

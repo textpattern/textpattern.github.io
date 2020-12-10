@@ -10,7 +10,7 @@ description: Guidelines for the development of Textpattern user documentation.
 
 These guidelines, an extension of Textpattern’s baseline [editorial style guide](/brand/editorial-style-guide), are specifically for the upkeep of user documentation. Documentation authors, editors, and other interested contributors will want to read up here (as well review the [documentation collaboration procedures](https://github.com/textpattern/textpattern.github.io/issues/149)).
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}

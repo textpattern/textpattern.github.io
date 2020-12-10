@@ -12,7 +12,7 @@ tags:
 
 # If last image
 
-**On this page**:
+**Contents**
 
 * Table of contents
 {:toc}
