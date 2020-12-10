@@ -149,7 +149,7 @@ Title fields of each template will be pre-filled with title prefixes. Leave the 
 
 The body fields of each template (effectively the head post of the issue once created) will indicate where and what type of information should be added to the issue.
 
-In both cases, the issue body should begin with the full URLs for the expected/existing backend and front-end document locations. Neither URL will actually work until a draft document has been pushed to the repository (backend), and later published (front-end), but it’s convenient to add the URLs at this point so it’s done. These URLs are handy later for quickly finding and accessing the document should any collaborator need or want to from context of the issue. If you ever change document file names (for any issue), update these URLs in relation so the links work correctly, as well anywhere else in documentation (at least) that linked to the files. (More on this later in the [URL-only titles](#url—only-titles) section.)
+In both cases, the issue body should begin with the full URLs for the expected/existing backend and front-end document locations. Neither URL will actually work until a draft document has been pushed to the repository (backend), and later published (front-end), but it’s convenient to add the URLs at this point so it’s done. These URLs are handy later for quickly finding and accessing the document should any collaborator need or want to from context of the issue. If you ever change document file names (for any issue), update these URLs in relation so the links work correctly, as well anywhere else in documentation (at least) that linked to the files.
 
 One important difference to be aware of is that file names for tag pages — specifically for a Textpattern tag in the [Tags Reference](/tags/) — are constructed using underscores (like_this), not hyphens. All other pages in user documentation use hyphens (like-this). 
 
@@ -161,27 +161,25 @@ Finally, you’ll be given the start of a checkbox list to use, if  warranted, t
 
 Use this template if no documentation page exists for the topic needing developed. By using this template, you begin the process of creating a dedicated issue for a new documentation page.
 
-The title prefix should be `proposed:` until the draft is edited, at which time is should be changed to `page:`, for example:
+The title prefix should be `proposed:` until the topic idea is approved for development by at least one other editor familiar with Textpattern documentation (has history), at which time the prefix should be changed to `page:`.
 
-```
-proposed: New document title here
-```
+The explanation section should make clear what the topic scope  is, and, if possible, how it helps to fill a gap in docs that address questions/problems often raised in the Forum. (The idea being to better leverage the Forum and User Documentation sites.)
 
-The explanation section should make clear what the topic scope  is, and how it helps (or not) fill a docs gap to leverage the Forum with User Docs.
+The resources section should be used to list all resources, Forum and otherwise, that would help an author draft the document. Add more bulleted list items as needed.
 
-The final resources section should be used to list all resources, Forum and otherwise, that would help an author draft the document. Add more checkbox list items as needed.
+The final to-dos section is a checkbox list to be used later. It’s often useful after a draft is read to list to-dos that then need fixed.
 
 #### Issue template: Existing page
 
 Only use this template for existing doc pages **that do not already have a dedicated Issue**. So be sure to search in open and closed issues for such an issue first.
 
-The title for this issue always has the prefix, `page:`, with the document’s title after it.
+The title for this issue always has the prefix `page:` with the document’s title after it.
 
-The explanation section should make clear what the immediate task needs to be (presumably some kind of editing, but not solely), and provide any other info that will help guide the task. **This explanation should be revised each time the Issue is opened**.
+The explanation section should make clear what the immediate task needs to be (presumably some kind of editing, but not solely), and provide any other info that will help guide the task. This explanation should be revised or appended to each time the Issue is opened for new tasks.
 
-The final resources listing can be used, if warranted, or deleted to keep the head post concise.
+The resources listing can be used, if warranted, or deleted to keep the head post concise. Ditto with the final to-dos section.
 
-*Nota*, this template is only relevant until all existing docs have dedicated issues. Once achieved, if ever, this template will be removed from the repository and the ’New page’ template described previously will be the only one used. (This collaboration doc will need revised in relation.)
+*Nota*, this template is relevant until all existing docs have dedicated issues. Once achieved, if ever, this template will be removed from the repository and the ’New page’ template described previously will be the only one used. (This collaboration doc will need revised in relation.)
 
 #### Other issues
 
