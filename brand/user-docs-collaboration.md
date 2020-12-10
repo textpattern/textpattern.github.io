@@ -116,9 +116,9 @@ Use your best judgement for document file names, thus their URLs, but consider t
 
 You could look at the file names of many existing docs in the file tree and find poorly conceived examples; either too long, having poor syntactic structure, or both. This very document, for instance, could have been named ‘docs-collaboration’, dropping *user*. But it’s never to late to do better with new documentation.
 
-While we generally don’t want to mess with existing file names already indexed (and likely linked to from other documentation pages, form Forum threads, and elsewhere), sometimes it is necessary to improve information architecture, especially if file are particularly long or not clearly indicative of their document’s topic. We only do this, however, if 301 redirects can be established for the changed URLs at the same time; otherwise, we risk breaking a lot of links to the document. 
+While we generally don’t want to mess with existing file names already published and indexed (and likely linked to from other documentation pages, Forum threads, and elsewhere), sometimes it is necessary to improve information architecture, especially if file names are particularly long or not clearly indicative of their document’s topic. We only do this, however, if 301 redirects can be established for the changed URLs at the same time; otherwise, we risk breaking a lot of links to the document. 
 
-Make URL redirect requests for documents by using their dedicated repository issues (or create one if necessary) address redirect requests to @petecooper, Textpattern’s systems administrator. Do not push the file name changes live until Pete has a chance to coordinate the redirects at a relatively close point in time.
+Make URL redirect requests for documents by using their dedicated repository issues (or create one if necessary) address redirect requests to @petecooper (in GitHub), Textpattern’s systems administrator. Do not push the file name changes live until Pete has a chance to coordinate the redirects at a relatively close point in time. 
 
 ## Repository protocols
 
