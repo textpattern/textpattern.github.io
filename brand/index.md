@@ -8,7 +8,7 @@ description: The brand identity resources for Textpattern. Use these resources w
 
 # Textpattern brand and voice
 
-The following resources (more are in development) are used by the Textpattern project for all of its platforms and associated content. We are grateful if you use these resources too, where reasonable, whenever you write, speak, or present about Textpattern.
+The following resources are available to help with the development of Textpattern content, design, and code. We appreciate you using them when contributing Textpattern products and platforms, and [suggesting how to make them better](https://github.com/textpattern/textpattern.github.io/issues).
 
 **Contents**
 
@@ -17,7 +17,7 @@ The following resources (more are in development) are used by the Textpattern pr
 
 ## Project-wide resources
 
-These baseline resources are used across all Textpattern platforms and project initiatives. Please make use of them and [suggest how they can better](https://github.com/textpattern/textpattern.github.io/issues).
+The baseline resources for *all* Textpattern platforms and project initiatives.
 
 ### Editorial style
 
@@ -31,7 +31,7 @@ These baseline resources are used across all Textpattern platforms and project i
 
 ## Platform-specific resources
 
-These are references respective to platforms. Use them in addition to the baselines.
+The references respective to platforms. Use them in addition to the baselines.
 
 ### Plugins
 
