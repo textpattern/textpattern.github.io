@@ -16,12 +16,10 @@ assignees: ''
 
 {Explain here}
 
-#### Resources to support draft
+#### Resources to support effort
 
-(Remove this section if not needed)
+(add as a bulleted list)
 
-- [ ] url
-- [ ] url
-- [ ] url
-- [ ] url
-etc
+#### Current to-dos
+
+(to add as a checkbox list)
