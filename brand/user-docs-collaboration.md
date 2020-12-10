@@ -155,7 +155,7 @@ One important difference to be aware of is that file names for tag pages — spe
 
 After the URLs should be *brief* commentary on what the point of the issue is. The info requested depends on which issue template is used. See next sections for template specifics.
 
-Finally, you’ll be given the start of a checkbox list to use, if  warranted, to list resource links that could help guide the task of the open issue, especially for new documents needing developed.
+Finally, you’ll be given sections for listing helpful resources and making checkbox to-dos, if  warranted, to guide the task of the open issue, especially for new documents needing developed.
 
 #### Issue template: New page
 
