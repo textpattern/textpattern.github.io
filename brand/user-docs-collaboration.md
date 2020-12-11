@@ -234,7 +234,7 @@ This follows having created a new issue for a proposed topic.
 
 No one can yet assign themselves to the task.
 
-Nothing can be done on the issue until at least one of the collaborating docs maintainers and/or editors (@Bloke, @Petecooper, @Philwareham, @wion in the repository) approves the issue as proposed for development or points out that the proposal needs adjustments or clarifications first. The latter could be to better clarify scope, change the title, decide where in the architecture it should really go, or whatever the case may be. Whichever the case, the second editor quickly makes clear what the status is by adding either the **APPROVED** or **NEEDS DISCUSSION** label to the issue.
+Nothing can be done on the issue until at least one of the collaborating docs maintainers and/or seasoned editors (@Bloke, @Petecooper, @Philwareham, @wion in the repository) approves the issue as proposed for development or points out that the proposal needs adjustments or clarifications first. The latter could be to better clarify scope, change the title, decide where in the architecture it should really go, or whatever the case may be. Whichever the case, the second editor quickly makes clear what the status is by adding either the **APPROVED** or **NEEDS DISCUSSION** label to the issue.
 
 If the proposal is approved, anyone can take the task of researching and drafting the doc.
 
@@ -302,16 +302,16 @@ Two or more people can feasibly work on a draft (e.g. different sections), thoug
 
 ## Wrap-up example for context
 
-An example might be helpful to bring it all together.
+An example might help bring it all together.
 
 We begin with having understood what the [goal and objectives](user-docs-collaboration#big-picture-goal-and-primary-objective) are, as described at the start.
 
-We then bring our attention to one of two places:
+ A collaborator then heads to one of two places:
 
-* the [running list of topics](https://forum.textpattern.com/viewtopic.php?id=51220) being kicked around by all those who want to help with documentation
-* the open Issues list for any proposed docs that are approved for development but not yet assigned to anyone.
+* the [running list of topics](https://forum.textpattern.com/viewtopic.php?id=51220) being kicked around by all who wish to help with documentation (including you)
+* the [open Issues](https://github.com/textpattern/textpattern.github.io/issues) list for any proposed docs that are approved for development but not yet assigned to anyone.
 
-In the latter case you can self-assign to any available issue and get started. Such issues should bear the **writer needed** or **editor needed** labels (indicating the stage of editorial workflow), but they could also have no labels at all if people forget to us them.
+In the latter case, you can self-assign to any available issue and get started. Any approved but unclaimed proposals will still have an **APPROVED** label on them, and perhaps a **writer needed** label, too. Assign yourself to such an issue, change the labels, accordingly, and get started.
 
 We continue this example with the first situation above.
 
